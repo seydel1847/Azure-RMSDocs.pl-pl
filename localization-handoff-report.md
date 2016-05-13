@@ -1,19 +1,32 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\adal-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/78350305424bda76436d2a0980f2fa347c7c0135/Azure-RMSDocs/develop/adal-authentication.md) | HandedOffSuccess | [Details](#2c603b1160d8e1acf4ba859ea4b71d3219bb0bba43)
+ [Azure-RMSDocs\develop\adal-auth.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/77b14101d610f207e6502146605e713267825214/Azure-RMSDocs/develop/adal-auth.md) | HandedOffSuccess | [Details](#2c603b1160d8e1acf4ba859ea4b71d3219bb0bba43)
+ [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/77b14101d610f207e6502146605e713267825214/Azure-RMSDocs/develop/TOC.md) | HandedOffSuccess | [Details](#0053e83abdbd6fa2dd2397d81d69fe7811a22f25101)
 
 ## Item Details
-##### <a name='2c603b1160d8e1acf4ba859ea4b71d3219bb0bba43'></a> Source: [Azure-RMSDocs\develop\adal-authentication.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/78350305424bda76436d2a0980f2fa347c7c0135/Azure-RMSDocs/develop/adal-authentication.md)
+##### <a name='2c603b1160d8e1acf4ba859ea4b71d3219bb0bba43'></a> Source: [Azure-RMSDocs\develop\adal-auth.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/77b14101d610f207e6502146605e713267825214/Azure-RMSDocs/develop/adal-auth.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [adal-authentication.edf091778646901c509de161b8a5f5a5c22dcaca.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/4b162cd03e6ba881859921fe2d943a3ecbb8c21c/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/adal-authentication.edf091778646901c509de161b8a5f5a5c22dcaca.pl-pl.xlf)
-* Handoff Datetime: 2016-05-13 00:00:21
+* Handoff File: [adal-auth.84b9f2d9ce36c657e4594523b7e0a1f1d74c114f.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/9f127f7c2f4f3139202287c4ef1411e1f883cb9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/adal-auth.84b9f2d9ce36c657e4594523b7e0a1f1d74c114f.pl-pl.xlf)
+* Handoff Datetime: 2016-05-13 01:59:48
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* [Back to Top](#report-top)
+
+##### <a name='0053e83abdbd6fa2dd2397d81d69fe7811a22f25101'></a> Source: [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/77b14101d610f207e6502146605e713267825214/Azure-RMSDocs/develop/TOC.md)
+* Status: HandedOffSuccess
+* Target File: 
+* Handoff File: [TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/9f127f7c2f4f3139202287c4ef1411e1f883cb9c/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.pl-pl.xlf)
+* Handoff Datetime: 2016-05-13 01:59:48
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
