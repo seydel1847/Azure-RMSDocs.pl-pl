@@ -356,13 +356,7 @@
   "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": [
     "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
   ],
-  "71a1f2684025efe63720bafe2b90ccad3a6a90e7": [
-    "Azure-RMSDocs\\get-started\\scenario-executives-email.md"
-  ],
   "c16098a2d0fe41748280704716a2eeef8921a6fa": [
-    "Azure-RMSDocs\\get-started\\scenario-fci.md"
-  ],
-  "6a1b3f8b458622aabffd205d26c546a80a7c3f11": [
     "Azure-RMSDocs\\get-started\\scenario-fci.md"
   ],
   "cb028afcbfd9b59f134539c434f4f49efc5e9092": [
@@ -371,13 +365,7 @@
   "d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d": [
     "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
   ],
-  "247ccbb5e3939a5a8c8370f63d64352d025c6dc1": [
-    "Azure-RMSDocs\\get-started\\scenario-secure-most-valuable-files.md"
-  ],
   "b6f3b06485dda81be2a36035fea7477f4061a8e9": [
-    "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
-  ],
-  "e3afa3dc5cdac07add2e8c1c927692067c2659f0": [
     "Azure-RMSDocs\\get-started\\scenario-company-confidential-email.md"
   ],
   "500701acb03aa9f049cc995f14e544e07556bc4f": [
@@ -531,9 +519,6 @@
     "Azure-RMSDocs\\get-started\\scenario-share-office-file-externally.md"
   ],
   "43263ed51886b013525f7e00c272c5ef0a9e9e64": [
-    "Azure-RMSDocs\\develop\\release-notes-rtm.md"
-  ],
-  "ee2e1535156736f6cbed96711d7044451aa5ef95": [
     "Azure-RMSDocs\\develop\\release-notes-rtm.md"
   ],
   "b05708694e669f9d1bd28038643d4bf34729a239": [
@@ -968,9 +953,6 @@
   "f4ef711085d2a029ab951b30b4929358e774028d": [
     "Azure-RMSDocs\\develop\\deploying-your-application.md"
   ],
-  "96d04f5003e04f3e8346579ef4251329fee51f87": [
-    "Azure-RMSDocs\\develop\\deploying-your-application.md"
-  ],
   "d3a8f5f2a97920f35e261bf6f444a1ecce4c5302": [
     "Azure-RMSDocs\\develop\\developer-notes.md"
   ],
@@ -1023,9 +1005,6 @@
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
   "0d92797c5e0f3f59f092c0486678bb99f91f2798": [
-    "Azure-RMSDocs\\develop\\file-api-configuration.md"
-  ],
-  "7d65d9863d2f468c12ff10daf3255b389ef7a6a9": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [
@@ -1112,19 +1091,10 @@
   "1bfa4888f5dd7870293cb38252d23597637c5c9f": [
     "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
   ],
-  "b62f18a5d58a63bd20eae8e12ea17b9938f32805": [
-    "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
-  ],
   "a81578b3d4c5ed3a0be4ab4bcd7b0f84b7f0da1c": [
     "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
   ],
-  "451d3dc162f98b33cb762c795de29a15c0c0be97": [
-    "Azure-RMSDocs\\develop\\how-to-enable-email-notification.md"
-  ],
   "3d3c24401249ddaf7522468e3d24abac66773276": [
-    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
-  ],
-  "5b55c9e6e1c68eb5ad14a701dd1a139d1b4328ff": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
   "dcd7a81c02c49b459a0aee97f61a909d403171fa": [
@@ -1191,9 +1161,6 @@
     "Azure-RMSDocs\\develop\\how-to-use-document-tracking.md"
   ],
   "25eb5342687a44d5f80ed8a06d83f1c5cfc1e24e": [
-    "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
-  ],
-  "e9c975ca055f84ef20f0cc7a32ba11bb901cc984": [
     "Azure-RMSDocs\\develop\\how-to-use-file-api-with-aadrm-cloud.md"
   ],
   "32c942a71b1858bb76e3179d7f910e857a9b7601": [
@@ -1350,9 +1317,6 @@
     "Azure-RMSDocs\\develop\\release-notes.md"
   ],
   "f505c23fd1be01acbc7214eef13dc87d2eb16652": [
-    "Azure-RMSDocs\\develop\\running-your-first-application.md"
-  ],
-  "8acf3326db854683ee22b91c92e7cae2b95f5e95": [
     "Azure-RMSDocs\\develop\\running-your-first-application.md"
   ],
   "9c1eb2122e2237a895ed931561ead754c3287244": [
@@ -1661,9 +1625,6 @@
   "d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf": [
     "Azure-RMSDocs\\deploy-use\\activate-service.md"
   ],
-  "6a7d8a7c00e4568ff73aa387444a0d146bebe969": [
-    "Azure-RMSDocs\\deploy-use\\activate-service.md"
-  ],
   "bf1f684bc394ec3a1025f8c9ed3e57d07c598125": [
     "Azure-RMSDocs\\deploy-use\\administer-powershell.md"
   ],
@@ -1727,12 +1688,6 @@
   "0c24d253e3f1ab3a87852c69c15c5211d17b4333": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
-  "c4b177c2d55984f495f430213653f1a4a84a7ae6": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
-  "4f83660fa14cc6c926b8aceac97ee311abea89a0": [
-    "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
-  ],
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
@@ -1757,9 +1712,6 @@
   "6b9b3b039ba2de0de174a134768afd763d26b5dd": [
     "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
   ],
-  "a7ecc2118c447521f9e209d4453334ae2f85fe4d": [
-    "Azure-RMSDocs\\deploy-use\\deploy-rms-connector.md"
-  ],
   "562c6deb97c86cf8bd19be62902387c4b82498d9": [
     "Azure-RMSDocs\\deploy-use\\help-users.md"
   ],
@@ -1770,9 +1722,6 @@
     "Azure-RMSDocs\\deploy-use\\install-powershell.md"
   ],
   "8a138cdb0dc9b184c6361a879860501ede283ea1": [
-    "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
-  ],
-  "d71cdbe5d6faae000947dd665552547d44e8fbb9": [
     "Azure-RMSDocs\\deploy-use\\log-analyze-usage.md"
   ],
   "496edca2e2323e17216858e2ab4844fdb0aa1fb0": [
@@ -1830,9 +1779,6 @@
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "0e909b0f972fd597e60abea04b476d9a956886f3": [
-    "Azure-RMSDocs\\get-started\\faqs.md"
-  ],
-  "f1c17df3360751dc9a2f2d1d030679775efadce0": [
     "Azure-RMSDocs\\get-started\\faqs.md"
   ],
   "f9a07153d5cf1fec900fc8808bbaca1f7d2ac060": [
@@ -1953,9 +1899,6 @@
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
-    "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
-  ],
-  "3a9dc382d400caa4db25a477695b16833b530d87": [
     "Azure-RMSDocs\\get-started\\scenario-work-folders.md"
   ],
   "6d34b9e40fd6eb58f5e9fe1fd242a8aa36c091c1": [
@@ -2100,9 +2043,6 @@
     "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
   "ffddda9a144b23b64b54df4fe4d25ec62600599d": [
-    "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
-  ],
-  "d130be044beecd4c876d660fea25a9169b3ae75e": [
     "Azure-RMSDocs\\rms-client\\client-deployment-notes.md"
   ],
   "8643e856a5de08be4fbe423d92b7d2619b47d3dd": [
@@ -2261,9 +2201,6 @@
   "8635402989db0f83017151910013ca460011b392": [
     "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
   ],
-  "7712fca02a8a10ffd87b52cde88a78138f37b911": [
-    "Azure-RMSDocs\\understand-explore\\compare-azure-rms-ad-rms.md"
-  ],
   "839be5a8a45c2322127694dc0bdc306ff445c314": [
     "Azure-RMSDocs\\understand-explore\\file-server-support.md"
   ],
@@ -2319,9 +2256,6 @@
     "Azure-RMSDocs\\develop\\android-namespaces.md"
   ],
   "dd430e83cd918fa51cca9234d4223289113a6cd3": [
-    "Azure-RMSDocs\\develop\\adal-auth.md"
-  ],
-  "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba": [
     "Azure-RMSDocs\\develop\\adal-auth.md"
   ]
 }
