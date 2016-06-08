@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Konfiguracja interfejsu API plików
 
 
@@ -75,7 +75,7 @@ Ustaw wartość *Encryption* w kluczu w celu określenia zachowania ochrony. Je�
 - *Pfile*: Używane jest szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
 
 
-> [AZURE.NOTE] To ustawienie nie ma żadnego wpływu na formaty plików pakietu Office. Na przykład jeśli wartość `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` jest ustawiona na „Pfile”, pliki docx nadal będą szyfrowane przy użyciu ochrony natywnej, a zaszyfrowany plik nadal będzie miał rozszerzenie docx.
+> [AZURE.NOTE] To ustawienie nie ma żadnego wpływu na formaty plików pakietu Office. Na przykład jeśli wartość `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` jest ustawiona na &quot;Pfile”, pliki docx nadal będą szyfrowane przy użyciu ochrony natywnej, a zaszyfrowany plik nadal będzie miał rozszerzenie docx.
 
 Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domyślne.
 
@@ -89,7 +89,7 @@ Jeśli próba szyfrowania zostanie podjęta na typie pliku, który jest zablokow
 
 ### Interfejs API plików — szczegóły dotyczące obsługi plików
 
-Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia). Na przykład w przypadku dowolnego rozszerzenia &lt;ext&gt; (nienależącego do pakietu office) zostanie użyte rozszerzenie \*.p&lt;ext&gt;, jeśli konfiguracja administratora dla tego rozszerzenia jest natywna („NATIVE”).
+Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia). Na przykład dla dowolnego rozszerzenia &lt;roz&gt; (innego niż rozszerzenia pakietu Office) będzie używany ciąg \*.p&lt;roz&gt;, jeśli konfiguracja administratora dla tego rozszerzenia ma wartość „NATIVE”.
 
 **Pliki pakietu Office**
 
@@ -161,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

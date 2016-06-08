@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -55,7 +55,7 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />Utworzono grupę z włączoną obsługą poczty o nazwie **Dostęp uprzywilejowany**, zawierającą kilka osób, które powinny mieć dostęp do ściśle poufnych dokumentów.<br /><br />Utworzono grupę z włączoną obsługą poczty o nazwie **Menedżerowie ds. zgodności IT**, zawierającą osoby, których zadania obejmują zbieranie elektronicznych materiałów dowodowych, monitorowanie i przeprowadzanie inspekcji.<br /><br />Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Dostęp uprzywilejowany**, zawierającą kilka osób, które powinny mieć dostęp do ściśle poufnych dokumentów.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Menedżerowie ds. zgodności IT**, zawierającą osoby, których zadania obejmują zbieranie elektronicznych materiałów dowodowych, monitorowanie i przeprowadzanie inspekcji.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management została wdrożona na komputerze z systemem Windows, dlatego można objąć te pliki ochroną miejscową zgodnie z opisem w następnej sekcji.|[Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -152,6 +152,6 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

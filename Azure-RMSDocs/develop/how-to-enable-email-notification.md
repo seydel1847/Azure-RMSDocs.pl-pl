@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Włączanie powiadomień e-mail
 
 Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości.
@@ -71,6 +71,6 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

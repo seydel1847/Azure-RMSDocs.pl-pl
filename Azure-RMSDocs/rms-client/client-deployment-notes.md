@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,8 +42,7 @@ Klient usługi RMS może być za darmo dystrybuowany i umieszczany w pakietach z
 ## Instalowanie klienta usługi RMS
 Klient RMS jest dostępny w pliku wykonywalnym instalatora o nazwie **setup_msipc_***<arch>***.exe**, gdzie *<arch>* to **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalatora w wersji 32-bitowej (x86) nie można uruchomić w 64-bitowej instalacji systemu Windows.
 
-> [!NOTE]
-> Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
+> [!NOTE] Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
 
 Klienta usługi RMS można zainstalować przy użyciu jednej z następujących metod instalacji:
 
@@ -115,12 +114,12 @@ Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować nie
 
 |Zadanie|Ustawienia|
 |--------|------------|
-|Tylko usługi AD RMS: aby zaktualizować lokalizację usługi przedsiębiorstwa dla komputera klienckiego|Zaktualizuj następujące klucze rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: domyślna<br /><br />**Wartość:**<http or https>:// *Nazwa_klastra_usługi_RMS*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: domyślna<br /><br />**Wartość:** <http or https>:// *Nazwa_klastra_usługi_RMS*/_wmcs/Licensing|
+|Tylko usługi AD RMS: aby zaktualizować lokalizację usługi przedsiębiorstwa dla komputera klienckiego|Zaktualizuj następujące klucze rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: domyślna<br /><br />**Wartość:**<http or https>:// *Nazwa_klastra_usługi*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: domyślna<br /><br />**Wartość:** <http or https>:// *Nazwa_klastra_usługi_RMS*/_wmcs/Licensing|
 |Aby włączyć lub wyłączyć śledzenie|Zaktualizuj następujący klucz rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Wartość:** 1 — włączenie śledzenia, 0 — wyłączenie śledzenia (wartość domyślna)|
-|Aby zmienić częstotliwość odświeżania szablonów w dniach|Poniższe wartości rejestru służą do określania, jak często szablony będą odświeżane na komputerze użytkownika, jeśli nie ustawiono wartości TemplateUpdateFrequencyInSeconds.  Jeśli żadna z tych wartości nie zostanie ustawiona, domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. W starszych wersjach wartość domyślna to 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*<SID>*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.|
-|Aby zmienić częstotliwość odświeżania szablonów w sekundach<br /><br />Ważne: w przypadku określenia tej wartości częstotliwość odświeżania szablonów w dniach zostanie zignorowana. Określ jedną z tych wartości, nie obydwie.|Poniższe wartości rejestru wskazują, jak często szablony będą aktualizowane na komputerze użytkownika. Jeśli nie ustawiono tej wartości ani wartości zmiany częstotliwości w dniach (TemplateUpdateFrequency), domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. W starszych wersjach wartość domyślna to 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\*<SID>*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.|
-|Tylko usługi AD RMS: aby pobierać szablony natychmiast po następnym żądaniu publikowania|Na potrzeby operacji testowania i oceniania możesz wybrać opcję pobierania szablonów przy użyciu klienta usługi RMS tak szybko, jak to możliwe. W tym celu usuń poniższy klucz rejestru. Spowoduje to, że klient usługi RMS będzie pobierać szablony natychmiast po następnym żądaniu publikowania (nie będzie czekać przez czas określony w ustawieniu rejestru TemplateUpdateFrequency):<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<Nazwa-serwera>\Template<br /><br />**Uwaga**: <Server Name> ustawienie może wskazywać zewnętrzny (corprights.contoso.com) i wewnętrzny (corprights) adres URL, więc wpisy mogą być dwa.|
-|Tylko usługi AD RMS: aby włączyć obsługę uwierzytelniania federacyjnego|Jeśli komputer kliencki usługi RMS łączy się z klastrem usług AD RMS za pomocą zaufania federacyjnego, należy skonfigurować obszar macierzysty federacji.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Wartość:** wartość tego wpisu rejestru to identyfikator URI usługi federacyjnej (na przykład: „https://fs-01.contoso.com”).|
+|Aby zmienić częstotliwość odświeżania szablonów w dniach|Poniższe wartości rejestru służą do określania, jak często szablony będą odświeżane na komputerze użytkownika, jeśli nie ustawiono wartości TemplateUpdateFrequencyInSeconds.  Jeśli żadna z tych wartości nie zostanie ustawiona, domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. W starszych wersjach wartość domyślna to 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.|
+|Aby zmienić częstotliwość odświeżania szablonów w sekundach<br /><br />Ważne: w przypadku określenia tej wartości częstotliwość odświeżania szablonów w dniach zostanie zignorowana. Określ jedną z tych wartości, nie obydwie.|Poniższe wartości rejestru wskazują, jak często szablony będą aktualizowane na komputerze użytkownika. Jeśli nie ustawiono tej wartości ani wartości zmiany częstotliwości w dniach (TemplateUpdateFrequency), domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. W starszych wersjach wartość domyślna to 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\*\<SID\>\*<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.|
+|Tylko usługi AD RMS: aby pobierać szablony natychmiast po następnym żądaniu publikowania|Na potrzeby operacji testowania i oceniania możesz wybrać opcję pobierania szablonów przy użyciu klienta usługi RMS tak szybko, jak to możliwe. W tym celu usuń poniższy klucz rejestru. Spowoduje to, że klient usługi RMS będzie pobierać szablony natychmiast po następnym żądaniu publikowania (nie będzie czekać przez czas określony w ustawieniu rejestru TemplateUpdateFrequency):<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<Server Name>\Template<br /><br />**Uwaga**: <Server Name> może wskazywać zewnętrzny (corprights.contoso.com) i wewnętrzny (corprights) adres URL, więc wpisy mogą być dwa.|
+|Tylko usługi AD RMS: aby włączyć obsługę uwierzytelniania federacyjnego|Jeśli komputer kliencki usługi RMS łączy się z klastrem usług AD RMS za pomocą zaufania federacyjnego, należy skonfigurować obszar macierzysty federacji.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Wartość:** wartość tego wpisu rejestru to identyfikator URI usługi federacyjnej (na przykład: „http://TreyADFS.trey.net/adfs/services/trust”).<br /><br /> **Uwaga**: Ważne jest, aby dla tej wartości podać protokół http, a nie https. Ponadto w przypadku 32-bitowej aplikacji MSIPC działającej w 64-bitowej wersji systemu Windows lokalizacja będzie następująca: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation. Konfigurację przykładową przedstawiono w temacie [Wdrażanie Usług Active Directory Rights Management z Usługami federacyjnymi Active Directory](https://technet.microsoft.com/library/dn758110.aspx).|
 |Tylko usługi AD RMS: aby obsługiwać serwery federacyjne partnera wymagające uwierzytelniania opartego na formularzu do wprowadzenia danych przez użytkowników|Domyślnie klient usługi RMS działa w trybie dyskretnym i użytkownik nie musi wprowadzać żadnych danych. Serwery federacyjne partnerów mogą być jednak skonfigurowane tak, aby wymagać wprowadzenia danych przez użytkownika, na przykład w ramach uwierzytelniania opartego na formularzu. W takim przypadku należy skonfigurować klienta usługi RMS, aby ignorował tryb dyskretny w celu umożliwienia wyświetlenia formularza uwierzytelniania federacyjnego w oknie przeglądarki na potrzeby uwierzytelniania użytkowników.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**Uwaga**: jeśli serwer federacyjny został skonfigurowany do użycia uwierzytelniania opartego na formularzu, ten klucz jest wymagany. Jeśli serwer federacyjny jest skonfigurowany do użycia zintegrowanego uwierzytelniania systemu Windows, ten klucz nie jest wymagany.|
 |Tylko usługi AD RMS: aby zablokować użycie usługi ILS|Domyślnie klient usługi RMS obsługuje korzystanie z zawartości chronionej przez usługę ILS, można go jednak skonfigurować tak, aby blokował tę usługę, używając poniższego klucza rejestru. Jeśli ten klucz rejestru został ustawiony na blokowanie usługi ILS, wszelkie próby otwarcia lub uzyskania dostępu do zawartości chronionej przez usługę ILS spowodują zwrócenie następującego błędu:<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: **DisablePassportCertification**<br /><br />**Wartość:** 1 — blokowanie użycia usługi ILS, 0 — zezwolenie na użycie usługi ILS (wartość domyślna)|
 
@@ -129,7 +128,7 @@ Szablony ułatwiają użytkownikom i administratorom szybkie stosowanie ochrony 
 
 **Tryb klienta:** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**Tryb serwera:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\*<SID>*
+**Tryb serwera:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>\*
 
 Jeśli korzystasz z tego folderu, nie trzeba używać specjalnej konwencji nazewnictwa. Szablony muszą jednak zostać wydane przez usługę lub serwer RMS, a wymagane rozszerzenie nazwy pliku to XML. Prawidłowe nazwy to na przykład Contoso-Confidential.xml lub Contoso-ReadOnly.xml.
 
@@ -170,17 +169,17 @@ Aby zarejestrować i usunąć punkt połączenia usługi po zainstalowaniu usłu
 
 1.  Otwórz konsolę usług Active Directory Management na serwerze usług AD RMS:
 
-    -   W systemie Windows Server 2008 R2 lub Windows Server 2008 kliknij przycisk **Start**, kliknij pozycję **Narzędzia administracyjne**, a następnie kliknij pozycję **Usługi Active Directory Rights Management**..
+    -   W systemie Windows Server 2008 R2 lub Windows Server 2008 kliknij przycisk **Start**, kliknij pozycję **Narzędzia administracyjne**, a następnie kliknij pozycję **Usługi Active Directory Rights Management**.
 
-    -   W systemie Windows Server 2012 R2 lub Windows Server 2012 w Menedżerze serwera kliknij pozycję **Narzędzia**, a następnie kliknij pozycję **Usługi Active Directory Rights Management**..
+    -   W systemie Windows Server 2012 R2 lub Windows Server 2012 w Menedżerze serwera kliknij pozycję **Narzędzia**, a następnie kliknij pozycję **Usługi Active Directory Rights Management**.
 
-2.  W konsoli usług AD RMS kliknij prawym przyciskiem myszy klaster usług AD RMS, a następnie kliknij pozycję **Właściwości**..
+2.  W konsoli usług AD RMS kliknij prawym przyciskiem myszy klaster usług AD RMS, a następnie kliknij pozycję **Właściwości**.
 
 3.  Kliknij kartę **Punkt połączenia usługi**.
 
 4.  Zaznacz pole wyboru **Zmień punkt połączenia usługi**.
 
-5.  Wybierz opcję **Ustaw punkt połączenia usługi na bieżący klaster certyfikacji**, a następnie kliknij przycisk **OK**..
+5.  Wybierz opcję **Ustaw punkt połączenia usługi na bieżący klaster certyfikacji**, a następnie kliknij przycisk **OK**.
 
 ### Włączanie odnajdowania usługi po stronie klienta za pomocą rejestru systemu Windows
 Jeśli nie chcesz używać punktu połączenia usługi lub jeśli punkt połączenia usługi nie istnieje, możesz skonfigurować rejestr na komputerze klienckim, aby klient usługi RMS mógł znaleźć odpowiedni serwer usług AD RMS.
@@ -191,21 +190,19 @@ Jeśli nie chcesz używać punktu połączenia usługi lub jeśli punkt połącz
 
     -   Na komputerze klienckim w oknie uruchamiania wpisz ciąg **regedit**, a następnie naciśnij klawisz Enter, aby otworzyć Edytor rejestru.
 
-2.  W Edytorze rejestru przejdź do klucza **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**..
+2.  W Edytorze rejestru przejdź do klucza **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
 
-    > [!IMPORTANT]
-    > W przypadku używania 32-bitowej aplikacji na 64-bitowym komputerze ścieżka będzie następująca: 
-    > **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT] W przypadku używania 32-bitowej aplikacji na 64-bitowym komputerze ścieżka będzie następująca: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
-3.  Aby utworzyć podklucz ServiceLocation, kliknij prawym przyciskiem myszy pozycję **MSIPC**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg **ServiceLocation**..
+3.  Aby utworzyć podklucz ServiceLocation, kliknij prawym przyciskiem myszy pozycję **MSIPC**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg **ServiceLocation**.
 
-4.  Aby utworzyć podklucz EnterpriseCertification, kliknij prawym przyciskiem myszy pozycję **ServiceLocation**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg **EnterpriseCertification**..
+4.  Aby utworzyć podklucz EnterpriseCertification, kliknij prawym przyciskiem myszy pozycję **ServiceLocation**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg **EnterpriseCertification**.
 
-5.  Aby ustawić adres URL certyfikacji przedsiębiorstwa, kliknij dwukrotnie wartość **(Domyślna)** w podkluczu **EnterpriseCertification**. W wyświetlonym oknie dialogowym **Edytowanie ciągu** w polu **Dane wartości** wpisz <http or https>://*Nazwa_klastra_usług_AD_RMS*/_wmcs/Certification, a następnie kliknij przycisk **OK**..
+5.  Aby ustawić adres URL certyfikacji przedsiębiorstwa, kliknij dwukrotnie wartość **(Domyślna)** w podkluczu **EnterpriseCertification**. W wyświetlonym oknie dialogowym **Edytowanie ciągu** w polu **Dane wartości** wpisz <http or https>://*AD RMS_cluster_name*/_wmcs/Certification, a następnie kliknij przycisk **OK**.
 
 6.  Aby utworzyć podklucz EnterprisePublishing, kliknij prawym przyciskiem myszy pozycję **ServiceLocation**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg EnterprisePublishing.
 
-7.  Aby ustawić adres URL publikowania przedsiębiorstwa, kliknij dwukrotnie wartość **(Domyślna)** w podkluczu **EnterprisePublishing**. W wyświetlonym oknie dialogowym **Edytowanie ciągu** w polu **Dane wartości** wpisz <http or https>://*Nazwa_klastra_usług_AD_RMS*/_wmcs/Licensing, a następnie kliknij przycisk **OK**..
+7.  Aby ustawić adres URL publikowania przedsiębiorstwa, kliknij dwukrotnie wartość **(Domyślna)** w podkluczu **EnterprisePublishing**. W wyświetlonym oknie dialogowym **Edytowanie ciągu** w polu **Dane wartości** wpisz <http or https>://*AD RMS_cluster_name*/_wmcs/Licensing, a następnie kliknij przycisk **OK**.
 
 8.  Zamknij Edytor rejestru.
 
@@ -226,7 +223,7 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
     -   W przypadku 32-bitowej wersji pakietu Office na platformie x64: HKLM\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Servicelocation
 
-3.  Utwórz podklucz LicensingRedirection: kliknij prawym przyciskiem myszy pozycję **Servicelocation**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz **LicensingRedirection**..
+3.  Utwórz podklucz LicensingRedirection: kliknij prawym przyciskiem myszy pozycję **Servicelocation**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz **LicensingRedirection**.
 
 4.  Aby ustawić przekierowywanie licencjonowania, kliknij prawym przyciskiem myszy podklucz **LicensingRedirection**, wybierz pozycję **Nowy**, a następnie wybierz pozycję **Wartość ciągu**.  W polu **Nazwa** podaj adres URL starego serwera licencyjnego, a w polu **Wartość** podaj adres URL nowego serwera licencyjnego.
 
@@ -236,8 +233,7 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
     **Wartość:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE]
-    > Jeśli stary serwer licencyjny ma określony intranetowy i ekstranetowy adres URL, nowe mapowanie nazwy i wartości musi zostać ustawione dla obu tych adresów URL w kluczu LicensingRedirection.
+    > [!NOTE] Jeśli stary serwer licencyjny ma określony intranetowy i ekstranetowy adres URL, nowe mapowanie nazwy i wartości musi zostać ustawione dla obu tych adresów URL w kluczu LicensingRedirection.
 
 5.  Powtórz poprzedni krok w przypadku wszystkich serwerów, które muszą zostać przekierowane.
 
@@ -245,6 +241,6 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

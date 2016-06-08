@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/19/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -29,7 +29,7 @@ ms.suite: ems
 
 *Dotyczy usług: Azure Rights Management, Office 365*
 
-Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management (Azure RMS) bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto gdy konfigurujesz szablony niestandardowe dla usługi Azure RMS, wybierasz prawa użytkowania, które zostaną automatycznie zastosowane po wybraniu szablonu przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w klasycznym portalu Azure możesz wybrać role, które konfigurują logiczne grupowanie praw użytkowania, lub skonfigurować poszczególne prawa.
+Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management (Azure RMS) bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto konfigurując szablony niestandardowe dla usługi Azure RMS, wybierasz prawa użytkowania, które zostaną automatycznie zastosowane po wybraniu szablonu przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w klasycznym portalu platformy Azure możesz wybrać role, które powodują ustawienie logicznego grupowania praw użytkowania, albo skonfigurować poszczególne prawa.
 
 Niniejszy artykuł pomoże Ci skonfigurować prawa użytkowania dla używanej aplikacji oraz zrozumieć, jak te prawa będą interpretowane przez aplikacje.
 
@@ -50,8 +50,6 @@ Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie lub filtro
 **Nazwa w szablonach usługi AD RMS**: *Edytuj*
 
 **Stała lub wartość API**: *nie dotyczy*
-
-W aplikacjach pakietu Office to prawo umożliwia użytkownikowi zapisanie dokumentu.
 
 ---
 
@@ -93,7 +91,7 @@ To prawo jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc
 
 ### Zapisz jako, Eksportuj
 
-Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W zależności od aplikacji plik może zostać zapisany bez ochrony.
+Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przypadku dokumentów pakietu Office plik może zostać zapisany bez ochrony.
 
 **Kodowanie w zasadach:** EXPORT
 
@@ -105,13 +103,13 @@ Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W zale�
 
 **Stała lub wartość interfejsu API**: IPC_GENERIC_EXPORTL"EXPORT"
 
-To uprawnienie umożliwia też użytkownikom stosowanie innych opcji eksportu w aplikacjach, np. opcji *Wyślij do programu OneNote*.
+To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji *Wyślij do programu OneNote*.
 
 ---
 
 ### Prześlij dalej
 
-Włącza opcję przekazywania dalej wiadomości e-mail oraz dodawania adresatów w wierszach *Do* i *DW*.
+Włącza opcję przekazywania dalej wiadomości e-mail oraz dodawania adresatów w wierszach *Do* i *DW*. To prawo dotyczy tylko wiadomości e-mail, a nie dokumentów.
 
 **Kodowanie w zasadach:** FORWARD
 
@@ -153,9 +151,9 @@ Włącza opcje związane z drukowaniem zawartości.
 
 **Implementacja w prawach niestandardowych pakietu Office:** jako opcja *Drukuj zawartość* w uprawnieniach niestandardowych. Nie jest to ustawienie określane dla poszczególnych odbiorców.
 
-**Nazwa w klasycznym portalu Azure:** *Drukowanie*
+**Nazwa w klasycznym portalu Azure:** *Drukuj*
 
-**Nazwa w szablonach usługi AD RMS:** *Drukowanie*
+**Nazwa w szablonach usługi AD RMS:** *Drukuj*
 
 **Stała lub wartość interfejsu API:** IPC_GENERIC_PRINTL"PRINT
 
@@ -209,57 +207,26 @@ Umożliwia użytkownikom otworzenie dokumentu i wyświetlenie zawartości.
 
 ---
 
-### Wyświetl prawa
+### Kopiuj
 
-Zezwala użytkownikowi na zobaczenie zasad zastosowanych wobec dokumentu.
+Włącza opcje kopiowania danych (w tym przechwytywania ekranu) z dokumentu do tego samego lub innego dokumentu.
 
-**Kodowanie w zasadach:** VIEWRIGHTSDATA
+**Kodowanie w zasadach:** EXTRACT
 
-**Implementacja w prawach niestandardowych pakietu Office**: nie zaimplementowane.
+**Implementacja w prawach niestandardowych pakietu Office:** Jako opcja *Zezwalaj użytkownikom z dostępem do odczytu na kopiowanie zawartości* zasady niestandardowej.
 
-**Nazwa w klasycznym portalu Azure:** *Wyświetl przypisane prawa*
+**Nazwa w klasycznym portalu Azure:** *Kopiuj i Wyodrębnij zawartość*
 
-**Nazwa w szablonach usługi AD RMS:** *Wyświetl prawa*
+**Nazwa w szablonach usługi AD RMS:** *Wyodrębnij*
 
-**Stała lub wartość interfejsu API:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
+**Stała lub wartość interfejsu API:** IPC_GENERIC_EXTRACTL"EXTRACT"
 
----
-
-### Nazwa pospolita: Wyświetl prawa
-
-Zezwala użytkownikowi na zobaczenie zasad zastosowanych wobec dokumentu.
-
-**Kodowanie w zasadach:** VIEWRIGHTSDATA
-
-**Implementacja w prawach niestandardowych pakietu Office**: nie zaimplementowane.
-
-**Nazwa w klasycznym portalu Azure:** *Wyświetl przypisane prawa*
-
-**Nazwa w szablonach usługi AD RMS:** *Wyświetl prawa*
-
-**Stała lub wartość interfejsu API:** IPC_READ_RIGHTSL"VIEWRIGHTSDATA"
-
-Ignorowane przez niektóre aplikacje.
+W niektórych aplikacjach pozwala także na zapisanie całego dokumentu w postaci niechronionej.
 
 ---
 
-### Zmień prawa
 
-Zezwala użytkownikowi na zmodyfikowanie zasad zastosowanych wobec dokumentu. Obejmuje możliwość usunięcia ochrony.
-
-**Kodowanie w zasadach:** EDITRIGHTSDATA
-
-**Implementacja w prawach niestandardowych pakietu Office**: nie zaimplementowane.
-
-**Nazwa w klasycznym portalu Azure:** *Zmień prawa*
-
-**Nazwa w szablonach usługi AD RMS:** *Zmień prawa*
-
-**Stała lub wartość interfejsu API:** IPC_WRITE_RIGHTSL"EDITRIGHTSDATA"
-
----
-
-### Zezwalaj na makra
+### Włącz makra
 
 Włącza opcję uruchamiania makr lub innych rozwiązań programistycznych albo zezwala na zdalny dostęp do zawartości w dokumencie.
 
@@ -276,9 +243,9 @@ Włącza opcję uruchamiania makr lub innych rozwiązań programistycznych albo 
 
 ## Prawa zawarte w poziomach uprawnień
 
-Niektóre aplikacje grupują prawa użytkowania w poziomach uprawnień. Dzięki temu można łatwiej wybrać prawa użytkowania, które zazwyczaj stosuje się wspólnie. Te poziomy uprawnień upraszczają skomplikowane działania po stronie użytkowników, którzy mogą wybrać opcje oparte na rolach.  Na przykład **Osoba dokonująca przeglądu** i **Współautor**. Chociaż opcje te często pokazują użytkownikom podsumowanie praw, mogą nie zawierać wszystkich praw wymienionych w poprzedniej tabeli.
+Niektóre aplikacje grupują prawa użytkowania w poziomach uprawnień. Dzięki temu można łatwiej wybrać prawa użytkowania, które zazwyczaj stosuje się wspólnie. Te poziomy uprawnień upraszczają skomplikowane działania po stronie użytkowników, którzy mogą wybrać opcje oparte na rolach.  Na przykład **Osoba dokonująca przeglądu** i **Współautor**. Chociaż opcje te często są dostępne z podsumowaniem praw, to mogą one nie obejmować wszystkich praw wymienionych w poprzedniej tabeli.
 
-Skorzystaj z poniższej tabeli, aby uzyskać listę poziomów uprawnień i kompletną listę praw, które zawierają.
+W tabeli poniżej znajduje się lista poziomów uprawnień i pełna lista praw w nich zawartych.
 
 |Poziom uprawnień|Aplikacje|Zawarte prawa (nazwa pospolita)|
 |---------------------|----------------|---------------------------------|
@@ -293,7 +260,7 @@ Skorzystaj z poniższej tabeli, aby uzyskać listę poziomów uprawnień i kompl
 Nie dotyczy aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows.
 
 ## Prawa zawarte w domyślnych szablonach
-Prawa dołączone do domyślnych szablonów są następujące:
+W szablonach domyślnych zawarte są następujące prawa:
 
 |Nazwa wyświetlana|Zawarte prawa (nazwa pospolita)|
 |----------------|---------------------------------|
@@ -305,6 +272,6 @@ Prawa dołączone do domyślnych szablonów są następujące:
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

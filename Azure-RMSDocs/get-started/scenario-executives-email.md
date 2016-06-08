@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -51,10 +51,10 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />Utworzono grupę z włączoną obsługą poczty o nazwie **Kierownicy** i dodano do niej wszystkich przedstawicieli kadry kierowniczej.<br /><br />Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Kierownicy** i dodano do niej wszystkich przedstawicieli kadry kierowniczej.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Klucz dzierżawy usługi Azure Rights Management jest zarządzany przez firmę Microsoft. Nie jest używana funkcja BYOK.|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Występuje jedna z poniższych konfiguracji:<br /><br />Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
+|Występuje jedna z poniższych konfiguracji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
@@ -138,6 +138,6 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

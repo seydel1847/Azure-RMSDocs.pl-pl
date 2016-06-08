@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -60,7 +60,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |---------------|--------------------------------|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Jeden z poniższych programów:<br /><br />Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**<br /><br />Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Jeden z poniższych programów:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Łącznik usługi Rights Management jest zainstalowany, autoryzowany dla komputera z systemem Windows Server i skonfigurowany dla roli **serwera infrastruktury FCI**.|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
 |Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management została wdrożona na komputerach użytkowników z systemem Windows.|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
@@ -128,6 +128,6 @@ W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scena
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

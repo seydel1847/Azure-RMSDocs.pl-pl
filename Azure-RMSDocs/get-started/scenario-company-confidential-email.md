@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -52,14 +52,14 @@ Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 Zanim przejdziesz do dokumentacji użytkownika, upewnij się, że zostały spełnione następujące wymagania.
 
 ## Wymagania dotyczące tego scenariusza
-Aby zrealizować instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
+Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
 |Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Klucz dzierżawy usługi Azure Rights Management jest zarządzany przez firmę Microsoft. Nie jest używana funkcja BYOK.|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Jeden z poniższych programów:<br /><br />Usługa Exchange Online jest włączona dla usługi Azure Rights Management.<br /><br />Łącznik usługi RMS jest zainstalowany i skonfigurowany dla lokalnego programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnego programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
+|Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnego programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
 |Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych usługi Azure Management Rights](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać odpowiednie informacje, sprawdź sekcję [Odświeżanie szablonów dla użytkowników](https://technet.microsoft.com/library/dn642472.aspx) w artykule dotyczącym konfigurowania szablonów.|
 |Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](https://technet.microsoft.com/library/dn339003.aspx) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Wiadomości e-mail** w tabeli [Funkcje urządzeń klienckich](https://technet.microsoft.com/library/dn655136.aspx) w temacie [Wymagania dotyczące usługi Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)|
 
@@ -163,6 +163,6 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO3-->
 
 

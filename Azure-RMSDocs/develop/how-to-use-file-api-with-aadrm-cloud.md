@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze
 
 W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx).
@@ -44,8 +44,7 @@ Aby możliwe było korzystanie z aplikacji zestawu SDK 2.1 usługi RMS z usług�
 -   Ustaw właściwość [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty).
 
 
-    int mode = IPC_API_MODE_SERVER;
-    IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
+    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
 **Uwaga** Aby uzyskać więcej informacji, zobacz [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
@@ -67,21 +66,15 @@ Aby możliwe było korzystanie z aplikacji zestawu SDK 2.1 usługi RMS z usług�
 **Uwaga** Tylko administrator dzierżawy może korzystać z poleceń cmdlet modułu Powershell.
 
 
--   Uruchom program Powershell i uruchom następujące polecenia, aby wygenerować klucz
-            `Import-Module MSOnline`
-            `Connect-MsolService` (wpisz swoje poświadczenia administratora)
-            `New-MsolServicePrincipal` (wpisz nazwę wyświetlaną)
+-   Uruchom program Powershell i uruchom następujące polecenia, aby wygenerować klucz         `Import-Module MSOnline`
+            `Connect-MsolService` (wpisz swoje poświadczenia administratora)         `New-MsolServicePrincipal` (wpisz nazwę wyświetlaną).
 -   Po wygenerowaniu klucza symetrycznego wyświetlane są informacje na temat klucza, w tym sam klucz i element **AppPrincipalId**.
 
 
 
-    The following symmetric key was created as one was not supplied
-    ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    Następujący klucz symetryczny został utworzony, ponieważ odpowiedni klucz nie został podany, ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
-    DisplayName : RMSTestApp
-    ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
-    ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
-    AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 
@@ -103,9 +96,7 @@ Aby możliwe było korzystanie z aplikacji zestawu SDK 2.1 usługi RMS z usług�
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
     // Skonfiguruj każdy element członkowski przy użyciu informacji z tworzenia usługi.
-    symKey.wszBase64Key = "klucz główny usługi";
-    symKey.wszAppPrincipalId = "identyfikator główny aplikacji";
-    symKey.wszBposTenantId = "identyfikator dzierżawy";
+    symKey.wszBase64Key = "klucz główny usługi"; symKey.wszAppPrincipalId = "identyfikator główny aplikacji"; symKey.wszBposTenantId = "identyfikator dzierżawy";
 
 
 Aby uzyskać więcej informacji, zobacz [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key).
@@ -141,15 +132,9 @@ Aby uzyskać więcej informacji, zobacz [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/r
     Wywołaj element [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist), przekazując to samo wystąpienie elementu [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx).
 
 
-    PCIPC_TIL pTemplates = NULL;
-    IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
+    PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
 
-    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),
-           IPC_GTL_FLAG_FORCE_DOWNLOAD,
-           0,
-           &promptCtx,
-           NULL,
-           &pTemplates);
+    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
 -   Przy użyciu szablonu z wcześniejszej części tego tematu wywołaj element [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile), przekazując to samo wystąpienie elementu [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx).
@@ -197,6 +182,6 @@ Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Managem
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

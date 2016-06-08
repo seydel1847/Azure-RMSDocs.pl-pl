@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Testowanie aplikacji obsługującej prawa
 
 Ten temat zawiera opis czynności, które należy wykonać, aby przetestować obsługującą prawa aplikację zestawu SDK 2.1 Usług Rights Management.
@@ -87,7 +87,7 @@ Aby wygenerować manifest aplikacji przy użyciu przedprodukcyjnego łańcucha c
 
 4.  Uruchom program Genmanifest.exe, aby wygenerować manifest aplikacji. Ten proces jest nazywany również podpisywaniem aplikacji. Operacja ta powinna zwracać plik man. Na przykład jeśli aplikacja nosi nazwę MojaAplikacja.exe, a plik konfiguracji manifestu to MojaAplikacja.exe.mcf, uruchom następujące polecenie:
 
-    **genmanifest.exe -chain isvtier5appsignsdk\_client.xml MojaAplikacja.exe.mcf MojaAplikacja.exe.man**
+    **genmanifest.exe -chain isvtier5appsignsdkclient\_client.xml MojaAplikacja.exe.mcf MojaAplikacja.exe.man**
 
 ### Krok 3. Uruchamianie aplikacji
 
@@ -123,6 +123,6 @@ Aplikację można uruchomić z dowolnego katalogu, ale manifest aplikacji (MojaA
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

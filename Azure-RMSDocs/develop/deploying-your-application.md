@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Wdrażanie aplikacji
 
 
@@ -44,8 +44,7 @@ Klient AD RMS Client 2.1 to oprogramowanie klienckie pomagające chronić użyc
 
 Klient AD RMS Client 2.1 nie jest składnikiem systemu operacyjnego Windows. Klient AD RMS Client 2.1 jest dostarczany w formie pliku do opcjonalnego pobrania i może być (po potwierdzeniu i zaakceptowaniu umowy licencyjnej) dystrybuowany za darmo razem z aplikacjami innych firm, aby umożliwić klientom dostęp do zawartości, do której prawa dostępu są chronione przez użycie i wdrożenie serwerów usługi RMS w danym środowisku.
 
-> [!IMPORTANT]
-> Klient AD RMS Client 2.1 jest powiązany z architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
+> [!IMPORTANT] Klient AD RMS Client 2.1 jest powiązany z architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
 
 
 ## Opcje instalacji klienta AD RMS Client 2.1
@@ -103,6 +102,6 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

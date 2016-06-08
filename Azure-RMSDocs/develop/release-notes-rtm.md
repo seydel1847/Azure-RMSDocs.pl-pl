@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Informacje o wersji
 
 Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
@@ -32,7 +32,7 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 >[!Note]  Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
 
-- **Ulepszony przepływ uwierzytelniania** — przy użyciu metody uwierzytelniania opartej na tokenie protokołu OAuth2 za pośrednictwem [biblioteki Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz temat [ADAL authentication for your RMS enabled application](https://msdn.microsoft.com/en-us/library/windows/desktop/mt661865(v=vs.85).aspx) (Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS).
+- **Ulepszony przepływ uwierzytelniania** — przy użyciu metody uwierzytelniania opartej na tokenie protokołu OAuth2 za pośrednictwem [biblioteki Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz temat [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](https://msdn.microsoft.com/en-us/library/windows/desktop/mt661865(v=vs.85).aspx).
 - **Aktualizacja do biblioteki ADAL** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft zapewnia następujące możliwości:
 
  - Korzystanie z uwierzytelniania wieloskładnikowego
@@ -55,25 +55,25 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 ## Aktualizacja z maja 2015 r.
 
--   **Aplikacje usługi i usługi RMS oparte na chmurze** - [parametr **IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) wymaga podania trzech informacji: klucza symetrycznego, identyfikatora **AppPrincipalId** oraz identyfikatora **TenantBposId**. W temacie zawierającym omówienie tego zagadnienia dodano wytyczne dotyczące uzyskiwania tych informacji. Tę aktualizację można znaleźć w zaktualizowanej wersji artykułu [Enable your service application to work with cloud based RMS](how-to-use-file-api-with-aadrm-cloud.md) (Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze).
+-   **Aplikacje usługi i usługi RMS oparte na chmurze** - [parametr **IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) wymaga podania trzech informacji: klucza symetrycznego, identyfikatora **AppPrincipalId** oraz identyfikatora **TenantBposId**. W temacie zawierającym omówienie tego zagadnienia dodano wytyczne dotyczące uzyskiwania tych informacji. Tę aktualizację można znaleźć w zaktualizowanej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## Aktualizacja z kwietnia 2015 r.
 
--   **Śledzenie dokumentów** jest teraz możliwe za pośrednictwem zestawu nowych interfejsów API. Aby uzyskać więcej informacji, zobacz temat [Tracking Content](tracking-content.md) (Śledzenie zawartości).
--   **Typ szyfrowania** — obsługujemy teraz sterowanie na poziomie interfejsu API w celu wybrania pakietu szyfrowania. Aby uzyskać więcej informacji, zobacz temat [Working with encryption](working-with-encryption.md) (Korzystanie z szyfrowania).
+-   **Śledzenie dokumentów** jest teraz możliwe za pośrednictwem zestawu nowych interfejsów API. Aby uzyskać więcej informacji, zobacz [Śledzenie zawartości](tracking-content.md).
+-   **Typ szyfrowania** — obsługujemy teraz sterowanie na poziomie interfejsu API w celu wybrania pakietu szyfrowania. Aby uzyskać więcej informacji, zobacz [Praca z szyfrowaniem](working-with-encryption.md).
 
-    **Uwaga**  Flaga **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** nie będzie już widoczna w interfejsach API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale istniejące aplikacje będą nadal działać, ponieważ będziemy flaga będzie prywatnie uznawana w kodzie interfejsu API. Nadal będzie można uzyskiwać korzyści zapewniane przez przestarzałą flagę algorytmów szyfrowania, zmieniając po prostu flagę. Aby uzyskać więcej informacji, zobacz temat [Working with encryption](working-with-encryption.md) (Korzystanie z szyfrowania).
+    **Uwaga** Flaga **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** nie będzie już widoczna w interfejsach API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale istniejące aplikacje będą nadal działać, ponieważ będziemy flaga będzie prywatnie uznawana w kodzie interfejsu API. Nadal będzie można uzyskiwać korzyści zapewniane przez przestarzałą flagę algorytmów szyfrowania, zmieniając po prostu flagę. Aby uzyskać więcej informacji, zobacz [Praca z szyfrowaniem](working-with-encryption.md).
 
      
 
--   **Aplikacje w trybie serwera**, w których jest używana [**wartość trybu API**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER) **IPC\_API\_MODE\_SERVER**, nie wymagają już manifestu aplikacji. Można przetestować aplikację na serwerze produkcyjnym usługi RMS, przy czym nie jest wymagane uzyskanie licencji produkcyjnej podczas przełączania do środowiska produkcyjnego. Aby uzyskać więcej informacji na temat aplikacji w trybie serwera, zobacz temat [Application types](application-types.md) (Typy aplikacji).
+-   **Aplikacje w trybie serwera**, w których jest używana [**wartość trybu API**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER) **IPC\_API\_MODE\_SERVER**, nie wymagają już manifestu aplikacji. Można przetestować aplikację na serwerze produkcyjnym usługi RMS, przy czym nie jest wymagane uzyskanie licencji produkcyjnej podczas przełączania do środowiska produkcyjnego. Aby uzyskać więcej informacji na temat aplikacji w trybie serwera, zobacz [Typy aplikacji](application-types.md).
 -   **Rejestrowanie** jest teraz implementowane zarówno za pośrednictwem plików, jak i śledzenia zdarzeń systemu Windows.
 -   Jeśli korzystasz z komputera z systemem **Windows 7 z dodatkiem SP1 lub Windows Server 2008 R2**, zapoznaj się z uwagą umieszczoną pod sekcją „Ważne uwagi dla deweloperów”.
 
 ## Aktualizacja ze stycznia 2015 r.
 
--   **Zwiększenie rozmiaru obsługiwanego pliku chronionego (pfile)** — obsługiwane są pliki pfile o rozmiarze przekraczającym jeden gigabajt (1 GB). Aby uzyskać więcej informacji o plikach pfile, zobacz temat [Supported File Formats](supported-file-formats.md) (Obsługiwane formaty plików).
--   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym nadal wyświetlane wyjątki, będą rejestrowane jako **INFORMACJE**..
+-   **Zwiększenie rozmiaru obsługiwanego pliku chronionego (pfile)** — obsługiwane są pliki pfile o rozmiarze przekraczającym jeden gigabajt (1 GB). Aby uzyskać więcej informacji o plikach pfile, zobacz [Obsługiwane formaty plików](supported-file-formats.md).
+-   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym nadal wyświetlane wyjątki, będą rejestrowane jako **INFORMACJE**.
 
     Wybraliśmy to rozwiązanie, aby nie dopuścić do przeoczenia żadnych szczegółów. Tylko ważne komunikaty są wyświetlane na poziomie OSTRZEŻENIA.
 
@@ -82,8 +82,8 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 ## Aktualizacja z października 2014 r.
 
--   Zaktualizowano domyślne zachowania składnika specyfikacji File API w zestawie SDK. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md)..
--   Nowa funkcja powiadomienia e-mail jest opisana w temacie zawierającym uwagi dla deweloperów [Enabling email notification](how-to-enable-email-notification.md) (Włączanie powiadomień e-mail).
+-   Zaktualizowano domyślne zachowania składnika specyfikacji File API w zestawie SDK. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
+-   Nowa funkcja powiadomienia e-mail jest opisana w temacie zawierającym uwagi dla deweloperów [Włączanie powiadomień e-mail](how-to-enable-email-notification.md).
 
 ## Aktualizacja z lipca 2014 r.
 
@@ -110,20 +110,20 @@ Składniki specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 
 -   Ulepszono **użycie pamięci specyfikacji File API**, szczególnie w przypadku dużych plików PFile.
 -   **Identyfikator zawartości** umożliwia teraz zapis za pośrednictwem właściwości **IPC\_LI\_CONTENT\_ID**. Aby uzyskać więcej informacji, zobacz temat [**License property types**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) (Typy właściwości licencji).
--   **Wymaganie manifestu produkcji** — jeśli aplikacja/usługa z włączonymi usługami RMS jest uruchamiana w trybie serwera, firma Microsoft nie będzie już wymagać manifestu. Aby uzyskać więcej informacji, zobacz temat [Application types](application-types.md) (Typy aplikacji).
+-   **Wymaganie manifestu produkcji** — jeśli aplikacja/usługa z włączonymi usługami RMS jest uruchamiana w trybie serwera, firma Microsoft nie będzie już wymagać manifestu. Aby uzyskać więcej informacji, zobacz temat [Typy aplikacji](application-types.md).
 -   **Aktualizacje dokumentacji**
 
     **Zreorganizowano** - [porady dotyczące użycia](how-to-use-msipc.md), aby wyjaśnić kolejność kroków konfiguracji środowiska i testowania aplikacji.
 
-    **Najlepsze rozwiązanie w zakresie testowania** — dodano wskazówki dotyczące korzystania z lokalnego serwera przed rozpoczęciem testów z użyciem usługi Azure RMS. Aby uzyskać więcej informacji, zobacz temat [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
+    **Najlepsze rozwiązanie w zakresie testowania** — dodano wskazówki dotyczące korzystania z lokalnego serwera przed rozpoczęciem testów z użyciem usługi Azure RMS. Aby uzyskać więcej informacji, zobacz [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## Ważne uwagi dla deweloperów
 
 -   **Natywna obsługa wszystkich typów plików**
 
-    W tej wersji zestawu Rights Management Services SDK 2.1 można dodać natywną obsługę dowolnego typu pliku (rozszerzenie). Na przykład dla dowolnego rozszerzenia &lt;rozszerzenie&gt; (innego niż rozszerzenia pakietu office i PDF), będzie używany ciąg \*.p&lt;rozszerzenie&gt;, jeśli konfiguracja administratora dla tego rozszerzenia ma wartość „NATIVE”.
+    W tej wersji zestawu Rights Management Services SDK 2.1 można dodać natywną obsługę dowolnego typu pliku (rozszerzenie). Na przykład dla dowolnego rozszerzenia &lt;roz&gt; (innego niż rozszerzenia pakietu office i PDF), będzie używany ciąg \*.p&lt;roz&gt;, jeśli konfiguracja administratora dla tego rozszerzenia ma wartość „NATIVE”.
 
-    Aby uzyskać więcej informacji o obsługiwanych typach plików, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md)..
+    Aby uzyskać więcej informacji o obsługiwanych typach plików, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
 -   **Na komputerach z systemem Windows 7 z dodatkiem SP1 i Windows Server 2008 R2 z dodatkiem SP1** bez aktualizacji [KB2533623](https://support.microsoft.com/en-us/kb/2533623) może wystąpić następujący błąd ochrony dowolnego pliku pakietu Office „Parametr jest nieprawidłowy. Kod błędu 0x80070057”. Jeśli widzisz taki komunikat, zainstaluj aktualizację i spróbuj ponownie. Jeśli problemy występują nadal, skontaktuj się z zespołem ds. opinii o wersji beta zestawu RMS SDK pod adresem <rmcstbeta@microsoft.com>.
 
@@ -137,7 +137,7 @@ Składniki specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 
     Można chronić poufne dane w zautomatyzowany sposób bez szczegółowej znajomości implementacji usługi Zarządzanie prawami do informacji (IRM) używanej przez różne formaty plików.
 
-    Ochrona natywna może obejmować pliki pakietu Microsoft Office, pliki w formacie Portable Document Format (PDF) oraz inne wybrane typy plików. Pełną listę typów plików, które mogą być chronione przy użyciu ochrony natywnej, można znaleźć w temacie [Konfiguracja interfejsu API plików](file-api-configuration.md)..
+    Ochrona natywna może obejmować pliki pakietu Microsoft Office, pliki w formacie Portable Document Format (PDF) oraz inne wybrane typy plików. Pełną listę typów plików, które mogą być chronione przy użyciu ochrony natywnej, można znaleźć w temacie [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
     Wszystkie pliki, z wyjątkiem plików systemowych i plików pakietu Office, mogą być chronione przy użyciu formatu pliku chronionego usługi RMS (PFile).
 
@@ -181,6 +181,6 @@ Jeśli nie będzie można pobrać nazwy ani opisu, zostanie zwrócony błąd. Mo
  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Instalacja i konfigurowanie serwera
 
 Ten temat zawiera opis kroków instalacji i konfigurowania serwera usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
@@ -102,6 +102,6 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
