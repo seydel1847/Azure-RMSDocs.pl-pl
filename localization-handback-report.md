@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\understand-explore\understand-explore.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/understand-explore.md) | InSyncHandedBackSuccess | [Details](#63635d13f95219bd900d8ecdd0ca0738c5ebca4a390)
 
 ## Item Details
-##### <a name='63635d13f95219bd900d8ecdd0ca0738c5ebca4a390'></a> Source: [Azure-RMSDocs\understand-explore\understand-explore.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/understand-explore/understand-explore.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\understand-explore\understand-explore.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/6914b17e0ba3714e35a248b9768c299835cadc65/Azure-RMSDocs/understand-explore/understand-explore.md)
-* Handoff File: [understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/05966894be49fad21d6e82a97cccedbae24f9aba/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf)
-* Handoff Datetime: 2016-04-27 22:00:06
-* Handoff Reason: Include
-* Archive File: [understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/88c1c2a80b0e9942bb3b75707576cf92d6d5fd00/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf)
-* Archive Datetime: 2016-05-12 02:17:02
-* Handback File: [understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/acb51cd8e00d3c2bb3d6e490c8feaa11debabd48/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/understand-explore.6c056e9eaf595609545e18189ab50a66b1026927.pl-pl.xlf)
-* Handback Datetime: 2016-06-14 08:31:37
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
