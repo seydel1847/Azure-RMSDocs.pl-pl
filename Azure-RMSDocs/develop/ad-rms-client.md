@@ -1,0 +1,56 @@
+---
+# required metadata
+
+title: Klient | Azure RMS
+description: Klient AD RMS Client 2.1 to oprogramowanie przeznaczone dla komputerów klienckich, ułatwiające ochronę dostępu do informacji i ich użycie.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
+# optional metadata
+
+#ROBOTS:
+audience: developer
+#ms.devlang:
+ms.reviewer: shubhamp
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Klient
+
+W tym temacie opisano przeznaczenie i funkcję klienta Active Directory Rights Management Services Client 2.1.
+
+Klient AD RMS Client 2.1 to oprogramowanie klienckie pomagające chronić użycie informacji przepływających przez aplikacje korzystające z usługi RMS i dostęp do tych informacji — w przypadku instalacji lokalnej lub instalacji w centrum danych firmy Microsoft.
+
+Klient AD RMS Client 2.1 nie jest składnikiem systemu operacyjnego Windows. Ten składnik jest dostarczany w formie pliku do opcjonalnego pobrania i może być (po potwierdzeniu i zaakceptowaniu umowy licencyjnej) dystrybuowany za darmo razem z aplikacjami innych firm, aby umożliwić klientom dostęp do zawartości, do której prawa dostępu są chronione przez użycie i wdrożenie serwerów usługi RMS w danym środowisku.
+
+Klient AD RMS Client 2.1 udostępnia funkcje umożliwiające użytkownikom tworzenie i publikowanie chronionej (szyfrowanej) zawartości i korzystanie z niej. W szczególności aplikacje korzystające z usług RMS używają klienta zainstalowanego na urządzeniu użytkownika końcowego do wykonywania zadań przewidzianych przez projektanta aplikacji w kontekście zarządzania prawami.
+
+Zestaw Rights Management Services SDK 2.1 współpracuje z klientem AD RMS Client 2.1. Aplikacje obsługujące prawa utworzone przy użyciu zestawu RMS SDK 2.1 muszą korzystać z klienta AD RMS Client 2.1.
+
+Aby uzyskać więcej informacji, zobacz [Dokumentacja TechNet klienta RMS Client 2.0](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx).
+
+## Tematy pokrewne
+
+* [Przegląd](ad-rms-overview.md)
+* [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
+* [Dokumentacja TechNet klienta RMS Client 2.0](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
+ 
+
+ 
+
+
+
+
+
+<!--HONumber=Apr16_HO4-->
+
+
