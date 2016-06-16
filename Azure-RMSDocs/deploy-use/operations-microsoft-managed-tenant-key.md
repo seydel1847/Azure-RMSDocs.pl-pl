@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -36,7 +36,7 @@ Jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Righ
 Po anulowaniu subskrypcji usługi Azure RMS usługa ta wstrzymuje korzystanie z klucza dzierżawy, co nie wymaga żadnej akcji ze strony użytkownika.
 
 ## Ponowne tworzenie klucza dzierżawy
-Ponowne tworzenie jest nazywane także wycofywaniem klucza. Klucza dzierżawy nie należy tworzyć ponownie, jeśli nie jest to naprawdę konieczne. Starsze programy klienckie, takie jak Office 2010, nie zostały zaprojektowane do bezproblemowej zmiany klucza. W tym scenariuszu należy usunąć stan usługi RMS na komputerach przy użyciu zasad grupowych lub równoważnego mechanizmu. Występują jednak określone zdarzenia, które mogą wymusić ponowne utworzenie klucza dzierżawy. Na przykład:
+Ponowne tworzenie jest nazywane także wycofywaniem klucza. Klucza dzierżawy nie należy tworzyć ponownie, jeśli nie jest to naprawdę konieczne. Starsze programy klienckie, takie jak Office 2010, nie zostały zaprojektowane do bezproblemowej zmiany klucza. W tym scenariuszu należy usunąć stan usługi RMS na komputerach przy użyciu zasad grupy lub równoważnego mechanizmu. Występują jednak określone zdarzenia, które mogą wymusić ponowne utworzenie klucza dzierżawy. Na przykład:
 
 -   Firma została podzielona na dwie lub więcej firm. Po ponownym utworzeniu klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
 
@@ -54,7 +54,7 @@ Konfigurację i klucz dzierżawy usługi Azure RMS można wyeksportować, wykonu
 
 ### Krok 1. Zainicjowanie eksportu
 
--   Aby to zrobić, skontaktuj się z pomocą techniczną firmy Microsoft (CSS). Musisz dowieść, że jesteś administratorem dzierżawy usługi Azure RMS.
+-   W tym celu skontaktuj się z działem obsługi klienta firmy Microsoft, aby otworzyć **sprawę pomocy technicznej usługi Azure Rights Management z żądaniem eksportu klucza usługi Azure RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 ### Krok 2. Oczekiwanie na weryfikację
 
@@ -67,7 +67,7 @@ Konfigurację i klucz dzierżawy usługi Azure RMS można wyeksportować, wykonu
     ```
     AadrmTpd.exe -createkey
     ```
-    Powoduje to wygenerowanie pary kluczy RSA oraz zapisanie części publicznej i prywatnej w formie plików w bieżącym folderze. Na przykład: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** i **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
+    Powoduje to wygenerowanie pary kluczy RSA oraz zapisanie części publicznej i prywatnej w formie plików w bieżącym folderze. Przykład: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** i **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
 
     Odpowiedz na wiadomość e-mail od CSS, dołączając plik o nazwie rozpoczynającej się od **PublicKey**. CSS przesyła następnie plik TPD w formie pliku xml zaszyfrowanego przy użyciu Twojego klucza RSA. Skopiuj ten plik do folderu, w którym pierwotnie zostało uruchomione narzędzie AadrmTpd i uruchom narzędzie ponownie przy użyciu pliku o nazwie rozpoczynającej się od **PrivateKey** oraz pliku otrzymanego od CSS. Na przykład:
 
@@ -89,7 +89,7 @@ Konfigurację i klucz dzierżawy usługi Azure RMS można wyeksportować, wykonu
     Jeśli przyczyną eksportu klucza dzierżawy jest zaprzestanie korzystania z usługi RMS, najlepszym rozwiązaniem jest dezaktywacja dzierżawy usługi RMS. Nie należy opóźniać tego działania po otrzymaniu klucza dzierżawy, ponieważ umożliwia to ograniczenie konsekwencji w przypadku uzyskania dostępu do klucza dzierżawy przez osobę nieupoważnioną. Instrukcje zamieszczono w temacie [Likwidowanie i dezaktywowanie usługi Azure Rights Management](decommission-deactivate.md).
 
 ## Reakcja na naruszenie zabezpieczeń
-Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet w przypadku odpowiedniego zabezpieczenia klucza obecna generacja technologii HSM, długości kluczy i algorytmów może zawierać luki w zabezpieczeniach.
+Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet w przypadku zapewnienia odpowiedniej ochrony klucza mogą występować luki w zabezpieczeniach dotyczące obecnej generacji technologii sprzętowych modułów zabezpieczeń, długości kluczy i algorytmów.
 
 Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli dane zdarzenie dotyczy Twoich zasobów, firma Microsoft powiadomi o tym administratorów dzierżawy usługi Azure RMS pocztą e-mail, korzystając z adresu podanego podczas rejestrowania subskrypcji.
 
@@ -98,12 +98,12 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 |Opis zdarzenia|Prawdopodobna reakcja|
 |------------------------|-------------------|
 |Przeciek klucza dzierżawy.|Utwórz ponownie klucz dzierżawy Zobacz sekcja [Ponowne tworzenie klucza dzierżawy](operations-tenant-key.md#re-key-your-tenant-key) w tym artykule.|
-|Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Ponowne utworzenie klucza dzierżawy nie jest pomocne w tym przypadku, sprawa wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
-|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza, lub też ataki siłowe stały się wykonalne.|Firma Microsoft musi uaktualnić usługę Azure RMS o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
+|Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Ponowne utworzenie klucza dzierżawy nie jest pomocne w tym przypadku, problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
+|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza, lub też ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure RMS o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Uwagi dla deweloperów | Azure RMS
-description: W tym temacie podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania. 
+title: Wskazówki i informacje dla deweloperów | Azure RMS
+description: W tym temacie podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -24,30 +24,33 @@ ms.suite: ems
 
 ---
 
-# Uwagi dla deweloperów
+# Wskazówki i informacje dla deweloperów
 
-W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
-
-- [Jawne dodawanie praw właściciela](add-explicit-owner-rights.md) — w przypadku tworzenia licencji od podstaw (przy użyciu funkcji [IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) w aplikacji należy jawnie dodać prawa właściciela.
-- [Typowe warunki wystąpienia błędów i rozwiązania](common-error-conditions-and-solutions.md) — najczęstsze komunikaty o błędach, które mogą być wyświetlane podczas korzystania z narzędzi programistycznych zestawu RMS SDK 2.1.
-- [Włączanie powiadomień e-mail](how-to-enable-email-notification.md) — powiadomienia e-mail umożliwiają informowanie właściciela chronionej zawartości o dostępie do jego zawartości.
+W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
+- [Porada: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md) — uwierzytelnianie w usługach Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
+- [Porada: dodawanie jawnych praw właściciela](add-explicit-owner-rights.md) — w przypadku tworzenia licencji od podstaw (przy użyciu funkcji [IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) w aplikacji należy jawnie dodać prawa &quot;właściciela&quot;.
+- [Porada: debugowanie aplikacji obsługującej prawa](debugging-applications-that-use-ad-rms.md) — w tym temacie opisano metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
+- [Porada: włączanie śledzenia dokumentów i odwołania](tracking-content.md) — w tym temacie podano podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością i zawarto przykładowy kod służący do aktualizacji metadanych i tworzenia przycisku **Śledź użycie** na potrzeby aplikacji.
+- [Porada: włączanie powiadomień e-mail](how-to-enable-email-notification.md) — powiadomienia e-mail umożliwiają informowanie właściciela chronionej zawartości o dostępie do jego zawartości.
+- [Porada: umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md) — w tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management.
+- [Porada: instalowanie i konfigurowanie serwera usług RMS](how-to-install-and-configure-an-rms-server.md) — ten temat zawiera opis kroków związanych z nawiązywaniem połączenia z serwerem usług RMS lub usługami Azure RMS na potrzeby testowania aplikacji obsługującej prawa.
+- [Porada: ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md) — za pomocą funkcji [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) można wybrać tryb zabezpieczeń, w którym uruchamiana jest aplikacja interfejsu API plików.
+- [Porada: praca z ustawieniami szyfrowania](working-with-encryption.md) — ten temat umożliwia zapoznanie się z pakietami szyfrowania firmy Microsoft i zawiera przykładowe fragmenty kodu, w których zastosowano te pakiety.
+- [Typy aplikacji](application-types.md) — w tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa.
 - [Konfiguracja interfejsu API plików](file-api-configuration.md) — działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru.
-- [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md) — ten temat zawiera instrukcje dotyczące tworzenia przykładowej aplikacji obsługującej prawa.
-- [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md) — za pomocą funkcji [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) można wybrać tryb zabezpieczeń, w którym uruchamiana jest aplikacja interfejsu API plików.
-- [Obsługiwane typy plików](supported-file-formats.md) — interfejs API plików obsługuje formaty natywne i Pfile.
-- [Śledzenie zawartości](tracking-content.md) — w tym temacie podano podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością chronioną przy użyciu zestawu RMS SDK 2.1.
-- [Praca z szyfrowaniem](working-with-encryption.md) — ten temat umożliwia zapoznanie się z pakietami szyfrowania firmy Microsoft i zawiera przykładowe fragmenty kodu, w których zastosowano te pakiety.
+- [Obsługiwane typy plików](supported-file-formats.md) — interfejs API plików obsługuje formaty natywne i Pfile
+- [Obsługiwane platformy](supported-platforms.md) — ten temat zawiera informacje o platformach klientów i serwerów obsługiwanych przez zestaw RMS SDK 2.1.
+- [Opis ograniczeń użycia](understanding-usage-restrictions.md) — wszystkie aplikacje z obsługą usług RMS muszą wymuszać ograniczenia użycia.
+- [Informacje o ograniczeniach użycia](usage-restriction-reference.md) — ograniczenia użycia są definiowane przez stałe wymienione w tym temacie.
 
  
-
 ## Tematy pokrewne ##
 * [Przegląd](ad-rms-overview.md)
-* [Sposób użycia](how-to-use-msipc.md)
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

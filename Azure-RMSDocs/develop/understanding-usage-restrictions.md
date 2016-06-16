@@ -2,7 +2,7 @@
 # required metadata
 
 title: Opis ograniczeń użycia | Azure RMS
-description: Wszystkie aplikacje z obsługą usług RMS muszą wymuszać ograniczenia użycia.
+description: Wszystkie aplikacje z obsługą usługi RMS muszą wymuszać ograniczenia użycia.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -26,17 +26,17 @@ ms.suite: ems
 
 # Opis ograniczeń użycia
 
-Wszystkie aplikacje z obsługą usług RMS muszą wymuszać ograniczenia użycia. Ograniczenie użycia ma miejsce, gdy użytkownik próbuje wykonać akcję (np. wydrukować dokument), ale zasady usług RMS dla tego dokumentu nie przyznają uprawnienia lub prawa do wykonania tej akcji (np. prawa PRINT).
+Wszystkie aplikacje z obsługą usługi RMS muszą wymuszać ograniczenia użycia. Ograniczenie użycia ma miejsce, gdy użytkownik próbuje wykonać akcję (np. wydrukować dokument), ale zasady usługi RMS dla tego dokumentu nie przyznają uprawnienia lub prawa do wykonania tej akcji (np. prawa PRINT).
 
 Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcji [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
 
 ## Opis ograniczeń użycia
 
--   Zapoznaj się ze standardowymi prawami usług RMS
+-   Zapoznaj się ze standardowymi prawami usługi RMS
 
-    Pełny zestaw praw usług RMS, które mogą być wymuszane przez aplikację, można znaleźć w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md).
+    Pełny zestaw praw usługi RMS, które mogą być wymuszane przez aplikację, można znaleźć w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md).
 
-    Należy zauważyć, że można tworzyć prawa zdefiniowane przez aplikację, specyficzne dla określonej sytuacji, które wykraczają poza standardowe prawa usług RMS.
+    Możesz tworzyć zdefiniowane przez aplikację prawa specyficzne dla określonej sytuacji, które wykraczają poza standardowe prawa usługi RMS.
 
 -   Zidentyfikuj punkty wymuszania ograniczeń użycia
 
@@ -46,13 +46,12 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
     Być może aplikacja nie potrzebuje wszystkich punktów wymuszania opisanych w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md). Jeśli na przykład aplikacja nie zezwala użytkownikom na drukowanie zawartości, nie musi sprawdzać prawa **IPC\_GENERIC\_PRINT**.
 
--   Zaktualizuj kod w celu sprawdzania dostępu w każdym punkcie wymuszania ograniczeń
+-   Zaktualizuj kod w celu sprawdzania dostępu w każdym punkcie wymuszania
 
-    Wskazówki dotyczące sposobu wymuszania określonych praw można znaleźć w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md).
+    Wskazówki dotyczące wymuszania określonych praw można znaleźć w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md).
 
 ## Tematy pokrewne
 
-* [Koncepcje dla deweloperów](ad-rms-concepts-nav.md)
 * [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
 * [Informacje o ograniczeniach użycia](usage-restriction-reference.md)
  
@@ -60,9 +59,6 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
  
 
 
-
-
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

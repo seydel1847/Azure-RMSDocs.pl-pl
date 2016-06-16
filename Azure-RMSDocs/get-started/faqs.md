@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -70,9 +70,9 @@ Do uwierzytelnienia użytkownika usługa Azure RMS zawsze używa konta usługi A
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
 ## Czy mogę dodać użytkowników spoza firmy do szablonów niestandardowych?
-Tak.  Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i użytkowników spoza niej.
+Tak. Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i użytkowników spoza niej.
 
-Aby określić użytkowników spoza organizacji, należy użyć [modułu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md):
+Aby określić użytkowników spoza organizacji, dodaj ich jako kontakty do grupy wybranej w klasycznym portalu Azure podczas konfigurowania szablonów. Możesz też użyć [modułu programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md):
 
 -   **Użyj obiektu definicji praw, aby utworzyć lub zaktualizować szablon**.    Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, który następnie zostanie użyty do utworzenia lub zaktualizowania szablonu. Aby określić obiekt definicji praw, utwórz zmienną za pomocą polecenia cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx). Następnie wykonaj polecenie cmdlet [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) (w przypadku nowego szablonu) lub polecenie cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (w przypadku modyfikacji istniejącego szablonu), aby dostarczyć tę zmienną do parametru -RightsDefinition. Jeśli jednak użytkownicy są dodawani do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących grup w szablonach, a nie tylko dla użytkowników zewnętrznych.
 
@@ -140,6 +140,11 @@ Uniemożliwianie przechwytywania ekranu może pomóc uniknąć przypadkowego lub
 
 Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowanie obsługuje interfejsy API usługi Rights Management pod kątem blokowania przechwytywania ekranu, sama technologia nie może zapobiec udostępnieniu przez użytkowników poufnych danych. Usługa Rights Management może pomóc chronić ważne dane za pomocą zasad autoryzacji i użycia, ale to rozwiązanie do zarządzania prawami w przedsiębiorstwie powinno być stosowane razem z innymi środkami kontroli. Przekłady obejmują wdrożenie zabezpieczeń fizycznych, dokładne monitorowanie osób mających uprawnienia dostępu do danych organizacji oraz inwestowanie w edukację użytkowników, tak aby wiedzieli, których danych nie należy udostępniać.
 
+## Jaka jest różnica między ochroną wiadomości e-mail za pomocą ustawienia Nie przesyłaj dalej i szablonem bez prawa do przesyłania dalej?
+
+Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
+
+
 ## Gdzie można znaleźć dodatkowe informacje na temat usługi Azure RMS, dotyczące na przykład kwestii prawnych, zgodności i umów SLA?
 Usługa Azure RMS obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure RMS, ale niedotyczących sposobu korzystania z usługi Azure RMS, sprawdź następujące zasoby:
 
@@ -191,6 +196,6 @@ Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

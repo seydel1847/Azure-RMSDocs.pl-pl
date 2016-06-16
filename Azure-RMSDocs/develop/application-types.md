@@ -29,7 +29,7 @@ ms.suite: ems
 
 W tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa.
 
-Następujące typy aplikacji są obecnie obsługiwane przez zestaw Rights Management Services SDK 2.1.
+Następujące typy aplikacji są obecnie obsługiwane przez zestaw Rights Management Services SDK 2.1
 
 ## Proste aplikacje
 
@@ -37,16 +37,15 @@ Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zasz
 
 ### Aplikacje w trybie serwera
 
+*Tryb serwera* jest przeznaczony dla nieinterakcyjnych aplikacji, które wykorzystują, chronią lub przetwarzają zawartość chronioną przez usługi RMS. Przykładem może być aplikacja do *ochrony przed utratą danych*, która działa jako usługa na serwerze plików i automatycznie chroni poufne dokumenty. Zobacz przykład tego typu aplikacji w temacie [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d).
 
-*Tryb serwera* jest przeznaczony dla nieinterakcyjnych aplikacji, które wykorzystują, chronią lub przetwarzają zawartość chronioną przez usługę RMS. Przykładem może być aplikacja do *ochrony przed utratą danych*, która działa jako usługa na serwerze plików i automatycznie chroni poufne dokumenty. Zobacz przykład tego typu aplikacji w temacie [IpcDlp sample](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d) (IpcDlp — przykład).
-
-Jeśli aplikacja używa *trybu serwera*, powinna uwierzytelniać się na serwerze usługi RMS w trybie dyskretnym. W przeciwieństwie do *trybu klienta* zestaw RMS SDK 2.1 nie otworzy monitu poświadczeń w razie niepowodzenia uwierzytelniania w trybie dyskretnym. Ponadto podczas uruchamiania w *trybie serwera* nie jest wymagany manifest aplikacji.
+Jeśli aplikacja używa *trybu serwera*, powinna uwierzytelniać się na serwerze usług RMS w trybie dyskretnym. W przeciwieństwie do *trybu klienta* zestaw RMS SDK 2.1 nie otworzy monitu poświadczeń w razie niepowodzenia uwierzytelniania w trybie dyskretnym. Ponadto podczas uruchamiania w *trybie serwera* nie jest wymagany manifest aplikacji.
 
 Aby uzyskać więcej informacji na temat ustawiania trybu zabezpieczeń interfejsu API, zobacz [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md).
 
 ### Rozbudowane aplikacje klienckie
 
-Rozbudowane aplikacje klienckie pozwalają użytkownikom na wyświetlanie i manipulowanie danymi przy użyciu graficznego interfejsu użytkownika (GUI). Często dane prezentowane w tym graficznym interfejsie są cenne i wrażliwe na kradzież lub przypadkowe ujawnienie. Obsługa ochrony informacji zazwyczaj rozszerza istniejący scenariusz, ale nie jest główną motywacją do tworzenia aplikacji.
+Rozbudowane aplikacje klienckie pozwalają użytkownikom na wyświetlanie i manipulowanie danymi przy użyciu graficznego interfejsu użytkownika (GUI). Często dane prezentowane w tym graficznym interfejsie użytkownika są cenne i wrażliwe na kradzież lub przypadkowe ujawnienie. Obsługa ochrony informacji zazwyczaj rozszerza istniejący scenariusz, ale nie jest główną motywacją do tworzenia aplikacji.
 
 Użycie zestawu RMS SDK 2.1 w przypadku zaawansowanych aplikacji klienckich ułatwia:
 
@@ -60,19 +59,12 @@ Aby uzyskać więcej informacji o ochronie aplikacji, zobacz [Zrozumienie ograni
 
 ## Tematy pokrewne
 
-* [Koncepcje dla deweloperów](ad-rms-concepts-nav.md)
 * [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md)
 * [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
 * [Opis ograniczeń użycia](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

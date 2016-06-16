@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Konfigurowanie szablonów niestandardowych usługi Azure Rights Management | Azure RMS
+title: Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure RMS
 description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -25,11 +25,11 @@ ms.suite: ems
 
 ---
 
-# Konfigurowanie szablonów niestandardowych usługi Azure Rights Management
+# Konfigurowanie szablonów niestandardowych usługi Azure Management Rights
 
 *Dotyczy usług: Azure Rights Management, Office 365*
 
-Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów, które ułatwiają stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
+Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) użytkownicy automatycznie otrzymują możliwość skorzystania z dwóch domyślnych szablonów ułatwiających stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
 
 -   Wyświetlanie chronionej zawartości w trybie tylko do odczytu
 
@@ -43,7 +43,7 @@ Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) 
 
     -   Określone uprawnienia: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
 
-Ponadto [aplikacja RMS sharing](../rms-client/sharing-app-windows.md) pozwala użytkownikom na definiowanie własnych zestawów uprawnień. W przypadku klienta programu Outlook i usługi Outlook Web Access użytkownicy mogą wybrać opcję **Nie przekazuj** dla wiadomości e-mail.
+Ponadto [aplikacja do udostępniania usług RMS](../rms-client/sharing-app-windows.md) pozwala użytkownikom na definiowanie własnych zestawów uprawnień. W przypadku klienta programu Outlook i usługi Outlook Web Access użytkownicy mogą wybrać opcję [Nie przekazuj](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
 
 W przypadku wielu organizacji domyślne szablony są wystarczające. Użytkownicy mogą jednak także tworzyć własne, niestandardowe szablony zasad praw. Poniżej przedstawiono okoliczności, które mogą sprzyjać tworzeniu szablonów niestandardowych:
 
@@ -63,7 +63,7 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 
 -   [Kopiowanie szablonu](copy-template.md)
 
--   [Usuwanie (archiwizacja) szablonów](remove-template.md)
+-   [Usuwanie (archiwizacja) szablonu](remove-template.md)
 
 -   [Odświeżanie szablonów dla użytkowników](refresh-templates.md)
 
@@ -72,6 +72,6 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

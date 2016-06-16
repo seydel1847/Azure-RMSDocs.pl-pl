@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,21 +35,20 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Rights Management (Azure RMS) w Tw
 
     Powiadom użytkowników, jak i kiedy należy chronić dokumenty i wiadomości e-mail zawierające informacje poufne. Jeśli to możliwe, podaj te informacje w odniesieniu do istniejących przepływów pracy, dzięki czemu użytkownicy będą mogli włączyć dodatkowe czynności do znanych sobie procesów, zamiast wprowadzać zupełnie nowe procesy. Poinformuj ich o korzyściach (i czynnikach ryzyka) specyficznych dla prowadzonej działalności, a także przekaż wskazówki dotyczące sytuacji, w których należy chronić pliki i wiadomości e-mail. Jeśli skonfigurowano [szablony niestandardowe](configure-custom-templates.md), udostępnij instrukcje dotyczące wyboru szablonów w przypadku, gdy nazwa i opis są niewystarczające.
 
-    > [!TIP]
-    > Przykładowe filmy dla użytkowników końcowych:
+    > [!TIP] Przykładowe filmy dla użytkowników końcowych:
     >
     > -   [Środowisko użytkownika usługi Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Śledzenie i odwoływanie dokumentów w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
 
 -   **Informacje dla administratorów:**
 
-    Niektóre aplikacje automatycznie stosują ochronę informacji przy użyciu zasad i ustawień skonfigurowanych przez administratorów. W przypadku tych aplikacji konieczne może być zapewnienie instrukcji dla innych administratorów, którzy zarządzają tymi aplikacjami i usługami. Aby uzyskać więcej informacji, zobacz tematy [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md) i [Konfigurowanie aplikacji dla usługi Azure Rights Management](configure-applications.md).
+    Niektóre aplikacje automatycznie stosują ochronę informacji przy użyciu zasad i ustawień skonfigurowanych przez administratorów. W przypadku tych aplikacji konieczne może być zapewnienie instrukcji dla innych administratorów, którzy zarządzają tymi aplikacjami i usługami. Aby uzyskać więcej informacji, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md) i [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](configure-applications.md).
 
 -   **Informacje dla działu pomocy technicznej:**
 
     Jednym z najbardziej przydatnych narzędzi dla działu pomocy technicznej jest [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Operatorzy pomocy technicznej mogą uruchomić to narzędzie z opcją administratora usługi Azure RMS oraz mogą poprosić użytkowników o jego uruchomienie z opcją użytkownika usługi Azure RMS. Narzędzie może być pomocne nie tylko w identyfikowaniu problemów, ale także w rozwiązaniu problemów, które zostaną znalezione. W przypadku problemów nierozwiązanych umożliwia rejestrowanie informacji w dziennikach śledzenia.
 
-    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych, na przykład żądania działu prawnego lub menedżera po odejściu pracownika z organizacji, upewnij się, czy dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure RMS.
+    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych, na przykład żądania działu prawnego lub menedżera po odejściu pracownika z organizacji, upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure RMS.
 
     Oto niektóre typowe problemy zgłaszane przez użytkowników:
 
@@ -59,7 +58,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Rights Management (Azure RMS) w Tw
 
     -   **Problemy dotyczące ochrony lub używania zawartości:**
 
-        Upewnij się, że użytkownicy mają odpowiednie instrukcje dotyczące aplikacji, z których korzystają, oraz używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure RMS. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
+        Upewnij się, że użytkownicy mają odpowiednie instrukcje dotyczące aplikacji, z których korzystają, oraz używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure RMS. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
         Jeśli użytkownik zaobserwuje błąd podczas próby ochrony lub korzystania z zawartości, poproś go o uruchomienie narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) jako użytkownik usługi Azure RMS.
 
@@ -74,16 +73,14 @@ Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów aplikacja do udos
 
 Instrukcje dotyczące korzystania z tej aplikacji na komputerach z systemem Windows można znaleźć w [Podręczniku użytkownika aplikacji do udostępniania usług Rights Management](../rms-client/sharing-app-user-guide.md).
 
-Aby uzyskać informacje dotyczące urządzeń przenośnych, zobacz temat [Często zadawane pytania dotyczące aplikacji do udostępniania usług Microsoft Rights Management dla platform przenośnych](http://technet.microsoft.com/dn451248).
+Aby uzyskać informacje dotyczące urządzeń przenośnych, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla platform urządzeń przenośnych](http://technet.microsoft.com/dn451248).
 
-> [!TIP]
-> Aby zapoznać się z przykładowym ogólnym scenariuszem zawierającym zrzuty ekranu, zobacz temat [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym] (../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users.
+> [!TIP] Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w artykule [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
 ## Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
 Jeśli używasz usługi Azure RMS, a aplikacja do udostępniania usług Rights Management nie została zainstalowana, użytkownicy nie będą widzieli przycisku **Udostępnij chronione** na wstążce ani opcji **Włącz ochronę miejscową** w Eksploratorze plików, które ułatwiają ochronę plików. Tacy użytkownicy muszą wykonać instrukcje podobne do następujących:
 
-> [!TIP]
-> Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
+> [!TIP] Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
 
 #### Aby chronić dokument w programie Word 2013
 
@@ -91,8 +88,7 @@ Jeśli używasz usługi Azure RMS, a aplikacja do udostępniania usług Rights M
 
 2.  W menu **Plik** kliknij polecenie **Informacje**, po czym kliknij przycisk **Ochrona dokumentu**. Kliknij pozycję **Ogranicz dostęp**, a następnie wybierz szablon, aby szybko zastosować odpowiednie prawa użytkowania, lub wybierz opcję **Ogranicz dostęp** i wybierz prawa użytkowania samodzielnie.
 
-    > [!NOTE]
-    > Jeśli korzystasz z usług Rights Management po raz pierwszy, po uzyskaniu kontaktu z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zostanie wyświetlony monit o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office.
+    > [!NOTE] Jeśli korzystasz z usługi Rights Management po raz pierwszy, po nawiązaniu komunikacji z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zostanie wyświetlony monit o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office.
 
 3.  Zapisz dokument.
 
@@ -102,7 +98,7 @@ Po otwarciu dokumentu przez innych użytkowników najpierw zostanie wykonane ich
 
 1.  W programie Outlook utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
-2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **Nie przesyłaj dalej**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
+2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
@@ -112,7 +108,7 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 1.  W aplikacji Outlook Web App utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
-2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **Nie przesyłaj dalej**, **Nie odpowiadaj wszystkim**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
+2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej**, **Nie odpowiadaj wszystkim**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
@@ -121,6 +117,6 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

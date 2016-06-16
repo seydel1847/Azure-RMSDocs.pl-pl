@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/02/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -66,7 +66,7 @@ Jak są przechowywane i zabezpieczane klucze kryptograficzne:
 
 - Klucz zawartości jest chroniony za pomocą klucza RSA organizacji („klucz dzierżawy Azure RMS”) jako część zasad w dokumencie, a zasady są także podpisane przez autora dokumentu. Ten klucz dzierżawy jest wspólny dla wszystkich dokumentów i wiadomości e-mail, które są chronione przez usługę Azure RMS w organizacji i może go zmienić tylko administrator usługi Azure RMS, jeśli organizacja korzysta z klucza dzierżawy zarządzanego przez klienta w ramach scenariusza „użyj własnego klucza” (BYOK). 
 
-    Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. W przypadku stosowania klucza dzierżawy zarządzanego przez klienta (BYOK) poziom zabezpieczeń jest rozszerzony dzięki użyciu szeregu wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie świadczenia usługi Azure, bez możliwości wyodrębniania, eksportowania lub udostępniania kluczy niezależnie od okoliczności. Aby uzyskać więcej informacji na temat klucza dzierżawy i scenariusza BYOK, zobacz temat [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
+    Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. W przypadku stosowania klucza dzierżawy zarządzanego przez klienta (BYOK) poziom zabezpieczeń jest rozszerzony dzięki użyciu szeregu wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie świadczenia usługi Azure, bez możliwości wyodrębniania, eksportowania lub udostępniania kluczy niezależnie od okoliczności. Aby uzyskać więcej informacji na temat klucza dzierżawy i scenariusza BYOK, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 - Licencje i certyfikaty wysyłane do urządzenia z systemem Windows są chronione przy użyciu klucza prywatnego na urządzeniu klienta, który jest tworzony w chwili, gdy użytkownik po raz pierwszy korzysta na urządzeniu z usługi Azure RMS. Ten klucz prywatny jest z kolei chroniony funkcją DPAPI po stronie klienta, która zabezpiecza informacje za pomocą klucza generowanego na podstawie hasła użytkownika. Na urządzeniach przenośnych klucze są używane tylko jeden raz. Ponieważ nie są przechowywane po stronie klienta, nie wymagają ochrony na urządzeniu. 
 
@@ -77,8 +77,7 @@ Aby bardziej szczegółowo poznać działanie usługi Azure RMS, przeanalizujemy
 
 Po zainicjowaniu środowiska użytkownika dany użytkownik może chronić dokumenty lub korzystać z chronionych dokumentów na tym komputerze.
 
-> [!NOTE]
-> Jeśli użytkownik przejdzie do innego komputera z systemem Windows lub inny użytkownik skorzysta z tego samego komputera z systemem Windows, proces inicjowania jest powtarzany.
+> [!NOTE] Jeśli użytkownik przejdzie do innego komputera z systemem Windows lub inny użytkownik skorzysta z tego samego komputera z systemem Windows, proces inicjowania zostanie powtórzony.
 
 ### Inicjowanie środowiska użytkownika
 Zanim użytkownik będzie mógł chronić zawartość lub korzystać z zawartości chronionej na komputerze z systemem Windows, należy przygotować środowisko użytkownika na urządzeniu. To proces jednorazowy, który jest wykonywany automatycznie bez interwencji użytkownika, gdy użytkownik próbuje chronić zawartość lub korzystać z zawartości chronionej:
@@ -87,7 +86,7 @@ Zanim użytkownik będzie mógł chronić zawartość lub korzystać z zawartoś
 
 **Działania wykonywane w kroku 1**: klient RMS na komputerze najpierw łączy się z usługą Azure RMS i uwierzytelnia użytkownika przy użyciu jego konta usługi Azure Active Directory.
 
-Gdy konto użytkownika jest sfederowane przy użyciu usługi Azure Active Directory, uwierzytelnianie odbywa się automatyczne, a użytkownik nie jest monitowany o poświadczenia. |
+Gdy konto użytkownika jest sfederowane przy użyciu usługi Azure Active Directory, uwierzytelnianie odbywa się automatyczne, a użytkownik nie otrzymuje monitu o podanie poświadczeń.
 
 ![Aktywacja klienta RMS — krok 2](../media/AzRMS_useractivation2.png)
 
@@ -106,7 +105,7 @@ Gdy użytkownik chroni dokument, klient RMS wykonuje następujące czynności w 
 
 **Działania wykonywane w kroku 2**: na kliencie RMS zostaje następnie utworzony certyfikat, który zawiera zasady dla dokumentu — albo na podstawie szablonu, albo przez wyszczególnienie określonych praw dotyczących dokumentu. Te zasady zawierają uprawnienia dla różnych użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia.
 
-Następnie klient RMS wykorzystuje klucz organizacji uzyskany podczas inicjowania środowiska użytkownika do szyfrowania zasad i symetrycznego klucza zawartości. Klient RMS podpisuje także zasady, korzystając z certyfikatu użytkownika uzyskanego podczas inicjowania środowiska użytkownika.|
+Następnie klient RMS wykorzystuje klucz organizacji uzyskany podczas inicjowania środowiska użytkownika do szyfrowania zasad i symetrycznego klucza zawartości. Klient usługi RMS podpisuje także zasady, korzystając z certyfikatu użytkownika uzyskanego podczas inicjowania środowiska użytkownika.
 
 ![Ochrona dokumentu RMS — krok 3](../media/AzRMS_documentprotection3.png)
 
@@ -148,14 +147,13 @@ Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różn
 
 Aby dowiedzieć się więcej na temat usługi Azure RMS, zapoznaj się z innymi artykułami w sekcji **Omówienie i eksploracja**, na przykład [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md). Znajdziesz tu informacje na temat integracji istniejących aplikacji z usługą Azure RMS w celu uzyskania rozwiązania zapewniającego ochronę informacji. 
 
-Zapoznaj się z sekcją [Usługa Azure Rights Management — terminologia](../get-started/terminology.md), aby zapoznać się z pojęciami, które możesz napotkać podczas konfigurowania i używania usługi Azure RMS. Przed rozpoczęciem wdrażania przeczytaj temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md). Jeśli chcesz od razu rozpocząć korzystanie z usługi i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka szybkiego startu dla usługi Azure Rights Management.](../get-started/quick-start-tutorial.md).
+Zapoznaj się z sekcją [Usługa Azure Rights Management — terminologia](../get-started/terminology.md), aby zapoznać się z pojęciami, które możesz napotkać podczas konfigurowania i używania usługi Azure RMS. Przed rozpoczęciem wdrażania przeczytaj temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md). Jeśli chcesz od razu rozpocząć korzystanie z usługi i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka szybkiego startu dla usługi Azure Rights Management](../get-started/quick-start-tutorial.md).
 
 Jeśli chcesz rozpocząć wdrażanie usługi Azure RMS w organizacji, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
-> [!TIP]
-> Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
+> [!TIP] Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

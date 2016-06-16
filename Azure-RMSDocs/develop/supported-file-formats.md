@@ -32,10 +32,10 @@ Interfejs API plików obsługuje formaty natywne i PFile.
 
 Bieżąca wersja interfejsu API plików obsługuje natywną ochronę plików pakietu Microsoft Office i plików PDF (Portable Document File) oraz ochronę PFile dla wszystkich pozostałych formatów plików. Dla plików PDF można opcjonalnie stosować ochronę PFile.
 
--   **Ochrona natywna**. W przypadku ochrony natywnej plik jest szyfrowany do formatu pliku usług AD RMS opartego na jego typie MIME (rozszerzeniu nazwy pliku). Pliki chronione natywnie przy użyciu interfejsu API plików są zgodne z formatem oczekiwanym przez aplikacje z obsługą usługi AD RMS, korzystające z ochrony natywnej (na przykład pakiet Office 2013, pakiet Office 2010 i czytnik plików PDF FoxIt). Ochrona natywna jest obsługiwana tylko w przypadku plików pakietu Office, plików PDF i niektórych innych typów plików. Aby uzyskać więcej informacji na temat typów plików, dla których jest obsługiwana ochrona natywna, zobacz [Konfiguracja interfejsu API plików](file-api-configuration.md).
--   **Ochrona PFile**. W przypadku ochrony PFile pliki są szyfrowane przy użyciu formatu AD RMS Protected File (PFile). Plik jest szyfrowany do pliku z rozszerzeniem pfile. Ochrona PFile jest obsługiwana dla wszystkich typów plików z wyjątkiem plików pakietu Office.
+-   **Ochrona natywna**. W przypadku ochrony natywnej plik jest szyfrowany do formatu pliku usługi AD RMS opartego na jego typie MIME (rozszerzeniu nazwy pliku). Pliki chronione natywnie przy użyciu interfejsu API plików są zgodne z formatem oczekiwanym przez aplikacje z obsługą usługi AD RMS korzystające z ochrony natywnej (na przykład pakiet Office 2013, pakiet Office 2010 i czytnik plików PDF FoxIt). Ochrona natywna jest obsługiwana tylko w przypadku plików pakietu Office, plików PDF i niektórych innych typów plików. Aby uzyskać więcej informacji na temat typów plików, które obsługują ochronę natywną, zobacz [Konfiguracja interfejsu API plików](file-api-configuration.md).
+-   **Ochrona PFile**. W przypadku ochrony PFile pliki są szyfrowane przy użyciu formatu AD RMS Protected File (PFile). Plik jest szyfrowany do pliku z rozszerzeniem pfile. Ochrona PFile jest obsługiwana przez wszystkie typy plików z wyjątkiem plików pakietu Office.
 
-Administratorzy mogą skonfigurować klucze rejestru, aby określić, czy i w jaki sposób pliki mają być chronione na podstawie ich rozszerzenia nazwy pliku. Aby uzyskać więcej informacji na temat sposobu konfigurowania ochrony plików podczas korzystania z interfejsu API plików, zobacz [Konfiguracja interfejsu API plików](file-api-configuration.md).
+Administratorzy mogą ustawić klucze rejestru, aby określić, czy pliki mają być chronione na podstawie ich rozszerzenia nazwy pliku i jak te pliki mają być chronione. Aby uzyskać więcej informacji na temat konfigurowania ochrony plików podczas korzystania z interfejsu API plików, zobacz [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
 ## Tematy pokrewne
 
@@ -46,9 +46,6 @@ Administratorzy mogą skonfigurować klucze rejestru, aby określić, czy i w ja
  
 
 
-
-
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

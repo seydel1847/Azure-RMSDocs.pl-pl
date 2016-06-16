@@ -23,16 +23,15 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
-# Włączanie powiadomień e-mail
+
+# Instrukcje: włączanie powiadomień e-mail
 
 Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości.
 
 Aby skonfigurować powiadomienia e-mail dla danej licencji, użyj polecenia [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) z parametrem typu właściwości *dwPropID* jako [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) oraz polami danych aplikacji sformatowanymi jako [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
 
-## C++
+    C++
 
-    ...
     int numDataPairs = 3;
 
     IPC_NAME_VALUE propertyValuePairs [numDataPairs];
@@ -46,7 +45,7 @@ Aby skonfigurować powiadomienia e-mail dla danej licencji, użyj polecenia [**I
     IPC_NAME_VALUE_LIST emailNotificationAppData = {numDataPairs, propertyValuePairs};
 
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
-    ...    
+        
 
 Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i wartości dla powiadomienia e-mail usługi RMS.
 
@@ -71,6 +70,6 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

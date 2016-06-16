@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
+
 # Konfiguracja interfejsu API plików
 
 
@@ -40,46 +40,45 @@ Aby uzyskać więcej informacji o obsługiwanych formatach plików, zobacz sekcj
 
 W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfrowaniem.
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*Typ*: Klucz
+**Typ**: klucz
 
-*Opis*: Zawiera ogólną konfigurację interfejsu API plików.
+**Opis**: zawiera ogólną konfigurację interfejsu API plików.
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-*Typ: Klucz
+**Typ**: klucz
 
-*Opis: Zawiera informacje o konfiguracji dla określonych rozszerzeń plików, na przykład TXT, JPG i tak dalej.
+**Opis**: zawiera informacje o konfiguracji dla określonych rozszerzeń plików, na przykład TXT, JPG itp.
 
 - Znak symbolu wieloznacznego „*”, jest dozwolony; jednak ustawienie dla określonego rozszerzenia ma pierwszeństwo przed ustawieniem zdefiniowanym przy użyciu symboli wieloznacznych. Symbol wieloznaczny nie ma wpływu na ustawienia dla plików programu Microsoft Office — muszą być one jawnie wyłączone według typu pliku.
 - Aby określić pliki, które nie mają rozszerzenia, użyj znaku „.”
 - Nie podawaj znaku „.” podczas określania klucza dla konkretnego rozszerzenia pliku Na przykład użyj `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` w celu określenia ustawień dla plików txt. (Nie używaj zapisu `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`).
 
-Ustaw wartość *Encryption* w kluczu w celu określenia zachowania ochrony. Jeśli wartość *Encryption* nie jest ustawiona, dla danego typu pliku realizowane jest zachowanie domyślne.
+Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. Jeśli wartość **Encryption** nie zostanie ustawiona, dla danego typu pliku zostanie zastosowane zachowanie domyślne.
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*Typ: REG_SZ*
+**Typ**: REG_SZ
 
-*Opis: Zawiera jedną z trzech wartości:
+**Opis**: zawiera jedną z trzech wartości:
 
-- *Off*: Szyfrowanie jest wyłączone.
+- **Off**: szyfrowanie jest wyłączone.
 
-> [AZURE.NOTE] To ustawienie nie ma żadnego wpływu na odszyfrowywanie. Dowolny zaszyfrowany plik, niezależnie od tego, czy został zaszyfrowany za pomocą ochrony natywnej, czy też pliku Pfile, można odszyfrować, jeśli tylko użytkownik ma prawo WYODRĘBNIANIA.
+> [AZURE.NOTE] To ustawienie nie ma żadnego wpływu na odszyfrowywanie. Każdy zaszyfrowany plik (niezależnie od tego, czy został zaszyfrowany za pomocą ochrony natywnej czy pliku Pfile) można odszyfrować, jeśli użytkownik ma prawo **WYODRĘBNIANIA**.
 
-- *Native*: Używane jest szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p**zzz**, gdzie **zzz** oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do plików z rozszerzeniem ptxt. Poniżej znajduje się lista rozszerzeń nazw plików, które mogą zostać objęte ochroną natywną.
+- **Native**: jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do plików z rozszerzeniem ptxt. Poniżej znajduje się lista rozszerzeń nazw plików, które mogą zostać objęte ochroną natywną.
 
-- *Pfile*: Używane jest szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
+- **Pfile**: jest używane szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
 
 
 > [AZURE.NOTE] To ustawienie nie ma żadnego wpływu na formaty plików pakietu Office. Na przykład jeśli wartość `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` jest ustawiona na &quot;Pfile”, pliki docx nadal będą szyfrowane przy użyciu ochrony natywnej, a zaszyfrowany plik nadal będzie miał rozszerzenie docx.
 
 Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domyślne.
 
-## Domyślne zachowanie dla różnych formatów pliku**
+## Domyślne zachowanie dla różnych formatów plików
 
 -   **Pliki pakietu Office** Włączone jest szyfrowanie natywne.
 -   **Pliki txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** Włączone jest szyfrowanie natywne (xxx staje się pxxx)
@@ -106,7 +105,7 @@ Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia)
 
 **Wszystkie inne formaty plików**
 
--   Typ ochrony = Pfile: plik sample.*zzz* zostaje zaszyfrowany i nosi nazwę sample.*zzz*pfile; gdzie zzz jest pierwotnym rozszerzeniem pliku.
+-   Typ ochrony = Pfile: plik sample.*zzz* jest szyfrowany i nosi nazwę sample.*zzz*.pfile, gdzie *zzz* to pierwotne rozszerzenie pliku.
 -   Off: Wyłącza funkcję szyfrowania.
 
 ### Przykłady
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

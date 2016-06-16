@@ -23,9 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Rights Management Services SDK 2.1
-
 
 ## Cel
 
@@ -33,26 +32,24 @@ Zestaw Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplik
 
 ### Docelowa grupa deweloperów
 
-Zestaw RMS SDK 2.1 można pobrać w witrynie Centrum pobierania Microsoft na [stronie pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397). Zestaw RMS SDK 2.1 służy do tworzenia niestandardowych aplikacji, które umożliwiają zarządzanie prawami do zasobów cyfrowych i wymuszanie zgodności z warunkami użytkowania tych zasobów. Wymagana jest znajomość języka programowania C++.
+Zestaw RMS SDK 2.1 można pobrać z Centrum pobierania Microsoft na [stronie pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397). Zestaw RMS SDK 2.1 służy do tworzenia niestandardowych aplikacji, które umożliwiają zarządzanie prawami do zasobów cyfrowych i wymuszanie zgodności z warunkami użytkowania tych zasobów. Wymagana jest znajomość języka programowania C++.
 
 Więcej informacji na temat tej technologii zawiera witryna firmy Microsoft [RMS Developer's Corner](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx) — oficjalny blog zespołu ds. produktu Rights Management przeznaczony dla deweloperów korzystających z ochrony informacji za pomocą usługi AD RMS.
 
 Odpowiedzi na często zadawane pytania można znaleźć w sekcji dla deweloperów na stronie [często zadawanych pytań dotyczących usługi RMS](http://aka.ms/adrmsfaq ).
 
-### Wymagania dotyczące środowiska wykonawczego
+### Wymagania dotyczące środowiska uruchomieniowego
 
-Aby uzyskać informacje o wymaganiach związanych ze środowiskiem wykonawczego dla konkretnego elementu programistycznego, zobacz sekcję wymagań w temacie dotyczącym tego elementu.
+Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretnego elementu programistycznego można znaleźć w sekcji wymagań w temacie dotyczącym tego elementu.
 
 |Temat|Opis|
 |-----|--------|
 |[Przegląd](ad-rms-overview.md)|Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.|
-|[Zalety tego zestawu SDK](differences-between-ad-rms-and-ad-rms-2-0.md)|W zestawie RMS SDK 2.1 wprowadzono znaczne ulepszenia w porównaniu z oryginalnym zestawem Rights Management Services SDK.|
+|[Zalety tego zestawu SDK](differences-between-ad-rms-and-ad-rms-2-0.md)|W zestawie RMS SDK 2.1 wprowadzono znaczące ulepszenia względem oryginalnego zestawu Rights Management Services SDK.|
 |[Wprowadzenie](getting-started-with-ad-rms-2-0.md)|Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.|
-|[Informacje o wersji](release-notes-rtm.md)|Ten temat zawiera ważne informacje o bieżącej wersji i wcześniejszych wersjach zestawu RMS SDK 2.1.|
+|[Informacje o wersji](release-notes-rtm.md)|Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.|
 |[Przykłady kodu](samples.md)|Ten temat zawiera kilka przykładów kodu, dostępnych w Centrum pobierania MSDN, w których jest używany zestaw RMS SDK 2.1.|
-|[Sposób użycia](how-to-use-msipc.md)|Szczegółowe wskazówki dotyczące scenariuszy i zadań, w których jest używany zestaw RMS SDK 2.1.|
-|[Uwagi dla deweloperów](developer-notes.md)|W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania.|
-|[Pojęcia dla deweloperów](ad-rms-concepts-nav.md)|Tematy w tej sekcji dotyczą kluczowych pojęć związanych z usługą RMS.|
+|[Uwagi dla deweloperów](developer-notes.md)|W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy opracowywania.|
 |[Dokumentacja interfejsu API](/rights-management/sdk/2.1/api/win/constants)|Tematy w tej sekcji zawierają materiały referencyjne dotyczące wszystkich elementów interfejsu API.|
 
  
@@ -61,12 +58,12 @@ Aby uzyskać informacje o wymaganiach związanych ze środowiskiem wykonawczego 
 
 * [Strona pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [RMS Developer's Corner (Kącik dewelopera usługi RMS)](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
-* [RMS FAQ (Często zadawane pytania dotyczące usługi RMS)](http://aka.ms/adrmsfaq )
+* [Często zadawane pytania dotyczące usługi RMS](http://aka.ms/adrmsfaq )
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

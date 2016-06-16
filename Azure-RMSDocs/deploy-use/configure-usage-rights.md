@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/19/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie lub filtro
 
 **Kodowanie w zasadach**: DOCEDIT
 
-**Implementacja w prawach niestandardowych pakietu Office**: jako część opcji *Zmiana* i *Pełna kontrola*.**
+**Implementacja w prawach niestandardowych pakietu Office**: jako część opcji *Zmiana* i *Pełna kontrola*.
 
 **Nazwa w klasycznym portalu Azure**: *Edytuj zawartość*
 
@@ -267,11 +267,32 @@ W szablonach domyślnych zawarte są następujące prawa:
 |&lt;*nazwa organizacji*&gt; *— tylko wgląd poufny*|Wyświetl, Otwórz, Odczytaj|
 |&lt;*nazwa organizacji*&gt; *— poufne*|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Edytuj; Wyświetl prawa; Zezwalaj na makra; Prześlij dalej; Odpowiedz; Odpowiedz wszystkim|
 
+## Opcja Nie przekazuj dotycząca wiadomości e-mail
+
+Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają własną opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
+
+Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego ta opcja nie jest widoczna w klasycznym portalu Azure podczas wyświetlania szablonów usług Azure RMS i zarządzania nimi. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
+
+Gdy opcja **Nie przekazuj** jest stosowana do wiadomości e-mail, adresaci nie mogą przekazać takiej wiadomości e-mail, wydrukować jej, skopiować z niej informacji, zapisać załączników ani zapisać załączników pod inną nazwą. Na przykład w kliencie programu Outlook przycisk Prześlij dalej jest niedostępny, opcje menu **Zapisz jako**, **Zapisz załącznik** i **Drukuj** nie są dostępne oraz nie można dodawać ani zmieniać adresatów w polach **Do**, **DW** i **UDW**.
+
+Jest to ważna różnica między stosowaniem opcji **Nie przekazuj** i stosowaniem szablonu, za pomocą którego nie są przyznawane uprawnienia do przekazywania wiadomości e-mail: opcja **Nie przekazuj** używa dynamicznej listy autoryzowanych użytkowników opartej na wybranych przez użytkownika adresatach pierwotnej wiadomości e-mail. Prawa w szablonie zawierają natomiast statyczną listę autoryzowanych użytkowników określonych wcześniej przez administratora. Na czym polega różnica? Zostanie to wytłumaczone na przykładzie: 
+
+Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych osób w dziale marketingu, które nie powinny być udostępniane nikomu innemu. Czy w takiej sytuacji użytkownik powinien chronić wiadomość e-mail za pomocą szablonu ograniczającego prawa (do wyświetlania, odpowiedzi i zapisywania) tylko do działu marketingu?  Czy może powinna zostać użyta opcja **Nie przekazuj**? Obie te opcje spowodują, że adresaci nie będą mogli przekazywać wiadomości e-mail. 
+
+- W przypadku zastosowania szablonu adresaci będą jednak mogli nadal udostępniać informacje innym użytkownikom w dziale marketingu. Na przykład adresat będzie mógł użyć Eksploratora Windows do przeciągnięcia i upuszczenia wiadomości e-mail do współdzielonej lokalizacji lub dysku USB. W takiej sytuacji każdy użytkownik z działu marketingu (oraz właściciel wiadomości e-mail), który ma dostęp do tej lokalizacji, będzie mógł wyświetlać informacje zawarte w wiadomości e-mail.
+ 
+- Jeśli natomiast użytkownik zastosuje opcję **Nie przekazuj**, adresaci nie będą mogli udostępniać informacji nikomu innemu w dziale marketingu za pomocą przenoszenia wiadomości e-mail do innej lokalizacji. W takim scenariuszu tylko pierwotni adresaci (oraz właściciel wiadomości e-mail) będą mogli wyświetlać informacje zawarte w wiadomości e-mail.
+
+> [!NOTE] Użyj opcji **Nie przekazuj**, jeśli ważne jest, aby tylko wybrani przez nadawcę adresaci mogli wyświetlać informacje zawarte w wiadomości e-mail. Użyj szablonu na potrzeby wiadomości e-mail do ograniczenia praw do grupy osób określonych wcześniej przez administratora, niezależnie od adresatów wybranych przez nadawcę.
+
+
+
+
 ## Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

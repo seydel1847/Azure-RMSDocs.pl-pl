@@ -30,11 +30,11 @@ Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual 
 
 ## Wymagania wstępne
 
--   [Instalacja zestawu SDK](create-your-first-rights-aware-application.md)
+-   [Instalacja zestawu SDK](install-the-rms-sdk.md)
 
 **Instrukcje**
 
-### Krok 1. Skonfigurowanie projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1
+### Krok 1. Konfigurowanie projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1
 
 Te instrukcje dotyczą programu Microsoft Visual Studio 2010. Jeśli używasz innej wersji programu Microsoft Visual Studio, okna dialogowe ustawień mogą wyglądać nieco inaczej.
 
@@ -42,13 +42,13 @@ Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
 1.  Dodaj katalog dołączania zestawu RMS SDK 2.1 do projektu programu Visual Studio 2010.
 
-    W obszarze **Właściwości konfiguracji** wybierz opcję **Katalogi VC++** i dodaj katalog dołączania zestawu RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, do pola **Katalogi dołączania**.
+    W obszarze **Właściwości konfiguracji** wybierz pozycję **Katalogi VC++** i dodaj katalog dołączania zestawu RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, do pola **Katalogi dołączania**.
 
     ![Pole katalogów dołączania właściwości konfiguracji](../media/include_directories.png)
 
 2.  Dodaj katalog biblioteki zestawu RMS SDK 2.1 do projektu programu Visual Studio 2010.
 
-    W obszarze **Właściwości konfiguracji** wybierz opcję **Katalogi VC++** i dodaj katalog biblioteki zestawu RMS SDK 2.1 do pola **Katalogi bibliotek** dla danej platformy.
+    W obszarze **Właściwości konfiguracji** wybierz pozycję **Katalogi VC++** i dodaj katalog biblioteki zestawu RMS SDK 2.1 do pola **Katalogi bibliotek** dla danej platformy.
 
     -   W przypadku systemu Win32 użyj wartości **$(MSIPCSDKDIR)\\lib**
     -   W przypadku systemu x64 użyj wartości **$(MSIPCSDKDIR)\\lib\\x64**
@@ -63,28 +63,24 @@ Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
 4.  Dodaj bibliotekę dołączaną dynamicznie (DLL, Dynamic Link Library) zestawu RMS SDK 2.1 jako bibliotekę DLL ładowaną z opóźnieniem.
 
-    W obszarze **Konsolidator** wybierz opcję **Dane wejściowe** i dodaj plik DLL zestawu RMS SDK 2.1, **Msipc.dll**, do pola **Biblioteki DLL ładowane z opóźnieniem**.
+    W obszarze **Konsolidator** wybierz pozycję **Dane wejściowe** i dodaj plik DLL zestawu RMS SDK 2.1, **Msipc.dll**, do pola **Biblioteki DLL ładowane z opóźnieniem**.
 
     ![Pole bibliotek ładowanych z opóźnieniem konsolidatora](../media/delay_loaded.png)
 
 5.  Utwórz informacje o wersji dla wynikowego pliku binarnego.
 
-    W obszarze **Eksplorator rozwiązań** wybierz opcję **Pliki zasobów** i dodaj nazwę pliku binarnego do pola **Oryginalna nazwa pliku**.
+    W obszarze **Eksplorator rozwiązań** wybierz pozycję **Pliki zasobów** i dodaj nazwę pliku binarnego do pola **Oryginalna nazwa pliku**.
 
     ![Pole plików zasobów eksploratora rozwiązań](../media/original_file_name.png)
 
 ## Tematy pokrewne
 
-* [Sposób użycia](how-to-use-msipc.md)
-* [Instalacja zestawu SDK](create-your-first-rights-aware-application.md)
+* [Instalacja zestawu SDK](install-the-rms-sdk.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

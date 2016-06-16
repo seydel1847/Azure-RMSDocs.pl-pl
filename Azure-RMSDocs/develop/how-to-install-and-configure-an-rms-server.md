@@ -1,71 +1,33 @@
 ---
-# required metadata
+# wymagane metadane
 
-title: Instalacja i konfigurowanie serwera | Azure RMS
-description: Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
+title: Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania | Opis usługi Azure RMS: instalowanie i konfigurowanie serwera usługi RMS na potrzeby testowania aplikacji z obsługą praw.
+keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
+# opcjonalne metadane
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
-# Instalacja i konfigurowanie serwera
 
-Ten temat zawiera opis kroków instalacji i konfigurowania serwera usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
+# Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
 
-**Ważne**  W przypadku testowania aplikacji przez uruchomienie jej w jednopunktowym środowisku RMS niezależnego dostawcy oprogramowania nie jest konieczna instalacja serwera usługi RMS, ponieważ został on już zainstalowany i skonfigurowany w środowisku jednopunktowym.
-Dodatkowe informacje na temat jednopunktowego środowiska usługi AD RMS niezależnego dostawcy oprogramowania zamieszczono w artykule [Konfiguracja środowiska testowego](how-to-set-up-your-test-environment.md).
-
+Ten temat zawiera opis procedur związanych z nawiązywaniem połączenia z serwerem usługi RMS lub usługą Azure RMS na potrzeby testowania aplikacji obsługującej prawa.
  
-
 ## Instrukcje
 
 ### Krok 1. Konfiguracja serwera usługi RMS
 
 Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują następujące elementy:
 
--   Konfiguracja rejestru
 -   Instalacja serwera
 -   Rejestracja serwera
 
-1.  **Konfiguracja rejestru**
-
-    Aby określić stosowanie hierarchii przedprodukcyjnej certyfikatów, należy określić następujące wartości rejestru.
-
-    **Uwaga**  Jeśli używasz systemu Windows Server 2008 R2 lub Windows Server 2008, ustaw wartości rejestru przed zainstalowaniem usługi AD RMS.
-
-    Jeśli używasz usługi AD RMS w systemie Windows Server 2008 R2, musisz ustawić następującą wartość **REG\_DWORD**. Zmień tę wartość na 0 (zero), aby przełączyć się do hierarchii produkcyjnej.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**Hierarchy** = 0x00000001
-
-    Jeśli używasz usługi AD RMS w systemie Windows Server 2008 R2 lub w usłudze Active Directory wdrożono już inną usługę AD RMS jako usługę przedprodukcyjną, dodaj do rejestru następującą wartość pustego ciągu.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**GICURL** = ""
-
-    Jeśli używasz usługi AD RMS w systemie Windows Server 2008, musisz ustawić następującą wartość **REG\_DWORD**. Zmień tę wartość na 0 (zero), aby przełączyć się do hierarchii produkcyjnej.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**Hierarchy** = 0x00000001
-
-    Jeśli używasz usługi AD RMS w systemie Windows Server 2008 i w usłudze Active Directory wdrożono już inną usługę AD RMS jako usługę przedprodukcyjną, dodaj do rejestru następującą wartość pustego ciągu.
-
-    **Computer**\\**HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**2.0**\\**GICURL** = ""
-
-2.  **Instalacja serwera**
+1.  **Instalacja serwera**
 
     Usługi Active Directory Rights Management (AD RMS) obejmują osobne składniki klienta i serwera. Składnik serwera jest wdrażany jako zestaw usług sieci Web, których można użyć do administrowania infrastrukturą usługi RMS, wydawania licencji dla konsumentów i wydawców treści oraz wydawania certyfikatów dla komputerów i użytkowników.
 
@@ -73,11 +35,9 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     -   [Serwer usługi RMS 1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
 
-    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usługi AD RMS. Wcześniej jednak należy skonfigurować rejestr, aby określić korzystanie z hierarchii przedprodukcyjnej certyfikatów, nie hierarchii produkcyjnej. Z kolei w przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS 1.0 SP2, ale przed aprowizacją usługi RMS.
+    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usługi AD RMS. W przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS 1.0 SP2, ale przed aprowizacją usługi RMS.
 
-    Aby uzyskać więcej informacji, zobacz poprzedni krok, krok 1, „Konfiguracja rejestru”.
-
-3.  **Rejestracja serwera**
+2.  **Rejestracja serwera**
 
     Należy zarejestrować serwer Usług Rights Management (RMS) w celu zidentyfikowania go w hierarchii przedprodukcyjnej lub hierarchii produkcyjnej. Proces rejestracji pozostawia certyfikat licencjodawcy serwera na komputerze serwera. Ten certyfikat zapewnia powiązanie z elementem głównym zaufania firmy Microsoft. Sposób rejestracji serwera jest zależny od używanej wersji usługi RMS.
 
@@ -85,23 +45,47 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
         Począwszy od systemu Windows Server 2008, można zarejestrować serwer usługi RMS w odpowiedniej hierarchii bez wysyłania informacji do firmy Microsoft. Przy instalacji roli usługi RMS instalowany jest także certyfikat rejestracji samodzielnej i klucz prywatny. Są one używane do automatycznego tworzenia certyfikatu licencjodawcy serwera. Żadne informacje nie są wymieniane z firmą Microsoft.
 
-    -   **Rejestracja online**W przypadku korzystania z usługi AD RMS 1.0 SP2 można zarejestrować serwer online. Rejestracja odbywa się w tle podczas procesu aprowizacji, ale wymagane jest połączenie internetowe oraz konieczne jest określenie odpowiedniej wartości rejestru w celu zidentyfikowania hierarchii, w której rejestrowany jest serwer. Aby zarejestrować się w hierarchii przedprodukcyjnej, dodaj następującą wartość **REG\_SZ** i aprowizuj serwer. Aby zarejestrować się w hierarchii produkcyjnej, usuń tę wartość i aprowizuj serwer.
+    -   **Rejestracja online**
 
-        Aby uzyskać więcej informacji, zobacz poprzedni krok, krok 1, „Konfiguracja rejestru”.
+        W przypadku korzystania z usługi AD RMS 1.0 SP2 można zarejestrować serwer online. Rejestracja odbywa się w tle podczas procesu aprowizacji, ale wymagane jest połączenie internetowe.
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
-## Tematy pokrewne
+3. **Testowanie za pomocą serwera usługi RMS**
 
-* [Sposób użycia](how-to-use-msipc.md)
+    Aby przeprowadzić testy za pomocą serwera usługi RMS, skonfiguruj odnajdywanie po stronie serwera lub klienta w celu umożliwienia klientowi Rights Management Service Client 2.1 odnajdywania serwera usługi RMS i nawiązywania z nią komunikacji.
+
+    >![UWAGA] Testowanie za pomocą usługi Azure RMS nie wymaga konfiguracji odnajdywania.
+
+  - W przypadku odnajdywania po stronie serwera administrator rejestruje punkt połączenia usługi (SCP) dla klastra głównego usługi RMS w usłudze Active Directory, a klient wysyła do usługi Active Directory zapytanie w celu odnalezienia punktu SCP i nawiązania połączenia z serwerem.
+  - W przypadku odnajdywania po stronie klienta ustawienia odnajdywania usługi RMS są konfigurowane w rejestrze na komputerze, na którym uruchomiono klienta RMS Client 2.1. Ustawienia te wskazują klienta RMS Client 2.1, którego powinien użyć serwer usługi RMS. Jeśli ustawienia są obecne, nie jest przeprowadzane odnajdywanie po stronie serwera.
+
+  W celu skonfigurowania odnajdywania po stronie klienta można ustawić poniższe klucze rejestru, aby wskazywały serwer usługi RMS. Aby uzyskać informacje na temat konfigurowania odnajdywania po stronie serwera, zobacz [Uwagi dotyczące wdrażania klienta RMS Client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+
+1. **EnterpriseCertification**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
+
+  **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Certification**
+
+2. **EnterprisePublishing**
+        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Licensing**
+
+>[!NOTE] Domyślnie tych kluczy nie ma w rejestrze i należy je utworzyć.
+
+>[!IMPORTANT] Jeśli uruchamiasz 32-bitową aplikację w 64-bitowej wersji systemu Windows, musisz ustawić te klucze w następującej lokalizacji klucza:<p>
+  ```    
+  HKEY_LOCAL_MACHINE
+    SOFTWARE
+      Wow6432Node
+        Microsoft
+          MSIPC
+            ```
+
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
