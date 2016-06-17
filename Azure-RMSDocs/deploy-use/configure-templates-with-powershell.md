@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,8 +35,7 @@ Wszystkie czynności, które można wykonać w klasycznym portalu Azure w celu t
 
 Można również używać funkcji eksportowania i importowania w celu tworzenia kopii zapasowych szablonów niestandardowych i ich przywracania. Najlepszym rozwiązaniem jest regularne tworzenie kopii zapasowych szablonów niestandardowych, dzięki czemu po ewentualnym przypadkowym wprowadzeniu zmiany można łatwo przywrócić poprzednią wersję szablonów.
 
-> [!IMPORTANT]
-> Aby użyć środowiska Windows PowerShell do tworzenia szablonów zasad praw usługi Azure RMS i zarządzania nimi, użytkownik musi dysponować co najmniej wersją 2.0.0.0 [modułu Windows PowerShell dla usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721)..
+> [!IMPORTANT] Aby utworzyć szablony zasad praw usługi Azure RMS i zarządzać nimi za pomocą programu Windows PowerShell, użytkownik musi korzystać co najmniej z wersji 2.0.0.0 [modułu programu Windows PowerShell dla usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 > 
 > Jeśli wcześniej zainstalowano ten moduł programu PowerShell, należy uruchomić następujące polecenie w oknie PowerShell, aby sprawdzić numer wersji: `(Get-Module aadrm -ListAvailable).Version`
 
@@ -65,6 +64,6 @@ Polecenia cmdlet używane do tworzenia szablonów i zarządzania nimi:
 ## Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

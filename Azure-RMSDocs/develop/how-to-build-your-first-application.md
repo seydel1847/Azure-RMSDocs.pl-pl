@@ -23,14 +23,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # IPCHelloWorld — przykładowa aplikacja
 
 Ten temat zawiera instrukcje dotyczące tworzenia przykładowej aplikacji obsługującej prawa.
 
 Ta prosta aplikacja, IPCHelloWorld, pomaga w poznaniu podstawowych pojęć i kodu aplikacji obsługującej prawa.
 
-Pobierz przykładową aplikację, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), z witryny Microsoft Connect. Pozostałe elementy do pobrania w witrynie zostały zintegrowane tutaj dla Twojej wygody.
+Pobierz aplikację przykładową, [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440), z witryny Microsoft Connect. Pozostałe elementy do pobrania w witrynie zostały zintegrowane tutaj dla Twojej wygody.
 
 **Uwaga** Projekt IPCHelloWorld został już skonfigurowany dla zestawu Rights Management Services SDK 2.1. Informacje o sposobie konfigurowania nowego projektu do korzystania z zestawu RMS SDK 2.1 zawiera temat [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
@@ -71,7 +71,7 @@ Następujący fragment kodu wylicza dostępne szablony usługi RMS z domyślnego
 
 
 
-To wywołanie pobiera szablony RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
+To wywołanie pobiera szablony usługi RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
 
 
 
@@ -222,6 +222,6 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

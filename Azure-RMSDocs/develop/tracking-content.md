@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
 # Śledzenie zawartości
 
 W tym temacie podano podstawowe wskazówki dotyczące implementowania śledzenia dokumentów z zawartością chronioną przy użyciu zestawu Rights Management Services SDK 2.1.
@@ -134,6 +134,6 @@ Oto fragment kodu będący przykładem ustawienia metadanych śledzenia dokument
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

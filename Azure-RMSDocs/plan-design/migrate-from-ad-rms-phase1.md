@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ Skorzystaj z poniższych informacji dotyczących fazy 1 migrowania usług AD RMS
 ## Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool
 Przejdź do Centrum pobierania Microsoft i pobierz narzędzie [Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721), które zawiera moduł administracyjny usługi Azure RMS dla programu Windows PowerShell.
 
-Zainstaluj narzędzie. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md)..
+Zainstaluj narzędzie. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
 ## Krok 2. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure RMS
 Ten krok to proces składający się z dwóch części:
@@ -47,16 +47,15 @@ Ten krok to proces składający się z dwóch części:
 ### Eksportowanie danych konfiguracji z usług AD RMS
 Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
-> [!NOTE]
-> Jeśli korzystasz z usługi Rights Management dla systemu Windows Server 2003, zamiast tych instrukcji wykonaj kroki procedury [eksportowania klucza prywatnego podpisanego certyfikatu licencjodawcy, zaufanej domeny użytkownika, zaufanej domeny publikacji i usługi RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) opisanej w artykule [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migracja z usług RMS systemu Windows do usług AD RMS w innej infrastrukturze).
+> [!NOTE] Jeśli korzystasz z usługi Rights Management dla systemu Windows Server 2003, zamiast tych instrukcji wykonaj kroki procedury [eksportowania klucza prywatnego podpisanego certyfikatu licencjodawcy, zaufanej domeny użytkownika, zaufanej domeny publikacji i usługi RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) opisanej w artykule [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migracja z usług RMS systemu Windows do usług AD RMS w innej infrastrukturze).
 
 #### Aby eksportować dane konfiguracji (informacje z zaufanej domeny publikacji)
 
 1.  Zaloguj się do klastra AD RMS jako użytkownik z uprawnieniami administratora usług AD RMS.
 
-2.  Z poziomu konsoli zarządzania usługami AD RMS (**Active Directory Rights Management Services**) rozwiń nazwę klastra usług AD RMS, rozwiń pozycję **Zasady zaufania**, a następnie kliknij pozycję **Zaufane domeny publikacji**..
+2.  Z poziomu konsoli zarządzania usługami AD RMS (**Active Directory Rights Management**) rozwiń nazwę klastra usług AD RMS, rozwiń pozycję **Zasady zaufania**, a następnie kliknij pozycję **Zaufane domeny publikacji**.
 
-3.  W okienku wyników wybierz zaufaną domenę publikacji, a następnie w okienku Akcje kliknij pozycję **Eksportuj zaufaną domenę publikacji**..
+3.  W okienku wyników wybierz zaufaną domenę publikacji, a następnie w okienku Akcje kliknij pozycję **Eksportuj zaufaną domenę publikacji**.
 
 4.  W oknie dialogowym **Eksportowanie zaufanej domeny publikacji**:
 
@@ -81,8 +80,7 @@ W bieżącym wdrożeniu usług AD RMS będzie używana jedna z następujących k
 
 -   Ochrona za pomocą hasła przy użyciu zewnętrznego dostawcy usług kryptograficznych.
 
-> [!NOTE]
-> Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz temat [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń)..
+> [!NOTE] Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń).
 
 Istnieją dwie opcje topologii klucza dzierżawy usługi Azure RMS: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**). Scenariusz, w którym użytkownik zarządza własnym kluczem dzierżawy usługi Azure RMS, jest czasami określany jako „użyj własnego klucza” (BYOK, Bring Your Own Key) i wymaga sprzętowego modułu zabezpieczeń (HSM) firmy Thales. Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md).
 
@@ -100,8 +98,7 @@ Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas mig
 |Ochrona za pomocą hasła przy użyciu zewnętrznego dostawcy usług kryptograficznych|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą usług kryptograficznych, aby uzyskać instrukcje dotyczące przenoszenia klucza do sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
 Przed rozpoczęciem wykonywania tych procedur upewnij się, że masz dostęp do plików XML utworzonych wcześniej podczas eksportu zaufanych domen publikacji. Mogły one zostać na przykład zapisane na dysku USB używanym do przenoszenia danych z serwera usług AD RMS do stacji roboczej połączonej z Internetem.
 
-> [!NOTE]
-> Bez względu na sposób przechowywania plików należy skorzystać z najlepszych rozwiązań dotyczących zabezpieczeń, aby je chronić, ponieważ te dane obejmują klucz prywatny.
+> [!NOTE] Bez względu na sposób przechowywania plików należy skorzystać z najlepszych rozwiązań dotyczących zabezpieczeń, aby je chronić, ponieważ te dane obejmują klucz prywatny.
 
 
 Aby wykonać krok 2, wybierz instrukcje dotyczące ścieżki migracji: 
@@ -126,9 +123,9 @@ Jeśli dzierżawa usługi Azure RMS została już aktywowana i można zidentyfik
 ## Krok 4. Konfigurowanie importowanych szablonów
 Ze względu na to, że zaimportowane szablony mają domyślny stan **Zarchiwizowano**, należy zmienić ten stan na **Opublikowano**, aby użytkownicy mogli używać tych szablonów w usłudze Azure RMS.
 
-Dodatkowo jeśli w przypadku szablonów w usługach AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure RMS. Należy ręcznie dodać odpowiednik grupy lub użytkowników oraz te same prawa do importowanych szablonów. Odpowiednik tej grupy dla usługi Azure RMS nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nazwa_dzierżawy>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso nazwa grupy może wyglądać następująco: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**..
+Dodatkowo jeśli w przypadku szablonów w usługach AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure RMS. Należy ręcznie dodać odpowiednik grupy lub użytkowników oraz te same prawa do importowanych szablonów. Odpowiednik tej grupy dla usługi Azure RMS nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nazwa_dzierżawy>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso nazwa firmy może wyglądać następująco: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
-Jeśli nie masz pewności, czy szablony AD RMS obejmują grupę ANYONE, możesz użyć przykładowego skryptu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o korzystaniu z programu Windows PowerShell z usługami AD RMS, zobacz temat [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Administrowanie usługami AD RMS przy użyciu programu Windows PowerShell)..
+Jeśli nie masz pewności, czy szablony AD RMS obejmują grupę ANYONE, możesz użyć przykładowego skryptu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o korzystaniu z programu Windows PowerShell z usługami AD RMS, zobacz temat [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Administrowanie usługami AD RMS przy użyciu programu Windows PowerShell).
 
 Grupę automatycznie utworzoną w organizacji można zobaczyć po skopiowaniu jednego z domyślnych szablonów zasad praw w klasycznym portalu Azure i zidentyfikowaniu pozycji **NAZWA UŻYTKOWNIKA** na stronie **PRAWA**. W klasycznym portalu nie można jednak dodać tej grupy do utworzonego ręcznie lub zaimportowanego szablonu. Zamiast tego należy użyć jednej z następujących opcji programu PowerShell z usługą Azure RMS:
 
@@ -136,12 +133,11 @@ Grupę automatycznie utworzoną w organizacji można zobaczyć po skopiowaniu je
 
 -   Użyj polecenia cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx), aby wyeksportować szablon do pliku XML, który można edytować, po czym dodaj grupę i prawa „AllStaff” do istniejących grup i praw. Następnie użyj polecenia cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) w celu zaimportowania tej zmiany z powrotem do usługi Azure RMS.
 
-> [!NOTE]
-> Grupa „AllStaff” nie jest dokładnym odpowiednikiem grupy KAŻDY w usługach AD RMS: grupa „AllStaff” zawiera wszystkich użytkowników w dzierżawie platformy Azure, a grupa KAŻDY zawiera wszystkich uwierzytelnionych użytkowników, którzy mogą znajdować się poza organizacją.
+> [!NOTE] Grupa „AllStaff” nie jest dokładnym odpowiednikiem grupy KAŻDY w usługach AD RMS: grupa „AllStaff” zawiera wszystkich użytkowników w dzierżawie platformy Azure, a grupa KAŻDY zawiera wszystkich uwierzytelnionych użytkowników, którzy mogą znajdować się poza organizacją.
 > 
 > Z powodu tej różnicy między dwiema grupami oprócz grupy „AllStaff” konieczne może być także dodanie użytkowników zewnętrznych. Zewnętrzne adresy e-mail dla grup nie są obecnie obsługiwane.
 
-Szablony, które można importować z usług AD RMS, wyglądają i działają tak samo jak niestandardowe szablony tworzone w klasycznym portalu Azure. Aby zmienić stan importowanych szablonów na Opublikowano, aby użytkownicy mogli je widzieć i wybierać w aplikacjach lub aby wprowadzić inne zmiany szablonów, zobacz temat [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)..
+Szablony, które można importować z usług AD RMS, wyglądają i działają tak samo jak niestandardowe szablony tworzone w klasycznym portalu Azure. W celu zmiany stanu importowanych szablonów na Opublikowano, aby użytkownicy mogli je widzieć i wybierać w aplikacjach lub aby wprowadzić inne zmiany w szablonach, zobacz [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
 > [!TIP]
 > Aby udostępnić użytkownikom spójniejsze środowisko pracy podczas procesu migracji, nie należy wprowadzać zmian importowanych szablonów innych niż te dwie zmiany. Nie należy również publikować dwóch domyślnych szablonów dostarczanych z usługą Azure RMS ani tworzyć w tym czasie nowych szablonów. Zamiast tego należy zaczekać na zakończenie procesu migracji i likwidację serwerów usług AD RMS.
@@ -185,10 +181,10 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 ## Następne kroki
-Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase2.md)..
+Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase2.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

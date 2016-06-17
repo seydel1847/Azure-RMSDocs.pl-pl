@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Wyjątek dotyczący utraty dostępu po wygaśnięciu stanowi sytuacja, w której
 ## Subskrypcja pakietu Enterprise Mobility Suite
 [Bezpłatna 30-dniowa wersja próbna](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-Ta subskrypcja jest przeznaczona dla organizacji, które chcą korzystać z kombinacji usług Azure Active Directory Premium, Windows Intune i Azure Rights Management. Obsługa usługi Azure Rights Management z pakietem Office jest taka sama jak w przypadku subskrypcji Azure Rights Management Premium. 
-Aby uzyskać więcej informacji o subskrypcji pakietu Enterprise Mobility Suite, zobacz temat [Microsoft Enterprise Mobility — omówienie](http://go.microsoft.com/fwlink/?LinkId=615386).
+Ta subskrypcja jest przeznaczona dla organizacji, które chcą korzystać z kombinacji usług Azure Active Directory Premium, Windows Intune i Azure Rights Management. Obsługa usługi Azure Rights Management z pakietem Office jest taka sama jak w przypadku subskrypcji Azure Rights Management Premium. Aby uzyskać więcej informacji o subskrypcji pakietu Enterprise Mobility Suite, zobacz temat [Microsoft Enterprise Mobility — omówienie](http://go.microsoft.com/fwlink/?LinkId=615386).
 
 ## Subskrypcja usługi RMS dla użytkowników indywidualnych
 Ta subskrypcja jest przeznaczona dla użytkowników w organizacji, która nie wdrożyła usługi Azure RMS ani AD RMS. Umożliwia ona tym osobom odczytywanie zawartości chronionej przez organizację, która używa usługi Azure RMS. Mogą one również chronić własną zawartość.
 
-Aby uzyskać więcej informacji, zobacz artykuł [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
+Może ona być wyświetlana na liście subskrypcji w portalu administracyjnym usługi Office 365 jako **Zarządzanie prawami w trybie ad hoc** i automatycznie przypisywana do użytkowników. Nie należy ręcznie przypisywać tej licencji do użytkowników ani używać jej w celu administrowania usługą Azure RMS w danej organizacji. 
+
+Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 
