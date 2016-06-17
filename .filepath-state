@@ -155,9 +155,6 @@
   "b05708694e669f9d1bd28038643d4bf34729a239": [
     "Azure-RMSDocs\\develop\\tracking-content.md"
   ],
-  "434a43bf96bd24502c796d0d6c05fef2b2471bde": [
-    "Azure-RMSDocs\\develop\\tracking-content.md"
-  ],
   "2d2cbe580349e1615371a6a76e78140f6577e890": [
     "Azure-RMSDocs\\develop\\understanding-usage-restrictions.md"
   ],
@@ -264,9 +261,6 @@
     "Azure-RMSDocs\\develop\\getting-started-with-ad-rms-2-0.md"
   ],
   "e75ec6c04afd171552697f79deb33ad2cfe2c4e1": [
-    "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
-  ],
-  "ee9285bbcd7c26b2f635ab78d084183614c6b1d1": [
     "Azure-RMSDocs\\develop\\how-to-build-your-first-application.md"
   ],
   "9747c39742c66735b9619036cb77a914563ecf29": [
@@ -461,9 +455,6 @@
   "645f9ed4080e3b38fcda9afe148923c021046724": [
     "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md"
   ],
-  "4c3bb748a8ab8ccf6c78dca87b1949e0ac3a85c2": [
-    "Azure-RMSDocs\\deploy-use\\configure-templates-with-powershell.md"
-  ],
   "21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2": [
     "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
   ],
@@ -480,9 +471,6 @@
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
   "d67caf4ebbe19e4f67061d006da1fdedea0d5761": [
-    "Azure-RMSDocs\\deploy-use\\create-template.md"
-  ],
-  "b904c6353341224dcb925b224de8d5cd7ff48007": [
     "Azure-RMSDocs\\deploy-use\\create-template.md"
   ],
   "8c114336551417fdbf1503ffc8350e3fc28e9c95": [
@@ -551,16 +539,10 @@
   "9739df74a999efef879fb537eee730af7520b0fa": [
     "Azure-RMSDocs\\get-started\\requirements-applications.md"
   ],
-  "eefe0bbf70c698d590d14ffb013c7c33ff8fd916": [
-    "Azure-RMSDocs\\get-started\\requirements-applications.md"
-  ],
   "75b2414cc360704deb6107d6c0038f5b0bf7fa70": [
     "Azure-RMSDocs\\get-started\\requirements-azure-ad.md"
   ],
   "472935eef8a68b9b8fa618f4cab9d4e365bee8a3": [
-    "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
-  ],
-  "9a54da46d9f9eef70108c50ef95df94510dc2f53": [
     "Azure-RMSDocs\\get-started\\requirements-azure-rms.md"
   ],
   "933394c943763b010ac707384918eff86ea33388": [
@@ -573,9 +555,6 @@
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "cccbaa8e691ed152d74f7b9f279018e00a7316db": [
-    "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
-  ],
-  "434b847f7336a9756578e05a5630cbba5018fcb8": [
     "Azure-RMSDocs\\get-started\\requirements-subscriptions.md"
   ],
   "35ad445e229eac3feeca5522a41b9e3b25fd1180": [
@@ -611,9 +590,6 @@
   "9694b21d3c8175e51f4786f6e1bed27918d7d487": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
   ],
-  "2fd19a24afde7c2eebfc6ea27c883ffd105a0f63": [
-    "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase1.md"
-  ],
   "589cd61d24788538ec9a013a236d22cd103ab8ec": [
     "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase2.md"
   ],
@@ -647,9 +623,6 @@
   "c0e0cacdb1d335f076f41ffb51bed85a62bd3b86": [
     "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
   ],
-  "952153fe0ab3c7db16decef6ee6f59a14c715176": [
-    "Azure-RMSDocs\\plan-design\\plan-implement-tenant-key.md"
-  ],
   "55f092ede1f003c700cb58359bab264772702c39": [
     "Azure-RMSDocs\\plan-design\\prepare.md"
   ],
@@ -672,12 +645,6 @@
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide.md"
   ],
   "4f63cb7911661104113d19ecd84ef7c80a874408": [
-    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
-  ],
-  "3e2475a62f39ea1112f6d76f12f2f910136f8069": [
-    "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
-  ],
-  "3be36a844584fd1d7e90bf405e4d5d1844e11fd3": [
     "Azure-RMSDocs\\rms-client\\sharing-app-admin-guide-technical.md"
   ],
   "771a80843ca5ab01cd06bd4e76c827469b0e9f00": [
@@ -717,9 +684,6 @@
     "Azure-RMSDocs\\understand-explore\\api-support.md"
   ],
   "15167c4e7dbe0fd401e198c80524b39e4ded250d": [
-    "Azure-RMSDocs\\understand-explore\\applications-support.md"
-  ],
-  "2539d4f1c5f114331606685812cb9ba955d2c6cb": [
     "Azure-RMSDocs\\understand-explore\\applications-support.md"
   ],
   "8635402989db0f83017151910013ca460011b392": [
