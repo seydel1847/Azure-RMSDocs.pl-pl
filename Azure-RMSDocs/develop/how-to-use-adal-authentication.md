@@ -43,13 +43,13 @@ W tym temacie przedstawiono dwie metody uwierzytelniania wraz z odpowiednimi prz
 
   Tej metody należy użyć, jeśli klient RMS ma wyświetlać monit o uwierzytelnienie ADAL w przypadku, gdy wymagane jest uwierzytelnienie. Aby uzyskać szczegółowe informacje na temat konfigurowania aplikacji, zobacz część „Uwierzytelnianie wewnętrzne”.
 
-  >AZURE.NOTE Jeśli aplikacja używa obecnie zestawu AD RMS SDK 2.1 z asystentem logowania, zalecane jest użycie metody uwierzytelniania wewnętrznego jako ścieżki migracji aplikacji.
+  > [!Note] Jeśli aplikacja używa aktualnie zestawu SDK usług AD RMS w wersji 2.1 z asystentem logowania, zalecane jest użycie metody uwierzytelniania wewnętrznego jako ścieżki migracji aplikacji.
 
 - **Uwierzytelnianie zewnętrzne** — uwierzytelnianie OAuth zarządzane przez aplikację.
 
   Tej metody należy użyć, jeśli aplikacja ma zarządzać własnym uwierzytelnianiem OAuth. W przypadku tego podejścia klient RMS wykonuje wywołanie zwrotne określone w aplikacji, gdy jest wymagane uwierzytelnienie. Szczegółowy przykład znajduje się w części „Uwierzytelnianie zewnętrzne” na końcu tego tematu.
 
-  >AZURE.NOTE Uwierzytelnianie zewnętrzne nie oznacza możliwości zmiany użytkowników — w kliencie usługi RMS zawsze jest używany domyślny użytkownik dla danej dzierżawy usługi RMS.
+  > [!Note] Uwierzytelnianie zewnętrzne nie oznacza możliwości zmiany użytkowników — w kliencie RMS zawsze używany jest domyślny użytkownik dla danej dzierżawy RMS.
 
 ## Uwierzytelnianie wewnętrzne
 

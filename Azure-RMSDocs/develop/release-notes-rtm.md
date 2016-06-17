@@ -28,17 +28,6 @@ ms.suite: ems
 
 Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
 
-- [Nowość w lutym 2016 r. — aktualizacja dokumentacji zestawu SDK](#new-for-the-february-2016-sdk-documentation-update)
-- [Aktualizacja z grudnia 2015 r.](#december-2015-update)
-- [Aktualizacja z maja 2015 r.](#may-2015-update)
-- [Aktualizacja z kwietnia 2015 r.](#april-2015-update)
-- [Aktualizacja ze stycznia 2015 r.](#january-2015-update)
-- [Aktualizacja z października 2014 r.](#october-2014-update)
-- [Aktualizacja z lipca 2014 r.](#july-2014-update)
-- [Ważne uwagi dla deweloperów](#important-developer-notes)
-- [Często zadawane pytania](#frequently-asked-questions)
-- [Tematy pokrewne](#related-topics)
-
 ## Nowość w lutym 2016 r. — aktualizacja dokumentacji zestawu SDK
 
 >[!Note]  Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.

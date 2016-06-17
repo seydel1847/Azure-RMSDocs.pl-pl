@@ -30,7 +30,7 @@ W tym temacie opisano przeznaczenie i funkcje serwera usług RMS na potrzeby pla
 
 **Usługi Azure RMS** — aby uzyskać więcej informacji na temat korzystania z usługi Azure Rights Management, zobacz [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
-> [AZURE.IMPORTANT] Zalecamy tworzenie i testowanie aplikacji za pomocą usług Azure RMS.
+> [!IMPORTANT] Zalecamy tworzenie i testowanie aplikacji za pomocą usług Azure RMS.
 
 **System Windows Server** — w przypadku usługi RMS znajdującej się na serwerach lokalnych, począwszy od systemu Windows Server 2008, można zainstalować i skonfigurować usługi RMS, dodając je jako rolę. Aby zainstalować usługę w starszych systemach operacyjnych, pobierz ją ze strony [Zarządzanie prawami dostępu w systemie Windows z dodatkiem Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909) w Centrum pobierania Microsoft.
 
@@ -47,9 +47,9 @@ Wśród wielu zainstalowanych usług sieci Web następujące usługi są ważne 
 
 ## Tematy pokrewne ##
 * [Przegląd](ad-rms-overview.md)
-* [Usługa Microsoft Internet Information Services](http://www.iis.net/overview)
+* [Usługi Microsoft Internet Information Services](http://www.iis.net/overview)
 * [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
-* [Usługi Rights Management Services systemu Microsoft Windows z dodatkiem Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
+* [Zarządzanie prawami dostępu w systemie Windows z dodatkiem Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
 * [Interfejs API obsługi skryptów usług Active Directory Rights Management Services](https://msdn.microsoft.com/library/Bb968797)
 * [Aktywacja komputera](https://msdn.microsoft.com/library/Cc530377)
 * [Aktywacja użytkownika](https://msdn.microsoft.com/library/Cc530378)
