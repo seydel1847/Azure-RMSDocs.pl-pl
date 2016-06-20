@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/dfacc169483c24cce4dfd02a582b325214243a04/Azure-RMSDocs/index.md) | InSyncHandedBackSuccess | [Details](#6360c91fe95537d3c3780f4c5564d2efc83c547f156)
 
 ## Item Details
-##### <a name='6360c91fe95537d3c3780f4c5564d2efc83c547f156'></a> Source: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/dfacc169483c24cce4dfd02a582b325214243a04/Azure-RMSDocs/index.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/6d1e9791f6acaf7ce2076c8f5f53b05f8dcdf438/Azure-RMSDocs/index.md)
-* Handoff File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/d8e9c473b30933239052e07ae1cf11f04a7b5faf/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf)
-* Handoff Datetime: 2016-05-19 01:22:52
-* Handoff Reason: Include
-* Archive File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/3a9d443ad7982547817ce7a706dc3799890700b3/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf)
-* Archive Datetime: 2016-06-02 03:27:47
-* Handback File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/63ef8040668841efbd8312a1d9443d2d41de289f/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf)
-* Handback Datetime: 2016-06-20 15:13:30
-* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/03b4593308d7e4e7c8b46306c1a628d405c64338/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-16 10:24:16
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
