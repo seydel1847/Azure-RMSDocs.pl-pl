@@ -21,32 +21,28 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <section id="hero-content">
       <h1>Dokumentacja dotycząca usługi Azure Rights Management</h1>
       <h2>Informacje o wdrażaniu usługi Azure Rights Management (Azure RMS) i zarządzaniu nią. Szybko rozpocznij korzystanie z usługi Rights Management w celu ochrony informacji zawartych w wiadomościach e-mail, dokumentach i innych poufnych danych.</h2>
-
-      <h3>New to Azure RMS? <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">Visit our product site &rarr;</a></h3>
+      <h3>Jesteś nowym użytkownikiem usługi Azure RMS? <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">Odwiedź naszą witrynę produktu &rarr;</a></h3>
     </section>
-
     <aside class="alert section-border">
-        <p>Ready to get hands-on?</p>
+        <p>Możemy zaczynać?</p>
         <ol class="action-list">
-            <li><a href="https://portal.office.com/Signup/Signup.aspx?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=RIGHTSMANAGEMENT&ali=1#0" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
+            <li><a href="https://portal.office.com/Signup/Signup.aspx?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=RIGHTSMANAGEMENT&ali=1#0" target="_blank" class="button-bordered button-translucent">Wypróbuj teraz</a></li>
         </ol>
     </aside>
-
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span> Polecana zawartość</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./understand-explore/what-is-azure-rms.md">What is Azure Rights Management?</a></li>
-          <li><a href="./get-started/quick-start-tutorial.md">Quick start tutorial for Azure RMS</a></li>
-          <li><a href="./get-started/rapid-deployment-guide.md">Rapid deployment guide for Azure RMS</a></li>
+          <li><a href="./understand-explore/what-is-azure-rms.md">Co to jest usługa Azure Rights Management?</a></li>
+          <li><a href="./get-started/quick-start-tutorial.md">Samouczek Szybki start dla usługi Azure RMS</a></li>
+          <li><a href="./get-started/rapid-deployment-guide.md">Przewodnik szybkiego wdrażania usługi Azure RMS</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure RMS deployment roadmap</a></li>
-          <li><a href="./develop/developers-guide.md">Integrate applications with Azure RMS</a></li>
+          <li><a href="./plan-design/deployment-roadmap.md">Plan wdrożenia usługi Azure RMS</a></li>
+          <li><a href="./develop/developers-guide.md">Integracja aplikacji z usługą Azure RMS</a></li>
         </ul>
       </div>
     </section>
-
     <div id="journeys">
       <section class="container">
         <ul class="journeys-list">
@@ -55,29 +51,29 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
               <a href="./understand-explore/azure-rights-management.md">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Understand &amp; Explore</p>
+                  <p>Poznawanie i eksplorowanie</p>
                 </div>
-                <p class="description column-two-thirds">Learn the high-level concepts, features, and capabilities of Azure RMS.</p>
+                <p class="description column-two-thirds">Poznaj szczegółowo pojęcia, funkcje i możliwości usługi Azure RMS.</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./understand-explore/azure-rights-management.md">
-                    <h3>Overview of Azure Rights Management</h3>
-                    <p>Learn about Azure RMS, which protects your organization's sensitive information from unauthorized access and controls how this information is used.</p>
+                    <h3>Omówienie usługi Azure Rights Management</h3>
+                    <p>Poznaj usługę Azure RMS, która pozwala chronić poufne informacje organizacji przed nieautoryzowanym dostępem i kontrolować sposób używania tych informacji.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/rms-for-individuals.md">
-                    <h3>RMS for individuals and Azure Rights Management</h3>
-                    <p>Discover the free self-service subscription for users who have been sent sensitive files that have been protected by Azure RMS.</p>
+                    <h3>Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management</h3>
+                    <p>Zapoznaj się z bezpłatną subskrypcją samoobsługową, przeznaczoną dla użytkowników, którzy otrzymali poufne pliki, chronione za pomocą usługi Azure RMS.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/applications-support.md">
-                    <h3>How applications support Azure Rights Management</h3>
-                    <p>Understand how your end-user applications and services can use Microsoft Azure Rights Management to protect your organization's data </p>
+                    <h3>Jak aplikacje obsługują usługę Azure Rights Management</h3>
+                    <p>Dowiedz się, jak chronić dane organizacji w aplikacjach i usługach dla użytkowników końcowych za pomocą usługi Microsoft Azure Rights Management </p>
                   </a>
                 </li>
               </ul>
@@ -88,140 +84,129 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
               <a href="./get-started/requirements-azure-rms.md">
                 <div class="title column-third">
                   <span class="step-number">2</span>
-                  <p>Get Started</p>
+                  <p>Wprowadzenie</p>
                 </div>
-                <p class="description column-two-thirds">Start using Azure RMS within minutes.</p>
+                <p class="description column-two-thirds">Rozpocznij korzystanie z usługi Azure RMS w ciągu kilku minut.</p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./get-started/requirements-azure-rms.md">
-                    <h3>Requirements for Azure Rights Management</h3>
-                    <p>Identify the prerequisites for deploying Azure Azure RMS.</p>
+                    <h3>Wymagania dotyczące usługi Azure Rights Management</h3>
+                    <p>Zidentyfikuj wymagania wstępne dotyczące wdrażania usługi Azure RMS.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/terminology.md">
-                    <h3>Terminology for Azure Rights Management</h3>
-                    <p>Learn the terms and abbreviations that are used in the context of Rights Management.</p>
+                    <h3>Usługa Azure Rights Management — terminologia</h3>
+                    <p>Poznaj terminy i skróty używane w kontekście usługi Rights Management.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/quick-start-tutorial.md">
-                    <h3>Quick start tutorial for Azure RMS</h3>
-                    <p>Quickly try out Azure Rights Management for your organization with just 5 steps.</p>
+                    <h3>Samouczek Szybki start dla usługi Azure RMS</h3>
+                    <p>Szybko wypróbuj usługę Azure Rights Management w swojej organizacji w zaledwie 5 krokach.</p>
                   </a>
                 </li>
               </ul>
             </section>
-
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="./plan-design/deployment-roadmap.md">
                 <div class="title column-third">
                   <span class="step-number"> 3</span>
-                  <p>Plan & Design</p>
+                  <p>Planowanie i projektowanie</p>
                 </div>
-                <p class="description column-two-thirds">Plan and design Azure RMS.</p>
+                <p class="description column-two-thirds">Zaplanuj i zaprojektuj usługę Azure RMS.</p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./plan-design/deployment-roadmap.md">
-                    <h3>Azure Rights Management deployment roadmap</h3>
-                    <p>Identify and follow the steps to implement and manage Azure RMS for your organization.</p>
+                    <h3>Plan wdrożenia usługi Azure Rights Management</h3>
+                    <p>Zidentyfikuj i wykonaj czynności w zakresie wdrożenia usługi Azure RMS w organizacji oraz zarządzania tą usługą.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/migrate-from-ad-rms-to-azure-rms.md">
-                    <h3>Migrating from AD RMS to Azure Rights Management</h3>
-                    <p>Migrate your Active Directory Rights Management Services (AD RMS) deployment to Azure RMS.</p>
+                    <h3>Migrowanie z usług AD RMS do usługi Azure Rights Management</h3>
+                    <p>Migracja wdrożenia usług Active Directory Rights Management (AD RMS) do usługi Azure RMS.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/plan-implement-tenant-key.md">
-                    <h3>Planning and implementing your Azure Rights Management Tenant Key</h3>
-                    <p>Plan for and manage your tenant key for Azure RMS, which includes the "bring your own key" (BYOK) scenario.</p>
+                    <h3>Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management</h3>
+                    <p>Zaplanuj użycie klucza dzierżawy usługi Azure RMS oraz zarządzaj nim, co obejmuje scenariusz dostarczania własnego klucza (BYOK, „bring your own key”).</p>
                   </a>
                 </li>
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="./deploy-use/activate-service.md">
                 <div class="title column-third">
                   <span class="step-number"> 4</span>
-                  <p>Deploy & Use</p>
+                  <p>Wdrażanie i korzystanie</p>
                 </div>
-                <p class="description column-two-thirds">Deploy and use Azure RMS.</p>
+                <p class="description column-two-thirds">Przeprowadź wdrożenie usługi Azure RMS i z niej korzystaj.</p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                  <li class="column-third">
                  <a href="./deploy-use/activate-service.md">
-                    <h3>Activating Azure Rights Management</h3>
-                    <p>Start protecting important data by using applications and services that support this information protection solution.</p>
+                    <h3>Aktywacja usługi Azure Rights Management</h3>
+                    <p>Chroń ważne dane za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/configure-custom-templates.md">
-                    <h3>Configuring custom templates for Azure Rights Management</h3>
-                    <p>Use templates to easily apply policies to sensitive files that restrict access to authorized users in your organization.</p>
+                    <h3>Konfigurowanie szablonów niestandardowych usługi Azure Management Rights</h3>
+                    <p>Użyj szablonów, aby łatwo zastosować zasady umożliwiające dostęp do poufnych plików tylko autoryzowanym użytkownikom w organizacji.</p>
                  </a>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/configure-applications.md">
-                    <h3>Configuring applications for Azure Rights Management</h3>
-                    <p>Configure applications and services to support Azure RMS. For example, the RMS sharing app, Office applications, and Office 365 services.</p>
+                    <h3>Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management</h3>
+                    <p>Skonfiguruj aplikacje i usługi pod kątem obsługi usługi Azure RMS. Na przykład aplikację RMS sharing, aplikacje pakietu Office i usługi Office 365.</p>
                  </a>
                 </li>
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="./develop/developers-guide.md">
                 <div class="title column-third">
                   <span class="step-number"> 5</span>
-                  <p>Develop &amp; Customize Apps</p>
+                  <p>Tworzenie i dostosowywanie aplikacji</p>
                 </div>
-                <p class="description column-two-thirds">Integrate Azure RMS with your applications.
+                <p class="description column-two-thirds">Przeprowadź integrację usługi Azure RMS ze swoimi aplikacjami.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./develop/developers-guide.md">
-                    <h3>Azure RMS developer's guide</h3>
-                    <p>See a collection of Microsoft supplied RMS code samples and developer support tools spanning all supported operating systems.</p>
+                    <h3>Przewodnik dewelopera usługi Azure RMS</h3>
+                    <p>Zobacz kolekcję przykładów kodu usług RMS i narzędzi wspierających twórców dostarczonych przez firmę Microsoft, które obejmują wszystkie obsługiwane systemy operacyjne.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md">
-                    <h3>Microsoft Rights Management SDK 4.2</h3>
-                    <p>Use this next-generation SDK for enabling your Android, iOS, Mac OS X, Windows Phone/RT and Linux/C++ device apps with Microsoft Rights Management services.</p>
+                    <h3>Zestaw Microsoft Rights Management SDK 4.2</h3>
+                    <p>Skorzystaj z tego zestawu SDK nowej generacji, aby zapewnić współdziałanie usług Microsoft Rights Management z aplikacjami dla urządzeń z systemem Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./develop/microsoft-information-protection-and-control-client-portal.md">
                     <h3>Microsoft Rights Management SDK 2.1</h3>
-                    <p>Use this powerful SDK for Windows desktop application developers and server based solution providers to enable their products to work with Microsoft Rights Management services.</p>
+                    <p>Skorzystaj z tego zaawansowanego zestawu SDK dla twórców aplikacji komputerowych dla systemu Windows i rozwiązań serwerowych, umożliwiającego zapewnienie współdziałania produktów z usługami Microsoft Rights Management.</p>
                   </a>
                 </li>
               </ul>
@@ -230,17 +215,15 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
         </ul>
       </section>
     </div>
-
     <aside class="alert alert-social">
-      <p>Keep up-to-date on Azure RMS
-      <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">Official RMS Team Blog</a></li>
-        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">@TheRMSGuy on Twitter</a></li>
+      <p>Bądź na bieżąco z informacjami o usłudze Azure RMS <ol class="action-list">
+        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">Oficjalny blog zespołu usług RMS</a></li>
+        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">Kanał @TheRMSGuy na Twitterze</a></li>
       </ol>
     </aside>
 </article>
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 
