@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/963df10dc710df226ab8c7bd5e1d57d235e22561/Azure-RMSDocs/get-started/requirements-applications.md) | OutofSyncHandedBackSuccess | [Details](#adc0c3724139eaedd1b50972a22877437f17e4ea108)
 
 ## Item Details
-##### <a name='adc0c3724139eaedd1b50972a22877437f17e4ea108'></a> Source: [Azure-RMSDocs\get-started\requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/963df10dc710df226ab8c7bd5e1d57d235e22561/Azure-RMSDocs/get-started/requirements-applications.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/229cbca78b625afa4b87141cb3fff0270c964146/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf)
-* Handoff Datetime: 2016-06-17 19:10:03
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\get-started\requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/010c26f3e0216c8b4442f5dec7918b7a9ef17d85/Azure-RMSDocs/get-started/requirements-applications.md)
-* Current Handback File: [requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/c5a53cbf40d10de7e0bd8f88c3064eb49a4fd48c/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf)
-* Current Handback Datetime: 2016-06-17 16:44:33
-* Bilingual File: [requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/c5a53cbf40d10de7e0bd8f88c3064eb49a4fd48c/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-20 12:43:39
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
