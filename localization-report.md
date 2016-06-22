@@ -2076,8 +2076,8 @@
 * Archive Datetime: 2016-06-16 13:19:43
 * Handback File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/2fefd51461b6a2acca2e93dde80951a368e07fd5/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
 * Handback Datetime: 2016-06-22 14:57:07
-* Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/9c6030502cdefb6e270eec60b11b5764d41b252c/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-22 13:04:07
+* Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/2fefd51461b6a2acca2e93dde80951a368e07fd5/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-22 15:00:30
 * [Back to Top](#report-top)
 
 ##### <a name='b6f3b06485dda81be2a36035fea7477f4061a8e9114'></a> Source: [Azure-RMSDocs\get-started\scenario-company-confidential-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-company-confidential-email.md)
