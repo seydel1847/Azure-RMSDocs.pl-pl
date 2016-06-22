@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD | Azure RMS
+title: "Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD | Azure RMS"
 description:
 keywords:
 author: cabailey

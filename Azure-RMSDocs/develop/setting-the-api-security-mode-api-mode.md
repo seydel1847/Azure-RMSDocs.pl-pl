@@ -1,14 +1,25 @@
 ---
-# wymagane metadane
+# required metadata
 
-title: Instrukcje: ustawianie trybu zabezpieczeń interfejsu API | Opis usługi Azure RMS: wybieranie trybu zabezpieczeń, w którym jest uruchamiana aplikacja interfejsu API plików.
-keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# opcjonalne metadane
+title:
+How-to: set the API security mode | Azure RMS
+description: Choose which security mode your File API application runs.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

@@ -1,14 +1,25 @@
 ---
-# wymagane metadane
+# required metadata
 
-title: Porada: dodawanie jawnych praw właściciela | Azure RMS description — w przypadku tworzenia licencji od podstaw w aplikacji należy jawnie dodać prawa „właściciela”.
-keywords: author: bruceperlerms manager: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# opcjonalne metadane
+title:
+How-to: add explicit owner rights | Azure RMS
+description: Your application should explicitly add "Owner" rights when creating a license from scratch.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
+# optional metadata
 
 #ROBOTS:
 audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

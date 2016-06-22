@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Porady: uzyskiwanie identyfikatora aplikacji Azure | Azure RMS
+title: "Porady: uzyskiwanie identyfikatora aplikacji Azure | Azure RMS"
 description: Tworzenie aplikacji z obsługą usługi RMS za pomocą zestawu Microsoft Rights Management SDK 4.2 wymaga podpisania umowy z zespołem usługi RMS.
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wymagania dotyczące usługi Azure RMS: urządzenia klienckie | Azure RMS
+title: "Wymagania dotyczące usługi Azure RMS: urządzenia klienckie | Azure RMS"
 description:
 keywords:
 author: cabailey
