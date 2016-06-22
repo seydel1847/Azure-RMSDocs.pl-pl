@@ -2068,14 +2068,14 @@
 
 ##### <a name='5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d113'></a> Source: [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b6dcd8bb1091e9c484e02042adbf993381581a9d/Azure-RMSDocs/get-started/requirements-subscriptions.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/a3dbf8098165ae64c03a80adc49e99fdd492d7c3/Azure-RMSDocs/get-started/requirements-subscriptions.md)
+* Target File: [Azure-RMSDocs\get-started\requirements-subscriptions.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/d8420d0f5ddf3cabebc298367eecc5743cba6132/Azure-RMSDocs/get-started/requirements-subscriptions.md)
 * Handoff File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/b846658c784d58b96a2e456ec55b343ab4b2f79b/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
 * Handoff Datetime: 2016-06-09 16:42:04
 * Handoff Reason: Include
 * Archive File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/5cff178ce25a03b521deeec3c60f55a03bbad618/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
 * Archive Datetime: 2016-06-16 13:19:43
-* Handback File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/c9cc297d918b1397af268eede6a8780db843682e/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
-* Handback Datetime: 2016-06-22 10:57:07
+* Handback File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/9c6030502cdefb6e270eec60b11b5764d41b252c/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
+* Handback Datetime: 2016-06-22 13:01:04
 * Bilingual File: [requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/c9cc297d918b1397af268eede6a8780db843682e/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-subscriptions.8ba8434db02a1b4e8c0836bbc0a49d847b5d3c55.pl-pl.xlf)
 * Bilingual Datetime: 2016-06-22 11:01:38
 * [Back to Top](#report-top)
