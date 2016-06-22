@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze | Azure RMS
+title: "Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze | Azure RMS"
 description:
 keywords:
 author: cabailey
