@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ W przypadku wdrożenia usługi Azure RMS z użyciem klucza dzierżawy zarządzan
 |------------------------|-----------------------------------|
 |Skorzystaj z możliwości szybkiego wdrożenia usługi Azure RMS — proces nie wymaga użycia żadnego specjalnego sprzętu|Klucz zarządzany przez firmę Microsoft|
 |Wymagana pełna funkcjonalność IRM w usłudze Exchange Online z usługą Azure RMS|Klucz zarządzany przez firmę Microsoft|
-|Klucze są tworzone przez użytkownika i bezpiecznie przechowywane w sprzętowym module zabezpieczeń (HSM)|BYOK<br /><br />Obecnie wybór tej konfiguracji powoduje ograniczenie funkcjonalności IRM w usłudze Exchange Online. Więcej informacji można znaleźć w temacie [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).|
+|Klucze są tworzone przez użytkownika i bezpiecznie przechowywane w sprzętowym module zabezpieczeń (HSM)|BYOK<br /><br />Obecnie wybór tej konfiguracji powoduje ograniczenie funkcjonalności IRM w usłudze Exchange Online. Aby uzyskać więcej informacji, zobacz [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).|
 
 ## Wybierz topologię klucza dzierżawy: klucz zarządzany przez firmę Microsoft (ustawienie domyślne) lub klucz zarządzany przez użytkownika (BYOK)
 Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji. Domyślnie usługa Azure RMS generuje klucz dzierżawy i zarządza większością aspektów cyklu jego życia. Jest to najprostsza opcja, która wiąże się z najmniejszą liczbą obowiązków administracyjnych użytkownika. W większości przypadków użytkownik nie musi nawet wiedzieć, że ma klucz dzierżawy. Wystarczy, że zarejestruje się w usłudze Azure RMS — resztą procesu zarządzania kluczem zajmie się firma Microsoft.
@@ -71,7 +71,7 @@ Drugi diagram przedstawia dodatkowe kroki wymagane w przypadku, gdy za zarządza
 
 ![Cykl życia klucza dzierżawy usługi Azure RMS w przypadku zarządzania kluczem przez użytkownika (konfiguracja BYOK)](../media/RMS_BYOK_onprem.png)
 
-Jeśli użytkownik zdecyduje się powierzyć firmie Microsoft zarządzanie kluczem dzierżawy, w celu wygenerowania klucza nie są wymagane żadne dalsze działania — można przejść bezpośrednio do sekcji [Następne kroki](plan-implement-tenant-key.md#next-steps).
+Jeśli zdecydujesz się powierzyć firmie Microsoft zarządzanie kluczem dzierżawy, w celu wygenerowania klucza nie są wymagane żadne dalsze działania — można przejść bezpośrednio do sekcji [Następne kroki](plan-implement-tenant-key.md#next-steps).
 
 Jeśli użytkownik zdecyduje się samodzielnie zarządzać kluczem dzierżawy, powinien przeczytać poniższe sekcje, aby uzyskać więcej informacji.
 
@@ -81,19 +81,19 @@ Użyj zawartych w tej sekcji informacji oraz procedur, aby wygenerować klucz dz
 
 
 > [!IMPORTANT]
-> Jeśli używasz już usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (usługa została aktywowana) i masz użytkowników, którzy korzystają z pakietu Office 2010, przed rozpoczęciem realizacji tych procedur skontaktuj się z działem pomocy technicznej firmy Microsoft (CSS). W zależności od scenariusza i wymagań może być możliwe dalsze używanie funkcji BYOK, mogą jednak mieć zastosowanie wybrane ograniczenia lub może zajść potrzeba wykonania dodatkowych kroków.
+> Jeśli używasz już usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (usługa została aktywowana) i masz użytkowników, którzy korzystają z pakietu Office 2010, przed rozpoczęciem realizacji tych procedur [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support). W zależności od scenariusza i wymagań może być możliwe dalsze używanie funkcji BYOK, mogą jednak mieć zastosowanie wybrane ograniczenia lub może zajść potrzeba wykonania dodatkowych kroków.
 > 
-> Skontaktuj się z działem pomocy technicznej firmy Microsoft (CSS) także jeśli w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
+> [Skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support) także wtedy, gdy w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
 
 ### Wymagania wstępne dotyczące funkcji BYOK
 Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, aby móc korzystać z funkcji BYOK.
 
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
-|Subskrypcja obejmująca usługę Azure RMS.|Więcej informacji o dostępnych subskrypcjach można znaleźć w temacie [Subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md).|
-|Nie należy używać usługi RMS dla użytkowników indywidualnych ani usługi Exchange Online. Użytkownicy, którzy zdecydują się korzystać z usługi Exchange Online, muszą zrozumieć i zaakceptować ograniczenia związane z korzystaniem z funkcji BYOK w tej konfiguracji.|Więcej informacji na temat ogólnych i bieżących ograniczeń dotyczących korzystania z funkcji BYOK znajduje się w sekcji [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).<br /><br />**Ważne**: funkcja BYOK nie jest obecnie zgodna z usługą Exchange Online.|
+|Subskrypcja obejmująca usługę Azure RMS.|Aby uzyskać więcej informacji o dostępnych subskrypcjach, zobacz [Subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md).|
+|Nie należy używać usługi RMS dla użytkowników indywidualnych ani usługi Exchange Online. Użytkownicy, którzy zdecydują się korzystać z usługi Exchange Online, muszą zrozumieć i zaakceptować ograniczenia związane z korzystaniem z funkcji BYOK w tej konfiguracji.|Aby uzyskać więcej informacji na temat ogólnych i bieżących ograniczeń dotyczących korzystania z funkcji BYOK, zobacz [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).<br /><br />**Ważne**: funkcja BYOK nie jest obecnie zgodna z usługą Exchange Online.|
 |Sprzętowe moduły zabezpieczeń, karty inteligentne i oprogramowanie firmy Thales.<br /><br />**Uwaga**: do przeprowadzenia migracji z usługi AD RMS do usługi Azure RMS przy użyciu klucza oprogramowania i klucza sprzętowego wymagane są sterowniki firmy Thales w wersji 11.62 lub nowszej.|Użytkownik musi mieć dostęp do sprzętowego modułu zabezpieczeń firmy Thales oraz podstawową wiedzę na temat działania sprzętowych modułów zabezpieczeń firmy Thales. Lista zgodnych modeli oraz informacje na temat możliwości zakupu sprzętowego modułu zabezpieczeń znajdują się w sekcji [Sprzętowy moduł zabezpieczeń firmy Thales](http://www.thales-esecurity.com/msrms/buy).|
-|Aby przekazać klucz dzierżawy przez Internet, a nie fizycznie (przebywając w Redmond w Stanach Zjednoczonych), należy spełnić 3 wymagania:<br /><br />1. Stacja robocza w trybie offline o architekturze x64 z systemem operacyjnym Windows w wersji Windows 7 lub nowszej oraz oprogramowaniem Thales nShield w wersji 11.62 lub nowszej.<br /><br />W przypadku stacji roboczych z systemem Windows 7 wymagana jest [instalacja oprogramowania Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2. Podłączona do Internetu stacja robocza z systemem operacyjnym Windows w wersji Windows 7 lub nowszej.<br /><br />3. Dysk USB lub inne przenośne urządzenie pamięci masowej z co najmniej 16 MB wolnego miejsca.|Spełnienie tych wymagań wstępnych nie jest konieczne, jeśli użytkownik zamierza udać się do Redmond i przekazać klucz dzierżawy osobiście.<br /><br />Ze względów bezpieczeństwa odradza się podłączanie pierwszej stacji roboczej do sieci. Podłączenia takiego nie uniemożliwiają jednak ograniczenia natury programistycznej.<br /><br />Uwaga: W treści kolejnych instrukcji pierwsza stacja robocza jest określana mianem **odłączonej stacji roboczej**.<br /><br />Ponadto jeśli klucz dzierżawy jest przeznaczony dla środowiska produkcyjnego, zaleca się użycie drugiej, oddzielnej stacji roboczej do pobrania zestawu narzędzi i przesłania klucza dzierżawy. Do celów testowych można jednak użyć pierwszej stacji roboczej.<br /><br />Uwaga: W treści kolejnych instrukcji druga stacja robocza jest określana mianem **stacji roboczej podłączonej do Internetu**.|
+|Aby przekazać klucz dzierżawy przez Internet, a nie fizycznie (przebywając w Redmond w Stanach Zjednoczonych), należy spełnić 3 wymagania:<br /><br />1. Stacja robocza w trybie offline o architekturze x64 z systemem operacyjnym Windows w wersji Windows 7 lub nowszej oraz oprogramowaniem Thales nShield w wersji 11.62 lub nowszej.<br /><br />W przypadku stacji roboczych z systemem Windows 7 wymagana jest [instalacja oprogramowania Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2. Połączona z Internetem stacja robocza z systemem operacyjnym Windows w wersji Windows 7 lub nowszej.<br /><br />3. Dysk USB lub inne przenośne urządzenie pamięci masowej z co najmniej 16 MB wolnego miejsca.|Spełnienie tych wymagań wstępnych nie jest konieczne, jeśli użytkownik zamierza udać się do Redmond i przekazać klucz dzierżawy osobiście.<br /><br />Ze względów bezpieczeństwa odradza się podłączanie pierwszej stacji roboczej do sieci. Podłączenia takiego nie uniemożliwiają jednak ograniczenia natury programistycznej.<br /><br />Uwaga: W treści kolejnych instrukcji pierwsza stacja robocza jest określana mianem **odłączonej stacji roboczej**.<br /><br />Ponadto jeśli klucz dzierżawy jest przeznaczony dla środowiska produkcyjnego, zaleca się użycie drugiej, oddzielnej stacji roboczej do pobrania zestawu narzędzi i przesłania klucza dzierżawy. Do celów testowych można jednak użyć pierwszej stacji roboczej.<br /><br />Uwaga: W treści kolejnych instrukcji druga stacja robocza jest określana mianem **stacji roboczej podłączonej do Internetu**.|
 
 Procedury generowania i użytkowania klucza dzierżawy różnią się w zależności od tego, czy użytkownik zamierza wykonać je przez Internet, czy też osobiście:
 
@@ -114,7 +114,7 @@ Procedury generowania i użytkowania klucza dzierżawy różnią się w zależno
     > [!NOTE]
     > Klucz dzierżawy może być bezpiecznie przesyłany za pośrednictwem niezaufanych komputerów i sieci, ponieważ jest on zaszyfrowany i zabezpieczony z użyciem uprawnień z poziomu kontroli dostępu, dzięki czemu można używać go tylko w obrębie sprzętowych modułów zabezpieczeń użytkownika oraz sprzętowych modułów zabezpieczeń firmy Microsoft dla usługi Azure RMS. Skryptów należących do zestawu narzędzi można użyć w celu weryfikacji środków bezpieczeństwa oraz uzyskania bardziej szczegółowych informacji na temat sposobu wykonywania procedury po stronie firmy Thales: [Zarządzanie kluczami sprzętowymi w chmurze RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Osobiście:** Takie rozwiązanie wymaga skontaktowania się z działem pomocy technicznej (CSS) firmy Microsoft w celu zaplanowania spotkania, podczas którego nastąpi przekazanie klucza dla usługi Azure RMS. W takim scenariuszu użytkownik musi przyjechać do biura firmy Microsoft w Redmond w stanie Waszyngton (Stany Zjednoczone) w celu przekazania klucza dzierżawy środowiska zabezpieczeń Security World usługi Azure RMS.
+-   **Osobiście:** takie rozwiązanie wymaga [skontaktowania się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support) w celu zaplanowania spotkania, podczas którego nastąpi przekazanie klucza dla usługi Azure RMS. W takim scenariuszu użytkownik musi przyjechać do biura firmy Microsoft w Redmond w stanie Waszyngton (Stany Zjednoczone) w celu przekazania klucza dzierżawy środowiska zabezpieczeń Security World usługi Azure RMS.
 
 Aby uzyskać dokładne instrukcje, należy wybrać metodę wygenerowania i przekazania klucza dzierżawy: 
 
@@ -140,7 +140,7 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
     ![Plik dziennika wyświetlony w programie Excel, pokazujący, że klucz dzierżawy jest w użyciu](../media/RMS_Logging.gif)
 
-    Więcej informacji na temat rejestrowania użycia znajduje się w sekcji [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+    Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 3.  Wykonuj czynności związane z obsługą klucza dzierżawy.
 
@@ -148,6 +148,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

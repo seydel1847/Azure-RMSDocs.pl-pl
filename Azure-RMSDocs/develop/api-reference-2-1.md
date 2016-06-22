@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Dokumentacja interfejsu API zestawu RMS SDK 2.1 | Azure RMS
-description: Zestaw Rights Management SDK 2.1 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows.
+title: Dokumentacja interfejsu API | Azure RMS
+description: Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 04e76449-2945-4054-aa3e-94d642620a1e
+ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
 # optional metadata
 
 #ROBOTS:
@@ -24,19 +24,25 @@ ms.suite: ems
 
 ---
 
-# Dokumentacja interfejsu API zestawu RMS SDK 2.1 
+# Dokumentacja interfejsu API
 
-## Dokumentacja interfejsu API
-
-Ten temat zawiera omówienie i nawigację dla dokumentacji interfejsu API.
-
-- [Stałe](/rights-management/sdk/2.1/api/win/constants)
-- [Typy danych](/rights-management/sdk/2.1/api/win/data%20types)
-- [Funkcje](/rights-management/sdk/2.1/api/win/functions)
-- [Struktury](/rights-management/sdk/2.1/api/win/structures)
+Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows. Aby uzyskać więcej szczegółowych informacji, zobacz [Informacje o wersji](release-notes-rtm.md).
+- [Stałe](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
+- [Typy danych](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
+- [Funkcje](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
+- [Struktury](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
+- [Kody błędów](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
 
 
 
-<!--HONumber=May16_HO2-->
+## Tematy pokrewne
+
+* [Informacje o wersji](release-notes-rtm.md)
+ 
+
+ 
+
+
+<!--HONumber=Jun16_HO2-->
 
 

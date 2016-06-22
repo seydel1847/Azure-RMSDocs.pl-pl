@@ -29,11 +29,10 @@ Zestaw Microsoft Rights Management SDK 4.2 koncentruje się na ułatwianiu tworz
 
 Poniższe tematy zawierają informacje przydatne w procesie projektowania aplikacji z obsługą usług RMS.
 
-- [Porady: dodawanie uwierzytelniania do aplikacji](authentication-integration.md) — W tym temacie opisano podstawy uwierzytelniania użytkowników w aplikacji z obsługą usługi RMS.
-- [Porady: włączanie rejestrowania błędów i wydajności](enabling-logging.md) — Zestaw RMS SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
-- [Porady: uzyskiwanie identyfikatora aplikacji Azure](application-id.md) — Aby utworzyć aplikację z obsługą usługi RMS za pomocą zestawu MS RMS SDK 4.2, należy podpisać umowę z zespołem usługi RMS.
-- [Porady: korzystanie z praw wbudowanych](built-in-rights-usage-restriction-reference.md) — W temacie omówiono prawa wbudowane zapewniane w ramach zestawu RMS SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać.
-- [Porady: korzystanie ze śledzenia dokumentów](how-to-use-document-tracking.md) — Korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstaw zarządzania powiązanymi metadanymi i rejestracji w usłudze.
+- [Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS](authentication-integration.md) — w tym temacie opisano podstawowe kwestie związane z uwierzytelnianiem użytkowników w aplikacji z obsługą usługi RMS.
+- [Jak włączyć rejestrowanie błędów i wydajności](enabling-logging.md) — zestaw RMS SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
+- [Jak korzystać z praw wbudowanych](built-in-rights-usage-restriction-reference.md) — w tym temacie omówiono prawa wbudowane zapewniane w ramach zestawu RMS SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać.
+- [Jak korzystać ze śledzenia dokumentów](how-to-use-document-tracking.md) — korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstawowych kwestii związanych z zarządzaniem skojarzonymi metadanymi i rejestracją w usłudze.
 - [Terminologia](terms.md) — Definicje terminów specyficznych dla usług Rights Management Services.
 
  
@@ -43,6 +42,6 @@ Poniższe tematy zawierają informacje przydatne w procesie projektowania aplika
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

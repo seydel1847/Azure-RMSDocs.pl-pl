@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ Nie masz pewności, czy ta migracja usług AD RMS jest odpowiednia dla Twojej or
 
 -   Wprowadzenie do usługi Azure RMS, opis rozwiązywanych przy jej użyciu problemów biznesowych, widok usługi dla administratorów i użytkowników oraz sposób jej działania zostały przedstawione w artykule [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
 
--   Porównanie usług Azure RMS i AD RMS można znaleźć w artykule [Comparing Azure Rights Management and AD RMS](../understand-explore/compare-azure-rms-ad-rms.md) (Porównanie usług Azure Rights Management i AD RMS)..
+-   Porównanie usług Azure RMS i AD RMS można znaleźć w artykule [Comparing Azure Rights Management and AD RMS](../understand-explore/compare-azure-rms-ad-rms.md) (Porównanie usług Azure Rights Management i AD RMS).
 
 ## Wymagania wstępne dotyczące migracji usług AD RMS do usługi Azure RMS
 Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wymagania wstępne zostały spełnione oraz że znasz wszystkie ograniczenia.
@@ -66,7 +66,7 @@ Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wy
 
 - **Wszystkie wymagania dotyczące uruchamiania usługi Azure RMS, w tym dzierżawy usługi Azure RMS (nieaktywnej)**
 
-    Zobacz temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md)..
+    Zobacz temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
     Mimo że do wykonania migracji z usług AD RMS niezbędna jest dzierżawa usługi Azure RMS, zaleca się nie aktywować usługi Rights Management przed rozpoczęciem migracji. Proces migracji obejmuje ten krok po wyeksportowaniu kluczy i szablonów z usług AD RMS i zaimportowaniu ich do usługi Azure RMS. Jeśli jednak usługa Azure RMS została już aktywowana, nadal można przeprowadzić migrację z usług AD RMS.
 
@@ -77,7 +77,7 @@ Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wy
 
     - Grupy z włączoną obsługą poczty w usłudze Azure Active Directory
 
-    Zobacz temat [Preparing for Azure Rights Management](prepare.md) (Przygotowanie do wdrożenia usługi Azure Rights Management)..
+    Zobacz temat [Preparing for Azure Rights Management](prepare.md) (Przygotowanie do wdrożenia usługi Azure Rights Management).
 
 
 - **W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM, Information Rights Management) programu Exchange Server** (np. reguł transportu i programu Outlook Web Access) lub programu SharePoint Server z usługami AD RMS:
@@ -101,7 +101,7 @@ Ograniczenia:
 
 -   Jeśli współpracujesz z partnerami zewnętrznymi (np. przy użyciu zaufanych domen użytkowników lub federacji), muszą oni migrować do usługi Azure RMS w tym samym czasie lub możliwie szybko po zakończeniu Twojej migracji. Aby nadal uzyskiwać dostęp do zawartości, którą organizacja wcześniej chroniła za pomocą usług AD RMS, muszą oni wprowadzić zmiany konfiguracji klienta podobne do wprowadzonych przez Ciebie i uwzględnionych w tym dokumencie.
 
-    Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Aby uzyskać pomoc, skontaktuj się z pomocą techniczną firmy Microsoft (CSS).
+    Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Aby uzyskać pomoc, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#support-options-and-community-resources).
 
 ## Omówienie kroków procesu migracji usług AD RMS do usługi Azure RMS
 
@@ -181,10 +181,10 @@ Ograniczenia:
 
 
 ## Następne kroki
-Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwera](migrate-from-ad-rms-phase1.md)..
+Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwera](migrate-from-ad-rms-phase1.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

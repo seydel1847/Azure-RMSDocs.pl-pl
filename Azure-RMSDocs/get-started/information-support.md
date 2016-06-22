@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -33,29 +33,47 @@ W poniższych zasobach znajdują się dodatkowe informacje o usłudze Microsoft 
 
 |Cel|.. Czynności|
 |----------------|---------------|
-|… Uzyskanie dostępu do najbardziej aktualnej dokumentacji produktu [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]|Użycie biblioteki dokumentacji dotyczącej usługi [Azure Rights Management](../understand-explore/azure-rights-management.md)|
+|… Uzyskanie dostępu do najbardziej aktualnej dokumentacji produktu [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]|Użycie witryny dokumentacji firmy Microsoft usługi [Azure Rights Management](../understand-explore/azure-rights-management.md)|
 |… Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |… Otrzymywanie tweetów o usłudze Rights Management i powiadomień o aktualizacjach dokumentacji od zespołu produktu|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Rights Management Zobacz [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… Uzyskanie wersji próbnej usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]|[Skorzystanie z bezpłatnej 30-dniowej wersji próbnej](https://portal.microsoftonline.com/Signup/MainSignUp15.aspx?&amp;OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&amp;dl=RIGHTSMANAGEMENT&amp;ali=1)|
-W poniższych sekcjach znajdują się dodatkowe informacje o usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]:
-
-
--   [Blog grupy produktów Rights Management](information-support.md#BKMK_ProductGroupBlog)
-
--   [Opcje pomocy technicznej i zasoby społecznościowe](#support-options-and-community-resources)
+|… Uzyskanie wersji próbnej usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]|Skorzystaj z linków dotyczących bezpłatnych 30-dniowych wersji próbnych na stronie [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](requirements-subscriptions.md)|
 
 
 ## Blog grupy produktów Rights Management
-Grupa produktów Rights Management korzysta z [blogu zespołu usługi Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms/) w celu publikowania informacji technicznych i innych materiałów dotyczących usług [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] i AD RMS oraz powiązanych technologii. Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
-
-Za pomocą [tagu docs](http://blogs.technet.com/b/rms/archive/tags/docs/) i comiesięcznych powiadomień dotyczących dokumentacji można sprawdzać, czy pojawiły się nowe artykuły lub aktualizacje istniejących artykułów.
+Grupa produktów Rights Management wspólnie z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) publikuje informacje techniczne i inne materiały dotyczące usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] oraz powiązanych technologii. Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
 
 > [!TIP] Jeśli tworzysz aplikacje dla usług Azure RMS lub AD RMS, być może zainteresuje Cię [Blog Developer's Corner dotyczący usług Active Directory Rights Management (AD RMS)](http://blogs.msdn.com/b/rms/).
 
 ## Opcje pomocy technicznej i zasoby społecznościowe
-Poniższe linki prowadzą do informacji dotyczących pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych:
+Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
 
--   [RMS Analyzer tool (Narzędzie Analizator usług RMS)](http://www.microsoft.com/en-us/download/details.aspx?id=46437)
+### Aby skontaktować się z pomocą techniczną firmy Microsoft
+
+Jeśli korzystasz z pomocy technicznej Premium, odwiedź [portal dla klientów pomocy technicznej Premium](https://premier.microsoft.com/), w którym można przesyłać zdarzenia, przeglądać rozwiązania i uzyskać pomoc.
+
+Być może kwalifikujesz się do uzyskania rozwiązania **FastTrack**: z asysty centrum rozwiązania FastTrack można skorzystać w przypadku zakupu co najmniej 150 licencji na usługę Azure RMS w uprawniającym planie. Asysta centrum rozwiązania FastTrack umożliwia współpracę ze specjalistami firmy Microsoft w celu oceny i skorygowania środowiska oraz włączenia w nim kwalifikujących się usług. Aby uzyskać więcej informacji, zobacz [Asysta centrum rozwiązania FastTrack dla usługi Azure Rights Management](https://technet.microsoft.com/library/mt607025.aspx).
+
+Pozostali klienci powinni użyć następujących kanałów pomocy technicznej, w zależności od sposobu uzyskania usługi Azure Rights Management:
+
+- **Usługa Azure Rights Management z subskrypcją usługi Office 365**: na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365. 
+
+- **Usługa Azure Rights Management z pakietem Enterprise Mobility Suite**: jeśli masz też usługę Office 365, możesz użyć [kanałów pomocy technicznej usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).  Aby uzyskać więcej informacji, zobacz [Enterprise Mobility Suite: Support FAQ](https://technet.microsoft.com/dn932057.aspx) (Enterprise Mobility Suite: często zadawane pytania dotyczące pomocy technicznej).
+
+- **Azure Rights Management Premium**: otwórz [żądanie obsługi w Portalu Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Aby móc użyć tej opcji, musisz mieć subskrypcję platformy Azure i plan pomocy technicznej platformy Azure. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna platformy Azure dla klientów](https://azure.microsoft.com/support/plans/). 
+
+Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
+
+### Samodzielna pomoc
+
+Nauka podstawowych umiejętności:
+
+- Microsoft Virtual Academy: [podstawowe umiejętności dotyczące usługi Azure Rights Management Services](https://mva.microsoft.com/en-us/training-courses/azure-rights-management-services-core-skills-10500?l=QLoxMwuCB_1805094681)
+
+Rozwiązywanie problemów:
+
+- Pobierz i uruchom [narzędzie Analizator usług RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
+
+### Zasoby społeczności
 
 -   [Yammer: Microsoft Rights Management (RMS) (Yammer: usługa Microsoft Rights Management [RMS])](http://www.yammer.com/AskIPTeam)
 
@@ -63,14 +81,8 @@ Poniższe linki prowadzą do informacji dotyczących pomocy technicznej i rozwi�
 
 -   [Forum: RMS for Users (applications) (Forum: usługi RMS dla użytkowników [aplikacje])](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
--   [Pomoc i obsługa techniczna firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=243064)
-
-Możesz również odwiedzić stronę [portalu usług Microsoft Rights Management](http://www.microsoft.com/rms), aby znaleźć inne pomocnicze zasoby dotyczące usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 
-
-
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

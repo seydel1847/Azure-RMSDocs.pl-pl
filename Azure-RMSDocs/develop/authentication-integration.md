@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Porady&#58; Dodawanie uwierzytelniania do aplikacji | Azure RMS
+title: Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS | Azure RMS
 description: W tym artykule opisano podstawy uwierzytelniania użytkowników w aplikacji z włączoną obsługą usługi RMS
 keywords:
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -24,29 +24,28 @@ ms.suite: ems
 
 ---
 
-# Porady: Dodawanie uwierzytelniania do aplikacji
+# Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
 
-W tym artykule opisano podstawy uwierzytelniania użytkowników w aplikacji z włączoną obsługą usługi RMS
+W tym temacie przedstawiono podstawowe informacje dotyczące rejestracji aplikacji i włączania obsługi usługi RMS za pośrednictwem Portalu Azure oraz uwierzytelniania użytkowników za pomocą biblioteki Azure Active Directory Authentication Library (ADAL).
 
 ## Czym jest uwierzytelnianie użytkownika
-Uwierzytelnianie użytkownika to kluczowy etap nawiązywania komunikacji między aplikacją urządzenia i infrastrukturą usługi RMS. Ten proces uwierzytelniania używa standardowego protokołu OAuth 2.0, który wymaga następujących fragmentów informacji dotyczących bieżącego użytkownika i jego żądania uwierzytelnienia: **urząd**, **zasób** i **identyfikator użytkownika**.
+Uwierzytelnianie użytkownika to kluczowy etap nawiązywania komunikacji między aplikacją urządzenia i infrastrukturą usługi RMS. Ten proces uwierzytelniania używa standardowego protokołu OAuth 2.0, który wymaga kluczowych informacji dotyczących bieżącego użytkownika i jego żądania uwierzytelnienia.
 
-**Uwaga**  Zakres nie jest obecnie używany, ale może być, w związku z czym jest zarezerwowany do użytku w przyszłości.
+## Rejestracja za pośrednictwem Portalu Azure
+Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania rejestracji aplikacji za pomocą Portalu Azure [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md). Skopiuj i zapisz **identyfikator klienta** oraz **identyfikator URI przekierowania** z tego procesu do użycia w przyszłości.
 
- 
+## Implementowanie uwierzytelniania użytkowników w aplikacji
+Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw RMS SDK 4.2 korzysta z Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
 
-**Wywołanie zwrotne uwierzytelniania użytkownika** — zestaw SDK 4.2 usługi Microsoft Rights Management korzysta z Twojego wdrożenia wywołania zwrotnego uwierzytelniania w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
+- Android — interfejsy [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) i [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java).
+- iOS/OS X — protokół [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc).
+-  Windows Phone/Window RT — interfejs [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback).
+- Linux — interfejs [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
 
-Każdy z interfejsów API usługi RMS platformy dysponuje wywołaniem zwrotnym, które należy wdrożyć w celu umożliwienia uwierzytelniania użytkownika.
+### Jakiej biblioteki użyć podczas uwierzytelniania
+W celu wdrożenia wywołania zwrotnego uwierzytelniania należy pobrać odpowiednią bibliotekę i skonfigurować środowisko deweloperskie do korzystania z niej. W witrynie GitHub są dostępne biblioteki ADAL dla tych platform.
 
--   Interfejs API systemu Android wykorzystuje interfejsy [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) i [**AuthenticationCompletionCallback**](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java)
--   Interfejs API systemów iOS/OS X wykorzystuje protokół [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc).
--   Interfejs API systemu WinPhone wykorzystuje interfejs [**IAuthenticationCallback**](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback).
--   Interfejs API systemu Linux wykorzystuje interfejs [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
-
-## Jakiej biblioteki użyć podczas uwierzytelniania
-
-W celu wdrożenia wywołania zwrotnego uwierzytelniania należy pobrać odpowiednią bibliotekę i skonfigurować środowisko deweloperskie do korzystania z niej. W witrynie GitHub są dostępne biblioteki ADAL dla tych platform. Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środowiska i korzystania z biblioteki.
+Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środowiska i korzystania z biblioteki.
 
 -   [Biblioteka Windows Azure Active Directory Authentication Library (ADAL) dla systemu iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
 -   [Biblioteka Windows Azure Active Directory Authentication Library (ADAL) dla komputerów Mac](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
@@ -54,28 +53,28 @@ W celu wdrożenia wywołania zwrotnego uwierzytelniania należy pobrać odpowied
 -   [Biblioteka Windows Azure Active Directory Authentication Library (ADAL) dla platformy dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   W przypadku zestawu SDK dla systemu Linux biblioteka ADAL jest spakowana ze źródłem SDK, dostępnym w witrynie [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
-**Uwaga**  Zalecamy korzystanie z jednej z powyższych bibliotek Active Directory Authentication Library (ADAL), choć można też korzystać z innych bibliotek uwierzytelniania.
+>[!NOTE]  Zalecamy korzystanie z jednej z bibliotek ADAL, choć można też korzystać z innych bibliotek uwierzytelniania.
 
-## Dane wejściowe uwierzytelniania przy użyciu biblioteki Azure Active Directory Authentication Library (ADAL)
+### Parametry uwierzytelniania
 
-Biblioteka ADAL wymaga kilku parametrów w celu pomyślnego uwierzytelnienia użytkownika w usłudze Azure RMS (lub AD RMS). Są to standardowe parametry protokołu OAuth 2.0, wymagane generalnie od wszystkich aplikacji usługi Azure AD, jak również aplikacji z obsługą usługi RMS. Bieżące wytyczne dotyczące korzystania z biblioteki ADAL zamieszczono w plikach README odpowiednich repozytoriów Github wymienionych powyżej.
+Biblioteka ADAL wymaga kilku informacji w celu pomyślnego uwierzytelnienia użytkownika w usłudze Azure RMS (lub AD RMS). Są to standardowe parametry protokołu OAuth 2.0, wymagane zwykle od wszystkich aplikacji usługi Azure AD. Bieżące wytyczne dotyczące korzystania z biblioteki ADAL zamieszczono w plikach README odpowiednich repozytoriów Github wymienionych powyżej.
 
-Poniższe parametry i zalecenia są wymagane dla przepływów pracy usługi RMS:
+- **Urząd** — adres URL punktu końcowego uwierzytelniania, zazwyczaj AAD lub ADFS.
+- **Zasób** — adres URL/identyfikator URI aplikacji usługi, do której próbujesz uzyskać dostęp, zazwyczaj Azure RMS lub AD RMS.
+- **Identyfikator użytkownika** — nazwa UPN, zwykle adres e-mail użytkownika, który próbuje uzyskać dostęp do aplikacji. Parametr ten może być pusty, jeśli użytkownik nie jest jeszcze znany. Jest używany także do buforowania tokenu użytkownika i żądania tokenu z pamięci podręcznej. Ta wartość jest używana zazwyczaj także jako *wskazówka* do monitowania użytkownika.
+- **Identyfikator klienta** — identyfikator aplikacji klienta. Musi to być poprawny identyfikator aplikacji usługi Azure AD.
+i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
+- **Identyfikator Uri przekierowania** — podaje bibliotekę uwierzytelniania z celem URI dla kodu uwierzytelniania. Systemy iOS i Android wymagają określonych formatów. Omówiono je w plikach README odpowiednich repozytoriów GitHub biblioteki ADAL. Ta wartość pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 
--   **Urząd** — adres URL punktu końcowego uwierzytelniania, zazwyczaj AAD lub ADFS. Parametr ten jest dostarczany aplikacji przez wywołanie zwrotne uwierzytelniania zestawu SDK usługi RMS.
--   **Zasób** — adres URL/identyfikator URI aplikacji usługi, do której próbujesz uzyskać dostęp, zazwyczaj Azure RMS lub AD RMS. Parametr ten jest dostarczany aplikacji przez wywołanie zwrotne uwierzytelniania zestawu SDK usługi RMS.
--   **Identyfikator użytkownika** — nazwa UPN, zwykle adres e-mail użytkownika, który próbuje uzyskać dostęp do aplikacji. Parametr ten może być pusty, jeśli użytkownik nie jest jeszcze znany. Jest używany także do buforowania tokenu użytkownika i żądania tokenu z pamięci podręcznej. Wartość ta jest używana zazwyczaj także jako wskazówka do monitowania użytkownika.
--   **Identyfikator klienta** — identyfikator aplikacji klienta. Musi to być poprawny identyfikator aplikacji usługi Azure AD. Aby uzyskać więcej informacji, zobacz Porady: Uzyskiwanie identyfikatora aplikacji Azure.
--   **Identyfikator Uri przekierowania** — podaje bibliotekę uwierzytelniania z celem URI dla kodu uwierzytelniania. Należy pamiętać, że systemy iOS i Android wymagają określonych formatów, które zostały opisane w plikach README odpowiednich repozytoriów GitHub biblioteki ADAL.
+>[!NOTE] **Zakres** nie jest obecnie używany, ale może być używany, w związku z czym jest zarezerwowany do użycia w przyszłości.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
-**Uwaga**  Jeśli aplikacja nie jest zgodna z tymi wytycznymi, przepływy pracy usług Azure RMS i Azure AD zakończą się prawdopodobnie niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
+>[!NOTE] Jeśli aplikacja nie jest zgodna z tymi wytycznymi, przepływy pracy usług Azure RMS i Azure AD zakończą się prawdopodobnie niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
 
-## Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
-
+### Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
 **Przykłady kodu uwierzytelniania** — ten zestaw SDK zawiera przykładowy kod, przedstawiający zastosowanie wywołań zwrotnych uwierzytelniania. Dla wygody te przykłady kodu przedstawiono w tym miejscu, jak również we wszystkich powiązanych tematach.
 
 **Uwierzytelnianie użytkownika systemu Android** — więcej informacji znajduje się w części [Przykłady kodu dla systemu Android](android-code.md), **Krok 2** pierwszego scenariusza, „Korzystanie z pliku chronionego usługi RMS”.
@@ -153,9 +152,7 @@ Poniższe parametry i zalecenia są wymagane dla przepływów pracy usługi RMS:
                          }
 
 
-**Uwierzytelnianie użytkownika systemu iOS/OS X** — więcej informacji znajduje się w części [Przykłady kodu dla systemu iOS/OS X](ios-os-x-code-examples.md),
-
-**Krok 2** pierwszego scenariusza, „Korzystanie z pliku chronionego usługi RMS”.
+**Uwierzytelnianie użytkownika systemu iOS/OS X** — więcej informacji znajduje się w części [Przykłady kodu dla systemu iOS/OS X](ios-os-x-code-examples.md), *Krok 2 pierwszego scenariusza, „Korzystanie z pliku chronionego usługi RMS”*.
 
 
     // AuthenticationCallback holds the necessary information to retrieve an access token.
@@ -203,7 +200,7 @@ Poniższe parametry i zalecenia są wymagane dla przepływów pracy usługi RMS:
 
 
 
-**Uwierzytelnianie użytkownika systemu Linux/języka C++** — więcej informacji znajduje się w sekcji [Przykłady kodu dla systemu Linux](linux-c-code-examples.md).
+**Uwierzytelnianie użytkownika systemu Linux** — więcej informacji znajduje się w sekcji [Przykłady kodu dla systemu Linux](linux-c-code-examples.md).
 
 
 
@@ -274,6 +271,6 @@ Poniższe parametry i zalecenia są wymagane dla przepływów pracy usługi RMS:
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

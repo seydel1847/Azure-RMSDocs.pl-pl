@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ Masz dodatkowe pytania dotyczące licencjonowania usługi Azure RMS? Pobierz **C
 ## Subskrypcja usługi Office 365
 [Bezpłatna 30-dniowa wersja próbna: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[Bezpłatna 30-dniowa wersja próbna: Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 Ta subskrypcja jest przeznaczona dla organizacji, które chcą korzystać z usług online pakietu Office i używać ich funkcji zarządzania prawami do informacji (IRM) z usługą Azure RMS. Jednak nie wszystkie subskrypcje usługi Office 365 obejmują usługę Azure RMS.
 
 Subskrypcja  |Obejmuje funkcję IRM 
@@ -84,7 +86,7 @@ Jeśli ważność wersji próbnej subskrypcji wygaśnie, utracisz dostęp do zaw
 Wyjątek dotyczący utraty dostępu po wygaśnięciu stanowi sytuacja, w której organizacja przed uzyskaniem subskrypcji w wersji próbnej korzystała z usługi Azure RMS w ramach subskrypcji usługi RMS dla użytkowników indywidualnych. W tym przypadku organizacja ma dostęp do chronionej wcześniej zawartości nawet po wygaśnięciu wersji próbnej subskrypcji.
 
 ## Subskrypcja pakietu Enterprise Mobility Suite
-[Bezpłatna 30-dniowa wersja próbna](http://go.microsoft.com/fwlink/?LinkId=615385)
+[Bezpłatna 30-dniowa wersja próbna](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 Ta subskrypcja jest przeznaczona dla organizacji, które chcą korzystać z kombinacji usług Azure Active Directory Premium, Windows Intune i Azure Rights Management. Obsługa usługi Azure Rights Management z pakietem Office jest taka sama jak w przypadku subskrypcji Azure Rights Management Premium. Aby uzyskać więcej informacji o subskrypcji pakietu Enterprise Mobility Suite, zobacz temat [Microsoft Enterprise Mobility — omówienie](http://go.microsoft.com/fwlink/?LinkId=615386).
 
@@ -98,6 +100,6 @@ Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidu
 ## Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

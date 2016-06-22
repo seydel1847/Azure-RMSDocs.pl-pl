@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -30,7 +30,7 @@ ms.suite: ems
 *Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 
-Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md)..
+Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 Przed rozpoczęciem upewnij się, że łącznik usługi RMS jest zainstalowany i skonfigurowany, oraz sprawdź wszystkie [wymagania wstępne](deploy-rms-connector.md#prerequisites-for-the-rms-connector), które dotyczą serwerów używających łącznika.
 
@@ -83,8 +83,7 @@ Wady:
 
 ---
 
-> [!IMPORTANT]
-> W obu przypadkach należy ręcznie zainstalować wszystkie wymagania wstępne oraz skonfigurować programy Exchange i SharePoint, a także infrastrukturę klasyfikacji plików, aby korzystać z usługi Rights Management.
+> [!IMPORTANT] W obu przypadkach należy ręcznie zainstalować wszystkie wstępnie wymagane składniki oraz skonfigurować programy Exchange i SharePoint, a także infrastrukturę klasyfikacji plików, aby korzystać z usługi Rights Management.
 
 W przypadku większości organizacji konfiguracja automatyczna za pomocą narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS będzie lepszym rozwiązaniem, ponieważ zapewnia większą wydajność i niezawodność niż konfiguracja ręczna.
 
@@ -92,7 +91,7 @@ Po wprowadzeniu zmian konfiguracji na tych serwerach należy uruchomić je ponow
 
 ### Sposób użycia narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS:
 
-1.  Jeśli nie pobrano jeszcze skryptu dla narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS (GenConnectorConfig.ps1), pobierz go z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106)..
+1.  Jeśli nie pobrano jeszcze skryptu narzędzia konfiguracji serwera dla łącznika usługi Microsoft RMS (GenConnectorConfig.ps1), pobierz go z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 2.  Zapisz plik GenConnectorConfig.ps1 na komputerze, na którym zostanie uruchomione narzędzie. W przypadku lokalnego uruchamiania narzędzia musi to być serwer, który chcesz skonfigurować do komunikowania się z łącznikiem usługi RMS. W przeciwnym razie możesz zapisać plik na dowolnym komputerze.
 
@@ -115,8 +114,7 @@ Po wprowadzeniu zmian konfiguracji na tych serwerach należy uruchomić je ponow
 
 Aby uruchomić skrypt, wprowadź adres URL łącznika usługi RMS danej organizacji. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład https://connector.contoso.com. Narzędzie będzie używać tego adresu URL do kontaktowania się z serwerami, na których działa łącznik usługi RMS, i pozyskiwania innych parametrów potrzebnych do tworzenia wymaganych konfiguracji.
 
-> [!IMPORTANT]
-> Przy uruchamianiu tego narzędzia upewnij się, że podajesz nazwę łącznika usługi RMS ze zrównoważonym obciążeniem w danej organizacji, a nie nazwę pojedynczego serwera, na którym działa usługa łącznika usługi RMS.
+> [!IMPORTANT] Przy uruchamianiu tego narzędzia upewnij się, że podajesz nazwę łącznika usługi RMS ze zrównoważonym obciążeniem w danej organizacji, a nie nazwę pojedynczego serwera, na którym działa usługa łącznika usługi RMS.
 
 Aby uzyskać szczegółowe informacje dla każdego typu usług, skorzystaj z następujących tematów:
 
@@ -190,8 +188,7 @@ W celu korzystania z łącznika usługi RMS te serwery programu SharePoint musz�
 
 Serwer z działającym programem SharePoint 2016 lub SharePoint 2013 musi mieć również uruchomioną wersję klienta MSIPC 2.1, która jest zgodna z łącznikiem usługi RMS. Aby upewnić się, że masz obsługiwaną wersję, pobierz najnowszego klienta z [Centrum pobierania Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
 
-> [!WARNING]
-> Istnieje wiele wersji klienta MSIPC 2.1, dlatego upewnij się, że została zainstalowana wersja 1.0.2004.0 lub nowsza.
+> [!WARNING] Istnieje wiele wersji klienta MSIPC 2.1, dlatego upewnij się, że została zainstalowana wersja 1.0.2004.0 lub nowsza.
 >
 > Wersję klienta można sprawdzić, odczytując numer wersji pliku MSIPC.dll, który znajduje się w folderze **\Program Files\Active Directory Rights Management Services Client 2.1**. Okno dialogowe właściwości zawiera numer wersji klienta MSIPC 2.1.
 
@@ -248,19 +245,13 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 3.  Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
 ## Następne kroki
-Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane, aby z niego korzystać, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure RMS. Aby użytkownikom było łatwiej, warto wdrożyć aplikację RMS sharing, która instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora aplikacji Rights Management sharing](../rms-client/sharing-app-admin-guide.md)..
+Kiedy łącznik usługi RMS zostanie zainstalowany i skonfigurowany, a serwery zostaną skonfigurowane, aby z niego korzystać, administratorzy IT i użytkownicy będą mogli chronić oraz stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure RMS. Aby użytkownikom było łatwiej, warto wdrożyć aplikację RMS sharing, która instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
 
-Ponadto należy rozważyć następujące rozwiązania ułatwiające monitorowanie łącznika usługi RMS oraz korzystania z usługi Azure RMS w organizacji:
+Możesz użyć [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] użytkownikom i administratorom.
 
--   Wbudowane liczniki wydajności **łącznika Microsoft Rights Management**.
-
--   [Narzędzie RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) z opcją łącznika usługi RMS ułatwia monitorowanie kondycji łącznika i identyfikację problemów dotyczących konfiguracji.
-
--   [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md)
-
-Możesz użyć [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] użytkownikom i administratorom. 
+Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi Azure Rights Management](monitor-rms-connector.md). 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

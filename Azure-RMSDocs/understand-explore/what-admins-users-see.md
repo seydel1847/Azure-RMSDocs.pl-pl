@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -32,12 +32,11 @@ ms.suite: ems
 
 W tym artykule przedstawiono kilka typowych przykładów opisujących, co administratorzy i użytkownicy mogą zobaczyć w usłudze Azure Rights Management (Azure RMS) i jak mogą chronić informacje poufne przy jej użyciu.
 
-> [!NOTE]
-> We wszystkich tych przykładach — jeśli usługa Azure RMS chroni dane — właściciel zawartości zachowuje pełen dostęp do danych (plików lub poczty e-mail), nawet jeśli zastosowana ochrona powoduje przyznanie uprawnień grupie, do której właściciel nie należy, lub nawet jeśli zastosowana ochrona ma datę wygaśnięcia.
+> [!NOTE] We wszystkich tych przykładach — jeśli usługa Azure RMS chroni dane — właściciel zawartości zachowuje pełen dostęp do danych (plików lub poczty e-mail), nawet jeśli zastosowana ochrona powoduje udzielenie uprawnień grupie, do której właściciel nie należy, lub nawet jeśli zastosowana ochrona ma datę wygaśnięcia.
 >
 > Podobnie dział IT ma zawsze dostęp bez ograniczeń do chronionych danych dzięki funkcji administratora usługi Rights Management, która umożliwia przyznawanie delegowanego dostępu wybranym autoryzowanym użytkowników lub usługom. Dodatkowo dział IT może śledzić i monitorować użycie danych objętych ochroną — na przykład, kto uzyskuje do nich dostęp i kiedy.
 
-Inne zrzuty ekranu i filmy pokazujące usługę RMS w działaniu można znaleźć w [portalu usługi Microsoft Rights Management](http://www.microsoft.com/rms) i na [blogu zespołu ds. usługi Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms)..
+Inne zrzuty ekranu i klipy wideo pokazujące działanie usługi RMS można znaleźć w [portalu usługi Microsoft Rights Management](http://www.microsoft.com/rms) i [blogu zespołu ds. usługi Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms).
 
 ## Aktywowanie i konfigurowanie usługi Rights Management
 Mimo że usługę Azure RMS można aktywować i skonfigurować przy użyciu programu Windows PowerShell, najłatwiej wykonać te czynności w portalu zarządzania. Zaraz po aktywowaniu usługi dostępne są dwa szablony, które administratorzy i użytkownicy mogą wybrać, aby szybko i łatwo objąć pliki ochroną informacji. Można również tworzyć szablony niestandardowe z dodatkowymi opcjami i ustawieniami.
@@ -51,7 +50,7 @@ Mimo że usługę Azure RMS można aktywować i skonfigurować przy użyciu prog
 
 ![CO WIDZĄ ADMINISTRATORZY W KROKU 2](../media/AzRMS_TemplatesPortal_small.png)
 
-**CO WIDZĄ ADMINISTRATORZY W KROKU 2:** po aktywacji w organizacji zostają automatycznie udostępnione dwa szablony zasad praw. Jeden szablon jest tylko do odczytu (jego nazwa zawiera informację **Confidential View Only** (Poufne, tylko wyświetlanie)), drugi — do odczytu i modyfikowania (**Confidential** (Poufne)).).
+**CO WIDZĄ ADMINISTRATORZY W KROKU 2:** po aktywacji w organizacji zostają automatycznie udostępnione dwa szablony zasad praw. Jeden szablon jest tylko do odczytu — jego nazwa zawiera informację **Confidential View Only** (Poufne, tylko wyświetlanie). Drugi szablon jest do odczytu i modyfikowania — jego nazwa zawiera informację **Confidential** (Poufne).
 
 Te szablony są stosowane do plików lub wiadomości e-mail i ograniczają dostęp do nich tylko do użytkowników w organizacji. Jest to bardzo szybki i łatwy sposób zapobiegania wyciekowi danych firmowych do osób spoza organizacji.
 
@@ -80,9 +79,9 @@ Jeśli nie chcesz, aby użytkownicy widzieli te szablony, lub jeśli chcesz twor
 
 **Dodatkowe informacje dotyczące tego scenariusza:**
 
-- Aby uzyskać instrukcje krok po kroku, zobacz artykuły [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md) i [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)..
+- Aby uzyskać instrukcje krok po kroku, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md) i [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-- Aby ułatwić użytkownikom ochronę ważnych plików firmowych, zobacz artykuł [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md)..
+- Aby ułatwić użytkownikom ochronę ważnych plików firmowych, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md).
 
 Następnie możesz zapoznać się z kilkoma przykładami opisującymi, jak administratorzy mogą stosować szablony do automatycznego konfigurowania ochrony informacji do plików i wiadomości e-mail.
 
@@ -102,7 +101,7 @@ Istnieje wiele sposobów stosowania wartości klasyfikacji do plików. Można na
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 2:** na serwerze plików administrator konfiguruje zadania i reguły klasyfikacji, aby wszystkie pliki użytkownika w folderze **Marketing Promotions** były automatycznie klasyfikowane jako **Marketing** i chronione przy użyciu szyfrowania usługi RMS.
 
-Administrator konfiguruje niestandardowy szablon usługi RMS, który został utworzony w naszym pierwszym przykładzie. Szablon ten ogranicza dostęp do członków działów sprzedaży i marketingu: **Sales and Marketing – Read and Print Only** (Sprzedaż i marketing — tylko do odczytu i drukowania)..
+Administrator konfiguruje niestandardowy szablon usługi RMS, który został utworzony w naszym pierwszym przykładzie. Ten szablon ogranicza dostęp do członków działów sprzedaży i marketingu: **Sales and Marketing – Read and Print Only** (Sprzedaż i marketing — tylko do odczytu i drukowania).
 
 W efekcie wszystkie dokumenty w tym folderze są automatycznie konfigurowane z klasyfikacją Marketing i chronione przy użyciu szablonu usługi RMS dotyczącego sprzedaży i marketingu.
 
@@ -119,7 +118,7 @@ Odbiorca nie może odczytać poufnego raportu, ponieważ nie jest członkiem gru
 
 **Dodatkowe informacje dotyczące tego scenariusza:**
 
-- Instrukcje krok po kroku można znaleźć w temacie [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)..
+- Instrukcje krok po kroku można znaleźć w temacie [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## Automatyczna ochrona wiadomości e-mail przy użyciu usługi Exchange Online i zasad zapobiegania utracie danych
 
@@ -134,6 +133,9 @@ W tym przykładzie administrator konfiguruje zasady, aby zapewnić zgodność or
 Zasady są skonfigurowane tak, aby wiadomości e-mail, które zawierają te informacje i są wysyłane poza organizację, były automatycznie obejmowane ochroną praw przy użyciu szablonu usługi RMS, który ogranicza dostęp do tylko pracowników firmy.
 
 W tym miejscu zasada jest skonfigurowana do korzystania z jednego z szablonów domyślnych **VanArsdel, Ltd — Confidential** z pierwszego przykładu. Można również zobaczyć, jak szablony do wyboru uwzględniają wszystkie utworzone przez użytkownika szablony niestandardowe, i zapoznać się z opcją **Nie przesyłaj dalej** specyficzną dla programu Exchange.
+
+> [!NOTE]
+> Jeśli wyświetlane opcje konfiguracji są nieco inne niż na ilustracji, może być konieczne wcześniejsze wybranie pozycji **Więcej opcji** podczas konfigurowania reguły. Następnie wybierz pozycję **Zmodyfikuj zabezpieczenia wiadomości**  >  **Zastosuj ochronę praw** i wybierz szablon usługi RMS.
 
 ---
 
@@ -153,9 +155,9 @@ Wiadomość e-mail jest szyfrowana w momencie opuszczenia infrastruktury organiz
 
 **Dodatkowe informacje dotyczące tego scenariusza:**
 
--   Aby uzyskać więcej informacji na temat współpracy usługi Azure RMS z usługą Exchange Online, zobacz sekcję [Exchange Online i Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) tematu [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md)..
+-   Aby uzyskać więcej informacji na temat współdziałania usługi Azure RMS z usługą Exchange Online, zobacz sekcję [Exchange Online i Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) w temacie [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
--   Instrukcje krok po kroku dotyczące konfigurowania usługi Exchange Online dla usługi Azure RMS można znaleźć w sekcji [Exchange Online: konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration) tematu [Konfigurowanie aplikacji usługi Azure Rights Management](../deploy-use/configure-applications.md)..
+-   Instrukcje krok po kroku dotyczące konfigurowania usługi Exchange Online dla usługi Azure RMS można znaleźć w sekcji [Exchange Online: konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration) w temacie [Konfigurowanie aplikacji usługi Azure Rights Management](../deploy-use/configure-applications.md).
 
 ## Automatyczna ochrona plików przy użyciu usługi SharePoint Online i bibliotek chronionych
 
@@ -187,9 +189,9 @@ Dokument pozostanie chroniony, nawet jeśli użytkownik zmieni jego nazwę, zapi
 
 **Dodatkowe informacje dotyczące tego scenariusza:**
 
--   Aby uzyskać więcej informacji na temat współpracy usługi Azure RMS z programem SharePoint, zobacz sekcję [SharePoint Online i SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) tematu [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md)..
+-   Aby uzyskać więcej informacji na temat współdziałania usługi Azure RMS z programem SharePoint, zobacz sekcję [SharePoint Online i SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w temacie [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
--   Instrukcje krok po kroku dotyczące konfigurowania programu SharePoint na potrzeby usługi Azure RMS można znaleźć w sekcji [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) tematu [Konfigurowanie aplikacji usługi Azure Rights Management](../deploy-use/configure-applications.md)..
+-   Instrukcje krok po kroku dotyczące konfigurowania programu SharePoint na potrzeby usługi Azure RMS można znaleźć w sekcji [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) w temacie [Konfigurowanie aplikacji usługi Azure Rights Management](../deploy-use/configure-applications.md).
 
 ## Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym
 
@@ -235,7 +237,7 @@ Jeśli Bob prześle wiadomość e-mail z załącznikiem, zapisze ją w lokalizac
 
 **Dodatkowe informacje dotyczące tego scenariusza:**
 
-- Instrukcje krok po kroku można znaleźć w sekcjach [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md) i [Wyświetlanie i używanie chronionych plików](../rms-client/sharing-app-view-use-files.md) w dokumencie [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md)..
+- Instrukcje krok po kroku można znaleźć w sekcjach [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md) oraz [Wyświetlanie i używanie chronionych plików](../rms-client/sharing-app-view-use-files.md) w dokumencie [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md).
 
 - Instrukcje krok po kroku dotyczące tego scenariusza można znaleźć w dokumencie [Samouczek szybkiego startu dla usługi Azure Rights Management](../get-started/quick-start-tutorial.md).
 
@@ -244,6 +246,6 @@ Jeśli Bob prześle wiadomość e-mail z załącznikiem, zapisze ją w lokalizac
 Skoro już znasz przykłady możliwości usługi Azure RMS, być może zechcesz się dowiedzieć, jak te czynności są wykonywane. Aby uzyskać informacje techniczne na temat działania usługi Azure RMS, zobacz artykuł [Jak działa usługa Azure RMS](how-does-it-work.md).
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
