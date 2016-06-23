@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-sharepoint.md) | InSyncHandedBackSuccess | [Details](#cb028afcbfd9b59f134539c434f4f49efc5e9092119)
 
 ## Item Details
+##### <a name='cb028afcbfd9b59f134539c434f4f49efc5e9092119'></a> Source: [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-sharepoint.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/99fb85f948d49ecc497435709ce255e04a93e7f5/Azure-RMSDocs/get-started/scenario-sharepoint.md)
+* Handoff File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/7cb9a69e510407397bab3d757848e2fb5e08d283/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
+* Handoff Datetime: 2016-05-12 01:07:46
+* Handoff Reason: Include
+* Archive File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/88c1c2a80b0e9942bb3b75707576cf92d6d5fd00/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
+* Archive Datetime: 2016-05-12 02:17:02
+* Handback File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/295d250090f552d41cf742dc5852e1f5d2de039b/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
+* Handback Datetime: 2016-06-23 07:53:07
+* Bilingual File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/f5ad643fe7cbf5c725e8cab5199fd0ecaa906589/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-16 10:24:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

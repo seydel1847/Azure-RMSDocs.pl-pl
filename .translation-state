@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "ff7d9fb177488f956a2b408aa6612d229bd2f7dd",
-  "LastTranslatedCommit": "dce1fe30c7e1d200e1514ea316d0719665f58596",
+  "LastTranslatedCommit": "99fb85f948d49ecc497435709ce255e04a93e7f5",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -70542,14 +70542,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "ec6810625de247fb90799a2a4a09f18a8e695be8",
+      "TargetFileCommit": "99fb85f948d49ecc497435709ce255e04a93e7f5",
       "TargetFilePath": "Azure-RMSDocs\\get-started\\scenario-sharepoint.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf",
-      "HandbackFileCommit": "f5ad643fe7cbf5c725e8cab5199fd0ecaa906589",
-      "HandbackDateTime": "2016-05-26T05:15:05.0013357Z",
+      "HandbackFileCommit": "295d250090f552d41cf742dc5852e1f5d2de039b",
+      "HandbackDateTime": "2016-06-23T07:53:07.3690999Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-05-26T05:15:05.0013357Z",
+      "UpdatedDateTime": "2016-06-23T07:53:07.3690999Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\archive\\scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf",
       "ArchiveFileCommit": "88c1c2a80b0e9942bb3b75707576cf92d6d5fd00",
       "ArchiveFileDateTime": "2016-05-12T02:17:02.8837759Z",
