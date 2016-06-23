@@ -2160,8 +2160,8 @@
 * Archive Datetime: 2016-05-12 02:17:02
 * Handback File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/295d250090f552d41cf742dc5852e1f5d2de039b/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
 * Handback Datetime: 2016-06-23 07:53:07
-* Bilingual File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/f5ad643fe7cbf5c725e8cab5199fd0ecaa906589/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-16 10:24:16
+* Bilingual File: [scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/295d250090f552d41cf742dc5852e1f5d2de039b/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/scenario-sharepoint.9134cf463728bc5a6a16c0424ba906e7747bff3b.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-23 07:55:19
 * [Back to Top](#report-top)
 
 ##### <a name='35ad445e229eac3feeca5522a41b9e3b25fd1180120'></a> Source: [Azure-RMSDocs\get-started\scenario-work-folders.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/get-started/scenario-work-folders.md)
