@@ -51,13 +51,13 @@ Aby zrealizować ten scenariusz, należy spełnić następujące wymagania:
 |---------------|--------------------------------|
 |Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|W przypadku używania programu SharePoint Server: należy wdrożyć łącznik usługi RMS i skonfigurować go na potrzeby programu SharePoint|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|Konfiguracja uprawnień do witryny programu SharePoint w celu zapewnienia ochrony|[Zarządzanie uprawnieniami dotyczącymi listy, biblioteki, folderu, dokumentu lub elementu listy](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
-|Konfigurowanie programu SharePoint na potrzeby usługi IRM i bibliotek chronionych|[Konfigurowanie usługi Zarządzanie prawami do informacji w centrum administracyjnym programu SharePoint](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
+|W przypadku używania programu SharePoint Server: należy wdrożyć łącznik usługi RMS i skonfigurować go na potrzeby programu SharePoint.|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
+|Należy skonfigurować uprawnienia do chronionej witryny programu SharePoint.|[Zarządzanie uprawnieniami dotyczącymi listy, biblioteki, folderu, dokumentu lub elementu listy](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
+|Należy skonfigurować program SharePoint na potrzeby usługi IRM i bibliotek chronionych.|[Konfigurowanie usługi Zarządzanie prawami do informacji w centrum administracyjnym programu SharePoint](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
 ### Aby skonfigurować ustawienia biblioteki programu SharePoint dla usługi IRM
 
-1.  Po skonfigurowaniu programu SharePoint do korzystania z usługi IRM, przejdź do biblioteki programu SharePoint, która ma być chroniona za pomocą usługi Azure RMS. Na stronie witryny **Ustawienia** &gt; **Zarządzanie prawami do informacji (IRM)** wybierz opcję **Ogranicz uprawnienia do tej biblioteki podczas pobierania**, określ tytuł zasad dla administratorów i opisy zasad dla użytkowników, a następnie kliknij przycisk **POKAŻ OPCJE**.
+1.  Po skonfigurowaniu programu SharePoint do korzystania z usługi IRM przejdź do biblioteki programu SharePoint, która ma być chroniona za pomocą usługi Azure RMS. Na stronie witryny **Ustawienia** &gt; **Zarządzanie prawami do informacji (IRM)** wybierz opcję **Ogranicz uprawnienia do tej biblioteki podczas pobierania**, określ tytuł zasad dla administratorów i opisy zasad dla użytkowników, a następnie kliknij przycisk **POKAŻ OPCJE**.
 
 2.  Wybierz następujące opcje:
 
@@ -78,7 +78,7 @@ Przy użyciu następującego szablonu skopiuj i wklej powiadomienie do wiadomoś
 
 3.  Zastąp *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi sposobu kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny sieci Web, adres e-mail lub numer telefonu.
 
-4.  Wprowadź dodatkowe zmiany, które chcesz uwzględnić w tym powiadomieniu, a następnie wyślij go do odpowiednich użytkowników.
+4.  Wprowadź dodatkowe zmiany, które chcesz uwzględnić w tym powiadomieniu, a następnie wyślij je do odpowiednich użytkowników.
 
 W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dostosowanego powiadomienia, które zobaczą użytkownicy.
 
