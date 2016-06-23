@@ -269,7 +269,7 @@ W szablonach domyślnych zawarte są następujące prawa:
 
 ## Opcja Nie przekazuj dotycząca wiadomości e-mail
 
-Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają własną opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
+Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają jedną dodatkową opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
 
 Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego ta opcja nie jest widoczna w klasycznym portalu Azure podczas wyświetlania szablonów usług Azure RMS i zarządzania nimi. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
 

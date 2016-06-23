@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: work with encryption settings | Azure RMS
-description: This article orients you to our encryption packages
+title: Jak pracować z ustawieniami szyfrowania | Azure RMS
+description: Ten artykuł kieruje użytkowników do pakietów szyfrowania firmy Microsoft
 keywords:
 author: bruceperlerms
 manager: mbaldwin

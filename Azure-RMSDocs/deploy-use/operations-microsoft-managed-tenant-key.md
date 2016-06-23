@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -42,7 +42,7 @@ Ponowne tworzenie jest nazywane także wycofywaniem klucza. Klucza dzierżawy ni
 
 -   Uważasz, że zostało naruszone bezpieczeństwo kopii głównej klucza dzierżawy (będącej w Twoim posiadaniu).
 
-Klucz dzierżawy możesz utworzyć ponownie, kontaktując się z pomocą techniczną firmy Microsoft (CSS) i dowodząc swojej tożsamości jako administratora dzierżawy.
+Możesz ponownie utworzyć klucz dzierżawy, [kontaktując się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support) w celu otworzenia **sprawy pomocy technicznej usługi Azure Rights Management z żądaniem ponownego utworzenia klucza dzierżawy usługi Azure RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 Po ponownym utworzeniu klucza dzierżawy nowa zawartość jest chroniona przy użyciu nowego klucza dzierżawy. Następuje to etapowo, w związku z czym przez pewien czas część nowej zawartości będzie nadal chroniona przez stary klucz dzierżawy. Zawartość chroniona wcześniej jest nadal chroniona przez stary klucz dzierżawy. W celu obsługi tego scenariusza usługa Azure RMS zachowuje stary klucz dzierżawy, co pozwala na wydawanie licencji dla starszej zawartości.
 
@@ -54,7 +54,7 @@ Konfigurację i klucz dzierżawy usługi Azure RMS można wyeksportować, wykonu
 
 ### Krok 1. Zainicjowanie eksportu
 
--   W tym celu skontaktuj się z działem obsługi klienta firmy Microsoft, aby otworzyć **sprawę pomocy technicznej usługi Azure Rights Management z żądaniem eksportu klucza usługi Azure RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+-   W tym celu [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support), aby otworzyć **sprawę pomocy technicznej usługi Azure Rights Management z żądaniem eksportu klucza usługi Azure RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 ### Krok 2. Oczekiwanie na weryfikację
 
@@ -97,13 +97,13 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 
 |Opis zdarzenia|Prawdopodobna reakcja|
 |------------------------|-------------------|
-|Przeciek klucza dzierżawy.|Utwórz ponownie klucz dzierżawy Zobacz sekcja [Ponowne tworzenie klucza dzierżawy](operations-tenant-key.md#re-key-your-tenant-key) w tym artykule.|
+|Przeciek klucza dzierżawy.|Utwórz ponownie klucz dzierżawy Zobacz sekcję [Ponowne tworzenie klucza dzierżawy](operations-tenant-key#re-key-your-tenant-key) w tym artykule.|
 |Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Ponowne utworzenie klucza dzierżawy nie jest pomocne w tym przypadku, problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
 |Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza, lub też ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure RMS o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

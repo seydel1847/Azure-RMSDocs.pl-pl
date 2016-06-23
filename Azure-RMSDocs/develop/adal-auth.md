@@ -29,11 +29,11 @@ ms.suite: ems
 
 W tym temacie opisano czynności służące do skonfigurowania uwierzytelniania na podstawie biblioteki Azure ADAL.
 
-## Uwierzytelnianie wewnętrzne
+## Konfigurowanie uwierzytelniania platformy Azure
 
 Potrzebne są następujące elementy:
 
-- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/en-us/) (wystarczy bezpłatna wersja próbna):
+- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/en-us/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [Jak użytkownicy rejestrują się w usłudze RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/en-us/library/dn592127.aspx)).
 
 > [!NOTE] Zapytaj administratora IT, czy jest dostępna subskrypcja usługi Microsoft Azure Rights Management, i poproś go o wykonanie poniższych czynności. Jeśli organizacja nie ma subskrypcji, administrator IT powinien ją utworzyć. Ponadto administrator IT powinien uzyskać subskrypcję dla *konta służbowego*, a nie *konta Microsoft* (na przykład usługi Hotmail).

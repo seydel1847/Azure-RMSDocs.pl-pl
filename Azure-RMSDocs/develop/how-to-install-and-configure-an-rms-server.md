@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: install, configure and test with an RMS server | Azure RMS
-description: Install and configure and RMS Sever for testing your rights-enabled application.
+title: Jak zainstalować i skonfigurować serwer usługi RMS oraz używać go do testowania | Azure RMS
+description: Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -66,7 +65,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     Aby przeprowadzić testy za pomocą serwera usługi RMS, skonfiguruj odnajdywanie po stronie serwera lub klienta w celu umożliwienia klientowi Rights Management Service Client 2.1 odnajdywania serwera usługi RMS i nawiązywania z nią komunikacji.
 
-    >![UWAGA] Testowanie za pomocą usługi Azure RMS nie wymaga konfiguracji odnajdywania.
+    > [!Note] Testowanie za pomocą usługi Azure RMS nie wymaga konfiguracji odnajdywania.
 
   - W przypadku odnajdywania po stronie serwera administrator rejestruje punkt połączenia usługi (SCP) dla klastra głównego usługi RMS w usłudze Active Directory, a klient wysyła do usługi Active Directory zapytanie w celu odnalezienia punktu SCP i nawiązania połączenia z serwerem.
   - W przypadku odnajdywania po stronie klienta ustawienia odnajdywania usługi RMS są konfigurowane w rejestrze na komputerze, na którym uruchomiono klienta RMS Client 2.1. Ustawienia te wskazują klienta RMS Client 2.1, którego powinien użyć serwer usługi RMS. Jeśli ustawienia są obecne, nie jest przeprowadzane odnajdywanie po stronie serwera.

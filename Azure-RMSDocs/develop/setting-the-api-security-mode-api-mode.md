@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: set the API security mode | Azure RMS
-description: Choose which security mode your File API application runs.
+title: Jak ustawić tryb zabezpieczeń interfejsu API | Azure RMS
+description: Wybierz tryb zabezpieczeń, w którym aplikacja interfejsu API plików jest uruchamiana.
 keywords:
 author: bruceperlerms
 manager: mbaldwin

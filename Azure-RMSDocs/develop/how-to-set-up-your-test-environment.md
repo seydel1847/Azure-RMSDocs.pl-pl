@@ -34,7 +34,7 @@ Ten temat zawiera instrukcje dotyczące konfigurowania aplikacji na potrzeby tes
 
 Możesz przeprowadzić test za pomocą usługi Azure RMS lub serwera usługi RMS w systemie Windows Server. Zalecamy rozpoczęcie testowania od usługi Azure RMS, a następnie przeprowadzenie testu przy użyciu serwera usługi RMS, jeśli wymaga tego wdrożenie.
 
-1. Aby uzyskać informacje na temat testowania za pomocą usługi Azure RMS, zobacz [How-to: use ADAL authentication](how-to-use-adal-authentication,md) (Instrukcje: korzystanie z uwierzytelniania ADAL).
+1. Aby uzyskać informacje na temat testowania za pomocą usługi Azure RMS, zobacz [Instrukcje: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md).
 2. Aby uzyskać informacje na temat testowania za pomocą serwera usługi RMS, zobacz [How-to: install and configure an RMS server](how-to-install-and-configure-an-rms-server.md) (Instrukcje: instalowanie i konfigurowanie serwera usługi RMS).
 3. Poniżej opisano sposób instalowania środowiska uruchomieniowego dla deweloperów.
 

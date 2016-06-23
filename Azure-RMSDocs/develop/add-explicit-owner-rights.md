@@ -1,9 +1,8 @@
 ---
 # required metadata
 
-title:
-How-to: add explicit owner rights | Azure RMS
-description: Your application should explicitly add "Owner" rights when creating a license from scratch.
+title: Jak dodać jawne prawa właściciela | Azure RMS
+description: W przypadku tworzenia licencji od podstaw w aplikacji należy jawnie dodać prawa właściciela.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-# Porada: dodawanie jawnych praw właściciela
+# Instrukcje: dodawanie jawnych praw właściciela
 
 W przypadku tworzenia licencji od podstaw (przy użyciu funkcji [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) w aplikacji należy jawnie dodać prawa „właściciela”.
 
