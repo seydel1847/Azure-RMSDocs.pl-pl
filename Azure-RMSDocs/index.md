@@ -21,7 +21,7 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <section id="hero-content">
       <h1>Dokumentacja dotycząca usługi Azure Rights Management</h1>
       <h2>Informacje o wdrażaniu usługi Azure Rights Management (Azure RMS) i zarządzaniu nią. Szybko rozpocznij korzystanie z usługi Rights Management w celu ochrony informacji zawartych w wiadomościach e-mail, dokumentach i innych poufnych danych.</h2>
-      <h3>Jesteś nowym użytkownikiem usługi Azure RMS? <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">Odwiedź naszą witrynę produktu &rarr;</a></h3>
+      <h3>Jesteś nowym użytkownikiem usługi Azure RMS? <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">Odwiedź naszą witrynę produktu &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Możemy zaczynać?</p>
@@ -224,6 +224,6 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
