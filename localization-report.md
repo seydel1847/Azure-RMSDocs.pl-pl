@@ -710,8 +710,8 @@
 * Archive Datetime: 2016-06-02 03:27:47
 * Handback File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
 * Handback Datetime: 2016-06-30 14:56:14
-* Bilingual File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/03b4593308d7e4e7c8b46306c1a628d405c64338/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-16 10:24:16
+* Bilingual File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-30 15:01:21
 * [Back to Top](#report-top)
 
 ##### <a name='d67caf4ebbe19e4f67061d006da1fdedea0d576120'></a> Source: [Azure-RMSDocs\deploy-use\create-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6a2989f4a6d919d9a2a3d301467353f052bd10ea/Azure-RMSDocs/deploy-use/create-template.md)
@@ -942,8 +942,8 @@
 * Archive Datetime: 2016-06-02 03:27:47
 * Handback File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
 * Handback Datetime: 2016-06-30 14:56:14
-* Bilingual File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/03b4593308d7e4e7c8b46306c1a628d405c64338/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-16 10:24:16
+* Bilingual File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-30 15:01:21
 * [Back to Top](#report-top)
 
 ##### <a name='ff90f009f9fda90171bbeeb2a7bb421376d4695c36'></a> Source: [Azure-RMSDocs\deploy-use\rms-connector-registry-settings.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/rms-connector-registry-settings.md)
