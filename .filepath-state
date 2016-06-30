@@ -458,9 +458,6 @@
   "87d712bbda11a4cfdfb2f3b3e9a549bca977afd6": [
     "Azure-RMSDocs\\deploy-use\\copy-template.md"
   ],
-  "b1f449381c3ece50d8f1878fc93f949e7f000c12": [
-    "Azure-RMSDocs\\deploy-use\\copy-template.md"
-  ],
   "d67caf4ebbe19e4f67061d006da1fdedea0d5761": [
     "Azure-RMSDocs\\deploy-use\\create-template.md"
   ],
@@ -510,9 +507,6 @@
     "Azure-RMSDocs\\deploy-use\\refresh-templates.md"
   ],
   "f0e958c0fbae8dcf74761481c646c7aa837d5ebb": [
-    "Azure-RMSDocs\\deploy-use\\remove-template.md"
-  ],
-  "9ec36df45b128fdac6deec3a4f43e1fc77e501a0": [
     "Azure-RMSDocs\\deploy-use\\remove-template.md"
   ],
   "ff90f009f9fda90171bbeeb2a7bb421376d4695c": [

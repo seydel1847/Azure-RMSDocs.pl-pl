@@ -1,11 +1,43 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/copy-template.md) | InSyncHandedBackSuccess | [Details](#87d712bbda11a4cfdfb2f3b3e9a549bca977afd619)
+ [Azure-RMSDocs\deploy-use\remove-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/remove-template.md) | InSyncHandedBackSuccess | [Details](#f0e958c0fbae8dcf74761481c646c7aa837d5ebb35)
 
 ## Item Details
+##### <a name='87d712bbda11a4cfdfb2f3b3e9a549bca977afd619'></a> Source: [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/copy-template.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\copy-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/f7053560ee4039edf0d57080503acdc8ea5420b7/Azure-RMSDocs/deploy-use/copy-template.md)
+* Handoff File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/8519218b4612022bb8058a3eb7e7361431aa8221/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
+* Handoff Datetime: 2016-05-20 21:21:24
+* Handoff Reason: Include
+* Archive File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/3a9d443ad7982547817ce7a706dc3799890700b3/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
+* Archive Datetime: 2016-06-02 03:27:47
+* Handback File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
+* Handback Datetime: 2016-06-30 14:56:14
+* Bilingual File: [copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/03b4593308d7e4e7c8b46306c1a628d405c64338/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/copy-template.81a6d4f8bac93ff850fe1e688d2a2575eb04089b.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-16 10:24:16
+* [Back to Top](#report-top)
+
+##### <a name='f0e958c0fbae8dcf74761481c646c7aa837d5ebb35'></a> Source: [Azure-RMSDocs\deploy-use\remove-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/remove-template.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\remove-template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/f7053560ee4039edf0d57080503acdc8ea5420b7/Azure-RMSDocs/deploy-use/remove-template.md)
+* Handoff File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/8519218b4612022bb8058a3eb7e7361431aa8221/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
+* Handoff Datetime: 2016-05-20 21:21:24
+* Handoff Reason: Include
+* Archive File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/3a9d443ad7982547817ce7a706dc3799890700b3/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/archive/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
+* Archive Datetime: 2016-06-02 03:27:47
+* Handback File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/5736ddfa8e1fb66ff304604f6dee5f36f9ddb290/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
+* Handback Datetime: 2016-06-30 14:56:14
+* Bilingual File: [remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/03b4593308d7e4e7c8b46306c1a628d405c64338/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/remove-template.2c43b5b6f1e18e13499d659668c26cf2188f0718.pl-pl.xlf)
+* Bilingual Datetime: 2016-06-16 10:24:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
