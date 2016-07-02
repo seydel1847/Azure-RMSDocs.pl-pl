@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server | Azure RMS
-description:
-keywords:
+title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ Ten artykuł zawiera skrypt umożliwiający użycie klienta Rights Management (R
 
 To rozwiązanie pozwala automatycznie chronić pliki w folderze na serwerze plików z systemem Windows Server lub pliki, które spełniają określone kryteria. Na przykład pliki, które zostały sklasyfikowane jako zawierające informacje poufne lub szczególnie chronione. To rozwiązanie wymaga usług Azure Rights Management (Azure RMS), aby chronić pliki, więc konieczne jest wdrożenie tej technologii w organizacji.
 
-> [!NOTE] Usługa Azure RMS obejmuje [łącznik](../deploy-use/deploy-rms-connector.md), który obsługuje infrastrukturę klasyfikacji plików, jednak rozwiązanie obsługuje wyłącznie ochronę natywną, np. plików pakietu Office.
+> [!NOTE]
+> Mimo że usługi Azure RMS obejmują [łącznik](../deploy-use/deploy-rms-connector.md), który obsługuje infrastrukturę klasyfikacji plików, to rozwiązanie obsługuje wyłącznie ochronę natywną, np. plików pakietu Office.
 > 
 > Aby obsługiwać wszystkie typy plików za pomocą infrastruktury klasyfikacji plików, należy użyć modułu **ochrony usług RMS** programu Windows PowerShell, zgodnie z opisem w tym artykule. Polecenia cmdlet modułu ochrony usług RMS, takie jak aplikacja do udostępniania usług RMS, obsługują zarówno ochronę ogólną, jak i natywną, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziomy ochrony — natywny i ogólny](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
@@ -278,7 +273,8 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] Wskazówki dotyczące rozwiązywania problemów:
+    > [!TIP]
+    > Wskazówki dotyczące rozwiązywania problemów:
     > 
     > -   Jeśli raport zawiera wartość **0** zamiast liczby plików w folderze, oznacza to, że skrypt nie został uruchomiony. Po pierwsze sprawdź sam skrypt przez załadowanie go w środowisku Windows PowerShell ISE, aby zweryfikować jego zawartość, a następnie spróbuj go uruchomić, aby zobaczyć, czy zostaną wyświetlone błędy. Jeśli nie zostaną określone argumenty, skrypt podejmie próbę nawiązania połączenia z usługami Azure RMS i wykonania uwierzytelnienia za ich pomocą.
     > 
@@ -306,6 +302,7 @@ Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzys
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

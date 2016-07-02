@@ -24,6 +24,6 @@
 # [Tworzenie i dostosowywanie aplikacji](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO5-->
+<!--HONumber=Jun16_HO4-->
 
 

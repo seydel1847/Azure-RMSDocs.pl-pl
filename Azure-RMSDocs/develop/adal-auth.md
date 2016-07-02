@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL | Azure RMS
-description: Zawiera opis czynności służących do konfigurowania uwierzytelniania na podstawie biblioteki Azure ADAL
+title: "Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL | Azure RMS"
+description: "Zawiera opis czynności służących do konfigurowania uwierzytelniania na podstawie biblioteki Azure ADAL"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ Potrzebne są następujące elementy:
 - [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/en-us/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [Jak użytkownicy rejestrują się w usłudze RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/en-us/library/dn592127.aspx)).
 
-> [!NOTE] Zapytaj administratora IT, czy jest dostępna subskrypcja usługi Microsoft Azure Rights Management, i poproś go o wykonanie poniższych czynności. Jeśli organizacja nie ma subskrypcji, administrator IT powinien ją utworzyć. Ponadto administrator IT powinien uzyskać subskrypcję dla *konta służbowego*, a nie *konta Microsoft* (na przykład usługi Hotmail).
+> [!NOTE] 
+> Zapytaj administratora IT, czy jest dostępna subskrypcja usługi Microsoft Azure Rights Management, i poproś go o wykonanie poniższych czynności. Jeśli organizacja nie ma subskrypcji, administrator IT powinien ją utworzyć. Ponadto administrator IT powinien uzyskać subskrypcję dla *konta służbowego*, a nie *konta Microsoft* (na przykład usługi Hotmail).
 
 Po zarejestrowaniu się w usłudze Microsoft Azure:
 
@@ -81,11 +77,13 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 ![Wybierz opcję KONFIGURUJ](../media/ConfigYourApp.png)
 
->[!NOTE] Skopiuj **IDENTYFIKATOR KLIENTA** i **IDENTYFIKATOR URI PRZEKIEROWANIA** i zapisz je do użycia w przyszłości podczas konfigurowania klienta usługi RMS.
+>[!NOTE] 
+> Skopiuj **IDENTYFIKATOR KLIENTA** i **IDENTYFIKATOR URI PRZEKIEROWANIA** i zapisz je do użycia w przyszłości podczas konfigurowania klienta usługi RMS.
 
 - Przejdź do dolnej części obszaru ustawień aplikacji i kliknij przycisk **Dodaj aplikację** w obszarze **uprawnień dotyczących innych aplikacji**.
 
->[!NOTE] **Delegowane uprawnienia** wyświetlone dla usługi Microsoft Azure Active Directory są poprawne domyślnie — należy wybrać tylko jedną opcję — **Loguj się i odczytuj profil użytkownika**.
+>[!NOTE] 
+> **Delegowane uprawnienia** wyświetlone dla usługi Microsoft Azure Active Directory są poprawne domyślnie — należy wybrać tylko jedną opcję — **Loguj się i odczytuj profil użytkownika**.
 
 ![Wybierz opcję Dodaj aplikację](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 ![Wybierz opcję ZAPISZ](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

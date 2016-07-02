@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Informacje o wersji | Usługa Azure RMS
-description:
-keywords:
+title: "Informacje o wersji | Usługa Azure RMS"
+description: 
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+
 
 ---
 
@@ -30,7 +26,8 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 ## Nowość w lutym 2016 r. — aktualizacja dokumentacji zestawu SDK
 
->[!Note]  Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
+>[!Note]
+> Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
 
 - **Ulepszony przepływ uwierzytelniania** — przy użyciu metody uwierzytelniania opartej na tokenie protokołu OAuth2 za pośrednictwem [biblioteki Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](how-to-use-adal-authentication.md).
 
@@ -180,6 +177,7 @@ Jeśli nie będzie można pobrać nazwy ani opisu, zostanie zwrócony błąd. Mo
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

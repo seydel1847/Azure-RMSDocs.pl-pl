@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Przegląd techniczny aplikacji do udostępniania usługi Rights Management | Azure RMS
-description:
-keywords:
+title: "Przegląd techniczny aplikacji do udostępniania usługi Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ Ponadto w przypadku natywnej ochrony pliku programu Word, Excel lub PowerPoint w
 
 W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pliku w każdej sytuacji zostaje zmienione na pfile.
 
-> [!WARNING] Jeśli korzystasz z zapory, internetowego serwera proxy lub oprogramowania zabezpieczającego, które sprawdza pliki i podejmuje odpowiednie działania w zależności od rozszerzenia nazwy pliku, może zaistnieć konieczność zmiany konfiguracji tych zasobów w celu zapewnienia obsługi nowych rozszerzeń nazw plików.
+> [!WARNING]
+> Jeśli korzystasz z zapory, internetowego serwera proxy lub oprogramowania zabezpieczającego, które sprawdza pliki i podejmuje odpowiednie działania w zależności od rozszerzenia nazwy pliku, może zaistnieć konieczność zmiany konfiguracji tych zasobów w celu zapewnienia obsługi nowych rozszerzeń.
 
 |Oryginalne rozszerzenie nazwy pliku|Rozszerzenie nazwy pliku chronionego przez usługi RMS|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

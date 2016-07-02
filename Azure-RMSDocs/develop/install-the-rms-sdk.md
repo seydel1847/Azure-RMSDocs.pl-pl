@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Instalowanie zestawu SDK | Azure RMS
-description: W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
-keywords:
+title: Instalacja zestawu SDK | Azure RMS
+description: "W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,21 +10,19 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: 839094716fa39957fbcbcdc4812d99fd742e4393
+
 
 ---
 
 # Instalacja zestawu SDK
 
-W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
+Ten temat opisuje instalację narzędzi deweloperskich.
 
 ## Instrukcje
 
@@ -37,9 +33,9 @@ W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
 
     **...\\setup\_sdk.exe**
 
-    Plik Setup\_sdk.exe pozwala zainstalować zarówno zestaw RMS SDK 2.1, jak i klienta Active Directory Rights Management Services Client 2.1.
+    Plik Setup\_sdk.exe pozwala zainstalować zarówno zestaw RMS SDK 2.1, jak i klienta usług zarządzania prawami dostępu w usłudze Active Directory w wersji 2.1.
 
-Aby uzyskać więcej informacji na temat plików instalowanych w systemie przez program setup\_sdk.exe, zobacz [Pliki środowiska deweloperskiego](sdk-elements.md).
+Aby uzyskać więcej informacji na temat plików instalowanych w systemie przez program „setup\_sdk.exe”, zobacz [Pliki środowiska programistycznego](sdk-elements.md)
 
 ## Tematy pokrewne
 
@@ -49,6 +45,7 @@ Aby uzyskać więcej informacji na temat plików instalowanych w systemie przez 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
