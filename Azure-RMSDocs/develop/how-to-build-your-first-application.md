@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: IPCHelloWorld — przykładowa aplikacja | Azure RMS
-description: Ten temat zawiera instrukcje dotyczące tworzenia przykładowej aplikacji obsługującej prawa.
-keywords:
+title: "IPCHelloWorld — przykładowa aplikacja | Azure RMS"
+description: "Ten temat zawiera instrukcje dotyczące tworzenia przykładowej aplikacji obsługującej prawa."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** Zawartość tego zestawu SDK jest nieaktualna. Tymczasem należy korzystać z [bieżącej wersji](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx) dokumentacji w witrynie MSDN. **
@@ -55,7 +51,7 @@ Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywoła�
 
 ## Wyliczanie szablonów
 
-Szablon RMS definiuje zasady stosowane do ochrony danych, czyli definiuje użytkowników, którzy mogą uzyskiwać dostęp do danych i ich prawa. Szablony usługi RMS są instalowane na serwerze RMS.
+Szablon usług RMS definiuje zasady stosowane do ochrony danych, czyli definiuje użytkowników, którzy mogą uzyskiwać dostęp do danych, i ich prawa. Szablony usług RMS są instalowane na serwerze usług RMS.
 
 Następujący fragment kodu wylicza dostępne szablony usługi RMS z domyślnego serwera usługi RMS.
 
@@ -147,7 +143,7 @@ Teraz przydziel pamięć dla zaszyfrowanych danych.
     }
 
 
-Na koniec możesz przeprowadzić samo szyfrowanie.
+Na koniec możesz przeprowadzić właściwe szyfrowanie.
 
 
 
@@ -222,6 +218,7 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

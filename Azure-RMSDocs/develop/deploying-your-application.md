@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Wdrażanie aplikacji | Azure RMS
-description: Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw i przeprowadza Cię przez ten proces
-keywords:
+title: "Wdrażanie aplikacji | Azure RMS"
+description: "Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw i przeprowadza Cię przez ten proces"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: 902721ae3e69afd144c552b8ee0a916958e80afc
+
 
 ---
 
@@ -84,7 +80,8 @@ Klient RMS Client 2.1 to oprogramowanie przeznaczone dla komputerów klienckich
 Klient RMS Client 2.1 nie jest składnikiem systemu operacyjnego Windows. Klient RMS Client 2.1 jest dostarczany w formie pliku do opcjonalnego pobrania i może być (po potwierdzeniu i zaakceptowaniu umowy licencyjnej) dystrybuowany za darmo razem z aplikacjami innych firm, aby umożliwić klientom dostęp do zawartości, do której prawa dostępu są chronione przez użycie i wdrożenie serwerów usług RMS w danym środowisku.
 
 
-> [!IMPORTANT] Klient AD RMS Client 2.1 jest powiązany z architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
+> [!IMPORTANT]
+> Klient AD RMS Client 2.1 jest powiązany z architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
 
 
 ## Opcje instalacji klienta RMS Client 2.1
@@ -137,6 +134,7 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

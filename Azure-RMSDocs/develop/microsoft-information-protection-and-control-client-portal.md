@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Rights Management Services SDK 2.1 | Azure RMS
-description: Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usługi RMS lub Azure RMS w celu zapewnienia ochrony informacji.
-keywords:
+description: "Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usługi RMS lub Azure RMS w celu zapewnienia ochrony informacji."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+
 
 ---
 
@@ -45,10 +41,8 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
 |Temat|Opis|
 |-----|--------|
 |[Przegląd](ad-rms-overview.md)|Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.|
-|[Zalety tego zestawu SDK](differences-between-ad-rms-and-ad-rms-2-0.md)|W zestawie RMS SDK 2.1 wprowadzono znaczące ulepszenia względem oryginalnego zestawu Rights Management Services SDK.|
 |[Wprowadzenie](getting-started-with-ad-rms-2-0.md)|Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.|
 |[Informacje o wersji](release-notes-rtm.md)|Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.|
-|[Przykłady kodu](samples.md)|Ten temat zawiera kilka przykładów kodu, dostępnych w Centrum pobierania MSDN, w których jest używany zestaw RMS SDK 2.1.|
 |[Uwagi dla deweloperów](developer-notes.md)|W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy opracowywania.|
 |[Dokumentacja interfejsu API](api-reference-2-1.md)|Tematy w tej sekcji zawierają materiały referencyjne dotyczące wszystkich elementów interfejsu API.|
 
@@ -64,6 +58,7 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 
