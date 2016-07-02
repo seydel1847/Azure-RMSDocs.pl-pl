@@ -27,6 +27,6 @@ Teraz możesz już chronić swoje pliki zawierające informacje, które chcesz u
 |Różnice między ochroną natywną i ogólną →|[Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

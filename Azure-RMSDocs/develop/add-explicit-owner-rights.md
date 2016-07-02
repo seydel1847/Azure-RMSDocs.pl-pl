@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Jak dodać jawne prawa właściciela | Azure RMS
-description: W przypadku tworzenia licencji od podstaw w aplikacji należy jawnie dodać prawa właściciela.
-keywords:
+title: "Jak dodać jawne prawa właściciela | Azure RMS"
+description: "W przypadku tworzenia licencji od podstaw w aplikacji należy jawnie dodać prawa właściciela."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ W przypadku tworzenia licencji od podstaw (przy użyciu funkcji [**IpcCreateLice
 
 Gdy aplikacja tworzy dojście licencji przy użyciu funkcji [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), musi również jawnie przyznać pełne prawa (uprawnienia) właściciela.
 
->[!NOTE] Ustawienie użytkownika jako „właściciela” przy użyciu funkcji [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) **IPC\_LI\_OWNER** nie powoduje przyznania pełnych uprawnień właściciela.
+>[!NOTE] 
+> Ustawienie użytkownika jako „właściciela” przy użyciu funkcji [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) **IPC\_LI\_OWNER** nie powoduje przyznania pełnych uprawnień właściciela.
 
 Ten przykładowy kod przedstawia tylko kroki związane z tworzeniem i dodawaniem określonych praw do danej licencji.
 
@@ -118,6 +115,7 @@ Następujące dwa uprawnienia są dodawane do tych użytkowników:
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

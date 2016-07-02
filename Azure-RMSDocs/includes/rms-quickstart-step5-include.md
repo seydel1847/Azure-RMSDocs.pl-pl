@@ -40,6 +40,6 @@ Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS, użyj [planu wdroż
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

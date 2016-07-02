@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Przewodnik dewelopera | Azure RMS
-description: Omówienie narzędzi dla deweloperów, zestawów SDK, dodatkowych bibliotek i przykładów kodu.
-keywords:
+description: "Omówienie narzędzi dla deweloperów, zestawów SDK, dodatkowych bibliotek i przykładów kodu."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+
 
 ---
 
@@ -34,10 +29,10 @@ Obecnie dostępne są trzy generacje zestawów SDK usługi RMS, opisane w poniż
 
 | Zestaw SDK | Opis |
 |------|---------|
-| [Zestaw SDK 4.2 usługi RMS](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Uproszczony zestaw narzędzi nowej generacji, zapewniający lekkie środowisko programistyczne dostarczające aplikacjom dla urządzeń z systemami Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++ zabezpieczenia informacji za pośrednictwem usług Microsoft Rights Management |
-| [Zestaw SDK 2.1 usługi RMS](microsoft-information-protection-and-control-client-portal.md) | Zaawansowany zestaw SDK dla twórców aplikacji komputerowych dla systemu Windows i rozwiązań serwerowy, umożliwiający wprowadzenie w produktach zarządzania prawami|
-|[Zestaw SDK usługi AD RMS](https://msdn.microsoft.com/en-us/library/cc530379(v=vs.85).aspx)|** UWAGA ** — zestaw SDK usługi AD RMS wykorzystujący funkcje udostępniane przez klienta w bibliotece Msdrm.dll jest dostępny do użytku w systemach Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 i Windows Vista. Może on zostać zmieniony lub przestać być dostępny w kolejnych wersjach. Zamiast tego należy korzystać z zestawu SDK 2.1 Usług Microsoft Rights Management korzystającego z funkcji udostępnianych przez klienta w bibliotece Msipc.dll.|
-|[Interfejs API obsługi skryptów usługi AD RMS](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| Służy do tworzenia skryptów administrujących instalacją usługi AD RMS|
+| [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Uproszczony zestaw narzędzi nowej generacji, zapewniający lekkie środowisko programistyczne dostarczające aplikacjom dla urządzeń z systemami Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++ zabezpieczenia informacji za pośrednictwem usług Microsoft Rights Management |
+| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Zaawansowany zestaw SDK dla twórców aplikacji komputerowych dla systemu Windows i rozwiązań serwerowych, umożliwiający wprowadzenie w produktach zarządzania prawami|
+|[Zestaw AD RMS SDK](https://msdn.microsoft.com/library/cc530379(v=vs.85).aspx)|** UWAGA ** — zestaw AD RMS SDK wykorzystujący funkcje udostępniane przez klienta w bibliotece Msdrm.dll jest dostępny do użytku w systemach Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 i Windows Vista. Może on zostać zmieniony lub przestać być dostępny w kolejnych wersjach. Zamiast tego należy używać zestawu Microsoft Rights Management Services SDK 2.1 korzystającego z funkcji udostępnianych przez klienta w bibliotece Msipc.dll.|
+|[Interfejs API obsługi skryptów usług AD RMS](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| Służy do tworzenia skryptów administrujących instalacją usług AD RMS|
 
 ## Przykłady kodu i narzędzia
 Ta kolekcja przykładów kodu usługi RMS i narzędzi wspierających twórców dostarczonych przez firmę Microsoft obejmuje wszystkie obsługiwane systemy operacyjne: Android, iOS/OS X, Windows Phone i Windows Desktop. Jest okresowo aktualizowana w celu zapewnienia zgodności z obsługiwanym zestawem SDK.
@@ -77,6 +72,7 @@ Poniższe elementy działają w systemie Windows Desktop obsługiwanym przez zes
 - [Przykładowa aplikacja](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) — przykład dla zestawu SDK 4.1 usługi Microsoft RMS dla aplikacji ze Sklepu Windows zawiera przykład podstawowego wykorzystania dokumentów dla platformy.
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

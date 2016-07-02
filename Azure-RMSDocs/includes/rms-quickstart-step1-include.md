@@ -55,6 +55,6 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 |Informacje na temat szablonów domyślnych i tworzenia nowych szablonów niestandardowych →|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

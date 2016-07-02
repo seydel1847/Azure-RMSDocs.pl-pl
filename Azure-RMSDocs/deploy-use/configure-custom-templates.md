@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e72b68c03ee7da58adaff96f3f4611a227214b0
+ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *Dotyczy usług: Azure Rights Management, Office 365*
 
-Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) użytkownicy automatycznie otrzymują możliwość skorzystania z dwóch domyślnych szablonów ułatwiających stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
+Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów, które ułatwiają stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
 
 -   Wyświetlanie chronionej zawartości w trybie tylko do odczytu
 
@@ -72,6 +66,7 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

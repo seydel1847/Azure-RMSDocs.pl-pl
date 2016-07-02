@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
+ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+
 
 ---
 
@@ -83,7 +77,8 @@ Wady:
 
 ---
 
-> [!IMPORTANT] W obu przypadkach należy ręcznie zainstalować wszystkie wstępnie wymagane składniki oraz skonfigurować programy Exchange i SharePoint, a także infrastrukturę klasyfikacji plików, aby korzystać z usługi Rights Management.
+> [!IMPORTANT]
+> W obu przypadkach należy ręcznie zainstalować wszystkie wymagania wstępne oraz skonfigurować programy Exchange i SharePoint, a także infrastrukturę klasyfikacji plików, aby korzystać z usługi Rights Management.
 
 W przypadku większości organizacji konfiguracja automatyczna za pomocą narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS będzie lepszym rozwiązaniem, ponieważ zapewnia większą wydajność i niezawodność niż konfiguracja ręczna.
 
@@ -114,7 +109,8 @@ Po wprowadzeniu zmian konfiguracji na tych serwerach należy uruchomić je ponow
 
 Aby uruchomić skrypt, wprowadź adres URL łącznika usługi RMS danej organizacji. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład https://connector.contoso.com. Narzędzie będzie używać tego adresu URL do kontaktowania się z serwerami, na których działa łącznik usługi RMS, i pozyskiwania innych parametrów potrzebnych do tworzenia wymaganych konfiguracji.
 
-> [!IMPORTANT] Przy uruchamianiu tego narzędzia upewnij się, że podajesz nazwę łącznika usługi RMS ze zrównoważonym obciążeniem w danej organizacji, a nie nazwę pojedynczego serwera, na którym działa usługa łącznika usługi RMS.
+> [!IMPORTANT]
+> Przy uruchamianiu tego narzędzia upewnij się, że podajesz nazwę łącznika usługi RMS ze zrównoważonym obciążeniem w danej organizacji, a nie nazwę pojedynczego serwera, na którym działa usługa łącznika usługi RMS.
 
 Aby uzyskać szczegółowe informacje dla każdego typu usług, skorzystaj z następujących tematów:
 
@@ -188,7 +184,8 @@ W celu korzystania z łącznika usługi RMS te serwery programu SharePoint musz�
 
 Serwer z działającym programem SharePoint 2016 lub SharePoint 2013 musi mieć również uruchomioną wersję klienta MSIPC 2.1, która jest zgodna z łącznikiem usługi RMS. Aby upewnić się, że masz obsługiwaną wersję, pobierz najnowszego klienta z [Centrum pobierania Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
 
-> [!WARNING] Istnieje wiele wersji klienta MSIPC 2.1, dlatego upewnij się, że została zainstalowana wersja 1.0.2004.0 lub nowsza.
+> [!WARNING]
+> Istnieje wiele wersji klienta MSIPC 2.1, dlatego upewnij się, że została zainstalowana wersja 1.0.2004.0 lub nowsza.
 >
 > Wersję klienta można sprawdzić, odczytując numer wersji pliku MSIPC.dll, który znajduje się w folderze **\Program Files\Active Directory Rights Management Services Client 2.1**. Okno dialogowe właściwości zawiera numer wersji klienta MSIPC 2.1.
 
@@ -252,6 +249,7 @@ Możesz użyć [planu wdrożenia usługi Azure Rights Management](../plan-design
 Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi Azure Rights Management](monitor-rms-connector.md). 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
