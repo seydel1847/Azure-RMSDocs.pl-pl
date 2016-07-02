@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure RMS
-description:
-keywords:
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/30/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
+ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+
 
 ---
 
@@ -64,9 +58,10 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
         3.  Wybierz katalog, aby zarządzać usługą Rights Management.
 
-        4.  Jeśli usługa Rights Management nie została jeszcze aktywowana, kliknij opcję **AKTYWUJ** i potwierdź wybór.
+        4.  Jeśli usługa Rights Management nie została jeszcze aktywowana, należy kliknąć opcję **AKTYWUJ** i potwierdzić wybór.
 
-            > [!NOTE] Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
+            > [!NOTE]
+            > Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
 
 2.  Tworzenie szablonu:
 
@@ -169,6 +164,7 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 ## Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

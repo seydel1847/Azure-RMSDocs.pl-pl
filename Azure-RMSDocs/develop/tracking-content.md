@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Jak włączyć śledzenie i odwoływanie dokumentów | Azure RMS
-description: Podstawowe wskazówki dotyczące implementowania śledzenia dokumentów
-keywords:
+title: "Jak włączyć śledzenie i odwoływanie dokumentów | Azure RMS"
+description: "Podstawowe wskazówki dotyczące implementowania śledzenia dokumentów"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: aa4b1b0aee246b32d5214e2587ac5d291a682fe7
+ms.openlocfilehash: 61f70a7b4a85c0ab6f0a2732fcf9d314a230e769
+
 
 ---
 <<<<<<< HEAD
@@ -170,6 +166,7 @@ Klient musi otworzyć odpowiedni adres URL w przeglądarce. Uwierzytelnianie i p
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

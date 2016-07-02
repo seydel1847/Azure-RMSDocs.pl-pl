@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure RMS
-description:
-keywords:
+title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: cb028afcbfd9b59f134539c434f4f49efc5e9092
+
 
 ---
 
@@ -80,7 +74,7 @@ Przy użyciu następującego szablonu skopiuj i wklej powiadomienie do wiadomoś
 
 4.  Wprowadź dodatkowe zmiany, które chcesz uwzględnić w tym powiadomieniu, a następnie wyślij je do odpowiednich użytkowników.
 
-W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dostosowanego powiadomienia, które zobaczą użytkownicy.
+W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
@@ -107,10 +101,11 @@ Nie można przekazywać do witryny Prognozy i raporty dotyczące sprzedaży doku
 
 **Potrzebujesz pomocy?**
 
--   Skontaktuj się z działem pomocy technicznej: helpdesk@vanarsdelltd.com
+-   Skontaktuj się z działem pomocy technicznej: pomoc_techniczna@vanarsdelltd.com
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
