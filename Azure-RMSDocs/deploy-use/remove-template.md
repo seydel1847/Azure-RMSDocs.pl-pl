@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
 ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
 
@@ -41,6 +42,6 @@ Status zmieni się z **Opublikowany** na **Zarchiwizowany**. Jeśli zmienisz zda
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO5-->
 
 

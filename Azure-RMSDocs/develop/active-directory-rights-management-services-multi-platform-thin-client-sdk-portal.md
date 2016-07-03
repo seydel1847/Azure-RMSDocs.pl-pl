@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Zestaw Microsoft Rights Management SDK 4.2 | Azure RMS
-description: Zestaw RMS SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z ochroną informacji.
-keywords:
+description: "Zestaw RMS SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z ochroną informacji."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf22d0b3c574ff1472df8428f6a39c359e0e95e1
+ms.openlocfilehash: be2774ba361c478fa20faa1490bb4e5ead90b8af
+
 
 ---
 
@@ -61,6 +57,7 @@ Zestaw MS RMS SDK 4.2 jest dostępny dla następujących systemów operacyjnych:
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
