@@ -17,6 +17,6 @@ Do ukończenia tego samouczka będą potrzebne następujące elementy:
 Zaczynamy!
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
