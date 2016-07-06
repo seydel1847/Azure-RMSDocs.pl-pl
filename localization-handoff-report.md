@@ -1,11 +1,49 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/982021a2e972023b04e6483348a7c27aa029e198/Azure-RMSDocs/develop/deploying-your-application.md) | OutofSyncHandedBackSuccess | [Details](#8308e2db84e13c6b8c85a1a3ae6c01fc0aabee7558)
+ [Azure-RMSDocs\develop\developing-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cb1a4dfa4465e8f4798866c95d8965eec1b68f6b/Azure-RMSDocs/develop/developing-your-application.md) | OutofSyncHandedBackSuccess | [Details](#5dcb3fe88cced7945591a08c492b32bdc889516261)
 
 ## Item Details
+##### <a name='8308e2db84e13c6b8c85a1a3ae6c01fc0aabee7558'></a> Source: [Azure-RMSDocs\develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/982021a2e972023b04e6483348a7c27aa029e198/Azure-RMSDocs/develop/deploying-your-application.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/cfa70ffe0fd2efa15fe00bdec878870e546c7be9/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf)
+* Handoff Datetime: 2016-07-06 17:36:34
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\develop\deploying-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/dac057962c8005bb482f38bd4b296321e9e4835e/Azure-RMSDocs/develop/deploying-your-application.md)
+* Current Handback File: [deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/990ec0fd8fbd90f9345864b81a5b9fe179d310aa/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf)
+* Current Handback Datetime: 2016-07-02 21:52:36
+* Bilingual File: [deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/990ec0fd8fbd90f9345864b81a5b9fe179d310aa/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/deploying-your-application.3864e91a1ee9e182dd8ff5b23cd391c156cc4e29.pl-pl.xlf)
+* Bilingual Datetime: 2016-07-02 22:02:02
+* [Back to Top](#report-top)
+
+##### <a name='5dcb3fe88cced7945591a08c492b32bdc889516261'></a> Source: [Azure-RMSDocs\develop\developing-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cb1a4dfa4465e8f4798866c95d8965eec1b68f6b/Azure-RMSDocs/develop/developing-your-application.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/cfa70ffe0fd2efa15fe00bdec878870e546c7be9/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf)
+* Handoff Datetime: 2016-07-06 17:36:34
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\develop\developing-your-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/dac057962c8005bb482f38bd4b296321e9e4835e/Azure-RMSDocs/develop/developing-your-application.md)
+* Current Handback File: [developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/990ec0fd8fbd90f9345864b81a5b9fe179d310aa/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf)
+* Current Handback Datetime: 2016-07-02 21:52:36
+* Bilingual File: [developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/990ec0fd8fbd90f9345864b81a5b9fe179d310aa/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/developing-your-application.8fd29906a628e7dc3c644e93f1a14b01523f9aa6.pl-pl.xlf)
+* Bilingual Datetime: 2016-07-02 22:02:02
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
