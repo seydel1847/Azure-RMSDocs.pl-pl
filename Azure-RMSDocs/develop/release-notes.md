@@ -1,26 +1,21 @@
 ---
-# required metadata
-
-title: Nowości i informacje o wersji | Azure RMS
-description: Spis ważnych zmian i funkcji w tej nowej wersji zestawu RMS SDK.
-keywords:
+title: "Nowości i informacje o wersji | Azure RMS"
+description: "Spis ważnych zmian i funkcji w tej nowej wersji zestawu RMS SDK."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +24,8 @@ ms.suite: ems
 ## Co nowego
 Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej nowej wersji zestawu RMS SDK.
 
--   [Nowości w aktualizacji z grudnia 2015 r.](#new_for_our_december_2015_update)
+-   [Nowości z czerwca 2016 r.](#new_for_June_2016)
+-   [Aktualizacja z grudnia 2015 r.](#december_2015_update)
 -   [Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem](#may_2015_update_-_adds_logging_control)
 -   [Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +34,15 @@ Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej ela
 -   [Informacje o wersji](#release-notes)
 -   [Często zadawane pytania](#frequently_asked_questions)
 
-### Nowości w aktualizacji z grudnia 2015 r.
+### Nowości z czerwca 2016 r.
+
+- **Obsługa nowoczesnego uwierzytelniania** — umożliwi logowanie oparte na bibliotece uwierzytelniania usługi Active Directory (ADAL) do aplikacji z obsługą usługi RMS. Zostaną udostępnione opcje logowania, takie jak usługa Multi-Factor Authentication (MFA), oparci na języku SAML dostawcy tożsamości firm zewnętrznych z aplikacjami klienckimi usługi RMS oraz uwierzytelnianie oparte na kartach inteligentnych i certyfikatach. Równocześnie zostanie wyeliminowana potrzeba korzystania z protokołu uwierzytelniania podstawowego w aplikacjach z obsługą usługi RMS.
+- **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach. 
+- Ulepszenia wydajności
+- Poprawki
+
+
+### Aktualizacja z grudnia 2015 r.
 
 W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następujące funkcjonalności:
 
@@ -124,7 +128,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   **Obsługa usług AD RMS** —administratorzy IT mogą używać aplikacji z włączoną usługą RMS na urządzeniach przenośnych z rozszerzeniami dla urządzeń przenośnych nowego serwera usług AD RMS.
 -   **Użycie trybu offline** — użytkownicy końcowi mogą uzyskać dostęp do chronionych przez usługę RMS danych w trybie offline.
--   **Rozdzielone uwierzytelnianie** —deweloperzy mogą używać własnych bibliotek uwierzytelniania dla usług Azure RMS i AD RMS (lub używać zalecanej [biblioteki uwierzytelniania usługi Azure AD (ADAL)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)).
+-   **Rozdzielone uwierzytelnianie** — deweloperzy mogą używać własnych bibliotek uwierzytelniania dla usług Azure RMS i AD RMS (lub używać zalecanej [biblioteki uwierzytelniania usługi Azure AD (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)).
 -   **Rozdzielony interfejs użytkownika** —deweloperzy mogą tworzyć interfejsy użytkownika, aby używać dokumentów chronionych przez usługę RMS i ochraniać je.
 -   **Zmieniony interfejs API** — deweloperzy mogą korzystać z prostego i przejrzystego interfejsu API szyfrowania i odszyfrowywania, który zapewnia spójne działanie usługi RMS i interfejsu użytkownika przy minimalnym wysiłku.
 
@@ -227,6 +231,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
