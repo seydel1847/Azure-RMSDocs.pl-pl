@@ -1,49 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/develop/ios-os-x-code-examples.md) | OutofSyncHandedBackSuccess | [Details](#66bb1b58cba19d0fe8bc2ec0d3720c0b040f837877)
- [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#a3ed9e8de496741fae8904481edb1177762a12c0101)
 
 ## Item Details
-##### <a name='66bb1b58cba19d0fe8bc2ec0d3720c0b040f837877'></a> Source: [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/develop/ios-os-x-code-examples.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/57bf49dc8e2ff114b4a5167bfc34ef4368d2ded2/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf)
-* Handoff Datetime: 2016-07-06 23:40:34
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/cfdbad4d9c85bb1ca212980e4c0c5627bd71fe0b/Azure-RMSDocs/develop/ios-os-x-code-examples.md)
-* Current Handback File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/46543be32cbdd5a33fd4d50ed6d8088c9e434428/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf)
-* Current Handback Datetime: 2016-07-02 07:52:08
-* Bilingual File: [ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/46543be32cbdd5a33fd4d50ed6d8088c9e434428/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.pl-pl.xlf)
-* Bilingual Datetime: 2016-07-02 08:05:08
-* [Back to Top](#report-top)
-
-##### <a name='a3ed9e8de496741fae8904481edb1177762a12c0101'></a> Source: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/get-started/faqs.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/57bf49dc8e2ff114b4a5167bfc34ef4368d2ded2/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf)
-* Handoff Datetime: 2016-07-06 23:40:34
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/c275281c713c6ea6cb23eb9810e485695728f4a4/Azure-RMSDocs/get-started/faqs.md)
-* Current Handback File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/894cc5f1dfbf0589d38846d412a1e3a6ce4f6c45/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf)
-* Current Handback Datetime: 2016-06-16 14:58:16
-* Bilingual File: [faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/894cc5f1dfbf0589d38846d412a1e3a6ce4f6c45/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.pl-pl.xlf)
-* Bilingual Datetime: 2016-06-16 15:00:44
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
