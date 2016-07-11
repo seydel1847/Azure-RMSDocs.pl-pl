@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS — samouczek Szybki start — krok 3 | Azure RMS
-description: Trzeci krok samouczka, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Rights Management dla swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć mniej niż 15 minut.
-keywords:
+title: "Azure RMS — samouczek Szybki start — krok 3 | Azure RMS"
+description: "Trzeci krok samouczka, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Rights Management dla swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć mniej niż 15 minut."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+
 
 ---
 
@@ -31,7 +25,7 @@ ms.suite: ems
 *Dotyczy usług: Azure Rights Management, Office 365*
 
 
-Przeskocz do: 
+Przejdź do: 
 > [!div class="op_single_selector"]
 - [Wprowadzenie](quick-start-tutorial.md)
 - [Krok 1. Aktywacja usługi Azure RMS](tutorial-step1.md)
@@ -41,7 +35,7 @@ Przeskocz do:
 - [Krok 5. Śledzenie dokumentu](tutorial-step5.md)
 
 
-W tym kroku najpierw musisz w programie Word utworzyć i zapisać dokument reprezentujący plik, który chcesz chronić. Nazwij go **Confidential.docx**. W ramach tego samouczka nieistotne jest, jaki tekst zawiera dokument. Niemniej dobrze będzie wpisać jakiś tekst, aby łatwiej potwierdzić, że autoryzowany odbiorca mógł go odczytać. Na przykład możesz wpisać: **Jeśli możesz przeczytać ten tekst z załącznika wiadomości e-mail, nadawca pomyślnie udostępnił plik chroniony za pomocą usługi Azure RMS.**
+W tym kroku najpierw musisz w programie Word utworzyć i zapisać dokument reprezentujący plik, który chcesz chronić. Nazwij go **Confidential.docx**. W ramach tego samouczka nie jest istotne, jaki tekst zawiera dokument. Niemniej dobrze będzie wpisać jakiś tekst, aby łatwiej potwierdzić, że autoryzowany odbiorca mógł go odczytać. Na przykład możesz wpisać: **Jeśli możesz przeczytać ten tekst z załącznika wiadomości e-mail, nadawca pomyślnie udostępnił plik chroniony za pomocą usługi Azure RMS.**
 
 Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
@@ -83,9 +77,11 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 |Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości**|[Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"] [« Krok 2](tutorial-step2.md)
+>[!div class="step-by-step"]
+[« Krok 2](tutorial-step2.md)
 [Krok 4 »](tutorial-step4.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

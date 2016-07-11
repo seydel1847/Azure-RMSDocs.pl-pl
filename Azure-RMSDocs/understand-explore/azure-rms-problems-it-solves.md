@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Jaki problem rozwiązuje usługa Azure RMS | Azure RMS
-description:
-keywords:
+title: "Jaki problem rozwiązuje usługa Azure RMS | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
+ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+
 
 ---
 
@@ -46,7 +40,8 @@ Użyj poniższej tabeli, aby zidentyfikować wymagania biznesowe lub problemy, k
 |Możliwość tworzenia prostych i elastycznych zasad|√ [Dostosowane szablony zasad praw](../deploy-use/configure-custom-templates.md) stanowią rozwiązanie szybkie i łatwe, dzięki któremu administratorzy mogą stosować zasady, a użytkownicy mogą stosować odpowiedni poziom ochrony do każdego dokumentu, a także ograniczać dostęp do osób wewnątrz organizacji.<br /><br />Na przykład dokument strategii dla całej firmy może być udostępniony wszystkim pracownikom z zastosowaniem zasady tylko do odczytu dla wszystkich pracowników wewnętrznych. Natomiast dostęp do bardziej poufnego dokumentu, takiego jak raport finansowy, może zostać ograniczony tylko do dyrektorów.|
 |Szerokie wsparcie aplikacji|√ Usługa Azure RMS ściśle integruje się z aplikacjami i usługami Microsoft Office, a także oferuje rozszerzone wsparcie dla innych aplikacji za pomocą aplikacji RMS sharing.<br /><br />√ Zestaw [Microsoft Rights Management SDK](../develop/developers-guide.md#software-development-kits) dostarcza wewnętrznym deweloperom i dostawcom oprogramowania interfejsy API do programowania niestandardowych aplikacji do udostępniania usługi RMS.<br /><br />Aby uzyskać więcej informacji, zobacz [Inne aplikacje, które obsługują interfejsy API usług RMS](api-support.md).|
 |Dział IT musi zachować kontrolę nad danymi|√ Organizacje mogą wybrać zarządzanie własnym kluczem dzierżawcy z zastosowaniem rozwiązania „[Bring Your Own Key](../plan-design/plan-implement-tenant-key.md)” (BYOK) i przechowywać klucz dzierżawcy w sprzętowych modułach zabezpieczeń (HSM).<br /><br />√ Obsługa inspekcji i [rejestrowanie użycia](../deploy-use/log-analyze-usage.md) pozwala analizować szczegółowe informacje biznesowe, monitorować nadużycia oraz (w przypadku przecieku informacji) dokonywać analizy śledczej.<br /><br />√ Delegowanie dostępu za pomocą [funkcji administratorów](../deploy-use/configure-super-users.md) pozwala zagwarantować, że dział IT zawsze ma dostęp do zawartości chronionej, nawet jeśli dokument był chroniony przez pracownika, który opuścił organizację. W odróżnieniu od tego podejścia rozwiązania szyfrowania równorzędnego niosą ryzyko utraty dostępu do danych firmowych.<br /><br />√ Synchronizacja [wyłącznie atrybutów katalogu wymaganych przez usługę Azure RMS](/active-directory/active-directory-aadconnectsync-attributes-synchronized#azure-rms) do obsługi tożsamości wspólnych dla lokalnych kont usługi Active Directory przy użyciu [narzędzia synchronizacji katalogów](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison), np. Azure AD Connect.<br /><br />√ Włączanie logowania jednokrotnego bez replikacji haseł w chmurze za pomocą usług AD FS.<br /><br />√ Organizacje mogą w dowolnie wybranym momencie przestać korzystać z usługi Azure RMS bez utraty dostępu do zawartości, która była wcześniej chroniona przez usługę Azure RMS. Aby uzyskać więcej informacji na temat opcji likwidowania, zobacz artykuł [Likwidowanie i dezaktywowanie usługi Azure Rights Management](../deploy-use/decommission-deactivate.md) Ponadto organizacje, które wdrożyły usługę Active Directory Rights Management Services (AD RMS), mogą [migrować do usługi Azure RMS](../plan-design/migrate-from-ad-rms-to-azure-rms.md) bez utraty dostępu do danych, które wcześniej były chronione przez usługę AD RMS.|
-> [!TIP]Jeśli znasz lokalną wersję usługi Rights Management, Active Directory Rights Management Services (AD RMS), może Cię zainteresować tabela porównawcza z artykułu [Porównanie usług Azure Rights Management i AD RMS](compare-azure-rms-ad-rms.md).
+> [!TIP]
+> Jeśli znasz lokalną wersję usługi Rights Management, Active Directory Rights Management Services (AD RMS), może Cię zainteresować tabela porównawcza z artykułu [Porównanie usług Azure Rights Management i AD RMS](compare-azure-rms-ad-rms.md).
 
 ## Wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych
 Azure RMS obsługuje następujące wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych:
@@ -77,6 +72,7 @@ Aby poznać usługi Azure RMS dla administratorów i użytkowników, zobacz [Us�
 
 Aby uzyskać informacje techniczne na temat działania usługi Azure RMS, zobacz artykuł [Jak działa usługa Azure RMS?](how-does-it-work.md) 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

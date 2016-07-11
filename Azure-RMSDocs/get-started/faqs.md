@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Często zadawane pytania dotyczące usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Często zadawane pytania dotyczące usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 64b9cf141b755e4d54907424a7dcbd4ee14fadd7
+ms.openlocfilehash: 758a603dde2c185767ba85229a397fd6e77b1c5b
+
 
 ---
 
@@ -32,7 +26,11 @@ ms.suite: ems
 Niektóre często zadawane pytania dotyczące usługi Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], znanej również jako Azure RMS:
 
 ## Co jest potrzebne do wdrożenia usługi Azure RMS i jak zacząć?
-Najpierw należy sprawdzić [wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md), które zawierają informacje o opcjach subskrypcji chmury, korzystaniu z serwerów lokalnych z usługą Azure RMS, aktualnie obsługiwanych scenariuszach wdrażania, urządzeniach i aplikacjach obsługujących usługę Azure RMS, a także link na wypadek potrzeby skorzystania z listy adresów IP i nazw domen dla zapór lub serwerów proxy. Można także zapoznać się z innymi artykułami w sekcji **Wprowadzenie**, a także w sekcji **Poznawanie i eksplorowanie**. Pozwoli to uzyskać podstawowe informacje o możliwościach usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] w zakresie ochrony danych organizacji, współpracy z aplikacjami oraz porównaniu z wersjami lokalnymi usługi Active Directory Rights Management. Umożliwi także zapoznanie się z terminologią i skrótami właściwymi dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+Najpierw należy sprawdzić [wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md), które zawierają informacje o opcjach subskrypcji chmury, korzystaniu z serwerów lokalnych z usługą Azure RMS, aktualnie obsługiwanych scenariuszach wdrażania, urządzeniach i aplikacjach obsługujących usługę Azure RMS, a także link na wypadek potrzeby skorzystania z listy adresów IP i nazw domen dla zapór lub serwerów proxy. 
+
+Można także zapoznać się z innymi artykułami w sekcji **Wprowadzenie**, a także w sekcji **Poznawanie i eksplorowanie**. Pozwoli to uzyskać podstawowe informacje o możliwościach usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] w zakresie ochrony danych organizacji, współpracy z aplikacjami oraz porównaniu z wersjami lokalnymi usługi Active Directory Rights Management. Umożliwi także zapoznanie się z terminologią i skrótami właściwymi dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+
+Następnie, aby rozpocząć pracę, użyj [mapy wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md).
 
 ## Czy pliki muszą znajdować się w chmurze, aby mogły być chronione przez usługę Azure RMS?
 Nie, to powszechne nieporozumienie. Usługa Azure Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika w ramach procesu ochrony informacji. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. 
@@ -40,16 +38,39 @@ Nie, to powszechne nieporozumienie. Usługa Azure Rights Management (ani firma M
 Aby uzyskać więcej informacji, zobacz temat [How does Azure RMS work? Under the hood](../understand-explore/how-does-it-work.md) (Jak działa usługa RMS? Kulisy), aby dowiedzieć się, jak tajna receptura coli, utworzona i przechowywana lokalnie, jest chroniona przez usługę Azure RMS, ale pozostaje zapisana lokalnie.
 
 ## Czy można zintegrować usługę Azure RMS z serwerami lokalnymi?
-Tak. Usługę Azure RMS można zintegrować z serwerami lokalnymi, takimi jak Exchange Server, SharePoint i serwery plików systemu Windows. W tym celu należy użyć [łącznika usługi Rights Management](../deploy-use/deploy-rms-connector.md). Osoby zainteresowane używaniem infrastruktury klasyfikacji plików (FC) z systemem Windows Server mogą skorzystać z [poleceń cmdlet ochrony usługi RMS](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx). Można także przeprowadzić synchronizację i federację kontrolerów domeny usługi Active Directory z usługą Azure AD, aby usprawnić środowisko uwierzytelniania dla użytkowników, na przykład za pomocą programu [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+Tak. Usługę Azure RMS można zintegrować z serwerami lokalnymi, takimi jak Exchange Server, SharePoint i serwery plików systemu Windows. W tym celu należy użyć [łącznika usługi Rights Management](../deploy-use/deploy-rms-connector.md). Osoby zainteresowane używaniem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) z systemem Windows Server mogą skorzystać z [poleceń cmdlet narzędzia RMS Protection](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx). Można także przeprowadzić synchronizację i federację kontrolerów domeny usługi Active Directory z usługą Azure AD, aby usprawnić środowisko uwierzytelniania dla użytkowników, na przykład za pomocą programu [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 Usługa Azure RMS automatycznie generuje certyfikaty XrML i zarządza nimi zgodnie z wymaganiami, dlatego nie korzysta z lokalnej infrastruktury kluczy publicznych. Aby uzyskać więcej informacji o używaniu certyfikatów przez usługę Azure RMS, zobacz sekcję [Wskazówki dotyczące działania usługi Azure RMS: pierwsze użycie, ochrona zawartości, zużycie zawartości](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) w artykule [Jak działa usługa Azure RMS?](../understand-explore/how-does-it-work.md).
+
+## Gdzie można znaleźć informacje o rozwiązaniach innych firm, które integrują się z usługą Azure RMS?
+
+Wielu dostawców oprogramowania ma już rozwiązania, które integrują się z usługą Azure RMS, lub jest w trakcie ich implementowania. Liczba takich rozwiązań rośnie bardzo szybko. Dla użytkowników może być bardzo przydatne zapoznanie się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i śledzenie najnowszych aktualizacji kanału [@TheRMSGuy Dana Plastina](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli jednak masz konkretne pytanie, wyślij wiadomość e-mail do zespołu ochrony informacji na adres askipteam@microsoft.com.
+
+## Czy istnieje pakiet zarządzania lub podobny mechanizm monitorowania dla łącznika usługi RMS?
+
+Mimo że łącznik usługi Rights Management rejestruje informacje, ostrzeżenia i komunikaty o błędach w dzienniku zdarzeń, nie istnieje pakiet administracyjny, który obejmuje monitorowanie tych zdarzeń. Jednak lista zdarzeń i ich opisów wraz dodatkowymi informacjami ułatwiającymi podejmowanie działań naprawczych jest opisana w sekcji [Monitorowanie łącznika usługi Azure Rights Management](../deploy-use/monitor-rms-connector.md).
+
+## Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?
+
+Administratorzy globalni dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure RMS. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, możesz to zrobić przy użyciu polecenia cmdlet programu PowerShell usługi Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx). Tę rolę administracyjną można przypisać według konta użytkownika lub grupy. Dostępne są dwie role: **Administrator globalny** i **Administrator łącznika**. 
+
+Tak jak te nazwy sugerują, pierwsza rola przyznaje uprawnienia do uruchamiania wszystkich zadań administracyjnych dla usługi Azure Rights Management (bez nadawania użytkownikom roli administratora globalnego dla innych usług w chmurze), a druga rola przyznaje uprawnienia do uruchamiania tylko łącznika usługi Rights Management (RMS).
+
+Dodatkowe kwestie, na które należy zwrócić uwagę:
+
+- Tylko administratorzy globalni usługi Office 365 i administratorzy globalni usługi Azure AD mogą używać portali zarządzania (centrum administracyjne usługi Office 365 lub klasyczny portal Azure) do konfigurowania usługi Azure RMS. Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
+
+- Jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), nie ma to wpływu na możliwość administrowania usługą Azure RMS, z wyjątkiem łącznika usługi RMS. Na przykład jeśli kontrolki dołączania zostały skonfigurowane w taki sposób, że możliwość ochrony zawartości jest ograniczona do grupy Dział IT, konto używane do instalowania i konfigurowania łącznika usługi RMS musi należeć do tej grupy. 
+
+- Żaden administrator usługi Azure RMS (administrator globalny dzierżawy lub administrator globalny usługi Azure RMS) nie może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md). 
+
 
 ## Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
 Oczywiście, a dodatkową korzyścią jest to, że użytkownicy będą mogli w łatwy sposób chronić wiadomości e-mail i załączniki, a także korzystać z nich w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
 
 ## Czy istnieją szczegółowe instrukcje konfigurowania usługi Exchange Online do używania usługi Azure RMS?
 
-Tak. Zobacz sekcję dotyczącą [konfiguracji usługi IRM dla usługi Exchange Online](../deploy-use/configure-office365.md#exchange-online-irm-configuration.md ), aby zapoznać się z typowym zestawem poleceń umożliwiających usłudze Exchange Online korzystanie z usługi Azure RMS, dowiedzieć się, dlaczego aplikacja Outlook Web App nie wyświetla natychmiast opcji menu **Ustawianie uprawnień**, oraz poznać polecenie, które należy wykonać w przypadku zmiany lub aktualizacji szablonów usługi Azure RMS. 
+Tak. Zobacz [Usługa Exchange Online: konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration), aby zapoznać się z typowym zestawem poleceń umożliwiających usłudze Exchange Online korzystanie z usługi Azure RMS, dowiedzieć się, dlaczego aplikacja Outlook Web App nie wyświetla natychmiast opcji menu **Ustawianie uprawnień**, oraz poznać polecenie, które należy wykonać w przypadku zmiany lub aktualizacji szablonów usługi Azure RMS. 
 
 ## Czy wdrożenie usługi Azure RMS w środowisku produkcyjnym zmusza przedsiębiorstwo do korzystania z tego rozwiązania lub powoduje ryzyko utraty dostępu do zawartości chronionej za pomocą usługi Azure RMS?
 Nie, użytkownik zawsze zachowuje kontrolę nad swoimi danymi i może z nich korzystać, nawet jeśli zrezygnuje z używania usługi Azure RMS. Aby uzyskać więcej informacji, zobacz artykuł [Likwidowanie i dezaktywowanie usługi Azure Rights Management](../deploy-use/decommission-deactivate.md).
@@ -65,7 +86,7 @@ Jedną z największych zalet usługi Azure RMS jest obsługiwanie współpracy m
 Nie ma administracyjnej możliwości uniemożliwiania bezpiecznego udostępniania dokumentów przez użytkowników określonym organizacjom. Na przykład chcesz zablokować organizację, której nie ufasz lub która prowadzi konkurencyjną działalność. Uniemożliwienie usłudze Azure RMS wysyłania chronionych dokumentów do użytkowników w takich organizacjach nie miałoby sensu, ponieważ użytkownicy mogliby wówczas udostępniać dokumenty bez ochrony, co byłoby zdecydowanie niepożądane. W takiej sytuacji wskazanie osoby udostępniającej poufne dokumenty firmy i ich odbiorców w takich organizacjach byłoby niemożliwe. Można to zrobić, jeśli dokument (lub wiadomość e-mail) podlega ochronie za pomocą usługi Azure RMS.
 
 ## W jaki sposób może zostać uwierzytelniony użytkownik spoza mojej firmy, któremu udostępniam chroniony dokument?
-Do uwierzytelnienia użytkownika usługa Azure RMS zawsze używa konta usługi Azure Active Directory i powiązanego adresu e-mail, dlatego współpraca między firmami przebiega bez sprawiania problemów administratorom. Jeśli inna organizacja używa usług Azure, użytkownicy mają już konta w usłudze Azure Active Directory, nawet jeśli te konta są tworzone i zarządzane lokalnie, a następnie synchronizowane z platformą Azure.  Jeśli organizacja korzysta z usługi Office 365, to ta usługa również używa usługi Azure Active Directory do obsługi kont użytkowników.  Jeśli organizacja użytkownika nie posiada kont zarządzanych na platformie Azure, użytkownicy mogą rejestrować się w celu uzyskania [usług RMS dla osób indywidualnych](../understand-explore/rms-for-individuals.md), co powoduje utworzenie niezarządzanej dzierżawy platformy Azure i katalogu dla organizacji z kontem użytkownika, tak aby ten użytkownik mógł zostać uwierzytelniony do korzystania z usługi Azure RMS.
+Do uwierzytelnienia użytkownika usługa Azure RMS zawsze używa konta usługi Azure Active Directory i powiązanego adresu e-mail, dlatego współpraca między firmami przebiega bez sprawiania problemów administratorom. Jeśli inna organizacja używa usług Azure, użytkownicy mają już konta w usłudze Azure Active Directory, nawet jeśli te konta są tworzone i zarządzane lokalnie, a następnie synchronizowane z platformą Azure. Jeśli organizacja korzysta z usługi Office 365, to ta usługa również używa usługi Azure Active Directory do obsługi kont użytkowników. Jeśli organizacja użytkownika nie posiada kont zarządzanych na platformie Azure, użytkownicy mogą rejestrować się w celu uzyskania [usług RMS dla osób indywidualnych](../understand-explore/rms-for-individuals.md), co powoduje utworzenie niezarządzanej dzierżawy platformy Azure i katalogu dla organizacji z kontem użytkownika, tak aby ten użytkownik (i kolejni) mógł zostać uwierzytelniony do korzystania z usługi Azure RMS.
 
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
@@ -85,7 +106,7 @@ Jak jasno wskazuje nazwa opcji, nowy typ grupy jest dostępny w wersji zapoznawc
 
 
 ## Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
-Aby uzyskać listę obsługiwanych urządzeń, zobacz temat [Client devices that support Azure RMS](../get-started/requirements-client-devices.md) (Urządzenia klienckie obsługujące usługę Azure RMS). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usługi RMS, należy również zapoznać się z tabelą dotyczącą [funkcji urządzeń klienckich](../get-started/requirements-client-devices.md#client-device-capabilities) w tym samym artykule.
+Aby uzyskać listę obsługiwanych urządzeń, zobacz [Wymagania dotyczące usługi Azure RMS: urządzenia klienckie, które obsługują usługę Azure RMS](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usług RMS, należy również zapoznać się z tabelą w sekcji [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).
 
 Usługa Azure RMS obsługuje wszystkie typy plików. W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz niektórych typów plików innych aplikacji usługa Azure RMS zapewnia natywną ochronę obejmującą zarówno szyfrowanie, jak i wymuszanie praw (uprawnień). W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia hermetyzację plików oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest uprawniony do otwarcia pliku.
 
@@ -108,7 +129,7 @@ Jeśli jednak zasady firmy wymagają używania sprzętowego modułu zabezpiecze�
 ## Wygląda na to, że funkcja, której potrzebuję, nie współpracuje z chronionymi bibliotekami programu SharePoint. Czy obsługa tej funkcji jest planowana?
 Obecnie program SharePoint obsługuje dokumenty chronione za pomocą usługi RMS, korzystając w tym celu z bibliotek chronionych za pomocą usługi IRM, które nie obsługują niestandardowych szablonów, śledzenia dokumentów i innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi biurowe).
 
-Użytkownicy zainteresowani konkretną funkcją, które nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu zespołu usług RMS](http://blogs.technet.com/b/rms/).
+Użytkownicy zainteresowani konkretną funkcją, która nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 ## Jak skonfigurować usługę OneDrive dla Firm w usłudze SharePoint Online, tak aby użytkownicy mogli bezpiecznie udostępniać pliki wewnątrz i na zewnątrz firmy?
 Domyślnie tej usługi nie konfiguruje administrator usługi Office 365, lecz robią to użytkownicy.
@@ -144,7 +165,6 @@ Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowa
 
 Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
-
 ## Gdzie można znaleźć dodatkowe informacje na temat usługi Azure RMS, dotyczące na przykład kwestii prawnych, zgodności i umów SLA?
 Usługa Azure RMS obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure RMS, ale niedotyczących sposobu korzystania z usługi Azure RMS, sprawdź następujące zasoby:
 
@@ -178,6 +198,10 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 -   Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## Podobno nowa wersja ma być wkrótce dostępna dla usługi Azure RMS — kiedy zostanie ona wydana?
+
+Dokumentacja techniczna nie zawiera informacji o kolejnych wersjach. W przypadku tego typu informacji i zapowiedzi dotyczących wersji zapoznaj się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i pobierz najnowsze aktualizacje kanału [@TheRMSGuy Dana Plastina](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli interesuje Cię wersja pakietu Office, sprawdź również blog dotyczący pakietu Office (https://blogs.office.com/).
+
 ## Co należy zrobić, jeśli mojego pytania nie ma na tej liście?
 Skorzystaj z linków i zasobów wymienionych w artykule [Informacje i pomoc techniczna dla usługi Azure Rights Management](information-support.md).
 
@@ -189,13 +213,12 @@ Istnieją także często zadawane pytania sformułowane pod kątem użytkownikó
 
 -   [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977)
 
-Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana, a nowe informacje będą publikowane w comiesięcznych ogłoszeniach o aktualizacji dokumentacji na blogu [zespołu usług Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms/).
-
-> [!TIP] Aby łatwiej znaleźć ogłoszenia dotyczące dokumentacji, można użyć w blogu [tagu docs](http://blogs.technet.com/b/rms/archive/tags/docs/).
+Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana, a nowe informacje będą publikowane w comiesięcznych ogłoszeniach o aktualizacji dokumentacji na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

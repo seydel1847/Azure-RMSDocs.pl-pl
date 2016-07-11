@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Operacje cyklu życia klucza dzierżawy zarządzane przez klienta | Azure RMS
-description:
-keywords:
+title: "Operacje cyklu życia klucza dzierżawy zarządzane przez klienta | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 496edca2e2323e17216858e2ab4844fdb0aa1fb0
+
 
 ---
 
@@ -63,14 +57,15 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 
 |Opis zdarzenia|Prawdopodobna reakcja|
 |------------------------|-------------------|
-|Przeciek klucza dzierżawy.|Utwórz ponownie klucz dzierżawy. Zobacz [Ponowne tworzenie klucza dzierżawy](#re-key-your-tenant-key)..|
-|Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało uprawnienia do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Ponowne utworzenie klucza dzierżawy nie jest pomocne w tym przypadku, problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
+|Przeciek klucza dzierżawy.|Utwórz ponownie klucz dzierżawy Zobacz [Ponowne tworzenie klucza dzierżawy](#re-key-your-tenant-key).|
+|Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Ponowne utworzenie klucza dzierżawy nie jest pomocne w tym przypadku, problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
 |Odkryto lukę w zabezpieczeniach obecnej generacji technologii sprzętowych modułów zabezpieczeń.|Firma Microsoft musi zaktualizować sprzętowe moduły zabezpieczeń. W przypadku podejrzeń, że usterka spowodowała ujawnienie kluczy, firma Microsoft wyśle instrukcje do wszystkich klientów dotyczące odnowienia kluczy dzierżawy.|
 |Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure RMS o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

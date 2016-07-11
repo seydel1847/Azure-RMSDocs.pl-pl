@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Szybkie wdrażanie usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Szybkie wdrażanie usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ W tym artykule zawarto przykładowe, najpopularniejsze scenariusze. Usługa Azur
 
 Przed wdrożeniem opisanych rozwiązań warto wysłać do użytkowników końcowych obszerne powiadomienie o planowanych modyfikacjach mających na celu ochronę danych firmy wraz z informacją o ewentualnej konieczności wprowadzenia zmian w sposobie pracy. Treść takiej przykładowej komunikacji zamieszczono pod poniższą tabelą.
 
-> [!NOTE] Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+> [!NOTE]
+> Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## Scenariusze dotyczące usługi Azure RMS
 Aby szybciej wdrożyć usługę Azure RMS w celu rozwiązania określonych problemów w firmie, należy wybrać scenariusze, które najlepiej pasują do celów biznesowych, i w razie potrzeby dostosować je.
@@ -151,6 +146,7 @@ Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwol
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

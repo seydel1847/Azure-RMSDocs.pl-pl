@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS — samouczek Szybki start — krok 5 | AZURE RMS"
-description: "Ostatni krok samouczka, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Rights Management dla swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć mniej niż 15 minut."
-keywords:
+title: "Azure RMS — samouczek Szybki start — krok 5 | Azure RMS"
+description: "Ostatni krok samouczka umożliwiającego szybkie wypróbowanie usługi Microsoft Azure Rights Management w swojej organizacji. Wystarczy wykonać 5 prostych kroków, co powinno zająć mniej niż 15 minut."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -32,7 +30,7 @@ ms.custom:
 *Dotyczy usług: Azure Rights Management, Office 365*
 
 
-Przeskocz do: 
+Przejdź do: 
 > [!div class="op_single_selector"]
 - [Wprowadzenie](quick-start-tutorial.md)
 - [Krok 1. Aktywacja usługi Azure RMS](tutorial-step1.md)
@@ -44,7 +42,7 @@ Przeskocz do:
 ![Azure RMS — samouczek Szybki start — krok 5](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
-> W tym kroku musisz mieć subskrypcję, która obsługuje śledzenie dokumentu. Aby sprawdzić, czy Twoja subskrypcja obsługuje śledzenie dokumentu, zobacz temat [Porównanie ofert Usług Rights Management (RMS)](https://technet.microsoft.com/dn858608.aspx).
+> W tym kroku musisz mieć subskrypcję, która obsługuje śledzenie dokumentu. Aby sprawdzić, czy Twoja subskrypcja obsługuje śledzenie dokumentu, zobacz temat [Porównanie ofert usług Rights Management (RMS)](https://technet.microsoft.com/dn858608.aspx).
 
 Ten krok jest opcjonalny, ale większość osób chce wiedzieć, czy załącznik wysłany do odbiorców został otwarty, kiedy go otwarto, a nawet z jakiego miejsca. Na przykład:
 
@@ -60,15 +58,15 @@ Ten krok jest opcjonalny, ale większość osób chce wiedzieć, czy załącznik
 
 2.  Jeśli zobaczysz stronę **Chroń i udostępniaj na własnych warunkach**, kliknij opcję **Zaloguj się** i podaj ponownie nazwę użytkownika i hasło.
 
-3.  Na stronie **Dokumenty udostępnione** zobaczysz dokument, który został załączony do wiadomości e-mail, **Confidential.docx**. W tym momencie jest to jedyny wyświetlany plik, ale lista dokumentów będzie rosnąć wraz z udostępnianiem kolejnych dokumentów chronionych.
+3.  Na stronie **Dokumenty udostępnione** zobaczysz dokument, który został załączony do wiadomości e-mail, **Confidential.docx**. W tym momencie jest to jedyny wyświetlany plik, ale liczba pozycji na liście będzie rosnąć wraz z udostępnianiem kolejnych dokumentów chronionych.
 
     Na tej stronie możesz zobaczyć czas udostępnienia dokumentu (kiedy wysłano wiadomość e-mail z chronionym dokumentem), datę ostatniej aktywności oraz nazwę odbiorcy, do którego wysłano wiadomość e-mail. Kliknij nazwę dokumentu, aby uzyskać dodatkowe informacje.
 
 4.  Na nowej stronie, która zawiera nazwę klikniętego pliku, zobaczysz szczegółowe informacje dotyczące wyłącznie tego dokumentu oraz listę opcji dostępnych dla tego dokumentu (**Lista**, **Oś czasu**, **Mapa**, **Ustawienia**).
 
-    Kliknij każdą opcję, aby poznać różne sposoby śledzenia chronionego dokumentu. Lub (nadal na stronie **Podsumowanie**) kliknij opcję **Otwórz w programie Excel**, aby wyeksportować informacje do arkusza kalkulacyjnego, albo kliknij opcję **Odwołaj dostęp**, aby zatrzymać udostępnianie dokumentu.
+    Klikaj poszczególne opcje, aby poznać różne sposoby śledzenia chronionego dokumentu. Lub (nadal na stronie **Podsumowanie**) kliknij opcję **Otwórz w programie Excel**, aby wyeksportować informacje do arkusza kalkulacyjnego, albo kliknij opcję **Odwołaj dostęp**, aby zatrzymać udostępnianie dokumentu.
 
-Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą chronionego dokumentu lub w razie potrzeby wycofać dostęp. Możesz również uzyskać dostęp do witryny z urządzenia przenośnego lub tabletu, korzystając z przeglądarki internetowej i następującego linku: [śledzenie dokumentu](http://go.microsoft.com/fwlink/?LinkId=529562)
+Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą chronionego dokumentu lub w razie potrzeby wycofać dostęp. Możesz również uzyskać dostęp do witryny z urządzenia przenośnego lub tabletu, korzystając z przeglądarki i następującego linku: [śledzenie dokumentu](http://go.microsoft.com/fwlink/?LinkId=529562)
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
@@ -83,14 +81,16 @@ Jeśli masz wszystko gotowe i możesz rozpocząć wdrażanie usługi Azure RMS, 
 
 Możesz też zobaczyć [Szybkie wdrażanie usługi Azure Rights Management](../get-started/rapid-deployment-guide.md), aby uzyskać listę konkretnych scenariuszy, powiązanych kroków dotyczących konfiguracji i dokumentację użytkownika końcowego.
 
->[!div class="step-by-step"] [Wprowadzenie](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[Wprowadzenie](quick-start-tutorial.md)
 [Krok 1](tutorial-step1.md)
 [Krok 2](tutorial-step2.md)
 [Krok 3](tutorial-step3.md)
 [Krok 4](tutorial-step4.md)
-*Krok 5*
+*krok 5*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

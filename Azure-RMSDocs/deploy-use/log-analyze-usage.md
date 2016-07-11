@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ Dzienniki usługi Azure Rights Management można wykorzystać na potrzeby nastę
 
     W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Korzystanie z usługi Azure Rights Management i funkcji rejestrowania pozwala odpowiedzieć na tego rodzaju pytania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki usługi Azure Rights Management mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
-> [!NOTE] Jeśli interesuje Cię tylko rejestrowanie zadań administracyjnych dotyczących usługi Azure Rights Management i nie chcesz śledzić korzystania z usługi Rights Management przez użytkowników, możesz użyć polecenia cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) programu Windows PowerShell dla usługi Azure Rights Management.
+> [!NOTE]
+> Jeśli interesuje Cię tylko rejestrowanie zadań administracyjnych dotyczących usługi Azure Rights Management i nie chcesz śledzić korzystania z usługi Rights Management przez użytkowników, możesz użyć polecenia cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) programu Windows PowerShell dla usługi Azure Rights Management.
 > 
 > Możesz także skorzystać z klasycznego portalu Azure w celu uzyskania podstawowych raportów użycia, które obejmują takie informacje, jak **podsumowanie usługi RMS**, **aktywni użytkownicy usługi RMS**, **platforma urządzeń usługi RMS** i **użycie aplikacji usługi RMS**. Aby uzyskać dostęp do tych raportów z klasycznego portalu Azure, kliknij opcję **Active Directory**, wybierz i otwórz katalog, a następnie kliknij opcję **RAPORTY**,
 
@@ -56,7 +51,8 @@ Więcej informacji na temat rejestrowania użycia usługi Azure Rights Managemen
 ## Włączanie rejestrowania użycia usługi Azure Rights Management
 Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączone dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure RMS przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 
 
-> [!NOTE] Przechowywanie dziennika lub korzystanie z funkcji rejestrowania nie wiąże się z żadnymi dodatkowymi kosztami.
+> [!NOTE]
+> Przechowywanie dziennika lub korzystanie z funkcji rejestrowania nie wiąże się z żadnymi dodatkowymi kosztami.
 > 
 > Do korzystania z funkcji rejestrowania użycia usługi Azure RMS przed lutym 2016 r. potrzebna była subskrypcja usługi Azure oraz wystarczająca ilość miejsca w magazynie Azure, które nie są już wymagane.
 
@@ -143,17 +139,17 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |--------------|-----------------|---------------|-----------------|
 |date|Data|Data obsługi żądania w formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|2013-06-25|
 |time|Godzina|Czas obsługi żądania w 24-godzinnym formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|21:59:28|
-|row-id|Tekst|Unikatowy identyfikator GUID dla tego rekordu dziennika.<br /><br />Ta wartość jest przydatna przy agregowaniu dzienników lub kopiowaniu dzienników do innego formatu.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|Tekst|Unikatowy identyfikator GUID dla tego rekordu dziennika. Jeśli ta wartość nie została podana, użyj wartości correlation-id do zidentyfikowania wpisu.<br /><br />Ta wartość jest przydatna przy agregowaniu dzienników lub kopiowaniu dzienników do innego formatu.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Nazwa|Nazwa żądanego interfejsu API usługi RMS.|AcquireLicense|
-|user-id|String|Użytkownik, który wysłał żądanie.<br /><br />Wartość jest ujęta w cudzysłów pojedynczy. Niektóre typy żądań są anonimowe. W takim przypadku wartość ma postać ”.|‘joe@contoso.com’|
-|result|String|‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.|‘Success’|
+|user-id|String|Użytkownik, który wysłał żądanie.<br /><br />Wartość jest ujęta w cudzysłów pojedynczy. Wywołania z klucza dzierżawy, który jest zarządzany przez użytkownika (BYOK), mają wartość **"**, która ma zastosowanie również w przypadku anonimowych typów żądań.|‘joe@contoso.com’|
+|result|String|‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.|'Success'|
 |correlation-id|Tekst|Identyfikator GUID, który jest wspólny dla dziennika klienta usługi RMS i dziennika serwera dotyczącego danego żądania.<br /><br />Ta wartość może być przydatna do rozwiązywania problemów klienta.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Tekst|Identyfikator GUID ujęty w nawiasy klamrowe, który identyfikuje chronioną zawartość (na przykład dokument).<br /><br />To pole ma wartość tylko w przypadku typu żądania AcquireLicense w polu request-type. Dla wszystkich innych typów żądań to pole jest puste.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|String|Adres e-mail właściciela dokumentu.|alice@contoso.com|
 |issuer|String|Adres e-mail wystawcy dokumentu.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|String|Identyfikator szablonu użytego do ochrony dokumentu.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|String|Nazwa pliku dokumentu objętego ochroną. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.|TopSecretDocument.docx|
-|Date-published|Data|Data, w której włączono ochronę dokumentu.|2015-10-15T21:37:00|
+|template-id|String|Identyfikator szablonu użytego do ochrony dokumentu.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|String|Nazwa pliku dokumentu objętego ochroną. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.|TopSecretDocument.docx|
+|date-published|Data|Data, w której włączono ochronę dokumentu.|2015-10-15T21:37:00|
 |c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
 
@@ -166,7 +162,7 @@ Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, i
 
 -   Jeśli używasz łącznika usługi RMS.
 
-    Żądania z tego łącznika są rejestrowane przy użyciu nazwy głównej usługi, którą usługa RMS generuje automatycznie po zainstalowaniu łącznika usługi RMS.
+    Żądania z tego łącznika są rejestrowane przy użyciu nazwy głównej usługi **Aadrm_S-1-7-0**, która jest generowana automatycznie po zainstalowaniu łącznika usług RMS.
 
 #### Popularne typy żądań
 Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tabeli przedstawiono niektóre spośród najbardziej popularnych typów żądań.
@@ -181,7 +177,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
 |Certify|Klient certyfikuje zawartość objętą ochroną.|
-|Odszyfruj|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS.|
+|KMSPDecrypt|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK).|
 |DeleteTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące usunięcia szablonu na podstawie identyfikatora szablonu.|
 |ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
 |FECreateEndUserLicenseV1|Działanie podobne do typu żądania AcquireLicense, ale dotyczy urządzeń przenośnych.|
@@ -199,7 +195,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |ServerCertify|Wykonano wywołanie z klienta z obsługą usługi RMS (na przykład programu SharePoint) dotyczące certyfikacji serwera.|
 |SetUsageLogFeatureState|Wykonano wywołanie dotyczące włączenia rejestrowania użycia.|
 |SetUsageLogStorageAccount|Wykonano wywołanie dotyczące określenia lokalizacji dzienników usługi Azure RMS.|
-|SignDigest|Wykonano wywołanie dotyczące użycia klucza w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
+|KMSPSignDigest|Wykonano wywołanie, gdy klucz zarządzany przez klienta (BYOK) został użyty w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
 |UpdateTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące aktualizacji istniejącego szablonu.|
 
 ## Uwagi dotyczące programu Windows PowerShell
@@ -229,6 +225,7 @@ Aby uzyskać więcej informacji na temat korzystania ze środowiska Windows Powe
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

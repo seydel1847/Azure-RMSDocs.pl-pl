@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS
-description:
-keywords:
+title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ Jeśli organizacja używa usług Azure RMS, możesz monitorować pliki chronione
 
 -   Zaznacz opcję, dzięki której będziesz otrzymywać wiadomość e-mail, jeśli ktoś spróbuje otworzyć chronione załączniki. Za każdym razem, kiedy ktoś spróbuje otworzyć plik, dowiesz się, kto to był, kiedy to zrobił i czy mu się to udało (czy został pomyślnie uwierzytelniony).
 
--   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md)..
+-   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS](sharing-app-track-revoke.md).
 
 ## Używanie programu Outlook: aby chronić plik udostępniany pocztą e-mail
 
@@ -45,9 +39,9 @@ Jeśli organizacja używa usług Azure RMS, możesz monitorować pliki chronione
 
     ![Dodatek dla programu Outlook dotyczący aplikacji RMS sharing](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    Jeśli ten przycisk nie jest wyświetlony, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz temat [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md)..
+    Jeśli ten przycisk nie jest wyświetlony, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
 
-2.  Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Udostępnianie chronionej zawartości](sharing-app-dialog-box.md), a następnie kliknij pozycję **Wyślij teraz**..
+2.  Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Udostępnianie chronionej zawartości](sharing-app-dialog-box.md), a następnie kliknij pozycję **Wyślij teraz**.
 
 ### Inne metody ochrony pliku udostępnianego pocztą e-mail
 Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można także użyć następujących alternatyw:
@@ -68,9 +62,9 @@ Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można ta
 
         ![Dodatek do paska narzędzi pakietu Office](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    Jeśli opcje ochrony nie są wyświetlone, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz temat [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md)..
+    Jeśli opcje ochrony nie są wyświetlone, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
 
-2.  Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Udostępnianie chronionej zawartości](sharing-app-dialog-box.md), a następnie kliknij pozycję **Wyślij**..
+2.  Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Udostępnianie chronionej zawartości](sharing-app-dialog-box.md), a następnie kliknij pozycję **Wyślij**.
 
 3.  Przez chwilę może zostać wyświetlone okno dialogowe informujące, że plik jest chroniony, po czym zostanie wyświetlona utworzona automatycznie wiadomość e-mail informująca adresatów, że jej załączniki są chronione za pomocą usług Microsoft RMS i że muszą się oni zalogować. Po kliknięciu linku logowania adresat zobaczy instrukcje i linki umożliwiające otwarcie chronionego załącznika.
 
@@ -98,6 +92,7 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

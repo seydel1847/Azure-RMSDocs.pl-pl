@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Jak umożliwiać współpracę aplikacji usługi z usługą RMS opartą na chmurze | Azure RMS
-description: W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management.
-keywords:
+title: "Jak umożliwiać współpracę aplikacji usługi z usługą RMS opartą na chmurze | Azure RMS"
+description: "W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,24 +10,22 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4c3625676c7e794ef133c75881f666bae80e0513
+ms.openlocfilehash: ad8c41c9f3f3515a817d508d8f5a8953daf4b440
+
 
 ---
 
 # Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
 
-W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx).
+W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
 **Ważne**  
-Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](/rights-management/get-started/requirements-subscriptions.md)
+Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md)
 
 ## Wymagania wstępne
 
@@ -176,6 +172,7 @@ Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Managem
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

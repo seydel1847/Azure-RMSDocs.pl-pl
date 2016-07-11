@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Omówienie | Azure RMS
-description: AD RMS i Azure RMS to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.
-keywords:
+title: "Omówienie | Azure RMS"
+description: "AD RMS i Azure RMS to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +45,7 @@ Zestaw SDK 4.2 usługi MS RMS oferuje nowe, atrakcyjne funkcje, w tym:
 
 -   **Zmieniony interfejs API** — interfejs API zestawu SDK 4.2 usługi MS RMS został przeprojektowany pod kątem maksymalnej prostoty, dzięki czemu deweloperzy mogą korzystać z prostego i przejrzystego interfejsu API szyfrowania i odszyfrowywania, który zapewnia spójne działanie usługi RMS przy minimalnym wysiłku.
 -   **Hybrydowa obsługa usług AD RMS i Azure RMS** — jedna aplikacja z włączoną obsługą usługi RMS może wykorzystywać i chronić zawartość z serwera usługi AD RMS (przy użyciu rozszerzenia usługi AD RMS dla urządzeń przenośnych) i usługi Azure RMS. Zestaw SDK 4.2 usługi MS RMS w przejrzysty sposób odnajduje odpowiednie punkty końcowe, które mogą być konfigurowane przez administratorów IT.
--   **Korzystanie z własnej biblioteki uwierzytelniania** — deweloper aplikacji może wybrać bibliotekę uwierzytelniania używaną z zestawem SDK 4.2 usługi MS RMS. Niezależnie od tego, czy jest to biblioteka [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx), czy też niestandardowa biblioteka organizacji, zestaw SDK 4.2 usługi MS RMS rozdziela stos autoryzacji, co umożliwia wybór biblioteki najlepiej odpowiadającej potrzebom użytkownika.
+-   **Korzystanie z własnej biblioteki uwierzytelniania** — deweloper aplikacji może wybrać bibliotekę uwierzytelniania używaną z zestawem SDK 4.2 usługi MS RMS. Niezależnie od tego, czy jest to biblioteka [Azure AD Authentication Library](https://msdn.microsoft.com/library/jj573266.aspx), czy też niestandardowa biblioteka organizacji, zestaw SDK 4.2 usług MS RMS rozdziela stos autoryzacji, co umożliwia wybór biblioteki najlepiej odpowiadającej potrzebom użytkownika.
 -   **Korzystanie z własnego interfejsu użytkownika** — zestaw SDK 4.2 usługi MS RMS umożliwia teraz wdrażanie własnego, niestandardowego interfejsu użytkownika. Od ochrony zawartości i wyboru szablonów po wyświetlanie i zmianę uprawnień podczas korzystania z zawartości chronionej, zestaw SDK 4.2 usługi MS RMS nie wymusza korzystania z żadnego wbudowanego interfejsu użytkownika w aplikacjach. Możesz też skorzystać z bibliotek interfejsów użytkownika usługi Microsoft RMS dla wszystkich platform. Biblioteki te są dostępne przez nasze [konto GitHub](https://github.com/AzureAD/).
 -   **Dostęp do zawartości chronionej online** — zestaw SDK 4.2 usługi MS RMS umożliwia użytkownikom aplikacji dostęp do zawartości chronionej nawet bez łączności z Internetem. Zestaw SDK 4.2 usługi MS RMS bezpiecznie zapisuje zasady użytkowania zawartości chronionej w pamięci podręcznej, co zapewnia użytkownikom dostęp do danych chronionych usługi RMS w trybie offline.
 
@@ -70,6 +65,7 @@ Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

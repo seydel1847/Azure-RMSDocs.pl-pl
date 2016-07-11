@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Konfiguracja w systemach iOS i OS X | Azure RMS
-description: Aplikacje systemów iOS i OS X mogą używać zestawu RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi AAD RM.
-keywords:
+description: "Aplikacje systemów iOS i OS X mogą używać zestawu RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi AAD RM."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +46,7 @@ Zalecamy stosowanie następującego oprogramowania na platformie programistyczne
 
     Ten zestaw SDK umożliwia tworzenie aplikacji dla systemu iOS 7.0 oraz OS X 10.8 i nowszych.
 
--   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
+-   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
 
     Aby uzyskać więcej informacji, zobacz [ADAL for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) (Biblioteka ADAL dla systemu iOS) lub [ADAL for OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal) (Biblioteka ADAL dla systemu OS X).
 
@@ -122,6 +117,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

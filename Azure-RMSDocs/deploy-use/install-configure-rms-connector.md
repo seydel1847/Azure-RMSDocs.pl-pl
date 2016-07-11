@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Instalowanie i konfigurowanie łącznika Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Instalowanie i konfigurowanie łącznika Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
+ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *Dotyczy usług: Azure Rights Management, Office 365*
 
-Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji [Wdrażanie łącznika Azure Rights Management](deploy-rms-connector.md).
+Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](deploy-rms-connector.md#prerequisites-for-the-rms-connector) dla tego wdrożenia.
 
@@ -41,7 +35,7 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
     > [!NOTE]
     > Zostanie zainstalowany pojedynczy łącznik RMS (składający się z wielu serwerów w celu zapewnienia wysokiej dostępności) na dzierżawę (dzierżawę usługi Office 365 lub dzierżawę usługi Azure AD). W przeciwieństwie do usługi Active Directory RMS nie musisz instalować łącznika usług RMS w każdym lesie.
 
-2.  Pobierz pliki źródłowe dla łącznika usług RMS z [Centrum pobierania firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+2.  Pobierz pliki źródłowe dla łącznika usług RMS z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
     Aby zainstalować łącznik usług RMS, pobierz plik RMSConnectorSetup.exe.
 
@@ -53,7 +47,7 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
 
 3.  Na komputerze, na którym chcesz zainstalować łącznik usług RMS, uruchom plik **RMSConnectorSetup.exe** z uprawnieniami administratora.
 
-4.  Na stronie powitalnej strony Instalatora łącznika zarządzania prawami firmy Microsoft, wybierz opcję **Zainstaluj łącznik usługi Microsoft Rights Management na komputerze**, a następnie kliknij przycisk **Dalej**.
+4.  Na stronie powitalnej strony Instalator łącznika usługi Microsoft Rights Management wybierz pozycję **Zainstaluj łącznik usługi Microsoft Rights Management na komputerze**, a następnie kliknij przycisk **Dalej**.
 
 5.  Przeczytaj i zaakceptuj postanowienia licencyjne łącznika usług RMS, a następnie kliknij przycisk **Dalej**.
 
@@ -68,16 +62,18 @@ Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-serv
 
 Można użyć konta, które ma jedno z następujących uprawnień:
 
--   **Administrator dzierżawy usługi Office 365**: Konto, które jest administratorem globalnym dla dzierżawy usługi Office 365.
+-   **Administrator globalny dla dzierżawy**: konto administratora globalnego dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD.
 
--   **Administrator globalny usługi Azure Rights Management**: Konto z uprawnieniami administratora dla dzierżawy usług Azure RMS.
+-   **Administrator globalny usługi Azure Rights Management**: konto w usłudze Azure Active Directory, któremu przypisano rolę administratora globalnego usługi Azure RMS.
 
--   **Administrator łącznika usług Microsoft RMS**: Konto w usłudze Azure Active Directory, któremu udzielono prawa do instalowania łącznika usług RMS dla Twojej organizacji i administrowania tym łącznikiem.
+-   **Administrator łącznika usługi Azure Rights Management**: konto w usłudze Azure Active Directory, któremu przyznano prawa do instalowania łącznika usługi RMS dla Twojej organizacji i administrowania tym łącznikiem.
 
     > [!NOTE]
-    > Jeśli chcesz użyć konta administratora łącznika programu Microsoft RMS, musisz najpierw wykonać następujące czynności, aby przypisać rolę administratora łącznika usług RMS:
+    > Rola administratora globalnego usługi Azure Rights Management i roli administratora łącznika usługi Azure Rights Management jest przypisana do kont za pomocą polecenia cmdlet [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) usługi Azure RMS.
+    > 
+    > Aby uruchomić łącznik usługi RMS z najmniejszymi uprawnieniami, utwórz w tym celu dedykowane konto, dla którego zostanie następnie przypisana rola administratora łącznika usługi Azure RMS w następujący sposób:
     >
-    > 1.  Na tym samym komputerze pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Windows PowerShell dla usług Azure Rights Management](install-powershell.md).
+    > 1.  Jeśli jeszcze nie zostało to zrobione, pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
     >
     >     Uruchom program Windows PowerShell za pomocą polecenia **Uruchom jako administrator** i połącz się z usługą Azure RMS za pomocą polecenia [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx):
     >
@@ -97,9 +93,9 @@ Można użyć konta, które ma jedno z następujących uprawnień:
     >     ```
     >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
     >     ```
-    >     Na przykład wpisz: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role " ConnectorAdministrator "**
+    >     Na przykład wpisz: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
     >
-    >     Mimo że te polecenia korzystają z roli ConnectorAdministrator, można w tym miejscu użyć również roli GlobalAdministrator.
+    >     Mimo że te polecenia przypisują rolę ConnectorAdministrator, można w tym miejscu użyć również roli GlobalAdministrator.
 
 W procesie instalacji łącznika usług RMS weryfikowane i instalowane jest całe wstępnie wymagane oprogramowanie, instalowana jest usługa Internet Information Services (IIS), jeśli nie została zainstalowana wcześniej, oraz instalowane i konfigurowane jest oprogramowanie łącznika. Ponadto usługa Azure RMS zostaje przygotowana do konfiguracji poprzez utworzenie następujących obiektów:
 
@@ -111,7 +107,7 @@ Na ostatniej stronie kreatora wykonaj następujące czynności, a następnie kli
 
 -   Jeśli jest to pierwszy łącznik, który został zainstalowany, nie zaznaczaj w tej chwili opcji **Uruchom konsolę administratora łącznika do autoryzowania serwerów**. Zaznaczysz tę opcję po zainstalowaniu drugiego (lub końcowego) łącznika usług RMS. Zamiast tego uruchom ponownie kreatora na co najmniej jednym komputerze. Należy zainstalować co najmniej dwa łączniki.
 
--   Jeśli zainstalowano drugi (lub końcowy) łącznik, zaznacz opcję **Uruchom konsolę administratora łącznika do autoryzowania serwerów**.
+-   Jeśli zainstalowano drugi (lub końcowy) łącznik, wybierz pozycję **Uruchom konsolę administratora łącznika do autoryzowania serwerów**.
 
 > [!TIP]
 > W tym momencie dostępny jest test weryfikujący, który można wykonać, aby sprawdzić, czy usługi sieci web dla łącznika usług RMS działają:
@@ -173,7 +169,7 @@ Nazwa serwera w adresie URL łącznika może być dowolną nazwą w kontrolowany
 > [!IMPORTANT]
 > Zaleca się nie zmieniać tej nazwy po skonfigurowaniu serwerów programu Exchange i SharePoint do korzystania z łącznika, ponieważ należy następnie wyczyść wszystkie konfiguracje IRM tych serwerów i skonfigurować je ponownie.
 
-Po utworzeniu nazwy w systemie DNS i skonfigurowaniu jej dla adresu IP należy skonfigurować dla tego adresu funkcję równoważenia obciążenia kierującą ruch do serwerów łącznika. Do tego celu można wykorzystać dowolną usługę równoważenia obciążenia opartą na protokole IP, która obejmuje funkcję równoważenia obciążenia sieciowego (NLB) w systemie Windows Server. Aby uzyskać więcej informacji, zobacz [Przewodnik wdrażania usługi równoważenia obciążenia](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)..
+Po utworzeniu nazwy w systemie DNS i skonfigurowaniu jej dla adresu IP należy skonfigurować dla tego adresu funkcję równoważenia obciążenia kierującą ruch do serwerów łącznika. Do tego celu można wykorzystać dowolną usługę równoważenia obciążenia opartą na protokole IP, która obejmuje funkcję równoważenia obciążenia sieciowego (NLB) w systemie Windows Server. Aby uzyskać więcej informacji, zobacz [Load Balancing Deployment Guide](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Przewodnik wdrażania usługi równoważenia obciążenia).
 
 Aby skonfigurować klaster równoważenia obciążenia sieciowego, użyj następujących ustawień:
 
@@ -238,12 +234,13 @@ Aby zainstalować narzędzie administracyjne łącznika usług RMS, uruchom nast
 
 -   Na komputerze 64-bitowym: RMSConnectorSetup.exe
 
-Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania firmy Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 
 ## Następne kroki
 Teraz, gdy łącznik RMS jest zainstalowany i skonfigurowany, można przystąpić do konfigurowania serwerów lokalnych, aby mogły z niego korzystać. Przejdź do sekcji [Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management](configure-servers-rms-connector.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

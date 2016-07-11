@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Uwagi dotyczące wdrażania klienta usługi RMS | Azure RMS
-description:
-keywords:
+title: "Uwagi dotyczące wdrażania klienta usługi RMS | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
+ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+
 
 ---
 
@@ -42,7 +36,8 @@ Klient usługi RMS może być za darmo dystrybuowany i umieszczany w pakietach z
 ## Instalowanie klienta usługi RMS
 Klient RMS jest dostępny w pliku wykonywalnym instalatora o nazwie **setup_msipc_***<arch>***.exe**, gdzie *<arch>* to **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalatora w wersji 32-bitowej (x86) nie można uruchomić w 64-bitowej instalacji systemu Windows.
 
-> [!NOTE] Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
+> [!NOTE]
+> Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
 
 Klienta usługi RMS można zainstalować przy użyciu jednej z następujących metod instalacji:
 
@@ -192,7 +187,8 @@ Jeśli nie chcesz używać punktu połączenia usługi lub jeśli punkt połącz
 
 2.  W Edytorze rejestru przejdź do klucza **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**.
 
-    > [!IMPORTANT] W przypadku używania 32-bitowej aplikacji na 64-bitowym komputerze ścieżka będzie następująca: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT]
+    > W przypadku używania 32-bitowej aplikacji na 64-bitowym komputerze ścieżka będzie następująca: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  Aby utworzyć podklucz ServiceLocation, kliknij prawym przyciskiem myszy pozycję **MSIPC**, wskaż pozycję **Nowy**, kliknij pozycję **Klucz**, a następnie wpisz ciąg **ServiceLocation**.
 
@@ -233,7 +229,8 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
     **Wartość:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE] Jeśli stary serwer licencyjny ma określony intranetowy i ekstranetowy adres URL, nowe mapowanie nazwy i wartości musi zostać ustawione dla obu tych adresów URL w kluczu LicensingRedirection.
+    > [!NOTE]
+    > Jeśli stary serwer licencyjny ma określony intranetowy i ekstranetowy adres URL, nowe mapowanie nazwy i wartości musi zostać ustawione dla obu tych adresów URL w kluczu LicensingRedirection.
 
 5.  Powtórz poprzedni krok w przypadku wszystkich serwerów, które muszą zostać przekierowane.
 
@@ -241,6 +238,7 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Operacje związane z kluczem dzierżawy usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Operacje związane z kluczem dzierżawy usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 44408fd8f9da73d8050e0938aa1cc9bc76688bed
+
 
 ---
 
@@ -31,7 +25,7 @@ ms.suite: ems
 
 W zależności od topologii klucza dzierżawy (zarządzany przez firmę Microsoft lub zarządzany przez klienta) będziesz mieć różne poziomy kontroli i odpowiedzialności za klucz dzierżawy usługi Microsoft Azure Rights Management (Azure RMS) po jego wdrożeniu.
 
-Jeśli zarządzasz swoim kluczem dzierżawy, taką sytuację najczęściej nazywa się scenariuszem z użyciem własnego klucza (BYOK, bring your own key). Aby uzyskać więcej informacji na temat tego scenariusza i dowiedzieć się, jak wybrać odpowiednią topologię klucza dzierżawy, zobacz temat [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md)..
+Jeśli zarządzasz swoim kluczem dzierżawy, taką sytuację najczęściej nazywa się scenariuszem z użyciem własnego klucza (BYOK, bring your own key). Aby uzyskać więcej informacji na temat tego scenariusza i dowiedzieć się, jak wybrać odpowiednią topologię klucza dzierżawy, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 W poniższej tabeli przedstawiono operacje, które można wykonać w zależności od topologii wybranej dla klucza dzierżawy usługi Azure RMS.
 
@@ -54,6 +48,7 @@ Po zidentyfikowaniu wdrożonej topologii wybierz jeden z poniższych elementów,
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

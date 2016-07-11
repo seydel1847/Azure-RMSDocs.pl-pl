@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Wyświetlanie i używanie plików chronionych przez usługę Rights Management | Azure RMS
-description:
-keywords:
+title: "Wyświetlanie i używanie plików chronionych przez usługę Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -36,10 +30,10 @@ Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalow
 >
 > Jeśli Twoja organizacja nie korzysta z usługi Azure Rights Management (Azure RMS) ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci otwieranie plików chronionych za pomocą usług RMS.
 >
-> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469)..
+> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
-> -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md)..
+> -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
 ## Aby wyświetlić chroniony plik
 W Eksploratorze plików lub wiadomości e-mail zawierającej załącznik kliknij dwukrotnie chroniony plik, po czym wprowadź swoje poświadczenia, jeśli zostanie wyświetlony odpowiedni komunikat.
@@ -59,7 +53,7 @@ Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić
 
     ![Okno dialogowe pliku pfile udostępnionego w wiadomości e-mail w przypadku korzystania z aplikacji RMS sharing](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **Plik ma rozszerzenie nazwy *ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*).)**
+- **Plik ma rozszerzenie nazwy *ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
 
     Plik jest chroniony natywnie jako kopia tylko do odczytu.
 
@@ -89,9 +83,9 @@ Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odcz
 
     Jeśli na przykład plik był chroniony za pomocą nazwy pliku dokument.vsdx.pfile, wyświetl ten plik i w Eksploratorze plików zapisz go jako dokument.vsdx.
 
-    Nowy plik nie jest już chroniony. Jeśli chcesz go chronić, musisz to zrobić ręcznie. Aby uzyskać instrukcje, zobacz [Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-in-place.md)..
+    Nowy plik nie jest już chroniony. Jeśli chcesz go chronić, musisz to zrobić ręcznie. Aby uzyskać instrukcje, zobacz [Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-in-place.md).
 
-- **Plik ma rozszerzenie nazwy *ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*).)**
+- **Plik ma rozszerzenie nazwy *ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
 
     Możesz jedynie wyświetlić plik, a w przypadku zmiany nazwy lub przeniesienia pliku będzie on nadal chroniony.
 
@@ -113,6 +107,7 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików | Azure RMS
-description:
-keywords:
+title: "Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w artykule [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
 
 *&#42;&#42;Zastrzeżenie&#42;&#42;: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy*
-*skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.*
+*skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE bez jakichkolwiek gwarancji.*
 
 ```
 <#
@@ -180,6 +174,7 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 Powrót do tematu [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

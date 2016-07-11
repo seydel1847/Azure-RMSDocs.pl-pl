@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 3 | Azure RMS
-description:
-keywords:
+title: "Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 3 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,17 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+
 
 ---
 
@@ -36,7 +28,7 @@ Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania usług AD RMS
 
 ## Krok 6. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online
 
-Jeśli wcześniej zaimportowano zaufaną domenę publikacji z usług AD RMS do usługi Exchange Online, należy usunąć tę domenę, aby uniknąć konfliktu szablonów i zasad po przeprowadzeniu migracji do usługi Azure RMS. W tym celu użyj polecenia cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/en-us/library/jj200720%28v=exchg.150%29.aspx) w usłudze Exchange Online.
+Jeśli wcześniej zaimportowano zaufaną domenę publikacji z usług AD RMS do usługi Exchange Online, należy usunąć tę domenę, aby uniknąć konfliktu szablonów i zasad po przeprowadzeniu migracji do usługi Azure RMS. W tym celu użyj polecenia cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w usłudze Exchange Online.
 
 W przypadku wybrania topologii klucza dzierżawy usługi Azure RMS **Zarządzany przez firmę Microsoft**:
 
@@ -52,7 +44,7 @@ W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Ex
 Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele zaufanych domen publikacji użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
-> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure RMS zgodnie z opisem z sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md)..
+> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure RMS zgodnie z opisem z sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
 
 ### Wyłączanie funkcji IRM na serwerach Exchange Server i usuwanie konfiguracji usług AD RMS
 
@@ -82,19 +74,19 @@ Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele z
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  Na każdym serwerze Exchange Server zresetuj usługi IIS, na przykład uruchamiając wiersz polecenia jako administrator, a następnie wpisując polecenie **iisreset**..
+6.  Na każdym serwerze Exchange Server zresetuj usługi IIS, na przykład uruchamiając wiersz polecenia jako administrator, a następnie wpisując ciąg **iisreset**.
 
 ### Wyłączanie funkcji IRM na serwerach SharePoint Server i usuwanie konfiguracji usług AD RMS
 
 1.  Upewnij się, że nie istnieją żadne dokumenty wyewidencjonowane z bibliotek chronionych za pomocą usługi RMS. Jeśli takie dokumenty istnieją, po zakończeniu wykonywania tej procedury staną się niedostępne.
 
-2.  W witrynie Administracja centralna programu SharePoint w sieci Web w sekcji **Szybkie uruchamianie** kliknij pozycję **Zabezpieczenia**..
+2.  W witrynie Administracja centralna programu SharePoint w sieci Web w sekcji **Szybkie uruchamianie** kliknij pozycję **Zabezpieczenia**.
 
-3.  Na stronie **Zabezpieczenia** w sekcji **Zasady dotyczące informacji** kliknij pozycję **Konfiguruj zarządzanie prawami do informacji**..
+3.  Na stronie **Zabezpieczenia** w sekcji **Zasady dotyczące informacji** kliknij pozycję **Konfiguruj zarządzanie prawami do informacji**.
 
-4.  Na stronie **Zarządzanie prawami do informacji** w sekcji **Zarządzanie prawami do informacji** zaznacz pole **Nie używaj usługi IRM na tym serwerze**, a następnie kliknij przycisk **OK**..
+4.  Na stronie **Zarządzanie prawami do informacji** w sekcji **Zarządzanie prawami do informacji** zaznacz pole **Nie używaj usługi IRM na tym serwerze**, a następnie kliknij przycisk **OK**.
 
-5.  Na każdym komputerze z programem SharePoint Server usuń zawartość folderu \ProgramData\Microsoft\MSIPC\Server\*&lt;Identyfikator SID konta, na którym działa serwer SharePoint Server.&gt;*.
+5.  Na każdym komputerze z programem SharePoint Server usuń zawartość folderu \ProgramData\Microsoft\MSIPC\Server\*&lt;Identyfikator SID konta, na którym działa program SharePoint Server&gt;*.
 
 #### Instalowanie i konfigurowanie łącznika usługi RMS
 
@@ -106,7 +98,7 @@ Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele z
 
     Podczas wprowadzania tych zmian rejestru postępuj zgodnie z następującymi instrukcjami:
 
-    -   Zastąp wartość *ConnectorFQDN* nazwą łącznika zdefiniowaną w systemie DNS. Na przykład **rmsconnector.contoso.com**..
+    -   Zastąp wartość *ConnectorFQDN* nazwą łącznika zdefiniowaną w systemie DNS. Na przykład **rmsconnector.contoso.com**.
 
     -   W adresie URL łącznika użyj prefiksu protokołu HTTP lub HTTPS w zależności od protokołu, który ma być używany zgodnie z konfiguracją łącznika podczas komunikacji na serwerach lokalnych.
 
@@ -219,8 +211,9 @@ Jeden z następujących elementów w zależności od tego, czy podczas komunikac
 Po wykonaniu tych procedur zapoznaj się z sekcją **Następne kroki** w artykule [Wdrażanie łącznika usług Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## Następne kroki
-Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md)..
+Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

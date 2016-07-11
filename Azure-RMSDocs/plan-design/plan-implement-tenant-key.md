@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ Użyj zawartych w tej sekcji informacji oraz procedur, aby wygenerować klucz dz
 
 
 > [!IMPORTANT]
-> Jeśli używasz już usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (usługa została aktywowana) i masz użytkowników, którzy korzystają z pakietu Office 2010, przed rozpoczęciem realizacji tych procedur [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support). W zależności od scenariusza i wymagań może być możliwe dalsze używanie funkcji BYOK, mogą jednak mieć zastosowanie wybrane ograniczenia lub może zajść potrzeba wykonania dodatkowych kroków.
+> Jeśli używasz już usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (usługa została aktywowana) i masz użytkowników, którzy korzystają z pakietu Office 2010, przed rozpoczęciem realizacji tych procedur [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support). W zależności od scenariusza i wymagań może być możliwe dalsze używanie funkcji BYOK, mogą jednak mieć zastosowanie wybrane ograniczenia lub może zajść potrzeba wykonania dodatkowych kroków.
 > 
-> [Skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support) także wtedy, gdy w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
+> [Skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) także wtedy, gdy w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
 
 ### Wymagania wstępne dotyczące funkcji BYOK
 Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, aby móc korzystać z funkcji BYOK.
@@ -114,7 +108,7 @@ Procedury generowania i użytkowania klucza dzierżawy różnią się w zależno
     > [!NOTE]
     > Klucz dzierżawy może być bezpiecznie przesyłany za pośrednictwem niezaufanych komputerów i sieci, ponieważ jest on zaszyfrowany i zabezpieczony z użyciem uprawnień z poziomu kontroli dostępu, dzięki czemu można używać go tylko w obrębie sprzętowych modułów zabezpieczeń użytkownika oraz sprzętowych modułów zabezpieczeń firmy Microsoft dla usługi Azure RMS. Skryptów należących do zestawu narzędzi można użyć w celu weryfikacji środków bezpieczeństwa oraz uzyskania bardziej szczegółowych informacji na temat sposobu wykonywania procedury po stronie firmy Thales: [Zarządzanie kluczami sprzętowymi w chmurze RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
 
--   **Osobiście:** takie rozwiązanie wymaga [skontaktowania się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support) w celu zaplanowania spotkania, podczas którego nastąpi przekazanie klucza dla usługi Azure RMS. W takim scenariuszu użytkownik musi przyjechać do biura firmy Microsoft w Redmond w stanie Waszyngton (Stany Zjednoczone) w celu przekazania klucza dzierżawy środowiska zabezpieczeń Security World usługi Azure RMS.
+-   **Osobiście:** takie rozwiązanie wymaga [skontaktowania się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) w celu zaplanowania spotkania, podczas którego nastąpi przekazanie klucza dla usługi Azure RMS. W takim scenariuszu użytkownik musi przyjechać do biura firmy Microsoft w Redmond w stanie Waszyngton (Stany Zjednoczone) w celu przekazania klucza dzierżawy środowiska zabezpieczeń Security World usługi Azure RMS.
 
 Aby uzyskać dokładne instrukcje, należy wybrać metodę wygenerowania i przekazania klucza dzierżawy: 
 
@@ -136,9 +130,9 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 2.  Rozważ włączenie funkcji rejestrowania użycia, która tworzy dzienniki uwzględniające każdą czynność wykonywaną w ramach usługi RMS.
 
-    Użytkownik samodzielnie zarządzający kluczem dzierżawy może uzyskać dostęp do rejestrów uwzględniających informacje o użyciu jego własnego klucza dzierżawy. Poniżej znajduje się przykładowy plik dziennika w programie Excel; typy żądań **Decrypt** i **SignDigest** pokazują, że klucz dzierżawy jest w użyciu.
+    Użytkownik samodzielnie zarządzający kluczem dzierżawy może uzyskać dostęp do rejestrów uwzględniających informacje o użyciu jego własnego klucza dzierżawy. Poniżej znajduje się fragment kodu z pliku dziennika wyświetlany w programie Excel; typy żądań **KMSPDecrypt** i **KMSPSignDigest** pokazują, że klucz dzierżawy jest w użyciu.
 
-    ![Plik dziennika wyświetlony w programie Excel, pokazujący, że klucz dzierżawy jest w użyciu](../media/RMS_Logging.gif)
+    ![Plik dziennika wyświetlony w programie Excel, pokazujący, że klucz dzierżawy jest w użyciu](../media/RMS_Logging.png)
 
     Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
@@ -148,6 +142,7 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

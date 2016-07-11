@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS — samouczek Szybki start — krok 4 | AZURE RMS"
-description: "Czwarty krok samouczka, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Rights Management dla swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć mniej niż 15 minut."
-keywords:
+title: "Azure RMS — samouczek Szybki start — krok 4 | Azure RMS"
+description: "Czwarty krok samouczka umożliwiającego szybkie wypróbowanie usługi Microsoft Azure Rights Management w swojej organizacji. Wystarczy wykonać 5 prostych kroków, co powinno zająć mniej niż 15 minut."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+
 
 ---
 
@@ -32,7 +30,7 @@ ms.custom:
 *Dotyczy usług: Azure Rights Management, Office 365*
 
 
-Przeskocz do: 
+Przejdź do: 
 > [!div class="op_single_selector"]
 - [Wprowadzenie](quick-start-tutorial.md)
 - [Krok 1. Aktywacja usługi Azure RMS](tutorial-step1.md)
@@ -57,17 +55,17 @@ Jeśli odbiorca kliknie link, zostanie przeniesiony do instrukcji związanych z 
 
 ### Aby wyświetlić załącznik z chronionym dokumentem
 
-1.  Jako że usługa Azure Rights Management chroni dokument programu Word, w wiadomości e-mail dostępne są dwa załączniki. Są to dwie wersje tego samego pliku o różnych rozszerzeniach nazwy pliku. Otwórz wersję z rozszerzeniem **.ppdf** (**Confidential.ppdf**).
+1.  Jako że usługa Azure Rights Management chroni dokument programu Word, w wiadomości e-mail dostępne są dwa załączniki. Są to dwie wersje tego samego pliku o różnych rozszerzeniach nazwy pliku. Otwórz wersję z rozszerzeniem **ppdf** (**Confidential.ppdf**).
 
     Jeśli na urządzeniu masz pakiet [Office w wersji z obsługą usługi Rights Management](https://technet.microsoft.com/library/dn655136.aspx), możesz otworzyć drugą wersję pliku (**Confidential.docx**), aby zobaczyć plik w programie Word.
 
-2.  Jeśli zobaczysz monit o podanie nazwy użytkownika i hasła, podaj nazwę użytkownika w takim samym formacie, jak format adresu e-mail użytego do wysłania tej wiadomości e-mail i załącznika. Na przykład **joannam@contoso.com** lub **pmichalski@fabrikam.com**. Wpisz hasło podane podczas rejestracji w usłudze RMS dla użytkowników indywidualnych. Lub, jeśli Twoja organizacja ma usługę Azure RMS, podaj zwykłe hasło do konta firmowego.
+2.  Jeśli zobaczysz monit o podanie nazwy użytkownika i hasła, podaj nazwę użytkownika w takim samym formacie jak format adresu e-mail użytego do wysłania tej wiadomości e-mail i załącznika. Na przykład **joannam@contoso.com** lub **pmichalski@fabrikam.com**. Wpisz hasło podane podczas rejestracji w usłudze RMS dla użytkowników indywidualnych. Lub, jeśli Twoja organizacja ma usługę Azure RMS, podaj zwykłe hasło do konta firmowego.
 
 Dokument zostanie otwarty i będzie można przeczytać jego zawartość. Przykładowo treść dokumentu może brzmieć: **Jeśli możesz przeczytać ten tekst z załącznika wiadomości e-mail, nadawca pomyślnie udostępnił plik chroniony za pomocą usługi Azure RMS.** Jako że dokument jest plikiem tylko do odczytu, nie możesz zmieniać jego zawartości.
 
-Opcjonalnie możesz poprosić odbiorcę o przesłanie wiadomości e-mail dalej do innych osób, które nie zostały uwzględnione w oryginalnej wiadomości e-mail. Nawet jeśli te inne osoby pracują dla organizacji, która ma usługę Azure Rights Management, lub zarejestrują własną subskrypcję usługi RMS dla użytkowników indywidualnych, nie będą mogły otworzyć załącznika. Gdy otrzymają monit o nazwę użytkownika, nastąpi odmowa dostępu do dokumentu.
+Opcjonalnie możesz poprosić odbiorcę o przesłanie wiadomości e-mail dalej do innych osób, które nie zostały uwzględnione w oryginalnej wiadomości e-mail. Nawet jeśli te inne osoby pracują w organizacji, która ma usługę Azure Rights Management, lub zarejestrują własną subskrypcję usługi RMS dla użytkowników indywidualnych, nie będą mogły otworzyć załącznika. Gdy otrzymają monit o nazwę użytkownika, nastąpi odmowa dostępu do dokumentu.
 
-Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu do innej osoby) możesz oczekiwać na powiadomienie e-mail z raportem o tym działaniu. Niemniej jednak wiadomości e-mail łatwo jest utracić z czasem, więc lepszym sposobem na śledzenie dostępu do dokumentu jest użycie witryny śledzenia dokumentu. Metoda ta jest omówiona w ostatnim kroku samouczka.
+Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu do innej osoby) możesz oczekiwać na powiadomienie e-mail z raportem o tym działaniu. Jednak wiadomości e-mail mogą się z czasem zagubić, dlatego lepszym sposobem na śledzenie dostępu do dokumentu jest użycie witryny śledzenia dokumentu. Metoda ta jest omówiona w ostatnim kroku samouczka.
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
@@ -76,9 +74,11 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 |Informacje dotyczące dwóch wersji pliku, które widać w załączniku do wiadomości e-mail|[Co to za plik ppdf, który jest automatycznie tworzony?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"] [« Krok 3](tutorial-step3.md)
+>[!div class="step-by-step"]
+[« Krok 3](tutorial-step3.md)
 [Krok 5 »](tutorial-step5.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

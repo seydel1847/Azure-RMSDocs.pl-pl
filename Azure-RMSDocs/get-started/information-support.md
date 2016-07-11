@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Informacje i pomoc techniczna dla usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Informacje i pomoc techniczna dla usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/13/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
+ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+
 
 ---
 
@@ -42,7 +36,8 @@ W poniższych zasobach znajdują się dodatkowe informacje o usłudze Microsoft 
 ## Blog grupy produktów Rights Management
 Grupa produktów Rights Management wspólnie z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) publikuje informacje techniczne i inne materiały dotyczące usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] oraz powiązanych technologii. Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
 
-> [!TIP] Jeśli tworzysz aplikacje dla usług Azure RMS lub AD RMS, być może zainteresuje Cię [Blog Developer's Corner dotyczący usług Active Directory Rights Management (AD RMS)](http://blogs.msdn.com/b/rms/).
+> [!TIP]
+> Jeśli tworzysz aplikacje dla usług Azure RMS lub AD RMS, być może zainteresuje Cię [blog Developer's Corner dotyczący usług Active Directory Rights Management (AD RMS)](https://blogs.msdn.microsoft.com/rms/).
 
 ## Opcje pomocy technicznej i zasoby społecznościowe
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
@@ -71,7 +66,15 @@ Nauka podstawowych umiejętności:
 
 Rozwiązywanie problemów:
 
-- Pobierz i uruchom [narzędzie Analizator usług RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
+- Jeśli masz pytania dotyczące sposobu działania danej funkcji, sprawdź, czy na Twoje pytanie nie ma już odpowiedzi na stronie [Często zadawane pytania](faqs.md).
+
+- Jeśli masz pytanie związane z oświadczeniem dotyczącym obsługi dla usługi Azure RMS, zobacz informację [Wymagania](requirements-azure-rms.md), która jest regularnie aktualizowana.
+
+- Aby uzyskać informacje dotyczące obsługi użytkowników końcowych, pomocy technicznej i administratorów konfigurujących usługi i aplikacje, które używają usługi Azure RMS, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików](../deploy-use/help-users.md).
+
+- Jeśli wdrożono łącznik usługi RMS dla serwerów lokalnych, zobacz informację dotyczącą [monitorowania](../deploy-use/monitor-rms-connector.md), która zawiera szczegółowe informacje o wpisach w dzienniku zdarzeń, licznikach wydajności i rejestrowaniu.
+
+- Na potrzeby zautomatyzowanego sprawdzania, automatycznego korygowania i śledzenia pobierz i uruchom [narzędzie RMS Analyzer Tool](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
 
 ### Zasoby społeczności
 
@@ -83,6 +86,7 @@ Rozwiązywanie problemów:
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

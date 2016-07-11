@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM | Azure RMS
-description:
-keywords:
+title: "Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 Te instrukcje są częścią [ścieżki migracji z usług AD RMS do usługi Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) oraz są stosowane tylko wtedy, gdy klucz usług AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Rights Management z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM. 
 
-Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) i wybierz inną konfigurację.
+Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) i wybierz inną konfigurację.
 
 Jest to składająca się z trzech części procedura, która umożliwia importowanie konfiguracji usług AD RMS do usługi Azure RMS i zastosowanie w ten sposób klucza dzierżawy usługi Azure RMS zarządzanego przez użytkownika (BYOK).
 
@@ -40,7 +34,7 @@ Należy najpierw wyodrębnić klucz certyfikatu licencjodawcy serwera (SLC) z da
 
 ## Część 1. Wyodrębnianie certyfikatu SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
 
-1.  Wykonaj kroki opisane w sekcji dotyczącej [wdrażania scenariusza BYOK („użyj własnego klucza”)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) w temacie [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md):
+1.  Postępuj zgodnie z instrukcjami w sekcji dotyczącej [wdrażania scenariusza BYOK („użyj własnego klucza”)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) w temacie [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md). Wykonaj kroki procedury **Generowanie i przenoszenie klucza dzierżawy — przez Internet** z następującymi wyjątkami:
 
     -   **Generowanie i przenoszenie klucza dzierżawy — przez Internet**: **przygotowanie stacji roboczej połączonej z Internetem**
 
@@ -79,7 +73,7 @@ Teraz po wyodrębnieniu certyfikatu SLC i przekształceniu go w klucz oparty na 
 
 ## Część 2. Tworzenie pakietu klucza HSM i przenoszenie go do usługi Azure RMS
 
-1.  Wykonaj kroki opisane w sekcji dotyczącej [wdrażania scenariusza BYOK („użyj własnego klucza”)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) w temacie [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md):
+1.  Wykonaj kroki opisane w sekcji dotyczącej [wdrażania scenariusza BYOK („użyj własnego klucza”)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) w temacie [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md):
 
     -   **Generowanie i przenoszenie klucza dzierżawy — przez Internet**: **przygotowanie klucza dzierżawy do transferu**
 
@@ -108,11 +102,12 @@ Po przeniesieniu klucza HSM do usługi Azure RMS możesz zaimportować dane konf
     Disconnect-AadrmService
     ```
 
-Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi RMS](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)..
+Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi RMS](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

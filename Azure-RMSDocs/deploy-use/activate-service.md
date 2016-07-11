@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Aktywacja usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Aktywacja usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ Alternatywnie możesz użyć programu Windows PowerShell do aktywacji usługi [!
 ## Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
 Jeśli nie chcesz, aby wszyscy użytkownicy mogli chronić pliki za pomocą usługi Azure RMS, możesz skonfigurować kontrolki dołączania, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) programu Windows PowerShell. To polecenie można uruchomić przed aktywacją lub po aktywacji usługi Azure RMS.
 
-> [!IMPORTANT] Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu Windows PowerShell usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> [!IMPORTANT]
+> Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu Windows PowerShell usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
 >
 > Aby sprawdzić zainstalowaną wersję, uruchom polecenie **(Get-Module aadrm –ListAvailable).Version**
 
@@ -86,6 +81,7 @@ Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przep
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

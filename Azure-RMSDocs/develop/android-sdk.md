@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Konfiguracja systemu Android | Azure RMS
-description: Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usług Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach.
-keywords:
+description: "Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usług Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +45,7 @@ Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 
     Ten zestaw SDK umożliwia tworzenie aplikacji dla systemu Android 4.0.3 (API level 15) i nowszych.
 
--   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
+-   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
 
     Aby uzyskać więcej informacji, zobacz [Biblioteka ADAL dla systemu Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
@@ -131,12 +126,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 -   Krok manifestu można sprawdzić, wyświetlając manifest w widoku edytora tekstu. Upewnij się, że są wyświetlane następujące wiersze:
 
 
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **Uwaga**  Zestaw SDK używa uprawnienia *android.support.v4*
@@ -158,6 +148,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

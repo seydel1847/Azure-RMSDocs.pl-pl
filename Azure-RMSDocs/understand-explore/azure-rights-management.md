@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Omówienie usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Omówienie usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -40,11 +34,12 @@ Znasz usługę Azure Rights Management pod inną nazwą? Zobacz [naszą listę a
 # Następne kroki
 Aby uzyskać więcej informacji i zapoznać się z przykładami, zobacz artykuł [Co to jest usługa Azure Rights Management?](what-is-azure-rms.md)
 
-Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS w Twojej organizacji, skorzystaj z [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md).
+Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS w Twojej organizacji, skorzystaj z [mapy wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md).
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

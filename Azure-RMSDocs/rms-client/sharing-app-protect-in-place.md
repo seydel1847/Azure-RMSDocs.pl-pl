@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS
-description:
-keywords:
+title: "Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
+
 
 ---
 
@@ -29,10 +23,10 @@ ms.suite: ems
 
 *Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
-Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który nie jest chroniony. Następnie można pozostawić plik w jego obecnej lokalizacji, skopiować do innego folderu lub na inne urządzenie albo udostępnić folder zawierający plik — aplik cały czas będzie chroniony. Chroniony plik można także dołączyć do wiadomości e-mail, chociaż zalecaną metodą udostępniania pliku chronionego pocztą e-mail jest bezpośrednie dołączenie go z poziomu Eksploratora plików lub aplikacji pakietu Office (zobacz [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md)).).
+Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który nie jest chroniony. Następnie można pozostawić plik w jego obecnej lokalizacji, skopiować do innego folderu lub na inne urządzenie albo udostępnić folder zawierający plik — aplik cały czas będzie chroniony. Chroniony plik można także dołączyć do wiadomości e-mail, chociaż zalecaną metodą udostępniania pliku chronionego pocztą e-mail jest bezpośrednie dołączenie go z poziomu Eksploratora plików lub aplikacji pakietu Office (zobacz [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md)).
 
 > [!TIP]
-> Jeśli podczas próby włączenia ochrony plików są wyświetlane błędy, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971)..
+> Jeśli podczas próby włączenia ochrony plików są wyświetlane błędy, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
 ## Aby chronić plik na urządzeniu (ochrona miejscowa)
 
@@ -41,7 +35,7 @@ Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który ni
     ![Opcja menu Ochrona miejscowa](../media/ADRMS_MSRMSApp_SP_CompanyDefined.png)
 
     > [!NOTE]
-    > Jeśli opcja **Chroń za pomocą usługi RMS** nie jest wyświetlana, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji o sposobie instalowania aplikacji RMS sharing, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md)..
+    > Jeśli opcja **Chroń za pomocą usługi RMS** nie jest wyświetlana, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji o sposobie instalowania aplikacji do udostępniania usługi RMS, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
 
 2.  Wykonaj jedną z następujących czynności:
 
@@ -51,13 +45,13 @@ Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który ni
 
         Podczas wybierania szablonu zasad można zdecydować się na ochronę wielu plików i folderu. Wybranie folderu powoduje ochronę wszystkich plików znajdujących się w tym folderze, ale nowe pliki w nim tworzone nie będą już automatycznie chronione.
 
-    -   Wybierz opcję **Uprawnienia niestandardowe**: wybierz tę opcję, jeśli szablony nie umożliwiają ustawienia odpowiedniego poziomu ochrony lub jeśli chcesz jawnie ustawić opcje ochrony. Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Dodawanie ochrony](sharing-app-dialog-box.md), a następnie kliknij przycisk **Zastosuj**..
+    -   Wybierz opcję **Uprawnienia niestandardowe**: wybierz tę opcję, jeśli szablony nie umożliwiają ustawienia odpowiedniego poziomu ochrony lub jeśli chcesz jawnie ustawić opcje ochrony. Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Dodawanie ochrony](sharing-app-dialog-box.md), a następnie kliknij przycisk **Zastosuj**.
 
 3.  Przez chwilę może zostać wyświetlone okno dialogowe informujące, że plik jest chroniony, po czym nastąpi powrót do Eksploratora plików. Wybrany plik lub pliki są teraz chronione. W niektórych przypadkach (kiedy dodanie ochrony powoduje zmianę rozszerzenia nazwy pliku) oryginalny plik znajdujący się w Eksploratorze plików zostaje zastąpiony nowym plikiem oznaczonym ikoną kłódki sygnalizującą ochronę za pomocą usługi Rights Management. Na przykład:
 
     ![Chroniony plik z ikoną kłódki dla aplikacji RMS sharing](../media/ADRMS_MSRMSApp_Pfile.png)
 
-Jeśli później będzie konieczne usunięcie ochrony z pliku, zobacz [Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-remove-protection.md)..
+Jeśli później będzie konieczne usunięcie ochrony z pliku, zobacz [Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-remove-protection.md).
 
 ## Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
@@ -70,6 +64,7 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

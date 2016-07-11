@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
+ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+
 
 ---
 
@@ -35,7 +29,8 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Rights Management (Azure RMS) w Tw
 
     Powiadom użytkowników, jak i kiedy należy chronić dokumenty i wiadomości e-mail zawierające informacje poufne. Jeśli to możliwe, podaj te informacje w odniesieniu do istniejących przepływów pracy, dzięki czemu użytkownicy będą mogli włączyć dodatkowe czynności do znanych sobie procesów, zamiast wprowadzać zupełnie nowe procesy. Poinformuj ich o korzyściach (i czynnikach ryzyka) specyficznych dla prowadzonej działalności, a także przekaż wskazówki dotyczące sytuacji, w których należy chronić pliki i wiadomości e-mail. Jeśli skonfigurowano [szablony niestandardowe](configure-custom-templates.md), udostępnij instrukcje dotyczące wyboru szablonów w przypadku, gdy nazwa i opis są niewystarczające.
 
-    > [!TIP] Przykładowe filmy dla użytkowników końcowych:
+    > [!TIP]
+    > Przykładowe filmy dla użytkowników końcowych:
     >
     > -   [Środowisko użytkownika usługi Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Śledzenie i odwoływanie dokumentów w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -75,12 +70,14 @@ Instrukcje dotyczące korzystania z tej aplikacji na komputerach z systemem Wind
 
 Aby uzyskać informacje dotyczące urządzeń przenośnych, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla platform urządzeń przenośnych](http://technet.microsoft.com/dn451248).
 
-> [!TIP] Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w artykule [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
+> [!TIP]
+> Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w artykule [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
 ## Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
 Jeśli używasz usługi Azure RMS, a aplikacja do udostępniania usług Rights Management nie została zainstalowana, użytkownicy nie będą widzieli przycisku **Udostępnij chronione** na wstążce ani opcji **Włącz ochronę miejscową** w Eksploratorze plików, które ułatwiają ochronę plików. Tacy użytkownicy muszą wykonać instrukcje podobne do następujących:
 
-> [!TIP] Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
+> [!TIP]
+> Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
 
 #### Aby chronić dokument w programie Word 2013
 
@@ -88,7 +85,8 @@ Jeśli używasz usługi Azure RMS, a aplikacja do udostępniania usług Rights M
 
 2.  W menu **Plik** kliknij polecenie **Informacje**, po czym kliknij przycisk **Ochrona dokumentu**. Kliknij pozycję **Ogranicz dostęp**, a następnie wybierz szablon, aby szybko zastosować odpowiednie prawa użytkowania, lub wybierz opcję **Ogranicz dostęp** i wybierz prawa użytkowania samodzielnie.
 
-    > [!NOTE] Jeśli korzystasz z usługi Rights Management po raz pierwszy, po nawiązaniu komunikacji z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zostanie wyświetlony monit o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office.
+    > [!NOTE]
+    > Jeśli korzystasz z usług Rights Management po raz pierwszy, po uzyskaniu kontaktu z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zostanie wyświetlony monit o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office.
 
 3.  Zapisz dokument.
 
@@ -117,6 +115,7 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

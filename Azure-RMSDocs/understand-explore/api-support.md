@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Inne aplikacje, które obsługują interfejsy API usługi RMS — instalacja i konfiguracja | Azure RMS
-description:
-keywords:
+title: "Inne aplikacje, które obsługują interfejsy API usługi RMS — instalacja i konfiguracja | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: bb69cda94bf611712eb5b4a74d9ec25d1749da3a
+
 
 ---
 
@@ -37,8 +31,9 @@ Podobnie wielu dostawców oprogramowania udostępnia aplikacje dostarczające ro
 
 ## Następne kroki
 
-Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md)..
+Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

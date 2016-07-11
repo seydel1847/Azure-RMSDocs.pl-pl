@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +58,7 @@ Umożliwia użytkownikowi zapisanie dokumentu w jego bieżącej lokalizacji.
 
 **Nazwa w szablonach usługi AD RMS**: *Zapisz*
 
-**Stała lub wartość API**: IPC_GENERIC_WRITEL"EDIT"
+**Stała lub wartość interfejsu API**: IPC_GENERIC_WRITE L"EDIT"
 
 W aplikacjach pakietu Office to prawo umożliwia użytkownikowi modyfikowanie dokumentu.
 
@@ -83,7 +76,7 @@ Pozwala dodawać adnotacje i komentarze do zawartości.
 
 **Nazwa w szablonach usługi AD RMS:** nie zaimplementowane.
 
-**Stała lub wartość interfejsu API**: IPC_GENERIC_COMMENTL"COMMENT
+**Stała lub wartość interfejsu API**: IPC_GENERIC_COMMENT L"COMMENT
 
 To prawo jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc w module RMS Protection w środowisku Windows PowerShell. Zostało zaimplementowane w niektórych aplikacjach dostawców oprogramowania. Nie jest jednak powszechnie używane i obecnie nie jest obsługiwane przez aplikacje pakietu Office.
 
@@ -101,7 +94,7 @@ Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przyp
 
 **Nazwa w szablonach usługi AD RMS:** *Eksportuj (Zapisz jako)*
 
-**Stała lub wartość interfejsu API**: IPC_GENERIC_EXPORTL"EXPORT"
+**Stała lub wartość interfejsu API**: IPC_GENERIC_EXPORT L"EXPORT"
 
 To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji *Wyślij do programu OneNote*.
 
@@ -119,7 +112,7 @@ Włącza opcję przekazywania dalej wiadomości e-mail oraz dodawania adresatów
 
 **Nazwa w szablonach usługi AD RMS:** *Prześlij dalej*
 
-**Stała lub wartość interfejsu API:** IPC_EMAIL_FORWARDL"FORWARD"
+**Stała lub wartość interfejsu API:** IPC_EMAIL_FORWARD L"FORWARD"
 
 Nie zezwala osobie przekazującej wiadomość dalej na przyznanie praw innym użytkownikom jako części akcji przekazywania.
 
@@ -137,7 +130,7 @@ Przyznaje wszystkie prawa do dokumentu. Można wykonywać wszystkie dostępne ak
 
 **Nazwa w szablonach usługi AD RMS:** *Pełna kontrola*
 
-**Stała lub wartość interfejsu API:** IPC_GENERIC_ALLL"OWNER"
+**Stała lub wartość interfejsu API:** IPC_GENERIC_ALL L"OWNER"
 
 Obejmuje możliwość usunięcia ochrony.
 
@@ -155,7 +148,7 @@ Włącza opcje związane z drukowaniem zawartości.
 
 **Nazwa w szablonach usługi AD RMS:** *Drukuj*
 
-**Stała lub wartość interfejsu API:** IPC_GENERIC_PRINTL"PRINT
+**Stała lub wartość interfejsu API:** IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +180,7 @@ Włącza opcję *Odpowiedz wszystkim* w kliencie poczty e-mail, ale nie zezwala 
 
 **Nazwa w szablonach usługi AD RMS:** *Odpowiedz wszystkim*
 
-**Stała lub wartość interfejsu API:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**Stała lub wartość interfejsu API:** IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +196,7 @@ Umożliwia użytkownikom otworzenie dokumentu i wyświetlenie zawartości.
 
 **Nazwa w szablonach usługi AD RMS:** *Wyświetl*
 
-**Stała lub wartość interfejsu API:** IPC_GENERIC_READL"VIEW"
+**Stała lub wartość interfejsu API:** IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +212,7 @@ Włącza opcje kopiowania danych (w tym przechwytywania ekranu) z dokumentu do t
 
 **Nazwa w szablonach usługi AD RMS:** *Wyodrębnij*
 
-**Stała lub wartość interfejsu API:** IPC_GENERIC_EXTRACTL"EXTRACT"
+**Stała lub wartość interfejsu API:** IPC_GENERIC_EXTRACT L"EXTRACT"
 
 W niektórych aplikacjach pozwala także na zapisanie całego dokumentu w postaci niechronionej.
 
@@ -293,6 +286,7 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej | Azure RMS
-description:
-keywords:
+title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+
 
 ---
 
@@ -56,7 +49,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Występuje jedna z poniższych konfiguracji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### Aby skonfigurować szablon niestandardowy dla przedstawicieli kadry kierowniczej
 
@@ -105,7 +98,7 @@ Skorzystaj z poniższego szablonu i skopiuj to zawiadomienie do wiadomości dla 
 
 4.  Zastąp parametr *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny internetowej lub adres e-mail albo numer telefonu.
 
-5.  Wprowadź inne potrzebne zmiany w tym zawiadomieniu, a następnie wyślij je do odpowiednich użytkowników.
+5.  Wprowadź dodatkowe zmiany, które chcesz uwzględnić w tym powiadomieniu, a następnie wyślij je do odpowiednich użytkowników.
 
 W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
@@ -138,6 +131,7 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

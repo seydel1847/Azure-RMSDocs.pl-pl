@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Generowanie i przekazywanie klucza dzierżawy — przez Internet | Azure RMS
-description:
-keywords:
+title: "Generowanie i przekazywanie klucza dzierżawy — przez Internet | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -46,11 +40,11 @@ Aby przygotować stację roboczą podłączoną do Internetu, wykonaj poniższe 
 Z poziomu stacji roboczej podłączonej do Internetu pobierz i zainstaluj moduł Windows PowerShell dla usługi Azure Rights Management.
 
 > [!NOTE]
-> Jeśli wcześniej pobrano ten moduł Windows PowerShell, uruchom następujące polecenie, aby sprawdzić, czy dostępna jest wersja 2.1.0.0 lub nowsza: `(Get-Module aadrm -ListAvailable).Version`
+> Jeśli wcześniej pobrano ten moduł programu Windows PowerShell, uruchom następujące polecenie, aby sprawdzić, czy dostępna jest wersja 2.1.0.0 lub nowsza: `(Get-Module aadrm -ListAvailable).Version`
 
-Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+Aby uzyskać instrukcje instalacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
-### Krok 2. Uzyskanie identyfikatora dzierżawy usługi Azure Active Directory
+### Krok 2: Uzyskanie identyfikatora dzierżawy usługi Azure Active Directory
 Uruchom program Windows PowerShell za pomocą polecenia **Uruchom jako administrator**, a następnie uruchom poniższe polecenia:
 
 -   Użyj polecenia cmdlet [Connect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629415.aspx), aby połączyć się z usługą Azure RMS:
@@ -85,17 +79,17 @@ Przejdź do Centrum pobierania Microsoft i [pobierz zestaw narzędzi BYOK](http:
 |Azja|AzureRMS-BYOK-tools-AsiaPacific.zip|
 Zestaw narzędzi zawiera następujące pozycje:
 
--   Pakiet klucza wymiany klucza, którego nazwa zaczyna się od **BYOK-KEK-pkg-**.
+-   Pakiet klucza wymiany klucza (KEK), którego nazwa zaczyna się od **BYOK-KEK-pkg-**.
 
 -   Pakiet środowiska zabezpieczeń Security World, którego nazwa zaczyna się od **BYOK-SecurityWorld-pkg-**.
 
 -   Skrypt w języku python o nazwie **verifykeypackage.py**.
 
--   Plik wykonywalny wiersza polecenia o nazwie **KeyTransferRemote.exe**, plik metadanych o nazwie **KeyTransferRemote.exe.config** oraz skojarzone biblioteki DLL.
+-   Plik wykonywalny wiersza polecenia o nazwie **KeyTransferRemote.exe**, plik metadanych o nazwie **KeyTransferRemote.exe.config** oraz powiązane biblioteki dll.
 
 -   Pakiet redystrybucyjny Visual C++ o nazwie **vcredist_x64.exe**.
 
-Skopiuj pakiet na dysk USB lub inne przenośne urządzenie pamięci masowej.
+Skopiuj pakiet na dysk USB lub do innego przenośnego urządzenia pamięci masowej.
 
 ## Przygotowanie odłączonej stacji roboczej
 Aby przygotować stację roboczą, która nie jest podłączona do sieci (Internetu lub sieci wewnętrznej), należy wykonać poniższe dwa kroki:
@@ -107,14 +101,14 @@ Aby przygotować stację roboczą, która nie jest podłączona do sieci (Intern
 ### Krok 1. Przygotowanie odłączonej stacji roboczej z użyciem modułu HSM firmy Thales
 Na odłączonej stacji roboczej będącej komputerem z systemem Windows zainstaluj oprogramowanie wspomagające nCipher firmy Thales, a następnie podłącz do tego komputera sprzętowy moduł zabezpieczeń (HSM, hardware security module) firmy Thales.
 
-Upewnij się, że narzędzia firmy Thales znajdują się w ścieżce **%nfast_home%\bin** i **%nfast_home%\python\bin**. Na przykład wpisz następujące polecenie:
+Upewnij się, że narzędzia firmy Thales znajdują się w ścieżce **%nfast_home%\bin** i **%nfast_home%\python\bin**. W wierszu polecenia można wprowadź na przykład następujący tekst:
 
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-Więcej informacji znajduje się w podręczniku użytkownika dołączonym do modułu HSM firmy Thales oraz w witrynie sieci Web firmy Thales poświęconej usłudze Azure RMS, dostępnej pod adresem [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+Więcej informacji znajduje się w podręczniku użytkownika dołączonym do sprzętowego modułu zabezpieczeń firmy Thales oraz w witrynie sieci Web firmy Thales poświęconej usłudze Azure RMS, dostępnej pod adresem [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
-### Krok 2. Instalacja zestawu narzędzi BYOK na odłączonej stacji roboczej
+### Krok 2: Instalacja zestawu narzędzi BYOK na odłączonej stacji roboczej
 Skopiuj pakiet zestawu narzędzi BYOK z dysku USB lub innego przenośnego urządzenia pamięci masowej, a następnie wykonaj następujące czynności:
 
 1.  Wyodrębnij pliki z pobranego pakietu do dowolnego folderu.
@@ -188,9 +182,9 @@ Ta czynność jest opcjonalna, ale zaleca się jej wykonanie w celu upewnienia s
 
 2.  Upewnij się, że widoczny jest następujący komunikat, który potwierdza pomyślny wynik weryfikacji: **Result: SUCCESS** (Wynik: POWODZENIE).
 
-Ten skrypt sprawdza łańcuch osoby podpisującej aż do klucza głównego firmy Thales. Skrót klucza głównego jest osadzony w skrypcie. Jego wartość powinna wynosić **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. Można również potwierdzić tę wartość osobno, odwiedzając [witrynę sieci Web firmy Thales](http://www.thalesesec.com/).
+Ten skrypt sprawdza łańcuch osoby podpisującej aż do klucza głównego firmy Thales. Skrót klucza głównego jest osadzony w skrypcie; jego wartość powinna wynosić **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**. Można również potwierdzić samą tę wartość, odwiedzając [witrynę sieci Web firmy Thales](http://www.thalesesec.com/).
 
-Teraz możesz utworzyć nowy klucz, który będzie pełnił rolę klucza dzierżawy usługi RMS.
+Możesz teraz utworzyć nowy klucz, który będzie pełnił rolę klucza dzierżawy usługi RMS.
 
 ### Krok 3. Utworzenie nowego klucza
 Wygeneruj klucz CNG, korzystając z programów **generatekey** i **cngimport** firmy Thales.
@@ -269,7 +263,7 @@ Aby ograniczyć uprawnienia mające zastosowanie w przypadku danego klucza dzier
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-Podczas uruchamiania tego polecenia zastąp wartość *contosokey* taką samą wartością jak ta podana w czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](##step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
+Podczas uruchamiania tego polecenia zastąp wartość *contosokey* taką samą wartością jak ta podana w czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](#step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
 
 Zostanie wyświetlona prośba o podłączenie kart z zestawu kart administratora środowiska zabezpieczeń oraz wpisanie ich haseł lub numerów PIN, jeśli je określono.
 
@@ -290,7 +284,7 @@ Opcjonalnie możesz uruchomić narzędzia firmy Thales, aby potwierdzić minimal
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-Podczas uruchamiania tych poleceń zastąp wartość *contosokey* taką samą wartością jak ta podana w czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](##step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
+Podczas uruchamiania tego polecenia zastąp wartość *contosokey* taką samą wartością jak ta podana w czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](#step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
 
 ### Krok 3. Zaszyfrowanie klucza przy użyciu klucza wymiany kluczy firmy Microsoft
 Uruchom jedno z następujących poleceń, w zależności od regionu:
@@ -315,7 +309,7 @@ Uruchom jedno z następujących poleceń, w zależności od regionu:
 
 Podczas uruchamiania tego polecenia należy zastosować się do następujących instrukcji:
 
--   Zastąp wartość *contosokey* identyfikatorem użytym do wygenerowania klucza w ramach czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](##step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
+-   Zastąp wartość *contosokey* identyfikatorem użytym do wygenerowania klucza w ramach czynności [Krok 1. Utworzenie środowiska zabezpieczeń Security World](#step-1-create-a-security-world) w sekcji *Generowanie klucza dzierżawy*.
 
 -   Zastąp identyfikator *GUID* identyfikatorem dzierżawy usługi Azure Active Directory, który uzyskano, wykonując czynność [Krok 2. Uzyskanie identyfikatora dzierżawy usługi Azure Active Directory](#step-2-get-your-azure-active-directory-tenant-id) w sekcji *Przygotowanie stacji roboczej podłączonej do Internetu*.
 
@@ -383,6 +377,7 @@ Wykonanie tych czynności kończy procedurę przekazywania własnego klucza prze
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

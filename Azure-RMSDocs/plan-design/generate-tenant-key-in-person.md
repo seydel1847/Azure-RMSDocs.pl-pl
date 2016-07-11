@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Generowanie i przekazywanie klucza dzierżawy — osobiście | Azure RMS
-description:
-keywords:
+title: "Generowanie i przekazywanie klucza dzierżawy — osobiście | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+
 
 ---
 
@@ -42,9 +36,9 @@ Aby wygenerować klucz dzierżawy, należy wykonać poniższe trzy kroki:
 -   [Krok 3. Utworzenie nowego klucza](#step-3-create-a-new-key)
 
 ### Krok 1. Przygotowanie stacji roboczej z modułem HSM firmy Thales
-Zainstaluj oprogramowanie wspomagające nCipher firmy Thales na komputerze z systemem Windows. Podłącz sprzętowy moduł zabezpieczeń (HSM, hardware security module) firmy Thales do komputera. Upewnij się, że narzędzia firmy Thales są dostępne w znanej ścieżce. Więcej informacji znajduje się w podręczniku użytkownika dołączonym do modułu HSM firmy Thales oraz w witrynie sieci Web firmy Thales poświęconej usłudze Azure RMS, dostępnej pod adresem [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+Zainstaluj oprogramowanie wspomagające nCipher firmy Thales na komputerze z systemem Windows. Podłącz sprzętowy moduł zabezpieczeń (HSM, hardware security module) firmy Thales do komputera. Upewnij się, że narzędzia firmy Thales są dostępne w znanej ścieżce. Więcej informacji znajduje się w podręczniku użytkownika dołączonym do sprzętowego modułu zabezpieczeń firmy Thales oraz w witrynie sieci Web firmy Thales poświęconej usłudze Azure RMS, dostępnej pod adresem [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
-### Krok 2. Utworzenie środowiska zabezpieczeń Security World
+### Krok 2: Utworzenie środowiska zabezpieczeń Security World
 Uruchom wiersz polecenia, a następnie uruchom program firmy Thales umożliwiający utworzenie nowego środowiska (new-world).
 
 ```
@@ -156,6 +150,7 @@ Stanowi to zakończenie instrukcji wymaganych do osobistego przekazania klucza d
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

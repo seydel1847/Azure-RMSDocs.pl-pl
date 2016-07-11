@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Omówienie | Azure RMS
-description: Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.
-keywords:
+title: "Omówienie | Azure RMS"
+description: "Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -40,11 +35,11 @@ Poniżej przedstawiono kilka scenariuszy, w których można stosować aplikacje 
 
 -   Kancelaria prawna chce zapobiec drukowaniu i przekazywaniu dalej poufnych wiadomości e-mail.
 -   Deweloperzy oprogramowania CAD i oprogramowania produkcyjnego chcą ograniczyć dostęp do rysunków do niewielkiej grupy użytkowników z działu badawczego bez konieczności korzystania z haseł.
--   Właściciele witryny internetowej dotyczącej projektów graficznych chcą korzystać z pojedynczej licencji, która umożliwia bezpłatne wyświetlanie kopii obrazów w niskiej rozdzielczości, ale wymaga opłaty w celu uzyskania dostępu do wersji o wysokiej rozdzielczości.
+-   Właściciele witryny internetowej dla projektów graficznych chcą korzystać z pojedynczej licencji, która umożliwia swobodne wyświetlanie kopii obrazów w niskiej rozdzielczości, ale wymaga opłaty w celu uzyskania dostępu do wersji o wysokiej rozdzielczości.
 -   Właściciele biblioteki dokumentów online chcą włączyć prawa do wyświetlania, drukowania i edycji dokumentów na podstawie tożsamości użytkownika.
 -   Firma chce publikować poufne informacje o pracownikach w wewnętrznej witrynie sieci Web, która ogranicza uprawnienia do wyświetlania i edycji do określonych użytkowników.
 
-Aby uzyskać więcej informacji na temat serwera usług AD RMS, klienta usług AD RMS i ich funkcji, zobacz zawartość TechNet dotyczącą [dokumentacji usług AD RMS dla specjalistów IT](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx).
+Aby uzyskać więcej informacji na temat serwera usług AD RMS, klienta usług AD RMS i ich funkcji, zobacz zawartość TechNet w [dokumentacji usług AD RMS dla specjalistów IT](https://TechNet.Microsoft.Com/library/cc771234.aspx).
 
 Pozostałe tematy w tej sekcji dotyczą architektury usług RMS i ich implementacji.
 
@@ -66,6 +61,7 @@ Pozostałe tematy w tej sekcji dotyczą architektury usług RMS i ich implementa
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

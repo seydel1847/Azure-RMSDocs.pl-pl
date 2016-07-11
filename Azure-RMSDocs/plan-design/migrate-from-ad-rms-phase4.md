@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 4 | Azure RMS
-description:
-keywords:
+title: "Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ Ten krok jest opcjonalny, ale zalecany po zakończeniu migracji nawet w przypadk
 
 Aby ponownie utworzyć klucz dzierżawy usługi Azure RMS:
 
--   Jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez firmę Microsoft: w tym celu [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#to-contact-microsoft-support), aby otworzyć **sprawę pomocy technicznej usługi Azure RMS z żądaniem ponownego utworzenia klucza dzierżawy usługi Azure Rights Management**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+-   Jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez firmę Microsoft: w tym celu [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support), aby otworzyć **sprawę pomocy technicznej usługi Azure RMS z żądaniem ponownego utworzenia klucza dzierżawy usługi Azure Rights Management**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 -   Jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez Ciebie (BYOK): powtórz procedurę BYOK, aby wygenerować i utworzyć nowy klucz przez Internet lub osobiście.
 
@@ -61,6 +54,7 @@ Teraz po zakończeniu migracji sprawdź [plan wdrożenia](deployment-roadmap.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

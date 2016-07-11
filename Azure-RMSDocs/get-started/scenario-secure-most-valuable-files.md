@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure RMS
-description:
-keywords:
+title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+
 
 ---
 
@@ -94,7 +88,8 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 
 Aby uzyskać więcej informacji na temat ochrony miejscowej plików, zobacz [Protect a file on a device (protect in-place) by using the Rights Management sharing application](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx) (Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management).
 
-> [!TIP] Jeśli liczba plików do objęcia ochroną jest zbyt duża, aby można było wykonać ten ręczny proces, należy rozważyć użycie [narzędzia ochrony usługi RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) w celu zbiorczego objęcia plików ochroną plików przy użyciu szablonu.
+> [!TIP]
+> Jeśli liczba plików do objęcia ochroną jest zbyt duża, aby można było wykonać ten ręczny proces, należy rozważyć użycie [narzędzia ochrony usług RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) w celu zbiorczego objęcia plików ochroną plików przy użyciu szablonu.
 
 ### Aby monitorować i w razie potrzeby odwołać prawa dostępu do plików
 
@@ -152,6 +147,7 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

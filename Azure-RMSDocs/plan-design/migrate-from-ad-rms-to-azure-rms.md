@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Migrowanie z usług AD RMS do usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Migrowanie z usług AD RMS do usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+
 
 ---
 
@@ -101,7 +95,7 @@ Ograniczenia:
 
 -   Jeśli współpracujesz z partnerami zewnętrznymi (np. przy użyciu zaufanych domen użytkowników lub federacji), muszą oni migrować do usługi Azure RMS w tym samym czasie lub możliwie szybko po zakończeniu Twojej migracji. Aby nadal uzyskiwać dostęp do zawartości, którą organizacja wcześniej chroniła za pomocą usług AD RMS, muszą oni wprowadzić zmiany konfiguracji klienta podobne do wprowadzonych przez Ciebie i uwzględnionych w tym dokumencie.
 
-    Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Aby uzyskać pomoc, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support#support-options-and-community-resources).
+    Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Aby uzyskać pomoc, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#support-options-and-community-resources).
 
 ## Omówienie kroków procesu migracji usług AD RMS do usługi Azure RMS
 
@@ -185,6 +179,7 @@ Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwe
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

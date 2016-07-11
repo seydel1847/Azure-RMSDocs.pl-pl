@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych | Azure RMS
-description:
-keywords:
+title: "Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+
 
 ---
 
@@ -30,9 +24,9 @@ ms.suite: ems
 
 *Dotyczy usług: Azure Rights Management, Office 365*
 
-Aplikacja RMS sharing to bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usług [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md)..
+Aplikacja RMS sharing to bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usług [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
 
-Gdy użytkownicy chronią swoje pliki przy użyciu aplikacji RMS sharing, mogą również śledzić chronione dokumenty i odwoływać dostęp do nich, jeśli jest to konieczne. Służy do tego [witryna śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562)..
+Gdy użytkownicy chronią swoje pliki przy użyciu aplikacji RMS sharing, mogą również śledzić chronione dokumenty i odwoływać dostęp do nich, jeśli jest to konieczne. Służy do tego [witryna śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562).
 
 W przypadku komputerów z systemem Windows aplikacja RMS sharing dyskretnie integruje się z aplikacjami już używanymi przez użytkowników i ulepsza te aplikacje:
 
@@ -50,7 +44,7 @@ Aplikację RMS sharing dla systemu Windows można pobrać i zainstalować na poj
 
 -   [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md)
 
-Aplikacja RMS sharing dla urządzeń przenośnych obsługuje najczęściej używane urządzenia przenośne, takie jak tablety iPad, telefony iPhone oraz urządzenia z systemem Android, Windows Phone i Windows RT. Użytkownicy mogą pobrać tę aplikację z odpowiedniego sklepu, a linki prowadzące do aplikacji znajdują się dodatkowo na [stronie usługi Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970)..
+Aplikacja RMS sharing dla urządzeń przenośnych obsługuje najczęściej używane urządzenia przenośne, takie jak tablety iPad, telefony iPhone oraz urządzenia z systemem Android, Windows Phone i Windows RT. Użytkownicy mogą pobrać tę aplikację z odpowiedniego sklepu, a linki prowadzące do aplikacji znajdują się dodatkowo na [stronie usługi Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970).
 
 **Jeśli masz usługę Microsoft Intune**: aplikacja RMS sharing zawiera zestaw Software Development Kit aplikacji usługi Microsoft Intune, dlatego dostępne są następujące opcje:
 
@@ -60,10 +54,11 @@ Aplikacja RMS sharing dla urządzeń przenośnych obsługuje najczęściej używ
 
 
 ## Następne kroki
-Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md)..
+Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

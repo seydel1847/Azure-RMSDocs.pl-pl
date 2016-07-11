@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management | Azure RMS
-description:
-keywords:
+title: "Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+
 
 ---
 
@@ -40,7 +34,7 @@ Poniżej przedstawiono kilka sposobów ochrony plików za pomocą aplikacji RMS 
 
 |Cel|Metoda|
 |----------------|------------------|
-|**… Bezpieczne udostępnienie informacji finansowych zaufanej osobie, która pracuje dla innej organizacji**<br /><br />Chcesz przesłać pocztą e-mail firmie, z którą współpracujesz, arkusz kalkulacyjny programu Excel zawierający prognozy finansowe. Chcesz, aby mogli oni wyświetlić dane bez możliwości ich edycji.|Użyj przycisku **Udostępnij chronione** na wstążce w programie Excel, wpisz adresy e-mail dwóch adresatów z partnerskiej firmy, wybierz pozycję **Przeglądający — tylko wyświetlanie**, a następnie kliknij pozycję **Wyślij**..<br /><br />Kiedy wiadomość e-mail dotrze do partnerskiej firmy, załączony arkusz będą mogli otworzyć tylko adresaci wiadomości (bez możliwości zapisywania, edytowania, drukowania ani przekazywania dalej).<br /><br />Krok po kroku: [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md).|
+|**… Bezpieczne udostępnienie informacji finansowych zaufanej osobie, która pracuje dla innej organizacji**<br /><br />Chcesz przesłać pocztą e-mail firmie, z którą współpracujesz, arkusz kalkulacyjny programu Excel zawierający prognozy finansowe. Chcesz, aby mogli oni wyświetlić dane bez możliwości ich edycji.|Użyj przycisku **Udostępnij chronione** na wstążce w programie Excel, wpisz adresy e-mail dwóch adresatów z partnerskiej firmy, wybierz pozycję **Przeglądający — tylko wyświetlanie**, a następnie kliknij pozycję **Wyślij**.<br /><br />Kiedy wiadomość e-mail dotrze do partnerskiej firmy, załączony arkusz będą mogli otworzyć tylko adresaci wiadomości (bez możliwości zapisywania, edytowania, drukowania ani przekazywania dalej).<br /><br />Krok po kroku: [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md).|
 |**… Bezpieczne wysłanie dokumentu pocztą e-mail do osoby korzystającej z urządzenia z systemem iOS**<br /><br />Chcesz wysłać pocztą e-mail poufny dokument programu Word do współpracownika, który często sprawdza pocztę na swoim urządzeniu z systemem iOS.|W Eksploratorze plików kliknij plik prawym przyciskiem myszy, a następnie wybierz polecenie **Udostępnij chronione**. Wyślij współpracownikowi plik jako załącznik.<br /><br />Adresat odbierze wiadomość e-mail na swoim urządzeniu z systemem iOS. Ponieważ adresat nie ma pakietu Office dla urządzeń iPad i iPhone, klika link w wiadomości e-mail do informacji o pobieraniu aplikacji do udostępniania, instaluje wersję aplikacji przeznaczoną na urządzenia z systemem iOS, po czym wyświetla dokument¹.<br /><br />Krok po kroku: [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md).|
 |**… Sprawdzenie, kto i kiedy otwierał chronione dokumenty, oraz odwołanie dostępu w razie konieczności**<br /><br />Poufny dokument projektowy został bezpiecznie udostępniony potencjalnym dostawcom, a teraz chcesz sprawdzić, kto uzyskał do niego dostęp, kiedy i z jakiej lokalizacji. Następnie, gdy jeden z dostawców otrzymał zlecenie, chcesz odwołać dostęp do oryginalnego dokumentu, tak aby osoby, którym go udostępniono, nie mogły już go odczytać.|Po udostępnieniu dokumentu pocztą e-mail możesz przejść do [witryny śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562), aby sprawdzić, kto i kiedy miał dostęp do tego dokumentu. Aby zatrzymać udostępnianie dokumentu, wybierz opcję odwołania dostępu.<br /><br />Krok po kroku: [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md).|
 |**… Otwarcie chronionego załącznika otrzymanego w wiadomości e-mail w firmie, która nie korzysta z usługi Rights Management**<br /><br />Nadawcą wiadomości e-mail jest zaufana osoba (kiedyś współpracowaliście). Podejrzewasz, że mogła Ci wysłać informacje dotyczące nowych możliwości biznesowych.|Postępujesz zgodnie z instrukcjami w wiadomości e-mail i klikasz link, aby założyć konto w usłudze Microsoft Rights Management. Firma Microsoft potwierdza, że Twoja organizacja nie ma subskrypcji obejmującej usługę Azure Rights Management, wysyła Ci wiadomość e-mail umożliwiającą ukończenie procesu zakładania bezpłatnego konta, po czym możesz się już do niego zalogować. Klikasz drugi link znajdujący się w wiadomości e-mail, który umożliwia zainstalowanie aplikacji do udostępniania usługi Rights Management. Po ukończeniu instalacji możesz już otworzyć załącznik i przeczytać o nowych możliwościach biznesowych.<br /><br />Krok po kroku: [Wyświetlanie i używanie plików chronionych przez usługę Rights Management](sharing-app-view-use-files.md).|
@@ -49,7 +43,7 @@ Poniżej przedstawiono kilka sposobów ochrony plików za pomocą aplikacji RMS 
 
 ## Co chcesz zrobić?
 > [!NOTE]
-> Aby uzyskać więcej informacji technicznych dotyczących m.in. obsługiwanych typów plików i sposobu instalacji tej aplikacji w sieci przedsiębiorstwa, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md)..
+> Aby uzyskać więcej informacji technicznych dotyczących między innymi obsługiwanych typów plików i sposobu instalacji tej aplikacji w sieci przedsiębiorstwa, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 -   [Pobieranie i instalowanie aplikacji do udostępniania](install-sharing-app.md)
 
@@ -71,6 +65,7 @@ Poniżej przedstawiono kilka sposobów ochrony plików za pomocą aplikacji RMS 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

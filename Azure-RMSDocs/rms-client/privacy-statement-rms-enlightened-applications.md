@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Zasady zachowania poufności informacji dotyczące usługi Microsoft Rights Management w aplikacjach obsługujących usługę RMS | Azure RMS
-description:
-keywords:
+title: "Zasady zachowania poufności informacji dotyczące usługi Microsoft Rights Management w aplikacjach obsługujących usługę RMS | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 Dotyczy: funkcja usługi Microsoft Rights Management wbudowana w aplikacjach
 
 > [!NOTE]
-> Niniejsze zasady zachowania poufności są dostępne w innych językach w [Centrum pobierania Microsoft](http://www.microsoft.com/download/details.aspx?id=41668)..
+> Niniejsze zasady zachowania poufności są dostępne w innych językach w [Centrum pobierania Microsoft](http://www.microsoft.com/download/details.aspx?id=41668).
 
 Firma Microsoft poświęca wiele uwagi ochronie poufności informacji użytkowników, jednocześnie zapewniając im oprogramowanie, które spełnia ich oczekiwania dotyczące wydajności, mocy i wygody. W niniejszych zasadach zachowania poufności informacji objaśniono wiele procedur zbierania danych i stosowania dotyczących oprogramowania klienckiego lub usługi Microsoft Rights Management oraz wszystkich innych produktów lub usług firmy Microsoft, w których są wyświetlane niniejsze informacje lub które do tych informacji prowadzą.
 
@@ -53,7 +47,7 @@ Firma Microsoft nie ujawni poświadczeń, potwierdzeń przeczytania ani standard
 Informacje zbierane przez firmę Microsoft lub wysyłane do niej przy użyciu aplikacji obsługujących usługę Microsoft Rights Management mogą być przechowywane i przetwarzane na terenie Stanów Zjednoczonych lub dowolnego innego kraju, w którym działa firma Microsoft, jej podmioty stowarzyszone, przedstawicielstwa lub usługodawcy. Firma Microsoft przestrzega zasad programu Safe Harbor zgodnie z ustaleniami określonymi przez amerykański Departament Handlu dotyczącymi zbierania, wykorzystywania i przechowywania danych pochodzących z Unii Europejskiej, Europejskiego Obszaru Gospodarczego i Szwajcarii.
 
 ## Microsoft Update
-Gdy aplikacje obsługujące usługę Microsoft Rights Management są używane w systemie Windows, użytkownik może dołączyć do usługi Microsoft Update. Microsoft Update (MU) to usługa, która dostarcza aktualizacje dla oprogramowania firmy Microsoft, z klientem usługi Microsoft Rights Management dla systemu Windows włącznie. Szczegółowe informacje dotyczące rodzaju zbieranych informacji, sposobu ich wykorzystywania oraz sposobu zmiany ustawień znajdują się w temacie [Zasady zachowania poufności informacji usługi aktualizacji](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142).).
+Gdy aplikacje obsługujące usługę Microsoft Rights Management są używane w systemie Windows, użytkownik może dołączyć do usługi Microsoft Update. Microsoft Update (MU) to usługa, która dostarcza aktualizacje dla oprogramowania firmy Microsoft, z klientem usługi Microsoft Rights Management dla systemu Windows włącznie. Szczegółowe informacje dotyczące rodzaju zbieranych informacji, sposobu ich wykorzystywania oraz sposobu zmiany ustawień znajdują się w temacie [Zasady zachowania poufności informacji — usługi aktualizacji](http://go.microsoft.com/fwlink/?linkid=50142) w witrynie [http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142).
 
 Wybór/kontrola: w przypadku instalacji dyskretnej aplikacje obsługujące usługę Microsoft Rights Management używają tych samych ustawień usługi MU, które są stosowane do komputerów z systemem Windows. W przypadku instalacji użytkowników, jeśli usługa MU nie będzie włączona, podczas instalacji może zostać wyświetlony monit umożliwiający włączenie usługi MU. Jeśli użytkownik odpowie twierdząco, te ustawienia usługi MU zostaną zastosowane do wszystkich aplikacji systemu Windows.
 
@@ -65,6 +59,7 @@ Niniejsze zasady zachowania poufności ulegać modyfikacjom w celu odzwierciedle
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure RMS
-description:
-keywords:
+title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ Zespół pracujący nad usługą Rights Management regularnie aktualizuje aplika
 
 W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
-> [!NOTE]
-> Opinie i pytania dotyczące aplikacji RMS sharing należy przesyłać pocztą e-mail na adres [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)..
+> [!NOTE] Opinie i pytania dotyczące aplikacji do udostępniania usługi RMS należy przesyłać pocztą e-mail na adres [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
+
+## Wersja 1.0.2191.0
+**Wydana**: 2016-06-16
+
+**Poprawki**:
+
+- Witryna śledzenia dokumentów zawiera obecnie prawidłową liczbę widoków dla każdego śledzonego dokumentu.
+
+- Szablony dla wszystkich ustawień regionalnych są teraz wyświetlane jako dostępne dla użytkowników.
+
+- Po użyciu chronionej zawartości dla pliku programu PowerPoint zmiany w lokalnej wersji pliku są teraz zapisywane poprawnie.
+
+- Niewielka liczba drobnych usterek i usprawnień dla komunikatów o błędach.
+
 
 ## Wersja 1.0.2004.0
 **Wydana**: 2015-12-11
@@ -62,7 +68,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 -   Obsługa uwierzytelniania wieloskładnikowego (MFA, multi-factor authentication) dla usług Azure RMS, zapewniająca również niezależność aplikacji, które używają nowoczesnego uwierzytelniania, od Asystenta logowania firmy Microsoft.
 
-    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) w temacie [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md)..
+    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) w temacie [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
 ## Wersja 1.0.1784.0
 **Wydana**: 2015-07-30
@@ -84,7 +90,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 **Nowe funkcje**:
 
--   Obsługa śledzenia i odwoływania dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md)..
+-   Obsługa śledzenia i odwoływania dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS](sharing-app-track-revoke.md).
 
 -   Obsługa szablonów podczas wybierania pozycji **Udostępnij chronione**:
 
@@ -94,7 +100,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
     -   Opcje **Zezwalaj na użycie na wszystkich urządzeniach** i **Wymuś ograniczenia użycia** nie są już wyświetlane. Zamiast tego domyślnie wybierana jest opcja **Ochrona ogólna** zależnie do typu pliku.
 
-    Aby uzyskać więcej informacji, zobacz [Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](sharing-app-dialog-box.md)..
+    Aby uzyskać więcej informacji, zobacz [Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](sharing-app-dialog-box.md).
 
 ## Wersja 1.0.1667.0
 **Wydana**: 2015-01-19
@@ -109,10 +115,11 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 **Nowe funkcje**:
 
--   **Obsługa wielu domen poczty e-mail w danej organizacji**: Jeśli korzystasz z usług AD RMS i użytkownicy w Twojej organizacji mają kilka domen poczty e-mail, ta aktualizacja pozwala użytkownikom korzystać z zawartości chronionej przez użytkowników w innych domenach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz sekcję [Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md)..
+-   **Obsługa wielu domen poczty e-mail w danej organizacji**: Jeśli korzystasz z usług AD RMS i użytkownicy w Twojej organizacji mają kilka domen poczty e-mail, ta aktualizacja pozwala użytkownikom korzystać z zawartości chronionej przez użytkowników w innych domenach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz sekcję [Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

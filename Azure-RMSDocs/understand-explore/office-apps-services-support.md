@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Aplikacje i usługi pakietu Office | Azure RMS
-description:
-keywords:
+title: "Aplikacje i usługi pakietu Office | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 99eb67f6296ad1782c787aabb73a28458c02f367
+ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
+
 
 ---
 
@@ -33,9 +27,9 @@ ms.suite: ems
 Aby chronić dane organizacji, aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, PowerPoint i Outlook) oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą używać usługi Microsoft Azure Rights Management.
 
 ## Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
-Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub ściśle dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
+Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programu Word, Excel i PowerPoint, ściśle dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
 
-Na przykład można określić, czy plik jest dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Użytkownicy mogą również tak skonfigurować plik, aby był on dostępny tylko dla osób z danej organizacji. W przypadku plików ważnych przez określony czas można skonfigurować czas wygaśnięcia (bezpośrednio przez działania użytkowników lub przez zastosowanie szablonu), po upływie którego dostęp do pliku nie będzie już możliwy. W przypadku programu Outlook użytkownicy mogą także wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
+Na przykład użytkownicy mogą tak skonfigurować dokument programu Word, aby był on dostępny tylko dla osób z danej organizacji. Można określić, czy arkusz kalkulacyjny programu Excel jest dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. W przypadku plików ważnych przez określony czas można skonfigurować czas wygaśnięcia (bezpośrednio przez działania użytkowników lub przez zastosowanie szablonu), po upływie którego dostęp do pliku nie będzie już możliwy. W przypadku programu Outlook, oprócz możliwości wyboru szablonu, użytkownicy mogą wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
 
 ## Usługa Exchange Online i program Exchange Server
 W przypadku używania usługi Exchange Online lub programu Exchange Server można zastosować integrację usług zarządzania prawami do informacji (IRM) i korzystać z dodatkowych rozwiązań w zakresie ochrony informacji:
@@ -52,7 +46,7 @@ W przypadku używania usługi Exchange Online lub programu Exchange Server możn
 
 -   **Szyfrowanie wiadomości usługi Office 365** korzysta z reguł transportu do wysyłania zaszyfrowanych wiadomości e-mail do osób spoza firmy. Te wiadomości e-mail mogą być odczytywane w przeglądarce z interfejsem podobnym do aplikacji Outlook Web App. W firmowych, zaszyfrowanych wiadomościach e-mail można dostosować tekst klauzuli wyłączenia odpowiedzialności i tekst nagłówka, a nawet dodać logo firmy. Więcej informacji zawiera artykuł [Szyfrowanie wiadomości usługi Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) dostępny w witrynie internetowej pakietu Office.
 
-W przypadku korzystania z programu Exchange Server można użyć funkcji ochrony informacji dostępnych w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], wdrażając łącznik usługi RMS, który działa jako przekaźnik między serwerami lokalnymi i usługą RMS w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)..
+W przypadku korzystania z programu Exchange Server można użyć funkcji ochrony informacji dostępnych w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], wdrażając łącznik usługi RMS, który działa jako przekaźnik między serwerami lokalnymi i usługą RMS w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ## Usługa SharePoint Online i program SharePoint Server
 W przypadku używania usługi Exchange Online lub programu SharePoint Server można zastosować integrację usług zarządzania prawami do informacji (IRM), co pozwala administratorom chronić listy lub biblioteki. Gdy użytkownik wyewidencjonuje dokument, plik pozostaje chroniony i tylko autoryzowane osoby mogą go wyświetlać i używać zgodnie z określonymi zasadami ochrony informacji. Na przykład można przypisać plikowi właściwość tylko do odczytu albo uniemożliwić kopiowanie tekstu, zapisywanie lokalnej kopii pliku czy drukowanie jego zawartości.
@@ -61,7 +55,7 @@ W przypadku list i bibliotek ochrona informacji jest zawsze włączana przez adm
 
 Usługę IRM należy najpierw włączyć dla programu SharePoint. Następnie konfiguruje się usługę zarządzania prawami do informacji dla biblioteki. W przypadku usług SharePoint Online i OneDrive dla Firm użytkownicy mogą także stosować usługę zarządzania prawami do informacji w bibliotece usługi OneDrive dla Firm. Program SharePoint nie korzysta z szablonów zasad praw, chociaż można wybrać określone ustawienia konfiguracji programu SharePoint, ściśle odpowiadające ustawieniom, które można określić za pomocą szablonów.
 
-W przypadku korzystania z programu SharePoint Server można użyć funkcji ochrony informacji dostępnych w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], wdrażając łącznik usługi RMS, który działa jako przekaźnik między serwerami lokalnymi i usługą RMS w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)..
+W przypadku korzystania z programu SharePoint Server można użyć funkcji ochrony informacji dostępnych w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], wdrażając łącznik usługi RMS, który działa jako przekaźnik między serwerami lokalnymi i usługą RMS w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 > [!NOTE]
 > Obecnie istnieją pewne ograniczenia dotyczące używania usługi IRM z programem SharePoint:
@@ -76,8 +70,9 @@ Więcej informacji o korzystaniu z usługi Azure RMS z programem SharePoint moż
 
 ## Następne kroki
 
-Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md)..
+Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

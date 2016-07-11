@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Przykłady kodu dla systemu Linux | Azure RMS
-description: W tym temacie przedstawiono ważne scenariusze i elementy kodu dla zestawu SDK usługi RMS w wersji dla systemu Linux.
-keywords:
+title: "Przykłady kodu dla systemu Linux | Azure RMS"
+description: "W tym temacie przedstawiono ważne scenariusze i elementy kodu dla zestawu SDK usługi RMS w wersji dla systemu Linux."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: ace7103cfb44d84a7dd6bf64f57c2a47530117e0
+
 
 ---
 
@@ -205,13 +201,7 @@ Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *r
     
     AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+   catch (const rmsauth::Exception&amp; e) { AddLog(&quot;ERROR: &quot;, e.error().c_str()); outFile-&gt;close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException&amp; e) { AddLog(&quot;ERROR: &quot;, e.what());
     
     outFile-&gt;close();
     remove(fileOut.c_str());
@@ -522,8 +512,7 @@ Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej.
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Krok 2**. Utwórz obiekt **rmsauth::AuthenticationContext**.
-Opis: określ *identyfikator URI urzędu* Azure i obiekt *FileCache*.
+**Krok 2**. Utwórz obiekt **rmsauth::AuthenticationContext**. Opis: określ *identyfikator URI uwierzytelniania* platformy Azure i obiekt *FileCache*.
 
 **C++**:
 
@@ -533,8 +522,7 @@ Opis: określ *identyfikator URI urzędu* Azure i obiekt *FileCache*.
                               FileCachePtr);
 
 
-**Krok 3**. Wywołaj metodę **aquireToken** obiektu **authContext** i określ następujące parametry:
-Opis:
+**Krok 3**. Wywołaj metodę **aquireToken** obiektu **authContext** i określ następujące parametry: Opis:
 
 -   *Żądany zasób* — chroniony zasób, do którego chcesz uzyskać dostęp
 -   *Unikatowy identyfikator klienta* — zazwyczaj identyfikator GUID
@@ -552,8 +540,7 @@ Opis:
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**Krok 4.** Uzyskaj token dostępu z wyników.
-Opis: wywołaj metodę **result-&gt; accessToken()**.
+**Krok 4**. Uzyskaj token dostępu z wyników. Opis: wywołaj metodę **result-&gt; accessToken()**
 
 **Uwaga** Wszystkie metody biblioteki uwierzytelniania mogą zgłaszać wyjątek **rmsauth::Exception**.
 
@@ -561,16 +548,14 @@ Opis: wywołaj metodę **result-&gt; accessToken()**.
 **Uzyskiwanie tokenu uwierzytelniania oAuth2 bez interfejsu użytkownika**
 **Źródło**: [rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**Krok 1**. Utwórz punkt udostępniany obiektu **rmsauth::FileCache**.
-Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej.
+**Krok 1**. Utwórz punkt udostępniany obiektu **rmsauth::FileCache**. Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej
 
 **C++**:
 
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**Krok 2**. Utwórz obiekt **UserCredential**.
-Opis: określ *login użytkownika* i *hasło*.
+**Krok 2**. Utwórz obiekt **UserCredential**. Opis: określ *login użytkownika* i *hasło*
 
 **C++**:
 
@@ -578,8 +563,7 @@ Opis: określ *login użytkownika* i *hasło*.
                                                  &quot;SomePass&quot;);
 
 
-**Krok 3**. Utwórz obiekt **rmsauth::AuthenticationContext**.
-Opis: określ *Identyfikator URI* urzędu platformy Azure i obiekt *FileCache*.
+**Krok 3**. Utwórz obiekt **rmsauth::AuthenticationContext**. Opis: określ *identyfikator URI uwierzytelniania* platformy Azure i obiekt *FileCache*
 
 **C++**:
 
@@ -602,13 +586,13 @@ Opis: określ *Identyfikator URI* urzędu platformy Azure i obiekt *FileCache*.
                 userCred);
 
 
-**Krok 5.** Uzyskaj token dostępu z wyników.
-Opis: wywołaj metodę **result-&gt; accessToken()**.
+**Krok 5**. Uzyskaj token dostępu z wyników. Opis: wywołaj metodę **result-&gt; accessToken()**
 
 **Uwaga** Wszystkie metody biblioteki uwierzytelniania mogą zgłaszać wyjątek **rmsauth::Exception**.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Co widzą administratorzy i użytkownicy? | Azure RMS
-description:
-keywords:
+title: "Co widzą administratorzy i użytkownicy? | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+
 
 ---
 
@@ -32,11 +26,12 @@ ms.suite: ems
 
 W tym artykule przedstawiono kilka typowych przykładów opisujących, co administratorzy i użytkownicy mogą zobaczyć w usłudze Azure Rights Management (Azure RMS) i jak mogą chronić informacje poufne przy jej użyciu.
 
-> [!NOTE] We wszystkich tych przykładach — jeśli usługa Azure RMS chroni dane — właściciel zawartości zachowuje pełen dostęp do danych (plików lub poczty e-mail), nawet jeśli zastosowana ochrona powoduje udzielenie uprawnień grupie, do której właściciel nie należy, lub nawet jeśli zastosowana ochrona ma datę wygaśnięcia.
+> [!NOTE]
+> We wszystkich tych przykładach — jeśli usługa Azure RMS chroni dane — właściciel zawartości zachowuje pełen dostęp do danych (plików lub poczty e-mail), nawet jeśli zastosowana ochrona powoduje przyznanie uprawnień grupie, do której właściciel nie należy, lub nawet jeśli zastosowana ochrona ma datę wygaśnięcia.
 >
 > Podobnie dział IT ma zawsze dostęp bez ograniczeń do chronionych danych dzięki funkcji administratora usługi Rights Management, która umożliwia przyznawanie delegowanego dostępu wybranym autoryzowanym użytkowników lub usługom. Dodatkowo dział IT może śledzić i monitorować użycie danych objętych ochroną — na przykład, kto uzyskuje do nich dostęp i kiedy.
 
-Inne zrzuty ekranu i klipy wideo pokazujące działanie usługi RMS można znaleźć w [portalu usługi Microsoft Rights Management](http://www.microsoft.com/rms) i [blogu zespołu ds. usługi Microsoft Rights Management (RMS)](http://blogs.technet.com/b/rms).
+Inne zrzuty ekranu i filmy wideo przedstawiające działanie usług RMS można znaleźć w [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 ## Aktywowanie i konfigurowanie usługi Rights Management
 Mimo że usługę Azure RMS można aktywować i skonfigurować przy użyciu programu Windows PowerShell, najłatwiej wykonać te czynności w portalu zarządzania. Zaraz po aktywowaniu usługi dostępne są dwa szablony, które administratorzy i użytkownicy mogą wybrać, aby szybko i łatwo objąć pliki ochroną informacji. Można również tworzyć szablony niestandardowe z dodatkowymi opcjami i ustawieniami.
@@ -246,6 +241,7 @@ Jeśli Bob prześle wiadomość e-mail z załącznikiem, zapisze ją w lokalizac
 Skoro już znasz przykłady możliwości usługi Azure RMS, być może zechcesz się dowiedzieć, jak te czynności są wykonywane. Aby uzyskać informacje techniczne na temat działania usługi Azure RMS, zobacz artykuł [Jak działa usługa Azure RMS](how-does-it-work.md).
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

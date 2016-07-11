@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: Wprowadzenie | Azure RMS
-description: Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.
-keywords:
+description: "Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+
 
 ---
 # Wprowadzenie
@@ -39,17 +35,17 @@ W tym temacie szczegółowo przedstawiono proces konfigurowania i uruchamiania a
 | [Instalacja zestawu SDK](install-the-rms-sdk.md) | W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.|
 | [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1.|
 | [Tworzenie aplikacji](developing-your-application.md) | Ten temat zawiera podstawowe wskazówki dotyczące kluczowych aspektów aplikacji z obsługą usługi RMS i może służyć jako podstawa tworzenia aplikacji.|
-| [Testowanie aplikacji](running-your-first-application.md) |Ten temat zawiera instrukcje dotyczące konfigurowania aplikacji na potrzeby testów.|
+| [Testowanie aplikacji](how-to-set-up-your-test-environment.md) |Ten temat zawiera instrukcje dotyczące konfigurowania aplikacji na potrzeby testów.|
 | [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md) |W tym temacie szczegółowo przedstawiono opcje wdrażania aplikacji z obsługą praw.|
-
-Po rozpoczęciu pracy zapoznaj się z niektórymi innymi [przykładami usługi RMS](samples.md). Następnie pozostań na bieżąco dzięki materiałom w blogu [RMS Developer's Corner](http://blogs.msdn.com/b/rms/) (Kącik dewelopera usługi RMS).
 
 
 Spróbuj zastosować zestaw RMS SDK 2.1, postępując zgodnie z instrukcjami zamieszczonymi w tych tematach:
 
--   [Instalacja zestawu SDK](install-the-rms-sdk.md)
--   [Testowanie aplikacji obsługującej prawa](running-your-first-application.md)
--   [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md)
+- [Instalacja zestawu SDK](install-the-rms-sdk.md)
+- [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- [Tworzenie aplikacji](developing-your-application.md)
+- [Testowanie aplikacji](how-to-set-up-your-test-environment.md)
+- [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md)
 
 ### Dlaczego warto chronić zawartość przy użyciu zestawu RMS SDK 2.1
 
@@ -71,17 +67,15 @@ Zestaw RMS SDK 2.1 obsługuje wiele ważnych platform klientów i serwerów. Aby
 
 ## Tematy pokrewne
 
-* [Przykłady usługi AD RMS](samples.md)
+* [Przewodnik dla deweloperów usług RMS](developers-guide.md)
 * [AD RMS Developer's Corner (Kącik dewelopera usługi AD RMS)](http://blogs.msdn.com/b/rms/)
-* [Instalacja zestawu SDK](install-the-rms-sdk.md)
-* [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md)
-* [Przegląd](ad-rms-overview.md)
-* [Obsługiwane platformy](supported-platforms.md)
+
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

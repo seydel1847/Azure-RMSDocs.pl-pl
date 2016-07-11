@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Jak zainstalować i skonfigurować serwer usługi RMS oraz używać go do testowania | Azure RMS
-description: Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
-keywords:
+title: "Jak zainstalować i skonfigurować serwer usługi RMS oraz używać go do testowania | Azure RMS"
+description: "Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
+ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+
 
 ---
 
@@ -65,12 +61,13 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     Aby przeprowadzić testy za pomocą serwera usługi RMS, skonfiguruj odnajdywanie po stronie serwera lub klienta w celu umożliwienia klientowi Rights Management Service Client 2.1 odnajdywania serwera usługi RMS i nawiązywania z nią komunikacji.
 
-    > [!Note] Testowanie za pomocą usługi Azure RMS nie wymaga konfiguracji odnajdywania.
+    > [!Note]
+    > Testowanie za pomocą usługi Azure RMS nie wymaga konfiguracji odnajdywania.
 
   - W przypadku odnajdywania po stronie serwera administrator rejestruje punkt połączenia usługi (SCP) dla klastra głównego usługi RMS w usłudze Active Directory, a klient wysyła do usługi Active Directory zapytanie w celu odnalezienia punktu SCP i nawiązania połączenia z serwerem.
   - W przypadku odnajdywania po stronie klienta ustawienia odnajdywania usługi RMS są konfigurowane w rejestrze na komputerze, na którym uruchomiono klienta RMS Client 2.1. Ustawienia te wskazują klienta RMS Client 2.1, którego powinien użyć serwer usługi RMS. Jeśli ustawienia są obecne, nie jest przeprowadzane odnajdywanie po stronie serwera.
 
-  W celu skonfigurowania odnajdywania po stronie klienta można ustawić poniższe klucze rejestru, aby wskazywały serwer usługi RMS. Aby uzyskać informacje na temat konfigurowania odnajdywania po stronie serwera, zobacz [Uwagi dotyczące wdrażania klienta RMS Client 2.0](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
+  W celu skonfigurowania odnajdywania po stronie klienta można ustawić poniższe klucze rejestru, aby wskazywały serwer usługi RMS. Aby uzyskać informacje na temat konfigurowania odnajdywania po stronie serwera, zobacz [Uwagi dotyczące wdrażania klienta RMS Client 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Licensing**
 
->[!NOTE] Domyślnie tych kluczy nie ma w rejestrze i należy je utworzyć.
+>[!NOTE] 
+> Domyślnie tych kluczy nie ma w rejestrze i należy je utworzyć.
 
->[!IMPORTANT] Jeśli uruchamiasz 32-bitową aplikację w 64-bitowej wersji systemu Windows, musisz ustawić te klucze w następującej lokalizacji klucza:<p>
+>[!IMPORTANT] 
+> Jeśli uruchamiasz 32-bitową aplikację w 64-bitowej wersji systemu Windows, musisz ustawić te klucze w następującej lokalizacji klucza:<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Instalowanie programu Windows PowerShell dla usługi Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "Instalowanie programu Windows PowerShell dla usługi Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 590148218fdd10e88ba764b2dc523a2213e2c8bb
+
 
 ---
 
@@ -34,14 +28,14 @@ Użyj poniższych informacji, aby zainstalować program Windows PowerShell dla u
 Ten moduł programu Windows PowerShell umożliwia administrowanie usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] z wiersza polecenia przy użyciu dowolnego komputera z połączeniem internetowym, który spełnia wymagania wstępne określone w kolejnej sekcji. Program Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] obsługuje wykonywanie skryptów automatyzacji oraz może być wymagany w scenariuszach konfiguracji zaawansowanej. Aby uzyskać więcej informacji na temat zadań administracyjnych i konfiguracji obsługiwanych przez moduł, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](administer-powershell.md).
 
 ## Wymagania wstępne
-Poniższa tabela zawiera wymagania wstępne dotyczące instalacji i używania programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+Poniższa tabela zawiera wymagania wstępne dotyczące instalacji i używania programu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Wersja systemu Windows, która obsługuje moduł administracji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Sprawdź listę obsługiwanych systemów operacyjnych w sekcji **Wymagania systemowe** [strony pobierania narzędzia Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721).|
-|Minimalna wersja programu Windows PowerShell: 2.0|Obsługa modułu administracyjnego usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] została wprowadzona w programie Windows PowerShell 2.0.<br /><br />Domyślnie większość systemów operacyjnych Windows jest instalowana z programem Windows PowerShell w wersji co najmniej 2.0. Jeśli musisz zainstalować program Windows PowerShell 2.0, zobacz [Instalacja programu Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />Porada: używaną wersję programu Windows PowerShell możesz sprawdzić, wpisując polecenie **$PSVersionTable** w sesji programu Windows PowerShell.|
+|Minimalna wersja programu Windows PowerShell: 2.0|Obsługa modułu administracyjnego usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] została wprowadzona w programie Windows PowerShell 2.0.<br /><br />Domyślnie większość systemów operacyjnych Windows jest instalowana z programem Windows PowerShell w wersji co najmniej 2.0. Jeśli konieczne jest zainstalowanie programu Windows PowerShell 2.0, zobacz [Install Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx) (Instalowanie programu Windows PowerShell 2.0).<br /><br />Porada: używaną wersję programu Windows PowerShell możesz sprawdzić, wpisując polecenie **$PSVersionTable** w sesji programu Windows PowerShell.|
 |Minimalna wersja platformy Microsoft .NET Framework: 4.5<br /><br />Uwaga: ta wersja platformy Microsoft .NET Framework jest dołączona do nowszych systemów operacyjnych, w związku z czym jej ręczna instalacja powinna być konieczna tylko wtedy, gdy kliencki system operacyjny jest starszy niż Windows 8.0 lub serwerowy system operacyjny jest starszy niż Windows Server 2012.|Jeśli nie zainstalowano minimalnej wersji platformy Microsoft .NET Framework, można pobrać platformę [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Ta minimalna wersja platformy Microsoft .NET Framework jest wymagana przez niektóre klasy używane przez moduł administracyjny usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
-|Asystent logowania w witrynie Microsoft Online Services 7.0|Asystent logowania w witrynie Microsoft Online Services jest wymagany w celu uwierzytelnienia w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].<br /><br />Aby uzyskać więcej informacji, zobacz [Centrum pobierania: Asystent logowania w witrynie Microsoft Online Services dla specjalistów IT RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
+|Asystent logowania w witrynie Microsoft Online Services 7.0|Asystent logowania w witrynie Microsoft Online Services jest wymagany w celu uwierzytelnienia w usłudze [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].<br /><br />Aby uzyskać więcej informacji, zobacz [Download Center: Microsoft Online Services Assistant for IT Professionals RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950) (Centrum pobierania: Asystent logowania w witrynie Microsoft Online Services dla specjalistów IT RTW).|
 
 ## Instalacja modułu administracyjnego usługi Rights Management
 
@@ -76,6 +70,7 @@ Przed uruchomieniem dowolnych poleceń konfigurujących usługę [!INCLUDE[aad_r
 [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

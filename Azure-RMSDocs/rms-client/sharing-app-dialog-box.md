@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management | Azure RMS
-description:
-keywords:
+title: "Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,11 +51,11 @@ Oprócz opcji do wyboru mogą Cię również zainteresować następujące zagadn
 -   Jeśli **plik jest objęty ochroną ogólną**, nieupoważnione osoby nie mogą go otworzyć. Upoważniona osoba może jednak po otwarciu pliku przesłać go bez ochrony do innych osób albo zapisać w miejscu dostępnym dla innych. Wyświetlany jest komunikat informujący o posiadanych przez nią uprawnieniach oraz prośba o ich respektowanie, ale ochrona nie jest wymuszana. Ponadto w przypadku ochrony ogólnej pliku nie można wyznaczyć uprawnień bardziej ograniczonych niż autoryzacja. Nie można na przykład ograniczyć uprawień do zawartości do uprawnień typu „tylko do odczytu” lub „nie do drukowania”:
 
     > [!NOTE]
-    > Plik objęty ochroną ogólną ma zawsze rozszerzenie **.pfile**..
+    > Plik objęty ochroną ogólną ma zawsze rozszerzenie **pfile**.
 
 -   Natomiast **ochrona wbudowana (natywna)** dostępna w ramach usługi Rights Management dla obsługujących ją aplikacji (np. plików pakietu Office) obowiązuje, nawet jeśli chroniony plik zostanie przesłany do innej osoby lub zapisany w innym miejscu. Ochrona takich plików umożliwia stosowanie restrykcyjnych uprawnień (np. tylko odczyt) lub uprawnień do edycji (ale nie do drukowania lub kopiowania). Można na przykład wybrać opcję **Przeglądający — tylko wyświetlanie**, aby nie można było edytować, drukować ani kopiować zawartości.
 
-Aby uzyskać dodatkowe informacje, zobacz sekcję [Poziomy ochrony — natywny i ogólny](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Podręczniku administratora aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management](sharing-app-admin-guide.md)..
+Aby uzyskać dodatkowe informacje, zobacz sekcję [Poziomy ochrony — natywny i ogólny](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 ## Co to za plik ppdf, który jest automatycznie tworzony?
 
@@ -75,7 +69,7 @@ Aby uzyskać dodatkowe informacje, zobacz sekcję [Poziomy ochrony — natywny i
 ## Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji do udostępniania usług RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
@@ -84,6 +78,7 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

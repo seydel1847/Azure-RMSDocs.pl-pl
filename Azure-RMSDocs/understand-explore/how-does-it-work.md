@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Jak działa usługa Azure RMS | Azure RMS
-description:
-keywords:
+title: "Jak działa usługa Azure RMS | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ Aby bardziej szczegółowo poznać działanie usługi Azure RMS, przeanalizujemy
 
 Po zainicjowaniu środowiska użytkownika dany użytkownik może chronić dokumenty lub korzystać z chronionych dokumentów na tym komputerze.
 
-> [!NOTE] Jeśli użytkownik przejdzie do innego komputera z systemem Windows lub inny użytkownik skorzysta z tego samego komputera z systemem Windows, proces inicjowania zostanie powtórzony.
+> [!NOTE]
+> Jeśli użytkownik przejdzie do innego komputera z systemem Windows lub inny użytkownik skorzysta z tego samego komputera z systemem Windows, proces inicjowania jest powtarzany.
 
 ### Inicjowanie środowiska użytkownika
 Zanim użytkownik będzie mógł chronić zawartość lub korzystać z zawartości chronionej na komputerze z systemem Windows, należy przygotować środowisko użytkownika na urządzeniu. To proces jednorazowy, który jest wykonywany automatycznie bez interwencji użytkownika, gdy użytkownik próbuje chronić zawartość lub korzystać z zawartości chronionej:
@@ -151,9 +146,11 @@ Zapoznaj się z sekcją [Usługa Azure Rights Management — terminologia](../ge
 
 Jeśli chcesz rozpocząć wdrażanie usługi Azure RMS w organizacji, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
-> [!TIP] Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
+> [!TIP]
+> Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

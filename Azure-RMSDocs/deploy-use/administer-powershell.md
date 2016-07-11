@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell | Azure RMS
-description:
-keywords:
+title: "Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: bf1f684bc394ec3a1025f8c9ed3e57d07c598125
+
 
 ---
 
@@ -31,10 +25,10 @@ ms.suite: ems
 
 Mimo że usługę Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) można aktywować za pomocą centrum administracyjnego usługi [!INCLUDE[o365_2](../includes/o365_2_md.md)] lub klasycznego portalu Azure, można także użyć w tym celu modułu programu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (AADRM).
 
-Po aktywowaniu usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] dalsze czynności administracyjne dla tej usługi mogą nie być wymagane. Jednak niektóre scenariusze konfiguracji zaawansowanej mogą wymagać użycia modułu programu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. Poniższa tabela zawiera niektóre scenariusze konfiguracji zaawansowanej, które korzystają z programu Windows PowerShell. Aby uzyskać pełną listę dostępnych poleceń cmdlet i więcej informacji o każdym z nich, zobacz [Polecenia cmdlet usługi Azure Rights Management](http://msdn.microsoft.com/library/azure/dn629398.aspx).
+Po aktywowaniu usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] dalsze czynności administracyjne dla tej usługi mogą nie być wymagane. Jednak niektóre scenariusze konfiguracji zaawansowanej mogą wymagać użycia modułu programu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]. Poniższa tabela zawiera niektóre scenariusze konfiguracji zaawansowanej, które korzystają z programu Windows PowerShell. Aby uzyskać pełną listę dostępnych poleceń cmdlet i więcej informacji o każdym z nich, zobacz [Azure Rights Management Cmdlets](http://msdn.microsoft.com/library/azure/dn629398.aspx) (Polecenia cmdlet usługi Azure Rights Management).
 
 > [!NOTE]
-> Jeśli musisz zainstalować moduł programu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+> Jeśli musisz zainstalować moduł Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
 
 Jest również uzupełniający moduł programu Windows PowerShell, **RMSProtection**, który obsługuje zarówno usługę Azure RMS, jak i AD RMS. Ten moduł obsługuje ochronę i usuwanie ochrony wielu plików, aby na przykład chronić zbiorczo wszystkie pliki w folderze. Aby uzyskać więcej informacji, zobacz sekcję [Opcje obsługi skryptów dla superużytkowników](configure-super-users.md#scripting-options-for-super-users) w artykule [Konfigurowanie superużytkowników usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych](configure-super-users.md).
 
@@ -59,6 +53,7 @@ Jest również uzupełniający moduł programu Windows PowerShell, **RMSProtecti
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych | Azure RMS
-description:
-keywords:
+title: "Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+
 
 ---
 
@@ -46,7 +40,7 @@ Domyślnie funkcja superużytkowników nie jest włączona i żadni użytkownicy
 Jeśli musisz ręcznie włączyć funkcję superużytkowników, użyj polecenia cmdlet środowiska Windows PowerShell [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx), a następnie przypisz użytkowników (lub konta usługi) wedle potrzeby, używając poleceń cmdlet [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) lub [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) i dodaj użytkowników (lub inne grupy) wedle potrzeby do tej grupy. 
 
 > [!NOTE]
-> Jeśli jeszcze nie masz zainstalowanego modułu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz temat [Instalowanie modułu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+> Jeśli jeszcze nie masz zainstalowanego modułu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
 
 Najlepsze rozwiązania w zakresie zabezpieczeń dotyczące funkcji superużytkowników:
 
@@ -69,7 +63,7 @@ Poniższy fragment dziennika pokazuje przykładowe wpisy uzyskane za pomocą pol
 ## Opcje obsługi skryptów dla superużytkowników
 Często osoba przypisana do roli superużytkownika usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] będzie musiała usunąć ochronę z wielu plików w wielu różnych lokalizacjach. Mimo że można to zrobić ręcznie, bardziej wydajne (a często też bardziej niezawodne) jest zastosowanie skryptów. Aby to zrobić, [pobierz narzędzie RMS Protection Tool](http://www.microsoft.com/en-us/download/details.aspx?id=47256). Następnie wedle potrzeby użyj poleceń cmdlet [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) i [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx).
 
-Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protection Cmdlets (Polecenia cmdlet modułu RMS Protection)](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx) (Polecenia cmdlet narzędzia RMS Protection).
 
 > [!NOTE]
 > Moduł PowerShell RMS Protection dołączany do narzędzia RMS Protection Tool różni się od głównego [modułu Windows PowerShell dla usługi Azure Rights Management](administer-powershell.md) i uzupełnia go. Moduł RMS Protection obsługuje zarówno usługę Azure RMS, jak i AD RMS.
@@ -77,6 +71,7 @@ Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protectio
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
