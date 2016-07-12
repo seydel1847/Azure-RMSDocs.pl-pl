@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: acc140931b5f834ce1d70c851d90c334a03010dc
-ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
 
 
 ---
@@ -36,9 +36,9 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
 ###Scenariusz: korzystanie z pliku chronionego przez usługę RMS
 
 
-- **Krok 1**: utworzenie obiektu [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd)
+- **Krok 1**: utworzenie obiektu [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata)
 
- **Opis**: utworzenie wystąpienia obiektu [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) za pomocą metody create, która implementuje uwierzytelnianie usługi przy użyciu interfejsu [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) w celu pobrania tokenu przez przekazanie wystąpienia interfejsu **MSAuthenticationCallback** jako parametru *authenticationCallback* do interfejsu API klienta MSIPC. Zobacz wywołanie metody [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) w poniższej sekcji z przykładowym kodem.
+ **Opis**: utworzenie wystąpienia obiektu [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) za pomocą metody create, która implementuje uwierzytelnianie usługi przy użyciu interfejsu [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) w celu pobrania tokenu przez przekazanie wystąpienia interfejsu **MSAuthenticationCallback** jako parametru *authenticationCallback* do interfejsu API klienta MSIPC. Zobacz wywołanie metody [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) w poniższej sekcji z przykładowym kodem.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -285,6 +285,6 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
  
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
