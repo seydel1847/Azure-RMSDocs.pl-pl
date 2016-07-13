@@ -43,6 +43,7 @@ Jeśli chcesz korzystać z usługi Azure RMS na serwerach lokalnych, obsługiwan
 
 Aby uzyskać informacje o dodatkowych wymaganiach usługi Azure RMS dla tego scenariusza, zobacz [Serwery lokalne, które obsługują usługę Azure RMS](requirements-servers.md).
 
+> [!IMPORTANT]
 > [!IMPORTANT] Następujący scenariusz wdrażania nie jest obsługiwany:
 > 
 > -   Uruchamianie usług AD RMS i usługi Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem w temacie [Migracja z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
@@ -54,6 +55,6 @@ Aby uzyskać informacje o dodatkowych wymaganiach usługi Azure RMS dla tego sce
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

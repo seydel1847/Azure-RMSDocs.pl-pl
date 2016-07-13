@@ -42,6 +42,6 @@ Aby uzyskać więcej informacji, zobacz [Dokumentacja TechNet klienta RMS Client
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

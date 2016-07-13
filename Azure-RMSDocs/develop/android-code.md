@@ -529,6 +529,6 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
