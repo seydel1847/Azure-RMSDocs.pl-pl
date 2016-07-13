@@ -85,6 +85,6 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla Sklepu Wi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
