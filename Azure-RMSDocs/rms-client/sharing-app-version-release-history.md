@@ -26,6 +26,7 @@ Zespół pracujący nad usługą Rights Management regularnie aktualizuje aplika
 
 W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
+> [!NOTE]
 > [!NOTE] Opinie i pytania dotyczące aplikacji do udostępniania usługi RMS należy przesyłać pocztą e-mail na adres [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
 ## Wersja 1.0.2191.0
@@ -120,6 +121,6 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

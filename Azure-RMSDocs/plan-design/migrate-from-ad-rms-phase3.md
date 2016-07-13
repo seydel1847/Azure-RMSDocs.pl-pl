@@ -214,6 +214,6 @@ Po wykonaniu tych procedur zapoznaj się z sekcją **Następne kroki** w artykul
 Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
