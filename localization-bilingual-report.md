@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md) | OutofSyncHandedBackSuccess | [Details](#ee2860da964b52bc41c0aea219110453f024b954386)
 
 ## Item Details
-##### <a name='ee2860da964b52bc41c0aea219110453f024b954386'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/7b7a51d5b9a33e05861057be15bc9330a82668ea/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
-* Handoff Datetime: 2016-07-13 23:40:45
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/6d608c776d31296d03cb9b6301a3f83e38b0d910/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
-* Current Handback File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/e9fe40cb3edfe67e634051118b9ea65e5f619f46/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
-* Current Handback Datetime: 2016-07-13 22:52:52
-* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/e9fe40cb3edfe67e634051118b9ea65e5f619f46/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
-* Bilingual Datetime: 2016-07-14 00:03:11
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
