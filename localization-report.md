@@ -5664,8 +5664,8 @@
 * Current Target File: [Azure-RMSDocs\rms-client\sharing-app-version-release-history.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/6d608c776d31296d03cb9b6301a3f83e38b0d910/Azure-RMSDocs/rms-client/sharing-app-version-release-history.md)
 * Current Handback File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/e9fe40cb3edfe67e634051118b9ea65e5f619f46/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
 * Current Handback Datetime: 2016-07-13 22:52:52
-* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/7c92d4c1c9415914f66072564ebab96c03ce300f/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
-* Bilingual Datetime: 2016-07-11 23:45:01
+* Bilingual File: [sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/e9fe40cb3edfe67e634051118b9ea65e5f619f46/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/sharing-app-version-release-history.d583d7f7a589b8ebbf1ed472a53a2d640f9519ef.pl-pl.xlf)
+* Bilingual Datetime: 2016-07-14 00:03:11
 * [Back to Top](#report-top)
 
 ##### <a name='cd19be1c0319a3d2a4609030c0114b07b461c1d8387'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-view-use-files.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/06f615c993d54ab1e8e4a94d7414302481d919b4/Azure-RMSDocs/rms-client/sharing-app-view-use-files.md)
