@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#bfb56fd4994a358d366d94b40f6c5fc889330303161)
+ [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ca6495e767afac32ad883d2c355bdcab97049c9b/Azure-RMSDocs/information-protection/faq.md) | HandedOffSuccess | [Details](#c7a7b6b3ec8a139a9ac52cb8d35f4c2c0ef4c352154)
 
 ## Item Details
-##### <a name='bfb56fd4994a358d366d94b40f6c5fc889330303161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md)
+##### <a name='c7a7b6b3ec8a139a9ac52cb8d35f4c2c0ef4c352154'></a> Source: [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ca6495e767afac32ad883d2c355bdcab97049c9b/Azure-RMSDocs/information-protection/faq.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/f0f20630bbae355df646d84d906844c2a57adeb9/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.pl-pl.xlf)
-* Handoff Datetime: 2016-07-14 17:37:31
+* Handoff File: [faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pl-pl.xlf](https://github.com/Microsoft/EM.handoff/blob/ec3ab9c9157893db59081df02895dc2b8c021a3e/ol-handoff/Microsoft/Azure-RMSDocs-pr.pl-pl/master/faq.b147013c6b8c2df0f18408c2316c67980bca10e5.pl-pl.xlf)
+* Handoff Datetime: 2016-07-14 23:36:16
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
