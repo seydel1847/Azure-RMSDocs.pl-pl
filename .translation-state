@@ -4220,8 +4220,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\firstref_longhorn_md.152be092d78673a4ab9c3c588ad392631e1b4874.pl-pl.xlf",
-      "BilingualFileCommit": "b71d8aed56602194d3b1877735ebcad63566307e",
-      "BilingualDateTime": "2016-07-02T07:31:50.8834123Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "0fd063f373c94e1805b6c6c7d80b6664c5867093": {
@@ -54797,8 +54797,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\rms-quickstart-intro-include.31997a23f9b8ff765da303310452d81dda7d65b4.pl-pl.xlf",
-      "BilingualFileCommit": "f908bdc07864bf9a67d392c62cefc5f469fbbe6f",
-      "BilingualDateTime": "2016-07-04T11:03:51.038556Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "2f7554efa3de9dd3a080888f6cbfee972a8bdfc0": {
@@ -71764,8 +71764,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\api-reference-4-2.4ee762dd87e1aa9abdd4e77e165aa7864ab22eb0.pl-pl.xlf",
-      "BilingualFileCommit": "990ec0fd8fbd90f9345864b81a5b9fe179d310aa",
-      "BilingualDateTime": "2016-07-02T22:02:02.1144565Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "4ae9d03b68562ca347ded23d045985cea318e9f2": {
@@ -73516,8 +73516,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\scenario-company-confidential-email.941ecd986725f9a245c1ffa40415d2788103096e.pl-pl.xlf",
-      "BilingualFileCommit": "46543be32cbdd5a33fd4d50ed6d8088c9e434428",
-      "BilingualDateTime": "2016-07-02T08:05:08.8394083Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "85fe0447c2b14eaf16b51f23fed0d259d37b04d7": {
@@ -73763,8 +73763,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\sharing-app-admin-guide-technical.0559e28c1635cef750afcfabe69519c7465b9f77.pl-pl.xlf",
-      "BilingualFileCommit": "b71d8aed56602194d3b1877735ebcad63566307e",
-      "BilingualDateTime": "2016-07-02T07:31:50.8834123Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "8635402989db0f83017151910013ca460011b392": {
@@ -77319,8 +77319,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\how-to-use-document-tracking.9b499b3eda30f41dbea9c7eb5f63a725fe4cbdcf.pl-pl.xlf",
-      "BilingualFileCommit": "b71d8aed56602194d3b1877735ebcad63566307e",
-      "BilingualDateTime": "2016-07-02T07:31:50.8834123Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "c90b1d2257bcf3fd355e810e5f9654683c693454": {
@@ -79573,8 +79573,8 @@
       "ArchiveFileDateTime": "2016-07-02T00:10:43.9755559Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.pl-pl\\master\\index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.pl-pl.xlf",
-      "BilingualFileCommit": "f908bdc07864bf9a67d392c62cefc5f469fbbe6f",
-      "BilingualDateTime": "2016-07-04T11:03:51.038556Z",
+      "BilingualFileCommit": "410b1e8df0073038379f3711720bc6a6f231f444",
+      "BilingualDateTime": "2016-07-14T11:09:46.431941Z",
       "BilingualException": null
     },
     "f50a7f202a7c4553c604ed77c0fe40eade4e4a1b": {
