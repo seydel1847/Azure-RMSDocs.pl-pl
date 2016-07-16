@@ -1949,7 +1949,7 @@
 * Handback Error: [handback_transform_failed](#61d18747011435773e16b3c8d2a8ac2104997484105handback_transform_failed)
 * Current Target File: [Azure-RMSDocs\get-started\requirements-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr.pl-pl/blob/b39b8fc3c0afcb74cc55e5003822c7a84303f084/Azure-RMSDocs/get-started/requirements-applications.md)
 * Current Handback File: [requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/1c8da8be192d948e7e52e8afdf170e5d88ef52ee/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf)
-* Current Handback Datetime: 2016-07-16 09:39:49
+* Current Handback Datetime: 2016-07-16 11:31:00
 * Bilingual File: [requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf](https://github.com/Microsoft/EM.handback/blob/1c8da8be192d948e7e52e8afdf170e5d88ef52ee/ol-handback/Microsoft/Azure-RMSDocs-pr.pl-pl/master/requirements-applications.0609c293c5627771667916524593402b34fff036.pl-pl.xlf)
 * Bilingual Datetime: 2016-06-22 12:25:23
 * [Back to Top](#report-top)
