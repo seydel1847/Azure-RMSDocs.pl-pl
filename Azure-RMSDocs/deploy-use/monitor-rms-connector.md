@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2016
+ms.date: 07/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04fbac4389671ed32f64c0840d81723f8314869c
-ms.openlocfilehash: 4509126c61c4e37d9655d9bd080be3e097cd103f
+ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
+ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
 
 
 ---
@@ -100,7 +100,7 @@ Ostrzeżenie **2001**
 
 **Podjęto próbę nieautoryzowanego dostępu do łącznika usługi Microsoft RMS.**
 
-To zdarzenie jest rejestrowane, gdy konto próbuje nawiązać połączenie z łącznikiem usługi RMS, ale próba ta nie powiedzie się. Najbardziej typową przyczyną jest to, że konto, które podejmuje próbę nawiązania połączenia, nie znajduje się na pobranej liście autoryzowanych kont pobieranych przez łącznik usługi RMS z usługi Azure RMS.  Na przykład najnowsza lista nie została jeszcze pobrana (odbywa się to co 15 minut) lub lista nie zawiera konta. 
+To zdarzenie jest rejestrowane, gdy konto próbuje nawiązać połączenie z łącznikiem usługi RMS, ale próba ta nie powiedzie się. Najbardziej typową przyczyną jest to, że konto, które podejmuje próbę nawiązania połączenia, nie znajduje się na pobranej liście autoryzowanych kont pobieranych przez łącznik usługi RMS z usługi Azure RMS. Na przykład najnowsza lista nie została jeszcze pobrana (odbywa się to co 15 minut) lub lista nie zawiera konta. 
 
 Inną przyczyną może być zainstalowanie łącznika usługi RMS na tym samym serwerze, który został skonfigurowany do używania łącznika. Na przykład na serwerze z systemem Exchange Server instalowany jest łącznik usługi RMS, a konto programu Exchange jest autoryzowane do używania łącznika. Ta konfiguracja nie jest obsługiwana, ponieważ łącznik usługi RMS nie może poprawnie zidentyfikować konta podczas próby nawiązania połączenia.
 
@@ -140,6 +140,8 @@ Błąd **3000**
 
 To zdarzenie jest rejestrowane za każdym razem, gdy łącznik usługi RMS napotka nieoczekiwany błąd. Szczegóły błędu znajdują się w komunikacie zdarzenia.
 
+Jedną z możliwych przyczyn może wskazywać tekst **Żądanie nie powiodło się i została zwrócona pusta odpowiedź** w komunikacie o zdarzeniu. Jeśli widzisz ten tekst, może to oznaczać, że urządzenie sieciowe przeprowadza inspekcję pakietów połączenia SSL między serwerami lokalnymi i serwerem łącznika usługi RMS. Nie jest to obsługiwane i spowoduje to niepowodzenie komunikacji oraz zarejestrowanie tego komunikatu w dzienniku zdarzeń.
+
 ----
 
 Błąd **3001**
@@ -147,6 +149,8 @@ Błąd **3001**
 **Wystąpił wyjątek podczas pobierania informacji o autoryzacji.**
 
 To zdarzenie jest rejestrowane, jeśli łącznik usługi RMS nie może pobrać najnowszej listy kont, które zostały autoryzowane do korzystania z łącznika usługi RMS. Szczegóły błędu znajdują się w komunikacie zdarzenia.
+
+
 
 ----
 
@@ -191,6 +195,6 @@ Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
