@@ -167,6 +167,6 @@ Klient musi otworzyć odpowiedni adres URL w przeglądarce. Uwierzytelnianie i p
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -58,6 +58,6 @@ Zestaw MS RMS SDK 4.2 jest dostępny dla następujących systemów operacyjnych:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

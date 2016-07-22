@@ -56,6 +56,6 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

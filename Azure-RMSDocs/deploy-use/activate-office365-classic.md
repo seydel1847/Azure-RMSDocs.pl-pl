@@ -54,6 +54,6 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management została akty
 Powrót do części [Aktywacja usługi Azure Rights Management](activate-service.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

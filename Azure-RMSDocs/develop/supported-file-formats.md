@@ -43,6 +43,6 @@ Administratorzy mogą ustawić klucze rejestru, aby określić, czy pliki mają 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

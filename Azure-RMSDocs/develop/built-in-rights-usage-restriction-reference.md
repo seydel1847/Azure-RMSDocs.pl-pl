@@ -1,5 +1,5 @@
 ---
-title: Porady&
+title: 'Porady& #58; korzystanie z praw wbudowanych | Azure RMS'
 description: "W temacie omówiono prawa wbudowane zapewniane w ramach zestawu RMS SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać."
 keywords: 
 author: bruceperlerms
@@ -141,6 +141,6 @@ W temacie omówiono prawa wbudowane zapewniane w ramach zestawu Microsoft Rights
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

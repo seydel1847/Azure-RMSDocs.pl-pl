@@ -4,7 +4,7 @@ description: "Czwarty krok samouczka umożliwiającego szybkie wypróbowanie us�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
 
 
 ---
@@ -71,7 +71,7 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 |--------------------------------|--------------------------|
 |Pełne instrukcje dotyczące wyświetlania plików chronionych przez usługę Azure Rights Management|[Wyświetlanie i używanie plików chronionych przez usługę Rights Management](../rms-client/sharing-app-view-use-files.md)|
 |Informacje dotyczące bezpłatnej subskrypcji usługi RMS dla użytkowników indywidualnych|[Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|Informacje dotyczące dwóch wersji pliku, które widać w załączniku do wiadomości e-mail|[Co to za plik ppdf, który jest automatycznie tworzony?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
+|Informacje dotyczące dwóch wersji pliku, które widać w załączniku do wiadomości e-mail|[Co to za plik ppdf, który jest automatycznie tworzony?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 [Krok 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

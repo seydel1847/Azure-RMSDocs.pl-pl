@@ -187,6 +187,6 @@ Edytując rejestr na komputerach z pakietem Office 2010, można ustawić wartoś
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

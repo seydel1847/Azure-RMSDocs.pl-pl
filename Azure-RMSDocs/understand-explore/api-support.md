@@ -34,6 +34,6 @@ Podobnie wielu dostawców oprogramowania udostępnia aplikacje dostarczające ro
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługi Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
