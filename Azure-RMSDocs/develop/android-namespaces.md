@@ -32,6 +32,6 @@ Interfejs API systemu Android ma dwie przestrzenie nazw, które obejmują funkcj
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

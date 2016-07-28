@@ -4,7 +4,7 @@ description: "W tym artykule opisano podstawy uwierzytelniania użytkowników w 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ Uwierzytelnianie użytkownika to kluczowy etap nawiązywania komunikacji między
 
 ## Rejestracja za pośrednictwem Portalu Azure
 Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania rejestracji aplikacji za pomocą Portalu Azure [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md). Skopiuj i zapisz **identyfikator klienta** oraz **identyfikator URI przekierowania** z tego procesu do użycia w przyszłości.
+
+## Uzupełnij swoją umowę RMLA (Rights Managagment License Agreement)
+Przed wdrożeniem aplikacji musisz uzupełnić umowę RMLA zawartą z zespołem Microsoft Rights Management. Aby uzyskać szczegółowe informacje, zobacz sekcję pierwszą w temacie [Wdrażanie w środowisku produkcyjnym — Żądanie produkcyjnej umowy licencyjnej](deploying-your-application.md).
 
 ## Implementowanie uwierzytelniania użytkowników w aplikacji
 Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw RMS SDK 4.2 korzysta z Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
@@ -271,6 +274,6 @@ i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

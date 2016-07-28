@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
 
 
 ---
@@ -54,7 +54,7 @@ Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabe
 |Udostępnia dwa domyślne szablony zasad praw, które ograniczają dostęp do zawartości do organizacji użytkownika. Jeden szablon umożliwia przeglądanie chronionej zawartości w trybie tylko do odczytu, a drugi oferuje uprawnienia do zapisu lub modyfikowania chronionej zawartości.<br /><br />Można również tworzyć własne szablony niestandardowe, w tym szablony działu widoczne tylko dla podzbioru użytkowników. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|Nie ma domyślnych szablonów zasad praw — trzeba je utworzyć i dystrybuować. Aby uzyskać więcej informacji, zobacz [Zagadnienia dotyczące szablonów zasad usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|
 |Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [aplikacji RMS sharing](../rms-client/sharing-app-windows.md).<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: nieobsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2007.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: obsługiwany|
 |Obsługuje [aplikację do udostępniania usługi RMS](../rms-client/sharing-app-windows.md) dla systemu Windows, komputerów Mac i urządzeń przenośnych.<br /><br />Ponadto aplikacja do udostępniania usługi RMS obsługuje następujące możliwości:<br /><br />– Udostępnianie informacji osobom w innej organizacji.<br /><br />– Powiadomienia e-mail informujące nadawcę o próbie otwarcia chronionego załącznika.<br /><br />– Witryna śledzenia dokumentów dla użytkowników z możliwością odwoływania dokumentu.|Obsługuje [aplikację do udostępniania usługi RMS](../rms-client/sharing-app-windows.md) dla systemu Windows, komputerów Mac i urządzeń przenośnych. Udostępnianie nie dotyczy jednak użytkowników w innej organizacji, powiadomień e-mail ani witryny śledzenia dokumentów z możliwością odwoływania dokumentu.|
-|Wszystkie typy plików można objąć [ochroną natywną lub ogólną](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) przy użyciu aplikacji do udostępniania usługi RMS.<br /><br />W przypadku innych aplikacji sprawdź [tabelę możliwości urządzeń klienckich](../get-started/requirements-client-devices.md#client-device-capabilities).|Wszystkie typy plików można objąć [ochroną natywną lub ogólną](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) przy użyciu aplikacji do udostępniania usługi RMS.<br /><br />W przypadku innych aplikacji sprawdź [tabelę możliwości urządzeń klienckich](../get-started/requirements-client-devices.md#client-device-capabilities).|
+|Wszystkie typy plików można objąć [ochroną natywną lub ogólną](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) przy użyciu aplikacji do udostępniania usługi RMS.<br /><br />Dla innych aplikacji sprawdź tabelę [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).|Wszystkie typy plików można objąć [ochroną natywną lub ogólną](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) przy użyciu aplikacji do udostępniania usługi RMS.<br /><br />Dla innych aplikacji sprawdź tabelę [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).|
 |Minimalna obsługiwana wersja klienta systemu Windows to Windows 7.|Minimalna obsługiwana wersja klienta systemu Windows to Windows Vista z dodatkiem Service Pack 2.|
 |Obsługa urządzeń przenośnych dotyczy systemów Windows Phone, Android, iOS i Windows RT.<br /><br />Obsługa poczty e-mail przy użyciu usługi IRM programu Exchange ActiveSync dotyczy również wszystkich platform urządzeń przenośnych z włączoną obsługą tego protokołu.|Obsługa urządzeń przenośnych dotyczy systemów Windows Phone, Android, iOS i Windows RT oraz wymaga [rozszerzenia usług Active Directory Rights Management (AD RMS) dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).<br /><br />Obsługa poczty e-mail przy użyciu usługi IRM programu Exchange ActiveSync dotyczy wszystkich platform urządzeń przenośnych z włączoną obsługą tego protokołu.|
 |Obsługuje usługę Multi-Factor Authentication (MFA) na komputerach i urządzeniach przenośnych.<br /><br />Aby uzyskać więcej informacji, zobacz [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms).|Obsługuje uwierzytelnianie karty inteligentnej, jeśli usługi IIS zostały skonfigurowane do wysyłania żądań certyfikatów.|
@@ -76,6 +76,6 @@ Jeśli chcesz przeprowadzić migrację z usług AD RMS do usługi Azure RMS, zob
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

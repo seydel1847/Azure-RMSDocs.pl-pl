@@ -1,7 +1,7 @@
 ---
 title: "Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS| Azure RMS"
 description: "Zawiera opis procesu uwierzytelniania przy użyciu biblioteki ADAL"
-keywords: authentication, RMS, ADAL
+keywords: uwierzytelnianie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -124,6 +124,6 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

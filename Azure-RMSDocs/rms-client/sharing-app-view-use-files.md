@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 ---
@@ -41,7 +41,7 @@ W Eksploratorze plików lub wiadomości e-mail zawierającej załącznik kliknij
 Jeśli są widoczne dwie wersje pliku różniące się rozszerzeniami nazw plików, otwórz plik z rozszerzeniem ppdf tylko w sytuacji, gdy nie możesz otworzyć drugiego pliku. Jeśli nie możesz otworzyć również wersji ppdf, najpierw zainstaluj [aplikację RMS sharing](install-sharing-app.md), która umożliwia otwieranie plików z rozszerzeniem nazwy ppdf.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji, zobacz „[Co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)”.
+> Aby uzyskać więcej informacji, zobacz sekcję „[Co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)”.
 
 Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić na podstawie rozszerzenia nazwy pliku. W każdym przypadku otwieranie pliku może podlegać inspekcji tak długo jak plik jest chroniony. Ponadto jeśli plik został wysłany jako załącznik wiadomości e-mail, jego nadawca może otrzymać powiadomienie e-mail o każdym otwarciu tego pliku.
 
@@ -101,13 +101,13 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 -   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

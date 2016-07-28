@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
-ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 
 ---
@@ -28,7 +28,7 @@ Użyj poniższej tabeli, aby zidentyfikować wymagania biznesowe lub problemy, k
 
 |Wymaganie lub problem|Rozwiązanie przy użyciu usługi Azure RMS|
 |--------------------------|-----------------------|
-|Ochrona wszystkich typów plików|√ W poprzedniej implementacji usługi Rights Management tylko pliki pakietu Office mogły być chronione za pomocą ochrony natywnej. Obecnie [ochrona ogólna](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) umożliwia obsługę wszystkich typów plików.|
+|Ochrona wszystkich typów plików|√ W poprzedniej implementacji usługi Rights Management tylko pliki pakietu Office mogły być chronione za pomocą ochrony natywnej. Teraz [ochrona natywna](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) oznacza, że obsługiwane są pliki wszystkie typów.|
 |Ochrona plików w każdym miejscu|√ Gdy plik jest zapisywany w lokalizacji ([ochrony miejscowej](../rms-client/sharing-app-protect-in-place.md)), ochrona pozostaje skojarzona z plikiem, nawet jeśli zostanie on skopiowany do magazynu poza kontrolą działu IT, takiego jak usługa magazynu w chmurze.|
 |Bezpieczne udostępnianie plików za pośrednictwem poczty e-mail|√ Gdy plik jest udostępniany za pośrednictwem poczty e-mail ([udostępnianie chronionej zawartości](../rms-client/sharing-app-protect-by-email.md)), plik jest chroniony jako załącznik do wiadomości e-mail z instrukcją otwierania chronionego załącznika. Tekst wiadomości e-mail nie jest szyfrowany, więc adresat zawsze może przeczytać instrukcję. Jednak ponieważ dołączony dokument jest chroniony, tylko autoryzowani użytkownicy będą mogli go otworzyć, nawet jeśli wiadomość e-mail lub dokument zostaną przesłane dalej do innych osób.|
 |Inspekcja i monitorowanie|√ Możesz [przeprowadzać inspekcję i monitorowanie użycia](../deploy-use/log-analyze-usage.md) plików chronionych, nawet po opuszczeniu przez nie granic organizacji.<br /><br />Załóżmy, że pracujesz dla firmy Contoso, Ltd. Pracujesz nad wspólnym projektem z 3 osobami z firmy Fabrikam, Inc. Wysyłasz do tych 3 osób dokument, który chronisz i ograniczasz, aby był tylko do odczytu. Inspekcja Azure RMS może podać następujące informacje:<br /><br />— czy i kiedy wybrane osoby z firmy Fabrikam otworzyły dokument;<br /><br />— czy inne osoby, których nie podano, próbowały (bez powodzenia) otworzyć dokument — prawdopodobnie ponieważ został przekazany albo zapisany w lokalizacji udostępnionej innym osobom;<br /><br />— czy dowolna osoba z wybranych próbowała (bez powodzenia) drukować lub zmieniać dokument.|
@@ -73,6 +73,6 @@ Aby poznać usługi Azure RMS dla administratorów i użytkowników, zobacz [Us�
 Aby uzyskać informacje techniczne na temat działania usługi Azure RMS, zobacz artykuł [Jak działa usługa Azure RMS?](how-does-it-work.md) 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
