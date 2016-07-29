@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
 
 
 ---
@@ -31,8 +31,8 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 
 -   [Wymagania wstępne](#prerequisites)
 -   [Opcjonalne](#optional)
--   [Konfigurowanie środowiska deweloperskiego](#configuring_your_development_environment)
--   [Zobacz też](#see_also)
+-   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
+-   [Zobacz też](#see-also)
 
 ## Wymagania wstępne
 
@@ -119,6 +119,6 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
