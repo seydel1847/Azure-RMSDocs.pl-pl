@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 2 
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 463c0bc1fa86f73e2623faf5a624afeabcadeedb
-ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
+ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
+ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 
 ---
@@ -44,7 +44,7 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
 2. W bloku **Etykieta: Poufne** ukażą się ustawienia dostępne dla każdej etykiety. Wprowadź następujące zmiany:
 
-    a. Jeśli uaktywniono usługę Azure Rights Managment, dla opcji **Wybierz szablon RMS**: kliknij menu rozwijane i wybierz szablon domyślny **\<Nazwa firmy > — Poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
+    a. Jeśli aktywowano usługę Azure Rights Management, w przypadku opcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** upewnij się, że wybrano wartość **Azure RMS**, a następnie kliknij pole rozwijane i wybierz szablon domyślny **\<nazwa Twojej organizacji> — poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
 
     Jeśli usługa Azure Rights Management nie została aktywowana, nie można użyć tej opcji.
 
@@ -82,6 +82,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "Gdy plik jest chroniony przez usługę Rights Management, można z
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51050497fe128d94e069d0ac010435bea5623af2
-ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
+ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
+ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 ---
@@ -32,7 +32,7 @@ Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawn
 >
 > Podobnie jeśli chcesz nadać lub cofnąć uprawnienie, nie możesz po prostu określić, które uprawnienie ma zostać nadane lub cofnięte, lecz musisz podać wszystkie uprawnienia, które mają mieć określone osoby.
 
-Jeśli jesteś właścicielem pliku, dla którego chcesz na nowo włączyć ochronę (na przykład plik był pierwotnie chroniony za pomocą aplikacji do udostępniania), będziesz automatycznie mieć uprawnienia do ponownego włączenia ochrony pliku. Jeśli nie jesteś właścicielem, możesz mieć uprawnienia do ponownego włączania ochrony pliku lub nie mieć ich, w zależności od uprawnień, które obecnie ma chroniony plik. 
+Jeśli jesteś właścicielem pliku, dla którego chcesz na nowo włączyć ochronę (na przykład plik był pierwotnie chroniony za pomocą aplikacji do udostępniania), będziesz automatycznie mieć uprawnienia do ponownego włączenia ochrony pliku. Jeśli nie jesteś właścicielem, możesz mieć uprawnienia do ponownego włączania ochrony pliku lub nie mieć ich, w zależności od uprawnień, które obecnie ma chroniony plik. W celu ponownego włączenia ochrony pliku konieczne jest [prawo użytkowania Pełna kontrola](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions).
 
 Na przykład jeśli ktoś inny włączył ochronę pliku za pomocą aplikacji do udostępniania usługi Rights Management oraz podał grupę, do której należysz, oraz określił niestandardowe uprawnienie **Współwłaściciel**, masz uprawnienia do ponownego włączenia ochrony pliku. Jednakże jeśli ta osoba nie podała Ciebie ani grupy, do której należysz, lub wybrała opcję **Recenzent — wyświetlanie i edytowanie** albo szablon, który nie zezwala Ci na usuwanie uprawnień, nie masz uprawnienia do ponownego włączenia ochrony pliku. Najprostszym sposobem sprawdzenia tego jest próba ponownego włączenia ochrony pliku.
 
@@ -96,6 +96,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
-ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
+ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
+ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
 
 
 ---
@@ -124,7 +124,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  Na każdym komputerze, na którym chcesz zainstalować aplikację udostępniania usługi RMS, każdy użytkownik musi uruchomić następujące polecenie (nie są wymagane podniesione uprawnienia): Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
+3.  Na każdym komputerze, na którym chcesz zainstalować aplikację udostępniania usługi RMS, każdy użytkownik tego komputera musi uruchomić następujące polecenie (nie są wymagane podniesione uprawnienia). Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -369,6 +369,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
