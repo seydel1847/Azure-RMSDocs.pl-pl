@@ -3,26 +3,28 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 2 
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
-ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
+ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
+ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 
 ---
 
 # Krok 2: Skonfiguruj i opublikuj zasadę usługi Azure Information Protection
 
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 Usługa Azure Information Protection zawiera domyślną zasadę, której można użyć bez konfiguracji, ale chcemy się jej przyjrzeć i wprowadzić kilka zmian.
 
-1. Zaloguj się do portalu Azure za pomocą tego linku przeznaczonego wyłącznie dla usługi Azure Information Protection: https://portal.azure.com/?microsoft_azure_informationprotection=true
+1. Zaloguj się do [portalu Azure](https://portal.azure.com).
  
 2. Następnie w menu centralnym kliknij **Przeglądaj** i w polu filtru zacznij pisać **Information**. Wybierz pozycję **Azure Information Protection**.
 
@@ -44,20 +46,22 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
 2. W bloku **Etykieta: Poufne** ukażą się ustawienia dostępne dla każdej etykiety. Wprowadź następujące zmiany:
 
-    a. Jeśli aktywowano usługę Azure Rights Management, w przypadku opcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** upewnij się, że wybrano wartość **Azure RMS**, a następnie kliknij pole rozwijane i wybierz szablon domyślny **\<nazwa Twojej organizacji> — poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
-
+    a. Jeśli aktywowano usługę Azure Rights Managment: jeśli w sekcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** jest widoczne pole **Wybierz szablon usług RMS z**, zachowaj ustawienie domyślne **Azure RMS**. Następnie dla opcji **Wybierz szablon usług RMS** kliknij menu rozwijane i wybierz szablon domyślny **\<nazwa organizacji > Poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
+    
     Jeśli usługa Azure Rights Management nie została aktywowana, nie można użyć tej opcji.
-
+    
     b. **Dokumenty z etykietą mają znak wodny**: kliknij **Wł.** i w polu **Tekst** wpisz nazwę organizacji. W naszym przykładzie: **VanArsdel, Ltd**. 
-
+    
     c. Kliknij przycisk **Dodaj nowy warunek** i następnie w bloku **Warunek** wykonaj następujące czynności:
-
+    
     - **Wybierz typ warunku**: **Wbudowany**
-
+    
     - **Wybierz wbudowany**: **Numer karty kredytowej**
-
+    
     - **Minimalna liczba wystąpień**: **1**
-
+    
+    - **Zliczaj tylko wystąpienia o unikatowych wartościach**: **Wł.**
+    
     - Kliknij przycisk **Zapisz**, aby powrócić do bloku **Etykieta: Poufne**.
 
 3. W bloku **Etykieta: Poufne** zobaczysz, że jako **NAZWA WARUNKU** jest wyświetlany **Numer karty kredytowej** z opcją **WYSTĄPIENIA** równą **1**.
@@ -76,12 +80,16 @@ Po zakończeniu tego samouczka możesz zamknąć portal Azure lub zostawić otwa
 
 Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilka zmian, następnym krokiem jest zainstalowanie klienta usługi Azure Information Protection.
 
+|Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
+|--------------------------------|--------------------------|
+|Informacje o opcjach konfiguracji zasad|[Konfigurowanie zasad usługi Azure Information Protection](configure-policy.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; Krok 1](infoprotect-tutorial-step1.md)
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

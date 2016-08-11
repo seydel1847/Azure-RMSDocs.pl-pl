@@ -3,22 +3,24 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 4 
 description: "Krok 4 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: e80ea074fb1f6e571b846969b15c08cf7108b11c
-ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 ---
 
 # Krok 4: Zobacz, jak działają funkcje klasyfikacji, etykietowania i ochrony 
 
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 Po otwarciu dokumentu programu Word z zainstalowanym klientem usługi Azure Information Protection możesz sprawdzić, jak łatwo rozpocząć etykietowanie i chronienie dokumentu za pomocą skonfigurowanej zasady.
 
@@ -75,6 +77,6 @@ Po zakończeniu testowania warto zapoznać się z [często zadawanymi pytaniami 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

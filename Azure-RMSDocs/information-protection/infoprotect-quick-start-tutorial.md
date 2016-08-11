@@ -3,22 +3,24 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection | Azure 
 description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/16/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: cac95dec84f99d2e6caa3458dc8284defe2324bc
-ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
 
 
 ---
 
 # Samouczek Szybki start dla usługi Azure Information Protection 
 
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 Samouczek wprowadzający, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut. Opcjonalnie będziemy aktywować usługę Azure Rights Management, przyglądać się domyślnej zasadzie usługi Azure Information Protection i modyfikować ją, instalować klienta usługi Azure Information Protection, a następnie używać programu Word do zapoznania się z działaniem funkcjami klasyfikacji, etykietowania i ochrony.
 
@@ -38,7 +40,7 @@ Do ukończenia tego samouczka będą potrzebne następujące elementy:
 
 - Konto administratora do logowania się do centrum administracyjnego usługi Office 365 lub klasycznego portalu Azure, umożliwiające aktywowanie usługi Rights Management. To konto musi mieć również adres e-mail i działającą usługę poczty e-mail (na przykład Exchange Online lub Exchange Server).
 
-- Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowany pakiet Office 2016, Office 2013 z dodatkiem Service Pack 1 lub Office 2010. 
+- Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowany pakiet Office Professional Plus 2016, Office Professional Plus 2013 z dodatkiem Service Pack 1 lub Office Professional Plus 2010. 
 
 - Jeśli w organizacji wdrożono usługę AD RMS (Active Directory Rights Management Services): komputer musi należeć do grupy roboczej, która wcześniej nie korzystała z usług AD RMS. Jest to wymagane, jeśli chcesz chronić dokumenty i zapewnić, że komputer pobiera szablony tylko z usługi Azure Rights Management. Komputer nie może łączyć się w tym samym czasie jednocześnie z usługą AD RMS i usługą Azure RMS. Aby uzyskać informacje o migracji, zobacz artykuł [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).   
 
@@ -51,6 +53,6 @@ Zaczynamy!
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

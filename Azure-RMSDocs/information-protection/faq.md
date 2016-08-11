@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,15 +13,17 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e60cd910a8e995a2681d7eb87a13f815183d9124
-ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 
 ---
 
 # Często zadawane pytania dotyczące usługi Azure Information Protection (wersja zapoznawcza)
 
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 Masz pytanie dotyczące wersji zapoznawczej usługi Azure Information Protection?  Zobacz, czy nie znajdziesz tutaj odpowiedzi. 
 
@@ -61,12 +63,6 @@ Aby skonfigurować zasady usługi Azure Information Protection w portalu Azure, 
 
 Wszelkie zmiany wymagań dotyczących subskrypcji będą ogłaszane na blogu [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
-## Skoro usługa Azure Information Protection jest publicznie dostępna jako wersja zapoznawcza, dlaczego nie mogę znaleźć jej w portalu Azure?
-
-Aby znaleźć usługę Azure Information Protection na portalu, użyj linku https://portal.azure.com/?Microsoft_Azure_InformationProtection=true
-
-Następnie w menu centralnym kliknij **Przeglądaj** i w polu filtru zacznij pisać „Information Protection”. Spośród wyników wybierz **Azure Information Protection**.
-
 ## Czy muszę być administratorem globalnym, aby wypróbować wersję zapoznawczą usługi Azure Information Protection?
 
 Tylko w przypadku wersji zapoznawczej dowolny użytkownik uwierzytelniony przez usługę Azure może zobaczyć i skonfigurować w portalu Azure zasady usługi Azure Information Protection dla swojej dzierżawy.
@@ -87,9 +83,9 @@ Ten temat został udokumentowany i będzie aktualizowany w artykule [Wymagania d
 
 ## Jak komputery uzyskują informacje o zasadach od usługi Azure Information Protection i jak często są one odświeżane?
 
-Przy każdym otwarciu aplikacji pakietu Office klient usługi Azure Information Protection sprawdza, czy jest dostępna nowsza wersja zasady usługi. Jeśli istnieje nowsza wersja, klient pobiera ją za pomocą łącza HTTPS w celu zabezpieczenia danych. 
+Przy każdym otwarciu aplikacji pakietu Office klient usługi Azure Information Protection sprawdza, czy jest dostępna nowsza wersja zasad usługi. Jeśli istnieje nowsza wersja, klient pobiera ją za pomocą łącza HTTPS w celu zabezpieczenia danych. 
 
-Jeśli aplikacja była już załadowana w momencie zaktualizowania zasady usługi Azure Information Protection, musisz zamknąć i otworzyć aplikację w celu uzyskania najnowszej wersji zasady.
+Jeśli podczas publikowania nowych zasad usługi Azure Information Protection załadowanych jest wiele wystąpień aplikacji pakietu Office, musisz zamknąć wszystkie instancje, aby pobrać najnowszą wersję zasad. Przykładowo, jeśli masz otwarte dwa dokumenty programu Word i chcesz przetestować zaktualizowane zasady usługi Azure Information Protection tylko w jednym dokumencie: zamknij oba dokumenty programu Word i otwórz ponownie dokument, którego chcesz użyć wraz z najnowszymi zasadami.
 
 ## Gdzie mogą być przechowywane pliki korzystające z usługi Azure Information Protection? 
 
@@ -113,7 +109,7 @@ W portalu Azure można użyć wstępnie zdefiniowanych wzorców, takich jak nume
 
 Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md). 
 
-Dokładność klasyfikacji zależy od sposobu skonfigurowania reguły klasyfikacji, która opiera się na warunkach. Obecnie warunki obsługują wzorce tekstu i wyrażenia regularne. Opis każdej z opcji dostępnych w wersji zapoznawczej wraz z zalecanymi przykładami dotyczącymi testowania można znaleźć we wpisie na blogu usługi Yammer [Description of content matching for our pre-define Information types](https://www.yammer.com/askipteam/#/Threads/show?threadId=737163344) (Opis dopasowywania do zawartości dla zdefiniowanych wstępnie typów informacji). Wykrywanie jest uruchamiane przy zapisywaniu dokumentu lub wysyłaniu wiadomości e-mail.
+Dokładność klasyfikacji zależy od sposobu skonfigurowania reguły klasyfikacji, która opiera się na warunkach. Obecnie warunki obsługują wzorce tekstu i wyrażenia regularne. Aby uzyskać informacje o wszystkich opcjach dostępnych podczas używania wersji zapoznawczej wraz z sugerowanymi przykładami do testowania, zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md). Wykrywanie jest uruchamiane przy zapisywaniu dokumentu lub wysyłaniu wiadomości e-mail.
 
 Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalności biznesowej, warto rozpocząć od wydawania zaleceń użytkownikom, a nie od wprowadzania czynności w pełni zautomatyzowanych. Dzięki temu użytkownicy mają wybór pomiędzy akceptacją etykietowania lub akcji ochronnych a odrzuceniem takiego zalecenia.   
 
@@ -121,7 +117,7 @@ Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalno
 
 Tak. Użyj portalu Azure, aby skonfigurować, czy używać automatycznej klasyfikacji, czy wydawać zalecenie użytkownikom, nadając opcji **Wybierz sposób stosowania etykiet: automatycznie lub zalecając użytkownikowi ** wartość **Zalecenie**.
 
-Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).  
 
 ## Czy można wymusić klasyfikowania wszystkich dokumentów?
 
@@ -140,7 +136,7 @@ Tak. Aby się upewnić, że użytkownicy uzasadniają swoje zmiany klasyfikacji,
 
 W portalu Azure można wybrać szablon Azure Rights Management, aby automatycznie chronić zawartość odpowiednio do podanego poziomu klasyfikacji.
 
-Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md). Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management](configure-policy-protection.md).
 
 ## Czy plik może mieć dwie różne klasyfikacje?
 
@@ -188,6 +184,6 @@ Następnie odwiedź naszą witrynę [Yammer](https://www.yammer.com/askipteam/#/
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

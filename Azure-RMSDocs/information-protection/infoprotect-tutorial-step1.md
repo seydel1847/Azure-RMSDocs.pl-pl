@@ -3,22 +3,24 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 1 
 description: "Krok 1 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 10 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/291/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 78f0f07271414fb646f996e7273343f2abf8852b
-ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 ---
 
 # Krok 1. Aktywowanie usługi Rights Management
  
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 > [!NOTE]
 >Jeśli chcesz wyłącznie klasyfikować dane bez włączania ochrony usługi Azure Rights Management lub jeśli już aktywowano usługę Azure Rights Management dla dzierżawcy — przejdź wprost do [następnego kroku](infoprotect-tutorial-step2.md). 
@@ -84,6 +86,6 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie zechcesz skonfigurować nies
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

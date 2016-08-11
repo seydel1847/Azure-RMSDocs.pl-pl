@@ -3,22 +3,24 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 3 
 description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7f85c673cd1e8055d6a27dcc49b5da18a7e12f98
-ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 
 
 ---
 
 # Krok 3: Zainstaluj klienta usługi Azure Information Protection 
 
-*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+>*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
+
+**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
 
 W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dzięki czemu właśnie skonfigurowana zasada zostanie pobrana do komputera z systemem Windows i w aplikacjach pakietu Office zostaną wyświetlone etykiety. 
 
@@ -41,11 +43,16 @@ W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dz
 
 Wszystko jest przygotowane do ostatniego kroku, w którym przekonamy się, jak działają funkcje klasyfikowania, etykietowania i ochrony.
 
+|Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
+|--------------------------------|--------------------------|
+|Informacje o instalowaniu klienta|[Instalowanie klienta usługi Azure Information Protection](info-protect-client.md)|
+
+
 >[!div class="step-by-step"]
 [&#171; Krok 2](infoprotect-tutorial-step2.md)
 [Krok 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
