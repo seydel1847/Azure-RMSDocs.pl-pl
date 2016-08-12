@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 3 
 description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dz
         Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Zainstalowano zasadę Information Protection** i godzina ostatniego połączenia. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
 
     - Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Jest na nim wyświetlany tytuł **Ważność** i skonfigurowana przez nas etykieta domyślna **Wewnętrzne**. 
-
-
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zainstalowany klient](../media/word2013-callouts.png)
+    
+        ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zainstalowany klient](../media/word2013-callouts2.png)
 
 Wszystko jest przygotowane do ostatniego kroku, w którym przekonamy się, jak działają funkcje klasyfikowania, etykietowania i ochrony.
 
@@ -53,6 +52,6 @@ Wszystko jest przygotowane do ostatniego kroku, w którym przekonamy się, jak d
 [Krok 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
