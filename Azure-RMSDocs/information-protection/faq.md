@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ Kilka minut wystarczy do zapoznania się z naszym samouczkiem Szybki start: [Sam
 
 Należy pamiętać, że wersja zapoznawcza umożliwia testowanie nowego **planu usług Premium P2** i że niektóre zaawansowane funkcje, takie jak automatyczne i zalecane etykietowanie, mogą nie być ogólnie dostępne w Twoim bieżącym planie. Informacje o różnych planach usług (Azure Information Protection Premium P1 i Azure Information Protection Premium P2) znajdują się w następującym wpisie w blogu: [Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/) (Wprowadzenie do pakietu Enterprise Mobility + Security).
 
-Ta wersja zapoznawcza ma następujące ograniczenia: W blogu [Enterprise Mobility and Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i witrynie [Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) będą się pojawiać zawiadomienia o dostępności dodatkowych funkcji i możliwości:
+Ta wersja zapoznawcza ma następujące ograniczenia: W blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) i witrynie [Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) będą się pojawiać ogłoszenia o dostępności dodatkowych funkcji i możliwości:
 
 - Brak centralnego rejestrowania dla funkcji klasyfikacji i etykietowania.
 
-- Nazwy etykiet i etykietek narzędzi są obsługiwane tylko w języku angielskim.
+- Nazwy etykiet i etykietki narzędzi są obsługiwane tylko w jednym języku.
 
 - Warunkami klasyfikacji automatycznej muszą być frazy lub wzorce.
 
@@ -61,11 +61,11 @@ W wersji zapoznawczej można użyć dowolnej subskrypcji, która obejmuje usług
 
 Aby skonfigurować zasady usługi Azure Information Protection w portalu Azure, trzeba posiadać subskrypcję platformy Azure. Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej: przejdź na stronę [wprowadzenia do platformy Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
 
-Wszelkie zmiany wymagań dotyczących subskrypcji będą ogłaszane na blogu [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
+Wszelkie zmiany wymagań dotyczących subskrypcji będą ogłaszane w blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection).
 
 ## Czy muszę być administratorem globalnym, aby wypróbować wersję zapoznawczą usługi Azure Information Protection?
 
-Tylko w przypadku wersji zapoznawczej dowolny użytkownik uwierzytelniony przez usługę Azure może zobaczyć i skonfigurować w portalu Azure zasady usługi Azure Information Protection dla swojej dzierżawy.
+Tylko w przypadku wersji zapoznawczej dowolny użytkownik uwierzytelniony przez usługę Azure może zobaczyć i skonfigurować w portalu Azure zasady usługi Azure Information Protection dotyczące klasyfikacji i etykietowania dla swojej dzierżawy. Jednak aby skonfigurować etykietę w celu zastosowania szablonu usługi Rights Management, należy zalogować się jako administrator globalny dla usługi Azure Active Directory.
 
 Jeśli w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasady demonstracyjnej, nie jest nawet konieczne logowanie w portalu w celu wypróbowania wersji zapoznawczej. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection, co umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie pozwala na zmianę ani dodanie nowej etykiety bez rejestrowania się w portalu Azure. 
 
@@ -74,7 +74,7 @@ Jeśli chcesz chronić dokumenty i wiadomości e-mail sklasyfikowanie i zaetykie
 
 ## Czy usługa Azure Information Protection obsługuje scenariusze lokalne i hybrydowe?
 
-Usługa Azure Information Protection to rozwiązanie oparte na chmurze. Jeśli interesują Cię scenariusze hybrydowe, skontaktuj się z zespołem usługi Information Protection, wysyłając wiadomość e-mail na adres askipteam@microsoft.com.
+Usługa Azure Information Protection to rozwiązanie oparte na chmurze. Jeśli interesuje Cię wdrożenie usługi Azure Information Protection dla scenariusza hybrydowego, skontaktuj się z zespołem usługi Information Protection, wysyłając wiadomość e-mail na adres askipteam@microsoft.com.
 
 ## Jakie platformy klienckie i aplikacje są obsługiwane przez usługę Azure Information Protection?
 
@@ -150,7 +150,11 @@ Ponieważ usługa Azure Information Protection używa do klasyfikacji trwałych 
 
 ## Jak działa śledzenie i odwoływanie dokumentów w usłudze Azure Information Protection?
 
-Śledzenie dokumentów w przypadku plików sklasyfikowanych i chronionych za pomocą usługi Azure Information Protection działa tak samo, jak obecnie w przypadku usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz artykuł [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](../rms-client/sharing-app-track-revoke.md).
+Śledzenie dokumentów w przypadku plików sklasyfikowanych i chronionych za pomocą usługi Azure Information Protection działa tak samo, jak obecnie w przypadku usługi Azure Rights Management i aplikacji RMS sharing. Możesz także uzyskać dostęp do witryny śledzenia dokumentów, używając klienta usługi Azure Information Protection (w wersji 1.0.233 lub nowszej): 
+
+- W aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno pozycje **Chroń** > **Śledź użycie**. 
+
+Aby uzyskać więcej informacji, zobacz artykuł [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](../rms-client/sharing-app-track-revoke.md).
 
 ## W jaki sposób usługa Azure Information Protection wymusza skonfigurowane przeze mnie zasady?
 
@@ -184,6 +188,6 @@ Następnie odwiedź naszą witrynę [Yammer](https://www.yammer.com/askipteam/#/
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

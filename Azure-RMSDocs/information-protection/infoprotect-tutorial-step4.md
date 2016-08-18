@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 4 
 description: "Krok 4 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do teg
 
 ### Aby ręcznie zmienić naszą domyślną etykietę:
 
-- Na pasku Information Protection kliknij ikonę Edytuj etykiety znajdującą się obok opcji **Wewnętrzne**. Zostaną wyświetlone dostępne etykiety. Po wybraniu opcji **Osobiste** zostanie wyświetlony monit o uzasadnienie obniżenia poziomu klasyfikacji. Wybierz opcję **Ten plik nie wymaga już klasyfikacji** i kliknij przycisk **Potwierdź**.  
+- Na pasku Information Protection wybierz etykietę **Osobiste**. Zostanie wyświetlony monit o uzasadnienie obniżenia poziomu klasyfikacji. Wybierz opcję **Ten plik nie wymaga już klasyfikacji** i kliknij przycisk **Potwierdź**.  
 
     Wartość opcji **Ważność** zmieni się na **Osobiste**.
 
@@ -36,7 +36,7 @@ Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do teg
 
 ### Aby całkowicie usunąć klasyfikację:
 
-- Na pasku Information Protection kliknij ikonę Edytuj etykiety znajdującą się obok opcji **Osobiste**. Zostaną wyświetlone dostępne etykiety. Zamiast wybierać którąś z etykiet, kliknij ikonę Usuń etykietę. Kliknij przycisk **OK**, aby potwierdzić czynność i uzasadnić ją.  
+- Na pasku Information Protection kliknij ikonę **Edytuj etykietę** obok opcji **Osobiste**. Zostaną wyświetlone dostępne etykiety. Zamiast wybierać którąś z etykiet, kliknij ikonę **Usuń etykietę**. Kliknij przycisk **OK**, aby potwierdzić, a następnie podaj uzasadnienie dla tej akcji.  
 
     Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej.
 
@@ -77,6 +77,6 @@ Po zakończeniu testowania warto zapoznać się z [często zadawanymi pytaniami 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

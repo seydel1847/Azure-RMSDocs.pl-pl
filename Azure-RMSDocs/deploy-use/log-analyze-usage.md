@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
-ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
+ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
 
 
 ---
@@ -131,7 +131,7 @@ Pierwszy wiersz określa, że są to dzienniki usługi Azure Rights Management. 
 
 Trzeci wiersz wylicza listę nazw pól rozdzielonych znakami tabulatora:
 
-**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip**
+**#Pola: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane w takiej samej kolejności, jak poprzedni wiersz, i są rozdzielone znakami tabulatora. Podczas interpretowania pól skorzystaj z poniższej tabeli.
 
@@ -152,6 +152,7 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |date-published|Data|Data, w której włączono ochronę dokumentu.|2015-10-15T21:37:00|
 |c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
+
 
 #### Wyjątki w polu user-id
 Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, istnieją dwa wyjątki, kiedy wartość w polu nie odwzorowuje rzeczywistego użytkownika:
@@ -174,29 +175,42 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |AcquireTemplates|Wykonano wywołanie pobrania szablonów na podstawie identyfikatorów szablonów.|
 |AcquireTemplateInformation|Wykonano wywołanie pobrania identyfikatorów szablonu z usługi.|
 |AddTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące dodania szablonu.|
+|AllDocsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV ze strony **Wszystkie dokumenty**.|
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
 |Certify|Klient certyfikuje zawartość objętą ochroną.|
 |KMSPDecrypt|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK).|
 |DeleteTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące usunięcia szablonu na podstawie identyfikatora szablonu.|
+|DocumentEventsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV dla pojedynczego dokumentu.|
 |ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
 |FECreateEndUserLicenseV1|Działanie podobne do typu żądania AcquireLicense, ale dotyczy urządzeń przenośnych.|
 |FECreatePublishingLicenseV1|Działanie takie samo, jak połączonych typów żądań Certify i GetClientLicensorCert, ale dotyczy klientów mobilnych.|
 |FEGetAllTemplates|Wykonano wywołanie z urządzenia przenośnego (fronton) dotyczące pobrania szablonów.|
+|GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: użytkownik wyświetla stronę **wszystkie dokumenty** dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: administrator wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action ma wartość true, pole acting-as-user nie jest puste: administrator wyświetla stronę **wszystkie dokumenty** dla użytkownika.|
 |GetAllTemplates|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania wszystkich szablonów.|
 |GetClientLicensorCert|Klient żąda certyfikatu publikowania (który jest później używany do ochrony zawartości) z komputera z systemem Windows.|
 |GetConfiguration|Wykonano wywołanie polecenia cmdlet programu Azure PowerShell w celu pobrania konfiguracji dzierżawy usługi Azure RMS.|
 |GetConnectorAuthorizations|Wykonano wywołanie z łączników usługi RMS dotyczące pobrania ich konfiguracji z chmury.|
+|GetRecipients|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku listy dla pojedynczego dokumentu.|
+|GetSingle|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do strony **pojedynczego dokumentu**.|
 |GetTenantFunctionalState|Klasyczny portal Azure sprawdza, czy usługa Azure RMS jest aktywowana.|
 |GetTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania szablonu przez określenie identyfikatora szablonu.|
 |ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu przez określenie identyfikatora szablonu.|
 |FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
+|LoadEventsForMap|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
+|LoadEventsForSummary|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku osi czasu dla pojedynczego dokumentu.|
+|LoadEventsForTimeline|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
 |ImportTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące importowania szablonu.|
+|RevokeAccess|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące odwołania dokumentu.|
+|SearchUsers |Wykonano wywołanie z witryny śledzenia dokumentów dotyczące wyszukania wszystkich użytkowników w dzierżawie.|
 |ServerCertify|Wykonano wywołanie z klienta z obsługą usługi RMS (na przykład programu SharePoint) dotyczące certyfikacji serwera.|
 |SetUsageLogFeatureState|Wykonano wywołanie dotyczące włączenia rejestrowania użycia.|
 |SetUsageLogStorageAccount|Wykonano wywołanie dotyczące określenia lokalizacji dzienników usługi Azure RMS.|
-|KMSPSignDigest|Wykonano wywołanie, gdy klucz zarządzany przez klienta (BYOK) został użyty w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
+|SignDigest|Wykonano wywołanie dotyczące użycia klucza w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
+|UpdateNotificationSettings|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące zmiany ustawień powiadomień dla pojedynczego dokumentu.|
 |UpdateTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące aktualizacji istniejącego szablonu.|
+
+
 
 ## Uwagi dotyczące programu Windows PowerShell
 Od lutego 2016 r. jedynym poleceniem cmdlet programu Windows PowerShell potrzebnym do rejestrowania użycia usługi Azure RMS jest [Get AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx). 
@@ -226,6 +240,6 @@ Aby uzyskać więcej informacji na temat korzystania ze środowiska Windows Powe
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 

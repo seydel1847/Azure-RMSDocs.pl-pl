@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection | Azure 
 description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
+ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
+ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 ---
@@ -38,11 +38,9 @@ Do ukończenia tego samouczka będą potrzebne następujące elementy:
   > [!TIP] 
   > Jeśli potrzebujesz jednej lub obu subskrypcji, uzyskaj je z wyprzedzeniem, ponieważ czasami ukończenie tego procesu może wymagać trochę czasu.
 
-- Konto administratora do logowania się do centrum administracyjnego usługi Office 365 lub klasycznego portalu Azure, umożliwiające aktywowanie usługi Rights Management. To konto musi mieć również adres e-mail i działającą usługę poczty e-mail (na przykład Exchange Online lub Exchange Server).
+- Konto administratora globalnego używane do logowania się do centrum administracyjnego usługi Office 365 lub klasycznego portalu Azure, umożliwiające aktywowanie usługi Rights Management lub wybranie szablonów usługi Azure RMS w portalu Azure. To konto musi mieć również adres e-mail i działającą usługę poczty e-mail (na przykład Exchange Online lub Exchange Server).
 
 - Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowany pakiet Office Professional Plus 2016, Office Professional Plus 2013 z dodatkiem Service Pack 1 lub Office Professional Plus 2010. 
-
-- Jeśli w organizacji wdrożono usługę AD RMS (Active Directory Rights Management Services): komputer musi należeć do grupy roboczej, która wcześniej nie korzystała z usług AD RMS. Jest to wymagane, jeśli chcesz chronić dokumenty i zapewnić, że komputer pobiera szablony tylko z usługi Azure Rights Management. Komputer nie może łączyć się w tym samym czasie jednocześnie z usługą AD RMS i usługą Azure RMS. Aby uzyskać informacje o migracji, zobacz artykuł [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).   
 
 Zaczynamy!
 
@@ -53,6 +51,6 @@ Zaczynamy!
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

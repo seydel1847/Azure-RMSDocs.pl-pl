@@ -3,15 +3,15 @@ title: "Domyślne zasady usługi Azure Information Protection | Azure Rights Man
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 977cbf2f45cab75aaca9c2a16dd1564c2af2fe4a
+ms.sourcegitcommit: 0e02a3f78f1c5986d61f73e57265b944e9d03552
+ms.openlocfilehash: 4abce96c4e1215f92211a231a187bd2de4ad3845
 
 
 ---
@@ -26,120 +26,36 @@ Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyśl
 
 ## Pasek usługi Information Protection
 
-Tytuł: **Ważność**
-
-Etykietka narzędzia: **Ważność informacji składa się z czterech różnych poziomów (Publiczne, Wewnętrzne, Poufne, Tajne), dzięki czemu użytkownik może zidentyfikować ryzyko ujawnienia informacji nieautoryzowanym użytkownikom wewnątrz firmy lub poza nią.**
-
+|Ustawienie|Wartość|
+|-------------------------------|---------------------------|
+|Tytuł|Czułość|
+|Etykietka narzędzia|Ważność informacji składa się z czterech różnych poziomów (Publiczne, Wewnętrzne, Poufne, Tajne), dzięki czemu użytkownik może zidentyfikować ryzyko ujawnienia informacji nieautoryzowanym użytkownikom wewnątrz firmy lub poza nią.|
 
 ## Etykiety
 
-Istnieje 5 etykiet domyślnych o następujących ustawieniach:
-
-### **Osobiste**
-
-Etykietka narzędzia: **Wyłącznie do użytku osobistego. Te dane nie będą monitorowane przez organizację. Informacje osobiste nie mogą zawierać żadnych danych związanych z firmą.**
-
-Kolor: Jasnozielony
-
-Oznaczenia wizualne: Brak
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
-
-### **Publiczne**
-
-Etykietka narzędzia: **Te informacje są informacjami wewnętrznymi. Mogą ich używać osoby wewnątrz firmy i poza nią.**
-
-Kolor: Zielony
-
-Oznaczenia wizualne: Brak
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
-### **Wewnętrzne**
-
-Etykietka narzędzia: **Te informacje zawierają szerokie spektrum wewnętrznych danych firmowych, których mogą używać wszyscy pracownicy. Dane można udostępniać autoryzowanym klientom i partnerom biznesowym. Przykładami informacji wewnętrznych są zasady firmowe i większość komunikacji wewnętrznej.**
-
-Kolor: Niebieski
-
-Oznaczenia wizualne: Stopka (dokument i wiadomość e-mail)
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
-### **Poufne**
-
-Etykietka narzędzia: **Te dane zawierają poufne informacje biznesowe. Udostępnianie tych danych nieautoryzowanym użytkownikom może zaszkodzić organizacji. Przykładami informacji poufnych są informacje dotyczące pracowników, poszczególnych projektów lub umów z klientami oraz dane dotyczące konta sprzedaży.**
-
-Kolor: Pomarańczowy
-
-Oznaczenia wizualne: Stopka (dokument i wiadomość e-mail)
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
-### **Tajne**
-
-Etykietka narzędzia: **Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami tajnych informacji są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.**
-
-Kolor: Czerwony
-
-Oznaczenia wizualne: Stopka (dokument i wiadomość e-mail)
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
+|Etykieta|Etykietka narzędzia|Ustawienia|
+|-------------------------------|---------------------------|-----------------|
+|Osobiste|Wyłącznie do użytku osobistego. Te dane nie będą monitorowane przez organizację. Informacje osobiste nie mogą zawierać żadnych danych związanych z firmą.|**Włączone**: Włączone <br /><br />**Kolor**: Jasnozielony<br /><br />**Oznaczenia wizualne**: Brak <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
+|Publiczne|Te informacje są informacjami wewnętrznymi. Mogą ich używać osoby wewnątrz firmy i poza nią.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
+|Wewnętrzne|Te informacje zawierają szerokie spektrum wewnętrznych danych firmowych, których mogą używać wszyscy pracownicy. Dane można udostępniać autoryzowanym klientom i partnerom biznesowym. Przykładami informacji wewnętrznych są zasady firmowe i większość komunikacji wewnętrznej.|**Włączone**: Włączone <br /><br />**Kolor**: Niebieski <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
+|Poufne|Te dane zawierają poufne informacje biznesowe. Udostępnianie tych danych nieautoryzowanym użytkownikom może zaszkodzić organizacji. Przykładami informacji poufnych są informacje dotyczące pracowników, poszczególnych projektów lub umów z klientami oraz dane dotyczące konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
+|Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
 
 ## Etykiety podrzędne
 
-Istnieją 2 domyślne etykiety podrzędne o następujących ustawieniach:
-
-### Tajne > **Cała firma**
-
-Etykietka narzędzia: **Te dane obejmują poufne informacje biznesowe, do których mają dostęp wszyscy pracownicy firmy.**
-
-Oznaczenia wizualne: Brak
-
-Warunki: Brak
-
-Ochrona: Nie
-
-----
-
-### Tajne > **Moja grupa**
-
-Etykietka narzędzia: **Te dane obejmują poufne informacje biznesowe, do których mają dostęp tylko grupy pracowników.**
-
-Oznaczenia wizualne: Brak
-
-Warunki: Brak
-
-Ochrona: Nie
+|Etykieta|Etykietka narzędzia|Ustawienia|
+|-------------------------------|---------------------------|-----------------|
+|*Tajne* > Cała firma|Te dane obejmują poufne informacje biznesowe, do których mają dostęp wszyscy pracownicy firmy.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
+|*Tajne* > Moja grupa|Te dane obejmują poufne informacje biznesowe, do których mają dostęp tylko grupy pracowników.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Nie|
 
 ## Ustawienia globalne
 
-**Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę (stosowaną automatycznie lub przez użytkowników)**: Wył.
+|Ustawienie|Wartość|
+|-------------------------------|---------------------------|
+|Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę (stosowaną automatycznie lub przez użytkowników)|Wyłączone|
+|Wybierz etykietę domyślną|Brak|
+|Użytkownicy muszą podać uzasadnienie w przypadku obniżenia charakterystyki (np. z Poufne na Publiczne)|Wyłączone|
 
-**Wybierz etykietę domyślną**: Brak
-
-**Użytkownicy muszą uzasadniać obniżenie charakterystyki (np. z Poufne na Publiczne)**: Wył.
 
 ## Następne kroki
 
@@ -147,6 +63,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

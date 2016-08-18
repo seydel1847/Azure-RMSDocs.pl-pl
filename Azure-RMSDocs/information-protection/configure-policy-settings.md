@@ -3,15 +3,15 @@ title: "Konfigurowanie ustawień globalnych zasad usługi Azure Information Prot
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Istnieją 3 ustawienia w zasadach usługi Azure Information Protection, które m
 
 Aby skonfigurować te ustawienia:
 
-1. Zaloguj się do [portalu Azure](https://portal.azure.com).
- 
-2. Następnie w menu centralnym kliknij **Przeglądaj** i w polu filtru zacznij pisać **Information**. Wybierz pozycję **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+    
+    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-3. W bloku **Azure Information Protection** skonfiguruj następujące ustawienia globalne:
+2. W bloku **Azure Information Protection** skonfiguruj następujące ustawienia globalne:
 
     - **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**: w przypadku ustawienia dla tej opcji wartości **Wł.** wszystkie zapisane dokumenty i wysłane wiadomości e-mail będą musiały mieć zastosowaną etykietę. Etykiety mogą być przypisywane ręcznie przez użytkownika, automatycznie na podstawie [warunku](configure-policy-classification.md) lub domyślnie (przy użyciu opcji **Wybierz etykietę domyślną**). 
 
@@ -49,9 +49,9 @@ Aby skonfigurować te ustawienia:
 
     Ta opcja nie ma zastosowania wobec etykiet podrzędnych.
 
-4. Kliknij przycisk **Zapisz**, aby zapisać zmiany.
+3. Kliknij przycisk **Zapisz**, aby zapisać zmiany.
 
-5. Aby udostępnić zmiany użytkownikom, kliknij przycisk **Opublikuj**.
+4. Aby udostępnić zmiany użytkownikom, kliknij przycisk **Opublikuj**.
 
 ## Następne kroki
 
@@ -68,6 +68,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

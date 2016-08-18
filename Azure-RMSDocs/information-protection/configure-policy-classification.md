@@ -3,15 +3,15 @@ title: "Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usł
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
 
 
 ---
@@ -49,15 +49,15 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 ## Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
-1. Upewnij się, że logujesz się do portalu Azure za pomocą tego linku przeznaczonego wyłącznie dla usługi Azure Information Protection: https://portal.azure.com/?microsoft_azure_informationprotection=true
- 
-2. Następnie w menu centralnym kliknij **Przeglądaj** i w polu filtru zacznij pisać **Information**. Wybierz pozycję **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+    
+    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-3. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji.
+2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji.
 
-4. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
+3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
-5. W bloku **Warunek** wybierz opcję **Wbudowany**, jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **Niestandardowy**, jeśli chcesz określić własny warunek, a następnie kliknij przycisk **Zapisz**:
+4. W bloku **Warunek** wybierz opcję **Wbudowany**, jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **Niestandardowy**, jeśli chcesz określić własny warunek, a następnie kliknij przycisk **Zapisz**:
 
     - W przypadku opcji **Wbudowany**: wybierz warunek z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień oraz określ, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
         
@@ -67,13 +67,13 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
         
     **Przykład opcji wystąpień**: wybierasz wbudowaną opcję numeru ubezpieczenia społecznego i ustawiasz minimalną liczbę wystąpień na 2. Dokument ma ten sam numer ubezpieczenia społecznego wymieniony dwukrotnie. Jeśli ustawisz opcję **Zliczaj tylko wystąpienia o unikatowych wartościach** na wartość **Wł.**, warunek nie zostanie spełniony. Jeśli ustawisz tę opcję na wartość **Wył.**, warunek zostanie spełniony.
 
-6. W bloku **Etykieta** skonfiguruj następujące opcje i kliknij przycisk **Zapisz**:
+5. W bloku **Etykieta** skonfiguruj następujące opcje i kliknij przycisk **Zapisz**:
 
     - Wybierz automatyczną lub zalecaną klasyfikację: dla opcji **Wybierz sposób stosowania etykiety: automatycznie lub jako zalecenie dla użytkownika** wybierz wartość **Automatycznie** lub **Zalecenie**.
 
     - Określ tekst monitu dla użytkownika lub wskazówki dotyczącej zasad: zachowaj tekst domyślny lub podaj własny ciąg.
 
-7. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+6. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
 ## Informacje o wbudowanych warunkach
 
@@ -225,6 +225,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

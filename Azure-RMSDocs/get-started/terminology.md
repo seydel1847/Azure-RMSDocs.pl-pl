@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
-ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
+ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
+ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 ---
@@ -32,10 +32,10 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą [!INCLUDE[aa
 |Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę informacji poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
 |AD RMS|Patrz *Usługi Active Directory Rights Management*.|
 |Azure Information Protection|Ta usługa, obecnie dostępna w wersji zapoznawczej, używa klasyfikacji, etykietowania i ochrony w celu zabezpieczenia dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
-|Azure Rights Management|Nazwa często skracana do *Azure RMS*.<br /><br />Usługa Azure, która zapewnia ochronę informacji poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.  Znana także jako *usługa Azure Rights Management*. Poprzednie nazwy:<br /><br />*Windows Azure Active Directory Rights Management*: nazwa często skracana do usługi Windows Azure AD Rights Management.<br /><br />*RMS Online*: oryginalna proponowana nazwa, którą można czasami napotkać w komunikatach o błędach i we wpisach w plikach dziennika.|
+|Azure Rights Management|Nazwa często skracana do *Azure RMS*.<br /><br />Usługa Azure, która zapewnia ochronę informacji poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.  Znana także jako *usługa Azure Rights Management*. Poprzednie nazwy:<br /><br />- *Windows Azure Active Directory Rights Management*: nazwa często skracana do usługi Windows Azure AD Rights Management.<br /><br />- *RMS Online*: oryginalna proponowana nazwa, którą można czasami napotkać w komunikatach o błędach i we wpisach w plikach dziennika.|
 |Azure RMS|Zobacz *Azure Rights Management*.|
 |BYOK|Zobacz *bring your own key (własny klucz)*.|
-|bring your own key (własny klucz)|Nazwa często skracana do *BYOK*.<br /><br />Opcja konfiguracji wybierana przez organizacje, które chcą generować własne klucze dzierżawy dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] i zarządzać nimi.|
+|bring your own key (własny klucz)|Nazwa często skracana do *BYOK*.<br /><br />Opcja konfiguracji i topologii wybierana przez organizacje, które chcą generować własne klucze dzierżawy dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] i zarządzać nimi.|
 |klucz zawartości|Unikatowy klucz tworzony przez aplikacje obsługujące usługę RMS dla każdego dokumentu lub wiadomości e-mail chronionych z użyciem usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], który pozwala ograniczyć ryzyko ujawnienia informacji.|
 |wykorzystać|Odblokować plik chroniony z użyciem usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] do odczytu lub użyć go.|
 |zdezaktywować|Wyłączyć usługę Rights Management w celu uniemożliwienia organizacji dalszego korzystania z usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].|
@@ -44,6 +44,8 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą [!INCLUDE[aa
 |usługi zarządzania prawami (RMS) dla przedsiębiorstw|Powszechnie stosowany w branży ogólny termin używany często w odniesieniu do produktów i rozwiązań, które pomagają organizacjom chronić poufne lub cenne informacje przy użyciu szyfrowania w połączeniu z narzędziami obejmującymi zasady autoryzacji. Usługa Microsoft Rights Management stanowi przykład rozwiązania z kategorii usług zarządzania prawami dla przedsiębiorstw (ERM).|
 |ERM|Zobacz *usługi zarządzania prawami (RMS) dla przedsiębiorstw*.|
 |ogólna ochrona|Poziom ochrony uwzględniający szyfrowanie dowolnego typu pliku i uniemożliwiający otwarcie pliku przez nieupoważnione osoby. Otwarty plik jest niezaszyfrowany i można go użyć w aplikacji, która nie obsługuje natywnie usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
+|HYOK|Zobacz *rozwiązanie „hold your own key”*.|
+|hold your own key|Nazwa często skracana do *HYOK*.<br /><br />Opcja konfiguracji i topologii dla organizacji, która chce generować i przechowywać własny klucz lokalnie, zwykle ze względu na przepisy lub zapewnianie zgodności.|
 |ochrona informacji|Pojęcie skracane czasami do *IP*.<br /><br />Powszechnie stosowany w branży ogólny termin odnoszący się do ochrony danych i plików przed nieautoryzowanym dostępem, nawet po opuszczeniu przez dane i pliki granic organizacji w wyniku przesłania dokumentu za pośrednictwem poczty e-mail lub jego udostępnienia. Usługa Microsoft Rights Management stanowi przykład rozwiązania zapewniającego ochronę informacji (IP).|
 |Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z nazwami usług Office, takimi jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi funkcji zarządzania prawami.|
 |IRM|Zobacz *Information Rights Management (zarządzanie prawami do informacji)*.|
@@ -72,6 +74,6 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą [!INCLUDE[aa
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
