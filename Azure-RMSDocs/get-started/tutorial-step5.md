@@ -91,6 +91,6 @@ Możesz też zobaczyć [Szybkie wdrażanie usługi Azure Rights Management](../g
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

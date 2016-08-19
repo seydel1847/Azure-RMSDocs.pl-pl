@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty
 
 -   Jeśli chcesz zatrzymać udostępnianie dokumentu: kliknij pozycję **Odwołaj dostęp**, podaj okres, przez jaki dokument będzie jeszcze dostępny, i zdecyduj, czy chcesz powiadomić o odwołaniu dostępu osoby, którym dokument był wcześniej udostępniony. Jeśli się na to zdecydujesz, przygotuj niestandardową wiadomość dla nich. Odwołanie udostępnionego dokumentu nie powoduje jego usunięcia, ale blokuje możliwość otwierania go przez autoryzowanych użytkowników.
 
--   Jeśli chcesz wyeksportować plik do programu Excel: kliknij pozycję **Otwórz w programie Excel**, aby móc modyfikować dane i tworzyć własne widoki oraz wykresy.
+-   Jeśli chcesz wyeksportować plik do programu Excel: kliknij pozycję **Eksportuj do pliku CSV**, aby móc modyfikować dane i tworzyć własne widoki oraz wykresy.
 
 -   Jeśli chcesz skonfigurować powiadomienia e-mail: kliknij pozycję **Ustawienia** i zdecyduj, czy chcesz otrzymywać pocztą e-mail powiadomienia o dostępie do dokumentu.
+
+- Jeśli chcesz śledzić i odwoływać dokumenty udostępnione innym: administratorzy usługi Azure RMS mogą śledzić i odwoływać dokumenty dla innych użytkowników, klikając ikonę administratora. Ta ikona jest widoczna tylko dla administratorów.
 
 -   Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -50,6 +52,11 @@ Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty
     ![Wybierz opcję Śledź użycie w programie Outlook w przypadku korzystania z aplikacji RMS sharing ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 Jeśli te opcje usług RMS nie są wyświetlone, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
+
+> [!NOTE] 
+> Jeśli zainstalowano wersję zapoznawczą [klienta usługi Azure Information Protection](../information-protection/info-protect-client.md) w wersji 1.0.233 lub nowszej, możesz także uzyskać dostęp do witryny śledzenia dokumentów przy użyciu przycisku **Chroń**: 
+> 
+> - W aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno pozycje **Chroń** > **Śledź użycie**. 
 
 ### Inne metody śledzenia i odwoływania dokumentów
 Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu aplikacji pakietu Office można użyć także następujących alternatyw:
@@ -93,13 +100,13 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 -   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

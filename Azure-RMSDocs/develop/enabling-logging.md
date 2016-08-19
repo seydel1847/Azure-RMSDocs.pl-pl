@@ -86,7 +86,7 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
     CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Option;
 
 
-**Uwaga:** kod przedstawiony powyżej jest napisany w języku C++. Aby dostosować go do języka C\#, zmień elementy składni, zastępując ciąg „::” znakiem „.”.
+**Uwaga:** kod przedstawiony powyżej jest napisany w języku C++. Dla języka C\# uaktualnij składnię, używając „.” zamiast „::”.
 
 **Linux / C++:** ten zestaw SDK udostępnia podstawowe funkcje rejestrowania, ale nie są one tak zaawansowane jak w przypadku innych platform. Aby uzyskać więcej informacji, zobacz sekcję dotyczącą **rozwiązywania problemów** związanych z plikiem „README.md” na stronie [RMS SDK for portable C++](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) (Zestaw RMS SDK dla przenośnego kodu C++).
 
@@ -96,6 +96,6 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

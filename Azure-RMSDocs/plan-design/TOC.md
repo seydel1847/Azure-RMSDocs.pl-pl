@@ -12,14 +12,13 @@
 ### [Zadania po migracji](migrate-from-ad-rms-phase4.md)
 ## [Planowanie i wdrażanie klucza dzierżawy](plan-implement-tenant-key.md)
 ### [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md)
-### [Informacje o modułach HSM firmy Thales](thales-hsm.md)
-### [Przez Internet](generate-tenant-key-internet.md)
-### [Osobiście](generate-tenant-key-in-person.md)
 ## [Przygotowanie do korzystania z usługi Azure RMS](prepare.md)
 # [Wdrażanie i korzystanie z usługi](/rights-management/deploy-use/activate-service)
 # [Wdrażanie i korzystanie z klienta](/rights-management/rms-client/use-client)
 # [Tworzenie i dostosowywanie aplikacji](/rights-management/develop/developers-guide)
+# [Azure Information Protection (wersja zapoznawcza)](/rights-management/information-protection/what-is-information-protection)
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO3-->
 
 

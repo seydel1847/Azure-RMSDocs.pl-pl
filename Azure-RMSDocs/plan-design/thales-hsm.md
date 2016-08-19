@@ -34,6 +34,6 @@ Więcej informacji znajduje się w sekcji [Thales HSMs and Azure RMS](http://www
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

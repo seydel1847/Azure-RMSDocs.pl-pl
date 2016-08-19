@@ -1,7 +1,7 @@
 ---
 title: "Konfigurowanie uwierzytelniania usługi RMS za pomocą Portalu Azure | Azure RMS"
 description: "Zawiera opis procesu uwierzytelniania przy użyciu biblioteki ADAL"
-keywords: authentication, RMS, ADAL
+keywords: uwierzytelnianie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ Poniżej przedstawiono fragment kodu z większego przykładu kodu klientów urz�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

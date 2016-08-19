@@ -13,8 +13,8 @@ ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8e77298121a84f6feb16a992da81bd9c3bb7b20b
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
 *Dotyczy usług: Azure Rights Management, Office 365*
 
 
-Jeśli zdecydujesz się na [zarządzanie własnym kluczem dzierżawy](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-) i wolisz osobiście przekazać klucz zamiast przesyłać go przez Internet, wykonaj czynności opisane poniżej.
+Jeśli zdecydujesz się na [zarządzanie własnym kluczem dzierżawy](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok) i wolisz osobiście przekazać klucz zamiast przesyłać go przez Internet, wykonaj czynności opisane poniżej.
 
 ## Generowanie klucza dzierżawy
 Aby wygenerować klucz dzierżawy, należy wykonać poniższe trzy kroki:
@@ -151,6 +151,6 @@ Stanowi to zakończenie instrukcji wymaganych do osobistego przekazania klucza d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

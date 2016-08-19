@@ -42,6 +42,6 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 |Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości** ->|[Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

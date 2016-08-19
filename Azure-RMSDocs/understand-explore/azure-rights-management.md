@@ -40,6 +40,6 @@ Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS w Twojej organizacji
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -303,6 +303,6 @@ Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzys
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

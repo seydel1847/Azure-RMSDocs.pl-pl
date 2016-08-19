@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 ---
@@ -85,7 +85,7 @@ Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wy
 
 Ograniczenia:
 
--   Mimo że proces migracji obsługuje migrację klucza certyfikatu licencjonowania serwera (SLC) do sprzętowego modułu zabezpieczeń (HSM) na potrzeby usługi Azure RMS, usługa Exchange Online nie obsługuje obecnie tej konfiguracji. Aby można było korzystać z pełnej funkcjonalności IRM z usługą Exchange Online po zakończeniu migracji do usługi Azure RMS, klucz dzierżawy usługi Azure RMS musi być [zarządzany przez firmę Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-). Można również uruchomić usługę IRM z ograniczoną funkcjonalnością w usłudze Exchange Online, gdy dzierżawa usługi Azure RMS jest zarządzana przez użytkownika (BYOK). Aby uzyskać więcej informacji o korzystaniu z usługi Exchange Online z usługą Azure RMS, zobacz [Krok 6. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) w tych instrukcjach migracji.
+-   Mimo że proces migracji obsługuje migrację klucza certyfikatu licencjonowania serwera (SLC) do sprzętowego modułu zabezpieczeń (HSM) na potrzeby usługi Azure RMS, usługa Exchange Online nie obsługuje obecnie tej konfiguracji. Aby można było korzystać z pełnej funkcjonalności IRM z usługą Exchange Online po zakończeniu migracji do usługi Azure RMS, klucz dzierżawy usługi Azure RMS musi być [zarządzany przez firmę Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok). Można również uruchomić usługę IRM z ograniczoną funkcjonalnością w usłudze Exchange Online, gdy dzierżawa usługi Azure RMS jest zarządzana przez użytkownika (BYOK). Aby uzyskać więcej informacji o korzystaniu z usługi Exchange Online z usługą Azure RMS, zobacz [Krok 6. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) w tych instrukcjach migracji.
 
 -   Jeśli masz oprogramowanie i klientów nieobsługiwanych za pomocą usługi Azure RMS, nie będzie można przy ich użyciu chronić ani korzystać z zawartości chronionej przez usługę Azure RMS. Zapoznaj się z informacjami w sekcji dotyczącej obsługiwanych aplikacji i klientów w artykule [Requirements for Azure Rights Management](../get-started/requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Rights Management).
 
@@ -180,6 +180,6 @@ Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwe
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

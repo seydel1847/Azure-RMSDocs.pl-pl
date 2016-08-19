@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
-ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
+ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 
 ---
@@ -26,6 +26,8 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 
 
 Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie **Zaawansowane funkcje** odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure.
+
+Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usług Azure RMS, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Wykonując poniższe procedury, można tworzyć, konfigurować i publikować szablony niestandardowe dla usługi Rights Management.
 
@@ -165,6 +167,6 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

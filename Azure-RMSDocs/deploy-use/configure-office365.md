@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -104,7 +104,7 @@ W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruch
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    Na przykład: **Test-IRMConfiguration -Sender  adams@contoso.com**
+    Na przykład: **Test-IRMConfiguration -Sender adams@contoso.com**
 
     To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell będą widoczne wyniki wszystkich testów, a na koniec — jeśli testy zakończą się pomyślnie — zostanie wyświetlona informacja **WYNIK OGÓLNY: POZYTYWNY**.
 
@@ -559,7 +559,7 @@ Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi 
 
     3.  Wyszukaj ciąg `$webUrls` i zastąp przykładowe wartości adresami URL w sieci Web powiązanymi z usługą OneDrive dla Firm dla użytkowników, dodając lub usuwając potrzebną liczbę wpisów.
 
-        Możesz również zapoznać się z komentarzami w skrypcie dotyczącymi sposobu zastępowania tej tablicy przez zaimportowanie pliku CSV zawierającego wszystkie adresy URL do zaimportowania.  Przygotowaliśmy inny przykładowy skrypt umożliwiający automatyczne wyszukiwanie i wyodrębnianie adresów URL na potrzeby wypełniania tego pliku CSV. Jeśli wszystko jest gotowe do wykonania tej czynności, rozwiń sekcję [Dodatkowy skrypt służący do wypełniania wyjściowego pliku CSV przy użyciu wszystkich adresów URL usługi OneDrive dla Firm](#BKMK_Script_OD4B_URLS)od razu po wykonaniu tych kroków.
+        Możesz również zapoznać się z komentarzami w skrypcie dotyczącymi sposobu zastępowania tej tablicy przez zaimportowanie pliku CSV zawierającego wszystkie adresy URL do zaimportowania.  Przygotowaliśmy inny przykładowy skrypt umożliwiający automatyczne wyszukiwanie i wyodrębnianie adresów URL na potrzeby wypełniania tego pliku CSV. Jeśli wszystko jest gotowe do wykonania tej czynności, skorzystaj z sekcji [Dodatkowy skrypt służący do wypełniania wyjściowego pliku CSV przy użyciu wszystkich adresów URL usługi OneDrive dla Firm](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file) od razu po wykonaniu tych kroków.
 
         Adres URL sieci Web dla usługi użytkownika OneDrive dla Firm użytkownika ma następujący format: https://*&lt;nazwa_dzierżawcy&gt;*-my.sharepoint.com/personal/*&lt;nazwa_użytkownika&gt;*_*&lt;nazwa dzierżawcy&gt;*_com
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

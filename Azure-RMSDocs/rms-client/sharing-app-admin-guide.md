@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+translationtype: Human Translation
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -27,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
 Aplikacja do udostępniania usługi RMS najbardziej nadaje się do współpracy z usługą Azure RMS, ponieważ konfiguracja wdrożenia obsługuje wysyłanie chronionych załączników do użytkowników w innej organizacji, a także takie opcje jak powiadomienia e-mail i śledzenie dokumentów oraz odwoływanie dostępu do nich.  Z pewnymi ograniczeniami współdziała również z lokalną wersją usług AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure RMS i AD RMS można znaleźć w artykule [Porównanie usług Azure Rights Management i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure RMS, zobacz [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+
+Aby zapoznać się z przeglądem technicznym aplikacji usługi Rights Management, uzyskać informacje o natywnym i ogólnym poziomie ochrony, obsługiwanych typach plików i rozszerzeniach nazw plików oraz sposobach zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide-technical.md). 
 
 ## Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management
 Wersja aplikacji RMS sharing obsługuje instalację skryptową, dzięki czemu ta aplikacja nadaje się do wdrożeń w przedsiębiorstwie.
@@ -115,13 +118,13 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
         > [!NOTE]
         > To polecenie może spowodować wyświetlenie monitu o podanie poświadczeń dla systemu Azure. Monit zostanie wyświetlony, jeśli komputer nie jest przyłączony do domeny. Jeśli komputer będzie przyłączony do domeny, narzędzie może użyć buforowanych poświadczeń.
 
-2.  Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing, uruchom następujące polecenie z podniesionymi uprawnieniami:
+2.  Na każdym komputerze, na którym chcesz zainstalować aplikację udostępniania usługi RMS, uruchom jednorazowo następujące polecenie z podniesionymi uprawnieniami:
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing, użytkownicy muszą uruchomić następujące polecenie (podniesione uprawnienia nie są konieczne): Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
+3.  Na każdym komputerze, na którym chcesz zainstalować aplikację udostępniania usługi RMS, każdy użytkownik tego komputera musi uruchomić następujące polecenie (nie są wymagane podniesione uprawnienia). Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -139,7 +142,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
 2.  Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing, użytkownicy muszą uruchomić następujące polecenie (podniesione uprawnienia nie są konieczne): Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
 
-    -   W 64-bitowym systemie Windows 10, Windows 8.1  i Windows 8:
+    -   W 64-bitowym systemie Windows 10, Windows 8.1 i Windows 8:
 
         ```
         x64\aadrmprep.exe /configureO2010
@@ -348,6 +351,33 @@ Następujące adresy URL są używane do śledzenia dokumentów i muszą być do
 
 -   https://&#42;.microsoftonline-p.com
 
+### Śledzenie i odwoływanie dokumentów dla użytkowników
+
+Użytkownicy po zalogowaniu się do witryny śledzenia dokumentów mogą śledzić i odwoływać dokumenty, które udostępnili za pomocą aplikacji RMS sharing. Po zalogowaniu się jako administrator usługi Azure RMS (administrator globalny) możesz kliknąć ikonę administratora w prawym górnym rogu strony, aby przełączyć się do trybu administratora i wyświetlić dokumenty udostępnione przez użytkowników w organizacji.
+
+Akcje wykonywane w trybie administratora są poddawane inspekcji i rejestrowane w plikach dziennika użycia. Musisz potwierdzić, aby kontynuować. Aby uzyskać więcej informacji na temat tego rejestrowania, zobacz następną sekcję.
+
+W trybie administratora możesz wyszukiwać według użytkownika lub dokumentu. Wyszukiwanie według użytkownika umożliwia wyświetlenie wszystkich dokumentów udostępnionych przez określonego użytkownika. W przypadku wyszukiwania według dokumentu zostaną wyświetleni wszyscy użytkownicy w organizacji, którzy udostępnili dany dokument. Następnie możesz przejść do szczegółów wyników wyszukiwania, aby śledzić dokumenty udostępnione przez użytkowników i w razie potrzeby odwołać te dokumenty. 
+
+Aby wyjść z trybu administratora, kliknij przycisk **X** obok pozycji **Wyjdź z trybu administratora**.
+
+Aby uzyskać instrukcje dotyczące sposobu korzystania z witryny śledzenia dokumentów, zobacz sekcję [Śledzenie i odwoływanie dokumentów](sharing-app-track-revoke.md) w podręczniku użytkownika.
+
+
+
+### Rejestrowanie użycia dla witryny śledzenia dokumentów
+
+Dwa pola w plikach dziennika użycia mają zastosowanie do śledzenia dokumentów: **AdminAction** i **ActingAsUser**.
+
+**AdminAction** — to pole ma wartość true, gdy administrator używa witryny śledzenia dokumentów w trybie administratora, na przykład w celu odwołania dokumentu w imieniu użytkownika lub sprawdzenia, kiedy dokument został udostępniony. To pole jest puste w przypadku, gdy użytkownik loguje się do witryny śledzenia dokumentów.
+
+**ActingAsUser** — jeśli pole AdminAction ma wartość true, to pole zawiera nazwę użytkownika, w imieniu którego administrator działa (wyszukiwanego użytkownika lub właściciela dokumentu). To pole jest puste w przypadku, gdy użytkownik loguje się do witryny śledzenia dokumentów. 
+
+Istnieją również typy żądań, które rejestrują sposób, w jaki użytkownicy i administratorzy korzystają z witryny śledzenia dokumentu. Na przykład typ żądania **RevokeAccess** dotyczy sytuacji, gdy użytkownik lub administrator w imieniu użytkownika odwołał dokument w witrynie śledzenia dokumentów. Użyj tego typu żądania w połączeniu z polem AdminAction, aby określić, czy użytkownik odwołał własny dokument (pole AdminAction jest puste), czy też administrator odwołał dokument w imieniu użytkownika (pole AdminAction ma wartość true).
+
+
+Więcej informacji na temat rejestrowania użycia znajduje się w sekcji [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+
 ## Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji
 Jeśli korzystasz z usług AD RMS, a użytkownicy w Twojej organizacji mają adresy e-mail w kilku domenach (np. na skutek fuzji lub przejęcia), musisz wprowadzić następującą zmianę w rejestrze:
 
@@ -366,6 +396,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO1-->
 
 

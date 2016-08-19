@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 ---
@@ -32,14 +32,14 @@ Te informacje ułatwiają określanie opcji w oknie dialogowym **dodawania ochro
 
 Oprócz opcji do wyboru mogą Cię również zainteresować następujące zagadnienia:
 
--   [Co to za plik ppdf, który jest automatycznie tworzony?](#what-s-the-ppdf-file-that-s-automatically-created-)
+-   [Co to za plik ppdf, który jest automatycznie tworzony?](#what-s-the-ppdf-file-that-s-automatically-created)
 
--   [Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)
+-   [Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
 |Opcja|Opis|
 |----------|---------------|
 |**UŻYTKOWNICY**|Jeśli adres e-mail programu Outlook nie został jeszcze określony, wpisz adresy e-mail osób, którym chcesz umożliwić otwieranie pliku.<br /><br />Pamiętaj, że aplikacja RMS sharing nie obsługuje wszystkich adresów e-mail.<br /><br />Jeśli Twoja organizacja korzysta z lokalnej wersji usług Rights Management (AD RMS), możesz określić tylko adresy e-mail osób z tej organizacji. Jeśli to ograniczenie ma zastosowanie i spróbujesz określić zewnętrzne adresy e-mail, pojawi się komunikat z informacją, że konfiguracja firmy pozwala na udostępnianie chronionej zawartości tylko w ramach firmy. <br /><br /> Jeśli Twoja organizacja korzysta z usługi Azure RMS, możesz wybrać adresy e-mail osób z tej organizacji lub osób z innej organizacji.<br /><br />Na przykład: **joannam@contoso.com; p.michalski@fabrikam.com**.<br /><br />Aplikacja RMS sharing nie obsługuje obecnie osobistych adresów e-mail.|
-|**Ochrona ogólna**|Jeśli ta opcja została wybrana, nie można natywnie chronić wybranego pliku. Więcej informacji można znaleźć w temacie [Jaka jest różnica między ochroną ogólną a wbudowaną (natywną)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) na tej stronie.|
+|**Ochrona ogólna**|Jeśli ta opcja została wybrana, nie można natywnie chronić wybranego pliku. Więcej informacji można znaleźć w temacie [Jaka jest różnica między ochroną ogólną a wbudowaną (natywną)?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection) na tej stronie.|
 |**Przeglądający — tylko wyświetlanie**<br /><br />**Recenzent — wyświetlanie i edytowanie**<br /><br />**Współautor — wyświetlanie, edytowanie, kopiowanie i drukowanie**<br /><br />**Współwłaściciel — wszystkie uprawnienia**<br /><br />Uwaga: przed nazwami tych opcji jest wyświetlana okrągła ikona kuli ziemskiej. Ta ikona jest stosowana, ponieważ przeważnie jedna z tych opcji jest wybierana w przypadku wysyłania załącznika do osoby w innej organizacji.|Wybierz jedną z tych opcji, jeśli chcesz zdefiniować prawa dotyczące chronionego dokumentu. Kliknij każdą opcję, aby wyświetlić jej opis.<br /><br />Po wybraniu jednej z tych opcji tylko osoby określone w obszarze **UŻYTKOWNICY** będą mieć wskazane prawa do otwierania i używania dokumentu. Jeśli na przykład dokument zostanie przesłany do osoby spoza tej listy, jego otwarcie nie będzie możliwe.|
 |Szablony zasad, które konfiguruje administrator.<br /><br />Na przykład, jeśli nazwa firmy to Contoso, Ltd: **Contoso, Ltd — tylko wyświetlanie poufne**.<br /><br />Uwaga: przed nazwami tych opcji jest wyświetlana kwadratowa ikona budynku biura. Ta ikona jest stosowana, ponieważ przeważnie jedna z tych opcji jest wybierana w przypadku wysyłania załącznika do osoby w tej samej organizacji.|Kiedy udostępnisz dokument osobom pracującym w swojej organizacji, zobaczysz dostępne szablony zasad skonfigurowane przez administratora. Wybierz jedną z tych opcji, jeśli dokument nie powinien być udostępniany poza firmą.<br /><br />W przypadku wybrania jednej z tych opcji administrator definiuje uprawnienia do dokumentu oraz wskazuje, kto może go otwierać.|
 |**Dokumenty wygasają**|Tę opcję należy wybrać tylko w przypadku plików ważnych przez określony okres. Po upłynięciu wyznaczonej daty wybrani użytkownicy nie będą już mogli otworzyć tego pliku. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (bieżącej strefy czasowej) w wybranym dniu inne osoby nie będą mogły otwierać pliku.<br /><br />Ta opcja jest niedostępna w przypadku wybrania szablonu zasad skonfigurowanego przez administratora.|
@@ -71,7 +71,7 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 -   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
@@ -79,6 +79,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

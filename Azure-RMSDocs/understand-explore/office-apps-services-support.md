@@ -73,6 +73,6 @@ Więcej informacji o korzystaniu z usługi Azure RMS z programem SharePoint moż
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -13,8 +13,9 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+translationtype: Human Translation
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 4ff6328c0be4cd217390ee802e53e93c90f41c99
 
 
 ---
@@ -27,8 +28,8 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 
 -   [Wymagania wstępne](#prerequisites)
 -   [Opcjonalne](#optional)
--   [Konfigurowanie środowiska deweloperskiego](#configuring_your_development_environment_)
--   [Zobacz też](#see_also)
+-   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment_)
+-   [Zobacz też](#see-also)
 
 ## Wymagania wstępne
 
@@ -149,6 +150,6 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -123,6 +123,6 @@ W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scena
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

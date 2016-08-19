@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
-ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 1728a094dfaa869ae490e86d10ffe5ebcf4bfa5d
 
 
 ---
@@ -28,8 +28,8 @@ Aplikacje systemu Windows Phone mogą używać zestawu Microsoft Rights Manageme
 Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzenia nowych własnych aplikacji.
 
 -   [Wymagania wstępne](#prerequisites)
--   [Konfigurowanie środowiska deweloperskiego](#configuring_your_development_environment)
--   [Zobacz też](#see_also)
+-   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
+-   [Zobacz też](#see-also)
 
 ## Wymagania wstępne
 
@@ -93,6 +93,6 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu W
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

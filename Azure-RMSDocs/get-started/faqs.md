@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
+ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
 
 
 ---
@@ -198,9 +198,14 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 -   Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## Jakie są najnowsze informacje na temat nowych funkcji klasyfikacji i etykietowania?
+
+Ta funkcja jest obecnie dostępna w publicznej wersji zapoznawczej usługi Azure Information Protection. Wypróbuj ją teraz. Listę dostępnych zasobów można znaleźć w artykule [What is Azure Information Protection preview?](../information-protection/what-is-information-protection.md) (Co to jest wersja zapoznawcza usługi Azure Information Protection?).
+
+
 ## Podobno nowa wersja ma być wkrótce dostępna dla usługi Azure RMS — kiedy zostanie ona wydana?
 
-Dokumentacja techniczna nie zawiera informacji o kolejnych wersjach. W przypadku tego typu informacji i zapowiedzi dotyczących wersji zapoznaj się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i pobierz najnowsze aktualizacje kanału [@TheRMSGuy Dana Plastina](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli interesuje Cię wersja pakietu Office, sprawdź również blog dotyczący pakietu Office (https://blogs.office.com/).
+Dokumentacja techniczna nie zawiera informacji o kolejnych wersjach. W przypadku tego typu informacji i zapowiedzi dotyczących wersji zapoznaj się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i pobierz najnowsze aktualizacje kanału [@TheRMSGuy Dana Plastina](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli interesuje Cię wersja pakietu Office, sprawdź również [blog dotyczący pakietu Office](https://blogs.office.com/).
 
 ## Co należy zrobić, jeśli mojego pytania nie ma na tej liście?
 Skorzystaj z linków i zasobów wymienionych w artykule [Informacje i pomoc techniczna dla usługi Azure Rights Management](information-support.md).
@@ -219,6 +224,6 @@ Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

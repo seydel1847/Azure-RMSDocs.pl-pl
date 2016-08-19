@@ -75,6 +75,6 @@ Po skonfigurowaniu aplikacji do obsługi usługi Azure Rights Management użyj [
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

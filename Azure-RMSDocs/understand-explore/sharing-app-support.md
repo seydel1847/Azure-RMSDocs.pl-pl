@@ -59,6 +59,6 @@ Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Ri
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

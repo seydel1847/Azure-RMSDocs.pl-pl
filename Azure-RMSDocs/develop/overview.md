@@ -1,10 +1,10 @@
 ---
-title: "Omówienie | Azure RMS"
+title: "Przegląd — zestaw RMS SDK 4.2 | Azure RMS"
 description: "AD RMS i Azure RMS to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,18 +13,16 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+translationtype: Human Translation
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
 
 
 ---
 
-# Omówienie
+# Przegląd
 
-
-Usługi Microsoft Rights Management (AD RMS i Azure RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem. Przy użyciu aplikacji obsługujących prawa właściciele zawartości mogą zdefiniować użytkowników, którzy mogą otwierać, modyfikować, drukować i przekazywać zawartość oraz podejmować inne związane z nią działania.
-
-Zestaw SDK 4.2 usługi Microsoft Rights Management jest dostępny dla różnych platform i jest to zestaw dewelopera oprogramowania (SDK) lub architektura, której celem jest wspomożenie komputerów klienckich i urządzeń w ochronie dostępu do informacji przepływających przez aplikacje obsługujące prawa i w korzystaniu z tych informacji. Zestawy SDK dla tych platform zapewniają prosty interfejs API dla deweloperów aplikacji, który umożliwia ochronę i korzystanie z zawartości cyfrowej, pobieranie szablonów i uzyskiwanie zasad z serwera oraz powiązanych zadań zarządzania prawami.
+Zestaw SDK 4.2 usługi Microsoft Rights Management to technologia ochrony informacji dostępna dla różnych platform.  Jest to zestaw dewelopera oprogramowania (SDK) lub architektura, której celem jest pomoc komputerom i urządzeniom klienckim w ochronie dostępu do informacji przepływających przez aplikacje obsługujące prawa i w korzystaniu z tych informacji. Zestawy SDK dla tych platform zapewniają prosty interfejs API dla deweloperów aplikacji, który umożliwia ochronę i korzystanie z zawartości cyfrowej, pobieranie szablonów i uzyskiwanie zasad z serwera oraz powiązanych zadań zarządzania prawami.
 
 Dodatkowe informacje na temat obsługiwanych obecnie aplikacji są dostępne w portalu dokumentacji dla deweloperów dla [zestawu SDK usługi Microsoft Rights Management](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md).
 
@@ -66,6 +64,6 @@ Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

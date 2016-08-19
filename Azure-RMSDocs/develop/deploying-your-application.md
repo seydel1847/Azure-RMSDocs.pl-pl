@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: 40eb6628f5204d422bf304f44d64cdf0dcd8537d
 
 
 ---
@@ -28,10 +28,6 @@ Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw i przeprowadza
 ## Żądanie produkcyjnej umowy licencyjnej
 
  Aby można było wydać aplikację utworzoną za pomocą zestawu Rights Management Services SDK 2.1, należy najpierw złożyć wniosek o zawarcie produkcyjnej umowy licencyjnej w celu uzyskania certyfikatu produkcyjnego.
-
-> [!IMPORTANT]
-> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
-> Aby uzyskać więcej informacji o współpracy z usługami Azure RMS, zobacz [Umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 Certyfikat można uzyskać, wnioskując o produkcyjną umowę licencyjną.
 
@@ -116,7 +112,8 @@ Aby użytkownik końcowy mógł korzystać z usług Azure Rights Management Serv
 
 
 > [!IMPORTANT]
-> Uruchomienie aplikacji klienckiej zestawu RMS SDK 2.1 z usługami Azure RMS wymaga utworzenia własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
+> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
+> Aby uzyskać więcej informacji o współpracy z usługami Azure RMS, zobacz [Umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 -   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
 -   Upewnij się, że wdrożenie aplikacji z obsługą praw zawiera kontrolę warunków wstępnych dla tego wyboru usługi.
@@ -135,6 +132,6 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

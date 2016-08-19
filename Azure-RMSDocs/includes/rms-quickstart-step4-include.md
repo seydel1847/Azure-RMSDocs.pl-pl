@@ -33,6 +33,6 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
+ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
 
 
 ---
@@ -43,29 +43,31 @@ Poniżej przedstawiono kilka sposobów ochrony plików za pomocą aplikacji RMS 
 
 ## Co chcesz zrobić?
 > [!NOTE]
-> Aby uzyskać więcej informacji technicznych dotyczących między innymi obsługiwanych typów plików i sposobu instalacji tej aplikacji w sieci przedsiębiorstwa, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
+> Aby uzyskać więcej informacji technicznych dotyczących między innymi [obsługiwanych typów plików](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) i [sposobu instalacji tej aplikacji w sieci przedsiębiorstwa](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application), zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
--   [Pobieranie i instalowanie aplikacji do udostępniania](install-sharing-app.md)
+- [Pobieranie i instalowanie aplikacji do udostępniania](install-sharing-app.md)
 
--   [Ochrona pliku na urządzeniu (ochrona miejscowa)](sharing-app-protect-in-place.md)
+- [Ochrona pliku na urządzeniu (ochrona miejscowa)](sharing-app-protect-in-place.md)
 
--   [Ochrona pliku udostępnionego pocztą e-mail](sharing-app-protect-by-email.md)
+- [Ochrona pliku udostępnionego pocztą e-mail](sharing-app-protect-by-email.md)
 
--   [Śledzenie i odwoływanie dokumentów](sharing-app-track-revoke.md)
+- [Zmienianie uprawnień do chronionych plików](sharing-app-reprotect-files.md)
 
--   [Wyświetlanie i używanie chronionych plików](sharing-app-view-use-files.md)
+- [Śledzenie i odwoływanie dokumentów](sharing-app-track-revoke.md)
 
--   [Usuwanie ochrony z pliku](sharing-app-remove-protection.md)
+- [Wyświetlanie i używanie chronionych plików](sharing-app-view-use-files.md)
 
--   [Używanie skrótów klawiaturowych](sharing-app-keyboard-shortcuts.md)
+- [Usuwanie ochrony z pliku](sharing-app-remove-protection.md)
 
--   [Określanie ustawień w oknie dialogowym](sharing-app-dialog-box.md)
+- [Używanie skrótów klawiaturowych](sharing-app-keyboard-shortcuts.md)
 
-
-
-
+- [Określanie ustawień w oknie dialogowym](sharing-app-dialog-box.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+
+<!--HONumber=Jul16_HO3-->
 
 

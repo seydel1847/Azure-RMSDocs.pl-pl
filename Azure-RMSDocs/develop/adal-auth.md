@@ -1,7 +1,7 @@
 ---
 title: "Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL | Azure RMS"
 description: "Zawiera opis czynności służących do konfigurowania uwierzytelniania na podstawie biblioteki Azure ADAL"
-keywords: authentication, RMS, ADAL
+keywords: uwierzytelnianie, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -109,6 +109,6 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

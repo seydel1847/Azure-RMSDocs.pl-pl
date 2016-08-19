@@ -100,6 +100,6 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 [Krok 2 »](tutorial-step2.md)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 
