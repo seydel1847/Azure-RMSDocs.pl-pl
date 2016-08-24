@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 ---
@@ -33,12 +33,12 @@ Poniższa procedura umożliwia zaimportowanie konfiguracji usług AD RMS do usł
 
 ## Aby importować dane konfiguracji do usługi Azure RMS
 
-1.  Na połączonej z Internetem stacji roboczej pobierz i zainstaluj moduł Windows PowerShell dla usługi Azure RMS (wersja minimalna: 2.1.0.0), który zawiera polecenie cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx).
+1.  Na połączonej z Internetem stacji roboczej pobierz i zainstaluj moduł Windows PowerShell dla usługi Azure RMS (wersja minimalna: 2.5.0.0), który zawiera polecenie cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx).
 
     > [!TIP]
     > Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm -ListAvailable).Version`
 
-    Aby uzyskać instrukcje instalacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+    Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
 2.  Uruchom program Windows PowerShell przy użyciu opcji **Uruchom jako administrator**, a następnie uruchom polecenie cmdlet [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx), aby nawiązać połączenie z usługą Azure RMS:
 
@@ -56,7 +56,7 @@ Poniższa procedura umożliwia zaimportowanie konfiguracji usług AD RMS do usł
 
     Po wyświetleniu monitu wprowadź określone wcześniej hasło i potwierdź, że chcesz wykonać tę akcję.
 
-4.  Po zakończeniu wykonywania polecenia powtórz krok 3 dla każdego pozostałego pliku XML, który został utworzony przez wyeksportowanie zaufanej domeny publikacji. Dla tych plików ustaw opcję **-Active** na wartość **false** podczas uruchamiania polecenia Import. Na przykład: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+4.  Po zakończeniu wykonywania polecenia powtórz krok 3 dla każdego z pozostałych plików XML, które zostały utworzone przez wyeksportowanie zaufanej domeny publikacji. Dla tych plików ustaw opcję **-Active** na wartość **false** podczas uruchamiania polecenia Import. Na przykład: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
 
 5.  Użyj polecenia cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx), aby zakończyć połączenie z usługą Azure RMS:
 
@@ -64,11 +64,13 @@ Poniższa procedura umożliwia zaimportowanie konfiguracji usług AD RMS do usł
     Disconnect-AadrmService
     ```
 
+
 Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi RMS](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Aug16_HO3-->
 
 

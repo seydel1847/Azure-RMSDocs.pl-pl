@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
-ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+translationtype: Human Translation
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: ca2dae71dceae4c59d12243c386eaded8ebb11f9
 
 
 ---
@@ -27,7 +28,7 @@ Skorzystaj z poniższych informacji dotyczących fazy 2 migrowania usług AD RMS
 ## Krok 5. Ponowne konfigurowanie klientów do korzystania z usługi Azure RMS
 W przypadku klientów systemu Windows:
 
-1.  [Pobierz skrypty migracji](http://go.microsoft.com/fwlink/?LinkId=524619):
+1.  [Pobierz skrypty migracji](https://go.microsoft.com/fwlink/?LinkId=524619):
 
     -   CleanUpRMS_RUN_Elevated.cmd
 
@@ -131,6 +132,6 @@ Redirect_OnPrem.cmd:
 Aby kontynuować migrację, przejdź do [fazy 3 — konfiguracja usług pomocniczych](migrate-from-ad-rms-phase3.md).
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

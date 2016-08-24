@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
-ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
 
 
 ---
@@ -41,21 +41,21 @@ W przypadku wdrożenia usługi Azure RMS z użyciem klucza dzierżawy zarządzan
 ## Wybierz topologię klucza dzierżawy: klucz zarządzany przez firmę Microsoft (ustawienie domyślne) lub klucz zarządzany przez użytkownika (BYOK)
 Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji. Domyślnie usługa Azure RMS generuje klucz dzierżawy i zarządza większością aspektów cyklu jego życia. Jest to najprostsza opcja, która wiąże się z najmniejszą liczbą obowiązków administracyjnych użytkownika. W większości przypadków użytkownik nie musi nawet wiedzieć, że ma klucz dzierżawy. Wystarczy, że zarejestruje się w usłudze Azure RMS — resztą procesu zarządzania kluczem zajmie się firma Microsoft.
 
-Użytkownik może także przejąć pełną kontrolę nad kluczem dzierżawy, m.in. utworzyć go oraz przechowywać lokalnie jego kopię główną. Ten model jest często określany mianem BYOK (ang. Bring Your Own Key), czyli „Przynieś własny klucz”. Po wybraniu tej opcji:
+Możesz też skorzystać z pełnej kontroli nad swoim kluczem dzierżawy, używając usługi [Azure Key Vault](https://azure.microsoft.com/services/key-vault/). Ten scenariusz obejmuje utworzenie klucza dzierżawy i lokalne przechowywanie kopii głównej. Ten model jest często określany mianem BYOK (ang. Bring Your Own Key), czyli „Przynieś własny klucz”. Po wybraniu tej opcji:
 
-1.  Klucz dzierżawy jest generowany lokalnie przez użytkownika w sposób zgodny z zasadami dotyczącymi infrastruktury IT obowiązującymi w organizacji.
+1.  Klucz dzierżawy jest generowany lokalnie przez użytkownika w sposób zgodny z zasadami dotyczącymi infrastruktury IT i zasadami dotyczącymi zabezpieczeń obowiązującymi w organizacji.
 
-2.  Przechowywany lokalnie klucz jest bezpiecznie przesyłany z lokalnego sprzętowego modułu zabezpieczeń (HSM) do należących do firmy Microsoft i zarządzanych przez nią modułów HSM. W toku całego tego procesu klucz dzierżawy nigdy nie przekracza granic zabezpieczeń sprzętowych.
+2.  Przechowywany lokalnie klucz jest bezpiecznie przesyłany z lokalnego sprzętowego modułu zabezpieczeń (HSM, Hardware Security Module) do należących do firmy Microsoft i zarządzanych przez nią modułów HSM, przy użyciu usługi Azure Key Vault. W toku całego tego procesu klucz dzierżawy nigdy nie przekracza granic zabezpieczeń sprzętowych.
 
-3.  W przypadku przeniesienia klucza dzierżawy do firmy Microsoft pozostaje on objęty ochroną sprzętowych modułów zabezpieczeń firmy Thales. Firma Microsoft podjęła współpracę z firmą Thales, aby zagwarantować, że klucze dzierżawy jej użytkowników nie zostaną wyodrębnione ze sprzętowych modułów zabezpieczeń firmy Microsoft.
+3.  W przypadku przeniesienia klucza dzierżawy do firmy Microsoft pozostaje on objęty ochroną usługi Azure Key Vault.
 
 Choć generowane niemalże w czasie rzeczywistym dzienniki z usługi Azure RMS są opcjonalne, warto z nich skorzystać, aby przekonać się, kiedy i w jaki sposób jest używany klucz dzierżawy.
 
 > [!NOTE]
-> Dodatkowym środkiem ochrony dostępnym w usłudze Azure RMS są wykorzystywane w jej ramach oddzielne środowiska Security World dla centrów danych w Ameryce Północnej, regionie Europy, Bliskiego Wschodu i Afryki (EMEA) oraz Azji. Klucz dzierżawy, którym zarządza użytkownik, jest powiązany ze środowiskiem Security World odpowiadającym regionowi, w którym jest zarejestrowana dzierżawa usługi RMS. Na przykład klucz dzierżawy europejskiego klienta nie może zostać użyty w centrach danych w Ameryce Północnej ani Azji.
+> Dodatkowym środkiem ochrony dostępnym w usłudze Azure Key Vault są wykorzystywane w jej ramach oddzielne domeny zabezpieczeń dla centrów danych w regionach, takich jak Ameryka Północna; Europa, Bliski Wschód i Afryka (EMEA) oraz Azja. Ponadto dotyczy to różnych wystąpień platformy Azure, np. Microsoft Azure Germany i Azure Government. Klucz dzierżawy, którym zarządza użytkownik, jest powiązany z domeną zabezpieczeń odpowiadającą regionowi lub wystąpieniu, w którym jest zarejestrowana dzierżawa usługi RMS. Na przykład klucz dzierżawy europejskiego klienta nie może zostać użyty w centrach danych w Ameryce Północnej ani Azji.
 
 ## Cykl życia klucza dzierżawy
-Jeśli użytkownik zdecyduje, że to firma Microsoft ma zarządzać kluczem dzierżawy, będzie ona obsługiwać większość operacji związanych z cyklem życia klucza. Jeśli jednak użytkownik zechce zarządzać kluczem dzierżawy, będzie odpowiadać za wiele operacji związanych z cyklem życia klucza oraz za niektóre dodatkowe procedury.
+Jeśli użytkownik zdecyduje, że to firma Microsoft ma zarządzać kluczem dzierżawy, będzie ona obsługiwać większość operacji związanych z cyklem życia klucza. Jeśli jednak użytkownik chce zarządzać kluczem dzierżawy, będzie odpowiadać za wiele operacji związanych z cyklem życia klucza oraz za niektóre dodatkowe procedury w usłudze Azure Key Vault.
 
 Na poniższych diagramach omówiono te dwie opcje i przedstawiono ich porównanie. Na pierwszym diagramie pokazano, jak niskie są koszty administracyjne ponoszone przez użytkownika w przypadku konfiguracji domyślnej, gdy to firma Microsoft zarządza kluczem dzierżawy.
 
@@ -63,7 +63,7 @@ Na poniższych diagramach omówiono te dwie opcje i przedstawiono ich porównani
 
 Drugi diagram przedstawia dodatkowe kroki wymagane w przypadku, gdy za zarządzanie kluczem dzierżawy odpowiada użytkownik.
 
-![Cykl życia klucza dzierżawy usługi Azure RMS w przypadku zarządzania kluczem przez użytkownika (konfiguracja BYOK)](../media/RMS_BYOK_onprem.png)
+![Cykl życia klucza dzierżawy usługi Azure RMS w przypadku zarządzania kluczem przez użytkownika (konfiguracja BYOK)](../media/RMS_BYOK_onprem4.png)
 
 Jeśli zdecydujesz się powierzyć firmie Microsoft zarządzanie kluczem dzierżawy, w celu wygenerowania klucza nie są wymagane żadne dalsze działania — można przejść bezpośrednio do sekcji [Następne kroki](plan-implement-tenant-key.md#next-steps).
 
@@ -86,34 +86,28 @@ Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, a
 |---------------|--------------------|
 |Subskrypcja obejmująca usługę Azure RMS.|Aby uzyskać więcej informacji o dostępnych subskrypcjach, zobacz [Subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md).|
 |Nie należy używać usługi RMS dla użytkowników indywidualnych ani usługi Exchange Online. Użytkownicy, którzy zdecydują się korzystać z usługi Exchange Online, muszą zrozumieć i zaakceptować ograniczenia związane z korzystaniem z funkcji BYOK w tej konfiguracji.|Aby uzyskać więcej informacji na temat ogólnych i bieżących ograniczeń dotyczących korzystania z funkcji BYOK, zobacz [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).<br /><br />**Ważne**: funkcja BYOK nie jest obecnie zgodna z usługą Exchange Online.|
-|Sprzętowe moduły zabezpieczeń, karty inteligentne i oprogramowanie firmy Thales.<br /><br />**Uwaga**: do przeprowadzenia migracji z usługi AD RMS do usługi Azure RMS przy użyciu klucza oprogramowania i klucza sprzętowego wymagane są sterowniki firmy Thales w wersji 11.62 lub nowszej.|Użytkownik musi mieć dostęp do sprzętowego modułu zabezpieczeń firmy Thales oraz podstawową wiedzę na temat działania sprzętowych modułów zabezpieczeń firmy Thales. Lista zgodnych modeli oraz informacje na temat możliwości zakupu sprzętowego modułu zabezpieczeń znajdują się w sekcji [Sprzętowy moduł zabezpieczeń firmy Thales](http://www.thales-esecurity.com/msrms/buy).|
-|Aby przekazać klucz dzierżawy przez Internet, a nie fizycznie (przebywając w Redmond w Stanach Zjednoczonych), należy spełnić 3 wymagania:<br /><br />1. Stacja robocza w trybie offline o architekturze x64 z systemem operacyjnym Windows w wersji Windows 7 lub nowszej oraz oprogramowaniem Thales nShield w wersji 11.62 lub nowszej.<br /><br />W przypadku stacji roboczych z systemem Windows 7 wymagana jest [instalacja oprogramowania Microsoft .NET Framework 4.5](http://go.microsoft.com/fwlink/?LinkId=225702).<br /><br />2. Połączona z Internetem stacja robocza z systemem operacyjnym Windows w wersji Windows 7 lub nowszej.<br /><br />3. Dysk USB lub inne przenośne urządzenie pamięci masowej z co najmniej 16 MB wolnego miejsca.|Spełnienie tych wymagań wstępnych nie jest konieczne, jeśli użytkownik zamierza udać się do Redmond i przekazać klucz dzierżawy osobiście.<br /><br />Ze względów bezpieczeństwa odradza się podłączanie pierwszej stacji roboczej do sieci. Podłączenia takiego nie uniemożliwiają jednak ograniczenia natury programistycznej.<br /><br />Uwaga: W treści kolejnych instrukcji pierwsza stacja robocza jest określana mianem **odłączonej stacji roboczej**.<br /><br />Ponadto jeśli klucz dzierżawy jest przeznaczony dla środowiska produkcyjnego, zaleca się użycie drugiej, oddzielnej stacji roboczej do pobrania zestawu narzędzi i przesłania klucza dzierżawy. Do celów testowych można jednak użyć pierwszej stacji roboczej.<br /><br />Uwaga: W treści kolejnych instrukcji druga stacja robocza jest określana mianem **stacji roboczej podłączonej do Internetu**.|
+|Wszystkie wymagania wstępne wymienione dla rozwiązania BYOK usługi Key Vault.|Zobacz [Wymagania wstępne dla funkcji BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) w dokumentacji usługi Azure Key Vault. <br /><br />**Uwaga**: do przeprowadzenia migracji z usługi AD RMS do usługi Azure RMS przy użyciu klucza oprogramowania i klucza sprzętowego wymagane jest oprogramowanie układowe firmy Thales w wersji 11.62 lub nowszej.|
+|Moduł administracyjny usługi Azure RMS dla programu Windows PowerShell.|Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Jeśli ten moduł programu Windows PowerShell został już wcześniej zainstalowany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż **2.5.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
-Procedury generowania i użytkowania klucza dzierżawy różnią się w zależności od tego, czy użytkownik zamierza wykonać je przez Internet, czy też osobiście:
+Aby uzyskać więcej informacji o modułach HSM firmy Thales i sposobie ich wykorzystania w usłudze Azure Key Vault, zobacz [witrynę sieci Web firmy Thales](https://www.thales-esecurity.com/msrms/cloud).
 
--   **Przez Internet:** procedura wymaga wykonania wybranych kroków dodatkowych konfiguracji, takich jak pobranie i użycie zestawu narzędzi oraz użycie poleceń cmdlet programu Windows PowerShell. Nie trzeba jednak znajdować się fizycznie w obiekcie firmy Microsoft, aby móc przekazać swój klucz dzierżawy. W celu zapewnienia bezpieczeństwa wykorzystywane są następujące metody:
+Aby wygenerować i przenieść własny klucz dzierżawy do usługi Azure Key Vault, wykonaj procedury opisane w temacie [Jak wygenerować i przenieść klucze chronione przy użyciu modułu HSM do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) w dokumentacji usługi Azure Key Vault.
 
-    -   Użytkownik generuje klucz dzierżawy z poziomu stacji roboczej w trybie offline, dzięki czemu obszar narażony na ataki zostaje zredukowany.
+Gdy klucz jest przesyłany do usługi Key Vault, otrzymuje identyfikator klucza w usłudze Key Vault, który jest adresem URL zawierającym nazwę magazynu, kontener kluczy, nazwę klucza i wersję klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Należy polecić usłudze Azure RMS użycie tego klucza poprzez określenie tego adresu URL.
 
-    -   Klucz dzierżawy jest szyfrowany za pomocą klucza wymiany klucza (KEK), który pozostaje zaszyfrowany do czasu, gdy zostanie przesłany do sprzętowych modułów zabezpieczeń usługi Azure RMS. Wyłącznie zaszyfrowana wersja klucza dzierżawy opuszcza pierwotną stację roboczą.
+Zanim usługa Azure RMS będzie mogła użyć tego klucza, należy autoryzować usługę Azure RMS do używania kluczy znajdujących się w magazynie kluczy organizacji. Aby to zrobić, administrator usługi Azure Key Vault używa polecenia cmdlet programu PowerShell dla usługi Key Vault, [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx), i przydziela uprawnienia głównej nazwie usługi Azure RMS, **Microsoft.Azure.RMS**. Na przykład:
 
-    -   Narzędzie ustawia w obrębie klucza dzierżawy właściwości, które łączą klucz dzierżawy ze środowiskiem zabezpieczeń Security World usługi Azure RMS. Gdy sprzętowe moduły zabezpieczeń usługi Azure RMS odbiorą i odszyfrują klucz dzierżawy, klucz może zostać użyty tylko przez nie. Nie można wyeksportować klucza dzierżawy. To powiązanie jest wymuszone przez sprzętowy moduł zabezpieczeń firmy Thales.
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
 
-    -   Klucz wymiany klucza (KEK), który jest używany do szyfrowania klucza dzierżawy, jest generowany wewnątrz sprzętowego modułu zabezpieczeń usługi RMS Azure i nie można go wyeksportować. Sprzętowe moduły zabezpieczeń wymagają, aby poza ich obrębem nie był dostępny żaden jasny obraz klucza wymiany klucza (KEK). Ponadto zestaw narzędzi zawiera zaświadczenie od firmy Thales potwierdzające, że klucza KEK nie można wyeksportować i że został on wygenerowany wewnątrz oryginalnego sprzętowego modułu zabezpieczeń wyprodukowanego przez firmę Thales.
+Teraz możesz przystąpić do konfigurowania usługi Azure RMS do użycia tego klucza jako klucza dzierżawy usługi Azure RMS w organizacji. Korzystając z poleceń cmdlet usługi Azure RMS, nawiąż połączenie z usługą Azure RMS i zaloguj się:
 
-    -   Zestaw narzędzi zawiera także zaświadczenie od firmy Thales potwierdzające, że środowisko zabezpieczeń Security World usługi Azure RMS zostało także wygenerowane w oryginalnym sprzętowym module zabezpieczeń wyprodukowanym przez firmę Thales. Stanowi ono dowód na to, że firma Microsoft korzysta z oryginalnego sprzętu.
+    Connect-AadrmService
 
-    -   Firma Microsoft używa oddzielnych kluczy KEK oraz oddzielnych środowisk zabezpieczeń Security World w każdym regionie geograficznym, co daje gwarancję, że klucz dzierżawy może być używany tylko w centrach danych w regionie, w którym został zaszyfrowany. Na przykład klucz dzierżawy europejskiego klienta nie może zostać użyty w centrach danych w Ameryce Północnej ani Azji.
+Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](https://msdn.microsoft.com/library/azure/mt759829.aspx), określając adres URL klucza. Na przykład:
 
-    > [!NOTE]
-    > Klucz dzierżawy może być bezpiecznie przesyłany za pośrednictwem niezaufanych komputerów i sieci, ponieważ jest on zaszyfrowany i zabezpieczony z użyciem uprawnień z poziomu kontroli dostępu, dzięki czemu można używać go tylko w obrębie sprzętowych modułów zabezpieczeń użytkownika oraz sprzętowych modułów zabezpieczeń firmy Microsoft dla usługi Azure RMS. Skryptów należących do zestawu narzędzi można użyć w celu weryfikacji środków bezpieczeństwa oraz uzyskania bardziej szczegółowych informacji na temat sposobu wykonywania procedury po stronie firmy Thales: [Zarządzanie kluczami sprzętowymi w chmurze RMS](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud).
+    Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
--   **Osobiście:** takie rozwiązanie wymaga [skontaktowania się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) w celu zaplanowania spotkania, podczas którego nastąpi przekazanie klucza dla usługi Azure RMS. W takim scenariuszu użytkownik musi przyjechać do biura firmy Microsoft w Redmond w stanie Waszyngton (Stany Zjednoczone) w celu przekazania klucza dzierżawy środowiska zabezpieczeń Security World usługi Azure RMS.
-
-Aby uzyskać dokładne instrukcje, należy wybrać metodę wygenerowania i przekazania klucza dzierżawy: 
-
-- [Przez Internet](generate-tenant-key-internet.md)
-- [Osobiście](generate-tenant-key-in-person.md)
+Jeśli chcesz potwierdzić, że adres URL klucza jest skonfigurowany prawidłowo w usłudze Azure RMS, w usłudze Azure Key Vault możesz uruchomić polecenie cmdlet [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx), aby zobaczyć adres URL klucza.
 
 
 ## Następne kroki
@@ -122,15 +116,15 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 1.  Rozpocznij korzystanie z klucza dzierżawy:
 
-    -   Jeśli jeszcze nie zostało to zrobione, należy teraz aktywować usługę Rights Management, aby organizacja mogła zacząć korzystać z usługi RMS. Użytkownicy natychmiast otrzymują możliwość korzystania ze swojego klucza dzierżawy (zarządzanego przez firmę Microsoft lub przez użytkownika).
+    -   Jeśli jeszcze nie zostało to zrobione, należy teraz aktywować usługę Rights Management, aby organizacja mogła zacząć korzystać z usługi RMS. Użytkownicy natychmiast otrzymują możliwość korzystania ze swojego klucza dzierżawy (zarządzanego przez firmę Microsoft lub przez użytkownika w usłudze Azure Key Vault).
 
         Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
     -   Jeśli usługa Rights Management została już aktywowana, a następnie podjęto decyzję o samodzielnym zarządzaniu kluczem dzierżawy, użytkownicy stopniowo przechodzą ze starego klucza dzierżawy na nowy. Okres przejściowy może trwać do kilku tygodni. Dokumenty i pliki, które były chronione przy użyciu starego klucza dzierżawy, pozostają dostępne dla użytkowników upoważnionych do dostępu do nich.
 
-2.  Rozważ włączenie funkcji rejestrowania użycia, która tworzy dzienniki uwzględniające każdą czynność wykonywaną w ramach usługi RMS.
+2.  Rozważ włączenie funkcji rejestrowania użycia, która tworzy dzienniki uwzględniające każdą czynność wykonywaną w ramach usługi Azure Rights Management.
 
-    Użytkownik samodzielnie zarządzający kluczem dzierżawy może uzyskać dostęp do rejestrów uwzględniających informacje o użyciu jego własnego klucza dzierżawy. Poniżej znajduje się fragment kodu z pliku dziennika wyświetlany w programie Excel; typy żądań **KMSPDecrypt** i **KMSPSignDigest** pokazują, że klucz dzierżawy jest w użyciu.
+    Użytkownik samodzielnie zarządzający kluczem dzierżawy może uzyskać dostęp do rejestrów uwzględniających informacje o użyciu jego własnego klucza dzierżawy. Poniżej znajduje się fragment kodu z pliku dziennika wyświetlany w programie Excel. Typy żądań **KeyVaultDecryptRequest** i **KeyVaultSignRequest** pokazują, że klucz dzierżawy jest w użyciu.
 
     ![Plik dziennika wyświetlony w programie Excel, pokazujący, że klucz dzierżawy jest w użyciu](../media/RMS_Logging.png)
 
@@ -143,6 +137,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 65371b9a3b210743fc160dbad38333ccb12671e6
 
 
 ---
@@ -35,30 +35,31 @@ Nie masz pewności, czy ta migracja usług AD RMS jest odpowiednia dla Twojej or
 Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wymagania wstępne zostały spełnione oraz że znasz wszystkie ograniczenia.
 
 
-- **Obsługiwane wdrożenie usługi RMS**
+- **Obsługiwane wdrożenie usługi RMS:**
+    
+    - Następujące wersje usługi AD RMS obsługują migrację do usługi Azure RMS:
+    
+        - Windows Server 2008 R2 (x64)
+        
+        - Windows Server 2012 (x64)
+        
+        - Windows Server 2012 R2 (x64)
+        
+    - Tryb kryptograficzny 2:
+    
+        - Twoje serwery i klienci usługi AD RMS muszą działać w trybie kryptograficznym 2, zanim rozpoczniesz migrację do usługi Azure RMS. Aby uzyskać więcej informacji, zobacz [Tryby kryptograficzne usługi AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
+        
+    - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
+    
+        - Pojedynczy las, pojedynczy klaster RMS
+        
+        - Pojedynczy las, wiele klastrów RMS przeznaczonych tylko do licencjonowania
+        
+        - Wiele lasów, wiele klastrów RMS
+        
+    Uwaga: domyślnie wiele klastrów RMS jest migrowanych do pojedynczej dzierżawy usługi Azure RMS. Jeśli potrzebujesz oddzielnych dzierżaw usługi Azure RMS, musisz potraktować je jako różne migracje. Nie można zaimportować klucza z jednego klastra RMS do więcej niż jednej dzierżawy usługi Azure RMS.
 
-    Wszystkie wersje usług AD RMS — od wersji dla systemu Windows Server 2008 do wersji dla systemu Windows Server 2012 R2 — obsługują migrację do usługi Azure RMS:
-
-    - Windows Server 2008 (x86 lub x64)
-
-    - Windows Server 2008 R2 (x64)
-
-    - Windows Server 2012 (x64)
-
-    - Windows Server 2012 R2 (x64)
-
-    Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
-
-    - Pojedynczy las, pojedynczy klaster RMS
-
-    - Pojedynczy las, wiele klastrów RMS przeznaczonych tylko do licencjonowania
-
-    - Wiele lasów, wiele klastrów RMS
-
-    **Uwaga**: domyślnie wiele klastrów RMS jest migrowanych do pojedynczej dzierżawy usługi Azure RMS. Jeśli potrzebujesz różnych dzierżaw usługi RMS, musisz potraktować je jako różne migracje. Nie można zaimportować klucza z jednego klastra RMS do więcej niż jednej dzierżawy usługi Azure RMS.
-
-
-- **Wszystkie wymagania dotyczące uruchamiania usługi Azure RMS, w tym dzierżawy usługi Azure RMS (nieaktywnej)**
+- **Wszystkie wymagania dotyczące uruchamiania usługi Azure RMS, w tym dzierżawy usługi Azure RMS (nieaktywnej):**
 
     Zobacz temat [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
@@ -82,6 +83,10 @@ Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wy
 
     Jest to jedyne zakłócenie działania usługi podczas migracji.
 
+- **Jeśli chcesz zarządzać własnym kluczem dzierżawy usługi Azure RMS przy użyciu klucza chronionego za pomocą modułu HSM**:
+
+    - Ta opcjonalna konfiguracja wymaga usługi Azure Key Vault oraz subskrypcji platformy Azure obsługującej usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/). 
+
 
 Ograniczenia:
 
@@ -100,7 +105,7 @@ Ograniczenia:
 ## Omówienie kroków procesu migracji usług AD RMS do usługi Azure RMS
 
 
-9 kroków migracji można podzielić na 4 fazy, które mogą realizować różni administratorzy w różnych terminach.
+Kroki migracji można podzielić na 4 fazy, które mogą realizować różni administratorzy w różnych terminach.
 
 [**FAZA 1 — KONFIGURACJA PO STRONIE SERWERA DLA USŁUG AD RMS**](migrate-from-ad-rms-phase1.md)
 
@@ -118,11 +123,11 @@ Ograniczenia:
 
     - **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM**:
 
-        klucze przechowywane w module HSM dla usług AD RMS do zarządzanego przez klienta klucza dzierżawy usługi Azure RMS (scenariusz „użyj własnego klucza” lub BYOK). Wymagane jest wykonanie dodatkowych kroków w celu przeniesienia klucza z modułu HSM firmy Thales do modułu HSM usługi Azure RMS. Istniejący klucz chroniony przez moduł HSM musi podlegać ochronie przy użyciu modułu; klucze chronione przez OCS nie są obsługiwane przez zestaw narzędzi BYOK.
+        klucze przechowywane w module HSM dla usług AD RMS do zarządzanego przez klienta klucza dzierżawy usługi Azure RMS (scenariusz „użyj własnego klucza” lub BYOK). Wymagane jest wykonanie dodatkowych kroków w celu przeniesienia klucza z lokalnego modułu HSM firmy Thales do usługi Azure Key Vault i autoryzowania usługi Azure RMS do wykorzystania tego klucza. Istniejący klucz chroniony przez moduł HSM musi podlegać ochronie przy użyciu modułu; klucze chronione przez serwer OCS nie są obsługiwane przez usługi Rights Management.
 
     - **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM**:
 
-        centralnie zarządzane klucze chronione hasłem w usługach AD RMS do zarządzanego przez klienta klucza dzierżawy usługi Azure RMS (scenariusz „użyj własnego klucza” lub BYOK). Ta migracja wymaga największej liczby kroków konfiguracji, ponieważ najpierw należy wyodrębnić klucz oprogramowania i zaimportować go do lokalnego modułu HSM, a następnie wykonać dodatkowe czynności w celu przeniesienia klucza z lokalnego modułu HSM firmy Thales do modułu HSM usługi Azure RMS.
+        centralnie zarządzane klucze chronione hasłem w usługach AD RMS do zarządzanego przez klienta klucza dzierżawy usługi Azure RMS (scenariusz „użyj własnego klucza” lub BYOK). Ta migracja wymaga największej liczby kroków konfiguracji, ponieważ najpierw należy wyodrębnić klucz oprogramowania i zaimportować go do lokalnego modułu HSM, a następnie wykonać dodatkowe czynności w celu przeniesienia klucza z lokalnego modułu HSM firmy Thales do modułu HSM usługi Azure Key Vault i autoryzowania usługi Azure RMS do użycia magazynu kluczy, w którym przechowywany jest ten klucz.
 
 - **Krok 3. Aktywowanie dzierżawy usługi Azure RMS**
 
@@ -171,7 +176,7 @@ Ograniczenia:
 
 - **Krok 9. Ponowne tworzenie klucza dzierżawy usługi Azure RMS**
 
-    Ten krok jest wymagany, jeśli przed migracją nie uruchamiano trybu kryptograficznego 2, i opcjonalny, ale zalecany w przypadku wszystkich migracji, które pomagają w zabezpieczaniu klucza dzierżawy usługi Azure RMS.
+    Ten krok jest opcjonalny, ale też zalecany, jeśli wybrana w kroku 2 topologia klucza dzierżawy usługi Azure RMS jest zarządzana przez firmę Microsoft. Ten krok nie ma zastosowania, jeśli wybrana topologia klucza dzierżawy usługi Azure RMS jest zarządzana przez klienta (BYOK).
 
 
 ## Następne kroki
@@ -180,6 +185,6 @@ Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwe
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

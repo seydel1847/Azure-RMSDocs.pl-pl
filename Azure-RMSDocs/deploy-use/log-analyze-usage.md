@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
-ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 28fed61b674112d2ebeb30a15a6f6217647e0b5f
 
 
 ---
@@ -179,13 +179,13 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
 |Certify|Klient certyfikuje zawartość objętą ochroną.|
-|KMSPDecrypt|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK).|
 |DeleteTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące usunięcia szablonu na podstawie identyfikatora szablonu.|
 |DocumentEventsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV dla pojedynczego dokumentu.|
 |ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
 |FECreateEndUserLicenseV1|Działanie podobne do typu żądania AcquireLicense, ale dotyczy urządzeń przenośnych.|
 |FECreatePublishingLicenseV1|Działanie takie samo, jak połączonych typów żądań Certify i GetClientLicensorCert, ale dotyczy klientów mobilnych.|
 |FEGetAllTemplates|Wykonano wywołanie z urządzenia przenośnego (fronton) dotyczące pobrania szablonów.|
+|FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
 |GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: użytkownik wyświetla stronę **wszystkie dokumenty** dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: administrator wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action ma wartość true, pole acting-as-user nie jest puste: administrator wyświetla stronę **wszystkie dokumenty** dla użytkownika.|
 |GetAllTemplates|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania wszystkich szablonów.|
 |GetClientLicensorCert|Klient żąda certyfikatu publikowania (który jest później używany do ochrony zawartości) z komputera z systemem Windows.|
@@ -195,8 +195,11 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |GetSingle|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do strony **pojedynczego dokumentu**.|
 |GetTenantFunctionalState|Klasyczny portal Azure sprawdza, czy usługa Azure RMS jest aktywowana.|
 |GetTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania szablonu przez określenie identyfikatora szablonu.|
-|ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu przez określenie identyfikatora szablonu.|
-|FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
+|KeyVaultDecryptRequest|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK) w usłudze Azure Key Vault.|
+|KeyVaultGetKeyInfoRequest|Wykonywane jest wywołanie, aby sprawdzić, czy klucz podany do wykorzystania w usłudze Azure Key Vault dla klucza dzierżawy usługi Azure RMS jest dostępny i czy nie jest już używany.|
+|KeyVaultSignDigest|Wykonywane jest wywołanie, gdy klucz zarządzany przez klienta (BYOK) w usłudze Azure Key Vault jest używany w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
+|KMSPDecrypt|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko starszego klucza dzierżawy zarządzanego przez klienta (BYOK).|
+|KMSPSignDigest|Wykonywane jest wywołanie, gdy starszy klucz zarządzany przez klienta (BYOK) jest używany w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
 |LoadEventsForMap|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
 |LoadEventsForSummary|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku osi czasu dla pojedynczego dokumentu.|
 |LoadEventsForTimeline|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
@@ -206,10 +209,8 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |ServerCertify|Wykonano wywołanie z klienta z obsługą usługi RMS (na przykład programu SharePoint) dotyczące certyfikacji serwera.|
 |SetUsageLogFeatureState|Wykonano wywołanie dotyczące włączenia rejestrowania użycia.|
 |SetUsageLogStorageAccount|Wykonano wywołanie dotyczące określenia lokalizacji dzienników usługi Azure RMS.|
-|SignDigest|Wykonano wywołanie dotyczące użycia klucza w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
 |UpdateNotificationSettings|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące zmiany ustawień powiadomień dla pojedynczego dokumentu.|
 |UpdateTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące aktualizacji istniejącego szablonu.|
-
 
 
 ## Uwagi dotyczące programu Windows PowerShell
@@ -240,6 +241,6 @@ Aby uzyskać więcej informacji na temat korzystania ze środowiska Windows Powe
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
