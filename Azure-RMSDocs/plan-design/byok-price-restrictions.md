@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
 *Dotyczy usług: Azure Rights Management, Office 365*
 
 
-Organizacje korzystające z subskrypcji platformy Azure zarządzanych przez dział IT mogą używać funkcji BYOK i rejestrować jej użycie bez dodatkowych opłat. Organizacje korzystające z usługi RMS dla użytkowników indywidualnych nie mogą używać funkcji BYOK i opcji rejestrowania, ponieważ nie mają administratora dzierżawy, który mógłby skonfigurować te funkcje.
+Organizacje, które mają subskrypcję obejmującą usługę Azure Rights Management, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i rejestrować ich użycie bez dodatkowych opłat. Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+
+Jeśli istnieją użytkownicy, którzy zarejestrowali się na bezpłatne konto przy użyciu usługi RMS dla użytkowników indywidualnych, nie możesz użyć rozwiązania BYOK i rejestrowania użycia, ponieważ ta konfiguracja nie ma administratora dzierżawy do skonfigurowania tych funkcji.
 
 
 > [!NOTE]
@@ -32,9 +34,9 @@ Organizacje korzystające z subskrypcji platformy Azure zarządzanych przez dzia
 
 ![Funkcja BYOK nie obsługuje usługi Exchange Online](../media/RMS_BYOK_noExchange.png)
 
-Funkcja BYOK i opcja rejestrowania współpracują bezproblemowo z każdą aplikacją, która integruje się z usługą Azure RMS. Dotyczy to usług w chmurze, takich jak SharePoint Online, serwerów lokalnych z programem Exchange i SharePoint, które współpracują z usługą Azure RMS za pomocą łącznika usługi RMS, a także aplikacji klienckich, np. Office 2013. Dzienniki użycia klucza uzyskasz niezależnie od tego, która aplikacja zgłasza żądania dotyczące usługi Azure RMS.
+Rozwiązanie BYOK i rejestrowanie użycia współpracują bezproblemowo z każdą aplikacją, która integruje się z usługą Azure RMS. Dotyczy to usług w chmurze, takich jak SharePoint Online, serwerów lokalnych z programem Exchange i SharePoint, które współpracują z usługą Azure RMS za pomocą łącznika usługi RMS, a także aplikacji klienckich, np. Office 2016 i Office 2013. Dzienniki użycia klucza uzyskasz niezależnie od tego, która aplikacja zgłasza żądania dotyczące usługi Azure RMS.
 
-Istnieje jeden wyjątek: obecnie **usługa Azure RMS BYOK nie jest zgodna z usługą Exchange Online**.  Użytkownikom usługi Exchange Online zaleca się wdrożenie usługi Azure RMS w domyślnym trybie zarządzania kluczami, w którym firma Microsoft generuje klucze i zarządza nimi. Istnieje możliwość skorzystania z funkcji BYOK w późniejszym czasie, na przykład wtedy, gdy dla usługi Exchange Online zostanie zapewniona obsługa trybu BYOK usługi Azure RMS. Jeśli nie możesz czekać, istnieje inne rozwiązanie. Możesz wdrożyć usługę Azure RMS z funkcją BYOK już teraz, ale będzie ona mieć ograniczoną funkcjonalność w przypadku usługi Exchange Online (niechronione wiadomości e-mail i załączniki pozostaną w pełni funkcjonalne):
+Istnieje jeden wyjątek: obecnie **usługa Azure RMS BYOK nie jest zgodna z usługą Exchange Online**. Użytkownikom usługi Exchange Online zaleca się wdrożenie usługi Azure RMS w domyślnym trybie zarządzania kluczami, w którym firma Microsoft generuje klucze i zarządza nimi. Istnieje możliwość skorzystania z funkcji BYOK w późniejszym czasie, na przykład wtedy, gdy dla usługi Exchange Online zostanie zapewniona obsługa trybu BYOK usługi Azure RMS. Jeśli nie możesz czekać, istnieje inne rozwiązanie. Możesz wdrożyć usługę Azure RMS z funkcją BYOK już teraz, ale będzie ona mieć ograniczoną funkcjonalność w przypadku usługi Exchange Online (niechronione wiadomości e-mail i załączniki pozostaną w pełni funkcjonalne):
 
 -   Nie można wyświetlać chronionych wiadomości e-mail i załączników w usłudze Outlook Web Access.
 
@@ -48,7 +50,7 @@ Istnieje jeden wyjątek: obecnie **usługa Azure RMS BYOK nie jest zgodna z usł
 
 W przypadku korzystania z usługi Azure RMS BYOK z ograniczoną funkcjonalnością usługi RMS w usłudze Exchange Online usługa RMS będzie współpracować z klientami poczty e-mail w programie Outlook w systemach Windows i Mac. Nie będzie współpracować z żadnym innym klientem poczty e-mail, który nie używa programu Exchange ActiveSync z funkcją IRM.
 
-Jeśli użytkownik migruje do usługi Azure RMS z usług AD RMS, możliwe, że zaimportował klucz jako zaufaną domenę publikacji (TPD) do usługi Exchange Online (zwaną również funkcją BYOK w terminologii programu Exchange, niezależnie od nazwy usługi Azure RMS BYOK). W tym scenariuszu należy usunąć zaufaną domenę publikacji z usługi Exchange Online, aby uniknąć konfliktów szablonów i zasad. Aby uzyskać więcej informacji, zobacz temat [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w bibliotece poleceń cmdlet usługi Exchange Online.
+Jeśli użytkownik migruje do usługi Azure RMS z usług AD RMS, możliwe że zaimportował klucz jako zaufaną domenę publikacji (TPD) do usługi Exchange Online (co jest nazywane rozwiązaniem BYOK w terminologii programu Exchange, jednak różni się od rozwiązania BYOK usługi Azure Key Vault). W tym scenariuszu należy usunąć zaufaną domenę publikacji z usługi Exchange Online, aby uniknąć konfliktów szablonów i zasad. Aby uzyskać więcej informacji, zobacz temat [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w bibliotece poleceń cmdlet usługi Exchange Online.
 
 Czasami wyjątek usługi Azure RMS BYOK dla usługi Exchange Online nie stanowi problemu w praktyce. Przykładowo jest tak w przypadku organizacji potrzebujących funkcji BYOK i rejestrowania, które uruchamiają swoje aplikacje do obsługi danych (Exchange, SharePoint, Office) lokalnie i używają usługi Azure RMS w celu korzystania z funkcji, która nie jest łatwo dostępna z lokalną usługą AD RMS (np. w przypadku współpracy z innymi firmami i uzyskiwaniem dostępu z klientów mobilnych). Zarówno funkcja BYOK, jak i możliwość rejestrowania będą działać prawidłowo w tym scenariuszu, a organizacja zachowa pełną kontrolę nad swoją subskrypcją usługi Azure RMS.
 
@@ -61,6 +63,6 @@ Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

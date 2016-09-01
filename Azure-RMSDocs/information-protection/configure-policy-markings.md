@@ -3,15 +3,15 @@ title: "Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: b5e7fecca7aeb61221dc1f61aa3e202936b8c042
+ms.openlocfilehash: 2b4f464fa51e0743cb1ce0726c7feb31146b5128
 
 
 ---
@@ -60,17 +60,19 @@ Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiet
 
 W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać następujących zmiennych:
 
-- `${Item.Label}` dla wybranej etykiety
+- `${Item.Label}` — wybrana etykieta. Na przykład: Wewnętrzne
 
-- `${Item.Name}` dla nazwy pliku lub tematu wiadomości e-mail
+- `${Item.Name}` — nazwa pliku lub tematu wiadomości e-mail. Na przykład: JulySales.docx
 
-- `${Item.Location}` dla ścieżki pliku
+- `${Item.Location}` — ścieżka i nazwa pliku w przypadku dokumentów oraz temat wiadomości e-mail w przypadku wiadomości e-mail. Na przykład: \\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` dla właściciela dokumentu lub wiadomości e-mail
+- `${User.Name}` — właściciel dokumentu lub wiadomości e-mail (nazwa zalogowanego użytkownika systemu Windows). Na przykład: rsimone
 
-- `${Event.DateTime}` dla daty i godziny ustawienia wybranej etykiety 
+- `${User.PrincipalName}` — właściciel dokumentu lub wiadomości e-mail (adres e-mail zalogowanego klienta usługi Azure Information Protection — UPN). Na przykład: rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` — data i godzina ustawienia wybranej etykiety. Na przykład: 16.08.2016 13:30
     
-Przykład: w przypadku określenia ciągu `Document: ${item.name} Sensitivity: ${item.label}` dla stopki etykiety Tajne, tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Sensitivity: Tajne**.
+Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety Tajne, tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx  Classification: Tajne**.
 
 ## Następne kroki
 
@@ -80,6 +82,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
