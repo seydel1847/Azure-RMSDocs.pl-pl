@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 21fac7d684f2d544ab97f5ca6eb7faaaca3e9d26
 
 
 ---
@@ -36,25 +36,24 @@ Aby monitorować działanie serwerów usług AD RMS, można na przykład sprawdz
 Po zlikwidowaniu serwerów usług AD RMS można skorzystać z możliwości przejrzenia szablonów w klasycznym portalu Azure. Umożliwi to ich skonsolidowanie, dzięki czemu użytkownicy będą mieć mniej szablonów do wyboru, a także ponowne ich skonfigurowanie, a nawet dodanie nowych. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
 ## Krok 9. Ponowne tworzenie klucza dzierżawy usługi Azure RMS
-Ten krok należy wykonać po zakończeniu migracji, jeśli we wdrożeniu usług AD RMS używano trybu kryptograficznego 1 usług RMS, ponieważ ponowne tworzenie kluczy powoduje powstanie nowego klucza dzierżawy, który korzysta z trybu kryptograficznego 2 usług RMS. Korzystanie z usługi Azure RMS z trybem kryptograficznym 1 jest obsługiwane tylko podczas procesu migracji.
+Ten krok jest stosowany tylko wtedy, gdy wybrana topologia klucza dzierżawy jest zarządzana przez firmę Microsoft, a nie przez klienta (rozwiązanie BYOK z usługą Azure Key Vault).
 
-Ten krok jest opcjonalny, ale zalecany po zakończeniu migracji nawet w przypadku korzystania z trybu kryptograficznego 2 usług RMS, ponieważ ułatwia on zabezpieczenie klucza dzierżawy usługi Azure RMS przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS. W przypadku ponownego tworzenia klucza dzierżawy usługi Azure RMS (proces znany również jako „uaktualnianie klucza”) tworzony jest nowy klucz, a klucz oryginalny zostaje zarchiwizowany. Jednak ze względu na to, że przechodzenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni, nie należy czekać do momentu naruszenia bezpieczeństwa oryginalnego klucza, ale ponownie utworzyć klucz dzierżawy usługi Azure RMS zaraz po zakończeniu migracji.
+Ten krok jest opcjonalny, ale zalecany, jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez firmę Microsoft i został migrowany z usługi AD RMS. Ponowne utworzenie klucza w tym scenariuszu zabezpiecza klucz dzierżawy usługi Azure RMS przed potencjalnymi naruszeniami zabezpieczeń klucza usługi AD RMS.
 
-Aby ponownie utworzyć klucz dzierżawy usługi Azure RMS:
+W przypadku ponownego tworzenia klucza dzierżawy usługi Azure RMS (proces znany również jako „uaktualnianie klucza”) tworzony jest nowy klucz, a klucz oryginalny zostaje zarchiwizowany. Jednak ze względu na to, że przechodzenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni, nie należy czekać do momentu naruszenia bezpieczeństwa oryginalnego klucza, ale ponownie utworzyć klucz dzierżawy usługi Azure RMS zaraz po zakończeniu migracji.
 
--   Jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez firmę Microsoft: w tym celu [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support), aby otworzyć **sprawę pomocy technicznej usługi Azure RMS z żądaniem ponownego utworzenia klucza dzierżawy usługi Azure Rights Management**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+Aby ponownie utworzyć klucz dzierżawy usługi Azure RMS zarządzany przez firmę Microsoft, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) i otwórz **sprawę pomocy technicznej usługi Azure RMS z żądaniem ponownego utworzenia klucza usługi Azure RMS po migracji z usługi AD RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
--   Jeśli klucz dzierżawy usługi Azure RMS jest zarządzany przez Ciebie (BYOK): powtórz procedurę BYOK, aby wygenerować i utworzyć nowy klucz przez Internet lub osobiście.
-
-Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usługi Azure RMS, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 ## Następne kroki
+
+Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usług RMS, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 Teraz po zakończeniu migracji sprawdź [plan wdrożenia](deployment-roadmap.md), aby zidentyfikować wszelkie inne zadania wdrożenia, których wykonanie może być konieczne.
 
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

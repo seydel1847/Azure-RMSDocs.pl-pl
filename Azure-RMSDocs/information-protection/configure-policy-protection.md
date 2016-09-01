@@ -3,15 +3,15 @@ title: "Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Manag
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 798fb423ff8dab3e9777a33e7b2c483bceb81016
+ms.sourcegitcommit: e11a5a836d6a410ba49ac17cfe95d8530ecb785f
+ms.openlocfilehash: 60738c310a3e7c734bfe3e48e16535ed3be05bb4
 
 
 ---
@@ -63,11 +63,15 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
     > [!NOTE] 
     > Jeśli utworzysz nowy szablon po otworzeniu bloku **Etykieta**, zamknij ten blok i wróć do kroku 2, aby nowo utworzony szablon został pobrany z platformy Azure i był dostępny do wyboru.
     
-5. W przypadku wybrania usługi AD RMS: podaj identyfikator GUID szablonu i adres URL licencjonowania klastra usługi AD RMS.
+    Należy pamiętać, że w przypadku wybrania szablonu dla działu lub skonfigurowania [kontrolek dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
+    
+    - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
+    
+5. W przypadku wybrania usługi AD RMS: podaj identyfikator GUID szablonu i adres URL licencjonowania klastra usługi AD RMS. [Więcej informacji](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-5. Kliknij polecenie **Zapisz**.
+6. Kliknij polecenie **Zapisz**.
 
-6. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+7. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
 ## Następne kroki
 
@@ -75,6 +79,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

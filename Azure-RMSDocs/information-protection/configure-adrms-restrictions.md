@@ -3,15 +3,15 @@ title: "Ograniczenia rozwiązania HYOK | Azure Rights Management"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2016
+ms.date: 08/18/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: cfab76a97034b58eec8dfdbdc82cc1037a647d11
-ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: 1cbf6bd6c209a8aafd1db61422ce03b628aaec07
 
 
 ---
@@ -51,9 +51,13 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
 
 - Konfiguracja usług AD RMS:
     
+    - Minimalna wersja systemu Windows Server 2012 R2: wymagana dla środowisk produkcyjnych; w celach związanych z testowaniem lub oceną można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
+    
     - Jeden klaster główny usług AD RMS.
     
-    - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx).
+    - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): możesz sprawdzić wersję trybu kryptograficznego klastra AD RMS oraz jego ogólną kondycję przy użyciu [narzędzia RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437).   
+    
+    - Serwery AD RMS są skonfigurowane do użycia protokołów SSL/TLS z ważnym certyfikatem x.509, który jest zaufany przez klientów nawiązujących połączenie: wymagane dla środowisk produkcyjnych, ale niewymagane w celach związanych z testowaniem lub oceną.
     
     - Skonfigurowane szablony praw.
 
@@ -66,7 +70,9 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
 - [Klient usługi Azure Information Protection](info-protect-client.md) jest w wersji **1.0.233.0** lub nowszej.
 
 > [!IMPORTANT]
-> W celu zrealizowania wysokiego bezpieczeństwa, które oferuje ten scenariusz, zaleca się, aby serwery usług AD RMS znajdowały się poza Twoją strefą DMZ i były używane wyłącznie przez dobrze zarządzane komputery (a nie, na przykład, przez urządzenia mobilne lub komputery grupy roboczej).
+> W celu zrealizowania wysokiego bezpieczeństwa, które oferuje ten scenariusz, zaleca się, aby serwery usług AD RMS znajdowały się poza Twoją strefą DMZ i były używane wyłącznie przez dobrze zarządzane komputery (a nie, na przykład, przez urządzenia mobilne lub komputery grupy roboczej). 
+> 
+> Ponadto zaleca się, aby klaster AD RMS używał sprzętowego modułu zabezpieczeń (HSM, Hardware Security Module), dzięki czemu klucz prywatny certyfikatu licencjodawcy serwera (SLC, Server Licensor Certificate) nie może być ujawniony lub skradziony, jeśli wdrożenie usług AD RMS zostanie kiedykolwiek naruszone lub gdy jego zabezpieczenia zostaną złamane. 
 
 Aby uzyskać informacje na temat wdrażania oraz instrukcje dotyczące usług AD RMS, zobacz [Usługi Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) w bibliotece systemu Windows Server. 
 
@@ -89,6 +95,6 @@ Aby skonfigurować etykietę w celu zastosowania ochrony usług AD RMS, zobacz [
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

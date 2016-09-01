@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
+translationtype: Human Translation
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: efe129422348fb30ce7686a5602cb29a1b46d36d
 
 
 ---
@@ -26,9 +27,12 @@ Skorzystaj z poniższych informacji dotyczących fazy 1 migrowania usług AD RMS
 
 
 ## Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool
-Przejdź do Centrum pobierania Microsoft i pobierz narzędzie [Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721), które zawiera moduł administracyjny usługi Azure RMS dla programu Windows PowerShell.
+Przejdź do Centrum pobierania Microsoft i pobierz narzędzie [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), które zawiera moduł administracyjny usługi Azure RMS dla programu Windows PowerShell.
 
 Zainstaluj narzędzie. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+
+> [!NOTE]
+> Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
 
 ## Krok 2. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure RMS
 Ten krok to proces składający się z dwóch części:
@@ -38,10 +42,20 @@ Ten krok to proces składający się z dwóch części:
 2.  Importowanie danych konfiguracji do usługi Azure RMS. W zależności od bieżącej konfiguracji wdrożenia usług AD RMS i preferowanej topologii klucza dzierżawy usługi Azure RMS ten krok może składać się z różnych procesów.
 
 ### Eksportowanie danych konfiguracji z usług AD RMS
-Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
-> [!NOTE]
-> Jeśli korzystasz z usługi Rights Management dla systemu Windows Server 2003, zamiast tych instrukcji wykonaj kroki procedury [eksportowania klucza prywatnego podpisanego certyfikatu licencjodawcy, zaufanej domeny użytkownika, zaufanej domeny publikacji i usługi RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) opisanej w artykule [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (Migracja z usług RMS systemu Windows do usług AD RMS w innej infrastrukturze).
+> [!IMPORTANT]
+> Przed wykonaniem tej procedury potwierdź, że serwery AD RMS działają w trybie kryptograficznym 2. Jest to wymagane dla usługi Azure RMS.
+> 
+> Aby potwierdzić tryb kryptograficzny:
+> 
+> - W przypadku systemów Windows Server 2012 R2 oraz Windows 2012: właściwości klastra AD RMS > karta **Ogólne**. 
+> 
+> - W przypadku wszystkich obsługiwanych wersji usługi AD RMS: użyj narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i opcji **administratora usługi AD RMS**, aby wyświetlić tryb kryptograficzny w sekcji **Informacje o usłudze RMS**.
+> 
+> Upewnij się, że wartość trybu kryptograficznego wynosi **2**. Jeśli tak nie jest, zapoznaj się z instrukcjami, aby włączyć tryb kryptograficzny 2 w sekcji [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
+
+
+Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
 #### Aby eksportować dane konfiguracji (informacje z zaufanej domeny publikacji)
 
@@ -59,7 +73,7 @@ Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla
 
     -   Nie zaznaczaj pola wyboru, aby zapisać plik zaufanej domeny w usłudze RMS w wersji 1.0.
 
-Po wyeksportowaniu wszystkich zaufanych domen publikacji możesz rozpocząć wykonywanie procedury importowania tych danych do sprzętowego modułu zabezpieczeń (HSM) usługi Azure RMS firmy Thales. Aby uzyskać więcej informacji, 
+Po wyeksportowaniu wszystkich zaufanych domen publikacji możesz rozpocząć wykonywanie procedury importowania tych danych do usługi Azure RMS.
 
 ### Importowanie danych konfiguracji do usługi Azure RMS
 W zależności od bieżącej konfiguracji wdrożenia usług AD RMS i preferowanej topologii klucza dzierżawy usługi Azure RMS ten krok może obejmować różne procedury.
@@ -77,18 +91,18 @@ W bieżącym wdrożeniu usług AD RMS będzie używana jedna z następujących k
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz temat [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń).
 
-Istnieją dwie opcje topologii klucza dzierżawy usługi Azure RMS: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**). Scenariusz, w którym użytkownik zarządza własnym kluczem dzierżawy usługi Azure RMS, jest czasami określany jako „użyj własnego klucza” (BYOK, Bring Your Own Key) i wymaga sprzętowego modułu zabezpieczeń (HSM) firmy Thales. Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md).
+Istnieją dwie opcje topologii klucza dzierżawy usługi Azure RMS: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Scenariusz, w którym użytkownik zarządza własnym kluczem dzierżawy usługi Azure RMS, jest czasami określany jako „użyj własnego klucza” (BYOK, Bring Your Own Key) i wymaga sprzętowego modułu zabezpieczeń (HSM) firmy Thales. Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md).
 
 > [!IMPORTANT]
-> Usługa Exchange Online nie jest obecnie zgodna ze scenariuszem BYOK w usłudze Azure RMS.  Jeśli chcesz użyć scenariusza BYOK po migracji i planujesz korzystanie z usługi Exchange Online, upewnij się, że rozumiesz, w jaki sposób ta konfiguracja ogranicza funkcję IRM w usłudze Exchange Online. Zapoznaj się z informacjami w temacie [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md), aby określić najlepszą topologię klucza dzierżawy usługi Azure RMS dla danej migracji.
+> Usługa Exchange Online nie jest obecnie zgodna z rozwiązaniem BYOK w usłudze Azure RMS.  Jeśli chcesz użyć scenariusza BYOK po migracji i planujesz korzystanie z usługi Exchange Online, upewnij się, że rozumiesz, w jaki sposób ta konfiguracja ogranicza funkcję IRM w usłudze Exchange Online. Zapoznaj się z informacjami w temacie [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md), aby określić najlepszą topologię klucza dzierżawy usługi Azure RMS dla danej migracji.
 
 Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. Kombinacje, które nie zostały wymienione, nie są obsługiwane.
 
 |Bieżące wdrożenie usług AD RMS|Wybrana topologia klucza dzierżawy usługi Azure RMS|Instrukcje dotyczące migracji|
 |-----------------------------|----------------------------------------|--------------------------|
 |Ochrona za pomocą hasła w bazie danych usług AD RMS|Zarządzany przez firmę Microsoft|Zobacz opis procedury **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie** pod tą tabelą.<br /><br />Jest to najprostsza ścieżka migracji i wymaga tylko przesłania danych konfiguracji do usługi Azure RMS.|
-|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales.|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Przeniesienie klucza z lokalnego modułu HSM do modułów HSM usługi Azure RMS, a następnie transfer danych konfiguracji do usługi Azure RMS wymaga zestawu narzędzi BYOK i wykonania dwóch zestawów kroków.|
-|Ochrona za pomocą hasła w bazie danych usług AD RMS|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi scenariusza BYOK oraz wykonania trzech zestawów kroków, aby najpierw wyodrębnić klucz oprogramowania i zaimportować go do lokalnego modułu HSM, następnie przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure RMS, a na koniec przenieść dane konfiguracji do usługi Azure RMS.|
+|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales.|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi rozwiązania BYOK usługi Azure Key Vault oraz wykonania trzech zestawów kroków, aby najpierw przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure Key Vault, następnie autoryzować usługę Azure RMS do użycia tego klucza dzierżawy, a na koniec przenieść dane konfiguracji do usługi Azure RMS.|
+|Ochrona za pomocą hasła w bazie danych usług AD RMS|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi rozwiązania BYOK usługi Azure Key Vault oraz wykonania czterech zestawów kroków, aby najpierw wyodrębnić klucz oprogramowania i zaimportować go do lokalnego modułu HSM, następnie przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure RMS, przenieść dane usługi Key Vault do usługi Azure RMS, a na koniec przenieść dane konfiguracji do usługi Azure RMS.|
 |Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) firmy innej niż Thales|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą modułu HSM, aby uzyskać instrukcje dotyczące przenoszenia klucza z tego modułu HSM do sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
 |Ochrona za pomocą hasła przy użyciu zewnętrznego dostawcy usług kryptograficznych|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą usług kryptograficznych, aby uzyskać instrukcje dotyczące przenoszenia klucza do sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
 Przed rozpoczęciem wykonywania tych procedur upewnij się, że masz dostęp do plików XML utworzonych wcześniej podczas eksportu zaufanych domen publikacji. Mogły one zostać na przykład zapisane na dysku USB używanym do przenoszenia danych z serwera usług AD RMS do stacji roboczej połączonej z Internetem.
@@ -100,9 +114,9 @@ Przed rozpoczęciem wykonywania tych procedur upewnij się, że masz dostęp do 
 Aby wykonać krok 2, wybierz instrukcje dotyczące ścieżki migracji: 
 
 
-- [Klucz programowy do klucza programowego](migrate-softwarekey-to-softwarekey.md)
-- [Klucz HSM do klucza HSM](migrate-hsmkey-to-hsmkey.md)
-- [Klucz programowy do klucza HSM](migrate-softwarekey-to-hsmkey.md)
+- [Klucz chroniony przez oprogramowanie do klucza chronionego przez oprogramowanie](migrate-softwarekey-to-softwarekey.md)
+- [Klucz chroniony przez moduł HSM do klucza chronionego przez moduł HSM](migrate-hsmkey-to-hsmkey.md)
+- [Klucz chroniony przez moduł HSM do klucza chronionego przez oprogramowanie](migrate-softwarekey-to-hsmkey.md)
 
 
 ## Krok 3. Aktywowanie dzierżawy usługi RMS
@@ -165,7 +179,7 @@ Grupę automatycznie utworzoną w organizacji można zobaczyć po skopiowaniu je
 ### Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
 Ta sekcja zawiera przykładowy skrypt, który ułatwia zidentyfikowanie szablonów usług AD RMS ze zdefiniowaną grupą KAŻDY, zgodnie z opisem w poprzedniej sekcji.
 
-**Zastrzeżenie:** ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE bez jakichkolwiek gwarancji.*
+**Zastrzeżenie:** ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
 ```
 import-module adrmsadmin 
@@ -206,6 +220,6 @@ Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-pha
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

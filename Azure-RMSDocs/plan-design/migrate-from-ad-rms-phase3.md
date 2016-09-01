@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -12,8 +12,9 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+translationtype: Human Translation
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
 
 
 ---
@@ -41,7 +42,7 @@ W przypadku wybrania topologii klucza dzierżawy usługi Azure RMS **Zarządzany
 ## Krok 7. Wdrażanie łącznika usługi RMS
 W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Exchange Server lub SharePoint Server z usługami AD RMS należy najpierw wyłączyć funkcję IRM na tych serwerach i usunąć konfigurację usług AD RMS. Następnie można wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą Azure RMS.
 
-Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele zaufanych domen publikacji użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
+Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele plików danych konfiguracji usługi AD RMS (XML) użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
 > Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure RMS zgodnie z opisem z sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
@@ -94,7 +95,7 @@ Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele z
 
 #### Tylko program Exchange i wiele zaufanych domen publikacji: edycja rejestru
 
--   Na każdym serwerze Exchange Server ręcznie dodaj następujące klucze rejestru dla każdej dodatkowej zaimportowanej zaufanej domeny publikacji w celu przekierowania adresów URL zaufanych domen publikacji do łącznika usługi RMS. Te wpisy rejestru są specyficzne dla migracji i nie są dodawane przez narzędzie do konfiguracji serwera dla łącznika usługi Microsoft RMS.
+-   Na każdym serwerze Exchange Server ręcznie dodaj następujące klucze rejestru dla każdego dodatkowego zaimportowanego pliku danych konfiguracji (XML) w celu przekierowania adresów URL zaufanych domen publikacji do łącznika usługi RMS. Te wpisy rejestru są specyficzne dla migracji i nie są dodawane przez narzędzie do konfiguracji serwera dla łącznika usługi Microsoft RMS.
 
     Podczas wprowadzania tych zmian rejestru postępuj zgodnie z następującymi instrukcjami:
 
@@ -214,6 +215,6 @@ Po wykonaniu tych procedur zapoznaj się z sekcją **Następne kroki** w artykul
 Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
