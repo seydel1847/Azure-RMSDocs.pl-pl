@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych. Na przykład dokumenty są automatycznie chronione przed przypadkowym lub zamierzonym wyciekiem spowodowanym przez użytkowników, przy czym dostęp do zawartości można zablokować nawet po jej pobraniu lub zsynchronizowaniu. Pliki, którym chcesz zapewnić ochronę, mogą być używane podczas wewnętrznej współpracy nad dokumentami lub planami projektowymi bądź innymi materiałami. Po skonfigurowaniu bibliotek chronionych dla programu SharePoint przechowywane w nich pliki pakietu Office będą chronione za pomocą usługi Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: cb028afcbfd9b59f134539c434f4f49efc5e9092
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
 
 
 ---
 
 # Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych. Na przykład dokumenty są automatycznie chronione przed przypadkowym lub zamierzonym wyciekiem spowodowanym przez użytkowników, przy czym dostęp do zawartości można zablokować nawet po jej pobraniu lub zsynchronizowaniu. Pliki, którym chcesz zapewnić ochronę, mogą być używane podczas wewnętrznej współpracy nad dokumentami lub planami projektowymi bądź innymi materiałami. Po skonfigurowaniu bibliotek chronionych dla programu SharePoint przechowywane w nich pliki pakietu Office będą chronione za pomocą usługi Azure Rights Management.
 
@@ -70,7 +69,7 @@ Przy użyciu następującego szablonu skopiuj i wklej powiadomienie do wiadomoś
 
 2.  Jeśli została skonfigurowana opcja **Zezwalaj na ochronę grupy. Grupa domyślna**, zastąp zmienną *&lt;nazwa grupy&gt;* nazwą skonfigurowanej grupy i podaj przyczynę &lt;przyczyna przyznania tej grupie uprawnień dostępu w celu współpracy nad plikami, ale nie przy użyciu biblioteki programu SharePoint&gt;. Jeśli ta opcja nie została skonfigurowana, usuń to zdanie.
 
-3.  Zastąp *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi sposobu kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny sieci Web, adres e-mail lub numer telefonu.
+3.  Zastąp parametr *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny internetowej lub adres e-mail albo numer telefonu.
 
 4.  Wprowadź dodatkowe zmiany, które chcesz uwzględnić w tym powiadomieniu, a następnie wyślij je do odpowiednich użytkowników.
 
@@ -106,6 +105,6 @@ Nie można przekazywać do witryny Prognozy i raporty dotyczące sprzedaży doku
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

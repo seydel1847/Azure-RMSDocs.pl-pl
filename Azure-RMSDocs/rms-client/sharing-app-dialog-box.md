@@ -1,27 +1,26 @@
 ---
 title: "Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Te informacje ułatwiają określanie opcji w oknie dialogowym dodawania ochrony lub udostępniania chronionej zawartości w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku ochrony udostępnianego pliku lub włączania ochrony miejscowej pliku i wybrania uprawnień niestandardowych."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
 
 
 ---
 
 # Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Te informacje ułatwiają określanie opcji w oknie dialogowym **dodawania ochrony** lub **udostępniania chronionej zawartości** w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku [ochrony udostępnianego pliku](sharing-app-protect-by-email.md) lub [włączania ochrony miejscowej pliku](sharing-app-protect-in-place.md) i wybrania uprawnień niestandardowych.
 
@@ -79,6 +78,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

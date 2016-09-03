@@ -1,27 +1,26 @@
 ---
 title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Włączenie ochrony pliku udostępnianego w wiadomości e-mail powoduje utworzenie nowej wersji oryginalnego pliku. Oryginalny plik pozostaje niechroniony, a jego nowa wersja jest chroniona i zostaje automatycznie dołączona do wysyłanej wiadomości e-mail."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9becbab6612e49e285774e2e8742d6448b11a041
 
 
 ---
 
 # Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Włączenie ochrony pliku udostępnianego w wiadomości e-mail powoduje utworzenie nowej wersji oryginalnego pliku. Oryginalny plik pozostaje niechroniony, a jego nowa wersja jest chroniona i zostaje automatycznie dołączona do wysyłanej wiadomości e-mail.
 
@@ -31,7 +30,7 @@ Jeśli organizacja używa usług Azure RMS, możesz monitorować pliki chronione
 
 -   Zaznacz opcję, dzięki której będziesz otrzymywać wiadomość e-mail, jeśli ktoś spróbuje otworzyć chronione załączniki. Za każdym razem, kiedy ktoś spróbuje otworzyć plik, dowiesz się, kto to był, kiedy to zrobił i czy mu się to udało (czy został pomyślnie uwierzytelniony).
 
--   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS](sharing-app-track-revoke.md).
+-   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz artykuł [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md).
 
 ## Używanie programu Outlook: aby chronić plik udostępniany pocztą e-mail
 
@@ -93,6 +92,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

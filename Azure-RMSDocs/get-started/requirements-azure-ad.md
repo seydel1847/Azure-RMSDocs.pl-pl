@@ -1,27 +1,26 @@
 ---
 title: "Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD | Azure RMS"
-description: 
-keywords: 
+description: "Aby korzystać z usługi Azure Rights Management (Azure RMS), musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji w tym katalogu do logowania się do klasycznego portalu Azure, w którym można na przykład konfigurować szablony usługi Rights Management i zarządzać nimi."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 8083c2f7e4cfdbf65748007ae21a48a49a56599f
 
 
 ---
 
 # Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Aby korzystać z usługi Azure Rights Management (Azure RMS), musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji w tym katalogu do logowania się do klasycznego portalu Azure, w którym można na przykład konfigurować szablony usługi Rights Management i zarządzać nimi.
@@ -76,6 +75,6 @@ Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

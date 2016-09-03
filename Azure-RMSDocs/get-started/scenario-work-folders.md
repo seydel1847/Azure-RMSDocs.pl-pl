@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — konfigurowanie folderów roboczych do stałej ochrony | Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w folderach roboczych. Foldery robocze korzystają z usługi roli dla serwerów plików z systemem Windows Server, co zapewnia spójny sposób dostępu użytkowników do plików roboczych z komputerów i urządzeń. Chociaż foldery robocze mają własne szyfrowanie w celu ochrony plików, tracimy tę ochronę, jeśli pliki są przenoszone poza środowisko folderów roboczych."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
 
 
 ---
 
 # Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w [folderach roboczych](https://technet.microsoft.com/library/dn265974.aspx). Foldery robocze korzystają z usługi roli dla serwerów plików z systemem Windows Server, co zapewnia spójny sposób dostępu użytkowników do plików roboczych z komputerów i urządzeń. Chociaż foldery robocze mają własne szyfrowanie w celu ochrony plików, tracimy tę ochronę, jeśli pliki są przenoszone poza środowisko folderów roboczych. Na przykład użytkownicy kopiują zsynchronizowane pliki i zapisują je do magazynu, który nie jest pod kontrolą działu IT, lub przesyłają pliki pocztą e-mail do innych osób.
 
@@ -54,9 +53,9 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |---------------|--------------------------------|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Jeden z poniższych programów:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
+|Jedna z poniższych opcji:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
 |Łącznik usługi Rights Management jest zainstalowany, autoryzowany dla komputera z systemem Windows Server i skonfigurowany dla roli **serwera infrastruktury FCI**.|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management została wdrożona na komputerach użytkowników z systemem Windows.|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 
 ### Konfigurowanie niestandardowego szablonu zasad praw dostępu, aby użytkownicy mogli udostępniać pliki folderów roboczych poza organizacją
 
@@ -123,6 +122,6 @@ W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scena
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

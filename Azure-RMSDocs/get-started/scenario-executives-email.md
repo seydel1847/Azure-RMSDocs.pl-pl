@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej | Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano usługę Azure Rights Management, aby umożliwić przedstawicielom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona przedstawicieli kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności. Wiadomości e-mail i wszystkie załączniki będą automatycznie chronione przez usługę Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3c15175f26c5e3bc0ff824c284beedc639cf9309
 
 
 ---
 
 # Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano usługę Azure Rights Management, aby umożliwić przedstawicielom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona przedstawicieli kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności. Wiadomości e-mail i wszystkie załączniki będą automatycznie chronione przez usługę Azure Rights Management.
 
@@ -103,7 +102,7 @@ Skorzystaj z poniższego szablonu i skopiuj to zawiadomienie do wiadomości dla 
 
 W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
-![Szablon dokumentacji użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
+![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; są teraz automatycznie chronione.
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
@@ -117,7 +116,7 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 -   Skontaktuj się z działem pomocy technicznej: &lt;dane kontaktowe&gt;
 
 ### Przykładowa dokumentacja użytkownika
-![Przykładowa dokumentacja użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
+![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie VanArsdel są teraz automatycznie chronione
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie VanArsdel będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
@@ -133,6 +132,6 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

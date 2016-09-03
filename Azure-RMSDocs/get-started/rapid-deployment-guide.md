@@ -1,27 +1,26 @@
 ---
 title: "Szybkie wdrażanie usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji Wdrażanie i używanie, aby szybciej wdrożyć usługę Azure Rights Management (Azure RMS) i korzystać z niej."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 93ef6397be2cd4799bd72975de72028ee6a898ed
 
 
 ---
 
 # Szybkie wdrażanie usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji **Wdrażanie i używanie**, aby szybciej wdrożyć usługę Azure Rights Management (Azure RMS) i korzystać z niej.
 
@@ -147,6 +146,6 @@ Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwol
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

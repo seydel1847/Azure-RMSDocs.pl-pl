@@ -1,27 +1,26 @@
 ---
 title: "Wyświetlanie i używanie plików chronionych przez usługę Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Gdy aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalowana na komputerze, wystarczy kliknąć dwukrotnie chroniony plik, aby go wyświetlić. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
 
 
 ---
 
 # Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalowana na komputerze](install-sharing-app.md), wystarczy kliknąć dwukrotnie chroniony plik, aby go wyświetlić. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików.
 
@@ -108,6 +107,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

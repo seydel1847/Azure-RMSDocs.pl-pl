@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy | Usługa Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją. Na przykład ktoś może przekazywać wiadomość e-mail osobie w innej organizacji lub na osobiste konto e-mail. Wiadomości e-mail i załączniki będą chronione za pomocą usługi Azure Rights Management oraz szablonu, który użytkownicy wybiorą z klienta poczty e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
 
 
 ---
 
 # Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją. Na przykład ktoś może przekazywać wiadomość e-mail osobie w innej organizacji lub na osobiste konto e-mail. Wiadomości e-mail i załączniki będą chronione za pomocą usługi Azure Rights Management oraz szablonu, który użytkownicy wybiorą z klienta poczty e-mail.
 
@@ -54,7 +53,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Klucz dzierżawy usługi Azure Rights Management jest zarządzany przez firmę Microsoft. Nie jest używana funkcja BYOK.|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnego programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych usługi Azure Management Rights](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać odpowiednie informacje, sprawdź sekcję [Odświeżanie szablonów dla użytkowników](https://technet.microsoft.com/library/dn642472.aspx) w artykule dotyczącym konfigurowania szablonów.|
+|Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać odpowiednie informacje, sprawdź sekcję [Odświeżanie szablonów dla użytkowników](https://technet.microsoft.com/library/dn642472.aspx) w artykule dotyczącym konfigurowania szablonów.|
 |Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](https://technet.microsoft.com/library/dn339003.aspx) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Wiadomości e-mail** w tabeli [Funkcje urządzeń klienckich](https://technet.microsoft.com/library/dn655136.aspx) w temacie [Wymagania dotyczące usługi Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)|
 
 ## Instrukcje w dokumentacji użytkownika
@@ -158,6 +157,6 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

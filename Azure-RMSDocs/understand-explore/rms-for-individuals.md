@@ -1,27 +1,26 @@
 ---
 title: "Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 
 ---
 
 # Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management
 
-*Dotyczy usługi Azure Rights Management*
+>*Dotyczy: Azure Rights Management*
 
 Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure.
 
@@ -42,6 +41,6 @@ Aby uzyskać szczegółowe instrukcje oraz zapoznać się z opisem technicznym p
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

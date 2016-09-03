@@ -1,27 +1,26 @@
 ---
 title: "Wymagania dotyczące usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Przed wdrożeniem usługi Microsoft Azure Rights Management (Azure RMS) w organizacji upewnij się, że poniższe wymagania wstępne zostały spełnione. Następnie możesz skorzystać z planu wdrożenia usługi Azure Rights Management w Twojej organizacji."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fab331a26e18730e9cc64a24c0501b7ae21aa1b
-ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: d56eb077ef76e1869c7d90141f1b35c1bdbfe9fa
 
 
 ---
 
 # Wymagania dotyczące usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przed wdrożeniem usługi Microsoft Azure Rights Management (Azure RMS) w organizacji upewnij się, że poniższe wymagania wstępne zostały spełnione. Następnie możesz skorzystać z [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md) w Twojej organizacji.
@@ -56,6 +55,6 @@ Aby uzyskać informacje o dodatkowych wymaganiach usługi Azure RMS dla tego sce
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Aplikacja do udostępniania usługi Microsoft Rights Management (RMS) dla systemu Windows pomaga zabezpieczyć ważne dokumenty i obrazy przed niepowołanymi osobami nawet po przesłaniu tych plików pocztą e-mail lub zapisaniu na innym urządzeniu. Za pomocą tej aplikacji można też otwierać pliki chronione przez innych za pomocą tej samej technologii (Rights Management)."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
-ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 0e9ec1074f5305c12f436336520d7a6703ed0cfa
 
 
 ---
 
 # Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Aplikacja do udostępniania usługi Microsoft Rights Management (RMS) dla systemu Windows pomaga zabezpieczyć ważne dokumenty i obrazy przed niepowołanymi osobami nawet po przesłaniu tych plików pocztą e-mail lub zapisaniu na innym urządzeniu. Za pomocą tej aplikacji można też otwierać pliki chronione przez innych za pomocą tej samej technologii (Rights Management).
 
@@ -68,6 +67,6 @@ Poniżej przedstawiono kilka sposobów ochrony plików za pomocą aplikacji RMS 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

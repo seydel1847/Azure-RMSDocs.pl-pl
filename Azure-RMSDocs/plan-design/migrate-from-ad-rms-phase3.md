@@ -1,27 +1,26 @@
 ---
 title: "Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 3 | Azure RMS"
-description: 
-keywords: 
+description: "Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania usług AD RMS do usługi Azure Rights Management (Azure RMS). Te procedury obejmują kroki od 6 do 7 z sekcji Migrowanie z usług AD RMS do usługi Azure Rights Management."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: cc605ff22c205846186f7e3ec819ecd826dba4a6
 
 
 ---
 
 # Faza 3 migracji — konfiguracja usług pomocniczych
 
-*Dotyczy usług: Active Directory Rights Management Services, Azure Rights Management*
+>*Dotyczy usług: Active Directory Rights Management Services, Azure Rights Management*
 
 
 Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania usług AD RMS do usługi Azure Rights Management (Azure RMS). Te procedury obejmują kroki od 6 do 7 z sekcji [Migrowanie z usług AD RMS do usługi Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
@@ -215,6 +214,6 @@ Po wykonaniu tych procedur zapoznaj się z sekcją **Następne kroki** w artykul
 Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

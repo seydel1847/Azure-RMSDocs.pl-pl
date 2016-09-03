@@ -1,27 +1,26 @@
 ---
 title: "Krok 2&colon; Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM | Azure RMS"
-description: 
-keywords: 
+description: "Te instrukcje są częścią ścieżki migracji z usług AD RMS do usługi Azure Rights Management oraz są stosowane tylko wtedy, gdy klucz usług AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Rights Management z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 86f7bd025824b23c8eecdb05b62d83204ae1ccb4
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 690729d16358b7b997d9cd1fd8cabed22ce78df4
 
 
 ---
 
 # Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
-*Dotyczy usług: Active Directory Rights Management Services, Azure Rights Management*
+>*Dotyczy usług: Active Directory Rights Management Services, Azure Rights Management*
 
 
 Te instrukcje są częścią [ścieżki migracji z usług AD RMS do usługi Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) oraz są stosowane tylko wtedy, gdy klucz usług AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Rights Management z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
@@ -95,6 +94,6 @@ Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi RMS](migrate-from
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

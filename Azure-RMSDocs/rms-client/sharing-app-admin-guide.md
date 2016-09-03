@@ -1,20 +1,19 @@
 ---
 title: "Przewodnik administratora aplikacji do udostępniania usługi Rights Management | Usługa Azure RMS"
-description: 
-keywords: 
+description: "Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management lub Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/05/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
-ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 # Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
@@ -396,6 +395,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

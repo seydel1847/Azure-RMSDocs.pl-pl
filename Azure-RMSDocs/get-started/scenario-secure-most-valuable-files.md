@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem. Są to zazwyczaj pliki, do których dostęp powinno mieć tylko kilka osób. Mogą one zawierać na przykład przepisy kulinarne na potrawy będące specjalnością firmy lub plany przejęcia, których nie można opublikować przed upływem określonego terminu."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
 
 
 ---
 
 # Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem. Są to zazwyczaj pliki, do których dostęp powinno mieć tylko kilka osób. Mogą one zawierać na przykład przepisy kulinarne na potrawy będące specjalnością firmy lub plany przejęcia, których nie można opublikować przed upływem określonego terminu.
 
@@ -112,7 +111,7 @@ Przy użyciu następującego szablonu skopiuj i wklej zawiadomienie do wiadomoś
 
 W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
-![Szablon dokumentacji użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
+![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Zawiadomienie działu IT: ochrona ściśle poufnych dokumentów organizacji &lt;nazwa organizacji&gt;.
 Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzięki czemu tylko &lt;wybrani użytkownicy&gt; mogą korzystać z tych plików i je modyfikować. Aby lepiej chronić pliki przed nieautoryzowanym dostępem, aplikacja będzie automatycznie żądać autoryzacji zawsze przy ich otwieraniu, dlatego w przypadku pracy z poniższymi plikami niezbędne jest połączenie internetowe i może zostać wyświetlony monit o podanie poświadczeń:
@@ -148,6 +147,6 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

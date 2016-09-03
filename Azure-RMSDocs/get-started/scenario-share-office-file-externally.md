@@ -1,27 +1,26 @@
 ---
 title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Usługa Azure RMS"
-description: 
-keywords: 
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana usługa Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
 
 
 ---
 
 # Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana usługa Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management.
 
@@ -56,7 +55,7 @@ Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownik
 
 1.  Zastąp zmienną *&lt;nazwa typu dokumentu pakietu Office&gt;* typem dokumentu, który użytkownicy będą wysyłać. Stosuj znaną terminologię charakterystyczną dla ich przepływów pracy, na przykład „cennik”, „czas dostawy” czy „oferta przetargowa” zamiast sformułowań typu „dokument programu Word” czy „arkusz kalkulacyjny programu Excel”. Precyzyjny dobór słów zwiększa prawdopodobieństwo, że użytkownicy zastosują się do instrukcji podczas pracy z dokumentami.
 
-2.  Zastąp *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi sposobu kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny sieci Web, adres e-mail lub numer telefonu.
+2.  Zastąp parametr *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny internetowej lub adres e-mail albo numer telefonu.
 
 3.  **Dodatkowe zmiany, które możesz wprowadzić:**
 
@@ -155,6 +154,6 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Wymagania dotyczące usługi Azure RMS: serwery lokalne obsługujące usługę Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Następujące lokalne produkty serwerowe są obsługiwane za pomocą usługi Azure RMS w przypadku korzystania z łącznika usługi Azure RMS działającego jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą Azure RMS. Ponadto w ramach tej konfiguracji należy skonfigurować synchronizację katalogów między lasami usługi Active Directory i usługą Azure Active Directory."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: cd8b8d18e146fcc0864565a603b47b2b074af2b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
 
 # Wymagania dotyczące usługi Azure RMS: serwery lokalne, które obsługują usługę Azure RMS
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Następujące lokalne produkty serwerowe są obsługiwane za pomocą usługi Azure RMS w przypadku korzystania z łącznika usługi Azure RMS działającego jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą Azure RMS. Ponadto w ramach tej konfiguracji należy skonfigurować synchronizację katalogów między lasami usługi Active Directory i usługą Azure Active Directory.
 
@@ -62,6 +61,6 @@ Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

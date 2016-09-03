@@ -1,27 +1,26 @@
 ---
 title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Informacje zawarte w tym artykule umożliwiają zaplanowanie użycia klucza dzierżawy usługi Rights Management (RMS) dla usługi Azure RMS oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
-ms.openlocfilehash: ee7b9b5f251856f102651f1e8f379f7bbacea77e
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 ---
 
 # Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Informacje zawarte w tym artykule umożliwiają zaplanowanie użycia klucza dzierżawy usługi Rights Management (RMS) dla usługi Azure RMS oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji.  Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”.
 
@@ -137,6 +136,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

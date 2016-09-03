@@ -1,20 +1,19 @@
 ---
 title: "Operacje cyklu życia klucza dzierżawy zarządzane przez firmę Microsoft | Azure RMS"
-description: 
-keywords: 
+description: "Jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Rights Management (domyślnie), użyj poniższych sekcji w celu uzyskania dodatkowych informacji na temat operacji cyklu życia związanych z tą topologią."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 1eafab8e36c44bfd98ae613d8094d3510f18038e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
 
 # Operacje cyklu życia klucza dzierżawy zarządzane przez firmę Microsoft
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Rights Management (domyślnie), użyj poniższych sekcji w celu uzyskania dodatkowych informacji na temat operacji cyklu życia związanych z tą topologią.
 
@@ -34,7 +33,7 @@ Ponowne tworzenie jest nazywane także wycofywaniem klucza. Klucza dzierżawy ni
 
 -   Firma została podzielona na dwie lub więcej firm. Po ponownym utworzeniu klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
 
--   Uważasz, że zostało naruszone bezpieczeństwo kopii głównej klucza dzierżawy (będącej w Twoim posiadaniu).
+-   Uważasz, że zostało naruszone bezpieczeństwo kopii głównej klucza dzierżawy, która należy do Ciebie.
 
 Możesz ponownie utworzyć klucz dzierżawy, [kontaktując się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) w celu otworzenia **sprawy pomocy technicznej usługi Azure Rights Management z żądaniem ponownego utworzenia klucza dzierżawy usługi Azure RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure RMS, i wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Ponowne tworzenie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
@@ -99,6 +98,6 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

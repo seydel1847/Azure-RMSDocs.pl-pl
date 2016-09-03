@@ -4,24 +4,24 @@ description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbo
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: c828ba3d4156c0115a012d10b375caee0d5e5c10
 
 
 ---
 
 # Samouczek Szybki start dotyczący usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Przejdź do: 
 > [!div class="op_single_selector"]
@@ -57,6 +57,6 @@ Zaczynamy!
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
