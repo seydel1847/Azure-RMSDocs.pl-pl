@@ -1,27 +1,26 @@
 ---
 title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server | Azure RMS"
-description: 
-keywords: 
+description: "Ten artykuł zawiera skrypt umożliwiający użycie klienta Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI), a także odpowiednie instrukcje."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
-ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
 
 ---
 
 # Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
-*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
 Ten artykuł zawiera skrypt umożliwiający użycie klienta Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI), a także odpowiednie instrukcje.
 
@@ -303,6 +302,6 @@ Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzys
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

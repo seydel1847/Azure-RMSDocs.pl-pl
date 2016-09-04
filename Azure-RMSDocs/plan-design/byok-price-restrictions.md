@@ -1,27 +1,26 @@
 ---
 title: "Cennik i ograniczenia dotyczące funkcji BYOK | Azure RMS"
-description: 
-keywords: 
+description: "Organizacje, które mają subskrypcję obejmującą usługę Azure Rights Management, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i rejestrować ich użycie bez dodatkowych opłat. Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz stronę z cenami usługi Azure Key Vault."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
 
 
 ---
 
 # Cennik i ograniczenia dotyczące funkcji BYOK
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Organizacje, które mają subskrypcję obejmującą usługę Azure Rights Management, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i rejestrować ich użycie bez dodatkowych opłat. Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
@@ -63,6 +62,6 @@ Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

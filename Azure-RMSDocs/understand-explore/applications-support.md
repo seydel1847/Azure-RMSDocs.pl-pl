@@ -1,27 +1,26 @@
 ---
 title: "Jak aplikacje obsługują usługę Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Poniższe informacje pozwalają lepiej zrozumieć, w jaki sposób najczęściej używane aplikacje (takie jak aplikacje pakietu Office — Word, Excel, PowerPoint i Outlook) i usługi (takie jak programy Exchange i SharePoint) użytkownika końcowego mogą korzystać z usługi Microsoft Azure Rights Management w celu ochrony danych organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16c2dbbce4234f41941bd3fd92d264df0ae685e2
-ms.openlocfilehash: 15167c4e7dbe0fd401e198c80524b39e4ded250d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: df66b53238acecd4173b7d1bc57a611c403ec256
 
 
 ---
 
 # Jak aplikacje obsługują usługę Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Poniższe informacje pozwalają lepiej zrozumieć, w jaki sposób najczęściej używane aplikacje (takie jak aplikacje pakietu Office — Word, Excel, PowerPoint i Outlook) i usługi (takie jak programy Exchange i SharePoint) użytkownika końcowego mogą korzystać z usługi Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] w celu ochrony danych organizacji. 
 > [!NOTE]
@@ -63,6 +62,6 @@ Dowiedz się więcej na temat sposobu obsługi usługi Azure RMS przez następuj
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

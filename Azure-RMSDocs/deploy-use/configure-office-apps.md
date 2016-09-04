@@ -1,27 +1,26 @@
 ---
 title: "Aplikacje pakietu Office: konfiguracja dla klientów | Azure RMS"
-description: 
-keywords: 
+description: "Dzięki tym informacjom można ustalić, co należy zrobić, aby aplikacje pakietu Office używane przez użytkowników końcowych działały z usługą Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 607de5e4699d654a4b7895bacde8f18a9707f8a1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 562ecbd04ef988130205de06e5dd76084822ca7a
 
 
 ---
 
 # Aplikacje pakietu Office: konfiguracja dla klientów
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Dzięki tym informacjom można ustalić, co należy zrobić, aby aplikacje pakietu Office używane przez użytkowników końcowych działały z usługą Azure Rights Management (Azure RMS).
@@ -31,7 +30,7 @@ Ze względu na to, że te nowsze wersje pakietu Office natywnie obsługują usł
 
 Zalecamy jednak uzupełnienie tych aplikacji o aplikację do udostępniania usługi Rights Management, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office. Aby uzyskać więcej informacji, zobacz [Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów](configure-sharing-app.md).
 
-## Office 2010
+## Pakiet Office 2010
 Aby komputery klienckie mogły używać usługi Azure RMS z pakietem Office 2010, należy na nich zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows. Nie jest wymagana żadna dalsza konfiguracja, a użytkownicy muszą tylko zalogować się przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i używać plików chronionych przez inne osoby.
 
 Aby uzyskać więcej informacji na temat aplikacji do udostępniania usługi Rights Management, zobacz [Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów](configure-sharing-app.md).
@@ -39,6 +38,6 @@ Aby uzyskać więcej informacji na temat aplikacji do udostępniania usługi Rig
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

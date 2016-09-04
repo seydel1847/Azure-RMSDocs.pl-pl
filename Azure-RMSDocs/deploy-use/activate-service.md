@@ -1,27 +1,26 @@
 ---
 title: "Aktywacja usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Po aktywacji usługi (Azure RMS) Twoja organizacja może rozpocząć chronienie ważnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć usługę przed rozpoczęciem korzystania z funkcji zarządzania dostępem do informacji (IRM) w programach Office, SharePoint i Exchange i ochroną wszelkich poufnych plików."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
-ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
 
 
 ---
 
 # Aktywacja usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Po aktywacji usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) Twoja organizacja może rozpocząć chronienie ważnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć usługę [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] przed rozpoczęciem korzystania z funkcji zarządzania dostępem do informacji (IRM) w programach Office, SharePoint i Exchange i ochroną wszelkich poufnych plików.
 
@@ -82,6 +81,6 @@ Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przep
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

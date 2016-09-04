@@ -1,20 +1,19 @@
 ---
 title: "Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell | Azure RMS"
-description: 
-keywords: 
+description: "Wszystkie czynności, które można wykonać w klasycznym portalu Azure w celu tworzenia szablonów i zarządzania nimi, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4874e6061bb9b8781fc2ad02c80dba38084f4747
 
 
 ---
@@ -23,7 +22,7 @@ ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
 
 # Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Wszystkie czynności, które można wykonać w klasycznym portalu Azure w celu tworzenia szablonów i zarządzania nimi, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy.
 
@@ -60,6 +59,6 @@ Polecenia cmdlet używane do tworzenia szablonów i zarządzania nimi:
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

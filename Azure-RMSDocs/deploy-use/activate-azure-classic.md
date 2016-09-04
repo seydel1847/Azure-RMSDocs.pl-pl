@@ -1,27 +1,26 @@
 ---
 title: "Jak aktywować usługę Azure Rights Management w klasycznym portalu Azure | Azure RMS"
-description: 
-keywords: 
+description: "Te instrukcje są przeznaczone dla użytkowników, którzy mają dostęp do portalu Azure. Na przykład masz subskrypcję pakietu Enterprise Mobility Suite lub subskrypcję Azure Rights Management w wersji Premium."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/27/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b214d7951820c8cb98c5d6f81af3325597ea72ec
-ms.openlocfilehash: 9cde79791e8c2b04d1d7622f5aa69d654a70646e
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 573aa437d8449212bd2f22b532342e4c7e3a1be6
 
 
 ---
 
 # Jak aktywować usługę Azure Rights Management w klasycznym portalu Azure
 
-*Dotyczy: Azure Rights Management*
+>*Dotyczy: Azure Rights Management*
 
 
 Te instrukcje są przeznaczone dla użytkowników, którzy mają dostęp do portalu Azure. Na przykład masz subskrypcję pakietu Enterprise Mobility Suite lub subskrypcję Azure Rights Management w wersji Premium.
@@ -59,6 +58,6 @@ Oprócz stanu **Aktywna**, który wskazuje, że usługa Rights Management zosta�
 Powrót do części [Aktywacja usługi Azure Rights Management](activate-service.md).
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

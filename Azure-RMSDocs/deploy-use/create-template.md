@@ -1,20 +1,19 @@
 ---
 title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure RMS
-description: 
-keywords: 
+description: "Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie Zaawansowane funkcje, odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
-ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 # Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie **Zaawansowane funkcje** odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure.
@@ -56,7 +55,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
         1.  W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
 
-        2.  Na stronie **Active Directory** kliknij opcję **RIGHTS MANAGEMENT**.
+        2.  Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
 
         3.  Wybierz katalog, aby zarządzać usługą Rights Management.
 
@@ -167,6 +166,6 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Instalowanie i konfigurowanie łącznika Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/27/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
-ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9160188f6e905db7ef95365a0cc5cfbcb7522101
 
 
 ---
 
 # Instalowanie i konfigurowanie łącznika Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
@@ -241,6 +240,6 @@ Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobiera
 Teraz, gdy łącznik RMS jest zainstalowany i skonfigurowany, można przystąpić do konfigurowania serwerów lokalnych, aby mogły z niego korzystać. Przejdź do sekcji [Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management](configure-servers-rms-connector.md).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

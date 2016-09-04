@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection | Azure 
 description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ W przypadku wystąpienia problemów podczas wykonywania instrukcji zamieszczonyc
 ## Wymagania wstępne 
 Do ukończenia tego samouczka będą potrzebne następujące elementy:
 
-- Wszelkie subskrypcje obejmujące usługę Azure Rights Management dają dostęp do wersji zapoznawczej usługi Azure Information Protection. Usługa Azure Information Protection jest dostępna we wszystkich regionach, które obsługują usługę Azure Rights Management. Aby uzyskać więcej informacji o dostępnych subskrypcjach oraz linki do bezpłatnych wersji próbnych, zobacz artykuł [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md).
+- Subskrypcja usługi Office 365, która obejmuje ochronę dokumentów pakietu Office i wiadomości e-mail za pomocą usługi Azure RMS. Aby uzyskać więcej informacji o dostępnych subskrypcjach oraz linki do bezpłatnych wersji próbnych, zobacz sekcję [Subskrypcja usługi Office 365](../get-started/requirements-subscriptions.md#office-365-subscription) w dokumentacji wymagań usługi Azure RMS.
 
 - Subskrypcja platformy Azure, która umożliwia skonfigurowanie zasad usługi Azure Information Protection w portalu Azure. Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej: przejdź na stronę [wprowadzenia do platformy Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
 
@@ -51,6 +51,6 @@ Zaczynamy!
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

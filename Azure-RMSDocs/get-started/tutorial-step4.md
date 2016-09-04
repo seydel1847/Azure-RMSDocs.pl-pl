@@ -6,7 +6,7 @@ author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 07c71de207fc7af019dfeea37ca194cf85cc1760
 
 # Samouczek Szybki start Azure RMS, krok 4: Poproś odbiorców o otworzenie przesłanego dokumentu
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przejdź do: 
@@ -79,6 +79,6 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 [Krok 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Często zadawane pytania dotyczące usługi Azure Information Protection (wersja zapoznawcza) | Azure Information Protection"
-description: 
-keywords: 
+description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
 
 
 ---
@@ -57,7 +56,7 @@ Ta wersja zapoznawcza ma następujące ograniczenia: W blogu [dotyczącym pakiet
 
 ## Jaka subskrypcja jest potrzebna, aby zapoznać się z usługą Azure Information Protection?
 
-W wersji zapoznawczej można użyć dowolnej subskrypcji, która obejmuje usługę Azure Rights Management. Usługa Azure Information Protection jest dostępna we wszystkich regionach. Aby uzyskać więcej informacji o dostępnych subskrypcjach oraz linki do bezpłatnych wersji próbnych, zobacz artykuł [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md).
+W przypadku wersji zapoznawczej można skorzystać z dowolnej subskrypcji usługi Office 365, która obejmuje ochronę dokumentów pakietu Office i wiadomości e-mail za pomocą usługi Azure Rights Management. Usługa Azure Information Protection jest dostępna we wszystkich regionach. Aby uzyskać więcej informacji o dostępnych subskrypcjach oraz linki do bezpłatnych wersji próbnych, zobacz sekcję [Subskrypcja usługi Office 365](../get-started/requirements-subscriptions.md#office-365-subscription) w dokumentacji wymagań usługi Azure RMS.
 
 Aby skonfigurować zasady usługi Azure Information Protection w portalu Azure, trzeba posiadać subskrypcję platformy Azure. Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej: przejdź na stronę [wprowadzenia do platformy Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
 
@@ -188,6 +187,6 @@ Następnie odwiedź naszą witrynę [Yammer](https://www.yammer.com/askipteam/#/
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

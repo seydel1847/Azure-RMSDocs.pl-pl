@@ -1,20 +1,19 @@
 ---
 title: "Jak działa usługa Azure RMS | Azure RMS"
-description: 
-keywords: 
+description: "Istotnym aspektem działania usługi Azure RMS jest fakt, że w ramach procesu ochrony informacji usługa Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
-ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
 
 # Jak działa usługa Azure RMS Kulisy
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Istotnym aspektem działania usługi Azure RMS jest fakt, że w ramach procesu ochrony informacji usługa Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług:
 
@@ -151,6 +150,6 @@ Jeśli chcesz rozpocząć wdrażanie usługi Azure RMS w organizacji, użyj [pla
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

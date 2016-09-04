@@ -4,17 +4,17 @@ description: "Trzeci krok samouczka, dzięki któremu możesz szybko wypróbowa�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 62b2303074ccf2b23e29a5770f51b003c8f97780
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 # Samouczek Szybki start usługi Azure RMS, krok 3: prześlij w wiadomości e-mail dokument, który chcesz chronić
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przejdź do: 
@@ -74,7 +74,7 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Pełne instrukcje i alternatywne metody ochrony plików udostępnianych za pośrednictwem poczty e-mail|[Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-protect-by-email.md)|
-|Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości**|[Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-dialog-box.md)|
+|Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości**|[Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management](../rms-client/sharing-app-dialog-box.md)|
 
 
 >[!div class="step-by-step"]
@@ -82,6 +82,6 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 [Krok 4 »](tutorial-step4.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

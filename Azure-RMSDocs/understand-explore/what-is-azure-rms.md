@@ -1,27 +1,26 @@
 ---
 title: "Co to jest usługa Azure Rights Management? | Azure RMS"
-description: 
-keywords: 
+description: "Usługa Azure Rights Management (Azure RMS) jest rozwiązaniem do ochrony informacji w organizacjach, które chcą chronić swoje dane we współczesnym środowisku pracy wymagającym rozwiązania wielu problemów."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
-ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: f6f2b382766ea91ed463c18655efb07d206213af
 
 
 ---
 
 # Co to jest usługa Azure Rights Management?
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Usługa Azure Rights Management (Azure RMS) jest rozwiązaniem do ochrony informacji w organizacjach, które chcą chronić swoje dane we współczesnym środowisku pracy wymagającym rozwiązania wielu problemów.
@@ -62,6 +61,6 @@ Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure RMS w organizacji, uż
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

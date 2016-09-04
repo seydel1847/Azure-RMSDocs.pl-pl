@@ -4,9 +4,9 @@ description: "Ostatni krok samouczka umożliwiającego szybkie wypróbowanie us�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5884914e2ff69c4db40d4e874541f42b9a0e7df5
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 # Samouczek Szybki start usługi Azure RMS, krok 5: śledzenie chronionego dokumentu
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przejdź do: 
@@ -71,7 +71,7 @@ Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Pełne instrukcje dotyczące śledzenia dokumentów|[Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS](../rms-client/sharing-app-track-revoke.md)|
-|Dwuminutowe wideo, które objaśnia i przedstawia funkcję śledzenia dokumentu|[Śledzenie dokumentów i odwoływanie dostępu w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
+|Dwuminutowe wideo, które objaśnia i przedstawia funkcję śledzenia dokumentu|[Śledzenie i odwoływanie dokumentów w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
 |Rozwiązywanie problemów i pytania klienta|[Często zadawane pytania dotyczące śledzenia dokumentów](https://technet.microsoft.com/dn947488)|
 
 ### Następne kroki
@@ -91,6 +91,6 @@ Możesz też zobaczyć [Szybkie wdrażanie usługi Azure Rights Management](../g
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

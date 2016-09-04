@@ -1,27 +1,26 @@
 ---
 title: "Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych | Azure RMS"
-description: 
-keywords: 
+description: "Funkcja superużytkowników usługi Microsoft Azure RMS zapewnia, że upoważnione osoby i usługi mogą zawsze odczytać i sprawdzić dane, które w organizacji chroni usługa Azure RMS. W razie potrzeby mogą też usunąć lub zmienić uprzednio zastosowaną ochronę. Superużytkownik ma zawsze pełne prawa właściciela wobec wszystkich licencji użytkowania przyznanych przez dzierżawę usługi RMS w organizacji. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
 
 
 ---
 
 # Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Funkcja superużytkowników usługi Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) zapewnia, że upoważnione osoby i usługi mogą zawsze odczytać i sprawdzić dane, które w organizacji chroni usługa Azure RMS. W razie potrzeby mogą też usunąć lub zmienić uprzednio zastosowaną ochronę. Superużytkownik ma zawsze pełne prawa właściciela wobec wszystkich licencji użytkowania przyznanych przez dzierżawę usługi RMS w organizacji. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji. Przykładowo z tej funkcji można skorzystać w każdym z następujących scenariuszy:
 
@@ -72,6 +71,6 @@ Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protectio
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

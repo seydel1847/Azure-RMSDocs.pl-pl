@@ -1,27 +1,26 @@
 ---
 title: "Omówienie usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "Usługa Microsoft Azure Rights Management (Azure RMS) pomaga chronić poufne informacje organizacji przed nieautoryzowanym dostępem i kontrolować sposób używania tych informacji. Azure Rights Management to usługa w chmurze, zintegrowana z innymi usługami w chmurze i aplikacjami firmy Microsoft, takimi jak usługi Office 365 i Azure Active Directory. Można jej również używać razem z własnymi aplikacjami biznesowymi oraz rozwiązaniami do ochrony informacji dostarczanymi przez producentów oprogramowania, zarówno w przypadku aplikacji i rozwiązań hostowanych lokalnie, jak i w chmurze."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
-ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9d6c68c01cbd410def904f7cf256ffe9a5a5417b
 
 
 ---
 
 # Omówienie usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 Usługa Microsoft Azure Rights Management (Azure RMS) pomaga chronić poufne informacje organizacji przed nieautoryzowanym dostępem i kontrolować sposób używania tych informacji. Azure Rights Management to usługa w chmurze, zintegrowana z innymi usługami w chmurze i aplikacjami firmy Microsoft, takimi jak usługi Office 365 i Azure Active Directory. Można jej również używać razem z własnymi aplikacjami biznesowymi oraz rozwiązaniami do ochrony informacji dostarczanymi przez producentów oprogramowania, zarówno w przypadku aplikacji i rozwiązań hostowanych lokalnie, jak i w chmurze. 
 
@@ -40,6 +39,6 @@ Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS w Twojej organizacji
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

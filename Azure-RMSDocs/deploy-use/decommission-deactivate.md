@@ -1,27 +1,26 @@
 ---
 title: "Likwidowanie i dezaktywowanie usługi Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "To Ty masz zawsze kontrolę nad tym, czy organizacja chroni zawartość za pomocą usługi (Azure RMS). Jeśli nie chcesz już korzystać z tego rozwiązania do ochrony informacji, możesz mieć pewność, że poprzednio chroniona zawartość nie zostanie zablokowana. Jeśli nie musisz mieć ciągłego dostępu do wcześniej chronionej zawartości, możesz po prostu dezaktywować usługę i zaczekać, aż subskrypcja usługi Azure Rights Management wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi zakończyło się przed wdrożeniem jej w środowisku produkcyjnym."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
 
 
 ---
 
 # Likwidowanie i dezaktywowanie usługi Azure Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 To Ty masz zawsze kontrolę nad tym, czy organizacja chroni zawartość za pomocą usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS). Jeśli nie chcesz już korzystać z tego rozwiązania do ochrony informacji, możesz mieć pewność, że poprzednio chroniona zawartość nie zostanie zablokowana. Jeśli nie musisz mieć ciągłego dostępu do wcześniej chronionej zawartości, możesz po prostu dezaktywować usługę i zaczekać, aż subskrypcja usługi Azure Rights Management wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zakończyło się przed wdrożeniem jej w środowisku produkcyjnym.
 
@@ -92,6 +91,6 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management nie została 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

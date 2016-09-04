@@ -1,27 +1,26 @@
 ---
 title: "Jak aktywować usługę Azure Rights Management w centrum administracyjnym usługi Office 365 w wersji zapoznawczej | Azure RMS"
-description: 
-keywords: 
+description: "Te instrukcje są przeznaczone dla użytkowników korzystających z nowej, zapoznawczej wersji centrum administracyjnego usługi Office 365 (Centrum administracyjne usługi Office 365 w wersji zapoznawczej)."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6eae63c629ae7cfe2175a655eb4901c1707c0f1d
-ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 554b34c0aa2aa86a915a28d120f2ebaa9705c586
 
 
 ---
 
 # Jak aktywować usługę Azure Rights Management w centrum administracyjnym usługi Office 365 w wersji zapoznawczej
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Te instrukcje są przeznaczone dla użytkowników korzystających z nowej, zapoznawczej wersji centrum administracyjnego usługi Office 365 (**Centrum administracyjne usługi Office 365 w wersji zapoznawczej**).
@@ -59,6 +58,6 @@ Powrót do części [Aktywacja usługi Azure Rights Management](activate-service
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

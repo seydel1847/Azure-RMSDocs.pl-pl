@@ -6,14 +6,14 @@ author: Cabailey
 manager: mbaldwin
 ms.date: 06/29/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
-ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: c00264e6c8b99d95e8eedf9b91781484611880c3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 
 # Samouczek Szybki start usługi Azure RMS, krok 1. Aktywowanie usługi Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przejdź do: 
@@ -92,7 +92,7 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Informacje na temat aktywowania usługi Rights Management i określania, kto może chronić pliki i wiadomości e-mail po aktywowaniu usługi|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
-|Informacje na temat szablonów domyślnych i sposobu tworzenia nowych szablonów niestandardowych|[Konfigurowanie szablonów niestandardowych usługi Azure Management Rights](../deploy-use/configure-custom-templates.md)|
+|Informacje na temat szablonów domyślnych i sposobu tworzenia nowych szablonów niestandardowych|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 
 
 >[!div class="step-by-step"]
@@ -100,6 +100,6 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 [Krok 2 »](tutorial-step2.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

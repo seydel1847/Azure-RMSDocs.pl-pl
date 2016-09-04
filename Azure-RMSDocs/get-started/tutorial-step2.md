@@ -4,17 +4,17 @@ description: "Drugi krok samouczka, dzięki któremu możesz szybko wypróbować
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 19eb18599d9d084b40cfe746f01eb8ce463c47ab
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 
 # Samouczek Szybki start usługi Azure RMS, krok 2. Instalacja aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy usług: Azure Rights Management, Office 365*
 
 
 Przejdź do: 
@@ -62,7 +62,7 @@ Teraz możesz już chronić swoje pliki zawierające informacje, które chcesz u
 |--------------------------------|--------------------------|
 |Informacje dotyczące lokalnej instalacji aplikacji do udostępniania usługi Rights Management dla systemu Windows i instrukcje dla użytkowników|[Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md)|
 |Informacje dotyczące skryptowej instalacji aplikacji do udostępniania usługi Rights Management dla systemu Windows i dodatkowe informacje techniczne|[Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md)|
-|Różnice między ochroną natywną a ogólną|[Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|Różnice między ochroną natywną a ogólną|[Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 
 
 >[!div class="step-by-step"]
@@ -70,6 +70,6 @@ Teraz możesz już chronić swoje pliki zawierające informacje, które chcesz u
 [Krok 3 »](tutorial-step3.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
