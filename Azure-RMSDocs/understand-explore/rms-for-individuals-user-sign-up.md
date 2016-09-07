@@ -43,7 +43,7 @@ Najczęściej spotykaną metodą przekierowywania użytkowników na stronę twor
 
 5.  Po otrzymaniu wiadomości e-mail kliknij link w obrębie instrukcji, aby ukończyć proces tworzenia konta.
 
-6.  Link prowadzi do nowej strony **Microsoft Rights Management**, na której należy podać szczegóły swojego konta. Wpisz swoje imię i nazwisko, wprowadź i potwierdź wybrane hasło, wybierz swój kraj z listy rozwijanej (lub najbliższy, jeśli na liście nie ma Twojego kraju), a następnie kliknij pozycję **Utwórz**.
+6.  Link prowadzi do nowej strony **Microsoft Rights Management**, na której należy podać szczegóły swojego konta. Wpisz swoje imię i nazwisko, wprowadź i potwierdź wybrane hasło, wybierz swój kraj/region z listy rozwijanej (lub najbliższy, jeśli na liście nie ma Twojego kraju), a następnie kliknij pozycję **Utwórz**.
 
 7.  Poczekaj na kolejną wiadomość e-mail od firmy Microsoft, która potwierdzi, że Twoje konto jest gotowe do użycia.
 
