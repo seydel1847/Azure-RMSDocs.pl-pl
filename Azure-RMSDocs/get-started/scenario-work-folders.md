@@ -1,9 +1,9 @@
 ---
 title: "Scenariusz — konfigurowanie folderów roboczych do stałej ochrony | Azure RMS"
-description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w folderach roboczych. Foldery robocze korzystają z usługi roli dla serwerów plików z systemem Windows Server, co zapewnia spójny sposób dostępu użytkowników do plików roboczych z komputerów i urządzeń. Chociaż foldery robocze mają własne szyfrowanie w celu ochrony plików, tracimy tę ochronę, jeśli pliki są przenoszone poza środowisko folderów roboczych."
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w folderach roboczych."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
 
 
 ---

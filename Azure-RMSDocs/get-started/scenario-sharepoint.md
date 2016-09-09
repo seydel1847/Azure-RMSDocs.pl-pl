@@ -1,9 +1,9 @@
 ---
 title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure RMS"
-description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych. Na przykład dokumenty są automatycznie chronione przed przypadkowym lub zamierzonym wyciekiem spowodowanym przez użytkowników, przy czym dostęp do zawartości można zablokować nawet po jej pobraniu lub zsynchronizowaniu. Pliki, którym chcesz zapewnić ochronę, mogą być używane podczas wewnętrznej współpracy nad dokumentami lub planami projektowymi bądź innymi materiałami. Po skonfigurowaniu bibliotek chronionych dla programu SharePoint przechowywane w nich pliki pakietu Office będą chronione za pomocą usługi Azure Rights Management."
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 
 ---

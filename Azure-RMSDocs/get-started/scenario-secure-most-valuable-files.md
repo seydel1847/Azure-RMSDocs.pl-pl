@@ -1,9 +1,9 @@
 ---
 title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure RMS"
-description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem. Są to zazwyczaj pliki, do których dostęp powinno mieć tylko kilka osób. Mogą one zawierać na przykład przepisy kulinarne na potrawy będące specjalnością firmy lub plany przejęcia, których nie można opublikować przed upływem określonego terminu."
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 
 ---

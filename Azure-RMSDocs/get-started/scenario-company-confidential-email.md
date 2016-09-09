@@ -1,9 +1,9 @@
 ---
 title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy | Usługa Azure RMS"
-description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją. Na przykład ktoś może przekazywać wiadomość e-mail osobie w innej organizacji lub na osobiste konto e-mail. Wiadomości e-mail i załączniki będą chronione za pomocą usługi Azure Rights Management oraz szablonu, który użytkownicy wybiorą z klienta poczty e-mail."
+description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
 
 
 ---
