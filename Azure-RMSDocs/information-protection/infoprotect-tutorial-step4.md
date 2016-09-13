@@ -1,17 +1,17 @@
 ---
-title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 4 | Azure Rights Management"
+title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 4 | Azure Information Protection"
 description: "Krok 4 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 2c04c749ff73050dc8a15dd984c33f700e3e6ed5
 
 
 ---
@@ -32,7 +32,7 @@ Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do teg
 
     Wartość opcji **Ważność** zmieni się na **Osobiste**.
 
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit o uzasadnienie potwierdzenia obniżenia](../media/confirm-lowering.png)
+    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit o uzasadnienie potwierdzenia obniżenia](../media/info-protect-lower-justification.png)
 
 ### Aby całkowicie usunąć klasyfikację:
 
@@ -77,6 +77,6 @@ Po zakończeniu testowania warto zapoznać się z [często zadawanymi pytaniami 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

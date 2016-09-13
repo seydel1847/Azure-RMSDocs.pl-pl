@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 0dcaf13afb1802c2301c9516b2602aa2f6b7ce7e
+ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
+ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
 
 
 ---
@@ -26,10 +26,12 @@ Ten temat zawiera podstawowe wskazówki dotyczące kluczowych aspektów aplikacj
 
 ## Wprowadzenie
 
-Wskazówki zawarte w tym temacie bazują na prostej aplikacji, IPCHelloWorld, która pomaga w poznaniu podstawowych pojęć i kodu aplikacji obsługującej prawa. Możesz pobrać pełną przykładową aplikację IPCHelloWorld jako plik [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440) z witryny Microsoft Connect.
+Wskazówki zawarte w tym temacie bazują na prostej aplikacji, *IPCHelloWorld*, która pomaga w poznaniu podstawowych pojęć i kodu aplikacji obsługującej prawa. Projekt *IPCHelloWorld* został już skonfigurowany dla zestawu Rights Management Services SDK 2.1. Informacje o sposobie konfigurowania nowego projektu do korzystania z zestawu RMS SDK 2.1 zawiera temat [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
-> [!Note] 
-> Projekt IPCHelloWorld został już skonfigurowany dla zestawu Rights Management Services SDK 2.1. Informacje o sposobie konfigurowania nowego projektu do korzystania z zestawu RMS SDK 2.1 zawiera temat [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+Możesz pobrać pełną przykładową aplikację *IPCHelloWorld* jako plik [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440) z witryny Microsoft Connect.
+> [!Note]
+> Wyświetlenie błędu podczas otwierania witryny Microsoft Connect może oznaczać, że użytkownik nie jest zarejestrowany. Aby się zarejestrować: przejdź do witryny [Connect](http://connect.microsoft.com) i zaloguj się, używając kolejno opcji Konto Microsoft > Katalog > Wyszukiwanie usług zarządzania prawami dostępu > Dołącz.
+
 
 ## Ładowanie biblioteki MSIPC.dll
 
@@ -185,6 +187,6 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

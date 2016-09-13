@@ -24,8 +24,9 @@
 ### [Konfigurowanie oznaczeń wizualnych](configure-policy-markings.md)
 ### [Konfigurowanie warunków](configure-policy-classification.md)
 ## [Instalacja klienta](info-protect-client.md)
+## [Postanowienia licencyjne usługi Azure Information Protection](aip-software-license-terms.md)
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 

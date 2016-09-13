@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management | Azure Rights Management"
+title: "Jak skonfigurować etykietę do zastosowania ochrony przez usługę Rights Management | Azure Information Protection"
 description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić przy użyciu usługi Rights Management, która korzysta z zasad szyfrowania, tożsamości oraz autoryzacji w celu zapobieżenia utracie danych. Ta ochrona jest stosowana, gdy skonfigurujesz etykietę do używania szablonu usługi Rights Management."
 manager: mbaldwin
 ms.date: 08/15/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 ---
@@ -57,7 +57,7 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
     
     W większości przypadków wybierzesz usługę **Azure RMS**. Nie należy wybierać usługi AD RMS, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji, która czasami nazywana jest scenariuszem *zachowaj własny klucz* (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md).
     
-4. W przypadku wybrania usługi Azure RMS: dla opcji **Wybierz szablon usług RMS** kliknij pole listy rozwijanej i wybierz szablon, którego chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
+4. W przypadku wybrania usługi Azure RMS: dla opcji **Wybierz szablon usług RMS** kliknij pole listy rozwijanej i wybierz szablon lub opcję zarządzania prawami, której chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
 
     > [!NOTE] 
     > Jeśli utworzysz nowy szablon po otworzeniu bloku **Etykieta**, zamknij ten blok i wróć do kroku 2, aby nowo utworzony szablon został pobrany z platformy Azure i był dostępny do wyboru.
@@ -78,6 +78,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

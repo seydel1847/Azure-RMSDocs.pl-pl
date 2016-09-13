@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi Azure Information Protection
 description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
+ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
+ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
 
 
 ---
@@ -82,7 +82,7 @@ Ten temat został udokumentowany i będzie aktualizowany w artykule [Wymagania d
 
 ## Jak komputery uzyskują informacje o zasadach od usługi Azure Information Protection i jak często są one odświeżane?
 
-Przy każdym otwarciu aplikacji pakietu Office klient usługi Azure Information Protection sprawdza, czy jest dostępna nowsza wersja zasad usługi. Jeśli istnieje nowsza wersja, klient pobiera ją za pomocą łącza HTTPS w celu zabezpieczenia danych. 
+Przy każdym otwarciu aplikacji pakietu Office klient usługi Azure Information Protection sprawdza, czy jest dostępna nowsza wersja zasady usługi. Ponadto aplikacje pakietu Office przeprowadzają automatycznie sprawdzanie co 24 godziny. Jeśli istnieje nowsza wersja, klient pobiera ją za pomocą łącza HTTPS w celu zabezpieczenia danych. 
 
 Jeśli podczas publikowania nowych zasad usługi Azure Information Protection załadowanych jest wiele wystąpień aplikacji pakietu Office, musisz zamknąć wszystkie instancje, aby pobrać najnowszą wersję zasad. Przykładowo, jeśli masz otwarte dwa dokumenty programu Word i chcesz przetestować zaktualizowane zasady usługi Azure Information Protection tylko w jednym dokumencie: zamknij oba dokumenty programu Word i otwórz ponownie dokument, którego chcesz użyć wraz z najnowszymi zasadami.
 
@@ -129,7 +129,7 @@ Tak. Aby usunąć klasyfikację z pliku, otwórz plik w aplikacji pakietu Office
 
 ## Czy można monitować użytkowników o uzasadnienie, dlaczego zmieniają poziom klasyfikacji?
 
-Tak. Aby się upewnić, że użytkownicy uzasadniają swoje zmiany klasyfikacji, w portalu Azure należy opcji **Użytkownik musi podać uzasadnienie obniżenia poziomu ważności** nadać wartość **Wł.**. W takim przypadku wykonywana czynność oraz stosowne uzasadnienie zostaną zapisane w ich lokalnym dzienniku zdarzeń systemu Windows: **Application**  >  **Microsoft Azure Information Protection**.
+Tak. Aby się upewnić, że użytkownicy uzasadniają swoje zmiany klasyfikacji, w witrynie Azure Portal należy opcji **Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę** nadać wartość **Włączone**. W takim przypadku wykonywana czynność oraz stosowne uzasadnienie zostaną zapisane w ich lokalnym dzienniku zdarzeń systemu Windows: **Application**  >  **Microsoft Azure Information Protection**.
 
 ## Jak automatycznie chronić zawartość po jej zakwalifikowaniu?
 
@@ -187,6 +187,6 @@ Następnie odwiedź naszą witrynę [Yammer](https://www.yammer.com/askipteam/#/
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

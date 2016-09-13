@@ -1,17 +1,17 @@
 ---
-title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 2 | Azure Rights Management"
+title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 2 | Azure Information Protection"
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 
 ---
@@ -37,7 +37,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Wewnętrzne**, **Poufne** i **Tajne**. Przeczytaj etykietkę narzędzia każdej z nich, aby zrozumieć sposób korzystania z etykiet. Należy pamiętać, że etykieta **Tajne** zawiera dwie etykiety podrzędne: **Wszyscy pracownicy** i **Moja grupa**, które stanowią przykład klasyfikacji z podkategoriami.
 
-    - Z ustawieniami domyślnymi etykiety **Wewnętrzne**, **Poufne** i **Tajne** mają skonfigurowane oznaczenia wizualne (takie jak stopka, nagłówek i znak wodny), lecz żadna z tych etykiet nie ma ustawionej ochrony. Ponadto te trzy ustawienia globalne nie są ustawione, tak więc nie jest wymagane, aby dokumenty i wiadomości e-mail miały etykietę, brak jest etykiety domyślnej, a użytkownicy nie muszą uzasadniać obniżenia poziomu ważności.
+    - Z ustawieniami domyślnymi etykiety **Wewnętrzne**, **Poufne** i **Tajne** mają skonfigurowane oznaczenia wizualne (takie jak stopka, nagłówek i znak wodny), lecz żadna z tych etykiet nie ma ustawionej ochrony. Ponadto te trzy ustawienia globalne nie są ustawione, tak więc nie jest wymagane, aby dokumenty i wiadomości e-mail miały etykietę, brak jest etykiety domyślnej, a użytkownicy nie muszą uzasadniać obniżenia poziomu klasyfikacji.
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy.png)
 
@@ -45,7 +45,7 @@ W naszym samouczku zmienimy kilka ustawień globalnych, aby zobaczyć, jak dzia�
 
 -  **Wybierz etykietę domyślną**: ustaw tę wartość na **Wewnętrzne**.
 
-- **Użytkownik musi podać uzasadnienie obniżenia poziomu ważności**: ustaw tę wartość na **Wł.**.
+- **Użytkownik musi podać uzasadnienie, aby ustawić niższy etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**: ustaw tę wartość na **Włączone**.
 
 Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
@@ -97,6 +97,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

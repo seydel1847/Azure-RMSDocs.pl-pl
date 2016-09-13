@@ -1,5 +1,5 @@
 ---
-title: "Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection | Azure Rights Management"
+title: "Jak zmienić lub dostosować istniejącą etykietę dla usługi Azure Information Protection | Azure Information Protection"
 description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz zmienić lub dostosować, konfigurując je w zasadach usługi Azure Information Protection."
 manager: mbaldwin
 ms.date: 08/10/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: dffc6608c9dba918dc26e40537c960bf554896d8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
 
 
 ---
@@ -52,6 +52,6 @@ Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustaw
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
