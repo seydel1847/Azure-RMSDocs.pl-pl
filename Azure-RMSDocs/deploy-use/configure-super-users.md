@@ -1,9 +1,9 @@
 ---
 title: "Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych | Azure RMS"
-description: "Funkcja superużytkowników usługi Microsoft Azure RMS zapewnia, że upoważnione osoby i usługi mogą zawsze odczytać i sprawdzić dane, które w organizacji chroni usługa Azure RMS. W razie potrzeby mogą też usunąć lub zmienić uprzednio zastosowaną ochronę. Superużytkownik ma zawsze pełne prawa właściciela wobec wszystkich licencji użytkowania przyznanych przez dzierżawę usługi RMS w organizacji. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji."
+description: "Uzyskaj informacje o funkcji superużytkowników usług Microsoft Azure RMS (Azure RMS) i zaimplementuj ją. Funkcja ta zapewnia, że upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane, które w organizacji chronią usługi Azure RMS. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ac0d2c991bdd13c31c46a9579ac1a6d2150557b6
 
 
 ---

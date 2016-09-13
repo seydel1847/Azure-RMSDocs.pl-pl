@@ -1,9 +1,9 @@
 ---
 title: "Pobieranie i instalowanie aplikacji do udostępniania usługi Rights Management | Azure RMS"
-description: "Aby zainstalować aplikację RMS sharing, nie trzeba być administratorem lokalnym. Jeśli nim nie jesteś i korzystasz z pakietu Office 2010, obowiązują jednak pewne ograniczenia. Aby uzyskać więcej informacji, zobacz sekcję Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010 w dalszej części tej strony."
+description: "Instrukcje dotyczące interaktywnego instalowania aplikacji RMS sharing dla systemu Windows, dzięki czemu możliwe jest bezpieczne udostępnianie dokumentów innym osobom."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
+ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
+ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
 
 
 ---

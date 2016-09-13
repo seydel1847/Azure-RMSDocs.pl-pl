@@ -1,9 +1,9 @@
 ---
 title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure RMS"
-description: "Informacje zawarte w tym artykule umożliwiają zaplanowanie użycia klucza dzierżawy usługi Rights Management (RMS) dla usługi Azure RMS oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
+description: "Informacje ułatwiające zaplanowanie użycia klucza dzierżawy usługi Rights Management (RMS) dla usług Azure RMS oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
+ms.sourcegitcommit: eec7cc8b20435df11d7b8f89c4b9e9d0f039dc55
+ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
 
 
 ---
@@ -64,7 +64,7 @@ Drugi diagram przedstawia dodatkowe kroki wymagane w przypadku, gdy za zarządza
 
 ![Cykl życia klucza dzierżawy usługi Azure RMS w przypadku zarządzania kluczem przez użytkownika (konfiguracja BYOK)](../media/RMS_BYOK_onprem4.png)
 
-Jeśli zdecydujesz się powierzyć firmie Microsoft zarządzanie kluczem dzierżawy, w celu wygenerowania klucza nie są wymagane żadne dalsze działania — można przejść bezpośrednio do sekcji [Następne kroki](plan-implement-tenant-key.md#next-steps).
+Jeśli zdecydujesz się powierzyć firmie Microsoft zarządzanie kluczem dzierżawy, w celu wygenerowania klucza nie są wymagane żadne dalsze działania — można przejść bezpośrednio do sekcji [Następne kroki](plan-implement-tenant-key.md#next-steps).  
 
 Jeśli użytkownik zdecyduje się samodzielnie zarządzać kluczem dzierżawy, powinien przeczytać poniższe sekcje, aby uzyskać więcej informacji.
 
@@ -74,7 +74,7 @@ Użyj zawartych w tej sekcji informacji oraz procedur, aby wygenerować klucz dz
 
 
 > [!IMPORTANT]
-> Jeśli używasz już usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (usługa została aktywowana) i masz użytkowników, którzy korzystają z pakietu Office 2010, przed rozpoczęciem realizacji tych procedur [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support). W zależności od scenariusza i wymagań może być możliwe dalsze używanie funkcji BYOK, mogą jednak mieć zastosowanie wybrane ograniczenia lub może zajść potrzeba wykonania dodatkowych kroków.
+> Jeśli rozpoczęto używanie usług Azure RMS z kluczem dzierżawy, który jest zarządzany przez firmę Microsoft, a teraz chcesz samodzielnie zarządzać kluczem dzierżawy (przejście do rozwiązania BYOK), wcześniej zabezpieczone dokumenty i wiadomości będą nadal dostępne przy użyciu zarchiwizowanego klucza. Jeśli jednak istnieją użytkownicy korzystający z pakietu Office 2010, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) przed uruchomieniem tych procedur. W przypadku tych komputerów konieczne będzie wykonanie dodatkowych czynności konfiguracyjnych.
 > 
 > [Skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) także wtedy, gdy w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
 
@@ -136,6 +136,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

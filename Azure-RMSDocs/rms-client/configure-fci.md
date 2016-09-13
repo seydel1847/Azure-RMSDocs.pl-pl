@@ -1,9 +1,9 @@
 ---
 title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server | Azure RMS"
-description: "Ten artykuł zawiera skrypt umożliwiający użycie klienta Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI), a także odpowiednie instrukcje."
+description: "Instrukcje dotyczące używania klienta usługi Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI)."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
+ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
+ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
 
 ---
@@ -126,7 +126,7 @@ Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasy
 
     Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) w bibliotece dokumentacji programu PowerShell.
 
-4.  Zapisz plik lokalnie na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików. Na przykład zapisz plik w katalogu **C:\RMS-Protection**. Zabezpiecz ten plik, używając uprawnień NTFS, aby nieautoryzowani użytkownicy nie mogli go zmodyfikować.
+4.  Zapisz plik lokalnie na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików. Na przykład zapisz plik w katalogu **C:\RMS-Protection**. Jeśli używasz innej ścieżki lub nazwy folderu, wybierz ścieżkę i folder, których nazwy nie zawierają spacji. Zabezpiecz ten plik, używając uprawnień NTFS, aby nieautoryzowani użytkownicy nie mogli go zmodyfikować.
 
 Teraz możesz rozpocząć konfigurowanie Menedżera zasobów serwera plików.
 
@@ -302,6 +302,6 @@ Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzys
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

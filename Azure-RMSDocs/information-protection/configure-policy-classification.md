@@ -2,15 +2,15 @@
 title: "Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection | Azure Rights Management"
 description: "W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
+ms.sourcegitcommit: 87069b73e5f8959955b9967070bd3bcb5e7dc196
+ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
 
 
 ---
@@ -27,7 +27,7 @@ W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypis
  
 - Zalecana klasyfikacja ma zastosowanie do programów Word, Excel i PowerPoint, gdy zapisywane są pliki.
 
-Gdy konfigurujesz warunki, możesz użyć wstępnie zdefiniowanych wzorców, takich jak numer karty kredytowej lub numer ubezpieczenia społecznego w USA. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Aby uzyskać więcej informacji o warunkach, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
+Gdy konfigurujesz warunki, możesz użyć wstępnie zdefiniowanych wzorców, takich jak numer karty kredytowej lub numer ubezpieczenia społecznego w USA. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
 
 W jaki sposób ocenia się wiele warunków, jeśli są zastosowane wobec więcej niż jednej etykiety:
 
@@ -224,6 +224,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

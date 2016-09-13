@@ -1,6 +1,6 @@
 ---
 title: "Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management | Azure RMS"
-description: "Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure."
+description: "Informacje dotyczące usług RMS dla użytkowników indywidualnych, czyli bezpłatnej subskrypcji samoobsługowej przeznaczonej dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2016
@@ -12,8 +12,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 >*Dotyczy: Azure Rights Management*
 
-Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure.
+Usługi RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management (Azure RMS), ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure.
 
 Tacy użytkownicy mogą bezpłatnie utworzyć konto służbowe w celu korzystania z usługi Azure RMS, a następnie pobrać i zainstalować aplikację do udostępniania usługi Rights Management. Dzięki temu zyskają oni możliwość uwierzytelnienia się, aby potwierdzić, że są uprawnieni do otrzymania chronionych plików i odczytania ich na komputerze lub urządzeniu przenośnym.
 

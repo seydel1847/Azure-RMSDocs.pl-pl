@@ -1,9 +1,9 @@
 ---
 title: "Wdrażanie łącznika usługi Azure Rights Management | Azure RMS"
-description: "Te informacje można wykorzystać do lepszego poznania łącznika usługi Azure Rights Management (RMS) i sposobów używania go w celu zapewnienia ochrony informacji w istniejących wdrożeniach lokalnych korzystających z programu Microsoft Exchange Server, Microsoft SharePoint Server lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) programu File Server Resource Manager."
+description: "Instrukcje dotyczące wdrażania łącznika usługi Azure Rights Management (RMS), który służy do zapewnienia ochrony informacji w istniejących wdrożeniach lokalnych korzystających z programu Microsoft Exchange Server, Microsoft SharePoint Server lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 7569a53f035e3333ee7ee00cb83b83b3126a6eb1
 
 
 ---
@@ -22,21 +22,23 @@ ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 >*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
 
-Te informacje można wykorzystać do lepszego poznania łącznika usługi Azure Rights Management (RMS) i sposobów używania go w celu zapewnienia ochrony informacji w istniejących wdrożeniach lokalnych korzystających z programu Microsoft Exchange Server, Microsoft SharePoint Server lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) programu File Server Resource Manager.
+Użyj tych informacji i instrukcji, aby wdrożyć łącznik usługi Azure Rights Management (RMS). Ten łącznik służy do zapewnienia ochrony danych w istniejących wdrożeniach lokalnych korzystających z programu Microsoft Exchange Server, SharePoint Server lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure).
 
 > [!TIP]
 > Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w sekcji [Automatyczna ochrona plików na serwerach plików z systemem Windows Server i funkcją infrastruktury klasyfikacji plików](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) w artykule [Usługa Azure RMS w działaniu](../understand-explore/what-admins-users-see.md).
 
 ## Łącznik usługi Microsoft Rights Management — omówienie
-Łącznik usługi Microsoft Rights Management (RMS) pozwala szybko włączyć na istniejących serwerach lokalnych funkcjonalność zarządzania prawami do informacji (IRM, Information Rights Management) za pomocą opartej na chmurze usługi Microsoft Rights Management (usługa Azure RMS). Dzięki tej funkcji dział IT i użytkownicy mogą łatwo chronić dokumenty i obrazy zarówno wewnątrz organizacji, jak i poza nią, bez konieczności instalowania dodatkowej infrastruktury lub ustanawiania relacji zaufania z innymi organizacjami. Można użyć tego łącznika nawet w przypadku, gdy niektórzy użytkownicy są podłączeni do usług online w scenariuszu hybrydowym. Na przykład skrzynki pocztowe niektórych użytkowników korzystają z usługi Exchange Online, podczas gdy skrzynki pocztowe innych użytkowników korzystają z programu Exchange Server. Po zainstalowaniu łącznika usługi RMS wszyscy użytkownicy mogą chronić informacje oraz korzystać z wiadomości e-mail i załączników za pomocą usługi Azure RMS, podczas gdy ochrona informacji współpracuje płynnie z dwiema konfiguracjami wdrożenia.
+Łącznik usługi Microsoft Rights Management (RMS) pozwala szybko włączyć na istniejących serwerach lokalnych funkcjonalność zarządzania prawami do informacji (IRM, Information Rights Management) za pomocą opartej na chmurze usługi Microsoft Rights Management (usługa Azure RMS). Dzięki tej funkcji dział IT i użytkownicy mogą łatwo chronić dokumenty i obrazy zarówno wewnątrz organizacji, jak i poza nią, bez konieczności instalowania dodatkowej infrastruktury lub ustanawiania relacji zaufania z innymi organizacjami. 
+
+Można użyć tego łącznika nawet w przypadku, gdy niektórzy użytkownicy są podłączeni do usług online w scenariuszu hybrydowym. Na przykład skrzynki pocztowe niektórych użytkowników korzystają z usługi Exchange Online, podczas gdy skrzynki pocztowe innych użytkowników korzystają z programu Exchange Server. Po zainstalowaniu łącznika usługi RMS wszyscy użytkownicy mogą chronić informacje oraz korzystać z wiadomości e-mail i załączników za pomocą usługi Azure RMS, podczas gdy ochrona informacji współpracuje płynnie z dwiema konfiguracjami wdrożenia.
 
 Łącznik usług RMS jest niemal niepozostawiającą śladów usługą instalowaną lokalnie na serwerach z systemem Windows Server 2012 R2, Windows Server 2012 lub Windows Server 2008 R2. Poza uruchamianiem łącznika na komputerach fizycznych można go również uruchomić na maszynach wirtualnych, w tym na maszynach wirtualnych Azure IaaS Po zainstalowaniu i skonfigurowaniu łącznik działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą w chmurze.
 
-Jeśli zarządzasz kluczem dzierżawy dla usługi Azure RMS (scenariusz z użyciem własnego klucza — BYOK), łącznik usługi RMS i serwery lokalne, które go używają, nie uzyskują dostępu do modułu HSM, zawierającego klucz dzierżawy. Jest to spowodowane tym, że wszystkie operacje kryptograficzne, które używają klucza dzierżawy, są wykonywane w ramach usługi Azure RMS, a nie lokalnie.
+Jeśli zarządzasz własnym kluczem dzierżawy dla usług Azure RMS (scenariusz z użyciem własnego klucza — BYOK), łącznik usług RMS i serwery lokalne, które go używają, nie uzyskują dostępu do modułu HSM zawierającego Twój klucz dzierżawy. Jest to spowodowane tym, że wszystkie operacje kryptograficzne, które używają klucza dzierżawy, są wykonywane w ramach usługi Azure RMS, a nie lokalnie.
 
 ![Architektura łącznika usługi RMS — omówienie](../media/RMS_connector.png)
 
-Łącznik usługi RMS obsługuje następujące serwery lokalne: Exchange Server, SharePoint Server i serwery plików działające pod kontrolą systemu operacyjnego Windows Server i używające funkcji infrastruktury klasyfikacji plików do klasyfikowania oraz stosowania zasad do dokumentów pakietu Office w folderze. Aby chronić wszystkie typy plików za pomocą funkcji klasyfikacji plików, zamiast łącznika usługi RMS należy używać [poleceń ochrony cmdlet usługi RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+Łącznik usługi RMS obsługuje następujące serwery lokalne: Exchange Server, SharePoint Server i serwery plików działające pod kontrolą systemu operacyjnego Windows Server i używające funkcji infrastruktury klasyfikacji plików do klasyfikowania oraz stosowania zasad do dokumentów pakietu Office w folderze. Aby chronić wszystkie typy plików za pomocą infrastruktury klasyfikacji plików, zamiast łącznika usług RMS należy używać [poleceń ochrony cmdlet usług RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
 
 > [!NOTE]
 > Obsługiwane wersje tych serwerów lokalnych można znaleźć w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](..\get-started\requirements-servers.md).

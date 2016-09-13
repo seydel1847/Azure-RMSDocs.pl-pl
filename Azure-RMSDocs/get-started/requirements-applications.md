@@ -1,9 +1,9 @@
 ---
 title: "Wymagania dotyczące usługi Azure RMS: aplikacje | Azure RMS"
-description: "Skorzystaj z poniższej tabeli, aby zidentyfikować aplikacje, które w sposób natywny obsługują usługę Azure RMS, co oznacza, że usługa RMS została ściśle zintegrowana z tymi aplikacjami za pomocą interfejsów API usługi RMS i obsługuje ograniczenia użycia. Te aplikacje są również znane jako aplikacje obsługujące usługę RMS."
+description: "Poniższe informacje pozwalają zidentyfikować aplikacje, które w sposób natywny obsługują usługi Azure RMS, co oznacza, że usługi RMS zostały ściśle zintegrowane z tymi aplikacjami za pomocą interfejsów API usług RMS i obsługują ograniczenia użycia."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/19/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d3408f954381978287852dd74a38c5903f583dda
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 14eec6f0ad9c1b9abaeff1c70cfbcb66011397a0
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Przewodnik administratora aplikacji do udostępniania usługi Rights Management | Usługa Azure RMS"
-description: "Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management lub Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows."
+description: "Instrukcje i informacje dla administratorów sieci przedsiębiorstwa odpowiedzialnych za wdrażanie aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management w systemie Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
+ms.sourcegitcommit: 575d52efb788956b0a711e908a730b677e1f7f9c
+ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
 
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-Aplikacja do udostępniania usługi RMS najbardziej nadaje się do współpracy z usługą Azure RMS, ponieważ konfiguracja wdrożenia obsługuje wysyłanie chronionych załączników do użytkowników w innej organizacji, a także takie opcje jak powiadomienia e-mail i śledzenie dokumentów oraz odwoływanie dostępu do nich.  Z pewnymi ograniczeniami współdziała również z lokalną wersją usług AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure RMS i AD RMS można znaleźć w artykule [Porównanie usług Azure Rights Management i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure RMS, zobacz [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+Aplikacja do udostępniania usługi RMS najbardziej nadaje się do współpracy z usługą Azure RMS, ponieważ konfiguracja wdrożenia obsługuje wysyłanie chronionych załączników do użytkowników w innej organizacji, a także takie opcje jak powiadomienia e-mail i śledzenie dokumentów oraz odwoływanie dostępu do nich. Z pewnymi ograniczeniami współdziała również z lokalną wersją usług AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure RMS i AD RMS można znaleźć w artykule [Porównanie usług Azure Rights Management i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure RMS, zobacz [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 Aby zapoznać się z przeglądem technicznym aplikacji usługi Rights Management, uzyskać informacje o natywnym i ogólnym poziomie ochrony, obsługiwanych typach plików i rozszerzeniach nazw plików oraz sposobach zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide-technical.md). 
 
@@ -139,7 +139,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
     setup.exe /s /configureO2010Admin
     ```
 
-2.  Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing, użytkownicy muszą uruchomić następujące polecenie (podniesione uprawnienia nie są konieczne): Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) lub dodając polecenie do skryptu logowania każdego użytkownika:
+2.  Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing, użytkownicy muszą uruchomić następujące polecenia (podniesione uprawnienia nie są konieczne). Można to osiągnąć różnymi metodami, w tym prosząc użytkowników o uruchomienie polecenia (na przykład przez kliknięcie linku w wiadomości e-mail lub w portalu pomocy technicznej) albo dodając polecenie do skryptu logowania każdego użytkownika:
 
     -   W 64-bitowym systemie Windows 10, Windows 8.1 i Windows 8:
 
@@ -155,9 +155,16 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
     -   W 64-bitowym systemie Windows 7:
 
-        ```
-        x64\win7\aadrmpep.exe /configureO2010
-        ```
+            pushd x64\win7
+            aadrmpep.exe /configureO2010
+            popd
+
+    -   W 32-bitowym systemie Windows 7:
+
+            pushd x86\win7
+            aadrmpep.exe /configureO2010
+            popd
+
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzanie, czy instalacja przebiegła pomyślnie](#verifying-installation-success) w tym artykule.
 
@@ -395,6 +402,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

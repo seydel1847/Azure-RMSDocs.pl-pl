@@ -1,6 +1,6 @@
 ---
 title: "Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych | Azure RMS"
-description: "Jeśli nie chcesz przekształcać subskrypcji usługi RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną, możesz nadal kontrolować konta użytkowników w katalogu Azure utworzonym dla organizacji przy użyciu następujących metod."
+description: "Sposób kontrolowania kont użytkowników w usłudze Azure Active Directory, jeśli nie chcesz przekształcać subskrypcji usług RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2016
@@ -12,8 +12,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a900622fcce4a0a1431f47647709584e404a7f8c
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: eb86c9e4f83fcf42599145b10ad8f021e40c208f
 
 
 ---

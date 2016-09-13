@@ -1,9 +1,9 @@
 ---
 title: "Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management | Azure RMS"
-description: "Informacje zawarte w tym temacie pozwalają zrozumieć sposób korzystania z funkcji rejestrowania użycia usługi Azure Rights Management (Azure RMS). Usługa Azure Rights Management może rejestrować wszystkie żądania obsługiwane dla danej organizacji, w tym żądania od użytkowników, akcje wykonywane przez administratorów usługi Rights Management w organizacji oraz akcje wykonywane przez operatorów firmy Microsoft w celu obsługi wdrożenia usługi Azure Rights Management."
+description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrowania użycia za pomocą usługi Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: c1727f1a5d6747977da7113b6dc0ac37ebefe386
 
 
 ---

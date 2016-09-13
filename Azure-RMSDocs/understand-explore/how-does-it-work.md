@@ -1,9 +1,9 @@
 ---
 title: "Jak działa usługa Azure RMS | Azure RMS"
-description: "Istotnym aspektem działania usługi Azure RMS jest fakt, że w ramach procesu ochrony informacji usługa Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług."
+description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i kontrolek kryptograficznych używanych przez tę usługę oraz diagramy krok po kroku dotyczące sposobu działania tego procesu."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 5fa410e2c2b84a3626cb06a85dc2511b17e085ae
 
 
 ---
