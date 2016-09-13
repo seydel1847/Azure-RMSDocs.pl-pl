@@ -3,7 +3,7 @@ title: "Aplikacje i usługi pakietu Office | Azure RMS"
 description: "Sposób, w jaki aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, PowerPoint i Outlook) oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą używać usługi Microsoft Azure Rights Management, aby chronić dane organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 76200a27b31bc9a7afaea4ab6b2083beb3c85256
+ms.sourcegitcommit: f0871436caef79187349d700d190564b08cc9e46
+ms.openlocfilehash: 1e1a52e637671d857fac22c51a635e726fa99b01
 
 
 ---
@@ -61,7 +61,6 @@ W przypadku korzystania z programu SharePoint Server można użyć funkcji ochro
 > 
 > -   Nie można używać domyślnych lub niestandardowych szablonów zarządzanych w klasycznym portalu Azure.
 > -   Chronione pliki PDF z rozszerzeniem nazwy pliku PPDF nie są obsługiwane. Pliki z rozszerzeniem nazwy pliku PDF, które są natywnie chronione przez usługę RMS, są obsługiwane w przypadku używania czytnika plików PDF z natywną obsługą usługi RMS.
-> -   Pakiet Office dla urządzeń przenośnych nie obsługuje jeszcze usługi RMS, dlatego na tych urządzeniach należy używać przeglądarki do wyświetlania plików chronionych za pomocą usługi RMS. Te pliki mają właściwość tylko do odczytu.
 
 Zastosowanie ograniczeń dotyczących użycia i szyfrowania danych przez usługę Azure RMS następuje podczas pobierania dokumentów z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
@@ -72,6 +71,6 @@ Więcej informacji o korzystaniu z usługi Azure RMS z programem SharePoint moż
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

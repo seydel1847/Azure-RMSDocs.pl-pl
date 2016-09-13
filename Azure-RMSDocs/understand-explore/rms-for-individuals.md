@@ -12,8 +12,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 15be32e029637321bf8e4f7c1a53f918efda7f23
 
 
 ---
@@ -29,7 +29,7 @@ Tacy użytkownicy mogą bezpłatnie utworzyć konto służbowe w celu korzystani
 Za pomocą aplikacji do udostępniania usługi Rights Management przeznaczonej dla komputerów z systemem Windows, użytkownicy mogą również korzystać z ochrony miejscowej plików oraz wysyłać chronione pliki pocztą e-mail do osób ze swojej organizacji lub spoza niej. Jeśli odbiorcy tych wiadomości e-mail również nie mają kont użytkowników platformy Azure, mogą oni także utworzyć konta usługi RMS dla użytkowników indywidualnych, aby przeczytać załączniki dołączone do chronionych wiadomości e-mail.
 
 > [!IMPORTANT]
-> Dzięki bezpłatnej subskrypcji upoważnione osoby będą zawsze mogły odczytać chronione pliki. Obecnie bezpłatna subskrypcja umożliwia również zabezpieczanie dokumentów i wysyłanie chronionych wiadomości e-mail, ale możliwość tworzenia nowej, chronionej zawartości ma charakter próbny i może zostać usunięta w przyszłości. Aby uzyskać więcej informacji i zapoznać się ze zmianami dotyczącymi używania usługi RMS dla użytkowników indywidualnych w celu ochrony zawartości, zobacz [Microsoft Rights Management Terms of Service](https://portal.aadrm.com/Legal/Service) (Warunki użytkowania usługi Microsoft Rights Management).
+> Dzięki bezpłatnej subskrypcji upoważnione osoby będą zawsze mogły odczytać chronione pliki. Obecnie bezpłatna subskrypcja umożliwia również zabezpieczanie dokumentów i wysyłanie chronionych wiadomości e-mail, ale możliwość tworzenia nowej, chronionej zawartości ma charakter próbny i może zostać usunięta w przyszłości. 
 
 Aby uzyskać więcej informacji dotyczących ochrony plików przy użyciu bezpłatnej aplikacji do udostępniania usługi Rights Management, zobacz [Przewodnik po aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md).
 
@@ -41,6 +41,6 @@ Aby uzyskać szczegółowe instrukcje oraz zapoznać się z opisem technicznym p
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
