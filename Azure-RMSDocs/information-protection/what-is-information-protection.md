@@ -1,17 +1,17 @@
 ---
-title: Co to jest Azure Information Protection? | Azure Rights Management
-description: "Omówienie usługi Azure Information Protection (dostępnej w wersji zapoznawczej)"
+title: Co to jest Azure Information Protection? | Azure Information Protection
+description: "Omówienie usługi Azure Information Protection (dostępnej w wersji zapoznawczej)."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 95f6467b5181184cf0bb402a6ad450c3a1780a52
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 3152ef095d39dab4cd2c11594b8d01dffe536ecc
 
 
 ---
@@ -44,6 +44,6 @@ Użytkownicy końcowi mogą łatwo zintegrować usługę Azure Information Prote
 Wprowadzenie do usługi Azure Information Protection w czterech prostych krokach z naszym [Samouczkiem Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

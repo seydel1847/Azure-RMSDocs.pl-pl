@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi Azure Rights Management | Az
 description: "Niektóre często zadawane pytania dotyczące usługi Microsoft Azure Rights Management, znanej również jako Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -121,7 +121,7 @@ Początkowo usługa Azure RMS nie obsługiwała migracji z lokalnego wdrożenia 
 Aby uzyskać więcej informacji, zobacz [Migrowanie z usługi AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 ## Chcemy używać funkcji BYOK z usługą Azure RMS, ale dowiedzieliśmy się, że nie jest zgodna z usługą Exchange Online. Jaki jest zalecany sposób postępowania?
-To aktualne ograniczenie nie powinno opóźniać wdrożenia usługi Azure RMS. Użytkownikom usługi Exchange Online chcącym korzystać z funkcji generowania własnych kluczy (BYOK) zaleca się wdrożenie usługi Azure RMS w domyślnym trybie zarządzania kluczami, w którym firma Microsoft generuje klucze i nimi zarządza. Dzięki temu można od razu korzystać z ochrony ważnych plików i wiadomości e-mail z opcją późniejszego wprowadzenia funkcji BYOK (na przykład kiedy usługa Exchange Online będzie już obsługiwać funkcję BYOK).
+To aktualne ograniczenie nie powinno opóźniać wdrożenia usługi Azure RMS. Użytkownikom usługi Exchange Online chcącym korzystać z funkcji generowania własnych kluczy (BYOK) zaleca się wdrożenie usługi Azure RMS w domyślnym trybie zarządzania kluczami, w którym firma Microsoft generuje klucze i nimi zarządza. Dzięki temu można od razu korzystać z ochrony ważnych plików i wiadomości e-mail z opcją późniejszego wprowadzenia funkcji BYOK (na przykład kiedy usługa Exchange Online będzie już obsługiwać funkcję BYOK). Po wprowadzeniu funkcji BYOK wcześniej chronione dokumenty i wiadomości e-mail będą nadal dostępne przy użyciu zarchiwizowanego klucza.
 
 Jeśli jednak zasady firmy wymagają używania sprzętowego modułu zabezpieczeń (HSM) i w innym przypadku wdrożenie usługi Azure RMS będzie blokowane, jest możliwe wdrożenie usługi Azure RMS z funkcją BYOK już teraz, przy ograniczonej funkcjonalności usługi RMS w odniesieniu do programu Exchange. Więcej informacji zawiera temat [Cennik i ograniczenia dotyczące funkcji BYOK](../plan-design/byok-price-restrictions.md) w części [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
@@ -145,7 +145,7 @@ W przypadku płatnych subskrypcji obsługujących usługę Azure RMS (Office 365
 
 Bezpłatna subskrypcja obsługująca usługę Azure RMS (usługę RMS dla użytkowników indywidualnych) obsługuje korzystanie z zawartości chronionej za pomocą usługi Azure RMS. Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-## Gdzie można uzyskać informacje techniczne na temat bezpłatnej subskrypcji usługi Azure RMS (usługi RMS dla użytkowników indywidualnych) dotyczących na przykład sposobu działania, metody kontrolowania kont oraz domen, których nie można używać?
+## Gdzie można uzyskać informacje techniczne na temat bezpłatnej subskrypcji usługi Azure RMS (usługi RMS dla użytkowników indywidualnych) dotyczących na przykład sposobu działania tego procesu oraz sposobu kontrolowania przez administratora utworzonych kont?
 Odpowiedzi na te pytania można znaleźć w artykule [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md) i innych pokrewnych artykułach.
 
 ## Jak odzyskać dostęp do plików, które były chronione przez pracownika, który opuścił organizację?
@@ -223,6 +223,6 @@ Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

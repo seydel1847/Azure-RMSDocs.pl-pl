@@ -3,7 +3,7 @@ title: "Jak tworzyć konta usługi RMS dla użytkowników indywidualnych | Azure
 description: "Instrukcje dotyczące rejestrowania się w ramach tego bezpłatnego konta oraz informacje techniczne dotyczące sposobu działania tego procesu."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 89aa3a85eedadd091c5f0d596749bb6a631716c6
+ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
+ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
 
 
 ---
@@ -22,34 +22,30 @@ ms.openlocfilehash: 89aa3a85eedadd091c5f0d596749bb6a631716c6
 
 >*Dotyczy: Azure Rights Management*
 
-Aby utworzyć bezpłatne konto, użytkownicy wysyłają żądanie, przechodząc do [strony usługi Microsoft Rights Management](https://portal.aadrm.com/) i podając służbowy adres e-mail. 
-
-Najczęściej spotykaną metodą przekierowywania użytkowników na stronę tworzenia konta jest wysłanie do nich wiadomości e-mail z chronionym załącznikiem, który zawiera instrukcje dotyczące sposobu tworzenia konta. W odpowiedzi użytkownicy otrzymują wiadomość e-mail od firmy Microsoft i mogą zakończyć proces tworzenia konta, wprowadzając wymagane szczegóły. Następnie otrzymują oni ostatnią wiadomość e-mail z potwierdzeniem od firmy Microsoft. Wiadomość ta odsyła ich do strony, z której można pobrać aplikację do udostępniania dla różnych urządzeń i która zawiera link do podręcznika użytkownika.
+Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, przechodząc do [strony usługi Microsoft Azure Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) i podając swój służbowy adres e-mail. Najczęściej spotykaną metodą trafienia na stronę rejestracji jest odebranie wiadomości e-mail z chronionym załącznikiem, który zawiera instrukcje dotyczące sposobu tworzenia konta. W odpowiedzi otrzymasz wiadomość e-mail od firmy Microsoft i będziesz w stanie ukończyć proces rejestracji, wprowadzając szczegóły wymagane do utworzenia konta. Po zakończeniu tego procesu zobaczysz stronę, z której możesz pobrać aplikację do udostępniania dla różnych urządzeń oraz na której znajdziesz link do podręcznika użytkownika i link do bieżącej listy aplikacji, które natywnie obsługują usługę Rights Management. 
 
 ## Aby utworzyć konto usługi RMS dla użytkowników indywidualnych
 
-1.  Na komputerze z systemem Windows lub Mac przejdź do [strony usługi Microsoft Rights Management](https://portal.aadrm.com).
+1.  Jeśli używasz komputera z systemem Windows, komputera Mac lub urządzenia przenośnego, przejdź na [stronę usługi Microsoft Azure Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
 
 2.  Wpisz adres e-mail używany dla organizacji, taki jak **joannam@contoso.com** lub **p.michalski@fabrikam.com**.
 
     > [!IMPORTANT]
     > Osobiste konta e-mail nie są obsługiwane, dlatego nie należy wprowadzać konta Microsoft (wcześniej znanego jako konto usługi Microsoft Live ID) ani innego konta osobistego od usługodawcy internetowego, z którego można korzystać w domu.
 
-3.  Kliknij pozycję **Rozpocznij**.
+3.  Kliknij przycisk **Zarejestruj się**.
 
     Firma Microsoft użyje Twojego adresu e-mail w celu sprawdzenia, czy Twoja organizacja ma już [płatną subskrypcję obejmującą usługę Azure RMS](../get-started/requirements-subscriptions.md). Jeśli tak, nie potrzebujesz konta usługi RMS dla użytkowników indywidualnych. Nastąpi natychmiastowe zalogowanie, a proces samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych zostanie anulowany. Jeśli płatna subskrypcja usługi Azure RMS nie zostanie znaleziona, nastąpi przejście do następnego kroku.
 
-4.  Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Będzie to wiadomość od firmy Microsoft (DoNotReply@microsoft.com) zatytułowana **Microsoft RMS**.
+4.  Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 (support@email.microsoftonline.com) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Rights Management**.
 
-5.  Po otrzymaniu wiadomości e-mail kliknij link w obrębie instrukcji, aby ukończyć proces tworzenia konta.
+5.  Po otrzymaniu tej wiadomości e-mail kliknij pozycję **Tak, to ja**, aby zweryfikować swój adres e-mail i ukończyć proces rejestracji.
 
-6.  Link prowadzi do nowej strony **Microsoft Rights Management**, na której należy podać szczegóły swojego konta. Wpisz swoje imię i nazwisko, wprowadź i potwierdź wybrane hasło, wybierz swój kraj/region z listy rozwijanej (lub najbliższy, jeśli na liście nie ma Twojego kraju), a następnie kliknij pozycję **Utwórz**.
+6.  Zostanie teraz wyświetlona strona **Jeszcze coś**, na której trzeba będzie podać szczegóły konta. Wpisz swoje imię i nazwisko, podaj i potwierdź hasło, a następnie kliknij pozycję **Rozpocznij**.
 
-7.  Poczekaj na kolejną wiadomość e-mail od firmy Microsoft, która potwierdzi, że Twoje konto jest gotowe do użycia.
+7. Po utworzeniu konta zobaczysz stronę Microsoft Rights Management, z której będzie można pobrać i zainstalować aplikację do udostępniania lub na której będzie można kliknąć link [Więcej informacji](../rms-client/sharing-app-user-guide.md), aby przeczytać podręcznik użytkownika aplikacji do udostępniania.
 
-8.  Po otrzymaniu wiadomości e-mail kliknij link umożliwiający zalogowanie i zapoznaj się z instrukcjami dotyczącymi pobierania i instalowania aplikacji do udostępniania. Możesz również kliknąć link Pomoc, aby zapoznać się z podręcznikiem użytkownika aplikacji do udostępniania.
-
-Teraz konto zostało utworzone i możesz już chronić pliki oraz odczytywać pliki chronione przez innych. Po wyświetleniu monitu o zalogowanie się w celu włączenia ochrony plików lub odczytania chronionych plików wprowadź swój adres e-mail i hasło użyte podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
+Teraz konto zostało utworzone i możesz już chronić pliki oraz odczytywać pliki chronione przez innych. Po wyświetleniu monitu o zalogowanie się w celu włączenia ochrony plików lub odczytania chronionych plików wprowadź taki sam adres e-mail i hasło co użyte podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
 
 ## Omówienie techniczne procesu tworzenia konta
 Usługa RMS dla użytkowników indywidualnych korzysta z samoobsługowego procesu tworzenia konta, który jest również stosowany przez inne usługi używające technologii firmy Microsoft opartych na chmurze do uwierzytelniania użytkowników.
@@ -59,7 +55,7 @@ Oto co dzieje się w tle, gdy użytkownik tworzy konto usługi RMS dla użytkown
 1.  Gdy pierwszy użytkownik z organizacji wysyła żądanie dotyczące subskrypcji usługi RMS dla użytkowników indywidualnych, nazwa domeny podana w jego adresie e-mail jest sprawdzana pod kątem już istniejącego skojarzenia z dzierżawą platformy Azure. Jeśli dzierżawa nie istnieje, następuje automatyczne utworzenie nowej dzierżawy i katalogu platformy Azure dla organizacji z kontem pierwszego użytkownika. W odróżnieniu od płatnej subskrypcji platformy Azure pierwsze konto nie odpowiada administratorowi globalnemu, ale użytkownikowi standardowemu. Nowe konto używa adresu e-mail i hasła podanego przez użytkownika.
 
     > [!NOTE]
-    > Niektórych nazw domen nie można używać do tworzenia katalogu, a co za tym idzie — na potrzeby usługi RMS dla użytkowników indywidualnych. Listę zablokowanych domen można wyświetlić z pliku notacji obiektu JavaScript: [http://portal.aadrm.com/content/blocked_domains.json](http://portal.aadrm.com/content/blocked_domains.json).
+    > Niektórych nazw domen nie można używać do tworzenia katalogu, a co za tym idzie — na potrzeby usługi RMS dla użytkowników indywidualnych.
 
     W przypadku znalezienia istniejącej dzierżawy nastąpi sprawdzenie, czy ma ona już subskrypcję usługi Azure RMS. Jeśli subskrypcja nie zostanie znaleziona, można dodać bezpłatną subskrypcję usługi RMS dla użytkowników indywidualnych.
 
@@ -101,6 +97,6 @@ Zobacz [Metody kontrolowania przez administratorów kont utworzonych dla usług 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

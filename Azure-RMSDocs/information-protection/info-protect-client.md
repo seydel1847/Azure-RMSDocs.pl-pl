@@ -1,16 +1,16 @@
 ---
-title: "Instalowanie klienta usługi Azure Information Protection | Azure Rights Management"
-description: "Aby klasyfikować dokumenty i wiadomości e-mail przy użyciu usługi Azure Information Protection, musisz najpierw zainstalować klienta usługi Azure Information Protection. Ta instalacja dodaje pasek usługi Information Protection do aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook), który wyświetla etykiety klasyfikacji dla Twojej organizacji, a także nową grupę Ochrona na karcie Narzędzia główne (Word, Excel, PowerPoint), która zawiera przycisk o nazwie Chroń."
+title: "Instalowanie klienta usługi Azure Information Protection | Azure Information Protection"
+description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek usługi Information Protection do aplikacji pakietu Office, dzięki czemu można wybrać etykiety klasyfikacji dla dokumentów i wiadomości e-mail."
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 ---
@@ -34,7 +34,7 @@ Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacy
 
 ## Aby zainstalować klienta usługi Azure Information Protection ręcznie
 
-1. Po [pobraniu klienta](https://www.microsoft.com/en-us/download/details.aspx?id=53018) uruchom program **AZInfoProtection.exe** i postępuj zgodnie z monitami, aby zainstalować klienta. Ta instalacja wymaga lokalnych uprawnień administracyjnych.
+1. Po [pobraniu klienta](https://www.microsoft.com/en-us/download/details.aspx?id=53018) uruchom program **AzInfoProtection.exe** i postępuj zgodnie z monitami, aby zainstalować klienta. Ta instalacja wymaga lokalnych uprawnień administracyjnych.
 
     Wybierz opcję zainstalowania zasad demonstracyjnych, jeśli nie możesz nawiązać połączenia z usługą Office 365 lub Azure Active Directory, ale chcesz zobaczyć i wypróbować klienta usługi Azure Information Protection przy użyciu zasad lokalnych w celach demonstracyjnych. Gdy klient nawiąże połączenie z usługą Azure Information Protection, te zasady demonstracyjne zostaną zastąpione zasadami usługi Azure Information Protection obowiązującymi w organizacji. 
 
@@ -42,14 +42,21 @@ Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacy
 
 ## Aby zainstalować klienta usługi Azure Information Protection dla użytkowników
 
-- Możesz użyć skryptu i zautomatyzować instalację klienta Azure Information Protection, pakując program AZInfoProtection.exe i korzystając ze standardowych [opcji wiersza polecenia Instalatora Windows (msiexec)](https://technet.microsoft.com/library/cc759262(v=ws.10).aspx).
+- Możesz użyć skryptu i zautomatyzować instalację klienta Azure Information Protection, korzystając z opcji wiersza polecenia. Aby wyświetlić te opcje instalacji, uruchom polecenie `AzInfoProtection.exe /help`.
 
-    Przykładowo, jeśli spakowana utworzona wersja ma nazwę InfoProtect.msi i chcesz zainstalować klienta w trybie dyskretnym: `msiexec /qn InfoProtection.msi`
+    Na przykład, aby zainstalować klienta w trybie dyskretnym: `AzInfoProtection.exe /passive | quiet`
 
 
 ## Aby odinstalować klienta usługi Azure Information Protection
 
+Można użyć dowolnej z tych opcji:
+
 - Odinstaluj program za pomocą Panelu sterowania: kliknij kolejno pozycje **Microsoft Azure Information Protection** > **Odinstaluj**
+
+- Uruchom ponownie plik **AzInfoProtection.exe** i na stronie **Modyfikowanie ustawień** kliknij pozycję **Odinstaluj**. 
+
+- Uruchom `AzInfoProtection.exe /uninstall`
+
 
 ## Aby zweryfikować instalację lub stan połączenia albo zgłosić problem
 
@@ -88,6 +95,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
