@@ -2,15 +2,15 @@
 title: "Jak skonfigurować etykietę do zastosowania ochrony przez usługę Rights Management | Azure Information Protection"
 description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić przy użyciu usługi Rights Management, która korzysta z zasad szyfrowania, tożsamości oraz autoryzacji w celu zapobieżenia utracie danych. Ta ochrona jest stosowana, gdy skonfigurujesz etykietę do używania szablonu usługi Rights Management."
 manager: mbaldwin
-ms.date: 08/15/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
+ms.sourcegitcommit: fc390680918a08405e914a858c64bb723efa5580
+ms.openlocfilehash: ca1534801facc6273d481cc99f23ec8acd5341d1
 
 
 ---
@@ -47,9 +47,9 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
 
 ## Aby skonfigurować etykietę w celu zastosowania ochrony usługi Rights Management
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [portalu Azure](https://portal.azure.com) jako administrator globalny, dzięki czemu będzie można pobrać szablony usługi Azure Rights Management. Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator globalny, dzięki czemu będzie można pobrać szablony usługi Azure Rights Management. Następnie przejdź do bloku **Azure Information Protection**. 
 
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować w celu stosowania ochrony usługi Rights Management.
 
@@ -57,15 +57,22 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
     
     W większości przypadków wybierzesz usługę **Azure RMS**. Nie należy wybierać usługi AD RMS, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji, która czasami nazywana jest scenariuszem *zachowaj własny klucz* (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md).
     
-4. W przypadku wybrania usługi Azure RMS: dla opcji **Wybierz szablon usług RMS** kliknij pole listy rozwijanej i wybierz szablon lub opcję zarządzania prawami, której chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
+4. W przypadku wybrania usługi Azure RMS: dla opcji **Wybierz szablon usług RMS** kliknij pole rozwijane i wybierz pozycję [szablon](../deploy-use/configure-custom-templates.md) lub opcję zarządzania prawami, której chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
+    
+    Więcej informacji o opcjach:
+    
+    - Czy nowy szablon został utworzony po otwarciu bloku **Etykieta**? Jeśli tak, zamknij ten blok i wróć do kroku 2, aby nowo utworzony szablon został pobrany z platformy Azure i był dostępny do wyboru.
+    
+    - Należy pamiętać, że w przypadku wybrania **szablonu dla działu** lub skonfigurowania [kontrolek dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
+    
+        - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
+        
+    - W przypadku wybrania pozycji **Usuń ochronę**:
+        
+        - Użytkownicy muszą mieć uprawnienia do usuwania ochrony usługi Rights Management w celu zastosowania etykiety, która ma tę opcję. Ta opcja wymaga, aby użytkownicy posiadali [prawa użytkowania](../deploy-use/configure-usage-rights.md) **Eksportuj** (dla dokumentów pakietu Office) lub **Pełna kontrola**, aby byli właścicielami usługi Rights Management (automatycznie udziela prawa użytkowania Pełna kontrola) lub byli [administratorami usługi Azure Rights Management](../deploy-use/configure-super-users.md). Domyślne szablony usługi Rights Management nie obejmują praw użytkowania, które pozwalają użytkownikom na usuwanie ochrony. 
 
-    > [!NOTE] 
-    > Jeśli utworzysz nowy szablon po otworzeniu bloku **Etykieta**, zamknij ten blok i wróć do kroku 2, aby nowo utworzony szablon został pobrany z platformy Azure i był dostępny do wyboru.
-    
-    Należy pamiętać, że w przypadku wybrania szablonu dla działu lub skonfigurowania [kontrolek dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
-    
-    - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
-    
+            Jeśli użytkownicy nie mają uprawnień do usuwania ochrony usługi Rights Management i wybiorą etykietę z opcją **Usuń ochronę**, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
+
 5. W przypadku wybrania usługi AD RMS: podaj identyfikator GUID szablonu i adres URL licencjonowania klastra usługi AD RMS. [Więcej informacji](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
 6. Kliknij polecenie **Zapisz**.
@@ -78,6 +85,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

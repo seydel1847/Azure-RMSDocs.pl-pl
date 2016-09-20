@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: ba7acf835439d059874e0512997b2b591193f0c3
 
 
 ---
@@ -28,9 +28,9 @@ Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zas
 
 Aby skonfigurować zasady usługi Azure Information Protection w wersji zapoznawczej usługi Azure Information Protection:
 
-1. Zaloguj się do [portalu Azure](https://portal.azure.com).
+1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com).
 
-2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
+2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
 
     Zostanie wyświetlony blok **Azure Information Protection**, w którym możesz skonfigurować zasady usługi Azure Information Protection, z uwzględnieniem następujących elementów:
 
@@ -80,6 +80,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

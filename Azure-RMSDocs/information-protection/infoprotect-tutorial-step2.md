@@ -3,15 +3,15 @@ title: "Samouczek Szybki start dla usługi Azure Information Protection, krok 2 
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection dla swojej organizacji. Wystarczą 4 proste kroki, które powinny zająć mniej niż 15 minut."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
+ms.sourcegitcommit: ba0f05619e1d13e16b8d4f6d86231b89e9326726
+ms.openlocfilehash: 9dfbeb4c887c619d07b11be0da304ac4f4e7d4a9
 
 
 ---
@@ -24,14 +24,14 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 Usługa Azure Information Protection zawiera domyślną zasadę, której można użyć bez konfiguracji, ale chcemy się jej przyjrzeć i wprowadzić kilka zmian.
 
-1. Zaloguj się do [portalu Azure](https://portal.azure.com). Jeśli chcesz przetestować ochronę, a także klasyfikację i etykietowanie, zaloguj się jako administrator globalny, co umożliwi pobranie szablonów usługi Azure Rights Management.
+1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com). Jeśli chcesz przetestować ochronę, a także klasyfikację i etykietowanie, zaloguj się jako administrator globalny, co umożliwi pobranie szablonów usługi Azure Rights Management.
  
 2. W menu centralnym: kliknij pozycję **Nowy** > **Zabezpieczenia i tożsamość** > **Azure Information Protection (wersja zapoznawcza)** > **Utwórz**.
 
-    Spowoduje to utworzenie bloku **Azure Information Protection**, dzięki czemu przy następnym logowaniu do portalu będzie można wybrać usługę z listy centralnej **Przeglądaj**. 
+    Spowoduje to utworzenie bloku **Azure Information Protection**, dzięki czemu przy następnym logowaniu w witrynie portalu będzie można wybrać usługę z listy centralnej **Więcej usług**. 
 
     > [!TIP] 
-    > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania przy następnym zalogowaniu do portalu.
+    > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
 
 3.  Eksploruj główny blok **Azure Information Protection** przedstawiający domyślne zasady usługi Information Protection, które są tworzone automatycznie:
     
@@ -53,7 +53,7 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
 2. W bloku **Etykieta: Poufne** ukażą się ustawienia dostępne dla każdej etykiety. Wprowadź następujące zmiany:
 
-    a. Jeśli aktywowano usługę Azure Rights Managment: jeśli w sekcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** jest widoczne pole **Wybierz szablon usług RMS z**, zachowaj ustawienie domyślne **Azure RMS**. Następnie dla opcji **Wybierz szablon usług RMS** kliknij menu rozwijane i wybierz szablon domyślny **\<nazwa organizacji > Poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
+    a. Jeśli aktywowano usługę Azure Rights Managment: w sekcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** w polu **Wybierz szablon usług RMS z** zachowaj ustawienie domyślne **Azure RMS**. Następnie dla opcji **Wybierz szablon usług RMS** kliknij menu rozwijane i wybierz szablon domyślny **\<nazwa organizacji > Poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz. Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
     
     Jeśli usługa Azure Rights Management nie została aktywowana, nie można użyć tej opcji.
     
@@ -97,6 +97,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

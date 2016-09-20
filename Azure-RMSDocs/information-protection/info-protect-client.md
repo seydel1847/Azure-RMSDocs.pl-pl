@@ -2,15 +2,15 @@
 title: "Instalowanie klienta usługi Azure Information Protection | Azure Information Protection"
 description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek usługi Information Protection do aplikacji pakietu Office, dzięki czemu można wybrać etykiety klasyfikacji dla dokumentów i wiadomości e-mail."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -74,6 +74,15 @@ Można użyć dowolnej z tych opcji:
 
     - Link **Uruchom diagnostykę**: ta funkcja nie jest obecnie zaimplementowana.
 
+## Skróty klawiaturowe dla paska usługi Azure Information Protection
+
+Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą skrótów klawiaturowych, użyj następujących kombinacji klawiszy:
+
+- Naciśnij klawisze **Ctrl** + **Shift** + **~** 
+
+Następnie użyj klawisza Tab, aby wybrać etykiety i inne kontrolki na pasku (ikona **Ukryj etykiety** i ikona **Usuń etykiety**), a następnie naciśnij klawisz Enter, aby je wybrać.
+
+
 ## Lokalizacje plików
 
 Pliki klienta:   
@@ -95,6 +104,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

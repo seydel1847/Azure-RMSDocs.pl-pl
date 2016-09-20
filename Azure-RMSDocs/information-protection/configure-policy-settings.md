@@ -2,15 +2,15 @@
 title: "Konfigurowanie ustawień globalnych zasad usługi Azure Information Protection | Azure Information Protection"
 description: "Istnieją 3 ustawienia w zasadach usługi Azure Information Protection, które mają zastosowanie do wszystkich użytkowników i urządzeń."
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: d4e96321069b27ed832af3bfb6d995e0d3c5d450
 
 
 ---
@@ -28,9 +28,9 @@ Istnieją 3 ustawienia w zasadach usługi Azure Information Protection, które m
 
 Aby skonfigurować te ustawienia:
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** skonfiguruj następujące ustawienia globalne:
 
@@ -67,6 +67,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

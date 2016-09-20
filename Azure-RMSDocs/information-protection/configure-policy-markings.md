@@ -2,15 +2,15 @@
 title: "Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection | Azure Information Protection"
 description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny."
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 999a0937bf741514ae8ee5ef819d4ab901c3304b
 
 
 ---
@@ -39,9 +39,9 @@ Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
 
 Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiety.
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem oznaczeń wizualnych.
 
@@ -81,6 +81,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

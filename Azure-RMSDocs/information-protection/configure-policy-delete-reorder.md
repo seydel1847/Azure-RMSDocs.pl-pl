@@ -2,15 +2,15 @@
 title: "Jak usunąć etykietę dla usługi Azure Information Protection lub zmienić jej kolejność | Azure Information Protection"
 description: "Etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz usunąć lub zmienić ich kolejność, przeprowadzając konfigurację w zasadach usługi Azure Information Protection."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 14863f7fcd4df2e8baaddc7837649fa3efe59019
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 0283706733a61e2ccf88552b23ec67a7f755b8da
 
 
 ---
@@ -35,9 +35,9 @@ Kolejność etykiet określ w taki sposób, aby była ona logiczna na pasku usł
 
 Użyj poniższych instrukcji, aby wprowadzić te zmiany.
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** wykonaj jedną z następujących czynności, w zależności od tego, czy chcesz usunąć etykietę, wyłączyć ją, czy zmienić jej kolejność:
 
@@ -57,6 +57,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

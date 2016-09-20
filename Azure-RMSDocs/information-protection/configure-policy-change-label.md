@@ -2,15 +2,15 @@
 title: "Jak zmienić lub dostosować istniejącą etykietę dla usługi Azure Information Protection | Azure Information Protection"
 description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz zmienić lub dostosować, konfigurując je w zasadach usługi Azure Information Protection."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 2ee4f945307744678df8b842aab2be219f8ef582
 
 
 ---
@@ -28,9 +28,9 @@ Na przykład możesz zmienić nazwę, etykietkę narzędzia, kolor i kolejność
 Aby zmienić etykietę, użyj następujących instrukcji.
 
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** wybierz etykietę do zmiany, a następnie wprowadź zmiany w bloku **Etykieta** oraz wszelkich kolejnych blokach wedle potrzeb.
 
@@ -52,6 +52,6 @@ Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustaw
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi Azure Rights Management | Az
 description: "Niektóre często zadawane pytania dotyczące usługi Microsoft Azure Rights Management, znanej również jako Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
-ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
+ms.sourcegitcommit: 62b72d2debef3421fea4f0e70beed67e5364d7d3
+ms.openlocfilehash: 99b5e4ea74cd6f76a2409d89c3db5d8672b63055
 
 
 ---
@@ -165,37 +165,8 @@ Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowa
 Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
 ## Gdzie można znaleźć dodatkowe informacje na temat usługi Azure RMS, dotyczące na przykład kwestii prawnych, zgodności i umów SLA?
-Usługa Azure RMS obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure RMS, ale niedotyczących sposobu korzystania z usługi Azure RMS, sprawdź następujące zasoby:
 
-**Informacje prawne i ochrona prywatności:**
-
--   Informacje o umowie dotyczącej usług Microsoft Azure: [Umowa dotycząca usług Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
-
--   Informacje o ochronie prywatności w usługach Microsoft Azure: [Zasady zachowania poufności informacji usług Microsoft Azure](http://azure.microsoft.com/support/legal/privacy-statement/)
-
-**Zabezpieczenia, zgodność i inspekcja:**
-
-Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md). Ponadto:
-
--   Zewnętrzne certyfikaty usługi Azure RMS: [Centrum zaufania systemu Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
-
--   Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
-
-**Umowy dotyczące poziomu usług:**
-
--   Umowa dotycząca poziomu usług dla usługi Azure RMS, według wybranego regionu: [pobierz ze strony wyszukiwania licencjonowania produktów](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
-
-    - Na przykład kliknij pozycję **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)**, aby pobrać umowę dotyczącą poziomu usług dla Ameryki Północnej z marca 2016 r.
-
--   Umowa dotycząca poziomu usług dla usługi Azure Active Directory: [Umowy dotyczące poziomu usług](http://azure.microsoft.com/support/legal/sla/)
-
-**Dokumentacja:**
-
--   Witryna dokumentacji usługi Azure Active Directory: [Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
-
--   Biblioteka usługi Azure Active Directory: [Azure Active Directory](https://msdn.microsoft.com/library/azure/mt168838.aspx)
-
--   Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+Zobacz temat [Compliance and supporting information for Azure Rights Management](../understand-explore/compliance.md) (Zgodność i dodatkowe informacje na temat usługi Azure Rights Management).
 
 ## Jakie są najnowsze informacje na temat nowych funkcji klasyfikacji i etykietowania?
 
@@ -223,6 +194,6 @@ Ta strona zawierająca często zadawane pytania będzie regularnie aktualizowana
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

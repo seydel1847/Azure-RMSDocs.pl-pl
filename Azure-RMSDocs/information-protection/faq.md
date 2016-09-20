@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi Azure Information Protection
 description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
-ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 39334a5cc18f1b45eabd7cf5b4f9b891fb10a5e6
 
 
 ---
@@ -143,6 +143,10 @@ W razie potrzeby można utworzyć etykiety podrzędne, aby lepiej opisać podkat
 
 Chociaż obecnie można ustawić oznaczenia wizualne, ochronę i warunki na obu poziomach, przy korzystaniu z poziomów podrzędnych te ustawienia należy konfigurować tylko dla poziomów podrzędnych. W przypadku skonfigurowania tych samych ustawień na etykiecie nadrzędnej i jej etykiecie podrzędnej ustawienia na poziomie podrzędnym mają pierwszeństwo.
 
+## Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
+
+Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, załączniki te nie odziedziczą tej samej etykiety. Załączniki pozostaną bez etykiety lub zachowają oddzielnie przydzieloną etykietę. Jednak jeśli etykieta wiadomości e-mail zawiera ochronę, ochrona ta jest stosowana także do załączników.
+
 ## Jak rozwiązania DLP i inne aplikacje integrują się z usługą Azure Information Protection?
 
 Ponieważ usługa Azure Information Protection używa do klasyfikacji trwałych metadanych, w tym etykiety w postaci zwykłego tekstu, te informacje są odczytywane przez rozwiązania DLP i inne aplikacje. W plikach metadane te są przechowywane we właściwościach niestandardowych; w wiadomościach e-mail znajdują się one w nagłówkach.
@@ -187,6 +191,6 @@ Następnie odwiedź naszą witrynę [Yammer](https://www.yammer.com/askipteam/#/
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

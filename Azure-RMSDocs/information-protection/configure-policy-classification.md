@@ -2,15 +2,15 @@
 title: "Jak skonfigurować warunki automatycznej i zalecanej klasyfikacji dla usługi Azure Information Protection | Azure Information Protection"
 description: "W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 98e8efd574d7e9689da426028d26f528cd6042a4
 
 
 ---
@@ -48,9 +48,9 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 ## Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [Portalu Azure](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com), a następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij przycisk **Przeglądaj** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji.
 
@@ -224,6 +224,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
