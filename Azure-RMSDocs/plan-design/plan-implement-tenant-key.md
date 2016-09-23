@@ -3,7 +3,7 @@ title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Managemen
 description: "Informacje ułatwiające zaplanowanie użycia klucza dzierżawy usługi Rights Management (RMS) dla usług Azure RMS oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec7cc8b20435df11d7b8f89c4b9e9d0f039dc55
-ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 0e3e77073898e2ae9f84f555183fb6fcbc7d2d8a
 
 
 ---
@@ -96,7 +96,7 @@ Gdy klucz jest przesyłany do usługi Key Vault, otrzymuje identyfikator klucza 
 
 Zanim usługa Azure RMS będzie mogła użyć tego klucza, należy autoryzować usługę Azure RMS do używania kluczy znajdujących się w magazynie kluczy organizacji. Aby to zrobić, administrator usługi Azure Key Vault używa polecenia cmdlet programu PowerShell dla usługi Key Vault, [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx), i przydziela uprawnienia głównej nazwie usługi Azure RMS, **Microsoft.Azure.RMS**. Na przykład:
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 Teraz możesz przystąpić do konfigurowania usługi Azure RMS do użycia tego klucza jako klucza dzierżawy usługi Azure RMS w organizacji. Korzystając z poleceń cmdlet usługi Azure RMS, nawiąż połączenie z usługą Azure RMS i zaloguj się:
 
@@ -136,6 +136,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

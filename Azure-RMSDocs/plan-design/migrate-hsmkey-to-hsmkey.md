@@ -3,7 +3,7 @@ title: "Krok 2&colon; Migracja klucza chronionego przez moduł HSM do klucza chr
 description: "Instrukcje będące częścią ścieżki migracji z usług AD RMS do usługi Azure Rights Management, stosowane tylko wtedy, gdy klucz usług AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Rights Management z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 32cedc573aa6d14c4897642789c8e58b788279f2
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 539ad9db29f7795d3f56655a64f49532ef6ff6e8
 
 
 ---
@@ -55,7 +55,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
     
     Przykładowo, jeśli magazyn kluczy utworzony dla usługi Azure RMS ma nazwę contoso-byok-ky, a grupa zasobów ma nazwę contoso-byok-rg, uruchom następujące polecenie:
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 
 Teraz klucz HSM w usłudze Azure Key Vault jest już gotowy do użycia w usłudze Azure RMS, a Ty możesz importować dane konfiguracji usług AD RMS.
@@ -94,6 +94,6 @@ Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi RMS](migrate-from
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
