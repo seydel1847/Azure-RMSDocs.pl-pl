@@ -3,7 +3,7 @@ title: "Office 365&colon; konfiguracja dla klientów i usług online | Azure RMS
 description: "Informacje i instrukcje dla administratorów dotyczące konfigurowania usługi Office 365 do pracy z usługą Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
+ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
+ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
 
 
 ---
@@ -63,12 +63,12 @@ W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruch
 
 4.  Określ lokalizację klucza dzierżawy usługi Azure RMS na podstawie położenia organizacji, w której utworzono dzierżawę:
 
-    Ameryka Północna (i subskrypcje dla instytucji rządowych):
+    Dla Ameryki Północnej:
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
-    Europa:
+    Dla Europy:
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc"
@@ -82,6 +82,11 @@ W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruch
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc"
+    ```
+    Usługa Office 365 Government (chmura społecznościowa dla instytucji rządowych):
+
+    ```
+    Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 5.  Zaimportuj dane konfiguracji z usługi Azure RMS do usługi Exchange Online w formie zaufanej domeny publikacji (TPD). Dane te obejmują klucz dzierżawy i szablony usługi Azure RMS:
@@ -1105,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

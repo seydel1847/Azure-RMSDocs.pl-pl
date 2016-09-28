@@ -3,7 +3,7 @@ title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przeds
 description: "W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano usługę Azure Rights Management, aby umożliwić przedstawicielom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona przedstawicieli kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
+ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
+ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 
 ---
@@ -49,7 +49,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Występuje jedna z poniższych konfiguracji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Przepływ poczty lub reguły transportu](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### Aby skonfigurować szablon niestandardowy dla przedstawicieli kadry kierowniczej
 
@@ -132,6 +132,6 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

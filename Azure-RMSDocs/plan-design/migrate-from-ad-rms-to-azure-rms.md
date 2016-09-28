@@ -3,7 +3,7 @@ title: "Migrowanie z usług AD RMS do usługi Azure Rights Management | Azure RM
 description: "Instrukcje dotyczące migracji wdrożenia usługi Active Directory Rights Management (AD RMS) do usługi Azure Rights Management (Azure RMS). Po zakończeniu migracji użytkownicy będą nadal mieć dostęp do dokumentów i wiadomości e-mail, które organizacja chroniła za pomocą usług AD RMS. W przypadku nowo chronionej zawartości będzie używana usługa Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
+ms.sourcegitcommit: 5c20772240961bdd3052e55a19eaca21ef7da003
+ms.openlocfilehash: 01c107979265abf0d34060eccf09ca32c0086ab8
 
 
 ---
@@ -46,7 +46,7 @@ Przed rozpoczęciem migracji do usługi Azure RMS upewnij się, że wszystkie wy
         
     - Tryb kryptograficzny 2:
     
-        - Twoje serwery i klienci usługi AD RMS muszą działać w trybie kryptograficznym 2, zanim rozpoczniesz migrację do usługi Azure RMS. Aby uzyskać więcej informacji, zobacz [Tryby kryptograficzne usługi AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
+        - Twoje serwery i klienci usługi AD RMS muszą działać w trybie kryptograficznym 2, zanim rozpoczniesz migrację do usługi Azure RMS. Mimo że bieżący klucz certyfikatu licencjodawcy serwera (SLC) musi używać trybu kryptograficznego 2, poprzednie klucze skonfigurowane dla trybu kryptograficznego 1 są obsługiwane w usługach Azure RMS jako klucze zarchiwizowane. Aby uzyskać więcej informacji na temat trybów kryptograficznych i sposobu przejścia na tryb kryptograficzny 2, zobacz [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
         
     - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
     
@@ -184,6 +184,6 @@ Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwe
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

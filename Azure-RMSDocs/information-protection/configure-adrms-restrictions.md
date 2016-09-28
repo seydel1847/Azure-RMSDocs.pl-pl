@@ -2,15 +2,15 @@
 title: "Ograniczenia dotyczące rozwiązania HYOK | Azure Information Protection"
 description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
+ms.sourcegitcommit: 593ec90a781a41e3b93a4c31d22a3ca547b49bc7
+ms.openlocfilehash: faf3180ca290f1668233663099b924ff199524d9
 
 
 ---
@@ -43,6 +43,16 @@ W tym scenariuszu HYOK zasady praw i klucz prywatny organizacji, który chroni t
 > Tej konfiguracji należy używać tylko w razie konieczności i tylko dla dokumentów i wiadomości e-mail, które tego wymagają. Ochrona za pomocą usług AD RMS nie zapewnia wymienionych korzyści, które daje ochrona za pomocą usługi Azure RMS, a jej celem jest "nieprzezroczystość danych za wszelką cenę".
 
 Użytkownicy nie będą świadomi, że etykieta używa ochrony za pomocą usług AD RMS zamiast ochrony za pomocą usługi Azure RMS. Ze względu na ograniczenia wiążące się z ochroną w usługach AD RMS, musisz zapewnić jasne wskazówki dotyczące tego, kiedy użytkownicy powinni wybierać etykiety korzystające z ochrony usług AD RMS.
+
+## Ograniczenia
+
+Oprócz braku obsługi wymienionych korzyści, które można uzyskać, korzystając z ochrony przy użyciu usług Azure RMS, ochrona za pomocą usług AD RMS z usługą Azure Information Protection ma następujące ograniczenia:
+
+- Brak obsługi pakietu Office 2010 lub Office 2007.
+
+- Jeśli używasz również ochrony za pomocą usług Azure RMS: nie używaj opcji **Nie przesyłaj dalej** podczas konfigurowania etykiety dla ochrony za pomocą usług Azure RMS. Musisz również poinstruować użytkowników, aby nie wybierali ręcznie tej opcji w programie Outlook. 
+
+    W przypadku zastosowania opcji Nie przekazuj dalej przez etykietę lub ręcznie przez użytkowników ta opcja może zostać zastosowana przez wdrożenie usług AD RMS zamiast docelowej usługi Azure Rights Management. W tym scenariuszu osoby, którym wiadomości e-mail są udostępniane zewnętrznie, nie będą mogły otworzyć wiadomości e-mail, do których zastosowano opcję Nie przekazuj dalej.
 
 ## Wymagania dotyczące rozwiązania HYOK
 
@@ -94,6 +104,6 @@ Aby skonfigurować etykietę w celu zastosowania ochrony usług AD RMS, zobacz [
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
