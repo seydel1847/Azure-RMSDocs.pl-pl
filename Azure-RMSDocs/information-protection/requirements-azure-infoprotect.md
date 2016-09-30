@@ -1,46 +1,13 @@
 ---
-title: "Wymagania dotyczące usługi Azure Information Protection | Azure Information Protection"
-description: "Poniższe informacje pozwalają zidentyfikować wymagania wstępne, które są konieczne, aby ocenić wersję zapoznawczą usługi Azure Information Protection."
-author: cabailey
-manager: mbaldwin
-ms.date: 08/29/2016
-ms.topic: get-started-article
-ms.prod: 
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: aa4353e5-c5b0-47f6-a6f9-87d13e8f075f
-ms.reviewer: eymanor
-ms.suite: ems
+redirect_url: /information-protection/get-started/requirements-azure-rms
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: b9bb97e075e569e54e535c921c5d1db77200b20c
-
+ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
+ms.openlocfilehash: 0e977d6801bdb36d283e71ce5320c4832c76f830
 
 ---
 
-# Wymagania dotyczące usługi Azure Information Protection
-
->*Dotyczy: Azure Information Protection (wersja zapoznawcza)*
-
-**[Niniejsze informacje mają charakter wstępny i mogą ulec zmianom. ]**
-
-Aby ocenić wersję zapoznawczą usługi Azure Information Protection, upewnij się, że są spełnione następujące wymagania wstępne. 
-
-|Wymaganie|Więcej informacji|
-|---------------|--------------------|
-|Subskrypcja usługi Office 365, która zawiera Azure Rights Management|Na przykład subskrypcja usługi Office 365 E3, E4 lub E5.<br /><br />Aby uzyskać więcej informacji o dostępnych subskrypcjach oraz linki do bezpłatnych wersji próbnych, zobacz sekcję [Subskrypcja usługi Office 365](../get-started/requirements-subscriptions.md#office-365-subscription) w dokumentacji wymagań usługi Azure RMS.|
-|Katalog usługi Azure AD|Aby obsługiwać uwierzytelnianie użytkowników na potrzeby usługi RMS i Azure Information Protection, organizacja musi mieć katalog usługi Azure AD. Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), musisz również skonfigurować integrację katalogów.<br /><br />Usługa Multi-Factor Authentication (MFA) jest obsługiwana za pomocą usługi Azure RMS, jeśli masz wymagane oprogramowanie klienckie i prawidłowo skonfigurowaną infrastrukturę obsługującą usługę MFA.<br /><br />Aby uzyskać więcej informacji, zobacz [Katalog usługi Azure AD](../get-started/requirements-azure-ad.md), gdyż informacje dotyczące usługi Azure RMS mają zastosowanie również do usługi Azure Information Protection.|
-|Urządzenia klienckie|W tej wersji zapoznawczej obsługiwane są urządzenia klienta z następującymi systemami operacyjnymi:<br /><br />— Windows 10 (x86, x64)<br /><br />— Windows 8.1 (x86, x64)<br /><br />— Windows 8 (x86, x64)<br /><br />— Windows 7 z dodatkiem Service Pack 1 (x86, x64)<br /><br />Chronione dane mogą być używane na urządzeniach ze wszystkimi systemami (Windows, Mac, iOS, Android), obsługujących usługę Azure Rights Management. Aby uzyskać szczegółowe informacje o urządzeniach i obsługiwanych wersjach, zobacz [Wymagania dotyczące usługi Azure RMS: urządzenia klienckie, które obsługują usługę Azure RMS](../get-started/requirements-client-devices.md).|
-|Aplikacje|W wersji zapoznawczej i w wersji ogólnodostępnej (GA) usługa Azure Information Protection obsługuje etykietowanie i ochronę plików oraz wiadomości e-mail utworzonych przez aplikacje **Word**, **Excel**, **PowerPoint** i **Outlook** pochodzące z następujących pakietów Office:<br /><br />— Office Professional Plus 2016<br /><br />— Office Professional Plus 2013 z dodatkiem Service Pack 1<br /><br />— Office Professional Plus 2010<br /><br />Po udostępnieniu wersji ogólnodostępnej należy oczekiwać na ogłoszenie na blogu [Enterprise Mobility and Security](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) daty rozpoczęcia przez usługę Azure Information Protection obsługi dodatkowych typów plików, takich jak PDF, audio, wideo i pliki obrazów.|
-|Infrastruktura obsługująca łączność z Internetem i zależnymi usługami w chmurze|Jeśli jest używana zapora lub podobne aktywne urządzenie sieciowe wymagające skonfigurowania określonych połączeń sieciowych, zapoznaj się z informacjami o usłudze **Azure Rights Management (RMS)** w sekcji [Portal usługi Office 365 i udostępnianie](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity) w następującym artykule o pakiecie Office: [Adresy URL i zakresy adresów IP usługi Office 365](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)<br /><br />Ponadto:<br /><br />— Zezwalaj na ruch HTTPS na porcie TCP 443 do witryny **api.informationprotection.azure.com**.<br /><br />— Nie kończ połączenia TLS między klientem i usługą (np. w celu przeprowadzenia inspekcji na poziomie pakietu). <br /><br />— Jeśli używasz serwera proxy sieci Web, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.|
-
-## Następne kroki
-
-Jeśli te wymagania zostały spełnione, zapoznaj się z programem demonstracyjnym i samodzielnie wypróbuj usługę Azure Information Protection: [Samouczek Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
 
-
-
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
