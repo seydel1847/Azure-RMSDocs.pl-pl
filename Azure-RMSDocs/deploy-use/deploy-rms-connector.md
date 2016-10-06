@@ -1,26 +1,26 @@
 ---
-title: "Wdrażanie łącznika usługi Azure Rights Management | Azure RMS"
-description: "Instrukcje dotyczące wdrażania łącznika usługi Azure Rights Management (RMS), który służy do zapewnienia ochrony informacji w istniejących wdrożeniach lokalnych korzystających z programu Microsoft Exchange Server, Microsoft SharePoint Server lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure)."
+title: "Wdrażanie łącznika usługi Azure Rights Management | Azure Information Protection"
+description: "Instrukcje dotyczące wdrażania łącznika usług RMS, który udostępnia usługę ochrony danych dla istniejących wdrożeń lokalnych korzystających z programu Exchange Server, programu SharePoint Server lub systemu Windows Server oraz funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure)."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a96018818f81787720021b661db10e818f388772
-ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
+ms.sourcegitcommit: 54901b9091a87349bc9d182bf3e2924f4046b30e
+ms.openlocfilehash: 63d900232613c264e8d8481fb43bc585e7cd6886
 
 
 ---
 
 # Wdrażanie łącznika usługi Azure Rights Management
 
->*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Management i sposobu jego pomyślnego wdrażania w organizacji. Ten łącznik służy do zapewniania ochrony danych w istniejących wdrożeniach lokalnych korzystających z programu **Microsoft Exchange Server**, **SharePoint Server** lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji **infrastruktury klasyfikacji plików** (FCI, File Classification Infrastructure).
 
@@ -30,7 +30,7 @@ Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Man
 ## Łącznik usługi Microsoft Rights Management — omówienie
 Łącznik usługi Microsoft Rights Management (RMS) pozwala szybko włączyć na istniejących serwerach lokalnych funkcjonalność zarządzania prawami do informacji (IRM, Information Rights Management) za pomocą opartej na chmurze usługi Microsoft Rights Management (usługa Azure RMS). Dzięki tej funkcji dział IT i użytkownicy mogą łatwo chronić dokumenty i obrazy zarówno wewnątrz organizacji, jak i poza nią, bez konieczności instalowania dodatkowej infrastruktury lub ustanawiania relacji zaufania z innymi organizacjami. 
 
-Łącznik usług RMS jest niemal niepozostawiającą śladów usługą instalowaną lokalnie na serwerach z systemem Windows Server 2012 R2, Windows Server 2012 lub Windows Server 2008 R2. Poza uruchamianiem łącznika na komputerach fizycznych można go również uruchomić na maszynach wirtualnych, w tym na maszynach wirtualnych Azure IaaS Po wdrożeniu łącznik działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą w chmurze, jak przedstawiono na poniższej ilustracji.
+Łącznik usług RMS jest niemal niepozostawiającą śladów usługą instalowaną lokalnie na serwerach z systemem Windows Server 2012 R2, Windows Server 2012 lub Windows Server 2008 R2. Poza uruchamianiem łącznika na komputerach fizycznych można go również uruchomić na maszynach wirtualnych, w tym na maszynach wirtualnych Azure IaaS Po wdrożeniu łącznik działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą w chmurze, jak przedstawiono na poniższej ilustracji. Strzałki wskazują kierunek inicjowania połączeń sieciowych.
 
 ![Architektura łącznika usługi RMS — omówienie](../media/RMS_connector.png)
 
@@ -97,6 +97,6 @@ Przed zainstalowaniem łącznika usługi RMS upewnij się, że zostały spełnio
 Przejdź do kroku 1: [Instalowanie i konfigurowanie łącznika usługi Azure Rights Management](install-configure-rms-connector.md).
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

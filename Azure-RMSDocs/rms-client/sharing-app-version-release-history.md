@@ -1,28 +1,28 @@
 ---
-title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure RMS"
-description: "Zespół pracujący nad usługą Rights Management regularnie aktualizuje aplikację do udostępniania usługi Rights Management w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy."
+title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure Information Protection"
+description: "Zobacz nowości i zmiany w wersji aplikacji do udostępniania usługi Rights Management dla systemu Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 060324fd6f0a87839ff267b540b9e5024498c242
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
 
 
 ---
 
 # Aplikacja do udostępniania usługi Rights Management: historia wersji
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
-Zespół pracujący nad usługą Rights Management regularnie aktualizuje aplikację do udostępniania usługi Rights Management w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy.
+Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje aplikację RMS sharing w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy.
 
 W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
@@ -131,6 +131,6 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,26 +1,26 @@
 ---
-title: "Cennik i ograniczenia dotyczące funkcji BYOK | Azure RMS"
-description: "Organizacje, które mają subskrypcję obejmującą usługę Azure Rights Management, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i rejestrować ich użycie bez dodatkowych opłat. Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz stronę z cenami usługi Azure Key Vault."
+title: "Cennik i ograniczenia dotyczące funkcji BYOK | Azure Information Protection"
+description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
+ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
+ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 
 
 ---
 
 # Cennik i ograniczenia dotyczące funkcji BYOK
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
 
 Organizacje, które mają subskrypcję obejmującą usługę Azure Rights Management, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i rejestrować ich użycie bez dodatkowych opłat. Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
@@ -33,7 +33,7 @@ Jeśli istnieją użytkownicy, którzy zarejestrowali się na bezpłatne konto p
 
 ![Funkcja BYOK nie obsługuje usługi Exchange Online](../media/RMS_BYOK_noExchange.png)
 
-Rozwiązanie BYOK i rejestrowanie użycia współpracują bezproblemowo z każdą aplikacją, która integruje się z usługą Azure RMS. Dotyczy to usług w chmurze, takich jak SharePoint Online, serwerów lokalnych z programem Exchange i SharePoint, które współpracują z usługą Azure RMS za pomocą łącznika usługi RMS, a także aplikacji klienckich, np. Office 2016 i Office 2013. Dzienniki użycia klucza uzyskasz niezależnie od tego, która aplikacja zgłasza żądania dotyczące usługi Azure RMS.
+Funkcja BYOK i rejestrowanie użycia współdziałają bezproblemowo z każdą aplikacją, która integruje się z usługą Azure Rights Management (Azure RMS) używaną przez usługę Azure Information Protection. Dotyczy to usług w chmurze, takich jak SharePoint Online, serwerów lokalnych z programem Exchange i SharePoint, które współpracują z usługą Azure RMS za pomocą łącznika usługi RMS, a także aplikacji klienckich, np. Office 2016 i Office 2013. Dzienniki użycia klucza uzyskasz niezależnie od tego, która aplikacja zgłasza żądania dotyczące usługi Azure RMS.
 
 Istnieje jeden wyjątek: obecnie **usługa Azure RMS BYOK nie jest zgodna z usługą Exchange Online**. Użytkownikom usługi Exchange Online zaleca się wdrożenie usługi Azure RMS w domyślnym trybie zarządzania kluczami, w którym firma Microsoft generuje klucze i zarządza nimi. Istnieje możliwość skorzystania z funkcji BYOK w późniejszym czasie, na przykład wtedy, gdy dla usługi Exchange Online zostanie zapewniona obsługa trybu BYOK usługi Azure RMS. Jeśli nie możesz czekać, istnieje inne rozwiązanie. Możesz wdrożyć usługę Azure RMS z funkcją BYOK już teraz, ale będzie ona mieć ograniczoną funkcjonalność w przypadku usługi Exchange Online (niechronione wiadomości e-mail i załączniki pozostaną w pełni funkcjonalne):
 
@@ -62,6 +62,6 @@ Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

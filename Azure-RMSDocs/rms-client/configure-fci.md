@@ -1,39 +1,39 @@
 ---
-title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server | Azure RMS"
+title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI) w systemie Windows Server | Azure Information Protection"
 description: "Instrukcje dotyczące używania klienta usługi Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI)."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
-ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 
 ---
 
 # Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
->*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Ten artykuł zawiera skrypt umożliwiający użycie klienta Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI), a także odpowiednie instrukcje.
 
-To rozwiązanie pozwala automatycznie chronić pliki w folderze na serwerze plików z systemem Windows Server lub pliki, które spełniają określone kryteria. Na przykład pliki, które zostały sklasyfikowane jako zawierające informacje poufne lub szczególnie chronione. To rozwiązanie wymaga usług Azure Rights Management (Azure RMS), aby chronić pliki, więc konieczne jest wdrożenie tej technologii w organizacji.
+To rozwiązanie pozwala automatycznie chronić pliki w folderze na serwerze plików z systemem Windows Server lub pliki, które spełniają określone kryteria. Na przykład pliki, które zostały sklasyfikowane jako zawierające informacje poufne lub szczególnie chronione. To rozwiązanie wymaga usług Azure Rights Management w ramach usługi Azure Information Protection, aby chronić pliki, więc konieczne jest wdrożenie tej technologii w organizacji.
 
 > [!NOTE]
-> Mimo że usługi Azure RMS obejmują [łącznik](../deploy-use/deploy-rms-connector.md), który obsługuje infrastrukturę klasyfikacji plików, to rozwiązanie obsługuje wyłącznie ochronę natywną, np. plików pakietu Office.
+> Mimo że usługa Azure Information Protection obejmuje [łącznik](../deploy-use/deploy-rms-connector.md), który obsługuje infrastrukturę klasyfikacji plików, to rozwiązanie obsługuje wyłącznie ochronę natywną, np. plików pakietu Office.
 > 
 > Aby obsługiwać wszystkie typy plików za pomocą infrastruktury klasyfikacji plików, należy użyć modułu **ochrony usług RMS** programu Windows PowerShell, zgodnie z opisem w tym artykule. Polecenia cmdlet modułu ochrony usług RMS, takie jak aplikacja do udostępniania usług RMS, obsługują zarówno ochronę ogólną, jak i natywną, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziomy ochrony — natywny i ogólny](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 Poniższe instrukcje dotyczą systemu Windows Server 2012 R2 lub Windows Server 2012. W przypadku korzystania z innych obsługiwanych wersji systemu Windows może okazać się konieczne dostosowanie niektórych kroków z powodu różnic między używaną wersją systemu operacyjnego i wersją opisaną w tym artykule.
 
-## Wymagania wstępne dotyczące ochrony za pomocą usług Azure RMS z użyciem infrastruktury FCI w systemie Windows Server
+## Wymagania wstępne dotyczące ochrony za pomocą usług Azure Rights Management z użyciem infrastruktury FCI w systemie Windows Server
 Wymagania wstępne dotyczące tych instrukcji:
 
 -   Na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików:
@@ -48,7 +48,7 @@ Wymagania wstępne dotyczące tych instrukcji:
 
     -   Masz połączenie z Internetem z ustawieniami komputera skonfigurowanymi w razie potrzeby dla serwera proxy. Na przykład: `netsh winhttp import proxy source=ie`
 
--   Skonfigurowano dodatkowe wymagania wstępne wdrożenia usługi Azure Rights Management, zgodnie z opisem w temacie [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). W szczególności do usługi Azure RMS należy dołączyć następujące wartości, korzystając z nazwy głównej usługi:
+-   Skonfigurowano dodatkowe wymagania wstępne wdrożenia usługi Azure Information Protection, zgodnie z opisem w temacie [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx). W szczególności do usługi Azure Rights Management należy dołączyć następujące wartości, korzystając z nazwy głównej usługi:
 
     -   Identyfikator BposTenantId
 
@@ -56,7 +56,7 @@ Wymagania wstępne dotyczące tych instrukcji:
 
     -   Klucz symetryczny
 
--   Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików, które zostaną objęte ochroną przez infrastrukturę FCI i usługę Azure RMS. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tej konfiguracji konta, zobacz [Preparing for Azure Rights Management](../plan-design/prepare.md) (Przygotowywanie do wdrożenia usługi Azure Rights Management).
+-   Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tej konfiguracji konta, zobacz [Przygotowywanie do wdrożenia usługi Azure Rights Management](../plan-design/prepare.md).
 
 -   Zidentyfikowano szablon usługi Rights Management, który ma zostać użyty i który będzie chronić pliki. Upewnij się, że znasz identyfikator tego szablonu, używając polecenia cmdlet [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx).
 
@@ -94,7 +94,7 @@ Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasy
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   Wyszukaj następujący ciąg i zastąp go własnym kluczem symetrycznym, który jest używany z poleceniem cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx), aby nawiązać połączenie z usługami Azure RMS:
+    -   Wyszukaj następujący ciąg i zastąp go własnym kluczem symetrycznym, który jest używany z poleceniem cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx), aby nawiązać połączenie z usługą Azure Rights Management:
 
         ```
         <enter your key here>
@@ -105,7 +105,7 @@ Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasy
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   Wyszukaj następujący ciąg i zastąp go własnym identyfikatorem BposTenantId (identyfikator dzierżawcy), który jest używany z poleceniem cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx), aby nawiązać połączenie z usługami Azure RMS:
+    -   Wyszukaj następujący ciąg i zastąp go własnym identyfikatorem BposTenantId (identyfikatorem dzierżawy), który jest używany z poleceniem cmdlet [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx), aby nawiązać połączenie z usługą Azure Rights Management:
 
         ```
         <enter your BposTenantId here>
@@ -302,6 +302,6 @@ Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzys
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

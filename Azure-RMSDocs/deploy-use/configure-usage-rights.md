@@ -1,28 +1,28 @@
 ---
-title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure RMS"
-description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management (Azure RMS)."
+title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure Information Protection"
+description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: a11d027789a63ae845812068e34f527f15a02314
 
 
 ---
 
 # Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management (Azure RMS) bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto konfigurując szablony niestandardowe dla usługi Azure RMS, wybierasz prawa użytkowania, które zostaną automatycznie zastosowane po wybraniu szablonu przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w klasycznym portalu platformy Azure możesz wybrać role, które powodują ustawienie logicznego grupowania praw użytkowania, albo skonfigurować poszczególne prawa.
+Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management w ramach usługi Azure Information Protection bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto konfigurując szablony niestandardowe dla usługi Azure Rights Management, wybierasz prawa użytkowania, które zostaną automatycznie zastosowane po wybraniu szablonu przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w klasycznym portalu platformy Azure możesz wybrać role, które powodują ustawienie logicznego grupowania praw użytkowania, albo skonfigurować poszczególne prawa.
 
 Niniejszy artykuł pomoże Ci skonfigurować prawa użytkowania dla używanej aplikacji oraz zrozumieć, jak te prawa będą interpretowane przez aplikacje.
 
@@ -77,7 +77,7 @@ W szablonach domyślnych zawarte są następujące prawa:
 
 Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają jedną dodatkową opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
 
-Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego ta opcja nie jest widoczna w klasycznym portalu Azure podczas wyświetlania szablonów usług Azure RMS i zarządzania nimi. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
+Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego ta opcja nie jest widoczna w klasycznym portalu Azure podczas wyświetlania szablonów usług Azure Rights Management i zarządzania nimi. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
 
 Gdy opcja **Nie przekazuj** jest stosowana do wiadomości e-mail, adresaci nie mogą przekazać takiej wiadomości e-mail, wydrukować jej, skopiować z niej informacji, zapisać załączników ani zapisać załączników pod inną nazwą. Na przykład w kliencie programu Outlook przycisk Prześlij dalej jest niedostępny, opcje menu **Zapisz jako**, **Zapisz załącznik** i **Drukuj** nie są dostępne oraz nie można dodawać ani zmieniać adresatów w polach **Do**, **DW** i **UDW**.
 
@@ -101,6 +101,6 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

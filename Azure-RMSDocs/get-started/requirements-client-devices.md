@@ -1,32 +1,32 @@
 ---
-title: "Wymagania dotyczące usługi Azure RMS: urządzenia klienckie | Azure RMS"
-description: "W poniższych sekcjach podano informacje umożliwiające zidentyfikowanie urządzeń, które obsługują usługę Azure Rights Management (Azure RMS)."
+title: "Obsługa urządzeń klienckich w celu ochrony danych | Azure Information Protection"
+description: "Identyfikowanie urządzeń obsługujących usługę Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 5fe3470fd7a05d8c2c72312e73e2a773c704ad0f
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 3b9c126211389dfe14bb5f1cc4ec8be1213df49d
 
 
 ---
 
 
-# Wymagania dotyczące usługi Azure RMS: urządzenia klienckie, które obsługują usługę Azure RMS
+# Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W poniższych sekcjach podano informacje umożliwiające zidentyfikowanie urządzeń, które obsługują usługę Azure Rights Management (Azure RMS).
+Poniższe sekcje służą do identyfikowania urządzeń, które obsługują usługę Azure Rights Management zapewniającą ochronę danych w ramach usługi Azure Information Protection.
 
 ## Komputery
-Następujące systemy operacyjne obsługują usługę Azure Rights Management:
+Następujące komputerowe systemy operacyjne obsługują usługę Azure Rights Management:
 
 -   **Windows 7** (x86, x64)
 
@@ -51,11 +51,11 @@ Następujące systemy operacyjne urządzeń przenośnych obsługują usługę Az
 
 
 ## Następne kroki
-Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
+Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

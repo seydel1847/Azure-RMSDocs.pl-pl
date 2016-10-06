@@ -1,27 +1,27 @@
 ---
-title: "Zmiana uprawnień do plików chronionych przez usługę Rights Management | Azure RMS"
+title: "Zmiana uprawnień do plików chronionych przez usługę Rights Management | Azure Information Protection"
 description: "Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawnienia do niego, ponownie włączając jego ochronę, a następnie określając wszystkich użytkowników, którzy muszą mieć dostęp do niego, oraz przysługujące im uprawnienia."
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 
 ---
 
 # Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawnienia do niego, ponownie włączając jego ochronę, a następnie określając wszystkich użytkowników, którzy muszą mieć dostęp do niego, oraz przysługujące im uprawnienia.
 
@@ -62,9 +62,9 @@ Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już
     Jeśli masz uprawnienia do ponownego włączenia ochrony pliku, na chwilę może zostać wyświetlone okno dialogowe informujące, że plik jest chroniony, po czym nastąpi powrót do Eksploratora plików. Wybrane pliki są teraz chronione z uwzględnieniem zmienionych uprawnień. 
 
 > [!NOTE]
-> Zanim będzie można ponownie włączyć ochronę pliku, usługa RMS musi najpierw potwierdzić, że masz uprawnienia do tej czynności (sprawdzana jest nazwa użytkownika i hasło). W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
+> Zanim będzie można ponownie włączyć ochronę pliku, usługa Rights Management musi najpierw potwierdzić, że masz uprawnienia do tej czynności wykonywanej dla tego pliku (sprawdzana jest nazwa użytkownika i hasło). W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
 >
-> Jeśli Twoja organizacja nie korzysta z usługi Azure Rights Management (Azure RMS) ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci używanie plików chronionych za pomocą usług RMS:
+> Jeśli Twoja organizacja nie korzysta z usługi Azure Information Protection ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci używanie plików chronionych za pomocą usług RMS:
 >
 > -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
@@ -96,6 +96,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

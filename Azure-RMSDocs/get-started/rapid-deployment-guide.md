@@ -1,42 +1,42 @@
 ---
-title: "Szybkie wdrażanie usługi Azure Rights Management | Azure RMS"
-description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Rights Management (Azure RMS) do ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
+title: "Przewodnik szybkiego wdrażania usługi Azure Information Protection | Azure Information Protection"
+description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Information Protection w celu ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 715290d2417df3b386d8e5b8a784e964355d4e15
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 
 
 ---
 
 # Szybkie wdrażanie usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji **Wdrażanie i używanie**, aby szybciej wdrożyć usługę Azure Rights Management (Azure RMS) i korzystać z niej.
+Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji **Wdrażanie i używanie**, aby szybciej wdrożyć usługę Azure Information Protection i korzystać z niej.
 
 Opisane scenariusze zawierają zarówno instrukcje dla administratora, jak i dokumentację użytkownika końcowego. Przed przekazaniem tej dokumentacji (w postaci instrukcji lub anonsów) użytkownikom końcowym należy dostosować ją do określonych wymagań biznesowych oraz istniejących przepływów pracy. W przykładowym zestawie instrukcji lub anonsie pokazano, jak może wyglądać końcowa wersja dokumentacji dla użytkowników końcowych.
 
 Każdy scenariusz zawiera listę wymagań z linkami prowadzącymi do dodatkowych informacji, co pozwala niezależnie wdrożyć te rozwiązania w dowolnej kolejności.
 
-W tym artykule zawarto przykładowe, najpopularniejsze scenariusze. Usługa Azure RMS może służyć do ochrony informacji w wielu scenariuszach zarówno wewnątrz jednej organizacji, jak i między różnymi organizacjami, dlatego można użyć tego samego modelu do zdefiniowania własnych scenariuszy i wdrożenia ich w środowisku oraz na komputerach użytkowników. Skupienie się na konkretnych scenariuszach pozwala na dokładniejsze dopasowanie wdrożenia usługi Azure RMS do celów biznesowych. Ponadto wiemy z doświadczenia, że użytkownicy często wykonują instrukcje specyficzne dla scenariusza bardziej ściśle i systematycznie niż w przypadku ogólnych wytycznych, na przykład „należy chronić poufne dokumenty”.
+W tym artykule zawarto przykładowe, najpopularniejsze scenariusze. Usługa Azure Information Protection może służyć do ochrony informacji w wielu scenariuszach zarówno wewnątrz jednej organizacji, jak i między różnymi organizacjami, dlatego można użyć tego samego modelu do zdefiniowania własnych scenariuszy i wdrożenia ich w środowisku oraz na urządzeniach użytkowników. Skupienie się na konkretnych scenariuszach pozwala na dokładniejsze dopasowanie wdrożenia usługi Azure Information Protection do celów biznesowych. Ponadto wiemy z doświadczenia, że użytkownicy często wykonują instrukcje specyficzne dla scenariusza bardziej ściśle i systematycznie niż w przypadku ogólnych wytycznych, na przykład „należy chronić poufne dokumenty”.
 
 Przed wdrożeniem opisanych rozwiązań warto wysłać do użytkowników końcowych obszerne powiadomienie o planowanych modyfikacjach mających na celu ochronę danych firmy wraz z informacją o ewentualnej konieczności wprowadzenia zmian w sposobie pracy. Treść takiej przykładowej komunikacji zamieszczono pod poniższą tabelą.
 
 > [!NOTE]
 > Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
-## Scenariusze dotyczące usługi Azure RMS
-Aby szybciej wdrożyć usługę Azure RMS w celu rozwiązania określonych problemów w firmie, należy wybrać scenariusze, które najlepiej pasują do celów biznesowych, i w razie potrzeby dostosować je.
+## Scenariusze dotyczące usługi Azure Information Protection
+Aby szybciej wdrożyć usługę Azure Information Protection w celu rozwiązania określonych problemów w firmie, należy wybrać scenariusze, które najlepiej pasują do celów biznesowych i w razie potrzeby dostosować je.
 
 
 
@@ -124,14 +124,14 @@ Patrz [Scenariusz — konfigurowanie folderów roboczych do stałej ochrony](sce
 
 
 ## Powiadomienie dla użytkowników przed wdrożeniem
-Można użyć następującego przykładowego komunikatu, aby dać znać użytkownikom, że wdrożenie usługi Azure RMS oznacza wprowadzenie pewnych zmian. Przedstawiciel kadry kierowniczej organizacji, najlepiej dyrektor generalny, powinien skopiować poniższy tekst i wysłać go pocztą e-mail do wszystkich użytkowników. W tekście można wprowadzać zmiany, tak aby lepiej dopasować go do potrzeb użytkowników i uwarunkowań występujących w organizacji.
+Następującego przykładowego komunikatu można użyć, aby dać znać użytkownikom, że wdrożenie usługi Azure Information Protection oznacza wprowadzenie pewnych zmian. Przedstawiciel kadry kierowniczej organizacji, najlepiej dyrektor generalny, powinien skopiować poniższy tekst i wysłać go pocztą e-mail do wszystkich użytkowników. W tekście można wprowadzać zmiany, tak aby lepiej dopasować go do potrzeb użytkowników i uwarunkowań występujących w organizacji.
 
 ![Transparent przykładowej dokumentacji użytkownika dotyczącej szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 ### Wprowadzamy zmiany, aby chronić nasze dane
 Czy zdarzyło Ci się wysłać kontrahentowi dokument przez pomyłkę? Czy chcesz mieć możliwość zablokowania dostępu do takiego dokumentu? Czy zdarzyło Ci się zastanawiać, jak można ustalić, którzy klienci przeczytali najnowsze informacje o produkcie? Czy musisz udostępniać poufne informacje o produktach, ale nie chcesz się martwić tym, że mogą one trafić do osób, które nie powinny ich zobaczyć?
 
-Już wkrótce będzie można korzystać z tych możliwości. W ramach rozwiązania ochrony danych w przedsiębiorstwie nasz dział IT wprowadza pewne zmiany związane z wdrożeniem usługi Microsoft Azure Rights Management (Azure RMS). Wiele nowych rozwiązań spowoduje automatyczne zastosowanie potrzebnych zabezpieczeń bez potrzeby wykonywania dodatkowych czynności z Twojej strony. Jednak niektóre zmiany wymagają, aby inaczej wykonywać pewne czynności. W takim przypadku otrzymasz odpowiednie informacje i instrukcje od działu IT. W razie pytań lub problemów możesz również uzyskać wsparcie w dziale pomocy technicznej.
+Już wkrótce będzie można korzystać z tych możliwości. W ramach rozwiązania ochrony danych w przedsiębiorstwie nasz dział IT wprowadza pewne zmiany związane z wdrożeniem usługi Microsoft Azure Information Protection. Wiele nowych rozwiązań spowoduje automatyczne zastosowanie potrzebnych zabezpieczeń bez potrzeby wykonywania dodatkowych czynności z Twojej strony. Jednak niektóre zmiany wymagają, aby inaczej wykonywać pewne czynności. W takim przypadku otrzymasz odpowiednie informacje i instrukcje od działu IT. W razie pytań lub problemów możesz również uzyskać wsparcie w dziale pomocy technicznej.
 
 Na przykład za pomocą witryny śledzenia dokumentów można śledzić udostępniane dokumenty (i w razie potrzeby odwoływać dostęp do nich):
 
@@ -146,6 +146,6 @@ Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwol
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

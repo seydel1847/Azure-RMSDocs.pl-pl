@@ -1,30 +1,30 @@
 ---
-title: "Pobieranie i instalowanie aplikacji do udostępniania usługi Rights Management | Azure RMS"
+title: Pobieranie i instalowanie aplikacji Rights Management sharing | Azure Information Protection
 description: "Instrukcje dotyczące interaktywnego instalowania aplikacji RMS sharing dla systemu Windows, dzięki czemu możliwe jest bezpieczne udostępnianie dokumentów innym osobom."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
-ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 
 ---
 
-# Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management
+# Pobieranie i instalowanie aplikacji Microsoft Rights Management sharing
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Aby zainstalować aplikację RMS sharing, nie trzeba być administratorem lokalnym. Jeśli nim nie jesteś i korzystasz z pakietu Office 2010, obowiązują jednak pewne ograniczenia. Aby uzyskać więcej informacji, zobacz sekcję [Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) w dalszej części tej strony.
 
-## Aby pobrać i zainstalować aplikację do udostępniania usługi Rights Management
+## Aby pobrać i zainstalować aplikację Rights Management sharing
 
 1.  Przejdź do strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) w witrynie firmy Microsoft w sieci Web.
 
@@ -44,13 +44,13 @@ Teraz możesz już chronić swoje pliki i otwierać pliki chronione udostępnion
 ## Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010
 Jeśli zalogujesz się na komputerze, nie mając lokalnych praw administracyjnych, a Instalator wykryje, że jest zainstalowany pakiet Office 2010, zobaczysz ostrzeżenie informujące, że w tej sytuacji niektóre działania nie są możliwe. Scenariusze są następujące:
 
--   Jeśli organizacja używa usług Azure RMS zamiast lokalnej wersji usług RMS:
+-   Jeśli Twoja organizacja korzysta z usługi Azure Rights Management z usługi Azure Information Protection, a nie z lokalnej wersji usługi Rights Management:
 
     -   Funkcje zarządzania prawami do informacji (IRM) pakietu Office nie będą dostępne. Dotyczy to na przykład opcji **Nie przekazuj** w przypadku wiadomości e-mail oraz uprawnień związanych z **ograniczeniami dostępu**, ustawianymi w menu **Plik** w programach Word i Excel. Można użyć opcji Udostępnij chronioną zawartość, dostępnej na wstążce, oraz opcji wyświetlanych po kliknięciu prawym przyciskiem myszy w Eksploratorze plików.
 
--   Jeśli w danej organizacji jest używana lokalna wersja usług RMS, a nie usługi Azure RMS:
+-   Jeśli Twoja organizacja używa lokalnej wersji usługi Rights Management, a nie usługi Azure Rights Management z usługi Azure Information Protection:
 
-    -   Nie można odczytywać dokumentów chronionych wysłanych przez osoby z organizacji korzystającej z usługi Azure RMS.
+    -   Nie będzie można odczytywać dokumentów chronionych wysłanych przez osoby z innej organizacji, która korzysta z usługi Azure Rights Management.
 
 Jeśli nie jesteś administratorem lokalnym i używasz usługi Office 365 lub pakietu Office 2013, nie zobaczysz tego komunikatu (te scenariusze są obsługiwane).
 
@@ -69,6 +69,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

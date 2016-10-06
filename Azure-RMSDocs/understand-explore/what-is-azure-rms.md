@@ -1,33 +1,31 @@
 ---
-title: "Co to jest usługa Azure Rights Management? | Azure RMS"
-description: "Usługa Azure Rights Management (Azure RMS) jest rozwiązaniem do ochrony informacji w organizacjach, które chcą chronić swoje dane we współczesnym środowisku pracy wymagającym rozwiązania wielu problemów."
+title: "Co to jest usługa Azure Rights Management? | Azure Information Protection"
+description: "Azure Rights Management (Azure RMS) to technologia ochrony używana przez usługę Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f6f2b382766ea91ed463c18655efb07d206213af
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 21e8bd7bb4b749e0f086a0108bb89778f2d3ce73
 
 
 ---
 
 # Co to jest usługa Azure Rights Management?
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
 
-Usługa Azure Rights Management (Azure RMS) jest rozwiązaniem do ochrony informacji w organizacjach, które chcą chronić swoje dane we współczesnym środowisku pracy wymagającym rozwiązania wielu problemów.
+Azure Rights Management (Azure RMS) to technologia ochrony używana przez usługę [Azure Information Protection](what-is-information-protection.md).
 
-Te problemy obejmują konieczność zapewnienia łączności z Internetem dla użytkowników przynoszących urządzenia osobiste do pracy, uzyskujących dostęp do danych firmy podczas podróży i w domu oraz udostępniających poufne informacje ważnym partnerom biznesowym. Codziennie podczas pracy użytkownicy udostępniają informacje przy użyciu poczty e-mail, witryn do udostępniania plików i usług w chmurze. W tych scenariuszach tradycyjne zabezpieczenia (takie jak listy kontroli dostępu i uprawnienia NTFS) oraz zapory mają ograniczoną skuteczność, jeśli trzeba chronić dane firmy, a równocześnie umożliwić użytkownikom efektywną pracę.
-
-Usługa Azure RMS może jednak chronić poufne informacje firmy we wszystkich tych scenariuszach. Używa ona zasad szyfrowania, tożsamości i autoryzacji, aby ułatwić zabezpieczanie plików oraz wiadomości e-mail i działa na wielu urządzeniach — telefonach, tabletach i komputerach. Informacje można chronić w obrębie organizacji i poza nią, ponieważ ochrona jest powiązana z danymi nawet wtedy, gdy opuszczą one teren organizacji.
+Ta oparta na chmurze usługa używa zasad szyfrowania, tożsamości i autoryzacji, aby ułatwić zabezpieczanie plików oraz wiadomości e-mail, i działa na wielu urządzeniach — telefonach, tabletach i komputerach. Informacje można chronić w obrębie organizacji i poza nią, ponieważ ochrona jest powiązana z danymi nawet wtedy, gdy opuszczą one teren organizacji.
 
 Na przykład pracownicy mogą wysłać dokument pocztą e-mail do firmy partnerskiej lub zapisać go na dysku w chmurze. Trwała ochrona, zapewniana przez usługę Azure RMS, nie tylko ułatwia zabezpieczanie danych firmy, ale także spełnia wymagania dotyczące weryfikacji zgodności z przepisami i procedur dochodzeniowych lub po prostu oferuje najlepsze rozwiązania z zakresu zarządzania.
 
@@ -36,7 +34,7 @@ Bardzo ważne jest, że autoryzowane osoby i usługi (takie jak wyszukiwanie i i
 Na poniższym rysunku przedstawiono sposób działania usługi Azure RMS jako rozwiązania z zakresu zarządzania prawami dla usługi Office 365 oraz dla serwerów i usług lokalnych. Widoczne jest również, że obsługuje ona popularne urządzenia użytkowników końcowych z systemami Windows, Mac OS, iOS, Android i Windows Phone.
 
 > [!NOTE]
-Usługi Azure RMS można używać z różnymi subskrypcjami usług w chmurze, takimi jak Office 365, Enterprise Mobility Suite i Azure RMS Premium. Aby uzyskać więcej informacji, zobacz temat [Subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
+Ochrona zapewniana przez usługę Azure RMS, która obsługuje wiele funkcji, może być używana z różnymi subskrypcjami usług w chmurze. Aby uzyskać więcej informacji, zobacz witrynę marketingową usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
 
 ![Jak działa usługa Azure RMS](../media/AzRMS_elements.png)
 
@@ -54,13 +52,13 @@ Aby dowiedzieć się więcej na temat usługi Azure RMS:
 
 Jeśli chcesz od razu rozpocząć korzystanie z usługi Azure RMS i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka Szybki start dotyczącego usługi Azure Rights Management](../get-started/quick-start-tutorial.md).
 
-Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure RMS w organizacji, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
+Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
 > [!TIP]
 > Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,39 +1,39 @@
 ---
-title: "Aktywacja usługi Azure Rights Management | Azure RMS"
-description: "Po aktywacji usługi (Azure RMS) Twoja organizacja może rozpocząć chronienie ważnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć usługę przed rozpoczęciem korzystania z funkcji zarządzania dostępem do informacji (IRM) w programach Office, SharePoint i Exchange i ochroną wszelkich poufnych plików."
+title: "Aktywacja usługi Azure Rights Management | Azure Information Protection"
+description: "Konieczna jest aktywacja usługi Azure Rights Management, zanim Twoja organizacja będzie mogła rozpocząć chronienie dokumentów i wiadomości e-mail za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
+ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
+ms.openlocfilehash: f7880bb46555384be728aa0059f37ad9844a9022
 
 
 ---
 
 # Aktywacja usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Po aktywacji usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) Twoja organizacja może rozpocząć chronienie ważnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć usługę [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] przed rozpoczęciem korzystania z funkcji zarządzania dostępem do informacji (IRM) w programach Office, SharePoint i Exchange i ochroną wszelkich poufnych plików.
+Po aktywowaniu usługi Azure Rights Management dla usługi Azure Information Protection Twoja organizacja może rozpocząć chronienie istotnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć tę usługę przed rozpoczęciem korzystania z funkcji zarządzania prawami do informacji (IRM, information rights management) w pakiecie Office, programie SharePoint i programie Exchange oraz przystąpieniem do ochrony wszelkich poufnych plików.
 
-Jeśli chcesz dowiedzieć się więcej na temat usługi Azure Rights Management przed jej aktywowaniem — na przykład o tym, jakie problemy biznesowe rozwiązuje, jak działa i jakie są jej przykładowe, typowe zastosowania — zobacz temat [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
+Jeśli chcesz dowiedzieć się więcej na temat usługi Azure Rights Management przed jej aktywowaniem — na przykład o tym, jakie problemy biznesowe rozwiązuje, jak działa i jakie są jej przykładowe, typowe zastosowania — zobacz [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
 
 > [!IMPORTANT]
-> Przed aktywacją usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] upewnij się, że Twoja organizacja ma plan subskrypcji obejmujący usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Jeśli nie ma, nie można aktywować usługi Azure RMS.
+> Przed aktywacją usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] upewnij się, że Twoja organizacja ma plan subskrypcji obejmujący usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Jeśli nie ma, nie będzie można aktywować usługi Azure Rights Management.
 >
-> Aby uzyskać więcej informacji, zobacz temat [Subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
+> Sprawdź informacje o subskrypcji na [stronie z cenami](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection, aby upewnić się, że Twoja organizacja korzysta z subskrypcji obejmującej usługę Azure Rights Management.
 
-Po uaktywnieniu usługi Azure RMS wszyscy użytkownicy w organizacji mogą stosować funkcje ochrony informacji wobec swoich plików oraz otwierać pliki (korzystać z nich) chronione przez usługę Azure RMS. Jeśli jednak wolisz ograniczyć możliwość stosowania funkcji ochrony informacji, możesz określić, kto będzie z niej korzystać, stosując kontrolki dołączania we wdrożeniu etapowym. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kontrolek dołączania we wdrożeniu etapowym](#configuring-onboarding-controls-for-a-phased-deployment) w tym artykule.
+Po uaktywnieniu usługi Azure RMS wszyscy użytkownicy w organizacji mogą stosować funkcje ochrony informacji wobec swoich plików oraz otwierać pliki (korzystać z nich) chronione przez usługę Azure Rights Management. Jeśli jednak wolisz ograniczyć możliwość stosowania funkcji ochrony informacji, możesz określić, kto będzie z niej korzystać, stosując kontrolki dołączania we wdrożeniu etapowym. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kontrolek dołączania we wdrożeniu etapowym](#configuring-onboarding-controls-for-a-phased-deployment) w tym artykule.
 
-Aby uzyskać instrukcje dotyczące aktywowania usługi Rights Management z poziomu portalu zarządzania, wybierz, czy będziesz używać centrum administracyjnego usługi Office 365 (wersja zapoznawcza lub classic) czy klasycznego portalu zarządzania platformy Azure:
+Aby uzyskać instrukcje dotyczące aktywowania usługi Rights Management z poziomu portalu zarządzania, wybierz, czy będziesz używać centrum administracyjnego usługi Office 365 (wersja zapoznawcza lub klasyczna), czy klasycznego portalu zarządzania platformy Azure:
 
 
 - [Centrum administracyjne usługi Office 365 — wersja zapoznawcza](activate-office365-preview.md)
@@ -44,15 +44,15 @@ Alternatywnie możesz użyć programu Windows PowerShell do aktywacji usługi [!
 
 1. Zainstaluj narzędzie Azure Rights Management Administration Tool, które instaluje moduł administracyjny usługi Azure Rights Management. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
-2. W sesji programu Windows PowerShell uruchom polecenie [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx), a po wyświetleniu odpowiedniego monitu podaj szczegóły konta administratora globalnego dla dzierżawcy usługi Azure RMS.
+2. W sesji programu Windows PowerShell uruchom polecenie [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx) i po wyświetleniu odpowiedniego monitu podaj szczegóły konta administratora globalnego dla dzierżawy usługi Azure Information Protection.
 
-3. Uruchom polecenie [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx), które aktywuje usługę Azure RMS.
+3. Uruchom polecenie [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx), które aktywuje usługę Azure Rights Management.
 
 ## Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
-Jeśli nie chcesz, aby wszyscy użytkownicy mogli chronić pliki za pomocą usługi Azure RMS, możesz skonfigurować kontrolki dołączania, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) programu Windows PowerShell. To polecenie można uruchomić przed aktywacją lub po aktywacji usługi Azure RMS.
+Jeśli nie chcesz, aby wszyscy użytkownicy mogli od razu chronić pliki za pomocą usługi Azure Rights Management, możesz skonfigurować kontrolki dołączania użytkowników, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) programu Windows PowerShell. To polecenie można uruchomić przed aktywacją usługi Azure Rights Management lub po niej.
 
 > [!IMPORTANT]
-> Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu Windows PowerShell usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu Windows PowerShell usługi Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).
 >
 > Aby sprawdzić zainstalowaną wersję, uruchom polecenie **(Get-Module aadrm –ListAvailable).Version**
 
@@ -63,24 +63,24 @@ Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b0
 ```
 Zauważ, że w tej opcji konfiguracji musisz określić grupę; nie można określać poszczególnych użytkowników.
 
-Lub, jeśli chcesz upewnić się, że tylko użytkownicy prawidłowo licencjonowani do użycia usługi Azure RMS będą mogli chronić zawartość:
+Ewentualnie, jeśli chcesz się upewnić, że tylko użytkownicy prawidłowo licencjonowani do użycia usługi Azure Information Protection będą mogli chronić zawartość:
 
 ```
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ```
-Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Przykładowo nie będą widzieć w swoich klientach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure RMS lub skonfigurowanych szablonów niestandardowych.  Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą RMS, aby osiągnąć ten sam rezultat.
+Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Przykładowo nie będą widzieć w swoich klientach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub skonfigurowanych szablonów niestandardowych.  Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat.
 
 
 ## Następne kroki
-Jako że usługa [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] jest już aktywowana dla Twojej organizacji, możesz użyć [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dla użytkowników i administratorów. 
+Jako że usługa [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] jest już aktywowana dla Twojej organizacji, możesz użyć [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Information Protection dla użytkowników i administratorów. 
 
-Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templates.md), aby ułatwić użytkownikom stosowanie ochrony informacji wobec plików, połączyć się z lokalnymi serwerami, aby użyć usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] poprzez zainstalowanie [łącznika usługi RMS](deploy-rms-connector.md) i wdrożyć [aplikację Rights Management sharing](../rms-client/sharing-app-windows.md), która obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
+Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templates.md), aby ułatwić użytkownikom stosowanie ochrony informacji wobec plików, połączyć się z lokalnymi serwerami, aby użyć usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] poprzez zainstalowanie [łącznika usługi Rights Management](deploy-rms-connector.md) i wdrożyć [aplikację Rights Management sharing](../rms-client/sharing-app-windows.md), która obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
 
-Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przeprowadzenia dodatkowej konfiguracji przed użyciem narzędzia Zarządzanie prawami do informacji (IRM). Aby uzyskać informacje o współpracy aplikacji z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz temat [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
-
-
+Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przeprowadzenia dodatkowej konfiguracji przed użyciem narzędzia Zarządzanie prawami do informacji (IRM). Aby uzyskać informacje o współdziałaniu aplikacji z usługą Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO4-->
 
 

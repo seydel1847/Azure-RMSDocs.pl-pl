@@ -1,28 +1,28 @@
 ---
-title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Usługa Azure RMS"
-description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana usługa Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji."
+title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Azure Information Protection"
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana ochrona usługi Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
+ms.sourcegitcommit: 03bd68b03d423908e7fbe89efb6aac6773283f2f
+ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
 
 
 ---
 
 # Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana usługa Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management.
+W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana technologia usługi Azure Rights Management z usługi Azure Information Protection, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management.
 
 Ten scenariusz sprawdza się w następujących okolicznościach:
 
@@ -44,11 +44,11 @@ Aby zrealizować instrukcje dotyczące tego scenariusza, należy spełnić nast�
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do korzystania z usługi Azure Information Protection](https://technet.microsoft.com/library/jj585029.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|Użytkownicy korzystają z programu Outlook pakietu Office 2013|Jeśli użytkownicy korzystają z pakietu Office 2010, należy odpowiednio zmienić zrzut ekranu, aby odzwierciedlał zawartość wyświetlaną na ekranach użytkowników.|
-|Twoja subskrypcja usługi Azure RMS obejmuje śledzenie dokumentów|Jeśli Twoja subskrypcja usługi Azure RMS nie obejmuje śledzenia i odwoływania dokumentów, użytkownicy nie będą mogli wykonać wszystkich kroków opisanych w instrukcjach użytkownika. W takim przypadku należy zakupić subskrypcję, która obsługuje te funkcje, lub zmodyfikować instrukcje użytkownika, aby usunąć kroki dotyczące tych funkcji.<br /><br />Aby sprawdzić swoją subskrypcję, zobacz temat [Porównanie ofert usługi Rights Management (RMS)](https://technet.microsoft.com/dn858608)|
+|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
+|Użytkownicy korzystają z programu Outlook pakietu Office 2013|Jeśli użytkownicy korzystają z pakietu Office 2016 lub Office 2010, należy odpowiednio zmienić zrzut ekranu, aby odzwierciedlał zawartość wyświetlaną na ekranach użytkowników.|
+|Twoja subskrypcja usługi Azure Information Protection obejmuje śledzenie dokumentów|Jeśli Twoja subskrypcja nie obejmuje śledzenia i odwoływania dokumentów, użytkownicy nie będą mogli wykonać wszystkich kroków opisanych w instrukcjach użytkownika. W takim przypadku należy zakupić subskrypcję, która obsługuje te funkcje, lub zmodyfikować instrukcje użytkownika, aby usunąć kroki dotyczące tych funkcji.<br /><br />Sprawdź informacje o subskrypcji na [stronie z cenami](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection.|
 
 ## Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
@@ -104,9 +104,9 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 -   Dodatkowe informacje:
 
-    -   [Ochrona pliku udostępnionego pocztą e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Śledzenie i odwoływanie dokumentów](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [Śledzenie i odwoływanie dokumentów](../rms-client/sharing-app-track-revoke.md)
 
 -   Skontaktuj się z działem pomocy technicznej:
 
@@ -143,9 +143,9 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 -   Dodatkowe informacje:
 
-    -   [Ochrona pliku udostępnionego pocztą e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Śledzenie i odwoływanie dokumentów](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [Śledzenie i odwoływanie dokumentów](../rms-client/sharing-app-track-revoke.md)
 
 -   Skontaktuj się z działem pomocy technicznej:
 
@@ -154,6 +154,6 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

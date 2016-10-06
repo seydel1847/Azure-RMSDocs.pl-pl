@@ -1,28 +1,28 @@
 ---
-title: "Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure RMS"
-description: "Po aktywacji usługi Azure Rights Management (Azure RMS) użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów, które ułatwiają stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw."
+title: "Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure Information Protection"
+description: "Informacje i instrukcje dla administratorów służące do konfigurowania szablonów praw użytkowania i zarządzania nimi. Szablony ułatwiają użytkownikom i innym administratorom stosowanie zasad umożliwiających dostęp do poufnych plików tylko autoryzowanym użytkownikom."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 83db5e11a4603523d7c4a86921fbdafb5f6fbfb5
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
 
 
 ---
 
-# Konfigurowanie szablonów niestandardowych usługi Azure Rights Management
+# Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Po [aktywacji usługi Azure Rights Management](activate-service.md) (Azure RMS) użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów, które ułatwiają stosowanie odnoszących się do poufnych plików zasad, które ograniczają dostęp do plików do grona upoważnionych użytkowników należących do organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
+Po [aktywacji](activate-service.md) usługi Azure Rights Management użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów ułatwiających stosowanie zasad zarządzania uprawnieniami, które ograniczają dostęp do poufnych plików do grona upoważnionych użytkowników w organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
 
 -   Wyświetlanie chronionej zawartości w trybie tylko do odczytu
 
@@ -66,6 +66,6 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

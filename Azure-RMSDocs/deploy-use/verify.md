@@ -1,28 +1,28 @@
 ---
-title: "Weryfikowanie usługi Azure Rights Management | Azure RMS"
-description: "Po aktywowaniu usługi Azure RMS i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa działa zgodnie z oczekiwaniami, włączając ochronę pliku lub wiadomości e-mail przy użyciu jednego konta użytkownika, a następnie próbując otworzyć tę chronioną zawartość i użyć jej przy użyciu innego konta użytkownika."
+title: "Weryfikowanie usługi Azure Rights Management | Azure Information Protection"
+description: "Instrukcje służące do sprawdzenia, czy usługa działa zgodnie z oczekiwaniami przez ochronę pliku lub wiadomości e-mail za pomocą jednego konta użytkownika, a następnie próbę otwarcia i użycia tej zawartości chronionej z innego konta użytkownika."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 665adbee40f5c1653a3c046231c5df450ee78c5f
 
 
 ---
 
 # Weryfikowanie usługi Azure Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Po aktywowaniu usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa działa zgodnie z oczekiwaniami, włączając ochronę pliku lub wiadomości e-mail przy użyciu jednego konta użytkownika, a następnie próbując otworzyć tę chronioną zawartość i użyć jej przy użyciu innego konta użytkownika.
+Po aktywowaniu usługi Azure Rights Management w ramach usługi Azure Information Protection i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa ochrony działa zgodnie z oczekiwaniami, włączając ochronę pliku lub wiadomości e-mail przy użyciu jednego konta użytkownika, a następnie próbując otworzyć tę chronioną zawartość i użyć jej przy użyciu innego konta użytkownika.
 
 Aby wykonać ten test, możesz użyć informacji z tematu [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](help-users.md).
 
@@ -33,13 +33,13 @@ Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Ma
 
 ## Następne kroki
 
-Możesz monitorować użycie ochrony informacji przez organizację, korzystając z rejestrowania użytkowania. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md).
+Możesz monitorować wykorzystanie usługi Azure Rights Management przez organizację, korzystając z rejestrowania użycia. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md).
 
 
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

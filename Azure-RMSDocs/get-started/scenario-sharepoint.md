@@ -1,28 +1,28 @@
 ---
-title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure RMS"
-description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych."
+title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure Information Protection"
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika ochrona usługi Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: e0e6442e077d6899cbbf88ae2889908e93592815
 
 
 ---
 
 # Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych. Na przykład dokumenty są automatycznie chronione przed przypadkowym lub zamierzonym wyciekiem spowodowanym przez użytkowników, przy czym dostęp do zawartości można zablokować nawet po jej pobraniu lub zsynchronizowaniu. Pliki, którym chcesz zapewnić ochronę, mogą być używane podczas wewnętrznej współpracy nad dokumentami lub planami projektowymi bądź innymi materiałami. Po skonfigurowaniu bibliotek chronionych dla programu SharePoint przechowywane w nich pliki pakietu Office będą chronione za pomocą usługi Azure Rights Management.
+W tym scenariuszu i dodatkowej dokumentacji użytkownika technologia usługi Azure Rights Management z usługi Azure Information Protection jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych. Na przykład dokumenty są automatycznie chronione przed przypadkowym lub zamierzonym wyciekiem spowodowanym przez użytkowników, przy czym dostęp do zawartości można zablokować nawet po jej pobraniu lub zsynchronizowaniu. Pliki, którym chcesz zapewnić ochronę, mogą być używane podczas wewnętrznej współpracy nad dokumentami lub planami projektowymi bądź innymi materiałami. Po skonfigurowaniu bibliotek chronionych dla programu SharePoint przechowywane w nich pliki pakietu Office będą chronione za pomocą usługi Azure Rights Management.
 
 Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
@@ -42,9 +42,9 @@ Aby zrealizować ten scenariusz, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|W przypadku używania programu SharePoint Server: należy wdrożyć łącznik usługi RMS i skonfigurować go na potrzeby programu SharePoint.|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
+|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|W przypadku używania programu SharePoint Server: należy wdrożyć łącznik usługi RMS i skonfigurować go na potrzeby programu SharePoint.|[Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)|
 |Należy skonfigurować uprawnienia do chronionej witryny programu SharePoint.|[Zarządzanie uprawnieniami dotyczącymi listy, biblioteki, folderu, dokumentu lub elementu listy](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 |Należy skonfigurować program SharePoint na potrzeby usługi IRM i bibliotek chronionych.|[Konfigurowanie usługi Zarządzanie prawami do informacji w centrum administracyjnym programu SharePoint](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
@@ -105,6 +105,6 @@ Nie można przekazywać do witryny Prognozy i raporty dotyczące sprzedaży doku
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

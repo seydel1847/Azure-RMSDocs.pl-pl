@@ -1,19 +1,19 @@
 ---
-title: "Przewodnik administratora aplikacji do udostępniania usługi Rights Management | Usługa Azure RMS"
+title: Przewodnik administratora aplikacji Rights Management sharing | Azure Information Protection
 description: "Instrukcje i informacje dla administratorów sieci przedsiębiorstwa odpowiedzialnych za wdrażanie aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management w systemie Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 575d52efb788956b0a711e908a730b677e1f7f9c
-ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
+ms.sourcegitcommit: 7ca9476d99457c814755b118660743b27ad78dbc
+ms.openlocfilehash: 73fd286c8112392bf7cb93468a27188aae6c22de
 
 
 ---
@@ -21,12 +21,12 @@ ms.openlocfilehash: 113a49586b4582ec984678df6730c6b554ff6a75
 
 # Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-Aplikacja do udostępniania usługi RMS najbardziej nadaje się do współpracy z usługą Azure RMS, ponieważ konfiguracja wdrożenia obsługuje wysyłanie chronionych załączników do użytkowników w innej organizacji, a także takie opcje jak powiadomienia e-mail i śledzenie dokumentów oraz odwoływanie dostępu do nich. Z pewnymi ograniczeniami współdziała również z lokalną wersją usług AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure RMS i AD RMS można znaleźć w artykule [Porównanie usług Azure Rights Management i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure RMS, zobacz [Migrowanie z usług AD RMS do usługi Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+Aplikacja RMS sharing najbardziej nadaje się do współpracy z usługą Azure Information Protection, ponieważ konfiguracja wdrożenia obsługuje wysyłanie chronionych załączników do użytkowników w innej organizacji, a także takie opcje jak powiadomienia e-mail i śledzenie dokumentów oraz odwoływanie dostępu do nich. Z pewnymi ograniczeniami współdziała również z lokalną wersją usług AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure Information Protection i AD RMS można znaleźć w artykule [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 Aby zapoznać się z przeglądem technicznym aplikacji usługi Rights Management, uzyskać informacje o natywnym i ogólnym poziomie ochrony, obsługiwanych typach plików i rozszerzeniach nazw plików oraz sposobach zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide-technical.md). 
 
@@ -47,36 +47,36 @@ Pakiety instalacyjne aplikacji RMS sharing obsługują różne scenariusze wdra�
 
 |Opis|Scenariusz wdrożenia|
 |---------------|-----------------------|
-|Asystent logowania usługi online firmy Microsoft|Pakiet Office 2010 i usługi Azure RMS<br /><br />Pakiet Office 2013 i usługi Azure RMS, jeśli nie zainstalowano [aktualizacji pakietu Office 2013 z 9 czerwca 2015 r.](https://support.microsoft.com/kb/3054853) (KB3054853)|
-|Poprawka dla pakietu Office (KB 2596501)|Pakiet Office 2010 i usługi Azure RMS<br /><br />Pakiet Office 2010 i usługi Active Directory RMS|
-|Poprawka umożliwiająca współdziałanie klienta 1.0 usług AD RMS z usługami Azure RMS (KB 2843630)|Pakiet Office 2010 i usługi Azure RMS<br /><br />Pakiet Office 2010 i usługi Active Directory RMS|
-|Klient usług AD RMS i aplikacja RMS sharing|Pakiet Office 2016 lub Office 2013 i usługi Azure RMS lub Active Directory RMS<br /><br />Pakiet Office 2010 i usługi Azure RMS<br /><br />Pakiet Office 2010 i usługi Active Directory RMS<br /><br />Tylko aplikacja RMS sharing i dodatek dla pakietu Office|
-|Dodatek dla Wstążki pakietu Office|Pakiet Office 2016 lub Office 2013 i usługi Azure RMS lub Active Directory RMS<br /><br />Pakiet Office 2010 i usługi Azure RMS<br /><br />Pakiet Office 2010 i usługi Active Directory RMS<br /><br />Tylko aplikacja RMS sharing i dodatek dla pakietu Office|
-|Narzędzie do przygotowywania usługi Active Directory Rights Management|Pakiet Office 2010 i usługi Azure RMS|
+|Asystent logowania usługi online firmy Microsoft|Pakiet Office 2010 i usługa Azure Information Protection<br /><br />Pakiet Office 2013 i usługa Azure Information Protection, jeśli nie zainstalowano [aktualizacji pakietu Office 2013 z 9 czerwca 2015 r.](https://support.microsoft.com/kb/3054853) (KB3054853)|
+|Poprawka dla pakietu Office (KB 2596501)|Pakiet Office 2010 i usługa Azure Information Protection<br /><br />Pakiet Office 2010 i usługi Active Directory RMS|
+|Poprawka umożliwiająca współdziałanie klienta 1.0 usługi AD RMS z usługą Azure Information Protection (KB 2843630)|Pakiet Office 2010 i usługa Azure Information Protection<br /><br />Pakiet Office 2010 i usługi Active Directory RMS|
+|Klient usług AD RMS i aplikacja RMS sharing|Pakiet Office 2016 lub Office 2013 i usługa Azure Information Protection lub Active Directory RMS<br /><br />Pakiet Office 2010 i usługa Azure Information Protection<br /><br />Pakiet Office 2010 i usługi Active Directory RMS<br /><br />Tylko aplikacja RMS sharing i dodatek dla pakietu Office|
+|Dodatek dla Wstążki pakietu Office|Pakiet Office 2016 lub Office 2013 i usługa Azure Information Protection lub Active Directory RMS<br /><br />Pakiet Office 2010 i usługa Azure Information Protection<br /><br />Pakiet Office 2010 i usługi Active Directory RMS<br /><br />Tylko aplikacja RMS sharing i dodatek dla pakietu Office|
+|Narzędzie do przygotowywania usługi Active Directory Rights Management|Pakiet Office 2010 i usługa Azure Information Protection|
 Poniższe procedury umożliwiają zidentyfikowanie poleceń wymaganych do wdrożenia aplikacji RMS sharing dotyczących następujących scenariuszy wdrażania:
 
--   **Pakiet Office 2016 lub Office 2013 i usługi Azure RMS lub Active Directory RMS**
+-   **Pakiet Office 2016 lub Office 2013 i usługa Azure Information Protection lub Active Directory RMS**
 
-    Użytkownicy korzystają z pakietu Office 2016 lub Office 2013, organizacja używa usług Azure RMS lub Active Directory RMS, a użytkownicy współpracują z innymi organizacjami korzystającymi z usług Azure RMS lub Active Directory RMS.
+    Użytkownicy korzystają z pakietu Office 2016 lub Office 2013, organizacja używa usługi Azure Information Protection lub Active Directory RMS, a użytkownicy współpracują z innymi organizacjami korzystającymi z usługi Azure Information Protection lub Active Directory RMS.
 
--   **Pakiet Office 2010 i usługi Azure RMS**
+-   **Pakiet Office 2010 i usługa Azure Information Protection**
 
-    Użytkownicy korzystają z pakietu Office 2010, organizacja używa usług Azure RMS, a użytkownicy współpracują z innymi organizacjami korzystającymi z usług Azure RMS lub Active Directory RMS.
+    Użytkownicy korzystają z pakietu Office 2010, organizacja używa usługi Azure Information Protection, a użytkownicy współpracują z innymi organizacjami korzystającymi z usługi Azure Information Protection lub Active Directory RMS.
 
 -   **Pakiet Office 2010 i usługi Active Directory RMS**
 
-    Użytkownicy korzystają z pakietu Office 2010, organizacja używa usług AD RMS, a użytkownicy współpracują z innymi organizacjami korzystającymi z usług Azure RMS.
+    Użytkownicy korzystają z pakietu Office 2010, organizacja używa usługi AD RMS, a użytkownicy współpracują z innymi organizacjami korzystającymi z usługi Azure Information Protection.
 
 -   **Tylko aplikacja RMS sharing i dodatek dla pakietu Office**
 
-    Użytkownicy korzystają z pakietu Office 2016, Office 2013 lub Office 2010, organizacja używa usług AD RMS, a użytkownicy nie muszą współpracować z innymi organizacjami korzystającymi z usług Azure RMS. W ramach tej instalacji wystarczy zainstalować tylko aplikację do udostępniania i dodatek dla pakietu Office.
+    Użytkownicy korzystają z pakietu Office 2016, Office 2013 lub Office 2010, organizacja używa usługi AD RMS, a użytkownicy nie muszą współpracować z innymi organizacjami korzystającymi z usługi Azure Information Protection. W ramach tej instalacji wystarczy zainstalować tylko aplikację do udostępniania i dodatek dla pakietu Office.
 
 > [!NOTE]
-> W tych scenariuszach w organizacji korzystającej z usług AD RMS użytkownicy mogą odbierać zawartość chronioną od innych organizacji korzystających z usług Azure RMS, ale nie mogą wysyłać zawartości chronionej do użytkowników w organizacji używającej usług Azure RMS. Jeśli jednak organizacja korzysta z usług Azure RMS, użytkownicy mogą wysyłać zawartość chronioną do innych organizacji i ją od nich odbierać.
+> W tych scenariuszach w organizacji korzystającej z usługi AD RMS użytkownicy mogą odbierać zawartość chronioną od innych organizacji korzystających z usługi Azure Information Protection, ale nie mogą wysyłać zawartości chronionej do użytkowników w organizacji używającej usługi Azure Information Protection. Jeśli jednak organizacja korzysta z usługi Azure Information Protection, użytkownicy mogą wysyłać zawartość chronioną do innych organizacji i ją od nich odbierać.
 
 Do ukończenia każdej procedury instalacji jest wymagane ponowne uruchomienie komputera. Możesz zainicjować automatyczne ponowne uruchomienie przy użyciu polecenia **shutdown /i**.
 
-### Aby wdrożyć aplikację do udostępniania usług RMS dla pakietu Office 2016 lub Office 2013 i usług Azure RMS lub Active Directory RMS
+### Aby wdrożyć aplikację RMS sharing dla pakietu Office 2016 lub Office 2013 i usługi Azure Information Protection lub Active Directory RMS
 
 -   Na każdym komputerze, na którym chcesz zainstalować aplikację RMS sharing i składniki pokrewne, uruchom następujące polecenie z podniesionymi uprawnieniami:
 
@@ -86,7 +86,7 @@ Do ukończenia każdej procedury instalacji jest wymagane ponowne uruchomienie k
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzanie, czy instalacja przebiegła pomyślnie](#verifying-installation-success) w tym artykule.
 
-### Aby wdrożyć aplikację RMS sharing dla pakietu Office 2010 i usług Azure RMS
+### Aby wdrożyć aplikację RMS sharing dla pakietu Office 2010 i usługi Azure Information Protection
 
 1.  Musisz być administratorem globalnym usługi Office 365 lub dzierżawcy usługi Azure Active Directory, aby uzyskać adres URL usługi certyfikacji swojej organizacji, uruchamiając narzędzie do przygotowywania usługi Active Directory Rights Management. To narzędzie należy uruchomić tylko raz, na jednym komputerze. Adres URL usługi certyfikacji musi zostać użyty podczas instalacji aplikacji RMS sharing na każdym komputerze:
 
@@ -207,7 +207,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 ## Sprawdzanie, czy instalacja przebiegła pomyślnie
 Korzystając z plików dzienników instalacji, możesz sprawdzić, czy instalacja przebiegła pomyślnie.
 
-### Aby sprawdzić, czy instalacja aplikacji do udostępniania usług RMS dla pakietu Office 2016 lub Office 2013 i usług Azure RMS lub Active Directory RMS przebiegła pomyślnie
+### Aby sprawdzić, czy instalacja aplikacji RMS sharing dla pakietu Office 2016 lub Office 2013 i usługi Azure Information Protection lub Active Directory RMS przebiegła pomyślnie
 
 -   Aby sprawdzić, czy polecenie Setup.exe zostało pomyślnie uruchomione na każdym komputerze, poszukaj pliku dziennika instalacji **RMInstaller.log** w folderze *%temp%\RMS_installer_&lt;guid&gt;*, a następnie zidentyfikuj kod wyjścia.
 
@@ -215,7 +215,7 @@ Korzystając z plików dzienników instalacji, możesz sprawdzić, czy instalacj
 
     Przykładowa nazwa pliku dziennika: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### Aby sprawdzić, czy instalacja aplikacji do udostępniania usług RMS dla pakietu Office 2010 i usług Azure RMS przebiegła pomyślnie
+### Aby sprawdzić, czy instalacja aplikacji RMS sharing dla pakietu Office 2010 i usługi Azure Information Protection przebiegła pomyślnie
 
 1.  Aby sprawdzić, czy polecenie Setup.exe zostało pomyślnie uruchomione na każdym komputerze, poszukaj pliku dziennika instalacji **RMInstaller.log** w folderze *%temp%\RMS_installer_&lt;guid&gt;*, a następnie zidentyfikuj kod wyjścia.
 
@@ -309,13 +309,13 @@ Nie wszystkie polecenia instalacji wymagane przez te wdrożenia obsługują pole
 
 -   Użyj następujących poleceń:
 
-    -   W 64-bitowej wersji pakietu Office:
+    -   W 64-bitowym systemie Windows:
 
         ```
         msiexec /x \x64\Setup[64].msi /quiet
         ```
 
-    -   W 32-bitowej wersji pakietu Office:
+    -   W 32-bitowym systemie Windows:
 
         ```
         msiexec /x \x86\Setup.msi /quiet
@@ -336,10 +336,10 @@ Ponieważ aplikacja RMS sharing nie jest obsługiwana przez program WSUS, warto 
 
 3.  Po ukończeniu testowania i rozwiązaniu ewentualnych problemów najnowszą wersję można wdrożyć u wszystkich użytkowników, korzystając z instrukcji wdrażania automatycznego dostępnych w tym podręczniku.
 
-## Tylko usługi Azure RMS: konfigurowanie śledzenia dokumentów
-Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://technet.microsoft.com/dn858608), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji.  Podczas śledzenia dokumentów pokazywane są informacje, takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów udostępnionych przez użytkowników, czas podjęcia takich prób oraz lokalizacja tych osób. Jeśli wyświetlanie tych informacji jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć dostęp do witryny śledzenia dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). W dowolnym momencie możesz ponownie włączyć dostęp do witryny za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) i sprawdzić, czy dostęp jest aktualnie włączony, czy wyłączony, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
+## Tylko usługa Azure Information Protection: konfigurowanie śledzenia dokumentów
+Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://technet.microsoft.com/dn858608), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Podczas śledzenia dokumentów pokazywane są informacje, takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów udostępnionych przez użytkowników, czas podjęcia takich prób oraz lokalizacja tych osób. Jeśli wyświetlanie tych informacji jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć dostęp do witryny śledzenia dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). W dowolnym momencie możesz ponownie włączyć dostęp do witryny za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) i sprawdzić, czy dostęp jest aktualnie włączony, czy wyłączony, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
 
-Aby korzystać z tych poleceń cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure RMS dla programu Windows PowerShell.  Aby uzyskać instrukcje instalacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management dla programu Windows PowerShell. Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
 > [!TIP]
 > Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
@@ -359,7 +359,7 @@ Następujące adresy URL są używane do śledzenia dokumentów i muszą być do
 
 ### Śledzenie i odwoływanie dokumentów dla użytkowników
 
-Użytkownicy po zalogowaniu się do witryny śledzenia dokumentów mogą śledzić i odwoływać dokumenty, które udostępnili za pomocą aplikacji RMS sharing. Po zalogowaniu się jako administrator usługi Azure RMS (administrator globalny) możesz kliknąć ikonę administratora w prawym górnym rogu strony, aby przełączyć się do trybu administratora i wyświetlić dokumenty udostępnione przez użytkowników w organizacji.
+Użytkownicy po zalogowaniu się do witryny śledzenia dokumentów mogą śledzić i odwoływać dokumenty, które udostępnili za pomocą aplikacji RMS sharing. Po zalogowaniu się jako administrator usługi Azure Information Protection (administrator globalny) możesz kliknąć ikonę administratora w prawym górnym rogu strony, aby przełączyć się do trybu administratora i wyświetlić dokumenty udostępnione przez użytkowników w organizacji.
 
 Akcje wykonywane w trybie administratora są poddawane inspekcji i rejestrowane w plikach dziennika użycia. Musisz potwierdzić, aby kontynuować. Aby uzyskać więcej informacji na temat tego rejestrowania, zobacz następną sekcję.
 
@@ -393,7 +393,7 @@ Jeśli korzystasz z usług AD RMS, a użytkownicy w Twojej organizacji mają ad
 
     Na przykład: firma Coho Vineyard &amp; Winery ma standardową domenę poczty e-mail **cohovineyardandwinery.com**, ale na skutek fuzji korzysta również z domen poczty e-mail **cohowinery.com**, **eastcoast.cohowinery.com** i **cohovineyard**. Dla danych wartości **FederatedDomains** administrator wprowadza: **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**
 
-Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć możliwości korzystania z zawartości chronionej przez innych użytkowników w tej organizacji. W przypadku korzystania z usług Azure RMS ta zmiana w rejestrze nie jest konieczna.
+Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć możliwości korzystania z zawartości chronionej przez innych użytkowników w tej organizacji. W przypadku korzystania z usługi Azure Information Protection ta zmiana w rejestrze nie jest konieczna.
 
 
 ## Następne kroki
@@ -402,6 +402,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

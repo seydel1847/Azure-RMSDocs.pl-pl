@@ -1,28 +1,28 @@
 ---
-title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy | Usługa Azure RMS"
-description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją."
+title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy | Azure Information Protection"
+description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika ochrona usługi Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
 
 
 ---
 
 # Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i uzupełniającej dokumentacji użytkownika usługa Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją. Na przykład ktoś może przekazywać wiadomość e-mail osobie w innej organizacji lub na osobiste konto e-mail. Wiadomości e-mail i załączniki będą chronione za pomocą usługi Azure Rights Management oraz szablonu, który użytkownicy wybiorą z klienta poczty e-mail.
+W tym scenariuszu i uzupełniającej dokumentacji użytkownika technologia usługi Azure Rights Management z usługi Azure Information Protection ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją. Na przykład ktoś może przekazywać wiadomość e-mail osobie w innej organizacji lub na osobiste konto e-mail. Wiadomości e-mail i załączniki będą chronione za pomocą usługi Azure Rights Management oraz szablonu, który użytkownicy wybiorą z klienta poczty e-mail.
 
 Najprostszy sposób realizacji tego scenariusza polega na użyciu wbudowanych, domyślnych szablonów, w których dostęp do treści jest automatycznie przyznawany wszystkim użytkownikom w organizacji. W razie potrzeby można jednak wprowadzić ostrzejsze ograniczenia, tworząc szablon niestandardowy, który umożliwia dostęp tylko podgrupie użytkowników lub wprowadza inne ograniczenia, takie jak uprawnienie tylko do odczytu lub data wygaśnięcia, albo powoduje wyłączenie przycisku Prześlij dalej w kliencie poczty e-mail.
 
@@ -49,12 +49,12 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Klucz dzierżawy usługi Azure Rights Management jest zarządzany przez firmę Microsoft. Nie jest używana funkcja BYOK.|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
-|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnego programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać odpowiednie informacje, sprawdź sekcję [Odświeżanie szablonów dla użytkowników](https://technet.microsoft.com/library/dn642472.aspx) w artykule dotyczącym konfigurowania szablonów.|
-|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](https://technet.microsoft.com/library/dn339003.aspx) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Wiadomości e-mail** w tabeli [Funkcje urządzeń klienckich](https://technet.microsoft.com/library/dn655136.aspx) w temacie [Wymagania dotyczące usługi Azure Rights Management](https://technet.microsoft.com/library/dn655136.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
+|Klucz dzierżawy usługi Azure Information Protection jest zarządzany przez firmę Microsoft; nie jest używany scenariusz BYOK|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md)|
+|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Usługa Exchange Online: konfiguracja usługi IRM** artykułu [Office 365: konfiguracja dla klientów i usług online](../deploy-use/configure-office365.md).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).|
+|Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać więcej informacji, zobacz artykuł [Odświeżanie szablonów dla użytkowników](../deploy-use/refresh-templates.md).|
+|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Poczta e-mail** w tabeli zawartej w artykule [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).|
 
 ## Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
@@ -157,6 +157,6 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

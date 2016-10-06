@@ -1,26 +1,26 @@
 ---
-title: "Używanie skrótów klawiaturowych w aplikacji do udostępniania usługi Rights Management | Azure RMS"
+title: "Używanie skrótów klawiaturowych w aplikacji Rights Management sharing | Azure Information Protection"
 description: "Instrukcje dotyczące sposobu używania skrótów klawiaturowych w aplikacji RMS sharing dla systemu Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 0b7e3a9afcf1e9992345abcb124990472a399f2b
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
 
 
 ---
 
 # Używanie skrótów klawiaturowych w aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Podczas korzystania z aplikacji RMS sharing naciśnij klawisz **Alt** w celu wyświetlenia dostępnych klawiszy dostępu, a następnie naciśnij klawisz **Alt** + klawisz dostępu, aby wybrać opcję.
 
@@ -40,6 +40,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

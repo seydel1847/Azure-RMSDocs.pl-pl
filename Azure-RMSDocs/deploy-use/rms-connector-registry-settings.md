@@ -1,19 +1,19 @@
 ---
-title: "Ustawienia rejestru dla łącznika usługi RMS | Azure RMS"
+title: "Ustawienia rejestru dla łącznika usługi RMS | Azure Information Protection"
 description: "Informacje dotyczące ustawień rejestru na serwerach używających łącznika usług RMS. Zalecana metoda konfiguracji tych ustawień polega na użyciu narzędzia do konfiguracji serwera dla łącznika usług Microsoft RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 
 # Ustawienia rejestru dla łącznika usługi Rights Management
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
 
 Tabele zawarte w poniższych sekcjach umożliwiają ręczne dodanie lub sprawdzenie ustawień rejestru na serwerach z uruchomionym programem Exchange lub SharePoint albo systemem Windows Server, co pozwala skonfigurować używanie [łącznika usługi RMS](deploy-rms-connector.md) na tych serwerach. Zalecana metoda konfiguracji serwerów polega na użyciu narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS.
@@ -216,6 +216,6 @@ Oto instrukcje dotyczące użycia tych ustawień:
 Powrót do tematu [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

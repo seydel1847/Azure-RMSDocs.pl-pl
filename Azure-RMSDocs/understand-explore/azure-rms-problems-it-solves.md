@@ -1,19 +1,19 @@
 ---
-title: "Jakie problemy rozwiązują usługi Azure RMS | Azure RMS"
-description: "Poniższe informacje pozwalają zidentyfikować wymagania biznesowe lub problemy, które może mieć organizacja, a także poznać sposoby ich rozwiązywania przy użyciu usług Azure RMS."
+title: "Jakie problemy rozwiązuje usługa Azure RMS | Azure Information Protection"
+description: "Poniższe informacje pozwalają zidentyfikować wymagania w zakresie ochrony informacji lub problemy, które może mieć organizacja, a także poznać sposoby ich rozwiązywania przy użyciu technologii Azure RMS."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 03ada045291115a6cc47353fed36ed9db7a23668
 
 
 ---
@@ -21,13 +21,15 @@ ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
 
 # Jakie problemy rozwiązuje usługa Azure RMS?
 
->*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Użyj poniższej tabeli, aby zidentyfikować wymagania biznesowe lub problemy, które może mieć organizacja, a także poznać sposoby ich rozwiązywania przy użyciu usługi Azure RMS.
+Użyj poniższej tabeli, aby zidentyfikować wymagania biznesowe lub problemy, które może mieć organizacja w zakresie ochrony dokumentów i wiadomości e-mail, a także poznać sposoby ich rozwiązywania przy użyciu technologii Azure RMS.
+
+Azure RMS to technologia ochrony używana przez usługę [Azure Information Protection](what-is-information-protection.md).
 
 |Wymaganie lub problem|Rozwiązanie przy użyciu usługi Azure RMS|
 |--------------------------|-----------------------|
-|Ochrona wszystkich typów plików|√ W poprzedniej implementacji usługi Rights Management tylko pliki pakietu Office mogły być chronione za pomocą ochrony natywnej. Teraz [ochrona natywna](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) oznacza, że obsługiwane są pliki wszystkie typów.|
+|Ochrona wszystkich typów plików|√ We wczesnych implementacjach usługi Rights Management tylko pliki pakietu Office mogły być chronione za pomocą ochrony natywnej. Teraz [ochrona natywna](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) oznacza, że obsługiwane są pliki wszystkie typów.|
 |Ochrona plików w każdym miejscu|√ Gdy plik jest zapisywany w lokalizacji ([ochrony miejscowej](../rms-client/sharing-app-protect-in-place.md)), ochrona pozostaje skojarzona z plikiem, nawet jeśli zostanie on skopiowany do magazynu poza kontrolą działu IT, takiego jak usługa magazynu w chmurze.|
 |Bezpieczne udostępnianie plików za pośrednictwem poczty e-mail|√ Gdy plik jest udostępniany za pośrednictwem poczty e-mail ([udostępnianie chronionej zawartości](../rms-client/sharing-app-protect-by-email.md)), plik jest chroniony jako załącznik do wiadomości e-mail z instrukcją otwierania chronionego załącznika. Tekst wiadomości e-mail nie jest szyfrowany, więc adresat zawsze może przeczytać instrukcję. Jednak ponieważ dołączony dokument jest chroniony, tylko autoryzowani użytkownicy będą mogli go otworzyć, nawet jeśli wiadomość e-mail lub dokument zostaną przesłane dalej do innych osób.|
 |Inspekcja i monitorowanie|√ Możesz [przeprowadzać inspekcję i monitorowanie użycia](../deploy-use/log-analyze-usage.md) plików chronionych, nawet po opuszczeniu przez nie granic organizacji.<br /><br />Załóżmy, że pracujesz dla firmy Contoso, Ltd. Pracujesz nad wspólnym projektem z 3 osobami z firmy Fabrikam, Inc. Wysyłasz do tych 3 osób dokument, który chronisz i ograniczasz, aby był tylko do odczytu. Inspekcja Azure RMS może podać następujące informacje:<br /><br />— czy i kiedy wybrane osoby z firmy Fabrikam otworzyły dokument;<br /><br />— czy inne osoby, których nie podano, próbowały (bez powodzenia) otworzyć dokument — prawdopodobnie ponieważ został przekazany albo zapisany w lokalizacji udostępnionej innym osobom;<br /><br />— czy dowolna osoba z wybranych próbowała (bez powodzenia) drukować lub zmieniać dokument.|
@@ -72,6 +74,6 @@ Aby poznać usługi Azure RMS dla administratorów i użytkowników, zobacz [Us�
 Aby uzyskać informacje techniczne na temat działania usługi Azure RMS, zobacz artykuł [Jak działa usługa Azure RMS?](how-does-it-work.md) 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

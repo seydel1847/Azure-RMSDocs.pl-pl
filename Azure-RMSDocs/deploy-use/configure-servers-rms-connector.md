@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management | Azure RMS"
+title: "Konfigurowanie serwerów dla łącznika usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, które będą używać łącznika usługi Azure Rights Management (RMS). Te procedury obejmują krok 5 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 67bf5f7b5a550e723ac16707c341f6b3af054b9a
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 825103c8857d2db4f0a37570d10fd88361eae274
 
 
 ---
 
 # Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
->*Dotyczy: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 
 Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -29,7 +29,7 @@ Przed rozpoczęciem upewnij się, że łącznik usługi RMS jest zainstalowany i
 
 
 ## Konfigurowanie serwerów do korzystania z łącznika usługi RMS
-Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można przystąpić do konfigurowania serwerów lokalnych, które będą korzystać z usługi Rights Management i łączyć się z usługą Azure RMS za pomocą łącznika. Oznacza to konfigurowanie następujących serwerów:
+Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można przystąpić do konfigurowania serwerów lokalnych, które będą łączyć się z usługą Azure Rights Management i korzystać z tej technologii ochrony za pomocą łącznika. Oznacza to konfigurowanie następujących serwerów:
 
 -   **Dla programów Exchange 2016 i Exchange 2013**: serwery dostępu klientów i serwery skrzynek pocztowych
 
@@ -249,6 +249,6 @@ Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
