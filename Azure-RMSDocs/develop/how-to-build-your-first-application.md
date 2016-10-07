@@ -4,18 +4,18 @@ description: "Ten temat zawiera instrukcje dotyczące tworzenia przykładowej ap
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 601bd3f8bd0f076e55e6bd7379179d8247063d34
 
 
 ---
@@ -35,7 +35,7 @@ W poniższych częściach omówiono kluczowe kroki aplikacji i elementy, które 
 
 ## Ładowanie biblioteki MSIPC.dll
 
-Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywołać funkcję [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) w celu załadowania biblioteki MSIPC.dll.
+Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywołać funkcję [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) w celu załadowania biblioteki MSIPC.dll.
 
 
 
@@ -67,7 +67,7 @@ Następujący fragment kodu wylicza dostępne szablony usługi RMS z domyślnego
 
 
 
-To wywołanie pobiera szablony usługi RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
+To wywołanie pobiera szablony usługi RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
 
 
 
@@ -91,9 +91,9 @@ To wywołanie pobiera szablony usługi RMS zainstalowane na domyślnym serwerze 
 
 ## Serializacja licencji
 
-Przed rozpoczęciem ochrony danych należy przeprowadzić serializację licencji i pobrać klucz zawartości. Klucz zawartości jest używany do szyfrowania poufnych danych. Serializowana licencja jest zwykle dołączana do zaszyfrowanych danych i jest używana przez konsumenta chronionych danych. Konsument musi wywołać funkcję [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) przy użyciu serializowanej licencji, aby pobrać klucz zawartości w celu odszyfrowania zawartości i pobrania zasad skojarzonych z zawartością.
+Przed rozpoczęciem ochrony danych należy przeprowadzić serializację licencji i pobrać klucz zawartości. Klucz zawartości jest używany do szyfrowania poufnych danych. Serializowana licencja jest zwykle dołączana do zaszyfrowanych danych i jest używana przez konsumenta chronionych danych. Konsument musi wywołać funkcję [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) przy użyciu serializowanej licencji, aby pobrać klucz zawartości w celu odszyfrowania zawartości i pobrania zasad skojarzonych z zawartością.
 
-Dla uproszczenia należy użyć pierwszego szablonu RMS zwróconego przez funkcję [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist), aby serializować licencję.
+Dla uproszczenia należy użyć pierwszego szablonu RMS zwróconego przez funkcję [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist), aby serializować licencję.
 
 Normalnie należy użyć okna dialogowego interfejsu użytkownika w celu umożliwienia użytkownikowi wybrania odpowiedniego szablonu.
 
@@ -114,7 +114,7 @@ Po wykonaniu tego działania dysponujesz kluczem zawartości *hContentKey* i ser
 
 ## Ochrona danych
 
-Teraz można przystąpić do szyfrowania poufnych danych przy użyciu funkcji [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt). Po pierwsze należy zapytać funkcję **IpcEncrypt** o rozmiar zaszyfrowanych danych.
+Teraz można przystąpić do szyfrowania poufnych danych przy użyciu funkcji [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt). Po pierwsze należy zapytać funkcję **IpcEncrypt** o rozmiar zaszyfrowanych danych.
 
 
 
@@ -129,7 +129,7 @@ Teraz można przystąpić do szyfrowania poufnych danych przy użyciu funkcji [*
 
 
 
-W tym przypadku element *wszText* zawiera zwykły tekst, który zostanie objęty ochroną. Funkcja [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) zwraca rozmiar zaszyfrowanych danych w parametrze *cbEncrypted*.
+W tym przypadku element *wszText* zawiera zwykły tekst, który zostanie objęty ochroną. Funkcja [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) zwraca rozmiar zaszyfrowanych danych w parametrze *cbEncrypted*.
 
 Teraz przydziel pamięć dla zaszyfrowanych danych.
 
@@ -177,7 +177,7 @@ W tej przykładowej aplikacji do obsługi błędów używana jest funkcja **Disp
     }   
 
 
-Funkcja **DisplayError** używa funkcji [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) w celu pobrania komunikatu o błędzie z odpowiedniego kodu błędu i wysłania go do wyjścia standardowego.
+Funkcja **DisplayError** używa funkcji [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) w celu pobrania komunikatu o błędzie z odpowiedniego kodu błędu i wysłania go do wyjścia standardowego.
 
 ## Czyszczenie
 
@@ -206,12 +206,12 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
 
 * [Uwagi dla deweloperów](developer-notes.md)
 * [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
-* [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-* [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-* [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-* [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+* [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+* [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+* [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+* [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
  
 
@@ -219,6 +219,6 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

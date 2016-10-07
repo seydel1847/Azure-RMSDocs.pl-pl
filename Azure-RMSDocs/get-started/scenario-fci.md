@@ -3,7 +3,7 @@ title: "Scenariusz — ochrona plików w udziale serwera plików | Azure Informa
 description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika ochrona usługi Azure Rights Management jest używana w celu zastosowania zbiorczej ochrony wszystkich plików wybranych na serwerze plików. Dzięki temu tylko pracownicy danej organizacji będą mogli uzyskiwać do nich dostęp, nawet jeśli pliki zostaną skopiowane i zapisane w magazynie niekontrolowanym przez dział IT albo wysłane do innych osób pocztą e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
-ms.openlocfilehash: a12276bcf2072ac812ae6b68d9e1cdacbe46adaa
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
 
 
 ---
@@ -46,8 +46,8 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |---------------|--------------------------------|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
 |Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
-|Jedna z poniższych opcji:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników: nie zarchiwizowano szablonu domyślnego &lt;nazwa organizacji&gt; — poufne.<br /><br />– Aby użyć szablonu niestandardowego dla wybranych użytkowników: utworzono i opublikowano ten szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
-|Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management została wdrożona na komputerach użytkowników z systemem Windows.|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
+|Jedna z poniższych opcji:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników: nie zarchiwizowano szablonu domyślnego &lt;nazwa organizacji&gt; — poufne.<br /><br />– Aby użyć szablonu niestandardowego dla wybranych użytkowników: utworzono i opublikowano ten szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |Pobrano narzędzie ochrony usługi RMS i skonfigurowano wymagania wstępne dotyczące usługi Azure RMS.|Instrukcje dotyczące pobierania narzędzia i wymagań wstępnych: [RMS Protection Cmdlets](https://msdn.microsoft.com/library/mt433195.aspx) (Polecenia cmdlet dotyczące ochrony RMS)<br /><br />Aby skonfigurować dodatkowe wymagania wstępne dotyczące usługi Azure RMS, takie jak konto główne usługi: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
 ### Konfigurowanie serwera plików w celu objęcia ochroną wszystkich plików za pomocą usługi Azure RMS i Menedżera zasobów serwera plików przy użyciu infrastruktury klasyfikacji plików
@@ -155,6 +155,6 @@ Okresowo ochrona pliku będzie ponownie stosowana, co spowoduje dodanie rozszerz
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
