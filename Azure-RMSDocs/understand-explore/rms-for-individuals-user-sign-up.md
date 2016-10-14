@@ -3,7 +3,7 @@ title: "Jak tworzyć konta usługi RMS dla użytkowników indywidualnych | Azure
 description: "Instrukcje dotyczące rejestrowania się w ramach tego bezpłatnego konta oraz informacje techniczne dotyczące sposobu działania tego procesu."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 ---
@@ -83,7 +83,7 @@ W trakcie tego procesu organizacja nie jest obciążana żadnymi opłatami, a dz
 
     -   Zbieranie elektronicznych materiałów dowodowych związanych z danymi firmowymi. Dzięki temu można w razie potrzeby odszyfrowywać pliki chronione za pomocą usługi Rights Management. Aby uzyskać więcej informacji, zobacz [Konfigurowanie administratorów usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
 
-    -   Rejestrowanie wszystkich działań na potrzeby usługi Rights Management przy użyciu metody stosowanej w organizacji. Jest to bardzo pomocna funkcja, ponieważ umożliwia nie tylko sprawdzanie, które pliki są obejmowane ochroną i kto pomyślnie uzyskuje do nich dostęp, ale także identyfikowanie podejrzanego zachowania nieupoważnionych osób, które próbują uzyskać dostęp do chronionych plików. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+    -   Rejestrowanie wszystkich działań na potrzeby usługi Rights Management przy użyciu metody stosowanej w organizacji. Jest to bardzo pomocna funkcja, ponieważ umożliwia nie tylko sprawdzanie, które pliki są obejmowane ochroną i kto pomyślnie uzyskuje do nich dostęp, ale także identyfikowanie podejrzanego zachowania nieupoważnionych osób, które próbują uzyskać dostęp do chronionych plików. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
     -   Udostępnianie użytkownikom możliwości śledzenia i odwoływania chronionych dokumentów, jeśli te funkcje są obsługiwane przez [subskrypcję usługi Azure RMS](https://technet.microsoft.com/dn858608). Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie plików](../rms-client/sharing-app-track-revoke.md) w [Podręczniku użytkownika aplikacji do udostępniania usług RMS](../rms-client/sharing-app-user-guide.md).
 
@@ -97,6 +97,6 @@ Zobacz [Metody kontrolowania przez administratorów kont utworzonych dla usług 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

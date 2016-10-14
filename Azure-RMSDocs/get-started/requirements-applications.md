@@ -3,7 +3,7 @@ title: "Obsługa aplikacji w celu ochrony danych | Azure Information Protection"
 description: "Identyfikowanie aplikacji, które korzystają z interfejsów API usługi RMS w celu natywnej obsługi usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a809edc63801912e836878e9205643d7d52188f1
-ms.openlocfilehash: 872e962bc4c08000fea9f81d48dece28a39d91dd
+ms.sourcegitcommit: 451952f7d0c293db2c9d4f5040ef0e14aa973866
+ms.openlocfilehash: a9b0fcddf9b11a8ab2d105ca5fc778831913bb72
 
 
 ---
@@ -58,12 +58,12 @@ Obsługuje wyświetlanie zawartości chronionej.
 Obsługuje wyświetlanie zawartości chronionej w usłudze SharePoint Online, usłudze OneDrive dla Firm i programie Outlook Web Access.
 
 ##### Przypis 3
-Jeśli adresat ma skrzynkę pocztową w lokalnym programie Exchange i otrzyma chronioną wiadomość e-mail, jej zawartość będzie można otworzyć tylko w zaawansowanym kliencie poczty e-mail, takim jak program Outlook.  Nie będzie można użyć do tego programu Outlook Web Access.
+Jeśli adresat chronionej wiadomości e-mail nie korzysta z serwera poczty Exchange lub jeśli nadawca należy do innej organizacji, tę zawartość można otworzyć wyłącznie przy użyciu wzbogaconego klienta poczty e-mail, na przykład programu Outlook. Nie będzie można użyć do tego programu Outlook Web Access.
 
 ##### Przypis 4
 Używa funkcji Exchange ActiveSync IRM, którą musi włączyć administrator programu Exchange. Użytkownicy mogą przeglądać chronione wiadomości e-mail, odpowiadać nadawcy i opowiadać wszystkim nadawcom, ale nie mogą chronić nowych wiadomości e-mail.
 
-Jeśli adresat ma skrzynkę pocztową w lokalnym programie Exchange i otrzyma chronioną wiadomość e-mail z innej organizacji, która korzysta z programu Exchange, jej zawartość będzie można otworzyć tylko w zaawansowanym kliencie poczty e-mail, takim jak program Outlook.  Nie można jej otworzyć w urządzeniu, na którym jest używana funkcja Exchange Active Sync IRM.
+Jeśli adresat chronionej wiadomości e-mail nie korzysta z serwera poczty Exchange lub jeśli nadawca należy do innej organizacji, tę zawartość można otworzyć wyłącznie przy użyciu wzbogaconego klienta poczty e-mail, na przykład programu Outlook. Nie można otworzyć tej zawartości przy użyciu usługi Outlook Web Access ani mobilnych klientów poczty używających funkcji Exchange Active Sync IRM.
 
 ##### Przypis 5
 Obsługuje wyświetlanie i edytowanie chronionych dokumentów. Aby uzyskać więcej informacji, zobacz następujący wpis w blogu pakietu Office: [Azure Rights Management support comes to Office for iPad and iPhone](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) (Obsługa usługi Azure Rights Management dołączana do pakietu Office dla urządzeń iPad i iPhone).
@@ -152,6 +152,6 @@ Aby uzyskać informacje o obsłudze usługi Azure RMS przez najczęściej używa
 Informacje o sposobach konfigurowania najczęściej używanych aplikacji dla usługi Azure RMS opisano w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](../deploy-use/configure-applications.md).
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

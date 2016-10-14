@@ -3,7 +3,7 @@ title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azur
 description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Szablony ułatwiają użytkownikom końcowym i innym administratorom stosowanie odpowiednich zasad służących do ochrony dokumentów i wiadomości e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -70,9 +70,11 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
         Jeśli ta strona nie zostanie wyświetlona natychmiast po wykonaniu instrukcji dotyczących usługi Office 365, należy skorzystać z opisanych powyżej instrukcji dotyczących nawigacji dla klasycznego portalu Azure.
 
-3.  Na stronie **Dodaj nowy szablon zasad praw** wybierz język, w jakim zostaną wprowadzone nazwa i opis szablonu, które będą widoczne dla użytkowników (w późniejszym czasie można dodać więcej języków). Następnie wprowadź unikatową nazwę, opis i kliknij przycisk Zakończ.
+3. Na stronie **Dodaj nowy szablon zasad praw** wybierz język, w jakim zostaną wprowadzone nazwa i opis szablonu, które będą widoczne dla użytkowników (w późniejszym czasie można dodać więcej języków). Następnie wprowadź unikatową nazwę, opis i kliknij przycisk Zakończ.
 
-Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
+    Nazwa i opis szablonu nie powinny zawierać dwukropków ani średników. Nie wszystkie usługi i aplikacje korzystające z szablonów usługi Rights Management obsługują te znaki w szablonach. W tym scenariuszu jest możliwe, że nie wszystkie usługi i aplikacje będą mogły pobrać szablony usługi Azure Rights Management lub ich użyć.
+
+4. Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
 
 ## Konfiguracja i publikacja szablonu niestandardowego
 
@@ -166,6 +168,6 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

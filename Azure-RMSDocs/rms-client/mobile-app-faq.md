@@ -4,7 +4,7 @@ description:
 keywords: "Niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
+ms.sourcegitcommit: fd11b55ec8ee11f594c33a5a46694d83b2db6953
+ms.openlocfilehash: ff2b28d9774682abbe77b484b097ea51709a3234
 
 
 ---
@@ -27,7 +27,7 @@ Na tej stronie znajdują się niektóre często zadawane pytania dotyczące korz
 
 ## Co można zrobić przy użyciu aplikacji Azure Information Protection?
 
-Dzięki tej aplikacji można wyświetlać (ale nie tworzyć ani na nie odpowiadać) chronione prawami wiadomości e-mail (pliki RPMSG). Ta aplikacja umożliwia także wyświetlanie (ale nie tworzenie ani edytowanie) chronionych prawami plików PDF, obrazów, plików tekstowych i innych formatów plików chronionych jako plik PFILE. 
+Dzięki tej aplikacji można wyświetlać chronione prawami wiadomości e-mail (pliki rpmsg). Ta aplikacja umożliwia także wyświetlanie chronionych prawami plików PDF, obrazów, plików tekstowych i innych formatów plików chronionych jako plik pfile. Obecnie przy użyciu tej aplikacji nie można tworzyć nowych chronionych wiadomości e-mail, odpowiadać na nie ani tworzyć i edytować plików chronionych.
 
 ## Czy mogę otwierać pliki PDF z chronionych bibliotek programów SharePoint i OneDrive dla Firm?
 
@@ -64,6 +64,6 @@ Należy zadać pytanie na naszej [witrynie Yammer](http://www.yammer.com/AskIPTe
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

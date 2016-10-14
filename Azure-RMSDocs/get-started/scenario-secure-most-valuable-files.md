@@ -3,7 +3,7 @@ title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików
 description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 
 ---
@@ -53,7 +53,7 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management została wdrożona na komputerze z systemem Windows, dlatego można objąć te pliki ochroną miejscową zgodnie z opisem w następnej sekcji.|[Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/install-sharing-app.md)|
 |Upoważnieni użytkownicy mają pakiet Office w wersji 2013 lub nowszy.|Użytkownicy, którzy mają pakiet Office 2010, muszą również zainstalować aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management.|
-|Twoja subskrypcja usługi Azure RMS obejmuje śledzenie dokumentów.|Jeśli subskrypcja usługi Azure RMS nie obejmuje śledzenia dokumentów i odwoływania praw dostępu, nie będzie można korzystać z witryny śledzenia dokumentów w celu sprawdzenia, kto uzyskuje dostęp do tych dokumentów, ani w razie potrzeby odwołać praw dostępu. W takim przypadku należy kupić subskrypcję, która obsługuje śledzenie dokumentów, lub zaakceptować to ograniczenie. Można także rozważyć skorzystanie z możliwości [rejestrowania użycia](../deploy-use/log-analyze-usage.md) w usłudze Azure RMS. Dzięki tej funkcji można sprawdzić, kto i kiedy uzyskiwał dostęp do poszczególnych plików, co ułatwia wykrywanie potencjalnie podejrzanego zachowania.<br /><br />Sprawdź informacje o subskrypcji na [stronie z cenami](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection.|
+|Twoja subskrypcja usługi Azure Information Protection obejmuje śledzenie dokumentów|Jeśli subskrypcja nie obejmuje śledzenia dokumentów i odwoływania praw dostępu, nie będzie można korzystać z witryny śledzenia dokumentów w celu sprawdzenia, kto uzyskuje dostęp do tych dokumentów, ani w razie potrzeby odwołać praw dostępu. W takim przypadku należy kupić subskrypcję, która obsługuje śledzenie dokumentów, lub zaakceptować to ograniczenie. Można także rozważyć skorzystanie z możliwości [rejestrowania użycia](../deploy-use/log-analyze-usage.md) w usłudze Azure Rights Management. Dzięki tej funkcji można sprawdzić, kto i kiedy uzyskiwał dostęp do poszczególnych plików, co ułatwia wykrywanie potencjalnie podejrzanego zachowania.<br /><br />Zapoznaj się z [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 ### Aby skonfigurować szablon niestandardowy
 
@@ -147,6 +147,6 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

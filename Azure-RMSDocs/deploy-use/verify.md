@@ -3,7 +3,7 @@ title: "Weryfikowanie usługi Azure Rights Management | Azure Information Protec
 description: "Instrukcje służące do sprawdzenia, czy usługa działa zgodnie z oczekiwaniami przez ochronę pliku lub wiadomości e-mail za pomocą jednego konta użytkownika, a następnie próbę otwarcia i użycia tej zawartości chronionej z innego konta użytkownika."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 665adbee40f5c1653a3c046231c5df450ee78c5f
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
 
 
 ---
@@ -26,20 +26,20 @@ Po aktywowaniu usługi Azure Rights Management w ramach usługi Azure Informatio
 
 Aby wykonać ten test, możesz użyć informacji z tematu [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](help-users.md).
 
-Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Mapa wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md) i użyj [narzędzia Analizator usług RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437) ułatwiającego identyfikowanie i rozwiązywanie problemów. Możesz również uruchamiać to narzędzie w celu ogólnego sprawdzania kondycji.
+Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Mapa wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md) i użyj [narzędzia Analizator usług RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437) ułatwiającego identyfikowanie i rozwiązywanie problemów. Możesz również uruchamiać to narzędzie w celu ogólnego sprawdzania kondycji.
 
 > [!TIP]
-> Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
+> Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
 ## Następne kroki
 
-Możesz monitorować wykorzystanie usługi Azure Rights Management przez organizację, korzystając z rejestrowania użycia. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md).
+Możesz monitorować wykorzystanie usługi Azure Rights Management przez organizację, korzystając z rejestrowania użycia. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).
 
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

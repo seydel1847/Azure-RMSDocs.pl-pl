@@ -3,7 +3,7 @@ title: "Plan wdrożenia usługi Azure Information Protection | Azure Information
 description: "Skorzystaj z tych procedur, aby przygotować się do wdrożenia usługi Azure Information Protection, przeprowadzić to wdrożenie, a następnie zarządzać usługą Azure Information Protection w swojej organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c99af9b39a2200c587390552d1b69716bcc0324
-ms.openlocfilehash: c971f92732f34800137e19cb43c08d9693834093
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 
 
 ---
@@ -29,7 +29,7 @@ Jeśli jednak chcesz szybko wypróbować usługę Azure Information Protection w
 > [!IMPORTANT]
 > Przed wykonaniem poniższych kroków zapoznaj się z tematem [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements-azure-rms.md).
 
-Wybierz plan wdrożenia, który jest odpowiedni dla Twojej organizacji i uwzględnia [subskrypcje](http://go.microsoft.com/fwlink/?LinkId=827589) zawierające potrzebne funkcje i możliwości:
+Wybierz plan wdrożenia, który jest odpowiedni dla Twojej organizacji i uwzględnia [subskrypcje zawierające potrzebne funkcje i możliwości](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features):
 
 - [Korzystanie z funkcji klasyfikacji, etykietowania i ochrony](#deployment-roadmap-for-classification-labeling-and-protection)
 
@@ -42,7 +42,7 @@ Wybierz plan wdrożenia, który jest odpowiedni dla Twojej organizacji i uwzglę
 > Już używasz usługi Azure Rights Management do ochrony danych? Możesz pominąć wiele z tych czynności i skoncentrować się na krokach 3 i 5.1.
 
 ### Krok 1: Potwierdzenie informacji o subskrypcji i przypisanie licencji użytkowników
-Przejrzyj informacje o subskrypcji na [stronie z cenami](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection, aby upewnić się, że Twoja organizacja korzysta z subskrypcji obejmujące oczekiwane funkcje i możliwości. Następnie przypisz licencję z tej subskrypcji do poszczególnych użytkowników w organizacji, którzy będą zajmować się klasyfikacją, etykietowaniem i ochroną dokumentów i wiadomości e-mail.
+Przejrzyj [informacje o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listę funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection, aby upewnić się, że Twoja organizacja korzysta z subskrypcji obejmującej oczekiwane funkcje i możliwości. Następnie przypisz licencję z tej subskrypcji do poszczególnych użytkowników w organizacji, którzy będą zajmować się klasyfikacją, etykietowaniem i ochroną dokumentów i wiadomości e-mail.
 
 ### Krok 2: Przygotowanie konta dzierżawy do używania usługi Azure Information Protection
 Przed rozpoczęciem korzystania z usługi Azure Information Protection należy wykonać następujące przygotowania:
@@ -85,9 +85,9 @@ Gdy użytkownicy nabiorą wprawy w etykietowaniu dokumentów i wiadomości e-mai
 
 Opcjonalnie rozważ skonfigurowanie następujących elementów:
 
--   Szablony niestandardowe, jeśli domyślne szablony zasad praw nie są wystarczające dla Twojej organizacji. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
+-   Szablony niestandardowe, jeśli domyślne szablony zasad praw nie są wystarczające dla Twojej organizacji. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
--   Rejestrowanie użytkowania, umożliwiające monitorowanie wykorzystania usługi Rights Management przez organizację. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+-   Rejestrowanie użytkowania, umożliwiające monitorowanie wykorzystania usługi Rights Management przez organizację. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 ### Krok 5: Skonfigurowanie zasad, aplikacji i usług Azure Information Protection pod kątem funkcji ochrony danych usługi Rights Management
 
@@ -116,7 +116,7 @@ Opcjonalnie rozważ skonfigurowanie następujących elementów:
     Jeśli masz usługi lokalne, których chcesz używać z usługą Azure Rights Management, zainstaluj i skonfiguruj łącznik usługi Rights Management. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 ### Krok 4. Rozpoczęcie korzystania i monitorowania rozwiązań ochrony danych
-Masz teraz wszystko gotowe do rozpoczęcia ochrony danych oraz rejestrowania sposobu korzystania z usługi Rights Management przez firmę. Aby uzyskać więcej informacji dotyczących tej fazy wdrożenia, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md) i [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+Masz teraz wszystko gotowe do rozpoczęcia ochrony danych oraz rejestrowania sposobu korzystania z usługi Rights Management przez firmę. Aby uzyskać więcej informacji dotyczących tej fazy wdrożenia, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md) oraz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 Jeśli interesuje Cię automatyczne chronienie plików przy użyciu infrastruktury klasyfikacji plików na serwerze plików opartym na systemie Windows, zobacz temat [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server](../rms-client/configure-fci.md).
 
@@ -127,26 +127,26 @@ Po rozpoczęciu korzystania z usługi Azure Rights Management pomocny może okaz
 ## Plan wdrożenia obejmujący tylko funkcje ochrony danych
 
 ### Krok 1. Sprawdź, czy masz subskrypcję obejmującą usługę Azure Rights Management
-Przejrzyj informacje o subskrypcji na [stronie z cenami](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection, aby upewnić się, że Twoja organizacja korzysta z subskrypcji obejmujące oczekiwane funkcje i możliwości. Następnie przypisz licencję z tej subskrypcji do poszczególnych użytkowników w organizacji, którzy będą zajmować się ochroną dokumentów i wiadomości e-mail za pomocą usługi Azure Rights Management.
+Przejrzyj [informacje o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listę funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection, aby upewnić się, że Twoja organizacja korzysta z subskrypcji obejmującej oczekiwane funkcje i możliwości. Następnie przypisz licencję z tej subskrypcji do poszczególnych użytkowników w organizacji, którzy będą zajmować się ochroną dokumentów i wiadomości e-mail za pomocą usługi Azure Rights Management.
 
 ### Krok 2. Przygotowanie konta dzierżawy do używania usługi Rights Management
 Przed rozpoczęciem korzystania z usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] przeprowadź następujące przygotowania:
 
 1.  Upewnij się, że dzierżawa usługi Office 365 obejmuje konta użytkowników i grupy, które będą używane przez usługę Azure Information Protection do uwierzytelniania użytkowników z organizacji. W razie potrzeby utwórz to konto i grupy lub zsynchronizuj je z katalogu lokalnego. Aby uzyskać więcej informacji, zobacz [Przygotowanie do wdrożenia usługi Azure Rights Management](prepare.md).
 
-2. Określ, czy Twoim kluczem dzierżawy powinna zarządzać firma Microsoft (opcja domyślna), czy też chcesz wygenerować klucz dzierżawy i zarządzać nim samodzielnie (opcja nazywana „przynieś własny klucz”, BYOK). Pamiętaj, że obecnie nie możesz korzystać z opcji BYOK, jeśli używasz usługi Exchange Online. Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md).
+2. Określ, czy Twoim kluczem dzierżawy powinna zarządzać firma Microsoft (opcja domyślna), czy też chcesz wygenerować klucz dzierżawy i zarządzać nim samodzielnie (opcja nazywana „przynieś własny klucz”, BYOK). Pamiętaj, że obecnie nie możesz korzystać z opcji BYOK, jeśli używasz usługi Exchange Online. Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
 3. Zainstaluj moduł Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] na co najmniej jednym komputerze z dostępem do Internetu. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
-4. Jeśli obecnie używasz lokalnych usług Rights Management: przeprowadź migrację, aby przenieść klucze, szablony i adresy URL do chmury. Aby uzyskać więcej informacji, zobacz [Migrowanie z usług AD RMS do usługi Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+4. Jeśli obecnie używasz lokalnych usług Rights Management: przeprowadź migrację, aby przenieść klucze, szablony i adresy URL do chmury. Aby uzyskać więcej informacji, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 5. Aktywuj usługę Rights Management, aby rozpocząć korzystanie z usługi. Jeśli wymagane jest wdrożenie etapowe, skonfiguruj kontrolki dołączania użytkowników, aby ograniczyć użytkowanie do określonych użytkowników. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 Opcjonalnie rozważ skonfigurowanie następujących elementów:
 
--   Szablony niestandardowe, jeśli domyślne szablony zasad praw nie są wystarczające dla Twojej organizacji. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
+-   Szablony niestandardowe, jeśli domyślne szablony zasad praw nie są wystarczające dla Twojej organizacji. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
--   Rejestrowanie użytkowania, umożliwiające monitorowanie wykorzystania usługi Rights Management przez organizację. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+-   Rejestrowanie użytkowania, umożliwiające monitorowanie wykorzystania usługi Rights Management przez organizację. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 ### Krok 3. Skonfiguruj aplikacje i usługi dla usługi Rights Management
 
@@ -172,7 +172,7 @@ Opcjonalnie rozważ skonfigurowanie następujących elementów:
 
 
 ### Krok 4. Rozpoczęcie korzystania i monitorowania rozwiązań ochrony danych
-Masz teraz wszystko gotowe do rozpoczęcia ochrony danych oraz rejestrowania sposobu korzystania z usługi Rights Management przez firmę. Aby uzyskać więcej informacji dotyczących tej fazy wdrożenia, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md) i [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
+Masz teraz wszystko gotowe do rozpoczęcia ochrony danych oraz rejestrowania sposobu korzystania z usługi Rights Management przez firmę. Aby uzyskać więcej informacji dotyczących tej fazy wdrożenia, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md) oraz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
 Jeśli interesuje Cię automatyczne chronienie plików przy użyciu infrastruktury klasyfikacji plików na serwerze plików opartym na systemie Windows, zobacz temat [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server](../rms-client/configure-fci.md).
 
@@ -183,6 +183,6 @@ Po rozpoczęciu korzystania z usługi Azure Rights Management pomocny może okaz
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

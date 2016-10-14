@@ -3,7 +3,7 @@ title: "Co to jest usługa Azure Rights Management? | Azure Information Protecti
 description: "Azure Rights Management (Azure RMS) to technologia ochrony używana przez usługę Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 21e8bd7bb4b749e0f086a0108bb89778f2d3ce73
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 3582aaba72347e8374f6cb856f52cd129bb83d3e
 
 
 ---
@@ -52,13 +52,13 @@ Aby dowiedzieć się więcej na temat usługi Azure RMS:
 
 Jeśli chcesz od razu rozpocząć korzystanie z usługi Azure RMS i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka Szybki start dotyczącego usługi Azure Rights Management](../get-started/quick-start-tutorial.md).
 
-Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
+Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, użyj [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
 > [!TIP]
-> Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Rights Management](../get-started/information-support.md).
+> Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Monitorowanie łącznika usługi Azure Rights Management | Azure Informa
 description: "Informacje dotyczące monitorowania łącznika i korzystania przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
 
 
 ---
@@ -171,7 +171,7 @@ Aby uzyskać dodatkowe informacje i instrukcje, zobacz sekcje **Szczegóły** i 
 
 Rejestrowanie użycia pomaga sprawdzić, kiedy wiadomości e-mail i dokumenty są chronione oraz używane. W przypadku korzystania z łącznika usługi RMS pole identyfikatora użytkownika w dziennikach zawiera główną nazwę usługi **Aadrm_S-1-7-0**, która jest tworzona automatycznie dla łącznika usługi RMS.
 
-Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md).
+Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).
 
 Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych, możesz użyć programu [Debugview](http://go.microsoft.com/fwlink/?LinkID=309277) dostępnego w witrynie Windows Sysinternals i włączyć śledzenie łącznika usługi RMS przez zmodyfikowanie pliku web.config domyślnej witryny w usługach IIS. Wykonaj następujące czynności:
 
@@ -192,6 +192,6 @@ Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych,
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

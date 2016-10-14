@@ -3,7 +3,7 @@ title: "Dane administratora i pomoc techniczna dla usługi Azure Information Pro
 description: "Zasoby dla administratorów, w tym informacje na temat nowych wersji, opcji pomocy technicznej oraz sposobu kontaktu z firmą Microsoft w celu zgłoszenia problemu."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 10/04/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40fadcda8a92b3427f46183a5e13e5ea5f689930
-ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
+ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
+ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 
 ---
@@ -29,7 +29,7 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 |… patrz zalecana dokumentacja dla usługi →|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
 |… Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |… Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Information Protection. Zobacz [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zastosowanie strony [Cennik](https://go.microsoft.com/fwlink/?LinkId=827589) w witrynie usługi Azure Information Protection.|
+|… Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
 ## Informacje o nowych wersjach
@@ -88,6 +88,6 @@ Rozwiązywanie problemów:
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
