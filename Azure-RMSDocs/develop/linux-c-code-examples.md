@@ -4,18 +4,18 @@ description: "W tym temacie przedstawiono ważne scenariusze i elementy kodu dla
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11c1598c19392c6ecf0e82817f0ddeecd02c28bf
-ms.openlocfilehash: f1c89418cf031eadaf2d65314e1686ae4f00aa8c
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
 
 
 ---
@@ -593,6 +593,6 @@ Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej.
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

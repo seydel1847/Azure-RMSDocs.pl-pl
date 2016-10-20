@@ -4,18 +4,18 @@ description: "W tym temacie omówiono typy aplikacji, które można wybrać do u
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: a27d1921336a795df5a3c91b36b97846e74cca34
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
 
 
 ---
@@ -62,6 +62,6 @@ Aby uzyskać więcej informacji o ochronie aplikacji, zobacz [Zrozumienie ograni
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

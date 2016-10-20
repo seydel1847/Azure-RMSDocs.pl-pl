@@ -4,18 +4,18 @@ description: "Powiadomienia e-mail umożliwiają powiadamianie właściciela chr
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b2234f2209962d3dfda10958e740e04a5e5a4f13
-ms.openlocfilehash: 54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 45724e633e1d31f17782e30713584fe3d3b281b1
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6
 
 Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości.
 
-Aby skonfigurować powiadomienia e-mail dla danej licencji, użyj polecenia [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) z parametrem typu właściwości *dwPropID* jako [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) oraz polami danych aplikacji sformatowanymi jako [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
+Aby skonfigurować powiadomienia e-mail dla danej licencji, użyj polecenia [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) z parametrem typu właściwości *dwPropID* jako [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) oraz polami danych aplikacji sformatowanymi jako [**IPC\_NAME\_VALUE\_LIST**](/information-protection/sdk/2.1/api/win/structures#msipc_ipc_name_value_list).
 
     C++
 
@@ -58,15 +58,15 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
 
 ## Tematy pokrewne
 
-* [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
-* [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)
-* [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)
+* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+* [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)
+* [**IPC\_NAME\_VALUE\_LIST**](/information-protection/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)
  
 
  
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

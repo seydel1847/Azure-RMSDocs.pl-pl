@@ -4,18 +4,18 @@ description: "Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korz
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
-ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 5972599c568091d39e8a6974648022c4835af1bb
 
 
 ---
@@ -59,6 +59,6 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

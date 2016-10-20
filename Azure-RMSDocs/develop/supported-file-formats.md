@@ -4,18 +4,18 @@ description: "Bieżąca wersja interfejsu API plików obsługuje natywną ochron
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
-ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
 
 
 ---
@@ -43,6 +43,6 @@ Administratorzy mogą ustawić klucze rejestru, aby określić, czy pliki mają 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

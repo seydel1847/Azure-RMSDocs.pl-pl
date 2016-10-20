@@ -4,18 +4,18 @@ description: "Definicje terminów specyficznych dla usług Rights Management Ser
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 5779cc10503ad7afe997e031a467021b513fc510
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: cf12a824d3d56ca2df234ba0732d0c4eaae6358e
 
 
 ---
@@ -46,6 +46,6 @@ Format PFile jest niewidoczny dla dewelopera aplikacji, ponieważ jest wbudowany
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

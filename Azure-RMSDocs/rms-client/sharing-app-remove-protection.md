@@ -1,27 +1,26 @@
 ---
-title: "Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS"
-description: 
-keywords: 
+title: "Usuwanie ochrony z pliku za pomocą aplikacji RMS sharing | Azure Information Protection"
+description: "Instrukcje dotyczące usuwania ochrony z pliku, który był wcześniej chroniony za pomocą aplikacji RMS sharing."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 4aea0c89e5d97a7a0190962e073f0b4bc95bef25
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 
 
 ---
 
 # Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Aby usunąć ochronę z pliku, który był wcześniej chroniony za pomocą aplikacji RMS sharing, skorzystaj z opcji **Usuń ochronę** w Eksploratorze plików.
 
@@ -52,6 +51,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

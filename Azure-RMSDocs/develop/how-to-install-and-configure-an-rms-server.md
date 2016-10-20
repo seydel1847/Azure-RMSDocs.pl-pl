@@ -4,18 +4,18 @@ description: "Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d56c6636cb7a33f104bc3901355c3601266ad30c
-ms.openlocfilehash: b97743d9a5c90cb46b39b4d8a462aa1acd64dfe1
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
 
 
 ---
@@ -96,6 +96,6 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

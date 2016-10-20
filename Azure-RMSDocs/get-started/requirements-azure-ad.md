@@ -1,30 +1,28 @@
 ---
-title: "Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD | Azure RMS"
-description: 
-keywords: 
+title: "Wymagania dotyczące usługi Azure Active Directory | Azure Information Protection"
+description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/29/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
 
 
 ---
 
-# Wymagania dotyczące usługi Azure RMS: katalog usługi Azure AD
+# Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-
-Aby korzystać z usługi Azure Rights Management (Azure RMS), musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji w tym katalogu do logowania się do klasycznego portalu Azure, w którym można na przykład konfigurować szablony usługi Rights Management i zarządzać nimi.
+Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji w tym katalogu do logowania się do klasycznego portalu Azure, w którym można na przykład konfigurować szablony usługi Rights Management i zarządzać nimi.
 
 Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej: przejdź na stronę [wprowadzenia do platformy Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
 
@@ -41,8 +39,8 @@ Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi A
 > 
 > -   Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
 
-## Usługi Multi-Factor Authentication (MFA) i Azure RMS
-Aby używać usługi Multi-Factor Authentication (MFA) z usługą Azure RMS, należy spełnić co najmniej jedno z następujących wymagań:
+## Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
+Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:
 
 -   Office 2013 (minimalna wersja):
 
@@ -71,11 +69,11 @@ Następnie skonfiguruj rozwiązanie MFA:
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
 
 ## Następne kroki
-Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
+Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

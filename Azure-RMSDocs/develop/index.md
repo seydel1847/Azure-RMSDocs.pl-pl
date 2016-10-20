@@ -4,18 +4,18 @@ description: "Obecnie dostępne są trzy generacje zestawu Rights Management SDK
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: azure
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 6f8a475907347e545eb3ea46fecc04013fa74c5e
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
 
 
 ---
@@ -52,6 +52,6 @@ Ta kolekcja przykładów kodu usług RMS i narzędzi wspierających twórców do
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

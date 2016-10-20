@@ -1,20 +1,19 @@
 ---
-title: "Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell | Azure RMS"
-description: 
-keywords: 
+title: "Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell | Azure Information Protection"
+description: "Wszystkie czynności, które można wykonać w klasycznym portalu Azure w zakresie tworzenia szablonów zarządzania uprawnieniami i zarządzania tymi szablonami, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 3a213388584424871304778f3df36f7d49b370bd
 
 
 ---
@@ -23,14 +22,14 @@ ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
 
 # Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-Wszystkie czynności, które można wykonać w klasycznym portalu Azure w celu tworzenia szablonów i zarządzania nimi, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy.
+Wszystkie czynności, które można wykonać w klasycznym portalu Azure w zakresie tworzenia szablonów zarządzania uprawnieniami i zarządzania tymi szablonami, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy.
 
 Można również używać funkcji eksportowania i importowania w celu tworzenia kopii zapasowych szablonów niestandardowych i ich przywracania. Najlepszym rozwiązaniem jest regularne tworzenie kopii zapasowych szablonów niestandardowych, dzięki któremu po ewentualnym przypadkowym wprowadzeniu zmiany można łatwo przywrócić poprzednią wersję szablonów.
 
 > [!IMPORTANT]
-> Aby użyć środowiska Windows PowerShell do tworzenia szablonów zasad praw usługi Azure RMS i zarządzania nimi, użytkownik musi dysponować co najmniej wersją 2.0.0.0 [modułu Windows PowerShell dla usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721).
+> Aby użyć programu Windows PowerShell do tworzenia szablonów usługi Azure Rights Management i zarządzania nimi, użytkownik musi dysponować [modułem Windows PowerShell dla usługi Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721) w wersji 2.0.0.0 lub nowszej.
 > 
 > Jeśli wcześniej zainstalowano ten moduł programu PowerShell, należy uruchomić następujące polecenie w oknie PowerShell, aby sprawdzić numer wersji: `(Get-Module aadrm -ListAvailable).Version`
 
@@ -60,6 +59,6 @@ Polecenia cmdlet używane do tworzenia szablonów i zarządzania nimi:
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,29 +1,28 @@
 ---
-title: "Scenariusz — konfigurowanie folderów roboczych do stałej ochrony | Azure RMS"
-description: 
-keywords: 
+title: "Scenariusz — konfigurowanie folderów roboczych do stałej ochrony | Azure Information Protection"
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika ochrona usługi Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w folderach roboczych."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
 
 
 ---
 
 # Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w [folderach roboczych](https://technet.microsoft.com/library/dn265974.aspx). Foldery robocze korzystają z usługi roli dla serwerów plików z systemem Windows Server, co zapewnia spójny sposób dostępu użytkowników do plików roboczych z komputerów i urządzeń. Chociaż foldery robocze mają własne szyfrowanie w celu ochrony plików, tracimy tę ochronę, jeśli pliki są przenoszone poza środowisko folderów roboczych. Na przykład użytkownicy kopiują zsynchronizowane pliki i zapisują je do magazynu, który nie jest pod kontrolą działu IT, lub przesyłają pliki pocztą e-mail do innych osób.
+W tym scenariuszu i dodatkowej dokumentacji użytkownika technologia usługi Azure Rights Management z usługi Azure Information Protection jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w [folderach roboczych](https://technet.microsoft.com/library/dn265974.aspx). Foldery robocze korzystają z usługi roli dla serwerów plików z systemem Windows Server, co zapewnia spójny sposób dostępu użytkowników do plików roboczych z komputerów i urządzeń. Chociaż foldery robocze mają własne szyfrowanie w celu ochrony plików, tracimy tę ochronę, jeśli pliki są przenoszone poza środowisko folderów roboczych. Na przykład użytkownicy kopiują zsynchronizowane pliki i zapisują je do magazynu, który nie jest pod kontrolą działu IT, lub przesyłają pliki pocztą e-mail do innych osób.
 
 Dodatkowa ochrona zapewniana przez usługę Azure Rights Management pomaga uniknąć przypadkowej utraty danych, zapobiegając wyświetlaniu plików przez osoby spoza organizacji. W tym celu można użyć jednego z wbudowanych domyślnych szablonów zasad praw dostępu. Jednak przed wdrożeniem tego scenariusza należy wziąć pod uwagę, czy użytkownicy mogą potrzebować legalnego udostępniania niektórych plików osobom spoza organizacji. Na przykład po zakończeniu pracy nad wstępnym cennikiem użytkownik może wysłać wiadomość e-mail z ostateczną wersją do klienta w innej organizacji. W przypadku użycia szablonu domyślnego usługi Rights Management dla folderów roboczych ten klient w innej organizacji nie mógłby przeczytać przesłanego dokumentu. Chcąc spełnić to wymaganie, można utworzyć szablon niestandardowy, który pozwala użytkownikom na zastosowanie nowych zasad praw dostępu do pliku, zastępując oryginalne ograniczenie, które pozwala wysyłać e-mail tylko do wszystkich pracowników.
 
@@ -52,11 +51,11 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Jeden z poniższych programów:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Łącznik usługi Rights Management jest zainstalowany, autoryzowany dla komputera z systemem Windows Server i skonfigurowany dla roli **serwera infrastruktury FCI**.|[Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx)|
-|Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management została wdrożona na komputerach użytkowników z systemem Windows.|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
+|Jedna z poniższych opcji:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|Łącznik usługi Rights Management jest zainstalowany, autoryzowany dla komputera z systemem Windows Server i skonfigurowany dla roli **serwera infrastruktury FCI**.|[Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)|
+|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
 ### Konfigurowanie niestandardowego szablonu zasad praw dostępu, aby użytkownicy mogli udostępniać pliki folderów roboczych poza organizacją
 
@@ -116,13 +115,13 @@ Jeśli pliki, które są chronione za pomocą usługi Azure Rights Management, n
 W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scenariuszu użytkownicy będą widzieć na pasku informacji następujący opis szablonu: **Ta zawartość jest chroniona przez foldery robocze, a dostęp do niej jest ograniczony tylko do pracowników firmy. Aby udostępnić tę zawartość osobom spoza organizacji, dołącz dokument do wiadomości e-mail i użyj funkcji Udostępnianie chronionej zawartości**. Chociaż ten opis zawiera podsumowanie sposobu udostępniania plików poza organizacją, użytkownicy będą prawdopodobnie potrzebować szczegółowych instrukcji, szczególnie na początku. Aby kontynuować realizację tego scenariusza, skorzystaj z instrukcji dla administratorów i użytkowników końcowych z tematu [Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji](scenario-share-office-file-externally.md).
 
 > [!TIP]
-> Jeśli zdecydujesz, aby nie używać szablonu niestandardowego opisanego w tych instrukcjach, ponieważ nie chcesz, aby użytkownicy mogli udostępniać te pliki poza organizację bez nadzoru działu IT, poinformuj dział pomocy technicznej, aby w przypadku uprawnionego wymagania udostępnienia, mogli je spełnić przy użyciu dowolnego mechanizmu najbardziej odpowiedniego dla firmy. Na przykład osoba, która jest [administratorem](https://technet.microsoft.com/library/mt147272.aspx) może zastosować do zawartości nowy szablon, który przyzna żądającemu użytkownikowi uprawnienia Pełna kontrola, aby ten użytkownik mógł następnie użyć funkcji Udostępnianie chronionej zawartości.
+> Jeśli zdecydujesz, aby nie używać szablonu niestandardowego opisanego w tych instrukcjach, ponieważ nie chcesz, aby użytkownicy mogli udostępniać te pliki poza organizację bez nadzoru działu IT, poinformuj dział pomocy technicznej, aby w przypadku uprawnionego wymagania udostępnienia, mogli je spełnić przy użyciu dowolnego mechanizmu najbardziej odpowiedniego dla firmy. Na przykład osoba, która jest [administratorem](../deploy-use/configure-super-users.md) może zastosować do zawartości nowy szablon, który przyzna żądającemu użytkownikowi uprawnienia Pełna kontrola, aby ten użytkownik mógł następnie użyć funkcji Udostępnianie chronionej zawartości.
 > 
-> Jeśli po upływie pewnego czasu stwierdzisz, że istnieje wiele takich żądań, możesz zdecydować się na zdefiniowanie własnego niestandardowego szablonu w tym scenariuszu, który przyzna prawo Współwłaściciel tylko określonym użytkownikom (np. menedżerom lub pomocy technicznej), natomiast standardowi użytkownicy będą mieli przyznane prawa Współautor lub jakiekolwiek [prawa dostępu](https://technet.microsoft.com/library/mt169423.aspx) uznane przez Ciebie za odpowiednie.
+> Jeśli po upływie pewnego czasu stwierdzisz, że istnieje wiele takich żądań, możesz zdecydować się na zdefiniowanie własnego niestandardowego szablonu w tym scenariuszu, który przyzna prawo Współwłaściciel tylko określonym użytkownikom (np. menedżerom lub pomocy technicznej), natomiast standardowi użytkownicy będą mieli przyznane prawa Współautor lub jakiekolwiek [prawa dostępu](../deploy-use/configure-usage-rights.md) uznane przez Ciebie za odpowiednie.
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

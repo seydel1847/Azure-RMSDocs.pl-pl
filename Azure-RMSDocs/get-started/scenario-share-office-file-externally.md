@@ -1,29 +1,28 @@
 ---
-title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Usługa Azure RMS"
-description: 
-keywords: 
+title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Azure Information Protection"
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana ochrona usługi Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 
 ---
 
 # Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana usługa Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management.
+W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana technologia usługi Azure Rights Management z usługi Azure Information Protection, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji. Plik pakietu Office może być na przykład dokumentem programu Word, arkuszem kalkulacyjnym programu Excel lub prezentacją programu PowerPoint. Może on zawierać informacje o cenach dla partnera, listę produktów dla odsprzedawcy lub listę pozycji czasów dostawy do potencjalnych klientów. Jeśli użytkownicy będą postępować zgodnie z instrukcjami, plik dołączony do wiadomości e-mail będzie chroniony za pomocą usługi Azure Rights Management.
 
 Ten scenariusz sprawdza się w następujących okolicznościach:
 
@@ -45,18 +44,18 @@ Aby zrealizować instrukcje dotyczące tego scenariusza, należy spełnić nast�
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory.|[Przygotowanie do korzystania z usługi Azure Information Protection](https://technet.microsoft.com/library/jj585029.aspx)|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|Użytkownicy korzystają z programu Outlook pakietu Office 2013|Jeśli użytkownicy korzystają z pakietu Office 2010, należy odpowiednio zmienić zrzut ekranu, aby odzwierciedlał zawartość wyświetlaną na ekranach użytkowników.|
-|Twoja subskrypcja usługi Azure RMS obejmuje śledzenie dokumentów|Jeśli Twoja subskrypcja usługi Azure RMS nie obejmuje śledzenia i odwoływania dokumentów, użytkownicy nie będą mogli wykonać wszystkich kroków opisanych w instrukcjach użytkownika. W takim przypadku należy zakupić subskrypcję, która obsługuje te funkcje, lub zmodyfikować instrukcje użytkownika, aby usunąć kroki dotyczące tych funkcji.<br /><br />Aby sprawdzić swoją subskrypcję, zobacz temat [Porównanie ofert usługi Rights Management (RMS)](https://technet.microsoft.com/dn858608)|
+|Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
+|Użytkownicy korzystają z programu Outlook pakietu Office 2013|Jeśli użytkownicy korzystają z pakietu Office 2016 lub Office 2010, należy odpowiednio zmienić zrzut ekranu, aby odzwierciedlał zawartość wyświetlaną na ekranach użytkowników.|
+|Twoja subskrypcja usługi Azure Information Protection obejmuje śledzenie dokumentów|Jeśli Twoja subskrypcja nie obejmuje śledzenia i odwoływania dokumentów, użytkownicy nie będą mogli wykonać wszystkich kroków opisanych w instrukcjach użytkownika. W takim przypadku należy zakupić subskrypcję, która obsługuje te funkcje, lub zmodyfikować instrukcje użytkownika, aby usunąć kroki dotyczące tych funkcji.<br /><br />Zapoznaj się z [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 ## Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
 
 1.  Zastąp zmienną *&lt;nazwa typu dokumentu pakietu Office&gt;* typem dokumentu, który użytkownicy będą wysyłać. Stosuj znaną terminologię charakterystyczną dla ich przepływów pracy, na przykład „cennik”, „czas dostawy” czy „oferta przetargowa” zamiast sformułowań typu „dokument programu Word” czy „arkusz kalkulacyjny programu Excel”. Precyzyjny dobór słów zwiększa prawdopodobieństwo, że użytkownicy zastosują się do instrukcji podczas pracy z dokumentami.
 
-2.  Zastąp *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi sposobu kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny sieci Web, adres e-mail lub numer telefonu.
+2.  Zastąp parametr *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny internetowej lub adres e-mail albo numer telefonu.
 
 3.  **Dodatkowe zmiany, które możesz wprowadzić:**
 
@@ -105,9 +104,9 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 -   Dodatkowe informacje:
 
-    -   [Ochrona pliku udostępnionego pocztą e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Śledzenie i odwoływanie dokumentów](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [Śledzenie i odwoływanie dokumentów](../rms-client/sharing-app-track-revoke.md)
 
 -   Skontaktuj się z działem pomocy technicznej:
 
@@ -144,9 +143,9 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 -   Dodatkowe informacje:
 
-    -   [Ochrona pliku udostępnionego pocztą e-mail](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [Ochrona pliku udostępnionego pocztą e-mail](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [Śledzenie i odwoływanie dokumentów](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [Śledzenie i odwoływanie dokumentów](../rms-client/sharing-app-track-revoke.md)
 
 -   Skontaktuj się z działem pomocy technicznej:
 
@@ -155,6 +154,6 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

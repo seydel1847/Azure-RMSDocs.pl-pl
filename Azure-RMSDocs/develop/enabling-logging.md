@@ -4,18 +4,18 @@ description: "Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywanie
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
-ms.openlocfilehash: 5faea360de8aa9ecb82abf25b5c1392d52d0afad
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 118aa3e25c6be9d0bf43141585d79030fc79224a
 
 
 ---
@@ -79,7 +79,7 @@ Włączanie automatycznego rejestrowania
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Więcej informacji o ustawieniach opcjonalnych można znaleźć w sekcji dotyczącej elementu [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
+Więcej informacji o ustawieniach opcjonalnych można znaleźć w sekcji dotyczącej elementu [CustomerExperienceOptions](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
 
 Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 
@@ -96,6 +96,6 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

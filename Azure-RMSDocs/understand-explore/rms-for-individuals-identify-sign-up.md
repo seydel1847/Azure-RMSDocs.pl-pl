@@ -1,20 +1,19 @@
 ---
-title: "Jak sprawdzić, czy użytkownicy utworzyli konto usługi RMS dla użytkowników indywidualnych | Azure RMS"
-description: 
-keywords: 
+title: "Jak sprawdzić, czy użytkownicy zarejestrowali się w usłudze RMS dla użytkowników indywidualnych | Azure Information Protection"
+description: "Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy użytkownicy utworzyli konta usługi RMS dla użytkowników indywidualnych. Można zastosować dowolną metodę opisaną w tym artykule lub kombinację różnych metod."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: e577366be26f7296079751e72fb6531b9e28c504
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: e577366be26f7296079751e72fb6531b9e28c504
 
 # Jak sprawdzić, czy użytkownicy utworzyli konto usługi RMS dla użytkowników indywidualnych
 
-*Dotyczy usługi Azure Rights Management*
+>*Dotyczy: Azure Information Protection*
 
 Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy użytkownicy utworzyli konta usługi RMS dla użytkowników indywidualnych. W tym celu można użyć jednej z poniższych metod lub ich dowolnej kombinacji:
 
@@ -37,6 +36,6 @@ Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

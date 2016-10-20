@@ -1,35 +1,34 @@
 ---
-title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure RMS"
-description: 
-keywords: 
+title: "Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików | Azure Information Protection"
+description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 
 ---
 
 # Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i dodatkowej dokumentacji użytkownika usługa Azure Rights Management jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem. Są to zazwyczaj pliki, do których dostęp powinno mieć tylko kilka osób. Mogą one zawierać na przykład przepisy kulinarne na potrawy będące specjalnością firmy lub plany przejęcia, których nie można opublikować przed upływem określonego terminu.
+W tym scenariuszu i dodatkowej dokumentacji użytkownika technologia usługi Azure Rights Management z usługi Azure Information Protection jest używana w celu zastosowania ręcznej i niestandardowej ochrony grupy plików zidentyfikowanych jako najbardziej wartościowe, aby zagwarantować im najwyższy poziom ochrony przed nieupoważnionym dostępem. Są to zazwyczaj pliki, do których dostęp powinno mieć tylko kilka osób. Mogą one zawierać na przykład przepisy kulinarne na potrawy będące specjalnością firmy lub plany przejęcia, których nie można opublikować przed upływem określonego terminu.
 
 Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
 -   Zidentyfikowano niewielki zestaw plików do objęcia ochroną.
 
--   Pliki mają jeden z formatów pakietu Office obsługujących usługę Rights Management. Jeśli pliki mają inne formaty (np. CAD), należy upewnić się, że te formaty obsługują usługę Azure RMS oraz że wdrożenie dotyczy aplikacji, które natywnie obsługują usługę Azure RMS. Aby uzyskać więcej informacji, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](https://technet.microsoft.com/library/jj585004.aspx).
+-   Pliki mają jeden z formatów pakietu Office obsługujących usługę Rights Management. Jeśli pliki mają inne formaty (np. CAD), należy upewnić się, że te formaty obsługują usługę Azure RMS oraz że wdrożenie dotyczy aplikacji, które natywnie obsługują usługę Azure RMS. Aby uzyskać więcej informacji, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
 
 -   Pliki zawierają ściśle poufne informacje, do których dostęp powinno mieć tylko kilka osób.
 
@@ -49,12 +48,12 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Dostęp uprzywilejowany**, zawierającą kilka osób, które powinny mieć dostęp do ściśle poufnych dokumentów.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Menedżerowie ds. zgodności IT**, zawierającą osoby, których zadania obejmują zbieranie elektronicznych materiałów dowodowych, monitorowanie i przeprowadzanie inspekcji.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management została wdrożona na komputerze z systemem Windows, dlatego można objąć te pliki ochroną miejscową zgodnie z opisem w następnej sekcji.|[Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Dostęp uprzywilejowany**, zawierającą kilka osób, które powinny mieć dostęp do ściśle poufnych dokumentów.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Menedżerowie ds. zgodności IT**, zawierającą osoby, których zadania obejmują zbieranie elektronicznych materiałów dowodowych, monitorowanie i przeprowadzanie inspekcji.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/deployment-roadmap.md)|
+|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management została wdrożona na komputerze z systemem Windows, dlatego można objąć te pliki ochroną miejscową zgodnie z opisem w następnej sekcji.|[Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/install-sharing-app.md)|
 |Upoważnieni użytkownicy mają pakiet Office w wersji 2013 lub nowszy.|Użytkownicy, którzy mają pakiet Office 2010, muszą również zainstalować aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management.|
-|Twoja subskrypcja usługi Azure RMS obejmuje śledzenie dokumentów.|Jeśli subskrypcja usługi Azure RMS nie obejmuje śledzenia dokumentów i odwoływania praw dostępu, nie będzie można korzystać z witryny śledzenia dokumentów w celu sprawdzenia, kto uzyskuje dostęp do tych dokumentów, ani w razie potrzeby odwołać praw dostępu. W takim przypadku należy kupić subskrypcję, która obsługuje śledzenie dokumentów, lub zaakceptować to ograniczenie. Można także rozważyć skorzystanie z możliwości [rejestrowania użycia](https://technet.microsoft.com/library/dn529121.aspx) w usłudze Azure RMS. Dzięki tej funkcji można sprawdzić, kto i kiedy uzyskiwał dostęp do poszczególnych plików, co ułatwia wykrywanie potencjalnie podejrzanego zachowania.<br /><br />Aby sprawdzić swoją subskrypcję, zobacz temat [Comparison of Rights Management Services (RMS) Offerings](https://technet.microsoft.com/dn858608) (Porównanie ofert usługi Rights Management (RMS)).|
+|Twoja subskrypcja usługi Azure Information Protection obejmuje śledzenie dokumentów|Jeśli subskrypcja nie obejmuje śledzenia dokumentów i odwoływania praw dostępu, nie będzie można korzystać z witryny śledzenia dokumentów w celu sprawdzenia, kto uzyskuje dostęp do tych dokumentów, ani w razie potrzeby odwołać praw dostępu. W takim przypadku należy kupić subskrypcję, która obsługuje śledzenie dokumentów, lub zaakceptować to ograniczenie. Można także rozważyć skorzystanie z możliwości [rejestrowania użycia](../deploy-use/log-analyze-usage.md) w usłudze Azure Rights Management. Dzięki tej funkcji można sprawdzić, kto i kiedy uzyskiwał dostęp do poszczególnych plików, co ułatwia wykrywanie potencjalnie podejrzanego zachowania.<br /><br />Zapoznaj się z [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 ### Aby skonfigurować szablon niestandardowy
 
@@ -86,7 +85,7 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 
 5.  Jeśli chcesz objąć ochroną więcej plików w innych folderach, powtórz kroki od 1 do 4 dla każdego folderu.
 
-Aby uzyskać więcej informacji na temat ochrony miejscowej plików, zobacz [Protect a file on a device (protect in-place) by using the Rights Management sharing application](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx) (Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management).
+Aby uzyskać więcej informacji na temat ochrony miejscowej plików, zobacz [Protect a file on a device (protect in-place) by using the Rights Management sharing application](../rms-client/sharing-app-protect-in-place.md) (Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management).
 
 > [!TIP]
 > Jeśli liczba plików do objęcia ochroną jest zbyt duża, aby można było wykonać ten ręczny proces, należy rozważyć użycie [narzędzia ochrony usług RMS](https://www.microsoft.com/en-us/download/details.aspx?id=47256) w celu zbiorczego objęcia plików ochroną plików przy użyciu szablonu.
@@ -112,7 +111,7 @@ Przy użyciu następującego szablonu skopiuj i wklej zawiadomienie do wiadomoś
 
 W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
-![Szablon dokumentacji użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
+![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Zawiadomienie działu IT: ochrona ściśle poufnych dokumentów organizacji &lt;nazwa organizacji&gt;.
 Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzięki czemu tylko &lt;wybrani użytkownicy&gt; mogą korzystać z tych plików i je modyfikować. Aby lepiej chronić pliki przed nieautoryzowanym dostępem, aplikacja będzie automatycznie żądać autoryzacji zawsze przy ich otwieraniu, dlatego w przypadku pracy z poniższymi plikami niezbędne jest połączenie internetowe i może zostać wyświetlony monit o podanie poświadczeń:
@@ -148,6 +147,6 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
