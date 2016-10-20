@@ -1,21 +1,21 @@
 ---
 title: "Jak pracować z ustawieniami szyfrowania | Azure RMS"
-description: "Ten artykuł kieruje użytkowników do pakietów szyfrowania firmy Microsoft"
+description: "Różne pakiety szyfrowania usługi Azure RMS i przykłady fragmentów kodu, w których zastosowano te pakiety."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29e856e3e9990f81a791c533ddad5a332093d5d3
-ms.openlocfilehash: 82903eff43ee2dee7ef64e618171225a06013d99
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 ---
@@ -40,7 +40,7 @@ Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględni
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (nazywane również przestarzałymi algorytmami)
 
-Flag pakietów szyfrowania (zobacz [**Preferowane szyfrowanie**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)) można używać razem z nową flagą właściwości licencji **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Flag pakietów szyfrowania (zobacz [**Preferowane szyfrowanie**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)) można używać razem z nową flagą właściwości licencji **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
 
 Poniższe przykłady fragmentu kodu przedstawiają sposób użycia nowej właściwości licencji.
 
@@ -103,6 +103,6 @@ W tym przykładzie przedstawiono również nową metodą obsługi *przestarzały
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

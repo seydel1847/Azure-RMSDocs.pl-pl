@@ -4,18 +4,18 @@ description: "Usługi AD RMS są objęte wsparciem rosnącej grupy deweloperów 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: 1476cfafbc3ecf619e66fee22f657c1714deffe8
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
 
 
 ---
@@ -50,6 +50,6 @@ Jeśli nie jesteś użytkownikiem zarejestrowanym w witrynie Microsoft Connect, 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

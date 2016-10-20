@@ -4,18 +4,18 @@ description: "Zestaw RMS SDK 4.2 koncentruje się na ułatwianiu tworzenia aplik
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
-ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
 
 
 ---
@@ -39,6 +39,6 @@ Poniższe tematy zawierają informacje przydatne w procesie projektowania aplika
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

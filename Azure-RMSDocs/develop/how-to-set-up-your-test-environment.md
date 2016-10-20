@@ -4,18 +4,18 @@ description: "Instrukcje dotyczące konfigurowania aplikacji na potrzeby testów
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b01f009ec3dffbb3fe671da8a19929e53c67fb79
-ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 
 ---
@@ -56,6 +56,6 @@ Wskazówki zawarte w tym temacie nie są kompletne. Aby uzyskać szczegółowe i
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

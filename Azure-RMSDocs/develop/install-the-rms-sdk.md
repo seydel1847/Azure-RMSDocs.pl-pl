@@ -4,25 +4,25 @@ description: "W tym temacie szczegółowo opisano proces instalacji narzędzi de
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: 839094716fa39957fbcbcdc4812d99fd742e4393
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 
 ---
 
 # Instalacja zestawu SDK
 
-Ten temat opisuje instalację narzędzi deweloperskich.
+W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
 
 ## Instrukcje
 
@@ -46,6 +46,6 @@ Aby uzyskać więcej informacji na temat plików instalowanych w systemie przez 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -4,18 +4,18 @@ description: "Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
-ms.openlocfilehash: 40eb6628f5204d422bf304f44d64cdf0dcd8537d
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 40eb6628f5204d422bf304f44d64cdf0dcd8537d
 # Wdrażanie w środowisku produkcyjnym
 
 
-Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw i przeprowadza Cię przez ten proces.
+Ten temat przedstawia opcje wdrażania aplikacji z obsługą praw i prowadzi Cię przez ten proces.
 
 ## Żądanie produkcyjnej umowy licencyjnej
 
@@ -132,6 +132,6 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

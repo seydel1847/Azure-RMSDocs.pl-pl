@@ -1,29 +1,28 @@
 ---
-title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure RMS"
-description: 
-keywords: 
+title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure Information Protection"
+description: "Zobacz nowości i zmiany w wersji aplikacji do udostępniania usługi Rights Management dla systemu Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf
-ms.openlocfilehash: ee2860da964b52bc41c0aea219110453f024b954
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
 
 
 ---
 
 # Aplikacja do udostępniania usługi Rights Management: historia wersji
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
-Zespół pracujący nad usługą Rights Management regularnie aktualizuje aplikację do udostępniania usługi Rights Management w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy.
+Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje aplikację RMS sharing w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy.
 
 W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
@@ -132,6 +131,6 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

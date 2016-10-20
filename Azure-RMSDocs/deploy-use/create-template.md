@@ -1,20 +1,19 @@
 ---
-title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure RMS
-description: 
-keywords: 
+title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure Information Protection
+description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Szablony ułatwiają użytkownikom końcowym i innym administratorom stosowanie odpowiednich zasad służących do ochrony dokumentów i wiadomości e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 10/03/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
-ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -22,12 +21,12 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 # Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
 
 Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie **Zaawansowane funkcje** odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure.
 
-Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usług Azure RMS, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usługi Azure Rights Management, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Wykonując poniższe procedury, można tworzyć, konfigurować i publikować szablony niestandardowe dla usługi Rights Management.
 
@@ -46,7 +45,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
         4.  W sekcji **Rights Management** kliknij opcję **Zaawansowane funkcje**.
 
             > [!NOTE]
-            > Jeśli usługa Rights Management nie została jeszcze aktywowana, najpierw kliknij pozycję **Aktywuj** i potwierdź wybór. Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
+            > Jeśli usługa Rights Management nie została aktywowana, najpierw kliknij pozycję **Aktywuj** i potwierdź wybór. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
             > 
             > Jeśli opcja **Zaawansowane funkcje** nie została wcześniej kliknięta, po aktywowaniu usługi Rights Management postępuj zgodnie z wyświetlanymi na ekranie instrukcjami w celu uzyskania bezpłatnej subskrypcji Azure, która jest wymagana do uzyskania dostępu do klasycznego portalu Azure.
 
@@ -56,7 +55,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
         1.  W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
 
-        2.  Na stronie **Active Directory** kliknij opcję **RIGHTS MANAGEMENT**.
+        2.  Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
 
         3.  Wybierz katalog, aby zarządzać usługą Rights Management.
 
@@ -71,9 +70,11 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
         Jeśli ta strona nie zostanie wyświetlona natychmiast po wykonaniu instrukcji dotyczących usługi Office 365, należy skorzystać z opisanych powyżej instrukcji dotyczących nawigacji dla klasycznego portalu Azure.
 
-3.  Na stronie **Dodaj nowy szablon zasad praw** wybierz język, w jakim zostaną wprowadzone nazwa i opis szablonu, które będą widoczne dla użytkowników (w późniejszym czasie można dodać więcej języków). Następnie wprowadź unikatową nazwę, opis i kliknij przycisk Zakończ.
+3. Na stronie **Dodaj nowy szablon zasad praw** wybierz język, w jakim zostaną wprowadzone nazwa i opis szablonu, które będą widoczne dla użytkowników (w późniejszym czasie można dodać więcej języków). Następnie wprowadź unikatową nazwę, opis i kliknij przycisk Zakończ.
 
-Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
+    Nazwa i opis szablonu nie powinny zawierać dwukropków ani średników. Nie wszystkie usługi i aplikacje korzystające z szablonów usługi Rights Management obsługują te znaki w szablonach. W tym scenariuszu jest możliwe, że nie wszystkie usługi i aplikacje będą mogły pobrać szablony usługi Azure Rights Management lub ich użyć.
+
+4. Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
 
 ## Konfiguracja i publikacja szablonu niestandardowego
 
@@ -167,6 +168,6 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

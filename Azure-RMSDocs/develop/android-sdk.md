@@ -4,18 +4,18 @@ description: "Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usłu
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: 4ff6328c0be4cd217390ee802e53e93c90f41c99
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
 
 
 ---
@@ -28,7 +28,7 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 
 -   [Wymagania wstępne](#prerequisites)
 -   [Opcjonalne](#optional)
--   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment_)
+-   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
 -   [Zobacz też](#see-also)
 
 ## Wymagania wstępne
@@ -102,7 +102,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
     ![Zaimportuj kod do obszaru roboczego](../media/Android-setup-07.png)
 
--   Kliknij przycisk **Next** (Dalej). Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. Zestaw SDK powinien być wyświetlany na liście jako **com.microsoft.rightsmanagement**.
+-   Kliknij przycisk **Dalej**. Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. Zestaw SDK powinien być wyświetlany na liście jako **com.microsoft.rightsmanagement**.
 
     ![Przejdź do folderu](../media/Android-setup-08c.jpg)
 
@@ -150,6 +150,6 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

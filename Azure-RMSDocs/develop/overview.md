@@ -4,18 +4,18 @@ description: "AD RMS i Azure RMS to technologia ochrony informacji, która pomag
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
-ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 390281fbc0a68346ec1cb4b943ddc5919a53fea0
 
 
 ---
@@ -64,6 +64,6 @@ Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

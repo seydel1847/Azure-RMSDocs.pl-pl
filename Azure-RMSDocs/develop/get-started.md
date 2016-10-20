@@ -4,18 +4,18 @@ description: "Przewodnik Szybki start po pierwszej aplikacji obejmuje przewodnik
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
 
 
 ---
@@ -56,6 +56,6 @@ W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

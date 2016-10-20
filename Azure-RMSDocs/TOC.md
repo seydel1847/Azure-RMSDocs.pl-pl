@@ -1,12 +1,12 @@
-# [Poznawanie i eksplorowanie](/rights-management/understand-explore/azure-rights-management)
-# [Wprowadzenie](/rights-management/get-started/requirements-azure-rms)
-# [Planowanie i projektowanie](/rights-management/plan-design/deployment-roadmap)
-# [Wdrażanie i korzystanie z usługi](/rights-management/deploy-use/activate-service)
-# [Wdrażanie i korzystanie z klienta](/rights-management/rms-client/use-client)
-# [Tworzenie i dostosowywanie aplikacji](/rights-management/develop/developers-guide)
-# [Administrowanie](/rights-management/administer/administer-powershell)
+# [Poznawanie i eksplorowanie](/information-protection/information-protection/what-is-information-protection)
+# [Wprowadzenie](/information-protection/get-started/requirements-azure-rms)
+# [Planowanie i projektowanie](/information-protection/plan-design/deployment-roadmap)
+# [Wdrażanie i korzystanie z usługi](/information-protection/deploy-use/activate-service)
+# [Wdrażanie i korzystanie z klienta](/information-protection/rms-client/use-client)
+# [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Sep16_HO4-->
 
 

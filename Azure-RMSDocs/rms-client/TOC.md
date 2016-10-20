@@ -1,9 +1,10 @@
-# [Poznawanie i eksplorowanie](/rights-management/understand-explore/azure-rights-management)
-# [Wprowadzenie](/rights-management/get-started/requirements-azure-rms)
-# [Planowanie i projektowanie](/rights-management/plan-design/deployment-roadmap)
-# [Wdrażanie i korzystanie z usługi](/rights-management/deploy-use/activate-service)
+# [Poznawanie i eksplorowanie](/information-protection/understand-explore/what-is-information-protection)
+# [Wprowadzenie](/information-protection/get-started/requirements-azure-rms)
+# [Planowanie i projektowanie](/information-protection/plan-design/deployment-roadmap)
+# [Wdrażanie i korzystanie z usługi](/information-protection/deploy-use/activate-service)
 # [Wdrażanie i korzystanie z klienta](use-client.md)
 ## [Klient usługi Rights Management](use-client.md)
+### [Instalowanie klienta usługi Azure Information Protection](info-protect-client.md)
 ### [Uwagi dotyczące wdrażania klienta usługi RMS](client-deployment-notes.md)
 ### [Ochrona za pomocą usługi RMS z użyciem infrastruktury FCI w systemie Windows Server](configure-fci.md)
 #### [Skrypt programu PowerShell](fci-script.md)
@@ -21,10 +22,9 @@
 ##### [Usuwanie ochrony](sharing-app-remove-protection.md)
 ##### [Używanie skrótów klawiaturowych](sharing-app-keyboard-shortcuts.md)
 ##### [Opcje okien dialogowych](sharing-app-dialog-box.md)
-# [Tworzenie i dostosowywanie aplikacji](/rights-management/develop/developers-guide)
-# [Azure Information Protection (wersja zapoznawcza)](/rights-management/information-protection/what-is-information-protection)
+# [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

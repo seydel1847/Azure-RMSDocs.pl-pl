@@ -1,37 +1,36 @@
 ---
-title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management | Azure RMS"
-description: 
-keywords: 
+title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji Rights Management sharing | Azure Information Protection"
+description: "Instrukcje dotyczące sposobu bezpiecznego udostępniania dokumentu za pomocą wiadomości e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 
 ---
 
 # Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management
 
-*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Włączenie ochrony pliku udostępnianego w wiadomości e-mail powoduje utworzenie nowej wersji oryginalnego pliku. Oryginalny plik pozostaje niechroniony, a jego nowa wersja jest chroniona i zostaje automatycznie dołączona do wysyłanej wiadomości e-mail.
 
-W niektórych przypadkach (dotyczących plików utworzonych w programach Microsoft Word, Excel i PowerPoint) aplikacja RMS sharing tworzy dwie wersje pliku, które dołącza do wiadomości e-mail. Druga wersja pliku ma rozszerzenie nazwy pliku **ppdf** i stanowi kopię w tle pliku w formacie PDF. Dzięki tej udostępnieniu tej wersji pliku adresat może otworzyć plik, nawet jeśli nie ma zainstalowanej aplikacji, w której go utworzono. Taka sytuacja często dotyczy osób, które chcą otwierać załączniki wiadomości e-mail na urządzeniach przenośnych. Do otwierania takich plików wystarczy im aplikacja RMS sharing. Załączony pliki można otworzyć, ale nie można go zmienić, o ile druga wersja pliku nie zostanie otwarta w aplikacji obsługującej usługi RMS.
+W niektórych przypadkach (dotyczących plików utworzonych w programach Microsoft Word, Excel i PowerPoint) aplikacja RMS sharing tworzy dwie wersje pliku, które dołącza do wiadomości e-mail. Druga wersja pliku ma rozszerzenie nazwy pliku **ppdf** i stanowi kopię w tle pliku w formacie PDF. Dzięki tej udostępnieniu tej wersji pliku adresat może otworzyć plik, nawet jeśli nie ma zainstalowanej aplikacji, w której go utworzono. Taka sytuacja często dotyczy osób, które chcą otwierać załączniki wiadomości e-mail na urządzeniach przenośnych. Do otwierania takich plików wystarczy im aplikacja RMS sharing. Załączony plik można otworzyć, ale nie można go zmienić, o ile druga wersja pliku nie zostanie otwarta w aplikacji obsługującej usługę Rights Management.
 
-Jeśli organizacja używa usług Azure RMS, możesz monitorować pliki chronione za pomocą udostępniania:
+Jeśli organizacja używa usługi Azure Information Protection, możesz monitorować pliki chronione za pomocą udostępniania:
 
 -   Zaznacz opcję, dzięki której będziesz otrzymywać wiadomość e-mail, jeśli ktoś spróbuje otworzyć chronione załączniki. Za każdym razem, kiedy ktoś spróbuje otworzyć plik, dowiesz się, kto to był, kiedy to zrobił i czy mu się to udało (czy został pomyślnie uwierzytelniony).
 
--   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS](sharing-app-track-revoke.md).
+-   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz artykuł [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md).
 
 ## Używanie programu Outlook: aby chronić plik udostępniany pocztą e-mail
 
@@ -70,7 +69,7 @@ Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można ta
 
     Przykład:
 
-    ![Wiadomość e-mail dotycząca usług Azure RMS](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Wiadomość e-mail dotycząca usługi Azure Information Protection](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
     Czy zastanawiasz się, [co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
@@ -93,6 +92,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

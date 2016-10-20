@@ -4,18 +4,18 @@ description: "Omówienie narzędzi dla deweloperów, zestawów SDK, dodatkowych 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 5010096d11524eb4f48fafcc6b2a5d85f48c8fe9
 
 
 ---
@@ -74,6 +74,6 @@ Poniższe elementy działają w systemie Windows Desktop obsługiwanym przez zes
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Oct16_HO1-->
 
 

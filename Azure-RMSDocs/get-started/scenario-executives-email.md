@@ -1,29 +1,28 @@
 ---
-title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej | Azure RMS"
-description: 
-keywords: 
+title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez członków kadry kierowniczej | Azure Information Protection"
+description: "W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano ochronę usługi Azure Rights Management, aby umożliwić członkom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona członków kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
 
 
 ---
 
-# Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez przedstawicieli kadry kierowniczej
+# Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez członków kadry kierowniczej
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
-W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano usługę Azure Rights Management, aby umożliwić przedstawicielom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona przedstawicieli kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności. Wiadomości e-mail i wszystkie załączniki będą automatycznie chronione przez usługę Azure Rights Management.
+W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano technologię usługi Azure Rights Management z usługi Azure Information Protection, aby umożliwić członkom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona członków kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności. Wiadomości e-mail i wszystkie załączniki będą automatycznie chronione przez usługę Azure Rights Management.
 
 W razie potrzeby do reguły można dodać wyjątek, na przykład tekst NCHR (skrót od „Niechroniona”) w temacie wiadomości e-mail, tak aby przedstawiciele kadry kierowniczej mogli korzystać z tej opcji w przypadku konieczności wysłania niechronionej wiadomości do swoich kolegów — na przykład w celu udostępnienia treści do wglądu przed wysłaniem wiadomości do innych osób.
 
@@ -45,12 +44,12 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
-|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Kierownicy** i dodano do niej wszystkich przedstawicieli kadry kierowniczej.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do wdrożenia usługi Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Klucz dzierżawy usługi Azure Rights Management jest zarządzany przez firmę Microsoft. Nie jest używana funkcja BYOK.|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](https://technet.microsoft.com/library/dn440580.aspx)|
-|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Występuje jedna z poniższych konfiguracji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Exchange Online: konfiguracja usługi IRM** w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](https://technet.microsoft.com/library/jj585031.aspx).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](https://technet.microsoft.com/library/dn375964.aspx).|
-|Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](https://technet.microsoft.com/library/dn642472.aspx)|
-|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|Zostały przygotowane konta i grupy dla usługi Office 365 lub Azure Active Directory:<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Kierownicy** i dodano do niej wszystkich przedstawicieli kadry kierowniczej.<br /><br />– Utworzono grupę z włączoną obsługą poczty o nazwie **Administratorzy usługi RMS** i dodano do niej wszystkich administratorów, którzy będą konfigurować usługę Azure RMS.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
+|Klucz dzierżawy usługi Azure Information Protection jest zarządzany przez firmę Microsoft; nie jest używany scenariusz BYOK|[Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md)|
+|Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|Występuje jedna z poniższych konfiguracji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz artykuł [Usługa Exchange Online: konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).|
+|Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+|Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Przepływ poczty lub reguły transportu](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### Aby skonfigurować szablon niestandardowy dla przedstawicieli kadry kierowniczej
 
@@ -103,7 +102,7 @@ Skorzystaj z poniższego szablonu i skopiuj to zawiadomienie do wiadomości dla 
 
 W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dostosowane zawiadomienie, które zobaczą użytkownicy.
 
-![Szablon dokumentacji użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
+![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
 ### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; są teraz automatycznie chronione.
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
@@ -117,7 +116,7 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 -   Skontaktuj się z działem pomocy technicznej: &lt;dane kontaktowe&gt;
 
 ### Przykładowa dokumentacja użytkownika
-![Przykładowa dokumentacja użytkownika na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
+![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
 #### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie VanArsdel są teraz automatycznie chronione
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie VanArsdel będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
@@ -133,6 +132,6 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

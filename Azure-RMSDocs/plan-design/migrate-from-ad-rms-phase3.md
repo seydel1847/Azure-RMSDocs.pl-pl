@@ -1,53 +1,50 @@
 ---
-title: "Migrowanie z usług AD RMS do usługi Azure Rights Management — faza 3 | Azure RMS"
-description: 
-keywords: 
-author: cabailey
-manager: mbaldwin
-ms.date: 08/17/2016
+title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 3 | Azure Information Protection"
+description: "Faza 3 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca kroki 6 i 7 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection"
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
+ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
+ms.openlocfilehash: 8f7f27f3b9def4b38f5de45b9d9686208a4f5283
 
 
 ---
 
 # Faza 3 migracji — konfiguracja usług pomocniczych
 
-*Dotyczy usług: Active Directory Rights Management Services, Azure Rights Management*
+>*Dotyczy: Active Directory Rights Management, Azure Information Protection, Office 365*
 
 
-Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania usług AD RMS do usługi Azure Rights Management (Azure RMS). Te procedury obejmują kroki od 6 do 7 z sekcji [Migrowanie z usług AD RMS do usługi Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md).
+Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki 6 i 7 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 
 ## Krok 6. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online
 
-Jeśli wcześniej zaimportowano zaufaną domenę publikacji z usług AD RMS do usługi Exchange Online, należy usunąć tę domenę, aby uniknąć konfliktu szablonów i zasad po przeprowadzeniu migracji do usługi Azure RMS. W tym celu użyj polecenia cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w usłudze Exchange Online.
+Jeśli wcześniej zaimportowano zaufaną domenę publikacji z usługi AD RMS do usługi Exchange Online, należy usunąć tę domenę, aby uniknąć konfliktu szablonów i zasad po przeprowadzeniu migracji do usługi Azure Information Protection. W tym celu użyj polecenia cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w usłudze Exchange Online.
 
-W przypadku wybrania topologii klucza dzierżawy usługi Azure RMS **Zarządzany przez firmę Microsoft**:
+W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Protection **Zarządzany przez firmę Microsoft**:
 
--   Zobacz sekcję [Exchange Online: IRM configuration](../deploy-use/configure-office365.md#exchange-online-irm-configuration) (Usługa Exchange Online: konfiguracja funkcji IRM) artykułu [Office 365: Configuration for clients and online services](../deploy-use/configure-office365.md) (Usługa Office 365: konfiguracja dla klientów i usług online). Ta sekcja zawiera typowe polecenia uruchamiane w celu nawiązania połączenia z usługą Exchange Online, importowania klucza dzierżawy z usługi Azure RMS oraz włączania funkcji IRM na potrzeby usługi Exchange Online. Po wykonaniu tych kroków dostępna będzie pełna funkcjonalność usługi RMS z usługą Exchange Online.
+-   Zobacz sekcję [Exchange Online: IRM configuration](../deploy-use/configure-office365.md#exchange-online-irm-configuration) (Usługa Exchange Online: konfiguracja funkcji IRM) artykułu [Office 365: Configuration for clients and online services](../deploy-use/configure-office365.md) (Usługa Office 365: konfiguracja dla klientów i usług online). Ta sekcja zawiera typowe polecenia uruchamiane w celu nawiązania połączenia z usługą Exchange Online, importowania klucza dzierżawy z usługi Azure Information Protection oraz włączania funkcji IRM na potrzeby usługi Exchange Online. Po wykonaniu tych kroków dostępna będzie pełna funkcjonalność ochrony za pomocą usługi Azure Rights Management z usługą Exchange Online.
 
-W przypadku wybrania topologii klucza dzierżawy usługi Azure RMS **Zarządzany przez klienta (BYOK)**:
+W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Protection **Zarządzany przez klienta (BYOK)**:
 
--   Funkcjonalność usług RMS zostanie ograniczona w programie Exchange Online zgodnie z opisem w artykule [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).
+-   Funkcjonalność ochrony za pomocą usług Rights Management zostanie ograniczona w programie Exchange Online zgodnie z opisem w artykule [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).
 
 ## Krok 7. Wdrażanie łącznika usługi RMS
-W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Exchange Server lub SharePoint Server z usługami AD RMS należy najpierw wyłączyć funkcję IRM na tych serwerach i usunąć konfigurację usług AD RMS. Następnie można wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą Azure RMS.
+W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Exchange Server lub SharePoint Server z usługą AD RMS należy najpierw wyłączyć funkcję IRM na tych serwerach i usunąć konfigurację usługi AD RMS. Następnie można wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą ochrony dla usługi Azure Information Protection.
 
-Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele plików danych konfiguracji usługi AD RMS (XML) użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
+Na zakończenie tego kroku — jeśli do usługi Azure Information Protection zaimportowano wiele plików danych konfiguracji usługi AD RMS (XML) użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
-> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure RMS zgodnie z opisem z sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
+> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Information Protection zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
 
-### Wyłączanie funkcji IRM na serwerach Exchange Server i usuwanie konfiguracji usług AD RMS
+### Wyłączanie funkcji IRM na serwerach Exchange Server i usuwanie konfiguracji usługi AD RMS
 
 1.  Na każdym serwerze programu Exchange znajdź następujący folder i usuń z niego wszystkie wpisy: \ProgramData\Microsoft\DRM\Server\S-1-5-18
 
@@ -77,7 +74,7 @@ Na zakończenie tego kroku — jeśli do usługi Azure RMS zaimportowano wiele p
 
 6.  Na każdym serwerze Exchange Server zresetuj usługi IIS, na przykład uruchamiając wiersz polecenia jako administrator, a następnie wpisując ciąg **iisreset**.
 
-### Wyłączanie funkcji IRM na serwerach SharePoint Server i usuwanie konfiguracji usług AD RMS
+### Wyłączanie funkcji IRM na serwerach SharePoint Server i usuwanie konfiguracji usługi AD RMS
 
 1.  Upewnij się, że nie istnieją żadne dokumenty wyewidencjonowane z bibliotek chronionych za pomocą usługi RMS. Jeśli takie dokumenty istnieją, po zakończeniu wykonywania tej procedury staną się niedostępne.
 
@@ -215,6 +212,6 @@ Po wykonaniu tych procedur zapoznaj się z sekcją **Następne kroki** w artykul
 Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-from-ad-rms-phase4.md).
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

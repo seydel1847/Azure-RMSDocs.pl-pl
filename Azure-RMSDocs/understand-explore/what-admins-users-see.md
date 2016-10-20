@@ -1,20 +1,19 @@
 ---
-title: "Co widzą administratorzy i użytkownicy? | Azure RMS"
-description: 
-keywords: 
+title: "Co widzą administratorzy i użytkownicy? | Azure Information Protection"
+description: "Zapoznaj się z kilkoma typowymi przykładami opisującymi, co administratorzy i użytkownicy mogą zobaczyć w usłudze Azure Rights Management (Azure RMS) i jak mogą chronić informacje poufne przy użyciu tej technologii."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 10/05/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
 
 # Azure RMS w działaniu: co widzą administratorzy i użytkownicy
 
-*Dotyczy usług: Azure Rights Management, Office 365*
+>*Dotyczy: Azure Information Protection, Office 365*
 
 W tym artykule przedstawiono kilka typowych przykładów opisujących, co administratorzy i użytkownicy mogą zobaczyć w usłudze Azure Rights Management (Azure RMS) i jak mogą chronić informacje poufne przy jej użyciu.
 
@@ -242,6 +241,6 @@ Skoro już znasz przykłady możliwości usługi Azure RMS, być może zechcesz 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

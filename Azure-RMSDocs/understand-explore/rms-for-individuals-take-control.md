@@ -1,20 +1,19 @@
 ---
-title: "Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych | Azure RMS"
-description: 
-keywords: 
+title: "Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych | Azure Information Protection"
+description: "Sposób kontrolowania kont użytkowników w usłudze Azure Active Directory, jeśli nie chcesz przekształcać subskrypcji usług RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
 
 
 ---
@@ -23,7 +22,7 @@ ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
 
 # Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych
 
-*Dotyczy: Azure Rights Management*
+>*Dotyczy: Azure Information Protection*
 
 
 Jeśli nie chcesz przekształcać subskrypcji usługi RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną, możesz nadal kontrolować konta użytkowników w katalogu Azure utworzonym dla organizacji przy użyciu następujących metod:
@@ -32,9 +31,9 @@ Jeśli nie chcesz przekształcać subskrypcji usługi RMS dla użytkowników ind
 
 -   Możesz zablokować rejestrację użytkowników w celu korzystania z usługi Azure Rights Management przy użyciu subskrypcji usługi RMS dla użytkowników indywidualnych. W większości przypadków korzyści z tego są niewielkie, ponieważ użytkownicy udostępniają pliki bez zabezpieczeń (co może narażać firmę na ryzyko) lub korzystają z innego mechanizmu ochrony plików, który nie zapewnia działowi IT opcji dostępu do danych. Jeśli jednak chcesz zapobiec rejestrowaniu się użytkowników w celu korzystania z usługi RMS dla użytkowników indywidualnych, wykonaj jedno z poniższych działań po przejęciu praw własności do katalogu organizacji na platformie Azure:
 
-    -   Zablokuj rejestrację wszystkich użytkowników do subskrypcji samoobsługowych, w tym usługi RMS dla użytkowników indywidualnych.  Obecnie nie można wykonać tego działania dla poszczególnych usług. Ustawienie obowiązuje dla wszystkich subskrypcji platformy Azure, które korzystają z samoobsługi. W tym celu ustaw wartość false parametru **AllowAdHocSubscriptions** przy użyciu polecenia cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) w module Windows PowerShell dla usługi Azure Active Directory. Na przykład: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
+    -   Zablokuj rejestrację wszystkich użytkowników do subskrypcji samoobsługowych, w tym usługi RMS dla użytkowników indywidualnych.  Obecnie nie można wykonać tego działania dla poszczególnych usług. Ustawienie obowiązuje dla wszystkich subskrypcji platformy Azure, które korzystają z samoobsługi. W tym celu ustaw wartość false dla parametru **AllowAdHocSubscriptions** przy użyciu polecenia cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) w module PowerShell dla usługi Azure Active Directory. Na przykład: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   Zablokuj tworzenie nowych kont użytkowników na platformie Azure. Oznacza to, że tylko użytkownicy mający już konto na platformie Azure mogą zarejestrować się do subskrypcji samoobsługowych, w tym usługi RMS dla użytkowników indywidualnych.  W tym celu ustaw wartość false parametru **AllowEmailVerifiedUsers** przy użyciu polecenia cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) w module Windows PowerShell dla usługi Azure Active Directory. Na przykład: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
+    -   Zablokuj tworzenie nowych kont użytkowników na platformie Azure. Oznacza to, że tylko użytkownicy mający już konto na platformie Azure mogą zarejestrować się do subskrypcji samoobsługowych, w tym usługi RMS dla użytkowników indywidualnych.  W tym celu ustaw wartość false dla parametru **AllowEmailVerifiedUsers** przy użyciu polecenia cmdlet [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) w module PowerShell dla usługi Azure Active Directory. Na przykład: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
     -   Zsynchronizuj infrastrukturę Usług domenowych Active Directory z usługą Azure Active Directory. Ta akcja uniemożliwia tworzenie nowych kont przy rejestrowaniu użytkowników do subskrypcji samoobsługowych, takich jak usługa RMS dla użytkowników indywidualnych, a także pozwala na usuwanie i wyłączanie kont utworzonych wcześniej w katalogu platformy Azure.
 
@@ -47,6 +46,6 @@ Jeśli to użytkownicy, a nie administratorzy, mogą tworzyć swoje konta w usł
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
