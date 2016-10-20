@@ -142,7 +142,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 [Terminy i pojęcia dla deweloperów](core-concepts.md)
 
-[Dokumentacja interfejsu API systemu Android](android-namespaces.md)
+[Dokumentacja interfejsu API systemu Android](https://msdn.microsoft.com/library/dn758245.aspx)
 
  
 

@@ -4,7 +4,7 @@ description: "Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -23,11 +23,11 @@ ms.openlocfilehash: bb20d796e5a852aa9da224cbf218b9a166a9dbd8
 # Dokumentacja interfejsu API
 
 Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows. Aby uzyskać więcej szczegółowych informacji, zobacz [Informacje o wersji](release-notes-rtm.md).
-- [Stałe](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/constants)
-- [Typy danych](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/data types)
-- [Funkcje](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/functions)
-- [Struktury](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/structures)
-- [Kody błędów](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/Error codes)
+- [Stałe](https://msdn.microsoft.com/library/hh535291.aspx)
+- [Typy danych](https://msdn.microsoft.com/library/hh535288.aspx)
+- [Funkcje](https://msdn.microsoft.com/library/hh535289.aspx)
+- [Struktury](https://msdn.microsoft.com/library/hh535294.aspx)
+- [Kody błędów](https://msdn.microsoft.com/library/hh535248.aspx)
 
 
 
