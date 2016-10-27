@@ -108,14 +108,11 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 * [Terminy i pojęcia dla deweloperów](core-concepts.md)
 
-* [Dokumentacja interfejsu API dla systemu iOS/OS X](/information-protection/sdk/4.2/api/ios/ios)
+* [Dokumentacja interfejsu API dla systemu iOS/OS X](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 
  
-
-
-
 
 
 

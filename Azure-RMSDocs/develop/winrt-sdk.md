@@ -82,7 +82,7 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla Sklepu Wi
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Dokumentacja interfejsu API systemu Windows](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Dokumentacja interfejsu API systemu Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
 
 

@@ -78,7 +78,7 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu W
 
 [Opracowywanie aplikacji dla systemu Windows Phone](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
 
-[Dokumentacja interfejsu API systemu Windows](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Dokumentacja interfejsu API systemu Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
