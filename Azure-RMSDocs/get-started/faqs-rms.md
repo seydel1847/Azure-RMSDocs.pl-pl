@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi ochrony danych Azure Rights 
 description: "Niektóre często zadawane pytania dotyczące usługi ochrony danych Azure Rights Management (Azure RMS) z usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 114dfd2a0f19205432771b5dc17ddcb60f7ec44b
+ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
+ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
 
 
 ---
@@ -94,7 +94,7 @@ Jak jasno wskazuje nazwa opcji, nowy typ grupy jest dostępny w wersji zapoznawc
 
 
 ## Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
-Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Wymagania dotyczące usługi Azure RMS: urządzenia klienckie, które obsługują usługę Azure RMS](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą w sekcji [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).
+Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą w sekcji [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
 
 Usługa Azure Rights Management obsługuje wszystkie typy plików. W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz niektórych typów plików innych aplikacji usługa Azure Rights Management zapewnia natywną ochronę obejmującą zarówno szyfrowanie, jak i wymuszanie praw (uprawnień). W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia hermetyzację plików oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest uprawniony do otwarcia pliku.
 
@@ -129,6 +129,18 @@ Należy użyć funkcji administratora usługi Azure RMS pozwalającej uprawionym
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie superużytkowników usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
 
+## Podczas testowania odwołania w witrynie śledzenia dokumentów wyświetlany jest komunikat informujący, że użytkownicy mogą nadal uzyskiwać dostęp do dokumentu przez okres do 30 dni — czy ten okres można skonfigurować?
+
+Tak. Ten komunikat odzwierciedla licencję użytkowania dla tego określonego pliku. Licencja użytkowania to powiązany z dokumentem certyfikat przyznawany użytkownikowi, który otwiera chroniony plik lub wiadomość e-mail. Ten certyfikat zawiera prawa użytkownika dla pliku lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości, a także dodatkowe ograniczenia dostępu zdefiniowane w zasadach dokumentu. Jeśli okres ważności licencji użytkowania zakończył się i użytkownik próbuje otworzyć plik lub wiadomość e-mail, poświadczenia użytkownika muszą zostać ponownie przesłane do usługi Azure Rights Management. 
+
+W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy użytkownik jest uwierzytelniany w usłudze Azure Rights Management. A więc jeśli plik ma 30-dniowy okres ważności licencji użytkowania, a użytkownik ma już otwarty dokument, ten użytkownik będzie mieć nadal dostęp do dokumentu przez czas trwania licencji użytkowania. Po wygaśnięciu licencji użytkowania użytkownik musi zostać ponownie uwierzytelniony i w tym momencie nastąpi odmowa dostępu, ponieważ dokument będzie już teraz odwołany.
+
+Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx). To ustawienie można przesłonić bardziej restrykcyjnym ustawieniem w szablonie niestandardowym. 
+
+Ustawienie dzierżawy i ustawienie szablonu mogą zostać przesłonięte przez użytkowników, jeśli używają oni aplikacji RMS sharing i wybiorą opcję **Zezwalaj mi na natychmiastowe odwołanie dostępu do tych dokumentów**. To ustawienie efektywnie ustawia okres ważności licencji użytkowania na 0. 
+
+Aby uzyskać dodatkowe informacje i przykłady sposobu działania licencji użytkowania, zobacz szczegółowy opis polecenia [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx).
+
 ## Czy usługa Rights Management może uniemożliwiać przechwytywanie ekranu?
 Przez nieprzyznanie [prawa użytkowania](../deploy-use/configure-usage-rights.md) **Kopiowanie** usługa Rights Management może zapobiegać przechwytywaniu ekranu za pomocą wielu typowych narzędzi na różnych platformach Windows (Windows 7, Windows 8.1, Windows 10, Windows Phone) i Android. Jednak urządzenia z systemem iOS i komputery Mac nie zezwalają żadnej aplikacji na zapobieganie przechwytywaniu ekranu. Podobna sytuacja ma miejsce w przypadku przeglądarek (na przykład używanych łącznie z aplikacjami Outlook Web App i Office Online), które również nie mogą uniemożliwiać przechwytywania ekranu.
 
@@ -145,6 +157,6 @@ Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest pr
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

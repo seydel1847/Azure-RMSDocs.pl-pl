@@ -3,7 +3,7 @@ title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — 
 description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca krok 5 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
+ms.sourcegitcommit: 25f7c2e5eb226fcf7c30026a37a767e559a522ad
+ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
 
 
 ---
@@ -39,6 +39,8 @@ W przypadku klientów systemu Windows:
 
     > [!IMPORTANT]
     > Instrukcje zawierają opis zastępowania przykładowych adresów **adrms** i **adrms.contoso.com** adresami Twoich serwerów usługi AD RMS. Gdy to robisz, należy sprawdzić, czy nie występują żadne dodatkowe spacje przed adresami lub po nich, które spowodują przerwanie skryptu migracji i są bardzo trudne do zidentyfikowania jako główna przyczyna problemu. Niektóre narzędzia do edycji automatycznie dodają spację po wklejeniu tekstu.
+    >
+    > Ponadto jeśli serwery usług AD RMS używają certyfikatów serwera SSL/TLS, sprawdź, czy wartości adresu URL licencjonowania obejmują numer portu **443** wewnątrz ciągu. Na przykład: https:// rms.treyresearch.net:443/_wmcs/licensing. Te informacje można znaleźć w konsoli usług Active Directory Rights Management Services po kliknięciu nazwy klastra i wyświetleniu informacji **Szczegóły klastra**. Jeśli widzisz numer portu 443 zawarty w adresie URL, uwzględnij tę wartość podczas modyfikowania skryptu. Na przykład https://rms.treyresearch.net**:443**.
 
 3. Jeśli użytkownicy posiadają pakiet Office 2016: skrypty nie zostały jeszcze zaktualizowane w celu uwzględnienia konfiguracji programu Office 2016, więc jeśli użytkownicy mają tę wersję pakietu Office, należy ręcznie zaktualizować skrypty:
 
@@ -131,6 +133,6 @@ Redirect_OnPrem.cmd:
 Aby kontynuować migrację, przejdź do [fazy 3 — konfiguracja usług pomocniczych](migrate-from-ad-rms-phase3.md).
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

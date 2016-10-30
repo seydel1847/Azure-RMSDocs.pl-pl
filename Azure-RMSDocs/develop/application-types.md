@@ -4,7 +4,7 @@ description: "W tym temacie omówiono typy aplikacji, które można wybrać do u
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
+ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
+ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
 
 
 ---
@@ -29,7 +29,7 @@ Następujące typy aplikacji są obecnie obsługiwane przez zestaw Rights Manage
 
 ## Proste aplikacje
 
-Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zaszyfrowania podanego pliku. Aby zapoznać się z przykładem prostej aplikacji obsługującej prawa, zobacz temat [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md).
+Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zaszyfrowania podanego pliku. Przykład prostej, obsługującej prawa aplikacji zawiera implementacja *IPCHelloWorld* opisana w sekcji [Tworzenie aplikacji](developing-your-application.md).
 
 ### Aplikacje w trybie serwera
 
@@ -55,13 +55,13 @@ Aby uzyskać więcej informacji o ochronie aplikacji, zobacz [Zrozumienie ograni
 
 ## Tematy pokrewne
 
-* [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md)
-* [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
-* [Opis ograniczeń użycia](understanding-usage-restrictions.md)
+- [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [Tworzenie aplikacji](developing-your-application.md)
+- [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
+- [Opis ograniczeń użycia](understanding-usage-restrictions.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

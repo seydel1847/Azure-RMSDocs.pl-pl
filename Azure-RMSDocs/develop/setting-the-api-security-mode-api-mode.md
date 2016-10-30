@@ -14,17 +14,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: f10129cb907cafa0e0c717b02153bbcdea012959
+ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
+ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 
 ---
 
 # Instrukcje: ustawianie trybu zabezpieczeń interfejsu API
 
-Za pomocą funkcji [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) można wybrać tryb zabezpieczeń, w którym jest uruchamiana aplikacja interfejsu API plików.
+Za pomocą funkcji [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) można wybrać tryb zabezpieczeń, w którym jest uruchamiana aplikacja interfejsu API plików.
 
-Aby zainicjować aplikację do uruchamiania w *trybie serwera*, wywołaj funkcję [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) i ustaw tryb zabezpieczeń [**IPC\_API\_MODE\_SERVER**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER). Domyślnie aplikacja jest uruchamiana w *trybie klienta* (**IPC\_API\_MODE\_CLIENT**).
+Aby zainicjować aplikację do uruchamiania w *trybie serwera*, wywołaj funkcję [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) i ustaw tryb zabezpieczeń [IPC\_API\_MODE\_SERVER](https://msdn.microsoft.com/library/hh535236.aspx). Domyślnie aplikacja jest uruchamiana w *trybie klienta* (**IPC\_API\_MODE\_CLIENT**).
 
 Aby uzyskać więcej informacji na temat *trybu serwera*, zobacz [Typy aplikacji](application-types.md).
 
@@ -33,14 +33,14 @@ Aby uzyskać więcej informacji na temat *trybu serwera*, zobacz [Typy aplikacji
 ## Tematy pokrewne
 
 * [Typy aplikacji](application-types.md)
-* [**Wartości trybów interfejsu API**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
-* [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
+* [Wartości trybów interfejsu API](https://msdn.microsoft.com/library/hh535236.aspx)
+* [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

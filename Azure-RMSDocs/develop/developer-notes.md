@@ -4,7 +4,7 @@ description: "W tym temacie podano dokładne wskazówki dotyczące kilku ważnyc
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d7e718c2e982702bef16c242370771d991b29db9
+ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
+ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 
 
 ---
@@ -24,13 +24,13 @@ ms.openlocfilehash: d7e718c2e982702bef16c242370771d991b29db9
 
 W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
 - [Porada: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md) — uwierzytelnianie w usługach Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
-- [Porada: dodawanie jawnych praw właściciela](add-explicit-owner-rights.md) — w przypadku tworzenia licencji od podstaw (przy użyciu funkcji [IpcCreateLicenseFromScratch](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) w aplikacji należy jawnie dodać prawa &quot;właściciela&quot;.
+- [Porada: dodawanie jawnych praw właściciela](add-explicit-owner-rights.md) — w przypadku tworzenia licencji od podstaw (przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)) w aplikacji należy jawnie dodać prawa właściciela.
 - [Porada: debugowanie aplikacji obsługującej prawa](debugging-applications-that-use-ad-rms.md) — w tym temacie opisano metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
 - [Porada: włączanie śledzenia dokumentów i odwołania](tracking-content.md) — w tym temacie podano podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością i zawarto przykładowy kod służący do aktualizacji metadanych i tworzenia przycisku **Śledź użycie** na potrzeby aplikacji.
 - [Porada: włączanie powiadomień e-mail](how-to-enable-email-notification.md) — powiadomienia e-mail umożliwiają informowanie właściciela chronionej zawartości o dostępie do jego zawartości.
 - [Porada: umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md) — w tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management.
 - [Porada: instalowanie i konfigurowanie serwera usług RMS](how-to-install-and-configure-an-rms-server.md) — ten temat zawiera opis kroków związanych z nawiązywaniem połączenia z serwerem usług RMS lub usługami Azure RMS na potrzeby testowania aplikacji obsługującej prawa.
-- [Porada: ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md) — za pomocą funkcji [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) można wybrać tryb zabezpieczeń, w którym uruchamiana jest aplikacja interfejsu API plików.
+- [Porada: ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md) — za pomocą funkcji [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) można wybrać tryb zabezpieczeń, w którym uruchamiana jest aplikacja interfejsu API plików.
 - [Porada: praca z ustawieniami szyfrowania](working-with-encryption.md) — ten temat umożliwia zapoznanie się z pakietami szyfrowania firmy Microsoft i zawiera przykładowe fragmenty kodu, w których zastosowano te pakiety.
 - [Typy aplikacji](application-types.md) — w tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa.
 - [Konfiguracja interfejsu API plików](file-api-configuration.md) — działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru.
@@ -40,7 +40,7 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 - [Informacje o ograniczeniach użycia](usage-restriction-reference.md) — ograniczenia użycia są definiowane przez stałe wymienione w tym temacie.
 
  
-## Tematy pokrewne ##
+## Tematy pokrewne
 * [Przegląd](ad-rms-overview.md)
  
 
@@ -48,6 +48,6 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

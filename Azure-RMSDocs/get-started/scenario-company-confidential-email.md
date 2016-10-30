@@ -3,7 +3,7 @@ title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane 
 description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika ochrona usługi Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
+ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
+ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 
 ---
@@ -54,7 +54,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
 |Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Usługa Exchange Online: konfiguracja usługi IRM** artykułu [Office 365: konfiguracja dla klientów i usług online](../deploy-use/configure-office365.md).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).|
 |Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać więcej informacji, zobacz artykuł [Odświeżanie szablonów dla użytkowników](../deploy-use/refresh-templates.md).|
-|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Poczta e-mail** w tabeli zawartej w artykule [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).|
+|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Poczta e-mail** opisanej w temacie [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|
 
 ## Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
@@ -157,6 +157,6 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

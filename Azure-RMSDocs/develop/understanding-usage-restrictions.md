@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
+ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
+ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 Wszystkie aplikacje z obsługą usługi RMS muszą wymuszać ograniczenia użycia. Ograniczenie użycia ma miejsce, gdy użytkownik próbuje wykonać akcję (np. wydrukować dokument), ale zasady usług RMS dla tego dokumentu nie przyznają uprawnienia lub prawa do wykonania tej akcji (np. prawa PRINT).
 
-Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcji [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck).
+Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcji [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx).
 
 ## Opis ograniczeń użycia
 
@@ -48,7 +48,7 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
 ## Tematy pokrewne
 
-* [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [Informacje o ograniczeniach użycia](usage-restriction-reference.md)
  
 
@@ -56,6 +56,6 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

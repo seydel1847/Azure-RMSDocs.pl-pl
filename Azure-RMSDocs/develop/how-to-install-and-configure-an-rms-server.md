@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
+ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
+ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
 
 
 ---
@@ -70,12 +70,26 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
   W celu skonfigurowania odnajdywania po stronie klienta można ustawić poniższe klucze rejestru, aby wskazywały serwer usługi RMS. Aby uzyskać informacje na temat konfigurowania odnajdywania po stronie serwera, zobacz [Uwagi dotyczące wdrażania klienta RMS Client 2.0](https://technet.microsoft.com/library/jj159267(WS.10).aspx).
 
 1. **EnterpriseCertification**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
 
-  **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Certification**
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterpriseCertification
+
+   **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Certification**
 
 2. **EnterprisePublishing**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Licensing**
+
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterprisePublishing
+                  
+   **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Licensing**
 
 >[!NOTE] 
 > Domyślnie tych kluczy nie ma w rejestrze i należy je utworzyć.
@@ -96,6 +110,6 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
+ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
+ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 
 ---
@@ -63,7 +63,7 @@ Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. J
 
 - **Off**: szyfrowanie jest wyłączone.
 
-> [!Note] 
+> [!Note]
 > To ustawienie nie ma żadnego wpływu na odszyfrowywanie. Każdy zaszyfrowany plik (niezależnie od tego, czy został zaszyfrowany za pomocą ochrony natywnej czy pliku Pfile) można odszyfrować, jeśli użytkownik ma prawo **WYODRĘBNIANIA**.
 
 - **Native**: jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do plików z rozszerzeniem ptxt. Poniżej znajduje się lista rozszerzeń nazw plików, które mogą zostać objęte ochroną natywną.
@@ -71,7 +71,7 @@ Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. J
 - **Pfile**: jest używane szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
 
 
-> [!Note] 
+> [!Note]
 > To ustawienie nie ma żadnego wpływu na formaty plików pakietu Office. Na przykład jeśli wartość `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` jest ustawiona na &quot;Pfile”, pliki docx nadal będą szyfrowane przy użyciu ochrony natywnej, a zaszyfrowany plik nadal będzie miał rozszerzenie docx.
 
 Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domyślne.
@@ -82,7 +82,7 @@ Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domy�
 -   **Pliki txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** Włączone jest szyfrowanie natywne (xxx staje się pxxx)
 -   **Wszystkie inne pliki** Włączone jest szyfrowanie chronionego pliku (pfile) (xxx staje się xxx.pfile)
 
-Jeśli próba szyfrowania zostanie podjęta na typie pliku, który jest zablokowany, wystąpi błąd [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes).
+Jeśli próba szyfrowania zostanie podjęta na typie pliku, który jest zablokowany, wystąpi błąd [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
 ### Interfejs API plików — szczegóły dotyczące obsługi plików
 
@@ -148,14 +148,14 @@ HKEY_LOCAL_MACHINE
 
 ## Tematy pokrewne
 
-* [Uwagi dla deweloperów](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
+- [Uwagi dla deweloperów](developer-notes.md)
+- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

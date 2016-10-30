@@ -4,7 +4,7 @@ description:
 keywords: "Niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd11b55ec8ee11f594c33a5a46694d83b2db6953
-ms.openlocfilehash: ff2b28d9774682abbe77b484b097ea51709a3234
+ms.sourcegitcommit: c03bcfc5590035ab0d51cb3b4f2b7196db458ea3
+ms.openlocfilehash: 1829557b41d2c49ac661cbde96f69dda2ccc5b19
 
 
 ---
@@ -27,31 +27,37 @@ Na tej stronie znajdują się niektóre często zadawane pytania dotyczące korz
 
 ## Co można zrobić przy użyciu aplikacji Azure Information Protection?
 
-Dzięki tej aplikacji można wyświetlać chronione prawami wiadomości e-mail (pliki rpmsg). Ta aplikacja umożliwia także wyświetlanie chronionych prawami plików PDF, obrazów, plików tekstowych i innych formatów plików chronionych jako plik pfile. Obecnie przy użyciu tej aplikacji nie można tworzyć nowych chronionych wiadomości e-mail, odpowiadać na nie ani tworzyć i edytować plików chronionych.
+Ta aplikacja umożliwia wyświetlanie wiadomości e-mail chronionych prawami (plików .rpmsg), jeśli aplikacja poczty e-mail nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. Ta aplikacja umożliwia także wyświetlanie chronionych prawami plików PDF, obrazów i plików tekstowych. Obecnie przy użyciu tej aplikacji nie można tworzyć nowych chronionych wiadomości e-mail, odpowiadać na nie ani tworzyć i edytować plików chronionych.
 
 ## Czy mogę otwierać pliki PDF z chronionych bibliotek programów SharePoint i OneDrive dla Firm?
 
-Tak, można otwierać chronione pliki PDF udostępnione przez innych użytkowników za pośrednictwem programów SharePoint i OneDrive dla Firm. Naciśnij link, a aplikacja otworzy plik. 
+Tak, można otwierać chronione pliki PDF udostępnione przez innych użytkowników za pośrednictwem programów SharePoint i OneDrive dla Firm. Naciśnij link, a następnie wybierz tę aplikację, aby otworzyć go za jej pomocą. 
 
-## Jak zalogować się w tej aplikacji?
+## Jak zacząć korzystać z aplikacji przeglądarki?
+
+Na urządzeniu przenośnym należy uzyskać dostęp do jednego z plików obsługiwanych przez aplikację, aby zobaczyć przeglądarkę w działaniu. Na przykład:
+
+- **Plik .rpmsg**: to jest chroniona prawami wiadomość e-mail wyświetlana jako załącznik w wiadomości e-mail, gdy aplikacja poczty e-mail na urządzeniu przenośnym nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. 
+    
+    Użyj innego urządzenia, aby wysłać do siebie wiadomość e-mail chronioną prawami, do której można uzyskać dostęp z urządzenia przenośnego. Na przykład użyj programu Outlook na komputerze z systemem Windows. Listę klientów poczty e-mail, które natywnie obsługują usługę Rights Management, można znaleźć w kolumnie POCZTA E-MAIL na stronie [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
+
+- **Plik PDF chroniony prawami**: użyj aplikacji do udostępniania usługi Rights Management z komputera z systemem Windows lub aplikacji PDF, która natywnie obsługuje usługę Rights Management, aby wysłać do siebie plik PDF chroniony prawami jako załącznik wiadomości e-mail. Możesz także przekazać plik PDF do chronionej biblioteki programu SharePoint, a następnie udostępnić go przy użyciu swojego adresu e-mail.
+
+- **Plik ptxt, pjpg lub ppng**: użyj aplikacji RMS sharing usługi Rights Management z komputera z systemem Windows i opcji [Udostępnianie chronionej zawartości](sharing-app-protect-by-email.md), aby wysłać sobie chroniony plik jako załącznik wiadomości e-mail. Aby uzyskać pełną listę typów plików, których można używać do testowania, zobacz pierwszą tabelę w sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) w podręczniku administratora aplikacji do udostępniania usługi Rights Management. 
+
+Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wtedy wyświetlony monit o zalogowanie się do konta służbowego. Po pomyślnym uwierzytelnieniu użytkownika aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
+
+## Jakich poświadczeń należy używać do logowania się do tej aplikacji?
 
 Jeśli Twoja organizacja korzysta z lokalnej usługi AD RMS (z rozszerzeniem dla urządzeń przenośnych) lub z usługi Azure Rights Management przy użyciu swoich poświadczeń. Jeśli nie, można utworzyć nowe darmowe konto za pomocą [strony usługi Azure Rights Management](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
 
-## Mogę zalogować się za pomocą mojego osobistego adresu e-mail, takiego jak konto usługi Hotmail lub Gmail?
+## Czy mogę utworzyć bezpłatne konto za pomocą mojego osobistego adresu e-mail, takiego jak konto usługi Hotmail lub Gmail?
 
 Jeszcze nie. Obecnie można zalogować się tylko z firmowego adresu e-mail (konto służbowe). Firma Microsoft pracuje nad obsługą osobistych adresów e-mail i zaktualizuje ten wpis, gdy będzie to możliwe.
 
 ## Jakie rozszerzenia plików można otworzyć za pomocą tej aplikacji?
 
 Można otworzyć pliki RPMSG, PDF, PPDF, PJPG, PTXT i kilka innych formatów plików tekstowych oraz obrazów.
-
-## Dlaczego trzeba wyrazić zgodę przed wyświetleniem chronionego pliku PFILE?
-
-Zgoda jest wymagana do potwierdzenia świadomości następujących kwestii:
-
-- Właściciel dokumentu oczekuje, że będziesz respektować prawa.
-
-- Otwieranie tej zawartości w aplikacjach innych firm będzie monitorowane.
 
 ##  Jak wyrazić swoją opinię na temat tej aplikacji?
 
@@ -64,6 +70,6 @@ Należy zadać pytanie na naszej [witrynie Yammer](http://www.yammer.com/AskIPTe
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

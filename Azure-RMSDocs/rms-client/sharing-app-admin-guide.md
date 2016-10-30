@@ -3,7 +3,7 @@ title: Przewodnik administratora aplikacji Rights Management sharing | Azure Inf
 description: "Instrukcje i informacje dla administratorów sieci przedsiębiorstwa odpowiedzialnych za wdrażanie aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management w systemie Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
+ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
+ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
 
 
 ---
@@ -170,7 +170,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
 ### Aby zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
 
-1.  Zainstaluj klienta usług AD RMS oraz aplikację RMS sharing przy użyciu następującego polecenia:
+1.  Zainstaluj klienta usług AD RMS oraz aplikację RMS sharing przy użyciu następującego polecenia, określając istniejący folder w celu utworzenia pliku dziennika:
 
     -   W 64-bitowym systemie Windows:
 
@@ -185,8 +185,10 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
         ```
 
     Na przykład: `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    
+    Jeśli pomyślne uruchomienie tego polecenia nie powiedzie się, żadne komunikaty o błędach nie będą widoczne z powodu parametru **/quiet**. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
 
-2.  Zainstaluj dodatek dla pakietu Office przy użyciu następujących poleceń:
+2.  Zainstaluj dodatek pakietu Office przy użyciu następujących poleceń, określając istniejący folder w celu utworzenia pliku dziennika:
 
     -   W 64-bitowej wersji pakietu Office:
 
@@ -201,6 +203,8 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
         ```
 
     Na przykład: `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    
+    Jeśli pomyślne uruchomienie tego polecenia nie powiedzie się, żadne komunikaty o błędach nie będą widoczne z powodu parametru **/quiet**. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzanie, czy instalacja przebiegła pomyślnie](#verifying-installation-success) w tym artykule.
 
@@ -402,6 +406,6 @@ Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice m
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

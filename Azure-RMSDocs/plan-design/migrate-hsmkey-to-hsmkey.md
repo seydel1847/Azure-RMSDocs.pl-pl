@@ -3,7 +3,7 @@ title: "Krok 2&colon; Migracja klucza chronionego przez moduł HSM do klucza chr
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a61075eb555f6cec1572851bdde6fae85e6310ed
-ms.openlocfilehash: 7db4da1a48bb24ce7680c84fe586a3f96e61c0b7
+ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
+ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 
 
 ---
@@ -51,7 +51,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
     Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Identyfikator będzie wyglądać podobnie do następującego: https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection będzie go potrzebować, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
 
-2. Na stacji roboczej podłączonej do Internetu, w sesji programu PowerShell, użyj polecenia cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.200\).aspx), aby autoryzować nazwę główną Microsoft.Azure.RMS do dostępu do magazynu kluczy, w którym przechowywany będzie klucz dzierżawy usługi Azure Information Protection. Wymagane uprawnienia to: decrypt, encrypt, unwrapkey, wrapkey, verify i sign.
+2. Na stacji roboczej podłączonej do Internetu, w sesji programu PowerShell, użyj polecenia cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx), aby autoryzować nazwę główną Microsoft.Azure.RMS do dostępu do magazynu kluczy, w którym przechowywany będzie klucz dzierżawy usługi Azure Information Protection. Wymagane uprawnienia to: decrypt, encrypt, unwrapkey, wrapkey, verify i sign.
     
     Przykładowo jeśli magazyn kluczy utworzony dla usługi Azure Information Protection ma nazwę contoso-byok-ky, a grupa zasobów ma nazwę contoso-byok-rg, uruchom następujące polecenie:
     
@@ -64,7 +64,7 @@ Teraz klucz HSM w usłudze Azure Key Vault jest już gotowy do użycia w usłudz
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Information Protection.
 
-1.  Na stacji roboczej podłączonej do Internetu i w sesji programu PowerShell połącz się z usługą Azure Rights Management, używając polecenia cmdlet [Connect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx ).
+1.  Na stacji roboczej podłączonej do Internetu i w sesji programu PowerShell połącz się z usługą Azure Rights Management, używając polecenia cmdlet [Connect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx).
     
     Następnie przekaż pierwszy wyeksportowany plik (XML) zaufanej domeny publikacji, korzystając z polecenia cmdlet [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx). Jeśli masz więcej niż jeden plik XML z powodu użycia wielu zaufanych domen publikacji, wybierz plik zawierający wyeksportowaną zaufaną domenę publikacji odpowiadającą kluczowi HSM, który chcesz zastosować w usłudze Azure RMS do ochrony zawartości po migracji. 
     
@@ -80,7 +80,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Information
 
 2.  Po zakończeniu wykonywania polecenia powtórz krok 1 dla każdego z pozostałych plików XML, który został utworzony przez wyeksportowanie zaufanej domeny publikacji. Dla tych plików ustaw opcję **-Active** na wartość **false** podczas uruchamiania polecenia Import.  
 
-3.  Użyj polecenia cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx), aby zakończyć połączenie z usługą Azure Rights Management:
+3.  Użyj polecenia cmdlet [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx), aby zakończyć połączenie z usługą Azure Rights Management:
 
     ```
     Disconnect-AadrmService
@@ -94,6 +94,6 @@ Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

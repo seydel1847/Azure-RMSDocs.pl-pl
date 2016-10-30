@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
+ms.sourcegitcommit: 04234755fabb10794f5be7c4fc658573bebf6e70
+ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 
 ---
@@ -32,38 +32,33 @@ Z perspektywy operacyjnej śledzenie dokumentów wymaga tylko właściwości **n
 
 Sekwencja kroków używanych do konfigurowania śledzenia dokumentów dla danego elementu zawartości to:
 
--   Utwórz obiekt **metadanych licencji**.
+-   Utwórz obiekt **metadanych licencji**, a następnie ustaw **nazwę zawartości** i **typ powiadomienia**. Są to jedyne wymagane właściwości.
+   - Android — [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
+   -  iOS — [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
 
-    Więcej informacji zawierają opisy metod [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) i [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
+Wybierz typ zasad: szablon lub ad hoc:
+- W przypadku śledzenia dokumentów na podstawie szablonu utwórz obiekt **zasad użytkownika** przekazujący metadane licencji jako parametr.
+  - Android — [UserPolicy.create](https://msdn.microsoft.com/library/dn790887.aspx)
+  - iOS — [MSUserPolicy.userPolicyWithTemplateDescriptor](https://msdn.microsoft.com/library/dn790808.aspx)
 
--   Ustaw właściwości **nazwy zawartości** i **typu powiadomienia**. Są to jedyne wymagane właściwości.
+- W przypadku śledzenia dokumentów ad hoc ustaw właściwość **metadanych licencji** obiektu **deskryptora zasad**.
+  - Android — [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
+  - iOS — [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx).
 
-    Więcej informacji zawierają opisy metod dostępu do właściwości dla klasy metadanych licencji odpowiedniej dla platformy, [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) lub [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc).
-
--   Według typu zasad: szablon lub ad hoc:
-
-    -   W przypadku śledzenia dokumentów na podstawie szablonu utwórz obiekt **zasad użytkownika** przekazujący metadane licencji jako parametr.
-
-        Więcej informacji zawierają opisy metod [**UserPolicy.create**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) i [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc).
-
-    -   W przypadku śledzenia dokumentów ad hoc ustaw właściwość **metadanych licencji** obiektu **deskryptora zasad**.
-
-        Więcej informacji zawierają opisy metod [**PolicyDescriptor.getLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) i [**MSPolicyDescriptor.licenseMetadata**](/information-protection/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc).
-
-    **Uwaga** Obiekt metadanych licencji jest dostępny bezpośrednio tylko podczas procesu konfigurowania śledzenia dokumentów dla danych zasad użytkownika. Po utworzeniu obiektu zasad użytkownika skojarzone metadane licencji nie są dostępne, np. zmiana wartości metadanych licencji nie ma żadnego wpływu.
+    **Uwaga** Obiekt metadanych licencji jest dostępny bezpośrednio tylko podczas procesu konfigurowania śledzenia dokumentów dla danych zasad użytkownika. Po utworzeniu obiektu zasad użytkownika skojarzone metadane licencji nie są dostępne, na przykład zmiana wartości metadanych licencji nie przynosi żadnego efektu.
 
      
 
--   Wywołaj metodę rejestracji platformy w celu śledzenia dokumentów.
-
-    Zobacz opis metody [**MSUserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) lub [**UserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc).
-
- 
+-   Na koniec wywołaj metodę rejestracji platformy w celu śledzenia dokumentów.
+  - Android — [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) lub [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
+  - iOS — [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
 
  
 
+ 
 
 
-<!--HONumber=Oct16_HO1-->
+
+<!--HONumber=Oct16_HO3-->
 
 

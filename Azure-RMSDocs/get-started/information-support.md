@@ -3,7 +3,7 @@ title: "Dane administratora i pomoc techniczna dla usługi Azure Information Pro
 description: "Zasoby dla administratorów, w tym informacje na temat nowych wersji, opcji pomocy technicznej oraz sposobu kontaktu z firmą Microsoft w celu zgłoszenia problemu."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
-ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
+ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
+ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 
 ---
@@ -26,10 +26,10 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 |Cel|.. Czynności|
 |----------------|---------------|
-|… patrz zalecana dokumentacja dla usługi →|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
-|… Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|… Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Information Protection. Zobacz [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
+|Patrz zalecana dokumentacja dla usługi →|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
+|Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją →|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
+|Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu →|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Information Protection. Zobacz [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
+|Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
 ## Informacje o nowych wersjach
@@ -61,7 +61,9 @@ Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicie
 
 ### Samodzielna pomoc
 
-Nauka podstawowych umiejętności:
+Filmy wideo na żądanie:
+
+- Sesje konferencji Microsoft Ignite 2016 dotyczące usług [Azure Information Protection i Azure Rights Management](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D)
 
 - Microsoft Virtual Academy: [podstawowe umiejętności dotyczące usługi Azure Rights Management Services](https://mva.microsoft.com/en-us/training-courses/azure-rights-management-services-core-skills-10500?l=QLoxMwuCB_1805094681)
 
@@ -88,6 +90,6 @@ Rozwiązywanie problemów:
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

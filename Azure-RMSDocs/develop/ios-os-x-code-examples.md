@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: c4595105b4e33a4f047fd7c89c8361de6ca32d43
+ms.sourcegitcommit: faa1f33d1151a2d4700cc64556510994c708a414
+ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
 
 
 ---
@@ -26,19 +26,19 @@ W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dl
 
 **Uwaga**: w przykładzie kodu i opisach używany jest termin MSIPC (Microsoft Information Protection and Control) jako odwołanie do procesu klienta.
 
- 
 
-##Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+
+## Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 
 Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
 
-###Scenariusz: korzystanie z pliku chronionego przez usługę RMS
+### Scenariusz: korzystanie z pliku chronionego przez usługę RMS
 
 
-- **Krok 1**: utworzenie obiektu [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata)
+- **Krok 1**. Utworzenie obiektu [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx)
 
- **Opis**: utworzenie wystąpienia obiektu [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata) za pomocą metody create, która implementuje uwierzytelnianie usługi przy użyciu interfejsu [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) w celu pobrania tokenu przez przekazanie wystąpienia interfejsu **MSAuthenticationCallback** jako parametru *authenticationCallback* do interfejsu API klienta MSIPC. Zobacz wywołanie metody [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) w poniższej sekcji z przykładowym kodem.
+ **Opis**: Utworzenie wystąpienia obiektu [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) za pomocą metody create, która implementuje uwierzytelnianie usługi przy użyciu interfejsu [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) w celu pobrania tokenu przez przekazanie wystąpienia interfejsu **MSAuthenticationCallback** jako parametru *authenticationCallback* do interfejsu API klienta MSIPC. Zobacz wywołanie metody [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) w poniższej sekcji z przykładowym kodem.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -56,7 +56,7 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
 
 - **Krok 2**. Skonfigurowanie uwierzytelniania przy użyciu biblioteki Active Directory Authentication Library (ADAL)
 
-  **Opis**: w tym kroku zobaczysz bibliotekę ADAL używaną do zaimplementowania interfejsu [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) z przykładowymi parametrami uwierzytelniania. Aby uzyskać więcej informacji na temat używania biblioteki ADAL, zobacz Biblioteka Azure AD Authentication Library (ADAL).
+  **Opis**: W tym kroku zobaczysz bibliotekę ADAL używaną do zaimplementowania interfejsu [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) z przykładowymi parametrami uwierzytelniania. Aby uzyskać więcej informacji na temat używania biblioteki ADAL, zobacz Biblioteka Azure AD Authentication Library (ADAL).
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -73,7 +73,7 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
           ADAuthenticationError *error;
           ADAuthenticationContext* context = [
               ADAuthenticationContext authenticationContextWithAuthority:authenticationParameters.authority
-                                                                error:&amp;error
+                                                                error:&error
           ];
           NSString *appClientId = @”com.microsoft.sampleapp”;
           NSURL *redirectURI = [NSURL URLWithString:@"local://authorize"];
@@ -95,7 +95,7 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
                           }];
        }
 
--   **Krok 3**: sprawdzenie, czy dla tego użytkownika z tą zawartością istnieje prawo Edycja za pomocą metody [**accessCheck**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) obiektu [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
+-   **Krok 3**. Sprawdzenie, czy dla tego użytkownika z tą zawartością istnieje prawo Edycja za pomocą metody [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx).
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -111,9 +111,9 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
 
 ### Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
 
-Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MSTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc) — i wybrania pierwszego szablonu w celu utworzenia zasady. Następnie jest tworzony i zapisywany nowy plik chroniony.
+Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx) — i wybrania pierwszego szablonu w celu utworzenia zasady. Następnie jest tworzony i zapisywany nowy plik chroniony.
 
--   **Krok 1**: pobranie listy szablonów
+-   **Krok 1**. Pobranie listy szablonów
 
         + (void)templateListUsageWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -125,7 +125,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
                                    }];
         }
 
--   **Krok 2**: utworzenie obiektu [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) przy użyciu pierwszego szablonu na liście.
+-   **Krok 2**. Utworzenie obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) przy użyciu pierwszego szablonu na liście.
 
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -140,7 +140,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             }];
         }
 
--   **Krok 3**: utworzenie obiektu [**MSMutableProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc) i zapisanie w nim zawartości.
+-   **Krok 3**. Utworzenie obiektu [MSMutableProtectedData](https://msdn.microsoft.com/library/dn758325.aspx) i zapisanie w nim zawartości.
 
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
         {
@@ -157,7 +157,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
 ### Scenariusz: otwieranie niestandardowego pliku chronionego
 
 
--   **Krok 1**: utworzenie obiektu [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) z elementu *serializedContentPolicy*.
+-   **Krok 1**. Utworzenie obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z elementu *serializedContentPolicy*.
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -168,7 +168,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             -------------------------------------------*/
             NSUInteger serializedPolicySize;
             NSMutableData *serializedPolicy;
-            [protectedData getBytes:&amp;serializedPolicySize length:sizeof(serializedPolicySize)];
+            [protectedData getBytes:&serializedPolicySize length:sizeof(serializedPolicySize)];
             [protectedData getBytes:[serializedPolicy mutableBytes] length:serializedPolicySize];
 
             // Get the user policy , this is an async method as it hits the REST service
@@ -185,7 +185,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             }];
          }
 
--   **Krok 2**: utworzenie interfejsu [**MSCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc) za pomocą interfejsu [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) utworzonego w **kroku 1** i odczytanie z niego danych.
+-   **Krok 2**. Utworzenie interfejsu [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) za pomocą obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) utworzonego w **kroku 1** i odczytanie z niego danych.
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -194,7 +194,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             | PL length | PL | ContetSizeLength |
             -------------------------------------------*/
             NSUInteger protectedContentSize;
-            [protectedData getBytes:&amp;protectedContentSize
+            [protectedData getBytes:&protectedContentSize
                          length:sizeof(protectedContentSize)];
 
             // Create the MSCustomProtector used for decrypting the content
@@ -217,7 +217,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
 
-    **Opis**: w praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia: [**MSUserRights**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) i [**MSPolicyDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc).
+    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia: [MSUserRights](https://msdn.microsoft.com/en-us/library/dn790811.aspx) i [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
 
         + (void)policyDescriptor
         {
@@ -228,7 +228,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **Krok 2**: utworzenie niestandardowego obiektu [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) z deskryptora zasad *selectedDescriptor*.
+-   **Krok 2**. Utworzenie niestandardowego obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z deskryptora zasad *selectedDescriptor*.
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -242,7 +242,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             }];
         }
 
--   **Krok 3**: utworzenie obiektu [**MSMutableCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc) i zapisanie zawartości do niego, a następnie zamknięcie.
+-   **Krok 3**. Utworzenie obiektu [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) i zapisanie zawartości do niego, a następnie zamknięcie.
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {
@@ -254,10 +254,10 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
             // | PL length | PL | ContetSizeLength |
             // -------------------------------------
             NSUInteger serializedPolicyLength = [serializedPolicy length];
-            [backingData appendData:[NSData dataWithBytes:&amp;serializedPolicyLength length:sizeof(serializedPolicyLength)]];
+            [backingData appendData:[NSData dataWithBytes:&serializedPolicyLength length:sizeof(serializedPolicyLength)]];
             [backingData appendData:serializedPolicy];
             NSUInteger protectedContentLength = [MSCustomProtectedData getEncryptedContentLengthWithPolicy:policy contentLength:unprotectedData.length];
-            [backingData appendData:[NSData dataWithBytes:&amp;protectedContentLength length:sizeof(protectedContentLength)]];
+            [backingData appendData:[NSData dataWithBytes:&protectedContentLength length:sizeof(protectedContentLength)]];
 
             NSUInteger headerLength = sizeof(serializedPolicyLength) + serializedPolicyLength + sizeof(protectedContentLength);
 
@@ -271,20 +271,16 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [**MS
                                                                       NSError *error)
             {
                 //Append data to the custom protector, this will encrypt the data and write it to the backing data
-                [customProtector appendData:[contentToProtect dataUsingEncoding:NSUTF8StringEncoding] error:&amp;error];
+                [customProtector appendData:[contentToProtect dataUsingEncoding:NSUTF8StringEncoding] error:&error];
 
                 //close the custom protector so it will flush and finalise encryption
-                [customProtector close:&amp;error];
+                [customProtector close:&error];
 
             }];
           }
 
 
- 
 
- 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

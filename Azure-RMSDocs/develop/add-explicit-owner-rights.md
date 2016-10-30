@@ -14,22 +14,22 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
+ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
+ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 ---
 
 # Instrukcje: dodawanie jawnych praw właściciela
 
-W przypadku tworzenia licencji od podstaw (przy użyciu funkcji [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) w aplikacji należy jawnie dodać prawa „właściciela”.
+W przypadku tworzenia licencji od podstaw przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) w aplikacji należy jawnie dodać prawa „właściciela”.
 
 ## Wymagania wstępne
 
-Gdy aplikacja tworzy dojście licencji przy użyciu funkcji [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch), musi również jawnie przyznać pełne prawa (uprawnienia) właściciela.
+Gdy aplikacja tworzy dojście licencji przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx), musi również jawnie przyznać pełne prawa (uprawnienia) właściciela.
 
 >[!NOTE] 
-> Ustawienie użytkownika jako „właściciela” przy użyciu funkcji [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) **IPC\_LI\_OWNER** nie powoduje przyznania pełnych uprawnień właściciela.
+> Ustawienie użytkownika jako „właściciela” przy użyciu funkcji [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) **IPC\_LI\_OWNER** nie powoduje przyznania pełnych uprawnień właściciela.
 
 Ten przykładowy kod przedstawia tylko kroki związane z tworzeniem i dodawaniem określonych praw do danej licencji.
 
@@ -37,7 +37,7 @@ Ten przykładowy kod przedstawia tylko kroki związane z tworzeniem i dodawaniem
  
 ## Krok 1. Przykładowy scenariusz
 
-W tym przykładzie potrzebne prawa są dodawane do licencji utworzonej przy użyciu funkcji [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch). W przykładzie pokazano tworzenie i przypisywanie praw do licencji za pomocą listy praw.
+W tym przykładzie potrzebne prawa są dodawane do licencji utworzonej przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx). W przykładzie pokazano tworzenie i przypisywanie praw do licencji za pomocą listy praw.
 
 Następujące dwa uprawnienia są dodawane do tych użytkowników:
 
@@ -107,15 +107,15 @@ Następujące dwa uprawnienia są dodawane do tych użytkowników:
 
 ## Tematy pokrewne
 
-* [Uwagi dla deweloperów](developer-notes.md)
-* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+- [Uwagi dla deweloperów](developer-notes.md)
+- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
+- [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

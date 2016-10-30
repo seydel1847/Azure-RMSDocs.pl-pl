@@ -4,7 +4,7 @@ description: "Różne pakiety szyfrowania usługi Azure RMS i przykłady fragmen
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 
 ---
@@ -40,13 +40,13 @@ Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględni
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (nazywane również przestarzałymi algorytmami)
 
-Flag pakietów szyfrowania (zobacz [**Preferowane szyfrowanie**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)) można używać razem z nową flagą właściwości licencji **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Flag pakietów szyfrowania (zobacz [Preferowane szyfrowanie](https://msdn.microsoft.com/library/dn974065.aspx)) można używać razem z nową flagą właściwości licencji *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE*.
 
 Poniższe przykłady fragmentu kodu przedstawiają sposób użycia nowej właściwości licencji.
 
 ## Przestarzałe algorytmy
 
-Flaga **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** nie jest już widoczna w interfejsie API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale aplikacje, które zostały już utworzone przy użyciu tej flagi, będą nadal działać, ponieważ flaga będzie prywatnie uznawana w kodzie interfejsu API.
+Flaga *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* nie jest już widoczna w interfejsie API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale aplikacje, które zostały już utworzone przy użyciu tej flagi, będą nadal działać, ponieważ flaga będzie prywatnie uznawana w kodzie interfejsu API.
 
 Nadal będzie można uzyskiwać korzyści zapewniane przez przestarzałą flagę algorytmów szyfrowania, zmieniając po prostu jedną flagę. Jako przykład mogą posłużyć poniższe fragmenty kodu.
 
@@ -84,7 +84,7 @@ Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domy�
 W tym przykładzie przedstawiono również nową metodą obsługi *przestarzałych algorytmów*.
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -103,6 +103,6 @@ W tym przykładzie przedstawiono również nową metodą obsługi *przestarzały
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
