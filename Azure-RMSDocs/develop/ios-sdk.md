@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
+ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
+ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 
 ---
 
-# Konfiguracja w systemach iOS i OS X
+# <a name="ios-and-os-x-setup"></a>Konfiguracja w systemach iOS i OS X
 
 Aplikacje systemów iOS i OS X mogą używać zestawu Microsoft Rights Management SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Rights Management (Azure RMS).
 
@@ -34,7 +34,7 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 -   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
 -   [Zobacz też](#see-also)
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 Zalecamy stosowanie następującego oprogramowania na platformie programistycznej:
 
@@ -53,11 +53,11 @@ Zalecamy stosowanie następującego oprogramowania na platformie programistyczne
 
 Temat [Nowości](release-notes.md) zawiera informacje na temat aktualizacji interfejsu API, informacje o wersji i często zadawane pytania.
 
-## Opcjonalne
+## <a name="optional"></a>Opcjonalne
 
 Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego użytku do operacji konsumenckich i zabezpieczających dla deweloperów, którzy nie chcą tworzyć własnego interfejsu użytkownika — [Biblioteka interfejsów użytkownika i przykładowa aplikacja dla systemu iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios).
 
-## Konfigurowanie środowiska deweloperskiego
+## <a name="configuring-your-development-environment"></a>Konfigurowanie środowiska deweloperskiego
 
 -   Aby utworzyć nowy projekt, w menu **File** (Plik) kliknij pozycję **New** (Nowy), a następnie kliknij pozycję **Project** (Projekt).
 -   Wybierz pozycję **Single View Application** (Aplikacja pojedynczego widoku).
@@ -100,7 +100,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 -   Teraz można przystąpić do tworzenia własnych aplikacji dla systemu iOS/OS X.
 
-### Zobacz też
+### <a name="see-also"></a>Zobacz też
 
 * [Wprowadzenie](get-started.md)
 
@@ -108,7 +108,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 * [Terminy i pojęcia dla deweloperów](core-concepts.md)
 
-* [Dokumentacja interfejsu API dla systemu iOS/OS X](https://msdn.microsoft.com/library/dn758306.aspx)
+* [Dokumentacja interfejsu API systemu iOS/OS X](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 
@@ -116,6 +116,6 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

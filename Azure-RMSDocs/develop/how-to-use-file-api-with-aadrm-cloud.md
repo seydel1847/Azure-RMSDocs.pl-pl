@@ -20,19 +20,19 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 ---
 
-# Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
+# <a name="howto-enable-your-service-application-to-work-with-cloud-based-rms"></a>Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
 
 W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
 **Ważne**  
 Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../get-started/requirements-subscriptions.md)
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 -   Należy zainstalować i skonfigurować zestaw SDK usług RMS 2.1. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z zestawem SDK usług RMS 2.1](getting-started-with-ad-rms-2-0.md).
 -   Musisz [utworzyć tożsamość usługi przez ACS](https://msdn.microsoft.com/en-us/library/gg185924.aspx) przy użyciu opcji klucza symetrycznego lub innej metody oraz zarejestrować dane klucza z tego procesu.
 
-## Łączenie z usługą Azure Rights Management
+## <a name="connecting-to-the-azure-rights-management-service"></a>Łączenie z usługą Azure Rights Management
 
 -   Wywołaj metodę [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx).
 -   Ustaw właściwość [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx).
@@ -50,9 +50,9 @@ Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z u
 
 **Uwaga**: Ze względu na stan naszej usługi odnajdywania, jeśli nie znajdujesz się w Ameryce Północnej, nie są akceptowane poświadczenia kluczy symetrycznych z innych regionów, w związku z czym należy bezpośrednio określić adresy URL dzierżawy. Można to zrobić przy użyciu parametru *pConnectionInfo* typu [IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) w funkcjach [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) lub [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx).
 
-## Generowanie klucza symetrycznego i zbieranie potrzebnych informacji
+## <a name="generate-a-symmetric-key-and-collect-the-needed-information"></a>Generowanie klucza symetrycznego i zbieranie potrzebnych informacji
 
-### Instrukcje generowania klucza symetrycznego
+### <a name="instructions-to-generate-a-symmetric-key"></a>Instrukcje generowania klucza symetrycznego
 
 -   Zainstaluj [Asystenta logowania w witrynie Microsoft Online Services](http://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   Zainstaluj [moduł PowerShell usługi Azure AD](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi).
@@ -78,7 +78,7 @@ Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z u
       AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
-### Instrukcje określania wartości **TenantBposId** i **Urls**
+### <a name="instructions-to-find-out-tenantbposid-and-urls"></a>Instrukcje określania wartości **TenantBposId** i **Urls**
 
 -   Zainstaluj [moduł PowerShell usługi Azure RMS](https://technet.microsoft.com/en-us/library/jj585012.aspx).
 -   Uruchom program Powershell i uruchom następujące polecenia, aby uzyskać konfigurację usługi RMS dzierżawy.
@@ -128,7 +128,7 @@ Aby uzyskać więcej informacji, zobacz [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https:
     promptCtx.hCancelEvent = NULL;
     promptCtx.pcCredential = &cred;
 
-### Zidentyfikuj szablon i zaszyfruj go
+### <a name="identify-a-template-and-then-encrypt"></a>Zidentyfikuj szablon i zaszyfruj go
 
 -   Wybierz szablon do użycia dla szyfrowania.
     Wywołaj element [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx), przekazując to samo wystąpienie elementu [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx).
@@ -162,7 +162,7 @@ Przykładowe zastosowanie wywołania elementu [IpcfDecryptFile](https://msdn.mic
 
 Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Management przez aplikację.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [Rozpoczynanie pracy z zestawem SDK 2.1 usługi RMS](getting-started-with-ad-rms-2-0.md)
@@ -184,6 +184,6 @@ Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Managem
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
