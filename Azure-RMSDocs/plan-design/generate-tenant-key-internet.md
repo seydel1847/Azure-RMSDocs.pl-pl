@@ -19,7 +19,7 @@ ms.openlocfilehash: c2a272cc27a45f7fda8279394fcb681b70dea81b
 ---
 
 
-# Generowanie i przenoszenie klucza dzierżawy — przez Internet: ZAWARTOŚĆ WYCOFANA
+# <a name="generate-and-transfer-your-tenant-key-over-the-internet-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — przez Internet: ZAWARTOŚĆ WYCOFANA
 
 >*Dotyczy usług: Azure Rights Management, Office 365*
 
@@ -27,6 +27,6 @@ Informacje przedstawione w tym artykule zostały usunięte, ponieważ nie są ju
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

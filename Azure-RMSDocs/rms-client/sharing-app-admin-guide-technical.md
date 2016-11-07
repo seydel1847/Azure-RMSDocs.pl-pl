@@ -12,16 +12,16 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 88b03e5e844e78db5dc8ac5f116d19899c5f354f
 
 
 ---
 
 
-# Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
+# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna aplikacja do pobrania dla systemu Microsoft Windows i innych platform, która zapewnia następujące korzyści:
@@ -42,7 +42,7 @@ Począwszy od wersji usługi RMS z października 2013 r., możesz chronić dokum
 
 Aby uzyskać informacje na temat wdrożenia, zobacz [Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application).
 
-## Poziomy ochrony — natywny i ogólny
+## <a name="levels-of-protection-native-and-generic"></a>Poziomy ochrony — natywny i ogólny
 Aplikacja do udostępniania usługi Microsoft Rights Management obsługuje ochronę na dwóch różnych poziomach, co opisano w poniższej tabeli.
 
 |Typ ochrony|Natywna|Ogólne|
@@ -52,7 +52,7 @@ Aplikacja do udostępniania usługi Microsoft Rights Management obsługuje ochro
 |Domyślny dla typów plików|Jest to domyślny poziom ochrony dla następujących typów plików:<br /><br />— Pliki tekstowe i pliki obrazów<br /><br />— Pliki pakietu Microsoft Office (programów Word, Excel i PowerPoint)<br /><br />— Pliki w formacie Portable Document Format (pdf)<br /><br />Więcej informacji można znaleźć w poniższej sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](#supported-file-types-and-file-name-extensions).|Jest to domyślna ochrona dla wszystkich pozostałych typów plików (takich jak vsdx, rtf itd.), które nie są obsługiwane w ramach pełnej ochrony.|
 Domyślny poziom ochrony stosowany przez aplikację RMS sharing można zmienić. Można zmienić poziom domyślny z natywnego na ogólny, z ogólnego na natywny, a nawet zupełnie uniemożliwić ochronę ze strony aplikacji RMS sharing. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) w tym artykule.
 
-## Obsługiwane typy plików i rozszerzenia nazw plików:
+## <a name="supported-file-types-and-file-name-extensions"></a>Obsługiwane typy plików i rozszerzenia nazw plików:
 Poniższa tabela zawiera listę typów plików, które są natywnie obsługiwane przez aplikację do udostępniania usługi Microsoft Rights Management. W przypadku tych typów plików oryginalne rozszerzenie nazwy pliku zostaje zmienione po zastosowaniu do nich ochrony natywnej i pliki zyskują status tylko do odczytu.
 
 Ponadto w przypadku natywnej ochrony pliku programu Word, Excel lub PowerPoint w aplikacji RMS sharing (jeśli plik jest chroniony za pomocą udostępniania) ta akcja powoduje automatyczne utworzenie drugiego pliku stanowiącego kopię oryginału, który ma taką samą nazwę jak oryginał, ale rozszerzenie **ppdf**¹. Ta wersja pliku chronionego w sposób natywny może zostać otwarta przez adresatów, którzy zainstalowali aplikację RMS sharing.
@@ -86,7 +86,7 @@ Poniższa tabela zawiera typy plików obsługiwanych natywnie przez aplikację M
 |----------------------------------|----------------------------------|
 |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm|pptx<br /><br />thmx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
 
-### Zmiana domyślnego poziomu ochrony plików
+### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
 Edytując rejestr, możesz zmienić sposób ochrony plików w aplikacji RMS sharing. Możesz na przykład wymusić, aby pliki obsługujące ochronę natywną były objęte ochroną ogólną aplikacji RMS sharing.
 
 W jakich sytuacjach warto to zrobić:
@@ -133,12 +133,12 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 -   **Off**: blokowanie ochrony
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

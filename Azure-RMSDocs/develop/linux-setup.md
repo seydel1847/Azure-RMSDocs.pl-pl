@@ -20,7 +20,7 @@ ms.openlocfilehash: 561ed44582fe2c73cf40ac082bf67e91d37fb351
 
 ---
 
-# Konfiguracja w systemie Linux
+# <a name="linux-setup"></a>Konfiguracja w systemie Linux
 
 
 Kilka odmian systemu operacyjnego Linux może teraz używać zestawu Microsoft Rights Management SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).
@@ -29,21 +29,21 @@ Kilka odmian systemu operacyjnego Linux może teraz używać zestawu Microsoft R
 -   [Instrukcje dotyczące kompilacji i użycia](#how-to-build-and-use)
 -   [Zobacz też](#see-also)
 
-## Obsługiwane systemy operacyjne
+## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne
 
 
 **Uwaga** (dotyczy systemów Ubuntu 14.04, OpenSUSE 13.2, CentOS 7): biblioteki i przykłady zostały skompilowane również w systemach Windows i OS X, ale obecnie nie są one w pełni obsługiwane.
 
  
 
-## Instrukcje dotyczące kompilacji i użycia
+## <a name="how-to-build-and-use"></a>Instrukcje dotyczące kompilacji i użycia
 
 W usłudze Github są dostępne dwa tematy zawierające podstawowe wskazówki dotyczące kompilowania i używania tego zestawu SDK.
 
 -   [Jak kompilować biblioteki i przykładowe aplikacje](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_build_it.md)
--   [Jak instalować aplikacje w systemach użytkowników i używać ich](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
+-   [Jak instalować aplikacje w systemach użytkowników i ich używać](https://github.com/AzureAD/rms-sdk-for-cpp/blob/master/docs/how_to_use_it.md)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 
 * [Wprowadzenie](get-started.md)
 
@@ -60,6 +60,6 @@ W usłudze Github są dostępne dwa tematy zawierające podstawowe wskazówki do
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

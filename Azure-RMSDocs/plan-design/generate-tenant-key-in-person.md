@@ -18,13 +18,13 @@ ms.openlocfilehash: 4f8b32fa7961b3d59911cc279ac30a7c497deb5f
 
 ---
 
-# Generowanie i przenoszenie klucza dzierżawy — osobiście: ZAWARTOŚĆ WYCOFANA
+# <a name="generate-and-transfer-your-tenant-key-in-person-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — osobiście: ZAWARTOŚĆ WYCOFANA
 
 >*Dotyczy usług: Azure Rights Management, Office 365*
 
 Informacje przedstawione w tym artykule zostały usunięte, ponieważ nie są już odpowiednie, jako że usługa Azure Rights Management używa usługi Azure Key Vault na potrzeby kluczy dzierżawy zarządzanych przez klientów (jest to tak zwane rozwiązanie Bring Your Own Key — BYOK). 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

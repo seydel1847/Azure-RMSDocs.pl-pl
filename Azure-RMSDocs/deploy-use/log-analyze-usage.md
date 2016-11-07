@@ -12,13 +12,13 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
-ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
 
 
 ---
 
-# Rejestrowanie i analizowanie użycia usługi Azure Rights Management
+# <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -47,7 +47,7 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
 
 Więcej informacji na temat rejestrowania użycia usługi Azure Rights Management można znaleźć w sekcjach poniżej.
 
-## Włączanie rejestrowania użycia usługi Azure Rights Management
+## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Włączanie rejestrowania użycia usługi Azure Rights Management
 Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączone dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure Rights Management przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 
 
 > [!NOTE]
@@ -57,14 +57,14 @@ Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest dom
 
 
 
-## Uzyskiwanie dostępu i korzystanie z dzienników użycia usługi Azure Rights Management
+## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>Uzyskiwanie dostępu i korzystanie z dzienników użycia usługi Azure Rights Management
 Usługa Azure Rights Management zapisuje dzienniki na koncie magazynu Azure w postaci serii obiektów blob. Każdy obiekt blob zawiera jeden lub większą liczbę rekordów w rozszerzonym formacie W3C dziennika. Nazwy obiektów blob są liczbami odpowiadającymi kolejności ich utworzenia. Sekcja [Interpretowanie dzienników użycia usługi Azure Rights Management](#how-to-interpret-your-azure-rights-management-usage-logs) w dalszej części tego dokumentu zawiera więcej informacji na temat zawartości dzienników i ich tworzenia.
 
 Może upłynąć trochę czasu zanim dzienniki będą widoczne na koncie magazynu po akcji usługi Azure Rights Management. Większość dzienników pojawia się w ciągu 15 minut. Zalecamy pobranie dzienników do lokalnego magazynu, na przykład folderu lokalnego, bazy danych lub repozytorium MapReduce.
 
 Aby pobrać dzienniki użycia, należy skorzystać z modułu administracyjnego usługi Azure Rights Management dla programu Windows PowerShell. Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md). Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż **2.4.0.0**: `(Get-Module aadrm -ListAvailable).Version` 
 
-### Pobieranie dzienników użycia za pomocą programu PowerShell
+### <a name="to-download-your-usage-logs-by-using-powershell"></a>Pobieranie dzienników użycia za pomocą programu PowerShell
 
 1.  Uruchom program Windows PowerShell z opcją **Uruchom jako administrator** i wykonaj polecenie cmdlet [Connect AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx), aby nawiązać połączenie z usługą Azure Rights Management:
 
@@ -80,9 +80,9 @@ Aby pobrać dzienniki użycia, należy skorzystać z modułu administracyjnego u
 
     Na przykład po utworzeniu folderu o nazwie Dzienniki na dysku E:
     
-    * Aby pobrać dzienniki dotyczące określonej daty (na przykład 1.02.2016), wykonaj następujące polecenia: `Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
+    * Aby pobrać dzienniki dotyczące określonej daty (na przykład 1.02.2016), uruchom następujące polecenie: `Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
     
-    * Aby pobrać dzienniki dotyczące zakresu dat (np. od 1.02.2016 do 14.02.2016), wykonaj następujące polecenie: `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
+    * Aby pobrać dzienniki dotyczące zakresu dat (np. od 1.02.2016 do 14.02.2016), uruchom następujące polecenie: `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
 
 Po określeniu tylko dnia, jak w naszych przykładach, przyjmuje się godzinę 00:00:00 w formacie czasu lokalnego, która jest następnie konwertowana na czas UTC. Po określeniu godziny przy użyciu parametrów -fromdate lub -todate (na przykład -fromdate „2/1/2016 15:00:00”), podane data i godzina są konwertowane na czas UTC. Polecenie Get-AadrmUserLog pobiera następnie dzienniki dla tego przedziału czasu UTC.
 
@@ -96,7 +96,7 @@ Domyślnie to polecenie cmdlet używa trzech wątków do pobierania dzienników.
 >
 > Można na przykład wykonać następujące polecenie, aby zaimportować wszystkie informacje do formatu pliku LOG: `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### Jeśli rejestrowanie użycia usługi Azure Rights Management zostało włączone ręcznie przed zmianą funkcji rejestrowania w dniu 22 lutego 2016 r.
+#### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>Jeśli rejestrowanie użycia usługi Azure Rights Management zostało włączone ręcznie przed zmianą funkcji rejestrowania w dniu 22 lutego 2016 r.
 
 
 Jeśli rejestrowanie użycia było wykorzystywane przed zmianą rejestrowania, dzienniki użycia będą znajdowały się na Twoim skonfigurowanym koncie magazynu Azure. Firma Microsoft nie skopiuje tych dzienników z Twojego konta magazynu do nowego zarządzanego konta magazynu usługi Azure Rights Management w ramach zmiany funkcji rejestrowania. Za zarządzanie cyklem życia wcześniej wygenerowanych dzienników odpowiedzialni są użytkownicy. Można wykonać polecenie cmdlet [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) polecenia cmdlet, aby pobrać stare dzienniki. Na przykład:
@@ -111,15 +111,15 @@ Należy zauważyć, że nie trzeba pobierać dzienników przy użyciu polecenia 
 
 - Usługa Azure Rights Management została aktywowana po 22 lutego 2016 r.
 
-## Interpretowanie dzienników użycia usługi Azure Rights Management
+## <a name="how-to-interpret-your-azure-rights-management-usage-logs"></a>Interpretowanie dzienników użycia usługi Azure Rights Management
 Poniższe informacji mogą ułatwić interpretowanie dzienników użycia usługi Azure Rights Management.
 
-### Sekwencja dzienników
+### <a name="the-log-sequence"></a>Sekwencja dzienników
 Usługa Azure Rights Management zapisuje dzienniki w postaci serii obiektów blob. 
 
 Każdy wpis w dzienniku ma sygnaturę czasową UTC. Ponieważ usługa Azure Rights Management działa na wielu serwerach w wielu centrach danych, czasami dzienniki mogą wydawać się ułożone nie po kolei, nawet jeśli są posortowane według sygnatur czasowych. Jednak różnica jest mała i zazwyczaj mieści się zakresie jednej minuty. W większości przypadków nie jest to kwestia, która mogłaby stanowić problem podczas analizy dziennika.
 
-### Format obiektów blob
+### <a name="the-blob-format"></a>Format obiektów blob
 Każdy obiekt blob jest w rozszerzonym formacie W3C dziennika. Rozpoczyna się od następujących dwóch wierszy:
 
 **#Software: RMS**
@@ -130,7 +130,7 @@ Pierwszy wiersz określa, że są to dzienniki usługi Azure Rights Management. 
 
 Trzeci wiersz wylicza listę nazw pól rozdzielonych znakami tabulatora:
 
-**#Pola: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
+**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane w takiej samej kolejności, jak poprzedni wiersz, i są rozdzielone znakami tabulatora. Podczas interpretowania pól skorzystaj z poniższej tabeli.
 
@@ -153,10 +153,10 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
 
 
-#### Wyjątki w polu user-id
+#### <a name="exceptions-for-the-userid-field"></a>Wyjątki w polu user-id
 Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, istnieją dwa wyjątki, kiedy wartość w polu nie odwzorowuje rzeczywistego użytkownika:
 
--   Wartość **'microsoftrmsonline@&lt;ID_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
+-   Wartość **'microsoftrmsonline@&lt;identyfikator_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
 
     Ta wartość oznacza, że żądanie zostało wysłane przez usługę Office 365, taką jak Exchange Online lub SharePoint Online. W podanym ciągu znaków *&lt;ID_dzierżawy&gt;* oznacza identyfikator GUID dzierżawy, a *&lt;region&gt;* oznacza region rejestracji dzierżawy. Na przykład ciąg **na** reprezentuje Amerykę Północną, **eu** określa Europę, a **ap** — Azję.
 
@@ -164,7 +164,7 @@ Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, i
 
     Żądania z tego łącznika są rejestrowane przy użyciu nazwy głównej usługi **Aadrm_S-1-7-0**, która jest generowana automatycznie po zainstalowaniu łącznika usług RMS.
 
-#### Popularne typy żądań
+#### <a name="typical-request-types"></a>Popularne typy żądań
 Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tabeli przedstawiono niektóre spośród najbardziej popularnych typów żądań.
 
 |Typ żądania|Opis|
@@ -212,7 +212,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |UpdateTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące aktualizacji istniejącego szablonu.|
 
 
-## Uwagi dotyczące programu Windows PowerShell
+## <a name="windows-powershell-reference"></a>Uwagi dotyczące programu Windows PowerShell
 Od lutego 2016 r. jedynym poleceniem cmdlet programu Windows PowerShell potrzebnym do rejestrowania użycia usługi Azure Rights Management jest [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx). 
 
 Przed wprowadzeniem tej zmiany do obsługi dzienników użycia usługi Azure Rights Management potrzebne były następujące polecenia cmdlet, które obecnie są przestarzałe:  
@@ -240,6 +240,6 @@ Aby uzyskać więcej informacji na temat korzystania z programu Windows PowerShe
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

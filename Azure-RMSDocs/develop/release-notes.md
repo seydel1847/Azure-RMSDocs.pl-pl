@@ -3,7 +3,7 @@ title: "Nowości i informacje o wersji | Azure RMS"
 description: "Spis ważnych zmian i funkcji w tej nowej wersji zestawu RMS SDK."
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,28 +13,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81cbe287b67e2a1598efdd2a816913f147c7ff7b
-ms.openlocfilehash: f3d4b1ba0da3530121aa81056238533f0dcbed2f
+ms.sourcegitcommit: 60e64b1fb1184aaa51b6664ecb5288d6ff861413
+ms.openlocfilehash: 04364bc5daec881fe3c55d5cd41e7be11ac91ae7
 
 
 ---
 
-# Nowości i informacje o wersji
+# <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 
-## Co nowego
-Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej nowej wersji zestawu RMS SDK.
+## <a name="whats-new"></a>Co nowego
+Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej wersji zestawu RMS SDK.
 
--   [Nowości z czerwca 2016 r.](#new-for-June-2016)
--   [Aktualizacja z grudnia 2015 r.](#december-2015-update)
--   [Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++](#july-2015-update-adds-support-for-linux-c-developm)
--   [Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem](#may-2015-update-adds-logging-control)
--   [Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows](#february-2015-update-adds-windows-store-application-support)
--   [Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone](#january-2015-update-adds-winphone-platform-support)
--   [Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
--   [Informacje o wersji](#release-notes)
--   [Często zadawane pytania](#frequently-asked-questions)
-
-### Nowości z czerwca 2016 r.
+### <a name="new-for-june-2016"></a>Nowości z czerwca 2016 r.
 
 - **Obsługa nowoczesnego uwierzytelniania** — umożliwi logowanie oparte na bibliotece uwierzytelniania usługi Active Directory (ADAL) do aplikacji z obsługą usługi RMS. Zostaną udostępnione opcje logowania, takie jak usługa Multi-Factor Authentication (MFA), oparci na języku SAML dostawcy tożsamości firm zewnętrznych z aplikacjami klienckimi usługi RMS oraz uwierzytelnianie oparte na kartach inteligentnych i certyfikatach. Równocześnie zostanie wyeliminowana potrzeba korzystania z protokołu uwierzytelniania podstawowego w aplikacjach z obsługą usługi RMS.
 - **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach.
@@ -42,7 +32,7 @@ Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej ela
 - Poprawki
 
 
-### Aktualizacja z grudnia 2015 r.
+### <a name="december-2015-update"></a>Aktualizacja z grudnia 2015 r.
 
 W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następujące funkcjonalności:
 
@@ -74,7 +64,7 @@ W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następując
 -   Aktualizacje poprawiające komunikowanie błędów i rozwiązywanie problemów.
 -   Znaczący wzrost wydajności operacji kryptograficznych.
 
-### Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
+### <a name="july-2015-update-adds-support-for-linux-c-development"></a>Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
 
 W tej wersji dodano następujące funkcjonalności:
 
@@ -82,7 +72,7 @@ W tej wersji dodano następujące funkcjonalności:
 
     Aby uzyskać więcej informacji, zobacz temat [Rozpoczynanie pracy](get-started.md).
 
-### Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
+### <a name="may-2015-update-adds-logging-control"></a>Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
 
 W tej wersji dodano obsługę następujących funkcjonalności:
 
@@ -100,15 +90,15 @@ W tej wersji dodano obsługę następujących funkcjonalności:
 
     Aby uzyskać więcej informacji, zobacz metodę [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx).
 
-### Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
+### <a name="february-2015-update-adds-windows-store-application-support"></a>Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
 
 W tym wydaniu dodano obsługę aplikacji ze Sklepu Windows, zapewniając funkcjonalność odpowiadającą wydaniom dla systemów Windows Phone, Android i iOS/OS zestawu RMS SDK 4.1.
 
-### Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
+### <a name="january-2015-update-adds-winphone-platform-support"></a>Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
 
 W tym wydaniu dodano obsługę systemu Windows Phone, zapewniając funkcjonalność odpowiadającą wydaniom dla systemów Android i iOS/OS zestawu RMS SDK 4.1.
 
-### Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1
+### <a name="october-2014-update-upgrade-to-microsoft-rms-sdk-41"></a>Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1
 
 W wydaniu wersji 4.1 zestawu RMS SDK dodano następujące nowe funkcjonalności do systemów Google Android i Apple iOS / OS X.
 
@@ -120,11 +110,11 @@ W wydaniu wersji 4.1 zestawu RMS SDK dodano następujące nowe funkcjonalności 
 
     Na przykład nazwa właściwości MSUserPolicy.name została zmieniona na [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx).
 
-## Informacje o wersji
+## <a name="release-notes"></a>Informacje o wersji
 
 W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i poprzednich wydaniach interfejsów API zestawu Microsoft Rights Management SDK 4.x.
 
-**Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla platform iOS / OS X i Android**
+**Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla systemów iOS/OS X i Android**
 
 -   **Obsługa usług AD RMS** —administratorzy IT mogą używać aplikacji z włączoną usługą RMS na urządzeniach przenośnych z rozszerzeniami dla urządzeń przenośnych nowego serwera usług AD RMS.
 -   **Użycie trybu offline** — użytkownicy końcowi mogą uzyskać dostęp do chronionych przez usługę RMS danych w trybie offline.
@@ -148,9 +138,9 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   W razie użycia metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) z parametrem length różnym od wartości *array.length* późniejsze użycie zawartości za pomocą zestawu SDK jest niemożliwe.
 
-    **Rozwiązanie** — jest to znany problem. Aby go unikać, albo zawsze przekazuj parametr *byte \[\]* array o długości odpowiadającej parametrowi length, albo używaj metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array).
+    **Rozwiązanie** — jest to znany problem. Aby go unikać, zawsze przekazuj parametr *byte \[\]* array o długości odpowiadającej parametrowi length lub używaj metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array).
 
-**iOS i OS X**
+**Systemy iOS i OS X**
 
 -   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety z powodu usterki, obecnie nie obsługujemy całkowicie 1. lokalizacji. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
 
@@ -181,7 +171,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Uwaga**  — aplikacje MDI nie są obsługiwane przez nasz interfejs API dla systemu iOS.
 
-## Często zadawane pytania
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 **Wszystkie platformy**
 
@@ -220,7 +210,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Odpowiedź**: nie wszystkie operacje mogą zostać anulowane, więc operacja anulowania jest wykonywana w najlepszy możliwy sposób.
 
-**OS X**
+**OS x**
 
 **Pytanie**: przykładowa platforma aplikacji została dostosowana do wersji Xcode 5. Czy mogę pracować z wersją Xcode 4.6?
 
@@ -232,6 +222,6 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
