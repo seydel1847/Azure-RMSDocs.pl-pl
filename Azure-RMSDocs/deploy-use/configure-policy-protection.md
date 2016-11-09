@@ -2,20 +2,20 @@
 title: "Jak skonfigurować etykietę do zastosowania ochrony przez usługę Rights Management | Azure Information Protection"
 description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić przy użyciu usługi Rights Management, która korzysta z zasad szyfrowania, tożsamości oraz autoryzacji w celu zapobieżenia utracie danych. Ta ochrona jest stosowana, gdy skonfigurujesz etykietę do używania szablonu usługi Rights Management."
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 4f3c77df23207c3a76a768a1fe428484339de18f
 
 
 ---
 
-# Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management
+# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management
 
 >*Dotyczy: Azure Information Protection*
 
@@ -23,7 +23,7 @@ Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić przy użyciu 
 
 Ten szablon może być jednym z szablonów domyślnych, które są automatycznie tworzone podczas aktywacji usługi Azure Rights Management, lub szablonem niestandardowym. Szablony działów usługi Azure Rights Management są obsługiwane, ale stosują ochronę tylko wtedy, gdy autor dokumentu lub wiadomości e-mail znajduje się w skonfigurowanym zakresie szablonu. Jeśli użytkownik znajduje się poza zakresem, zobaczy komunikat informujący o tym, że usługa Azure Information Protection nie może zastosować etykiety.
 
-## Jak działa ochrona
+## <a name="how-the-protection-works"></a>Jak działa ochrona
 
 Gdy dokument lub wiadomość e-mail są chronione przez usługę Rights Management, będą szyfrowane podczas przechowywania i podczas przesyłania, a odszyfrować je mogą tylko autoryzowani użytkownicy. Szyfrowanie zostaje utrzymane w dokumencie lub wiadomości e-mail, nawet w przypadku zmiany nazwy dokumentu lub wiadomości. Ponadto możesz skonfigurować prawa i ograniczenia użytkowania, np.:
 
@@ -43,7 +43,7 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
 > Aby skonfigurować etykietę do stosowania ochrony usługi Rights Management, usługa Azure Rights Management musi być aktywowana dla Twojej organizacji. Jeśli jeszcze nie zostało to zrobione, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 
-## Aby skonfigurować etykietę w celu zastosowania ochrony usługi Rights Management
+## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>Aby skonfigurować etykietę w celu zastosowania ochrony usługi Rights Management
 
 1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
 
@@ -77,12 +77,12 @@ Aby uzyskać więcej informacji na temat usługi Azure Rights Management i jej d
 
 7. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).  
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

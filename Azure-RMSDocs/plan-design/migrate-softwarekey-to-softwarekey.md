@@ -3,7 +3,7 @@ title: Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza 
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez oprogramowanie."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 ---
 
 
-# Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie
+# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 
 Te instrukcje są częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez oprogramowanie. 
 
-Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) i wybierz inną konfigurację.
+Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) i wybierz inną konfigurację.
 
 Wykonaj poniższe kroki, które umożliwiają zaimportowanie konfiguracji usługi AD RMS do usługi Azure Information Protection i zastosowanie w ten sposób klucza dzierżawy usługi Azure Information Protection zarządzanego przez firmę Microsoft.
 
-## Importowanie danych konfiguracji do usługi Azure Information Protection
+## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>Importowanie danych konfiguracji do usługi Azure Information Protection
 
 1.  Na połączonej z Internetem stacji roboczej pobierz i zainstaluj moduł Windows PowerShell dla usługi Azure Rights Management (wersja minimalna: 2.5.0.0), który zawiera polecenie cmdlet [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx). Usługa Azure Rights Management (Azure RMS) udostępnia usługę ochrony dla usługi Azure Information Protection.
 
@@ -64,12 +64,12 @@ Wykonaj poniższe kroki, które umożliwiają zaimportowanie konfiguracji usług
     ```
 
 
-Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Jak sprawdzić, czy użytkownicy zarejestrowali się w usłudze RMS dla 
 description: "Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy użytkownicy utworzyli konta usługi RMS dla użytkowników indywidualnych. Można zastosować dowolną metodę opisaną w tym artykule lub kombinację różnych metod."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
+ms.sourcegitcommit: c1a9de2d0ef3021335e94cde86a7e6b844b15908
+ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
 
 
 ---
@@ -36,6 +36,6 @@ Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

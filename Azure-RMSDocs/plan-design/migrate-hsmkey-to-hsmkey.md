@@ -3,7 +3,7 @@ title: "Krok 2&colon; Migracja klucza chronionego przez moduł HSM do klucza chr
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/14/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
-ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
 
 ---
 
-# Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
+# <a name="step-2-hsmprotected-key-to-hsmprotected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
->*Dotyczy usług: Active Directory Rights Management Services, Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
 
 
 Te instrukcje są częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
 
-Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) i wybierz inną konfigurację.
+Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) i wybierz inną konfigurację.
 
 > [!NOTE]
 > W tych instrukcjach przyjęto założenie, że klucz usługi AD RMS jest chroniony przez moduł. Jest to najbardziej typowy przypadek. 
@@ -41,7 +41,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 > Jeśli chcesz przeprowadzić konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, przydatne może okazać się przeczytanie artykułu [Wprowadzenie do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
-## Część 1. Przesłanie klucza HSM do usługi Azure Key Vault
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Część 1. Przesłanie klucza HSM do usługi Azure Key Vault
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
@@ -60,7 +60,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
 Teraz klucz HSM w usłudze Azure Key Vault jest już gotowy do użycia w usłudze Azure Rights Management z usługi Azure Information Protection, a Ty możesz importować dane konfiguracji usługi AD RMS.
 
-## Część 2. Importowanie danych konfiguracji do usługi Azure Information Protection
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>Część 2. Importowanie danych konfiguracji do usługi Azure Information Protection
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Information Protection.
 
@@ -89,11 +89,11 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Information
     > [!NOTE]
     > Jeśli chcesz później potwierdzić, którego klucza używa Twój klucz dzierżawy usługi Azure Rights Management w usłudze Azure Key Vault, użyj polecenia cmdlet usługi Azure RMS [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx).
 
-Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

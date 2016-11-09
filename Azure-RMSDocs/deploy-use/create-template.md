@@ -3,7 +3,7 @@ title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azur
 description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Szablony ułatwiają użytkownikom końcowym i innym administratorom stosowanie odpowiednich zasad służących do ochrony dokumentów i wiadomości e-mail."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
 
 
 ---
 
 
-# Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
+# <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 
 Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie **Zaawansowane funkcje** odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure.
 
-Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usługi Azure Rights Management, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usługi Azure Rights Management, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Wykonując poniższe procedury, można tworzyć, konfigurować i publikować szablony niestandardowe dla usługi Rights Management.
 
-## Tworzenie szablonu niestandardowego
+## <a name="to-create-a-custom-template"></a>Tworzenie szablonu niestandardowego
 
 1.  W zależności od tego, czy logowanie ma miejsce w Centrum administracyjnym usługi Office 365, czy też w klasycznym portalu Azure, wykonaj jedną z następujących czynności:
 
@@ -76,7 +76,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
 4. Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
 
-## Konfiguracja i publikacja szablonu niestandardowego
+## <a name="to-configure-and-publish-a-custom-template"></a>Konfiguracja i publikacja szablonu niestandardowego
 
 1.  Wybierz nowo utworzony szablon na stronie **SZABLONY** w klasycznym portalu Azure.
 
@@ -164,10 +164,10 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 > [!WARNING]
 > Po wprowadzeniu zmian do szablonu, który został wcześniej zapisany, w przypadku klientów zmiany te nie będą widoczne w szablonie do czasu, gdy szablony zostaną odświeżone na komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Odświeżanie szablonów dla użytkowników](refresh-templates.md).
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

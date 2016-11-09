@@ -2,20 +2,20 @@
 title: "Zmiana lub dostosowanie istniejącej etykiety | Azure Information Protection"
 description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz zmienić lub dostosować, konfigurując je w zasadach usługi Azure Information Protection."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 0ca82bdbb4db382c868ae38f7595a7eee585c479
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
 
 
 ---
 
-# Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
+# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -41,15 +41,15 @@ Aby zmienić etykietę, użyj następujących instrukcji.
 > [!TIP]
 >Jeśli chcesz przywrócić jedną z etykiet domyślnych do wartości domyślnych, użyj informacji zawartych w temacie [Domyślne zasady usługi Information Protection](configure-policy-default.md).
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).
-
-
+Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

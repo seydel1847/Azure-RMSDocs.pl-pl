@@ -2,20 +2,20 @@
 title: "Konfigurowanie etykiety pod kątem oznaczeń wizualnych | Azure Information Protection"
 description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
 
 
 ---
 
-# Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
+# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -53,7 +53,7 @@ Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiet
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Używanie zmiennych w ciągu tekstowym
+## <a name="using-variables-in-the-text-string"></a>Używanie zmiennych w ciągu tekstowym
 
 W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać następujących zmiennych:
 
@@ -71,14 +71,14 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
     
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety Tajne, tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx  Classification: Tajne**.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).  
-
-
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

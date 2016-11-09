@@ -1,9 +1,9 @@
 ---
 title: "Uwagi dotyczące wdrażania klienta usługi RMS | Azure Information Protection"
-description: "Klient usługi Rights Management (klient usługi RMS) w wersji 2 jest także znany jako klient MSIPC. Jest to oprogramowanie przeznaczone dla komputerów z systemem Windows, które komunikuje się z usługą Microsoft Rights Management lokalnie lub w chmurze, aby ułatwić ochronę dostępu do informacji i ich użycia. Ochrona obejmuje przepływ informacji przez aplikacje i urządzenia w granicach organizacji lub poza zarządzanymi granicami. Klient usługi RMS jest dostarczany razem z aplikacją do udostępniania usługi Rights Management dla systemu Windows. Jest również dostępny jako opcjonalny plik do pobrania, który można — po potwierdzeniu i zaakceptowaniu umowy licencyjnej — za darmo rozpowszechniać za pomocą oprogramowania innych firm. Dzięki temu klienci mogą chronić i wykorzystywać zawartość chronioną przy użyciu usług Rights Management."
+description: "Informacje dotyczące ponownej dystrybucji, instalacji, obsługiwanych systemów operacyjnych, ustawień rejestru i odnajdowania usług dla usługi Rights Management Service (klienta usługi RMS) w wersji 2, która jest również znana jako klient MSIPC."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,29 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 7dc20d52b501b9a6cbf659c3e00d6059352d6631
+ms.sourcegitcommit: 6b1b134aa8a0c7ef7cded627a7d25df4a90e9faa
+ms.openlocfilehash: 811622757a4e44afb84ec2df84341ecbcd2e7a8f
 
 
 ---
 
-# Uwagi dotyczące wdrażania klienta usługi RMS
+# <a name="rms-client-deployment-notes"></a>Uwagi dotyczące wdrażania klienta usługi RMS
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Vista*
 
-Klient usługi Rights Management (klient usługi RMS) w wersji 2 jest także znany jako klient MSIPC. Jest to oprogramowanie przeznaczone dla komputerów z systemem Windows, które komunikuje się z usługą Microsoft Rights Management lokalnie lub w chmurze, aby ułatwić ochronę dostępu do informacji i ich użycia. Ochrona obejmuje przepływ informacji przez aplikacje i urządzenia w granicach organizacji lub poza zarządzanymi granicami. Klient usługi RMS jest dostarczany razem z [aplikacją Rights Management sharing dla systemu Windows](sharing-app-windows.md). Jest również dostępny [jako opcjonalny plik do pobrania](http://www.microsoft.com/download/details.aspx?id=38396), który można — po potwierdzeniu i zaakceptowaniu umowy licencyjnej — za darmo rozpowszechniać za pomocą oprogramowania innych firm. Dzięki temu klienci mogą chronić i wykorzystywać zawartość chronioną przy użyciu usług Rights Management.
+Klient usługi Rights Management (klient usługi RMS) w wersji 2 jest także znany jako klient MSIPC. Jest to oprogramowanie przeznaczone dla komputerów z systemem Windows, które komunikuje się z usługą Microsoft Rights Management lokalnie lub w chmurze, aby ułatwić ochronę dostępu do informacji i ich użycia. Ochrona obejmuje przepływ informacji przez aplikacje i urządzenia w granicach organizacji lub poza zarządzanymi granicami. 
+
+Klient usługi RMS jest dostarczany razem z [aplikacją do udostępniania usługi Rights Management dla systemu Windows](sharing-app-windows.md). Jest również dostępny jako [opcjonalny plik do pobrania](http://www.microsoft.com/download/details.aspx?id=38396), który można — po potwierdzeniu i zaakceptowaniu umowy licencyjnej — za darmo rozpowszechniać za pomocą oprogramowania innych firm. Dzięki temu klienci mogą chronić i wykorzystywać zawartość chronioną przy użyciu usług Rights Management.
 
 
-## Dystrybucja klienta usługi RMS
+## <a name="redistributing-the-rms-client"></a>Dystrybucja klienta usługi RMS
 Klient usługi RMS może być za darmo dystrybuowany i umieszczany w pakietach z innymi aplikacjami i rozwiązaniami IT. Jeśli jesteś deweloperem aplikacji lub dostawcą rozwiązań i chcesz dystrybuować klienta usługi RMS, masz dwie opcje:
 
 -   Zalecana: osadź instalatora klienta usługi RMS w instalacji aplikacji i uruchom go w trybie dyskretnym (przełącznik **/quiet** szczegółowo opisany w następnej sekcji).
 
 -   Ustaw klienta usługi RMS jako wymaganie wstępne aplikacji. W przypadku tej opcji może być konieczne udostępnienie użytkownikom dodatkowych instrukcji dotyczących uzyskiwania i instalowania klienta oraz aktualizowania komputerów przy jego użyciu przed rozpoczęciem korzystania z aplikacji.
 
-## Instalowanie klienta usługi RMS
+## <a name="installing-the-rms-client"></a>Instalowanie klienta usługi RMS
 Klient RMS jest dostępny w pliku wykonywalnym instalatora o nazwie **setup_msipc_***<arch>***.exe**, gdzie *<arch>* to **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalatora w wersji 32-bitowej (x86) nie można uruchomić w 64-bitowej instalacji systemu Windows.
 
 > [!NOTE]
@@ -48,26 +50,27 @@ Klienta usługi RMS można zainstalować przy użyciu jednej z następujących m
 
 -   **Tryb interaktywny.** Klienta usługi RMS można również zainstalować przy użyciu opartego na graficznym interfejsie użytkownika instalatora dostarczonego z Kreatorem instalacji klienta usługi RMS. W tym celu kliknij dwukrotnie pakiet instalatora klienta usługi RMS (**setup_msipc_***<arch>***.exe**) w folderze, do którego on został skopiowany lub pobrany na komputerze lokalnym.
 
-## Pytania i odpowiedzi dotyczące klienta usługi RMS
+## <a name="questions-and-answers-about-the-rms-client"></a>Pytania i odpowiedzi dotyczące klienta usługi RMS
 Poniższa sekcja zawiera często zadawane pytania na temat klienta usługi RMS oraz odpowiedzi na nie.
 
-### Które systemy operacyjne są obsługiwane przez klienta usługi RMS?
+### <a name="which-operating-systems-support-the-rms-client"></a>Które systemy operacyjne są obsługiwane przez klienta usługi RMS?
 Klient usługi RMS jest obsługiwany w następujących systemach operacyjnych:
 
 |System operacyjny Windows Server|Kliencki system operacyjny Windows|
 |-----------------------------------|-----------------------------------|
+|Windows Server 2016|Windows 10|
 |Windows Server 2012 R2|Windows 8.1|
 |Windows Server 2012|Windows 8|
 |Windows Server 2008 R2|Windows 7 co najmniej z dodatkiem SP1|
 |Windows Server 2008 (tylko usługi AD RMS)|Windows Vista co najmniej z dodatkiem SP2 (tylko usługi AD RMS)|
 
-### Które procesory lub platformy obsługują klienta usługi RMS?
+### <a name="which-processors-or-platforms-support-the-rms-client"></a>Które procesory lub platformy obsługują klienta usługi RMS?
 Klient usługi RMS jest obsługiwany na platformach obliczeniowych x86 i x64.
 
-### Gdzie jest instalowany klient usługi RMS?
+### <a name="where-is-the-rms-client-installed"></a>Gdzie jest instalowany klient usługi RMS?
 Klient usługi RMS jest domyślnie instalowany w katalogu %ProgramFiles%\Active Directory Rights Management Services Client 2.<minor version number>.
 
-### Które pliki są skojarzone z oprogramowaniem klienta usługi RMS?
+### <a name="what-files-are-associated-with-the-rms-client-software"></a>Które pliki są skojarzone z oprogramowaniem klienta usługi RMS?
 Następujące pliki są instalowane jako część oprogramowania klienckiego usługi RMS:
 
 -   Msipc.dll
@@ -80,19 +83,19 @@ Następujące pliki są instalowane jako część oprogramowania klienckiego us�
 
 Oprócz wymienionych plików klient usługi RMS instaluje również pliki obsługi wielojęzycznego interfejsu użytkownika (MUI) w 44 językach. Aby sprawdzić listę obsługiwanych języków, uruchom instalację klienta usługi RMS i po jej zakończeniu przejrzyj zawartość folderów obsługi wielu języków w domyślnej ścieżce.
 
-### Czy klient usługi RMS jest domyślnie uwzględniany podczas instalacji obsługiwanego systemu operacyjnego?
+### <a name="is-the-rms-client-included-by-default-when-i-install-a-supported-operating-system"></a>Czy klient usługi RMS jest domyślnie uwzględniany podczas instalacji obsługiwanego systemu operacyjnego?
 Nie. Ta wersja klienta usługi RMS jest dostarczana jako opcjonalny plik do pobrania, który można osobno instalować na komputerach z obsługiwanymi wersjami systemu operacyjnego Microsoft Windows.
 
-### Czy klient usługi RMS jest automatycznie aktualizowany przy użyciu usługi Microsoft Update?
+### <a name="is-the-rms-client-automatically-updated-by-microsoft-update"></a>Czy klient usługi RMS jest automatycznie aktualizowany przy użyciu usługi Microsoft Update?
 Jeśli ten klient usługi RMS został zainstalowany w trybie dyskretnym, dziedziczy bieżące ustawienia usługi Microsoft Update. Jeśli klient usługi RMS został zainstalowany za pomocą instalatora opartego na graficznym interfejsie użytkownika, kreator instalacji klienta usługi RMS monituje użytkownika o włączenie usługi Microsoft Update.
 
-## Ustawienia klienta usługi RMS
+## <a name="rms-client-settings"></a>Ustawienia klienta usługi RMS
 Poniższa sekcja zawiera informacje na temat ustawień klienta usługi RMS. Informacje te mogą być przydatne, jeśli masz problemy z aplikacjami lub usługami korzystającymi z klienta usługi RMS.
 
 > [!NOTE]
-> Niektóre ustawienia są zależne od tego, czy aplikacja obsługująca usługę RMS działa jako aplikacja w trybie klienta (np. programy Microsoft Word i Outlook lub aplikacja do udostępniania usługi RMS), czy aplikacja w trybie serwera (np. programy SharePoint i Exchange).  W poniższych tabelach te ustawienia są identyfikowane odpowiednio jako **Tryb klienta** i **Tryb serwera**.
+> Niektóre ustawienia są zależne od tego, czy aplikacja obsługująca usługę RMS działa jako aplikacja w trybie klienta (np. programy Microsoft Word i Outlook lub aplikacja do udostępniania usługi RMS), czy aplikacja w trybie serwera (np. programy SharePoint i Exchange). W poniższych tabelach te ustawienia są identyfikowane odpowiednio jako **Tryb klienta** i **Tryb serwera**.
 
-### Gdzie klient usługi RMS przechowuje licencje na komputerach klienckich
+### <a name="where-the-rms-client-stores-licenses-on-client-computers"></a>Gdzie klient usługi RMS przechowuje licencje na komputerach klienckich
 Klient usługi RMS przechowuje licencje na dysku lokalnym oraz buforuje niektóre informacje w rejestrze systemu Windows.
 
 |Opis|Ścieżki trybu klienta|Ścieżki trybu serwera|
@@ -103,7 +106,7 @@ Klient usługi RMS przechowuje licencje na dysku lokalnym oraz buforuje niektór
 > [!NOTE]
 > *<SID>* to bezpieczny identyfikator konta, na którym działa aplikacja serwera. Jeśli na przykład aplikacja działa na koncie wbudowanej usługi sieciowej, należy zastąpić *<SID>* wartością znanego identyfikatora SID dla tego konta (S-1-5-20).
 
-### Ustawienia rejestru systemu Windows klienta usługi RMS
+### <a name="windows-registry-settings-for-the-rms-client"></a>Ustawienia rejestru systemu Windows klienta usługi RMS
 Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować niektóre konfiguracje klienta usługi RMS. Na przykład administrator aplikacji z obsługą usługi RMS, które komunikują się z serwerami AD RMS, może zaktualizować lokalizację usługi przedsiębiorstwa (zastąpić serwer usług AD RMS wybrany do użycia podczas publikowania) w zależności od aktualnej lokalizacji komputera klienckiego w topologii usługi Active Directory. Można też włączyć śledzenie usługi RMS na komputerze klienckim, aby ułatwić rozwiązywanie problemów dotyczących aplikacji obsługującej usługę RMS. Skorzystaj z poniższej tabeli, aby zidentyfikować ustawienia rejestru, które możesz zmieniać w przypadku klienta usługi RMS.
 
 |Zadanie|Ustawienia|
@@ -117,7 +120,7 @@ Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować nie
 |Tylko usługi AD RMS: aby obsługiwać serwery federacyjne partnera wymagające uwierzytelniania opartego na formularzu do wprowadzenia danych przez użytkowników|Domyślnie klient usługi RMS działa w trybie dyskretnym i użytkownik nie musi wprowadzać żadnych danych. Serwery federacyjne partnerów mogą być jednak skonfigurowane tak, aby wymagać wprowadzenia danych przez użytkownika, na przykład w ramach uwierzytelniania opartego na formularzu. W takim przypadku należy skonfigurować klienta usługi RMS, aby ignorował tryb dyskretny w celu umożliwienia wyświetlenia formularza uwierzytelniania federacyjnego w oknie przeglądarki na potrzeby uwierzytelniania użytkowników.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**Uwaga**: jeśli serwer federacyjny został skonfigurowany do użycia uwierzytelniania opartego na formularzu, ten klucz jest wymagany. Jeśli serwer federacyjny jest skonfigurowany do użycia zintegrowanego uwierzytelniania systemu Windows, ten klucz nie jest wymagany.|
 |Tylko usługi AD RMS: aby zablokować użycie usługi ILS|Domyślnie klient usługi RMS obsługuje korzystanie z zawartości chronionej przez usługę ILS, można go jednak skonfigurować tak, aby blokował tę usługę, używając poniższego klucza rejestru. Jeśli ten klucz rejestru został ustawiony na blokowanie usługi ILS, wszelkie próby otwarcia lub uzyskania dostępu do zawartości chronionej przez usługę ILS spowodują zwrócenie następującego błędu:<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: **DisablePassportCertification**<br /><br />**Wartość:** 1 — blokowanie użycia usługi ILS, 0 — zezwolenie na użycie usługi ILS (wartość domyślna)|
 
-### Zarządzanie dystrybucją szablonów dla klienta usługi RMS
+### <a name="managing-template-distribution-for-the-rms-client"></a>Zarządzanie dystrybucją szablonów dla klienta usługi RMS
 Szablony ułatwiają użytkownikom i administratorom szybkie stosowanie ochrony przy użyciu usługi Rights Management. Klient usługi RMS automatycznie pobiera szablony z serwerów usługi lub usług RMS. Jeśli szablony zostaną umieszczone w poniższej lokalizacji folderu, klient usługi RMS nie będzie pobierać szablonów z lokalizacji domyślnej, a w zamian pobierze szablony znajdujące się w tym folderze. Klient usługi RMS może kontynuować pobieranie z innych dostępnych serwerów usługi RMS.
 
 **Tryb klienta:** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
@@ -126,7 +129,7 @@ Szablony ułatwiają użytkownikom i administratorom szybkie stosowanie ochrony 
 
 Jeśli korzystasz z tego folderu, nie trzeba używać specjalnej konwencji nazewnictwa. Szablony muszą jednak zostać wydane przez usługę lub serwer RMS, a wymagane rozszerzenie nazwy pliku to XML. Prawidłowe nazwy to na przykład Contoso-Confidential.xml lub Contoso-ReadOnly.xml.
 
-## Tylko usługi AD RMS: ograniczanie klienta usługi RMS do użycia zaufanych serwerów usług AD RMS
+## <a name="ad-rms-only-limiting-the-rms-client-to-use-trusted-ad-rms-servers"></a>Tylko usługi AD RMS: ograniczanie klienta usługi RMS do użycia zaufanych serwerów usług AD RMS
 Klienta usługi RMS można ograniczyć tak, aby używał tylko określonych zaufanych serwerów usług AD RMS, wprowadzając poniższe zmiany do rejestru systemu Windows na komputerach lokalnych.
 
 **Aby włączyć ograniczanie klienta usługi RMS tak, aby używał tylko zaufanych serwerów AD RMS**
@@ -143,23 +146,42 @@ Klienta usługi RMS można ograniczyć tak, aby używał tylko określonych zauf
 
     **Wartość:** ciągi dodane w tej lokalizacji klucza rejestru mogą być podane w formacie nazwy domeny systemu DNS (np. **adrms.contoso.com**) lub w postaci pełnych adresów URL zaufanych serwerów usług AD RMS (np. **https://adrms.contoso.com**). Jeśli wybrany adres URL rozpoczyna się ciągiem **https://**, klient usługi RMS użyje protokołu SSL lub zabezpieczeń TLS do kontaktowania się z określonym serwerem usług AD RMS.
 
-## Odnajdowanie usługi RMS
-Odnajdowanie usługi RMS umożliwia klientowi usługi RMS sprawdzanie usługi lub serwera RMS, z którym będzie nawiązywana komunikacja, przed rozpoczęciem ochrony zawartości. Odnajdowanie usługi również może się nastąpić, gdy klient usługi RMS korzysta z zawartości chronionej, ale jest mniej prawdopodobne, ponieważ zasady dołączone do zawartości zawierają preferowaną usługę lub serwer RMS. Klient uruchomi odnajdowanie usługi, tylko jeśli wystąpi błąd tej czynności.
+## <a name="rms-service-discovery"></a>Odnajdowanie usługi RMS
+Odnajdowanie usługi RMS umożliwia klientowi usługi RMS sprawdzanie usługi lub serwera RMS, z którym będzie nawiązywana komunikacja, przed rozpoczęciem ochrony zawartości. Odnajdowanie usługi również może nastąpić, gdy klient usługi RMS korzysta z zawartości chronionej, ale jest mniej prawdopodobne, ponieważ zasady dołączone do zawartości zawierają preferowaną usługę lub serwer RMS. Klient uruchomi odnajdowanie usługi, tylko jeśli wystąpi błąd tej czynności.
 
-Podczas odnajdowania usługi najpierw wyszukiwana jest lokalna wersja usługi Rights Management (AD RMS). Jeśli to się nie powiedzie, funkcja odnajdowania usługi automatycznie wyszuka wersję usługi Rights Management (Azure RMS) w chmurze.
+Podczas odnajdowania usługi klient usługi RMS sprawdza następujące elementy:
 
-Podczas odnajdowania usługi w przypadku wdrożenia lokalnego klient usługi RMS sprawdza następujące elementy:
+1. **Rejestr systemu Windows na komputerze lokalnym**: jeśli w rejestrze skonfigurowano ustawienia odnajdowania usług, zostaną one wypróbowane jako pierwsze. 
 
-1.  Rejestr systemu Windows na komputerze lokalnym: jeśli w rejestrze skonfigurowano ustawienia odnajdowania usług, zostaną one wypróbowane jako pierwsze.  Domyślnie te ustawienia nie są konfigurowane w rejestrze.
+    Domyślnie te ustawienia nie są konfigurowane w rejestrze, ale administrator może skonfigurować je dla usługi AD RMS zgodnie z procedurą opisaną w [tej sekcji](#enabling-client-side-service-discovery-by-using-the-windows-registry). Zazwyczaj administrator konfiguruje te ustawienia usługi Azure Rights Management podczas [procesu migracji](../plan-design/migrate-from-ad-rms-phase2.md) z usług AD RMS do usługi Azure Information Protection.
 
-2.  Usługi domenowe Active Directory: komputer dołączony do domeny wysyła do usługi Active Directory zapytanie o punkt połączenia usługi (SCP). Jeśli punkt połączenia usługi został zarejestrowany, do klienta usługi RMS zwracany jest adres URL serwera RMS do użycia.
+2. **Active Directory Domain Services**: komputer dołączony do domeny wysyła do usługi Active Directory zapytanie o punkt połączenia usługi (SCP). 
 
-### Tylko usługi AD RMS: włączanie odnajdowania po stronie serwera za pomocą usługi Active Directory
+    Jeśli punkt połączenia usługi został zarejestrowany zgodnie z opisem w [tej sekcji](#ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory), do klienta usługi RMS zwracany jest adres URL serwera AD RMS do użycia.
+
+3. **Usługa odnajdowania Azure Rights Management**: klient usługi RMS łączy się ze stroną **https://discover.aadrm.com**, na której wyświetlany jest monit o uwierzytelnienie użytkownika.
+
+    Po pomyślnym uwierzytelnieniu nazwa użytkownika (i domena) z procesu uwierzytelniania będzie służyć do identyfikowania dzierżawy usługi Azure Information Protection do użycia. Adres URL usługi Azure Information Protection do użycia dla konta użytkownika jest zwracany do klienta RMS. Adres URL będzie mieć następujący format: **https://**\<adres_URL_dzieżawy\>**/_wmcs/licensing** 
+
+    Na przykład: 5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
+
+    *\<Adres_URL_dzierżawy\>* ma następujący format: **{GUID}.rms.[Region].aadrm.com**.Tę wartość można znaleźć, identyfikując wartość **RightsManagementServiceId** po uruchomieniu polecenia cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS.
+
+> [!NOTE]
+> Istnieją trzy ważne wyjątki związane z tym przepływem odnajdowania usługi:
+> 
+> - Urządzenia przenośne są najlepiej przystosowane do używania usługi w chmurze, więc domyślnie używają funkcji odnajdowania usługi Azure Rights Management (https://discover.aadrm.com). Aby zastąpić to ustawienie, tak aby urządzenia przenośne korzystały z usług AD RMS, a nie usługi Azure Rights Management, należy określić rekordy SRV w systemie DNS i zainstalować rozszerzenie urządzeń przenośnych opisane w temacie [Rozszerzenie usług Active Directory Rights Management Services dla urządzeń przenośnych](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx). 
+>
+> - Jeśli usługa Rights Management jest wywoływana za pośrednictwem etykiety usługi Azure Information Protection, odnajdowanie usługi nie jest przeprowadzane. W zamian adres URL jest określany bezpośrednio w ustawieniu etykiety konfigurowanym w obrębie zasad usługi Azure Information Protection.  
+
+> - Po zainicjowaniu logowania użytkownika z aplikacji pakietu Office nazwa użytkownika (i domena) z procesu uwierzytelniania będzie służyć do identyfikowania dzierżawy usługi Azure Information Protection do użycia. W takim przypadku ustawienia rejestru są niepotrzebne i punkt połączenia usługi nie jest wybierany.
+
+### <a name="ad-rms-only-enabling-serverside-service-discovery-by-using-active-directory"></a>Tylko usługi AD RMS: włączanie odnajdowania po stronie serwera za pomocą usługi Active Directory
 Jeśli konto ma wystarczające uprawnienia (administratorzy przedsiębiorstwa i administrator lokalny serwera usług AD RMS), można automatycznie zarejestrować punkt połączenia usługi (SCP) podczas instalowania serwera głównego klastra usług AD RMS. Jeśli punkt połączenia usługi już istnieje w lesie, należy najpierw usunąć istniejący punkt połączenia usługi przed zarejestrowaniem nowego.
 
 Aby zarejestrować i usunąć punkt połączenia usługi po zainstalowaniu usług AD RMS, można wykonać kroki poniższej procedury. Przed rozpoczęciem upewnij się, że konto ma wymagane uprawnienia (administratorzy przedsiębiorstwa i administrator lokalny serwera usług AD RMS).
 
-#### Aby włączyć odnajdywanie usług AD RMS przez zarejestrowanie punktu połączenia w usłudze Active Directory
+#### <a name="to-enable-ad-rms-service-discovery-by-registering-an-scp-in-active-directory"></a>Aby włączyć odnajdywanie usług AD RMS przez zarejestrowanie punktu połączenia w usłudze Active Directory
 
 1.  Otwórz konsolę usług Active Directory Management na serwerze usług AD RMS:
 
@@ -175,10 +197,10 @@ Aby zarejestrować i usunąć punkt połączenia usługi po zainstalowaniu usłu
 
 5.  Wybierz opcję **Ustaw punkt połączenia usługi na bieżący klaster certyfikacji**, a następnie kliknij przycisk **OK**.
 
-### Włączanie odnajdowania usługi po stronie klienta za pomocą rejestru systemu Windows
+### <a name="enabling-clientside-service-discovery-by-using-the-windows-registry"></a>Włączanie odnajdowania usługi po stronie klienta za pomocą rejestru systemu Windows
 Jeśli nie chcesz używać punktu połączenia usługi lub jeśli punkt połączenia usługi nie istnieje, możesz skonfigurować rejestr na komputerze klienckim, aby klient usługi RMS mógł znaleźć odpowiedni serwer usług AD RMS.
 
-#### Aby włączyć odnajdowanie usługi AD RMS po stronie klienta za pomocą rejestru systemu Windows
+#### <a name="to-enable-clientside-ad-rms-service-discovery-by-using-the-windows-registry"></a>Aby włączyć odnajdowanie usługi AD RMS po stronie klienta za pomocą rejestru systemu Windows
 
 1.  Otwórz edytor rejestru systemu Windows — Regedit.exe:
 
@@ -203,10 +225,10 @@ Jeśli nie chcesz używać punktu połączenia usługi lub jeśli punkt połącz
 
 Jeśli klient usługi RMS nie może znaleźć punktu połączenia usługi przy użyciu zapytania wysyłanego do usługi Active Directory i nie określono tego punktu w rejestrze, wywołania funkcji odnajdowania usługi dla usług AD RMS zakończą się niepowodzeniem.
 
-### Przekierowywanie ruchu serwera licencyjnego
+### <a name="redirecting-licensing-server-traffic"></a>Przekierowywanie ruchu serwera licencyjnego
 W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie odnajdowania usługi, na przykład gdy są łączone ze sobą dwie organizacje i stary serwer licencyjny w jednej z organizacji jest wycofywany, a klienci muszą zostać przekierowani do nowego serwera. Dotyczy to także migracji z usług AD RMS do usługi Azure RMS. Użyj następującej procedury, aby włączyć przekierowywanie licencjonowania.
 
-#### Aby włączyć przekierowywanie serwera licencyjnego usługi RMS za pomocą rejestru systemu Windows
+#### <a name="to-enable-rms-licensing-redirection-by-using-the-windows-registry"></a>Aby włączyć przekierowywanie serwera licencyjnego usługi RMS za pomocą rejestru systemu Windows
 
 1.  Otwórz edytor rejestru systemu Windows — Regedit.exe:
 
@@ -238,6 +260,6 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

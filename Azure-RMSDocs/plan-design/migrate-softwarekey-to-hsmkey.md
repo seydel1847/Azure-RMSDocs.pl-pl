@@ -3,7 +3,7 @@ title: "Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
 
 
 ---
 
-# Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
+# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
->*Dotyczy usług: Active Directory Rights Management, Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
 
 
 Są to instrukcje będące częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
 
-Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) i wybierz inną konfigurację.
+Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection) i wybierz inną konfigurację.
 
 Jest to składająca się z czterech części procedura, która umożliwia zaimportowanie konfiguracji usługi AD RMS do usługi Azure Information Protection i zastosowanie w ten sposób zarządzanego przez Ciebie klucza dzierżawy usługi Azure Information Protection w usłudze Azure Key Vault.
 
@@ -40,7 +40,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 > Jeśli chcesz przeprowadzić konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, przydatne może okazać się przeczytanie artykułu [Wprowadzenie do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
-## Część 1. Wyodrębnianie klucza SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>Część 1. Wyodrębnianie klucza SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
 
 1.  Administrator usługi Azure Key Vault: użyj następujących kroków w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
 
@@ -87,7 +87,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 
     **operation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Operacja do wykonania &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; importowanie**
 
-    **application &nbsp;&nbsp;&nbsp;&nbsp; Aplikacja &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prosta**
+    **application &nbsp;&nbsp;&nbsp;&nbsp;Aplikacja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; prosta**
 
     **verify &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Weryfikacja zabezpieczeń klucza konfiguracji &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tak**
 
@@ -110,7 +110,7 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 > [!IMPORTANT]
 > Po wykonaniu tego kroku usuń te pliki PEM z rozłączonej stacji roboczej, aby upewnić się, że nie będą dostępne dla nieautoryzowanych osób. Przykładowo uruchom polecenie „cipher /w:E”, aby bezpiecznie usunąć wszystkie pliki z dysku E:.
 
-## Część 2. Tworzenie pakietu klucza HSM i przenoszenie go do usługi Azure Key Vault
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>Część 2. Tworzenie pakietu klucza HSM i przenoszenie go do usługi Azure Key Vault
 
 1.  Administrator usługi Azure Key Vault: wykonaj następujące kroki z sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
 
@@ -126,7 +126,7 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 
     Teraz klucz HSM jest już przesłany z modułu HSM do usługi Azure Key Vault, a Ty możesz importować dane konfiguracji usługi AD RMS.
 
-## Część 3. Importowanie danych konfiguracji do usługi Azure Information Protection
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>Część 3. Importowanie danych konfiguracji do usługi Azure Information Protection
 
 1.  Administrator usługi Azure Information Protection: na stacji roboczej podłączonej do Internetu i w sesji programu PowerShell skopiuj nowe pliki danych konfiguracji (xml), z których usunięto klucz SLC po uruchomieniu narzędzia TpdUtil.
 
@@ -146,7 +146,7 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 
 
 
-3.  Użyj polecenia cmdlet [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx), aby zakończyć połączenie z usługą Azure Rights Management:
+3.  Użyj polecenia cmdlet [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx), aby zakończyć połączenie z usługą Azure Rights Management:
 
     ```
     Disconnect-AadrmService
@@ -156,13 +156,13 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
     > Jeśli chcesz później potwierdzić, którego klucza używa Twój klucz dzierżawy usługi Azure Rights Management w usłudze Azure Key Vault, użyj polecenia cmdlet usługi Azure RMS [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx).
 
 
-Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

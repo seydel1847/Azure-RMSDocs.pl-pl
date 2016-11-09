@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi ochrony danych Azure Rights 
 description: "Niektóre często zadawane pytania dotyczące usługi ochrony danych Azure Rights Management (Azure RMS) z usługi Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
-ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
+ms.sourcegitcommit: 6566e0ce901097bcf5f30d76be67522d3464f100
+ms.openlocfilehash: c92e35b0cb9f892f7859511365027c241d0f1ef6
 
 
 ---
@@ -78,7 +78,7 @@ Do uwierzytelnienia użytkownika usługa Azure Rights Management zawsze używa k
 
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
-## Czy mogę dodać użytkowników spoza firmy do szablonów niestandardowych?
+## Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
 Tak. Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i użytkowników spoza niej.
 
 Aby określić użytkowników spoza organizacji, dodaj ich jako kontakty do grupy wybranej w klasycznym portalu Azure podczas konfigurowania szablonów. Możesz też użyć [modułu programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md):
@@ -110,7 +110,7 @@ Nie pozwólcie, aby to bieżące ograniczenie opóźniło Wam rozpoczęcie korzy
 Jeśli jednak zasady firmy wymagają używania sprzętowego modułu zabezpieczeń (HSM) i w przeciwnym przypadku zablokowałoby to wdrożenie usługi Azure Information Protection, jest możliwe wdrożenie usługi Azure Information Protection z funkcją BYOK już teraz, przy ograniczonych funkcjach ochrony usługi Rights Management w odniesieniu do programu Exchange. Więcej informacji zawiera temat [Cennik i ograniczenia dotyczące funkcji BYOK](../plan-design/byok-price-restrictions.md) w części [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 ## Wygląda na to, że funkcja, której potrzebuję, nie współpracuje z chronionymi bibliotekami programu SharePoint. Czy obsługa tej funkcji jest planowana?
-Obecnie program SharePoint obsługuje dokumenty chronione za pomocą usługi Rights Management, korzystając w tym celu z bibliotek chronionych za pomocą usługi IRM, które nie obsługują niestandardowych szablonów, śledzenia dokumentów i niektórych innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi biurowe).
+Obecnie program SharePoint obsługuje dokumenty chronione za pomocą usługi Rights Management, korzystając w tym celu z bibliotek chronionych za pomocą usługi IRM, które nie obsługują niestandardowych szablonów, śledzenia dokumentów i niektórych innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi pakietu Office).
 
 Użytkownicy zainteresowani konkretną funkcją, która nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
@@ -157,6 +157,6 @@ Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest pr
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

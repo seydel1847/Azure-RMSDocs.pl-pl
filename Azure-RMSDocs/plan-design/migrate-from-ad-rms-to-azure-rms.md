@@ -3,7 +3,7 @@ title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection | Az
 description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory Rights Management (AD RMS) do usługi Azure Information Protection. Po zakończeniu migracji użytkownicy będą nadal mieć dostęp do dokumentów i wiadomości e-mail, które organizacja chroniła za pomocą usługi AD RMS. W przypadku nowo chronionej zawartości będzie używana usługa Azure Information Protection."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb240b92a86bfc37685556ba2ce71b9eea56ae88
-ms.openlocfilehash: c3e926b48dfc66da71e4e3f16f9359b3cb8322c6
+ms.sourcegitcommit: 5774a94582e6a685f84a1fc6cd9915258bf7cbe0
+ms.openlocfilehash: 49c65779e5651f25082369822b60b09435c41041
 
 
 ---
 
-# Migrowanie z usługi AD RMS do usługi Azure Information Protection
+# <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
-Poniższy zestaw instrukcji dotyczy migracji wdrożenia usług Active Directory Rights Management (AD RMS) do usługi Azure Information Protection. Po zakończeniu migracji użytkownicy będą nadal mieć dostęp do dokumentów i wiadomości e-mail, które organizacja chroniła za pomocą usługi AD RMS. W przypadku nowo chronionej zawartości będzie używana usługa Azure Rights Management.
+Poniższy zestaw instrukcji dotyczy migracji wdrożenia usług Active Directory Rights Management (AD RMS) do usługi Azure Information Protection. Po zakończeniu migracji użytkownicy będą nadal mieć dostęp do dokumentów i wiadomości e-mail, które organizacja chroniła za pomocą usługi AD RMS. W przypadku nowo chronionej zawartości będzie używana usługa Azure Rights Management dostępna w ramach usługi Azure Information Protection.
 
 Nie masz pewności, czy ta migracja usług AD RMS jest odpowiednia dla Twojej organizacji?
 
@@ -30,7 +30,19 @@ Nie masz pewności, czy ta migracja usług AD RMS jest odpowiednia dla Twojej or
 
 -   Porównanie usług Azure Information Protection i AD RMS można znaleźć w artykule [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
 
-## Wymagania wstępne dotyczące migracji usługi AD RMS do usługi Azure Information Protection
+## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Zalecamy przeczytanie przez migrowaniem do usługi Azure Information Protection
+
+Mimo że nie jest to wymagane, zapoznanie się z poniższymi informacjami przed rozpoczęciem migracji może pomóc w lepszym zrozumieniu działania technologii, jeśli jest to związane z wykonywanym krokiem migracji:
+
+- [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md): poznaj opcje zarządzania kluczami w swojej dzierżawie usługi Azure Information Protection, gdzie odpowiednik klucza SLC w chmurze jest zarządzany przez firmę Microsoft (ustawienie domyślne) lub przez użytkownika (konfiguracja BYOK („bring your own key”). 
+
+- [Odnajdowanie usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery): w tej sekcji uwag dotyczących wdrożenia klienta usługi RMS wyjaśniono, że kolejność dla potrzeb odnajdowania usługi to **rejestr** > **punkt połączenia usługi** > **chmura**. Podczas procesu migracji, gdy punkt połączenia usługi jest nadal zainstalowany, należy skonfigurować klientów przy użyciu ustawień rejestru dla dzierżawy usługi Azure Information Protection, tak aby nie używali oni klastra usługi AD RMS zwróconego z punktu połączenia usługi.
+
+- [Omówienie łącznika usługi Microsoft Rights Management](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): w tej sekcji dokumentacji dotyczącej łącznika usług RMS objaśniono sposób łączenia serwerów lokalnych z usługą Azure Rights Management, aby chronić dokumenty i wiadomości e-mail.
+
+Ponadto jeśli znasz sposób działania usług AD RMS, dzięki zapoznaniu się z tematem [Jak działa usługa Azure RMS? Kulisy](../understand-explore/how-does-it-work.md) możesz łatwiej zidentyfikować procesy technologiczne są takie same lub inne w wersji dla chmury.
+
+## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>Wymagania wstępne dotyczące migracji usługi AD RMS do usługi Azure Information Protection
 Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij się, że zostały spełnione następujące wymagania wstępne oraz że znasz wszystkie ograniczenia.
 
 - **Obsługiwane wdrożenie usługi RMS:**
@@ -42,6 +54,8 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
         - Windows Server 2012 (x64)
         
         - Windows Server 2012 R2 (x64)
+        
+        - Windows Server 2016 (x64)
         
     - Tryb kryptograficzny 2:
 
@@ -102,7 +116,7 @@ Ograniczenia:
 
     Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Aby uzyskać pomoc, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#support-options-and-community-resources).
 
-## Omówienie kroków migracji usługi AD RMS do usługi Azure Information Protection
+## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>Omówienie kroków migracji usługi AD RMS do usługi Azure Information Protection
 
 
 Kroki migracji można podzielić na 4 fazy, które mogą realizować różni administratorzy w różnych terminach.
@@ -113,7 +127,7 @@ Kroki migracji można podzielić na 4 fazy, które mogą realizować różni adm
 
     Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet środowiska Windows PowerShell z modułu usługi Azure RMS, który został zainstalowany przy użyciu narzędzia Azure Rights Management Administration Tool.
 
-- **Krok 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure Information Protection**
+- **Krok 2. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure Information Protection**
 
     Dane konfiguracji (klucze, szablony, adresy URL) są eksportowane z usługi AD RMS do pliku XML, a następnie plik ten jest przekazywany do usługi Azure Rights Management wchodzącej w skład usługi Azure Information Protection za pomocą polecenia cmdlet Import-AadrmTpd programu Windows PowerShell. W zależności od konfiguracji klucza usług AD RMS konieczne może być wykonanie dodatkowych kroków:
 
@@ -179,12 +193,12 @@ Kroki migracji można podzielić na 4 fazy, które mogą realizować różni adm
     Ten krok jest opcjonalny, ale też zalecany, jeśli wybrana w kroku 2 topologia klucza dzierżawy usługi Azure Information Protection jest zarządzana przez firmę Microsoft. Ten krok nie ma zastosowania, jeśli wybrana topologia klucza dzierżawy usługi Azure Information Protection jest zarządzana przez klienta (BYOK).
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwera](migrate-from-ad-rms-phase1.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

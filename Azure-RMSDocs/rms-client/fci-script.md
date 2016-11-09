@@ -3,7 +3,7 @@ title: "Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług
 description: "Przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w instrukcjach dotyczących ochrony za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
+ms.sourcegitcommit: f2723c4417890411230e9dbab4e2d9e36282b1db
+ms.openlocfilehash: 0e2ff499fc7c9890a3d8d7327964e3ed5ac19112
 
 
 ---
@@ -24,6 +24,8 @@ ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
 
 Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w artykule [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
 
+Ten skrypt używa minimalnej wersji **2.2.0.0** dla modułu ochrony usługi RMS. Uruchom następujące polecenie, aby sprawdzić wersję: `(Get-Module RMSProtection -ListAvailable).Version` 
+
 *&#42;&#42;Zastrzeżenie&#42;&#42;: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy*
 *skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE bez jakichkolwiek gwarancji.*
 
@@ -32,7 +34,7 @@ Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z 
 .SYNOPSIS 
      Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID and RMS Protection module minimum version 2.2.0.0.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -56,7 +58,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 1.0' 
+[String] $Script:Version = 'version 2.0' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -98,11 +100,11 @@ function Protect-File ($ffile, $ftemplateId, $fownermail) {
     [bool] $returnValue = $false
     try {
         If ($OwnerMail -eq $null -or $OwnerMail -eq "") {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId")
         } else {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId -OwnerEmail $fownermail
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId -OwnerEmail $fownermail
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId, set Owner: $fownermail")
         }
@@ -174,6 +176,6 @@ Powrót do tematu [Ochrona za pomocą usług RMS z użyciem infrastruktury klasy
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

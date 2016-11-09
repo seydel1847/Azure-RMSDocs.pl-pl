@@ -3,7 +3,7 @@ title: "Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenoś
 description: "Informacje dotyczące sposobu, w jaki aplikacja RMS sharing obsługuje usługi Azure RMS jako bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: e4b9a13ba29820cd7a19e0b8509966f5d8195353
+ms.sourcegitcommit: 18a222c7927ecc4394266518619941b8a4b6499f
+ms.openlocfilehash: 751422489ec4eec074764ff0417640b22a394325
 
 
 ---
 
 
-# Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych
+# <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Aplikacja RMS sharing to bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usługi Azure Rights Management, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
+Aplikacja RMS sharing to bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usługi Azure Rights Management, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
 
 Gdy użytkownicy chronią swoje pliki przy użyciu aplikacji RMS sharing, mogą również śledzić chronione dokumenty i odwoływać dostęp do nich, jeśli jest to konieczne. Służy do tego [witryna śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562).
 
@@ -52,12 +52,12 @@ Aplikacja RMS sharing dla urządzeń przenośnych obsługuje najczęściej używ
 -   Zarządzanie aplikacją dla urządzeń z systemem Android, które nie zostały zarejestrowane w usłudze Intune.
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

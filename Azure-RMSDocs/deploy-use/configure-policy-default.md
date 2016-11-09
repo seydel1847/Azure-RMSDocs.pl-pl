@@ -2,33 +2,33 @@
 title: "Zasady domyślne | Azure Information Protection"
 description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady usługi Azure Information Protection. Jeśli zmodyfikujesz zasady domyślne, możesz odnieść się do tych wartości, aby przywrócić wartości domyślne zasad."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 
 
 ---
 
-# Domyślne zasady usługi Azure Information Protection
+# <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyślne zasady usługi Azure Information Protection. Jeśli zmodyfikujesz zasady domyślne, możesz odnieść się do tych wartości, aby przywrócić wartości domyślne zasad.
 
-## Pasek usługi Information Protection
+## <a name="information-protection-bar"></a>Pasek usługi Information Protection
 
 |Ustawienie|Wartość|
 |-------------------------------|---------------------------|
 |Tytuł|Czułość|
 |Etykietka narzędzia|Ważność informacji składa się z czterech różnych poziomów (Publiczne, Wewnętrzne, Poufne, Tajne), dzięki czemu użytkownik może zidentyfikować ryzyko ujawnienia informacji nieautoryzowanym użytkownikom wewnątrz firmy lub poza nią.|
 
-## Etykiety
+## <a name="labels"></a>Etykiety
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -38,14 +38,14 @@ Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyśl
 |Poufne|Te dane zawierają poufne informacje biznesowe. Udostępnianie tych danych nieautoryzowanym użytkownikom może zaszkodzić organizacji. Przykładami informacji poufnych są informacje dotyczące pracowników, poszczególnych projektów lub umów z klientami oraz dane dotyczące konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
-## Etykiety podrzędne
+## <a name="sublabels"></a>Etykiety podrzędne
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Tajne \ Cała firma|Te dane obejmują poufne informacje biznesowe, do których mają dostęp wszyscy pracownicy firmy.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Tajne \ Moja grupa|Te dane obejmują poufne informacje biznesowe, do których mają dostęp tylko grupy pracowników.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
-## Ustawienia globalne
+## <a name="global-settings"></a>Ustawienia globalne
 
 |Ustawienie|Wartość|
 |-------------------------------|---------------------------|
@@ -54,12 +54,12 @@ Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyśl
 |Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę|Wyłączone|
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy). 
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy). 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

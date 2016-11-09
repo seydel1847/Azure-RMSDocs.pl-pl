@@ -2,20 +2,20 @@
 title: Tworzenie nowej etykiety | Azure Information Protection
 description: "Usługa Azure Information Protection zawiera domyślne etykiety z możliwością dostosowania, ale możesz też utworzyć własne etykiety, które użytkownicy zobaczą na pasku usługi Information Protection."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5cf6237f33d0818c8411cbb5126fc825c3c411d7
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: bedf1cb43be9a70c2b3252fa730f46d83574e954
 
 
 ---
 
-# Tworzenie nowej etykiety dla usługi Azure Information Protection
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -42,14 +42,14 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).  
-
-
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

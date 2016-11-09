@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia aplikacja za pomocą zestawu RMS S
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,28 +14,35 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
+ms.sourcegitcommit: 4560a1cf3424ae4dddd3a0675b62e9c5e55de9fa
+ms.openlocfilehash: 1f46d93a47fae3b7e7de334db73b7e7b65ea6eea
 
 
 ---
 
-# Tworzenie aplikacji
+# <a name="developing-your-application"></a>Tworzenie aplikacji
 
 Ten temat zawiera podstawowe wskazówki dotyczące kluczowych aspektów aplikacji z obsługą usługi RMS i może służyć jako podstawa tworzenia aplikacji.
 
-## Wprowadzenie
+## <a name="introduction"></a>Wprowadzenie
 
-Wskazówki zawarte w tym temacie bazują na prostej aplikacji, *IPCHelloWorld*, która pomaga w poznaniu podstawowych pojęć i kodu aplikacji obsługującej prawa. Projekt *IPCHelloWorld* został już skonfigurowany dla zestawu Rights Management Services SDK 2.1. Informacje o sposobie konfigurowania nowego projektu do korzystania z zestawu RMS SDK 2.1 zawiera temat [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
+Wskazówki zawarte w tym temacie bazują na prostej aplikacji, *IPCHelloWorld*, która pomaga w poznaniu podstawowych pojęć i kodu aplikacji obsługującej prawa. Projekt *IPCHelloWorld* został już skonfigurowany dla zestawu Rights Management Services SDK 2.1.
 
-Możesz pobrać pełną przykładową aplikację *IPCHelloWorld* jako plik [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440) z witryny Microsoft Connect.
-> [!Note]
-> Wyświetlenie błędu podczas otwierania witryny Microsoft Connect może oznaczać, że użytkownik nie jest zarejestrowany. Aby się zarejestrować: przejdź do witryny [Connect](http://connect.microsoft.com) i zaloguj się, używając kolejno opcji Konto Microsoft > Katalog > Wyszukiwanie usług zarządzania prawami dostępu > Dołącz.
+### <a name="download-sample"></a>Pobieranie przykładu
+- Sprawdź, czy nastąpiła rejestracja w witrynie Connect:
+  - Aby się zarejestrować, przejdź do strony [Connect](http://connect.microsoft.com)
+  - Zaloguj się przy użyciu konta Microsoft
+  - Przejdź do [witryny Rights Management Connect](https://connect.microsoft.com/site1170)
+  - Dołącz 
+- Pobierz pełną przykładową aplikację *IPCHelloWorld* jako plik [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
+
+Informacje o sposobie konfigurowania nowego projektu do korzystania z zestawu RMS SDK 2.1 zawiera temat [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md).
 
 
-## Ładowanie biblioteki MSIPC.dll
 
-Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywołać funkcję [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) w celu załadowania biblioteki MSIPC.dll.
+## <a name="loading-msipcdll"></a>Ładowanie biblioteki MSIPC.dll
+
+Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywołać funkcję [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) w celu załadowania biblioteki MSIPC.dll.
 
         C++
         hr = IpcInitialize();
@@ -44,7 +51,7 @@ Przed wywołaniem dowolnej funkcji zestawu RMS SDK 2.1 należy najpierw wywoła�
           goto exit;
         }
 
-## Wyliczanie szablonów
+## <a name="enumerating-templates"></a>Wyliczanie szablonów
 
 Szablon usług RMS definiuje zasady stosowane do ochrony danych, czyli definiuje użytkowników, którzy mogą uzyskiwać dostęp do danych, i ich prawa. Szablony usług RMS są instalowane na serwerze usług RMS.
 
@@ -58,7 +65,7 @@ Następujący fragment kodu wylicza dostępne szablony usług RMS z domyślnego 
         goto exit;
       }
 
-To wywołanie pobiera szablony usług RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
+To wywołanie pobiera szablony usług RMS zainstalowane na domyślnym serwerze i ładuje wyniki do struktury [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx) wskazywanej przez zmienną *pcTil*, a następnie wyświetla szablony.
 
       C++
       if (0 == pcTil->cTi) {
@@ -75,11 +82,11 @@ To wywołanie pobiera szablony usług RMS zainstalowane na domyślnym serwerze i
         wprintf(L"\n");
       }
 
-## Serializowanie licencji
+## <a name="serializing-a-license"></a>Serializowanie licencji
 
-Przed rozpoczęciem ochrony danych należy przeprowadzić serializację licencji i pobrać klucz zawartości. Klucz zawartości jest używany do szyfrowania poufnych danych. Serializowana licencja jest zwykle dołączana do zaszyfrowanych danych i jest używana przez konsumenta chronionych danych. Konsument musi wywołać funkcję [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) przy użyciu serializowanej licencji, aby pobrać klucz zawartości w celu odszyfrowania zawartości i pobrania zasad skojarzonych z zawartością.
+Przed rozpoczęciem ochrony danych należy przeprowadzić serializację licencji i pobrać klucz zawartości. Klucz zawartości jest używany do szyfrowania poufnych danych. Serializowana licencja jest zwykle dołączana do zaszyfrowanych danych i jest używana przez konsumenta chronionych danych. Konsument musi wywołać funkcję [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx) przy użyciu serializowanej licencji, aby pobrać klucz zawartości w celu odszyfrowania zawartości i pobrania zasad skojarzonych z zawartością.
 
-Dla uproszczenia należy użyć pierwszego szablonu usług RMS zwróconego przez funkcję [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist), aby serializować licencję.
+Dla uproszczenia należy użyć pierwszego szablonu usług RMS zwróconego przez funkcję [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx), aby serializować licencję.
 
 Normalnie należy użyć okna dialogowego interfejsu użytkownika w celu umożliwienia użytkownikowi wybrania odpowiedniego szablonu.
 
@@ -95,9 +102,9 @@ Normalnie należy użyć okna dialogowego interfejsu użytkownika w celu umożli
 Po wykonaniu tego działania dysponujesz kluczem zawartości *hContentKey* i serializowaną licencją *pSerializedLicense*, którą należy dołączyć do chronionych danych.
 
 
-## Ochrona danych
+## <a name="protecting-data"></a>Ochrona danych
 
-Teraz możesz przystąpić do szyfrowania poufnych danych przy użyciu funkcji [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt). Po pierwsze należy zapytać funkcję **IpcEncrypt** o rozmiar zaszyfrowanych danych.
+Teraz możesz przystąpić do szyfrowania poufnych danych przy użyciu funkcji [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx). Po pierwsze należy zapytać funkcję **IpcEncrypt** o rozmiar zaszyfrowanych danych.
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +116,7 @@ Teraz możesz przystąpić do szyfrowania poufnych danych przy użyciu funkcji [
         goto exit;
       }
 
-W tym przypadku element wszText zawiera zwykły tekst, który zostanie objęty ochroną. Funkcja [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) zwraca rozmiar zaszyfrowanych danych w parametrze *cbEncrypted*.
+W tym przypadku element *wszText* zawiera zwykły tekst, który zostanie objęty ochroną. Funkcja [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) zwraca rozmiar zaszyfrowanych danych w parametrze *cbEncrypted*.
 
 Teraz przydziel pamięć dla zaszyfrowanych danych.
 
@@ -134,7 +141,7 @@ Na koniec możesz przeprowadzić właściwe szyfrowanie.
 
 Po wykonaniu tego działania dysponujesz zaszyfrowanymi danymi, *pbEncrypted*, oraz serializowaną licencją, *pSerializedLicense*, która będzie używana przez konsumentów do odszyfrowania danych.
 
-## Obsługa błędów
+## <a name="error-handling"></a>Obsługa błędów
 
 W tej przykładowej aplikacji do obsługi błędów używana jest funkcja *DisplayError*.
 
@@ -151,9 +158,9 @@ W tej przykładowej aplikacji do obsługi błędów używana jest funkcja *Displ
         }
       }
 
-Funkcja *DisplayError* używa funkcji [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) w celu pobrania komunikatu o błędzie z odpowiedniego kodu błędu i wysłania go do wyjścia standardowego.
+Funkcja *DisplayError* używa funkcji [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx) w celu pobrania komunikatu o błędzie z odpowiedniego kodu błędu i wysłania go do wyjścia standardowego.
 
-## Czyszczenie
+## <a name="cleaning-up"></a>Czyszczenie
 
 Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
 
@@ -174,19 +181,19 @@ Przed zakończeniem pracy należy także zwolnić wszystkie przydzielone zasoby.
         IpcFreeMemory((LPVOID)pcTil);
       }
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 - [Wskazówki i informacje dla deweloperów](developer-notes.md)
-- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)
+- [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

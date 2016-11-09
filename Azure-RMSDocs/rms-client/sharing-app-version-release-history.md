@@ -3,7 +3,7 @@ title: "Aplikacja do udostępniania usługi Rights Management&colon; historia we
 description: "Zobacz nowości i zmiany w wersji aplikacji do udostępniania usługi Rights Management dla systemu Windows."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 08ca0de6802aa001e5e2bcf7637592c2ad68864d
 
 
 ---
 
-# Aplikacja do udostępniania usługi Rights Management: historia wersji
+# <a name="rights-management-sharing-application-version-release-history"></a>Aplikacja do udostępniania usługi Rights Management: historia wersji
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje aplikację RMS sharing w celu wprowadzenia poprawek i dodania nowych funkcji. Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy.
 
@@ -29,7 +29,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 > [!NOTE]
 > Opinie i pytania dotyczące aplikacji do udostępniania usługi RMS należy przesyłać pocztą e-mail na adres [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question).
 
-## Wersja 1.0.2217.0
+## <a name="version-1022170"></a>Wersja 1.0.2217.0
 
 **Wydana**: 2016-07-13
 
@@ -39,7 +39,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 
 
-## Wersja 1.0.2191.0
+## <a name="version-1021910"></a>Wersja 1.0.2191.0
 **Wydana**: 2016-06-16
 
 **Poprawki**:
@@ -53,7 +53,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 - Niewielka liczba drobnych usterek i usprawnień dla komunikatów o błędach.
 
 
-## Wersja 1.0.2004.0
+## <a name="version-1020040"></a>Wersja 1.0.2004.0
 **Wydana**: 2015-12-11
 
 **Poprawki**:
@@ -72,16 +72,16 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
     Istnieją pewne ograniczenia dotyczące standardowych użytkowników korzystających z pakietu Office 2010. Aby uzyskać więcej informacji, zobacz instrukcje dla użytkowników w sekcji [Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) w temacie [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
 
-## Wersja 1.0.1908.0
+## <a name="version-1019080"></a>Wersja 1.0.1908.0
 **Wydana**: 2015-09-16
 
 **Poprawki**:
 
 -   Obsługa uwierzytelniania wieloskładnikowego (MFA, multi-factor authentication) dla usług Azure RMS, zapewniająca również niezależność aplikacji, które używają nowoczesnego uwierzytelniania, od Asystenta logowania firmy Microsoft.
 
-    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) w temacie [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
+    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) w temacie [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](../get-started/requirements-azure-ad.md).
 
-## Wersja 1.0.1784.0
+## <a name="version-1017840"></a>Wersja 1.0.1784.0
 **Wydana**: 2015-07-30
 
 **Poprawki**:
@@ -90,7 +90,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 -   Niewielka liczba regresji i drobnych usterek.
 
-## Wersja 1.0.1770.0
+## <a name="version-1017700"></a>Wersja 1.0.1770.0
 **Wydana**: 2015-04-25
 
 **Poprawki**:
@@ -113,7 +113,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
     Aby uzyskać więcej informacji, zobacz [Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](sharing-app-dialog-box.md).
 
-## Wersja 1.0.1667.0
+## <a name="version-1016670"></a>Wersja 1.0.1667.0
 **Wydana**: 2015-01-19
 
 **Poprawki**:
@@ -131,6 +131,6 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

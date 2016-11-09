@@ -3,7 +3,7 @@ title: "Cennik i ograniczenia dotyczące funkcji BYOK | Azure Information Protec
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,24 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7dee4efcff4ccf76f08f9033fdaf89daf095d4e
-ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: e64e87298358b5d1064cda491a10abb48545a98e
 
 
 ---
 
-# Cennik i ograniczenia dotyczące funkcji BYOK
+# <a name="byok-pricing-and-restrictions"></a>Cennik i ograniczenia dotyczące funkcji BYOK
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 
-Organizacje, które mają subskrypcję obejmującą usługę Azure Information Protection, mogą używać kluczy zarządzanych przez klienta (BYOK) w usłudze Azure Key Vault i [rejestrować ich użycie](../deploy-use/log-analyze-usage.md) bez dodatkowych opłat. 
+Organizacje, które mają subskrypcję obejmującą usługę Azure Information Protection, mogą konfigurować dzierżawę usługi Azure Information Protection do użycia klucza zarządzanego przez klienta (BYOK) i [rejestrować jego użycie](../deploy-use/log-analyze-usage.md) bez dodatkowych opłat. 
 
-Niemniej, aby użyć usługi Azure Key Vault, musisz mieć subskrypcję platformy Azure obsługującą usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+Klucz musi być przechowywany w usłudze Azure Key Vault, co wymaga płatnej (lub próbnej) subskrypcji platformy Azure. Należy również używać warstwy Premium usługi Azure Key Vault do obsługi kluczy chronionych przez moduł HSM. Za korzystanie z klucza chronionego przez moduł HSM w usłudze Azure Key Vault naliczana jest opłata miesięczna. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
 
 W przypadku używania usługi Azure Key Vault do zarządzania kluczem dzierżawy usługi Azure Information Protection zalecane jest użycie osobnego magazynu kluczy i osobnej subskrypcji dla tego klucza, co pozwala zapewnić, że jest on używany tylko przez usługę Azure Rights Management. 
 
-## Zalety używania usługi Azure Key Vault
+## <a name="benefits-of-using-azure-key-vault"></a>Zalety używania usługi Azure Key Vault
 
 Oprócz rejestrowania użycia usługi Azure Information Protection można dla dodatkowej pewności porównać uzyskane w ten sposób dane z [zarejestrowanymi danymi dotyczącymi użycia usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-logging/) w celu niezależnego potwierdzenia, że tylko usługa Azure Rights Management korzysta z tego klucza. W razie potrzeby można natychmiast odwołać dostęp do klucza, usuwając uprawnienia w magazynie kluczy.
 
@@ -48,7 +48,7 @@ Oprócz funkcji zarządzania kluczami usługa Azure Key Vault zapewnia administr
 Aby uzyskać więcej informacji na temat usługi Azure Key Vault, zobacz [Co to jest usługa Azure Key Vault?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/) i odwiedź [blog zespołu usługi Azure Key Vault](https://blogs.technet.microsoft.com/kv/), zawierający najnowsze informacje oraz wyjaśnienie sposobu korzystania z tej technologii przez inne usługi.
 
 
-## Ograniczenia w przypadku korzystania z rozwiązania BYOK
+## <a name="restrictions-when-using-byok"></a>Ograniczenia w przypadku korzystania z rozwiązania BYOK
 
 Jeśli istnieją użytkownicy, którzy zarejestrowali się w celu korzystania z bezpłatnego konta przy użyciu usługi RMS dla użytkowników indywidualnych, nie można użyć rozwiązania BYOK ani rejestrowania użycia, ponieważ ta konfiguracja nie ma administratora dzierżawy do skonfigurowania tych funkcji.
 
@@ -78,15 +78,15 @@ Jeśli użytkownik migruje do usługi Azure RMS z usług AD RMS, możliwe że za
 
 Czasami wyjątek usługi Azure RMS BYOK dla usługi Exchange Online nie stanowi problemu w praktyce. Przykładowo jest tak w przypadku organizacji potrzebujących funkcji BYOK i rejestrowania, które uruchamiają swoje aplikacje do obsługi danych (Exchange, SharePoint, Office) lokalnie i używają usługi Azure RMS w celu korzystania z funkcji, która nie jest łatwo dostępna z lokalną usługą AD RMS (np. w przypadku współpracy z innymi firmami i uzyskiwaniem dostępu z klientów mobilnych). Zarówno funkcja BYOK, jak i możliwość rejestrowania będą działać prawidłowo w tym scenariuszu, a organizacja zachowa pełną kontrolę nad swoją subskrypcją usługi Azure RMS.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Jeśli zdecydujesz się na zarządzanie własnym kluczem, przejdź do tematu [Wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
+Jeśli zdecydujesz się na zarządzanie własnym kluczem, przejdź do tematu [Wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
 
 Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma Microsoft zarządza kluczem dzierżawy, zobacz sekcję [Następne kroki](plan-implement-tenant-key.md#next-steps) w artykule Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management.
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

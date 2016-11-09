@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące klasyfikacji i etykietowania | Azure
 description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce4fc256cf80fdd2e4a8212e2f64ffc6ca6a3964
-ms.openlocfilehash: 9b341a53a85242839d737bc36c90a8f94637bae1
+ms.sourcegitcommit: b23466ee412f3e705f49083c11c2099c0cdcd2d6
+ms.openlocfilehash: b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd
 
 
 ---
@@ -34,13 +34,17 @@ Kilka minut wystarczy do zapoznania się z naszym samouczkiem Szybki start: [Sam
 
 Obecna wersja ma następujące ograniczenia: W blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) i witrynie [Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) będą się pojawiać ogłoszenia o dostępności dodatkowych funkcji i możliwości:
 
-- Brak centralnego rejestrowania dla funkcji klasyfikacji i etykietowania.
+- Etykiety mogą być stosowane tylko do typów plików pakietu Office i wiadomości e-mail programu Outlook.
+
+- Etykiety dodatku pakietu Office są widoczne dla wszystkich użytkowników z zainstalowanym klientem usługi Azure Information Protection.
 
 - Nazwy etykiet i etykietki narzędzi są obsługiwane tylko w jednym języku.
 
-- Warunkami klasyfikacji automatycznej muszą być frazy lub wzorce.
-
 - Pliki nie mogą być klasyfikowane w Eksploratorze plików systemu Windows.
+
+- Brak centralnego rejestrowania dla funkcji klasyfikacji i etykietowania.
+
+- Warunkami klasyfikacji automatycznej muszą być frazy lub wzorce.
 
 - Aplikacje pakietu Office dla komputerów Mac i urządzeń przenośnych (iOS i Android) ani aplikacje sieci Web pakietu Office (Office Online) nie są jeszcze obsługiwane.
 
@@ -53,6 +57,10 @@ Obecna wersja ma następujące ograniczenia: W blogu [dotyczącym pakietu Enterp
 Aby skonfigurować zasady usługi Azure Information Protection, musisz zalogować się do portalu Azure jako administrator globalny usługi Azure Active Directory.
 
 Jeśli jednak w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasad demonstracyjnych, zalogowanie się do portalu nie jest konieczne do wyświetlenia i wypróbowania funkcji etykietowania. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection, co umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie pozwala na zmianę ani dodanie nowej etykiety bez rejestrowania się w portalu Azure. 
+
+## Które opcje witryny Azure Portal to P1 i P2?
+
+Aby sprawdzić, które funkcje została uwzględnione w subskrypcji **Azure Information Protection Premium 1** (P1) w porównaniu z subskrypcją **Azure Information Protection Premium 2** (P2), zobacz [listę funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
 
 ## Czy usługa Azure Information Protection obsługuje scenariusze lokalne i hybrydowe?
 
@@ -150,6 +158,6 @@ Jeśli występuje problem z usługą Azure Information Protection i jest używan
 Jeśli masz pytania lub opinie, użyj witryny usługi Yammer [Azure Information Protection](https://www.yammer.com/askipteam/). 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

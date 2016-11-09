@@ -3,7 +3,7 @@ title: "Często zadawane pytania dotyczące usługi Azure Information Protection
 description: "Niektóre często zadawane pytania dotyczące usługi Azure Information Protection i jej usługi ochrony danych, Azure Rights Management (Azure RMS)."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: d869514a126302522030cfb395b49112c48442dc
+ms.sourcegitcommit: 23065305e68dfd4f924041942a72b95bf9a60957
+ms.openlocfilehash: 5a7d9b9e49c4a682ad9b293147eb6840ca1febf3
 
 
 ---
@@ -67,6 +67,6 @@ Istnieją także często zadawane pytania sformułowane pod kątem użytkownikó
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

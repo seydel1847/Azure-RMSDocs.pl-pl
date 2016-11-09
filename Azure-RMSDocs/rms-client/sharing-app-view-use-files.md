@@ -3,7 +3,7 @@ title: "Wyświetlanie i używanie plików chronionych przez usługę Rights Mana
 description: "Instrukcje dotyczące wyświetlania i używania pliku chronionego, co wymaga posiadania zainstalowanej aplikacji Rights Management (RMS) sharing."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
+ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
+ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 
 
 ---
@@ -40,7 +40,7 @@ W Eksploratorze plików lub wiadomości e-mail zawierającej załącznik kliknij
 Jeśli są widoczne dwie wersje pliku różniące się rozszerzeniami nazw plików, otwórz plik z rozszerzeniem ppdf tylko w sytuacji, gdy nie możesz otworzyć drugiego pliku. Jeśli nie możesz otworzyć również wersji ppdf, najpierw zainstaluj [aplikację RMS sharing](install-sharing-app.md), która umożliwia otwieranie plików z rozszerzeniem nazwy ppdf.
 
 > [!NOTE]
-> Aby uzyskać więcej informacji, zobacz sekcję „[Co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)”.
+> Aby uzyskać więcej informacji, zobacz sekcję [Co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić na podstawie rozszerzenia nazwy pliku. W każdym przypadku otwieranie pliku może podlegać inspekcji tak długo jak plik jest chroniony. Ponadto jeśli plik został wysłany jako załącznik wiadomości e-mail, jego nadawca może otrzymać powiadomienie e-mail o każdym otwarciu tego pliku.
 
@@ -107,6 +107,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

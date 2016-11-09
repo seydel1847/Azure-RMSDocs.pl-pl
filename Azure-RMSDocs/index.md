@@ -13,17 +13,17 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
-ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
+ms.sourcegitcommit: 197e1b2d40ce21032b933625feb050807086ce57
+ms.openlocfilehash: cc4465eb7b1374673a50fc8bbe1d6e5be9d1ff84
 
 
 ---
-# Dokumentacja usługi Azure Information Protection
+# <a name="azure-information-protection-documentation"></a>Dokumentacja usługi Azure Information Protection
 <article id="main">
     <section id="hero-content">
       <h1>Dokumentacja usługi Azure Information Protection</h1>
       <h2>Informacje o wrażaniu i zarządzaniu usługą Azure Information Protection (dawniej Azure Rights Management lub RMS). Szybkie rozpoczęcie korzystania z usługi w celu zastosowania klasyfikacji, oznaczania i ochrony wiadomości e-mail oraz dokumentów organizacji.</h2>
-      <h3>Zaczynasz korzystanie z usługi Azure Information Protection? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Odwiedź naszą witrynę produktu &rarr;</a></h3>
+      <h3>Zaczynasz korzystanie z usługi Azure Information Protection? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Odwiedź naszą stronę produktu&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>Możemy zaczynać?</p>
@@ -35,12 +35,13 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
       <h2 class="section-heading"><span class="icon icon-warning"></span> Polecana zawartość</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>NOWOŚĆ</b></mark> <a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Sesje usługi Azure Information Protection z konferencji Microsoft Ignite 2016</a></li>
           <li><a href="./understand-explore/what-is-information-protection.md">Co to jest Azure Information Protection?</a></li>
           <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Samouczek Szybki start dla usługi Azure Information Protection</a></li>
-          <li><a href="./get-started/faqs.md">Często zadawane pytania dotyczące usługi Azure Information Protection</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Plan wdrażania usługi Azure Information Protection</a></li>
+          <li><a href="./get-started/faqs.md">Często zadawane pytania dotyczące usługi Azure Information Protection</a></li>
+      <li><a href="./plan-design/deployment-roadmap.md">Plan wdrażania usługi Azure Information Protection</a></li>
           <li><a href="./develop/developers-guide.md">Przewodnik dewelopera usługi Azure Information Protection</a></li>
           <li><a href="./rms-client/info-protect-client.md">Instalowanie klienta usługi Azure Information Protection</a></li>
         </ul>
@@ -219,13 +220,13 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
     <aside class="alert alert-social">
       <p>Aktualne informacje o usłudze Azure Information Protection <ol class="action-list">
         <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">Oficjalny blog zespołu usługi Azure Information Protection</a></li>
-        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">Kanał @TheRMSGuy na Twitterze</a></li>
+        <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">@TheRMSGuy na Twitterze</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
