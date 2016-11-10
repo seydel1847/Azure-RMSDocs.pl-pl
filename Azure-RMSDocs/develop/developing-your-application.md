@@ -3,6 +3,7 @@ title: Tworzenie aplikacji | Azure RMS
 description: "Instrukcje dotyczące tworzenia aplikacja za pomocą zestawu RMS SDK 2.1."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 11/01/2016
 ms.topic: article

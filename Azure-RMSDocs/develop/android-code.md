@@ -3,6 +3,7 @@ title: "Przykłady kodu dla systemu Android | Azure RMS"
 description: "W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu Android."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,14 +21,14 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 ---
 
-# Przykłady kodu dla systemu Android
+# <a name="android-code-examples"></a>Przykłady kodu dla systemu Android
 
 W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu Android.
 
 **Uwaga**: w przykładzie kodu i opisach używany jest termin MSIPC (Microsoft Information Protection and Control) jako odwołanie do procesu klienta.
 
 
-## Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 Poniżej podano przykłady kodu z większej aplikacji przykładowej reprezentujące scenariusze programowania ważne dla orientacji w pakiecie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
 
@@ -35,7 +36,7 @@ Poniżej podano przykłady kodu z większej aplikacji przykładowej reprezentuj�
 
 Aplikacja przykładowa, *MSIPCSampleApp*, jest dostępna do użycia z tym zestawem SDK dla systemu operacyjnego Android. Zobacz [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) w usłudze GitHub, aby uzyskać dostęp do tej aplikacji przykładowej.
 
-### Scenariusz: korzystanie z pliku chronionego przez usługę RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: korzystanie z pliku chronionego przez usługę RMS
 
 -   **Krok 1**. Tworzenie obiektu [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)
 
@@ -197,7 +198,7 @@ Aplikacja przykładowa, *MSIPCSampleApp*, jest dostępna do użycia z tym zestaw
                 }
 
 
-### Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
 
 Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego w celu utworzenia zasady, a następnie tworzony i zapisywany jest nowy plik chroniony.
 
@@ -321,7 +322,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
 
 
-### Scenariusz: otwieranie niestandardowego pliku chronionego
+### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: otwieranie niestandardowego pliku chronionego
 
 -   **Krok 1**. Utworzenie obiektu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z elementu *serializedContentPolicy*.
 
@@ -436,7 +437,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
 

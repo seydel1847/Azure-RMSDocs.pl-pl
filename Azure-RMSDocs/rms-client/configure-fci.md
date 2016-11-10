@@ -2,6 +2,7 @@
 title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI) w systemie Windows Server | Azure Information Protection"
 description: "Instrukcje dotyczące używania klienta usługi Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

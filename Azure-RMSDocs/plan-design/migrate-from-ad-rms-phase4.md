@@ -2,6 +2,7 @@
 title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 4 | Azure Information Protection"
 description: "Faza 4 migracji z usługi AD RMS do usługi Azure Information Protection, obejmująca kroki od 8 do 9 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/26/2016
 ms.topic: article

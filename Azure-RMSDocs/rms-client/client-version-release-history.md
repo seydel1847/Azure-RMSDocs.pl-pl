@@ -2,6 +2,7 @@
 title: "Klient usługi Azure Information Protection&colon; historia wersji | Azure Information Protection"
 description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Information Protection dla systemu Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/27/2016
 ms.topic: article

@@ -1,6 +1,8 @@
 ---
 title: "Konfigurowanie warunków klasyfikacji automatycznej i zalecanej | Azure Information Protection"
 description: "W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Jak pracować z ustawieniami szyfrowania | Azure RMS"
 description: "Różne pakiety szyfrowania usługi Azure RMS i przykłady fragmentów kodu, w których zastosowano te pakiety."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 ---
 
-# Instrukcje: korzystanie z ustawień szyfrowania
+# <a name="howto-work-with-encryption-settings"></a>Instrukcje: korzystanie z ustawień szyfrowania
 
 Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawiera przykłady fragmentów kodu, w których zastosowano te pakiety.
 
-## Obsługa nowego domyślnego algorytmu szyfrowania AES 256
+## <a name="support-for-aes-256-the-new-default"></a>Obsługa nowego domyślnego algorytmu szyfrowania AES 256
 
 Żaden dodatkowy kod nie jest wymagany do korzystania z szyfrowania opartego na nowym domyślnym algorytmie *AES 256* przy założeniu, że do opracowywania aplikacji jest używana aktualizacja zestawu RMS SDK 2.1 z marca 2015 lub nowsza. Zachęcamy do rozważenia możliwości zaktualizowania aplikacji przy użyciu tej wersji w celu skorzystania z dodatkowych zalet zabezpieczeń algorytmu *AES 256*.
 
@@ -32,7 +33,7 @@ Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawi
 > Obsługa plików chronionych przy użyciu algorytmu *AES 256* była dostępna już w [wersji z października 2014 roku](release-notes-rtm.md). Jeśli używasz aplikacji utworzonych za pomocą wersji zestawu SDK sprzed października 2014 r., ta aktualizacja spowoduje awarię aplikacji. Upewnij się, że klienci aplikacji, które tworzysz, używają zaktualizowanego zestawu SDK lub są gotowi do natychmiastowego przeprowadzenia aktualizacji do najnowszej wersji aplikacji.
 
  
-## Obsługa szyfrowania w interfejsie API
+## <a name="api-encryption-support"></a>Obsługa szyfrowania w interfejsie API
 
 Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględniliśmy następujące trzy flagi w naszym interfejsie API i skojarzonych pakietach szyfrowania:
 
@@ -44,13 +45,13 @@ Flag pakietów szyfrowania (zobacz [Preferowane szyfrowanie](https://msdn.micros
 
 Poniższe przykłady fragmentu kodu przedstawiają sposób użycia nowej właściwości licencji.
 
-## Przestarzałe algorytmy
+## <a name="deprecated-algorithms"></a>Przestarzałe algorytmy
 
 Flaga *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* nie jest już widoczna w interfejsie API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale aplikacje, które zostały już utworzone przy użyciu tej flagi, będą nadal działać, ponieważ flaga będzie prywatnie uznawana w kodzie interfejsu API.
 
 Nadal będzie można uzyskiwać korzyści zapewniane przez przestarzałą flagę algorytmów szyfrowania, zmieniając po prostu jedną flagę. Jako przykład mogą posłużyć poniższe fragmenty kodu.
 
-## Ochrona plików przy użyciu algorytmu AES 256 CBC4K
+## <a name="protect-files-with-aes-256-cbc4k"></a>Ochrona plików przy użyciu algorytmu AES 256 CBC4K
 
 Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domyślnym.
 
@@ -62,7 +63,7 @@ Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domy�
                                     &amp;pLicenseHandle);
 
 
-## Ochrona plików przy użyciu algorytmu AES-128 CBC4K
+## <a name="protect-files-with-aes128-cbc4k"></a>Ochrona plików przy użyciu algorytmu AES-128 CBC4K
 
     C++
 
@@ -79,7 +80,7 @@ Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domy�
                            &amp;dwEncryptionMode);
 
 
-## Ochrona plików przy użyciu algorytmu AES-128 ECB (przestarzałe algorytmy)
+## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>Ochrona plików przy użyciu algorytmu AES-128 ECB (przestarzałe algorytmy)
 
 W tym przykładzie przedstawiono również nową metodą obsługi *przestarzałych algorytmów*.
 

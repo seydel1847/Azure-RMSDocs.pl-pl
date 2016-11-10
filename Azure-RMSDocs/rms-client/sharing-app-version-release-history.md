@@ -2,6 +2,7 @@
 title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure Information Protection"
 description: "Zobacz nowości i zmiany w wersji aplikacji do udostępniania usługi Rights Management dla systemu Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

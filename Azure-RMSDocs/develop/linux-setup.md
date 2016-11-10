@@ -3,6 +3,7 @@ title: Konfiguracja w systemie Linux | Azure RMS
 description: "Kilka odmian systemu operacyjnego Linux może teraz używać zestawu Microsoft Rights Management SDK 4.2."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

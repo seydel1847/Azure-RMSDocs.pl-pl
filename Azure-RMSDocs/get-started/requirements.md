@@ -2,6 +2,7 @@
 title: "Wymagania dotyczące usługi Azure Information Protection | Azure Information Protection"
 description: "Określanie wymagań wstępnych dotyczących wdrażania usługi Azure Information Protection w organizacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: get-started-article

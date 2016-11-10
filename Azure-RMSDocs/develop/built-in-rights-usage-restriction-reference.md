@@ -3,6 +3,7 @@ title: Porady&#58; korzystanie z praw wbudowanych | Azure RMS
 description: "W temacie omówiono prawa wbudowane zapewniane w ramach zestawu RMS SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
 ---
 
-# Porady: korzystanie z praw wbudowanych
+# <a name="how-to-use-builtin-rights"></a>Porady: korzystanie z praw wbudowanych
 
 W temacie omówiono prawa wbudowane zapewniane w ramach zestawu Microsoft Rights Management SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać. Poniżej przedstawiono prawa wbudowane: prawa wspólne, prawa dotyczące dokumentów edytowalnych i prawa dotyczące wiadomości e-mail oraz ich opisy i wartości według systemu operacyjnego.
 
 **Uwaga** — szczegółowe informacje dotyczące zestawu SDK dla systemu Linux zawiera plik źródłowy *rights.h*.
 
-## Prawa wspólne
+## <a name="common-rights"></a>Prawa wspólne
 
 **Wszystkie** — kolekcja wszystkich praw wspólnych.
 - Android: [CommonRights.All](https://msdn.microsoft.com/library/dn758258.aspx)
@@ -51,7 +52,7 @@ W temacie omówiono prawa wbudowane zapewniane w ramach zestawu Microsoft Rights
 
  
 
-## Prawa dotyczące dokumentów edytowalnych
+## <a name="editable-document-rights"></a>Prawa dotyczące dokumentów edytowalnych
 **Wszystkie** — kolekcja zawierająca wszystkie prawa dotyczące dokumentów edytowalnych.
 - Android: [EditableDocumentRights.All](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS i OS X: [MSEditableDocumentRights all](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -93,7 +94,7 @@ W temacie omówiono prawa wbudowane zapewniane w ramach zestawu Microsoft Rights
 
  
 
-## Prawa dotyczące wiadomości e-mail
+## <a name="email-rights"></a>Prawa dotyczące wiadomości e-mail
 
 **Wszystkie** — kolekcja zawierająca wszystkie prawa dotyczące wiadomości e-mail.
 - Android: [EmailRights.All](https://msdn.microsoft.com/library/dn758285.aspx)

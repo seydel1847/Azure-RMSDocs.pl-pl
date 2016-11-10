@@ -3,6 +3,7 @@ title: "Wskazówki dla deweloperów i terminologia | Azure RMS"
 description: "Zestaw RMS SDK 4.2 koncentruje się na ułatwianiu tworzenia aplikacji korzystających z ochrony informacji przy użyciu usługi AD RMS."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
 
 ---
 
-# Wskazówki dla deweloperów i terminologia
+# <a name="developer-guidance-and-terms"></a>Wskazówki dla deweloperów i terminologia
 Zestaw Microsoft Rights Management SDK 4.2 koncentruje się na ułatwianiu tworzenia aplikacji korzystających z usługi Active Directory Right Management Services (AD RMS).
 
 Poniższe tematy zawierają informacje przydatne w procesie projektowania aplikacji z obsługą usług RMS.

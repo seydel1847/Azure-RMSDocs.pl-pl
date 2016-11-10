@@ -2,6 +2,7 @@
 title: Opcje okien dialogowych aplikacji Rights Management sharing | Azure Information Protection
 description: "Te informacje ułatwiają określanie opcji w oknie dialogowym dodawania ochrony lub udostępniania chronionej zawartości w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku ochrony udostępnianego pliku lub włączania ochrony miejscowej pliku i wybrania uprawnień niestandardowych."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

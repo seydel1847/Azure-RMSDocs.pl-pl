@@ -2,6 +2,7 @@
 title: "Generowanie i przenoszenie klucza dzierżawy — przez Internet: ZAWARTOŚĆ WYCOFANA | Azure RMS"
 description: "Informacje przedstawione w tym artykule zostały usunięte, ponieważ nie są już odpowiednie, jako że usługa Azure Rights Management używa usługi Azure Key Vault na potrzeby kluczy dzierżawy zarządzanych przez klientów (jest to tak zwane rozwiązanie Bring Your Own Key — BYOK)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

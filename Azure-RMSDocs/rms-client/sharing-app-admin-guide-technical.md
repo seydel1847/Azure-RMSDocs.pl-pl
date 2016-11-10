@@ -2,6 +2,7 @@
 title: "Przegląd techniczny aplikacji Rights Management sharing | Azure Information Protection"
 description: "Szczegółowe informacje techniczne dla administratorów w sieciach firmowych, którzy są odpowiedzialni za wdrażanie aplikacji RMS sharing dla systemu Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Pliki środowiska programistycznego | Azure RMS"
 description: "W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 ---
 
-# Pliki środowiska deweloperskiego
+# <a name="development-environment-files"></a>Pliki środowiska deweloperskiego
 
 W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze.
 

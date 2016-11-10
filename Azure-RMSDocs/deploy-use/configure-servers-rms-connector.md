@@ -2,6 +2,7 @@
 title: "Konfigurowanie serwerów dla łącznika usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, które będą używać łącznika usługi Azure Rights Management (RMS). Te procedury obejmują krok 5 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

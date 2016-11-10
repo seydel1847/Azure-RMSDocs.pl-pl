@@ -2,6 +2,7 @@
 title: "Wdrażanie łącznika usługi Azure Rights Management | Azure Information Protection"
 description: "Instrukcje dotyczące wdrażania łącznika usług RMS, który udostępnia usługę ochrony danych dla istniejących wdrożeń lokalnych korzystających z programu Exchange Server, programu SharePoint Server lub systemu Windows Server oraz funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

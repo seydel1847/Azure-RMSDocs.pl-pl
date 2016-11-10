@@ -2,6 +2,7 @@
 title: "Uwagi dotyczące wdrażania klienta usługi RMS | Azure Information Protection"
 description: "Informacje dotyczące ponownej dystrybucji, instalacji, obsługiwanych systemów operacyjnych, ustawień rejestru i odnajdowania usług dla usługi Rights Management Service (klienta usługi RMS) w wersji 2, która jest również znana jako klient MSIPC."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/28/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Jak korzystać ze śledzenia dokumentów | Azure RMS"
 description: "Funkcja śledzenia dokumentów wymaga zrozumienia podstaw zarządzania skojarzonymi metadanymi i rejestracji w usłudze."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 ---
 
-# Instrukcje: korzystanie ze śledzenia dokumentów
+# <a name="how-to-use-document-tracking"></a>Instrukcje: korzystanie ze śledzenia dokumentów
 
 Korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstaw zarządzania skojarzonymi metadanymi i rejestracji w usłudze.
 
-## Zarządzanie metadanymi śledzenia dokumentów
+## <a name="managing-document-tracking-metadata"></a>Zarządzanie metadanymi śledzenia dokumentów
 
 Każdy system operacyjny obsługujący śledzenie dokumentów charakteryzuje się podobnymi implementacjami. Obejmują one zestaw właściwości reprezentujących metadane, nowy parametr dodany do metod tworzenia zasad użytkowników oraz metodę rejestrowania zasad do śledzenia przy użyciu usługi śledzenia dokumentów.
 

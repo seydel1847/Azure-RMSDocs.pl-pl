@@ -1,6 +1,8 @@
 ---
 title: "Konfigurowanie ustawień globalnych zasad | Azure Information Protection"
 description: "Istnieją 3 ustawienia w zasadach usługi Azure Information Protection, które mają zastosowanie do wszystkich użytkowników i urządzeń."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

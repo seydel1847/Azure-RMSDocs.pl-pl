@@ -3,6 +3,7 @@ title: Konfiguracja w systemach iOS i OS X | Azure RMS
 description: "Aplikacje systemów iOS i OS X mogą używać zestawu RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi AAD RM."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

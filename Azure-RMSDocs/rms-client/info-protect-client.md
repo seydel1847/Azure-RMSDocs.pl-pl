@@ -1,6 +1,8 @@
 ---
 title: "Instalowanie klienta usługi Azure Information Protection | Azure Information Protection"
 description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek usługi Information Protection do aplikacji pakietu Office, dzięki czemu można wybrać etykiety klasyfikacji dla dokumentów i wiadomości e-mail."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/01/2016
 ms.topic: article

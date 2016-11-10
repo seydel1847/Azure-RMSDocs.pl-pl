@@ -2,6 +2,7 @@
 title: "Operacje cyklu życia klucza dzierżawy zarządzanego przez klienta | Azure Information Protection"
 description: "Informacje na temat operacji cyklu życia, które są istotne, jeśli samodzielnie zarządzasz swoim kluczem dzierżawy dla usługi Azure Information Protection — zgodnie ze scenariuszem BYOK (Bring Your Own Key)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

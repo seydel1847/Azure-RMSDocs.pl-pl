@@ -3,6 +3,7 @@ title: "Jak umożliwiać współpracę aplikacji usługi z usługą RMS opartą 
 description: "W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

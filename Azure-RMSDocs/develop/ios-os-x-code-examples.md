@@ -3,6 +3,7 @@ title: "Przykłady kodu dla systemu iOS/OS X | Azure RMS"
 description: "W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu iOS/OS X."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
 
 ---
 
-# Przykłady kodu dla systemu iOS/OS X
+# <a name="iosos-x-code-examples"></a>Przykłady kodu dla systemu iOS/OS X
 
 W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu iOS/OS X.
 
@@ -28,12 +29,12 @@ W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dl
 
 
 
-## Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 
 Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
 
-### Scenariusz: korzystanie z pliku chronionego przez usługę RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: korzystanie z pliku chronionego przez usługę RMS
 
 
 - **Krok 1**. Utworzenie obiektu [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx)
@@ -109,7 +110,7 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
             }
         }
 
-### Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
 
 Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx) — i wybrania pierwszego szablonu w celu utworzenia zasady. Następnie jest tworzony i zapisywany nowy plik chroniony.
 
@@ -154,7 +155,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
         }
 
-### Scenariusz: otwieranie niestandardowego pliku chronionego
+### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: otwieranie niestandardowego pliku chronionego
 
 
 -   **Krok 1**. Utworzenie obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z elementu *serializedContentPolicy*.
@@ -212,7 +213,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
          }
 
-### Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
 
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.

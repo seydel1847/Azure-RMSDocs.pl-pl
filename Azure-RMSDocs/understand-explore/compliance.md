@@ -2,6 +2,7 @@
 title: "Zgodność i informacje dodatkowe | Azure Information Protection"
 description: "Dodatkowe informacje na temat usługi Azure Information Protection dotyczące na przykład kwestii prawnych, zgodności i umów SLA."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,17 +21,17 @@ ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
 
 
 
-# Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
+# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
 
 Usługa Azure Information Protection obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure Information Protection, ale niedotyczących sposobu korzystania z usługi Azure Information Protection, sprawdź następujące zasoby:
 
-## Informacje prawne i ochrona prywatności
+## <a name="legal-and-privacy"></a>Informacje prawne i ochrona prywatności
 
 - Informacje o umowie dotyczącej usług Microsoft Azure: [Umowa dotycząca usług Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
 - Informacje o ochronie prywatności w usługach Microsoft Azure: [Zasady zachowania poufności informacji usług Microsoft Azure](http://azure.microsoft.com/support/legal/privacy-statement/)
 
-## Zabezpieczenia, zgodność i inspekcja
+## <a name="security-compliance-and-auditing"></a>Zabezpieczenia, zgodność i inspekcja
 
 Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md). Ponadto:
 
@@ -38,7 +39,7 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 - Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
 
-## Umowy dotyczące poziomu usług
+## <a name="service-level-agreements"></a>Umowy dotyczące poziomu usług
 
 - Umowa dotycząca poziomu usług dla usługi Azure Information Protection według wybranego regionu: [pobierz ze strony wyszukiwania licencjonowania produktów](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
 
@@ -46,7 +47,7 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 -   Umowa dotycząca poziomu usług dla usługi Azure Active Directory: [Umowy dotyczące poziomu usług](http://azure.microsoft.com/support/legal/sla/)
 
-## Dokumentacja
+## <a name="documentation"></a>Dokumentacja
 
 - Dokumentacja usługi Azure Active Directory: [Azure Active Directory](/active-directory/)
 

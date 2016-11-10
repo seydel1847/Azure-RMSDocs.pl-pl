@@ -2,6 +2,7 @@
 title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji Rights Management sharing | Azure Information Protection"
 description: "Instrukcje dotyczące sposobu bezpiecznego udostępniania dokumentu za pomocą wiadomości e-mail."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article
