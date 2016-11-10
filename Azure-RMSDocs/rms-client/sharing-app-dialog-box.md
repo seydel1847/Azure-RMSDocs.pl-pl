@@ -78,6 +78,6 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
