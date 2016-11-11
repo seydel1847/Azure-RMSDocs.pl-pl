@@ -2,6 +2,7 @@
 title: "Weryfikowanie usługi Azure Rights Management | Azure Information Protection"
 description: "Instrukcje służące do sprawdzenia, czy usługa działa zgodnie z oczekiwaniami przez ochronę pliku lub wiadomości e-mail za pomocą jednego konta użytkownika, a następnie próbę otwarcia i użycia tej zawartości chronionej z innego konta użytkownika."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: e39cb95419fd661be6c0f4838aafdcb02ed684cf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
 
 
 ---
 
-# Weryfikowanie usługi Azure Rights Management
+# <a name="verifying-the-azure-rights-management-service"></a>Weryfikowanie usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -31,7 +32,7 @@ Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Ma
 > [!TIP]
 > Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Możesz monitorować wykorzystanie usługi Azure Rights Management przez organizację, korzystając z rejestrowania użycia. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).
 
@@ -40,6 +41,6 @@ Możesz monitorować wykorzystanie usługi Azure Rights Management przez organiz
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: Pobieranie i instalowanie aplikacji Rights Management sharing | Azure Information Protection
 description: "Instrukcje dotyczące interaktywnego instalowania aplikacji RMS sharing dla systemu Windows, dzięki czemu możliwe jest bezpieczne udostępnianie dokumentów innym osobom."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
 
 
 ---
 
-# Pobieranie i instalowanie aplikacji Microsoft Rights Management sharing
+# <a name="download-and-install-the-rights-management-sharing-application"></a>Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Aby zainstalować aplikację RMS sharing, nie trzeba być administratorem lokalnym. Jeśli nim nie jesteś i korzystasz z pakietu Office 2010, obowiązują jednak pewne ograniczenia. Aby uzyskać więcej informacji, zobacz sekcję [Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) w dalszej części tej strony.
 
-## Aby pobrać i zainstalować aplikację Rights Management sharing
+## <a name="to-download-and-install-the-rights-management-sharing-application"></a>Aby pobrać i zainstalować aplikację Rights Management sharing
 
 1.  Przejdź do strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) w witrynie firmy Microsoft w sieci Web.
 
@@ -41,7 +42,7 @@ Aby zainstalować aplikację RMS sharing, nie trzeba być administratorem lokaln
 
 Teraz możesz już chronić swoje pliki i otwierać pliki chronione udostępnione przez innych.
 
-## Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010
+## <a name="if-you-are-not-a-local-administrator-and-use-office-2010"></a>Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010
 Jeśli zalogujesz się na komputerze, nie mając lokalnych praw administracyjnych, a Instalator wykryje, że jest zainstalowany pakiet Office 2010, zobaczysz ostrzeżenie informujące, że w tej sytuacji niektóre działania nie są możliwe. Scenariusze są następujące:
 
 -   Jeśli Twoja organizacja korzysta z usługi Azure Rights Management z usługi Azure Information Protection, a nie z lokalnej wersji usługi Rights Management:
@@ -56,19 +57,19 @@ Jeśli nie jesteś administratorem lokalnym i używasz usługi Office 365 lub pa
 
 Możesz kontynuować instalację, uwzględniając te znane ograniczenia. Możesz też zatrzymać instalację i ponownie ją uruchomić, korzystając z opcji **Uruchom jako administrator** podczas uruchamiania pliku Setup.exe w kroku 3, albo poprosić administratora o zainstalowanie aplikacji za Ciebie. Administrator może [użyć skryptu instalacji](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application), tak aby aplikacja została zainstalowana automatycznie.
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

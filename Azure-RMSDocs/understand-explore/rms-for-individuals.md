@@ -2,6 +2,7 @@
 title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection | Azure Information Protection"
 description: "Informacje dotyczące usługi RMS dla użytkowników indywidualnych, czyli bezpłatnej subskrypcji samoobsługowej przeznaczonej dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management, ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d27417bf90dab8c7e8654c68d204dad6297fa0d
-ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
 
 
 ---
 
-# Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
+# <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -35,12 +36,12 @@ Aby uzyskać więcej informacji dotyczących ochrony plików przy użyciu bezpł
 
 Usługa RMS dla użytkowników indywidualnych to przykład subskrypcji samoobsługowej, obsługiwanej przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [What is Self-Service Signup for Azure?](/active-directory/active-directory-self-service-signup) (Czym jest rejestracja samoobsługowa na platformie Azure?). 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby uzyskać szczegółowe instrukcje oraz zapoznać się z opisem technicznym procesów działających w tle, zobacz [Jak utworzyć konto usługi RMS dla użytkowników indywidualnych](rms-for-individuals-user-sign-up.md). 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

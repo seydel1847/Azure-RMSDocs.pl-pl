@@ -2,6 +2,7 @@
 title: "Obsługa serwera lokalnego w celu ochrony danych | Azure Information Protection"
 description: "Identyfikowanie produktów serwera lokalnego, które mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection przy użyciu łącznika usługi Rights Management."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,14 +13,14 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 22f63cae58f6dfe7e0381a561ffb348177585809
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
 
 
 ---
 
 
-# Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management
+# <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -58,11 +59,11 @@ Aby użyć tego łącznika, należy skonfigurować synchronizację katalogów mi
 
 Aby uzyskać więcej informacji o sposobie konfigurowania łącznika usługi Rights Management na wymienionych serwerach lokalnych, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

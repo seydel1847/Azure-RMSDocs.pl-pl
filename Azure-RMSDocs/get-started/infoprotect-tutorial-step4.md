@@ -2,6 +2,7 @@
 title: Samouczek Szybki start krok 4 | Azure Rights Management
 description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: ce1d0a700e0b69d71f5cb2e93f406124bc0ca581
-ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
 
 
 ---
 
-# Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
+# <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -24,7 +25,7 @@ Po otwarciu dokumentu programu Word z zainstalowanym klientem usługi Azure Info
 
 Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do tego przejdziemy, użyjemy naszego niezapisanego dokumentu, aby zobaczyć, jak łatwo stosować i zmieniać etykiety.
 
-## Aby ręcznie zmienić naszą domyślną etykietę
+## <a name="to-manually-change-our-default-label"></a>Aby ręcznie zmienić naszą domyślną etykietę
 
 Na pasku Information Protection wybierz etykietę **Osobiste**. Zostanie wyświetlony monit o uzasadnienie obniżenia poziomu klasyfikacji:
 
@@ -32,7 +33,7 @@ Na pasku Information Protection wybierz etykietę **Osobiste**. Zostanie wyświe
 
 Wybierz opcję **Poprzednia etykieta już nie obowiązuje** i kliknij przycisk **Potwierdź**. Wartość opcji **Ważność** zmieni się na **Osobiste**.
 
-## Aby całkowicie usunąć klasyfikację
+## <a name="to-remove-the-classification-completely"></a>Aby całkowicie usunąć klasyfikację
 
 Na pasku Information Protection kliknij ikonę **Edytuj etykietę** obok opcji **Osobiste**. Zostaną wyświetlone dostępne etykiety. Zamiast wybierać którąś z etykiet, kliknij ikonę **Usuń etykietę**. Kliknij przycisk **OK**, aby potwierdzić, a następnie podaj uzasadnienie dla tej akcji.  
 
@@ -41,7 +42,7 @@ Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, k
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — usuwanie klasyfikacji](../media/sensitivity-not-set.png)
 
 
-## Aby wyświetlić monit zalecający etykietowanie i automatyczne włączanie ochrony
+## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Aby wyświetlić monit zalecający etykietowanie i automatyczne włączanie ochrony
 
 1. W dokumencie programu Word wpisz poprawny numer karty kredytowej, na przykład: **4242-4242-4242-4242**. 
 
@@ -63,6 +64,6 @@ Po sprawdzeniu klasyfikacji, etykietowania i ochrony w działaniu zobaczmy, jak 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

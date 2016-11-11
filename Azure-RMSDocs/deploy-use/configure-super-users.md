@@ -2,6 +2,7 @@
 title: "Konfigurowanie superużytkowników usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych | Azure Information Protection"
 description: "Uzyskaj informacje o funkcji superużytkowników usługi Azure Rights Management w ramach usługi Azure Information Protection i zaimplementuj tę funkcję. Zapewnia ona, że upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane chronione w organizacji przez usługę Azure Rights Management. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d2ae8df5895b1cf1985420be25abac36fe2689b7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
 
 
 ---
 
-# Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
+# <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -59,7 +60,7 @@ Poniższy fragment dziennika pokazuje przykładowe wpisy uzyskane za pomocą pol
 
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
-## Opcje obsługi skryptów dla superużytkowników
+## <a name="scripting-options-for-super-users"></a>Opcje obsługi skryptów dla superużytkowników
 Często osoba przypisana do roli superużytkownika usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] będzie musiała usunąć ochronę z wielu plików w wielu różnych lokalizacjach. Mimo że można to zrobić ręcznie, bardziej wydajne (a często też bardziej niezawodne) jest zastosowanie skryptów. Aby to zrobić, [pobierz narzędzie RMS Protection Tool](http://www.microsoft.com/en-us/download/details.aspx?id=47256). Następnie wedle potrzeby użyj poleceń cmdlet [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) i [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx).
 
 Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx) (Polecenia cmdlet narzędzia RMS Protection).
@@ -71,6 +72,6 @@ Aby uzyskać więcej informacji o tych poleceniach cmdlet, zobacz [RMS Protectio
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych | Azure Information Protection"
 description: "Sposób kontrolowania kont użytkowników w usłudze Azure Active Directory, jeśli nie chcesz przekształcać subskrypcji usług RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
 
 
 ---
 
 
 
-# Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych
+# <a name="how-administrators-can-control-the-accounts-created-for-rms-for-individuals"></a>Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych
 
 >*Dotyczy: Azure Information Protection*
 
@@ -40,12 +41,12 @@ Jeśli nie chcesz przekształcać subskrypcji usługi RMS dla użytkowników ind
 Aby kontrolować konta użytkowników w katalogu platformy Azure lub zapobiec rejestrowaniu użytkowników w usługach RMS dla użytkowników indywidualnych, należy mieć subskrypcję platformy Azure i prawa własności do katalogu. Jeśli nie masz jeszcze subskrypcji platformy Azure, możesz uzyskać ją bezpłatnie. Jeśli Twój katalog został utworzony automatycznie podczas procesu samoobsługowego, przejmij prawa własności do domeny użytej do jego utworzenia. Jeśli masz już katalog na platformie Azure, ale użytkownicy określili nową domenę używaną w organizacji, połącz tę domenę z istniejącym katalogiem. Aby uzyskać więcej informacji, zapoznaj się z instrukcjami w temacie [Czym jest rejestracja samoobsługowa na platformie Azure?](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Jeśli to użytkownicy, a nie administratorzy, mogą tworzyć swoje konta w usłudze Azure Active Directory dla usługi RMS dla użytkowników indywidualnych, jak można sprawdzić, czy wykonali te działania?  Zobacz [Jak sprawdzić, czy użytkownicy utworzyli konto usługi RMS dla użytkowników indywidualnych](rms-for-individuals-identify-sign-up.md).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

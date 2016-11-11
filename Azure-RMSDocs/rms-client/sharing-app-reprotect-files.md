@@ -3,6 +3,7 @@ title: "Zmiana uprawnień do plików chronionych przez usługę Rights Managemen
 description: "Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawnienia do niego, ponownie włączając jego ochronę, a następnie określając wszystkich użytkowników, którzy muszą mieć dostęp do niego, oraz przysługujące im uprawnienia."
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 
 
 ---
 
-# Zmiana uprawnień do plików chronionych przez usługę Rights Management
+# <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawnienia do niego, ponownie włączając jego ochronę, a następnie określając wszystkich użytkowników, którzy muszą mieć dostęp do niego, oraz przysługujące im uprawnienia.
 
@@ -38,7 +39,7 @@ Na przykład jeśli ktoś inny włączył ochronę pliku za pomocą aplikacji do
 
 Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już chroniony, zobacz [Usuwanie ochrony pliku](sharing-app-remove-protection.md).
 
-## Aby ponownie włączyć ochronę pliku w miejscu
+## <a name="to-reprotect-a-file-inplace"></a>Aby ponownie włączyć ochronę pliku w miejscu
 
 1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Na przykład:
 
@@ -71,7 +72,7 @@ Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
 > -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-## Aby ponownie włączyć ochronę pliku wysłanego pocztą e-mail
+## <a name="to-reprotect-a-file-that-you-have-emailed"></a>Aby ponownie włączyć ochronę pliku wysłanego pocztą e-mail
 
 Jeśli chcesz zmienić uprawnienia do pliku wysłanego pocztą e-mail:
 
@@ -84,18 +85,18 @@ Jeśli chcesz zmienić uprawnienia do pliku wysłanego pocztą e-mail:
     Aby odwołać plik wysłany pocztą e-mail, zobacz temat [Śledzenie i odwoływanie dokumentów](sharing-app-track-revoke.md).
 
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

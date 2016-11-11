@@ -2,6 +2,7 @@
 title: "Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji Rights Management sharing | Azure Information Protection"
 description: "Instrukcje dotyczące sposobu bezpiecznego przechowywania pliku na komputerze, serwerze lub innym urządzeniu magazynującym."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,22 +13,22 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 
 
 ---
 
-# Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management
+# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który nie jest chroniony. Następnie można pozostawić plik w jego obecnej lokalizacji, skopiować do innego folderu lub na inne urządzenie albo udostępnić folder zawierający plik — aplik cały czas będzie chroniony. Chroniony plik można także dołączyć do wiadomości e-mail, chociaż zalecaną metodą udostępniania pliku chronionego pocztą e-mail jest bezpośrednie dołączenie go z poziomu Eksploratora plików lub aplikacji pakietu Office (zobacz [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md)).
 
 > [!TIP]
 > Jeśli podczas próby włączenia ochrony plików są wyświetlane błędy, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-## Aby chronić plik na urządzeniu (ochrona miejscowa)
+## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>Aby chronić plik na urządzeniu (ochrona miejscowa)
 
 1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Na przykład:
 
@@ -54,18 +55,18 @@ Jeśli zmienisz zdanie o uprawnieniach lub później zajdzie potrzeba ich zmodyf
 
 Jeśli później będzie konieczne usunięcie ochrony z pliku, zobacz [Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-remove-protection.md).
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

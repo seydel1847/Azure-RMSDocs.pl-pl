@@ -2,6 +2,7 @@
 title: "Przygotowanie do ochrony za pomocą usługi Azure Rights Management | Azure Information Protection"
 description: "Sprawdź, czy wszystko jest gotowe do użycia usługi Azure Rights Management, aby organizacja mogła chronić dokumenty i wiadomości e-mail."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46db6ef6f65a06c42909252cf99884cc5eaaefe4
-ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: facb9bd0d21551e9170cd9be6e9abda24766f9fd
 
 
 ---
 
-# Przygotowanie do korzystania z usługi Azure Information Protection
+# <a name="preparing-for-azure-information-protection"></a>Przygotowanie do korzystania z usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -32,7 +33,7 @@ Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij si�
 
     Użytkownicy usługi Exchange Online mogą tworzyć grupy obsługujące pocztę i korzystać z nich przy użyciu centrum administracyjnego programu Exchange. W przypadku dostępności lokalnej usługi AD DS, jeśli planowana jest synchronizacja do usługi Azure AD, można utworzyć grupy zabezpieczeń lub grupy dystrybucyjne z obsługą wiadomości e-mail i użyć ich.
 
-## Aktywowanie usługi Rights Management w celu ochrony danych
+## <a name="activate-the-rights-management-service-for-data-protection"></a>Aktywowanie usługi Rights Management w celu ochrony danych
 Gdy wszystko jest gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, aktywuj usługę Rights Management, aby włączyć tę technologię. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 
@@ -40,6 +41,6 @@ Gdy wszystko jest gotowe do uruchomienia ochrony dokumentów i wiadomości e-mai
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

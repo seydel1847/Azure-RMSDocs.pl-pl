@@ -3,6 +3,7 @@ title: Przewodnik dewelopera | Azure RMS
 description: "Omówienie narzędzi dla deweloperów, zestawów SDK, dodatkowych bibliotek i przykładów kodu."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c50775c43aea8950ca9c560c61712ffbbede8599
-ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 
 
 ---
@@ -63,12 +64,12 @@ Poniższe elementy działają w systemach iOS / OS X obsługiwanych przez zestaw
 Poniższe elementy działają w systemie Windows Desktop obsługiwanym przez zestaw [SDK 2.1 usługi RMS](microsoft-information-protection-and-control-client-portal.md) i nowsze wersje zestawu SDK 2.x.
 
 - [Odczyt dokumentu PDF zabezpieczonego plikiem PFILE](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/) to prosty przykład kodu zamieszczony w naszym blogu RMS Developer's Corner, wykorzystujący interfejs API plików MSIPC do odszyfrowania i otwarcia dokumentu PDF zabezpieczonego plikiem PFILE.
-- [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms) to reprezentacja .NET (C#) zestawu SDK 2.1 usługi RMS, ułatwiająca włączenie obsługi usługi RMS w aplikacji zarządzanej.
-- [IPCNotepad](https://code.msdn.microsoft.com/ipcnotepad-sample-f67dae80) to przykładowa aplikacja obsługująca usługę RMS, prezentująca podstawowe kroki, które każda aplikacja obsługująca usługę RMS powinna wykonywać podczas chronienia i wykorzystywania zawartości ograniczonej.
-- [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykładowa aplikacja Data Leak Protection (DLP) obsługująca usługę RMS, prezentująca podstawowe kroki, które każda aplikacja DLP obsługująca usługę RMS powinna wykonywać podczas wykorzystywania interfejsu API plików do ochrony i wykorzystywania zawartości ograniczonej.
-- [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykład przedstawiający zastosowanie zestawu SDK usługi RMS w aplikacji Azure do ochrony danych w usłudze Magazyn obiektów Blob Azure.
-- [RmsDocumentInspector](https://github.com/Azure-Samples/active-directory-dotnet-rms) to narzędzie dostarczające informacji takich jak identyfikator zawartości i uprawnienia użytkownika na temat dowolnego pliku chronionego przez usługę RMS.
-- [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykład, który demonstruje sposób tworzenia aplikacji systemu Windows, która prowadzi obserwację katalogów w systemie plików i stosuje zasady ochrony usługi RMS dla każdej zmiany, na przykład dodania lub modyfikacji pliku.
+- [IpcManagedAPI](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI) to reprezentacja .NET (C#) zestawu SDK 2.1 usługi RMS, ułatwiająca włączenie obsługi usługi RMS w aplikacji zarządzanej.
+- [IPCNotepad](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcNotepad) to przykładowa aplikacja obsługująca usługę RMS, prezentująca podstawowe kroki, które każda aplikacja obsługująca usługę RMS powinna wykonywać podczas chronienia i wykorzystywania zawartości ograniczonej.
+- [IpcDlp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp) to przykładowa aplikacja Data Leak Protection (DLP) obsługująca usługę RMS, prezentująca podstawowe kroki, które każda aplikacja DLP obsługująca usługę RMS powinna wykonywać podczas wykorzystywania interfejsu API plików do ochrony i wykorzystywania zawartości ograniczonej.
+- [IpcAzureApp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcAzureApp) to przykład przedstawiający zastosowanie zestawu SDK usługi RMS w aplikacji Azure do ochrony danych w usłudze Magazyn obiektów Blob Azure.
+- [RmsDocumentInspector](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsDocumentInspector) to narzędzie dostarczające informacji takich jak identyfikator zawartości i uprawnienia użytkownika na temat dowolnego pliku chronionego przez usługę RMS.
+- [RmsFileWatcher](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsFileWatcher) to przykład, który demonstruje sposób tworzenia aplikacji systemu Windows, która prowadzi obserwację katalogów w systemie plików i stosuje zasady ochrony usługi RMS dla każdej zmiany, na przykład dodania lub modyfikacji pliku.
 
 ### <a name="windows-store-and-phone"></a>Sklep Windows i system Windows Phone
 
@@ -80,6 +81,6 @@ Poniższe elementy działają w systemie Windows Desktop obsługiwanym przez zes
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

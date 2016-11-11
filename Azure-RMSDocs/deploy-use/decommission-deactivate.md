@@ -2,6 +2,7 @@
 title: "Likwidowanie i dezaktywowanie usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje i instrukcje dotyczące sytuacji, gdy nie chcesz już używać tego rozwiązania ochrony informacji w ramach usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 
 ---
 
-# Likwidowanie i dezaktywowanie usługi Azure Rights Management
+# <a name="decommissioning-and-deactivating-azure-rights-management"></a>Likwidowanie i dezaktywowanie usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -47,13 +48,13 @@ Więcej informacji na temat procedur opisanych w tej tabeli można znaleźć w n
 
 Gdy wszystko będzie gotowe do zdezaktywowania usługi Azure Rights Management w organizacji, postępuj zgodnie z poniższymi instrukcjami.
 
-## Dezaktywowanie usługi Rights Management
+## <a name="deactivating-rights-management"></a>Dezaktywowanie usługi Rights Management
 Wykonaj kroki jednej z poniższych procedur, aby zdezaktywować usługę [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 > [!TIP]
 > Możesz również użyć polecenia cmdlet programu Windows PowerShell, [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx), aby zdezaktywować usługę [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].
 
-#### Aby zdezaktywować usługę Rights Management w centrum administracyjnym usługi Office 365
+#### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>Aby zdezaktywować usługę Rights Management w centrum administracyjnym usługi Office 365
 
 1.  [Zaloguj się do usługi Office 365 za pomocą konta służbowego](https://portal.office.com/) administratora wdrożenia usługi Office 365.
 
@@ -74,7 +75,7 @@ Wykonaj kroki jednej z poniższych procedur, aby zdezaktywować usługę [!INCLU
 
 Teraz powinien pojawić się komunikat **Usługa Rights Management nie została aktywowana** oraz opcja jej aktywowania.
 
-#### Aby zdezaktywować usługę Rights Management w klasycznym portalu Azure
+#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>Aby zdezaktywować usługę Rights Management w klasycznym portalu Azure
 
 1.  Zaloguj się do [klasycznego portalu Azure](http://go.microsoft.com/fwlink/p/?LinkID=275081).
 
@@ -91,6 +92,6 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management nie została 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

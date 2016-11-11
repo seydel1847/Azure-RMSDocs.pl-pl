@@ -3,6 +3,7 @@ title: "Zasoby społeczności | Azure RMS"
 description: "Usługi AD RMS są objęte wsparciem rosnącej grupy deweloperów na wielu platformach."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cd203a651362564e2f2275051f61f86b3bee6703
 
 
 ---
 
-# Zasoby społeczności
+# <a name="community-resources"></a>Zasoby społeczności
 
 Usługi Active Directory Rights Management są objęte wsparciem rosnącej grupy deweloperów na wielu platformach.
 
-## Zasoby społeczności usług AD RMS
+## <a name="ad-rms-community-resources"></a>Zasoby społeczności usług AD RMS
 
 [Blog RMS Developer's Corner](http://blogs.msdn.com/b/rms/) jest aktywnym centrum dla deweloperów aplikacji do ochrony informacji.
 
@@ -50,6 +51,6 @@ Jeśli nie jesteś użytkownikiem zarejestrowanym w witrynie Microsoft Connect, 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

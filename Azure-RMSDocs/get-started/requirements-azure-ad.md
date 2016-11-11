@@ -2,6 +2,7 @@
 title: "Wymagania dotyczące usługi Azure Active Directory | Azure Information Protection"
 description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/29/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 
 ---
 
-# Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -28,7 +29,7 @@ Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzysk
 
 Więcej informacji można znaleźć w następujących zasobach dokumentacji usługi Azure Active Directory:
 
--   [Co to jest katalog usługi Azure AD?](/active-directory/active-directory-whatis)
+-   [Co to jest katalog usługi Azure AD Directory?](/active-directory/active-directory-whatis)
 
 -   [Jak subskrypcje platformy Azure są kojarzone z usługą Azure Active Directory?](/active-directory/active-directory-how-subscriptions-associated-directory)
 
@@ -39,7 +40,7 @@ Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi A
 > 
 > -   Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
 
-## Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
+## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
 Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:
 
 -   Office 2013 (minimalna wersja):
@@ -68,12 +69,12 @@ Następnie skonfiguruj rozwiązanie MFA:
 
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
