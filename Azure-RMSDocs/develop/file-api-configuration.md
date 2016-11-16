@@ -3,6 +3,7 @@ title: "Konfiguracja interfejsu API plików | Azure RMS"
 description: "Działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
-ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
 
 
 ---
 
-# Konfiguracja interfejsu API plików
+# <a name="file-api-configuration"></a>Konfiguracja interfejsu API plików
 
 
 Działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru.
@@ -32,17 +33,17 @@ Interfejs API plików zawiera dwa rodzaje ochrony; ochronę natywną i ochronę 
 
 Aby uzyskać więcej informacji o obsługiwanych formatach plików, zobacz sekcję **Interfejs API plików — szczegóły dotyczące obsługi plików** w tym temacie.
 
-## Nazwy i opisy typów kluczy i ich wartości
+## <a name="keykey-value-types-and-descriptions"></a>Nazwy i opisy typów kluczy i ich wartości
 
 W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfrowaniem.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotection"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
 **Typ**: klucz
 
 **Opis**: zawiera ogólną konfigurację interfejsu API plików.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgt"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
 **Typ**: klucz
 
@@ -55,7 +56,7 @@ W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfro
 Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. Jeśli wartość **Encryption** nie zostanie ustawiona, dla danego typu pliku zostanie zastosowane zachowanie domyślne.
 
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgtencryption"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
 **Typ**: REG_SZ
 
@@ -76,7 +77,7 @@ Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. J
 
 Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domyślne.
 
-## Domyślne zachowanie dla różnych formatów plików
+## <a name="default-behavior-for-different-file-formats"></a>Domyślne zachowanie dla różnych formatów plików
 
 -   **Pliki pakietu Office** Włączone jest szyfrowanie natywne.
 -   **Pliki txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif** Włączone jest szyfrowanie natywne (xxx staje się pxxx)
@@ -84,7 +85,7 @@ Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domy�
 
 Jeśli próba szyfrowania zostanie podjęta na typie pliku, który jest zablokowany, wystąpi błąd [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
-### Interfejs API plików — szczegóły dotyczące obsługi plików
+### <a name="file-api-file-support-details"></a>Interfejs API plików — szczegóły dotyczące obsługi plików
 
 Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia). Na przykład dla dowolnego rozszerzenia &lt;roz&gt; (innego niż rozszerzenia pakietu Office) będzie używany ciąg \*.p&lt;roz&gt;, jeśli konfiguracja administratora dla tego rozszerzenia ma wartość „NATIVE”.
 
@@ -106,7 +107,7 @@ Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia)
 -   Typ ochrony = Pfile: plik sample.*zzz* jest szyfrowany i nosi nazwę sample.*zzz*.pfile, gdzie *zzz* to pierwotne rozszerzenie pliku.
 -   Off: Wyłącza funkcję szyfrowania.
 
-### Przykłady
+### <a name="examples"></a>Przykłady
 
 Następujące ustawienia pozwalają włączyć szyfrowanie pliku PFile dla plików txt. Pliki pakietu Office będą chronione natywnie (domyślnie), pliki txt będą miały ochronę pliku PFile, a ochrona wszystkich innych plików będzie zablokowana (domyślnie).
 
@@ -146,7 +147,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 - [Uwagi dla deweloperów](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
@@ -156,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

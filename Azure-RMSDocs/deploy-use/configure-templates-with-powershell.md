@@ -2,6 +2,7 @@
 title: "Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell | Azure Information Protection"
 description: "Wszystkie czynności, które można wykonać w klasycznym portalu Azure w zakresie tworzenia szablonów zarządzania uprawnieniami i zarządzania tymi szablonami, można wykonać z poziomu wiersza polecenia, korzystając z programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 3a213388584424871304778f3df36f7d49b370bd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
 
 
 ---
 
 
 
-# Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
+# <a name="powershell-reference-for-custom-templates"></a>Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -55,10 +56,10 @@ Polecenia cmdlet używane do tworzenia szablonów i zarządzania nimi:
 
 
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

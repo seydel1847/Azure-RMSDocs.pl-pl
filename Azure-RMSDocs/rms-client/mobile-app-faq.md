@@ -3,8 +3,9 @@ title: "Często zadawane pytania dotyczące aplikacji Azure Information Protecti
 description: 
 keywords: "Niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 1cafa88ded2bf951f8af93e4b27cc526735d19e8
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 
 
 ---
@@ -35,18 +36,9 @@ Tak, można otwierać chronione pliki PDF udostępnione przez innych użytkownik
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>Jak zacząć korzystać z aplikacji przeglądarki?
 
-Na urządzeniu przenośnym należy uzyskać dostęp do jednego z plików obsługiwanych przez aplikację, aby zobaczyć przeglądarkę w działaniu. Na przykład:
+Po zainstalowaniu aplikacji nie musisz wykonywać żadnych innych czynności. Zaczekaj, aż otrzymasz chronioną wiadomość e-mail lub plik, który chcesz wyświetlić, a następnie wybierz pozycję **Przeglądarka usługi AIP**, aby go otworzyć. Zostanie wyświetlona prośba o zalogowanie do konta służbowego. Po uwierzytelnieniu poświadczeń możesz odczytywać zawartość.
 
-- **Plik .rpmsg**: to jest chroniona prawami wiadomość e-mail wyświetlana jako załącznik w wiadomości e-mail, gdy aplikacja poczty e-mail na urządzeniu przenośnym nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. 
-    
-    Użyj innego urządzenia, aby wysłać do siebie wiadomość e-mail chronioną prawami, do której można uzyskać dostęp z urządzenia przenośnego. Na przykład użyj programu Outlook na komputerze z systemem Windows. Listę klientów poczty e-mail, które natywnie obsługują usługę Rights Management, można znaleźć w kolumnie POCZTA E-MAIL na stronie [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
-
-- **Plik PDF chroniony prawami**: użyj aplikacji do udostępniania usługi Rights Management z komputera z systemem Windows lub aplikacji PDF, która natywnie obsługuje usługę Rights Management, aby wysłać do siebie plik PDF chroniony prawami jako załącznik wiadomości e-mail. Możesz także przekazać plik PDF do chronionej biblioteki programu SharePoint, a następnie udostępnić go przy użyciu swojego adresu e-mail.
-
-- **Plik ptxt, pjpg lub ppng**: użyj aplikacji RMS sharing usługi Rights Management z komputera z systemem Windows i opcji [Udostępnianie chronionej zawartości](sharing-app-protect-by-email.md), aby wysłać sobie chroniony plik jako załącznik wiadomości e-mail. Aby uzyskać pełną listę typów plików, których można używać do testowania, zobacz pierwszą tabelę w sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) w podręczniku administratora aplikacji do udostępniania usługi Rights Management. 
-
-Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wtedy wyświetlony monit o zalogowanie się do konta służbowego. Po pomyślnym uwierzytelnieniu użytkownika aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
-
+Jeśli jednak nie chcesz czekać, możesz skorzystać z następujących instrukcji, aby wysłać do siebie chronioną wiadomości e-mail lub plik do wyświetlenia: [Wprowadzenie do aplikacji Microsoft Azure Information Protection dla systemów iOS i Android](mobile-app-get-started.md) 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>Jakich poświadczeń należy używać do logowania się do tej aplikacji?
 
 Jeśli Twoja organizacja korzysta z lokalnej usługi AD RMS (z rozszerzeniem dla urządzeń przenośnych) lub z usługi Azure Rights Management przy użyciu swoich poświadczeń. Jeśli nie, można utworzyć nowe darmowe konto na [stronie usługi Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
@@ -66,10 +58,10 @@ W aplikacji przejdź do pozycji **Ustawienia** > **Wyślij opinię**.
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>Na moje pytanie nie udzielono odpowiedzi. Co mam zrobić?
 
-Należy zadać pytanie na naszej [witrynie Yammer](http://www.yammer.com/AskIPTeam) lub [wysłać wiadomość e-mail do zespołu usługi Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
+Należy zadać pytanie na naszej [witrynie Yammer](https://www.yammer.com/AskIPTeam) lub [wysłać wiadomość e-mail do zespołu usługi Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

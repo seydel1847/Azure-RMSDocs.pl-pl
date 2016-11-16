@@ -3,6 +3,7 @@ title: "Jak zainstalować i skonfigurować serwer usługi RMS oraz używać go d
 description: "Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
-ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 47f9cf725b864ee22afc7605702992b08cb686dc
 
 
 ---
 
-# Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
+# <a name="howto-install-configure-and-test-with-an-rms-server"></a>Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
 
 Ten temat zawiera opis procedur związanych z nawiązywaniem połączenia z serwerem usługi RMS lub usługą Azure RMS na potrzeby testowania aplikacji obsługującej prawa.
  
-## Instrukcje
+## <a name="instructions"></a>Instrukcje
 
-### Krok 1. Konfiguracja serwera usługi RMS
+### <a name="step-1-setup-your-rms-server"></a>Krok 1. Konfiguracja serwera usługi RMS
 
 Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują następujące elementy:
 
@@ -110,6 +111,6 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

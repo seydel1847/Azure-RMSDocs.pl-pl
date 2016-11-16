@@ -2,6 +2,7 @@
 title: "Ustawienia rejestru dla łącznika usługi RMS | Azure Information Protection"
 description: "Informacje dotyczące ustawień rejestru na serwerach używających łącznika usług RMS. Zalecana metoda konfiguracji tych ustawień polega na użyciu narzędzia do konfiguracji serwera dla łącznika usług Microsoft RMS."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
 
 
 ---
 
 
-# Ustawienia rejestru dla łącznika usługi Rights Management
+# <a name="registry-setting-for-the-rights-management-connector"></a>Ustawienia rejestru dla łącznika usługi Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -45,7 +46,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 -   Jeśli na potrzeby komunikacji między łącznikiem a serwerami lokalnymi skonfigurowano używanie protokołu HTTPS, w adresie URL łącznika użyj prefiksu protokołu HTTPS. Więcej informacji zawiera sekcja [Konfigurowanie łącznika usługi RMS do używania protokołu HTTPS](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) w głównej instrukcji. W przypadku adresów URL usługi Microsoft RMS zawsze jest używany protokół HTTPS.
 
 
-## Ustawienia rejestru dla programu Exchange 2016 lub Exchange 2013
+## <a name="exchange-2016-or-exchange-2013-registry-settings"></a>Ustawienia rejestru dla programu Exchange 2016 lub Exchange 2013
 
 **Ścieżka rejestru:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -96,7 +97,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 - https://*ConnectorFQDN*
 
 
-## Ustawienia rejestru dla programu Exchange 2010
+## <a name="exchange-2010-registry-settings"></a>Ustawienia rejestru dla programu Exchange 2010
 
 **Ścieżka rejestru:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -145,7 +146,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 - https://*ConnectorFQDN*
 
 
-## Ustawienia rejestru dla programu SharePoint 2016 lub SharePoint 2013
+## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>Ustawienia rejestru dla programu SharePoint 2016 lub SharePoint 2013
 
 **Ścieżka rejestru:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
@@ -192,7 +193,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 
 
-## Ustawienia rejestru dla serwera plików i infrastruktury klasyfikacji plików
+## <a name="file-server-and-file-classification-infrastructure-registry-settings"></a>Ustawienia rejestru dla serwera plików i infrastruktury klasyfikacji plików
 
 **Ścieżka rejestru:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
@@ -216,6 +217,6 @@ Oto instrukcje dotyczące użycia tych ustawień:
 Powrót do tematu [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

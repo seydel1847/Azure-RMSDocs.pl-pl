@@ -2,6 +2,7 @@
 title: "Jak aktywować usługę Azure Rights Management w klasycznym portalu Azure | Azure Information Protection"
 description: "Instrukcje dotyczące aktywacji usługi Rights Management po uzyskaniu dostępu do witryny Azure Portal. Na przykład masz subskrypcję pakietu Enterprise Mobility Suite lub subskrypcję usługi Azure Information Protection w wersji Premium."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
-ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
 
 
 ---
 
-# Jak aktywować usługę Azure Rights Management w klasycznym portalu Azure
+# <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>Jak aktywować usługę Azure Rights Management w klasycznym portalu Azure
 
 >*Dotyczy: Azure Information Protection*
 
@@ -44,20 +45,20 @@ Te instrukcje są przeznaczone dla użytkowników, którzy mają dostęp do port
 
 **STAN USŁUGI RIGHTS MANAGEMENT** powinien być teraz ustawiony na **Aktywna**, a opcja **AKTYWUJ** zostaje zastąpiona opcją **DEZAKTYWUJ**.
 
-## Wartości i opisy stanu usługi Rights Management w klasycznym portalu Azure
+## <a name="rights-management-status-values-and-descriptions-in-the-azure-classic-portal"></a>Wartości i opisy stanu usługi Rights Management w klasycznym portalu Azure
 Oprócz stanu **Aktywna**, który wskazuje, że usługa Rights Management została włączona i jest gotowa do użycia, może być również wyświetlany stan **Nieaktywna**, **Niedostępna** lub **Bez autoryzacji**.
 
 |Wartość stanu|Opis|
 |----------------|---------------|
-|**Aktywny**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] Jest włączona i gotowa do użytku.|
-|**Nieaktywna**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] Jest wyłączona i musi zostać aktywowana, aby organizacja mogła chronić pliki.|
-|**Niedostępny**|Usługa [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] nie działa. Spróbuj ponownie później.|
-|**Nieupoważniony**|Nie masz uprawnień umożliwiających wyświetlanie stanu usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Na przykład Twoje konto jest zablokowane lub nie jesteś administratorem globalnym dla wybranej dzierżawy.|
+|**Aktywna**|Usługa [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] jest włączona i gotowa do użytku.|
+|**Nieaktywna**|Usługa [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] jest wyłączona i musi zostać aktywowana, aby organizacja mogła chronić pliki.|
+|**Niedostępna**|Usługa [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] nie działa. Spróbuj ponownie później.|
+|**Bez autoryzacji**|Nie masz uprawnień umożliwiających wyświetlanie stanu usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]. Na przykład Twoje konto jest zablokowane lub nie jesteś administratorem globalnym dla wybranej dzierżawy.|
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Powrót do części [Aktywacja usługi Azure Rights Management](activate-service.md).
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

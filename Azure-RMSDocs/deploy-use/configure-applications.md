@@ -2,6 +2,7 @@
 title: "Konfigurowanie aplikacji dla usługi Azure Rights Management | Azure Information Protection"
 description: "Instrukcje dla administratorów dotyczące konfigurowania aplikacji i usług do pracy z usługą zabezpieczającą Azure Rights Management w ramach usługi Azure Information Protection. Dotyczy to na przykład aplikacji pakietu Office, takich jak Word 2013 i Word 2010 oraz usług, takich jak Exchange Online (zasady transportu, zapobieganie utracie danych, blokowanie przesyłania dalej i szyfrowanie wiadomości) oraz SharePoint Online (biblioteki chronione)."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
-ms.openlocfilehash: d141bf56515853f7b6fddda1ddf150b8d3730b78
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 
 
 ---
 
-# Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management
+# <a name="configuring-applications-for-azure-rights-management"></a>Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -36,7 +37,7 @@ Po wdrożeniu usługi Azure Information Protection dla organizacji skonfiguruj (
 
     -   [Usługa Exchange Online: konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration)
 
-    -   [Usługi SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
+    -   [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
 
 - [Aplikacje pakietu Office: konfiguracja dla klientów](configure-office-apps.md)
 
@@ -46,9 +47,9 @@ Po wdrożeniu usługi Azure Information Protection dla organizacji skonfiguruj (
 
 -   [Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów](configure-sharing-app.md)
 
-    -   [Aplikacja RMS sharing dla systemu Windows: instalacja i konfiguracja](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
+    -   [Aplikacja do udostępniania usługi RMS dla systemu Windows: instalacja i konfiguracja](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
 
-    -   [Aplikacja RMS sharing dla platform urządzeń przenośnych: instalacja i zarządzanie](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
+    -   [Aplikacja do udostępniania usługi RMS dla platform urządzeń przenośnych: instalacja i zarządzanie](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
 
 
 Aby skonfigurować serwery lokalne, takie jak Exchange Server i SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -59,7 +60,7 @@ Aby skonfigurować serwery lokalne, takie jak Exchange Server i SharePoint Serve
 
 Oprócz tych aplikacji i usług istnieją inne aplikacje obsługujące interfejsy API usługi Rights Management. Do tej kategorii należą aplikacje biznesowe, które są tworzone we własnym zakresie za pomocą zestawu Rights Management SDK, i aplikacje od dostawców oprogramowania tworzone przy użyciu zestawu Rights Management SDK. W przypadku tych aplikacji postępuj zgodnie z instrukcjami dostarczonymi z aplikacją.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Po skonfigurowaniu aplikacji do obsługi usługi Azure Rights Management użyj [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Information Protection dla użytkowników i administratorów. Jeśli nie, przydatne mogą być następujące informacje operacyjne:
 
 - [Weryfikowanie usługi Azure Rights Management](verify.md)
@@ -74,6 +75,6 @@ Po skonfigurowaniu aplikacji do obsługi usługi Azure Rights Management użyj [
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

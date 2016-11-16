@@ -3,6 +3,7 @@ title: "Konfigurowanie uwierzytelniania usługi RMS za pomocą Portalu Azure | A
 description: "Zawiera opis procesu uwierzytelniania przy użyciu biblioteki ADAL"
 keywords: uwierzytelnianie, RMS, ADAL
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,22 +15,22 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: eb9cea79d9e5a7902839d34d9b4f13bdefe5a5d3
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 0bea42f0de08dc521828ccfe3cbff85e32c74aca
 
 
 ---
 
-# Instrukcje: konfigurowanie uwierzytelniania usługi RMS za pomocą Portalu Azure
+# <a name="how-to-use-azure-portal-to-configure-for-rms-authentication"></a>Instrukcje: konfigurowanie uwierzytelniania usługi RMS za pomocą Portalu Azure
 
 Uwierzytelnianie w usłudze Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
 
 Użycie tej metody wymaga, aby aplikacja zarządzała własnym uwierzytelnianiem OAuth. W przypadku tego podejścia klient RMS wykonuje wywołanie zwrotne określone w aplikacji, gdy jest wymagane uwierzytelnienie.
 
-## Konfigurowanie za pomocą Portalu Azure
+## <a name="configure-via-azure-portal"></a>Konfigurowanie za pomocą Portalu Azure
 Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania za pomocą Portalu Azure [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md). Skopiuj i zapisz *identyfikator klienta* oraz *identyfikator URI przekierowania* z tego procesu do użycia w przyszłości.
 
-## Przykładowy kod
+## <a name="code-sample"></a>Przykładowy kod
 Poniżej przedstawiono fragment kodu z większego przykładu kodu klientów urządzeń przenośnych umożliwiający włączenie uwierzytelniania opartego na bibliotece Azure ADAL. Aby uzyskać więcej informacji, zobacz pełny przykład w temacie [MSIPCSampleApp](https://github.com/AzureAD/rms-sdk-ui-for-android/tree/master/samples/MsipcSampleApp)
 
        /**
@@ -55,13 +56,13 @@ Poniżej przedstawiono fragment kodu z większego przykładu kodu klientów urz�
        }
 
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 - [MSIPCSampleApp](https://github.com/AzureAD/rms-sdk-ui-for-android/tree/master/samples/MsipcSampleApp)
 - [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

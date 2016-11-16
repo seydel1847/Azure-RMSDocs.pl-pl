@@ -2,6 +2,7 @@
 title: "Terminologia dotycząca usługi Azure Information Protection | Azure Information Protection"
 description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Information Protection firmy Microsoft? Tutaj znajdziesz definicje terminów i skrótów, które są typowe dla usługi Azure Information Protection lub które mają określone znaczenie w przypadku, gdy są używane w kontekście tej usługi."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 2ff8c6587d5e6136053cedb77005b4212606a85c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 
 
 ---
 
-# Terminologia dotycząca usługi Azure Information Protection
+# <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -73,6 +74,6 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Wskazówki i informacje dla deweloperów | Azure RMS"
 description: "W tym temacie podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/18/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
-ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
 
 
 ---
 
-# Wskazówki i informacje dla deweloperów
+# <a name="developer-guidance-and-information"></a>Wskazówki i informacje dla deweloperów
 
 W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
 - [Porada: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md) — uwierzytelnianie w usługach Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
@@ -40,7 +41,7 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 - [Informacje o ograniczeniach użycia](usage-restriction-reference.md) — ograniczenia użycia są definiowane przez stałe wymienione w tym temacie.
 
  
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 * [Przegląd](ad-rms-overview.md)
  
 
@@ -48,6 +49,6 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

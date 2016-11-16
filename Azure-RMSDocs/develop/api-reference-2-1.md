@@ -3,6 +3,7 @@ title: Dokumentacja interfejsu API | Azure RMS
 description: "Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bb20d796e5a852aa9da224cbf218b9a166a9dbd8
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f430c1ea265e560786bf06d4aeb0792ab610746c
 
 
 ---
 
-# Dokumentacja interfejsu API
+# <a name="api-reference"></a>Dokumentacja interfejsu API
 
 Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows. Aby uzyskać więcej szczegółowych informacji, zobacz [Informacje o wersji](release-notes-rtm.md).
 - [Stałe](https://msdn.microsoft.com/library/hh535291.aspx)
@@ -31,7 +32,7 @@ Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dl
 
 
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Informacje o wersji](release-notes-rtm.md)
  
@@ -40,6 +41,6 @@ Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dl
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

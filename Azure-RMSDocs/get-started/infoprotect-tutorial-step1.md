@@ -2,6 +2,7 @@
 title: Samouczek Szybki start krok 1 | Azure Information Protection
 description: "Krok 1 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 
 
 ---
 
-# Krok 1. Aktywowanie usługi Rights Management
+# <a name="step-1-activate-the-rights-management-service"></a>Krok 1. Aktywowanie usługi Rights Management
  
 >*Dotyczy: Azure Information Protection*
 
@@ -29,7 +30,7 @@ W tym samouczku przejdziemy bezpośrednio do strony aktywacji dla administrator�
 
 Jeśli wolisz przejść do tej strony z portalu administracyjnego pakietu Office 365, a nie bezpośrednio, zobacz pełne instrukcje w dokumencie [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md). Tych pełnych instrukcji należy użyć także w przypadku posiadania dostępu do witryny Azure Portal, ale nie portalu administracyjnego Office 365.
 
-## Aktywowanie usługi Rights Management
+## <a name="to-activate-the-rights-management-service"></a>Aktywowanie usługi Rights Management
 
 1. Otwórz nowe okno przeglądarki i przejdź bezpośrednio do [strony aktywacji usługi Rights Management](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx) dla administratorów usługi Office 365.
     
@@ -56,6 +57,6 @@ To wszystko, co musisz zrobić w pierwszym kroku tego samouczka. W przypadku wdr
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

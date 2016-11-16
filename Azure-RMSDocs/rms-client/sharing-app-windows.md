@@ -2,6 +2,7 @@
 title: Aplikacja RMS sharing dla systemu Windows | Azure Information Protection
 description: "Zasoby informacyjne dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows. Jest to bezpłatna aplikacja do pobrania dla organizacji, które używają usług Active Directory Rights Management (AD RMS) lub usługi Azure Information Protection, jak również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 4151d5d27f4297d3b9e02d45d0168c1933f3abc9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: abb1f0e1786aadbf3e9ab4b6a1679afeb32bedf1
 
 
 ---
 
-# Aplikacja do udostępniania usługi Rights Management dla systemu Windows
+# <a name="rights-management-sharing-application-for-windows"></a>Aplikacja do udostępniania usługi Rights Management dla systemu Windows
 
->*Dotyczy usług: Active Directory Rights Management, Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
 
 Aplikacja RMS sharing to bezpłatna aplikacja do pobrania dla organizacji, które używają usług [Active Directory Rights Management](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub usługi [Azure Information Protection](../understand-explore/what-is-information-protection.md), jak również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
@@ -35,12 +36,12 @@ Aplikacja RMS sharing to bezpłatna aplikacja do pobrania dla organizacji, któr
 > 
 > W przypadku komputerów Mac i telefonów z systemem Windows Phone zobacz [Często zadawane pytania dotyczące aplikacji RMS sharing dla platform mobilnych i Mac](http://technet.microsoft.com/dn451248).
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows](http://technet.microsoft.com/dn467883)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

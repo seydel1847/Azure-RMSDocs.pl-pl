@@ -3,6 +3,7 @@ title: "Włączanie powiadomień e-mail | Azure RMS"
 description: "Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5da480834485d58028b366c8fbb9a53412cd7c6a
 
 
 ---
 
-# Instrukcje: włączanie powiadomień e-mail
+# <a name="howto-enable-email-notification"></a>Instrukcje: włączanie powiadomień e-mail
 
 Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości.
 
@@ -56,7 +57,7 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
 |MS.Notify.TZSN|ciąg|„Czas pacyficzny”|**Źródło:** TimeZoneInfo.Local.StandardName — nazwa standardowa strefy czasowej.<br><br>Powinna to być zlokalizowana nazwa standardowa strefy czasowej.|
 |MS.Notify.TZDN|ciąg|„Czas pacyficzny letni”|**Źródło:** TimeZoneInfo.Local.DaylightName — nazwa letniej strefy czasowej.<br><br>Powinna to być zlokalizowana nazwa letniej strefy czasowej. Może być ona identyczna z nazwą standardową, jeśli dana strefa czasowa nie korzysta z czasu letniego.|
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
@@ -67,6 +68,6 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

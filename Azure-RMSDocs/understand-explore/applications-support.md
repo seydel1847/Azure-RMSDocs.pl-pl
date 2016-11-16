@@ -2,6 +2,7 @@
 title: "Jak aplikacje obsługują usługę Azure Rights Management | Azure Information Protection"
 description: "Omówienie sposobu, w jaki najczęściej używane aplikacje (takie jak aplikacje pakietu Office — Word, Excel, PowerPoint i Outlook) oraz usługi (takie jak Exchange i SharePoint) użytkownika końcowego mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection w celu ochrony firmowych dokumentów i wiadomości e-mail."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
-ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fdb862b0d4f3d0a6b3411b38a314e28b5f1f9edc
 
 
 ---
 
-# Jak aplikacje obsługują usługę Azure Rights Management
+# <a name="how-applications-support-the-azure-rights-management-service"></a>Jak aplikacje obsługują usługę Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -47,11 +48,11 @@ Z usługą Rights Management mogą być na różne sposoby zintegrowane usługi 
 
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się więcej na temat sposobu obsługi usługi Azure Rights Management przez następujące aplikacje i serwery:
 
--   [Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych](sharing-app-support.md)
+-   [Aplikacja do udostępniania usługi RMS dla systemu Windows i platform urządzeń przenośnych](sharing-app-support.md)
 
 -   [Aplikacje i usługi pakietu Office](office-apps-services-support.md)
 
@@ -62,6 +63,6 @@ Dowiedz się więcej na temat sposobu obsługi usługi Azure Rights Management p
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

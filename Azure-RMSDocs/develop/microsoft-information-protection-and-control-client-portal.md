@@ -3,6 +3,7 @@ title: Rights Management Services SDK 2.1 | Azure RMS
 description: "Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usługi RMS lub Azure RMS w celu zapewnienia ochrony informacji."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 5972599c568091d39e8a6974648022c4835af1bb
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 20699fe6a0f5d1e989ee767a5710a3272718f064
 
 
 ---
 
-# Rights Management Services SDK 2.1
+# <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
-## Cel
+## <a name="purpose"></a>Cel
 
 Zestaw Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usług Rights Management (RMS) lub Azure Rights Management w celu zapewnienia ochrony informacji. Zestaw RMS SDK 2.1 obsługuje złożone rozwiązania w zakresie zabezpieczeń, takie jak zarządzanie kluczami oraz przetwarzanie szyfrowania i odszyfrowywania, a także oferuje uproszczony interfejs API ułatwiający tworzenie aplikacji.
 
-### Docelowa grupa deweloperów
+### <a name="developer-audience"></a>Docelowa grupa deweloperów
 
 Zestaw RMS SDK 2.1 można pobrać z Centrum pobierania Microsoft na [stronie pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397). Zestaw RMS SDK 2.1 służy do tworzenia niestandardowych aplikacji, które umożliwiają zarządzanie prawami do zasobów cyfrowych i wymuszanie zgodności z warunkami użytkowania tych zasobów. Wymagana jest znajomość języka programowania C++.
 
@@ -34,7 +35,7 @@ Więcej informacji na temat tej technologii zawiera witryna firmy Microsoft [RMS
 
 Odpowiedzi na często zadawane pytania można znaleźć w sekcji dla deweloperów na stronie [często zadawanych pytań dotyczących usługi RMS](http://aka.ms/adrmsfaq ).
 
-### Wymagania dotyczące środowiska uruchomieniowego
+### <a name="runtime-requirements"></a>Wymagania dotyczące środowiska uruchomieniowego
 
 Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretnego elementu programistycznego można znaleźć w sekcji wymagań w temacie dotyczącym tego elementu.
 
@@ -48,7 +49,7 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
 
  
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Strona pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [RMS Developer's Corner (Kącik dewelopera usługi RMS)](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
@@ -59,6 +60,6 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

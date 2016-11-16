@@ -2,6 +2,7 @@
 title: "Monitorowanie łącznika usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje dotyczące monitorowania łącznika i korzystania przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
 
 
 ---
 
-# Monitorowanie łącznika usługi Azure Rights Management
+# <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można skorzystać z następujących metod i informacji, które ułatwiają monitorowanie łącznika oraz korzystania przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
-## Wpisy dziennika zdarzeń aplikacji
+## <a name="application-event-log-entries"></a>Wpisy dziennika zdarzeń aplikacji
 
 Łącznik usługi RMS używa dziennika zdarzeń aplikacji do rejestrowania wpisów dotyczących **łącznika usługi Microsoft RMS**. 
 
@@ -41,7 +42,7 @@ Tak jak w przypadku wszystkich wpisów dziennika zdarzeń można przejść do sz
 
 Oprócz sprawdzenia dziennika zdarzeń przy pierwszym wdrożeniu łącznika można regularnie wyszukiwać ostrzeżenia i błędy. Na przykład łącznik może działać zgodnie z oczekiwaniami, ale inni administratorzy mogą zmienić zależne konfiguracje. Inny administrator może zmienić konfigurację serwera proxy sieci Web tak, aby serwery łącznika usługi RMS nie mogły już uzyskiwać dostępu do Internetu (błąd 3001), albo usunąć konto komputera z grupy autoryzowanej do korzystania z łącznika (ostrzeżenie 2001).
 
-### Identyfikatory i opisy dziennika zdarzeń
+### <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń
 
 Następujące sekcje zawierają informacje dotyczące identyfikowania możliwych identyfikatorów zdarzeń, opisów i innych dodatkowych informacji.
 
@@ -153,13 +154,13 @@ To zdarzenie jest rejestrowane, jeśli łącznik usługi RMS nie może pobrać n
 
 ----
 
-## Liczniki wydajności
+## <a name="performance-counters"></a>Liczniki wydajności
 
 Podczas instalacji łącznika usługi RMS są automatycznie tworzone liczniki wydajności **łącznika usługi Microsoft Rights Management**, które mogą być przydatne podczas monitorowania wydajności użycia usługi Azure Rights Management za pośrednictwem łącznika. Na przykład w przypadku regularnego występowania opóźnień podczas włączania ochrony dokumentów lub wiadomości e-mail albo podczas otwierania chronionych dokumentów lub wiadomości e-mail, liczniki wydajności mogą pomóc w ustaleniu, czy opóźnienie wynika z czasu przetwarzania w łączniku, czasu przetwarzania w usłudze Azure Rights Management, czy opóźnienia sieci. Aby łatwiej wskazać przyczynę opóźnienia, zapoznaj się z licznikami zawierających średnią wartość **czasu przetwarzania łącznika**, **czasu odpowiedzi usługi** i **czasu odpowiedzi łącznika**. Przykład: **Średni czas odpowiedzi łącznika na żądania wsadowe dotyczące licencjonowania zakończone powodzeniem**.
 
 Jeśli niedawno dodano nowe konta serwera na potrzeby korzystania z łącznika, warto zapoznać się z licznikiem **Czas od ostatniej aktualizacji zasad autoryzacji** w celu sprawdzenia, czy łącznik pobrał listę od czasu jej aktualizacji, czy należy zaczekać nieco dłużej (do 15 minut).
 
-## Analizator usług RMS
+## <a name="rms-analyzer"></a>Analizator usług RMS
 
 Narzędzie Analizator usług Rights Management Services ułatwia monitorowanie kondycji łącznika i wykrywanie problemów dotyczących konfiguracji.
 
@@ -167,7 +168,7 @@ Jeśli jeszcze nie pobrano tego narzędzia, możesz to zrobić w [Centrum pobier
 
 Aby uzyskać dodatkowe informacje i instrukcje, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania.
 
-## Rejestrowanie
+## <a name="logging"></a>Rejestrowanie
 
 Rejestrowanie użycia pomaga sprawdzić, kiedy wiadomości e-mail i dokumenty są chronione oraz używane. W przypadku korzystania z łącznika usługi RMS pole identyfikatora użytkownika w dziennikach zawiera główną nazwę usługi **Aadrm_S-1-7-0**, która jest tworzona automatycznie dla łącznika usługi RMS.
 
@@ -192,6 +193,6 @@ Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych,
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

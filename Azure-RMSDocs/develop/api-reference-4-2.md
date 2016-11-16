@@ -3,8 +3,9 @@ title: Dokumentacja interfejsu API | Azure RMS
 description: "Zestaw Microsoft Rights Management SDK 4.2 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,29 +15,29 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab47811d6b7b2b11f5bdcb58c4d72837a209131
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 4f54eb662200bd07a368287cb9e182223132118f
 
 
 ---
 
-# Dokumentacja interfejsu API
+# <a name="api-reference"></a>Dokumentacja interfejsu API
 
 Zestaw Microsoft Rights Management SDK 4.2 obsługuje kilka systemów operacyjnych. Aby uzyskać więcej szczegółowych informacji, zobacz temat [Co nowego](release-notes.md).
 
-### Apple
-- [Dokumentacja interfejsu API dla systemów iOS/OS X](/information-protection/sdk/4.2/api/iOS/iOS) — dokumentacja interfejsu API dla systemów operacyjnych iOS i OS X firmy Apple.
+### <a name="apple"></a>Apple
+- [Dokumentacja interfejsu API dla systemów iOS/OS X](https://msdn.microsoft.com/library/dn758306.aspx) — dokumentacja interfejsu API dla systemów operacyjnych iOS i OS X firmy Apple.
 
-### Google
-- [Przestrzenie nazw systemu Android](android-namespaces.md)
+### <a name="google"></a>Google
+- [Przestrzenie nazw systemu Android](https://msdn.microsoft.com/library/dn758245.aspx)
 
-### Linux
+### <a name="linux"></a>Linux
 - [Dokumentacja interfejsu API systemu Linux](linux-c-api-reference.md) — dokumentacja interfejsu API dla obsługi systemów operacyjnych Linux jest dostępna w usłudze Github: [RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html) (Zestaw RMS SDK dla języka C++).
 
-### Microsoft
-- [Dokumentacja interfejsu API dla systemu Windows](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement) – dokumentacja interfejsu API dla zestawów SDK systemu Windows Phone i aplikacji Sklepu Windows.
+### <a name="microsoft"></a>Microsoft
+- [Dokumentacja interfejsu API dla systemu Windows](https://msdn.microsoft.com/library/dn891914.aspx) – dokumentacja interfejsu API dla zestawów SDK systemu Windows Phone i aplikacji Sklepu Windows.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Wprowadzenie](get-started.md)
  
@@ -45,6 +46,6 @@ Zestaw Microsoft Rights Management SDK 4.2 obsługuje kilka systemów operacyjny
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

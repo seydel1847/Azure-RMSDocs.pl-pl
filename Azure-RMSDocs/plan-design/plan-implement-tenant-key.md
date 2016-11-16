@@ -2,8 +2,9 @@
 title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje ułatwiające zaplanowanie użycia klucza dzierżawy usługi Azure Information Protection oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: b8380389267d77da53a5b87ffd606b6e754de7f3
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: afcef2843336e022e63e7895ac3c0488d0aa0e2a
 
 
 ---
@@ -90,9 +91,11 @@ Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, a
 
 Aby uzyskać więcej informacji o modułach HSM firmy Thales i sposobie ich wykorzystania w usłudze Azure Key Vault, zobacz [witrynę sieci Web firmy Thales](https://www.thales-esecurity.com/msrms/cloud).
 
+### <a name="instructions-for-byok"></a>Instrukcje dotyczące strategii BYOK
+
 Aby wygenerować i przenieść własny klucz dzierżawy do usługi Azure Key Vault, wykonaj procedury opisane w temacie [Jak wygenerować i przenieść klucze chronione przy użyciu modułu HSM do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) w dokumentacji usługi Azure Key Vault.
 
-Gdy klucz jest przesyłany do usługi Key Vault, otrzymuje identyfikator klucza w usłudze Key Vault, który jest adresem URL zawierającym nazwę magazynu, kontener kluczy, nazwę klucza i wersję klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Usługa Azure Rights Management z usługi Azure Information Protection będzie potrzebować tego adresu URL do skonfigurowania użycia klucza.
+Gdy klucz jest przesyłany do usługi Key Vault, otrzymuje identyfikator klucza w usłudze Key Vault, który jest adresem URL zawierającym nazwę magazynu kluczy, kontener kluczy, nazwę klucza i wersję klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Usługa Azure Rights Management z usługi Azure Information Protection będzie potrzebować tego adresu URL do skonfigurowania użycia klucza.
 
 Zanim usługa Azure Information Protection będzie mogła użyć tego klucza, należy autoryzować usługę Azure Rights Management do używania kluczy znajdujących się w magazynie kluczy organizacji. Aby to zrobić, administrator usługi Azure Key Vault używa polecenia cmdlet programu PowerShell dla usługi Key Vault [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) i przyznaje uprawnienia głównej nazwie usługi Azure Rights Management, **Microsoft.Azure.RMS**. Na przykład:
 
@@ -105,6 +108,11 @@ Teraz możesz przystąpić do konfigurowania usługi Azure Information Protectio
 Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](https://msdn.microsoft.com/library/azure/mt759829.aspx), określając adres URL klucza. Na przykład:
 
     Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
+
+> [!IMPORTANT]
+> W tym przykładzie wersja klucza do użycia to „aaaabbbbcccc111122223333”. Jeśli nie określisz wersji, bieżąca wersja klucza jest używana bez ostrzeżenia, a polecenie działa prawidłowo. Jeśli jednak klucz w usłudze Key Vault zostanie później zaktualizowany (odnowiony), usługa Azure Rights Management nie będzie działać w dzierżawie nawet po ponownym uruchomieniu polecenia Use-AadrmKeyVaultKey.
+>
+>Upewnij się, że w przypadku uruchamiania tego polecenia oprócz nazwy klucza zostanie określona również jego wersja.
 
 Jeśli chcesz potwierdzić, że adres URL klucza jest skonfigurowany prawidłowo w usłudze Azure RMS, możesz uruchomić polecenie cmdlet [Get-AzureKeyVaultKey] (https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx) w usłudze Azure Key Vault, aby zobaczyć adres URL klucza.
 
@@ -136,6 +144,6 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

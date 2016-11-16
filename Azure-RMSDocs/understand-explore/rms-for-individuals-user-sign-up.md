@@ -2,6 +2,7 @@
 title: "Jak tworzyć konta usługi RMS dla użytkowników indywidualnych | Azure Information Protection"
 description: "Instrukcje dotyczące rejestrowania się w ramach tego bezpłatnego konta oraz informacje techniczne dotyczące sposobu działania tego procesu."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,23 +13,23 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
-ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 
 ---
 
-# Jak tworzyć konta usługi RMS dla użytkowników indywidualnych
+# <a name="how-users-sign-up-for-rms-for-individuals"></a>Jak tworzyć konta usługi RMS dla użytkowników indywidualnych
 
 >*Dotyczy: Azure Information Protection*
 
 Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, przechodząc do [strony usługi Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) i podając swój służbowy adres e-mail. Najczęściej spotykaną metodą trafienia na stronę rejestracji jest odebranie wiadomości e-mail z chronionym załącznikiem, który zawiera instrukcje dotyczące sposobu tworzenia konta. W odpowiedzi otrzymasz wiadomość e-mail od firmy Microsoft i będziesz w stanie ukończyć proces rejestracji, wprowadzając szczegóły wymagane do utworzenia konta. Po zakończeniu tego procesu zobaczysz stronę, z której możesz pobrać aplikację do udostępniania dla różnych urządzeń oraz na której znajdziesz link do podręcznika użytkownika i link do bieżącej listy aplikacji, które natywnie obsługują usługę Rights Management. 
 
-## Aby utworzyć konto usługi RMS dla użytkowników indywidualnych
+## <a name="to-sign-up-for-rms-for-individuals"></a>Aby utworzyć konto usługi RMS dla użytkowników indywidualnych
 
 1.  Jeśli używasz komputera z systemem Windows, komputera Mac lub urządzenia przenośnego, przejdź na [stronę usługi Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload).
 
-2.  Wpisz adres e-mail używany dla organizacji, taki jak **joannam@contoso.com** lub **p.michalski@fabrikam.com**.
+2.  Wpisz adres e-mail używany dla organizacji, taki jak **janetm@contoso.com** lub **p.dover@fabrikam.com**.
 
     > [!IMPORTANT]
     > Osobiste konta e-mail nie są obsługiwane, dlatego nie należy wprowadzać konta Microsoft (wcześniej znanego jako konto usługi Microsoft Live ID) ani innego konta osobistego od usługodawcy internetowego, z którego można korzystać w domu.
@@ -37,7 +38,7 @@ Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, 
 
     Firma Microsoft używa Twojego adresu e-mail, aby sprawdzić, czy organizacja już ma [płatną subskrypcję usługi Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) lub [subskrypcję usługi Office 365 z ochroną danych przy użyciu usługi Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli tak, nie potrzebujesz konta usługi RMS dla użytkowników indywidualnych. Nastąpi natychmiastowe zalogowanie, a proces samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych zostanie anulowany. Jeśli płatna subskrypcja nie zostanie znaleziona, nastąpi przejście do następnego kroku.
 
-4.  Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 (support@email.microsoftonline.com) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Information Protection**.
+4.  Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 ((support@email.microsoftonline.com)) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Information Protection**.
 
 5.  Po otrzymaniu tej wiadomości e-mail kliknij pozycję **Tak, to ja**, aby zweryfikować swój adres e-mail i ukończyć proces rejestracji.
 
@@ -47,7 +48,7 @@ Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, 
 
 Teraz konto zostało utworzone i możesz już chronić pliki oraz odczytywać pliki chronione przez innych. Po wyświetleniu monitu o zalogowanie się w celu włączenia ochrony plików lub odczytania chronionych plików wprowadź taki sam adres e-mail i hasło co użyte podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
 
-## Omówienie techniczne procesu tworzenia konta
+## <a name="technical-overview-of-the-signup-process"></a>Omówienie techniczne procesu tworzenia konta
 Usługa RMS dla użytkowników indywidualnych korzysta z samoobsługowego procesu tworzenia konta, który jest również stosowany przez inne usługi używające technologii firmy Microsoft opartych na chmurze do uwierzytelniania użytkowników.
 
 Oto co dzieje się w tle, gdy użytkownik tworzy konto usługi RMS dla użytkowników indywidualnych, a jego organizacja nie ma subskrypcji usługi Office 365 ani platformy Azure, a w związku z tym nie ma na platformie Azure katalogu służącego do uwierzytelniania użytkowników:
@@ -90,13 +91,13 @@ W trakcie tego procesu organizacja nie jest obciążana żadnymi opłatami, a dz
     -   Implementowanie rozwiązania „użyj własnego klucza” (BYOK, bring your own key), aby klucz dzierżawy usługi Azure Rights Management był generowany lokalnie zgodnie z zasadami dotyczącymi infrastruktury IT i bezpiecznie przesyłany do firmy Microsoft za pomocą sprzętowego modułu zabezpieczeń (HSM). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Zobacz [Metody kontrolowania przez administratorów kont utworzonych dla usług RMS dla użytkowników indywidualnych](rms-for-individuals-take-control.md).
 
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

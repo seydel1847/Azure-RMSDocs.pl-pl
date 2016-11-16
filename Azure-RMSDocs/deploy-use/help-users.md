@@ -2,6 +2,7 @@
 title: "Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników, administratorów i działu pomocy technicznej po wdrożeniu i skonfigurowaniu usługi Azure Rights Management z poziomu usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 
 ---
 
-# Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
+# <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -60,7 +61,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
 
 Skorzystaj z poniższych sekcji zawierających informacje dotyczące aplikacji, aby ułatwić użytkownikom ochronę ważnych dokumentów i wiadomości e-mail.
 
-## Korzystanie z ochrony informacji przy użyciu aplikacji do udostępniania usług Rights Management
+## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Korzystanie z ochrony informacji przy użyciu aplikacji do udostępniania usług Rights Management
 Aplikacja Rights Management (RMS) sharing jest wymagana do ochrony i korzystania z zawartości chronionej w przypadku użytkowników pakietu Office 2010, ale jest także zalecana dla wszystkich komputerów i urządzeń przenośnych, które obsługują usługę Azure Rights Management.
 
 Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów aplikacja do udostępniania usługi RMS umożliwia śledzenie dokumentów, które zostały objęte ochroną, i w razie potrzeby odwołanie dostępu do nich.
@@ -72,13 +73,13 @@ Aby uzyskać informacje dotyczące urządzeń przenośnych, zobacz [Często zada
 > [!TIP]
 > Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w artykule [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
-## Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
+## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
 Jeśli używasz usługi Azure Rights Management, a aplikacja do udostępniania usług Rights Management nie została zainstalowana, użytkownicy nie będą widzieli przycisku **Udostępnij chronione** na wstążce ani opcji **Włącz ochronę miejscową** w Eksploratorze plików, które ułatwiają ochronę plików. Tacy użytkownicy muszą wykonać instrukcje podobne do następujących:
 
 > [!TIP]
 > Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
 
-#### Aby chronić dokument w programie Word 2013
+#### <a name="to-protect-a-document-in-word-2013"></a>Aby chronić dokument w programie Word 2013
 
 1.  W programie Microsoft Word utwórz nowy dokument.
 
@@ -91,7 +92,7 @@ Jeśli używasz usługi Azure Rights Management, a aplikacja do udostępniania u
 
 Po otwarciu dokumentu przez innych użytkowników najpierw zostanie wykonane ich uwierzytelnienie. Jeśli użytkownik nie jest uprawniony do otwierania tego dokumentu, dokument nie zostanie otwarty. Jeśli użytkownik jest uprawniony do otwierania tego dokumentu, dokument zostanie otwarty z ograniczonymi prawami użytkowania określonymi dla danego użytkownika. Na przykład prawo użytkowania Tylko do wyświetlania nie zezwala na edycję lub zapis dokumentu przez użytkownika, nawet jeśli plik zostanie wcześniej skopiowany do innej lokalizacji. Prawa użytkowania są wyświetlane w górnej części dokumentu na transparencie informującym o ograniczeniach. Na transparencie mogą zostać wyświetlone uprawnienia zastosowane do dokumentu lub link umożliwiający ich wyświetlenie.
 
-#### Aby chronić wiadomość e-mail przy użyciu programu Outlook 2013 i usługi Exchange Online
+#### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>Aby chronić wiadomość e-mail przy użyciu programu Outlook 2013 i usługi Exchange Online
 
 1.  W programie Outlook utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
@@ -101,7 +102,7 @@ Po otwarciu dokumentu przez innych użytkowników najpierw zostanie wykonane ich
 
 Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi prawami użytkowania, które zostały określone dla danego użytkownika. Na przykład, jeśli została wybrana opcja **Nie przesyłaj dalej**, na wstążce nie będzie dostępny przycisk Prześlij dalej.
 
-#### Aby chronić wiadomość e-mail przy użyciu aplikacji Outlook Web App
+#### <a name="to-protect-an-email-message-using-the-outlook-web-app"></a>Aby chronić wiadomość e-mail przy użyciu aplikacji Outlook Web App
 
 1.  W aplikacji Outlook Web App utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
@@ -115,6 +116,6 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

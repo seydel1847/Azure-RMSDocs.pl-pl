@@ -2,6 +2,7 @@
 title: Samouczek Szybki start krok 1 | Azure Information Protection
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
 
 
 ---
 
-# Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -39,7 +40,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy.png)
 
-## Zmiana ustawień globalnych szablonu domyślnego i monit o uzasadnienie
+## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>Zmiana ustawień globalnych szablonu domyślnego i monit o uzasadnienie
 
 W naszym samouczku zmienimy kilka ustawień globalnych, aby zobaczyć, jak działają:
 
@@ -47,7 +48,7 @@ W naszym samouczku zmienimy kilka ustawień globalnych, aby zobaczyć, jak dzia�
 
 2. Dla opcji **Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę** wybierz wartość **Włączone**.
 
-## Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
 
 Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
@@ -121,6 +122,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

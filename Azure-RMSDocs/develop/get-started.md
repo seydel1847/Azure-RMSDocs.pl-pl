@@ -3,6 +3,7 @@ title: Rozpoczynanie pracy | Azure RMS
 description: "Przewodnik Szybki start po pierwszej aplikacji obejmuje przewodniki konfiguracji środowisk deweloperskich dla poszczególnych systemów operacyjnych/platform."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 6e05b2c7444b5440d80bf5c4764b5ada554bbdc7
 
 
 ---
 
-# Wprowadzenie
+# <a name="get-started"></a>Wprowadzenie
 
 W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do pierwszej aplikacji obejmuje przewodniki konfiguracji środowisk deweloperskich dla poszczególnych systemów operacyjnych/platform. Rozpocznij tworzenie aplikacji obsługującej prawa:
 
@@ -38,9 +39,9 @@ W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do
 2. **Przejdź do przewodnika konfiguracji** dla danego systemu operacyjnego.
 
   Przewodniki konfiguracji prowadzą użytkownika przez konfigurowanie środowiska deweloperskiego w celu tworzenia własnych aplikacji.
-  - [Konfiguracja w systemie Android](android-sdk.md)
-  - [Konfiguracja w systemach iOS i OS X](ios-sdk.md)          
-  - [Konfiguracja w systemie Linux](linux-setup.md)              
+  - [Konfiguracja systemu Android](android-sdk.md)
+  - [Konfiguracja systemów iOS i OS X](ios-sdk.md)          
+  - [Konfiguracja systemu Linux](linux-setup.md)              
   - [Windows Phone](windows-phone-apps.md)     
   - [Aplikacje ze Sklepu Windows](winrt-sdk.md)
 
@@ -56,6 +57,6 @@ W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

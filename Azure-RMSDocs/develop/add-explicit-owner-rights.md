@@ -3,6 +3,7 @@ title: "Jak dodać jawne prawa właściciela | Azure RMS"
 description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
-ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2fa260480eaa26a529a058b597657216572b4cb8
 
 
 ---
 
-# Instrukcje: dodawanie jawnych praw właściciela
+# <a name="howto-add-explicit-owner-rights"></a>Instrukcje: dodawanie jawnych praw właściciela
 
 W przypadku tworzenia licencji od podstaw przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) w aplikacji należy jawnie dodać prawa „właściciela”.
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 Gdy aplikacja tworzy dojście licencji przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx), musi również jawnie przyznać pełne prawa (uprawnienia) właściciela.
 
@@ -33,9 +34,9 @@ Gdy aplikacja tworzy dojście licencji przy użyciu funkcji [IpcCreateLicenseFro
 
 Ten przykładowy kod przedstawia tylko kroki związane z tworzeniem i dodawaniem określonych praw do danej licencji.
 
-## Instrukcje
+## <a name="instructions"></a>Instrukcje
  
-## Krok 1. Przykładowy scenariusz
+## <a name="step-1-example-scenario"></a>Krok 1. Przykładowy scenariusz
 
 W tym przykładzie potrzebne prawa są dodawane do licencji utworzonej przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx). W przykładzie pokazano tworzenie i przypisywanie praw do licencji za pomocą listy praw.
 
@@ -105,7 +106,7 @@ Następujące dwa uprawnienia są dodawane do tych użytkowników:
 
 
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 - [Uwagi dla deweloperów](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
@@ -116,6 +117,6 @@ Następujące dwa uprawnienia są dodawane do tych użytkowników:
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

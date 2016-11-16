@@ -2,6 +2,7 @@
 title: "Dane administratora i pomoc techniczna dla usługi Azure Information Protection | Azure Information Protection"
 description: "Zasoby dla administratorów, w tym informacje na temat nowych wersji, opcji pomocy technicznej oraz sposobu kontaktu z firmą Microsoft w celu zgłoszenia problemu."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/13/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
-ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 4f0e3fbfd5caee7a5ea3fc40d8519a5e34d78cb5
 
 
 ---
 
-# Informacje i pomoc techniczna dla usługi Azure Information Protection
+# <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -32,16 +33,16 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 |Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
-## Informacje o nowych wersjach
+## <a name="information-about-new-releases"></a>Informacje o nowych wersjach
 Grupa produktu usługi Information Protection publikuje powiadomienia o nowych wersjach i aktualizacjach na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services). Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
 
 > [!TIP]
 > Jeśli tworzysz aplikacje korzystające z usług Microsoft Rights Management (Azure RMS lub AD RMS), być może zainteresuje Cię [blog Developer's Corner dotyczący usług Active Directory Rights Management (AD RMS)](https://blogs.msdn.microsoft.com/rms/).
 
-## Opcje pomocy technicznej i zasoby społecznościowe
+## <a name="support-options-and-community-resources"></a>Opcje pomocy technicznej i zasoby społecznościowe
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
 
-### Aby skontaktować się z pomocą techniczną firmy Microsoft
+### <a name="to-contact-microsoft-support"></a>Aby skontaktować się z pomocą techniczną firmy Microsoft
 
 Jeśli korzystasz z pomocy technicznej Premium, odwiedź [portal dla klientów pomocy technicznej Premium](https://premier.microsoft.com/), w którym można przesyłać zdarzenia, przeglądać rozwiązania i uzyskać pomoc.
 
@@ -59,7 +60,7 @@ Pozostali klienci powinni użyć następujących kanałów pomocy technicznej, w
 
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
 
-### Samodzielna pomoc
+### <a name="selfhelp"></a>Samodzielna pomoc
 
 Filmy wideo na żądanie:
 
@@ -79,7 +80,7 @@ Rozwiązywanie problemów:
 
 - Na potrzeby zautomatyzowanego sprawdzania, automatycznego korygowania i śledzenia pobierz i uruchom [narzędzie RMS Analyzer Tool](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
 
-### Zasoby społeczności
+### <a name="community-resources"></a>Zasoby społeczności
 
 -   [Yammer: Azure Information Protection](http://www.yammer.com/AskIPTeam)
 
@@ -90,6 +91,6 @@ Rozwiązywanie problemów:
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

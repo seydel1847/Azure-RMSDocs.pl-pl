@@ -2,6 +2,7 @@
 title: Konfigurowanie zasad | Azure Information Protection
 description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 472541f32c429eea34ea0afb76905bee8abf9747
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
 
 
 ---
 
-# Konfigurowanie zasad usługi Azure Information Protection
+# <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -51,7 +52,7 @@ Po zakończeniu wprowadzania żądanych zmian kliknij przycisk **Opublikuj**.
 
 Klient usługi Azure Information Protection sprawdza zmiany podczas uruchamiania obsługiwanej aplikacji pakietu Office i pobiera zmiany jako zasady usługi Azure Information Protection.
 
-## Konfigurowanie zasad organizacji
+## <a name="configuring-your-organizations-policy"></a>Konfigurowanie zasad organizacji
 
 Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Information Protection:
 
@@ -71,13 +72,13 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej](configure-policy-classification.md)
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

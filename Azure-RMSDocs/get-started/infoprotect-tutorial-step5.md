@@ -3,6 +3,7 @@ title: Samouczek Szybki start krok 5 | Azure Information Protection
 description: "Krok 5 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -13,14 +14,14 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1af9f3b3451bf8ceafbaf3cddd2b26c37fe9d597
-ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5844ddd3f675cdc5a88de3abc3170d7e8a89aee9
 
 
 ---
 
 
-# Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -28,7 +29,7 @@ W tym ostatnim kroku samouczka odszukaj utworzony wcześniej dokument programu W
 
 Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail. 
 
-## Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
+## <a name="to-safely-share-your-document-by-email"></a>Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
 
 1.  Otwórz dokument w programie Word. Zobaczysz, że ponownie zastosowano automatycznie domyślną etykietę **Wewnętrzny**. 
 
@@ -40,7 +41,7 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 5 — okno dialogowe Udostępnianie chronionej zawartości](../media/example-share-protected-dialog.png)
 
-3. W polu **UŻYTKOWNICY** wprowadź co najmniej jeden służbowy adres e-mail, jak w przypadku wysyłania dokumentu do osoby, z którą współpracuje organizacja. Możesz też wpisać adres e-mail współpracownika. Upewnij się, że podajesz służbowe adresy e-mail, np. **joannam@contoso.com** lub **pmichalski@fabrikam.com**, ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail. 
+3. W polu **UŻYTKOWNICY** wprowadź co najmniej jeden służbowy adres e-mail, jak w przypadku wysyłania dokumentu do osoby, z którą współpracuje organizacja. Możesz też wpisać adres e-mail współpracownika. Upewnij się, że podajesz służbowe adresy e-mail, np. **janetm@contoso.com** or **p.dover@fabrikam.com**, ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail. 
 
     Nie musisz martwić się tym, czy odbiorca wiadomości również ma usługę Azure Information Protection.
 
@@ -68,13 +69,13 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
 Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o jego odebranie i otworzenie. Nie zamykaj jednak programu Word, ponieważ będziemy z niego korzystać ponownie w ostatnim kroku związanym ze śledzeniem udostępnionego dokumentu.
 
-## Poproś odbiorców o otworzenie przesłanego dokumentu
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>Poproś odbiorców o otworzenie przesłanego dokumentu
 
 Odbiorcy mogą użyć różnych urządzeń do odczytania chronionego dokumentu wysłanego w załączniku do wiadomości e-mail. Mogą to zrobić na urządzeniach iPad, iPhone, tabletach i telefonach z systemem Android, komputerach Mac i komputerach z systemem Windows.
 
 Poproś odbiorców o odczytanie wysłanej wiadomości e-mail. Przy założeniu, że jest to pierwszy raz, kiedy otrzymali załączniki chronione przez usługę Rights Management, poproś ich o kliknięcie linku do instrukcji. Spowoduje to wyświetlenie strony [Witamy w usłudze Microsoft RMS!](https://portal.azurerms.com/#/rmshelp) zawierającej instrukcje związane z instalacją aplikacji RMS sharing. W razie potrzeby będą mogli się zarejestrować i uzyskać bezpłatne konto. Następnie będą mogli odczytać chroniony załącznik.
 
-### Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
 
 1. Otwórz jeden z załączników, aby przeczytać dokument:
     
@@ -86,7 +87,7 @@ Poproś odbiorców o odczytanie wysłanej wiadomości e-mail. Przy założeniu, 
     
         - Otwórz dokument o rozszerzeniu **ppdf**.
 
-2.  Jeśli zobaczysz monit o podanie nazwy użytkownika i hasła, podaj nazwę użytkownika w takim samym formacie jak format adresu e-mail użytego do wysłania tej wiadomości e-mail i załącznika. Na przykład **joannam@contoso.com** lub **pmichalski@fabrikam.com**. Wpisz hasło podane podczas rejestracji w usłudze RMS dla użytkowników indywidualnych. Lub, jeśli organizacja ma usługę w chmurze, taką jak Office 365, lub też używa platformy Azure, wprowadź zwykłe hasło służbowe.
+2.  Jeśli zobaczysz monit o podanie nazwy użytkownika i hasła, podaj nazwę użytkownika w takim samym formacie jak format adresu e-mail użytego do wysłania tej wiadomości e-mail i załącznika. Na przykład **janetm@contoso.com** lub **p.dover@fabrikam.com**. Wpisz hasło podane podczas rejestracji w usłudze RMS dla użytkowników indywidualnych. Lub, jeśli organizacja ma usługę w chmurze, taką jak Office 365, lub też używa platformy Azure, wprowadź zwykłe hasło służbowe.
 
 3. Odczytaj zawartość dokumentu po jego otwarciu. Jako że dokument jest plikiem tylko do odczytu, nie możesz zmieniać jego zawartości.
 
@@ -94,7 +95,7 @@ Opcjonalnie odbiorca może przesłać wiadomość e-mail dalej do innych osób, 
 
 Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu do innej osoby) możesz oczekiwać na powiadomienie e-mail z raportem o tym działaniu. Jednak wiadomości e-mail mogą się z czasem zagubić, dlatego lepszym sposobem na śledzenie dostępu do dokumentu jest użycie witryny śledzenia dokumentu. Metoda ta jest omówiona w ostatnim kroku samouczka.
 
-## Aby śledzić chroniony dokument
+## <a name="to-track-your-protected-document"></a>Aby śledzić chroniony dokument
 
 1.  W programie Word na karcie **Narzędzia główne** w grupie **RMS** kliknij pozycję **Udostępnij chronioną zawartość**, a następnie kliknij pozycję **Śledź użycie** w menu:
 
@@ -124,7 +125,7 @@ Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą
 |Informacje o korzystaniu z witryny śledzenia dokumentów|[Śledzenie i odwoływanie dokumentów](../rms-client/sharing-app-track-revoke.md)
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Po zapoznaniu się z domyślnymi zasadami usługi Azure Information Protection i sposobami ich dostosowywania oraz z działaniem etykietowania dla programu Word poeksperymentuj z innymi ustawieniami i zobacz, jak działają w innych aplikacjach pakietu Office obsługujących usługę Azure Information Protection: Excel, PowerPoint i Outlook. Jeśli te aplikacje były otwarte podczas instalowania klienta Azure Information Protection, zamknij je i otwórz przed podjęciem próby używania usługi Azure Information Protection.
 
@@ -133,6 +134,6 @@ Spróbuj udostępnić więcej dokumentów i śledź ich użycie oraz potwierdź 
 Następnie przydatne może być przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md). 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

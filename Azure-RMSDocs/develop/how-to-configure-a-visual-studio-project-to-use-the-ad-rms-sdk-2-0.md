@@ -3,6 +3,7 @@ title: Konfigurowanie programu Visual Studio | Azure RMS
 description: "Instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,23 +15,23 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 28286a4c8a5fcc602afba5975cfe5133e8b6c55b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 91efe573952d70613b3d52c7ee879da5c807da8e
 
 
 ---
 
-# Konfigurowanie programu Visual Studio
+# <a name="configure-visual-studio"></a>Konfigurowanie programu Visual Studio
 
 Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z zestawu Rights Management Services SDK 2.1.
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 -   [Instalacja zestawu SDK](install-the-rms-sdk.md)
 
 **Instrukcje**
 
-### Krok 1. Skonfigurowanie projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rms-sdk-21"></a>Krok 1. Skonfigurowanie projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1
 
 Te instrukcje dotyczą programu Microsoft Visual Studio 2010. Jeśli używasz innej wersji programu Microsoft Visual Studio, okna dialogowe ustawień mogą wyglądać nieco inaczej.
 
@@ -69,7 +70,7 @@ Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
     ![Pole plików zasobów eksploratora rozwiązań](../media/original_file_name.png)
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Instalacja zestawu SDK](install-the-rms-sdk.md)
  
@@ -78,6 +79,6 @@ Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

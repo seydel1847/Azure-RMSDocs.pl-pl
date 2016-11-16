@@ -2,6 +2,7 @@
 title: "Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint | Azure Information Protection"
 description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika ochrona usługi Azure Rights Management jest używana w celu zapewnienia kontroli nad dokumentami pakietu Office przechowywanymi w programie SharePoint za pomocą bibliotek chronionych."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
-ms.openlocfilehash: e0e6442e077d6899cbbf88ae2889908e93592815
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 371e566a166dad74b55266db23e034f926942a26
 
 
 ---
 
-# Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint
+# <a name="scenario-retain-control-of-documents-stored-in-sharepoint"></a>Scenariusz — zachowanie kontroli nad dokumentami przechowywanymi w programie SharePoint
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -32,12 +33,12 @@ Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
 -   Pracownicy nie muszą udostępniać tych dokumentów osobom spoza organizacji.
 
-## Instrukcje dotyczące wdrażania
+## <a name="deployment-instructions"></a>Instrukcje dotyczące wdrażania
 ![Instrukcje dla administratora dotyczące szybkiego wdrażania usługi Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Zanim przejdziesz do dokumentacji użytkownika, upewnij się, że zostały spełnione następujące wymagania i wykonano procedury pomocnicze.
 
-## Wymagania dotyczące tego scenariusza
+## <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 Aby zrealizować ten scenariusz, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
@@ -48,7 +49,7 @@ Aby zrealizować ten scenariusz, należy spełnić następujące wymagania:
 |Należy skonfigurować uprawnienia do chronionej witryny programu SharePoint.|[Zarządzanie uprawnieniami dotyczącymi listy, biblioteki, folderu, dokumentu lub elementu listy](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 |Należy skonfigurować program SharePoint na potrzeby usługi IRM i bibliotek chronionych.|[Konfigurowanie usługi Zarządzanie prawami do informacji w centrum administracyjnym programu SharePoint](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[Stosowanie usługi Zarządzanie prawami do informacji w odniesieniu do listy lub biblioteki](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
-### Aby skonfigurować ustawienia biblioteki programu SharePoint dla usługi IRM
+### <a name="to-configure-the-sharepoint-library-for-irm-settings"></a>Aby skonfigurować ustawienia biblioteki programu SharePoint dla usługi IRM
 
 1.  Po skonfigurowaniu programu SharePoint do korzystania z usługi IRM przejdź do biblioteki programu SharePoint, która ma być chroniona za pomocą usługi Azure RMS. Na stronie witryny **Ustawienia** &gt; **Zarządzanie prawami do informacji (IRM)** wybierz opcję **Ogranicz uprawnienia do tej biblioteki podczas pobierania**, określ tytuł zasad dla administratorów i opisy zasad dla użytkowników, a następnie kliknij przycisk **POKAŻ OPCJE**.
 
@@ -60,7 +61,7 @@ Aby zrealizować ten scenariusz, należy spełnić następujące wymagania:
 
         Bez tej opcji tylko użytkownicy, którzy mają dostęp do biblioteki programu SharePoint, będą mogli współpracować nad tymi dokumentami i to wyłącznie przez pobranie ich bezpośrednio z programu SharePoint. W wielu przypadkach to ograniczenie jest słuszne.
 
-## Instrukcje w dokumentacji użytkownika
+## <a name="user-documentation-instructions"></a>Instrukcje w dokumentacji użytkownika
 W tym scenariuszu nie ma żadnych przeznaczonych dla użytkowników instrukcji związanych z procedurami, ponieważ biblioteki chronione nie wymagają żadnych specjalnych działań ze strony użytkowników. Dokumenty są chronione automatycznie podczas pobierania zgodnie z uprawnieniami, które administrator programu SharePoint ustawi dla witryny. Należy jednak poinformować użytkowników o tej zmianie, aby wiedzieli, czego mogą się spodziewać. Natomiast dział pomocy technicznej powinien otrzymać informacje o tym, które biblioteki są chronione i jakim ograniczeniom podlega korzystanie z dokumentów. Na przykład ze względu na bieżące ograniczenia dokumenty mogą być wyświetlane, ale nie edytowane na urządzeniach przenośnych. Jeśli została skonfigurowana ochrona grupy, powiadom użytkowników, które grupy mają dostęp do dokumentów i mogą je edytować poza programem SharePoint.
 
 Przy użyciu następującego szablonu skopiuj i wklej powiadomienie do wiadomości dla użytkowników końcowych i wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
@@ -77,7 +78,7 @@ W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dos
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Powiadomienie działu IT: zmiany w witrynie &lt;nazwa biblioteki programu SharePoint&gt;
+### <a name="it-announcement-changes-to-the-ltname-of-sharepoint-librarygt-site"></a>Powiadomienie działu IT: zmiany w witrynie &lt;nazwa biblioteki programu SharePoint&gt;
 Witryna programu SharePoint **&lt;nazwa biblioteki programu SharePoint&gt;** została skonfigurowana pod kątem bezpiecznej współpracy. Obecnie tylko członkowie grupy &lt;nazwa grupy&gt; mogą otwierać dokumenty z tej witryny, nawet jeśli zostaną one zapisane lokalnie lub przesłane pocztą e-mail do innej osoby. Wyjątek stanowi możliwość udostępniania tych dokumentów po ich pobraniu członkom grupy &lt;nazwa grupy&gt;, aby &lt;przyczyna przyznania tej grupie uprawnień dostępu w celu współpracy nad plikami, ale nie przy użyciu biblioteki programu SharePoint&gt;. Podczas edycji plików u góry dokumentu widoczny jest żółty baner informujący o tym, że dokument podlega ochronie, i określający osoby, które mają do niego dostęp.
 
 Ta zmiana pomaga w zabezpieczeniu poufnych danych firmy przed dostępem osób niepowołanych. W przypadku uzyskiwania dostępu do dokumentów chronionych na urządzeniu przenośnym możesz je przeglądać, ale edycja jest możliwa wyłącznie na komputerze stacjonarnym.
@@ -88,10 +89,10 @@ Nie można przekazywać do witryny &lt;nazwa witryny programu SharePoint&gt; dok
 
 -   Skontaktuj się z działem pomocy technicznej: &lt;dane kontaktowe&gt;
 
-### Przykładowa dokumentacja użytkownika
+### <a name="example-user-documentation"></a>Przykładowa dokumentacja użytkownika
 ![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Powiadomienie działu IT: zmiany w witrynie Prognozy i raporty dotyczące sprzedaży
+#### <a name="it-announcement-changes-to-the-sales-forecasts-and-reports-site"></a>Powiadomienie działu IT: zmiany w witrynie Prognozy i raporty dotyczące sprzedaży
 Witryna programu SharePoint **Prognozy i raporty dotyczące sprzedaży** została skonfigurowana pod kątem bezpiecznej współpracy. Obecnie tylko członkowie naszego zespołu Sprzedaż i marketing mogą otwierać dokumenty z tej witryny, nawet jeśli zostaną one zapisane lokalnie lub przesłane pocztą e-mail do innej osoby. Wyjątek stanowi możliwość udostępniania tych dokumentów po ich pobraniu członkom zespołu Finanse, aby mogli wyodrębnić prognozowane wartości miesięczne. Podczas edycji plików u góry dokumentu widoczny jest żółty baner informujący o tym, że dokument podlega ochronie, i określający osoby, które mają do niego dostęp.
 
 Ta zmiana pomaga w zabezpieczeniu poufnych danych firmy przed dostępem osób niepowołanych. W przypadku uzyskiwania dostępu do dokumentów chronionych na urządzeniu przenośnym możesz je przeglądać, ale edycja jest możliwa wyłącznie na komputerze stacjonarnym.
@@ -100,11 +101,11 @@ Nie można przekazywać do witryny Prognozy i raporty dotyczące sprzedaży doku
 
 **Potrzebujesz pomocy?**
 
--   Skontaktuj się z działem pomocy technicznej: pomoc_techniczna@vanarsdelltd.com
+-   Skontaktuj się z działem pomocy technicznej: helpdesk@vanarsdelltd.com
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

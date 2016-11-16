@@ -2,6 +2,7 @@
 title: Samouczek Szybki start krok 3 | Azure Information Protection
 description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: b5c87669c965d1e67b47dcfbd8ba97f1da41d104
-ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 496f086d4db43a69ef0acca579b290286a5b9e5b
 
 
 ---
 
-# Krok 3. Instalowanie klienta i aplikacji 
+# <a name="step-3-install-the-client-and-application"></a>Krok 3. Instalowanie klienta i aplikacji 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -27,7 +28,7 @@ Następnie nastąpi instalacja aplikacji RMS sharing umożliwiającej bezpieczne
 Obie te instalacje integrują się z aplikacjami pakietu Office i obecnie konieczna jest ich oddzielna instalacja.
 
 
-## Instalowanie klienta usługi Azure Information Protection
+## <a name="install-the-azure-information-protection-client"></a>Instalowanie klienta usługi Azure Information Protection
 
 1. Na komputerze z zainstalowanym pakietem Office (program Word nie może być otwarty) [pobierz klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) z Centrum pobierania firmy Microsoft. 
 
@@ -35,7 +36,7 @@ Obie te instalacje integrują się z aplikacjami pakietu Office i obecnie koniec
 
     W przypadku tego samouczka nie ma znaczenia, czy wybierzesz opcję instalacji zasady demonstracyjnej, ponieważ nasza właśnie skonfigurowana zasada zostanie pobrana z systemu Azure i zastąpi zasadę demonstracyjną, jeśli ją zainstalowano. Można jednak użyć opcji zasady demonstracyjnej, jeśli chcesz po prostu zapoznać się z etykietami domyślnymi bez nawiązywania połączenia z usługą Azure Information Protection. 
 
-## Instalowanie aplikacji RMS sharing 
+## <a name="install-the-rights-management-sharing-application"></a>Instalowanie aplikacji RMS sharing 
 
 1. Przejdź do strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) w witrynie firmy Microsoft w sieci Web.
 
@@ -44,7 +45,7 @@ Obie te instalacje integrują się z aplikacjami pakietu Office i obecnie koniec
 3. Na stronie **Instalacja usług Microsoft RMS** kliknij pozycję **Dalej** i poczekaj na zakończenie instalacji. Następnie kliknij pozycję **Uruchom ponownie**, jeśli zostanie wyświetlony monit o ponowne uruchomienie komputera, lub kliknij pozycję **Zamknij** w celu zakończenia instalacji.
 
 
-## Sprawdź instalacje
+## <a name="verify-the-installations"></a>Sprawdź instalacje
 
 Sprawdź, czy instalacje zakończyły się pomyślnie, otwierając program Word i nowy pusty dokument (nie należy go w tym momencie zapisywać). Jeśli zostanie wyświetlony monit, aby wprowadzić nazwę użytkownika i hasło, wprowadź szczegóły konta administratora globalnego. 
 
@@ -74,6 +75,6 @@ Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 [Krok 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Serwer usług AD RMS | Azure RMS"
 description: "Składnik serwera usług Rights Management Services (RMS) jest implementowany przez zestaw usług sieci Web, które działają na bazie usługi Microsoft Internet Information Services."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 498a06a65d61417600cd5501a0d04935cb733c37
 
 
 ---
 
-# Serwer
+# <a name="server"></a>Serwer
 
 W tym temacie opisano przeznaczenie i funkcje serwera usług RMS na potrzeby platformy Azure i systemu Windows Server.
 
@@ -42,7 +43,7 @@ Wśród wielu zainstalowanych usług sieci Web następujące usługi są ważne 
 |Certyfikacja wstępna | Umożliwia serwerowi żądanie *certyfikatu konta praw* w imieniu użytkownika. Usługa działa na głównych serwerach certyfikacji i serwerach licencjonowania.|
 |Lokalizator usług | Określa adres URL usług certyfikacji kont, licencjonowania i publikowania dla usługi Active Directory, aby te usługi mogły być odnajdowane przez klientów usług RMS. Usługa działa na głównych serwerach certyfikacji i serwerach licencjonowania.|
 
-## Tematy pokrewne ##
+## <a name="related-topics"></a>Tematy pokrewne ##
 * [Przegląd](ad-rms-overview.md)
 * [Usługi Microsoft Internet Information Services](http://www.iis.net/overview)
 * [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
@@ -58,6 +59,6 @@ Wśród wielu zainstalowanych usług sieci Web następujące usługi są ważne 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

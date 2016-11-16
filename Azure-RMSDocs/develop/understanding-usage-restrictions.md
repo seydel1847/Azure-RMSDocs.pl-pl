@@ -3,6 +3,7 @@ title: "Opis ograniczeń użycia | Azure RMS"
 description: "Wszystkie aplikacje z obsługą usługi RMS muszą wymuszać ograniczenia użycia."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
-ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cc383728d487cac45e59ef34ca43ba47c4db237b
 
 
 ---
 
-# Opis ograniczeń użycia
+# <a name="understanding-usage-restrictions"></a>Opis ograniczeń użycia
 
 Wszystkie aplikacje z obsługą usługi RMS muszą wymuszać ograniczenia użycia. Ograniczenie użycia ma miejsce, gdy użytkownik próbuje wykonać akcję (np. wydrukować dokument), ale zasady usług RMS dla tego dokumentu nie przyznają uprawnienia lub prawa do wykonania tej akcji (np. prawa PRINT).
 
 Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcji [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx).
 
-## Opis ograniczeń użycia
+## <a name="understanding-usage-restrictions"></a>Opis ograniczeń użycia
 
 -   Zapoznaj się ze standardowymi prawami usług RMS
 
@@ -46,7 +47,7 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
     Wskazówki dotyczące sposobu wymuszania określonych praw można znaleźć w temacie [Informacje o ograniczeniach użycia](usage-restriction-reference.md).
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [Informacje o ograniczeniach użycia](usage-restriction-reference.md)
@@ -56,6 +57,6 @@ Uprawnienia użytkownika do danego dokumentu można sprawdzać za pomocą funkcj
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

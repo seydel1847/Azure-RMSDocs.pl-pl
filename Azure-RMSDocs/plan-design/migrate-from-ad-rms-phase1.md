@@ -2,6 +2,7 @@
 title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 1 | Azure Information Protection"
 description: "Faza 1 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca kroki od 1 do 4 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,20 +13,20 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
 
 
 ---
 
-# Faza 1 migracji — konfiguracja po stronie serwera dla usług AD RMS
+# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>Faza 1 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 Skorzystaj z poniższych informacji dotyczących fazy 1 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 1 do 4 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool
+## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool
 Przejdź do Centrum pobierania Microsoft i pobierz narzędzie [Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), które zawiera moduł administracyjny usługi Azure Rights Management dla programu Windows PowerShell. Usługa Azure Rights Management (Azure RMS) udostępnia funkcję ochrony danych dla usługi Azure Information Protection.
 
 Zainstaluj narzędzie. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
@@ -33,14 +34,14 @@ Zainstaluj narzędzie. Instrukcje znajdują się w sekcji [Instalowanie programu
 > [!NOTE]
 > Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż 2.5.0.0: `(Get-Module aadrm -ListAvailable).Version`
 
-## Krok 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure Information Protection
+## <a name="step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>Krok 2. Eksportowanie danych konfiguracji z usługi AD RMS i importowanie ich do usługi Azure Information Protection
 Ten krok to proces składający się z dwóch części:
 
 1.  Eksportowanie danych konfiguracji z usług AD RMS przez eksportowanie zaufanych domen publikacji do pliku XML. Ten proces przebiega tak samo w przypadku wszystkich migracji.
 
 2.  Importowanie danych konfiguracji do usługi Azure Information Protection. W zależności od bieżącej konfiguracji wdrożenia usług AD RMS i preferowanej topologii klucza dzierżawy usługi Azure RMS ten krok może składać się z różnych procesów.
 
-### Eksportowanie danych konfiguracji z usług AD RMS
+### <a name="export-the-configuration-data-from-ad-rms"></a>Eksportowanie danych konfiguracji z usług AD RMS
 
 > [!IMPORTANT]
 > Przed wykonaniem tej procedury potwierdź, że serwery AD RMS działają w trybie kryptograficznym 2. Jest to wymagane dla usługi Azure Information Protection.
@@ -56,7 +57,7 @@ Ten krok to proces składający się z dwóch części:
 
 Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
-#### Aby eksportować dane konfiguracji (informacje z zaufanej domeny publikacji)
+#### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>Aby eksportować dane konfiguracji (informacje z zaufanej domeny publikacji)
 
 1.  Zaloguj się do klastra AD RMS jako użytkownik z uprawnieniami administratora usług AD RMS.
 
@@ -74,7 +75,7 @@ Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla
 
 Po wyeksportowaniu wszystkich zaufanych domen publikacji możesz rozpocząć wykonywanie procedury importowania tych danych do usługi Azure Information Protection.
 
-### Importowanie danych konfiguracji do usługi Azure Information Protection
+### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importowanie danych konfiguracji do usługi Azure Information Protection
 W zależności od bieżącej konfiguracji wdrożenia usługi AD RMS i preferowanej topologii klucza dzierżawy usługi Azure Information Protection ten krok może obejmować różne procedury.
 
 W bieżącym wdrożeniu usług AD RMS będzie używana jedna z następujących konfiguracji klucza certyfikatu licencjodawcy serwera (SLC):
@@ -118,7 +119,7 @@ Aby wykonać krok 2, wybierz instrukcje dotyczące ścieżki migracji:
 - [Klucz chroniony przez moduł HSM do klucza chronionego przez oprogramowanie](migrate-softwarekey-to-hsmkey.md)
 
 
-## Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection
+## <a name="step-3-activate-your-azure-information-protection-tenant"></a>Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection
 W tym kroku należy aktywować usługę Azure Rights Management. Odpowiednie instrukcje zostały szczegółowo opisane w artykule [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 
@@ -131,7 +132,7 @@ Jeśli dzierżawa usługi Azure Information Protection została już aktywowana 
 
 Ponadto jeśli utworzono szablony niestandardowe, które mają zostać użyte po migracji, należy je wyeksportować i zaimportować. Ta procedura została opisana w następnym kroku. 
 
-## Krok 4. Konfigurowanie importowanych szablonów
+## <a name="step-4-configure-imported-templates"></a>Krok 4. Konfigurowanie importowanych szablonów
 Ze względu na to, że zaimportowane szablony mają domyślny stan **Zarchiwizowano**, należy zmienić ten stan na **Opublikowano**, aby użytkownicy mogli używać tych szablonów w usłudze Azure Rights Management.
 
 Szablony, które można importować z usług AD RMS, wyglądają i działają tak samo jak niestandardowe szablony tworzone w klasycznym portalu Azure. W celu zmiany stanu importowanych szablonów na Opublikowano, aby użytkownicy mogli je widzieć i wybierać w aplikacjach, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
@@ -144,7 +145,7 @@ Zmiany szablonu, których wprowadzenie może być konieczne w ramach tego kroku:
 
 - Jeśli szablony w usługach AD RMS używają grupy **KAŻDY**, należy ręcznie dodać równoważne grupy i prawa.
 
-## Procedura w przypadku utworzenia szablonów niestandardowych przed migracją
+## <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedura w przypadku utworzenia szablonów niestandardowych przed migracją
 
 Jeśli szablony niestandardowe zostały utworzone przed rozpoczęciem migracji (przed aktywowaniem usługi Azure Rights Management lub po jej aktywowaniu), nie będą one dostępne dla użytkowników po zakończeniu migracji, nawet jeśli ich stan został ustawiony na **Opublikowano**. Aby były one dostępne dla użytkowników, najpierw należy wykonać następujące czynności: 
 
@@ -157,9 +158,9 @@ Jeśli szablony niestandardowe zostały utworzone przed rozpoczęciem migracji (
 Następnie można opublikować lub zarchiwizować te szablony w taki sam sposób, jak w przypadku każdego innego szablonu utworzonego po migracji.
 
 
-## Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
+## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
 
-Jeśli w przypadku szablonów w usłudze AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure Information Protection. Do zaimportowanych szablonów należy ręcznie dodać równoważną grupę lub równoważnych użytkowników oraz te same prawa. Odpowiednik tej grupy dla usługi Azure Information Protection nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nazwa_dzierżawy>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso nazwa firmy może wyglądać następująco: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Jeśli w przypadku szablonów w usłudze AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure Information Protection. Do zaimportowanych szablonów należy ręcznie dodać równoważną grupę lub równoważnych użytkowników oraz te same prawa. Równoważna grupa dla usługi Azure Information Protection nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
 Jeśli nie masz pewności, czy szablony AD RMS obejmują grupę KAŻDY, możesz użyć następującego przykładowego skryptu programu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o korzystaniu z programu Windows PowerShell z usługami AD RMS, zobacz temat [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Administrowanie usługami AD RMS przy użyciu programu Windows PowerShell).
 
@@ -175,7 +176,7 @@ Grupę automatycznie utworzoną w organizacji można zobaczyć po skopiowaniu je
 > Z powodu tej różnicy między dwiema grupami oprócz grupy „AllStaff” konieczne może być także dodanie użytkowników zewnętrznych. Zewnętrzne adresy e-mail dla grup nie są obecnie obsługiwane.
 
 
-### Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
+### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
 Ta sekcja zawiera przykładowy skrypt, który ułatwia zidentyfikowanie szablonów usług AD RMS ze zdefiniowaną grupą KAŻDY, zgodnie z opisem w poprzedniej sekcji.
 
 **Zastrzeżenie:** ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
@@ -213,12 +214,12 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase2.md).
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

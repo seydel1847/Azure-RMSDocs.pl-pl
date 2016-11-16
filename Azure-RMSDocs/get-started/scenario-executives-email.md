@@ -2,6 +2,7 @@
 title: "Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez członków kadry kierowniczej | Azure Information Protection"
 description: "W tym scenariuszu i pomocniczej dokumentacji użytkownika zastosowano ochronę usługi Azure Rights Management, aby umożliwić członkom kadry kierowniczej bezpieczną wymianę wiadomości e-mail i załączników oraz automatyczne ograniczenie dostępu do grona członków kadry kierowniczej za pomocą zasad, bez wymagania podejmowania przez nich dodatkowych czynności."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
 
 
 ---
 
-# Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez członków kadry kierowniczej
+# <a name="scenario-executives-securely-exchange-privileged-information"></a>Scenariusz — bezpieczna wymiana zastrzeżonych informacji przez członków kadry kierowniczej
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -34,12 +35,12 @@ Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
 -   W przypadku konieczności wysłania niechronionej wiadomości e-mail do innych przedstawicieli kierownictwa można samodzielnie wyłączyć tę regułę zabezpieczeń.
 
-## Instrukcje dotyczące wdrażania
+## <a name="deployment-instructions"></a>Instrukcje dotyczące wdrażania
 ![Instrukcje dla administratora dotyczące szybkiego wdrażania usługi Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Przed przejściem do części dotyczącej dokumentacji użytkownika należy upewnić się, że zostały spełnione poniższe wymagania, i wykonać instrukcje zawarte w procedurach pomocniczych.
 
-## Wymagania dotyczące tego scenariusza
+## <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
@@ -51,7 +52,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Skonfigurowano szablon niestandardowy zgodnie z poniższym opisem.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |Skonfigurowano regułę ochrony transportu dla usługi IRM zgodnie z opisem w dalszej części tego artykułu.|W przypadku usługi Exchange Online: [Przepływ poczty lub reguły transportu](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />W przypadku programu Exchange 2013: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />W przypadku programu Exchange 2010: [Create a Transport Protection Rule (Tworzenie reguły ochrony transportu)](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
-### Aby skonfigurować szablon niestandardowy dla przedstawicieli kadry kierowniczej
+### <a name="to-configure-the-custom-template-for-executives"></a>Aby skonfigurować szablon niestandardowy dla przedstawicieli kadry kierowniczej
 
 1.  W klasycznym portalu Azure: utwórz nowy szablon niestandardowy usługi Azure Rights Management, który zawiera następujące wartości i ustawienia:
 
@@ -69,7 +70,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
     Import-RMSTrustedPublishingDomain -Name "RMS Online -1" -RefreshTemplates -RMSOnline
     ```
 
-### Aby skonfigurować regułę transportu dla usługi IRM
+### <a name="to-configure-the-transport-rule-for-irm"></a>Aby skonfigurować regułę transportu dla usługi IRM
 
 -   Skorzystaj z wymienionej w tabeli dokumentacji programu Exchange, aby uzyskać informacje o procedurach umożliwiających tworzenie reguł transportu z następującymi ustawieniami:
 
@@ -83,7 +84,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
     -   Upewnij się, że dla reguły skonfigurowano opcję **Wymuś**.
 
-## Instrukcje w dokumentacji użytkownika
+## <a name="user-documentation-instructions"></a>Instrukcje w dokumentacji użytkownika
 Jeśli nie zamierzasz przekazywać instrukcji związanych z określaniem **wyjątku NCHR** lub własnego tekstu określającego wyjątek w temacie wiadomości e-mail, to ten scenariusz nie obejmuje udostępniania użytkownikom żadnych procedur, ponieważ ochrona wiadomości e-mail wysyłanych między członkami kadry kierowniczej nie wymaga od nich podejmowania dodatkowych czynności. Wiadomości e-mail i załączniki są automatycznie chronione, tak że tylko członkowie grupy Kierownicy mają do nich dostęp.
 
 Warto jednak poinformować kadrę kierowniczą i dział pomocy technicznej o automatycznej ochronie tych wiadomości oraz o ewentualnych ograniczeniach dotyczących korzystania z nich. Na przykład jeśli te wiadomości e-mail lub załączniki zostaną później przesłane do innych osób, nie zostaną przez nie odczytane. W przypadku skonfigurowania wyjątku NCHR (lub równoważnego wyjątku dotyczącego braku ochrony) upewnij się, że dział pomocy technicznej wie o tej konfiguracji, tak aby członkowie kadry kierowniczej mogli sami wyłączać regułę ochrony bez podejmowania czynności przez administratora programu Exchange.
@@ -104,7 +105,7 @@ W przykładowej dokumentacji przedstawiono, jak może wyglądać odpowiednio dos
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; są teraz automatycznie chronione.
+### <a name="it-announcement-ltorganization-namegt-executive-emails-are-now-automatically-protected"></a>Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; są teraz automatycznie chronione.
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie &lt;nazwa organizacji&gt; będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
 
 Warto pamiętać o tym, że w przypadku konieczności odczytania i zmodyfikowania tych informacji przez osoby, które nie należą do kierownictwa firmy &lt;nazwa organizacji&gt;, należy je wysyłać w osobnych wiadomościach e-mail. Można również wyłączyć automatyczną ochronę, wpisując tekst **NCHR** (skrót od „Niechroniona”) w dowolnym miejscu tematu wiadomości e-mail.
@@ -115,10 +116,10 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 -   Skontaktuj się z działem pomocy technicznej: &lt;dane kontaktowe&gt;
 
-### Przykładowa dokumentacja użytkownika
+### <a name="example-user-documentation"></a>Przykładowa dokumentacja użytkownika
 ![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie VanArsdel są teraz automatycznie chronione
+#### <a name="it-announcement-vanarsdel-executive-emails-are-now-automatically-protected"></a>Zawiadomienie działu IT: wiadomości e-mail wysyłane przez członków kadry kierowniczej w firmie VanArsdel są teraz automatycznie chronione
 Od tej pory wszystkie wiadomości e-mail oraz załączniki wysyłane do innych członków kadry kierowniczej w firmie VanArsdel będą automatycznie chronione. Tylko inni członkowie kierownictwa firmy będą mogli je odczytywać, drukować, kopiować itd. To ograniczenie obowiązuje również w przypadku zapisania załączników lub przesłania wiadomości e-mail do innych użytkowników. Wprowadzona ochrona ma zapobiegać utracie poufnych i wrażliwych informacji.
 
 Warto pamiętać o tym, że w przypadku konieczności odczytania i zmodyfikowania tych informacji przez osoby, które nie należą do kierownictwa firmy VanArsdel, należy je wysyłać w osobnych wiadomościach e-mail. Można również wyłączyć automatyczną ochronę, wpisując tekst **NCHR** (skrót od „Niechroniona”) w dowolnym miejscu tematu wiadomości e-mail.
@@ -127,11 +128,11 @@ Wysyłając wiadomość z poufnymi informacjami firmy do innego członka kadry k
 
 **Potrzebujesz pomocy?**
 
--   Skontaktuj się z działem pomocy technicznej: pomoc_techniczna@vanarsdelltd.com
+-   Skontaktuj się z działem pomocy technicznej: helpdesk@vanarsdelltd.com
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

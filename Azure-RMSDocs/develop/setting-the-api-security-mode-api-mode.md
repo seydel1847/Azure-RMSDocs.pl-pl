@@ -3,6 +3,7 @@ title: "Jak ustawić tryb zabezpieczeń interfejsu API | Azure RMS"
 description: "Wybierz tryb zabezpieczeń, w którym aplikacja interfejsu API plików jest uruchamiana."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
 
 
 ---
 
-# Instrukcje: ustawianie trybu zabezpieczeń interfejsu API
+# <a name="howto-set-the-api-security-mode"></a>Instrukcje: ustawianie trybu zabezpieczeń interfejsu API
 
 Za pomocą funkcji [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) można wybrać tryb zabezpieczeń, w którym jest uruchamiana aplikacja interfejsu API plików.
 
@@ -30,7 +31,7 @@ Aby uzyskać więcej informacji na temat *trybu serwera*, zobacz [Typy aplikacji
 
 **Ważne** Tryb zabezpieczeń należy ustawić przed wywołaniem innych funkcji zestawu Rights Management Services SDK 2.1. Ustawionego trybu zabezpieczeń nie można zmienić dla bieżącego procesu.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Typy aplikacji](application-types.md)
 * [Wartości trybów interfejsu API](https://msdn.microsoft.com/library/hh535236.aspx)
@@ -41,6 +42,6 @@ Aby uzyskać więcej informacji na temat *trybu serwera*, zobacz [Typy aplikacji
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

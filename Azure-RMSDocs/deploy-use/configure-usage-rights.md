@@ -2,6 +2,7 @@
 title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure Information Protection"
 description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 
 
 ---
 
-# Konfigurowanie praw użytkowania dla usługi Azure Rights Management
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -26,7 +27,7 @@ Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azur
 
 Niniejszy artykuł pomoże Ci skonfigurować prawa użytkowania dla używanej aplikacji oraz zrozumieć, jak te prawa będą interpretowane przez aplikacje.
 
-## Prawa użytkowania wraz z opisami
+## <a name="usage-rights-and-descriptions"></a>Prawa użytkowania wraz z opisami
 Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez usługę Rights Management oraz sposób ich wykorzystania i interpretowania. Są one wyświetlane według **nazwy pospolitej**, która jest często spotykanym sposobem na wyświetlenie prawa użytkowania lub odniesienie się do niego. Jest to przyjaźniejsza wersja jednowyrazowej wartości używanej w kodzie (wartość **Kodowanie w zasadach**). **Stała lub wartość API** jest nazwą zestawu SDK wywołania MSIPC API używanego podczas pisania aplikacji obsługujących usługę RMS. Wywołanie sprawdza prawa użytkowania lub dodaje prawo użytkowania do zasad.
 
 
@@ -47,7 +48,7 @@ Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez u
 
 
 
-## Prawa zawarte w poziomach uprawnień
+## <a name="rights-included-in-permissions-levels"></a>Prawa zawarte w poziomach uprawnień
 
 Niektóre aplikacje grupują prawa użytkowania w poziomach uprawnień. Dzięki temu można łatwiej wybrać prawa użytkowania, które zazwyczaj stosuje się wspólnie. Te poziomy uprawnień upraszczają skomplikowane działania po stronie użytkowników, którzy mogą wybrać opcje oparte na rolach.  Na przykład **Osoba dokonująca przeglądu** i **Współautor**. Chociaż opcje te często są dostępne z podsumowaniem praw, to mogą one nie obejmować wszystkich praw wymienionych w poprzedniej tabeli.
 
@@ -62,10 +63,10 @@ W tabeli poniżej znajduje się lista poziomów uprawnień i pełna lista praw w
 
 ----
 
-###### Przypis 1
+###### <a name="footnote-1"></a>Przypis 1
 Nie dotyczy aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows.
 
-## Prawa zawarte w domyślnych szablonach
+## <a name="rights-included-in-the-default-templates"></a>Prawa zawarte w domyślnych szablonach
 W szablonach domyślnych zawarte są następujące prawa:
 
 |Nazwa wyświetlana|Zawarte prawa (nazwa pospolita)|
@@ -73,7 +74,7 @@ W szablonach domyślnych zawarte są następujące prawa:
 |&lt;*nazwa organizacji*&gt; *— tylko wgląd poufny*|Wyświetl, Otwórz, Odczytaj|
 |&lt;*nazwa organizacji*&gt; *— poufne*|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Edytuj; Wyświetl prawa; Zezwalaj na makra; Prześlij dalej; Odpowiedz; Odpowiedz wszystkim|
 
-## Opcja Nie przekazuj dotycząca wiadomości e-mail
+## <a name="do-not-forward-option-for-emails"></a>Opcja Nie przekazuj dotycząca wiadomości e-mail
 
 Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają jedną dodatkową opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
 
@@ -95,12 +96,12 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](configure-custom-templates.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

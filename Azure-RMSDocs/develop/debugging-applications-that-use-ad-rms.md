@@ -3,6 +3,7 @@ title: "Jak debugować aplikację obsługującą prawa | Azure RMS"
 description: "Poniższy temat opisuje metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
 
 
 ---
 
-# Porada: debugowanie aplikacji obsługującej prawa
+# <a name="howto-debug-a-rightsenabled-application"></a>Porada: debugowanie aplikacji obsługującej prawa
 
 Poniższy temat opisuje metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
 
-## Debugowanie aplikacji
+## <a name="debugging-your-application"></a>Debugowanie aplikacji
 
 W zestawie Rights Management Services SDK 2.1 w przypadku wersji środowiska uruchomieniowego przeznaczonej dla deweloperów testy chroniące przed debugowaniem są wyłączone.
 
@@ -41,7 +42,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### Rejestrowanie aplikacji przy użyciu dziennika zdarzeń systemu Windows
+### <a name="application-logging-by-using-the-windows-event-log"></a>Rejestrowanie aplikacji przy użyciu dziennika zdarzeń systemu Windows
 
 Nazwa dziennika zdarzeń to „Microsoft-RMS-MSIPC/Debug”. W Podglądzie zdarzeń systemu Windows dziennik jest wyświetlany w obszarze „Dzienniki aplikacji i usług\\Microsoft\\RMS\\MSIPC\\Debug”.
 
@@ -67,7 +68,7 @@ Na przykład użycie poniższego polecenia spowoduje włączenie dziennika zdarz
 
  
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
  
 
@@ -75,6 +76,6 @@ Na przykład użycie poniższego polecenia spowoduje włączenie dziennika zdarz
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

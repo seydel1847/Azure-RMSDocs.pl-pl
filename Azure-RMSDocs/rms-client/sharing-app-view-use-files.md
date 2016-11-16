@@ -2,6 +2,7 @@
 title: "Wyświetlanie i używanie plików chronionych przez usługę Rights Management | Azure Information Protection"
 description: "Instrukcje dotyczące wyświetlania i używania pliku chronionego, co wymaga posiadania zainstalowanej aplikacji Rights Management (RMS) sharing."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
-ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1f248150a3f65fe5ffda1d20f51eee6bb834dd60
 
 
 ---
 
-# Wyświetlanie i używanie plików chronionych przez usługę Rights Management
+# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalowana na komputerze](install-sharing-app.md), wystarczy kliknąć dwukrotnie chroniony plik, aby go wyświetlić. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików.
 
@@ -34,7 +35,7 @@ Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalow
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
 > -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-## Aby wyświetlić chroniony plik
+## <a name="to-view-a-protected-file"></a>Aby wyświetlić chroniony plik
 W Eksploratorze plików lub wiadomości e-mail zawierającej załącznik kliknij dwukrotnie chroniony plik, po czym wprowadź swoje poświadczenia, jeśli zostanie wyświetlony odpowiedni komunikat.
 
 Jeśli są widoczne dwie wersje pliku różniące się rozszerzeniami nazw plików, otwórz plik z rozszerzeniem ppdf tylko w sytuacji, gdy nie możesz otworzyć drugiego pliku. Jeśli nie możesz otworzyć również wersji ppdf, najpierw zainstaluj [aplikację RMS sharing](install-sharing-app.md), która umożliwia otwieranie plików z rozszerzeniem nazwy ppdf.
@@ -73,7 +74,7 @@ Pełna lista rozszerzeń nazw plików obsługiwanych przez usługi Rights Manage
 > [!NOTE]
 > Jeśli po potwierdzeniu, że plik jest chroniony przez usługę Rights Management, nie można otworzyć pliku, pobierz [narzędzie RMS Analyzer (Analizator usług RMS)](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i skorzystaj z niego. Postępuj zgodnie z instrukcjami wyświetlanymi w narzędziu, aby sprawdzić komputer pod kątem problemów, które mogą uniemożliwić otwarcie chronionego dokumentu.
 
-## Aby korzystać z chronionych plików (na przykład edytować lub drukować je)
+## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Aby korzystać z chronionych plików (na przykład edytować lub drukować je)
 Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odczytać ten plik (na przykład zmodyfikować go, skopiować lub wydrukować), postępuj zgodnie z instrukcjami odpowiednimi dla rozszerzenia nazwy pliku:
 
 - **Plik ma rozszerzenie nazwy *pfile***
@@ -95,18 +96,18 @@ Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odcz
     Aplikacje obsługujące usługę Rights Management umożliwiają otwieranie plików chronionych przez inne aplikacje obsługujące tę usługę. Zapewniają także zachowanie zastosowanej ochrony, nawet jeśli plik zostanie wyedytowany lub zapisany pod inną nazwą lub w innej lokalizacji. Aplikacje umożliwiają używanie plików zgodnie z przypisanymi im uprawnieniami. Jeśli masz odpowiednie uprawnienia, możesz korzystać z pliku. Na przykład możesz edytować plik, ale nie możesz go drukować.
 
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

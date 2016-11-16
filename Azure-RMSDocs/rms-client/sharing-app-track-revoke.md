@@ -2,6 +2,7 @@
 title: "Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing | Azure Information Protection"
 description: "Po włączeniu ochrony dokumentów za pomocą aplikacji RMS sharing można śledzić użycie chronionych dokumentów. W razie konieczności można także cofnąć dostęp do tych dokumentów, aby zatrzymać ich udostępnianie."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
-ms.openlocfilehash: 1cd55e9c6200876a4d9921e3b60eb8fb58845d0c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3b5b19ab2dfdf6b797f55134f3063948dcab33d5
 
 
 ---
 
-# Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing
+# <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing
 
 >*Dotyczy: Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
@@ -40,7 +41,7 @@ Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty
 
 -   Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977).
 
-## Dostęp do witryny śledzenia dokumentów za pomocą pakietu Office
+## <a name="using-office-to-access-the-document-tracking-site"></a>Dostęp do witryny śledzenia dokumentów za pomocą pakietu Office
 
 -   W przypadku aplikacji pakietu Office (Word, Excel i PowerPoint): na karcie **Narzędzia główne** w grupie **RMS** kliknij pozycję **Udostępnij chronione**, a następnie kliknij pozycję **Śledź użycie**.
 
@@ -57,7 +58,7 @@ Jeśli te opcje usług RMS nie są wyświetlone, możliwe, że aplikacja RMS sha
 > 
 > - W aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno pozycje **Chroń** > **Śledź użycie**. 
 
-### Inne metody śledzenia i odwoływania dokumentów
+### <a name="other-ways-to-track-and-revoke-your-documents"></a>Inne metody śledzenia i odwoływania dokumentów
 Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu aplikacji pakietu Office można użyć także następujących alternatyw:
 
 -   **W przeglądarce sieci Web**: ta metoda działa w przypadku wszystkich obsługiwanych urządzeń.
@@ -66,7 +67,7 @@ Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu ap
 
 -   **W wiadomości e-mail programu Outlook**: ta metoda działa na komputerach z systemem Windows.
 
-#### Otwieranie witryny śledzenia dokumentów za pomocą przeglądarki sieci Web
+#### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą przeglądarki sieci Web
 
 -   Przy użyciu obsługiwanej przeglądarki przejdź do [witryny śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562).
 
@@ -82,30 +83,30 @@ Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu ap
 
     -   Google Chrome: wersja 18 lub nowsza
 
-#### Otwieranie witryny śledzenia dokumentów za pomocą Eksploratora plików
+#### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą Eksploratora plików
 
 -   Kliknij plik prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Śledź użycie**:
 
     ![Wybierz opcję Śledź użycie w Eksploratorze w przypadku korzystania z aplikacji RMS sharing](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
 
-#### Dostęp do witryny śledzenia dokumentów za pomocą wiadomości e-mail programu Outlook
+#### <a name="using-an-outlook-email-message-to-access-the-doc-tracking-site"></a>Dostęp do witryny śledzenia dokumentów za pomocą wiadomości e-mail programu Outlook
 
 -   W wiadomości e-mail na karcie **Wiadomość** w grupie **RMS** kliknij pozycję **Udostępnij chronioną zawartość**, a następnie kliknij pozycję **Śledź użycie**:
 
     ![Wybierz opcję Śledź użycie w programie Outlook w przypadku korzystania z aplikacji RMS sharing](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

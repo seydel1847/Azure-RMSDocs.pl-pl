@@ -2,6 +2,7 @@
 title: Klient | Azure Information Protection
 description: "Usługa Microsoft Azure Information Protection dostarcza rozwiązanie klient-serwer ułatwiające ochronę danych organizacji. Klient (klient usługi Azure Information Protection lub klient usługi Rights Management) jest zintegrowany z aplikacjami uruchamianymi na komputerach i urządzeniach przenośnych."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c7945e9587990e2f2893ffb47bc2f2534d41a8f
-ms.openlocfilehash: 5685134a6da93e193a2f7dc67cba5f3dea7da6a9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70f10569884811b0b8dfab9b138399720ff48267
 
 
 ---
 
-# Strona klienta usługi Azure Information Protection
+# <a name="the-client-side-of-azure-information-protection"></a>Strona klienta usługi Azure Information Protection
 
 >*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
@@ -44,11 +45,11 @@ Korzystając z poniższej dokumentacji, można uzyskać więcej informacji na te
 - [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](sharing-app-windows.md)
 
 
-## Zobacz także
+## <a name="see-also"></a>Zobacz także
 [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

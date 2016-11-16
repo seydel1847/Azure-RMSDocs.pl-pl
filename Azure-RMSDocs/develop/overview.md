@@ -3,6 +3,7 @@ title: "Przegląd — zestaw RMS SDK 4.2 | Azure RMS"
 description: "AD RMS i Azure RMS to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 390281fbc0a68346ec1cb4b943ddc5919a53fea0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65113e57c57621faf9e4625bf224a3f70e9b2e1d
 
 
 ---
 
-# Przegląd
+# <a name="overview"></a>Przegląd
 
 Zestaw SDK 4.2 usługi Microsoft Rights Management to technologia ochrony informacji dostępna dla różnych platform.  Jest to zestaw dewelopera oprogramowania (SDK) lub architektura, której celem jest pomoc komputerom i urządzeniom klienckim w ochronie dostępu do informacji przepływających przez aplikacje obsługujące prawa i w korzystaniu z tych informacji. Zestawy SDK dla tych platform zapewniają prosty interfejs API dla deweloperów aplikacji, który umożliwia ochronę i korzystanie z zawartości cyfrowej, pobieranie szablonów i uzyskiwanie zasad z serwera oraz powiązanych zadań zarządzania prawami.
 
@@ -36,7 +37,7 @@ Poniżej zamieszczono kilka możliwych scenariuszy:
 
 Zestaw SDK 4.2 usługi MS RMS może być pobierany (po potwierdzeniu i zaakceptowaniu umowy licencyjnej) i dystrybuowany za darmo razem z aplikacjami innych firm, aby umożliwić klientom dostęp do zawartości, do której prawa dostępu są chronione przez użycie i wdrożenie serwerów usługi AD RMS w danym środowisku lub usług Azure RMS. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
 
-## Najważniejsze funkcje zestawu SDK
+## <a name="sdk-highlights"></a>Najważniejsze funkcje zestawu SDK
 
 
 Zestaw SDK 4.2 usługi MS RMS oferuje nowe, atrakcyjne funkcje, w tym:
@@ -49,9 +50,9 @@ Zestaw SDK 4.2 usługi MS RMS oferuje nowe, atrakcyjne funkcje, w tym:
 
 Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć pracę nad projektem aplikacji dla urządzenia z informacjami chronionymi.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
-* [Zestaw SDK usługi Microsoft Rights Management](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
+* [Zestaw Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 * [Wprowadzenie](get-started.md)
 * [Biblioteka Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx)
 * [Konto GitHub](https://github.com/AzureAD/)
@@ -64,6 +65,6 @@ Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
