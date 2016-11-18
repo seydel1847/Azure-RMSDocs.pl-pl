@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 
 ---
@@ -37,13 +37,13 @@ Aby uzyskać więcej informacji o obsługiwanych formatach plików, zobacz sekcj
 
 W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfrowaniem.
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotection"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
 **Typ**: klucz
 
 **Opis**: zawiera ogólną konfigurację interfejsu API plików.
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgt"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
 **Typ**: klucz
 
@@ -56,7 +56,7 @@ W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfro
 Ustaw wartość **Encryption** w kluczu w celu określenia zachowania ochrony. Jeśli wartość **Encryption** nie zostanie ustawiona, dla danego typu pliku zostanie zastosowane zachowanie domyślne.
 
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgtencryption"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
 
 **Typ**: REG_SZ
 
@@ -157,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
