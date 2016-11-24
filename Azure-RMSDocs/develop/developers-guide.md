@@ -5,18 +5,18 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
-ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: bbf266512a80ece05253cbfab7b9ab40505f3f67
 
 
 ---
@@ -24,25 +24,19 @@ ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 # <a name="developers-guide"></a>Przewodnik dewelopera
 
 ## <a name="overview"></a>Przegląd ##
-Ten przewodnik zawiera opis zestawu pakietów SDK usługi Rights Management oraz rosnącej gamy narzędzi i przykładów kodu dla wszystkich obsługiwanych platform.
+Ten przewodnik zawiera opis rosnącej gamy narzędzi i przykładów kodu dla wszystkich obsługiwanych platform, pakietu zestawów SDK usługi Rights Management i narzędzi zarządzania programu PowerShell.
 
-## <a name="software-development-kits"></a>Zestawy Software Development Kit ##
-Obecnie dostępne są trzy generacje zestawów SDK usługi RMS, opisane w poniższej tabeli.
+[**Przykłady kodu i narzędzia**](#code-samples-and-tools) — dotyczą one wszystkich obsługiwanych systemów operacyjnych: Android, iOS/OS X, klienta i telefonu z systemem Windows.
 
-| Zestaw SDK | Opis |
-|------|---------|
-| [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Uproszczony zestaw narzędzi nowej generacji, zapewniający lekkie środowisko programistyczne dostarczające aplikacjom dla urządzeń z systemami Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++ zabezpieczenia informacji za pośrednictwem usług Microsoft Rights Management |
-| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Zaawansowany zestaw SDK dla twórców aplikacji komputerowych dla systemu Windows i rozwiązań serwerowych, umożliwiający wprowadzenie w produktach zarządzania prawami|
-|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx)|** UWAGA ** — zestaw AD RMS SDK wykorzystujący funkcje udostępniane przez klienta w bibliotece Msdrm.dll jest dostępny do użytku w systemach Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 i Windows Vista. Może on zostać zmieniony lub przestać być dostępny w kolejnych wersjach. Zamiast tego należy używać zestawu Microsoft Rights Management Services SDK 2.1 korzystającego z funkcji udostępnianych przez klienta w bibliotece Msipc.dll.|
-|[Interfejs API obsługi skryptów usług AD RMS](https://msdn.microsoft.com/en-us/library/bb968797.aspx)| Służy do tworzenia skryptów administrujących instalacją usług AD RMS|
+[**Wskazówki dotyczące programu PowerShell**](#powershell-guidance) — dotyczą zarówno administrowania usługą Rights Management, jak i wykonywania zbiorczych operacji ochrony.
 
-## <a name="powershell-guidance"></a>Wskazówki dotyczące programu PowerShell
+[**Zestawy Software Development Kit**](#software-development-kits) — zapewniają obsługę kilku systemów operacyjnych urządzeń przenośnych, łącznie z systemami Android i iOS. Zapewniają one również rozszerzoną obsługę klienta systemu Windows.
 
-[Polecenia cmdlet usługi Azure Rights Management](https://msdn.microsoft.com/library/azure/dn629398.aspx) umożliwiają administrowanie usługą Azure RMS z poziomu wiersza polecenia. Mimo że pozwala to na automatyzację, umożliwia również obsługę niezawodnych i powtarzanych procesów w celu zmniejszenia kosztów administracyjnych. Ponadto niektóre zaawansowane konfiguracje i operacje usługi Azure RMS wymagają programu Azure PowerShell.
 
-[Polecenia cmdlet ochrony usługi RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx) mogą być używane z ochroną danych usługi Azure Rights Management (Azure RMS) z poziomu usługi Azure Information Protection lub z usługą Active Directory Rights Management Services (AD RMS) w celu uzupełnienia innych modułów programu PowerShell na potrzeby wdrożeń usługi Rights Management. Użyj tych poleceń cmdlet ochrony usługi RMS, aby grupowo obejmować ochroną pliki dowolnego typu i anulować tę ochronę.
+---
 
 ## <a name="code-samples-and-tools"></a>Przykłady kodu i narzędzia
+
 Ta kolekcja przykładów kodu usługi RMS i narzędzi wspierających twórców dostarczonych przez firmę Microsoft obejmuje wszystkie obsługiwane systemy operacyjne: Android, iOS/OS X, Windows Phone i Windows Desktop. Jest okresowo aktualizowana w celu zapewnienia zgodności z obsługiwanym zestawem SDK.
 
 ### <a name="android"></a>Android
@@ -79,8 +73,31 @@ Poniższe elementy działają w systemie Windows Desktop obsługiwanym przez zes
 
 - [Przykładowa aplikacja](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) — przykład dla zestawu SDK 4.1 usługi Microsoft RMS dla aplikacji ze Sklepu Windows zawiera przykład podstawowego wykorzystania dokumentów dla platformy.
 
+---
+
+## <a name="powershell-guidance"></a>Wskazówki dotyczące programu PowerShell
+Istniejące polecenia cmdlet służą zarówno do administrowania usługą Rights Management, jak i wykonywania zbiorczych operacji ochrony.
+
+[Polecenia cmdlet usługi Azure Rights Management](https://msdn.microsoft.com/library/azure/dn629398.aspx) umożliwiają administrowanie usługą Azure RMS z poziomu wiersza polecenia. Mimo że pozwala to na automatyzację, umożliwia również obsługę niezawodnych i powtarzanych procesów w celu zmniejszenia kosztów administracyjnych. Ponadto niektóre zaawansowane konfiguracje i operacje usługi Azure RMS wymagają programu Azure PowerShell.
+
+[Polecenia cmdlet ochrony usługi RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx) mogą być używane z ochroną danych usługi Azure Rights Management (Azure RMS) z poziomu usługi Azure Information Protection lub z usługą Active Directory Rights Management Services (AD RMS) w celu uzupełnienia innych modułów programu PowerShell na potrzeby wdrożeń usługi Rights Management. Użyj tych poleceń cmdlet ochrony usługi RMS, aby grupowo obejmować ochroną pliki dowolnego typu i anulować tę ochronę.
+
+---
+
+## <a name="software-development-kits"></a>Zestawy Software Development Kit
 
 
-<!--HONumber=Nov16_HO2-->
+Obecnie dostępne są trzy generacje zestawów SDK usługi RMS, opisane w poniższej tabeli.
+
+| Zestaw SDK | Opis |
+|------|---------|
+| [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Uproszczony zestaw narzędzi nowej generacji, zapewniający lekkie środowisko programistyczne dostarczające aplikacjom dla urządzeń z systemami Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++ zabezpieczenia informacji za pośrednictwem usług Microsoft Rights Management |
+| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Zaawansowany zestaw SDK dla twórców aplikacji komputerowych dla systemu Windows i rozwiązań serwerowych, umożliwiający wprowadzenie w produktach zarządzania prawami|
+|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx)|** UWAGA ** — zestaw AD RMS SDK wykorzystujący funkcje udostępniane przez klienta w bibliotece Msdrm.dll jest dostępny do użytku w systemach Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 i Windows Vista. Może on zostać zmieniony lub przestać być dostępny w kolejnych wersjach. Zamiast tego należy używać zestawu Microsoft Rights Management Services SDK 2.1 korzystającego z funkcji udostępnianych przez klienta w bibliotece Msipc.dll.|
+|[Interfejs API obsługi skryptów usług AD RMS](https://msdn.microsoft.com/en-us/library/bb968797.aspx)| Służy do tworzenia skryptów administrujących instalacją usług AD RMS|
+
+
+
+<!--HONumber=Nov16_HO3-->
 
 

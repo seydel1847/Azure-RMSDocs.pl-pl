@@ -4,7 +4,7 @@ description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, któ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
+ms.sourcegitcommit: afbaf9bfc2b898d8dece415a26045ec52f7deaac
+ms.openlocfilehash: 15d017cda5e390a6fd2b639ef451a15422981ae4
 
 
 ---
@@ -142,10 +142,16 @@ W celu korzystania z łącznika usługi RMS te serwery programu Exchange muszą 
 
 -   Exchange Server 2010 z dodatkiem Service Pack 3 i pakietem zbiorczym aktualizacji 6 dla programu Exchange 2010
 
-Należy również zainstalować na tych serwerach wersję klienta RMS z obsługą trybu kryptograficznego 2 usługi RMS. Minimalna wersja obsługiwana w systemie Windows Server 2008 jest dołączona do poprawki, którą można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows Server 2008 R2 i Windows Server 2008](http://support.microsoft.com/kb/2627272). Minimalną wersję dla systemu Windows Server 2008 R2 można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows 7 lub Windows Server 2008 R2](http://support.microsoft.com/kb/2627273). Systemy Windows Server 2012 i Windows Server 2012 R2 natywnie obsługują tryb kryptograficzny 2.
+Na tych serwerach potrzebna będzie również wersja 1 klienta usługi RMS (znanej również jako MSDRM) z obsługą trybu kryptograficznego 2 usługi RMS. Wszystkie systemy operacyjne Windows zawierają klienta usługi MSDRM, ale wczesne wersje klienta nie obsługują trybu kryptograficznego 2. Jeśli na serwerach Exchange działa co najmniej system Windows Server 2012, żadne dalsze działania nie są wymagane, ponieważ klient usługi RMS zainstalowany z tymi systemami operacyjnymi natywnie obsługuje tryb kryptograficzny 2. 
+
+Jeśli na serwerach Exchange działa wcześniejsza wersja systemu operacyjnego, sprawdź, czy zainstalowana wersja klienta usługi RMS obsługuje tryb kryptograficzny 2. W tym celu sprawdź wersję zainstalowanego pliku Windows\System32\Msdrm.dll z numerami wersji wymienionymi w następujących artykułach bazy wiedzy. Jeśli numer zainstalowanej wersji jest taki sam lub wyższy niż numery wersji na liście, nie ma potrzeby wykonywania dalszych czynności. Jeśli numer zainstalowanej wersji jest niższy, pobierz i zainstaluj poprawkę z artykułu.
+
+- Windows Server 2008: [https://support.microsoft.com/kb/2627272](https://support.microsoft.com/kb/2627272) 
+
+- Windows Server 2008 R2: [https://support.microsoft.com/kb/2627273](https://support.microsoft.com/kb/2627273)
 
 > [!IMPORTANT]
-> Jeśli te wersje lub nowsze wersje programu Exchange i klienta usługi RMS nie są zainstalowane, nie można skonfigurować programu Exchange do korzystania z łącznika. Przed kontynuowaniem sprawdź, czy te wersje są zainstalowane.
+> Jeśli te wersje lub nowsze wersje programu Exchange i klienta usługi MSDRM nie są zainstalowane, nie będzie można skonfigurować programu Exchange do korzystania z łącznika. Przed kontynuowaniem sprawdź, czy te wersje są zainstalowane.
 
 ### <a name="to-configure-exchange-servers-to-use-the-connector"></a>Konfigurowanie serwerów programu Exchange do używania łącznika
 
@@ -182,7 +188,7 @@ W celu korzystania z łącznika usługi RMS te serwery programu SharePoint musz�
 
 -   SharePoint Server 2010
 
-Serwer z działającym programem SharePoint 2016 lub SharePoint 2013 musi mieć również uruchomioną wersję klienta MSIPC 2.1, która jest zgodna z łącznikiem usługi RMS. Aby upewnić się, że masz obsługiwaną wersję, pobierz najnowszego klienta z [Centrum pobierania Microsoft](http://www.microsoft.com/download/details.aspx?id=38396).
+Serwer z działającym programem SharePoint 2016 lub SharePoint 2013 musi mieć również uruchomioną wersję klienta MSIPC 2.1, która jest zgodna z łącznikiem usługi RMS. Aby upewnić się, że masz obsługiwaną wersję, pobierz najnowszego klienta z [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=38396).
 
 > [!WARNING]
 > Istnieje wiele wersji klienta MSIPC 2.1, dlatego upewnij się, że została zainstalowana wersja 1.0.2004.0 lub nowsza.
@@ -250,6 +256,6 @@ Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

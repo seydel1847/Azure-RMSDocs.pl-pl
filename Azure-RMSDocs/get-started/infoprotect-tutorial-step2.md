@@ -4,15 +4,15 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
+ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
+ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
 
 
 ---
@@ -36,7 +36,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Wewnętrzne**, **Poufne** i **Tajne**. Przeczytaj etykietkę narzędzia każdej z nich, aby zrozumieć sposób korzystania z etykiet. Należy pamiętać, że etykieta **Tajne** zawiera dwie etykiety podrzędne: **Wszyscy pracownicy** i **Moja grupa**, które stanowią przykład klasyfikacji z podkategoriami.
 
-    - Z ustawieniami domyślnymi etykiety **Wewnętrzne**, **Poufne** i **Tajne** mają skonfigurowane oznaczenia wizualne (takie jak stopka, nagłówek i znak wodny), lecz żadna z tych etykiet nie ma ustawionej ochrony. Ponadto te trzy ustawienia globalne nie są ustawione, tak więc nie jest wymagane, aby dokumenty i wiadomości e-mail miały etykietę, brak jest etykiety domyślnej, a użytkownicy nie muszą uzasadniać obniżenia poziomu klasyfikacji.
+    - Z ustawieniami domyślnymi etykiety **Wewnętrzne**, **Poufne** i **Tajne** mają skonfigurowane oznaczenia wizualne (takie jak stopka, nagłówek i znak wodny), lecz żadna z tych etykiet nie ma ustawionej ochrony. Ponadto te cztery ustawienia globalne nie są ustawione, tak więc nie jest wymagane, aby dokumenty i wiadomości e-mail miały etykietę, brak jest etykiety domyślnej, użytkownicy nie muszą uzasadniać zmiany etykiet, a klient nie jest skonfigurowany dla linku pomocy niestandardowej.
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy.png)
 
@@ -122,6 +122,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

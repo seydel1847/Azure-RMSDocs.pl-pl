@@ -4,15 +4,15 @@ description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 5e36d046d53b0fdfb6796f2a00e8d0d1325f30c3
+ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
+ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
 
 
 ---
@@ -69,7 +69,9 @@ Można użyć dowolnej z tych opcji:
     
         Zobaczysz również wyświetloną nazwę użytkownika, która identyfikuje konto używane do uwierzytelniania w usłudze Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory.
 
-    - W sekcji **Pomoc i opinie**: użyj linku **Wyślij opinię**, który umożliwia automatyczne dołączanie dzienników klienta do wiadomości e-mail, którą można wysłać do zespołu usługi Information Protection w celu zbadania problemu. 
+    - W sekcji **Pomoc i opinie**: **link Powiedz mi więcej** domyślnie prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień globalnych](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
+        
+        Użyj linku **Wyślij opinię**, aby automatycznie dołączyć dzienniki klienta do wiadomości e-mail, którą można wysłać do zespołu usługi Information Protection w celu zbadania problemu. 
     
         Aby uzyskać informacje diagnostyczne i dowiedzieć się, jak zresetować klienta, kliknij pozycję **Uruchom diagnostykę**. Po zakończeniu testów diagnostycznych kliknij pozycję **Kopiuj wyniki**, aby wkleić informacje w wiadomości e-mail, którą można wysłać do działu pomocy technicznej firmy Microsoft. Po zakończeniu testów możesz także zresetować klienta.
         
@@ -115,6 +117,6 @@ Aby sprawdzić informacje o wersji klienta, zobacz [Historia wersji](client-vers
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
