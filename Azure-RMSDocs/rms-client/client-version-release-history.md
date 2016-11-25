@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3beeaffd5cf5f0e0a629dd6130d780cec3e05d6
-ms.openlocfilehash: ff6573042941640d1cca82d68e85f09c82e3c77b
+ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
+ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 
 ---
@@ -37,8 +37,6 @@ Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w
 **Wydana**: 2016-10-27
 
 **Poprawki**:
-
-- Możesz pomyślnie zastosować etykietę chroniącą zawartość, gdy używasz pakietu Office 2010, a środowisko nie zostało inicjowane na potrzeby usługi Azure Rights Management (ta czynność jest również znana jako „uruchamianie”).
 
 - Instalacja klienta zostanie ukończona po wyłączeniu usługi Windows Update.
 
@@ -64,6 +62,6 @@ Aby uzyskać więcej informacji dotyczących instalowania klienta, zobacz [Insta
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
