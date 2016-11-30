@@ -20,7 +20,7 @@ ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 ---
 
 
-# <a name="customermanaged-tenant-key-lifecycle-operations"></a>Operacje cyklu życia klucza dzierżawy zarządzane przez klienta
+# <a name="customer-managed-tenant-key-lifecycle-operations"></a>Operacje cyklu życia klucza dzierżawy zarządzane przez klienta
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -32,7 +32,7 @@ W usłudze Azure Key Vault można zmienić uprawnienia dotyczące magazynu klucz
 Po anulowaniu subskrypcji usługi Azure Information Protection usługa ta wstrzymuje korzystanie z klucza dzierżawy, co nie wymaga żadnej akcji ze strony użytkownika.
 
 
-## <a name="rekey-your-tenant-key"></a>Ponowne tworzenie klucza dzierżawy
+## <a name="re-key-your-tenant-key"></a>Ponowne tworzenie klucza dzierżawy
 Ponowne tworzenie jest nazywane także wycofywaniem klucza. Klucza dzierżawy nie należy tworzyć ponownie, jeśli nie jest to naprawdę konieczne. Starsze programy klienckie, takie jak Office 2010, nie zostały zaprojektowane do bezproblemowej zmiany klucza. W tym scenariuszu należy usunąć stan usługi Rights Management na komputerach przy użyciu zasad grupy lub równoważnego mechanizmu. Występują jednak określone zdarzenia, które mogą wymusić ponowne utworzenie klucza dzierżawy. Na przykład:
 
 -   Firma została podzielona na dwie lub więcej firm. Po ponownym utworzeniu klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
