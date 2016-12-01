@@ -4,15 +4,15 @@ description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
-ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
+ms.sourcegitcommit: 0b9d796b8908a42a7aceb95f3c3319028e9a9dbe
+ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
 
 
 ---
@@ -67,7 +67,7 @@ Można użyć dowolnej z tych opcji:
 
     - W sekcji **stanu klienta**: użyj wartości **Wersja**, aby sprawdzić, czy instalacja zakończyła się pomyślnie. Ponadto możesz zobaczyć, kiedy klient został ostatnio połączony z usługą Azure Protection Information w Twojej organizacji i kiedy ostatnio zainstalowano lub zaktualizowano zasady usługi Azure Information Protection. Gdy klient łączy się z usługą, automatycznie pobiera najnowsze zasady, jeśli wykryje zmiany w porównaniu z obecnymi zasadami. Jeśli wprowadzono zmiany zasad po wyświetlonym czasie, zamknij i ponownie otwórz aplikację pakietu Office.
     
-        Zobaczysz również wyświetloną nazwę użytkownika, która identyfikuje konto używane do uwierzytelniania w usłudze Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory.
+        Zobaczysz również wyświetloną nazwę użytkownika, która identyfikuje konto używane do uwierzytelniania w usłudze Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory, które należy do dzierżawy skonfigurowanej dla usługi Azure Information Protection.
 
     - W sekcji **Pomoc i opinie**: **link Powiedz mi więcej** domyślnie prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień globalnych](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
         
@@ -117,6 +117,6 @@ Aby sprawdzić informacje o wersji klienta, zobacz [Historia wersji](client-vers
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "Faza 1 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
+ms.sourcegitcommit: 750919e3d8be88a1a1028d83c89ece55ea4e8690
+ms.openlocfilehash: 65ab175da5c5ab74090bf6bdb88af766dc55e334
 
 
 ---
 
-# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>Faza 1 migracji — konfiguracja po stronie serwera dla usług AD RMS
+# <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>Faza 1 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -74,6 +74,11 @@ Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla
     -   Nie zaznaczaj pola wyboru, aby zapisać plik zaufanej domeny w usłudze RMS w wersji 1.0.
 
 Po wyeksportowaniu wszystkich zaufanych domen publikacji możesz rozpocząć wykonywanie procedury importowania tych danych do usługi Azure Information Protection.
+
+Należy pamiętać, że zaufane domeny publikacji obejmują klucze do odszyfrowywania chronionych wcześniej plików, więc ważne jest, aby wyeksportować (a później zaimportować na platformę Azure) wszystkie zaufane domeny publikacji, a nie tylko tę, która jest obecnie aktywna.
+
+Na przykład po uaktualnieniu serwerów usług AD RMS z trybu kryptograficznego 1 do trybu kryptograficznego 2 użytkownik będzie miał wiele zaufanych domen publikacji. Jeśli zaufana domena publikacji zawierająca zarchiwizowany klucz, który używał trybu kryptograficznego 1, nie zostanie wyeksportowana, a następnie zaimportowana pod koniec procesu migracji, użytkownicy nie będą mogli otworzyć zawartości chronionej za pomocą klucza trybu kryptograficznego 1.
+
 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importowanie danych konfiguracji do usługi Azure Information Protection
 W zależności od bieżącej konfiguracji wdrożenia usługi AD RMS i preferowanej topologii klucza dzierżawy usługi Azure Information Protection ten krok może obejmować różne procedury.
@@ -220,6 +225,6 @@ Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-pha
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

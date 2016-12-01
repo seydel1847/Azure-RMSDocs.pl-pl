@@ -4,7 +4,7 @@ description: "Skorzystaj z tych procedur, aby przygotować się do wdrożenia us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
-ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
+ms.sourcegitcommit: 1fb57d2317cc632a44a87f3ce7140ce737c240e0
+ms.openlocfilehash: 9cc05664480ba0e5fa090db96afbcef73c318e07
 
 
 ---
@@ -98,6 +98,8 @@ Opcjonalnie rozważ skonfigurowanie następujących elementów:
 1. Aktualizowanie zasad usługi Azure Information Protection w celu zastosowania funkcji ochrony danych
     
     Zmodyfikuj zasady usługi Azure Information Protection w taki sposób, aby co najmniej jedna etykieta stosowała funkcje ochrony usługi Rights Management. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md).
+    
+    Należy pamiętać, że użytkownicy mogą używać w programie Outlook etykiet stosowanych do ochrony usługi Rights Management, nawet jeśli program Exchange nie został skonfigurowany do zarządzania prawami do informacji (IRM). Jednak dopóki program Exchange nie zostanie skonfigurowany dla usługi IRM, organizacja nie uzyska pełnej funkcjonalności podczas korzystania z ochrony usługi Azure Rights Management w połączeniu z programem Exchange. Ta dodatkowa konfiguracja jest dostępna w kroku 3 dla usługi Exchange Online i kroku 6 dla lokalnego programu Exchange. 
 
 2. Wdrażanie aplikacji RMS sharing
     
@@ -190,6 +192,6 @@ Po rozpoczęciu korzystania z usługi Azure Rights Management pomocny może okaz
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

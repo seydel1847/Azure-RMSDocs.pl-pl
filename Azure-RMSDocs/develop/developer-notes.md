@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
+ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
+ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
 
 
 ---
@@ -35,10 +35,10 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 - [Porada: praca z ustawieniami szyfrowania](working-with-encryption.md) — ten temat umożliwia zapoznanie się z pakietami szyfrowania firmy Microsoft i zawiera przykładowe fragmenty kodu, w których zastosowano te pakiety.
 - [Typy aplikacji](application-types.md) — w tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa.
 - [Konfiguracja interfejsu API plików](file-api-configuration.md) — działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru.
+- [Wskazówki dotyczące zabezpieczeń](security-guidelines.md) — ten temat zawiera informacje wprowadzające i wytyczne dla deweloperów aplikacji dotyczące efektywnej pracy w ekosystemie AIP.
 - [Obsługiwane typy plików](supported-file-formats.md) — interfejs API plików obsługuje formaty natywne i Pfile
 - [Obsługiwane platformy](supported-platforms.md) — ten temat zawiera informacje o platformach klientów i serwerów obsługiwanych przez zestaw RMS SDK 2.1.
-- [Opis ograniczeń użycia](understanding-usage-restrictions.md) — wszystkie aplikacje z obsługą usług RMS muszą wymuszać ograniczenia użycia.
-- [Informacje o ograniczeniach użycia](usage-restriction-reference.md) — ograniczenia użycia są definiowane przez stałe wymienione w tym temacie.
+- [Opis ograniczeń użycia](understanding-usage-restrictions.md) — wszystkie aplikacje obsługujące usługi RMS muszą wymuszać ograniczanie użycia określone przez stałe wymienione w tym temacie.
 
  
 ## <a name="related-topics"></a>Tematy pokrewne
@@ -49,6 +49,6 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
+ms.sourcegitcommit: 5aac7b9fae12642c9846a70c5d271c7600af4096
+ms.openlocfilehash: 7a10b0f1fceca58a80145962dfaedddeea64dd64
 
 
 ---
 
-# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
+# <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
 
@@ -41,7 +41,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 > Jeśli chcesz przeprowadzić konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, przydatne może okazać się przeczytanie artykułu [Wprowadzenie do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
-## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>Część 1. Wyodrębnianie klucza SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>Część 1. Wyodrębnianie klucza SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
 
 1.  Administrator usługi Azure Key Vault: użyj następujących kroków w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
 
@@ -143,7 +143,7 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 
     Po wyświetleniu monitu wprowadź określone wcześniej hasło dla pliku danych konfiguracji i potwierdź, że chcesz wykonać tę akcję.
 
-    Jeśli masz więcej niż jeden plik danych konfiguracji, powtórz to polecenie dla pozostałych plików. Dla tych plików ustaw opcję **-Active** na wartość **false** podczas uruchamiania polecenia Import.
+    Jeśli masz więcej niż jeden plik danych konfiguracji, powtórz to polecenie dla pozostałych plików. Na przykład po uaktualnieniu klastra usług AD RMS dla trybu kryptograficznego 2 powinien być dostępny przynajmniej jeden dodatkowy plik do zaimportowania. Dla tych plików ustaw opcję **-Active** na wartość **false** podczas uruchamiania polecenia Import.
 
 
 
@@ -164,6 +164,6 @@ Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 
