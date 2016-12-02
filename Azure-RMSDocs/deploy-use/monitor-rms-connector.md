@@ -4,7 +4,7 @@ description: "Informacje dotyczące monitorowania łącznika i korzystania przez
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
+ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
+ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
 
 
 ---
@@ -162,9 +162,11 @@ Jeśli niedawno dodano nowe konta serwera na potrzeby korzystania z łącznika, 
 
 ## <a name="rms-analyzer"></a>Analizator usług RMS
 
-Narzędzie Analizator usług Rights Management Services ułatwia monitorowanie kondycji łącznika i wykrywanie problemów dotyczących konfiguracji.
+Chociaż to narzędzie jest objęte wsparciem w aktualnej postaci („as-is”), analizatora usług RMS można użyć do monitorowania kondycji łącznika i wykrywania problemów z konfiguracją. Jeśli nie pobrano jeszcze tego narzędzia, można to zrobić, korzystając z [Centrum pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=46437). 
 
-Jeśli jeszcze nie pobrano tego narzędzia, możesz to zrobić w [Centrum pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i zainstalować je na dowolnym komputerze z dostępem do Internetu, który może nawiązać połączenie z łącznikiem usługi RMS. Uruchom narzędzie, a następnie na stronie **powitalnej** wybierz opcję **Łącznik usługi Azure RMS**.
+Zaloguj się na jednym z serwerów skonfigurowanych dla łącznika usługi RMS za pomocą konta autoryzowanego do użycia łącznika dla tego obciążenia. Na przykład jeśli skonfigurowano łącznik usługi RMS dla programu Exchange, zaloguj się na tym serwerze za pomocą jednego z kont autoryzowanych dla programu Exchange w narzędziu konfiguracji łącznika usługi RMS. Następnie uruchom analizator usług RMS z opcją **Uruchom jako administrator**.
+
+Po uruchomieniu narzędzia na stronie **powitalnej** wybierz opcję **Łącznik usługi Azure RMS**. Wprowadź adres URL łącznika usługi RMS jako adres aktywny, po czym kliknij zieloną strzałkę. Jako potwierdzenie pomyślnego połączenia łącznika z usługą Azure Rights Management powinna zostać wyświetlona Twoja dzierżawa. Jeśli ten wstępny test zakończy się niepowodzeniem, sprawdź konfigurację serwera proxy i zapór, które mogą blokować ruch serwera. Po pomyślnym wyświetleniu szczegółów swojej dzierżawy możesz uruchomić testy diagnostyczne obciążenia serwera w celu sprawdzenia numerów obsługiwanych wersji, wymagań wstępnych i ustawień rejestru.
 
 Aby uzyskać dodatkowe informacje i instrukcje, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania.
 
@@ -193,6 +195,6 @@ Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych,
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

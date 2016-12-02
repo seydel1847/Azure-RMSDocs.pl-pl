@@ -4,7 +4,7 @@ description: "Dodatkowe informacje na temat usługi Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 784e8a1f53df10ee66595b1268a4d9a1f0cdc9b0
-ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
+ms.sourcegitcommit: 291198ed501854de1aa7ddbfc80cd7a7f1b4849c
+ms.openlocfilehash: a853aaa993bbb5e15e6c4b80d4c6f0581b6e9090
 
 
 ---
@@ -33,11 +33,13 @@ Usługa Azure Information Protection obsługuje inne usługi i korzysta z nich. 
 
 ## <a name="security-compliance-and-auditing"></a>Zabezpieczenia, zgodność i inspekcja
 
-Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md). Ponadto:
+Zobacz sekcję dotyczącą [wymagań związanych z zabezpieczeniami, zgodnością i przepisami](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md), aby poznać informacje o poszczególnych certyfikatach usługi Azure Rights Management. Ponadto:
 
 - Zewnętrzne certyfikaty usługi Azure Information Protection: [Centrum zaufania systemu Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
 
 - Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
+
+Szczegółowe informacje techniczne dotyczące sposobu działania technologii ochrony można znaleźć w temacie [Jak działa usługa Azure RMS](../understand-explore/how-does-it-work.md) 
 
 ## <a name="service-level-agreements"></a>Umowy dotyczące poziomu usług
 
@@ -56,6 +58,6 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
