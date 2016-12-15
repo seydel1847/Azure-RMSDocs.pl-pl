@@ -4,15 +4,15 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
-ms.openlocfilehash: bedf1cb43be9a70c2b3252fa730f46d83574e954
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 1b0a908f6a372703ce06e3434307a81fd53c020c
 
 
 ---
@@ -31,11 +31,14 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wykonaj jedną z następujących czynności:
+2. Jeśli nowa etykieta, którą chcesz dodać, będzie miała zastosowanie do wszystkich użytkowników, wykonaj jedną z następujących czynności z bloku **Zasady: Globalne**. 
 
     - Aby utworzyć nową etykietę: kliknij przycisk **Dodaj nową etykietę**.
 
     - Aby utworzyć nową etykietę podrzędną: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...**) etykiety, dla której chcesz utworzyć etykietę podrzędną, a następnie kliknij polecenie **Dodaj etykietę podrzędną**.
+
+
+     Jeśli nowa etykieta, którą chcesz dodać, będzie należeć do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu będzie miała zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
 
 3. W bloku **Etykieta** lub **Etykieta podrzędna** wybierz opcje dla nowej etykiety, a następnie kliknij przycisk **Zapisz**.
 
@@ -52,6 +55,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

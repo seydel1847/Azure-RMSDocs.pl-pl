@@ -4,15 +4,15 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 
 ---
@@ -52,7 +52,9 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji.
+2. Jeśli etykieta, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji, będzie dotyczyła wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**, a następnie wprowadź zmiany w bloku **Etykieta** i wszystkich kolejnych wymaganych blokach. 
+
+     Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.  
 
 3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
@@ -74,7 +76,7 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 6. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## <a name="information-about-the-builtin-conditions"></a>Informacje o wbudowanych warunkach
+## <a name="information-about-the-built-in-conditions"></a>Informacje o wbudowanych warunkach
 
 W okresie używania wersji zapoznawczej możesz wybrać następujące warunki:
 
@@ -224,6 +226,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

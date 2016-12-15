@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
+ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
+ms.openlocfilehash: 46c15d7594110d48f34b1648b2afb17738712720
 
 
 ---
@@ -36,7 +36,7 @@ Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez u
 |Nazwa pospolita: **Edytuj zawartość, Edytuj** <br /><br />Kodowanie w zasadach: **DOCEDIT**|Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie lub filtrowanie zawartości wewnątrz aplikacji. Nie nadaje prawa do zapisywania edytowanej kopii.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Edytuj zawartość**<br /><br />Nazwa w szablonach usługi AD RMS: **Edytuj** <br /><br />Stała lub wartość interfejsu API: nie dotyczy.|
 |Nazwa pospolita: **Zapisz** <br /><br />Kodowanie w zasadach: **EDIT**|Umożliwia użytkownikowi zapisanie dokumentu w jego bieżącej lokalizacji.<br /><br />W aplikacjach pakietu Office to prawo umożliwia użytkownikowi modyfikowanie dokumentu.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Zapisz plik**<br /><br />Nazwa w szablonach usługi AD RMS: **Zapisz** <br /><br />Stała API lub wartość API: `IPC_GENERIC_WRITE L"EDIT"`|
 |Nazwa pospolita: **Komentarz** <br /><br />Kodowanie w zasadach: **COMMENT**|Pozwala dodawać adnotacje i komentarze do zawartości.<br /><br />To prawo jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc w module RMS Protection w środowisku Windows PowerShell. Zostało zaimplementowane w niektórych aplikacjach dostawców oprogramowania. Nie jest jednak powszechnie używane i obecnie nie jest obsługiwane przez aplikacje pakietu Office.|W prawach niestandardowych pakietu Office: nie zaimplementowane. <br /><br />Nazwa w klasycznym portalu Azure: nie zaimplementowane.<br /><br />Nazwa w szablonach usługi AD RMS: nie zaimplementowane. <br /><br />Stała API lub wartość API: `IPC_GENERIC_COMMENT L"COMMENT`|
-|Nazwa pospolita: **Zapisz jako, Eksportuj** <br /><br />Kodowanie w zasadach: **EXPORT**|Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przypadku dokumentów pakietu Office plik może zostać zapisany bez ochrony.<br /><br />To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji **Wyślij do programu OneNote**.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Eksportuj zawartość (Zapisz jako)**<br /><br />Nazwa w szablonach usługi AD RMS: **Eksportuj (Zapisz jako)** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|Nazwa pospolita: **Zapisz jako, Eksportuj** <br /><br />Kodowanie w zasadach: **EXPORT**|Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przypadku dokumentów pakietu Office i klienta usługi Azure Information Protection plik można zapisać bez ochrony.<br /><br />To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji **Wyślij do programu OneNote**.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Eksportuj zawartość (Zapisz jako)**<br /><br />Nazwa w szablonach usługi AD RMS: **Eksportuj (Zapisz jako)** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXPORT L"EXPORT"`|
 |Nazwa pospolita: **Prześlij dalej** <br /><br />Kodowanie w zasadach: **FORWARD**|Włącza opcję przesyłania dalej wiadomości e-mail oraz dodawania adresatów w wierszach **Do** i **DW**. To prawo dotyczy tylko wiadomości e-mail, a nie dokumentów.<br /><br />Nie zezwala osobie przekazującej wiadomość dalej na przyznanie praw innym użytkownikom jako części akcji przekazywania.|W prawach niestandardowych pakietu Office: odmowa przy użyciu standardowych zasad **Nie przekazuj**.<br /><br />Nazwa w klasycznym portalu Azure: **Prześlij dalej**<br /><br />Nazwa w szablonach usługi AD RMS: **Prześlij dalej** <br /><br />Stała API lub wartość API: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |Nazwa pospolita: **Pełna kontrola** <br /><br />Kodowanie w zasadach: **OWNER**|Przyznaje wszystkie prawa do dokumentu. Można wykonywać wszystkie dostępne akcje.<br /><br />Obejmuje możliwość usunięcia ochrony i ponownego włączenia ochrony dokumentu.|W prawach niestandardowych pakietu Office: jako opcja niestandardowa **Pełna kontrola**.<br /><br />Nazwa w klasycznym portalu Azure: **Pełna kontrola**<br /><br />Nazwa w szablonach usługi AD RMS: **Pełna kontrola** <br /><br />Stała API lub wartość API: `IPC_GENERIC_ALL L"OWNER"`|
 |Nazwa pospolita: **Drukuj** <br /><br />Kodowanie w zasadach: **PRINT**|Włącza opcje związane z drukowaniem zawartości.|W prawach niestandardowych pakietu Office: jako opcja **Drukuj zawartość** w uprawnieniach niestandardowych. Nie jest to ustawienie określane dla poszczególnych odbiorców.<br /><br />Nazwa w klasycznym portalu Azure: **Drukuj**<br /><br />Nazwa w szablonach usługi AD RMS: **Drukuj** <br /><br />Stała API lub wartość API: `IPC_GENERIC_PRINT L"PRINT"`|
@@ -56,15 +56,19 @@ W tabeli poniżej znajduje się lista poziomów uprawnień i pełna lista praw w
 
 |Poziom uprawnień|Aplikacje|Zawarte prawa (nazwa pospolita)|
 |---------------------|----------------|---------------------------------|
-|Przeglądanie|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Odpowiedz; Odpowiedz wszystkim|
-|Osoba dokonująca przeglądu|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
-|Współautor|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
-|Współwłaściciel|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1); Pełna kontrola|
+|Przeglądanie|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)|Wyświetl, Otwórz, Odczytaj; Odpowiedz; Odpowiedz wszystkim|
+|Osoba dokonująca przeglądu|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
+|Współautor|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj [[2]](#footnote-2); Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
+|Współwłaściciel|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1); Pełna kontrola|
 
 ----
 
 ###### <a name="footnote-1"></a>Przypis 1
-Nie dotyczy aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows.
+Nie dotyczy aplikacji do udostępniania usługi Rights Management dla systemu Windows ani klienta usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza).
+
+###### <a name="footnote-2"></a>Przypis 2
+Nie uwzględniono w kliencie usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza). W tym kliencie prawo użycia eksportu obejmuje możliwość usunięcia ochrony.
+
 
 ## <a name="rights-included-in-the-default-templates"></a>Prawa zawarte w domyślnych szablonach
 W szablonach domyślnych zawarte są następujące prawa:
@@ -102,6 +106,6 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

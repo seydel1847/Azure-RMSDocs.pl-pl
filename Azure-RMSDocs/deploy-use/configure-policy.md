@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
 
 
 ---
@@ -31,11 +31,11 @@ Aby skonfigurować zasady usługi Azure Information Protection:
 
 2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
 
-    Zostanie wyświetlony blok **Azure Information Protection**, w którym możesz skonfigurować zasady usługi Azure Information Protection, z uwzględnieniem następujących elementów:
-
-    - Tytuł i etykietka narzędzia paska usługi Information Protection, które użytkownicy zobaczą w swoich aplikacjach pakietu Office.
+    Zostanie wyświetlony blok **Azure Information Protection**, automatycznie otwierający blok globalnych zasad ochrony informacji, które otrzymują wszyscy użytkownicy. Zawiera on następujące elementy, które można skonfigurować:
 
     - Etykiety, dzięki którym można klasyfikować dokumenty i wiadomości e-mail.
+
+    - Tytuł i etykietka narzędzia paska usługi Information Protection, które użytkownicy zobaczą w swoich aplikacjach pakietu Office.
 
     - Opcja wymuszenia klasyfikacji w momencie zapisywania dokumentów i wysyłania wiadomości e-mail przez użytkowników.
 
@@ -43,6 +43,7 @@ Aby skonfigurować zasady usługi Azure Information Protection:
 
     - Opcja monitowania użytkowników o podanie przyczyny wybrania etykiety, która ma niższą charakterystykę niż oryginalna.
 
+    - Opcja udostępniania linku do niestandardowej pomocy dla użytkowników.
 
 Usługa Azure Information Protection zawiera [zasady domyślne](configure-policy-default.md), które uwzględniają etykiety: **Osobiste**, **Publiczne**, **Wewnętrzne**, **Poufne** i **Tajne**. Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety.
 
@@ -58,7 +59,7 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Domyślne zasady usługi Information Protection](configure-policy-default.md)
 
-- [Konfigurowanie ustawień globalnych zasad](configure-policy-settings.md)
+- [Konfigurowanie ustawień zasad](configure-policy-settings.md)
 
 - [Tworzenie nowej etykiety](configure-policy-new-label.md)
 
@@ -72,6 +73,8 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej](configure-policy-classification.md)
 
+- [Konfigurowanie zasad dla konkretnych użytkowników poprzez użycie zasad o określonym zakresie](configure-policy-scope.md)
+
 ## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
@@ -79,6 +82,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

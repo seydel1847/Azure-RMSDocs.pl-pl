@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
+ms.sourcegitcommit: a38b4f201a05ece08f06b18797a146adecf59053
+ms.openlocfilehash: 1246bfcf3a389e2dcd7a9ef922c3f40150611640
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji w tym katalogu do logowania się do klasycznego portalu Azure, w którym można na przykład konfigurować szablony usługi Rights Management i zarządzać nimi.
 
-Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej: przejdź na stronę [wprowadzenia do platformy Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
+Jeśli organizacja nie ma jeszcze subskrypcji platformy Azure, możesz ją uzyskać, tworząc konto do użycia na potrzeby bezpłatnej wersji próbnej. Przejdź na stronę [Wprowadzenie do usługi Azure](https://account.windowsazure.com/organization) i postępuj zgodnie z instrukcjami.
 
 Więcej informacji można znaleźć w następujących zasobach dokumentacji usługi Azure Active Directory:
 
@@ -35,12 +35,17 @@ Więcej informacji można znaleźć w następujących zasobach dokumentacji usł
 
 Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi AD, zobacz artykuł [Integrowanie tożsamości użytkownika lokalnego z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-> [!NOTE]
-> Jeśli masz urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub odpowiednika dostawcy uwierzytelniania:
-> 
-> -   Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
+### <a name="scenarios-that-have-specific-requirements"></a>Scenariusze, które wiążą się z określonymi wymaganiami 
 
-## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
+Komputery z zainstalowanym pakietem Office 2010: 
+
+- W przypadku kont federacyjnych (na przykład w warunkach użycia usługi AD FS) wymagane jest zastosowanie uwierzytelniania zintegrowanego systemu Windows. W tym scenariuszu uwierzytelnianie oparte na formularzach nie umożliwi uwierzytelnienia użytkowników w ramach usługi Azure Information Protection.
+
+Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub za pośrednictwem innego dostawcy uwierzytelniania, którego usługi stanowią ich odpowiednik:
+
+- Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
+
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
 Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:
 
 -   Office 2013 (minimalna wersja):
@@ -75,6 +80,6 @@ Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

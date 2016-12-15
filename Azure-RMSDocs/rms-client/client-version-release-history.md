@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
-ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: fe6491f413b928a85b2a181ee22cfe17f39149ef
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. Klient jest uwzględniony w wykazie usługi Microsoft Update (kategoria: **Azure Information Protection**) i zawsze możesz pobrać najnowszą wersję z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy. Wersje wcześniejsze niż wersja ogólnie dostępna nie są wyświetlane. 
+Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy. Wersje wcześniejsze niż wersja ogólnie dostępna nie są wyświetlane.
+
+Oprócz bieżącej wersji istnieje obecnie wersja **zapoznawcza** klienta usługi Azure Information Protection, którą można pobrać tylko z Centrum pobierania Microsoft. Oferuje ona taką samą funkcjonalność dotyczącą plików chronionych jak aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows — za pomocą opcji dostępnych w Eksploratorze plików i przeglądarce po kliknięciu prawym przyciskiem myszy. Aby uzyskać więcej informacji, zobacz [wpis w blogu](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/) i wersję wstępną dokumentacji: [Podręcznik użytkownika ochrony informacji Azure](client-user-guide.md).
 
 > [!NOTE]
 > Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, sprawdź najpierw, czy ten problem nie dotyczy najnowszej wersji.
@@ -62,6 +64,6 @@ Aby uzyskać więcej informacji dotyczących instalowania klienta, zobacz [Insta
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -1,27 +1,27 @@
 ---
-title: "Konfigurowanie ustawień globalnych zasad | Azure Information Protection"
-description: "Istnieją 3 ustawienia w zasadach usługi Azure Information Protection, które mają zastosowanie do wszystkich użytkowników i urządzeń."
+title: "Konfigurowanie ustawień zasad | Azure Information Protection"
+description: "Skonfiguruj ustawienia w zasadach usługi Azure Information Protection mające zastosowanie do wszystkich użytkowników i urządzeń."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 8fa2ed9ff9ebe5c850ab5681e4dcc1f3d3c676b3
-ms.openlocfilehash: de5f5fbddb84e4444751e9fefbfe6ec3fe3e45e4
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 9611b1fb11a66bbe1bd2b717d3c16bec6f944874
 
 
 ---
 
-# <a name="how-to-configure-the-global-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień globalnych zasad usługi Azure Information Protection
+# <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
-Istnieją cztery ustawienia w zasadach usługi Azure Information Protection, które mają zastosowanie do wszystkich użytkowników i urządzeń:
+Poza tytułem i etykietką narzędzia paska usługi Information Protection istnieją cztery ustawienia w zasadach usługi Azure Information Protection, które mają zastosowanie do wszystkich użytkowników i urządzeń:
 
 ![Ustawienia globalne zasad usługi Azure Information Protection](../media/info-protect-policy-settings.png)
 
@@ -32,7 +32,7 @@ Aby skonfigurować te ustawienia:
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** skonfiguruj następujące ustawienia globalne:
+2. Jeśli ustawienia, które chcesz skonfigurować, będą miały zastosowanie do wszystkich użytkowników, skonfiguruj następujące ustawienia globalne z bloku **Zasady: Globalne**:
 
     - **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**: w przypadku ustawienia dla tej opcji wartości **Wł.** wszystkie zapisane dokumenty i wysłane wiadomości e-mail będą musiały mieć zastosowaną etykietę. Etykiety mogą być przypisywane ręcznie przez użytkownika, automatycznie na podstawie [warunku](configure-policy-classification.md) lub domyślnie (przy użyciu opcji **Wybierz etykietę domyślną**). 
 
@@ -49,12 +49,14 @@ Aby skonfigurować te ustawienia:
     Ta opcja nie ma zastosowania wobec etykiet podrzędnych.
 
     - **Podaj niestandardowy adres URL dla klienta usługi Azure Information Protection dla strony sieci Web „Powiedz mi więcej**: użytkownicy widzą ten link w oknie dialogowym usługi **Microsoft Azure Information Protection**, w sekcji **Pomoc i opinie** po wybraniu pozycji **Ochrona** > **Pomoc i opinie** na karcie **Narzędzia główne** w swoich aplikacjach pakietu Office. Domyślnie ten link prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection). Jeśli chcesz przejść do alternatywnej strony sieci Web, możesz wprowadzić adres URL protokołu HTTP lub HTTPS (zalecane). Nie jest przeprowadzana żadna weryfikacja, czy wprowadzony niestandardowy adres URL jest dostępny lub jest wyświetlany poprawnie na wszystkich urządzeniach.
-    
-    Na przykład dla pomocy technicznej możesz wprowadzić adres strony dokumentacji firmy Microsoft, która zawiera informacje na temat instalowania klienta i korzystania z niego (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) lub informacje o wersji (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**). Alternatywnie możesz opublikować własną stronę sieci Web zawierającą informacje dla użytkowników pozwalające skontaktować się z Twoją pomocą techniczną lub film, który krok po kroku objaśni użytkownikom, jak używać skonfigurowanych etykiet.
+        
+        Na przykład dla pomocy technicznej możesz wprowadzić adres strony dokumentacji firmy Microsoft, która zawiera informacje na temat instalowania klienta i korzystania z niego (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) lub informacje o wersji (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**). Alternatywnie możesz opublikować własną stronę sieci Web zawierającą informacje dla użytkowników pozwalające skontaktować się z Twoją pomocą techniczną lub film, który krok po kroku objaśni użytkownikom, jak używać skonfigurowanych etykiet.
+        
+     Te ustawienia mogą zostać zastąpione dla określonych użytkowników po utworzeniu [zasad o określonym zakresie](configure-policy-scope.md). Aby skonfigurować te ustawienia w zasadach o określonym zakresie, najpierw wybierz te zasady o określonym zakresie w bloku **Azure Information Protection**.
 
 3. Kliknij przycisk **Zapisz**, aby zapisać zmiany.
 
-4. Aby udostępnić zmiany użytkownikom, kliknij przycisk **Opublikuj**.
+4. Aby udostępnić użytkownikom zmiany, w początkowym bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -71,6 +73,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

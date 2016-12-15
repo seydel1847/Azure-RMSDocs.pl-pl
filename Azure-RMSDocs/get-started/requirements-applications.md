@@ -4,7 +4,7 @@ description: "Identyfikowanie aplikacji, które korzystają z interfejsów API u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
-ms.openlocfilehash: 32c3c5869ffd7d0bbcbe52a9db6cbb53d89016ec
+ms.sourcegitcommit: 0bba37c12226bc6954f2d371f98ebd3f47f8508d
+ms.openlocfilehash: 94a61cbd047a58f1b088c97a3ca833d49d999145
 
 
 ---
@@ -33,7 +33,7 @@ O ile nie wskazano inaczej, obsługiwane możliwości dotyczą zarówno usługi 
 
 Informacje dotyczące kolumn tabeli:
 
--   **Chroniony plik PDF:** pliki, które mają rozszerzenie nazwy PPDF i są tworzone automatycznie podczas używania aplikacji RMS sharing do udostępniania plików pakietu Office i plików PDF pocztą e-mail. Aplikacja RMS sharing oraz aplikacja Azure Information Protection dla systemów iOS i Android zawierają czytnik dla chronionych plików PDF. Jeśli wcześniej utworzono pliki PDF chronione za pomocą usługi Azure RMS lub AD RMS, można nadal odczytywać je na urządzeniach z systemem Windows, iOS lub Android przy użyciu programów Foxit Reader i Nitro Pro.
+-   **Chroniony plik PDF:** pliki, które mają rozszerzenie nazwy PPDF i są tworzone automatycznie podczas używania aplikacji RMS sharing do udostępniania plików pakietu Office i plików PDF pocztą e-mail. Aplikacja do udostępniania usług RMS, aplikacja Azure Information Protection dla systemów iOS i Android oraz klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza) zawierają czytnik chronionych plików PDF. Jeśli wcześniej utworzono pliki PDF chronione za pomocą usługi Azure RMS lub AD RMS, można nadal odczytywać je na urządzeniach z systemem Windows, iOS lub Android przy użyciu programów Foxit Reader i Nitro Pro.
 
 -   **Poczta e-mail:** klienci poczty e-mail z listy mogą chronić wiadomości e-mail, które będą automatycznie chronić wszystkie dołączone pliki. W tym scenariuszu funkcja podglądu klienta umożliwia wyświetlanie chronionej zawartości (wiadomości i załączników) autoryzowanym odbiorcom. Jednak jeśli sama wiadomość e-mail nie jest chroniona, ale załącznik jest, funkcja podglądu klienta nie ma możliwości wyświetlania chronionego załącznika autoryzowanym odbiorcom.
 
@@ -42,7 +42,7 @@ Informacje dotyczące kolumn tabeli:
 
 |**System operacyjny urządzenia**|Word, Excel, PowerPoint|Chroniony plik PDF|Poczta e-mail|Inne typy plików|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplikacje mobilne pakietu Office (tylko usługa Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Siemens JT2Go: pliki JT (tylko Windows 10)|
+|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Aplikacje mobilne pakietu Office (tylko usługa Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)<br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Klient usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza): tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS dla programu AutoCAD [[8]](#footnote-8): .dwg<br /><br />Siemens JT2Go: pliki JT (tylko Windows 10)|
 |**iOS**|Pakiet Office dla urządzeń iPad i iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Aplikacja Azure Information Protection [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Aplikacja Azure Information Protection [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />OWA dla systemu iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Aplikacja Azure Information Protection [[1]](#footnote-1): tekst, obrazy<br /><br />TITUS Docs: plik PFILE|
 |**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (tylko usługi Azure RMS) [[1]](#footnote-1)|Aplikacja Azure Information Protection [[1]](#footnote-1)<br /><br />Aplikacja GigaTrust dla systemu Android<br /><br />Foxit Reader<br /><br />Aplikacja RMS sharing [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Aplikacja Azure Information Protection [[1]](#footnote-1)<br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />OWA dla systemu Android [[3]](#footnote-3) i [[7]](#footnote-7)<br /><br />Poczta e-mail Samsung (urządzenia S3 i nowsze) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Aplikacja Azure Information Protection [[1]](#footnote-1): tekst, obrazy|
 |**OS X**|Office 2011 (tylko usługi AD RMS)<br /><br />Office 2016 dla komputerów Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />Aplikacja RMS sharing [[1]](#footnote-1)|Outlook 2011 (tylko usługi AD RMS)<br /><br />Outlook 2016 dla komputerów Mac<br /><br />Outlook dla komputerów Mac|Aplikacja RMS sharing [[1]](#footnote-1): tekst, obrazy, plik PFILE|
@@ -52,32 +52,38 @@ Informacje dotyczące kolumn tabeli:
 |**Blackberry 10**|Nieobsługiwane|Nieobsługiwane|Poczta e-mail Blackberry [[4]](#footnote-4)|Nieobsługiwane|
 
 
-##### <a name="footnote-1"></a>Przypis 1
+###### <a name="footnote-1"></a>Przypis 1
 Obsługuje wyświetlanie zawartości chronionej.
 
-##### <a name="footnote-2"></a>Przypis 2 
+###### <a name="footnote-2"></a>Przypis 2 
 Obsługuje wyświetlanie chronionych dokumentów po przekazaniu niechronionego dokumentu do chronionej biblioteki usług SharePoint Online i OneDrive dla Firm. 
 
-##### <a name="footnote-3"></a>Przypis 3
+###### <a name="footnote-3"></a>Przypis 3
 Jeśli adresat chronionej wiadomości e-mail nie korzysta z serwera poczty Exchange lub jeśli nadawca należy do innej organizacji, tę zawartość można otworzyć wyłącznie przy użyciu wzbogaconego klienta poczty e-mail, na przykład programu Outlook. Nie będzie można użyć do tego programu Outlook Web Access.
 
-##### <a name="footnote-4"></a>Przypis 4
+###### <a name="footnote-4"></a>Przypis 4
 Używa funkcji Exchange ActiveSync IRM, którą musi włączyć administrator programu Exchange. Użytkownicy mogą przeglądać chronione wiadomości e-mail, odpowiadać nadawcy i opowiadać wszystkim nadawcom, ale nie mogą chronić nowych wiadomości e-mail.
 
 Jeśli adresat chronionej wiadomości e-mail nie korzysta z serwera poczty Exchange lub jeśli nadawca należy do innej organizacji, tę zawartość można otworzyć wyłącznie przy użyciu wzbogaconego klienta poczty e-mail, na przykład programu Outlook. Nie można otworzyć tej zawartości przy użyciu usługi Outlook Web Access ani mobilnych klientów poczty używających funkcji Exchange Active Sync IRM.
 
-##### <a name="footnote-5"></a>Przypis 5
+###### <a name="footnote-5"></a>Przypis 5
 Obsługuje wyświetlanie i edytowanie chronionych dokumentów systemu iOS; obsługuje wyświetlanie chronionych dokumentów systemu Android. Aby uzyskać więcej informacji, zobacz następujący wpis w blogu pakietu Office: [Azure Rights Management support comes to Office for iPad and iPhone](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) (Obsługa usługi Azure Rights Management dołączana do pakietu Office dla urządzeń iPad i iPhone).
 
-##### <a name="footnote-6"></a>Przypis 6
+###### <a name="footnote-6"></a>Przypis 6
 Aby uzyskać więcej informacji, zobacz [dokumentację produktu WorxMail](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html) firmy Citrix.
 
-##### <a name="footnote-7"></a>Przypis 7
+###### <a name="footnote-7"></a>Przypis 7
 Aby uzyskać więcej informacji, zobacz następujący wpis na blogu pakietu Office: [OWA for Android now available on select devices](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) (Program OWA dla systemu Android teraz dostępny na wybranych urządzeniach).
+
+###### <a name="footnote-8"></a>Przypis 8
+Aby uzyskać więcej informacji, zobacz następujący wpis w blogu Enterprise and Mobility: [SealPath brings RMS protection to AutoCAD (Ochrona w ramach usług RMS w programie AutoCAD dzięki wtyczce SealPath):(https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)
+
 
 ## <a name="more-information-about-azure-rms-support-for-office"></a>Więcej informacji na temat obsługi usługi Azure RMS dla pakietu Office
 
 Usługa Azure RMS jest ściśle zintegrowana z aplikacjami Word, Excel, PowerPoint i Outlook, w których ta funkcja jest często określana jako Zarządzanie prawami do informacji (IRM, Information Rights Management). Następujące wersje klienta pakietu Office obsługują ochronę plików i wiadomości e-mail przy użyciu usługi Azure RMS:
+
+- Usługa Office 365 ProPlus: pakiety Office 2016 i Office 2013
 
 - Office Professional Plus 2016
 
@@ -93,6 +99,8 @@ Usługa Azure RMS z pakietem Office Professional Plus 2010 lub Office Profession
 
 - Nieobsługiwana w systemie Windows 10
 
+- Nie obsługuje uwierzytelniania opartego na formularzach dla kont użytkowników federacyjnych. Te konta muszą korzystać z uwierzytelniania zintegrowane systemu Windows.
+
 ## <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>Więcej informacji na temat aplikacji Azure Information Protection dla systemów iOS i Android
 
 Aplikacja RMS sharing dla systemu iOS i Android została zastąpiona przez aplikację Azure Information Protection. Zawiera ona te same funkcje i dodatkowo obsługuje chronione prawami wiadomości e-mail i pliki PDF w usłudze SharePoint Online.
@@ -101,6 +109,12 @@ Jeśli Twoje urządzenia z systemami iOS i Android są zarejestrowane w usłudze
 
 Aby uzyskać więcej informacji, zobacz [FAQ for Microsoft Azure Information Protection app for iOS and Android](../rms-client/mobile-app-faq.md) (Aplikacja Microsoft Azure Information Protection dla systemów iOS i Android — często zadawane pytania).
 
+
+## <a name="more-information-about-the-azure-information-protection-client-for-windows-preview"></a>Więcej informacji na temat klienta usługi Azure Information Protection dla systemu Windows (wersja zapoznawcza)
+
+Ta wersja zapoznawcza klienta usługi Azure Information Protection pozwala ocenić możliwości usługi i wyrazić opinię na jej temat. Ta wersja zastąpi istniejącą aplikację do tworzenia i przetwarzania dokumentów chronionych za pomocą usług Microsoft Rights Management dla systemu Windows. 
+
+Więcej informacji na temat tej wersji zapoznawczej klienta znajduje się we [wpisie w blogu](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/) oraz w [podręczniku użytkownika wersji zapoznawczej](../rms-client/client-user-guide.md).
 
 ## <a name="more-information-about-the-rights-management-sharing-application"></a>Więcej informacji na temat aplikacji do udostępniania usługi Rights Management
 
@@ -119,15 +133,15 @@ Aby uzyskać więcej informacji o aplikacji do udostępniania usługi Rights Man
 > [!NOTE]
 > Aplikacja RMS sharing dla systemów iOS i Android została obecnie zastąpiona przez aplikację Azure Information Protection.
 
-## <a name="more-information-about-other-applications-that-support-azure-rms"></a>Więcej informacji o innych aplikacjach, które obsługują usługę Azure RMS
+## <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Więcej informacji o innych aplikacjach, które obsługują usługę Azure Information Protection
 
-Oprócz aplikacji wyszczególnionych w tabeli, z usługą Azure RMS można integrować każdą aplikację obsługującą interfejsy API usługi RMS, w tym:
+Poza aplikacjami z tabeli z usługą Azure Information Protection może zostać zintegrowana także każda aplikacja, która obsługuje interfejsy API dla usługi Azure Rights Management, w tym:
 
-- Aplikacje biznesowe, które są zapisywane we własnym zakresie za pomocą zestawu RMS SDK
+- Aplikacje biznesowe tworzone w firmach za pomocą zestawów RMS SDK
 
-- Aplikacje od dostawców oprogramowania, które zostały napisane przy użyciu zestawu RMS SDK
+- Aplikacje od dostawców oprogramowania napisane przy użyciu zestawów RMS SDK.
 
-Aby uzyskać więcej informacji o zestawie SDK, zobacz artykuł [Zestaw Microsoft Rights Management SDK](../develop/developers-guide.md).
+Aby uzyskać więcej informacji, zobacz [przewodnik dewelopera usługi Azure Information Protection](../develop/developers-guide.md).
 
 ## <a name="applications-that-are-not-supported-by-azure-rms"></a>Aplikacje, które nie są obsługiwane przez usługi Azure RMS
 
@@ -153,6 +167,6 @@ Aby uzyskać informacje o obsłudze usługi Azure RMS przez najczęściej używa
 Informacje o sposobach konfigurowania najczęściej używanych aplikacji dla usługi Azure RMS opisano w temacie [Konfigurowanie aplikacji dla usługi Azure Rights Management](../deploy-use/configure-applications.md).
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

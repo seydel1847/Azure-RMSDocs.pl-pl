@@ -4,15 +4,15 @@ description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 0b9d796b8908a42a7aceb95f3c3319028e9a9dbe
-ms.openlocfilehash: d12916a0b60e27592c3917ab5421196392156506
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
 
 
 ---
@@ -27,14 +27,13 @@ Na poniższej ilustracji przedstawiono ten pasek usługi Information Protection 
 
 ![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/info-protect-bar-default.png)
 
-Pobierz klienta usługi Azure Information Protection z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+Pobierz klienta usługi Azure Information Protection z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Obecnie można zainstalować ogólnie dostępną wersję usługi oraz jej wersję zapoznawczą. Wersja zapoznawcza zawiera nowe funkcje, które użytkownik może wypróbować, i może ulec zmianie. Aby uzyskać więcej informacji, zobacz następujące powiadomienie we wpisie w blogu: [Azure Information Protection December preview now available](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/) (Dostępna jest grudniowa wersja zapoznawcza usługi Azure Information Protection)
 
-Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacyjnego i aplikacji dla klienta usługi Azure Information Protection: [Wymagania dla usługi Azure Information Protection](../get-started/requirements-azure-rms.md).
-
+Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacyjnego i aplikacji dla klienta usługi Azure Information Protection: [Wymagania dla usługi Azure Information Protection](../get-started/requirements-azure-rms.md). Ponadto w przypadku klienta w wersji zapoznawczej na komputerach z systemem Windows 7 z dodatkiem SP1 wymagana jest aktualizacja [KB 2533623](https://support.microsoft.com/en-us/kb/2533623), którą można zainstalować po zainstalowaniu klienta. Jeśli wymagana aktualizacja nie została wcześniej zainstalowana, zostanie wyświetlony monit o jej zainstalowanie.
 
 ## <a name="to-install-the-azure-information-protection-client-manually"></a>Aby zainstalować klienta usługi Azure Information Protection ręcznie
 
-1. Po [pobraniu klienta](https://www.microsoft.com/en-us/download/details.aspx?id=53018) uruchom program **AzInfoProtection.exe** i postępuj zgodnie z monitami, aby zainstalować klienta. Ta instalacja wymaga lokalnych uprawnień administracyjnych.
+1. Po [pobraniu klienta](https://www.microsoft.com/en-us/download/details.aspx?id=53018) uruchom plik wykonywalny, taki jak **AzInfoProtection.exe**, i postępuj zgodnie z monitami, aby zainstalować klienta. Ta instalacja wymaga lokalnych uprawnień administracyjnych.
 
     Wybierz opcję zainstalowania zasad demonstracyjnych, jeśli nie możesz nawiązać połączenia z usługą Office 365 lub Azure Active Directory, ale chcesz zobaczyć i wypróbować klienta usługi Azure Information Protection przy użyciu zasad lokalnych w celach demonstracyjnych. Gdy klient nawiąże połączenie z usługą Azure Information Protection, te zasady demonstracyjne zostaną zastąpione zasadami usługi Azure Information Protection obowiązującymi w organizacji. 
 
@@ -42,11 +41,11 @@ Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacy
 
 ## <a name="to-install-the-azure-information-protection-client-for-users"></a>Aby zainstalować klienta usługi Azure Information Protection dla użytkowników
 
-Możesz użyć skryptu i zautomatyzować instalację klienta Azure Information Protection, korzystając z opcji wiersza polecenia. Aby wyświetlić te opcje instalacji, uruchom polecenie `AzInfoProtection.exe /help`.
+Możesz użyć skryptu i zautomatyzować instalację klienta Azure Information Protection, korzystając z opcji wiersza polecenia. Aby wyświetlić opcje instalacji, uruchom plik wykonywalny z opcją **/help**. Na przykład: `AzInfoProtection.exe /help`.
 
-Na przykład, aby zainstalować klienta w trybie dyskretnym: `AzInfoProtection.exe /passive | quiet`
+Przykład instalacji klienta w trybie dyskretnym: `AzInfoProtection.exe /passive | quiet`
 
-Klient usługi Azure Information Protection znajduje się również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu.
+Klient usługi Azure Information Protection w wersji ogólnodostępnej znajduje się również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu. Wersje zapoznawcze klienta nie znajdują się w wykazie usługi Microsoft Update.
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Aby odinstalować klienta usługi Azure Information Protection
 
@@ -54,9 +53,9 @@ Można użyć dowolnej z tych opcji:
 
 - Odinstaluj program za pomocą Panelu sterowania: kliknij kolejno pozycje **Microsoft Azure Information Protection** > **Odinstaluj**
 
-- Uruchom ponownie plik **AzInfoProtection.exe** i na stronie **Modyfikowanie ustawień** kliknij pozycję **Odinstaluj**. 
+- Uruchom ponownie plik wykonywalny (np. **AzInfoProtection.exe**) i na stronie **Modyfikowanie ustawień** kliknij pozycję **Odinstaluj**. 
 
-- Uruchom polecenie `AzInfoProtection.exe /uninstall`
+- Uruchom plik wykonywalny z opcją **/uninstall**. Na przykład: `AzInfoProtection.exe /uninstall`
 
 
 ## <a name="to-verify-installation-connection-status-or-report-a-problem"></a>Aby zweryfikować instalację lub stan połączenia albo zgłosić problem
@@ -69,7 +68,7 @@ Można użyć dowolnej z tych opcji:
     
         Zobaczysz również wyświetloną nazwę użytkownika, która identyfikuje konto używane do uwierzytelniania w usłudze Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory, które należy do dzierżawy skonfigurowanej dla usługi Azure Information Protection.
 
-    - W sekcji **Pomoc i opinie**: **link Powiedz mi więcej** domyślnie prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień globalnych](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
+    - W sekcji **Pomoc i opinie**: **link Powiedz mi więcej** domyślnie prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
         
         Użyj linku **Wyślij opinię**, aby automatycznie dołączyć dzienniki klienta do wiadomości e-mail, którą można wysłać do zespołu usługi Information Protection w celu zbadania problemu. 
     
@@ -84,6 +83,56 @@ Można użyć dowolnej z tych opcji:
         - Następuje usunięcie klucza rejestru i ustawień: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Jeśli konfigurujesz ustawienia tego klucza rejestru (np. ustawienia przekierowywania do dzierżawy usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz w sieci punkt połączenia usługi), musisz ponownie skonfigurować ustawienia rejestru po zresetowaniu klienta.
         
         - Po zresetowaniu klienta musisz ponownie zainicjować środowisko użytkownika (ta czynność jest również znana jako „uruchamianie”), w którym będą pobierane certyfikaty klienta i najnowsze szablony. W tym celu zamknij wszystkie wystąpienia pakietu Office i uruchom ponownie aplikację pakietu Office. Ta akcja spowoduje również sprawdzenie, czy zostały pobrane najnowsze zasady usługi Azure Information Protection. Wykonaj tę czynność przed ponownym uruchomieniem testów diagnostycznych.
+
+
+## <a name="usage-logging"></a>Rejestrowanie użycia
+
+**[Ta funkcja wymaga wersji zapoznawczej klienta i może ulec zmianie.]**
+
+W przypadku klienta usługi Azure Information Protection w wersji zapoznawczej klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń **aplikacji i usług** systemu Windows, **Azure Information Protection**. Zdarzenia obejmują następujące informacje:
+
+- Data, wersja klienta, identyfikator zasad
+
+- Nazwa zalogowanego użytkownika, nazwa komputera
+
+- Nazwa i lokalizacja pliku
+
+- Działanie:
+
+    - Ustawienie etykiety: identyfikator informacji 101
+    
+    - Ustawienie etykiety (niższej): identyfikator informacji 102
+    
+    - Ustawienie etykiety (wyższej): identyfikator informacji 103
+    
+    - Usunięcie etykiety: identyfikator informacji 104
+   
+    - Zalecane: identyfikator informacji 105
+    
+    - Zastosowanie niestandardowej ochrony: identyfikator informacji 201
+    
+    - Zastosowanie niestandardowej ochrony: identyfikator informacji 202
+    
+    - Logowanie (operacyjne): identyfikator informacji 902
+    
+    - Zasady pobierania (operacyjne): identyfikator informacji 901
+    
+- Źródło akcji:
+    
+    - Ręczny 
+    
+    - Zalecane
+    
+    - Automatyczny  
+    
+    - System (dla zasad logowania i pobierania)
+    
+- Etykieta przed akcją i po niej 
+    
+- Ochrona przed akcją i po niej
+    
+- Uzasadnienie użytkownika (jeśli ma zastosowanie)
+    
 
 ## <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Skróty klawiaturowe dla paska usługi Azure Information Protection
 
@@ -117,6 +166,6 @@ Aby sprawdzić informacje o wersji klienta, zobacz [Historia wersji](client-vers
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

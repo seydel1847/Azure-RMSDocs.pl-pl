@@ -4,15 +4,15 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 0a79642c3707be4c8dd75ccc80569ba90da01236
-ms.openlocfilehash: 18e7dfdc91051836093ad5b36fc9a8705d99dcc0
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 31ef3e41e84515c02ebe97f01025331578273c71
 
 
 ---
@@ -57,9 +57,11 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
 
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować w celu stosowania ochrony usługi Rights Management.
+2. Jeśli etykieta, którą chcesz skonfigurować, będzie miała zastosowanie do wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**. 
 
-3. W bloku **Etykieta** w sekcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** dla pola **Wybierz szablon usług RMS z** wybierz ustawienie **Azure RMS** lub **AD RMS (WERSJA ZAPOZNAWCZA)**.
+     Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
+
+3. W bloku **Etykieta** w sekcji **Ustaw szablon usług RMS w celu ochrony dokumentów i wiadomości e-mail zawierających tę etykietę** w polu **Wybierz szablon usług RMS z** wybierz ustawienie **Azure RMS** lub **AD RMS**.
     
     W większości przypadków wybierzesz usługę **Azure RMS**. Nie należy wybierać usługi AD RMS, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji, która czasami nazywana jest scenariuszem *zachowaj własny klucz* (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md).
     
@@ -73,6 +75,8 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
     
         - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
         
+            Należy pamiętać, że zawsze wyświetlane są wszystkie szablony, nawet jeśli konfigurujesz zasady o określonym zakresie. Na przykład konfigurujesz zasady o określonym zakresie dla grupy Marketing. Możliwe do wyboru szablony usług Azure RMS nie będą ograniczone do szablonów należących do zakresu grupy Marketing. Można wybrać szablon dla działu, którego nie mogą użyć wybrani przez Ciebie użytkownicy. W celu ułatwienia konfiguracji i zminimalizowania potrzeby rozwiązywania problemów należy wziąć pod uwagę nadanie szablonowi dla działu nazwy zgodnej z etykietą w Twoich zasadach o określonym zakresie. 
+            
     - W przypadku wybrania pozycji **Usuń ochronę**:
         
         - Użytkownicy muszą mieć uprawnienia do usuwania ochrony usługi Rights Management w celu zastosowania etykiety, która ma tę opcję. Ta opcja wymaga, aby użytkownicy posiadali [prawa użytkowania](../deploy-use/configure-usage-rights.md) **Eksportuj** (dla dokumentów pakietu Office) lub **Pełna kontrola**, aby byli właścicielami usługi Rights Management (automatycznie udziela prawa użytkowania Pełna kontrola) lub byli [administratorami usługi Azure Rights Management](../deploy-use/configure-super-users.md). Domyślne szablony usługi Rights Management nie obejmują praw użytkowania, które pozwalają użytkownikom na usuwanie ochrony. 
@@ -91,6 +95,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

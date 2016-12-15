@@ -4,15 +4,15 @@ description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Info
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
-ms.openlocfilehash: 1d92c127581d68bb52979d65ddb8704cad7c8039
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: f7b5e9e0bb32e4a04dfb407f11e361d959ebb807
 
 
 ---
@@ -32,9 +32,9 @@ Aby zmienić etykietę, użyj następujących instrukcji.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wybierz etykietę do zmiany, a następnie wprowadź zmiany w bloku **Etykieta** oraz wszelkich kolejnych blokach wedle potrzeb.
+2. Aby zmienić etykietę z zasad globalnych, tak aby dotyczyła wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**, a następnie wprowadź zmiany w bloku **Etykieta** i wszystkich kolejnych wymaganych blokach. Aby zmienić etykietę z [zasad o określonym zakresie](configure-policy-scope.md), tak aby dotyczyła wybranych użytkowników, najpierw wybierz te zasady w początkowym bloku **Azure Information Protection**.
 
-    Wyjątek stanowi sytuacja, w której chcesz zmienić kolejność etykiet. Operację przeprowadza się w tym samym bloku **Azure Information Protection**: kliknij etykietę prawym przyciskiem myszy lub wybierz menu kontekstowe dla etykiety, a następnie wybierz opcję **Przenieś w górę** lub **Przenieś w dół**.
+    Wyjątek stanowi sytuacja, w której chcesz zmienić kolejność etykiet. Operację przeprowadza się w bloku zasad pochodzącym z zasad globalnych lub wybranych przez Ciebie zasad o określonym zakresie: kliknij etykietę prawym przyciskiem myszy lub wybierz menu kontekstowe etykiety, a następnie wybierz opcję **Przenieś w górę** lub **Przenieś w dół**.
 
 3. Jeśli wprowadzisz zmiany w bloku, kliknij przycisk **Zapisz** w tym bloku, aby zachować zmiany.
 
@@ -52,6 +52,6 @@ Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustaw
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
