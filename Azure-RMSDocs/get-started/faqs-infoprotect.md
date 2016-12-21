@@ -4,7 +4,7 @@ description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: ba67bb149b0128b068c86dcf849e2dd49edbf6a7
+ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
+ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
 
 
 ---
@@ -76,11 +76,13 @@ Ponieważ usługa Azure Information Protection nadaje trwałe etykiety i chroni 
 
 ## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>Czy mogę klasyfikować tylko nowe dane, czy też również dane istniejące?
 
-Akcje zasady usługi Azure Information Protection stają się aktywne przy zapisywaniu dokumentów i wysyłaniu wiadomości e-mail, zarówno w przypadku nowej zawartości, jak i zmian w zawartości istniejącej. 
+Akcje zasady usługi Azure Information Protection stają się aktywne przy zapisywaniu dokumentów i wysyłaniu wiadomości e-mail, zarówno w przypadku nowej zawartości, jak i zmian w zawartości istniejącej.
+
+Jeśli masz klienta w wersji zapoznawczej, możesz również szybko sklasyfikować (i opcjonalnie ochronić) istniejące pliki z poziomu Eksploratora plików. 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>Czy usługi Azure Information Protection można używać wyłącznie do klasyfikowania, bez wymuszania szyfrowania i ograniczania prawa użytkowania?
 
-Tak. Można tak skonfigurować zasadę usługi Azure Information Protection, aby wyłącznie nadawała etykiety. W zasadzie można oczekiwać, że będzie się tak dziać w większości już wdrożonych sieci, w których należy chronić tylko podzbiór dokumentów lub wiadomości e-mail wymagających specjalnego zarządzania danymi.
+Tak. Zasady usługi Azure Information Protection można tak skonfigurować, aby były stosowane tylko klasyfikacje bez ochrony (jeśli typ pliku obsługuje tę akcję). W zasadzie można oczekiwać, że będzie się tak dziać w większości już wdrożonych sieci, w których należy chronić tylko podzbiór dokumentów lub wiadomości e-mail wymagających specjalnego zarządzania danymi.
 
 ## <a name="how-does-automatic-classification-work"></a>Jak działa automatyczna klasyfikacja?
 
@@ -100,7 +102,7 @@ Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Infor
 
 ## <a name="can-i-force-all-documents-to-be-classified"></a>Czy można wymusić klasyfikowania wszystkich dokumentów?
 
-Tak. Jeśli wymagasz, aby użytkownicy klasyfikowali wszystkie zapisywane pliki, w portalu Azure należy opcji **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę** nadać wartość **Wł.**. 
+Tak. Jeśli wymagasz, aby użytkownicy klasyfikowali wszystkie zapisywane pliki, w witrynie Azure Portal nadaj ustawieniu zasad **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę** wartość **Wł.**. 
 
 ## <a name="can-i-remove-classification-from-a-file"></a>Czy można usunąć klasyfikację z pliku?
 
@@ -117,11 +119,13 @@ W portalu Azure można wybrać szablon usługi Rights Management, aby automatycz
 
 Podobny przykład pojawia się w [samouczku Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md). Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md).
 
-## <a name="can-a-file-be-classified-with-two-different-classifications"></a>Czy plik może mieć dwie różne klasyfikacje?
+## <a name="can-a-file-have-more-than-one-classification"></a>Czy plik może mieć więcej niż jedną klasyfikację?
 
-W razie potrzeby można utworzyć etykiety podrzędne, aby lepiej opisać podkategorie konkretnej etykiety ważności. Na przykład etykieta główna **Tajne** może zawierać etykiety podrzędne, takie jak **Tajne\prawne** i **Tajne\finanse**. Różnym etykietom podrzędnym można przypisać różne wizualne oznaczenia klasyfikacji i różne szablony usługi Rights Management.
+Użytkownicy mogą jednocześnie wybrać tylko jedną etykietę dla każdego dokumentu lub wiadomości e-mail, co skutkuje często utworzeniem tylko jednej klasyfikacji. Jeśli jednak użytkownicy wybiorą etykietę podrzędną, spowoduje to w rzeczywistości zastosowanie dwóch etykiet jednocześnie: etykiety podstawowej i pomocniczej. Dzięki użyciu etykiet podrzędnych plik może mieć dwie klasyfikacje, które wprowadzają relację typu element nadrzędny/podrzędny na potrzeby dodatkowego poziomu kontroli.
 
-Chociaż obecnie można ustawić oznaczenia wizualne, ochronę i warunki na obu poziomach, przy korzystaniu z poziomów podrzędnych te ustawienia należy konfigurować tylko dla poziomów podrzędnych. W przypadku skonfigurowania tych samych ustawień na etykiecie nadrzędnej i jej etykiecie podrzędnej ustawienia na poziomie podrzędnym mają pierwszeństwo.
+Na przykład etykieta **Tajne** może zawierać etykiety podrzędne, takie jak **Prawne** i **Finanse**. Tym etykietom podrzędnym można przypisać różne wizualne oznaczenia klasyfikacji i różne szablony usługi Rights Management. Użytkownik nie może wybrać bezpośrednio etykiety **Tajne**, tylko jedną z jej etykiet podrzędnych, na przykład **Prawne**. W efekcie widzą oni, że została ustawiona etykieta **Tajne \ Prawne**. Metadane dla tego pliku zawierają jedną niestandardową właściwość tekstową dla etykiety **Tajne**, jedną niestandardową właściwość tekstową dla etykiety **Prawne** i jeszcze jedną właściwość, która zawiera obie wartości (**Tajne Prawne**). 
+
+Jeśli korzystasz z etykiet podrzędnych, nie konfiguruj wizualnych oznaczeń, ochrony i warunków dla etykiety podstawowej. Jeśli korzystasz z poziomów podrzędnych, skonfiguruj te ustawienia tylko dla etykiet podrzędnych. Jeśli skonfigurujesz te ustawienia dla etykiety podstawowej i jej etykiety podrzędnej, pierwszeństwo mają ustawienia etykiety podrzędnej.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
@@ -152,6 +156,9 @@ W przypadku użytkowników, którzy używają aplikacji sieci web Outlook lub kl
 
 Jeśli etykiety usługi Azure Information Protection zakładają zastosowanie ochrony zarządzania prawami, dodaj tę ochronę do konfiguracji reguły, zaznaczając opcję modyfikacji zabezpieczeń wiadomości, zastosuj ochronę praw, a następnie wybierz szablon RMS lub opcję Nie przesyłaj dalej.
 
+Możesz również skonfigurować reguły transportu na potrzeby mapowania odwrotnego. W tym celu po wykryciu etykiety usługi Azure Information Protection ustaw odpowiednią klasyfikację wiadomości programu Exchange. Wykonaj następujące czynności:
+
+- Dla każdej etykiety usługi Azure Information Protection utwórz regułę transportu, która będzie stosowana, jeśli nagłówek **msip_labels** będzie zawierał nazwę Twojej etykiety (na przykład **Poufne**), i zastosuj klasyfikację wiadomości mapowaną do tej etykiety.
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>Jak rozwiązania DLP i inne aplikacje integrują się z usługą Azure Information Protection?
 
@@ -198,6 +205,6 @@ Jeśli występuje problem z usługą Azure Information Protection i jest używan
 Jeśli masz pytania lub opinie, użyj witryny usługi Yammer [Azure Information Protection](https://www.yammer.com/askipteam/). 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

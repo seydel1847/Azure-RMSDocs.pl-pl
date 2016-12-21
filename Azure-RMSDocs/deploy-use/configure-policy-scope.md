@@ -4,7 +4,7 @@ description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
+ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
+ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
 
 
 ---
@@ -33,7 +33,7 @@ Zasady o określonym zakresie, podobnie jak etykiety, są uporządkowane w porta
 
 Jako że zasada o określonym zakresie zawsze dziedziczy etykiety i ustawienia z zasad globalnych, podczas tworzenia lub edytowania zasady o określonym zakresie wyświetlane są etykiety z zasad globalnych. Podczas edycji zasady o określonym zakresie nie można edytować etykiet z zasad globalnych. Można jednak dodać etykiety podrzędne do etykiet odziedziczonych z zasad globalnych.
 
-Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie Poufne, to etykietę tę widzą wszyscy użytkownicy. Nie można jej usunąć ani zmienić jej kolejności z użyciem zasad o określonym zakresie. Można jednak utworzyć dla działu marketingu zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję Poufne\Promocje. Następnie można utworzyć dla działu sprzedaży kolejne zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję Poufne\Partnerzy. Każda etykieta podrzędna może następnie zostać skonfigurowana pod kątem różnych ustawień; etykieta podrzędna będzie widoczna tylko dla użytkowników w poszczególnych działach.
+Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie **Poufne**, to etykietę tę widzą wszyscy użytkownicy. Nie można jej usunąć ani zmienić jej kolejności z użyciem zasad o określonym zakresie. Można jednak utworzyć dla działu marketingu zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję **Poufne \ Promocje**. Można również utworzyć dla działu sprzedaży kolejne zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję **Poufne \ Partnerzy**. Każda etykieta podrzędna może następnie zostać skonfigurowana pod kątem różnych ustawień; etykieta podrzędna będzie widoczna tylko dla użytkowników w poszczególnych działach.
 
 
 Aby skonfigurować zasadę usługi Azure Information Protection o określonym zakresie:
@@ -63,6 +63,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

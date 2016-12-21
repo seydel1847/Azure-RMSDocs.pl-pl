@@ -4,15 +4,15 @@ description: "Etykiety, które użytkownicy widzą na pasku usługi Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
+ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
+ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 
 ---
@@ -25,7 +25,9 @@ Etykiety, które użytkownicy widzą na pasku usługi Information Protection, mo
 
 ![Usuwanie lub zmiana kolejności etykiet w zasadach usługi Azure Information Protection](../media/info-protect-contextmenu.png)
 
-Zamiast usuwać etykietę możesz ją po prostu wyłączyć, jeśli chcesz zachować konfigurację etykiety, jednocześnie uniemożliwiając jej wyświetlanie na pasku usługi Information Protection.
+Jeśli usuniesz etykietę, która została zastosowana do dokumentów lub wiadomości e-mail, a następnie opublikujesz zasady usługi Azure Information Protection, taka etykieta zostanie automatycznie usunięta z tych dokumentów lub wiadomości e-mail, kiedy zostaną one otwarte następnym razem w kliencie usługi Azure Information Protection.
+
+Zamiast usuwać etykietę, możesz ją po prostu wyłączyć, jeśli chcesz ją zachować, jednocześnie uniemożliwiając jej wyświetlanie na pasku usługi Information Protection.
 
 Kolejność etykiet określ w taki sposób, aby była ona logiczna na pasku usługi Information Protection. Przykładowo ułóż etykiety w kolejności z rosnącą ważnością, aby użytkownicy widzieli etykietę wskazującą najmniejszą ważność jako pierwszą, a etykietę wskazującą największą ważność jako ostatnią. [Zasady domyślne](configure-policy-default.md) używają takiej konfiguracji.
 
@@ -59,6 +61,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
