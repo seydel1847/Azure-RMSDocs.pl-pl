@@ -74,6 +74,7 @@ Usługa Azure Information Protection jest zgodna z trybem FIPS 140-2, jeśli klu
 ## <a name="next-steps"></a>Następne kroki
 Jeśli chcesz przeprowadzić migrację z usługi AD RMS do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 

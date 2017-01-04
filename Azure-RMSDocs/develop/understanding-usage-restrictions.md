@@ -73,10 +73,7 @@ Każde prawo użytkownika, wymienione w prawej kolumnie usługi AD RMS, ma opis,
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 
- 
-
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->

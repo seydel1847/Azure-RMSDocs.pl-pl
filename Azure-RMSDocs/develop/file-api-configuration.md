@@ -85,7 +85,7 @@ Ustawienie dowolnej innej wartości lub brak wartości powoduje zachowanie domy�
 
 Jeśli próba szyfrowania zostanie podjęta na typie pliku, który jest zablokowany, wystąpi błąd [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx).
 
-### <a name="file-api-file-support-details"></a>Interfejs API plików — szczegóły dotyczące obsługi plików
+### <a name="file-api---file-support-details"></a>Interfejs API plików — szczegóły dotyczące obsługi plików
 
 Natywny mechanizm obsługi można dodać dla dowolnego typu pliku (rozszerzenia). Na przykład dla dowolnego rozszerzenia &lt;roz&gt; (innego niż rozszerzenia pakietu Office) będzie używany ciąg \*.p&lt;roz&gt;, jeśli konfiguracja administratora dla tego rozszerzenia ma wartość „NATIVE”.
 
@@ -151,10 +151,8 @@ HKEY_LOCAL_MACHINE
 
 - [Uwagi dla deweloperów](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO3-->

@@ -43,10 +43,8 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
  
 ## <a name="related-topics"></a>Tematy pokrewne
 * [Przegląd](ad-rms-overview.md)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO4-->
