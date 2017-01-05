@@ -8,7 +8,7 @@ Twoja subskrypcja może obsługiwać usługę Azure Rights Management, jednak do
 
 ![Klasyczny portal Azure](../media/AzRMS_Tutorial_1_Screenshots.png)
 
-#### Aby aktywować usługę Rights Management w centrum administracyjnym usługi Office 365
+#### <a name="to-activate-rights-management-from-the-office-365-admin-center"></a>Aby aktywować usługę Rights Management w centrum administracyjnym usługi Office 365
 
 1.  Przejdź do [portalu usługi Office 365](https://portal.office.com/) i zaloguj się przy użyciu konta służbowego.
 
@@ -31,7 +31,7 @@ Zostanie wyświetlony komunikat **Usługa Rights Management została aktywowana*
 
 Tym razem nie klikaj pozycji **Funkcje zaawansowane**. Kliknięcie tej pozycji spowoduje wyświetlenie klasycznego portalu Azure umożliwiającego konfigurowanie szablonów, które nie są potrzebne w tym samouczku. Zamiast tego możesz zamknąć centrum administracyjne usługi Office 365.
 
-#### Aby aktywować usługę Rights Management w portalu platformy Azure
+#### <a name="to-activate-rights-management-from-the-azure-portal"></a>Aby aktywować usługę Rights Management w portalu platformy Azure
 
 1.  Przejdź do [klasycznego portalu Azure](http://go.microsoft.com/fwlink/p/?LinkID=275081) i zaloguj się.
 
@@ -55,6 +55,6 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 |Informacje na temat szablonów domyślnych i tworzenia nowych szablonów niestandardowych →|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
