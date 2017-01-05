@@ -18,6 +18,6 @@
 # [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
