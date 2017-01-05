@@ -6,7 +6,7 @@ Ta aplikacja jest dostępna do bezpłatnego pobierania i oferuje skryptową inst
 
 ![Zrzuty ekranu przedstawiające instalację usługi RMS](../media/AzRMS_Tutorial_2_Screenshots.png)
 
-#### Aby pobrać i zainstalować aplikację do udostępniania usługi Rights Management
+#### <a name="to-download-and-install-the-rights-management-sharing-application"></a>Aby pobrać i zainstalować aplikację Rights Management sharing
 
 1.  Przejdź do strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) w witrynie firmy Microsoft w sieci Web.
 
@@ -27,6 +27,6 @@ Teraz możesz już chronić swoje pliki zawierające informacje, które chcesz u
 |Różnice między ochroną natywną i ogólną →|[Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
