@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
 
 
 ---
@@ -404,7 +404,7 @@ Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *r
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## <a name="workerthread-a-supporting-method"></a>WorkerThread — metoda wsparcia
+## <a name="workerthread---a-supporting-method"></a>WorkerThread — metoda wsparcia
 
 
 Metoda *WorkerThread()* jest wywoływana przez dwa poprzednie przykładowe scenariusze; **Utwórz strumień pliku chronionego** i **Chroni plik na podstawie zasad** w następujący sposób:
@@ -591,9 +591,9 @@ Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej.
 
 **Uwaga** Wszystkie metody biblioteki uwierzytelniania mogą zgłaszać wyjątek **rmsauth::Exception**.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

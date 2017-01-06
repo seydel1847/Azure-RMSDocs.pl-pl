@@ -3,34 +3,35 @@ title: Zestaw Microsoft Rights Management SDK 4.2 | Azure RMS
 description: "Zestaw RMS SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z ochroną informacji."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: b69cf4dc11731182314ab806cfc454f256cd37af
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 98902b25bbade72c4d2c5ee3a2a5306bc863d103
 
 
 ---
 
-# Zestaw Microsoft Rights Management SDK 4.2
+# <a name="microsoft-rights-management-sdk-42"></a>Zestaw Microsoft Rights Management SDK 4.2
 
-## Cel ##
+## <a name="purpose"></a>Cel ##
 
 Zestaw Microsoft Rights Management SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z ochroną informacji opartą na usługach Microsoft Rights Management Services. Deweloperzy mogą tworzyć aplikacje wykorzystujące usługi Active Directory Rights Management Services (AD RMS) lub Azure Rights Management do ochrony informacji. Te aplikacje mogą w łatwy sposób chronić informacje lub używać ich, zapewniając przejrzystą obsługę złożonych funkcji zabezpieczeń, takich jak zarządzanie kluczami, szyfrowanie i odszyfrowywanie, tworzenie zasad i uprawnień, bezpieczne buforowanie oraz komunikacja z usługami AD RMS i Azure RMS.
 
-## Docelowa grupa deweloperów ##
+## <a name="developer-audience"></a>Docelowa grupa deweloperów ##
 
 Interfejsy API zestawu MS RMS SDK 4.2 używają standardowych języków programowania i modeli dla każdego systemu operacyjnego, dlatego są znane i łatwe w użyciu.
 
-## Obsługiwane systemy operacyjne ##
+## <a name="supported-operating-systems"></a>Obsługiwane systemy operacyjne ##
 
 Zestaw MS RMS SDK 4.2 jest dostępny dla następujących systemów operacyjnych:
 
@@ -40,7 +41,7 @@ Zestaw MS RMS SDK 4.2 jest dostępny dla następujących systemów operacyjnych:
 - Sklep Windows
 - Portable C++ do obsługi systemów operacyjnych Linux
 
-## Sekcje ##
+## <a name="sections"></a>Sekcje ##
 
 [Przegląd](overview.md) — Usługi Microsoft Rights Management (AD RMS i Azure RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem. Przy użyciu aplikacji obsługujących prawa właściciele zawartości mogą zdefiniować użytkowników, którzy mogą otwierać, modyfikować, drukować i przekazywać zawartość oraz podejmować inne związane z nią działania.
 
@@ -50,14 +51,9 @@ Zestaw MS RMS SDK 4.2 jest dostępny dla następujących systemów operacyjnych:
 
 [Dokumentacja interfejsu API](api-reference-4-2.md) — Zestaw MS RMS SDK 4.2 obsługuje kilka systemów operacyjnych, uwzględnionych w poniższym spisie.
 
- 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

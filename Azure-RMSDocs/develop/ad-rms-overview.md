@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 816d665314fb77931433e36420b54c3ab6f689b9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f41640a0a6c46dc7cacf69dc3784d703b971e9d0
 
 
 ---
@@ -56,12 +56,10 @@ Pozostałe tematy w tej sekcji dotyczą architektury usług RMS i ich implementa
 * [Koncepcje związane z usługami RMS](application-types.md)
 * [Wprowadzenie](getting-started-with-ad-rms-2-0.md)
 * [Dokumentacja usług AD RMS dla specjalistów IT](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

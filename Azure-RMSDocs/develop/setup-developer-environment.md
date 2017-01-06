@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b369c480cc9841a7c8d92f95af3319e0e49f43d0
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: bde72c5da6ae30a78221d226f650285a9c4fc83e
 
 
 ---
@@ -33,14 +33,10 @@ W następujących tematach opisano sposób konfigurowania środowiska dewelopers
 |[Windows Phone](windows-phone-apps.md)|Aplikacje systemu Windows Phone mogą używać zestawu MS RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).|
 |[Sklep Windows](winrt-sdk.md)|Aplikacje Sklepu Windows mogą używać zestawu MS RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).|
 
- 
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

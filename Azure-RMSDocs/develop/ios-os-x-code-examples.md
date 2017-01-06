@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: faa1f33d1151a2d4700cc64556510994c708a414
-ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: cd2436b20a489835aec650c2c5a19d0b0cc50eff
 
 
 ---
@@ -29,7 +29,7 @@ W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dl
 
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 
 Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
@@ -213,7 +213,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
          }
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
 
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
@@ -280,8 +280,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
           }
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

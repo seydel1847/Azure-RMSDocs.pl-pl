@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 7adaf60ffc79edffc38a070d451c1f65c8a41300
 
 
 ---
@@ -32,14 +32,9 @@ Poniższe tematy zawierają informacje przydatne w procesie projektowania aplika
 - [Jak korzystać ze śledzenia dokumentów](how-to-use-document-tracking.md) — korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstawowych kwestii związanych z zarządzaniem skojarzonymi metadanymi i rejestracją w usłudze.
 - [Terminologia](terms.md) — Definicje terminów specyficznych dla usług Rights Management Services.
 
- 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
