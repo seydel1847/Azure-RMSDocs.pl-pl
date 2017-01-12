@@ -2,6 +2,6 @@
 
 Zanim dodasz komentarz, zapoznaj się z [regułami naszego serwisu](../house-rules.md).
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

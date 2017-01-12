@@ -31,6 +31,6 @@
 # [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
