@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 386453578a5ea8eeb874d7f27badb8f041dda659
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 
 
 ---
@@ -36,7 +36,7 @@ Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Man
 ![Architektura łącznika usługi RMS — omówienie](../media/RMS_connector.png)
 
 
-### <a name="onpremises-servers-supported"></a>Obsługa serwerów lokalnych
+### <a name="on-premises-servers-supported"></a>Obsługa serwerów lokalnych
 
 Łącznik usługi RMS obsługuje następujące serwery lokalne: Exchange Server, SharePoint Server i serwery plików działające pod kontrolą systemu operacyjnego Windows Server i używające funkcji infrastruktury klasyfikacji plików do klasyfikowania oraz stosowania zasad do dokumentów pakietu Office w folderze. 
 
@@ -50,7 +50,7 @@ Wersje tych serwerów lokalnych obsługiwane przez łącznik usług RMS można z
 
 Można użyć łącznika usług RMS nawet w przypadku, gdy niektórzy użytkownicy są podłączeni do usług online w scenariuszu hybrydowym. Na przykład skrzynki pocztowe niektórych użytkowników korzystają z usługi Exchange Online, podczas gdy skrzynki pocztowe innych użytkowników korzystają z programu Exchange Server. Po zainstalowaniu łącznika usługi RMS wszyscy użytkownicy mogą chronić informacje oraz korzystać z wiadomości e-mail i załączników za pomocą usługi Azure RMS, podczas gdy ochrona informacji współpracuje płynnie z dwiema konfiguracjami wdrożenia.
 
-### <a name="support-for-customermanaged-keys-byok"></a>Obsługa kluczy zarządzanych przez klienta (BYOK)
+### <a name="support-for-customer-managed-keys-byok"></a>Obsługa kluczy zarządzanych przez klienta (BYOK)
 
 Jeśli zarządzasz własnym kluczem dzierżawy dla usług Azure RMS (scenariusz z użyciem własnego klucza — BYOK), łącznik usług RMS i serwery lokalne, które go używają, nie uzyskują dostępu do modułu HSM zawierającego Twój klucz dzierżawy. Jest to spowodowane tym, że wszystkie operacje kryptograficzne, które używają klucza dzierżawy, są wykonywane w ramach usługi Azure RMS, a nie lokalnie.
 
@@ -97,7 +97,9 @@ Przed zainstalowaniem łącznika usługi RMS upewnij się, że zostały spełnio
 
 Przejdź do kroku 1: [Instalowanie i konfigurowanie łącznika usługi Azure Rights Management](install-configure-rms-connector.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 
