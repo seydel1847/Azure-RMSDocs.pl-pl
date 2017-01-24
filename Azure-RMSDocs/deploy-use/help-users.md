@@ -13,8 +13,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
 
 
 ---
@@ -112,10 +112,11 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi prawami użytkowania, które zostały określone dla danego użytkownika. Na przykład, jeśli została wybrana opcja **Nie odpowiadaj wszystkim**, opcja **ODPOWIEDZ WSZYSTKIM** w oknie komunikatu jest niedostępna.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: 80fd7a7ce1ac6b7a8b2867729dd3e09e9b106d9b
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 2e59fcdb2bb2f058855c0a41031e951953c8c936
 
 
 ---
@@ -82,11 +82,10 @@ Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templ
 
 Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przeprowadzenia dodatkowej konfiguracji przed użyciem narzędzia Zarządzanie prawami do informacji (IRM). Aby uzyskać informacje o współdziałaniu aplikacji z usługą Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
 
-## <a name="comments"></a>Komentarze
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

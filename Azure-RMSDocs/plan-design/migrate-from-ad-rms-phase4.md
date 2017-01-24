@@ -13,13 +13,13 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3786fa2529b442f7d31603be09f9b80f1a46d171
-ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9c78ac81a90d46ab8d56cd205474fdf85f486c3d
 
 
 ---
 
-# <a name="migration-phase-4-post-migration-tasks"></a>Faza 4 migracji — zadania po migracji
+# <a name="migration-phase-4---post-migration-tasks"></a>Faza 4 migracji — zadania po migracji
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -35,7 +35,7 @@ Aby monitorować działanie serwerów usługi AD RMS, można na przykład sprawd
 
 Po zlikwidowaniu serwerów usługi AD RMS można skorzystać z możliwości przejrzenia szablonów w klasycznym portalu Azure. Umożliwi to ich skonsolidowanie, dzięki czemu użytkownicy będą mieć mniej szablonów do wyboru, a także ponowne ich skonfigurowanie, a nawet dodanie nowych. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
-## <a name="step-9-rekey-your-azure-information-protection-tenant-key"></a>Krok 9. Ponowne tworzenie klucza dzierżawy usługi Azure Information Protection
+## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>Krok 9. Ponowne tworzenie klucza dzierżawy usługi Azure Information Protection
 Ten krok jest stosowany tylko wtedy, gdy wybrana topologia klucza dzierżawy jest zarządzana przez firmę Microsoft, a nie przez klienta (rozwiązanie BYOK z usługą Azure Key Vault).
 
 Ten krok jest opcjonalny, ale zalecany, jeśli klucz dzierżawy usługi Azure Information Protection jest zarządzany przez firmę Microsoft i został zmigrowany z usługi AD RMS. Ponowne utworzenie klucza w tym scenariuszu zabezpiecza klucz dzierżawy usługi Azure Information Protection przed potencjalnymi naruszeniami zabezpieczeń klucza usługi AD RMS.
@@ -51,9 +51,10 @@ Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usługi
 
 Teraz po zakończeniu migracji sprawdź [plan wdrożenia](deployment-roadmap.md), aby zidentyfikować wszelkie inne zadania wdrożenia, których wykonanie może być konieczne.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

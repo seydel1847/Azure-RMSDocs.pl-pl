@@ -65,6 +65,6 @@ Po sprawdzeniu klasyfikacji, etykietowania i ochrony w działaniu zobaczmy, jak 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

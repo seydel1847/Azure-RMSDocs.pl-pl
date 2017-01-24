@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: e1c1d4a0a2cd48be5322be4f4fedd3350e3b2e0a
 
 
 ---
@@ -40,7 +40,7 @@ Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyśl
 |Poufne|Te dane zawierają poufne informacje biznesowe. Udostępnianie tych danych nieautoryzowanym użytkownikom może zaszkodzić organizacji. Przykładami informacji poufnych są informacje dotyczące pracowników, poszczególnych projektów lub umów z klientami oraz dane dotyczące konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
-## <a name="sublabels"></a>Etykiety podrzędne
+## <a name="sub-labels"></a>Etykiety podrzędne
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -60,8 +60,9 @@ Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyśl
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy). 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

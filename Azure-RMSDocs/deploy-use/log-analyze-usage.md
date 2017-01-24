@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca8694a26f0f9b537a3e3a6b1f468d89cefe6206
 
 
 ---
@@ -154,7 +154,7 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
 
 
-#### <a name="exceptions-for-the-userid-field"></a>Wyjątki w polu user-id
+#### <a name="exceptions-for-the-user-id-field"></a>Wyjątki w polu user-id
 Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, istnieją dwa wyjątki, kiedy wartość w polu nie odwzorowuje rzeczywistego użytkownika:
 
 -   Wartość **'microsoftrmsonline@&lt;identyfikator_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
@@ -236,11 +236,12 @@ Jeśli masz w magazynie Azure dzienniki sprzed zmiany funkcji rejestrowania usł
 
 Aby uzyskać więcej informacji na temat korzystania z programu Windows PowerShell z usługą Azure Rights Management, zobacz temat [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](administer-powershell.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

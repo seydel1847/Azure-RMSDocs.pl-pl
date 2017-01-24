@@ -13,13 +13,13 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 0d4b1cdc2620a1f8cf9ddced24a898a38d8e9b57
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 942b9bfffbd4a43c922ada87220f4eecb78f1d11
 
 
 ---
 
-# <a name="scenario-configure-work-folders-for-persistent-protection"></a>Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
+# <a name="scenario---configure-work-folders-for-persistent-protection"></a>Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -120,9 +120,9 @@ W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scena
 > 
 > Jeśli po upływie pewnego czasu stwierdzisz, że istnieje wiele takich żądań, możesz zdecydować się na zdefiniowanie własnego niestandardowego szablonu w tym scenariuszu, który przyzna prawo Współwłaściciel tylko określonym użytkownikom (np. menedżerom lub pomocy technicznej), natomiast standardowi użytkownicy będą mieli przyznane prawa Współautor lub jakiekolwiek [prawa dostępu](../deploy-use/configure-usage-rights.md) uznane przez Ciebie za odpowiednie.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -223,6 +223,6 @@ Aby sprawdzić informacje o wersji klienta, zobacz [Historia wersji](client-vers
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,13 +13,13 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików
+# <a name="scenario---secure-your-most-few-valuable-files"></a>Scenariusz — zabezpieczanie najbardziej wartościowych (kilku) plików
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -70,7 +70,7 @@ W przypadku tego scenariusza należy spełnić następujące wymagania:
 
 2.  Opublikuj nowy szablon.
 
-### <a name="to-protect-the-files-inplace"></a>Aby objąć pliki ochroną miejscową
+### <a name="to-protect-the-files-in-place"></a>Aby objąć pliki ochroną miejscową
 
 1.  W Eksploratorze plików przejdź do pierwszego folderu zawierającego pliki do objęcia ochroną:
 
@@ -145,9 +145,9 @@ Poniższe pliki zostały teraz objęte ochroną na bardzo wysokim poziomie, dzi�
 
 -   Jeśli nie masz dostępu do tych plików lub jeśli zauważysz w nich podejrzane zmiany, zadzwoń do całodobowej linii eskalacji problemów pomocy technicznej. Jej numer znajduje się w chronionej wiadomości e-mail wysłanej przez dział IT.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

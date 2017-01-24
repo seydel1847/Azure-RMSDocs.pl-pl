@@ -13,8 +13,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 1de26925961ad560cb9aa86ebc16f7354c7cff1f
 
 
 ---
@@ -48,7 +48,7 @@ Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, 
 
 Teraz konto zostało utworzone i możesz już chronić pliki oraz odczytywać pliki chronione przez innych. Po wyświetleniu monitu o zalogowanie się w celu włączenia ochrony plików lub odczytania chronionych plików wprowadź taki sam adres e-mail i hasło co użyte podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
 
-## <a name="technical-overview-of-the-signup-process"></a>Omówienie techniczne procesu tworzenia konta
+## <a name="technical-overview-of-the-sign-up-process"></a>Omówienie techniczne procesu tworzenia konta
 Usługa RMS dla użytkowników indywidualnych korzysta z samoobsługowego procesu tworzenia konta, który jest również stosowany przez inne usługi używające technologii firmy Microsoft opartych na chmurze do uwierzytelniania użytkowników.
 
 Oto co dzieje się w tle, gdy użytkownik tworzy konto usługi RMS dla użytkowników indywidualnych, a jego organizacja nie ma subskrypcji usługi Office 365 ani platformy Azure, a w związku z tym nie ma na platformie Azure katalogu służącego do uwierzytelniania użytkowników:
@@ -94,10 +94,9 @@ W trakcie tego procesu organizacja nie jest obciążana żadnymi opłatami, a dz
 ## <a name="next-steps"></a>Następne kroki
 Zobacz [Metody kontrolowania przez administratorów kont utworzonych dla usług RMS dla użytkowników indywidualnych](rms-for-individuals-take-control.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

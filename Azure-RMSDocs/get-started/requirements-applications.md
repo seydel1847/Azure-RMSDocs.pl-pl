@@ -169,6 +169,6 @@ Informacje o sposobach konfigurowania najczęściej używanych aplikacji dla us�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

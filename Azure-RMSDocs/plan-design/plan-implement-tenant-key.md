@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0403d85406cc8642654569958e3482a5d991352
-ms.openlocfilehash: 10e51ed108bedc59a66be86b8b27a140f899dd45
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 433a655870556ed045273713f6773f36c3d86fc1
 
 
 ---
@@ -141,9 +141,10 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
 
     Aby uzyskać więcej informacji, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
