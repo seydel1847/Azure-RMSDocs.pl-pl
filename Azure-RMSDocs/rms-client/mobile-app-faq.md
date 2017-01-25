@@ -5,7 +5,7 @@ keywords: "Niektóre często zadawane pytania dotyczące korzystania z aplikacji
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 01/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
+ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
+ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
 
 
 ---
@@ -33,6 +33,16 @@ Ta aplikacja umożliwia wyświetlanie wiadomości e-mail chronionych prawami (pl
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>Czy mogę otwierać pliki PDF z chronionych bibliotek programów SharePoint i OneDrive dla Firm?
 
 Tak, można otwierać chronione pliki PDF udostępnione przez innych użytkowników za pośrednictwem programów SharePoint i OneDrive dla Firm. Naciśnij link, a następnie wybierz tę aplikację, aby otworzyć go za jej pomocą. 
+
+## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>Czy na moim urządzeniu przenośnym można uruchomić aplikację Azure Information Protection?
+
+Aplikacja Azure Information Protection wymaga minimalnej wersji **iOS 8** lub **Android 4.4**.
+
+Jeśli masz jedną z tych wersji lub wyższą od nich, możesz zainstalować i uruchomić aplikację na swoim urządzeniu przenośnym:
+
+- Jeśli urządzenie przenośne jest zarządzane przez usługę Microsoft Intune, możesz mieć możliwość zainstalowania aplikacji Azure Information Protection z poziomu portalu firmy.
+
+- Jeśli urządzenie przenośne nie jest zarządzane przez usługę Microsoft Intune lub aplikacja Azure Information Protection nie jest dostępna z poziomu portalu firmy, możesz zainstalować aplikację bezpośrednio ze sklepu iTunes i sklepu Google Play lub klikając ikonę iOS lub Android w sekcji **Urządzenia przenośne** na [stronie pobierania usługi Azure Information Protection](https://portal.azurerms.com/#/download). 
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>Jak zacząć korzystać z aplikacji przeglądarki?
 
@@ -60,8 +70,9 @@ W aplikacji przejdź do pozycji **Ustawienia** > **Wyślij opinię**.
 
 Należy zadać pytanie na naszej [witrynie Yammer](https://www.yammer.com/AskIPTeam) lub [wysłać wiadomość e-mail do zespołu usługi Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

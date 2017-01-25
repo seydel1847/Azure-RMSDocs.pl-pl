@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6d4cc50259b9d9bb73a75c648f9e6915562accf
-ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
+ms.sourcegitcommit: 171a47f9c22dec24f72f8f21392d6577efd807a5
+ms.openlocfilehash: d050629999c3a886eb8d422f4f38c22d586e0824
 
 
 ---
@@ -53,11 +53,11 @@ Aby uzyskać listę typów plików, które są obsługiwane w Eksploratorze plik
 
 2. W oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację i ochronę w sposób zdefiniowany przez administratora. Jeśli nie można wybrać etykiety (jest niedostępna), wybrany plik nie obsługuje klasyfikacji, ale można go chronić.
 
-3. Aby chronić plik, wybierz ustawienie ochrony spośród ustawień zdefiniowanych przez administratora dla wybranej etykiety (**Automatycznie, na podstawie wybranej etykiety klasyfikacji**) lub określ własne ustawienia (**Zastąp uprawnieniami niestandardowymi**).
+3. Jeśli chcesz określić własne ustawienia ochrony zamiast korzystać z ustawień ochrony, które administrator mógł dołączyć do wybranej etykiety, zaznacz opcję **Chroń za pomocą uprawnień niestandardowych**.
     
-    Opcja zastąpienia nie używa żadnych ustawień ochrony, które administrator mógł zdefiniować dla wybranej etykiety. Zamiast tego można określić własne ustawienia ochrony. 
+    Wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 
-4. Jeśli wybrano opcję zastąpienia, należy określić następujące ustawienia:
+4. W przypadku wybrania opcji ustawień niestandardowych należy teraz określić następujące ustawienia:
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     
@@ -108,9 +108,10 @@ Aby uzyskać instrukcje dotyczące wykonywania określonych czynności, zobacz n
 
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

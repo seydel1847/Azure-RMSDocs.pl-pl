@@ -4,7 +4,7 @@ description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
-ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
 
 
 ---
@@ -54,15 +54,19 @@ Aby skonfigurować zasadę usługi Azure Information Protection o określonym za
 
 6. Po zakończeniu wprowadzania zmian, które mają dotyczyć wskazanych zasad o określonym zakresie w pierwszym bloku usługi **Azure Information Protection** upewnij się, że zasady są uporządkowane we właściwej kolejności stosowania. Należy zwrócić na to uwagę szczególnie wówczas, gdy dla tego samego użytkownika wybrano wiele zasad o określonym zakresie. Następnie kliknij przycisk **Publikuj**. 
 
-Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uruchamiania obsługiwanej aplikacji pakietu Office. Klient pobiera wszelkie zmiany zasad globalnych lub zasad o określonym zakresie, które mają zastosowanie do danego użytkownika.
+Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uruchomienia obsługiwanej aplikacji pakietu Office lub otwarcia Eksploratora plików. Klient pobiera wszelkie zmiany zasad globalnych lub zasad o określonym zakresie, które mają zastosowanie do danego użytkownika.
+
+> [!TIP]
+> Po zapisaniu zakresu zasad można użyć **Edytora wielu zasad** w pierwszym bloku **Azure Information Protection**, aby wyświetlić i skonfigurować wszystkie etykiety z zasadami usługi Azure Information Protection. Ta metoda zapewnia łatwy sposób porównania etykiet z wielu zasad (zasady globalne i wszystkie zasady o określonym zakresie). Jednak ten edytor nie pozwala na dodawanie i zmienianie kolejności etykiet, ani na wyświetlanie i konfigurowanie ustawień zasad.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

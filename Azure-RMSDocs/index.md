@@ -38,7 +38,7 @@ ms.openlocfilehash: 035327cdfc771bae7ff36dca1a7a888223222252
           <li><mark><b>NOWOŚĆ</b></mark> <a href="./deploy-use/configure-policy-scope.md">Jak skonfigurować zasady należące do zakresu (wersja zapoznawcza)</a></li>
           <li><mark><b>NOWOŚĆ</b></mark> <a href="./rms-client/client-user-guide.md">Podręcznik użytkownika (wersja zapoznawcza)</a></li>
           <li><a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Sesje usługi Azure Information Protection z konferencji Microsoft Ignite 2016</a></li>
-          <li><a href="./understand-explore/what-is-information-protection.md">Co to jest Azure Information Protection?</a></li>
+          <li><a href="./understand-explore/what-is-information-protection.md">Co to jest usługa Azure Information Protection?</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Samouczek Szybki start dla usługi Azure Information Protection</a></li>
@@ -229,6 +229,6 @@ ms.openlocfilehash: 035327cdfc771bae7ff36dca1a7a888223222252
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

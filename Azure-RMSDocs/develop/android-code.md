@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 503a99f01335f3085b5d13c9faaf0a6f05063490
-ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 847d19feaea442da66296565f0ffb5b0663ad170
 
 
 ---
@@ -28,7 +28,7 @@ W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dl
 **Uwaga**: w przykładzie kodu i opisach używany jest termin MSIPC (Microsoft Information Protection and Control) jako odwołanie do procesu klienta.
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 Poniżej podano przykłady kodu z większej aplikacji przykładowej reprezentujące scenariusze programowania ważne dla orientacji w pakiecie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
 
@@ -437,7 +437,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
 
@@ -524,13 +524,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
           …
         }
 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
