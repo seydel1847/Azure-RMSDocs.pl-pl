@@ -4,7 +4,7 @@ description: "Masz pytanie dotyczące wersji zapoznawczej usługi Azure Informat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
-ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
 
 
 ---
@@ -188,7 +188,7 @@ Szczególnie w przypadku korzystania z konta administratora należy koniecznie s
 
 Aby zalogować się jako inny użytkownik, należy edytować rejestr:
 
-1. W Edytorze rejestru przejdź do pozycji **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP** i usuń klucz **TokenCache**.
+1. W Edytorze rejestru przejdź do pozycji **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP** i usuń wartość **TokenCache**.
 
 2. Uruchom ponownie wszystkie otwarte aplikacje pakietu Office i zaloguj się przy użyciu innego konta użytkownika. Jeśli w aplikacji pakietu Office nie został wyświetlony monit o zalogowanie się do usługi Azure Information Protection, wróć do okna dialogowego **Microsoft Azure Information Protection** i kliknij przycisk **Zaloguj** w zaktualizowanej sekcji **Stan klienta**.
 
@@ -204,7 +204,9 @@ Jeśli występuje problem z usługą Azure Information Protection i jest używan
 
 Jeśli masz pytania lub opinie, użyj witryny usługi Yammer [Azure Information Protection](https://www.yammer.com/askipteam/). 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

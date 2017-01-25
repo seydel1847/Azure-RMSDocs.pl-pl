@@ -4,15 +4,15 @@ description: "Etykiety, które użytkownicy widzą na pasku usługi Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
-ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d8e0f53d85ee7a02ee7fef66eaf76ce6551535d2
 
 
 ---
@@ -27,7 +27,7 @@ Etykiety, które użytkownicy widzą na pasku usługi Information Protection, mo
 
 Jeśli usuniesz etykietę, która została zastosowana do dokumentów lub wiadomości e-mail, a następnie opublikujesz zasady usługi Azure Information Protection, taka etykieta zostanie automatycznie usunięta z tych dokumentów lub wiadomości e-mail, kiedy zostaną one otwarte następnym razem w kliencie usługi Azure Information Protection.
 
-Zamiast usuwać etykietę, możesz ją po prostu wyłączyć, jeśli chcesz ją zachować, jednocześnie uniemożliwiając jej wyświetlanie na pasku usługi Information Protection.
+Zanim usuniesz etykietę rozważ, czy nie byłoby lepiej ją tylko wyłączyć. Po wyłączeniu etykiety, która została zastosowana do dokumentów i wiadomości e-mail, nie zostanie ona usunięta z tych dokumentów i wiadomości e-mail, ale przestanie być wyświetlana na pasku usługi Information Protection jako etykieta możliwa do wyboru przez użytkownika. Wyłączenie etykiety umożliwia również zachowanie oryginalnej konfiguracji, dzięki czemu w późniejszym czasie po ponownym jej włączeniu można będzie umożliwić użytkownikom wybór tej etykiety.
 
 Kolejność etykiet określ w taki sposób, aby była ona logiczna na pasku usługi Information Protection. Przykładowo ułóż etykiety w kolejności z rosnącą ważnością, aby użytkownicy widzieli etykietę wskazującą najmniejszą ważność jako pierwszą, a etykietę wskazującą największą ważność jako ostatnią. [Zasady domyślne](configure-policy-default.md) używają takiej konfiguracji.
 
@@ -57,10 +57,11 @@ Użyj poniższych instrukcji, aby wprowadzić te zmiany.
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

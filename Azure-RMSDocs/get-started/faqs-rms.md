@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb9b9c1308abe6b1b5803cba7ba254d54cbac812
-ms.openlocfilehash: d3d11dba936ca8901b701008e55df8d73be8bded
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 181357691df02c8532a6f28eef689dcacdfd937f
 
 
 ---
@@ -43,7 +43,7 @@ Usługa Azure Rights Management automatycznie generuje certyfikaty XrML i zarzą
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>Gdzie można znaleźć informacje o rozwiązaniach innych firm, które integrują się z usługą Azure RMS?
 
-Wielu dostawców oprogramowania już ma lub wdraża rozwiązania zintegrowane z usługą Azure Rights Management. Liczba takich rozwiązań rośnie bardzo szybko. Dla użytkowników może być bardzo przydatne zapoznanie się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i śledzenie najnowszych aktualizacji kanału [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli jednak masz konkretne pytanie, wyślij wiadomość e-mail do zespołu ochrony informacji na adres askipteam@microsoft.com.
+Wielu dostawców oprogramowania już ma lub wdraża rozwiązania zintegrowane z usługą Azure Rights Management. Liczba takich rozwiązań rośnie bardzo szybko. Dla użytkowników może być bardzo przydatne zapoznanie się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i śledzenie najnowszych aktualizacji kanału [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli jednak masz konkretne pytanie, wyślij wiadomość e-mail do zespołu usługi Information Protection na adres: askipteam@microsoft.com.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>Czy istnieje pakiet zarządzania lub podobny mechanizm monitorowania dla łącznika usługi RMS?
 
@@ -159,11 +159,12 @@ Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowa
 
 Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

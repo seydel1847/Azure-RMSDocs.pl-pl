@@ -4,7 +4,7 @@ description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, któ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 12/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: afbaf9bfc2b898d8dece415a26045ec52f7deaac
-ms.openlocfilehash: 15d017cda5e390a6fd2b639ef451a15422981ae4
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f262d64a1903eb47bf5f54577fa68df9d43c7f2d
 
 
 ---
@@ -248,14 +248,17 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 3.  Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
 ## <a name="next-steps"></a>Następne kroki
-Kiedy łącznik usługi RMS zostanie zainstalowany i skonfigurowany, a serwery zostaną skonfigurowane, aby z niego korzystać, administratorzy IT i użytkownicy będą mogli chronić oraz stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure RMS. Aby użytkownikom było łatwiej, warto wdrożyć aplikację RMS sharing, która instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
+Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane, aby mogły z niego korzystać, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure Rights Management. Aby użytkownikom było łatwiej, warto wdrożyć aplikację RMS sharing, która instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
+
+Należy zauważyć, że można skonfigurować szablony przypisane do działów, które mają być używane w zgodzie z regułami transportu programu Exchange lub infrastrukturą FCI systemu Windows Server. Konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 
 Możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] użytkownikom i administratorom.
 
 Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi Azure Rights Management](monitor-rms-connector.md). 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

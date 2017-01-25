@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
-ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
+ms.sourcegitcommit: 5b7a73c153edfdc7db3a55ee714b05f65d5090f4
+ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
 
 
 ---
@@ -35,15 +35,9 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
 1.  W zależności od tego, czy logowanie ma miejsce w Centrum administracyjnym usługi Office 365, czy też w klasycznym portalu Azure, wykonaj jedną z następujących czynności:
 
-    -   Przejdź do [Centrum administracyjnego usługi Office 365](https://portal.office.com/):
+    -   Nawigacja w **Centrum administracyjnym usługi Office 365** zależy od tego, czy używana jest wersja zapoznawcza centrum administracyjnego usługi Office 365 (i jaka wersja) czy klasyczna wersja centrum administracyjnego usługi Office 365. W przypadku wszystkich wersji można jednak przejść bezpośrednio do strony [zarządzania prawami](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx): 
 
-        1.  W lewym okienku kliknij opcję **Ustawienia usługi**.
-
-        2.  W sekcji **Ustawienia usługi** kliknij opcję **Rights Management**.
-
-        3.  W sekcji **Ochrona informacji użytkownika** kliknij przycisk **Zarządzaj**.
-
-        4.  W sekcji **Rights Management** kliknij opcję **Zaawansowane funkcje**.
+        1.  W sekcji **dodatkowa konfiguracja** kliknij przycisk **zaawansowane funkcje**.
 
             > [!NOTE]
             > Jeśli usługa Rights Management nie została aktywowana, najpierw kliknij pozycję **Aktywuj** i potwierdź wybór. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
@@ -98,7 +92,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
 3.  Następnie należy kliknąć przycisk Dalej i przypisać jedno z wymienionych praw do wybranych użytkowników i grup.
 
-    Więcej informacji na temat każdego z praw (także niestandardowych) można znaleźć w wyświetlanych opisach. Bardziej szczegółowe informacje są także dostępne w sekcji [Konfigurowanie praw użytkowania usługi Azure Rights Management](configure-usage-rights.md). Aplikacje obsługujące usługę RMS mogą jednak różnić się w zakresie sposobu wdrażania tych praw. Należy zapoznać się z ich dokumentacją i samodzielnie przeprowadzić testy z użyciem aplikacji wykorzystywanych przez użytkowników, aby sprawdzić zachowanie szablonów przed ich wdrożeniem dla użytkowników. Aby wyświetlić ten szablon na potrzeby testów tylko dla administratorów, należy ustawić go jako szablon dla działu (krok 6).
+    Więcej informacji na temat każdego z praw (także niestandardowych) można znaleźć w wyświetlanych opisach. Bardziej szczegółowe informacje są także dostępne w sekcji [Konfigurowanie praw użytkowania usługi Azure Rights Management](configure-usage-rights.md). Aplikacje obsługujące usługę Rights Management mogą jednak różnić się sposobami wdrażania tych praw. Należy zapoznać się z ich dokumentacją i samodzielnie przeprowadzić testy z użyciem aplikacji wykorzystywanych przez użytkowników, aby sprawdzić zachowanie szablonów przed ich wdrożeniem dla użytkowników. Aby wyświetlić ten szablon na potrzeby testów tylko dla administratorów, należy ustawić go jako szablon dla działu (krok 6).
 
 4.  W przypadku wybrania opcji **Niestandardowy** należy kliknąć przycisk Dalej, a następnie wybrać prawa niestandardowe.
 
@@ -141,10 +135,10 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Następnie należy sprawdzić, czy nie jest konieczne wprowadzenie zmian w następujących ustawieniach:
 
-    |Ustawienie|Więcej informacji|
-    |-----------|--------------------|
-    |**wygaśnięcie zawartości**|Należy określić dla danego szablonu datę lub liczbę dni, po upływie których nie będzie możliwe otwarcie plików chronionych za pomocą szablonu. Można określić datę lub wskazać liczbę dni, jakie muszą minąć począwszy od momentu objęcia pliku ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|
-    |**dostęp w trybie offline**|Użycie tego ustawienia umożliwia zrównoważenie wszelkich wymagań dotyczących zabezpieczeń z wymaganiem, aby użytkownicy byli w stanie otworzyć chronione pliki w sytuacji, gdy nie mają oni połączenia z Internetem.<br /><br />Jeśli wybrane zostanie ustawienie uniemożliwiające uzyskanie dostępu do zawartości w przypadku braku połączenia z Internetem lub ustawienie umożliwiające uzyskanie dostępu do zawartości jedynie w ciągu określonej liczby dni, po osiągnięciu progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp musi zostać zarejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, użytkownicy otrzymują przed otwarciem pliku monit o zalogowanie się.<br /><br />Poza ponownym uwierzytelnieniem następuje także ponowna ocena zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć różny poziom dostępu do tego samego pliku po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do pliku.|
+    |Ustawienie|Więcej informacji| Zalecane ustawienie
+    |-----------|--------------------|--------------------|
+    |**wygaśnięcie zawartości**|Należy określić dla danego szablonu datę lub liczbę dni, po upływie których nie będzie możliwe otwarcie plików chronionych za pomocą szablonu. Można określić datę lub wskazać liczbę dni, jakie muszą minąć począwszy od momentu objęcia pliku ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|**Zawartość nigdy nie wygasa**, jeśli zawartość nie ma określonych wymagań związanych z czasem.|
+    |**dostęp w trybie offline**|Użycie tego ustawienia umożliwia zrównoważenie wszelkich wymagań dotyczących zabezpieczeń z wymaganiem, aby użytkownicy byli w stanie otworzyć chronione pliki w sytuacji, gdy nie mają oni połączenia z Internetem.<br /><br />Jeśli wybrane zostanie ustawienie uniemożliwiające uzyskanie dostępu do zawartości w przypadku braku połączenia z Internetem lub ustawienie umożliwiające uzyskanie dostępu do zawartości jedynie w ciągu określonej liczby dni, po osiągnięciu progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp musi zostać zarejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, użytkownicy otrzymują przed otwarciem pliku monit o zalogowanie się.<br /><br />Poza ponownym uwierzytelnieniem następuje także ponowna ocena zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć różny poziom dostępu do tego samego pliku po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do pliku.|W zależności od tego, jak bardzo poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Zawartość jest dostępna tylko z połączeniem z Internetem** dla bardzo poufnych danych, których udostępnienie nieautoryzowanym osobom mogłoby spowodować szkodę w firmie. To zalecenie nadaje zabezpieczeniom wyższy priorytet niż elastyczności. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
 
 10. Po upewnieniu się, że szablon jest prawidłowo skonfigurowany pod kątem użytkowników, kliknij przycisk **OPUBLIKUJ**, aby ustawić szablon jako widoczny dla użytkowników, a następnie kliknij przycisk **ZAPISZ**.
 
@@ -168,7 +162,9 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 ## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 
