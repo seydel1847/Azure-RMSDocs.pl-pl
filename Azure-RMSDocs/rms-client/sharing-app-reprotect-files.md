@@ -14,8 +14,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
 
 
 ---
@@ -39,7 +39,7 @@ Na przykład jeśli ktoś inny włączył ochronę pliku za pomocą aplikacji do
 
 Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już chroniony, zobacz [Usuwanie ochrony pliku](sharing-app-remove-protection.md).
 
-## <a name="to-reprotect-a-file-inplace"></a>Aby ponownie włączyć ochronę pliku w miejscu
+## <a name="to-re-protect-a-file-in-place"></a>Aby ponownie włączyć ochronę pliku w miejscu
 
 1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Na przykład:
 
@@ -72,7 +72,7 @@ Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
 > -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
 
-## <a name="to-reprotect-a-file-that-you-have-emailed"></a>Aby ponownie włączyć ochronę pliku wysłanego pocztą e-mail
+## <a name="to-re-protect-a-file-that-you-have-emailed"></a>Aby ponownie włączyć ochronę pliku wysłanego pocztą e-mail
 
 Jeśli chcesz zmienić uprawnienia do pliku wysłanego pocztą e-mail:
 
@@ -95,8 +95,9 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

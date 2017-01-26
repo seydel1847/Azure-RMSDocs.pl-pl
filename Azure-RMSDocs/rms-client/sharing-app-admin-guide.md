@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 53bd4b52b73c4a487f7d5aa655fd9b372bb7ada3
 
 
 ---
@@ -169,7 +169,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzanie, czy instalacja przebiegła pomyślnie](#verifying-installation-success) w tym artykule.
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>Aby zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>Aby zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
 
 1.  Zainstaluj klienta usług AD RMS oraz aplikację RMS sharing przy użyciu następującego polecenia, określając istniejący folder w celu utworzenia pliku dziennika:
 
@@ -273,7 +273,7 @@ Korzystając z plików dzienników instalacji, możesz sprawdzić, czy instalacj
 
         DefaultUser="&lt;użytkownik_domyślny&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>Aby sprawdzić, czy udało się zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>Aby sprawdzić, czy udało się zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
 
 1.  Aby sprawdzić, czy polecenie Setup_ipviewer.exe zostało pomyślnie uruchomione, poszukaj w pliku dziennika instalacji następującego tekstu: **Stan powodzenia lub błędu instalacji: 0**.
 
@@ -310,7 +310,7 @@ Nie wszystkie polecenia instalacji wymagane przez te wdrożenia obsługują pole
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>Aby odinstalować dodatek dla pakietu Office
+### <a name="to-uninstall-the-office-add-in"></a>Aby odinstalować dodatek dla pakietu Office
 
 -   Użyj następujących poleceń:
 
@@ -404,9 +404,10 @@ Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć moż
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice między poziomami ochrony (natywny i ogólny), obsługiwane typy plików i rozszerzenia nazw plików oraz sposób zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide-technical.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

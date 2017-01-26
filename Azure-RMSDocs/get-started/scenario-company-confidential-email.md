@@ -13,13 +13,13 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 3c5576936c07d3921ef8fd70f9542e62383d0751
 
 
 ---
 
-# <a name="scenario-send-a-companyconfidential-email"></a>Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
+# <a name="scenario---send-a-company-confidential-email"></a>Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -92,7 +92,7 @@ W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dosto
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
 
 1.  W programie Outlook utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz użytkowników lub grupy w organizacji *&lt;nazwa organizacji&gt;*.
 
@@ -102,7 +102,7 @@ W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dosto
 
 3.  Wyślij wiadomość.
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
 
 1.  W programie Outlook Web App utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz z książki adresowej użytkowników lub grupy w organizacji *&lt;nazwa organizacji&gt;*.
 
@@ -125,7 +125,7 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 ### <a name="example-customized-user-documentation"></a>Przykładowa niestandardowa dokumentacja użytkownika
 ![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
 
 1.  W programie Outlook utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz użytkowników lub grupy w organizacji VanArsdel.
 
@@ -135,7 +135,7 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 3.  Wyślij wiadomość.
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
 
 1.  W programie Outlook Web App utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz z książki adresowej użytkowników lub grupy w organizacji VanArsdel.
 
@@ -155,9 +155,10 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
     -   Poczta e-mail: helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

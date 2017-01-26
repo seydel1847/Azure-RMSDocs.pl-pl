@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e66bfa436bf811b34cf3cfe1b2d68a6a4e137c2
-ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 
 ---
@@ -52,7 +52,7 @@ Nawet jeśli znajomość działania usługi RMS nie jest użytkownikowi potrzebn
 
 ###### <a name="footnote-1"></a>Przypis 1 
 
-Wariant 256-bitowy jest używany przez aplikację do udostępniania usługi Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku PPDF lub jest chronionym plikiem tekstowym lub graficznym (na przykład PTXT lub PJPG).
+Wariant&256;-bitowy jest używany przez aplikację do udostępniania usługi Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku PPDF lub jest chronionym plikiem tekstowym lub graficznym (na przykład PTXT lub PJPG).
 
 Jak są przechowywane i zabezpieczane klucze kryptograficzne:
 
@@ -149,8 +149,9 @@ Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu 
 > [!TIP]
 > Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

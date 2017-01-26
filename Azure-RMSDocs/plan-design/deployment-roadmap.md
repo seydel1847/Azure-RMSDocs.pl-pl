@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
+ms.sourcegitcommit: ed836a1f64ccb3f7e176ad19d27af1021c423cd9
+ms.openlocfilehash: 75f8eb2843005f23fd359d6a4fce073abecbfe0a
 
 
 ---
@@ -188,12 +188,10 @@ Jeśli interesuje Cię automatyczne chronienie plików przy użyciu infrastruktu
 ### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>Krok 5. Przystąpienie do zarządzania usługą Rights Management dla danego konta dzierżawy zgodnie z potrzebami
 Po rozpoczęciu korzystania z usługi Azure Rights Management pomocny może okazać się program Windows PowerShell, który ułatwia tworzenie skryptów i automatyzację zmian administracyjnych. Aby uzyskać więcej informacji, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
 
-## <a name="comments"></a>Komentarze
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
