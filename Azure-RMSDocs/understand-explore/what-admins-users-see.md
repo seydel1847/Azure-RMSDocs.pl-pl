@@ -4,7 +4,7 @@ description: "Zapoznaj się z kilkoma typowymi przykładami opisującymi, co adm
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: c6640d832c95b326a19a0924a426e96a49a82754
+ms.sourcegitcommit: e47a065737c950d4b616230c2915b4f2c8b6ee88
+ms.openlocfilehash: d4dd6bed227f959b7791249af5f4103f25c27c6e
 
 
 ---
@@ -36,14 +36,14 @@ Inne zrzuty ekranu i filmy wideo przedstawiające działanie usług RMS można z
 ## <a name="activating-and-configuring-rights-management"></a>Aktywowanie i konfigurowanie usługi Rights Management
 Mimo że usługę Azure RMS można aktywować i skonfigurować przy użyciu programu Windows PowerShell, najłatwiej wykonać te czynności w portalu zarządzania. Zaraz po aktywowaniu usługi dostępne są dwa szablony, które administratorzy i użytkownicy mogą wybrać, aby szybko i łatwo objąć pliki ochroną informacji. Można również tworzyć szablony niestandardowe z dodatkowymi opcjami i ustawieniami.
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 1](../media/AzRMS_StoryboardActivate_small1.png)
+![Zrzuty ekranu z portalu zarządzania pokazujące opcję aktywowania usługi Azure Rights Management](../media/AzRMS_StoryboardActivate_small1.png)
 
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 1:** do aktywowania usługi RMS można użyć centrum administracyjnego usługi Office 365 (pierwszy rysunek) lub klasycznego portalu Azure (drugi rysunek).<br /><br />Wystarczy jedno kliknięcie, aby aktywować usługę, i drugie, aby potwierdzić tę czynność, a ochrona informacji zostanie włączona dla administratorów i użytkowników w organizacji.
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 2](../media/AzRMS_TemplatesPortal_small.png)
+![Zrzuty ekranu z klasycznej witryny Azure Portal pokazujące dwa szablony domyślne i uruchamianie kreatora w celu utworzenia nowego szablonu](../media/AzRMS_TemplatesPortal_small.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 2:** po aktywacji w organizacji zostają automatycznie udostępnione dwa szablony zasad praw. Jeden szablon jest tylko do odczytu — jego nazwa zawiera informację **Confidential View Only** (Poufne, tylko wyświetlanie). Drugi szablon jest do odczytu i modyfikowania — jego nazwa zawiera informację **Confidential** (Poufne).
 
@@ -56,13 +56,13 @@ Jeśli nie chcesz, aby użytkownicy widzieli te szablony, lub jeśli chcesz twor
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 3](../media/AzRMS_TemplatesSettings3.png)
+![Zrzuty ekranu z klasycznej witryny Azure Portal pokazujące niektóre opcje konfiguracji szablonu](../media/AzRMS_TemplatesSettings3.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 3:** dostęp w trybie offline, ustawienia wygaśnięcia i opcja natychmiastowego publikowania szablonu (tak, aby był widoczny w aplikacjach, które obsługują usługę Rights Management) to niektóre ustawienia konfiguracji dostępne w przypadku tworzenia własnych szablonów.
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 4](../media/AzRMS_TemplatesPortal_ExplorerWord3.png)
+![Zrzuty ekranu z Eksploratora plików i programu Word pokazujące szablony dostępne do wybrania dla użytkowników](../media/AzRMS_TemplatesPortal_ExplorerWord3.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 4:** w wyniku opublikowania tych szablonów użytkownicy mogą je teraz wybierać w aplikacjach, takich jak Eksplorator plików i Microsoft Word:
 
@@ -86,13 +86,13 @@ W tym przykładzie pokazano, jak za pomocą usługi Azure RMS można automatyczn
 
 Istnieje wiele sposobów stosowania wartości klasyfikacji do plików. Można na przykład przeprowadzić inspekcję zawartości plików i odpowiednio zastosować wbudowane klasyfikacje, takie jak poufność i dane osobowe. W tym przykładzie administrator tworzy jednak niestandardową klasyfikację **Marketing**, która jest automatycznie stosowana do wszystkich dokumentów użytkownika zapisanych w folderze **Marketing Promotions** (Promocje marketingowe). Mimo że ten folder jest chroniony za pomocą uprawnień NTFS, które ograniczają dostęp do członków grupy Marketing, administrator wie, że te uprawnienia mogą zostać utracone, jeśli ktoś z tej grupy przeniesie pliki lub wyśle je pocztą e-mail. Następnie informacje w plikach mogą być używane przez nieautoryzowanych użytkowników.
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 1](../media/AzRMS_FCI_ConnectorSmall.png)
+![Zrzuty ekranu pokazujące instalowanie i konfigurowanie łącznika usługi Rights Management](../media/AzRMS_FCI_ConnectorSmall.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 1:** administratorzy instalują i konfigurują łącznik usługi Rights Management (RMS), który działa jako przekaźnik między serwerami lokalnymi i usługą Azure RMS.
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 2](../media/AzRMS_ExampleFCI_ConfigurationSmall.png)
+![Zrzuty ekranu pokazujące niektóre okna dialogowe konfiguracji do konfigurowania infrastruktury klasyfikacji plików w systemie Windows Server](../media/AzRMS_ExampleFCI_ConfigurationSmall.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 2:** na serwerze plików administrator konfiguruje zadania i reguły klasyfikacji, aby wszystkie pliki użytkownika w folderze **Marketing Promotions** były automatycznie klasyfikowane jako **Marketing** i chronione przy użyciu szyfrowania usługi RMS.
 
@@ -102,7 +102,7 @@ W efekcie wszystkie dokumenty w tym folderze są automatycznie konfigurowane z k
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 3](../media/AzRMS_FCI_EmailSmall.png)
+![Zrzuty ekranu pokazujące przykładową wiadomość e-mail otrzymaną przez użytkownika zawierającą chroniony załącznik monitujący użytkownika o uwierzytelnienie przed otwarciem](../media/AzRMS_FCI_EmailSmall.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 3:** w jaki sposób usługa RMS pomaga zapobiegać wyciekowi danych do osób, które nie powinny mieć dostępu do informacji ważnych ani poufnych:
 
@@ -121,7 +121,7 @@ W poprzednim przykładzie pokazano, jak można automatycznie chronić pliki zawi
 
 W tym przykładzie administrator konfiguruje zasady, aby zapewnić zgodność organizacji z obowiązującymi w USA przepisami dotyczącymi ochrony danych osobowych. Może on również skonfigurować reguły dla innych regulacji dotyczących zgodności albo można zastosować niestandardowe reguły zdefiniowane przez użytkownika.
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 1](../media/AzRMS_DLPExample1.png)
+![Przykładowe zrzuty ekranu dla niektórych opcji konfiguracji służących do konfigurowania ochrony przed utratą danych w usłudze Exchange Online](../media/AzRMS_DLPExample1.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 1:** w centrum administracyjnym programu Exchange szablon programu Exchange o nazwie **Stany Zjednoczone — dane osobowe** jest używany przez administratora do tworzenia i konfigurowania nowej zasady DLP. Ten szablon wyszukuje w wiadomościach e-mail takie informacje jak numery ubezpieczenia społecznego i prawa jazdy.
 
@@ -134,13 +134,13 @@ W tym miejscu zasada jest skonfigurowana do korzystania z jednego z szablonów d
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 2](../media/AzRMS_DLPUnprotectedEmail_small.png)
+![Zrzut ekranu z przykładową wiadomością e-mail zawierającą numer ubezpieczenia społecznego](../media/AzRMS_DLPUnprotectedEmail_small.png)
 
 **CO WIDZĄ UŻYTKOWNICY W KROKU 2:** kierownik ds. rekrutacji pisze wiadomość e-mail zawierającą numer ubezpieczenia społecznego ostatnio zatrudnionego pracownika. Następnie wysyła tę wiadomość e-mail do Sherrie w dziale kadr.
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 3](../media/AzRMS_DLPProtectedEmail_small.png)
+![Zrzut ekranu z przykładową wiadomością e-mail chronioną teraz przez usługę Azure Rights Management, ponieważ została wysłana poza organizację](../media/AzRMS_DLPProtectedEmail_small.png)
 
 **CO WIDZĄ UŻYTKOWNICY W KROKU 3:** jeśli ta wiadomość e-mail jest wysyłana lub przesyłana dalej do osób spoza organizacji, zostanie zastosowana reguła DLP automatycznie chroniąca prawa.
 
@@ -160,13 +160,13 @@ W tej sekcji pokazano, jak łatwo chronić dokumenty przy użyciu usługi ShareP
 
 W tym przykładzie administrator programu SharePoint w firmie Contoso utworzył dla każdego działu bibliotekę, która może być używana do centralnego przechowywania i wyewidencjonowywania dokumentów do edycji i kontroli wersji. Na przykład istnieje biblioteka działu sprzedaży, biblioteka działu marketing, biblioteka działu kadr itd. Nowy dokument przekazywany lub tworzony w jednej z tych chronionych bibliotek dziedziczy ochronę biblioteki (nie trzeba wybierać szablonu zasad praw). Dokument jest chroniony automatycznie i pozostaje chroniony nawet po przeniesieniu poza bibliotekę programu SharePoint.
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 1](../media/AzRMS_StoryboardSPO_small1.png)
+![Zrzut ekranu pokazujący opcję usługi SharePoint Online do włączania usługi IRM](../media/AzRMS_StoryboardSPO_small1.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 1:** administrator włącza usługę Zarządzanie prawami do informacji dla witryny programu SharePoint.
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 2](../media/AzRMS_StoryboardSPO_small2.png)
+![Zrzut ekranu pokazujący opcję usługi SharePoint Online do włączania ochrony biblioteki za pomocą usługi IRM](../media/AzRMS_StoryboardSPO_small2.png)
 
 **CO WIDZĄ ADMINISTRATORZY W KROKU 2:** następnie administrator włącza usługę Rights Management w bibliotece. Mimo że dostępne są dodatkowe opcje, to proste ustawienie jest najczęściej wystarczające.
 
@@ -174,7 +174,7 @@ Dokumenty teraz pobierane z tej biblioteki są automatycznie chronione przez us�
 
 ---
 
-![CO WIDZĄ ADMINISTRATORZY W KROKU 3](../media/AzRMS_StoryboardSPO_small3.png)
+![Zrzut ekranu pokazujący dokument pobrany z chronionej biblioteki usługi SharePoint Online z banerem informacyjnym, który wskazuje, że dokument jest chroniony](../media/AzRMS_StoryboardSPO_small3.png)
 
 **CO WIDZĄ UŻYTKOWNICY W KROKU 3:** gdy pracownik działu sprzedaży wyewidencjonuje ten raport sprzedaży z biblioteki, na transparencie informacyjnym w górnej części wyraźnie widzi, że jest to chroniony dokument z ograniczonym dostępem.
 
@@ -196,7 +196,7 @@ W tym przykładzie pokazano, jak użytkownicy mogą łatwo udostępnić dokument
 
 W tym przykładzie Alice z firmy Contoso wysyła pocztą e-mail poufny dokument programu Word do Boba w firmie Fabrikam. Bob odczytuje dokument na urządzeniu iPad, ale może równie łatwo odczytać go na urządzeniu iPhone, tablecie lub telefonie z systemem Android, komputerze Mac lub telefonie bądź komputerze z systemem Windows.
 
-![CO UŻYTKOWNICY WIDZĄ W KROKU 1](../media/AzRMS_StoryboardEmail_small1.png)
+![Zrzut ekranu pokazujący przykładową wiadomość e-mail z załącznikiem i oknem dialogowym do udostępniania chronionej zawartości z aplikacji Rights Management sharing](../media/AzRMS_StoryboardEmail_small1.png)
 
 **CO UŻYTKOWNICY WIDZĄ W KROKU 1:** na własnym komputerze z systemem Windows Alice tworzy standardową wiadomość e-mail i dołącza do niej dokument.
 
@@ -206,7 +206,7 @@ Alice chce ograniczyć prawa do Boba do wyświetlania i edytowania dokumentu i n
 
 ---
 
-![CO UŻYTKOWNICY WIDZĄ W KROKU 2](../media/AzRMS_StoryboardEmail_small2.png)
+![Zrzut ekranu pokazujący wiadomość e-mail do użytkownika na urządzeniu iPad, która obejmuje treść, załączniki i instrukcje](../media/AzRMS_StoryboardEmail_small2.png)
 
 **CO UŻYTKOWNICY WIDZĄ W KROKU 2:** Bob widzi wiadomość e-mail na urządzeniu iPad.
 
@@ -214,7 +214,7 @@ Oprócz wiadomości i załącznika od Alice Bob otrzymuje instrukcje, które wyk
 
 ---
 
-![CO UŻYTKOWNICY WIDZĄ W KROKU 3](../media/AzRMS_StoryboardEmail_small3.png)
+![Zrzut ekranu pokazujący użytkownika czytającego chroniony załącznik na urządzeniu iPad](../media/AzRMS_StoryboardEmail_small3.png)
 
 **CO UŻYTKOWNICY WIDZĄ W KROKU 3:** Bob może teraz otworzyć załącznik. Jest najpierw proszony o zalogowanie się w celu potwierdzenia, że to on jest zamierzonym odbiorcą.
 
@@ -222,7 +222,7 @@ Gdy Bob wyświetla dokument, widzi również informacje o ograniczonym dostępie
 
 ---
 
-![CO UŻYTKOWNICY WIDZĄ W KROKU 4](../media/AzRMS_StoryboardEmail_small4.png)
+![Zrzut ekranu pokazujący przykładową wiadomość e-mail do użytkownika wysyłającego](../media/AzRMS_StoryboardEmail_small4.png)
 
 **CO UŻYTKOWNICY WIDZĄ W KROKU 4:** Alice otrzymuje wiadomość e-mail informującą o tym, że Bob pomyślnie otworzył wysłany przez nią dokument oraz kiedy uzyskiwał dostęp do dokumentu.
 
