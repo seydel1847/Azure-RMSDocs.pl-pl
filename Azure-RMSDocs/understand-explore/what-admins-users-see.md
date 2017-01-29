@@ -243,6 +243,6 @@ Skoro już znasz przykłady możliwości usługi Azure RMS, być może zechcesz 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
