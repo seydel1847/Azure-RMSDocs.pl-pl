@@ -1,6 +1,6 @@
 ---
 title: "Jak dodać jawne prawa właściciela | Azure RMS"
-description: Your application should explicitly add "Owner" rights when creating a license from scratch.
+description: "W przypadku tworzenia licencji od podstaw w aplikacji należy jawnie dodać prawa właściciela."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
@@ -115,6 +115,6 @@ Następujące dwa uprawnienia są dodawane do tych użytkowników:
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
