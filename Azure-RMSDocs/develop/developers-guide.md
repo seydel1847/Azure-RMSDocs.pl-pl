@@ -4,7 +4,7 @@ description: "Deweloperzy mogą korzystać z usługi Azure Information Protectio
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb4f9bf0c38e25045fcd1a01deaa993bc862c8
-ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
+ms.sourcegitcommit: d00a735328bf04aad365a7577ef33ea24706ffc7
+ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
@@ -65,7 +65,12 @@ Wersja 4.2 to klient REST z interfejsami API odpowiednimi dla popularnych system
 
 Następujące przewodniki przeprowadzą Cię przez kolejne kroki konfiguracji środowiska programowania aplikacji przy użyciu standardowych narzędzi w poszczególnych systemach operacyjnych.
 
-|[![Konfiguracja w systemie iOS/OSX](../media/develop/ios-icon.png)](ios-sdk.md) | [![Konfiguracja w systemie Android](../media/develop/android-icon.png)](android-sdk.md) | [![Konfiguracja w systemie Windows Phone](../media/develop/windows-phone-icon.png)](windows-phone-apps.md) | [![Konfiguracja w usłudze systemu Windows](../media/develop/windows-icon.png)](install-the-rms-sdk.md) | [![Konfiguracja w systemie Linux](../media/develop/linux-icon.png)](linux-setup.md) |
+[![Konfiguracja w systemie iOS/OSX](../media/develop/ios-icon.png)](ios-sdk.md)
+[![Konfiguracja w systemie Android](../media/develop/android-icon.png)](android-sdk.md)
+[![Konfiguracja w systemie Windows Phone](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
+[![Konfiguracja usługi systemu Windows](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
+[![Konfiguracja w systemie Linux](../media/develop/linux-icon.png)](linux-setup.md)
+
 
 ## <a name="how-tos"></a>Instrukcje
 
@@ -74,8 +79,10 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 ### <a name="general"></a>Ogólne
 
 - [Włączanie śledzenia i odwoływania dokumentów (usługa)](tracking-content.md)
+- [Jak wdrożyć klienta](../rms-client/client-deployment-notes.md)
 - [Instalowanie i konfigurowanie serwera usługi RMS (usługa)](how-to-install-and-configure-an-rms-server.md)
 - [Korzystanie ze śledzenia dokumentów (użytkownik)](how-to-use-document-tracking.md)
+
 
 ### <a name="security-and-authentication"></a>Tożsamość i uwierzytelnianie
 
@@ -137,6 +144,6 @@ Te filmy wideo pochodzą z konferencji Microsoft 2016 Ignite
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
