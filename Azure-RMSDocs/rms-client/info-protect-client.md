@@ -4,15 +4,15 @@ description: "Instrukcje dotyczące instalowania klienta, który dodaje pasek us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
-ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
+ms.sourcegitcommit: 6012049162d0ac9ee53476640ab3a4bcac18287f
+ms.openlocfilehash: 92d6b6f13d124c8c7ab7735fa170890263c9011b
 
 
 ---
@@ -70,7 +70,7 @@ Przykład instalacji samego modułu programu PowerShell w trybie dyskretnym z kl
 
 Jeśli instalujesz wersję zapoznawczą klienta na komputerach z pakietem Office 2010, a użytkownicy nie są administratorami lokalnymi na swoich komputerach, określ parametr **ServiceLocation**. Aby uzyskać więcej informacji, zobacz następną sekcję.
 
-Klient usługi Azure Information Protection w wersji ogólnie dostępnej znajduje się również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu. Wersje zapoznawcze klienta nie znajdują się w wykazie usługi Microsoft Update.
+Klient usługi Azure Information Protection znajduje się również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu. 
 
 ### <a name="preview-version-and-office-2010-only"></a>Tylko wersja zapoznawcza i pakiet Office 2010
 
@@ -223,6 +223,6 @@ Aby sprawdzić informacje o wersji klienta, zobacz [Historia wersji](client-vers
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
