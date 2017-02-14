@@ -13,7 +13,7 @@
 ## [Samouczek Szybki start](infoprotect-quick-start-tutorial.md)
 ### [Krok 1. Aktywowanie usługi](infoprotect-tutorial-step1.md)
 ### [Krok 2. Skonfigurowanie i opublikowanie zasady](infoprotect-tutorial-step2.md)
-### [Krok 3. Instalowanie klienta i aplikacji](infoprotect-tutorial-step3.md)
+### [Krok 3. Instalowanie klienta](infoprotect-tutorial-step3.md)
 ### [Krok 4. Sprawdzenie w działaniu — etykietowanie, klasyfikacja, ochrona](infoprotect-tutorial-step4.md)
 ### [Krok 5. Sprawdzenie w działaniu — udostępnianie chronionych elementów i śledzenie](infoprotect-tutorial-step5.md)
 ## [Przewodnik szybkiego wdrażania](rapid-deployment-guide.md)
@@ -31,6 +31,6 @@
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
