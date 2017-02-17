@@ -1,10 +1,11 @@
 ---
-title: "Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL | Azure RMS"
-description: "Zawiera opis czynności służących do konfigurowania usługi Azure RMS na potrzeby uwierzytelniania na podstawie biblioteki Azure ADAL"
-keywords: uwierzytelnianie, RMS, ADAL
+title: Konfigurowanie aplikacji do uwierzytelniania ADAL | Dokumentacja firmy Microsoft
+description: "Czynności służące do konfigurowania aplikacji usług Azure Information Protection na potrzeby uwierzytelniania na podstawie biblioteki Azure ADAL"
+keywords: uwierzytelnianie, RMS, ADAL, Information Protection,
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,24 +15,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
+ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
+ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
 
 
 ---
 
-# Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL
+# <a name="configure-your-app-for-adal-authentication"></a>Konfigurowanie aplikacji do uwierzytelniania ADAL
 
-W tym temacie opisano czynności służące do skonfigurowania uwierzytelniania na podstawie biblioteki Azure ADAL.
+W tym temacie opisano procedurę konfigurowania aplikacji do uwierzytelniania na podstawie biblioteki Azure Active Directory Authentication Library (ADAL).
 
-## Konfigurowanie uwierzytelniania platformy Azure
+## <a name="azure-authentication-setup"></a>Konfigurowanie uwierzytelniania na platformie Azure
 
 Potrzebne są następujące elementy:
 
 - [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/en-us/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [Jak użytkownicy rejestrują się w usłudze RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/en-us/library/dn592127.aspx)).
 
-> [!NOTE] 
+> [!NOTE]
 > Zapytaj administratora IT, czy jest dostępna subskrypcja usługi Microsoft Azure Rights Management, i poproś go o wykonanie poniższych czynności. Jeśli organizacja nie ma subskrypcji, administrator IT powinien ją utworzyć. Ponadto administrator IT powinien uzyskać subskrypcję dla *konta służbowego*, a nie *konta Microsoft* (na przykład usługi Hotmail).
 
 Po zarejestrowaniu się w usłudze Microsoft Azure:
@@ -77,19 +78,15 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 ![Wybierz opcję KONFIGURUJ](../media/ConfigYourApp.png)
 
->[!NOTE] 
+>[!NOTE]
 > Skopiuj **IDENTYFIKATOR KLIENTA** i **IDENTYFIKATOR URI PRZEKIEROWANIA** i zapisz je do użycia w przyszłości podczas konfigurowania klienta usługi RMS.
 
 - Przejdź do dolnej części obszaru ustawień aplikacji i kliknij przycisk **Dodaj aplikację** w obszarze **uprawnień dotyczących innych aplikacji**.
 
->[!NOTE] 
+>[!NOTE]
 > **Delegowane uprawnienia** wyświetlone dla usługi Microsoft Azure Active Directory są poprawne domyślnie — należy wybrać tylko jedną opcję — **Loguj się i odczytuj profil użytkownika**.
 
 ![Wybierz opcję Dodaj aplikację](../media/PermissionsToOtherBtn.png)
-
-- Następnie dodaj ten identyfikator GUID `00000012-0000-0000-c000-000000000000` w polu edycji **ROZPOCZYNA SIĘ OD**, a następnie kliknij przycisk znaku wyboru.
-
-![Dodaj identyfikator GUID](../media/AddGUID.png)
 
 - Kliknij przycisk plus (+) obok pozycji **Microsoft Rights Management**.
 
@@ -97,7 +94,7 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 - Następnie kliknij znacznik wyboru znajdujący się w lewym dolnym rogu okna dialogowego.
 
-![Kliknij znacznik wyboru](../media/ChooseCheck.png)
+![Kliknij znacznik wyboru](../media/choosecheck01.png)
 
 - Możesz teraz dodać do aplikacji zależność dotyczącą usługi Azure RMS. Aby dodać zależność, wybierz nową pozycję **Microsoft Rights Management Services** w obszarze **uprawnień dotyczących innych aplikacji** i zaznacz pole wyboru **Tworzenie i uzyskiwanie dostępu do chronionej zawartości dla użytkowników** w polu listy rozwijanej **Delegowane uprawnienia**.
 
@@ -107,8 +104,9 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 ![Wybierz opcję ZAPISZ](../media/SaveApplication.png)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

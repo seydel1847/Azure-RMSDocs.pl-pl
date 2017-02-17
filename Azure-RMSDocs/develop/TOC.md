@@ -20,12 +20,11 @@
 #### [Przykłady kodu systemu Linux](linux-c-code-examples.md)
 #### [Przykłady kodu systemu iOS/OS X](ios-os-x-code-examples.md)
 #### [Zasoby społeczności](community-resources.md)
-### [Wskazówki dla deweloperów i terminologia](core-concepts.md)
+### [Wskazówki dla deweloperów](core-concepts.md)
 #### [Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS](authentication-integration.md)
 #### [Porady: włączanie rejestrowania błędów i wydajności](enabling-logging.md)
 #### [Porady: korzystanie z praw wbudowanych](built-in-rights-usage-restriction-reference.md)
 #### [Instrukcje: korzystanie ze śledzenia dokumentów](how-to-use-document-tracking.md)
-#### [Terminologia](terms.md)
 ### [Dokumentacja interfejsu API](api-reference-4-2.md)
 #### [Dokumentacja interfejsu API systemu Android](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Dokumentacja interfejsu API systemu Linux](linux-c-api-reference.md)
@@ -42,7 +41,7 @@
 #### [Tworzenie aplikacji](developing-your-application.md)
 #### [Testowanie aplikacji](how-to-set-up-your-test-environment.md)
 #### [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md)
-### [Wskazówki i informacje dla deweloperów](Developer-notes.md)
+### [Wskazówki dla deweloperów](Developer-notes.md)
 #### [Instrukcje: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md)
 ##### [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md)
 #### [Instrukcje: dodawanie jawnych praw właściciela](add-explicit-owner-rights.md)
@@ -65,8 +64,9 @@
 #### [Funkcje](https://msdn.microsoft.com/library/hh535289.aspx)
 #### [Struktury](https://msdn.microsoft.com/library/hh535294.aspx)
 #### [Kody błędów](https://msdn.microsoft.com/library/hh535248.aspx)
+## [Terminologia](terms.md) 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
