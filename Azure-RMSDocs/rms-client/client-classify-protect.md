@@ -53,11 +53,11 @@ Aby uzyskać listę typów plików, które są obsługiwane w Eksploratorze plik
 
 2. W oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację i ochronę w sposób zdefiniowany przez administratora. Jeśli nie można wybrać etykiety (jest niedostępna), wybrany plik nie obsługuje klasyfikacji, ale można go chronić.
 
-3. Jeśli chcesz określić własne ustawienia ochrony zamiast korzystać z ustawień ochrony, które administrator mógł dołączyć do wybranej etykiety, zaznacz opcję **Chroń za pomocą uprawnień niestandardowych**.
+3. Jeśli chcesz określić własne ustawienia ochrony zamiast korzystać z ustawień, które administrator mógł dołączyć do wybranej etykiety, zaznacz opcję **Chroń za pomocą uprawnień niestandardowych**.
     
     Wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 
-4. W przypadku wybrania opcji ustawień niestandardowych należy teraz określić następujące ustawienia:
+4. Po wybraniu opcji ustawień niestandardowych należy określić następujące ustawienia:
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     

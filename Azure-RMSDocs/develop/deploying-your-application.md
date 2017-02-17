@@ -1,6 +1,6 @@
 ---
 title: "Tworzenie aplikacji użytkownika | Azure Information Protection"
-description: "Ten temat opisuje i przeprowadza przez proces wdrażania aplikacji"
+description: "Ten temat zawiera opis procesu wdrażania aplikacji i przeprowadza przez niego"
 keywords: "wdrażanie, RMS, AIP"
 author: bruceperlerms
 ms.author: bruceper
@@ -22,7 +22,7 @@ ms.openlocfilehash: 00bf0748f67afe3f81de86fa643e78652cc0d7a4
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
-W tym temacie użytkownik jest prowadzony przez proces wdrażania aplikacji obsługującej usługi Azure Information Protection (AIP) / Rights Management Services (RMS).
+W tym temacie użytkownik jest prowadzony przez proces wdrażania aplikacji obsługującej usługi Azure Information Protection (AIP)/Rights Management Services (RMS).
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>Żądanie Umowy integracyjnej usługi Information Protection (IPIA, Information Protection Integration Agreement)
 Przed wydaniem aplikacji utworzonych za pomocą usługi AIP/RMS należy wystąpić o formalną umowę z firmą Microsoft i ją zawrzeć.
@@ -52,7 +52,7 @@ Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza **
 - Dane kontaktowe, adres e-mail i telefon do firmy do korespondencji w sytuacjach krytycznych
 
 ### <a name="completing-the-agreement"></a>Zawarcie umowy
-Po otrzymaniu formularza, wyślemy Ci link do ostatecznej postaci umowy IPIA w celu jej cyfrowego podpisania. Po podpisaniu zostanie następnie podpisana przez przedstawiciela firmy Microsoft, co spowoduje zawarcie umowy.
+Po otrzymaniu formularza wyślemy Ci link do ostatecznej postaci umowy IPIA, którą należy cyfrowo podpisać. Następnie zostanie ona podpisana przez przedstawiciela firmy Microsoft, co spowoduje zawarcie umowy.
 
 ### <a name="already-have-a-signed-ipia"></a>Masz już podpisaną umowę IPIA?
 Jeśli masz już podpisaną umowę IPIA i chcesz dodać nowy *Identyfikator aplikacji* dla aplikacji, którą chcesz wydać, wyślij wiadomość e-mail na adres **IPIA@microsoft.com** i przekaż nam następujące informacje:
@@ -66,7 +66,7 @@ Po wysłaniu wiadomości e-mail odczekaj do 72 godzin na potwierdzenie przez nas
 
 ## <a name="deploying-to-the-client-environment"></a>Wdrażanie w środowisku klienta
 
-W celu wdrożenia aplikacji skompilowanej przy użyciu narzędzi Azure Information Protection (AIP) / Rights Management Services (RMS) musisz wdrożyć RMS Client 2.1 na komputerze użytkownika końcowego.
+W celu wdrożenia aplikacji skompilowanej przy użyciu narzędzi Azure Information Protection (AIP)/Rights Management Services (RMS) musisz wdrożyć klienta RMS Client 2.1 na komputerze użytkownika końcowego.
 
 ### <a name="rms-client-21"></a>Klient RMS Client 2.1
 Klient RMS Client 2.1 został zaprojektowany w celu ochrony dostępu do informacji przepływających przez aplikacje korzystające z usług AIP/RMS i ich wykorzystania — w przypadku instalacji lokalnej lub instalacji w centrum danych firmy Microsoft.
@@ -98,14 +98,14 @@ W przypadku braku klienta podaj komunikat o błędzie, z którego użytkownik do
 
 W przypadku obecności klienta przejdź do instalacji aplikacji.
 
-## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>Włączanie usług Azure Information Protection / Rights Management w aplikacji
+## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>Włączanie usług Azure Information Protection/Rights Management w aplikacji
 
 > [!NOTE]
 > W przypadku migracji do nowego modelu ADAL w celu uwierzytelniania nie trzeba instalować usługi **SIA**. Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usług RMS](adal-auth.md).
 > Możliwe jest również **certyfikowanie aplikacji dla systemu Windows 10** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft oferuje następujące możliwości: korzystanie z uwierzytelniania wieloskładnikowego i instalowanie klienta RMS Client 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
 
 
-Aby użytkownik końcowy mógł korzystać z usług Information Protection / Rights Management, należy wdrożyć *Asystenta logowania w witrynie Online Services (SIA, Online Services Sign-in Assistant)*. W roli dewelopera aplikacji nie wiadomo, czy użytkownik końcowy będzie korzystał z ochrony informacji za pośrednictwem usług RMS (lokalnie) lub Azure Information Protection.
+Aby użytkownik końcowy mógł korzystać z usług Information Protection/Rights Management, należy wdrożyć *Asystenta logowania w witrynie Online Services (SIA, Online Services Sign-in Assistant)*. Jako deweloper aplikacji nie wiesz, czy użytkownik końcowy będzie korzystał z ochrony informacji za pośrednictwem usług RMS (lokalnie) czy Azure Information Protection.
 
 
 > [!IMPORTANT]

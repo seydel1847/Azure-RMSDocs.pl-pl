@@ -36,7 +36,7 @@ Tak, można otwierać chronione pliki PDF udostępnione przez innych użytkownik
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>Czy na moim urządzeniu przenośnym można uruchomić aplikację Azure Information Protection?
 
-Aplikacja Azure Information Protection wymaga minimalnej wersji **iOS 8** lub **Android 4.4**.
+Aplikacja Azure Information Protection wymaga co najmniej systemu **iOS 8** lub **Android 4.4**.
 
 Jeśli masz jedną z tych wersji lub wyższą od nich, możesz zainstalować i uruchomić aplikację na swoim urządzeniu przenośnym:
 

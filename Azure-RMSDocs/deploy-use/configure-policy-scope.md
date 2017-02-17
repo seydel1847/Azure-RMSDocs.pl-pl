@@ -57,7 +57,7 @@ Aby skonfigurować zasadę usługi Azure Information Protection o określonym za
 Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uruchomienia obsługiwanej aplikacji pakietu Office lub otwarcia Eksploratora plików. Klient pobiera wszelkie zmiany zasad globalnych lub zasad o określonym zakresie, które mają zastosowanie do danego użytkownika.
 
 > [!TIP]
-> Po zapisaniu zakresu zasad można użyć **Edytora wielu zasad** w pierwszym bloku **Azure Information Protection**, aby wyświetlić i skonfigurować wszystkie etykiety z zasadami usługi Azure Information Protection. Ta metoda zapewnia łatwy sposób porównania etykiet z wielu zasad (zasady globalne i wszystkie zasady o określonym zakresie). Jednak ten edytor nie pozwala na dodawanie i zmienianie kolejności etykiet, ani na wyświetlanie i konfigurowanie ustawień zasad.
+> Po zapisaniu zakresu zasad można użyć **Edytora wielu zasad** w pierwszym bloku **Azure Information Protection**, aby wyświetlić i skonfigurować wszystkie etykiety z zasadami usługi Azure Information Protection. Ta metoda zapewnia łatwy sposób porównania etykiet z wielu zasad (zasady globalne i wszystkie zasady o określonym zakresie). Jednak ten edytor nie pozwala na dodawanie i zmienianie kolejności etykiet ani na wyświetlanie i konfigurowanie ustawień zasad.
 
 ## <a name="next-steps"></a>Następne kroki
 
