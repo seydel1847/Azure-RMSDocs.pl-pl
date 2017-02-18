@@ -1,11 +1,11 @@
 ---
-title: "Wskazówki dla deweloperów i terminologia | Azure RMS"
-description: "Zestaw RMS SDK 4.2 koncentruje się na ułatwianiu tworzenia aplikacji korzystających z ochrony informacji przy użyciu usługi AD RMS."
+title: "Wskazówki dla deweloperów dotyczące zestawu Azure Information Protection SDK 4.2| Dokumentacja firmy Microsoft"
+description: "Zestaw tematów zawierających porady dotyczące programowania przy użyciu zestawu AIP SDK 4.2"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 7adaf60ffc79edffc38a070d451c1f65c8a41300
+ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
+ms.openlocfilehash: 9906d300debd4d28e21b8fab2c44c30574d47f4b
 
 
 ---
 
-# <a name="developer-guidance-and-terms"></a>Wskazówki dla deweloperów i terminologia
+# <a name="developer-guidance"></a>Wskazówki dla deweloperów
 Zestaw Microsoft Rights Management SDK 4.2 koncentruje się na ułatwianiu tworzenia aplikacji korzystających z usługi Active Directory Right Management Services (AD RMS).
 
 Poniższe tematy zawierają informacje przydatne w procesie projektowania aplikacji z obsługą usług RMS.
@@ -30,11 +30,10 @@ Poniższe tematy zawierają informacje przydatne w procesie projektowania aplika
 - [Jak włączyć rejestrowanie błędów i wydajności](enabling-logging.md) — zestaw RMS SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
 - [Jak korzystać z praw wbudowanych](built-in-rights-usage-restriction-reference.md) — w tym temacie omówiono prawa wbudowane zapewniane w ramach zestawu RMS SDK 4.2 oraz ograniczenia użycia, które aplikacja powinna wymuszać.
 - [Jak korzystać ze śledzenia dokumentów](how-to-use-document-tracking.md) — korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstawowych kwestii związanych z zarządzaniem skojarzonymi metadanymi i rejestracją w usłudze.
-- [Terminologia](terms.md) — Definicje terminów specyficznych dla usług Rights Management Services.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

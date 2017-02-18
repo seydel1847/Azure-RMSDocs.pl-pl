@@ -1,11 +1,11 @@
 ---
-title: "Wskazówki i informacje dla deweloperów | Azure RMS"
-description: "W tym temacie podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania."
+title: "Wskazówki dla deweloperów dotyczące zestawu Azure Information Protection SDK 2.1| Dokumentacja firmy Microsoft"
+description: "Zestaw tematów zawierających porady dotyczące programowania przy użyciu zestawu AIP SDK 2.1"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3d58cc4c430fe2335ff8fbb7e23c77915e6b8ab
-ms.openlocfilehash: c09eebc8a950894038a758d8f968c5e3e5ae2a53
+ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
+ms.openlocfilehash: 1c10eb8f7a68138761931d1c8a1715a03b7ff0a9
 
 
 ---
 
-# <a name="developer-guidance-and-information"></a>Wskazówki i informacje dla deweloperów
+# <a name="developer-guidance"></a>Wskazówki dla deweloperów
 
 W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
 - [Porada: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md) — uwierzytelnianie w usługach Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
@@ -47,6 +47,6 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

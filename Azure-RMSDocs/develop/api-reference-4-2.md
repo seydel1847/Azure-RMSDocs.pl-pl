@@ -1,11 +1,11 @@
 ---
-title: Dokumentacja interfejsu API | Azure RMS
-description: "Zestaw Microsoft Rights Management SDK 4.2 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows."
+title: Dokumentacja zestawu AIP SDK 4.2 | Dokumentacja firmy Microsoft
+description: "Zestaw Azure Information Protection SDK 4.2 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,15 +15,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e7788088a6eb9f0d3651365c6e0b0e05f0faf3ef
+ms.sourcegitcommit: 61efd11cde36c5f2507a91112cfc3711c1bedfca
+ms.openlocfilehash: 9735b9c1d05f2512eab1a11808dc5911e26174be
 
 
 ---
 
-# <a name="api-reference"></a>Dokumentacja interfejsu API
+# <a name="api-sdk-42-reference"></a>Dokumentacja zestawu AIP SDK 4.2
 
-Zestaw Microsoft Rights Management SDK 4.2 obsługuje kilka systemów operacyjnych. Aby uzyskać więcej szczegółowych informacji, zobacz temat [Co nowego](release-notes.md).
+Zestaw Azure Information Protection SDK 4.2 obsługuje kilka systemów operacyjnych. Aby uzyskać więcej szczegółowych informacji, zobacz temat [Co nowego](release-notes.md).
 
 ### <a name="apple"></a>Apple
 - [Dokumentacja interfejsu API dla systemów iOS/OS X](https://msdn.microsoft.com/library/dn758306.aspx) — dokumentacja interfejsu API dla systemów operacyjnych iOS i OS X firmy Apple.
@@ -44,6 +44,6 @@ Zestaw Microsoft Rights Management SDK 4.2 obsługuje kilka systemów operacyjny
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

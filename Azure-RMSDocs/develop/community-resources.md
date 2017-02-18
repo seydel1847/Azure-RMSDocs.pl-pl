@@ -1,11 +1,11 @@
 ---
-title: "Zasoby społeczności | Azure RMS"
-description: "Usługi AD RMS są objęte wsparciem rosnącej grupy deweloperów na wielu platformach."
+title: "Zasoby społeczności deweloperów | Dokumentacja firmy Microsoft"
+description: "Usługi Azure Information Protection są objęte wsparciem rosnącej grupy deweloperów na wielu platformach."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 91d2dc461ecdb2f15b7bfc93b38a4937c4322f3a
+ms.sourcegitcommit: 91a91b55c0dad4cf83d76d18b75e6b0d91c67190
+ms.openlocfilehash: d9ec87cea94248fb0bb34856d0ff7bd343da26f0
 
 
 ---
@@ -25,24 +25,25 @@ ms.openlocfilehash: 91d2dc461ecdb2f15b7bfc93b38a4937c4322f3a
 
 Usługi Active Directory Rights Management są objęte wsparciem rosnącej grupy deweloperów na wielu platformach.
 
-## <a name="ad-rms-community-resources"></a>Zasoby społeczności usług AD RMS
-
+## <a name="developers-blog"></a>Blog dewelopera
 [Blog RMS Developer's Corner](http://blogs.msdn.com/b/rms/) jest aktywnym centrum dla deweloperów aplikacji do ochrony informacji.
 
+## <a name="microsoft-connect"></a>Microsoft Connect
 W sekcji usług Rights Management Services w witrynie Connect można znaleźć bieżące materiały dostarczane i przekazać opinie.
 
-**Uwaga**  
-Jeśli nie jesteś użytkownikiem zarejestrowanym w witrynie Microsoft Connect, wykonaj następujące czynności:
-
--   Przejdź do witryny [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com).
--   Zaloguj się przy użyciu konta Microsoft.
--   Kliknij pozycję **Katalog** na pasku poleceń.
--   Wyszukaj pozycję **Rights Management Services**.
--   Kliknij przycisk **Dołącz**, aby się zarejestrować.
+> [!NOTE]
+>
+>Jeśli nie jesteś użytkownikiem zarejestrowanym w witrynie Microsoft Connect, wykonaj następujące czynności:
+>
+>-   Przejdź do witryny [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com).
+>-   Zaloguj się przy użyciu konta Microsoft.
+>-   Kliknij pozycję **Katalog** na pasku poleceń.
+>-   Wyszukaj pozycję „Usługi zarządzania prawami dostępu”.
+>-   Kliknij przycisk **Dołącz**, aby się zarejestrować.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
