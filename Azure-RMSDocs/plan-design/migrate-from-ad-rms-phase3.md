@@ -4,7 +4,7 @@ description: "Faza 3 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0ad1df8a8343052a85f85b94e0413fe0a0265d4b
+ms.sourcegitcommit: 1c6496d544334bd03d1df263acafefe1ebfb7707
+ms.openlocfilehash: 73a75f9bc1bcba4924570b6460c5fad4e0b877f4
 
 
 ---
@@ -45,7 +45,7 @@ W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Ex
 Na zakończenie tego kroku — jeśli do usługi Azure Information Protection zaimportowano wiele plików danych konfiguracji usługi AD RMS (XML) użytych do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
-> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Information Protection zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
+> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Rights Management zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
 
 ### <a name="disable-irm-on-exchange-servers-and-remove-ad-rms-configuration"></a>Wyłączanie funkcji IRM na serwerach Exchange Server i usuwanie konfiguracji usługi AD RMS
 
@@ -116,15 +116,15 @@ Reg_SZ
 
 **Wartość:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<Adres URL licencjonowania usług AD RMS w sieci intranet\>/_wmcs/licensing
 
 **Dane:**
 
 Jeden z następujących elementów w zależności od tego, czy podczas komunikacji serwera Exchange z łącznikiem usługi RMS jest używany protokół HTTP, czy HTTPS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<nazwaŁącznika\>/_wmcs/licensing
 
 
 ---
@@ -142,16 +142,16 @@ Reg_SZ
 
 **Wartość:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<Adres URL licencjonowania usług AD RMS w sieci ekstranet\>/_wmcs/licensing
 
 
 **Dane:**
 
 Jeden z następujących elementów w zależności od tego, czy podczas komunikacji serwera Exchange z łącznikiem usługi RMS jest używany protokół HTTP, czy HTTPS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
 ---
 
@@ -169,15 +169,15 @@ Reg_SZ
 
 **Wartość:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<Adres URL licencjonowania usług AD RMS w sieci intranet\>/_wmcs/licensing
 
 **Dane:**
 
 Jeden z następujących elementów w zależności od tego, czy podczas komunikacji serwera Exchange z łącznikiem usługi RMS jest używany protokół HTTP, czy HTTPS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<nazwaŁącznika\>/_wmcs/licensing
 
 
 ---
@@ -196,16 +196,16 @@ Reg_SZ
 
 **Wartość:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<Adres URL licencjonowania usług AD RMS w sieci ekstranet\>/_wmcs/licensing
 
 
 **Dane:**
 
 Jeden z następujących elementów w zależności od tego, czy podczas komunikacji serwera Exchange z łącznikiem usługi RMS jest używany protokół HTTP, czy HTTPS:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<nazwaFQDNłącznika\>/_wmcs/licensing
 
 ---
 
@@ -217,6 +217,6 @@ Aby kontynuować migrację, przejdź do [fazy 4 — zadań po migracji](migrate-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
