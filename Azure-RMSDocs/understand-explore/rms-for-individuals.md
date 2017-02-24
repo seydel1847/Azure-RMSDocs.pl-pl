@@ -1,5 +1,5 @@
 ---
-title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection | Azure Information Protection"
+title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection"
 description: "Informacje dotyczące usługi RMS dla użytkowników indywidualnych, czyli bezpłatnej subskrypcji samoobsługowej przeznaczonej dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management, ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9453354687b4b469989f0fe33d4abce0bde21570
-ms.openlocfilehash: 327e68131c8d432887a682c83a6e30f6c83c1a8e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b864f8223865661184ce5742e23313e88cae1db5
 
 
 ---
@@ -43,6 +43,6 @@ Aby uzyskać szczegółowe instrukcje oraz zapoznać się z opisem technicznym p
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 
