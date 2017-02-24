@@ -4,7 +4,7 @@ description: "Informacje dotyczące sposobu, w jaki aplikacja RMS sharing obsłu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 5b438ed97df754b88b0d654439153dea03c8250c
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 5c5f34e9009d87da4ea4091b619dfc75a1361251
 
 
 ---
@@ -24,7 +24,10 @@ ms.openlocfilehash: 5b438ed97df754b88b0d654439153dea03c8250c
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Aplikacja RMS sharing to bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usługi Azure Rights Management, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
+> [!IMPORTANT]
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Obsługa tej starszej aplikacji zakończy się 31 stycznia 2018 r. 
+ 
+RMS sharing to dostępna do pobrania aplikacja, która obsługuje pakiet Office 2010 dla systemu Windows i której stosowanie zalecano zwykle także w przypadku wszystkich komputerów z systemem Windows oraz urządzeń przenośnych. Nadal zaleca się korzystanie z niej na komputerach Mac i urządzeniach z systemem Windows Phone. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usługi Azure Rights Management, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
 
 Gdy użytkownicy chronią swoje pliki przy użyciu aplikacji RMS sharing, mogą również śledzić chronione dokumenty i odwoływać dostęp do nich, jeśli jest to konieczne. Służy do tego [witryna śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562).
 
@@ -36,7 +39,7 @@ W przypadku komputerów z systemem Windows aplikacja RMS sharing dyskretnie inte
 
 -   Przeglądarka umożliwiająca otwieranie plików chronionych przez usługę Azure Rights Management. Ta przeglądarka jest wywoływana automatycznie, gdy nie zainstalowano innej aplikacji umożliwiającej otworzenie pliku.
 
--   Konfiguracja zaplecza pakietu Office 2010, która umożliwia programom Word, Excel, PowerPoint i Outlook z tego pakietu sprawne współpracowanie z usługą Azure Rights Management.
+-   Konfiguracja zaplecza pakietu Office 2010, która umożliwia programom Word, Excel, PowerPoint i Outlook sprawną współpracę z usługą Azure Rights Management.
 
 Aplikację RMS sharing dla systemu Windows można pobrać i zainstalować na pojedynczym komputerze przy użyciu [strony usługi Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970), jednak obsługuje ona również wdrażanie w przedsiębiorstwie w trybie instalacji dyskretnej i konfiguracji niestandardowej. Więcej informacji można znaleźć w następujących zasobach:
 
@@ -60,6 +63,6 @@ Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Ri
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

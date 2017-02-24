@@ -4,7 +4,7 @@ description: "Omówienie sposobu, w jaki najczęściej używane aplikacje (takie
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
 
 
 ---
@@ -27,7 +27,7 @@ Poniższe informacje pozwalają zrozumieć, w jaki sposób najczęściej używan
 > [!NOTE]
 > Aby sprawdzić obsługiwane przez usługę Azure Rights Management aplikacje i ich wersje, zobacz [aplikacje obsługujące technologię ochrony danych usługi Azure Rights](../get-started/requirements-applications.md).
 
-W niektórych przypadkach usługa Azure Rights Management stosuje ochronę automatycznie, zgodnie z zasadami skonfigurowanymi przez administratorów. Dotyczy to na przykład bibliotek programu SharePoint, plików klasyfikowanych i reguł transportu programu Exchange. W innych przypadkach użytkownicy końcowi muszą sami zastosować ochronę informacji z poziomu aplikacji przez wybranie szablonu lub określonych opcji. Dotyczy to na przykład sytuacji, gdy użytkownicy udostępniają plik pocztą e-mail, lub ochrony miejscowej plików przez ograniczenie dostępu lub użycia dla wybranych użytkowników lub dla użytkowników spoza organizacji.
+W niektórych przypadkach usługa Azure Rights Management stosuje ochronę automatycznie, zgodnie z zasadami skonfigurowanymi przez administratorów. Dotyczy to na przykład bibliotek programu SharePoint i reguł transportu programu Exchange. W innych przypadkach użytkownicy końcowi muszą sami stosować ochronę informacji w swoich aplikacjach, na przykład wybierając etykietę klasyfikacji, która jest skonfigurowana tak, aby stosować szablon, wybierając szablon, bezpośrednio lub wybierając określone opcje. Ochrona stosowana przez użytkowników jest często stosowana w przypadkach, gdy zamierzają oni chronić plik udostępniany innym osobom, umożliwiając dostęp lub możliwość użycia tylko wybranym użytkownikom lub użytkownikom spoza organizacji.
 
 Szablony ułatwiają użytkownikom (i administratorom, którzy konfigurują zasady) stosowanie odpowiedniego poziomu ochrony i ograniczenie dostępu do osób wewnątrz organizacji. Chociaż usługa Azure Rights Management dostarcza dwa szablony domyślne, prawdopodobnie zajdzie potrzeba utworzenia szablonów niestandardowych, aby ograniczyć sytuacje, w których użytkownicy muszą określać poszczególne opcje. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
 
@@ -64,6 +64,6 @@ Dowiedz się więcej na temat sposobu obsługi usługi Azure Rights Management p
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

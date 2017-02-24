@@ -4,7 +4,7 @@ description: "Po włączeniu ochrony dokumentów można śledzić ich użycie. W
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 54abc32a6065bb3863cf55b42466250f8fc9c634
+ms.sourcegitcommit: 569c60d502ddcf3169ec0955a76312a50451ec72
+ms.openlocfilehash: ee2160c6c81c5de5bd1e9a9afaea959229e125e3
 
 
 ---
@@ -23,45 +23,56 @@ ms.openlocfilehash: 54abc32a6065bb3863cf55b42466250f8fc9c634
 
 >*Dotyczy: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
-**[Ta wersja klienta jest w wersji zapoznawczej i może ulec zmianie.]**
-
 Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. W tym celu należy użyć **witryny śledzenia dokumentów** dostępnej z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
-</div>
 
 Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Widoczna jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Ponadto:
 
--   Jeśli chcesz zatrzymać udostępnianie dokumentu: kliknij pozycję **Odwołaj dostęp**, podaj okres, przez jaki dokument będzie jeszcze dostępny, i zdecyduj, czy chcesz powiadomić o odwołaniu dostępu osoby, którym dokument był wcześniej udostępniony. Jeśli się na to zdecydujesz, przygotuj niestandardową wiadomość dla nich. Odwołanie dokumentu nie powoduje jego usunięcia, ale blokuje możliwość otwierania go przez autoryzowanych użytkowników.
+-   Jeśli chcesz zatrzymać udostępnianie dokumentu: kliknij pozycję **Odwołaj dostęp**, podaj okres, przez jaki dokument będzie jeszcze dostępny, i zdecyduj, czy chcesz powiadomić o odwołaniu dostępu osoby, którym dokument był wcześniej udostępniony. Jeśli się na to zdecydujesz, przygotuj niestandardową wiadomość dla nich. Odwołanie udostępnionego dokumentu nie powoduje jego usunięcia, ale blokuje możliwość otwierania go przez autoryzowanych użytkowników:
+    
+    ![Ikona funkcji Odwołaj dostęp w witrynie śledzenia dokumentów](../media/tracking-site-revoke-access-icon.png)
 
--   Jeśli chcesz wyeksportować plik do programu Excel: kliknij pozycję **Eksportuj do pliku CSV**, aby móc modyfikować dane i tworzyć własne widoki oraz wykresy.
+-   Jeśli chcesz wyeksportować plik do programu Excel: kliknij pozycję **Eksportuj do pliku CSV**, aby móc modyfikować dane i tworzyć własne widoki oraz wykresy:
+    
+    ![Ikona funkcji Eksportuj do pliku CSV w witrynie śledzenia dokumentów](../media/tracking-site-export-icon.png)
 
--   Jeśli chcesz skonfigurować powiadomienia e-mail: kliknij pozycję **Ustawienia** i zdecyduj, czy chcesz otrzymywać pocztą e-mail powiadomienia o dostępie do dokumentu.
+-   Jeśli chcesz skonfigurować powiadomienia e-mail: kliknij pozycję **Ustawienia** i zdecyduj, czy chcesz otrzymywać pocztą e-mail powiadomienia o dostępie do dokumentu:
+    
+    ![Ikona funkcji Eksportuj do pliku CSV w witrynie śledzenia dokumentów](../media/tracking-site-settings-email.png)
 
-- Jeśli chcesz śledzić i odwoływać dokumenty udostępnione innym: administratorzy usługi Azure Information Protection mogą śledzić i odwoływać dokumenty chronione dla innych użytkowników, klikając ikonę administratora. Ta ikona jest widoczna tylko dla administratorów.
+- Jeśli chcesz śledzić i odwoływać dokumenty udostępnione innym: administratorzy usługi Azure Information Protection mogą śledzić i odwoływać dokumenty chronione dla innych użytkowników, klikając ikonę administratora. Ta ikona jest widoczna tylko dla administratorów:
+    
+    ![Ikona administratora w witrynie śledzenia dokumentów](../media/tracking-site-admin-icon.png)
 
--   Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977).
+Aby śledzić chroniony dokument, musisz być zarejestrowanym użytkownikiem witryny śledzenia dokumentów. W tym celu użyj Eksploratora plików lub aplikacji pakietu Office.
 
-## <a name="using-office-to-access-the-document-tracking-site"></a>Dostęp do witryny śledzenia dokumentów za pomocą pakietu Office
+## <a name="using-office-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu pakietu Office
 
--   W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint i Outlook): na karcie **Narzędzia główne** w grupie **Ochrona** kliknij pozycję **Chroń** > **Śledź użycie**.
+W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook): 
+
+1. Otwórz chroniony dokument, który chcesz śledzić lub odwołać.
+
+2. Na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno pozycje **Chroń** > **Śledź i odwołuj**:
+
+    ![Opcja śledzenia użycia](../media/track-usage-callout.png)
 
 Jeśli opcje ochrony nie są wyświetlone, możliwe, że klient usługi Azure Information Protection nie jest zainstalowany na danym komputerze, Twoje aplikacje pakietu Office muszą zostać uruchomione ponownie albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji o sposobie instalowania klienta usługi Azure Information Protection, zobacz temat [Pobieranie i instalowanie klienta usługi Azure Information Protection](install-client-app.md).
 
+## <a name="using-file-explorer-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu Eksploratora plików
 
-### <a name="other-ways-to-track-and-revoke-your-documents"></a>Inne metody śledzenia i odwoływania dokumentów
-Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu aplikacji pakietu Office można użyć także następujących opcji alternatywnych:
+1. Kliknij chroniony plik prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**.
 
--   **W przeglądarce sieci Web**: ta metoda działa w przypadku wszystkich obsługiwanych urządzeń.
+2. W oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij opcję **Śledź i odwołuj**.
 
--   **W Eksploratorze plików**: ta metoda działa na komputerach z systemem Windows.
+    ![Ikona śledzenia i odwoływania z okna dialogowego Klasyfikuj i chroń — Azure Information Protection](../media/track-and-revoke.png)
 
-#### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą przeglądarki sieci Web
 
--   Przy użyciu obsługiwanej przeglądarki przejdź do [witryny śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=529562).
+### <a name="using-a-web-browser-track-and-revoke-documents-that-you-have-registered"></a>Śledzenie i odwoływanie zarejestrowanych dokumentów w przeglądarce sieci Web
 
-    Obsługiwane przeglądarki: zaleca się korzystanie z przeglądarki Internet Explorer w wersji 10 lub nowszej, jednak dostęp do witryny śledzenia dokumentów można uzyskać przy użyciu dowolnej z poniższych przeglądarek:
+Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub aplikacji pakietu Office, dokumenty te można śledzić i odwoływać przy użyciu obsługiwanej przeglądarki sieci Web:
+
+- Korzystając z komputera z systemem Windows, komputera Mac lub urządzenia przenośnego, przejdź do [witryny śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=529562).
+
+    **Obsługiwane przeglądarki**: zaleca się korzystanie z przeglądarki Internet Explorer 10 lub nowszej, jednak dostęp do witryny śledzenia dokumentów można uzyskać przy użyciu dowolnej z poniższych przeglądarek:
 
     -   Internet Explorer: wersja 10 lub nowsza
 
@@ -73,19 +84,15 @@ Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu ap
 
     -   Google Chrome: wersja 18 lub nowsza
 
-#### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą Eksploratora plików
-
--   Kliknij plik prawym przyciskiem myszy, wybierz opcję **Klasyfikuj i chroń (wersja zapoznawcza)**, a następnie w **przeglądarce usługi Azure Information Protection** wybierz ikonę Śledź użycie.
-
 
 ## <a name="other-instructions"></a>Inne instrukcje
-Aby uzyskać instrukcje dotyczące wykonywania określonych czynności, zobacz następujące sekcje z podręcznika użytkownika usługi Azure Information Protection:
+Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
--   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
+- [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

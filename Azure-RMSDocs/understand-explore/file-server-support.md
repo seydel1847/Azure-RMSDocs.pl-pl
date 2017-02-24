@@ -4,7 +4,7 @@ description: "Informacje dotyczące sposobu używania infrastruktury klasyfikacj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 589f0ff68e1e58c0903eb40dcfd0697a500c8491
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: dd94145bc2a6f338bb8a8c0ac0712ed1c86517d4
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 589f0ff68e1e58c0903eb40dcfd0697a500c8491
 
 Podczas konfigurowania używania infrastruktury klasyfikacji plików w systemie Windows Server funkcja Menedżer zasobów serwera plików może przeskanować lokalne pliki i ustalić, czy zawierają one poufne dane. Pliki spełniające to kryterium są oznaczane za pomocą właściwości klasyfikacji zdefiniowanych przez administratora. W ramach infrastruktury klasyfikacji plików można następnie automatycznie podjąć odpowiednie działania zgodnie z klasyfikacją. Jedno z tych działań obejmuje zastosowanie ochrony informacji za pomocą usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] oraz wdrożenie łącznika usługi Rights Management (nazywanego także łącznikiem usługi RMS). Dzięki temu pliki pakietu Office są automatycznie chronione przez usługę Azure RMS.
 
-Aby chronić wszystkie typy plików, nie należy używać łącznika usługi RMS. Zamiast tego należy uruchomić skrypt programu Windows PowerShell przy użyciu poleceń cmdlet udostępnianych przez narzędzie [RMS Protection Tool](https://www.microsoft.com/en-us/download/details.aspx?id=47256).
+Aby chronić wszystkie typy plików, nie należy używać łącznika usługi RMS. Zamiast tego należy uruchomić skrypt programu Windows PowerShell wykorzystujący polecenia cmdlet z [modułu Azure Information Protection](../rms-client/client-admin-guide-powershell.md).
 
 Zasady klasyfikacji są w pełni konfigurowalne i wysoce rozszerzalne, dzięki czemu można zapobiec potencjalnym wyciekom danych pochodzącym od nieautoryzowanych i autoryzowanych użytkowników. Możliwe jest nawet zmniejszenie ryzyka wycieku danych pochodzącego od administratorów sieci, ponieważ można skonfigurować zasady, które nie wymagają, aby mieli oni dostęp do plików.
 
@@ -45,6 +45,6 @@ Gdy już wiesz, na czym polega obsługa usługi Azure RMS w aplikacjach i usług
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 95d50707c362244972f286943abf9a07e3cedf38
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: ecb85e8fd2f09579536782f00a1babddb9466c54
 
 
 ---
@@ -52,9 +52,13 @@ Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information P
 
     -   Jeśli masz pakiet Office 2013, musisz również zainstalować [aktualizację pakietu Office 2013 (KB3054853) z 9 czerwca 2015](https://support.microsoft.com/kb/3054853). Aby uzyskać więcej informacji na temat tej aktualizacji i sposobu wdrażania logowania opartego na bibliotece ADAL (Active Directory Authentication Library) w pakiecie Office 2013 w ramach nowoczesnego uwierzytelniania, zobacz wpis dotyczący [anonsowania publicznej wersji nowoczesnego uwierzytelniania w pakiecie Office 2013](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) na blogu pakietu Office.
 
+- Klient usługi Azure Information Protection:
+
+    - [Klient usługi Azure Information Protection](../rms-client/aip-client.md) dla systemów Windows, iOS i Android zawsze obsługiwał uwierzytelnianie wieloskładnikowe od momentu swojej premiery. Nie jest wymagana żadna wersja minimalna. 
+
 -   Aplikacja do udostępniania usługi Rights Management dla systemu Windows:
 
-    -   Musisz zainstalować minimalną wersję 1.0.1908.0 (numer wersji można sprawdzić w Panelu sterowania, przechodząc do opcji Programy i funkcje). Aby uzyskać więcej informacji o aplikacji do udostępniania, zobacz artykuł [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-windows.md).
+    -   Musisz zainstalować minimalną wersję 1.0.1908.0 (numer wersji można sprawdzić w Panelu sterowania, przechodząc do opcji Programy i funkcje). Aplikacja RMS sharing została obecnie zastąpiona przez klienta usługi Azure Information Protection. Aby uzyskać więcej informacji o aplikacji do udostępniania, zobacz artykuł [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-windows.md).
 
 -   Aplikacja do udostępniania usługi Rights Management dla urządzeń przenośnych i komputerów Mac:
 
@@ -81,6 +85,6 @@ Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

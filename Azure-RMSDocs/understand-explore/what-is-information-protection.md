@@ -4,15 +4,15 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
+ms.sourcegitcommit: 4d20462f190042e1ac8d674123296f65c66d9921
+ms.openlocfilehash: 50b83f165dfbcf9b5f66ae8bfc596d1aa910f10d
 
 
 ---
@@ -54,7 +54,7 @@ Szablony te mogą być częścią konfiguracji etykiety — zastosowanie konkret
 
 W tym przykładzie pokazano, jak można wybrać szablon dla etykiety podczas konfigurowania zasad usługi Azure Information Protection w witrynie Azure Portal:
 
-![Przykład przedstawiający wybieranie szablonów w witrynie Azure Portal](../media/templates-infoprotection-callouts.png)
+![Przykład przedstawiający wybieranie szablonów w witrynie Azure Portal](../media/info-protect-template-callout.png)
 
 Te same szablony można też wybierać z poziomu centrum administracyjnego programu Exchange w celu skonfigurowania reguł przepływu poczty usługi Exchange Online, które obsługują technologię Azure Rights Management:
 
@@ -66,11 +66,21 @@ Aby uzyskać więcej informacji na temat mechanizmów ochrony w usłudze Azure R
 
 Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
 
-![Przykład przedstawiający pasek usługi Azure Information Protection w programie Excel](../media/excel2013-infoprotect-bar2.png)
+![Przykład przedstawiający pasek usługi Azure Information Protection w programie Excel](../media/excel2016-infoprotect-bar.png)
 
 Pasek usługi Information Protection ułatwia użytkownikom końcowym wybieranie etykiet w celu prawidłowej klasyfikacji. Jeśli to konieczne, etykiety te mogą również automatycznie chronić dokumenty i wiadomości e-mail użytkowników.
 
-Po udostępnieniu chronionych dokumentów pocztą e-mail użytkownicy mogą monitorować, kto i kiedy uzyskuje dostęp do tych plików, za pomocą witryny śledzenia dokumentów. W przypadku podejrzenia nieprawidłowego użycia użytkownicy mogą również odwołać dostęp do tych dokumentów.
+Aby sklasyfikować i objąć ochroną dodatkowe typy plików oraz zapewnić obsługę wielu plików jednocześnie, kliknij prawym przyciskiem myszy pliki lub foldery w Eksploratorze plików systemu Windows:
+
+![Kliknięcie prawym przyciskiem myszy w oknie Eksploratora plików — klasyfikowanie i ochrona za pomocą usługi Azure Information Protection](../media/right-click-classify-protect-folder.png)
+
+Po wybraniu opcji menu **Klasyfikuj i chroń** w oknie Eksploratora plików użytkownicy mogą wybrać etykietę w sposób przypominający korzystanie z paska usługi Information Protection w aplikacjach klasycznych pakietu Office. Użytkownicy mogą również ustawić w razie potrzeby własne uprawnienia niestandardowe.
+
+W przypadku użytkowników zaawansowanych (oraz administratorów) wydajniejszym sposobem na zarządzanie wieloma plikami oraz ustawianie ich klasyfikacji i ochrony może okazać się skorzystanie z poleceń programu PowerShell. Chociaż polecenia programu PowerShell umożliwiające wykonywanie tych czynności są automatycznie zawarte w kliencie, moduł PowerShell można także zainstalować oddzielnie.
+
+Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować, kto i kiedy uzyskuje dostęp do tych plików, za pomocą witryny śledzenia dokumentów. W przypadku podejrzenia nieprawidłowego użycia użytkownicy mogą również odwołać dostęp do dokumentów:
+
+![Ikona funkcji Odwołaj dostęp w witrynie śledzenia dokumentów](../media/tracking-site-revoke-access-icon.png)
 
 
 ## <a name="resources-for-azure-information-protection"></a>Zasoby dotyczące usługi Azure Information Protection
@@ -111,6 +121,6 @@ Znasz usługę Azure Information Protection bądź Azure Rights Management pod i
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

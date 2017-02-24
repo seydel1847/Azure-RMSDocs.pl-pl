@@ -1,31 +1,27 @@
 ---
 title: Samouczek Szybki start krok 3 | Azure Information Protection
-description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
+description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ee60db5b9ede65042e9121567cce48e204f25d27
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 559136e48a709b91c544352c38a5bbb40d66261f
 
 
 ---
 
-# <a name="step-3-install-the-client-and-application"></a>Krok 3. Instalowanie klienta i aplikacji 
+# <a name="step-3-install-the-client"></a>Krok 3. Zainstalowanie klienta
 
 >*Dotyczy: Azure Information Protection*
 
-W tym kroku nastąpi najpierw instalacja klienta usługi Azure Information Protection, dzięki czemu właśnie skonfigurowana zasada zostanie pobrana do komputera z systemem Windows i w aplikacjach pakietu Office zostaną wyświetlone etykiety.
-
-Następnie nastąpi instalacja aplikacji RMS sharing umożliwiającej bezpieczne udostępnianie dokumentów pocztą e-mail oraz śledzenie ich wykorzystania. 
-
-Obie te instalacje integrują się z aplikacjami pakietu Office i obecnie konieczna jest ich oddzielna instalacja.
+W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dzięki czemu właśnie skonfigurowana zasada zostanie pobrana do komputera z systemem Windows i w aplikacjach pakietu Office zostaną wyświetlone etykiety.
 
 
 ## <a name="install-the-azure-information-protection-client"></a>Instalowanie klienta usługi Azure Information Protection
@@ -36,26 +32,17 @@ Obie te instalacje integrują się z aplikacjami pakietu Office i obecnie koniec
 
     W przypadku tego samouczka nie ma znaczenia, czy wybierzesz opcję instalacji zasady demonstracyjnej, ponieważ nasza właśnie skonfigurowana zasada zostanie pobrana z systemu Azure i zastąpi zasadę demonstracyjną, jeśli ją zainstalowano. Można jednak użyć opcji zasady demonstracyjnej, jeśli chcesz po prostu zapoznać się z etykietami domyślnymi bez nawiązywania połączenia z usługą Azure Information Protection. 
 
-## <a name="install-the-rights-management-sharing-application"></a>Instalowanie aplikacji RMS sharing 
-
-1. Przejdź do strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) w witrynie firmy Microsoft w sieci Web.
-
-2. W sekcji **Komputery** kliknij ikonę **aplikacji RMS dla systemu Windows** i zapisz plik **Setup.exe**, aby zainstalować aplikację do udostępniania usługi Microsoft Rights Management.
-
-3. Na stronie **Instalacja usług Microsoft RMS** kliknij pozycję **Dalej** i poczekaj na zakończenie instalacji. Następnie kliknij pozycję **Uruchom ponownie**, jeśli zostanie wyświetlony monit o ponowne uruchomienie komputera, lub kliknij pozycję **Zamknij** w celu zakończenia instalacji.
-
-
 ## <a name="verify-the-installations"></a>Sprawdź instalacje
 
-Sprawdź, czy instalacje zakończyły się pomyślnie, otwierając program Word i nowy pusty dokument (nie należy go w tym momencie zapisywać). Jeśli zostanie wyświetlony monit, aby wprowadzić nazwę użytkownika i hasło, wprowadź szczegóły konta administratora globalnego. 
+Sprawdź, czy instalacja zakończyła się pomyślnie, otwierając program Word i nowy pusty dokument (na tym etapie nie ma potrzeby jego zapisu). Jeśli zostanie wyświetlony monit, aby wprowadzić nazwę użytkownika i hasło, wprowadź szczegóły konta administratora globalnego. 
 
-Podczas ładowania dokumentu powinny zostać wyświetlone trzy nowe obiekty:
+Jeśli klient został zainstalowany po raz pierwszy, wyświetlona zostanie strona **Gratulacje** z podstawowymi instrukcjami. Po ich przeczytaniu kliknij **Zamknij**.
+
+Podczas ładowania dokumentu powinny zostać wyświetlone dwa nowe obiekty:
 
 - Na karcie **Narzędzia główne**: nowa grupa **Ochrona** z przyciskiem **Chroń**.
 
-    Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Zainstalowano zasadę Information Protection** i godzina ostatniego połączenia. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
-
-- Także na karcie **Narzędzia główne**: nowa grupa **RMS** z przyciskiem **Udostępnij chronioną zawartość**.
+    Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Połączono jako** i nazwa użytkownika. Powinna także zostać wyświetlona godzina i data ostatniego połączenia oraz data instalacji zasad usługi Information Protection. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
 
 - Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Jest na nim wyświetlany tytuł **Ważność** i skonfigurowana przez nas etykieta domyślna **Wewnętrzne**. 
     
@@ -65,9 +52,8 @@ Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
-|Informacje o instalowaniu klienta usługi Azure Information Protection|[Instalowanie klienta usługi Azure Information Protection](../rms-client/info-protect-client.md)|
-|Informacje dotyczące instalowania aplikacji RMS sharing i instrukcje dla użytkowników|[Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md)|
-|Informacje dotyczące skryptowej instalacji aplikacji do udostępniania usługi Rights Management dla systemu Windows i dodatkowe informacje techniczne|[Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md)|
+|Informacje o instalowaniu klienta usługi Azure Information Protection|[Pobieranie i instalowanie klienta usługi Azure Information Protection](../rms-client/install-client-app.md)|
+|Instrukcje dla administratora dotyczące klienta usługi Azure Information Protection|[Podręcznik administratora klienta usługi Azure Information Protection](../rms-client/client-admin-guide.md)|
 
 
 >[!div class="step-by-step"]
@@ -77,6 +63,6 @@ Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

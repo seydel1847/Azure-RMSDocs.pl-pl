@@ -4,7 +4,7 @@ description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: 6818d514c303b3e3ee61189e62769dc72f36b668
 
 
 ---
@@ -23,9 +23,7 @@ ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
 
 >*Dotyczy: Azure Information Protection*
 
-**[Ta funkcja jest dostępna w wersji zapoznawczej i może ulec zmianie.]**
-
-Po pobraniu na komputery z zainstalowanym [klientem usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) zasad usługi Azure Information Protection do wszystkich użytkowników mają zastosowanie ustawienia i etykiety z domyślnych zasad lub zmiany skonfigurowane na potrzeby zasad globalnych. Aby uzupełnić je pod kątem określonych użytkowników, wybierając dla nich różne ustawienia i etykiety, należy utworzyć **zasady o określonym zakresie** (obecnie dostępne w wersji zapoznawczej) skonfigurowane na potrzeby tych użytkowników.
+Po pobraniu na komputery z zainstalowanym [klientem usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) zasad usługi Azure Information Protection do wszystkich użytkowników mają zastosowanie ustawienia i etykiety z domyślnych zasad lub zmiany skonfigurowane na potrzeby zasad globalnych. Aby uzupełnić je pod kątem określonych użytkowników, wybierając dla nich różne ustawienia i etykiety, należy utworzyć **zasady o określonym zakresie** skonfigurowane na potrzeby tych użytkowników.
 
 Wszyscy użytkownicy uzyskują dostęp do globalnych zasad, które obejmują tytuł paska i etykietkę narzędzia, ustawienia globalne oraz globalne etykiety. Jeśli dla konkretnych użytkowników skonfigurowano zasady o określonym zakresie, użytkownicy ci będą otrzymywać dodatkowe ustawienia i etykiety. 
 
@@ -42,7 +40,7 @@ Aby skonfigurować zasadę usługi Azure Information Protection o określonym za
 
 2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
 
-    W pierwszym bloku **Azure Information Protection** wybierz opcję **Dodaj nowe zasady (WERSJA ZAPOZNAWCZA)**. Zostanie wyświetlony drugi blok, który służy do wyświetlenia odświeżonych zasad globalnych, co pozwoli na skonfigurowanie nowych zasad o określonym zakresie.
+    W pierwszym bloku **Azure Information Protection** wybierz pozycję **Dodaj nowe zasady**. Zostanie wyświetlony drugi blok, który służy do wyświetlenia odświeżonych zasad globalnych, co pozwoli na skonfigurowanie nowych zasad o określonym zakresie.
 
 3. Określ nazwę i opis zasady, które będą widoczne wyłącznie dla administratorów w portalu Azure. Nazwa musi być unikatowa dla dzierżawy. Następnie kliknij przycisk **Określ użytkowników/grupy, których dotyczą wybrane zasady**, a w kolejnych blokach wyszukaj i wybierz użytkowników i grupy dla tej zasady. Etykiety i ustawienia skonfigurowane w ramach tych zasad o określonym zakresie zostaną zastosowane tylko do tych użytkowników. 
 
@@ -67,6 +65,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

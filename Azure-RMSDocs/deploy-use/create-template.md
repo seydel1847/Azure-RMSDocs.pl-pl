@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/11/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b7a73c153edfdc7db3a55ee714b05f65d5090f4
-ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: 66158f74951e7226482e58cf94e4249486b4dc7b
 
 
 ---
@@ -85,10 +85,10 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
     > [!TIP]
     > Aby dodać użytkowników spoza organizacji („użytkowników zewnętrznych”) do szablonu, wybierz grupę z włączoną obsługą poczty, która zawiera kontakty z usługi Office 365 lub Exchange Online. Pozwoli to przypisać prawa do tych użytkowników w ten sam sposób, w jaki można przypisać prawa do użytkowników w danej organizacji. Na przykład można zapobiec edytowaniu cennika wysłanego do klientów przez tych klientów. Nie należy używać tej konfiguracji szablonu do ochrony wiadomości e-mail, jeśli użytkownicy spoza danej organizacji będą czytać chronione wiadomości e-mail za pomocą aplikacji Outlook Web App.
     > 
-    > Ponadto w późniejszym czasie można dodać do szablonu użytkowników spoza organizacji, korzystając z [modułu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md) oraz jednej z następujących metod:
+    > Ponadto w późniejszym czasie możesz dodawać do szablonu użytkowników spoza organizacji, wybierając ich według **określonych użytkowników**, **grup** lub **wszystkich użytkowników z organizacji**. Aby to zrobić, użyj [modułu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md) w połączeniu z jedną z następujących metod:
     > 
-    > -  **Można użyć obiektu definicji praw w celu aktualizacji szablonu**: w tym celu należy określić w obiekcie definicji praw zewnętrzne adresy e-mail i ich prawa, które zostaną następnie użyte w celu aktualizacji szablonu. Obiekt definicji praw określa się, używając polecenia cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) do utworzenia zmiennej. Zmienna zostaje następnie dostarczona do parametru -RightsDefinition za pomocą polecenia cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (w przypadku modyfikacji istniejącego szablonu). W przypadku dodawania użytkowników do istniejącego szablonu trzeba jednak także zdefiniować obiekty definicji praw dla grup istniejących w szablonie, a nie tylko dla nowych użytkowników zewnętrznych.
-    > -  **Można wyeksportować szablon, dokonać jego edycji, a następnie zaimportować zaktualizowany szablon**: użyj polecenia cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx), aby wyeksportować szablon do pliku, który można edytować w celu dodania zewnętrznych adresów e-mail użytkowników i ich praw w odniesieniu do istniejących grup i praw. Następnie należy użyć polecenia cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) w celu zaimportowania zmienionego szablonu z powrotem do usługi Azure RMS.
+    > -  **Użyj obiektu definicji praw, aby zaktualizować szablon**: określ użytkowników zewnętrznych, podając adres e-mail użytkownika, adres e-mail grupy lub domenę dla wszystkich użytkowników danej organizacji, a także odpowiednie prawa w obiekcie definicji praw. Następnie użyj obiektu definicji praw w celu zaktualizowania szablonu. Obiekt definicji praw określa się, używając polecenia cmdlet [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) do utworzenia zmiennej. Zmienna zostaje następnie dostarczona do parametru -RightsDefinition za pomocą polecenia cmdlet [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) (w przypadku modyfikacji istniejącego szablonu). W przypadku dodawania użytkowników do istniejącego szablonu trzeba jednak także zdefiniować obiekty definicji praw dla grup istniejących w szablonie, a nie tylko dla nowych użytkowników zewnętrznych.
+    > -  **Szablon można wyeksportować i zmodyfikować, a następnie zaimportować jego zaktualizowaną wersję**: użyj polecenia cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate), aby wyeksportować szablon do pliku, który można edytować w celu dodania zewnętrznych adresów e-mail użytkowników, adresów e-mail grup i domen wszystkich użytkowników organizacji oraz ich praw w odniesieniu do istniejących grup i praw. Następnie należy użyć polecenia cmdlet [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) w celu zaimportowania zmienionego szablonu z powrotem do usługi Azure RMS.
 
 3.  Następnie należy kliknąć przycisk Dalej i przypisać jedno z wymienionych praw do wybranych użytkowników i grup.
 
@@ -107,7 +107,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Więcej informacji o szablonach dla działu: Domyślnie wszyscy użytkownicy katalogu Azure widzą wszystkie opublikowane szablony i mogą wybierać je z poziomu aplikacji, chcąc zabezpieczyć zawartość. Aby wybrane pozycje spośród opublikowanych szablonów były widoczne tylko dla określonych użytkowników, należy określić zakres szablonów dla tych użytkowników. Po wykonaniu tej czynności tylko wskazani użytkownicy będą mieć możliwość wyboru tych szablonów. Inni użytkownicy, którzy nie zostaną wskazani, nie zobaczą szablonów i, co za tym idzie, nie będą mogli ich wybrać. Ta technika pozwala ułatwić użytkownikom wybór prawidłowego szablonu, zwłaszcza w przypadku, gdy tworzone są szablony przeznaczone dla określonych grup lub działów. Użytkownicy widzą w takim przypadku tylko te szablony, które są przeznaczone dla nich.
 
-    Można na przykład utworzyć przeznaczony dla działu kadr szablon, który nadaje uprawnienia Tylko do odczytu członkom działu finansowego. Dzięki temu omawiany szablon mogą zastosować tylko członkowie działu kadr, korzystając w tym celu z aplikacji do udostępniania usługi Rights Management. Zakres szablonu określa się poprzez powiązanie szablonu z grupą o wskazanym adresie e-mail, której nazwa brzmi HumanResources. Po wykonaniu tych czynności omawiany szablon mogą zobaczyć i zastosować wyłącznie członkowie tej grupy.
+    Można na przykład utworzyć przeznaczony dla działu kadr szablon, który nadaje uprawnienia Tylko do odczytu członkom działu finansowego. Dzięki temu szablon mogą zastosować tylko członkowie działu kadr, korzystając w tym celu z klienta usługi Azure Information Protection. Zakres szablonu określa się poprzez powiązanie szablonu z grupą o wskazanym adresie e-mail, której nazwa to HumanResources. Po wykonaniu tych czynności szablon mogą zastosować wyłącznie członkowie tej grupy. Ponadto, jeśli użytkownicy uruchomią klienta usługi Azure Information Protection w [trybie z samą ochroną](../rms-client/client-protection-only-mode.md), nie zobaczą tego szablonu.
 
 7.  Na stronie **WIDOCZNOŚĆ SZABLONU** należy wybrać użytkowników i grupy, w przypadku których możliwe będzie wyświetlenie i wybór szablonu z poziomu aplikacji z obsługą usług RMS. Jak przedtem, także i w tym przypadku dobrą praktyką jest użycie grupy zamiast użytkowników, przy czym zarówno dla użytkowników, jak i dla grup dostępne muszą być adresy e-mail.
 
@@ -115,7 +115,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Dlaczego może być konieczne skonfigurowanie zgodności aplikacji? Nie wszystkie aplikacje obsługują szablony dla działów. Aby możliwa była ich obsługa, przed pobraniem szablonów niezbędne jest uwierzytelnienie aplikacji w usłudze RMS. Zgodnie z domyślnym ustawieniem, w przypadku, gdy proces uwierzytelniania nie zostanie przeprowadzony, nie zostaną pobrane żadne szablony dla działów. Takie działanie można ominąć, wskazując wszystkie szablony dla działów jako te, które mają zostać pobrane; w tym celu należy skonfigurować zgodność aplikacji i zaznaczyć pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika**.
 
-    Jeśli na przykład zgodność aplikacji nie zostanie skonfigurowana dla szablonu dla działu kadr omawianego w przytoczonym przykładzie, tylko użytkownicy z działu kadr zobaczą szablon podczas korzystania z aplikacji RMS sharing; szablonu dla działu nie zobaczy jednak żaden użytkownik korzystający z usługi Outlook Web Access (OWA) w systemie Exchange Server 2013, ponieważ usługa OWA systemu Exchange oraz protokół Exchange ActiveSync nie obsługują aktualnie szablonów dla działów. Jeśli to domyślne działanie zostanie wyłączone poprzez skonfigurowanie zgodności aplikacji, to choć tylko użytkownicy z działu kadr zobaczą szablon dla działu podczas korzystania z aplikacji RMS sharing, szablon dla działu będzie widoczny dla wszystkich użytkowników korzystających z usługi Outlook Web Access (OWA). Jeśli użytkownicy korzystają w ramach usługi Exchange Online z usługi OWA lub protokołu Exchange ActiveSync, są dwie możliwości: szablony dla działów będą widoczne dla wszystkich użytkowników lub nie będą widoczne dla żadnego z nich, zależnie od statusu szablonu (archiwalny lub opublikowany) w usłudze Exchange Online.
+    Jeśli na przykład zgodność aplikacji nie zostanie skonfigurowana dla szablonu dla działu kadr omawianego w przytoczonym przykładzie, tylko użytkownicy z działu kadr zobaczą szablon podczas korzystania z klienta usługi Azure Information Protection w trybie [tylko z samą ochroną](../rms-client/client-protection-only-mode.md). Szablonu nie zobaczy jednak żaden użytkownik korzystający z usługi Outlook Web Access (OWA) w systemie Exchange Server 2013, ponieważ usługa OWA systemu Exchange oraz protokół Exchange ActiveSync nie obsługują aktualnie szablonów dla działów. Jeśli to domyślne działanie zostanie wyłączone poprzez skonfigurowanie zgodności aplikacji, to choć tylko użytkownicy z działu kadr zobaczą szablon dla działu podczas korzystania z klienta Azure Information Protection w trybie z samą ochroną, szablon dla działu będzie widoczny dla wszystkich użytkowników korzystających z usługi Outlook Web Access (OWA). Jeśli użytkownicy korzystają w ramach usługi Exchange Online z usługi OWA lub protokołu Exchange ActiveSync, są dwie możliwości: szablony dla działów będą widoczne dla wszystkich użytkowników lub nie będą widoczne dla żadnego z nich, zależnie od statusu szablonu (archiwalny lub opublikowany) w usłudze Exchange Online.
 
     Pakiet Office 2016 zapewnia natywną obsługę szablonów dla działów, podobnie jak pakiet Office 2013, począwszy od wersji 15.0.4727.1000, wydanej w czerwcu 2015 roku jako część pakietu [KB 3054853](https://support.microsoft.com/kb/3054853).
 
@@ -165,6 +165,6 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

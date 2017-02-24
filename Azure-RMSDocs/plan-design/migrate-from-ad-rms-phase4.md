@@ -4,7 +4,7 @@ description: "Faza 4 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 9c78ac81a90d46ab8d56cd205474fdf85f486c3d
+ms.sourcegitcommit: e45bbfe0fc2b064d987016cac8af8c4f57d465c9
+ms.openlocfilehash: e10b271872935b7903a3e1bcfe2e8287e693c613
 
 
 ---
@@ -29,7 +29,17 @@ Skorzystaj z poniższych informacji dotyczących fazy 4 migrowania z usługi AD 
 
 ## <a name="step-8-decommission-ad-rms"></a>Krok 8. Likwidowanie wdrożenia usługi AD RMS
 
-Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu połączenia usługi uniemożliwi nowym klientom i potencjalnie narzędziom i usługom powiązanym z usługą RMS wyszukiwanie punktu połączenia usługi po zakończeniu migracji. Wszystkie połączenia powinny przechodzić do usługi Azure Rights Management. Aby usunąć punkt połączenia usługi, należy użyć narzędzia rejestrowania punktu połączenia usługi AD będącego częścią [zestawu narzędzi administracyjnych usług Rights Management](http://www.microsoft.com/download/details.aspx?id=1479).
+Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu połączenia usługi uniemożliwi nowym klientom i potencjalnie narzędziom i usługom powiązanym z usługą RMS wyszukiwanie punktu połączenia usługi po zakończeniu migracji. Wszystkie połączenia powinny przechodzić do usługi Azure Rights Management. 
+
+Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administrator domeny przedsiębiorstwa, a następnie użyć poniższej procedury:
+
+1. W konsoli Usług zarządzania prawami dostępu w usłudze Active Directory kliknij prawym przyciskiem myszy klaster AD RMS, a następnie kliknij pozycję **Właściwości**.
+
+2. Kliknij kartę **Punkt połączenia usługi**.
+
+3. Zaznacz pole wyboru **Zmień punkt połączenia usługi**.
+
+4. Wybierz pozycję **Usuń bieżący punkt połączenia usługi**, a następnie kliknij przycisk **OK**.
 
 Aby monitorować działanie serwerów usługi AD RMS, można na przykład sprawdzać [żądania w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę żądań obsługi](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [przeprowadzać inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. W przypadku korzystania z serwerów dedykowanych można najpierw wykonać krok zapobiegawczy polegający na zamknięciu serwerów na pewien okres, aby upewnić się, że nie zostaną zgłoszone problemy, które wymagają ponownego uruchomienia tych serwerów w celu zapewnienia ciągłości usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
 
@@ -55,6 +65,6 @@ Teraz po zakończeniu migracji sprawdź [plan wdrożenia](deployment-roadmap.md)
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

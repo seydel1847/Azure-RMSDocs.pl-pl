@@ -1,10 +1,10 @@
 ---
-title: "Przewodnik szybkiego wdrażania usługi Azure Information Protection | Azure Information Protection"
-description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Information Protection w celu ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
+title: "Przewodnik po szybkim wdrażaniu usługi Azure Rights Management | Azure Information Protection"
+description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Rights Management do ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
 
 
 ---
@@ -23,7 +23,10 @@ ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji **Wdrażanie i używanie**, aby szybciej wdrożyć usługę Azure Information Protection i korzystać z niej.
+W sekcji **Wdrażanie i używanie** tego przewodnika znajdują się informacje dotyczące konfiguracji, które pozwalają szybciej wdrożyć rozwiązanie tylko do ochrony wykorzystujące usługę Azure Rights Management w ramach usługi Azure Information Protection. Zacznij od wybrania z listy konkretnych scenariuszy do implementacji.
+
+> [!NOTE]
+> W tej chwili przewodnik zawiera scenariusze uwzględniające zastosowania tylko do ochrony. Nie uwzględnia natomiast scenariuszy klasyfikacji i ochrony ani scenariuszy obejmujących klienta usługi Azure Information Protection. 
 
 Opisane scenariusze zawierają zarówno instrukcje dla administratora, jak i dokumentację użytkownika końcowego. Przed przekazaniem tej dokumentacji (w postaci instrukcji lub anonsów) użytkownikom końcowym należy dostosować ją do określonych wymagań biznesowych oraz istniejących przepływów pracy. W przykładowym zestawie instrukcji lub anonsie pokazano, jak może wyglądać końcowa wersja dokumentacji dla użytkowników końcowych.
 
@@ -33,8 +36,7 @@ W tym artykule zawarto przykładowe, najpopularniejsze scenariusze. Usługa Azur
 
 Przed wdrożeniem opisanych rozwiązań warto wysłać do użytkowników końcowych obszerne powiadomienie o planowanych modyfikacjach mających na celu ochronę danych firmy wraz z informacją o ewentualnej konieczności wprowadzenia zmian w sposobie pracy. Treść takiej przykładowej komunikacji zamieszczono pod poniższą tabelą.
 
-> [!NOTE]
-> Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
 ## <a name="scenarios-for-azure-information-protection"></a>Scenariusze dotyczące usługi Azure Information Protection
 Aby szybciej wdrożyć usługę Azure Information Protection w celu rozwiązania określonych problemów w firmie, należy wybrać scenariusze, które najlepiej pasują do celów biznesowych i w razie potrzeby dostosować je.
@@ -148,6 +150,6 @@ Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwol
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

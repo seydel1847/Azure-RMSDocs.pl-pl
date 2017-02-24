@@ -4,7 +4,7 @@ description: "Zasoby informacyjne dotyczące aplikacji do udostępniania usługi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 5c65e007c971ad6d62ee61e15134e16d7bf87624
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 78a796eaea0c6ece4bbaee80e7f287eb2aba29f6
 
 
 ---
@@ -22,6 +22,10 @@ ms.openlocfilehash: 5c65e007c971ad6d62ee61e15134e16d7bf87624
 # <a name="rights-management-sharing-application-for-windows"></a>Aplikacja do udostępniania usługi Rights Management dla systemu Windows
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
+
+> [!IMPORTANT]
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy się 31 stycznia 2018 r. 
+
 
 Aplikacja RMS sharing to bezpłatna aplikacja do pobrania dla organizacji, które używają usług [Active Directory Rights Management](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub usługi [Azure Information Protection](../understand-explore/what-is-information-protection.md), jak również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
@@ -43,6 +47,6 @@ Aplikacja RMS sharing to bezpłatna aplikacja do pobrania dla organizacji, któr
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

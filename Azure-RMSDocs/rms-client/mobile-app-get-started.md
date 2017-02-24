@@ -5,7 +5,7 @@ keywords: "Informacje na temat sposobu wyświetlania wiadomości e-mail lub plik
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b2fb20fb4613c688a8ab956fbe91d62041801959
+ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
+ms.openlocfilehash: 32e0315a8a4e6515b0b89b85afefa1bb17591e0b
 
 
 ---
@@ -32,9 +32,9 @@ Na urządzeniu przenośnym należy uzyskać dostęp do jednego z plików obsług
     
     Użyj innego urządzenia, aby wysłać do siebie wiadomość e-mail chronioną prawami, do której można uzyskać dostęp z urządzenia przenośnego. Na przykład użyj programu Outlook na komputerze z systemem Windows. Listę klientów poczty e-mail, które natywnie obsługują usługę Rights Management, można znaleźć w kolumnie POCZTA E-MAIL na stronie [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
 
-- **Plik PDF chroniony prawami**: użyj aplikacji do udostępniania usługi Rights Management z komputera z systemem Windows lub aplikacji PDF, która natywnie obsługuje usługę Rights Management, aby wysłać do siebie plik PDF chroniony prawami jako załącznik wiadomości e-mail. Możesz także przekazać plik PDF do chronionej biblioteki programu SharePoint, a następnie udostępnić go przy użyciu swojego adresu e-mail.
+- **Plik PDF chroniony prawami**: na komputerze z systemem Windows możesz użyć klienta usługi Azure Information Protection w celu zapewnienia [ochrony dla pliku PDF](client-classify-protect.md). Następnie możesz wysłać do siebie plik PDF chroniony prawami jako załącznik wiadomości e-mail. Możesz także przekazać plik PDF do chronionej biblioteki programu SharePoint, a następnie udostępnić go przy użyciu swojego adresu e-mail.
 
-- **Plik ptxt, pjpg lub ppng**: użyj aplikacji RMS sharing usługi Rights Management z komputera z systemem Windows i opcji [Udostępnianie chronionej zawartości](sharing-app-protect-by-email.md), aby wysłać sobie chroniony plik jako załącznik wiadomości e-mail. Aby uzyskać pełną listę typów plików, których można używać do testowania, zobacz pierwszą tabelę w sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) w podręczniku administratora aplikacji do udostępniania usługi Rights Management. 
+- **Plik .ptxt, .pjpg lub .ppng**: na komputerze z systemem Windows możesz użyć klienta usługi Azure Information Protection, aby objąć ochroną plik tekstowy lub obraz, a następnie wysłać sobie zawartość w postaci pliku chronionego w załączniku wiadomości e-mail. Pełna lista typów plików, których można używać do testowania, znajduje się w sekcji [Obsługiwane typy plików do ochrony i ich rozszerzenia nazw](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) przewodnika administratora klienta usługi Azure Information Protection. 
 
 Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wtedy wyświetlony monit o zalogowanie się do konta służbowego. Po pomyślnym uwierzytelnieniu użytkownika aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
 
@@ -47,6 +47,6 @@ W przypadku innych pytań odwiedź [witrynę Yammer](https://www.yammer.com/AskI
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

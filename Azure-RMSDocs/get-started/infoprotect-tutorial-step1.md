@@ -1,6 +1,6 @@
 ---
 title: Samouczek Szybki start krok 1 | Azure Information Protection
-description: "Krok 1 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
+description: "Krok 1 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 1b9a65619e2cbe9def71379dffc6c1df1729cdfa
+ms.sourcegitcommit: 420da63412f10431d29c01bad317c69cf72b66ad
+ms.openlocfilehash: a2631af6bf972a8c88d37e42149b90fb96f71763
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1b9a65619e2cbe9def71379dffc6c1df1729cdfa
 > [!NOTE]
 >Jeśli już aktywowano usługę Azure Rights Management dla dzierżawy — przejdź wprost do [następnego kroku](infoprotect-tutorial-step2.md). 
 
-Po aktywowaniu usługi Azure Rights Management, możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić ich wykorzystanie po udostępnieniu ich innym osobom. Istnieją różne metody aktywowania tej usługi, w tym zastosowanie usługi Windows PowerShell i przejście przez portale administracyjne.
+Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne metody aktywowania tej usługi, w tym zastosowanie usługi Windows PowerShell i przejście przez portale administracyjne.
 
 W tym samouczku przejdziemy bezpośrednio do strony aktywacji dla administratorów pakietu Office 365, czyli strony identycznej dla klasycznego portalu Office 365 i wersji zapoznawczej centrum administracji Office 365. 
 
@@ -59,6 +59,6 @@ To wszystko, co musisz zrobić w pierwszym kroku tego samouczka. W przypadku wdr
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

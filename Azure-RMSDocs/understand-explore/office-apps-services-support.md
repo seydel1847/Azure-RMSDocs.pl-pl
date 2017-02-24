@@ -4,7 +4,7 @@ description: "Sposób, w jaki aplikacje pakietu Office dla użytkowników końco
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 2e895f51e21d5f8cb45a43719d47ba6987c13a09
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: d2d33329457e181b55489834daf595da81bc7ada
 
 
 ---
@@ -30,6 +30,8 @@ Aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, P
 Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programu Word, Excel i PowerPoint, ściśle dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
 
 Na przykład użytkownicy mogą tak skonfigurować dokument programu Word, aby był on dostępny tylko dla osób z danej organizacji. Można określić, czy arkusz kalkulacyjny programu Excel jest dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. W przypadku plików ważnych przez określony czas można skonfigurować czas wygaśnięcia (bezpośrednio przez działania użytkowników lub przez zastosowanie szablonu), po upływie którego dostęp do pliku nie będzie już możliwy. W przypadku programu Outlook, oprócz możliwości wyboru szablonu, użytkownicy mogą wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
+
+Oprócz natywnych Usług zarządzania prawami do informacji (IRM), aplikacje te obsługują pasek usługi Azure Information Protection, który jest instalowany z [klientem usługi Azure Information Protection](../rms-client/aip-client.md ). Ten pasek wyświetla etykiety, które ułatwiają użytkownikom automatyczne stosowanie ochrony usługi Rights Management do dokumentów i wiadomości e-mail zawierających poufne dane.
 
 ## <a name="exchange-online-and-exchange-server"></a>Usługa Exchange Online i program Exchange Server
 W przypadku używania usługi Exchange Online lub programu Exchange Server można zastosować integrację usług zarządzania prawami do informacji (IRM) i korzystać z dodatkowych rozwiązań w zakresie ochrony informacji:
@@ -64,7 +66,7 @@ W przypadku korzystania z programu SharePoint Server można użyć funkcji ochro
 > - Chronione pliki PDF z rozszerzeniem nazwy pliku PPDF nie są obsługiwane. Pliki z rozszerzeniem nazwy pliku PDF, które są natywnie chronione przez usługę Rights Management, są obsługiwane w przypadku używania czytnika plików PDF z natywną obsługą usługi Rights Management.
 
 
-Zastosowanie ograniczeń dotyczących użycia i szyfrowania danych przez usługę Azure RMS następuje podczas pobierania dokumentów z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
+Zastosowanie ograniczeń dotyczących użycia i szyfrowania danych przez usługę Azure Rights Management następuje podczas pobierania dokumentów z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
 Więcej informacji o korzystaniu z usługi Azure Rights Management z programem SharePoint można znaleźć w następującym wpisie na blogu pakietu Office: [What’s New with Information Rights Management in SharePoint and SharePoint Online](http://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/) (Co nowego w usłudze zarządzania prawami do informacji programu SharePoint i usługi SharePoint Online)
 
@@ -75,6 +77,6 @@ Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Ri
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

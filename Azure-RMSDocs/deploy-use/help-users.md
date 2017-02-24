@@ -4,7 +4,7 @@ description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
 
 
 ---
@@ -61,20 +61,16 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
 
 Skorzystaj z poniższych sekcji zawierających informacje dotyczące aplikacji, aby ułatwić użytkownikom ochronę ważnych dokumentów i wiadomości e-mail.
 
-## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Korzystanie z ochrony informacji przy użyciu aplikacji do udostępniania usług Rights Management
-Aplikacja Rights Management (RMS) sharing jest wymagana do ochrony i korzystania z zawartości chronionej w przypadku użytkowników pakietu Office 2010, ale jest także zalecana dla wszystkich komputerów i urządzeń przenośnych, które obsługują usługę Azure Rights Management.
+## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Korzystanie z ochrony informacji zapewnianej przez klienta usługi Azure Information Protection
+Klient usługi Azure Information Protection może być wymagany w przypadku użytkowników, aby możliwa były ochrona i używanie chronionych dokumentów i wiadomości e-mail, jeśli użytkownicy ci korzystają z pakietu Office 2010. Ponadto jego stosowanie jest zalecane także w przypadku komputerów i urządzeń przenośnych.
 
-Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów aplikacja do udostępniania usługi RMS umożliwia śledzenie dokumentów, które zostały objęte ochroną, i w razie potrzeby odwołanie dostępu do nich.
+Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów klient usługi Azure Information Protection umożliwia śledzenie dokumentów, które zostały objęte ochroną, i w razie potrzeby odwołanie dostępu do nich.
 
-Instrukcje dotyczące korzystania z tej aplikacji na komputerach z systemem Windows można znaleźć w [Podręczniku użytkownika aplikacji do udostępniania usług Rights Management](../rms-client/sharing-app-user-guide.md).
+Aby uzyskać instrukcje dotyczące używania tego klienta dla komputerów z systemem Windows, zobacz [podręcznik użytkownika klienta usługi Azure Information Protection ](../rms-client/client-user-guide.md).
 
-Aby uzyskać informacje dotyczące urządzeń przenośnych, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla platform urządzeń przenośnych](http://technet.microsoft.com/dn451248).
-
-> [!TIP]
-> Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w artykule [Użytkownicy bezpiecznie udostępniają załączniki użytkownikom mobilnym](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users).
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
-Jeśli używasz usługi Azure Rights Management, a aplikacja do udostępniania usług Rights Management nie została zainstalowana, użytkownicy nie będą widzieli przycisku **Udostępnij chronione** na wstążce ani opcji **Włącz ochronę miejscową** w Eksploratorze plików, które ułatwiają ochronę plików. Tacy użytkownicy muszą wykonać instrukcje podobne do następujących:
+Jeśli używasz usługi Azure Rights Management, ale nie masz zainstalowanego klienta usługi Azure Information Protection, użytkownicy nie będą widzieć paska usługi Azure Information Protection w swoich aplikacjach klasycznych pakietu Office ani przycisku **Chroń** na wstążce lub opcji **Klasyfikuj i chroń** w Eksploratorze plików, który ułatwia korzystanie z tych elementów do ochrony plików. Tacy użytkownicy muszą wykonać instrukcje podobne do opisanych poniżej.
 
 > [!TIP]
 > Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
@@ -117,6 +113,6 @@ Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiad
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

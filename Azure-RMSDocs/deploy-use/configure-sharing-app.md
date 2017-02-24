@@ -4,7 +4,7 @@ description: "Informacje dla administratorów dotyczące wdrażania aplikacji Ri
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0d15a232bc1f0b1bce94e48c7e9c6f6b9419b5dd
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: cffebd2ac11f78b20b125bfd7eabca83a6ba0363
 
 
 ---
@@ -23,21 +23,22 @@ ms.openlocfilehash: 0d15a232bc1f0b1bce94e48c7e9c6f6b9419b5dd
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Aplikacja Rights Management (RMS) sharing jest wymagana do użycia usługi Azure Rights Management z pakietem Office 2010 na komputerach klienckich i jest zalecana dla wszystkich komputerów i urządzeń przenośnych, które obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection. Aplikacja RMS sharing integruje się z aplikacjami pakietu Office, instalując dodatek dla pakietu Office ułatwiający użytkownikom ochronę plików i wiadomości e-mail bezpośrednio z poziomu wstążki. Zapewnia ona również ogólną ochronę typów plików, dla których usługa Azure Rights Management nie zapewnia natywnej ochrony, oraz witrynę do śledzenia dokumentów umożliwiającą użytkownikom śledzenie i odwoływanie chronionych plików.
+> [!IMPORTANT]
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Obsługa tej starszej aplikacji zakończy się 31 stycznia 2018 r. 
+ 
+Aplikacja RMS sharing obsługuje uwierzytelnianie w usłudze Office 2010 i integruje się z aplikacjami pakietu Office, instalując dodatek dla pakietu Office ułatwiający użytkownikom ochronę plików i wiadomości e-mail bezpośrednio ze wstążki. Aplikacja ta oferuje również ogólną ochronę typów plików, dla których usługa Azure Rights Management nie zapewnia natywnej ochrony, oraz witrynę do śledzenia dokumentów umożliwiającą użytkownikom śledzenie i odwoływanie chronionych plików.
 
 ## <a name="the-rms-sharing-application-for-windows-installation-and-configuration"></a>Aplikacja RMS sharing dla systemu Windows: instalacja i konfiguracja
-Aby zainstalować i skonfigurować aplikację do udostępniania usługi RMS dla systemu Windows dla wdrożenia w przedsiębiorstwie, skorzystaj z [Przewodnika administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
+Aby zainstalować i skonfigurować aplikację RMS sharing dla systemu Windows w ramach wdrożenia w przedsiębiorstwie, skorzystaj z [przewodnika administratora aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management](../rms-client/sharing-app-admin-guide.md).
 
-> [!TIP]
-> Jeśli chcesz szybko zainstalować i przetestować aplikację do udostępniania usługi RMS na jednym komputerze, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/install-sharing-app.md) w [Podręczniku użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md).
+Tej aplikacji nie można pobrać ze strony usługi Microsoft Azure Information Protection. Podany link dla komputerów z systemem Windows powoduje teraz pobranie klienta usługi Azure Information Protection. 
+
 
 ## <a name="the-rms-sharing-application-for-mobile-platforms-installation-and-management"></a>Aplikacja RMS sharing dla platform urządzeń przenośnych: instalacja i zarządzanie
-Aby zainstalować aplikację RMS sharing dla platform urządzeń przenośnych, możesz pobrać odpowiednią aplikację przy użyciu linków na [stronie usługi Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970). Aby używać usługi Azure Rights Management z tą aplikacją, nie trzeba nic konfigurować.
+Aplikację RMS sharing dla komputerów Mac i urządzeń z systemem Windows Phone można pobrać i zainstalować ze [strony usługi Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970). 
 
-> [!NOTE]
-> Aplikacja RMS sharing dla systemów iOS i Android została obecnie zastąpiona przez aplikację Azure Information Protection.
+Nie jest już możliwe pobranie z tej strony aplikacji RMS sharing dla systemu iOS i Android. Linki dla tych urządzeń przenośnych pozwalają teraz pobrać klienta usługi Azure Information Protection . 
 
-**Jeśli masz konto w usłudze Microsoft Intune**: aplikacja Azure Information Protection obejmuje zestaw Software Development Kit aplikacji w usłudze Microsoft Intune, więc w przypadku rejestrowania urządzeń z systemami iOS i Android w usłudze Intune można wdrożyć aplikację Azure Information Protection i zarządzać nią dla tych urządzeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i wdrażanie zasad zarządzania aplikacjami mobilnymi w konsoli usługi Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) w dokumentacji usługi Intune. W kroku 2 postępuj zgodnie z instrukcjami, aby opublikować aplikację zarządzaną przez zasady.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
@@ -45,6 +46,6 @@ Aby zainstalować aplikację RMS sharing dla platform urządzeń przenośnych, m
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

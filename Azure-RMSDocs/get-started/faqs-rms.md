@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 181357691df02c8532a6f28eef689dcacdfd937f
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: f0fb23195983771fb7e19a626adc78ca28faa1a7
 
 
 ---
@@ -86,9 +86,9 @@ Do uwierzytelnienia użytkownika usługa Azure Rights Management zawsze używa k
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
-Tak. Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i użytkowników spoza niej.
+Tak. Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i spoza niej. 
 
-Aby określić użytkowników spoza organizacji, dodaj ich jako kontakty do grupy wybranej w klasycznym portalu Azure podczas konfigurowania szablonów. Możesz też użyć [modułu programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md):
+Aby określić użytkowników spoza organizacji, dodaj ich jako kontakty do grupy wybranej w klasycznym portalu Azure podczas konfigurowania szablonów. Aby określić grupy spoza organizacji, należy użyć modułu [Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md), za pomocą którego można również określić poszczególnych użytkowników zewnętrznych, a nawet wszystkich użytkowników z innej organizacji:
 
 -   **Użyj obiektu definicji praw, aby utworzyć lub zaktualizować szablon**.    Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, który następnie zostanie użyty do utworzenia lub zaktualizowania szablonu. Aby określić obiekt definicji praw, utwórz zmienną za pomocą polecenia cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx). Następnie wykonaj polecenie cmdlet [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) (w przypadku nowego szablonu) lub polecenie cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (w przypadku modyfikacji istniejącego szablonu), aby dostarczyć tę zmienną do parametru -RightsDefinition. Jeśli jednak użytkownicy są dodawani do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących grup w szablonach, a nie tylko dla użytkowników zewnętrznych.
 
@@ -97,15 +97,12 @@ Więcej informacji na temat szablonów niestandardowych można znaleźć w temac
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Czy usługa Azure RMS współpracuje z grupami dynamicznymi w usłudze Azure AD?
 Funkcja Azure AD Premium pozwala skonfigurować członkostwo dynamiczne w grupach, określając [reguły oparte na atrybucie](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Typ grupy zabezpieczeń utworzonej w usłudze Azure AD obsługuje członkostwo dynamiczne, ale nie obsługuje adresu e-mail i dlatego nie może być używany z usługą Azure Rights Management. Teraz można jednak utworzyć w usłudze Azure AD nowy typ grupy, który obsługuje członkostwo dynamiczne, a jednocześnie ma włączoną obsługę poczty. Podczas dodawania nowej grupy w klasycznym portalu Azure można wybrać **TYP GRUPY** **usługi Office 365 Preview**. Ponieważ jest to grupa z włączoną obsługą poczty e-mail, można używać jej wraz z usługą Azure Rights Management.
 
-Jak jasno wskazuje nazwa opcji, nowy typ grupy jest dostępny w wersji zapoznawczej. Oczekuje się, że zostaną udostępnione dodatkowe funkcje oraz nowa dokumentacja w tym zakresie. Obecnie możemy potwierdzić, że ten nowy typ grupy może być używany z usługą Azure Rights Management.
-
-
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
 Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą w sekcji [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
 
 Usługa Azure Rights Management obsługuje wszystkie typy plików. W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz niektórych typów plików innych aplikacji usługa Azure Rights Management zapewnia natywną ochronę obejmującą zarówno szyfrowanie, jak i wymuszanie praw (uprawnień). W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia hermetyzację plików oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest uprawniony do otwarcia pliku.
 
-Lista rozszerzeń typów plików obsługiwanych przez usługę Azure Rights Management znajduje się w sekcji dotyczącej [obsługiwanych typów plików i rozszerzeń nazw plików](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) w [Przewodniku administratora aplikacji RMS sharing](../rms-client/sharing-app-admin-guide.md). Rozszerzenia nazw plików, które nie są wymienione na liście, są obsługiwane za pomocą aplikacji do udostępniania usługi RMS, która automatycznie stosuje ochronę ogólną do tych plików.
+Aby uzyskać listę rozszerzeń nazw plików, które są natywnie obsługiwane przez usługę Azure Rights Management, zobacz temat [Typy plików obsługiwane przez klienta usługi Azure Information Protection](../rms-client/client-admin-guide-file-types.md). Rozszerzenia nazw plików, które nie są wymienione na liście, są obsługiwane przy użyciu klienta usługi Azure Information Protection, który automatycznie stosuje do tych plików ochronę ogólną.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Czy po otwarciu dokumentu pakietu Office chronionego przez usługę RMS skojarzony plik tymczasowy jest również chroniony przez usługę RMS?
 
@@ -144,8 +141,6 @@ W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy u
 
 Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx). To ustawienie można przesłonić bardziej restrykcyjnym ustawieniem w szablonie niestandardowym. 
 
-Ustawienie dzierżawy i ustawienie szablonu mogą zostać przesłonięte przez użytkowników, jeśli używają oni aplikacji RMS sharing i wybiorą opcję **Zezwalaj mi na natychmiastowe odwołanie dostępu do tych dokumentów**. To ustawienie efektywnie ustawia okres ważności licencji użytkowania na 0. 
-
 Aby uzyskać dodatkowe informacje i przykłady sposobu działania licencji użytkowania, zobacz szczegółowy opis polecenia [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx).
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Czy usługa Rights Management może uniemożliwiać przechwytywanie ekranu?
@@ -165,6 +160,6 @@ Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest pr
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

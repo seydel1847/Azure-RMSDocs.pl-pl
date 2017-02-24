@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące wdrażania łącznika usług RMS, który udo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
-ms.openlocfilehash: 874882b46bea052a1052b6f8e0e09f74b92753b8
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 5d33e0a8a9c6efbe937a53ae964b2972bf41580c
 
 
 ---
@@ -41,7 +41,7 @@ Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Man
 Łącznik usługi RMS obsługuje następujące serwery lokalne: Exchange Server, SharePoint Server i serwery plików działające pod kontrolą systemu operacyjnego Windows Server i używające funkcji infrastruktury klasyfikacji plików do klasyfikowania oraz stosowania zasad do dokumentów pakietu Office w folderze. 
 
 > [!NOTE]
-> Aby chronić wszystkie typy plików (a nie tylko dokumenty pakietu Office) za pomocą infrastruktury klasyfikacji plików, zamiast łącznika usług RMS należy używać [poleceń cmdlet ochrony usługi RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+> Aby chronić przy użyciu infrastruktury klasyfikacji plików wiele typów plików, a nie tylko dokumenty pakietu Office, zamiast łącznika usług RMS należy używać [poleceń cmdlet usługi Azure Information Protection](/powershell/azureinformationprotection/vlatest/aip).
 
 Wersje tych serwerów lokalnych obsługiwane przez łącznik usług RMS można znaleźć w sekcji [Serwery lokalne, które obsługują usługi Azure RMS](..\get-started\requirements-servers.md).
 
@@ -100,6 +100,6 @@ Przejdź do kroku 1: [Instalowanie i konfigurowanie łącznika usługi Azure Rig
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

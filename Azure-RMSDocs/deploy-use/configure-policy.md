@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 10c7d307cceb1ca5f1b9bf857fdbe9aea0dc321d
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
 
 
 ---
@@ -31,7 +31,7 @@ Aby skonfigurować zasady usługi Azure Information Protection:
 
 2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
 
-    Zostanie wyświetlony blok **Azure Information Protection**, automatycznie otwierający blok globalnych zasad ochrony informacji, które otrzymują wszyscy użytkownicy. Zawiera on następujące elementy, które można skonfigurować:
+    Zostanie wyświetlony blok **Azure Information Protection**, w którym można otworzyć zasady **Globalne**, które mają zastosowanie do wszystkich użytkowników. Opcjonalnie możesz również dodawać i edytować zasady należące do zakresów. **Globalne** zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
 
     - Etykiety, dzięki którym można klasyfikować dokumenty i wiadomości e-mail.
 
@@ -83,6 +83,6 @@ Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w apl
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

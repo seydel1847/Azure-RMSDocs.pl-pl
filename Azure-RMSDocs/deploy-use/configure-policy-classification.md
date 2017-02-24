@@ -4,15 +4,15 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: 2178e8257c67ff8272b5cf359d3cccc60e519762
 
 
 ---
@@ -78,7 +78,7 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 ## <a name="information-about-the-built-in-conditions"></a>Informacje o wbudowanych warunkach
 
-W okresie używania wersji zapoznawczej możesz wybrać następujące warunki:
+Można wybrać następujące warunki:
 
 - [Kod SWIFT](#swift-code )
 
@@ -227,6 +227,6 @@ Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

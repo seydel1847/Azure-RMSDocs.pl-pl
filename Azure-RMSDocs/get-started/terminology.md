@@ -4,7 +4,7 @@ description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usług�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
+ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
+ms.openlocfilehash: 70657eb86ac3aeb53b8fb9983a33905100ca92b8
 
 
 ---
@@ -50,7 +50,7 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z nazwami usług Office, takimi jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi usług Microsoft Rights Management.|
 |IRM|Zobacz *Information Rights Management (zarządzanie prawami do informacji)*.|
 |MSDRM|Czasami występuje jako odniesienie do klienta usług RMS w wersji 1.0, która została zastąpiona nowszą wersją klienta, MSIPC. Wspomniany starszy klient obsługuje aplikacje, które są tworzone z użyciem zestawu RMS SDK 1.0, pakiety Office 2010 i Office 2007 oraz aplikacje Exchange 2010 i Exchange 2013, SharePoint 2010 i SharePoint 2007.|
-|MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpiła starszą wersję klienta RMS, MSDRM. Nowszy z klientów obsługuje aplikacje napisane z użyciem zestawy RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, program SharePoint 2013 i aplikację do udostępniania usługi RMS.|
+|MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpiła starszą wersję klienta RMS, MSDRM. Nowszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, program SharePoint 2013, aplikację RMS sharing i klienta usługi Azure Information Protection.|
 |ochrona natywna|Poziom ochrony dostępny we wszystkich aplikacjach z obsługą usług, który uniemożliwia otwarcie pliku przez osoby nieupoważnione i który może również wymuszać bardziej rygorystyczne zasady, np. tylko do odczytu, ale nie do drukowania. Ponadto ochrona ta jest powiązana z plikiem, w związku z czym plik jest nią objęty nawet wtedy, gdy zostaje przekazany innym osobom lub zapisany w ogólnodostępnej lokalizacji.|
 |pfile|Rozszerzenie nazwy pliku dołączane do wszystkich plików objętych ogólną ochroną usługi zarządzania prawami.|
 |ppdf|Rozszerzenie nazwy pliku tworzone przez usługę zarządzania prawami podczas automatycznego tworzenia kopii PDF pliku (Word, Excel, PowerPoint lub PDF) udostępnionej za pośrednictwem poczty e-mail, dzięki czemu plik można odczytać (ale nie edytować) na wszystkich urządzeniach.|
@@ -59,7 +59,7 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |opublikować|Chronić plik w celu zabezpieczenia go przed nieautoryzowanym dostępem i użyciem.|
 |łącznik usługi Rights Management|Przekaźnik wychodzącego serwera proxy, który można wdrożyć dla usług lokalnych, takich jak Exchange Server i SharePoint, aby chronić dane przy użyciu usługi Azure Rights Management.|
 |usługi Rights Management|Ogólny termin mający zastosowanie zarówno do wersji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] opartej na chmurze ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]), jak i do wersji lokalnej [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] (AD RMS).|
-|aplikacja do udostępniania usługi Rights Management|Opcjonalna aplikacja do pobrania przeznaczona dla systemu Windows i ciesząca się największą popularnością wśród użytkowników urządzeń przenośnych; obsługuje bezpieczne udostępnianie plików w trybie lokalnym i za pośrednictwem poczty e-mail.|
+|aplikacja do udostępniania usługi Rights Management|Zastąpiona przez klienta usługi Azure Information Protection, opcjonalną aplikację dla systemu Windows i popularnych urządzeń przenośnych, która obsługuje bezpieczne udostępnianie plików lokalnie i za pośrednictwem poczty e-mail.|
 |RMS|Zobacz *usługi Rights Management*.|
 |łącznik RMS|Zobacz *łącznik usługi Rights Management*.|
 |usług RMS dla użytkowników indywidualnych|Bezpłatna subskrypcja umożliwiająca użytkownikowi korzystanie z usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] w przypadku, gdy organizacja użytkownika nie ma subskrypcji usługi Office 365 ani Azure Active Directory.|
@@ -73,6 +73,6 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

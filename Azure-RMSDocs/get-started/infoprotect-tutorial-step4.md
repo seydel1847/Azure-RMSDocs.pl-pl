@@ -1,18 +1,18 @@
 ---
 title: Samouczek Szybki start krok 4 | Azure Rights Management
-description: "Krok 4 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
+description: "Krok 3 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
-ms.openlocfilehash: 59639e9c90c5a55d8eda44bbcc2f9efbc5b9ffb5
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: bf438f4f7617b4cc05df7f4a7067c5ac57fd1d06
 
 
 ---
@@ -35,7 +35,7 @@ Wybierz opcję **Poprzednia etykieta już nie obowiązuje** i kliknij przycisk *
 
 ## <a name="to-remove-the-classification-completely"></a>Aby całkowicie usunąć klasyfikację
 
-Na pasku Information Protection kliknij ikonę **Edytuj etykietę** obok opcji **Osobiste**. Zostaną wyświetlone dostępne etykiety. Zamiast wybierać którąś z etykiet, kliknij ikonę **Usuń etykietę**. Kliknij przycisk **OK**, aby potwierdzić, a następnie podaj uzasadnienie dla tej akcji.  
+Na pasku Information Protection kliknij ikonę **Edytuj etykietę** obok opcji **Osobiste**. Zostaną wyświetlone dostępne etykiety. Zamiast wybierać jedną z etykiet, tym razem kliknij ikonę **Usuń etykietę**. Tym razem wpisz komentarz o treści „Ten dokument nie wymaga klasyfikacji” i kliknij przycisk **Potwierdź**.  
 
 Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej:
 
@@ -56,7 +56,17 @@ Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, k
 
     Dokument jest również chroniony za pomocą podanego szablonu Azure Rights Management, co można potwierdzić, klikając kartę **Plik** i wyświetlając informację **Ochrona dokumentu**. Jeśli używany jest domyślny szablon Poufne, zostaną wyświetlone informacje, że zasięg dokumentu jest ograniczony do użytkowników wewnętrznych (użytkownicy spoza organizacji nie będą mogli otworzyć dokumentu) i jego zawartość nie może być kopiowana ani drukowana. Jako właściciel dokumentu możesz skopiować i wydrukować dokument, ale jeśli wyślesz go pocztą e-mail do innego użytkownika w organizacji, nie będzie on mógł wykonać tych czynności.
 
+4. Możesz zamknąć ten dokument.
+
 Po sprawdzeniu klasyfikacji, etykietowania i ochrony w działaniu zobaczmy, jak możesz chronić swoje dokumenty nawet po udostępnieniu ich innym osobom w innej organizacji. Możesz nawet śledzić ich wykorzystanie i cofać dostęp do nich.
+
+|Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
+|--------------------------------|--------------------------|
+|Pełne instrukcje dotyczące ochrony plików i dodawania do nich etykiet |[Klasyfikowanie i ochrona pliku lub wiadomości e-mail](../rms-client/client-classify-protect.md)|
+
+
+
+
 
 >[!div class="step-by-step"]
 [&#171; Krok 3](infoprotect-tutorial-step3.md)
@@ -65,6 +75,6 @@ Po sprawdzeniu klasyfikacji, etykietowania i ochrony w działaniu zobaczmy, jak 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

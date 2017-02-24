@@ -1,18 +1,18 @@
 ---
 title: Samouczek Szybki start krok 2 | Azure Information Protection
-description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 30 minut."
+description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
-ms.openlocfilehash: 4ad51bef524fd408881c4c3195a34f730c810b5a
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
 
 
 ---
@@ -32,7 +32,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     > [!TIP] 
     > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
 
-3.  Eksploruj automatycznie wyświetlony blok **Zasady: Globalne** przedstawiający domyślne zasady usługi Information Protection, które są tworzone automatycznie:
+3.  W bloku Azure Information Protection kliknij pozycję **Globalne** i przejrzyj blok **Zasady: Globalne** zawierający domyślne zasady usługi Information Protection, które są tworzone automatycznie:
     
     - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Wewnętrzne**, **Poufne** i **Tajne**. Przeczytaj etykietkę narzędzia każdej z nich, aby zrozumieć sposób korzystania z etykiet. Należy pamiętać, że etykieta **Tajne** zawiera dwie etykiety podrzędne: **Wszyscy pracownicy** i **Moja grupa**, które stanowią przykład klasyfikacji z podkategoriami.
 
@@ -114,7 +114,7 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
 Po zakończeniu tego samouczka możesz zamknąć portal Azure lub zostawić otwarty w celu wypróbowania innych opcji konfiguracji.
 
-Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilka zmian, następnym krokiem jest zainstalowanie klienta usługi Azure Information Protection oraz aplikacji RMS sharing.
+Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilka zmian, następnym krokiem jest zainstalowanie klienta usługi Azure Information Protection.
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
@@ -128,6 +128,6 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

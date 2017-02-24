@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dla administratorów dotyczące konfigurow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
-ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: 2b90ba203c8d1874eab193d24d16117af2442449
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
 
 Ze względu na to, że usługa Office 365 natywnie obsługuje usługę Azure Rights Management w ramach usługi Azure Information Protection, do obsługi funkcji zarządzania prawami do informacji (IRM, Information Rights Management) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook Web App, nie jest wymagana konfiguracja komputera klienckiego. Wszyscy użytkownicy muszą tylko zalogować się do aplikacji pakietu Office przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i wiadomości e-mail oraz używać plików i wiadomości e-mail, które są chronione przez inne osoby.
 
-Zalecamy jednak uzupełnienie tych aplikacji o aplikację do udostępniania usługi Rights Management, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office. Aby uzyskać więcej informacji, zobacz [Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów](configure-sharing-app.md).
+Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz temat [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 ## <a name="exchange-online-irm-configuration"></a>Usługa Exchange Online: konfiguracja usługi IRM
 Aby skonfigurować usługę Exchange Online do obsługi usługi Azure Rights Management, należy skonfigurować usługę zarządzania prawami do informacji (IRM) dla usługi Exchange Online. W tym celu należy użyć programu Windows PowerShell (nie trzeba instalować oddzielnego modułu) i uruchomić [polecenia programu PowerShell dla usługi Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
@@ -141,6 +141,9 @@ Aby uzyskać więcej informacji na temat szyfrowania wiadomości, zobacz [Szyfro
 
 ## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM
 Aby skonfigurować usługi SharePoint Online i OneDrive dla Firm do obsługi usługi Azure Rights Management, musisz najpierw włączyć usługę zarządzania prawami do informacji (IRM, Information Rights Management) dla usługi SharePoint Online, używając centrum administracyjnego programu SharePoint. Następnie właściciele witryn mogą używać usługi IRM do ochrony bibliotek dokumentów i list programu SharePoint, a użytkownicy — do ochrony biblioteki usługi OneDrive dla Firm, dzięki czemu dokumenty zapisywane w tej usłudze i udostępniane innym osobom są automatycznie chronione przez usługę Azure Rights Management.
+
+> [!NOTE]
+> Biblioteki programu SharePoint i OneDrive dla Firm chronione przy użyciu Usług zarządzania prawami do informacji (IRM) obsługują pobieranie w trybie online, o ile użytkownik nie używa starszego klienta synchronizacji — klienta synchronizacji OneDrive dla Firm (Groove.exe). Nowy [klient synchronizacji OneDrive (OneDrive.exe)](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614) nie obsługuje obecnie ochrony Rights Management. 
 
 Aby włączyć usługę zarządzania prawami do informacji (IRM) dla usługi SharePoint Online, zobacz następujące instrukcje dostępne w witrynie sieci Web pakietu Office:
 
@@ -1112,6 +1115,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

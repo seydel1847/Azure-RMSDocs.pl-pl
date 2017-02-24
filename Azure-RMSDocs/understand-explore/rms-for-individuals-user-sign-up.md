@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące rejestrowania się w ramach tego bezpłatneg
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 1de26925961ad560cb9aa86ebc16f7354c7cff1f
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 1de26925961ad560cb9aa86ebc16f7354c7cff1f
 
 >*Dotyczy: Azure Information Protection*
 
-Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, przechodząc do [strony usługi Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) i podając swój służbowy adres e-mail. Najczęściej spotykaną metodą trafienia na stronę rejestracji jest odebranie wiadomości e-mail z chronionym załącznikiem, który zawiera instrukcje dotyczące sposobu tworzenia konta. W odpowiedzi otrzymasz wiadomość e-mail od firmy Microsoft i będziesz w stanie ukończyć proces rejestracji, wprowadzając szczegóły wymagane do utworzenia konta. Po zakończeniu tego procesu zobaczysz stronę, z której możesz pobrać aplikację do udostępniania dla różnych urządzeń oraz na której znajdziesz link do podręcznika użytkownika i link do bieżącej listy aplikacji, które natywnie obsługują usługę Rights Management. 
+Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, przechodząc do [strony usługi Microsoft Azure Information Protection](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload) i podając swój służbowy adres e-mail. Najczęściej spotykaną metodą trafienia na stronę rejestracji jest odebranie wiadomości e-mail z chronionym załącznikiem, który zawiera instrukcje dotyczące sposobu tworzenia konta. W odpowiedzi otrzymasz wiadomość e-mail od firmy Microsoft i będziesz w stanie ukończyć proces rejestracji, wprowadzając szczegóły wymagane do utworzenia konta. Po zakończeniu tego procesu zobaczysz stronę, z której możesz pobrać klienta usługi Azure Information Protection dla różnych urządzeń oraz na której znajdziesz link do podręcznika użytkownika oraz link do bieżącej listy aplikacji, które natywnie obsługują usługę Rights Management. 
 
 ## <a name="to-sign-up-for-rms-for-individuals"></a>Aby utworzyć konto usługi RMS dla użytkowników indywidualnych
 
@@ -44,7 +44,7 @@ Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, 
 
 6.  Zostanie teraz wyświetlona strona **Jeszcze coś**, na której trzeba będzie podać szczegóły konta. Wpisz swoje imię i nazwisko, podaj i potwierdź hasło, a następnie kliknij pozycję **Rozpocznij**.
 
-7. Po utworzeniu konta zobaczysz stronę Microsoft Rights Management, z której będzie można pobrać i zainstalować aplikację do udostępniania lub na której będzie można kliknąć link [Więcej informacji](../rms-client/sharing-app-user-guide.md), aby przeczytać podręcznik użytkownika aplikacji do udostępniania.
+7. Po utworzeniu konta pojawi się nowa strona usługi Microsoft Azure Information Protection, z której można pobrać klienta usługi Azure Information Protection, aby go następnie zainstalować. Na stronie można także kliknąć link [Podręcznik użytkownika](../rms-client/client-user-guide.md), aby uzyskać dostęp do instrukcji odnoszących się do komputerów z systemem Windows.
 
 Teraz konto zostało utworzone i możesz już chronić pliki oraz odczytywać pliki chronione przez innych. Po wyświetleniu monitu o zalogowanie się w celu włączenia ochrony plików lub odczytania chronionych plików wprowadź taki sam adres e-mail i hasło co użyte podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
 
@@ -60,7 +60,7 @@ Oto co dzieje się w tle, gdy użytkownik tworzy konto usługi RMS dla użytkown
 
     W przypadku znalezienia istniejącej dzierżawy nastąpi sprawdzenie, czy ma ona już subskrypcję usługi Azure RMS. Jeśli subskrypcja nie zostanie znaleziona, można dodać bezpłatną subskrypcję usługi RMS dla użytkowników indywidualnych.
 
-2.  Organizacja otrzymuje subskrypcję usługi RMS dla użytkowników indywidualnych. Teraz dany użytkownik może zostać uwierzytelniony przez platformę Azure, a następnie chronić pliki i odczytywać pliki chronione przez inne osoby za pomocą usługi Azure Rights Management. Aby chronić pliki i odczytywać pliki chronione, użytkownik musi mieć aplikację obsługującą usługi RMS, taką jak bezpłatna [aplikacja do udostępniania usługi Rights Management](../rms-client/sharing-app-windows.md).
+2.  Organizacja otrzymuje subskrypcję usługi RMS dla użytkowników indywidualnych. Teraz dany użytkownik może zostać uwierzytelniony przez platformę Azure, a następnie chronić pliki i odczytywać pliki chronione przez inne osoby za pomocą usługi Azure Rights Management. Aby chronić pliki i odczytywać pliki chronione, użytkownik musi mieć aplikację obsługującą usługi RMS, taką jak bezpłatny [klient aplikacji Azure Information Protection](../rms-client/aip-client.md).
 
 3.  Gdy drugi użytkownik z tej samej organizacji wyśle żądanie dotyczące subskrypcji usługi RMS dla użytkowników indywidualnych, nowe konto użytkownika zostanie dodane do utworzonego wcześniej katalogu platformy Azure za pomocą należącej do organizacji subskrypcji usługi RMS dla użytkowników indywidualnych. Drugi użytkownik może robić wszystko to, co pierwszy (chronić pliki i odczytywać pliki chronione). Dodatkowo ci dwaj użytkownicy mogą teraz łatwiej współpracować w bezpieczny sposób dzięki możliwości szybkiego stosowania do plików domyślnych szablonów, które ograniczają dostęp do kont w organizacyjnym katalogu platformy Azure.
 
@@ -97,6 +97,6 @@ Zobacz [Metody kontrolowania przez administratorów kont utworzonych dla usług 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

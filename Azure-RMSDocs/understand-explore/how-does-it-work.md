@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/27/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d47648a1e03a4da5eb6088932544d9e34ca4ae7a
-ms.openlocfilehash: 42583d3ed7fb0fd5df85699c56fe7abe41093546
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: 0ff5deaaea73b7354d2b251c3ce9c768debd2269
 
 
 ---
@@ -52,7 +52,7 @@ Nawet jeśli znajomość działania usługi RMS nie jest użytkownikowi potrzebn
 
 ###### <a name="footnote-1"></a>Przypis 1 
 
-Wariant&256;-bitowy jest używany przez aplikację do udostępniania usługi Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku PPDF lub jest chronionym plikiem tekstowym lub graficznym (na przykład PTXT lub PJPG).
+Wariant&256;-bitowy jest używany przez klienta usługi Azure Information Protection i aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku .ppdf lub jest chronionym plikiem tekstowym lub graficznym (na przykład .ptxt lub .pjpg).
 
 Jak są przechowywane i zabezpieczane klucze kryptograficzne:
 
@@ -140,7 +140,7 @@ Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różn
 
 -   **Ochrona ogólna (pfile)**: gdy usługa Azure Rights Management chroni plik w sposób ogólny, przepływ procesu w odniesieniu do ochrony zawartości jest zasadniczo taki sam, z tą różnicą, że to klient RMS tworzy zasady, na podstawie których są przyznawane wszystkie uprawnienia. Gdy plik jest używany, zostaje odszyfrowywany przed przekazaniem do aplikacji docelowej. Ten scenariusz umożliwia ochronę wszystkich plików, także tych bez natywnej obsługi usługi RMS.
 
--   **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który aplikacja do udostępniania usługi RMS może otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail przy zapewnieniu, że odbiorcy zawsze będą mogli je odczytać, nawet jeśli urządzenie przenośne nie jest wyposażone w aplikację z natywną obsługą chronionych plików pakietu Office.
+-   **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który przeglądarka usługi Azure Information Protection i aplikacja RMS sharing mogą otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail przy zapewnieniu, że odbiorcy zawsze będą mogli je odczytać, nawet jeśli urządzenie przenośne nie jest wyposażone w aplikację z natywną obsługą chronionych plików pakietu Office.
 
 ## <a name="next-steps"></a>Następne kroki
 
@@ -156,6 +156,6 @@ Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 
