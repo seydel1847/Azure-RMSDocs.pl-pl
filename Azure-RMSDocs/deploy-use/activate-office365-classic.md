@@ -1,10 +1,10 @@
 ---
-title: "Jak aktywować usługę Azure Rights Management w klasycznym centrum administracyjnym usługi Office 365 | Azure Information Protection"
+title: "Aktywacja usługi Azure RMS za pomocą klasycznego centrum administracyjnego usługi Office 365 — AIP"
 description: "Instrukcje dotyczące aktywacji dla usługi Azure Rights Management w przypadku korzystania z klasycznej (oryginalnej) wersji centrum administracyjnego usługi Office 365."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d6aab332470545660fdd50d023a94b559bc584a8
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: caafaa9e4c38a3e4b605e582db44c6c6b0b810d4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -54,8 +55,3 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management została akty
 Powrót do części [Aktywacja usługi Azure Rights Management](activate-service.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

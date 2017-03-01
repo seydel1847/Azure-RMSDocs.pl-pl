@@ -1,10 +1,10 @@
 ---
-title: "Metody kontrolowania przez administratorów kont utworzonych dla usługi RMS dla użytkowników indywidualnych | Azure Information Protection"
+title: "Kontrolowanie kont utworzonych w usłudze RMS dla użytkowników indywidualnych — AIP"
 description: "Sposób kontrolowania kont użytkowników w usłudze Azure Active Directory, jeśli nie chcesz przekształcać subskrypcji usług RMS dla użytkowników indywidualnych organizacji na subskrypcję płatną."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 19b71ee6016971e1d989db8961b8b77a50fd0124
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ff8cd150ce438a7b9ad5203dfb6d9d01c1a0d85a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -46,8 +47,3 @@ Aby kontrolować konta użytkowników w katalogu platformy Azure lub zapobiec re
 Jeśli to użytkownicy, a nie administratorzy, mogą tworzyć swoje konta w usłudze Azure Active Directory dla usługi RMS dla użytkowników indywidualnych, jak można sprawdzić, czy wykonali te działania?  Zobacz [Jak sprawdzić, czy użytkownicy utworzyli konto usługi RMS dla użytkowników indywidualnych](rms-for-individuals-identify-sign-up.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
