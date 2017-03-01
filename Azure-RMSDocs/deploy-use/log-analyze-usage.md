@@ -1,10 +1,10 @@
 ---
-title: "Rejestrowanie i analizowanie użycia usługi Azure Rights Management | Azure Information Protection"
+title: "Rejestrowanie i analizowanie użycia usługi Azure RMS — AIP"
 description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrowania użycia za pomocą usługi Azure Rights Management (Azure RMS)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca8694a26f0f9b537a3e3a6b1f468d89cefe6206
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 89c0cae4b0549a0dd86ede26ef3eed0f09200419
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -157,7 +158,7 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 #### <a name="exceptions-for-the-user-id-field"></a>Wyjątki w polu user-id
 Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, istnieją dwa wyjątki, kiedy wartość w polu nie odwzorowuje rzeczywistego użytkownika:
 
--   Wartość **'microsoftrmsonline@&lt;identyfikator_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
+-   Wartość **'microsoftrmsonline@&lt;ID_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
 
     Ta wartość oznacza, że żądanie zostało wysłane przez usługę Office 365, taką jak Exchange Online lub SharePoint Online. W podanym ciągu znaków *&lt;ID_dzierżawy&gt;* oznacza identyfikator GUID dzierżawy, a *&lt;region&gt;* oznacza region rejestracji dzierżawy. Na przykład ciąg **na** reprezentuje Amerykę Północną, **eu** określa Europę, a **ap** — Azję.
 
@@ -238,10 +239,5 @@ Aby uzyskać więcej informacji na temat korzystania z programu Windows PowerShe
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

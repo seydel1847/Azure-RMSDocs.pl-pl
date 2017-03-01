@@ -1,5 +1,5 @@
 ---
-title: "Porównanie usług Azure Information Protection i AD RMS | Azure Information Protection"
+title: "Porównanie usług Azure Information Protection i AD RMS"
 description: "Jeśli usługa Active Directory Rights Management Services (AD RMS) jest Ci znana lub była wcześniej wdrażana, być może zastanawiasz się, jakie byłyby wyniki porównania jej z usługą Azure Information Protection pod kątem funkcjonalności i wymagań."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 1357e2d4f2065f02209b861d00eab133039e2c5a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d0027fa04824b0c1172ef21da4736895965925d7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,10 +76,5 @@ Usługa Azure Information Protection jest zgodna z trybem FIPS 140-2, jeśli klu
 Jeśli chcesz przeprowadzić migrację z usługi AD RMS do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

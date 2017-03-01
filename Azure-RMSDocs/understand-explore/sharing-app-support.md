@@ -1,5 +1,5 @@
 ---
-title: "Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych | Azure Information Protection"
+title: "Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych — AIP"
 description: "Informacje dotyczące sposobu, w jaki aplikacja RMS sharing obsługuje usługi Azure RMS jako bezpłatna aplikacja do pobrania, która jest wymagana w celu obsługi pakietu Office 2010, ale jest także zalecana dla komputerów z systemem Windows, komputerów Mac i urządzeń przenośnych."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5c5f34e9009d87da4ea4091b619dfc75a1361251
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -60,9 +61,4 @@ Aplikacja RMS sharing dla urządzeń przenośnych obsługuje najczęściej używ
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

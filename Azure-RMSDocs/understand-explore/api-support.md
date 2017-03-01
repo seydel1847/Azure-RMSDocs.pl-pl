@@ -1,10 +1,10 @@
 ---
-title: "Inne aplikacje, które obsługują interfejsy API usługi Rights Management — instalacja i konfiguracja | Azure Information Protection"
+title: "Inne aplikacje, które obsługują interfejsy API usługi RMS — instalowanie i konfigurowanie — AIP"
 description: "Omówienie sposobu, w jaki usługa Azure Rights Management w ramach usługi Azure Information Protection może obsługiwać inne aplikacje w celu ochrony danych organizacji."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 05cb9695d83ba10cc2d7b69d8a1e29a61cb4beb7
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0b48cdb5fc233886c41a1c8b963e1353c14dce75
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -34,8 +35,3 @@ Podobnie wielu dostawców oprogramowania udostępnia aplikacje dostarczające ro
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "Jak działa usługa Azure RMS | Azure Information Protection"
+title: "Jak działa usługa Azure RMS — Azure Information Protection"
 description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i kontrolek kryptograficznych używanych przez tę usługę oraz diagramy krok po kroku dotyczące sposobu działania tego procesu."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
-ms.openlocfilehash: 0ff5deaaea73b7354d2b251c3ce9c768debd2269
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3140f678c29771fc3328e312bc7e55d309554e66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -154,8 +155,3 @@ Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu 
 > Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

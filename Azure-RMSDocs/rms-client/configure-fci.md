@@ -1,5 +1,5 @@
 ---
-title: "Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI) w systemie Windows Server | Azure Information Protection"
+title: "Ochrona za pomocą usługi Azure RMS z użyciem infrastruktury FCI w systemie Windows Server — AIP"
 description: "Instrukcje dotyczące używania klienta usługi Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI)."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06419438281e0d5a0b976e506d45be2b4eaaef70
-ms.openlocfilehash: da7ab2f9fcd3919cd7143a407e54d2270449760d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -287,9 +288,4 @@ Aby to zrobić, użyj jednej z wbudowanych właściwości klasyfikacji (na przyk
 Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzysta z tego samego skryptu, ale np. z innego szablonu, i skonfigurować warunek dla właśnie skonfigurowanej właściwości klasyfikacji. Na przykład zamiast warunku, który został wcześniej skonfigurowany (właściwość **RMS**, **Równe**, **Tak**), wybierz właściwość **Dane osobowe** z ustawieniem **Operator** o wartości **Równe** i ustawieniem **Wartość** o wartości **Wysokie**.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

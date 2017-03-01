@@ -1,5 +1,5 @@
 ---
-title: "Jak sprawdzić, czy użytkownicy zarejestrowali się w usłudze RMS dla użytkowników indywidualnych | Azure Information Protection"
+title: "Sprawdzanie, czy użytkownicy utworzyli konto w usłudze RMS dla użytkowników indywidualnych — AIP"
 description: "Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy użytkownicy utworzyli konta usługi RMS dla użytkowników indywidualnych. Można zastosować dowolną metodę opisaną w tym artykule lub kombinację różnych metod."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -35,8 +36,3 @@ Być może zastanawiasz się, w jaki sposób administrator może sprawdzić, czy
 -   Zwróć uwagę na rozszerzenia nazw plików utworzone przez klienta usługi Azure Information Protection lub aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management. Najbardziej typowe przykłady rozszerzeń nazw plików to pfile i ppdf, ale w przypadku innych plików ich rozszerzenia również są zmieniane, gdy pliki te są natywnie chronione przez usługę Rights Management. Aby uzyskać więcej informacji, zobacz sekcję [Typy plików, dla których obsługiwana jest ochrona](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) w podręczniku administratora klienta usługi Azure Information Protection.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

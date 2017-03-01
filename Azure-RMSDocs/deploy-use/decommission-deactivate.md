@@ -1,10 +1,10 @@
 ---
-title: "Likwidowanie i dezaktywowanie usługi Azure Rights Management | Azure Information Protection"
+title: "Likwidacja i dezaktywacja usługi Azure RMS"
 description: "Informacje i instrukcje dotyczące sytuacji, gdy nie chcesz już używać tego rozwiązania ochrony informacji w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 14f986ee7166122eed096188a66a1d1132d8d935
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -89,10 +90,5 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management nie została 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM | Azure Information Protection"
+title: "Migrowanie klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM — AIP"
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: c0f13fba558a0196c87d62b5127a75380140014e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4126bd34615307347d387217b8ad4f39ba69cad8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -161,10 +162,5 @@ Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

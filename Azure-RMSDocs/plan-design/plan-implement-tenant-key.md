@@ -1,10 +1,10 @@
 ---
-title: "Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management | Azure Information Protection"
+title: "Klucz dzierżawy usługi Azure Information Protection"
 description: "Informacje ułatwiające zaplanowanie użycia klucza dzierżawy usługi Azure Information Protection oraz zarządzanie nim. Domyślne ustawienie zakłada, że to firma Microsoft zarządza kluczem dzierżawy. Ustawienie to można zmienić, aby zarządzać własnym kluczem dzierżawy w celu zachowania zgodności z konkretnymi przepisami mającymi zastosowanie w danej organizacji. Samodzielne zarządzanie kluczem dzierżawy określa się także mianem strategii BYOK (Bring Your Own Key), czyli „Przynieś własny klucz”."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 433a655870556ed045273713f6773f36c3d86fc1
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d2e667f78eeccecb0bd837a9020ff188f67fb50
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -85,8 +86,8 @@ Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, a
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Subskrypcja zawierająca usługę Azure Information Protection|Dodatkowe informacje o dostępnych subskrypcjach znajdują się na [stronie z cennikiem](https://go.microsoft.com/fwlink/?LinkId=827589) usługi Azure Information Protection.|
-|Nie należy używać usługi RMS dla użytkowników indywidualnych ani usługi Exchange Online. Użytkownicy, którzy zdecydują się korzystać z usługi Exchange Online, muszą zrozumieć i zaakceptować ograniczenia związane z korzystaniem z funkcji BYOK w tej konfiguracji.|Aby uzyskać więcej informacji na temat ogólnych i bieżących ograniczeń dotyczących korzystania z funkcji BYOK, zobacz [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).<br /><br />**Ważne**: funkcja BYOK nie jest obecnie zgodna z usługą Exchange Online.|
-|Wszystkie wymagania wstępne dla funkcji BYOK usługi Key Vault uwzględniającej płatną lub próbną wersję subskrypcji platformy Azure. |Zobacz [Wymagania wstępne dla funkcji BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) w dokumentacji usługi Azure Key Vault. <br /><br /> Bezpłatna subskrypcja platformy Azure, która zapewnia dostęp do konfigurowania usługi Azure Active Directory i konfiguracji szablonów niestandardowych usługi Azure Rights Management (**Dostęp do usługi Azure Active Directory**) jest niewystarczająca, aby używać usługi Azure Key Vault. Aby sprawdzić, czy masz subskrypcję platformy Azure umożliwiającą korzystanie z funkcji BYOK, użyj poleceń cmdlet programu PowerShell dla usługi [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Uruchom sesję programu Azure PowerShell i zaloguj się do konta platformy Azure przy użyciu następującego polecenia: `Login-AzureRmAccount`<br /><br />2. Wpisz następujące polecenie i upewnij się, że widzisz wartości nazwy i identyfikatora subskrypcji oraz identyfikatora dzierżawy oraz że stan został włączony: `Get-AzureRmSubscription`<br /><br />Jeśli wartości nie zostaną wyświetlone i nastąpi powrót do wiersza polecenia, nie masz subskrypcji platformy Azure umożliwiającej korzystanie z funkcji BYOK. <br /><br />**Uwaga**: oprócz wymagań wstępnych funkcji BYOK do przeprowadzenia migracji z usług AD RMS do usługi Azure Information Protection przy użyciu klucza oprogramowania i klucza sprzętowego wymagane jest oprogramowanie układowe firmy Thales w wersji 11.62 lub nowszej.|
+|Nie należy używać usługi RMS dla użytkowników indywidualnych ani usługi Exchange Online.<br /><br /> Użytkownicy, którzy zdecydują się korzystać z usługi Exchange Online, muszą zrozumieć i zaakceptować ograniczenia związane z korzystaniem z funkcji BYOK w tej konfiguracji.|Aby uzyskać więcej informacji na temat ogólnych i bieżących ograniczeń dotyczących korzystania z funkcji BYOK, zobacz [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).<br /><br />**Ważne**: funkcja BYOK nie jest obecnie zgodna z usługą Exchange Online.|
+|Wszystkie wymagania wstępne dla funkcji BYOK usługi Key Vault uwzględniającej płatną lub próbną wersję subskrypcji platformy Azure dla istniejącego dzierżawcy usługi Azure Information Protection. |Zobacz [Wymagania wstępne dla funkcji BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) w dokumentacji usługi Azure Key Vault. <br /><br /> Bezpłatna subskrypcja platformy Azure, która zapewnia dostęp do konfigurowania usługi Azure Active Directory i konfiguracji szablonów niestandardowych usługi Azure Rights Management (**Dostęp do usługi Azure Active Directory**) jest niewystarczająca, aby używać usługi Azure Key Vault. Aby sprawdzić, czy masz subskrypcję platformy Azure umożliwiającą korzystanie z funkcji BYOK, użyj poleceń cmdlet programu PowerShell dla usługi [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Uruchom sesję programu Azure PowerShell za pomocą opcji **Uruchom jako administrator** i zaloguj się jako administrator globalny dzierżawcy usługi Azure Information Protection przy użyciu następującego polecenia: `Login-AzureRmAccount`<br /><br />2. Wpisz następujące polecenie i upewnij się, że widzisz wartości nazwy i identyfikatora subskrypcji oraz identyfikatora dzierżawy usługi Azure Information Protection oraz że stan został włączony: `Get-AzureRmSubscription`<br /><br />Jeśli wartości nie zostaną wyświetlone i nastąpi powrót do wiersza polecenia, nie masz subskrypcji platformy Azure umożliwiającej korzystanie z funkcji BYOK. <br /><br />**Uwaga**: oprócz wymagań wstępnych funkcji BYOK do przeprowadzenia migracji z usług AD RMS do usługi Azure Information Protection przy użyciu klucza oprogramowania i klucza sprzętowego wymagane jest oprogramowanie układowe firmy Thales w wersji 11.62 lub nowszej.|
 |Moduł administracyjny usługi Azure Rights Management dla programu Windows PowerShell.|Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Jeśli ten moduł programu Windows PowerShell został już wcześniej zainstalowany, uruchom następujące polecenie, aby sprawdzić, czy numer wersji to co najmniej **2.5.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Aby uzyskać więcej informacji o modułach HSM firmy Thales i sposobie ich wykorzystania w usłudze Azure Key Vault, zobacz [witrynę sieci Web firmy Thales](https://www.thales-esecurity.com/msrms/cloud).
@@ -142,9 +143,4 @@ Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby 
     Aby uzyskać więcej informacji, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

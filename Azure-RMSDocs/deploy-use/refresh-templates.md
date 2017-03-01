@@ -1,5 +1,5 @@
 ---
-title: "Odświeżanie szablonów | Azure Information Protection"
+title: "Odświeżanie szablonów usługi Azure RMS — AIP"
 description: "W przypadku korzystania z usługi Azure Rights Management szablony są automatycznie pobierane na komputery klienckie, dzięki czemu użytkownicy mogą wybrać je z poziomu ich aplikacji. W przypadku wprowadzenia zmian do szablonów może być jednak konieczne wykonanie dodatkowych czynności."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
-ms.openlocfilehash: 325c64b211ed52bdb11685af00507aef2aa85312
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 84056058eedccf354cefb86792d92949bcfb22e8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -187,8 +188,3 @@ Edytując rejestr na komputerach z pakietem Office 2010, można ustawić wartoś
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

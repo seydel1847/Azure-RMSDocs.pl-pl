@@ -1,18 +1,19 @@
 ---
-title: "Usuwanie lub zmiana kolejności etykiet | Azure Information Protection"
+title: "Usuwanie lub zmiana kolejności etykiet usługi Azure Information Protection"
 description: "Etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz usunąć lub zmienić ich kolejność, przeprowadzając konfigurację w zasadach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d8e0f53d85ee7a02ee7fef66eaf76ce6551535d2
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: df667a8580af71d808752d569a6148852faec82c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,10 +59,5 @@ Użyj poniższych instrukcji, aby wprowadzić te zmiany.
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

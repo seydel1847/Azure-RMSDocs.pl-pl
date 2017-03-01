@@ -1,5 +1,5 @@
 ---
-title: "Klient usługi Azure Information Protection działający w trybie z samą ochroną"
+title: "Usługa Azure Information Protection działająca w trybie z samą ochroną"
 description: "Informacje dla użytkowników, którzy uruchamiają klienta usługi Azure Information Protection w trybie z samą ochroną."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: bc81b8587e999e6cbb036942e1c5d37e1e2b319b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 55254496b23e49fe7e2dbd19721a824739004b21
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -41,18 +42,13 @@ Po uruchomieniu klienta usługi Azure Information Protection bez zasad usługi A
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>Zadania obsługiwane w trybie z samą ochroną
 
-- Włączenie lub wyłączenie ochrony dokumentów i wiadomości e-mail w aplikacjach pakietu Office za pomocą funkcji Zarządzanie prawami informacji (IRM) pakietu Office. Przykład: kliknij kolejno opcje **Plik** > **Informacje** > **Zabezpiecz dokument** > **Ogranicz dostęp**. Aby uzyskać więcej informacji, zobacz temat [Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013](../deploy-use/help-users.md).
+- Włączenie lub wyłączenie ochrony dokumentów i wiadomości e-mail w aplikacjach pakietu Office za pomocą funkcji Zarządzanie prawami informacji (IRM) pakietu Office. Przykład: kliknij kolejno opcje **Plik** > **Informacje** > **Zabezpiecz dokument** > **Ogranicz dostęp**. Więcej informacji można znaleźć w [Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013](../deploy-use/help-users.md).
 
-- Włączanie i wyłączanie ochrony plików przy użyciu Eksploratora plików systemu Windows: kliknij prawym przyciskiem myszy plik, pliki lub folder > **Klasyfikuj i chroń**. Aby zastosować zabezpieczenia skonfigurowane przez administratora, w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij pozycję **Wybierz szablon**, a następnie wskaż jeden z dostępnych szablonów.
+- Włącz (lub wyłącz) ochronę plików za pomocą Eksploratora plików systemu Windows: kliknij prawym przyciskiem myszy plik, pliki lub folder i wybierz polecenie **Klasyfikuj i chroń**. Aby zastosować zabezpieczenia skonfigurowane przez administratora, w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij pozycję **Wybierz szablon**, a następnie wskaż jeden z dostępnych szablonów.
 
 - Wyświetlanie chronionych plików w Przeglądarce usługi Azure Information Protection.
 
 - Dostęp do witryny śledzenia dokumentów z poziomu aplikacji pakietu Office. Uwaga: do śledzenia i odwoływania dokumentów z tej witryny jest wymagana ważna subskrypcja.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

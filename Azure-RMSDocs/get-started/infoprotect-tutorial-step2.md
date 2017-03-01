@@ -1,18 +1,19 @@
 ---
-title: Samouczek Szybki start krok 2 | Azure Information Protection
+title: "Samouczek Szybki start — krok 2 — AIP"
 description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -60,9 +61,15 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
     
     W nowym bloku **Etykieta: Poufne** ukażą się ustawienia dostępne dla każdej etykiety. 
 
-2. W bloku **Etykieta: poufne** odszukaj sekcję **Ustawianie szablonu usług RMS w celu ochrony dokumentów i wiadomości e-mail oznaczonych tą etykietą**:
+2. W bloku **Etykieta: Poufne** odszukaj sekcję **Ustawianie uprawnień do dokumentów i wiadomości e-mail oznaczonych tą etykietą**.
+
+    Wybierz opcję **Ochrona**:
     
-    Dla opcji **Wybierz szablon usług RMS z** zachowaj ustawienia domyślne **Azure RMS**. Następnie dla opcji **Wybierz szablon usług RMS** kliknij menu rozwijane i wybierz szablon domyślny **\<nazwa organizacji > Poufne**. 
+    ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar.png) 
+    
+    Spowoduje to otworzenie bloku **Uprawnienia**.
+    
+3. Upewnij się, że w bloku **Uprawnienia** jest zaznaczona opcja **Azure RMS** oraz że zaznaczono również opcję **Wybierz szablon**, a następnie kliknij pole listy rozwijanej i wybierz domyślny szablon ** \<nazwa organizacji> — Poufne**.     
     
     Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz: 
     
@@ -70,7 +77,9 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
     
     Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
     
-3. Zlokalizuj sekcję **Ustaw oznaczanie wizualne**:
+4. Kliknij przycisk **Gotowe**, aby zapisać zmiany i zamknąć blok **Uprawnienia**.
+
+5. Po powrocie do bloku **Etykieta: Poufne** zlokalizuj sekcję **Ustawianie oznaczenia wizualnego**:
     
     Dla ustawienia **Dokumenty z tą etykietą mają znak wodny** kliknij opcję **Włącz**, a następnie wpisz nazwę swojej organizacji w polu **Tekst**. W naszym przykładzie: **VanArsdel, Ltd**: 
     
@@ -78,7 +87,7 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
     
     Można zmienić rozmiar, kolor i układ znaków wodnych, ale chwilowo pozostawimy wartości domyślne tych ustawień.
     
-4. Zlokalizuj sekcję **Konfigurowanie warunków automatycznego stosowania tej etykiety**:
+6. Zlokalizuj sekcję **Konfigurowanie warunków automatycznego stosowania tej etykiety**:
     
     Kliknij przycisk **Dodaj nowy warunek** i następnie w bloku **Warunek** wykonaj następujące czynności:
     
@@ -94,23 +103,23 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
     
     Kliknij przycisk **Zapisz**, aby powrócić do bloku **Etykieta: Poufne**.
 
-5. W bloku **Etykieta: Poufne** zobaczysz, że jako **NAZWA WARUNKU** jest wyświetlany **Numer karty kredytowej** z opcją **WYSTĄPIENIA** równą **1**:
+7. W bloku **Etykieta: Poufne** zobaczysz, że jako **NAZWA WARUNKU** jest wyświetlany **Numer karty kredytowej** z opcją **WYSTĄPIENIA** równą **1**:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — konfigurowanie warunku karty kredytowej](../media/step2-see-condition.png)
 
-6. Dla opcji **Wybierz sposób stosowania tej etykiety**: zachowaj wartość domyślną **Zalecany** i nie zmieniaj domyślnej wskazówki zasad:
+8. Dla opcji **Wybierz sposób stosowania tej etykiety**: zachowaj wartość domyślną **Zalecany** i nie zmieniaj domyślnej wskazówki zasad:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zalecana klasyfikacja](../media/step2-keep-recommended.png)
 
-7. W polu **Wprowadź informacje dla celów wewnętrznych** wpisz **Tylko do testów**:
+9. W polu **Wprowadź informacje dla celów wewnętrznych** wpisz **Tylko do testów**:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — wpisz uwagi](../media/step2-type-notes.png)
 
-8. Kliknij przycisk **Zapisz** w tym bloku **Etykieta: Poufne**. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
+10. Kliknij przycisk **Zapisz** w tym bloku **Etykieta: Poufne**. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configured.png)
 
-9. Aby po wprowadzeniu i zapisaniu zmian udostępnić je użytkownikom, w bloku początkowym **Azure Information Protection** należy kliknąć opcję **Opublikuj**, a następnie przycisk **Tak**, aby potwierdzić wybór.
+11. Aby po wprowadzeniu i zapisaniu zmian udostępnić je użytkownikom, w bloku początkowym **Azure Information Protection** należy kliknąć opcję **Opublikuj**, a następnie przycisk **Tak**, aby potwierdzić wybór.
 
 Po zakończeniu tego samouczka możesz zamknąć portal Azure lub zostawić otwarty w celu wypróbowania innych opcji konfiguracji.
 
@@ -126,8 +135,3 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 [Krok 3 &#187;](infoprotect-tutorial-step3.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

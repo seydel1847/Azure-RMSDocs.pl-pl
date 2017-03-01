@@ -1,5 +1,5 @@
 ---
-title: "Klient usługi Azure Information Protection&colon; historia wersji | Azure Information Protection"
+title: "Klient usługi Azure Information Protection&colon; historia wersji"
 description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Information Protection dla systemu Windows."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a55a35ae0f0a3e0c60e6a0289a23888b2eda7fb5
-ms.openlocfilehash: 1f021eee1535abb09d4a4715c819935e21eb89dd
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fec4ca2541b28fd9d91286fceaee0466fc445364
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ Microsoft .NET Framework
 
 **Nowe funkcje**:
 
-- Nowy, ujednolicony klient, który łączy funkcje aplikacji RMS sharing dla systemu Windows z możliwościami klienta usługi Azure Information Protection.  Korzyści:
+- Nowy, ujednolicony klient, który łączy funkcje aplikacji RMS sharing dla systemu Windows z możliwościami klienta usługi Azure Information Protection. Obejmuje następujące funkcje:
     
     - Integracja z Eksploratorem plików systemu Windows (kliknięcie prawym przyciskiem myszy) w celu stosowania etykiet i ochrony. Obsługa dodatkowych formatów plików i możliwość wybierania wielu plików.
     - Przeglądarka chronionych dokumentów (w tym chronionych dokumentów PDF do użytku w programie SharePoint).
@@ -94,8 +95,3 @@ Aby uzyskać więcej informacji na temat instalacji klienta:
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

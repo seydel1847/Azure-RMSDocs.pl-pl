@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie aplikacji dla usługi Azure Rights Management | Azure Information Protection"
+title: "Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management — AIP"
 description: "Instrukcje dla administratorów dotyczące konfigurowania aplikacji i usług do pracy z usługą zabezpieczającą Azure Rights Management w ramach usługi Azure Information Protection. Dotyczy to na przykład aplikacji pakietu Office, takich jak Word 2013 i Word 2010 oraz usług, takich jak Exchange Online (zasady transportu, zapobieganie utracie danych, blokowanie przesyłania dalej i szyfrowanie wiadomości) oraz SharePoint Online (biblioteki chronione)."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: e3c8356b2780bae81e69b1d6e258323e194e5bab
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8161315fcb3c3beb40b5273db799a5a3f37e4a7e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -70,10 +71,5 @@ Po skonfigurowaniu aplikacji do obsługi usługi Azure Rights Management użyj [
 - [Operacje związane z kluczem dzierżawy usługi Azure Information Protection](operations-tenant-key.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

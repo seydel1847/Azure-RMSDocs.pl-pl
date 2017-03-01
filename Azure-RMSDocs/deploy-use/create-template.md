@@ -1,5 +1,5 @@
 ---
-title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure Information Protection
+title: "Konfigurowanie i publikowanie szablonu niestandardowego usługi Azure RMS"
 description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Szablony ułatwiają użytkownikom końcowym i innym administratorom stosowanie odpowiednich zasad służących do ochrony dokumentów i wiadomości e-mail."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
-ms.openlocfilehash: 66158f74951e7226482e58cf94e4249486b4dc7b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ebc0ad13952f2036f997fc5ba9207f02d1571021
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -163,8 +164,3 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

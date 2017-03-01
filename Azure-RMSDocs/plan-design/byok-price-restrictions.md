@@ -1,10 +1,10 @@
 ---
-title: "Cennik i ograniczenia dotyczące funkcji BYOK | Azure Information Protection"
+title: "Cennik i ograniczenia dotyczące funkcji BYOK — Azure Information Protection"
 description: "Informacje na temat ograniczeń związanych z używaniem kluczy zarządzanych przez klienta (model używania własnego klucza — BYOK, Bring Your Own Key) z usługami Azure RMS."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 2e8a00d4c8d38387645d015d3f69a4d568fc9683
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: c05521faed2cd8a7f9d32d81cd6899161e858153
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -86,9 +87,4 @@ Jeśli zdecydujesz się na zarządzanie własnym kluczem, przejdź do tematu [Wd
 Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma Microsoft zarządza kluczem dzierżawy, zobacz sekcję [Następne kroki](plan-implement-tenant-key.md#next-steps) w artykule Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

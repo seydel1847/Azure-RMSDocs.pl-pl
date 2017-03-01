@@ -1,18 +1,19 @@
 ---
-title: "Ograniczenia dotyczące rozwiązania HYOK | Azure Information Protection"
-description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wymagania wstępne i zalecenia w przypadku wybrania ochrony usług AD RMS korzystającej z usługi Azure Information Protection. To rozwiązanie jest czasami określane jako „hold your own key” (HYOK)."
+title: "Ograniczenia dotyczące rozwiązania HYOK dla usługi Azure Information Protection"
+description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wymagania wstępne i zalecenia w przypadku wybrania rozwiązania HYOK (AD RMS) i korzystania z usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e918f3fa7c001c4265ffaf72ebe8baa02dc8e407
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -21,7 +22,7 @@ ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
 
 >*Dotyczy: Azure Information Protection*
 
-W przypadku ochrony najbardziej poufnych dokumentów i wiadomości e-mail zazwyczaj będziesz to robić przez zastosowanie ochrony usługi Azure Rights Management, która zapewnia następujące korzyści:
+W przypadku ochrony najbardziej poufnych dokumentów i wiadomości e-mail zazwyczaj będziesz to robić przez zastosowanie ochrony za pomocą usługi Azure Rights Management (Azure RMS), która zapewnia następujące korzyści:
 
 - Nie wymaga infrastruktury serwera, co sprawia, że wdrożenie, i obsługa rozwiązania są szybsze i tańsze niż w przypadku rozwiązania lokalnego.
 
@@ -33,7 +34,7 @@ W przypadku ochrony najbardziej poufnych dokumentów i wiadomości e-mail zazwyc
 
 Usługa Azure RMS chroni dokumenty i wiadomości e-mail organizacji przy użyciu klucza prywatnego dla organizacji, który jest zarządzany przez firmę Microsoft (ustawienie domyślne) lub przez użytkownika (scenariusz „bring your own key”, BYOK). Informacje chronione za pomocą usługi Azure RMS nigdy nie są wysyłane do chmury, a chronione dokumenty i wiadomości e-mail nie są przechowywane na platformie Azure, chyba że jawnie je tam przechowujesz lub korzystasz z innej usługi w chmurze, która przechowuje je na platformie Azure. Aby uzyskać więcej informacji na temat opcji klucza dzierżawy, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md). 
 
-Niektórzy klienci mogą jednak wymagać ochrony wybranych dokumentów i wiadomości e-mail przy użyciu klucza przechowywanego i obsługiwanego lokalnie. Przykładowo może to być wymagane ze względu na obowiązujące przepisy i zachowanie zgodności. 
+Niektóre organizacje mogą jednak wymagać ochrony wybranych dokumentów i wiadomości e-mail przy użyciu klucza przechowywanego i obsługiwanego lokalnie. Przykładowo może to być wymagane ze względu na obowiązujące przepisy i zachowanie zgodności.  
 
 Ta konfiguracja jest czasami określana jako „hold your own key” (HYOK) i jest obsługiwana przez usługę Azure Information Protection, gdy masz działające wdrożenie usług Active Directory Rights Management Services (AD RMS) spełniające wymagania opisane w następnej sekcji.
 
@@ -41,18 +42,34 @@ W tym scenariuszu HYOK zasady praw i klucz prywatny organizacji, który chroni t
 
 > [!NOTE]
 > Tej konfiguracji należy używać tylko w razie konieczności i tylko dla dokumentów i wiadomości e-mail, które tego wymagają. Ochrona za pomocą usług AD RMS nie zapewnia wymienionych korzyści, które daje ochrona za pomocą usługi Azure RMS, a jej celem jest "nieprzezroczystość danych za wszelką cenę".
+>
+> Nawet w przypadku organizacji używających tej konfiguracji będzie ona zazwyczaj przydatna dla najwyżej 10% zawartości wymagającej ochrony. Tej funkcji należy używać tylko w przypadku dokumentów lub wiadomości e-mail spełniających następujące kryteria:
+> 
+> - Zawartość została sklasyfikowana jako „ściśle tajne” i dostęp do niej ma tylko kilka osób.
+> 
+> - Zawartość nie będzie nigdy udostępniana poza organizacją.
+> 
+> - Zawartość będzie udostępniana tylko w sieci wewnętrznej.
+> 
+> - Zawartość nie będzie udostępniana na komputerach Mac ani na urządzeniach przenośnych.
 
-Użytkownicy nie będą świadomi, że etykieta używa ochrony za pomocą usług AD RMS zamiast ochrony za pomocą usługi Azure RMS. Ze względu na ograniczenia wiążące się z ochroną w usługach AD RMS, musisz zapewnić jasne wskazówki dotyczące tego, kiedy użytkownicy powinni wybierać etykiety korzystające z ochrony usług AD RMS.
+Użytkownicy nie będą świadomi, że etykieta używa ochrony za pomocą usług AD RMS zamiast ochrony za pomocą usługi Azure RMS. Z powodu ograniczeń dotyczących ochrony przez usługę AD RMS należy się upewnić, że użytkownikom udzielono jasnych wskazówek dotyczących wyboru etykiet powodujących stosowanie ochrony AD RMS. 
 
-## <a name="limitations-when-using-hyok"></a>Ograniczenia w przypadku używania HYOK
+[Zasady o określonym zakresie](configure-policy-scope.md) stanowią dobry sposób zapewnienia, że wyłącznie użytkownicy, którzy powinni stosować ochronę AD RMS, będą widzieli etykiety skonfigurowane w celu zastosowania ochrony AD RMS. 
+
+## <a name="additional-limitations-when-using-hyok"></a>Dodatkowe ograniczenia podczas używania funkcji HYOK
 
 Oprócz braku obsługi wymienionych korzyści, które można uzyskać, korzystając z ochrony przy użyciu usług Azure RMS, ochrona za pomocą usług AD RMS z usługą Azure Information Protection ma następujące ograniczenia:
 
 - Brak obsługi pakietu Office 2010 lub Office 2007.
 
-- Jeśli używasz również ochrony za pomocą usług Azure RMS: nie używaj opcji **Nie przesyłaj dalej** podczas konfigurowania etykiety dla ochrony za pomocą usług Azure RMS. Musisz również poinstruować użytkowników, aby nie wybierali ręcznie tej opcji w programie Outlook. 
+- Nie używaj opcji **Nie przesyłaj dalej** podczas konfigurowania etykiety dla ochrony za pomocą usługi Azure RMS. Musisz również poinstruować użytkowników, aby nie wybierali ręcznie tej opcji w programie Outlook. 
 
     W przypadku zastosowania opcji Nie przekazuj dalej przez etykietę lub ręcznie przez użytkowników ta opcja może zostać zastosowana przez wdrożenie usług AD RMS zamiast docelowej usługi Azure Rights Management. W tym scenariuszu osoby, którym wiadomości e-mail są udostępniane zewnętrznie, nie będą mogły otworzyć wiadomości e-mail, do których zastosowano opcję Nie przekazuj dalej.
+
+- Jeśli w programie Outlook użytkownik wybierze etykietę powodującą zastosowanie ochrony AD RMS, a następnie zmieni zdanie przed wysłaniem wiadomości e-mail i wybierze etykietę, która dotyczy ochrony za pomocą usługi Azure RMS, nowo wybrana etykieta nie zostanie zastosowana. Użytkownik zobaczy następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Nie masz uprawnień do wykonania tej akcji.**
+    
+    Jedynym rozwiązaniem problemu jest zamknięcie wiadomości e-mail i rozpoczęcie od początku. Takie samo ograniczenie występuje w podobnym przypadku, gdy użytkownik najpierw wybrał etykietę dotyczącą ochrony za pomocą usługi Azure RMS, a następnie zmienił ją na etykietę, który dotyczy ochrony z użyciem usług AD RMS.
 
 ## <a name="requirements-for-hyok"></a>Wymagania dotyczące rozwiązania HYOK
 
@@ -88,7 +105,7 @@ Aby uzyskać informacje na temat wdrażania oraz instrukcje dotyczące usług AD
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Lokalizowanie informacji używanych do określania ochrony usług AD RMS za pomocą etykiety usługi Azure Information Protection
 
-Po skonfigurowaniu etykiety dla ochrony za pomocą usług AD RMS należy określić identyfikator GUID szablonu i adres URL licencjonowania klastra usług AD RMS. Obie te wartości można znaleźć za pomocą konsoli usług Active Directory Rights Management Services:
+Po skonfigurowaniu etykiety dla ochrony za pomocą rozwiązania **HYOK (AD RMS)** należy określić identyfikator GUID szablonu i adres URL licencjonowania klastra usług AD RMS. Obie te wartości można znaleźć za pomocą konsoli usług Active Directory Rights Management Services:
 
 - Aby zlokalizować identyfikator GUID szablonu: rozwiń klaster i kliknij pozycję **Szablony zasad praw**. Z informacji o **dystrybuowanych szablonach zasad praw**, możesz następnie skopiować identyfikator GUID szablonu, którego chcesz użyć. Na przykład: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
@@ -98,13 +115,8 @@ Po skonfigurowaniu etykiety dla ochrony za pomocą usług AD RMS należy określ
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji na temat tej funkcji, zobacz powiadomienie we wpisie na blogu: [Usługa Azure Information Protection z rozwiązaniem HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/).
+Aby uzyskać więcej informacji na temat tej funkcji oraz wskazówki dotyczące jej stosowania, zobacz wpis na blogu: [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/) (Usługa Azure Information Protection z rozwiązaniem HYOK — Hold Your Own Key).
 
-Aby skonfigurować etykietę w celu zastosowania ochrony usług AD RMS, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md). 
+Aby skonfigurować etykietę w celu zastosowania ochrony za pomocą usług AD RMS, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](../deploy-use/configure-policy-protection.md). 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

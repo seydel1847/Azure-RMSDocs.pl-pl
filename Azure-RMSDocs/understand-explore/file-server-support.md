@@ -1,5 +1,5 @@
 ---
-title: "Serwery plików z systemem Windows Server, które obsługują infrastrukturę klasyfikacji plików | Azure Information Protection"
+title: "Serwery plików obsługujące infrastrukturę klasyfikacji plików — Azure Information Protection"
 description: "Informacje dotyczące sposobu używania infrastruktury klasyfikacji plików systemu Windows Server z usługami Azure RMS podczas wdrażania łącznika usług RMS w celu automatycznej ochrony dokumentów pakietu Office."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: dd94145bc2a6f338bb8a8c0ac0712ed1c86517d4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -41,10 +42,5 @@ Aby uzyskać instrukcje dotyczące używania skryptu programu Windows PowerShell
 Gdy już wiesz, na czym polega obsługa usługi Azure RMS w aplikacjach i usługach, może Cię zainteresować porównanie usługi Azure RMS z usługami Active Directory Rights Management (AD RMS) — lokalną wersją usługi Rights Management. Porównanie funkcji, wymagań i opcji zabezpieczeń można znaleźć w temacie [Porównanie usług Azure Rights Management i AD RMS](compare-azure-rms-ad-rms.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

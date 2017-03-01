@@ -1,5 +1,5 @@
 ---
-title: "Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android | Azure Information Protection"
+title: "Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android"
 description: 
 keywords: "Niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android"
 author: cabailey
@@ -14,8 +14,9 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
-ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4ac26b3faa61f3a19e71f7f1d1d257c2ded934c7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -73,8 +74,3 @@ W aplikacji przejdź do pozycji **Ustawienia** > **Wyślij opinię**.
 Należy zadać pytanie na naszej [witrynie Yammer](https://www.yammer.com/AskIPTeam) lub [wysłać wiadomość e-mail do zespołu usługi Information Protection](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

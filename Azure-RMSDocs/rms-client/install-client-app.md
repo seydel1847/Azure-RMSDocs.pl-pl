@@ -1,10 +1,10 @@
 ---
-title: "Pobieranie i instalowanie klienta usługi Azure Information Protection | Azure Information Protection"
+title: "Pobieranie i instalowanie klienta usługi Azure Information Protection"
 description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klienta usługi Azure Information Protection dla systemu Windows w celu umożliwienia klasyfikowania i ochrony dokumentów oraz wiadomości e-mail."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 633f3dfe12828a21943bb5faf6ad9f69b98fc70b
-ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,19 +32,22 @@ Ponadto:
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>Pobieranie i instalowanie klienta usługi Azure Information Protection    
 
-1.  Przejdź na stronę usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft.    
-2. Kliknij ikonę Windows **klienta usługi Azure Information Protection** i zapisz plik **AzInfoProtection.exe** w celu zainstalowania klienta usługi Azure Information Protection.     
+1.  Przejdź na stronę usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft.
 
-2. Kliknij dwukrotnie pobrany plik wykonywalny. Jeśli zostanie wyświetlony monit o kontynuowanie, kliknij pozycję **Tak**.    
+    Ta strona zawiera linki dotyczące wszystkich popularnych urządzeń, dzięki czemu można łatwo pobrać aplikację przeglądarki, jeśli zajdzie potrzeba otwierania plików chronionych. Ale teraz zamierzamy zainstalować pełnego klienta, co umożliwi etykietowanie i chronienie plików. 
 
-3. Na stronie **Instalowanie klienta usługi Azure Information Protection**:     
+2. Znajdź sekcję **Klient usługi Azure Information Protection**, a następnie kliknij ikonę systemu Windows. Kliknij przycisk **Pobierz** i zapisz plik **AzInfoProtection.exe**.     
+
+3. Uruchom pobrany plik wykonywalny. Jeśli zostanie wyświetlony monit o kontynuowanie, kliknij pozycję **Tak**.    
+
+4. Na stronie **Instalowanie klienta usługi Azure Information Protection**:     
     - Wybierz opcję zainstalowania zasad demonstracyjnych, jeśli nie możesz nawiązać połączenia z chmurą, ale chcesz zobaczyć i wypróbować klienta usługi Azure Information Protection przy użyciu zasad lokalnych w celach demonstracyjnych. Gdy klient nawiąże połączenie z usługą Azure Information Protection, te zasady demonstracyjne zostaną zastąpione zasadami usługi Azure Information Protection obowiązującymi w organizacji.    
 
     - Po zapoznaniu się z warunkami licencji kliknij przycisk **Zgadzam się**.    
 
-4. Jeśli zostanie wyświetlony monit z pytaniem o kontynuowanie, kliknij przycisk **Tak** i poczekaj na zakończenie instalacji.    
+5. Jeśli zostanie wyświetlony monit z pytaniem o kontynuowanie, kliknij przycisk **Tak** i poczekaj na zakończenie instalacji.    
 
-3. Kliknij pozycję **Zamknij**. Przed rozpoczęciem korzystania z klienta usługi Azure Information Protection:    
+6. Kliknij pozycję **Zamknij**. Przed rozpoczęciem korzystania z klienta usługi Azure Information Protection:    
 
     - Jeśli na komputerze jest zainstalowany pakiet Office 2010, uruchom ponownie komputer, a następnie przejdź do następnej sekcji przedstawiającej ostatni krok.    
         
@@ -69,9 +73,4 @@ Zapoznaj się z informacjami na temat [instalowania klienta usługi Azure Inform
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

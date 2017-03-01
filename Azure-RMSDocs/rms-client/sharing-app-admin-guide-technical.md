@@ -1,10 +1,10 @@
 ---
-title: "Przegląd techniczny aplikacji Rights Management sharing | Azure Information Protection"
+title: "Omówienie techniczne aplikacji RMS sharing — AIP"
 description: "Szczegółowe informacje techniczne dla administratorów w sieciach firmowych, którzy są odpowiedzialni za wdrażanie aplikacji RMS sharing dla systemu Windows."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 770be3f7423f8d47439096393bba7464629646c5
-ms.openlocfilehash: b90a0e1ab363c1d7f87d0b1a18503da641bf7cfb
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 532a379aa303e65d111d6ba0e360f34082b25014
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,7 +76,6 @@ W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pl
 |tiff|ptiff|
 |bmp|pbmp|
 |gif|pgif|
-|giff|pgiff|
 |jpe|pjpe|
 |jfif|pjfif|
 |jt|pjt|
@@ -138,9 +138,4 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,10 +1,10 @@
 ---
-title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 1 | Azure Information Protection"
+title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 1"
 description: "Faza 1 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca kroki od 1 do 4 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -165,7 +166,7 @@ Następnie można opublikować lub zarchiwizować te szablony w taki sam sposób
 
 ## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
 
-Jeśli w przypadku szablonów w usłudze AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure Information Protection. Do zaimportowanych szablonów należy ręcznie dodać równoważną grupę lub równoważnych użytkowników oraz te same prawa. Równoważna grupa dla usługi Azure Information Protection nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+Jeśli w przypadku szablonów w usłudze AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure Information Protection. Do zaimportowanych szablonów należy ręcznie dodać równoważną grupę lub równoważnych użytkowników oraz te same prawa. Odpowiednik tej grupy dla usługi Azure Information Protection nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<nazwa_dzierżawy>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
 
 Jeśli nie masz pewności, czy szablony AD RMS obejmują grupę KAŻDY, możesz użyć następującego przykładowego skryptu programu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o korzystaniu z programu Windows PowerShell z usługami AD RMS, zobacz temat [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Administrowanie usługami AD RMS przy użyciu programu Windows PowerShell).
 
@@ -223,9 +224,4 @@ Remove-PSDrive MyRmsAdmin -force
 Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase2.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

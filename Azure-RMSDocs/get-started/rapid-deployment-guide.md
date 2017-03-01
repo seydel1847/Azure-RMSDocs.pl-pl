@@ -1,5 +1,5 @@
 ---
-title: "Przewodnik po szybkim wdrażaniu usługi Azure Rights Management | Azure Information Protection"
+title: "Przewodnik szybkiego wdrażania usługi Azure RMS — AIP"
 description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Rights Management do ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -147,9 +148,4 @@ Jednym z najcenniejszych zasobów naszej organizacji są dane. Tworzymy je, prze
 Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwolą korzystać z narzędzi umożliwiających sprawowanie kontroli nad danymi. Dziękujemy za Twoją współpracę podczas wprowadzania opisanych zmian.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

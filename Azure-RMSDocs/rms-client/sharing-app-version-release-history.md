@@ -1,10 +1,10 @@
 ---
-title: "Aplikacja do udostępniania usługi Rights Management&colon; historia wersji | Azure Information Protection"
+title: "Aplikacja RMS sharing&colon; historia wersji — AIP"
 description: "Zobacz nowości i zmiany w wersji aplikacji do udostępniania usługi Rights Management dla systemu Windows."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: aded487e9d7f7bc8341c7f6e1d6ac4e673b55c56
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -130,9 +131,4 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 -   **Obsługa wielu domen poczty e-mail w danej organizacji**: Jeśli korzystasz z usług AD RMS i użytkownicy w Twojej organizacji mają kilka domen poczty e-mail, ta aktualizacja pozwala użytkownikom korzystać z zawartości chronionej przez użytkowników w innych domenach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz sekcję [Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

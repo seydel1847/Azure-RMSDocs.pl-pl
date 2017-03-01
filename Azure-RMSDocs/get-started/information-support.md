@@ -1,5 +1,5 @@
 ---
-title: "Dane administratora i pomoc techniczna dla usługi Azure Information Protection | Azure Information Protection"
+title: "Informacje administracyjne i pomoc techniczna dla usługi Azure Information Protection"
 description: "Zasoby dla administratorów, w tym informacje na temat nowych wersji, opcji pomocy technicznej oraz sposobu kontaktu z firmą Microsoft w celu zgłoszenia problemu."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 1f7647fd41ba71b4cda4c942d86b6dbfe9c870f8
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: cb0a66071937ed5afdf1f86833bbc47bdb4ddd50
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -91,9 +92,4 @@ Rozwiązywanie problemów:
 -   [Forum: RMS for Users (applications) (Forum: usługi RMS dla użytkowników [aplikacje])](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

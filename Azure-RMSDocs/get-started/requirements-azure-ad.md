@@ -1,5 +1,5 @@
 ---
-title: "Wymagania dotyczące usługi Azure Active Directory | Azure Information Protection"
+title: "Wymagania dotyczące usługi Azure Active Directory dla usługi AIP"
 description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
-ms.openlocfilehash: ecb85e8fd2f09579536782f00a1babddb9466c54
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1422db06905f342f930bce5cd63eb4e08fc8076a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -82,9 +83,4 @@ Następnie skonfiguruj rozwiązanie MFA:
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,10 +1,10 @@
 ---
-title: "Instalowanie i konfigurowanie łącznika usługi Azure Rights Management | Azure Information Protection"
+title: "Instalowanie i konfigurowanie łącznika usługi Rights Management — AIP"
 description: "Informacje ułatwiające instalowanie i konfigurowanie łącznika usługi Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b7ad3ae66536d7c04003d5a2161b0fda0eb80a3b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 365d4a661a26e687da0445d9c31c644ed9d3ca12
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -241,8 +242,3 @@ Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobiera
 Teraz, gdy łącznik usługi RMS jest zainstalowany i skonfigurowany, można przystąpić do konfigurowania serwerów lokalnych, aby mogły z niego korzystać. Przejdź do sekcji [Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management](configure-servers-rms-connector.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "Uwagi dotyczące wdrażania klienta usługi RMS | Azure Information Protection"
+title: "Uwagi dotyczące wdrażania klienta usługi RMS — Azure Information Protection"
 description: "Informacje dotyczące ponownej dystrybucji, instalacji, obsługiwanych systemów operacyjnych, ustawień rejestru i odnajdowania usług dla usługi Rights Management Service (klienta usługi RMS) w wersji 2, która jest również znana jako klient MSIPC."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: ff9f1ba390fcad0569972fc65a2425266fd918b4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a68bf7fe02836a9a2267834435c9d5de5595478e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -259,8 +260,3 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 6.  Zamknij Edytor rejestru.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

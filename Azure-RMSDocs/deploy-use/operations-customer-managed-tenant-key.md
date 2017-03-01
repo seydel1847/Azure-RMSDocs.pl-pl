@@ -1,10 +1,10 @@
 ---
-title: "Operacje cyklu życia klucza dzierżawy zarządzanego przez klienta | Azure Information Protection"
+title: "Operacje cyklu życia klucza dzierżawy usługi AIP zarządzane przez klienta"
 description: "Informacje na temat operacji cyklu życia, które są istotne, jeśli samodzielnie zarządzasz swoim kluczem dzierżawy dla usługi Azure Information Protection — zgodnie ze scenariuszem BYOK (Bring Your Own Key)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 92918ceae563d0e32d39543938862497c6437372
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fa92a0f3179c884b7e5fc278525a471a27cb2a96
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -66,10 +67,5 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 |Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure Key Vault lub Azure Information Protection o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

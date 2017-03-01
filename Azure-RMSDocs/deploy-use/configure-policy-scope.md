@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie zasad należących do zakresów | Azure Information Protection"
+title: "Konfigurowanie zasad o określonym zakresie dla usługi Azure Information Protection"
 description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych użytkowników, należy skonfigurować dla usługi Azure Information Protection zasady należące do zakresów."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: 6818d514c303b3e3ee61189e62769dc72f36b668
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e2112ca081ed0520330355734bb0913e4a612c66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -62,9 +63,4 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uru
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

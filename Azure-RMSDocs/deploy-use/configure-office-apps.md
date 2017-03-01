@@ -1,5 +1,5 @@
 ---
-title: "Aplikacje pakietu Office; konfiguracja dla klientów | Azure Information Protection"
+title: "Aplikacje pakietu Office: konfiguracja dla klientów — AIP"
 description: "Informacje i instrukcje dla administratorów dotyczące konfigurowania aplikacji pakietu Office do pracy z usługą Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: f69fd9629afaafbf6f78b52f65b3bb69eaf19c9e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 430f390bef496b5e297ae25a03531da42954121d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Aby komputery klienckie mogły używać usługi Azure Rights Management z pakiet
 Aby uzyskać więcej informacji na temat klienta usługi Azure Information Protection, zobacz artykuł [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

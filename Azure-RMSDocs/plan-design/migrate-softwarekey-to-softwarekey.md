@@ -1,10 +1,10 @@
 ---
-title: Krok 2&colon; Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie | Azure Information Protection
+title: "Migrowanie klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie — AIP"
 description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez oprogramowanie."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ed9bc164a69eb15733ceb2f1b3cb4f4bd740b4d9
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 707d31d8cd2f012a4223a3654b2c1bbcefa2d1a8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -68,10 +69,5 @@ Wykonaj poniższe kroki, które umożliwiają zaimportowanie konfiguracji usług
 Teraz możesz wykonać [Krok 3. Aktywowanie dzierżawy usługi Azure Information Protection](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

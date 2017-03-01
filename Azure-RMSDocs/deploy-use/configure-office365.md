@@ -1,5 +1,5 @@
 ---
-title: "Office 365&colon; konfiguracja dla klientów i usług online | Azure Information Protection"
+title: "Usługa Office 365&colon; konfigurowanie klientów i usług online — AIP"
 description: "Informacje i instrukcje dla administratorów dotyczące konfigurowania usługi Office 365 do pracy z usługą Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: 2b90ba203c8d1874eab193d24d16117af2442449
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f0f486620f4b13dc8d94fee742eec2f8e4753d78
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -561,7 +562,7 @@ Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi 
 
     2.  Wyszukaj ciąg `$tenantAdmin` i zastąp przykładową wartość nazwą własnego w pełni kwalifikowanego konta administratora globalnego dla usługi Office 365.
 
-        Ta wartość jest taka sama jak wartość używana do logowania do portalu administracyjnego usługi Office 365 jako administrator globalny i ma następujący format: user_name@*&lt;nazwa_domeny_dzierżawy&gt;*.com
+        Ta wartość jest taka sama jak wartość używana do logowania do portalu administracyjnego usługi Office 365 jako administrator globalny i ma następujący format: nazwa_użytkownika@*&lt;nazwa_domeny_dzierżawy&gt;*.com.
 
         Jeśli na przykład nazwa użytkownika administratora globalnego usługi Office 365 „admin” odpowiada domenie dzierżawy „contoso.com”, należy podać wartość **admin@contoso.com**
 
@@ -1112,9 +1113,4 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 ```
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,18 +1,19 @@
 ---
-title: "Konfigurowanie etykiety pod kątem oznaczeń wizualnych | Azure Information Protection"
+title: "Konfigurowanie oznaczeń wizualnych dla etykiety usługi Azure Information Protection"
 description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 7f55f7376c882f3994c596ee76c24a59189fd845
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -80,10 +81,5 @@ Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classificatio
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

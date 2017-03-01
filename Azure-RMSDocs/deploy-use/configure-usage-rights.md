@@ -1,5 +1,5 @@
 ---
-title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure Information Protection"
+title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management — AIP"
 description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 42f2c592091edb6305d72036545631069e79da2a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 34f77a0ff33a9a960e12bc53d62b38f4e6553c80
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -104,10 +105,5 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

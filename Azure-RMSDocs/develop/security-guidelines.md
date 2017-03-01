@@ -4,7 +4,7 @@ description: "W przypadku aplikacji z włączoną obsługą usługi RMS optymaln
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 12/06/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
@@ -13,8 +13,9 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: f477af5bdf8094fed26d18150b8b8a876de51089
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
+ms.lasthandoff: 02/24/2017
 
 ---
 
@@ -53,8 +54,8 @@ Firma Microsoft nie sprawdza spełnienia standardów minimalnych ani nie weryfik
 
 |Poziom standardów|    Opis|
 |---|---|
-|Standard minimalny|  Zanim aplikacja, która obsługuje informacje chronione przy użyciu usługi AIP, będzie mogła zostać podpisana przy użyciu certyfikatu produkcyjnego z firmy Microsoft, należy ustalić, czy spełnia ona standard minimalny. Partnerzy korzystają zazwyczaj z certyfikatu hierarchii produkcji tylko w momencie ostatecznego wydania oprogramowania, jeśli ich testy wewnętrzne wykazały, że aplikacja spełnia standard minimalny. Spełnienie tego standardu nie jest i nie powinno być interpretowane jako gwarancja bezpieczeństwa ze strony firmy Microsoft. Firma Microsoft nie sprawdza spełnienia standardów minimalnych ani nie weryfikuje wyników takich testów. To partner całkowicie odpowiada za zagwarantowanie, że standard ten został spełniony.|
-|Standard zalecany|  Zalecane wytyczne wskazują drogę do lepszych zabezpieczeń aplikacji oraz przedstawiają, jak można rozwijać usługę AIP na skutek wdrażania większej liczby kryteriów zabezpieczeń. Dostawcy mogą próbować wyróżnić swoje aplikacje na tle konkurencji, stosując się do bardziej restrykcyjnych wytycznych dotyczących zabezpieczeń.|
+|Standard minimalny|    Zanim aplikacja, która obsługuje informacje chronione przy użyciu usługi AIP, będzie mogła zostać podpisana przy użyciu certyfikatu produkcyjnego z firmy Microsoft, należy ustalić, czy spełnia ona standard minimalny. Partnerzy korzystają zazwyczaj z certyfikatu hierarchii produkcji tylko w momencie ostatecznego wydania oprogramowania, jeśli ich testy wewnętrzne wykazały, że aplikacja spełnia standard minimalny. Spełnienie tego standardu nie jest i nie powinno być interpretowane jako gwarancja bezpieczeństwa ze strony firmy Microsoft. Firma Microsoft nie sprawdza spełnienia standardów minimalnych ani nie weryfikuje wyników takich testów. To partner całkowicie odpowiada za zagwarantowanie, że standard ten został spełniony.|
+|Standard zalecany|    Zalecane wytyczne wskazują drogę do lepszych zabezpieczeń aplikacji oraz przedstawiają, jak można rozwijać usługę AIP na skutek wdrażania większej liczby kryteriów zabezpieczeń. Dostawcy mogą próbować wyróżnić swoje aplikacje na tle konkurencji, stosując się do bardziej restrykcyjnych wytycznych dotyczących zabezpieczeń.|
 |Standard preferowany|    Jest to obecnie najwyższy poziom kategorii zabezpieczeń. Dostawcy, którzy tworzą aplikacje sprzedawane jako charakteryzujące się bardzo wysokim poziomem zabezpieczeń, powinni dążyć do tego standardu. Aplikacje zgodne z tym standardem są najmniej narażone na ataki.|
 
 
@@ -95,8 +96,3 @@ W tej chwili brak standardów zalecanych.
 W tej chwili brak standardów preferowanych.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
