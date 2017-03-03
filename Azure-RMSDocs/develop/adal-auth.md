@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
 ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -105,8 +106,3 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 ![Wybierz opcję ZAPISZ](../media/SaveApplication.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
