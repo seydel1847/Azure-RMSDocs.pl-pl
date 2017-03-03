@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
 ms.openlocfilehash: 9906d300debd4d28e21b8fab2c44c30574d47f4b
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,8 +33,3 @@ Poniższe tematy zawierają informacje przydatne w procesie projektowania aplika
 - [Jak korzystać ze śledzenia dokumentów](how-to-use-document-tracking.md) — korzystanie z funkcji śledzenia dokumentów wymaga zrozumienia podstawowych kwestii związanych z zarządzaniem skojarzonymi metadanymi i rejestracją w usłudze.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-
