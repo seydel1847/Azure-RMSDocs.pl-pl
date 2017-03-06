@@ -4,7 +4,7 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -37,8 +37,7 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
     - Aby utworzyć nową etykietę: kliknij przycisk **Dodaj nową etykietę**.
 
     - Aby utworzyć nową etykietę podrzędną: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...**) etykiety, dla której chcesz utworzyć etykietę podrzędną, a następnie kliknij polecenie **Dodaj etykietę podrzędną**.
-
-
+    
      Jeśli nowa etykieta, którą chcesz dodać, będzie należeć do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu będzie miała zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
 
 3. W bloku **Etykieta** lub **Etykieta podrzędna** wybierz opcje dla nowej etykiety, a następnie kliknij przycisk **Zapisz**.
