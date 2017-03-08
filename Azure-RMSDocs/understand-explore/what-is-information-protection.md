@@ -4,16 +4,16 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/16/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 7d5c759a6b7e206f30588926a8d480b50be20bc4
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 1085966a885d1cd8223e277be632ce6dae5de294
+ms.openlocfilehash: 61dfc23fa16b12688b79f2b7ffac645c9cc93584
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -32,7 +32,7 @@ Po sklasyfikowaniu (i opcjonalnym zabezpieczeniu) całej zawartości można śle
 
 ## <a name="how-labels-apply-classification"></a>Na czym polega klasyfikacja przy użyciu etykiet
 
-Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Trwałe etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu, dzięki czemu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
+Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu, dzięki czemu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
 
 Przykładowo poniższa wiadomość e-mail została sklasyfikowana jako wewnętrzna. Etykieta ta jest dodana w stopce wiadomości e-mail jako wizualny wskaźnik informujący wszystkich adresatów, że wiadomość jest przeznaczona do użytku wewnętrznego i nie należy jej wysyłać poza organizację. Etykieta jest również osadzona w nagłówkach wiadomości e-mail, aby usługi poczty e-mail mogły sprawdzić tę wartość i utworzyć wpis inspekcji lub uniemożliwić wysłanie wiadomości poza firmę.
 
@@ -43,7 +43,7 @@ Przykładowo poniższa wiadomość e-mail została sklasyfikowana jako wewnętrz
 
 Stosowana technologia ochrony korzysta z usługi o nazwie *Azure Rights Management* (często skracanej do postaci Azure RMS). Technologia ta jest zintegrowana z innymi usługami i aplikacjami chmurowymi firmy Microsoft, takimi jak Office 365 czy Azure Active Directory. Można jej również używać razem z własnymi aplikacjami biznesowymi oraz rozwiązaniami do ochrony informacji dostarczanymi przez producentów oprogramowania, zarówno w przypadku aplikacji i rozwiązań hostowanych lokalnie, jak i w chmurze.
 
-Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Podobnie jak w przypadku trwałych etykiet, ochrona stosowana przy użyciu usługi Rights Management pozostaje z dokumentami i wiadomościami e-mail niezależnie od lokalizacji — wewnątrz organizacji, sieci, serwerów plików i aplikacji lub poza nimi. To rozwiązanie ochrony informacji zapewnia kontrolę nad danymi nawet wtedy, gdy są one udostępniane innym osobom.
+Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Podobnie jak w przypadku stosowanych etykiet, ochrona stosowana przy użyciu usługi Rights Management obejmuje dokumenty i wiadomości e-mail niezależnie od lokalizacji — wewnątrz organizacji, w sieciach, na serwerach plików, w aplikacjach i poza nimi. To rozwiązanie ochrony informacji zapewnia kontrolę nad danymi nawet wtedy, gdy są one udostępniane innym osobom.
 
 Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. Te zadania ochrony można uprościć i usprawnić przy użyciu *szablonów usługi Rights Management*.
 
@@ -96,9 +96,9 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- Przegląd wideo
+- Film: „Top 5 Tips for Information Protection” („5 najważniejszych porad dotyczących usługi Information Protection”)
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Ip0m6d3G0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
 
     Dodatkowo Microsoft Ignite 2016 oferuje wiele sesji na żądanie dotyczących usługi Azure Information Protection:
 
@@ -115,8 +115,10 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 ## <a name="next-steps"></a>Następne kroki
 
+Przeczytaj wpis w blogu: [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: przygotowanie, ustawianie, ochrona)
+
 Samodzielnie skonfiguruj i poznaj usługę Azure Information Protection w pięciu krokach z naszym [Samouczkiem Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
-Znasz usługę Azure Information Protection bądź Azure Rights Management pod inną nazwą? Zobacz [naszą listę alternatywnej terminologii usługi](azure-rms-aka.md).
+Być może znasz usługę Azure Information Protection bądź Azure Rights Management pod inną nazwą? Zobacz [naszą listę alternatywnej terminologii usługi](azure-rms-aka.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

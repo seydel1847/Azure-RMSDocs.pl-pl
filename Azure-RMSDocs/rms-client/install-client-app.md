@@ -4,7 +4,7 @@ description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/17/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
+ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
 ms.lasthandoff: 02/24/2017
 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/24/2017
 
 # <a name="download-and-install-the-azure-information-protection-client"></a>Pobieranie i instalowanie klienta usługi Azure Information Protection
 
-Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby to zrobić, należy mieć uprawnienia administratora lokalnego na komputerze. 
+Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby zainstalować tego klienta w celu ochrony dokumentów i wiadomości e-mail oraz stosowania dla nich etykiet, trzeba mieć na komputerze uprawnienia administratora lokalnego.
 
 Ponadto:
 
@@ -34,7 +34,7 @@ Ponadto:
 
 1.  Przejdź na stronę usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft.
 
-    Ta strona zawiera linki dotyczące wszystkich popularnych urządzeń, dzięki czemu można łatwo pobrać aplikację przeglądarki, jeśli zajdzie potrzeba otwierania plików chronionych. Ale teraz zamierzamy zainstalować pełnego klienta, co umożliwi etykietowanie i chronienie plików. 
+    Ta strona zawiera linki dotyczące wszystkich popularnych urządzeń, dzięki czemu można łatwo pobrać aplikację przeglądarki, jeśli zajdzie potrzeba otwierania plików chronionych. Jeśli nie masz na komputerze uprawnień administratora lokalnego, możesz mimo to zainstalować aplikację przeglądarki dla systemu Windows. Jednak wykonanie tych instrukcji powoduje zainstalowanie pełnego klienta, co umożliwi etykietowanie i ochronę plików. 
 
 2. Znajdź sekcję **Klient usługi Azure Information Protection**, a następnie kliknij ikonę systemu Windows. Kliknij przycisk **Pobierz** i zapisz plik **AzInfoProtection.exe**.     
 

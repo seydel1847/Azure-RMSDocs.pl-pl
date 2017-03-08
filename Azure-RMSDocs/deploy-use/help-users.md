@@ -4,7 +4,7 @@ description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -43,6 +43,8 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
 -   **Informacje dla działu pomocy technicznej:**
 
     Jednym z najbardziej przydatnych narzędzi dla działu pomocy technicznej jest [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Operatorzy pomocy technicznej mogą uruchomić to narzędzie z opcją administratora usługi Azure RMS oraz mogą poprosić użytkowników o jego uruchomienie z opcją użytkownika usługi Azure RMS. Narzędzie może być pomocne nie tylko w identyfikowaniu problemów, ale także w rozwiązaniu problemów, które zostaną znalezione. W przypadku problemów nierozwiązanych umożliwia rejestrowanie informacji w dziennikach śledzenia.
+    
+    Jeśli użytkownicy uruchamiają klienta usługi Azure Information Protection, operatorzy pomocy technicznej mogą ich poprosić o użycie opcji **Pomoc i opinie**, **Uruchom diagnostykę**, a następnie zresetowanie klienta. Jednak, inaczej niż w przypadku narzędzia RMS Analyzer, resetowanie nie powoduje wylogowania użytkownika ani ponownego uruchomienia klienta i nie ma możliwości korygowania automatycznego.
 
     W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych, na przykład żądania działu prawnego lub menedżera po odejściu pracownika z organizacji, upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management.
 

@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ebc0ad13952f2036f997fc5ba9207f02d1571021
+ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
+ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
 ms.lasthandoff: 02/24/2017
 
 
@@ -81,7 +81,9 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
     > [!NOTE]
     > Wybrani użytkownicy lub grupy muszą mieć adres e-mail. W środowisku produkcyjnym adres jest dostępny prawie zawsze, ale w prostym środowisku testowym może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
 
-    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. W przypadku dostępności lokalnej usługi Active Directory, jeśli planowana jest synchronizacja do usługi Azure AD, można użyć grup zabezpieczeń lub grup dystrybucyjnych z obsługą wiadomości e-mail. Chcąc nadać prawa wszystkim użytkownikom w obrębie organizacji, łatwiej będzie skopiować jeden z szablonów domyślnych niż określać wiele grup. Aby uzyskać więcej informacji, zobacz [Kopiowanie szablonu](copy-template.md).
+    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching). 
+    
+    W przypadku dostępności lokalnej usługi Active Directory, jeśli planowana jest synchronizacja do usługi Azure AD, można użyć grup zabezpieczeń lub grup dystrybucyjnych z obsługą wiadomości e-mail. Aby nadać prawa wszystkim użytkownikom w obrębie organizacji, łatwiej będzie skopiować jeden z szablonów domyślnych niż określać wiele grup. Aby uzyskać więcej informacji, zobacz [Kopiowanie szablonu](copy-template.md).
 
     > [!TIP]
     > Aby dodać użytkowników spoza organizacji („użytkowników zewnętrznych”) do szablonu, wybierz grupę z włączoną obsługą poczty, która zawiera kontakty z usługi Office 365 lub Exchange Online. Pozwoli to przypisać prawa do tych użytkowników w ten sam sposób, w jaki można przypisać prawa do użytkowników w danej organizacji. Na przykład można zapobiec edytowaniu cennika wysłanego do klientów przez tych klientów. Nie należy używać tej konfiguracji szablonu do ochrony wiadomości e-mail, jeśli użytkownicy spoza danej organizacji będą czytać chronione wiadomości e-mail za pomocą aplikacji Outlook Web App.

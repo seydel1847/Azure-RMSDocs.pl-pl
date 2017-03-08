@@ -4,16 +4,16 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
+ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -74,11 +74,11 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
         
         Jeśli użytkownicy nie mają uprawnień do usuwania ochrony usługi Rights Management i wybiorą etykietę z opcją **Usuń ochronę**, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
 
-5. Jeśli została wybrana opcja **Chroń**, wybierz pasek **Ochrona**, aby otworzyć blok **Uprawnienia**:
+5. Jeśli została wybrana opcja **Chroń**, wybierz pasek **Ochrona**, aby otworzyć blok **Ochrona**:
     
     ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar.png)
 
-6. W bloku **Uprawnienia** wybierz opcję **Azure RMS** lub **HYOK (AD RMS)**. 
+6. W bloku **Ochrona** wybierz opcję **Azure RMS** lub **HYOK (AD RMS)**. 
     
     W większości przypadków wybierzesz opcję **Azure RMS** dla swoich ustawień uprawnień. Nie należy wybierać usługi **HYOK (AD RMS)**, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji rozwiązania „*zachowaj własny klucz*” (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md). Aby kontynuować konfigurację dla usługi HYOK (AD RMS), przejdź do kroku 9.
     
@@ -94,7 +94,7 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
             
 9. W przypadku wybrania opcji **Wybierz szablon** dla usługi **HYOK (AD RMS)**: podaj identyfikator GUID szablonu i adres URL licencjonowania klastra usługi AD RMS. [Więcej informacji](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-10. Kliknij przycisk **Gotowe**, aby zamknąć blok **Uprawnienia**, i zobacz swój wybór w opcji **Nie przekazuj** lub obraz wyświetlonego wybranego szablonu dla opcji **Ochrona** w bloku **Etykieta**.
+10. Kliknij przycisk **OK**, aby zamknąć blok **Ochrona**, i zobacz swój wybór w opcji **Nie przekazuj** lub obraz wyświetlonego wybranego szablonu dla opcji **Ochrona** w bloku **Etykieta**.
 
 10. W bloku **Etykieta** kliknij przycisk **Zapisz**.
 

@@ -5,18 +5,19 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
+ms.sourcegitcommit: 8af3161946b2dfc6ea58d0565491d8e59736d565
+ms.openlocfilehash: 2f4c11f7661a814849ccea41c60edfc2ad2287e8
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -25,7 +26,13 @@ ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
 
-## <a name="new-for-the-february-2016---sdk-documentation-update"></a>Nowość w lutym 2016 r. — aktualizacja dokumentacji zestawu SDK
+## <a name="new-for-the-february-2017---sdk-documentation-update"></a>Nowość w lutym 2017 r. — aktualizacja dokumentacji zestawu SDK
+>[!Note]  
+> Aktualizacje dokumentacji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w wersji 1.03102.0221.
+ 
+- **Zbieranie danych** — funkcja zbierania informacji o błędach i wydajności aplikacji jest teraz dostępna. Ta funkcja jest kontrolowana przez nową właściwość, *IPC_EI_DATA_COLLECTION_ENABLED*, jedną z [właściwości środowiska](https://msdn.microsoft.com/en-us/library/hh535247.aspx), i można ją zastąpić administracyjnie. 
+
+## <a name="february-2016---sdk-documentation-update"></a>Luty 2016 r. — aktualizacja dokumentacji zestawu SDK
 
 >[!Note]
 > Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
@@ -162,8 +169,3 @@ Składniki specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 Jeśli nie będzie można pobrać nazwy ani opisu, zostanie zwrócony błąd. Może istnieć tylko jedna nazwa i opis dla określonego identyfikatora LCID.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

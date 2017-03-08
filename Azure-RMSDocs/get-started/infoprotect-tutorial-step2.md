@@ -1,19 +1,19 @@
 ---
 title: "Samouczek Szybki start — krok 2 — AIP"
-description: "Krok 2 samouczka wprowadzającego, dzięki któremu możesz szybko wypróbować usługę Microsoft Azure Information Protection w swojej organizacji. Wystarczy około 20 minut."
+description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko wypróbować usługę Azure Information Protection — konfigurowanie zasad."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: cecf91a6e8bea14002f6760ddbde15e934cb7ef7
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -63,13 +63,13 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
 
 2. W bloku **Etykieta: Poufne** odszukaj sekcję **Ustawianie uprawnień do dokumentów i wiadomości e-mail oznaczonych tą etykietą**.
 
-    Wybierz opcję **Ochrona**:
+    Wybierz pozycję **Chroń**, a następnie wybierz opcję **Ochrona**:
     
     ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar.png) 
     
-    Spowoduje to otworzenie bloku **Uprawnienia**.
+    Spowoduje to otwarcie bloku **Ochrona**.
     
-3. Upewnij się, że w bloku **Uprawnienia** jest zaznaczona opcja **Azure RMS** oraz że zaznaczono również opcję **Wybierz szablon**, a następnie kliknij pole listy rozwijanej i wybierz domyślny szablon ** \<nazwa organizacji> — Poufne**.     
+3. Upewnij się, że w bloku **Ochrona** jest zaznaczona opcja **Azure RMS** oraz że zaznaczono również opcję **Wybierz szablon**, a następnie kliknij pole listy rozwijanej i wybierz domyślny szablon **\<nazwa organizacji> — Poufne**.     
     
     Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz: 
     
@@ -77,7 +77,7 @@ Zmienimy teraz ustawienia jednej z etykiet, **Poufne**:
     
     Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
     
-4. Kliknij przycisk **Gotowe**, aby zapisać zmiany i zamknąć blok **Uprawnienia**.
+4. Kliknij przycisk **OK**, aby zapisać zmiany i zamknąć blok **Ochrona**.
 
 5. Po powrocie do bloku **Etykieta: Poufne** zlokalizuj sekcję **Ustawianie oznaczenia wizualnego**:
     

@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 89c0cae4b0549a0dd86ede26ef3eed0f09200419
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: 5deea0dce593aae09c498e8b6696205890e9f232
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -68,7 +68,7 @@ Aby pobrać dzienniki użycia, należy skorzystać z modułu administracyjnego u
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>Pobieranie dzienników użycia za pomocą programu PowerShell
 
-1.  Uruchom program Windows PowerShell z opcją **Uruchom jako administrator** i wykonaj polecenie cmdlet [Connect AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx), aby nawiązać połączenie z usługą Azure Rights Management:
+1.  Uruchom program Windows PowerShell z opcją **Uruchom jako administrator** i wykonaj polecenie cmdlet [Connect AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice), aby nawiązać połączenie z usługą Azure Rights Management:
 
     ```
     Connect-AadrmService
@@ -101,7 +101,7 @@ Domyślnie to polecenie cmdlet używa trzech wątków do pobierania dzienników.
 #### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>Jeśli rejestrowanie użycia usługi Azure Rights Management zostało włączone ręcznie przed zmianą funkcji rejestrowania w dniu 22 lutego 2016 r.
 
 
-Jeśli rejestrowanie użycia było wykorzystywane przed zmianą rejestrowania, dzienniki użycia będą znajdowały się na Twoim skonfigurowanym koncie magazynu Azure. Firma Microsoft nie skopiuje tych dzienników z Twojego konta magazynu do nowego zarządzanego konta magazynu usługi Azure Rights Management w ramach zmiany funkcji rejestrowania. Za zarządzanie cyklem życia wcześniej wygenerowanych dzienników odpowiedzialni są użytkownicy. Można wykonać polecenie cmdlet [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) polecenia cmdlet, aby pobrać stare dzienniki. Na przykład:
+Jeśli rejestrowanie użycia było wykorzystywane przed zmianą rejestrowania, dzienniki użycia będą znajdowały się na Twoim skonfigurowanym koncie magazynu Azure. Firma Microsoft nie skopiuje tych dzienników z Twojego konta magazynu do nowego zarządzanego konta magazynu usługi Azure Rights Management w ramach zmiany funkcji rejestrowania. Za zarządzanie cyklem życia wcześniej wygenerowanych dzienników odpowiedzialni są użytkownicy. Można wykonać polecenie cmdlet [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) polecenia cmdlet, aby pobrać stare dzienniki. Na przykład:
 
 - Aby pobrać wszystkie dzienniki dostępne w folderze E:\logs: `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -146,13 +146,15 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |result|String|‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.|'Success'|
 |correlation-id|Tekst|Identyfikator GUID, który jest wspólny dla dziennika klienta usługi RMS i dziennika serwera dotyczącego danego żądania.<br /><br />Ta wartość może być przydatna do rozwiązywania problemów klienta.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|Tekst|Identyfikator GUID ujęty w nawiasy klamrowe, który identyfikuje chronioną zawartość (na przykład dokument).<br /><br />To pole ma wartość tylko w przypadku typu żądania AcquireLicense w polu request-type. Dla wszystkich innych typów żądań to pole jest puste.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|String|Adres e-mail właściciela dokumentu.|alice@contoso.com|
-|issuer|String|Adres e-mail wystawcy dokumentu.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|template-id|String|Identyfikator szablonu użytego do ochrony dokumentu.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|String|Nazwa pliku dokumentu objętego ochroną. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.|TopSecretDocument.docx|
-|date-published|Data|Data, w której włączono ochronę dokumentu.|2015-10-15T21:37:00|
+|owner-email|String|Adres e-mail właściciela dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com|
+|issuer|String|Adres e-mail wystawcy dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
+|template-id|String|Identyfikator szablonu użytego do ochrony dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|String|Nazwa pliku dokumentu objętego ochroną. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|TopSecretDocument.docx|
+|date-published|Data|Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|2015-10-15T21:37:00|
 |c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
+|admin-action|Wartość logiczna|Czy administrator ma dostęp do witryny śledzenia dokumentów w trybie administratora.|Prawda|
+|acting-as-user|String|Adres e-mail użytkownika, dla którego administrator uzyskuje dostęp do witryny śledzenia dokumentów. |'joe@contoso.com'|
 
 
 #### <a name="exceptions-for-the-user-id-field"></a>Wyjątki w polu user-id
