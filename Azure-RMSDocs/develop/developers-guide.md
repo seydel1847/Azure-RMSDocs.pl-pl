@@ -4,7 +4,7 @@ description: "Deweloperzy mogą korzystać z usługi Azure Information Protectio
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/30/2017
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: d00a735328bf04aad365a7577ef33ea24706ffc7
-ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
+ms.sourcegitcommit: 9a8b37f8e4e6d3a22c5ae4b43ffb82bfd0482037
+ms.openlocfilehash: ee257e733177077caaf3cf3b579a1b3718479121
+ms.lasthandoff: 02/10/2017
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
@@ -35,7 +36,7 @@ Aplikacje usług zapewniają możliwość ochrony informacji podczas eksportu z 
 - [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykładowa aplikacja DLP obsługująca usługę RMS, prezentująca podstawowe kroki, które każda aplikacja obsługująca usługę RMS powinna wykonywać przy użyciu interfejsu API plików usługi RMS w celu ochrony i wykorzystywania zawartości ograniczonej restrykcjami.
 - [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykład przedstawiający zastosowanie zestawu SDK usługi RMS w aplikacjach Azure do ochrony danych w usłudze Magazyn obiektów blob Azure.
 - [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms) to przykład, który demonstruje sposób tworzenia aplikacji systemu Windows, która prowadzi obserwację katalogów w systemie plików i stosuje zasady ochrony usługi RMS dla każdej zmiany, na przykład dodania lub modyfikacji pliku.
-- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/EncryptFilesInDir) to przykład prostej aplikacji konsoli, która obsługuje wskazany katalog i nierekursywnie chroni wszystkie pliki tylko w tym katalogu.
+- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/ProtectFilesInDir) to przykład prostej aplikacji konsoli, która obsługuje wskazany katalog i nierekursywnie chroni wszystkie pliki tylko w tym katalogu.
 
 ## <a name="powershell-guides"></a>Przewodniki po programie PowerShell
 
@@ -142,8 +143,3 @@ Te filmy wideo pochodzą z konferencji Microsoft 2016 Ignite
 - [Terminologia dotycząca usługi Azure Information Protection — ITPro](../get-started/terminology.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO5-->
-
-
