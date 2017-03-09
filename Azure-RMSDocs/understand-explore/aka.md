@@ -78,4 +78,4 @@ Podobnie „Active Directory Rights Management Services” (AD RMS) pozostaje bi
 
 Aby uzyskać więcej informacji o sposobie zakupu lub możliwości oceny usługi Azure Information Protection, a także o różnych funkcjach dostępnych w planach subskrypcji, zobacz witrynę usługi [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection).
 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
