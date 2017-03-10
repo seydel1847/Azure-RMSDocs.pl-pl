@@ -38,8 +38,3 @@ Ten samouczek przeprowadził Cię tylko przez jeden scenariusz związany z ochro
 
 Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera kroki związane z wdrażaniem i linki prowadzące do dokładnych instrukcji.
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

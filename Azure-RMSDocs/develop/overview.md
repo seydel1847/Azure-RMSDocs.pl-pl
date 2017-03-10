@@ -14,13 +14,10 @@ ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 19afce2a84e979ca1a25ec2ff6473dd3d6edd610
-
-
+ms.openlocfilehash: 3ad124e672dd3c4cbaaf1ac6b9e123e112e59cc4
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="overview"></a>Przegląd
 
 Zestaw SDK 4.2 usługi Microsoft Rights Management to technologia ochrony informacji dostępna dla różnych platform.  Jest to zestaw dewelopera oprogramowania (SDK) lub architektura, której celem jest pomoc komputerom i urządzeniom klienckim w ochronie dostępu do informacji przepływających przez aplikacje obsługujące prawa i w korzystaniu z tych informacji. Zestawy SDK dla tych platform zapewniają prosty interfejs API dla deweloperów aplikacji, który umożliwia ochronę i korzystanie z zawartości cyfrowej, pobieranie szablonów i uzyskiwanie zasad z serwera oraz powiązanych zadań zarządzania prawami.
@@ -58,8 +55,3 @@ Skorzystaj z przewodnika [Rozpoczynanie pracy](get-started.md), aby rozpocząć 
 * [Konto GitHub](https://github.com/AzureAD/)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

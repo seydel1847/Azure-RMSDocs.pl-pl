@@ -14,13 +14,10 @@ ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: da5a9fa1a2c2eaccb6768914a0c425983b14fdbe
-
-
+ms.openlocfilehash: 128f472eb69a52bd8a7cf2e8103ee520d83ee92c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-debug-a-rights-enabled-application"></a>Porada: debugowanie aplikacji obsługującej prawa
 
 Poniższy temat opisuje metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
@@ -67,8 +64,3 @@ Na przykład użycie poniższego polecenia spowoduje włączenie dziennika zdarz
 **Uwaga** Aby uwidocznić dziennik debugowania MSIPC, w Podglądzie zdarzeń systemu Windows w menu **Widok** wybierz opcję **Pokaż dzienniki analityczne i debugowania**.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

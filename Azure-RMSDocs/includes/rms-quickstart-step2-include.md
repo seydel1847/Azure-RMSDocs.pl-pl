@@ -25,8 +25,3 @@ Teraz możesz już chronić swoje pliki zawierające informacje, które chcesz u
 |Informacje dotyczące lokalnej instalacji aplikacji do udostępniania usługi Rights Management dla systemu Windows i instrukcje dla użytkowników →|[Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md)|
 |Informacje dotyczące skryptowej instalacji aplikacji do udostępniania usługi Rights Management dla systemu Windows i dodatkowe informacje techniczne →|[Przewodnik administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md)|
 |Różnice między ochroną natywną i ogólną →|[Jaka jest różnica między ochroną ogólną i ochroną wbudowaną (natywną)?](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

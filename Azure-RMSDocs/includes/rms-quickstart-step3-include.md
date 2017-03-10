@@ -40,8 +40,3 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 |--------------------------------|--------------------------|
 |Pełne instrukcje i alternatywne metody ochrony plików udostępnianych za pośrednictwem poczty e-mail   ->|[Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-protect-by-email.md)|
 |Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości** ->|[Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

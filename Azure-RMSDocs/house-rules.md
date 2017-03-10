@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3451a32476e8c85f98ca8df005e633481caa2256
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Lokalne zasady dotyczące komentarzy w dokumentacji usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -41,5 +37,4 @@ Komentarze i notatki boczne Livefyre nie powinny być używane w celu uzyskania 
 Dodatkowe zasoby można znaleźć w temacie [Informacje i pomoc techniczna dla usługi Azure Information Protection](./get-started/information-support.md). 
 
 Uwaga: jeśli jesteś pracownikiem firmy Microsoft, używaj wewnętrznych kanałów komunikacji.
-
 

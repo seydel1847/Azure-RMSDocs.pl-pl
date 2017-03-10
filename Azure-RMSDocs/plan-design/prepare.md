@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
-ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 034ca391c5b021333e77e8b6b9c389300e4a9da2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="preparing-for-azure-information-protection"></a>Przygotowanie do korzystania z usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -42,6 +38,5 @@ Ze względu na wydajność członkostwo w grupach jest buforowane przez usługę
 Gdy wszystko jest gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, aktywuj usługę Rights Management, aby włączyć tę technologię. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

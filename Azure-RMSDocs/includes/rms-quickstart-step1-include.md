@@ -53,8 +53,3 @@ W przypadku wdrożenia produkcyjnego prawdopodobnie konieczne będzie również 
 |--------------------------------|--------------------------|
 |Informacje na temat aktywowania usługi Rights Management i określania, kto może chronić pliki i wysyłać wiadomość e-mail po aktywowaniu usługi →|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-azure-classic.md)|
 |Informacje na temat szablonów domyślnych i tworzenia nowych szablonów niestandardowych →|[Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/create-template.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39d2fb244be91d7fc655efbdda24e4e268ac1329
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9164ce8155f1d068ea0fa164226ff20df05da8ae
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Klient usługi Azure Information Protection: instalacja i konfiguracja klienta
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -43,6 +39,5 @@ Aby zainstalować klienta usługi Azure Information Protection dla tych popularn
 **Jeśli masz konto w usłudze Microsoft Intune**: aplikacja Azure Information Protection obejmuje zestaw Software Development Kit aplikacji usługi Microsoft Intune, w związku z czym podczas rejestrowania urządzeń z systemami iOS i Android w usłudze Intune można wdrożyć przeglądarkę usługi Azure Information Protection i zarządzać nią dla tych urządzeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i wdrażanie zasad zarządzania aplikacjami mobilnymi w konsoli usługi Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) w dokumentacji usługi Intune. W kroku 2 postępuj zgodnie z instrukcjami, aby opublikować aplikację zarządzaną przez zasady.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

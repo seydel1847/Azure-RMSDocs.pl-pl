@@ -14,14 +14,10 @@ ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3b56c14d4ec1faf940e8b7d350d2680625cac795
-ms.openlocfilehash: 268d474e11f70961263b1cbbcc5eca926e880416
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: cfdf21be0d01eb3e362f9d1e326e7ae9cd7cc8a9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="developer-guidance"></a>Wskazówki dla deweloperów
 
 W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.

@@ -31,8 +31,3 @@ Teraz po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu 
 |Informacje dotyczące bezpłatnej subskrypcji usługi RMS dla użytkowników indywidualnych →|[Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md)|
 |Informacje dotyczące dwóch wersji pliku, które widać w załączniku do wiadomości e-mail →|[Co to za plik ppdf, który jest automatycznie tworzony?](../rms-client/sharing-app-dialog-box.md)|
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-
