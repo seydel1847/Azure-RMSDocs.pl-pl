@@ -12,13 +12,10 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
-ms.lasthandoff: 02/24/2017
-
+ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="security-best-practices-for-azure-information-protection"></a>Najlepsze rozwiązania w zakresie zabezpieczeń dla usługi Azure Information Protection
 
 Zestaw SDK (Software Development Kit) usługi Azure Information Protection (AIP) zapewnia niezawodny system do publikowania i używania wszystkich typów informacji chronionych. Aby system AIP był maksymalnie efektywny, aplikacje z obsługą usługi AIP należy tworzyć przy użyciu najlepszych rozwiązań usługi AIP. Aplikacje z obsługą usługi AIP są pomocne w utrzymaniu bezpieczeństwa danego ekosystemu. Identyfikowanie zagrożeń związanych z bezpieczeństwem i ograniczenie zagrożeń wprowadzanych podczas tworzenia aplikacji pomaga zminimalizować prawdopodobieństwo mniej bezpiecznego wdrażania oprogramowania.

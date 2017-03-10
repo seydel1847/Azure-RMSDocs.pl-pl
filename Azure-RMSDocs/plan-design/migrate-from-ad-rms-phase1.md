@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: bbd5cd5be72dfe72f8312f7ee5049dec2e46ac96
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>Faza 1 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -43,18 +39,6 @@ Ten krok to proces składający się z dwóch części:
 2.  Importowanie danych konfiguracji do usługi Azure Information Protection. W zależności od bieżącej konfiguracji wdrożenia usług AD RMS i preferowanej topologii klucza dzierżawy usługi Azure RMS ten krok może składać się z różnych procesów.
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>Eksportowanie danych konfiguracji z usług AD RMS
-
-> [!IMPORTANT]
-> Przed wykonaniem tej procedury potwierdź, że serwery AD RMS działają w trybie kryptograficznym 2. Jest to wymagane dla usługi Azure Information Protection.
-> 
-> Aby potwierdzić tryb kryptograficzny:
-> 
-> - W przypadku systemów Windows Server 2012 R2 oraz Windows 2012: właściwości klastra AD RMS > karta **Ogólne**. 
-> 
-> - W przypadku wszystkich obsługiwanych wersji usługi AD RMS: użyj narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i opcji **administratora usługi AD RMS**, aby wyświetlić tryb kryptograficzny w sekcji **Informacje o usłudze RMS**.
-> 
-> Upewnij się, że wartość trybu kryptograficznego wynosi **2**. Jeśli tak nie jest, zapoznaj się z instrukcjami, aby włączyć tryb kryptograficzny 2 w sekcji [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
-
 
 Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
@@ -224,4 +208,3 @@ Remove-PSDrive MyRmsAdmin -force
 Przejdź do [fazy 2 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase2.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

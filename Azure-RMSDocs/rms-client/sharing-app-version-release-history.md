@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: cee881a77b695fe38d0f88c05b0699d3d9d14955
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sharing-application-version-release-history"></a>Aplikacja do udostępniania usługi Rights Management: historia wersji
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
@@ -131,4 +127,3 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 -   **Obsługa wielu domen poczty e-mail w danej organizacji**: Jeśli korzystasz z usług AD RMS i użytkownicy w Twojej organizacji mają kilka domen poczty e-mail, ta aktualizacja pozwala użytkownikom korzystać z zawartości chronionej przez użytkowników w innych domenach w Twojej organizacji. Aby uzyskać więcej informacji, zobacz sekcję [Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

@@ -14,13 +14,10 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
-
-
+ms.openlocfilehash: bf327be47629532a716cc8239fc76d1a9ee1db46
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-work-with-encryption-settings"></a>Instrukcje: korzystanie z ustawień szyfrowania
 
 Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawiera przykłady fragmentów kodu, w których zastosowano te pakiety.
@@ -100,8 +97,3 @@ W tym przykładzie przedstawiono również nową metodą obsługi *przestarzały
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

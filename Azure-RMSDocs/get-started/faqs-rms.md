@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
-ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 8b1d8a3df125f4d1950e4e657c535f128c6d0b3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -161,6 +157,5 @@ Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowa
 Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

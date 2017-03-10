@@ -14,13 +14,10 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
-
-
+ms.openlocfilehash: 46aba2289f0e3a41cc2fb09db3d5727cd77feb40
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="developing-your-application"></a>Tworzenie aplikacji
 
 W tym przykładzie zostanie utworzona prosta aplikacja konsoli, która współpracuje z usługą Azure Information Protection (AIP).  Proces będzie wymagał wprowadzenia ścieżki dokumentu, który ma zostać objęty ochroną, a następnie objęcia go ochroną za pomocą zasad ad hoc lub szablonu usługi Azure. Aplikacja zastosuje następnie właściwe zasady zgodnie z wprowadzonymi danymi, tworząc dokument zawierający informacje chronione. W ćwiczeniu zostanie użyty przykładowy kod [Azure IP test application](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test), który jest dostępny w witrynie Github.
@@ -232,8 +229,3 @@ Po otrzymaniu i uruchomieniu aplikacji jej dane wyjściowe powinny wyglądać na
 6. Po wykonaniu poprzednich kroków następuje wprowadzenie niektórych metadanych zasad: nazwy zasady, jej opisu, nazwy wyświetlanej wystawcy (dzierżawy usługi Azure AD) ![dane wyjściowe aplikacji — krok 6](../media/develop/app-output-6.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

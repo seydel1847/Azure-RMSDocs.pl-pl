@@ -13,13 +13,10 @@ ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
-
-
+ms.openlocfilehash: c408d7a8f068e2de6616534a58161a86482a2a9c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rms-developers-guide"></a>Przewodnik dewelopera usług RMS
 
 ## <a name="overview"></a>Przegląd ##
@@ -51,8 +48,3 @@ Ta kolekcja przykładów kodu usług RMS i narzędzi wspierających twórców do
 | [Scenariusze użycia w systemie Android](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[Zestaw RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) i nowsze wersje zestawu SDK 4.x|**Przykłady kodu w języku Java** przedstawiające ważne scenariusze programowania, umożliwiające zapoznanie się z zestawem RMS SDK. Przykłady obejmują korzystanie z formatu Microsoft Protected File, niestandardowe formaty plików chronionych oraz niestandardowe kontrolki interfejsu użytkownika.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

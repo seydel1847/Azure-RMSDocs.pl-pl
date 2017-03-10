@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4128188d0fba56a5b61fe16a6f0128ec2dc24c4a
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9300c6d06042a489dd256069da4faa88426df9aa
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-deployment-roadmap"></a>Plan wdrażania usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -192,4 +188,3 @@ Jeśli interesuje Cię automatyczne chronienie plików przy użyciu infrastruktu
 Po rozpoczęciu korzystania z usługi Azure Rights Management pomocny może okazać się program Windows PowerShell, który ułatwia tworzenie skryptów i automatyzację zmian administracyjnych. Aby uzyskać więcej informacji, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

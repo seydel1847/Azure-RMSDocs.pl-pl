@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
-ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: b11367b726a7740d42719b184b6a522e067e205b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -74,5 +70,4 @@ Aby uzyskać więcej informacji na temat wymienionych poleceń cmdlet, zobacz se
 > Moduł AIP zastępuje moduł ochrony usługi RMS programu PowerShell, który został zainstalowany razem z narzędziem RMS Protection Tool. Oba te moduły są niezależne od głównego [modułu programu Windows PowerShell dla usługi Azure Rights Management](administer-powershell.md) i go uzupełniają. Moduł AIP obsługuje zarówno usługę Azure Information Protection, Azure Rights Management (Azure RMS) w ramach usługi Azure Information Protection, jak i usługi Active Directory Rights Management (AD RMS).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

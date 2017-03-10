@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ee9d92752bb2839df859d01e80d3b0ecaeb678f9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 855523925a6f774568cdbd55a7645223d015b013
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="rights-management-sharing-application-administrator-guide"></a>Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
@@ -408,4 +403,3 @@ Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć moż
 Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice między poziomami ochrony (natywny i ogólny), obsługiwane typy plików i rozszerzenia nazw plików oraz sposób zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide-technical.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
