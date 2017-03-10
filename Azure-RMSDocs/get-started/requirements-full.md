@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 94259046ed2eb78bce9d7ce49a4dc3b9c99d55c3
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 11aea973a156556e14d474deae04deb97ee1dc73
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -287,4 +282,3 @@ Aby użyć tego łącznika, należy skonfigurować synchronizację katalogów mi
 Aby uzyskać więcej informacji o sposobie konfigurowania łącznika usługi Rights Management na wymienionych serwerach lokalnych, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
