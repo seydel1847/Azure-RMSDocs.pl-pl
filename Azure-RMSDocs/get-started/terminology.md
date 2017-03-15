@@ -4,7 +4,7 @@ description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usług�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
-
-
+ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -64,15 +61,10 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |łącznik RMS|Zobacz *łącznik usługi Rights Management*.|
 |usług RMS dla użytkowników indywidualnych|Bezpłatna subskrypcja umożliwiająca użytkownikowi korzystanie z usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] w przypadku, gdy organizacja użytkownika nie ma subskrypcji usługi Office 365 ani Azure Active Directory.|
 |Aplikacja do udostępniania usługi RMS|Zobacz *aplikacja do udostępniania usługi Rights Management*.|
+|tryb z samą ochroną|Tryb operacyjny dla klienta usługi Azure Information Protection, gdy nie ma żadnych zasad usługi Azure Information Protection pozwalających na zastosowanie etykiet. W tym trybie etykiety klasyfikacji nie są wyświetlane, ale użytkownicy mogą nadal stosować ochronę usługi Rights Management.|
 |administratorzy|Grupa wysoce zaufanych administratorów mogących odszyfrować pliki, które organizacja objęła ochroną z użyciem usługi zarządzania prawami, i uzyskać do nich dostęp. Zazwyczaj ten poziom dostępu jest wymagany w przypadku prawnych zespołów zbierania elektronicznych materiałów dowodowych oraz w przypadku zespołów przeprowadzających inspekcje.|
 |klucz dzierżawy|Znany również jako klucz certyfikatu licencjodawcy serwera (SLC).<br /><br />Unikatowy dla organizacji klucz zapewniający najwyższy poziom bezpieczeństwa wszystkich kryptograficznych funkcji [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] powiązanych z danym kluczem dzierżawy.|
 |wyłączyć ochronę|Wyłączyć dostępne w ramach usługi zarządzania prawami i mające zastosowanie do plików lub wiadomości e-mail środki kontroli wykorzystujące szyfrowanie, tożsamość i zasady kontroli dostępu w celu zabezpieczania danych.|
 |użyć licencji|Powiązany z dokumentem certyfikat przyznawany użytkownikowi, który otworzy plik lub wiadomość e-mail objęty ochroną z użyciem usługi zarządzania prawami. Certyfikat zawiera prawa użytkownika dla pliku lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości, a także dodatkowe ograniczenia dostępu zdefiniowane w zasadach dokumentu.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

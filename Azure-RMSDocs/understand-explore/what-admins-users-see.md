@@ -4,7 +4,7 @@ description: "Zapoznaj się z kilkoma typowymi przykładami opisującymi, co adm
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/26/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4fb412ff1128842fd1f3c95d39a4a626c67f97a0
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 254386ad7cda2d3e178eb9520e6282abe609c158
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="azure-rms-in-action-what-administrators-and-users-see"></a>Azure RMS w działaniu: co widzą administratorzy i użytkownicy
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -128,7 +123,7 @@ W tym przykładzie administrator konfiguruje zasady, aby zapewnić zgodność or
 
 Zasady są skonfigurowane tak, aby wiadomości e-mail, które zawierają te informacje i są wysyłane poza organizację, były automatycznie obejmowane ochroną praw przy użyciu szablonu usługi RMS, który ogranicza dostęp do tylko pracowników firmy.
 
-W tym miejscu zasada jest skonfigurowana do korzystania z jednego z szablonów domyślnych **VanArsdel, Ltd — Confidential** z pierwszego przykładu. Można również zobaczyć, jak szablony do wyboru uwzględniają wszystkie utworzone przez użytkownika szablony niestandardowe, i zapoznać się z opcją **Nie przesyłaj dalej** specyficzną dla programu Exchange.
+W tym miejscu zasada jest skonfigurowana do korzystania z jednego z szablonów domyślnych **VanArsdel, Ltd — Confidential** z pierwszego przykładu. Można jednak również zobaczyć, że wśród szablonów znajdują się utworzone przez użytkownika szablony niestandardowe i że dostępna jest opcja **Nie przesyłaj dalej**, która dotyczy tylko programu Exchange.
 
 > [!NOTE]
 > Jeśli wyświetlane opcje konfiguracji są nieco inne niż na ilustracji, może być konieczne wcześniejsze wybranie pozycji **Więcej opcji** podczas konfigurowania reguły. Następnie wybierz pozycję **Zmodyfikuj zabezpieczenia wiadomości**  >  **Zastosuj ochronę praw** i wybierz szablon usługi RMS.

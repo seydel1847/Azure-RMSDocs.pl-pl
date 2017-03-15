@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące rejestrowania się w ramach tego bezpłatneg
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>Jak tworzyć konta usługi RMS dla użytkowników indywidualnych
 
 >*Dotyczy: Azure Information Protection*
@@ -87,7 +83,7 @@ W trakcie tego procesu organizacja nie jest obciążana żadnymi opłatami, a dz
 
     -   Rejestrowanie wszystkich działań na potrzeby usługi Rights Management przy użyciu metody stosowanej w organizacji. Jest to bardzo pomocna funkcja, ponieważ umożliwia nie tylko sprawdzanie, które pliki są obejmowane ochroną i kto pomyślnie uzyskuje do nich dostęp, ale także identyfikowanie podejrzanego zachowania nieupoważnionych osób, które próbują uzyskać dostęp do chronionych plików. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Udostępnianie użytkownikom możliwości śledzenia i odwoływania chronionych dokumentów, jeśli te funkcje są obsługiwane przez [subskrypcję usługi Azure RMS](https://technet.microsoft.com/dn858608). Aby uzyskać więcej informacji, zobacz [Śledzenie i odwoływanie plików](../rms-client/sharing-app-track-revoke.md) w [Podręczniku użytkownika aplikacji do udostępniania usług RMS](../rms-client/sharing-app-user-guide.md).
+    -   Udostępnianie użytkownikom możliwości śledzenia i odwoływania chronionych dokumentów, jeśli te funkcje są obsługiwane przez [subskrypcję](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features). Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md) w [podręczniku użytkownika usługi Azure Information Protection](../rms-client/client-user-guide.md).
 
     -   Implementowanie rozwiązania „użyj własnego klucza” (BYOK, bring your own key), aby klucz dzierżawy usługi Azure Rights Management był generowany lokalnie zgodnie z zasadami dotyczącymi infrastruktury IT i bezpiecznie przesyłany do firmy Microsoft za pomocą sprzętowego modułu zabezpieczeń (HSM). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 

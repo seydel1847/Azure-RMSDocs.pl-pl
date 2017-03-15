@@ -4,7 +4,7 @@ description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
-ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f47cad9d613517413ab5f3a61d24a4c8b9f79e15
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
 # <a name="download-and-install-the-azure-information-protection-client"></a>Pobieranie i instalowanie klienta usługi Azure Information Protection
 
 Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby zainstalować tego klienta w celu ochrony dokumentów i wiadomości e-mail oraz stosowania dla nich etykiet, trzeba mieć na komputerze uprawnienia administratora lokalnego.
@@ -28,7 +24,7 @@ Ponadto:
 
 - Klient usługi Azure Information Protection wymaga programu Microsoft .NET Framework w wersji 4.6.2 lub wyższej. W przypadku jego braku Instalator spróbuje pobrać i zainstalować ten wymagany składnik. Jeśli ten wymagany program został zainstalowany w ramach procesu instalacji klienta, należy uruchomić ponownie komputer.
 
-- W przypadku systemu Windows 7 z dodatkiem SP1 klient usługi Azure Information Protection wymaga określonej aktualizacji ([KB 2533623](https://support.microsoft.com/kb/2533623)). Jeśli na komputerze jest wymagana aktualizacja, która jednak nie została jeszcze zainstalowana, instalacja zostanie przeprowadzona, będzie jej jednak towarzyszył komunikat informujący o konieczności zainstalowania danej aktualizacji przed rozpoczęciem korzystania ze wszystkich funkcji klienta usługi Azure Information Protection. 
+- W przypadku systemu Windows 7 z dodatkiem SP1 klient usługi Azure Information Protection wymaga określonej aktualizacji — KB 2533623. Jeśli na komputerze jest wymagana aktualizacja, która jednak nie została jeszcze zainstalowana, instalacja zostanie przeprowadzona, ale będzie jej towarzyszył komunikat informujący o konieczności zainstalowania tej aktualizacji na kliencie usługi Azure Information Protection. Dopóki ta aktualizacja nie zostanie zainstalowana, nie będzie można korzystać ze wszystkich funkcji klienta usługi Azure Information Protection. 
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>Pobieranie i instalowanie klienta usługi Azure Information Protection    
 
@@ -73,4 +69,3 @@ Zapoznaj się z informacjami na temat [instalowania klienta usługi Azure Inform
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-

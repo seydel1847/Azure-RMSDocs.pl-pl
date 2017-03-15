@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/01/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 343ac5f79902379e45efcb6979a115ba4c00d1c5
-ms.openlocfilehash: 503cb76825d0092e8562d39281b1d702edaf6438
-ms.lasthandoff: 03/02/2017
-
-
+ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
 
 >*Dotyczy: Azure Information Protection*
 
-Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. Klient jest uwzględniony w wykazie usługi Microsoft Update (kategoria: **Azure Information Protection**) i zawsze możesz pobrać najnowszą wersję z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. Klient jest uwzględniony w wykazie usługi Microsoft Update (kategoria: **Azure Information Protection**) i zawsze możesz pobrać najnowszą ogólnodostępną wersję oraz wersję kolejną (zapoznawczą) z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w poszczególnych wydaniach. Najnowsza wersja jest wyświetlana na początku listy. Wersje wcześniejsze niż wersja ogólnie dostępna nie są wyświetlane.
+Wersje zapoznawcze nie powinny być wdrażane dla użytkowników końcowych w sieciach produkcyjnych. Umożliwiają one natomiast zapoznanie się z nowymi funkcjami i poprawkami, które zostaną wprowadzone w kolejnej ogólnodostępnej wersji, oraz ich wypróbowanie. 
+
+Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w ogólnodostępnej wersji. Najnowsza wersja jest wyświetlana na początku listy. Informacje dotyczące bieżącej wersji zapoznawczej znajdują się na stronie pobierania.
 
 > [!NOTE]
-> Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, sprawdź najpierw, czy ten problem nie dotyczy najnowszej wersji.
+> Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, sprawdź najpierw, czy ten problem nie dotyczy najnowszej ogólnodostępnej wersji. Jeśli tak jest, sprawdź bieżącą wersję zapoznawczą.
 >  
 > Jeśli problem nie ustąpi, zapoznaj się z informacjami w temacie [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 

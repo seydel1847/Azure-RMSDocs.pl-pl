@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
-ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
 >*Dotyczy: Azure Information Protection, Office 365*
@@ -49,16 +44,16 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     -   W [klasycznym portalu Azure ](http://go.microsoft.com/fwlink/p/?LinkID=275081):
 
-        1.  W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
+        1. W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
 
-        2.  Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
+        2. Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
 
-        3.  Wybierz katalog, aby zarządzać usługą Rights Management.
-
-        4.  Jeśli usługa Rights Management nie została jeszcze aktywowana, należy kliknąć opcję **AKTYWUJ** i potwierdzić wybór.
+        3. Jeśli **STAN USŁUGI RIGHTS MANAGEMENT** zostanie wyświetlony jako **Nieaktywny**, kliknij pozycję **AKTYWUJ** i potwierdź wybór.
 
             > [!NOTE]
-            > Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
+            > Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md)
+            >
+        4. Gdy **STAN USŁUGI RIGHTS MANAGEMENT** zostanie wyświetlony jako **Aktywny**, wybierz nazwę dzierżawy usługi Active Directory.
 
 2.  Tworzenie szablonu:
 

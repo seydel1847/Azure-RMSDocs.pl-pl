@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
-ms.openlocfilehash: d180b0ff4390df45a61b7d50913c267fb3cf35e1
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 13bed15fa5fff020d77a4362e38903c5ca55d2ce
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
@@ -235,7 +230,7 @@ Po pierwsze, w razie potrzeby uwierzytelnienia w usłudze Azure Rights Managemen
 
 Po wyświetleniu monitu wprowadź trzy identyfikatory zgodnie z opisem w sekcji [Wymagania wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction).
 
-Zanim będzie można korzystać z ochrony plików, należy uzyskać listę szablonów usługi Rights Management i określić, który z nich będzie używany wraz z odpowiadającym im numerem identyfikacyjnym. Z raportu można też skopiować identyfikator szablonu:
+Zanim będzie można korzystać z ochrony plików, należy pobrać na komputer szablony usługi Rights Management i określić, który z nich będzie używany wraz z odpowiadającym im numerem identyfikacyjnym. Z raportu można też skopiować identyfikator szablonu:
 
     Get-RMSTemplate
     
@@ -301,6 +296,7 @@ Raport będzie wyglądał podobnie do poniższego:
     ---------                             -------------
     C:\Test.docx                          C:\Test.docx
 
+Należy pamiętać, że jeśli do szablonów usługi Rights Management zostaną wprowadzone zmiany, należy pobrać je ponownie przy użyciu polecenia `Get-RMSTemplate -force`. 
 
 ## <a name="active-directory-rights-management-services"></a>Usługi Active Directory Rights Management
 
@@ -430,4 +426,3 @@ Zobacz następujące artykuły, aby uzyskać dodatkowe informacje potrzebne do o
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

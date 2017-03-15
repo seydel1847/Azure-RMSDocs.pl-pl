@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 12bd5b89cf9957521c7d7b4fb573e4ffcd6c865d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b82132d45f1d671c11355c44104dacf521e18082
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -59,12 +55,6 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
         
         - Windows Server 2016 (x64)
         
-    - Tryb kryptograficzny 2:
-
-        - Twoje serwery i klienci usługi AD RMS muszą działać w trybie kryptograficznym 2, zanim rozpoczniesz migrację do usługi Azure Information Protection.
-        
-        Mimo że bieżący klucz certyfikatu licencjodawcy serwera (SLC) musi używać trybu kryptograficznego 2, poprzednie klucze skonfigurowane dla trybu kryptograficznego 1 są obsługiwane w usłudze Azure Information Protection jako klucze zarchiwizowane. Aby uzyskać więcej informacji na temat trybów kryptograficznych i sposobu przejścia na tryb kryptograficzny 2, zobacz [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
-        
     - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
     
         - Pojedynczy las, pojedynczy klaster RMS
@@ -73,7 +63,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
         
         - Wiele lasów, wiele klastrów RMS
         
-    Uwaga: domyślnie wiele klastrów RMS jest migrowanych do pojedynczej dzierżawy usługi Azure Information Protection. Jeśli potrzebujesz oddzielnych dzierżaw usługi Azure Information Protection, musisz potraktować je jako różne migracje. Klucza z jednego klastra RMS nie można zaimportować do więcej niż jednej dzierżawy usługi Azure Information Protection.
+    Uwaga: domyślnie wiele klastrów AD RMS jest migrowanych do pojedynczej dzierżawy usługi Azure Information Protection. Jeśli potrzebujesz oddzielnych dzierżaw usługi Azure Information Protection, musisz potraktować je jako różne migracje. Klucza z jednego klastra RMS nie można zaimportować do więcej niż jednej dzierżawy usługi Azure Information Protection.
 
 - **Wszystkie wymagania dotyczące uruchamiania usługi Azure Information Protection, w tym dzierżawy usługi Azure Information Protection (nieaktywnej):**
 
@@ -104,7 +94,22 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
     - Ta opcjonalna konfiguracja wymaga usługi Azure Key Vault oraz subskrypcji platformy Azure obsługującej usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/). 
 
 
-Ograniczenia:
+### <a name="cryptographic-mode-considerations"></a>Zagadnienia dotyczące trybu kryptograficznego
+
+Chociaż nie jest to wymaganiem wstępnym w przypadku migracji, zaleca się uruchomienie serwerów i klientów usług AD RMS w trybie kryptograficznym 2 przed rozpoczęciem migracji. 
+
+Aby uzyskać więcej informacji o różnych trybach oraz instrukcje uaktualniania, zobacz temat [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
+
+Jeśli klaster AD RMS jest w trybie kryptograficznym 1 i nie można go uaktualnić, można ponownie utworzyć klucz dzierżawy usługi Azure Information Protection po ukończeniu migracji. Po ponownym utworzeniu klucza powstaje nowy klucz dzierżawy korzystający z trybu kryptograficznego 2. Korzystanie z usługi Azure Rights Management z trybem kryptograficznym 1 jest obsługiwane tylko podczas migracji.
+
+Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
+ 
+- W przypadku systemów Windows Server 2012 R2 oraz Windows 2012: właściwości klastra AD RMS > karta **Ogólne**. 
+
+- W przypadku wszystkich obsługiwanych wersji usługi AD RMS: użyj narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i opcji **administratora usługi AD RMS**, aby wyświetlić tryb kryptograficzny w sekcji **Informacje o usłudze RMS**.
+
+
+### <a name="migration-limitations"></a>Ograniczenia migracji
 
 -   Mimo że proces migracji obsługuje migrację klucza certyfikatu licencjonowania serwera (SLC) do sprzętowego modułu zabezpieczeń (HSM) na potrzeby usługi Azure Information Protection, usługa Exchange Online nie obsługuje obecnie tej konfiguracji dla usługi Rights Management używanej przez usługę Azure Information Protection. Aby można było korzystać z pełnej funkcjonalności IRM z usługą Exchange Online po zakończeniu migracji do usługi Azure Information Protection, klucz dzierżawy usługi Azure Information Protection musi być [zarządzany przez firmę Microsoft](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok). Można również uruchomić usługę IRM z ograniczoną funkcjonalnością w usłudze Exchange Online, gdy dzierżawa usługi Azure Information Protection jest zarządzana przez użytkownika (BYOK). Aby uzyskać więcej informacji o korzystaniu z usługi Exchange Online z usługą Azure Rights Management, zobacz [Krok 6. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online) w tych instrukcjach migracji.
 
@@ -192,11 +197,10 @@ Kroki migracji można podzielić na 4 fazy, które mogą realizować różni adm
 
 - **Krok 9. Ponowne tworzenie klucza dzierżawy usługi Azure Information Protection**
 
-    Ten krok jest opcjonalny, ale też zalecany, jeśli wybrana w kroku 2 topologia klucza dzierżawy usługi Azure Information Protection jest zarządzana przez firmę Microsoft. Ten krok nie ma zastosowania, jeśli wybrana topologia klucza dzierżawy usługi Azure Information Protection jest zarządzana przez klienta (BYOK).
+    Ten krok jest wymagany, jeśli przed migracją nie uruchamiano trybu kryptograficznego 2, i opcjonalny (ale zalecany) w przypadku wszystkich migracji, które pomagają w zabezpieczaniu klucza dzierżawy usługi Azure Information Protection.
 
 
 ## <a name="next-steps"></a>Następne kroki
 Aby rozpocząć migrację, przejdź do [fazy 1 — konfiguracji po stronie serwera](migrate-from-ad-rms-phase1.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

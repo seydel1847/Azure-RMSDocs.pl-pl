@@ -4,7 +4,7 @@ description: "Jeśli usługa Active Directory Rights Management Services (AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d0027fa04824b0c1172ef21da4736895965925d7
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3ac73576f67bee8d63c714352bfa4e75413ab972
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
 >*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -66,15 +62,17 @@ Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabe
 |Aby możliwe było stosowanie funkcji ochrony zawartości, wymagana jest licencja usługi Azure Information Protection lub Azure Rights Management z usługą Office 365. Do korzystania z zawartości chronionej przez usługę Azure Information Protection (dotyczy również użytkowników z innej organizacji) nie jest wymagana żadna licencja.<br /><br />Aby uzyskać więcej informacji, zapoznaj się z [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|Wymaga licencji usługi RMS do ochrony zawartość oraz do korzystania z zawartości chronionej przez usługi AD RMS.<br /><br />Aby uzyskać więcej informacji na temat licencjonowania usług AD RMS, zobacz artykuł [Licencje dostępu klienta i zarządzanie licencjami](https://www.microsoft.com/en-us/Licensing/product-licensing/client-access-license.aspx), aby uzyskać informacje ogólne. Jeśli potrzebujesz informacji szczegółowych, skontaktuj się z partnerem firmy Microsoft lub przedstawicielem firmy Microsoft.|
 
 ## <a name="cryptographic-controls-for-signing-and-encryption"></a>Formanty kryptograficzne podpisywania i szyfrowania
-Usługa Azure Information Protection zawsze używa szyfrowania RSA 2048 dla wszystkich operacji szyfrowania kluczem publicznym i algorytmu SHA 256 w przypadku operacji podpisywania. Porównując: usługi AD RMS obsługują szyfrowanie RSA 1024 i RSA 2048 oraz algorytm SHA 1 lub SHA 256 w przypadku operacji podpisywania.
+Usługa Azure Information Protection domyślnie używa szyfrowania RSA 2048 dla wszystkich operacji szyfrowania kluczem publicznym i algorytmu SHA 256 w przypadku operacji podpisywania. Porównując: usługi AD RMS obsługują szyfrowanie RSA 1024 i RSA 2048 oraz algorytm SHA 1 lub SHA 256 w przypadku operacji podpisywania.
 
 Usługi Azure Information Protection i AD RMS używają szyfrowania AES 128 w przypadku szyfrowania symetrycznego.
 
-Usługa Azure Information Protection jest zgodna z trybem FIPS 140-2, jeśli klucz dzierżawy jest tworzony i zarządzany przez firmę Microsoft (opcja domyślna) lub jeśli zarządzasz własnym kluczem dzierżawy (opcja znana jako BYOK). Aby uzyskać więcej informacji na temat zarządzania dzierżawą, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
+Usługa Azure Information Protection jest zgodna z FIPS 140-2, gdy rozmiar klucza dzierżawy wynosi 2048 bitów i jest to ustawienie domyślne po aktywowaniu usługi Azure Rights Management. 
+
+Aby uzyskać więcej informacji na temat formantów kryptograficznych, zobacz temat [Formanty kryptograficzne używane przez usługę Azure RMS: algorytmy i długości kluczy](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
+
 
 ## <a name="next-steps"></a>Następne kroki
 Jeśli chcesz przeprowadzić migrację z usługi AD RMS do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

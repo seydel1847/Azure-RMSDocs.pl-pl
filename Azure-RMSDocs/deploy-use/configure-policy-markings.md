@@ -4,27 +4,25 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f1ac1ed3aada5d332764db962794d8d6b5428bd7
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny:
 
-Oznaczenia wizualne są stosowane w dokumentach Word, Excel i PowerPoint po zastosowaniu etykiety i zapisaniu dokumentu. W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomość e-mail jest wysyłana.
+Oznaczenia wizualne są stosowane w dokumentach Word, Excel i PowerPoint po zastosowaniu etykiety i zapisaniu dokumentu w tych aplikacjach pakietu Office. W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomość e-mail jest wysyłana z programu Outlook.
+
+Oznaczenia wizualne nie są używane w dokumentach po zastosowaniu etykiety za pomocą Eksploratora plików oraz kliknięciu prawym przyciskiem myszy lub po sklasyfikowaniu dokumentu przy użyciu programu PowerShell.
 
 Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
 
@@ -81,5 +79,4 @@ Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classificatio
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

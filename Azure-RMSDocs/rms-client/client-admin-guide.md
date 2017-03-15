@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: adb444f7777304ed40b5b5f988e4efb73268ae14
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
@@ -81,7 +76,9 @@ Ponadto:
 
 - Moduł PowerShell wymaga środowiska Windows PowerShell w wersji 4.0, co może powodować konieczność zainstalowania go w starszych systemach operacyjnych. Aby uzyskać więcej informacji, zobacz artykuł [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx) (Jak zainstalować program Windows PowerShell 4.0). Instalator nie sprawdza ani nie instaluje tego wymagania wstępnego. Aby sprawdzić, która wersja programu Windows PowerShell jest używana, wpisz polecenie **$PSVersionTable** w sesji programu PowerShell.
 
-- Komputery z systemem Windows 7 z dodatkiem Service Pack1 wymagają aktualizacji [KB 2533623](https://support.microsoft.com/en-us/kb/2533623), którą można zainstalować po zainstalowaniu klienta. Jeśli ta aktualizacja jest wymagana i nie została wcześniej zainstalowana, zostanie wyświetlony monit o jej zainstalowanie.
+- Komputery z systemem Windows 7 z dodatkiem Service Pack 1 wymagają aktualizacji KB 2533623. Aby uzyskać więcej informacji o tej aktualizacji, zobacz temat [Microsoft Security Advisory: Załadowanie niezabezpieczonej biblioteki umożliwia zdalne wykonywanie kodu](https://support.microsoft.com/en-us/kb/2533623). Tę aktualizację można zainstalować bezpośrednio lub może ona zostać zastąpiona przez inną aktualizację, która zainstaluje ją automatycznie.
+    
+    Jeśli ta aktualizacja jest wymagana i nie została zainstalowana, instalator klienta wyświetla ostrzeżenie z informacją, że należy ją zainstalować. Tę aktualizację można zainstalować po zainstalowaniu klienta, ale niektóre czynności zostaną zablokowane i ponownie pojawi się komunikat.  
 
 > [!NOTE]
 > Instalacja wymaga lokalnych uprawnień administracyjnych.
@@ -89,8 +86,10 @@ Ponadto:
 Klienta usługi Azure Information Protection można zainstalować nie tylko w sposób opisany w poniższych instrukcjach. Znajduje się on również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu. 
 
 1. Pobierz klienta usługi Azure Information Protection z [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
+    
+    Jeśli dostępna jest wersja zapoznawcza, zachowaj ją tylko do celów testowych. Nie jest ona przeznaczona dla użytkowników końcowych w środowisku produkcyjnym. 
 
-2. W przypadku instalacji domyślnej wystarczy uruchomić plik wykonywalny **AzInfoProtection.exe**. Jednak aby wyświetlić opcje instalacji, należy najpierw uruchomić plik wykonywalny z parametrem **/help**: `AzInfoProtection.exe /help`
+2. W przypadku instalacji domyślnej wystarczy uruchomić plik wykonywalny, np. **AzInfoProtection.exe**. Jednak aby wyświetlić opcje instalacji, należy najpierw uruchomić plik wykonywalny z parametrem **/help**: `AzInfoProtection.exe /help`
 
    Przykład instalacji klienta w trybie dyskretnym: `AzInfoProtection.exe /quiet`
    
@@ -196,4 +195,3 @@ Po zainstalowaniu klienta usługi Azure Information Protection zapoznaj się z p
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

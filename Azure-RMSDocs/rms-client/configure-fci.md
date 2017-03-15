@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące używania klienta usługi Rights Management 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: ff8e38385e8e28991ee1da6c69b0ded244f38177
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
 >*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
@@ -44,7 +40,7 @@ Wymagania wstępne dotyczące tych instrukcji:
 
     -   Zidentyfikowano lokalny folder zawierający pliki, które mają być chronione przez usługę Rights Management. Na przykład C:\FileShare.
 
-    -   Zainstalowano moduł AzureInformationProtection i skonfigurowano wymagania wstępne dotyczące usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](client-admin-guide-powershell.md). Do usługi Azure Rights Management należy dołączyć w szczególności następujące wartości, korzystając z nazwy głównej usługi: **BposTenantId**, **AppPrincipalId**, i **Symmetric key**.
+    -   Zainstalowano moduł AzureInformationProtection i skonfigurowano wymagania wstępne dotyczące usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](client-admin-guide-powershell.md). Do usługi Azure Rights Management należy dołączyć w szczególności następujące wartości, korzystając z nazwy głównej usługi: **BposTenantId**, **AppPrincipalId**, i **Symmetric key**. 
 
     -   Aby zmienić domyślny poziom ochrony (natywnej lub ogólnej) dla określonych rozszerzeń nazw plików, należy dokonać edycji rejestru zgodnie z opisem w sekcji [Zmiana domyślnego poziomu ochrony plików](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) w podręczniku administratora.
 
@@ -52,7 +48,7 @@ Wymagania wstępne dotyczące tych instrukcji:
 
 -   Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tej konfiguracji konta, zobacz [Przygotowywanie do wdrożenia usługi Azure Rights Management](../plan-design/prepare.md).
 
--   Zidentyfikowano szablon usługi Rights Management, który ma zostać użyty i który będzie chronić pliki. Upewnij się, że znasz identyfikator tego szablonu, używając polecenia cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate).
+-   Na serwer plików zostały pobrane szablony usługi Rights Management oraz został rozpoznany identyfikator szablonu, który będzie chronić pliki. W tym celu użyj polecenia cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). W tym scenariuszu nie są obsługiwane szablony przypisane do działów, więc należy użyć szablonu, który nie został skonfigurowany dla zakresu. Ewentualnie konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Instrukcje dotyczące konfiguracji infrastruktury klasyfikacji plików (FCI) Menedżera zasobów serwera plików na potrzeby ochrony z użyciem usługi Azure Rights Management
 Wykonaj te instrukcje, aby automatycznie chronić wszystkie pliki w folderze przy użyciu skryptu programu PowerShell w ramach zadania niestandardowego. Wykonaj te procedury w następującej kolejności:
@@ -70,6 +66,8 @@ Wykonaj te instrukcje, aby automatycznie chronić wszystkie pliki w folderze prz
 6.  Przetestuj konfigurację, ręcznie uruchamiając regułę i zadanie.
 
 Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasyfikowane z niestandardowymi właściwościami usługi RMS i będą chronione za pomocą usługi Rights Management. Na potrzeby bardziej złożonej konfiguracji selektywnej ochrony plików można utworzyć inną właściwość i regułę klasyfikacji zadania zarządzania plikami chroniącego tylko wybrane pliki, a następnie użyć jej.
+
+Należy pamiętać, że po wprowadzeniu zmian w szablonie usługi Rights Management używanym do infrastruktury FCI należy uruchomić polecenie `Get-RMSTemplate -Force` na komputerze serwera plików w celu pobrania zaktualizowanego szablonu. Zaktualizowany szablon zostanie użyty do ochrony nowych plików. Jeśli zmiany wprowadzone w szablonie są na tyle istotne, że należy ponownie włączyć ochronę plików na serwerze plików, można to zrobić, uruchamiając interaktywnie polecenie cmdlet Protect-RMSFile cmdlet przy użyciu konta, które ma prawa do eksportu plików lub pełnej kontroli. Należy także uruchomić polecenie `Get-RMSTemplate -Force` na tym serwerze plików w przypadku publikowania nowego szablonu, którego chcesz używać dla infrastruktury FCI.
 
 ### <a name="save-the-windows-powershell-script"></a>Zapisz skrypt programu Windows PowerShell.
 
@@ -288,4 +286,3 @@ Aby to zrobić, użyj jednej z wbudowanych właściwości klasyfikacji (na przyk
 Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzysta z tego samego skryptu, ale np. z innego szablonu, i skonfigurować warunek dla właśnie skonfigurowanej właściwości klasyfikacji. Na przykład zamiast warunku, który został wcześniej skonfigurowany (właściwość **RMS**, **Równe**, **Tak**), wybierz właściwość **Dane osobowe** z ustawieniem **Operator** o wartości **Równe** i ustawieniem **Wartość** o wartości **Wysokie**.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
