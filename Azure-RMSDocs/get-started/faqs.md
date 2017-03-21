@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebdbb045a60e30a78b8a5536415302e912995791
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: c15d4ea3309bc58cb3b2c34481f3c4588e2f2433
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
@@ -32,6 +32,14 @@ Usługa Azure Information Protection udostępnia funkcje klasyfikacji, etykietow
 Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection. 
 
 Jeśli masz subskrypcję usługi Office 365 obejmującą usługę Rights Management, pobierz [arkusz danych dotyczący licencjonowania usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf) ze strony **Funkcje**.
+
+## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Czy klient usługi Azure Information Protection służy wyłącznie do obsługi subskrypcji, które obejmują klasyfikowanie i etykietowanie?
+
+Nie. Choć większość prezentacji i pokazów poświęconych klientowi usługi Azure Information Protection pokazuje obsługę klasyfikacji i etykietowania, to z usługi tej można korzystać również w odniesieniu do subskrypcji obejmujących wyłącznie ochronę z użyciem usługi Azure Rights Management.
+
+Po zainstalowaniu klienta usługi Azure Information Protection dla systemu Windows bez zasad usługi Azure Information Protection klient automatycznie działa w [trybie tylko do ochrony](../rms-client/client-protection-only-mode.md). W tym trybie użytkownicy mogą łatwo stosować szablony usługi Rights Management oraz uprawnienia niestandardowe. W przypadku wykupienia w późniejszym czasie subskrypcji, która obejmuje funkcje klasyfikacji i etykietowania, klient automatycznie przełączy się do trybu standardowego po pobraniu zasad usługi Azure Information Protection.
+
+Zalecamy, aby użytkownicy korzystający z aplikacji RMS sharing dla systemu Windows zrezygnowali z tego rozwiązania na rzecz usługi Azure Information Protection. Obsługa aplikacji RMS sharing będzie dostępna wyłącznie do 31 stycznia 2018 r. Zachęcamy do zapoznania się z tematem [Zadania, które były wykonywane w aplikacji RMS sharing](../rms-client/upgrade-client-app.md), który zawiera informacje przydatne w okresie przejściowym.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Czy usługa Azure Information Protection obsługuje scenariusze lokalne i hybrydowe?
 

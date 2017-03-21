@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8b1d8a3df125f4d1950e4e657c535f128c6d0b3a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 0f399afe398f5e69cebf6df5564b2ceb7d84e607
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
@@ -47,7 +47,7 @@ Aby uzyskać więcej informacji o funkcji HYOK i upewnić się, że dobrze zrozu
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>Gdzie można znaleźć informacje o rozwiązaniach innych firm, które integrują się z usługą Azure RMS?
 
-Wielu dostawców oprogramowania już ma lub wdraża rozwiązania zintegrowane z usługą Azure Rights Management. Liczba takich rozwiązań rośnie bardzo szybko. Dla użytkowników może być bardzo przydatne zapoznanie się z [blogiem dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) i śledzenie najnowszych aktualizacji kanału [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli jednak masz konkretne pytanie, wyślij wiadomość e-mail do zespołu usługi Information Protection na adres askipteam@microsoft.com.
+Wielu dostawców oprogramowania już ma lub wdraża rozwiązania zintegrowane z usługą Azure Rights Management. Liczba takich rozwiązań rośnie bardzo szybko. Warto zapoznać się z listą [rozwiązań z obsługą usługi RMS](requirements-applications.md#rms-enlightened-solutions) i śledzić najnowsze wpisy na kanale [Dana Plastiny @TheRMSGuy](https://twitter.com/TheRMSGuy) w serwisie Twitter. Jeśli jednak masz konkretne pytanie, wyślij wiadomość e-mail do zespołu usługi Information Protection na adres askipteam@microsoft.com.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>Czy istnieje pakiet zarządzania lub podobny mechanizm monitorowania dla łącznika usługi RMS?
 
@@ -101,8 +101,12 @@ Więcej informacji na temat szablonów niestandardowych można znaleźć w temac
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Czy usługa Azure RMS współpracuje z grupami dynamicznymi w usłudze Azure AD?
 Funkcja Azure AD Premium pozwala skonfigurować członkostwo dynamiczne w grupach, określając [reguły oparte na atrybucie](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Typ grupy zabezpieczeń utworzonej w usłudze Azure AD obsługuje członkostwo dynamiczne, ale nie obsługuje adresu e-mail i dlatego nie może być używany z usługą Azure Rights Management. Teraz można jednak utworzyć w usłudze Azure AD nowy typ grupy, który obsługuje członkostwo dynamiczne, a jednocześnie ma włączoną obsługę poczty. Podczas dodawania nowej grupy w klasycznym portalu Azure można wybrać **TYP GRUPY** **usługi Office 365 Preview**. Ponieważ jest to grupa z włączoną obsługą poczty e-mail, można używać jej wraz z usługą Azure Rights Management.
 
+## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>Jak wysłać chronioną wiadomość e-mail na konto Gmail lub Hotmail?
+
+Niektórzy użytkownicy mogli natrafić na odniesienia do procesu wysyłania chronionych wiadomości e-mail na konta Gmai lub Hotmail lub na jego prezentacje. Ta funkcja nadal stanowi element prywatnej wersji zapoznawczej, w związku z czym dalsze informacje na jej temat nie będą dostępne do czasu udostępnienia użytkownikom omawianej wersji jako wersji ogólnodostępnej.
+
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
-Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obecnie obsługują wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą w sekcji [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).
+Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obsługują obecnie wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą zawierającą informacje na temat [aplikacji z obsługą usług RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
 
 Usługa Azure Rights Management obsługuje wszystkie typy plików. W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz niektórych typów plików innych aplikacji usługa Azure Rights Management zapewnia natywną ochronę obejmującą zarówno szyfrowanie, jak i wymuszanie praw (uprawnień). W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia hermetyzację plików oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest uprawniony do otwarcia pliku.
 

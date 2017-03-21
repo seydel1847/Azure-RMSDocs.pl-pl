@@ -1,11 +1,11 @@
 ---
-title: Konfigurowanie aplikacji do uwierzytelniania ADAL | Dokumentacja firmy Microsoft
+title: "Konfigurowanie aplikacji do uwierzytelniania ADAL — AIP"
 description: "Czynności służące do konfigurowania aplikacji usług Azure Information Protection na potrzeby uwierzytelniania na podstawie biblioteki Azure ADAL"
 keywords: uwierzytelnianie, RMS, ADAL, Information Protection,
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 880f022e53aa6c12b26d2d64782521de88d29399
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 27674aac7962c7a2f79fda8ccd6f90c366574b9b
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>Konfigurowanie aplikacji do uwierzytelniania ADAL
@@ -67,7 +67,7 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 ![Określ nazwę aplikacji](../media/TellUsInput.png)
 
 - Dodaj identyfikator URI przekierowania i wybierz opcję Dalej.
-  Identyfikator URI przekierowania musi być prawidłowym identyfikatorem URI unikatowym dla danego katalogu. Można na przykład użyć ciągu `com.mycompany.myapplication://authorize`.
+  Identyfikator URI przekierowania musi być prawidłowym identyfikatorem URI unikatowym dla danego katalogu. Można na przykład użyć ciągu `https://contoso.azurewebsites.net/.auth/login/done`.
 
 ![Dodaj identyfikator URI przekierowania](../media/RedirectURI.png)
 

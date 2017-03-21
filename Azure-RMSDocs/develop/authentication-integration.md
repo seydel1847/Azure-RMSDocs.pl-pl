@@ -1,21 +1,21 @@
 ---
-title: "Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS | Azure RMS"
+title: "Jak zarejestrować aplikację w usłudze Azure AD — AIP"
 description: "W tym artykule opisano podstawy uwierzytelniania użytkowników w aplikacji z włączoną obsługą usługi RMS"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 0c06a498c62b61c106572e049f8ef40fdb07485f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a98b4eb3bd7705faf268a544f4efa7ba41712816
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
@@ -28,8 +28,8 @@ Uwierzytelnianie użytkownika to kluczowy etap nawiązywania komunikacji między
 ## <a name="registration-via-azure-portal"></a>Rejestracja za pośrednictwem Portalu Azure
 Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania rejestracji aplikacji za pomocą Portalu Azure [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md). Skopiuj i zapisz **identyfikator klienta** oraz **identyfikator URI przekierowania** z tego procesu do użycia w przyszłości.
 
-## <a name="complete-your-rights-managagment-license-agreement-rmla"></a>Uzupełnij swoją umowę RMLA (Rights Managagment License Agreement)
-Przed wdrożeniem aplikacji musisz uzupełnić umowę RMLA zawartą z zespołem Microsoft Rights Management. Aby uzyskać szczegółowe informacje, zobacz sekcję pierwszą w temacie [Wdrażanie w środowisku produkcyjnym — Żądanie produkcyjnej umowy licencyjnej](deploying-your-application.md).
+## <a name="complete-your-information-protection-integration-agreement-ipia"></a>Uzupełnij umowę integracyjną usługi Information Protection (IPIA, Information Protection Integration Agreement)
+Przed wdrożeniem aplikacji musisz uzupełnić umowę IPIA zawartą z zespołem Microsoft Information Protection. Aby uzyskać szczegółowe informacje, zapoznaj się z pierwszą sekcją w temacie, [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md).
 
 ## <a name="implement-user-authentication-for-your-app"></a>Implementowanie uwierzytelniania użytkowników w aplikacji
 Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw RMS SDK 4.2 korzysta z Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
