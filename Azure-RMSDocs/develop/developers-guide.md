@@ -1,10 +1,10 @@
 ---
-title: "Przewodnik dewelopera usługi Azure Information Protection | Dokumentacja firmy Microsoft"
+title: "Przewodnik dewelopera — AIP"
 description: "Deweloperzy mogą korzystać z usługi Azure Information Protection do ochrony plików każdego typu oraz zarządzania nimi"
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: ea8a0f60997ca5d569f10969abfb9b010f0918da
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
+ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
@@ -79,9 +79,9 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 
 - [Włączanie śledzenia i odwoływania dokumentów (usługa)](tracking-content.md)
 - [Jak wdrożyć klienta](../rms-client/client-deployment-notes.md)
+- [Sposoby wdrażania aplikacji usługi w ramach innej dzierżawy] (how-to-deploy-app.md)
 - [Instalowanie i konfigurowanie serwera usługi RMS (usługa)](how-to-install-and-configure-an-rms-server.md)
 - [Korzystanie ze śledzenia dokumentów (użytkownik)](how-to-use-document-tracking.md)
-
 
 ### <a name="security-and-authentication"></a>Tożsamość i uwierzytelnianie
 

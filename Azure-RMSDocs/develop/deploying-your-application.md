@@ -1,21 +1,21 @@
 ---
-title: "Wdrażanie aplikacji"
+title: "Wdrażanie aplikacji — AIP"
 description: "Ten temat zawiera opis procesu wdrażania aplikacji i przeprowadza przez niego"
 keywords: "wdrażanie, RMS, AIP"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: aaff9ff7cda961ab0d61115f84197e2c5c7ef8b0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a78520f3cdf316c7264cb0ca88460858b5a2bf07
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
@@ -96,14 +96,13 @@ W przypadku braku klienta podaj komunikat o błędzie, z którego użytkownik do
 
 W przypadku obecności klienta przejdź do instalacji aplikacji.
 
-## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>Włączanie usług Azure Information Protection/Rights Management w aplikacji
+## <a name="enabling-azure-information-protection-services-with-your-application"></a>Włączanie usług Azure Information Protection w aplikacji
 
 > [!NOTE]
 > W przypadku migracji do nowego modelu ADAL w celu uwierzytelniania nie trzeba instalować usługi **SIA**. Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usług RMS](adal-auth.md).
 > Możliwe jest również **certyfikowanie aplikacji dla systemu Windows 10** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft oferuje następujące możliwości: korzystanie z uwierzytelniania wieloskładnikowego i instalowanie klienta RMS Client 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
 
-
-Aby użytkownik końcowy mógł korzystać z usług Information Protection/Rights Management, należy wdrożyć *Asystenta logowania w witrynie Online Services (SIA, Online Services Sign-in Assistant)*. Jako deweloper aplikacji nie wiesz, czy użytkownik końcowy będzie korzystał z ochrony informacji za pośrednictwem usług RMS (lokalnie) czy Azure Information Protection.
+Aby użytkownik końcowy mógł korzystać z usług Information Protection, należy wdrożyć *Asystenta logowania w witrynie Online Services (SIA, Online Services Sign-in Assistant)*. Jako deweloper aplikacji nie wiesz, czy użytkownik końcowy będzie korzystał z ochrony informacji za pośrednictwem usług RMS (lokalnie) czy Azure Information Protection.
 
 
 > [!IMPORTANT]
@@ -113,6 +112,8 @@ Aby użytkownik końcowy mógł korzystać z usług Information Protection/Right
 -   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
 -   Upewnij się, że wdrożenie aplikacji z obsługą praw zawiera kontrolę warunków wstępnych dla tego wyboru usługi.
 -   Aby uzyskać informacje o własnym testowaniu i wykorzystaniu usługi online przez użytkownika końcowego, zobacz temat TechNet [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx).
+
+Należy również użyć tego przewodnika, aby skonfigurować aplikację — [Konfigurowanie aplikacji usługi programu na potrzeby logowania do usługi Azure Active Directory](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
 
 Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z usługi RMS na potrzeby usług Azure Rights Management, zobacz temat [Umożliwianie współpracy aplikacji z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 

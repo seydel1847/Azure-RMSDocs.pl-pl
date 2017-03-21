@@ -4,7 +4,7 @@ description: "W przypadku korzystania z usługi Azure Rights Management szablony
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3f80781c9e998e3d7d0d515ed1b0b13b9656ab4
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: b1ff1345dd2b3cff8ccb5ff7b454e209403b1190
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="refreshing-templates-for-users"></a>Odświeżanie szablonów dla użytkowników
@@ -26,9 +26,12 @@ W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure
 |--------------------------|---------------------------------------------|
 |Exchange Online|W celu odświeżenia szablonów wymagana jest konfiguracja ręczna.<br /><br />Aby uzyskać informacje na temat kroków konfiguracyjnych, zobacz następującą sekcję [Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
 |Office 365|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
-|Pakiety Office 2016 i Office 2013<br /><br />Aplikacja RMS sharing dla systemu operacyjnego Windows|Automatycznie odświeżane — według harmonogramu:<br /><br />W przypadku nowszych wersji pakietu Office: odświeżanie odbywa się domyślnie co 7 dni.<br /><br />W przypadku aplikacji RMS sharing dla systemu Windows: począwszy od wersji 1.0.1784.0, domyślne ustawienie uwzględnia codzienne odświeżanie. W przypadku wcześniejszych wersji odświeżanie odbywa się domyślnie co 7 dni.<br /><br />Aby wymusić odświeżenie w terminie wcześniejszym niż ujęty w harmonogramie, zobacz następującą sekcję: [Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
-|Pakiet Office 2010|Odświeżanie może odbywać się podczas logowania się użytkowników.<br /><br />Aby wymusić odświeżenie, poproś użytkowników o wylogowanie się i ponowne zalogowanie lub wymuś je. Możesz także zapoznać się z sekcją [Tylko pakiet Office 2010: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template).|
-W przypadku urządzeń przenośnych, w których jest wykorzystywana aplikacja udostępniania usługi RMS, szablony są automatycznie pobierane (w razie potrzeby także odświeżane) bez konieczności dodatkowej konfiguracji.
+|Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto, jako że klient usługi Azure Information Protection jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
+|Pakiety Office 2016 i Office 2013<br /><br />Aplikacja RMS sharing dla systemu operacyjnego Windows|Automatycznie odświeżane — według harmonogramu:<br /><br />– W przypadku nowszych wersji pakietu Office: odświeżanie odbywa się domyślnie co 7 dni.<br /><br />– W przypadku aplikacji RMS sharing dla systemu Windows: od wersji 1.0.1784.0 domyślne ustawienie uwzględnia codzienne odświeżanie. W przypadku wcześniejszych wersji odświeżanie odbywa się domyślnie co 7 dni.<br /><br />Aby wymusić odświeżenie w terminie wcześniejszym niż ujęty w harmonogramie, zobacz następującą sekcję: [Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
+|Pakiet Office 2010|Automatyczne odświeżanie, gdy użytkownik wyloguje się z systemu Windows, zaloguje się ponownie i odczeka maksymalnie 1 godzinę.|
+|Office 2016 dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
+|Aplikacja RMS sharing dla urządzeń przenośnych|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
+
 
 ## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych
 Jeśli została już skonfigurowana usługa Information Rights Management (IRM) dla usługi Exchange Online, szablony niestandardowe nie będą pobierane dla użytkowników, dopóki nie zostaną wprowadzone następujące zmiany w środowisku Windows PowerShell usługi Exchange Online.
@@ -146,38 +149,6 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 
 3.  Ponownie uruchom aplikacje pakietu Office i wystąpienia Eksploratora plików.
 
-## <a name="office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template"></a>Tylko pakiet Office 2010: Wymuszenie odświeżenia zmienionego szablonu niestandardowego
-Edytując rejestr na komputerach z pakietem Office 2010, można ustawić wartość w taki sposób, że zmienione szablony zostaną odświeżone na komputerach bez konieczności wylogowania się i ponownego zalogowania się przez użytkowników. Można też wymusić natychmiastowe odświeżanie przez usunięcie istniejących danych z wartości rejestru.
-
-> [!WARNING]
-> Używanie Edytora rejestru w niewłaściwy sposób może spowodować poważne problemy, w wyniku których może być konieczna ponowna instalacja systemu operacyjnego. Firma Microsoft nie może zagwarantować użytkownikowi, że uda się rozwiązać problemy wynikające z niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.
-
-### <a name="to-change-the-update-frequency"></a>Zmiana częstotliwości aktualizacji
-
-1.  Korzystając z edytora rejestru, utwórz nową wartość o nazwie **UpdateFrequency** i zdefiniuj dla danych wartość całkowitą, która będzie określać wyrażaną w dniach częstotliwość pobierania wszelkich zmian do pobranego szablonu. Skorzystaj z poniższej tabeli, aby zlokalizować ścieżkę rejestru w celu utworzenia wspomnianej nowej wartości rejestru.
-
-    **Ścieżka rejestru:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
-
-    **Typ:** REG_DWORD
-
-    **Wartość:** UpdateFrequency
-
-2.  Aby wymusić natychmiastowe odświeżenie szablonów, przejdź do następnej procedury. Jeśli nie jest to konieczne, uruchom ponownie aplikacje pakietu Office.
-
-### <a name="to-force-an-immediate-refresh"></a>Wymuszenie natychmiastowego odświeżenia
-
-1.  Korzystając z edytora rejestru, usuń dane dla wartości **LastUpdatedTime**. Przykładowa wartość to **2015-04-20T15:52** — w tym przypadku należy usunąć ciąg 2015-04-20T15:52, aby nie były wyświetlane żadne dane. Skorzystaj z poniższej tabeli, aby zlokalizować ścieżkę rejestru w celu usunięcia danych dla tej wartości rejestru.
-
-    **Ścieżka rejestru:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
-
-    **Typ:** REG_SZ
-
-    **Wartość:** lastUpdatedTime
-
-
-2.  Usuń następujący folder i wszystkie zawarte w nim pliki: **%localappdata%\Microsoft\MSIPC\Templates**
-
-3.  Uruchom ponowne aplikacje pakietu Office.
 
 ## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)

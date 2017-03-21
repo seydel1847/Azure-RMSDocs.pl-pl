@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8247b75a5e5835b1e091a4b9e380ca33487e60f1
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fe75945793d28ed78b46f6b9a421bd7aa9ae3dfd
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
@@ -34,6 +34,8 @@ Skorzystaj z poniższych informacji, aby dowiedzieć się, jakie typy plików s�
 
 Sama klasyfikacja jest obsługiwana dla następujących typów plików. Inne typy plików obsługują klasyfikację, gdy jednocześnie są chronione.
 
+- **Adobe Portable Document Format**: .pdf
+
 - **Microsoft Visio**: .vsdx, .vsdm, .vssx, .vssm, .vsd, .vdw, .vst
 
 - **Microsoft Project**: .mpp, .mpt
@@ -41,7 +43,6 @@ Sama klasyfikacja jest obsługiwana dla następujących typów plików. Inne typ
 - **Microsoft Publisher**: .pub
 
 - **Microsoft Office 97, Office 2010, Office 2003**: .xls, .xlt, .doc, .dot, .ppt, .pps, .pot
-
 - **Microsoft XPS**: .xps .oxps
 
 - **Obrazy**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi.png, .tif, .tiff
@@ -152,7 +153,7 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 - **Wykluczone typy plików**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msp, .msi, .pdb, .jar
 
-- **Wykluczone foldery **: 
+- **Wykluczone foldery**: 
     - Windows
     - Program Files (\Program Files i \Program Files (x86))
     - \ProgramData 

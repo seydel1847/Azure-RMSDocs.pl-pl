@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
@@ -30,6 +30,33 @@ Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w
 > Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, sprawdź najpierw, czy ten problem nie dotyczy najnowszej ogólnodostępnej wersji. Jeśli tak jest, sprawdź bieżącą wersję zapoznawczą.
 >  
 > Jeśli problem nie ustąpi, zapoznaj się z informacjami w temacie [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="version-14210"></a>Wersja 1.4.21.0
+
+**Wydana**: 2017-03-15
+
+**Zmiany wymagań:**
+
+W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Microsoft .NET Framework w wersji 4.6.2 dla pełnego klienta. Chociaż nie jest to zalecane, można pominąć to wymaganie wstępne, korzystając z parametru instalacji niestandardowej **DowngradeDotNetRequirement**. Aby uzyskać więcej informacji, zapoznaj się z [sekcją podręcznika administratora poświęconą instalacji klienta](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users).
+
+
+**Poprawki**:
+
+- Obsługa mapowanych napędów w celu umożliwienia ochrony i klasyfikowania plików.
+
+- Obsługa dużych plików (>&250; MB) w przeglądarce. 
+
+- Po skonfigurowaniu funkcji HYOK program Outlook może stosować etykiety skonfigurowane pod kątem użycia szablonów usługi Azure Rights Management lub szablonów usług AD RMS.
+
+
+**Nowe funkcje**:
+
+- Możliwość ustawienia uprawnień niestandardowych z poziomu aplikacji pakietu Office pozwala ustawić ochronę wyłącznie dla administratora, dla grup zewnętrznych lub dla wszystkich użytkowników z innej organizacji. Aby uzyskać więcej informacji, zapoznaj się z sekcją [Ustawienie uprawnień niestandardowych dla dokumentu](client-classify-protect.md#set-custom-permissions-for-a-document) podręcznika użytkownika.
+    
+- Pliki PDF obsługują teraz etykiety, które mają zastosowanie tylko do klasyfikacji.
+
+- W odniesieniu do plików PDF w przeglądarce dodano opcje wyszukiwania, powiększania i pomniejszania oraz obrotu. Aby użyć tych opcji, kliknij plik wyświetlany w przeglądarce prawym przyciskiem myszy.
+
 
 ## <a name="version-131552"></a>Wersja 1.3.155.2
 
@@ -75,7 +102,7 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 
 - Testy diagnostyczne i opcja resetowania, które użytkownik może uruchomić z aplikacji pakietu Office po zainstalowaniu klienta usługi Azure Information Protection: na karcie **Narzędzia główne** w grupie **Ochrona** kliknij pozycję **Chroń**, kliknij pozycję **Pomoc i opinie**, a następnie kliknij pozycję **Uruchom diagnostykę**. 
 
-    Aby uzyskać więcej informacji na temat tej opcji, zobacz sekcję [Aby zweryfikować instalację, stan połączenia albo zgłosić problem](client-admin-guide.md#additional-checks-to-verify-installation-connection-status-or-send-feedback) w dokumentacji instalacji klienta.
+    Aby uzyskać więcej informacji na temat tej opcji, zapoznaj się z sekcją [Dodatkowe czynności kontrolne i rozwiązywanie problemów](client-admin-guide.md#additional-checks-and-troubleshooting) podręcznika administratora.
 
 ## <a name="version-11230"></a>Wersja 1.1.23.0
 

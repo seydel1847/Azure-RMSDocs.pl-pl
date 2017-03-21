@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6d727cdbfba193a80742441ae1a372d2e8fbd699
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
@@ -28,9 +28,9 @@ Pliki można jednak klasyfikować i chronić także za pomocą **Eksploratora pl
 
 Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład można dołączyć plik do wiadomości e-mail lub wysłać zaproszenie z witryny usługi SharePoint.
 
-W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Alternatywnie można użyć [Eksploratora plików, aby ustawić uprawnienia niestandardowe](#using-file-explorer-to-classify-and-protect-files) dla pliku przed jego udostępnieniem. 
+W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Możesz także użyć [aplikacji pakietu Office](#set-custom-permissions-for-a-document) lub [Eksploratora plików](#using-file-explorer-to-classify-and-protect-files), aby ustawić uprawnienia niestandardowe dla pliku przed jego udostępnieniem. 
 
-Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
+Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, w celu zachowania pierwotnych uprawnień należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
 
 Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
 
@@ -61,9 +61,32 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
-- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby to sprawdzić, kliknij pozycję **Chroń** > **Pomoc i opinie** i sprawdź, czy w sekcji **Stan klienta** jest widoczny komunikat: **Ten klient nie ma licencji dla pakietu Office Professional Plus.** 
+- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby to sprawdzić, kliknij pozycję **Chroń** > **Pomoc i opinie** i zobacz, czy w sekcji **Stan klienta** jest widoczny komunikat: **Ten klient nie ma licencji pakietu Office Professional Plus.** 
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
+
+### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
+
+Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety, możesz określić dla dokumentu własne ustawienia ochrony.
+
+1. Na karcie **Narzędzia główne**, w grupie **Ochrona**, kliknij kolejno pozycje **Chroń** > **Uprawnienia niestandardowe**:
+
+    ![Opcja Uprawnienia niestandardowe](../media/custom-permissions-callout.png)
+    
+    Należy pamiętać, że wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
+
+2. W oknie dialogowym **Microsoft Azure Information Protection** określ następujące elementy:
+
+    - **Chroń za pomocą uprawnień niestandardowych**: aby możliwe było określenie i zastosowanie uprawnień niestandardowych, ta opcja musi być zaznaczona. Usuń zaznaczenie tej opcji, aby usunąć wszelkie uprawnienia niestandardowe.
+    
+    - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz opcję wyboru poziomu dostępu dla poszczególnych osób.
+
+    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+        
+    - **Unieważnij dostęp**: Wybierz tę opcję tylko w przypadku plików zależnych od czasu, dzięki czemu określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej przez Ciebie dacie. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (Twojej bieżącej strefy czasowej) wybranego przez Ciebie dnia określone przez Ciebie osoby nie będą mogły go otworzyć.
+
+5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
+
 
 ### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Skróty klawiaturowe dla paska usługi Azure Information Protection
 
