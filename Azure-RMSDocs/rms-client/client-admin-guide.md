@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3cc1cf7f35c8cf66423c00332691c2291a8b6106
-ms.sourcegitcommit: 02e860196efca306ef9d1e61c1d89c4d8593c912
+ms.openlocfilehash: ffa336d352c60f36269cfb23236133bf1ca50d9f
+ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
@@ -35,7 +35,9 @@ Klient usługi Azure Information Protection zawiera następujące elementy:
 
 - Klient usługi Rights Management komunikujący się z usługą Azure Rights Management (Azure RMS) lub usługami Active Directory Rights Management (AD RMS).
 
-Klient usługi Azure Information Protection najlepiej nadaje się do pracy z usługami Azure — usługą Azure Information Protection i jej usługami ochrony danych, Azure Rights Management. Jednak z pewnymi ograniczeniami klient usługi Azure Information Protection działa też z lokalną wersją usług Rights Management — AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure Information Protection i AD RMS można znaleźć w artykule [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
+Klient usługi Azure Information Protection najlepiej nadaje się do pracy z usługami Azure — usługą Azure Information Protection i jej usługami ochrony danych, Azure Rights Management. Jednak z pewnymi ograniczeniami klient usługi Azure Information Protection działa też z lokalną wersją usług Rights Management — AD RMS. Obszerne porównanie funkcji obsługiwanych przez usługi Azure Information Protection i AD RMS można znaleźć w artykule [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md). 
+
+Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 **Czy masz pytanie, na które nie ma odpowiedzi w tej dokumentacji?** Odwiedź [witrynę Yammer usługi Azure Information Protection](https://www.yammer.com/AskIPTeam). 
 
@@ -62,13 +64,13 @@ Dokonaj wdrożenia klienta usługi Azure Information Protection w następującyc
 
 Przykład ukazujący dodatek klienta usługi Azure Information Protection w aplikacjach pakietu Office, który wyświetla etykiety klasyfikacji dla danej organizacji i nowy przycisk **Chroń** na Wstążce:
 
-![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/info-protect-bar-default.png)
+![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/word2016-calloutsv2.png)
 
 ## <a name="how-to-install-the-azure-information-protection-client-for-users"></a>Jak zainstalować klienta usługi Azure Information Protection dla użytkowników
 
 Przed zainstalowaniem klienta sprawdź, czy masz wymagane wersje systemu operacyjnego i aplikacji dla klienta usługi Azure Information Protection: [Wymagania dla usługi Azure Information Protection](../get-started/requirements-azure-rms.md). 
 
-Ponadto:
+Dodatkowe wymagania wstępne dla klienta usługi Azure Information Protection:
 
 - Do zainstalowania pełnej wersji klienta usługi Azure Information Protection jest domyślnie wymagany program Microsoft .NET Framework w wersji 4.6.2 lub wyższej. W przypadku jego braku Instalator spróbuje pobrać i zainstalować ten wymagany program. Jeśli ten wymagany program jest instalowany w ramach instalacji klienta, należy uruchomić ponownie komputer. Chociaż nie jest to zalecane, można pominąć to wymaganie wstępne, korzystając z parametru instalacji niestandardowej.
 

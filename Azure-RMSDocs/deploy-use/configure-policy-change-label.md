@@ -10,8 +10,8 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: e800818f87ab5b0b39ffdc244f871c04305039ae
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 4111fbaf678509cfb5b961f19dcc4b62f77c7a4a
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection

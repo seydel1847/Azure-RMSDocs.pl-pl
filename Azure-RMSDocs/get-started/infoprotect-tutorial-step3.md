@@ -4,14 +4,14 @@ description: "Krok 3 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 61c0d2c97ae1db15bf2ec5c4586aa54270502117
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+ms.openlocfilehash: ba10ce73d5bd9cbfa65d373e247b440150be826b
+ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
 translationtype: HT
 ---
 # <a name="step-3-install-the-client"></a>Krok 3. Zainstalowanie klienta
@@ -29,7 +29,7 @@ W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dz
 
     W przypadku tego samouczka nie ma znaczenia, czy wybierzesz opcję instalacji zasady demonstracyjnej, ponieważ nasza właśnie skonfigurowana zasada zostanie pobrana z systemu Azure i zastąpi zasadę demonstracyjną, jeśli ją zainstalowano. Można jednak użyć opcji zasady demonstracyjnej, jeśli chcesz po prostu zapoznać się z etykietami domyślnymi bez nawiązywania połączenia z usługą Azure Information Protection. 
 
-## <a name="verify-the-installations"></a>Sprawdź instalacje
+## <a name="verify-the-installation"></a>Weryfikacja instalacji
 
 Sprawdź, czy instalacja zakończyła się pomyślnie, otwierając program Word i nowy pusty dokument (na tym etapie nie ma potrzeby jego zapisu). Jeśli zostanie wyświetlony monit, aby wprowadzić nazwę użytkownika i hasło, wprowadź szczegóły konta administratora globalnego. 
 
@@ -37,13 +37,13 @@ Jeśli klient został zainstalowany po raz pierwszy, wyświetlona zostanie stron
 
 Podczas ładowania dokumentu powinny zostać wyświetlone dwa nowe obiekty:
 
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zainstalowany klient](../media/word2016-calloutsv2.png)
+
 - Na karcie **Narzędzia główne**: nowa grupa **Ochrona** z przyciskiem **Chroń**.
 
     Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Połączono jako** i nazwa użytkownika. Powinna także zostać wyświetlona godzina i data ostatniego połączenia oraz data instalacji zasad usługi Information Protection. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
 
-- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Jest na nim wyświetlany tytuł **Ważność** i skonfigurowana przez nas etykieta domyślna **Wewnętrzne**. 
-    
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zainstalowany klient](../media/word2013-callouts2.png)
+- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Jest na nim wyświetlany tytuł **Ważność** i skonfigurowana przez nas etykieta domyślna **Ogólne**. 
 
 Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 

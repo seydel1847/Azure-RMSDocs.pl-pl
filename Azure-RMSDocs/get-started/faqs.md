@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c15d4ea3309bc58cb3b2c34481f3c4588e2f2433
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: 987936c79325c33a8c553dea1a6594933df5f7d8
+ms.sourcegitcommit: d959f0a9ba347a5dde77aac45a5d9f88d7cfdfb2
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
@@ -61,9 +61,7 @@ Zobacz [Zgodność i informacje dodatkowe dotyczące usługi Azure Information P
 
 Aby skorzystać z pomocy technicznej, użyj standardowych kanałów pomocy lub [skontaktuj się z pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support).
 
-Aby przekazać opinie, w tym sugestie dotyczące ulepszeń i nowych funkcji, w aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij przycisk **Chroń**, a następnie kliknij przycisk **Pomoc i opinie**. W oknie dialogowym **Microsoft Azure Information Protection** kliknij przycisk **Wyślij opinię**. Spowoduje to wysłanie wiadomości e-mail do zespołu usługi Information Protection i automatyczne dołączenie plików dziennika z Twojego komputera. 
-
-Zachęcamy także do kontaktowania się z naszymi inżynierami za pośrednictwem [strony usługi Azure Information Protection w witrynie Yammer](https://www.yammer.com/askipteam/). 
+Aby przekazać opinie, w tym sugestie dotyczące ulepszeń i nowych funkcji, w aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij przycisk **Chroń**, a następnie kliknij przycisk **Pomoc i opinie**. W oknie dialogowym **Microsoft Azure Information Protection** kliknij przycisk **Prześlij opinię**. Spowoduje to otwarcie wiadomości e-mail, która zostanie wysłana do zespołu ochrony informacji. Zachęcamy także do kontaktowania się z naszymi inżynierami za pośrednictwem [strony usługi Azure Information Protection w witrynie Yammer](https://www.yammer.com/askipteam/). 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>Co należy zrobić, jeśli mojego pytania nie ma na tej liście?
 

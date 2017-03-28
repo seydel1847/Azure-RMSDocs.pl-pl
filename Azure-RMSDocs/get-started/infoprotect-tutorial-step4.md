@@ -4,14 +4,14 @@ description: "Krok 4 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: fb1334a2ee345125db6e2637a59a5ab1a69e62d8
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 56ecd7b99f81a3b2399e166c1ca6a50797e65fa3
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
@@ -24,21 +24,21 @@ Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do teg
 
 ## <a name="to-manually-change-our-default-label"></a>Aby ręcznie zmienić naszą domyślną etykietę
 
-Na pasku o nazwie Information Protection wybierz etykietę **Tajne**, a wówczas zostaną wyświetlone etykiety podrzędne:
+Na pasku usługi Information Protection wybierz ostatnią etykietę, a wówczas zostaną wyświetlone etykiety podrzędne:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybieranie etykiety podrzędnej](../media/info-protect-sub-labels.png)
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybieranie etykiety podrzędnej](../media/info-protect-sub-labelsv2.png)
 
-Wybierz pozycję **Cała firma**, a tym samym etykietę dla tego dokumentu, a wówczas inne etykiety nie będą już na pasku wyświetlane. Wartość opcji **Ważność** zostanie zmieniona na **Tajne \ Cała firma** i nastąpi analogiczna zmiana koloru etykiety:
+Wybierz jedną z tych etykiet podrzędnych, a tym samym etykietę dla tego dokumentu, a wówczas inne etykiety nie będą już na pasku wyświetlane. Wartość opcji **Ważność** zostanie zmieniona, tak aby pokazać nazwę etykiety i etykiety podrzędnej, oraz nastąpi analogiczna zmiana koloru etykiety. Na przykład:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybrano etykietę podrzędną](../media/info-protect-sub-label-selected.png)
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybrano etykietę podrzędną](../media/info-protect-sub-label-selectedv2.png)
 
-Na pasku o nazwie Information Protection kliknij ikonę **Edytuj etykietę** obok pozycji **Tajne \ Cała firma**:
+Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok aktualnie wybranej wartości etykiety:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — ikona Edytuj etykietę](../media/info-protect-edit-label-selected.png)
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — ikona Edytuj etykietę](../media/info-protect-edit-label-selectedv2.png)
 
 Spowoduje to ponowne wyświetlenie dostępnych etykiet.
 
-Teraz wybierz etykietę **Osobiste**. Z powodu wybrania etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego obniżany jest poziom klasyfikacji:
+Teraz wybierz pierwszą etykietę **Osobiste**. Z powodu wybrania etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego obniżany jest poziom klasyfikacji:
 
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit o uzasadnienie potwierdzenia obniżenia](../media/info-protect-lower-justification.png)
 
@@ -48,13 +48,13 @@ Wybierz opcję **Poprzednia etykieta już nie obowiązuje** i kliknij przycisk *
 
 Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykietę**. Zamiast wybierać jedną z etykiet kliknij ikonę **Usuń etykietę**:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — ikona usuwania](../media/delete-icon-from-personal.png)
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — ikona usuwania](../media/delete-icon-from-personalv2.png)
 
 Tym razem po wyświetleniu monitu wpisz komentarz o treści „Ten dokument nie wymaga klasyfikacji” i kliknij przycisk **Potwierdź**.  
 
 Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — usuwanie klasyfikacji](../media/sensitivity-not-set.png)
+![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — usuwanie klasyfikacji](../media/sensitivity-not-setv2.png)
 
 
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Aby wyświetlić monit zalecający etykietowanie i automatyczne włączanie ochrony
@@ -63,11 +63,11 @@ Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, k
 
 2. Zapisz dokument (użyj dowolnej nazwy pliku i dowolnej lokalizacji). 
 
-3. Pojawi się monit: **Zaleca się nadać temu plikowi etykietę Poufne**. Kliknij przycisk **Zmień teraz**.
+3. Teraz zostanie wyświetlony monit o zastosowanie etykiety, która została skonfigurowana do ochrony w przypadku wykrycia numerów kart kredytowych. Jeśli nie zgadzamy się z zaleceniem, nasze ustawienie zasad umożliwia nam jego odrzucenie po wybraniu pozycji **Odrzuć**. Przekazanie zalecenia, jednocześnie umożliwiając użytkownikowi zastąpienie go, pomaga zmniejszyć liczbę fałszywych alarmów podczas korzystania z automatycznej klasyfikacji. W przypadku tego samouczka kliknij pozycję **Zmień teraz**.
 
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit z zaleceniem klasyfikacji](../media/change-now.png)
+    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit z zaleceniem klasyfikacji](../media/change-nowv2.png)
 
-    Poza ustawieniem etykiety dokumentu na Poufne natychmiast zobaczysz znak wodny z nazwą organizacji na całej stronie, jak również stopkę **Poufność: Poufne**. 
+    Poza brakiem wyświetlania przez dokument, że została zastosowana skonfigurowana etykieta (na przykład **Poufne\Wszyscy pracownicy**), natychmiast zobaczysz znak wodny z nazwą organizacji na całej stronie, jak również stopkę **Sklasyfikowane jako Poufne**. 
 
     Dokument jest również chroniony za pomocą podanego szablonu Azure Rights Management, co można potwierdzić, klikając kartę **Plik** i wyświetlając informację **Ochrona dokumentu**. Jeśli używany jest domyślny szablon Poufne, zostaną wyświetlone informacje, że zasięg dokumentu jest ograniczony do użytkowników wewnętrznych (użytkownicy spoza organizacji nie będą mogli otworzyć dokumentu) i jego zawartość nie może być kopiowana ani drukowana. Jako właściciel dokumentu możesz skopiować i wydrukować dokument, ale jeśli wyślesz go pocztą e-mail do innego użytkownika w organizacji, nie będzie on mógł wykonać tych czynności.
 

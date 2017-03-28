@@ -4,7 +4,7 @@ description: "Masz pytanie związane z usługą Azure Information Protection, kt
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 854de3beea1f4b6e05461dee58cec6ca91f79034
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: 6af0a81b31fb0a2e5437428dc8373dd997b18406
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
@@ -46,7 +46,7 @@ W wersji z lutego usunięto wiele wcześniejszych ograniczeń. Aby uzyskać wię
 
 Aby skonfigurować zasady usługi Azure Information Protection, musisz zalogować się do portalu Azure jako administrator globalny usługi Azure Active Directory.
 
-Jeśli w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasad demonstracyjnych, zalogowanie się do portalu nie jest konieczne do wyświetlenia i wypróbowania funkcji etykietowania. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection, co umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie pozwala na zmianę ani dodanie nowej etykiety bez rejestrowania się w portalu Azure. 
+Jeśli w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasad demonstracyjnych, zalogowanie się do portalu nie jest konieczne do wyświetlenia i wypróbowania funkcji etykietowania. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection, co umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie pozwala na zmianę ani dodanie nowej etykiety bez rejestrowania się w witrynie Azure Portal. 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Które opcje witryny Azure Portal to P1 i P2?
 
@@ -56,7 +56,7 @@ Aby sprawdzić, które funkcje została uwzględnione w subskrypcji **Azure Info
 
 Użytkownicy mogą jednocześnie wybrać tylko jedną etykietę dla każdego dokumentu lub wiadomości e-mail, co skutkuje często utworzeniem tylko jednej klasyfikacji. Jeśli jednak użytkownicy wybiorą etykietę podrzędną, spowoduje to w rzeczywistości zastosowanie dwóch etykiet jednocześnie: etykiety podstawowej i pomocniczej. Dzięki użyciu etykiet podrzędnych plik może mieć dwie klasyfikacje, które wprowadzają relację typu element nadrzędny/podrzędny na potrzeby dodatkowego poziomu kontroli.
 
-Na przykład etykieta **Tajne** może zawierać etykiety podrzędne, takie jak **Prawne** i **Finanse**. Tym etykietom podrzędnym można przypisać różne wizualne oznaczenia klasyfikacji i różne szablony usługi Rights Management. Użytkownik nie może wybrać bezpośrednio etykiety **Tajne**, tylko jedną z jej etykiet podrzędnych, na przykład **Prawne**. W efekcie widzą oni, że została ustawiona etykieta **Tajne \ Prawne**. Metadane dla tego pliku zawierają jedną niestandardową właściwość tekstową dla etykiety **Tajne**, jedną niestandardową właściwość tekstową dla etykiety **Prawne** i jeszcze jedną właściwość, która zawiera obie wartości (**Tajne Prawne**). 
+Na przykład etykieta **Poufne** może zawierać etykiety podrzędne, takie jak **Prawne** i **Finanse**. Tym etykietom podrzędnym można przypisać różne wizualne oznaczenia klasyfikacji i różne szablony usługi Rights Management. Użytkownik nie może wybrać bezpośrednio etykiety **Poufne**, a tylko jedną z jej etykiet podrzędnych, na przykład **Prawne**. W efekcie widzi on, że została ustawiona etykieta **Tajne\Prawne**. Metadane dla tego pliku zawierają jedną niestandardową właściwość tekstową dla etykiety **Poufne**, jedną niestandardową właściwość tekstową dla etykiety **Poufne** i jeszcze jedną właściwość, która zawiera obie wartości (**Poufne Prawne**). 
 
 Jeśli korzystasz z etykiet podrzędnych, nie konfiguruj wizualnych oznaczeń, ochrony i warunków dla etykiety podstawowej. Jeśli korzystasz z poziomów podrzędnych, skonfiguruj te ustawienia tylko dla etykiet podrzędnych. Jeśli skonfigurujesz te ustawienia dla etykiety podstawowej i jej etykiety podrzędnej, pierwszeństwo mają ustawienia etykiety podrzędnej.
 

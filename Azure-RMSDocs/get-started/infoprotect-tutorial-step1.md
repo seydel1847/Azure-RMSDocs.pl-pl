@@ -4,14 +4,14 @@ description: "Krok 1 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 7898902c53fc043678e945c821029dd954aeb15f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 8ccf0ea41e9465e10408595a3b875704baca93d2
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>Krok 1. Aktywowanie usługi Rights Management
@@ -19,11 +19,13 @@ translationtype: HT
 >*Dotyczy: Azure Information Protection*
 
 > [!NOTE]
->Jeśli już aktywowano usługę Azure Rights Management dla dzierżawy — przejdź wprost do [następnego kroku](infoprotect-tutorial-step2.md). 
+>Jeśli wiesz, że usługa Azure Rights Management dla dzierżawy została już aktywowana, możesz przejść bezpośrednio do [następnego kroku](infoprotect-tutorial-step2.md). 
+>
+>Jeśli nie masz pewności, czy ta usługa została aktywowana, użyj instrukcji podanych w tym kroku, aby to sprawdzić.
 
-Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne metody aktywowania tej usługi, w tym zastosowanie usługi Windows PowerShell i przejście przez portale administracyjne.
+Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne metody aktywowania tej usługi, w tym zastosowanie usługi Windows PowerShell i wykorzystanie portali administracyjnych.
 
-W tym samouczku przejdziemy bezpośrednio do strony aktywacji dla administratorów pakietu Office 365, czyli strony identycznej dla klasycznego portalu Office 365 i wersji zapoznawczej centrum administracji Office 365. 
+W przypadku tego samouczka przejdziemy bezpośrednio do strony aktywacji w portalu administracyjnym dla administratorów usługi Office 365. Jest to ta sama strona dla klasycznego portalu usługi Office 365 i centrum administracyjnego usługi Office 365 w wersji zapoznawczej. 
 
 Jeśli wolisz przejść do tej strony z portalu administracyjnego pakietu Office 365, a nie bezpośrednio, zobacz pełne instrukcje w dokumencie [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md). Tych pełnych instrukcji należy użyć także w przypadku posiadania dostępu do witryny Azure Portal, ale nie portalu administracyjnego Office 365.
 
@@ -33,9 +35,11 @@ Jeśli wolisz przejść do tej strony z portalu administracyjnego pakietu Office
     
     Po wyświetleniu monitu o zalogowanie użyj konta administratora globalnego usługi Office 365.
 
-2. Na stronie **Rights Management** kliknij pozycję **Aktywuj**.
+2. Na stronie **Rights Management** kliknij pozycję **Aktywuj**. Jeśli na tym przycisku znajduje się napis **dezaktywuj**, usługa jest już aktywna i możesz przejść bezpośrednio do [następnego kroku](infoprotect-tutorial-step2.md). 
 
-3. Po wyświetleniu monitu **Czy chcesz aktywować usługę Rights Management?** kliknij pozycję **Aktywuj**.
+    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 1 — aktywacja usługi](../media/info-protect-activate.png)
+
+3. Po wyświetleniu monitu **Czy chcesz aktywować usługę Rights Management?** kliknij pozycję **aktywuj**, aby potwierdzić.
 
     Zostanie wyświetlony komunikat **Usługa Rights Management została aktywowana** wraz z opcją dezaktywowania tej usługi (może być konieczne ręczne odświeżenie strony).
 

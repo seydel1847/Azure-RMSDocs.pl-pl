@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: faf296a92abb6636bd516e41a6e44d4580984146
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: b946dff4782d1b5571aa0438d1681030f0de092f
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
@@ -40,9 +40,11 @@ Aby skonfigurować zasady usługi Azure Information Protection:
 
     - Opcja monitowania użytkowników o podanie przyczyny wybrania etykiety, która ma niższą charakterystykę niż oryginalna.
 
+    - Opcja automatycznego określania etykiety wiadomości e-mail na podstawie jej załączników.
+
     - Opcja udostępniania linku do niestandardowej pomocy dla użytkowników.
 
-Usługa Azure Information Protection zawiera [zasady domyślne](configure-policy-default.md), które uwzględniają etykiety: **Osobiste**, **Publiczne**, **Wewnętrzne**, **Poufne** i **Tajne**. Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety.
+Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Etykiety te mogą być używane dla pełnego zakresu danych, które organizacja zazwyczaj tworzy i przechowuje, od danych osobowych o najniższej klasyfikacji do wysoce poufnych danych o najwyższej klasyfikacji. Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety.
 
 Po wprowadzeniu zmian w bloku Azure Information Protection kliknij przycisk **Zapisz**, aby zapisać te zmiany lub kliknij przycisk **Odrzuć**, aby przywrócić stan do ostatnio zapisanych ustawień. 
 
