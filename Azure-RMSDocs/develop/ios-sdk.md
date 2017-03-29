@@ -24,7 +24,7 @@ Aplikacje systemów iOS i OS X mogą używać zestawu Microsoft Rights Managemen
 
 Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzenia własnych, nowych aplikacji.
 
-**Uwaga: ** ten zestaw SDK nie obsługuje urządzenia iPod Touch.
+**Uwaga:** ten zestaw SDK nie obsługuje urządzenia iPod Touch.
 
 
 -   [Wymagania wstępne](#prerequisites)
