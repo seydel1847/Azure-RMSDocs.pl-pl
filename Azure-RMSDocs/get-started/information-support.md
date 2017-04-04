@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 03/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5566f7d2c3ac802f2d8078241be3057d2cb2529
-ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
+ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
@@ -49,7 +49,7 @@ Być może kwalifikujesz się do uzyskania rozwiązania **FastTrack**: z asysty 
 
 Pozostali klienci powinni użyć następujących kanałów pomocy technicznej, w zależności od sposobu uzyskania usługi Azure Information Protection:
 
-- **Usługa Azure Information Protection Premium** (autonomiczna): utwórz [żądanie obsługi w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Aby móc użyć tej opcji, musisz mieć subskrypcję platformy Azure i plan pomocy technicznej platformy Azure. Aby uzyskać więcej informacji, zobacz [Pomoc techniczna platformy Azure dla klientów](https://azure.microsoft.com/support/plans/). 
+- **Usługa Azure Information Protection Premium** (autonomiczna): utwórz [żądanie obsługi w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Subskrypcja z pomocą techniczną w pakiecie** dla opcji **Subskrypcja**.
 
 - **Usługa Azure Information Protection z subskrypcją usługi Office 365**: na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365. 
 
@@ -76,6 +76,8 @@ Rozwiązywanie problemów:
 - Aby uzyskać informacje dotyczące obsługi użytkowników końcowych, pomocy technicznej i administratorów konfigurujących usługi i aplikacje, które używają usługi Azure Information Protection, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików](../deploy-use/help-users.md).
 
 - Jeśli wdrożono łącznik usługi Rights Management dla serwerów lokalnych, zobacz informację dotyczącą [monitorowania](../deploy-use/monitor-rms-connector.md), która zawiera szczegółowe informacje o wpisach w dzienniku zdarzeń, licznikach wydajności i rejestrowaniu.
+
+- W przypadku klienta usługi Azure Information Protection dla systemu Windows: zobacz sekcję [Dodatkowe czynności kontrolne i rozwiązywanie problemów](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting) podręcznika administratora.
 
 - Na potrzeby zautomatyzowanego sprawdzania, automatycznego korygowania i śledzenia pobierz i uruchom [narzędzie RMS Analyzer Tool](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
 
