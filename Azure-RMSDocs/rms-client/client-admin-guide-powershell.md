@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13bed15fa5fff020d77a4362e38903c5ca55d2ce
-ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
@@ -132,9 +132,7 @@ W module Windows PowerShell usługi Azure RMS uruchom polecenie cmdlet Get-Aadrm
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>Uzyskiwanie identyfikatora AppPrincipalId i klucza symetrycznego
 
-Utwórz nową jednostkę usługi, uruchamiając polecenie cmdlet `New-MsolServicePrincipal` z modułu MSOnline PowerShell usługi Azure Active Directory lub polecenie `New-AzureADServicePrincipal` z nowszej, drugiej wersji modułu PowerShell usługi Azure Active Directory. 
-
-Poniższe instrukcje dotyczą polecenia New-MsolServicePrincipal z modułu MSOnline PowerShell usługi Azure Active Directory:
+Utwórz nową jednostkę usługi, uruchamiając polecenie cmdlet `New-MsolServicePrincipal` z modułu MSOnline PowerShell usługi Azure Active Directory: 
 
 1. Jeśli ten moduł nie został jeszcze zainstalowany na komputerze, zobacz artykuł [Instalowanie modułu usługi Azure AD](/powershell/azuread/#install-the-azure-ad-module).
 

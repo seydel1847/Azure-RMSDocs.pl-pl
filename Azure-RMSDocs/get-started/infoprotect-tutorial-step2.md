@@ -4,14 +4,14 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 7db581d07698edf50fda8379d622e35414ad3671
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
@@ -29,11 +29,9 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     > [!TIP] 
     > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
 
-3.  W bloku Azure Information Protection kliknij pozycję **Globalne** i przejrzyj blok **Zasady: Globalne** zawierający domyślne zasady usługi Information Protection, które są tworzone automatycznie dla dzierżawy.
+3.  Eksploruj automatycznie wyświetlony blok **Zasady: Globalne** zawierający domyślne zasady usługi Information Protection, które są tworzone automatycznie dla dzierżawcy:
     
-    W bloku **Zasady: Globalne** znajdują się następujące elementy:
-    
-    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Zwróć uwagę na to, że dwie ostatnie etykiety można rozszerzyć, aby wyświetlić etykiety podrzędne: **Wszyscy pracownicy** i **Każdy (niechronione)**. Są to przykłady podkategorii klasyfikacji.
+    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Dwie ostatnie etykiety można rozszerzyć, aby wyświetlić etykiety podrzędne: **Wszyscy pracownicy** i **Każdy (niechronione)**. Są to przykłady podkategorii klasyfikacji.
     
        > [!NOTE]
        > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Jeśli tak jest, prawdopodobnie używasz starszej wersji zasad domyślnych. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.

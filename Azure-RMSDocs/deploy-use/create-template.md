@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
@@ -75,6 +75,8 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     > [!NOTE]
     > Wybrani użytkownicy lub grupy muszą mieć adres e-mail. W środowisku produkcyjnym adres jest dostępny prawie zawsze, ale w prostym środowisku testowym może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
+    > 
+    > Jeśli adres e-mail ulegnie zmianie po wybraniu użytkownika lub grupy i zapisaniu szablonu, zobacz sekcję [Jeśli adres e-mail ulegnie zmianie](../plan-design/prepare.md#considerations-if-email-addresses-change) dokumentacji planowania. 
 
     Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching). 
     

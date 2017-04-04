@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f179d9b4a9b883e6a7cff15ce3f8e713508b0bd3
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fd4fa09da3bffe9abdec5754185659393fdbf531
+ms.sourcegitcommit: 96410e06941ec414032d72cf96491884dc11aba0
 translationtype: HT
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
@@ -145,7 +145,7 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |owner-email|String|Adres e-mail właściciela dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com|
 |issuer|String|Adres e-mail wystawcy dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |template-id|String|Identyfikator szablonu użytego do ochrony dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|String|Nazwa pliku dokumentu objętego ochroną. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|TopSecretDocument.docx|
+|file-name|String|Nazwa pliku chronionego dokumentu śledzonego za pomocą klienta usługi Azure Information Protection dla systemu Windows lub aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|TopSecretDocument.docx|
 |date-published|Data|Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|2015-10-15T21:37:00|
 |c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|

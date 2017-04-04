@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b946dff4782d1b5571aa0438d1681030f0de092f
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
@@ -28,7 +28,7 @@ Aby skonfigurować zasady usługi Azure Information Protection:
 
 2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
 
-    Zostanie wyświetlony blok **Azure Information Protection**, w którym można otworzyć zasady **Globalne**, które mają zastosowanie do wszystkich użytkowników. Opcjonalnie możesz również dodawać i edytować zasady należące do zakresów. **Globalne** zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
+    Podczas ładowania bloku **Azure Information Protection** następuje automatyczne otwarcie bloku **Zasady: globalne** umożliwiającego wyświetlanie i edytowanie zasad globalnych, które są przydzielane wszystkim użytkownikom. Opcjonalnie można jednak również dodawać i edytować zasady należące do zakresów. Zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
 
     - Etykiety, dzięki którym można klasyfikować dokumenty i wiadomości e-mail.
 
