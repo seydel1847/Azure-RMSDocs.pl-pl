@@ -1,21 +1,20 @@
 ---
-title: "Konfigurowanie warunków klasyfikacji automatycznej i zalecanej | Azure Information Protection"
+title: "Konfigurowanie warunków dla etykiety usługi Azure Information Protection"
 description: "W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
-
-
+ms.openlocfilehash: c4a0aab69ac8a01175528531fe11f17e86da9a6b
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
-# Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
+# <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -44,13 +43,15 @@ Przykład monitu w przypadku konfigurowania warunki do zastosowania etykiety jak
 
 W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zastosować zalecaną etykietę, lub zignorować zalecenie przez zamknięcie paska.
 
-## Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
+## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wybierz etykietę, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji.
+2. Jeśli etykieta, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji, będzie dotyczyła wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**, a następnie wprowadź zmiany w bloku **Etykieta** i wszystkich kolejnych wymaganych blokach. 
+
+     Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.  
 
 3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
@@ -72,9 +73,9 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 6. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Informacje o wbudowanych warunkach
+## <a name="information-about-the-built-in-conditions"></a>Informacje o wbudowanych warunkach
 
-W okresie używania wersji zapoznawczej możesz wybrać następujące warunki:
+Można wybrać następujące warunki:
 
 - [Kod SWIFT](#swift-code )
 
@@ -87,7 +88,7 @@ W okresie używania wersji zapoznawczej możesz wybrać następujące warunki:
 - [Międzynarodowy numer konta bankowego (IBAN)](#international-banking-account-number-iban)
 
 
-### Kod SWIFT
+### <a name="swift-code"></a>Kod SWIFT
 
 Dopasuj ten typ informacji, jeśli zawartość obejmuje następujące elementy:  
 
@@ -113,7 +114,7 @@ Przykłady do testowania:
 ----
 
 
-### Numer karty kredytowej
+### <a name="credit-card-number"></a>Numer karty kredytowej
 
 Dopasuj ten typ informacji, jeśli zawartość obejmuje następujące elementy:  
 
@@ -136,7 +137,7 @@ Przykłady do testowania:
 
 ----
 
-### Numer rozliczeniowy ABA
+### <a name="aba-routing-number"></a>Numer rozliczeniowy ABA
 
 Dopasuj ten typ informacji, jeśli zawartość obejmuje następujące elementy:  
 
@@ -173,7 +174,7 @@ Przykłady do testowania:
 
 ----
 
-### Numer ubezpieczenia społecznego USA (SSN)
+### <a name="usa-social-security-number-ssn"></a>Numer ubezpieczenia społecznego USA (SSN)
 
 Dopasuj ten typ informacji, jeśli zawartość obejmuje następujące elementy:  
 
@@ -199,7 +200,7 @@ Przykłady do testowania:
 
 ----
 
-### Międzynarodowy numer konta bankowego (IBAN)
+### <a name="international-banking-account-number-iban"></a>Międzynarodowy numer konta bankowego (IBAN)
 
 Dopasuj ten typ informacji, jeśli zawartość obejmuje następujące elementy:  
 
@@ -213,15 +214,10 @@ Przykłady do testowania:
 - **GB29 NWBK 6016 1331 9268 19 IBAN**
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).  
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
-
-
-
-
-
-<!--HONumber=Sep16_HO4-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

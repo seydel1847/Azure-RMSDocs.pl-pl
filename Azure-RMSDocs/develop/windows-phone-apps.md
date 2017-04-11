@@ -3,8 +3,9 @@ title: Konfiguracja systemu Windows Phone | Azure RMS
 description: "Aplikacje systemu Windows Phone mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 148cefbe973eadebf942c826ac19c0ee34823c89
-
-
+ms.openlocfilehash: 96dfeb54c866facec73facee7c8356059b107a2f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Konfiguracja systemu Windows Phone
+# <a name="windows-phone-setup"></a>Konfiguracja systemu Windows Phone
 
 
 Aplikacje systemu Windows Phone mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji przy użyciu usługi Azure Active Directory Rights Management (AAD RM).
@@ -31,7 +29,7 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 -   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
 -   [Zobacz też](#see-also)
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 
 Musisz mieć następujące oprogramowanie w systemie deweloperskim:
@@ -46,7 +44,7 @@ Temat [Nowości](release-notes.md) zawiera informacje dotyczące aktualizacji in
 
 Przejrzyj informacje w przewodniku [Opracowywanie aplikacji dla systemu Windows Phone](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx) w Centrum deweloperów systemu Windows Phone.
 
-## Konfigurowanie środowiska deweloperskiego
+## <a name="configuring-your-development-environment"></a>Konfigurowanie środowiska deweloperskiego
 
 
 -   Otwórz program *Visual Studio*.
@@ -60,7 +58,7 @@ Przejrzyj informacje w przewodniku [Opracowywanie aplikacji dla systemu Windows 
     ![Dodawanie odwołania](../media/wpsetup-addref.png)
 
 -   Kliknij przycisk **Przeglądaj** w lewym dolnym rogu okna dialogowego **Dodawanie odwołania** i wybierz plik *Microsoft.RightsManagment.dll* znajdujący się w folderze, do którego wyodrębniono pakiet.
--   **Aplikacje zarządzane** — To odwołanie należy dodać w przypadku tworzenia aplikacji zarządzanej. Wybierz pozycje **Windows 8.1**-&gt;**Rozszerzenia** i zaznacz pole wyboru **Windows Visual C++ Runtime Package for Windows**.
+-   **Aplikacje zarządzane** — To odwołanie należy dodać w przypadku kompilowania aplikacji zarządzanej. Wybierz pozycje **Windows 8.1**-&gt;**Rozszerzenia** i zaznacz pole wyboru **Windows Visual C++ Runtime Package for Windows**.
 
     ![Dodawanie rozszerzeń](../media/wpsetup-refmngr.png)
 
@@ -68,7 +66,7 @@ Przejrzyj informacje w przewodniku [Opracowywanie aplikacji dla systemu Windows 
 
 Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu Windows Phone.
 
-### Zobacz też
+### <a name="see-also"></a>Zobacz też
 
 [Wprowadzenie](get-started.md)
 
@@ -84,15 +82,4 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu W
 
 [Zestaw SDK dla systemu Windows Phone](http://dev.windowsphone.com/en-us/downloadsdk)
 
- 
-
- 
-
-
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

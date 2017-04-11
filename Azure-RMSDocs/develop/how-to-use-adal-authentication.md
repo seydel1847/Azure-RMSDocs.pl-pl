@@ -3,8 +3,9 @@ title: "Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS| Azure RMS"
 description: "Zawiera opis procesu uwierzytelniania przy użyciu biblioteki ADAL"
 keywords: uwierzytelnianie, RMS, ADAL
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
-
-
+ms.openlocfilehash: 1ba0a2baf601c3526ab4ba515b82512561778a1d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Instrukcje: korzystanie z uwierzytelniania ADAL
+# <a name="how-to-use-adal-authentication"></a>Instrukcje: korzystanie z uwierzytelniania ADAL
 
 Uwierzytelnianie w usłudze Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
 
@@ -30,7 +28,7 @@ Aktualizacja aplikacji umożliwiająca korzystanie z uwierzytelniania ADAL zamia
 - Instalowanie klienta usługi RMS 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
 - Certyfikowanie aplikacji dla systemu Windows 10
 
-## Dwa podejścia do uwierzytelniania
+## <a name="two-approaches-to-authentication"></a>Dwa podejścia do uwierzytelniania
 
 W tym temacie przedstawiono dwie metody uwierzytelniania wraz z odpowiednimi przykładami kodu.
 
@@ -38,22 +36,22 @@ W tym temacie przedstawiono dwie metody uwierzytelniania wraz z odpowiednimi prz
 
   Tej metody należy użyć, jeśli klient RMS ma wyświetlać monit o uwierzytelnienie ADAL w przypadku, gdy wymagane jest uwierzytelnienie. Aby uzyskać szczegółowe informacje na temat konfigurowania aplikacji, zobacz część „Uwierzytelnianie wewnętrzne”.
 
-  > [!Note] 
+  > [!Note]
   > Jeśli aplikacja używa aktualnie zestawu SDK usług AD RMS w wersji 2.1 z asystentem logowania, zalecane jest użycie metody uwierzytelniania wewnętrznego jako ścieżki migracji aplikacji.
 
 - **Uwierzytelnianie zewnętrzne** — uwierzytelnianie OAuth zarządzane przez aplikację.
 
   Tej metody należy użyć, jeśli aplikacja ma zarządzać własnym uwierzytelnianiem OAuth. W przypadku tego podejścia klient RMS wykonuje wywołanie zwrotne określone w aplikacji, gdy jest wymagane uwierzytelnienie. Szczegółowy przykład znajduje się w części „Uwierzytelnianie zewnętrzne” na końcu tego tematu.
 
-  > [!Note] 
+  > [!Note]
   > Uwierzytelnianie zewnętrzne nie oznacza możliwości zmiany użytkowników — w kliencie RMS zawsze używany jest domyślny użytkownik dla danej dzierżawy RMS.
 
-## Uwierzytelnianie wewnętrzne
+## <a name="internal-authentication"></a>Uwierzytelnianie wewnętrzne
 
 1. Wykonaj procedurę konfiguracji platformy Azure przedstawioną w artykule [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md), a następnie wróć do poniższego kroku inicjowania aplikacji.
 2. Teraz możesz przystąpić do konfigurowania aplikacji do korzystania z wewnętrznego uwierzytelniania ADAL zapewnianego w ramach zestawu RMS SDK 2.1.
 
-Aby skonfigurować klienta usługi RMS, dodaj wywołanie do właściwości [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) bezpośrednio po wywołaniu elementu [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize). Jako przykład może posłużyć poniższy fragment kodu.
+Aby skonfigurować klienta usługi RMS, dodaj wywołanie do właściwości [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) bezpośrednio po wywołaniu elementu [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx). Jako przykład może posłużyć poniższy fragment kodu.
 
       C++
       IpcInitialize();
@@ -67,7 +65,7 @@ Aby skonfigurować klienta usługi RMS, dodaj wywołanie do właściwości [IpcS
         //Handle the error
       }
 
-## Uwierzytelnianie zewnętrzne
+## <a name="external-authentication"></a>Uwierzytelnianie zewnętrzne
 
 Poniższy kod stanowi przykład zarządzania własnymi tokenami uwierzytelniania.
 C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Parameters, __out wstring wstrToken) throw();
@@ -109,21 +107,17 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
           return IpcGetKey(pvLicense, 0, &promptContext, NULL, &hKey);
       }
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
-* [Typy danych](/information-protection/sdk/2.1/api/win/data%20types)
-* [Właściwości środowiska](/information-protection/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
-* [IpcCreateOAuth2Token](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
-* [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [IPC_CREDENTIAL](/information-protection/sdk/2.1/api/win/IPC_CREDENTIAL)
-* [IPC_NAME_VALUE_LIST](/information-protection/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/information-protection/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
-* [IPC_PROMPT_CTX](/information-protection/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/information-protection/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
+- [Typy danych](https://msdn.microsoft.com/library/hh535288.aspx)
+- [Właściwości środowiska](https://msdn.microsoft.com/library/hh535247.aspx)
+- [IpcCreateOAuth2Token](https://msdn.microsoft.com/library/mt661866.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
+- [IPC_NAME_VALUE_LIST](https://msdn.microsoft.com/library/hh535277.aspx)
+- [IPC_OAUTH2_CALLBACK_INFO](https://msdn.microsoft.com/library/mt661868.aspx)
+- [IPC_PROMPT_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
+- [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
 
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

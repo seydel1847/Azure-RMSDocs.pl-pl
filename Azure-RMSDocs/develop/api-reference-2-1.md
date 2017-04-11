@@ -1,10 +1,11 @@
 ---
-title: Dokumentacja interfejsu API | Azure RMS
-description: "Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows."
+title: Dokumentacja zestawu AIP SDK 2.1 | Dokumentacja firmy Microsoft
+description: "Zestaw Azure Information Protection SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 10/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bb20d796e5a852aa9da224cbf218b9a166a9dbd8
-
-
+ms.openlocfilehash: 15cb1686fcdf92ebe078e816123dc8db4edd629c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Dokumentacja interfejsu API
+# <a name="api-reference"></a>Dokumentacja interfejsu API
 
 Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dla klientów systemu Windows. Aby uzyskać więcej szczegółowych informacji, zobacz [Informacje o wersji](release-notes-rtm.md).
 - [Stałe](https://msdn.microsoft.com/library/hh535291.aspx)
@@ -31,15 +29,8 @@ Zestaw Microsoft Rights Management SDK 2.1 umożliwia włączenie usługi RMS dl
 
 
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Informacje o wersji](release-notes-rtm.md)
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

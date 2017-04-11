@@ -3,8 +3,9 @@ title: "Serwer usług AD RMS | Azure RMS"
 description: "Składnik serwera usług Rights Management Services (RMS) jest implementowany przez zestaw usług sieci Web, które działają na bazie usługi Microsoft Internet Information Services."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
-
-
+ms.openlocfilehash: fa703300c8e751835ec62fdceb49d84c6b57548f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Serwer
+# <a name="server"></a>Serwer
 
 W tym temacie opisano przeznaczenie i funkcje serwera usług RMS na potrzeby platformy Azure i systemu Windows Server.
 
@@ -42,7 +40,7 @@ Wśród wielu zainstalowanych usług sieci Web następujące usługi są ważne 
 |Certyfikacja wstępna | Umożliwia serwerowi żądanie *certyfikatu konta praw* w imieniu użytkownika. Usługa działa na głównych serwerach certyfikacji i serwerach licencjonowania.|
 |Lokalizator usług | Określa adres URL usług certyfikacji kont, licencjonowania i publikowania dla usługi Active Directory, aby te usługi mogły być odnajdowane przez klientów usług RMS. Usługa działa na głównych serwerach certyfikacji i serwerach licencjonowania.|
 
-## Tematy pokrewne ##
+## <a name="related-topics"></a>Tematy pokrewne ##
 * [Przegląd](ad-rms-overview.md)
 * [Usługi Microsoft Internet Information Services](http://www.iis.net/overview)
 * [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
@@ -52,12 +50,4 @@ Wśród wielu zainstalowanych usług sieci Web następujące usługi są ważne 
 * [Aktywacja użytkownika](https://msdn.microsoft.com/library/Cc530378)
 * [Tworzenie licencji publikowania](https://msdn.microsoft.com/library/Aa362355)
 
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

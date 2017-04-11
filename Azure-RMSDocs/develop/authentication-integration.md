@@ -1,47 +1,45 @@
 ---
-title: "Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS | Azure RMS"
+title: "Jak zarejestrować aplikację w usłudze Azure AD — AIP"
 description: "W tym artykule opisano podstawy uwierzytelniania użytkowników w aplikacji z włączoną obsługą usługi RMS"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2f4e0d1990362ab50d90b1a31c3b5db45d2fcdd1
-
-
+ms.openlocfilehash: a98b4eb3bd7705faf268a544f4efa7ba41712816
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
-# Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
+# <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
 
 W tym temacie przedstawiono podstawowe informacje dotyczące rejestracji aplikacji i włączania obsługi usługi RMS za pośrednictwem Portalu Azure oraz uwierzytelniania użytkowników za pomocą biblioteki Azure Active Directory Authentication Library (ADAL).
 
-## Czym jest uwierzytelnianie użytkownika
+## <a name="what-is-user-authentication"></a>Czym jest uwierzytelnianie użytkownika
 Uwierzytelnianie użytkownika to kluczowy etap nawiązywania komunikacji między aplikacją urządzenia i infrastrukturą usługi RMS. Ten proces uwierzytelniania używa standardowego protokołu OAuth 2.0, który wymaga kluczowych informacji dotyczących bieżącego użytkownika i jego żądania uwierzytelnienia.
 
-## Rejestracja za pośrednictwem Portalu Azure
+## <a name="registration-via-azure-portal"></a>Rejestracja za pośrednictwem Portalu Azure
 Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania rejestracji aplikacji za pomocą Portalu Azure [Konfigurowanie usługi Azure RMS na potrzeby uwierzytelniania ADAL](adal-auth.md). Skopiuj i zapisz **identyfikator klienta** oraz **identyfikator URI przekierowania** z tego procesu do użycia w przyszłości.
 
-## Uzupełnij swoją umowę RMLA (Rights Managagment License Agreement)
-Przed wdrożeniem aplikacji musisz uzupełnić umowę RMLA zawartą z zespołem Microsoft Rights Management. Aby uzyskać szczegółowe informacje, zobacz sekcję pierwszą w temacie [Wdrażanie w środowisku produkcyjnym — Żądanie produkcyjnej umowy licencyjnej](deploying-your-application.md).
+## <a name="complete-your-information-protection-integration-agreement-ipia"></a>Uzupełnij umowę integracyjną usługi Information Protection (IPIA, Information Protection Integration Agreement)
+Przed wdrożeniem aplikacji musisz uzupełnić umowę IPIA zawartą z zespołem Microsoft Information Protection. Aby uzyskać szczegółowe informacje, zapoznaj się z pierwszą sekcją w temacie, [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md).
 
-## Implementowanie uwierzytelniania użytkowników w aplikacji
+## <a name="implement-user-authentication-for-your-app"></a>Implementowanie uwierzytelniania użytkowników w aplikacji
 Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw RMS SDK 4.2 korzysta z Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
 
-- Android — interfejsy [AuthenticationRequestCallback](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) i [AuthenticationCompletionCallback](/information-protection/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java).
-- iOS/OS X — protokół [MSAuthenticationCallback](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc).
--  Windows Phone/Window RT — interfejs [IAuthenticationCallback](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback).
+- Android — interfejsy [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) i [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx).
+- iOS/OS X — protokół [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx).
+-  Windows Phone/Window RT — interfejs [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx).
 - Linux — interfejs [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
 
-### Jakiej biblioteki użyć podczas uwierzytelniania
+### <a name="what-library-to-use-for-authentication"></a>Jakiej biblioteki użyć podczas uwierzytelniania
 W celu wdrożenia wywołania zwrotnego uwierzytelniania należy pobrać odpowiednią bibliotekę i skonfigurować środowisko deweloperskie do korzystania z niej. W witrynie GitHub są dostępne biblioteki ADAL dla tych platform.
 
 Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środowiska i korzystania z biblioteki.
@@ -55,7 +53,7 @@ Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środow
 >[!NOTE]  
 > Zalecamy korzystanie z jednej z bibliotek ADAL, choć można też korzystać z innych bibliotek uwierzytelniania.
 
-### Parametry uwierzytelniania
+### <a name="authentication-parameters"></a>Parametry uwierzytelniania
 
 Biblioteka ADAL wymaga kilku informacji w celu pomyślnego uwierzytelnienia użytkownika w usłudze Azure RMS (lub AD RMS). Są to standardowe parametry protokołu OAuth 2.0, wymagane zwykle od wszystkich aplikacji usługi Azure AD. Bieżące wytyczne dotyczące korzystania z biblioteki ADAL zamieszczono w plikach README odpowiednich repozytoriów Github wymienionych powyżej.
 
@@ -66,7 +64,7 @@ Biblioteka ADAL wymaga kilku informacji w celu pomyślnego uwierzytelnienia uży
 i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 - **Identyfikator Uri przekierowania** — podaje bibliotekę uwierzytelniania z celem URI dla kodu uwierzytelniania. Systemy iOS i Android wymagają określonych formatów. Omówiono je w plikach README odpowiednich repozytoriów GitHub biblioteki ADAL. Ta wartość pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 
->[!NOTE] 
+>[!NOTE]
 > **Zakres** nie jest obecnie używany, ale może być używany, w związku z czym jest zarezerwowany do użycia w przyszłości.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
@@ -76,7 +74,7 @@ i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 >[!NOTE] 
 > Jeśli aplikacja nie jest zgodna z tymi wytycznymi, przepływy pracy usług Azure RMS i Azure AD zakończą się prawdopodobnie niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
 
-### Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
+### <a name="what-should-an-authentication-callback-implementation-look-like"></a>Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
 **Przykłady kodu uwierzytelniania** — ten zestaw SDK zawiera przykładowy kod, przedstawiający zastosowanie wywołań zwrotnych uwierzytelniania. Dla wygody te przykłady kodu przedstawiono w tym miejscu, jak również we wszystkich powiązanych tematach.
 
 **Uwierzytelnianie użytkownika systemu Android** — więcej informacji znajduje się w części [Przykłady kodu dla systemu Android](android-code.md), **Krok 2** pierwszego scenariusza, „Korzystanie z pliku chronionego usługi RMS”.
@@ -266,14 +264,4 @@ i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
       }
     }
 
-
-
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

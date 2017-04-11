@@ -15,19 +15,21 @@
 ## [Konfigurowanie aplikacji](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Aplikacje pakietu Office](configure-office-apps.md)
-### [Aplikacja RMS sharing](configure-sharing-app.md)
+### [Klient usługi Azure Information Protection](configure-client.md)
+### [Aplikacja do udostępniania usługi RMS](configure-sharing-app.md)
 ## [Konfigurowanie praw użytkowania](configure-usage-rights.md)
 ## [Konfigurowanie administratorów usług odnajdywania lub odzyskiwania danych](configure-super-users.md)
 ## [Konfigurowanie zasad usługi Information Protection](configure-policy.md)
 ### [Zasady domyślne](configure-policy-default.md)
-### [Konfigurowanie ustawień globalnych](configure-policy-settings.md)
+### [Konfigurowanie ustawień zasad](configure-policy-settings.md)
 ### [Tworzenie nowej etykiety](configure-policy-new-label.md)
 ### [Usuwanie lub zmiana kolejności etykiet](configure-policy-delete-reorder.md)
 ### [Zmiana etykiety](configure-policy-change-label.md)
-### [Stosowanie ochrony](configure-policy-protection.md)
+### [Konfigurowanie ochrony](configure-policy-protection.md)
 #### [Ograniczenia rozwiązania HYOK](configure-adrms-restrictions.md)
 ### [Konfigurowanie oznaczeń wizualnych](configure-policy-markings.md)
 ### [Konfigurowanie warunków](configure-policy-classification.md)
+### [Konfigurowanie zasad należących do zakresów](configure-policy-scope.md)
 ## [Wdrażanie łącznika usługi RMS](deploy-rms-connector.md)
 ### [Instalowanie i konfigurowanie łącznika](install-configure-rms-connector.md)
 ### [Konfigurowanie serwerów](configure-servers-rms-connector.md)
@@ -44,9 +46,4 @@
 ### [Instalowanie programu Windows PowerShell dla usługi Azure RMS](install-powershell.md)
 # [Wdrażanie i korzystanie z klienta](/information-protection/rms-client/use-client)
 # [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
-
-
-
-<!--HONumber=Sep16_HO4-->
-
 

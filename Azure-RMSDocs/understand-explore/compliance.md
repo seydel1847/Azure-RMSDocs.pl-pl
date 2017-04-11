@@ -1,9 +1,10 @@
 ---
-title: "Zgodność i informacje dodatkowe | Azure Information Protection"
+title: "Zgodność i informacje dotyczące usługi Azure Information Protection"
 description: "Dodatkowe informacje na temat usługi Azure Information Protection dotyczące na przykład kwestii prawnych, zgodności i umów SLA."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,34 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 784e8a1f53df10ee66595b1268a4d9a1f0cdc9b0
-ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
-
-
+ms.openlocfilehash: fe434fd6d80764b5382ff807dbf87582f07713b5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
-# Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
+# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
 
 Usługa Azure Information Protection obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure Information Protection, ale niedotyczących sposobu korzystania z usługi Azure Information Protection, sprawdź następujące zasoby:
 
-## Informacje prawne i ochrona prywatności
+## <a name="legal-and-privacy"></a>Informacje prawne i ochrona prywatności
 
 - Informacje o umowie dotyczącej usług Microsoft Azure: [Umowa dotycząca usług Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
 - Informacje o ochronie prywatności w usługach Microsoft Azure: [Zasady zachowania poufności informacji usług Microsoft Azure](http://azure.microsoft.com/support/legal/privacy-statement/)
 
-## Zabezpieczenia, zgodność i inspekcja
+## <a name="security-compliance-and-auditing"></a>Zabezpieczenia, zgodność i inspekcja
 
-Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów prawnych](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md). Ponadto:
+Zobacz sekcję dotyczącą [wymagań związanych z zabezpieczeniami, zgodnością i przepisami](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](../understand-explore/azure-rms-problems-it-solves.md), aby poznać informacje o poszczególnych certyfikatach usługi Azure Rights Management. Ponadto:
 
 - Zewnętrzne certyfikaty usługi Azure Information Protection: [Centrum zaufania systemu Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
 
 - Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
 
-## Umowy dotyczące poziomu usług
+Szczegółowe informacje techniczne dotyczące sposobu działania technologii ochrony można znaleźć w temacie [Jak działa usługa Azure RMS](../understand-explore/how-does-it-work.md) 
+
+## <a name="service-level-agreements"></a>Umowy dotyczące poziomu usług
 
 - Umowa dotycząca poziomu usług dla usługi Azure Information Protection według wybranego regionu: [pobierz ze strony wyszukiwania licencjonowania produktów](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
 
@@ -46,15 +44,10 @@ Zobacz sekcję [Wymagania dotyczące zabezpieczeń, zgodności i przepisów praw
 
 -   Umowa dotycząca poziomu usług dla usługi Azure Active Directory: [Umowy dotyczące poziomu usług](http://azure.microsoft.com/support/legal/sla/)
 
-## Dokumentacja
+## <a name="documentation"></a>Dokumentacja
 
 - Dokumentacja usługi Azure Active Directory: [Azure Active Directory](/active-directory/)
 
 - Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

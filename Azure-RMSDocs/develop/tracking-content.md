@@ -3,8 +3,9 @@ title: "Jak włączyć śledzenie i odwoływanie dokumentów | Azure RMS"
 description: "Podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością oraz przykładowy kod służący do aktualizacji metadanych i kod przycisku Śledź użycie na potrzeby aplikacji."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,22 +14,17 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-experimental: true
+experimental: True
 experiment_id: priyamo-test-20160729
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
-
-
+ms.openlocfilehash: 9ed32d58df81324bbab02aec03f3038dad3925fa
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Śledzenie zawartości
-
-# Instrukcje: włączanie śledzenia i odwoływania dokumentów
+# <a name="how-to-enable-document-tracking-and-revocation"></a>Instrukcje: włączanie śledzenia i odwoływania dokumentów
 
 W tym temacie przedstawiono podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością oraz przykładowy kod służący do aktualizacji metadanych i tworzenia przycisku **Śledź użycie** na potrzeby aplikacji.
 
-## Procedura implementacji śledzenia dokumentów
+## <a name="steps-to-implement-document-tracking"></a>Procedura implementacji śledzenia dokumentów
 
 Kroki 1 i 2 umożliwiają włączenie śledzenia dokumentów. Krok 3 umożliwia użytkownikom aplikacji przejście do witryny śledzenia dokumentów, w której można śledzić i odwoływać chronione dokumenty.
 
@@ -38,7 +34,7 @@ Kroki 1 i 2 umożliwiają włączenie śledzenia dokumentów. Krok 3 umożliwia 
 
 Szczegóły implementacji dla tej procedury.
 
-## 1. Dodawanie metadanych śledzenia dokumentów
+## <a name="1-add-document-tracking-metadata"></a>1. Dodawanie metadanych śledzenia dokumentów
 
 Śledzenie dokumentów jest funkcją systemu Rights Management. Przez dodanie określonych metadanych podczas procesu włączania ochrony dokumentu można zarejestrować dokument w portalu usługi śledzenia, który zapewnia kilka opcji śledzenia.
 
@@ -48,12 +44,12 @@ Korzystając z poniższych interfejsów API, można dodać/zaktualizować licenc
 Z perspektywy operacyjnej śledzenie dokumentów wymaga tylko właściwości **nazwy zawartości** i **typu powiadomienia**.
 
 
-- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+- [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
 
   Oczekujemy, że ustawisz wszystkie właściwości metadanych. Poniżej przedstawiono właściwości posortowane według typu.
 
-  Aby uzyskać więcej informacji, zobacz [License metadata property types](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) (Typy właściwości metadanych licencji).
+  Aby uzyskać więcej informacji, zobacz [License metadata property types](https://msdn.microsoft.com/library/dn974062.aspx) (Typy właściwości metadanych licencji).
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -79,19 +75,19 @@ Z perspektywy operacyjnej śledzenie dokumentów wymaga tylko właściwości **n
 
     Ta właściwość umożliwia ustawienie daty utworzenia pliku.
 
-- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
 
 Dodaj metadane do pliku lub strumienia za pomocą odpowiedniego z poniższych interfejsów API.
 
-- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+- [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 
 Na koniec zarejestruj śledzony dokument w systemie śledzenia przy użyciu poniższego interfejsu API.
 
-- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
 
-## 2. Rejestrowanie dokumentu za pomocą usługi RMS
+## <a name="2-register-the-document-with-the-rms-service"></a>2. Rejestrowanie dokumentu za pomocą usługi RMS
 
 Oto fragment kodu będący przykładem ustawienia metadanych śledzenia dokumentu i wywołania w celu przeprowadzenia rejestracji w systemie śledzenia.
 
@@ -134,15 +130,15 @@ Oto fragment kodu będący przykładem ustawienia metadanych śledzenia dokument
                         wstrContentName.c_str(),
                         sendLicenseRegistrationNotificationEmail);
 
-## Dodawanie przycisku **Śledź użycie** do aplikacji
+## <a name="add-a-track-usage-button-to-your-app"></a>Dodawanie przycisku **Śledź użycie** do aplikacji
 
 Aby dodać element interfejsu użytkownika **Śledź użycie** do aplikacji, wystarczy użyć jednego z następujących formatów adresów URL:
 
 - Używanie identyfikatora zawartości
-  - Pobierz identyfikator zawartości przy użyciu elementu [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) lub [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty), jeśli licencja jest zserializowana, i użyj właściwości licencji **IPC_LI_CONTENT_ID**. Aby uzyskać więcej informacji, zobacz [License property types](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types) (Typy właściwości licencji).
+  - Pobierz identyfikator zawartości przy użyciu elementu [IpcGetLicenseProperty](https://msdn.microsoft.com/library/hh535265.aspx) lub [IpcGetSerializedLicenseProperty](https://msdn.microsoft.com/library/hh995038.aspx), jeśli licencja jest zserializowana, i użyj właściwości licencji **IPC_LI_CONTENT_ID**. Aby uzyskać więcej informacji, zobacz [License property types](https://msdn.microsoft.com/library/hh535287.aspx) (Typy właściwości licencji).
   - W przypadku metadanych **ContentId** i **Issuer** użyj następującego formatu: `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
-    Przykład: `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
+    Przykład — `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
 
 - Jeśli nie masz dostępu do tych metadanych (tj. sprawdzasz niechronioną wersję dokumentu), możesz użyć elementu **Content_Name** w następującym formacie: `https://track.azurerms.com/#/?q={ContentName}`
 
@@ -150,22 +146,17 @@ Aby dodać element interfejsu użytkownika **Śledź użycie** do aplikacji, wys
 
 Klient musi otworzyć odpowiedni adres URL w przeglądarce. Uwierzytelnianie i przekierowanie zostanie przeprowadzone przez portal śledzenia dokumentów usługi RMS.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
-* [Typy właściwości metadanych licencji](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [Preferencje powiadamiania](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [Typ powiadomienia](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
-
- 
+* [Typy właściwości metadanych licencji](https://msdn.microsoft.com/library/dn974062.aspx)
+* [Preferencje powiadamiania](https://msdn.microsoft.com/library/dn974063.aspx)
+* [Typ powiadomienia](https://msdn.microsoft.com/library/dn974064.aspx)
+* [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+* [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
+* [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
+* [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+* [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
+* [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
 
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

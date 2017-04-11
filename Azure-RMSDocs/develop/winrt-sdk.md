@@ -3,8 +3,9 @@ title: Konfiguracja Sklepu Windows | Azure RMS
 description: "Aplikacje ze Sklepu Windows mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 763e99e40bbe329305e97757e87d10b048cc62e9
-
-
+ms.openlocfilehash: e10588c166beb48d98aba619d9e2269d5f808f3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Konfiguracja Sklepu Windows
+# <a name="windows-store-setup"></a>Konfiguracja Sklepu Windows
 
 Aplikacje ze Sklepu Windows mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji przy użyciu usługi Azure Active Directory Rights Management (AAD RM).
 
@@ -31,7 +29,7 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 -   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
 -   [Zobacz też](#see-also)
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 
 Musisz mieć następujące oprogramowanie w systemie deweloperskim:
@@ -44,11 +42,11 @@ Musisz mieć następujące oprogramowanie w systemie deweloperskim:
 
 Temat [Nowości](release-notes.md) zawiera informacje dotyczące aktualizacji interfejsu API, urządzeń i środowiska oraz informacje o wersji i często zadawane pytania.
 
-## Opcjonalne
+## <a name="optional"></a>Opcjonalne
 
 Biblioteka interfejsów użytkownika firmy Microsoft udostępnia interfejs wielokrotnego użytku do operacji konsumenckich i zabezpieczających dla deweloperów, którzy nie chcą tworzyć własnego niestandardowego interfejsu użytkownika — [Biblioteka interfejsów użytkownika dla aplikacji ze Sklepu Windows](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore). Firma Microsoft udostępnia również przykładową aplikację ze Sklepu Windows — [Przykładowa aplikacja dla Sklepu Windows korzystająca z usługi RMS](https://github.com/AzureADSamples/rms-samples-for-windowsstore).
 
-## Konfigurowanie środowiska deweloperskiego
+## <a name="configuring-your-development-environment"></a>Konfigurowanie środowiska deweloperskiego
 
 
 -   Otwórz program Visual Studio.
@@ -62,7 +60,7 @@ Biblioteka interfejsów użytkownika firmy Microsoft udostępnia interfejs wielo
     ![Dodawanie odwołania](../media/winrtsetup-addref.png)
 
 -   W oknie dialogowym **Dodawanie odwołania** kliknij przycisk **Przeglądaj** i wybierz plik *Microsoft.RightsManagement.dll* znajdujący się w folderze, do którego wyodrębniono zestaw SDK.
--   **Aplikacje zarządzane** — To odwołanie należy dodać w przypadku tworzenia aplikacji zarządzanej. Wybierz pozycje **Windows 8.1**-&gt;**Rozszerzenia** i zaznacz pole wyboru **Windows Visual C++ Runtime Package for Windows**.
+-   **Aplikacje zarządzane** — To odwołanie należy dodać w przypadku kompilowania aplikacji zarządzanej. Wybierz pozycje **Windows 8.1**-&gt;**Rozszerzenia** i zaznacz pole wyboru **Windows Visual C++ Runtime Package for Windows**.
 
     ![Dodawanie rozszerzeń](../media/winrtsetup-refmngr.png)
 
@@ -70,7 +68,7 @@ Biblioteka interfejsów użytkownika firmy Microsoft udostępnia interfejs wielo
 
 Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla Sklepu Windows.
 
-### Zobacz też
+### <a name="see-also"></a>Zobacz też
 
 [Wprowadzenie](get-started.md)
 
@@ -84,8 +82,4 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla Sklepu Wi
 
 [Dokumentacja interfejsu API systemu Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,8 +4,22 @@
 # [Wdrażanie i korzystanie z usługi](/information-protection/deploy-use/activate-service)
 # [Wdrażanie i korzystanie z klienta](use-client.md)
 ## [Klient usługi Rights Management](use-client.md)
-### [Instalowanie klienta usługi Azure Information Protection](info-protect-client.md)
 ### [Uwagi dotyczące wdrażania klienta usługi RMS](client-deployment-notes.md)
+### [Klient usługi Azure Information Protection](aip-client.md)
+#### [Klient usługi Azure Information Protection: historia wersji](client-version-release-history.md)
+#### [Podręcznik administratora klienta usługi Azure Information Protection](client-admin-guide.md)
+##### [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)
+##### [Śledzenie dokumentów](client-admin-guide-document-tracking.md)
+##### [Obsługiwane typy plików](client-admin-guide-file-types.md)
+##### [Polecenia programu PowerShell](client-admin-guide-powershell.md)
+#### [Podręcznik użytkownika usługi Azure Information Protection](client-user-guide.md)
+##### [Pobieranie i instalowanie klienta](install-client-app.md)
+##### [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md)
+##### [Śledzenie i odwoływanie dokumentów](client-track-revoke.md)
+##### [Otwieranie plików chronionych](client-view-use-files.md)
+##### [Usuwanie etykiet i ochrony](client-remove-label-protection.md)
+##### [Tryb z samą ochroną](client-protection-only-mode.md)
+##### [Zadania, które były wykonywane w aplikacji RMS sharing](upgrade-client-app.md)
 ### [Ochrona za pomocą usługi RMS z użyciem infrastruktury FCI w systemie Windows Server](configure-fci.md)
 #### [Skrypt programu PowerShell](fci-script.md)
 ### [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](sharing-app-windows.md)
@@ -23,8 +37,3 @@
 ##### [Używanie skrótów klawiaturowych](sharing-app-keyboard-shortcuts.md)
 ##### [Opcje okien dialogowych](sharing-app-dialog-box.md)
 # [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
-
-
-<!--HONumber=Sep16_HO4-->
-
-

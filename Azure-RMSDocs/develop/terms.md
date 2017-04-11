@@ -1,10 +1,11 @@
 ---
-title: Terminologia | Azure RMS
-description: "Definicje terminów specyficznych dla usług Rights Management Services."
+title: "Terminologia dla deweloperów dotycząca usługi AIP | Dokumentacja firmy Microsoft"
+description: "Zbiór definicji dotyczących usług Rights Management Services."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,16 +14,13 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cf12a824d3d56ca2df234ba0732d0c4eaae6358e
-
-
+ms.openlocfilehash: 0e923d1bb3d4fd8b9b84f065b9dd32ddd041f7ba
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
+# <a name="terms"></a>Terminologia
 
-# Terminologia
-
-Definicje terminów specyficznych dla usług Rights Management Services.
+Zbiór definicji dotyczących usług Azure Information Protection.
 
 **Przestarzały algorytm**  
 Modalne ustawienie implementujące starszy schemat ochrony zawartości, w szczególności odnoszący się do trybu szyfrowania ECB. W tym zestawie SDK to ustawienie umożliwia wygenerowanie licencji zgodnych z biblioteką MSDRM używaną przez [zestaw AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx).
@@ -37,15 +35,5 @@ Domyślny format pliku (zwany także formatem PFile) dla usług AD RMS, pełnią
 
 Format PFile jest niewidoczny dla dewelopera aplikacji, ponieważ jest wbudowany w zestaw Microsoft Rights Management SDK 4.2.
 
- 
 
- 
-
-
-
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

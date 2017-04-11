@@ -3,8 +3,9 @@ title: "Pliki środowiska programistycznego | Azure RMS"
 description: "W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
-
-
+ms.openlocfilehash: 8f52c6b737603e8fd71b32c53991bb015f945abc
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Pliki środowiska deweloperskiego
+# <a name="development-environment-files"></a>Pliki środowiska deweloperskiego
 
 W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze.
 
@@ -43,18 +41,9 @@ Zestaw Rights Management Services SDK 2.1 zawiera następujące pliki zainstalow
 |Ipcerror.h|\inc|Zawiera publiczne kody błędów wyeksportowane przez zestaw RMS SDK 2.1.|
 |Ipcfile.h|\inc|Zawiera interfejsy API plików wyeksportowane przez zestaw RMS SDK 2.1.|
 |Msipc.lib|\lib|Biblioteka do dołączenia podczas tworzenia aplikacji x86 przy użyciu zestawu RMS SDK 2.1.|
-|Msipc_s.lib|\lib|Zapewnia punkt wejścia dla metody [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) dla aplikacji x86.|
+|Msipc_s.lib|\lib|Zapewnia punkt wejścia dla metody [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) dla aplikacji x86.|
 |Msipc.lib|\lib\x64|Biblioteka do dołączenia podczas tworzenia aplikacji x64 przy użyciu zestawu RMS SDK 2.1.|
-|Msipc_s.lib|\lib\x64|Zapewnia punkt wejścia dla metody [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) dla aplikacji x64.|
+|Msipc_s.lib|\lib\x64|Zapewnia punkt wejścia dla metody [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) dla aplikacji x64.|
 |Genmanifest.exe|\tools|Generuje manifest używany podczas tworzenia aplikacji obsługującej usługę RMS.|
- 
 
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

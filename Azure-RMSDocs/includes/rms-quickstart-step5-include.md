@@ -11,7 +11,7 @@ Ten krok jest opcjonalny, ale większość osób chce wiedzieć, czy załącznik
 
 ![Zrzuty ekranu przedstawiające samouczek dotyczący usługi Azure RMS](../media/AzRMS_Tutorial_5_Screenshots.png)
 
-#### Aby śledzić chroniony dokument
+#### <a name="to-track-your-protected-document"></a>Aby śledzić chroniony dokument
 
 1.  Korzystając z programu Outlook, na karcie **Narzędzia główne** w grupie **RMS** kliknij pozycję **Śledź użycie**.
 
@@ -30,16 +30,11 @@ Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Pełne instrukcje dotyczące śledzenia dokumentów →|[Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](../rms-client/sharing-app-track-revoke.md)|
-|Dwuminutowy film wideo, który objaśnia i przedstawia funkcję śledzenia dokumentu →|[Śledzenie dokumentów i odwoływanie dostępu w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
+|Dwuminutowy film wideo, który objaśnia i przedstawia funkcję śledzenia dokumentu →|[Śledzenie i odwoływanie dokumentów w usłudze Azure RMS](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
 |Rozwiązywanie problemów i pytania klientów →|[Często zadawane pytania dotyczące śledzenia dokumentów](https://technet.microsoft.com/dn947488)|
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Ten samouczek przeprowadził Cię tylko przez jeden scenariusz związany z ochroną danych za pomocą usługi Azure RMS. Aby zobaczyć inne typowe zastosowania, zobacz [Azure RMS w działaniu](../understand-explore/what-admins-users-see.md). W tym artykule są też dostępne inne sekcje, które również mogą być przydatne, np. dotyczące sposobu działania usługi Azure RMS i problemów biznesowych, które może ona rozwiązać.
 
 Jeśli wszystko jest gotowe do wdrożenia usługi Azure RMS, użyj [planu wdrożenia usługi Azure Rights Management](../plan-design/deployment-roadmap.md), który zawiera kroki związane z wdrażaniem i linki prowadzące do dokładnych instrukcji.
-
-
-
-<!--HONumber=Jul16_HO3-->
-
 

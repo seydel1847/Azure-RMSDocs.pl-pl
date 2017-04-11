@@ -3,8 +3,9 @@ title: "Porady&#58; włączanie rejestrowania błędów i wydajności | Azure RM
 description: "Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,18 +14,23 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 118aa3e25c6be9d0bf43141585d79030fc79224a
-
-
+ms.openlocfilehash: eb22d6afac9b7846732d78cd5d0799cb8cae1f1a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Porady: włączanie rejestrowania błędów i wydajności
+# <a name="how-to-enable-error-and-performance-logging"></a>Porady: włączanie rejestrowania błędów i wydajności
 Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
 
-## Przegląd ##
-Włączenie automatycznego przekazywania dzienników diagnostyki i wydajności do firmy Microsoft pozwala zwiększyć komfort pracy użytkowników i usprawnić rozwiązywanie problemów. Aby chronić prywatność użytkowników, przed włączeniem automatycznego rejestrowania deweloper aplikacji musi poprosić użytkownika o zgodę.
+## <a name="overview"></a>Przegląd ##
+Włączenie automatycznego przekazywania danych dzienników diagnostyki, wydajności i telemetrii do firmy Microsoft pozwala zwiększyć komfort pracy użytkowników i usprawnić rozwiązywanie problemów. 
+
+> [!IMPORTANT] 
+> Aby chronić prywatność użytkowników, przed włączeniem automatycznego rejestrowania deweloper aplikacji musi poprosić użytkownika o zgodę.
+
+> [!NOTE]
+> Poniżej jako przykład przedstawiamy standardową wiadomość używaną przez firmę Microsoft w przypadku powiadamiania o rejestrowaniu: 
+>
+> *Włączając rejestrowanie błędów i wydajności, zgadzasz na wysyłanie do firmy Microsoft informacji o błędach i wydajności.  Firma Microsoft będzie automatycznie zbierać dane dotyczące błędów i wydajności w Internecie („Dane”).  Firma Microsoft używa tych Danych w celu zapewniania i zwiększania jakości, bezpieczeństwa i integralności swoich produktów i usług.  Na przykład analizujemy wydajność i niezawodność, sprawdzając, jakich funkcji używasz, jak szybko funkcje reagują, jaka jest wydajność urządzenia, jakie są interakcje z interfejsem użytkownika oraz jakie problemy wystąpiły podczas pracy z produktem.  Dane będą również zawierać informacje o konfiguracji oprogramowania, takie jak aktualnie działające oprogramowanie i adres IP.*  
 
 Do zarządzania rejestrowaniem służą dwie właściwości.
 
@@ -39,7 +45,7 @@ Do zarządzania rejestrowaniem służą dwie właściwości.
 
 W każdym z poniższych przykładowych fragmentów kodu aplikacja wywołująca może ustawić właściwość lub wykonać zapytanie dotyczące tej właściwości.
 
-### Android ###
+### <a name="android"></a>Android ###
 Włączanie automatycznego rejestrowania
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -52,7 +58,7 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     Boolean isLogUploadEnabled = preferences.getBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, false);
 
-## iOS ##
+## <a name="ios"></a>iOS ##
 Włączanie automatycznego rejestrowania
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
@@ -74,12 +80,12 @@ Pobieranie ustawienia kontroli poziomu dziennika
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
  
 
-## Windows ##
+## <a name="windows"></a>Windows ##
 Włączanie automatycznego rejestrowania
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-Więcej informacji o ustawieniach opcjonalnych można znaleźć w sekcji dotyczącej elementu [CustomerExperienceOptions](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions).
+Więcej informacji o ustawieniach opcjonalnych można znaleźć w sekcji dotyczącej elementu [CustomerExperienceOptions](https://msdn.microsoft.com/library/microsoft.rightsmanagement.customerexperienceoptions.aspx).
 
 Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 
@@ -90,12 +96,4 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 
 **Linux / C++:** ten zestaw SDK udostępnia podstawowe funkcje rejestrowania, ale nie są one tak zaawansowane jak w przypadku innych platform. Aby uzyskać więcej informacji, zobacz sekcję dotyczącą **rozwiązywania problemów** związanych z plikiem „README.md” na stronie [RMS SDK for portable C++](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) (Zestaw RMS SDK dla przenośnego kodu C++).
 
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

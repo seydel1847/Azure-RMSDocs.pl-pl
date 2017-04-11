@@ -1,9 +1,10 @@
 ---
-title: "Obsługa serwera lokalnego w celu ochrony danych | Azure Information Protection"
+title: "Serwery obsługujące ochronę danych za pomocą usługi RMS — AIP"
 description: "Identyfikowanie produktów serwera lokalnego, które mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection przy użyciu łącznika usługi Rights Management."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -11,15 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 22f63cae58f6dfe7e0381a561ffb348177585809
-
-
+ms.openlocfilehash: 37c354df794ca60271f7c04641a9de6009605179
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
-
-# Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management
+# <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -45,24 +42,22 @@ Aby użyć tego łącznika, należy skonfigurować synchronizację katalogów mi
 
 -   **Serwery plików z systemem Windows Server, które obsługują infrastrukturę klasyfikacji plików**:
 
+    -   Windows Server 2016
+
     -   Windows Server 2012 R2
 
     -   Windows Server 2012
 
     > [!NOTE]
-    > Ponieważ serwery plików z systemem Windows Server 2008 R2 nie mają wbudowanej akcji zadania zarządzania plikami, która pozwala na zastosowanie ochrony przy użyciu usługi Rights Management, w tym scenariuszu nie można używać łącznika usługi Rights Management. Można jednak użyć pliku klasyfikacji infrastruktury i usługi Azure RMS w tych systemach operacyjnych w przypadku konfigurowania niestandardowego zadania zarządzania plikami, aby uruchomić plik wykonywalny lub skrypt służący do ochrony plików przy użyciu usługi Azure RMS. Na przykład skrypt programu Windows PowerShell, który używa [poleceń cmdlet ochrony usługi RMS](https://msdn.microsoft.com/library/azure/mt433195.aspx).
+    > Ponieważ serwery plików z systemem Windows Server 2008 R2 nie mają wbudowanej akcji zadania zarządzania plikami, która pozwala na zastosowanie ochrony przy użyciu usługi Rights Management, w tym scenariuszu nie można używać łącznika usługi Rights Management. Można jednak użyć pliku klasyfikacji infrastruktury i usługi Azure RMS w tych systemach operacyjnych w przypadku konfigurowania niestandardowego zadania zarządzania plikami, aby uruchomić plik wykonywalny lub skrypt służący do ochrony plików przy użyciu usługi Azure RMS. Przykładem jest skrypt programu Windows PowerShell, który używa [poleceń cmdlet usługi Azure Information Protection](/powershell/azureinformationprotection/vlatest/aip).
     > 
     > Można również używać tych poleceń cmdlet na serwerach z nowszymi wersjami systemu Windows Server, ponieważ umożliwiają one ochronę wszystkich typów plików. Łącznik usługi RMS chroni tylko pliki pakietu Office. Dokładne instrukcje można znaleźć w temacie [Ochrona za pomocą usługi RMS z użyciem infrastruktury klasyfikacji plików (FCI)](../rms-client/configure-fci.md).
 
-Łącznik usługi Rights Management jest obsługiwany w systemach Windows Server 2012 R2, Windows Server 2012 i Windows Server 2008 R2.
+Łącznik usługi Rights Management jest obsługiwany w systemach Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 i Windows Server 2008 R2.
 
 Aby uzyskać więcej informacji o sposobie konfigurowania łącznika usługi Rights Management na wymienionych serwerach lokalnych, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements-azure-rms.md).
 
-
-
-<!--HONumber=Sep16_HO5-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

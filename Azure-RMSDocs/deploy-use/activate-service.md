@@ -1,9 +1,10 @@
 ---
-title: "Aktywacja usługi Azure Rights Management | Azure Information Protection"
+title: "Aktywacja usługi Azure Rights Management — AIP"
 description: "Konieczna jest aktywacja usługi Azure Rights Management, zanim Twoja organizacja będzie mogła rozpocząć chronienie dokumentów i wiadomości e-mail za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
-
-
+ms.openlocfilehash: 5f03b34b825b9fc693741336c54ee4049f636741
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Aktywacja usługi Azure Rights Management
+# <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -37,22 +35,22 @@ Aby uzyskać instrukcje dotyczące aktywowania usługi Rights Management z pozio
 
 
 - [Centrum administracyjne usługi Office 365 — wersja zapoznawcza](activate-office365-preview.md)
-- [Centrum administracyjne usługi Office 365 — wersja classic](activate-office365-classic.md)
+- [Centrum administracyjne usługi Office 365 — wersja klasyczna](activate-office365-classic.md)
 - [Klasyczny portal Azure](activate-azure-classic.md)
 
-Alternatywnie możesz użyć programu Windows PowerShell do aktywacji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
+Możesz również użyć programu PowerShell do aktywacji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
 
 1. Zainstaluj narzędzie Azure Rights Management Administration Tool, które instaluje moduł administracyjny usługi Azure Rights Management. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
 
-2. W sesji programu Windows PowerShell uruchom polecenie [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx) i po wyświetleniu odpowiedniego monitu podaj szczegóły konta administratora globalnego dla dzierżawy usługi Azure Information Protection.
+2. W sesji programu PowerShell uruchom polecenie [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx) i po wyświetleniu odpowiedniego monitu podaj szczegóły konta administratora globalnego dla dzierżawy usługi Azure Information Protection.
 
 3. Uruchom polecenie [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx), które aktywuje usługę Azure Rights Management.
 
-## Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
-Jeśli nie chcesz, aby wszyscy użytkownicy mogli od razu chronić pliki za pomocą usługi Azure Rights Management, możesz skonfigurować kontrolki dołączania użytkowników, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) programu Windows PowerShell. To polecenie można uruchomić przed aktywacją usługi Azure Rights Management lub po niej.
+## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
+Jeśli nie chcesz, aby wszyscy użytkownicy mogli od razu chronić pliki za pomocą usługi Azure Rights Management, możesz skonfigurować kontrolki dołączania użytkowników, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) programu PowerShell. To polecenie można uruchomić przed aktywacją usługi Azure Rights Management lub po niej.
 
 > [!IMPORTANT]
-> Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu Windows PowerShell usługi Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).
+> Aby użyć tego polecenia, musisz mieć co najmniej wersję **2.1.0.0** [modułu programu PowerShell usługi Azure Rights Management](http://go.microsoft.com/fwlink/?LinkId=257721).
 >
 > Aby sprawdzić zainstalowaną wersję, uruchom polecenie **(Get-Module aadrm –ListAvailable).Version**
 
@@ -61,26 +59,25 @@ Przykładowo jeśli chcesz, aby wstępnie tylko administratorzy w grupie „dzia
 ```
 Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b038-38b519009503
 ```
-Zauważ, że w tej opcji konfiguracji musisz określić grupę; nie można określać poszczególnych użytkowników.
+Zauważ, że w tej opcji konfiguracji musisz określić grupę; nie można określać poszczególnych użytkowników. Aby uzyskać identyfikator obiektu dla grupy, użyj usługi Azure AD PowerShell — na przykład w przypadku [wersji 1.0](https://msdn.microsoft.com/library/azure/jj151815\(v=azure.98\).aspx) modułu użyj polecenia [Get-MsolGroup](https://msdn.microsoft.com/library/azure/dn194130\(v=azure.98\).aspx).
 
 Ewentualnie, jeśli chcesz się upewnić, że tylko użytkownicy prawidłowo licencjonowani do użycia usługi Azure Information Protection będą mogli chronić zawartość:
 
 ```
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ```
+
+Aby uzyskać więcej informacji na temat tego polecenia cmdlet i dodatkowe przykłady, zobacz pomoc do polecenia [Set-AadrmOnboardingControlPolicy](https://msdn.microsoft.com/library/dn857521.aspx).
+
 Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Przykładowo nie będą widzieć w swoich klientach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub skonfigurowanych szablonów niestandardowych.  Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat.
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Po aktywowaniu usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dla Twojej organizacji możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Information Protection dla użytkowników i administratorów. 
 
-Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templates.md), aby ułatwić użytkownikom stosowanie ochrony informacji wobec plików, połączyć się z lokalnymi serwerami, aby użyć usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] poprzez zainstalowanie [łącznika usługi Rights Management](deploy-rms-connector.md) i wdrożyć [aplikację Rights Management sharing](../rms-client/sharing-app-windows.md), która obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
+Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templates.md), aby ułatwić użytkownikom stosowanie ochrony informacji dla plików, połączyć się z lokalnymi serwerami w celu użycia usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] poprzez zainstalowanie [łącznika usługi Rights Management](deploy-rms-connector.md) i wdrożyć [klienta usługi Azure Information Protection ](../rms-client/aip-client.md), który obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
 
 Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przeprowadzenia dodatkowej konfiguracji przed użyciem narzędzia Zarządzanie prawami do informacji (IRM). Aby uzyskać informacje o współdziałaniu aplikacji z usługą Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
 
 
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

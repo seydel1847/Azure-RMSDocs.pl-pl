@@ -2,8 +2,9 @@
 title: "Nowości i informacje o wersji | Azure RMS"
 description: "Spis ważnych zmian i funkcji w tej nowej wersji zestawu RMS SDK."
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,69 +13,56 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: da4dce1c44cd79e90e7d232f74f194b734dea0f6
-
-
+ms.openlocfilehash: acd6dc2190996787b5354407bbaedec921a5b48c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
+# <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 
-# Nowości i informacje o wersji
+## <a name="whats-new"></a>Co nowego
+Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej wersji zestawu RMS SDK.
 
-## Co nowego
-Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej nowej wersji zestawu RMS SDK.
-
--   [Nowości z czerwca 2016 r.](#new-for-June-2016)
--   [Aktualizacja z grudnia 2015 r.](#december-2015-update)
--   [Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++](#july-2015-update-adds-support-for-linux-c-developm)
--   [Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem](#may-2015-update-adds-logging-control)
--   [Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows](#february-2015-update-adds-windows-store-application-support)
--   [Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone](#january-2015-update-adds-winphone-platform-support)
--   [Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
--   [Informacje o wersji](#release-notes)
--   [Często zadawane pytania](#frequently-asked-questions)
-
-### Nowości z czerwca 2016 r.
+### <a name="new-for-june-2016"></a>Nowości z czerwca 2016 r.
 
 - **Obsługa nowoczesnego uwierzytelniania** — umożliwi logowanie oparte na bibliotece uwierzytelniania usługi Active Directory (ADAL) do aplikacji z obsługą usługi RMS. Zostaną udostępnione opcje logowania, takie jak usługa Multi-Factor Authentication (MFA), oparci na języku SAML dostawcy tożsamości firm zewnętrznych z aplikacjami klienckimi usługi RMS oraz uwierzytelnianie oparte na kartach inteligentnych i certyfikatach. Równocześnie zostanie wyeliminowana potrzeba korzystania z protokołu uwierzytelniania podstawowego w aplikacjach z obsługą usługi RMS.
-- **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach. 
+- **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach.
 - Ulepszenia wydajności
 - Poprawki
 
 
-### Aktualizacja z grudnia 2015 r.
+### <a name="december-2015-update"></a>Aktualizacja z grudnia 2015 r.
 
 W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następujące funkcjonalności:
 
 -   Śledzenie dokumentów, usługa RMS tylko w trybie online dla systemów operacyjnych iOS/OS X i Android.
 
-    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemach iOS/OS X, zapoznaj się z klasą [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc), która dostarcza informacje dotyczące śledzenia, a także dodatkową metodą rejestrowania śledzenia dokumentów w zasadzie [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc). Istnieją podobne dodatki dla systemu Android do klasy [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) i zasady [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy).
+    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemach iOS/OS X, zapoznaj się z klasą [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx), która dostarcza informacje dotyczące śledzenia, a także dodatkową metodą rejestrowania śledzenia dokumentów w zasadzie [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Istnieją podobne dodatki dla systemu Android do klasy [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) i zasady [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
 
-    Aby uzyskać szczegółowy opis funkcjonalności śledzenia dokumentów, zobacz temat [**Porady: używanie śledzenia dokumentów**](how-to-use-document-tracking.md).
+    Aby uzyskać szczegółowy opis funkcjonalności śledzenia dokumentów, zobacz temat [Instrukcje: korzystanie ze śledzenia dokumentów](how-to-use-document-tracking.md).
 
 -   Zbiór metod synchronicznych, które w sposób równoległy realizują wersje asynchroniczne dla interfejsu API systemu Android:
 
-    [**Metoda synchroniczna CustomProtectedInputStream.create**](/information-protection/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_create_synchronous_method_java)
+    [Metoda synchroniczna CustomProtectedInputStream.create](https://msdn.microsoft.com/library/mt631362.aspx)
 
-    [**Metoda synchroniczna CustomProtectedOutputStream.create**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [Metoda synchroniczna CustomProtectedOutputStream.create](https://msdn.microsoft.com/library/mt631363.aspx)
 
-    [**Metoda synchroniczna ProtectedFileInputStream.create**](/information-protection/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_synchronous_method)
+    [Metoda synchroniczna ProtectedFileInputStream.create](https://msdn.microsoft.com/library/mt631375.aspx)
 
-    [**Metoda synchroniczna ProtectedFileOutputStream.create**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [Metoda synchroniczna ProtectedFileOutputStream.create](https://msdn.microsoft.com/library/mt631376.aspx)
 
-    [**Metoda synchroniczna TemplateDescriptor.getTemplates**](/information-protection/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_gettemplates_synchronous_method_java)
+    [Metoda synchroniczna TemplateDescriptor.getTemplates](https://msdn.microsoft.com/library/mt631380.aspx)
 
-    [**Metoda synchroniczna UserPolicy.acquire**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_acquire_synchronous_method_java)
+    [Metoda synchroniczna UserPolicy.acquire](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [**Metoda synchroniczna UserPolicy.create (PolicyDescriptor...)**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_policydescriptor_______synchronous_method_java)
+    [Metoda synchroniczna UserPolicy.create (PolicyDescriptor...)**](https://msdn.microsoft.com/library/mt631385.aspx)
 
-    [**Metoda synchroniczna UserPolicy.create (TemplateDescriptor...)**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_templatedescriptor_______synchronous_method_java)
+    [Metoda synchroniczna UserPolicy.create (TemplateDescriptor...)](https://msdn.microsoft.com/library/mt631386.aspx)
 
--   Nowa klasa [**ProtectedBuffer**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) została dodana do interfejsu API systemu Android.
+-   Nowa klasa [ProtectedBuffer](https://msdn.microsoft.com/library/mt631369.aspx) została dodana do interfejsu API systemu Android.
 -   Aktualizacje poprawiające komunikowanie błędów i rozwiązywanie problemów.
 -   Znaczący wzrost wydajności operacji kryptograficznych.
 
-### Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
+### <a name="july-2015-update---adds-support-for-linux--c-development"></a>Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
 
 W tej wersji dodano następujące funkcjonalności:
 
@@ -82,7 +70,7 @@ W tej wersji dodano następujące funkcjonalności:
 
     Aby uzyskać więcej informacji, zobacz temat [Rozpoczynanie pracy](get-started.md).
 
-### Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
+### <a name="may-2015-update---adds-logging-control"></a>Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
 
 W tej wersji dodano obsługę następujących funkcjonalności:
 
@@ -90,7 +78,7 @@ W tej wersji dodano obsługę następujących funkcjonalności:
 
     Szyfrowanie i deszyfrowanie aplikacji może działać niezależnie i równolegle.
 
-    Aby uzyskać więcej informacji, zobacz klasę [**MSProtector**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc).
+    Aby uzyskać więcej informacji, zobacz klasę [MSProtector](https://msdn.microsoft.com/library/mt210993.aspx).
 
     Włączono ustawienia kontroli poziomu dziennika.
 
@@ -98,33 +86,33 @@ W tej wersji dodano obsługę następujących funkcjonalności:
 
     Dodano obsługę czyszczenia pamięci podręcznej.
 
-    Aby uzyskać więcej informacji, zobacz metodę [**MSProtection:resetStateWithCompletionBlock**](/information-protection/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc).
+    Aby uzyskać więcej informacji, zobacz metodę [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx).
 
-### Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
+### <a name="february-2015-update---adds-windows-store-application-support"></a>Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
 
 W tym wydaniu dodano obsługę aplikacji ze Sklepu Windows, zapewniając funkcjonalność odpowiadającą wydaniom dla systemów Windows Phone, Android i iOS/OS zestawu RMS SDK 4.1.
 
-### Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
+### <a name="january-2015-update---adds-winphone-platform-support"></a>Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
 
 W tym wydaniu dodano obsługę systemu Windows Phone, zapewniając funkcjonalność odpowiadającą wydaniom dla systemów Android i iOS/OS zestawu RMS SDK 4.1.
 
-### Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1
+### <a name="october-2014-update---upgrade-to-microsoft-rms-sdk-41"></a>Aktualizacja z października 2014 r. — uaktualnienie do zestawu Microsoft RMS SDK 4.1
 
 W wydaniu wersji 4.1 zestawu RMS SDK dodano następujące nowe funkcjonalności do systemów Google Android i Apple iOS / OS X.
 
 -   Rozszerzenia API zestawu SDK dla systemów Android i iOS/OS X dotyczące przetwarzania *zgody użytkownika*, umożliwiające potwierdzanie przez użytkownika działań zestawu SDK. Obecnie obsługiwanymi typami wyrażania zgody są śledzenie dokumentów i dostęp do nieznanych adresów URL usługi AD RMS.
 
-    Aby uzyskać więcej informacji, zobacz jako przykład wersję [**interfejsu ConsentCallback**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java) przeznaczoną dla interfejsu API systemu Android.
+    Aby uzyskać więcej informacji, zobacz jako przykład wersję [ConsentCallback interface](https://msdn.microsoft.com/library/dn833503.aspx) przeznaczoną dla interfejsu API systemu Android.
 
 -   Systemy iOS 8 i OS X 10.10 (Yosemite) są teraz obsługiwane. Wprowadzono również kilka zmian nazw właściwości wymaganych przez Xcode 6.
 
-    Na przykład nazwa właściwości MSUserPolicy.name została zmieniona na [**MSUserPolicy.policyName**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc).
+    Na przykład nazwa właściwości MSUserPolicy.name została zmieniona na [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx).
 
-## Informacje o wersji
+## <a name="release-notes"></a>Informacje o wersji
 
 W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i poprzednich wydaniach interfejsów API zestawu Microsoft Rights Management SDK 4.x.
 
-**Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla platform iOS / OS X i Android**
+**Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla systemów iOS/OS X i Android**
 
 -   **Obsługa usług AD RMS** —administratorzy IT mogą używać aplikacji z włączoną usługą RMS na urządzeniach przenośnych z rozszerzeniami dla urządzeń przenośnych nowego serwera usług AD RMS.
 -   **Użycie trybu offline** — użytkownicy końcowi mogą uzyskać dostęp do chronionych przez usługę RMS danych w trybie offline.
@@ -146,11 +134,11 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
     **Rozwiązanie** — upewnij się, że aplikacja nie zezwala na wywołania interfejsu API systemu Android przez wiele wystąpień.
 
--   W razie użycia metody [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** z parametrem length różnym od wartości *array.length* późniejsze użycie zawartości za pomocą zestawu SDK jest niemożliwe.
+-   W razie użycia metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) z parametrem length różnym od wartości *array.length* późniejsze użycie zawartości za pomocą zestawu SDK jest niemożliwe.
 
-    **Rozwiązanie** — jest to znany problem. Aby go unikać, albo zawsze przekazuj parametr **byte \[\]** array o długości odpowiadającej parametrowi length, albo używaj metody [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)**.
+    **Rozwiązanie** — jest to znany problem. Aby go unikać, zawsze przekazuj parametr *byte \[\]* array o długości odpowiadającej parametrowi length lub używaj metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array).
 
-**iOS i OS X**
+**Systemy iOS i OS X**
 
 -   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety z powodu usterki, obecnie nie obsługujemy całkowicie 1. lokalizacji. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
 
@@ -174,14 +162,14 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
     Następujących metod nie wolno uruchamiać jednocześnie. Aby monitorować przebieg działania, użyj wspomnianego podejścia bloku ukończenia.
 
-    - [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
-    - [**customProtectedDataWithPolicy**](/information-protection/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
+    - [MSProtectedData.protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx)
+    - [MSCustomProtectedData.customProtectedDataWithPolicy](https://msdn.microsoft.com/library/dn758315.aspx)
 
 
 
 **Uwaga**  — aplikacje MDI nie są obsługiwane przez nasz interfejs API dla systemu iOS.
 
-## Często zadawane pytania
+## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
 **Wszystkie platformy**
 
@@ -220,18 +208,10 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Odpowiedź**: nie wszystkie operacje mogą zostać anulowane, więc operacja anulowania jest wykonywana w najlepszy możliwy sposób.
 
-**OS X**
+**OS x**
 
 **Pytanie**: przykładowa platforma aplikacji została dostosowana do wersji Xcode 5. Czy mogę pracować z wersją Xcode 4.6?
 
 **Odpowiedź**: OS X SDK współpracuje tylko z Xcode 4.6 i nowszymi wersjami, a także z systemem OS X 10.8 i nowszymi.
 
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

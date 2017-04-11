@@ -1,9 +1,10 @@
 ---
-title: "Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji Rights Management sharing | Azure Information Protection"
+title: "Ochrona miejscowa za pomocą aplikacji RMS sharing — AIP"
 description: "Instrukcje dotyczące sposobu bezpiecznego przechowywania pliku na komputerze, serwerze lub innym urządzeniu magazynującym."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,23 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
-
-
+ms.openlocfilehash: a49a3cee8a13f677bd532a36f2e1e9ca7f919f28
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
+# <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management
 
-# Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management
-
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który nie jest chroniony. Następnie można pozostawić plik w jego obecnej lokalizacji, skopiować do innego folderu lub na inne urządzenie albo udostępnić folder zawierający plik — aplik cały czas będzie chroniony. Chroniony plik można także dołączyć do wiadomości e-mail, chociaż zalecaną metodą udostępniania pliku chronionego pocztą e-mail jest bezpośrednie dołączenie go z poziomu Eksploratora plików lub aplikacji pakietu Office (zobacz [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md)).
 
 > [!TIP]
 > Jeśli podczas próby włączenia ochrony plików są wyświetlane błędy, zobacz [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
-## Aby chronić plik na urządzeniu (ochrona miejscowa)
+## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>Aby chronić plik na urządzeniu (ochrona miejscowa)
 
 1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Na przykład:
 
@@ -54,18 +52,14 @@ Jeśli zmienisz zdanie o uprawnieniach lub później zajdzie potrzeba ich zmodyf
 
 Jeśli później będzie konieczne usunięcie ochrony z pliku, zobacz [Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-remove-protection.md).
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

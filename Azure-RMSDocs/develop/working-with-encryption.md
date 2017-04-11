@@ -3,8 +3,9 @@ title: "Jak pracować z ustawieniami szyfrowania | Azure RMS"
 description: "Różne pakiety szyfrowania usługi Azure RMS i przykłady fragmentów kodu, w których zastosowano te pakiety."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,18 +14,15 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
-
-
+ms.openlocfilehash: bf327be47629532a716cc8239fc76d1a9ee1db46
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Instrukcje: korzystanie z ustawień szyfrowania
+# <a name="how-to-work-with-encryption-settings"></a>Instrukcje: korzystanie z ustawień szyfrowania
 
 Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawiera przykłady fragmentów kodu, w których zastosowano te pakiety.
 
-## Obsługa nowego domyślnego algorytmu szyfrowania AES 256
+## <a name="support-for-aes-256-the-new-default"></a>Obsługa nowego domyślnego algorytmu szyfrowania AES 256
 
 Żaden dodatkowy kod nie jest wymagany do korzystania z szyfrowania opartego na nowym domyślnym algorytmie *AES 256* przy założeniu, że do opracowywania aplikacji jest używana aktualizacja zestawu RMS SDK 2.1 z marca 2015 lub nowsza. Zachęcamy do rozważenia możliwości zaktualizowania aplikacji przy użyciu tej wersji w celu skorzystania z dodatkowych zalet zabezpieczeń algorytmu *AES 256*.
 
@@ -32,7 +30,7 @@ Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawi
 > Obsługa plików chronionych przy użyciu algorytmu *AES 256* była dostępna już w [wersji z października 2014 roku](release-notes-rtm.md). Jeśli używasz aplikacji utworzonych za pomocą wersji zestawu SDK sprzed października 2014 r., ta aktualizacja spowoduje awarię aplikacji. Upewnij się, że klienci aplikacji, które tworzysz, używają zaktualizowanego zestawu SDK lub są gotowi do natychmiastowego przeprowadzenia aktualizacji do najnowszej wersji aplikacji.
 
  
-## Obsługa szyfrowania w interfejsie API
+## <a name="api-encryption-support"></a>Obsługa szyfrowania w interfejsie API
 
 Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględniliśmy następujące trzy flagi w naszym interfejsie API i skojarzonych pakietach szyfrowania:
 
@@ -40,17 +38,17 @@ Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględni
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (nazywane również przestarzałymi algorytmami)
 
-Flag pakietów szyfrowania (zobacz [**Preferowane szyfrowanie**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)) można używać razem z nową flagą właściwości licencji **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**.
+Flag pakietów szyfrowania (zobacz [Preferowane szyfrowanie](https://msdn.microsoft.com/library/dn974065.aspx)) można używać razem z nową flagą właściwości licencji *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE*.
 
 Poniższe przykłady fragmentu kodu przedstawiają sposób użycia nowej właściwości licencji.
 
-## Przestarzałe algorytmy
+## <a name="deprecated-algorithms"></a>Przestarzałe algorytmy
 
-Flaga **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** nie jest już widoczna w interfejsie API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale aplikacje, które zostały już utworzone przy użyciu tej flagi, będą nadal działać, ponieważ flaga będzie prywatnie uznawana w kodzie interfejsu API.
+Flaga *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* nie jest już widoczna w interfejsie API. Oznacza to, że kompilacje aplikacji odwołujących się do tej flagi nie będą możliwe w przyszłości, ale aplikacje, które zostały już utworzone przy użyciu tej flagi, będą nadal działać, ponieważ flaga będzie prywatnie uznawana w kodzie interfejsu API.
 
 Nadal będzie można uzyskiwać korzyści zapewniane przez przestarzałą flagę algorytmów szyfrowania, zmieniając po prostu jedną flagę. Jako przykład mogą posłużyć poniższe fragmenty kodu.
 
-## Ochrona plików przy użyciu algorytmu AES 256 CBC4K
+## <a name="protect-files-with-aes-256-cbc4k"></a>Ochrona plików przy użyciu algorytmu AES 256 CBC4K
 
 Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domyślnym.
 
@@ -62,7 +60,7 @@ Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domy�
                                     &amp;pLicenseHandle);
 
 
-## Ochrona plików przy użyciu algorytmu AES-128 CBC4K
+## <a name="protect-files-with-aes-128-cbc4k"></a>Ochrona plików przy użyciu algorytmu AES-128 CBC4K
 
     C++
 
@@ -79,12 +77,12 @@ Zmiana kodu nie jest potrzebna, ponieważ *AES 256* CBC4K jest ustawieniem domy�
                            &amp;dwEncryptionMode);
 
 
-## Ochrona plików przy użyciu algorytmu AES-128 ECB (przestarzałe algorytmy)
+## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>Ochrona plików przy użyciu algorytmu AES-128 ECB (przestarzałe algorytmy)
 
 W tym przykładzie przedstawiono również nową metodą obsługi *przestarzałych algorytmów*.
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -97,12 +95,5 @@ W tym przykładzie przedstawiono również nową metodą obsługi *przestarzały
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
 
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

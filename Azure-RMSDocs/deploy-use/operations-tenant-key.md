@@ -1,9 +1,10 @@
 ---
-title: "Operacje związane z kluczem dzierżawy usługi Azure Rights Management | Azure Information Protection"
+title: "Operacje związane z kluczem dzierżawy usługi Azure Information Protection"
 description: "Identyfikowanie różnych poziomów kontroli i odpowiedzialności dostępnych w przypadku klucza dzierżawy usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 780c4db3e791dd427828550e428ec4ea18d55fd5
-
-
+ms.openlocfilehash: 24368df01f680958310b8d01c4f9a5a939e6f706
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Operacje związane z kluczem dzierżawy usługi Azure Information Protection
+# <a name="operations-for-your-azure-information-protection-tenant-key"></a>Operacje związane z kluczem dzierżawy usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -42,12 +40,4 @@ Po zidentyfikowaniu wdrożonej topologii wybierz jeden z poniższych elementów,
 - [Klucz dzierżawy zarządzany przez firmę Microsoft](operations-microsoft-managed-tenant-key.md)
 - [Klucz dzierżawy zarządzany przez klienta](operations-customer-managed-tenant-key.md)
 
-
-
-
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,9 +1,10 @@
 ---
-title: "Monitorowanie łącznika usługi Azure Rights Management | Azure Information Protection"
+title: "Monitorowanie łącznika usługi Rights Management — AIP"
 description: "Informacje dotyczące monitorowania łącznika i korzystania przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,20 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
-
-
+ms.openlocfilehash: a5a40277c95e376042fc77b7ba39bfc66a948fde
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Monitorowanie łącznika usługi Azure Rights Management
+# <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można skorzystać z następujących metod i informacji, które ułatwiają monitorowanie łącznika oraz korzystania przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
-## Wpisy dziennika zdarzeń aplikacji
+## <a name="application-event-log-entries"></a>Wpisy dziennika zdarzeń aplikacji
 
 Łącznik usługi RMS używa dziennika zdarzeń aplikacji do rejestrowania wpisów dotyczących **łącznika usługi Microsoft RMS**. 
 
@@ -41,7 +39,7 @@ Tak jak w przypadku wszystkich wpisów dziennika zdarzeń można przejść do sz
 
 Oprócz sprawdzenia dziennika zdarzeń przy pierwszym wdrożeniu łącznika można regularnie wyszukiwać ostrzeżenia i błędy. Na przykład łącznik może działać zgodnie z oczekiwaniami, ale inni administratorzy mogą zmienić zależne konfiguracje. Inny administrator może zmienić konfigurację serwera proxy sieci Web tak, aby serwery łącznika usługi RMS nie mogły już uzyskiwać dostępu do Internetu (błąd 3001), albo usunąć konto komputera z grupy autoryzowanej do korzystania z łącznika (ostrzeżenie 2001).
 
-### Identyfikatory i opisy dziennika zdarzeń
+### <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń
 
 Następujące sekcje zawierają informacje dotyczące identyfikowania możliwych identyfikatorów zdarzeń, opisów i innych dodatkowych informacji.
 
@@ -83,7 +81,7 @@ Informacja **1004**
 
 **Lista autoryzowanych kont została zaktualizowana.**
 
-To zdarzenie jest rejestrowane po pobraniu przez łącznik usługi RMS najnowszej listy kont (istniejące konta i wszelkie zmiany), które są autoryzowane do korzystania z łącznika usługi RMS. Ta lista jest pobierana co 15 minut, o ile łącznik usługi RMS może komunikować się z usługą Azure Rights Management.
+To zdarzenie jest rejestrowane po pobraniu przez łącznik usługi RMS najnowszej listy kont (istniejące konta i wszelkie zmiany), które są autoryzowane do korzystania z łącznika usługi RMS. Ta lista jest pobierana co&15; minut, o ile łącznik usługi RMS może komunikować się z usługą Azure Rights Management.
 
 ----
 
@@ -153,21 +151,23 @@ To zdarzenie jest rejestrowane, jeśli łącznik usługi RMS nie może pobrać n
 
 ----
 
-## Liczniki wydajności
+## <a name="performance-counters"></a>Liczniki wydajności
 
 Podczas instalacji łącznika usługi RMS są automatycznie tworzone liczniki wydajności **łącznika usługi Microsoft Rights Management**, które mogą być przydatne podczas monitorowania wydajności użycia usługi Azure Rights Management za pośrednictwem łącznika. Na przykład w przypadku regularnego występowania opóźnień podczas włączania ochrony dokumentów lub wiadomości e-mail albo podczas otwierania chronionych dokumentów lub wiadomości e-mail, liczniki wydajności mogą pomóc w ustaleniu, czy opóźnienie wynika z czasu przetwarzania w łączniku, czasu przetwarzania w usłudze Azure Rights Management, czy opóźnienia sieci. Aby łatwiej wskazać przyczynę opóźnienia, zapoznaj się z licznikami zawierających średnią wartość **czasu przetwarzania łącznika**, **czasu odpowiedzi usługi** i **czasu odpowiedzi łącznika**. Przykład: **Średni czas odpowiedzi łącznika na żądania wsadowe dotyczące licencjonowania zakończone powodzeniem**.
 
 Jeśli niedawno dodano nowe konta serwera na potrzeby korzystania z łącznika, warto zapoznać się z licznikiem **Czas od ostatniej aktualizacji zasad autoryzacji** w celu sprawdzenia, czy łącznik pobrał listę od czasu jej aktualizacji, czy należy zaczekać nieco dłużej (do 15 minut).
 
-## Analizator usług RMS
+## <a name="rms-analyzer"></a>Analizator usług RMS
 
-Narzędzie Analizator usług Rights Management Services ułatwia monitorowanie kondycji łącznika i wykrywanie problemów dotyczących konfiguracji.
+Chociaż to narzędzie jest objęte wsparciem w aktualnej postaci („as-is”), analizatora usług RMS można użyć do monitorowania kondycji łącznika i wykrywania problemów z konfiguracją. Jeśli nie pobrano jeszcze tego narzędzia, można to zrobić, korzystając z [Centrum pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=46437). 
 
-Jeśli jeszcze nie pobrano tego narzędzia, możesz to zrobić w [Centrum pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i zainstalować je na dowolnym komputerze z dostępem do Internetu, który może nawiązać połączenie z łącznikiem usługi RMS. Uruchom narzędzie, a następnie na stronie **powitalnej** wybierz opcję **Łącznik usługi Azure RMS**.
+Zaloguj się na jednym z serwerów skonfigurowanych dla łącznika usługi RMS za pomocą konta autoryzowanego do użycia łącznika dla tego obciążenia. Na przykład jeśli skonfigurowano łącznik usługi RMS dla programu Exchange, zaloguj się na tym serwerze za pomocą jednego z kont autoryzowanych dla programu Exchange w narzędziu konfiguracji łącznika usługi RMS. Następnie uruchom analizator usług RMS z opcją **Uruchom jako administrator**.
+
+Po uruchomieniu narzędzia na stronie **powitalnej** wybierz opcję **Łącznik usługi Azure RMS**. Wprowadź adres URL łącznika usługi RMS jako adres aktywny, po czym kliknij zieloną strzałkę. Jako potwierdzenie pomyślnego połączenia łącznika z usługą Azure Rights Management powinna zostać wyświetlona Twoja dzierżawa. Jeśli ten wstępny test zakończy się niepowodzeniem, sprawdź konfigurację serwera proxy i zapór, które mogą blokować ruch serwera. Po pomyślnym wyświetleniu szczegółów swojej dzierżawy możesz uruchomić testy diagnostyczne obciążenia serwera w celu sprawdzenia numerów obsługiwanych wersji, wymagań wstępnych i ustawień rejestru.
 
 Aby uzyskać dodatkowe informacje i instrukcje, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania.
 
-## Rejestrowanie
+## <a name="logging"></a>Rejestrowanie
 
 Rejestrowanie użycia pomaga sprawdzić, kiedy wiadomości e-mail i dokumenty są chronione oraz używane. W przypadku korzystania z łącznika usługi RMS pole identyfikatora użytkownika w dziennikach zawiera główną nazwę usługi **Aadrm_S-1-7-0**, która jest tworzona automatycznie dla łącznika usługi RMS.
 
@@ -189,9 +189,4 @@ Jeśli chcesz rejestrować bardziej szczegółowe dane w celach diagnostycznych,
 
 5.  Po przechwyceniu odpowiednich śladów przywróć wiersz z kroku 3, a następnie zatrzymaj i uruchom ponownie usługi IIS.
 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

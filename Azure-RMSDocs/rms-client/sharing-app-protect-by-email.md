@@ -1,9 +1,10 @@
 ---
-title: "Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji Rights Management sharing | Azure Information Protection"
+title: "Udostępnianie plików chronionych za pomocą aplikacji RMS sharing — AIP"
 description: "Instrukcje dotyczące sposobu bezpiecznego udostępniania dokumentu za pomocą wiadomości e-mail."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,16 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
-
-
+ms.openlocfilehash: edc735c2a7f5b15f1e8795fed1b7fc7dffd80176
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
+# <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management
 
-# Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management
-
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Włączenie ochrony pliku udostępnianego w wiadomości e-mail powoduje utworzenie nowej wersji oryginalnego pliku. Oryginalny plik pozostaje niechroniony, a jego nowa wersja jest chroniona i zostaje automatycznie dołączona do wysyłanej wiadomości e-mail.
 
@@ -32,7 +30,7 @@ Jeśli organizacja używa usługi Azure Information Protection, możesz monitoro
 
 -   Skorzystaj z witryny śledzenia dokumentów. Możesz nawet przerwać udostępnianie pliku, odwołując dostęp do niego w witrynie śledzenia dokumentów. Aby uzyskać więcej informacji, zobacz artykuł [Śledzenie i odwoływanie dokumentów podczas używania aplikacji RMS sharing](sharing-app-track-revoke.md).
 
-## Używanie programu Outlook: aby chronić plik udostępniany pocztą e-mail
+## <a name="using-outlook-to-protect-a-file-that-you-share-by-email"></a>Używanie programu Outlook: aby chronić plik udostępniany pocztą e-mail
 
 1.  Utwórz wiadomość e-mail i dołącz plik. Następnie na karcie **Wiadomość** w grupie **RMS** kliknij opcję **Udostępnij chronione**, a następnie ponownie kliknij opcję **Udostępnij chronione**:
 
@@ -42,14 +40,14 @@ Jeśli organizacja używa usługi Azure Information Protection, możesz monitoro
 
 2.  Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Udostępnianie chronionej zawartości](sharing-app-dialog-box.md), a następnie kliknij pozycję **Wyślij teraz**.
 
-### Inne metody ochrony pliku udostępnianego pocztą e-mail
+### <a name="other-ways-to-protect-a-file-that-you-share-by-email"></a>Inne metody ochrony pliku udostępnianego pocztą e-mail
 Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można także użyć następujących alternatyw:
 
 -   W Eksploratorze plików: ta metoda działa w przypadku wszystkich plików.
 
 -   W aplikacji pakietu Office: ta metoda działa w przypadku aplikacji obsługiwanych przez aplikację RMS sharing przy użyciu dodatku do pakietu Office umożliwiającego wyświetlanie grupy **RMS** na wstążce.
 
-#### W Eksploratorze plików lub aplikacji pakietu Office: aby chronić plik udostępniany pocztą e-mail
+#### <a name="using-file-explorer-or-an-office-application-to-protect-a-file-that-you-share-by-email"></a>W Eksploratorze plików lub aplikacji pakietu Office: aby chronić plik udostępniany pocztą e-mail
 
 1.  Skorzystaj z jednej z następujących opcji:
 
@@ -71,7 +69,7 @@ Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można ta
 
     ![Wiadomość e-mail dotycząca usługi Azure Information Protection](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    Czy zastanawiasz się, [co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
+    Czy zastanawiasz się, [co to za plik ppdf, który jest automatycznie tworzony?](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)
 
 4.  Opcjonalnie: Dowolne elementy wiadomości e-mail można zmienić. Można na przykład rozwinąć lub zmienić temat lub tekst wiadomości.
 
@@ -80,18 +78,14 @@ Oprócz udostępniania pliku chronionego przy użyciu programu Outlook można ta
 
 5.  Wyślij wiadomość e-mail.
 
-## Przykłady i inne instrukcje
+## <a name="examples-and-other-instructions"></a>Przykłady i inne instrukcje
 Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udostępniania usługi Rights Management, zapoznaj się z następującymi sekcjami podręcznika użytkownika aplikacji do udostępniania usługi Rights Management:
 
--   [Przykłady korzystania z aplikacji RMS sharing](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
+-   [Przykłady korzystania z aplikacji do udostępniania usługi RMS](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
 -   [Co chcesz zrobić?](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

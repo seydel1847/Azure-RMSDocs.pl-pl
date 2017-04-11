@@ -1,9 +1,10 @@
 ---
-title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management | Azure Information Protection"
+title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management — AIP"
 description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
-
-
+ms.openlocfilehash: b6250b94a73a0ddc9a91ef7c2615c050ba915098
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+translationtype: HT
 ---
-
-# Konfigurowanie praw użytkowania dla usługi Azure Rights Management
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -26,7 +24,7 @@ Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azur
 
 Niniejszy artykuł pomoże Ci skonfigurować prawa użytkowania dla używanej aplikacji oraz zrozumieć, jak te prawa będą interpretowane przez aplikacje.
 
-## Prawa użytkowania wraz z opisami
+## <a name="usage-rights-and-descriptions"></a>Prawa użytkowania wraz z opisami
 Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez usługę Rights Management oraz sposób ich wykorzystania i interpretowania. Są one wyświetlane według **nazwy pospolitej**, która jest często spotykanym sposobem na wyświetlenie prawa użytkowania lub odniesienie się do niego. Jest to przyjaźniejsza wersja jednowyrazowej wartości używanej w kodzie (wartość **Kodowanie w zasadach**). **Stała lub wartość API** jest nazwą zestawu SDK wywołania MSIPC API używanego podczas pisania aplikacji obsługujących usługę RMS. Wywołanie sprawdza prawa użytkowania lub dodaje prawo użytkowania do zasad.
 
 
@@ -34,38 +32,43 @@ Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez u
 |-------------------------------|---------------------------|-----------------|
 |Nazwa pospolita: **Edytuj zawartość, Edytuj** <br /><br />Kodowanie w zasadach: **DOCEDIT**|Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie lub filtrowanie zawartości wewnątrz aplikacji. Nie nadaje prawa do zapisywania edytowanej kopii.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Edytuj zawartość**<br /><br />Nazwa w szablonach usługi AD RMS: **Edytuj** <br /><br />Stała lub wartość interfejsu API: nie dotyczy.|
 |Nazwa pospolita: **Zapisz** <br /><br />Kodowanie w zasadach: **EDIT**|Umożliwia użytkownikowi zapisanie dokumentu w jego bieżącej lokalizacji.<br /><br />W aplikacjach pakietu Office to prawo umożliwia użytkownikowi modyfikowanie dokumentu.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Zapisz plik**<br /><br />Nazwa w szablonach usługi AD RMS: **Zapisz** <br /><br />Stała API lub wartość API: `IPC_GENERIC_WRITE L"EDIT"`|
-|Nazwa pospolita: **Komentarz** <br /><br />Kodowanie w zasadach: **COMMENT**|Pozwala dodawać adnotacje i komentarze do zawartości.<br /><br />To prawo jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc w module RMS Protection w środowisku Windows PowerShell. Zostało zaimplementowane w niektórych aplikacjach dostawców oprogramowania. Nie jest jednak powszechnie używane i obecnie nie jest obsługiwane przez aplikacje pakietu Office.|W prawach niestandardowych pakietu Office: nie zaimplementowane. <br /><br />Nazwa w klasycznym portalu Azure: nie zaimplementowane.<br /><br />Nazwa w szablonach usługi AD RMS: nie zaimplementowane. <br /><br />Stała API lub wartość API: `IPC_GENERIC_COMMENT L"COMMENT`|
-|Nazwa pospolita: **Zapisz jako, Eksportuj** <br /><br />Kodowanie w zasadach: **EXPORT**|Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przypadku dokumentów pakietu Office plik może zostać zapisany bez ochrony.<br /><br />To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji **Wyślij do programu OneNote**.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Eksportuj zawartość (Zapisz jako)**<br /><br />Nazwa w szablonach usługi AD RMS: **Eksportuj (Zapisz jako)** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|Nazwa pospolita: **Komentarz** <br /><br />Kodowanie w zasadach: **COMMENT**|Pozwala dodawać adnotacje i komentarze do zawartości.<br /><br />To uprawnienie jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc w usłudze Azure Information Protection i w module RMS Protection w środowisku Windows PowerShell. Zostało też zaimplementowane w niektórych aplikacjach dostawców oprogramowania. Nie jest jednak powszechnie używane i obecnie nie jest obsługiwane przez aplikacje pakietu Office.|W prawach niestandardowych pakietu Office: nie zaimplementowane. <br /><br />Nazwa w klasycznym portalu Azure: nie zaimplementowane.<br /><br />Nazwa w szablonach usługi AD RMS: nie zaimplementowane. <br /><br />Stała API lub wartość API: `IPC_GENERIC_COMMENT L"COMMENT`|
+|Nazwa pospolita: **Zapisz jako, Eksportuj** <br /><br />Kodowanie w zasadach: **EXPORT**|Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). W przypadku dokumentów pakietu Office i klienta usługi Azure Information Protection plik można zapisać bez ochrony.<br /><br />To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji **Wyślij do programu OneNote**.<br /><br /> Uwaga: jeśli nie udzielono tego uprawnienia, aplikacje pakietu Office umożliwiają użytkownikowi zapis dokumentu pod nową nazwą, jeśli wybrany format pliku natywnie obsługuje ochronę za pomocą usługi Microsoft Rights Management.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Eksportuj zawartość (Zapisz jako)**<br /><br />Nazwa w szablonach usługi AD RMS: **Eksportuj (Zapisz jako)** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXPORT L"EXPORT"`|
 |Nazwa pospolita: **Prześlij dalej** <br /><br />Kodowanie w zasadach: **FORWARD**|Włącza opcję przesyłania dalej wiadomości e-mail oraz dodawania adresatów w wierszach **Do** i **DW**. To prawo dotyczy tylko wiadomości e-mail, a nie dokumentów.<br /><br />Nie zezwala osobie przekazującej wiadomość dalej na przyznanie praw innym użytkownikom jako części akcji przekazywania.|W prawach niestandardowych pakietu Office: odmowa przy użyciu standardowych zasad **Nie przekazuj**.<br /><br />Nazwa w klasycznym portalu Azure: **Prześlij dalej**<br /><br />Nazwa w szablonach usługi AD RMS: **Prześlij dalej** <br /><br />Stała API lub wartość API: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |Nazwa pospolita: **Pełna kontrola** <br /><br />Kodowanie w zasadach: **OWNER**|Przyznaje wszystkie prawa do dokumentu. Można wykonywać wszystkie dostępne akcje.<br /><br />Obejmuje możliwość usunięcia ochrony i ponownego włączenia ochrony dokumentu.|W prawach niestandardowych pakietu Office: jako opcja niestandardowa **Pełna kontrola**.<br /><br />Nazwa w klasycznym portalu Azure: **Pełna kontrola**<br /><br />Nazwa w szablonach usługi AD RMS: **Pełna kontrola** <br /><br />Stała API lub wartość API: `IPC_GENERIC_ALL L"OWNER"`|
 |Nazwa pospolita: **Drukuj** <br /><br />Kodowanie w zasadach: **PRINT**|Włącza opcje związane z drukowaniem zawartości.|W prawach niestandardowych pakietu Office: jako opcja **Drukuj zawartość** w uprawnieniach niestandardowych. Nie jest to ustawienie określane dla poszczególnych odbiorców.<br /><br />Nazwa w klasycznym portalu Azure: **Drukuj**<br /><br />Nazwa w szablonach usługi AD RMS: **Drukuj** <br /><br />Stała API lub wartość API: `IPC_GENERIC_PRINT L"PRINT"`|
-|Nazwa pospolita: **Odpowiedz** <br /><br />Kodowanie w zasadach: **REPLY**|Włącza opcję **Odpowiedz** w kliencie poczty e-mail bez możliwości zmiany w wierszach **Do** lub **DW**.|W prawach niestandardowych pakietu Office: nie dotyczy.<br /><br />Nazwa w klasycznym portalu Azure: **Odpowiedz**<br /><br />Nazwa w szablonach usługi AD RMS: **Odpowiedz** <br /><br />Stała API lub wartość API: `IPC_EMAIL_REPLY`|
-|Nazwa pospolita: **Odpowiedz wszystkim** <br /><br />Kodowanie w zasadach: **REPLYALL**|Włącza opcję **Odpowiedz wszystkim** w kliencie poczty e-mail, ale nie zezwala użytkownikowi na dodawanie odbiorców w wierszach **Do** lub **DW**.|W prawach niestandardowych pakietu Office: nie dotyczy.<br /><br />Nazwa w klasycznym portalu Azure: **Odpowiedz wszystkim**<br /><br />Nazwa w szablonach usługi AD RMS: **Odpowiedz wszystkim** <br /><br />Stała API lub wartość API: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|Nazwa pospolita: **Odpowiedz** <br /><br />Kodowanie w zasadach: **REPLY**|Włącza opcję **Odpowiedz** w kliencie poczty e-mail bez możliwości zmiany w wierszach **Do** lub **DW**.<br /><br />Uwaga: podczas wysyłania wiadomości e-mail do innej organizacji klient programu Outlook lub aplikacja Outlook Web App adresata wymaga poza uprawnieniem Odpowiedz także uprawnienia **Edytuj zawartość, Edytuj** (nazwa pospolita).|W prawach niestandardowych pakietu Office: nie dotyczy.<br /><br />Nazwa w klasycznym portalu Azure: **Odpowiedz**<br /><br />Nazwa w szablonach usługi AD RMS: **Odpowiedz** <br /><br />Stała API lub wartość API: `IPC_EMAIL_REPLY`|
+|Nazwa pospolita: **Odpowiedz wszystkim** <br /><br />Kodowanie w zasadach: **REPLYALL**|Włącza opcję **Odpowiedz wszystkim** w kliencie poczty e-mail, ale nie zezwala użytkownikowi na dodawanie odbiorców w wierszach **Do** lub **DW**.<br /><br />Uwaga: podczas wysyłania wiadomości e-mail do innej organizacji klient programu Outlook lub aplikacja Outlook Web App adresata wymaga poza uprawnieniem Odpowiedz wszystkim także uprawnienia **Edytuj zawartość, Edytuj** (nazwa pospolita).|W prawach niestandardowych pakietu Office: nie dotyczy.<br /><br />Nazwa w klasycznym portalu Azure: **Odpowiedz wszystkim**<br /><br />Nazwa w szablonach usługi AD RMS: **Odpowiedz wszystkim** <br /><br />Stała API lub wartość API: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |Nazwa pospolita: **Wyświetl, Otwórz, Odczytaj** <br /><br />Kodowanie w zasadach: **VIEW**|Umożliwia użytkownikom otworzenie dokumentu i wyświetlenie zawartości.|W prawach niestandardowych pakietu Office: jako zasady niestandardowe **Odczytaj**, opcja **Wyświetl**.<br /><br />Nazwa w klasycznym portalu Azure: **Wyświetl**<br /><br />Nazwa w szablonach usługi AD RMS: **Odpowiedz wszystkim** <br /><br />Stała API lub wartość API: `IPC_GENERIC_READ L"VIEW"`|
 |Nazwa pospolita: **Kopiuj** <br /><br />Kodowanie w zasadach: **EXTRACT**|Włącza opcje kopiowania danych (w tym przechwytywania ekranu) z dokumentu do tego samego lub innego dokumentu.<br /><br />W niektórych aplikacjach pozwala także na zapisanie całego dokumentu w postaci niechronionej.|W prawach niestandardowych pakietu Office: jako opcja zasady niestandardowej **Zezwalaj użytkownikom z dostępem do odczytu na kopiowanie zawartości**.<br /><br />Nazwa w klasycznym portalu Azure: **Kopiuj i Wyodrębnij zawartość**<br /><br />Nazwa w szablonach usługi AD RMS: **Wyodrębnij** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |Nazwa pospolita: **Włącz makra** <br /><br />Kodowanie w zasadach: **OBJMODEL**|Włącza opcję uruchamiania makr lub innych rozwiązań programistycznych albo zezwala na zdalny dostęp do zawartości w dokumencie.|W prawach niestandardowych pakietu Office: jako opcja zasad niestandardowych **Zezwalaj na dostęp programistyczny**. Nie jest to ustawienie określane dla poszczególnych odbiorców.<br /><br />Nazwa w klasycznym portalu Azure: **Zezwalaj na makra**<br /><br />Nazwa w szablonach usługi AD RMS: **Zezwalaj na makra** <br /><br />Stała lub wartość interfejsu API: nie zaimplementowane.|
 
 
 
-## Prawa zawarte w poziomach uprawnień
+## <a name="rights-included-in-permissions-levels"></a>Prawa zawarte w poziomach uprawnień
 
 Niektóre aplikacje grupują prawa użytkowania w poziomach uprawnień. Dzięki temu można łatwiej wybrać prawa użytkowania, które zazwyczaj stosuje się wspólnie. Te poziomy uprawnień upraszczają skomplikowane działania po stronie użytkowników, którzy mogą wybrać opcje oparte na rolach.  Na przykład **Osoba dokonująca przeglądu** i **Współautor**. Chociaż opcje te często są dostępne z podsumowaniem praw, to mogą one nie obejmować wszystkich praw wymienionych w poprzedniej tabeli.
 
 W tabeli poniżej znajduje się lista poziomów uprawnień i pełna lista praw w nich zawartych.
 
+
 |Poziom uprawnień|Aplikacje|Zawarte prawa (nazwa pospolita)|
 |---------------------|----------------|---------------------------------|
-|Przeglądanie|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Odpowiedz; Odpowiedz wszystkim|
-|Osoba dokonująca przeglądu|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
-|Współautor|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
-|Współwłaściciel|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1); Pełna kontrola|
+|Przeglądanie|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Odpowiedz; Odpowiedz wszystkim<br /><br />Uwaga: nie należy używać tego poziomu uprawnień, korzystając z opcji Odpowiedz lub Odpowiedz wszystkim podczas wysyłania wiadomości e-mail do odbiorcy z innej organizacji używającego programu Outlook lub aplikacji Outlook Web App. Zamiast tego należy użyć opcji Recenzent, która uwzględnia uprawnienie **Edytuj zawartość, Edytuj** (nazwa pospolita) wymagane przez tych klientów poczty e-mail w celu wysłania odpowiedzi.|
+|Osoba dokonująca przeglądu|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
+|Współautor|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj [[2]](#footnote-2); Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1)|
+|Współwłaściciel|Klasyczny portal Azure<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako; Eksportuj; Drukuj; Odpowiedz [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Prześlij dalej [[1]](#footnote-1); Pełna kontrola|
 
 ----
 
-###### Przypis 1
-Nie dotyczy aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows.
+###### <a name="footnote-1"></a>Przypis 1
+Nie dotyczy klienta usługi Azure Information Protection dla systemu Windows ani aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows.
 
-## Prawa zawarte w domyślnych szablonach
+###### <a name="footnote-2"></a>Przypis 2
+Nie uwzględniono w kliencie usługi Azure Information Protection dla systemu Windows. W tym kliencie prawo użycia eksportu obejmuje możliwość usunięcia ochrony.
+
+
+## <a name="rights-included-in-the-default-templates"></a>Prawa zawarte w domyślnych szablonach
 W szablonach domyślnych zawarte są następujące prawa:
 
 |Nazwa wyświetlana|Zawarte prawa (nazwa pospolita)|
@@ -73,7 +76,7 @@ W szablonach domyślnych zawarte są następujące prawa:
 |&lt;*nazwa organizacji*&gt; *— tylko wgląd poufny*|Wyświetl, Otwórz, Odczytaj|
 |&lt;*nazwa organizacji*&gt; *— poufne*|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Edytuj; Wyświetl prawa; Zezwalaj na makra; Prześlij dalej; Odpowiedz; Odpowiedz wszystkim|
 
-## Opcja Nie przekazuj dotycząca wiadomości e-mail
+## <a name="do-not-forward-option-for-emails"></a>Opcja Nie przekazuj dotycząca wiadomości e-mail
 
 Klienci i usługi programu Exchange (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają jedną dodatkową opcję ochrony praw do informacji na potrzeby wiadomości e-mail: **Nie przekazuj**. 
 
@@ -95,12 +98,8 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](configure-custom-templates.md)
 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

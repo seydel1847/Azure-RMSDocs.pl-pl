@@ -1,9 +1,10 @@
 ---
-title: "Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji | Azure Information Protection"
+title: "Scenariusz usługi AIP — udostępnianie plików pakietu Office użytkownikom zewnętrznym"
 description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika jest używana ochrona usługi Azure Rights Management, dzięki czemu użytkownicy mogą bezpiecznie przesyłać pliki pakietu Office w wiadomościach e-mail do osób w innej organizacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
-
-
+ms.openlocfilehash: 629717055620af93c5870fff4ef833dc7931e622
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji
+# <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -34,12 +32,12 @@ Ten scenariusz sprawdza się w następujących okolicznościach:
 
 -   Pracownik prawdopodobnie będzie chciał wiedzieć, kiedy dokument zostanie otwarty przez użytkownika zewnętrznego.
 
-## Instrukcje dotyczące wdrażania
+## <a name="deployment-instructions"></a>Instrukcje dotyczące wdrażania
 ![Instrukcje dla administratora dotyczące szybkiego wdrażania usługi Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Zanim przejdziesz do dokumentacji użytkownika, upewnij się, że zostały spełnione następujące wymagania.
 
-## Wymagania dotyczące tego scenariusza
+## <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 Aby zrealizować instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
@@ -50,12 +48,12 @@ Aby zrealizować instrukcje dotyczące tego scenariusza, należy spełnić nast�
 |Użytkownicy korzystają z programu Outlook pakietu Office 2013|Jeśli użytkownicy korzystają z pakietu Office 2016 lub Office 2010, należy odpowiednio zmienić zrzut ekranu, aby odzwierciedlał zawartość wyświetlaną na ekranach użytkowników.|
 |Twoja subskrypcja usługi Azure Information Protection obejmuje śledzenie dokumentów|Jeśli Twoja subskrypcja nie obejmuje śledzenia i odwoływania dokumentów, użytkownicy nie będą mogli wykonać wszystkich kroków opisanych w instrukcjach użytkownika. W takim przypadku należy zakupić subskrypcję, która obsługuje te funkcje, lub zmodyfikować instrukcje użytkownika, aby usunąć kroki dotyczące tych funkcji.<br /><br />Zapoznaj się z [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
-## Instrukcje w dokumentacji użytkownika
+## <a name="user-documentation-instructions"></a>Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
 
 1.  Zastąp zmienną *&lt;nazwa typu dokumentu pakietu Office&gt;* typem dokumentu, który użytkownicy będą wysyłać. Stosuj znaną terminologię charakterystyczną dla ich przepływów pracy, na przykład „cennik”, „czas dostawy” czy „oferta przetargowa” zamiast sformułowań typu „dokument programu Word” czy „arkusz kalkulacyjny programu Excel”. Precyzyjny dobór słów zwiększa prawdopodobieństwo, że użytkownicy zastosują się do instrukcji podczas pracy z dokumentami.
 
-2.  Zastąp parametr *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny internetowej lub adres e-mail albo numer telefonu.
+2.  Zastąp *&lt;dane kontaktowe&gt;* instrukcjami dla użytkowników dotyczącymi sposobu kontaktowania się z działem pomocy technicznej, na przykład podaj link do witryny sieci Web, adres e-mail lub numer telefonu.
 
 3.  **Dodatkowe zmiany, które możesz wprowadzić:**
 
@@ -76,7 +74,7 @@ W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dosto
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Jak udostępnić dokument &lt;nazwa typu dokumentu pakietu Office&gt;
+### <a name="how-to-share-a-ltname-of-office-document-typegt"></a>Jak udostępnić dokument &lt;nazwa typu dokumentu pakietu Office&gt;
 
 1.  Utwórz wiadomość e-mail, podając adres lub adresy e-mail, wpisz wiadomość i dołącz do wiadomości e-mail dokument *&lt;nazwa typu dokumentu pakietu Office&gt;*. Następnie na karcie **WIADOMOŚĆ** w grupie **RMS** kliknij opcję **Udostępnij chronione**, a następnie kliknij opcję **Udostępnij chronione** ponownie:
 
@@ -112,10 +110,10 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
     -   *&lt;dane kontaktowe&gt;*
 
-### Przykładowa niestandardowa dokumentacja użytkownika
+### <a name="example-customized-user-documentation"></a>Przykładowa niestandardowa dokumentacja użytkownika
 ![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Jak udostępnić cennik klientowi
+#### <a name="how-to-share-a-price-list-with-your-customer"></a>Jak udostępnić cennik klientowi
 
 1.  Utwórz wiadomość e-mail, podając adres lub adresy e-mail klienta, wpisz wiadomość i dołącz do wiadomości e-mail najnowszy cennik. Następnie na karcie **WIADOMOŚĆ** w grupie **RMS** kliknij opcję **Udostępnij chronione**, a następnie kliknij opcję **Udostępnij chronione** ponownie:
 
@@ -149,11 +147,6 @@ Skorzystaj z [portalu śledzenia dokumentów](https://track.azurerms.com/), aby 
 
 -   Skontaktuj się z działem pomocy technicznej:
 
-    -   Adres e-mail: helpdesk@vanarsdelltd.com
+    -   Poczta e-mail: helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,9 +1,10 @@
 ---
-title: "Usuwanie szablonów | Azure Information Protection"
+title: "Usuwanie szablonów usługi Azure RMS — AIP"
 description: "Domyślnych szablonów nie można usunąć, ale można je zarchiwizować, przez co nie będą one widoczne dla użytkowników."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,15 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
-
-
+ms.openlocfilehash: 1bbd2b6c8bc37862106661531dbf0e07c7fb179a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-# Usuwanie (archiwizowanie) szablonów
+# <a name="remove-archive-templates"></a>Usuwanie (archiwizowanie) szablonów
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -29,7 +26,7 @@ Podobnie, jeśli użytkownik opublikował szablon niestandardowy i nie chce, aby
 
 Jako że nie można edytować domyślnych szablonów, w celu ich archiwizacji należy użyć opcji **ARCHIWUM** dostępnej z poziomu strony **SZABLONY**. Nie można zarchiwizować opcji **Nie przekazuj** w programie Outlook.
 
-## Usuwanie szablonu domyślnego
+## <a name="to-remove-a-default-template"></a>Usuwanie szablonu domyślnego
 
 -   Na stronie **SZABLONY** wybierz szablon domyślny i kliknij opcję **ARCHIWUM**.
 
@@ -37,10 +34,7 @@ Status zmieni się z **Opublikowany** na **Zarchiwizowany**. Jeśli zmienisz zda
 
 
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

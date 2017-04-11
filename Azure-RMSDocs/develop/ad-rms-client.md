@@ -3,8 +3,9 @@ title: Klient | Azure RMS
 description: "Klient AD RMS Client 2.1 to oprogramowanie przeznaczone dla komputerów klienckich, które ułatwia ochronę dostępu do informacji i ich użycie"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 099c27d0bc94503101adc04d1e398ff1eeb4d916
-
-
+ms.openlocfilehash: dedc3fa6c5cab519a0d6fe8ba835d8d92a9da276
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Klient
+# <a name="client"></a>Klient
 
 W tym temacie opisano przeznaczenie i funkcję klienta Rights Management Services Client 2.1.
 
@@ -32,17 +30,10 @@ Zestaw Rights Management Services SDK 2.1 współpracuje z klientem RMS Client 2
 
 Aby uzyskać więcej informacji, zobacz [Dokumentacja TechNet klienta RMS Client 2.1](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx).
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Przegląd](ad-rms-overview.md)
 * [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
 * [Dokumentacja TechNet klienta RMS Client 2.1](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
