@@ -15,8 +15,3 @@ Do ukończenia tego samouczka będą potrzebne następujące elementy:
 -   Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowany pakiet Office 2016, Office 2013 lub Office 2010.
 
 Zaczynamy!
-
-
-<!--HONumber=Jul16_HO3-->
-
-

@@ -1,9 +1,10 @@
 ---
-title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 2 | Azure Information Protection"
+title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 2"
 description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca krok 5 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,20 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
-
-
+ms.openlocfilehash: 6e3f0bf46886c27620f8b7c836d0c67aafb61d37
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-# Faza 2 migracji — konfiguracja po stronie klienta
+# <a name="migration-phase-2---client-side-configuration"></a>Faza 2 migracji — konfiguracja po stronie klienta
 
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 Skorzystaj z poniższych informacji dotyczących fazy 2 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują krok 5 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Krok 5. Ponownie skonfiguruj klientów do korzystania z usługi Azure Information Protection
+## <a name="step-5-reconfigure-clients-to-use-azure-information-protection"></a>Krok 5. Ponownie skonfiguruj klientów do korzystania z usługi Azure Information Protection
 W przypadku klientów systemu Windows:
 
 1.  [Pobierz skrypty migracji](https://go.microsoft.com/fwlink/?LinkId=524619):
@@ -39,6 +38,8 @@ W przypadku klientów systemu Windows:
 
     > [!IMPORTANT]
     > Instrukcje zawierają opis zastępowania przykładowych adresów **adrms** i **adrms.contoso.com** adresami Twoich serwerów usługi AD RMS. Gdy to robisz, należy sprawdzić, czy nie występują żadne dodatkowe spacje przed adresami lub po nich, które spowodują przerwanie skryptu migracji i są bardzo trudne do zidentyfikowania jako główna przyczyna problemu. Niektóre narzędzia do edycji automatycznie dodają spację po wklejeniu tekstu.
+    >
+    > Ponadto jeśli serwery usług AD RMS używają certyfikatów serwera SSL/TLS, sprawdź, czy wartości adresu URL licencjonowania obejmują numer portu **443** wewnątrz ciągu. Na przykład: https:// rms.treyresearch.net:443/_wmcs/licensing. Te informacje można znaleźć w konsoli usług Active Directory Rights Management Services po kliknięciu nazwy klastra i wyświetleniu informacji **Szczegóły klastra**. Jeśli widzisz numer portu 443 zawarty w adresie URL, uwzględnij tę wartość podczas modyfikowania skryptu. Na przykład https://rms.treyresearch.net**:443**.
 
 3. Jeśli użytkownicy posiadają pakiet Office 2016: skrypty nie zostały jeszcze zaktualizowane w celu uwzględnienia konfiguracji programu Office 2016, więc jeśli użytkownicy mają tę wersję pakietu Office, należy ręcznie zaktualizować skrypty:
 
@@ -74,7 +75,7 @@ W przypadku klientów systemu Windows:
 
     -  Usuń rekordy SRV systemu DNS, które zostały utworzone podczas wdrażania [rozszerzenia usługi AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
 
-#### Zmiany wprowadzone przez skrypty migracji
+#### <a name="changes-made-by-the-migration-scripts"></a>Zmiany wprowadzone przez skrypty migracji
 W tej sekcji omówiono zmiany wprowadzane za pośrednictwem skryptów migracji. Ten dokument może być używany tylko do celów informacyjnych lub na potrzeby rozwiązywania problemów, jeśli wolisz samodzielnie wprowadzać zmiany.
 
 CleanUpRMS_RUN_Elevated.cmd:
@@ -127,10 +128,7 @@ Redirect_OnPrem.cmd:
     > Tę wartość można znaleźć, identyfikując wartość **RightsManagementServiceId** po uruchomieniu polecenia cmdlet [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS.
 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby kontynuować migrację, przejdź do [fazy 3 — konfiguracja usług pomocniczych](migrate-from-ad-rms-phase3.md).
 
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

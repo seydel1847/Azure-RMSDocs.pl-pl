@@ -1,9 +1,10 @@
 ---
-title: "Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management | Azure Information Protection"
+title: "Konfigurowanie szablonów niestandardowych dla usługi Azure RMS — AIP"
 description: "Informacje i instrukcje dla administratorów służące do konfigurowania szablonów praw użytkowania i zarządzania nimi. Szablony ułatwiają użytkownikom i innym administratorom stosowanie zasad umożliwiających dostęp do poufnych plików tylko autoryzowanym użytkownikom."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
-
-
+ms.openlocfilehash: 27ffbc6eb9e88840f1b33c59b76bdaa5d028cc36
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -36,7 +34,7 @@ Po [aktywacji](activate-service.md) usługi Azure Rights Management użytkownicy
 
     -   Określone uprawnienia: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
 
-Ponadto [aplikacja do udostępniania usług RMS](../rms-client/sharing-app-windows.md) pozwala użytkownikom na definiowanie własnych zestawów uprawnień. W przypadku klienta programu Outlook i usługi Outlook Web Access użytkownicy mogą wybrać opcję [Nie przekazuj](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
+Ponadto [klient usługi Azure Information Protection](../rms-client/aip-client.md) umożliwia użytkownikom zdefiniowanie własnego zestawu uprawnień. W przypadku klienta programu Outlook i usługi Outlook Web Access użytkownicy mogą wybrać opcję [Nie przekazuj](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails).
 
 W przypadku wielu organizacji domyślne szablony są wystarczające. Użytkownicy mogą jednak także tworzyć własne, niestandardowe szablony zasad praw. Poniżej przedstawiono okoliczności, które mogą sprzyjać tworzeniu szablonów niestandardowych:
 
@@ -62,10 +60,5 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 
 -   [Zarządzanie szablonami za pomocą programu PowerShell](configure-templates-with-powershell.md)
 
-
-
-
-
-<!--HONumber=Sep16_HO4-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

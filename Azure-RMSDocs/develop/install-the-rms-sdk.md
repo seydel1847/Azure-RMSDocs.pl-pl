@@ -3,8 +3,9 @@ title: Instalacja zestawu SDK | Azure RMS
 description: "W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,20 +14,17 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
-
-
+ms.openlocfilehash: 52d4778a0a411a59bef43f5de7965b7dfdda8549
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Instalacja zestawu SDK
+# <a name="install-the-sdk"></a>Instalacja zestawu SDK
 
 W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
 
-## Instrukcje
+## <a name="instructions"></a>Instrukcje
 
-### Instalowanie narzędzi deweloperskich
+### <a name="install-the-developer-tools"></a>Instalowanie narzędzi deweloperskich
 
 1.  Pobierz [zestaw Rights Management Services SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397) z Centrum pobierania Microsoft, rozważnie wybierając wersję architektury odpowiednią dla komputera.
 2.  Uruchom pakiet instalatora z lokalizacji instalacji:
@@ -37,15 +35,8 @@ W tym temacie szczegółowo opisano proces instalacji narzędzi deweloperskich.
 
 Aby uzyskać więcej informacji na temat plików instalowanych w systemie przez program „setup\_sdk.exe”, zobacz [Pliki środowiska programistycznego](sdk-elements.md)
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Pliki środowiska deweloperskiego](sdk-elements.md)
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

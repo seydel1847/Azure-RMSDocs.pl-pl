@@ -1,9 +1,10 @@
 ---
-title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection | Azure Information Protection"
+title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection"
 description: "Informacje dotyczące usługi RMS dla użytkowników indywidualnych, czyli bezpłatnej subskrypcji samoobsługowej przeznaczonej dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management, ale nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,36 +12,28 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9d27417bf90dab8c7e8654c68d204dad6297fa0d
-ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
-
-
+ms.openlocfilehash: 30b94ca0c14fc9958e9d5bb07554f2ac656ece7a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
+# <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa, przeznaczona dla użytkowników, którzy otrzymali poufne pliki chronione za pomocą usługi Azure Rights Management z usługi Azure Information Protection. Jeśli użytkownicy nie mogą zostać uwierzytelnieni, ponieważ nie mają konta platformy Azure zarządzanego przez dział IT organizacji, mogą skorzystać z bezpłatnej usługi rejestracji. Na przykład dział IT może nie korzystać z usługi Office 365 lub usług platformy Azure.
 
-Tacy użytkownicy mogą bezpłatnie zarejestrować się w celu uzyskania konta służbowego do korzystania z usługi Azure Information Protection, a następnie pobrać i zainstalować aplikację Rights Management sharing. Dzięki temu zyskają możliwość uwierzytelnienia się, aby potwierdzić, że są uprawnieni do otrzymania chronionych plików i odczytania ich na komputerze lub urządzeniu przenośnym.
+Tacy użytkownicy mogą bezpłatnie zarejestrować się w celu uzyskania konta służbowego do korzystania z usługi Azure Information Protection, a następnie pobrać i zainstalować klienta usługi Azure Information Protection. Dzięki temu zyskają możliwość uwierzytelnienia się, aby potwierdzić, że są uprawnieni do otrzymania chronionych plików i odczytania ich na komputerze lub urządzeniu przenośnym.
 
-Za pomocą aplikacji do udostępniania usługi Rights Management przeznaczonej dla komputerów z systemem Windows, użytkownicy mogą również korzystać z ochrony miejscowej plików oraz wysyłać chronione pliki pocztą e-mail do osób ze swojej organizacji lub spoza niej. Jeśli odbiorcy tych wiadomości e-mail również nie mają kont użytkowników platformy Azure, mogą oni także utworzyć konta usługi RMS dla użytkowników indywidualnych, aby przeczytać załączniki dołączone do chronionych wiadomości e-mail.
+Korzystając z klienta Azure Information Protection zainstalowanego na komputerach z systemem Windows, użytkownicy mogą również chronić pliki w sposób umożliwiający ich bezpieczne udostępnianie innym osobom. Jeśli użytkownicy udostępniają pliki osobom spoza organizacji, osoby te mogą również utworzyć konto usługi RMS dla użytkowników indywidualnych, aby móc odczytywać chronione pliki.
 
 > [!IMPORTANT]
-> Dzięki bezpłatnej subskrypcji upoważnione osoby będą zawsze mogły odczytać chronione pliki. Obecnie bezpłatna subskrypcja umożliwia również zabezpieczanie dokumentów i wysyłanie chronionych wiadomości e-mail, ale możliwość tworzenia nowej, chronionej zawartości ma charakter próbny i może zostać usunięta w przyszłości. 
+> Dzięki bezpłatnej subskrypcji upoważnione osoby będą zawsze mogły odczytać chronione pliki. Obecnie z bezpłatnej subskrypcji można korzystać także w celu ochrony dokumentów, ale możliwość ochrony zawartości jest przewidziana jako wersja próbna i w przyszłości może być niedostępna. 
 
-Aby uzyskać więcej informacji dotyczących ochrony plików przy użyciu bezpłatnej aplikacji do udostępniania usługi Rights Management, zobacz [Przewodnik po aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-user-guide.md).
+Aby uzyskać więcej informacji o możliwych sposobach ochrony plików przy użyciu klienta usługi Azure Information Protection, zobacz [Podręcznik użytkownika usługi Azure Information Protection](../rms-client/client-user-guide.md).
 
 Usługa RMS dla użytkowników indywidualnych to przykład subskrypcji samoobsługowej, obsługiwanej przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [What is Self-Service Signup for Azure?](/active-directory/active-directory-self-service-signup) (Czym jest rejestracja samoobsługowa na platformie Azure?). 
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby uzyskać szczegółowe instrukcje oraz zapoznać się z opisem technicznym procesów działających w tle, zobacz [Jak utworzyć konto usługi RMS dla użytkowników indywidualnych](rms-for-individuals-user-sign-up.md). 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

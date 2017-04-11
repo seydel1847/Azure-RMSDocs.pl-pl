@@ -3,8 +3,9 @@ title: Testowanie aplikacji | Azure RMS
 description: "Instrukcje dotyczące konfigurowania aplikacji na potrzeby testów."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,20 +14,17 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
-
-
+ms.openlocfilehash: a4306d69fd08f4839c0b02fd3e0a2acbbbc28721
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Testowanie aplikacji
+# <a name="testing-your-application"></a>Testowanie aplikacji
 
 Ten temat zawiera instrukcje dotyczące konfigurowania aplikacji na potrzeby testów.
 
-## Instrukcje
+## <a name="instructions"></a>Instrukcje
 
-### Krok 1. Konfigurowanie na potrzeby testów
+### <a name="step-1-setup-for-testing"></a>Krok 1. Konfigurowanie na potrzeby testów
 
 Możesz przeprowadzić test za pomocą usługi Azure RMS lub serwera usługi RMS w systemie Windows Server. Zalecamy rozpoczęcie testowania od usługi Azure RMS, a następnie przeprowadzenie testu przy użyciu serwera usługi RMS, jeśli wymaga tego wdrożenie.
 
@@ -40,22 +38,15 @@ Możesz przeprowadzić test za pomocą usługi Azure RMS lub serwera usługi RMS
 
     Informacje na temat metody instalowania zestawu SDK 2.1 usługi RMS znajdują się w temacie [Instalacja zestawu SDK](install-the-rms-sdk.md).
 
-## Uwagi
+## <a name="remarks"></a>Uwagi
 
 Wskazówki zawarte w tym temacie nie są kompletne. Aby uzyskać szczegółowe informacje na temat konfigurowania klienta RMS Client 2.1, zobacz [Uwagi dotyczące wdrażania klienta RMS Client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx).
 
-### Tematy pokrewne
+### <a name="related-topics"></a>Tematy pokrewne
 
 * [Instrukcje: instalowanie i konfigurowanie serwera usługi RMS](how-to-install-and-configure-an-rms-server.md)
 * [Instrukcje: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md)
 * [Instalacja zestawu SDK](install-the-rms-sdk.md)
 * [Uwagi dotyczące wdrażania klienta RMS Client 2.1](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

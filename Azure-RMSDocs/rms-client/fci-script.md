@@ -1,9 +1,10 @@
 ---
-title: "Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików | Azure Information Protection"
+title: "Skrypt programu PowerShell dla usługi Azure RMS i infrastruktury klasyfikacji plików — AIP"
 description: "Przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w instrukcjach dotyczących ochrony za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,18 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
-
-
+ms.openlocfilehash: 51d8002dc4dc2a59c38f7eff3cba51fd6b2ddf7d
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
+# <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików
 
-# Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików
-
->*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w artykule [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
+
+Ten skrypt wymaga co najmniej wersji **1.3.155.2** dla modułu usługi AzureInformationProtection. Uruchom następujące polecenie, aby sprawdzić wersję: `(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
 *&#42;&#42;Zastrzeżenie&#42;&#42;: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy*
 *skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE bez jakichkolwiek gwarancji.*
@@ -32,7 +32,7 @@ Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z 
 .SYNOPSIS 
      Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID and AzureInformationProtection module minimum version 1.3.155.2.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -56,7 +56,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 1.0' 
+[String] $Script:Version = 'version 3.2' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -77,19 +77,16 @@ function Check-Module{
     [bool]$isResult = $False
 
     #try to load the module
-    if (get-module -list -name $Module) {
-        import-module $Module
-
-        if (get-module -name $Module ) {
+    if ((get-module -list -name $Module) -ne $nil)
+        {
 
             $isResult = $True
-        } else {
+        } else 
+        
+        {
             $isResult = $False
         } 
 
-    } else {
-            $isResult = $False
-    }
     return $isResult
 }
 
@@ -98,11 +95,11 @@ function Protect-File ($ffile, $ftemplateId, $fownermail) {
     [bool] $returnValue = $false
     try {
         If ($OwnerMail -eq $null -or $OwnerMail -eq "") {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId")
         } else {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId -OwnerEmail $fownermail
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId -OwnerEmail $fownermail
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId, set Owner: $fownermail")
         }
@@ -133,17 +130,17 @@ $Script:isScriptProcess = $True
 
 # Validate Azure RMS connection by checking the module and then connection
 if ($Script:isScriptProcess) {
-        if (Check-Module -Module RMSProtection){
+         if (Check-Module -Module AzureInformationProtection){
         $Script:isScriptProcess = $True
     } else {
 
-        Write-Host ("The RMSProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"            
+        Write-Host ("The AzureInformationProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"            
         $Script:isScriptProcess = $False
     }
 }
 
 if ($Script:isScriptProcess) {
-    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )  
+    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )    
     if (Set-RMSConnection $AppPrincipalId $SymmetricKey $BposTenantId) {
         Write-Host ("Connected to Azure RMS")
 
@@ -172,8 +169,4 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 Powrót do tematu [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
 
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

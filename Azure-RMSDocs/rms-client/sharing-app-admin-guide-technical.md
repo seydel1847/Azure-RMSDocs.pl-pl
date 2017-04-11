@@ -1,9 +1,10 @@
 ---
-title: "Przegląd techniczny aplikacji Rights Management sharing | Azure Information Protection"
+title: "Omówienie techniczne aplikacji RMS sharing — AIP"
 description: "Szczegółowe informacje techniczne dla administratorów w sieciach firmowych, którzy są odpowiedzialni za wdrażanie aplikacji RMS sharing dla systemu Windows."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,17 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
-
-
+ms.openlocfilehash: e168c68cfeb14b40c0922426e2d226c28dac26ff
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
+# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
-
-# Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
-
->*Dotyczy: Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna aplikacja do pobrania dla systemu Microsoft Windows i innych platform, która zapewnia następujące korzyści:
@@ -42,7 +39,7 @@ Począwszy od wersji usługi RMS z października 2013 r., możesz chronić dokum
 
 Aby uzyskać informacje na temat wdrożenia, zobacz [Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application).
 
-## Poziomy ochrony — natywny i ogólny
+## <a name="levels-of-protection--native-and-generic"></a>Poziomy ochrony — natywny i ogólny
 Aplikacja do udostępniania usługi Microsoft Rights Management obsługuje ochronę na dwóch różnych poziomach, co opisano w poniższej tabeli.
 
 |Typ ochrony|Natywna|Ogólne|
@@ -52,7 +49,7 @@ Aplikacja do udostępniania usługi Microsoft Rights Management obsługuje ochro
 |Domyślny dla typów plików|Jest to domyślny poziom ochrony dla następujących typów plików:<br /><br />— Pliki tekstowe i pliki obrazów<br /><br />— Pliki pakietu Microsoft Office (programów Word, Excel i PowerPoint)<br /><br />— Pliki w formacie Portable Document Format (pdf)<br /><br />Więcej informacji można znaleźć w poniższej sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](#supported-file-types-and-file-name-extensions).|Jest to domyślna ochrona dla wszystkich pozostałych typów plików (takich jak vsdx, rtf itd.), które nie są obsługiwane w ramach pełnej ochrony.|
 Domyślny poziom ochrony stosowany przez aplikację RMS sharing można zmienić. Można zmienić poziom domyślny z natywnego na ogólny, z ogólnego na natywny, a nawet zupełnie uniemożliwić ochronę ze strony aplikacji RMS sharing. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) w tym artykule.
 
-## Obsługiwane typy plików i rozszerzenia nazw plików:
+## <a name="supported-file-types-and-file-name-extensions"></a>Obsługiwane typy plików i rozszerzenia nazw plików:
 Poniższa tabela zawiera listę typów plików, które są natywnie obsługiwane przez aplikację do udostępniania usługi Microsoft Rights Management. W przypadku tych typów plików oryginalne rozszerzenie nazwy pliku zostaje zmienione po zastosowaniu do nich ochrony natywnej i pliki zyskują status tylko do odczytu.
 
 Ponadto w przypadku natywnej ochrony pliku programu Word, Excel lub PowerPoint w aplikacji RMS sharing (jeśli plik jest chroniony za pomocą udostępniania) ta akcja powoduje automatyczne utworzenie drugiego pliku stanowiącego kopię oryginału, który ma taką samą nazwę jak oryginał, ale rozszerzenie **ppdf**¹. Ta wersja pliku chronionego w sposób natywny może zostać otwarta przez adresatów, którzy zainstalowali aplikację RMS sharing.
@@ -74,7 +71,6 @@ W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pl
 |tiff|ptiff|
 |bmp|pbmp|
 |gif|pgif|
-|giff|pgiff|
 |jpe|pjpe|
 |jfif|pjfif|
 |jt|pjt|
@@ -86,7 +82,7 @@ Poniższa tabela zawiera typy plików obsługiwanych natywnie przez aplikację M
 |----------------------------------|----------------------------------|
 |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm|pptx<br /><br />thmx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
 
-### Zmiana domyślnego poziomu ochrony plików
+### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
 Edytując rejestr, możesz zmienić sposób ochrony plików w aplikacji RMS sharing. Możesz na przykład wymusić, aby pliki obsługujące ochronę natywną były objęte ochroną ogólną aplikacji RMS sharing.
 
 W jakich sytuacjach warto to zrobić:
@@ -101,25 +97,25 @@ Analogicznie, można wymusić stosowanie przez aplikację RMS sharing ochrony na
 
 Możesz też wymusić blokowanie ochrony plików przez aplikację RMS sharing. Wówczas nie jest stosowana ani ochrona natywna, ani ogólna. Ta opcja może się przydać, jeśli na przykład masz działającą automatycznie aplikację lub usługę, która musi otworzyć określony plik, aby przetworzyć jego zawartość. Jeśli zablokujesz ochronę określonego typu plików, użytkownicy nie mogą ochronić plików tego typu za pomocą aplikacji RMS sharing. Jeśli ktoś spróbuje to zrobić, zobaczy komunikat informujący o zablokowaniu przez administratora możliwości ochrony i będzie musiał zrezygnować z tego działania.
 
-W celu skonfigurowania aplikacji RMS sharing, aby stosowała ochronę ogólną do wszystkich plików, które domyślnie byłyby chronione natywnie, wprowadź w rejestrze następujące zmiany:
+W celu skonfigurowania aplikacji RMS sharing, aby stosowała ochronę ogólną do wszystkich plików, które domyślnie byłyby chronione natywnie, wprowadź w rejestrze następujące zmiany. Zwróć uwagę, że jeśli klucze RmsSharingApp lub FileProtection nie istnieją, należy je utworzyć ręcznie.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: Utwórz nowy klucz o nazwie *.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Utwórz nowy klucz o nazwie *.
 
     To ustawienie oznacza pliki z dowolnym rozszerzeniem nazwy pliku.
 
-2.  W nowo dodanym kluczu HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* utwórz nową wartość ciągu (REG_SZ) o nazwie **Encryption** z wartością danych **Pfile**.
+2.  W nowo dodanym kluczu HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\\\* utwórz nową wartość ciągu (REG_SZ) o nazwie **Encryption** z wartością danych **Pfile**.
 
     To ustawienie powoduje stosowanie ochrony ogólnej przez aplikację RMS sharing.
 
 Te dwa ustawienia powodują, że aplikacja RMS sharing stosuje ochronę ogólną do wszystkich plików mających rozszerzenie nazwy pliku. Jeśli taki był Twój cel, nie trzeba już nic konfigurować. Możesz jednak zdefiniować wyjątki dla określonych typów plików, aby nadal były objęte ochroną natywną. W tym celu dla każdego typu plików trzeba wprowadzić trzy dodatkowe zmiany do rejestru:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: Dodaj nowy klucz o nazwie takiej jak dane rozszerzenie nazwy pliku (bez kropki przed rozszerzeniem).
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Dodaj nowy klucz o nazwie takiej, jak dane rozszerzenie nazwy pliku (bez kropki przed rozszerzeniem).
 
     Na przykład w przypadku plików z rozszerzeniem nazwy pliku docx utwórz klucz o nazwie **DOCX**.
 
-2.  W nowo dodanym kluczu typu pliku (np. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) utwórz nową wartość DWORD o nazwie **AllowPFILEEncryption** z wartością **0**.
+2.  W nowo dodanym kluczu typu pliku (np. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**) utwórz nową wartość DWORD o nazwie **AllowPFILEEncryption** z wartością **0**.
 
-3.  W nowo dodanym kluczu typu pliku (np. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**) utwórz nową wartość ciągu o nazwie **Encryption** z wartością **Native**.
+3.  W nowo dodanym kluczu typu pliku (np. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**) utwórz nową wartość ciągu o nazwie **Encryption** z wartością **Native**.
 
 W wyniku skonfigurowania tych ustawień wszystkie pliki będą chronione ogólnie z wyjątkiem plików mających rozszerzenie nazwy pliku docx, które będą chronione natywnie przez aplikację RMS sharing.
 
@@ -133,12 +129,7 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 -   **Off**: blokowanie ochrony
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

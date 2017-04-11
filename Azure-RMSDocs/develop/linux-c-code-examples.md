@@ -3,8 +3,9 @@ title: "Przykłady kodu dla systemu Linux | Azure RMS"
 description: "W tym temacie przedstawiono ważne scenariusze i elementy kodu dla zestawu SDK usługi RMS w wersji dla systemu Linux."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,20 +14,17 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
-
-
+ms.openlocfilehash: 7dfa61380067bcd2b1886c1e9a2674a4c1150bc9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Przykłady kodu dla systemu Linux
+# <a name="linux-code-examples"></a>Przykłady kodu dla systemu Linux
 
 W tym temacie przedstawiono ważne scenariusze i elementy kodu dla zestawu SDK usługi RMS w wersji dla systemu Linux.
 
 Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *rmsauth\_sample*. Aby uzyskać więcej informacji, zobacz [przykłady](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples) w repozytorium GitHub.
 
-## Scenariusz: dostęp do informacji o zasadach ochrony z poziomu chronionego pliku
+## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>Scenariusz: dostęp do informacji o zasadach ochrony z poziomu chronionego pliku
 
 **Otwiera i odczytuje plik chroniony za pomocą usługi RMS**
 **Źródło**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -146,7 +144,7 @@ Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *r
       return fsResult;
     }
 
-## Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
+## <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
 
 **Chroni plik za pomocą szablonu wybranego przez użytkownika**
 **Źródło**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -286,7 +284,7 @@ Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *r
     
 
 
-## Scenariusz: zabezpieczenie pliku za pomocą ochrony niestandardowej
+## <a name="scenario-protect-a-file-using-custom-protection"></a>Scenariusz: zabezpieczenie pliku za pomocą ochrony niestandardowej
 
 **Zabezpiecza plik za pomocą ochrony niestandardowej**
 **Źródło**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -403,7 +401,7 @@ Fragmenty kodu poniżej pochodzą z przykładowych aplikacji, *rms\_sample* i *r
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## WorkerThread — metoda wsparcia
+## <a name="workerthread---a-supporting-method"></a>WorkerThread — metoda wsparcia
 
 
 Metoda *WorkerThread()* jest wywoływana przez dwa poprzednie przykładowe scenariusze; **Utwórz strumień pliku chronionego** i **Chroni plik na podstawie zasad** w następujący sposób:
@@ -498,7 +496,7 @@ Metoda *WorkerThread()* jest wywoływana przez dwa poprzednie przykładowe scena
     }
 
 
-## Scenariusz: uwierzytelnianie za pomocą usługi RMS
+## <a name="scenario-rms-authentication"></a>Scenariusz: uwierzytelnianie za pomocą usługi RMS
 
 W poniższych przykładach pokazano dwa różne podejścia do uwierzytelniania; uzyskiwanie tokenu uwierzytelniania Azure oAuth2 przy użyciu interfejsu użytkownika i bez niego.
 **Uzyskiwanie tokenu uwierzytelniania oAuth2 przy użyciu interfejsu użytkownika**
@@ -590,9 +588,4 @@ Opis: możesz ustawić ścieżkę pamięci podręcznej lub użyć domyślnej.
 
 **Uwaga** Wszystkie metody biblioteki uwierzytelniania mogą zgłaszać wyjątek **rmsauth::Exception**.
 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

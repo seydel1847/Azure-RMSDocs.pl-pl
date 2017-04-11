@@ -1,9 +1,10 @@
 ---
-title: "Przewodnik szybkiego wdrażania usługi Azure Information Protection | Azure Information Protection"
-description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Information Protection w celu ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
+title: "Przewodnik szybkiego wdrażania usługi Azure RMS — AIP"
+description: "Przewodnik ułatwiający szybsze wdrażanie i używanie usługi Azure Rights Management do ochrony danych organizacji. Rozpocznij od dokonania wyboru z listy konkretnych scenariuszy do implementacji."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -11,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
-
-
+ms.openlocfilehash: dd1ecd8bd232e3079ce92eab07288ede52d3de72
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Szybkie wdrażanie usługi Azure Rights Management
+# <a name="rapid-deployment-guide-for-azure-rights-management"></a>Szybkie wdrażanie usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Ten przewodnik udostępnia listę określonych scenariuszy implementacji. Użyj tego przewodnika oraz informacji dotyczących konfiguracji zawartych w sekcji **Wdrażanie i używanie**, aby szybciej wdrożyć usługę Azure Information Protection i korzystać z niej.
+W sekcji **Wdrażanie i używanie** tego przewodnika znajdują się informacje dotyczące konfiguracji, które pozwalają szybciej wdrożyć rozwiązanie tylko do ochrony wykorzystujące usługę Azure Rights Management w ramach usługi Azure Information Protection. Zacznij od wybrania z listy konkretnych scenariuszy do implementacji.
+
+> [!NOTE]
+> W tej chwili przewodnik zawiera scenariusze uwzględniające zastosowania tylko do ochrony. Nie uwzględnia natomiast scenariuszy klasyfikacji i ochrony ani scenariuszy obejmujących klienta usługi Azure Information Protection. 
 
 Opisane scenariusze zawierają zarówno instrukcje dla administratora, jak i dokumentację użytkownika końcowego. Przed przekazaniem tej dokumentacji (w postaci instrukcji lub anonsów) użytkownikom końcowym należy dostosować ją do określonych wymagań biznesowych oraz istniejących przepływów pracy. W przykładowym zestawie instrukcji lub anonsie pokazano, jak może wyglądać końcowa wersja dokumentacji dla użytkowników końcowych.
 
@@ -32,10 +33,9 @@ W tym artykule zawarto przykładowe, najpopularniejsze scenariusze. Usługa Azur
 
 Przed wdrożeniem opisanych rozwiązań warto wysłać do użytkowników końcowych obszerne powiadomienie o planowanych modyfikacjach mających na celu ochronę danych firmy wraz z informacją o ewentualnej konieczności wprowadzenia zmian w sposobie pracy. Treść takiej przykładowej komunikacji zamieszczono pod poniższą tabelą.
 
-> [!NOTE]
-> Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
+Jeśli masz pytania lub uwagi dotyczące tego przewodnika, skorzystaj z elementów umożliwiających przekazanie opinii, dostępnych na tej stronie, lub wyślij wiadomość e-mail na adres [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback).
 
-## Scenariusze dotyczące usługi Azure Information Protection
+## <a name="scenarios-for-azure-information-protection"></a>Scenariusze dotyczące usługi Azure Information Protection
 Aby szybciej wdrożyć usługę Azure Information Protection w celu rozwiązania określonych problemów w firmie, należy wybrać scenariusze, które najlepiej pasują do celów biznesowych i w razie potrzeby dostosować je.
 
 
@@ -123,12 +123,12 @@ Patrz [Scenariusz — konfigurowanie folderów roboczych do stałej ochrony](sce
 
 
 
-## Powiadomienie dla użytkowników przed wdrożeniem
+## <a name="announcement-for-users-before-rollout"></a>Powiadomienie dla użytkowników przed wdrożeniem
 Następującego przykładowego komunikatu można użyć, aby dać znać użytkownikom, że wdrożenie usługi Azure Information Protection oznacza wprowadzenie pewnych zmian. Przedstawiciel kadry kierowniczej organizacji, najlepiej dyrektor generalny, powinien skopiować poniższy tekst i wysłać go pocztą e-mail do wszystkich użytkowników. W tekście można wprowadzać zmiany, tak aby lepiej dopasować go do potrzeb użytkowników i uwarunkowań występujących w organizacji.
 
 ![Transparent przykładowej dokumentacji użytkownika dotyczącej szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-### Wprowadzamy zmiany, aby chronić nasze dane
+### <a name="changes-were-making-to-safeguard-our-data"></a>Wprowadzamy zmiany, aby chronić nasze dane
 Czy zdarzyło Ci się wysłać kontrahentowi dokument przez pomyłkę? Czy chcesz mieć możliwość zablokowania dostępu do takiego dokumentu? Czy zdarzyło Ci się zastanawiać, jak można ustalić, którzy klienci przeczytali najnowsze informacje o produkcie? Czy musisz udostępniać poufne informacje o produktach, ale nie chcesz się martwić tym, że mogą one trafić do osób, które nie powinny ich zobaczyć?
 
 Już wkrótce będzie można korzystać z tych możliwości. W ramach rozwiązania ochrony danych w przedsiębiorstwie nasz dział IT wprowadza pewne zmiany związane z wdrożeniem usługi Microsoft Azure Information Protection. Wiele nowych rozwiązań spowoduje automatyczne zastosowanie potrzebnych zabezpieczeń bez potrzeby wykonywania dodatkowych czynności z Twojej strony. Jednak niektóre zmiany wymagają, aby inaczej wykonywać pewne czynności. W takim przypadku otrzymasz odpowiednie informacje i instrukcje od działu IT. W razie pytań lub problemów możesz również uzyskać wsparcie w dziale pomocy technicznej.
@@ -143,9 +143,4 @@ Jednym z najcenniejszych zasobów naszej organizacji są dane. Tworzymy je, prze
 
 Rozwiązania, które wdrażamy, pomogą nam chronić nasze cenne zasoby i pozwolą korzystać z narzędzi umożliwiających sprawowanie kontroli nad danymi. Dziękujemy za Twoją współpracę podczas wprowadzania opisanych zmian.
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -3,8 +3,9 @@ title: "Jak debugować aplikację obsługującą prawa | Azure RMS"
 description: "Poniższy temat opisuje metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,18 +14,15 @@ ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
-
-
+ms.openlocfilehash: 128f472eb69a52bd8a7cf2e8103ee520d83ee92c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Porada: debugowanie aplikacji obsługującej prawa
+# <a name="how-to-debug-a-rights-enabled-application"></a>Porada: debugowanie aplikacji obsługującej prawa
 
 Poniższy temat opisuje metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
 
-## Debugowanie aplikacji
+## <a name="debugging-your-application"></a>Debugowanie aplikacji
 
 W zestawie Rights Management Services SDK 2.1 w przypadku wersji środowiska uruchomieniowego przeznaczonej dla deweloperów testy chroniące przed debugowaniem są wyłączone.
 
@@ -41,7 +39,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### Rejestrowanie aplikacji przy użyciu dziennika zdarzeń systemu Windows
+### <a name="application-logging-by-using-the-windows-event-log"></a>Rejestrowanie aplikacji przy użyciu dziennika zdarzeń systemu Windows
 
 Nazwa dziennika zdarzeń to „Microsoft-RMS-MSIPC/Debug”. W Podglądzie zdarzeń systemu Windows dziennik jest wyświetlany w obszarze „Dzienniki aplikacji i usług\\Microsoft\\RMS\\MSIPC\\Debug”.
 
@@ -65,16 +63,4 @@ Na przykład użycie poniższego polecenia spowoduje włączenie dziennika zdarz
 
 **Uwaga** Aby uwidocznić dziennik debugowania MSIPC, w Podglądzie zdarzeń systemu Windows w menu **Widok** wybierz opcję **Pokaż dzienniki analityczne i debugowania**.
 
- 
-
-## Tematy pokrewne
-
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

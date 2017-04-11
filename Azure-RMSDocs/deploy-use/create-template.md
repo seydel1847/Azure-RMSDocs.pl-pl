@@ -1,9 +1,10 @@
 ---
-title: Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego | Azure Information Protection
+title: "Konfigurowanie i publikowanie szablonu niestandardowego usługi Azure RMS"
 description: "Instrukcje dotyczące tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Szablony ułatwiają użytkownikom końcowym i innym administratorom stosowanie odpowiednich zasad służących do ochrony dokumentów i wiadomości e-mail."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -11,38 +12,28 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
-
-
+ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+translationtype: HT
 ---
-
-
-# Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
+# <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 
 Istnieje możliwość tworzenia szablonów niestandardowych i zarządzania nimi w klasycznym portalu Azure. Można to zrobić bezpośrednio z poziomu klasycznego portalu Azure lub zarejestrować się w Centrum administracyjnym usługi Office 365 i wybrać polecenie **Zaawansowane funkcje** odnoszące się do usługi Rights Management, co spowoduje przejście do klasycznego portalu Azure.
 
-Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usługi Azure Rights Management, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi w klasycznym portalu Azure. Jeśli innym użytkownikom również przypisano rolę administratora globalnego usługi Azure Rights Management, także oni mogą tworzyć szablony i zarządzać nimi, ale muszą używać programu [PowerShell](configure-templates-with-powershell.md). Więcej informacji można znaleźć w odpowiedzi na pytanie [Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 Wykonując poniższe procedury, można tworzyć, konfigurować i publikować szablony niestandardowe dla usługi Rights Management.
 
-## Tworzenie szablonu niestandardowego
+## <a name="to-create-a-custom-template"></a>Tworzenie szablonu niestandardowego
 
 1.  W zależności od tego, czy logowanie ma miejsce w Centrum administracyjnym usługi Office 365, czy też w klasycznym portalu Azure, wykonaj jedną z następujących czynności:
 
-    -   Przejdź do [Centrum administracyjnego usługi Office 365](https://portal.office.com/):
+    -   Nawigacja w **Centrum administracyjnym usługi Office 365** zależy od tego, czy używana jest wersja zapoznawcza centrum administracyjnego usługi Office 365 (oraz od jej wersji) czy klasyczna wersja centrum administracyjnego usługi Office 365. W przypadku wszystkich wersji można jednak przejść bezpośrednio do strony [zarządzania prawami](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx): 
 
-        1.  W lewym okienku kliknij opcję **Ustawienia usługi**.
-
-        2.  W sekcji **Ustawienia usługi** kliknij opcję **Rights Management**.
-
-        3.  W sekcji **Ochrona informacji użytkownika** kliknij przycisk **Zarządzaj**.
-
-        4.  W sekcji **Rights Management** kliknij opcję **Zaawansowane funkcje**.
+        1.  W sekcji **dodatkowa konfiguracja** kliknij przycisk **zaawansowane funkcje**.
 
             > [!NOTE]
             > Jeśli usługa Rights Management nie została aktywowana, najpierw kliknij pozycję **Aktywuj** i potwierdź wybór. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
@@ -53,16 +44,16 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     -   W [klasycznym portalu Azure ](http://go.microsoft.com/fwlink/p/?LinkID=275081):
 
-        1.  W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
+        1. W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
 
-        2.  Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
+        2. Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
 
-        3.  Wybierz katalog, aby zarządzać usługą Rights Management.
-
-        4.  Jeśli usługa Rights Management nie została jeszcze aktywowana, należy kliknąć opcję **AKTYWUJ** i potwierdzić wybór.
+        3. Jeśli **STAN USŁUGI RIGHTS MANAGEMENT** zostanie wyświetlony jako **Nieaktywny**, kliknij pozycję **AKTYWUJ** i potwierdź wybór.
 
             > [!NOTE]
-            > Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md).
+            > Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](activate-service.md)
+            >
+        4. Gdy **STAN USŁUGI RIGHTS MANAGEMENT** zostanie wyświetlony jako **Aktywny**, wybierz nazwę dzierżawy usługi Active Directory.
 
 2.  Tworzenie szablonu:
 
@@ -76,7 +67,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
 4. Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
 
-## Konfiguracja i publikacja szablonu niestandardowego
+## <a name="to-configure-and-publish-a-custom-template"></a>Konfiguracja i publikacja szablonu niestandardowego
 
 1.  Wybierz nowo utworzony szablon na stronie **SZABLONY** w klasycznym portalu Azure.
 
@@ -84,20 +75,24 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     > [!NOTE]
     > Wybrani użytkownicy lub grupy muszą mieć adres e-mail. W środowisku produkcyjnym adres jest dostępny prawie zawsze, ale w prostym środowisku testowym może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
+    > 
+    > Jeśli adres e-mail ulegnie zmianie po wybraniu użytkownika lub grupy i zapisaniu szablonu, zobacz sekcję [Jeśli adres e-mail ulegnie zmianie](../plan-design/prepare.md#considerations-if-email-addresses-change) dokumentacji planowania. 
 
-    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. W przypadku dostępności lokalnej usługi Active Directory, jeśli planowana jest synchronizacja do usługi Azure AD, można użyć grup zabezpieczeń lub grup dystrybucyjnych z obsługą wiadomości e-mail. Chcąc nadać prawa wszystkim użytkownikom w obrębie organizacji, łatwiej będzie skopiować jeden z szablonów domyślnych niż określać wiele grup. Aby uzyskać więcej informacji, zobacz [Kopiowanie szablonu](copy-template.md).
+    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching). 
+    
+    W przypadku dostępności lokalnej usługi Active Directory, jeśli planowana jest synchronizacja do usługi Azure AD, można użyć grup zabezpieczeń lub grup dystrybucyjnych z obsługą wiadomości e-mail. Aby nadać prawa wszystkim użytkownikom w obrębie organizacji, łatwiej będzie skopiować jeden z szablonów domyślnych niż określać wiele grup. Aby uzyskać więcej informacji, zobacz [Kopiowanie szablonu](copy-template.md).
 
     > [!TIP]
     > Aby dodać użytkowników spoza organizacji („użytkowników zewnętrznych”) do szablonu, wybierz grupę z włączoną obsługą poczty, która zawiera kontakty z usługi Office 365 lub Exchange Online. Pozwoli to przypisać prawa do tych użytkowników w ten sam sposób, w jaki można przypisać prawa do użytkowników w danej organizacji. Na przykład można zapobiec edytowaniu cennika wysłanego do klientów przez tych klientów. Nie należy używać tej konfiguracji szablonu do ochrony wiadomości e-mail, jeśli użytkownicy spoza danej organizacji będą czytać chronione wiadomości e-mail za pomocą aplikacji Outlook Web App.
     > 
-    > Ponadto w późniejszym czasie można dodać do szablonu użytkowników spoza organizacji, korzystając z [modułu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md) oraz jednej z następujących metod:
+    > Ponadto w późniejszym czasie możesz dodawać do szablonu użytkowników spoza organizacji, wybierając ich według **określonych użytkowników**, **grup** lub **wszystkich użytkowników z organizacji**. Aby to zrobić, użyj [modułu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md) w połączeniu z jedną z następujących metod:
     > 
-    > -  **Można użyć obiektu definicji praw w celu aktualizacji szablonu**: w tym celu należy określić w obiekcie definicji praw zewnętrzne adresy e-mail i ich prawa, które zostaną następnie użyte w celu aktualizacji szablonu. Obiekt definicji praw określa się, używając polecenia cmdlet [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) do utworzenia zmiennej. Zmienna zostaje następnie dostarczona do parametru -RightsDefinition za pomocą polecenia cmdlet [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) (w przypadku modyfikacji istniejącego szablonu). W przypadku dodawania użytkowników do istniejącego szablonu trzeba jednak także zdefiniować obiekty definicji praw dla grup istniejących w szablonie, a nie tylko dla nowych użytkowników zewnętrznych.
-    > -  **Można wyeksportować szablon, dokonać jego edycji, a następnie zaimportować zaktualizowany szablon**: użyj polecenia cmdlet [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx), aby wyeksportować szablon do pliku, który można edytować w celu dodania zewnętrznych adresów e-mail użytkowników i ich praw w odniesieniu do istniejących grup i praw. Następnie należy użyć polecenia cmdlet [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) w celu zaimportowania zmienionego szablonu z powrotem do usługi Azure RMS.
+    > -  **Użyj obiektu definicji praw, aby zaktualizować szablon**: określ użytkowników zewnętrznych, podając adres e-mail użytkownika, adres e-mail grupy lub domenę dla wszystkich użytkowników danej organizacji, a także odpowiednie prawa w obiekcie definicji praw. Następnie użyj obiektu definicji praw w celu zaktualizowania szablonu. Obiekt definicji praw określa się, używając polecenia cmdlet [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) do utworzenia zmiennej. Zmienna zostaje następnie dostarczona do parametru -RightsDefinition za pomocą polecenia cmdlet [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) (w przypadku modyfikacji istniejącego szablonu). W przypadku dodawania użytkowników do istniejącego szablonu trzeba jednak także zdefiniować obiekty definicji praw dla grup istniejących w szablonie, a nie tylko dla nowych użytkowników zewnętrznych.
+    > -  **Szablon można wyeksportować i zmodyfikować, a następnie zaimportować jego zaktualizowaną wersję**: użyj polecenia cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate), aby wyeksportować szablon do pliku, który można edytować w celu dodania zewnętrznych adresów e-mail użytkowników, adresów e-mail grup i domen wszystkich użytkowników organizacji oraz ich praw w odniesieniu do istniejących grup i praw. Następnie należy użyć polecenia cmdlet [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) w celu zaimportowania zmienionego szablonu z powrotem do usługi Azure RMS.
 
 3.  Następnie należy kliknąć przycisk Dalej i przypisać jedno z wymienionych praw do wybranych użytkowników i grup.
 
-    Więcej informacji na temat każdego z praw (także niestandardowych) można znaleźć w wyświetlanych opisach. Bardziej szczegółowe informacje są także dostępne w sekcji [Konfigurowanie praw użytkowania usługi Azure Rights Management](configure-usage-rights.md). Aplikacje obsługujące usługę RMS mogą jednak różnić się w zakresie sposobu wdrażania tych praw. Należy zapoznać się z ich dokumentacją i samodzielnie przeprowadzić testy z użyciem aplikacji wykorzystywanych przez użytkowników, aby sprawdzić zachowanie szablonów przed ich wdrożeniem dla użytkowników. Aby wyświetlić ten szablon na potrzeby testów tylko dla administratorów, należy ustawić go jako szablon dla działu (krok 6).
+    Więcej informacji na temat każdego z praw (także niestandardowych) można znaleźć w wyświetlanych opisach. Bardziej szczegółowe informacje są także dostępne w sekcji [Konfigurowanie praw użytkowania usługi Azure Rights Management](configure-usage-rights.md). Aplikacje obsługujące usługę Rights Management mogą jednak różnić się sposobami wdrażania tych praw. Należy zapoznać się z ich dokumentacją i samodzielnie przeprowadzić testy z użyciem aplikacji wykorzystywanych przez użytkowników, aby sprawdzić zachowanie szablonów przed ich wdrożeniem dla użytkowników. Aby wyświetlić ten szablon na potrzeby testów tylko dla administratorów, należy ustawić go jako szablon dla działu (krok 6).
 
 4.  W przypadku wybrania opcji **Niestandardowy** należy kliknąć przycisk Dalej, a następnie wybrać prawa niestandardowe.
 
@@ -112,7 +107,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Więcej informacji o szablonach dla działu: Domyślnie wszyscy użytkownicy katalogu Azure widzą wszystkie opublikowane szablony i mogą wybierać je z poziomu aplikacji, chcąc zabezpieczyć zawartość. Aby wybrane pozycje spośród opublikowanych szablonów były widoczne tylko dla określonych użytkowników, należy określić zakres szablonów dla tych użytkowników. Po wykonaniu tej czynności tylko wskazani użytkownicy będą mieć możliwość wyboru tych szablonów. Inni użytkownicy, którzy nie zostaną wskazani, nie zobaczą szablonów i, co za tym idzie, nie będą mogli ich wybrać. Ta technika pozwala ułatwić użytkownikom wybór prawidłowego szablonu, zwłaszcza w przypadku, gdy tworzone są szablony przeznaczone dla określonych grup lub działów. Użytkownicy widzą w takim przypadku tylko te szablony, które są przeznaczone dla nich.
 
-    Można na przykład utworzyć przeznaczony dla działu kadr szablon, który nadaje uprawnienia Tylko do odczytu członkom działu finansowego. Dzięki temu omawiany szablon mogą zastosować tylko członkowie działu kadr, korzystając w tym celu z aplikacji do udostępniania usługi Rights Management. Zakres szablonu określa się poprzez powiązanie szablonu z grupą o wskazanym adresie e-mail, której nazwa brzmi HumanResources. Po wykonaniu tych czynności omawiany szablon mogą zobaczyć i zastosować wyłącznie członkowie tej grupy.
+    Można na przykład utworzyć przeznaczony dla działu kadr szablon, który nadaje uprawnienia Tylko do odczytu członkom działu finansowego. Dzięki temu szablon mogą zastosować tylko członkowie działu kadr, korzystając w tym celu z klienta usługi Azure Information Protection. Zakres szablonu określa się poprzez powiązanie szablonu z grupą o wskazanym adresie e-mail, której nazwa to HumanResources. Po wykonaniu tych czynności szablon mogą zastosować wyłącznie członkowie tej grupy. Ponadto, jeśli użytkownicy uruchomią klienta usługi Azure Information Protection w [trybie z samą ochroną](../rms-client/client-protection-only-mode.md), nie zobaczą tego szablonu.
 
 7.  Na stronie **WIDOCZNOŚĆ SZABLONU** należy wybrać użytkowników i grupy, w przypadku których możliwe będzie wyświetlenie i wybór szablonu z poziomu aplikacji z obsługą usług RMS. Jak przedtem, także i w tym przypadku dobrą praktyką jest użycie grupy zamiast użytkowników, przy czym zarówno dla użytkowników, jak i dla grup dostępne muszą być adresy e-mail.
 
@@ -120,7 +115,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Dlaczego może być konieczne skonfigurowanie zgodności aplikacji? Nie wszystkie aplikacje obsługują szablony dla działów. Aby możliwa była ich obsługa, przed pobraniem szablonów niezbędne jest uwierzytelnienie aplikacji w usłudze RMS. Zgodnie z domyślnym ustawieniem, w przypadku, gdy proces uwierzytelniania nie zostanie przeprowadzony, nie zostaną pobrane żadne szablony dla działów. Takie działanie można ominąć, wskazując wszystkie szablony dla działów jako te, które mają zostać pobrane; w tym celu należy skonfigurować zgodność aplikacji i zaznaczyć pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika**.
 
-    Jeśli na przykład zgodność aplikacji nie zostanie skonfigurowana dla szablonu dla działu kadr omawianego w przytoczonym przykładzie, tylko użytkownicy z działu kadr zobaczą szablon podczas korzystania z aplikacji RMS sharing; szablonu dla działu nie zobaczy jednak żaden użytkownik korzystający z usługi Outlook Web Access (OWA) w systemie Exchange Server 2013, ponieważ usługa OWA systemu Exchange oraz protokół Exchange ActiveSync nie obsługują aktualnie szablonów dla działów. Jeśli to domyślne działanie zostanie wyłączone poprzez skonfigurowanie zgodności aplikacji, to choć tylko użytkownicy z działu kadr zobaczą szablon dla działu podczas korzystania z aplikacji RMS sharing, szablon dla działu będzie widoczny dla wszystkich użytkowników korzystających z usługi Outlook Web Access (OWA). Jeśli użytkownicy korzystają w ramach usługi Exchange Online z usługi OWA lub protokołu Exchange ActiveSync, są dwie możliwości: szablony dla działów będą widoczne dla wszystkich użytkowników lub nie będą widoczne dla żadnego z nich, zależnie od statusu szablonu (archiwalny lub opublikowany) w usłudze Exchange Online.
+    Jeśli na przykład zgodność aplikacji nie zostanie skonfigurowana dla szablonu dla działu kadr omawianego w przytoczonym przykładzie, tylko użytkownicy z działu kadr zobaczą szablon podczas korzystania z klienta usługi Azure Information Protection w trybie [tylko z samą ochroną](../rms-client/client-protection-only-mode.md). Szablonu nie zobaczy jednak żaden użytkownik korzystający z usługi Outlook Web Access (OWA) w systemie Exchange Server 2013, ponieważ usługa OWA systemu Exchange oraz protokół Exchange ActiveSync nie obsługują aktualnie szablonów dla działów. Jeśli to domyślne działanie zostanie wyłączone poprzez skonfigurowanie zgodności aplikacji, to choć tylko użytkownicy z działu kadr zobaczą szablon dla działu podczas korzystania z klienta Azure Information Protection w trybie z samą ochroną, szablon dla działu będzie widoczny dla wszystkich użytkowników korzystających z usługi Outlook Web Access (OWA). Jeśli użytkownicy korzystają w ramach usługi Exchange Online z usługi OWA lub protokołu Exchange ActiveSync, są dwie możliwości: szablony dla działów będą widoczne dla wszystkich użytkowników lub nie będą widoczne dla żadnego z nich, zależnie od statusu szablonu (archiwalny lub opublikowany) w usłudze Exchange Online.
 
     Pakiet Office 2016 zapewnia natywną obsługę szablonów dla działów, podobnie jak pakiet Office 2013, począwszy od wersji 15.0.4727.1000, wydanej w czerwcu 2015 roku jako część pakietu [KB 3054853](https://support.microsoft.com/kb/3054853).
 
@@ -140,10 +135,10 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
     Następnie należy sprawdzić, czy nie jest konieczne wprowadzenie zmian w następujących ustawieniach:
 
-    |Ustawienie|Więcej informacji|
-    |-----------|--------------------|
-    |**wygaśnięcie zawartości**|Należy określić dla danego szablonu datę lub liczbę dni, po upływie których nie będzie możliwe otwarcie plików chronionych za pomocą szablonu. Można określić datę lub wskazać liczbę dni, jakie muszą minąć począwszy od momentu objęcia pliku ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|
-    |**dostęp w trybie offline**|Użycie tego ustawienia umożliwia zrównoważenie wszelkich wymagań dotyczących zabezpieczeń z wymaganiem, aby użytkownicy byli w stanie otworzyć chronione pliki w sytuacji, gdy nie mają oni połączenia z Internetem.<br /><br />Jeśli wybrane zostanie ustawienie uniemożliwiające uzyskanie dostępu do zawartości w przypadku braku połączenia z Internetem lub ustawienie umożliwiające uzyskanie dostępu do zawartości jedynie w ciągu określonej liczby dni, po osiągnięciu progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp musi zostać zarejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, użytkownicy otrzymują przed otwarciem pliku monit o zalogowanie się.<br /><br />Poza ponownym uwierzytelnieniem następuje także ponowna ocena zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć różny poziom dostępu do tego samego pliku po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do pliku.|
+    |Ustawienie|Więcej informacji| Zalecane ustawienie
+    |-----------|--------------------|--------------------|
+    |**wygaśnięcie zawartości**|Należy określić dla danego szablonu datę lub liczbę dni, po upływie których nie będzie możliwe otwarcie plików chronionych za pomocą szablonu. Można określić datę lub wskazać liczbę dni, jakie muszą minąć począwszy od momentu objęcia pliku ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|**Zawartość nigdy nie wygasa**, jeśli zawartość nie ma określonych wymagań związanych z czasem.|
+    |**dostęp w trybie offline**|Użycie tego ustawienia umożliwia zrównoważenie wszelkich wymagań dotyczących zabezpieczeń z wymaganiem, aby użytkownicy byli w stanie otworzyć chronione pliki w sytuacji, gdy nie mają oni połączenia z Internetem.<br /><br />Jeśli wybrane zostanie ustawienie uniemożliwiające uzyskanie dostępu do zawartości w przypadku braku połączenia z Internetem lub ustawienie umożliwiające uzyskanie dostępu do zawartości jedynie w ciągu określonej liczby dni, po osiągnięciu progu użytkownicy muszą zostać ponownie uwierzytelnieni, a ich dostęp musi zostać zarejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, użytkownicy otrzymują przed otwarciem pliku monit o zalogowanie się.<br /><br />Poza ponownym uwierzytelnieniem następuje także ponowna ocena zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć różny poziom dostępu do tego samego pliku po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do pliku.|W zależności od tego, na ile poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Zawartość jest dostępna tylko z połączeniem z Internetem** dla bardzo poufnych danych, których udostępnienie nieautoryzowanym osobom mogłoby spowodować szkodę w firmie. To zalecenie nadaje zabezpieczeniom wyższy priorytet niż elastyczności. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
 
 10. Po upewnieniu się, że szablon jest prawidłowo skonfigurowany pod kątem użytkowników, kliknij przycisk **OPUBLIKUJ**, aby ustawić szablon jako widoczny dla użytkowników, a następnie kliknij przycisk **ZAPISZ**.
 
@@ -164,10 +159,7 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 > [!WARNING]
 > Po wprowadzeniu zmian do szablonu, który został wcześniej zapisany, w przypadku klientów zmiany te nie będą widoczne w szablonie do czasu, gdy szablony zostaną odświeżone na komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Odświeżanie szablonów dla użytkowników](refresh-templates.md).
 
-## Zobacz też
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

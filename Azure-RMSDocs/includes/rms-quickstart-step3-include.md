@@ -6,11 +6,11 @@ Następnie możesz bezpiecznie udostępnić ten dokument za pomocą poczty e-mai
 
 ![Zrzuty ekranu przedstawiające udostępnianie dokumentów za pomocą poczty e-mail przy użyciu usługi Azure RMS](../media/AzRMS_Tutorial_3_Screenshots.png)
 
-#### Aby bezpiecznie udostępnić dokument w wiadomości e-mail
+#### <a name="to-safely-share-your-document-by-email"></a>Aby bezpiecznie udostępnić dokument w wiadomości e-mail
 
 1.  Za pomocą programu Outlook utwórz nową wiadomość i dołącz do niej właśnie utworzony plik.
 
-2.  W polu **Do** wpisz jeden lub kilka służbowych adresów e-mail. Upewnij się, że podajesz służbowe adresy e-mail, np. **joannam@contoso.com** lub **pmichalski@fabrikam.com**, ponieważ obecnie usługa Azure Rights Management nie obsługuje osobistych adresów e-mail, z których można korzystać w domu za pośrednictwem swojego usługodawcy internetowego. Nie musisz martwić się tym, czy odbiorca wiadomości również ma usługę Azure Rights Management.
+2.  W polu **Do** wpisz jeden lub kilka służbowych adresów e-mail. Upewnij się, że podajesz służbowe adresy e-mail, np. **janetm@contoso.com** lub **p.dover@fabrikam.com**, ponieważ obecnie usługa Azure Rights Management nie obsługuje osobistych adresów e-mail, z których można korzystać w domu za pośrednictwem swojego usługodawcy internetowego. Nie musisz martwić się tym, czy odbiorca wiadomości również ma usługę Azure Rights Management.
 
 3.  Wpisz temat, np. **Poufny dokument**, i wpisz krótką wiadomość w treści, np. **Przeczytaj ten poufny dokument i nie udostępniaj go nikomu.**
 
@@ -39,9 +39,4 @@ Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Pełne instrukcje i alternatywne metody ochrony plików udostępnianych za pośrednictwem poczty e-mail   ->|[Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-protect-by-email.md)|
-|Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości** ->|[Opcje okien dialogowych aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jul16_HO3-->
-
-
+|Informacje o opcjach dostępnych w oknie dialogowym **Udostępnianie chronionej zawartości** ->|[Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management](../rms-client/sharing-app-dialog-box.md)|

@@ -3,8 +3,9 @@ title: "Przegląd — zestaw RMS SDK 2.1 | Azure RMS"
 description: "Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
-
-
+ms.openlocfilehash: 702bc9049b8027aecdfaf897e184888f010bc0e4
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Przegląd
+# <a name="overview"></a>Przegląd
 
 Zestaw Rights Management SDK 2.1 to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem. Przy użyciu aplikacji obsługujących prawa właściciele zawartości mogą zdefiniować użytkowników, którzy mogą otwierać, modyfikować, drukować i przekazywać zawartość oraz podejmować inne związane z nią działania.
 
@@ -42,7 +40,7 @@ Aby uzyskać więcej informacji na temat serwera usług AD RMS, klienta usług A
 
 Pozostałe tematy w tej sekcji dotyczą architektury usług RMS i ich implementacji.
 
-## W tej sekcji
+## <a name="in-this-section"></a>W tej sekcji
 
 | Temat | Opis |
 |-------|-------------|
@@ -50,17 +48,10 @@ Pozostałe tematy w tej sekcji dotyczą architektury usług RMS i ich implementa
 |[Serwer](ad-rms-server.md) | W tym temacie opisano przeznaczenie i funkcje serwera usług RMS na potrzeby platformy Azure i systemu Windows Server.|
 
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Koncepcje związane z usługami RMS](application-types.md)
 * [Wprowadzenie](getting-started-with-ad-rms-2-0.md)
 * [Dokumentacja usług AD RMS dla specjalistów IT](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

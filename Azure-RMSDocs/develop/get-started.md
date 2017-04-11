@@ -3,8 +3,9 @@ title: Rozpoczynanie pracy | Azure RMS
 description: "Przewodnik Szybki start po pierwszej aplikacji obejmuje przewodniki konfiguracji środowisk deweloperskich dla poszczególnych systemów operacyjnych/platform."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
-
-
+ms.openlocfilehash: 18c9f1f694601aea105eb5a7d97deb0da7f15730
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Wprowadzenie
+# <a name="get-started"></a>Wprowadzenie
 
 W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do pierwszej aplikacji obejmuje przewodniki konfiguracji środowisk deweloperskich dla poszczególnych systemów operacyjnych/platform. Rozpocznij tworzenie aplikacji obsługującej prawa:
 
@@ -38,9 +36,9 @@ W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do
 2. **Przejdź do przewodnika konfiguracji** dla danego systemu operacyjnego.
 
   Przewodniki konfiguracji prowadzą użytkownika przez konfigurowanie środowiska deweloperskiego w celu tworzenia własnych aplikacji.
-  - [Konfiguracja w systemie Android](android-sdk.md)
-  - [Konfiguracja w systemach iOS i OS X](ios-sdk.md)          
-  - [Konfiguracja w systemie Linux](linux-setup.md)              
+  - [Konfiguracja systemu Android](android-sdk.md)
+  - [Konfiguracja systemów iOS i OS X](ios-sdk.md)          
+  - [Konfiguracja systemu Linux](linux-setup.md)              
   - [Windows Phone](windows-phone-apps.md)     
   - [Aplikacje ze Sklepu Windows](winrt-sdk.md)
 
@@ -54,8 +52,4 @@ W tej wersji zestawu Microsoft Rights Management SDK 4.2 skrócone podejście do
   |[Przykłady kodu](code-examples.md)|Zestaw MS RMS SDK 4.2 obejmuje przykładowy kod i projekty robocze dla niektórych obsługiwanych systemów operacyjnych.|
   |[Zasoby społeczności](community-resources.md)|Usługi Active Directory Rights Management są objęte wsparciem rosnącej grupy deweloperów na wielu platformach.|
 
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

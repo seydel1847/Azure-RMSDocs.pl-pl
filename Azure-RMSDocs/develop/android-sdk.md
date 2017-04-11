@@ -3,8 +3,9 @@ title: Konfiguracja systemu Android | Azure RMS
 description: "Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usług Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,11 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
-
-
+ms.openlocfilehash: 3225e143bc80fa35c3e4b96317cdd264f63ac098
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Konfiguracja systemu Android
+# <a name="android-setup"></a>Konfiguracja systemu Android
 
 Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usługi Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach przy użyciu usługi Azure Active Directory Rights Management (AAD RM).
 
@@ -31,7 +29,7 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 -   [Konfigurowanie środowiska deweloperskiego](#configuring-your-development-environment)
 -   [Zobacz też](#see-also)
 
-## Wymagania wstępne
+## <a name="prerequisites"></a>Wymagania wstępne
 
 Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 
@@ -56,11 +54,11 @@ Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 
 Temat [Nowości](release-notes.md) zawiera informacje na temat aktualizacji interfejsu API, informacje o wersji i często zadawane pytania.
 
-## Opcjonalne
+## <a name="optional"></a>Opcjonalne
 
 Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego użytku do operacji konsumenckich i zabezpieczających dla deweloperów, którzy nie chcą tworzyć własnego interfejsu użytkownika — [Biblioteka interfejsów użytkownika i przykładowa aplikacja dla systemu Android](https://github.com/AzureAD/rms-sdk-ui-for-android).
 
-## Konfigurowanie środowiska deweloperskiego
+## <a name="configuring-your-development-environment"></a>Konfigurowanie środowiska deweloperskiego
 
 **Uwaga**  Wersja zapoznawcza zestawu SDK 4.2 usługi MS RMS: w tej wersji zapoznawczej nie uaktualniono zrzutów ekranu (nie zmieniono nazw ścieżek z com/microsoft/protection na com/microsoft/rightsmanagment). Tekst został jednak zaktualizowany.
 
@@ -134,7 +132,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 -   Teraz można przystąpić do tworzenia własnych nowych aplikacji dla systemu Android.
 
-### Zobacz też
+### <a name="see-also"></a>Zobacz też
 
 [Wprowadzenie](get-started.md)
 
@@ -144,12 +142,5 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 [Dokumentacja interfejsu API systemu Android](https://msdn.microsoft.com/library/dn758245.aspx)
 
- 
 
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

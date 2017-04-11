@@ -1,9 +1,10 @@
 ---
-title: "Scenariusz — konfigurowanie folderów roboczych do stałej ochrony | Azure Information Protection"
+title: "Scenariusz usługi AIP — konfigurowanie folderów roboczych do ochrony przy użyciu usługi RMS"
 description: "W tym scenariuszu i dodatkowej dokumentacji użytkownika ochrona usługi Azure Rights Management jest stosowana w celu zapewnienia stałej ochrony dokumentów pakietu Office w folderach roboczych."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
-
-
+ms.openlocfilehash: 5da891cb6f2220d252704e33486b6450f38375cf
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
+# <a name="scenario---configure-work-folders-for-persistent-protection"></a>Scenariusz — konfigurowanie folderów roboczych do stałej ochrony
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -41,23 +39,23 @@ Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
 -   W przypadku plików, które muszą być udostępniane osobom nieokreślonym w szablonie zasad praw dostępu (na przykład użytkownikom z innej organizacji), użytkownicy muszą zastosować nowe zasady praw dostępu, aby zastąpić ochronę za pomocą oryginalnych zasad.
 
-## Instrukcje dotyczące wdrażania
+## <a name="deployment-instructions"></a>Instrukcje dotyczące wdrażania
 ![Instrukcje dla administratora dotyczące szybkiego wdrażania usługi Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Przed przejściem do części dotyczącej dokumentacji użytkownika należy upewnić się, że zostały spełnione poniższe wymagania, i wykonać instrukcje zawarte w procedurach pomocniczych.
 
-## Wymagania dotyczące tego scenariusza
+## <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
 |---------------|--------------------------------|
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
-|Lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, zsynchronizowano z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
+|Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników korzystających z folderów roboczych.|[Przygotowanie do korzystania z usługi Azure Information Protection](../plan-design/prepare.md)|
 |Jedna z poniższych opcji:<br /><br />– Aby użyć szablonu domyślnego dla wszystkich użytkowników, który nie zezwala użytkownikom na stosowanie nowych zasad praw dostępu: nie zarchiwizowano szablonu domyślnego **&lt;nazwa organizacji&gt; — poufne**.<br /><br />– Aby użyć szablonu niestandardowego, który jest odpowiedni dla użytkowników, kiedy chcą zastosować nowe zasady praw dostępu: postępuj zgodnie z instrukcjami, aby utworzyć szablon niestandardowy.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
 |Łącznik usługi Rights Management jest zainstalowany, autoryzowany dla komputera z systemem Windows Server i skonfigurowany dla roli **serwera infrastruktury FCI**.|[Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md)|
 |Aplikacja do udostępniania usługi Rights Management została wdrożona na komputerach użytkowników z systemem Windows|[Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
-### Konfigurowanie niestandardowego szablonu zasad praw dostępu, aby użytkownicy mogli udostępniać pliki folderów roboczych poza organizacją
+### <a name="configuring-the-custom-rights-policy-template-so-that-users-can-share-work-folders-files-outside-the-organization"></a>Konfigurowanie niestandardowego szablonu zasad praw dostępu, aby użytkownicy mogli udostępniać pliki folderów roboczych poza organizacją
 
 1.  Zaloguj się do klasycznego portalu Azure i przejdź do szablonów usługi Azure Rights Management.
 
@@ -79,7 +77,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 5.  Zapisz szablon.
 
-### Konfigurowanie folderów roboczych do stosowania stałej ochrony do plików pakietu Office
+### <a name="configuring-work-folders-to-apply-persistent-protection-to-office-file"></a>Konfigurowanie folderów roboczych do stosowania stałej ochrony do plików pakietu Office
 
 1.  Zaimplementuj foldery robocze dla użytkowników, aby lokalnie zapisane pliki były synchronizowane z folderem na serwerze plików, nazywanym *udziałem synchronizacji*. Udział synchronizacji na serwerze plików musi znajdować się na serwerze innym niż ten, na którym działa łącznik usługi Rights Management.
 
@@ -109,7 +107,7 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 
 4.  Jeśli chcesz selektywnie chronić pliki za pomocą Infrastruktury klasyfikacji plików, skonfiguruj regułę klasyfikacji i harmonogram, a następnie zmodyfikuj zadanie zarządzania plikami, aby dołączyć tę właściwość klasyfikacji jako warunek.
 
-## Instrukcje w dokumentacji użytkownika
+## <a name="user-documentation-instructions"></a>Instrukcje w dokumentacji użytkownika
 Jeśli pliki, które są chronione za pomocą usługi Azure Rights Management, nie muszą być udostępniane osobom spoza organizacji, raczej nie trzeba udostępniać użytkownikom żadnych dodatkowych instrukcji oprócz tych dotyczących używania folderów roboczych. Pliki chronione za pomocą usługi Azure Rights Management i szablonu domyślnego mogą być zwyczajnie otwieranie przez użytkowników w pakiecie Office, a jedyną różnicą jest ewentualny monit o uwierzytelnienie oraz pasek informacyjny w górnej części dokumentu, z napisem, że w zawartości znajdują się zastrzeżone informacje przeznaczone tylko dla użytkowników wewnętrznych.
 
 W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scenariuszu użytkownicy będą widzieć na pasku informacji następujący opis szablonu: **Ta zawartość jest chroniona przez foldery robocze, a dostęp do niej jest ograniczony tylko do pracowników firmy. Aby udostępnić tę zawartość osobom spoza organizacji, dołącz dokument do wiadomości e-mail i użyj funkcji Udostępnianie chronionej zawartości**. Chociaż ten opis zawiera podsumowanie sposobu udostępniania plików poza organizacją, użytkownicy będą prawdopodobnie potrzebować szczegółowych instrukcji, szczególnie na początku. Aby kontynuować realizację tego scenariusza, skorzystaj z instrukcji dla administratorów i użytkowników końcowych z tematu [Scenariusz — udostępnianie plików pakietu Office użytkownikom z innej organizacji](scenario-share-office-file-externally.md).
@@ -119,9 +117,4 @@ W przypadku skonfigurowania szablonu niestandardowego zgodnie opisem w tym scena
 > 
 > Jeśli po upływie pewnego czasu stwierdzisz, że istnieje wiele takich żądań, możesz zdecydować się na zdefiniowanie własnego niestandardowego szablonu w tym scenariuszu, który przyzna prawo Współwłaściciel tylko określonym użytkownikom (np. menedżerom lub pomocy technicznej), natomiast standardowi użytkownicy będą mieli przyznane prawa Współautor lub jakiekolwiek [prawa dostępu](../deploy-use/configure-usage-rights.md) uznane przez Ciebie za odpowiednie.
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

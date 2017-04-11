@@ -3,8 +3,9 @@ title: Typy aplikacji | Azure RMS
 description: "W tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,25 +14,22 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
-
-
+ms.openlocfilehash: f93df5f204350a56f8280f299c04478cc1b5dfba
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Typy aplikacji
+# <a name="application-types"></a>Typy aplikacji
 
 
 W tym temacie omówiono typy aplikacji, które można wybrać do utworzenia jako aplikacje obsługujące prawa.
 
 Następujące typy aplikacji są obecnie obsługiwane przez zestaw Rights Management Services SDK 2.1.
 
-## Proste aplikacje
+## <a name="simple-applications"></a>Proste aplikacje
 
-Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zaszyfrowania podanego pliku. Aby zapoznać się z przykładem prostej aplikacji obsługującej prawa, zobacz temat [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md).
+Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zaszyfrowania podanego pliku. Przykład prostej, obsługującej prawa aplikacji zawiera implementacja *IPCHelloWorld* opisana w sekcji [Tworzenie aplikacji](developing-your-application.md).
 
-### Aplikacje w trybie serwera
+### <a name="server-mode-applications"></a>Aplikacje w trybie serwera
 
 *Tryb serwera* jest przeznaczony dla nieinterakcyjnych aplikacji, które wykorzystują, chronią lub przetwarzają zawartość chronioną przez usługę RMS. Przykładem może być aplikacja do *ochrony przed utratą danych*, która działa jako usługa na serwerze plików i automatycznie chroni poufne dokumenty. Zobacz przykład tego typu aplikacji w temacie [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d).
 
@@ -39,7 +37,7 @@ Jeśli aplikacja używa *trybu serwera*, powinna uwierzytelniać się na serwerz
 
 Aby uzyskać więcej informacji na temat ustawiania trybu zabezpieczeń interfejsu API, zobacz [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md).
 
-### Rozbudowane aplikacje klienckie
+### <a name="rich-client-applications"></a>Rozbudowane aplikacje klienckie
 
 Rozbudowane aplikacje klienckie pozwalają użytkownikom na wyświetlanie i manipulowanie danymi przy użyciu graficznego interfejsu użytkownika (GUI). Często dane prezentowane w tym graficznym interfejsie są cenne i wrażliwe na kradzież lub przypadkowe ujawnienie. Obsługa ochrony informacji zazwyczaj rozszerza istniejący scenariusz, ale nie jest główną motywacją do tworzenia aplikacji.
 
@@ -53,15 +51,11 @@ Microsoft Notepad jest prostą rozbudowaną aplikacją kliencką. Microsoft Offi
 
 Aby uzyskać więcej informacji o ochronie aplikacji, zobacz [Zrozumienie ograniczeń użycia](understanding-usage-restrictions.md).
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
-* [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld — przykładowa aplikacja](how-to-build-your-first-application.md)
-* [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
-* [Opis ograniczeń użycia](understanding-usage-restrictions.md)
+- [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [Tworzenie aplikacji](developing-your-application.md)
+- [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
+- [Opis ograniczeń użycia](understanding-usage-restrictions.md)
 
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

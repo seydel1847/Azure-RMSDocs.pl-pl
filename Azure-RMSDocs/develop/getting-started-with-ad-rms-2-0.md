@@ -3,8 +3,9 @@ title: Wprowadzenie | Azure RMS
 description: "Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,21 +14,19 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
-
-
+ms.openlocfilehash: 2987c6a8c93ee586ac2f1a05918212f95e67fe3c
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-# Wprowadzenie
+# <a name="getting-started"></a>Wprowadzenie
 
 Zestaw Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS za pomocą serwera usługi RMS lub usługi Azure RMS. Platforma obsługuje złożone rozwiązania w zakresie zabezpieczeń, takie jak zarządzanie kluczami oraz przetwarzanie szyfrowania i odszyfrowywania, a także oferuje uproszczony interfejs API ułatwiający tworzenie aplikacji.
 
-## Rozpoczynanie pracy z zestawem RMS SDK 2.1
+## <a name="get-started-with-rms-sdk-21"></a>Rozpoczynanie pracy z zestawem RMS SDK 2.1
 
 W tym temacie szczegółowo przedstawiono proces konfigurowania i uruchamiania aplikacji z obsługą praw w środowisku testowym. Poniższe tematy zawierają opis konfigurowania środowiska deweloperskiego. Wymieniono je w porządku sugerującym kolejność wykonywania czynności.
 
-## Zawartość tej sekcji
+## <a name="in-this-sections"></a>Zawartość tej sekcji
 
 | Temat | Opis |
 |-------|-------------|
@@ -47,7 +46,7 @@ Spróbuj zastosować zestaw RMS SDK 2.1, postępując zgodnie z instrukcjami zam
 - [Testowanie aplikacji](how-to-set-up-your-test-environment.md)
 - [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md)
 
-### Dlaczego warto chronić zawartość przy użyciu zestawu RMS SDK 2.1
+### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>Dlaczego warto chronić zawartość przy użyciu zestawu RMS SDK 2.1
 
 W przypadku deweloperów, którzy chcą dodać obsługę usługi RMS do nowych i istniejących aplikacji, zestaw RMS SDK 2.1 ułatwia następujące działania:
 
@@ -59,23 +58,15 @@ W przypadku deweloperów, którzy chcą dodać obsługę usługi RMS do nowych i
 
 Zestaw RMS SDK 2.1 obsługuje wiele ważnych platform klientów i serwerów. Aby uzyskać więcej informacji, zobacz [Obsługiwane platformy](supported-platforms.md).
 
-## Podstawowe zasady
+## <a name="core-principles"></a>Podstawowe zasady
 
 **Prostota** — opinie i wzorce użycia zestawu AD RMS SDK 1.0 zostały przeanalizowane, a uzyskane dane zostały użyte do uproszczenia lub zautomatyzowania najtrudniejszych zadań programistycznych. Aplikacje RMS tworzone za pomocą zestawu RMS SDK 2.1 zwykle wymagają 5–10 razy mniej wierszy kodu RMS niż aplikacje RMS napisane przy użyciu zestawu AD RMS SDK 1.0.
 **Jednokrotne tworzenie** — aplikacje zestawu RMS SDK 2.1 nie wymagają zmiany kodu ani ponownej kompilacji do korzystania z najnowszych funkcji usługi RMS. Nowe funkcje usługi RMS będą udostępniane w istniejącej aplikacji w miarę dodawania ich do serwera usługi RMS.
 **Spójność** — zestaw RMS SDK 2.1 ułatwia tworzenie aplikacji spójnie obsługujących różne konfiguracje usługi RMS. Ponadto znacząco zmniejsza on liczbę elementów interfejsu użytkownika usługi RMS, które musi utworzyć deweloper aplikacji, co ułatwia zachowanie spójnego wyglądu i sposobu działania oraz minimalizuje konieczność edukacji użytkowników.
 
-## Tematy pokrewne
+## <a name="related-topics"></a>Tematy pokrewne
 
 * [Przewodnik dla deweloperów usług RMS](developers-guide.md)
 * [AD RMS Developer's Corner (Kącik dewelopera usługi AD RMS)](http://blogs.msdn.com/b/rms/)
 
- 
-
- 
-
-
-
-<!--HONumber=Oct16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

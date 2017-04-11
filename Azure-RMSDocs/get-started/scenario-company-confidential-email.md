@@ -1,9 +1,10 @@
 ---
-title: "Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy | Azure Information Protection"
+title: "Scenariusz usługi AIP — wysyłanie wiadomości e-mail zawierających poufne dane firmy"
 description: "W tym scenariuszu i uzupełniającej dokumentacji użytkownika ochrona usługi Azure Rights Management ma na celu zapewnienie tego, aby każdy użytkownik w organizacji mógł bezpiecznie wysyłać wiadomości e-mail, których treść nie powinna być odczytywana poza organizacją."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -11,14 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
-
-
+ms.openlocfilehash: 0637f2e52dbeb979e5351ceaee10122dad69309f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-# Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
+# <a name="scenario---send-a-company-confidential-email"></a>Scenariusz — wysyłanie wiadomości e-mail zawierających poufne dane firmy
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -39,12 +37,12 @@ Podane tu instrukcje mają zastosowanie w następujących okolicznościach:
 
 -   Użytkownicy muszą ręcznie wybrać szablon w kliencie poczty e-mail.
 
-## Instrukcje dotyczące wdrażania
+## <a name="deployment-instructions"></a>Instrukcje dotyczące wdrażania
 ![Instrukcje dla administratora dotyczące szybkiego wdrażania usługi Azure RMS](../media/AzRMS_AdminBanner.png)
 
 Zanim przejdziesz do dokumentacji użytkownika, upewnij się, że zostały spełnione następujące wymagania.
 
-## Wymagania dotyczące tego scenariusza
+## <a name="requirements-for-this-scenario"></a>Wymagania dotyczące tego scenariusza
 Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następujące wymagania:
 
 |Wymaganie|Jeśli potrzebujesz dodatkowych informacji|
@@ -54,9 +52,9 @@ Aby wykonać instrukcje dotyczące tego scenariusza, należy spełnić następuj
 |Usługa Azure Rights Management została aktywowana.|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
 |Jedna z poniższych opcji:<br /><br />– Włączono obsługę usługi Azure Rights Management w usłudze Exchange Online.<br /><br />– Łącznik usługi RMS został zainstalowany i skonfigurowany do współdziałania z lokalną instalacją programu Exchange.|W przypadku usługi Exchange Online: zobacz sekcję **Usługa Exchange Online: konfiguracja usługi IRM** artykułu [Office 365: konfiguracja dla klientów i usług online](../deploy-use/configure-office365.md).<br /><br />W przypadku lokalnej instalacji programu Exchange: [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).|
 |Domyślny szablon **&lt;organizacja&gt; — poufne** usługi Azure Rights Management nie został zarchiwizowany. Alternatywnie: został w tym celu skonfigurowany szablon niestandardowy, ponieważ potrzebne są bardziej restrykcyjne ustawienia lub tylko podgrupa użytkowników w organizacji powinna mieć możliwość odczytu chronionych wiadomości e-mail.|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)<br /><br />Porada: jeśli potrzebne są bardziej restrykcyjne ustawienia dotyczące zasad użytkowania obejmujące wszystkich użytkowników w organizacji, należy skopiować, a następnie edytować jeden z domyślnych szablonów, zamiast tworzyć szablon od podstaw.<br /><br />W tym scenariuszu zaktualizowane szablony nie są natychmiast odświeżane w klientach poczty e-mail. Aby uzyskać więcej informacji, zobacz artykuł [Odświeżanie szablonów dla użytkowników](../deploy-use/refresh-templates.md).|
-|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Poczta e-mail** w tabeli zawartej w artykule [Wymagania dotyczące usługi Azure RMS: aplikacje](../get-started/requirements-applications.md).|
+|Użytkownicy, którzy wysyłają chronione wiadomości e-mail, korzystają z programu Outlook 2013 lub Outlook 2016 bądź z usługi Outlook Web Access.<br /><br />Użytkownicy, którzy otrzymują te wiadomości e-mail, korzystają z klienta poczty e-mail, który obsługuje usługę Azure Rights Management.|Można korzystać z programu Outlook 2010, ale należy [zainstalować aplikację do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application) i odpowiednio zmienić instrukcje użytkownika.<br /><br />Listę klientów poczty e-mail, które obsługują usługę Azure Rights Management, można znaleźć w kolumnie **Poczta e-mail** opisanej w temacie [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|
 
-## Instrukcje w dokumentacji użytkownika
+## <a name="user-documentation-instructions"></a>Instrukcje w dokumentacji użytkownika
 Przy użyciu następującego szablonu skopiuj i wklej instrukcje dla użytkownika do wiadomości dla użytkowników końcowych, po czym wprowadź poniższe zmiany, aby odzwierciedlić charakter lokalnego środowiska:
 
 1.  Zastąp wszystkie wystąpienia zmiennej *&lt;nazwa organizacji&gt;* nazwą swojej organizacji.
@@ -91,7 +89,7 @@ W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dosto
 
 ![Dokumentacja użytkownika dotycząca szablonów na potrzeby szybkiego wdrażania usługi Azure RMS](../media/AzRMS_UsersBanner.png)
 
-### Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
 
 1.  W programie Outlook utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz użytkowników lub grupy w organizacji *&lt;nazwa organizacji&gt;*.
 
@@ -101,7 +99,7 @@ W przykładowej dokumentacji przedstawiono potencjalny wygląd odpowiednio dosto
 
 3.  Wyślij wiadomość.
 
-### Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
 
 1.  W programie Outlook Web App utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz z książki adresowej użytkowników lub grupy w organizacji *&lt;nazwa organizacji&gt;*.
 
@@ -121,10 +119,10 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
     -   *&lt;dane kontaktowe&gt;*
 
-### Przykładowa niestandardowa dokumentacja użytkownika
+### <a name="example-customized-user-documentation"></a>Przykładowa niestandardowa dokumentacja użytkownika
 ![Przykładowa dokumentacja użytkownika dotycząca szybkiego wdrażania usługi Azure RMS](../media/AzRMS_ExampleBanner.png)
 
-#### Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Jak przy użyciu programu Outlook wysyłać wiadomości e-mail zawierające poufne dane firmy
 
 1.  W programie Outlook utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz użytkowników lub grupy w organizacji VanArsdel.
 
@@ -134,7 +132,7 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 3.  Wyślij wiadomość.
 
-#### Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Jak wysyłać wiadomości e-mail zawierające poufne dane firmy przy użyciu programu Outlook Web App
 
 1.  W programie Outlook Web App utwórz nową wiadomość e-mail, dodaj potrzebne załączniki, a następnie wybierz z książki adresowej użytkowników lub grupy w organizacji VanArsdel.
 
@@ -152,11 +150,6 @@ Adresaci wiadomości e-mail będą mogli ją przesłać do innych osób, ale tyl
 
 -   Skontaktuj się z działem pomocy technicznej:
 
-    -   Adres e-mail: helpdesk@vanarsdelltd.com
+    -   Poczta e-mail: helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Sep16_HO4-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

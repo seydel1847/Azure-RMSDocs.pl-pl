@@ -1,27 +1,26 @@
 ---
-title: Tworzenie nowej etykiety | Azure Information Protection
+title: "Nowa etykieta usługi Azure Information Protection"
 description: "Usługa Azure Information Protection zawiera domyślne etykiety z możliwością dostosowania, ale możesz też utworzyć własne etykiety, które użytkownicy zobaczą na pasku usługi Information Protection."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5cf6237f33d0818c8411cbb5126fc825c3c411d7
-
-
+ms.openlocfilehash: ff0a5af172fa7ae20406ab4362a02a9de3fff5c0
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
-# Tworzenie nowej etykiety dla usługi Azure Information Protection
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 Usługa Azure Information Protection zawiera domyślne etykiety z możliwością dostosowania, ale możesz też utworzyć własne etykiety, które użytkownicy zobaczą na pasku usługi Information Protection.
 
-Jeśli potrzebujesz dodatkowego poziomu klasyfikacji, możesz dodać nową etykietę lub etykietę podrzędną do istniejącej etykiety. Na przykład etykieta **Tajne** znajdująca się w [zasadach domyślnych](configure-policy-default.md) zawiera etykiety podrzędne.
+Jeśli potrzebujesz dodatkowego poziomu klasyfikacji, możesz dodać nową etykietę lub etykietę podrzędną do istniejącej etykiety. Na przykład ostatnia etykieta znajdująca się w [zasadach domyślnych](configure-policy-default.md) zawiera etykiety podrzędne.
 
 Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure Information Protection.
 
@@ -29,11 +28,13 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. W bloku **Azure Information Protection** wykonaj jedną z następujących czynności:
+2. Jeśli nowa etykieta, którą chcesz dodać, będzie miała zastosowanie do wszystkich użytkowników, wykonaj jedną z następujących czynności z bloku **Zasady: Globalne**. 
 
     - Aby utworzyć nową etykietę: kliknij przycisk **Dodaj nową etykietę**.
 
     - Aby utworzyć nową etykietę podrzędną: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...**) etykiety, dla której chcesz utworzyć etykietę podrzędną, a następnie kliknij polecenie **Dodaj etykietę podrzędną**.
+    
+     Jeśli nowa etykieta, którą chcesz dodać, będzie należeć do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu będzie miała zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
 
 3. W bloku **Etykieta** lub **Etykieta podrzędna** wybierz opcje dla nowej etykiety, a następnie kliknij przycisk **Zapisz**.
 
@@ -42,14 +43,9 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Następne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organization-s-policy).  
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
-
-
-
-
-<!--HONumber=Sep16_HO4-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
