@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: c3838c29d26c8c1bed196ad0a86c63f5f78ad9cc
+ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
@@ -49,13 +49,17 @@ Być może kwalifikujesz się do uzyskania rozwiązania **FastTrack**: z asysty 
 
 Pozostali klienci powinni użyć następujących kanałów pomocy technicznej, w zależności od sposobu uzyskania usługi Azure Information Protection:
 
-- **Usługa Azure Information Protection Premium** (autonomiczna): utwórz [żądanie obsługi w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Subskrypcja z pomocą techniczną w pakiecie** dla opcji **Subskrypcja**.
-
-- **Usługa Azure Information Protection z subskrypcją usługi Office 365**: na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365. 
-
-- **Usługa Azure Information Protection z pakietem Enterprise Mobility + Security (EMS)**: jeśli masz też usługę Office 365, możesz użyć [kanałów pomocy technicznej usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). Aby uzyskać więcej informacji, zobacz [Enterprise Mobility Suite: Support FAQ](https://technet.microsoft.com/dn932057.aspx) (Enterprise Mobility Suite: często zadawane pytania dotyczące pomocy technicznej).
-
-- **Usługa Azure Information Protection z Secure Productive Enterprise (SPE)**: użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **Usługa Azure Information Protection** (wersja autonomiczna): 
+    - Utwórz **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal. Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Subskrypcja z pomocą techniczną w pakiecie** dla opcji **Subskrypcja**.
+    
+- **Usługa Azure Information Protection z subskrypcją usługi Office 365**: 
+    - Na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365. 
+    
+- **Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)**: 
+    - Utwórz **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal. Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Subskrypcja z pomocą techniczną w pakiecie** dla opcji **Subskrypcja**.
+    
+- **Usługa Azure Information Protection z usługą Secure Productive Enterprise (SPE)**: 
+    - Użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
 
