@@ -4,7 +4,7 @@ description: "Identyfikowanie urządzeń obsługujących usługę Azure Rights M
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 04/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72ec5e755e3a5defe753741ed4061c30b2db7e82
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 644e5566a5b2305a12139d7d2da666eec0ef8c71
+ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
 translationtype: HT
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management
@@ -33,7 +33,7 @@ Następujące komputerowe systemy operacyjne obsługują usługę Azure Rights M
 
 -   **Windows 10** (x86, x64)
 
--   **Mac OS X**: minimalna wersja Mac OS X 10.8 (Mountain Lion)
+-   **macOS**: minimalna wersja macOS 10.8 (Mountain Lion)
 
 ## <a name="mobile-devices"></a>Urządzenia przenośne
 Następujące systemy operacyjne urządzeń przenośnych obsługują usługę Azure Rights Management:
@@ -44,7 +44,7 @@ Następujące systemy operacyjne urządzeń przenośnych obsługują usługę Az
 
 -   **Urządzenia iPhone i iPad**: minimalna wersja systemu iOS — 7.0
      
-    Wyjątek: Dla klienta usługi Azure Information Protection dla systemów iOS i Android minimalną wersją systemu iOS jest 8.
+    Wyjątek: dla aplikacji Azure Information Protection minimalną wersją systemu iOS jest 8.
 
 -   **Tablety z systemem Windows**: Windows 10 Mobile i Windows 8.1 RT
 
