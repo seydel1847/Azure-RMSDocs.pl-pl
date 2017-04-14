@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 859ec4aa127b995ca9acb6409b8644a0c87d7ffd
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>Jak tworzyć konta usługi RMS dla użytkowników indywidualnych
@@ -33,7 +33,7 @@ Aby zarejestrować się i uzyskać bezpłatne konto, musisz wysłać żądanie, 
 
 3.  Kliknij przycisk **Zarejestruj się**.
 
-    Firma Microsoft używa Twojego adresu e-mail, aby sprawdzić, czy organizacja już ma [płatną subskrypcję usługi Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) lub [subskrypcję usługi Office 365 z ochroną danych przy użyciu usługi Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli tak, nie potrzebujesz konta usługi RMS dla użytkowników indywidualnych. Nastąpi natychmiastowe zalogowanie, a proces samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych zostanie anulowany. Jeśli płatna subskrypcja nie zostanie znaleziona, nastąpi przejście do następnego kroku.
+    Firma Microsoft używa Twojego adresu e-mail, aby sprawdzić, czy organizacja już ma [płatną subskrypcję usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [subskrypcję usługi Office 365 z ochroną danych przy użyciu usługi Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli tak, nie potrzebujesz konta usługi RMS dla użytkowników indywidualnych. Nastąpi natychmiastowe zalogowanie, a proces samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych zostanie anulowany. Jeśli płatna subskrypcja nie zostanie znaleziona, nastąpi przejście do następnego kroku.
 
 4.  Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 (support@email.microsoftonline.com) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Information Protection**.
 
@@ -83,7 +83,7 @@ W trakcie tego procesu organizacja nie jest obciążana żadnymi opłatami, a dz
 
     -   Rejestrowanie wszystkich działań na potrzeby usługi Rights Management przy użyciu metody stosowanej w organizacji. Jest to bardzo pomocna funkcja, ponieważ umożliwia nie tylko sprawdzanie, które pliki są obejmowane ochroną i kto pomyślnie uzyskuje do nich dostęp, ale także identyfikowanie podejrzanego zachowania nieupoważnionych osób, które próbują uzyskać dostęp do chronionych plików. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md).
 
-    -   Udostępnianie użytkownikom możliwości śledzenia i odwoływania chronionych dokumentów, jeśli te funkcje są obsługiwane przez [subskrypcję](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features). Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md) w [podręczniku użytkownika usługi Azure Information Protection](../rms-client/client-user-guide.md).
+    -   Udostępnianie użytkownikom możliwości śledzenia i odwoływania chronionych dokumentów, jeśli te funkcje są obsługiwane przez [subskrypcję](https://www.microsoft.com/cloud-platform/azure-information-protection-features). Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md) w [podręczniku użytkownika usługi Azure Information Protection](../rms-client/client-user-guide.md).
 
     -   Implementowanie rozwiązania „użyj własnego klucza” (BYOK, bring your own key), aby klucz dzierżawy usługi Azure Rights Management był generowany lokalnie zgodnie z zasadami dotyczącymi infrastruktury IT i bezpiecznie przesyłany do firmy Microsoft za pomocą sprzętowego modułu zabezpieczeń (HSM). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
