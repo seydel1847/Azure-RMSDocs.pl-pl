@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 729d66e8d55d045b74ac5c794cf83ddcc2848d35
-ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
@@ -42,7 +42,7 @@ Komputery z zainstalowanym pakietem Office 2010:
 
 Obsługiwanie uwierzytelniania opartego na certyfikacie:
 
-- Aplikacja Azure Information Protection dla systemu Android obsługuje uwierzytelnianie oparte na certyfikatach dla minimalnej wersji systemu Android 5.0. Instrukcje dotyczące konfigurowania uwierzytelniania opartego na certyfikatach znajdują się w temacie [Get started with certificate-based authentication in Azure Active Directory](/active-directory/active-directory-certificate-based-authentication-get-started) (Wprowadzenie do uwierzytelniania opartego na certyfikatach w usłudze Azure Active Directory).
+- Aplikacja Azure Information Protection dla systemu Android obsługuje uwierzytelnianie oparte na certyfikatach dla minimalnej wersji systemu Android 5.0. Instrukcje dotyczące konfigurowania uwierzytelniania opartego na certyfikatach znajdują się w temacie [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started) (Wprowadzenie do uwierzytelniania opartego na certyfikatach w usłudze Azure Active Directory).
 
 Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub za pośrednictwem innego dostawcy uwierzytelniania, którego usługi stanowią ich odpowiednik:
 
