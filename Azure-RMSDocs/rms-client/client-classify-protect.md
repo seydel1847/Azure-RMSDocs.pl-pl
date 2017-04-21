@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
+ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
@@ -133,7 +133,7 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     
-    - **Wybierz użytkowników**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Do wyszukiwania i wybierania osób i grup w organizacji można użyć książki adresowej. W przypadku osób z innej organizacji należy określić ich pełny adres e-mail. Upewnij się, że używasz służbowego adresu e-mail, ponieważ osobiste adresy e-mail nie są obecnie obsługiwane.
+    - **Wybierz użytkowników**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
         
     - **Unieważnij dostęp**: Wybierz tę opcję tylko w przypadku plików zależnych od czasu, dzięki czemu określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej przez Ciebie dacie. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (Twojej bieżącej strefy czasowej) wybranego przez Ciebie dnia określone przez Ciebie osoby nie będą mogły go otworzyć.
 
