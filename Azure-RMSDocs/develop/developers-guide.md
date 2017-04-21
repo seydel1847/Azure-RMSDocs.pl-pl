@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
-ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
+ms.openlocfilehash: 16e2137dead237e59ed1d4db9e88a2a29f9595a9
+ms.sourcegitcommit: bf103c02966357eccad0a4912851ceae6937c7b3
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
@@ -82,6 +82,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Sposoby wdrażania aplikacji usługi w ramach innej dzierżawy] (how-to-deploy-app.md)
 - [Instalowanie i konfigurowanie serwera usługi RMS (usługa)](how-to-install-and-configure-an-rms-server.md)
 - [Korzystanie ze śledzenia dokumentów (użytkownik)](how-to-use-document-tracking.md)
+- [Odnawianie klucza symetrycznego w usłudze Azure Information Protection](how-to-renew-symmetric-key.md)
 
 ### <a name="security-and-authentication"></a>Tożsamość i uwierzytelnianie
 
@@ -101,7 +102,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 
 ## <a name="videos"></a>Filmy
 
-Dan Plastina z firmy Microsoft przedstawia: [Usługa Azure Information Protection — wprowadzenie](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)
+Dan Plastina z firmy Microsoft przedstawia: [Usługa Azure Information Protection — wprowadzenie](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 Te filmy wideo pochodzą z konferencji Microsoft 2016 Ignite
 
