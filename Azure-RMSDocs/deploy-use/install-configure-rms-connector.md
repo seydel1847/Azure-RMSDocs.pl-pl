@@ -4,7 +4,7 @@ description: "Informacje ułatwiające instalowanie i konfigurowanie łącznika 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 100ac0f42d82eb02635187dbb0c91422d3097872
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
@@ -53,7 +53,7 @@ W celu kontynuacji wprowadź konto i hasło, aby skonfigurować łącznik usług
 ## <a name="entering-credentials"></a>Wprowadzanie poświadczeń
 Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia dla konta, które ma wystarczające uprawnienia do konfigurowania łącznika usług RMS. Na przykład można wpisać **admin@contoso.com**, a następnie podać hasło dla tego konta.
 
-Istnieją pewne ograniczenia dotyczące znaków dla tego hasła. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie, informujący, że kombinacja nazwy użytkownika i hasła nie jest poprawna, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła dla innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, dzięki czemu nie będzie ono zawierało żadnego z tych znaków specjalnych.
+Istnieją pewne ograniczenia dotyczące znaków dla tego hasła. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła dla innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, dzięki czemu nie będzie ono zawierało żadnego z tych znaków specjalnych.
 
 Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Na przykład jeśli możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. W przeciwnym razie zostanie wyświetlony komunikat o błędzie: **Próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
 

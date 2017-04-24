@@ -4,7 +4,7 @@ description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usług�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 04/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 7ed60b1a2c02007668a11fdf8278bf196ee84521
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
@@ -43,6 +43,7 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |ogólna ochrona|Poziom ochrony uwzględniający szyfrowanie dowolnego typu pliku i uniemożliwiający otwarcie pliku przez nieupoważnione osoby. Otwarty plik jest niezaszyfrowany i można go użyć w aplikacji, która nie obsługuje natywnie usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
 |HYOK|Zobacz *rozwiązanie „hold your own key”*.|
 |hold your own key|Nazwa często skracana do *HYOK*.<br /><br />Opcja konfiguracji i topologii dla organizacji, która chce generować i przechowywać własny klucz lokalnie, zwykle ze względu na przepisy lub zapewnianie zgodności.|
+|obiekt klucza|W kontekście klucza dzierżawy jednostka zawierająca metadane wymagane przez usługę Azure Rights Management do operacji kryptograficznych.|
 |ochrona informacji|Pojęcie skracane czasami do *IP*.<br /><br />Powszechnie stosowany w branży ogólny termin odnoszący się do ochrony danych i plików przed nieautoryzowanym dostępem, nawet po opuszczeniu przez dane i pliki granic organizacji w wyniku przesłania dokumentu za pośrednictwem poczty e-mail lub jego udostępnienia. Usługa Microsoft Azure Information Protection stanowi przykład rozwiązania zapewniającego ochronę informacji (IP).|
 |Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z nazwami usług Office, takimi jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi usług Microsoft Rights Management.|
 |IRM|Zobacz *Information Rights Management (zarządzanie prawami do informacji)*.|
