@@ -42,7 +42,7 @@ Jeśli są widoczne dwie wersje pliku różniące się rozszerzeniami nazw plik�
 
 Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić na podstawie rozszerzenia nazwy pliku. W każdym przypadku otwieranie pliku może podlegać inspekcji tak długo jak plik jest chroniony. Ponadto jeśli plik został wysłany jako załącznik wiadomości e-mail, jego nadawca może otrzymać powiadomienie e-mail o każdym otwarciu tego pliku.
 
-- **Plik ma rozszerzenie nazwy*pfile***
+- **Plik ma rozszerzenie nazwy* pfile***
 
     Plik podlega ochronie ogólnej.
 
@@ -50,7 +50,7 @@ Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić
 
     ![Okno dialogowe pliku pfile udostępnionego w wiadomości e-mail w przypadku korzystania z aplikacji RMS sharing](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **Plik ma rozszerzenie nazwy*ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
+- **Plik ma rozszerzenie nazwy* ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
 
     Plik jest chroniony natywnie jako kopia tylko do odczytu.
 
@@ -74,7 +74,7 @@ Pełna lista rozszerzeń nazw plików obsługiwanych przez usługi Rights Manage
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Aby korzystać z chronionych plików (na przykład edytować lub drukować je)
 Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odczytać ten plik (na przykład zmodyfikować go, skopiować lub wydrukować), postępuj zgodnie z instrukcjami odpowiednimi dla rozszerzenia nazwy pliku:
 
-- **Plik ma rozszerzenie nazwy*pfile***
+- **Plik ma rozszerzenie nazwy* pfile***
 
     Zapisz otwarty plik i nadaj mu nowe rozszerzenie nazwy pliku skojarzone z aplikacją, której chcesz użyć.
 
@@ -82,7 +82,7 @@ Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odcz
 
     Nowy plik nie jest już chroniony. Jeśli chcesz go chronić, musisz to zrobić ręcznie. Aby uzyskać instrukcje, zobacz [Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-in-place.md).
 
-- **Plik ma rozszerzenie nazwy*ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
+- **Plik ma rozszerzenie nazwy* ppdf* albo jest chronionym plikiem tekstowym lub plikiem obrazu (np. *ptxt* lub *pjpg*)**
 
     Możesz jedynie wyświetlić plik, a w przypadku zmiany nazwy lub przeniesienia pliku będzie on nadal chroniony.
 
