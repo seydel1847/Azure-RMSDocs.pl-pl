@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa0a9351177b44b4d770e37d24aee85e1e313c2d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
@@ -36,7 +36,13 @@ Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi A
 
 Komputery z zainstalowanym pakietem Office 2010: 
 
+- Na potrzeby uwierzytelniania w usłudze Azure Information Protection oraz w powiązanej usłudze ochrony danych Azure Rights Management takie komputery wymagają użycia [klienta usługi Azure Information Protection](../rms-client/aip-client.md) (zalecane rozwiązanie) lub [aplikacji do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-windows.md).
+
 - W przypadku kont federacyjnych (na przykład w warunkach użycia usługi AD FS) wymagane jest zastosowanie uwierzytelniania zintegrowanego systemu Windows. W tym scenariuszu uwierzytelnianie oparte na formularzach nie umożliwi uwierzytelnienia użytkowników w ramach usługi Azure Information Protection.
+
+Obsługiwanie uwierzytelniania opartego na certyfikacie:
+
+- Aplikacja Azure Information Protection dla systemu Android obsługuje uwierzytelnianie oparte na certyfikatach dla minimalnej wersji systemu Android 5.0. Instrukcje dotyczące konfigurowania uwierzytelniania opartego na certyfikatach znajdują się w temacie [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started) (Wprowadzenie do uwierzytelniania opartego na certyfikatach w usłudze Azure Active Directory).
 
 Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub za pośrednictwem innego dostawcy uwierzytelniania, którego usługi stanowią ich odpowiednik:
 
@@ -47,7 +53,7 @@ Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information P
 
 -   Office 2013 (minimalna wersja):
 
-    -   Jeśli masz pakiet Office 2013, musisz również zainstalować [aktualizację pakietu Office 2013 (KB3054853) z 9 czerwca 2015](https://support.microsoft.com/kb/3054853). Aby uzyskać więcej informacji na temat tej aktualizacji i sposobu wdrażania logowania opartego na bibliotece ADAL (Active Directory Authentication Library) w pakiecie Office 2013 w ramach nowoczesnego uwierzytelniania, zobacz wpis dotyczący [anonsowania publicznej wersji nowoczesnego uwierzytelniania w pakiecie Office 2013](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) na blogu pakietu Office.
+    -   Jeśli masz pakiet Office 2013, konieczne może się okazać zainstalowanie dodatkowej aktualizacji do obsługi biblioteki Active Directory Authentication Library (ADAL). Na przykład [aktualizacja pakietu Office 2013 (KB3054853) z 9 czerwca 2015 r.](https://support.microsoft.com/kb/3054853). Aby uzyskać więcej informacji na temat tej aktualizacji i sposobu wdrażania logowania opartego na bibliotece ADAL (Active Directory Authentication Library) w pakiecie Office 2013 w ramach nowoczesnego uwierzytelniania, zobacz wpis dotyczący [anonsowania publicznej wersji nowoczesnego uwierzytelniania w pakiecie Office 2013](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) na blogu pakietu Office.
 
 - Klient usługi Azure Information Protection:
 

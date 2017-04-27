@@ -5,7 +5,7 @@ keywords: "Informacje na temat sposobu wyświetlania wiadomości e-mail lub plik
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24e1b9df2284abde20d5308a313019d666afed5d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 96ab267f22abf31d39a77dcc5450b28a583096e8
+ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
 translationtype: HT
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>Wprowadzenie do aplikacji Microsoft Azure Information Protection dla systemów iOS i Android
@@ -31,9 +31,9 @@ Na urządzeniu przenośnym należy uzyskać dostęp do jednego z plików obsług
 
 - **Plik PDF chroniony prawami**: na komputerze z systemem Windows możesz użyć klienta usługi Azure Information Protection w celu zapewnienia [ochrony dla pliku PDF](client-classify-protect.md). Następnie możesz wysłać do siebie plik PDF chroniony prawami jako załącznik wiadomości e-mail. Możesz także przekazać plik PDF do chronionej biblioteki programu SharePoint, a następnie udostępnić go przy użyciu swojego adresu e-mail.
 
-- **Plik .ptxt, .pjpg lub .ppng**: na komputerze z systemem Windows możesz użyć klienta usługi Azure Information Protection, aby objąć ochroną plik tekstowy lub obraz, a następnie wysłać sobie zawartość w postaci pliku chronionego w załączniku wiadomości e-mail. Pełna lista typów plików, których można używać do testowania, znajduje się w sekcji [Obsługiwane typy plików do ochrony i ich rozszerzenia nazw](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) przewodnika administratora klienta usługi Azure Information Protection. 
+- **Plik .ptxt, .pjpg lub .ppng**: na komputerze z systemem Windows możesz użyć klienta usługi Azure Information Protection, aby objąć ochroną plik tekstowy lub obraz, a następnie wysłać sobie zawartość w postaci pliku chronionego w załączniku wiadomości e-mail. Pełna lista typów plików, których można używać do testowania, znajduje się w pierwszej tabeli sekcji [Typy plików, dla których jest obsługiwana klasyfikacja i ochrona](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) przewodnika administratora klienta usługi Azure Information Protection. 
 
-Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wtedy wyświetlony monit o zalogowanie się do konta służbowego. Po pomyślnym uwierzytelnieniu użytkownika aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
+Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wyświetlona prośba o zalogowanie do konta służbowego lub o wybranie certyfikatu. Po uwierzytelnieniu poświadczeń aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
 
 ## <a name="next-steps"></a>Następne kroki
 

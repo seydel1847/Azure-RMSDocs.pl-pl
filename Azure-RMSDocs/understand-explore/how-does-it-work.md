@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
+ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
@@ -22,9 +22,9 @@ translationtype: HT
 
 Istotnym aspektem działania usługi Azure RMS jest fakt, że w ramach procesu ochrony informacji usługa Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług:
 
--   Dane są szyfrowane na poziomie aplikacji i zawierają zasady, które definiują autoryzowane użycie danego dokumentu.
+- Dane są szyfrowane na poziomie aplikacji i zawierają zasady, które definiują autoryzowane użycie danego dokumentu.
 
--   Gdy chroniony dokument jest używany przez uprawnionego użytkownika lub jest przetwarzany przez autoryzowaną usługę, dane zawarte w dokumencie zostają odszyfrowane i wymuszane są prawa określone w ramach zasad.
+- Gdy chroniony dokument jest używany przez uprawnionego użytkownika lub jest przetwarzany przez autoryzowaną usługę, dane zawarte w dokumencie zostają odszyfrowane i wymuszane są prawa określone w ramach zasad.
 
 Na poniższej ilustracji można prześledzić ogólne działanie tego procesu. Dokument zawierający tajną formułę jest chroniony i może zostać pomyślnie otwarty przez autoryzowanego użytkownika lub usługę. Dokument jest zabezpieczony przy użyciu klucza zawartości (zielony klucz na tym rysunku). Jest on unikatowy dla każdego dokumentu i znajduje się w nagłówku pliku, gdzie jest chroniony przez klucz główny dzierżawy usługi Azure Information Protection (czerwony klucz na tym rysunku). Klucz dzierżawy może być wygenerowany i zarządzany przez firmę Microsoft lub użytkownik może sam wygenerować własny klucz dzierżawy i nim zarządzać.
 
@@ -48,11 +48,11 @@ Nawet jeśli znajomość działania usługi RMS nie jest użytkownikowi potrzebn
 
 ###### <a name="footnote-1"></a>Przypis 1 
 
-Wariant&256;-bitowy jest używany przez klienta usługi Azure Information Protection i aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku .ppdf lub jest chronionym plikiem tekstowym lub graficznym (na przykład .ptxt lub .pjpg).
+Wariant 256-bitowy jest używany przez klienta usługi Azure Information Protection i aplikację do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management na potrzeby ochrony ogólnej i ochrony natywnej, gdy plik ma rozszerzenie nazwy pliku .ppdf lub jest chronionym plikiem tekstowym lub graficznym (na przykład .ptxt lub .pjpg).
 
 ###### <a name="footnote-2"></a>Przypis 2
 
-2048 bitów to długość klucza po aktywowaniu usługi Azure Rights Management. Długość klucza&1024; bity jest obsługiwana w następujących scenariuszach opcjonalnych:
+2048 bitów to długość klucza po aktywowaniu usługi Azure Rights Management. Długość klucza 1024 bity jest obsługiwana w następujących scenariuszach opcjonalnych:
 
 - Podczas migracji lokalnej, jeśli klaster AD RMS jest uruchomiony w trybie kryptograficznym 1 i nie można go uaktualnić do trybu kryptograficznego 2.
 
@@ -103,7 +103,9 @@ Gdy użytkownik chroni dokument, klient RMS wykonuje następujące czynności w 
 
 ![Ochrona dokumentów za pomocą usługi RMS — krok 2, zasady są tworzone](../media/AzRMS_documentprotection2.png)
 
-**Działania wykonywane w kroku 2**: na kliencie RMS zostaje następnie utworzony certyfikat, który zawiera zasady dla dokumentu — albo na podstawie szablonu, albo przez wyszczególnienie określonych praw dotyczących dokumentu. Te zasady zawierają uprawnienia dla różnych użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia.
+**Działania wykonywane w kroku 2**: klient usługi RMS tworzy certyfikat, który obejmuje zasady dla dokumentu zawierające [prawa użytkowania](../deploy-use/configure-usage-rights.md) dla użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia. Te ustawienia można zdefiniować w szablonie, który został wcześniej skonfigurowany przez administratora, lub określić w momencie, gdy zawartość jest chroniona (czasem nazywa się to „zasadą ad hoc”).   
+
+Atrybut używany do identyfikowania wybranych użytkowników i grup jest atrybutem proxyAddress usługi Azure AD, który przechowuje wszystkie adresy e-mail dla użytkownika lub grupy.
 
 Następnie klient RMS wykorzystuje klucz organizacji uzyskany podczas inicjowania środowiska użytkownika do szyfrowania zasad i symetrycznego klucza zawartości. Klient usługi RMS podpisuje także zasady, korzystając z certyfikatu użytkownika uzyskanego podczas inicjowania środowiska użytkownika.
 
@@ -118,7 +120,7 @@ Gdy użytkownik chce skorzystać z chronionego dokumentu, na kliencie RMS tworzo
 
 ![Użycie dokumentu RMS — krok 1, użytkownik jest uwierzytelniany i pobiera listę praw](../media/AzRMS_documentconsumption1.png)
 
-**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu.
+**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. Aby zidentyfikować użytkownika, atrybut proxyAttribute usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](../plan-design/prepare.md#group-membership-caching).
 
 ![Użycie dokumentu RMS — krok 2, licencja użytkowania jest zwracana do klienta](../media/AzRMS_documentconsumption2.png)
 

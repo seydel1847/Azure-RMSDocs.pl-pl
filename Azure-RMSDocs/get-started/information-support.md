@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: f22d997b69c5c88c5e83d29de137626facad5849
+ms.sourcegitcommit: 05b7e06e330a33936aeeef32934717f870963612
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
@@ -27,7 +27,7 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 |Patrz zalecana dokumentacja dla usługi →|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
 |Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją →|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
 |Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu →|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Information Protection. Zobacz [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
-|Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
+|Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
 ## <a name="information-about-new-releases-and-updated-documentation"></a>Informacje o nowych wersjach i zaktualizowanej dokumentacji
@@ -47,17 +47,17 @@ Jeśli korzystasz z pomocy technicznej Premium, odwiedź [portal dla klientów p
 
 Być może kwalifikujesz się do uzyskania rozwiązania **FastTrack**: z asysty centrum rozwiązania FastTrack można skorzystać w przypadku zakupu co najmniej 150 licencji na usługę Azure Information Protection w uprawniającym planie. Asysta centrum rozwiązania FastTrack umożliwia współpracę ze specjalistami firmy Microsoft w celu oceny i skorygowania środowiska oraz włączenia w nim kwalifikujących się usług. Aby uzyskać więcej informacji, zobacz [Asysta centrum rozwiązania FastTrack dla usługi Azure Rights Management](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
-Pozostali klienci powinni użyć następujących kanałów pomocy technicznej, w zależności od sposobu uzyskania usługi Azure Information Protection:
+Pozostali klienci powinni użyć kanałów pomocy technicznej podanych w poniższej tabeli, w zależności od subskrypcji usługi Azure Information Protection.
 
-- **Usługa Azure Information Protection Premium** (autonomiczna): utwórz [żądanie obsługi w witrynie Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade). Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Subskrypcja z pomocą techniczną w pakiecie** dla opcji **Subskrypcja**.
-
-- **Usługa Azure Information Protection z subskrypcją usługi Office 365**: na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365. 
-
-- **Usługa Azure Information Protection z pakietem Enterprise Mobility + Security (EMS)**: jeśli masz też usługę Office 365, możesz użyć [kanałów pomocy technicznej usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b). Aby uzyskać więcej informacji, zobacz [Enterprise Mobility Suite: Support FAQ](https://technet.microsoft.com/dn932057.aspx) (Enterprise Mobility Suite: często zadawane pytania dotyczące pomocy technicznej).
-
-- **Usługa Azure Information Protection z Secure Productive Enterprise (SPE)**: użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+|Subskrypcja|Instrukcje|
+|----------------|---------------|
+|Usługa Azure Information Protection (wersja autonomiczna)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna — w pakiecie**: Ta opcja jest wyświetlana w przypadku bezpłatnej subskrypcji platformy Azure służącej do skonfigurowania szablonów niestandardowych usług Azure Active Directory i Azure Rights Management albo braku subskrypcji platformy Azure.|
+|Usługa Azure Information Protection i subskrypcja usługi Office 365<br /><br />Usługa Azure Rights Management z subskrypcją usługi Office 365|Na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365.|
+|Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna — w pakiecie**: Ta opcja jest wyświetlana w przypadku bezpłatnej subskrypcji platformy Azure służącej do skonfigurowania szablonów niestandardowych usług Azure Active Directory i Azure Rights Management albo braku subskrypcji platformy Azure.|
+|Usługa Azure Information Protection z usługą Secure Productive Enterprise (SPE)|Użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).|
 
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
+
 
 ### <a name="self-help"></a>Samodzielna pomoc
 
