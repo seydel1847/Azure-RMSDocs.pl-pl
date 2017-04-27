@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89ccb599fe21c409d36b9d0ab28e274e6aedaf1e
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
@@ -119,10 +119,6 @@ Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
 
 -   Jeśli masz oprogramowanie i klientów nieobsługiwanych w usłudze Rights Management używanej przez usługę Azure Information Protection, nie będzie można przy ich użyciu chronić ani korzystać z zawartości chronionej przez usługę Azure Rights Management. Zapoznaj się z informacjami w sekcjach dotyczących obsługiwanych aplikacji i klientów w artykule [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
--   W przypadku importowania klucza lokalnego do usługi Azure Information Protection jako zarchiwizowanego (zaufana domena publikacji nie jest ustawiana jako aktywna podczas procesu importowania) i migrowania partii użytkowników w ramach migracji stopniowej, zawartość nowo chroniona przez migrowanych użytkowników nie będzie dostępna dla użytkowników nadal korzystających z usługi AD RMS. W tym scenariuszu — jeśli to możliwe— należy zachować krótki czas migracji i migrować użytkowników w partiach logicznych w taki sposób, by użytkownicy współpracujący ze sobą byli migrowani razem.
-
-    To ograniczenie nie ma zastosowania po ustawieniu zaufanej domeny publikacji jako aktywnej podczas procesu importowania, ponieważ wszyscy użytkownicy będą chronić zawartość przy użyciu tego samego klucza. Zalecamy korzystanie z tej konfiguracji, ponieważ umożliwia ona niezależne migrowanie wszystkich użytkowników w wybranym tempie.
-
 -   Jeśli Twoje wdrożenie usługi AD RMS jest skonfigurowane do współpracy z partnerami zewnętrznymi (np. przy użyciu zaufanych domen użytkowników lub federacji), muszą oni migrować do usługi Azure Information Protection w tym samym czasie lub możliwie szybko po zakończeniu Twojej migracji. Aby nadal uzyskiwać dostęp do zawartości, którą organizacja wcześniej chroniła za pomocą usługi Azure Information Protection, muszą oni wprowadzić zmiany konfiguracji klienta podobne do wprowadzonych przez Ciebie i uwzględnionych w tym dokumencie.
 
     Z powodu możliwych wariantów konfiguracji używanych przez partnerów dokładne instrukcje dotyczące tego procesu ponownej konfiguracji wykraczają poza zakres tego dokumentu. Zapoznaj się jednak z następną sekcją, która zawiera wskazówki dotyczące planowania. Aby uzyskać dodatkową pomoc, [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#support-options-and-community-resources).
@@ -165,7 +161,7 @@ Kroki migracji można podzielić na 5 fazy, które mogą realizować różni adm
 
 - **Krok 4. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure Information Protection**
 
-    Dane konfiguracji (klucze, szablony, adresy URL) są eksportowane z usługi AD RMS do pliku XML, a następnie plik ten jest przekazywany do usługi Azure Rights Management wchodzącej w skład usługi Azure Information Protection za pomocą polecenia cmdlet Import-AadrmTpd programu PowerShell. W zależności od konfiguracji klucza usług AD RMS konieczne może być wykonanie dodatkowych kroków:
+    Dane konfiguracji (klucze, szablony, adresy URL) są eksportowane z usługi AD RMS do pliku XML, a następnie plik ten jest przekazywany do usługi Azure Rights Management wchodzącej w skład usługi Azure Information Protection za pomocą polecenia cmdlet Import-AadrmTpd programu PowerShell. Następnie należy zidentyfikować importowany klucz certyfikatu licencjodawcy serwera (SLC), który ma zostać użyty jako klucz dzierżawy usługi Azure Rights Management. W zależności od konfiguracji klucza usług AD RMS konieczne może być wykonanie dodatkowych kroków:
 
     - **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie**:
 
@@ -181,7 +177,7 @@ Kroki migracji można podzielić na 5 fazy, które mogą realizować różni adm
 
 - **Krok 5. Aktywowanie usługi Azure Rights Management**
 
-    Jeśli to możliwe, ten krok należy wykonać po zakończeniu procesu importowania, a nie przed jego rozpoczęciem.
+    Jeśli to możliwe, ten krok należy wykonać po zakończeniu procesu importowania, a nie przed jego rozpoczęciem. Jeśli usługa została aktywowana przed importem, wymagane jest wykonanie dodatkowych kroków.
 
 - **Krok 6. Konfigurowanie importowanych szablonów**
 

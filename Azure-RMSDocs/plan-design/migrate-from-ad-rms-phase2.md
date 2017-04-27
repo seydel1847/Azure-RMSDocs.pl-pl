@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2ef28f2db2a22a766d658294a7d68b0dc6eebb2
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: f93458b5b2788aa2c7d780a9d0d2939e16221559
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
@@ -52,7 +52,7 @@ Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla
 
 Po wyeksportowaniu wszystkich zaufanych domen publikacji możesz rozpocząć wykonywanie procedury importowania tych danych do usługi Azure Information Protection.
 
-Należy pamiętać, że zaufane domeny publikacji obejmują klucze do odszyfrowywania chronionych wcześniej plików, więc ważne jest, aby wyeksportować (a później zaimportować na platformę Azure) wszystkie zaufane domeny publikacji, a nie tylko tę, która jest obecnie aktywna.
+Należy pamiętać, że zaufane domeny publikacji obejmują klucze certyfikatu licencjodawcy serwera (SLC) do odszyfrowywania chronionych wcześniej plików. Dlatego ważne jest, aby wyeksportować (a później zaimportować na platformę Azure) wszystkie zaufane domeny publikacji, a nie tylko tę, która jest obecnie aktywna.
 
 Na przykład po uaktualnieniu serwerów usług AD RMS z trybu kryptograficznego 1 do trybu kryptograficznego 2 użytkownik będzie miał wiele zaufanych domen publikacji. Jeśli zaufana domena publikacji zawierająca zarchiwizowany klucz, który używał trybu kryptograficznego 1, nie zostanie wyeksportowana, a następnie zaimportowana pod koniec procesu migracji, użytkownicy nie będą mogli otworzyć zawartości chronionej za pomocą klucza trybu kryptograficznego 1.
 
