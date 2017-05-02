@@ -13,7 +13,7 @@
 ### [Zadania po migracji](migrate-from-ad-rms-phase5.md)
 ## [Planowanie i wdrażanie klucza dzierżawy](plan-implement-tenant-key.md)
 ### [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md)
-## [Przygotowanie do korzystania z usługi Azure Information Protection](prepare.md)
+## [Przygotowywanie użytkowników i grup](prepare.md)
 # [Wdrażanie i korzystanie z usługi](/information-protection/deploy-use/activate-service)
 # [Wdrażanie i korzystanie z klienta](/information-protection/rms-client/use-client)
 # [Tworzenie i dostosowywanie aplikacji](/information-protection/develop/developers-guide)
