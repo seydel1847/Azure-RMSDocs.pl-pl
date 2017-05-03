@@ -211,7 +211,7 @@ W przypadku wybrania opcji zasad ad hoc użytkownik aplikacji musi podać adresy
 
 Po otrzymaniu i uruchomieniu aplikacji jej dane wyjściowe powinny wyglądać następująco:
 
-1. Zostanie wyświetlony monit o wybranie metody szyfrowania.
+1.Zostanie wyświetlony monit o wybranie metody szyfrowania.
 ![dane wyjściowe aplikacji — krok 1](../media/develop/app-output-1.png)
 
 2. Zostanie wyświetlony monit o podanie ścieżki do pliku, który ma być chroniony.
