@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań lub problemów, które może mieć organi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 95ece72f7261691f762c8786490c8010aa3e0778
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 65b9d369308505e74e0dde8d96973f9985d209a0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Jakie problemy rozwiązuje usługa Azure RMS?
@@ -66,8 +66,6 @@ Aby uzyskać więcej informacji o tych certyfikatach zewnętrznych, zobacz [Cent
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby poznać usługi Azure Rights Management dla administratorów i użytkowników, zobacz artykuł [Usługi Azure RMS w akcji](what-admins-users-see.md).
-
-Aby uzyskać informacje techniczne na temat działania usługi Azure Rights Management, zobacz artykuł [Jak działa usługa Azure RMS?](how-does-it-work.md)
+Aby uzyskać więcej informacji technicznych na temat działania usługi Azure Rights Management, zobacz [Jak działa usługa Azure RMS?](how-does-it-work.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
