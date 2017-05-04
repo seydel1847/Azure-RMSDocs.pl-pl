@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/03/2017
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
-ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
+ms.openlocfilehash: d3d174fabb4189d2f4ca7755b6355293261318d4
+ms.sourcegitcommit: 55d8a769084c6422f80aefc5f7c6594ea6855bfa
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
@@ -120,7 +120,7 @@ Gdy użytkownik chce skorzystać z chronionego dokumentu, na kliencie RMS tworzo
 
 ![Użycie dokumentu RMS — krok 1, użytkownik jest uwierzytelniany i pobiera listę praw](../media/AzRMS_documentconsumption1.png)
 
-**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. Aby zidentyfikować użytkownika, atrybut proxyAttribute usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](../plan-design/prepare.md#group-membership-caching).
+**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. Aby zidentyfikować użytkownika, atrybut proxyAddress usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](../plan-design/prepare.md#group-membership-caching).
 
 ![Użycie dokumentu RMS — krok 2, licencja użytkowania jest zwracana do klienta](../media/AzRMS_documentconsumption2.png)
 

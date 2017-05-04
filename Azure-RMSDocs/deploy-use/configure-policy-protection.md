@@ -4,14 +4,14 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 696d744ae21d8957225a24d39547493515b63d76
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 608fa9fe48667c1419736243e5c069b48828ff1b
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
@@ -50,7 +50,7 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
 
 ## <a name="to-configure-a-label-for-rights-management-protection"></a>Aby skonfigurować etykietę pod kątem ochrony usługi Rights Management
 
-1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
 
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
@@ -78,9 +78,13 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
     
     W większości przypadków wybierzesz opcję **Azure RMS** dla swoich ustawień uprawnień. Nie należy wybierać usługi **HYOK (AD RMS)**, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji rozwiązania „*zachowaj własny klucz*” (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md). Aby kontynuować konfigurację dla usługi HYOK (AD RMS), przejdź do kroku 9.
     
-7. Wybierz opcję **Nie przekazuj**, jeśli chcesz ustawić tę opcję programu Outlook dla wiadomości e-mail, lub opcję **Wybierz szablon**. 
+7. Wybierz opcję **Nie przekazuj**, jeśli chcesz ustawić tę opcję programu Outlook dla wiadomości e-mail, **Wybierz wstępnie zdefiniowany szablon**, aby użyć jednego z domyślnych szablonów lub szablonu niestandardowego, który został skonfigurowany, lub wybierz opcję **Niestandardowe (wersja zapoznawcza)**, aby zdefiniować nowe ustawienia ochrony w tym portalu. 
     
-8. W przypadku wybrania opcji **Wybierz szablon** dla usługi **Azure RMS** kliknij pole listy rozwijanej i wybierz [szablon](../deploy-use/configure-custom-templates.md), którego chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
+    Pamiętaj, że opcja **Niestandardowe (wersja zapoznawcza)** ma większość opcji konfiguracji, które obecnie występują w klasycznej witrynie Azure Portal. Ponadto możesz łatwo dodać wszystkich użytkowników w swojej organizacji i określić zewnętrzne adresy e-mail dla poszczególnych użytkowników lub grup, a po określeniu nazwy domeny — dla wszystkich użytkowników w innej organizacji. 
+    
+    Aby uzyskać więcej informacji o tej konfiguracji podglądu, zobacz wpis na blogu [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Azure Information Protection: ujednolicone administrowanie teraz w w wersji zapoznawczej). Aby uzyskać więcej informacji o uprawnieniach, które możesz wybrać, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md).
+    
+8. W przypadku wybrania opcji **Wybierz wstępnie zdefiniowany szablon** dla usługi **Azure RMS** kliknij pole listy rozwijanej i wybierz [szablon](../deploy-use/configure-custom-templates.md), którego chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety.
     
     Należy pamiętać, że w przypadku wybrania **szablonu dla działu** lub skonfigurowania [kontrolek dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
     

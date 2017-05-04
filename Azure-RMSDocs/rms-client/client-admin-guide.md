@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d442a9540243cd020b885f7dc2c13d999bbad868
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 74abbe0db07a155afe500388810945a3ff5a35a5
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
@@ -209,6 +209,16 @@ Użyj informacji z obszaru **Wersja**, aby potwierdzić, która wersja klienta j
 
 Użyj poniższych informacji w celu tworzenia konfiguracji zaawansowanych, które mogą być konieczne w przypadku określonych scenariuszy lub podzbiorów użytkowników. 
 
+### <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Zapobieganie monitom o logowanie dla komputerów korzystających tylko z usługi AD RMS
+
+Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection. Dla komputerów, które komunikują się tylko z usługą AD RMS, może to spowodować wyświetlenie użytkownikom zbędnego monitu o logowanie. Temu monitowi o logowanie można zapobiec, edytując rejestr:
+
+Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **0**:
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
+
 ### <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
 W środowisku produkcyjnym użytkownik nie ma zazwyczaj potrzeby logowania się jako inny użytkownik w przypadku korzystania z klienta usługi Azure Information Protection. Może to być jednak konieczne w przypadku administratora, jeśli występuje wielu dzierżawców. Na przykład oprócz dzierżawcy usługi Office 365 lub platformy Azure, którego używa Twoja organizacja, używany jest dzierżawca testowy.
@@ -241,9 +251,7 @@ Utwórz następującą nazwę wartości DWORD (z dowolnymi danymi wartości):
 
 ### <a name="support-for-disconnected-computers"></a>Obsługa odłączonych komputerów
 
-Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection, aby pobrać najnowsze zasady usługi Azure Information Protection. W przypadku komputera pozbawionego w danym momencie możliwości nawiązania połączenia z Internetem można zapobiec próbie nawiązania połączenia z usługą, edytując rejestr. 
-
-Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
+Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection, aby pobrać najnowsze zasady usługi Azure Information Protection. W przypadku komputera pozbawionego w danym momencie możliwości nawiązania połączenia z Internetem można zapobiec próbie nawiązania połączenia z usługą, edytując rejestr. Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
