@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+ms.openlocfilehash: fe569124494f837e770e5f1f8c6de0c2188a6e40
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
@@ -76,9 +76,9 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
     > [!NOTE]
     > Wybrani użytkownicy lub grupy muszą mieć adres e-mail. W środowisku produkcyjnym adres jest dostępny prawie zawsze, ale w prostym środowisku testowym może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
     > 
-    > Jeśli adres e-mail ulegnie zmianie po wybraniu użytkownika lub grupy i zapisaniu szablonu, zobacz sekcję [Jeśli adres e-mail ulegnie zmianie](../plan-design/prepare.md#considerations-if-email-addresses-change) dokumentacji planowania. 
+    > Jeśli adres e-mail ulegnie zmianie po wybraniu użytkownika lub grupy i zapisaniu szablonu, zobacz sekcję [Jeśli adres e-mail ulegnie zmianie](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) dokumentacji planowania. 
 
-    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching). 
+    Dobrą praktyką jest wykorzystywanie grup zamiast użytkowników — taka strategia upraszcza zarządzanie szablonami. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management). 
     
     W przypadku dostępności lokalnej usługi Active Directory, jeśli planowana jest synchronizacja do usługi Azure AD, można użyć grup zabezpieczeń lub grup dystrybucyjnych z obsługą wiadomości e-mail. Aby nadać prawa wszystkim użytkownikom w obrębie organizacji, łatwiej będzie skopiować jeden z szablonów domyślnych niż określać wiele grup. Aby uzyskać więcej informacji, zobacz [Kopiowanie szablonu](copy-template.md).
 
