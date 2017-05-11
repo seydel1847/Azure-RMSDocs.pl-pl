@@ -16,7 +16,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 3f08823903b9da03c10e27c82d3edeb3067efd8e
 ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: pl-PL
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
 
@@ -37,9 +38,9 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     Począwszy od systemu Windows Server 2008 składniki klienta i serwera są zawarte w systemie operacyjnym. Składniki serwera dla starszych systemów operacyjnych można pobrać z następującej lokalizacji.
 
-    -   [Serwer usługi RMS&1;.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
+    -   [Serwer usługi RMS 1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
 
-    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usługi AD RMS. W przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS&1;.0 SP2, ale przed aprowizacją usługi RMS.
+    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usługi AD RMS. W przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS 1.0 SP2, ale przed aprowizacją usługi RMS.
 
 2.  **Rejestracja serwera**
 
@@ -51,7 +52,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     -   **Rejestracja online**
 
-        W przypadku korzystania z usługi AD RMS&1;.0 SP2 można zarejestrować serwer online. Rejestracja odbywa się w tle podczas procesu aprowizacji, ale wymagane jest połączenie internetowe.
+        W przypadku korzystania z usługi AD RMS 1.0 SP2 można zarejestrować serwer online. Rejestracja odbywa się w tle podczas procesu aprowizacji, ale wymagane jest połączenie internetowe.
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
