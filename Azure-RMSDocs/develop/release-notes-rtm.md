@@ -16,7 +16,8 @@ ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: 8afff75366e7891ac7f00a1fa28e2939978a8b74
 ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: pl-PL
 ---
 # <a name="release-notes"></a>Informacje o wersji
 
@@ -50,7 +51,7 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 ## <a name="may-2015-update"></a>Aktualizacja z maja 2015 r.
 
--   **Aplikacje usługi i usługi RMS oparte na chmurze: struktura ** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji: klucza symetrycznego, identyfikatora **AppPrincipalId** oraz identyfikatora **TenantBposId**. W temacie zawierającym omówienie tego zagadnienia dodano wytyczne dotyczące przetwarzania tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
+-   **Aplikacje usługi i usługi RMS oparte na chmurze: struktura** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji: klucza symetrycznego, identyfikatora **AppPrincipalId** oraz identyfikatora **TenantBposId**. W temacie zawierającym omówienie tego zagadnienia dodano wytyczne dotyczące przetwarzania tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## <a name="april-2015-update"></a>Aktualizacja z kwietnia 2015 r.
 
