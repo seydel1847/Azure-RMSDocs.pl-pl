@@ -4,7 +4,7 @@ description: "Faza 1 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
+ms.translationtype: HT
+ms.contentlocale: pl-PL
 ---
 # <a name="migration-phase-1---preparation"></a>Faza 1 migracji — przygotowanie
 
@@ -86,7 +87,7 @@ W przypadku większości migracji niepraktyczne jest migrowanie wszystkich klien
 
 Jeśli używasz lokalnej instalacji programu Exchange lub usługi Exchange Online, mogły one zostać wcześniej zintegrowane z Twoim wdrożeniem usług AD RMS. W tym kroku skonfigurujesz je, aby użyć istniejącej konfiguracji usług AD RMS do obsługi zawartości chronionej przez usługę Azure RMS. 
 
-Upewnij się, że masz [adres URL usługi Azure Rights Management dla swojej dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url), aby móc zastąpić tą wartością element *&lt;YourTenantURL&gt;* w poniższych poleceniach. Uruchom te zestawy poleceń jeden raz dla każdej organizacji programu Exchange.
+Upewnij się, że masz [adres URL usługi Azure Rights Management dla swojej dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url), aby móc zastąpić tą wartością element *&lt;YourTenantURL&gt;* w poniższych poleceniach. 
 
 **Jeśli zintegrowano usługę Exchange Online z usługami AD RMS**: otwórz sesję programu Exchange Online PowerShell i uruchom następujące polecenia programu PowerShell pojedynczo lub w skrypcie:
 
@@ -97,22 +98,9 @@ Upewnij się, że masz [adres URL usługi Azure Rights Management dla swojej dzi
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**Jeśli zintegrowano lokalną instalację programu Exchange z usługami AD RMS**: uruchom następujące polecenia programu PowerShell pojedynczo lub w skrypcie: 
+**Jeśli z usługami AD RMS zintegrowano lokalny program Exchange**: dla każdej organizacji programu Exchange najpierw dodaj wartości rejestru na każdym serwerze programu Exchange, a następnie uruchom polecenia programu PowerShell: 
 
-    $irmConfig = Get-IRMConfiguration
-    $list = $irmConfig.LicensingLocation
-    $list += "<YourTenantURL>/_wmcs/licensing"
-    Set-IRMConfiguration -LicensingLocation $list
-    Set-IRMConfiguration -internallicensingenabled $false
-    Set-IRMConfiguration -RefreshServerCertificates
-    Set-IRMConfiguration -internallicensingenabled $true
-    IISReset
-
-Ponadto, w przypadku lokalnej instalacji programu Exchange, na każdym serwerze Exchange należy dodać wartości rejestru.
-
-
-W przypadku programu Exchange 2013 i Exchange 2016:
-
+Wartości rejestru programów Exchange 2013 i Exchange 2016:
 
 **Ścieżka rejestru:**
 
@@ -124,11 +112,9 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **Dane:** https://\<Adres URL licencjonowania usług AD RMS w sieci ekstranet\>/_wmcs/licensing
 
-
 ---
 
-W przypadku programu Exchange 2010:
-
+Wartości rejestru programu Exchange 2010:
 
 **Ścieżka rejestru:**
 
@@ -140,12 +126,21 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **Dane:** https://\<Adres URL licencjonowania usług AD RMS w sieci ekstranet>/_wmcs/licensing
 
-
 ---
 
+Polecenia programu PowerShell do uruchamiania pojedynczo lub w skrypcie
 
-Po uruchomieniu tych poleceń, jeśli serwery Exchange były skonfigurowane do obsługi zawartości chronionej przez usługi AD RMS, będą również obsługiwały zawartość chronioną przez usługę Azure RMS po migracji. Dopóki nie zostanie wykonany późniejszy krok w procesie migracji, będą nadal używały usług AD RMS do obsługi chronionej zawartości.
+    $irmConfig = Get-IRMConfiguration
+    $list = $irmConfig.LicensingLocation
+    $list += "<YourTenantURL>/_wmcs/licensing"
+    Set-IRMConfiguration -LicensingLocation $list
+    Set-IRMConfiguration -internallicensingenabled $false
+    Set-IRMConfiguration -RefreshServerCertificates
+    Set-IRMConfiguration -internallicensingenabled $true
+    IISReset
 
+
+Po uruchomieniu tych poleceń dla usługi Exchange Online lub lokalnego programu Exchange wdrożenie programu Exchange skonfigurowane do obsługi zawartości chronionej przez usługi AD RMS będzie również obsługiwać zawartość chronioną przez usługę Azure RMS po migracji. Dopóki nie zostanie wykonany późniejszy krok w procesie migracji, wdrożenie programu Exchange będzie nadal używać usług AD RMS do obsługi chronionej zawartości.
 
 
 ## <a name="next-steps"></a>Następne kroki
