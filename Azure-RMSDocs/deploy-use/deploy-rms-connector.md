@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące wdrażania łącznika usług RMS, który udo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6fad45bb6a138fee439019b4ae454feb3fe752f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 04073023841e95abacc0258e061f4742069fbfb0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
+ms.translationtype: HT
+ms.contentlocale: pl-PL
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Wdrażanie łącznika usługi Azure Rights Management
 
@@ -22,8 +23,6 @@ translationtype: HT
 
 Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Management i sposobu jego pomyślnego wdrażania w organizacji. Ten łącznik służy do zapewniania ochrony danych w istniejących wdrożeniach lokalnych korzystających z programu **Microsoft Exchange Server**, **SharePoint Server** lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji **infrastruktury klasyfikacji plików** (FCI, File Classification Infrastructure).
 
-> [!TIP]
-> Przykładowy scenariusz wysokiego poziomu ze zrzutami ekranu można znaleźć w sekcji [Automatyczna ochrona plików na serwerach plików z systemem Windows Server i funkcją infrastruktury klasyfikacji plików](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) w artykule [Usługa Azure RMS w działaniu](../understand-explore/what-admins-users-see.md).
 
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Łącznik usługi Microsoft Rights Management — omówienie
 Łącznik usługi Microsoft Rights Management (RMS) pozwala szybko włączyć na istniejących serwerach lokalnych funkcjonalność zarządzania prawami do informacji (IRM, Information Rights Management) za pomocą opartej na chmurze usługi Microsoft Rights Management (usługa Azure RMS). Dzięki tej funkcji dział IT i użytkownicy mogą łatwo chronić dokumenty i obrazy zarówno wewnątrz organizacji, jak i poza nią, bez konieczności instalowania dodatkowej infrastruktury lub ustanawiania relacji zaufania z innymi organizacjami. 

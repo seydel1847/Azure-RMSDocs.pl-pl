@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
-translationtype: HT
+ms.openlocfilehash: 04e04f6e3243283b98df94143773e4aa81351f48
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: pl-PL
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -58,21 +59,27 @@ Przed rozpoczęciem korzystania z tych poleceń cmdlet zapoznaj się z dodatkowy
 Przeczytaj tę sekcję przed rozpoczęciem używania poleceń środowiska PowerShell, jeśli Twoja organizacja korzysta z usługi Azure Information Protection i usługi ochrony danych Azure Rights Management lub po prostu z usługi Azure Rights Management.
 
 
-### <a name="prerequisites-for-aip-and-azure-rms"></a>Wymagania wstępne dotyczące usług AIP i Azure RMS
+### <a name="prerequisites"></a>Wymagania wstępne
 
 Oprócz wymagań wstępnych dotyczących instalacji modułu AzureInformationProtection istnieją dodatkowe wymagania wstępne dotyczące usługi Azure Information Protection i usługi ochrony danych Azure Rights Management:
 
 1. Usługa Azure Rights Management musi być aktywowana.
 
-2. Usuwanie ochrony plików dla innych osób używających Twojego konta: w organizacji musi być włączona funkcja administratora, a Twoje konto musi być skonfigurowane jako konto administratora usługi Azure Rights Management.
+2. Aby usunąć ochronę plików dla innych osób używających Twojego konta: 
+    
+    - W organizacji musi być włączona funkcja administratora, a Twoje konto musi być skonfigurowane jako konto administratora usługi Azure Rights Management.
 
-3. Bezpośrednie włączanie i wyłączanie ochrony plików bez interakcji z użytkownikiem: utwórz konto jednostki usługi, uruchom polecenie Set-RMSServerAuthentication i ewentualnie ustaw tę jednostkę jako administratora usługi Azure Rights Management.
+3. Aby bezpośrednio włączać lub wyłączać ochronę plików bez interakcji z użytkownikiem: 
+    
+    - Utwórz konto jednostki usługi, uruchom polecenie Set-RMSServerAuthentication i ewentualnie ustaw tę jednostkę jako administratora usługi Azure Rights Management.
 
-4. Regiony spoza Ameryki Północnej: wprowadź zmiany w rejestrze, aby włączyć uwierzytelnianie w usłudze.
+4. W przypadku regionów poza Ameryką Północną: 
+    
+    - Edytuj rejestr, aby włączyć uwierzytelnianie w usłudze.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Wymaganie wstępne 1: usługa Azure Rights Management musi być aktywowana
 
-To wymaganie wstępne dotyczy zarówno sytuacji, gdy stosowana jest ochrona danych za pomocą etykiet, jak i bezpośredniego połączenia z usługą Azure Rights Management. Skonfigurowano stosowanie ochrony danych.
+To wymaganie wstępne dotyczy zarówno sytuacji, gdy stosowana jest ochrona danych za pomocą etykiet, jak i bezpośredniego połączenia z usługą Azure Rights Management w celu zastosowania ochrony danych.
 
 Jeśli dzierżawca usługi Azure Information Protection nie został aktywowany, zobacz instrukcje dotyczące [aktywowania usługi Azure Rights Management](../deploy-use/activate-service.md).
 
@@ -80,7 +87,7 @@ Jeśli dzierżawca usługi Azure Information Protection nie został aktywowany, 
 
 Typowe scenariusze dotyczące usuwania ochrony plików dla innych osób obejmują odnajdywanie lub odzyskiwanie danych. Jeśli jest stosowana ochrona przy użyciu etykiet, można ją usunąć, ustawiając nową etykietę, która nie stosuje ochrony, lub usuwając etykietę. Wygodniejszym rozwiązaniem jest jednak połączenie się bezpośrednio z usługą Azure Rights Management w celu usunięcia ochrony.
 
-Musisz mieć uprawnienia usługi Rights Management do usuwania ochrony plików lub być administratorem. W przypadku odnajdywania lub odzyskiwania danych zwykle jest używana funkcja administratora. Aby włączyć tę funkcję i skonfigurować swoje konto jako administrator, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
+Musisz mieć prawa użytkowania usługi Rights Management do usuwania ochrony plików lub być administratorem. W przypadku odnajdywania lub odzyskiwania danych zwykle jest używana funkcja administratora. Aby włączyć tę funkcję i skonfigurować swoje konto jako administrator, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Wymaganie wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem
 
@@ -132,9 +139,12 @@ W module Windows PowerShell usługi Azure RMS uruchom polecenie cmdlet Get-Aadrm
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>Uzyskiwanie identyfikatora AppPrincipalId i klucza symetrycznego
 
-Utwórz nową jednostkę usługi, uruchamiając polecenie cmdlet `New-MsolServicePrincipal` z modułu MSOnline PowerShell usługi Azure Active Directory: 
+Utwórz nową jednostkę usługi, uruchamiając polecenie cmdlet `New-MsolServicePrincipal` z modułu MSOnline PowerShell usługi Azure Active Directory i postępuj zgodnie z poniższymi instrukcjami. 
 
-1. Jeśli ten moduł nie został jeszcze zainstalowany na komputerze, zobacz artykuł [Instalowanie modułu usługi Azure AD](/powershell/azuread/#install-the-azure-ad-module).
+> [!IMPORTANT]
+> Do tworzenia tej jednostki usługi nie należy używać nowszego polecenia cmdlet programu Azure AD PowerShell, New-AzureADServicePrincipal. Usługi Azure Rights Management nie obsługują polecenia New-AzureADServicePrincipal. 
+
+1. Jeśli moduł MSOnline nie został jeszcze zainstalowany na komputerze, uruchom polecenie `Install-Module MSOnline`.
 
 2. Uruchom sesję środowiska Windows PowerShell przy użyciu opcji **Uruchom jako administrator**.
 
@@ -187,7 +197,7 @@ Nasze przykładowe polecenie będzie więc wyglądać następująco:
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-Jak pokazano w przypadku poprzedniego polecenia, można dostarczać wartości za pomocą jednego polecenia lub po prostu wpisać polecenie Set-RMSServerAuthentication i podawać kolejno wartości po wyświetleniu monitu. Po zakończeniu działania polecenia zobaczysz komunikat „**Opcja RmsServerAuthentication jest włączona**”, co oznacza możliwość włączania i wyłączania ochrony plików za pomocą jednostki usługi.
+Jak pokazano w przypadku poprzedniego polecenia, można dostarczać wartości za pomocą jednego polecenia lub po prostu wpisać polecenie Set-RMSServerAuthentication i podawać kolejno wartości po wyświetleniu monitu. Po zakończeniu działania polecenia zobaczysz komunikat „**The RmsServerAuthentication is set to ON**” (Parametr RmsServerAuthentication został włączony), co oznacza, że klient działa teraz w „trybie serwera”. Ten komunikat nie potwierdza pomyślnego ukończenia uwierzytelniania z użyciem podanych przez Ciebie wartości, ale wskazuje, że przełączanie do trybu serwera powiodło się.
 
 Istnieje możliwość ustawienia tej jednostki usługi jako administratora. Dzięki temu będzie można jej zawsze użyć do wyłączenia ochrony plików dla innych użytkowników. Podobnie jak w przypadku konfigurowania konta użytkownika standardowego jako administratora, można użyć tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale dla parametru **-ServicePrincipalId** należy podać wartość identyfikatora AppPrincipalId.
 
@@ -301,7 +311,7 @@ Należy pamiętać, że jeśli do szablonów usługi Rights Management zostaną 
 Przeczytaj tę sekcję przed rozpoczęciem korzystania z poleceń środowiska PowerShell w celu włączania lub wyłączania ochrony plików, jeśli Twoja organizacja używa tylko usług Active Directory Rights Management.
 
 
-### <a name="prerequisites-for-ad-rms"></a>Wymagania wstępne dotyczące usług AD RMS
+### <a name="prerequisites"></a>Wymagania wstępne
 
 Oprócz wymagań wstępnych instalacji modułu AzureInformationProtection konto musi mieć uprawnienia odczytu i wykonywania, aby mieć dostęp do pliku ServerCertification.asmx:
 
