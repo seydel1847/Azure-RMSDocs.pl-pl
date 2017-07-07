@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5a40277c95e376042fc77b7ba39bfc66a948fde
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 3d9f2e20abe0a4abce3220d53d6373d9c2baf8ee
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
@@ -82,7 +83,7 @@ Informacja **1004**
 
 **Lista autoryzowanych kont została zaktualizowana.**
 
-To zdarzenie jest rejestrowane po pobraniu przez łącznik usługi RMS najnowszej listy kont (istniejące konta i wszelkie zmiany), które są autoryzowane do korzystania z łącznika usługi RMS. Ta lista jest pobierana co&15; minut, o ile łącznik usługi RMS może komunikować się z usługą Azure Rights Management.
+To zdarzenie jest rejestrowane po pobraniu przez łącznik usługi RMS najnowszej listy kont (istniejące konta i wszelkie zmiany), które są autoryzowane do korzystania z łącznika usługi RMS. Ta lista jest pobierana co 15 minut, o ile łącznik usługi RMS może komunikować się z usługą Azure Rights Management.
 
 ----
 
