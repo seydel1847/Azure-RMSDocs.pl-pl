@@ -14,9 +14,11 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f93df5f204350a56f8280f299c04478cc1b5dfba
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: f7ebcb3a432a4521a71e3cc80c20b1af64e051c7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="application-types"></a>Typy aplikacji
 
@@ -31,7 +33,7 @@ Prosta aplikacja może być narzędziem wiersza polecenia wbudowanym w celu zasz
 
 ### <a name="server-mode-applications"></a>Aplikacje w trybie serwera
 
-*Tryb serwera* jest przeznaczony dla nieinterakcyjnych aplikacji, które wykorzystują, chronią lub przetwarzają zawartość chronioną przez usługę RMS. Przykładem może być aplikacja do *ochrony przed utratą danych*, która działa jako usługa na serwerze plików i automatycznie chroni poufne dokumenty. Zobacz przykład tego typu aplikacji w temacie [IpcDlp — przykład](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d).
+*Tryb serwera* jest przeznaczony dla nieinterakcyjnych aplikacji, które wykorzystują, chronią lub przetwarzają zawartość chronioną przez usługę RMS. Przykładem może być aplikacja do *ochrony przed utratą danych*, która działa jako usługa na serwerze plików i automatycznie chroni poufne dokumenty. Zobacz przykład tego typu aplikacji w temacie [IpcDlp — przykład](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp).
 
 Jeśli aplikacja używa *trybu serwera*, powinna uwierzytelniać się na serwerze usługi RMS w trybie dyskretnym. W przeciwieństwie do *trybu klienta* zestaw RMS SDK 2.1 nie otworzy monitu poświadczeń w razie niepowodzenia uwierzytelniania w trybie dyskretnym. Ponadto podczas uruchamiania w *trybie serwera* nie jest wymagany manifest aplikacji.
 
