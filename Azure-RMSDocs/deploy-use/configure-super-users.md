@@ -13,9 +13,10 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 8b915ad2bf58352c41f1b534aa6c88f1640fb589
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
@@ -54,13 +55,13 @@ Najlepsze rozwiązania w zakresie zabezpieczeń dotyczące funkcji superużytkow
 
 Poniższy fragment dziennika pokazuje przykładowe wpisy uzyskane za pomocą polecenia cmdlet Get-AadrmAdminLog. W tym przykładzie administrator firmy Contoso Ltd potwierdza, że funkcja superużytkowników jest wyłączona, dodaje użytkownika Richard Simone jako superużytkownika, sprawdza, czy Richard jest jedynym superużytkownikiem skonfigurowanym dla usługi Azure Rights Management, a następnie włącza funkcję superużytkownika. Dzięki temu Richard może teraz odszyfrować pliki zabezpieczone przez byłego pracownika firmy.
 
-`2015-08-01T18:58:20    admin@contoso.com    GetSuperUserFeatureState    Passed    Disabled`
+`2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
 
-`2015-08-01T18:59:44    admin@contoso.com    AddSuperUser -id rsimone@contoso.com    Passed    True`
+`2015-08-01T18:59:44    admin@contoso.com   AddSuperUser -id rsimone@contoso.com    Passed  True`
 
-`2015-08-01T19:00:51    admin@contoso.com    GetSuperUser    Passed    rsimone@contoso.com`
+`2015-08-01T19:00:51    admin@contoso.com   GetSuperUser    Passed  rsimone@contoso.com`
 
-`2015-08-01T19:01:45    admin@contoso.com    SetSuperUserFeatureState -state Enabled    Passed    True`
+`2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
 ## <a name="scripting-options-for-super-users"></a>Opcje obsługi skryptów dla superużytkowników
 Często osoba przypisana do roli superużytkownika usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] będzie musiała usunąć ochronę z wielu plików w wielu różnych lokalizacjach. Mimo że można to zrobić ręcznie, bardziej wydajne (a często też bardziej niezawodne) jest zastosowanie skryptów. W tym celu możesz użyć polecenia cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile), a w razie potrzeby także polecenia cmdlet [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile). 
