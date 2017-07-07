@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/24/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd4fa09da3bffe9abdec5754185659393fdbf531
-ms.sourcegitcommit: 96410e06941ec414032d72cf96491884dc11aba0
-translationtype: HT
+ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -39,7 +41,7 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
     W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Korzystanie z funkcji rejestrowania pozwala odpowiedzieć na tego rodzaju pytania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
 > [!NOTE]
-> Jeśli interesuje Cię tylko rejestrowanie zadań administracyjnych dotyczących usługi Azure Rights Management i nie chcesz śledzić korzystania z usługi Rights Management przez użytkowników, możesz użyć polecenia cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) programu Windows PowerShell dla usługi Azure Rights Management.
+> Jeśli interesuje Cię tylko rejestrowanie zadań administracyjnych dotyczących usługi Azure Rights Management i nie chcesz śledzić korzystania z usługi Rights Management przez użytkowników, możesz użyć polecenia cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) programu Windows PowerShell dla usługi Azure Rights Management.
 > 
 > Możesz także skorzystać z klasycznego portalu Azure w celu uzyskania podstawowych raportów użycia, które obejmują takie informacje, jak **podsumowanie usługi RMS**, **aktywni użytkownicy usługi RMS**, **platforma urządzeń usługi RMS** i **użycie aplikacji usługi RMS**. Aby uzyskać dostęp do tych raportów z klasycznego portalu Azure, kliknij opcję **Active Directory**, wybierz i otwórz katalog, a następnie kliknij opcję **RAPORTY**,
 
@@ -213,23 +215,23 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 
 
 ## <a name="windows-powershell-reference"></a>Uwagi dotyczące programu Windows PowerShell
-Od lutego 2016 r. jedynym poleceniem cmdlet programu Windows PowerShell potrzebnym do rejestrowania użycia usługi Azure Rights Management jest [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx). 
+Od lutego 2016 r. jedynym poleceniem cmdlet programu Windows PowerShell potrzebnym do rejestrowania użycia usługi Azure Rights Management jest [Get-AadrmUserLog](/powershell/module/aadrm/get-aadrmuserlog). 
 
 Przed wprowadzeniem tej zmiany do obsługi dzienników użycia usługi Azure Rights Management potrzebne były następujące polecenia cmdlet, które obecnie są przestarzałe:  
 
--   [Disable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629404.aspx)
+-   [Disable-AadrmUsageLogFeature](/powershell/module/aadrm/disable-aadrmusagelogfeature)
 
--   [Enable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629421.aspx)
+-   [Enable-AadrmUsageLogFeature](/powershell/module/aadrm/enable-aadrmusagelogfeature)
 
--   [Get-AadrmUsageLog](https://msdn.microsoft.com/library/azure/dn629401.aspx)
+-   [Get-AadrmUsageLog](/powershell/module/aadrm/get-aadrmusagelog)
 
--   [Get-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629425.aspx)
+-   [Get-AadrmUsageLogFeature](/powershell/module/aadrm/get-aadrmusagelogfeature)
 
--   [Get-AadrmUsageLogLastCounterValue](https://msdn.microsoft.com/library/azure/dn629423.aspx)
+-   [Get-AadrmUsageLogLastCounterValue](/powershell/module/aadrm/get-aadrmusageloglastcountervalue)
 
--   [Get-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629419.aspx)
+-   [Get-AadrmUsageLogStorageAccount](/powershell/module/aadrm/get-aadrmusagelogstorageaccount)
 
--   [Set-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629426.aspx)
+-   [Set-AadrmUsageLogStorageAccount](/powershell/module/aadrm/set-aadrmusagelogstorageaccount)
 
 Jeśli masz w magazynie Azure dzienniki sprzed zmiany funkcji rejestrowania usługi Azure Rights Management, możesz je pobrać w taki sam sposób jak wcześniej, korzystając z tych starszych poleceń cmdlet: Get-AadrmUsageLog i Get-AadrmUsageLogLastCounterValue. Jednak wszystkie nowe dzienniki użycia będą zapisywane w nowym magazynie usługi Azure RMS i muszą zostać pobrane za pomocą polecenia Get-AadrmUserLog.
 
