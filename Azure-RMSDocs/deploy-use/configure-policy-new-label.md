@@ -4,18 +4,20 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/05/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 91feb6dfd9421d7c5cccf53b45f8a0f35e74007d
-ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.openlocfilehash: ac12ab9023499d5aac632159ef689a8f10a91418
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
+# Tworzenie nowej etykiety dla usługi Azure Information Protection
+<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection*
 
@@ -43,7 +45,10 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## <a name="next-steps"></a>Następne kroki
+5. Jeśli chcesz, aby ta nazwa i opis nowej etykiety były wyświetlane w różnych językach dla użytkowników, wykonaj procedury opisane w sekcji [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md). 
+
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

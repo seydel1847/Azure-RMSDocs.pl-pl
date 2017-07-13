@@ -4,17 +4,20 @@ description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Info
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 48faf9703176ba8f67f57582ea584733fe3e9b01
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
+# Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
+<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection*
 
@@ -37,10 +40,13 @@ Aby zmienić etykietę, użyj następujących instrukcji.
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
+5. Jeśli została zmieniona nazwa etykiety lub opis i skonfigurowano te dodatkowe języki, należy ponownie wyeksportować zasady usługi Azure Information Protection, podać nowe tłumaczenia i zaimportować zmiany. Więcej informacji można znaleźć w sekcji [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md).
+
 > [!TIP]
 >Jeśli chcesz przywrócić jedną z etykiet domyślnych do wartości domyślnych, użyj informacji zawartych w temacie [Domyślne zasady usługi Information Protection](configure-policy-default.md).
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 
 Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 

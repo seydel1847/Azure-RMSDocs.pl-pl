@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,14 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2b59cbd99430b5474280acc02b1a2c4a2738c793
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
-translationtype: HT
+ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
+# Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu
+<a id="step-5-see-sharing-of-protected-files-in-action-and-track-your-document" class="xliff"></a> 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -25,7 +28,8 @@ W tym ostatnim kroku samouczka odszukaj utworzony wcześniej dokument programu W
 
 Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail. 
 
-## <a name="to-safely-share-your-document-by-email"></a>Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
+## Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
+<a id="to-safely-share-your-document-by-email" class="xliff"></a>
 
 1. W oknie Eksploratora plików kliknij prawym przyciskiem myszy dokument, a następnie wybierz opcję **Klasyfikuj i chroń**. Zostanie wyświetlone okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**:
 
@@ -63,7 +67,8 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
 Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o jego odebranie i otworzenie. 
 
-## <a name="ask-your-recipients-to-open-the-emailed-document"></a>Poproś odbiorców o otworzenie przesłanego dokumentu
+## Poproś odbiorców o otworzenie przesłanego dokumentu
+<a id="ask-your-recipients-to-open-the-emailed-document" class="xliff"></a>
 
 Odbiorcy mogą użyć różnych urządzeń do odczytania chronionego dokumentu wysłanego w załączniku do wiadomości e-mail. Mogą to zrobić na urządzeniach iPad, iPhone, tabletach i telefonach z systemem Android, komputerach Mac i komputerach z systemem Windows.
 
@@ -71,7 +76,8 @@ Poproś odbiorców o odczytanie wysłanej wiadomości e-mail. Przy założeniu, 
 
 Po kliknięciu przez użytkownika opcji **Zarejestruj się** usługa Azure Information Protection sprawdza, czy organizacja użytkownika ma subskrypcję, która obejmuje usługi ochrony danych Azure Rights Management. Jeśli nie, użytkownik może poprosić o założenie bezpłatnego konta.
 
-### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
+### Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
+<a id="instructions-for-recipient-to-view-the-protected-document-attachment" class="xliff"></a>
 
 1. Na komputerze lub urządzeniu przenośnym z zainstalowanym pakietem Office otwórz załącznik, aby odczytać dokument.  
 
@@ -83,7 +89,8 @@ Opcjonalnie odbiorca może przesłać wiadomość e-mail dalej do innych osób, 
 
 Teraz, po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu do innej osoby), możesz śledzić dokument.
 
-## <a name="to-track-your-protected-document"></a>Aby śledzić chroniony dokument
+## Aby śledzić chroniony dokument
+<a id="to-track-your-protected-document" class="xliff"></a>
 
 1.  Otwórz dokument, który został przez Ciebie objęty ochroną i udostępniony. Ten baner potwierdza niestandardowe ustawienia ochrony, które zostały wybrane:
 
@@ -116,12 +123,13 @@ Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą
 |Informacje o korzystaniu z witryny śledzenia dokumentów|[Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md)
 
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 
 Po zapoznaniu się z domyślnymi zasadami usługi Azure Information Protection i sposobami ich dostosowywania oraz z działaniem etykietowania dla programu Word poeksperymentuj z innymi ustawieniami i zobacz, jak działają w innych aplikacjach pakietu Office obsługujących usługę Azure Information Protection: Excel, PowerPoint i Outlook. Jeśli te aplikacje były otwarte podczas instalowania klienta Azure Information Protection, zamknij je i otwórz przed podjęciem próby używania usługi Azure Information Protection.
 
 Spróbuj udostępnić więcej dokumentów i śledź ich użycie oraz potwierdź sposób działania funkcji odwoływania dokumentów.
 
-Następnie przydatne może być przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md). 
+Następnie przydatne może być powrót na stronę **Szybki start** w portalu Azure, przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md). 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
