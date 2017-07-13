@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/20/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
-ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
-translationtype: HT
+ms.openlocfilehash: 960fe1abf2fa4f5b8976f190454d31849736298a
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
+# Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
+<a id="classify-and-protect-a-file-or-email-by-using-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
@@ -24,7 +27,8 @@ Najprostszy sposób klasyfikowania i ochrony dokumentów i wiadomości e-mail je
 
 Pliki można jednak klasyfikować i chronić także za pomocą **Eksploratora plików**, który obsługuje dodatkowe typy plików i stanowi wygodny sposób klasyfikowania oraz ochrony wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
 
-### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Bezpieczne udostępnianie pliku osobom spoza organizacji
+### Bezpieczne udostępnianie pliku osobom spoza organizacji
+<a id="safely-share-a-file-with-people-outside-your-organization" class="xliff"></a>
 
 Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład można dołączyć plik do wiadomości e-mail lub wysłać zaproszenie z witryny usługi SharePoint.
 
@@ -35,7 +39,8 @@ Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony
 Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
 
 
-## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
+## Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
+<a id="using-office-apps-to-classify-and-protect-your-documents-and-emails" class="xliff"></a>
 
 Za pomocą paska usługi Azure Information Protection wybierz jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
 
@@ -51,13 +56,16 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Administrator skonfigurował zalecane monity o wybór określonej etykiety po wykryciu poufnych danych. Możesz zaakceptować zalecenie (i etykieta zostanie dodana) lub je odrzucić (zalecana etykieta nie zostanie dodana).
 
-### <a name="exceptions-for-the-azure-information-protection-bar"></a>Wyjątki dotyczące paska usługi Azure Information Protection 
+### Wyjątki dotyczące paska usługi Azure Information Protection
+<a id="exceptions-for-the-azure-information-protection-bar" class="xliff"></a> 
 
-##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
+##### Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
+<a id="dont-see-this-information-protection-bar-in-your-office-apps" class="xliff"></a>
 
 - Być może nie został [zainstalowany](install-client-app.md) klient usługi Azure Information Protection lub klient jest uruchomiony w [trybie z samą ochroną](client-protection-only-mode.md).
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana? 
+##### Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana?
+<a id="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar" class="xliff"></a> 
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
@@ -65,7 +73,8 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 
-### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
+### Ustawienie uprawnień niestandardowych dla dokumentu
+<a id="set-custom-permissions-for-a-document" class="xliff"></a>
 
 Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety, możesz określić dla dokumentu własne ustawienia ochrony.
 
@@ -79,16 +88,17 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
 
     - **Chroń za pomocą uprawnień niestandardowych**: aby możliwe było określenie i zastosowanie uprawnień niestandardowych, ta opcja musi być zaznaczona. Usuń zaznaczenie tej opcji, aby usunąć wszelkie uprawnienia niestandardowe.
     
-    - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz opcję wyboru poziomu dostępu dla poszczególnych osób.
+    - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz poziom dostępu dla poszczególnych osób.
 
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
         
-    - **Unieważnij dostęp**: Wybierz tę opcję tylko w przypadku plików zależnych od czasu, dzięki czemu określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej przez Ciebie dacie. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (Twojej bieżącej strefy czasowej) wybranego przez Ciebie dnia określone przez Ciebie osoby nie będą mogły go otworzyć.
+    - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
 
 
-### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Skróty klawiaturowe dla paska usługi Azure Information Protection
+### Skróty klawiaturowe dla paska usługi Azure Information Protection
+<a id="keyboard-shortcuts-for-the-azure-information-protection-bar" class="xliff"></a>
 
 Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą skrótów klawiaturowych, użyj następujących kombinacji klawiszy:
 
@@ -96,7 +106,8 @@ Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą sk
 
 Następnie użyj klawisza Tab, aby wybrać etykiety i inne kontrolki na pasku (ikona **Ukryj etykiety** i ikona **Usuń etykietę**), a następnie naciśnij klawisz Enter, aby je wybrać.
 
-## <a name="using-file-explorer-to-classify-and-protect-files"></a>Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
+## Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
+<a id="using-file-explorer-to-classify-and-protect-files" class="xliff"></a>
 
 Korzystając z Eksploratora plików, można szybko klasyfikować i chronić pojedynczy plik, wiele plików lub folder. 
 
@@ -109,7 +120,8 @@ Niektóre pliki są automatycznie wykluczane z klasyfikacji i ochrony, ponieważ
 W podręczniku administratora podano pełną listę typów plików obsługiwanych oraz tych plików i folderów, które są automatycznie wykluczane: [Typy plików obsługiwane przez klienta usługi Azure Information Protection](client-admin-guide-file-types.md).
 
 
-### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>Aby sklasyfikować i chronić plik za pomocą Eksploratora plików
+### Aby sklasyfikować i chronić plik za pomocą Eksploratora plików
+<a id="to-classify-and-protect-a-file-by-using-file-explorer" class="xliff"></a>
 
 1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Na przykład:
     
@@ -133,9 +145,11 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     
-    - **Wybierz użytkowników**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    - **Wybierz użytkowników**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Można wybierać z książki adresowej (na przykład osoby z Twojej organizacji i kontakty z innych organizacji). W przypadku innych osób wpisz dla każdej z nich pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
         
-    - **Unieważnij dostęp**: Wybierz tę opcję tylko w przypadku plików zależnych od czasu, dzięki czemu określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej przez Ciebie dacie. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (Twojej bieżącej strefy czasowej) wybranego przez Ciebie dnia określone przez Ciebie osoby nie będą mogły go otworzyć.
+    - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
+    
+    Pamiętaj, że jeśli to ustawienie zostało wcześniej skonfigurowane przy użyciu uprawnień niestandardowych z aplikacji pakietu Office 2010, w tym oknie dialogowym nie jest wyświetlana podana data wygaśnięcia, chociaż nadal jest ustawiona. Ten problem z wyświetlaniem występuje tylko w przypadku, gdy datę wygaśnięcia skonfigurowano w pakiecie Office 2010.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na pojawienie się komunikatu **Ukończona praca**, aby zobaczyć wyniki. Następnie kliknij przycisk **Zamknij**.
 
@@ -148,7 +162,8 @@ Jeśli zmienisz zdanie na temat klasyfikacji i ochrony lub zechcesz później zm
 Wcześniej określona dla pliku klasyfikacja i ochrona obowiązuje nadal, nawet jeśli plik zostanie wysłany za pomocą poczty e-mail lub zapisany w innej lokalizacji. Jeśli plik jest chroniony, można śledzić, w jaki sposób jest używany, i w razie potrzeby odwołać dostęp do niego. Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów chronionych podczas korzystania z usługi Azure Information Protection](client-track-revoke.md). 
 
 
-## <a name="other-instructions"></a>Inne instrukcje
+## Inne instrukcje
+<a id="other-instructions" class="xliff"></a>
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)

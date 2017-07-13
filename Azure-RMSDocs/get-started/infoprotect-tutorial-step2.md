@@ -4,17 +4,20 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
+# Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
+<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection*
 
@@ -29,7 +32,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     > [!TIP] 
     > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
 
-3.  Eksploruj automatycznie wyświetlony blok **Zasady: Globalne** zawierający domyślne zasady usługi Information Protection, które są tworzone automatycznie dla dzierżawcy:
+3. Należy zwrócić uwagę na informację znajdującą się na stronie **Szybki start**, która zostanie automatycznie otwarta przy pierwszym połączeniu z usługą. Możesz do niej wrócić później. W tym samouczku kliknij przycisk **Zasady globalne**, aby otworzyć blok **Zasady: globalne**. Ten blok zostaje automatycznie otwarty przy kolejnych połączeniach z usługą i zawiera domyślne zasady usługi Information Protection, które są tworzone automatycznie dla dzierżawcy:
     
     - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Dwie ostatnie etykiety można rozszerzyć, aby wyświetlić etykiety podrzędne: **Wszyscy pracownicy** i **Każdy (niechronione)**. Są to przykłady podkategorii klasyfikacji.
     
@@ -46,7 +49,8 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-settings.png)
 
-## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>Zmiana ustawień domyślnej etykiety i monit o uzasadnienie
+## Zmiana ustawień domyślnej etykiety i monit o uzasadnienie
+<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
 
 W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak działają:
 
@@ -56,7 +60,8 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
 
 2. Dla opcji **Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę** wybierz wartość **Włączone**.
 
-## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
+## Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
+<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
 
 Zmienimy teraz ustawienia jednej z podrzędnych etykiet **Wszyscy pracownicy** głównej etykiety **Poufne**. 
 

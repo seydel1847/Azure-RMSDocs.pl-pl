@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27ffbc6eb9e88840f1b33c59b76bdaa5d028cc36
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
+# Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
+<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -59,6 +62,10 @@ Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarząd
 -   [Odświeżanie szablonów dla użytkowników](refresh-templates.md)
 
 -   [Zarządzanie szablonami za pomocą programu PowerShell](configure-templates-with-powershell.md)
+
+> [!TIP]
+> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management są przenoszone do portalu Azure. Ta funkcja jest obecnie dostępna w wersji zapoznawczej. Aby uzyskać więcej informacji, zobacz następujące powiadomienie we wpisie na blogu: [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Ujednolicona administracja usługą Azure Information Protection w wersji zapoznawczej) 
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

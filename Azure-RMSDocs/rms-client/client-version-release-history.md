@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,12 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+ms.openlocfilehash: 9ee487f65f417c9faaf71f3c50b5d4e35659c55f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
+# Klient usługi Azure Information Protection: historia wersji
+<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection*
 
@@ -32,7 +34,35 @@ Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w
 >  
 > Jeśli problem nie ustąpi, zapoznaj się z informacjami w temacie [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
-## <a name="version-14210"></a>Wersja 1.4.21.0
+
+## Wersja 1.7.210.0
+<a id="version-172100" class="xliff"></a>
+
+**Wydana**: 2017-06-06
+
+Ta wersja zawiera wersję MSIPC 1.0.2217.1 klienta usługi RMS.
+
+**Poprawki**:
+
+- Wszystkie polecenia cmdlet dotyczące etykietowania i klasyfikacji są teraz obsługiwane na komputerach, które nie są połączone z Internetem, ale mają prawidłowe zasady usługi Azure Information Protection.
+
+- W celu zapewnieniu zgodności, parametr wyjściowy polecenia cmdlet [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) została zmieniona z angielskiego (brytyjskiego) (**IsLabelled**) na angielski (amerykański) (**IsLabeled**). Jeśli masz skrypty lub zautomatyzowane procesy, które poszukują tego parametru, zaktualizuj jego pisownię.
+
+- Ogólne poprawki dotyczące stabilności, które obejmują:
+
+    - Dla programu Outlook: poprawki dotyczące awarii, dużego użycia pamięci i problemów z wyświetlaniem menu.
+    
+    - Dla programu Word, Excel i PowerPoint: poprawki dotyczące wysokiego użycia procesora, problemów z wyświetlaniem przy zapisywaniu dużych plików programu Excel lub braku odpowiedzi aplikacji. 
+    
+    Również w przypadku tych aplikacji, w celu zwiększenia wydajności pakietu Office 2016 z usługami SharePoint Online i OneDrive dla firm, automatyczne i zalecane etykietowanie jest stosowane podczas zamykania plików, a nie podczas ich zapisywania (zapisywania automatycznego lub wywołanego przez użytkownika). Podobnie, jeśli ustawienie **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę** jest włączone, użytkownicy nie będą monitowani o wybranie etykiety aż do zamknięcia pliku. Wyjątek stanowią programy Word 2016 i Excel 2016, gdy użytkownik wybiera opcję **Zapisz jako**. Ta akcja wyzwala etykietowanie, jeśli etykietowanie zostało skonfigurowane. 
+
+**Nowe funkcje**:
+
+- Nowe polecenia cmdlet programu PowerShell [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). Po uruchomieniu tego polecenia cmdlet jest sprawdzana zawartość pliku i do plików bez etykiet są automatycznie stosowane etykiety, zgodnie z warunkami określonymi w zasadach usługi Azure Information Protection.
+
+
+## Wersja 1.4.21.0
+<a id="version-14210" class="xliff"></a>
 
 **Wydana**: 2017-03-15
 
@@ -45,7 +75,7 @@ W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Mic
 
 - Obsługa mapowanych napędów w celu umożliwienia ochrony i klasyfikowania plików.
 
-- Obsługa dużych plików (>&250; MB) w przeglądarce. 
+- Obsługa dużych plików (> 250 MB) w przeglądarce. 
 
 - Po skonfigurowaniu funkcji HYOK program Outlook może stosować etykiety skonfigurowane pod kątem użycia szablonów usługi Azure Rights Management lub szablonów usług AD RMS.
 
@@ -59,7 +89,8 @@ W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Mic
 - W odniesieniu do plików PDF w przeglądarce dodano opcje wyszukiwania, powiększania i pomniejszania oraz obrotu. Aby użyć tych opcji, kliknij plik wyświetlany w przeglądarce prawym przyciskiem myszy.
 
 
-## <a name="version-131552"></a>Wersja 1.3.155.2
+## Wersja 1.3.155.2
+<a id="version-131552" class="xliff"></a>
 
 **Wydana**: 2017-08-02
 
@@ -87,7 +118,8 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 - [Podręcznik użytkownika usługi Azure Information Protection](client-user-guide.md)
 
 
-## <a name="version-1240"></a>Wersja 1.2.4.0
+## Wersja 1.2.4.0
+<a id="version-1240" class="xliff"></a>
 
 **Wydana**: 2016-10-27
 
@@ -105,13 +137,15 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 
     Aby uzyskać więcej informacji na temat tej opcji, zapoznaj się z sekcją [Dodatkowe czynności kontrolne i rozwiązywanie problemów](client-admin-guide.md#additional-checks-and-troubleshooting) podręcznika administratora.
 
-## <a name="version-11230"></a>Wersja 1.1.23.0
+## Wersja 1.1.23.0
+<a id="version-11230" class="xliff"></a>
 
 **Wydana**: 2016-10-01
 
 Wersja ogólnie dostępna.
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 
 Aby uzyskać więcej informacji na temat instalacji klienta:
 

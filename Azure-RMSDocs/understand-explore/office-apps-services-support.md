@@ -4,7 +4,7 @@ description: "Sposób, w jaki aplikacje pakietu Office dla użytkowników końco
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5c106d46befc2a2d3c42ba8840dac65a243220d9
-ms.sourcegitcommit: 9edcb4a55a331e02f999c78d97eb0beb21f96f07
-translationtype: HT
+ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="office-applications-and-services"></a>Aplikacje i usługi pakietu Office
+# Aplikacje i usługi pakietu Office
+<a id="office-applications-and-services" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 Aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, PowerPoint i Outlook) oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection, aby chronić dane organizacji.
 
-## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
+## Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
+<a id="office-applications-word-excel-powerpoint-outlook" class="xliff"></a>
 Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programu Word, Excel i PowerPoint, ściśle dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
 
 Na przykład użytkownicy mogą tak skonfigurować dokument programu Word, aby był on dostępny tylko dla osób z danej organizacji. Można określić, czy arkusz kalkulacyjny programu Excel jest dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. W przypadku plików ważnych przez określony czas można skonfigurować czas wygaśnięcia (bezpośrednio przez działania użytkowników lub przez zastosowanie szablonu), po upływie którego dostęp do pliku nie będzie już możliwy. W przypadku programu Outlook, oprócz możliwości wyboru szablonu, użytkownicy mogą wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
@@ -35,7 +39,8 @@ Jeśli chcesz już skonfigurować aplikacje pakietu Office i klienta usługi Azu
 
 - Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](../deploy-use/configure-client.md).
 
-## <a name="exchange-online-and-exchange-server"></a>Usługa Exchange Online i program Exchange Server
+## Usługa Exchange Online i program Exchange Server
+<a id="exchange-online-and-exchange-server" class="xliff"></a>
 W przypadku używania usługi Exchange Online lub programu Exchange Server można zastosować integrację usług zarządzania prawami do informacji (IRM) i korzystać z dodatkowych rozwiązań w zakresie ochrony informacji:
 
 -   **Protokół Exchange ActiveSync IRM** umożliwia urządzeniom przenośnym zabezpieczanie wiadomości e-mail i korzystanie z chronionych wiadomości.
@@ -59,9 +64,12 @@ Jeśli chcesz już skonfigurować program Exchange dla usługi IRM:
 - W przypadku lokalnej instalacji programu Exchange, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 
-## <a name="sharepoint-online-and-sharepoint-server"></a>Usługa SharePoint Online i program SharePoint Server
+## Usługa SharePoint Online i program SharePoint Server
+<a id="sharepoint-online-and-sharepoint-server" class="xliff"></a>
 
 Korzystając z usługi SharePoint Online lub programu SharePoint Server, możesz chronić dokumenty przy użyciu usług zarządzania prawami do informacji (IRM). Ta konfiguracja pozwala administratorom chronić listy lub biblioteki, więc gdy użytkownik wyewidencjonuje dokument, pobrany plik pozostaje chroniony i tylko autoryzowane osoby mogą go wyświetlać i używać zgodnie z określonymi przez Ciebie zasadami ochrony informacji. Na przykład można przypisać plikowi właściwość tylko do odczytu albo uniemożliwić kopiowanie tekstu, zapisywanie lokalnej kopii pliku czy drukowanie jego zawartości.
+
+Domyślnie ochrona jest ograniczona do osoby, która pobiera dokument. Można jednak to zmienić za pomocą opcji konfiguracji, która rozszerza ochronę na wszystkich użytkowników mających dostęp do dokumentu w programie SharePoint lub do określonej grupy.
 
 W przypadku list i bibliotek programu SharePoint ochrona informacji jest zawsze konfigurowana przez administratora, nigdy przez użytkownika końcowego. Ustaw uprawnienia na poziomie witryny, a te uprawnienia domyślnie są dziedziczone przez wszystkie listy lub biblioteki w tej witrynie. W przypadku korzystania z usługi SharePoint Online użytkownicy mogą również skonfigurować ochronę usługi IRM w bibliotece usługi OneDrive dla Firm.
 
@@ -90,7 +98,8 @@ Jeśli chcesz już skonfigurować program SharePoint dla usługi IRM:
 - W przypadku programu SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](../deploy-use/deploy-rms-connector.md).
 
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 

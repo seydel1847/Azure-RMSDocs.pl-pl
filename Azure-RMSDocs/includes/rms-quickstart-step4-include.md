@@ -4,14 +4,14 @@ Odbiorcy mogą użyć różnych urządzeń do odczytania chronionego dokumentu w
 
 Poproś odbiorców o odczytanie wysłanej wiadomości e-mail. Odbiorcy zobaczą wiadomość e-mail, a wcześniej następujący tekst:
 
-**Nadawca zabezpieczył załączniki przy użyciu usługi Microsoft RMS. Musisz** [zalogować się](http://aka.ms/rms)
-      **, aby je otworzyć.**
+**Nadawca zabezpieczył załączniki przy użyciu usługi Microsoft RMS. Aby go otworzyć, musisz** [zalogować się](http://aka.ms/rms) **na stronie.**
 
 Jeśli odbiorca kliknie link, zostanie przeniesiony do instrukcji związanych z instalacją aplikacji RMS sharing. W razie potrzeby będzie mógł zarejestrować się i uzyskać bezpłatne konto. Bezpłatne konto obejmuje subskrypcję usługi RMS dla użytkowników indywidualnych, która umożliwia autoryzowanym użytkownikom odczytywanie chronionych dokumentów, nawet jeśli ich organizacja nie ma usługi Azure RMS. Następnie odbiorcy mogą odczytać chroniony załącznik zgodnie z poniższymi instrukcjami.
 
 ![Zrzuty ekranu przedstawiające samouczek dotyczący usługi RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### <a name="to-view-the-protected-document-attachment"></a>Aby wyświetlić załącznik z chronionym dokumentem
+#### Aby wyświetlić załącznik z chronionym dokumentem
+<a id="to-view-the-protected-document-attachment" class="xliff"></a>
 
 1.  Jako że usługa Azure Rights Management chroni dokument programu Word, w wiadomości e-mail dostępne są dwa załączniki. Są to dwie wersje tego samego pliku o różnych rozszerzeniach nazwy pliku. Otwórz wersję z rozszerzeniem **ppdf** (**Confidential.ppdf**).
 

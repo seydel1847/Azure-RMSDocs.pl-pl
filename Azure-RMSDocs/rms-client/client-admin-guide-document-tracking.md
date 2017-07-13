@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące konfigurow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,35 +12,56 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dad69e37e2908d155fd1be370d190fd91d5739a3
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 3b7ed22afea6b8575d12f6f83dcfc8419200c003
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>Konfigurowanie i używanie śledzenia dokumentów w usłudze Azure Information Protection
+# Konfigurowanie i używanie śledzenia dokumentów w usłudze Azure Information Protection
+<a id="configuring-and-using-document-tracking-for-azure-information-protection" class="xliff"></a>
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: usługi zarządzania prawami dostępu w usłudze Active Directory, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
 
-Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Podczas śledzenia dokumentów pokazywane są informacje, takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów udostępnionych przez użytkowników, czas podjęcia takich prób oraz lokalizacja tych osób. Jeśli wyświetlanie tych informacji jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć dostęp do witryny śledzenia dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032). W dowolnym momencie możesz ponownie włączyć dostęp do witryny za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037) i sprawdzić, czy dostęp jest aktualnie włączony, czy wyłączony, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037).
+Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Śledzenia dokumentów dostarcza użytkownikom i administratorom informacji o dostępach do chronionego dokumentu i w razie potrzeby umożliwia odwołanie śledzonego dokumentu.
 
-Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management dla programu Windows PowerShell. Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+## Kontrola prywatności w witrynie śledzenia dokumentów
+<a id="privacy-controls-for-your-document-tracking-site" class="xliff"></a>
 
-> [!TIP]
-> Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+Jeśli wyświetlanie informacji o śledzeniu dokumentów jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć śledzenie dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). 
 
-Następujące adresy URL są używane do śledzenia dokumentów i muszą być dozwolone (można je na przykład dodać do zaufanych witryn w przypadku korzystania z programu Internet Explorer ze zwiększonymi zabezpieczeniami):
+To polecenie cmdlet powoduje wyłączenie dostępu do witryny śledzenia, tak aby żaden użytkownik w organizacji nie mógł śledzić ani odwołać dostępu do chronionych dokumentów. W dowolnym momencie możesz ponownie włączyć śledzenie dokumentów za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) i sprawdzić, czy śledzenie dokumentów jest aktualnie włączone, czy wyłączone, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature). Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management (AADRM) dla programu PowerShell. 
 
--   https://&#42;.azurerms.com
+Gdy witryna śledzenia dokumentów jest włączona, domyślnie są udostępniane informacje takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów, czas podjęcia takich prób oraz lokalizacja tych osób. Ten poziom informacji może być bardzo przydatny do określenia sposobu korzystania z udostępnionych dokumentów oraz oceny, czy dokumenty powinny zostać odwołane w przypadku wystąpienia podejrzanych działań. Jednak z uwagi na konieczność zachowania prywatności może okazać się konieczne wyłączenie informacji dotyczących niektórych lub wszystkich użytkowników. 
 
--   https://ecn.dev.virtualearth.net
+Jeśli istnieją użytkownicy, których aktywność nie powinna być śledzona, dodaj ich do grupy przechowywanej w usłudze Azure AD i podaj tę grupę przy użyciu polecenia cmdlet [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup). W tym poleceniu cmdlet należy określić pojedynczą grupę. Taka grupa może jednak zawierać grupy zagnieżdżone. 
 
-    > [!NOTE]
-    > Ten adres URL jest przeznaczony dla usługi Mapy Bing.
+Aktywność członków tej grupy związana z dokumentami współdzielonymi z nimi przez innych użytkowników nie jest rejestrowana przez witrynę śledzenia dokumentów. Ponadto do użytkowników, którzy udostępnili dokument, nie są wysyłane powiadomienia e-mail.
 
--   https://&#42;.microsoftonline.com
+Podczas używania tej konfiguracji wszyscy użytkownicy mogą nadal używać witryny śledzenia dokumentów i odwoływać dostęp do dokumentów, które zostały objęte ochroną. Jednak użytkownicy nie zobaczą działań użytkowników, którzy zostali zdefiniowani za pomocą polecenia cmdlet Set-AadrmDoNotTrackUserGroup.
 
--   https://&#42;.microsoftonline-p.com
+Jeśli ta opcja nie jest już potrzebna, można użyć polecenia [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup). Aby wybiórczo usunąć użytkowników, usuń ich z grupy, pamiętając o [buforowaniu grupy](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management). Można sprawdzić, czy ta opcja jest obecnie używana, używając polecenia [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup). Aby uruchomić te polecenia cmdlet dla danej konfiguracji grupy, musisz mieć co najmniej wersję **2.10.0.0** modułu Azure Rights Management (AADRM) dla programu PowerShell.
 
-## <a name="tracking-and-revoking-documents-for-users"></a>Śledzenie i odwoływanie dokumentów dla użytkowników
+Aby uzyskać więcej informacji na temat każdego z tych poleceń cmdlet, należy użyć podanych linków. Aby uzyskać instrukcje instalacji modułu PowerShell, zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+
+
+## Docelowe adresy URL używane przez witryny śledzenia dokumentów
+<a id="destination-urls-used-by-the-document-tracking-site" class="xliff"></a>
+
+Następujące adresy URL są używane do śledzenia dokumentów i należy zezwalać na dostęp do nich na wszystkich urządzeniach i w usługach między klientami korzystającymi z klienta usługi Azure Information Protection a Internetem. Na przykład te adresy URL należy dodać do zapór lub do zaufanych witryn, jeśli używasz programu Internet Explorer ze zwiększonymi zabezpieczeniami.
+
+-  `https://*.azurerms.com`
+
+- `https://*.microsoftonline.com`
+
+- `https://*.microsoftonline-p.com`
+
+- `https://ecn.dev.virtualearth.net`
+
+Te adresy URL są standardowe dla usługi Azure Rights Management, z wyjątkiem adresu URL virtualearth.net, który jest używany przez mapy Bing do wyświetlania lokalizacji użytkownika.
+
+## Śledzenie i odwoływanie dokumentów dla użytkowników
+<a id="tracking-and-revoking-documents-for-users" class="xliff"></a>
 
 Użytkownicy po zalogowaniu się do witryny śledzenia dokumentów mogą śledzić i odwoływać dokumenty objęte ochroną za pomocą klienta usługi Azure Information Protection lub udostępnione za pomocą aplikacji Rights Management. Po zalogowaniu się jako administrator usługi Azure Information Protection (administrator globalny) możesz kliknąć ikonę administratora, aby przełączyć się do trybu administratora i wyświetlić dokumenty udostępnione przez użytkowników w organizacji:
 
@@ -56,7 +77,8 @@ Aby wyjść z trybu administratora, kliknij przycisk **X** obok pozycji **Wyjdź
 
 Aby uzyskać instrukcje dotyczące sposobu korzystania z witryny śledzenia dokumentów, zobacz sekcję [Śledzenie i odwoływanie dokumentów](client-track-revoke.md) w podręczniku użytkownika.
 
-## <a name="usage-logging-for-the-document-tracking-site"></a>Rejestrowanie użycia dla witryny śledzenia dokumentów
+## Rejestrowanie użycia dla witryny śledzenia dokumentów
+<a id="usage-logging-for-the-document-tracking-site" class="xliff"></a>
 
 Dwa pola w plikach dziennika użycia mają zastosowanie do śledzenia dokumentów: **AdminAction** i **ActingAsUser**.
 
@@ -71,8 +93,11 @@ Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestro
 
 
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 Po skonfigurowaniu witryny śledzenia dokumentów klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
+
+- [Dostosowania](client-admin-guide-customizations.md)
 
 - [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)
 

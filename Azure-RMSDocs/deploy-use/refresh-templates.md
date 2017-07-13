@@ -4,7 +4,7 @@ description: "W przypadku korzystania z usługi Azure Rights Management szablony
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6f02bffa99719d5cd987bc0fa9c84baabe191ec5
-ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
-translationtype: HT
+ms.openlocfilehash: 374c807862d4922679e8622ee0d0d5a16a156bb0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="refreshing-templates-for-users"></a>Odświeżanie szablonów dla użytkowników
+# Odświeżanie szablonów dla użytkowników i usług
+<a id="refreshing-templates-for-users-and-services" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -32,8 +35,10 @@ W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure
 |Office 2016 dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 |Aplikacja RMS sharing dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 
+Gdy aplikacje klienckie wymagają pobrania szablonów (pierwszy raz lub odświeżonych po zmianach), należy przygotować się na odczekanie do 15 minut, zanim pobranie zostanie ukończone, a nowe lub zaktualizowane szablony staną się w pełni funkcjonalne. Rzeczywisty czas może być różny zależnie od takich czynników, jak rozmiar i złożoność konfiguracji szablonu oraz łączność sieciowa. 
 
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych
+## Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych
+<a id="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates" class="xliff"></a>
 Jeśli została już skonfigurowana usługa Information Rights Management (IRM) dla usługi Exchange Online, szablony niestandardowe nie będą pobierane dla użytkowników, dopóki nie zostaną wprowadzone następujące zmiany w środowisku Windows PowerShell usługi Exchange Online.
 
 > [!NOTE]
@@ -41,7 +46,8 @@ Jeśli została już skonfigurowana usługa Information Rights Management (IRM) 
 
 Tę procedurę należy wykonać po każdej zmianie szablonu.
 
-### <a name="to-update-templates-for-exchange-online"></a>Aktualizacja szablonów dla usługi Exchange Online
+### Aktualizacja szablonów dla usługi Exchange Online
+<a id="to-update-templates-for-exchange-online" class="xliff"></a>
 
 1.  Za pomocą środowiska Windows PowerShell w usłudze Exchange Online połącz się z usługą:
 
@@ -94,13 +100,15 @@ Aby użytkownicy nie widzieli już tych szablonów, należy połączyć się z u
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego
+## Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego
+<a id="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template" class="xliff"></a>
 Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z aplikacją do udostępniania usługi Rights Management (RMS) dla systemu operacyjnego Windows, można zmienić automatyczny harmonogram w taki sposób, aby zmienione szablony były odświeżane częściej niż częstotliwość domyślna. Można też wymusić natychmiastowe odświeżanie przez usunięcie istniejących danych z wartości rejestru.
 
 > [!WARNING]
 > Używanie Edytora rejestru w niewłaściwy sposób może spowodować poważne problemy, w wyniku których może być konieczna ponowna instalacja systemu operacyjnego. Firma Microsoft nie może zagwarantować użytkownikowi, że uda się rozwiązać problemy wynikające z niewłaściwego używania Edytora rejestru. Używasz Edytora rejestru na własne ryzyko.
 
-### <a name="to-change-the-automatic-schedule"></a>Zmiana automatycznego harmonogramu
+### Zmiana automatycznego harmonogramu
+<a id="to-change-the-automatic-schedule" class="xliff"></a>
 
 1.  Za pomocą edytora rejestru należy utworzyć i ustawić jedną z następujących wartości rejestru:
 
@@ -124,7 +132,8 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 
 2.  Aby wymusić natychmiastowe odświeżenie szablonów, przejdź do następnej procedury. Jeśli nie jest konieczne natychmiastowe odświeżenie, należy ponownie uruchomić aplikacje pakietu Office i wystąpienia Eksploratora plików.
 
-### <a name="to-force-an-immediate-refresh"></a>Wymuszenie natychmiastowego odświeżenia
+### Wymuszenie natychmiastowego odświeżenia
+<a id="to-force-an-immediate-refresh" class="xliff"></a>
 
 1.  Korzystając z edytora rejestru, usuń dane dla wartości **LastUpdatedTime**. Przykładowa wartość to **2015-04-20T15:52** — w tym przypadku należy usunąć ciąg 2015-04-20T15:52, aby nie były wyświetlane żadne dane. Skorzystaj z poniższych informacji, aby zlokalizować ścieżkę rejestru w celu usunięcia danych dla tej wartości rejestru.
 
@@ -140,7 +149,7 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
     > 1.  Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli jeszcze nie zainstalowano modułu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
     > 2.  Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
     > 
-    >     Na przykład: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    >     Na przykład: **LicensingIntranetDistributionPointUrl: https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
     > 3.  Wykasuj z wartości ciąg **https://** oraz **/_wmcs/licensing**. Pozostała wartość stanowi nazwę FQDN usługi Microsoft RMS. W naszym przykładzie nazwa FQDN usługi Microsoft RMS ma następującą wartość:
     > 
     >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
@@ -150,7 +159,8 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 3.  Ponownie uruchom aplikacje pakietu Office i wystąpienia Eksploratora plików.
 
 
-## <a name="see-also"></a>Zobacz też
+## Zobacz też
+<a id="see-also" class="xliff"></a>
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
