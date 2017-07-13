@@ -12,12 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2022f86a32725ef9dfcf5692b1194348f6c39f3b
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: 27ce787cbf5370634f6b1e15903cc981f08656a2
+ms.sourcegitcommit: 505a2c182bcd5a87a7dcb43b9aa1e43244f4c537
 ms.translationtype: HT
 ms.contentlocale: pl-PL
+ms.lasthandoff: 07/03/2017
 ---
-# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
+# Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
+<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -33,7 +35,8 @@ Więcej informacji można znaleźć w następujących zasobach dokumentacji usł
 
 Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi AD, zobacz artykuł [Integrowanie tożsamości użytkownika lokalnego z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-### <a name="scenarios-that-have-specific-requirements"></a>Scenariusze, które wiążą się z określonymi wymaganiami 
+### Scenariusze, które wiążą się z określonymi wymaganiami
+<a id="scenarios-that-have-specific-requirements" class="xliff"></a> 
 
 Komputery z zainstalowanym pakietem Office 2010: 
 
@@ -43,7 +46,7 @@ Komputery z zainstalowanym pakietem Office 2010:
 
 Obsługiwanie uwierzytelniania opartego na certyfikacie:
 
-- Aplikacja Azure Information Protection dla systemu Android obsługuje uwierzytelnianie oparte na certyfikatach dla minimalnej wersji systemu Android 5.0. Instrukcje dotyczące konfigurowania uwierzytelniania opartego na certyfikatach znajdują się w temacie [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started) (Wprowadzenie do uwierzytelniania opartego na certyfikatach w usłudze Azure Active Directory).
+- Aplikacje Azure Information Protection dla systemów iOS i Android obsługują uwierzytelnianie oparte na certyfikatach. Instrukcje dotyczące konfigurowania uwierzytelniania opartego na certyfikatach znajdują się w temacie [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started) (Wprowadzenie do uwierzytelniania opartego na certyfikatach w usłudze Azure Active Directory).
 
 Wartość nazwy UPN użytkowników nie odpowiada ich adresowi e-mail:
 
@@ -55,7 +58,8 @@ Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelniani
 
 - Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
 
-## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
+## Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
+<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
 Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:
 
 -   Office 2013 (minimalna wersja):
@@ -88,7 +92,8 @@ Następnie skonfiguruj rozwiązanie MFA:
 
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

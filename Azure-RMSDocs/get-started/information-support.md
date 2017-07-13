@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 06/02/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f22d997b69c5c88c5e83d29de137626facad5849
-ms.sourcegitcommit: 05b7e06e330a33936aeeef32934717f870963612
-translationtype: HT
+ms.openlocfilehash: 23a6e3a2ca5efb6718d4d1fc33312cd481eec000
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
+# Informacje i pomoc techniczna dla usługi Azure Information Protection
+<a id="information-and-support-for-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -24,24 +27,29 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 |Cel|.. Czynności|
 |----------------|---------------|
-|Patrz zalecana dokumentacja dla usługi →|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
-|Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją →|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu →|Śledzenie aktualizacji od Dana Plastina, jednego z liderów zespołu usługi Microsoft Information Protection. Zobacz [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina)|
-|Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach →|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
+|Patrz zalecana dokumentacja dla usługi|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
+|Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją|Wysłanie wiadomości e-mail na adres [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
+|Otrzymywanie tweetów o usłudze Information Protection i powiadomień o aktualizacjach dokumentacji od zespołu produktu|Śledź [@DanPlastina](https://twitter.com/DanPlastina), jednego z liderów zespołu usługi Azure Information Protection w firmie Microsoft.|
+|Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
-## <a name="information-about-new-releases-and-updated-documentation"></a>Informacje o nowych wersjach i zaktualizowanej dokumentacji
-Zespół produktu usługi Information Protection publikuje powiadomienia o nowych wersjach i aktualizacjach na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services). Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
+## Informacje o nowych wersjach i zaktualizowanej dokumentacji
+<a id="information-about-new-releases-and-updated-documentation" class="xliff"></a>
+Zespół produktu usługi Azure Information Protection publikuje powiadomienia o nowych wersjach i aktualizacjach na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection). Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
 
-Na koniec każdego miesiąca zostanie wyświetlone podsumowanie zmian w dokumentacji pod tytułem „**Aktualizacja dokumentacji usługi Azure Information Protection za \<miesiąc, rok>**”. Te wpisy mają tag typu zawartości [**Aktualizacje**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates) i obejmują aktualizacje dokumentacji dla nowych wersji, jak również poprawki i wyjaśnienia dla już istniejących wersji.
+Informacje o nowych funkcjach i wersjach zapoznawczych można znaleźć także w [witrynie usługi Yammer usługi Azure Information Protection](https://www.yammer.com/AskIPTeam), gdzie można również poprosić o nowe funkcje.
+
+Na koniec każdego miesiąca publikujemy na blogu podsumowanie zmian w dokumentacji pod tytułem „**Aktualizacja dokumentacji usługi Azure Information Protection za \<miesiąc, rok>**”. Te wpisy mają tag typu zawartości [**Aktualizacje**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates) i obejmują aktualizacje dokumentacji dla nowych wersji, jak również poprawki i wyjaśnienia dla już istniejących wersji.
 
 > [!TIP]
 > Jeśli tworzysz aplikacje korzystające z usług Microsoft Rights Management (Azure RMS lub AD RMS), być może zainteresuje Cię [blog Developer's Corner dotyczący usług Active Directory Rights Management (AD RMS)](https://blogs.msdn.microsoft.com/rms/).
 
-## <a name="support-options-and-community-resources"></a>Opcje pomocy technicznej i zasoby społecznościowe
+## Opcje pomocy technicznej i zasoby społecznościowe
+<a id="support-options-and-community-resources" class="xliff"></a>
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
 
-### <a name="to-contact-microsoft-support"></a>Aby skontaktować się z pomocą techniczną firmy Microsoft
+### Aby skontaktować się z pomocą techniczną firmy Microsoft
+<a id="to-contact-microsoft-support" class="xliff"></a>
 
 Jeśli korzystasz z pomocy technicznej Premium, odwiedź [portal dla klientów pomocy technicznej Premium](https://premier.microsoft.com/), w którym można przesyłać zdarzenia, przeglądać rozwiązania i uzyskać pomoc.
 
@@ -59,7 +67,8 @@ Pozostali klienci powinni użyć kanałów pomocy technicznej podanych w poniżs
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
 
 
-### <a name="self-help"></a>Samodzielna pomoc
+### Samodzielna pomoc
+<a id="self-help" class="xliff"></a>
 
 Filmy wideo na żądanie:
 
@@ -81,12 +90,11 @@ Rozwiązywanie problemów:
 
 - Na potrzeby zautomatyzowanego sprawdzania, automatycznego korygowania i śledzenia pobierz i uruchom [narzędzie RMS Analyzer Tool](http://www.microsoft.com/en-us/download/details.aspx?id=46437). Aby uzyskać więcej informacji o tym narzędziu, zobacz sekcje **Szczegóły** i **Instrukcje instalacji** na stronie pobierania. 
 
-### <a name="community-resources"></a>Zasoby społeczności
+### Zasoby społeczności
+<a id="community-resources" class="xliff"></a>
 
--   [Yammer: Azure Information Protection](https://www.yammer.com/AskIPTeam)
+Firma Microsoft zaleca korzystanie z [witryny usługi Yammer dla usługi Azure Information Protection](https://www.yammer.com/AskIPTeam), będącej miejscem, w którym znajdziesz bezpośrednie odpowiedzi od zespołu usługi Azure Information Protection oraz skorzystasz z doświadczenia i wiedzy innych administratorów i konsultantów.
 
--   [Forum: Microsoft RMS (Cloud) (Forum: usługi Microsoft RMS [w chmurze])](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)
-
--   [Forum: RMS for Users (applications) (Forum: usługi RMS dla użytkowników [aplikacje])](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
+Jeśli nie masz dostępu do usługi Yammer, wypróbuj [forum witryny TechNet dotyczące usługi Microsoft RMS (w chmurze)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
