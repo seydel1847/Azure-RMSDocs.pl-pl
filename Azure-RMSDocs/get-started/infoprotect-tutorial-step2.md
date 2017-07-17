@@ -4,17 +4,17 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
 # Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 <a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
@@ -45,7 +45,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-labelsv2.png)
     
-    Ponadto istnieją ustawienia zasad, które nie są ustawione, tak więc, na przykład, nie jest wymagane, aby wszystkie dokumenty i wiadomości e-mail miały etykietę, brak jest etykiety domyślnej i użytkownicy nie muszą uzasadniać zmiany etykiet:
+    Ponadto istnieją ustawienia zasad, które nie są ustawione. Na przykład nie jest wymagane, aby wszystkie dokumenty i wiadomości e-mail miały etykiety, nie ma etykiety domyślnej, a użytkownicy nie muszą uzasadniać zmiany etykiet:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-settings.png)
 
@@ -79,9 +79,11 @@ Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą 
     
     Spowoduje to otwarcie bloku **Ochrona**.
     
-3. Upewnij się, że w bloku **Ochrona** jest zaznaczona opcja **Azure RMS** oraz że zaznaczono również opcję **Wybierz wstępnie zdefiniowany szablon**, a następnie kliknij pole listy rozwijanej i wybierz domyślny szablon **\<nazwa organizacji> — Poufne**.     
+3. Upewnij się, że wybrano opcje **Azure RMS** i **Wybierz wstępnie zdefiniowany szablon** w bloku **Ochrona**. Następnie kliknij pole listy rozwijanej i wybierz szablon domyślny, który pozwala wszystkim użytkownikom w organizacji wyświetlać i edytować chronioną zawartość. 
     
-    Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — Poufne**, którą wybierzesz: 
+    Jeśli niedawno aktywowano usługę Azure Rights Management, szablon ten ma nazwę **Poufne\Wszyscy pracownicy**. 
+    
+    Jeśli usługę Azure Rights Management aktywowano przed rozpoczęciem korzystania z tego samouczka, szablon domyślny może mieć nazwę **\<nazwa organizacji> — poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — poufne**, którą wybierzesz: 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — ustawianie ochrony usługi Azure RMS](../media/step2-select-rms-template.png)
     

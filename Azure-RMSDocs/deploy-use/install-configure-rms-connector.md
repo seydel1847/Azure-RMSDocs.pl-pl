@@ -4,7 +4,7 @@ description: "Informacje ułatwiające instalowanie i konfigurowanie łącznika 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: e3444ee0812d54988ad12461e0f492fe07637209
+ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
+# Instalowanie i konfigurowanie łącznika Azure Rights Management
+<a id="installing-and-configuring-the-azure-rights-management-connector" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -27,7 +28,8 @@ Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łączni
 Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](deploy-rms-connector.md#prerequisites-for-the-rms-connector) dla tego wdrożenia.
 
 
-## <a name="installing-the-rms-connector"></a>Instalowanie łącznika usług RMS
+## Instalowanie łącznika usług RMS
+<a id="installing-the-rms-connector" class="xliff"></a>
 
 1.  Zidentyfikuj komputery (co najmniej dwa), na których będzie uruchamiany łącznik usług RMS. Muszą one odpowiadać minimalnej specyfikacji wymienionej w wymaganiach wstępnych.
 
@@ -52,10 +54,11 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
 
 W celu kontynuacji wprowadź konto i hasło, aby skonfigurować łącznik usługi RMS.
 
-## <a name="entering-credentials"></a>Wprowadzanie poświadczeń
+## Wprowadzanie poświadczeń
+<a id="entering-credentials" class="xliff"></a>
 Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia dla konta, które ma wystarczające uprawnienia do konfigurowania łącznika usług RMS. Na przykład można wpisać **admin@contoso.com**, a następnie podać hasło dla tego konta.
 
-Istnieją pewne ograniczenia dotyczące znaków dla tego hasła. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła dla innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, dzięki czemu nie będzie ono zawierało żadnego z tych znaków specjalnych.
+To konto nie może wymagać uwierzytelniania wieloskładnikowego (MFA), ponieważ łącznik go nie obsługuje. Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, tak aby nie zawierało ono żadnego z tych znaków specjalnych.
 
 Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Na przykład jeśli możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. W przeciwnym razie zostanie wyświetlony komunikat o błędzie: **Próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
 
@@ -115,16 +118,17 @@ Na ostatniej stronie kreatora wykonaj następujące czynności, a następnie kli
 
 Jeśli musisz odinstalować łącznik usług RMS, ponownie uruchom kreatora i wybierz opcję odinstalowania.
 
-## <a name="authorizing-servers-to-use-the-rms-connector"></a>Autoryzowanie serwerów do korzystania z łącznika usług RMS
+## Autoryzowanie serwerów do korzystania z łącznika usług RMS
+<a id="authorizing-servers-to-use-the-rms-connector" class="xliff"></a>
 Po zainstalowaniu łącznika usługi RMS na co najmniej dwóch komputerach wszystko jest gotowe do autoryzowania serwerów i usług, które mają używać łącznika usługi RMS. Na przykład: serwerów z systemem Exchange Server 2013 lub SharePoint Server 2013.
 
 Aby zdefiniować te serwery, uruchom narzędzie administracyjne łącznika usługi RMS i dodaj pozycje do listy dozwolonych serwerów. To narzędzie można uruchomić po zaznaczeniu opcji **Uruchom konsolę administracyjną łącznika do autoryzowania serwerów** pod koniec działania kreatora konfigurowania łącznika Microsoft Rights Management. Można też uruchomić je oddzielnie z poziomu kreatora.
 
 Podczas autoryzowania serwerów należy pamiętać o następujących kwestiach:
 
--   Dodawanym serwerom zostaną przyznane specjalne uprawnienia. Wszystkim kontom określonym dla roli programu Exchange Server w konfiguracji łącznika zostanie przyznana [rola administratora](configure-super-users.md) w usługach Azure RMS, która umożliwi im dostęp do całej zawartości dla tej dzierżawy RMS. Funkcja administratora jest automatycznie włączana na tym etapie w razie potrzeby. Aby uniknąć zagrożenia zabezpieczeń podniesienia uprawnień, należy wskazać tylko konta używane przez serwery programu Exchange w danej organizacji. Wszystkim serwerom skonfigurowanym jako serwery programu SharePoint lub serwery plików, które używają infrastruktury FCI, zostaną przyznane uprawnienia zwykłych użytkowników.
+- Dodawanym serwerom zostaną przyznane specjalne uprawnienia. Wszystkim kontom określonym dla roli programu Exchange Server w konfiguracji łącznika zostanie przyznana [rola administratora](configure-super-users.md) w usługach Azure RMS, która umożliwi im dostęp do całej zawartości tej dzierżawy RMS. Funkcja administratora jest automatycznie włączana na tym etapie w razie potrzeby. Aby uniknąć zagrożenia zabezpieczeń podniesienia uprawnień, należy wskazać tylko konta używane przez serwery programu Exchange w danej organizacji. Wszystkim serwerom skonfigurowanym jako serwery programu SharePoint lub serwery plików, które używają infrastruktury FCI, zostaną przyznane uprawnienia zwykłych użytkowników.
 
--   Można dodać wiele serwerów jako pojedynczy wpis, określając zabezpieczenie usługi Active Directory lub grupy dystrybucyjnej, lub konto usługi, które jest używane przez więcej niż jeden serwer. Podczas używania tej konfiguracji grupa serwerów współużytkuje te same certyfikaty usług RMS i wszystkie uznaje się za właścicieli zawartości chronionej przez dowolny z nich. Aby zminimalizować ogólne koszty administracyjne, zalecane jest użycie tej konfiguracji pojedynczej grupy zamiast poszczególnych serwerów w celu autoryzowania serwerów programu Exchange w danej organizacji lub farmy serwerów programu SharePoint.
+- Można dodać wiele serwerów jako pojedynczy wpis, określając zabezpieczenie usługi Active Directory lub grupy dystrybucyjnej, lub konto usługi, które jest używane przez więcej niż jeden serwer. Podczas używania tej konfiguracji grupa serwerów współużytkuje te same certyfikaty usług RMS i wszystkie uznaje się za właścicieli zawartości chronionej przez dowolny z nich. Aby zminimalizować ogólne koszty administracyjne, zalecane jest użycie tej konfiguracji pojedynczej grupy zamiast poszczególnych serwerów w celu autoryzowania serwerów programu Exchange w danej organizacji lub farmy serwerów programu SharePoint.
 
 Na stronie **Serwery, które mogą wykorzystywać łącznik** kliknij przycisk **Dodaj**.
 
@@ -132,7 +136,8 @@ Na stronie **Serwery, które mogą wykorzystywać łącznik** kliknij przycisk *
 > Autoryzowanie serwerów jest konfiguracją w usłudze Azure RMS równoważną konfiguracji usługi AD RMS ręcznego zastosowania uprawnień NTFS do pliku ServerCertification.asmx dla kont usługi lub serwera i ręcznego udzielania uprawnień administratora dla kont serwera Exchange. Stosowanie uprawnień NTFS do pliku ServerCertification.asmx nie jest wymagane dla łącznika.
 
 
-### <a name="add-a-server-to-the-list-of-allowed-servers"></a>Dodawanie serwera do listy dozwolonych serwerów
+### Dodawanie serwera do listy dozwolonych serwerów
+<a id="add-a-server-to-the-list-of-allowed-servers" class="xliff"></a>
 Na stronie **Zezwalaj serwerowi na korzystanie z łącznika** wprowadź nazwę obiektu lub przewiń, aby zidentyfikować obiekt do autoryzacji.
 
 Ważne jest, aby autoryzować odpowiedni obiekt. Aby serwera mógł korzystać z łącznika, do autoryzacji należy wybrać konto, na którym uruchomiona jest usługa lokalna (na przykład program Exchange lub SharePoint). Na przykład jeśli usługa jest uruchomiona jako skonfigurowane konto usługi, dodaj nazwę tego konta usługi do listy. Jeśli usługa jest uruchomiona jako System lokalny, dodaj nazwę obiektu komputera (na przykład SERVERNAME$). Najlepszym rozwiązaniem jest utworzenie grupy, która zawiera te konta i wskazanie jej zamiast nazw poszczególnych serwerów.
@@ -160,7 +165,8 @@ Po zakończeniu dodawania serwerów do listy kliknij przycisk **Zamknij**.
 
 Jeśli jeszcze nie zostało to zrobione, należy teraz skonfigurować funkcję równoważenia obciążenia dla serwerów, które mają zainstalowany łącznik usługi RMS, i rozważyć, czy dla połączeń między tymi serwerami i serwerami, które właśnie zostały autoryzowane, należy używać protokołu HTTPS.
 
-## <a name="configuring-load-balancing-and-high-availability"></a>Konfigurowanie funkcji równoważenia obciążenia i wysokiej dostępności
+## Konfigurowanie funkcji równoważenia obciążenia i wysokiej dostępności
+<a id="configuring-load-balancing-and-high-availability" class="xliff"></a>
 Po zainstalowaniu drugiego lub końcowego wystąpienia łącznika usługi RMS należy zdefiniować nazwę serwera w adresie URL łącznika i skonfigurować system z równoważeniem obciążenia.
 
 Nazwa serwera w adresie URL łącznika może być dowolną nazwą w kontrolowanym obszarze nazw. Na przykład można utworzyć wpis w systemie DNS dla adresu **rmsconnector.contoso.com** i skonfigurować go do używania adresu IP w systemie równoważenia obciążenia. Nie ma żadnych specjalnych wymagań dla tej nazwy i nie musi być ona skonfigurowana na samych serwerach łącznika. Jeśli serwery programów Exchange i SharePoint nie będą komunikować się za pomocą łącznika przez Internet, ta nazwa nie musi być rozpoznawalna w sieci Internet.
@@ -182,13 +188,14 @@ Aby skonfigurować klaster równoważenia obciążenia sieciowego, użyj następ
 
 Nazwa zdefiniowana dla systemu z równoważeniem obciążenia (dla serwerów z uruchomioną usługą łącznika usługi RMS) jest nazwą łącznika usługi RMS w danej organizacji. Można jej użyć później, podczas konfigurowania serwerów lokalnych do korzystania z usługi Azure RMS.
 
-## <a name="configuring-the-rms-connector-to-use-https"></a>Konfigurowanie łącznika usług RMS do korzystania z protokołu HTTPS
+## Konfigurowanie łącznika usług RMS do korzystania z protokołu HTTPS
+<a id="configuring-the-rms-connector-to-use-https" class="xliff"></a>
 > [!NOTE]
 > Ten krok konfiguracji jest opcjonalny, ale zalecany w celu zapewnienia dodatkowej ochrony.
 
 Mimo że korzystanie z protokołu TLS lub SSL jest opcjonalne dla łącznika usług RMS, jest zalecane dla dowolnej usługi opartej na protokole HTTP wymagającej zwiększonej ochrony. Ta konfiguracja uwierzytelnia serwery z łącznikiem na serwerach programu Exchange i SharePoint używających tego łącznika. Dodatkowo wszystkie dane, które są wysyłane z tych serwerów do łącznika są zaszyfrowane.
 
-Aby umożliwić łącznikowi usług RMS wykorzystanie protokołu TLS, na każdym serwerze z uruchomionym łącznikiem usług RMS zainstaluj certyfikat uwierzytelniania serwera zawierający nazwę, która będzie używana dla łącznika. Na przykład jeśli nazwą Twojego łącznika usług RMS zdefiniowanego w systemie DNS jest **rmsconnector.contoso.com**, wdróż certyfikat uwierzytelniania serwera zawierający wpis **rmsconnector.contoso.com** w podmiocie certyfikatu jako nazwę pospolitą. Możesz także umieścić wpis **rmsconnector.contoso.com** w alternatywnej nazwie certyfikatu jako wartość DNS. Certyfikat nie musi obejmować nazwy serwera. Następnie w usługach IIS, powiąż ten certyfikat z domyślną witryny sieci Web.
+Aby umożliwić łącznikowi usług RMS wykorzystanie protokołu TLS, na każdym serwerze z uruchomionym łącznikiem usług RMS zainstaluj certyfikat uwierzytelniania serwera zawierający nazwę używaną dla łącznika. Na przykład jeśli nazwą Twojego łącznika usług RMS zdefiniowanego w systemie DNS jest **rmsconnector.contoso.com**, wdróż certyfikat uwierzytelniania serwera zawierający wpis **rmsconnector.contoso.com** w podmiocie certyfikatu jako nazwę pospolitą. Możesz także umieścić wpis **rmsconnector.contoso.com** w alternatywnej nazwie certyfikatu jako wartość DNS. Certyfikat nie musi obejmować nazwy serwera. Następnie w usługach IIS, powiąż ten certyfikat z domyślną witryny sieci Web.
 
 Jeśli używasz opcji protokołu HTTPS, upewnij się, że wszystkie serwery z uruchomionym łącznikiem mają ważny certyfikat uwierzytelniania serwera, który tworzy łańcuch z zaufanym dla serwerów programu Exchange i SharePoint głównym urzędem certyfikacji. Ponadto jeśli urząd certyfikacji (CA), który wystawił certyfikaty dla serwerów łącznika publikuje listy odwołania certyfikatów (CRL), serwery programu Exchange i programu SharePoint muszą mieć możliwość pobrania tej listy CRL.
 
@@ -199,10 +206,12 @@ Jeśli używasz opcji protokołu HTTPS, upewnij się, że wszystkie serwery z ur
 > -   Jeśli używasz autonomicznego urzędu certyfikacji lub nabywasz ten certyfikat od innej firmy, zobacz [Konfigurowanie certyfikatów serwera internetowego (usługi IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
 > -   Aby skonfigurować usługi IIS do używania certyfikatu, zobacz [Dodawanie powiązań do witryny (usługi IIS 7)](http://technet.microsoft.com/library/cc731692.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
 
-## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>Konfigurowanie łącznika usług RMS dla serwera proxy sieci Web
+## Konfigurowanie łącznika usług RMS dla serwera proxy sieci Web
+<a id="configuring-the-rms-connector-for-a-web-proxy-server" class="xliff"></a>
 Jeśli serwery łącznika są zainstalowane w sieci, która nie ma bezpośredniego połączenia z siecią Internet i wymaga ręcznej konfiguracji serwera proxy sieci Web dla zapewnienia ruchu wychodzącego do sieci Internet, należy na tych serwerach skonfigurować rejestr dla łącznika usług RMS.
 
-#### <a name="to-configure-the-rms-connector-to-use-a-web-proxy-server"></a>Aby skonfigurować łącznik usług RMS w celu użycia serwera proxy sieci Web
+#### Aby skonfigurować łącznik usług RMS w celu użycia serwera proxy sieci Web
+<a id="to-configure-the-rms-connector-to-use-a-web-proxy-server" class="xliff"></a>
 
 1.  Na każdym serwerze z programem łącznika usług RMS otwórz edytor rejestru, np. Regedit.
 
@@ -214,7 +223,8 @@ Jeśli serwery łącznika są zainstalowane w sieci, która nie ma bezpośrednie
 
 4.  Zamknij edytor rejestru, a następnie ponownie uruchom serwer lub wykonaj polecenie IISReset w celu ponownego uruchomienia usług IIS.
 
-## <a name="installing-the-rms-connector-administration-tool-on-administrative-computers"></a>Instalowanie narzędzia administracyjnego łącznika usługi RMS na komputerach administracyjnych
+## Instalowanie narzędzia administracyjnego łącznika usługi RMS na komputerach administracyjnych
+<a id="installing-the-rms-connector-administration-tool-on-administrative-computers" class="xliff"></a>
 Narzędzie administracyjne łącznika usługi RMS można uruchomić z komputera, który nie ma zainstalowanego łącznika usług RMS, jeśli ten komputer spełnia następujące wymagania:
 
 -   Komputer fizyczny lub wirtualny z systemem Windows Server 2012 lub Windows Server 2012 R2 (wszystkie wersje), Windows Server 2008 R2 lub Windows Server 2008 R2 z dodatkiem Service Pack 1 (wszystkie wersje), Windows 8.1, Windows 8 lub Windows 7.
@@ -236,7 +246,8 @@ Aby zainstalować narzędzie administracyjne łącznika usługi RMS, uruchom nas
 Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
 
 
-## <a name="next-steps"></a>Następne kroki
+## Następne kroki
+<a id="next-steps" class="xliff"></a>
 Teraz, gdy łącznik usługi RMS jest zainstalowany i skonfigurowany, można przystąpić do konfigurowania serwerów lokalnych, aby mogły z niego korzystać. Przejdź do sekcji [Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management](configure-servers-rms-connector.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

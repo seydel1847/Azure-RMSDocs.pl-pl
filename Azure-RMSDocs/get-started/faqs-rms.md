@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a44f41f2eb929ef0554b8d08b5f8740c96999ff
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: 6d62bb6c3ed6738a3c4f32a506342c7137b9b35e
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
 # Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 <a id="frequently-asked-questions-about-data-protection-in-azure-information-protection" class="xliff"></a>
@@ -36,7 +36,7 @@ Aby uzyskać więcej informacji, zobacz temat [How does Azure RMS work? Under th
 
 Firma Microsoft udostępnia wiele technologii szyfrowania, które umożliwiają ochronę danych dla różnych i często uzupełniających się scenariuszy. Na przykład, gdy usługa Office 365 oferuje szyfrowania podczas spoczynku dla danych przechowywanych w usłudze Office 365, usługa Azure Rights Management z usługi Azure Information Protection niezależnie szyfruje Twoje dane tak, aby były chronione bez względu na to, gdzie się znajdują lub jak są przesyłane.
 
-Te technologie szyfrowania uzupełniają się, a ich użycie wymaga niezależnego ich włączenia i skonfigurowania. Gdy to zrobisz, możesz mieć możliwość pobrania własnego klucza szyfrowania w scenariuszu znanym także jako „BYOK”. Włączenie funkcji BYOK dla jednej z tych technologii nie wpływa na inne. Na przykład możesz użyć funkcji BYOK dla usługi Azure Information Protection i nie używać jej dla innych technologii szyfrowania i na odwrót. Klucze używane przez te różne technologie mogą być takie same lub różne w zależności od sposobu, w jaki skonfigurujesz opcje szyfrowania dla każdej usługi.
+Te technologie szyfrowania uzupełniają się, a ich użycie wymaga niezależnego ich włączenia i skonfigurowania. Gdy to zrobisz, możesz mieć możliwość użycia własnego klucza szyfrowania w scenariuszu znanym także jako „BYOK”. Włączenie funkcji BYOK dla jednej z tych technologii nie wpływa na inne. Na przykład możesz użyć funkcji BYOK dla usługi Azure Information Protection i nie używać jej dla innych technologii szyfrowania i na odwrót. Klucze używane przez te różne technologie mogą być takie same lub różne w zależności od sposobu, w jaki skonfigurujesz opcje szyfrowania dla każdej usługi.
 
 ## Jaka jest różnica między funkcjami BYOK i HYOK i kiedy należy ich używać?
 <a id="whats-the-difference-between-byok-and-hyok-and-when-should-i-use-them" class="xliff"></a>
@@ -200,7 +200,9 @@ Należy użyć [funkcji superużytkowników](../deploy-use/configure-super-users
 
 Tak. Ten komunikat odzwierciedla licencję użytkowania dla tego określonego pliku. Licencja użytkowania to powiązany z dokumentem certyfikat przyznawany użytkownikowi, który otwiera chroniony plik lub wiadomość e-mail. Ten certyfikat zawiera prawa użytkownika dla pliku lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości, a także dodatkowe ograniczenia dostępu zdefiniowane w zasadach dokumentu. Jeśli okres ważności licencji użytkowania zakończył się i użytkownik próbuje otworzyć plik lub wiadomość e-mail, poświadczenia użytkownika muszą zostać ponownie przesłane do usługi Azure Rights Management. 
 
-W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy użytkownik jest uwierzytelniany w usłudze Azure Rights Management. A więc jeśli plik ma 30-dniowy okres ważności licencji użytkowania, a użytkownik ma już otwarty dokument, ten użytkownik będzie mieć nadal dostęp do dokumentu przez czas trwania licencji użytkowania. Po wygaśnięciu licencji użytkowania użytkownik musi zostać ponownie uwierzytelniony i w tym momencie nastąpi odmowa dostępu, ponieważ dokument będzie już teraz odwołany.
+W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy użytkownik jest uwierzytelniany w usłudze Azure Rights Management. Na przykład jeśli plik ma 30-dniowy okres ważności licencji użytkowania, a użytkownik ma już otwarty dokument, ten użytkownik będzie mieć nadal dostęp do dokumentu w okresie ważności licencji użytkowania. Po wygaśnięciu licencji użytkowania użytkownik musi zostać ponownie uwierzytelniony. Nastąpi wtedy odmowa dostępu, ponieważ dokument będzie już odwołany.
+
+To odwołanie nie dotyczy użytkownika, który włączył ochronę dokumentu, czyli [wystawcy usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) — ma on zawsze dostęp do swoich dokumentów. 
 
 Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell **Set-AadrmMaxUseLicenseValidityTime**. To ustawienie można przesłonić bardziej restrykcyjnym ustawieniem w szablonie niestandardowym. 
 
