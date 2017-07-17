@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/01/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b9873bee1754ca36724cf13ab7915952a6ea9d5c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: e3910ecc2bed3f95660be86b6139e568815f24a0
+ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/10/2017
 ---
 # Podręcznik administratora klienta usługi Azure Information Protection
 <a id="azure-information-protection-client-administrator-guide" class="xliff"></a>
@@ -84,7 +84,7 @@ Dokonaj wdrożenia klienta usługi Azure Information Protection w następującyc
 
 - Korzystasz z pakietu Office 2010 i chcesz chronić dokumenty i wiadomości e-mail za pomocą usługi Azure Rights Management.
 
-Przykład ukazujący dodatek klienta usługi Azure Information Protection w aplikacjach pakietu Office, który wyświetla etykiety klasyfikacji dla danej organizacji i nowy przycisk **Chroń** na Wstążce:
+Przykład ukazujący dodatek klienta usługi Azure Information Protection w aplikacji pakietu Office, który wyświetla etykiety klasyfikacji dla danej organizacji i nowy przycisk **Chroń** na wstążce:
 
 ![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/word2016-calloutsv2.png)
 
@@ -126,7 +126,7 @@ Następnie sprawdź dodatkowe wymagania wstępne dla klienta usługi Azure Infor
 ### Opcje instalacji klienta usługi Azure Information Protection dla użytkowników
 <a id="options-to-install-the-azure-information-protection-client-for-users" class="xliff"></a>
 
-Istnieją 3 opcje instalacji klienta dla użytkowników:
+Istnieją trzy opcje instalacji klienta dla użytkowników:
 
 **Windows Update**: klient usługi Azure Information Protection znajduje się również w wykazie usługi Microsoft Update, dzięki czemu można zainstalować i zaktualizować klienta przy użyciu dowolnej usługi aktualizacji oprogramowania korzystającej z wykazu.
 
@@ -154,7 +154,9 @@ Użyj poniższych instrukcji, aby zainstalować klienta bez korzystania z katalo
     - **ServiceLocation**: użyj tego parametru, jeśli instalujesz klienta na komputerach z pakietem Office 2010, a użytkownicy nie są administratorami lokalnymi na swoich komputerach lub jeśli nie chcesz, aby użytkownicy otrzymywali monity. [Więcej informacji](#more-information-about-the-servicelocation-installation-parameter) 
     
     - **DowngradeDotNetRequirement**: użyj tego parametru, aby pominąć wymaganie wstępne dotyczące programu Microsoft .NET Framework w wersji 4.6.2. [Więcej informacji](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
-
+    
+    - **AllowTelemetry=0**: użyj tego parametru, aby wyłączyć opcję instalacji **Pomóż ulepszyć usługę Azure Information Protection, wysyłając statystyki użycia do firmy Microsoft**. 
+    
 3. W przypadku instalacji interaktywnej wybierz opcję zainstalowania **zasad demonstracyjnych**, jeśli nie możesz nawiązać połączenia z usługą Office 365 lub Azure Active Directory, ale chcesz zobaczyć i wypróbować klienta usługi Azure Information Protection przy użyciu zasad lokalnych w celach demonstracyjnych. Gdy klient nawiąże połączenie z usługą Azure Information Protection, te zasady demonstracyjne zostaną zastąpione zasadami usługi Azure Information Protection obowiązującymi w organizacji.
     
 4. Aby ukończyć instalację: 
@@ -230,7 +232,7 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
     
     Jeśli dostępna jest wersja zapoznawcza, zachowaj ją tylko do celów testowych. Nie jest ona przeznaczona dla użytkowników końcowych w środowisku produkcyjnym. 
 
-2. Dla każdego komputera, na którym będzie uruchamiany plik msi, należy się upewnić, że zostały spełnione następujące zależności oprogramowania. Na przykład umieść w pakiecie poniższe oprogramowanie razem z wersją msi klienta lub wdrażaj ją wyłącznie na komputerach, które spełniają te zależności:
+2. Upewnij się, że następujące zależności oprogramowania zostały spełnione dla każdego komputera, na którym będzie uruchamiany plik msi. Na przykład umieść w pakiecie poniższe oprogramowanie razem z wersją msi klienta lub wdrażaj ją wyłącznie na komputerach, które spełniają te zależności:
     
     |Wersja pakietu Office|System operacyjny|Oprogramowanie|Akcja|
     |--------------------|--------------|----------------|---------------------|
@@ -255,7 +257,7 @@ Użyj opcji **Pomoc i opinie**, aby otworzyć okno dialogowe **Microsoft Azure I
 ### Sekcja **Pomoc i opinie**
 <a id="help-and-feedback-section" class="xliff"></a>
 
-**Link Powiedz mi więcej** domyślnie prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
+Link **Powiedz mi więcej** domyślnie prowadzi do witryny internetowej usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
 
 Użyj linku **Wyślij opinię**, aby wysłać propozycje lub prośby do zespołu usługi Information Protection. Nie należy używać tej opcji w celu uzyskania pomocy technicznej. W takim przypadku należy zapoznać się z artykułem [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). 
 
@@ -269,7 +271,7 @@ Więcej informacji na temat opcji **Resetuj**:
 
 - Jeśli pliki są zablokowane, ta akcja powoduje usunięcie wszystkich plików z lokalizacji **%localappdata%\Microsoft\MSIPC**, w której przechowywane są certyfikaty klienta i szablony zarządzania prawami. Nie powoduje ona usunięcia zasad usługi Azure Information Protection, plików dzienników klienta ani wylogowania użytkownika.
 
-- Następuje usunięcie klucza rejestru i ustawień: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Jeśli konfigurujesz ustawienia tego klucza rejestru (np. ustawienia przekierowywania do dzierżawy usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz w sieci punkt połączenia usługi), musisz ponownie skonfigurować ustawienia rejestru po zresetowaniu klienta.
+- Następuje usunięcie klucza rejestru i ustawień: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Jeśli skonfigurowano ustawienia tego klucza rejestru, musisz ponownie skonfigurować ustawienia rejestru po zresetowaniu klienta. Na przykład skonfigurowano ustawienia przekierowania do dzierżawy usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz w sieci punkt połączenia usługi.
 
 - Po zresetowaniu klienta musisz ponownie zainicjować środowisko użytkownika, w którym będą pobierane certyfikaty klienta i najnowsze szablony. W tym celu zamknij wszystkie wystąpienia pakietu Office i uruchom ponownie aplikację pakietu Office. Ta akcja spowoduje również sprawdzenie, czy zostały pobrane najnowsze zasady usługi Azure Information Protection. Wykonaj tę czynność przed ponownym uruchomieniem testów diagnostycznych.
 
@@ -277,11 +279,11 @@ Więcej informacji na temat opcji **Resetuj**:
 ### Sekcja **Stan klienta**
 <a id="client-status-section" class="xliff"></a>
 
-Użyj wartości **Połączono jako**, aby upewnić się, że wyświetlana nazwa użytkownika identyfikuje konto przeznaczone do użycia w ramach procesu uwierzytelniania usługi Azure Information Protection. Ta nazwa użytkownika musi odpowiadać nazwie konta użytego w usłudze Office 365 lub Azure Active Directory, które należy do dzierżawy skonfigurowanej dla usługi Azure Information Protection.
+Użyj wartości **Połączono jako**, aby upewnić się, że wyświetlana nazwa użytkownika identyfikuje konto przeznaczone do użycia w ramach procesu uwierzytelniania usługi Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory. Konto musi również należeć do dzierżawy skonfigurowanej pod kątem obsługi usługi Azure Information Protection.
 
 Jeśli musisz zalogować się jako inny użytkownik niż ten, który jest aktualnie wyświetlany, zobacz sekcję [Logowanie się jako inny użytkownik](client-admin-guide-customizations.md#sign-in-as-a-different-user).
 
-Zawartość pola **Ostatnie połączenie** informuje o tym, kiedy ostatnio klient połączył się z usługą Azure Information Protection firmy. Może ona zostać wykorzystana w połączeniu z datą i godziną z obszaru **Zasady usługi Information Protection zainstalowano** w celu sprawdzenia, kiedy ostatnio zainstalowano lub zaktualizowano zasady usługi Azure Information Protection. Gdy klient łączy się z usługą, automatycznie pobiera najnowsze zasady, jeśli wykryje zmiany w porównaniu z obecnymi zasadami lub jeśli minęły 24 godziny. Jeśli wprowadzono zmiany zasad po wyświetlonym czasie, zamknij i ponownie otwórz aplikację pakietu Office.
+Zawartość pola **Ostatnie połączenie** informuje o tym, kiedy ostatnio klient połączył się z usługą Azure Information Protection w organizacji. Informację tę można połączyć z datą i godziną z obszaru **Zasady usługi Information Protection zainstalowano**, aby sprawdzić, kiedy ostatnio zainstalowano lub zaktualizowano zasady usługi Azure Information Protection. Gdy klient łączy się z usługą, automatycznie pobiera najnowsze zasady, jeśli wykryje zmiany w porównaniu z obecnymi zasadami lub jeśli minęły 24 godziny. Jeśli wprowadzono zmiany zasad po wyświetlonym czasie, zamknij i ponownie otwórz aplikację pakietu Office.
 
 Jeśli widzisz komunikat **Ten klient nie ma licencji dla pakietu Office Professional Plus**: klient usługi Azure Information Protection wykrył, że zainstalowana wersja pakietu Office nie obsługuje stosowania ochrony usługi Rights Management. W przypadku wykrycia tego braku obsługi etykiety informujące o objęciu ochroną nie są wyświetlane na pasku usługi Azure Information Protection.
 

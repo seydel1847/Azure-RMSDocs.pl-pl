@@ -4,7 +4,7 @@ description: "Po włączeniu ochrony dokumentów można śledzić ich użycie. W
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,24 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 79c02795ca10ff875744f3b6c90cebd582cb8c3e
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
+ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/10/2017
 ---
 # Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
 <a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
-Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. W tym celu należy użyć **witryny śledzenia dokumentów** dostępnej z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
+Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. Służy do tego **witryna śledzenia dokumentów**. Jest ona dostępna z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
 
 Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Widoczna jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Ponadto:
 
 - Jeśli chcesz zaprzestać udostępniania dokumentu: 
     
-    - Kliknij pozycję **Odwołaj dostęp**, podaj okres, przez jaki dokument będzie jeszcze dostępny, i zdecyduj, czy chcesz powiadomić o odwołaniu dostępu osoby, którym dokument był wcześniej udostępniony. Jeśli się na to zdecydujesz, przygotuj dla nich niestandardową wiadomość. Odwołanie udostępnionego dokumentu nie powoduje jego usunięcia, ale blokuje możliwość otwierania go przez autoryzowanych użytkowników:
+    - Kliknij pozycję **Odwołaj dostęp**. Podaj okres, przez jaki dokument będzie jeszcze dostępny. Możesz powiadomić o odwołaniu dostępu osoby, którym dokument został wcześniej udostępniony. Jeśli się na to zdecydujesz, przygotuj dla nich własną wiadomość. Odwołanie udostępnionego dokumentu nie powoduje jego usunięcia, ale blokuje możliwość otwierania go przez autoryzowanych użytkowników:
         
         ![Ikona funkcji Odwołaj dostęp w witrynie śledzenia dokumentów](../media/tracking-site-revoke-access-icon.png)
         
@@ -47,7 +47,7 @@ Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty
 
 - Jeśli chcesz śledzić i odwoływać dokumenty udostępnione innym użytkownikom:
     
-    - Administratorzy usługi Azure Information Protection mogą śledzić i odwoływać dokumenty chronione dla innych użytkowników, klikając ikonę administratora. Ta ikona jest widoczna tylko dla administratorów:
+    - Klikając ikonę administratora, administratorzy usługi Azure Information Protection mogą śledzić chronione dokumenty i odwoływać dostęp do nich dla użytkowników, którzy zarejestrowali swoje dokumenty w witrynie śledzenia dokumentów. Ta ikona jest widoczna tylko dla administratorów:
         
         ![Ikona administratora w witrynie śledzenia dokumentów](../media/tracking-site-admin-icon.png)
 
@@ -68,8 +68,16 @@ W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook):
 2. Na karcie **Narzędzia główne**, w grupie **Ochrona**, kliknij kolejno pozycje **Chroń** > **Śledź i odwołuj**:
 
     ![Opcja śledzenia użycia](../media/track-usage-callout.png)
-
-Jeśli opcje ochrony nie są wyświetlone, możliwe, że klient usługi Azure Information Protection nie jest zainstalowany na danym komputerze, Twoje aplikacje pakietu Office muszą zostać uruchomione ponownie albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji o sposobie instalowania klienta usługi Azure Information Protection, zobacz temat [Pobieranie i instalowanie klienta usługi Azure Information Protection](install-client-app.md).
+    
+    Jeśli te opcje nie są widoczne w aplikacjach pakietu Office, prawdopodobnie wystąpił jeden z następujących powodów:
+    
+    - Na komputerze nie jest zainstalowany klient usługi Azure Information Protection.
+    
+    - Należy uruchomić ponownie aplikacje pakietu Office.
+    
+    - Aby ukończyć instalację, należy uruchomić ponownie komputer.
+    
+Aby uzyskać więcej informacji o sposobie instalowania klienta usługi Azure Information Protection, zobacz temat [Pobieranie i instalowanie klienta usługi Azure Information Protection](install-client-app.md).
 
 ## Śledzenie lub odwoływanie dokumentu przy użyciu Eksploratora plików
 <a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
@@ -90,15 +98,15 @@ Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub a
 
     **Obsługiwane przeglądarki**: zaleca się korzystanie z przeglądarki Internet Explorer 10 lub nowszej, jednak dostęp do witryny śledzenia dokumentów można uzyskać przy użyciu dowolnej z poniższych przeglądarek:
 
-    -   Internet Explorer: wersja 10 lub nowsza
+    - Internet Explorer: wersja 10 lub nowsza
 
-    -   Internet Explorer 9 z poprawką MS12-037: zbiorcza aktualizacja zabezpieczeń programu Internet Explorer z 12 czerwca 2012 r.
+    - Internet Explorer 9 z poprawką MS12-037: zbiorcza aktualizacja zabezpieczeń programu Internet Explorer z 12 czerwca 2012 r.
 
-    -   Mozilla Firefox: wersja 12 lub nowsza
+    - Mozilla Firefox: wersja 12 lub nowsza
 
-    -   Apple Safari 5: wersja 5 lub nowsza
+    - Apple Safari 5: wersja 5 lub nowsza
 
-    -   Google Chrome: wersja 18 lub nowsza
+    - Google Chrome: wersja 18 lub nowsza
 
 
 ## Inne instrukcje

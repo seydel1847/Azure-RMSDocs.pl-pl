@@ -4,17 +4,17 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0ca0c2aa3d7b21c3e1143af51c9518aa85b7ee93
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: fff96103544242510b7e53b1636f1f95fbd4bb2b
+ms.sourcegitcommit: c5e117f5329c6e5a93d5858a3b4609aadd8a6e7e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/12/2017
 ---
 # Co to jest Azure Information Protection?
 <a id="what-is-azure-information-protection" class="xliff"></a>
@@ -23,7 +23,7 @@ ms.lasthandoff: 06/30/2017
 
 Azure Information Protection to rozwiązanie chmurowe ułatwiające klasyfikowanie, etykietowanie i ochronę dokumentów oraz wiadomości e-mail w firmie. Czynności te mogą być wykonywane automatycznie przez administratorów definiujących reguły i warunki, ręcznie przez użytkowników bądź wspólnie — użytkownicy otrzymują wówczas zalecenia. 
 
-Na poniższej ilustracji przedstawiono przykładowe zastosowanie usługi Azure Information Protection. Administrator skonfigurował reguły wykrywania poufnych danych (w tym przypadku informacji o karcie kredytowej). Podczas zapisywania przez użytkownika dokumentu programu Word zawierającego dane karty kredytowej zostaje wyświetlona niestandardowa etykietka narzędzia z zaleceniem, aby użytkownik zastosował konkretną, skonfigurowaną przez administratora etykietę, która klasyfikuje i — opcjonalnie — chroni dokument. 
+Na poniższej ilustracji przedstawiono przykładowe zastosowanie usługi Azure Information Protection. Administrator skonfigurował reguły wykrywania poufnych danych (w tym przypadku informacji o karcie kredytowej). Podczas zapisywania przez użytkownika dokumentu programu Word zawierającego dane karty kredytowej zostaje wyświetlona niestandardowa etykietka narzędzia z zaleceniem, aby użytkownik zastosował konkretną, skonfigurowaną przez administratora etykietę. Etykieta ta klasyfikuje i — opcjonalnie, w zależności od konfiguracji — chroni dokument. 
 
 ![Przykład zalecanej klasyfikacji w usłudze Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
@@ -32,9 +32,9 @@ Po sklasyfikowaniu (i opcjonalnym zabezpieczeniu) całej zawartości można śle
 ## Na czym polega klasyfikacja przy użyciu etykiet
 <a id="how-labels-apply-classification" class="xliff"></a>
 
-Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu, dzięki czemu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
+Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu. Dzięki temu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
 
-Przykładowo poniższa wiadomość e-mail została sklasyfikowana jako wewnętrzna. Etykieta ta jest dodana w stopce wiadomości e-mail jako wizualny wskaźnik informujący wszystkich adresatów, że wiadomość jest przeznaczona do użytku wewnętrznego i nie należy jej wysyłać poza organizację. Etykieta jest również osadzona w nagłówkach wiadomości e-mail, aby usługi poczty e-mail mogły sprawdzić tę wartość i utworzyć wpis inspekcji lub uniemożliwić wysłanie wiadomości poza firmę.
+Na przykład poniższa wiadomość e-mail została sklasyfikowana jako ogólna. Etykieta ta jest dodawana w stopce wiadomości e-mail jako wizualny wskaźnik informujący wszystkich adresatów, że wiadomość zawiera ogólne informacje biznesowe i nie należy jej wysyłać poza organizację. Etykieta jest również osadzona w nagłówkach wiadomości e-mail, aby usługi poczty e-mail mogły sprawdzić tę wartość i utworzyć wpis inspekcji lub uniemożliwić wysłanie wiadomości poza firmę.
 
 ![Przykład stopki i nagłówków wiadomości e-mail z wyświetloną klasyfikacją usługi Azure Information Protection](../media/example-email-footerv2.png)
 
@@ -59,7 +59,7 @@ W tym przykładzie pokazano, jak można wybrać szablon dla etykiety podczas kon
 
 ![Przykład przedstawiający wybieranie szablonów w witrynie Azure Portal](../media/info-protect-template-callout.png)
 
-Te same szablony można też wybierać z poziomu centrum administracyjnego programu Exchange w celu skonfigurowania reguł przepływu poczty usługi Exchange Online, które obsługują technologię Azure Rights Management:
+Te same szablony można wybrać w centrum administracyjnym programu Exchange. Można na przykład skonfigurować używanie szablonów w regułach przepływu poczty usługi Exchange Online — program Exchange obsługuje technologię Azure Rights Management:
 
 ![Przykład wybierania szablonów dla usługi Exchange Online](../media/templates-exchangeonline-callouts.png)
 
@@ -68,11 +68,11 @@ Aby uzyskać więcej informacji na temat mechanizmów ochrony w usłudze Azure R
 ## Integracja z przepływami pracy użytkownika końcowego
 <a id="integration-with-end-user-workflows" class="xliff"></a>
 
-Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
+Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji, przedstawiającej ten pasek w programie Word. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
 
 ![Przykład przedstawiający pasek usługi Azure Information Protection w programie Excel](../media/excel2016-infoprotect-barv2.png)
 
-Pasek usługi Information Protection ułatwia użytkownikom końcowym wybieranie etykiet w celu prawidłowej klasyfikacji. Jeśli to konieczne, etykiety te mogą również automatycznie chronić dokumenty i wiadomości e-mail użytkowników.
+Pasek usługi Information Protection ułatwia użytkownikom końcowym wybieranie etykiet w celu prawidłowej klasyfikacji. W razie potrzeby etykiety mogą być również stosowane automatycznie, aby pomóc użytkownikom pozbyć się wątpliwości lub zapewnić zgodność z zasadami firmy.
 
 Aby sklasyfikować i objąć ochroną dodatkowe typy plików oraz zapewnić obsługę wielu plików jednocześnie, kliknij prawym przyciskiem myszy pliki lub foldery w Eksploratorze plików systemu Windows:
 

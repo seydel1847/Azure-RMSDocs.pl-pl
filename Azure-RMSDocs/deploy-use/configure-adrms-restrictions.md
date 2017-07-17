@@ -4,24 +4,24 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ca0fe89178840917fba4ae672547f6852123d699
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
+ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/07/2017
 ---
 # Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 <a id="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection" class="xliff"></a>
 
 >*Dotyczy: Azure Information Protection*
 
-W przypadku ochrony najbardziej poufnych dokumentów i wiadomości e-mail zazwyczaj będziesz to robić przez zastosowanie ochrony za pomocą usługi Azure Rights Management (Azure RMS), która zapewnia następujące korzyści:
+Najbardziej poufne dokumenty i wiadomości e-mail zwykle są chronione za pomocą usługi Azure Rights Management (Azure RMS), która zapewnia następujące korzyści:
 
 - Nie wymaga infrastruktury serwera, co sprawia, że wdrożenie, i obsługa rozwiązania są szybsze i tańsze niż w przypadku rozwiązania lokalnego.
 
@@ -40,19 +40,19 @@ Ta konfiguracja jest czasami określana jako „hold your own key” (HYOK) i je
 W tym scenariuszu HYOK zasady praw i klucz prywatny organizacji, który chroni te zasady, są zarządzane i przechowywane lokalnie, podczas gdy zasady usługi Azure Information Protection dotyczące etykietowania i klasyfikacji pozostają zarządzane i przechowywane na platformie Azure. Podobnie jak w przypadku ochrony za pomocą usługi Azure RMS, informacje chronione za pomocą usług AD RMS nigdy nie są wysyłane do chmury.
 
 > [!NOTE]
-> Tej konfiguracji należy używać tylko w razie konieczności i tylko dla dokumentów i wiadomości e-mail, które tego wymagają. Ochrona za pomocą usług AD RMS nie zapewnia wymienionych korzyści, które daje ochrona za pomocą usługi Azure RMS, a jej celem jest "nieprzezroczystość danych za wszelką cenę".
+> Tej konfiguracji należy używać tylko w razie konieczności i tylko dla dokumentów i wiadomości e-mail, które tego wymagają. Ochrona za pomocą usług AD RMS nie zapewnia wymienionych korzyści, które daje ochrona za pomocą usługi Azure RMS, a jej celem jest „nieprzezroczystość danych za wszelką cenę”.
 >
-> Nawet w przypadku organizacji używających tej konfiguracji będzie ona zazwyczaj przydatna dla mniej niż 10% zawartości wymagającej ochrony. Tej funkcji należy używać tylko w przypadku dokumentów lub wiadomości e-mail spełniających następujące kryteria:
+> Nawet w organizacjach używających tej konfiguracji jest ona zazwyczaj przydatna dla mniej niż 10% zawartości wymagającej ochrony. Tej funkcji należy używać tylko w przypadku dokumentów lub wiadomości e-mail spełniających następujące kryteria:
 > 
 > - Zawartość została sklasyfikowana jako „ściśle tajne” i dostęp do niej ma tylko kilka osób.
 > 
-> - Zawartość nie będzie nigdy udostępniana poza organizacją.
+> - Zawartość nigdy nie jest udostępniana poza organizacją.
 > 
-> - Zawartość będzie udostępniana tylko w sieci wewnętrznej.
+> - Zawartość jest używana tylko w sieci wewnętrznej.
 > 
 > - Zawartość nie będzie udostępniana na komputerach Mac ani na urządzeniach przenośnych.
 
-Użytkownicy nie będą świadomi, że etykieta używa ochrony za pomocą usług AD RMS zamiast ochrony za pomocą usługi Azure RMS. Z powodu ograniczeń dotyczących ochrony przez usługę AD RMS należy się upewnić, że użytkownikom udzielono jasnych wskazówek dotyczących wyboru etykiet powodujących stosowanie ochrony AD RMS. 
+Użytkownicy nie wiedzą, czy z etykietą jest skojarzona ochrona zapewniana przez usługi AD RMS czy usługę Azure RMS. Z powodu ograniczeń dotyczących ochrony przez usługę AD RMS należy się upewnić, że użytkownikom udzielono jasnych wskazówek dotyczących wyboru etykiet powodujących stosowanie ochrony AD RMS. 
 
 [Zasady o określonym zakresie](configure-policy-scope.md) stanowią dobry sposób zapewnienia, że wyłącznie użytkownicy, którzy powinni stosować ochronę AD RMS, będą widzieli etykiety skonfigurowane w celu zastosowania ochrony AD RMS. 
 
@@ -86,7 +86,7 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
     
     - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): możesz sprawdzić wersję trybu kryptograficznego klastra AD RMS oraz jego ogólną kondycję przy użyciu [narzędzia RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437).   
     
-    - Punkt połączenia usługi nie jest zarejestrowany w usłudze Active Directory: Punkt połączenia usługi nie jest używany, gdy korzystasz z ochrony za pomocą usług AD RMS z usługą Azure Information Protection. Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, należy go usunąć, aby [odnajdywanie usług](../rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usług Azure Rights Management powiodło się.
+    - Punkt połączenia usługi nie jest zarejestrowany w usłudze Active Directory: punkt połączenia usługi nie jest używany, gdy korzystasz z ochrony za pomocą usług AD RMS razem z usługą Azure Information Protection. Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](../rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się.
     
     - Serwery AD RMS są skonfigurowane do użycia protokołów SSL/TLS z ważnym certyfikatem x.509, który jest zaufany przez klientów nawiązujących połączenie: wymagane dla środowisk produkcyjnych, ale niewymagane w celach związanych z testowaniem lub oceną.
     
@@ -94,9 +94,9 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
 
 - Skonfigurowano synchronizację katalogów między lokalną usługą Active Directory i usługą Azure Active Directory, a użytkownicy, którzy będą korzystać z ochrony usług AD RMS, są skonfigurowani w celu logowania jednokrotnego.
 
-- Jeśli będziesz udostępniać dokumenty lub wiadomości e-mail chronione za pomocą usług AD RMS użytkownikom spoza organizacji: usługi AD RMS są skonfigurowane dla jawnie zdefiniowanych relacji zaufania w bezpośredniej relacji point-to-point z innymi organizacjami przy użyciu zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które są tworzone za pomocą usługi Active Directory Federation Services (AD FS).
+- Jeśli będziesz udostępniać dokumenty lub wiadomości e-mail chronione za pomocą usług AD RMS użytkownikom spoza organizacji: usługi AD RMS są skonfigurowane dla jawnie zdefiniowanych relacji zaufania w bezpośredniej relacji point-to-point z innymi organizacjami przy użyciu zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które są tworzone za pomocą usług Active Directory Federation Services (AD FS).
 
-- Użytkownicy mają pakiet Office 2013 Pro Plus z dodatkiem Service Pack 1 lub Office 2016 Pro Plus, uruchomiony w systemie Windows 7 z dodatkiem SP1 lub nowszym. Należy zauważyć, że pakiety Office 2010 i Office 2007 nie są obsługiwane w przypadku tego scenariusza.
+- Użytkownicy mają pakiet Office 2013 Pro Plus z dodatkiem Service Pack 1 lub Office 2016 Pro Plus, uruchomiony w systemie Windows 7 z dodatkiem SP1 lub nowszym. Należy zauważyć, że pakiety Office 2010 i Office 2007 nie są obsługiwane w tym scenariuszu.
 
 > [!IMPORTANT]
 > W celu zrealizowania wysokiego bezpieczeństwa, które oferuje ten scenariusz, zaleca się, aby serwery usług AD RMS znajdowały się poza Twoją strefą DMZ i były używane wyłącznie przez dobrze zarządzane komputery (a nie, na przykład, przez urządzenia mobilne lub komputery grupy roboczej). 
@@ -115,7 +115,7 @@ Po skonfigurowaniu etykiety dla ochrony za pomocą rozwiązania **HYOK (AD RMS)*
 
 - Aby znaleźć adres URL licencjonowania: kliknij nazwę klastra. Z informacji o **szczegółach klastra** skopiuj wartość **licencjonowania** minus ciąg **/_wmcs/licensing**. Na przykład: https://rmscluster.contoso.com 
     
-    Jeżeli masz zarówno wartość licencjonowania ekstranetu, jak i wartość licencjonowania sieci intranet i są one różne: podaj tylko wartość ekstranetu, jeśli będziesz udostępniać chronione dokumenty lub wiadomości e-mail partnerom zdefiniowanym za pomocą jawnej relacji zaufania point-to-point. W przeciwnym razie użyj wartości intranetowej i upewnij się, że wszystkie komputery klienckie korzystające z ochrony za pomocą usług AD RMS nawiązują połączenie przy użyciu połączenia intranetowego(na przykład komputery zdalne używają połączenia sieci VPN).
+    Jeśli masz zarówno wartość licencjonowania ekstranetu, jak i wartość licencjonowania intranetu i są one różne: podaj wartość ekstranetu tylko jeśli będziesz udostępniać chronione dokumenty lub wiadomości e-mail partnerom zdefiniowanym za pomocą jawnej relacji zaufania point-to-point. W przeciwnym razie użyj wartości intranetowej i upewnij się, że wszystkie komputery klienckie korzystające z ochrony za pomocą usług AD RMS nawiązują połączenie przy użyciu połączenia intranetowego(na przykład komputery zdalne używają połączenia sieci VPN).
 
 ## Następne kroki
 <a id="next-steps" class="xliff"></a>

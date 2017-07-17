@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27ce787cbf5370634f6b1e15903cc981f08656a2
-ms.sourcegitcommit: 505a2c182bcd5a87a7dcb43b9aa1e43244f4c537
-ms.translationtype: HT
+ms.openlocfilehash: ac14cb491c39f57c7a0f81d71300db3917587cd9
+ms.sourcegitcommit: 55c36739e1d9f3f0cf2e1777fe4302b443a49b8e
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 <a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
@@ -50,7 +50,7 @@ Obsługiwanie uwierzytelniania opartego na certyfikacie:
 
 Wartość nazwy UPN użytkowników nie odpowiada ich adresowi e-mail:
 
-- To nie jest zalecana konfiguracja i jeśli nie możesz zmienić wartości nazwy UPN, skonfiguruj alternatywny identyfikator logowania dla użytkowników i poinformuj ich, jak mają logować się do pakietu Office przy użyciu tej alternatywnej nazwy logowania. Aby uzyskać więcej informacji, zobacz artykuły [Konfigurowanie alternatywnego identyfikatora logowania](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) i [Aplikacje pakietu Office okresowo monitują o poświadczenia usług SharePoint Online, OneDrive i Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online).
+- Ta konfiguracja nie jest zalecana. Jeśli nie możesz zmienić nazwy UPN, skonfiguruj alternatywny identyfikator logowania dla użytkowników i poinformuj ich, jak mają logować się do pakietu Office przy użyciu tej alternatywnej nazwy logowania. Aby uzyskać więcej informacji, zobacz artykuły [Konfigurowanie alternatywnego identyfikatora logowania](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) i [Aplikacje pakietu Office okresowo monitują o poświadczenia usług SharePoint Online, OneDrive i Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online).
     
     Jeśli nazwa domeny w wartości nazwy UPN jest domeną zweryfikowaną dla dzierżawy, dodaj wartość nazwy UPN użytkownika jako inny adres e-mail do atrybutu proxyAddresses usługi Azure AD. Dzięki temu użytkownik może być autoryzowany w usłudze Azure Rights Management, jeśli jego wartość nazwy UPN została określona w momencie udzielania praw użytkowania. Aby uzyskać więcej informacji na ten temat oraz na temat sposobu autoryzowania kont użytkowników, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../plan-design/prepare.md).
 
@@ -72,7 +72,7 @@ Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information P
 
 -   Aplikacja do udostępniania usługi Rights Management dla systemu Windows:
 
-    -   Musisz zainstalować minimalną wersję 1.0.1908.0 (numer wersji można sprawdzić w Panelu sterowania, przechodząc do opcji Programy i funkcje). Aplikacja RMS sharing została obecnie zastąpiona przez klienta usługi Azure Information Protection. Aby uzyskać więcej informacji o aplikacji do udostępniania, zobacz artykuł [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-windows.md).
+    - Musisz zainstalować minimalną wersję 1.0.1908.0 (numer wersji można sprawdzić w Panelu sterowania, przechodząc do opcji Programy i funkcje). Aplikacja RMS sharing została obecnie zastąpiona przez klienta usługi Azure Information Protection. Aby uzyskać więcej informacji o aplikacji do udostępniania, zobacz artykuł [Aplikacja do udostępniania usługi Rights Management dla systemu Windows](../rms-client/sharing-app-windows.md).
 
 -   Aplikacja do udostępniania usługi Rights Management dla urządzeń przenośnych i komputerów Mac:
 
@@ -82,15 +82,17 @@ Następnie skonfiguruj rozwiązanie MFA:
 
 -   W przypadku dzierżaw zarządzanych przez firmę Microsoft (masz usługę Azure Active Directory lub Office 365):
 
-    -   Skonfiguruj usługę Azure MFA, aby wymusić jej użycie przez użytkowników. Aby uzyskać instrukcje, zobacz artykuł [Wprowadzenie do korzystania z usługi Azure Multi-Factor Authentication w chmurze](/multi-factor-authentication/multi-factor-authentication-get-started-cloud) w dokumentacji usługi Multi-Factor Authentication.
+    - Skonfiguruj usługę Azure MFA, aby wymusić jej użycie przez użytkowników. Aby uzyskać instrukcje, zobacz artykuł [Wprowadzenie do korzystania z usługi Azure Multi-Factor Authentication w chmurze](/multi-factor-authentication/multi-factor-authentication-get-started-cloud) w dokumentacji usługi Multi-Factor Authentication.
 
         Aby uzyskać więcej informacji na temat usługi Azure MFA, zobacz artykuł [Co to jest usługa Azure Multi-Factor Authentication?](/multi-factor-authentication/multi-factor-authentication)
 
--   W przypadku dzierżaw federacyjnych (serwery federacyjne działają lokalnie):
+- W przypadku dzierżaw federacyjnych (serwery federacyjne działają lokalnie):
 
-    -   Skonfiguruj serwery federacyjne dla usługi Azure Active Directory lub Office 365. Jeśli na przykład używasz usług AD FS, zobacz artykuł [Konfigurowanie dodatkowych metod uwierzytelniania dla usług AD FS](https://technet.microsoft.com/library/dn758113.aspx) w witrynie TechNet.
+    - Skonfiguruj serwery federacyjne dla usługi Azure Active Directory lub Office 365. Jeśli na przykład używasz usług AD FS, zobacz artykuł [Konfigurowanie dodatkowych metod uwierzytelniania dla usług AD FS](https://technet.microsoft.com/library/dn758113.aspx) w witrynie TechNet.
 
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
+
+Łącznik usługi Rights Management nie obsługuje uwierzytelniania wieloskładnikowego. W przypadku wdrożenia tego łącznika dla serwerów lokalnych, musisz użyć konta łącznika, które nie wymaga uwierzytelniania wieloskładnikowego.
 
 ## Następne kroki
 <a id="next-steps" class="xliff"></a>
