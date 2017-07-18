@@ -15,19 +15,16 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 899c05d233ec31db27cee058982c98d8dd809c3a
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Przewodnik dewelopera usług RMS
-<a id="rms-developers-guide" class="xliff"></a>
+# <a name="rms-developers-guide"></a>Przewodnik dewelopera usług RMS
 
-## Przegląd
-<a id="overview" class="xliff"></a> ##
+## <a name="overview"></a>Przegląd ##
 Obecnie dostępne są trzy generacje zestawu Rights Management SDK: **zestaw Microsoft Rights Management SDK 4.2** dla systemu Android, iOS/OS X, urządzeń z systemem Windows i systemu Linux, **zestaw Microsoft Rights Management SDK 2.1** dla komputerów klienckich z systemem Windows oraz zastąpiony **zestaw AD RMS SDK**.
 
-## Zestawy Software Development Kit
-<a id="software-development-kits" class="xliff"></a> ##
+## <a name="software-development-kits"></a>Zestawy Software Development Kit ##
 | SDK | Opis |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Uproszczony zestaw narzędzi nowej generacji, zapewniający lekkie środowisko programistyczne dostarczające aplikacjom dla urządzeń z systemami Android, iOS, Mac OS X, Windows Phone/RT i Linux/C++ zabezpieczenia informacji za pośrednictwem usług Microsoft Rights Management |
@@ -35,8 +32,7 @@ Obecnie dostępne są trzy generacje zestawu Rights Management SDK: **zestaw Mic
 |[AD RMS SDK]()|** UWAGA ** — zestaw AD RMS SDK wykorzystujący funkcje udostępniane przez klienta w bibliotece Msdrm.dll jest dostępny do użytku w systemach Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 i Windows Vista. Może on zostać zmieniony lub przestać być dostępny w kolejnych wersjach. Zamiast tego należy używać zestawu Microsoft Rights Management Services SDK 2.1 korzystającego z funkcji udostępnianych przez klienta w bibliotece Msipc.dll.|
 |[Interfejs API obsługi skryptów usług AD RMS]()| Służy do tworzenia skryptów administrujących instalacją usług AD RMS|
 
-## Przykłady kodu i narzędzia
-<a id="code-samples-and-tools" class="xliff"></a> ##
+## <a name="code-samples-and-tools"></a>Przykłady kodu i narzędzia ##
 Ta kolekcja przykładów kodu usług RMS i narzędzi wspierających twórców dostarczonych przez firmę Microsoft obejmuje wszystkie obsługiwane systemy operacyjne: Android, iOS/OS X, Windows Phone i Windows Desktop. Jest okresowo aktualizowana w celu zapewnienia zgodności z obsługiwanym zestawem SDK.
 
 | Element | System operacyjny | Wersja pomocniczego zestawu SDK | Opis |

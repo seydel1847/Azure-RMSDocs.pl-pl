@@ -16,7 +16,7 @@ ms.reviewer: kartikk
 ms.suite: ems
 ms.openlocfilehash: c4334bad5a7ca6650c087425e4794c348b73501b
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---

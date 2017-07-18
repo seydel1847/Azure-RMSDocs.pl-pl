@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: e14a57a8bd8343113e2bfc3f71835f55f0ee2dee
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
-<a id="planning-and-implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
+# <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -39,8 +38,7 @@ Informacje zawarte w tym artykule ułatwiają zaplanowanie użycia klucza dzier�
 W razie potrzeby można zmienić topologię klucza dzierżawy po wdrożeniu, używając polecenia cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
 
-## Wybierz topologię klucza dzierżawy: klucz zarządzany przez firmę Microsoft (ustawienie domyślne) lub klucz zarządzany przez użytkownika (BYOK)
-<a id="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok" class="xliff"></a>
+## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Wybierz topologię klucza dzierżawy: klucz zarządzany przez firmę Microsoft (ustawienie domyślne) lub klucz zarządzany przez użytkownika (BYOK)
 Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji. Domyślnie usługa Azure Information Protection generuje klucz dzierżawy i zarządza większością aspektów cyklu jego życia. Jest to najprostsza opcja, która wiąże się z najmniejszą liczbą obowiązków administracyjnych użytkownika. W większości przypadków użytkownik nie musi nawet wiedzieć, że ma klucz dzierżawy. Wystarczy, że zarejestruje się w usłudze Azure Information Protection — resztą procesu zarządzania kluczem zajmie się firma Microsoft.
 
 Możesz też skorzystać z pełnej kontroli nad swoim kluczem dzierżawy, używając usługi [Azure Key Vault](https://azure.microsoft.com/services/key-vault/). Ten scenariusz obejmuje utworzenie klucza dzierżawy i lokalne przechowywanie kopii głównej. Ten model jest często określany mianem BYOK (ang. Bring Your Own Key), czyli „Przynieś własny klucz”. Po wybraniu tej opcji:
@@ -56,8 +54,7 @@ Choć generowane niemalże w czasie rzeczywistym dzienniki z usługi Azure Infor
 > [!NOTE]
 > Dodatkowym środkiem ochrony dostępnym w usłudze Azure Key Vault są wykorzystywane w jej ramach oddzielne domeny zabezpieczeń dla centrów danych w regionach, takich jak Ameryka Północna; Europa, Bliski Wschód i Afryka (EMEA) oraz Azja. Ponadto dotyczy to różnych wystąpień platformy Azure, np. Microsoft Azure Germany i Azure Government. Klucz dzierżawy, którym zarządza użytkownik, jest powiązany z domeną zabezpieczeń odpowiadającą regionowi lub wystąpieniu, w którym jest zarejestrowana dzierżawa usługi Azure Information Protection. Na przykład klucz dzierżawy europejskiego klienta nie może zostać użyty w centrach danych w Ameryce Północnej ani Azji.
 
-## Cykl życia klucza dzierżawy
-<a id="the-tenant-key-lifecycle" class="xliff"></a>
+## <a name="the-tenant-key-lifecycle"></a>Cykl życia klucza dzierżawy
 Jeśli użytkownik zdecyduje, że to firma Microsoft ma zarządzać kluczem dzierżawy, będzie ona obsługiwać większość operacji związanych z cyklem życia klucza. Jeśli jednak użytkownik chce zarządzać kluczem dzierżawy, będzie odpowiadać za wiele operacji związanych z cyklem życia klucza oraz za niektóre dodatkowe procedury w usłudze Azure Key Vault.
 
 Na poniższych diagramach omówiono te dwie opcje i przedstawiono ich porównanie. Na pierwszym diagramie pokazano, jak niskie są koszty administracyjne ponoszone przez użytkownika w przypadku konfiguracji domyślnej, gdy to firma Microsoft zarządza kluczem dzierżawy.
@@ -72,8 +69,7 @@ Jeśli zdecydujesz się powierzyć firmie Microsoft zarządzanie kluczem dzierż
 
 Jeśli użytkownik zdecyduje się samodzielnie zarządzać kluczem dzierżawy, powinien przeczytać poniższe sekcje, aby uzyskać więcej informacji.
 
-## Wdrażanie klucza dzierżawy usługi Azure Information Protection
-<a id="implementing-your-azure-information-protection-tenant-key" class="xliff"></a>
+## <a name="implementing-your-azure-information-protection-tenant-key"></a>Wdrażanie klucza dzierżawy usługi Azure Information Protection
 
 Użyj zawartych w tej sekcji informacji oraz procedur, aby wygenerować klucz dzierżawy i samodzielnie nim zarządzać; scenariusz BYOK:
 
@@ -83,8 +79,7 @@ Użyj zawartych w tej sekcji informacji oraz procedur, aby wygenerować klucz dz
 > 
 > [Skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) także wtedy, gdy w Twojej organizacji obowiązują konkretne zasady dotyczące postępowania z kluczami.
 
-### Wymagania wstępne dotyczące funkcji BYOK
-<a id="prerequisites-for-byok" class="xliff"></a>
+### <a name="prerequisites-for-byok"></a>Wymagania wstępne dotyczące funkcji BYOK
 Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, aby móc korzystać z funkcji BYOK.
 
 |Wymaganie|Więcej informacji|
@@ -96,8 +91,7 @@ Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, a
 
 Aby uzyskać więcej informacji o modułach HSM firmy Thales i sposobie ich wykorzystania w usłudze Azure Key Vault, zobacz [witrynę sieci Web firmy Thales](https://www.thales-esecurity.com/msrms/cloud).
 
-### Instrukcje dotyczące strategii BYOK
-<a id="instructions-for-byok" class="xliff"></a>
+### <a name="instructions-for-byok"></a>Instrukcje dotyczące strategii BYOK
 
 Aby wygenerować i przenieść własny klucz dzierżawy do usługi Azure Key Vault, wykonaj procedury opisane w temacie [Jak wygenerować i przenieść klucze chronione przy użyciu modułu HSM do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/) w dokumentacji usługi Azure Key Vault.
 
@@ -125,8 +119,7 @@ Jeśli chcesz potwierdzić, że adres URL klucza jest skonfigurowany prawidłowo
 Jeśli usługa Azure Rights Management została już aktywowana, uruchom polecenie [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties), aby poinformować usługę Azure Rights Management, że ma używać tego klucza jako aktywnego klucza dzierżawy dla usługi Azure Rights Management. Jeśli tego nie zrobisz, usługa Azure Rights Management będzie nadal używać domyślnego klucza zarządzanego przez firmę Microsoft, który został automatycznie utworzony w ramach aktywowania usługi.
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Gdy udało się już zaplanować używanie klucza dzierżawy i w razie potrzeby wygenerować go, wykonaj następujące czynności:
 

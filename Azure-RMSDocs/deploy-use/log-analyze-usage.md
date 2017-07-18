@@ -14,7 +14,7 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---

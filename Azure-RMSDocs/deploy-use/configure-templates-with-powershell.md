@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 8da24d00f6b6cb62bc745404e68e691b5afc2cb8
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
-<a id="powershell-reference-for-custom-templates" class="xliff"></a>
+# <a name="powershell-reference-for-custom-templates"></a>Informacje dotyczące obsługi szablonów niestandardowych w programie PowerShell
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -54,8 +53,7 @@ Polecenia cmdlet używane do tworzenia szablonów i zarządzania nimi:
 
 
 
-## Zobacz też
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

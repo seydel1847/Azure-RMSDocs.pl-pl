@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 2b4e62ab14702beabe8692147b97c4464d672bdf
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Aktywacja usługi Azure Rights Management
-<a id="activating-azure-rights-management" class="xliff"></a>
+# <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -54,8 +53,7 @@ Możesz również użyć programu PowerShell do aktywacji usługi [!INCLUDE[aad_
 
 3. Uruchom polecenie [Enable-Aadrm](/powershell/module/aadrm/enable-aadrm), które aktywuje usługę Azure Rights Management.
 
-## Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
-<a id="configuring-onboarding-controls-for-a-phased-deployment" class="xliff"></a>
+## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>Konfigurowanie kontrolek dołączania we wdrożeniu etapowym
 Jeśli nie chcesz, aby wszyscy użytkownicy mogli od razu chronić pliki za pomocą usługi Azure Rights Management, możesz skonfigurować kontrolki dołączania użytkowników, korzystając z polecenia [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) programu PowerShell. To polecenie można uruchomić przed aktywacją usługi Azure Rights Management lub po niej.
 
 > [!IMPORTANT]
@@ -89,8 +87,7 @@ Aby uzyskać więcej informacji na temat tego polecenia cmdlet i dodatkowe przyk
 Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Przykładowo nie będą widzieć w swoich klientach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub skonfigurowanych szablonów niestandardowych.  Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat.
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 Po aktywowaniu usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dla Twojej organizacji możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Information Protection dla użytkowników i administratorów. 
 
 Przykładowo możesz użyć [szablonów niestandardowych](configure-custom-templates.md), aby ułatwić użytkownikom stosowanie ochrony informacji dla plików, połączyć się z lokalnymi serwerami w celu użycia usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] poprzez zainstalowanie [łącznika usługi Rights Management](deploy-rms-connector.md) i wdrożyć [klienta usługi Azure Information Protection ](../rms-client/aip-client.md), który obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 

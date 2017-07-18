@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: b56955d8a01876f4107cafa5b1b8df922c0f8ad0
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
-<a id="rms-protection-with-windows-server-file-classification-infrastructure-fci" class="xliff"></a>
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
 >*Dotyczy: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
@@ -34,8 +33,7 @@ To rozwiązanie pozwala automatycznie chronić pliki w folderze na serwerze plik
 
 Poniższe instrukcje dotyczą systemu Windows Server 2012 R2 lub Windows Server 2012. W przypadku korzystania z innych obsługiwanych wersji systemu Windows może okazać się konieczne dostosowanie niektórych kroków z powodu różnic między używaną wersją systemu operacyjnego i wersją opisaną w tym artykule.
 
-## Wymagania wstępne dotyczące ochrony za pomocą usług Azure Rights Management z użyciem infrastruktury FCI w systemie Windows Server
-<a id="prerequisites-for-azure-rights-management-protection-with-windows-server-fci" class="xliff"></a>
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>Wymagania wstępne dotyczące ochrony za pomocą usług Azure Rights Management z użyciem infrastruktury FCI w systemie Windows Server
 Wymagania wstępne dotyczące tych instrukcji:
 
 -  Na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików:
@@ -58,8 +56,7 @@ Wymagania wstępne dotyczące tych instrukcji:
     
 - Na serwer plików zostały pobrane szablony usługi Rights Management oraz został rozpoznany identyfikator szablonu, który będzie chronić pliki. W tym celu użyj polecenia cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). W tym scenariuszu nie są obsługiwane szablony przypisane do działów, więc należy użyć szablonu, który nie został skonfigurowany dla zakresu. Ewentualnie konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 
-## Instrukcje dotyczące konfiguracji infrastruktury klasyfikacji plików (FCI) Menedżera zasobów serwera plików na potrzeby ochrony z użyciem usługi Azure Rights Management
-<a id="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection" class="xliff"></a>
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Instrukcje dotyczące konfiguracji infrastruktury klasyfikacji plików (FCI) Menedżera zasobów serwera plików na potrzeby ochrony z użyciem usługi Azure Rights Management
 Wykonaj te instrukcje, aby automatycznie chronić wszystkie pliki w folderze przy użyciu skryptu programu PowerShell w ramach zadania niestandardowego. Wykonaj te procedury w następującej kolejności:
 
 1. Zapisz skrypt programu PowerShell.
@@ -78,8 +75,7 @@ Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasy
 
 Należy pamiętać, że po wprowadzeniu zmian w szablonie usługi Rights Management używanym do infrastruktury FCI należy uruchomić polecenie `Get-RMSTemplate -Force` na komputerze serwera plików w celu pobrania zaktualizowanego szablonu. Zaktualizowany szablon zostanie użyty do ochrony nowych plików. Jeśli zmiany wprowadzone w szablonie są na tyle istotne, że należy ponownie włączyć ochronę plików na serwerze plików, można to zrobić, uruchamiając interaktywnie polecenie cmdlet Protect-RMSFile cmdlet przy użyciu konta, które ma prawa do eksportu plików lub pełnej kontroli. Należy także uruchomić polecenie `Get-RMSTemplate -Force` na tym serwerze plików w przypadku publikowania nowego szablonu, którego chcesz używać dla infrastruktury FCI.
 
-### Zapisz skrypt programu Windows PowerShell.
-<a id="save-the-windows-powershell-script" class="xliff"></a>
+### <a name="save-the-windows-powershell-script"></a>Zapisz skrypt programu Windows PowerShell.
 
 1.  Skopiuj zawartość [skryptu programu Windows PowerShell](fci-script.md) na potrzeby ochrony za pomocą usług Azure RMS przy użyciu Menedżera zasobów serwera plików. Wklej zawartość skryptu i nazwij plik **Ochrona-RMS-FCI.ps1** na własnym komputerze.
 
@@ -126,8 +122,7 @@ Należy pamiętać, że po wprowadzeniu zmian w szablonie usługi Rights Managem
 
 Teraz możesz rozpocząć konfigurowanie Menedżera zasobów serwera plików.
 
-### Utwórz właściwość klasyfikacji dla usługi Rights Management (RMS).
-<a id="create-a-classification-property-for-rights-management-rms" class="xliff"></a>
+### <a name="create-a-classification-property-for-rights-management-rms"></a>Utwórz właściwość klasyfikacji dla usługi Rights Management (RMS).
 
 -   W węźle Menedżer zasobów serwera plików w pozycji Zarządzanie klasyfikacją utwórz nową lokalną właściwość:
 
@@ -141,8 +136,7 @@ Teraz możesz rozpocząć konfigurowanie Menedżera zasobów serwera plików.
 
 Teraz można utworzyć regułę klasyfikacji korzystającą z tej właściwości.
 
-### Utwórz regułę klasyfikacji (Klasyfikuj do ochrony za pomocą usługi RMS).
-<a id="create-a-classification-rule-classify-for-rms" class="xliff"></a>
+### <a name="create-a-classification-rule-classify-for-rms"></a>Utwórz regułę klasyfikacji (Klasyfikuj do ochrony za pomocą usługi RMS).
 
 -   Utwórz nową regułę klasyfikacji:
 
@@ -170,8 +164,7 @@ Teraz można utworzyć regułę klasyfikacji korzystającą z tej właściwości
 
 Chociaż zasady klasyfikacji można uruchomić ręcznie, dla trwających operacji ta reguła powinna być uruchamiana zgodnie z harmonogramem, dzięki czemu nowe pliki zostaną sklasyfikowane z właściwością usługi RMS.
 
-### Skonfiguruj harmonogram klasyfikacji.
-<a id="configure-the-classification-schedule" class="xliff"></a>
+### <a name="configure-the-classification-schedule"></a>Skonfiguruj harmonogram klasyfikacji.
 
 -   Na karcie **Automatyczna klasyfikacja**:
 
@@ -185,8 +178,7 @@ Chociaż zasady klasyfikacji można uruchomić ręcznie, dla trwających operacj
 
 Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania zadania zarządzania w celu zastosowania ochrony plików przy pomocy usługi RMS.
 
-### Utwórz niestandardowe zadanie zarządzania plikami (Chroń pliki za pomocą usługi RMS).
-<a id="create-a-custom-file-management-task-protect-files-with-rms" class="xliff"></a>
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>Utwórz niestandardowe zadanie zarządzania plikami (Chroń pliki za pomocą usługi RMS).
 
 -   W **Zadaniach zarządzania plikami** utwórz nowe zadanie zarządzania plikami:
 
@@ -251,8 +243,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
 
         -   **Uruchamiaj stale w nowych plikach**: Zaznacz to pole wyboru.
 
-### Przetestuj konfigurację, ręcznie uruchamiając regułę i zadanie.
-<a id="test-the-configuration-by-manually-running-the-rule-and-task" class="xliff"></a>
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>Przetestuj konfigurację, ręcznie uruchamiając regułę i zadanie.
 
 1.  Uruchom regułę klasyfikacji:
 
@@ -292,8 +283,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
 
 Po potwierdzeniu, że zadania zostały pomyślnie uruchomione, można zamknąć Menedżera zasobów plików. Nowe pliki będą automatycznie klasyfikowane i obejmowane ochroną podczas przeprowadzania zaplanowanych zadań. 
 
-## Modyfikowanie instrukcji na potrzeby selektywnej ochrony plików
-<a id="modifying-the-instructions-to-selectively-protect-files" class="xliff"></a>
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>Modyfikowanie instrukcji na potrzeby selektywnej ochrony plików
 Jeżeli poprzednie instrukcje działają, można je łatwo zmodyfikować na potrzeby bardziej zaawansowanej konfiguracji. Na przykład uruchom ochronę plików za pomocą tego samego skryptu, ale obejmij nią tylko pliki, które zawierają dane osobowe, wybierając szablon z bardziej restrykcyjnymi uprawnieniami.
 
 Aby to zrobić, użyj jednej z wbudowanych właściwości klasyfikacji (na przykład **Dane osobowe**) lub utwórz własną właściwość. Następnie utwórz nową regułę, która używa tej właściwości. Na przykład możesz wybrać pozycję **Klasyfikator zawartości**, wybrać właściwość **Dane osobowe** o wartości **Wysokie** i skonfigurować ciąg lub wzorzec wyrażenia, który identyfikuje plik do skonfigurowania dla tej właściwości (np. **Data urodzenia**).

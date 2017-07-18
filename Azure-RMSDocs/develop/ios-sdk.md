@@ -16,7 +16,7 @@ ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: ed077a6d908ae5d9b6b3b187cee9c63f47dc826d
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---

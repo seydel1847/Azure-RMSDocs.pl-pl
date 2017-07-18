@@ -12,12 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 ms.openlocfilehash: ac12ab9023499d5aac632159ef689a8f10a91418
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Tworzenie nowej etykiety dla usługi Azure Information Protection
-<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -47,8 +46,7 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 5. Jeśli chcesz, aby ta nazwa i opis nowej etykiety były wyświetlane w różnych językach dla użytkowników, wykonaj procedury opisane w sekcji [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md). 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

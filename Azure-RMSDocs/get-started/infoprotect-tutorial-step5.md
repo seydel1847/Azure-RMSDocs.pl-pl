@@ -15,12 +15,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu
-<a id="step-5-see-sharing-of-protected-files-in-action-and-track-your-document" class="xliff"></a> 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -28,8 +27,7 @@ W tym ostatnim kroku samouczka odszukaj utworzony wcześniej dokument programu W
 
 Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail. 
 
-## Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
-<a id="to-safely-share-your-document-by-email" class="xliff"></a>
+## <a name="to-safely-share-your-document-by-email"></a>Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
 
 1. W oknie Eksploratora plików kliknij prawym przyciskiem myszy dokument, a następnie wybierz opcję **Klasyfikuj i chroń**. Zostanie wyświetlone okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**:
 
@@ -67,8 +65,7 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
 Chroniony dokument został wysłany, więc możesz teraz poprosić adresatów o jego odebranie i otworzenie. 
 
-## Poproś odbiorców o otworzenie przesłanego dokumentu
-<a id="ask-your-recipients-to-open-the-emailed-document" class="xliff"></a>
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>Poproś odbiorców o otworzenie przesłanego dokumentu
 
 Odbiorcy mogą użyć różnych urządzeń do odczytania chronionego dokumentu wysłanego w załączniku do wiadomości e-mail. Mogą to zrobić na urządzeniach iPad, iPhone, tabletach i telefonach z systemem Android, komputerach Mac i komputerach z systemem Windows.
 
@@ -76,8 +73,7 @@ Poproś odbiorców o odczytanie wysłanej wiadomości e-mail. Przy założeniu, 
 
 Po kliknięciu przez użytkownika opcji **Zarejestruj się** usługa Azure Information Protection sprawdza, czy organizacja użytkownika ma subskrypcję, która obejmuje usługi ochrony danych Azure Rights Management. Jeśli nie, użytkownik może poprosić o założenie bezpłatnego konta.
 
-### Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
-<a id="instructions-for-recipient-to-view-the-protected-document-attachment" class="xliff"></a>
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>Instrukcje dla odbiorcy: aby wyświetlić załącznik z chronionym dokumentem
 
 1. Na komputerze lub urządzeniu przenośnym z zainstalowanym pakietem Office otwórz załącznik, aby odczytać dokument.  
 
@@ -89,8 +85,7 @@ Opcjonalnie odbiorca może przesłać wiadomość e-mail dalej do innych osób, 
 
 Teraz, po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu do innej osoby), możesz śledzić dokument.
 
-## Aby śledzić chroniony dokument
-<a id="to-track-your-protected-document" class="xliff"></a>
+## <a name="to-track-your-protected-document"></a>Aby śledzić chroniony dokument
 
 1.  Otwórz dokument, który został przez Ciebie objęty ochroną i udostępniony. Ten baner potwierdza niestandardowe ustawienia ochrony, które zostały wybrane:
 
@@ -123,8 +118,7 @@ Możesz powrócić do tej witryny, aby śledzić dalszą aktywność dotyczącą
 |Informacje o korzystaniu z witryny śledzenia dokumentów|[Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md)
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Po zapoznaniu się z domyślnymi zasadami usługi Azure Information Protection i sposobami ich dostosowywania oraz z działaniem etykietowania dla programu Word poeksperymentuj z innymi ustawieniami i zobacz, jak działają w innych aplikacjach pakietu Office obsługujących usługę Azure Information Protection: Excel, PowerPoint i Outlook. Jeśli te aplikacje były otwarte podczas instalowania klienta Azure Information Protection, zamknij je i otwórz przed podjęciem próby używania usługi Azure Information Protection.
 

@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 6343f09a-59bf-46ce-b34a-14e9dcde0902
 ms.openlocfilehash: 090331b9a501adb0a834acf886c5a4aeb6b5d462
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Postanowienia licencyjne dotyczące oprogramowania firmy Microsoft dla usługi Azure Information Protection
-<a id="microsoft-software-license-terms-for-azure-information-protection" class="xliff"></a>
+# <a name="microsoft-software-license-terms-for-azure-information-protection"></a>Postanowienia licencyjne dotyczące oprogramowania firmy Microsoft dla usługi Azure Information Protection
 
 > [!IMPORTANT]
 > Jeśli Klient mieszka (lub siedziba jego firmy znajduje się) w Stanach Zjednoczonych, powinien przeczytać sekcję „Klauzula arbitrażowa i klauzula rezygnacji z wniesienia pozwu zbiorowego” poniżej. Dotyczy ona rozstrzygania sporów.
@@ -27,19 +26,16 @@ Niniejsze postanowienia licencyjne stanowią umowę między Klientem a firmą Mi
 
 KLIENT PRZESTRZEGAJĄCY NINIEJSZYCH POSTANOWIEŃ LICENCYJNYCH UZYSKUJE OPISANE PONIŻEJ PRAWA. KORZYSTANIE Z OPROGRAMOWANIA OZNACZA AKCEPTACJĘ NINIEJSZYCH POSTANOWIEŃ.
 
-## 1. Prawa do instalacji i używania
-<a id="1-installation-and-use-rights" class="xliff"></a>
+## <a name="1-installation-and-use-rights"></a>1. Prawa do instalacji i używania
 
 - a) Ogólne: Klient może zainstalować dowolną liczbę kopii oprogramowania na swoim urządzeniu i korzystać z nich.
   
 - b) Oprogramowanie innych firm: oprogramowanie może zawierać aplikacje innych producentów licencjonowane w ramach niniejszej umowy lub w ramach ich własnych postanowień. Postanowienia licencyjne, uwagi i podziękowania, (jeśli istnieją) dotyczące aplikacji innych firm mogą być dostępne online pod adresem http://aka.ms/thirdpartynotices lub w dołączonym pliku z uwagami. Nawet jeśli takie aplikacje podlegają innym umowom, to zrzeczenie odpowiedzialności, ograniczenia i wykluczenia dotyczące szkód obowiązują w zakresie dopuszczalnym przez właściwe prawo.
 
-## 2. Zbieranie danych
-<a id="2-data-collection" class="xliff"></a>
+## <a name="2-data-collection"></a>2. Zbieranie danych
 Oprogramowanie może zbierać informacje o Kliencie i jego sposobie użytkowania oprogramowania oraz wysyłać je do firmy Microsoft. Firma Microsoft może używać tych informacji do świadczenia usług oraz do ulepszania swoich produktów i usług. Prawa Klienta do rezygnacji z tej opcji (jeśli istnieją) zostały opisane w dokumentacji produktu. Niektóre funkcje oprogramowania mogą umożliwiać zbieranie danych od użytkowników aplikacji Klienta uzyskujących dostęp do tego oprogramowania lub korzystających z niego. Jeśli Klient korzysta z tych funkcji w celu umożliwienia zbierania danych w swoich aplikacjach, to musi przestrzegać odpowiednich przepisów prawa, w tym dotyczących uzyskiwania każdej wymaganej zgody użytkownika, oraz przygotować i stosować widoczne zasady ochrony prywatności, które dokładnie informują użytkowników o używaniu, zbieraniu i udostępnianiu ich danych. Więcej informacji na temat zbierania i używania danych przez firmę Microsoft można znaleźć w dokumentacji produktu i w [zasadach zachowania poufności informacji firmy Microsoft](https://go.microsoft.com/fwlink/?LinkId=512132). Klient zgadza się przestrzegać wszystkich właściwych postanowień zasad zachowania poufności informacji firmy Microsoft.
 
-## 3. Zakres licencji
-<a id="3-scope-of-license" class="xliff"></a> 
+## <a name="3-scope-of-license"></a>3. Zakres licencji 
 Na oprogramowanie udzielana jest licencja — nie jest ono sprzedawane. Firma Microsoft zastrzega sobie wszystkie pozostałe prawa. O ile obowiązujące prawo nie daje Klientowi większych uprawnień pomimo tego ograniczenia, nie może on (i nie ma prawa):
 
 - a) obchodzić ograniczeń technicznych w oprogramowaniu, które pozwalają na korzystanie z niego tylko w określony sposób;
@@ -52,32 +48,25 @@ Na oprogramowanie udzielana jest licencja — nie jest ono sprzedawane. Firma Mi
 
 - e) udostępniać, publikować, rozpowszechniać czy wypożyczać oprogramowania, udostępniać oprogramowania jako autonomicznego rozwiązania hostowanego do użytku przez inne osoby ani cedować oprogramowania czy niniejszej umowy stronom trzecim.
 
-## 4. Ograniczenia eksportowe
-<a id="4-export-restrictions" class="xliff"></a> 
+## <a name="4-export-restrictions"></a>4. Ograniczenia eksportowe 
 Należy przestrzegać wszystkich krajowych i międzynarodowych przepisów prawa eksportowego, które dotyczą oprogramowania i w których określono ograniczenia dotyczące lokalizacji, użytkowników końcowych i użytkowania końcowego. Aby uzyskać więcej informacji na temat ograniczeń eksportowych, odwiedź stronę http://aka.ms/exporting.
 
-## 5. Usługi pomocy technicznej
-<a id="5-support-services" class="xliff"></a> 
+## <a name="5-support-services"></a>5. Usługi pomocy technicznej 
 Firma Microsoft nie jest zobowiązana tą umową do świadczenia usług pomocy technicznej dotyczących oprogramowania. Wszelka świadczona pomoc techniczna jest zapewniana „w stanie takim, w jakim jest”, „ze wszystkimi błędami” i bez jakiejkolwiek gwarancji.
 
-## 6. Updates
-<a id="6-updates" class="xliff"></a>
+## <a name="6-updates"></a>6. Updates
 Oprogramowanie może okresowo sprawdzać dostępność aktualizacji i pobierać je oraz instalować automatycznie. Klient może uzyskiwać aktualizacje tylko od firmy Microsoft lub z autoryzowanych źródeł. W celu dostarczenia aktualizacji może być konieczne zaktualizowanie systemu Klienta przez firmę Microsoft. Klient wyraża zgodę na otrzymywanie tych automatycznych aktualizacji bez jakichkolwiek dodatkowych powiadomień. Aktualizacje mogą nie obejmować lub nie obsługiwać wszystkich istniejących funkcji oprogramowania, usług lub urządzeń peryferyjnych.
 
-## 7. Klauzula arbitrażowa i klauzula rezygnacji z wniesienia pozwu zbiorowego
-<a id="7-binding-arbitration-and-class-action-waiver" class="xliff"></a>
+## <a name="7-binding-arbitration-and-class-action-waiver"></a>7. Klauzula arbitrażowa i klauzula rezygnacji z wniesienia pozwu zbiorowego
 Ta sekcja ma zastosowanie, jeśli Klient mieszka (lub jeśli główna siedziba firmy znajduje się) w Stanach Zjednoczonych.  W przypadku sporu między Klientem a firmą Microsoft strony zgadzają się, że przez 60 dni będą próbować rozstrzygnąć go nieformalnie. Jeśli to się nie powiedzie, Klient i firma Microsoft zgadzają się na postępowanie indywidualne przed sądem arbitrażowym organizacji American Arbitration Association zgodnie z ustawą Federal Arbitration Act („FAA”) i na rezygnację z pozwu sądowego z udziałem sędziego lub przysięgłych. Zamiast tego spór zostanie rozstrzygnięty przez bezstronnego sędziego polubownego. Pozwy zbiorowe, zbiorowe postępowania arbitrażowe, pozwy na mocy ustawy uprawniającej obywateli do występowania w roli „prywatnego prokuratora generalnego” ani wszelkie inne postępowania, w których ktoś pełni rolę przedstawiciela, nie są dozwolone. Nie jest też dopuszczalne łączenie postępowań indywidualnych bez zgody wszystkich stron. Pełna umowa dotycząca arbitrażu zawiera więcej postanowień i jest dostępna pod adresem http://aka.ms/arb-agreement-1. Klient i firma Microsoft zgadzają się na te postanowienia.
 
-## 8. Całość umowy
-<a id="8-entire-agreement" class="xliff"></a>
+## <a name="8-entire-agreement"></a>8. Całość umowy
 Niniejsza umowa oraz wszelkie inne postanowienia dotyczące uzupełnień, aktualizacji lub aplikacji innych producentów, które firma Microsoft może dostarczyć, stanowią całość umowy dotyczącej tego oprogramowania.
 
-## 9. Prawo właściwe i miejsce rozstrzygania sporów
-<a id="9-applicable-law-and-place-to-resolve-disputes" class="xliff"></a>
+## <a name="9-applicable-law-and-place-to-resolve-disputes"></a>9. Prawo właściwe i miejsce rozstrzygania sporów
 Jeśli oprogramowanie zostało nabyte w Stanach Zjednoczonych lub Kanadzie, interpretacja tej umowy, rozstrzyganie roszczeń o jej naruszenie oraz wszelkie inne roszczenia (w tym roszczenia wynikające z prawa ochrony konsumentów, prawa zwalczania nieuczciwej konkurencji oraz z czynów niedozwolonych) podlegają prawu stanu lub prowincji, w której Klient mieszka (lub ma siedzibę główną firmy), bez względu na zasady dotyczące kolizji praw — oprócz kwestii arbitrażu sporów, która podlega w całości ustawie FAA. Jeśli oprogramowanie zostało nabyte w jakimkolwiek innym kraju, obowiązuje prawo tego kraju, oprócz kwestii arbitrażu sporów, która podlega w całości ustawie FAA. Jeśli ma zastosowanie jurysdykcja federalna Stanów Zjednoczonych, Klient i firma Microsoft zgadzają się na wyłączną jurysdykcję i miejsce postępowania w sądzie federalnym w hrabstwie King w stanie Waszyngton w przypadku wszystkich sporów prowadzonych w sądzie (z wyjątkiem postępowań arbitrażowych). Jeśli nie ma zastosowania, Klient i firma Microsoft zgadzają się na wyłączną jurysdykcję i miejsce postępowania w sądzie okręgowym w hrabstwie King (Superior Court of King County) w stanie Waszyngton w przypadku wszystkich sporów prowadzonych w sądzie (z wyjątkiem postępowań arbitrażowych).
 
-## 10. Prawa konsumenta; różnice regionalne
-<a id="10-consumer-rights-regional-variations" class="xliff"></a>
+## <a name="10-consumer-rights-regional-variations"></a>10. Prawa konsumenta; różnice regionalne
 W niniejszej umowie zostały przedstawione niektóre z uprawnień przysługujących stronom. Klientowi mogą przysługiwać inne prawa, w tym prawa konsumenta, na mocy prawa danego stanu, prowincji lub kraju. Niezależnie od relacji z firmą Microsoft Klientowi mogą też przysługiwać prawa względem strony, od której nabył oprogramowanie. Niniejsza umowa nie zmienia tych innych praw, jeśli przepisy danego stanu, prowincji lub kraju na to nie zezwalają. Jeśli na przykład oprogramowanie nabyto w jednym z poniższych regionów lub ma zastosowanie obowiązkowe prawo krajowe, to Klienta dotyczą następujące postanowienia:
 
 - a) Australia. Klientowi przysługują ustawowe gwarancje zgodnie z australijskim prawem konsumenta i żadna część niniejszej umowy nie ma na celu ich zmiany.
@@ -100,8 +89,7 @@ To ograniczenie dotyczy (a) wszystkiego, co jest związane z oprogramowaniem, us
 
 Ograniczenie ma również zastosowanie, nawet jeśli firma Microsoft wiedziała lub powinna wiedzieć o możliwości powstania takich szkód. Powyższe ograniczenie i wyłączenie mogą jednak nie dotyczyć Klienta w przypadku, gdy na mocy prawa stanowego, regionalnego lub krajowego nie jest dozwolone wyłączenie ani ograniczenie odpowiedzialności za szkody uboczne, wtórne itp.
 
-## Francuski (Français)
-<a id="french-franais" class="xliff"></a>
+## <a name="french-franais"></a>Francuski (Français)
 
 > [!NOTE]
 > Ze względu na to, że to oprogramowanie jest rozpowszechniane w Kanadzie, niektóre postanowienia tej umowy przedstawiono poniżej w języku francuskim.
@@ -109,22 +97,18 @@ Ograniczenie ma również zastosowanie, nawet jeśli firma Microsoft wiedziała 
 > [!NOTE]
 > Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
 
-### Exonération de Garantie
-<a id="exonration-de-garantie" class="xliff"></a>
+### <a name="exonration-de-garantie"></a>Exonération de Garantie
 Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n'accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d'adéquation à un usage particulier et d'absence de contrefaçon sont exclues.
 
-### Limitation Des Dommages-intérêts Et Exclusion de Responsabilité Pour Les Dommages
-<a id="limitation-des-dommages-intrts-et-exclusion-de-responsabilit-pour-les-dommages" class="xliff"></a>
+### <a name="limitation-des-dommages-intrts-et-exclusion-de-responsabilit-pour-les-dommages"></a>Limitation Des Dommages-intérêts Et Exclusion de Responsabilité Pour Les Dommages
 Vous pouvez obtenir de Microsoft et de ses fournisseurs une indemnisation en cas de dommages directs uniquement à hauteur de 5,00 $ US. Vous ne pouvez prétendre à aucune indemnisation pour les autres dommages, y compris les dommages spéciaux, indirects ou accessoires et pertes de bénéfices.
 
-### Cette limitation concerne:
-<a id="cette-limitation-concerne" class="xliff"></a>
+### <a name="cette-limitation-concerne"></a>Cette limitation concerne:
 • tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers; et • les réclamations au titre de violation de contrat ou de garantie, ou au titre de responsabilité stricte, de négligence ou d'une autre faute dans la limite autorisée par la loi en vigueur.
 
 Elle s'applique également, même si Microsoft connaissait ou devrait connaître l'éventualité d'un tel dommage. Si votre pays n'autorise pas l'exclusion ou la limitation de responsabilité pour les dommages indirects, accessoires ou de quelque nature que ce soit, il se peut que la limitation ou l'exclusion ci-dessus ne s'appliquera pas à votre égard.
 
-### Effet Juridique
-<a id="effet-juridique" class="xliff"></a>
+### <a name="effet-juridique"></a>Effet Juridique
 Le présent contrat décrit certains droits juridiques. Vous pourriez avoir d'autres droits prévus par les lois de votre pays. Le présent contrat ne modifie pas les droits que vous confèrent les lois de votre pays si celles-ci ne le permettent pas.
 
 

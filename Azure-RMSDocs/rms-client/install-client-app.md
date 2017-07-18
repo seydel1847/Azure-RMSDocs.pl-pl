@@ -14,7 +14,7 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: 792bb4b2554851eb4a9531e7ed9333c8bebc709a
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---

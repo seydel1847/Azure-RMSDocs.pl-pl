@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
-<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
