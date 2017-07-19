@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/12/2017
 ---
-# Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
-<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -35,8 +34,7 @@ Więcej informacji można znaleźć w następujących zasobach dokumentacji usł
 
 Jeśli chcesz zintegrować katalog usługi Azure AD z lokalnymi lasami usługi AD, zobacz artykuł [Integrowanie tożsamości użytkownika lokalnego z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
 
-### Scenariusze, które wiążą się z określonymi wymaganiami
-<a id="scenarios-that-have-specific-requirements" class="xliff"></a> 
+### <a name="scenarios-that-have-specific-requirements"></a>Scenariusze, które wiążą się z określonymi wymaganiami 
 
 Komputery z zainstalowanym pakietem Office 2010: 
 
@@ -58,8 +56,7 @@ Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelniani
 
 - Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
 
-## Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
-<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
 Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:
 
 -   Office 2013 (minimalna wersja):
@@ -94,8 +91,7 @@ Następnie skonfiguruj rozwiązanie MFA:
 
 Łącznik usługi Rights Management nie obsługuje uwierzytelniania wieloskładnikowego. W przypadku wdrożenia tego łącznika dla serwerów lokalnych, musisz użyć konta łącznika, które nie wymaga uwierzytelniania wieloskładnikowego.
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
