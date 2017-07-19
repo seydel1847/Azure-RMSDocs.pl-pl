@@ -14,12 +14,11 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: 1f41aad2d132e087e9122b2683be4b45185527de
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Konfigurowanie szablonów i zarządzanie nimi przy użyciu zasad w usłudze Azure Information Protection
-<a id="configuring-and-managing-templates-in-the-azure-information-protection-policy" class="xliff"></a>
+# <a name="configuring-and-managing-templates-in-the-azure-information-protection-policy"></a>Konfigurowanie szablonów i zarządzanie nimi przy użyciu zasad w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -42,8 +41,7 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 - Szablony zarządzania prawami dla Twojej dzierżawy są wyświetlane jako etykiety i obecnie są dostępne ustawienia konfiguracji specyficzne dla klasyfikacji i etykietowania. 
 
 
-## Zagadnienia dotyczące szablonów w portalu Azure
-<a id="considerations-for-templates-in-the-azure-portal" class="xliff"></a>
+## <a name="considerations-for-templates-in-the-azure-portal"></a>Zagadnienia dotyczące szablonów w portalu Azure
 
 Przed rozpoczęciem edycji tych szablonów lub konwersji do etykiet w portalu Azure należy pamiętać o następujących zmianach w implementacji szablonów zarządzania w klasycznym portalu Azure. Należy oczekiwać usunięcia kilku ograniczeń w wersji zapoznawczej:
 
@@ -67,8 +65,7 @@ Przed rozpoczęciem edycji tych szablonów lub konwersji do etykiet w portalu Az
 
 - Nowy szablon nie jest tworzony z kontenera **Szablony**; zamiast tego należy utworzyć etykietę z ustawieniem **Chroń** i skonfigurować prawa użytkowania i ustawienia w bloku **Ochrona**. Aby uzyskać pełne instrukcje, zobacz sekcję [Aby utworzyć nowy szablon](#to-create-a-new-template).
 
-## Aby skonfigurować szablony w usłudze Azure Information Protection
-<a id="to-configure-the-templates-in-the-azure-information-protection-policy" class="xliff"></a>
+## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
 1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny.
 
@@ -90,8 +87,7 @@ Przed rozpoczęciem edycji tych szablonów lub konwersji do etykiet w portalu Az
 
 6. Aby udostępnić zmiany aplikacjom użytkownika i usługom, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Aby dokonać konwersji szablonów na etykiety
-<a id="to-convert-templates-to-labels" class="xliff"></a>
+## <a name="to-convert-templates-to-labels"></a>Aby dokonać konwersji szablonów na etykiety
 
 Jeśli masz subskrypcję, która obejmuje klasyfikację, etykietowanie i ochronę, możesz dokonać konwersji szablonu na etykietę. Po wykonaniu tej czynności oryginalny szablon zostaje zachowany, ale w portalu Azure jest teraz wyświetlany jako zawarty w nowej etykiecie.
 
@@ -111,8 +107,7 @@ Podczas konwertowania szablonu do etykiety:
 
 - Oryginalny szablon nie będzie już wyświetlany w obszarze **Szablony** i, aby edytować go w portalu Azure, można teraz dokonać edycji utworzonej etykiety. Szablon pozostaje dostępny dla usługi Azure Rights Management i wciąż można nim zarządzać za pomocą [poleceń programu PowerShell](administer-powershell.md).  
 
-## Aby utworzyć nowy szablon
-<a id="to-create-a-new-template" class="xliff"></a>
+## <a name="to-create-a-new-template"></a>Aby utworzyć nowy szablon
 
 Utworzenie nowej etykiety z ustawieniem ochrony **Usługa Azure RMS** powoduje utworzenie w sposób niewidoczny dla użytkownika nowego niestandardowego szablonu udostępnianego usługom oraz aplikacjom integrującym się z szablonami usługi Rights Management.
 
@@ -133,8 +128,7 @@ Utworzenie nowej etykiety z ustawieniem ochrony **Usługa Azure RMS** powoduje u
 5. Aby udostępnić szablony aplikacjom użytkownika i usługom, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Tak jak w przypadku wszystkich zmian zasad usługi Azure Information Protection, zakończenie pobierania tych szablonów na komputer klienta usługi Azure Information Protection może potrwać do 15 minut. Aby uzyskać informacje dotyczące sposobu pobierania i odświeżania szablonów przez komputery i usługi, zobacz temat [Odświeżanie szablonów dla użytkowników i usług](refresh-templates.md).
 

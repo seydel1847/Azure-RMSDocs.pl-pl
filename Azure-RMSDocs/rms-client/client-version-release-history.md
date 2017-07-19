@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 9ee487f65f417c9faaf71f3c50b5d4e35659c55f
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Klient usługi Azure Information Protection: historia wersji
-<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
+# <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
 
 >*Dotyczy: Azure Information Protection*
 
@@ -35,8 +34,7 @@ Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w
 > Jeśli problem nie ustąpi, zapoznaj się z informacjami w temacie [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
 
-## Wersja 1.7.210.0
-<a id="version-172100" class="xliff"></a>
+## <a name="version-172100"></a>Wersja 1.7.210.0
 
 **Wydana**: 2017-06-06
 
@@ -61,8 +59,7 @@ Ta wersja zawiera wersję MSIPC 1.0.2217.1 klienta usługi RMS.
 - Nowe polecenia cmdlet programu PowerShell [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). Po uruchomieniu tego polecenia cmdlet jest sprawdzana zawartość pliku i do plików bez etykiet są automatycznie stosowane etykiety, zgodnie z warunkami określonymi w zasadach usługi Azure Information Protection.
 
 
-## Wersja 1.4.21.0
-<a id="version-14210" class="xliff"></a>
+## <a name="version-14210"></a>Wersja 1.4.21.0
 
 **Wydana**: 2017-03-15
 
@@ -89,8 +86,7 @@ W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Mic
 - W odniesieniu do plików PDF w przeglądarce dodano opcje wyszukiwania, powiększania i pomniejszania oraz obrotu. Aby użyć tych opcji, kliknij plik wyświetlany w przeglądarce prawym przyciskiem myszy.
 
 
-## Wersja 1.3.155.2
-<a id="version-131552" class="xliff"></a>
+## <a name="version-131552"></a>Wersja 1.3.155.2
 
 **Wydana**: 2017-08-02
 
@@ -118,8 +114,7 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 - [Podręcznik użytkownika usługi Azure Information Protection](client-user-guide.md)
 
 
-## Wersja 1.2.4.0
-<a id="version-1240" class="xliff"></a>
+## <a name="version-1240"></a>Wersja 1.2.4.0
 
 **Wydana**: 2016-10-27
 
@@ -137,15 +132,13 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 
     Aby uzyskać więcej informacji na temat tej opcji, zapoznaj się z sekcją [Dodatkowe czynności kontrolne i rozwiązywanie problemów](client-admin-guide.md#additional-checks-and-troubleshooting) podręcznika administratora.
 
-## Wersja 1.1.23.0
-<a id="version-11230" class="xliff"></a>
+## <a name="version-11230"></a>Wersja 1.1.23.0
 
 **Wydana**: 2016-10-01
 
 Wersja ogólnie dostępna.
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji na temat instalacji klienta:
 

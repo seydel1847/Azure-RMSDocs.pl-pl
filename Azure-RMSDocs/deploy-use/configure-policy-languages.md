@@ -12,12 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
 ms.openlocfilehash: ec99bf36e8904a7304a9d33c32d17ba92e2e22d2
 ms.sourcegitcommit: 8b768e7e249e124f24acdf630d165eaf743f9c21
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/05/2017
 ---
-# Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection
-<a id="how-to-configure-labels-for-different-languages-in-azure-information-protection" class="xliff"></a>
+# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -28,8 +27,7 @@ Domyślnie nazwy i opisy etykiet obsługują jeden język wyświetlany dla wszys
 
 Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla pakietu Office i systemu Windows. Te nazwy etykiet i opisy są następnie wyświetlane na pasku usługi Azure Information Protection w aplikacji pakietu Office oraz w oknie dialogowym **Klasyfikacja i ochrona — usługa Azure Information Protection**. Aby uzyskać więcej informacji o wybranym języku, zobacz sekcję [Określanie wyświetlanego języka przez klienta Azure Information Protection](#how-the-azure-information-protection-client-determines-the-language-to- display). 
 
-## Aby skonfigurować etykiety do wyświetlenia w różnych językach
-<a id="to-configure-labels-to-display-in-different-languages" class="xliff"></a>
+## <a name="to-configure-labels-to-display-in-different-languages"></a>Aby skonfigurować etykiety do wyświetlenia w różnych językach
 
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
     
@@ -64,8 +62,7 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
     
     Po zakończeniu importowania przetłumaczone nazwy etykiet i opisy zostaną przekazane do użytkowników po kolejnym opublikowaniu przez Ciebie zasad usługi Azure Information Protection. Możesz kliknąć opcję **Publikuj** w bloku **Zasady globalne** lub **Zasady z określonym zakresem**.
 
-## Jak klient usługi Azure Information Protection określa język używany do wyświetlania
-<a id="how-the-azure-information-protection-client-determines-the-language-to-display" class="xliff"></a>
+## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Jak klient usługi Azure Information Protection określa język używany do wyświetlania
 
 Po pobraniu przez użytkowników zasad usługi Azure Information Protection umożliwiających obsługę innych języków, język nazw etykiet i etykietek narzędzi widziany przez użytkowników jest określany w następujący sposób:
 
@@ -81,8 +78,7 @@ Po pobraniu przez użytkowników zasad usługi Azure Information Protection umo�
 
 - W przypadku niezgodności z językiem systemu operacyjnego nazwy etykiet i opisy są wyświetlane w języku podanym jako domyślny dla wszystkich użytkowników. Tym językiem jest zazwyczaj angielski, który jest używany w domyślnych zasadach.
 
-## Gdy nie są używane zlokalizowane nazwy etykiet
-<a id="when-localized-label-names-are-not-used" class="xliff"></a>
+## <a name="when-localized-label-names-are-not-used"></a>Gdy nie są używane zlokalizowane nazwy etykiet
 
 W następujących scenariuszach zlokalizowane nazwy etykiet (i etykiet podrzędnych) nie są używane. W celu zachowania spójności w dzierżawie domyślny język jest zawsze używany dla następujących elementów:
 
@@ -93,8 +89,7 @@ W następujących scenariuszach zlokalizowane nazwy etykiet (i etykiet podrzędn
 - Metadane dokumentów i nagłówki wiadomości e-mail
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 

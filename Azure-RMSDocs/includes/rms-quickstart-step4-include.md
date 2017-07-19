@@ -10,8 +10,7 @@ Jeśli odbiorca kliknie link, zostanie przeniesiony do instrukcji związanych z 
 
 ![Zrzuty ekranu przedstawiające samouczek dotyczący usługi RM](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### Aby wyświetlić załącznik z chronionym dokumentem
-<a id="to-view-the-protected-document-attachment" class="xliff"></a>
+#### <a name="to-view-the-protected-document-attachment"></a>Aby wyświetlić załącznik z chronionym dokumentem
 
 1.  Jako że usługa Azure Rights Management chroni dokument programu Word, w wiadomości e-mail dostępne są dwa załączniki. Są to dwie wersje tego samego pliku o różnych rozszerzeniach nazwy pliku. Otwórz wersję z rozszerzeniem **ppdf** (**Confidential.ppdf**).
 

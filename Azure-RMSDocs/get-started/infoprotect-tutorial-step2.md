@@ -16,8 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/13/2017
 ---
-# Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
-<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -49,8 +48,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-settings.png)
 
-## Zmiana ustawień domyślnej etykiety i monit o uzasadnienie
-<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
+## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>Zmiana ustawień domyślnej etykiety i monit o uzasadnienie
 
 W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak działają:
 
@@ -60,8 +58,7 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
 
 2. Dla opcji **Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę** wybierz wartość **Włączone**.
 
-## Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
-<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>Konfigurowanie etykiety ochrony, znaku wodnego oraz warunku monitowania o klasyfikację
 
 Zmienimy teraz ustawienia jednej z podrzędnych etykiet **Wszyscy pracownicy** głównej etykiety **Poufne**. 
 

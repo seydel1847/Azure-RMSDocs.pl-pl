@@ -12,12 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 ms.openlocfilehash: adc2baa875595d5044b47a9f014cc1381ba85dc2
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Krok 1. Aktywowanie usługi Rights Management
-<a id="step-1-activate-the-rights-management-service" class="xliff"></a>
+# <a name="step-1-activate-the-rights-management-service"></a>Krok 1. Aktywowanie usługi Rights Management
  
 >*Dotyczy: Azure Information Protection*
 
@@ -30,8 +29,7 @@ Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej pouf
 
 W przypadku tego samouczka przejdziemy bezpośrednio do strony aktywacji w portalu administracyjnym dla administratorów usługi Office 365. Jednak jeśli wolisz przejść do tej strony z portalu administracyjnego usługi Office 365, a nie bezpośrednio, zobacz pełne instrukcje w dokumencie [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md). Tych pełnych instrukcji należy użyć także w przypadku posiadania dostępu do witryny Azure Portal, ale nie portalu administracyjnego Office 365.
 
-## Aktywowanie usługi Rights Management
-<a id="to-activate-the-rights-management-service" class="xliff"></a>
+## <a name="to-activate-the-rights-management-service"></a>Aktywowanie usługi Rights Management
 
 1. Otwórz nowe okno przeglądarki i przejdź bezpośrednio do [strony aktywacji usługi Rights Management](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx) dla administratorów usługi Office 365.
     

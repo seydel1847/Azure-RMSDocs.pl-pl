@@ -14,19 +14,17 @@ ms.reviewer: adhall
 ms.suite: ems
 ms.openlocfilehash: 80efd633bc814af1ac28e4b6bf2d0b3062b27d01
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
-<a id="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection" class="xliff"></a>
+# <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 Masz pytanie związane z usługą Azure Information Protection, które dotyczy klasyfikacji i etykietowania?  Zobacz, czy nie znajdziesz tutaj odpowiedzi. 
 
-## Jakie czynności mogę wykonywać za pomocą funkcji klasyfikacji w usłudze Azure Information Protection?
-<a id="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection" class="xliff"></a>
+## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>Jakie czynności mogę wykonywać za pomocą funkcji klasyfikacji w usłudze Azure Information Protection?
 
 Kilka minut wystarczy do zapoznania się z naszym samouczkiem Szybki start: [Samouczek Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
@@ -46,20 +44,17 @@ W blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.
 
 W wersji z lutego usunięto wiele wcześniejszych ograniczeń. Aby uzyskać więcej informacji, zobacz [wpis w blogu](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/).
 
-## Czy muszę być administratorem globalnym, aby konfigurować klasyfikację i etykiety?
-<a id="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels" class="xliff"></a>
+## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>Czy muszę być administratorem globalnym, aby konfigurować klasyfikację i etykiety?
 
 Aby skonfigurować zasady usługi Azure Information Protection, już nie musisz logować się do witryny Azure Portal jako administrator globalny usługi Azure Active Directory. Możesz również teraz użyć konta mającego rolę administratora zabezpieczeń.
 
 Jeśli w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasad demonstracyjnych, zalogowanie się do portalu nie jest konieczne do wyświetlenia i wypróbowania funkcji etykietowania. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection, co umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie pozwala na zmianę ani dodanie nowej etykiety bez rejestrowania się w witrynie Azure Portal. 
 
-## Które opcje w witrynie Azure Portal to P2?
-<a id="which-options-in-the-azure-portal-are-p2" class="xliff"></a>
+## <a name="which-options-in-the-azure-portal-are-p2"></a>Które opcje w witrynie Azure Portal to P2?
 
 Opcje w witrynie Azure Portal, które wymagają usługi **Azure Information Protection Premium 2** (P2), mają teraz komunikat podręczny z informacjami umożliwiający ich zidentyfikowanie. Aby uzyskać więcej informacji o tym, które funkcje są uwzględnione w subskrypcjach P1 i P2, zobacz [listę funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
 
-## Czy plik może mieć więcej niż jedną klasyfikację?
-<a id="can-a-file-have-more-than-one-classification" class="xliff"></a>
+## <a name="can-a-file-have-more-than-one-classification"></a>Czy plik może mieć więcej niż jedną klasyfikację?
 
 Użytkownicy mogą jednocześnie wybrać tylko jedną etykietę dla każdego dokumentu lub wiadomości e-mail, co skutkuje często utworzeniem tylko jednej klasyfikacji. Jeśli jednak użytkownicy wybiorą etykietę podrzędną, spowoduje to w rzeczywistości zastosowanie dwóch etykiet jednocześnie: etykiety podstawowej i pomocniczej. Dzięki użyciu etykiet podrzędnych plik może mieć dwie klasyfikacje, które wprowadzają relację typu element nadrzędny/podrzędny na potrzeby dodatkowego poziomu kontroli.
 
@@ -67,18 +62,15 @@ Na przykład etykieta **Poufne** może zawierać etykiety podrzędne, takie jak 
 
 Jeśli korzystasz z etykiet podrzędnych, nie konfiguruj wizualnych oznaczeń, ochrony i warunków dla etykiety podstawowej. Jeśli korzystasz z poziomów podrzędnych, skonfiguruj te ustawienia tylko dla etykiet podrzędnych. Jeśli skonfigurujesz te ustawienia dla etykiety podstawowej i jej etykiety podrzędnej, pierwszeństwo mają ustawienia etykiety podrzędnej.
 
-## Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
-<a id="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling" class="xliff"></a>
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
 Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, załączniki te nie odziedziczą tej samej etykiety. Załączniki pozostaną bez etykiety lub zachowają oddzielnie przydzieloną etykietę. Jednak jeśli etykieta wiadomości e-mail zawiera ochronę, ochrona ta jest stosowana także do załączników.
 
-## Jak rozwiązania DLP i inne aplikacje integrują się z usługą Azure Information Protection?
-<a id="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection" class="xliff"></a>
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>Jak rozwiązania DLP i inne aplikacje integrują się z usługą Azure Information Protection?
 
 Ponieważ usługa Azure Information Protection używa do klasyfikacji trwałych metadanych, w tym etykiety w postaci zwykłego tekstu, te informacje są odczytywane przez rozwiązania DLP i inne aplikacje. W plikach te metadane są przechowywane we właściwościach niestandardowych. W wiadomościach e-mail te informacje znajdują się w nagłówkach wiadomości.
 
-## Czym różni się klasyfikacja wiadomości e-mail usługi Azure Information Protection od klasyfikacji wiadomości e-mail stosowanej w programie Exchange?
-<a id="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification" class="xliff"></a>
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>Czym różni się klasyfikacja wiadomości e-mail usługi Azure Information Protection od klasyfikacji wiadomości e-mail stosowanej w programie Exchange?
 
 Klasyfikacja wiadomości programu Exchange to starsza funkcja umożliwiająca klasyfikowanie wiadomości e-mail, wdrożona niezależnie od klasyfikacji usługi Azure Information Protection. 
 

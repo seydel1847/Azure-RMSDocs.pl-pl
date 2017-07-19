@@ -14,12 +14,11 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: 960fe1abf2fa4f5b8976f190454d31849736298a
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
-<a id="classify-and-protect-a-file-or-email-by-using-azure-information-protection" class="xliff"></a>
+# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
@@ -27,8 +26,7 @@ Najprostszy sposób klasyfikowania i ochrony dokumentów i wiadomości e-mail je
 
 Pliki można jednak klasyfikować i chronić także za pomocą **Eksploratora plików**, który obsługuje dodatkowe typy plików i stanowi wygodny sposób klasyfikowania oraz ochrony wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
 
-### Bezpieczne udostępnianie pliku osobom spoza organizacji
-<a id="safely-share-a-file-with-people-outside-your-organization" class="xliff"></a>
+### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Bezpieczne udostępnianie pliku osobom spoza organizacji
 
 Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład można dołączyć plik do wiadomości e-mail lub wysłać zaproszenie z witryny usługi SharePoint.
 
@@ -39,8 +37,7 @@ Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony
 Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
 
 
-## Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
-<a id="using-office-apps-to-classify-and-protect-your-documents-and-emails" class="xliff"></a>
+## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
 
 Za pomocą paska usługi Azure Information Protection wybierz jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
 
@@ -56,16 +53,13 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Administrator skonfigurował zalecane monity o wybór określonej etykiety po wykryciu poufnych danych. Możesz zaakceptować zalecenie (i etykieta zostanie dodana) lub je odrzucić (zalecana etykieta nie zostanie dodana).
 
-### Wyjątki dotyczące paska usługi Azure Information Protection
-<a id="exceptions-for-the-azure-information-protection-bar" class="xliff"></a> 
+### <a name="exceptions-for-the-azure-information-protection-bar"></a>Wyjątki dotyczące paska usługi Azure Information Protection 
 
-##### Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
-<a id="dont-see-this-information-protection-bar-in-your-office-apps" class="xliff"></a>
+##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
 
 - Być może nie został [zainstalowany](install-client-app.md) klient usługi Azure Information Protection lub klient jest uruchomiony w [trybie z samą ochroną](client-protection-only-mode.md).
  
-##### Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana?
-<a id="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar" class="xliff"></a> 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana? 
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
@@ -73,8 +67,7 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 
-### Ustawienie uprawnień niestandardowych dla dokumentu
-<a id="set-custom-permissions-for-a-document" class="xliff"></a>
+### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
 
 Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety, możesz określić dla dokumentu własne ustawienia ochrony.
 
@@ -97,8 +90,7 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
 
 
-### Skróty klawiaturowe dla paska usługi Azure Information Protection
-<a id="keyboard-shortcuts-for-the-azure-information-protection-bar" class="xliff"></a>
+### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Skróty klawiaturowe dla paska usługi Azure Information Protection
 
 Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą skrótów klawiaturowych, użyj następujących kombinacji klawiszy:
 
@@ -106,8 +98,7 @@ Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą sk
 
 Następnie użyj klawisza Tab, aby wybrać etykiety i inne kontrolki na pasku (ikona **Ukryj etykiety** i ikona **Usuń etykietę**), a następnie naciśnij klawisz Enter, aby je wybrać.
 
-## Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
-<a id="using-file-explorer-to-classify-and-protect-files" class="xliff"></a>
+## <a name="using-file-explorer-to-classify-and-protect-files"></a>Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
 
 Korzystając z Eksploratora plików, można szybko klasyfikować i chronić pojedynczy plik, wiele plików lub folder. 
 
@@ -120,8 +111,7 @@ Niektóre pliki są automatycznie wykluczane z klasyfikacji i ochrony, ponieważ
 W podręczniku administratora podano pełną listę typów plików obsługiwanych oraz tych plików i folderów, które są automatycznie wykluczane: [Typy plików obsługiwane przez klienta usługi Azure Information Protection](client-admin-guide-file-types.md).
 
 
-### Aby sklasyfikować i chronić plik za pomocą Eksploratora plików
-<a id="to-classify-and-protect-a-file-by-using-file-explorer" class="xliff"></a>
+### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>Aby sklasyfikować i chronić plik za pomocą Eksploratora plików
 
 1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Na przykład:
     
@@ -162,8 +152,7 @@ Jeśli zmienisz zdanie na temat klasyfikacji i ochrony lub zechcesz później zm
 Wcześniej określona dla pliku klasyfikacja i ochrona obowiązuje nadal, nawet jeśli plik zostanie wysłany za pomocą poczty e-mail lub zapisany w innej lokalizacji. Jeśli plik jest chroniony, można śledzić, w jaki sposób jest używany, i w razie potrzeby odwołać dostęp do niego. Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów chronionych podczas korzystania z usługi Azure Information Protection](client-track-revoke.md). 
 
 
-## Inne instrukcje
-<a id="other-instructions" class="xliff"></a>
+## <a name="other-instructions"></a>Inne instrukcje
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)

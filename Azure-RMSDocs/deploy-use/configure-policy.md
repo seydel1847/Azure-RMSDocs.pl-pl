@@ -14,19 +14,17 @@ ms.reviewer: eymanor
 ms.suite: ems
 ms.openlocfilehash: 7a4922384a228457b683653e80afe4b8c8db6df2
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Konfigurowanie zasad usługi Azure Information Protection
-<a id="configuring-azure-information-protection-policy" class="xliff"></a>
+# <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection. Te zasady są pobierane na komputery z zainstalowanym [klientem usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
-## Obsługa subskrypcji
-<a id="subscription-support" class="xliff"></a>
+## <a name="subscription-support"></a>Obsługa subskrypcji
 
 Zasady usługi Azure Information Protection obsługują różne poziomy subskrypcji:
 
@@ -44,8 +42,7 @@ Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja 
 
 Aby uzyskać więcej informacji o sposobie konfigurowania zasad z określonym zakresem, zobacz temat [Konfigurowanie zasad dla konkretnych użytkowników poprzez użycie zasad o określonym zakresie](configure-policy-scope.md).
 
-## Jak skonfigurować zasady usługi Azure Information Protection
-<a id="how-to-configure-the-azure-information-protection-policy" class="xliff"></a>
+## <a name="how-to-configure-the-azure-information-protection-policy"></a>Jak skonfigurować zasady usługi Azure Information Protection
 
 1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny.
 
@@ -88,8 +85,7 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas uruchamiania
 >[!NOTE]
 >Gdy klient pobierze zasady, przygotuj się na odczekanie paru minut, zanim staną się w pełni funkcjonalne. Rzeczywisty czas może być różny w zależności od takich czynników, jak rozmiar i złożoność konfiguracji zasad oraz łączność sieciowa. Jeśli wynikowe działanie etykiet nie odpowiada najnowszym zmianom, zaczekaj do 15 minut i spróbuj ponownie.
 
-### Konfigurowanie zasad organizacji
-<a id="configuring-your-organizations-policy" class="xliff"></a>
+### <a name="configuring-your-organizations-policy"></a>Konfigurowanie zasad organizacji
 
 Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Information Protection:
 
@@ -115,8 +111,7 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md)
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 

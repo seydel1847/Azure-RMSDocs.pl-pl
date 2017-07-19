@@ -12,12 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
-<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
+# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
@@ -45,8 +44,7 @@ Aby zmienić etykietę, użyj następujących instrukcji.
 > [!TIP]
 >Jeśli chcesz przywrócić jedną z etykiet domyślnych do wartości domyślnych, użyj informacji zawartych w temacie [Domyślne zasady usługi Information Protection](configure-policy-default.md).
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 
