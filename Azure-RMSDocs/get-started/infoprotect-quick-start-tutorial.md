@@ -16,8 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/10/2017
 ---
-# Samouczek Szybki start dla usługi Azure Information Protection
-<a id="quick-start-tutorial-for-azure-information-protection" class="xliff"></a> 
+# <a name="quick-start-tutorial-for-azure-information-protection"></a>Samouczek Szybki start dla usługi Azure Information Protection 
 
 >*Dotyczy: Azure Information Protection*
 
@@ -27,8 +26,7 @@ Ten samouczek jest przeznaczony dla administratorów oraz konsultantów IT i ma 
 
 W przypadku wystąpienia problemów podczas wykonywania instrukcji zamieszczonych w tym samouczku lub używania usługi Azure Information Protection albo jeśli chcesz dowiedzieć się, co sądzą inni, odwiedź [witrynę usługi Yammer poświęconą usłudze Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all).
 
-## Wymagania wstępne
-<a id="prerequisites" class="xliff"></a> 
+## <a name="prerequisites"></a>Wymagania wstępne 
 Do ukończenia tego samouczka będą potrzebne:
 
 - Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony. Ten samouczek zawiera niektóre zaawansowane funkcje, takie jak automatyczna klasyfikacja danych z zaleceniami użytkowników oraz witryna śledzenia dokumentów. Upewnij się, że masz subskrypcję do obsługi tych funkcji w tym samouczku. Aby uzyskać więcej informacji, zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.

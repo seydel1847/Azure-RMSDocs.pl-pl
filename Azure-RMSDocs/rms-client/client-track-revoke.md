@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/10/2017
 ---
-# Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
-<a id="track-and-revoke-your-documents-when-you-use-azure-information-protection" class="xliff"></a>
+# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
@@ -58,8 +57,7 @@ Jeśli nie masz uprawnień administracyjnych, możesz śledzić i odwoływać do
 
 Aby śledzić dokument, który jest chroniony przez Ciebie, użyj komputera z systemem Windows w celu zarejestrowania go w witrynie śledzenia dokumentów. W tym celu użyj Eksploratora plików lub aplikacji pakietu Office.
 
-## Śledzenie lub odwoływanie dokumentu przy użyciu pakietu Office
-<a id="using-office-to-track-or-revoke-the-document" class="xliff"></a>
+## <a name="using-office-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu pakietu Office
 
 W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook): 
 
@@ -79,8 +77,7 @@ W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook):
     
 Aby uzyskać więcej informacji o sposobie instalowania klienta usługi Azure Information Protection, zobacz temat [Pobieranie i instalowanie klienta usługi Azure Information Protection](install-client-app.md).
 
-## Śledzenie lub odwoływanie dokumentu przy użyciu Eksploratora plików
-<a id="using-file-explorer-to-track-or-revoke-the-document" class="xliff"></a>
+## <a name="using-file-explorer-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu Eksploratora plików
 
 1. Kliknij chroniony plik prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**.
 
@@ -89,8 +86,7 @@ Aby uzyskać więcej informacji o sposobie instalowania klienta usługi Azure In
     ![Ikona śledzenia i odwoływania z okna dialogowego Klasyfikuj i chroń — Azure Information Protection](../media/track-and-revoke.png)
 
 
-### Śledzenie i odwoływanie zarejestrowanych dokumentów w przeglądarce sieci Web
-<a id="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered" class="xliff"></a>
+### <a name="using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered"></a>Śledzenie i odwoływanie zarejestrowanych dokumentów w przeglądarce sieci Web
 
 Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub aplikacji pakietu Office, dokumenty te można śledzić i odwoływać przy użyciu obsługiwanej przeglądarki sieci Web:
 
@@ -109,8 +105,7 @@ Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub a
     - Google Chrome: wersja 18 lub nowsza
 
 
-## Inne instrukcje
-<a id="other-instructions" class="xliff"></a>
+## <a name="other-instructions"></a>Inne instrukcje
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)

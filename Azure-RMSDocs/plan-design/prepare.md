@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/13/2017
 ---
-# Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
-<a id="preparing-users-and-groups-for-azure-information-protection" class="xliff"></a>
+# <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -39,8 +38,7 @@ Istnieją różne sposoby tworzenia tych kont użytkowników i grup, w tym:
 
 W przypadku tworzenia użytkowników i grup za pomocą pierwszych trzech metod z tej listy następuje ich automatyczne utworzenie w usłudze Azure AD, a usługa Azure Information Protection może bezpośrednio korzystać z tych kont. Jednak wiele sieci przedsiębiorstw używa katalogu lokalnego do tworzenia użytkowników i grup oraz zarządzania nimi. Usługa Azure Information Protection nie może bezpośrednio korzystać z tych kont; należy je zsynchronizować z usługą Azure AD.
 
-## Jak usługa Azure Information Protection korzysta z użytkowników i grup
-<a id="how-users-and-groups-are-used-by-azure-information-protection" class="xliff"></a>
+## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Jak usługa Azure Information Protection korzysta z użytkowników i grup
 
 Istnieją trzy scenariusze dotyczące korzystania z użytkowników i grup w usłudze Azure Information Protection:
 
@@ -62,8 +60,7 @@ Istnieją trzy scenariusze dotyczące korzystania z użytkowników i grup w usł
 
 - Kontrolki dołączania do obsługi wdrożenia etapowego.
 
-## Wymagania dotyczące usługi Azure Information Protection odnośnie do kont użytkowników
-<a id="azure-information-protection-requirements-for-user-accounts" class="xliff"></a>
+## <a name="azure-information-protection-requirements-for-user-accounts"></a>Wymagania dotyczące usługi Azure Information Protection odnośnie do kont użytkowników
 
 W przypadku przypisywania etykiet:
 
@@ -83,13 +80,11 @@ W przypadku przypisywania praw użytkowania i kontroli dostępu oraz konfigurowa
 
 - Atrybut **userPrincipalName usługi Azure AD** jest używany tylko wtedy, gdy konto w dzierżawie nie ma wartości atrybutu proxyAddresses usługi Azure AD. Można na przykład utworzyć użytkownika w witrynie Azure Portal lub utworzyć użytkownika bez skrzynki pocztowej w usłudze Office 365.
 
-### Przypisywanie praw użytkowania i kontroli dostępu do użytkowników zewnętrznych
-<a id="assigning-usage-rights-and-access-controls-to-external-users" class="xliff"></a>
+### <a name="assigning-usage-rights-and-access-controls-to-external-users"></a>Przypisywanie praw użytkowania i kontroli dostępu do użytkowników zewnętrznych
 
 Oprócz używania atrybutów proxyAddresses i userPrincipalName usługi Azure AD dla użytkowników w dzierżawie usługa Azure Information Protection korzysta z tych atrybutów w ten sam sposób w celu autoryzowania użytkowników z innej dzierżawy.
 
-## Wymagania dotyczące usługi Azure Information Protection dla kont grup
-<a id="azure-information-protection-requirements-for-group-accounts" class="xliff"></a>
+## <a name="azure-information-protection-requirements-for-group-accounts"></a>Wymagania dotyczące usługi Azure Information Protection dla kont grup
 
 W przypadku przypisywania etykiet:
 
@@ -107,13 +102,11 @@ W przypadku konfigurowania usługi Azure Rights Management:
     
 - Możesz użyć dowolnego typu grupy usługi Azure AD (z adresem e-mail lub bez niego) z domeny zweryfikowanej w dzierżawie na potrzeby delegowanej administracji usługi Azure Rights Management.
 
-### Przypisywanie praw użytkowania i kontroli dostępu do grup zewnętrznych
-<a id="assigning-usage-rights-and-access-controls-to-external-groups" class="xliff"></a>
+### <a name="assigning-usage-rights-and-access-controls-to-external-groups"></a>Przypisywanie praw użytkowania i kontroli dostępu do grup zewnętrznych
 
 Oprócz używania atrybutu proxyAddresses usługi Azure AD dla grup w dzierżawie usługa Azure Information Protection korzysta z tego atrybutu w taki sam sposób w celu autoryzowania grup z innej dzierżawy.
 
-## Używanie kont z lokalnej usługi Active Directory na potrzeby usługi Azure Information Protection
-<a id="using-accounts-from-active-directory-on-premises-for-azure-information-protection" class="xliff"></a>
+## <a name="using-accounts-from-active-directory-on-premises-for-azure-information-protection"></a>Używanie kont z lokalnej usługi Active Directory na potrzeby usługi Azure Information Protection
 
 Jeśli masz konta zarządzane lokalnie, które mają być używane w usłudze Azure Information Protection, musisz je zsynchronizować z usługą Azure AD. W celu ułatwienia wdrażania zalecamy użycie programu [Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect). Możesz jednak użyć dowolnej metody synchronizacji katalogu, która daje ten sam wynik.
 
@@ -121,8 +114,7 @@ Podczas synchronizowania kont nie trzeba synchronizować wszystkich atrybutów. 
 
 Po zapoznaniu się z listą atrybutów usługi Azure Rights Management zobaczysz, że w przypadku użytkowników należy zsynchronizować lokalne atrybuty usługi AD, takie jak **mail**, **proxyAddresses** i **userPrincipalName**. Wartości atrybutów **mail** i **proxyAddresses** są synchronizowane z atrybutem proxyAddresses usługi Azure AD. Aby uzyskać więcej informacji, zobacz artykuł [Jak atrybut proxyAddresses jest wypełniany w usłudze Azure AD](https://support.microsoft.com/help/3190357/how-the-proxyaddresses-attribute-is-populated-in-azure-ad)
 
-## Potwierdzanie gotowości użytkowników i grup do użycia w usłudze Azure Information Protection
-<a id="confirming-your-users-and-groups-are-prepared-for-azure-information-protection" class="xliff"></a>
+## <a name="confirming-your-users-and-groups-are-prepared-for-azure-information-protection"></a>Potwierdzanie gotowości użytkowników i grup do użycia w usłudze Azure Information Protection
 
 W celu potwierdzenia, że użytkownicy i grupy mogą być używane w usłudze Azure Information Protection, można użyć programu Azure AD PowerShell. W programie PowerShell można również sprawdzić wartości do użycia podczas ich autoryzowania. 
 
@@ -137,8 +129,7 @@ Następnie skonfiguruj sesję programu PowerShell tak, aby wartości nie były p
 
     $Formatenumerationlimit =-1
 
-### Potwierdzanie gotowości kont użytkowników do użycia w usłudze Azure Information Protection
-<a id="confirm-user-accounts-are-ready-for-azure-information-protection" class="xliff"></a>
+### <a name="confirm-user-accounts-are-ready-for-azure-information-protection"></a>Potwierdzanie gotowości kont użytkowników do użycia w usłudze Azure Information Protection
 
 Aby potwierdzić konta użytkowników, uruchom następujące polecenie:
 
@@ -178,8 +169,7 @@ W większości przypadków wartość pola UserPrincipalName będzie zgodna z jed
 > 
 > Na przykład: `Get-MsolGroup | select DisplayName, ProxyAddresses | Export-Csv -Path UserAccounts.csv`
 
-### Potwierdzanie gotowości kont grup do użycia w usłudze Azure Information Protection
-<a id="confirm-group-accounts-are-ready-for-azure-information-protection" class="xliff"></a>
+### <a name="confirm-group-accounts-are-ready-for-azure-information-protection"></a>Potwierdzanie gotowości kont grup do użycia w usłudze Azure Information Protection
 
 Aby potwierdzić konta grupy, użyj następującego polecenia:
          
@@ -193,8 +183,7 @@ W przypadku dwóch scenariuszy konfiguracji Azure Rights Management korzystając
 
     Get-MsolGroup | where {$_.GroupType -eq "Security"}
 
-## Zagadnienia dotyczące usługi Azure Information Protection w przypadku zmiany adresów e-mail
-<a id="considerations-for-azure-information-protection-if-email-addresses-change" class="xliff"></a>
+## <a name="considerations-for-azure-information-protection-if-email-addresses-change"></a>Zagadnienia dotyczące usługi Azure Information Protection w przypadku zmiany adresów e-mail
 
 Jeśli zmienisz adres e-mail użytkownika lub grupy, zalecamy dodanie starego adresu e-mail jako drugiego adresu e-mail (znanego także jako adres serwera proxy, alias lub alternatywny adres e-mail) do użytkownika lub grupy. Wykonanie tej czynności spowoduje dodanie starego adresu e-mail do atrybutu proxyAddresses usługi Azure AD. Administrowanie tym kontem zapewnia ciągłość działania w przypadku dowolnych praw użytkowania lub innych konfiguracji zapisanych, gdy stary adres e-mail był w użyciu. 
 
@@ -202,16 +191,14 @@ Jeśli nie możesz tego zrobić, istnieje ryzyko, że w przypadku użytkownika l
 
 Pamiętaj, że zmiana adresu e-mail grupy występuje rzadko, więc jeśli przypisujesz prawa użytkowania do grupy, a nie do poszczególnych użytkowników, zmiana adresu e-mail użytkownika nie ma znaczenia. W tym scenariuszu prawa użytkowania są przypisywane do adresu e-mail grupy, a nie do adresów e-mail poszczególnych użytkowników. Jest to najbardziej prawdopodobna (i zalecana) metoda, której administrator może użyć w celu skonfigurowania praw użytkowania chroniących dokumenty i wiadomości e-mail. Użytkownicy mogą jednak przeważnie przypisywać poszczególnym osobom uprawnienia niestandardowe. Ponieważ nie zawsze wiadomo, czy konto użytkownika lub grupy było używane do udzielania dostępu, najbezpieczniej jest zawsze dodać stary adres e-mail jako drugi adres e-mail.
 
-## Buforowanie członkostwa w grupach przez usługę Azure Rights Management
-<a id="group-membership-caching-by-azure-rights-management" class="xliff"></a>
+## <a name="group-membership-caching-by-azure-rights-management"></a>Buforowanie członkostwa w grupach przez usługę Azure Rights Management
 
 Ze względu na wydajność członkostwo w grupach jest buforowane przez usługę Azure Rights Management. Oznacza to, że wszelkie zmiany członkostwa w grupach w usłudze Azure AD mogą zacząć obowiązywać po upływie nawet trzech godzin, jeśli te grupy są używane przez usługę Azure Rights Management. Okres ten może ulec zmianie. 
 
 Pamiętaj, aby uwzględnić to opóźnienie w przypadku wszelkich zmian i testów przeprowadzanych podczas używania grup usługi Azure Rights Management. Czynności te mogą dotyczyć na przykład przypisywania praw użytkowania lub konfigurowania usługi Azure Rights Management. 
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Po potwierdzeniu, że użytkownicy i grupy mogą być używane w usłudze Azure Information Protection i wszystko jest gotowe do objęcia dokumentów i wiadomości e-mail ochroną, aktywuj usługę Rights Management, aby włączyć tę usługę ochrony danych. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
