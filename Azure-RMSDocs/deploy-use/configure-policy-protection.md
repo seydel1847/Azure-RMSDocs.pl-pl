@@ -12,12 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ms.openlocfilehash: f5c4e2f7513832a884820ec0c57c7da2dec5f04e
 ms.sourcegitcommit: 8b768e7e249e124f24acdf630d165eaf743f9c21
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/05/2017
 ---
-# Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
-<a id="how-to-configure-a-label-for-rights-management-protection" class="xliff"></a>
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
 >*Dotyczy: Azure Information Protection*
 
@@ -25,8 +24,7 @@ Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić przy użyciu 
 
 Szablon może być jednym z szablonów domyślnych, które są automatycznie tworzone podczas aktywacji usługi Azure Rights Management, lub szablonem niestandardowym. Szablony działów usługi Azure Rights Management są obsługiwane, ale stosują ochronę tylko wtedy, gdy autor dokumentu lub wiadomości e-mail znajduje się w skonfigurowanym zakresie szablonu. Jeśli użytkownik znajduje się poza zakresem, zobaczy komunikat informujący o tym, że usługa Azure Information Protection nie może zastosować etykiety.
 
-## Jak działa ochrona
-<a id="how-the-protection-works" class="xliff"></a>
+## <a name="how-the-protection-works"></a>Jak działa ochrona
 
 Gdy dokument lub wiadomość e-mail są chronione przez usługę Rights Management, będą szyfrowane podczas przechowywania i podczas przesyłania, a odszyfrować je mogą tylko autoryzowani użytkownicy. Szyfrowanie zostaje utrzymane w dokumencie lub wiadomości e-mail, nawet w przypadku zmiany nazwy dokumentu lub wiadomości. Ponadto możesz skonfigurować prawa i ograniczenia użytkowania, np.:
 
@@ -52,8 +50,7 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
 - W przypadku lokalnej instalacji programu Exchange należy wdrożyć [łącznik usługi RMS i skonfigurować serwery Exchange](../deploy-use/deploy-rms-connector.md). 
 
 
-## Aby skonfigurować etykietę pod kątem ochrony usługi Rights Management
-<a id="to-configure-a-label-for-rights-management-protection" class="xliff"></a>
+## <a name="to-configure-a-label-for-rights-management-protection"></a>Aby skonfigurować etykietę pod kątem ochrony usługi Rights Management
 
 1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
 
@@ -122,8 +119,7 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
 
 13. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

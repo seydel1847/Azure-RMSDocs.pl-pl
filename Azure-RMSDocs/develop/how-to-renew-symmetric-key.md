@@ -13,7 +13,7 @@ ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
 ms.openlocfilehash: 6153067c308206cb93ad99de1075913c68d1fa3b
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---

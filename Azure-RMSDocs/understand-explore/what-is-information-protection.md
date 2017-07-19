@@ -16,8 +16,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/12/2017
 ---
-# Co to jest Azure Information Protection?
-<a id="what-is-azure-information-protection" class="xliff"></a>
+# <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
 >*Dotyczy: Azure Information Protection*
 
@@ -29,8 +28,7 @@ Na poniższej ilustracji przedstawiono przykładowe zastosowanie usługi Azure I
 
 Po sklasyfikowaniu (i opcjonalnym zabezpieczeniu) całej zawartości można śledzić i kontrolować sposób jej użycia. Na przykład można analizować przepływ danych w celu uzyskania wglądu w procesy biznesowe, wykrywać niebezpieczne zachowania i podejmować działania naprawcze, śledzić dostęp do dokumentów czy zapobiegać wyciekom lub nieprawidłowemu użyciu danych.
 
-## Na czym polega klasyfikacja przy użyciu etykiet
-<a id="how-labels-apply-classification" class="xliff"></a>
+## <a name="how-labels-apply-classification"></a>Na czym polega klasyfikacja przy użyciu etykiet
 
 Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu. Dzięki temu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
 
@@ -39,8 +37,7 @@ Na przykład poniższa wiadomość e-mail została sklasyfikowana jako ogólna. 
 ![Przykład stopki i nagłówków wiadomości e-mail z wyświetloną klasyfikacją usługi Azure Information Protection](../media/example-email-footerv2.png)
 
 
-## Sposób ochrony danych
-<a id="how-data-is-protected" class="xliff"></a>
+## <a name="how-data-is-protected"></a>Sposób ochrony danych
 
 Stosowana technologia ochrony korzysta z usługi o nazwie *Azure Rights Management* (często skracanej do postaci Azure RMS). Technologia ta jest zintegrowana z innymi usługami i aplikacjami chmurowymi firmy Microsoft, takimi jak Office 365 czy Azure Active Directory. Można jej również używać razem z własnymi aplikacjami biznesowymi oraz rozwiązaniami do ochrony informacji dostarczanymi przez producentów oprogramowania, zarówno w przypadku aplikacji i rozwiązań hostowanych lokalnie, jak i w chmurze.
 
@@ -48,8 +45,7 @@ Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Pod
 
 Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. Te zadania ochrony można uprościć i usprawnić przy użyciu *szablonów usługi Rights Management*.
 
-### Szablony usługi Rights Management
-<a id="rights-management-templates" class="xliff"></a>
+### <a name="rights-management-templates"></a>Szablony usługi Rights Management
 
 Po aktywowaniu usługi Azure Rights Management zostają automatycznie utworzone dwa szablony domyślne, ograniczające dostęp do danych do użytkowników w ramach organizacji. Za pomocą tych szablonów można od razu przystąpić do ochrony danych przed wyciekiem poza organizację. Jako uzupełnienie szablonów domyślnych można skonfigurować własne szablony niestandardowe, stosujące bardziej restrykcyjne mechanizmy kontroli.
 
@@ -65,8 +61,7 @@ Te same szablony można wybrać w centrum administracyjnym programu Exchange. Mo
 
 Aby uzyskać więcej informacji na temat mechanizmów ochrony w usłudze Azure Rights Management, zobacz [Co to jest usługa Azure Rights Management?](what-is-azure-rms.md)
 
-## Integracja z przepływami pracy użytkownika końcowego
-<a id="integration-with-end-user-workflows" class="xliff"></a>
+## <a name="integration-with-end-user-workflows"></a>Integracja z przepływami pracy użytkownika końcowego
 
 Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji, przedstawiającej ten pasek w programie Word. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
 
@@ -87,8 +82,7 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 ![Ikona funkcji Odwołaj dostęp w witrynie śledzenia dokumentów](../media/tracking-site-revoke-access-icon.png)
 
 
-## Zasoby dotyczące usługi Azure Information Protection
-<a id="resources-for-azure-information-protection" class="xliff"></a>
+## <a name="resources-for-azure-information-protection"></a>Zasoby dotyczące usługi Azure Information Protection
 
 - Zawiadomienie: [Usługa Azure Information jest teraz ogólnie dostępna](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)
 
@@ -117,8 +111,7 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
     - [BRK2128: Send secure email to anyone with the power of Microsoft Office 365 and Azure Information Protection](https://myignite.microsoft.com/videos?q=BRK2128) (Wysyłanie zabezpieczonej poczty e-mail do wszystkich odbiorców za pomocą usług Microsoft Office 365 i Azure Information Protection)
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 
 Przeczytaj wpis w blogu: [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: przygotowanie, ustawianie, ochrona)
 

@@ -14,12 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.openlocfilehash: 56a17c745ba55c2c7b97bd444be42e3554e795b9
 ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
 ---
-# Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
-<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
+# <a name="create-configure-and-publish-a-custom-template"></a>Tworzenie, konfigurowanie i publikowanie szablonu niestandardowego
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -33,8 +32,7 @@ Musisz być administratorem globalnym, aby tworzyć szablony i zarządzać nimi 
 
 Wykonując poniższe procedury, można tworzyć, konfigurować i publikować szablony niestandardowe dla usługi Rights Management.
 
-## Tworzenie szablonu niestandardowego
-<a id="to-create-a-custom-template" class="xliff"></a>
+## <a name="to-create-a-custom-template"></a>Tworzenie szablonu niestandardowego
 
 1.  W zależności od tego, czy logowanie ma miejsce w Centrum administracyjnym usługi Office 365, czy też w klasycznym portalu Azure, wykonaj jedną z następujących czynności:
 
@@ -74,8 +72,7 @@ Wykonując poniższe procedury, można tworzyć, konfigurować i publikować sza
 
 4. Na stronie szybkiego startu **Rozpoczynanie pracy z usługą Azure Rights Management** kliknij opcję **Zarządzaj szablonami zasad praw**. Nowo dodany szablon zostanie wyświetlony na liście szablonów ze statusem **Zarchiwizowany**. Na tym etapie szablon jest utworzony, ale nie jest skonfigurowany. Nie jest także widoczny dla użytkowników.
 
-## Konfiguracja i publikacja szablonu niestandardowego
-<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
+## <a name="to-configure-and-publish-a-custom-template"></a>Konfiguracja i publikacja szablonu niestandardowego
 
 1.  Wybierz nowo utworzony szablon na stronie **SZABLONY** w klasycznym portalu Azure.
 
@@ -167,8 +164,7 @@ Aby wprowadzić zmiany w szablonie, zaznacz go i ponownie wykonaj kroki ze stron
 > [!WARNING]
 > Po wprowadzeniu zmian do szablonu, który został wcześniej zapisany, w przypadku klientów zmiany te nie będą widoczne w szablonie do czasu, gdy szablony zostaną odświeżone na komputerach klienckich. Aby uzyskać więcej informacji, zobacz [Odświeżanie szablonów dla użytkowników](refresh-templates.md).
 
-## Zobacz też
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Zobacz też
 [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -18,8 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 07/07/2017
 ---
-# Lokalne zasady dotyczące komentarzy w dokumentacji usługi Azure Information Protection
-<a id="house-rules-for-comments-on-the-azure-information-protection-documentation" class="xliff"></a>
+# <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Lokalne zasady dotyczące komentarzy w dokumentacji usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
