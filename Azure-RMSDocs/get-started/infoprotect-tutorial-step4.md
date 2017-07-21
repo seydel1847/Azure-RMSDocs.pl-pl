@@ -4,17 +4,17 @@ description: "Krok 4 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 9a21c10404582000a55ee0cea554aad9b5a552b3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 06/30/2017
 
 Po otwarciu dokumentu programu Word z zainstalowanym klientem usługi Azure Information Protection możesz sprawdzić, jak łatwo rozpocząć etykietowanie i chronienie dokumentu za pomocą skonfigurowanej zasady.
 
-Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do tego przejdziemy, użyjemy naszego niezapisanego dokumentu, aby zobaczyć, jak łatwo stosować i zmieniać etykiety.
+Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do tego przejdziemy, użyjemy naszego niezapisanego dokumentu, aby zobaczyć, jak w łatwy sposób stosować i zmieniać etykiety.
 
 ## <a name="to-manually-change-our-default-label"></a>Aby ręcznie zmienić naszą domyślną etykietę
 
@@ -40,7 +40,7 @@ Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok
 
 Spowoduje to ponowne wyświetlenie dostępnych etykiet.
 
-Teraz wybierz pierwszą etykietę **Osobiste**. Z powodu wybrania etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego obniżany jest poziom klasyfikacji:
+Teraz wybierz pierwszą etykietę **Osobiste**. Z powodu wybrania etykiety o klasyfikacji niższej niż etykieta wybrana wcześniej dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego obniżany jest poziom klasyfikacji:
 
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit o uzasadnienie potwierdzenia obniżenia](../media/info-protect-lower-justification.png)
 
@@ -54,7 +54,7 @@ Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykie
 
 Tym razem po wyświetleniu monitu wpisz komentarz o treści „Ten dokument nie wymaga klasyfikacji” i kliknij przycisk **Potwierdź**.  
 
-Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej:
+Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nie ustawiono**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej:
 
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — usuwanie klasyfikacji](../media/sensitivity-not-setv2.png)
 
@@ -69,7 +69,7 @@ Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nieustawione**, k
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit z zaleceniem klasyfikacji](../media/change-nowv2.png)
 
-    Poza brakiem wyświetlania przez dokument, że została zastosowana skonfigurowana etykieta (na przykład **Poufne\Wszyscy pracownicy**), natychmiast zobaczysz znak wodny z nazwą organizacji na całej stronie, jak również stopkę **Sklasyfikowane jako Poufne**. 
+    Poza brakiem w dokumencie informacji o zastosowaniu skonfigurowanej etykiety (na przykład **Poufne\Wszyscy pracownicy**) natychmiast widoczny jest znak wodny z nazwą organizacji na całej stronie oraz stopka **Sklasyfikowane jako poufne**. 
 
     Dokument jest również chroniony za pomocą podanego szablonu Azure Rights Management, co można potwierdzić, klikając kartę **Plik** i wyświetlając informację **Ochrona dokumentu**. Jeśli używany jest domyślny szablon Poufne, zostaną wyświetlone informacje, że zasięg dokumentu jest ograniczony do użytkowników wewnętrznych (użytkownicy spoza organizacji nie będą mogli otworzyć dokumentu) i jego zawartość nie może być kopiowana ani drukowana. Jako właściciel dokumentu możesz skopiować i wydrukować dokument, ale jeśli wyślesz go pocztą e-mail do innego użytkownika w organizacji, nie będzie on mógł wykonać tych czynności.
 

@@ -12,16 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e3910ecc2bed3f95660be86b6139e568815f24a0
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: 491d3191a713bf30ef0da58e359249869d3c82a9
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Podręcznik administratora klienta usługi Azure Information Protection
-<a id="azure-information-protection-client-administrator-guide" class="xliff"></a>
+# <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
->*Dotyczy: usługi zarządzania prawami dostępu w usłudze Active Directory, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Informacje zawarte w tym przewodniku są przydatne dla osób odpowiedzialnych za klienta usługi Azure Information Protection w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych, niż jest dostępnych w [podręczniku użytkownika klienta usługi Azure Information Protection](client-user-guide.md). 
 
@@ -43,8 +42,7 @@ Na przykład:
 
 **Czy masz pytanie, na które nie ma odpowiedzi w tej dokumentacji?** Odwiedź [witrynę Yammer usługi Azure Information Protection](https://www.yammer.com/AskIPTeam). 
 
-## Omówienie aspektów technicznych klienta usługi Azure Information Protection
-<a id="technical-overview-of-the-azure-information-protection-client" class="xliff"></a>
+## <a name="technical-overview-of-the-azure-information-protection-client"></a>Omówienie aspektów technicznych klienta usługi Azure Information Protection
 
 Klient usługi Azure Information Protection zawiera następujące elementy:
 
@@ -63,8 +61,7 @@ Klient usługi Azure Information Protection najlepiej nadaje się do pracy z us�
 Jeśli korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 
-## Czy należy wdrożyć klienta usługi Azure Information Protection?
-<a id="should-you-deploy-the-azure-information-protection-client" class="xliff"></a>
+## <a name="should-you-deploy-the-azure-information-protection-client"></a>Czy należy wdrożyć klienta usługi Azure Information Protection?
 
 Dokonaj wdrożenia klienta usługi Azure Information Protection w następujących przypadkach:
 
@@ -88,15 +85,13 @@ Przykład ukazujący dodatek klienta usługi Azure Information Protection w apli
 
 ![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/word2016-calloutsv2.png)
 
-## Jak zainstalować klienta usługi Azure Information Protection dla użytkowników
-<a id="how-to-install-the-azure-information-protection-client-for-users" class="xliff"></a>
+## <a name="how-to-install-the-azure-information-protection-client-for-users"></a>Jak zainstalować klienta usługi Azure Information Protection dla użytkowników
 
 Przed zainstalowaniem klienta sprawdź, czy komputer ma wymagane wersje systemu operacyjnego i aplikacji dla usługi Azure Information Protection: [Wymagania dla usługi Azure Information Protection](../get-started/requirements-azure-rms.md). 
 
 Następnie sprawdź dodatkowe wymagania wstępne dla klienta usługi Azure Information Protection.
 
-### Dodatkowe wymagania wstępne dla klienta usługi Azure Information Protection
-<a id="additional-prerequisites-for-the-azure-information-protection-client" class="xliff"></a>
+### <a name="additional-prerequisites-for-the-azure-information-protection-client"></a>Dodatkowe wymagania wstępne dla klienta usługi Azure Information Protection
 
 - Microsoft .NET Framework 4.6.2
     
@@ -123,8 +118,7 @@ Następnie sprawdź dodatkowe wymagania wstępne dla klienta usługi Azure Infor
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.
 
-### Opcje instalacji klienta usługi Azure Information Protection dla użytkowników
-<a id="options-to-install-the-azure-information-protection-client-for-users" class="xliff"></a>
+### <a name="options-to-install-the-azure-information-protection-client-for-users"></a>Opcje instalacji klienta usługi Azure Information Protection dla użytkowników
 
 Istnieją trzy opcje instalacji klienta dla użytkowników:
 
@@ -134,8 +128,7 @@ Istnieją trzy opcje instalacji klienta dla użytkowników:
 
 **Wdrażanie instalatora klienta systemu Windows (msi)** : obsługiwane w przypadku instalacji cichej wykorzystującej mechanizm wdrożenia centralnego, taki jak zasady grupy, program Configuration Manager i Microsoft Intune. Ta metoda jest niezbędna w przypadku komputerów z systemem Windows 10, które są zarządzane przez usługę Intune i aplikację MDM (Mobile Device Management), ponieważ dla tych komputerów pliki wykonywalne nie są obsługiwane przez instalację. Jednak w przypadku użycia tej metody instalacji należy ręcznie sprawdzić i zainstalować lub odinstalować oprogramowanie zależne, co w wypadku pliku wykonywalnego byłoby przeprowadzone przez instalator. [Instrukcje](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
 
-### Aby zainstalować klienta usługi Azure Information Protection dla użytkowników przy użyciu instalatora wykonywalnego
-<a id="to-install-the-azure-information-protection-client-by-using-the-executable-installer" class="xliff"></a>
+### <a name="to-install-the-azure-information-protection-client-by-using-the-executable-installer"></a>Aby zainstalować klienta usługi Azure Information Protection dla użytkowników przy użyciu instalatora wykonywalnego
 
 Użyj poniższych instrukcji, aby zainstalować klienta bez korzystania z katalogu aktualizacji Microsoft Update ani wdrażania pliku msi przy użyciu metody wdrażania centralnego, jak w przypadku usługi Intune.
 
@@ -175,8 +168,7 @@ Użyj poniższych instrukcji, aby zainstalować klienta bez korzystania z katalo
     
     W tym pliku dziennika wyszukaj następujący ciąg: **Product: Microsoft Azure Information Protection -- Installation completed successfully.** (Produkt: Microsoft Azure Information Protection — Instalacja została pomyślnie ukończona). Jeśli instalacja nie powiodła się, ten plik dziennika zawiera szczegółowe informacje ułatwiające identyfikację i rozwiązywanie problemów.
 
-#### Więcej informacji na temat parametru instalacji ServiceLocation
-<a id="more-information-about-the-servicelocation-installation-parameter" class="xliff"></a>
+#### <a name="more-information-about-the-servicelocation-installation-parameter"></a>Więcej informacji na temat parametru instalacji ServiceLocation
 
 W przypadku instalowania klienta dla użytkowników pakietu Office 2010 nieposiadających lokalnych uprawnień administracyjnych należy określić parametr ServiceLocation i adres URL usługi Azure Rights Management. Te parametr i wartość tworzą oraz ustawiają następujące klucze rejestru:
 
@@ -190,8 +182,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 Zidentyfikuj wartość do określenia dla parametru ServiceLocation, wykonując następującą procedurę. 
 
-##### Aby zidentyfikować wartość do określenia dla parametru ServiceLocation
-<a id="to-identify-the-value-to-specify-for-the-servicelocation-parameter" class="xliff"></a>
+##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>Aby zidentyfikować wartość do określenia dla parametru ServiceLocation
 
 1. Z poziomu sesji programu PowerShell najpierw uruchom polecenie [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice) i określ poświadczenia administratora, aby nawiązać połączenie z usługą Azure Rights Management. Następnie uruchom polecenie [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration). 
  
@@ -208,8 +199,7 @@ Zidentyfikuj wartość do określenia dla parametru ServiceLocation, wykonując 
 Przykład instalacji klienta w trybie dyskretnym dla pakietu Office 2010 i usługi Azure RMS: `AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 
 
-#### Więcej informacji na temat parametru instalacji DowngradeDotNetRequirement
-<a id="more-information-about-the-downgradedotnetrequirement-installation-parameter" class="xliff"></a>
+#### <a name="more-information-about-the-downgradedotnetrequirement-installation-parameter"></a>Więcej informacji na temat parametru instalacji DowngradeDotNetRequirement
 
 Aby umożliwić obsługę automatycznych uaktualnień z użyciem usługi Windows Update oraz niezawodną integrację z aplikacjami pakietu Office, klient usługi Azure Information Protection korzysta z programu Microsoft .NET Framework w wersji 4.6.2. Podczas instalacji ma domyślnie miejsce sprawdzenie dostępności tej wersji, a w przypadku jej braku — próba jej instalacji. Następnie instalacja wymaga ponownego uruchomienia komputera.
 
@@ -221,8 +211,7 @@ Firma Microsoft zaleca zachowanie ostrożności przy stosowaniu tego parametru i
 
 Pamiętaj również, że w przypadku użycia usługi Windows Update do uaktualniania klienta usługi Azure Information Protection konieczne będzie zastosowanie innego mechanizmu wdrażania oprogramowania w celu uaktualnienia klienta do nowszej wersji.
 
-### Jak zainstalować klienta usługi Azure Information Protection dla użytkowników przy użyciu instalatora msi
-<a id="to-install-the-azure-information-protection-client-by-using-the-msi-installer" class="xliff"></a>
+### <a name="to-install-the-azure-information-protection-client-by-using-the-msi-installer"></a>Jak zainstalować klienta usługi Azure Information Protection dla użytkowników przy użyciu instalatora msi
 
 W przypadku wdrożenia centralnego skorzystaj z poniższych informacji, które są specyficzne dla instalacji wersji msi klienta usługi Azure Information Protection. 
 
@@ -245,8 +234,7 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
 
 3. W przypadku instalacji domyślnej uruchom plik msi z parametrem **/quiet**, na przykład `AzInfoProtection.msi /quiet`. Jednak może okazać się konieczne określenie dodatkowych parametrów instalacji, które są udokumentowane w [instrukcjach Instalatora wykonywalnego](#to-install-the-azure-information-protection-client-by-using-the-executable-installer).  
 
-## Dodatkowe czynności kontrolne i rozwiązywanie problemów
-<a id="additional-checks-and-troubleshooting" class="xliff"></a>
+## <a name="additional-checks-and-troubleshooting"></a>Dodatkowe czynności kontrolne i rozwiązywanie problemów
 
 Użyj opcji **Pomoc i opinie**, aby otworzyć okno dialogowe **Microsoft Azure Information Protection**:
 
@@ -254,8 +242,7 @@ Użyj opcji **Pomoc i opinie**, aby otworzyć okno dialogowe **Microsoft Azure I
 
 - Korzystając z Eksploratora plików, zaznacz plik, pliki lub folder, kliknij je prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**, a następnie wybierz opcję **Pomoc i opinie**. 
 
-### Sekcja **Pomoc i opinie**
-<a id="help-and-feedback-section" class="xliff"></a>
+### <a name="help-and-feedback-section"></a>Sekcja **Pomoc i opinie**
 
 Link **Powiedz mi więcej** domyślnie prowadzi do witryny internetowej usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../deploy-use/configure-policy-settings.md) w zasadach usługi Azure Information Protection.
 
@@ -276,8 +263,7 @@ Więcej informacji na temat opcji **Resetuj**:
 - Po zresetowaniu klienta musisz ponownie zainicjować środowisko użytkownika, w którym będą pobierane certyfikaty klienta i najnowsze szablony. W tym celu zamknij wszystkie wystąpienia pakietu Office i uruchom ponownie aplikację pakietu Office. Ta akcja spowoduje również sprawdzenie, czy zostały pobrane najnowsze zasady usługi Azure Information Protection. Wykonaj tę czynność przed ponownym uruchomieniem testów diagnostycznych.
 
 
-### Sekcja **Stan klienta**
-<a id="client-status-section" class="xliff"></a>
+### <a name="client-status-section"></a>Sekcja **Stan klienta**
 
 Użyj wartości **Połączono jako**, aby upewnić się, że wyświetlana nazwa użytkownika identyfikuje konto przeznaczone do użycia w ramach procesu uwierzytelniania usługi Azure Information Protection. Ta nazwa użytkownika musi pasować do konta używanego w usłudze Office 365 lub Azure Active Directory. Konto musi również należeć do dzierżawy skonfigurowanej pod kątem obsługi usługi Azure Information Protection.
 
@@ -290,8 +276,7 @@ Jeśli widzisz komunikat **Ten klient nie ma licencji dla pakietu Office Profess
 Użyj informacji z obszaru **Wersja**, aby potwierdzić, która wersja klienta jest zainstalowana. Należy sprawdzić, czy jest zainstalowana najnowsza wersja wraz z odpowiednimi poprawkami i nowymi funkcjami. W tym celu należy kliknąć link **Co nowego** i sprawdzić zawartość obszaru [Historia wersji](client-version-release-history.md) klienta.
 
 
-## Aby odinstalować klienta usługi Azure Information Protection
-<a id="to-uninstall-the-azure-information-protection-client" class="xliff"></a>
+## <a name="to-uninstall-the-azure-information-protection-client"></a>Aby odinstalować klienta usługi Azure Information Protection
 
 Można użyć dowolnej z tych opcji:
 
@@ -301,8 +286,7 @@ Można użyć dowolnej z tych opcji:
 
 - Uruchom plik wykonywalny z opcją **/uninstall**. Na przykład: `AzInfoProtection.exe /uninstall`
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 Po zainstalowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)

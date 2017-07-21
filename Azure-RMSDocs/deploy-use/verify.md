@@ -4,7 +4,7 @@ description: "Instrukcje służące do sprawdzenia, czy usługa działa zgodnie 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,21 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 50da38ee5e852d72458845a97ebe005f4949d265
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: 6dcc7fd3cfbb4bf1cf215936a4307244d62f0240
+ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Weryfikowanie usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Po aktywowaniu usługi Azure Rights Management w ramach usługi Azure Information Protection i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa ochrony działa zgodnie z oczekiwaniami, włączając ochronę pliku lub wiadomości e-mail przy użyciu jednego konta użytkownika, a następnie próbując otworzyć tę chronioną zawartość i użyć jej przy użyciu innego konta użytkownika.
+Po aktywowaniu usługi Azure Rights Management w ramach usługi Azure Information Protection i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa ochrony działa zgodnie z oczekiwaniami. 
 
-Aby wykonać ten test, możesz użyć informacji z tematu [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](help-users.md).
+Wykonaj prosty test weryfikacyjny polegający na objęciu ochroną dokumentu lub wiadomości e-mail przy użyciu jednego konta użytkownika, a następnie podjęciu próby otwarcia i użycia tej chronionej zawartości z innego konta użytkownika na innym komputerze.
 
-Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Mapa wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md) i użyj [narzędzia Analizator usług RMS](http://www.microsoft.com/en-us/download/details.aspx?id=46437) ułatwiającego identyfikowanie i rozwiązywanie problemów. Możesz również uruchamiać to narzędzie w celu ogólnego sprawdzania kondycji.
+Informacje na temat przeprowadzenia tego testu można znaleźć w temacie [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](help-users.md).
+
+Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 > [!TIP]
 > Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).

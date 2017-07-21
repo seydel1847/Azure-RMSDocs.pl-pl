@@ -4,7 +4,7 @@ description: "Określanie wymagań wstępnych dotyczących wdrażania usługi Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,21 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 74c0725857148fe12943bd9368173124cb059dcf
-ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.openlocfilehash: 2a41876a8c307b0736901de895e10cf3d3201809
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Wymagania dotyczące usługi Azure Information Protection
-<a id="requirements-for-azure-information-protection" class="xliff"></a>
+# <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij się, że następujące wymagania wstępne zostały spełnione. 
 
-## Subskrypcja usługi Azure Information Protection
-<a id="subscription-for-azure-information-protection" class="xliff"></a>
+## <a name="subscription-for-azure-information-protection"></a>Subskrypcja usługi Azure Information Protection
 
 Na potrzeby klasyfikacji, etykietowania i ochrony musisz dysponować [planem usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
 
@@ -37,8 +35,7 @@ Aby upewnić się, że firmowa subskrypcja obejmuje funkcje usługi Azure Inform
 > [!NOTE]
 > Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na tej stronie, tylko skontaktuj się z konsultantem ds. klientów firmy Microsoft lub [Pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support).
 
-## Azure Active Directory
-<a id="azure-active-directory" class="xliff"></a>
+## <a name="azure-active-directory"></a>Azure Active Directory
 
 Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), musisz również skonfigurować integrację katalogów.
 
@@ -48,8 +45,7 @@ Aby uzyskać więcej informacji na temat wymagań dotyczących uwierzytelniania,
 
 Aby uzyskać więcej informacji na temat wymagań dotyczących kont użytkowników i grup do autoryzacji, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../plan-design/prepare.md).
 
-## Urządzenia klienckie
-<a id="client-devices" class="xliff"></a>
+## <a name="client-devices"></a>Urządzenia klienckie
 
 Użytkownicy muszą mieć urządzenia klienckie (komputer lub urządzenie przenośne) z systemem operacyjnym, który obsługuje usługę Azure Information Protection.
 
@@ -69,12 +65,11 @@ Następujące urządzenia obsługują klienta usługi Azure Information Protecti
 
 - Windows Server 2008 R2 
 
-W przypadku wymienionych wersji serwerowych klient usługi Azure Information Protection jest obsługiwany przez usługi pulpitu zdalnego. W przypadku usuwania profilów użytkowników podczas korzystania z klienta usługi Azure Information Protection z usługami pulpitu zdalnego nie usuwaj folderu **%LocalAppData%\Roaming\Microsoft\Protect**.
+W przypadku wymienionych wersji serwerowych klient usługi Azure Information Protection jest obsługiwany przez usługi pulpitu zdalnego. W przypadku usuwania profilów użytkowników podczas korzystania z klienta usługi Azure Information Protection z usługami pulpitu zdalnego nie usuwaj folderu **%Appdata%\Microsoft\Protect**.
 
 Dane chronione przez klienta usługi Azure Information Protection za pomocą usługi Azure Rights Management mogą być używane przez [te same urządzenia](requirements-client-devices.md), które obsługują usługę Azure Rights Management.
 
-## Aplikacje
-<a id="applications" class="xliff"></a>
+## <a name="applications"></a>Aplikacje
 
 Klient usługi Azure Information Protection umożliwia etykietowanie i ochronę dokumentów oraz wiadomości e-mail za pośrednictwem aplikacji pakietu Office **Word**, **Excel**, **PowerPoint** i **Outlook** pochodzących z dowolnych z następujących pakietów Office:
 
@@ -90,8 +85,7 @@ Inne wersje pakietu Office nie mogą chronić dokumentów i wiadomości e-mail p
 
 Aby uzyskać więcej informacji na temat wersji pakietów Office obsługujących usługę ochrony danych, zobacz [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](requirements-applications.md).
 
-## Zapory i infrastruktura sieciowa
-<a id="firewalls-and-network-infrastructure" class="xliff"></a>
+## <a name="firewalls-and-network-infrastructure"></a>Zapory i infrastruktura sieciowa
 
 Jeśli jest używana zapora lub podobne pośredniczące urządzenie sieciowe skonfigurowane pod kątem zezwalania na określone połączenia, zapoznaj się z informacjami o usłudze **Azure Rights Management (RMS)** w sekcji [Portal usługi Office 365 i udostępnianie](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) następującego artykułu o pakiecie Office: [Adresy URL i zakresy adresów IP usługi Office 365](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
@@ -106,8 +100,7 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
 
-### Serwery lokalne
-<a id="on-premises-servers" class="xliff"></a>
+### <a name="on-premises-servers"></a>Serwery lokalne
 
 Następujące produkty serwera lokalnego są obsługiwane przez usługę Azure Rights Management działającą w ramach usługi Azure Information Protection:
 
@@ -119,8 +112,7 @@ Następujące produkty serwera lokalnego są obsługiwane przez usługę Azure R
 
 Aby uzyskać informacje o dodatkowych wymaganiach dla tego scenariusza, zobacz [On-premises servers that support Azure Rights Management data protection](requirements-servers.md) (Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management).
 
-### Współistnienie usług AD RMS z usługami Azure RMS
-<a id="coexistence-of-ad-rms-with-azure-rms" class="xliff"></a>
+### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Współistnienie usług AD RMS z usługami Azure RMS
 
 Poniższy scenariusz wdrożenia nie jest obsługiwany, chyba że jest używana ochrona usług AD RMS w ramach usługi Azure Information Protection — konfiguracja HYOK („Hold Your Own Key”):
 

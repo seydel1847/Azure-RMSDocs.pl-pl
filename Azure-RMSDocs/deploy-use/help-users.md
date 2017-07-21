@@ -4,7 +4,7 @@ description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/02/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: 8bc262e8f79b0c0485104b5bb0152dd0609c35c5
+ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
@@ -40,74 +40,85 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
 
 -   **Informacje dla działu pomocy technicznej:**
 
-    Jednym z najbardziej przydatnych narzędzi dla działu pomocy technicznej jest [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437). Operatorzy pomocy technicznej mogą uruchomić to narzędzie z opcją administratora usługi Azure RMS oraz mogą poprosić użytkowników o jego uruchomienie z opcją użytkownika usługi Azure RMS. Narzędzie może być pomocne nie tylko w identyfikowaniu problemów, ale także w rozwiązaniu problemów, które zostaną znalezione. W przypadku problemów nierozwiązanych umożliwia rejestrowanie informacji w dziennikach śledzenia.
     
-    Jeśli użytkownicy uruchamiają klienta usługi Azure Information Protection, operatorzy pomocy technicznej mogą ich poprosić o użycie opcji **Pomoc i opinie**, **Uruchom diagnostykę**, a następnie zresetowanie klienta. Jednak, inaczej niż w przypadku narzędzia RMS Analyzer, resetowanie nie powoduje wylogowania użytkownika ani ponownego uruchomienia klienta i nie ma możliwości korygowania automatycznego.
+    Jeśli użytkownicy uruchamiają klienta usługi Azure Information Protection, operatorzy pomocy technicznej mogą ich poprosić o użycie opcji **Pomoc i opinie**, **Uruchom diagnostykę**, a następnie zresetowanie klienta. Jednak resetowanie nie powoduje wylogowania użytkownika ani ponownego uruchomienia klienta i nie ma możliwości automatycznego korygowania.
 
-    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych, na przykład żądania działu prawnego lub menedżera po odejściu pracownika z organizacji, upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management.
+    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management. Mogą to być na przykład żądania z działu prawnego lub żądania menedżera po odejściu pracownika z organizacji. 
 
-    Oto niektóre typowe problemy zgłaszane przez użytkowników:
+    Niektóre typowe problemy zgłaszane przez użytkowników mogą należeć do następujących kategorii:
 
     -   **Pomoc dotycząca logowania:**
 
-        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Należy użyć służbowego lub szkolnego konta użytkownika i hasła skojarzonego z dzierżawą usługi Office 365 lub dzierżawą usługi Azure Active Directory. Nie należy korzystać z konta Microsoft (dawniej identyfikator Microsoft Live ID) ani osobistego konta e-mail użytkownika, ponieważ nie są one obecnie obsługiwane przez usługę Azure Rights Management. Przekaż użytkownikom i działowi pomocy technicznej instrukcje dotyczące wyboru konta, którego należy użyć w przypadku wyświetlenia monitu o poświadczenia podczas korzystania z tych aplikacji razem z usługą Azure Rights Management.
+        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Poświadczenia są wymagane dla służbowych kont użytkowników i haseł skojarzonych z dzierżawcą usługi Office 365 lub dzierżawcą usługi Azure Active Directory. Nie są wymagane w przypadku kont Microsoft (dawniej określanych jako identyfikatory Microsoft Live ID) ani osobistych kont e-mail użytkownika, ponieważ te konta nie są obecnie obsługiwane przez usługę Azure Rights Management. Przekaż użytkownikom i działowi pomocy technicznej instrukcje dotyczące wyboru konta, którego należy użyć w przypadku wyświetlenia monitu o poświadczenia podczas korzystania z tych aplikacji razem z usługą Azure Rights Management.
 
     -   **Problemy dotyczące ochrony lub używania zawartości:**
 
         Upewnij się, że użytkownicy mają odpowiednie instrukcje dotyczące aplikacji, z których korzystają, oraz używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure Rights Management. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
 
-        Jeśli użytkownik zaobserwuje błąd podczas próby ochrony lub korzystania z zawartości, poproś go o uruchomienie narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) jako użytkownik usługi Azure RMS.
+        Procesy uwierzytelniania i autoryzacji są zależne od kont i grup w usłudze Azure Active Directory. Aby potwierdzić, że konkretny użytkownik lub grupa może mieć upoważnienie do korzystania z zawartości chronionej, należy zastosować testy weryfikacyjne opisane w sekcji [Przygotowanie użytkowników i grup do korzystania z usługi Azure Information Protection](../plan-design/prepare.md).
 
-        Jeśli użytkownik zgłasza, że może otworzyć chronioną zawartość, ale nie ma potrzebnych praw, poproś go o uruchomienie narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) jako użytkownik usługi Azure RMS oraz pobierz i wyświetl szablony. W ten sposób możesz potwierdzić, że szablony zostały pomyślnie pobrane przez użytkownika, oraz sprawdzić, jakie uprawnienia zapewniają te szablony. Problem może polegać na tym, że użytkownik nie należy do prawidłowej grupy, która jest skonfigurowana dla danego szablonu, lub że szablon wymaga ponownej konfiguracji dla użytkownika.
+        Jeśli użytkownik zgłasza, że może otworzyć zawartość chronioną, ale nie ma wymaganych praw, problem może polegać na tym, że użytkownik nie jest członkiem właściwej grupy, która została skonfigurowana na potrzeby szablonu usługi Rights Management. Ewentualnie [szablon wymaga ponownego skonfigurowania](configure-policy-template.md) dla użytkownika lub grupy. 
+        
+        Jeśli prawa, jakimi dysponują użytkownicy są niezgodne z oczekiwaniami, sprawdź ich opis i dowolną implementację specyficzną dla aplikacji w [tabeli praw użytkowania](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions).
 
 Skorzystaj z poniższych sekcji zawierających informacje dotyczące aplikacji, aby ułatwić użytkownikom ochronę ważnych dokumentów i wiadomości e-mail.
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Korzystanie z ochrony informacji zapewnianej przez klienta usługi Azure Information Protection
-Klient usługi Azure Information Protection może być wymagany w przypadku użytkowników, aby możliwa były ochrona i używanie chronionych dokumentów i wiadomości e-mail, jeśli użytkownicy ci korzystają z pakietu Office 2010. Ponadto jego stosowanie jest zalecane także w przypadku komputerów i urządzeń przenośnych.
+Jeśli użytkownicy mają pakiet Office 2010, do ochrony i korzystania z chronionych dokumentów i wiadomości e-mail wymagany jest klient usługi Azure Information Protection (lub starsza aplikacja do udostępniania usług RMS). Jednak dla wszystkich komputerów i urządzeń przenośnych zalecany jest także klient usługi Azure Information Protection.
 
-Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów klient usługi Azure Information Protection umożliwia śledzenie dokumentów, które zostały objęte ochroną, i w razie potrzeby odwołanie dostępu do nich.
+Oprócz ułatwiania użytkownikom ochrony ważnych dokumentów i wiadomości e-mail klient usługi Azure Information Protection umożliwia śledzenie dokumentów, które zostały objęte ochroną. Śledzone dokumenty mogą być również odwoływane, w przypadku gdy autoryzowani wcześniej użytkownicy utracili prawo dostępu do nich.
 
 Aby uzyskać instrukcje dotyczące używania tego klienta dla komputerów z systemem Windows, zobacz [podręcznik użytkownika klienta usługi Azure Information Protection ](../rms-client/client-user-guide.md).
 
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013
-Jeśli używasz usługi Azure Rights Management, ale nie masz zainstalowanego klienta usługi Azure Information Protection, użytkownicy nie będą widzieć paska usługi Azure Information Protection w swoich aplikacjach klasycznych pakietu Office ani przycisku **Chroń** na wstążce lub opcji **Klasyfikuj i chroń** w Eksploratorze plików, który ułatwia korzystanie z tych elementów do ochrony plików. Tacy użytkownicy muszą wykonać instrukcje podobne do opisanych poniżej.
+Jeśli używasz usługi Azure Rights Management, ale nie masz zainstalowanego klienta usługi Azure Information Protection, użytkownicy nie będą widzieć paska usługi Azure Information Protection w swoich aplikacjach klasycznych pakietu Office, przycisku **Chroń** na wstążce ani opcji **Klasyfikuj i chroń** w Eksploratorze plików. Te dodatki ułatwiają użytkownikom ochronę plików i wiadomości e-mail. Tacy użytkownicy muszą wykonać instrukcje podobne do opisanych poniżej.
 
 > [!TIP]
 > Aby znaleźć pomoc dotyczącą aplikacji i instrukcje korzystania z ochrony informacji przy użyciu tych aplikacji, wyszukaj ciąg **IRM** razem z nazwą i wersją aplikacji.
 
 #### <a name="to-protect-a-document-in-word-2013"></a>Aby chronić dokument w programie Word 2013
 
-1.  W programie Microsoft Word utwórz nowy dokument.
+1.  W programie Microsoft Word utwórz dokument.
 
-2.  W menu **Plik** kliknij polecenie **Informacje**, po czym kliknij przycisk **Ochrona dokumentu**. Kliknij pozycję **Ogranicz dostęp**, a następnie wybierz szablon, aby szybko zastosować odpowiednie prawa użytkowania, lub wybierz opcję **Ogranicz dostęp** i wybierz prawa użytkowania samodzielnie.
+2.  W menu **Plik** kliknij pozycję **Informacje**, kliknij pozycję **Chroń dokument**, a następnie kliknij pozycję **Ogranicz dostęp**.
+
+3. Wybierz szablon, aby szybko zastosować odpowiednie prawa użytkowania, lub wybierz pozycję **Ogranicz dostęp** i samodzielnie wybierz prawa użytkowania.
 
     > [!NOTE]
-    > Jeśli korzystasz z usług Rights Management po raz pierwszy, po uzyskaniu kontaktu z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] zostanie wyświetlony monit o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office.
+    > Jeśli usługa Rights Management nie była wcześniej używana na komputerze, wybór opcji **Ogranicz dostęp** spowoduje nawiązanie połączenia z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] i wyświetlenie monitu o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office. Następnie można wybrać szablon i prawa użytkowania.
 
 3.  Zapisz dokument.
 
-Po otwarciu dokumentu przez innych użytkowników najpierw zostanie wykonane ich uwierzytelnienie. Jeśli użytkownik nie jest uprawniony do otwierania tego dokumentu, dokument nie zostanie otwarty. Jeśli użytkownik jest uprawniony do otwierania tego dokumentu, dokument zostanie otwarty z ograniczonymi prawami użytkowania określonymi dla danego użytkownika. Na przykład prawo użytkowania Tylko do wyświetlania nie zezwala na edycję lub zapis dokumentu przez użytkownika, nawet jeśli plik zostanie wcześniej skopiowany do innej lokalizacji. Prawa użytkowania są wyświetlane w górnej części dokumentu na transparencie informującym o ograniczeniach. Na transparencie mogą zostać wyświetlone uprawnienia zastosowane do dokumentu lub link umożliwiający ich wyświetlenie.
+Po otwarciu dokumentu przez innych użytkowników najpierw zostanie wykonane ich uwierzytelnienie. Jeśli użytkownik nie jest uprawniony do otwierania tego dokumentu, dokument nie zostanie otwarty. Jeśli użytkownik jest uprawniony do otwierania tego dokumentu, dokument zostanie otwarty z ograniczonymi [prawami użytkowania](../deploy-use/configure-usage-rights.md) określonymi dla danego użytkownika. 
+
+Na przykład prawo użytkowania Tylko do wyświetlania nie zezwala na edycję lub zapis dokumentu przez użytkownika, nawet jeśli plik zostanie wcześniej skopiowany do innej lokalizacji. 
+
+Prawa użytkowania są wyświetlane w górnej części dokumentu na transparencie informującym o ograniczeniach. Na transparencie mogą zostać wyświetlone uprawnienia zastosowane do dokumentu lub link umożliwiający ich wyświetlenie.
 
 #### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>Aby chronić wiadomość e-mail przy użyciu programu Outlook 2013 i usługi Exchange Online
 
-1.  W programie Outlook utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
+1.  W programie Outlook utwórz wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
 2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
-Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi prawami użytkowania, które zostały określone dla danego użytkownika. Na przykład, jeśli została wybrana opcja **Nie przesyłaj dalej**, na wstążce nie będzie dostępny przycisk Prześlij dalej.
+Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otwarciu chronionej wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi [prawami użytkowania](../deploy-use/configure-usage-rights.md), które zostały określone dla danego użytkownika. 
 
-#### <a name="to-protect-an-email-message-using-the-outlook-web-app"></a>Aby chronić wiadomość e-mail przy użyciu aplikacji Outlook Web App
+Na przykład, jeśli wiadomość e-mail jest chroniona za pomocą opcji **Nie przesyłaj dalej**, na wstążce nie jest dostępny przycisk Prześlij dalej.
 
-1.  W aplikacji Outlook Web App utwórz nową wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
+#### <a name="to-protect-an-email-message-using-outlook-on-the-web"></a>Ochrona wiadomości e-mail przy użyciu programu Outlook w sieci Web
+
+1.  W programie Outlook w sieci Web utwórz wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
 2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej**, **Nie odpowiadaj wszystkim**, **&lt;Nazwa firmy&gt; — Poufne** lub **&lt;Nazwa firmy&gt; — Poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
-Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otrzymaniu wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi prawami użytkowania, które zostały określone dla danego użytkownika. Na przykład, jeśli została wybrana opcja **Nie odpowiadaj wszystkim**, opcja **ODPOWIEDZ WSZYSTKIM** w oknie komunikatu jest niedostępna.
+Podobnie jak w przypadku wyświetlania dokumentu chronionego, po otwarciu wiadomości e-mail adresaci zostają najpierw uwierzytelnieni. Jeśli użytkownik jest uprawniony do wyświetlenia wiadomości e-mail, zostanie ona otwarta z ograniczonymi [prawami użytkowania](../deploy-use/configure-usage-rights.md), które zostały określone dla danego użytkownika. 
+
+Na przykład, jeśli została wybrana opcja **Nie odpowiadaj wszystkim**, opcja **ODPOWIEDZ WSZYSTKIM** w oknie komunikatu jest niedostępna.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

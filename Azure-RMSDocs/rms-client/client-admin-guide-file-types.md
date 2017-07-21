@@ -12,16 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4f187b3fa991fb4ed3a11ded34fa663dc6b4bafc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: cf36e96ff7399188818ef0afdbefc223a82b9900
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Typy plików obsługiwane przez klienta usługi Azure Information Protection
-<a id="file-types-supported-by-the-azure-information-protection-client" class="xliff"></a>
+# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
->*Dotyczy: usługi zarządzania prawami dostępu w usłudze Active Directory, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Klient usługi Azure Information Protection może zastosować następujące środki względem dokumentów i wiadomości e-mail:
 
@@ -33,8 +32,7 @@ Klient usługi Azure Information Protection może zastosować następujące śro
 
 Skorzystaj z poniższych informacji, aby dowiedzieć się, jakie typy plików są obsługiwane, jakie są poziomy ochrony i jak zmienić jej domyślny poziom, a także, jakie pliki są automatycznie wyłączone z klasyfikacji i ochrony.
 
-## Typy plików, dla których jest obsługiwana tylko klasyfikacja
-<a id="file-types-supported-for-classification-only" class="xliff"></a>
+## <a name="file-types-supported-for-classification-only"></a>Typy plików, dla których jest obsługiwana tylko klasyfikacja
 
 Sama klasyfikacja jest obsługiwana dla następujących typów plików. Dodatkowe typy plików obsługują klasyfikację, jeśli są również chronione (zobacz sekcję [Typy plików, dla których jest obsługiwana klasyfikacja i ochrona](#supported-file-types-for-classification-and-protection)).
 
@@ -59,8 +57,7 @@ Sama klasyfikacja jest obsługiwana dla następujących typów plików. Dodatkow
 
 - **Digital Negative**: .dng
 
-## Typy plików, dla których jest obsługiwana ochrona
-<a id="file-types-supported-for-protection" class="xliff"></a>
+## <a name="file-types-supported-for-protection"></a>Typy plików, dla których jest obsługiwana ochrona
 
 Klient usługi Azure Information Protection obsługuje ochronę na dwóch różnych poziomach, jak opisano w poniższej tabeli.
 
@@ -74,8 +71,7 @@ Domyślny poziom ochrony stosowany przez klienta usługi Azure Information Prote
 
 Tę ochronę danych można zastosować automatycznie po wybraniu etykiety, która została skonfigurowana przez administratora, lub można określić własne ustawienia ochrony za pomocą [poziomów uprawnień](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels). 
 
-### Rozmiary plików, dla których jest obsługiwana ochrona
-<a id="file-sizes-supported-for-protection" class="xliff"></a>
+### <a name="file-sizes-supported-for-protection"></a>Rozmiary plików, dla których jest obsługiwana ochrona
 
 Istnieją określone maksymalne rozmiary plików, dla których klient usługi Azure Information Protection obsługuje funkcje ochrony.
 
@@ -87,10 +83,13 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
     |Excel 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32-bitowe: 2 GB<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci|
     |PowerPoint 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
 
-- **Dla wszystkich innych plików**: 1 GB
+- **Wszystkie inne pliki**:
+    
+    - Ogólnie dostępna wersja klienta: 1 GB
+    
+    - Klient w wersji zapoznawczej (minimalna wersja **1.8.41.0**): ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
 
-### Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
-<a id="supported-file-types-for-classification-and-protection" class="xliff"></a>
+### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 
 W poniższej tabeli wymieniono podzbiór typów plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. 
 
@@ -123,8 +122,7 @@ Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną 
 |----------------------------------|----------------------------------|
 |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm|pptx<br /><br />thmx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
 
-### Zmiana domyślnego poziomu ochrony plików
-<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
 Edytując rejestr, możesz zmienić sposób ochrony plików przez klienta usługi Azure Information Protection. Możesz na przykład wymusić, aby pliki obsługujące ochronę natywną były objęte ochroną ogólną przez klienta usługi Azure Information Protection.
 
 W jakich sytuacjach warto to zrobić:
@@ -173,8 +171,7 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 Aby uzyskać dodatkowe informacje, zobacz artykuł [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. 
 
-## Typy plików wykluczone z klasyfikacji i ochrony przez klienta usługi Azure Information Protection
-<a id="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client" class="xliff"></a>
+## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Typy plików wykluczone z klasyfikacji i ochrony przez klienta usługi Azure Information Protection
 
 Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla działania komputera, niektóre typy plików i folderów są automatycznie wykluczone z ochrony i klasyfikacji. Jeśli użytkownicy spróbują sklasyfikować lub chronić te pliki, zobaczą komunikat informujący o tym, że pliki są wykluczone.
 
@@ -187,8 +184,7 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
     - \AppData (dla wszystkich użytkowników)
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 Po zidentyfikowaniu typów plików obsługiwanych przez klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
