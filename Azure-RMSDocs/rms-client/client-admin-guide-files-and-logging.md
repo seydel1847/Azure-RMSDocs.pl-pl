@@ -12,21 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bf695772d545daca602903e156903da2aadaae7a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
-ms.translationtype: HT
+ms.openlocfilehash: 63249b98578b952177351cc5547ef92c67164f06
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Pliki i dzienniki użycia klienta usługi Azure Information Protection
-<a id="azure-information-protection-client-files-and-client-usage-logging" class="xliff"></a>
+# <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Pliki i dzienniki użycia klienta usługi Azure Information Protection
 
->*Dotyczy: usługi zarządzania prawami dostępu w usłudze Active Directory, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Po zainstalowaniu klienta usługi Azure Information Protection przydatna może być informacja o lokalizacji plików. Może też zajść potrzeba monitorowania sposobu korzystania z klienta.
 
-## Lokalizacja plików klienta usługi Azure Information Protection
-<a id="file-locations-for-the-azure-information-protection-client" class="xliff"></a>
+## <a name="file-locations-for-the-azure-information-protection-client"></a>Lokalizacja plików klienta usługi Azure Information Protection
 
 Pliki klienta:   
 
@@ -38,8 +36,7 @@ Pliki dziennika klienta i plik obecnie zainstalowanych zasad:
 
 - Dla 64- i 32-bitowych systemów operacyjnych: **%localappdata%\Microsoft\MSIP**
 
-## Dzienniki użycia klienta usługi Azure Information Protection
-<a id="usage-logging-for-the-azure-information-protection-client" class="xliff"></a>
+## <a name="usage-logging-for-the-azure-information-protection-client"></a>Dzienniki użycia klienta usługi Azure Information Protection
 
 Klient rejestruje aktywność użytkowników w lokalnym dzienniku zdarzeń **aplikacji i usług** systemu Windows, **Azure Information Protection**. Zdarzenia obejmują następujące informacje:
 
@@ -90,8 +87,7 @@ Aby uzyskać informacje na temat dzienników użycia usługi Azure Rights Manage
 
 
 
-## Następne kroki
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Następne kroki
 Po zidentyfikowaniu wszystkich plików dziennika skojarzonych z klientem usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
