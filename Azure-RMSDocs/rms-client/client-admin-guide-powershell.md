@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ceabbba93dd31f82ac4d0fa33898f8b09a7ee984
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 8dd4917b23b3732e0d835f957191db9c4578f60d
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -432,7 +432,7 @@ Po uruchomieniu tego polecenia cmdlet bez parametrów konto uzyskuje token dost�
 
 Aby kontrolować moment wygaśnięcia ważności tokenu dostępu, uruchom to polecenie cmdlet z parametrami. Umożliwi to skonfigurowanie tokenu dostępu na jeden rok, dwa lata lub bez określonej daty wygaśnięcia. Ta konfiguracja wymaga zarejestrowania dwóch aplikacji w usłudze Azure Active Directory: **aplikacji sieci Web/interfejsu API** i **aplikacji natywnej**. Parametry tego polecenia cmdlet używają wartości z tych aplikacji.
 
-Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykietowania w kontekście utworzonego konta użytkownika. Jeśli chcesz używać więcej niż jednego konta, każde konto musi mieć własne aplikacje zarejestrowane w usłudze Azure AD. Z tego względu należy uruchomić to polecenie cmdlet dla każdego konta.
+Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykietowania w kontekście utworzonego konta użytkownika.
 
 ### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>Tworzenie i konfigurowanie aplikacji usługi Azure AD na potrzeby polecenia Set-AIPAuthentication
 
@@ -444,15 +444,17 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     - Nazwa: **AIPOnBehalfOf**
     
+    Jeśli chcesz, podaj inną nazwę. Nazwa musi być unikatowa dla dzierżawy.
+    
     - Typ aplikacji: **Aplikacja sieci Web/interfejs API**
     
     - Adres URL logowania: **http://localhost**
-    
-4. Wybierz właśnie utworzoną aplikację **AIPOnBehalfOf** i w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok. 
+
+4. Wybierz właśnie utworzoną aplikację, na przykład **AIPOnBehalfOf**. Następnie w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok. 
     
     Ta wartość jest używana dla parametru `WebAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
 
-5. W bloku **Ustawienia** wybierz pozycję **Klucze**. Dodaj nowy klucz, podając opis i wybierając czas trwania (1 rok, 2 lata lub bez daty wygaśnięcia). Następnie wybierz pozycję **Zapisz** i skopiuj ciąg wyświetlony w polu **Wartość**. Ważne jest, aby zapisać ten ciąg, ponieważ nie jest on wyświetlany ponownie i nie można go pobrać.
+5. W bloku **Ustawienia** wybierz pozycję **Klucze**. Dodaj nowy klucz, podając opis i wybierając czas trwania (1 rok, 2 lata lub bez daty wygaśnięcia). Następnie wybierz pozycję **Zapisz** i skopiuj ciąg wyświetlony w polu **Wartość**. Ważne jest, aby zapisać ten ciąg, ponieważ nie jest on wyświetlany ponownie i nie można go pobrać. Podobnie jak w przypadku każdego używanego klucza, przechowuj zapisaną wartość w bezpiecznym miejscu i ogranicz dostęp do niej.
     
     Ta wartość jest używana dla parametru `WebAppKey` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
 
@@ -460,11 +462,13 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     - Nazwa: **AIPClient**
     
+    Jeśli chcesz, podaj inną nazwę. Nazwa musi być unikatowa dla dzierżawy.
+    
     - Typ aplikacji: **Natywna**
     
     - Adres URL logowania: **http://localhost**
 
-7. Wybierz właśnie utworzoną aplikację **AIPClient** i w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok.
+7. Wybierz właśnie utworzoną aplikację, na przykład **AIPClient**. Następnie w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok.
     
     Ta wartość jest używana dla parametru `NativeAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
 
@@ -474,7 +478,7 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
 
 10. W bloku **Włączanie dostępu** wybierz pozycję **AIPOnBehalfOf**, kliknij pozycję **Wybierz**, a następnie kliknij pozycję **Gotowe**.
     
-    Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia Set-AIPAuthentication z parametrami.
+    Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
 
 
 ## <a name="next-steps"></a>Następne kroki

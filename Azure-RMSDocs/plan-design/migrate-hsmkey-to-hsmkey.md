@@ -4,7 +4,7 @@ description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e2f8f92595b21d122dfe76918a604ce7ff21b7ef
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1a75a5db529ce3b520e38fb439c18a58230ceb0e
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
@@ -32,24 +32,24 @@ Jeśli nie jest to wybrany scenariusz konfiguracji, wróć do [Kroku 4. Eksporto
 
 Jest to składająca się z dwóch części procedura, która umożliwia zaimportowanie klucza HSM i konfiguracji usługi AD RMS do usługi Azure Information Protection oraz zastosowanie w ten sposób zarządzanego przez Ciebie klucza dzierżawy usługi Azure Information Protection (BYOK).
 
-Ponieważ klucz dzierżawy usługi Azure Information Protection będzie przechowywany i zarządzany przez usługę Azure Key Vault, ta część migracji wymaga administracji w usłudze Azure Key Vault poza administracją w usłudze Azure Information Protection. Jeśli usługa Azure Key Vault jest zarządzana przez innego administratora w Twojej organizacji, musisz skoordynować pracę z tym administratorem, aby zakończyć procedurę.
+Ponieważ klucz dzierżawy usługi Azure Information Protection będzie przechowywany i zarządzany przez usługę Azure Key Vault, ta część migracji wymaga administracji w usłudze Azure Key Vault poza administracją w usłudze Azure Information Protection. Jeśli usługa Azure Key Vault jest zarządzana przez innego administratora w Twojej organizacji, musisz podjąć współpracę z tym administratorem, aby zakończyć procedury.
 
 Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworzony w usłudze Azure Key Vault oraz że obsługuje klucze chronione przez moduł HSM. Chociaż nie jest to wymagane, zaleca się posiadanie dedykowanego magazynu kluczy dla usługi Azure Information Protection. Ten magazyn kluczy zostanie skonfigurowany tak, aby usługa Azure Rights Management mogła uzyskać do niego dostęp, dlatego klucze przechowywane w tym magazynie kluczy powinny być ograniczone wyłącznie do kluczy usługi Azure Information Protection.
 
 
 > [!TIP]
-> Jeśli chcesz przeprowadzić konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, przydatne może okazać się przeczytanie artykułu [Wprowadzenie do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
+> Jeśli przeprowadzasz konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, warto zapoznać się z artykułem [Rozpoczynanie pracy z usługą Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Część 1. Przesłanie klucza HSM do usługi Azure Key Vault
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
-1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault), z następującym wyjątkiem:
+1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault), z następującym wyjątkiem:
 
     - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zaszyfrowane pliki klucza firmy Thales mają przeważnie nazwę **key<*nazwa_aplikacji_klucza*><*identyfikator_klucza*>** i są przechowywane lokalnie na serwerze.
 
-    Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Identyfikator będzie wyglądać podobnie do następującego: https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection będzie go potrzebować, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
+    Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Identyfikator będzie wyglądać podobnie do następującego: https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection potrzebuje go, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
 
 2. Na stacji roboczej podłączonej do Internetu, w sesji programu PowerShell, użyj polecenia cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy), aby autoryzować nazwę główną usługi Azure Rights Management do dostępu do magazynu kluczy, w którym przechowywany będzie klucz dzierżawy usługi Azure Information Protection. Wymagane uprawnienia to: decrypt, encrypt, unwrapkey, wrapkey, verify i sign.
     
@@ -68,7 +68,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Information
     
     Następnie przekaż każdy plik XML zaufanej domeny publikacji, korzystając z polecenia cmdlet [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd). Na przykład po uaktualnieniu klastra usług AD RMS dla trybu kryptograficznego 2 powinien być dostępny przynajmniej jeden dodatkowy plik do zaimportowania.
     
-    Do uruchomienia tego polecenia cmdlet konieczne będzie hasło, które zostało określone wcześniej dla każdego pliku danych konfiguracji, i adres URL klucza zidentyfikowanego w poprzednim kroku.
+    Do uruchomienia tego polecenia cmdlet konieczne jest hasło, które zostało określone wcześniej dla każdego pliku danych konfiguracji, oraz adres URL klucza zidentyfikowany w poprzednim kroku.
     
     Przykładowo — używając pliku danych konfiguracji C:\contoso-tpd1.xml i naszej wartości adresu URL klucza z poprzedniego kroku, należy najpierw uruchomić następujące polecenie w celu zapisania hasła:
     
@@ -84,7 +84,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Information
     
     W ramach tego importu klucz SLC zostanie zaimportowany i automatycznie ustawiony jako zarchiwizowany.
 
-2.  Po przesłaniu każdego pliku uruchom polecenie [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) w celu określenia, który zaimportowany klucz pasuje do aktualnie aktywnego klucza certyfikatu licencjodawcy serwera w klastrze AD RMS. Ten klucz będzie aktywnym kluczem dzierżawcy w usłudze Azure Rights Management.
+2.  Po przesłaniu każdego pliku uruchom polecenie [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) w celu określenia, który zaimportowany klucz pasuje do aktualnie aktywnego klucza certyfikatu licencjodawcy serwera w klastrze AD RMS. Ten klucz staje się aktywnym kluczem dzierżawy usługi Azure Rights Management.
 
 3.  Użyj polecenia cmdlet [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice), aby zakończyć połączenie z usługą Azure Rights Management:
 

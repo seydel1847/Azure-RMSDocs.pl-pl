@@ -4,7 +4,7 @@ description: "Sposób, w jaki aplikacje pakietu Office dla użytkowników końco
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="office-applications-and-services"></a>Aplikacje i usługi pakietu Office
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 06/30/2017
 Aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, PowerPoint i Outlook) oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection, aby chronić dane organizacji.
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
-Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programu Word, Excel i PowerPoint, ściśle dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
+Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programów Word, Excel i PowerPoint, dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
 
 Na przykład użytkownicy mogą tak skonfigurować dokument programu Word, aby był on dostępny tylko dla osób z danej organizacji. Można określić, czy arkusz kalkulacyjny programu Excel jest dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. W przypadku plików ważnych przez określony czas można skonfigurować czas wygaśnięcia (bezpośrednio przez działania użytkowników lub przez zastosowanie szablonu), po upływie którego dostęp do pliku nie będzie już możliwy. W przypadku programu Outlook, oprócz możliwości wyboru szablonu, użytkownicy mogą wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
 
@@ -44,11 +44,11 @@ W przypadku używania usługi Exchange Online lub programu Exchange Server możn
 
 -   Obsługa usługi RMS w aplikacji **Outlook Web App**, zaimplementowana podobnie jak w przypadku klienta programu Outlook, pozwala użytkownikom chronić wiadomości e-mail za pomocą szablonów lub przez określenie poszczególnych opcji oraz odczytywać chronione wiadomości e-mail, które są wysyłane do nich, i używać tych wiadomości.
 
--   **Reguły ochrony** dla klientów programu Outlook skonfigurowane przez administratora, aby umożliwić automatyczne stosowanie szablonów usługi Rights Management do wiadomości e-mail przeznaczonych dla określonych odbiorców. Na przykład wewnętrzne wiadomości e-mail wysyłane do działu prawnego mogą być odczytywane tylko przez personel działu prawnego i nie mogą być przesyłane dalej. Przed wysłaniem wiadomości e-mail użytkownicy mogą zobaczyć, jakie zabezpieczenia do niej zastosowano, i — domyślnie — mogą je usunąć zgodnie ze swoimi preferencjami. Wiadomości e-mail są szyfrowane przed ich wysłaniem. Więcej informacji zawierają artykuły dotyczące [reguł ochrony programu Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) oraz [tworzenia reguły ochrony programu Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) dostępne w bibliotece programu Exchange.
+-   **Reguły ochrony** dla klientów programu Outlook skonfigurowane przez administratora, aby umożliwić automatyczne stosowanie szablonów usługi Rights Management do wiadomości e-mail przeznaczonych dla określonych odbiorców. Na przykład wewnętrzne wiadomości e-mail wysyłane do działu prawnego mogą być odczytywane tylko przez personel działu prawnego i nie mogą być przesyłane dalej. Przed wysłaniem wiadomości e-mail użytkownicy mogą zobaczyć, jakie zabezpieczenia zostały w niej zastosowane, oraz usunąć tę ochronę zgodnie ze swoimi preferencjami. Wiadomości e-mail są szyfrowane przed ich wysłaniem. Więcej informacji zawierają artykuły dotyczące [reguł ochrony programu Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) oraz [tworzenia reguły ochrony programu Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) dostępne w bibliotece programu Exchange.
 
 -   **Reguły transportu** skonfigurowane przez administratora, aby umożliwić automatyczne stosowanie szablonów usługi Rights Management do wiadomości e-mail na podstawie takich właściwości, jak nadawca, odbiorca, temat wiadomości i zawartość. Są one podobne do reguł ochrony, ale nie zezwalają użytkownikom na usuwanie zabezpieczeń. Reguły transportu nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z urządzenia klienckiego i można je stosować do programu Outlook Web Access oraz wiadomości e-mail wysyłanych za pomocą urządzeń przenośnych. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
 
--   **Zasady ochrony przed utratą danych (DLP)** zawierają zestawy warunków filtrowania wiadomości e-mail i umożliwiają podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji (na przykład informacji osobistych lub danych karty kredytowej). W przypadku wykrycia poufnych danych na podstawie informacji zawartych w wiadomości e-mail można używać porad dotyczących zasad w celu monitowania użytkowników o potencjalnej konieczności zastosowania ochrony informacji. Więcej informacji zawiera artykuł dotyczący [ochrony przed utratą danych](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) dostępny w bibliotece programu Exchange.
+-   **Zasady ochrony przed utratą danych (DLP)** zawierają zestawy warunków filtrowania wiadomości e-mail i umożliwiają podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji (na przykład informacji osobistych lub danych karty kredytowej). W przypadku wykrycia poufnych danych na podstawie informacji zawartych w wiadomości e-mail można używać porad dotyczących zasad w celu monitowania użytkowników o potencjalnej konieczności zastosowania ochrony informacji. Więcej informacji zawiera artykuł [Data loss prevention](https://technet.microsoft.com/library/jj150527(v=exchg.160).aspx) (Ochrona przed utratą danych) dostępny w bibliotece programu Exchange.
 
 -   **Szyfrowanie wiadomości usługi Office 365** korzysta z reguł transportu do wysyłania zaszyfrowanych wiadomości e-mail do osób spoza firmy. Te wiadomości e-mail mogą być odczytywane w przeglądarce z interfejsem podobnym do aplikacji Outlook Web App. W firmowych, zaszyfrowanych wiadomościach e-mail można dostosować tekst klauzuli wyłączenia odpowiedzialności i tekst nagłówka, a nawet dodać logo firmy. Więcej informacji zawiera artykuł [Szyfrowanie wiadomości usługi Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) dostępny w witrynie internetowej pakietu Office.
 
@@ -69,7 +69,7 @@ Domyślnie ochrona jest ograniczona do osoby, która pobiera dokument. Można je
 
 W przypadku list i bibliotek programu SharePoint ochrona informacji jest zawsze konfigurowana przez administratora, nigdy przez użytkownika końcowego. Ustaw uprawnienia na poziomie witryny, a te uprawnienia domyślnie są dziedziczone przez wszystkie listy lub biblioteki w tej witrynie. W przypadku korzystania z usługi SharePoint Online użytkownicy mogą również skonfigurować ochronę usługi IRM w bibliotece usługi OneDrive dla Firm.
 
-Dla dokładniejszej kontroli możesz skonfigurować w witrynie listę lub bibliotekę, aby zatrzymać dziedziczenie uprawnień z elementu nadrzędnego. Następnie możesz skonfigurować uprawnienia usługi IRM na tym samym poziomie (listy lub biblioteki), po czym będą one określane jako „unikatowe uprawnienia”. Jednak uprawnienia są zawsze ustawiane na poziomie kontenera. Nie możesz ustawić uprawnień dla poszczególnych plików. 
+Dla dokładniejszej kontroli możesz skonfigurować w witrynie listę lub bibliotekę, aby zatrzymać dziedziczenie uprawnień z elementu nadrzędnego. Następnie możesz skonfigurować uprawnienia usługi IRM na tym samym poziomie (listy lub biblioteki), które będą wówczas określane jako „unikatowe uprawnienia”. Jednak uprawnienia są zawsze ustawiane na poziomie kontenera. Nie możesz ustawić uprawnień dla poszczególnych plików. 
 
 Usługę IRM należy najpierw włączyć dla programu SharePoint. Następnie określ uprawnienia usługi IRM dla biblioteki. W przypadku usług SharePoint Online i OneDrive dla Firm użytkownicy mogą także określić uprawnienia usługi IRM do własnej biblioteki usługi OneDrive dla Firm. Program SharePoint nie korzysta z szablonów zasad praw, chociaż możesz wybrać określone ustawienia konfiguracji programu SharePoint, odpowiadające pewnym ustawieniom, które możesz określić za pomocą szablonów.
 
@@ -96,8 +96,10 @@ Jeśli chcesz już skonfigurować program SharePoint dla usługi IRM:
 
 ## <a name="next-steps"></a>Następne kroki
 
+Jeśli masz usługę Office 365, może zainteresować Cię artykuł dotyczący [rozwiązań do ochrony plików w usłudze Office 365](https://technet.microsoft.com/library/dn919927.aspx#BKMK_O365fileprotect), w którym opisano zalecane możliwości ochrony plików w usłudze Office 365.
+
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
-Jeśli chcesz rozpocząć wdrażanie, co obejmuje skonfigurowanie tych aplikacji i usług, zobacz [Plan wdrażania usługi Azure Information Protection](/plan-design/deployment-roadmap.md).
+Jeśli chcesz rozpocząć wdrażanie, co obejmuje skonfigurowanie tych aplikacji i usług, zobacz [Plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: "Faza 4 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4157148c0109317851ed2f128a5ae74603d82af2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
@@ -56,7 +56,7 @@ W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Prote
 
 W przypadku używania funkcji zarządzania prawami do informacji (IRM) programu Exchange Server lub programu SharePoint Server z usługami AD RMS należy wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą ochrony dla usługi Azure Information Protection.
 
-Ta procedura obejmuje instalowanie i konfigurowanie łącznika, wyłączenie funkcji IRM dla programu Exchange i programu SharePoint oraz konfigurowanie tych serwerów do korzystania z łącznika. Na koniec — jeśli do usługi Azure Information Protection zaimportowano pliki danych konfiguracji usługi AD RMS (XML) użyte do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
+Ten krok obejmuje instalowanie i konfigurowanie łącznika, wyłączanie usługi IRM dla programów Exchange i SharePoint oraz konfigurowanie tych serwerów do korzystania z łącznika. Na koniec — jeśli do usługi Azure Information Protection zaimportowano pliki danych konfiguracji usługi AD RMS (XML) użyte do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
 > Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Rights Management zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
@@ -75,7 +75,7 @@ Postępuj zgodnie z instrukcjami w artykule [Wdrażanie łącznika usługi Azure
 
         $irmConfig = Get-IRMConfiguration
         $list = $irmConfig.LicensingLocation 
-        $list + "<Your Tenant URL>/_wmcs/licensing"
+        $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
 
 3.  Teraz wyłącz funkcje IRM dla wiadomości wysyłanych do adresatów wewnętrznych:
