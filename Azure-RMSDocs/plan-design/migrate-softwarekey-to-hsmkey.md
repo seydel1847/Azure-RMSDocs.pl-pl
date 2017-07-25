@@ -4,7 +4,7 @@ description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0965ac3547449a23f4c40fe3f40bac2a6e0365e3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d942e51994c6db3ee0c3e1127991a7007ed91f92
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
@@ -31,18 +31,18 @@ Jest to składająca się z czterech części procedura, która umożliwia zaimp
 
 Należy najpierw wyodrębnić klucz certyfikatu licencjodawcy serwera (SLC, Server Licensor Certificate) z danych konfiguracji usługi AD RMS i przenieść klucz do lokalnego modułu HSM firmy Thales, następnie spakować klucz HSM i przenieść go do usługi Azure Key Vault, autoryzować usługi Azure Rights Management z usługi Azure Information Protection do dostępu do magazynu kluczy, a na koniec zaimportować dane konfiguracji.
 
-Ponieważ klucz dzierżawy usługi Azure Information Protection będzie przechowywany i zarządzany przez usługę Azure Key Vault, ta część migracji wymaga administracji w usłudze Azure Key Vault poza administracją w usłudze Azure Information Protection. Jeśli usługa Azure Key Vault jest zarządzana przez innego administratora w Twojej organizacji, musisz skoordynować pracę z tym administratorem, aby zakończyć procedurę.
+Ponieważ klucz dzierżawy usługi Azure Information Protection będzie przechowywany i zarządzany przez usługę Azure Key Vault, ta część migracji wymaga administracji w usłudze Azure Key Vault poza administracją w usłudze Azure Information Protection. Jeśli usługa Azure Key Vault jest zarządzana przez innego administratora w Twojej organizacji, musisz podjąć współpracę z tym administratorem, aby zakończyć procedury.
 
 Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworzony w usłudze Azure Key Vault oraz że obsługuje klucze chronione przez moduł HSM. Chociaż nie jest to wymagane, zaleca się posiadanie dedykowanego magazynu kluczy dla usługi Azure Information Protection. Ten magazyn kluczy zostanie skonfigurowany tak, aby usługa Azure Rights Management z usługi Azure Information Protection mogła uzyskać do niego dostęp, dlatego klucze przechowywane w tym magazynie kluczy powinny być ograniczone wyłącznie do kluczy usługi Azure Information Protection.
 
 
 > [!TIP]
-> Jeśli chcesz przeprowadzić konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, przydatne może okazać się przeczytanie artykułu [Wprowadzenie do usługi Azure Key Vault](/azure/key-vault/key-vault-get-started). 
+> Jeśli przeprowadzasz konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, warto zapoznać się z artykułem [Rozpoczynanie pracy z usługą Azure Key Vault](/azure/key-vault/key-vault-get-started). 
 
 
 ## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>Część 1. Wyodrębnianie klucza SLC z danych konfiguracji i importowanie klucza do lokalnego modułu HSM
 
-1.  Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, zastosuj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
+1.  Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, zastosuj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) w dokumentacji usługi Azure Key Vault:
 
     -   **Generowanie i przenoszenie klucza do modułu HSM usługi Azure Key Vault**: Krok 1. [Przygotowanie stacji roboczej połączonej z Internetem](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
 
@@ -74,7 +74,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 
     - Jeśli nie określisz hasła podczas wykonywania tego polecenia (przy użyciu pełnej nazwy parametru **TpdPassword** lub krótkiej nazwy parametru **pwd**), zostanie wyświetlony monit o określenie hasła.
 
-3. Na tej samej rozłączonej stacji roboczej dołącz i skonfiguruj moduł HSM firmy Thales zgodnie z dokumentacją firmy Thales. Teraz możesz zaimportować klucz do dołączonego modułu HSM firmy Thales, korzystając z następującego polecenia, w którym musisz zastąpić nazwę pliku ContosoTPD.pem nazwą własnego pliku:
+3. Na tej samej rozłączonej stacji roboczej dołącz i skonfiguruj moduł HSM firmy Thales zgodnie z dokumentacją firmy Thales. Teraz możesz zaimportować klucz do dołączonego modułu HSM firmy Thales, korzystając z następującego polecenia, w którym należy zastąpić nazwę pliku ContosoTPD.pem nazwą własnego pliku:
 
         generatekey --import simple pemreadfile=e:\ContosoTPD.pem plainname=ContosoBYOK protect=module ident=contosobyok type=RSA
 
@@ -112,11 +112,11 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>Część 2. Tworzenie pakietu klucza HSM i przenoszenie go do usługi Azure Key Vault
 
-Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, wykonaj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
+Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, wykonaj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault) w dokumentacji usługi Azure Key Vault:
 
 - [Krok 4. Przygotowanie klucza do przesłania](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
-- [Krok 5. Przesłanie klucza do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+- [Krok 5. Przesłanie klucza do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azurekey-vault)
 
 Nie wykonuj kroków służących do generowania pary klucza, ponieważ masz już klucz. Zamiast tego uruchom polecenie, aby przesłać ten klucz (w tym przykładzie parametr KeyIdentifier używa nazwy „contosobyok”) z lokalnego modułu HSM.
 
@@ -138,7 +138,7 @@ Teraz klucz HSM jest już przesłany z modułu HSM do usługi Azure Key Vault, a
 
 2. Za pomocą polecenia cmdlet [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) przekaż każdy plik XML. Na przykład po uaktualnieniu klastra usług AD RMS dla trybu kryptograficznego 2 powinien być dostępny przynajmniej jeden dodatkowy plik do zaimportowania.
 
-    Do uruchomienia tego polecenia cmdlet konieczne będzie hasło, które zostało określone wcześniej dla pliku danych konfiguracji, i adres URL klucza zidentyfikowanego w poprzednim kroku.
+    Do uruchomienia tego polecenia cmdlet konieczne jest hasło, które zostało określone wcześniej dla pliku danych konfiguracji, oraz adres URL klucza zidentyfikowany w poprzednim kroku.
 
     Przykładowo — używając pliku danych konfiguracji C:\contoso_keyless.xml i naszej wartości adresu URL klucza z poprzedniego kroku, należy uruchomić następujące polecenie w celu zapisania hasła:
     

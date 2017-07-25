@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc11c4c9cfa9a6886180782c4ae88068bf280895
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -28,17 +28,17 @@ Po zakończeniu migracji serwery usług AD RMS nie będą już używane, ale uż
 
 Nie masz pewności, czy ta migracja usług AD RMS jest odpowiednia dla Twojej organizacji?
 
--   Aby zapoznać się z wprowadzeniem do usługi Azure Information Protection, zobacz artykuł [Co to jest Azure Information Protection?](../understand-explore/what-is-information-protection.md)
+-   Aby zapoznać się z wprowadzeniem do usługi Azure Information Protection, zobacz artykuł [Co to jest usługa Azure Information Protection?](../understand-explore/what-is-information-protection.md)
 
 -   Porównanie usług Azure Information Protection i AD RMS można znaleźć w artykule [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Zalecamy przeczytanie przez migrowaniem do usługi Azure Information Protection
 
-Mimo że nie jest to wymagane, zapoznanie się z poniższymi informacjami przed rozpoczęciem migracji może pomóc w lepszym zrozumieniu działania technologii, jeśli jest to związane z wykonywanym krokiem migracji:
+Mimo że nie jest to wymagane, przeczytanie poniższej dokumentacji przed rozpoczęciem migracji może okazać się pomocne. Dzięki uzyskanej w ten sposób wiedzy można lepiej zrozumieć, jak technologia działa w procesie migracji.
 
 - [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md): poznaj opcje zarządzania kluczami w swojej dzierżawie usługi Azure Information Protection, gdzie odpowiednik klucza SLC w chmurze jest zarządzany przez firmę Microsoft (ustawienie domyślne) lub przez użytkownika (konfiguracja BYOK („bring your own key”). 
 
-- [Odnajdowanie usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery): w tej sekcji uwag dotyczących wdrożenia klienta usługi RMS wyjaśniono, że kolejność dla potrzeb odnajdowania usługi to **rejestr**, następnie **punkt połączenia usługi**, a następnie **chmura**. Podczas procesu migracji, gdy punkt połączenia usługi jest nadal zainstalowany, należy skonfigurować klientów przy użyciu ustawień rejestru dla dzierżawy usługi Azure Information Protection, tak aby nie używali oni klastra usługi AD RMS zwróconego z punktu połączenia usługi.
+- [Odnajdowanie usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery): w tej sekcji uwag dotyczących wdrożenia klienta usługi RMS wyjaśniono, że kolejność odnajdowania usługi jest następująca: **rejestr**, **punkt połączenia usługi**, a następnie **chmura**. Podczas procesu migracji, gdy punkt połączenia usługi jest nadal zainstalowany, należy skonfigurować klientów przy użyciu ustawień rejestru dla dzierżawy usługi Azure Information Protection, tak aby nie używali oni klastra usługi AD RMS zwróconego z punktu połączenia usługi.
 
 - [Omówienie łącznika usługi Microsoft Rights Management](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): w tej sekcji dokumentacji dotyczącej łącznika usług RMS objaśniono sposób łączenia serwerów lokalnych z usługą Azure Rights Management, aby chronić dokumenty i wiadomości e-mail.
 
@@ -74,7 +74,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
     Zobacz artykuł [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements-azure-rms.md).
 
-    Należy pamiętać, że jeśli masz komputery korzystające z pakietu Office 2010, musisz zainstalować klienta usługi Azure Information Protection, ponieważ ten klient zapewnia możliwość uwierzytelniania użytkowników w usługach w chmurze. W przypadku nowszych wersji pakietu Office klient usługi Azure Information Protection jest wymagany do obsługi klasyfikacji oraz etykietowania, i opcjonalny, ale zalecany, jeśli chcesz tylko chronić dane. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](../rms-client/client-admin-guide.md).
+    Należy pamiętać, że w przypadku komputerów korzystających z pakietu Office 2010, musisz zainstalować klienta usługi Azure Information Protection, ponieważ ten klient zapewnia możliwość uwierzytelniania użytkowników w usługach w chmurze. W przypadku nowszych wersji pakietu Office klient usługi Azure Information Protection jest wymagany do obsługi klasyfikacji oraz etykietowania, i opcjonalny, ale zalecany, jeśli chcesz tylko chronić dane. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](../rms-client/client-admin-guide.md).
 
     Mimo że do wykonania migracji z usługi AD RMS niezbędna jest subskrypcja usługi Azure Information Protection, zaleca się nie aktywować usługi Rights Management dla dzierżawy przed rozpoczęciem migracji. Proces migracji obejmuje ten krok aktywacji po wyeksportowaniu kluczy i szablonów z usługi AD RMS i zaimportowaniu ich do dzierżawy usługi Azure Information Protection. Jeśli jednak usługa Rights Management została już aktywowana, nadal można przeprowadzić migrację z usługi AD RMS, wykonując dodatkowe kroki.
 
@@ -106,7 +106,7 @@ Chociaż nie jest to wymaganiem wstępnym w przypadku migracji, zaleca się uruc
 
 Aby uzyskać więcej informacji o różnych trybach oraz instrukcje uaktualniania, zobacz temat [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
 
-Jeśli klaster AD RMS jest w trybie kryptograficznym 1 i nie można go uaktualnić, można ponownie utworzyć klucz dzierżawy usługi Azure Information Protection po ukończeniu migracji. Po ponownym utworzeniu klucza powstaje nowy klucz dzierżawy korzystający z trybu kryptograficznego 2. Korzystanie z usługi Azure Rights Management z trybem kryptograficznym 1 jest obsługiwane tylko podczas migracji.
+Jeśli klaster AD RMS jest w trybie kryptograficznym 1 i nie można go uaktualnić, musisz wymienić klucz dzierżawy usługi Azure Information Protection po ukończeniu migracji. Wymiana klucza powoduje utworzenie nowego klucza dzierżawy korzystającego z trybu kryptograficznego 2. Korzystanie z usługi Azure Rights Management z trybem kryptograficznym 1 jest obsługiwane tylko podczas migracji.
 
 Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
  
@@ -135,25 +135,25 @@ W fazie planowania migracji należy uwzględnić partnerów usług AD RMS, ponie
 
 - Ich usługa Azure Rights Management nie została jeszcze aktywowana, ale znają swój adres URL usługi Azure Rights Management.
 
-    Aby uzyskać te informacje, partnerzy powinni zainstalować narzędzie Azure Rights Management Tool, nawiązać połączenie z usługą ([Connect-Aadrmservice](/powershell/aadrm/vlatest/connect-aadrmservice)), a następnie wyświetlić informacje o swojej dzierżawie usługi Azure Rights Management ([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration)).
+    Aby uzyskać te informacje, partnerzy powinni zainstalować narzędzie Azure Rights Management Tool, nawiązać połączenie z usługą ([Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice)), a następnie wyświetlić informacje o swojej dzierżawie usługi Azure Rights Management ([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration)).
 
 - Udostępnili Ci adresy URL swojego klastra usług AD RMS i swój adres URL usługi Azure Rights Management, aby umożliwić Ci skonfigurowanie migrowanych klientów w celu przekierowywania żądań dotyczących zawartości chronionej przez usługi AD RMS partnerów do ich dzierżawy usługi Azure Rights Management. Instrukcje dotyczące konfigurowania przekierowywania klienta znajdują się w kroku 7.
 
-- Zaimportowali swoje klucze główne klastra AD RMS (klucze SLC) do swojej dzierżawy, zanim rozpoczniesz migrację swoich użytkowników. Analogicznie musisz zaimportować swoje klucze główne klastra usług AD RMS, zanim partnerzy rozpoczną migrację swoich użytkowników. Instrukcje dotyczące importowania kluczy są omówione w ramach tego procesu migracji, [Krok 4. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure Information Protection](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection). 
+- Zaimportowali swoje klucze główne klastra AD RMS (klucze SLC) do swojej dzierżawy, zanim rozpoczniesz migrację swoich użytkowników. Analogicznie musisz zaimportować swoje klucze główne klastra usług AD RMS, zanim partnerzy rozpoczną migrację swoich użytkowników. Instrukcje dotyczące importowania kluczy zostały omówione w ramach tego procesu migracji: [Krok 4. Eksportowanie danych konfiguracji z usług AD RMS i importowanie ich do usługi Azure Information Protection](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection). 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>Omówienie kroków migracji usługi AD RMS do usługi Azure Information Protection
 
-Kroki migracji można podzielić na 5 fazy, które mogą realizować różni administratorzy w różnych terminach.
+Kroki migracji można podzielić na pięć faz, które mogą realizować różni administratorzy w różnych terminach.
 
 [**FAZA 1: PRZYGOTOWANIE MIGRACJI**](migrate-from-ad-rms-phase1.md)
 
 - **Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool i identyfikowanie adresu URL dzierżawy**
 
-    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell z modułu usługi Azure RMS, który został zainstalowany przy użyciu narzędzia Azure Rights Management Administration Tool. Musisz także znać adres URL usługi Azure Rights Management swojej dzierżawy, który będzie niezbędny do wykonania wielu spośród kroków migracji. Wartość tę możesz ustalić przy użyciu programu PowerShell.
+    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell z modułu usługi Azure RMS, który został zainstalowany przy użyciu narzędzia Azure Rights Management Administration Tool. Musisz także znać adres URL usługi Azure Rights Management swojej dzierżawy, który będzie niezbędny do wykonania wielu kroków migracji. Wartość tę możesz ustalić przy użyciu programu PowerShell.
 
 - **Krok 2. Przygotowanie do migracji klientów**
 
-     Jeśli nie można przeprowadzić migracji wszystkich klientów naraz i będą oni migrowani w partiach, należy użyć kontrolek dołączania i wdrożyć skrypt przed migracją.
+     Jeśli nie można przeprowadzić migracji wszystkich klientów równocześnie i będą oni migrowani w partiach, należy użyć kontrolek dołączania i wdrożyć skrypt przed migracją.
 
 - **Krok 3. Przygotowanie wdrożenia programu Exchange na potrzeby migracji**
 
@@ -183,7 +183,7 @@ Kroki migracji można podzielić na 5 fazy, które mogą realizować różni adm
 
 - **Krok 6. Konfigurowanie importowanych szablonów**
 
-    Stan importowanych szablonów zasad praw jest określony jako zarchiwizowane. Jeśli chcesz, aby użytkownicy mogli widzieć szablony i z nich korzystać, zmień stan szablonów na opublikowane w klasycznym portalu Azure.
+    Stan importowanych szablonów zasad praw jest określony jako zarchiwizowane. Jeśli chcesz, aby użytkownicy mogli widzieć szablony i z nich korzystać, zmień stan szablonów w celu ich opublikowania w klasycznej witrynie Azure Portal.
 
 
 [**FAZA 3 — KONFIGURACJA PO STRONIE KLIENTA**](migrate-from-ad-rms-phase3.md)
@@ -216,7 +216,7 @@ Kroki migracji można podzielić na 5 fazy, które mogą realizować różni adm
 
     Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne.
 
-- **Krok 12. Ponowne tworzenie klucza dzierżawy usługi Azure Information Protection**
+- **Krok 12. Wymiana klucza dzierżawy usługi Azure Information Protection**
 
     Ten krok jest wymagany, jeśli przed migracją nie uruchamiano trybu kryptograficznego 2, i opcjonalny (ale zalecany) w przypadku wszystkich migracji, które pomagają w zabezpieczaniu klucza dzierżawy usługi Azure Information Protection.
 

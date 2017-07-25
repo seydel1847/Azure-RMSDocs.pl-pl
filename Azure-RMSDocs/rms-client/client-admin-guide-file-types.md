@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/06/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf36e96ff7399188818ef0afdbefc223a82b9900
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 219f39913261d22709238ee5393e8cc8080070f5
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -48,8 +48,6 @@ Sama klasyfikacja jest obsługiwana dla następujących typów plików. Dodatkow
 - **Microsoft XPS**: .xps .oxps
 
 - **Obrazy**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi.png, .tif, .tiff
-
-- **SolidWorks**: .sldprt, .slddrw, .sldasm
 
 - **Autodesk Design Review 2013**: .dwfx
 

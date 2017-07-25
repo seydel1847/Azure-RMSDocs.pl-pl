@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 491d3191a713bf30ef0da58e359249869d3c82a9
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 036fae62087bf71e0f3bf5ef2859acac701c5e62
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -252,16 +252,46 @@ Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączeni
 
 Aby uzyskać informacje diagnostyczne i dowiedzieć się, jak zresetować klienta, kliknij pozycję **Uruchom diagnostykę**. Po zakończeniu testów diagnostycznych kliknij pozycję **Kopiuj wyniki**, aby wkleić informacje w wiadomości e-mail, którą możesz wysłać do działu pomocy technicznej firmy Microsoft lub którą mogą wysłać użytkownicy końcowi Twojemu zespołowi pomocy technicznej. Po zakończeniu testów możesz także zresetować klienta.
 
-Więcej informacji na temat opcji **Resetuj**:
+> [!NOTE]
+> W wersji zapoznawczej klienta pozycja **Uruchom diagnostykę** została usunięta i zastąpiona pozycją **Resetuj ustawienia**. Ponadto zachowanie tej opcji zostało [zmienione](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client).
+
+#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>Więcej informacji na temat opcji resetowania w ogólnie dostępnej wersji klienta usługi Azure Information Protection
 
 - Nie trzeba być administratorem lokalnym, aby używać tej opcji, a ta akcja nie jest rejestrowana w Podglądzie zdarzeń. 
 
-- Jeśli pliki są zablokowane, ta akcja powoduje usunięcie wszystkich plików z lokalizacji **%localappdata%\Microsoft\MSIPC**, w której przechowywane są certyfikaty klienta i szablony zarządzania prawami. Nie powoduje ona usunięcia zasad usługi Azure Information Protection, plików dzienników klienta ani wylogowania użytkownika.
+- Jeśli pliki nie zostały zablokowane, ta akcja powoduje usunięcie wszystkich plików w lokalizacji **%LocalAppData%\Microsoft\MSIPC**, w której są przechowywane certyfikaty klienta i szablony usługi Rights Management. Nie powoduje ona usunięcia zasad usługi Azure Information Protection, plików dzienników klienta ani wylogowania użytkownika.
 
 - Następuje usunięcie klucza rejestru i ustawień: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Jeśli skonfigurowano ustawienia tego klucza rejestru, musisz ponownie skonfigurować ustawienia rejestru po zresetowaniu klienta. Na przykład skonfigurowano ustawienia przekierowania do dzierżawy usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz w sieci punkt połączenia usługi.
 
 - Po zresetowaniu klienta musisz ponownie zainicjować środowisko użytkownika, w którym będą pobierane certyfikaty klienta i najnowsze szablony. W tym celu zamknij wszystkie wystąpienia pakietu Office i uruchom ponownie aplikację pakietu Office. Ta akcja spowoduje również sprawdzenie, czy zostały pobrane najnowsze zasady usługi Azure Information Protection. Wykonaj tę czynność przed ponownym uruchomieniem testów diagnostycznych.
 
+#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>Więcej informacji na temat opcji resetowania w bieżącej wersji zapoznawczej klienta usługi Azure Information Protection
+
+- Nie trzeba być administratorem lokalnym, aby używać tej opcji, a ta akcja nie jest rejestrowana w Podglądzie zdarzeń. 
+
+- O ile pliki nie zostały zablokowane, ta akcja spowoduje usunięcie wszystkich plików w poniższych lokalizacjach. Te pliki obejmują certyfikaty klienta, szablony usługi Rights Management, zasady usługi Azure Information Protection i buforowane poświadczenia użytkowników. Pliki dzienników klienta nie są usuwane.
+    
+    - %LocalAppData%\Microsoft\DRM
+    
+    - %LocalAppData%\Microsoft\MSIPC
+    
+    - %LocalAppData%\Microsoft\MSIP\Policy.msip
+    
+    - %LocalAppData%\Microsoft\MSIP\TokenCache
+
+- Następujące ustawienia i klucze rejestru zostaną usunięte. Jeśli skonfigurowano ustawienia dowolnego z tych kluczy rejestru, musisz skonfigurować je ponownie po zresetowaniu klienta. Przykładem może być sytuacja, gdy skonfigurowano ustawienia przekierowania do dzierżawy usługi Azure Information Protection, ponieważ wykonywana jest migracja z usług AD RMS i w sieci nadal istnieje punkt połączenia usługi:
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+
+- Aktualnie zalogowany użytkownik zostanie wylogowany.
 
 ### <a name="client-status-section"></a>Sekcja **Stan klienta**
 
