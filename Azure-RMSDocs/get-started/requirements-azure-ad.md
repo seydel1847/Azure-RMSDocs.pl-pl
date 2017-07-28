@@ -61,7 +61,7 @@ Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information P
 
 -   Office 2013 (minimalna wersja):
 
-    -   Jeśli masz pakiet Office 2013, konieczne może się okazać zainstalowanie dodatkowej aktualizacji do obsługi biblioteki Active Directory Authentication Library (ADAL). Na przykład [aktualizacja pakietu Office 2013 (KB3054853) z 9 czerwca 2015 r.](https://support.microsoft.com/kb/3054853). Aby uzyskać więcej informacji na temat tej aktualizacji i sposobu wdrażania logowania opartego na bibliotece ADAL (Active Directory Authentication Library) w pakiecie Office 2013 w ramach nowoczesnego uwierzytelniania, zobacz wpis dotyczący [anonsowania publicznej wersji nowoczesnego uwierzytelniania w pakiecie Office 2013](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) na blogu pakietu Office.
+    -   Jeśli masz pakiet Office 2013, konieczne może się okazać zainstalowanie dodatkowej aktualizacji do obsługi biblioteki Active Directory Authentication Library (ADAL). Na przykład [aktualizacja pakietu Office 2013 (KB3054853) z 9 czerwca 2015 r](https://support.microsoft.com/kb/3054853). Aby uzyskać więcej informacji na temat tej aktualizacji i sposobu wdrażania logowania opartego na bibliotece ADAL (Active Directory Authentication Library) w pakiecie Office 2013 w ramach nowoczesnego uwierzytelniania, zobacz wpis dotyczący [anonsowania publicznej wersji nowoczesnego uwierzytelniania w pakiecie Office 2013](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) na blogu pakietu Office.
 
 - Klient usługi Azure Information Protection:
 
