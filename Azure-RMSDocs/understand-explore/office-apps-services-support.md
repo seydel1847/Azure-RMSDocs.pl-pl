@@ -4,7 +4,7 @@ description: "Sposób, w jaki aplikacje pakietu Office dla użytkowników końco
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 96707d0790747b4dac668508f58e9584f4649370
+ms.sourcegitcommit: 72208cabecaa233cdade0dae0c448037370f2c2c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="office-applications-and-services"></a>Aplikacje i usługi pakietu Office
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Aplikacje pakietu Office dla użytkowników końcowych (takie jak Word, Excel, PowerPoint i Outlook) oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection, aby chronić dane organizacji.
+Aplikacje pakietu Office dla użytkowników końcowych oraz usługi pakietu Office (na przykład Exchange i SharePoint) mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection, aby ułatwić ochronę danych organizacji. Te aplikacje pakietu Office to Word, Excel, PowerPoint i Outlook. Usługi pakietu Office to Exchange i SharePoint. 
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
 Te aplikacje natywnie obsługują usługę Rights Management i korzystają z usług zarządzania prawami do informacji (IRM), pozwalając użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony lub, w przypadku programów Word, Excel i PowerPoint, dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń użytkowania. 
@@ -78,12 +78,13 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > [!NOTE]
 > Obecnie istnieją pewne ograniczenia dotyczące używania usługi IRM z programem SharePoint:
 > 
-> - Nie można używać domyślnych lub niestandardowych szablonów zarządzanych w klasycznym portalu Azure. 
+> - Nie można używać domyślnych lub niestandardowych szablonów zarządzanych w witrynie Azure Portal. 
 > 
 > - Chronione pliki PDF z rozszerzeniem nazwy pliku PPDF nie są obsługiwane. Pliki z rozszerzeniem nazwy pliku PDF, które są natywnie chronione przez usługę Rights Management, są obsługiwane w przypadku używania czytnika plików PDF z natywną obsługą usługi Rights Management.
+> 
+> - Jeśli chroniony plik zostanie przekazany do biblioteki programu SharePoint lub usługi OneDrive dla firm, następujące funkcje nie będą działać z tym plikiem: współtworzenie, Office Online, indeksowanie i wyszukiwanie.
 
-
-Podczas gdy korzystasz z ochrony za pomocą usługi IRM, usługa Azure Rights Management stosuje ograniczenia dotyczące użycia i szyfrowania danych dokumentów podczas ich pobierania z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
+Podczas korzystania z ochrony za pomocą usługi IRM z programem SharePoint usługa Azure Rights Management stosuje ograniczenia dotyczące użycia i szyfrowanie danych względem dokumentów w trakcie ich pobierania z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
 Następujący wpis na blogu pakietu Office, chociaż nie jest już nowy, zawiera pewne dodatkowe informacje, które mogą się okazać przydatne: [What’s New with Information Rights Management in SharePoint and SharePoint Online](https://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/) (Co nowego w usłudze Information Rights Management w programie SharePoint i usłudze SharePoint Online)
 

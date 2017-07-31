@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dla administratorów służące do konfigu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,27 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c3f066a373d253d8488c805828a65513370e3a4
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Po [aktywacji](activate-service.md) usługi Azure Rights Management użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów ułatwiających stosowanie zasad zarządzania uprawnieniami, które ograniczają dostęp do poufnych plików do grona upoważnionych użytkowników w organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
+Po [aktywacji](activate-service.md) usługi Azure Rights Management użytkownicy automatycznie otrzymują możliwość korzystania z dwóch domyślnych szablonów. Te szablony ułatwiają stosowanie zasad zarządzania uprawnieniami do poufnych plików, które ograniczają dostęp do grona upoważnionych użytkowników w organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia zasad praw:
 
 -   Wyświetlanie chronionej zawartości w trybie tylko do odczytu
 
-    -   Nazwa wyświetlana: **&lt;nazwa organizacji&gt; — tylko wgląd poufny**
+    -   Nazwa wyświetlana: **&lt;nazwa organizacji&gt; — tylko wgląd poufny** lub **Wysoce poufne\Wszyscy pracownicy**
 
     -   Określone uprawnienie: Wyświetl zawartość
 
 -   Uprawnienia Odczyt lub Modyfikacja odnoszące się do chronionej zawartości
 
-    -   Nazwa wyświetlana: **&lt;nazwa organizacji&gt; — poufne**
+    -   Nazwa wyświetlana: **&lt;nazwa organizacji&gt; — poufne** lub **Poufne\Wszyscy pracownicy**
 
     -   Określone uprawnienia: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
 
@@ -48,7 +48,7 @@ W przypadku wielu organizacji domyślne szablony są wystarczające. Użytkownic
 
 -   Użytkownik chce skonfigurować dodatkowe opcje w szablonie, które obejmują datę wygaśnięcia i to, czy do zawartości można uzyskać dostęp bez połączenia z Internetem.
 
-Aby użytkownicy mogli wybrać szablon niestandardowy, który zawiera ustawienia takie jak te, należy najpierw utworzyć szablon niestandardowy, skonfigurować go, a następnie opublikować. Prawdopodobnie będziesz potrzebować tylko kilka szablonów, ale można mieć maksymalnie 500 szablonów niestandardowych zapisanych na platformie Azure. 
+Aby użytkownicy mogli wybrać szablon niestandardowy, który zawiera ustawienia takie jak te, należy najpierw utworzyć szablon niestandardowy, skonfigurować go, a następnie opublikować. Prawdopodobnie potrzebne będzie tylko kilka szablonów, ale można mieć maksymalnie 500 szablonów niestandardowych zapisanych na platformie Azure. 
 
 Poniższe informacje pozwalają skonfigurować szablony niestandardowe i zarządzać nimi:
 

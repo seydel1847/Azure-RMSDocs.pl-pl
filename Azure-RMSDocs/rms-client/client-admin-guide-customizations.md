@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -24,11 +24,11 @@ ms.lasthandoff: 07/21/2017
 
 Poniższe informacje służą do tworzenia zaawansowanych konfiguracji, które mogą być wymagane w przypadku określonych scenariuszy lub podzbiorów użytkowników podczas zarządzania klientem usługi Azure Information Protection.
 
-Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal, a następnie opublikować do pobrania przez klientów. 
-
-Ponadto pewne ustawienia mogą być dostępne tylko w wersji zapoznawczej klienta usługi Azure Information Protection. W przypadku tych ustawień minimalny numer wersji klienta został określony w dokumentacji. W przypadku ustawień i konfiguracji obsługiwanych w ogólnodostępnej wersji klienta minimalny numer wersji klienta nie jest określony w dokumentacji.
+Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal, a następnie opublikować do pobrania przez klientów. Ponadto pewne ustawienia mogą być dostępne tylko w wersji zapoznawczej klienta usługi Azure Information Protection. W przypadku tych ustawień minimalny numer wersji klienta został określony w dokumentacji. W przypadku ustawień i konfiguracji obsługiwanych w ogólnodostępnej wersji klienta minimalny numer wersji klienta nie jest określony w dokumentacji.
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
+
+Ta konfiguracja jest obecnie dostępna w wersji zapoznawczej.
 
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**.
 
@@ -86,6 +86,8 @@ Dodatkowo:
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ukryj opcję menu Klasyfikuj i chroń w Eksploratorze plików systemu Windows
 
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
+
 Użytkownicy korzystający z klienta usługi Azure Information Protection w wersji 1.3.0.0 lub nowszej mogą skonfigurować tę konfigurację zaawansowaną, edytując rejestr. 
 
 Utwórz następującą nazwę wartości DWORD (z dowolnymi danymi wartości):
@@ -104,6 +106,8 @@ Upewnij się, że w folderze **%localappdata%\Microsoft\MSIP** znajduje się pra
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ukrywanie przycisku Nie przesyłaj dalej w programie Outlook
 
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
+
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie również wymaga wersji zapoznawczej klienta usługi Azure Information Protection o minimalnym numerze **1.8.41.0**.
 
 Po skonfigurowaniu tego ustawienia przycisk **Nie przesyłaj dalej** na wstążce programu Outlook zostanie ukryty. Ta opcja nie zostanie jednak ukryta w menu pakietu Office.
@@ -115,6 +119,8 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 - Wartość: **Prawda**
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Zablokowanie dostępu użytkowników do opcji uprawnień niestandardowych
+
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 

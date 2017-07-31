@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -78,9 +78,9 @@ Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą 
     
 3. Upewnij się, że wybrano opcje **Azure RMS** i **Wybierz wstępnie zdefiniowany szablon** w bloku **Ochrona**. Następnie kliknij pole listy rozwijanej i wybierz szablon domyślny, który pozwala wszystkim użytkownikom w organizacji wyświetlać i edytować chronioną zawartość. 
     
-    Jeśli niedawno aktywowano usługę Azure Rights Management, szablon ten ma nazwę **Poufne\Wszyscy pracownicy**. 
+    Jeśli niedawno uzyskano subskrypcję, ten szablon ma nazwę **Poufne\Wszyscy pracownicy**. 
     
-    Jeśli usługę Azure Rights Management aktywowano przed rozpoczęciem korzystania z tego samouczka, szablon domyślny może mieć nazwę **\<nazwa organizacji> — poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — poufne**, którą wybierzesz: 
+    Jeśli subskrypcję uzyskano wcześniej, szablon domyślny może mieć nazwę **\<nazwa organizacji > — poufne**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobaczysz opcję **VanArsdel, Ltd — poufne**, którą wybierzesz: 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — ustawianie ochrony usługi Azure RMS](../media/step2-select-rms-template.png)
     
