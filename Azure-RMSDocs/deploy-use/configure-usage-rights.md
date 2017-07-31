@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed06deca76ed1241f0c9b3f104fd922263c5a6cd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a093ca8cdd02448c877554ff87e971e956eab789
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -78,8 +78,8 @@ W szablonach domyślnych zawarte są następujące prawa:
 
 |Nazwa wyświetlana|Zawarte prawa (nazwa pospolita)|
 |----------------|---------------------------------|
-|&lt;*nazwa organizacji*&gt; *— tylko wgląd poufny*|Wyświetl, Otwórz, Odczytaj|
-|&lt;*nazwa organizacji*&gt; *— poufne*|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Edytuj; Wyświetl prawa; Zezwalaj na makra; Prześlij dalej; Odpowiedz; Odpowiedz wszystkim|
+|&lt;*nazwa organizacji*&gt; *— tylko wgląd poufny* <br /><br />lub<br /><br /> *Wysoce poufne\Wszyscy pracownicy*|Wyświetl, Otwórz, Odczytaj|
+|&lt;*nazwa organizacji*&gt; *— poufne* <br /><br />lub <br /><br />*Poufne\Wszyscy pracownicy*|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość; Edytuj; Wyświetl prawa; Zezwalaj na makra; Prześlij dalej; Odpowiedz; Odpowiedz wszystkim|
 
 ## <a name="do-not-forward-option-for-emails"></a>Opcja Nie przekazuj dotycząca wiadomości e-mail
 

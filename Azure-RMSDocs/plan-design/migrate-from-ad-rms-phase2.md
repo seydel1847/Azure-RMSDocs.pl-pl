@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fb7beccf2f9fdf788f13e76796702ff64bffbbc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -34,7 +34,7 @@ Ten krok to proces składający się z dwóch części:
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>Eksportowanie danych konfiguracji z usług AD RMS
 
-Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tego kroku nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
+Poniższą procedurę należy wykonać we wszystkich klastrach usług AD RMS dla wszystkich zaufanych domen publikacji używanych do ochrony zawartości w Twojej organizacji. Tej procedury nie trzeba wykonywać w klastrach przeznaczonych tylko do licencjonowania.
 
 #### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>Aby eksportować dane konfiguracji (informacje z zaufanej domeny publikacji)
 
@@ -62,7 +62,7 @@ Na przykład po uaktualnieniu serwerów usług AD RMS z trybu kryptograficznego 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>Importowanie danych konfiguracji do usługi Azure Information Protection
 W zależności od bieżącej konfiguracji wdrożenia usługi AD RMS i preferowanej topologii klucza dzierżawy usługi Azure Information Protection ten krok może obejmować różne procedury.
 
-W bieżącym wdrożeniu usług AD RMS będzie używana jedna z następujących konfiguracji klucza certyfikatu licencjodawcy serwera (SLC):
+W bieżącym wdrożeniu usług AD RMS jest używana jedna z następujących konfiguracji klucza certyfikatu licencjodawcy serwera (SLC):
 
 - Ochrona za pomocą hasła w bazie danych usług AD RMS. To jest konfiguracja domyślna.
 
@@ -80,16 +80,19 @@ Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Prote
 > [!IMPORTANT]
 > Usługa Exchange Online nie jest obecnie zgodna z rozwiązaniem BYOK w usłudze Azure Information Protection. Jeśli chcesz użyć scenariusza BYOK po migracji i planujesz korzystanie z usługi Exchange Online, upewnij się, że rozumiesz, w jaki sposób ta konfiguracja ogranicza funkcję IRM w usłudze Exchange Online. Zapoznaj się z informacjami zawartymi w temacie [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md), aby określić najlepszą topologię klucza dzierżawy usługi Azure Information Protection dla danej migracji.
 
-Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. Kombinacje, które nie zostały wymienione, nie są obsługiwane.
+Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. 
 
 |Bieżące wdrożenie usług AD RMS|Wybrana topologia klucza dzierżawy usługi Azure Information Protection|Instrukcje dotyczące migracji|
 |-----------------------------|----------------------------------------|--------------------------|
 |Ochrona za pomocą hasła w bazie danych usług AD RMS|Zarządzany przez firmę Microsoft|Zobacz opis procedury **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie** pod tą tabelą.<br /><br />Jest to najprostsza ścieżka migracji i wymaga tylko przesłania danych konfiguracji do usługi Azure Information Protection.|
-|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales.|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi rozwiązania BYOK usługi Azure Key Vault oraz wykonania trzech zestawów kroków, aby najpierw przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure Key Vault, następnie autoryzować usługę Azure Rights Management działającą w ramach usługi Azure Information Protection do użycia tego klucza dzierżawy, a na koniec przenieść dane konfiguracji do usługi Azure Information Protection.|
+|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. |Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi rozwiązania BYOK usługi Azure Key Vault oraz wykonania trzech zestawów kroków, aby najpierw przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure Key Vault, następnie autoryzować usługę Azure Rights Management działającą w ramach usługi Azure Information Protection do użycia tego klucza dzierżawy, a na koniec przenieść dane konfiguracji do usługi Azure Information Protection.|
 |Ochrona za pomocą hasła w bazie danych usług AD RMS|Zarządzany przez klienta (BYOK)|Zobacz opis procedury **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM** pod tą tabelą.<br /><br />Ta migracja wymaga zestawu narzędzi rozwiązania BYOK usługi Azure Key Vault oraz wykonania czterech zestawów kroków, aby najpierw wyodrębnić klucz oprogramowania i zaimportować go do lokalnego modułu HSM, następnie przenieść klucz z lokalnego modułu HSM do modułów HSM usługi Azure Information Protection, następnie przenieść dane usługi Key Vault do usługi Azure Information Protection, a na koniec przenieść dane konfiguracji do usługi Azure Information Protection.|
-|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) firmy innej niż Thales|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą modułu HSM, aby uzyskać instrukcje dotyczące przenoszenia klucza z tego modułu HSM do sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
-|Ochrona za pomocą hasła przy użyciu zewnętrznego dostawcy usług kryptograficznych|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą usług kryptograficznych, aby uzyskać instrukcje dotyczące przenoszenia klucza do sprzętowego modułu zabezpieczeń (HSM) nShield firmy Thales. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
-Przed rozpoczęciem wykonywania tych procedur upewnij się, że masz dostęp do plików XML utworzonych wcześniej podczas eksportu zaufanych domen publikacji. Mogły one zostać na przykład zapisane na dysku USB używanym do przenoszenia danych z serwera usług AD RMS do stacji roboczej połączonej z Internetem.
+|Ochrona za pomocą modułu HSM przy użyciu sprzętowego modułu zabezpieczeń (HSM) firmy innej niż Thales |Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą modułu HSM, aby uzyskać instrukcje dotyczące przenoszenia klucza z tego modułu HSM do sprzętowego modułu zabezpieczeń (HSM) Thales nShield. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
+|Ochrona za pomocą hasła przy użyciu zewnętrznego dostawcy usług kryptograficznych|Zarządzany przez klienta (BYOK)|Skontaktuj się z dostawcą usług kryptograficznych, aby uzyskać instrukcje dotyczące przenoszenia klucza do sprzętowego modułu zabezpieczeń (HSM) Thales nShield. Następnie postępuj zgodnie z instrukcjami dotyczącymi procedury **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM** pod tą tabelą.|
+
+Jeśli istnieje klucz chroniony przez moduł HSM, którego nie można wyeksportować, nadal możliwe jest przeprowadzenie migracji do usługi Azure Information Protection, konfigurując klaster usług AD RMS pod kątem trybu tylko do odczytu. W tym trybie wciąż można otwierać wcześniej chronioną zawartość, ale nowo chroniona zawartość używa nowego klucza dzierżawy, który jest zarządzany przez użytkownika (rozwiązanie BYOK) lub przez firmę Microsoft. Aby uzyskać więcej informacji, zobacz [An update is available for Office to support migrations from AD RMS to Azure RMS](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to) (Dostępna jest aktualizacja dla pakietu Office na potrzeby obsługi migracji z usług AD RMS do usługi Azure RMS).
+
+Przed rozpoczęciem wykonywania tych procedur dotyczących migracji klucza upewnij się, że masz dostęp do plików XML utworzonych wcześniej podczas eksportu zaufanych domen publikacji. Mogły one zostać na przykład zapisane na dysku USB używanym do przenoszenia danych z serwera usług AD RMS do stacji roboczej połączonej z Internetem.
 
 > [!NOTE]
 > Bez względu na sposób przechowywania plików należy skorzystać z najlepszych rozwiązań dotyczących zabezpieczeń, aby je chronić, ponieważ te dane obejmują klucz prywatny.

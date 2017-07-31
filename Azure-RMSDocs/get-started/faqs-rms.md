@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62bb6c3ed6738a3c4f32a506342c7137b9b35e
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -143,7 +143,7 @@ Otwórz program Outlook i utwórz profil przy użyciu konta służbowego usługi
 
 Aby chronić wiadomość e-mail lub dokument: na karcie **Opcje** kliknij pozycję **Uprawnienia** i wybierz opcję lub szablon chroniący wiadomość e-mail lub dokument.
 
-Śledzenie dokumentu po zapewnieniu ochrony: na komputerze z systemem Windows, na którym zainstalowano klienta usługi Azure Information Protection, zarejestruj dokument w witrynie śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md). Na komputerze Mac możesz teraz użyć przeglądarki, aby przejść do witryny śledzenia dokumentu (https://track.azurerms.com) w celu śledzenia i odwoływania dokumentu.
+Śledzenie dokumentu po zapewnieniu ochrony: na komputerze z systemem Windows, na którym zainstalowano klienta usługi Azure Information Protection, zarejestruj dokument w witrynie śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md). Na komputerze Mac można teraz użyć przeglądarki internetowej, aby przejść do witryny śledzenia dokumentu (https://track.azurerms.com) w celu śledzenia i odwoływania dokumentu.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Czy po otwarciu dokumentu pakietu Office chronionego przez usługę RMS skojarzony plik tymczasowy jest również chroniony przez usługę RMS?
 Nie. W tym scenariuszu skojarzony plik tymczasowy nie zawiera danych z oryginalnego dokumentu, tylko dane wprowadzone przez użytkownika w czasie, w którym ten oryginalny plik był otwarty. W przeciwieństwie do oryginalnego pliku plik tymczasowy oczywiście nie jest przeznaczony do udostępniania i pozostanie na urządzeniu, chroniony przez lokalne zabezpieczenia, takie jak funkcja BitLocker i system szyfrowania plików.
