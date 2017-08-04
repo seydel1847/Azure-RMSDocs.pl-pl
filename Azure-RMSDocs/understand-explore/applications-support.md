@@ -1,10 +1,10 @@
 ---
-title: "Jak aplikacje obsługują usługę Azure Rights Management — AIP"
+title: "Jak aplikacje obsługują usługę Azure Rights Management w Efektywnych"
 description: "Omówienie sposobu, w jaki najczęściej używane aplikacje (takie jak aplikacje pakietu Office — Word, Excel, PowerPoint i Outlook) oraz usługi (takie jak Exchange i SharePoint) użytkownika końcowego mogą korzystać z usługi Azure Rights Management w ramach usługi Azure Information Protection w celu ochrony firmowych dokumentów i wiadomości e-mail."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,41 +12,40 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db9f67c5baeea678bf288f4f10237ff4517d905b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6e66ada9f950f7b4cbeac3a98f548afd760e0c7a
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>Jak aplikacje obsługują usługę Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Poniższe informacje pozwalają zrozumieć, w jaki sposób najczęściej używane aplikacje (takie jak aplikacje pakietu Office — Word, Excel, PowerPoint i Outlook) oraz usługi (takie jak Exchange i SharePoint) użytkownika końcowego mogą korzystać z technologii Microsoft Azure Rights Management w ramach usługi Azure Information Protection w celu ochrony firmowych dokumentów i wiadomości e-mail. 
+Skorzystaj z poniższych informacji, aby lepiej zrozumieć sposób najczęściej używane przez użytkownika końcowego, aplikacje i usługi można używać usługi Azure Rights Management z usługi Azure Information Protection w celu ochrony dokumentów i wiadomości e-mail w organizacji. Te aplikacje obejmują Word, Excel, PowerPoint i Outlook. Usługi obejmują programy Exchange i SharePoint.
+
 > [!NOTE]
 > Aby sprawdzić obsługiwane przez usługę Azure Rights Management aplikacje i ich wersje, zobacz [aplikacje obsługujące technologię ochrony danych usługi Azure Rights](../get-started/requirements-applications.md).
 
-W niektórych przypadkach usługa Azure Rights Management stosuje ochronę automatycznie, zgodnie z zasadami skonfigurowanymi przez administratorów. Dotyczy to na przykład bibliotek programu SharePoint i reguł transportu programu Exchange. W innych przypadkach użytkownicy końcowi muszą sami stosować ochronę informacji w swoich aplikacjach, na przykład wybierając etykietę klasyfikacji, która jest skonfigurowana tak, aby stosować szablon, wybierając szablon, bezpośrednio lub wybierając określone opcje. Ochrona stosowana przez użytkowników jest często stosowana w przypadkach, gdy zamierzają oni chronić plik udostępniany innym osobom, umożliwiając dostęp lub możliwość użycia tylko wybranym użytkownikom lub użytkownikom spoza organizacji.
+W niektórych przypadkach usługa Azure Rights Management stosuje ochronę automatycznie, zgodnie z zasadami skonfigurowanymi przez administratorów. Dotyczy to na przykład bibliotek programu SharePoint i reguł transportu programu Exchange. W innych przypadkach użytkownicy końcowi zastosować ochronę się z poziomu ich aplikacji. Na przykład użytkownikom wybór klasyfikację etykietę, czyli skonfigurowany tak, aby zastosować ochronę, lub wybierz szablon lub wybierz konkretne opcje. Ochrony stosowany przez użytkowników jest typowe w przypadku, gdy użytkownicy ochrony udostępnianego pliku i one również ograniczanie dostępu lub użycia dla wybranych użytkowników lub dla użytkowników spoza organizacji.
 
-Szablony ułatwiają użytkownikom (i administratorom, którzy konfigurują zasady) stosowanie odpowiedniego poziomu ochrony i ograniczenie dostępu do osób wewnątrz organizacji. Chociaż usługa Azure Rights Management dostarcza dwa szablony domyślne, prawdopodobnie zajdzie potrzeba utworzenia szablonów niestandardowych, aby ograniczyć sytuacje, w których użytkownicy muszą określać poszczególne opcje. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
+Szablony ułatwiają użytkownikom (i administratorom, którzy konfigurują zasady) stosowanie odpowiedniego poziomu ochrony i ograniczenie dostępu do osób wewnątrz organizacji. Mimo że usługa Azure Rights Management jest dostarczany z dwóch domyślnych szablonów, prawdopodobnie chcesz utworzyć szablony niestandardowe, aby ograniczyć sytuacje, gdy użytkownicy i Administratorzy muszą określać poszczególne opcje. Aby uzyskać więcej informacji o szablonach, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
-W przypadkach, gdy użytkownicy muszą sami stosować ochronę informacji, należy pamiętać o udostępnieniu im instrukcji oraz wskazówek, jak i kiedy mają to robić. Instrukcje powinny być specyficzne dla aplikacji i wersji, z których użytkownicy korzystają, oraz sposobu, w jaki z nich korzystają, a wskazówki dotyczące sposobu i sytuacji stosowania ochrony informacji powinny być odpowiednie dla Twojej firmy. Aby uzyskać więcej informacji, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md).
+Dla przypadków, w którym użytkownicy muszą zastosować ochronę, pamiętaj zapewnić użytkownikom instrukcje i wytyczne jak i kiedy mają to robić. Upewnij instrukcje specyficzne dla aplikacji i wersje, które korzystają z i jak ich z nich korzystać. Zawierają także wskazówki dotyczące kiedy i jak użytkownicy należy stosować ochrony, który jest odpowiedni dla Twojej firmy. Aby uzyskać więcej informacji, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](../deploy-use/help-users.md).
 
 Informacje o sposobach konfigurowania tych aplikacji dla usługi Azure Rights Management w ramach usługi Azure Information Protection podano w temacie [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](../deploy-use/configure-applications.md).
 
 Z usługą Rights Management mogą być na różne sposoby zintegrowane usługi wyszukiwania. Na przykład: 
 
-- Usługa Exchange Online i serwer programu Exchange korzystają z indeksowania po stronie usługi, dzięki czemu wiadomości e-mail użytkownika chronione przez usługę RMS są automatycznie wyświetlane w wynikach wyszukiwania. 
+- Exchange Online i Exchange Server używać po stronie usługi indeksowania, dzięki czemu chronionych wiadomości e-mail przez użytkownika są automatycznie wyświetlane w wynikach wyszukiwania. 
 
-- Usługa SharePoint Online i program SharePoint Server stosują do plików mechanizmy ochrony usługi Rights Management tylko podczas pobierania, co oznacza, że to rozwiązanie do ochrony dokumentów nie ma wpływu na indeksowanie i wyniki wyszukiwania w programie SharePoint. Jeśli jednak istnieje dokument, który ma być przechowywany w programie SharePoint i nie powinien być zwracany w wynikach wyszukiwania, usługa RMS chroni taki plik przed przekazaniem go do programu SharePoint.
+- SharePoint Online i SharePoint Server zastosowania ochrony usługi Rights Management do plików tylko podczas pobierania. Ta implementacja oznacza, że wyniki indeksowanie i wyszukiwanie w programie SharePoint nie dotyczy to rozwiązanie ochrony dokumentów. Jednak jeśli dokument, który ma być przechowywany w programie SharePoint i ten dokument nie powinien być zwracany w wynikach wyszukiwania, ochrona dokumentu przed przekazaniem go do programu SharePoint.
 
-- Program Wyszukiwanie z pulpitu systemu Windows używa indeksu udostępnionego między różnymi użytkownikami urządzenia, a więc w celu zapewnienia bezpieczeństwa danych w chronionych dokumentach nie indeksuje on plików chronionych przez usługę RMS. W efekcie, mimo że wyniki wyszukiwania nie uwzględniają plików, dla których jest stosowana ochrona, można mieć pewność, że pliki zawierające dane poufne nie będą wyświetlane w wynikach wyszukiwania dla innych użytkowników, którzy mogą zalogować się do danego komputera lub nawiązać z nim połączenie. 
-
-
+- Wyszukiwanie z pulpitu systemu Windows używa indeksu udostępnionego między różnymi użytkownikami urządzenia, tak aby zabezpieczyć dane w chronionych dokumentów, indeksowania plików chronionych. Oznacza to, że mimo że wyniki wyszukiwania nie zawierają pliki, które są chronione, można mieć pewność, że pliki zawierające poufne dane są nie być wyświetlane w wynikach wyszukiwania dla innych użytkowników, którzy mogą zalogować się do komputera lub połączenia z Komputerem. 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Dowiedz się więcej na temat sposobu obsługi usługi Azure Rights Management przez następujące aplikacje i serwery:
+Dowiedz się więcej na temat każdego z poniższych aplikacji i usług obsługi usługi Azure Rights Management:
 
 -   [Aplikacja do udostępniania usługi RMS dla systemu Windows i platform urządzeń przenośnych](sharing-app-support.md)
 

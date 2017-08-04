@@ -1,10 +1,10 @@
 ---
-title: "Usługa Office 365&colon; konfigurowanie klientów i usług online — AIP"
+title: "Konfiguracja dla klientów usługi Office 365 i usług online używać usługi Azure RMS z Efektywnych"
 description: "Informacje i instrukcje dla administratorów dotyczące konfigurowania usługi Office 365 do pracy z usługą Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6a9183f764394c2580d4766c8decfbaaeec853a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dd8e9604c819f61f94bfdd51194744d127bbf55c
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365: konfiguracja dla klientów i usług online
+# <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online korzystać z usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Ze względu na to, że usługa Office 365 natywnie obsługuje usługę Azure Rights Management w ramach usługi Azure Information Protection, do obsługi funkcji zarządzania prawami do informacji (IRM, Information Rights Management) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook Web App, nie jest wymagana konfiguracja komputera klienckiego. Wszyscy użytkownicy muszą tylko zalogować się do aplikacji pakietu Office przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i wiadomości e-mail oraz używać plików i wiadomości e-mail, które są chronione przez inne osoby.
+Ponieważ usługi Office 365 natywnie obsługuje usługę Azure Rights Management z usługi Azure Information Protection, żadna konfiguracja komputera klienckiego jest wymagana do obsługi usługi informacji rights management (IRM) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook w sieci web. Wszyscy użytkownicy muszą wykonać, zalogować się do aplikacji pakietu Office z ich [!INCLUDE[o365_1](../includes/o365_1_md.md)] poświadczeń. Następnie mogą chronić pliki i wiadomości e-mail i używać plików i wiadomości e-mail, które są chronione przez innych użytkowników.
 
 Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz temat [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
@@ -123,7 +123,7 @@ W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruch
 Użytkownicy mogą teraz chronić swoje wiadomości e-mail za pomocą usługi Azure Rights Management. Na przykład w aplikacji Outlook Web App wybierz pozycję **Ustaw uprawnienia** z menu rozszerzonego (**...**), a następnie wybierz pozycję **Nie przesyłaj dalej** lub jeden z dostępnych szablonów, aby zastosować ochronę informacji do wiadomości e-mail i załączników. Jednak ze względu na to, że buforowanie interfejsu użytkownika w aplikacji Outlook Web App trwa cały dzień, przed podjęciem próby zastosowania ochrony wiadomości e-mail i po uruchomieniu poleceń konfiguracji zaczekaj, aż ten czas minie. Dopóki aktualizacje interfejsu użytkownika nie odzwierciedlą nowej konfiguracji, żadne opcje menu **Ustaw uprawnienia** nie będą widoczne.
 
 > [!IMPORTANT]
-> W przypadku tworzenia nowych [szablonów niestandardowych](configure-custom-templates.md) dla usługi Azure Rights Management lub aktualizacji szablonów za każdym razem musisz uruchomić następujące polecenie programu Exchange Online PowerShell (w razie potrzeby wykonaj najpierw kroki 2 i 3), aby zsynchronizować te zmiany w usłudze Exchange Online: `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> Jeśli Utwórz lub zaktualizuj [szablony](configure-policy-templates.md) usługi Azure Rights Management, każdorazowo, należy uruchomić następujące polecenia programu PowerShell .nline dodać Ogit programu Exchange (Jeśli to konieczne, uruchom kroki 2 i 3 najpierw) aby zsynchronizować te zmiany do usługi Exchange Online:`Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
 Jako administrator programu Exchange możesz teraz skonfigurować funkcje, które umożliwiają automatyczne stosowanie ochrony informacji, takie jak [reguły transportu](https://technet.microsoft.com/library/dd302432.aspx), [zasady zapobiegania utracie danych (DLP)](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) i [chroniona poczta głosowa](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
 

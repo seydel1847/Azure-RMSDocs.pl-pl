@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -175,27 +175,27 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |AcquirePreLicense|Klient w imieniu użytkownika żąda licencji dla zawartości chronionej przez usługę RMS.|
 |AcquireTemplates|Wykonano wywołanie pobrania szablonów na podstawie identyfikatorów szablonów.|
 |AcquireTemplateInformation|Wykonano wywołanie pobrania identyfikatorów szablonu z usługi.|
-|AddTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące dodania szablonu.|
+|AddTemplate|Połączenie jest nawiązywane z portalu Azure dotyczące dodania szablonu.|
 |AllDocsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV ze strony **Wszystkie dokumenty**.|
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
 |Certify|Klient certyfikuje zawartość objętą ochroną.|
-|DeleteTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące usunięcia szablonu na podstawie identyfikatora szablonu.|
+|DeleteTemplateById|Połączenie jest nawiązywane z portalu Azure można usunąć identyfikatora szablonu przez szablonu.|
 |DocumentEventsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV dla pojedynczego dokumentu.|
-|ExportTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
+|ExportTemplateById|Połączenie jest nawiązywane z portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
 |FECreateEndUserLicenseV1|Działanie podobne do typu żądania AcquireLicense, ale dotyczy urządzeń przenośnych.|
 |FECreatePublishingLicenseV1|Działanie takie samo, jak połączonych typów żądań Certify i GetClientLicensorCert, ale dotyczy klientów mobilnych.|
 |FEGetAllTemplates|Wykonano wywołanie z urządzenia przenośnego (fronton) dotyczące pobrania szablonów.|
 |FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
 |GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: użytkownik wyświetla stronę **wszystkie dokumenty** dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: administrator wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action ma wartość true, pole acting-as-user nie jest puste: administrator wyświetla stronę **wszystkie dokumenty** dla użytkownika.|
-|GetAllTemplates|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania wszystkich szablonów.|
+|GetAllTemplates|Połączenie jest nawiązywane z portalu Azure dotyczące pobrania wszystkich szablonów.|
 |GetClientLicensorCert|Klient żąda certyfikatu publikowania (który jest później używany do ochrony zawartości) z komputera z systemem Windows.|
 |GetConfiguration|Wykonano wywołanie polecenia cmdlet programu Azure PowerShell w celu pobrania konfiguracji dzierżawy usługi Azure RMS.|
 |GetConnectorAuthorizations|Wykonano wywołanie z łączników usługi RMS dotyczące pobrania ich konfiguracji z chmury.|
 |GetRecipients|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku listy dla pojedynczego dokumentu.|
 |GetSingle|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do strony **pojedynczego dokumentu**.|
-|GetTenantFunctionalState|Klasyczny portal Azure sprawdza, czy usługa Azure Rights Management jest aktywowana.|
-|GetTemplateById|Wykonano wywołanie z klasycznego portalu Azure dotyczące pobrania szablonu przez określenie identyfikatora szablonu.|
+|GetTenantFunctionalState|Azure portal sprawdza, czy usługa Azure Rights Management została aktywowana.|
+|GetTemplateById|Połączenie jest nawiązywane z portalu Azure w przypadku pobrania szablonu przez określenie identyfikatora szablonu.|
 |KeyVaultDecryptRequest|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK) w usłudze Azure Key Vault.|
 |KeyVaultGetKeyInfoRequest|Wykonywane jest wywołanie, aby sprawdzić, czy klucz podany do wykorzystania w usłudze Azure Key Vault dla klucza dzierżawy usługi Azure Information Protection jest dostępny i czy nie jest już używany.|
 |KeyVaultSignDigest|Wykonywane jest wywołanie, gdy klucz zarządzany przez klienta (BYOK) w usłudze Azure Key Vault jest używany w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
@@ -204,14 +204,14 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |LoadEventsForMap|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
 |LoadEventsForSummary|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku osi czasu dla pojedynczego dokumentu.|
 |LoadEventsForTimeline|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
-|ImportTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące importowania szablonu.|
+|ImportTemplate|Połączenie jest nawiązywane z portalu Azure dotyczące importowania szablonu.|
 |RevokeAccess|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące odwołania dokumentu.|
 |SearchUsers |Wykonano wywołanie z witryny śledzenia dokumentów dotyczące wyszukania wszystkich użytkowników w dzierżawie.|
 |ServerCertify|Wykonano wywołanie z klienta z obsługą usługi RMS (na przykład programu SharePoint) dotyczące certyfikacji serwera.|
 |SetUsageLogFeatureState|Wykonano wywołanie dotyczące włączenia rejestrowania użycia.|
 |SetUsageLogStorageAccount|Wykonano wywołanie dotyczące określenia lokalizacji dzienników usługi Azure Rights Management.|
 |UpdateNotificationSettings|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące zmiany ustawień powiadomień dla pojedynczego dokumentu.|
-|UpdateTemplate|Wykonano wywołanie z klasycznego portalu Azure dotyczące aktualizacji istniejącego szablonu.|
+|UpdateTemplate|Połączenie jest nawiązywane z portalu Azure do zaktualizowania istniejącego szablonu.|
 
 
 ## <a name="windows-powershell-reference"></a>Uwagi dotyczące programu Windows PowerShell

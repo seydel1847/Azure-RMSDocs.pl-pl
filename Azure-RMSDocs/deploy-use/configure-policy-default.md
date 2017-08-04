@@ -4,17 +4,17 @@ description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: decc5e3462a80e307201933e634c3ecfa03ee074
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 51b5f7d332a86c16ceb6928ea99039812dd54802
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -28,9 +28,80 @@ Możesz odwołać się do poniższych wartości, aby powrócić do ustawień dom
 
 ## <a name="current-default-policy"></a>Bieżące zasady domyślne
 
-Ta wersja zasad domyślnych pochodzi z 21 marca 2017 r.
+Jest to wersja lub domyślne zasady z 31 lipca 2017 r.
 
-Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfiguruj etykietę tak, aby zastosować ochronę usług Azure RMS, lub użyj rozwiązania zapobiegającego utracie danych (DLP). Zanim można będzie śledzić i odwoływać dokument za pomocą witryny śledzenia dokumentów, dokument musi być chroniony przez usługi Azure RMS. 
+Ta zasada domyślna jest tworzony tylko wtedy, gdy usługa Azure Rights Management została aktywowana, podczas tworzenia zasady. Jeśli ta usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących etykiety podrzędne:
+
+- **Poufne\Wszyscy pracownicy**
+
+- **Poufne \ odbiorców**
+
+- **Wysoce poufne\Wszyscy pracownicy** 
+
+- **Poufny \ odbiorców** 
+
+Gdy te etykiety podrzędne nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taki sam jak [poprzedniego domyślne zasady](#default-policy-before-july-31-2017).
+
+Jeśli ochrona jest stosowana do **wszyscy pracownicy** etykiety podrzędne, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
+
+#### <a name="more-information-about-the-recipients-only-sub-label"></a>Więcej informacji na temat odbiorców tylko etykieta podrzędna
+
+Użytkownicy widzą tę etykietę tylko w programie Outlook. Nie widzą tę etykietę w programie Word, Excel, PowerPoint lub w Eksploratorze plików. 
+
+Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj dalej jest automatycznie stosowana do wiadomości e-mail. Odbiorców, które określają użytkowników nie może przesłać wiadomości e-mail i nie można skopiować Drukuj zawartość lub zapisać załączniki.
+
+
+### <a name="labels"></a>Etykiety
+
+|Etykieta|Etykietka narzędzia|Ustawienia|
+|-------------------------------|---------------------------|-----------------|
+|Osobiste|Dane niebiznesowe, tylko do użytku osobistego.|**Włączone**: Włączone <br /><br />**Kolor**: Jasnozielony<br /><br />**Oznaczenia wizualne**: Brak <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Publiczne|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Ogólne|Dane biznesowe, które nie są przeznaczone do użytku publicznego. Jednak mogą one być udostępniane partnerom zewnętrznym w razie potrzeby. Do przykładów należą wewnętrzna książka telefoniczna firmy, schematy organizacyjne, standardy wewnętrzne i większość komunikacji wewnętrznej.|**Włączone**: Włączone <br /><br />**Kolor**: Niebieski <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Poufne|Wrażliwe dane biznesowe, które mogą spowodować szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+
+
+### <a name="sub-labels"></a>Etykiety podrzędne
+
+|Etykieta|Etykietka narzędzia|Ustawienia|
+|-------------------------------|---------------------------|-----------------|
+|Poufne\Wszyscy pracownicy|Dane poufne, które wymagają ochrony, możliwe do wyświetlenia przez wszystkich pracowników z pełnymi uprawnieniami. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[1]](#footnote-1)|
+|Poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Poufne \ odbiorców|Dane poufne wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: nie przesyłaj dalej|
+|Wysoce poufne\Wszyscy pracownicy|Wysoce poufne dane, dla których wszyscy pracownicy mają uprawnienia do wyświetlania, edycji i udzielania odpowiedzi dla tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[2]](#footnote-2)|
+|Wysoce poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Poufny \ odbiorców|Ściśle poufnych danych wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: nie przesyłaj dalej|
+
+###### <a name="footnote-1"></a>Przypis 1
+Ustawienia ochrony za pomocą szablonu domyślnej **poufne \ wszyscy pracownicy**.
+
+###### <a name="footnote-2"></a>Przypis 2 
+Ustawienia ochrony za pomocą szablonu domyślnej **poufny \ wszyscy pracownicy**.
+
+
+### <a name="information-protection-bar"></a>Pasek usługi Information Protection
+
+|Ustawienie|Wartość|
+|-------------------------------|---------------------------|
+|Tytuł|Czułość|
+|Etykietka narzędzia|Bieżąca etykieta dla tej zawartości. To ustawienie umożliwia określenie ryzyka dla firmy, jeśli ta zawartość jest udostępniana nieuprawnionym osobom wewnątrz lub na zewnątrz organizacji.|
+
+
+### <a name="settings"></a>Ustawienia
+
+|Ustawienie|Wartość|
+|-------------------------------|---------------------------|
+|Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę (stosowaną automatycznie lub przez użytkowników)|Wyłączone|
+|Wybierz etykietę domyślną|Brak|
+|Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę|Wyłączone|
+|W przypadku wiadomości e-mail z załącznikami należy stosować etykiety odpowiadające najwyższej klasyfikacji tych załączników|Wyłączone|
+|Podaj niestandardowy adres URL strony sieci Web „Więcej informacji” klienta usługi Azure Information Protection|Pusty|
+
+
+## <a name="default-policy-before-july-31-2017"></a>Domyślne zasady przed 31 lipca 2017 r.
+
+Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfiguruj etykietę tak, aby zastosować ochronę usług Azure RMS, lub użyj rozwiązania zapobiegającego utracie danych (DLP). Aby można było śledzenia i odwoływania dokumentu za pomocą witryny śledzenia dokumentów, dokument musi chronione przez usługę Azure RMS i śledzone przez osobę, która chronionego dokumentu. 
 
 
 ### <a name="labels"></a>Etykiety

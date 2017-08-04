@@ -4,7 +4,7 @@ description: "Jeśli usługa Active Directory Rights Management Services (AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 36be58d0378bbb2a5f9982c5e4e0079d49d497d6
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 7b3a49925fc0486f7be161da501a59c1ec2ebdfc
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
@@ -52,7 +52,7 @@ Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabe
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |Obsługuje usługę zarządzania prawami do informacji (IRM) w usługach Microsoft Online, takich jak Exchange Online i SharePoint Online, a także usłudze Office 365.<br /><br />Obsługuje również lokalne produkty serwerowe firmy Microsoft, takie jak Exchange Server i SharePoint Server, oraz serwery plików z systemem Windows Server i infrastrukturą klasyfikacji plików.|Obsługuje produkty serwerowe firmy Microsoft, takie jak Exchange Server i SharePoint Server, oraz serwery plików z systemem Windows Server i infrastrukturą klasyfikacji plików.|
 |Umożliwia nawiązywanie niejawnych relacji zaufania między organizacjami i użytkownikami w dowolnej organizacji. Oznacza to, że chroniona zawartość może być udostępniana między użytkownikami w danej organizacji lub między organizacjami, jeśli użytkownicy mają usługę [!INCLUDE[o365_1](../includes/o365_1_md.md)] lub [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] albo tworzą konta usługi RMS dla użytkowników indywidualnych.|Relacje zaufania muszą być jawnie definiowane w formie bezpośredniej relacji typu punkt-punkt między dwiema organizacjami przy użyciu zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania tworzonych za pomocą usług federacyjnych Active Directory (AD FS).|
-|Udostępnia dwa domyślne szablony zasad praw, które ograniczają dostęp do zawartości do organizacji użytkownika. Jeden szablon umożliwia przeglądanie chronionej zawartości w trybie tylko do odczytu, a drugi oferuje uprawnienia do zapisu lub modyfikowania chronionej zawartości.<br /><br />Można również tworzyć własne szablony niestandardowe, w tym szablony działu widoczne tylko dla podzbioru użytkowników. Aby uzyskać więcej informacji, zobacz [Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|Nie ma domyślnych szablonów zasad praw — trzeba je utworzyć i dystrybuować. Aby uzyskać więcej informacji, zobacz [Zagadnienia dotyczące szablonów zasad usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|
+|Udostępnia dwa domyślne szablony zasad praw, które ograniczają dostęp do zawartości do organizacji użytkownika. Jeden szablon umożliwia przeglądanie chronionej zawartości w trybie tylko do odczytu, a drugi oferuje uprawnienia do zapisu lub modyfikowania chronionej zawartości.<br /><br />Można również tworzyć własne szablony niestandardowe, w tym szablony działu widoczne tylko dla podzbioru użytkowników. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|Brak bez szablonów domyślnych; należy utworzyć i dystrybuować. Aby uzyskać więcej informacji, zobacz [Zagadnienia dotyczące szablonów zasad usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|
 |Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta usługi Azure Information Protection](../rms-client/aip-client.md) lub aplikacji RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: nieobsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2007.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: obsługiwany|
 |Obsługuje [klienta usługi Azure Information Protection](../rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing.<br /><br />Ponadto klient usługi Azure Information Protection obsługuje następujące funkcje i elementy:<br /><br />– Udostępnianie informacji osobom w innej organizacji.<br /><br />– Witryna śledzenia dokumentów dla użytkowników z możliwością odwoływania dokumentu.|Obsługuje [klienta usługi Azure Information Protection](../rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing. Udostępnianie nie dotyczy jednak użytkowników w innej organizacji ani witryny śledzenia dokumentów z możliwością odwoływania dokumentu.|
 |Korzystając z klienta usługi Azure Information Protection, można klasyfikować i chronić większość [typów plików](../rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|Korzystając z klienta usługi Azure Information Protection, można klasyfikować większość [typów plików](../rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|

@@ -4,17 +4,17 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 86857d9fe744ee8b8949bdf247a360492ceb8165
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -33,18 +33,18 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
 
 3. Należy zwrócić uwagę na informację znajdującą się na stronie **Szybki start**, która zostanie automatycznie otwarta przy pierwszym połączeniu z usługą. Możesz do niej wrócić później. W tym samouczku kliknij przycisk **Zasady globalne**, aby otworzyć blok **Zasady: globalne**. Ten blok zostaje automatycznie otwarty przy kolejnych połączeniach z usługą i zawiera domyślne zasady usługi Information Protection, które są tworzone automatycznie dla dzierżawcy:
     
-    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Dwie ostatnie etykiety można rozszerzyć, aby wyświetlić etykiety podrzędne: **Wszyscy pracownicy** i **Każdy (niechronione)**. Są to przykłady podkategorii klasyfikacji.
+    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Ostatnich dwóch etykiet rozwijania w celu pokazania etykiety podrzędne, które obejmują **wszyscy pracownicy** i **każdy (nie jest chroniony)**, zapewniając przykłady klasyfikacji podkategoriami.
     
        > [!NOTE]
-       > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Jeśli tak jest, prawdopodobnie używasz starszej wersji zasad domyślnych. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.
+       > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Lub dodatkowych etykietę podrzędną o nazwie **odbiorców tylko**. Jest tak, ponieważ istnieją różne wersje domyślne zasady, w zależności od tego, kiedy został utworzony dla Twojej dzierżawy. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.
        > 
        > Jeśli Twoje domyślne zasady wyglądają inaczej, nadal możesz używać tego samouczka, ale należy pamiętać o tych zmianach, korzystając z poniższych instrukcji i obrazów. Jeśli chcesz zmodyfikować zasady domyślne tak, aby pasowały do bieżących zasad domyślnych, zobacz [Domyślne zasady usługi Azure Information Protection](../deploy-use/configure-policy-default.md).
 
-    - W przypadku domyślnej konfiguracji niektóre etykiety nie mają skonfigurowanych oznaczeń wizualnych (takich jak stopka, nagłówek i znak wodny) i żadna z tych etykiet nie ma ustawionej ochrony: 
+    - Z konfiguracji domyślnej niektóre etykiet nie ma oznaczenia wizualne skonfigurowane (takie jak stopka, nagłówek, znak wodny). W zależności od Twojego domyślne zasady niektóre etykiety może być ochrony ustawiona, czy nie. Na przykład:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-labelsv2.png)
     
-    Ponadto istnieją ustawienia zasad, które nie są ustawione. Na przykład nie jest wymagane, aby wszystkie dokumenty i wiadomości e-mail miały etykiety, nie ma etykiety domyślnej, a użytkownicy nie muszą uzasadniać zmiany etykiet:
+    Ponadto istnieją ustawienia zasad, które nie są ustawione. Wszystkie dokumenty i wiadomości e-mail nie muszą mieć etykietę, brak jest etykiety domyślnej, a użytkownicy nie muszą uzasadniać ich zmieniać etykiety:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-settings.png)
 
@@ -62,21 +62,21 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
 
 Zmienimy teraz ustawienia jednej z podrzędnych etykiet **Wszyscy pracownicy** głównej etykiety **Poufne**. 
 
-Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą wersję zasad, możesz zamiast niej użyć etykiety **Poufne**. Kroki konfiguracji będą takie same, ale nazwą bloku etykiety będzie **Poufne** zamiast **Wszyscy pracownicy**.
+Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą wersję zasad, możesz zamiast niej użyć etykiety **Poufne**. Czynności konfiguracyjne są takie same, ale nazwa bloku etykiety **poufne** zamiast **wszyscy pracownicy**.
 
-1. Upewnij się, że etykieta **Poufne** jest rozwinięta, a następnie z tej etykiety wybierz pozycję **Wszyscy pracownicy**.
-    
-    W nowym bloku **Etykieta: Wszyscy pracownicy** zostaną teraz wyświetlone ustawienia dostępne dla każdej etykiety. 
+1. Upewnij się, że **poufne** etykiety jest rozwinięty, ukazując etykiety podrzędne, a następnie w **wszyscy pracownicy** etykietę, zanotuj, czy **usługi Azure RMS** nie będą wyświetlane **ochrony** kolumny. Jeśli tak jest, masz najnowszą domyślne zasady i ochrony dla tej etykiety jest automatycznie konfigurowany dla Ciebie. Jeśli ta kolumna jest pusta, należy skonfigurować ochronę w kolejnym kroku.
+
+    Wybierz tę opcję, **wszyscy pracownicy** etykietę podrzędną i w nowym **etykiety: Wszyscy pracownicy** bloku, pojawi się ustawienia, które są dostępne dla każdej etykiety. 
 
 2. Odczytaj tekst **Opisu** dla tej etykiety. Opisuje on sposób zamierzonego użycia wybranej etykiety i jest widoczny dla użytkowników jako etykietka narzędzia pomagająca im zdecydować, którą etykietę wybrać.
 
-3. Odszukaj sekcję **Ustaw uprawnienia do dokumentów i wiadomości e-mail zawierających tę etykietę** i wybierz pozycję **Chroń**:
+3. Jeśli ochrony został już skonfigurowany dla etykiety, przejdź do kroku 5.
     
-    ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-barv2.png) 
+    Jeśli ochrona nie jest skonfigurowany dla etykiety, Znajdź sekcję **ustawić uprawnień dla dokumentów i wiadomości e-mail zawierających tę etykietę**. Wybierz **Chroń**, a następnie wybierz **ochrony** paska:
     
-    Spowoduje to otwarcie bloku **Ochrona**.
+    ![Ochrony skonfigurowane dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-3. Upewnij się, że wybrano opcje **Azure RMS** i **Wybierz wstępnie zdefiniowany szablon** w bloku **Ochrona**. Następnie kliknij pole listy rozwijanej i wybierz szablon domyślny, który pozwala wszystkim użytkownikom w organizacji wyświetlać i edytować chronioną zawartość. 
+4. W **ochrony** bloku, upewnij się, że **usługi Azure RMS** jest zaznaczone, a następnie wybierz pozycję **wybierz szablon wstępnie zdefiniowany**. Kliknij pole listy rozwijanej, a następnie wybierz domyślny szablon, który pozwala wszystkim użytkownikom w organizacji widoku i edytowania zawartości chronionej. 
     
     Jeśli niedawno uzyskano subskrypcję, ten szablon ma nazwę **Poufne\Wszyscy pracownicy**. 
     
@@ -86,7 +86,7 @@ Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą 
     
     Jeśli ten szablon domyślny usługi Azure Rights Management został wyłączony, wybierz szablon alternatywny. Jednak w przypadku wybrania szablonu działu upewnij się, czy Twoje konto znajduje się w jego zakresie.
     
-4. Kliknij przycisk **OK**, aby zapisać zmiany, co spowoduje zamknięcie bloku **Ochrona**. Swoją konfigurację zobaczysz w bloku **Etykieta: Wszyscy pracownicy**:
+4. Kliknij przycisk **OK**, aby zapisać zmiany, co spowoduje zamknięcie bloku **Ochrona**. Zostanie wyświetlony pasek ochrony zaktualizowane w **etykiety: Wszyscy pracownicy** bloku. Na przykład:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana ochrona usługi Azure RMS](../media/protection-bar-configured.png)
     
@@ -96,7 +96,7 @@ Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — ustawianie ochrony usługi Azure RMS](../media/step2-configure-watermark.png)
     
-    Można zmienić rozmiar, kolor i układ znaków wodnych, ale chwilowo pozostawimy wartości domyślne tych ustawień.
+    Mimo że można zmienić rozmiar, kolor i układ znaki wodne, pozostanie te ustawienia wartości domyślne dla teraz.
     
 6. Zlokalizuj sekcję **Konfigurowanie warunków automatycznego stosowania tej etykiety**:
     
@@ -126,13 +126,13 @@ Jeśli etykieta **Poufne** nie ma podrzędnych etykiet, ponieważ masz starszą 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — wpisz uwagi](../media/step2-type-notes.png)
 
-10. Kliknij przycisk **Zapisz** w tym bloku **Etykieta: Wszyscy pracownicy**. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
+10. Kliknij przycisk **zapisać** na tym **etykiety: Wszyscy pracownicy** bloku. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
     
-    Na tym etapie Twoje etykiety będą teraz zawierać ochronę usług Azure RMS dla etykiety, która właśnie została skonfigurowana:
+    Po skonfigurowaniu etykiety dla ochrony etykiety jest teraz zaktualizowane w celu wyświetlenia ochrony usług Azure RMS:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configuredv2.png)
     
-    Ustawienia zostały skonfigurowane wraz ze zmianami etykiety domyślnej i uzasadnieniem:
+    Widoczny jest również, czy ustawienia zostały skonfigurowane z zmiany dla etykiety domyślnej oraz uzasadnienie:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowane ustawienia](../media/info-protect-settings-configuredv2.png)
     
@@ -147,6 +147,7 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Informacje o opcjach konfiguracji zasad|[Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md)|
+|Ustawienia konfiguracji w domyślnych zasad|[Domyślne zasady usługi Azure Information Protection](../deploy-use/configure-policy-default.md)|
 
 
 >[!div class="step-by-step"]

@@ -4,17 +4,17 @@ description: "Krok 1 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: adc2baa875595d5044b47a9f014cc1381ba85dc2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1779eb6f2bcf31ce3515b58b6ed955208fafb237
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>Krok 1. Aktywowanie usługi Rights Management
  
@@ -43,14 +43,14 @@ W przypadku tego samouczka przejdziemy bezpośrednio do strony aktywacji w porta
 
     Zostanie wyświetlony komunikat **Usługa Rights Management została aktywowana** wraz z opcją dezaktywowania tej usługi (może być konieczne ręczne odświeżenie strony).
 
-    Tym razem nie klikaj pozycji **Funkcje zaawansowane**. Kliknięcie tej pozycji spowoduje wyświetlenie klasycznego portalu Azure, umożliwiającego konfigurowanie szablonów niestandardowych, które nie są potrzebne w tym samouczku. Zamiast tego możesz zamknąć tę stronę.
+    Tym razem nie klikaj pozycji **Funkcje zaawansowane**. Zamiast tego możesz zamknąć tę stronę.
 
-To wszystko, co musisz zrobić w pierwszym kroku tego samouczka. W przypadku wdrożenia produkcyjnego prawdopodobnie zechcesz skonfigurować niestandardowe szablony zastępujące lub uzupełniające dwa domyślne szablony usługi Azure Rights Management. Jednak w naszym samouczku szablony niestandardowe nie są potrzebne, dlatego możesz teraz przejść do kroku 2.
+To wszystko, co musisz zrobić w pierwszym kroku tego samouczka. Możesz przejść do kroku 2.
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Informacje o aktywacji usługi Azure Rights Management|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
-|Informacje na temat szablonów domyślnych i sposobu tworzenia nowych szablonów niestandardowych|[Konfigurowanie szablonów niestandardowych dla usługi Azure Rights Management](../deploy-use/configure-custom-templates.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; Wprowadzenie](infoprotect-quick-start-tutorial.md)

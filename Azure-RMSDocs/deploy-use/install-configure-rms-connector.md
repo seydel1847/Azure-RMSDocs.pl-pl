@@ -4,7 +4,7 @@ description: "Informacje ułatwiające instalowanie i konfigurowanie łącznika 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: a8cfa6a5baf1661495fc8b485ac0a6535c22233d
+ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
@@ -59,7 +59,7 @@ To konto nie może wymagać uwierzytelniania wieloskładnikowego (MFA), poniewa�
 
 Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, tak aby nie zawierało ono żadnego z tych znaków specjalnych.
 
-Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Jeśli na przykład możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. W przeciwnym razie zostanie wyświetlony komunikat o błędzie: **Próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
+Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Jeśli na przykład możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. Jeśli nie, komunikat o błędzie: **próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
 
 Można użyć konta, które ma jedno z następujących uprawnień:
 
@@ -117,6 +117,10 @@ Na ostatniej stronie kreatora wykonaj następujące czynności, a następnie kli
 
 Jeśli musisz odinstalować łącznik usług RMS, ponownie uruchom kreatora i wybierz opcję odinstalowania.
 
+Jeśli występują problemy podczas instalacji, sprawdź w dzienniku instalacji: **connector_ Rights Management %LocalAppData%\Temp\Microsoft\<Data i godzina > .log** 
+
+Na przykład dziennik instalacji mogą wyglądać podobnie do connector_20170803110352.log C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management
+
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>Autoryzowanie serwerów do korzystania z łącznika usług RMS
 Po zainstalowaniu łącznika usługi RMS na co najmniej dwóch komputerach wszystko jest gotowe do autoryzowania serwerów i usług, które mają używać łącznika usługi RMS. Na przykład: serwerów z systemem Exchange Server 2013 lub SharePoint Server 2013.
 
@@ -126,7 +130,7 @@ Podczas autoryzowania serwerów należy pamiętać o następujących kwestiach:
 
 - Dodawanym serwerom zostaną przyznane specjalne uprawnienia. Wszystkim kontom określonym dla roli programu Exchange Server w konfiguracji łącznika zostanie przyznana [rola administratora](configure-super-users.md) w usługach Azure RMS, która umożliwi im dostęp do całej zawartości tej dzierżawy RMS. Funkcja administratora jest automatycznie włączana na tym etapie w razie potrzeby. Aby uniknąć zagrożenia zabezpieczeń podniesienia uprawnień, należy wskazać tylko konta używane przez serwery programu Exchange w danej organizacji. Wszystkim serwerom skonfigurowanym jako serwery programu SharePoint lub serwery plików, które używają infrastruktury FCI, zostaną przyznane uprawnienia zwykłych użytkowników.
 
-- Można dodać wiele serwerów jako pojedynczy wpis, określając zabezpieczenie usługi Active Directory lub grupy dystrybucyjnej, lub konto usługi, które jest używane przez więcej niż jeden serwer. Podczas używania tej konfiguracji grupa serwerów współużytkuje te same certyfikaty usług RMS i wszystkie uznaje się za właścicieli zawartości chronionej przez dowolny z nich. Aby zminimalizować ogólne koszty administracyjne, zalecane jest użycie tej konfiguracji pojedynczej grupy zamiast poszczególnych serwerów w celu autoryzowania serwerów programu Exchange w danej organizacji lub farmy serwerów programu SharePoint.
+- Można dodać wiele serwerów jako pojedynczy wpis, określając zabezpieczenie usługi Active Directory lub grupy dystrybucyjnej, lub konto usługi, które jest używane przez więcej niż jeden serwer. Podczas używania tej konfiguracji Grupa serwerów udziały same certyfikaty usług RMS i są wszystkie uznany za właścicieli zawartości, które z nich został zabezpieczony. Aby zminimalizować ogólne koszty administracyjne, zalecane jest użycie tej konfiguracji pojedynczej grupy zamiast poszczególnych serwerów w celu autoryzowania serwerów programu Exchange w danej organizacji lub farmy serwerów programu SharePoint.
 
 Na stronie **Serwery, które mogą wykorzystywać łącznik** kliknij przycisk **Dodaj**.
 
