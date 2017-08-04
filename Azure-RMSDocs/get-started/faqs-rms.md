@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
+ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/01/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -63,20 +63,22 @@ Tak jak te nazwy sugerują, pierwsza rola przyznaje uprawnienia do uruchamiania 
 
 Dodatkowe kwestie, na które należy zwrócić uwagę:
 
-- Tylko administratorzy globalni usługi Office 365 i administratorzy globalni usługi Azure AD mogą używać portali zarządzania (centrum administracyjne usługi Office 365 lub klasyczny portal Azure) do konfigurowania usługi Azure RMS. Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
+- Tylko administratorzy globalni dla usługi Office 365 i Administratorzy globalni dla usługi Azure AD można użyć Centrum administracyjnego usługi Office 365 lub klasycznego portalu Azure do konfigurowania usługi Azure RMS. Jeśli używasz portalu Azure do usługi Azure Information Protection, można również zalogować się jako administrator zabezpieczeń.
+
+- Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
 
 - Jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), nie ma to wpływu na możliwość administrowania usługą Azure RMS, z wyjątkiem łącznika usługi RMS. Na przykład jeśli kontrolki dołączania zostały skonfigurowane w taki sposób, że możliwość ochrony zawartości jest ograniczona do grupy Dział IT, konto używane do instalowania i konfigurowania łącznika usługi RMS musi należeć do tej grupy. 
 
-- Żaden administrator usługi Azure RMS (administrator globalny dzierżawy lub administrator globalny usługi Azure RMS) nie może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md). 
+- Żaden administrator usługi Azure RMS (na przykład administrator globalny dzierżawy lub administratora globalnego usługi Azure RMS) może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md). 
 
 >[!NOTE]
-> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management są przenoszone do portalu Azure, do którego oprócz administratora globalnego mają dostęp administratorzy zabezpieczeń. Aby uzyskać więcej informacji, zobacz następujące anonse blogu: [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Ujednolicona administracja usługą Azure Information Protection dostępna w wersji zapoznawczej) i [Azure Information Protection unified administration phase two](https://blogs.technet.microsoft.com/enterprisemobility/2017/05/23/azure-information-protection-unified-administration-phase-two/) (Ujednolicona administracja usługą Azure Information Protection dostępna w fazie drugiej).
+> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management został przeniesiony do portalu Azure obsługuje Administratorzy zabezpieczeń oprócz dostępu administratora globalnego. 
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Jak utworzyć nowy szablon niestandardowy w portalu Azure?
 
-Dostępne w wersji zapoznawczej szablony niestandardowe są przenoszone do portalu Azure, w którym nadal można zarządzać nimi jak szablonami lub też przekonwertować je na etykiety. Aby utworzyć nowy szablon, utwórz nową etykietę, a następnie skonfiguruj ustawienia ochrony danych dla usługi Azure RMS. Spowoduje to utworzenie w sposób niewidoczny dla użytkownika nowego szablonu dostępnego dla usług oraz aplikacji integrujących się z szablonami usługi Rights Management.
+Szablony niestandardowe zostały przeniesione do portalu Azure, gdzie można nadal nimi zarządzać jako szablon lub przekonwertować je na etykiety. Aby utworzyć nowy szablon, utwórz nową etykietę, a następnie skonfiguruj ustawienia ochrony danych dla usługi Azure RMS. Spowoduje to utworzenie w sposób niewidoczny dla użytkownika nowego szablonu dostępnego dla usług oraz aplikacji integrujących się z szablonami usługi Rights Management.
 
-Aby uzyskać więcej informacji o konfigurowaniu szablonów w portalu Azure, zobacz [Konfigurowanie szablonów i zarządzanie nimi przy użyciu zasad usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Aby uzyskać więcej informacji na temat szablonów w portalu Azure, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
 Oczywiście, a dodatkową korzyścią jest to, że użytkownicy będą mogli w łatwy sposób chronić wiadomości e-mail i załączniki, a także korzystać z nich w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
@@ -99,19 +101,14 @@ Do uwierzytelnienia użytkownika usługa Azure Rights Management zawsze używa k
 
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
-Tak. Tworzenie szablonów niestandardowych, które użytkownicy końcowi (i administratorzy) mogą wybierać z poziomu aplikacji, ułatwia i przyspiesza stosowanie ochrony informacji za pomocą określonych wstępnie zdefiniowanych zasad. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i spoza niej. 
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>Do szablonów można dodać użytkowników zewnętrznych (osoby spoza firmy)?
+Tak. Tworzenie szablonów, które użytkownicy końcowi (i Administratorzy) mogą wybierać z poziomu aplikacji, ułatwia szybkie i łatwe ich stosowanie ochrony informacji za pomocą wstępnie zdefiniowane zasady, które określisz. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i spoza niej. Można nawet określić wszystkich użytkowników w innej organizacji.
 
-Aby określić użytkowników spoza organizacji, dodaj ich jako kontakty do grupy wybranej w klasycznym portalu Azure podczas konfigurowania szablonów. Aby określić grupy spoza organizacji, należy użyć modułu [Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md), za pomocą którego można również określić poszczególnych użytkowników zewnętrznych, a nawet wszystkich użytkowników z innej organizacji:
+Ta konfiguracja zrobić przy użyciu portalu Azure, podczas konfigurowania [ustawienia ochrony](../deploy-use/configure-policy-protection.md). Lub tej konfiguracji można wykonać za pomocą programu PowerShell. Przy użyciu programu PowerShell:
 
--   **Użyj obiektu definicji praw, aby utworzyć lub zaktualizować szablon**.    Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, który następnie zostanie użyty do utworzenia lub zaktualizowania szablonu. Aby określić obiekt definicji praw, utwórz zmienną za pomocą polecenia cmdlet [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition). Następnie wykonaj polecenie cmdlet [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) (w przypadku nowego szablonu) lub polecenie cmdlet [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) (w przypadku modyfikacji istniejącego szablonu), aby dostarczyć tę zmienną do parametru -RightsDefinition. Jeśli jednak użytkownicy są dodawani do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących grup w szablonach, a nie tylko dla użytkowników zewnętrznych.
+-   **Użyj obiektu definicji praw, aby utworzyć lub zaktualizować szablon**.  Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, który następnie zostanie użyty do utworzenia lub zaktualizowania szablonu. Określ obiekt definicji praw, używając [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet, aby utworzyć zmienną, a następnie dostarczyć tę zmienną do parametru RightsDefinition z [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) polecenia cmdlet (dla nowego szablonu) lub [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet (w przypadku modyfikacji istniejącego szablonu). Jeśli jednak użytkownicy są dodawani do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących grup w szablonach, a nie tylko dla użytkowników zewnętrznych.
 
-Więcej informacji na temat szablonów niestandardowych można znaleźć w temacie [Konfigurowanie szablonów niestandardowych usługi Azure Rights Management](../deploy-use/configure-custom-templates.md).
-
-> [!TIP]
-> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management są przenoszone do portalu Azure. Te nowe opcje ułatwiają określanie użytkowników zewnętrznych, zatem nie jest już konieczne używanie programu PowerShell lub grup, które zawierają użytkowników zewnętrznych. Ta funkcja jest obecnie w wersji zapoznawczej: [Azure Information Protection unified administration now in Preview](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) (Ujednolicona administracja usługą Azure Information Protection dostępna w wersji zapoznawczej). 
-
-> Aby zapoznać się z instrukcjami, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](../deploy-use/configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
+Aby uzyskać więcej informacji o szablonach, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Czy usługa Azure RMS współpracuje z grupami dynamicznymi w usłudze Azure AD?
 Funkcja Azure AD Premium pozwala skonfigurować członkostwo dynamiczne w grupach zabezpieczeń przez określenie [reguł opartych na atrybucie](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Ten typ grupy nie obsługuje adresu e-mail, dlatego nie można go używać z usługą Azure Rights Management. Jednak grupy usługi Office 365 obsługują zarówno dynamiczne członkostwo w grupie, jak i adresy e-mail. Ponieważ jest to grupa z włączoną obsługą poczty e-mail, można używać jej wraz z usługą Azure Rights Management.
@@ -120,7 +117,7 @@ Aby uzyskać więcej informacji na temat wymagań dotyczących użytkowników i 
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>Jak wysłać chronioną wiadomość e-mail na konto Gmail lub Hotmail?
 
-Niektórzy użytkownicy mogli natrafić na odniesienia do procesu wysyłania chronionych wiadomości e-mail na konta Gmai lub Hotmail lub na jego prezentacje. Ta funkcja nadal stanowi element prywatnej wersji zapoznawczej, w związku z czym dalsze informacje na jej temat nie będą dostępne do czasu udostępnienia użytkownikom omawianej wersji jako wersji ogólnodostępnej.
+Niektórzy użytkownicy mogli natrafić na odniesienia do procesu wysyłania chronionych wiadomości e-mail na konta Gmai lub Hotmail lub na jego prezentacje. Ta funkcja jest nadal w prywatnej wersji zapoznawczej, więc nie będzie zawierał więcej informacji o nim w tej dokumentacji do pełni jego zwolnienia.
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
 Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obsługują obecnie wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą zawierającą informacje na temat [aplikacji z obsługą usług RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
@@ -154,7 +151,7 @@ Nie pozwólcie, aby to bieżące ograniczenie opóźniło Wam rozpoczęcie korzy
 Jeśli jednak zasady firmy wymagają używania sprzętowego modułu zabezpieczeń (HSM) i w przeciwnym przypadku zablokowałoby to wdrożenie usługi Azure Information Protection, jest możliwe wdrożenie usługi Azure Information Protection z funkcją BYOK już teraz, przy ograniczonych funkcjach ochrony usługi Rights Management w odniesieniu do programu Exchange. Więcej informacji zawiera temat [Cennik i ograniczenia dotyczące funkcji BYOK](../plan-design/byok-price-restrictions.md) w części [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design/plan-implement-tenant-key.md).
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>Wygląda na to, że funkcja, której potrzebuję, nie współpracuje z chronionymi bibliotekami programu SharePoint. Czy obsługa tej funkcji jest planowana?
-Obecnie program SharePoint obsługuje dokumenty chronione za pomocą usługi Rights Management, korzystając w tym celu z bibliotek chronionych za pomocą usługi IRM, które nie obsługują niestandardowych szablonów, śledzenia dokumentów i niektórych innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi pakietu Office).
+Obecnie program SharePoint obsługuje chronionego przez usługi RMS dokumenty przy użyciu usługi IRM chronione bibliotek, które nie obsługują szablony usługi Rights Management, śledzenia dokumentów i innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi pakietu Office).
 
 Użytkownicy zainteresowani konkretną funkcją, która nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
@@ -164,7 +161,7 @@ Domyślnie tej usługi nie konfiguruje administrator usługi Office 365, lecz ro
 Podobnie jak administrator witryny programu SharePoint włącza i konfiguruje usługę IRM dla biblioteki programu SharePoint, której jest właścicielem, usługa OneDrive dla Firm jest zaprojektowana tak, aby użytkownicy włączali i konfigurowali usługę IRM dla własnej biblioteki usługi OneDrive dla Firm. Można jednak zrobić to dla nich, korzystając ze środowiska PowerShell. Instrukcje można znaleźć w sekcji [SharePoint Online and OneDrive for Business: IRM Configuration](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) (Usługi SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM) artykułu [Office 365: Configuration for clients and online services](../deploy-use/configure-office365.md) (Usługa Office 365: konfiguracja dla klientów i usług online).
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>Czy istnieją jakieś wskazówki ułatwiające pomyślne wdrożenie?
-Po nadzorowaniu wielu wdrożeń i wysłuchaniu opinii naszych klientów, partnerów, konsultantów i inżynierów pomocy technicznej możemy udzielić jednej podstawowej wskazówki opartej na naszym doświadczeniu: **projektuj i wdrażaj proste zasady**.
+Po nadzorowaniu wielu wdrożeń i wysłuchaniu opinii naszych wywołujących, partnerów, konsultantów i inżynierów pomocy technicznej — jedną z największych porady, firma Microsoft może przekazać podstawie doświadczeń: **projektowania i wdrażania zasad prostych**.
 
 Ponieważ usługa Azure Information Protection umożliwia bezpieczne udostępnianie dowolnym osobom, można pozwolić sobie na ambitne podejście do zasięgu ochrony danych. Jednak zasady dotyczące praw należy określać w sposób konserwatywny. W przypadku wielu organizacji najsilniejszy wpływ na prowadzoną działalność ma zapobieganie wyciekowi danych przez stosowanie domyślnego szablonu zasad praw umożliwiającego dostęp wyłącznie osobom z danej organizacji. Oczywiście w razie potrzeby można wprowadzić bardziej szczegółowe ograniczenia — uniemożliwiać drukowanie, edycję itd. Jednak takie szczegółowe ograniczenia należy stosować wyjątkowo, w przypadku dokumentów wymagających naprawdę specjalnej ochrony, i nie implementować ich od razu, ale zaplanować podejście etapowe.
 
@@ -179,7 +176,7 @@ W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy u
 
 To odwołanie nie dotyczy użytkownika, który włączył ochronę dokumentu, czyli [wystawcy usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) — ma on zawsze dostęp do swoich dokumentów. 
 
-Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell **Set-AadrmMaxUseLicenseValidityTime**. To ustawienie można przesłonić bardziej restrykcyjnym ustawieniem w szablonie niestandardowym. 
+Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell **Set-AadrmMaxUseLicenseValidityTime**. To ustawienie może zostać zastąpione przez bardziej restrykcyjne ustawienie w szablonie. 
 
 Aby uzyskać dodatkowe informacje i przykłady sposobu działania licencji użytkowania, zobacz szczegółowy opis polecenia [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime).
 

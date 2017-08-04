@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/06/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 960fe1abf2fa4f5b8976f190454d31849736298a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: c7678be03106719af4679ae06e2aaa84aff8ca3e
+ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -24,18 +24,19 @@ ms.lasthandoff: 06/30/2017
 
 Najprostszy sposób klasyfikowania i ochrony dokumentów i wiadomości e-mail jest dostępny podczas ich tworzenia lub edytowania za pośrednictwem aplikacji komputerowych pakietu Office: **Word**, **Excel**, **PowerPoint** i **Outlook**. 
 
-Pliki można jednak klasyfikować i chronić także za pomocą **Eksploratora plików**, który obsługuje dodatkowe typy plików i stanowi wygodny sposób klasyfikowania oraz ochrony wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
+Można jednak również klasyfikować i chronić pliki za pomocą **Eksploratora plików**. Ta metoda obsługuje inne typy plików i jest wygodny sposób klasyfikować i chronić wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
+
+Etykiety dotyczy ochrony dokumentu, dokument chroniony nie jest odpowiedni do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące chronionych plików: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur i zbieranie elektronicznych materiałów dowodowych. 
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Bezpieczne udostępnianie pliku osobom spoza organizacji
 
-Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład można dołączyć plik do wiadomości e-mail lub wysłać zaproszenie z witryny usługi SharePoint.
+Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład Dołącz plik do wiadomości e-mail.
 
 W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Możesz także użyć [aplikacji pakietu Office](#set-custom-permissions-for-a-document) lub [Eksploratora plików](#using-file-explorer-to-classify-and-protect-files), aby ustawić uprawnienia niestandardowe dla pliku przed jego udostępnieniem. 
 
 Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, w celu zachowania pierwotnych uprawnień należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
 
 Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
-
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
 
@@ -63,7 +64,7 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
-- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby to sprawdzić, kliknij pozycję **Chroń** > **Pomoc i opinie** i zobacz, czy w sekcji **Stan klienta** jest widoczny komunikat: **Ten klient nie ma licencji pakietu Office Professional Plus.** 
+- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby sprawdzić, kliknij przycisk **Chroń** > **Pomoc i opinie**. W oknie dialogowym, sprawdź, czy istnieje komunikat **stanu klienta** sekcji informacją **ten klient nie ma licencji na pakiet Office Professional Plus.** 
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 
@@ -84,8 +85,10 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
     - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz poziom dostępu dla poszczególnych osób.
 
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    
+    Jeśli bieżąca wersja klienta usługi Azure Information Protection, możesz także użyć **Wybierz użytkowników, grup lub organizacji** przycisku. Ten przycisk otwiera **Wybieranie użytkowników lub grup** okno dialogowe dla lokalnej usługi Active Directory. Jeśli użytkownicy lub grupy, które ma zostać określony w usłudze Active Directory, można wyszukiwać i wybierać w tym oknie dialogowym. Aby użyć tej opcji, komputer musi być podłączony do sieci wewnętrznej, komputer musi należeć do domeny i musi mieć lokalne usługi Active Directory. Jeśli te warunki nie są spełnione, zostanie wyświetlony następujący komunikat: **program nie może otworzyć okno dialogowe wymagane, ponieważ nie można odnaleźć żadnych lokalizacji.**
         
-    - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
+    - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
 
@@ -135,7 +138,9 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     
-    - **Wybierz użytkowników**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Można wybierać z książki adresowej (na przykład osoby z Twojej organizacji i kontakty z innych organizacji). W przypadku innych osób wpisz dla każdej z nich pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    
+    Alternatywnie można użyć **Wybierz użytkowników, grup lub organizacji** przycisku Wybierz z książki adresowej użytkowników lub grup. Jeśli bieżąca wersja klienta usługi Azure Information Protection, ten przycisk otwiera **Wybieranie użytkowników lub grup** okno dialogowe dla lokalnej usługi Active Directory. Jeśli użytkownicy lub grupy, które ma zostać określony w usłudze Active Directory, można wyszukiwać i wybierać w tym oknie dialogowym. Aby użyć tej opcji, komputer musi być podłączony do sieci wewnętrznej, komputer musi należeć do domeny i musi mieć lokalne usługi Active Directory. Jeśli te warunki nie są spełnione, zostanie wyświetlony następujący komunikat: **program nie może otworzyć okno dialogowe wymagane, ponieważ nie można odnaleźć żadnych lokalizacji.**
         
     - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
     

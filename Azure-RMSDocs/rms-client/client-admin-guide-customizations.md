@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -102,7 +102,20 @@ Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Upewnij się, że w folderze **%localappdata%\Microsoft\MSIP** znajduje się prawidłowy plik zasad klienta o nazwie **Policy.msip**. W razie potrzeby można wyeksportować zasady z portalu Azure Portal i skopiować wyeksportowany plik do komputera klienckiego. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami.
+Upewnij się, że klient ma prawidłową zasadę plik o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. W razie potrzeby można wyeksportować zasady z portalu Azure Portal i skopiować wyeksportowany plik do komputera klienckiego. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami.
+
+Podczas eksportowania zasady, ta akcja pobiera plik z rozszerzeniem zip z wieloma wersjami zasad, która odpowiada dla różnych wersji klienta Azure Information Protection:
+
+1. Rozpakuj plik i skorzystaj z poniższej tabeli, aby określić plik zasad, które należy. 
+    
+    |Nazwa pliku|Odpowiednia wersja klienta|
+    |--------------------------|---------------------------------------------|
+    |Policy1.1.msip |w wersji 1.2|
+    |Policy1.2.msip |w wersji 1.3 1.7|
+    |Policy1.3.msip |Wersja 1,8 i nowsze|
+    
+2. Nazwy pliku zidentyfikowanych **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, które mają zainstalowanego klienta Azure information protection. 
+
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ukrywanie przycisku Nie przesyłaj dalej w programie Outlook
 

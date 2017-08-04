@@ -1,5 +1,5 @@
 ---
-title: "Aplikacje pakietu Office: konfiguracja dla klientów — AIP"
+title: "Konfiguracja dla klientów do użycia z usługą Azure RMS z Efektywnych aplikacje pakietu Office"
 description: "Informacje i instrukcje dla administratorów dotyczące konfigurowania aplikacji pakietu Office do pracy z usługą Azure Rights Management w ramach usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
@@ -12,26 +12,26 @@ ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 430f390bef496b5e297ae25a03531da42954121d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 52b3942d7918ada46cbdd7b45ed3925817e75f45
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="office-apps-configuration-for-clients"></a>Aplikacje pakietu Office: konfiguracja dla klientów
+# <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Aplikacje pakietu Office: Konfiguracja dla klientów do korzystania z usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 
-Dzięki tym informacjom można ustalić, co należy zrobić, aby aplikacje pakietu Office używane przez użytkowników końcowych działały z usługą Azure Rights Management w ramach usługi Azure Information Protection.
+Dzięki tym informacjom można ustalić, co należy zrobić, aby aplikacje pakietu Office współpracują z usługą Azure Rights Management z usługi Azure Information Protection.
 
 ## <a name="office-2016-and-office-2013"></a>Pakiety Office 2016 i Office 2013
-Ze względu na to, że te nowsze wersje pakietu Office natywnie obsługują usługę Azure Rights Management, do obsługi usługi zarządzania prawami do informacji (IRM, Information Rights Management) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook Web App, nie jest wymagana konfiguracja komputera klienckiego. Wszyscy użytkownicy muszą tylko zalogować się do aplikacji pakietu Office przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i wiadomości e-mail oraz używać plików i wiadomości e-mail, które są chronione przez inne osoby.
+Ponieważ te nowsze wersje pakietu Office natywnie obsługują usługę Azure Rights Management, żadna konfiguracja komputera klienckiego jest wymagana do obsługi usługi informacji rights management (IRM) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook w sieci web. Wszyscy użytkownicy muszą wykonać, zalogować się do aplikacji pakietu Office z ich [!INCLUDE[o365_1](../includes/o365_1_md.md)] poświadczeń. Można następnie mogą chronić pliki i wiadomości e-mail i używać plików i wiadomości e-mail, które są chronione przez innych użytkowników.
 
 Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz temat [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 ## <a name="office-2010"></a>Pakiet Office 2010
-Aby komputery klienckie mogły używać usługi Azure Rights Management z pakietem Office 2010, należy na nich zainstalować klienta usługi Azure Information Protection lub aplikację RMS sharing dla systemu Windows. Nie jest wymagana żadna dalsza konfiguracja, a użytkownicy muszą tylko zalogować się przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i używać plików chronionych przez inne osoby.
+Dla komputerów klienckich do korzystania z usługi Azure Rights Management z pakietem Office 2010 muszą mieć klienta usługi Azure Information Protection lub aplikacji do udostępniania usługi Rights Management dla systemu Windows. Nie jest wymagana żadna dalsza konfiguracja, a użytkownicy muszą tylko zalogować się przy użyciu poświadczeń usługi [!INCLUDE[o365_1](../includes/o365_1_md.md)], aby chronić pliki i używać plików chronionych przez inne osoby.
 
 Aby uzyskać więcej informacji na temat klienta usługi Azure Information Protection, zobacz artykuł [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
