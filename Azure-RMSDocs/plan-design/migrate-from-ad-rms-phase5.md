@@ -4,7 +4,7 @@ description: "Faza 5 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2ab4d8c9d253098b4f9ecb7fb820a3df1891e124
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: aeffd9780001f4c91ea8600f11d8fc3b36abce73
+ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -25,9 +25,9 @@ ms.lasthandoff: 07/31/2017
 
 Skorzystaj z poniższych informacji dotyczących fazy 5 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 10 do 12 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-## <a name="step-10-deprovison-ad-rms"></a>Krok 10. Anulowanie obsługi usługi AD RMS
+## <a name="step-10-deprovision-ad-rms"></a>Krok 10. Anulowanie zastrzeżenia usług AD RMS
 
-Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu połączenia usługi uniemożliwia nowym klientom oraz potencjalnie narzędziom i usługom powiązanym z usługą RMS wyszukiwanie punktu połączenia usługi po zakończeniu migracji. Wszystkie połączenia powinny przechodzić do usługi Azure Rights Management. 
+Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu SCP uniemożliwia nowych klientów i usług potencjalnie powiązanych usług RMS i narzędzi znajdowania punktu połączenia usługi, po zakończeniu migracji. W tym momencie wszystkie połączenia komputera należy przejdź do usługi Azure Rights Management. 
 
 Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administrator domeny przedsiębiorstwa, a następnie użyć poniższej procedury:
 
@@ -39,11 +39,11 @@ Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administra
 
 4. Wybierz pozycję **Usuń bieżący punkt połączenia usługi**, a następnie kliknij przycisk **OK**.
 
-Teraz należy monitorować serwery usługi AD RMS pod kątem aktywności, na przykład sprawdzając [żądania w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę żądań obsługi](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [przeprowadzając inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
+Teraz można monitorować serwery usług AD RMS dla działania. Na przykład sprawdzić [żądań w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę żądań obsługi](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
 
-Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. W przypadku korzystania z serwerów dedykowanych można najpierw wykonać krok zapobiegawczy polegający na zamknięciu serwerów na pewien okres, aby upewnić się, że nie zostaną zgłoszone problemy, które wymagają ponownego uruchomienia tych serwerów w celu zapewnienia ciągłości usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
+Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. Jeśli używasz dedykowanych serwerów można wybrać krok zapobiegawczy polegający na pierwszym zamykanie serwerów w danym okresie czasu. Dzięki temu czas, aby upewnić się, że nie ma żadnych problemów zgłoszonych, które mogą wymagać ponownego uruchomienia tych serwerów, aby utrzymać ciągłość usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
 
-Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości przejrzenia szablonów w portalu Azure i ich skonsolidowanie, dzięki czemu użytkownicy będą mieć mniej do wyboru, lub skonfigurować je ponownie lub nawet dodanie nowych szablonów. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości przejrzenia szablonów w portalu Azure. Na przykład przekonwertować je na etykiet, ich skonsolidowanie, tak aby użytkownicy będą mieć mniej wybranie lub skonfigurować je ponownie. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 >[!IMPORTANT]
 > Po zakończeniu tej migracji klaster usługi AD RMS nie może być używany z usługą Azure Information Protection ani z opcją „hold your own key” (HYOK). Jeśli zdecydujesz się używać rozwiązania HYOK dla etykiety usługi Azure Information Protection, to z powodu przekierowań, które są teraz stosowane, używany klaster usługi AD RMS musi mieć różne adresy URL licencjonowania do tych w klastrach, które zostały poddane migracji.
@@ -52,7 +52,7 @@ Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości prze
 
 Po przeprowadzeniu migracji wszystkich istniejących klientów do usługi Azure Information Protection nie ma powodu, aby w dalszym ciągu korzystać z kontrolek dołączania i obsługiwać grupę **AIPMigrated** utworzoną na potrzeby procesu migracji. 
 
-Najpierw należy usunąć kontrolki dołączania, a następnie można usunąć grupę **AIPMigrated** i wszystkie zadania wdrażania oprogramowania utworzone w celu wdrożenia przekierowań.
+Najpierw usuń kontrolki dołączania, a następnie usunąć **AIPMigrated** grupę i wszystkie zadania wdrażania oprogramowania, które można utworzyć w celu wdrożenia przekierowań.
 
 Aby usunąć kontrolki dołączania:
 
@@ -71,11 +71,11 @@ Aby usunąć kontrolki dołączania:
     W danych wyjściowych element **License** powinien wyświetlać **False** i nie powinien być wyświetlany żaden identyfikator GUID dla elementu **SecurityGroupOjbectId**.
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. Wymiana klucza dzierżawy usługi Azure Information Protection
-Ten krok należy wykonać po zakończeniu migracji, jeśli we wdrożeniu usług AD RMS używano trybu kryptograficznego 1 usług RMS, ponieważ wymiana klucza powoduje powstanie nowego klucza dzierżawy, który korzysta z trybu kryptograficznego 2 usług RMS. Korzystanie z usługi Azure RMS z trybem kryptograficznym 1 jest obsługiwane tylko podczas procesu migracji.
+Ten krok jest wymagany, gdy migracja zostanie zakończona, jeśli wdrożenie usług AD RMS używano RMS trybu kryptograficznego 1. Generowanie tworzy nowy klucz dzierżawy, który korzysta z usług RMS trybu kryptograficznego 2. Tryb kryptograficzny 1 jest obsługiwana dla usługi Azure Information Protection tylko podczas procesu migracji.
 
-Ta czynność jest opcjonalna, ale zalecana po ukończeniu migracji, nawet w przypadku uruchomienia usług RMS z trybem kryptograficznym 2. Wymiana klucza w tym scenariuszu zabezpiecza klucz dzierżawy usługi Azure Information Protection przed potencjalnymi naruszeniami zabezpieczeń klucza usługi AD RMS.
+Generowanie po zakończeniu migracji pomaga również do ochrony klucza dzierżawy usługi Azure Information Protection przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS.
 
-W przypadku wymiany klucza dzierżawy usługi Azure Information Protection (proces ten jest również znany jako „uaktualnianie klucza”) zostaje utworzony nowy klucz, a klucz oryginalny zostaje zarchiwizowany. Jednak ponieważ przechodzenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni, nie należy czekać do momentu naruszenia bezpieczeństwa oryginalnego klucza, lecz wymień klucz dzierżawy usługi Azure Information Protection zaraz po zakończeniu migracji.
+Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection (znanej także jako "Uaktualnianie klucza"), tworzony jest nowy klucz, a klucz oryginalny zostaje zarchiwizowany. Jednak przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim, nie należy czekać do momentu naruszenia bezpieczeństwa do oryginalnego klucza, ale ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection, natychmiast po zakończeniu migracji.
 
 Aby wymienić klucz dzierżawy usługi Azure Information Protection:
 

@@ -4,7 +4,7 @@ description: "Obecnie w wersji zapoznawczej można konfigurować szablony zarzą
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b9c6b808de6c5967885f4937965b4e0e759668f3
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
+ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -32,7 +32,7 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 
 **Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony (Azure Information Protection P1 lub P2):**
 
-- Szablony zarządzania praw, które nie są zintegrowane z etykiety dla dzierżawy są wyświetlane w **szablony** sekcji po etykiet w **usługi Azure Information Protection — globalne zasady** bloku. Szablony te można przekonwertować na etykiety lub można nadal nimi zarządzać jako osobne szablonów i link do ich podczas konfigurowania ochrony dla etykiet. 
+- Szablony zarządzania praw, które nie są zintegrowane z etykiety dla dzierżawy są wyświetlane w **szablony** sekcji po etykiet w **usługi Azure Information Protection — globalne zasady** bloku. Szablony te można przekonwertować na etykiety, lub możesz połączyć się z nimi, podczas konfigurowania ochrony dla etykiet. 
 
 **Jeśli masz subskrypcję obejmującą wyłącznie ochronę (subskrypcja usługi Office 365 obejmującą usługę Azure Rights Management):**
 
@@ -69,7 +69,7 @@ Jeśli uzyskać subskrypcję usługi Azure Information Protection pewien czas te
 - **\<Nazwa organizacji > — poufne tylko do wyświetlania**, w celu wyświetlenia tylko do odczytu do chronionej zawartości. 
 
 >[!NOTE]
->Jeśli nie widzisz szablony domyślne w **usługi Azure Information Protection — globalne zasady** bloku są konwertowane na etykiety. Nadal istnieją jako szablon, ale w portalu Azure, zobaczysz je w ramach konfiguracji etykietę, która obejmuje usługę Azure RMS protection. Zawsze można potwierdzić, szablony, jakie ma dzierżawy, uruchamiając [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) z [modułu AADRM PowerShell](administer-powershell.md).
+>Jeśli nie widzisz szablony domyślne w **usługi Azure Information Protection — globalne zasady** bloku są konwertowane na etykiety lub połączony z etykietą. Nadal istnieją jako szablon, ale w portalu Azure, zobaczysz je w ramach konfiguracji etykietę, która obejmuje usługę Azure RMS protection. Zawsze można potwierdzić, szablony, jakie ma dzierżawy, uruchamiając [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) z [modułu AADRM PowerShell](administer-powershell.md).
 >
 >Szablony, można przekonwertować ręcznie, zgodnie z objaśnieniem w dalszej części artykułu [przekonwertować szablony do etykiet](#to-convert-templates-to-labels), a następnie zmień je, jeśli chcesz. Lub one będą konwertowane automatycznie dla Ciebie Jeśli Twoje domyślne zasady usługi Azure Information Protection została niedawno utworzona i uaktywniono usługę Azure Rights Management dla swojej dzierżawy w tym czasie.
 

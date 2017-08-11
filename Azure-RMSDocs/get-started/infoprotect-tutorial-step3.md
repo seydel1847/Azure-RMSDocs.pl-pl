@@ -4,17 +4,17 @@ description: "Krok 3 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 0edde6cb304a4ad6b34d53ee798a5fbf7ede3b48
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: c3260d82c13c01bb16b22e472d57720777e82f7b
+ms.sourcegitcommit: a4f4edcbf0f0a7de74d1dcec9ce6e661c6882a74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="step-3-install-the-client"></a>Krok 3. Zainstalowanie klienta
 
@@ -25,9 +25,11 @@ W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dz
 
 ## <a name="install-the-azure-information-protection-client"></a>Instalowanie klienta usługi Azure Information Protection
 
-1. Na komputerze z zainstalowanym pakietem Office (program Word nie może być otwarty) [pobierz klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) z Centrum pobierania firmy Microsoft. 
+1. Na komputerze z zainstalowanym pakietem Office (program Word nie może obecnie otwarty), przejdź do [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) i Pobierz **AzInfoProtection.exe**. To jest wersja ogólnej dostępności klienta, który jest obsługiwany w sieciach produkcyjnych. Jednak jeśli wolisz spróbuj bieżąca wersja preview zawierającego wszystkie najnowsze funkcje i poprawki, Pobierz **AzInfoProtection_PREVIEW_1.10.52.0.exe**.
+    
+    Korzystania z danej wersji klienta, w tym samouczku, ale obrazy zgodna z wersją ogólnej dostępności i samouczek nie zawiera funkcje, które są nowe w wersji preview klienta.
 
-2. Uruchom plik **AzInfoProtection.exe** i postępuj zgodnie z monitami, aby zainstalować klienta.
+2. Uruchom plik wykonywalny, który został pobrany i postępuj zgodnie z monitami, aby zainstalować klienta.
 
     W przypadku tego samouczka nie ma znaczenia, czy wybierzesz opcję instalacji zasady demonstracyjnej, ponieważ nasza właśnie skonfigurowana zasada zostanie pobrana z systemu Azure i zastąpi zasadę demonstracyjną, jeśli ją zainstalowano. Można jednak użyć opcji zasady demonstracyjnej, jeśli chcesz po prostu zapoznać się z etykietami domyślnymi bez nawiązywania połączenia z usługą Azure Information Protection. 
 
@@ -45,7 +47,7 @@ Podczas ładowania dokumentu powinny zostać wyświetlone dwa nowe obiekty:
 
     Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Połączono jako** i nazwa użytkownika. Powinna także zostać wyświetlona godzina i data ostatniego połączenia oraz data instalacji zasad usługi Information Protection. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
 
-- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Jest na nim wyświetlany tytuł **Ważność** i skonfigurowana przez nas etykieta domyślna **Ogólne**. 
+- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Wyświetla tytuł **czułości**i etykiety, które widzieliśmy w portalu Azure. 
 
 Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 

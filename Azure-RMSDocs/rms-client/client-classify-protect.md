@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c7678be03106719af4679ae06e2aaa84aff8ca3e
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
+ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -91,15 +91,6 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
     - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
-
-
-### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Skróty klawiaturowe dla paska usługi Azure Information Protection
-
-Aby uzyskać dostęp do paska usługi Azure Information Protection za pomocą skrótów klawiaturowych, użyj następujących kombinacji klawiszy:
-
-- Naciśnij klawisze **Ctrl** + **Shift** + **~** 
-
-Następnie użyj klawisza Tab, aby wybrać etykiety i inne kontrolki na pasku (ikona **Ukryj etykiety** i ikona **Usuń etykietę**), a następnie naciśnij klawisz Enter, aby je wybrać.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
 

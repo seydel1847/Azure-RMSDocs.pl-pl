@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -101,14 +101,11 @@ Do uwierzytelnienia użytkownika usługa Azure Rights Management zawsze używa k
 
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>Do szablonów można dodać użytkowników zewnętrznych (osoby spoza firmy)?
-Tak. Tworzenie szablonów, które użytkownicy końcowi (i Administratorzy) mogą wybierać z poziomu aplikacji, ułatwia szybkie i łatwe ich stosowanie ochrony informacji za pomocą wstępnie zdefiniowane zasady, które określisz. Jedno z ustawień w szablonie dotyczy użytkownika, który może uzyskiwać dostęp do zawartości. Można wskazać użytkowników i grupy w obrębie własnej organizacji i spoza niej. Można nawet określić wszystkich użytkowników w innej organizacji.
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
 
-Ta konfiguracja zrobić przy użyciu portalu Azure, podczas konfigurowania [ustawienia ochrony](../deploy-use/configure-policy-protection.md). Lub tej konfiguracji można wykonać za pomocą programu PowerShell. Przy użyciu programu PowerShell:
+Tak. Po przekonwertowaniu szablonu z etykietą w portalu Azure, można skonfigurować [ustawienia ochrony](../deploy-use/configure-policy-protection.md) o dodanie uprawnień dla użytkowników i grup z spoza organizacji, a nawet dla wszystkich użytkowników w innej organizacji. Lub tej konfiguracji można wykonać za pomocą programu PowerShell.
 
--   **Użyj obiektu definicji praw, aby utworzyć lub zaktualizować szablon**.  Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, który następnie zostanie użyty do utworzenia lub zaktualizowania szablonu. Określ obiekt definicji praw, używając [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet, aby utworzyć zmienną, a następnie dostarczyć tę zmienną do parametru RightsDefinition z [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) polecenia cmdlet (dla nowego szablonu) lub [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet (w przypadku modyfikacji istniejącego szablonu). Jeśli jednak użytkownicy są dodawani do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących grup w szablonach, a nie tylko dla użytkowników zewnętrznych.
-
-Aby uzyskać więcej informacji o szablonach, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Aby uzyskać więcej informacji na temat konwertowania szablonów niestandardowych etykiet, aby następnie można łatwo dodać użytkowników zewnętrznych, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Czy usługa Azure RMS współpracuje z grupami dynamicznymi w usłudze Azure AD?
 Funkcja Azure AD Premium pozwala skonfigurować członkostwo dynamiczne w grupach zabezpieczeń przez określenie [reguł opartych na atrybucie](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Ten typ grupy nie obsługuje adresu e-mail, dlatego nie można go używać z usługą Azure Rights Management. Jednak grupy usługi Office 365 obsługują zarówno dynamiczne członkostwo w grupie, jak i adresy e-mail. Ponieważ jest to grupa z włączoną obsługą poczty e-mail, można używać jej wraz z usługą Azure Rights Management.
