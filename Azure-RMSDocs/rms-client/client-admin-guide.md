@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 275f08ca0ea267c29f5b743300507d66ee1d1118
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: e942555c7a985db10054aa3f13be5ebcda2269a3
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -242,14 +242,14 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
     
     |Wersja pakietu Office|System operacyjny|Oprogramowanie|Akcja|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2013|Wszystkie obsługiwane wersje|[Aktualizacja KB 3054941](https://www.microsoft.com/en-us/download/details.aspx?id=49337)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Instalowanie|
+    |Office 2016|Wszystkie obsługiwane wersje|64-bitowe: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32-bitowe: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> Wersja: 1.0|Instalowanie|
+    |Office 2013|Wszystkie obsługiwane wersje|64-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />Wersja: 1.0|Instalowanie|
     |Pakiet Office 2010|Wszystkie obsługiwane wersje|[Asystent logowania w Usługach online firmy Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> Wersja: 2.1|Instalowanie|
-    |Pakiet Office 2010|Windows 8.1 i Windows Server 2012 R2|[Aktualizacja KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj, jeśli nie zainstalowano aktualizacji KB 2843630 lub KB 2919355|
-    |Pakiet Office 2010|Windows 8 i Windows Server 2012|[Aktualizacja KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Instalowanie|
-    |Pakiet Office 2010|Windows 7|[Aktualizacja KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj, jeśli nie zainstalowano aktualizacji KB 3125574|
-    |Nie dotyczy|Windows 7|Aktualizacja KB 2627273 <br /><br /> Numer wersji uwzględniony w nazwie pliku: v4|Odinstalowanie|
+    |Pakiet Office 2010|Windows 8.1 i Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB2843630 lub KB2919355 nie jest zainstalowana.|
+    |Pakiet Office 2010|Windows 8 i Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Instalowanie|
+    |Pakiet Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB3125574 nie jest zainstalowana.|
+    |Nie dotyczy|Windows 7|KB2627273 <br /><br /> Numer wersji uwzględniony w nazwie pliku: v4|Odinstalowanie|
     
-    Nie ma żadnych dodatkowych zależności dla pakietu Office 2016.
 
 3. W przypadku instalacji domyślnej uruchom plik msi z parametrem **/quiet**, na przykład `AzInfoProtection.msi /quiet`. Jednak może okazać się konieczne określenie dodatkowych parametrów instalacji, które są udokumentowane w [instrukcjach Instalatora wykonywalnego](#to-install-the-azure-information-protection-client-by-using-the-executable-installer).  
 
@@ -326,7 +326,9 @@ Użyj informacji z obszaru **Wersja**, aby potwierdzić, która wersja klienta j
 
 ## <a name="support-for-multiple-languages"></a>Obsługa wielu języków
 
-Klient usługi Azure Information Protection obsługuje wszystkie języki klienta obsługiwane przez pakiet Office. Na przykład opcje menu, okna dialogowe i komunikaty są wyświetlane w języku użytkownika. Istnieje jeden instalator, który wykrywa język, zatem nie jest wymagane wykonywanie dodatkowych czynności konfiguracyjnych, aby zainstalować klienta dla różnych języków. 
+Klient usługi Azure Information Protection obsługuje te same języki, które obsługuje usługi Office 365. Aby uzyskać listę tych języków, zobacz **usługi Office 365, Exchange Online Protection i usługi Power BI** sekcji z [dostępność międzynarodowa](https://products.office.com/business/international-availability) strony z pakietu Office.
+
+Te języki, opcje menu, okna dialogowe i komunikaty z usługi Azure Information Protection klienta są wyświetlane w języku użytkownika. Brak jednego Instalator, który wykryje języka aby dodatkowa konfiguracja nie jest niezbędne do zainstalowania klienta usługi Azure Information Protection dla różnych języków. 
 
 Nazwy etykiet wyświetlane użytkownikom nie są jednak automatycznie tłumaczone dla [zasad domyślnych](../deploy-use/configure-policy-default.md) lub nazw etykiet określonych przez użytkownika. Aby użytkownikom były wyświetlane etykiety w różnych językach, należy udostępnić własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection pod kątem ich używania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md).
 

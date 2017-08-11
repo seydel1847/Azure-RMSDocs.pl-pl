@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 1e9a124e4b115491c014bb54977cdb9d922cad45
+ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -102,18 +102,15 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 ### <a name="cryptographic-mode-considerations"></a>Zagadnienia dotyczące trybu kryptograficznego
 
-Chociaż nie jest to wymaganiem wstępnym w przypadku migracji, zaleca się uruchomienie serwerów i klientów usług AD RMS w trybie kryptograficznym 2 przed rozpoczęciem migracji. 
+Jeśli klaster AD RMS jest obecnie trybu kryptograficznego 1, uaktualnienia klastra do trybu kryptograficznego 2 przed rozpoczęciem migracji. Zamiast tego przeprowadzić migrację za pomocą trybu kryptograficznego 1 i ponowne tworzenie klucza z kluczem dzierżawy, po zakończeniu migracji, jako jednego z zadań po migracji.
 
-Aby uzyskać więcej informacji o różnych trybach oraz instrukcje uaktualniania, zobacz temat [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx).
-
-Jeśli klaster AD RMS jest w trybie kryptograficznym 1 i nie można go uaktualnić, musisz wymienić klucz dzierżawy usługi Azure Information Protection po ukończeniu migracji. Wymiana klucza powoduje utworzenie nowego klucza dzierżawy korzystającego z trybu kryptograficznego 2. Korzystanie z usługi Azure Rights Management z trybem kryptograficznym 1 jest obsługiwane tylko podczas migracji.
+Tryb kryptograficzny 1 jest obsługiwane tylko podczas procesu migracji.
 
 Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
  
 - W przypadku systemów Windows Server 2012 R2 oraz Windows 2012: właściwości klastra AD RMS > karta **Ogólne**. 
 
 - W przypadku wszystkich obsługiwanych wersji usługi AD RMS: użyj narzędzia [RMS Analyzer](https://www.microsoft.com/en-us/download/details.aspx?id=46437) i opcji **administratora usługi AD RMS**, aby wyświetlić tryb kryptograficzny w sekcji **Informacje o usłudze RMS**.
-
 
 ### <a name="migration-limitations"></a>Ograniczenia migracji
 

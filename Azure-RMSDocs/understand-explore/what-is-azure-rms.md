@@ -4,7 +4,7 @@ description: "Azure Rights Management (Azure RMS) to technologia ochrony używan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 08/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b002ebf624fe2d314af2cf1df1a1cb452042138e
+ms.sourcegitcommit: a4f4edcbf0f0a7de74d1dcec9ce6e661c6882a74
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what-is-azure-rights-management"></a>Co to jest usługa Azure Rights Management?
 
@@ -27,26 +27,28 @@ Azure Rights Management (Azure RMS) to technologia ochrony używana przez usług
 
 Ta oparta na chmurze usługa używa zasad szyfrowania, tożsamości i autoryzacji, aby ułatwić zabezpieczanie plików oraz wiadomości e-mail, i działa na wielu urządzeniach — telefonach, tabletach i komputerach. Informacje można chronić w obrębie organizacji i poza nią, ponieważ ochrona jest powiązana z danymi nawet wtedy, gdy opuszczą one teren organizacji.
 
-Na przykład pracownicy mogą wysłać dokument pocztą e-mail do firmy partnerskiej lub zapisać go na dysku w chmurze. Trwała ochrona, zapewniana przez usługę Azure RMS, nie tylko ułatwia zabezpieczanie danych firmy, ale także spełnia wymagania dotyczące weryfikacji zgodności z przepisami i procedur dochodzeniowych lub po prostu oferuje najlepsze rozwiązania z zakresu zarządzania.
+Na przykład pracownicy mogą wysłać dokument pocztą e-mail do firmy partnerskiej lub zapisać go na dysku w chmurze. Stałej ochrony, która zapewnia usługi Azure RMS, nie tylko ułatwia zabezpieczanie danych firmy, ale może również dochodzeniowych zgodności, wymagania prawne odnajdowania lub po prostu rozwiązań z zakresu zarządzania precyzyjnymi informacjami.
 
-Bardzo ważne jest, że autoryzowane osoby i usługi (takie jak wyszukiwanie i indeksowanie) mogą odczytywać i sprawdzać dane chronione przez usługę Azure RMS, co jest utrudnione w przypadku innych rozwiązań z zakresu ochrony informacji, korzystających z szyfrowania równorzędnego. Tę możliwość czasami nazywa się „rozsądkiem ponad danymi”. Jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji.
+Ale bardzo ważne jest, upoważnione osoby i usługi (takie jak wyszukiwanie i indeksowanie) można nadal odczytywać i sprawdzać dane, które usługa Azure RMS chroni. Ta funkcja jest utrudnione w przypadku innych rozwiązań do ochrony informacji korzystających z szyfrowania peer-to-peer. Jest to kluczowy element w zachowaniu kontroli nad danymi organizacji i może mieć wiesz tej możliwości nazywa się "rozsądkiem ponad danymi".
 
-Na poniższym rysunku przedstawiono sposób działania usługi Azure RMS jako rozwiązania z zakresu zarządzania prawami dla usługi Office 365 oraz dla serwerów i usług lokalnych. Widoczne jest również, że obsługuje ona popularne urządzenia użytkowników końcowych z systemami Windows, Mac OS, iOS, Android i Windows Phone.
+Na poniższej ilustracji przedstawiono sposób działania usługi Azure RMS jako rozwiązania do zarządzania prawami dla usługi Office 365, a także dla serwerów lokalnych i usług. Możesz również sprawdzić, czy usługa Azure RMS obsługuje urządzenia popularnych użytkownika końcowego z systemem Windows, Mac OS, iOS, Android i Windows Phone.
 
 
 ![Jak działa usługa Azure RMS](../media/AzRMS_elements.png)
 
-Ochrona zapewniana przez usługę Azure RMS, która obsługuje wiele funkcji, może być używana z różnymi subskrypcjami usług w chmurze. Więcej informacji na temat dostępnych subskrypcji i obsługiwanych przez nie funkcji można znaleźć w witrynie usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Ochrona zapewniana przez usługę Azure RMS, która obsługuje wiele funkcji, może być używana z różnymi subskrypcjami usług w chmurze. Można znaleźć więcej informacji o dostępnych subskrypcjach oraz które obsługiwanych funkcji [usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) lokacji.
 
 ## <a name="next-steps"></a>Następne kroki
 
 Aby dowiedzieć się więcej na temat tej usługi ochrony danych z poziomu usługi Azure Information Protection:
 
--   [Jakie problemy rozwiązuje usługa Azure RMS?](azure-rms-problems-it-solves.md)
+- [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md)
 
--   [Jak działa usługa Azure RMS? Kulisy](how-does-it-work.md)
+- [Jakie problemy rozwiązuje usługa Azure RMS?](azure-rms-problems-it-solves.md)
 
-Jeśli chcesz od razu rozpocząć korzystanie z usługi i osobiście spróbować chronić dokumenty, skorzystaj z [Samouczka szybkiego startu dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). Ten samouczek obejmuje opcję monitowania o ochronę dokumentu po wykryciu poufnych danych. Uwzględnia on również ochronę dokumentu udostępnianego pocztą e-mail. Dokument ten można śledzić, aby zobaczyć, jak jest używany i w razie potrzeby odwołać dostęp do niego.
+- [Jak działa usługa Azure RMS? Kulisy](how-does-it-work.md)
+
+Jeśli chcesz zajrzyj dostęp i spróbuj uruchomić ochronę dokumentów dla siebie, spróbuj [— samouczek szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). Ten samouczek obejmuje opcję monitowania o ochronę dokumentu po wykryciu poufnych danych. Uwzględnia on również ochronę dokumentu udostępnianego pocztą e-mail. Dokument ten można śledzić, aby zobaczyć, jak jest używany i w razie potrzeby odwołać dostęp do niego.
 
 Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, aby administratorzy i użytkownicy mogli rozpocząć chronienie dokumentów i wiadomości e-mail, użyj [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
