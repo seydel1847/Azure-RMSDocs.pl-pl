@@ -4,17 +4,17 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 510375dec4fc4e28197270e62655375698580b95
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypis
  
 - Zalecana klasyfikacja ma zastosowanie do programów Word, Excel i PowerPoint, gdy zapisywane są pliki.
 
-Gdy konfigurujesz warunki, możesz użyć wstępnie zdefiniowanych wzorców, takich jak numer karty kredytowej lub numer ubezpieczenia społecznego w USA. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
+Gdy konfigurujesz warunki, można użyć wstępnie zdefiniowanych wzorców, takich jak "numery kart kredytowych" lub "Numer ubezpieczenia społecznego USA". Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
 
 W jaki sposób ocenia się wiele warunków, jeśli są zastosowane wobec więcej niż jednej etykiety:
 
@@ -37,13 +37,13 @@ W jaki sposób ocenia się wiele warunków, jeśli są zastosowane wobec więcej
 3. Zostaje zastosowana ostatnia etykieta podrzędna.
 
 > [!TIP]
->Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalności biznesowej, warto rozpocząć od użycia zalecanej klasyfikacji dla użytkownika, a nie od klasyfikacji automatycznej. Ta konfiguracja daje użytkownikom możliwość zaakceptowania etykiet lub akcji ochronnej, a także zignorowania tych sugestii, jeśli nie są one odpowiednie dla danego dokumentu lub wiadomości e-mail.
+>Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalności biznesowej, warto rozpocząć od użycia zalecanej klasyfikacji dla użytkownika, a nie od klasyfikacji automatycznej. Ta konfiguracja pozwala użytkownikom Zaakceptuj etykiet lub akcji ochronnej lub zignorowania tych sugestii, jeśli nie są odpowiednie do ich dokumentu lub wiadomości e-mail.
 
 Przykład monitu w przypadku konfigurowania warunki do zastosowania etykiety jako akcji zalecanej, ze wskazówką dotyczącą zasad niestandardowych:
 
-![Wykrywanie i zalecenia usługi Azure Information Protection](../media/info-protect-recommend-callouts.png)
+![Wykrywanie i zalecenia usługi Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
-W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zastosować zalecaną etykietę, lub zignorować zalecenie przez zamknięcie paska.
+W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosować zalecaną etykietę, lub zignorować zalecenie przez wybranie **odrzucenia**.
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
@@ -51,7 +51,7 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli etykieta, którą chcesz skonfigurować pod kątem automatycznej lub zalecanej klasyfikacji, będzie dotyczyła wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**, a następnie wprowadź zmiany w bloku **Etykieta** i wszystkich kolejnych wymaganych blokach. 
+2. Jeśli etykietę, którą chcesz skonfigurować automatyczną lub zalecaną klasyfikację ma zastosowanie do wszystkich użytkowników, wybierz etykietę do zmiany z **zasad: globalne** bloku, a następnie wprowadź zmiany w **etykiety** bloku oraz wszelkich kolejnych blokach wedle potrzeb. 
 
      Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.  
 
@@ -59,11 +59,11 @@ W tym przykładzie użytkownik może kliknąć opcję **Zmień teraz**, aby zast
 
 4. W bloku **Warunek** wybierz opcję **Wbudowany**, jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **Niestandardowy**, jeśli chcesz określić własny warunek, a następnie kliknij przycisk **Zapisz**:
 
-    - W przypadku opcji **Wbudowany**: wybierz warunek z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień oraz określ, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
+    - Aby uzyskać **wbudowanych**: Wybierz z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
         
         Aby uzyskać więcej informacji o regułach wykrywania dla tych warunków wraz z przykładami, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
 
-    - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne lub uwzględniać wielkość liter, podaj minimalną liczbę wystąpień i wskaż, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
+    - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
         
     **Przykład opcji wystąpień**: wybierasz wbudowaną opcję numeru ubezpieczenia społecznego i ustawiasz minimalną liczbę wystąpień na 2. Dokument ma ten sam numer ubezpieczenia społecznego wymieniony dwukrotnie. Jeśli ustawisz opcję **Zliczaj tylko wystąpienia o unikatowych wartościach** na wartość **Wł.**, warunek nie zostanie spełniony. Jeśli ustawisz tę opcję na wartość **Wył.**, warunek zostanie spełniony.
 

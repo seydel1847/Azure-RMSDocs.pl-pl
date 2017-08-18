@@ -4,27 +4,23 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: efc60ee6126a6a0b2798f66c46c2242942878829
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
+ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
-Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny:
-
-Oznaczenia wizualne są stosowane w dokumentach Word, Excel i PowerPoint po zastosowaniu etykiety i zapisaniu dokumentu w tych aplikacjach pakietu Office. W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomość e-mail jest wysyłana z programu Outlook.
-
-Oznaczenia wizualne nie są używane w dokumentach po zastosowaniu etykiety za pomocą Eksploratora plików oraz kliknięciu prawym przyciskiem myszy lub po sklasyfikowaniu dokumentu przy użyciu programu PowerShell.
+Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny.
 
 Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
 
@@ -33,10 +29,32 @@ Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
 - Znaki wodne dotyczą programów Word, Excel i PowerPoint:
 
     - Excel: znaki wodne są widoczne tylko w trybach Podgląd wydruku i Układ strony oraz po wydrukowaniu.
-
+    
     - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła.
+    
+    - Wiele wierszy tekstu jest obsługiwana w przypadku użycia bieżąca wersja klienta usługi Azure Information Protection.
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
+
+## <a name="when-visual-markings-are-applied"></a>Gdy oznaczenia wizualne są stosowane.
+
+W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomość e-mail jest wysyłana z programu Outlook.
+
+W przypadku dokumentów oznaczenia wizualne są stosowane w następujący sposób:
+
+- **Dla wersji ogólnodostępnej** klienta Azure Information Protection: 
+    
+    - W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety i zawsze, gdy dokument zostanie zapisany. 
+    
+    - Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zawsze, gdy dokument zostanie zapisany.
+
+- **Dla bieżącej wersji preview** klienta Azure Information Protection: 
+    
+    - W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety. Oznaczenia wizualne, również są stosowane po otwarciu dokumentu etykietą i zapisywaniu dokumentu.  
+    
+    - Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zapisywaniu dokumentu.
+
+## <a name="to-configure-visual-markings-for-a-label"></a>Aby skonfigurować oznaczenia wizualne dla etykiety
 
 Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiety.
 
