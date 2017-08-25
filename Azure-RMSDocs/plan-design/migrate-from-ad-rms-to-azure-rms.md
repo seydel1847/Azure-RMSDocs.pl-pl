@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f81eee3c15b771e60c24a83f66d13a4a654a7e3
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -102,9 +102,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 ### <a name="cryptographic-mode-considerations"></a>Zagadnienia dotyczące trybu kryptograficznego
 
-Jeśli klaster AD RMS jest obecnie trybu kryptograficznego 1, uaktualnienia klastra do trybu kryptograficznego 2 przed rozpoczęciem migracji. Zamiast tego przeprowadzić migrację za pomocą trybu kryptograficznego 1 i ponowne tworzenie klucza z kluczem dzierżawy, po zakończeniu migracji, jako jednego z zadań po migracji.
-
-Tryb kryptograficzny 1 jest obsługiwane tylko podczas procesu migracji.
+Jeśli klaster AD RMS jest obecnie trybu kryptograficznego 1, uaktualnienia klastra do trybu kryptograficznego 2 przed rozpoczęciem migracji. Zamiast tego przeprowadzić migrację za pomocą trybu kryptograficznego 1 i można ponowne tworzenie klucza z kluczem dzierżawy, po zakończeniu migracji, jako jednego z zadań po migracji.
 
 Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
  
@@ -215,7 +213,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 - **Krok 12. Wymiana klucza dzierżawy usługi Azure Information Protection**
 
-    Ten krok jest wymagany, jeśli przed migracją nie uruchamiano trybu kryptograficznego 2, i opcjonalny (ale zalecany) w przypadku wszystkich migracji, które pomagają w zabezpieczaniu klucza dzierżawy usługi Azure Information Protection.
+    Ten krok jest zalecane, jeśli użytkownik nie uruchamiano trybu kryptograficznego 2 przed migracją.
 
 
 ## <a name="next-steps"></a>Następne kroki

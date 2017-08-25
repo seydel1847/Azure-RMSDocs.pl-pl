@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 618e8b6a160ccc699658bf8c317c40ed2ded3bee
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -77,7 +77,7 @@ Oprócz wymagań wstępnych dotyczących instalowania modułu AzureInformationPr
 
 4. W przypadku regionów poza Ameryką Północną: 
     
-    - Edytuj rejestr, aby włączyć uwierzytelnianie w usłudze.
+    - Edytuj rejestr dla potrzeb odnajdywania usług.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Wymaganie wstępne 1: usługa Azure Rights Management musi być aktywowana
 
@@ -229,12 +229,9 @@ Aby uzyskać więcej informacji na temat administratorów, zobacz artykuł [Konf
 > [!NOTE]
 > Aby użyć swojego konta użytkownika do uwierzytelnienia w usłudze Azure Rights Management, nie ma potrzeby uruchamiania polecenia Set-RMSServerAuthentication przed włączeniem lub wyłączeniem ochrony plików albo pobraniem szablonów.
 
-
-
-
 #### <a name="prerequisite-4-for-regions-outside-north-america"></a>Wymaganie wstępne 4: dotyczy regionów poza Ameryką Północną
 
-W przypadku uwierzytelniania platformy Azure poza regionem Ameryki Północnej należy dokonać edycji rejestru w opisany poniżej sposób. Jeśli Twój dzierżawca usługi Azure Information Protection znajduje się w Ameryce Północnej, nie wykonuj tego kroku:
+Gdy używasz konta głównego usługi do ochrony plików i pobierania szablonów poza regionu Ameryka Północna Azure konieczności edytowania rejestru: 
 
 1. Ponownie uruchom polecenie cmdlet Get-AadrmConfiguration i zanotuj wartości parametrów **CertificationExtranetDistributionPointUrl** i **LicensingExtranetDistributionPointUrl**.
 

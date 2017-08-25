@@ -1,10 +1,10 @@
 ---
-title: "Operacje cyklu życia klucza dzierżawy usługi AIP zarządzane przez firmę Microsoft"
-description: "Informacje na temat operacji cyklu życia, które są istotne, jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Information Protection (domyślnie)."
+title: "Zarządzane przez firmę Microsoft w Efektywnych operacje cyklu życia klucza dzierżawy"
+description: "Informacji na temat operacji cyklu życia, które są istotne, jeśli firma Microsoft zarządza kluczem dzierżawy usługi Azure Information Protection (ustawienie domyślne)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cacaa10d1a5cbf3a2de903cd4e9f893b546e5609
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Operacje cyklu życia klucza dzierżawy zarządzane przez firmę Microsoft
 
@@ -28,25 +28,37 @@ Jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Info
 Po anulowaniu subskrypcji usługi Azure Information Protection usługa ta wstrzymuje korzystanie z klucza dzierżawy, co nie wymaga żadnej akcji ze strony użytkownika.
 
 ## <a name="rekey-your-tenant-key"></a>Wymiana klucza dzierżawy
-Wymiana klucza jest także określana jako uaktualnianie klucza. Klucza dzierżawy nie należy wymieniać, jeśli nie jest to naprawdę konieczne. Starsze programy klienckie, takie jak Office 2010, nie zostały zaprojektowane do bezproblemowej zmiany klucza. W tym scenariuszu należy usunąć stan usługi Rights Management na komputerach przy użyciu zasad grupy lub równoważnego mechanizmu. Występują jednak określone zdarzenia, które mogą wymusić wymianę klucza dzierżawy. Przykład:
+Wymiana klucza jest także określana jako uaktualnianie klucza. Po wykonaniu tej operacji usługi Azure Information Protection przestanie używać istniejącego klucza dzierżawy do ochrony dokumentów i wiadomości e-mail i rozpoczyna się użyć innego klucza. Zasady i szablony są natychmiast ponownie podpisane, ale tego przejścia jest stopniowego dla istniejących klientów i usług przy użyciu usługi Azure Information Protection. Dlatego przez pewien czas część nowej zawartości nadal ma być chroniona przez stary klucz dzierżawy.
 
--   Firma została podzielona na dwie lub więcej firm. Po wymianie klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
+Do ponownego generowania kluczy należy skonfigurować obiekt klucza dzierżawy i określ alternatywny klucz do użycia. Następnie, wcześniej używany klucz automatycznie jest oznaczony jako zarchiwizowane usługi Azure Information Protection. Ta konfiguracja zapewnia tej zawartości, która była chroniona za pomocą tego klucza pozostaną dostępne.
 
--   Uważasz, że zostało naruszone bezpieczeństwo kopii głównej klucza dzierżawy, która należy do Ciebie.
+Przykłady gdy może być konieczne ponowne generowanie kluczy dla usługi Azure Information Protection:
 
-Możesz wymienić klucz dzierżawy, [kontaktując się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) w celu otwarcia **zgłoszenia do pomocy technicznej usługi Azure Information Protection z żądaniem wymiany klucza dzierżawy usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu może potrwać kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Wymiana klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+- W przypadku migracji z Active Directory Rights Management Services (AD RMS) z kluczem trybu kryptograficznego 1. Po zakończeniu migracji chcesz zmienić przy użyciu klucza, który korzysta z trybu kryptograficznego 2.
 
-Po wymianie klucza dzierżawy nowa zawartość jest chroniona przy użyciu nowego klucza dzierżawy. Ten proces jest realizowany etapami, w związku z czym przez pewien czas część nowej zawartości jest nadal chroniona przy użyciu starego klucza dzierżawy. Zawartość chroniona wcześniej jest nadal chroniona przez stary klucz dzierżawy. W celu obsługi tego scenariusza usługa Azure Information Protection zachowuje stary klucz dzierżawy, co pozwala na wydawanie licencji dla starszej zawartości.
+- Firma została podzielona na dwie lub więcej firm. Po wymianie klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
+
+- Uważasz, że zostanie naruszone bezpieczeństwo kopii głównej klucza dzierżawy.
+
+Do ponownego generowania kluczy można wybrać inny klucz zarządzany przez firmę Microsoft jako klucz dzierżawy, ale nie można utworzyć nowy klucz zarządzany przez firmę Microsoft. Aby utworzyć nowy klucz, należy zmienić topologii klucza być zarządzany przez klienta (BYOK).
+
+Masz więcej niż jeden klucz zarządzany przez firmę Microsoft, jeśli migrowane z Active Directory Rights Management Services (AD RMS) i wybierz zarządzany przez firmę Microsoft topologii klucza usługi Azure Information Protection. W tym scenariuszu istnieją co najmniej dwa klucze zarządzany przez firmę Microsoft dla dzierżawy. Klucz jeden lub więcej, jest klucza lub kluczy, które są importowane z usług AD RMS. Konieczne będzie również domyślny klucz, który został utworzony automatycznie dla dzierżawy usługi Azure Information Protection.
+
+Aby wybrać inny klucz, aby pełnił rolę klucza aktywne dzierżawy usługi Azure Information Protection, użyj [AadrmKeyProperties zestaw](/powershell/module/aadrm/set-aadrmkeyproperties) polecenia cmdlet w AADRM module. Aby ułatwić identyfikację klucz, który ma być używany, należy użyć [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) polecenia cmdlet. Można określić domyślny klucz, który został utworzony automatycznie dla dzierżawy usługi Azure Information Protection, uruchamiając następujące polecenie:
+
+    (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+
+Aby zmienić topologii klucza być zarządzany przez klienta (BYOK), zobacz [wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
 Za tworzenie kopii zapasowych klucza dzierżawy odpowiada firma Microsoft. Nie wymaga to żadnej akcji z Twojej strony.
 
 ## <a name="export-your-tenant-key"></a>Eksport klucza dzierżawy
-Konfigurację i klucz dzierżawy usługi Azure Information Protection można wyeksportować, wykonując instrukcje zamieszczone w następujących trzech krokach:
+Możesz wyeksportować konfigurację usługi Azure Information Protection i klucz dzierżawy zgodnie z instrukcjami w następujące trzy kroki:
 
 ### <a name="step-1-initiate-export"></a>Krok 1. Zainicjowanie eksportu
 
--   W tym celu [skontaktuj się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support), aby otworzyć **sprawę pomocy technicznej usługi Azure Information Protection z żądaniem eksportu klucza usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+- [Skontaktuj się z Microsoft Support](../get-started/information-support.md#to-contact-microsoft-support) otworzyć **sprawy pomocy technicznej usługi Azure Information Protection z żądaniem eksportu klucza usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 ### <a name="step-2-wait-for-verification"></a>Krok 2. Oczekiwanie na weryfikację
 
@@ -61,7 +73,7 @@ Konfigurację i klucz dzierżawy usługi Azure Information Protection można wye
     ```
     Powoduje to wygenerowanie pary kluczy RSA oraz zapisanie części publicznej i prywatnej w formie plików w bieżącym folderze. Przykład: **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** i **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
 
-    Odpowiedz na wiadomość e-mail od CSS, dołączając plik o nazwie rozpoczynającej się od **PublicKey**. CSS przesyła następnie plik TPD w formie pliku xml zaszyfrowanego przy użyciu Twojego klucza RSA. Skopiuj ten plik do folderu, w którym pierwotnie zostało uruchomione narzędzie AadrmTpd i uruchom narzędzie ponownie przy użyciu pliku o nazwie rozpoczynającej się od **PrivateKey** oraz pliku otrzymanego od CSS. Przykład:
+    Odpowiedz na wiadomość e-mail od CSS, dołączając plik o nazwie rozpoczynającej się od **PublicKey**. CSS wysyła następnie możesz plik zaufanej domeny publikacji jako pliku XML zaszyfrowanego przy użyciu Twojego klucza RSA. Skopiuj ten plik do folderu, w którym pierwotnie zostało uruchomione narzędzie AadrmTpd i uruchom narzędzie ponownie przy użyciu pliku o nazwie rozpoczynającej się od **PrivateKey** oraz pliku otrzymanego od CSS. Przykład:
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
@@ -76,12 +88,12 @@ Konfigurację i klucz dzierżawy usługi Azure Information Protection można wye
 
 ### <a name="step-4-ongoing-protect-your-tenant-key"></a>Krok 4. Ciągły: ochrona klucza dzierżawy
 
--   Po otrzymaniu klucza dzierżawy należy przechowywać go w bezpiecznym miejscu, ponieważ uzyskanie dostępu do niego umożliwia odszyfrowanie wszystkich dokumentów chronionych przy użyciu tego klucza.
+Po otrzymaniu klucza dzierżawy należy przechowywać go w bezpiecznym miejscu, ponieważ uzyskanie dostępu do niego umożliwia odszyfrowanie wszystkich dokumentów chronionych przy użyciu tego klucza.
 
-    Jeśli przyczyną eksportu klucza dzierżawy jest chęć zaprzestania korzystania z usługi Azure Information Protection, najlepszym rozwiązaniem jest dezaktywacja usługi Azure Rights Management w dzierżawie usługi Azure Information Protection. Nie należy opóźniać tego działania po otrzymaniu klucza dzierżawy. Ten środek ostrożności pozwala zminimalizować konsekwencje w przypadku uzyskania dostępu do klucza dzierżawy przez osobę nieupoważnioną. Aby uzyskać instrukcje, zobacz [Likwidowanie i dezaktywowanie usługi Azure Rights Management](decommission-deactivate.md).
+Jeśli przyczyną eksportu klucza dzierżawy jest chęć zaprzestania korzystania z usługi Azure Information Protection, najlepszym rozwiązaniem jest dezaktywacja usługi Azure Rights Management w dzierżawie usługi Azure Information Protection. Nie należy opóźniać tego działania po otrzymaniu klucza dzierżawy. Ten środek ostrożności pozwala zminimalizować konsekwencje w przypadku uzyskania dostępu do klucza dzierżawy przez osobę nieupoważnioną. Aby uzyskać instrukcje, zobacz [Likwidowanie i dezaktywowanie usługi Azure Rights Management](decommission-deactivate.md).
 
 ## <a name="respond-to-a-breach"></a>Reakcja na naruszenie zabezpieczeń
-Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet w przypadku zapewnienia odpowiedniej ochrony klucza mogą występować luki w zabezpieczeniach dotyczące obecnej generacji technologii HSM albo długości i algorytmów kluczy.
+Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet wtedy, gdy jest on chroniony dobrze, mogą występować luki w obecnej generacji technologii klucza i algorytmy i długości kluczy.
 
 Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli dane zdarzenie ma wpływ na Twoje zasoby, firma Microsoft powiadomi o tym administratorów dzierżawy usługi Azure Information Protection pocztą e-mail, korzystając z adresu podanego podczas rejestrowania subskrypcji.
 
