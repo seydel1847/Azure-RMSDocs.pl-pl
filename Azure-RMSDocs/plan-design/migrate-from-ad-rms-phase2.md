@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -133,7 +133,9 @@ Zmiany szablonu, których wprowadzenie może być konieczne w ramach tego kroku:
 
 - Jeśli przed migracją utworzono szablony niestandardowe usługi Azure Information Protection, należy je ręcznie wyeksportować i zaimportować.
 
-- Jeśli szablony w usługach AD RMS używają grupy **KAŻDY**, należy ręcznie dodać równoważne grupy i prawa.
+- W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, może być konieczne dodawanie użytkowników lub grup z spoza Twojej organizacji. 
+    
+    W usługach AD RMS grupy Każdy przyznano prawa wszystkim uwierzytelnionym użytkownikom. Ta grupa jest automatycznie konwertowany do wszystkich użytkowników w dzierżawie usługi Azure AD. Jeśli jest konieczne przyznanie praw do żadnych dodatkowych użytkowników, nie dalsze akcje nie jest wymagane. Ale jeśli były używane grupę każdy, aby dołączyć użytkowników zewnętrznych, musisz ręcznie dodać tych użytkowników i praw, które chcesz przyznać im.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedura w przypadku utworzenia szablonów niestandardowych przed migracją
 
@@ -149,24 +151,18 @@ Następnie można opublikować lub zarchiwizować te szablony w taki sam sposób
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
 
-Jeśli w przypadku szablonów w usłudze AD RMS była używana grupa **KAŻDY**, zostanie ona automatycznie usunięta po zaimportowaniu szablonów do usługi Azure Information Protection. Do zaimportowanych szablonów należy ręcznie dodać równoważną grupę lub równoważnych użytkowników oraz te same prawa. Odpowiednik tej grupy dla usługi Azure Information Protection nosi nazwę **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy>.onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**.
+W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, ta grupa jest automatycznie konwertowany do używania grupy o nazwie **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy >. onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Ta grupa zawiera wszystkich użytkowników z dzierżawy usługi Azure AD.
 
-Jeśli nie masz pewności, czy szablony usługi AD RMS obejmują grupę KAŻDY, możesz użyć następującego przykładowego skryptu programu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o korzystaniu z programu Windows PowerShell z usługami AD RMS, zobacz temat [Using Windows PowerShell to Administer AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx) (Administrowanie usługami AD RMS przy użyciu programu Windows PowerShell).
+Podczas zarządzania szablonów i etykiet w portalu Azure, ta grupa przedstawia jako nazwy domeny Twojej dzierżawy w usłudze Azure AD. Na przykład tej grupy może wyglądać podobnie do następującej firmy Contoso: **contoso.onmicrosoft.com**. Aby dodać tę grupę, opcja wyświetla **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**.
 
-Grupę automatycznie utworzoną w organizacji można zobaczyć po skopiowaniu jednego z domyślnych szablonów zasad praw w klasycznym portalu Azure i zidentyfikowaniu pozycji **NAZWA UŻYTKOWNIKA** na stronie **PRAWA**. W klasycznym portalu nie można jednak dodać tej grupy do utworzonego ręcznie lub zaimportowanego szablonu. Zamiast tego należy użyć jednej z następujących opcji programu PowerShell z usługą Azure RMS:
+Jeśli nie masz pewności, czy szablony usługi AD RMS obejmują grupę KAŻDY, możesz użyć następującego przykładowego skryptu programu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o używaniu programu Windows PowerShell z usługami AD RMS, zobacz [przy użyciu programu Windows PowerShell do administrowania usługami AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx).
 
-- Użyj polecenia cmdlet [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) programu PowerShell, aby zdefiniować prawa i grupę „AllStaff” jako obiekt definicji praw, a następnie uruchom ponownie to polecenie dla każdej z pozostałych grup lub użytkowników, którym już przyznano prawa w oryginalnym szablonie (oprócz grupy KAŻDY). Następnie dodaj wszystkie obiekty definicji praw do szablonów przy użyciu polecenia cmdlet [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty).
+Można łatwo dodać użytkowników zewnętrznych do szablonów, konwertowania tych szablonów do etykiet w portalu Azure. Następnie na **dodać uprawnienia** bloku, wybierz **wprowadź szczegóły** ręcznie określić adresy e-mail dla tych użytkowników. 
 
-- Użyj polecenia cmdlet [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate), aby wyeksportować szablon do pliku XML, który można edytować, po czym dodaj grupę i prawa „AllStaff” do istniejących grup i praw. Następnie użyj polecenia cmdlet [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) w celu zaimportowania tej zmiany z powrotem do usługi Azure Information Protection.
-
-> [!NOTE]
-> Grupa „AllStaff” nie jest dokładnym odpowiednikiem grupy KAŻDY w usługach AD RMS: grupa „AllStaff” zawiera wszystkich użytkowników w dzierżawie platformy Azure, a grupa KAŻDY zawiera wszystkich uwierzytelnionych użytkowników, którzy mogą znajdować się poza organizacją.
-> 
-> Z powodu tej różnicy między dwiema grupami oprócz grupy „AllStaff” konieczne może być także dodanie użytkowników zewnętrznych. Zewnętrzne adresy e-mail dla grup nie są obecnie obsługiwane.
-
+Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [jak konfigurowanie etykiety pod kątem ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md).
 
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
-Ta sekcja zawiera przykładowy skrypt, który ułatwia zidentyfikowanie szablonów usług AD RMS ze zdefiniowaną grupą KAŻDY, zgodnie z opisem w poprzedniej sekcji.
+Ta sekcja zawiera przykładowy skrypt, aby pomóc w zidentyfikowaniu żadnych szablonów usług AD RMS, które mają zdefiniowaną grupą każdy, zgodnie z opisem w poprzedniej sekcji.
 
 **Zastrzeżenie:** ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 

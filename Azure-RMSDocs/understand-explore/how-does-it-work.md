@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3d53e57b8bff94c39426b37755c643c1dc9d9fde
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
@@ -56,11 +56,13 @@ Wariant 256-bitowy jest używany przez klienta usługi Azure Information Protect
 
 2048 bitów to długość klucza po aktywowaniu usługi Azure Rights Management. Długość klucza 1024 bity jest obsługiwana w następujących scenariuszach opcjonalnych:
 
-- Podczas migracji lokalnej, jeśli klaster AD RMS jest uruchomiony w trybie kryptograficznym 1 i nie można go uaktualnić do trybu kryptograficznego 2.
+- Podczas migracji z lokalnie, jeśli klaster AD RMS działa w trybu kryptograficznego 1.
+
+- Po zakończeniu migracji z lokalnymi, jeśli klaster AD RMS został przy użyciu usługi Exchange Online.
 
 - W przypadku kluczy archiwizowanych, które zostały utworzone lokalnie przed migracją, aby zawartość, która była chroniona przez usługi AD RMS, mogła być nadal otwierana po migracji do usługi Azure Rights Management.
 
-- Jeśli klienci zdecydują się na użycie funkcji BYOK przy użyciu usługi Azure Key Vault. Zalecamy minimalny rozmiar klucza wynoszący 2048 bity, ale to ustawienie nie jest wymuszane.
+- Jeśli klienci zdecydują się na użycie funkcji BYOK przy użyciu usługi Azure Key Vault. Usługa Azure Information Protection obsługuje długości kluczy 1024 bity i 2048 bitów. Lepsze zabezpieczenia zaleca się klucz o długości 2048 bitów.
 
 ### <a name="how-the-azure-rms-cryptographic-keys-are-stored-and-secured"></a>Jak są przechowywane i zabezpieczane klucze kryptograficzne usługi Azure RMS
 
@@ -68,7 +70,7 @@ Dla każdego dokumentu lub wiadomości e-mail, które są chronione przez usług
 
 Klucz zawartości jest chroniony za pomocą klucza RSA organizacji (klucz dzierżawy usługi Azure Information Protection) jako część zasad w dokumencie, a zasady są także podpisane przez autora dokumentu. Ten klucz dzierżawy jest wspólny dla wszystkich dokumentów i wiadomości e-mail, które są chronione przez usługę Azure Rights Management w organizacji. Może go zmienić tylko administrator usługi Azure Information Protection, jeśli organizacja korzysta z klucza dzierżawy zarządzanego przez klienta w ramach rozwiązania BYOK (Bring Your Own Key). 
 
-Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. W przypadku stosowania klucza dzierżawy zarządzanego przez klienta (BYOK) poziom zabezpieczeń jest rozszerzony dzięki użyciu szeregu wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie świadczenia usługi Azure, bez możliwości wyodrębniania, eksportowania lub udostępniania kluczy niezależnie od okoliczności. Aby uzyskać więcej informacji na temat klucza dzierżawy i rozwiązania BYOK, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
+Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. Gdy używasz klucz dzierżawy zarządzany przez klienta (BYOK) poziom zabezpieczeń jest rozszerzony przy użyciu tablicy wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie Azure, bez możliwości klucze do wyodrębniania, eksportowania lub udostępnione w żadnym. Aby uzyskać więcej informacji na temat klucza dzierżawy i rozwiązania BYOK, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
 Licencje i certyfikaty wysyłane do urządzenia z systemem Windows są chronione przy użyciu klucza prywatnego na urządzeniu klienta, który jest tworzony w chwili, gdy użytkownik po raz pierwszy korzysta na urządzeniu z usługi Azure RMS. Ten klucz prywatny jest z kolei chroniony funkcją DPAPI po stronie klienta, która zabezpiecza informacje za pomocą klucza generowanego na podstawie hasła użytkownika. Na urządzeniach przenośnych klucze są używane tylko jeden raz. Ponieważ nie są przechowywane po stronie klienta, nie wymagają ochrony na urządzeniu. 
 
@@ -130,7 +132,7 @@ Gdy użytkownik chce skorzystać z chronionego dokumentu, na kliencie RMS tworzo
 
 Ponownie zaszyfrowany klucz zawartości zostaje następnie osadzony w zaszyfrowanej licencji użytkowania razem z listą praw użytkownika, która jest zwracana do klienta RMS.
 
-![Użycie dokumentu RMS — krok 3, dokument jest odszyfrowywany i prawa są wymuszane](../media/AzRMS_documentconsumption3.png)
+![Użycie dokumentu RMS — krok 3, dokumencie zostają odszyfrowane i wymuszane są prawa](../media/AzRMS_documentconsumption3.png)
 
 **Działania wykonywane w kroku 3**: na koniec klient RMS odbiera zaszyfrowaną licencję użytkowania i odszyfrowuje ją przy użyciu własnego klucza prywatnego użytkownika. Dzięki temu klient RMS może odszyfrować treść dokumentu, gdy jest to wymagane, i renderować ją na ekranie.
 
@@ -149,7 +151,7 @@ Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różn
 
 -   **Ochrona ogólna (pfile)**: gdy usługa Azure Rights Management chroni plik w sposób ogólny, przepływ procesu w odniesieniu do ochrony zawartości jest zasadniczo taki sam, z tą różnicą, że to klient RMS tworzy zasady, na podstawie których są przyznawane wszystkie uprawnienia. Gdy plik jest używany, zostaje odszyfrowywany przed przekazaniem do aplikacji docelowej. Ten scenariusz umożliwia ochronę wszystkich plików, także tych bez natywnej obsługi usługi RMS.
 
--   **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który przeglądarka usługi Azure Information Protection i aplikacja RMS sharing mogą otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail przy zapewnieniu, że odbiorcy zawsze będą mogli je odczytać, nawet jeśli urządzenie przenośne nie jest wyposażone w aplikację z natywną obsługą chronionych plików pakietu Office.
+-   **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który przeglądarka usługi Azure Information Protection i aplikacja RMS sharing mogą otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail, wiedząc, że odbiorca na urządzeniu przenośnym mogą zawsze odczytać je nawet jeśli urządzenie przenośne nie ma aplikacji z natywną obsługą chronionych plików pakietu Office.
 
 ## <a name="next-steps"></a>Następne kroki
 

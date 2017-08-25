@@ -4,7 +4,7 @@ description: "Faza 5 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aeffd9780001f4c91ea8600f11d8fc3b36abce73
-ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
+ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
+ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -70,20 +70,28 @@ Aby usunąć kontrolki dołączania:
 
     W danych wyjściowych element **License** powinien wyświetlać **False** i nie powinien być wyświetlany żaden identyfikator GUID dla elementu **SecurityGroupOjbectId**.
 
-## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. Wymiana klucza dzierżawy usługi Azure Information Protection
-Ten krok jest wymagany, gdy migracja zostanie zakończona, jeśli wdrożenie usług AD RMS używano RMS trybu kryptograficznego 1. Generowanie tworzy nowy klucz dzierżawy, który korzysta z usług RMS trybu kryptograficznego 2. Tryb kryptograficzny 1 jest obsługiwana dla usługi Azure Information Protection tylko podczas procesu migracji.
+## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection
 
-Generowanie po zakończeniu migracji pomaga również do ochrony klucza dzierżawy usługi Azure Information Protection przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS.
+Ten krok jest zalecane, gdy migracja zostanie zakończona, jeśli wdrożenie usług AD RMS używano RMS trybu kryptograficznego 1. Generowanie wyników w przypadku ochrony, która używa usługi RMS trybu kryptograficznego 2. 
 
-Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection (znanej także jako "Uaktualnianie klucza"), tworzony jest nowy klucz, a klucz oryginalny zostaje zarchiwizowany. Jednak przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim, nie należy czekać do momentu naruszenia bezpieczeństwa do oryginalnego klucza, ale ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection, natychmiast po zakończeniu migracji.
+Nawet jeśli wdrożenia usług AD RMS używano trybu kryptograficznego 2, nadal zalecamy wykonać ten krok, ponieważ ułatwia klucza do ochrony dzierżawy przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS.
+
+Jednak nie ponowne tworzenie klucza w przypadku używania usługi Exchange Online z usługami AD RMS. Exchange Online nie obsługuje zmiany tryby kryptograficzne usług. 
+
+Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection (znanej także jako "Uaktualnianie klucza"), zostaną zarchiwizowane aktualnie aktywnego klucza, a usługi Azure Information Protection, który rozpoczyna się do użycia innego klucza, który określisz. To inny klucz może być nowego klucza, które są tworzone w usłudze Azure Key Vault lub domyślny klucz, który został utworzony automatycznie dla dzierżawy.
+
+Przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim nie poczekaj, aż podejrzewasz naruszenia do oryginalnego klucza, ale tego kroku zaraz po zakończeniu migracji.
 
 Aby wymienić klucz dzierżawy usługi Azure Information Protection:
 
-- Jeśli klucz dzierżawy jest zarządzany przez firmę Microsoft: skontaktuj się z [pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) i otwórz **zgłoszenie do pomocy technicznej usługi Azure Information Protection z żądaniem wymiany klucza usługi Azure Information Protection po migracji z usługi AD RMS**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Wymiana klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+- **Jeśli klucz dzierżawy jest zarządzany przez firmę Microsoft**: Uruchom polecenie cmdlet programu PowerShell [AadrmKeyProperties zestaw](/powershell/module/aadrm/set-aadrmkeyproperties) i podaj identyfikator klucza dla klucza, który został utworzony automatycznie dla dzierżawy. Można określić wartość, aby określić, uruchamiając [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) polecenia cmdlet. Klucza, który został utworzony automatycznie dla dzierżawy ma najstarsze Data utworzenia, dlatego można ją zidentyfikować za pomocą następującego polecenia:
+    
+        (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK): w usłudze Azure Key Vault wymień klucz używany dla dzierżawy usługi Azure Information Protection, a następnie uruchom ponownie polecenie cmdlet [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey), aby określić adres URL nowego klucza. 
+- **Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK)**: W usłudze Azure Key Vault, powtórz proces tworzenia klucza dzierżawy usługi Azure Information Protection, a następnie uruchom [AadrmKeyVaultKey użyj](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) polecenia cmdlet ponownie, aby określić identyfikator URI dla tego nowego klucza. 
 
 Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usługi Azure Information Protection, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
+
 
 ## <a name="next-steps"></a>Następne kroki
 
