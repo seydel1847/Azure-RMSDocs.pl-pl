@@ -1,6 +1,6 @@
 ---
 title: "Cennik i ograniczenia dotyczące funkcji BYOK — Azure Information Protection"
-description: "Informacje na temat ograniczeń związanych z używaniem kluczy zarządzanych przez klienta (model używania własnego klucza — BYOK, Bring Your Own Key) z usługami Azure RMS."
+description: "Zrozumienie ograniczeń klawiszy zarządzany przez klienta (znana jako \"Użyj własnego klucza\", byok) z usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfc4243d15112545219f82964d09ce9ce238355d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3c8fb56d33c1aa745975254dc9a2134db857b352
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>Cennik i ograniczenia dotyczące funkcji BYOK
 

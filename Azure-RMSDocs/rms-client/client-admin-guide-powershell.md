@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
+ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/29/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -220,7 +220,7 @@ Nasze przykładowe polecenie będzie więc wyglądać następująco:
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-Jak pokazano w przypadku poprzedniego polecenia, można dostarczać wartości za pomocą jednego polecenia lub po prostu wpisać polecenie Set-RMSServerAuthentication i podawać kolejno wartości po wyświetleniu monitu. Po zakończeniu działania polecenia zobaczysz komunikat „**The RmsServerAuthentication is set to ON**” (Parametr RmsServerAuthentication został włączony), co oznacza, że klient działa teraz w „trybie serwera”. Ten komunikat nie potwierdza pomyślnego ukończenia uwierzytelniania z użyciem podanych przez Ciebie wartości, ale wskazuje, że przełączanie do trybu serwera powiodło się.
+Jak pokazano w poprzednim poleceniu, możesz podać wartości z jednego polecenia skryptu do uruchomienia nieinteraktywnie, należy wykonać. Do celów testowych można jednak po prostu wpisz Set-RMSServerAuthentication i podaj wartości jeden po drugim po wyświetleniu monitu. Po zakończeniu wykonywania polecenia, klient działa teraz po "tryb serwera", które są odpowiednie do użycia nieinterakcyjnym, takich jak skrypty i infrastruktury klasyfikacji plików systemu Windows Server.
 
 Istnieje możliwość ustawienia tej jednostki usługi jako administratora. Dzięki temu będzie można jej zawsze użyć do wyłączenia ochrony plików dla innych użytkowników. W ten sam sposób jak skonfigurować konto użytkownika standardowego jako superużytkowników, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale określ **ServicePrincipalId** parametru z wartością AppPrincipalId.
 

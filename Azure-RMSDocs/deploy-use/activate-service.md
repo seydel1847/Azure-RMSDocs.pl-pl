@@ -4,7 +4,7 @@ description: "Konieczna jest aktywacja usługi Azure Rights Management, zanim Tw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f6d13d05c7139635c9a43770e418c1d7e11f880e
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 6aa009795e45281df1c9406357f810b8d25302bc
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -42,11 +42,9 @@ Przed aktywacją usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_right
 
 Po uaktywnieniu usługi Azure RMS wszyscy użytkownicy w organizacji mogą stosować funkcje ochrony informacji wobec swoich plików oraz otwierać pliki (korzystać z nich) chronione przez usługę Azure Rights Management. Jeśli jednak wolisz ograniczyć możliwość stosowania funkcji ochrony informacji, możesz określić, kto będzie z niej korzystać, stosując kontrolki dołączania we wdrożeniu etapowym. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kontrolek dołączania we wdrożeniu etapowym](#configuring-onboarding-controls-for-a-phased-deployment) w tym artykule.
 
-Dla instrukcji jak aktywować praw zarządzania usługi z poziomu portalu zarządzania, wybierz, czy używać Centrum administracyjnego usługi Office 365, klasycznym portalu Azure i portalu Azure (ta ostatnia metoda jest obecnie w wersji zapoznawczej):
+Aby uzyskać instrukcje jak aktywować praw usługi zarządzania w portalu zarządzania wybierz, czy za pomocą Centrum administracyjnego usługi Office 365 lub portalu Azure:
 
 - [**Centrum administracyjne usługi Office 365** ](activate-office365.md) -wymaga konta administratora globalnego
-
-- [**Klasyczny portal Azure** ](activate-azure-classic.md) -wymaga konta administratora globalnego
 
 - [**Azure portal** ](activate-azure.md) -wymaga konta administratora globalnego lub [konto administratora zabezpieczeń](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
 

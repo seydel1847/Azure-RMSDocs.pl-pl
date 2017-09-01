@@ -1,10 +1,10 @@
 ---
-title: "Konfigurowanie szablonów w usłudze Azure Information Protection i zarządzanie nimi"
-description: "Obecnie w wersji zapoznawczej można konfigurować szablony zarządzania prawami i zarządzać nimi przy użyciu zasad usługi Azure Information Protection."
+title: "Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection"
+description: "Konfigurowanie szablonów i zarządzania nimi rights management z portalu Azure."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
-ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
+ms.openlocfilehash: 5075c8cbab441a376595baabd7863005b15b84e3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -40,33 +40,40 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 
 ## <a name="default-templates"></a>Szablony domyślne
 
-Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Wspomniane dwa szablony obejmują następujące ograniczenia: 
+Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Po utworzeniu wspomniane dwa szablony mają następujące ograniczenia: 
 
 - Uprawnienia Odczyt lub Modyfikacja odnoszące się do chronionej zawartości
     
-    -Określone uprawnienia: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
+    - **Określone uprawnienia**: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
 
 - Wyświetlanie chronionej zawartości w trybie tylko do odczytu
     
-    - Określone uprawnienie: Wyświetl zawartość
+    - **Określone uprawnienie**: Wyświetl zawartość
 
-Te szablony ułatwiają dla Ciebie i inne osoby do natychmiast rozpocząć ochronę danych poufnych w organizacji. Te szablony mogą być używane z etykietami usługi Azure Information Protection lub samodzielnie z [aplikacji i usług](../understand-explore/applications-support.md) mogą używać szablony usługi Rights Management.
+Ponadto szablony są skonfigurowane i umożliwiają dostęp w trybie offline przez 7 dni i nie mają datę wygaśnięcia.
+
+>[!NOTE]
+> Można zmienić te ustawienia oraz nazwy i opisy domyślnych szablonów. Ta możliwość nie było możliwe z klasycznego portalu Azure i nadal nie jest obsługiwane dla środowiska PowerShell.
+
+Te szablony domyślne ułatwiają dla Ciebie i inne osoby do natychmiast rozpocząć ochronę danych poufnych w organizacji. Te szablony mogą być używane z etykietami usługi Azure Information Protection lub samodzielnie z [aplikacji i usług](../understand-explore/applications-support.md) mogą używać szablony usługi Rights Management.
 
 Można również tworzyć własne szablony niestandardowe. Prawdopodobnie potrzebne będzie tylko kilka szablonów, ale można mieć maksymalnie 500 szablonów niestandardowych zapisanych na platformie Azure.
 
 ### <a name="default-template-names"></a>Domyślne nazwy szablonu
 
-Jeśli ostatnio uzyskano subskrypcję usługi Azure Information Protection, nazwy szablony domyślne są następujące:
+Jeśli ostatnio uzyskano subskrypcję usługi Azure Information Protection, szablony domyślne są tworzone z następujących nazw:
 
 - **Poufne \ wszyscy pracownicy** uprawnienia odczytu lub modyfikowania chronionej zawartości.
 
 - **Poufny \ wszyscy pracownicy** w celu wyświetlenia tylko do odczytu do chronionej zawartości.
 
-Jeśli uzyskać subskrypcję usługi Azure Information Protection pewien czas temu, lub jeśli nie masz subskrypcji usługi Azure Information Protection, ale masz subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, nazwy szablony domyślne są następujące:
+Jeśli uzyskać subskrypcję usługi Azure Information Protection pewien czas temu, lub jeśli nie masz subskrypcji usługi Azure Information Protection, ale masz subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, szablony domyślne są tworzone z następujące nazwy:
 
 - **\<Nazwa organizacji > — poufne** uprawnienia odczytu lub modyfikowania chronionej zawartości.
 
 - **\<Nazwa organizacji > — poufne tylko do wyświetlania**, w celu wyświetlenia tylko do odczytu do chronionej zawartości. 
+
+Możesz zmienić nazwę (i ponownie skonfiguruj) te szablony domyślne, korzystając z portalu Azure.
 
 >[!NOTE]
 >Jeśli nie widzisz szablony domyślne w **usługi Azure Information Protection — globalne zasady** bloku są konwertowane na etykiety lub połączony z etykietą. Nadal istnieją jako szablon, ale w portalu Azure, zobaczysz je w ramach konfiguracji etykietę, która obejmuje usługę Azure RMS protection. Zawsze można potwierdzić, szablony, jakie ma dzierżawy, uruchamiając [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) z [modułu AADRM PowerShell](administer-powershell.md).
@@ -96,21 +103,21 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     
     Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić zgodność za pomocą polecenia cmdlet programu PowerShell [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
 
-- Obecnie szablony, które skonfigurowano dla wielu języków przy użyciu klasycznego portalu Azure lub programu PowerShell nie wyświetlaj tych języków dla nazwy i opisy, ale są zachowywane.
-
-- Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet.
+- Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet. Ponadto ten szablon nie jest już wyświetlany w **szablony** sekcji.
 
 - Nie można utworzyć nowy szablon z **szablony** kontenera. Zamiast tego utworzyć etykietę **Chroń** ustawienia i skonfigurować prawa użytkowania i ustawienia z **ochrony** bloku. Aby uzyskać pełne instrukcje, zobacz sekcję [Aby utworzyć nowy szablon](#to-create-a-new-template).
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
-1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny.
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+    
+    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
+2. Jeśli szablon, który chcesz skonfigurować dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
+    
+    Jeśli szablon, który chcesz skonfigurować jest [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 
-2. Jeśli szablon, który chcesz skonfigurować, będzie miał zastosowanie do wszystkich użytkowników, z bloku **Azure Information Protection** wybierz opcję **Globalne**. Jeśli jednak szablon, który chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, wybierz te zasady o określonym zakresie.
-
-3. W bloku zasad znajdź szablon, który chcesz skonfigurować:
+3. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, Znajdź szablon, który chcesz skonfigurować:
     
     - Jeśli masz subskrypcję, która obejmuje klasyfikację, etykietowanie i ochronę: rozwiń element **Szablony** znajdujący się za etykietami.
     
@@ -122,7 +129,10 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     
     Kliknij przycisk **OK**, aby zachować zmiany, a w bloku **Etykieta** kliknij przycisk **Zapisz**.
 
-6. Aby udostępnić zmiany aplikacjom użytkownika i usługom, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+6. Aby udostępnić użytkownikom zmiany do użytkownika aplikacji i usług, w początkowym **usługi Azure Information Protection** bloku, kliknij przycisk **publikowania**.
+
+> [!NOTE]
+> Można również edytować szablonu, za pomocą **Edytuj szablon** znajdującego się na **ochrony** bloku, jeśli skonfigurowano etykietę do używania wstępnie zdefiniowanego szablonu. Jeśli nie inne etykieta używa również wybranego szablonu, ten przycisk konwertuje szablon do etykiety i przejście do kroku 5. Aby uzyskać więcej informacji na temat co się stanie, jeśli szablony są konwertowane na etykiety zobacz następną sekcję.
 
 ## <a name="to-convert-templates-to-labels"></a>Aby dokonać konwersji szablonów na etykiety
 
@@ -132,7 +142,9 @@ Na przykład jeśli dokonano konwersji etykiety o nazwie **Marketing**, która p
 
 Nie jest wymagana konwersja wszystkich szablonów do etykiet, ale po takiej konwersji ustawienia ochrony będą w pełni zintegrowane z pełną funkcjonalnością etykiet, dzięki czemu nie trzeba utrzymywać oddzielnych ustawień.
 
-Aby dokonać konwersji szablonu na etykietę, kliknij prawym przyciskiem myszy szablon, a następnie wybierz opcję **Konwertuj do etykiety**. Aby wybrać tę opcję, można również użyć menu kontekstowego.
+Aby dokonać konwersji szablonu na etykietę, kliknij prawym przyciskiem myszy szablon, a następnie wybierz opcję **Konwertuj do etykiety**. Aby wybrać tę opcję, można również użyć menu kontekstowego. 
+
+Można także przekonwertować szablon na etykiecie po skonfigurowaniu etykiety dla ochrony i wstępnie zdefiniowanego szablonu, za pomocą **Edytuj szablon** przycisku. 
 
 Podczas konwertowania szablonu do etykiety:
 
@@ -148,21 +160,23 @@ Podczas konwertowania szablonu do etykiety:
 
 Utworzenie nowej etykiety z ustawieniem ochrony **Usługa Azure RMS** powoduje utworzenie w sposób niewidoczny dla użytkownika nowego niestandardowego szablonu udostępnianego usługom oraz aplikacjom integrującym się z szablonami usługi Rights Management.
 
-1. Jeśli nowy szablon, który chcesz utworzyć, będzie miał zastosowanie do wszystkich użytkowników, w bloku **Zasady: Globalne** kliknij opcję **Dodaj nową etykietę**.
+1. Jeśli nowy szablon jest przeznaczony dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
     
-     Jeśli nowy szablon, który chcesz utworzyć, będzie szablonem działu i z tego powodu będzie miał zastosowanie tylko do wybranych użytkowników, najpierw utwórz lub wybierz zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
+     Jeśli nowy szablon będzie szablon dla działu, tak że dotyczy ona tylko wybranych użytkowników z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie utwórz lub wybierz Twoje [zakres zasad](configure-policy-scope.md) z **zasady usługi Azure Information Protection - zakres** bloku.
 
-2. W bloku **Etykieta** zachowaj ustawienie domyślne **Włączone**: **Włączone**, aby opublikować nowy szablon, lub zmień to ustawienie na **Wyłączone**, aby utworzyć szablon jako zarchiwizowany. Następnie wprowadź nazwę etykiety i opis dla nazwy i opisu szablonu.
+2. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, kliknij przycisk **dodać nową etykietę**.
 
-3. W sekcji **Ustaw uprawnienia do dokumentów i wiadomości e-mail zawierających tę etykietę** wybierz pozycję **Chroń**, a następnie **Ochrona**:
+3. W bloku **Etykieta** zachowaj ustawienie domyślne **Włączone**: **Włączone**, aby opublikować nowy szablon, lub zmień to ustawienie na **Wyłączone**, aby utworzyć szablon jako zarchiwizowany. Następnie wprowadź nazwę etykiety i opis dla nazwy i opisu szablonu.
+
+4. W sekcji **Ustaw uprawnienia do dokumentów i wiadomości e-mail zawierających tę etykietę** wybierz pozycję **Chroń**, a następnie **Ochrona**:
     
-     ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar.png)
+     ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar-configured.png)
 
-4. W bloku **Ochrona** można zmienić uprawnienia, wygaśnięcia zawartości i ustawienia dostępu w trybie offline. Aby uzyskać więcej informacji o konfiguracji ustawień ochrony, zobacz temat [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](configure-policy-protection.md)
+5. W bloku **Ochrona** można zmienić uprawnienia, wygaśnięcia zawartości i ustawienia dostępu w trybie offline. Aby uzyskać więcej informacji o konfiguracji ustawień ochrony, zobacz temat [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](configure-policy-protection.md)
     
     Kliknij przycisk **OK**, aby zachować zmiany, a w bloku **Etykieta** kliknij przycisk **Zapisz**.
 
-5. Aby udostępnić szablony aplikacjom użytkownika i usługom, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+6. Aby udostępnić te szablony użytkownika aplikacji i usług, w początkowym **usługi Azure Information Protection** bloku, kliknij przycisk **publikowania**.
 
 
 ## <a name="next-steps"></a>Następne kroki

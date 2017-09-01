@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -61,13 +61,17 @@ Oprócz braku obsługi wymienionych korzyści, które można uzyskać, korzystaj
 
 - Brak obsługi pakietu Office 2010 lub Office 2007.
 
-- Nie używaj opcji **Nie przesyłaj dalej** podczas konfigurowania etykiety dla ochrony za pomocą usługi Azure RMS. Musisz również poinstruować użytkowników, aby nie wybierali ręcznie tej opcji w programie Outlook. 
+- Poinstruować użytkowników, aby nie wybierz **nie przesyłaj dalej** w programie Outlook, lub podaj dokładne wskazówki. 
 
-    W przypadku zastosowania opcji Nie przekazuj dalej przez etykietę lub ręcznie przez użytkowników ta opcja może zostać zastosowana przez wdrożenie usług AD RMS zamiast docelowej usługi Azure Rights Management. W tym scenariuszu osoby, którym wiadomości e-mail są udostępniane zewnętrznie, nie będą mogły otworzyć wiadomości e-mail, do których zastosowano opcję Nie przekazuj dalej.
+    Mimo że można skonfigurować etykietę **nie przesyłaj dalej** Aby użyć HYOK lub usługi Azure Rights Management, użytkownicy mogą również wybrać nie przesyłaj dalej samodzielnie. Tę opcję można wybrać przy użyciu **nie przesyłaj dalej** znajdującego się na **komunikat** karty wstążki pakietu Office lub za pomocą opcji menu programu Outlook. **Nie przesyłaj dalej** opcji menu znajduje się w **pliku** > **uprawnienia**i z **uprawnienia** przycisk z **opcje** kartę na Wstążce. 
     
-    Począwszy od wersji 1.9.58.0 klienta usługi Azure Information Protection (obecnie w wersji zapoznawczej), przycisk **Nie przesyłaj dalej** w programie Outlook zawsze korzysta z usług Azure RMS. To ustawienie nie ma wpływu na opcję menu **Nie przesyłaj dalej** lub opcję **Nie przesyłaj dalej** w programie Outlook, gdy konfigurujesz etykietę do celów ochrony. Jeśli to zachowanie nie jest pożądane, możesz ukryć przycisk **Nie przesyłaj dalej** w programie Outlook, konfigurując [zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook).
+    Użytkownicy kliknij przycisk nie przesyłaj dalej, można użyć usługi Azure RMS lub AD RMS, a wybór jest deterministyczna. Gdy użytkownicy wybierają **nie przesyłaj dalej** z opcją menu programu Outlook można wybrać z usługi Azure RMS lub AD RMS, ale nie będzie wiadomo, rozwiązania do wiadomości e-mail. W obu przypadkach usług AD RMS jest używany podczas usługi Azure RMS należy używać, osoby, które są udostępniane zewnętrznie nie można otworzyć te wiadomości e-mail.
+    
+    Bieżąca wersja klienta usługi Azure Information Protection zawsze używa usług Azure RMS, gdy użytkownicy wybierają **nie przesyłaj dalej** przycisku w programie Outlook. Jeśli to zachowanie nie jest pożądane, możesz ukryć przycisk **Nie przesyłaj dalej** w programie Outlook, konfigurując [zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
 
-- Jeśli użytkownicy konfigurują uprawnienia niestandardowe w przypadku stosowania ochrony przy użyciu usług AD RMS (HYOK) i Azure RMS, dokument lub wiadomość e-mail są zawsze chronione przez usługę Azure Rights Management.
+- Dla bieżącej wersji ogólnodostępnej klienta Azure Information Protection: Jeśli użytkownicy konfigurowania uprawnień niestandardowych za pomocą usługi Azure RMS i AD RMS (HYOK) ochronę, dokumentu lub wiadomości e-mail zawsze jest chroniony przez usługę Azure Rights Management. To ograniczenie nie dotyczy bieżąca wersja klienta.
+
+- Jeśli skonfigurujesz uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików, który jest obsługiwany w bieżącej wersji preview klienta Azure Information Protection: W Eksploratorze plików, ochrona jest wykonywana przy użyciu usługi Azure RMS zamiast od ochrony HYOK (AD RMS). 
 
 - Jeśli w programie Outlook użytkownik wybierze etykietę powodującą zastosowanie ochrony AD RMS, a następnie zmieni zdanie przed wysłaniem wiadomości e-mail i wybierze etykietę, która dotyczy ochrony za pomocą usługi Azure RMS, nowo wybrana etykieta nie zostanie zastosowana. Użytkownik zobaczy następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Nie masz uprawnień do wykonania tej akcji.**
     
@@ -107,9 +111,11 @@ Aby uzyskać informacje na temat wdrażania oraz instrukcje dotyczące usług AD
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Lokalizowanie informacji używanych do określania ochrony usług AD RMS za pomocą etykiety usługi Azure Information Protection
 
-Po skonfigurowaniu etykiety dla ochrony za pomocą rozwiązania **HYOK (AD RMS)** należy określić identyfikator GUID szablonu i adres URL licencjonowania klastra usług AD RMS. Obie te wartości można znaleźć za pomocą konsoli usług Active Directory Rights Management Services:
+Po skonfigurowaniu etykiety dla **HYOK (AD RMS)** ochrony, należy określić adres URL licencjonowania klastra usług AD RMS. Ponadto należy określić szablon, skonfigurowanego uprawnień przyznać użytkownikom, lub pozwolić użytkownikom na definiowanie uprawnień i użytkowników. 
 
-- Aby zlokalizować identyfikator GUID szablonu: rozwiń klaster i kliknij pozycję **Szablony zasad praw**. Z informacji o **dystrybuowanych szablonach zasad praw**, możesz następnie skopiować identyfikator GUID szablonu, którego chcesz użyć. Na przykład: 82bf3474-6efe-4fa1-8827-d1bd93339119
+Można znaleźć identyfikator GUID szablonu i licencjonowanie wartości adresu URL za pomocą konsoli usługi zarządzania prawami dostępu w usłudze Active Directory:
+
+- Aby zlokalizować identyfikator GUID szablonu: rozwiń klaster, a następnie kliknij przycisk **szablony zasad praw**. Z informacji o **dystrybuowanych szablonach zasad praw**, możesz następnie skopiować identyfikator GUID szablonu, którego chcesz użyć. Na przykład: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
 - Aby znaleźć adres URL licencjonowania: kliknij nazwę klastra. Z informacji o **szczegółach klastra** skopiuj wartość **licencjonowania** minus ciąg **/_wmcs/licensing**. Na przykład: https://rmscluster.contoso.com 
     

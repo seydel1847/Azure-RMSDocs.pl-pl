@@ -4,17 +4,17 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypis
  
 - Zalecana klasyfikacja ma zastosowanie do programów Word, Excel i PowerPoint, gdy zapisywane są pliki.
 
-Gdy konfigurujesz warunki, można użyć wstępnie zdefiniowanych wzorców, takich jak "numery kart kredytowych" lub "Numer ubezpieczenia społecznego USA". Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
+Gdy konfigurujesz warunki, można wstępnie zdefiniowanych wzorców, takich jak **numer karty kredytowej** lub **numer ubezpieczenia społecznego USA (SSN)**. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz [szczegóły dotyczące typów informacji](#details-about-the-information-types) sekcji.
 
 W jaki sposób ocenia się wiele warunków, jeśli są zastosowane wobec więcej niż jednej etykiety:
 
@@ -47,37 +47,42 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
-1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli etykietę, którą chcesz skonfigurować automatyczną lub zalecaną klasyfikację ma zastosowanie do wszystkich użytkowników, wybierz etykietę do zmiany z **zasad: globalne** bloku, a następnie wprowadź zmiany w **etykiety** bloku oraz wszelkich kolejnych blokach wedle potrzeb. 
+2. Jeśli etykietę, którą chcesz skonfigurować będą stosowane do wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
+    
+    Jeśli trwa etykietę, którą chcesz skonfigurować [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 
-     Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.  
+3. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, wybierz etykietę, aby skonfigurować. 
 
-3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
+4. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
-4. W bloku **Warunek** wybierz opcję **Wbudowany**, jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **Niestandardowy**, jeśli chcesz określić własny warunek, a następnie kliknij przycisk **Zapisz**:
-
-    - Aby uzyskać **wbudowanych**: Wybierz z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
+5. Na **warunku** bloku, wybierz opcję **typów informacji** Jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **niestandardowy** Jeśli chcesz określić własny, a następnie kliknij przycisk **Zapisać**:
+    - Aby uzyskać **typów informacji**: Wybierz z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
         
-        Aby uzyskać więcej informacji o regułach wykrywania dla tych warunków wraz z przykładami, zobacz sekcję [Informacje o wbudowanych warunkach](#information-about-the-built-in-conditions).
-
+        Aby korzystać z pełną listą warunki, należy użyć bieżąca wersja klienta usługi Azure Information Protection. Jeśli masz bieżącej wersji ogólnodostępnej klienta następujące pięć warunków obsługiwane są tylko: **kod SWIFT**, **numer karty kredytowej**, **numer rozliczeniowy ABA**, **Numer ubezpieczenia społecznego USA (SSN)**, i **międzynarodowy numer konta bankowego (IBAN)**. [Więcej informacji](#details-about-the-information-types)
+    
     - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
         
-    **Przykład opcji wystąpień**: wybierasz wbudowaną opcję numeru ubezpieczenia społecznego i ustawiasz minimalną liczbę wystąpień na 2. Dokument ma ten sam numer ubezpieczenia społecznego wymieniony dwukrotnie. Jeśli ustawisz opcję **Zliczaj tylko wystąpienia o unikatowych wartościach** na wartość **Wł.**, warunek nie zostanie spełniony. Jeśli ustawisz tę opcję na wartość **Wył.**, warunek zostanie spełniony.
+        Jeśli bieżąca wersja klienta usługi Azure Information Protection, wyrażeń regularnych Użyj wzorce regex usługi Office 365. Aby uzyskać więcej informacji, zobacz [definiujący wyrażenie regularne na podstawie dopasowań](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) w dokumentacji pakietu Office. 
+        
+    **Przykład opcji wystąpień**: wybierz opcję wbudowanych numer ubezpieczenia społecznego, Ustaw minimalną liczbę wystąpień na 2 i dokument ma sam numer ubezpieczenia społecznego wymieniony dwukrotnie: Jeśli ustawisz **liczba wystąpień z tylko unikatowe wartości** do **na**, nie jest spełniony warunek. Jeśli ustawisz tę opcję, **poza**, warunek jest spełniony.
 
-5. W bloku **Etykieta** skonfiguruj następujące opcje i kliknij przycisk **Zapisz**:
-
+6. W bloku **Etykieta** skonfiguruj następujące opcje i kliknij przycisk **Zapisz**:
+    
     - Wybierz automatyczną lub zalecaną klasyfikację: dla opcji **Wybierz sposób stosowania etykiety: automatycznie lub jako zalecenie dla użytkownika** wybierz wartość **Automatycznie** lub **Zalecenie**.
-
+    
     - Określ tekst monitu dla użytkownika lub wskazówki dotyczącej zasad: zachowaj tekst domyślny lub podaj własny ciąg.
 
-6. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+7. Aby udostępnić użytkownikom zmiany, w początkowym bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
-## <a name="information-about-the-built-in-conditions"></a>Informacje o wbudowanych warunkach
+## <a name="details-about-the-information-types"></a>Szczegółowe informacje dotyczące typów informacji
 
-Można wybrać następujące warunki:
+Jeśli bieżąca wersja klienta usługi Azure Information Protection, pełną listę typów informacji są obsługiwane i Użyj typów informacji czułości zapobiegania (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office. Gdy usługi Azure Information Protection ocenia te typy informacji, nie używa ustawienia poziomu ufności DLP pakietu Office, ale jest zgodna z najniższą zaufania.  
+
+Jeśli masz bieżącej wersji ogólnodostępnej klienta następujące typy informacji obsługiwane są tylko:
 
 - [Kod SWIFT](#swift-code )
 
@@ -89,6 +94,7 @@ Można wybrać następujące warunki:
 
 - [Międzynarodowy numer konta bankowego (IBAN)](#international-banking-account-number-iban)
 
+Zobacz następujące sekcje, aby uzyskać więcej informacji na temat poszczególnych typów informacji dla wersji ogólnodostępnej klienta.
 
 ### <a name="swift-code"></a>Kod SWIFT
 

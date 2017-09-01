@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 88843833b87eb054f534a7c85e6a7c2e52797e9b
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -48,7 +48,7 @@ Aby uzyskać więcej informacji o sposobie konfigurowania zasad z określonym za
 
 2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
     
-    Przy pierwszym łączeniu się z usługą automatycznie zostanie otwarta strona **Szybki start**. W celu skonfigurowania zasad, które uzyskają wszyscy użytkownicy, kliknij opcję **Zasady globalne**, aby otworzyć blok **Zasady: globalne**. Ten blok jest automatycznie otwierany dla kolejnych połączeń z usługą, aby wyświetlić i edytować globalne zasady, który uzyskają wszyscy użytkownicy. 
+    Połącz się z usługą, po raz pierwszy **usługi Azure Information Protection — szybki start** automatycznie zostanie otwarty blok. Do skonfigurowania zasad uzyskać wszyscy użytkownicy, z **zasady** zaznaczenia menu, wybierz opcję **globalne zasady** otworzyć **usługi Azure Information Protection — globalne zasady** bloku. Ten blok jest automatycznie otwierany dla kolejnych połączeń z usługą, aby wyświetlić i edytować globalne zasady, który uzyskają wszyscy użytkownicy. 
     
     Zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
     
@@ -70,7 +70,7 @@ Usługa Azure Information Protection obejmuje [domyślne zasady](configure-polic
 
 Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety. Aby uzyskać więcej informacji, użyj linków z następnej sekcji w celu ułatwienia znalezienia odpowiednich opcji i sposobów ich konfigurowania. 
 
-Po wprowadzeniu zmian w bloku Azure Information Protection kliknij przycisk **Zapisz**, aby zapisać te zmiany lub kliknij przycisk **Odrzuć**, aby przywrócić stan do ostatnio zapisanych ustawień. 
+Po wprowadzeniu zmian w bloku Azure Information Protection kliknij przycisk **Zapisz**, aby zapisać te zmiany lub kliknij przycisk **Odrzuć**, aby przywrócić stan do ostatnio zapisanych ustawień.
 
 Po zakończeniu wprowadzania żądanych zmian kliknij przycisk **Opublikuj**. 
 
