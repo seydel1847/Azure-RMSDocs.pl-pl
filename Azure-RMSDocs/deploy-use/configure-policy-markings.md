@@ -4,17 +4,17 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
-ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
+ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -35,6 +35,8 @@ Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
     - Wiele wierszy tekstu jest obsługiwana w przypadku użycia bieżąca wersja klienta usługi Azure Information Protection.
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
+
+- Znaczniki wizualne obsługuje tylko jeden język.
 
 ## <a name="when-visual-markings-are-applied"></a>Gdy oznaczenia wizualne są stosowane.
 
@@ -58,13 +60,13 @@ W przypadku dokumentów oznaczenia wizualne są stosowane w następujący sposó
 
 Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiety.
 
-1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**.
-
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+    
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli etykieta, którą chcesz skonfigurować pod kątem oznaczeń wizualnych, będzie miała zastosowanie do wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**.
-
-     Jeśli etykieta, którą chcesz skonfigurować, należy do [zasad o określonym zakresie](configure-policy-scope.md) i z tego powodu ma zastosowanie tylko do wybranych użytkowników, najpierw wybierz te zasady o określonym zakresie z początkowego bloku **Azure Information Protection**.
+2. Jeśli etykietę, którą chcesz skonfigurować będą stosowane do wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
+    
+    Jeśli trwa etykietę, którą chcesz skonfigurować [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 
 3. W bloku **Etykieta** w sekcji **Ustaw oznaczenie wizualne (np. nagłówek lub stopkę)** skonfiguruj ustawienia dla żądanych oznaczeń wizualnych, a następnie kliknij przycisk **Zapisz**:
 

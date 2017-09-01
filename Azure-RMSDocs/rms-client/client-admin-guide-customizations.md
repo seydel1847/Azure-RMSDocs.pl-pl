@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9e7e5e67b664d177f60a445aa54df3f6072ff9c7
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -134,6 +134,9 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Zablokowanie dostępu użytkowników do opcji uprawnień niestandardowych
 
 Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
+
+> [!IMPORTANT]
+> Nie należy używać tej opcji, jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 

@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 343b38caa14d3f67a932eedae37ed10c55f371ff
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 
@@ -26,12 +26,11 @@ Na przykład możesz zmienić nazwę, etykietkę narzędzia, kolor i kolejność
 
 Aby zmienić etykietę, użyj następujących instrukcji.
 
-
-1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Aby zmienić etykietę z zasad globalnych, tak aby dotyczyła wszystkich użytkowników, wybierz etykietę do zmiany z bloku **Zasady: Globalne**, a następnie wprowadź zmiany w bloku **Etykieta** i wszystkich kolejnych wymaganych blokach. Aby zmienić etykietę z [zasad o określonym zakresie](configure-policy-scope.md), tak aby dotyczyła wybranych użytkowników, najpierw wybierz te zasady w początkowym bloku **Azure Information Protection**.
+2. Aby zmienić etykietę globalne zasady, że jest ona stosowana do wszystkich użytkowników, wybierz etykietę do zmiany z **usługi Azure Information Protection — globalne zasady** bloku oraz wszelkich kolejnych blokach wedle potrzeb. Aby zmienić etykietę z [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy, najpierw wybierz **zakres zasad** z **zasady** zaznaczenia menu. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 
     Wyjątek stanowi sytuacja, w której chcesz zmienić kolejność etykiet. Operację przeprowadza się w bloku zasad pochodzącym z zasad globalnych lub wybranych przez Ciebie zasad o określonym zakresie: kliknij etykietę prawym przyciskiem myszy lub wybierz menu kontekstowe etykiety, a następnie wybierz opcję **Przenieś w górę** lub **Przenieś w dół**.
 

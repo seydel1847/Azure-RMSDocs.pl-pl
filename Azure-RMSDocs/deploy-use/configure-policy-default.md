@@ -4,17 +4,17 @@ description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 51b5f7d332a86c16ceb6928ea99039812dd54802
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 712d273e735d2c9fc791a1f15c3f8dc9e917a1c3
+ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -44,6 +44,8 @@ Gdy te etykiety podrzędne nie są automatycznie skonfigurowany do ochrony, domy
 
 Jeśli ochrona jest stosowana do **wszyscy pracownicy** etykiety podrzędne, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
+Począwszy od 30 sierpnia 2017 tej wersji lub domyślne zasady zawiera zlokalizowane wersje etykieta nazwy i opisy. 
+
 #### <a name="more-information-about-the-recipients-only-sub-label"></a>Więcej informacji na temat odbiorców tylko etykieta podrzędna
 
 Użytkownicy widzą tę etykietę tylko w programie Outlook. Nie widzą tę etykietę w programie Word, Excel, PowerPoint lub w Eksploratorze plików. 
@@ -68,16 +70,16 @@ Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj 
 |-------------------------------|---------------------------|-----------------|
 |Poufne\Wszyscy pracownicy|Dane poufne, które wymagają ochrony, możliwe do wyświetlenia przez wszystkich pracowników z pełnymi uprawnieniami. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[1]](#footnote-1)|
 |Poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Poufne \ odbiorców|Dane poufne wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: nie przesyłaj dalej|
+|Poufne \ odbiorców|Dane poufne wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
 |Wysoce poufne\Wszyscy pracownicy|Wysoce poufne dane, dla których wszyscy pracownicy mają uprawnienia do wyświetlania, edycji i udzielania odpowiedzi dla tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[2]](#footnote-2)|
 |Wysoce poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Poufny \ odbiorców|Ściśle poufnych danych wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: nie przesyłaj dalej|
+|Poufny \ odbiorców|Ściśle poufnych danych wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
 
 ###### <a name="footnote-1"></a>Przypis 1
-Ustawienia ochrony za pomocą szablonu domyślnej **poufne \ wszyscy pracownicy**.
+Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.md#default-templates), **poufne \ wszyscy pracownicy**.
 
 ###### <a name="footnote-2"></a>Przypis 2 
-Ustawienia ochrony za pomocą szablonu domyślnej **poufny \ wszyscy pracownicy**.
+Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.md#default-templates), **poufny \ wszyscy pracownicy**.
 
 
 ### <a name="information-protection-bar"></a>Pasek usługi Information Protection

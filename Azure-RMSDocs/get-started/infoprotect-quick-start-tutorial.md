@@ -4,17 +4,17 @@ description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 9afee2da9cb6fdd787dfb6bdafe2ae64fdef9475
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: 34a20c3e83b2d3d6fde15d1226535ccb90431126
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Samouczek Szybki start dla usługi Azure Information Protection 
 
@@ -36,9 +36,11 @@ Do ukończenia tego samouczka będą potrzebne:
   > [!TIP] 
   > Jeśli potrzebujesz subskrypcji, uzyskaj ją z wyprzedzeniem, ponieważ czasami ukończenie tego procesu może wymagać trochę czasu.
 
-- Konto administratora globalnego do logowania się w portalu Azure w celu konfigurowania zasad usługi Azure Information Protection. To konto musi mieć również adres e-mail i działającą usługę poczty e-mail (na przykład Exchange Online lub Exchange Server).
+- Konto administratora globalnego lub konto administratora zabezpieczeń do logowania do portalu Azure, aby skonfigurować zasady usługi Azure Information Protection. To konto musi również mieć adres e-mail i działającą usługę poczty e-mail, takich jak Exchange Online.
 
-- Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowana usługa Office 365 ProPlus z aplikacjami w wersji 2016 lub 2013, pakiet Office Professional Plus 2016, Office Professional Plus 2013 z dodatkiem Service Pack 1 lub Office Professional Plus 2010 z dodatkiem Service Pack 2. Wymagane jest zalogowanie do aplikacji pakietu Office za pomocą konta w chmurze.
+- Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowana usługa Office 365 ProPlus z aplikacjami w wersji 2016 lub 2013, pakiet Office Professional Plus 2016, Office Professional Plus 2013 z dodatkiem Service Pack 1 lub Office Professional Plus 2010 z dodatkiem Service Pack 2. 
+    
+    Aby używać tych aplikacji z usługi Azure Information Protection, musi mieć [subskrypcji usługi Office 365, która obejmuje, za pomocą usługi Azure Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Na przykład Office 365 E3 lub Office 365 E5 subskrypcji. Korzystając z licencji z tej subskrypcji, możesz muszą być podpisane do aplikacji pakietu Office.
 
 Zaczynamy!
 

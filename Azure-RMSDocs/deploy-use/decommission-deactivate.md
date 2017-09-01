@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sytuacji, gdy nie chcesz już u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 277630708fb1d88d59b418146d0e42615ebf495c
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: bebc3bf5593c2e8d166645b6cc18ad02d739d9ba
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>Likwidowanie i dezaktywowanie usługi Azure Rights Management
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 07/31/2017
 
 Czy organizacja chroni zawartość za pomocą usługi Azure Rights Management z usługi Azure Information Protection kontroli są zawsze. Jeśli zdecydujesz, że nie chcesz używać tej usługi ochrony informacji, możesz mieć pewność, że nie można zablokować zawartość, która była wcześniej chroniona.
 
-Jeśli nie musisz mieć ciągłego dostępu do wcześniej chronionej zawartości, możesz po prostu dezaktywować usługę i zaczekać, aż subskrypcja usługi Azure Information Protection wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi Azure Information Protection zakończyło się przed wdrożeniem jej w środowisku produkcyjnym.
+Jeśli nie potrzebujesz nieprzerwanego dostępu do wcześniej chronionej zawartości, należy dezaktywować usługę i subskrypcja usługi Azure Information Protection wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi Azure Information Protection zakończyło się przed wdrożeniem jej w środowisku produkcyjnym.
 
 Jednak jeśli wdrożeniu usługi Azure Information Protection w środowisku produkcyjnym i chronione dokumenty i wiadomości e-mail, upewnij się, czy masz kopię klucza dzierżawy usługi Azure Information Protection, aby zdezaktywować usługę Azure Rights Management. Upewnij się, że masz kopię klucza przed wygaśnięciem subskrypcji, aby upewnić się, że mogą zachować dostęp do zawartości, która była chroniona przez usługę Azure Rights Management Po dezaktywowaniu tej usługi. W przypadku użycia rozwiązania BYOK (Bring Your Own Key) umożliwiającego generowanie własnego klucza i zarządzanie nim w module HSM będziesz już mieć klucz dzierżawy usługi Azure Information Protection. Jeśli jednak był to klucz zarządzany przez firmę Microsoft (opcja domyślna), zapoznaj się z instrukcjami dotyczącymi eksportowania klucza dzierżawy w artykule [Operacje dotyczące klucza dzierżawy usługi Azure Rights Management](operations-tenant-key.md).
 
@@ -67,29 +67,15 @@ Wykonaj kroki jednej z poniższych procedur, aby zdezaktywować usługę [!INCLU
 
 Teraz powinien pojawić się komunikat **Usługa Rights Management nie została aktywowana** oraz opcja jej aktywowania.
 
-#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>Aby zdezaktywować usługę Rights Management w klasycznym portalu Azure
-
-1.  Zaloguj się do [klasycznego portalu Azure](http://go.microsoft.com/fwlink/p/?LinkID=275081).
-
-2.  W okienku po lewej stronie kliknij opcję **ACTIVE DIRECTORY**.
-
-3.  Na stronie **Active Directory** kliknij pozycję **RIGHTS MANAGEMENT**.
-
-4.  Upewnij się, że Twoja nazwa dzierżawy jest zaznaczona, kliknij przycisk **DEZAKTYWUJ**, a następnie potwierdź działanie.
-
-**STAN USŁUGI RIGHTS MANAGEMENT** powinien być teraz ustawiony na wartość **Nieaktywna**, a opcja **DEZAKTYWUJ** zostaje zastąpiona opcją **AKTYWUJ**.
-
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>Aby zdezaktywować usługę Rights Management w portalu Azure
 
-Ta metoda jest obecnie w przeglądzie.
-
-1. Jeśli jeszcze tego nie zrobiono, otwórz nowe okno przeglądarki i zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Na początkowej **usługi Azure Information Protection** bloku, wybierz opcję **ustawienia usługi RMS (wersja zapoznawcza)**. 
+2. Na początkowej **usługi Azure Information Protection** bloku, wybierz opcję **ustawienia RMS**. 
 
-3.  Na **usługi Azure Information Protection — ustawienia usługi RMS (wersja zapoznawcza)** bloku, wybierz opcję **Dezaktywuj**. Wybierz **tak** o potwierdzenie wyboru.
+3.  Na **usługi Azure Information Protection — ustawienia RMS** bloku, wybierz opcję **Dezaktywuj**. Wybierz **tak** o potwierdzenie wyboru.
 
 Wyświetla pasek informacji **dezaktywacji zakończyło się pomyślnie** i **Dezaktywuj** zastąpione programem **Aktywuj**. 
 

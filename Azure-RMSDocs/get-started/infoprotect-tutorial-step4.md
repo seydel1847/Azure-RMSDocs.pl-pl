@@ -4,17 +4,17 @@ description: "Krok 4 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
 
@@ -54,24 +54,23 @@ Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykie
 
 Tym razem po wyświetleniu monitu wpisz komentarz o treści „Ten dokument nie wymaga klasyfikacji” i kliknij przycisk **Potwierdź**.  
 
-Zobaczysz, że wartość opcji **Ważność** zmieni się na **Nie ustawiono**, która jest wartością wyświetlaną początkowo, przed ustawieniem etykiety domyślnej:
-
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — usuwanie klasyfikacji](../media/sensitivity-not-setv2.png)
-
+Zostanie wyświetlony **czułości** wartością wyświetlaną **Nieustawione**, która jest, co użytkownicy widzą początkowo przed ustawieniem etykiety domyślnej.
 
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Aby wyświetlić monit zalecający etykietowanie i automatyczne włączanie ochrony
 
 1. W dokumencie programu Word wpisz poprawny numer karty kredytowej, na przykład: **4242-4242-4242-4242**. 
 
-2. Zapisz dokument (użyj dowolnej nazwy pliku i dowolnej lokalizacji). 
+2. Zapisz lokalnie, dokument z żadną nazwą pliku. 
 
 3. Teraz zostanie wyświetlony monit o zastosowanie etykiety, która została skonfigurowana do ochrony w przypadku wykrycia numerów kart kredytowych. Jeśli nie zgadzamy się z zaleceniem, nasze ustawienie zasad umożliwia nam jego odrzucenie po wybraniu pozycji **Odrzuć**. Przekazanie zalecenia, jednocześnie umożliwiając użytkownikowi zastąpienie go, pomaga zmniejszyć liczbę fałszywych alarmów podczas korzystania z automatycznej klasyfikacji. W przypadku tego samouczka kliknij pozycję **Zmień teraz**.
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit z zaleceniem klasyfikacji](../media/change-nowv2.png)
 
-    Poza brakiem w dokumencie informacji o zastosowaniu skonfigurowanej etykiety (na przykład **Poufne\Wszyscy pracownicy**) natychmiast widoczny jest znak wodny z nazwą organizacji na całej stronie oraz stopka **Sklasyfikowane jako poufne**. 
+    Oprócz dokument teraz zastosowana naszą skonfigurowanych etykietę (na przykład **poufne \ Finance**), natychmiast zobaczyć znak wodny z nazwą organizacji na stronie i w stopce  **Sklasyfikowanych jako poufne** jest również zastosowane. 
 
-    Dokument jest również chroniony za pomocą podanego szablonu Azure Rights Management, co można potwierdzić, klikając kartę **Plik** i wyświetlając informację **Ochrona dokumentu**. Jeśli używany jest domyślny szablon Poufne, zostaną wyświetlone informacje, że zasięg dokumentu jest ograniczony do użytkowników wewnętrznych (użytkownicy spoza organizacji nie będą mogli otworzyć dokumentu) i jego zawartość nie może być kopiowana ani drukowana. Jako właściciel dokumentu możesz skopiować i wydrukować dokument, ale jeśli wyślesz go pocztą e-mail do innego użytkownika w organizacji, nie będzie on mógł wykonać tych czynności.
+    Dokument jest również chroniony za pomocą uprawnienia określone dla tej etykiety. Można potwierdzić, że dokument jest chroniony przez kliknięcie przycisku **pliku** karcie i wyświetlić informacje o **ochrona dokumentu**. Zobaczysz, że dokument jest chroniony przez **poufne \ Finance** i opis etykiety. 
+    
+    Ze względu na konfigurację ochrony etykiety tylko pracownicy mogą otworzyć dokument, a niektóre akcje są ograniczone do nich. Na przykład ponieważ nie ma Print i kopii i Wyodrębnij zawartość uprawnień, ich nie można drukować dokument lub kopiowania z niego. Takie ograniczenia pomoc, aby zapobiec utracie danych. Jako właściciel dokumentu można wydrukować go i skopiuj z niego, ale jeśli dokument jest e-mail do innego użytkownika w organizacji, ich nie może wykonać te akcje.
 
 4. Możesz zamknąć ten dokument.
 
