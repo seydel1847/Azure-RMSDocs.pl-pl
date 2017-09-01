@@ -4,7 +4,7 @@ description: "Masz pytanie związane z usługą Azure Information Protection, kt
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 80efd633bc814af1ac28e4b6bf2d0b3062b27d01
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2ac8211b338b9d35bb7962455a117d02f9c1fa32
+ms.sourcegitcommit: 4b7f025e9f78d25c6f3079cceb42bc33f3f3a612
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -30,19 +30,15 @@ Kilka minut wystarczy do zapoznania się z naszym samouczkiem Szybki start: [Sam
 
 W blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) i witrynie [Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) będą się pojawiać ogłoszenia o dostępności dodatkowych funkcji i możliwości klasyfikacji. W bieżącej wersji występuje kilka ograniczeń, m.in.:
 
-- Nazwy etykiet i etykietki narzędzi są obsługiwane tylko w jednym języku. Obsługa wielu języków jest obecnie dostępna w wersji zapoznawczej. Więcej informacji można znaleźć w sekcji [Konfigurowanie etykiet w różnych językach](../deploy-use/configure-policy-languages.md).
+- Nazwy etykiet i etykietki narzędzi są obsługiwane tylko w jednym języku. Obsługa wielu języków jest obecnie dostępna w wersji zapoznawczej. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety i szablony dla różnych języków](../deploy-use/configure-policy-languages.md).
 
 - Brak centralnego rejestrowania dla funkcji klasyfikacji i etykietowania.
 
-- Warunkami klasyfikacji automatycznej muszą być frazy lub wzorce.
-
-- Brak możliwości etykietowania dla aplikacji pakietu Office dla komputerów Mac i urządzeń przenośnych (z systemami iOS lub Android) oraz aplikacji sieci Web pakietu Office (Office Online).
+- Mając na uwadze możliwości w aplikacji pakietu Office dla urządzeń przenośnych (iOS i Android) i komputerów Mac lub aplikacji sieci web pakietu Office (Office Online).
 
 - Brak integracji klasyfikacji i etykietowania z programem Exchange Online i usługą SharePoint Online.
 
-- Zestaw SDK dla deweloperów i partnerów nie obejmuje jeszcze klasyfikacji i etykietowania.
-
-W wersji z lutego usunięto wiele wcześniejszych ograniczeń. Aby uzyskać więcej informacji, zobacz [wpis w blogu](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/).
+Żądanie nowych funkcji oraz oddawać głosy na żądania, odwiedzając [witryny User Voice](https://msip.uservoice.com/) usługi Azure Information Protection.
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>Czy muszę być administratorem globalnym, aby konfigurować klasyfikację i etykiety?
 
