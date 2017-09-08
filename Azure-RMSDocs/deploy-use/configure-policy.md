@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 23f41199f03bb6a6530f668c20c030b52613d3c2
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zas
 
 ## <a name="subscription-support"></a>Obsługa subskrypcji
 
-Zasady usługi Azure Information Protection obsługują różne poziomy subskrypcji:
+Usługa Azure Information Protection obsługuje różne poziomy subskrypcji:
 
 - Subskrypcja P2 usługi Azure Information Protection: obsługa wszystkich funkcji klasyfikacji, etykietowania i ochrony.
 
@@ -34,13 +34,16 @@ Zasady usługi Azure Information Protection obsługują różne poziomy subskryp
 
 - Usługa Office 365 obejmująca usługę Azure Rights Management: obsługa ochrony, ale nie klasyfikacji i etykietowania.
 
-Opcje, które wymagają subskrypcji P2 usługi Azure Information Protection, są teraz identyfikowane w portalu.
+Opcje, które wymagają subskrypcji usługi Azure Information Protection P2 są identyfikowane w portalu.
 
-Jeśli masz kombinację subskrypcji dla użytkowników w Twojej dzierżawie, spoczywa na Tobie obowiązek upewnienia się, że zasady usługi Azure Information Protection, które użytkownicy pobierają, nie zawierają tych opcji konfiguracji, do których używania ich konto nie ma licencji. Podczas konfigurowania opcji, w przypadku których nie wszyscy użytkownicy mają licencję, użyj zasad z określonym zakresem, tak aby użytkownicy nie byli skonfigurowani do używania tych funkcji, na których używanie mają licencję.
+Jeśli Twoja organizacja ma różnych subskrypcji, jest obowiązek upewnij się, że użytkownicy nie używają funkcji, które konta nie jest licencjonowany do użycia. Azure Information Protection, klient nie nie licencji sprawdzanie i wymuszania. Po skonfigurowaniu opcji, które nie wszyscy użytkownicy mają licencji, użyj zakres zasady lub ustawienia rejestru, aby upewnić się, że Twoja organizacja jest zgodność z licencji:
+
+- **Jeśli Twoja organizacja ma mieszane licencje usługi Azure Information Protection P1 i Azure Information Protection P2**: dla użytkowników, którzy mają P2 licencji, Utwórz i użyj jednej lub kilku [zakres zasad](configure-policy-scope.md) podczas konfigurowania opcji które wymagają licencji usługi Azure Information Protection P2. Upewnij się, że globalne zasady zawierają opcje, które wymagają licencji usługi Azure Information Protection P2.
+
+- **Jeśli Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale w przypadku niektórych użytkowników ma tylko licencji dla usługi Office 365 obejmującą usługę Azure Rights Management**: dla użytkowników, którzy nie mają licencji usługi Azure Information Protection Edytuj rejestr na komputerach, bez pobierania zasad usługi Azure Information Protection. Aby uzyskać instrukcje, zobacz Przewodnik administratora do następujących dostosowania: [Wymuś ochrony trybu tylko gdy organizacja ma mieszane licencje](../rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses).
 
 Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja jest potrzebna do korzystania z usługi Azure Information Protection i jakie funkcje obejmuje ta subskrypcja?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
-Aby uzyskać więcej informacji o sposobie konfigurowania zasad z określonym zakresem, zobacz temat [Konfigurowanie zasad dla konkretnych użytkowników poprzez użycie zasad o określonym zakresie](configure-policy-scope.md).
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Jak skonfigurować zasady usługi Azure Information Protection
 
