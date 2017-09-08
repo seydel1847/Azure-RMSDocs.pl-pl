@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: ebfd7ce4266061cef3099fb8fb096c95b01e6fb4
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Ta usługa zapewnia ochronę dokumentów oraz wiadomości e-mail organizacji i może rejestrować wszystkie obsługiwane żądania, w tym żądania użytkowników, akcje wykonywane przez administratorów usługi oraz akcje wykonywane przez operatorów firmy Microsoft w celu obsługi wdrożenia usługi Azure Information Protection.
+Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Udostępnia ona ochrony danych organizacji dokumentów i wiadomości e-mail i może rejestrować wszystkie żądania do niego. Gdy użytkownicy ochrony dokumentów i wiadomości e-mail, a także korzystać z tej zawartości, akcje wykonywane przez administratorów z tej usługi i akcje wykonywane przez operatorów firmy Microsoft do obsługi wdrożenia usługi Azure Information Protection zawierać te żądania. 
 
 Dzienniki usługi Azure Rights Management można następnie wykorzystać na potrzeby następujących scenariuszy biznesowych:
 
@@ -40,12 +40,18 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
 
     W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Korzystanie z funkcji rejestrowania pozwala odpowiedzieć na tego rodzaju pytania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
-> [!NOTE]
-> Jeśli interesuje Cię tylko rejestrowanie zadań administracyjnych dotyczących usługi Azure Rights Management i nie chcesz śledzić korzystania z usługi Rights Management przez użytkowników, możesz użyć polecenia cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) programu Windows PowerShell dla usługi Azure Rights Management.
-> 
-> Możesz także skorzystać z klasycznego portalu Azure w celu uzyskania podstawowych raportów użycia, które obejmują takie informacje, jak **podsumowanie usługi RMS**, **aktywni użytkownicy usługi RMS**, **platforma urządzeń usługi RMS** i **użycie aplikacji usługi RMS**. Aby uzyskać dostęp do tych raportów z klasycznego portalu Azure, kliknij opcję **Active Directory**, wybierz i otwórz katalog, a następnie kliknij opcję **RAPORTY**,
+Oprócz tego rejestrowania użycia, również są następujące opcje rejestrowania:
 
-Więcej informacji na temat rejestrowania użycia usługi Azure Rights Management można znaleźć w sekcjach poniżej.
+|Opcja rejestrowania|Opis|
+|----------------|---------------|
+|Administrator dziennika|Rejestruje zadania administracyjne dla usługi Azure Rights Management. Na przykład, jeśli usługa jest wyłączone, po włączeniu funkcji administratorów i użytkowników są uprawnienia administratora delegowanego do usługi. <br /><br />Aby uzyskać więcej informacji, zobacz polecenie cmdlet programu PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
+|Raporty sieci Web|Uzyskania podstawowych raportów użycia z klasycznego portalu Azure: **Podsumowanie usługi RMS**, **aktywni użytkownicy usługi RMS**, **platforma urządzeń usługi RMS**, i **użycie aplikacji usługi RMS**. <br /><br />Aby uzyskać dostęp do tych raportów z klasycznego portalu Azure, kliknij przycisk **usługi Active Directory**, wybierz i otwórz katalog, a następnie kliknij przycisk **raporty**.|
+|śledzenie dokumentów|Umożliwia użytkownikom śledzenie i odwoływanie swoje dokumenty, które mają one śledzone klienta Azure Information Protection lub aplikacji do udostępniania usług RMS. Administratorzy globalni mogą również śledzić te dokumenty w imieniu użytkowników. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
+|Dzienników zdarzeń klienta|Działanie użycia dla klienta usługi Azure Information Protection zarejestrowane w lokalnym systemie Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia dla klienta usługi Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
+|Pliki dziennika klienta|Rozwiązywanie problemów z f dzienniki lub klienta Azure Information Protection znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla Microsoft Support.|
+
+
+Użyj poniższych sekcji, aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management. 
 
 ## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Włączanie rejestrowania użycia usługi Azure Rights Management
 Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączone dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure Rights Management przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 

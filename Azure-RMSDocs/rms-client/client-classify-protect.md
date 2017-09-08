@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
-ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
+ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
+ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -85,8 +85,6 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
     - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz poziom dostępu dla poszczególnych osób.
 
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
-    
-    Jeśli bieżąca wersja klienta usługi Azure Information Protection, możesz także użyć **Wybierz użytkowników, grup lub organizacji** przycisku. Ten przycisk otwiera **Wybieranie użytkowników lub grup** okno dialogowe dla lokalnej usługi Active Directory. Jeśli użytkownicy lub grupy, które ma zostać określony w usłudze Active Directory, można wyszukiwać i wybierać w tym oknie dialogowym. Aby użyć tej opcji, komputer musi być podłączony do sieci wewnętrznej, komputer musi należeć do domeny i musi mieć lokalne usługi Active Directory. Jeśli te warunki nie są spełnione, zostanie wyświetlony następujący komunikat: **program nie może otworzyć okno dialogowe wymagane, ponieważ nie można odnaleźć żadnych lokalizacji.**
         
     - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 
@@ -131,7 +129,7 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
     
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
     
-    Alternatywnie można użyć **Wybierz użytkowników, grup lub organizacji** przycisku Wybierz z książki adresowej użytkowników lub grup. Jeśli bieżąca wersja klienta usługi Azure Information Protection, ten przycisk otwiera **Wybieranie użytkowników lub grup** okno dialogowe dla lokalnej usługi Active Directory. Jeśli użytkownicy lub grupy, które ma zostać określony w usłudze Active Directory, można wyszukiwać i wybierać w tym oknie dialogowym. Aby użyć tej opcji, komputer musi być podłączony do sieci wewnętrznej, komputer musi należeć do domeny i musi mieć lokalne usługi Active Directory. Jeśli te warunki nie są spełnione, zostanie wyświetlony następujący komunikat: **program nie może otworzyć okno dialogowe wymagane, ponieważ nie można odnaleźć żadnych lokalizacji.**
+    Alternatywnie można ikonę książki adresowej wybierz z książki adresowej użytkowników lub grupy.
         
     - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
     
