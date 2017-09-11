@@ -103,7 +103,7 @@ Prawa użytkowania są wyświetlane w górnej części dokumentu na transparenci
 
 1.  W programie Outlook utwórz wiadomość e-mail, która jest skierowana do odbiorcy w Twojej organizacji.
 
-2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub ** \<nazwa firmy > — poufne**, lub ** \<nazwa firmy > — poufne tylko do wyświetlania**.
+2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub **\<nazwa firmy > — poufne**, lub **\<nazwa firmy > — poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
@@ -115,7 +115,7 @@ Na przykład, jeśli wiadomość e-mail jest chroniona za pomocą opcji **Nie pr
 
 1.  W programie Outlook w sieci Web utwórz wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
-2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej** lub **nie odpowiadaj wszystkim**. Lub, ** \<nazwa firmy > — poufne** lub ** \<nazwa firmy > — poufne tylko wyświetlić**.
+2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej** lub **nie odpowiadaj wszystkim**. Lub,  **\<nazwa firmy > — poufne** lub  **\<nazwa firmy > — poufne tylko wyświetlić**.
 
 3.  Wyślij wiadomość.
 
