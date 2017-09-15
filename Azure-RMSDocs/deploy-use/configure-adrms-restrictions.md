@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
+ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -85,7 +85,15 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
     
     - Minimalna wersja systemu Windows Server 2012 R2: wymagana dla środowisk produkcyjnych; w celach związanych z testowaniem lub oceną można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
     
-    - Jeden klaster główny usług AD RMS.
+    - Jeden z następujących topologii:
+        
+        - Pojedynczy las z jednego klastra głównego usług AD RMS. 
+        
+        - Wiele lasów z niezależnych klastrów głównego usług AD RMS i użytkownicy nie mają dostępu do zawartości, która jest chroniona przez użytkowników w innych lasach.
+        
+        - Wiele lasów z usługami AD RMS klastrów w każdej z nich. Każdy klaster usług AD RMS współużytkuje adres URL licencjonowania, który wskazuje do tego samego klastra usług AD RMS. W tym klastrze usług AD RMS należy zaimportować wszystkie certyfikaty zaufanego użytkownika domeny ze wszystkich innych klastrów usług AD RMS. Aby uzyskać więcej informacji na temat tej topologii Zobacz [zaufanej domeny użytkownika] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
+        
+    Jeśli masz wiele klastrów usług AD RMS w oddzielnych lasach, usuń wszystkich etykiet w ramach globalnych zasad, które stosują ochronę HYOK (AD RMS) i skonfiguruj [zakres zasad](configure-policy-scope.md) dla każdego klastra. Następnie przypisać użytkowników dla każdego klastra, do jego zakresie zasad, upewniając się, nie używaj grup, które umożliwiałyby użytkownik jest przypisany do więcej niż jedna zasada zakresami. Wynik powinien być, że każdy użytkownik ma etykiety dla jednego klastra usług AD RMS. 
     
     - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): tryb można potwierdzić, sprawdzając właściwości klastra usług AD RMS, **ogólne** kartę.
     

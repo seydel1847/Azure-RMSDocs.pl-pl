@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 2f6bc027353f38e272a6765c10e770643b739d26
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: fce3c905f2f48c2723ee7f0b55ff5ddb77f6258a
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -39,7 +39,7 @@ Aby uzyskać więcej informacji na temat ochrony usługi Azure Rights Management
 > [!IMPORTANT]
 > Aby skonfigurować etykietę w celu zastosowania tej ochrony, usługi Azure Rights Management musi być aktywowany dla Twojej organizacji. Jeśli jeszcze nie zostało to zrobione, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
-Gdy etykieta dotyczy ochrony, chronionego dokumentu nie nadaje się do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące chronionych plików: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur i zbieranie elektronicznych materiałów dowodowych. 
+Gdy etykieta dotyczy ochrony, chronionego dokumentu nie nadaje się do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące chronionych plików: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur, zbieranie elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP). 
 
 Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochrony wiadomości e-mail, programu Exchange nie trzeba konfigurować do zarządzania prawami do informacji (IRM). Jednak dopóki program Exchange nie zostanie skonfigurowany dla usługi IRM, nie będzie można uzyskać pełnej funkcjonalności podczas korzystania z ochrony usługi Azure Rights Management w połączeniu z programem Exchange. Na przykład użytkownicy nie będą mogli wyświetlać chronionych wiadomości e-mail na telefonach komórkowych ani w aplikacji Outlook w sieci Web. Chronione wiadomości e-mail nie będą też indeksowane do wyszukiwania ani nie będzie można skonfigurować programu Exchange Online DLP pod kątem ochrony zarządzania prawami. Informacje o konfigurowaniu programu Exchange do obsługi tych dodatkowych scenariuszy można znaleźć w następujących zasobach:
 
@@ -73,8 +73,9 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
     
     ![Konfigurowanie ochrony dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar-configured.png)
 
-6. W bloku **Ochrona** wybierz opcję **Azure RMS** lub **HYOK (AD RMS)**.     
-    W większości przypadków wybierz **usługi Azure RMS** dla ustawienia uprawnień. Nie należy wybierać usługi **HYOK (AD RMS)**, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji rozwiązania „*zachowaj własny klucz*” (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md). Aby kontynuować konfigurację dla funkcji HYOK (AD RMS), przejdź do kroku 10.
+6. Na **ochrony** bloku, wybierz opcję **usługi Azure RMS** lub **Azure (klucz w chmurze)**, lub wybierz **HYOK (AD RMS)**. Pierwsza opcja trwa zmieniana.
+    
+    W większości przypadków wybierz **usługi Azure RMS** lub **Azure (klucz w chmurze)** dla ustawienia uprawnień. Nie należy wybierać usługi **HYOK (AD RMS)**, chyba że użytkownik przeczytał i zrozumiał warunki wstępne i ograniczenia towarzyszące tej konfiguracji rozwiązania „*zachowaj własny klucz*” (HYOK, hold your own key). Aby uzyskać więcej informacji, zobacz [Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS](configure-adrms-restrictions.md). Aby kontynuować konfigurację dla funkcji HYOK (AD RMS), przejdź do kroku 10.
     
 7. Wybierz jedną z następujących opcji:
     
@@ -88,15 +89,15 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
         
         Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: Ta opcja wymaga wersja klienta usługi Azure Information Protection. Gdy ta opcja jest ustawiona, a użytkownicy mają klienta w wersji zapoznawczej, etykiety jest wyświetlany w tych aplikacjach. Efekty, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe, które użytkownicy mogą wybierać uprawnienia niestandardowe. W tym oknie dialogowym Użytkownicy muszą określić uprawnienia, użytkowników lub grup i daty wygaśnięcia. Upewnij się, że użytkownicy mają instrukcje i wytyczne jak podać te wartości.
 
-8. W przypadku wybrania **wybierz szablon wstępnie zdefiniowany** dla **usługi Azure RMS**, kliknij pole listy rozwijanej i wybierz [szablonu](../deploy-use/configure-policy-templates.md) chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety. Nie widzieć zarchiwizowane szablony lub szablonów, które zostały już wybrane do innej etykiety.
+8. W przypadku wybrania **wybierz szablon wstępnie zdefiniowany** dla **usługi Azure RMS** lub **Azure (klucz w chmurze)**, kliknij pole listy rozwijanej i wybierz [szablonu](../deploy-use/configure-policy-templates.md)chcesz użyć do ochrony dokumentów i wiadomości e-mail przy użyciu tej etykiety. Nie widzieć zarchiwizowane szablony lub szablonów, które zostały już wybrane do innej etykiety.
     
     W przypadku wybrania **szablon dla działu**, lub jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
     
     - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
         
-        Należy pamiętać, że wszystkie opublikowane szablony są zawsze wyświetlane, nawet jeśli konfigurujesz zakresie zasad. Na przykład konfigurujesz zasady o określonym zakresie dla grupy Marketing. Nie są ograniczone do szablonów, które należą do grupy Marketing zakresu szablonów usługi Azure RMS, które można wybrać i można wybrać szablon dla działu, którego nie można użyć wybranych użytkowników. W celu ułatwienia konfiguracji i zminimalizowania potrzeby rozwiązywania problemów należy wziąć pod uwagę nadanie szablonowi dla działu nazwy zgodnej z etykietą w Twoich zasadach o określonym zakresie. 
+        Należy pamiętać, że wszystkie opublikowane szablony są zawsze wyświetlane, nawet jeśli konfigurujesz zakresie zasad. Na przykład konfigurujesz zasady o określonym zakresie dla grupy Marketing. Szablony, które można wybrać nie są ograniczone do szablonów, które należą do grupy Marketing zakresu i można wybrać szablon dla działu, którego nie można użyć wybranych użytkowników. W celu ułatwienia konfiguracji i zminimalizowania potrzeby rozwiązywania problemów należy wziąć pod uwagę nadanie szablonowi dla działu nazwy zgodnej z etykietą w Twoich zasadach o określonym zakresie. 
             
-9. W przypadku wybrania **ustawić uprawnienia** dla **usługi Azure RMS**, ta opcja umożliwia skonfigurowanie tych samych ustawień, które można skonfigurować w szablonie. 
+9. W przypadku wybrania **ustawić uprawnienia** dla **usługi Azure RMS** lub **Azure (klucz w chmurze)**, ta opcja umożliwia skonfigurowanie tych samych ustawień, które można skonfigurować w szablonie. 
     
     Wybierz **dodać uprawnienia**i na **dodać uprawnienia** bloku, wybierz pierwszy zbioru użytkowników i grupy, które będą mieć prawa do korzystania z zawartości, które będą chronione za pomocą wybranej etykiety:
     
@@ -143,7 +144,15 @@ Zanim użytkownicy będą mogli stosować w programie Outlook etykiety do ochron
 
 12. W bloku **Etykieta** kliknij przycisk **Zapisz**.
 
-13. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+13. Na **usługi Azure Information Protection** bloku, użyj **ochrony** kolumny, aby upewnić się, że etykiety są obecnie wyświetlane ustawienia ochrony, który ma:
+    
+    - **Usługa Azure RMS** lub **HYOK (AD RMS)**, lub znacznik wyboru, jeśli skonfigurowano ochrony. 
+    
+    - **Usuń ochronę** lub znak x do oznaczania anulowania, jeśli skonfigurowano etykiety w celu usunięcia ochrony.
+    
+    - Pole puste, gdy nie ustawiono ochrony. 
+
+13. Aby udostępnić zmiany użytkownikom, kliknij przycisk **Opublikuj**.
 
 ## <a name="next-steps"></a>Następne kroki
 

@@ -4,7 +4,7 @@ description: "Jak aplikacje pakietu Office przez użytkownika końcowego, takich
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e4d753c6c58394c257466269c5a4f50df6c6fc4
-ms.sourcegitcommit: 869e42f35a851c412164a71b1f657621af07b2f5
+ms.openlocfilehash: ede24547a01bc38e528ce02dac9abe0ade396c2d
+ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -48,7 +48,7 @@ Korzystając z usługi Exchange Online lub Exchange Server, można skonfigurowa�
 
 -   **Reguły transportu** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail wiadomości. Te zasady są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwala użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail wysyłanych przez urządzenia przenośne. Ponadto te zasady nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
 
--   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Więcej informacji zawiera artykuł [Data loss prevention](https://technet.microsoft.com/library/jj150527(v=exchg.160).aspx) (Ochrona przed utratą danych) dostępny w bibliotece programu Exchange.
+-   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) w bibliotece programu Exchange.
 
 -   **Szyfrowanie wiadomości usługi Office 365** korzysta z reguł transportu do wysyłania zaszyfrowanych wiadomości e-mail do osób spoza firmy, czy wiadomości e-mail mogą być odczytywane w przeglądarce z interfejsem podobnym do programu Outlook w sieci web. W firmowych, zaszyfrowanych wiadomościach e-mail można dostosować tekst klauzuli wyłączenia odpowiedzialności i tekst nagłówka, a nawet dodać logo firmy. Więcej informacji zawiera artykuł [Szyfrowanie wiadomości usługi Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) dostępny w witrynie internetowej pakietu Office.
 
@@ -82,7 +82,9 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > 
 > - Pliki, które mają rozszerzenie nazwy pliku ppdf chronione pliki PDF nie są obsługiwane. Pliki, które mają rozszerzenie nazwy pliku PDF i które są natywnie chronione przez usługę Rights Management są obsługiwane, gdy używasz czytnika plików PDF z natywną obsługą usługi Rights Management.
 > 
-> - Jeśli chroniony plik, który następnie przekazać do biblioteki programu SharePoint lub usługi OneDrive, następujące nie będą działać z tym plikiem: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur i zbieranie elektronicznych materiałów dowodowych.
+> - Współtworzenie nie jest obsługiwane. Ponieważ musi wyewidencjonować i pobierania dokumentu w bibliotece chronione usługa IRM, jedna osoba może go edytować w czasie.
+
+Dla bibliotek, które nie są IRM chronionego, jeśli chroniony plik, który następnie przekazać do programu SharePoint lub usługi OneDrive, następujące nie współpracujesz z tego pliku: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur, zbieranie elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP).
 
 Podczas korzystania z ochrony za pomocą usługi IRM z programem SharePoint usługa Azure Rights Management stosuje ograniczenia dotyczące użycia i szyfrowanie danych względem dokumentów w trakcie ich pobierania z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
