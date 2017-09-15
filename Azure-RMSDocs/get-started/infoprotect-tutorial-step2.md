@@ -4,17 +4,17 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: dbe198f84ed092f815e2c419d039d4f926fb5892
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -67,7 +67,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     ![Ochrony skonfigurowane dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-4. Na **ochrony** bloku, upewnij się, że **usługi Azure RMS** jest zaznaczone oraz że **Ustaw uprawnienia** jest zaznaczone. Następnie wybierz **dodać uprawnienia**.
+4. Na **ochrony** bloku, upewnij się, że **usługi Azure RMS** lub **Azure (klucz w chmurze)** jest zaznaczone. Ta opcja jest w trakcie zmieniana. Upewnij się, że **Ustaw uprawnienia** jest zaznaczony. Następnie wybierz **dodać uprawnienia**.
 
 5. Na **dodać uprawnienia** bloku, wybierz opcję **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobacz następującą opcję, aby wybrać:
     
@@ -113,7 +113,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     Kliknij przycisk **zapisać** aby powrócić do **etykietę podrzędną** bloku.
 
-10. Na **etykietę podrzędną** bloku, który zobacz **numer karty kredytowej** jest wyświetlany jako **nazwa WARUNKU**, z **1**  **WYSTĄPIENIA**:
+10. Na **etykietę podrzędną** bloku, który zobacz **numer karty kredytowej** jest wyświetlany jako **nazwa WARUNKU**, z **1** ** WYSTĄPIENIA**:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — konfigurowanie warunku karty kredytowej](../media/step2-see-condition.png)
 
@@ -123,7 +123,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
 
 13. Kliknij przycisk **zapisać** na tym **etykietę podrzędną** bloku. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
     
-    Pojawi się z nową etykietę podrzędną, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony usług Azure RMS:
+    Teraz widoczne z nową etykietę podrzędną, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Na przykład:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configuredv2.png)
     

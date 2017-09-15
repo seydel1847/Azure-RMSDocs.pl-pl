@@ -4,17 +4,17 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 09ee8587e6b254584f70dbe2475063831fd5b845
+ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -80,7 +80,13 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
 
 ## <a name="details-about-the-information-types"></a>Szczegółowe informacje dotyczące typów informacji
 
-Jeśli bieżąca wersja klienta usługi Azure Information Protection, pełną listę typów informacji są obsługiwane i Użyj typów informacji czułości zapobiegania (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office. Gdy usługi Azure Information Protection ocenia te typy informacji, nie używa ustawienia poziomu ufności DLP pakietu Office, ale jest zgodna z najniższą zaufania.  
+Jeśli bieżąca wersja klienta usługi Azure Information Protection, pełną listę typów informacji, które są widoczne w portalu są obsługiwane:
+
+- Typy informacji za pomocą usługi Office 365 wbudowane utraty zapobiegania (DLP) czułości informacji typy danych i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji na temat typów informacji, które można wybrać, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office. 
+
+- Lista typów informacji, które można wybierać z portalu Azure jest okresowo zaktualizowano wszelkich nowych dodatków pakietu Office DLP. Jednak listy nie obejmuje żadnych typów niestandardowych informacji poufnych, które zostały zdefiniowane i przekazany jako reguła pakiet Office 365 zabezpieczeń & Centrum zgodności. 
+
+- Podczas usługi Azure Information Protection typów informacji, które można wybrać, jest używane ustawienie poziomu ufności DLP pakietu Office, ale jest zgodna z najniższą zaufania.
 
 Jeśli masz bieżącej wersji ogólnodostępnej klienta następujące typy informacji obsługiwane są tylko:
 
