@@ -26,6 +26,7 @@
 ### [Konfigurowanie szablonów i zarządzanie nimi](configure-policy-templates.md)
 #### [Odświeżanie szablonów dla użytkowników](refresh-templates.md)
 #### [Informacje dotyczące programu PowerShell](configure-templates-with-powershell.md)
+#### [Migracja z klasycznego portalu Azure](migrate-portal.md)
 ### [Konfigurowanie języków](configure-policy-languages.md)
 ## [Wdrażanie łącznika usługi RMS](deploy-rms-connector.md)
 ### [Instalowanie i konfigurowanie łącznika](install-configure-rms-connector.md)
