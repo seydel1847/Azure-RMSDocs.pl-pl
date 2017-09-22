@@ -1,10 +1,10 @@
 ---
 title: "Likwidacja i dezaktywacja usługi Azure RMS"
-description: "Informacje i instrukcje dotyczące sytuacji, gdy nie chcesz już używać tego rozwiązania ochrony informacji w ramach usługi Azure Information Protection."
+description: "Informacje i instrukcje w razie użytkownik nie ma być użyty z ochrony opartej na chmurze usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1f8d7a56cec4df8f0ef50f4f83ef662ad8923f17
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: a4ed44939e9853373f272d916e0765572dc0590a
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
-# <a name="decommissioning-and-deactivating-azure-rights-management"></a>Likwidowanie i dezaktywowanie usługi Azure Rights Management
+# <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Likwidowanie i dezaktywowanie ochrony usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
@@ -75,9 +75,9 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management nie została 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
-2. Na początkowej **usługi Azure Information Protection** bloku, wybierz opcję **ustawienia RMS** lub **aktywacji ochrony**. Ta opcja jest w trakcie zmieniana. 
+2. Na początkowej **usługi Azure Information Protection** bloku, wybierz opcję **aktywacji ochrony**. 
 
-3.  Na **usługi Azure Information Protection — ustawienia RMS** lub **usługi Azure Information Protection — aktywacji ochrony** bloku, wybierz opcję **Dezaktywuj**. Wybierz **tak** o potwierdzenie wyboru.
+3.  Na **usługi Azure Information Protection — aktywacji ochrony** bloku, wybierz opcję **Dezaktywuj**. Wybierz **tak** o potwierdzenie wyboru.
 
 Wyświetla pasek informacji **dezaktywacji zakończyło się pomyślnie** i **Dezaktywuj** zastąpione programem **Aktywuj**. 
 

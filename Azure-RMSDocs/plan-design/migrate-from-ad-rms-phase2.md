@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
+ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -113,7 +113,7 @@ Otwórz sesję programu PowerShell i uruchom następujące polecenia:
 
 2. Aktywuj usługę Azure Rights Management:
     
-        Enable-Aadrmservice
+        Enable-Aadrm
 
 **Co zrobić, jeśli dzierżawa usługi Azure Information Protection została już aktywowana?** Jeśli usługa Azure Rights Management została aktywowana w Twojej organizacji, użytkownicy mogli już używać usługi Azure Information Protection do ochrony zawartości przy użyciu automatycznie generowanego klucza dzierżawy (i domyślnych szablonów) zamiast istniejących kluczy (i szablonów) z usługi AD RMS. Jest to mało prawdopodobne w przypadku komputerów, które są właściwie zarządzane w intranecie, ponieważ są one automatycznie konfigurowane na potrzeby infrastruktury usług AD RMS. Może się jednak tak zdarzyć w przypadku komputerów grupy roboczej lub komputerów, które rzadko łączą się z intranetem. Niestety zidentyfikowanie tych komputerów może być trudne, dlatego zalecamy rezygnację z aktywowania usługi przed zaimportowaniem danych konfiguracji z usług AD RMS.
 

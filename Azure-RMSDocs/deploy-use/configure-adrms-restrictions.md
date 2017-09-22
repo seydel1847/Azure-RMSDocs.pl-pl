@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/13/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
-ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
+ms.openlocfilehash: cceacbe94983e66bdde6de0947ae59b44e29a54e
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -65,13 +65,11 @@ Oprócz braku obsługi wymienionych korzyści, które można uzyskać, korzystaj
 
     Mimo że można skonfigurować etykietę **nie przesyłaj dalej** Aby użyć HYOK lub usługi Azure Rights Management, użytkownicy mogą również wybrać nie przesyłaj dalej samodzielnie. Tę opcję można wybrać przy użyciu **nie przesyłaj dalej** znajdującego się na **komunikat** karty wstążki pakietu Office lub za pomocą opcji menu programu Outlook. **Nie przesyłaj dalej** opcji menu znajduje się w **pliku** > **uprawnienia**i z **uprawnienia** przycisk z **opcje** kartę na Wstążce. 
     
-    Użytkownicy kliknij przycisk nie przesyłaj dalej, można użyć usługi Azure RMS lub AD RMS, a wybór jest deterministyczna. Gdy użytkownicy wybierają **nie przesyłaj dalej** z opcją menu programu Outlook można wybrać z usługi Azure RMS lub AD RMS, ale nie będzie wiadomo, rozwiązania do wiadomości e-mail. W obu przypadkach usług AD RMS jest używany podczas usługi Azure RMS należy używać, osoby, które są udostępniane zewnętrznie nie można otworzyć te wiadomości e-mail.
+    Klienta usługi Azure Information Protection zawsze używa usług Azure RMS, gdy użytkownicy wybierają **nie przesyłaj dalej** przycisku w programie Outlook. Jeśli to zachowanie nie jest pożądane, możesz ukryć przycisk **Nie przesyłaj dalej** w programie Outlook, konfigurując [zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
     
-    Bieżąca wersja klienta usługi Azure Information Protection zawsze używa usług Azure RMS, gdy użytkownicy wybierają **nie przesyłaj dalej** przycisku w programie Outlook. Jeśli to zachowanie nie jest pożądane, możesz ukryć przycisk **Nie przesyłaj dalej** w programie Outlook, konfigurując [zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
+    Gdy użytkownicy wybierają **nie przesyłaj dalej** z opcją menu programu Outlook można wybrać z usługi Azure RMS lub AD RMS, ale nie będzie wiadomo, rozwiązania do wiadomości e-mail. Jeśli usługi AD RMS jest używany, gdy powinna być używana usługa Azure RMS, osoby, które są udostępniane zewnętrznie nie można otworzyć te wiadomości e-mail
 
-- Dla bieżącej wersji ogólnodostępnej klienta Azure Information Protection: Jeśli użytkownicy konfigurowania uprawnień niestandardowych za pomocą usługi Azure RMS i AD RMS (HYOK) ochronę, dokumentu lub wiadomości e-mail zawsze jest chroniony przez usługę Azure Rights Management. To ograniczenie nie dotyczy bieżąca wersja klienta.
-
-- Jeśli skonfigurujesz uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików, który jest obsługiwany w bieżącej wersji preview klienta Azure Information Protection: W Eksploratorze plików, ochrona jest wykonywana przy użyciu usługi Azure RMS zamiast od ochrony HYOK (AD RMS). 
+- Jeśli skonfigurujesz uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików: W Eksploratorze plików, ochrona jest zawsze stosowana przy użyciu usług Azure RMS zamiast ochrony HYOK (AD RMS). To ograniczenie nie dotyczy bieżąca wersja klienta.
 
 - Jeśli w programie Outlook użytkownik wybierze etykietę powodującą zastosowanie ochrony AD RMS, a następnie zmieni zdanie przed wysłaniem wiadomości e-mail i wybierze etykietę, która dotyczy ochrony za pomocą usługi Azure RMS, nowo wybrana etykieta nie zostanie zastosowana. Użytkownik zobaczy następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Nie masz uprawnień do wykonania tej akcji.**
     

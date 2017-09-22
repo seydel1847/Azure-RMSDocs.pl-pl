@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
@@ -39,9 +39,11 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
     Wybór tego ustawienia powoduje, że odbiorcy będą mogli wyświetlić dokument, ale nie będą mogli go edytować ani drukować.
 
-4. W polu **Wybieranie użytkowników** wprowadź co najmniej jeden służbowy adres e-mail — tak jak w przypadku wysyłania dokumentu do osoby, z którą współpracuje organizacja. Upewnij się, że podajesz służbowe adresy e-mail, np. **janetm@contoso.com** or **p.dover@fabrikam.com**, ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail. 
+4. W polu **Wybieranie użytkowników** wprowadź co najmniej jeden służbowy adres e-mail — tak jak w przypadku wysyłania dokumentu do osoby, z którą współpracuje organizacja. Aby określić więcej niż jeden adres, użyj średnika lub naciśnij klawisz Enter. 
 
-    Możesz także kliknąć książkę adresową, aby wybrać adres e-mail współpracownika:
+    Upewnij się, określ adres e-mail biznesowych, takich jak ** janetm@contoso.com ** lub ** p.dover@fabrikam.com ** , ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail dla tego Scenariusz. 
+
+    Alternatywnie kliknij **Wybierz użytkowników, grup lub organizacji** ikonę, aby wybrać adres e-mail współpracownika:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 5 — ochrona przy użyciu uprawnień niestandardowych](../media/protect-custom-permissions.png)  
     
@@ -93,7 +95,7 @@ Teraz, po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu
 
 2.  Na karcie **Narzędzia główne** kliknij kolejno pozycje **Chroń** > **Śledź i odwołuj**:
 
-    ![Opcja śledzenia użycia](../media/track-usage-calloutv2.png)
+    ![Opcja śledzenia użycia](../media/track-usage-calloutv3.png)
 
     Spowoduje to przejście do witryny śledzenia dokumentów.
 

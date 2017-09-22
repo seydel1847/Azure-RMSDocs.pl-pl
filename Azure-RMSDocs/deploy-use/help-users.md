@@ -4,7 +4,7 @@ description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 192f4ade987e9f9f88f5f30bb17c70e113569002
-ms.sourcegitcommit: 8b6fc2201d99d72ee9bb43bb73356040893eceeb
+ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
@@ -41,9 +41,9 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
     
 -   **Informacje pomocy technicznej**
     
-    Jeśli użytkownicy mają klienta Azure Information Protection, Operatorzy pomocy technicznej może poprosić o użyj **Pomoc i opinie**, **Uruchom diagnostykę** opcji, a później zresetować klienta. Jednak resetowanie nie powoduje wylogowania użytkownika ani ponownego uruchomienia klienta i nie ma możliwości automatycznego korygowania.
+    Jeśli użytkownicy mają klienta Azure Information Protection, Operatorzy pomocy technicznej może poprosić o użyj **Pomoc i opinie** opcję informacje, takie jak czy nie obsługuje ochrony, a obecnie podpisem jest pakietu Office na koncie użytkownika. Można także użyć tej opcji, aby zbierać pliki dziennika i zresetować klienta. Aby uzyskać więcej informacji, zobacz Podręcznik administratora: [dodatkowe kontrole i rozwiązywanie problemów z](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting).
     
-    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management. Mogą to być na przykład żądania z działu prawnego lub żądania menedżera po odejściu pracownika z organizacji. 
+    W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management. Na przykład te żądania może pochodzić z działu prawnego lub Menedżera po odejściu pracownika z organizacji.
     
     Niektóre typowe problemy zgłaszane przez użytkowników mogą należeć do następujących kategorii:
     
@@ -103,7 +103,7 @@ Prawa użytkowania są wyświetlane w górnej części dokumentu na transparenci
 
 1.  W programie Outlook utwórz wiadomość e-mail, która jest skierowana do odbiorcy w Twojej organizacji.
 
-2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub **\<nazwa firmy > — poufne**, lub **\<nazwa firmy > — poufne tylko do wyświetlania**.
+2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub ** \<nazwa firmy > — poufne**, lub ** \<nazwa firmy > — poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 
@@ -115,7 +115,7 @@ Na przykład, jeśli wiadomość e-mail jest chroniona za pomocą opcji **Nie pr
 
 1.  W programie Outlook w sieci Web utwórz wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
-2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej** lub **nie odpowiadaj wszystkim**. Lub,  **\<nazwa firmy > — poufne** lub  **\<nazwa firmy > — poufne tylko wyświetlić**.
+2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej** lub **nie odpowiadaj wszystkim**. Lub, ** \<nazwa firmy > — poufne** lub ** \<nazwa firmy > — poufne tylko wyświetlić**.
 
 3.  Wyślij wiadomość.
 

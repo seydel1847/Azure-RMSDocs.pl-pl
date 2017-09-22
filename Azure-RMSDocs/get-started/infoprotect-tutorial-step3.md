@@ -4,17 +4,17 @@ description: "Krok 3 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: ccc52f1fca6e968ac1794d7bad437c271f4bd485
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: cfe2fdf41174caf6184d3e160ce9f4d439d55566
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-3-install-the-client"></a>Krok 3. Zainstalowanie klienta
 
@@ -25,7 +25,7 @@ W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dz
 
 ## <a name="install-the-azure-information-protection-client"></a>Instalowanie klienta usługi Azure Information Protection
 
-1. Na komputerze z zainstalowanym pakietem Office (program Word nie może obecnie otwarty), przejdź do [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) i Pobierz **AzInfoProtection.exe**. To jest wersja ogólnej dostępności klienta, który jest obsługiwany w sieciach produkcyjnych. Jednak jeśli wolisz spróbuj bieżąca wersja preview zawierającego wszystkie najnowsze funkcje i poprawki, Pobierz **AzInfoProtection_PREVIEW_1.10.52.0.exe**.
+1. Na komputerze z zainstalowanym pakietem Office (program Word nie może obecnie otwarty), przejdź do [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) i Pobierz **AzInfoProtection.exe**.
     
 2. Uruchom plik wykonywalny, który został pobrany i postępuj zgodnie z monitami, aby zainstalować klienta.
     

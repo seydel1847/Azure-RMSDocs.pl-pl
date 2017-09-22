@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f07d39e5110ae9bfb58a81585a042e8afdbbc639
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 6786ffde8d9903ee5c9d553159710052a6d5e7a2
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -143,7 +143,7 @@ Istnieją trzy opcje instalacji klienta dla użytkowników:
 
 **Uruchomienie pliku wykonywalnego (exe) klienta**: zalecana metoda instalacji, którą można uruchomić interaktywnie lub w trybie cichym. Ta metoda jest najbardziej elastyczna i jest metodą zalecaną, ponieważ Instalator sprawdza wiele wymagań wstępnych i może automatycznie zainstalować brakujące elementy. [Instrukcje](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)
 
-**Wdrażanie instalatora klienta systemu Windows (msi)** : obsługiwane w przypadku instalacji cichej wykorzystującej mechanizm wdrożenia centralnego, taki jak zasady grupy, program Configuration Manager i Microsoft Intune. Ta metoda jest niezbędna w przypadku komputerów z systemem Windows 10, które są zarządzane przez usługę Intune i aplikację MDM (Mobile Device Management), ponieważ dla tych komputerów pliki wykonywalne nie są obsługiwane przez instalację. Jednak w przypadku użycia tej metody instalacji należy ręcznie sprawdzić i zainstalować lub odinstalować oprogramowanie zależne, co w wypadku pliku wykonywalnego byłoby przeprowadzone przez instalator. [Instrukcje](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
+**Wdrażanie instalatora klienta systemu Windows (msi) **: obsługiwane w przypadku instalacji cichej wykorzystującej mechanizm wdrożenia centralnego, taki jak zasady grupy, program Configuration Manager i Microsoft Intune. Ta metoda jest niezbędna w przypadku komputerów z systemem Windows 10, które są zarządzane przez usługę Intune i aplikację MDM (Mobile Device Management), ponieważ dla tych komputerów pliki wykonywalne nie są obsługiwane przez instalację. Jednak w przypadku użycia tej metody instalacji należy ręcznie sprawdzić i zainstalować lub odinstalować oprogramowanie zależne, co w wypadku pliku wykonywalnego byłoby przeprowadzone przez instalator. [Instrukcje](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
 
 ### <a name="to-install-the-azure-information-protection-client-by-using-the-executable-installer"></a>Aby zainstalować klienta usługi Azure Information Protection dla użytkowników przy użyciu instalatora wykonywalnego
 
@@ -269,22 +269,9 @@ Użyj linku **Wyślij opinię**, aby wysłać propozycje lub prośby do zespołu
 
 Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączenie plików dziennika klienta usługi Azure Information Protection w przypadku wyświetlenia prośby o ich przesłanie zespołowi pomocy technicznej firmy Microsoft. Ta opcja umożliwia także wysyłanie plików dziennika zespołowi pomocy technicznej przez użytkowników końcowych.
 
-Aby uzyskać informacje diagnostyczne i dowiedzieć się, jak zresetować klienta, kliknij pozycję **Uruchom diagnostykę**. Po zakończeniu testów diagnostycznych kliknij pozycję **Kopiuj wyniki**, aby wkleić informacje w wiadomości e-mail, którą możesz wysłać do działu pomocy technicznej firmy Microsoft lub którą mogą wysłać użytkownicy końcowi Twojemu zespołowi pomocy technicznej. Po zakończeniu testów możesz także zresetować klienta.
+**Resetowanie ustawień** wylogowaniu się użytkownika, usuwa obecnie pobranych zasady usługi Azure Information Protection i resetuje ustawienia użytkownika dla usługi Azure Rights Management.
 
-> [!NOTE]
-> W wersji zapoznawczej klienta pozycja **Uruchom diagnostykę** została usunięta i zastąpiona pozycją **Resetuj ustawienia**. Ponadto zachowanie tej opcji zostało [zmienione](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client).
-
-#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>Więcej informacji na temat opcji resetowania w ogólnie dostępnej wersji klienta usługi Azure Information Protection
-
-- Nie trzeba być administratorem lokalnym, aby używać tej opcji, a ta akcja nie jest rejestrowana w Podglądzie zdarzeń. 
-
-- Jeśli pliki nie zostały zablokowane, ta akcja powoduje usunięcie wszystkich plików w lokalizacji **%LocalAppData%\Microsoft\MSIPC**, w której są przechowywane certyfikaty klienta i szablony usługi Rights Management. Nie powoduje ona usunięcia zasad usługi Azure Information Protection, plików dzienników klienta ani wylogowania użytkownika.
-
-- Następuje usunięcie klucza rejestru i ustawień: **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. Jeśli skonfigurowano ustawienia tego klucza rejestru, musisz ponownie skonfigurować ustawienia rejestru po zresetowaniu klienta. Na przykład skonfigurowano ustawienia przekierowania do dzierżawy usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz w sieci punkt połączenia usługi.
-
-- Po zresetowaniu klienta musisz ponownie zainicjować środowisko użytkownika, w którym będą pobierane certyfikaty klienta i najnowsze szablony. W tym celu zamknij wszystkie wystąpienia pakietu Office i uruchom ponownie aplikację pakietu Office. Ta akcja spowoduje również sprawdzenie, czy zostały pobrane najnowsze zasady usługi Azure Information Protection. Wykonaj tę czynność przed ponownym uruchomieniem testów diagnostycznych.
-
-#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>Więcej informacji na temat opcji resetowania w bieżącej wersji zapoznawczej klienta usługi Azure Information Protection
+#### <a name="more-information-about-the-reset-settings-option"></a>Więcej informacji na temat opcji Resetowanie ustawień
 
 - Nie trzeba być administratorem lokalnym, aby używać tej opcji, a ta akcja nie jest rejestrowana w Podglądzie zdarzeń. 
 

@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e590bd7983b0f3e4e4d1348fbe120452e9ceb79b
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
+ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -24,17 +24,15 @@ ms.lasthandoff: 09/08/2017
 
 Poniższe informacje służą do tworzenia zaawansowanych konfiguracji, które mogą być wymagane w przypadku określonych scenariuszy lub podzbiorów użytkowników podczas zarządzania klientem usługi Azure Information Protection.
 
-Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal, a następnie opublikować do pobrania przez klientów. Ponadto pewne ustawienia mogą być dostępne tylko w wersji zapoznawczej klienta usługi Azure Information Protection. W przypadku tych ustawień minimalny numer wersji klienta został określony w dokumentacji. W przypadku ustawień i konfiguracji obsługiwanych w ogólnodostępnej wersji klienta minimalny numer wersji klienta nie jest określony w dokumentacji.
+Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal, a następnie opublikować do pobrania przez klientów.  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
-
-Ta konfiguracja jest obecnie dostępna w wersji zapoznawczej.
 
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**.
 
 2. W pierwszym bloku usługi Azure Information Protection wybierz pozycję **Zasady z określonym zakresem**.
 
-3. W bloku **Azure Information Protection — zasady z określonym zakresem** wybierz menu kontekstowe (**...** ) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
+3. W bloku **Azure Information Protection — zasady z określonym zakresem** wybierz menu kontekstowe (**... **) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
     
     Możesz skonfigurować ustawienia zaawansowane dla zasad globalnych i zasad z określonym zakresem.
 
@@ -64,11 +62,7 @@ Pamiętaj także o sprawdzeniu wyświetlonej nazwy domeny konta użytego do zalo
 
 Aby zalogować się jako inny użytkownik:
 
-1. W zależności od wersji klienta usługi Azure Information Protection: 
-    
-    - W ogólnie dostępnej wersji klienta usługi Azure Information Protection: w edytorze rejestru przejdź do pozycji **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP** i usuń wartość **TokenCache** (i jej skojarzone dane wartości).
-    
-    - W bieżącej wersji zapoznawczej klienta usługi Azure Information Protection: przejdź do pozycji **%localappdata%\Microsoft\MSIP** i usuń plik **TokenCache**.
+1. Przejdź do **%localappdata%\Microsoft\MSIP** i usunąć **TokenCache** pliku.
 
 2. Uruchom ponownie wszystkie otwarte aplikacje pakietu Office i zaloguj się przy użyciu innego konta użytkownika. Jeśli w aplikacji pakietu Office nie został wyświetlony monit o zalogowanie się do usługi Azure Information Protection, wróć do okna dialogowego **Microsoft Azure Information Protection** i kliknij przycisk **Zaloguj** w zaktualizowanej sekcji **Stan klienta**.
 
@@ -78,11 +72,7 @@ Dodatkowo:
 
 - Jeśli korzystasz z logowania jednokrotnego, musisz wylogować się z systemu Windows i po wprowadzeniu zmian w rejestrze zalogować się przy użyciu innego konta użytkownika. Klient usługi Azure Information Protection przeprowadzi automatyczne uwierzytelnienie przy użyciu aktualnie zalogowanego konta użytkownika.
 
-- Jeśli chcesz zresetować ustawienia użytkownika dla usługi Azure Rights Management, możesz to zrobić przy użyciu opcji **Pomoc i opinie**.
-
-- Aby usunąć aktualnie pobrane zasady usługi Azure Information Protection, usuń plik **Policy.msip** z folderu **%localappdata%\Microsoft\MSIP**.
-
-- Jeśli masz bieżącą wersję zapoznawczą klienta usługi Azure Information Protection, możesz użyć opcji **Resetuj ustawienia** w obszarze **Pomoc i opinie**, aby wylogować się i usunąć aktualnie pobrane zasady usługi Azure Information Protection.
+- Można użyć **Zresetuj ustawienia** opcję **Pomoc i opinie** Wyloguj się i usuń aktualnie pobrany zasady usługi Azure Information Protection.
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Wymusić trybu tylko do ochrony, gdy Twoja organizacja ma kombinacji licencji
 
@@ -99,10 +89,6 @@ Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 Ponadto sprawdź, czy te komputery nie mają plik o nazwie **Policy.msip** w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli ten plik istnieje, usuń go. Ten plik zawiera zasady usługi Azure Information Protection i może zostały pobrane przed edytować rejestr lub jeśli klient usługi Azure Information Protection został zainstalowany z opcją pokaz.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ukryj opcję menu Klasyfikuj i chroń w Eksploratorze plików systemu Windows
-
-Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
-
-Użytkownicy korzystający z klienta usługi Azure Information Protection w wersji 1.3.0.0 lub nowszej mogą skonfigurować tę konfigurację zaawansowaną, edytując rejestr. 
 
 Utwórz następującą nazwę wartości DWORD (z dowolnymi danymi wartości):
 
@@ -133,9 +119,7 @@ Podczas eksportowania zasady, ta akcja pobiera plik z rozszerzeniem zip z wielom
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ukrywanie przycisku Nie przesyłaj dalej w programie Outlook
 
-Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
-
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie również wymaga wersji zapoznawczej klienta usługi Azure Information Protection o minimalnym numerze **1.8.41.0**.
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal.
 
 Po skonfigurowaniu tego ustawienia przycisk **Nie przesyłaj dalej** na wstążce programu Outlook zostanie ukryty. Ta opcja nie zostanie jednak ukryta w menu pakietu Office.
 
@@ -147,10 +131,8 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Zablokowanie dostępu użytkowników do opcji uprawnień niestandardowych
 
-Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej.
-
 > [!IMPORTANT]
-> Nie należy używać tej opcji, jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
+> Jeśli bieżąca wersja klienta jest używana, nie używać tej opcji, jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
@@ -170,7 +152,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection
 
-Ta konfiguracja korzysta z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal. To ustawienie również wymaga wersji zapoznawczej klienta usługi Azure Information Protection o minimalnym numerze **1.9.58.0**.
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
 Gdy po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników użytkownik zdecyduje, aby nie wyświetlać paska usługi Azure Information Protection w aplikacjach pakietu Office, pasek pozostanie ukryty. Takie zachowanie ma miejsce, gdy użytkownik usunie zaznaczenie opcji **Pokaż pasek** na karcie **Strona główna**, w grupie **Ochrona**, w obszarze przycisku **Chroń**. To ustawienie nie daje efektu, jeśli użytkownik zamknie pasek za pomocą ikony **Zamknij ten pasek**.
 
@@ -181,6 +163,39 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 - Klucz: **EnableBarHiding**
 
 - Wartość: **Prawda**
+
+
+## <a name="enable-recommended-classification-in-outlook"></a>Włącz zalecana klasyfikacja w programie Outlook
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal.
+
+Po skonfigurowaniu etykiety dla zalecana klasyfikacja użytkowników monit, aby zaakceptować lub odrzucić zalecaną etykietę, Word, Excel i PowerPoint. To ustawienie zwiększa to zalecenie etykiety można również wyświetlić w programie Outlook.
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz: **OutlookRecommendationEnabled**
+
+- Wartość: **Prawda**
+
+
+## <a name="set-a-different-default-label-for-outlook"></a>Ustaw etykietę różne domyślne dla programu Outlook
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i wymaga wersji zapoznawczej klienta.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Po skonfigurowaniu tego ustawienia program Outlook nie ma zastosowania etykiety domyślnej, skonfigurowanym w ramach zasad usługi Azure Information Protection, ustawienia **wybierz etykietę domyślną**. Zamiast tego programu Outlook można stosować inną etykietę lub bez etykiety.
+
+Aby zastosować inną etykietę, należy określić identyfikator etykiety. Wartość Identyfikatora etykiety jest wyświetlany na **etykiety** bloku, gdy wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w portalu Azure. Dla plików, które mają zastosowane etykiety, można również uruchomić [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell do identyfikowania etykiety (MainLabelId lub SubLabelId). Podczas etykiety zawiera etykiety podrzędne, zawsze należy określić identyfikator etykietę podrzędną, a nie nadrzędnego etykieta.
+
+Dlatego program Outlook nie ma zastosowania etykiety domyślnej, określ **Brak**.
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz: **OutlookDefaultLabel**
+
+- Wartość: \< **identyfikator etykiety**> lub **None**
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
 

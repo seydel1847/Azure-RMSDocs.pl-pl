@@ -4,17 +4,17 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -32,7 +32,7 @@ Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
     
     - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła.
     
-    - Wiele wierszy tekstu jest obsługiwana w przypadku użycia bieżąca wersja klienta usługi Azure Information Protection.
+    - Wiele wierszy tekstu są obsługiwane.
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
 
@@ -44,17 +44,9 @@ W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomoś�
 
 W przypadku dokumentów oznaczenia wizualne są stosowane w następujący sposób:
 
-- **Dla wersji ogólnodostępnej** klienta Azure Information Protection: 
-    
-    - W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety i zawsze, gdy dokument zostanie zapisany. 
-    
-    - Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zawsze, gdy dokument zostanie zapisany.
+- W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety. Oznaczenia wizualne, również są stosowane po otwarciu dokumentu etykietą i zapisywaniu dokumentu.  
 
-- **Dla bieżącej wersji preview** klienta Azure Information Protection: 
-    
-    - W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety. Oznaczenia wizualne, również są stosowane po otwarciu dokumentu etykietą i zapisywaniu dokumentu.  
-    
-    - Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zapisywaniu dokumentu.
+- Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zapisywaniu dokumentu.
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>Aby skonfigurować oznaczenia wizualne dla etykiety
 
@@ -69,12 +61,12 @@ Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiet
     Jeśli trwa etykietę, którą chcesz skonfigurować [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 
 3. W bloku **Etykieta** w sekcji **Ustaw oznaczenie wizualne (np. nagłówek lub stopkę)** skonfiguruj ustawienia dla żądanych oznaczeń wizualnych, a następnie kliknij przycisk **Zapisz**:
-
-    - Aby skonfigurować nagłówek: dla opcji **Dokumenty oznaczone tą etykietą mają nagłówek** wybierz wartość **Wł.**, jeśli chcesz użyć nagłówka, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz opcję **Wł.**, następnie należy określić tekst, rozmiar, kolor i wyrównanie nagłówka.
-
-    - Aby skonfigurować stopkę: dla opcji **Dokumenty oznaczone tą etykietą mają stopkę** wybierz wartość **Wł.**, jeśli chcesz użyć stopki, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz opcję **Wł.**, następnie należy określić tekst, rozmiar, kolor i wyrównanie stopki.
-
-    - Aby skonfigurować znak wodny: dla opcji **Dokumenty oznaczone tą etykietą mają znak wodny** wybierz wartość **Wł.**, jeśli chcesz użyć znaku wodnego, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz opcję **Wł.**, następnie należy określić tekst, rozmiar i kolor znaku wodnego oraz układ nagłówka.
+    
+    - Aby skonfigurować nagłówek: dla opcji **Dokumenty oznaczone tą etykietą mają nagłówek** wybierz wartość **Wł.**, jeśli chcesz użyć nagłówka, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ nagłówek tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie nagłówka.
+    
+    - Aby skonfigurować stopkę: dla opcji **Dokumenty oznaczone tą etykietą mają stopkę** wybierz wartość **Wł.**, jeśli chcesz użyć stopki, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ stopki tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie stopki.
+    
+    - Aby skonfigurować znak wodny: dla opcji **Dokumenty oznaczone tą etykietą mają znak wodny** wybierz wartość **Wł.**, jeśli chcesz użyć znaku wodnego, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ znak wodny tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie znaku wodnego.
 
 4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
@@ -95,6 +87,18 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
 - `${Event.DateTime}` — data i godzina ustawienia wybranej etykiety. Na przykład: 16.08.2016 13:30
 
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety **Ogólne** tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Classification: Ogólne**.
+
+### <a name="setting-the-font-name"></a>Ustawienie nazwy czcionki
+
+To ustawienie jest obecnie w przeglądzie.
+
+Calibri jest domyślną czcionkę dla nagłówków, stopek i tekstu znaku wodnego. Jeśli określono nazwę alternatywną czcionki, upewnij się, że jest ona dostępna na urządzenia klienckie, które będą stosowane żądanych oznaczeń. W przeciwnym razie czcionki, który będzie używany jest deterministyczna. 
+
+### <a name="setting-the-font-color"></a>Ustawianie koloru czcionki
+
+Można wybrać z listy dostępnych kolorów lub określić niestandardowego koloru przez wprowadzenie kodu szesnastkowych Trzykolumnowa składników (RGB) czerwony, zielonemu i niebieskiemu koloru. Przykład: **#DAA520**. 
+
+Jeśli potrzebujesz odwołania te kodów [kolory według nazwy](https://msdn.microsoft.com/library/aa358802\(v=vs.85)aspx) w witrynie MSDN dokumentacji stanowi punkt wyjścia przydatne. Możesz również znaleźć kody w wielu aplikacjach, które umożliwiają edytowanie obrazów. Na przykład Microsoft Paint pozwala wybrać paletę kolorów niestandardowych i wartości RGB są automatycznie wyświetlane, które można następnie skopiować.
 
 ## <a name="next-steps"></a>Następne kroki
 

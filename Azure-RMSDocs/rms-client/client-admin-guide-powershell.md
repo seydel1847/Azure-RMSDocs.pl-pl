@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
-ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
+ms.openlocfilehash: 99cb5d1ca256977cb07c41bbe153e5ca248b9efd
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -26,13 +26,15 @@ Polecenia programu PowerShell są instalowane automatycznie podczas instalowania
 
 Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **AzureInformationProtection**. Ten moduł zastępuje moduł RMSProtection instalowany razem z narzędziem RMS Protection Tool. Jeśli przed instalacją klienta usługi Azure Information Protection było już zainstalowane narzędzie RMS Protection Tool, moduł RMSProtection zostanie automatycznie odinstalowany.
 
-Moduł AzureInformationProtection obejmuje wszystkie polecenia cmdlet usługi Rights Management z narzędzia RMS Protection Tool i trzy nowe polecenia cmdlet, które korzystają z usługi Azure Information Protection (AIP) na potrzeby etykietowania:
+Moduł AzureInformationProtection zawiera wszystkie usługi Rights Management poleceń cmdlet udostępnianych przez narzędzie RMS Protection Tool. Istnieją nowe polecenia cmdlet, których usługa ochrony informacji Azure (Efektywnych) dla etykiety. Na przykład:
 
 |Polecenie cmdlet dotyczące etykietowania|Przykład użycia|
 |----------------|---------------|
 |[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|W przypadku folderu udostępnionego wskazuje wszystkie pliki z określoną etykietą.|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|W przypadku folderu udostępnionego sprawdź zawartość pliku, a następnie automatycznie nadaj etykiety plikom bez etykiet, zgodnie z warunkami określonymi przez użytkownika.|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|W przypadku folderu udostępnionego dodaje określoną etykietę do wszystkich plików, które nie mają etykiety.|
+|[Zestaw AIPAuthentication](/powershell/module/azureinformationprotection/set-aipsuthentication)|Oznaczanie plików nieinteraktywnie, na przykład za pomocą skryptu uruchamianego zgodnie z harmonogramem.|
+
 
 Aby wyświetlić listę wszystkich poleceń cmdlet oraz odpowiednią dokumentację pomocy zobacz temat [AzureInformationProtection Module](/powershell/module/azureinformationprotection) (Moduł AzureInformationProtection). W sesji programu PowerShell wpisz `Get-Help <cmdlet name> -online`, aby wyświetlić najnowszą pomoc w obsługiwanych językach innych niż angielski.  
 
@@ -95,7 +97,7 @@ Musisz mieć prawa użytkowania usługi Rights Management do usuwania ochrony pl
 
 Można połączyć się bezpośrednio do usługi Azure Rights Management nieinteraktywnie do Włączanie lub wyłączanie ochrony plików.
 
-Należy użyć jednostki usługi do połączenia się z usługą Azure Rights Management w sposób nieinteraktywny, co można zrobić za pomocą polecenia cmdlet `Set-RMSServerAuthentication`. Należy to zrobić dla każdej sesji środowiska Windows PowerShell korzystającej z poleceń cmdlet, które bezpośrednio łączą się z usługą Azure Rights Management. Przed uruchomieniem tego polecenia cmdlet, musi mieć tych identyfikatorów:
+Należy użyć konta głównego usługi się połączyć z usługą Azure Rights Management nieinteraktywnie, co można zrobić za pomocą `Set-RMSServerAuthentication` polecenia cmdlet. Należy to zrobić dla każdej sesji środowiska Windows PowerShell korzystającej z poleceń cmdlet, które bezpośrednio łączą się z usługą Azure Rights Management. Przed uruchomieniem tego polecenia cmdlet, musi mieć tych identyfikatorów:
 
 - Identyfikator BposTenantId
 
@@ -222,7 +224,7 @@ Nasze przykładowe polecenie będzie więc wyglądać następująco:
 
 Jak pokazano w poprzednim poleceniu, możesz podać wartości z jednego polecenia skryptu do uruchomienia nieinteraktywnie, należy wykonać. Do celów testowych można jednak po prostu wpisz Set-RMSServerAuthentication i podaj wartości jeden po drugim po wyświetleniu monitu. Po zakończeniu wykonywania polecenia, klient działa teraz po "tryb serwera", które są odpowiednie do użycia nieinterakcyjnym, takich jak skrypty i infrastruktury klasyfikacji plików systemu Windows Server.
 
-Istnieje możliwość ustawienia tej jednostki usługi jako administratora. Dzięki temu będzie można jej zawsze użyć do wyłączenia ochrony plików dla innych użytkowników. W ten sam sposób jak skonfigurować konto użytkownika standardowego jako superużytkowników, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale określ **ServicePrincipalId** parametru z wartością AppPrincipalId.
+Należy rozważyć zmianę to konto główne usługi użytkownika nadrzędnego: w celu zapewnienia, że to konto główne usługi mogą zawsze wyłączyć ochronę plików dla innych użytkowników, można skonfigurować jako użytkownika nadrzędnego. W ten sam sposób jak skonfigurować konto użytkownika standardowego jako superużytkowników, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale określ **ServicePrincipalId** parametru z wartością AppPrincipalId.
 
 Aby uzyskać więcej informacji na temat administratorów, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
 
@@ -259,7 +261,7 @@ Korzystanie z etykiet do klasyfikowania i ochrony plików jest bardziej efektywn
 
 Aby włączać i wyłączać ochronę plików przy wykorzystaniu bezpośredniego połączenia z usługą Azure Rights Management, należy zazwyczaj uruchamiać serię poleceń cmdlet, zgodnie z poniższym opisem.
 
-Po pierwsze, w razie potrzeby uwierzytelnienia w usłudze Azure Rights Management przy użyciu jednostki usługi zamiast własnego konta, w sesji środowiska Powershell wpisz:
+Po pierwsze jeśli zajdzie potrzeba uwierzytelniania usługi Azure Rights Management z konta głównego usługi, zamiast używać konta użytkownika, w sesji programu PowerShell, wpisz:
 
     Set-RMSServerAuthentication
 
@@ -340,7 +342,7 @@ Przeczytaj tę sekcję przed rozpoczęciem korzystania z poleceń środowiska Po
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Oprócz wymagań wstępnych instalacji modułu AzureInformationProtection konto musi mieć uprawnienia odczytu i wykonywania, aby mieć dostęp do pliku ServerCertification.asmx:
+Oprócz wymagań wstępnych dotyczących instalowania modułu AzureInformationProtection konto używane do Włączanie lub wyłączanie ochrony plików musi mieć uprawnienia odczytu i wykonywania można uzyskać dostępu do pliku ServerCertification.asmx:
 
 1. Zaloguj się do serwera usług AD RMS.
 
@@ -356,7 +358,9 @@ Oprócz wymagań wstępnych instalacji modułu AzureInformationProtection konto 
 
 7. W oknie dialogowym **Uprawnienia dla pliku ServerCertification.asmx** kliknij przycisk **Dodaj**. 
 
-8. Dodaj nazwę swojego konta. Jeśli inni administratorzy usługi AD RMS również używają tych poleceń cmdlet do włączania i wyłączania ochrony plików, należy dodać także ich nazwy.
+8. Dodaj nazwę swojego konta. Jeśli inni administratorzy usług AD RMS lub konta usług będzie również używać tych poleceń cmdlet do ustawiania i usuwania ochrony plików, należy dodać także te konta. 
+    
+    Do ochrony lub wyłączyć ochronę plików nieinteraktywnie, Dodaj konto odpowiedniego komputera lub konta. Na przykład dodać konto komputera systemu Windows Server, który jest skonfigurowany dla infrastruktury klasyfikacji plików i użyje skrypt programu PowerShell dotyczące ochrony plików. Ten scenariusz wymaga bieżąca wersja klienta usługi Azure Information Protection.
 
 9. Upewnij się, że w kolumnie **Zezwalaj** są zaznaczone pola wyboru **Odczyt i wykonywanie** oraz **Odczyt**.
 
@@ -435,7 +439,7 @@ Raport będzie wyglądał podobnie do poniższego:
     --------                              ------
     \\Server1\Documents\Test1.docx        Protected
 
-Aby usunąć ochronę pliku, użytkownik musi mieć uprawnienia właściciela lub uprawnienia do wyodrębniania, począwszy od momentu włączenia ochrony pliku, lub musi być administratorem w usłudze AD RMS. Następnie należy użyć polecenia cmdlet Unprotect. Na przykład:
+Aby wyłączyć ochronę pliku, musi mieć właściciela lub Wyodrębnij praw użytkowania z po był chroniony plik, lub być superużytkowników dla usług AD RMS. Następnie należy użyć polecenia cmdlet Unprotect. Na przykład:
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -447,7 +451,7 @@ Raport będzie wyglądał podobnie do poniższego:
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Jak nieinteraktywnie etykietować pliki na potrzeby usługi Azure Information Protection
 
-Począwszy od wersji 1.8.41.0 klienta Azure Information Protection (obecnie w wersji zapoznawczej), polecenia cmdlet służące do etykietowania w trybie nieinteraktywnym można uruchamiać przy użyciu polecenia cmdlet **Set-AIPAuthentication**.
+Uruchom następujące polecenia cmdlet etykietowania nieinteraktywnie przy użyciu **AIPAuthentication zestaw** polecenia cmdlet.
 
 Domyślnie polecenia cmdlet służące do etykietowania są uruchamiane we własnym kontekście użytkownika w interaktywnej sesji programu PowerShell. Aby uruchamiać polecenia w trybie nienadzorowanym, utwórz nowe konto użytkownika usługi Azure AD. Następnie w kontekście tego użytkownika uruchom polecenie cmdlet Set-AIPAuthentication, aby skonfigurować i przechowywać poświadczenia przy użyciu tokenu dostępu z usługi Azure AD. To konto użytkownika jest następnie uwierzytelniane i uruchamiane dla usługi Azure Rights Management. Konto pobiera zasady usługi Azure Information Protection i wszystkie szablony usług Rights Management używane w etykietach.
 
