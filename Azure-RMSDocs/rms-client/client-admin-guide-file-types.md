@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 219f39913261d22709238ee5393e8cc8080070f5
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -81,11 +81,7 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
     |Excel 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32-bitowe: 2 GB<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci|
     |PowerPoint 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
 
-- **Wszystkie inne pliki**:
-    
-    - Ogólnie dostępna wersja klienta: 1 GB
-    
-    - Klient w wersji zapoznawczej (minimalna wersja **1.8.41.0**): ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
+- **Dla wszystkich innych plików**: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 
@@ -175,7 +171,7 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 - **Wykluczone typy plików**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msp, .msi, .pdb, .jar
 
-- **Wykluczone foldery** : 
+- **Wykluczone foldery **: 
     - Windows
     - Program Files (\Program Files i \Program Files (x86))
     - \ProgramData 

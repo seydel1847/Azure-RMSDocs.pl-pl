@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -67,7 +67,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     ![Ochrony skonfigurowane dla etykiety usługi Azure Information Protection](../media/info-protect-protection-bar-configured.png) 
     
-4. Na **ochrony** bloku, upewnij się, że **usługi Azure RMS** lub **Azure (klucz w chmurze)** jest zaznaczone. Ta opcja jest w trakcie zmieniana. Upewnij się, że **Ustaw uprawnienia** jest zaznaczony. Następnie wybierz **dodać uprawnienia**.
+4. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone. Ta opcja używa usługi Azure Rights Management do ochrony dokumentów i wiadomości e-mail. Upewnij się, że **Ustaw uprawnienia** jest zaznaczony. Następnie wybierz **dodać uprawnienia**.
 
 5. Na **dodać uprawnienia** bloku, wybierz opcję **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**. Na przykład jeśli nazwą firmy jest VanArsdel, Ltd, zobacz następującą opcję, aby wybrać:
     

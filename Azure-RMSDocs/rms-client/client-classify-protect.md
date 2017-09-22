@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/04/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
-ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
+ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -42,11 +42,14 @@ Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć s
 
 Za pomocą paska usługi Azure Information Protection wybierz jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
 
-Przykładowo na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą, ponieważ parametr **Poufność** ma wartość **Nieustawiona**. Aby ustawić etykietę, np. „Wewnętrzna”, kliknij przycisk **Wewnętrzna**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu.
+Przykładowo na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą, ponieważ parametr **Poufność** ma wartość **Nieustawiona**. Aby ustawić etykiety, takie jak "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
 
 ![Przykład paska usługi Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
 Jeśli etykieta jest już zastosowana do dokumentu i chcesz ją zmienić, możesz wybrać inną etykietę. Jeśli na pasku nie są wyświetlane etykiety, kliknij najpierw ikonę **Edytuj etykietę** obok wartości bieżącej etykiety.
+
+> [!TIP]
+> Możesz też wybrać etykiety z **Chroń** przycisk na **pliku** kartę.
 
 Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sposób:
 
@@ -83,9 +86,11 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
     - **Chroń za pomocą uprawnień niestandardowych**: aby możliwe było określenie i zastosowanie uprawnień niestandardowych, ta opcja musi być zaznaczona. Usuń zaznaczenie tej opcji, aby usunąć wszelkie uprawnienia niestandardowe.
     
     - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz poziom dostępu dla poszczególnych osób.
-
+    
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
         
+        Jeśli bieżąca wersja klienta, umożliwia także ikonę książki adresowej wybierz z książki adresowej użytkowników lub grup.
+    
     - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.

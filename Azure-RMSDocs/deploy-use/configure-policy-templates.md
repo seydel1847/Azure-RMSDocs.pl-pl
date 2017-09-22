@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1094c0a711b3691b8186baafc06d1fb72daf5613
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 >[!NOTE]
->Ta funkcja zastępuje Konfigurowanie szablonów niestandardowych w klasycznym portalu Azure.
+>Ta funkcja zastępuje Konfigurowanie szablonów niestandardowych w klasycznym portalu Azure. Szybkie mapowania instrukcje, zobacz [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
 >
 >Mimo że można nadal tworzyć i zarządzać szablonów w klasycznym portalu Azure, nie zaleca się zarządzanie te same szablony z klasycznego portalu Azure i portalu Azure. Konfigurowanie szablonów w tych portali inną implementację uległ zmianie, więc konfigurowanie tego samego szablonu w różnych portali może spowodować zawodnych konfiguracji.
 
@@ -109,8 +109,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
-    
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. Jeśli szablon, który chcesz skonfigurować dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
@@ -119,11 +118,11 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 
 3. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, Znajdź szablon, który chcesz skonfigurować:
     
-    - Jeśli masz subskrypcję obejmującą klasyfikacji, etykietowania i ochrony: rozwiń węzeł **szablony** lub **szablony ochrony** po etykiety.
+    - Jeśli masz subskrypcję obejmującą klasyfikacji, etykietowania i ochrony: rozwiń węzeł **szablony ochrony** po etykiety.
     
     - Jeśli posiadasz subskrypcję obejmującą wyłącznie ochronę: wyświetl szablony jako etykiety.
 
-4. Wybierz szablon, a następnie w bloku **Etykieta** możesz w razie potrzeby zmienić nazwę i opis szablonu, edytując pola **Nazwa etykiety** i **Opis**. Następnie wybierz opcję **ochrony** , który ma wartość **usługi Azure RMS** lub **Azure (klucz w chmurze)**, aby otworzyć **ochrony** bloku.
+4. Wybierz szablon, a następnie w bloku **Etykieta** możesz w razie potrzeby zmienić nazwę i opis szablonu, edytując pola **Nazwa etykiety** i **Opis**. Następnie wybierz opcję **ochrony** , który ma wartość **Azure (klucz w chmurze)**, aby otworzyć **ochrony** bloku.
 
 5. W bloku **Ochrona** można zmienić uprawnienia, wygaśnięcia zawartości i ustawienia dostępu w trybie offline. Aby uzyskać więcej informacji o konfiguracji ustawień ochrony, zobacz temat [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](configure-policy-protection.md)
     
