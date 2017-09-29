@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0d8c6a1ccfaf52af25ab0cfb5fb8074019939b90
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 0b788b8a380132d830fb6593f579dca9c8ac61bc
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -26,9 +26,10 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 |Cel|.. Czynności|
 |----------------|---------------|
-|Patrz zalecana dokumentacja dla usługi|Użyj strony początkowej [Dokumentacja usługi Azure Information Protection](https://docs.microsoft.com/information-protection/).|
-|Przesłanie opinii zwrotnej na temat dokumentacji lub zadanie pytania związanego z dokumentacją|Wiadomości e-mail [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback).|
-|Otrzymywanie od zespołu produktu tweetów o usłudze Azure Information Protection i powiadomień o aktualizacjach dokumentacji|Śledź [@DanPlastina](https://twitter.com/DanPlastina), jednego z liderów zespołu usługi Azure Information Protection w firmie Microsoft.|
+|Najczęściej używane znajdują się w dokumentacji|Odczyt stron 5: <br /><br />[Wprowadzenie — Efektywnych aplikacji dla systemu iOS i Android](../rms-client/mobile-app-get-started.md) <br /><br /> [Co to jest usługa Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /><br /> [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)<br /><br />[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)<br /><br />[Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements.md)|
+|Skontaktuj się z zespołu produktu i innymi użytkownikami|Odwiedź stronę [witryny usługi Yammer](https://www.yammer.com/AskIPTeam) usługi Azure Information Protection.|
+|Żądanie nowej funkcji lub zmiana w działaniu|Odwiedź stronę [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection|
+|Otrzymywać tweetów grupa produktów|Postępuj zgodnie z [Microsoft Mobility@MSFTMobility ](https://twitter.com/MSFTMobility) w serwisie Twitter.|
 |Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
 
@@ -41,7 +42,7 @@ Każdego miesiąca, firma Microsoft publikuje [ **aktualizacje** ](https://blogs
 
 - Podsumowanie zmian dokumentacji, zawierające dokumentację żadnych nowych wersji aktualizacji do obsługi instrukcji, a także poprawki i wyjaśnienia dla istniejącej wersji. Te wpisy są zatytułowany: "**Aktualizacja dokumentacji ochrony informacji Azure dla \<miesiąca i roku >**" 
 
-Można również znaleźć informacje o nowych funkcji i podglądu na [witryny usługi Yammer ochrony informacji Azure](https://www.yammer.com/AskIPTeam), gdzie również można zadawać pytania dotyczące usługi Azure Information Protection. Przedstawienie nowych funkcji lub głos nowych funkcji, odwiedź [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection.
+Można również znaleźć informacje dotyczące nowych funkcji i podglądy na usługę Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam), gdzie również można zadawać pytania dotyczące usługi Azure Information Protection. Przedstawienie nowych funkcji lub głos nowych funkcji, odwiedź [User Voice](https://msip.uservoice.com) witryny usługi Azure Information Protection.
 
 ## <a name="support-options-and-community-resources"></a>Opcje pomocy technicznej i zasoby społecznościowe
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
@@ -67,6 +68,8 @@ Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicie
 ### <a name="self-help"></a>Samodzielna pomoc
 
 Filmy wideo na żądanie:
+
+- Sesje 2017 Ignite firmy Microsoft dla [usługi Azure Information Protection](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522).
 
 - Sesje Microsoft Ignite 2016 dla [usługi Azure Information Protection](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D).
 
