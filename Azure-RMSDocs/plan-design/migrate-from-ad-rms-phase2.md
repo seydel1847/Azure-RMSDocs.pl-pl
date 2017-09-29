@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -75,10 +75,7 @@ W bieżącym wdrożeniu usług AD RMS jest używana jedna z następujących konf
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz temat [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń).
 
-Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Scenariusz, w którym użytkownik zarządza własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako „użyj własnego klucza” (BYOK, Bring Your Own Key) i wymaga sprzętowego modułu zabezpieczeń (HSM) firmy Thales. Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
-
-> [!IMPORTANT]
-> Usługa Exchange Online nie jest obecnie zgodna z rozwiązaniem BYOK w usłudze Azure Information Protection. Jeśli chcesz użyć scenariusza BYOK po migracji i planujesz korzystanie z usługi Exchange Online, upewnij się, że rozumiesz, w jaki sposób ta konfiguracja ogranicza funkcję IRM w usłudze Exchange Online. Zapoznaj się z informacjami zawartymi w temacie [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md), aby określić najlepszą topologię klucza dzierżawy usługi Azure Information Protection dla danej migracji.
+Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Jeśli zarządzasz własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako "Użyj własnego klucza" (BYOK). Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
 Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. 
 

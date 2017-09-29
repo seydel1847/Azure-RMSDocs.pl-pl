@@ -1,6 +1,6 @@
 ---
 title: "Samouczek Szybki start — krok 1 — AIP"
-description: "Krok 1 samouczka wprowadzającego, dzięki któremu można szybko wypróbować usługę Azure Information Protection — aktywowanie usługi Azure Rights Management."
+description: "Krok 1 samouczka wprowadzającego, można szybko wypróbować usługę Azure Information Protection — aktywowanie usługi ochrony."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,20 +10,20 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: c168f54d873d8e5b1f2d455c9ae2d12cda8926b3
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 91eb9ec61f4fa1ebd7aac3cf0c244878ef450bb9
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="step-1-activate-the-rights-management-service"></a>Krok 1. Aktywowanie usługi Rights Management
+# <a name="step-1-activate-protection"></a>Krok 1: Aktywowanie ochrony
  
 >*Dotyczy: Azure Information Protection*
 
 > [!NOTE]
 >Nawet jeśli już aktywowano usługę Azure Rights Management dla swojej dzierżawy, należy wykonać ten krok, aby potwierdzić stan aktywacji. Instrukcje zawierają logowanie do portalu Azure i Tworzenie bloku Azure Information Protection, aby przejść do kroku 2. 
 
-Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne metody aktywowania tej usługi, w tym zastosowanie usługi Windows PowerShell i wykorzystanie portali administracyjnych.
+Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne sposoby ochrony, można uaktywnić obejmujące przy użyciu programu Windows PowerShell i portale administratora.
 
 W tym samouczku użyjemy portalu Azure etykiety dla użytkowników należy również skonfigurować. 
 

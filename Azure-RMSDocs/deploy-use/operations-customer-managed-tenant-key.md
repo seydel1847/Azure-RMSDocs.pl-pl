@@ -4,7 +4,7 @@ description: "Informacji na temat operacji cyklu życia, które są istotne, je�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3220b1cbe93b110c838a4e85cc143b44de0d2d14
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 2f3ae7a0558cf209f3ec710a5114dbbc9a0dda9d
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cyklu życia klucza dzierżawy
 
@@ -38,22 +38,28 @@ Przykłady gdy może być konieczne ponowne generowanie kluczy dla usługi Azure
 
 - Firma została podzielona na dwie lub więcej firm. Po wymianie klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
 
+- Chcesz przenieść od jednego topologii zarządzania kluczami do innego. 
+
 - Uważasz, że zostanie naruszone bezpieczeństwo kopii głównej klucza dzierżawy (będącej w Twoim posiadaniu).
 
-Do ponownego generowania kluczy możesz utworzyć nowy klucz w usłudze Azure Key Vault, lub użyj innego klucza, który jest już w usłudze Azure Key Vault. Następnie wykonaj te same procedury, które zostało do zaimplementowania BYOK usługi Azure Information Protection:
+Aby ponowne tworzenie klucza do innego klucza, którą zarządzasz, musisz utworzyć nowy klucz w usłudze Azure Key Vault lub użyć innego klucza, który jest już w usłudze Azure Key Vault. Następnie wykonaj te same procedury, które zostało do zaimplementowania BYOK usługi Azure Information Protection.
 
 1. Tylko wtedy, gdy nowy klucz znajduje się w innym magazynie kluczy do tego, już używasz usługi Azure Information Protection: autoryzowanie usługi Azure Information Protection do używania magazynu kluczy, za pomocą [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) polecenia cmdlet.
 
-2. Konfigurowanie usługi Azure Information Protection do użycia nowego klucza za pomocą [AadrmKeyVaultKey użyj](/powershell/module/aadrm/use-aadrmkeyvaultkey) polecenia cmdlet.
+2. Jeśli usługi Azure Information Protection już nie ma informacji dotyczących klucz chcesz używać, uruchom [AadrmKeyVaultKey użyj](/powershell/module/aadrm/use-aadrmkeyvaultkey) polecenia cmdlet.
 
 3. Konfigurowanie obiektu klucza dzierżawy, za pomocą opcji Uruchom [AadrmKeyProperties zestaw](/powershell/module/aadrm/set-aadrmkeyproperties) polecenia cmdlet.
 
-Aby uzyskać więcej informacji na temat każdego z tych kroków, zobacz [wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
+Aby uzyskać więcej informacji na temat każdego z następujących czynności:
+
+- Aby ponowne tworzenie klucza do innego klucza, którymi można zarządzać, zobacz [BYOK wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
+
+- Ponowne tworzenie klucza, zmiana z kluczem programu Microsoft zarządza dla Ciebie, zobacz [ponowne tworzenie klucza z kluczem dzierżawy](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) sekcji operacjach zarządzany przez firmę Microsoft.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
 Twoim obowiązkiem jest utworzenie kopii zapasowej klucza dzierżawy. Jeśli klucz dzierżawy wygenerowano za pomocą sprzętowego modułu zabezpieczeń firmy Thales, to aby utworzyć kopię zapasową klucza, wystarczy utworzyć kopię zapasową pliku stokenizowanego klucza, pliku środowiska zabezpieczeń oraz kart administratora.
 
-Ponieważ klucz przeniesiono zgodnie z instrukcjami opisanymi w [wdrażania Użyj własnego klucza (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key), Key Vault zostanie utrzymana pliku Stokenizowanego klucza, aby chronić przed awariami węzły usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego działania jako utworzenia pełnej kopii zapasowej. Na przykład, jeśli kiedykolwiek zajdzie zwykły tekst kopię klucza, aby używać poza HSM firmy Thales, usługi Azure Key Vault nie można pobrać go, ponieważ ma ona tylko nieodwracalny kopii.
+Ponieważ klucz przeniesiono zgodnie z instrukcjami opisanymi w [BYOK wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key), Key Vault zostanie utrzymana pliku Stokenizowanego klucza, aby chronić przed awariami węzły usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego działania jako utworzenia pełnej kopii zapasowej. Na przykład, jeśli kiedykolwiek zajdzie zwykły tekst kopię klucza, aby używać poza HSM firmy Thales, usługi Azure Key Vault nie można pobrać go, ponieważ ma ona tylko nieodwracalny kopii.
 
 ## <a name="export-your-tenant-key"></a>Eksport klucza dzierżawy
 W przypadku korzystania z rozwiązania BYOK nie można wyeksportować klucza dzierżawy ani z usługi Azure Key Vault, ani z usługi Azure Information Protection. Przywrócenie kopii klucza znajdującej się w usłudze Azure Key Vault nie jest możliwe. 

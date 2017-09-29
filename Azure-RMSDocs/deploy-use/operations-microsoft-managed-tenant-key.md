@@ -4,7 +4,7 @@ description: "Informacji na temat operacji cyklu życia, które są istotne, je�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
-# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Operacje cyklu życia klucza dzierżawy zarządzane przez firmę Microsoft
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cyklu życia klucza dzierżawy
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Jeśli firma Microsoft zarządza Twoim kluczem dzierżawy dla usługi Azure Information Protection (domyślnie), użyj poniższych sekcji w celu uzyskania dodatkowych informacji na temat operacji cyklu życia związanych z tą topologią.
+Jeśli firma Microsoft zarządza kluczem dzierżawy usługi Azure Information Protection (ustawienie domyślne), użyj poniższych sekcji, aby uzyskać więcej informacji na temat operacji cyklu życia związanych z tą topologią.
 
 ## <a name="revoke-your-tenant-key"></a>Odwołanie klucza dzierżawy
 Po anulowaniu subskrypcji usługi Azure Information Protection usługa ta wstrzymuje korzystanie z klucza dzierżawy, co nie wymaga żadnej akcji ze strony użytkownika.
@@ -38,6 +38,8 @@ Przykłady gdy może być konieczne ponowne generowanie kluczy dla usługi Azure
 
 - Firma została podzielona na dwie lub więcej firm. Po wymianie klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
 
+- Chcesz przenieść od jednego topologii zarządzania kluczami do innego.
+
 - Uważasz, że zostanie naruszone bezpieczeństwo kopii głównej klucza dzierżawy.
 
 Do ponownego generowania kluczy można wybrać inny klucz zarządzany przez firmę Microsoft jako klucz dzierżawy, ale nie można utworzyć nowy klucz zarządzany przez firmę Microsoft. Aby utworzyć nowy klucz, należy zmienić topologii klucza być zarządzany przez klienta (BYOK).
@@ -48,7 +50,7 @@ Aby wybrać inny klucz, aby pełnił rolę klucza aktywne dzierżawy usługi Azu
 
     (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-Aby zmienić topologii klucza być zarządzany przez klienta (BYOK), zobacz [wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key).
+Aby zmienić topologii klucza być zarządzany przez klienta (BYOK), zobacz [BYOK wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
 Za tworzenie kopii zapasowych klucza dzierżawy odpowiada firma Microsoft. Nie wymaga to żadnej akcji z Twojej strony.
@@ -62,11 +64,11 @@ Możesz wyeksportować konfigurację usługi Azure Information Protection i kluc
 
 ### <a name="step-2-wait-for-verification"></a>Krok 2. Oczekiwanie na weryfikację
 
--   Firma Microsoft sprawdza, czy żądanie wydania klucza dzierżawy usługi Azure Information Protection jest uzasadnione. Proces ten może potrwać do trzech tygodni.
+- Firma Microsoft sprawdza, czy żądanie wydania klucza dzierżawy usługi Azure Information Protection jest uzasadnione. Proces ten może potrwać do trzech tygodni.
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>Krok 3. Otrzymanie instrukcji dotyczących klucza od CSS
 
--   Pomoc techniczna firmy Microsoft (CSS, Customer Support Services) przesyła konfigurację i klucz dzierżawy usługi Azure Information Protection w formie zaszyfrowanej w pliku chronionym hasłem. Ten plik ma rozszerzenie **tpd**. W tym celu CSS przesyła najpierw Tobie (osobie, która zainicjowała eksport) narzędzie pocztą e-mail. Narzędzie należy uruchomić z wiersza polecenia w następujący sposób:
+- Pomoc techniczna firmy Microsoft (CSS, Customer Support Services) przesyła konfigurację i klucz dzierżawy usługi Azure Information Protection w formie zaszyfrowanej w pliku chronionym hasłem. Ten plik ma rozszerzenie **tpd**. W tym celu CSS przesyła najpierw Tobie (osobie, która zainicjowała eksport) narzędzie pocztą e-mail. Narzędzie należy uruchomić z wiersza polecenia w następujący sposób:
 
     ```
     AadrmTpd.exe -createkey
@@ -95,7 +97,7 @@ Jeśli przyczyną eksportu klucza dzierżawy jest chęć zaprzestania korzystani
 ## <a name="respond-to-a-breach"></a>Reakcja na naruszenie zabezpieczeń
 Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet wtedy, gdy jest on chroniony dobrze, mogą występować luki w obecnej generacji technologii klucza i algorytmy i długości kluczy.
 
-Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli dane zdarzenie ma wpływ na Twoje zasoby, firma Microsoft powiadomi o tym administratorów dzierżawy usługi Azure Information Protection pocztą e-mail, korzystając z adresu podanego podczas rejestrowania subskrypcji.
+Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli to zdarzenie dotyczy Twoich zasobów, firma Microsoft będzie wysyłać administratorami dzierżawy usługi Azure Information Protection za pośrednictwem poczty e-mail, za pomocą adresu e-mail podanego podczas subskrybowania.
 
 W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć użytkownik lub firma Microsoft, jest zależne od zakresu naruszenia. Firma Microsoft zapewnia wsparcie w tym procesie. Poniższa tabela przedstawia typowe sytuacje i prawdopodobne reakcje, choć dokładna reakcja jest zależna od informacji uzyskanych w trakcie badania.
 

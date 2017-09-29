@@ -4,17 +4,17 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: fff96103544242510b7e53b1636f1f95fbd4bb2b
-ms.sourcegitcommit: c5e117f5329c6e5a93d5858a3b4609aadd8a6e7e
+ms.openlocfilehash: ba39c332437e2710554d1e8f69c3f676f0d870db
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -32,7 +32,7 @@ Po sklasyfikowaniu (i opcjonalnym zabezpieczeniu) całej zawartości można śle
 
 Etykiety usługi Azure Information Protection służą do klasyfikowania dokumentów i wiadomości e-mail. Dzięki zastosowaniu tej metody klasyfikację można zawsze rozpoznać, niezależnie od tego, gdzie dane są przechowywane lub komu zostały udostępnione. Etykiety zawierają oznaczenia wizualne, takie jak nagłówek, stopka lub znak wodny. Metadane dodawane do plików i nagłówków wiadomości e-mail mają postać zwykłego tekstu. Dzięki temu inne usługi (takie jak rozwiązania do zapobiegania utracie danych) mogą rozpoznać klasyfikację i podjąć odpowiednie działania. 
 
-Na przykład poniższa wiadomość e-mail została sklasyfikowana jako ogólna. Etykieta ta jest dodawana w stopce wiadomości e-mail jako wizualny wskaźnik informujący wszystkich adresatów, że wiadomość zawiera ogólne informacje biznesowe i nie należy jej wysyłać poza organizację. Etykieta jest również osadzona w nagłówkach wiadomości e-mail, aby usługi poczty e-mail mogły sprawdzić tę wartość i utworzyć wpis inspekcji lub uniemożliwić wysłanie wiadomości poza firmę.
+Na przykład poniższa wiadomość e-mail została sklasyfikowana jako ogólna. Etykieta jest dodawana jako stopkę do wiadomości e-mail. Ta stopka jest wizualnej dla wszystkich adresatów, które jest przeznaczone do danych biznesowych ogólnych, które nie mają być wysyłane poza organizację. Etykieta jest również osadzona w nagłówkach wiadomości e-mail, aby usługi poczty e-mail mogły sprawdzić tę wartość i utworzyć wpis inspekcji lub uniemożliwić wysłanie wiadomości poza firmę.
 
 ![Przykład stopki i nagłówków wiadomości e-mail z wyświetloną klasyfikacją usługi Azure Information Protection](../media/example-email-footerv2.png)
 
@@ -43,13 +43,13 @@ Stosowana technologia ochrony korzysta z usługi o nazwie *Azure Rights Manageme
 
 Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Podobnie jak w przypadku stosowanych etykiet, ochrona stosowana przy użyciu usługi Rights Management obejmuje dokumenty i wiadomości e-mail niezależnie od lokalizacji — wewnątrz organizacji, w sieciach, na serwerach plików, w aplikacjach i poza nimi. To rozwiązanie ochrony informacji zapewnia kontrolę nad danymi nawet wtedy, gdy są one udostępniane innym osobom.
 
-Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. Te zadania ochrony można uprościć i usprawnić przy użyciu *szablonów usługi Rights Management*.
+Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. Te zadania ochrony można uprościć i usprawnić przy użyciu *szablony usługi Rights Management*.
 
-### <a name="rights-management-templates"></a>Szablony usługi Rights Management
+### <a name="rights-management-templates"></a>Szablony zarządzania prawami
 
-Po aktywowaniu usługi Azure Rights Management zostają automatycznie utworzone dwa szablony domyślne, ograniczające dostęp do danych do użytkowników w ramach organizacji. Za pomocą tych szablonów można od razu przystąpić do ochrony danych przed wyciekiem poza organizację. Jako uzupełnienie szablonów domyślnych można skonfigurować własne szablony niestandardowe, stosujące bardziej restrykcyjne mechanizmy kontroli.
+Jak aktywować usługę Azure Rights Management, dwa szablony domyślne są dostępne dla Ciebie, który ogranicza dostęp do danych użytkownikom w organizacji. Za pomocą tych szablonów można od razu przystąpić do ochrony danych przed wyciekiem poza organizację. Można również uzupełnić te szablony domyślne, konfigurując własne ustawienia ochrony, które mają zastosowanie bardziej restrykcyjnych formantów.
 
-Szablony te mogą być częścią konfiguracji etykiety — zastosowanie konkretnej etykiety do dokumentu (lub wiadomości e-mail) spowoduje zarówno sklasyfikowanie, jak i automatyczne zabezpieczenie danych. Szablony mogą być również wybierane przez użytkowników lub administratorów w produktach i usługach, które obsługują technologię Azure Rights Management.
+Szablony mogą być częścią konfiguracji etykiety. Stosowania tej etykiety do dokumentu lub wiadomości e-mail, danych jest klasyfikowany i automatycznie chronione. Szablony mogą być również wybierane przez użytkowników lub administratorów w produktach i usługach, które obsługują technologię Azure Rights Management.
 
 W tym przykładzie pokazano, jak można wybrać szablon dla etykiety podczas konfigurowania zasad usługi Azure Information Protection w witrynie Azure Portal:
 
@@ -84,8 +84,6 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 ## <a name="resources-for-azure-information-protection"></a>Zasoby dotyczące usługi Azure Information Protection
 
-- Zawiadomienie: [Usługa Azure Information jest teraz ogólnie dostępna](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)
-
 - Bezpłatna wersja próbna: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
 - Pobierz klienta: [Klient usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
@@ -98,17 +96,7 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
 
-    Dodatkowo Microsoft Ignite 2016 oferuje wiele sesji na żądanie dotyczących usługi Azure Information Protection:
-
-    - [BRK2127: Adopt a comprehensive identity-driven solution for protecting and sharing data securely](https://myignite.microsoft.com/videos?q=BRK2127) (Wdrażanie kompleksowego rozwiązania opartego na tożsamościach służącego do ochrony i bezpiecznego udostępniania danych)
-    
-    - [THR2107: Collaborate securely using Azure Information Protection](https://myignite.microsoft.com/videos?q=THR2107) (Bezpieczna współpraca przy użyciu Azure Information Protection)
-    
-    - [THR2108: Ensure comprehensive protection of your data with Azure Information Protection](https://myignite.microsoft.com/videos?q=THR2108) (Zapewnianie kompleksowej ochrony danych dzięki usłudze Azure Information Protection)
-    
-    - [BRK3095: Learn how classification, labeling, and protection delivers persistent data protection (Dowiedz się, jak klasyfikacja, etykietowanie i ochrona zapewniają trwałą ochronę danych)](https://myignite.microsoft.com/videos?q=BRK3095)
-    
-    - [BRK2128: Send secure email to anyone with the power of Microsoft Office 365 and Azure Information Protection](https://myignite.microsoft.com/videos?q=BRK2128) (Wysyłanie zabezpieczonej poczty e-mail do wszystkich odbiorców za pomocą usług Microsoft Office 365 i Azure Information Protection)
+Ponadto **Microsoft Ignite 2017** ma wiele sesji dla usługi Azure Information Protection, które będą udostępniane na żądanie. Możesz [Wyszukaj i Znajdź](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522) te sesje w witrynie sieci Web Ignite, gdy będą one dostępne. Aby uzyskać podsumowanie anonsów, zobacz [What's new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/).
 
 
 ## <a name="next-steps"></a>Następne kroki

@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 34a20c3e83b2d3d6fde15d1226535ccb90431126
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: c851eb1ecf1551caee1ab2a6aac6f05c550cb96b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Samouczek Szybki start dla usługi Azure Information Protection 
 
@@ -36,7 +36,7 @@ Do ukończenia tego samouczka będą potrzebne:
   > [!TIP] 
   > Jeśli potrzebujesz subskrypcji, uzyskaj ją z wyprzedzeniem, ponieważ czasami ukończenie tego procesu może wymagać trochę czasu.
 
-- Konto administratora globalnego lub konto administratora zabezpieczeń do logowania do portalu Azure, aby skonfigurować zasady usługi Azure Information Protection. To konto musi również mieć adres e-mail i działającą usługę poczty e-mail, takich jak Exchange Online.
+- Konto administratora globalnego lub konta administratora zabezpieczeń, aby zalogować się do portalu Azure, aby aktywować ochrony i skonfigurować zasady usługi Azure Information Protection. To konto musi również mieć adres e-mail i działającą usługę poczty e-mail, takich jak Exchange Online.
 
 - Komputer z systemem Windows (co najmniej Windows 7 z dodatkiem SP1), na którym jest zainstalowana usługa Office 365 ProPlus z aplikacjami w wersji 2016 lub 2013, pakiet Office Professional Plus 2016, Office Professional Plus 2013 z dodatkiem Service Pack 1 lub Office Professional Plus 2010 z dodatkiem Service Pack 2. 
     

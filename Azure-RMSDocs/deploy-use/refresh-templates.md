@@ -4,7 +4,7 @@ description: "W przypadku korzystania z usługi Azure Rights Management szablony
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9a4e01bd23f7f6107b4021cc792839cf38ee3b5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9a5feea87df01507520da6a118372de0f6364452
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Odświeżanie szablonów dla użytkowników i usług
 
@@ -26,7 +26,7 @@ W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure
 
 |Aplikacja lub usługa|Odświeżanie szablonów po wprowadzeniu zmian|
 |--------------------------|---------------------------------------------|
-|Exchange Online<br /><br />Ma zastosowanie do reguł transportu, reguł DLP i aplikacji sieci Web programu Outlook|W celu odświeżenia szablonów wymagana jest konfiguracja ręczna.<br /><br />Aby uzyskać informacje na temat kroków konfiguracyjnych, zobacz następującą sekcję [Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates).|
+|Exchange Online<br /><br />Ma zastosowanie do reguł transportu i aplikacji sieci Web programu Outlook |Odświeżane automatycznie w ciągu godziny — nie wymaga dodatkowych kroków.<br /><br />Dotyczy to sytuacji, gdy używasz [szyfrowanie wiadomości usługi Office 365 z nowych funkcji](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Jeśli wcześniej skonfigurowano usługi Exchange Online do korzystania z usługi Azure Rights Management przez zaimportowanie zaufaną domenę publikacji (TPD), użyj ten sam zestaw instrukcji, aby włączyć nowe funkcje w programie Exchange Online.|
 |Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto, jako że klient usługi Azure Information Protection jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
 |Pakiety Office 2016 i Office 2013<br /><br />Aplikacja RMS sharing dla systemu operacyjnego Windows|Automatycznie odświeżane — według harmonogramu:<br /><br />– W przypadku nowszych wersji pakietu Office: odświeżanie odbywa się domyślnie co 7 dni.<br /><br />– W przypadku aplikacji RMS sharing dla systemu Windows: od wersji 1.0.1784.0 domyślne ustawienie uwzględnia codzienne odświeżanie. W przypadku wcześniejszych wersji odświeżanie odbywa się domyślnie co 7 dni.<br /><br />Aby wymusić odświeżenie w terminie wcześniejszym niż ujęty w harmonogramie, zobacz następującą sekcję: [Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Pakiet Office 2010|Automatyczne odświeżanie, gdy użytkownik wyloguje się z systemu Windows, zaloguje się ponownie i odczeka maksymalnie 1 godzinę.|
@@ -35,67 +35,6 @@ W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure
 |Aplikacja RMS sharing dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 
 Gdy aplikacje klienckie wymagają pobrania szablonów (pierwszy raz lub odświeżonych po zmianach), należy przygotować się na odczekanie do 15 minut, zanim pobranie zostanie ukończone, a nowe lub zaktualizowane szablony staną się w pełni funkcjonalne. Rzeczywisty czas może być różny zależnie od takich czynników, jak rozmiar i złożoność konfiguracji szablonu oraz łączność sieciowa. 
-
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Tylko usługa Exchange Online: Konfiguracja programu Exchange pod kątem pobierania zmienionych szablonów niestandardowych
-Jeśli została już skonfigurowana usługa Information Rights Management (IRM) dla usługi Exchange Online, szablony niestandardowe nie będą pobierane dla użytkowników, dopóki nie zostaną wprowadzone następujące zmiany w środowisku Windows PowerShell usługi Exchange Online.
-
-> [!NOTE]
-> Aby uzyskać więcej informacji na temat korzystania ze środowiska Windows PowerShell usługi Exchange Online, zobacz [Korzystanie ze środowiska PowerShell usługi Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx).
-
-Tę procedurę należy wykonać po każdej zmianie szablonu.
-
-### <a name="to-update-templates-for-exchange-online"></a>Aktualizacja szablonów dla usługi Exchange Online
-
-1.  Za pomocą środowiska Windows PowerShell w usłudze Exchange Online połącz się z usługą:
-
-    1.  Podaj nazwę i hasło użytkownika usługi Office 365:
-
-        ```
-        $UserCredential = Get-Credential
-        ```
-
-    2.  Połącz się z usługą Exchange Online, uruchamiając następujące dwa polecenia:
-
-        ```
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        ```
-
-        ```
-        Import-PSSession $Session
-        ```
-
-2.  Użyj polecenia cmdlet [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx), aby ponownie zaimportować zaufaną domenę publikacji (TDP) z usługi Azure RMS:
-
-    ```
-    Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
-    ```
-    Na przykład jeśli nazwą zaufanej domeny publikacji jest **RMS Online — 1** (typowa nazwa stosowana w wielu organizacjach), należy użyć polecenia: **Import-RMSTrustedPublishingDomain -Name "RMS Online — 1" -RefreshTemplates -RMSOnline**
-
-    > [!NOTE]
-    > Aby sprawdzić nazwę zaufanej domeny publikacji, można użyć polecenia cmdlet [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200707%28v=exchg.160%29.aspx).
-
-3.  Aby upewnić się, że szablony zostały pomyślnie zaimportowane, zaczekaj kilka minut, a następnie uruchom polecenie cmdlet [Get-RMSTemplate](http://technet.microsoft.com/library/dd297960%28v=exchg.160%29.aspx) i ustaw typ All (Wszystkie). Na przykład:
-
-    ```
-    Get-RMSTemplate -TrustedPublishingDomain "RMS Online - 1" -Type All
-    ```
-    > [!TIP]
-    > Warto przechowywać kopię danych wyjściowych, aby móc łatwo skopiować nazwy szablonów lub ich identyfikatory GUID, jeśli w późniejszym czasie zostanie przeprowadzona archiwizacja szablonu.
-
-4.  W odniesieniu do każdego zaimportowanego szablonu, który ma być dostępny w programie Outlook Web App, należy użyć polecenia cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) i ustawić typ Distributed (Rozproszone):
-
-    ```
-    Set-RMSTemplate -Identity "<name  or GUID of the template>" -Type Distributed
-    ```
-    Jako że program Outlook Web Access buforuje interfejs użytkownika na 24 godziny, użytkownicy mogą nie widzieć nowego szablonu aż do następnego dnia.
-
-Ponadto, jeśli używana jest usługa Exchange Online z usługą Office 365, w przypadku archiwizacji szablonu (niestandardowego lub domyślnego) użytkownicy korzystający z programu Outlook Web App lub urządzeń przenośnych, w których wykorzystywany jest protokół Exchange ActiveSync, będą w dalszym ciągu widzieć zarchiwizowane szablony.
-
-Aby użytkownicy nie widzieli już tych szablonów, należy połączyć się z usługą za pomocą środowiska Windows PowerShell w usłudze Exchange Online, a następnie użyć polecenia cmdlet [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx), uruchamiając następujące polecenie:
-
-```
-Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
-```
 
 ## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego
 Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z aplikacją do udostępniania usługi Rights Management (RMS) dla systemu operacyjnego Windows, można zmienić automatyczny harmonogram w taki sposób, aby zmienione szablony były odświeżane częściej niż częstotliwość domyślna. Można też wymusić natychmiastowe odświeżanie przez usunięcie istniejących danych z wartości rejestru.
@@ -142,10 +81,10 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 
     > 1.  Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli jeszcze nie zainstalowano modułu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
     > 2.  Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
-    > 
+    >
     >     Na przykład: **LicensingIntranetDistributionPointUrl: https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
     > 3.  Wykasuj z wartości ciąg **https://** oraz **/_wmcs/licensing**. Pozostała wartość stanowi nazwę FQDN usługi Microsoft RMS. W naszym przykładzie nazwa FQDN usługi Microsoft RMS ma następującą wartość:
-    > 
+    >
     >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  Usuń następujący folder i wszystkie zawarte w nim pliki: **%localappdata%\Microsoft\MSIPC\Templates**
