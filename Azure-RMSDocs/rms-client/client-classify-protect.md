@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -32,9 +32,7 @@ Etykiety dotyczy ochrony dokumentu, dokument chroniony nie jest odpowiedni do za
 
 Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład Dołącz plik do wiadomości e-mail.
 
-W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Możesz także użyć [aplikacji pakietu Office](#set-custom-permissions-for-a-document) lub [Eksploratora plików](#using-file-explorer-to-classify-and-protect-files), aby ustawić uprawnienia niestandardowe dla pliku przed jego udostępnieniem. 
-
-Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, w celu zachowania pierwotnych uprawnień należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
+W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Możesz także użyć [aplikacji pakietu Office](#set-custom-permissions-for-a-document) lub [Eksploratora plików](#using-file-explorer-to-classify-and-protect-files), aby ustawić uprawnienia niestandardowe dla pliku przed jego udostępnieniem. Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, w celu zachowania pierwotnych uprawnień należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
 
 Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
 
@@ -94,6 +92,16 @@ Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej e
     - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
+
+### <a name="safely-sharing-by-email"></a>Bezpieczne udostępnianie pocztą e-mail
+
+Po udostępnieniu dokumentów pakietu Office za pośrednictwem poczty e-mail, możesz dołączyć dokument do wiadomości e-mail możesz chronić i dokumentu jest automatycznie chronione przez te same ograniczenia, które są stosowane do wiadomości e-mail. 
+
+Jednak zaleca się najpierw ochrony dokumentu, a następnie dołącz do wiadomości e-mail. Chronić wiadomości e-mail oraz wiadomości e-mail zawiera poufne informacje. Dwie zalety ochrony dokumentu, przed dołączeniem do wiadomości e-mail:
+
+- Można śledzić i w razie potrzeby odwołać dokumentu po pocztą e-mail go.
+
+- Można stosować różne uprawnienia do dokumentu niż do wiadomości e-mail.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
 

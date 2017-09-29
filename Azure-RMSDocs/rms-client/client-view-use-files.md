@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące wyświetlania i używania dokumentu chronion
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8fd80d6ff97118cd37dd62e293768b145c98595
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 8ed2480892d5a48075d986ee64733b0144bbc5b4
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -50,13 +50,11 @@ Jednak jeśli masz urządzenie z systemem iOS lub Android, można użyć aplikac
 
 Zanim będzie można wyświetlić chroniony plik, użyta usługa Rights Management musi potwierdzić, że masz uprawnienia do wyświetlenia pliku. W tym celu usługa sprawdza Twoją nazwę użytkownika i hasło. W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
 
-Jeśli Twoja organizacja nie ma konta opartego na chmurze, z którego możesz skorzystać (dla usługi Office 365 lub Azure), ani nie używa lokalnych odpowiedników tego rodzaju usług (AD RMS), możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń. Umożliwi Ci to otwieranie plików chronionych za pomocą usług Rights Management:
+Jeśli Twoja organizacja ma konto oparte na chmurze, można użyć (dla usługi Office 365 lub Azure) i nie korzysta z wersji lokalnej równoważne (AD RMS), masz dwie opcje:
 
--   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
-    
-    Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
-    
--   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
+- Jeśli zostały wysłane chronioną wiadomość e-mail, postępuj zgodnie z instrukcjami, aby zalogować się przy użyciu dostawcy tożsamości społecznościowych (takich jak Google dla konta usługi Gmail) lub o jednorazowy kod dostępu.
+
+- Możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, dzięki czemu mogą otwierać dokumenty, które są chronione przez usługę Rights Management. Aby zastosować dla tego konta, kliknij łącze, aby zastosować dla [RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469) i użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. 
 
 ## <a name="to-view-and-use-a-protected-document"></a>Aby wyświetlić dokument chroniony i korzystać z niego
 
@@ -64,7 +62,7 @@ Jeśli Twoja organizacja nie ma konta opartego na chmurze, z którego możesz sk
 
 2. Jeśli zostanie wyświetlona strona do **logowania** lub **rejestrowania**, kliknij opcję **Zaloguj** i wprowadź swoje poświadczenia. Jeśli plik chroniony został wysłany do Ciebie jako załącznik, musisz określić ten sam adres e-mail, który został użyty przez nadawcę do wysłania pliku do Ciebie.
     
-    Jeśli nie masz konta spełniającego wymagania, zapoznaj się z sekcją [Monity o uwierzytelnienie](#prompts-for-authentication) na tej stronie. Utwórz bezpłatne konto i wróć do niniejszych instrukcji.
+    Jeśli nie masz konta spełniającego wymagania, zapoznaj się z sekcją [Monity o uwierzytelnienie](#prompts-for-authentication) na tej stronie.
 
 3. Wersja pliku tylko do odczytu zostanie otwarta w **Przeglądarce usługi Azure Information Protection**. Jeśli masz wystarczające uprawnienia, możesz wydrukować plik i go edytować. 
 
@@ -77,8 +75,7 @@ Jeśli Twoja organizacja nie ma konta opartego na chmurze, z którego możesz sk
 5. Jeśli masz do otwarcia dodatkowe pliki chronione, możesz przejść do nich bezpośrednio z przeglądarki, korzystając z opcji **Otwórz**. Wybrane przez Ciebie pliki zastępują w przeglądarce oryginalny plik. 
 
 > [!TIP]
-> Jeśli nie można otworzyć pliku chronionego, należy użyć opcji **Pomoc i opinie** usługi Azure Information Protection i wybrać opcję **Uruchom diagnostykę**. Po zakończeniu testów można zresetować klienta, co może rozwiązać problem.
-
+> Jeśli nie można otworzyć pliku chronionego, można użyć **Uruchom diagnostykę** opcję **Chroń** > **Pomoc i opinie** usługi Azure Information Protection Klient do sprawdzania problemów występujących na komputerze, który może uniemożliwić chronionego dokumentu otwierania.
 
 ## <a name="other-instructions"></a>Inne instrukcje
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:

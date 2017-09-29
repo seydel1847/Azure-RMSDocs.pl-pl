@@ -4,7 +4,7 @@ description: "Jak aplikacje pakietu Office przez użytkownika końcowego, takich
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ede24547a01bc38e528ce02dac9abe0ade396c2d
-ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
+ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -50,7 +50,7 @@ Korzystając z usługi Exchange Online lub Exchange Server, można skonfigurowa�
 
 -   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) w bibliotece programu Exchange.
 
--   **Szyfrowanie wiadomości usługi Office 365** korzysta z reguł transportu do wysyłania zaszyfrowanych wiadomości e-mail do osób spoza firmy, czy wiadomości e-mail mogą być odczytywane w przeglądarce z interfejsem podobnym do programu Outlook w sieci web. W firmowych, zaszyfrowanych wiadomościach e-mail można dostosować tekst klauzuli wyłączenia odpowiedzialności i tekst nagłówka, a nawet dodać logo firmy. Więcej informacji zawiera artykuł [Szyfrowanie wiadomości usługi Office 365](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx) dostępny w witrynie internetowej pakietu Office.
+-   **Szyfrowanie wiadomości usługi Office 365** który obsługuje wysyłanie chronionej wiadomości e-mail i ochrony dokumentów pakietu Office jako załączników do dowolnego adresu na dowolnym urządzeniu. Dla kont użytkowników, które nie używają usługi Azure AD środowisko sieci web obsługuje dostawców tożsamości społecznościowych lub jednorazowy kod dostępu. Aby uzyskać więcej informacji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) z witryny sieci Web pakietu Office.
 
 Użycie lokalnego programu Exchange, używając funkcji IRM z usługą Azure Rights Management, wdrażając łącznik usługi Azure Rights Management. Ten łącznik działa jako przekaźnik między serwerami lokalnymi i usługą Azure Rights Management.
 

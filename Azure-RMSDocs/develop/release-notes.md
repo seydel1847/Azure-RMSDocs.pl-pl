@@ -1,36 +1,60 @@
 ---
-title: "Nowości i informacje o wersji | Azure RMS"
+title: "Nowości i informacje o wersji"
 description: "Spis ważnych zmian i funkcji w tej nowej wersji zestawu RMS SDK."
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 9fd96c934d4f7a8e09035ff7eda4517f65a27e17
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: df78d1f1740128c79c944a6b5d33353141933d78
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 
 ## <a name="whats-new"></a>Co nowego
-Zestaw Microsoft Rights Management SDK 4.2 umożliwia łatwiejsze i bardziej elastyczne włączanie aplikacji RMS. W tym temacie wymieniono ważne zmiany i funkcjonalności w tej wersji zestawu RMS SDK.
 
-### <a name="new-for-june-2016"></a>Nowości z czerwca 2016 r.
+W tym temacie wymieniono ważne zmiany i funkcje w tej nowej wersji zestawu RMS SDK v4.x.
 
-- **Obsługa nowoczesnego uwierzytelniania** — umożliwi logowanie oparte na bibliotece uwierzytelniania usługi Active Directory (ADAL) do aplikacji z obsługą usługi RMS. Zostaną udostępnione opcje logowania, takie jak usługa Multi-Factor Authentication (MFA), oparci na języku SAML dostawcy tożsamości firm zewnętrznych z aplikacjami klienckimi usługi RMS oraz uwierzytelnianie oparte na kartach inteligentnych i certyfikatach. Równocześnie zostanie wyeliminowana potrzeba korzystania z protokołu uwierzytelniania podstawowego w aplikacjach z obsługą usługi RMS.
+-   [Nowość w lipcu 2017](#new-for-july-2017)
+-   [Aktualizacja z października 2016](#October-2016-update)
+-   [Aktualizacja czerwca 2016 r.](#new-for-June-2016)
+-   [Aktualizacja z grudnia 2015 r.](#december-2015-update)
+-   [Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++](#july-2015-update-adds-support-for-linux-c-developm)
+-   [Może aktualizacji 2015 r. — dodaje Sterowanie rejestrowaniem](#may-2015-update-adds-logging-control)
+-   [Aktualizacja z lutego 2015 r. — obsługę aplikacji ze Sklepu Windows dodaje](#february-2015-update-adds-windows-store-application-support)
+-   [Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy winphone](#january-2015-update-adds-winphone-platform-support)
+-   [Października 2014 r. aktualizacja — uaktualnienie do zestawu Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
+-   [Informacje o wersji](#release-notes)
+-   [Często zadawane pytania](#frequently-asked-questions)
+
+### <a name="new-for-july-2017"></a>Nowość w lipcu 2017
+
+Aktualizacja dla naszych wersji Lipcowej uwzględnione zwiększanie poprawki zestawu SDK, teraz 4.2.5.
+
+- Zestaw SDK systemu android: Aplikacji można teraz **ustawić rejestrowania poziomu na bieżąco** z zestawu SDK systemu Android. Aby uzyskać więcej informacji, zobacz temat [Porady: Włączanie rejestrowania błędów i wydajności](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging)
+- Zestaw SDK systemu iOS nie obsługuje poziomu rejestrowania. 
+- Zestaw SDK teraz zwraca błąd dla tokenu dostępu do wartości NULL.
+
+### <a name="october-2016-update"></a>Aktualizacja z października 2016
+
+- Implementuje kilka poprawek błędów zaplecza.
+- Włącz kodu bitowego dla Apple iOS/OS zestawu SDK.
+
+### <a name="june-2016-update"></a>Aktualizacja czerwca 2016 r.
+
+- **Obsługa nowoczesnego uwierzytelniania** — przełącza na podstawie Active Directory Authentication Library ADAL logowania do usług RMS w aplikacjach z obsługą. Umożliwia ona funkcje logowania takich jak uwierzytelnianie wieloskładnikowe (MFA), na języku SAML dostawcy tożsamości innych firm z aplikacjami klienckimi usługi RMS, karty inteligentnej i uwierzytelnianie oparte na certyfikatach i eliminuje to potrzebę RMS z obsługą aplikacji, które mają korzystać z podstawowego Protokół uwierzytelniania.
 - **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach.
 - Ulepszenia wydajności
 - Poprawki
-
 
 ### <a name="december-2015-update"></a>Aktualizacja z grudnia 2015 r.
 
@@ -38,7 +62,7 @@ W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następując
 
 -   Śledzenie dokumentów, usługa RMS tylko w trybie online dla systemów operacyjnych iOS/OS X i Android.
 
-    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemach iOS/OS X, zapoznaj się z klasą [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx), która dostarcza informacje dotyczące śledzenia, a także dodatkową metodą rejestrowania śledzenia dokumentów w zasadzie [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Istnieją podobne dodatki dla systemu Android do klasy [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) i zasady [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
+    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemie iOS/OS X, zobacz [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx) klasy, która dostarcza informacje o śledzeniu i dokumentu dodatkową metodą rejestrowania śledzenia na [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Istnieją podobne dodatki dla systemu Android do klasy [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) i zasady [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
 
     Aby uzyskać szczegółowy opis funkcjonalności śledzenia dokumentów, zobacz temat [Instrukcje: korzystanie ze śledzenia dokumentów](how-to-use-document-tracking.md).
 
@@ -66,7 +90,7 @@ W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następując
 
 ### <a name="july-2015-update---adds-support-for-linux--c-development"></a>Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
 
-W tej wersji dodano następujące funkcjonalności:
+Tej wersji dodano następujące aktualizacje:
 
 -   Zestaw RMS SDK 4.1 dla platform Linux
 
@@ -74,7 +98,7 @@ W tej wersji dodano następujące funkcjonalności:
 
 ### <a name="may-2015-update---adds-logging-control"></a>Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
 
-W tej wersji dodano obsługę następujących funkcjonalności:
+Ta wersja dodaje obsługę następujące aktualizacje:
 
 -   iOS
 
@@ -92,7 +116,7 @@ W tej wersji dodano obsługę następujących funkcjonalności:
 
 ### <a name="february-2015-update---adds-windows-store-application-support"></a>Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
 
-W tym wydaniu dodano obsługę aplikacji ze Sklepu Windows, zapewniając funkcjonalność odpowiadającą wydaniom dla systemów Windows Phone, Android i iOS/OS zestawu RMS SDK 4.1.
+Ta wersja dodaje obsługę aplikacji ze Sklepu Windows i Windows Phone, Android i iOS/OS X wersji zestawu RMS SDK 4.1 zapewnia parzystość funkcji.
 
 ### <a name="january-2015-update---adds-winphone-platform-support"></a>Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
 
@@ -117,10 +141,10 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 **Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla systemów iOS/OS X i Android**
 
 -   **Obsługa usług AD RMS** —administratorzy IT mogą używać aplikacji z włączoną usługą RMS na urządzeniach przenośnych z rozszerzeniami dla urządzeń przenośnych nowego serwera usług AD RMS.
--   **Użycie trybu offline** — użytkownicy końcowi mogą uzyskać dostęp do chronionych przez usługę RMS danych w trybie offline.
+-   **Użycie trybu offline** — użytkownicy końcowi mają dostęp do danych chronionych przez usługę RMS w trybie offline.
 -   **Rozdzielone uwierzytelnianie** — deweloperzy mogą używać własnych bibliotek uwierzytelniania dla usług Azure RMS i AD RMS (lub używać zalecanej [biblioteki uwierzytelniania usługi Azure AD (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)).
 -   **Rozdzielony interfejs użytkownika** —deweloperzy mogą tworzyć interfejsy użytkownika, aby używać dokumentów chronionych przez usługę RMS i ochraniać je.
--   **Zmieniony interfejs API** — deweloperzy mogą korzystać z prostego i przejrzystego interfejsu API szyfrowania i odszyfrowywania, który zapewnia spójne działanie usługi RMS i interfejsu użytkownika przy minimalnym wysiłku.
+-   **Przeprojektowany interfejsu API** — deweloperzy mogą korzystać prosty i przezroczystego szyfrowania i odszyfrowywania interfejsu API, który zapewnia spójne działanie usługi RMS i środowisko, przy minimalnym wysiłku.
 
 **Wspólne dla wszystkich platform**
 
@@ -130,19 +154,19 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   Korzystając z przykładowej aplikacji na urządzeniu z systemem Amazon® Kindle do wyświetlania załączników PTXT, należy najpierw pobrać plik zanim będzie się go wyświetlać.
 
-    **Rozwiązanie** — jest to znany problem i zostanie rozwiązany później.
+    **Rozwiązanie** -znany problem zostanie rozwiązany później.
 
 -   Aplikacja, która korzysta z zestawu SDK może ulec awarii w przypadku zezwolenia na działanie wielu wystąpień.
 
     **Rozwiązanie** — upewnij się, że aplikacja nie zezwala na wywołania interfejsu API systemu Android przez wiele wystąpień.
 
--   W razie użycia metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) z parametrem length różnym od wartości *array.length* późniejsze użycie zawartości za pomocą zestawu SDK jest niemożliwe.
+-   Kiedy używać [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write (byte\[ \] array, int offset, int length) metody z parametrem length różnym od *array.length* wartość, nie jestem stanie korzystać z zawartości później za pomocą zestawu SDK.
 
     **Rozwiązanie** — jest to znany problem. Aby go unikać, zawsze przekazuj parametr *byte \[\]* array o długości odpowiadającej parametrowi length lub używaj metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array).
 
 **Systemy iOS i OS X**
 
--   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety z powodu usterki, obecnie nie obsługujemy całkowicie 1. lokalizacji. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
+-   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety z powodu usterki, firma Microsoft nie obsługują aktualnie pierwszy lokalizacja całkowicie. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
 
     1. portugalski
 
@@ -152,13 +176,13 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   Zestaw RMS SDK4.x nie pokazuje wskaźnika działania sieci.
 
-    Jest to znane zachowanie opcjonalne systemu iOS zgodnie z dokumentem Apple Human Interface Guidelines.
+    Jest to znane zachowanie opcjonalne systemu iOS zgodnie z Apple Human Interface Guidelines.
 
 **Tylko system OS X**
 
 -   Zestaw RMS SDK4.x nie pokazuje wskaźnika działania sieci.
 
-    Jest to znane zachowanie opcjonalne systemu OS X zgodnie z dokumentem Apple Human Interface Guidelines.
+    Jest to znane zachowanie opcjonalne OS X zgodnie z dokumentem Apple Human Interface Guidelines.
 
 -   **Rozwiązanie** — aby utworzyć aplikację z interfejsem wielu dokumentów (MDI) za pomocą naszego zestawu OS X SDK, użyj poniższych wskazówek.
 
@@ -181,13 +205,13 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Pytanie**: jak uzyskać nowego organizacyjnego dzierżawcę, aby wypróbować zestaw SDK i przykładowe aplikacje?
 
-**Odpowiedź**: wyślij wiadomość e-mail na adres <rmcstbeta@microsoft.com> z żądaniem poświadczeń dla organizacji testowych usługi Azure AD RMS.
+**A**: Aby poprosić o poświadczenia dla organizacji testowych usługi Azure AD RMS, Wyślij wiadomość e-mail do < rmcstbeta@microsoft.com >.
 
 **Pytanie**: w niniejszej dokumentacji nie widzę żadnych informacji o hierarchii testowej. Dlaczego?
 
 **Odpowiedź**: w nowych zestawach AD RMS SDK nie obowiązuje koncepcja hierarchii testowej. Zawsze korzystasz z hierarchii produkcyjnej.
 
-**Pytanie**: W wersji 2.1 zestawu RMS SDK dla każdej aplikacji implementującej ochronę informacji był potrzebny wygenerowany manifest. Czy obowiązuje to nadal wersji 4.0 i nowszych wersjach zestawu SDK?
+**Q**: W wersji 2.1 zestawu RMS SDK wygenerowany manifest było wymagane dla każdej aplikacji implementującej ochronę informacji. Dotyczy to nadal wersji 4.0 i nowsze wersje zestawu SDK?
 
 **Odpowiedź**: nie, manifesty nie są już potrzebne w wersji 3.0 ani nowszych zestawu Rights Management SDK.
 
@@ -212,7 +236,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **OS x**
 
-**Pytanie**: przykładowa platforma aplikacji została dostosowana do wersji Xcode 5. Czy mogę pracować z wersją Xcode 4.6?
+**Q**: przykładowa platforma aplikacji została dostosowana do wersji Xcode 5, można pracować z wersją Xcode 4.6?
 
 **Odpowiedź**: OS X SDK współpracuje tylko z Xcode 4.6 i nowszymi wersjami, a także z systemem OS X 10.8 i nowszymi.
 

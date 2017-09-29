@@ -4,27 +4,39 @@ description: "Etykiety, które użytkownicy widzą na pasku usługi Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 2d11eb649ecec835d2ddf0045d8672c5b45af95f
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: f17e149dcd8cfb7398909cbe3a83cdcf71b80b33
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
-Etykiety, które użytkownicy widzą na pasku usługi Information Protection, możesz usunąć lub zmienić ich kolejność, przeprowadzając konfigurację w zasadach usługi Azure Information Protection.
+Można usunąć lub zmienić kolejność etykiet, które użytkownicy widzą na pasku Information Protection, wybierając te akcje w ramach zasad usługi Azure Information Protection.
 
 ![Usuwanie lub zmiana kolejności etykiet w zasadach usługi Azure Information Protection](../media/info-protect-contextmenu.png)
 
 Jeśli usuniesz etykietę, która została zastosowana do dokumentów lub wiadomości e-mail, a następnie opublikujesz zasady usługi Azure Information Protection, taka etykieta zostanie automatycznie usunięta z tych dokumentów lub wiadomości e-mail, kiedy zostaną one otwarte następnym razem w kliencie usługi Azure Information Protection.
+
+Jednak jeśli etykieta zastosowano ochrony, czy ochrona nie zostanie usunięta. Ustawienia ochrony z etykiety pozostają i wyświetlane w **szablony ochrony**. Ten szablon teraz można przekonwertować na nową etykietę lub połączony z etykietą. Podczas pozostaje w tym szablonie, nie można utworzyć nową etykietę o takiej samej nazwie jako etykiety, który zostanie usunięty. Jeśli chcesz to zrobić, dostępne są następujące opcje:
+
+- Przekonwertować szablon na etykietę. 
+    
+    Ta akcja jest zalecane, ponieważ w razie potrzeby można zmienić nazwę szablonu i zmodyfikować ustawienia ochrony.
+
+- Zmień nazwę szablonu, lub usuń go za pomocą programu PowerShell.
+    
+    Przed wykonaniem tych akcji, należy wziąć pod uwagę czy innych administratorów lub usługi używany jest szablon oraz umożliwiać jej identyfikację za pomocą bieżącej nazwy. Szablon można usunąć tylko wtedy, gdy nie trzeba otwierać dokumentów lub wiadomości e-mail, które były chronione przez szablon.
+
+Aby uzyskać więcej informacji o zarządzaniu szablony ochrony, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
 Przed usunięciem etykiety rozważ, czy nie byłoby lepiej ją tylko wyłączyć. Po wyłączeniu etykiety, która została zastosowana do dokumentów i wiadomości e-mail, nie zostanie ona usunięta z tych dokumentów i wiadomości e-mail, ale przestanie być wyświetlana na pasku usługi Information Protection jako etykieta możliwa do wyboru przez użytkownika. Wyłączenie etykiety umożliwia również zachowanie oryginalnej konfiguracji, dzięki czemu w późniejszym czasie, po ponownym jej włączeniu, będzie można pozwolić użytkownikom na jej wybranie.
 
