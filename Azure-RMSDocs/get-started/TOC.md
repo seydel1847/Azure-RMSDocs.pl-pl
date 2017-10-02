@@ -11,7 +11,7 @@
 ## [Informacje i pomoc techniczna](information-support.md)
 ## [Terminologia](terminology.md)
 ## [Samouczek Szybki start](infoprotect-quick-start-tutorial.md)
-### [Krok 1. Aktywowanie usługi](infoprotect-tutorial-step1.md)
+### [Krok 1: Aktywowanie ochrony](infoprotect-tutorial-step1.md)
 ### [Krok 2. Skonfigurowanie i opublikowanie zasady](infoprotect-tutorial-step2.md)
 ### [Krok 3. Instalowanie klienta](infoprotect-tutorial-step3.md)
 ### [Krok 4. Sprawdzenie w działaniu — etykietowanie, klasyfikacja, ochrona](infoprotect-tutorial-step4.md)
