@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -171,11 +171,27 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 - **Wykluczone typy plików**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msp, .msi, .pdb, .jar
 
-- **Wykluczone foldery **: 
+- **Wykluczone foldery** : 
     - Windows
     - Program Files (\Program Files i \Program Files (x86))
     - \ProgramData 
     - \AppData (dla wszystkich użytkowników)
+
+### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione przez domyślny
+
+Każdego pliku, który jest chroniony hasłem nie mogą być chronione natywnie przez klienta usługi Azure Information Protection. W większości przypadków Zobacz pliki PDF, które są chronione hasłem, ale ta funkcja oferuje także inne aplikacje, takie jak aplikacje pakietu Office.
+
+Ponadto klienta usługi Azure Information Protection dla systemu Windows nie można natywnie chronić (lub wyłączyć ochronę) plików PDF w jednym z następujących sytuacji:
+
+- Plik PDF jest oparta na formularzu.
+
+- Chroniony plik PDF, który ma rozszerzenie nazwy pliku PDF. 
+    
+    Klienta usługi Azure Information Protection można chronić niechronionych plików PDF i włącz ponownie ochronę chroniony plik PDF, który ma rozszerzenie nazwy pliku ppdf.
+
+Jako obejście dla tych plików, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony dla wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólna ochrona tylko pliki, które spełnia podanych kryteriów.
+
+Chroni pliki te są ważne, można tymczasowo skopiuj je do innego komputera w celu ich objęty ochroną, a następnie skopiuj je ponownie ponownie.
 
 
 ## <a name="next-steps"></a>Następne kroki
