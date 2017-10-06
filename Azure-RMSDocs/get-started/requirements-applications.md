@@ -4,7 +4,7 @@ description: "Identyfikowanie aplikacji, które korzystają z interfejsów API u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 09/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5371ad1a5fb89176e47406b6c051efd1fa33b37
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: ba8dbc42771a590e18ede4e45782741b12ef897e
+ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -48,7 +48,7 @@ Informacje dotyczące kolumn tabeli:
 |**iOS**|Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />GigaTrust<br /><br /> TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikację usługi Azure Information Protection (wyświetlanie dokumentów chronionych)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Aplikację usługi Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikację usługi Azure Information Protection (Ochrona tekst i obrazy wyświetlanie)<br /><br />TITUS Docs: plik PFILE|
 |**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile (wyświetlanie dokumentów chronionych) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikację usługi Azure Information Protection (wyświetlanie dokumentów chronionych) <br /><br />Aplikacja GigaTrust dla systemu Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Aplikację usługi Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikację usługi Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
 |**macOS**|Office 2011 (tylko usługi AD RMS)<br /><br />Office 2016 dla komputerów Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Foxit Reader<br /><br />(Wyświetlanie dokumentów chronionych) aplikacja RMS sharing|Outlook 2011 (tylko usługi AD RMS)<br /><br />Outlook 2016 dla komputerów Mac<br /><br />Outlook dla komputerów Mac <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacji (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) do udostępniania usług RMS|
-|**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie dokumentowanie chronionych za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Citrix WorxMail <br /><br />Poczta programu Outlook <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
+|**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie dokumentów chronionych za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Citrix WorxMail <br /><br />Poczta programu Outlook (wyświetlanie chronionych wiadomości e-mail) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: pliki JT|
 |**Windows Phone 8.1**|Office Mobile (tylko usługi AD RMS)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|(Wyświetlanie dokumentów chronionych) aplikacja RMS sharing|Outlook Mobile [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacji (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) do udostępniania usług RMS|
 |**Blackberry 10**|Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Poczta e-mail Blackberry [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
