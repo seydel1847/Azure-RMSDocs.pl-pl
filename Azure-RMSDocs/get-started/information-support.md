@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0b788b8a380132d830fb6593f579dca9c8ac61bc
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 83148b97e7aca46365aa681c4a08c2029924fdd0
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -51,7 +51,7 @@ Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązy
 
 Jeśli korzystasz z pomocy technicznej Premium, odwiedź [portal dla klientów pomocy technicznej Premium](https://premier.microsoft.com/), w którym można przesyłać zdarzenia, przeglądać rozwiązania i uzyskać pomoc.
 
-Może się kwalifikujące się do **FastTrack**: asysta Centrum rozwiązania FastTrack można użyć w przypadku zakupu co najmniej 150 licencji w uprawniającym planie usługi Azure Information Protection. Asysta centrum rozwiązania FastTrack umożliwia współpracę ze specjalistami firmy Microsoft w celu oceny i skorygowania środowiska oraz włączenia w nim kwalifikujących się usług. Aby uzyskać więcej informacji, zobacz [Asysta centrum rozwiązania FastTrack dla usługi Azure Rights Management](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
+Może się kwalifikujące się do **FastTrack**: asysta Centrum rozwiązania FastTrack można użyć w przypadku zakupu co najmniej 150 licencji w uprawniającym planie usługi Azure Information Protection. Asysta centrum rozwiązania FastTrack umożliwia współpracę ze specjalistami firmy Microsoft w celu oceny i skorygowania środowiska oraz włączenia w nim kwalifikujących się usług. Aby uzyskać więcej informacji, zobacz [Centrum rozwiązania FastTrack dla pakietu Enterprise Mobility + Security (EMS)](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems).
 
 Pozostali klienci powinni użyć kanałów pomocy technicznej podanych w poniższej tabeli, w zależności od subskrypcji usługi Azure Information Protection.
 
