@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
+ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/08/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -40,15 +40,7 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 
 ## <a name="default-templates"></a>Szablony domyślne
 
-Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Po utworzeniu wspomniane dwa szablony mają następujące ograniczenia: 
-
-- Uprawnienia Odczyt lub Modyfikacja odnoszące się do chronionej zawartości
-    
-    - **Określone uprawnienia**: Wyświetl zawartość, Zapisz plik, Edytuj zawartość, Wyświetl przypisane prawa, Zezwalaj na makra, Przekaż, Odpowiedz, Odpowiedz wszystkim
-
-- Wyświetlanie chronionej zawartości w trybie tylko do odczytu
-    
-    - **Określone uprawnienie**: Wyświetl zawartość
+Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Po utworzeniu wspomniane dwa szablony mają uprawnienia, które są wymienione w [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates) dokumentacji.
 
 Ponadto szablony są skonfigurowane i umożliwiają dostęp w trybie offline przez 7 dni i nie mają datę wygaśnięcia.
 
@@ -63,22 +55,22 @@ Można również tworzyć własne szablony niestandardowe. Prawdopodobnie potrze
 
 Jeśli ostatnio uzyskano subskrypcję usługi Azure Information Protection, szablony domyślne są tworzone z następujących nazw:
 
-- **Poufne \ wszyscy pracownicy** uprawnienia odczytu lub modyfikowania chronionej zawartości.
+- **Poufne \ wszyscy pracownicy** że przyznaje odczytywać i modyfikować uprawnienia do chronionej zawartości.
 
-- **Poufny \ wszyscy pracownicy** w celu wyświetlenia tylko do odczytu do chronionej zawartości.
+- **Poufny \ wszyscy pracownicy** który nadaje uprawnienia tylko do odczytu do chronionej zawartości.
 
 Jeśli uzyskać subskrypcję usługi Azure Information Protection pewien czas temu, lub jeśli nie masz subskrypcji usługi Azure Information Protection, ale masz subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, szablony domyślne są tworzone z następujące nazwy:
 
-- **\<Nazwa organizacji > — poufne** uprawnienia odczytu lub modyfikowania chronionej zawartości.
+- **\<Nazwa organizacji > — poufne** że przyznaje odczytywać i modyfikować uprawnienia do chronionej zawartości.
 
-- **\<Nazwa organizacji > — poufne tylko do wyświetlania**, w celu wyświetlenia tylko do odczytu do chronionej zawartości. 
+- **\<Nazwa organizacji > — poufne tylko do wyświetlania** który nadaje uprawnienia tylko do odczytu do chronionej zawartości. 
 
 Możesz zmienić nazwę (i ponownie skonfiguruj) te szablony domyślne, korzystając z portalu Azure.
 
 >[!NOTE]
 >Jeśli nie widzisz szablony domyślne w **usługi Azure Information Protection — globalne zasady** bloku są konwertowane na etykiety lub połączony z etykietą. Nadal istnieją jako szablon, ale w portalu Azure, zobaczysz je w ramach konfiguracji etykietę, która obejmuje usługę Azure RMS protection. Zawsze można potwierdzić, szablony, jakie ma dzierżawy, uruchamiając [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) z [modułu AADRM PowerShell](administer-powershell.md).
 >
->Szablony, można przekonwertować ręcznie, zgodnie z objaśnieniem w dalszej części artykułu [przekonwertować szablony do etykiet](#to-convert-templates-to-labels), a następnie zmień je, jeśli chcesz. Lub one będą konwertowane automatycznie dla Ciebie Jeśli Twoje domyślne zasady usługi Azure Information Protection została niedawno utworzona i uaktywniono usługę Azure Rights Management dla swojej dzierżawy w tym czasie.
+>Szablony, można przekonwertować ręcznie, zgodnie z objaśnieniem w dalszej części artykułu [przekonwertować szablony do etykiet](#to-convert-templates-to-labels), a następnie zmień je, jeśli chcesz. Lub są konwertowane automatycznie dla Ciebie Jeśli Twoje domyślne zasady usługi Azure Information Protection została niedawno utworzona i uaktywniono usługę Azure Rights Management dla swojej dzierżawy w tym czasie.
 
 Szablony, które zostaną zarchiwizowane wyświetlane jako niedostępny w **usługi Azure Information Protection — globalne zasady** bloku. Nie można wybrać te szablony dla etykiet, ale może być przekonwertowany do etykiet.
 
@@ -97,11 +89,11 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 
 - Nie można skopiować ani usunąć szablonu w portalu Azure. Po przekonwertowaniu szablonu z etykietą, można skonfigurować etykietę można zatrzymać za pomocą szablonu, wybierając **nieskonfigurowane** dla **ustawić uprawnień dla dokumentów i wiadomości e-mail zawierających tę etykietę** opcji. Alternatywnie można usunąć etykietę. W obu przypadkach jednak szablon nie zostanie usunięty i pozostaje w stanie zarchiwizowane.
     
-    Można teraz usunąć szablon przy użyciu programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet. Umożliwia także tego polecenia cmdlet programu PowerShell dla szablonów, które nie są konwertowane na etykiety. Jednak jeśli usuniesz szablon, który został użyty do ochrony zawartości tej zawartości można będzie niemożliwe. Usuń szablony tylko wtedy, gdy masz pewność, że nie zostały użyte do ochrony dokumentów lub wiadomości e-mail w środowisku produkcyjnym. Ze względów należy wziąć pod uwagę najpierw Eksportowanie szablonu jako kopii zapasowej, za pomocą [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) polecenia cmdlet. 
+    Można teraz usunąć szablon przy użyciu programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet. Umożliwia także tego polecenia cmdlet programu PowerShell dla szablonów, które nie są konwertowane na etykiety. Jednak jeśli usuniesz szablon, który został użyty do ochrony zawartości tej zawartości można będzie niemożliwe. Usuń szablony tylko wtedy, gdy masz pewność, że nie zostały użyte do ochrony dokumentów lub wiadomości e-mail w środowisku produkcyjnym. Ze względów warto rozważyć najpierw wyeksportowanie szablonu jako kopii zapasowej za pomocą [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) polecenia cmdlet. 
 
 - Wyświetlanie szablonów dla działów (szablony, których zakres jest skonfigurowany) w ramach globalnych zasad. Obecnie edytowanie i zapisanie szablonu dla działu powoduje usunięcie konfiguracji zakresu. Odpowiednikiem szablonu o określonym zakresie w zasadach usługi Azure Information Protection jest [zasada z określonym zakresem](configure-policy-scope.md). W przypadku konwersji szablonu na etykietę możesz wybrać istniejący zakres.
     
-    Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić zgodność za pomocą polecenia cmdlet programu PowerShell [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty).
+    Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić ustawienia zgodności aplikacji przy użyciu programu PowerShell i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
 
 - Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet. Ponadto ten szablon nie jest już wyświetlany w **szablony** lub **szablony ochrony** sekcji. W tej sekcji jest w trakcie zmieniana.
 
@@ -149,7 +141,7 @@ Podczas konwertowania szablonu do etykiety:
 
 - Nazwa szablonu jest konwertowana na nazwę nowej etykiety i opis szablonu jest konwertowany na etykietkę narzędzia. 
 
-- Jeśli stan szablonu został opublikowany, to ustawienie jest mapowane na **Włączone**: **Włączone** dla etykiety, która będzie wyświetlana jako etykieta dla użytkowników po następnym opublikowaniu zasad usługi Azure Information Protection. Jeśli stan szablonu został zarchiwizowany, to ustawienie jest mapowane na **Włączone**: **Wyłączone** dla etykiety i nie będzie ona wyświetlana jako etykieta dostępna dla użytkowników.
+- Jeśli stan szablonu został opublikowany, to ustawienie jest mapowane na **Włączone**: **Włączone** dla etykiety, która będzie wyświetlana jako etykieta dla użytkowników po następnym opublikowaniu zasad usługi Azure Information Protection. Jeśli stan szablon został zarchiwizowany, to ustawienie mapuje **włączone**: **poza** etykiety i będzie wyświetlany jako etykieta dostępne dla użytkowników.
 
 - Ustawienia ochrony są zachowywane i można je edytować, jeśli jest to wymagane, a także dodać inne ustawienia etykiety, takie jak znaczniki wizualne i warunki.
 

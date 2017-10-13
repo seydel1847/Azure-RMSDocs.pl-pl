@@ -4,7 +4,7 @@ description: "Faza 1 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/27/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-1---preparation"></a>Faza 1 migracji — przygotowanie
 
@@ -70,13 +70,13 @@ W przypadku większości migracji niepraktyczne jest migrowanie wszystkich klien
 
     Następnie skonfiguruj tę grupę dla kontrolek dołączania, podstawiając identyfikator obiektu grupy w miejsce podanego w tym przykładzie, i po wyświetleniu monitu wprowadź **Y**, aby potwierdzić:
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501"
+        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
 
 3. [Pobierz następujący plik](https://go.microsoft.com/fwlink/?LinkId=524619) zawierający skrypty migracji klienta:
     
-    **ClientMigration.zip**
+    **Scripts.zip migracji**
     
-4. Wyodrębnij pliki i postępuj zgodnie z instrukcjami w pliku **PrepareClient.cmd**, aby zawierał nazwę serwera dla ekstranetowego adresu URL licencjonowania klastra usług AD RMS. 
+4. Wyodrębnij pliki i postępuj zgodnie z instrukcjami **Prepare Client.cmd** tak, aby zawierał nazwę serwera dla programu AD RMS klastra ekstranetu adres URL licencjonowania. 
     
     Aby zlokalizować tę nazwę, w konsoli usług Active Directory Rights Management kliknij nazwę klastra. Z informacji **Szczegóły klastra** skopiuj nazwę serwera z wartości **Licencjonowanie** w sekcji ekstranetowych adresów URL klastra. Na przykład: **rmscluster.contoso.com**.
 

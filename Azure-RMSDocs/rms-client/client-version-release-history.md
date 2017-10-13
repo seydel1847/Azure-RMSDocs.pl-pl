@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2b6e6e4d824c8f76be605d9e728c0405aba960e5
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
-ms.translationtype: MT
+ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
 
@@ -47,6 +47,8 @@ Ta wersja zawiera MSIPC wersji 1.0.3219.0619 klienta usługi RMS.
 
 - Etykiety są wyświetlane z **Chroń** na Wstążce pakietu Office, oprócz wyświetlania na pasku Information Protection. 
 
+- Ochrona natywna dla następujących typów plików programu Visio: .vsdm, vsdx, .vssm, .vssx, .vstm, .vstx
+
 - Obsługa klienta zaawansowane konfiguracje, które można skonfigurować w portalu Azure. Te konfiguracje obejmują:
     
     - [Ukrywanie przycisku nie przesyłaj dalej w programie Outlook](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)
@@ -59,7 +61,7 @@ Ta wersja zawiera MSIPC wersji 1.0.3219.0619 klienta usługi RMS.
 
 - Dla programu PowerShell, obsługiwać pliki etykiet nieinteraktywnie przy użyciu nowych poleceń cmdlet programu PowerShell [AIPAuthentication zestaw](/powershell/module/azureinformationprotection/set-aipauthentication) i [AIPAuthentication wyczyść](/powershell/module/azureinformationprotection/clear-aipauthentication). Aby uzyskać więcej informacji jak używać tych poleceń cmdlet, zobacz [sekcji PowerShell](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) podręczniku administratora.
 
-- Dla polecenia cmdlet programu PowerShell [AIPFileLabel zestaw](/powershell/module/azureinformationprotection/set-aipfilelabel) i [AIPFileClassification zestaw](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails **. Parametry te umożliwiają Określ adres e-mail właściciela właściwości niestandardowej, a pozostawienie niezmienionej dokumentów, które etykiety daty.
+- Dla polecenia cmdlet programu PowerShell [AIPFileLabel zestaw](/powershell/module/azureinformationprotection/set-aipfilelabel) i [AIPFileClassification zestaw](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails** . Parametry te umożliwiają Określ adres e-mail właściciela właściwości niestandardowej, a pozostawienie niezmienionej dokumentów, które etykiety daty.
 
 **Poprawki**:
 

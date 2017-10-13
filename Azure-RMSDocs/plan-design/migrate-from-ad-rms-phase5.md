@@ -4,7 +4,7 @@ description: "Faza 5 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
-ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
+ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -48,11 +48,35 @@ Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości prze
 >[!IMPORTANT]
 > Po zakończeniu tej migracji klaster usługi AD RMS nie może być używany z usługą Azure Information Protection ani z opcją „hold your own key” (HYOK). Jeśli zdecydujesz się używać rozwiązania HYOK dla etykiety usługi Azure Information Protection, to z powodu przekierowań, które są teraz stosowane, używany klaster usługi AD RMS musi mieć różne adresy URL licencjonowania do tych w klastrach, które zostały poddane migracji.
 
-## <a name="step-11-remove-onboarding-controls"></a>Krok 11. Usuwanie kontrolek dołączania
+## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>Krok 11. Skonfiguruj ponownie klientów urządzeń przenośnych i komputerów Mac, a następnie usuń kontrolki dołączania
 
-Po przeprowadzeniu migracji wszystkich istniejących klientów do usługi Azure Information Protection nie ma powodu, aby w dalszym ciągu korzystać z kontrolek dołączania i obsługiwać grupę **AIPMigrated** utworzoną na potrzeby procesu migracji. 
+Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV usługi DNS, które zostały utworzone podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
 
-Najpierw usuń kontrolki dołączania, a następnie usunąć **AIPMigrated** grupę i wszystkie zadania wdrażania oprogramowania, które można utworzyć w celu wdrożenia przekierowań.
+Jeśli te zmiany DNS propogated, Ci klienci automatycznie odnajdzie i zacząć korzystać z usługi Azure Rights Management. Jednakże komputerach Mac z systemem Office Mac buforowanie tych informacji z usług AD RMS. Dla tych komputerów ten proces może potrwać do 30 dni. 
+
+Aby wymusić komputerów Mac, aby natychmiast uruchomić proces wykrywania w narzędziu keychain, wyszukaj "adal" i Usuń wszystkie wpisy ADAL. Następnie uruchom następujące polecenia na tych komputerach:
+
+````
+
+rm -r ~/Library/Cache/MSRightsManagement
+
+rm -r ~/Library/Caches/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Caches/Microsoft\ Rights\ Management\ Services
+
+rm -r ~/Library/Containers/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Containers/com.microsoft.RMSTestApp
+
+rm ~/Library/Group\ Containers/UBF8T346G9.Office/DRM.plist
+
+killall cfprefsd
+
+````
+
+Gdy wszystkie istniejące komputery Windows poddano migracji do usługi Azure Information Protection, to nie ma powodu w dalszym ciągu używać kontrolki dołączania i obsługa **AIPMigrated** grupę utworzoną podczas procesu migracji. 
+
+Najpierw usuń kontrolki dołączania, a następnie usunąć **AIPMigrated** grupy i dowolnej metody wdrażania oprogramowania, utworzony skryptów migracji.
 
 Aby usunąć kontrolki dołączania:
 
@@ -63,6 +87,8 @@ Aby usunąć kontrolki dołączania:
 2. Uruchom następujące polecenie i wprowadź **Y** w celu potwierdzenia:
 
         Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+    
+    Należy pamiętać, że to polecenie usuwa wszystkie wymuszania licencji dla usługi Azure Rights Management ochrony tak, aby wszystkie komputery można chronić dokumenty i wiadomości e-mail.
 
 3. Potwierdź, że kontrolki dołączania nie są już ustawione:
 

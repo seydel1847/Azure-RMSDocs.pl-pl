@@ -4,7 +4,7 @@ description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: c81d7131bfb2a5f1e0742cd8dd55d52e3a65984a
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -112,11 +112,7 @@ Otwórz sesję programu PowerShell i uruchom następujące polecenia:
     
         Enable-Aadrm
 
-**Co zrobić, jeśli dzierżawa usługi Azure Information Protection została już aktywowana?** Jeśli usługa Azure Rights Management została aktywowana w Twojej organizacji, użytkownicy mogli już używać usługi Azure Information Protection do ochrony zawartości przy użyciu automatycznie generowanego klucza dzierżawy (i domyślnych szablonów) zamiast istniejących kluczy (i szablonów) z usługi AD RMS. Jest to mało prawdopodobne w przypadku komputerów, które są właściwie zarządzane w intranecie, ponieważ są one automatycznie konfigurowane na potrzeby infrastruktury usług AD RMS. Może się jednak tak zdarzyć w przypadku komputerów grupy roboczej lub komputerów, które rzadko łączą się z intranetem. Niestety zidentyfikowanie tych komputerów może być trudne, dlatego zalecamy rezygnację z aktywowania usługi przed zaimportowaniem danych konfiguracji z usług AD RMS.
-
-Jeśli dzierżawa usługi Azure Information Protection została już aktywowana i można zidentyfikować te komputery, upewnij się, że na tych komputerach uruchomiono skrypt CleanUpRMS.cmd zgodnie z opisem w [kroku 7](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection). Uruchomienie tego skryptu wymusza ponowne zainicjowanie środowiska użytkownika, tak aby pobierali oni zaktualizowany klucz dzierżawy i zaimportowane szablony.
-
-Ponadto jeśli utworzono szablony niestandardowe, które mają zostać użyte po migracji, należy je wyeksportować i zaimportować. Ta procedura została opisana w następnym kroku. 
+**Co zrobić, jeśli dzierżawa usługi Azure Information Protection została już aktywowana?** Jeśli usługa Azure Rights Management została już aktywowana dla Twojej organizacji i utworzono szablony niestandardowe, które mają zostać użyte po migracji, należy wyeksportować i zaimportować te szablony. Ta procedura została opisana w następnym kroku. 
 
 ## <a name="step-6-configure-imported-templates"></a>Krok 6. Konfigurowanie importowanych szablonów
 
