@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -86,6 +86,18 @@ Szablony niestandardowe zostały przeniesione do portalu Azure, gdzie można nad
 
 Aby uzyskać więcej informacji na temat szablonów w portalu Azure, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
+## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>I był chroniony dokument i chcesz teraz zmienić prawa użytkowania lub dodanie użytkowników, należy włączyć ją ponownie dokument?
+
+Jeśli dokument był chroniony za pomocą etykiety lub szablonu, jest niepotrzebna włączyć ją ponownie dokument. Zmodyfikować etykiety lub szablon wprowadzania zmian do prawa użytkowania lub dodać nowej grupy (lub użytkowników), a następnie zapisz i opublikować te zmiany:
+
+- Gdy użytkownik nie dostęp do dokumentu, przed wprowadzeniem zmian, zmiany zaczynają obowiązywać natychmiast po otwarciu dokumentu. 
+
+- Gdy użytkownik ma już dostęp do dokumentu, zmiany zostaną zastosowane po ich [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) wygaśnie. Włącz ponownie ochronę dokumentu, tylko wtedy, gdy nie może czekać na licencji użytkowania wygaśnie. Efektywne ponownej ochrony tworzy nową wersję dokumentu, a w związku z tym nowej licencji użytkowania dla użytkownika.
+
+Jeśli skonfigurowano już grupę dla wymaganych uprawnień, można zmienić członkostwo grupy, aby dołączyć lub wykluczyć użytkowników i nie istnieje potrzeba aby zmienić etykietę lub szablonu. Może być małe opóźnienia, aby zmiany zaczęły obowiązywać, ponieważ członkostwo w grupie jest [pamięci podręcznej](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) przez usługę Azure Rights Management.
+
+Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie można zmienić uprawnień dla istniejącego dokumentu. Należy ponownie ochrony dokumentu oraz określić wszyscy użytkownicy i wszystkie prawa użytkowania, które są wymagane do tej nowej wersji dokumentu. Włączyć ją ponownie chroniony dokument, musi mieć prawo użytkowania Pełna kontrola. 
+
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
 Oczywiście, a dodatkową korzyścią jest to, że użytkownicy będą mogli w łatwy sposób chronić wiadomości e-mail i załączniki, a także korzystać z nich w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
 
@@ -116,8 +128,6 @@ Tak. Po przekonwertowaniu szablonu z etykietą w portalu Azure, można skonfigur
 
 Aby uzyskać więcej informacji na temat konwertowania szablonów niestandardowych etykiet, aby następnie można łatwo dodać użytkowników zewnętrznych, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
-Aby uzyskać więcej informacji na temat konwertowania szablonów niestandardowych etykiet, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
-
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Typ grupy można używać z usługą Azure RMS?
 W przypadku większości scenariuszy można użyć dowolnego typu grupy w usłudze Azure AD, która ma adres e-mail. Ta zasadą zawsze ma zastosowanie, gdy przypisywanie praw użytkowania, ale istnieją pewne wyjątki do administrowania usługą Azure Rights Management. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure Information Protection dla grupy kont](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts).
 
@@ -129,7 +139,7 @@ Odbiorcy zobaczą opcję, aby zalogować się do swojego konta usługi Gmail, Ya
 
 Aby obsługiwać ten scenariusz, Exchange Online musi być włączony dla usługi Azure Rights Management i nowe możliwości w szyfrowanie wiadomości usługi Office 365. Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [usługi Exchange Online: Konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
 
-Aby uzyskać więcej informacji na temat nowych funkcji, które obsługują wszystkie konta e-mail na wszystkich urządzeniach, zobacz następującym wpisie w blogu: [o nowych funkcji dostępnych w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
+Aby uzyskać więcej informacji na temat nowych funkcji, które obejmują obsługi wszystkich kont e-mail na wszystkich urządzeniach, zobacz następującym wpisie w blogu: [o nowych funkcji dostępnych w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
 Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obsługują obecnie wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą zawierającą informacje na temat [aplikacji z obsługą usług RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
@@ -178,15 +188,13 @@ Użyj [funkcja superużytkowników](../deploy-use/configure-super-users.md), kt�
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>Podczas testowania odwołania w witrynie śledzenia dokumentów wyświetlany jest komunikat informujący, że użytkownicy mogą nadal uzyskiwać dostęp do dokumentu przez okres do 30 dni — czy ten okres można skonfigurować?
 
-Tak. Ten komunikat odzwierciedla licencję użytkowania dla tego określonego pliku. Licencja użytkowania to powiązany z dokumentem certyfikat przyznawany użytkownikowi, który otwiera chroniony plik lub wiadomość e-mail. Ten certyfikat zawiera prawa użytkownika dla pliku lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości, a także dodatkowe ograniczenia dostępu zdefiniowane w zasadach dokumentu. Jeśli okres ważności licencji użytkowania zakończył się i użytkownik próbuje otworzyć plik lub wiadomość e-mail, poświadczenia użytkownika muszą zostać ponownie przesłane do usługi Azure Rights Management. 
+Tak. Ten komunikat odzwierciedla [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) dla tego określonego pliku. 
 
 W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy użytkownik jest uwierzytelniany w usłudze Azure Rights Management. Na przykład jeśli plik ma 30-dniowy okres ważności licencji użytkowania, a użytkownik ma już otwarty dokument, ten użytkownik będzie mieć nadal dostęp do dokumentu w okresie ważności licencji użytkowania. Po wygaśnięciu licencji użytkowania użytkownik musi zostać ponownie uwierzytelniony. Nastąpi wtedy odmowa dostępu, ponieważ dokument będzie już odwołany.
 
 To odwołanie nie dotyczy użytkownika, który włączył ochronę dokumentu, czyli [wystawcy usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) — ma on zawsze dostęp do swoich dokumentów. 
 
-Wartość domyślna dla okresu ważności licencji użytkowania dla dzierżawy wynosi 30 dni. Wartość tę można skonfigurować przy użyciu polecenia cmdlet programu PowerShell **Set-AadrmMaxUseLicenseValidityTime**. To ustawienie może zostać zastąpione przez bardziej restrykcyjne ustawienie w szablonie. 
-
-Aby uzyskać dodatkowe informacje i przykłady sposobu działania licencji użytkowania, zobacz szczegółowy opis polecenia [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime).
+Wartość domyślna dla okresu ważności licencji używany dla dzierżawy to 30 dni i to ustawienie może być zastąpiona przez bardziej restrykcyjne ustawienie w etykiecie lub w szablonie. Aby uzyskać więcej informacji o licencji użytkowania i sposobie konfigurowania go, zobacz [licencję użytkowania usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-use-license) dokumentacji.
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Czy usługa Rights Management może uniemożliwiać przechwytywanie ekranu?
 Przez nieprzyznanie [prawa użytkowania](../deploy-use/configure-usage-rights.md) **Kopiowanie** usługa Rights Management może zapobiegać przechwytywaniu ekranu za pomocą wielu typowych narzędzi na różnych platformach Windows (Windows 7, Windows 8.1, Windows 10, Windows Phone) i Android. Jednak urządzenia z systemem iOS i komputery Mac nie zezwalają żadnej aplikacji na zapobieganie przechwytywaniu ekranu. Podobna sytuacja ma miejsce w przypadku przeglądarek (na przykład używanych łącznie z aplikacjami Outlook Web App i Office Online), które również nie mogą uniemożliwiać przechwytywania ekranu.

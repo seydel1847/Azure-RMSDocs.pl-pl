@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -34,7 +34,7 @@ Skorzystaj z poniższych informacji, aby dowiedzieć się, jakie typy plików s�
 
 ## <a name="file-types-supported-for-classification-only"></a>Typy plików, dla których jest obsługiwana tylko klasyfikacja
 
-Sama klasyfikacja jest obsługiwana dla następujących typów plików. Dodatkowe typy plików obsługują klasyfikację, jeśli są również chronione (zobacz sekcję [Typy plików, dla których jest obsługiwana klasyfikacja i ochrona](#supported-file-types-for-classification-and-protection)).
+Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są chronione.
 
 - **Adobe Portable Document Format**: .pdf
 
@@ -45,15 +45,22 @@ Sama klasyfikacja jest obsługiwana dla następujących typów plików. Dodatkow
 - **Microsoft Publisher**: .pub
 
 - **Microsoft Office 97, Office 2010, Office 2003**: .xls, .xlt, .doc, .dot, .ppt, .pps, .pot
+
 - **Microsoft XPS**: .xps .oxps
 
-- **Obrazy**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi.png, .tif, .tiff
+- **Obrazy**: jpg, jpe, JPEG, .jif, jfif, .jfi. PNG, tif, TIFF
 
 - **Autodesk Design Review 2013**: .dwfx
 
 - **Adobe Photoshop**: .psd
 
 - **Digital Negative**: .dng
+
+Inne typy plików obsługuje klasyfikacji są również chronione. Dla tych typów plików, zobacz [obsługiwane typy plików do klasyfikowania i ochrony](#supported-file-types-for-classification-and-protection) sekcji.
+
+Na przykład w bieżącym [domyślne zasady](../deploy-use/configure-policy-default.md), **ogólne** etykiety stosuje klasyfikacji i nie ma zastosowania ochrony. Można zastosować **ogólne** etykiety w pliku o nazwie sales.pdf, ale nie można zastosować do pliku o nazwie sales.txt tej etykiety. 
+
+Również w bieżące zasady domyślne **poufne \ wszyscy pracownicy** stosuje klasyfikowania i ochrony. Etykieta można zastosować do pliku o nazwie sales.pdf i plik o nazwie sales.txt. Po prostu ochrony można zastosować do tych plików bez klasyfikacji.
 
 ## <a name="file-types-supported-for-protection"></a>Typy plików, dla których jest obsługiwana ochrona
 
@@ -108,13 +115,15 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 |jfif|pjfif|
 |jt|pjt|
 
+
 W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. 
 
 Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
 
 |Typy plików obsługiwanych przez pakiet Office|Typy plików obsługiwanych przez pakiet Office|
 |----------------------------------|----------------------------------|
-|doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm|pptx<br /><br />thmx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
+|doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />pptx<br /><br />pptx<br /><br />thmx|.vsdm<br /><br />vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
+
 
 ### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
 Edytując rejestr, możesz zmienić sposób ochrony plików przez klienta usługi Azure Information Protection. Możesz na przykład wymusić, aby pliki obsługujące ochronę natywną były objęte ochroną ogólną przez klienta usługi Azure Information Protection.
@@ -181,15 +190,15 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 Każdego pliku, który jest chroniony hasłem nie mogą być chronione natywnie przez klienta usługi Azure Information Protection. W większości przypadków Zobacz pliki PDF, które są chronione hasłem, ale ta funkcja oferuje także inne aplikacje, takie jak aplikacje pakietu Office.
 
-Ponadto klienta usługi Azure Information Protection dla systemu Windows nie można natywnie chronić (lub wyłączyć ochronę) plików PDF w jednym z następujących sytuacji:
+Ponadto klienta usługi Azure Information Protection dla systemu Windows można wyświetlić następujące pliki, ale nie można natywnie chronić lub wyłączyć ochronę plików PDF w jednym z następujących sytuacji:
 
 - Plik PDF jest oparta na formularzu.
 
 - Chroniony plik PDF, który ma rozszerzenie nazwy pliku PDF. 
     
-    Klienta usługi Azure Information Protection można chronić niechronionych plików PDF i włącz ponownie ochronę chroniony plik PDF, który ma rozszerzenie nazwy pliku ppdf.
+    Klienta usługi Azure Information Protection można chronić niechronionych plików PDF i może wyłączyć ochronę i włącz ponownie ochronę chroniony plik PDF ma rozszerzenie nazwy pliku ppdf.
 
-Jako obejście dla tych plików, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony dla wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólna ochrona tylko pliki, które spełnia podanych kryteriów.
+Jako rozwiązanie do ochrony tych plików, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony dla wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólna ochrona tylko pliki, które spełnia podanych kryteriów.
 
 Chroni pliki te są ważne, można tymczasowo skopiuj je do innego komputera w celu ich objęty ochroną, a następnie skopiuj je ponownie ponownie.
 

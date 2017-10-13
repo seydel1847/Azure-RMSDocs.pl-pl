@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 1564f6dc0a21017151254b1ae1fab1586761e766
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 1cbbad16590bde0fa6278764fe9351b1a4e0b996
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -88,6 +88,8 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 - Pobierz klienta: [Klient usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
+- Pobierz Podręcznik użytkownika można dostosowywać: [przewodnik dotyczący wdrażania użytkownika końcowego ochrony informacji Azure](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
 - Często zadawane pytania: [Często zadawane pytania dotyczące usługi Azure Information Protection](../get-started/faqs.md)
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
@@ -102,6 +104,8 @@ Możesz [Wyszukaj i Znajdź](https://myignite.microsoft.com/videos?q=%2522azure%
 - [Przyspieszenie Azure information protection wdrożenia i przyjęcia](https://myignite.microsoft.com/videos/53454)
 
 - [Odkryj nowości w usłudze Azure Information Protection i Dowiedz się więcej o plan i strategii](https://myignite.microsoft.com/videos/53453)
+
+- [Strategie zarządzania kluczami szyfrowania, zgodności](https://myignite.microsoft.com/videos/53455)
 
 - [Chroń i kontroluj poufne wiadomości e-mail z nowych funkcji szyfrowanie wiadomości usługi Office 365](https://myignite.microsoft.com/videos/53230)
 

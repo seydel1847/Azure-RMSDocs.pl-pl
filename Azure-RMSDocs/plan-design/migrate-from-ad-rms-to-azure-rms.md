@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6651c812c207494bc98d5a1b22e359910a94c3cc
-ms.sourcegitcommit: 7d07b82da9aca52fe9e38fa1bada144226168a6b
+ms.openlocfilehash: 910d131ece4bae0cf5ef2685291431a3dc319264
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -181,12 +181,9 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 [**FAZA 3 — KONFIGURACJA PO STRONIE KLIENTA**](migrate-from-ad-rms-phase3.md)
 
-- **Krok 7. Ponowne konfigurowanie klientów do korzystania z usługi Azure Information Protection**
+- **Krok 7: Ponownie skonfiguruj komputery z systemem Windows do użycia usługi Azure Information Protection**
 
     Aby korzystać z usługi Azure Rights Management zamiast usług AD RMS, należy ponownie skonfigurować istniejące komputery z systemem Windows. Ten krok dotyczy komputerów w organizacji oraz komputerów w organizacjach partnerów, jeśli współpracowali z Tobą podczas korzystania z usług AD RMS.
-
-    Ponadto jeśli wdrożono [rozszerzenie urządzenia przenośnego](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony i urządzenia iPad z systemem iOS, telefony i tablety z systemem Android, telefony z systemem Windows Phone i komputery Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do użycia usług AD RMS.
-
 
 [**FAZA 4 — KONFIGURACJA USŁUG POMOCNICZYCH**](migrate-from-ad-rms-phase4.md)
 
@@ -203,13 +200,15 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 - **Krok 10. Anulowanie obsługi usług AD RMS**
 
-    Po potwierdzeniu, że wszyscy klienci używają usługi Azure Rights Management i nie korzystają już z serwerów usług AD RMS, można anulować obsługę wdrożenia usług AD RMS.
+    Po potwierdzeniu, że wszystkie komputery z systemem Windows korzystają z usługi Azure Rights Management i nie uzyskują dostęp do serwerów usług AD RMS, możesz anulowanie zastrzeżenia wdrożenia usług AD RMS.
 
-- **Krok 11. Usuwanie kontrolek dołączania**
+- **Krok 11: Ponownie skonfiguruj klientów urządzeń przenośnych i komputerów Mac, a następnie usuń kontrolki dołączania**
 
+    Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i Ipad, telefony i tablety, systemu Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
+    
     Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne.
 
-- **Krok 12. Wymiana klucza dzierżawy usługi Azure Information Protection**
+- **Krok 12: Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection**
 
     Ten krok jest zalecane, jeśli użytkownik nie uruchamiano trybu kryptograficznego 2 przed migracją.
 
