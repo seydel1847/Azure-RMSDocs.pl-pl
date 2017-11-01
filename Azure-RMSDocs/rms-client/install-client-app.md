@@ -4,7 +4,7 @@ description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 792bb4b2554851eb4a9531e7ed9333c8bebc709a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 406ca5f8a1bdfec87dbec7743145ddfb2c4d18fb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="download-and-install-the-azure-information-protection-client"></a>Pobieranie i instalowanie klienta usługi Azure Information Protection
+# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobierz i zainstaluj klienta usługi Azure Information Protection
 
 Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby zainstalować tego klienta w celu ochrony dokumentów i wiadomości e-mail oraz stosowania dla nich etykiet, trzeba mieć na komputerze uprawnienia administratora lokalnego.
 
@@ -67,7 +67,7 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Zapoznaj się z informacjami na temat [instalowania klienta usługi Azure Information Protection](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users) w podręczniku administratora.
+Zobacz [instalowania klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md) z [Przewodnik administratora](client-admin-guide.md).
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  

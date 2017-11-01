@@ -4,17 +4,17 @@ description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 712d273e735d2c9fc791a1f15c3f8dc9e917a1c3
-ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
+ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -44,7 +44,7 @@ Gdy te etykiety podrzędne nie są automatycznie skonfigurowany do ochrony, domy
 
 Jeśli ochrona jest stosowana do **wszyscy pracownicy** etykiety podrzędne, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Począwszy od 30 sierpnia 2017 tej wersji lub domyślne zasady zawiera zlokalizowane wersje etykieta nazwy i opisy. 
+Począwszy od 30 sierpnia 2017 ta wersja domyślna zasada zawiera wersje obsługi wielu języków etykieta nazwy i opisy. 
 
 #### <a name="more-information-about-the-recipients-only-sub-label"></a>Więcej informacji na temat odbiorców tylko etykieta podrzędna
 
@@ -68,10 +68,10 @@ Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj 
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
-|Poufne\Wszyscy pracownicy|Dane poufne, które wymagają ochrony, możliwe do wyświetlenia przez wszystkich pracowników z pełnymi uprawnieniami. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[1]](#footnote-1)|
+|Poufne\Wszyscy pracownicy|Dane poufne, które wymagają ochrony, możliwe do wyświetlenia przez wszystkich pracowników z pełnymi uprawnieniami. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Azure (klucz w chmurze) [[1]](#footnote-1)|
 |Poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Poufne \ odbiorców|Dane poufne wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
-|Wysoce poufne\Wszyscy pracownicy|Wysoce poufne dane, dla których wszyscy pracownicy mają uprawnienia do wyświetlania, edycji i udzielania odpowiedzi dla tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Usługa Azure RMS [[2]](#footnote-2)|
+|Wysoce poufne\Wszyscy pracownicy|Wysoce poufne dane, dla których wszyscy pracownicy mają uprawnienia do wyświetlania, edycji i udzielania odpowiedzi dla tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Azure (klucz w chmurze) [[2]](#footnote-2)|
 |Wysoce poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Poufny \ odbiorców|Ściśle poufnych danych wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
 
@@ -103,7 +103,7 @@ Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.
 
 ## <a name="default-policy-before-july-31-2017"></a>Domyślne zasady przed 31 lipca 2017 r.
 
-Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfiguruj etykietę tak, aby zastosować ochronę usług Azure RMS, lub użyj rozwiązania zapobiegającego utracie danych (DLP). Aby można było śledzenia i odwoływania dokumentu za pomocą witryny śledzenia dokumentów, dokument musi chronione przez usługę Azure RMS i śledzone przez osobę, która chronionego dokumentu. 
+Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfigurować etykietę do stosowania ochrony lub za pomocą rozwiązania (DLP) związanych z zapobieganiem utracie danych. Aby można było śledzenia i odwoływania dokumentu za pomocą witryny śledzenia dokumentów, dokument musi chronionej przez usługę Azure Rights Management i śledzone przez osobę, która chronionego dokumentu. 
 
 
 ### <a name="labels"></a>Etykiety

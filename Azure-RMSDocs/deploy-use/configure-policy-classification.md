@@ -4,40 +4,27 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: aa41d4f34f0ed43682f9ba426ec18204457980c3
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 1c37f1b05126b8e8d9a5e64f033c503f27a8a1fc
+ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
-W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety: 
+W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety. 
 
-- Automatyczna klasyfikacja ma zastosowanie do programów Word, Excel i PowerPoint, gdy zapisywane są pliki oraz programu Outlook, gdy wysyłane są wiadomości e-mail. Nie możesz użyć automatycznej klasyfikacji wobec plików, które wcześniej zostały oznaczone ręcznie.
- 
-- Zalecana klasyfikacja ma zastosowanie do programów Word, Excel i PowerPoint, gdy zapisywane są pliki.
+Po skonfigurowaniu tych warunków, można użyć wstępnie zdefiniowanych wzorców, takich jak **numer karty kredytowej** lub **numer ubezpieczenia społecznego USA (SSN)**. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz krok 5 w [procedury](#to-configure-recommended-or-automatic-classification-for-a-label).
 
-Gdy konfigurujesz warunki, można wstępnie zdefiniowanych wzorców, takich jak **numer karty kredytowej** lub **numer ubezpieczenia społecznego USA (SSN)**. Możesz zdefiniować niestandardowy ciąg lub szablon będący warunkiem automatycznej klasyfikacji. Te warunki dotyczą tekstu podstawowego w dokumentach i wiadomościach e-mail oraz nagłówków i stopek. Aby uzyskać więcej informacji o warunkach, zobacz krok 5 w [procedury](#to-configure-recommended-or-automatic-classification-for-a-label).
-
-W jaki sposób ocenia się wiele warunków, jeśli są zastosowane wobec więcej niż jednej etykiety:
-
-1. Etykiety są uporządkowane do oceny zgodnie z ich pozycją określoną w zasadach: etykieta na pierwszej pozycji ma najniższą pozycję (najmniejszą ważność), a ostatnia najwyższą (największa ważność).
-
-2. Zostaje zastosowana etykieta wskazująca najwyższą ważność.
- 
-3. Zostaje zastosowana ostatnia etykieta podrzędna.
-
-> [!TIP]
->Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalności biznesowej, warto rozpocząć od użycia zalecanej klasyfikacji dla użytkownika, a nie od klasyfikacji automatycznej. Ta konfiguracja pozwala użytkownikom Zaakceptuj etykiet lub akcji ochronnej lub zignorowania tych sugestii, jeśli nie są odpowiednie do ich dokumentu lub wiadomości e-mail.
+Aby zapewnić najlepszą jakość obsługi i ciągłość prowadzenia działalności biznesowej, warto rozpocząć od użycia zalecanej klasyfikacji dla użytkownika, a nie od klasyfikacji automatycznej. Ta konfiguracja pozwala użytkownikom akceptowania klasyfikacji i wszystkie skojarzone ochrony lub zignorowania tych sugestii, jeśli nie są odpowiednie do ich dokumentu lub wiadomości e-mail.
 
 Przykład monitu w przypadku konfigurowania warunki do zastosowania etykiety jako akcji zalecanej, ze wskazówką dotyczącą zasad niestandardowych:
 
@@ -45,10 +32,54 @@ Przykład monitu w przypadku konfigurowania warunki do zastosowania etykiety jak
 
 W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosować zalecaną etykietę, lub zignorować zalecenie przez wybranie **odrzucenia**.
 
+> [!IMPORTANT]
+>Nie należy konfigurować etykiety klasyfikacji automatycznej i uprawnienia użytkownika. Opcja uprawnienia zdefiniowane przez użytkownika jest [ustawienie ochrony](configure-policy-protection.md) który umożliwia użytkownikom określanie, kto powinien mieć uprawnienia.
+>
+>Po skonfigurowaniu etykiety klasyfikacji automatycznej i uprawnienia użytkownika zawartość jest sprawdzany pod kątem warunków, a ustawienie uprawnienia użytkownika nie została zastosowana. Można użyć zalecana klasyfikacja i uprawnienia użytkownika.
+
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>W jaki sposób są stosowane automatycznej lub zalecanej etykiety
+
+**W wersji ogólnodostępnej klienta Azure Information Protection:**
+
+- Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint, gdy dokumenty są zapisywane i dotyczą programu Outlook przy wysyłaniu wiadomości e-mail. 
+    
+    Nie można używać automatycznej klasyfikacji dokumentów i wiadomości e-mail, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczenie wyższy klasyfikacji. 
+
+- Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint, gdy dokumenty są zapisywane. Nie można użyć zalecana klasyfikacja dla programu Outlook.
+    
+    Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
+
+
+**W bieżącej wersji podglądu klienta Azure Information Protection:**
+
+- Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel, PowerPoint i Outlook. W przypadku dokumentów działa Automatyczna klasyfikacja [stale w tle](#more-information-about-running-continuously). Dla programu Outlook Automatyczna klasyfikacja jest uruchamiany podczas wysyłania wiadomości e-mail. 
+    
+    Nie można używać automatycznej klasyfikacji dokumentów, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczenie wyższy klasyfikacji. Wyjątkiem od to zachowanie jest użycie skanera usługi Azure Information Protection z parametrem OverrideLabel ustawioną na.
+
+- Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint. Te dokumenty zalecane uruchamia klasyfikacji [stale w tle](#more-information-about-running-continuously). Nie można użyć zalecana klasyfikacja dla programu Outlook.
+    
+    Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
+
+#### <a name="more-information-about-running-continuously"></a>Więcej informacji o uruchamianiu w sposób ciągły
+
+Bieżąca wersja klienta usługi Azure Information Protection okresowo sprawdza dostępność dokumentów dla reguł warunku, które określisz. To zachowanie umożliwia klasyfikacji automatycznej i zalecanej i ochronę dokumentów, które są przechowywane w usłudze SharePoint Online. Dużych plików także zapisać więcej szybko ponieważ reguł warunku zostało już uruchomione. 
+
+Warunek reguły nie należy uruchamiać w czasie rzeczywistym jako typy użytkownika. Zamiast tego działają okresowo jako zadania w tle Jeśli dokument zostanie zmodyfikowany. 
+
+### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków są oceniane, jeśli są zastosowane wobec więcej niż jednej etykiety
+
+Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bieżącego klienta w wersji zapoznawczej:
+
+1. Etykiety są uporządkowane do oceny zgodnie z ich pozycją określoną w zasadach: etykieta na pierwszej pozycji ma najniższą pozycję (najmniejszą ważność), a ostatnia najwyższą (największa ważność).
+
+2. Zostaje zastosowana etykieta wskazująca najwyższą ważność.
+ 
+3. Zostaje zastosowana ostatnia etykieta podrzędna.
+
+
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>Aby skonfigurować zalecaną lub automatyczną klasyfikację dla etykiety
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
-    
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. Jeśli etykietę, którą chcesz skonfigurować będą stosowane do wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
@@ -86,8 +117,9 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
+Rozważ wdrożenie [skanera usługi Azure Information Protection](deploy-aip-scanner.md), którego można użyć reguł automatycznej klasyfikacji do odnajdywania, klasyfikowania i chronić pliki w sklepach sieci lokalnych i udziałów plików.  
+
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

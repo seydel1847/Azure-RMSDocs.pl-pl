@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: a6a1c477a06c695a2183ad379c22492ea59d4bee
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Typy plików obsługiwane przez klienta usługi Azure Information Protection
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwanych przez klienta usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -88,7 +88,11 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
     |Excel 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016|32-bitowe: 2 GB<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci|
     |PowerPoint 2007 (obsługiwane tylko przez usługi AD RMS)<br /><br />PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016|32-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci<br /><br />64-bitowe: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
 
-- **Dla wszystkich innych plików**: ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
+- **Wszystkie inne pliki**: 
+    
+    - Aby chronić pliki: rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
+    
+    - Aby otworzyć te pliki w podglądzie usługi Azure Information Protection: maksymalny rozmiar pliku obsługiwane w przypadku plików tekstowych (ptxt i pxml) jest 20 MB. Na podstawie obrazu plików i plików PDF maksymalny rozmiar pliku jest ograniczona tylko przez pamięci.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 
@@ -202,6 +206,13 @@ Jako rozwiązanie do ochrony tych plików, można objęty ochroną ogólną je z
 
 Chroni pliki te są ważne, można tymczasowo skopiuj je do innego komputera w celu ich objęty ochroną, a następnie skopiuj je ponownie ponownie.
 
+### <a name="limitations-for-container-files-such-as-zip-files"></a>Ograniczenia dotyczące plików kontenera, takich jak pliki zip
+
+Pliki kontenera znajdują się pliki, które zawierają inne pliki z typowym przykładem są pliki zip, które zawierają pliki skompresowane. Inne przykłady RAR, .7z, oraz. komunikaty.
+
+Można klasyfikować i chronić pliki kontenera, ale klasyfikowania i ochrony nie została zastosowana do każdego pliku wewnątrz kontenera.
+
+Jeśli masz pliku kontenera, który zawiera pliki sklasyfikowanych i chronionych, należy wyodrębnić pliki, aby zmienić ich klasyfikacji lub ustawienia ochrony. Jednak można usunąć ochrony dla wszystkich plików w plikach obsługiwanych kontenera za pomocą [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet.
 
 ## <a name="next-steps"></a>Następne kroki
 Po zidentyfikowaniu typów plików obsługiwanych przez klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:

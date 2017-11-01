@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 1cbbad16590bde0fa6278764fe9351b1a4e0b996
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -92,7 +92,7 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 - Często zadawane pytania: [Często zadawane pytania dotyczące usługi Azure Information Protection](../get-started/faqs.md)
 
-- Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
+- Yammer: [Azure Information Protection](https://www.yammer.com/AskIPTeam)
 
 
 Ponadto **Microsoft Ignite 2017** ma wiele sesji dla usługi Azure Information Protection, które są dostępne na żądanie. Podsumowanie anonsów, które zostały dokonane na tej konferencji, zobacz [What's new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/). 

@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 2ba7eba033ef988871d965b4a4e734fffa97c403
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
+# <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
@@ -163,5 +163,8 @@ Wcześniej określona dla pliku klasyfikacja i ochrona obowiązuje nadal, nawet 
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
+Zobacz [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

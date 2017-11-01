@@ -4,7 +4,7 @@ description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, któ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
+ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
@@ -198,7 +198,7 @@ Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną we
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>Konfigurowanie serwerów programu SharePoint do używania łącznika
 
-1. Upewnij się, że serwery SharePoint są autoryzowane do używania łącznika usługi RMS za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby program Exchange mógł korzystać z łącznika usługi RMS.
+1. Upewnij się, że serwery SharePoint są autoryzowane do używania łącznika usługi RMS za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby serwery programu SharePoint można używać łącznika usługi RMS.
 
 2.  Na serwerach programu SharePoint, które komunikują się z łącznikiem usługi RMS wykonaj jedną z następujących czynności:
 
@@ -230,7 +230,7 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>Konfigurowanie serwerów plików do używania łącznika
 
-1.  Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby program Exchange mógł korzystać z łącznika usługi RMS.
+1.  Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, dzięki czemu serwerach plików można użyć łącznika usług RMS.
 
 2.  Na serwerach plików skonfigurowanych dla infrastruktury klasyfikacji plików, które będą komunikować się z łącznikiem usługi RMS, wykonaj jedną z następujących czynności:
 

@@ -4,7 +4,7 @@ description: "Identyfikowanie aplikacji, które korzystają z interfejsów API u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2017
+ms.date: 10/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba8dbc42771a590e18ede4e45782741b12ef897e
-ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
+ms.openlocfilehash: 6dd3345d2064b87c307583b63d36b5263318bd53
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -44,9 +44,9 @@ Informacje dotyczące kolumn tabeli:
 
 |**System operacyjny urządzenia**|Word, Excel, PowerPoint|Chroniony plik PDF|Poczta e-mail|Inne typy plików|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Klient usługi Azure Information Protection dla systemu Windows <br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS AutoCAD: .dwg|
+|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (wyświetlanie dokumentów chronionych) [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Klient usługi Azure Information Protection dla systemu Windows <br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS AutoCAD: .dwg|
 |**iOS**|Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />GigaTrust<br /><br /> TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikację usługi Azure Information Protection (wyświetlanie dokumentów chronionych)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Aplikację usługi Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikację usługi Azure Information Protection (Ochrona tekst i obrazy wyświetlanie)<br /><br />TITUS Docs: plik PFILE|
-|**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile (wyświetlanie dokumentów chronionych) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikację usługi Azure Information Protection (wyświetlanie dokumentów chronionych) <br /><br />Aplikacja GigaTrust dla systemu Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Aplikację usługi Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikację usługi Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
+|**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile (wyświetlanie i edytowanie chronionych dokumentów) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikację usługi Azure Information Protection (wyświetlanie dokumentów chronionych) <br /><br />Aplikacja GigaTrust dla systemu Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Aplikację usługi Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikację usługi Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
 |**macOS**|Office 2011 (tylko usługi AD RMS)<br /><br />Office 2016 dla komputerów Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Foxit Reader<br /><br />(Wyświetlanie dokumentów chronionych) aplikacja RMS sharing|Outlook 2011 (tylko usługi AD RMS)<br /><br />Outlook 2016 dla komputerów Mac<br /><br />Outlook dla komputerów Mac <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacji (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) do udostępniania usług RMS|
 |**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie dokumentów chronionych za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Citrix WorxMail <br /><br />Poczta programu Outlook (wyświetlanie chronionych wiadomości e-mail) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: pliki JT|
@@ -55,7 +55,7 @@ Informacje dotyczące kolumn tabeli:
 
 
 ###### <a name="footnote-1"></a>Przypis 1
-Obsługuje wyświetlanie chronionych dokumentów po przekazaniu niechronionego dokumentu do chronionej biblioteki usług SharePoint Online i OneDrive dla Firm.
+Aby wyświetlić dokumenty, które są przechowywane w usłudze SharePoint Online i OneDrive dla firm, dokumenty musi być niechronione, zanim są przekazywane do bibliotek chronionych.
 
 ###### <a name="footnote-2"></a>Przypis 2
 Dla [załączników Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) które są chronione przy użyciu [szyfrowanie wiadomości usługi Office 365 z nowych funkcji](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
@@ -182,6 +182,7 @@ Jeśli jesteś dostawcą oprogramowania i dysponujesz rozwiązaniem, które nie 
 |Bezwzględne|Bezwzględne|Ochrona przed utratą danych (DLP) zapewniająca ochronę zawartości.|
 |Content Locker|VMware|Zapisywanie, używanie i tworzenie chronionej zawartości.|
 |Controle|TakeControle|Zbieranie elektronicznych materiałów dowodowych poprzez etykietowanie i ochronę.|
+|Forcepoint|Forcepoint DLP|Punkt końcowy utraty zapobiegania (DLP) rozwiązania danych wymuszać zasady zabezpieczeń danych organizacji.|
 |Halocore|Secude|Ochrona plików wyeksportowanych ze środowisk SAP.|
 |MaaS 360|IBM|Integracja w celu umożliwienia użycia i ochrony dokumentów.|
 |Mobiliya|Mobiliya|Zabezpiecza dokumenty z repozytoriów Documentum firmy EMC.

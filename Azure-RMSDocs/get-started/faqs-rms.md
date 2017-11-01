@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 190ad05c5f505f2c0247c04bf271c8c12cac2ea9
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -133,7 +133,7 @@ W przypadku większości scenariuszy można użyć dowolnego typu grupy w usłud
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>Jak wysłać chronioną wiadomość e-mail na konto Gmail lub Hotmail?
 
-Korzystając z usługi Exchange Online i usługa Azure Rights Management, wystarczy wysłać wiadomość e-mail jako chronionej wiadomości. Na przykład można wybrać nowy **Chroń** przycisk paska poleceń w programie Outlook w sieci Web, użyj opcji programu Outlook nie przesyłaj dalej, wybierz etykietę usługi Azure Information Protection, która ma zastosowanie ochrony z usługi Azure Rights Management, lub ochronę można zastosować przez reguły transportu programu Exchange Online.
+Korzystając z usługi Exchange Online i usługa Azure Rights Management, po prostu wysłaniem wiadomości e-mail do użytkownika jako chronionej wiadomości. Na przykład można wybrać nowy **Chroń** przycisk paska poleceń w programie Outlook w sieci Web, użyj programu Outlook **nie przesyłaj dalej** przyciskiem lub menu opcji. Alternatywnie możesz wybrać etykietę usługi Azure Information Protection, która automatycznie stosuje nie przesyłaj dalej dla Ciebie i klasyfikuje wiadomości e-mail. 
 
 Odbiorcy zobaczą opcję, aby zalogować się do swojego konta usługi Gmail, Yahoo lub firmy Microsoft, a następnie mieć możliwość odczytu chronionych wiadomości e-mail. Ich można również wybrać opcję dla jednorazowy kod dostępu odczytać wiadomość e-mail w przeglądarce.
 
