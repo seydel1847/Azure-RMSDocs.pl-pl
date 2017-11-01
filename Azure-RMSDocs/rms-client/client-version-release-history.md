@@ -4,7 +4,7 @@ description: "Poznaj nowe i zmienione funkcje w wersji klienta usługi Azure Inf
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
-ms.translationtype: HT
+ms.openlocfilehash: ab9af432222b6973b329beffebe14dd8f3ef79b0
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
 
@@ -26,12 +26,18 @@ Zespół pracujący nad usługą Azure Information Protection regularnie aktuali
 
 Wersje zapoznawcze nie powinny być wdrażane dla użytkowników końcowych w sieciach produkcyjnych. Umożliwiają one natomiast zapoznanie się z nowymi funkcjami i poprawkami, które zostaną wprowadzone w kolejnej ogólnodostępnej wersji, oraz ich wypróbowanie. 
 
-Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w ogólnodostępnej wersji. Najnowsza wersja jest wyświetlana na początku listy. Zmiany w bieżącej wersji zapoznawczej zapoznaj się z informacjami na stronie pobierania.
+Poniższe informacje pozwalają dowiedzieć się, co wprowadzono lub zmieniono w ogólnodostępnej wersji. Najnowsza wersja jest wyświetlana na początku listy. 
 
 > [!NOTE]
 > Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, sprawdź najpierw, czy ten problem nie dotyczy najnowszej ogólnodostępnej wersji. Jeśli tak jest, sprawdź bieżącą wersję zapoznawczą.
 >  
-> Jeśli problem nie ustąpi, zapoznaj się z informacjami w temacie [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources). Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
+> Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="versions-later-than-110560"></a>Wersjach starszych niż 1.10.56.0
+
+Jeśli masz wersję klienta, która jest nowsza niż 1.10.56.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny. 
+
+Co to jest nowe lub zostały zmienione w bieżącej wersji preview od ostatniej wersji GA klienta dla **szczegóły** sekcji na [stronę pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
 
 ## <a name="version-110560"></a>Wersja 1.10.56.0
 
@@ -41,9 +47,9 @@ Ta wersja zawiera MSIPC wersji 1.0.3219.0619 klienta usługi RMS.
 
 **Nowe funkcje**:
 
-- Obsługa etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook etykieta automatycznie stosuje opcji programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików etykieta monituje użytkownika o określ uprawnienia niestandardowe. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../deploy-use/configure-policy-protection.md).
-
 - Obsługa nowych warunków Office 365 DLP, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji, zobacz [Konfigurowanie warunków dla etykiety usługi Azure Information Protection](../deploy-use/configure-policy-classification.md).
+
+- Obsługa etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook etykieta automatycznie stosuje opcji programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików etykieta monituje użytkownika o określ uprawnienia niestandardowe. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../deploy-use/configure-policy-protection.md).
 
 - Etykiety są wyświetlane z **Chroń** na Wstążce pakietu Office, oprócz wyświetlania na pasku Information Protection. 
 
@@ -115,7 +121,7 @@ Ta wersja zawiera wersję MSIPC 1.0.2217.1 klienta usługi RMS.
 
 **Zmiany wymagań:**
 
-W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Microsoft .NET Framework w wersji 4.6.2 dla pełnego klienta. Chociaż nie jest to zalecane, można pominąć to wymaganie wstępne, korzystając z parametru instalacji niestandardowej **DowngradeDotNetRequirement**. Aby uzyskać więcej informacji, zapoznaj się z [sekcją podręcznika administratora poświęconą instalacji klienta](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users).
+W poprzedniej wersji wprowadzono nowe wymaganie wstępne dotyczące programu Microsoft .NET Framework w wersji 4.6.2 dla pełnego klienta. Chociaż nie jest to zalecane, można pominąć to wymaganie wstępne, korzystając z parametru instalacji niestandardowej **DowngradeDotNetRequirement**. Aby uzyskać więcej informacji, zobacz [instalowania klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md) z podręcznika administratora.
 
 **Nowe funkcje**:
 
@@ -149,7 +155,7 @@ Microsoft .NET Framework
 
 - Nowy, ujednolicony klient, który łączy funkcje aplikacji RMS sharing dla systemu Windows z możliwościami klienta usługi Azure Information Protection. Obejmuje następujące funkcje:
     
-    - Integracja z Eksploratorem plików systemu Windows (kliknięcie prawym przyciskiem myszy) w celu stosowania etykiet i ochrony. Obsługuje dodatkowe formaty plików i sekcji wielu plików.
+    - Integracja z Eksploratorem plików systemu Windows (kliknięcie prawym przyciskiem myszy) w celu stosowania etykiet i ochrony. Obsługuje dodatkowe formaty plików i zaznaczenie wielu plików.
     - Przeglądarka chronionych dokumentów (w tym chronionych dokumentów PDF do użytku w programie SharePoint).
     - Polecenia cmdlet programu PowerShell pozwalające pobrać i ustawić etykiety dla plików przechowywanych lokalnie lub w udziałach sieciowych. Wspomniane polecenia cmdlet są instalowane z poleceniami cmdlet dostarczanymi wcześniej z narzędziem RMS Protection Tool (modułem RMSProtection).
     - Dzienniki użycia klienta zawierające informacje dotyczące np. doboru i sposobu użycia etykiet przez poszczególne osoby.
@@ -169,7 +175,7 @@ Ta wersja klienta jest [ogólnodostępną wersją](https://blogs.technet.microso
 
 - Testy diagnostyczne i opcja resetowania, które użytkownik może uruchomić z aplikacji pakietu Office po zainstalowaniu klienta usługi Azure Information Protection: na karcie **Narzędzia główne** w grupie **Ochrona** kliknij pozycję **Chroń**, kliknij pozycję **Pomoc i opinie**, a następnie kliknij pozycję **Uruchom diagnostykę**. 
 
-    Aby uzyskać więcej informacji na temat tej opcji, zapoznaj się z sekcją [Dodatkowe czynności kontrolne i rozwiązywanie problemów](client-admin-guide.md#additional-checks-and-troubleshooting) podręcznika administratora.
+    Aby uzyskać więcej informacji na temat tej opcji, zapoznaj się z sekcją [Dodatkowe czynności kontrolne i rozwiązywanie problemów](client-admin-guide.md#installation-checks-and-troubleshooting) podręcznika administratora.
 
 **Poprawki**:
 

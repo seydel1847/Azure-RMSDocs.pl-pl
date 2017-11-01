@@ -4,7 +4,7 @@ description: "Informacje dla użytkowników, którzy uruchamiają klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 84644f717a6005245847c9e9598b87c5af885aa7
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: 51dcca7823321defba2ffe45cde3e544ea16662a
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="protection-only-mode-for-the-azure-information-protection-client"></a>Klient usługi Azure Information Protection działający w trybie z samą ochroną
+# <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Podręcznik użytkownika: Tryb tylko do ochrony dla klienta usługi Azure Information Protection
 
 Gdy klient usługi Azure Information Protection nie ma etykiety do klasyfikowania dokumentów i wiadomości e-mail, jest uruchamiany w **tylko do ochrony** tryb. Na przykład, w tym trybie można napotkać następujące w Eksploratorze plików systemu Windows, kliknij prawym przyciskiem myszy, **Klasyfikuj i chronić**:
 

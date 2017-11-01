@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 660f29506e22feb742edf4041d7baed0cf749b8c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: b04c7881f982b33094107b6de33920a83b17b960
+ms.sourcegitcommit: a7cdf911088fdf663e43894484530ea15150284f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/25/2017
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -44,14 +44,30 @@ Jeśli Twoja organizacja ma różnych subskrypcji, jest obowiązek upewnij się,
 
 Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja jest potrzebna do korzystania z usługi Azure Information Protection i jakie funkcje obejmuje ta subskrypcja?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
+## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Aby dostęp do bloku usługi Azure Information Protection po raz pierwszy
+
+1. Zaloguj się do [portalu Azure](https://portal.azure.com) jako administrator globalny lub Administrator zabezpieczeń dla dzierżawy.
+
+2. W menu centralnym kliknij przycisk **Nowy**, a następnie z listy **MARKETPLACE** wybierz opcję **Zabezpieczenia i tożsamość**. 
+    
+3. Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.
+    
+    Ta akcja tworzy **usługi Azure Information Protection** bloku dla dzierżawy, dzięki czemu przy następnym logowaniu do portalu, możesz wybrać usługę z koncentratora **więcej usług** listy. 
+    
+    > [!TIP] 
+    > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
+
+4. Zostanie wyświetlony **szybki start** stroną wyświetlaną automatycznie połączyć się z usługą po raz pierwszy. Przejrzyj sugerowane zasoby, lub użyj opcji menu. Aby skonfigurować etykiety, które użytkownicy mogą wybrać, użyj następującej procedury.
+
+Następny czas dostępu **usługi Azure Information Protection** bloku, powoduje automatyczne wybranie **zasady** > **globalne zasady** opcja, którą można Konfigurowanie etykiety dla wszystkich użytkowników. Możesz wrócić do **szybki start** strony, wybierając ją z **ogólne** menu.
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Jak skonfigurować zasady usługi Azure Information Protection
 
-1. W nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny.
+1. Upewnij się, że użytkownik jest zalogowany do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego.
 
-2. Przejdź do bloku **Azure Information Protection**: na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information Protection**. Spośród wyników wybierz **Azure Information Protection**. 
+2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: na przykład, w menu centralnym kliknij **więcej usług** i zacznij wpisywać ciąg **Information Protection** w Pole filtru. Spośród wyników wybierz **Azure Information Protection**. 
     
-    Połącz się z usługą, po raz pierwszy **usługi Azure Information Protection — szybki start** automatycznie zostanie otwarty blok. Do skonfigurowania zasad uzyskać wszyscy użytkownicy, z **zasady** zaznaczenia menu, wybierz opcję **globalne zasady** otworzyć **usługi Azure Information Protection — globalne zasady** bloku. Ten blok jest automatycznie otwierany dla kolejnych połączeń z usługą, aby wyświetlić i edytować globalne zasady, który uzyskają wszyscy użytkownicy. 
+    **Usługi Azure Information Protection — globalne zasady** Wyświetl i Edytuj globalne zasady, które wszystkim użytkownikom uzyskiwanie automatycznie zostanie otwarty blok. 
     
     Zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
     
@@ -69,7 +85,9 @@ Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja 
     
     - Opcja udostępniania linku do niestandardowej pomocy dla użytkowników.
 
-Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Etykiety te mogą być używane dla pełnego zakresu danych, które organizacja zazwyczaj tworzy i przechowuje, od danych osobowych o najniższej klasyfikacji do wysoce poufnych danych o najwyższej klasyfikacji. 
+Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Dwa z tych etykiet zawiera etykiety podrzędne, aby zapewnić podkategorie, w razie potrzeby. Po skonfigurowaniu etykiety dla etykiety podrzędne użytkowników nie można wybrać etykietę głównego, ale należy wybrać jedną z etykiety podrzędne.
+
+Etykiety usługi Azure Information Protection może służyć z pełnego zakresu danych, które organizacji zwykle tworzy i przechowuje z najniższą klasyfikacji danych osobowych, do najwyższej klasyfikacji wysoce poufnych danych. 
 
 Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety. Aby uzyskać więcej informacji, użyj linków z następnej sekcji w celu ułatwienia znalezienia odpowiednich opcji i sposobów ich konfigurowania.
 
@@ -86,6 +104,9 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas uruchamiania
 - Uruchamianie [poleceń cmdlet programu PowerShell](../rms-client/client-admin-guide-powershell.md) mających na celu etykietowanie oraz ochronę (Get-AIPFileStatus, Set-AIPFileClassification i Set-AIPFileLabel).
 
 - Upływ kolejnych 24 godzin.
+
+- Aby uzyskać [skanera ochrony informacji Azure](deploy-aip-scanner.md): podczas uruchamiania usługi, a co godzinę.
+
 
 >[!NOTE]
 >Gdy klient pobierze zasady, przygotuj się na odczekanie paru minut, zanim staną się w pełni funkcjonalne. Rzeczywisty czas może być różny w zależności od takich czynników, jak rozmiar i złożoność konfiguracji zasad oraz łączność sieciowa. Jeśli wynikowe działanie etykiet nie odpowiada najnowszym zmianom, zaczekaj do 15 minut i spróbuj ponownie.

@@ -4,7 +4,7 @@ description: "Po włączeniu ochrony dokumentów można śledzić ich użycie. W
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas używania usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
@@ -49,6 +49,8 @@ Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty
     - Klikając ikonę administratora, administratorzy usługi Azure Information Protection mogą śledzić chronione dokumenty i odwoływać dostęp do nich dla użytkowników, którzy zarejestrowali swoje dokumenty w witrynie śledzenia dokumentów. Ta ikona jest widoczna tylko dla administratorów:
         
         ![Ikona administratora w witrynie śledzenia dokumentów](../media/tracking-site-admin-icon.png)
+        
+        Jeśli nie widzisz tę ikonę, mimo iż Administrator globalny to, że nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL dostęp do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
 
 Jeśli nie masz uprawnień administracyjnych, możesz śledzić i odwoływać dokumenty, których ochrona została wprowadzona przez Ciebie. Nie można śledzić chronionych wiadomości e-mail za pomocą witryny śledzenia dokumentów.
 
@@ -109,5 +111,8 @@ Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub a
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
+
+## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
+Zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](client-admin-guide-document-tracking.md) z [Przewodnik administratora](client-admin-guide.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

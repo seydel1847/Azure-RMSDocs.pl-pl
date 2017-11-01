@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
-ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
+ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/30/2017
 ---
-# <a name="custom-configurations-for-the-azure-information-protection-client"></a>Niestandardowe konfiguracje klienta usługi Azure Information Protection
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -32,7 +32,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 2. W pierwszym bloku usługi Azure Information Protection wybierz pozycję **Zasady z określonym zakresem**.
 
-3. W bloku **Azure Information Protection — zasady z określonym zakresem** wybierz menu kontekstowe (**... **) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
+3. W bloku **Azure Information Protection — zasady z określonym zakresem** wybierz menu kontekstowe (**...** ) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
     
     Możesz skonfigurować ustawienia zaawansowane dla zasad globalnych i zasad z określonym zakresem.
 
@@ -167,6 +167,8 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Włącz zalecana klasyfikacja w programie Outlook
 
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie.
+
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal.
 
 Po skonfigurowaniu etykiety dla zalecana klasyfikacja użytkowników monit, aby zaakceptować lub odrzucić zalecaną etykietę, Word, Excel i PowerPoint. To ustawienie zwiększa to zalecenie etykiety można również wyświetlić w programie Outlook.
@@ -180,11 +182,11 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Ustaw etykietę różne domyślne dla programu Outlook
 
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i wymaga wersji zapoznawczej klienta.
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Po skonfigurowaniu tego ustawienia program Outlook nie ma zastosowania etykiety domyślnej, skonfigurowanym w ramach zasad usługi Azure Information Protection, ustawienia **wybierz etykietę domyślną**. Zamiast tego programu Outlook można stosować inną etykietę lub bez etykiety.
+Po skonfigurowaniu tego ustawienia program Outlook nie ma zastosowania etykiety domyślnej, skonfigurowanym w ramach zasad usługi Azure Information Protection, ustawienia **wybierz etykietę domyślną**. Zamiast tego programu Outlook można stosować różne domyślne etykiety lub bez etykiety.
 
 Aby zastosować inną etykietę, należy określić identyfikator etykiety. Wartość Identyfikatora etykiety jest wyświetlany na **etykiety** bloku, gdy wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w portalu Azure. Dla plików, które mają zastosowane etykiety, można również uruchomić [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell do identyfikowania etykiety (MainLabelId lub SubLabelId). Podczas etykiety zawiera etykiety podrzędne, zawsze należy określić identyfikator etykietę podrzędną, a nie nadrzędnego etykieta.
 

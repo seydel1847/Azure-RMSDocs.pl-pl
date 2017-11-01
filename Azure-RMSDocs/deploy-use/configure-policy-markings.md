@@ -4,17 +4,17 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -93,6 +93,8 @@ Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classificatio
 To ustawienie jest obecnie w przeglądzie.
 
 Calibri jest domyślną czcionkę dla nagłówków, stopek i tekstu znaku wodnego. Jeśli określono nazwę alternatywną czcionki, upewnij się, że jest ona dostępna na urządzenia klienckie, które będą stosowane żądanych oznaczeń. W przeciwnym razie czcionki, który będzie używany jest deterministyczna. 
+
+Jeśli masz wersja klienta usługi Azure Information Protection, a czcionka określony nie jest dostępna, klient powraca przy użyciu czcionki Calibri.
 
 ### <a name="setting-the-font-color"></a>Ustawianie koloru czcionki
 

@@ -1,11 +1,11 @@
 ---
-title: "Informacje o wersji | Usługa Azure RMS"
-description: 
+title: Informacje o wersji
+description: "Zestaw SDK aktualizacje, poprawki i inne informacje dla deweloperów."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,22 +14,27 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 875584683bcf1d35037691f21ac7d78d17806a07
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 52733dd7cac356879408e774c79331d705a71ea0
+ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="release-notes"></a>Informacje o wersji
 
-Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
+Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
+
+## <a name="october-2017---update"></a>Zaktualizuj 2017 października-
+
+- Dodanie dwóch nowych interfejsów API środowiska inintialization i uninitialization. Aby uzyskać informacje, zobacz [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) i [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx).
+- Typy plików programu Visio są teraz obsługiwane. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
 ## <a name="february-2016---sdk-documentation-update"></a>Luty 2016 r. — aktualizacja dokumentacji zestawu SDK
 
 >[!Note]
 > Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
 
-- **Ulepszony przepływ uwierzytelniania** — przy użyciu metody uwierzytelniania opartej na tokenie protokołu OAuth2 za pośrednictwem [biblioteki Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](how-to-use-adal-authentication.md).
+- **Ulepszony przepływ uwierzytelniania** — przy użyciu uwierzytelniania opartego na tokenie protokołu OAuth2 za pośrednictwem [interfejsów Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](how-to-use-adal-authentication.md).
 
 - **Aktualizacja do biblioteki ADAL** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft zapewnia następujące możliwości:
 
@@ -37,7 +42,7 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
  - Instalowanie klienta usługi RMS 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
  - Certyfikowanie aplikacji dla systemu Windows 10
 
-- **Zakończenie świadczenia wsparcia dotyczącego asystenta logowania usługi online firmy Microsoft (SIA) z zestawem RMS SDK.** Będziemy świadczyć pomoc techniczną dotyczącą korzystania z usługi SIA przez 6 miesięcy, a po upływie których wsparcie zostanie zakończone.
+- **Zakończenie świadczenia wsparcia dotyczącego asystenta logowania usługi online firmy Microsoft (SIA) z zestawem RMS SDK.** Firma Microsoft będzie obsługiwać korzystania z usługi SIA przez sześć miesięcy, po upływie których wsparcie zostanie zakończone.
 
 
 ## <a name="december-2015-update"></a>Aktualizacja z grudnia 2015 r.
@@ -48,11 +53,11 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 
 - Wiele aktualizacji poprawiających komunikowanie błędów i rozwiązywanie problemów.
 - Zaktualizowano również listę [obsługiwanych platform](supported-platforms.md).
-- W zestawie RMS SDK 2.1 wyeliminowano konieczność używania środowiska przedprodukcyjnego i manifestów aplikacji. Usunięto sekcje tego zestawu dokumentacji dla deweloperów oraz uproszczono i ponownie zorganizowano ogólną dokumentację.
+- Potrzebę środowisko produkcji wstępnej i stosowania manifest aplikacji został usunięty z zestawu RMS SDK 2.1. Usunięto sekcje tego zestawu dokumentacji dla deweloperów oraz uproszczono i ponownie zorganizowano ogólną dokumentację.
 
 ## <a name="may-2015-update"></a>Aktualizacja z maja 2015 r.
 
--   **Aplikacje usługi i usługi RMS oparte na chmurze: struktura** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji: klucza symetrycznego, identyfikatora **AppPrincipalId** oraz identyfikatora **TenantBposId**. W temacie zawierającym omówienie tego zagadnienia dodano wytyczne dotyczące przetwarzania tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
+-   **Aplikacje usługi i oparte na chmurze RMS** - [IPC\_POŚWIADCZEŃ\_SYMMETRIC\_klucza](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji; klucz symetryczny  **Identyfikator AppPrincipalId**, i **TenantBposId**. Dla tego artykułu została zaktualizowana do wytyczne dotyczące tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## <a name="april-2015-update"></a>Aktualizacja z kwietnia 2015 r.
 
@@ -68,7 +73,7 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 ## <a name="january-2015-update"></a>Aktualizacja ze stycznia 2015 r.
 
 -   **Zwiększenie rozmiaru obsługiwanego pliku chronionego (pfile)** — obsługiwane są pliki pfile o rozmiarze przekraczającym jeden gigabajt (1 GB). Aby uzyskać więcej informacji o plikach pfile, zobacz [Obsługiwane formaty plików](supported-file-formats.md).
--   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym nadal wyświetlane wyjątki, będą rejestrowane jako **INFORMACJE**.
+-   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym, są nadal wyświetlane wyjątki, będą rejestrowane jako **informacji**.
 
     Wybraliśmy to rozwiązanie, aby nie dopuścić do przeoczenia żadnych szczegółów. Tylko ważne komunikaty są wyświetlane na poziomie OSTRZEŻENIA.
 
@@ -78,18 +83,18 @@ Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu 
 ## <a name="october-2014-update"></a>Aktualizacja z października 2014 r.
 
 -   Zaktualizowano domyślne zachowania składnika specyfikacji File API w zestawie SDK. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
--   Nowa funkcja powiadomienia e-mail jest opisana w temacie zawierającym uwagi dla deweloperów [Włączanie powiadomień e-mail](how-to-enable-email-notification.md).
+-   Powiadomienia e-mail, nowa funkcja jest opisana w artykule o Developer, [Włączanie powiadomień e-mail](how-to-enable-email-notification.md).
 
 ## <a name="july-2014-update"></a>Aktualizacja z lipca 2014 r.
 
-Składniki specyfikacji File API w zestawie SDK zostały rozszerzone i oferują następujące funkcje:
+Składnika specyfikacji File API w zestawie SDK zostały rozszerzone i oferują następujące funkcje:
 
 -   Określenie funkcji ochrony, których należy użyć.
 -   Zapewnienie ochrony za pomocą usługi RMS na poziomie szczegółowości pliku.
 
     Funkcje dodane w tej wersji:
 
-    **Uwaga** Do rozszerzeń specyfikacji File API dodano dalsze pomocnicze typy i struktury danych, niewymienione w tym temacie. Wszystkie tematy, które zostały zaktualizowane w tej wersji, są oznaczone jako **wersje wstępne i mogą ulec zmianie**.
+    **Uwaga** Do rozszerzeń specyfikacji File API dodano dalsze pomocnicze typy i struktury danych, niewymienione w tym temacie. Wszystkie artykuły, które zostały zaktualizowane w tej wersji są oznaczone jako **charakter wstępny i mogą ulec zmianie**.
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)
@@ -132,7 +137,7 @@ Składniki specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 
       - Wszystkie pliki, z wyjątkiem plików systemowych i plików pakietu Office, mogą być chronione przy użyciu formatu pliku chronionego usługi RMS (PFile).
 
-    Interfejs API plików jest implementowany za pośrednictwem następujących czterech nowych funkcji: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) i [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
+    Interfejs API plików jest implementowany za pośrednictwem następujących czterech nowych funkcji: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx)i [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
 
     Interfejs API plików wymaga zainstalowania klienta Rights Management Service Client 2.1 na komputerze klienckim i połączenia komputera z serwerem usługi RMS. Aby uzyskać więcej informacji na temat serwera usługi RMS, klienta usługi RMS i ich funkcji, zobacz zawartość TechNet w [dokumentacji usługi RMS dla informatyków](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx).
 

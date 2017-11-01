@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące konfigurow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dd8b2dcf785d47ec779b314072fb5edddf556163
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: bca186ebe78d79926a6ef775b1f5be7006e89df5
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>Konfigurowanie i używanie śledzenia dokumentów w usłudze Azure Information Protection
+# <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -64,6 +64,9 @@ Te adresy URL są standardowe dla usługi Azure Rights Management, z wyjątkiem 
 Użytkownicy po zalogowaniu się do witryny śledzenia dokumentów mogą śledzić i odwoływać dokumenty objęte ochroną za pomocą klienta usługi Azure Information Protection lub udostępnione za pomocą aplikacji Rights Management. Po zalogowaniu się jako administrator usługi Azure Information Protection (administrator globalny) możesz kliknąć ikonę administratora, aby przełączyć się do trybu administratora. Tryb ten umożliwia wyświetlenie dokumentów, dla których użytkownicy w organizacji włączyli śledzenie przy użyciu klienta usługi Azure Information Protection lub które udostępnili za pomocą aplikacji do udostępniania Rights Management:
 
 ![Ikona administratora w witrynie śledzenia dokumentów](../media/tracking-site-admin-icon.png)
+
+> [!NOTE] 
+> Jeśli nie widzisz tę ikonę, mimo iż administratora globalnego, jest on, ponieważ nie jeszcze udostępniasz żadnych dokumentów samodzielnie. W takim przypadku należy użyć następującego adresu URL dostęp do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
 
 Akcje wykonywane w trybie administratora są poddawane inspekcji i rejestrowane w plikach dziennika użycia. Musisz potwierdzić, aby kontynuować. Aby uzyskać więcej informacji na temat tego rejestrowania, zobacz następną sekcję.
 
