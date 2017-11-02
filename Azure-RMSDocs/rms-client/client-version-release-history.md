@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab9af432222b6973b329beffebe14dd8f3ef79b0
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: ec73c1e0c0c2d5ef959f15975b2a972086a3bcff
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Klient usługi Azure Information Protection: historia wersji
 
 >*Dotyczy: Azure Information Protection*
 
-Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. Klient znajduje się w katalogu Microsoft Update (kategoria: **usługi Azure Information Protection**) i z zawsze można pobrać wersji najnowszej ogólnodostępnej (GA) i kolejnych wersji (wersja zapoznawcza) [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. Klient znajduje się w katalogu Microsoft Update (kategoria: **usługi Azure Information Protection**) i z zawszemogąpobieraćwersjinajnowszejogólnodostępnej(GA),abieżącawersjapreview[Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
 
 Wersje zapoznawcze nie powinny być wdrażane dla użytkowników końcowych w sieciach produkcyjnych. Umożliwiają one natomiast zapoznanie się z nowymi funkcjami i poprawkami, które zostaną wprowadzone w kolejnej ogólnodostępnej wersji, oraz ich wypróbowanie. 
 
