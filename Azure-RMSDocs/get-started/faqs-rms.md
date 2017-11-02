@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190ad05c5f505f2c0247c04bf271c8c12cac2ea9
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -124,9 +124,17 @@ Jeśli musisz chronić wiadomość e-mail z załącznikiem dokumentu pakietu Off
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
 
-Tak. Po przekonwertowaniu szablonu z etykietą w portalu Azure, można skonfigurować [ustawienia ochrony](../deploy-use/configure-policy-protection.md) o dodanie uprawnień dla użytkowników i grup z spoza organizacji, a nawet dla wszystkich użytkowników w innej organizacji. Lub tej konfiguracji można wykonać za pomocą programu PowerShell.
+Tak. [Ustawienia ochrony](../deploy-use/configure-policy-protection.md) można skonfigurować w portalu Azure umożliwiają dodanie uprawnień dla użytkowników i grup z spoza organizacji, a nawet dla wszystkich użytkowników w innej organizacji. Jeśli nie zostanie użyty szablon, wyłącznie do wysyłania wiadomości e-mail przy użyciu [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e), nie należy dodawać konta z społecznościowych tożsamości (na przykład Gmail i firmy Microsoft) lub innych kont, które nie znajdują się w Azure AD.
 
-Aby uzyskać więcej informacji na temat konwertowania szablonów niestandardowych etykiet, aby następnie można łatwo dodać użytkowników zewnętrznych, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Należy pamiętać, że jeśli etykiety usługi Azure Information Protection, należy najpierw przekonwertować szablonu niestandardowego etykietę zanim będzie można skonfigurować te ustawienia ochrony w portalu Azure. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+
+Alternatywnie można dodać użytkowników zewnętrznych do szablonów niestandardowych (oraz etykiety) przy użyciu programu PowerShell. Ta konfiguracja wymaga użycia obiektu definicji praw, którego używasz do celów aktualizacji szablonu:
+
+1. Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, używając [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet, aby utworzyć zmienną.
+
+2. Dostarczyć tę zmienną do parametru RightsDefinition z [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
+    
+    Po dodaniu użytkowników do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących użytkowników w szablonach, oprócz nowych użytkowników. W tym scenariuszu może okazać się przydatne **przykład 3: Dodaj nowych użytkowników oraz prawa do szablonu niestandardowego** z [przykłady](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) sekcję polecenia cmdlet. 
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Typ grupy można używać z usługą Azure RMS?
 W przypadku większości scenariuszy można użyć dowolnego typu grupy w usłudze Azure AD, która ma adres e-mail. Ta zasadą zawsze ma zastosowanie, gdy przypisywanie praw użytkowania, ale istnieją pewne wyjątki do administrowania usługą Azure Rights Management. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure Information Protection dla grupy kont](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts).
