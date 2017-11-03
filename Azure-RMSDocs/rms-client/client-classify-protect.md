@@ -1,5 +1,5 @@
 ---
-title: "Klasyfikowanie i ochrona za pomocą usługi Azure Information Protection"
+title: "Klasyfikować i chronić pliki i wiadomości e-mail przy użyciu usługi Azure Information Protection"
 description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów i wiadomości e-mail użytkownika."
 author: cabailey
 ms.author: cabailey
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2ba7eba033ef988871d965b4a4e734fffa97c403
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: bbd2d81149dd860d7707b6eee83dacce9c13dd54
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
 >*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+
+> [!NOTE]
+> Użyj tych instrukcji, aby ułatwić klasyfikować i chronić dokumenty i wiadomości e-mail. Jeśli potrzebne tylko klasyfikowania i nie chronić dokumenty i wiadomości e-mail, zobacz [instrukcje tylko do klasyfikowania](client-classify-protect.md). Jeśli nie masz pewności, zestaw instrukcji do użycia, skontaktuj się z administratorem lub pomocą techniczną.
 
 Najprostszy sposób klasyfikowania i ochrony dokumentów i wiadomości e-mail jest dostępny podczas ich tworzenia lub edytowania za pośrednictwem aplikacji komputerowych pakietu Office: **Word**, **Excel**, **PowerPoint** i **Outlook**. 
 

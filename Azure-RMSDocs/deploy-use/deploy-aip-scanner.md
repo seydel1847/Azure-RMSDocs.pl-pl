@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 81c82ab010d07734ab2c0fea611b0857cc6de32f
-ms.sourcegitcommit: 2a3bc760999e50685b4054aa82f19e71123d6e77
+ms.openlocfilehash: 924a9e0b19203f60827693adecc9b74fa62edef1
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -75,9 +75,9 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
         
     - Aby użyć domyślnego wystąpienia:`Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
-    - Dla wystąpienia nazwanego:`Install-AIPScanner -SQLSERVER1\AIPSCANNER`
+    - Dla wystąpienia nazwanego:`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
     
-    - Dla programu SQL Server Express:`SQLSERVER1\SQLEXPRESS`
+    - Dla programu SQL Server Express:`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
 
 4. Sprawdź, czy usługa jest teraz zainstalowany za pomocą **narzędzia administracyjne** > **usług**. 
     
@@ -133,7 +133,9 @@ Z konfiguracji domyślnej skanera możesz teraz gotowy do uruchomienia skanowani
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports i które mają format pliku CSV. Z konfiguracji domyślnej skanera tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
-    Wyniki są niezgodne z oczekiwaniami, może być konieczne dostosowania warunków określonych w zasadach usługi Azure Information Protection. Jeśli tak jest, powtórz kroki od 1 do 3, aż wszystko będzie gotowe zmienić konfigurację, aby zastosować klasyfikacji i opcjonalnie ochrony. 
+    Wyniki są niezgodne z oczekiwaniami, może być konieczne dostosowania warunków określonych w zasadach usługi Azure Information Protection. Jeśli tak jest, powtórz kroki od 1 do 3, aż wszystko będzie gotowe zmienić konfigurację, aby zastosować klasyfikacji i opcjonalnie ochrony. Zawsze, powtórz te kroki, uruchom następujące polecenie programu PowerShell na komputerze systemu Windows Server:
+    
+        Set-AIPScannerConfiguration -Schedule OneTime
 
 Gdy wszystko jest gotowe automatycznie etykietę pliki, które umożliwia odnalezienie skanera, przejdź do następnej procedury. 
 
