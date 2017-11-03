@@ -16,6 +16,7 @@
 ##### [Polecenia programu PowerShell](client-admin-guide-powershell.md)
 #### [Podręcznik użytkownika usługi Azure Information Protection](client-user-guide.md)
 ##### [Pobieranie i instalowanie klienta](install-client-app.md)
+##### [Klasyfikowanie pliku lub wiadomości e-mail](client-classify.md)
 ##### [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md)
 ##### [Śledzenie i odwoływanie dokumentów](client-track-revoke.md)
 ##### [Otwieranie plików chronionych](client-view-use-files.md)
