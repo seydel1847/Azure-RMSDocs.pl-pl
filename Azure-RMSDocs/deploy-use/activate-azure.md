@@ -4,19 +4,20 @@ description: "Instrukcje dotyczące aktywacji ochrony w portalu Azure, aby Twoja
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15b8abd6b8ba8fa494e1d7d5c7b02221204507d1
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 23133038e2a845aae6a86a014cdef31843668ef8
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Jak aktywować usługę Azure Rights Management w portalu Azure
 
@@ -28,7 +29,7 @@ Użyj tych instrukcji, aby aktywować usługę Azure Rights Management (Azure RM
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
     
-    Aby otworzyć blok usługi Azure Information Protection, musi mieć przypisany [planu Premium ochrony informacji Azure](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli masz te subskrypcje, zobacz komunikat, którego nie można odnaleźć ważnej subskrypcji, Wyślij wiadomość e-mail do [askipteam](mailto:askipteam@microsoft.com?subject=I%20cannot%20activate%20RMS).
+    Aby otworzyć blok usługi Azure Information Protection, musi mieć przypisany [planu Premium ochrony informacji Azure](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli masz te subskrypcje, zobacz komunikat, którego nie można odnaleźć ważnej subskrypcji, [skontaktuj się z Microsoft Support](../get-started/information-support.md#to-contact-microsoft-support) lub użyj inne kanały pomocy technicznej standard.
 
 2. Zlokalizuj **ZARZĄDZAJ** opcji menu, a następnie wybierz **aktywacji ochrony**. 
     
