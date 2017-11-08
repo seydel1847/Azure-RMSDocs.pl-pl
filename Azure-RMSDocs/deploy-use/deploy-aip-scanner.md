@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 924a9e0b19203f60827693adecc9b74fa62edef1
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 22e7ba9589e75013862f008f76fcc4082a847262
+ms.sourcegitcommit: f8efd2e462ad44b77205abd6249696c681790937
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -129,7 +129,7 @@ Z konfiguracji domyślnej skanera możesz teraz gotowy do uruchomienia skanowani
 
 1. Przy użyciu **narzędzia administracyjne** > **usług**, uruchom **skanera ochrony informacji Azure** usługi.
 
-2. Poczekaj, aż skanera ukończyć jego cyklu. Podczas za pomocą wszystkich plików w magazynie danych, które określiłeś ma skanera zatrzymuje usługę. Można użyć Windows **aplikacji** dziennika zdarzeń **skanera ochrony informacji Azure**, aby upewnić się, gdy usługa jest zatrzymana. Należy wyszukać identyfikator zdarzenia informacyjną **911**.
+2. Poczekaj, aż skanera ukończyć jego cyklu. Podczas za pomocą wszystkich plików w magazynie danych, które określiłeś ma skanera zatrzymuje usługę. Można użyć lokalnego Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**, aby upewnić się, gdy usługa jest zatrzymana. Należy wyszukać identyfikator zdarzenia informacyjną **911**.
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports i które mają format pliku CSV. Z konfiguracji domyślnej skanera tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
@@ -178,7 +178,7 @@ Inne polecenia cmdlet skanera pozwalają zmienić konta usługi i bazy danych dl
 
 ## <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń
 
-Skorzystaj z następujących sekcji do identyfikowania możliwych identyfikatorów zdarzeń i opisy skanera.
+Skorzystaj z następujących sekcji do identyfikowania możliwych identyfikatorów zdarzeń i opisy skanera. Te zdarzenia są rejestrowane na serwerze z uruchomioną usługę skaner, w oknach **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**.
 
 -----
 
@@ -202,9 +202,9 @@ Informacje o **913**
 
 **Skaner jest zatrzymana, ponieważ skaner ustawiono wartość Never.**
 
-To zdarzenie jest rejestrowane, gdy skaner jest skonfigurowany do uruchamiania jednego czasu zamiast stale, i usługi skanera ochrony informacji Azure ręcznego ponownego uruchomienia od czasu uruchomienia komputera.  
+To zdarzenie jest rejestrowane, gdy skaner jest skonfigurowany do uruchamiania jednego czasu zamiast stale, i usługę Azure Information Protection skanera ręcznego ponownego uruchomienia od czasu uruchomienia komputera.  
 
-Aby przeprowadzić skanowanie plików ponownie, należy ręcznie uruchomić usługę. Aby zmienić to zachowanie, tak aby skaner działa w sposób ciągły, użyj [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet i ustaw **harmonogram** parametr **ciągłe**.
+Skanowanie plików ponownie, musisz ustawić harmonogram **OneTime** lub **ciągłe**, a następnie ręcznie ponownie uruchom usługę. Aby zmienić harmonogram, użyj [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet i **harmonogram** parametru.
 
 ----
 
