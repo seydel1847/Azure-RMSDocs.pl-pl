@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 197e3c8e908849665231040fd86cd79bd47cd1eb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 15f292dbd132449a4abb77ca2d3452b6c4575e55
+ms.sourcegitcommit: bcb04f0383a8f16a4991277a6b99309fddf61312
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -512,6 +512,13 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
 
+
+> [!TIP]
+> Używane zamiast tworzenia nowej aplikacji istniejących aplikacji przy użyciu poprzednich instrukcji Set AIPAuthentication zakończy się niepowodzeniem, może być konieczne zresetowanie wymaganych uprawnień dla aplikacji. Można również sytuacji, gdy po instrukcje tworzenia nowych aplikacji dla zestawu AIPAuthentication, ale następnie zmodyfikować ustawienia aplikacji.
+> 
+> Do zresetowania wymagane uprawnienia dla obu aplikacji, wykonaj następujące kroki konfiguracji: Wybierz **wszystkie ustawienia** > **wymagane uprawnienia** > **Grant Uprawnienia**i kliknij przycisk **tak** o potwierdzenie.
+> 
+> Można również utworzyć nowych aplikacji przy użyciu poprzednich instrukcji.
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Na przykład: 
