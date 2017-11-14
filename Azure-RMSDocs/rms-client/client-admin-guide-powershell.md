@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 15f292dbd132449a4abb77ca2d3452b6c4575e55
-ms.sourcegitcommit: bcb04f0383a8f16a4991277a6b99309fddf61312
+ms.openlocfilehash: dc3545c8212907786aa2fcf11e819b4cbdcf1ab5
+ms.sourcegitcommit: 4c6d9c55ff5dc5dbb10dc8a5abed9319fd3efb98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -454,11 +454,14 @@ Raport będzie wyglądał podobnie do poniższego:
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Jak nieinteraktywnie etykietować pliki na potrzeby usługi Azure Information Protection
 
-Uruchom następujące polecenia cmdlet etykietowania nieinteraktywnie przy użyciu **AIPAuthentication zestaw** polecenia cmdlet.
+Uruchom następujące polecenia cmdlet etykietowania nieinteraktywnie przy użyciu **AIPAuthentication zestaw** polecenia cmdlet. Operacja nieinterakcyjne jest również wymagany skanera usługi Azure Information Protection, obecnie w wersji zapoznawczej.
 
 Domyślnie polecenia cmdlet służące do etykietowania są uruchamiane we własnym kontekście użytkownika w interaktywnej sesji programu PowerShell. Aby uruchamiać polecenia w trybie nienadzorowanym, utwórz nowe konto użytkownika usługi Azure AD. Następnie w kontekście tego użytkownika uruchom polecenie cmdlet Set-AIPAuthentication, aby skonfigurować i przechowywać poświadczenia przy użyciu tokenu dostępu z usługi Azure AD. To konto użytkownika jest następnie uwierzytelniane i uruchamiane dla usługi Azure Rights Management. Konto pobiera zasady usługi Azure Information Protection i wszystkie szablony usług Rights Management używane w etykietach.
 
-Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Podaj nazwę i hasło konta użytkownika utworzonego na potrzeby pracy w trybie nienadzorowanym. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. Po wygaśnięciu ważności tokenu uruchom polecenie cmdlet ponownie, aby uzyskać nowy token:
+> [!NOTE]
+> Jeśli używasz [zakres zasad](../deploy-use/configure-policy-scope.md), pamiętaj, że może być konieczne dodanie tego konta do zasad zakresami.
+
+Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Określ nazwę konta użytkownika i hasło utworzone dla instalacji nienadzorowanej użytkownika. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. Po wygaśnięciu ważności tokenu uruchom polecenie cmdlet ponownie, aby uzyskać nowy token:
 
 Po uruchomieniu tego polecenia cmdlet bez parametrów konto uzyskuje token dostępu, który jest ważny przez 90 dni lub do momentu wygaśnięcia ważności hasła.  
 

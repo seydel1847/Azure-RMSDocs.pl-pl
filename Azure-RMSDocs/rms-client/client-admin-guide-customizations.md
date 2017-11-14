@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
+ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -198,6 +198,33 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: \< **identyfikator etykiety**> lub **None**
 
+## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. 
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Po skonfigurowaniu tego ustawienia można klasyfikować (i opcjonalnie chronić) dokumentu pakietu Office, gdy ma istniejącej niestandardowe właściwości z wartością, która pasuje do jednej nazwy etykiety. Tej właściwości niestandardowej można ustawić z innego rozwiązania klasyfikacji lub można ustawić jako właściwość programu SharePoint.
+
+W wyniku tej konfiguracji po dokumentu bez etykiety usługi Azure Information Protection jest otwarty i zapisany przez użytkownika w aplikacji pakietu Office, dokument jest następnie etykietami pasuje do odpowiadającej jej wartości właściwości. 
+
+Ta konfiguracja wymaga określenia dwa ustawienia zaawansowane, które współpracują ze sobą. Pierwszy nosi nazwę **SyncPropertyName**, czyli nazwę właściwości niestandardowej, która została ustawiona z innych rozwiązań klasyfikacji lub właściwości, która jest ustawiony przez program SharePoint. Nosi nazwę drugiego **SyncPropertyState** i musi mieć ustawioną OneWay.
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz 1: **SyncPropertyName**
+
+- Wartość klucz 1: \< **nazwa właściwości**> 
+
+- Klucz 2: **SyncPropertyState**
+
+- Wartość klucza 2: **OneWay**
+
+Jako przykład masz kolumny programu SharePoint o nazwie **klasyfikacji** mający możliwe wartości **publicznego**, **ogólne**, i **poufne**. Dokumenty są przechowywane w programie SharePoint i mieć jeden z tych wartości właściwości klasyfikacji.
+
+Aby dodać etykietę dokumentu pakietu Office, z jedną z następujących wartości klasyfikacji, ustaw **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do  **OneWay**. 
+
+Teraz, gdy użytkownik otwiera i zapisuje jeden z tych dokumentów pakietu Office, jego zostaną oznaczone etykietą **publicznego**, **ogólne**, lub **poufne** Jeśli etykiet z tych nazw platformy Azure Zasady ochrony informacji. Jeśli nie ma etykiety o tych nazwach, dokument pozostanie bez etykiety.
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
 
