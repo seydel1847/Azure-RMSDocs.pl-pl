@@ -4,17 +4,17 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: cf9c30baab257c9a90c3383eaf6bfcadd0275184
+ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -37,7 +37,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-labelsv2.png)
     
-3. Możesz również sprawdzić, czy niektóre ustawienia zasad, które nie zostały ustawione. Wszystkie dokumenty i wiadomości e-mail nie muszą mieć etykietę, brak jest etykiety domyślnej, a użytkownicy nie muszą uzasadniać ich zmieniać etykiety:
+3. Możesz również sprawdzić, czy niektóre ustawienia zasad. Na przykład istnieje nie ustawiono etykiety domyślnej, dokumentów i wiadomości e-mail nie muszą mieć etykietę i użytkownicy nie muszą uzasadniać ich zmieniać etykiety:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-settings.png)
 
@@ -113,7 +113,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     Kliknij przycisk **zapisać** aby powrócić do **etykietę podrzędną** bloku.
 
-10. Na **etykietę podrzędną** bloku, który zobacz **numer karty kredytowej** jest wyświetlany jako **nazwa WARUNKU**, z **1** ** WYSTĄPIENIA**:
+10. Na **etykietę podrzędną** bloku, który zobacz **numer karty kredytowej** jest wyświetlany jako **nazwa WARUNKU**, z **1**  **WYSTĄPIENIA**:
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — konfigurowanie warunku karty kredytowej](../media/step2-see-condition.png)
 

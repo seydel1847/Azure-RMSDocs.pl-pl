@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 197e3c8e908849665231040fd86cd79bd47cd1eb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: dc3545c8212907786aa2fcf11e819b4cbdcf1ab5
+ms.sourcegitcommit: 4c6d9c55ff5dc5dbb10dc8a5abed9319fd3efb98
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -454,11 +454,14 @@ Raport będzie wyglądał podobnie do poniższego:
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Jak nieinteraktywnie etykietować pliki na potrzeby usługi Azure Information Protection
 
-Uruchom następujące polecenia cmdlet etykietowania nieinteraktywnie przy użyciu **AIPAuthentication zestaw** polecenia cmdlet.
+Uruchom następujące polecenia cmdlet etykietowania nieinteraktywnie przy użyciu **AIPAuthentication zestaw** polecenia cmdlet. Operacja nieinterakcyjne jest również wymagany skanera usługi Azure Information Protection, obecnie w wersji zapoznawczej.
 
 Domyślnie polecenia cmdlet służące do etykietowania są uruchamiane we własnym kontekście użytkownika w interaktywnej sesji programu PowerShell. Aby uruchamiać polecenia w trybie nienadzorowanym, utwórz nowe konto użytkownika usługi Azure AD. Następnie w kontekście tego użytkownika uruchom polecenie cmdlet Set-AIPAuthentication, aby skonfigurować i przechowywać poświadczenia przy użyciu tokenu dostępu z usługi Azure AD. To konto użytkownika jest następnie uwierzytelniane i uruchamiane dla usługi Azure Rights Management. Konto pobiera zasady usługi Azure Information Protection i wszystkie szablony usług Rights Management używane w etykietach.
 
-Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Podaj nazwę i hasło konta użytkownika utworzonego na potrzeby pracy w trybie nienadzorowanym. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. Po wygaśnięciu ważności tokenu uruchom polecenie cmdlet ponownie, aby uzyskać nowy token:
+> [!NOTE]
+> Jeśli używasz [zakres zasad](../deploy-use/configure-policy-scope.md), pamiętaj, że może być konieczne dodanie tego konta do zasad zakresami.
+
+Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Określ nazwę konta użytkownika i hasło utworzone dla instalacji nienadzorowanej użytkownika. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. Po wygaśnięciu ważności tokenu uruchom polecenie cmdlet ponownie, aby uzyskać nowy token:
 
 Po uruchomieniu tego polecenia cmdlet bez parametrów konto uzyskuje token dostępu, który jest ważny przez 90 dni lub do momentu wygaśnięcia ważności hasła.  
 
@@ -512,6 +515,13 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
 
+
+> [!TIP]
+> Używane zamiast tworzenia nowej aplikacji istniejących aplikacji przy użyciu poprzednich instrukcji Set AIPAuthentication zakończy się niepowodzeniem, może być konieczne zresetowanie wymaganych uprawnień dla aplikacji. Można również sytuacji, gdy po instrukcje tworzenia nowych aplikacji dla zestawu AIPAuthentication, ale następnie zmodyfikować ustawienia aplikacji.
+> 
+> Do zresetowania wymagane uprawnienia dla obu aplikacji, wykonaj następujące kroki konfiguracji: Wybierz **wszystkie ustawienia** > **wymagane uprawnienia** > **Grant Uprawnienia**i kliknij przycisk **tak** o potwierdzenie.
+> 
+> Można również utworzyć nowych aplikacji przy użyciu poprzednich instrukcji.
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Na przykład: 
