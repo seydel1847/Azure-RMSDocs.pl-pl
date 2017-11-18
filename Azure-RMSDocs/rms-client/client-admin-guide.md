@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 96eb4a9fde5c5664a41ad7f68c550af697e8216f
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: b77ee56fdee5f26797a2ea6ff2b40dd22633516b
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -127,7 +127,9 @@ Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączeni
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
-- Następujące ustawienia i klucze rejestru zostaną usunięte. Jeśli skonfigurowano ustawienia dowolnego z tych kluczy rejestru, musisz skonfigurować je ponownie po zresetowaniu klienta. Przykładem może być sytuacja, gdy skonfigurowano ustawienia przekierowania do dzierżawy usługi Azure Information Protection, ponieważ wykonywana jest migracja z usług AD RMS i w sieci nadal istnieje punkt połączenia usługi:
+- Następujące ustawienia i klucze rejestru zostaną usunięte. Jeśli ustawienia dla każdej z tych kluczy rejestru wartości niestandardowych, te należy ponownie skonfigurować po zresetowaniu klienta. 
+    
+    Zwykle sieciach firmowych, te ustawienia są skonfigurowane za pomocą zasad grupy, w którym to przypadku one są automatycznie ponownie po odświeżeniu zasad grupy na komputerze. Jednak może być niektórych ustawień, które są skonfigurowane jednorazowo przy użyciu skryptu, lub skonfigurować ręcznie. W takich sytuacjach należy wykonać dodatkowe kroki, aby ponownie skonfigurować te ustawienia. Na przykład komputerów może uruchomić skrypt jednorazowo można skonfigurować ustawienia dla przekierowanie do usługi Azure Information Protection, ponieważ jest przeprowadzana migracja z usług AD RMS i nadal ma punkt połączenia usługi w sieci. Po przywróceniu klienta, komputer musi ponownie uruchom ten skrypt.
     
     - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     

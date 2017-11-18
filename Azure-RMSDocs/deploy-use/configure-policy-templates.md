@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5afd71e059ef22eed61347e6916b9cbb6c2dc7f0
-ms.sourcegitcommit: 326930de25b259c18469f4100ec5774a04bedc7b
+ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -32,11 +32,11 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 
 **Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony (Azure Information Protection P1 lub P2):**
 
-- Szablony zarządzania praw, które nie są zintegrowane z etykiety dla dzierżawy są wyświetlane w **szablony** sekcji po etykiet w **usługi Azure Information Protection — globalne zasady** bloku. Szablony te można przekonwertować na etykiety, lub możesz połączyć się z nimi, podczas konfigurowania ochrony dla etykiet. 
+- Szablony zarządzania praw, które nie są zintegrowane z etykiety dla dzierżawy są wyświetlane w **szablony ochrony** sekcji po etykiet w **usługi Azure Information Protection — globalne zasady**bloku. Szablony te można przekonwertować na etykiety, lub możesz połączyć się z nimi, podczas konfigurowania ochrony dla etykiet. 
 
 **Jeśli masz subskrypcję obejmującą wyłącznie ochronę (subskrypcja usługi Office 365 obejmującą usługę Azure Rights Management):**
 
-- Szablony zarządzania praw dla Twojej dzierżawy są wyświetlane w **usługi Azure Information Protection — globalne zasady** bloku, w **szablony** sekcji. Nie będą wyświetlane etykiety. Zobacz też ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale te nie mają wpływu na szablonów lub nie można skonfigurować. 
+- Szablony zarządzania praw dla Twojej dzierżawy są wyświetlane w **usługi Azure Information Protection — globalne zasady** bloku, w **szablony ochrony** sekcji. Nie będą wyświetlane etykiety. Zobacz też ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale te nie mają wpływu na szablonów lub nie można skonfigurować. 
 
 ## <a name="default-templates"></a>Szablony domyślne
 
@@ -95,9 +95,9 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     
     Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić ustawienia zgodności aplikacji przy użyciu programu PowerShell i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
 
-- Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet. Ponadto ten szablon nie jest już wyświetlany w **szablony** lub **szablony ochrony** sekcji. W tej sekcji jest w trakcie zmieniana.
+- Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet. Ponadto ten szablon nie jest już wyświetlany w **szablony ochrony** sekcji. 
 
-- Nie można utworzyć nowy szablon z **szablony** lub **szablony ochrony** sekcji. Zamiast tego utworzyć etykietę **Chroń** ustawienia i skonfigurować prawa użytkowania i ustawienia z **ochrony** bloku. Aby uzyskać pełne instrukcje, zobacz sekcję [Aby utworzyć nowy szablon](#to-create-a-new-template).
+- Nie można utworzyć nowy szablon z **szablony ochrony** sekcji. Zamiast tego utworzyć etykietę **Chroń** ustawienia i skonfigurować prawa użytkowania i ustawienia z **ochrony** bloku. Aby uzyskać pełne instrukcje, zobacz sekcję [Aby utworzyć nowy szablon](#to-create-a-new-template).
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
@@ -145,7 +145,7 @@ Podczas konwertowania szablonu do etykiety:
 
 - Ustawienia ochrony są zachowywane i można je edytować, jeśli jest to wymagane, a także dodać inne ustawienia etykiety, takie jak znaczniki wizualne i warunki.
 
-- Oryginalnego szablonu nie będzie już wyświetlany w obszarze **szablony** lub **szablony ochrony** i nie można wybrać jako szablon wstępnie zdefiniowany podczas konfigurowania ochrony dla etykiety. Do edycji tego szablonu w portalu Azure, możesz edytować etykiety, dla której został utworzony po przekonwertowaniu szablonu. Szablon pozostaje dostępny dla usługi Azure Rights Management i wciąż można nim zarządzać za pomocą [poleceń programu PowerShell](administer-powershell.md).  
+- Oryginalnego szablonu nie będzie już wyświetlany w **szablony ochrony** i nie można wybrać jako szablon wstępnie zdefiniowany podczas konfigurowania ochrony dla etykiety. Do edycji tego szablonu w portalu Azure, możesz edytować etykiety, dla której został utworzony po przekonwertowaniu szablonu. Szablon pozostaje dostępny dla usługi Azure Rights Management i wciąż można nim zarządzać za pomocą [poleceń programu PowerShell](administer-powershell.md).  
 
 ## <a name="to-create-a-new-template"></a>Aby utworzyć nowy szablon
 

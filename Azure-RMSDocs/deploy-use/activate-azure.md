@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące aktywacji ochrony w portalu Azure, aby Twoja
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23133038e2a845aae6a86a014cdef31843668ef8
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 430e84ac0a634052eb48e19347eafca436c47659
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Jak aktywować usługę Azure Rights Management w portalu Azure
 
@@ -28,6 +28,8 @@ Użyj tych instrukcji, aby aktywować usługę Azure Rights Management (Azure RM
 1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    
+    Jeśli nie zostało to jeszcze dostęp do bloku usługi Azure Information Protection przed, zobacz jednorazowe [dodatkowe kroki](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time) można dodać tego bloku do portalu.
     
     Aby otworzyć blok usługi Azure Information Protection, musi mieć przypisany [planu Premium ochrony informacji Azure](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli masz te subskrypcje, zobacz komunikat, którego nie można odnaleźć ważnej subskrypcji, [skontaktuj się z Microsoft Support](../get-started/information-support.md#to-contact-microsoft-support) lub użyj inne kanały pomocy technicznej standard.
 
