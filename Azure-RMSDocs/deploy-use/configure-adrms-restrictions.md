@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: cceacbe94983e66bdde6de0947ae59b44e29a54e
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 8684188a4c01f9e90ee073d1d378e55dba1fc1eb
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -65,7 +65,7 @@ Oprócz braku obsługi wymienionych korzyści, które można uzyskać, korzystaj
 
     Mimo że można skonfigurować etykietę **nie przesyłaj dalej** Aby użyć HYOK lub usługi Azure Rights Management, użytkownicy mogą również wybrać nie przesyłaj dalej samodzielnie. Tę opcję można wybrać przy użyciu **nie przesyłaj dalej** znajdującego się na **komunikat** karty wstążki pakietu Office lub za pomocą opcji menu programu Outlook. **Nie przesyłaj dalej** opcji menu znajduje się w **pliku** > **uprawnienia**i z **uprawnienia** przycisk z **opcje** kartę na Wstążce. 
     
-    Klienta usługi Azure Information Protection zawsze używa usług Azure RMS, gdy użytkownicy wybierają **nie przesyłaj dalej** przycisku w programie Outlook. Jeśli to zachowanie nie jest pożądane, możesz ukryć przycisk **Nie przesyłaj dalej** w programie Outlook, konfigurując [zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook). 
+    Klienta usługi Azure Information Protection zawsze używa usług Azure RMS, gdy użytkownicy wybierają **nie przesyłaj dalej** przycisku w programie Outlook. Jeśli nie chcesz, aby ten problem, można ukryć ten przycisk, ustawiając [ustawienie zasad](../deploy-use/configure-policy-settings.md) **dodać do Wstążki programu Outlook przycisk nie przesyłaj dalej** do **poza**. 
     
     Gdy użytkownicy wybierają **nie przesyłaj dalej** z opcją menu programu Outlook można wybrać z usługi Azure RMS lub AD RMS, ale nie będzie wiadomo, rozwiązania do wiadomości e-mail. Jeśli usługi AD RMS jest używany, gdy powinna być używana usługa Azure RMS, osoby, które są udostępniane zewnętrznie nie można otworzyć te wiadomości e-mail
 

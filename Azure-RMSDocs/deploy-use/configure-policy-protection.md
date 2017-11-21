@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: f6661668a73b708f292261dde70181bd22bdf332
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 17f95d9875320c64d2983fcd176e371ee45d2f48
+ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -87,9 +87,11 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
         
         Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: gdy ta opcja jest ustawiona, jest wyświetlana etykieta w tych aplikacjach. Efekty, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe, które użytkownicy mogą wybierać uprawnienia niestandardowe. W tym oknie dialogowym Użytkownicy muszą określić uprawnienia, użytkowników lub grup i daty wygaśnięcia. Upewnij się, że użytkownicy mają instrukcje i wytyczne jak podać te wartości.
     
-    - **Wybierz wstępnie zdefiniowany szablon**: aby użyć jednego z szablonów domyślnych lub samodzielnie skonfigurowanego szablonu niestandardowego. Ten szablon musi zostać opublikowany (bez archiwizacji) i nie muszą już połączony z inną etykietę. Po wybraniu tej opcji można użyć **Edytuj szablon** przycisk, aby [przekonwertować szablon na etykietę](configure-policy-templates.md#to-convert-templates-to-labels).
+    - **Wybierz wstępnie zdefiniowany szablon**: aby użyć jednego z szablonów domyślnych lub samodzielnie skonfigurowanego szablonu niestandardowego. Należy pamiętać, że nie są wyświetlane tę opcję, jeśli edytujesz etykiety, który korzystał wcześniej z **ustawić uprawnienia** opcji.
     
-    Porada: Jeśli używasz **Edytuj szablon** przycisku, może być bardzo przydatne do odwołania [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
+    Aby wybrać szablon wstępnie zdefiniowany, szablon musi zostać opublikowany (bez archiwizacji) i nie muszą już połączony z inną etykietę. Po wybraniu tej opcji można użyć **Edytuj szablon** przycisk, aby [przekonwertować szablon na etykietę](configure-policy-templates.md#to-convert-templates-to-labels).
+    
+    Porada: Jeśli użytkownik są używane do tworzenia i edytowania szablonów niestandardowych, użytkownik może być bardzo przydatne do odwołania [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
 
 8. W przypadku wybrania **ustawić uprawnienia** dla **Azure (klucz w chmurze)**, ta opcja umożliwia skonfigurowanie tych samych ustawień, które można skonfigurować w szablonie. 
     

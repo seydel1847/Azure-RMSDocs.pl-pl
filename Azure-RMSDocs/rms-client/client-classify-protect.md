@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13d751bf9754ba3645cb7bb7417e7f5be394eb27
-ms.sourcegitcommit: 769057f5ffb366fc645bff542a32b2eab4f20c70
+ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -41,16 +41,13 @@ Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć s
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
 
-Za pomocą paska usługi Azure Information Protection wybierz jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
+Użyj paska usługi Azure Information Protection lub **Chroń** na Wstążce, aby wybrać jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
 
-Przykładowo na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą, ponieważ parametr **Poufność** ma wartość **Nieustawiona**. Aby ustawić etykiety, takie jak "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
+Na przykład na poniższej ilustracji przedstawiono, że dokument jeszcze nie zostały oznaczone, ponieważ **czułości** pokazuje **Nieustawione** na pasku usługi Azure Information Protection. Aby ustawić etykiety, takie jak "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
 
 ![Przykład paska usługi Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
 Jeśli etykieta jest już zastosowana do dokumentu i chcesz ją zmienić, możesz wybrać inną etykietę. Jeśli na pasku nie są wyświetlane etykiety, kliknij najpierw ikonę **Edytuj etykietę** obok wartości bieżącej etykiety.
-
-> [!TIP]
-> Możesz też wybrać etykiety z **Chroń** przycisk na **pliku** kartę.
 
 Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sposób:
 
@@ -62,9 +59,17 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
 
-- Być może nie został [zainstalowany](install-client-app.md) klient usługi Azure Information Protection lub klient jest uruchomiony w [trybie z samą ochroną](client-protection-only-mode.md).
+Możliwe przyczyny:
+
+- Nie masz klienta Azure Information Protection [zainstalowane](install-client-app.md).
+
+- Zainstalowanego klienta, ale ustawienie, które nie są wyświetlane pasku został skonfigurowany przez administratora. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty wstążki pakietu Office. 
+
+- Na kliencie jest uruchomiony [trybu tylko do ochrony](client-protection-only-mode.md).
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana? 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>To jest etykietę, którą można było się spodziewać niewidoczne? 
+
+Możliwe przyczyny:
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
@@ -74,11 +79,13 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 ### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
 
-Zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety, możesz określić dla dokumentu własne ustawienia ochrony.
+Jeśli dozwolone przez administratora, można określić własne ustawienia ochrony dokumentów zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety.
 
 1. Na karcie **Narzędzia główne**, w grupie **Ochrona**, kliknij kolejno pozycje **Chroń** > **Uprawnienia niestandardowe**:
 
     ![Opcja Uprawnienia niestandardowe](../media/custom-permissions-callout.png)
+    
+    Jeśli nie możesz zaznaczyć **uprawnienia niestandardowe**, administrator nie będzie można korzystać z tej opcji.
     
     Należy pamiętać, że wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 
@@ -135,7 +142,9 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
     
     ![Brak etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
     
-3. Jeśli chcesz określić własne ustawienia ochrony zamiast korzystać z ustawień, które administrator mógł dołączyć do wybranej etykiety, zaznacz opcję **Chroń za pomocą uprawnień niestandardowych**.
+3. Jeśli dozwolone przez użytkownika adminsitrator, można określić ustawienia ochrony zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety. Aby to zrobić, wybierz **Chroń za pomocą uprawnień niestandardowych**.
+    
+    Jeśli nie możesz zaznaczyć **Chroń za pomocą uprawnień niestandardowych**, administrator nie będzie można korzystać z tej opcji.
     
     Wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 

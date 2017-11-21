@@ -4,7 +4,7 @@ description: "Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e107d796ebda1b1942e19ede8c794f79defbf64e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -28,14 +28,13 @@ Możesz pobrać najnowszej wersji GA i bieżąca wersja preview z [Microsoft Dow
 
 ### <a name="servicing-information-and-timelines"></a>Obsługa informacji i osi czasu
 
-Klienta usługi Azure Information Protection wersji ogólnodostępnej (GA) są obsługiwane przez 6 miesięcy od daty ich wydania. Poprawki i nowe funkcje są zawsze stosowane do najnowszej wersji GA i nie zostaną zastosowane do starszych wersji GA.
+Klienta usługi Azure Information Protection wersji ogólnodostępnej (GA) są obsługiwane przez okres sześciu miesięcy od ich wydania. Poprawki i nowe funkcje są zawsze stosowane do najnowszej wersji GA i nie zostaną zastosowane do starszych wersji GA.
 
 Wersje zapoznawcze nie powinny być wdrażane dla użytkowników końcowych w sieciach produkcyjnych. Aby wyświetlić i spróbuj nowe funkcje i poprawki, które są dostępne w następnej wersji GA w zamian użyj najnowszej wersji wstępnej. Nie są obsługiwane w wersji zapoznawczej wersje, które nie są aktualne.
 
 ### <a name="release-history"></a>Historia wersji
 
 Skorzystaj z poniższych informacji, aby zobaczyć nowe lub zmienione w obsługiwanej wersji klienta usługi Azure Information Protection dla systemu Windows. Najnowsza wersja jest wyświetlana na początku listy. 
-
 
 > [!NOTE]
 > Drobne poprawki nie są wyświetlane, jeśli wystąpi problem z klientem usługi Azure Information Protection, zaleca się sprawdzenie, czy problem został rozwiązany z najnowszą wersją GA. Jeśli ten problem, sprawdź bieżącą wersję podglądu.
@@ -60,17 +59,19 @@ Ta wersja zawiera MSIPC wersji 1.0.3219.0619 klienta usługi RMS.
 
 - Obsługa etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook etykieta automatycznie stosuje opcji programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików etykieta monituje użytkownika o określ uprawnienia niestandardowe. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../deploy-use/configure-policy-protection.md).
 
+- Etykiety obsługuje wiele języków. Począwszy od 30 sierpnia 2017 [domyślne zasady](../deploy-use/configure-policy-default.md) obsługuje wiele języków, które tej wersji klienta wyświetlana dla użytkowników. Aby użytkownicy widzieli etykiet w ich preferowany język z domyślnych zasad przed tą datą oraz etykiety, które można skonfigurować, zobacz [Konfigurowanie etykiety w różnych językach usługi Azure Information Protection](../deploy-use/configure-policy-languages.md).
+
 - Etykiety są wyświetlane z **Chroń** na Wstążce pakietu Office, oprócz wyświetlania na pasku Information Protection. 
 
 - Ochrona natywna dla następujących typów plików programu Visio: .vsdm, vsdx, .vssm, .vssx, .vstm, .vstx
 
 - Obsługa klienta zaawansowane konfiguracje, które można skonfigurować w portalu Azure. Te konfiguracje obejmują:
     
-    - [Ukrywanie przycisku nie przesyłaj dalej w programie Outlook](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)
+    - [Ukrycie lub pokazanie przycisku nie przesyłaj dalej w programie Outlook](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [Opcje uprawnień niestandardowych stały niedostępne dla użytkowników](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [Uprawnienia niestandardowe opcje stały dostępne lub niedostępne dla użytkowników](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [Trwale ukryć pasek usługi Azure Information Protection](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [Trwale ukryć pasek usługi Azure Information Protection](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
     - [Włącz zalecana klasyfikacja w programie Outlook](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 
@@ -98,7 +99,7 @@ Poprawki dla wygody użytkowników, które obejmują:
 
 - Wyślij wiadomość e-mail sprawdzania poprawności, gdy użytkownik określi uprawnień niestandardowych. Ponadto wielu adresów e-mail teraz można określić, naciskając klawisz Enter.
 
-- Etykieta nadrzędna nie jest wyświetlane, gdy jego etykiety podrzędne są skonfigurowane do ochrony, a klient nie ma wersji pakietu Office, która obsługuje ochronę. 
+- Etykieta nadrzędna nie jest wyświetlane, gdy wszystkie jego sublabels jest skonfigurowane dla ochrony i klienta nie ma pakietu Office, która obsługuje ochronę. 
 
 ## <a name="version-172100"></a>Wersja 1.7.210.0
 

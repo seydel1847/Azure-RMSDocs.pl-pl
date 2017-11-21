@@ -4,7 +4,7 @@ description: "Zakres i przeznaczenie komentarzy i pasków bocznych Livefyre dla 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 64f354ed87fbfaccfcc6a102c6d8c2ea88b75b39
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
+ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Lokalne zasady dotyczące komentarzy w dokumentacji usługi Azure Information Protection
 
@@ -29,7 +29,9 @@ Przed opublikowaniem komentarza upewnij się, że dotyczy on strony, na której 
  
 Nie używaj Livefyre komentarzy i notatek dla następujących elementów:
  
-- **Pomoc techniczna**. Na przykład funkcja nie działa po sprawdzeniu wszystkich wymagań i po wykonaniu instrukcji zawartych w dokumentacji lub masz pytanie dotyczące licencjonowania. Zamiast tego [skontaktuj się z Microsoft Support](./get-started/information-support.md#to-contact-microsoft-support) lub użyj inne kanały pomocy technicznej standard. Można również współpracować z społeczności na usługę Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
+- **Pytania dotyczące subskrypcji w Twojej organizacji**. Na przykład, czy funkcja, która ma być używany, oraz po sprawdzeniu obsługują istniejących subskrypcji [subskrypcji wymagania dotyczące usługi Azure Information Protection](./get-started/requirements.md#subscription-for-azure-information-protection). Zamiast tego, skontaktuj się z menedżerem ds. klientów firmy Microsoft lub [Microsoft Support](./get-started/information-support.md#to-contact-microsoft-support).
+
+- **Pomoc techniczna**. Na przykład funkcja nie działa po sprawdzeniu wszystkich wymagań i po wykonaniu instrukcji zawartych w dokumentacji Sprawdzeniu również, że używasz [obsługiwana wersja](./rms-client/client-version-release-history.md#servicing-information-and-timelines) klienta Azure Information Protection. Zamiast tego, skontaktuj się z [Microsoft Support](./get-started/information-support.md#to-contact-microsoft-support) lub użyj inne kanały pomocy technicznej standard. Można również współpracować z społeczności na usługę Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
 
 - **Informacje dotyczące planu wydań**. Na przykład dotyczące tego, kiedy będzie dostępna nowa wersja lub na kiedy zaplanowano dodatkowe funkcje. Te informacje można znaleźć [pakietu Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) lub poproś o nim na platformie Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam). Możesz również sprawdzić [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection i używać tego zasobu, aby żądać nowych funkcji.
 

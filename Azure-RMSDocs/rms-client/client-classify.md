@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: cb8e7bab70ab6b135b7741a8f7ae6ba82b3585a7
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: aee3ec8673217cf130c4705e750532c7aeefe084
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowania plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -53,7 +53,9 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
 
 - Nie masz klienta Azure Information Protection [zainstalowane](install-client-app.md).
- 
+
+- Zainstalowanego klienta, ale ustawienie, które nie są wyświetlane pasku został skonfigurowany przez administratora. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty wstążki pakietu Office. 
+
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana? 
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.

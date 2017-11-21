@@ -4,7 +4,7 @@ description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 406ca5f8a1bdfec87dbec7743145ddfb2c4d18fb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 190a6a371e67417139e033c0b5472042a24b2502
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobierz i zainstaluj klienta usługi Azure Information Protection
 
@@ -58,7 +58,8 @@ Po wykonaniu poprzednich instrukcji i zainstalowaniu klienta usługi Azure Infor
 
 2. W oknie dialogowym **Microsoft Azure Information Protection** kliknij przycisk **OK**.
 
-3. Jeśli zostanie wyświetlone okno dialogowe **Kontrola dostępu użytkownika**, kliknij przycisk **Tak**, aby klient usługi Azure Information Protection mógł zaktualizować rejestr.   
+3. Jeśli zostanie wyświetlone okno dialogowe **Kontrola dostępu użytkownika**, kliknij przycisk **Tak**, aby klient usługi Azure Information Protection mógł zaktualizować rejestr.
+
 Instalacja jest ukończona i możesz teraz etykietować oraz chronić swoje dokumenty i wiadomości e-mail przy użyciu usługi Azure Information Protection.
 
 ## <a name="other-instructions"></a>Inne instrukcje    

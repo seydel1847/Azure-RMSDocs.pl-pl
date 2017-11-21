@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
-ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
+ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -117,46 +117,40 @@ Podczas eksportowania zasady, ta akcja pobiera plik z rozszerzeniem zip z wielom
 2. Nazwy pliku zidentyfikowanych **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, które mają zainstalowanego klienta Azure information protection. 
 
 
-## <a name="hide-the-do-not-forward-button-in-outlook"></a>Ukrywanie przycisku Nie przesyłaj dalej w programie Outlook
+## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Ukrycie lub pokazanie przycisku nie przesyłaj dalej w programie Outlook
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal.
+Aby skonfigurować tę opcję zaleca przy użyciu [ustawienie zasad](../deploy-use/configure-policy-settings.md) **dodać do Wstążki programu Outlook przycisk nie przesyłaj dalej**. Jednak również można skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowane w portalu Azure.
 
-Po skonfigurowaniu tego ustawienia przycisk **Nie przesyłaj dalej** na wstążce programu Outlook zostanie ukryty. Ta opcja nie zostanie jednak ukryta w menu pakietu Office.
+Po skonfigurowaniu tego ustawienia powoduje ukrycie lub pokazuje **nie przesyłaj dalej** na Wstążce w programie Outlook. To ustawienie nie ma wpływu na opcję nie przesyłaj dalej z menu pakietu Office.
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
 - Klucz: **DisableDNF**
 
-- Wartość: **Prawda**
+- Wartość: **True** do ukrywanie przycisku, lub **False** wyświetlać przycisk
 
-## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>Zablokowanie dostępu użytkowników do opcji uprawnień niestandardowych
+## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>Uprawnienia niestandardowe opcje stały dostępne lub niedostępne dla użytkowników
 
-> [!IMPORTANT]
-> Jeśli bieżąca wersja klienta jest używana, nie używać tej opcji, jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
+Aby skonfigurować tę opcję zaleca przy użyciu [ustawienie zasad](../deploy-use/configure-policy-settings.md) **udostępnić użytkownikom opcję uprawnień niestandardowych**. Jednak również można skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowane w portalu Azure. 
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
-
-Po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników opcje uprawnień niestandardowych w następujących lokalizacjach staną się niedostępne do wyboru przez użytkowników:
-
-- W aplikacjach pakietu Office: karta **Strona główna** > grupa **Ochrona** > **Chroń** > **Uprawnienia niestandardowe**
-
-- W Eksploratorze plików: kliknij prawym przyciskiem myszy opcję **Klasyfikuj i chroń** > **Uprawnienia niestandardowe**
-
-To ustawienie nie ma wpływu na uprawnienia niestandardowe, które można skonfigurować przy użyciu opcji menu pakietu Office. 
+Podczas konfigurowania tego ustawienia i opublikować zasady dla użytkowników, uprawnienia niestandardowe opcje staną się dostępne dla użytkowników wybrać własne ustawienia ochrony lub jest niedostępny, dzięki czemu użytkownicy nie można wybrać własne ustawienia ochrony, chyba że zostanie wyświetlony monit.
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
 - Klucz: **EnableCustomPermissions**
 
-- Wartość: **Fałsz**
+- Wartość: **True** udostępnienie opcji uprawnień niestandardowych, lub **False** Aby ta opcja niedostępna
+
+> [!IMPORTANT]
+> Jeśli bieżąca wersja klienta jest używana, nie należy ustawiać tej opcji **False** Jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. Go używać tylko wtedy, gdy [ustawienie zasad](../deploy-use/configure-policy-settings.md) **wyświetlane na pasku Information Protection w aplikacji pakietu Office** ustawiono **na**.
 
 Gdy po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników użytkownik zdecyduje, aby nie wyświetlać paska usługi Azure Information Protection w aplikacjach pakietu Office, pasek pozostanie ukryty. Takie zachowanie ma miejsce, gdy użytkownik usunie zaznaczenie opcji **Pokaż pasek** na karcie **Strona główna**, w grupie **Ochrona**, w obszarze przycisku **Chroń**. To ustawienie nie daje efektu, jeśli użytkownik zamknie pasek za pomocą ikony **Zamknij ten pasek**.
 
-Nawet gdy pasek usługi Azure Information Protection pozostaje ukryty, użytkownicy mogą wybrać etykietę z tymczasowo wyświetlanego paska, jeśli skonfigurowano zalecaną klasyfikację lub w przypadku, gdy dokument lub wiadomość e-mail musi mieć etykietę. To ustawienie nie ma również wpływu na konfigurowane przez Ciebie lub innych użytkowników etykiety, takie jak klasyfikacja ręczna lub automatyczna, albo ustawienie etykiety domyślnej.
+Nawet gdy pasek usługi Azure Information Protection pozostaje ukryty, użytkownicy mogą wybrać etykietę z tymczasowo wyświetlanego paska, jeśli skonfigurowano zalecaną klasyfikację lub w przypadku, gdy dokument lub wiadomość e-mail musi mieć etykietę. 
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
@@ -219,6 +213,8 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 - Klucz 2: **SyncPropertyState**
 
 - Wartość klucza 2: **OneWay**
+
+Tylko jeden właściwości niestandardowej, należy użyć tych kluczy i wartości.
 
 Jako przykład masz kolumny programu SharePoint o nazwie **klasyfikacji** mający możliwe wartości **publicznego**, **ogólne**, i **poufne**. Dokumenty są przechowywane w programie SharePoint i mieć jeden z tych wartości właściwości klasyfikacji.
 
