@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów sieci przedsiębiorst
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b77ee56fdee5f26797a2ea6ff2b40dd22633516b
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -46,7 +46,7 @@ Na przykład:
 
 Klient usługi Azure Information Protection zawiera następujące elementy:
 
-- Dodatek pakietu Office, instalujący pasek usługi Azure Information Protection, użytkownicy mogą wybierać etykiety klasyfikacji i **Chroń** na Wstążce, aby wyświetlić dodatkowe opcje. Dla programu Outlook **nie przesyłaj dalej** przycisku jest także dodawane do wstążki.
+- Dodatek pakietu Office, instalujący pasek usługi Azure Information Protection, użytkownicy mogą wybierać etykiety klasyfikacji i **Chroń** na Wstążce, aby wyświetlić dodatkowe opcje. Dla programu Outlook **nie przesyłaj dalej** przycisk jest również dostępny dla wstążki.
 
 - Opcje dostępne po kliknięciu prawym przyciskiem myszy w oknie Eksploratora plików Windows, które pozwalają użytkownikom stosować etykiety klasyfikacji i ochronę plików.
 
