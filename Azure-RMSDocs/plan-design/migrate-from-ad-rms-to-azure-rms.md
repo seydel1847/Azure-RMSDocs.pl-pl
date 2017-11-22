@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b1c7a084aa5d81a0abfd50021b95ae8af32d034
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
+ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -202,11 +202,13 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
     Po potwierdzeniu, że wszystkie komputery z systemem Windows korzystają z usługi Azure Rights Management i nie uzyskują dostęp do serwerów usług AD RMS, możesz anulowanie zastrzeżenia wdrożenia usług AD RMS.
 
-- **Krok 11: Ponownie skonfiguruj klientów urządzeń przenośnych i komputerów Mac, a następnie usuń kontrolki dołączania**
+- **Krok 11: Wykonanie zadania migracji klienta**
 
     Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i Ipad, telefony i tablety, systemu Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
     
     Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne. Jednak jeśli nie używasz kontrolki dołączania, ponieważ wybrano opcję migracji wszystko, co w tym samym czasie, a nie wykonać migracji stopniowej, możesz pominąć instrukcjami, aby usunąć kontrolki dołączania.
+    
+    Komputery z systemem Windows korzystający z pakietu Office 2010, sprawdź, czy należy wyłączyć **Zarządzanie szablonu zasadami prawa AD RMS (Automatyczna)** zadań.
 
 - **Krok 12: Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection**
 
