@@ -4,7 +4,7 @@ description: "Faza 5 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
+ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -48,7 +48,7 @@ Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości prze
 >[!IMPORTANT]
 > Po zakończeniu tej migracji klaster usługi AD RMS nie może być używany z usługą Azure Information Protection ani z opcją „hold your own key” (HYOK). Jeśli zdecydujesz się używać rozwiązania HYOK dla etykiety usługi Azure Information Protection, to z powodu przekierowań, które są teraz stosowane, używany klaster usługi AD RMS musi mieć różne adresy URL licencjonowania do tych w klastrach, które zostały poddane migracji.
 
-## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>Krok 11. Skonfiguruj ponownie klientów urządzeń przenośnych i komputerów Mac, a następnie usuń kontrolki dołączania
+## <a name="step-11-complete-client-migration-tasks"></a>Krok 11. Zadania migracji klienta ukończone
 
 Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV usługi DNS, które zostały utworzone podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
 
@@ -95,6 +95,8 @@ Aby usunąć kontrolki dołączania:
         Get-AadrmOnboardingControlPolicy
 
     W danych wyjściowych element **License** powinien wyświetlać **False** i nie powinien być wyświetlany żaden identyfikator GUID dla elementu **SecurityGroupOjbectId**.
+
+Ponadto jeśli używasz pakietu Office 2010 i włączono **Zarządzanie szablonu zasadami prawa AD RMS (Automatyczna)** zadanie w bibliotece harmonogramu zadań systemu Windows, wyłączyć tego zadania, ponieważ nie jest on używany przez informacji Azure Klient ochrony. To zadanie są zazwyczaj włączane za pomocą zasad grupy i obsługuje wdrożenia usług AD RMS. To zadanie można znaleźć w następującej lokalizacji: **Microsoft** > **Windows** > **Active Directory Rights Management Services Client**
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection
 
