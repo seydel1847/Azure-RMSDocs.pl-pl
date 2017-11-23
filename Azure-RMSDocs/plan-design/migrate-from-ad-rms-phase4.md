@@ -4,7 +4,7 @@ description: "Faza 4 migracji z usługi AD RMS do usługi Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: beda6273c306a55130223c7b4b9ed9fc4d088fac
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
@@ -29,11 +29,9 @@ Skorzystaj z poniższych informacji dotyczących fazy 4 migrowania z usługi AD 
 
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>Krok 8. Konfigurowanie integracji funkcji IRM na potrzeby usługi Exchange Online
 
-Jeśli wcześniej zaimportowano zaufaną domenę publikacji z usługi AD RMS do usługi Exchange Online, należy usunąć tę domenę, aby uniknąć konfliktu szablonów i zasad po przeprowadzeniu migracji do usługi Azure Information Protection. W tym celu użyj polecenia cmdlet [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) w usłudze Exchange Online.
+Niezależnie od dzierżawcy usługi Azure Information Protection topologii klucza, który został wybrany, wykonaj następujące czynności:
 
-W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Protection **Zarządzany przez firmę Microsoft**:
-
-1. Skorzystaj z instrukcji podanych w sekcji [Usługa Exchange Online: konfiguracja funkcji IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration) artykułu [Office 365: konfiguracja dla klientów i usług online](../deploy-use/configure-office365.md). Ta sekcja zawiera typowe polecenia uruchamiane w celu nawiązania połączenia z usługą Exchange Online, importowania klucza dzierżawy z usługi Azure Information Protection oraz włączania funkcji IRM na potrzeby usługi Exchange Online. Po wykonaniu tych kroków dostępna będzie pełna funkcjonalność ochrony za pomocą usługi Azure Rights Management z usługą Exchange Online.
+1. Aby skonfigurować usługi Exchange Online do korzystania z usługi Azure Rights Management, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
 
 2. Oprócz standardowej konfiguracji w celu włączenia funkcji IRM dla usługi Exchange Online uruchom następujące polecenia programu PowerShell, aby upewnić się, że użytkownicy będą mogli czytać wiadomości e-mail, które zostały wysłane z użyciem ochrony za pomocą usług AD RMS.
 
@@ -45,11 +43,6 @@ W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Prote
         Set-IRMConfiguration -LicensingLocation $list
         Set-IRMConfiguration -internallicensingenabled $false
         Set-IRMConfiguration -internallicensingenabled $true
-
-
-W przypadku wybrania topologii klucza dzierżawy usługi Azure Information Protection **Zarządzany przez klienta (BYOK)**:
-
--   Funkcjonalność ochrony za pomocą usług Rights Management zostanie ograniczona w programie Exchange Online zgodnie z opisem w artykule [Cennik i ograniczenia dotyczące funkcji BYOK](byok-price-restrictions.md).
 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>Krok 9. Konfigurowanie integracji funkcji IRM dla programów Exchange Server i SharePoint Server
