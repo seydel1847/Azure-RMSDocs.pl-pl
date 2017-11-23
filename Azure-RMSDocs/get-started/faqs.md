@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 324eb3eb5d749021da93213e807f6316ca784485
-ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
+ms.openlocfilehash: da0ba7876b1098671428e87117bed97c4f464071
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -78,6 +78,27 @@ Informacje dodatkowe:
 Etykiety usługi Azure Information Protection umożliwiają stosowanie spójne zasady klasyfikacji i ochrony dokumentów i wiadomości e-mail, czy są one lokalnie lub w chmurze. Ta klasyfikacja i ochrona jest niezależna od której jest przechowywana zawartość lub jak jest przenoszony. [Etykiety w Office 365 zabezpieczeń i zgodności](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30) można klasyfikować dokumenty i wiadomości e-mail do inspekcji i przechowywania w przypadku tej zawartości w usługi Office 365. 
 
 Obecnie stosowane i zarządzania tymi etykiety oddzielnie, lecz firma Microsoft pracuje w kierunku kompleksowy i ujednoliconego strategii etykietowania dla wielu usług, które obejmują usługi Azure Information Protection, usługi Office 365, Microsoft Cloud App Security i Windows Ochrona informacji. Ten sam schemat etykietowania i magazynu będzie także dostępna dla dostawców oprogramowania. Aby uzyskać więcej informacji, zobacz sesji Microsoft Ignite 2017 [ochrona cyklu pełnych danych przy użyciu funkcji ochrony informacji firmy Microsoft](https://myignite.microsoft.com/videos/55397).
+
+## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Jaka jest różnica między infrastruktury klasyfikacji plików systemu Windows Server i skanera usługi Azure Information Protection?
+
+Przez jakiś czas flaguje za pomocą infrastruktury klasyfikacji plików systemu Windows Server można klasyfikować dokumenty oraz chronić je przy użyciu [łącznik usługi Rights Management](../deploy-use/deploy-rms-connector.md) (tylko w Office dokumenty) lub [programu PowerShell skrypt](../rms-client/configure-fci.md) (wszystkich typów plików). 
+
+Można teraz używać [skanera usługi Azure Information Protection](../deploy-use/deploy-aip-scanner.md), obecnie w wersji zapoznawczej. Skaner używa klienta Azure Information Protection i zasady usługi Azure Information Protection, aby dokumenty etykiety (wszystkich typów plików), następnie sklasyfikowanych i chronionych opcjonalnie tych dokumentów.
+
+Główne różnice między te dwa rozwiązania:
+
+|Windows Server infrastruktury klasyfikacji plików|Skaner usługi Azure Information Protection|
+|--------------------------------|-------------------------------------|
+|Obsługiwane magazyny danych: <br /><br />-Lokalnych folderów w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />-Lokalnych folderów w systemie Windows Server<br /><br />— Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— SharePoint Server 2016 i SharePoint Server 2013|
+|Tryb operacyjne: <br /><br />-Czasu rzeczywistego|Tryb operacyjne: <br /><br />-Systematycznie przeszukuje magazynów danych i tego cyklu można uruchomić jeden raz lub wielokrotnie|
+
+Obecnie ma różnicy w ustawieniu [właściciela zarządzania prawami](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) dla plików, które są chronione na lokalnego folderu lub udziału sieciowego. Domyślnie dla obu rozwiązań właściciela zarządzania prawami jest ustawiony na konto, które chroni plik, ale można zastąpić to ustawienie:
+
+- Infrastruktury klasyfikacji plików w systemie Windows Server: Ustawianie właściciela usługi Rights Management jako jednego konta dla wszystkich plików lub dynamiczne określanie właściciela zarządzania prawami dla każdego pliku. Aby ustawić dynamicznie właściciela zarządzania prawami, należy użyć **- OwnerMail [E-mail właściciela pliku źródłowego]** parametr i wartość. Ta konfiguracja pobiera adres e-mail użytkownika z usługi Active Directory przy użyciu nazwy konta użytkownika w pliku właściwości właściciela.
+
+- Skanera usługi Azure Information Protection: można ustawić właściciela zarządzania prawami jednego konta dla wszystkich plików, ale nie można ustawić dynamicznie właściciela zarządzania prawami dla każdego pliku. Aby ustawić konta, określ **- DefaultOwner** opcjonalny parametr dla [konfiguracji skanera](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration?view=azureipps#optional-parameters).
+
+Gdy skaner chroni pliki w witrynach programu SharePoint i bibliotek, właściciela zarządzania prawami dynamicznie ustawiono dla każdego pliku przy użyciu wartości autora programu SharePoint.
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>Podobno nowa wersja ma być wkrótce dostępna dla usługi Azure Information Protection — kiedy zostanie ona wydana?
 
