@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 6dfda21368713c652df6c815dbb3895517182af1
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 3bdaf11d6d20e0f162ba27fd0844fd6f43a333be
+ms.sourcegitcommit: 230eac207dc2276246db7997804644c9930051a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -162,6 +162,48 @@ Dla pierwszego cyklu skanowania skaner sprawdza wszystkie pliki w magazynie dany
 Możesz wymusić skanera, aby ponownie sprawdzić wszystkie pliki, uruchamiając [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) z `-Type` ustawiona **pełne**. Ta konfiguracja jest użyteczna, jeśli raporty mają obejmować wszystkie pliki i jest zwykle używany podczas pracy w trybie odnajdowania skanera. Po zakończeniu pełnego skanowania typu skanowania automatycznie zmienia się przyrostowe tak, aby w przypadku kolejnych skanowania są skanowane tylko nowe lub zmodyfikowane pliki.
 
 Ponadto wszystkie pliki są kontrolowane podczas skanera pobierania zasad usługi Azure Information Protection, zawierający nowe lub zostały zmienione warunki. Skaner odświeża zasady, co godzinę i po uruchomieniu usługi.
+
+## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optymalizacja wydajności skanera usługi Azure Information Protection
+
+Aby zmaksymalizować wydajność skanera:
+
+- **Ma szybkie i niezawodne połączenie sieciowe między komputerem skanera i magazynu danych zeskanowane**
+    
+    Na przykład umieścić komputer skanera w tej samej sieci LAN lub (preferowane), w tym samym segmencie sieci do przechowywania danych zeskanowane.
+    
+    Jakość połączenia sieciowego wpływa na wydajność skanera, ponieważ do zbadania pliki, skaner przesyła zawartość plików do komputera z uruchomioną usługą skanera. Gdy ograniczenie (lub wyeliminowanie) liczbę przeskoków sieciowych, wymaga te dane są przesyłane również zmniejszyć obciążenie sieci. 
+
+- **Upewnij się, że zasoby procesora dostępne na komputerze skanera**
+    
+    Sprawdzaniem zgodność z skonfigurowanych warunków, zawartość pliku i szyfrowania i odszyfrowywania plików są akcje obciążenie procesora. Monitorowanie typowych cykle skanowania dla Twojego magazynów określone dane ustalić, czy brak zasobów procesora negatywnego wpływu na wydajność skanera.
+    
+- **Skanuj folderów lokalnych na komputerze z uruchomioną usługą skanera**
+    
+    Jeśli masz foldery, aby przeprowadzić skanowanie w systemie Windows server, zainstalować skaner na innym komputerze i skonfigurować te foldery sieciowych udziałów do skanowania. Oddzielanie dwie funkcje obsługi plików i skanowanie plików oznacza, że zasoby obliczeniowe dla tych usług nie rywalizuje ze sobą.
+
+Inne czynniki wpływające na wydajność skanera:
+
+- Bieżące obciążenie i czasy odpowiedzi magazynów danych zawierających pliki do skanowania
+
+- Określa, czy skaner działa w trybie odnajdowania lub tryb wymuszania
+    
+    Tryb odnajdowania zwykle ma wyższy skanowanie szybkości niż wymuszać trybu, ponieważ odnajdywanie wymaga jednego pliku do odczytu akcji, należy wymusić wymaga trybie odczytu i zapisu akcje.
+
+- Zmień warunki usługi Azure Information Protection
+    
+    Pierwszy cykl skanowania podczas skaner musi sprawdzać każdy plik oczywiście będzie trwać dłużej niż kolejne skanowania cyklów domyślnie inspekcji tylko nowych i zmienionych plików. Jednak w przypadku zmiany warunków w ramach zasad usługi Azure Information Protection, wszystkie pliki są skanowane ponownie, zgodnie z opisem w [powyższej sekcji](#when-files-are-rescanned-by-the-azure-information-protection-scanner).
+
+- Wybranego poziom rejestrowania
+    
+    Można wybrać **debugowania**, **informacji**, **błąd** i **poza** raportów skanera. **Wyłącz** powoduje najlepszą wydajność; **Debugowania** znacznie spowalnia skanera i powinna być używana tylko w celu rozwiązania problemu. Aby uzyskać więcej informacji, zobacz *ReportLevel* parametr [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet.
+
+- Same pliki:
+    
+    - Pliki pakietu Office są zeskanowane szybciej niż pliki PDF.
+    
+    - Niechronione pliki są szybsze do skanowania niż chronionych plików.
+    
+    - Duże pliki oczywiście skanowanie trwało dłużej niż małe pliki.
 
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Listę poleceń cmdlet dla usługi Azure Information Protection skanera 
 
