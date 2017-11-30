@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -53,13 +53,13 @@ Można również tworzyć własne szablony niestandardowe. Prawdopodobnie potrze
 
 ### <a name="default-template-names"></a>Domyślne nazwy szablonu
 
-Jeśli ostatnio uzyskano subskrypcję usługi Azure Information Protection, szablony domyślne są tworzone z następujących nazw:
+Jeśli użytkownik uzyskał ostatnio subskrypcji, szablony domyślne są tworzone z następujących nazw:
 
 - **Poufne \ wszyscy pracownicy** że przyznaje odczytywać i modyfikować uprawnienia do chronionej zawartości.
 
 - **Poufny \ wszyscy pracownicy** który nadaje uprawnienia tylko do odczytu do chronionej zawartości.
 
-Jeśli uzyskać subskrypcję usługi Azure Information Protection pewien czas temu, lub jeśli nie masz subskrypcji usługi Azure Information Protection, ale masz subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, szablony domyślne są tworzone z następujące nazwy:
+Jeśli użytkownik uzyskał subskrypcji pewien czas temu, szablony domyślne są tworzone z następujących nazw:
 
 - **\<Nazwa organizacji > — poufne** że przyznaje odczytywać i modyfikować uprawnienia do chronionej zawartości.
 

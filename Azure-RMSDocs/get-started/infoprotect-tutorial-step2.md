@@ -4,17 +4,17 @@ description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: 51688d173bbc71f9cf2774393ebd468e7897e00a
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -50,6 +50,8 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
     Jeśli nie masz tej etykiety, ponieważ masz starszą wersję zasad, wybierz **Wewnętrzne** jako równoważną etykietę.
 
 2. Aby uzyskać **użytkownik musi podać uzasadnienie, aby ustawić niższy etykiety klasyfikacji, Usuń etykietę lub usuń ochronę**, ustaw tę opcję, **na**.
+
+3. Ponadto Znajdź ustawienie **udostępnić użytkownikom opcję uprawnień niestandardowych**. Jeśli wartość jest ustawiona na **poza**, aby zmienić **na**.
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Tworzenie nowej etykiety dla ochrony, znaczniki wizualne i warunku z monitem o klasyfikacji
 
