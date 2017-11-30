@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/28/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3bdaf11d6d20e0f162ba27fd0844fd6f43a333be
-ms.sourcegitcommit: 230eac207dc2276246db7997804644c9930051a6
+ms.openlocfilehash: 7e85fc2bd0ec3425fbd36152f84103493aad6fc1
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -78,6 +78,8 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
     - Dla wystąpienia nazwanego:`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
     
     - Dla programu SQL Server Express:`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
+    
+    Używaj pomocy online dotyczącej tego polecenia cmdlet, jeśli potrzebujesz więcej [szczegółowe przykłady](/powershell/module/azureinformationprotection/set-aipscannerconfiguration#examples).
 
 4. Sprawdź, czy usługa jest teraz zainstalowany za pomocą **narzędzia administracyjne** > **usług**. 
     
