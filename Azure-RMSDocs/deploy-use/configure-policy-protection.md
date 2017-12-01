@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 17f95d9875320c64d2983fcd176e371ee45d2f48
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 1b16d3ab7923592a011b6be39586a02a378f39f0
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -101,7 +101,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
         
         Użytkownicy lub grupy musi mieć adres e-mail. W środowisku produkcyjnym, to jest prawie zawsze można, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
         
-    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Alternatywnie można określić wszystkich użytkowników w innej organizacji, wprowadzając nazwę domeny z tej organizacji. 
+    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Alternatywnie można określić wszystkich użytkowników w innej organizacji, wprowadzając nazwę domeny z tej organizacji. Nie należy umieszczać nazwy domen z serwisów społecznościowych, które obsługują osobiste konta e-mail. Na przykład nie należy wprowadzać **gmail.com**, **hotmail.com**, lub **outlook.com**.
         
     >[!NOTE]
     >Jeśli adres e-mail zmieni się po wybraniu użytkownika lub grupy, zobacz [zagadnienia w przypadku zmiany adresów e-mail](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) sekcji planowania dokumentacji.

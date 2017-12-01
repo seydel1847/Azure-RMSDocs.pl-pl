@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 51688d173bbc71f9cf2774393ebd468e7897e00a
-ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
+ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
@@ -52,6 +52,8 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
 2. Aby uzyskać **użytkownik musi podać uzasadnienie, aby ustawić niższy etykiety klasyfikacji, Usuń etykietę lub usuń ochronę**, ustaw tę opcję, **na**.
 
 3. Ponadto Znajdź ustawienie **udostępnić użytkownikom opcję uprawnień niestandardowych**. Jeśli wartość jest ustawiona na **poza**, aby zmienić **na**.
+    
+    Nie może być konieczne ustawienie to można zmienić, ponieważ wartość domyślna zależy od daty uzyskać subskrypcję. Uprawnienia niestandardowe w dalszej części tego samouczka zostanie wykorzystany do udziału chronionego dokumentu z użytkownikiem, który określisz po kliknięciu prawym przyciskiem myszy plik w Eksploratorze plików.
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Tworzenie nowej etykiety dla ochrony, znaczniki wizualne i warunku z monitem o klasyfikacji
 
@@ -144,7 +146,7 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
 |Domyślne zasady i różnych wersji — informacje|[Domyślne zasady usługi Azure Information Protection](../deploy-use/configure-policy-default.md)|
-|Informacje o opcjach konfiguracji zasad|[Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md)|
+|Konfigurowania zasad|[Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md)|
 |Szczegółowe instrukcje dotyczące konfigurowania etykiety dla ochrony|[Konfigurowanie etykiety dla ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md)|
 |Szczegółowe informacje na temat uprawnień|[Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md)|
 
