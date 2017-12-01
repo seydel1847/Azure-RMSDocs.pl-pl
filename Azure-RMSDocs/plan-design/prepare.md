@@ -4,7 +4,7 @@ description: "Sprawdź, czy masz konta użytkowników i grup, których potrzebuj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 41269f709df4b00a6f127e81aa060a062ab1005f
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 8f29aec107c344489ae38afabfa79129fd3fa000
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -207,7 +207,7 @@ W przypadku dwóch scenariuszy konfiguracji Azure Rights Management korzystając
 
 Jeśli zmienisz adres e-mail użytkownika lub grupy, zalecamy dodanie starego adresu e-mail jako drugiego adresu e-mail (znanego także jako adres serwera proxy, alias lub alternatywny adres e-mail) do użytkownika lub grupy. Wykonanie tej czynności spowoduje dodanie starego adresu e-mail do atrybutu proxyAddresses usługi Azure AD. Administrowanie tym kontem zapewnia ciągłość działania w przypadku dowolnych praw użytkowania lub innych konfiguracji zapisanych, gdy stary adres e-mail był w użyciu. 
 
-Jeśli nie możesz tego zrobić, istnieje ryzyko, że w przypadku użytkownika lub grupy z nowym adresem e-mail nastąpi odmowa dostępu do dokumentów i wiadomości e-mail, które były wcześniej chronione, oraz że wystąpią błędy innych konfiguracji, które korzystały ze starej wartości. W takim przypadku musisz powtórzyć konfigurację, aby zapisać nowy adres e-mail.
+Jeśli nie możesz tego zrobić, użytkownika lub grupy z nowej wiadomości e-mail adres ryzyka odmowę dostępu do dokumentów i wiadomości e-mail, które wcześniej były chronione przy użyciu starego adresu e-mail. W takim przypadku należy powtórzyć konfiguracji ochrony, aby zapisać nowy adres e-mail. Na przykład jeśli użytkownik lub grupa przyznano prawa użytkowania w szablonach lub etykiety, edytowanie tych szablonów lub etykiety i określ nowy adres e-mail z tego samego prawa użytkowania podczas przyznane stary adres e-mail.
 
 Pamiętaj, że zmiana adresu e-mail grupy występuje rzadko, więc jeśli przypisujesz prawa użytkowania do grupy, a nie do poszczególnych użytkowników, zmiana adresu e-mail użytkownika nie ma znaczenia. W tym scenariuszu prawa użytkowania są przypisywane do adresu e-mail grupy, a nie do adresów e-mail poszczególnych użytkowników. Jest to najbardziej prawdopodobna (i zalecana) metoda, której administrator może użyć w celu skonfigurowania praw użytkowania chroniących dokumenty i wiadomości e-mail. Użytkownicy mogą jednak przeważnie przypisywać poszczególnym osobom uprawnienia niestandardowe. Ponieważ nie zawsze wiadomo, czy konto użytkownika lub grupy było używane do udzielania dostępu, najbezpieczniej jest zawsze dodać stary adres e-mail jako drugi adres e-mail.
 

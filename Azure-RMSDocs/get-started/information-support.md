@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0e0bcdb343ec1428c59bc63f149b5590e01d7d93
-ms.sourcegitcommit: 230eac207dc2276246db7997804644c9930051a6
+ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -26,9 +26,9 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 |Cel|.. Czynności|
 |----------------|---------------|
-|Najczęściej używane znajdują się w dokumentacji|Odczyt stron 5: <br /><br />[Wprowadzenie — Efektywnych aplikacji dla systemu iOS i Android](../rms-client/mobile-app-get-started.md) <br /><br /> [Co to jest usługa Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /><br /> [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)<br /><br />[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)<br /><br />[Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements.md)|
+|Najczęściej używane znajdują się w dokumentacji|Odczyt stron 5:<br /><br /> - [Co to jest Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /> - [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)<br />- [Wprowadzenie — Efektywnych aplikacji dla systemu iOS i Android](../rms-client/mobile-app-get-started.md) <br />- [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)<br />- [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements.md)|
 |Skontaktuj się z zespołu produktu i innymi użytkownikami|Odwiedź stronę [witryny usługi Yammer](https://www.yammer.com/AskIPTeam) usługi Azure Information Protection.|
-|Żądanie nowej funkcji lub zmiana w działaniu|Odwiedź stronę [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection|
+|Żądanie nowej funkcji lub zmiana w działaniu|Odwiedź stronę [User Voice](https://msip.uservoice.com) witryny usługi Azure Information Protection|
 |Otrzymywać tweetów grupa produktów|Postępuj zgodnie z [Microsoft Mobility@MSFTMobility ](https://twitter.com/MSFTMobility) w serwisie Twitter.|
 |Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach|Zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.|
 
@@ -89,6 +89,8 @@ Rozwiązywanie problemów:
 
 Firma Microsoft zaleca korzystanie z [witryny usługi Yammer dla usługi Azure Information Protection](https://www.yammer.com/AskIPTeam). Ten zasób zapewnia bezpośrednie odpowiedzi oprócz korzyści środowisko w udostępnionej przez zespół usługi Azure Information Protection i wiedzy z innych administratorów oraz konsultantów i.
 
-Jeśli nie masz dostępu do usługi Yammer, wypróbuj [forum witryny TechNet dotyczące usługi Microsoft RMS (w chmurze)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
+Zapoznaj się szybko rosnących [społeczność techniczna](https:/techcommunity.microsoft.com), która ma [miejsca usługi Azure Information Protection](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection) zadawać pytania i udostępnianie informacji.
+
+Jeśli nie masz dostępu do tych witryn, spróbuj [forum TechNet dotyczące usługi Microsoft RMS (Cloud)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
