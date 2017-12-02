@@ -4,17 +4,17 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
+ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -43,19 +43,17 @@ Stosowana technologia ochrony korzysta z usługi o nazwie *Azure Rights Manageme
 
 Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Podobnie jak w przypadku stosowanych etykiet, ochrona stosowana przy użyciu usługi Rights Management obejmuje dokumenty i wiadomości e-mail niezależnie od lokalizacji — wewnątrz organizacji, w sieciach, na serwerach plików, w aplikacjach i poza nimi. To rozwiązanie ochrony informacji zapewnia kontrolę nad danymi nawet wtedy, gdy są one udostępniane innym osobom.
 
-Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. Te zadania ochrony można uprościć i usprawnić przy użyciu *szablony usługi Rights Management*.
+Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. 
+
+Te ustawienia ochrony może być częścią konfigurację etykiety, dzięki czemu użytkownicy klasyfikować i chronić dokumenty i wiadomości e-mail po prostu, stosując etykiety. Jednak takie same ustawienia ochrony można również używane przez aplikacje i usługi, które obsługują ochronę, ale nie etykietowania. Dla tych aplikacji i usług, ustawienia ochrony są udostępniane jako *szablony usługi Rights Management*.
 
 ### <a name="rights-management-templates"></a>Szablony zarządzania prawami
 
 Jak aktywować usługę Azure Rights Management, dwa szablony domyślne są dostępne dla Ciebie, który ogranicza dostęp do danych użytkownikom w organizacji. Za pomocą tych szablonów można od razu przystąpić do ochrony danych przed wyciekiem poza organizację. Można również uzupełnić te szablony domyślne, konfigurując własne ustawienia ochrony, które mają zastosowanie bardziej restrykcyjnych formantów.
 
-Szablony mogą być częścią konfiguracji etykiety. Stosowania tej etykiety do dokumentu lub wiadomości e-mail, danych jest klasyfikowany i automatycznie chronione. Szablony mogą być również wybierane przez użytkowników lub administratorów w produktach i usługach, które obsługują technologię Azure Rights Management.
+Podczas tworzenia etykiety dla usługi Azure Information Protection, zawierający ustawienia ochrony w obszarze obejmuje, ta akcja tworzy odpowiedni szablon usługi Rights Management. Tego szablonu można następnie użyć z aplikacjami i usługami, które obsługują usługę Azure Rights Management.
 
-W tym przykładzie pokazano, jak można wybrać szablon dla etykiety podczas konfigurowania zasad usługi Azure Information Protection w witrynie Azure Portal:
-
-![Przykład przedstawiający wybieranie szablonów w witrynie Azure Portal](../media/info-protect-template-callout.png)
-
-Te same szablony można wybrać w centrum administracyjnym programu Exchange. Można na przykład skonfigurować używanie szablonów w regułach przepływu poczty usługi Exchange Online — program Exchange obsługuje technologię Azure Rights Management:
+Na przykład w Centrum administracyjnym programu Exchange, można skonfigurować usługi Exchange Online reguły przepływu poczty używać tych szablonów:
 
 ![Przykład wybierania szablonów dla usługi Exchange Online](../media/templates-exchangeonline-callouts.png)
 
