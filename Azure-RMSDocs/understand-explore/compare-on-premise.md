@@ -4,7 +4,7 @@ description: "Jeśli usługa Active Directory Rights Management Services (AD RMS
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 60765865a0c422f4baac72ed88a6bca9b96ed66f
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 124bef6f9c54fc154bdf95322ca418d01f5b5636
+ms.sourcegitcommit: 3cbea6b4191b97c69d06d04cbbd852aacacdd9c7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
@@ -57,7 +57,7 @@ Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabe
 |Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta usługi Azure Information Protection](../rms-client/aip-client.md) lub aplikacji RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: nieobsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2007.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: obsługiwany|
 |Obsługuje [klienta usługi Azure Information Protection](../rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing.<br /><br />Ponadto klient usługi Azure Information Protection obsługuje następujące funkcje i elementy:<br /><br />– Udostępnianie informacji osobom w innej organizacji.<br /><br />– Witryna śledzenia dokumentów dla użytkowników z możliwością odwoływania dokumentu.|Obsługuje [klienta usługi Azure Information Protection](../rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing. Udostępnianie nie dotyczy jednak użytkowników w innej organizacji ani witryny śledzenia dokumentów z możliwością odwoływania dokumentu.|
 |Korzystając z klienta usługi Azure Information Protection, można klasyfikować i chronić większość [typów plików](../rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|Korzystając z klienta usługi Azure Information Protection, można klasyfikować większość [typów plików](../rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md).|
-|Minimalna obsługiwana wersja klienta systemu Windows to Windows 7 z dodatkiem SP1.|Minimalna obsługiwana wersja klienta systemu Windows to Windows Vista z dodatkiem Service Pack 2.|
+|Minimalna obsługiwana wersja klienta systemu Windows to Windows 7 z dodatkiem SP1.|Minimalna obsługiwana wersja klienta systemu Windows to Windows 7 z dodatkiem SP1.|
 |Obsługa urządzeń przenośnych dotyczy systemów Windows Phone, Android, iOS i Windows RT.<br /><br />Obsługa poczty e-mail przy użyciu usługi IRM programu Exchange ActiveSync dotyczy również wszystkich platform urządzeń przenośnych z włączoną obsługą tego protokołu.|Obsługa urządzeń przenośnych dotyczy systemów Windows Phone, Android, iOS i Windows RT oraz wymaga [rozszerzenia usług Active Directory Rights Management (AD RMS) dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).<br /><br />Obsługa poczty e-mail przy użyciu usługi IRM programu Exchange ActiveSync dotyczy wszystkich platform urządzeń przenośnych z włączoną obsługą tego protokołu.|
 |Obsługuje usługę Multi-Factor Authentication (MFA) na komputerach i urządzeniach przenośnych.<br /><br />Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection).|Obsługuje uwierzytelnianie karty inteligentnej, jeśli usługi IIS zostały skonfigurowane do wysyłania żądań certyfikatów.|
 |Bez dodatkowej konfiguracji obsługuje tryb kryptograficzny 2, który oferuje lepsze zabezpieczenia długości kluczy i algorytmów szyfrowania.<br /><br />Aby uzyskać więcej informacji, zobacz sekcję [Formanty kryptograficzne podpisywania i szyfrowania](#cryptographic-controls-for-signing-and-encryption) w tym artykule oraz artykuł [Tryby kryptograficzne usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=266659).|Domyślnie obsługuje tryb kryptograficzny 1 i wymaga dodatkowej konfiguracji do obsługi trybu kryptograficznego 2 w celu uzyskania silniejszych zabezpieczeń.<br /><br />Aby uzyskać więcej informacji, zobacz sekcję [Formanty kryptograficzne podpisywania i szyfrowania](#cryptographic-controls-for-signing-and-encryption) w tym artykule oraz artykuł [Tryby kryptograficzne usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=266659).|
