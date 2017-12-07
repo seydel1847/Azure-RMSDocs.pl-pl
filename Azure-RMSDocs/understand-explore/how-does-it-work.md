@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 1a7075287eebe2c68534de95d01cef455ebe63b5
+ms.sourcegitcommit: f185b1d742c345a465927f88e606413421fe1150
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Istotnym aspektem działania usługi Azure RMS jest fakt, że w ramach procesu ochrony informacji usługa Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług:
+Ważne jest, aby informacje o sposobie działania usługi Azure RMS, jest to, że ta usługa ochrony danych z usługi Azure Information Protection nie Zobacz lub przechowywać dane w ramach procesu ochrony. Informacje chronione jest wysyłane do i przechowywane na platformie Azure, chyba że jawnie Zapisz go na platformie Azure lub użyj innej usługi w chmurze, która zapisze go na platformie Azure. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług:
 
 - Dane są szyfrowane na poziomie aplikacji i zawierają zasady, które definiują autoryzowane użycie danego dokumentu.
 
@@ -39,7 +39,7 @@ Szczegółowy opis wykonywanych działań można znaleźć w sekcji [Wskazówki 
 Aby uzyskać szczegółowe informacje techniczne dotyczące algorytmów i długości kluczy używanych przez usługę Azure RMS, zobacz następną sekcję.
 
 ## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Formanty kryptograficzne używane przez usługę Azure RMS: algorytmy i długości kluczy
-Nawet jeśli znajomość działania usługi RMS nie jest użytkownikowi potrzebna, może on zostać poproszony o informację na temat używanych formantów kryptograficznych w celu zapewnienia, że zabezpieczenia spełniają standardy branżowe.
+Nawet jeśli nie trzeba znać szczegółowo sposób działania tej technologii, użytkownik może zostać poproszony o formantów kryptograficznych używanych. Na przykład, aby potwierdzić, że zabezpieczenia spełniają jest standardowym.
 
 
 |Formanty kryptograficzne|Użycie w usłudze Azure RMS|
@@ -54,13 +54,13 @@ Wariant 256-bitowy jest używany przez klienta usługi Azure Information Protect
 
 ###### <a name="footnote-2"></a>Przypis 2
 
-2048 bitów to długość klucza po aktywowaniu usługi Azure Rights Management. Długość klucza 1024 bity jest obsługiwana w następujących scenariuszach opcjonalnych:
+Po aktywowaniu usługi Azure Rights Management, 2048 bitów jest długość klucza. 1024 bity jest obsługiwane w następujących scenariuszach opcjonalne:
 
 - Podczas migracji z lokalnie, jeśli klaster AD RMS działa w trybu kryptograficznego 1.
 
 - Po zakończeniu migracji z lokalnymi, jeśli klaster AD RMS został przy użyciu usługi Exchange Online.
 
-- W przypadku kluczy archiwizowanych, które zostały utworzone lokalnie przed migracją, aby zawartość, która była chroniona przez usługi AD RMS, mogła być nadal otwierana po migracji do usługi Azure Rights Management.
+- Dla zarchiwizowanych kluczy, które zostały utworzone lokalnymi przed migracją, aby zawartość, która była wcześniej chroniona przez usługi AD RMS może nadal być otwierane przez usługę Azure Rights Management po migracji.
 
 - Jeśli klienci zdecydują się na użycie funkcji BYOK przy użyciu usługi Azure Key Vault. Usługa Azure Information Protection obsługuje długości kluczy 1024 bity i 2048 bitów. Lepsze zabezpieczenia zaleca się klucz o długości 2048 bitów.
 
@@ -107,7 +107,7 @@ Gdy użytkownik chroni dokument, klient RMS wykonuje następujące czynności w 
 
 ![Ochrona dokumentów za pomocą usługi RMS — krok 2, zasady są tworzone](../media/AzRMS_documentprotection2.png)
 
-**Działania wykonywane w kroku 2**: klient usługi RMS tworzy certyfikat, który obejmuje zasady dla dokumentu zawierające [prawa użytkowania](../deploy-use/configure-usage-rights.md) dla użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia. Te ustawienia można zdefiniować w szablonie, który został wcześniej skonfigurowany przez administratora, lub określić w momencie, gdy zawartość jest chroniona (czasem nazywa się to „zasadą ad hoc”).   
+**Działania wykonywane w kroku 2**: klient usługi RMS tworzy certyfikat, który obejmuje zasady dla dokumentu zawierające [prawa użytkowania](../deploy-use/configure-usage-rights.md) dla użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia. Te ustawienia można zdefiniować w szablonie, który administrator wcześniej skonfigurowane lub określony w momencie zawartości jest chroniony (nazywane czasem "zasad ad hoc").   
 
 Główny atrybut usługi Azure AD używany do identyfikowania wybranych użytkowników i grup to atrybut ProxyAddresses usługi Azure AD, w którym są przechowywane wszystkie adresy e-mail użytkownika lub grupy. Jeśli jednak konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi AD, w zamian jest używana wartość UserPrincipalName użytkownika.
 
