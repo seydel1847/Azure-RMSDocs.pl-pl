@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 12/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: d6937e86fd0fd544ff2030e52d03c32daa67a134
+ms.sourcegitcommit: a9376b5431dc6ae9819833146a84fc1dd5e685fb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -89,8 +89,6 @@ Rozwiązywanie problemów:
 
 Firma Microsoft zaleca korzystanie z [witryny usługi Yammer dla usługi Azure Information Protection](https://www.yammer.com/AskIPTeam). Ten zasób zapewnia bezpośrednie odpowiedzi oprócz korzyści środowisko w udostępnionej przez zespół usługi Azure Information Protection i wiedzy z innych administratorów oraz konsultantów i.
 
-Zapoznaj się szybko rosnących [społeczność techniczna](https:/techcommunity.microsoft.com), która ma [miejsca usługi Azure Information Protection](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection) zadawać pytania i udostępnianie informacji.
-
-Jeśli nie masz dostępu do tych witryn, spróbuj [forum TechNet dotyczące usługi Microsoft RMS (Cloud)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
+Jeśli nie masz dostępu do tej witryny, spróbuj [forum TechNet dotyczące usługi Microsoft RMS (Cloud)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
