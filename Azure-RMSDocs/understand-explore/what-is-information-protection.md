@@ -4,17 +4,17 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 9affd9681748c3e5c9da166c14d56fe3ad7e205f
+ms.sourcegitcommit: 8ff20119a9ce26c1dc7db729742d4e8ade083981
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -45,13 +45,13 @@ Ta technologia ochrony używa zasad szyfrowania, tożsamości i autoryzacji. Pod
 
 Na przykład można tak skonfigurować dokument z raportem lub arkusz kalkulacyjny zawierający prognozę sprzedaży, aby był on dostępny tylko dla osób z danej organizacji. Ponadto można określić, czy dany dokument ma być dostępny do edycji lub ograniczyć jego właściwości tylko do odczytu albo uniemożliwić jego drukowanie. Na podobnej zasadzie można skonfigurować wiadomości e-mail, a ponadto uniemożliwić ich przesyłanie dalej lub uniemożliwić korzystanie z opcji Odpowiedz wszystkim. 
 
-Te ustawienia ochrony może być częścią konfigurację etykiety, dzięki czemu użytkownicy klasyfikować i chronić dokumenty i wiadomości e-mail po prostu, stosując etykiety. Jednak takie same ustawienia ochrony można również używane przez aplikacje i usługi, które obsługują ochronę, ale nie etykietowania. Dla tych aplikacji i usług, ustawienia ochrony są udostępniane jako *szablony usługi Rights Management*.
+Te ustawienia ochrony może być częścią konfigurację etykiety, dzięki czemu użytkownicy klasyfikować i chronić dokumenty i wiadomości e-mail po prostu, stosując etykiety. Jednak takie same ustawienia ochrony można również używane przez aplikacje i usługi, które obsługują ochronę, ale nie etykietowania. Dla tych aplikacji i usług, ustawienia ochrony staną się dostępne jako *szablony usługi Rights Management*.
 
 ### <a name="rights-management-templates"></a>Szablony zarządzania prawami
 
 Jak aktywować usługę Azure Rights Management, dwa szablony domyślne są dostępne dla Ciebie, który ogranicza dostęp do danych użytkownikom w organizacji. Za pomocą tych szablonów można od razu przystąpić do ochrony danych przed wyciekiem poza organizację. Można również uzupełnić te szablony domyślne, konfigurując własne ustawienia ochrony, które mają zastosowanie bardziej restrykcyjnych formantów.
 
-Podczas tworzenia etykiety dla usługi Azure Information Protection, zawierający ustawienia ochrony w obszarze obejmuje, ta akcja tworzy odpowiedni szablon usługi Rights Management. Tego szablonu można następnie użyć z aplikacjami i usługami, które obsługują usługę Azure Rights Management.
+Podczas tworzenia etykiety dla usługi Azure Information Protection, zawierający ustawienia ochrony w obszarze obejmuje, ta akcja tworzy odpowiedni szablon usługi Rights Management. Możesz można również skorzystać z tego szablonu z aplikacjami i usługami, które obsługują usługę Azure Rights Management.
 
 Na przykład w Centrum administracyjnym programu Exchange, można skonfigurować usługi Exchange Online reguły przepływu poczty używać tych szablonów:
 
@@ -59,7 +59,7 @@ Na przykład w Centrum administracyjnym programu Exchange, można skonfigurować
 
 Aby uzyskać więcej informacji na temat mechanizmów ochrony w usłudze Azure Rights Management, zobacz [Co to jest usługa Azure Rights Management?](what-is-azure-rms.md)
 
-## <a name="integration-with-end-user-workflows"></a>Integracja z przepływami pracy użytkownika końcowego
+## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>Integracja z przepływami pracy użytkowników końcowych dla dokumentów i wiadomości e-mail
 
 Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji, przedstawiającej ten pasek w programie Word. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
 
@@ -79,6 +79,25 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 ![Ikona funkcji Odwołaj dostęp w witrynie śledzenia dokumentów](../media/tracking-site-revoke-access-icon.png)
 
+### <a name="additional-integration-for-email"></a>Dodatkowe integracji do obsługi poczty e-mail
+
+Gdy używasz usługi Azure Information Protection z usługą Exchange Online, możesz uzyskać dodatkową korzyścią: umożliwia wysyłanie chronionych wiadomości e-mail z żadnym użytkownikiem, z gwarantują, że może go odczytać na dowolnym urządzeniu.
+
+Na przykład użytkownicy muszą wysyłać poufne informacje w wiadomości e-mail do osobiste konta e-mail używane przez **Gmail**, **Hotmail**, lub **Microsoft** konta. Lub użytkownikom który nie ma konta usługi Office 365 lub w usłudze Azure AD. Te wiadomości e-mail powinny być szyfrowane podczas przechowywania i podczas przesyłania i zostać odczytana tylko przez Pierwotni adresaci.
+
+Ten scenariusz wymaga [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801). Jeśli adresaci nie może otworzyć chronioną wiadomość e-mail w swoich klientów natywnych poczty e-mail, może użyć jednorazowy kod dostępu do odczytu poufnych informacji w przeglądarce.
+
+Na przykład użytkownik Gmail mogą zostać wyświetlone informacje w wiadomości e-mail:
+
+![Odbiorcy obsługi OME i Efektywnych Gmail](../media/ome-message.png)
+
+Dla użytkowników podczas wysyłania wiadomości e-mail, ich przepływu pracy nie różni się od wysyłanie chronionych wiadomości e-mail do użytkownika w ich własnej organizacji. Na przykład można wybrać **nie przesyłaj dalej** przycisku, który klient usługi Azure Information Protection można dodać do Wstążki programu Outlook. Lub tej funkcji nie przesyłaj dalej można zintegrować etykiety, który użytkownicy wybiorą, dzięki czemu wiadomości e-mail jest klasyfikowany, jak również chronione:
+
+![Wybranie etykiety skonfigurowane dla czy nie do przodu o](../media/recipients-only-label.png)
+
+Alternatywnie można automatycznie udostępnić ochrony dla użytkowników, przy użyciu reguły przepływu poczty, które mają zastosowanie ochrony praw. 
+
+Po dołączeniu dokumentów pakietu Office do tych wiadomości e-mail, te dokumenty są chronione automatycznie również.
 
 ## <a name="resources-for-azure-information-protection"></a>Zasoby dotyczące usługi Azure Information Protection
 
