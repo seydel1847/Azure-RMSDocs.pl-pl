@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
+ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -100,7 +100,7 @@ Jeśli masz wersja klienta usługi Azure Information Protection, a czcionka okre
 
 Można wybrać z listy dostępnych kolorów lub określić niestandardowego koloru przez wprowadzenie kodu szesnastkowych Trzykolumnowa składników (RGB) czerwony, zielonemu i niebieskiemu koloru. Przykład: **#DAA520**. 
 
-Jeśli potrzebujesz odwołania te kodów [kolory według nazwy](https://msdn.microsoft.com/library/aa358802\(v=vs.85)aspx) w witrynie MSDN dokumentacji stanowi punkt wyjścia przydatne. Możesz również znaleźć kody w wielu aplikacjach, które umożliwiają edytowanie obrazów. Na przykład Microsoft Paint pozwala wybrać paletę kolorów niestandardowych i wartości RGB są automatycznie wyświetlane, które można następnie skopiować.
+Jeśli potrzebujesz odwołania te kodów [kolory według nazwy](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) w sieci MSDN dokumentacji stanowi punkt wyjścia przydatne. Możesz również znaleźć kody w wielu aplikacjach, które umożliwiają edytowanie obrazów. Na przykład Microsoft Paint pozwala wybrać paletę kolorów niestandardowych i wartości RGB są automatycznie wyświetlane, które można następnie skopiować.
 
 ## <a name="next-steps"></a>Następne kroki
 
