@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 8684188a4c01f9e90ee073d1d378e55dba1fc1eb
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: d7788b909da4219ae80475bac4bd26b2a2ec8da9
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -43,13 +43,13 @@ W tym scenariuszu HYOK zasady praw i klucz prywatny organizacji, który chroni t
 >
 > Nawet w organizacjach używających tej konfiguracji jest ona zazwyczaj przydatna dla mniej niż 10% zawartości wymagającej ochrony. Tej funkcji należy używać tylko w przypadku dokumentów lub wiadomości e-mail spełniających następujące kryteria:
 > 
-> - Zawartość została sklasyfikowana jako „ściśle tajne” i dostęp do niej ma tylko kilka osób.
+> **Zawartość ma najwyższej klasyfikacji w Twojej organizacji ("Top Secret") i dostęp jest ograniczony do kilku osób**
 > 
-> - Zawartość nigdy nie jest udostępniana poza organizacją.
+> **Zawartość nie jest udostępniane poza organizacją**
 > 
-> - Zawartość jest używana tylko w sieci wewnętrznej.
+> **Zawartość jest tylko używane w sieci wewnętrznej**
 > 
-> - Zawartość nie będzie udostępniana na komputerach Mac ani na urządzeniach przenośnych.
+> **Zawartość nie musi być używane na komputerach Mac lub urządzenie przenośne**
 
 Użytkownicy nie wiedzą, czy z etykietą jest skojarzona ochrona zapewniana przez usługi AD RMS czy usługę Azure RMS. Z powodu ograniczeń dotyczących ochrony przez usługę AD RMS należy się upewnić, że użytkownikom udzielono jasnych wskazówek dotyczących wyboru etykiet powodujących stosowanie ochrony AD RMS. 
 

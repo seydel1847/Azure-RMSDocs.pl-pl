@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 986603d54b69fcf85bafecef2691fbd44af94942
-ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
+ms.openlocfilehash: 3e78fd3c306136c57b75e74c8846e38670e9eb94
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -65,21 +65,23 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
 
 2. Otwórz sesję środowiska Windows PowerShell z **Uruchom jako administrator** opcji.
 
-3. Uruchom [AIPScanner instalacji](/powershell/module/azureinformationprotection/Install-AIPScanner) polecenia cmdlet, określając wystąpienia programu SQL Server, na którym chcesz utworzyć bazę danych dla usługi Azure Information Protection skanera. Po wyświetleniu monitu podaj poświadczenia dla konta usługi skanera (\<azwa_użytkownika >) i hasło: 
+3. Uruchom [AIPScanner instalacji](/powershell/module/azureinformationprotection/Install-AIPScanner) polecenia cmdlet, określając wystąpienia programu SQL Server, na którym chcesz utworzyć bazę danych dla skanera usługi Azure Information Protection: 
     
     ```
     Install-AIPScanner -SqlServerInstance <database name>
     ```
     
     Przykłady:
-        
-    - Aby użyć domyślnego wystąpienia:`Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
-    - Dla wystąpienia nazwanego:`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
+    Aby użyć domyślnego wystąpienia:`Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
-    - Dla programu SQL Server Express:`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
+    Dla wystąpienia nazwanego:`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
+    
+    Dla programu SQL Server Express:`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
     
     Używaj pomocy online dotyczącej tego polecenia cmdlet, jeśli potrzebujesz więcej [szczegółowe przykłady](/powershell/module/azureinformationprotection/install-aipscanner#examples).
+    
+    Po wyświetleniu monitu podaj poświadczenia dla konta usługi skanera (\<azwa_użytkownika >) i hasło.
 
 4. Sprawdź, czy usługa jest teraz zainstalowany za pomocą **narzędzia administracyjne** > **usług**. 
     

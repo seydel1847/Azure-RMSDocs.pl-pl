@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3beb637b4a9ffe662455f32281e24ecfeb230bca
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 194c746298024ef294c8a6a6fa0361d21cbd869e
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które są używane z klasycznego portalu Azure
 
@@ -27,7 +27,7 @@ Używany do klasycznego portalu Azure do zarządzania usługą Azure Rights Mana
 > [!NOTE]
 > Klasycznym portalu Azure zostaną wycofane **08 stycznia 2018**. Po tej dacie przy próbie za pomocą tego portalu, nastąpi automatyczne przekierowanie do portalu Azure. 
 > 
-> Aby uzyskać więcej informacji, zobacz anons blog [Pochód w przyszłości środowisko pracy administratora usługi Azure AD: wycofywanie klasycznego portalu Azure](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/). Tymczasowe rozszerzenia na dacie wycofania, zobacz [aktualizacji na wycofanie obsługi portalu klasycznego Azure AD i migracja zasad dostępu warunkowego](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/).
+> Aby uzyskać więcej informacji, zobacz anons blog [Pochód w przyszłości środowisko pracy administratora usługi Azure AD: wycofywanie klasycznego portalu Azure](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/). Tymczasowe rozszerzenia oryginalnej dacie wycofania, zobacz [aktualizacji na wycofanie obsługi portalu klasycznego Azure AD i migracja zasad dostępu warunkowego](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/).
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>Sposób wykonywania zadań administracyjnych znanych
 

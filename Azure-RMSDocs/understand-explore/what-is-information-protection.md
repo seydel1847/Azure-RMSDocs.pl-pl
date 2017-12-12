@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 9affd9681748c3e5c9da166c14d56fe3ad7e205f
-ms.sourcegitcommit: 8ff20119a9ce26c1dc7db729742d4e8ade083981
+ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -83,11 +83,11 @@ Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować
 
 Gdy używasz usługi Azure Information Protection z usługą Exchange Online, możesz uzyskać dodatkową korzyścią: umożliwia wysyłanie chronionych wiadomości e-mail z żadnym użytkownikiem, z gwarantują, że może go odczytać na dowolnym urządzeniu.
 
-Na przykład użytkownicy muszą wysyłać poufne informacje w wiadomości e-mail do osobiste konta e-mail używane przez **Gmail**, **Hotmail**, lub **Microsoft** konta. Lub użytkownikom który nie ma konta usługi Office 365 lub w usłudze Azure AD. Te wiadomości e-mail powinny być szyfrowane podczas przechowywania i podczas przesyłania i zostać odczytana tylko przez Pierwotni adresaci.
+Na przykład użytkownicy musieli przesyłają poufne informacje osobiste konta e-mail używane przez **Gmail**, **Hotmail**, lub **Microsoft** konta. Lub użytkownikom który nie ma konta usługi Office 365 lub w usłudze Azure AD. Te wiadomości e-mail powinny być szyfrowane podczas przechowywania i podczas przesyłania i zostać odczytana tylko przez Pierwotni adresaci.
 
 Ten scenariusz wymaga [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801). Jeśli adresaci nie może otworzyć chronioną wiadomość e-mail w swoich klientów natywnych poczty e-mail, może użyć jednorazowy kod dostępu do odczytu poufnych informacji w przeglądarce.
 
-Na przykład użytkownik Gmail mogą zostać wyświetlone informacje w wiadomości e-mail:
+Na przykład usługi Gmail jest widoczny poniżej w wiadomości e-mail:
 
 ![Odbiorcy obsługi OME i Efektywnych Gmail](../media/ome-message.png)
 
