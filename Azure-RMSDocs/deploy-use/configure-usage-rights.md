@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
+ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -57,8 +57,8 @@ Lista poziomów uprawnień i Pełna lista praw użytkowania, które zawierają, 
 |---------------------|----------------|---------------------------------|
 |Przeglądanie|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br /> Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Odpowiedz; Odpowiedz wszystkim; Zezwalaj na makra [[1]](#footnote-1)<br /><br />Uwaga: Dla wiadomości e-mail użyj opcji Recenzent zamiast tego poziomu uprawnień, aby upewnić się, że odpowiedź na wiadomość e-mail została odebrana jako wiadomość e-mail, a nie jako załącznik. Opcja Recenzent jest również wymagana podczas wysyłania wiadomości e-mail do innej organizacji korzystającej z klienta programu Outlook lub aplikacji sieci Web programu Outlook. Lub użytkowników w organizacji, które są wykluczone z usługi Azure Rights Management usługi, ponieważ zostały zaimplementowane [kontrolki dołączania](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy).|
 |Recenzent|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Odpowiedz; Odpowiedz wszystkim [[2]](#footnote-2); Prześlij dalej [[2]](#footnote-2); Zezwalaj na makra [[1]](#footnote-1)|
-|Współautor|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako, Eksportuj [[3]](#footnote-3); Drukuj; Odpowiedz [[2]](#footnote-2); Odpowiedz wszystkim [[2]](#footnote-2); Prześlij dalej [[2]](#footnote-2)|
-|Współwłaściciel|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Kopiuj; Wyświetl prawa; Zezwalaj na makra; Zapisz jako, Eksportuj; Drukuj; Odpowiedz [[2]](#footnote-2); Odpowiedz wszystkim [[2]](#footnote-2); Prześlij dalej [[2]](#footnote-2); Pełna kontrola|
+|Współautor|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Skopiuj; Zezwalaj na makra; Zapisz jako, Eksportuj [[3]](#footnote-3); Drukowanie; Odpowiedź [[2]](#footnote-2); Odpowiedz wszystkim [[2]](#footnote-2); Przekazuj [[2]](#footnote-2)|
+|Współwłaściciel|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Skopiuj; Zezwalaj na makra; Zapisz jako, Eksportuj; Drukowanie; Odpowiedź [[2]](#footnote-2); Odpowiedz wszystkim [[2]](#footnote-2); Przekazuj [[2]](#footnote-2); Pełna kontrola|
 
 ----
 
@@ -70,8 +70,7 @@ W przypadku klienta usługi Azure Information Protection dla systemu Windows to 
 Nie dotyczy klienta usługi Azure Information Protection dla systemu Windows ani aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows.
 
 ###### <a name="footnote-3"></a>Przypis 3
-Nie uwzględniono w kliencie usługi Azure Information Protection dla systemu Windows. W tym kliencie prawo użycia eksportu obejmuje możliwość usunięcia ochrony.
-
+Nie jest dostępna w portalu Azure lub klient usługi Azure Information Protection dla systemu Windows.
 
 ## <a name="rights-included-in-the-default-templates"></a>Prawa zawarte w domyślnych szablonach
 W poniższej tabeli wymieniono prawa użytkowania, które są uwzględniane podczas tworzenia szablonów domyślnych. Prawa użytkowania są wyświetlane według ich [nazwa pospolita](#usage-rights-and-descriptions).
@@ -114,7 +113,7 @@ Wystawca usługi Rights Management ma zawsze przyznawane prawo użycia Pełna ko
 
 - Wystawca usługi Rights Management nadal może otworzyć dokument po jego odwołaniu. 
 
-Domyślnie to konto jest także **właścicielem usługi Rights Management** dla tej zawartości, czyli jest to przypadek, gdy ochrona jest inicjowana przez użytkownika, który utworzył dokument lub wiadomość e-mail. Jednak istnieją pewne scenariusze, gdy administrator lub usługa może chronić zawartość w imieniu użytkowników. Na przykład:
+Domyślnie to konto jest także **właścicielem usługi Rights Management** dla tej zawartości, czyli jest to przypadek, gdy ochrona jest inicjowana przez użytkownika, który utworzył dokument lub wiadomość e-mail. Jednak istnieją pewne scenariusze, gdy administrator lub usługa może chronić zawartość w imieniu użytkowników. Przykład:
 
 - Administrator zapewnia zbiorczą ochronę plików w udziale plików: konto administratora w usłudze Azure AD chroni dokumenty dla użytkowników.
 

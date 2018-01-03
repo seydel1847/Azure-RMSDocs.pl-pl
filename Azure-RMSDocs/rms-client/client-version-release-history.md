@@ -4,7 +4,7 @@ description: "Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 12/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 20ee380a48fa8fb303a5c71f43df17b8740b0cb4
+ms.sourcegitcommit: fc9a4487e2a0bc3481a814c7c308939868d52db9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -28,7 +28,7 @@ Możesz pobrać najnowszej wersji GA i bieżąca wersja preview z [Microsoft Dow
 
 ### <a name="servicing-information-and-timelines"></a>Obsługa informacji i osi czasu
 
-Klienta usługi Azure Information Protection wersji ogólnodostępnej (GA) są obsługiwane przez okres sześciu miesięcy od ich wydania. Poprawki i nowe funkcje są zawsze stosowane do najnowszej wersji GA i nie zostaną zastosowane do starszych wersji GA.
+Każdej wersji ogólnodostępnej (GA) klienta Azure Information Protection jest obsługiwana przez po kolejnych wersji GA maksymalnie sześć miesięcy. Nieobsługiwanej wersji klienta nie znajdują się na tej stronie. Poprawki i nowe funkcje są zawsze stosowane do najnowszej wersji GA i nie zostaną zastosowane do starszych wersji GA.
 
 Wersje zapoznawcze nie powinny być wdrażane dla użytkowników końcowych w sieciach produkcyjnych. Aby wyświetlić i spróbuj nowe funkcje i poprawki, które są dostępne w następnej wersji GA w zamian użyj najnowszej wersji wstępnej. Nie są obsługiwane w wersji zapoznawczej wersje, które nie są aktualne.
 
