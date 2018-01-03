@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów do wdrażania klienta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 12/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 675afc962da542a03b90bea2dcb5d004829e361a
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 24a145ed79d3e0d74cdf3dd9e320e2755e121ce9
+ms.sourcegitcommit: 8fd7dfaea6d5f5b3387e6972fd1454d283a57227
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/28/2017
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -49,6 +49,12 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
     Komputery z systemem Windows 7 z dodatkiem Service Pack 1 wymagają aktualizacji KB 2533623. Aby uzyskać więcej informacji o tej aktualizacji, zobacz temat [Microsoft Security Advisory: Załadowanie niezabezpieczonej biblioteki umożliwia zdalne wykonywanie kodu](https://support.microsoft.com/en-us/kb/2533623). Tę aktualizację można zainstalować bezpośrednio lub może ona zostać zastąpiona przez inną aktualizację, która zainstaluje ją automatycznie.
     
     Jeśli ta aktualizacja jest wymagana i nie została zainstalowana, instalator klienta wyświetla ostrzeżenie z informacją, że należy ją zainstalować. Tę aktualizację można zainstalować po zainstalowaniu klienta, ale niektóre czynności zostaną zablokowane i ponownie pojawi się komunikat.  
+
+- Pakiet redystrybucyjny Visual C++ dla programu Visual Studio 2015 (wersja 32-bitowa)
+    
+    W przypadku komputerów z systemem Windows 7 z dodatkiem SP1, zainstalować **vc_redist.x86.exe** stronę pobierania spośród następujących: [Visual C++ Redistributable dla Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+    
+    Instalacja klienta nie sprawdza te wymagania wstępne, ale jest wymagana dla klienta usługi Azure Information Protection do klasyfikowania i ochrony plików PDF.
 
 - Nie należy wyłączać dodatku **Microsoft Azure Information Protection** dla aplikacji pakietu Office
     
@@ -183,8 +189,8 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
     |Pakiet Office 2010|Windows 8.1 i Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB2843630 lub KB2919355 nie jest zainstalowana.|
     |Pakiet Office 2010|Windows 8 i Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Instalowanie|
     |Pakiet Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB3125574 nie jest zainstalowana.|
+    |Nie dotyczy|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|Instalowanie|
     |Nie dotyczy|Windows 7|KB2627273 <br /><br /> Numer wersji uwzględniony w nazwie pliku: v4|Odinstalowanie|
-    
 
 3. W przypadku instalacji domyślnej uruchom plik msi z parametrem **/quiet**, na przykład `AzInfoProtection.msi /quiet`. Jednak może okazać się konieczne określenie dodatkowych parametrów instalacji, które są udokumentowane w [instrukcjach Instalatora wykonywalnego](#to-install-the-azure-information-protection-client-by-using-the-executable-installer).  
 
