@@ -4,7 +4,7 @@ description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usług�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 12/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f2c0053a8f1f4cde5193b65e5b8e521a2b6934c1
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
+ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
@@ -26,8 +26,8 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 
 |Termin|Definicja|
 |--------|--------------|
-|AADRM|Nazwa modułu programu Windows PowerShell dla usługi Azure Rights Management, która stanowi nieoficjalny skrót od nazwy usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], która brzmiała wcześniej (Windows) Azure Active Directory Rights Management.|
-|aktywować|Włączyć usługę [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], aby organizacja mogła chronić swoje dokumenty i wiadomości e-mail. Ta czynność powoduje także włączenie funkcji usługi Rights Management w usłudze Exchange Online i SharePoint Online.|
+|AADRM|Nazwa modułu programu Windows PowerShell dla usługi Azure Rights Management, który został utworzony nieoficjalny skrót od nazwy usługi Azure Rights Management, gdy wcześniej został o nazwie (system Windows) Azure Active Directory Rights Management.|
+|aktywować|Aby włączyć usługi Azure Rights Management, organizacja może chronić swoje dokumenty i wiadomości e-mail. Ta czynność powoduje także włączenie funkcji usługi Rights Management w usłudze Exchange Online i SharePoint Online.|
 |Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawami dostępu poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
 |AD RMS|Patrz *Usługi Active Directory Rights Management*.|
 |Azure Information Protection|Usługa oparta na chmurze, która używa klasyfikacji, etykietowania i ochrony w celu zabezpieczenia dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
@@ -58,6 +58,8 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |chronić|Stosować dostępne w ramach usługi zarządzania prawami i mające zastosowanie do plików lub wiadomości e-mail środki kontroli wykorzystujące szyfrowanie, tożsamość i zasady kontroli dostępu w celu zabezpieczania danych.|
 |opublikować|Chronić plik w celu zabezpieczenia go przed nieautoryzowanym dostępem i użyciem.|
 |łącznik usługi Rights Management|Przekaźnik wychodzącego serwera proxy, który można wdrożyć dla usług lokalnych, takich jak Exchange Server i SharePoint, aby chronić dane przy użyciu usługi Azure Rights Management.|
+|Usługi Rights Management wystawcy|Konto, które chroniony dokument lub wiadomość e-mail.|
+|Prawa właściciela zarządzania|Konto zachowa pełną kontrolę nad chroniony dokument lub wiadomość e-mail jest automatycznie przyznane prawa użytkowania Pełna kontrola zarządzania prawami, który jest wykluczony z datą wygaśnięcia lub ustawienie w trybie offline.|
 |usługi Rights Management|Ogólny termin mający zastosowanie zarówno do wersji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] opartej na chmurze ([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]), jak i do wersji lokalnej [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] (AD RMS).|
 |aplikacja do udostępniania usługi Rights Management|Zastąpiona przez klienta usługi Azure Information Protection, opcjonalną aplikację dla systemu Windows i popularnych urządzeń przenośnych, która obsługuje bezpieczne udostępnianie plików lokalnie i za pośrednictwem poczty e-mail.|
 |RMS|Zobacz *usługi Rights Management*.|
