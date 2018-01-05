@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
+ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -97,7 +97,9 @@ Jeśli dokument był chroniony za pomocą etykiety lub szablonu, jest niepotrzeb
 
 Jeśli skonfigurowano już grupę dla wymaganych uprawnień, można zmienić członkostwo grupy, aby dołączyć lub wykluczyć użytkowników i nie istnieje potrzeba aby zmienić etykietę lub szablonu. Może być małe opóźnienia, aby zmiany zaczęły obowiązywać, ponieważ członkostwo w grupie jest [pamięci podręcznej](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) przez usługę Azure Rights Management.
 
-Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie można zmienić uprawnień dla istniejącego dokumentu. Należy ponownie ochrony dokumentu oraz określić wszyscy użytkownicy i wszystkie prawa użytkowania, które są wymagane do tej nowej wersji dokumentu. Włączyć ją ponownie chroniony dokument, musi mieć prawo użytkowania Pełna kontrola. 
+Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie można zmienić uprawnień dla istniejącego dokumentu. Należy ponownie ochrony dokumentu oraz określić wszyscy użytkownicy i wszystkie prawa użytkowania, które są wymagane do tej nowej wersji dokumentu. Włączyć ją ponownie chroniony dokument, musi mieć prawo użytkowania Pełna kontrola.
+
+Porada: Aby sprawdzić, czy dokument był chroniony przez szablon lub przy użyciu uprawnień niestandardowych, użyj [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell. Zawsze wyświetlić opis szablonu **dostęp ograniczony** dla uprawnień niestandardowych o identyfikatorze unikatowy szablon, który nie jest wyświetlany po uruchomieniu [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
 Oczywiście, a dodatkową korzyścią jest to, że użytkownicy będą mogli w łatwy sposób chronić wiadomości e-mail i załączniki, a także korzystać z nich w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
