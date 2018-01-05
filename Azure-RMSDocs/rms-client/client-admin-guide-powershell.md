@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dc3545c8212907786aa2fcf11e819b4cbdcf1ab5
-ms.sourcegitcommit: 4c6d9c55ff5dc5dbb10dc8a5abed9319fd3efb98
+ms.openlocfilehash: aee9a9f665d3aa0a0e8a8c568f3abbd044469fc7
+ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ Polecenia programu PowerShell są instalowane automatycznie podczas instalowania
 
 Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **AzureInformationProtection**. Ten moduł zastępuje moduł RMSProtection instalowany razem z narzędziem RMS Protection Tool. Jeśli przed instalacją klienta usługi Azure Information Protection było już zainstalowane narzędzie RMS Protection Tool, moduł RMSProtection zostanie automatycznie odinstalowany.
 
-Moduł AzureInformationProtection zawiera wszystkie usługi Rights Management poleceń cmdlet udostępnianych przez narzędzie RMS Protection Tool. Istnieją nowe polecenia cmdlet, których usługa ochrony informacji Azure (Efektywnych) dla etykiety. Na przykład:
+Moduł AzureInformationProtection zawiera wszystkie usługi Rights Management poleceń cmdlet udostępnianych przez narzędzie RMS Protection Tool. Istnieją nowe polecenia cmdlet, których usługa ochrony informacji Azure (Efektywnych) dla etykiety. Przykład:
 
 |Polecenie cmdlet dotyczące etykietowania|Przykład użycia|
 |----------------|---------------|
@@ -260,7 +260,7 @@ Gdy używasz konta głównego usługi do ochrony plików i pobierania szablonów
 
 ### <a name="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service"></a>Przykładowe scenariusze użycia poleceń cmdlet usługi Azure Information Protection i Azure Rights Management
 
-Korzystanie z etykiet do klasyfikowania i ochrony plików jest bardziej efektywne, ponieważ potrzebne są tylko dwa polecenia cmdlet, które mogą być uruchamiane osobno lub razem: [Get-AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus) i [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Skorzystaj z pomocy dotyczącej obu tych poleceń cmdlet, aby uzyskać dodatkowe informacje i przykłady.
+Korzystanie z etykiet do klasyfikowania i ochrony plików jest bardziej efektywne, ponieważ potrzebne są tylko dwa polecenia cmdlet, które mogą być uruchamiane osobno lub razem: [Get-AIPFileStatus](/powershell/azureinformationprotection/get-aipfilestatus) i [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Skorzystaj z pomocy dotyczącej obu tych poleceń cmdlet, aby uzyskać dodatkowe informacje i przykłady.
 
 Aby włączać i wyłączać ochronę plików przy wykorzystaniu bezpośredniego połączenia z usługą Azure Rights Management, należy zazwyczaj uruchamiać serię poleceń cmdlet, zgodnie z poniższym opisem.
 
@@ -303,7 +303,7 @@ Raport będzie wyglądał podobnie do poniższego:
     ---------             -------------
     C:\Test.docx          C:\Test.docx
 
-Aby chronić wszystkie pliki w folderze, użyj parametru **-Folder** z literą dysku i ścieżką lub ścieżką UNC. Na przykład:
+Aby chronić wszystkie pliki w folderze, użyj parametru **-Folder** z literą dysku i ścieżką lub ścieżką UNC. Przykład:
 
     Protect-RMSFile -Folder \Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
 
@@ -316,7 +316,7 @@ Raport będzie wyglądał podobnie do poniższego:
     \Server1\Documents\Test3.docx     \Server1\Documents\Test3.docx
     \Server1\Documents\Test4.docx     \Server1\Documents\Test4.docx
 
-Jeśli rozszerzenie nazwy pliku nie zmienia się po zastosowaniu ochrony, zawsze można użyć polecenia cmdlet `Get-RMSFileStatus` później, aby sprawdzić, czy plik jest chroniony. Na przykład:
+Jeśli rozszerzenie nazwy pliku nie zmienia się po zastosowaniu ochrony, zawsze można użyć polecenia cmdlet `Get-RMSFileStatus` później, aby sprawdzić, czy plik jest chroniony. Przykład:
 
     Get-RMSFileStatus -File \Server1\Documents\Test1.docx
 
@@ -326,7 +326,7 @@ Raport będzie wyglądał podobnie do poniższego:
     --------                              ------
     \Server1\Documents\Test1.docx         Protected
 
-Aby wyłączyć ochronę pliku, musi mieć prawa właściciela lub wyodrębniania z gdy plik jest chroniony. Lub poleceń cmdlet należy uruchomić jako użytkownika nadrzędnego. Następnie należy użyć polecenia cmdlet Unprotect. Na przykład:
+Aby wyłączyć ochronę pliku, musi mieć prawa właściciela lub wyodrębniania z gdy plik jest chroniony. Lub poleceń cmdlet należy uruchomić jako użytkownika nadrzędnego. Następnie należy użyć polecenia cmdlet Unprotect. Przykład:
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -419,7 +419,7 @@ Raport będzie wyglądał podobnie do poniższego:
     ---------             -------------
     C:\Test.docx          C:\Test.docx   
 
-Aby chronić wszystkie pliki w folderze, użyj parametru -Folder z literą dysku i ścieżką lub ścieżką UNC. Na przykład:
+Aby chronić wszystkie pliki w folderze, użyj parametru -Folder z literą dysku i ścieżką lub ścieżką UNC. Przykład:
 
     Protect-RMSFile -Folder \\Server1\Documents -InPlace -TemplateId e6ee2481-26b9-45e5-b34a-f744eacd53b0
 
@@ -432,7 +432,7 @@ Raport będzie wyglądał podobnie do poniższego:
     \\Server1\Documents\Test3.docx     \\Server1\Documents\Test3.docx   
     \\Server1\Documents\Test4.docx     \\Server1\Documents\Test4.docx   
 
-Jeśli rozszerzenie nazwy pliku nie zmienia się po zastosowaniu ochrony, zawsze służy polecenie cmdlet Get-RMSFileStatus później do sprawdzenia, czy plik jest chroniony. Na przykład: 
+Jeśli rozszerzenie nazwy pliku nie zmienia się po zastosowaniu ochrony, zawsze służy polecenie cmdlet Get-RMSFileStatus później do sprawdzenia, czy plik jest chroniony. Przykład: 
 
     Get-RMSFileStatus -File \\Server1\Documents\Test1.docx
 
@@ -442,7 +442,7 @@ Raport będzie wyglądał podobnie do poniższego:
     --------                              ------
     \\Server1\Documents\Test1.docx        Protected
 
-Aby wyłączyć ochronę pliku, musi mieć właściciela lub Wyodrębnij praw użytkowania z po był chroniony plik, lub być superużytkowników dla usług AD RMS. Następnie należy użyć polecenia cmdlet Unprotect. Na przykład:
+Aby wyłączyć ochronę pliku, musi mieć właściciela lub Wyodrębnij praw użytkowania z po był chroniony plik, lub być superużytkowników dla usług AD RMS. Następnie należy użyć polecenia cmdlet Unprotect. Przykład:
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -487,13 +487,15 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
 
 4. Wybierz właśnie utworzoną aplikację, na przykład **AIPOnBehalfOf**. Następnie w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok. 
     
-    Ta wartość jest używana dla parametru `WebAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
+    Ta wartość jest używana dla parametru `WebAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication. Wklej i zapisać go do wykorzystania w późniejszym czasie.
 
-5. W bloku **Ustawienia** wybierz pozycję **Klucze**. Dodaj nowy klucz, podając opis i wybierając czas trwania (1 rok, 2 lata lub bez daty wygaśnięcia). Następnie wybierz pozycję **Zapisz** i skopiuj ciąg wyświetlony w polu **Wartość**. Ważne jest, aby zapisać ten ciąg, ponieważ nie jest on wyświetlany ponownie i nie można go pobrać. Podobnie jak w przypadku każdego używanego klucza, przechowuj zapisaną wartość w bezpiecznym miejscu i ogranicz dostęp do niej.
+5. Ponownie **ustawienia** bloku, wybierz opcję **wymagane uprawnienia**. Na **wymagane uprawnienia** bloku, wybierz opcję **udzielanie uprawnień**, kliknij przycisk **tak** do potwierdzenia, a następnie zamknij ten blok.
+
+6. Ponownie **ustawienia** bloku ponownie, wybierz opcję **klucze**. Dodaj nowy klucz, podając opis i wybierając czas trwania (1 rok, 2 lata lub bez daty wygaśnięcia). Następnie wybierz pozycję **Zapisz** i skopiuj ciąg wyświetlony w polu **Wartość**. Ważne jest, aby zapisać ten ciąg, ponieważ nie jest on wyświetlany ponownie i nie można go pobrać. Podobnie jak w przypadku każdego używanego klucza, przechowuj zapisaną wartość w bezpiecznym miejscu i ogranicz dostęp do niej.
     
     Ta wartość jest używana dla parametru `WebAppKey` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
 
-6. W bloku **Rejestracje aplikacji** wybierz ponownie pozycję **Rejestrowanie nowej aplikacji**, aby utworzyć aplikację natywną. Na etykiecie **Utwórz** określ następujące wartości, a następnie kliknij pozycję **Utwórz**:
+7. W bloku **Rejestracje aplikacji** wybierz ponownie pozycję **Rejestrowanie nowej aplikacji**, aby utworzyć aplikację natywną. Na etykiecie **Utwórz** określ następujące wartości, a następnie kliknij pozycję **Utwórz**:
     
     - Nazwa: **AIPClient**
     
@@ -503,28 +505,22 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     - Adres URL logowania: **http://localhost**
 
-7. Wybierz właśnie utworzoną aplikację, na przykład **AIPClient**. Następnie w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok.
+8. Wybierz właśnie utworzoną aplikację, na przykład **AIPClient**. Następnie w bloku **Ustawienia** wybierz pozycję **Właściwości**. Z bloku **Właściwości** skopiuj wartość **Identyfikator aplikacji**, a następnie zamknij ten blok.
     
-    Ta wartość jest używana dla parametru `NativeAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication.
+    Ta wartość jest używana dla parametru `NativeAppId` podczas uruchamiania polecenia cmdlet Set-AIPAuthentication. Wklej i zapisać go do wykorzystania w późniejszym czasie.
 
-8. W bloku **Ustawienia** wybierz pozycję **Wymagane uprawnienia**. 
+9. W bloku **Ustawienia** wybierz pozycję **Wymagane uprawnienia**. 
 
-9. W bloku **Wymagane uprawnienia** kliknij pozycję **Dodaj**, a następnie kliknij pozycję **Wybierz interfejs API**. W polu wyszukiwania wpisz **AIPOnBehalfOf**. Wybierz tę wartość w polu listy, a następnie kliknij pozycję **Wybierz**.
+10. W bloku **Wymagane uprawnienia** kliknij pozycję **Dodaj**, a następnie kliknij pozycję **Wybierz interfejs API**. W polu wyszukiwania wpisz **AIPOnBehalfOf**. Wybierz tę wartość w polu listy, a następnie kliknij pozycję **Wybierz**.
 
-10. W bloku **Włączanie dostępu** wybierz pozycję **AIPOnBehalfOf**, kliknij pozycję **Wybierz**, a następnie kliknij pozycję **Gotowe**.
+11. W bloku **Włączanie dostępu** wybierz pozycję **AIPOnBehalfOf**, kliknij pozycję **Wybierz**, a następnie kliknij pozycję **Gotowe**.
+
+12. Ponownie **wymagane uprawnienia** bloku, wybierz opcję **udzielanie uprawnień**, kliknij przycisk **tak** do potwierdzenia, a następnie zamknij ten blok.
     
-    Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
-
-
-> [!TIP]
-> Używane zamiast tworzenia nowej aplikacji istniejących aplikacji przy użyciu poprzednich instrukcji Set AIPAuthentication zakończy się niepowodzeniem, może być konieczne zresetowanie wymaganych uprawnień dla aplikacji. Można również sytuacji, gdy po instrukcje tworzenia nowych aplikacji dla zestawu AIPAuthentication, ale następnie zmodyfikować ustawienia aplikacji.
-> 
-> Do zresetowania wymagane uprawnienia dla obu aplikacji, wykonaj następujące kroki konfiguracji: Wybierz **wszystkie ustawienia** > **wymagane uprawnienia** > **Grant Uprawnienia**i kliknij przycisk **tak** o potwierdzenie.
-> 
-> Można również utworzyć nowych aplikacji przy użyciu poprzednich instrukcji.
+Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
 
 ## <a name="next-steps"></a>Następne kroki
-Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Na przykład: 
+Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Przykład: 
 
     Get-Help Get-RMSTemplate -online
 
