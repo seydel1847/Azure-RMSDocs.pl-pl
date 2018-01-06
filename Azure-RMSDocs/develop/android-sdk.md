@@ -14,11 +14,11 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7a575b869adec5da1b8a61eed772256fe7469551
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 098ff506a2ca321d8ee2de00f9649cd47ef021ef
+ms.sourcegitcommit: 78e2cf5acd48dbf50ed4c7be1b2f3bae95362cec
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="android-setup"></a>Konfiguracja systemu Android
 
@@ -126,9 +126,14 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 -   Krok manifestu można sprawdzić, wyświetlając manifest w widoku edytora tekstu. Upewnij się, że są wyświetlane następujące wiersze:
 
-
-    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
-
+   ```
+    <uses-sdk
+         android:minSdkVersion="15"
+         android:targetSdkVersion="19"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission/>
+   ```
 
 **Uwaga**  Zestaw SDK używa uprawnienia *android.support.v4*
 
