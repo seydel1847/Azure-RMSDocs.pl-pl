@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: d2f88d35550b47a4f73e87eeca9ecd6309a3c73e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -70,7 +70,7 @@ Tak jak te nazwy sugerują, pierwsza rola przyznaje uprawnienia do uruchamiania 
 
 Dodatkowe kwestie, na które należy zwrócić uwagę:
 
-- Tylko administratorzy globalni dla usługi Office 365 i Administratorzy globalni dla usługi Azure AD można użyć Centrum administracyjnego usługi Office 365 lub klasycznego portalu Azure do konfigurowania usługi Azure RMS. Jeśli używasz portalu Azure do usługi Azure Information Protection, można również zalogować się jako administrator zabezpieczeń.
+- Tylko administratorzy globalni dla usługi Office 365 i Administratorzy globalni dla usługi Azure AD można użyć Centrum administracyjnego usługi Office 365, aby skonfigurować usługę Azure RMS. Jeśli używasz portalu Azure do usługi Azure Information Protection można zalogować się jako administrator globalny lub administratora zabezpieczeń.
 
 - Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
 
