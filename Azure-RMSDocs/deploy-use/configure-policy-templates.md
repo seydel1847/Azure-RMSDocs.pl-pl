@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
-ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
+ms.openlocfilehash: f69a163566a9654ee6286c4bf9ca4d018e8f8db5
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
 >*Dotyczy: Azure Information Protection*
 
 >[!NOTE]
->Ta funkcja zastępuje Konfigurowanie szablonów niestandardowych w klasycznym portalu Azure. Szybkie mapowania instrukcje, zobacz [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
->
->Mimo że można nadal tworzyć i zarządzać szablonów w klasycznym portalu Azure, nie zaleca się zarządzanie te same szablony z klasycznego portalu Azure i portalu Azure. Konfigurowanie szablonów w tych portali inną implementację uległ zmianie, więc konfigurowanie tego samego szablonu w różnych portali może spowodować zawodnych konfiguracji.
+>Ta funkcja zastępuje Konfigurowanie szablonów niestandardowych w klasycznym portalu Azure. Klasyczny portal teraz został wycofany, trzeba używać portalu Azure. Szybkie mapowania instrukcje, zobacz [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
 
 
 Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure Information Protection. 
@@ -36,11 +34,11 @@ Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure In
 
 **Jeśli masz subskrypcję obejmującą wyłącznie ochronę (subskrypcja usługi Office 365 obejmującą usługę Azure Rights Management):**
 
-- Szablony zarządzania praw dla Twojej dzierżawy są wyświetlane w **usługi Azure Information Protection — globalne zasady** bloku, w **szablony ochrony** sekcji. Nie będą wyświetlane etykiety. Zobacz też ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale te nie mają wpływu na szablonów lub nie można skonfigurować. 
+- Szablony zarządzania praw dla Twojej dzierżawy są wyświetlane w **usługi Azure Information Protection — globalne zasady** bloku, w **szablony ochrony** sekcji. Nie będą wyświetlane etykiety. Zobacz też ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale nie mają wpływu na szablonów lub nie można skonfigurować te ustawienia. 
 
 ## <a name="default-templates"></a>Szablony domyślne
 
-Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Po utworzeniu wspomniane dwa szablony mają uprawnienia, które są wymienione w [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates) dokumentacji.
+Po uzyskaniu subskrypcji dla usługi Azure Information Protection lub subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management, dwa szablony domyślne są tworzone automatycznie dla dzierżawy. Te szablony ograniczyć dostęp do autoryzowanych użytkowników w organizacji. Te szablony są tworzone, mają uprawnienia, które są wymienione w [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md#rights-included-in-the-default-templates) dokumentacji.
 
 Ponadto szablony są skonfigurowane i umożliwiają dostęp w trybie offline przez 7 dni i nie mają datę wygaśnięcia.
 
@@ -85,7 +83,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     - Opcja **Zezwalaj na makra** (nazwa pospolita) jest automatycznie dodawana. To prawo użytkowania jest wymagane przez pasek usługi Azure Information Protection w aplikacji pakietu Office.
     
 
-- Ustawienia **Opublikowane** i **Zarchiwizowane** są wyświetlane odpowiednio jako **Włączone**: **Włączone** i **Włączone**: **Wyłączone** w bloku **Etykiety**. Dla szablonów, które chcesz zachować, ale nie być widoczna dla użytkowników lub usług, należy ustawić je na **włączone**: **poza**.
+- Ustawienia **Opublikowane** i **Zarchiwizowane** są wyświetlane odpowiednio jako **Włączone**: **Włączone** i **Włączone**: **Wyłączone** w bloku **Etykiety**. Dla szablonów, które chcesz zachować, ale nie być widoczna dla użytkowników lub usług, należy ustawić te szablony na **włączone**: **poza**.
 
 - Nie można skopiować ani usunąć szablonu w portalu Azure. Po przekonwertowaniu szablonu z etykietą, można skonfigurować etykietę można zatrzymać za pomocą szablonu, wybierając **nieskonfigurowane** dla **ustawić uprawnień dla dokumentów i wiadomości e-mail zawierających tę etykietę** opcji. Alternatywnie można usunąć etykietę. W obu przypadkach jednak szablon nie zostanie usunięty i pozostaje w stanie zarchiwizowane.
     
@@ -102,6 +100,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
 1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.     
+    
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
 2. Jeśli szablon, który chcesz skonfigurować dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
@@ -127,7 +126,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 
 ## <a name="to-convert-templates-to-labels"></a>Aby dokonać konwersji szablonów na etykiety
 
-Jeśli masz subskrypcję, która obejmuje klasyfikację, etykietowanie i ochronę, możesz dokonać konwersji szablonu na etykietę. Po wykonaniu tej czynności oryginalny szablon zostaje zachowany, ale w portalu Azure jest teraz wyświetlany jako zawarty w nowej etykiecie.
+Jeśli masz subskrypcję, która obejmuje klasyfikację, etykietowanie i ochronę, możesz dokonać konwersji szablonu na etykietę. Podczas konwertowania szablonu, są przechowywane w oryginalnym szablonie, ale w portalu Azure, teraz wyświetla zawartych w nowej etykiety.
 
 Na przykład jeśli dokonano konwersji etykiety o nazwie **Marketing**, która przyznaje prawa użytkowania dla grupy marketingu, w portalu Azure jest ona teraz wyświetlana jako etykieta o nazwie **Marketing**, która ma takie same ustawienia ochrony. W przypadku zmiany ustawień ochrony w nowo utworzonej etykiecie zostaną one zmienione w szablonie, a korzystający z szablonu użytkownik lub usługa otrzyma nowe ustawienia ochrony przy następnym odświeżeniu szablonu. 
 
@@ -149,7 +148,7 @@ Podczas konwertowania szablonu do etykiety:
 
 ## <a name="to-create-a-new-template"></a>Aby utworzyć nowy szablon
 
-Podczas tworzenia nowej etykiety z ustawieniem ochrony **usługi Azure RMS** lub **Azure (klucz w chmurze)**, w obszarze obejmuje, spowoduje to utworzenie nowego szablonu niestandardowego, który można następnie można uzyskać dostępu do usługi i aplikacje który Integracja z szablony usługi Rights Management.
+Podczas tworzenia nowej etykiety z ustawieniem ochrony **usługi Azure RMS** lub **Azure (klucz w chmurze)**, w obszarze obejmuje, ta akcja tworzy nowy szablon niestandardowy, które następnie są dostępne dla usług i aplikacje, które zintegrować z szablony usługi Rights Management.
 
 1. Jeśli nowy szablon jest przeznaczony dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
     

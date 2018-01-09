@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/29/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1fb9251722656811752f7d47cb52388b5d18dc5
-ms.sourcegitcommit: 42c1e72320197534f720ca78bf25da9f139a17de
+ms.openlocfilehash: 1021d9ddfef8a9fcb256aaf71c7dc575e3befe2e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -53,9 +53,9 @@ Pozostali klienci powinni użyć kanałów pomocy technicznej podanych w poniżs
 
 |Subskrypcja|Instrukcje|
 |----------------|---------------|
-|Usługa Azure Information Protection (wersja autonomiczna)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Zobacz tę opcję, jeśli masz bezpłatnej subskrypcji Azure, aby skonfigurować usługi Azure Active Directory i Azure Rights Management w klasycznym portalu Azure, lub jeśli nie masz subskrypcji platformy Azure.|
+|Usługa Azure Information Protection (wersja autonomiczna)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
 |Usługa Azure Information Protection i subskrypcja usługi Office 365<br /><br />Usługa Azure Rights Management z subskrypcją usługi Office 365|Na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365.|
-|Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna — w pakiecie**: Ta opcja jest wyświetlana w przypadku bezpłatnej subskrypcji platformy Azure służącej do skonfigurowania szablonów niestandardowych usług Azure Active Directory i Azure Rights Management albo braku subskrypcji platformy Azure.|
+|Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
 |Azure Information Protection z Microsoft 365 Enterprise|Użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).|
 
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 

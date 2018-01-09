@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/02/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
-ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
+ms.openlocfilehash: 9c10c7c4afdc6269b3bab23b3aba4da76e383e8b
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -25,6 +25,11 @@ ms.lasthandoff: 01/03/2018
 Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management w ramach usługi Azure Information Protection bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto podczas konfigurowania szablonów lub etykiety dla ochrony usługi Azure Rights Management, wybierz prawa użytkowania, które zostaną automatycznie zastosowane w przypadku wybrania szablonu lub etykieta przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w portalu Azure można wybrać role, które powodują ustawienie logicznego grupowania praw użytkowania, lub można skonfigurować poszczególne prawa.
 
 Niniejszy artykuł pomoże Ci skonfigurować prawa użytkowania dla używanej aplikacji oraz zrozumieć, jak te prawa będą interpretowane przez aplikacje.
+
+> [!NOTE] 
+> Aby informacje były kompletne ten artykuł zawiera wartości z klasycznego portalu Azure, która 08 stycznia 2018 wycofane. Po tej dacie przy próbie za pomocą tego portalu, nastąpi automatyczne przekierowanie do portalu Azure.
+>
+> Aby przeprowadzić migrację do nowego portalu, zobacz [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).
 
 ## <a name="usage-rights-and-descriptions"></a>Prawa użytkowania wraz z opisami
 Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez usługę Rights Management oraz sposób ich wykorzystania i interpretowania. Są one wyświetlane według ich **nazwa pospolita**, która jest zazwyczaj jak napotkać wyświetlenie prawa użytkowania lub odwołuje się do, przyjaźniejsza wersja jednowyrazowej wartości używanej w kodzie ( **kodowanie w zasadach** wartości). 

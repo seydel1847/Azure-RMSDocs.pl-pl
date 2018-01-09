@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -45,7 +45,6 @@ Oprócz tego rejestrowania użycia, również są następujące opcje rejestrowa
 |Opcja rejestrowania|Opis|
 |----------------|---------------|
 |Administrator dziennika|Rejestruje zadania administracyjne dla usługi Azure Rights Management. Na przykład, jeśli usługa jest wyłączone, po włączeniu funkcji administratorów i użytkowników są uprawnienia administratora delegowanego do usługi. <br /><br />Aby uzyskać więcej informacji, zobacz polecenie cmdlet programu PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
-|Raporty sieci Web|Uzyskania podstawowych raportów użycia z klasycznego portalu Azure: **Podsumowanie usługi RMS**, **aktywni użytkownicy usługi RMS**, **platforma urządzeń usługi RMS**, i **użycie aplikacji usługi RMS**. <br /><br />Aby uzyskać dostęp do tych raportów z klasycznego portalu Azure, kliknij przycisk **usługi Active Directory**, wybierz i otwórz katalog, a następnie kliknij przycisk **raporty**.|
 |śledzenie dokumentów|Umożliwia użytkownikom śledzenie i odwoływanie swoje dokumenty, które mają one śledzone klienta Azure Information Protection lub aplikacji do udostępniania usług RMS. Administratorzy globalni mogą również śledzić te dokumenty w imieniu użytkowników. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
 |Dzienników zdarzeń klienta|Działanie użycia dla klienta usługi Azure Information Protection zarejestrowane w lokalnym systemie Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia dla klienta usługi Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
 |Pliki dziennika klienta|Rozwiązywanie problemów z f dzienniki lub klienta Azure Information Protection znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla Microsoft Support.|
@@ -105,7 +104,7 @@ Domyślnie to polecenie cmdlet używa trzech wątków do pobierania dzienników.
 #### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>Jeśli rejestrowanie użycia usługi Azure Rights Management zostało włączone ręcznie przed zmianą funkcji rejestrowania w dniu 22 lutego 2016 r.
 
 
-Jeśli rejestrowanie użycia było wykorzystywane przed zmianą rejestrowania, dzienniki użycia będą znajdowały się na Twoim skonfigurowanym koncie magazynu Azure. Firma Microsoft nie skopiuje tych dzienników z Twojego konta magazynu do nowego zarządzanego konta magazynu usługi Azure Rights Management w ramach zmiany funkcji rejestrowania. Za zarządzanie cyklem życia wcześniej wygenerowanych dzienników odpowiedzialni są użytkownicy. Można wykonać polecenie cmdlet [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) polecenia cmdlet, aby pobrać stare dzienniki. Na przykład:
+Jeśli rejestrowanie użycia było wykorzystywane przed zmianą rejestrowania, dzienniki użycia będą znajdowały się na Twoim skonfigurowanym koncie magazynu Azure. Firma Microsoft nie skopiuje tych dzienników z Twojego konta magazynu do nowego zarządzanego konta magazynu usługi Azure Rights Management w ramach zmiany funkcji rejestrowania. Za zarządzanie cyklem życia wcześniej wygenerowanych dzienników odpowiedzialni są użytkownicy. Można wykonać polecenie cmdlet [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) polecenia cmdlet, aby pobrać stare dzienniki. Przykład:
 
 - Aby pobrać wszystkie dzienniki dostępne w folderze E:\logs: `Get-AadrmUsageLog -Path "E:\Logs"`
     
