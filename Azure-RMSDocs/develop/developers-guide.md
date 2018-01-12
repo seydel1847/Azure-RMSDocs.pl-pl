@@ -1,8 +1,8 @@
 ---
 title: "Przewodnik dewelopera usługi Azure Information Protection"
 description: "Deweloperzy mogą korzystać z usługi Azure Information Protection do ochrony plików każdego typu oraz zarządzania nimi"
-author: BrucePerlerMS
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
-ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
+ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 
@@ -98,15 +98,9 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Korzystanie z praw wbudowanych (użytkownik)](built-in-rights-usage-restriction-reference.md)
 - [Włączanie rejestrowania błędów i wydajności (użytkownik)](enabling-logging.md)
 
-## <a name="videos"></a>Filmy
+## <a name="introduction-and-datasheets"></a>Wprowadzenie i arkusze danych
 
 [Wprowadzenie do usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
-
-Są następujące filmy wideo z konferencji Microsoft 2016 Ignite
-
-- [Email security inside your org](https://myignite.microsoft.com/videos/2787) (Zabezpieczenia poczty e-mail w organizacji)
-- [Adopt a comprehensive identity-driven solution for protecting and sharing data securely](https://myignite.microsoft.com/videos/2784) (Wdrażanie kompleksowego rozwiązania opartego na tożsamościach służącego do ochrony i bezpiecznego udostępniania danych)
-- [Dowiedz się, jak klasyfikacji, etykietowania i, ochrona zapewnia ochronę danych trwałych](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>Inne zasoby
 
@@ -145,7 +139,7 @@ Są następujące filmy wideo z konferencji Microsoft 2016 Ignite
 - [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) to pierwsza wersja zestawu SDK usług RMS.
 - [AD RMS Scripting Tool](https://msdn.microsoft.com/library/bb968797.aspx) to narzędzie administracyjne służące do instalacji usług AD RMS.
 
-### <a name="see-also"></a>Zobacz także
+### <a name="see-also"></a>Zobacz też
 
 - [Terminologia Developer](terms.md)
 - [Terminologia dotycząca usługi Azure Information Protection — ITPro](../get-started/terminology.md)

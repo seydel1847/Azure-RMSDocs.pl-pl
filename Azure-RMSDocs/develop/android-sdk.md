@@ -2,8 +2,8 @@
 title: Konfiguracja systemu Android | Azure RMS
 description: "Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usług Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 098ff506a2ca321d8ee2de00f9649cd47ef021ef
-ms.sourcegitcommit: 78e2cf5acd48dbf50ed4c7be1b2f3bae95362cec
+ms.openlocfilehash: cf81959a7ef4f20ab550dcec1c295e5045f321f3
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="android-setup"></a>Konfiguracja systemu Android
 

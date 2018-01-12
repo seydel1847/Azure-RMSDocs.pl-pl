@@ -1,23 +1,9 @@
+# <a name="required-metadata"></a>wymagane metadane
+
+title: co nowego i zwolnij uwagi dotyczące opis: spis ważnych zmian i funkcji w tym i poprzednich wersjach.
+Autor: lleonard msft ms.author: alleonar manager: mbaldwin ms.date: 09/25/2017 ms.topic: artykuł ms.service: ms.technology ochrony informacji: techgroup-identity ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af odbiorców: developer MS.Reviewer: kartikk ms.suite: ems
 ---
-title: "Nowości i informacje o wersji"
-description: "Spis ważnych zmian i funkcji w tym i poprzednich wersjach."
-author: bruceperlerms
-ms.author: bruceper
-manager: mbaldwin
-ms.date: 09/25/2017
-ms.topic: article
-ms.service: information-protection
-ms.technology: techgroup-identity
-ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-audience: developer
-ms.reviewer: kartikk
-ms.suite: ems
-ms.openlocfilehash: 6587685e3bd40d696ce24a9aa0ed80d1f6f43f55
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
-ms.translationtype: MT
-ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2017
----
+
 # <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 
 ## <a name="whats-new"></a>Co nowego
