@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące wyświetlania i używania dokumentu chronion
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2eb82d81945793eb0b29d05ff8c6bd995481faf
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: aa222d484e67d5f1e08ac08b3839100de8390e4e
+ms.sourcegitcommit: d4c63df8436b2e490f196585fcb78afe8c2e8de8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Podręcznik użytkownika: Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -31,24 +31,24 @@ Przeglądarka jest instalowana automatycznie podczas instalacji klienta usługi 
 > [!NOTE]
 > Chociaż po zainstalowaniu klienta dostępnych jest więcej funkcji, wymaga to uprawnień administratora lokalnego, a dodatkowo — w celu zapewnienia pełnej funkcjonalności — wymaga także odpowiednich usług dla organizacji:
 > 
-> - Azure Information Protection
+>-Azure Information Protection
 > 
-> - Azure Rights Management
+>-Usługi azure Rights Management
 > 
-> - Usługi Active Directory Rights Management 
+>-Active Directory Rights Management Services 
 > 
 > Zainstaluj przeglądarkę, jeśli otrzymany przez Ciebie chroniony dokument został wysłany przez osobę z innej organizacji lub jeśli nie masz na komputerze uprawnień administratora lokalnego.
 
 Aby można było otworzyć dokument chroniony, aplikacja musi być oznaczona jako „obsługująca usługę RMS”. Aplikacje pakietu Office i przeglądarka usługi Azure Information Protection stanowią przykład aplikacji obsługujących usługę RMS. Aby wyświetlić listę aplikacji według typu i obsługiwanych urządzeń, zobacz tabelę [aplikacji obsługujących usługę RMS](../get-started/requirements-applications.md#rms-enlightened-applications).  
 ## <a name="messagerpmsg-as-an-email-attachment"></a>Message.rpmsg jako załącznik wiadomości e-mail
 
-Jeśli załącznikiem do wiadomości e-mail jest plik **message.rpmsg**, ten plik nie jest dokumentem chronionym, lecz chronioną wiadomością e-mail, która jest wyświetlana jako załącznik. Do wyświetlenia takiej chronionej wiadomości e-mail na komputerze PC z systemem Windows nie można użyć przeglądarki usługi Azure Information Protection. Zamiast tego należy użyć aplikacji poczty e-mail dla systemu Windows, która obsługuje ochronę usługi Rights Management, takiej jak Outlook z pakietu Office. Alternatywą jest skorzystanie z programu Outlook w sieci Web.
+Jeśli załącznikiem do wiadomości e-mail jest plik **message.rpmsg**, ten plik nie jest dokumentem chronionym, lecz chronioną wiadomością e-mail, która jest wyświetlana jako załącznik. Do wyświetlenia takiej chronionej wiadomości e-mail na komputerze PC z systemem Windows nie można użyć przeglądarki usługi Azure Information Protection. Zamiast tego należy aplikacji poczty e-mail dla systemu Windows, który obsługuje ochrony usługi Rights Management, takich jak Outlook pakietu Office. Alternatywą jest skorzystanie z programu Outlook w sieci Web.
 
 Jednak jeśli masz urządzenie z systemem iOS lub Android, można użyć aplikacji usługi Azure Information Protection do otwierania chronionych wiadomości e-mail. Aplikację dla takich urządzeń przenośnych można pobrać ze strony usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft.
 
 ## <a name="prompts-for-authentication"></a>Monity o uwierzytelnienie
 
-Zanim będzie można wyświetlić chroniony plik, użyta usługa Rights Management musi potwierdzić, że masz uprawnienia do wyświetlenia pliku. W tym celu usługa sprawdza Twoją nazwę użytkownika i hasło. W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
+Zanim będzie można wyświetlić chroniony plik, użyta usługa Rights Management musi potwierdzić, że masz uprawnienia do wyświetlenia pliku. Usługa ma to potwierdzenie, sprawdzając nazwę użytkownika i hasło. W niektórych przypadkach te poświadczenia mogą być buforowane, a nie wyświetlony monit z prośbą o Zaloguj się. W pozostałych przypadkach monit o podanie poświadczeń.
 
 Jeśli Twoja organizacja ma konto oparte na chmurze, można użyć (dla usługi Office 365 lub Azure) i nie korzysta z wersji lokalnej równoważne (AD RMS), masz dwie opcje:
 
@@ -75,7 +75,9 @@ Jeśli Twoja organizacja ma konto oparte na chmurze, można użyć (dla usługi 
 5. Jeśli masz do otwarcia dodatkowe pliki chronione, możesz przejść do nich bezpośrednio z przeglądarki, korzystając z opcji **Otwórz**. Wybrane przez Ciebie pliki zastępują w przeglądarce oryginalny plik. 
 
 > [!TIP]
-> Jeśli nie można otworzyć pliku chronionego, można użyć **Uruchom diagnostykę** opcję **Chroń** > **Pomoc i opinie** usługi Azure Information Protection Klient do sprawdzania problemów występujących na komputerze, który może uniemożliwić chronionego dokumentu otwierania.
+> Jeśli nie możesz otworzyć pliku chronionego, a pełna zainstalowanym klientem usługi Azure Information Protection, spróbuj **Resetowanie ustawień** opcji. Aby uzyskać dostęp do tej opcji z aplikacji pakietu Office, zaznacz **Chroń** przycisk > **Pomoc i opinie** > **Resetowanie ustawień**. 
+> 
+> [Więcej informacji na temat opcji Resetowanie ustawień](client-admin-guide.md#more-information-about-the-reset-settings-option)
 
 ## <a name="other-instructions"></a>Inne instrukcje
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:

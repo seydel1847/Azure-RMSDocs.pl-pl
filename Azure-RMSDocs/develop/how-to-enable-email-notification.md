@@ -2,8 +2,8 @@
 title: "Włączanie powiadomień e-mail | Azure RMS"
 description: "Powiadomienia e-mail umożliwiają powiadamianie właściciela chronionej zawartości o dostępie do jego zawartości."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1b9428a79b5c9df76d2b5f7ec1e358be09f0bf7f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2869fc76bb45ca6f1e22cd1d7ffc232bbc60c0b4
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="how-to-enable-email-notification"></a>Instrukcje: włączanie powiadomień e-mail
 
@@ -52,7 +52,7 @@ Poniższa tabela zawiera pola danych aplikacji oraz pary nazw właściwości i w
 |MS.Notify.Enabled|ciąg|„true” &#124; „false”|W przypadku wartości „true” do właściciela licencji publikowania wysyłane jest powiadomienie e-mail przy próbie jej użycia do uzyskania licencji użytkownika końcowego.|
 |MS.Notify.Culture|ciąg|„pl-PL”| **Źródło:** System.Globalization.CultureInfo.CurrentUICulture.Name <br><br>Ta wartość jest używana do określenia zlokalizowanego języka powiadomienia e-mail oraz formatowania daty/godziny i liczb używanego w wiadomości e-mail.<br><br>Należy ją ustawić na podstawie ustawień użytkownika maszyny, na której utworzono licencję publikowania, lub też preferowanej kultury właściciela licencji publikowania.|
 |MS.Notify.TZID|ciąg|„Czas pacyficzny”|**Źródło:** TimeZoneInfo.Local.Id - identyfikator strefy czasowej systemu Windows.<br><br>Wartość ta to identyfikator strefy czasowej systemu Microsoft Windows, opisujący daną strefę czasową i jej charakterystykę.|
-|MS.Notify.TZO|ciąg|“-480”|Jest to przesunięcie strefy czasowej właściciela licencji publikowania w minutach od czasu UTC.<br><br>W przypadku podania prawidłowej wartości TZID używane jest przesunięcie strefy czasowej przez nią określone, a wartość ta jest ignorowana.<br><br>Wartość ta jest używana najczęściej przez platformy publikowania oparte na systemach innych niż Windows, które nie mają dostępu do listy wartości identyfikatorów stref czasowych systemu Windows.<br><br>Jeśli nie podano wartości TZID, wartość ta jest używana do obliczenia przesunięcia czasu w powiadomieniach, a wartość TZSN jest używana (niezależnie od wartości strefy czasowej) do wskazania nazwy strefy czasowej. Spowoduje to zastosowanie stałej strefy czasowej, która nie jest aktualizowana w celu uwzględnienia czasu letniego, jeśli ma zastosowanie.<br><br>Na przykład:<br><br>Jeśli wartość TXID jest pusta, wartość TZ0 ustawiono na „-420”, a wartość TZSN jest ustawiona na „Czas pacyficzny letni”, wszystkie wartości zamieszczone w powiadomieniu e-mail są dostosowywane do czasu pacyficznego letniego i prezentowane w ten sposób, nawet jeśli w danym momencie nie obowiązuje już czas letni.<br><br>Z kolei w przypadku podania wartości TZID wraz z TZSN i TZDN czasy określone w powiadomieniu e-mail są zmieniane i wyświetlane zależnie od tego, czy data i godzina powinny być wyświetlane w trybie czasu letniego, czy też trybie standardowym.|
+|MS.Notify.TZO|ciąg|“-480”|Jest to przesunięcie strefy czasowej właściciela licencji publikowania w minutach od czasu UTC.<br><br>W przypadku podania prawidłowej wartości TZID używane jest przesunięcie strefy czasowej przez nią określone, a wartość ta jest ignorowana.<br><br>Wartość ta jest używana najczęściej przez platformy publikowania oparte na systemach innych niż Windows, które nie mają dostępu do listy wartości identyfikatorów stref czasowych systemu Windows.<br><br>Jeśli nie podano wartości TZID, wartość ta jest używana do obliczenia przesunięcia czasu w powiadomieniach, a wartość TZSN jest używana (niezależnie od wartości strefy czasowej) do wskazania nazwy strefy czasowej. Spowoduje to zastosowanie stałej strefy czasowej, która nie jest aktualizowana w celu uwzględnienia czasu letniego, jeśli ma zastosowanie.<br><br>Przykład:<br><br>Jeśli wartość TXID jest pusta, wartość TZ0 ustawiono na „-420”, a wartość TZSN jest ustawiona na „Czas pacyficzny letni”, wszystkie wartości zamieszczone w powiadomieniu e-mail są dostosowywane do czasu pacyficznego letniego i prezentowane w ten sposób, nawet jeśli w danym momencie nie obowiązuje już czas letni.<br><br>Z kolei w przypadku podania wartości TZID wraz z TZSN i TZDN czasy określone w powiadomieniu e-mail są zmieniane i wyświetlane zależnie od tego, czy data i godzina powinny być wyświetlane w trybie czasu letniego, czy też trybie standardowym.|
 |MS.Notify.TZSN|ciąg|„Czas pacyficzny”|**Źródło:** TimeZoneInfo.Local.StandardName — nazwa standardowa strefy czasowej.<br><br>Powinna to być zlokalizowana nazwa standardowa strefy czasowej.|
 |MS.Notify.TZDN|ciąg|„Czas pacyficzny letni”|**Źródło:** TimeZoneInfo.Local.DaylightName — nazwa letniej strefy czasowej.<br><br>Powinna to być zlokalizowana nazwa letniej strefy czasowej. Może być ona identyczna z nazwą standardową, jeśli dana strefa czasowa nie korzysta z czasu letniego.|
 
