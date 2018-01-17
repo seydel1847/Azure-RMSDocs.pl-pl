@@ -4,7 +4,7 @@ description: "Informacje dotyczące sposobu, w jaki aplikacja RMS sharing obsłu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 16/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
+ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Obsługa tej starszej aplikacji zakończy się 31 stycznia 2018 r. 
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 
  
 RMS sharing to dostępna do pobrania aplikacja, która obsługuje pakiet Office 2010 dla systemu Windows i której stosowanie zalecano zwykle także w przypadku wszystkich komputerów z systemem Windows oraz urządzeń przenośnych. Nadal zaleca się korzystanie z niej na komputerach Mac i urządzeniach z systemem Windows Phone. Jedną z jej zalet jest możliwość stosowania ogólnej ochrony dla aplikacji i plików, które nie obsługują natywnie usługi Azure Rights Management, co oznacza, że wszystkie pliki mogą być chronione. Aby uzyskać więcej informacji na temat różnych poziomów ochrony, zobacz sekcję [Poziom ochrony — natywny i ogólny](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) w [Przewodniku administratora aplikacji do udostępniania usługi Rights Management](../rms-client/sharing-app-admin-guide.md).
 

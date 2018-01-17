@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów do wdrażania klienta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2018
+ms.date: 01/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
-ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
+ms.openlocfilehash: d5fbeef236fa16327048cbaf42638a2354b74e19
+ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -191,7 +191,7 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
     
     |Wersja pakietu Office|System operacyjny|Oprogramowanie|Akcja|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2016|Wszystkie obsługiwane wersje|64-bitowe: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32-bitowe: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> Wersja: 1.0|Instalowanie|
+    |Office 2016|Wszystkie obsługiwane wersje|64-bitowe: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32-bit: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> Wersja: 1.0|Instalowanie|
     |Office 2013|Wszystkie obsługiwane wersje|64-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />Wersja: 1.0|Instalowanie|
     |Pakiet Office 2010|Wszystkie obsługiwane wersje|[Asystent logowania w Usługach online firmy Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> Wersja: 2.1|Instalowanie|
     |Pakiet Office 2010|Windows 8.1 i Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB2843630 lub KB2919355 nie jest zainstalowana.|
