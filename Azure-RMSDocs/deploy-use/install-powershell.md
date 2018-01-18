@@ -4,7 +4,7 @@ description: "Instrukcje instalowania programu Windows PowerShell dla usługi Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5dae84eea9e67be75530d69b6124b97c7c29f8a3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0deb1b47036a4439f393bf7351c5d149a8e85559
+ms.sourcegitcommit: 152b4855e23f443c04ac27fedfdc1dcc9fda8949
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>Instalowanie programu Windows PowerShell dla usługi Azure Rights Management
 
@@ -32,7 +32,7 @@ Poniższa tabela zawiera wymagania wstępne dotyczące instalacji i używania pr
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Wersja systemu Windows, która obsługuje moduł administracji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]|Sprawdź listę obsługiwanych systemów operacyjnych w sekcji **Wymagania systemowe** [strony pobierania narzędzia Azure Rights Management Administration Tool](http://go.microsoft.com/fwlink/?LinkId=257721).|
-|Minimalna wersja programu Windows PowerShell: 2.0<br /><br /> |Domyślnie większość systemów operacyjnych Windows jest instalowana z programem Windows PowerShell w wersji co najmniej 2.0. Jeśli musisz zainstalować tę minimalną obsługiwaną wersję, zobacz artykuł [Install Windows PowerShell 2.0](https://msdn.microsoft.com/library/ff637750.aspx) (Instalowanie programu Windows PowerShell 2.0).<br /><br />Porada: używaną wersję programu Windows PowerShell możesz sprawdzić, wpisując polecenie `$PSVersionTable` w sesji programu PowerShell. <br /><br /> Użytkownicy tej wersji minimalnej muszą ręcznie załadować moduł w sesji programu PowerShell, uruchamiając polecenie `Import-Module AADRM` przed użyciem jakiegokolwiek polecenia cmdlet z modułu administracyjnego usługi Rights Management. W przypadku środowiska Windows PowerShell w wersji 3 lub nowszej moduł ładuje się automatycznie i nie jest wymagane użycie dodatkowego polecenia.|
+|Minimalna wersja programu Windows PowerShell: 2.0<br /><br /> |Domyślnie większość systemów operacyjnych Windows jest instalowana z programem Windows PowerShell w wersji co najmniej 2.0. Jeśli musisz zainstalować tę minimalną obsługiwaną wersję, zobacz artykuł [Install Windows PowerShell 2.0](https://msdn.microsoft.com/library/ff637750.aspx) (Instalowanie programu Windows PowerShell 2.0).<br /><br />Porada: używaną wersję programu Windows PowerShell możesz sprawdzić, wpisując polecenie `$PSVersionTable` w sesji programu PowerShell. <br /><br /> Jeśli ta minimalna wersja, należy ręcznie załadować moduł w sesji programu PowerShell, uruchamiając `Import-Module AADRM` przed użyciem każdego polecenia cmdlet z modułu administracyjnego usługi Rights Management. W przypadku środowiska Windows PowerShell w wersji 3 lub nowszej moduł ładuje się automatycznie i nie jest wymagane użycie dodatkowego polecenia.|
 |Minimalna wersja platformy Microsoft .NET Framework: 4.5<br /><br />Uwaga: ta wersja platformy Microsoft .NET Framework jest dołączona do nowszych systemów operacyjnych, w związku z czym jej ręczna instalacja powinna być konieczna tylko wtedy, gdy kliencki system operacyjny jest starszy niż Windows 8.0 lub serwerowy system operacyjny jest starszy niż Windows Server 2012.|Jeśli nie zainstalowano minimalnej wersji platformy Microsoft .NET Framework, można pobrać platformę [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />Ta minimalna wersja platformy Microsoft .NET Framework jest wymagana przez niektóre klasy używane przez moduł administracyjny usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)].|
 
 > [!NOTE]
@@ -43,9 +43,9 @@ Poniższa tabela zawiera wymagania wstępne dotyczące instalacji i używania pr
 
 ## <a name="how-to-install-the-rights-management-administration-module"></a>Instalacja modułu administracyjnego usługi Rights Management
 
-1.  Przejdź do Centrum pobierania Microsoft i pobierz [narzędzie Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), które zawiera moduł administracyjny usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] dla programu Windows PowerShell.
+1. Przejdź do witryny Microsoft Download Center i Znajdź [usługi Azure Rights Management Administration Tool](https://go.microsoft.com/fwlink/?LinkId=257721), który zawiera [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] modułu administracyjnego dla programu Windows PowerShell.
 
-2.  W folderze lokalnym, do którego pobrano i w którym zapisano plik instalatora usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)], kliknij dwukrotnie plik wykonywalny pobrany dla używanej platformy (WindowsAzureADRightsManagementAdministration_x64 lub WindowsAzureADRightsManagementAdministration_x86.exe), aby uruchomić Kreatora instalacji modułu administracyjnego usługi Azure AD Rights Management.
+2. Pobierz i Zapisz [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] pliku Instalatora **WindowsAzureADRightsManagementAdministration_x64**. Następnie kliknij dwukrotnie ten plik, aby rozpocząć Azure AD Rights Management administracji Kreatora instalacji.
 
 3.  Ukończ pracę kreatora.
 
@@ -66,7 +66,7 @@ Aby zobaczyć, jakie polecenia cmdlet są dostępne, wpisz następujące polecen
 Get-Command -Module AADRM
 ```
 
-Użyj polecenia `Get-Help <cmdlet_name>`, aby wyświetlić sekcję pomocy dla określonego polecenia cmdlet, i użyj parametru **-online**, aby wyświetlić najnowszą pomoc w witrynie dokumentacji firmy Microsoft. Na przykład:
+Użyj polecenia `Get-Help <cmdlet_name>`, aby wyświetlić sekcję pomocy dla określonego polecenia cmdlet, i użyj parametru **-online**, aby wyświetlić najnowszą pomoc w witrynie dokumentacji firmy Microsoft. Przykład:
 
 ```
 Get-Help Connect-AadrmService -online
