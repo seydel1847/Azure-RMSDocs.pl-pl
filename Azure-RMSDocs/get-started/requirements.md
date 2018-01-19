@@ -4,7 +4,7 @@ description: "Określanie wymagań wstępnych dotyczących wdrażania usługi Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e6fa7c2912f2598f8eb2ad31d237caab80fd0273
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -97,10 +97,15 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 
 - Zezwalaj na ruch HTTPS na porcie TCP 443 do witryny **api.informationprotection.azure.com**.
 
-- Nie przerywaj połączenia TLS między klientem i usługą (np. w celu przeprowadzenia inspekcji na poziomie pakietu). Spowoduje to przerwanie przypinania certyfikatu, którego klienci usługi RMS używają razem z urzędami certyfikacji zarządzanymi przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure RMS.
-
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
+- Nie przerywaj połączenia TLS między klientem i usługą (np. w celu przeprowadzenia inspekcji na poziomie pakietu). Spowoduje to przerwanie przypinania, że klienci usług RMS za pomocą CAs zarządzany przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
+    
+    - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki:`https://admin.na.aadrm.com/admin/admin.svc` 
+    
+        Nie martw się o Wyświetla okna przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiany przez CA firmy Microsoft, jest bardzo prawdopodobne, połączenie Usługa klienta jest przerywane i wymaga ponownej konfiguracji na zaporze. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli zobaczysz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
+        
+        ![Sprawdzanie wystawionego certyfikatu dla usługi Azure Information Protection połączeń](../media/certificate-checking.png)
 
 ### <a name="on-premises-servers"></a>Serwery lokalne
 

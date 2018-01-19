@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów do wdrażania klienta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/16/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d5fbeef236fa16327048cbaf42638a2354b74e19
-ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
+ms.openlocfilehash: 3ff9a63f5b8565cac131e7b69a674fc8be902d0f
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -74,7 +74,7 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
 
 - Dla wersji pakietu Office 16.0.8628.2010 i nowsze (kliknij instalacja): Włączanie obsługi starszych monitorów
     
-    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza aplikacje pakietu Office dla tych wersji pakietu Office, umożliwia starszych monitorów. Aby skonfigurować aplikacje pakietu Office: **pliku** > **ogólne** > **opcje interfejsu użytkownika**:
+    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza aplikacje pakietu Office dla tych wersji pakietu Office, umożliwia starszych monitorów. Aby skonfigurować aplikacje pakietu Office: **pliku** > **opcje** > **ogólne** > **interfejsu użytkownika opcje**:
     
     - Jeśli widzisz opcję **korzystając z wielu ekranów** ustawiono **Optymalizuj pod kątem najlepszego wyglądu**, wybierz pozycję **Optymalizuj pod kątem zgodności (aplikacji wymagane jest ponowne uruchomienie)** Zamiast tego. 
         
