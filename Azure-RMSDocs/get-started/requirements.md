@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 9286be6e9feb6be87494db0be8e625bdbbf30ddd
+ms.sourcegitcommit: ad628bcc2eea26ed69511870b36924e58e4c2fc8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/19/2018
@@ -103,7 +103,7 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
     
     - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki:`https://admin.na.aadrm.com/admin/admin.svc` 
     
-        Nie martw się o Wyświetla okna przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiany przez CA firmy Microsoft, jest bardzo prawdopodobne, połączenie Usługa klienta jest przerywane i wymaga ponownej konfiguracji na zaporze. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli zobaczysz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
+        Nie martw się o Wyświetla okna przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiany przez CA firmy Microsoft, jest bardzo prawdopodobne, bezpieczne połączenie Usługa klienta jest przerywane i wymaga ponownej konfiguracji na zaporze. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli zobaczysz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
         
         ![Sprawdzanie wystawionego certyfikatu dla usługi Azure Information Protection połączeń](../media/certificate-checking.png)
 
