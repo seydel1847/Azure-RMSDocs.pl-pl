@@ -26,7 +26,7 @@ W tym temacie wymieniono ważne zmiany i funkcje w tej nowej wersji zestawu RMS 
 
 Aktualizacja dla naszych wersji Lipcowej uwzględnione zwiększanie poprawki zestawu SDK, teraz 4.2.5.
 
-- Zestaw SDK systemu android: Aplikacji można teraz **ustawić rejestrowania poziomu na bieżąco** z zestawu SDK systemu Android. Aby uzyskać więcej informacji, zobacz temat [Porady: Włączanie rejestrowania błędów i wydajności](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging)
+- Zestaw SDK systemu android: Aplikacji można teraz **ustawić rejestrowania poziomu na bieżąco** z zestawu SDK systemu Android. Aby uzyskać więcej informacji, zobacz temat [Porady: Włączanie rejestrowania błędów i wydajności](https://docs.microsoft.com/information-protection/develop/enabling-logging)
 - Zestaw SDK systemu iOS nie obsługuje poziomu rejestrowania. 
 - Zestaw SDK teraz zwraca błąd dla tokenu dostępu do wartości NULL.
 
