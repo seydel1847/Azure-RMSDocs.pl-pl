@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów do wdrażania klienta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/21/2018
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 61640375cc84ffb9dd23f571fdaccbcd0f357bcb
-ms.sourcegitcommit: 9e45bd026a71e63f87bc0f0a693bf57760509d55
+ms.openlocfilehash: 0af9b6847c920d486d727cb6748b84aa581012d1
+ms.sourcegitcommit: d3b82dd8dbafb86ddbe698cdcd0edee445fff416
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -74,13 +74,15 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
 
 - Dla wersji pakietu Office 16.0.8628.2010 i nowsze (kliknij instalacja): Włączanie obsługi starszych monitorów
     
-    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza aplikacje pakietu Office dla tych wersji pakietu Office, umożliwia starszych monitorów. Gdy pasek nie są wyświetlane poprawnie w tym scenariuszu, można napotkać ona wyświetlana jako **AdxTaskPane**. 
+    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza aplikacje pakietu Office dla tych wersji pakietu Office, może być konieczne włączenie obsługi starszych monitorów. Gdy pasek nie są wyświetlane poprawnie w tym scenariuszu, można napotkać ona wyświetlana jako **AdxTaskPane**. 
     
     Aby skonfigurować aplikacje pakietu Office tego wymagania: **pliku** > **opcje** > **ogólne**  >   **Opcje interfejsu użytkownika**:
     
     - Jeśli widzisz opcję **korzystając z wielu ekranów** ustawiono **Optymalizuj pod kątem najlepszego wyglądu**, wybierz pozycję **Optymalizuj pod kątem zgodności (aplikacji wymagane jest ponowne uruchomienie)** Zamiast tego. 
         
     - Jeśli zobaczysz, że opcja **Użyj najlepsze ustawienia dla moich wyświetlania** jest zaznaczony, Usuń to pole wyboru.
+    
+    - Jeśli żadna z tych opcji, nie jest wymagana żadna konfiguracja dodatkowych.
 
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.

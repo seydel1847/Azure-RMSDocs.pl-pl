@@ -4,17 +4,17 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: a722675d6de6f6791c567646fed5d8ba262674d9
+ms.sourcegitcommit: d3b82dd8dbafb86ddbe698cdcd0edee445fff416
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -61,7 +61,7 @@ Aby uzyskać więcej informacji na temat mechanizmów ochrony w usłudze Azure R
 
 ## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>Integracja z przepływami pracy użytkowników końcowych dla dokumentów i wiadomości e-mail
 
-Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji, przedstawiającej ten pasek w programie Word. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Na przykład:
+Podczas instalowania klienta usługi Azure Information Protection usługa ta zostaje zintegrowana z istniejącymi przepływami pracy użytkowników końcowych. Klient instaluje w aplikacjach pakietu Office pasek usługi Information Protection, który był widoczny na pierwszej ilustracji, przedstawiającej ten pasek w programie Word. Taki sam pasek jest dodawany do programów Excel, PowerPoint i Outlook. Przykład:
 
 ![Przykład przedstawiający pasek usługi Azure Information Protection w programie Excel](../media/excel2016-infoprotect-barv2.png)
 
@@ -73,7 +73,7 @@ Aby sklasyfikować i objąć ochroną dodatkowe typy plików oraz zapewnić obs�
 
 Po wybraniu opcji menu **Klasyfikuj i chroń** w oknie Eksploratora plików użytkownicy mogą wybrać etykietę w sposób przypominający korzystanie z paska usługi Information Protection w aplikacjach klasycznych pakietu Office. Użytkownicy mogą również ustawić w razie potrzeby własne uprawnienia niestandardowe.
 
-W przypadku użytkowników zaawansowanych (oraz administratorów) wydajniejszym sposobem na zarządzanie wieloma plikami oraz ustawianie ich klasyfikacji i ochrony może okazać się skorzystanie z poleceń programu PowerShell. Chociaż polecenia programu PowerShell umożliwiające wykonywanie tych czynności są automatycznie zawarte w kliencie, moduł PowerShell można także zainstalować oddzielnie.
+W przypadku użytkowników zaawansowanych (oraz administratorów) wydajniejszym sposobem na zarządzanie wieloma plikami oraz ustawianie ich klasyfikacji i ochrony może okazać się skorzystanie z poleceń programu PowerShell. Polecenia programu PowerShell, aby wykonać tych czynności są automatycznie dołączone do klienta, chociaż można także zainstalować moduł PowerShell oddzielnie.
 
 Po objęciu dokumentu ochroną użytkownicy i administratorzy mogą monitorować, kto i kiedy uzyskuje dostęp do tych plików, za pomocą witryny śledzenia dokumentów. W przypadku podejrzenia nieprawidłowego użycia użytkownicy mogą również odwołać dostęp do dokumentów:
 
@@ -93,7 +93,7 @@ Na przykład usługi Gmail jest widoczny poniżej w wiadomości e-mail:
 
 Dla użytkowników podczas wysyłania wiadomości e-mail, ich przepływu pracy nie różni się od wysyłanie chronionych wiadomości e-mail do użytkownika w ich własnej organizacji. Na przykład można wybrać **nie przesyłaj dalej** przycisku, który klient usługi Azure Information Protection można dodać do Wstążki programu Outlook. Lub tej funkcji nie przesyłaj dalej można zintegrować etykiety, który użytkownicy wybiorą, dzięki czemu wiadomości e-mail jest klasyfikowany, jak również chronione:
 
-![Wybranie etykiety skonfigurowane dla czy nie do przodu o](../media/recipients-only-label.png)
+![Wybranie etykiety skonfigurowane dla nie przesyłaj dalej](../media/recipients-only-label.png)
 
 Alternatywnie można automatycznie udostępnić ochrony dla użytkowników, przy użyciu reguły przepływu poczty, które mają zastosowanie ochrony praw. 
 
@@ -131,8 +131,8 @@ Możesz [Wyszukaj i Znajdź](https://myignite.microsoft.com/videos?q=%2522azure%
 
 Przeczytaj wpis w blogu: [Azure Information Protection: Ready, set, protect!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: przygotowanie, ustawianie, ochrona)
 
-Samodzielnie skonfiguruj i poznaj usługę Azure Information Protection w pięciu krokach z naszym [Samouczkiem Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
+Samodzielnie skonfiguruj i poznaj usługę Azure Information Protection w pięciu krokach z naszym [Samouczkiem Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md). Lub, jeśli wszystko jest gotowe do wdrożenia tej usługi dla Twojej organizacji, zobacz [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md).
 
-Być może znasz usługę Azure Information Protection bądź Azure Rights Management pod inną nazwą? Zobacz [naszą listę alternatywnej terminologii usługi](azure-rms-aka.md).
+Możliwe, że znasz usługi Azure Information Protection pod inną nazwą? Zobacz [naszą listę alternatywnej terminologii usługi](azure-rms-aka.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
