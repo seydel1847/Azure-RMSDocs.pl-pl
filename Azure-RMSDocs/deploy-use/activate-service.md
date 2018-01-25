@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 75c0bf83c84cb8b5d2116b05dbf2def790562b4e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: e8fede85cddc44318ce93497a9ac454c689673d3
+ms.sourcegitcommit: c3d57b175a4e7b5e136f7183c837fa08e7ac982e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/17/2017
 
 Po aktywowaniu usługi Azure Rights Management dla usługi Azure Information Protection dla Twojego dzierżawcy Twoja organizacja może rozpocząć chronienie istotnych danych za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji. Administratorzy mogą również zarządzać chronionymi plikami i wiadomościami e-mail organizacji oraz monitorować je. Należy włączyć tę usługę przed rozpoczęciem korzystania z funkcji zarządzania prawami do informacji (IRM, information rights management) w pakiecie Office, programie SharePoint i programie Exchange oraz przystąpieniem do ochrony wszelkich poufnych plików.
 
-Jeśli chcesz dowiedzieć się więcej na temat usługi Azure Rights Management przed jej aktywowaniem — na przykład o tym, jakie problemy biznesowe rozwiązuje, jak działa i jakie są jej przykładowe, typowe zastosowania — zobacz [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
+Jeśli chcesz dowiedzieć się więcej na temat usługi Azure Rights Management przed jej aktywowaniem — na przykład, jakie problemy biznesowe rozwiązuje go, niektóre typowe zastosowania i jak działa — zobacz [co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
 
 > [!IMPORTANT]
 > Usługa Azure Rights Management nie zostanie aktywowany, jeśli masz Active Directory Rights Management Services (AD RMS) wdrożone w Twojej organizacji. [Więcej informacji](prepare-environment-adrms.md)
