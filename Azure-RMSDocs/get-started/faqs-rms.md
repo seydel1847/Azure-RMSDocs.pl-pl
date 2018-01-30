@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d2f88d35550b47a4f73e87eeca9ecd6309a3c73e
-ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
+ms.openlocfilehash: 776293c73b5ca63d0bfd409d8330bfe8295c792e
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -95,7 +95,7 @@ Jeśli dokument był chroniony za pomocą etykiety lub szablonu, jest niepotrzeb
 
 - Gdy użytkownik ma już dostęp do dokumentu, zmiany zostaną zastosowane po ich [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) wygaśnie. Włącz ponownie ochronę dokumentu, tylko wtedy, gdy nie może czekać na licencji użytkowania wygaśnie. Efektywne ponownej ochrony tworzy nową wersję dokumentu, a w związku z tym nowej licencji użytkowania dla użytkownika.
 
-Jeśli skonfigurowano już grupę dla wymaganych uprawnień, można zmienić członkostwo grupy, aby dołączyć lub wykluczyć użytkowników i nie istnieje potrzeba aby zmienić etykietę lub szablonu. Może być małe opóźnienia, aby zmiany zaczęły obowiązywać, ponieważ członkostwo w grupie jest [pamięci podręcznej](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) przez usługę Azure Rights Management.
+Jeśli skonfigurowano już grupę dla wymaganych uprawnień, można zmienić członkostwo grupy, aby dołączyć lub wykluczyć użytkowników i nie istnieje potrzeba aby zmienić etykietę lub szablonu. Może być małe opóźnienia, aby zmiany zaczęły obowiązywać, ponieważ członkostwo w grupie jest [pamięci podręcznej](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection) przez usługę Azure Rights Management.
 
 Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie można zmienić uprawnień dla istniejącego dokumentu. Należy ponownie ochrony dokumentu oraz określić wszyscy użytkownicy i wszystkie prawa użytkowania, które są wymagane do tej nowej wersji dokumentu. Włączyć ją ponownie chroniony dokument, musi mieć prawo użytkowania Pełna kontrola.
 

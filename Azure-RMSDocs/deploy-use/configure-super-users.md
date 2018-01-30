@@ -4,7 +4,7 @@ description: "Uzyskaj informacje o funkcji superużytkowników usługi Azure Rig
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c7bbd1f6244c3624cd4b1e32a98e71b5779004
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: a134d6619f67bfc3d26cb1726fe07e8ffca403cd
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
@@ -40,7 +40,7 @@ Domyślnie funkcja superużytkowników nie jest włączona i żadni użytkownicy
 
 Jeśli musisz ręcznie włączyć funkcję superużytkowników, użyj polecenia cmdlet środowiska PowerShell [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature), a następnie przypisz użytkowników (lub konta usługi) według potrzeb, używając poleceń cmdlet [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) lub [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) i dodaj użytkowników (lub inne grupy) według potrzeb do tej grupy. 
 
-Chociaż użycie grupy dla superużytkowników jest łatwiejsze w zarządzaniu, należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management). Jeśli więc trzeba przypisać nowego użytkownika jako superużytkownika w celu natychmiastowego odszyfrowania zawartości, dodaj tego użytkownika za pomocą polecenia Add-AadrmSuperUser, zamiast dodawać go do istniejącej grupy skonfigurowanej przy użyciu polecenia Set-AadrmSuperUserGroup.
+Chociaż użycie grupy dla superużytkowników jest łatwiejsze w zarządzaniu, należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli więc trzeba przypisać nowego użytkownika jako superużytkownika w celu natychmiastowego odszyfrowania zawartości, dodaj tego użytkownika za pomocą polecenia Add-AadrmSuperUser, zamiast dodawać go do istniejącej grupy skonfigurowanej przy użyciu polecenia Set-AadrmSuperUserGroup.
 
 > [!NOTE]
 > Jeśli jeszcze nie masz zainstalowanego modułu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).

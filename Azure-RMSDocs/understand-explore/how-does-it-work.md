@@ -4,7 +4,7 @@ description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1a7075287eebe2c68534de95d01cef455ebe63b5
-ms.sourcegitcommit: f185b1d742c345a465927f88e606413421fe1150
+ms.openlocfilehash: eb65f99d1a0fbc2c9aaee25a585561bd2511b723
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
@@ -124,7 +124,7 @@ Gdy użytkownik chce skorzystać z chronionego dokumentu, na kliencie RMS tworzo
 
 ![Użycie dokumentu RMS — krok 1, użytkownik jest uwierzytelniany i pobiera listę praw](../media/AzRMS_documentconsumption1.png)
 
-**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. W celu identyfikacji użytkownika atrybut ProxyAddresses usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management). Jeśli konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi Azure AD, w zamian jest używana wartość UserPrincipalName usługi Azure AD.
+**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. W celu identyfikacji użytkownika atrybut ProxyAddresses usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi Azure AD, w zamian jest używana wartość UserPrincipalName usługi Azure AD.
 
 ![Użycie dokumentu RMS — krok 2, licencja użytkowania jest zwracana do klienta](../media/AzRMS_documentconsumption2.png)
 

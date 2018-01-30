@@ -4,7 +4,7 @@ description: "Zasoby dla administratorów, w tym informacje na temat nowych wers
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/26/2018
+ms.date: 01/29/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 815f20a1640a6e433c5e28d0180930e29e75d0ad
-ms.sourcegitcommit: c3534be992877ace564c165395c5b0fccc8c9bfd
+ms.openlocfilehash: 05d0907dd32816a485c3c2e14102f7af0f6f778e
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/29/2018
@@ -51,15 +51,26 @@ Pozostali klienci powinni użyć kanałów pomocy technicznej podanych w poniżs
 
 |Subskrypcja|Instrukcje|
 |----------------|---------------|
-|Usługa Azure Information Protection (wersja autonomiczna)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
-|Usługa Azure Information Protection i subskrypcja usługi Office 365<br /><br />Usługa Azure Rights Management z subskrypcją usługi Office 365|Na stronie [Kontaktowanie się z pomocą techniczną usługi Office 365 dla firm — Pomoc dla administratorów](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) można znaleźć numery telefonów i opcje kontaktu z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365.|
-|Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)|Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
-|Azure Information Protection z Microsoft 365 Enterprise|Użyj [kanałów pomocy usługi Office 365](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).|
+|Usługa Azure Information Protection (wersja autonomiczna)|1. Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />2. Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />3. Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
+|Usługa Azure Information Protection i subskrypcja usługi Office 365<br /><br />Usługa Azure Rights Management z subskrypcją usługi Office 365|Zobacz [się z pomocą techniczną dla produktów firm — pomoc administratora](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) informacji o sposobie się z pomocą techniczną przy użyciu portalu administracyjnego usługi Office 365 oraz numerów telefonów kontaktu.|
+|Usługa Azure Information Protection z usługą Enterprise Mobility + Security (EMS)|1. Wybierz pozycję **Nowe żądanie obsługi** w menu [Pomoc i obsługa techniczna](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) w witrynie Azure Portal.<br /><br />2. Po wyświetleniu monitu wybierz w bloku **Podstawowe** wartość **Problem techniczny** dla opcji **Typ problemu** i wartość **Information Protection** dla usługi. <br /><br />3. Ponadto upewnij się, że jest wybrana co najmniej jedna z następujących opcji:<br /><br />- **Subskrypcja z pomocą techniczną w pakiecie**: Ta opcja jest wyświetlana w przypadku subskrypcji platformy Azure w wersji płatnej lub wersji próbnej.<br /><br /> - **Pomoc techniczna - uwzględnione**: Ta opcja jest wyświetlana, jeśli nie masz subskrypcji platformy Azure.|
+|Azure Information Protection z Microsoft 365 Enterprise|Użyj [kanałów pomocy usługi Office 365](https://support.office.com/en-us/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).|
 
 Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicielem firmy Microsoft. 
 
 
 ### <a name="self-help"></a>Samodzielna pomoc
+
+Spróbuj **bot pomocy usługi Azure Information Protection**, obecnie w wersji beta:
+
+- Zobacz, jeśli bot zna odpowiedzi na pytanie, ponieważ jest został poproszony przed.
+- Poproś bot do wyszukania dokumentów dla Ciebie.
+- Poproś bot ułatwiające Otwórz bilet pomocy technicznej dla Ciebie.
+- Typ **opinii** aby poinformować nas, czy ten robot jest przydatne.
+
+
+<iframe width="560" height="475" src="https://webchat.botframework.com/embed/AIPformalBOT?s=SwZOTnCyj6w.cwA.zYE.Wdf87z08R7NHjtaev84v0nLC0urEfQJ2_5bUgvtIR9Q"></iframe>
+
 
 Filmy wideo na żądanie:
 

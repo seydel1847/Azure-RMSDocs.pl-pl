@@ -4,7 +4,7 @@ description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e790b669298bb40b3397150d1b2c3ed7e26c10ab
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: c7aa1c3aa18a246457c00a5a61c6004e55f76b4b
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Konfigurowanie zasad usługi Azure Information Protection odnoszących się do konkretnych użytkowników przy użyciu zasad o określonym zakresie
 
@@ -28,10 +28,9 @@ Wszyscy użytkownicy uzyskują dostęp do globalnych zasad, które obejmują tyt
 
 Zasady o określonym zakresie, podobnie jak etykiety, są uporządkowane w portalu Azure. Jeśli użytkownik jest skonfigurowany pod kątem kilku zakresów, zasada mająca zastosowanie w jego przypadku zostanie obliczona przed pobraniem. Zostanie zastosowane ostatnie ustawienie zasad według porządku. Etykiety, które widzi użytkownik, to etykiety z globalnych zasad oraz wszelkie dodatkowe etykiety należące do zasad o określonym zakresie, które mają zastosowanie do użytkownika. 
 
-Jako że zasada o określonym zakresie zawsze dziedziczy etykiety i ustawienia z zasad globalnych, podczas tworzenia lub edytowania zasady o określonym zakresie wyświetlane są etykiety z zasad globalnych. Podczas edycji zasady o określonym zakresie nie można edytować etykiet z zasad globalnych. Można jednak dodać etykiety podrzędne do etykiet odziedziczonych z zasad globalnych.
+Jako że zasada o określonym zakresie zawsze dziedziczy etykiety i ustawienia z zasad globalnych, podczas tworzenia lub edytowania zasady o określonym zakresie wyświetlane są etykiety z zasad globalnych. Podczas edycji zasady o określonym zakresie nie można edytować etykiet z zasad globalnych. Można jednak dodać sublabels do dziedziczonej etykiety.
 
-Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie **Poufne**, to etykietę tę widzą wszyscy użytkownicy. Nie można jej usunąć ani zmienić jej kolejności z użyciem zasad o określonym zakresie. Można jednak utworzyć dla działu marketingu zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję **Poufne \ Promocje**. Można również utworzyć dla działu sprzedaży kolejne zasady o określonym zakresie, które dodadzą nową etykietę podrzędną do etykiety Poufne, dzięki czemu użytkownicy zobaczą pozycję **Poufne \ Partnerzy**. Każda etykieta podrzędna może następnie zostać skonfigurowana pod kątem różnych ustawień; etykieta podrzędna będzie widoczna tylko dla użytkowników w poszczególnych działach.
-
+Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie **Poufne**, to etykietę tę widzą wszyscy użytkownicy. Nie można jej usunąć ani zmienić jej kolejności z użyciem zasad o określonym zakresie. Ale warto utworzyć zakresie zasady dla działu marketingu, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ promocji**. Tworzymy inne zasady zakresami dla działu sprzedaży, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ partnerów**. Każdy sublabel może być skonfigurowany pod kątem różnych ustawień i sublabel jest widoczna tylko dla użytkowników w odpowiednich działów.
 
 Aby skonfigurować zasadę usługi Azure Information Protection o określonym zakresie:
 
@@ -44,6 +43,8 @@ Aby skonfigurować zasadę usługi Azure Information Protection o określonym za
 3. Na **usługi Azure Information Protection — zasady zakresie** bloku, wybierz opcję **dodać nową zasadę**. Zostanie wyświetlony **zasad** bloku, który wyświetla z istniejących globalne zasady, gdzie można teraz skonfigurować nowej, zakres zasad.
 
 4. Określ nazwę i opis zasady, które będą widoczne wyłącznie dla administratorów w portalu Azure. Nazwa musi być unikatowa dla dzierżawy. Następnie wybierz **Określ, które użytkownicy/grupy uzyskać te zasady**, a w kolejnych blokach Wyszukaj i wybierz użytkowników i grupy dla tej zasady. Etykiety i ustawienia skonfigurowane w ramach tych zasad o określonym zakresie zostaną zastosowane tylko do tych użytkowników.
+    
+    Ze względu na wydajność jest członkostwa grupy dla zasad w zakresie [pamięci podręcznej](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection).
 
 5. Teraz można utworzyć nowe etykiety lub skonfigurować ustawienia zasad o określonym zakresie. Zasady globalne są zawsze stosowane w pierwszej kolejności, można je jednak uzupełnić z użyciem nowych etykiet, które zastąpią ustawienia globalne. Na przykład w przypadku, gdy zasady globalne nie uwzględniają etykiety domyślnej, można skonfigurować różne etykiety domyślne dla różnych zasad o określonych zakresach odwołujących się do poszczególnych działów.
 

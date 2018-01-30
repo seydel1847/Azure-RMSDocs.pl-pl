@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 1b16d3ab7923592a011b6be39586a02a378f39f0
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: d42a561e61991a6299e83c5054ceb2ed8151ebf6
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -37,11 +37,11 @@ Gdy dokument lub wiadomość e-mail są chronione przez usługę Rights Manageme
 Aby uzyskać więcej informacji na temat ochrony usługi Azure Rights Management i jej działania, zobacz [co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
 
 > [!IMPORTANT]
-> Aby skonfigurować etykietę w celu zastosowania tej ochrony, usługi Azure Rights Management musi być aktywowany dla Twojej organizacji. Jeśli jeszcze nie zostało to zrobione, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
+> Aby skonfigurować etykietę w celu zastosowania tej ochrony, usługi Azure Rights Management musi być aktywowany dla Twojej organizacji. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
-Gdy etykieta dotyczy ochrony, chronionego dokumentu nie nadaje się do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące chronionych plików: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur, zbieranie elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP). 
+Gdy etykieta dotyczy ochrony, chronionego dokumentu nie nadaje się do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące funkcje dla plików chronionych: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur, zbieranie elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP). 
 
-Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), zanim użytkownicy mogą stosować etykiet w programie Outlook, aby chronić swoje wiadomości e-mail. Jednak dopóki program Exchange nie zostanie skonfigurowany dla usługi IRM, nie będzie można uzyskać pełnej funkcjonalności podczas korzystania z ochrony usługi Azure Rights Management w połączeniu z programem Exchange. Na przykład użytkownicy nie będą mogli wyświetlać chronionych wiadomości e-mail w telefonach komórkowych lub w programie Outlook w sieci web chronionych wiadomości e-mail nie można indeksować wyszukiwania i nie można skonfigurować usługi Exchange Online DLP dla ochrony usługi Rights Management. Informacje o konfigurowaniu programu Exchange do obsługi tych dodatkowych scenariuszy można znaleźć w następujących zasobach:
+Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), zanim użytkownicy mogą stosować etykiet w programie Outlook, aby chronić swoje wiadomości e-mail. Jednak aż do programu Exchange jest skonfigurowany dla usługi IRM, nie otrzymasz pełną funkcjonalnością stosowania ochrony usługi Azure Rights Management z programem Exchange. Na przykład użytkownicy nie mogą wyświetlać chronionych wiadomości e-mail w telefonach komórkowych lub w programie Outlook w sieci web chronionych wiadomości e-mail nie można indeksować wyszukiwania i nie można skonfigurować usługi Exchange Online DLP dla ochrony usługi Rights Management. Informacje o konfigurowaniu programu Exchange do obsługi tych dodatkowych scenariuszy można znaleźć w następujących zasobach:
 
 - Exchange Online — zobacz temat [Usługa Exchange Online: konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
 
@@ -81,7 +81,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
     
     - **Ustaw uprawnienia**: Aby zdefiniować nowe ustawienia ochrony w tym portalu.
     
-    - **Uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**: pozwala określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook lub Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie będzie działać, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
+    - **Uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**: pozwala określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook lub Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
         
         Jeśli wybierzesz opcję dla programu Outlook: Etykieta jest wyświetlana w programie Outlook i efekty, gdy użytkownicy mają zastosowanie etykiety jest taka sama jak opcja nie przekazuj.
         
@@ -99,28 +99,28 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
     
     - Wybierz **wybierz z listy** dodać wszystkich użytkowników w organizacji lub przeglądanie katalogu.
         
-        Użytkownicy lub grupy musi mieć adres e-mail. W środowisku produkcyjnym, to jest prawie zawsze można, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
+        Użytkownicy lub grupy musi mieć adres e-mail. W środowisku produkcyjnym użytkowników i grup prawie zawsze mieć adres e-mail, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
         
-    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Alternatywnie można określić wszystkich użytkowników w innej organizacji, wprowadzając nazwę domeny z tej organizacji. Nie należy umieszczać nazwy domen z serwisów społecznościowych, które obsługują osobiste konta e-mail. Na przykład nie należy wprowadzać **gmail.com**, **hotmail.com**, lub **outlook.com**.
+    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Lub użyj tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając nazwę domeny z tej organizacji. Musisz wprowadzić tylko nazwę domeny, nie należy wprowadzać nazwy domen z serwisów społecznościowych, które obsługują osobiste konta e-mail. Na przykład nie należy wprowadzać **gmail.com**, **hotmail.com**, lub **outlook.com**.
         
     >[!NOTE]
     >Jeśli adres e-mail zmieni się po wybraniu użytkownika lub grupy, zobacz [zagadnienia w przypadku zmiany adresów e-mail](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) sekcji planowania dokumentacji.
     
-    Najlepszym rozwiązaniem wykorzystywanie grup zamiast użytkowników. Ta stratetegy przechowuje konfigurację prostszy i zmniejsza prawdopodobieństwo, że trzeba zaktualizować konfiguracji etykiety później, a następnie zacznij ponownie chronić zawartość. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management ). 
+    Najlepszym rozwiązaniem wykorzystywanie grup zamiast użytkowników. Ta strategia przechowuje konfigurację prostszy i zmniejsza prawdopodobieństwo, że trzeba zaktualizować konfiguracji etykiety później, a następnie zacznij ponownie chronić zawartość. Jednak w przypadku wprowadzania zmian w grupie należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). 
     
     Po określeniu pierwszy zestaw użytkowników i grup, wybierz uprawnienia, aby udzielić tych użytkowników i grup. Aby uzyskać więcej informacji o uprawnieniach, które możesz wybrać, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md). Jednak aplikacje, które obsługują tę ochronę mogą różnić się w zakresie sposobu wdrażania tych uprawnień. Należy zapoznać się z ich dokumentacją i samodzielnie przeprowadzić testy z użyciem aplikacji wykorzystywanych przez użytkowników, aby sprawdzić zachowanie szablonów przed ich wdrożeniem dla użytkowników.
     
     W razie potrzeby można teraz dodać drugi zestaw użytkowników i grup z prawami użytkowania. Powtórz określono wszyscy użytkownicy i grupy z odpowiednimi uprawnieniami.
 
     >[!TIP]
-    >Rozważ dodanie **Kopiuj i Wyodrębnij zawartość** uprawnień niestandardowych i ich nadanie administratorom odzyskiwania danych lub personel w innych ról, których obowiązki odzyskiwania informacji. W razie potrzeby Ci użytkownicy mogą następnie usuń ochronę plików i wiadomości e-mail, które będą chronione przy użyciu tej etykiety lub szablonu. Możliwość usunięcia ochrony na poziomie uprawnień do dokumentu lub wiadomości e-mail, zapewnia bardziej szczegółową kontrolę niż [funkcja superużytkowników](configure-super-users.md).
+    >Rozważ dodanie **Kopiuj i Wyodrębnij zawartość** uprawnień niestandardowych oraz uprawnienie to można przyznać administratorom odzyskiwania danych i personelu w innych ról, których obowiązki odzyskiwania informacji. W razie potrzeby Ci użytkownicy mogą następnie usuń ochronę plików i wiadomości e-mail, które będą chronione przy użyciu tej etykiety lub szablonu. Możliwość usunięcia ochrony na poziomie uprawnień do dokumentu lub wiadomości e-mail, zapewnia bardziej szczegółową kontrolę niż [funkcja superużytkowników](configure-super-users.md).
     
     Dla wszystkich użytkowników i grup, które można określić na **ochrony** bloku teraz Sprawdź, czy chcesz wprowadzić zmiany w następujących ustawieniach. Pamiętaj, że te ustawienia, tak jak uprawnienia, nie mają zastosowania do [wystawcy ani właściciela w usłudze Rights Management](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner), ani żadnego przypisanego przez Ciebie [administratora](configure-super-users.md).
     
     |Ustawienie|Więcej informacji|Zalecane ustawienie
     |-----------|--------------------|--------------------|
-    |**wygaśnięcie zawartości**|Dla danego szablonu określ datę lub liczbę dni, po upływie których określeni użytkownicy nie będą mogli otwierać dokumentów ani wiadomości e-mail chronionych za pomocą tego szablonu. Można określić datę lub wskazać liczbę dni, jakie muszą minąć, począwszy od momentu objęcia zawartości ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|**Zawartość nigdy nie wygasa**, jeśli zawartość nie ma określonych wymagań związanych z czasem.|
-    |**Zezwalaj na dostęp offline**|Użyj tego ustawienia, aby zrównoważyć wszelkie wymagania dotyczące zabezpieczeń (w tym dostęp po odwołaniu) za pomocą umożliwienia wybranym użytkownikom otwierania chronionej zawartości bez połączenia internetowego.<br /><br />Jeśli można określić, że zawartość nie jest dostępna bez połączenia z Internetem lub zawartość jest dostępna tylko dla określonej liczby dni, po osiągnięciu progu, można ponownie uwierzytelnić tych użytkowników i ich dostęp jest rejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, przed otwarciem dokumentu lub wiadomości e-mail tym użytkownikom będzie wyświetlany monit o zalogowanie się.<br /><br />Oprócz ponowne uwierzytelnianie jest ponowna ocena zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć inny poziom dostępu do tego samego dokumentu lub tej samej wiadomości e-mail po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do danej zawartości. Może to oznaczać brak dostępu, jeśli dokument został [odwołany](../rms-client/client-track-revoke.md).|W zależności od tego, na ile poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Nigdy** dla bardzo poufnych danych biznesowych, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. To zalecenie stawia zabezpieczenia ponad elastycznością i zapewnia, że w przypadku odwołania dokumentu wszyscy autoryzowani użytkownicy natychmiast utracą możliwość otwierania tego dokumentu. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
+    |**wygaśnięcie zawartości**|Zdefiniuj datę lub liczbę dni, gdy dokumentów lub wiadomości e-mail, które są chronione przez te ustawienia nie należy otwierać dla wybranych użytkowników. Można określić datę lub wskazać liczbę dni, jakie muszą minąć, począwszy od momentu objęcia zawartości ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|**Zawartość nigdy nie wygasa**, jeśli zawartość nie ma określonych wymagań związanych z czasem.|
+    |**Zezwalaj na dostęp offline**|Użyj tego ustawienia, aby zrównoważyć wszelkie wymagania dotyczące zabezpieczeń (w tym dostęp po odwołaniu) za pomocą umożliwienia wybranym użytkownikom otwierania chronionej zawartości bez połączenia internetowego.<br /><br />Jeśli można określić, że zawartość nie jest dostępna bez połączenia z Internetem lub zawartość jest dostępna tylko dla określonej liczby dni, po osiągnięciu progu, można ponownie uwierzytelnić tych użytkowników i ich dostęp jest rejestrowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, przed otwarciem dokumentu lub wiadomości e-mail tym użytkownikom będzie wyświetlany monit o zalogowanie się.<br /><br />Oprócz ponowne uwierzytelnianie jest ponownie oceniane zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć inny poziom dostępu do tego samego dokumentu lub tej samej wiadomości e-mail po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do danej zawartości. Może to oznaczać brak dostępu, jeśli dokument został [odwołany](../rms-client/client-track-revoke.md).|W zależności od tego, na ile poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Nigdy** dla bardzo poufnych danych biznesowych, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. To zalecenie stawia zabezpieczenia ponad elastycznością i zapewnia, że w przypadku odwołania dokumentu wszyscy autoryzowani użytkownicy natychmiast utracą możliwość otwierania tego dokumentu. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
     
     Po zakończeniu konfigurowania uprawnień, kliknij przycisk **OK**. 
     
@@ -130,15 +130,15 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
     
     W przypadku wybrania **szablon dla działu**, lub jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment):
     
-    - Użytkownicy, którzy są poza skonfigurowanym zasięgiem szablonu lub są wyłączeni ze stosowania ochrony usługi Azure Rights Management, będą również widzieć etykietę, ale nie będą mogli jej zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
+    - Użytkownicy, którzy są poza skonfigurowanym zakresie szablonu lub które są wykluczone z zastosowania ochrony usługi Azure Rights Management nadal wyświetlany etykiety, ale nie można go zastosować. Jeśli wybiorą etykietę, zobaczą następujący komunikat: **Usługa Azure Information Protection nie może zastosować tej etykiety. Jeśli problem będzie nadal występować, skontaktuj się z administratorem.**
         
         Należy pamiętać, że wszystkie opublikowane szablony są zawsze wyświetlane, nawet jeśli konfigurujesz zakresie zasad. Na przykład konfigurujesz zasady o określonym zakresie dla grupy Marketing. Szablony, które można wybrać nie są ograniczone do szablonów, które należą do grupy Marketing zakresu i można wybrać szablon dla działu, którego nie można użyć wybranych użytkowników. W celu ułatwienia konfiguracji i zminimalizowania potrzeby rozwiązywania problemów należy wziąć pod uwagę nadanie szablonowi dla działu nazwy zgodnej z etykietą w Twoich zasadach o określonym zakresie. 
 
-10. W przypadku wybrania **HYOK (AD RMS)**, wybierz opcję **zestawu AD RMS szablonów szczegóły** lub **uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**, a następnie określ adres URL licencjonowania usług AD RMS klaster.
+10. W przypadku wybrania **HYOK (AD RMS)**, wybierz opcję **zestawu AD RMS szablonów szczegóły** lub **uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**. Następnie należy określić adres URL licencjonowania klastra usług AD RMS.
     
     Aby uzyskać instrukcje określić szablon identyfikator GUID i adres URL licencjonowania, zobacz [lokalizowanie informacji używanych do określania ochrony usług AD RMS z etykietą usługi Azure Information Protection](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label).
     
-    Opcja uprawnienia zdefiniowane przez użytkownika umożliwia użytkownikom określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook (ustawienie domyślne) lub programu Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie będzie działać, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
+    Opcja uprawnienia zdefiniowane przez użytkownika umożliwia użytkownikom określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook (ustawienie domyślne) lub programu Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
     
     Jeśli wybierzesz opcję dla programu Outlook: Etykieta jest wyświetlana w programie Outlook i efekty, gdy użytkownicy mają zastosowanie etykiety jest taka sama jak opcja nie przekazuj.
     
@@ -160,7 +160,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
 
 ## <a name="example-configurations"></a>Przykładowe konfiguracje
 
-**Wszyscy pracownicy** i **odbiorców tylko** etykiet podrzędnych z **poufne** i **wysokiej poufne** etykiety z [domyślne zasady](configure-policy-default.md) zawierają przykłady sposobu konfigurowania etykiety, które mają zastosowanie ochrony. Umożliwia także następujące przykłady ułatwiające konfigurowanie ochrony dla różnych scenariuszy. 
+**Wszyscy pracownicy** i **odbiorców tylko** sublabels z **poufne** i **wysokiej poufne** etykiety z [domyślne zasady](configure-policy-default.md) zawierają przykłady sposobu konfigurowania etykiety, które mają zastosowanie ochrony. Umożliwia także następujące przykłady ułatwiające konfigurowanie ochrony dla różnych scenariuszy. 
 
 Dla każdego przykładzie, na Twojej \< *nazwę etykiety*> bloku, wybierz opcję **Chroń** , a następnie wybierz **ochrony** otworzyć  **Ochrona** bloku.
 
@@ -168,13 +168,13 @@ Dla każdego przykładzie, na Twojej \< *nazwę etykiety*> bloku, wybierz opcję
 
 Etykieta jest dostępna tylko w programie Outlook i jest odpowiednia w przypadku usługi Exchange Online jest skonfigurowany dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Poinstruować użytkowników, aby wybrać tę etykietę, w przypadku konieczności wysłania chronioną wiadomość e-mail do osoby za pomocą konta usługi Gmail (lub inne konta e-mail spoza organizacji). 
 
-Użytkownicy, wpisz adres e-mail usługi Gmail w **do** pola.  Następnie w ich wybierz etykietę, a opcja nie przekazuj jest automatycznie dodawany do wiadomości e-mail, tak aby odbiorców nie może przekazać lub wydrukować go, skopiować z niej, zapisać załączników lub zapisać pod inną nazwą. 
+Użytkownicy, wpisz adres e-mail usługi Gmail w **do** pola.  Następnie w ich wybierz etykietę, a opcja nie przekazuj jest automatycznie dodawany do wiadomości e-mail. Wynik jest, że adresatów nie może przesłać wiadomości e-mail, wydrukować go, skopiować z niej, lub zapisywanie załączników lub zapisać wiadomość e-mail z inną nazwą. 
 
 1. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
 2. Wybierz **uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**.
 
-3. Upewnij się, że wybrano następujące opcje: **w programie Outlook nie przesyłaj dalej zastosować**.
+3. Upewnij się, że jest zaznaczona Poniższa opcja: **w programie Outlook nie przesyłaj dalej zastosować**.
 
 4. Jeśli zaznaczone, wyczyść następująca opcja: **w, Word, Excel, PowerPoint i Eksploratora plików Monituj użytkownika o uprawnienia niestandardowe**.
 
@@ -189,7 +189,7 @@ Etykieta nie jest odpowiedni dla wiadomości e-mail.
 
 1. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
-2. Upewnij się, że **ustawić uprawnienia** jest wybrany, a następnie wybierz **dodać uprawnienia**.
+2. Upewnij się, że **ustawić uprawnienia** opcja jest wybrany, a następnie wybierz **dodać uprawnienia**.
 
 3. Na **dodać uprawnienia** bloku, wybierz opcję **wprowadź szczegóły**.
 
@@ -222,15 +222,15 @@ Nowi użytkownicy, które można dodać będzie w stanie otwarte dokumenty i wia
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Przykład 4: Etykieta chronioną wiadomość e-mail, obsługujący mniej restrykcyjnych uprawnień niż nie przesyłaj dalej
 
-Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik. Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, ta etykieta nie powinna być używana w przypadku dokumentów tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik. Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
 
-Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego samego użytkowników określonych dla tej konfiguracji etykiety. Ponieważ użytkownicy mogą należeć do grupy i mieć więcej niż jeden adres e-mail, adresu e-mail, dlatego nie ma dokładnie odpowiadać adres e-mail, który określisz uprawnienia, ale jest to najprostszy sposób, aby upewnić się, że odbiorcy będą autoryzację. Aby uzyskać więcej informacji na temat jak użytkownicy są uprawnieni do uprawnień, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md). 
+Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego samego użytkowników określonych dla tej konfiguracji etykiety. Ponieważ użytkownicy mogą należeć do grupy i mieć więcej niż jeden adres e-mail, adresu e-mail, dlatego nie ma zgodny z adresem e-mail określ uprawnienia. Jednak określenie taki sam adres e-mail jest najprostszym sposobem, aby upewnić się, że odbiorcy będą pomyślnie uprawnienia. Aby uzyskać więcej informacji na temat jak użytkownicy są uprawnieni do uprawnień, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md). 
 
 1. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
 2. Upewnij się, że **ustawić uprawnienia** jest zaznaczone i wybierz **dodać uprawnienia**.
 
-3. Na **dodać uprawnienia** bloku, aby udzielić uprawnień użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie, lub wybierz  **Przeglądanie katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD.
+3. Na **dodać uprawnienia** bloku: Aby udzielić uprawnień dla użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie, lub wybierz  **Przeglądanie katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych lub jeśli wolisz wpisz adres e-mail, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD.
     
     Powtórz ten krok w celu określenia dodatkowych użytkowników, którzy powinni mieć te same uprawnienia.
 
