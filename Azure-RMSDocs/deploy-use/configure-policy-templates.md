@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f69a163566a9654ee6286c4bf9ca4d018e8f8db5
-ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
+ms.openlocfilehash: 671d1d5d706225fcd5c680ddc8687aa889b59b59
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -76,12 +76,9 @@ Szablony, które zostaną zarchiwizowane wyświetlane jako niedostępny w **usł
 
 Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, upewnij się, że masz świadomość następujących zmian i zagadnienia. Z powodu zmiany implementacji poniżej jest szczególnie ważne, jeśli wcześniej zarządzane szablonów w klasycznym portalu Azure.
 
-- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby można dodawać lub usuwać poszczególne prawa użytkowania za pomocą poleceń cmdlet programu PowerShell [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition).
-    
-    - Usunięto opcję **Zapisz jako, eksportuj** (nazwa pospolita). W portalu Azure nie można ręcznie określić tego prawa użytkowania, ale jest ono uwzględnione w prawie użytkowania Pełna kontrola, które może zostać dodane w razie potrzeby.
+- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby możesz można dodawać i usuwać prawa użytkowania poszczególnych przy użyciu portalu Azure. Lub użyj programu PowerShell z [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet.
     
     - Opcja **Zezwalaj na makra** (nazwa pospolita) jest automatycznie dodawana. To prawo użytkowania jest wymagane przez pasek usługi Azure Information Protection w aplikacji pakietu Office.
-    
 
 - Ustawienia **Opublikowane** i **Zarchiwizowane** są wyświetlane odpowiednio jako **Włączone**: **Włączone** i **Włączone**: **Wyłączone** w bloku **Etykiety**. Dla szablonów, które chcesz zachować, ale nie być widoczna dla użytkowników lub usług, należy ustawić te szablony na **włączone**: **poza**.
 
@@ -89,9 +86,9 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     
     Można teraz usunąć szablon przy użyciu programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet. Umożliwia także tego polecenia cmdlet programu PowerShell dla szablonów, które nie są konwertowane na etykiety. Jednak jeśli usuniesz szablon, który został użyty do ochrony zawartości tej zawartości można będzie niemożliwe. Usuń szablony tylko wtedy, gdy masz pewność, że nie zostały użyte do ochrony dokumentów lub wiadomości e-mail w środowisku produkcyjnym. Ze względów warto rozważyć najpierw wyeksportowanie szablonu jako kopii zapasowej za pomocą [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) polecenia cmdlet. 
 
-- Wyświetlanie szablonów dla działów (szablony, których zakres jest skonfigurowany) w ramach globalnych zasad. Obecnie edytowanie i zapisanie szablonu dla działu powoduje usunięcie konfiguracji zakresu. Odpowiednikiem szablonu o określonym zakresie w zasadach usługi Azure Information Protection jest [zasada z określonym zakresem](configure-policy-scope.md). W przypadku konwersji szablonu na etykietę możesz wybrać istniejący zakres.
+- Wyświetl szablony dla działów (szablony, które są skonfigurowane dla zakresu) w ramach globalnych zasad. Obecnie edytowanie i zapisanie szablonu dla działu powoduje usunięcie konfiguracji zakresu. Odpowiednikiem szablonu o określonym zakresie w zasadach usługi Azure Information Protection jest [zasada z określonym zakresem](configure-policy-scope.md). W przypadku konwersji szablonu na etykietę możesz wybrać istniejący zakres.
     
-    Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić ustawienia zgodności aplikacji przy użyciu programu PowerShell i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
+    Ponadto obecnie nie można ustawić zgodności aplikacji dla szablonu dla działu. Jeśli to konieczne, możesz ustawić ustawienia zgodności aplikacji przy użyciu [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet i *EnableInLegacyApps* parametru.
 
 - Podczas konwersji lub łączenia szablonu z etykietą, może on już używany przez innych etykiet. Ponadto ten szablon nie jest już wyświetlany w **szablony ochrony** sekcji. 
 
@@ -113,7 +110,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
     
     - Jeśli posiadasz subskrypcję obejmującą wyłącznie ochronę: wyświetl szablony jako etykiety.
 
-4. Wybierz szablon, a następnie w bloku **Etykieta** możesz w razie potrzeby zmienić nazwę i opis szablonu, edytując pola **Nazwa etykiety** i **Opis**. Następnie wybierz opcję **ochrony** , który ma wartość **Azure (klucz w chmurze)**, aby otworzyć **ochrony** bloku.
+4. Wybierz szablon, a następnie na **etykiety** bloku, można zmienić nazwę i opis szablonu w razie potrzeby, edytując **Nazwa wyświetlana etykieta** i **opis**. Następnie wybierz opcję **ochrony** , który ma wartość **Azure (klucz w chmurze)**, aby otworzyć **ochrony** bloku.
 
 5. W bloku **Ochrona** można zmienić uprawnienia, wygaśnięcia zawartości i ustawienia dostępu w trybie offline. Aby uzyskać więcej informacji o konfiguracji ustawień ochrony, zobacz temat [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](configure-policy-protection.md)
     

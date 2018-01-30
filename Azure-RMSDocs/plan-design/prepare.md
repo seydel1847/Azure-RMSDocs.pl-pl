@@ -4,7 +4,7 @@ description: "Sprawdź, czy masz konta użytkowników i grup, których potrzebuj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f29aec107c344489ae38afabfa79129fd3fa000
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: de06bc202ff60e6850ba217fe7ded79c0753d925
+ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -161,7 +161,7 @@ Następnie sprawdź, czy kolumna **ProxyAddresses** została wypełniona. Jeśli
 
 Jeśli kolumna **ProxyAddresses** nie została wypełniona, do autoryzacji użytkownika w usłudze Azure Rights Management będzie używana wartość **UserPrincipalName**.
 
-Na przykład:
+Przykład:
 
 |Nazwa wyświetlana|UserPrincipalName|ProxyAddresses
 |-------------------|-----------------|--------------------|
@@ -211,11 +211,11 @@ Jeśli nie możesz tego zrobić, użytkownika lub grupy z nowej wiadomości e-ma
 
 Pamiętaj, że zmiana adresu e-mail grupy występuje rzadko, więc jeśli przypisujesz prawa użytkowania do grupy, a nie do poszczególnych użytkowników, zmiana adresu e-mail użytkownika nie ma znaczenia. W tym scenariuszu prawa użytkowania są przypisywane do adresu e-mail grupy, a nie do adresów e-mail poszczególnych użytkowników. Jest to najbardziej prawdopodobna (i zalecana) metoda, której administrator może użyć w celu skonfigurowania praw użytkowania chroniących dokumenty i wiadomości e-mail. Użytkownicy mogą jednak przeważnie przypisywać poszczególnym osobom uprawnienia niestandardowe. Ponieważ nie zawsze wiadomo, czy konto użytkownika lub grupy było używane do udzielania dostępu, najbezpieczniej jest zawsze dodać stary adres e-mail jako drugi adres e-mail.
 
-## <a name="group-membership-caching-by-azure-rights-management"></a>Buforowanie członkostwa w grupach przez usługę Azure Rights Management
+## <a name="group-membership-caching-by-azure-information-protection"></a>Grupy członkostwa w pamięci podręcznej przez usługę Azure Information Protection
 
-Ze względu na wydajność członkostwo w grupach jest buforowane przez usługę Azure Rights Management. Oznacza to, że wszelkie zmiany członkostwa w grupach w usłudze Azure AD mogą zacząć obowiązywać po upływie nawet trzech godzin, jeśli te grupy są używane przez usługę Azure Rights Management. Okres ten może ulec zmianie. 
+Ze względu na wydajność usługi Azure Information Protection buforuje członkostwa w grupie. Oznacza to, że wszelkie zmiany członkostwa w grupie w usłudze Azure AD może potrwać do trzech godzin zaczęły obowiązywać, gdy te grupy są używane przez usługi Azure Information Protection i tym okresie mogą ulec zmianie. 
 
-Pamiętaj, aby uwzględnić to opóźnienie w przypadku wszelkich zmian i testów przeprowadzanych podczas używania grup usługi Azure Rights Management. Czynności te mogą dotyczyć na przykład przypisywania praw użytkowania lub konfigurowania usługi Azure Rights Management.
+Pamiętaj, aby uwzględnić to opóźnienie podczas zmiany lub testowania wykonaj dzięki użyciu grup przyznania prawa użytkowania lub konfigurowanie usługi Azure Rights Management lub podczas konfigurowania zakresu zasad.
 
 
 ## <a name="next-steps"></a>Następne kroki
