@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a8cfa6a5baf1661495fc8b485ac0a6535c22233d
-ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
+ms.openlocfilehash: 3e4aabc3c571ca132327748935ab3aeafa002db0
+ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
@@ -42,11 +42,11 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
 
     -   Jeśli chcesz później skonfigurować łącznik z komputera 32-bitowego, pobierz również plik RMSConnectorAdminToolSetup_x86.exe.
 
-    -   Jeśli chcesz użyć narzędzia konfiguracji serwera w odniesieniu do łącznika usługi RMS, aby zautomatyzować konfigurację ustawień rejestru lokalnych serwerów, pobierz również plik GenConnectorConfig.ps1.
+    -   Jeśli chcesz użyć narzędzia do konfiguracji serwera dla łącznika usługi RMS, aby zautomatyzować konfigurację ustawień rejestru na serwerach lokalnych, Pobierz również plik GenConnectorConfig.ps1.
 
 3.  Na komputerze, na którym chcesz zainstalować łącznik usługi RMS, uruchom plik **RMSConnectorSetup.exe** z uprawnieniami administratora.
 
-4.  Na stronie powitalnej strony Instalator łącznika usługi Microsoft Rights Management wybierz pozycję **Zainstaluj łącznik usługi Microsoft Rights Management na komputerze**, a następnie kliknij przycisk **Dalej**.
+4.  Na stronie powitalnej Instalatora łącznika zarządzania prawami firmy Microsoft, wybierz **łącznik instalacji usługi Microsoft Rights Management na komputerze**, a następnie kliknij przycisk **dalej**.
 
 5.  Przeczytaj i zaakceptuj postanowienia licencyjne łącznika usługi RMS, a następnie kliknij przycisk **Dalej**.
 
@@ -57,7 +57,7 @@ Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia 
 
 To konto nie może wymagać uwierzytelniania wieloskładnikowego (MFA), ponieważ narzędzie administracyjne usługi Microsoft Rights Management nie obsługuje metody MFA dla tego konta. 
 
-Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Jeśli dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawiera żadnego z tych znaków specjalnych, lub zresetuj hasło, tak aby nie zawierało ono żadnego z tych znaków specjalnych.
+Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Ten scenariusz dotyczy hasła, albo użyj innego konta z hasłem, które nie ma żadnej z tych znaków specjalnych lub zresetować hasło, więc nie ma żadnego z następujących znaków specjalnych.
 
 Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Jeśli na przykład możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. Jeśli nie, komunikat o błędzie: **próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
 
