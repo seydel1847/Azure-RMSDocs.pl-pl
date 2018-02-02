@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05d0907dd32816a485c3c2e14102f7af0f6f778e
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 0e6b68d6bc8d511854d9bbca4ab2bd8dbe2445dd
+ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -61,16 +61,7 @@ Aby uzyskać dodatkowe opcje pomocy technicznej, skontaktuj się z przedstawicie
 
 ### <a name="self-help"></a>Samodzielna pomoc
 
-Spróbuj **bot pomocy usługi Azure Information Protection**, obecnie w wersji beta:
-
-- Zobacz, jeśli bot zna odpowiedzi na pytanie, ponieważ jest został poproszony przed.
-- Poproś bot do wyszukania dokumentów dla Ciebie.
-- Poproś bot ułatwiające Otwórz bilet pomocy technicznej dla Ciebie.
-- Typ **opinii** aby poinformować nas, czy ten robot jest przydatne.
-
-
-<iframe width="560" height="475" src="https://webchat.botframework.com/embed/AIPformalBOT?s=SwZOTnCyj6w.cwA.zYE.Wdf87z08R7NHjtaev84v0nLC0urEfQJ2_5bUgvtIR9Q"></iframe>
-
+Spróbuj [bot pomocy usługi Azure Information Protection](help-bot.md), obecnie w wersji beta.
 
 Filmy wideo na żądanie:
 

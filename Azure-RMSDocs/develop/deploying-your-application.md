@@ -14,11 +14,11 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 9275bce1e56107648905875c19b2e4e78a05afe6
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 300fb1d14bc4eda93b0e40ffbd9e6c2329c88517
+ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
@@ -88,7 +88,7 @@ Istnieje możliwość interaktywnego instalowania klienta RMS Client 2.1 poprzez
 -   Pobierz instalator klienta RMS Client 2.1
 -   Zintegrowanie uruchomienia instalatora klienta RMS Client 2.1 z instalatorem aplikacji
 
-Przykładem integracji klienta RMS Client 2.1 z aplikacją użytkownika jest pakiet [Rights Protected Folder Explorer](https://technet.microsoft.com/en-us/library/rights-protected-folder-explorer(v=ws.10).aspx). Spróbuj go zainstalować, aby zrozumieć zastosowane podejście.
+Przykładem integracji klienta RMS Client 2.1 z aplikacją użytkownika jest pakiet [Rights Protected Folder Explorer](https://technet.microsoft.com/library/rights-protected-folder-explorer(v=ws.10).aspx). Spróbuj go zainstalować, aby zrozumieć zastosowane podejście.
 
 ### <a name="make-rms-client-21-a-pre-requisite-for-your-application-install"></a>Ustawianie klienta RMS Client 2.1 jako warunek wstępny dla instalacji aplikacji
 
@@ -111,18 +111,18 @@ Aby użytkownik końcowy mógł korzystać z usług Information Protection, nale
 > Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../get-started/requirements-subscriptions.md).
 > Aby uzyskać więcej informacji o współpracy z usługami Azure RMS, zobacz [Umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
--   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
+-   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
 -   Upewnij się, że wdrożenie aplikacji z obsługą praw zawiera kontrolę warunków wstępnych dla tego wyboru usługi.
--   Aby uzyskać informacje o własnym testowaniu i wykorzystaniu usługi online przez użytkownika końcowego, zobacz temat TechNet [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx).
+-   Aby uzyskać informacje o własnym testowaniu i wykorzystaniu usługi online przez użytkownika końcowego, zobacz temat TechNet [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx).
 
-Należy również użyć tego przewodnika, aby skonfigurować aplikację — [Konfigurowanie aplikacji usługi programu na potrzeby logowania do usługi Azure Active Directory](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
+Należy również użyć tego przewodnika, aby skonfigurować aplikację — [Konfigurowanie aplikacji usługi programu na potrzeby logowania do usługi Azure Active Directory](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
 
 Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z usługi RMS na potrzeby usług Azure Rights Management, zobacz temat [Umożliwianie współpracy aplikacji z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-* [Asystent logowania w witrynie Microsoft Online Services](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
-* [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
+* [Asystent logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177)
+* [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
 * [Umożliwianie współpracy aplikacji z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
