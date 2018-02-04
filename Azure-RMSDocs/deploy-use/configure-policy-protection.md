@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2017
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: d42a561e61991a6299e83c5054ceb2ed8151ebf6
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: e53b0f1508762001b58d60a68a5d606c87dd7c1c
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -101,7 +101,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
         
         Użytkownicy lub grupy musi mieć adres e-mail. W środowisku produkcyjnym użytkowników i grup prawie zawsze mieć adres e-mail, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
         
-    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Lub użyj tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając nazwę domeny z tej organizacji. Musisz wprowadzić tylko nazwę domeny, nie należy wprowadzać nazwy domen z serwisów społecznościowych, które obsługują osobiste konta e-mail. Na przykład nie należy wprowadzać **gmail.com**, **hotmail.com**, lub **outlook.com**.
+    - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Lub użyj tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając dowolną nazwę domeny z tej organizacji. Można także użyć tej opcji dla dostawców sieci społecznościowych, wprowadzając odpowiednią nazwę domeny, takie jak **gmail.com**, **hotmail.com**, lub **outlook.com**.
         
     >[!NOTE]
     >Jeśli adres e-mail zmieni się po wybraniu użytkownika lub grupy, zobacz [zagadnienia w przypadku zmiany adresów e-mail](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) sekcji planowania dokumentacji.
@@ -222,7 +222,9 @@ Nowi użytkownicy, które można dodać będzie w stanie otwarte dokumenty i wia
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Przykład 4: Etykieta chronioną wiadomość e-mail, obsługujący mniej restrykcyjnych uprawnień niż nie przesyłaj dalej
 
-Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik. Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik.
+
+Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
 
 Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego samego użytkowników określonych dla tej konfiguracji etykiety. Ponieważ użytkownicy mogą należeć do grupy i mieć więcej niż jeden adres e-mail, adresu e-mail, dlatego nie ma zgodny z adresem e-mail określ uprawnienia. Jednak określenie taki sam adres e-mail jest najprostszym sposobem, aby upewnić się, że odbiorcy będą pomyślnie uprawnienia. Aby uzyskać więcej informacji na temat jak użytkownicy są uprawnieni do uprawnień, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md). 
 
@@ -230,7 +232,7 @@ Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego
     
 2. Upewnij się, że **ustawić uprawnienia** jest zaznaczone i wybierz **dodać uprawnienia**.
 
-3. Na **dodać uprawnienia** bloku: Aby udzielić uprawnień dla użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie, lub wybierz  **Przeglądanie katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych lub jeśli wolisz wpisz adres e-mail, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD.
+3. Na **dodać uprawnienia** bloku: Aby udzielić uprawnień dla użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie, lub wybierz  **Przeglądanie katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych lub jeśli wolisz wpisz adres e-mail, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD lub nazwę domeny.
     
     Powtórz ten krok w celu określenia dodatkowych użytkowników, którzy powinni mieć te same uprawnienia.
 
