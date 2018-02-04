@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -52,6 +52,15 @@ Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **
 
 Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
 
+## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" Strony powitalnej
+
+Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i użytkownik otwiera Word, Excel, PowerPoint lub programie Outlook **Gratulacje!** zostanie wyświetlona strona krótkie instrukcje jak nowy pasek Information Protection umożliwia wybranie etykiety. Edytując rejestr, można pominąć tej strony.
+
+Znajdź nazwę wartości następujących i Ustaw dane wartości **0**:
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+
+
 ## <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
 W środowisku produkcyjnym użytkownik nie ma zazwyczaj potrzeby logowania się jako inny użytkownik w przypadku korzystania z klienta usługi Azure Information Protection. Jednak jako administrator możesz potrzebować możliwości zalogowania się jako inny użytkownik podczas fazy testowania. 
@@ -73,6 +82,7 @@ Dodatkowo:
 - Jeśli korzystasz z logowania jednokrotnego, musisz wylogować się z systemu Windows i po wprowadzeniu zmian w rejestrze zalogować się przy użyciu innego konta użytkownika. Klient usługi Azure Information Protection przeprowadzi automatyczne uwierzytelnienie przy użyciu aktualnie zalogowanego konta użytkownika.
 
 - Można użyć **Zresetuj ustawienia** opcję **Pomoc i opinie** Wyloguj się i usuń aktualnie pobrany zasady usługi Azure Information Protection.
+
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Wymusić trybu tylko do ochrony, gdy Twoja organizacja ma kombinacji licencji
 
@@ -236,7 +246,7 @@ W tym celu:
     
     **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
     
-    Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Na przykład:
+    Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Przykład:
     
     ![Przykładowa reguła transportu usługi Exchange Online, która ustawia nagłówek wiadomości dla określonej etykiety usługi Azure Information Protection](../media/exchange-rule-for-message-header.png)
 

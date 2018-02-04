@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 7dfd670df89b652f8ff55452198d8483b55c59cd
-ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
+ms.openlocfilehash: 79a021fa9ffe271d1497a3fc7a42a9ee4c91c007
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -159,6 +159,46 @@ W jego domyślne ustawienie skanera ma jeden czasu i w trybie tylko do raportowa
 
 Ponieważ został skonfigurowany harmonogram wykonywania, gdy skaner działał jego sposób za pomocą wszystkich plików, uruchomi nowy cykl tak, aby nowe i zmienione pliki są wykrywane.
 
+
+## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Jak pliki są skanowane przez skaner usługi Azure Information Protection
+
+Skaner automatycznie pomija pliki, które są [wykluczone z klasyfikacji i ochrony](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), takich jak pliki wykonywalne i system plików.
+
+Następnie skanera używa iFilter systemu Windows w celu skanowania następujących typów plików. W przypadku tych typów plików dokumentu będzie oznaczone za pomocą warunków określonych dla etykiet.
+
+|Typ aplikacji|Typ pliku|
+|--------------------------------|-------------------------------------|
+|Word|.docx; .docm; .dotm; .dotx|
+|Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
+|PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
+|Projekt|.mpp; .mpt|
+|PDF|pdf|
+|Tekst|.txt; .xml; .csv|
+
+
+Ponadto dla pozostałych typów plików, skaner stosuje etykiety domyślnej w ramach zasad usługi Azure Information Protection.
+
+|Typ aplikacji|Typ pliku|
+|--------------------------------|-------------------------------------|
+|Projekt|.mpp; .mpt|
+|Wydawca|.pub|
+|Visio|.vsd; .vdw; .vst; .vss; .vsdx; .vsdm; .vssx; .vssm; .vstx; .vstm|
+|XPS|.xps; .oxps; .dwfx|
+|SolidWorks|.sldprt; .slddrw; .sldasm|
+|JPEG |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
+|Png |.png|
+|plik GIF|.gif|
+|Mapy bitowej|.bmp; .giff|
+|TIFF|.tif; .tiff|
+|Photoshop|.psdv|
+|DigitalNegative|.dng|
+|Pfile|pfile|
+
+Należy pamiętać, że po etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku zmienia się na pfile. Ponadto plik staje się tylko do odczytu, dopóki nie jest otwarty przez autoryzowanego użytkownika i zapisany w jego formatu macierzystego. Pliki tekstowe i obrazy można zmieniać ich rozszerzenia nazwy pliku i stają się tylko do odczytu. Jeśli nie chcesz, aby ten problem, można zapobiec pliki, których określonego pliku, typu z chroniony. Na przykład zapobiec plik PDF chroniony plik PDF (ppdf) i zapobiec pliku txt chroniony (ptxt) plik tekstowy.
+
+Aby uzyskać więcej informacji na temat różnych poziomów ochrony dla różnych typów plików i sposobu kontrolowania zachowania ochrony, zobacz [typy obsługiwane w przypadku ochrony plików](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) w przewodniku administratora.
+
+
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Jeśli pliki są ponownie skanowana przez skaner usługi Azure Information Protection
 
 Dla pierwszego cyklu skanowania skaner sprawdza wszystkie pliki w magazynie danych skonfigurowanego i następnie dla kolejnych skanowania tylko nowe lub zmodyfikowane pliki są kontrolowane. 
@@ -213,21 +253,21 @@ Inne czynniki wpływające na wydajność skanera:
 
 Inne polecenia cmdlet skanera pozwalają zmienić konta usługi i bazy danych dla skanera, Pobierz bieżące ustawienia skanera i odinstaluj usługę skanera. Skaner używa następujących poleceń cmdlet:
 
-- [Dodaj AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository)
+- [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository)
 
 - [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)
 
 - [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/Get-AIPScannerRepository)
 
-- [AIPScanner instalacji](/powershell/module/azureinformationprotection/Install-AIPScanner)
+- [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
 
-- [Usuń AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
+- [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
 
-- [Zestaw AIPScanner](/powershell/module/azureinformationprotection/Set-AIPScanner)
+- [Set-AIPScanner](/powershell/module/azureinformationprotection/Set-AIPScanner)
 
-- [Zestaw AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
+- [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
 
-- [Odinstaluj AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
+- [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 
 
 ## <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń
