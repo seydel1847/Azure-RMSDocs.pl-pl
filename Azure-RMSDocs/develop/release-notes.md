@@ -205,7 +205,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Pytanie**: jak uzyskać nowego organizacyjnego dzierżawcę, aby wypróbować zestaw SDK i przykładowe aplikacje?
 
-**A**: Aby poprosić o poświadczenia dla organizacji testowych usługi Azure AD RMS, Wyślij wiadomość e-mail do < rmcstbeta@microsoft.com >.
+**A**: Aby poprosić o poświadczenia dla organizacji testowych usługi Azure AD RMS, Wyślij wiadomość e-mail do <rmcstbeta@microsoft.com>.
 
 **Pytanie**: w niniejszej dokumentacji nie widzę żadnych informacji o hierarchii testowej. Dlaczego?
 

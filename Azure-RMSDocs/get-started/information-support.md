@@ -24,7 +24,7 @@ ms.lasthandoff: 02/01/2018
 
 Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usługi Azure Information Protection w organizacji.
 
-|W tym celu...|.. .korzystać to:|
+|W tym celu...|...korzystać to:|
 |----------------|---------------|
 |Najczęściej używane znajdują się w dokumentacji|Odczyt stron 5:<br /><br /> - [Co to jest Azure Information Protection?](../understand-explore/what-is-information-protection.md)<br /> - [Co to jest usługa Azure Rights Management?](../understand-explore/what-is-azure-rms.md)<br />- [Wprowadzenie — Efektywnych aplikacji dla systemu iOS i Android](../rms-client/mobile-app-get-started.md) <br />- [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)<br />- [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements.md)|
 |Skontaktuj się z zespołu produktu i innymi użytkownikami|Odwiedź stronę [witryny usługi Yammer](https://www.yammer.com/AskIPTeam) usługi Azure Information Protection.|

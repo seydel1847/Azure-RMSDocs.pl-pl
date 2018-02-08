@@ -148,7 +148,7 @@ Klienta usługi RMS można ograniczyć tak, aby używał tylko określonych zauf
     
     REG_SZ:*\<adres_url_lub_nazwa_hosta >*
     
-    **Wartość:** wartości ciągu w tej lokalizacji klucza rejestru mogą być albo format nazwy domeny DNS (na przykład **adrms.contoso.com**) lub pełnych adresów URL zaufanych serwerów usług AD RMS (na przykład **https:// adrms.contoso.com**). Jeśli określony adres URL rozpoczyna się od **https://**, klient usługi RMS używa protokołu SSL lub TLS do kontaktowania się z określonym serwerem usług AD RMS.
+    **Wartość:** wartości ciągu w tej lokalizacji klucza rejestru mogą być albo format nazwy domeny DNS (na przykład **adrms.contoso.com**) lub pełnych adresów URL zaufanych serwerów usług AD RMS (na przykład **https://adrms.contoso.com**). Jeśli określony adres URL rozpoczyna się od **https://**, klient usługi RMS używa protokołu SSL lub TLS do kontaktowania się z określonym serwerem usług AD RMS.
 
 ## <a name="rms-service-discovery"></a>Odnajdowanie usługi RMS
 Odnajdowanie usługi RMS umożliwia klientowi usługi RMS sprawdzanie usługi lub serwera RMS, z którym będzie nawiązywana komunikacja, przed rozpoczęciem ochrony zawartości. Odnajdowanie usługi również może się zdarzyć, gdy klient usługi RMS korzysta z zawartości chronionej, ale ten typ odnajdywania jest mniej prawdopodobne, ponieważ zasady dołączone do zawartości zawiera preferowanego serwera usługi RMS lub usługi. Tylko wtedy, gdy zakończy się tych źródeł klient uruchomi odnajdowanie usługi.
