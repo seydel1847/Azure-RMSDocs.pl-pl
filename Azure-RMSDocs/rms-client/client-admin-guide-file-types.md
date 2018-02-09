@@ -4,7 +4,7 @@ description: "Informacje techniczne na temat obsługiwanych typów plików, rozs
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a6a1c477a06c695a2183ad379c22492ea59d4bee
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: e1adb23e00b447d5633b37b310e3b9ce96d0becf
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwanych przez klienta usługi Azure Information Protection
 
@@ -48,7 +48,7 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
 
 - **Microsoft XPS**: .xps .oxps
 
-- **Obrazy**: jpg, jpe, JPEG, .jif, jfif, .jfi. PNG, tif, TIFF
+- **Images**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi. png, .tif, .tiff
 
 - **Autodesk Design Review 2013**: .dwfx
 
@@ -92,7 +92,7 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
     
     - Aby chronić pliki: rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
     
-    - Aby otworzyć te pliki w podglądzie usługi Azure Information Protection: maksymalny rozmiar pliku obsługiwane w przypadku plików tekstowych (ptxt i pxml) jest 20 MB. Na podstawie obrazu plików i plików PDF maksymalny rozmiar pliku jest ograniczona tylko przez pamięci.
+    - Aby otworzyć te pliki w podglądzie usługi Azure Information Protection: Jeśli nie masz bieżąca wersja klienta usługi Azure Information Protection, maksymalny rozmiar pliku obsługiwane w przypadku plików tekstowych (ptxt i pxml) jest 20 MB. Na podstawie obrazu plików i plików PDF maksymalny rozmiar pliku jest ograniczona tylko przez pamięci.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 

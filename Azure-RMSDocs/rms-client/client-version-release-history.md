@@ -4,7 +4,7 @@ description: "Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20ee380a48fa8fb303a5c71f43df17b8740b0cb4
-ms.sourcegitcommit: fc9a4487e2a0bc3481a814c7c308939868d52db9
+ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -43,9 +43,63 @@ Skorzystaj z poniższych informacji, aby zobaczyć nowe lub zmienione w obsługi
 
 ## <a name="versions-later-than-110560"></a>Wersjach starszych niż 1.10.56.0
 
-Jeśli masz wersję klienta, która jest nowsza niż 1.10.56.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny. 
+Jeśli masz wersję klienta, która jest nowsza niż 1.10.56.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
 
-Co to jest nowe lub zostały zmienione w bieżącej wersji preview od ostatniej wersji GA klienta dla **szczegóły** sekcji na [stronę pobierania](https://www.microsoft.com/en-us/download/details.aspx?id=53018). 
+Bieżąca wersja preview to **1.21.203.0** i ma następujące zmiany od bieżącej wersji GA klienta.
+
+Ta wersja zawiera MSIPC wersji 1.0.3403.1224 klienta usługi RMS.
+
+**Nowe funkcje**:
+
+- Skaner usługi Azure Information Protection: moduł programu PowerShell, który znajduje się klient ma nowe polecenia cmdlet do instalowania i konfigurowania skanera, dzięki czemu odnajdywania, klasyfikowania i ochrona plików w sieci lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki](../deploy-use/deploy-aip-scanner.md). 
+
+- W przypadku aplikacji pakietu Office klasyfikacji automatycznej i zalecanej stale działa w tle, zamiast uruchamiania przy zapisywaniu dokumentów. Ta zmiana zachowania można teraz stosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
+
+- Można teraz ustawić różne oznaczenia wizualne dla programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym i określ typ aplikacji. [Więcej informacji](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- Obsługa [ustawienie zasad](../deploy-use/configure-policy-settings.md), **wyświetlane na pasku Information Protection w aplikacji pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** na Wstążce.
+
+- Nowy klient Zaawansowane ustawienia, aby program Outlook nie ma zastosowania etykiety domyślnej, który jest skonfigurowany w ramach zasad usługi Azure Information Protection. Zamiast tego programu Outlook można stosować różne domyślne etykiety lub bez etykiety. [Więcej informacji](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
+
+- W przypadku aplikacji pakietu Office podczas określania uprawnień niestandardowych, można teraz Przeglądaj i wybierz opcję użytkownicy z ikonę książki adresowej. Wybranie tej opcji powoduje parzystości środowiska użytkownika podczas określania uprawnień niestandardowych za pomocą Eksploratora plików.
+
+- Obsługa metodę uwierzytelniania całkowicie nieinterakcyjnym, kont usług, które używają programu PowerShell i nie można udzielić **logować się lokalnie** prawo. Ta metoda uwierzytelniania wymaga użycia nowego *tokenu* parametr o [AIPAuthentication zestaw](/powershell/module/azureinformationprotection/Set-AIPAuthentication), i uruchom skrypt programu PowerShell jako zadania. [Więcej informacji](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+
+- Nowy parametr *IntegratedAuth* dla [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication). Ten parametr obsługuje tryb serwera usług AD RMS, który jest wymagany dla usług AD RMS do obsługi infrastruktury klasyfikacji plików systemu Windows Server.
+
+
+**Poprawki**:
+
+Poprawki dla stabilności i dla konkretnych scenariuszy, które obejmują:
+
+- W przypadku wersji pakietu Office 16.0.8628.2010 i nowsze (kliknij instalacja), pasek usługi Azure Information Protection obsługuje najnowsze opcje wyświetlania monitor, które wcześniej może spowodować na pasku Wyświetlanie poza aplikacje pakietu Office.
+
+- Po dwóch organizacji przy użyciu usługi Azure Information Protection udostępnić etykietą dokumentów i wiadomości e-mail, własne etykiety są zachowywane i nie zastępuje etykiety Twojej organizacji.
+
+- Obsługę komórek w programie Excel, które zawierają odsyłacze, które wcześniej spowodowany uszkodzeniem tekst w komórce.
+
+- Obsługa zmiany Motywy pakietu Office i kompozycji systemu Windows, które uprzednio spowodowały program Excel nie zawiera żadnych danych po motyw został zmieniony.
+
+- Teraz plików mających rozszerzenie nazwy pliku .xml mogą być sprawdzane pod kątem zalecaną lub automatyczną klasyfikację.
+
+- Podgląd komunikatów o teraz otworzyć tekstowych plików chronionych (ptxt i pxml) większe niż 20 MB. 
+
+- Zapobiegaj wiszące Outlook stosowania przypomnienia programu Outlook.
+
+- Ładowania początkowego pomyślnie Office 64-bitowy, dzięki czemu możesz chronić dokumenty i wiadomości e-mail.
+
+- Można teraz skonfigurować etykietę uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksplorator plików i również użyć Zaawansowane ustawienia klienta dotyczącego Ukryj opcje uprawnienia niestandardowe. [Więcej informacji](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
+
+- Wrócić do czcionki Calibri skonfigurowanie znaczniki wizualne w zasadach usługi Azure Information Protection dla nazwy czcionki, który nie jest zainstalowany na komputerze klienckim.
+
+- Zapobiegaj Office awarii po uaktualnieniu klienta Azure Information Protection.
+
+- W przypadku aplikacji pakietu Office zwiększenia zużycia pamięcią i wydajnością.
+
+- Po skonfigurowaniu etykiety dla użytkownika zdefiniowane uprawnienia, i ochrony HYOK (AD RMS), nie jest już ochrony niepoprawnie korzysta z usługi Azure Rights Management.
+
+- Bardziej spójne środowisko zarządzania sublabels już dziedziczyć oznaczenia wizualne i ustawienia ochrony ich etykiecie nadrzędnej.
+
 
 ## <a name="version-110560"></a>Wersja 1.10.56.0
 
