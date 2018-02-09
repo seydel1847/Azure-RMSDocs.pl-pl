@@ -4,17 +4,17 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
-ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
+ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -87,6 +87,38 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
 - `${Event.DateTime}` — data i godzina ustawienia wybranej etykiety. Na przykład: 16.08.2016 13:30
 
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety **Ogólne** tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Classification: Ogólne**.
+
+## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawienie różnych oznaczenia wizualne dla programu Word, Excel, PowerPoint i Outlook
+
+To ustawienie jest obecnie w wersji zapoznawczej i wymaga wersja klienta usługi Azure Information Protection.
+
+Domyślnie oznaczeń wizualnych, które określisz są stosowane przez program Word, Excel, PowerPoint i Outlook. Jednak można określić oznaczenia wizualne dla typu aplikacji pakietu Office przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym, a Określ typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić tych wartości, która jest wymagana, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
+
+Należy użyć następującej składni:
+
+    ${If.App.<application type>}<your visual markings text> ${If.End}
+
+Ta składnia w tej instrukcji jest rozróżniana wielkość liter.
+
+Przykłady:
+
+- **Ustaw tekst nagłówka dla tylko dokumenty programu Word:**
+    
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+    
+    W Word tylko nagłówki dokumentu etykiety stosuje tekst nagłówka "poufne jest ten dokument programu Word". Tekst nagłówka nie jest stosowany do innych aplikacjach pakietu Office.
+
+- **Ustawić tekst stopki dla programów Word, Excel i Outlook, a tekst stopki różnych dla programu PowerPoint.**
+    
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+    
+    W programach Word, Excel i Outlook etykiety stosuje się tekst stopki "tej zawartości jest poufne". W programie PowerPoint etykiety stosuje się tekst stopki "poufne jest tej prezentacji."
+
+- **Ustawianie tekstu znaku wodnego określonych dla programów Word i PowerPoint, a następnie znaku wodnego tekstu dla programu Word, Excel i PowerPoint:**
+    
+    `${If.App.WP}This content is ${If.End}Confidential`
+    
+    W programach Word i PointPoint etykiety stosuje tekstu znaku wodnego "tej zawartości jest poufne". W programie Excel etykiety stosuje tekstu znaku wodnego "Poufne". W programie Outlook etykiety nie tekstu znaku wodnego, znaki wodne jako oznaczenia wizualne nie są obsługiwane dla programu Outlook.
 
 ### <a name="setting-the-font-name"></a>Ustawienie nazwy czcionki
 

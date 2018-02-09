@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aee9a9f665d3aa0a0e8a8c568f3abbd044469fc7
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Moduł AzureInformationProtection zawiera wszystkie usługi Rights Management po
 |[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|W przypadku folderu udostępnionego wskazuje wszystkie pliki z określoną etykietą.|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|W przypadku folderu udostępnionego sprawdź zawartość pliku, a następnie automatycznie nadaj etykiety plikom bez etykiet, zgodnie z warunkami określonymi przez użytkownika.|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|W przypadku folderu udostępnionego dodaje określoną etykietę do wszystkich plików, które nie mają etykiety.|
-|[Zestaw AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|Oznaczanie plików nieinteraktywnie, na przykład za pomocą skryptu uruchamianego zgodnie z harmonogramem.|
+|[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|Oznaczanie plików nieinteraktywnie, na przykład za pomocą skryptu uruchamianego zgodnie z harmonogramem.|
 
 
 Ponadto [skanera usługi Azure Information Protection](../deploy-use/deploy-aip-scanner.md) (obecnie w podglądzie) używa poleceń cmdlet, aby zainstalować i skonfigurować usługę w systemie Windows Server. Skaner to pozwala następnie odnajdywania, klasyfikowania i chronić pliki na następującą liczbę magazynów danych.
@@ -461,7 +461,11 @@ Domyślnie polecenia cmdlet służące do etykietowania są uruchamiane we włas
 > [!NOTE]
 > Jeśli używasz [zakres zasad](../deploy-use/configure-policy-scope.md), pamiętaj, że może być konieczne dodanie tego konta do zasad zakresami.
 
-Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Określ nazwę konta użytkownika i hasło utworzone dla instalacji nienadzorowanej użytkownika. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. Po wygaśnięciu ważności tokenu uruchom polecenie cmdlet ponownie, aby uzyskać nowy token:
+Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Określ nazwę konta użytkownika i hasło utworzone dla instalacji nienadzorowanej użytkownika. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. 
+
+Dla konta użytkownika można było do logowania interakcyjnego to po raz pierwszy, konto musi mieć **logować się lokalnie** prawo. To prawo jest standardowe dla kont użytkowników, ale zasadami w firmie może Zabroń używania tej konfiguracji dla kont usług. Jeśli tak jest, możesz uruchomić Set-AIPAuthentication z *tokenu* parametru, więc uwierzytelniania zostaje ukończona bez znaku w wierszu polecenia programu. Możesz uruchomić to polecenie jako zaplanowane zadanie i przydzielić kontu dolnym rogu **logowanie w trybie wsadowym**. Aby uzyskać więcej informacji zobacz następujące sekcje. 
+
+Jeśli token jest ważny, uruchom polecenie cmdlet ponownie, aby uzyskać nowy token.
 
 Po uruchomieniu tego polecenia cmdlet bez parametrów konto uzyskuje token dostępu, który jest ważny przez 90 dni lub do momentu wygaśnięcia ważności hasła.  
 
@@ -517,7 +521,85 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
 
 12. Ponownie **wymagane uprawnienia** bloku, wybierz opcję **udzielanie uprawnień**, kliknij przycisk **tak** do potwierdzenia, a następnie zamknij ten blok.
     
-Konfiguracja dwóch aplikacji została zakończona. Masz teraz wartości potrzebne do uruchomienia polecenia [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami.
+Teraz przeprowadzisz konfiguracji dwie aplikacje i masz wartości, które należy uruchomić [AIPAuthentication zestaw](/powershell/module/azureinformationprotection/set-aipauthentication) z parametrami *WebAppId*, *WebAppKey* i *NativeAppId*. Przykład:
+
+`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
+
+Uruchom to polecenie w kontekście konta, na którym będzie etykiety i nieinteraktywnie chronić dokumenty. Na przykład konto użytkownika skrypty programu PowerShell lub konta usługi, aby uruchomić skanera usługi Azure Information Protection.  
+
+Po uruchomieniu tego polecenia po raz pierwszy monit o zalogowanie się, które tworzy i bezpiecznie zapisuje token dostępu dla konta w % localappdata%\Microsoft\MSIP. Po tym początkowego logowania można etykiety i chronić pliki nieinteraktywnie na komputerze. Jeśli jednak użyć konta usługi do etykiety i ochronę plików i to konto usługi nie można zarejestrować interaktywnego, użyć zgodnie z instrukcjami w poniższej sekcji, aby konto usługi można uwierzytelnić przy użyciu tokenu.
+
+### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Określ i użyj parametru tokenu dla zestawu AIPAuthentication
+
+> [!NOTE]
+> Ta opcja jest dostępna w wersji zapoznawczej i wymaga bieżąca wersja klienta usługi Azure Information Protection.
+
+Użyj następujące dodatkowe czynności oraz instrukcje, aby uniknąć początkowej interakcyjnego logowania dla konta, które etykiety i chroni pliki. Zazwyczaj te dodatkowe kroki są wymagane tylko wtedy, gdy to konto nie można udzielić **logować się lokalnie** prawej strony, ale otrzymuje **logowanie w trybie wsadowym** prawo. Na przykład może to w przypadku konta usługi z systemem skanera usługi Azure Information Protection.
+
+1. Utwórz skrypt programu PowerShell na komputerze lokalnym.
+
+2. Uruchom zestaw-AIPAuthentication Uzyskaj token dostępu i skopiuj go do Schowka.
+
+2. Zmodyfikuj skrypt programu PowerShell, aby uwzględnić tokenu.
+
+3. Utwórz zadanie, które uruchamia skrypt programu PowerShell w kontekście konta usługi, który będzie etykiety i ochronę plików.
+
+4. Upewnij się, że token został zapisany dla konta usługi, a następnie usuń skrypt programu PowerShell.
+
+
+#### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>Krok 1: Utwórz skrypt programu PowerShell na komputerze lokalnym
+
+1. Na komputerze należy utworzyć nowy skrypt programu PowerShell o nazwie Aipauthentication.ps1.
+
+2. Skopiuj i wklej poniższe polecenie do skryptu:
+    
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+
+3. Korzystając z instrukcji w poprzedniej sekcji, zmodyfikuj to polecenie, określając własne wartości **WebAppId**, **WebAppkey**, i **NativeAppId** parametrów. W tej chwili nie ma wartość **tokenu** parametr, który określisz później. 
+    
+    Na przykład: `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
+    
+#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>Krok 2: Uruchom zestaw-AIPAuthentication do uzyskania tokenu dostępu i skopiować go do Schowka
+
+1. Otwórz sesję programu Windows PowerShell.
+
+2. Przy użyciu tej samej wartości jako określone w skrypcie, uruchom następujące polecenie:
+    
+        (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    
+    Na przykład: `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
+
+#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>Krok 3: Zmodyfikować skrypt programu PowerShell, aby dostarczyć token
+
+1. Skrypt programu PowerShell wprowadź wartość tokenu wklejając ciąg ze Schowka i Zapisz plik.
+
+2. Podpisz skrypt. Jeśli nie podpiszesz skryptu (bezpieczniejsza opcja), należy skonfigurować na komputerze, który uruchomi etykietowania poleceń programu Windows PowerShell. Na przykład Uruchom sesję programu Windows PowerShell z **Uruchom jako Administrator** i wpisz: `Set-ExecutionPolicy RemoteSigned`. Jednak taka konfiguracja pozwala na uruchomienie, gdy są one przechowywane na tym komputerze (mniej bezpieczna opcja) wszystkich niepodpisanych skryptów.
+    
+    Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) w bibliotece dokumentacji programu PowerShell.
+
+3. Skopiuj ten skrypt programu PowerShell na komputerze, na którym będzie etykiety i ochronę plików i usunięcia oryginał na komputerze. Na przykład skrypt programu PowerShell należy skopiować do C:\Scripts\Aipauthentication.ps1 na komputerze z systemem Windows Server.
+
+#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>Krok 4: Tworzenie zadania, które uruchamia skrypt programu PowerShell
+
+1. Upewnij się, że konto usługi, który będzie etykiety i ochronę plików ma **logowanie w trybie wsadowym** prawo.
+
+2. Na komputerze, który będzie etykiety i ochronę plików Otwórz Harmonogram zadań i Utwórz nowe zadanie. Konfigurowanie do uruchamiania jako konto usługi, która będzie etykiety i ochronę plików, a następnie skonfiguruj następujące wartości dla tego zadania **akcje**:
+    
+    - **Akcja**:`Start a program`
+    - **Program skryptu**:`Powershell.exe`
+    - **Dodaj argumenty (opcjonalnie)**:`-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+    
+    Dla argumentu wiersza należy określić własne ścieżkę i nazwę pliku, jeśli są różne w przykładzie.
+
+3. Ręcznie uruchom to zadanie.
+
+#### <a name="step-4-confirm-that-the-token-is-saved-and-delete-the-powershell-script"></a>Krok 4: Upewnij się, że token został zapisany i usunąć skrypt programu PowerShell.
+
+1. Upewnij się, że token są obecnie przechowywane w folderze %localappdata%\Microsoft\MSIP profilu konta usługi. Ta wartość jest chroniony przez konta usługi.
+
+2. Usuń skrypt programu PowerShell, który zawiera wartość tokenu (na przykład Aipauthentication.ps1).
+    
+    Opcjonalnie można usunąć zadania. Jeśli token wygaśnie, należy powtórzyć ten proces, w takiej sytuacji może być wygodniejsze pozostawić zadań skonfigurowany tak, aby była gotowa do ponownego uruchomienia podczas kopiowania za pośrednictwem programu PowerShell nowego skryptu przy użyciu nowej wartości tokenu.
 
 ## <a name="next-steps"></a>Następne kroki
 Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Przykład: 

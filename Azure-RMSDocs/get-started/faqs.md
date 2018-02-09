@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da0ba7876b1098671428e87117bed97c4f464071
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 23c2b24a830b6d1ab7e0712fc1d1d70056f5d736
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -96,7 +96,7 @@ Obecnie ma różnicy w ustawieniu [właściciela zarządzania prawami](../deploy
 
 - Infrastruktury klasyfikacji plików w systemie Windows Server: Ustawianie właściciela usługi Rights Management jako jednego konta dla wszystkich plików lub dynamiczne określanie właściciela zarządzania prawami dla każdego pliku. Aby ustawić dynamicznie właściciela zarządzania prawami, należy użyć **- OwnerMail [E-mail właściciela pliku źródłowego]** parametr i wartość. Ta konfiguracja pobiera adres e-mail użytkownika z usługi Active Directory przy użyciu nazwy konta użytkownika w pliku właściwości właściciela.
 
-- Skanera usługi Azure Information Protection: można ustawić właściciela zarządzania prawami jednego konta dla wszystkich plików, ale nie można ustawić dynamicznie właściciela zarządzania prawami dla każdego pliku. Aby ustawić konta, określ **- DefaultOwner** opcjonalny parametr dla [konfiguracji skanera](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration?view=azureipps#optional-parameters).
+- Skanera usługi Azure Information Protection: można ustawić właściciela zarządzania prawami jednego konta dla wszystkich plików w magazynie określone dane, ale nie można ustawić dynamicznie właściciela zarządzania prawami dla każdego pliku. Aby ustawić konta, określ **- DefaultOwner** parametr [profilu repozytorium danych](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
 
 Gdy skaner chroni pliki w witrynach programu SharePoint i bibliotek, właściciela zarządzania prawami dynamicznie ustawiono dla każdego pliku przy użyciu wartości autora programu SharePoint.
 
