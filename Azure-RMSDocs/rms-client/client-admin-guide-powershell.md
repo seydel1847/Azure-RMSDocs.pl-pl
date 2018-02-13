@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 33489f3d1b7b4d5e4b34b95ea5fd1f9641d0ff0c
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -24,9 +24,7 @@ ms.lasthandoff: 02/09/2018
 
 Polecenia programu PowerShell są instalowane automatycznie podczas instalowania klienta Azure Information Protection. Dzięki temu można zarządzać klientem przy użyciu poleceń, które można umieścić w skryptów do automatyzacji.
 
-Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **AzureInformationProtection**. Ten moduł zastępuje moduł RMSProtection instalowany razem z narzędziem RMS Protection Tool. Jeśli przed instalacją klienta usługi Azure Information Protection było już zainstalowane narzędzie RMS Protection Tool, moduł RMSProtection zostanie automatycznie odinstalowany.
-
-Moduł AzureInformationProtection zawiera wszystkie usługi Rights Management poleceń cmdlet udostępnianych przez narzędzie RMS Protection Tool. Istnieją nowe polecenia cmdlet, których usługa ochrony informacji Azure (Efektywnych) dla etykiety. Przykład:
+Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **AzureInformationProtection**. Ten moduł zawiera wszystkie usługi Rights Management poleceń cmdlet, które wcześniej znajdowały się w narzędzie RMS Protection Tool. Istnieją nowe polecenia cmdlet, których usługa ochrony informacji Azure (Efektywnych) dla etykiety. Przykład:
 
 |Polecenie cmdlet dotyczące etykietowania|Przykład użycia|
 |----------------|---------------|
@@ -42,7 +40,7 @@ Aby wyświetlić listę wszystkich poleceń cmdlet oraz odpowiednią dokumentacj
 
 Ten moduł instaluje się w lokalizacji **\ProgramFiles (x86)\Microsoft Azure Information Protection** i dodaje ten folder do zmiennej systemowej **PSModulePath**. Plik .dll tego modułu nosi nazwę **AIP.dll**.
 
-Podobnie jak w przypadku modułu RMSProtection, bieżąca wersja modułu AzureInformationProtection ma następujące ograniczenia:
+Bieżąca wersja modułu AzureInformationProtection ma następujące ograniczenia:
 
 - Można wyłączyć ochronę folderów osobistych programu Outlook (pliki pst), ale obecnie nie można objąć ochroną natywną tych plików ani innych plików kontenera za pomocą tego modułu PowerShell.
 

@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d7788b909da4219ae80475bac4bd26b2a2ec8da9
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 00b17536467e2990d807c3494c645fa8a559f241
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -129,7 +129,7 @@ Można znaleźć identyfikator GUID szablonu i licencjonowanie wartości adresu 
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji na temat tej funkcji oraz wskazówki dotyczące jej stosowania, zobacz wpis na blogu: [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/) (Usługa Azure Information Protection z rozwiązaniem HYOK — Hold Your Own Key).
+Aby uzyskać więcej informacji na temat tej funkcji oraz wskazówki dotyczące jej stosowania, zobacz wpis na blogu: [Azure Information Protection with HYOK (Hold Your Own Key)](https://cloudblogs.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/) (Usługa Azure Information Protection z rozwiązaniem HYOK — Hold Your Own Key).
 
 Aby skonfigurować etykietę w celu zastosowania ochrony za pomocą usług AD RMS, zobacz [Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management](../deploy-use/configure-policy-protection.md). 
 

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23c2b24a830b6d1ab7e0712fc1d1d70056f5d736
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 0eed07fdaa96be4d4a2dee5242b4be65564aa75d
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/09/2018
 
 Masz pytanie dotyczące usługi Azure Information Protection lub usługi Azure Rights Management (Azure RMS)? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
 
-Te strony — często zadawane pytania są regularnie aktualizowana, a nowe informacje będą publikowane w comiesięcznych ogłoszeniach o aktualizacji dokumentacji na [pakietu Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates).
+Te strony — często zadawane pytania są regularnie aktualizowana, a nowe informacje będą publikowane w comiesięcznych ogłoszeniach o aktualizacji dokumentacji na [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates).
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Na czym polega różnica między usługą Azure Information Protection i usługą Azure Rights Management?
 
@@ -102,7 +102,7 @@ Gdy skaner chroni pliki w witrynach programu SharePoint i bibliotek, właścicie
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>Podobno nowa wersja ma być wkrótce dostępna dla usługi Azure Information Protection — kiedy zostanie ona wydana?
 
-Dokumentacja techniczna nie zawiera informacji o kolejnych wersjach. Dla tego typu informacji i zapowiedzi dotyczących wersji, zobacz [pakietu Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) i Pobierz najnowsze aktualizacje z [Microsoft Mobility@MSFTMobility ](https://twitter.com/MSFTMobility) w serwisie Twitter. Jeśli interesuje Cię wersja pakietu Office, sprawdź również [blog dotyczący pakietu Office](https://blogs.office.com/).
+Dokumentacja techniczna nie zawiera informacji o kolejnych wersjach. Dla tego typu informacji i zapowiedzi dotyczących wersji, zobacz [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) i Pobierz najnowsze aktualizacje z [Microsoft Mobility@MSFTMobility ](https://twitter.com/MSFTMobility) w serwisie Twitter. Jeśli interesuje Cię wersja pakietu Office, sprawdź również [blog dotyczący pakietu Office](https://blogs.office.com/).
 
 ## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>Gdzie można znaleźć dodatkowe informacje na temat usługi Azure Information Protection dotyczące na przykład kwestii prawnych oraz związanych ze zgodnością i umowami SLA?
 

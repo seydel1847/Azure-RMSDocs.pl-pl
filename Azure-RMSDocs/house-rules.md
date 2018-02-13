@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 014b4d7100a0be36951a21db9a1dcf35bdbe5dd6
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Lokalne zasady dotyczące komentarzy w dokumentacji usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Nie używaj Livefyre komentarzy i notatek dla następujących elementów:
 
 - **Pomoc techniczna**. Na przykład funkcja nie działa po sprawdzeniu wszystkich wymagań i po wykonaniu instrukcji zawartych w dokumentacji Sprawdzeniu również, że używasz [obsługiwana wersja](./rms-client/client-version-release-history.md#servicing-information-and-timelines) klienta Azure Information Protection. Zamiast tego, skontaktuj się z [Microsoft Support](./get-started/information-support.md#to-contact-microsoft-support) lub użyj inne kanały pomocy technicznej standard. Można również współpracować z społeczności na usługę Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
 
-- **Informacje dotyczące planu wydań**. Na przykład dotyczące tego, kiedy będzie dostępna nowa wersja lub na kiedy zaplanowano dodatkowe funkcje. Te informacje można znaleźć [pakietu Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) lub poproś o nim na platformie Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam). Możesz również sprawdzić [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection i używać tego zasobu, aby żądać nowych funkcji.
+- **Informacje dotyczące planu wydań**. Na przykład dotyczące tego, kiedy będzie dostępna nowa wersja lub na kiedy zaplanowano dodatkowe funkcje. Te informacje można znaleźć [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services) lub poproś o nim na platformie Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam). Możesz również sprawdzić [witryny User Voice](https://msip.uservoice.com) usługi Azure Information Protection i używać tego zasobu, aby żądać nowych funkcji.
 
 - **Opinie o produkcie**. Na przykład sugestie dotyczące ulepszenia produktu lub wprowadzenia nowej funkcji. Zamiast tego odwiedź [witrynę User Voice](https://msip.uservoice.com) usługi Azure Information Protection, która pozwala przesyłać sugestie dotyczące nowych funkcji, głosować na pomysły innych osób oraz wyświetlać bieżący stan klasyfikacji dokonanej przez zespół usługi Azure Information Protection. Dla ogólnej opinii, pytania i porady angażowanie społeczności na usługę Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam). 
 

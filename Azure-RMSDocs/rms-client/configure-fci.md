@@ -1,10 +1,10 @@
 ---
 title: "Ochrona za pomocą usługi Azure RMS z użyciem infrastruktury FCI w systemie Windows Server — AIP"
-description: "Instrukcje dotyczące używania klienta usługi Rights Management (RMS) z narzędziem RMS Protection Tool w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI)."
+description: "Instrukcje dotyczące korzystania z klienta Rights Management (RMS) przy użyciu klienta usługi Azure Information Protection do skonfigurowania Menedżera zasobów serwera plików i infrastruktury klasyfikacji plików (FCI)."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dfa751ef7cd4c8405fa02299576cb57083d63495
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 1c901c8a9c37d36ce0067c0b60994635a1cec9de
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
@@ -259,7 +259,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
 
     2.  Kliknij pozycję **Zaczekaj na zakończenie zadania**, a następnie kliknij przycisk **OK**.
 
-4.  Poczekaj na zamknięcie okna dialogowego **Uruchamianie zadania zarządzania plikami**, a następnie przejrzyj wyniki w raporcie, który zostanie automatycznie wyświetlony. Liczba plików w wybranym folderze programu powinna być widoczna w polu **Pliki**. Upewnij się, że pliki w wybranym folderze są teraz chronione przez usługę Rights Management. Na przykład, jeśli wybrany folder to C:\FileShare, wpisz następujące polecenie w sesji środowiska Windows PowerShell i upewnij się, że żaden plik nie ma stan **niechroniony**:
+4.  Poczekaj na zamknięcie okna dialogowego **Uruchamianie zadania zarządzania plikami**, a następnie przejrzyj wyniki w raporcie, który zostanie automatycznie wyświetlony. Liczba plików w wybranym folderze powinna być widoczna w polu **Pliki**. Upewnij się, że pliki w wybranym folderze są teraz chronione przez usługę Rights Management. Na przykład, jeśli wybrany folder to C:\FileShare, wpisz następujące polecenie w sesji środowiska Windows PowerShell i upewnij się, że żaden plik nie ma stan **niechroniony**:
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
