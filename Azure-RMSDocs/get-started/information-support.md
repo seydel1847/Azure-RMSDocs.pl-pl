@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0e6b68d6bc8d511854d9bbca4ab2bd8dbe2445dd
-ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
+ms.openlocfilehash: 7b1c039f17bcf332036b0e84a8b03bb213742535
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -34,9 +34,9 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 
 ## <a name="information-about-new-releases-and-updates"></a>Informacje o nowych wersji i aktualizacji
-Zespół produktu usługi Azure Information Protection publikuje powiadomienia o nowych wersjach i aktualizacjach na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection). Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
+Zespół produktu usługi Azure Information Protection publikuje powiadomienia o nowych wersjach i aktualizacjach na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection). Wpisy na blogu uzupełniają dokumentację produktu i informacje pomocy technicznej.
 
-Podsumowanie zmian dokumentacja jest opublikowana każdego miesiąca do [blogu technicznej usługi Azure Information Protection](https://aka.ms/AIPblog). Poprzednie podsumowania zostały opublikowane w [pakietu Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates). Te aktualizacje dokumentacji obejmują informacje o wszelkich nowych wersji aktualizacji do obsługi instrukcji, a także poprawki i wyjaśnienia dla istniejącej wersji. Te wpisy są zatytułowany: "**Aktualizacja dokumentacji ochrony informacji Azure dla \<miesiąca i roku >**".
+Podsumowanie zmian dokumentacja jest opublikowana każdego miesiąca do [blogu technicznej usługi Azure Information Protection](https://aka.ms/AIPblog). Poprzednie podsumowania zostały opublikowane w [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates). Te aktualizacje dokumentacji obejmują informacje o wszelkich nowych wersji aktualizacji do obsługi instrukcji, a także poprawki i wyjaśnienia dla istniejącej wersji. Te wpisy są zatytułowany: "**Aktualizacja dokumentacji ochrony informacji Azure dla \<miesiąca i roku >**".
 
 ## <a name="support-options-and-community-resources"></a>Opcje pomocy technicznej i zasoby społecznościowe
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.

@@ -13,20 +13,20 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 776293c73b5ca63d0bfd409d8330bfe8295c792e
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: ca3af42d227c349779a07f61deb8feb7571e6250
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Masz pytanie dotyczące usługi ochrony danych Azure Rights Management z usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi. 
+Masz pytanie dotyczące usługi ochrony danych Azure Rights Management z usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
 
 ## <a name="do-files-have-to-be-in-the-cloud-to-be-protected-by-azure-rights-management"></a>Czy pliki muszą znajdować się w chmurze, aby mogły być chronione przez usługę Azure Rights Management?
-Nie, to powszechne nieporozumienie. Usługa Azure Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika w ramach procesu ochrony informacji. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie. 
+Nie, to powszechne nieporozumienie. Usługa Azure Rights Management (ani firma Microsoft) nie widzi ani nie przechowuje danych użytkownika w ramach procesu ochrony informacji. Chronione informacje nie są wysyłane na platformę Azure ani na niej przechowywane, chyba że użytkownik jawnie zapisze je na platformie Azure lub w innej usłudze chmurowej, która magazynuje dane na tej platformie.
 
 Aby uzyskać więcej informacji, zobacz temat [How does Azure RMS work? Under the hood](../understand-explore/how-does-it-work.md) (Jak działa usługa RMS? Kulisy), aby dowiedzieć się, jak tajna receptura coli, utworzona i przechowywana lokalnie, jest chroniona przez usługę Azure Rights Management, ale pozostaje zapisana lokalnie.
 
@@ -40,9 +40,9 @@ Te technologie szyfrowania uzupełniają się, a ich użycie wymaga niezależneg
 
 Funkcja **Bring your own key** (BYOK) w kontekście usługi Azure Information Protection jest używana w przypadku tworzenia własnego lokalnego klucza w celu zastosowania ochrony przy użyciu usługi Azure Rights Management. Ten klucz jest następnie przenoszony do sprzętowego modułu zabezpieczeń (HSM) w magazynie kluczy Azure, w którym nadal jesteś jego właścicielem i możesz nim zarządzać. Jeśli tego nie zrobisz, ochrona Azure Rights Management będzie używać klucza, który jest automatycznie tworzony i zarządzany w systemie Azure. Konfiguracja domyślna jest określana jako „zarządzana przez Microsoft” w odróżnieniu od „zarządzanej przez klienta” (opcja BYOK).
 
-Aby uzyskać więcej informacji o funkcji BYOK i wyborze tej topologii klucza dla Twojej organizacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md). 
+Aby uzyskać więcej informacji o funkcji BYOK i wyborze tej topologii klucza dla Twojej organizacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
-Funkcja **Hold your own key** (HYOK) w kontekście usługi Azure Information Protection jest przeznaczona dla niewielkiej liczby organizacji, w przypadku których pewne dokumenty lub wiadomości e-mail nie mogą być chronione za pomocą klucza przechowywanego w chmurze. W przypadku takich organizacji to ograniczenie obowiązuje nawet wówczas, jeśli utworzono klucz i zarządza się nim przy użyciu funkcji BYOK. To ograniczenie może obowiązywać z powodów prawnych lub wymogów zgodności z przepisami, zaś funkcja HYOK powinna być stosowana tylko do informacji klasyfikowanych jako „ściśle tajne”, które nigdy nie będą udostępniane poza organizację i będą wykorzystywane tylko w sieci wewnętrznej, a dostęp do nich nie będzie uzyskiwany z urządzeń przenośnych. 
+Funkcja **Hold your own key** (HYOK) w kontekście usługi Azure Information Protection jest przeznaczona dla niewielkiej liczby organizacji, w przypadku których pewne dokumenty lub wiadomości e-mail nie mogą być chronione za pomocą klucza przechowywanego w chmurze. W przypadku takich organizacji to ograniczenie obowiązuje nawet wówczas, jeśli utworzono klucz i zarządza się nim przy użyciu funkcji BYOK. To ograniczenie może obowiązywać z powodów prawnych lub wymogów zgodności z przepisami, zaś funkcja HYOK powinna być stosowana tylko do informacji klasyfikowanych jako „ściśle tajne”, które nigdy nie będą udostępniane poza organizację i będą wykorzystywane tylko w sieci wewnętrznej, a dostęp do nich nie będzie uzyskiwany z urządzeń przenośnych.
 
 Dla tych wyjątków (stanowiących zwykle nie więcej niż 10% całej chronionej zawartości) organizacja może wykorzystać rozwiązanie lokalne Active Directory Rights Management Services w celu utworzenia klucza, który pozostanie w środowisku lokalnym. Dzięki temu rozwiązaniu komputery pobierają zasady usługi Azure Information Protection z chmury, ale określona zawartość będzie chroniona przy użyciu lokalnego klucza.
 
@@ -64,7 +64,7 @@ Mimo że łącznik usługi Rights Management rejestruje informacje, ostrzeżenia
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?
 
-Administratorzy globalni dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure Rights Management. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, możesz to zrobić przy użyciu polecenia cmdlet programu PowerShell usługi Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator). Tę rolę administracyjną można przypisać według konta użytkownika lub grupy. Dostępne są dwie role: **Administrator globalny** i **Administrator łącznika**. 
+Administratorzy globalni dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure Rights Management. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, możesz to zrobić przy użyciu polecenia cmdlet programu PowerShell usługi Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator). Tę rolę administracyjną można przypisać według konta użytkownika lub grupy. Dostępne są dwie role: **Administrator globalny** i **Administrator łącznika**.
 
 Tak jak te nazwy sugerują, pierwsza rola przyznaje uprawnienia do uruchamiania wszystkich zadań administracyjnych dla usługi Azure Rights Management (bez nadawania użytkownikom roli administratora globalnego dla innych usług w chmurze), a druga rola przyznaje uprawnienia do uruchamiania tylko łącznika usługi Rights Management (RMS).
 
@@ -74,12 +74,12 @@ Dodatkowe kwestie, na które należy zwrócić uwagę:
 
 - Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
 
-- Jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), nie ma to wpływu na możliwość administrowania usługą Azure RMS, z wyjątkiem łącznika usługi RMS. Na przykład jeśli kontrolki dołączania zostały skonfigurowane w taki sposób, że możliwość ochrony zawartości jest ograniczona do grupy Dział IT, konto używane do instalowania i konfigurowania łącznika usługi RMS musi należeć do tej grupy. 
+- Jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), nie ma to wpływu na możliwość administrowania usługą Azure RMS, z wyjątkiem łącznika usługi RMS. Na przykład jeśli kontrolki dołączania zostały skonfigurowane w taki sposób, że możliwość ochrony zawartości jest ograniczona do grupy Dział IT, konto używane do instalowania i konfigurowania łącznika usługi RMS musi należeć do tej grupy.
 
-- Żaden administrator usługi Azure RMS (na przykład administrator globalny dzierżawy lub administratora globalnego usługi Azure RMS) może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md). 
+- Żaden administrator usługi Azure RMS (na przykład administrator globalny dzierżawy lub administratora globalnego usługi Azure RMS) może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
 
 >[!NOTE]
-> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management został przeniesiony do portalu Azure obsługuje Administratorzy zabezpieczeń oprócz dostępu administratora globalnego. 
+> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management został przeniesiony do portalu Azure obsługuje Administratorzy zabezpieczeń oprócz dostępu administratora globalnego.
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Jak utworzyć nowy szablon niestandardowy w portalu Azure?
 
@@ -91,7 +91,7 @@ Aby uzyskać więcej informacji na temat szablonów w portalu Azure, zobacz [Kon
 
 Jeśli dokument był chroniony za pomocą etykiety lub szablonu, jest niepotrzebna włączyć ją ponownie dokument. Zmodyfikować etykiety lub szablon wprowadzania zmian do prawa użytkowania lub dodać nowej grupy (lub użytkowników), a następnie zapisz i opublikować te zmiany:
 
-- Gdy użytkownik nie dostęp do dokumentu, przed wprowadzeniem zmian, zmiany zaczynają obowiązywać natychmiast po otwarciu dokumentu. 
+- Gdy użytkownik nie dostęp do dokumentu, przed wprowadzeniem zmian, zmiany zaczynają obowiązywać natychmiast po otwarciu dokumentu.
 
 - Gdy użytkownik ma już dostęp do dokumentu, zmiany zostaną zastosowane po ich [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) wygaśnie. Włącz ponownie ochronę dokumentu, tylko wtedy, gdy nie może czekać na licencji użytkowania wygaśnie. Efektywne ponownej ochrony tworzy nową wersję dokumentu, a w związku z tym nowej licencji użytkowania dla użytkownika.
 
@@ -134,15 +134,15 @@ Alternatywnie można dodać użytkowników zewnętrznych do szablonów niestanda
 1. Określ zewnętrzne adresy e-mail i ich prawa w obiekcie definicji praw, używając [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet, aby utworzyć zmienną.
 
 2. Dostarczyć tę zmienną do parametru RightsDefinition z [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
-    
-    Po dodaniu użytkowników do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących użytkowników w szablonach, oprócz nowych użytkowników. W tym scenariuszu może okazać się przydatne **przykład 3: Dodaj nowych użytkowników oraz prawa do szablonu niestandardowego** z [przykłady](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) sekcję polecenia cmdlet. 
+
+    Po dodaniu użytkowników do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących użytkowników w szablonach, oprócz nowych użytkowników. W tym scenariuszu może okazać się przydatne **przykład 3: Dodaj nowych użytkowników oraz prawa do szablonu niestandardowego** z [przykłady](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) sekcję polecenia cmdlet.
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Typ grupy można używać z usługą Azure RMS?
 W przypadku większości scenariuszy można użyć dowolnego typu grupy w usłudze Azure AD, która ma adres e-mail. Ta zasadą zawsze ma zastosowanie, gdy przypisywanie praw użytkowania, ale istnieją pewne wyjątki do administrowania usługą Azure Rights Management. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure Information Protection dla grupy kont](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts).
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>Jak wysłać chronioną wiadomość e-mail na konto Gmail lub Hotmail?
 
-Korzystając z usługi Exchange Online i usługa Azure Rights Management, po prostu wysłaniem wiadomości e-mail do użytkownika jako chronionej wiadomości. Na przykład można wybrać nowy **Chroń** przycisk paska poleceń w programie Outlook w sieci Web, użyj programu Outlook **nie przesyłaj dalej** przyciskiem lub menu opcji. Alternatywnie możesz wybrać etykietę usługi Azure Information Protection, która automatycznie stosuje nie przesyłaj dalej dla Ciebie i klasyfikuje wiadomości e-mail. 
+Korzystając z usługi Exchange Online i usługa Azure Rights Management, po prostu wysłaniem wiadomości e-mail do użytkownika jako chronionej wiadomości. Na przykład można wybrać nowy **Chroń** przycisk paska poleceń w programie Outlook w sieci Web, użyj programu Outlook **nie przesyłaj dalej** przyciskiem lub menu opcji. Alternatywnie możesz wybrać etykietę usługi Azure Information Protection, która automatycznie stosuje nie przesyłaj dalej dla Ciebie i klasyfikuje wiadomości e-mail.
 
 Odbiorcy zobaczą opcję, aby zalogować się do swojego konta usługi Gmail, Yahoo lub firmy Microsoft, a następnie mieć możliwość odczytu chronionych wiadomości e-mail. Ich można również wybrać opcję dla jednorazowy kod dostępu odczytać wiadomość e-mail w przeglądarce.
 
@@ -165,8 +165,8 @@ Otwórz program Outlook i utwórz profil przy użyciu konta służbowego usługi
 
 1. W nowej wiadomości na karcie **Opcje** kliknij pozycję **Uprawnienia**, a następnie kliknij przycisk **Sprawdź poświadczenia**.
 
-2. Po wyświetleniu monitu podaj szczegóły konta służbowego usługi Office 365, a następnie wybierz przycisk **Zaloguj**. 
-    
+2. Po wyświetleniu monitu podaj szczegóły konta służbowego usługi Office 365, a następnie wybierz przycisk **Zaloguj**.
+
     Spowoduje to pobranie szablonów usługi Azure Rights Management, a opcja **Sprawdź poświadczenia** zostanie zastąpiona przez kilka opcji, m.in **Brak ograniczeń**, **Nie przesyłaj dalej** oraz wszystkie szablony usługi Azure Rights Management opublikowane dla Twojej dzierżawy. Możesz teraz anulować tę nową wiadomość.
 
 Aby chronić wiadomość e-mail lub dokument: na karcie **Opcje** kliknij pozycję **Uprawnienia** i wybierz opcję lub szablon chroniący wiadomość e-mail lub dokument.
@@ -179,7 +179,7 @@ Nie. W tym scenariuszu skojarzony plik tymczasowy nie zawiera danych z oryginaln
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>Wygląda na to, że funkcja, której potrzebuję, nie współpracuje z chronionymi bibliotekami programu SharePoint. Czy obsługa tej funkcji jest planowana?
 Obecnie program SharePoint obsługuje chronionego przez usługi RMS dokumenty przy użyciu usługi IRM chronione bibliotek, które nie obsługują szablony usługi Rights Management, śledzenia dokumentów i innych funkcji. Więcej informacji można znaleźć w sekcji dotyczącej [usługi SharePoint Online i programu SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w artykule [Office applications and services](../understand-explore/office-apps-services-support.md) (Aplikacje i usługi pakietu Office).
 
-Użytkownicy zainteresowani konkretną funkcją, która nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
+Użytkownicy zainteresowani konkretną funkcją, która nie jest jeszcze obsługiwana, powinni śledzić ogłoszenia na [blogu dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-rights-management-services).
 
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>Jak skonfigurować usługę OneDrive dla Firm w usłudze SharePoint Online, tak aby użytkownicy mogli bezpiecznie udostępniać pliki wewnątrz i na zewnątrz firmy?
 Domyślnie tej usługi nie konfiguruje administrator usługi Office 365, lecz robią to użytkownicy.
@@ -197,11 +197,11 @@ Użyj [funkcja superużytkowników](../deploy-use/configure-super-users.md), kt�
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>Podczas testowania odwołania w witrynie śledzenia dokumentów wyświetlany jest komunikat informujący, że użytkownicy mogą nadal uzyskiwać dostęp do dokumentu przez okres do 30 dni — czy ten okres można skonfigurować?
 
-Tak. Ten komunikat odzwierciedla [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) dla tego określonego pliku. 
+Tak. Ten komunikat odzwierciedla [licencję użytkowania](../deploy-use/configure-usage-rights.md#rights-management-use-license) dla tego określonego pliku.
 
 W przypadku odwołania pliku ta akcja może zostać wymuszona tylko wtedy, gdy użytkownik jest uwierzytelniany w usłudze Azure Rights Management. Na przykład jeśli plik ma 30-dniowy okres ważności licencji użytkowania, a użytkownik ma już otwarty dokument, ten użytkownik będzie mieć nadal dostęp do dokumentu w okresie ważności licencji użytkowania. Po wygaśnięciu licencji użytkowania użytkownik musi zostać ponownie uwierzytelniony. Nastąpi wtedy odmowa dostępu, ponieważ dokument będzie już odwołany.
 
-To odwołanie nie dotyczy użytkownika, który włączył ochronę dokumentu, czyli [wystawcy usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) — ma on zawsze dostęp do swoich dokumentów. 
+To odwołanie nie dotyczy użytkownika, który włączył ochronę dokumentu, czyli [wystawcy usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) — ma on zawsze dostęp do swoich dokumentów.
 
 Wartość domyślna dla okresu ważności licencji używany dla dzierżawy to 30 dni i to ustawienie może być zastąpiona przez bardziej restrykcyjne ustawienie w etykiecie lub w szablonie. Aby uzyskać więcej informacji o licencji użytkowania i sposobie konfigurowania go, zobacz [licencję użytkowania usługi Rights Management](../deploy-use/configure-usage-rights.md#rights-management-use-license) dokumentacji.
 
@@ -217,5 +217,3 @@ Jak dowodzą te przykłady, nawet jeśli wszystkie platformy i całe oprogramowa
 Niezależnie od nazwy i wyglądu ustawienie **Nie przesyłaj dalej** nie jest przeciwieństwem prawa do przesyłania dalej ani szablonem. Jest to zestaw praw obejmujących ograniczenia przesyłania dalej wiadomości e-mail, kopiowania, drukowania i zapisywania załączników. Prawa są dynamicznie stosowane do użytkowników za pośrednictwem wybranych adresatów, a nie statycznie przypisane przez administratora. Więcej informacji można znaleźć w sekcji [Opcja Nie przekazuj dotycząca wiadomości e-mail](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) w artykule [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
