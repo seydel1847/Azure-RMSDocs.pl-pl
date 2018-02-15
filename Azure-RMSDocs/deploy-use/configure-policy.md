@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b04c7881f982b33094107b6de33920a83b17b960
-ms.sourcegitcommit: a7cdf911088fdf663e43894484530ea15150284f
+ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -44,9 +44,24 @@ Jeśli Twoja organizacja ma różnych subskrypcji, jest obowiązek upewnij się,
 
 Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja jest potrzebna do korzystania z usługi Azure Information Protection i jakie funkcje obejmuje ta subskrypcja?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
+## <a name="signing-in-to-the-azure-portal"></a>Logowanie do portalu Azure
+
+Aby zalogować się do portalu Azure, do konfigurowania i zarządzania usługi Azure Information Protection:
+
+- Użyj następującego łącza: https://portal.azure.com
+
+- Użyj konta, które ma jeden z następujących [ról administratora](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
+    
+    - **Administrator ochrony informacji** (obecnie w wersji zapoznawczej)
+
+    - **Administrator zabezpieczeń**
+
+    - **Administrator globalny / Administrator firmy**
+
+
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Aby dostęp do bloku usługi Azure Information Protection po raz pierwszy
 
-1. Zaloguj się do [portalu Azure](https://portal.azure.com) jako administrator globalny lub Administrator zabezpieczeń dla dzierżawy.
+1. Zaloguj się do witryny Azure Portal.
 
 2. W menu centralnym kliknij przycisk **Nowy**, a następnie z listy **MARKETPLACE** wybierz opcję **Zabezpieczenia i tożsamość**. 
     
@@ -63,7 +78,7 @@ Następny czas dostępu **usługi Azure Information Protection** bloku, powoduje
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Jak skonfigurować zasady usługi Azure Information Protection
 
-1. Upewnij się, że użytkownik jest zalogowany do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego.
+1. Upewnij się, że użytkownik jest zalogowany do portalu Azure za pomocą jednej z tych ról administracyjnych: Administrator ochrony informacji, zabezpieczeń administratora lub administratora globalnego. Zobacz [powyższej sekcji](#signing-in-to-the-azure-portal) uzyskać więcej informacji o tych ról administracyjnych.
 
 2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: na przykład, w menu centralnym kliknij **więcej usług** i zacznij wpisywać ciąg **Information Protection** w Pole filtru. Spośród wyników wybierz **Azure Information Protection**. 
     
@@ -85,7 +100,7 @@ Następny czas dostępu **usługi Azure Information Protection** bloku, powoduje
     
     - Opcja udostępniania linku do niestandardowej pomocy dla użytkowników.
 
-Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Dwa z tych etykiet zawiera etykiety podrzędne, aby zapewnić podkategorie, w razie potrzeby. Po skonfigurowaniu etykiety dla etykiety podrzędne użytkowników nie można wybrać etykietę głównego, ale należy wybrać jedną z etykiety podrzędne.
+Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Dwa z tych etykiet zawiera sublabels zapewnienie podkategorie, w razie potrzeby. Po skonfigurowaniu etykiety dla sublabels użytkowników nie można wybrać etykietę głównego, ale należy wybrać jedną z sublabels.
 
 Etykiety usługi Azure Information Protection może służyć z pełnego zakresu danych, które organizacji zwykle tworzy i przechowuje z najniższą klasyfikacji danych osobowych, do najwyższej klasyfikacji wysoce poufnych danych. 
 

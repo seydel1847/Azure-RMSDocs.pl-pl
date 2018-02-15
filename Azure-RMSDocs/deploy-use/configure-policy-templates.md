@@ -4,7 +4,7 @@ description: "Konfigurowanie szablonów i zarządzania nimi rights management z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 671d1d5d706225fcd5c680ddc8687aa889b59b59
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 66008a89f04c99b2255027f4defc22cf97bc1e0d
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
@@ -96,7 +96,7 @@ Przed rozpoczęciem edycji tych szablonów lub przekonwertować je na etykiety, 
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Aby skonfigurować szablony w usłudze Azure Information Protection
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.     
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 

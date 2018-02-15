@@ -4,17 +4,17 @@ description: "Skonfiguruj ustawienia w zasadach usługi Azure Information Protec
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 49eb10a999f541cb9979576faac55ca28ff35a0b
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: be050f7307a83dcb229cf7a71fcf7bb5d2ec1380
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
@@ -28,7 +28,7 @@ Należy pamiętać, że ustawień zasad może być różne domyślne wartości, 
 
 Aby skonfigurować te ustawienia:
 
-1. Jeśli jeszcze tego nie zrobiono, nowe okno przeglądarki, zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
@@ -42,11 +42,11 @@ Aby skonfigurować te ustawienia:
     
     - **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**: w przypadku ustawienia dla tej opcji wartości **Wł.** wszystkie zapisane dokumenty i wysłane wiadomości e-mail będą musiały mieć zastosowaną etykietę. Etykiety mogą być przypisywane ręcznie przez użytkownika, automatycznie na podstawie [warunku](configure-policy-classification.md) lub domyślnie (przy użyciu opcji **Wybierz etykietę domyślną**).
         
-        Jeśli etykieta nie przypisano użytkowników zapisywania dokumentu lub wysyłania wiadomości e-mail, są monitowani o wybranie etykiety. Na przykład:
+        Jeśli etykieta nie przypisano użytkowników zapisywania dokumentu lub wysyłania wiadomości e-mail, są monitowani o wybranie etykiety. Przykład:
         
         ![Monit usługi Azure Information Protection, jeśli etykietowanie jest wymuszane](../media/info-protect-enforce-labelv2.png)
         
-    - **Użytkownicy muszą uzasadnić obniżenie etykiety klasyfikacji, usunięcie etykiety lub usunięcie ochrony**: po ustawieniu tej opcji na wartość **Włączone** i wykonaniu dowolnej z tych akcji przez użytkownika (na przykład zmianie etykiety **Publiczne** na **Osobiste**) użytkownik jest monitowany o podanie wyjaśnienia dla tej akcji. Przykładowo użytkownik może wyjaśnić, że dokument nie zawiera już poufnych informacji. Wykonywana czynność oraz stosowne uzasadnienie przyczyny zostaną zapisane w ich lokalnym dzienniku zdarzeń systemu Windows: **Dzienniki aplikacji i usług** > **usługi Azure Information Protection**.  
+    - **Użytkownicy muszą uzasadnić obniżenie etykiety klasyfikacji, usunięcie etykiety lub usunięcie ochrony**: po ustawieniu tej opcji na wartość **Włączone** i wykonaniu dowolnej z tych akcji przez użytkownika (na przykład zmianie etykiety **Publiczne** na **Osobiste**) użytkownik jest monitowany o podanie wyjaśnienia dla tej akcji. Przykładowo użytkownik może wyjaśnić, że dokument nie zawiera już poufnych informacji. Akcji i przyczynę jej uzasadnienie, są rejestrowane w ich lokalnym dzienniku zdarzeń systemu Windows: **Dzienniki aplikacji i usług** > **usługi Azure Information Protection**.  
         
         ![Monit usługi Azure Information Protection w przypadku wybrania niższej klasyfikacji](../media/info-protect-lower-justification.png)
         

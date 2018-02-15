@@ -4,7 +4,7 @@ description: "Aby skonfigurować inne ustawienia i etykiety dla poszczególnych 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c7aa1c3aa18a246457c00a5a61c6004e55f76b4b
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 9917abdc9b2f609064e221c31b2d793d963a61c0
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Konfigurowanie zasad usługi Azure Information Protection odnoszących się do konkretnych użytkowników przy użyciu zasad o określonym zakresie
 
@@ -30,11 +30,11 @@ Zasady o określonym zakresie, podobnie jak etykiety, są uporządkowane w porta
 
 Jako że zasada o określonym zakresie zawsze dziedziczy etykiety i ustawienia z zasad globalnych, podczas tworzenia lub edytowania zasady o określonym zakresie wyświetlane są etykiety z zasad globalnych. Podczas edycji zasady o określonym zakresie nie można edytować etykiet z zasad globalnych. Można jednak dodać sublabels do dziedziczonej etykiety.
 
-Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie **Poufne**, to etykietę tę widzą wszyscy użytkownicy. Nie można jej usunąć ani zmienić jej kolejności z użyciem zasad o określonym zakresie. Ale warto utworzyć zakresie zasady dla działu marketingu, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ promocji**. Tworzymy inne zasady zakresami dla działu sprzedaży, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ partnerów**. Każdy sublabel może być skonfigurowany pod kątem różnych ustawień i sublabel jest widoczna tylko dla użytkowników w odpowiednich działów.
+Na przykład jeśli globalne zasady uwzględniają etykietę o nazwie **Poufne**, to etykietę tę widzą wszyscy użytkownicy. Nie można usunąć ani zmienić jej kolejność o zakresie zasad. Ale warto utworzyć zakresie zasady dla działu marketingu, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ promocji**. Tworzymy inne zasady zakresami dla działu sprzedaży, który dodaje nowe sublabel do poufne, tak, aby zobaczyć tych użytkowników **poufne \ partnerów**. Każdy sublabel może być skonfigurowany pod kątem różnych ustawień i sublabel jest widoczna tylko dla użytkowników w odpowiednich działów.
 
 Aby skonfigurować zasadę usługi Azure Information Protection o określonym zakresie:
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
 
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 

@@ -4,17 +4,17 @@ description: "Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 53a6e42ef0ecdb1388c82e3af4090bb3d6778983
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -52,7 +52,7 @@ W przypadku dokumentów oznaczenia wizualne są stosowane w następujący sposó
 
 Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiety.
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
@@ -92,7 +92,7 @@ Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classificatio
 
 To ustawienie jest obecnie w wersji zapoznawczej i wymaga wersja klienta usługi Azure Information Protection.
 
-Domyślnie oznaczeń wizualnych, które określisz są stosowane przez program Word, Excel, PowerPoint i Outlook. Jednak można określić oznaczenia wizualne dla typu aplikacji pakietu Office przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym, a Określ typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić tych wartości, która jest wymagana, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
+Domyślnie oznaczeń wizualnych, które określisz są stosowane przez program Word, Excel, PowerPoint i Outlook. Jednak można określić oznaczenia wizualne dla typu aplikacji pakietu Office przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym, a Określ typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić te wartości i abbreiwhich jest niezbędne, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
 
 Należy użyć następującej składni:
 
