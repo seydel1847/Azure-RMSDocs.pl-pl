@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -28,7 +28,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
 
-1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki zaloguj się w witrynie [Azure Portal](https://portal.azure.com) jako administrator zabezpieczeń lub administrator globalny, a następnie przejdź do bloku **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki, [Zaloguj się do portalu Azure](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal), a następnie przejdź do **usługi Azure Information Protection** bloku.
 
 2. W pierwszym bloku usługi Azure Information Protection wybierz pozycję **Zasady z określonym zakresem**.
 
@@ -192,7 +192,7 @@ Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-
 
 Po skonfigurowaniu tego ustawienia program Outlook nie ma zastosowania etykiety domyślnej, skonfigurowanym w ramach zasad usługi Azure Information Protection, ustawienia **wybierz etykietę domyślną**. Zamiast tego programu Outlook można stosować różne domyślne etykiety lub bez etykiety.
 
-Aby zastosować inną etykietę, należy określić identyfikator etykiety. Wartość Identyfikatora etykiety jest wyświetlany na **etykiety** bloku, gdy wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w portalu Azure. Dla plików, które mają zastosowane etykiety, można również uruchomić [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell do identyfikowania etykiety (MainLabelId lub SubLabelId). Podczas etykiety zawiera etykiety podrzędne, zawsze należy określić identyfikator etykietę podrzędną, a nie nadrzędnego etykieta.
+Aby zastosować inną etykietę, należy określić identyfikator etykiety. Wartość Identyfikatora etykiety jest wyświetlany na **etykiety** bloku, gdy wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w portalu Azure. Dla plików, które mają zastosowane etykiety, można również uruchomić [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell do identyfikowania etykiety (MainLabelId lub SubLabelId). Jeśli etykieta sublabels, zawsze Określ identyfikator właśnie sublabel i nie etykiety nadrzędnej.
 
 Dlatego program Outlook nie ma zastosowania etykiety domyślnej, określ **Brak**.
 
@@ -230,7 +230,7 @@ Jako przykład masz kolumny programu SharePoint o nazwie **klasyfikacji** mając
 
 Aby dodać etykietę dokumentu pakietu Office, z jedną z następujących wartości klasyfikacji, ustaw **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do  **OneWay**. 
 
-Teraz, gdy użytkownik otwiera i zapisuje jeden z tych dokumentów pakietu Office, jego zostaną oznaczone etykietą **publicznego**, **ogólne**, lub **poufne** Jeśli etykiet z tych nazw platformy Azure Zasady ochrony informacji. Jeśli nie ma etykiety o tych nazwach, dokument pozostanie bez etykiety.
+Teraz, gdy użytkownik otwiera i zapisuje jeden z tych dokumentów pakietu Office, jego etykietą **publicznego**, **ogólne**, lub **poufne** Jeśli etykiet z tych nazw platformy Azure Zasady ochrony informacji. Jeśli nie ma etykiety o tych nazwach, dokument pozostanie bez etykiety.
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
 

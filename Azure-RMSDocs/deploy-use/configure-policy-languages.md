@@ -4,17 +4,17 @@ description: "Możesz dodać obsługę innych języków dla etykiet, które uży
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 7a77b517531d5b4586871abbcb22d2158673d56c
-ms.sourcegitcommit: 222318da363a45c3a533f7b77b02f4e31a258979
+ms.openlocfilehash: f57b3802386aced71967a5ab619cdabf2fd67a37
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować szablony dla różnych języków i etykiety usługi Azure Information Protection
 
@@ -40,7 +40,7 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>Aby skonfigurować szablony dla różnych języków i etykiety
 
-1. Jeśli jeszcze tego nie zrobiono, zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego, a następnie przejdź do **usługi Azure Information Protection** bloku. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 
@@ -89,7 +89,7 @@ Po pobraniu przez użytkowników zasad usługi Azure Information Protection umo�
 
 ## <a name="when-localized-label-names-are-not-used"></a>Gdy nie są używane zlokalizowane nazwy etykiet
 
-W następujących scenariuszach zlokalizowane nazwy etykiet (i etykiet podrzędnych) nie są używane. W celu zachowania spójności w dzierżawie domyślny język jest zawsze używany dla następujących elementów:
+W następujących scenariuszach zlokalizowanych nazw etykiety (i sublabel) nie są używane. W celu zachowania spójności w dzierżawie domyślny język jest zawsze używany dla następujących elementów:
 
 - Dzienniki użycia klienta
 

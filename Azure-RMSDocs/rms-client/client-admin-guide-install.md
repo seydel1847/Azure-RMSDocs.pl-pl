@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów do wdrażania klienta
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d91c52ac5ae1f70ed664e54a549c906d934fdb16
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -211,7 +211,11 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Jak zainstalować skaner usługi Azure Information Protection
 
-Bieżąca wersja klienta usługi Azure Information Protection zawiera skanera usługi Azure Information Protection. Moduł programu PowerShell, który jest dołączana do klienta zawiera polecenia cmdlet, aby zainstalować i skonfigurować skanera.
+Obecnie w wersji ogólnodostępnej (GA) skanera usługi Azure Information Protection jest osobny plik do pobrania o nazwie **AzInfoProtectionScanner.exe** na [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Kolejne wersje skanera zostaną uwzględnione w kliencie usługi Azure Information Protection.
+
+Bieżąca wersja klienta usługi Azure Information Protection zawiera również skanera usługi Azure Information Protection. 
+
+Moduł PowerShell dołączonego skanera i klienta w wersji zapoznawczej zawiera polecenia cmdlet, aby zainstalować i skonfigurować skanera.
 
 Aby zainstalować klienta skanera, wykonaj instrukcje sam w poprzednich sekcjach. Należy pamiętać, że jeśli nie potrzebujesz wszystkich składników klienta, takich jak dodatku pakietu Office oraz przeglądarkę, można zainstalować tylko moduł programu PowerShell. Na przykład można uruchomić plik wykonywalny z `PowerShellOnly=true /quiet`.
 

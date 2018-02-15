@@ -4,7 +4,7 @@ description: "Dowiedz się, jak użyć modułu programu PowerShell dla usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 94ec0107930e64d42ed55bce407c4b8c92f1df32
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell
 
 >*Dotyczy: Azure Information Protection, Office 365*
 
-Czy do administrowania usługą Azure Rights Management dla usługi Azure Information Protection jest wymagane korzystanie z programu PowerShell? Nie trzeba Jeśli jesteś administratorem globalnym lub [administrator zabezpieczeń](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) i tylko konfiguracja wymagana dla tej usługi jest aktywować go (lub dezaktywować) i konfigurować szablony usługi Rights Management.
-
-Jednak należy użyć programu PowerShell, aby uzyskać więcej konfiguracje zaawansowane, a także jeśli nie jesteś administratorem globalnym lub administratorem zabezpieczeń ale ma uprawnienia do administrowania usługą przez administratora globalnego. Programu PowerShell można również używać w celu efektywniejszego korzystania z wiersza polecenia i skryptów.
+Czy do administrowania usługą Azure Rights Management dla usługi Azure Information Protection jest wymagane korzystanie z programu PowerShell? Nie należy w przypadku wszystkich konfiguracji można wykonać w portalu Azure lub w portalu usługi Office 365. Jednak należy użyć programu PowerShell dla niektórych zaawansowanych konfiguracji i może również wolisz używać środowiska PowerShell efektywniejsze kontroli wiersza polecenia i skryptów.
 
 Tabela przedstawiona w następnej sekcji zawiera niektóre scenariusze zaawansowanej konfiguracji, które korzystają z programu PowerShell. Jeśli konfigurację można również przeprowadzić bez użycia programu PowerShell, taka informacja także będzie umieszczona w tabeli.
 

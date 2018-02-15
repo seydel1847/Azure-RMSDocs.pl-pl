@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/01/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e53b0f1508762001b58d60a68a5d606c87dd7c1c
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: c785e0ee2ec00425f16975dec3f01ae71683f828
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -49,7 +49,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
 
 ## <a name="to-configure-a-label-for-rights-management-protection"></a>Aby skonfigurować etykietę pod kątem ochrony usługi Rights Management
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 

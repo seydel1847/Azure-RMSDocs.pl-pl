@@ -4,7 +4,7 @@ description: "Informacje i instrukcje w razie użytkownik nie ma być użyty z o
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39eec911cd6506bd24fb48f5fdd931db68099269
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: 14887bb14599b24d95a19ee111ec3ab30ea95612
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Likwidowanie i dezaktywowanie ochrony usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ Czy organizacja chroni zawartość za pomocą usługi Azure Rights Management z 
 
 Jeśli nie potrzebujesz nieprzerwanego dostępu do wcześniej chronionej zawartości, należy dezaktywować usługę i subskrypcja usługi Azure Information Protection wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi Azure Information Protection zakończyło się przed wdrożeniem jej w środowisku produkcyjnym.
 
-Jednak jeśli wdrożeniu usługi Azure Information Protection w środowisku produkcyjnym i chronione dokumenty i wiadomości e-mail, upewnij się, czy masz kopię klucza dzierżawy usługi Azure Information Protection, aby zdezaktywować usługę Azure Rights Management. Upewnij się, że masz kopię klucza przed wygaśnięciem subskrypcji, aby upewnić się, że mogą zachować dostęp do zawartości, która była chroniona przez usługę Azure Rights Management Po dezaktywowaniu tej usługi. W przypadku użycia rozwiązania BYOK (Bring Your Own Key) umożliwiającego generowanie własnego klucza i zarządzanie nim w module HSM będziesz już mieć klucz dzierżawy usługi Azure Information Protection. Jeśli jednak był to klucz zarządzany przez firmę Microsoft (opcja domyślna), zapoznaj się z instrukcjami dotyczącymi eksportowania klucza dzierżawy w artykule [Operacje dotyczące klucza dzierżawy usługi Azure Rights Management](operations-tenant-key.md).
+Jednak jeśli wdrożeniu usługi Azure Information Protection w środowisku produkcyjnym i chronione dokumenty i wiadomości e-mail, upewnij się, czy masz kopię klucza dzierżawy usługi Azure Information Protection, aby zdezaktywować usługę Azure Rights Management. Upewnij się, że masz kopię klucza przed wygaśnięciem subskrypcji, aby upewnić się, że mogą zachować dostęp do zawartości, która była chroniona przez usługę Azure Rights Management Po dezaktywowaniu tej usługi. Jeśli używasz dostarczania własnego klucza rozwiązania (BYOK) gdzie Generowanie i zarządzanie własnym kluczem w module HSM, masz już klucz dzierżawy usługi Azure Information Protection. Jeśli jednak był to klucz zarządzany przez firmę Microsoft (opcja domyślna), zapoznaj się z instrukcjami dotyczącymi eksportowania klucza dzierżawy w artykule [Operacje dotyczące klucza dzierżawy usługi Azure Rights Management](operations-tenant-key.md).
 
 > [!TIP]
 > Nawet po wygaśnięciu subskrypcji dzierżawa usługi Azure Information Protection pozostaje dostępna, co umożliwia korzystanie z zawartości przez dłuższy czas. Nie można już jednak eksportować klucza dzierżawy.
@@ -71,7 +71,7 @@ Teraz powinien pojawić się komunikat **Usługa Rights Management nie została 
 
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>Aby zdezaktywować usługę Rights Management w portalu Azure
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i zaloguj się do [portalu Azure](https://portal.azure.com) jako zabezpieczeń administratora lub administratora globalnego. Następnie przejdź do bloku **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
     Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
 

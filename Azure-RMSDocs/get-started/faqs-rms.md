@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi ochrony dany
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ca3af42d227c349779a07f61deb8feb7571e6250
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: bf640c7faf6bcd5ce7467547095b44f09e72fa8c
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -64,22 +64,7 @@ Mimo że łącznik usługi Rights Management rejestruje informacje, ostrzeżenia
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?
 
-Administratorzy globalni dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure Rights Management. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, możesz to zrobić przy użyciu polecenia cmdlet programu PowerShell usługi Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator). Tę rolę administracyjną można przypisać według konta użytkownika lub grupy. Dostępne są dwie role: **Administrator globalny** i **Administrator łącznika**.
-
-Tak jak te nazwy sugerują, pierwsza rola przyznaje uprawnienia do uruchamiania wszystkich zadań administracyjnych dla usługi Azure Rights Management (bez nadawania użytkownikom roli administratora globalnego dla innych usług w chmurze), a druga rola przyznaje uprawnienia do uruchamiania tylko łącznika usługi Rights Management (RMS).
-
-Dodatkowe kwestie, na które należy zwrócić uwagę:
-
-- Tylko administratorzy globalni dla usługi Office 365 i Administratorzy globalni dla usługi Azure AD można użyć Centrum administracyjnego usługi Office 365, aby skonfigurować usługę Azure RMS. Jeśli używasz portalu Azure do usługi Azure Information Protection można zalogować się jako administrator globalny lub administratora zabezpieczeń.
-
-- Użytkownicy, którym przypisywana jest rola administratora globalnego usługi Azure RMS, muszą używać poleceń cmdlet programu PowerShell usługi Azure RMS do konfigurowania usługi Azure RMS. W celu łatwiejszego znalezienia odpowiednich poleceń cmdlet służących do wykonywania określonych zadań, zobacz [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](../deploy-use/administer-powershell.md).
-
-- Jeśli skonfigurowano [kontrolki dołączania](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), nie ma to wpływu na możliwość administrowania usługą Azure RMS, z wyjątkiem łącznika usługi RMS. Na przykład jeśli kontrolki dołączania zostały skonfigurowane w taki sposób, że możliwość ochrony zawartości jest ograniczona do grupy Dział IT, konto używane do instalowania i konfigurowania łącznika usługi RMS musi należeć do tej grupy.
-
-- Żaden administrator usługi Azure RMS (na przykład administrator globalny dzierżawy lub administratora globalnego usługi Azure RMS) może automatycznie usunąć ochrony dokumentów lub wiadomości e-mail, które były chronione przez usługę Azure RMS. Tylko użytkownicy przypisani do funkcji administratorów usługi Azure RMS mogą to zrobić i może to mieć miejsce tylko po włączeniu funkcji administratorów. Jednak administrator globalny dzierżawy i dowolny administrator globalny usługi Azure RMS może przypisywać użytkowników jako administratorów (dotyczy to również ich własnego konta). Mogą oni również włączyć funkcję administratorów. Te akcje są rejestrowane w dzienniku administratora usługi Azure RMS. Aby uzyskać więcej informacji, zobacz sekcję najlepszych praktyk dotyczących zabezpieczeń w temacie [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
-
->[!NOTE]
-> Szablony i nowe opcje dotyczące konfigurowania ochrony usługi Azure Rights Management został przeniesiony do portalu Azure obsługuje Administratorzy zabezpieczeń oprócz dostępu administratora globalnego.
+Z rolą administratora ochrony informacji nowo wprowadzonych tego zapytania (i odpowiedzi) teraz została przeniesiona do strony głównej — często zadawane pytania: [należy być administratorem globalnym, aby skonfigurować usługi Azure Information Protection, lub można oddelegować do innych administratorów?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Jak utworzyć nowy szablon niestandardowy w portalu Azure?
 
@@ -102,7 +87,7 @@ Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie możn
 Porada: Aby sprawdzić, czy dokument był chroniony przez szablon lub przy użyciu uprawnień niestandardowych, użyj [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell. Zawsze wyświetlić opis szablonu **dostęp ograniczony** dla uprawnień niestandardowych o identyfikatorze unikatowy szablon, który nie jest wyświetlany po uruchomieniu [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
-Oczywiście, a dodatkową korzyścią jest to, że użytkownicy będą mogli w łatwy sposób chronić wiadomości e-mail i załączniki, a także korzystać z nich w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
+Oczywiście a dodatkową korzyścią jest, użytkownicy mogą bezproblemowo chronić i korzystać z chronionych wiadomości e-mail i załączników w obu wdrożeniach programu Exchange. W przypadku takiej konfiguracji należy najpierw [aktywować usługę Azure RMS](../deploy-use/activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), a następnie [wdrożyć i skonfigurować łącznik usługi RMS](../deploy-use/deploy-rms-connector.md) dla programu Exchange Server.
 
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>Czy korzystanie z tej ochrony w środowisku produkcyjnym wymusza na firmie korzystanie z tego rozwiązania lub powoduje ryzyko utraty dostępu do zawartości chronionej za pomocą usługi Azure RMS?
 Nie, zawsze zachowujesz kontrolę nad swoimi danymi i możesz nadal uzyskiwać do nich dostęp, nawet jeśli zrezygnujesz z używania usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz artykuł [Likwidowanie i dezaktywowanie usługi Azure Rights Management](../deploy-use/decommission-deactivate.md).
@@ -144,7 +129,7 @@ W przypadku większości scenariuszy można użyć dowolnego typu grupy w usłud
 
 Korzystając z usługi Exchange Online i usługa Azure Rights Management, po prostu wysłaniem wiadomości e-mail do użytkownika jako chronionej wiadomości. Na przykład można wybrać nowy **Chroń** przycisk paska poleceń w programie Outlook w sieci Web, użyj programu Outlook **nie przesyłaj dalej** przyciskiem lub menu opcji. Alternatywnie możesz wybrać etykietę usługi Azure Information Protection, która automatycznie stosuje nie przesyłaj dalej dla Ciebie i klasyfikuje wiadomości e-mail.
 
-Odbiorcy zobaczą opcję, aby zalogować się do swojego konta usługi Gmail, Yahoo lub firmy Microsoft, a następnie mieć możliwość odczytu chronionych wiadomości e-mail. Ich można również wybrać opcję dla jednorazowy kod dostępu odczytać wiadomość e-mail w przeglądarce.
+Odbiorca widzi opcję, aby zalogować się do swojego konta usługi Gmail, Yahoo lub firmy Microsoft, a następnie może odczytywać chronione wiadomości e-mail. Ich można również wybrać opcję dla jednorazowy kod dostępu odczytać wiadomość e-mail w przeglądarce.
 
 Aby obsługiwać ten scenariusz, Exchange Online musi być włączony dla usługi Azure Rights Management i nowe możliwości w szyfrowanie wiadomości usługi Office 365. Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [usługi Exchange Online: Konfiguracja usługi IRM](../deploy-use/configure-office365.md#exchange-online-irm-configuration).
 
@@ -193,7 +178,7 @@ Po nadzorowaniu wielu wdrożeń i wysłuchaniu opinii naszych klientów, partner
 Ponieważ usługa Azure Information Protection umożliwia bezpieczne udostępnianie dowolnym osobom, można pozwolić sobie na ambitne podejście do zasięgu ochrony danych. Ale ostrożnego podejścia podczas konfigurowania uprawnień ograniczenia użycia. W przypadku wielu organizacji największe znaczenie biznesowe pochodzi z zapobiegając równocześnie wyciekowi danych przez ograniczenie dostępu do osób w danej organizacji. Oczywiście w razie potrzeby można wprowadzić bardziej szczegółowe ograniczenia — uniemożliwiać drukowanie, edycję itd. Ale zachować szczegółowe ograniczenia jako wyjątek w przypadku dokumentów wymagających naprawdę specjalnej ochrony, a nie implementuje te bardziej restrykcyjnych praw użytkowania na jeden dzień, ale zaplanować podejście etapowe.
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>Jak odzyskać dostęp do plików, które były chronione przez pracownika, który opuścił organizację?
-Użyj [funkcja superużytkowników](../deploy-use/configure-super-users.md), który przyznaje użytkowania Pełna kontrola praw do autoryzowanych użytkowników dla wszystkich dokumentów i wiadomości e-mail, które są chronione przez dzierżawy. Administratorów mogą zawsze odczytać tę chronioną zawartość, a w razie potrzeby usuń ochronę lub Włącz ochronę ponownie dla różnych użytkowników. Ta sama funkcja w razie potrzeby umożliwia autoryzowanym usługom indeksowanie i przeprowadzanie inspekcji plików.
+Użyj [funkcja superużytkowników](../deploy-use/configure-super-users.md), który przyznaje użytkowania Pełna kontrola praw do autoryzowanych użytkowników dla wszystkich dokumentów i wiadomości e-mail, które są chronione przez dzierżawy. Administratorów mogą zawsze odczytać tę chronioną zawartość, a w razie potrzeby usuń ochronę i włącz ponownie jej ochronę dla różnych użytkowników. Ta sama funkcja w razie potrzeby umożliwia autoryzowanym usługom indeksowanie i przeprowadzanie inspekcji plików.
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>Podczas testowania odwołania w witrynie śledzenia dokumentów wyświetlany jest komunikat informujący, że użytkownicy mogą nadal uzyskiwać dostęp do dokumentu przez okres do 30 dni — czy ten okres można skonfigurować?
 

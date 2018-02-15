@@ -4,7 +4,7 @@ description: "Informacje dla użytkowników, którzy uruchamiają klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ea865f91751ed171779c587d1af4cb0f4226a59e
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 201415526b57d691d999ddba6af2451df4d36de4
+ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Podręcznik użytkownika: Tryb tylko do ochrony dla klienta usługi Azure Information Protection
 
@@ -33,6 +33,10 @@ Tryb tylko do ochrony jest uruchamiana w następujących scenariuszach:
 - Twoja organizacja ma subskrypcję usługi Azure Information Protection dla tylko podzestaw użytkowników:
     
     - W przypadku tej mieszanki subskrypcji jest Administratorze spoczywa odpowiedzialność za zapewnienie, że tylko podzestaw użytkowników można używać klasyfikacji i etykietowania funkcji. W pozostałej części użytkownicy powinna być uruchomiona w trybie tylko do ochrony klienta Azure Information Protection. 
+
+- Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale nie ma żadnych etykiet skonfigurowana za użytkownika.
+    
+    - Może się to zdarzyć, gdy wszystkich etykiet globalne zasady są wyłączone konta nie została dodana do zakresie zasad. Może być, ponieważ dział IT po prostu rozpoczął wdrożenie usługi Azure Information Protection, ale nie został jeszcze udostępniony etykiety do klasyfikowania dokumentów i wiadomości e-mail. Do tego czasu można użyć klienta Azure Information Protection do ochrony plików i wyświetlać chronione pliki.
 
 - Organizacja ma subskrypcję usługi Azure Information Protection, ale nie jest możliwe pobranie zasad usługi Azure Information Protection. 
     
