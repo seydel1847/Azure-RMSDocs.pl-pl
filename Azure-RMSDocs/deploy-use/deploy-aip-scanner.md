@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2018
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 02257ddd15886d01aa0e4e8c136078fb21bb4875
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: bfe4074710bd93c92e383056f587994ec805b6c2
+ms.sourcegitcommit: 4234de57201411cd9b292492fddc683df0e6b4cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -50,7 +50,7 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Komputer serwera systemu Windows do uruchamiania usługi skanera:<br /><br />-4 procesory<br /><br />-4 GB pamięci RAM|Windows Server 2016 lub Windows Server 2012 R2. <br /><br />Uwaga: Do celów testowania lub ewaluacji w środowiskach nieprodukcyjnych, możesz użyć systemu operacyjnego klienta systemu Windows, który jest [obsługiwane przez klienta usługi Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Ten komputer może być komputer fizyczny lub wirtualny, która ma szybkie i niezawodne połączenie sieciowe do magazynów danych do przeskanowania. <br /><br />Upewnij się, że ten komputer ma [łączności z Internetem](../get-started/requirements.md#firewalls-and-network-infrastructure) wymaganych dla usługi Azure Information Protection. Lub, musisz skonfigurować go jako [odłączonymi komputerami](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
-|Program SQL Server do przechowywania konfiguracji skanera:<br /><br />-Lokalnego lub zdalnego wystąpienia|SQL Server 2012 jest minimalną wersję dla następujących wersji:<br /><br />-SQL Server Enterprise<br /><br />-SQL Server Standard<br /><br />— Program SQL Server Express|
+|Program SQL Server do przechowywania konfiguracji skanera:<br /><br />-Lokalnego lub zdalnego wystąpienia<br /><br />— Roli Sysadmin Aby zainstalować skanera|SQL Server 2012 jest minimalną wersję dla następujących wersji:<br /><br />-SQL Server Enterprise<br /><br />-SQL Server Standard<br /><br />— Program SQL Server Express<br /><br />Konto, które instaluje skanera wymaga uprawnień do zapisu do wzorca bazy danych (musi być członkiem roli db_datawriter). Proces instalacji przyznaje roli właściciel bazy danych konta usługi z systemem skanera. Alternatywnie można ręcznie utworzyć bazę danych AzInfoProtectionScanner przed zainstalowaniem skanera i przypisać rolę właściciela bazy danych dla konta usługi skanera.|
 |Konto usługi, aby uruchomić usługę skanera|To konto musi być konta usługi Active Directory, który jest synchronizowany z usługą Azure AD, z następujących wymagań dodatkowych:<br /><br />- **Logowanie lokalne** prawo. To prawo jest wymagane do instalacji i konfiguracji skanera, ale nie dla operacji. To prawo, do konta usługi, należy przypisać, ale można usunąć tego prawa, po potwierdzeniu, że skaner można odnajdywania, klasyfikowania i ochrony plików. <br /><br />Uwaga: Jeśli wewnętrznych zasad nie umożliwiają konta usług mają konta to prawo, ale usługa może zostać przydzielony **logowanie w trybie wsadowym** do prawej strony, można spełniają to wymaganie z dodatkowe czynności konfiguracyjne. Aby uzyskać instrukcje, zobacz [określanie i użyj parametru tokenu dla zestawu AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) z podręcznika administratora.<br /><br />- **Zaloguj się jako usługa** prawo. To prawo jest automatycznie przyznawane kontu usługi podczas instalacji skanera, a to prawo jest wymagane do instalacji, konfiguracji i operacji skanera. <br /><br />-Uprawnienia do przechowywania danych: należy przyznać **odczytu** i **zapisu** uprawnienia skanowanie plików, a następnie zastosowanie i ochronę plików, które spełniają warunki określone w Zasady usługi Azure Information Protection. Aby uruchomić skanera odnajdywania tylko w trybie, **odczytu** uprawnienia są wystarczające.<br /><br />— Dla etykiet, które Włącz ponownie ochronę lub usuń ochronę: Aby zapewnić, że skaner zawsze ma dostęp do chronionych plików, należy to konto [superużytkowników](configure-super-users.md) usługi Azure Rights Management usługi i upewnij się, że funkcja superużytkowników jest włączona . Aby uzyskać więcej informacji o wymaganiach dotyczących konta stosowania ochrony, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md).|
 |Skaner usługi Azure Information Protection jest zainstalowany na komputerze serwera systemu Windows|Skaner usługi Azure Information Protection jest obecnie osobny plik do pobrania o nazwie **AzInfoProtectionScanner.exe** na [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Kolejne wersje skanera zostaną uwzględnione w kliencie usługi Azure Information Protection.|
 |Skonfigurowany etykiet, które stosowane automatycznej klasyfikacji oraz opcjonalnie ochrony|Aby uzyskać więcej informacji o sposobie konfigurowania warunki, zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md).<br /><br />Aby uzyskać więcej informacji na temat konfigurowania etykiety w celu zastosowania ochrony plików, zobacz [jak konfigurowanie etykiety pod kątem ochrony usługi Rights Management](configure-policy-protection.md).<br /><br />Etykiety mogą być w globalnych zasad lub co najmniej jednej [zakres zasad](configure-policy-scope.md).|

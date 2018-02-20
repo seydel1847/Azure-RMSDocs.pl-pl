@@ -4,17 +4,17 @@ description: "W przypadku skonfigurowania warunków dla etykiety możesz automat
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 94d7f3a743597ef61472c5b03b5b931a0c1eecd8
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 0e140c66887601964ea4a6d261137600fbaccc33
+ms.sourcegitcommit: 4234de57201411cd9b292492fddc683df0e6b4cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -94,7 +94,7 @@ Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bie�
 5. Na **warunku** bloku, wybierz opcję **typów informacji** Jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **niestandardowy** Jeśli chcesz określić własny:
     - Aby uzyskać **typów informacji**: Wybierz z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
         
-        Typy informacji za pomocą typów informacji czułości zapobiegania (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office. 
+        Typy informacji za pomocą typów informacji czułości zapobiegania (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office.
         
         Lista typów informacji, które można wybierać z portalu Azure jest okresowo zaktualizowano wszelkich nowych dodatków pakietu Office DLP. Jednak listy nie obejmuje żadnych typów niestandardowych informacji poufnych, które zostały zdefiniowane i przekazany jako reguła pakiet Office 365 zabezpieczeń & Centrum zgodności. 
         
@@ -102,7 +102,7 @@ Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bie�
     
     - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
         
-        Wyrażenia regularne użyć wzorców regex usługi Office 365. Aby uzyskać więcej informacji, zobacz [definiujący wyrażenie regularne na podstawie dopasowań](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) w dokumentacji pakietu Office.
+        Wyrażenia regularne użyć wzorców regex usługi Office 365. Aby uzyskać więcej informacji, zobacz [definiujący wyrażenie regularne na podstawie dopasowań](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) w dokumentacji pakietu Office. Ponadto użytkownik może być bardzo przydatne do odwołania [składni wyrażeń regularnych języka Perl](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) z zwiększanie wyniku.
         
 6. Zdecyduj, czy trzeba będzie zmienić **minimalna liczba wystąpień** i **liczba wystąpień tylko unikatowe wartości**, a następnie wybierz **zapisać**. 
     
