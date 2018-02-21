@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a134d6619f67bfc3d26cb1726fe07e8ffca403cd
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 1bee86e8aa119e4ac2c2ef76bd778b6230d78080
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
@@ -43,7 +43,7 @@ Jeśli musisz ręcznie włączyć funkcję superużytkowników, użyj polecenia 
 Chociaż użycie grupy dla superużytkowników jest łatwiejsze w zarządzaniu, należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli więc trzeba przypisać nowego użytkownika jako superużytkownika w celu natychmiastowego odszyfrowania zawartości, dodaj tego użytkownika za pomocą polecenia Add-AadrmSuperUser, zamiast dodawać go do istniejącej grupy skonfigurowanej przy użyciu polecenia Set-AadrmSuperUserGroup.
 
 > [!NOTE]
-> Jeśli jeszcze nie masz zainstalowanego modułu Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+> Jeśli użytkownik nie został jeszcze zainstalowany moduł programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
 
 Najlepsze rozwiązania w zakresie zabezpieczeń dotyczące funkcji superużytkowników:
 

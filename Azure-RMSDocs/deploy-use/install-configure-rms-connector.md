@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3e4aabc3c571ca132327748935ab3aeafa002db0
-ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
+ms.openlocfilehash: 73cbcc73b2ce96b2e41f6fef90d70cee71ee3dff
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
@@ -74,7 +74,7 @@ Można użyć konta, które ma jedno z następujących uprawnień:
     > 
     > Aby uruchomić łącznik usługi RMS z najmniejszymi uprawnieniami, utwórz w tym celu dedykowane konto, dla którego zostanie następnie przypisana rola administratora łącznika usługi Azure RMS w następujący sposób:
     >
-    > 1.  Jeśli jeszcze nie zostało to zrobione, pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+    > 1.  Jeśli jeszcze nie zostało to zrobione, pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
     >
     >     Uruchom program Windows PowerShell za pomocą polecenia **Uruchom jako administrator** i połącz się z usługą Azure RMS za pomocą polecenia [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
     >

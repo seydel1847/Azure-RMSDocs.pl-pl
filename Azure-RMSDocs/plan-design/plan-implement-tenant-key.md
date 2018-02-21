@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9e8b7f3bbebe50fb6f219142a17961dc8b565f6c
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -110,7 +110,7 @@ Poniższa tabela zawiera listę wymagań wstępnych, które należy spełnić, a
 |---------------|--------------------|
 |Dzierżawy usługi Azure Information Protection musi mieć subskrypcję platformy Azure. Jeśli nie masz, możesz zarejestrować się w celu [bezpłatne konto](https://azure.microsoft.com/pricing/free-trial/). <br /><br /> Aby użyć klucza chronionego przez moduł HSM, musi mieć warstwę Premium magazynu kluczy Azure.|Bezpłatna subskrypcja platformy Azure, która zapewnia dostęp do konfigurowania usługi Azure Active Directory i konfiguracji szablonów niestandardowych usługi Azure Rights Management (**Dostęp do usługi Azure Active Directory**) jest niewystarczająca, aby używać usługi Azure Key Vault. Aby sprawdzić, czy masz subskrypcję platformy Azure umożliwiającą korzystanie z funkcji BYOK, użyj poleceń cmdlet programu PowerShell dla usługi [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx): <br /><br /> 1. Uruchom sesję programu Azure PowerShell za pomocą opcji **Uruchom jako administrator** i zaloguj się jako administrator globalny dzierżawcy usługi Azure Information Protection przy użyciu następującego polecenia: `Login-AzureRmAccount`<br /><br />2. Wpisz następujące polecenie i upewnij się, że widzisz wartości nazwy i identyfikatora subskrypcji oraz identyfikatora dzierżawy usługi Azure Information Protection oraz że stan został włączony: `Get-AzureRmSubscription`<br /><br />Jeśli wartości nie zostaną wyświetlone i nastąpi powrót do wiersza polecenia, nie masz subskrypcji platformy Azure umożliwiającej korzystanie z funkcji BYOK. <br /><br />**Uwaga**: oprócz wymagań wstępnych funkcji BYOK do przeprowadzenia migracji z usług AD RMS do usługi Azure Information Protection przy użyciu klucza oprogramowania i klucza sprzętowego wymagane jest oprogramowanie układowe firmy Thales w wersji 11.62 lub nowszej.|
 |Aby użyć klucza chronionego przez moduł HSM, utworzyć lokalnego: wymienione wszystkie wymagania wstępne dotyczące funkcji BYOK magazynu kluczy. |Zobacz [Wymagania wstępne dla funkcji BYOK](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok) w dokumentacji usługi Azure Key Vault. <br /><br /> **Uwaga**: oprócz wymagań wstępnych funkcji BYOK do przeprowadzenia migracji z usług AD RMS do usługi Azure Information Protection przy użyciu klucza oprogramowania i klucza sprzętowego wymagane jest oprogramowanie układowe firmy Thales w wersji 11.62 lub nowszej.|
-|Moduł administracyjny usługi Azure Rights Management dla programu Windows PowerShell.|Instrukcje instalacji znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md). <br /><br />Jeśli ten moduł programu Windows PowerShell został już wcześniej zainstalowany, uruchom następujące polecenie, aby sprawdzić, czy numer wersji to co najmniej **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
+|Moduł administracyjny usługi Azure Rights Management dla programu Windows PowerShell.|Aby uzyskać instrukcje instalacji, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md). <br /><br />Jeśli ten moduł programu Windows PowerShell został już wcześniej zainstalowany, uruchom następujące polecenie, aby sprawdzić, czy numer wersji to co najmniej **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`|
 
 Aby uzyskać więcej informacji o modułach HSM firmy Thales i sposobie ich wykorzystania w usłudze Azure Key Vault, zobacz [witrynę sieci Web firmy Thales](https://www.thales-esecurity.com/msrms/cloud).
 
@@ -124,7 +124,7 @@ Dokonać wyboru pierwszego zgodności, a następnie, aby zminimalizować opóźn
 
 - Ponieważ wszystkie wywołania kryptograficznych dla ochrony powiązane z klucza dzierżawy usługi Azure Information Protection, należy zminimalizować opóźnienia sieci, które ponoszą tych wywołań. W tym celu należy utworzyć magazynu kluczy w tym samym regionie Azure lub wystąpienia jako dzierżawy usługi Azure Information Protection.
 
-Aby określić lokalizację dzierżawy usługi Azure Information Protection, użyj [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) polecenia cmdlet programu PowerShell i zidentyfikować region z adresów URL. Na przykład:
+Aby określić lokalizację dzierżawy usługi Azure Information Protection, użyj [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) polecenia cmdlet programu PowerShell i zidentyfikować region z adresów URL. Przykład:
 
     LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 
@@ -134,11 +134,11 @@ Poniższa tabela umożliwia zidentyfikowanie, które region platformy Azure lub 
 
 |Region platformy Azure lub wystąpienia|Zalecana lokalizacja magazynu kluczy|
 |---------------|--------------------|
-|RMS.**na**. aadrm.com|**Środkowe stany USA Północna** lub **wschodnie stany USA**|
-|RMS.**UE**. aadrm.com|**Europa Północna, Europa** lub **Europa Zachodnia**|
-|RMS.**region**. aadrm.com|**Azja Wschodnia** lub **Azja południowo-wschodnia**|
-|RMS.**sa**. aadrm.com|**Zachodnie stany USA** lub **wschodnie stany USA**|
-|RMS.**govus**. aadrm.com|**Środkowe stany USA** lub **wschodnie stany USA 2**|
+|rms.**na**.aadrm.com|**Środkowe stany USA Północna** lub **wschodnie stany USA**|
+|rms.**eu**.aadrm.com|**Europa Północna, Europa** lub **Europa Zachodnia**|
+|rms.**ap**.aadrm.com|**Azja Wschodnia** lub **Azja południowo-wschodnia**|
+|rms.**sa**.aadrm.com|**Zachodnie stany USA** lub **wschodnie stany USA**|
+|rms.**govus**.aadrm.com|**Środkowe stany USA** lub **wschodnie stany USA 2**|
 
 
 ### <a name="instructions-for-byok"></a>Instrukcje dotyczące strategii BYOK
@@ -151,7 +151,7 @@ Aby utworzyć chronionego przez moduł HSM klucza lokalnie i przenieś ją do ma
 
 Klucz, który jest przechowywany w magazynie kluczy ma klucz identyfikatora. Klucz ten identyfikator jest adres URL, który zawiera nazwę magazynu kluczy, kontener kluczy, nazwę klucza i wersji klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Należy skonfigurować usługę Azure Information Protection, aby użyć tego klucza, podając jego adres URL magazynu kluczy.
 
-Przed usługi Azure Information Protection można użyć klucza, usługa Azure Rights Management musi być autoryzowany do użycia klucza w magazynie kluczy w organizacji. Aby to zrobić, administrator usługi Azure Key Vault używa polecenia cmdlet programu PowerShell dla usługi Key Vault, [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy), i przydziela uprawnienia głównej nazwie usługi Azure Rights Management, używając identyfikatora GUID 00000012-0000-0000-c000-000000000000. Na przykład:
+Przed usługi Azure Information Protection można użyć klucza, usługa Azure Rights Management musi być autoryzowany do użycia klucza w magazynie kluczy w organizacji. Aby to zrobić, administrator usługi Azure Key Vault używa polecenia cmdlet programu PowerShell dla usługi Key Vault, [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy), i przydziela uprawnienia głównej nazwie usługi Azure Rights Management, używając identyfikatora GUID 00000012-0000-0000-c000-000000000000. Przykład:
 
     Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
@@ -159,7 +159,7 @@ Teraz możesz przystąpić do konfigurowania usługi Azure Information Protectio
 
     Connect-AadrmService
 
-Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey), określając adres URL klucza. Na przykład:
+Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey), określając adres URL klucza. Przykład:
 
     Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 

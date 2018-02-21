@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bbbc9a274ea815577109276bceb0b08617f03809
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 727ff705c4a90a9c029820332983b4cf7bec5e05
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection
 
@@ -42,7 +42,7 @@ To ustawienie dotyczy tylko użytkowników końcowych. Administratorzy usługi A
 
 Jeśli ta opcja nie jest już potrzebna, można użyć polecenia [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup). Aby wybiórczo usunąć użytkowników, usuń ich z grupy, pamiętając o [buforowaniu grupy](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Można sprawdzić, czy ta opcja jest obecnie używana, używając polecenia [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup). Aby uruchomić te polecenia cmdlet dla danej konfiguracji grupy, musisz mieć co najmniej wersję **2.10.0.0** modułu Azure Rights Management (AADRM) dla programu PowerShell.
 
-Aby uzyskać więcej informacji na temat każdego z tych poleceń cmdlet, należy użyć podanych linków. Aby uzyskać instrukcje instalacji modułu PowerShell, zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+Aby uzyskać więcej informacji na temat każdego z tych poleceń cmdlet, należy użyć podanych linków. Aby uzyskać instrukcje instalacji modułu programu PowerShell, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
 
 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>Docelowe adresy URL używane przez witryny śledzenia dokumentów

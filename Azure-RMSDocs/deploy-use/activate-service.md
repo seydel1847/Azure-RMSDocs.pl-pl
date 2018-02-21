@@ -4,7 +4,7 @@ description: "Konieczna jest aktywacja usługi Azure Rights Management, zanim Tw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0696f6562cd39542c2447b8b9e897c05e8571525
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 771c94825a8d63feb20985ccdf304e370ec1dc65
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -54,7 +54,7 @@ Aby uzyskać instrukcje jak aktywować praw usługi zarządzania w portalu zarz�
 
 Możesz również użyć programu PowerShell do aktywacji usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]:
 
-1. Zainstaluj narzędzie Azure Rights Management Administration Tool, które instaluje moduł administracyjny usługi Azure Rights Management. Instrukcje znajdują się w sekcji [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+1. Zainstaluj moduł AADRM do konfigurowania i zarządzania usługi ochrony. Aby uzyskać instrukcje, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
 
 2. W sesji programu PowerShell, uruchom [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice)i po wyświetleniu monitu podaj szczegóły konta administratora globalnego dla dzierżawy usługi Azure Information Protection.
 

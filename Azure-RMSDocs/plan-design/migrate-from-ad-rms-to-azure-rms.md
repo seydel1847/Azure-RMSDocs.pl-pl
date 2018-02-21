@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące migracji wdrożenia usług Active Directory 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -140,9 +140,9 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 [**FAZA 1: PRZYGOTOWANIE MIGRACJI**](migrate-from-ad-rms-phase1.md)
 
-- **Krok 1. Pobieranie narzędzia Azure Rights Management Administration Tool i identyfikowanie adresu URL dzierżawy**
+- Krok 1: Instalowanie modułu programu AADRM PowerShell i zidentyfikować adres URL dzierżawy
 
-    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell z modułu usługi Azure RMS, który został zainstalowany przy użyciu narzędzia Azure Rights Management Administration Tool. Musisz także znać adres URL usługi Azure Rights Management swojej dzierżawy, który będzie niezbędny do wykonania wielu kroków migracji. Wartość tę możesz ustalić przy użyciu programu PowerShell.
+    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell w AADRM module. Musisz znać adres URL usługi Azure Rights Management Twojej dzierżawy do wykonania wielu kroków migracji, a można tę wartość tożsamości za pomocą programu PowerShell.
 
 - **Krok 2. Przygotowanie do migracji klientów**
 
