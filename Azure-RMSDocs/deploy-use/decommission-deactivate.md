@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 14887bb14599b24d95a19ee111ec3ab30ea95612
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 87375ba815fb869740e25bc7ab92bafe3be52f6b
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Likwidowanie i dezaktywowanie ochrony usługi Azure Information Protection
 
@@ -45,7 +45,7 @@ Więcej informacji na temat procedur opisanych w tej tabeli można znaleźć w n
 
 - Aby uzyskać instrukcje dotyczące importowania klucza dzierżawy usługi Azure Information Protection jako pliku TPD, zobacz [Dodawanie zaufanej domeny publikacji](https://technet.microsoft.com/library/cc771460.aspx).
 
-- Aby zainstalować moduł programu Windows PowerShell dla usługi Azure Rights Management w celu ustawienia adresu URL migracji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+- Aby zainstalować moduł programu Windows PowerShell dla usługi Azure Rights Management, aby ustawić adres URL migracji, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
 
 - Przy użyciu klienta usługi Azure Information Protection przy użyciu programu PowerShell, zobacz [przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection](../rms-client/client-admin-guide-powershell.md).
 

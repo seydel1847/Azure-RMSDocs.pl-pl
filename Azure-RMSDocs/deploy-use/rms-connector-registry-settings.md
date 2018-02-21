@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8925b2bf7cf599d580f1e3e25a8b96a433bfe8e
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 976493cd23c7690420094f80cade32179c3f7998
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Ustawienia rejestru dla łącznika usługi Rights Management
 
@@ -29,7 +29,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 -   *\<Adres_url_dzierżawy >* jest adres URL usługi Azure Rights Management dla swojej dzierżawy usługi Azure Information Protection. Aby znaleźć tę wartość:
 
-    1.  Uruchom [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) polecenia cmdlet dla usługi Azure Rights Management. Jeśli jeszcze nie zainstalowano modułu Windows PowerShell dla usługi Azure RMS, zobacz temat [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](install-powershell.md).
+    1.  Uruchom [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) polecenia cmdlet dla usługi Azure Rights Management. Jeśli nie został już zainstalowany moduł programu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
 
     2.  Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
 
@@ -79,9 +79,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu Exchange a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*
+- http://*<\ConnectorFQDN>*
 
-- https://*< \ConnectorFQDN >*
+- https://*<\ConnectorFQDN>*
 
 ---
 
@@ -94,9 +94,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu Exchange a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*
+- http://*<\ConnectorFQDN>*
 
-- https://*< \ConnectorFQDN >*
+- https://*<\ConnectorFQDN>*
 
 
 ## <a name="exchange-2010-registry-settings"></a>Ustawienia rejestru dla programu Exchange 2010
@@ -129,9 +129,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu Exchange a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*
+- http://*<\ConnectorFQDN>*
 
-- https://*< \ConnectorFQDN >*
+- https://*<\ConnectorFQDN>*
 
 ---
 
@@ -143,9 +143,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu Exchange a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*
+- http://*<\ConnectorFQDN>*
 
-- https://*< \ConnectorFQDN >*
+- https://*<\ConnectorFQDN>*
 
 
 ## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>Ustawienia rejestru dla programu SharePoint 2016 lub SharePoint 2013
@@ -159,9 +159,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu SharePoint a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*  /_wmcs/licensing
+- http://*<\ConnectorFQDN>*/_wmcs/licensing
 
-- https://*< \ConnectorFQDN >*  /_wmcs/licensing
+- https://*<\ConnectorFQDN>*/_wmcs/licensing
 
 ---
 
@@ -173,9 +173,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu SharePoint a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*  /_wmcs/certification
+- http://*<\ConnectorFQDN>*/_wmcs/certification
 
-- https://*< \ConnectorFQDN >*  /_wmcs/certification
+- https://*<\ConnectorFQDN>*/_wmcs/certification
 
 ---
 
@@ -188,9 +188,9 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu SharePoint a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
 
-- http://*< \ConnectorFQDN >*  /_wmcs/licensing
+- http://*<\ConnectorFQDN>*/_wmcs/licensing
 
-- https://*< \ConnectorFQDN >*  /_wmcs/licensing
+- https://*<\ConnectorFQDN>*/_wmcs/licensing
 
 
 
