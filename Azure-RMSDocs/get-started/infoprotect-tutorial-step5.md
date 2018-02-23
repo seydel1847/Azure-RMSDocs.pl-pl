@@ -41,7 +41,7 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
 4. W polu **Wybieranie użytkowników** wprowadź co najmniej jeden służbowy adres e-mail — tak jak w przypadku wysyłania dokumentu do osoby, z którą współpracuje organizacja. Aby określić więcej niż jeden adres, użyj średnika lub naciśnij klawisz Enter. 
 
-    Upewnij się, określ adres e-mail biznesowych, takich jak ** janetm@contoso.com ** lub ** p.dover@fabrikam.com ** , ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail dla tego Scenariusz. 
+    Upewnij się, określ adres e-mail biznesowych, takich jak **janetm@contoso.com** lub **p.dover@fabrikam.com** , ponieważ obecnie usługa Azure Information Protection nie obsługuje osobistych adresów e-mail dla tego Scenariusz. 
 
     Alternatywnie kliknij **Wybierz użytkowników, grup lub organizacji** ikonę, aby wybrać adres e-mail współpracownika:
 

@@ -35,7 +35,7 @@ Klient usługi RMS może być za darmo dystrybuowany i umieszczany w pakietach z
 - Ustaw klienta usługi RMS jako wymaganie wstępne aplikacji. W przypadku tej opcji może być konieczne udostępnienie użytkownikom dodatkowych instrukcji dotyczących uzyskiwania i instalowania klienta oraz aktualizowania komputerów przy jego użyciu przed rozpoczęciem korzystania z aplikacji.
 
 ## <a name="installing-the-rms-client"></a>Instalowanie klienta usługi RMS
-Klient usługi RMS jest zawarty w pliku wykonywalnym Instalatora o nazwie  **setup_msipc_*\<arch\>*.exe **, gdzie  *\<arch >*jest **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalator 32-bitowej (x 86) nie działa w 64-bitowej instalacji systemu Windows.
+Klient usługi RMS jest zawarty w pliku wykonywalnym Instalatora o nazwie **setup_msipc_*\<arch\>*.exe**, gdzie *\<arch >*jest **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalator 32-bitowej (x 86) nie działa w 64-bitowej instalacji systemu Windows.
 
 > [!NOTE]
 > Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
@@ -48,7 +48,7 @@ Klienta usługi RMS można zainstalować przy użyciu jednej z następujących m
     setup_msipc_x64.exe /quiet
     ```
 
-- **Tryb interaktywny.** Alternatywnie można zainstalować klienta usługi RMS przy użyciu graficznego interfejsu użytkownika Instalatora dostarczonego przez Kreatora instalacji klienta usługi RMS. Aby zainstalować interaktywnego, kliknij dwukrotnie pakiet Instalatora klienta RMS (**setup_msipc_*\<arch\>*.exe **) w folderze, do którego został skopiowany lub pobrany na użytkownika komputer lokalny.
+- **Tryb interaktywny.** Alternatywnie można zainstalować klienta usługi RMS przy użyciu graficznego interfejsu użytkownika Instalatora dostarczonego przez Kreatora instalacji klienta usługi RMS. Aby zainstalować interaktywnego, kliknij dwukrotnie pakiet Instalatora klienta RMS (**setup_msipc_*\<arch\>*.exe**) w folderze, do którego został skopiowany lub pobrany na użytkownika komputer lokalny.
 
 ## <a name="questions-and-answers-about-the-rms-client"></a>Pytania i odpowiedzi dotyczące klienta usługi RMS
 Poniższa sekcja zawiera często zadawane pytania na temat klienta usługi RMS oraz odpowiedzi na nie.
