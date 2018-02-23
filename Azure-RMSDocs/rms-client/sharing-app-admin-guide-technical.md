@@ -101,7 +101,7 @@ Możesz też wymusić blokowanie ochrony plików przez aplikację RMS sharing. W
 
 W celu skonfigurowania aplikacji RMS sharing, aby stosowała ochronę ogólną do wszystkich plików, które domyślnie byłyby chronione natywnie, wprowadź w rejestrze następujące zmiany. Zwróć uwagę, że jeśli klucze RmsSharingApp lub FileProtection nie istnieją, należy je utworzyć ręcznie.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Utwórz nowy klucz o nazwie *.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Utwórz nowy klucz o nazwie \*.
 
     To ustawienie oznacza pliki z dowolnym rozszerzeniem nazwy pliku.
 
