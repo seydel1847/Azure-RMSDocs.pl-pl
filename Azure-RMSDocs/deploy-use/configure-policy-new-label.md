@@ -4,17 +4,17 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: cb7af6831040bb42a3c7e3a7e8ea355f72fc433c
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 5fb49e5472ea200a7c19e240585940bcf440278c
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
@@ -28,7 +28,7 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
-    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
 2. W przypadku nowej etykiety, który chcesz dodać dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
     

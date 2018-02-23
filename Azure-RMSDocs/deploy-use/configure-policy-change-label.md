@@ -4,17 +4,17 @@ description: "Dowolne etykiety, które użytkownicy widzą na pasku usługi Info
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: e289bf3f36bda1728b89c756db5afbcac126f3f1
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: da89ea5986ac78cdf79e97336d74c54e9db2a825
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 
@@ -28,7 +28,7 @@ Aby zmienić etykietę, użyj poniższych instrukcji:
 
 1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
 2. Aby zmienić etykietę globalne zasady, że jest ona stosowana do wszystkich użytkowników, wybierz etykietę do zmiany z **usługi Azure Information Protection — globalne zasady** bloku oraz wszelkich kolejnych blokach wedle potrzeb. Aby zmienić etykietę z [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy, najpierw wybierz **zakres zasad** z **zasady** zaznaczenia menu. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
 

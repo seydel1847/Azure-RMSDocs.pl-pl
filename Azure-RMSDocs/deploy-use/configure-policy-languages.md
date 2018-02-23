@@ -4,17 +4,17 @@ description: "Możesz dodać obsługę innych języków dla etykiet, które uży
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: f57b3802386aced71967a5ab619cdabf2fd67a37
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: dee720e99a3671dec788e048fac6f28c3992daa0
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować szablony dla różnych języków i etykiety usługi Azure Information Protection
 
@@ -42,7 +42,7 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
 
 1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
-    Na przykład w menu centralnym kliknij pozycję **Więcej usług** i w polu filtru zacznij wpisywać ciąg **Information**. Wybierz pozycję **Azure Information Protection**.
+    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
 2. Z **ZARZĄDZAJ** zaznaczenia menu, wybierz opcję **języków**.
 

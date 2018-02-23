@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań lub problemów, które może mieć organi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bf2b22e7297a18c035431ef42359c305095f33d
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 76ffef5259d9ecc16f78cbcde40862d7686b714c
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Jakie problemy rozwiązuje usługa Azure RMS?
 
@@ -35,7 +35,7 @@ Azure RMS to technologia ochrony używana przez usługę [Azure Information Prot
 |Obsługa powszechnie używanych urządzeń, nie tylko komputerów z systemem Windows|√ [Obsługiwane urządzenia](../get-started/requirements-client-devices.md) obejmują:<br /><br />— komputery i telefony z systemem Windows<br /><br />— komputery Mac<br /><br />— tablety i telefony z systemem iOS<br /><br />— tablety i telefony z systemem Android|
 |Obsługa współpracy między firmami (B2B)|√ Ponieważ Azure Rights Management to usługa w chmurze, nie istnieje potrzeba jawnego konfigurowania relacji zaufania z innymi organizacjami przed udostępnieniem im chronionej zawartości. Jeżeli korzystają już one z usługi Office 365 lub katalogu usługi Azure AD, współpraca między organizacjami jest obsługiwana automatycznie. W przeciwnym razie użytkownicy mogą rejestrować się w ramach darmowej subskrypcji [usługi RMS dla osób indywidualnych](rms-for-individuals.md).|
 |Obsługa usług lokalnych, jak również usługi Office 365|√ Oprócz [bezproblemowej współpracy z usługą Office 365](office-apps-services-support.md) po wdrożeniu [łącznika usługi RMS](../deploy-use/deploy-rms-connector.md) można także korzystać z usługi Azure Rights Management w połączeniu z następującymi usługami lokalnymi:<br /><br />— Exchange Server<br /><br />— SharePoint Server<br /><br />— System Windows Server z uruchomioną infrastrukturą klasyfikacji plików|
-|Łatwa aktywacja|√ [Aktywowanie usługi Rights Management](../deploy-use/activate-service.md) dla użytkowników wymaga zaledwie kilku kliknięć w portalu zarządzania. Jeśli wolisz posługiwać się wierszem poleceń, wystarczą dwa polecenia w oknie programu PowerShell.|
+|Łatwa aktywacja|√ Dla nowych subskrypcji, aktywacji jest automatyczny. Dla istniejącej subskrypcji [aktywowanie usługi Rights Management](../deploy-use/activate-service.md) wymaga zaledwie kilku kliknięć w portalu zarządzania. Jeśli wolisz posługiwać się wierszem poleceń, wystarczą dwa polecenia w oknie programu PowerShell.|
 |Dostosowana do potrzeb możliwość skalowania w organizacji|√ Ponieważ Azure Rights Management to usługa w chmurze, której elastyczność skalowania w górę i w dół zapewnia platforma Azure, nie trzeba aprowizować ani wdrażać dodatkowych serwerów lokalnych.|
 |Możliwość tworzenia prostych i elastycznych zasad|√ [dostosowane szablony ochrony](../deploy-use/configure-policy-templates.md) stanowią rozwiązanie szybkie i łatwe, Administratorzy mogą stosować zasady, a użytkownicy mogą stosować odpowiedni poziom ochrony dla każdego dokumentu i ograniczyć dostęp do osób wewnątrz organizacji.<br /><br />Na przykład dokument strategii dla całej firmy może być udostępniony wszystkim pracownikom z zastosowaniem zasady tylko do odczytu dla wszystkich pracowników wewnętrznych. Natomiast dostęp do bardziej poufnego dokumentu, takiego jak raport finansowy, może zostać ograniczony tylko do dyrektorów.|
 |Szerokie wsparcie aplikacji|√ Usługa Azure Rights Management ściśle integruje się z aplikacjami i usługami Microsoft Office, a także oferuje rozszerzone wsparcie dla innych aplikacji za pomocą [klienta usługi Azure Information Protection](../rms-client/aip-client.md ).<br /><br />√ Zestawy [Azure Information Protection SDK](../develop/developers-guide.md) dostarczają wewnętrznym deweloperom i dostawcom oprogramowania interfejsy API do programowania niestandardowych aplikacji do udostępniania usługi RMS.<br /><br />Aby uzyskać więcej informacji, zobacz artykuł [Inne aplikacje, które obsługują interfejsy API usługi Rights Management](api-support.md).|

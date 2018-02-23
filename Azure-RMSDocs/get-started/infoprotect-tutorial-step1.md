@@ -4,28 +4,28 @@ description: "Krok 1 samouczka wprowadzającego, można szybko wypróbować usł
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 30f86870bb2302ff61641ffa4c10e3da6b5c3f9b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 952431771e89e934be4a725ece4f3d9cd47165fe
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="step-1-activate-protection"></a>Krok 1: Aktywowanie ochrony
  
 >*Dotyczy: Azure Information Protection*
 
 > [!NOTE]
->Nawet jeśli już aktywowano usługę Azure Rights Management dla swojej dzierżawy, należy wykonać ten krok, aby potwierdzić stan aktywacji. Instrukcje zawierają logowanie do portalu Azure i Tworzenie bloku Azure Information Protection, aby przejść do kroku 2. 
+>Nawet wtedy, gdy usługa usługi Azure Rights Management została aktywowana dla Twojej dzierżawy, należy wykonać ten krok, aby potwierdzić stan aktywacji. Instrukcje zawierają logowanie do portalu Azure i Tworzenie bloku Azure Information Protection, dzięki czemu możesz przejść do kroku 2.
 
-Po aktywowaniu usługi Azure Rights Management możesz chronić najbardziej poufne dokumenty i wiadomości e-mail organizacji oraz śledzić wykorzystanie chronionych dokumentów po udostępnieniu ich innym osobom. Istnieją różne sposoby ochrony, można uaktywnić obejmujące przy użyciu programu Windows PowerShell i portale administratora.
+Po aktywowaniu usługi Azure Rights Management, można chronić najbardziej poufne dokumenty i wiadomości e-mail w organizacji. Można także śledzić, jak te dokumenty chronione są używane podczas udostępniać innym użytkownikom. 
 
-W tym samouczku użyjemy portalu Azure etykiety dla użytkowników należy również skonfigurować. 
+Istnieją różne sposoby aktywacji ochrony. Można użyć programu PowerShell i portale administratora. Jednak w tym samouczku używamy portalu Azure etykiety dla użytkowników należy również skonfigurować. 
 
 ## <a name="to-activate-the-azure-rights-management-service"></a>Aby aktywować usługę Azure Rights Management
 
@@ -33,11 +33,11 @@ W tym samouczku użyjemy portalu Azure etykiety dla użytkowników należy równ
     
     Jeśli nie jesteś administratorem globalnym, możesz użyć jednego z następujących [ról administracyjnych](/azure/active-directory/active-directory-assign-admin-roles-azure-portal): **administratora ochrony informacji** lub **Administrator zabezpieczeń**.
 
-2. W menu centralnym kliknij przycisk **Nowy**, a następnie z listy **MARKETPLACE** wybierz opcję **Zabezpieczenia i tożsamość**. 
+2. W menu centralnym kliknij **Utwórz zasób**, a następnie, z **MARKETPLACE** listy, wybierz **bezpieczeństwo i Obsługa tożsamości**. 
     
 3.  Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.
     
-    Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **więcej usług** listy. 
+    Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **wszystkie usługi** listy. 
     
     > [!TIP] 
     > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
