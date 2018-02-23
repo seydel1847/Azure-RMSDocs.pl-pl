@@ -4,7 +4,7 @@ description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skon
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 67d38d19408c67c5da8db188395e00a7d3f9d999
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -63,11 +63,11 @@ Aby zalogować się do portalu Azure, do konfigurowania i zarządzania usługi A
 
 1. Zaloguj się do witryny Azure Portal.
 
-2. W menu centralnym kliknij przycisk **Nowy**, a następnie z listy **MARKETPLACE** wybierz opcję **Zabezpieczenia i tożsamość**. 
+2. W menu centralnym kliknij **Utwórz zasób**, a następnie, z **MARKETPLACE** listy, wybierz **bezpieczeństwo i Obsługa tożsamości**. 
     
 3. Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.
     
-    Ta akcja tworzy **usługi Azure Information Protection** bloku dla dzierżawy, dzięki czemu przy następnym logowaniu do portalu, możesz wybrać usługę z koncentratora **więcej usług** listy. 
+    Ta akcja tworzy **usługi Azure Information Protection** bloku dla dzierżawy, dzięki czemu przy następnym logowaniu do portalu, możesz wybrać usługę z koncentratora **wszystkie usługi** listy. 
     
     > [!TIP] 
     > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
@@ -80,7 +80,7 @@ Następny czas dostępu **usługi Azure Information Protection** bloku, powoduje
 
 1. Upewnij się, że użytkownik jest zalogowany do portalu Azure za pomocą jednej z tych ról administracyjnych: Administrator ochrony informacji, zabezpieczeń administratora lub administratora globalnego. Zobacz [powyższej sekcji](#signing-in-to-the-azure-portal) uzyskać więcej informacji o tych ról administracyjnych.
 
-2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: na przykład, w menu centralnym kliknij **więcej usług** i zacznij wpisywać ciąg **Information Protection** w Pole filtru. Spośród wyników wybierz **Azure Information Protection**. 
+2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **Information Protection** w Pole filtru. Spośród wyników wybierz **Azure Information Protection**. 
     
     **Usługi Azure Information Protection — globalne zasady** Wyświetl i Edytuj globalne zasady, które wszystkim użytkownikom uzyskiwanie automatycznie zostanie otwarty blok. 
     

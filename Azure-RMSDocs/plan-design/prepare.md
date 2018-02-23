@@ -4,7 +4,7 @@ description: "Sprawdź, czy masz konta użytkowników i grup, których potrzebuj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: de06bc202ff60e6850ba217fe7ded79c0753d925
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 45f75834d687247808107708e082ff61d8510899
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -43,8 +43,8 @@ W przypadku tworzenia użytkowników i grup za pomocą pierwszych trzech metod z
 Istnieją trzy scenariusze dotyczące korzystania z użytkowników i grup w usłudze Azure Information Protection:
 
 - **Do przypisywania etykiety użytkownikom** użycia etykietowania i klasyfikacji. Tylko administratorzy wybierz tych grup:
-
-    - Domyślne zasady usługi Azure Information Protection są automatycznie przypisywane do wszystkich użytkowników w usłudze Azure AD dla dzierżawy. Można jednak również przypisać dodatkowe etykiety do określonych użytkowników lub grup, korzystając z zasad w zakresie.     
+    
+    - Domyślne zasady usługi Azure Information Protection są automatycznie przypisywane do wszystkich użytkowników w usłudze Azure AD dla dzierżawy. Można jednak również przypisać dodatkowe etykiety do określonych użytkowników lub grup, korzystając z zasad w zakresie.
 
 - **Do przypisywania praw użytkowania i kontroli dostępu** w przypadku chronienia dokumentów i wiadomości e-mail przy użyciu usługi Azure Rights Management. Tych użytkowników i grupy mogą wybierać administratorzy i użytkownicy:
 
@@ -220,6 +220,12 @@ Pamiętaj, aby uwzględnić to opóźnienie podczas zmiany lub testowania wykona
 
 ## <a name="next-steps"></a>Następne kroki
 
-Po potwierdzeniu, że użytkownicy i grupy mogą być używane w usłudze Azure Information Protection i wszystko jest gotowe do objęcia dokumentów i wiadomości e-mail ochroną, aktywuj usługę Rights Management, aby włączyć tę usługę ochrony danych. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
+Po potwierdzeniu, że użytkowników i grup, które mogą być używane z usługi Azure Information Protection i wszystko jest gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, sprawdź, czy chcesz aktywować usługę Azure Rights Management. Ta usługa musi być aktywowana, aby chronić dokumenty i wiadomości e-mail w organizacji: 
+
+- Począwszy od lutego 2018: Jeśli subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection został uzyskany podczas lub po tym miesiącu, usługa automatycznie została aktywowana dla Ciebie. 
+
+- Jeśli w Twojej subskrypcji został uzyskany wcześniej lutego 2018:, musisz aktywować usługę samodzielnie. 
+
+Aby uzyskać więcej informacji, łącznie z sprawdzania stanu aktywacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

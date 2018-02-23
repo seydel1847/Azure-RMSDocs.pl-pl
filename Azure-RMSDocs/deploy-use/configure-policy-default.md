@@ -4,17 +4,17 @@ description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -30,7 +30,7 @@ Możesz odwołać się do poniższych wartości, aby powrócić do ustawień dom
 
 Jest to wersja lub domyślne zasady z 31 lipca 2017 r.
 
-Ta zasada domyślna jest tworzony tylko wtedy, gdy usługa Azure Rights Management została aktywowana, podczas tworzenia zasady. Jeśli ta usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących etykiety podrzędne:
+Ta zasada domyślna jest tworzony tylko wtedy, gdy usługa Azure Rights Management [aktywowany](activate-service.md) podczas tworzenia zasady. Jeśli ta usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących sublabels:
 
 - **Poufne\Wszyscy pracownicy**
 
@@ -40,13 +40,13 @@ Ta zasada domyślna jest tworzony tylko wtedy, gdy usługa Azure Rights Manageme
 
 - **Poufny \ odbiorców** 
 
-Gdy te etykiety podrzędne nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taki sam jak [poprzedniego domyślne zasady](#default-policy-before-july-31-2017).
+Gdy sublabels te nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taki sam jak [poprzedniego domyślne zasady](#default-policy-before-july-31-2017).
 
-Jeśli ochrona jest stosowana do **wszyscy pracownicy** etykiety podrzędne, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
+Jeśli ochrona jest stosowana do **wszyscy pracownicy** sublabels, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
 Począwszy od 30 sierpnia 2017 ta wersja domyślna zasada zawiera wersje obsługi wielu języków etykieta nazwy i opisy. 
 
-#### <a name="more-information-about-the-recipients-only-sub-label"></a>Więcej informacji na temat odbiorców tylko etykieta podrzędna
+#### <a name="more-information-about-the-recipients-only-sublabel"></a>Więcej informacji na temat sublabel tylko do adresatów
 
 Użytkownicy widzą tę etykietę tylko w programie Outlook. Nie widzą tę etykietę w programie Word, Excel, PowerPoint lub w Eksploratorze plików. 
 
@@ -64,7 +64,7 @@ Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj 
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sub-labels"></a>Etykiety podrzędne
+### <a name="sublabels"></a>Sublabels
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -117,7 +117,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sub-labels"></a>Etykiety podrzędne
+### <a name="sublabels"></a>Sublabels
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -157,7 +157,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail):<br /><br /> Ważność: Tajne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sub-labels"></a>Etykiety podrzędne
+### <a name="sublabels"></a>Sublabels
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|

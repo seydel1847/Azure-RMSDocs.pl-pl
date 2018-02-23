@@ -4,7 +4,7 @@ description: "Zadania administracyjne w skrócie w portalu Azure, używany w kla
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 5f160d766abb4a81864ac1ff466362b8ae24027d
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które są używane z klasycznego portalu Azure
 
@@ -37,7 +37,7 @@ Jednak klienci, którzy mają subskrypcji dla Office 365 instytucji rządowych S
 
 |Klasyczny portal Azure|Sposób wykonania tego zadania w portalu Azure
 |-----------|--------------------|
-|Dostęp do ustawień konfiguracji po raz pierwszy|1. [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. W menu centralnym kliknij przycisk **Nowy**, a następnie z listy **MARKETPLACE** wybierz opcję **Zabezpieczenia i tożsamość**.<br /><br />3. Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.<br /><br />Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **więcej usług** listy.
+|Dostęp do ustawień konfiguracji po raz pierwszy|1. [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. W menu centralnym kliknij **Utwórz zasób**, a następnie, z **MARKETPLACE** listy, wybierz **bezpieczeństwo i Obsługa tożsamości**.<br /><br />3. Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.<br /><br />Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **wszystkie usługi** listy.
 |Utwórz nowy szablon|Utworzyć etykietę, która ma zastosowanie ochrony, a następnie użyj **ustawić uprawnienia** do definiowania uprawnień, wygaśnięcia i dostęp w trybie offline. <br /><br />W obszarze obejmuje ta konfiguracja tworzy nowy szablon niestandardowy, które mają dostęp przez usługi i aplikacje, które integrują się z szablonami usługi Rights Management.<br /><br />Aby uzyskać więcej informacji, zobacz [do utworzenia nowego szablonu](configure-policy-templates.md#to-create-a-new-template).
 |Edytowanie właściwości szablonu: <br /><br />-Nazwa i opis szablonu<br /><br />— Prawa do użytkowania, wygaśnięcia zawartości i ustawień dostępu w trybie offline|Jeśli jeszcze tego nie zrobiono, [przekonwertować szablon na etykiecie](configure-policy-templates.md#to-convert-templates-to-labels), a następnie wykonaj następujące czynności<br /><br />1. Zmień nazwę etykiety i opis<br /><br />2. Zmień ustawienia ochrony na etykiecie aktualizacji uprawnień, wygaśnięcia i ustawień dostępu w trybie offline.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety dla ochrony usługi Rights Management](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
 |Archiwizowanie szablonu|Ustaw stan etykiety na **wyłączone**.
