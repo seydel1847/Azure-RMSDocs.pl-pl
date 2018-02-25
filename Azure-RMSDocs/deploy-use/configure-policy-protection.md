@@ -4,17 +4,17 @@ description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e4f4ced3495af71cd36caf8fc54258cd77befd99
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: b5184921dceba060f600590533e7d429d59c7be4
+ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -60,10 +60,14 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
 4. Na **etykiety** bloku zlokalizować **ustawić uprawnień dla dokumentów i wiadomości e-mail zawierających tę etykietę** i wybierz jedną z następujących opcji:
     
     - **Nieskonfigurowane**: wybierz tę opcję, jeśli etykieta jest obecnie skonfigurowana do stosowania ochrony i już nie chcesz, aby wybrana etykieta korzystała z ochrony. Następnie przejdź do kroku 11.
+        
+        Ochronę wcześniej skonfigurowane ustawienia są przechowywane jako szablon zarchiwizowane ochrony i pojawi się ponownie po zmianie opcji z powrotem do **Chroń**. Nie ma tego szablonu w portalu Azure, ale w razie potrzeby można nadal zarządzać szablonu, za pomocą [PowerShell](configure-templates-with-powershell.md). Oznacza to zachowanie, że zawartość pozostaje dostępna, jeśli ma ona tej etykiety z ustawieniami wcześniej zastosowana ochrona.
     
     - **Chroń**: wybierz tę opcję, aby zastosować ochronę, a następnie przejdź do kroku 5.
     
     - **Usuń ochronę**: Wybierz tę opcję, aby usunąć ochronę, jeśli jest chroniony dokument lub wiadomość e-mail. Następnie przejdź do kroku 11.
+        
+        Ochronę wcześniej skonfigurowane ustawienia są przechowywane jako szablon zarchiwizowane ochrony i pojawi się ponownie po zmianie opcji z powrotem do **Chroń**. Nie ma tego szablonu w portalu Azure, ale w razie potrzeby można nadal zarządzać szablonu, za pomocą [PowerShell](configure-templates-with-powershell.md). Oznacza to zachowanie, że zawartość pozostaje dostępna, jeśli ma ona tej etykiety z ustawieniami wcześniej zastosowana ochrona.
         
         Należy pamiętać, że dla użytkowników do zastosowania etykiety, która ma tę opcję, ich musi mieć uprawnienia do usuwania ochrony usługi Rights Management. Wymaganie to oznacza, że użytkownicy muszą mieć **wyeksportować** lub **Pełna kontrola** [prawa użytkowania](../deploy-use/configure-usage-rights.md). Lub musi być właścicielem usługi Rights Management (który automatycznie przyzna prawo użytkowania Pełna kontrola) lub być [superużytkowników usługi Azure Rights Management](../deploy-use/configure-super-users.md). Domyślne szablony usługi Azure Rights Management nie zawierają praw użytkowania, które pozwalają użytkownikom usunięcia ochrony. 
         
@@ -113,7 +117,7 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
     W razie potrzeby można teraz dodać drugi zestaw użytkowników i grup z prawami użytkowania. Powtórz określono wszyscy użytkownicy i grupy z odpowiednimi uprawnieniami.
 
     >[!TIP]
-    >Rozważ dodanie **Kopiuj i Wyodrębnij zawartość** uprawnień niestandardowych oraz uprawnienie to można przyznać administratorom odzyskiwania danych i personelu w innych ról, których obowiązki odzyskiwania informacji. W razie potrzeby Ci użytkownicy mogą następnie usuń ochronę plików i wiadomości e-mail, które będą chronione przy użyciu tej etykiety lub szablonu. Możliwość usunięcia ochrony na poziomie uprawnień do dokumentu lub wiadomości e-mail, zapewnia bardziej szczegółową kontrolę niż [funkcja superużytkowników](configure-super-users.md).
+    >Rozważ dodanie **Zapisz jako, Eksportuj (EKSPORTUJ)** uprawnień niestandardowych oraz uprawnienie to można przyznać administratorom odzyskiwania danych i personelu w innych ról, których obowiązki odzyskiwania informacji. W razie potrzeby Ci użytkownicy mogą następnie usuń ochronę plików i wiadomości e-mail, które będą chronione przy użyciu tej etykiety lub szablonu. Możliwość usunięcia ochrony na poziomie uprawnień do dokumentu lub wiadomości e-mail, zapewnia bardziej szczegółową kontrolę niż [funkcja superużytkowników](configure-super-users.md).
     
     Dla wszystkich użytkowników i grup, które można określić na **ochrony** bloku teraz Sprawdź, czy chcesz wprowadzić zmiany w następujących ustawieniach. Pamiętaj, że te ustawienia, tak jak uprawnienia, nie mają zastosowania do [wystawcy ani właściciela w usłudze Rights Management](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner), ani żadnego przypisanego przez Ciebie [administratora](configure-super-users.md).
     
