@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/16/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: bfe4074710bd93c92e383056f587994ec805b6c2
-ms.sourcegitcommit: 4234de57201411cd9b292492fddc683df0e6b4cc
+ms.openlocfilehash: badc9ea2db84e0537ab394ccb616c0d172469e35
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -202,7 +202,10 @@ Dla pierwszego cyklu skanowania skaner sprawdza wszystkie pliki w magazynie dany
 
 Możesz wymusić skanera, aby ponownie sprawdzić wszystkie pliki, uruchamiając [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) z `-Type` ustawiona **pełne**. Ta konfiguracja jest użyteczna, jeśli raporty mają obejmować wszystkie pliki i jest zwykle używany podczas pracy w trybie odnajdowania skanera. Po zakończeniu pełnego skanowania typu skanowania automatycznie zmienia się przyrostowe tak, aby w przypadku kolejnych skanowania są skanowane tylko nowe lub zmodyfikowane pliki.
 
-Ponadto wszystkie pliki są kontrolowane podczas skanera pobierania zasad usługi Azure Information Protection, zawierający nowe lub zostały zmienione warunki. Skaner odświeża zasady, co godzinę i po uruchomieniu usługi.
+Ponadto wszystkie pliki są kontrolowane podczas skanera pobierania zasad usługi Azure Information Protection, zawierający nowe lub zostały zmienione warunki. Skaner odświeża zasady co godzinę, a usługa zostanie uruchomiona i zasady jest starsza niż jedna godzina.
+
+> [!TIP]
+> Jeśli należy odświeżyć zasady wcześniej niż ten interwał jednej godziny, na przykład w okresie testowym: ręcznie usuń plik zasad **%LocalAppData%\Microsoft\MSIP\Policy.msip**i ponownie uruchomić skanera informacji Azure Usługa.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optymalizacja wydajności skanera usługi Azure Information Protection
 

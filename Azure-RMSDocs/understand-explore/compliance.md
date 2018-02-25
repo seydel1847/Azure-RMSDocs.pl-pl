@@ -4,7 +4,7 @@ description: "Dodatkowe informacje na temat usługi Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1157eaff62100d4c47dd00c1ef1d99ea50c064c
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
 
 Usługa Azure Information Protection obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure Information Protection, ale niedotyczących sposobu korzystania z usługi Azure Information Protection, sprawdź następujące zasoby:
+
+## <a name="suitability-for-different-countries"></a>Przydatności dla różnych krajów
+
+Mając zmienności między przepisom eksportowym obowiązującym w różnych krajach, innych przypadków użycia i scenariusze i różne wymagania dotyczące między różne sektory, należy zapoznać się z doradca prawny ma pomóc odpowiedzieć czy Azure Ochrona informacji jest odpowiednie dla danego kraju.
+
+Jednak niektóre istotne informacje, które mogą ułatwić z doradcą prawnym wykonać oznaczenie:
+
+- Usługa Azure Information Protection używa AES 256 i AES 128 do szyfrowania dokumentów. [Więcej informacji](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- Wszystkie klucze szyfrowania używany przez usługę Azure Information Protection są chronione przy użyciu klucza głównego właściwe dla klienta, który używa szyfrowania RSA 2048 bitów. Szyfrowanie RSA 1024, ale jest również obsługiwane dla zapewnienia zgodności. [Więcej informacji](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- Klucze główne właściwe dla klienta są zarządzane przez firmę Microsoft lub udostępnione przez klienta w module HSM firmy Thales przy użyciu "[własnego klucza](../plan-design/plan-implement-tenant-key.md)" (BYOK). Usługa Azure Information Protection obsługuje również ograniczoną funkcjonalność przy użyciu lokalnego klucza za pomocą "[przechowywać własny klucz](../deploy-use/configure-adrms-restrictions.md)" (HYOK) dla zawartości, których dotyczy wymagania, które wskazują, że jej nie powinien być chroniony za klucz oparte na chmurze.
+
+- Usługa Azure Information Protection znajduje się w regionalnych centrach danych na całym świecie. Azure Information Protection kluczy i zasady zawsze pozostają w regionie, w którym pierwotnie została wdrożona.
+ 
+- Usługa Azure Information Protection nie przesyła zawartości dokumentu z klientów do usługi Azure Information Protection. Zawartości operacje szyfrowania i odszyfrowywania są wykonywane w miejscu na urządzeniu klienckim. Lub dla opartych na usługach renderowania operacje te są wykonywane w ramach usługi, która jest renderowania zawartości. [Więcej informacji](../understand-explore/how-does-it-work.md)
 
 ## <a name="legal-and-privacy"></a>Informacje prawne i ochrona prywatności
 

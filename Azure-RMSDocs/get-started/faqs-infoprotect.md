@@ -4,7 +4,7 @@ description: "Masz pytanie związane z usługą Azure Information Protection, kt
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: b9885f020f78bd20bec39c8c1ede2018d6254a7b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 64daf1510ebec26f3f0604b726045933ebc31e4e
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -54,8 +54,11 @@ Użytkownicy mogą jednocześnie wybrać tylko jedną etykietę dla każdego dok
 
 Na przykład etykieta **poufne** może zawierać takie jak sublabels **prawne** i **Finance**. Aby te sublabels można stosować różne wizualne oznaczenia klasyfikacji i różne szablony usługi Rights Management. Nie można wybrać użytkownika **poufne** etykiety samodzielnie; tylko jeden z jego sublabels, takich jak **prawne**. W efekcie widzi on, że została ustawiona etykieta **Tajne\Prawne**. Metadane dla tego pliku zawierają jedną niestandardową właściwość tekstową dla etykiety **Poufne**, jedną niestandardową właściwość tekstową dla etykiety **Prawne** i jeszcze jedną właściwość, która zawiera obie wartości (**Poufne Prawne**). 
 
-Gdy używasz sublabels nie skonfigurować oznaczenia wizualne, ochronę i warunki w głównej etykiety. Korzystając z poziomów podrzędnych, należy skonfigurować te ustawienia na sublabel tylko. Jeśli te ustawienia można skonfigurować na etykiecie głównej i jego sublabel, ustawienia w sublabel mają pierwszeństwo.
+Gdy używasz sublabels nie skonfigurować oznaczenia wizualne, ochronę i warunki w głównej etykiety. Gdy używasz poziomy podrzędne, skonfiguruj te ustawienia na sublabel tylko. Jeśli te ustawienia można skonfigurować na etykiecie głównej i jego sublabel, ustawienia w sublabel mają pierwszeństwo.
 
+## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>Jak zapobiec ktoś z usunięcie lub zmiana etykiety
+
+Mimo że [ustawienie zasad](../deploy-use/configure-policy-settings.md) który wymaga od użytkowników do stanu Dlaczego obniżenia etykiety klasyfikacji, usuwanie etykietę, lub usunięcie ochrony, to ustawienie nie zapobiega te akcje. Aby uniemożliwić użytkownikom usuwanie lub zmiana etykiety, musi już chronione zawartości i uprawnienia ochrony nie Przyznaj użytkownikowi, eksportu lub Pełna kontrola [prawa użytkowania](../deploy-use/configure-usage-rights.md). 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
 Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, załączniki te nie odziedziczą tej samej etykiety. Załączniki pozostaną bez etykiety lub zachowają oddzielnie przydzieloną etykietę. Jednak jeśli etykieta wiadomości e-mail zawiera ochronę, ochrona ta jest stosowana także do załączników.
