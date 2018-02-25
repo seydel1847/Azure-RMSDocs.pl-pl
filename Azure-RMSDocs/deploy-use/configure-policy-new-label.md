@@ -4,14 +4,14 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 5fb49e5472ea200a7c19e240585940bcf440278c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 8628fa5b17659a49ff9f63ae6dad32f073e8ced6
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 02/23/2018
@@ -23,6 +23,8 @@ ms.lasthandoff: 02/23/2018
 Usługa Azure Information Protection zawiera domyślne etykiety z możliwością dostosowania, ale możesz też utworzyć własne etykiety, które użytkownicy zobaczą na pasku usługi Information Protection.
 
 Możesz dodać nową etykietę, lub Dodaj nowe sublabel do istniejącej etykiety, jeśli potrzebujesz dodatkowego poziomu klasyfikacji. Na przykład ostatnia etykieta w [domyślne zasady](configure-policy-default.md), zawiera sublabels.
+
+Po utworzeniu pierwszego sublabel dla etykiety, użytkownicy mogą wybrać już, oryginalne, nadrzędny etykiety. W razie potrzeby utwórz nowe sublabel do ponownego utworzenia ustawień obszaru nadrzędny etykiety, dzięki czemu użytkownicy mogą stosować te same ustawienia.
 
 Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure Information Protection.
 
