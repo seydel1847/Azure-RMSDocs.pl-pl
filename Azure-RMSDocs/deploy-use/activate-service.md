@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4817736329fe78084d66467f68ea2f5392ec95e2
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d521b105b3cc8077a5e30a825007e18f9b5a59f0
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -36,7 +36,7 @@ Po aktywowaniu usługi Azure Rights Management dla usługi Azure Information Pro
 
 Jeśli masz plan usługi, która obejmuje usługę Azure Rights Management, użytkownik może utracić aktywowanie usługi:
 
-- Jeśli subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection jest prefiksem uzyskanym w lub po **2018 lutego**, usługa automatycznie została aktywowana dla Ciebie. Nie masz aktywować usługę, chyba że zostanie lub innego administratora globalnego Twojej organizacji dezaktywować usługę Azure Rights Management.
+- Jeśli uzyskano subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection pod koniec **2018 lutego** lub później, usługa automatycznie została aktywowana dla Ciebie. Nie masz aktywować usługę, chyba że zostanie lub innego administratora globalnego Twojej organizacji dezaktywować usługę Azure Rights Management.
 
 - Jeśli w Twojej subskrypcji został uzyskany wcześniej w tym miesiącu, musisz aktywować usługę samodzielnie. 
 

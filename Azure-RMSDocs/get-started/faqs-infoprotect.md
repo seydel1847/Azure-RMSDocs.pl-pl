@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 64daf1510ebec26f3f0604b726045933ebc31e4e
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: d3f82cde42985bb837fe47f7d01d7180462bccd3
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -59,7 +59,8 @@ Gdy używasz sublabels nie skonfigurować oznaczenia wizualne, ochronę i warunk
 ## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>Jak zapobiec ktoś z usunięcie lub zmiana etykiety
 
 Mimo że [ustawienie zasad](../deploy-use/configure-policy-settings.md) który wymaga od użytkowników do stanu Dlaczego obniżenia etykiety klasyfikacji, usuwanie etykietę, lub usunięcie ochrony, to ustawienie nie zapobiega te akcje. Aby uniemożliwić użytkownikom usuwanie lub zmiana etykiety, musi już chronione zawartości i uprawnienia ochrony nie Przyznaj użytkownikowi, eksportu lub Pełna kontrola [prawa użytkowania](../deploy-use/configure-usage-rights.md). 
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
+
+# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
 Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, załączniki te nie odziedziczą tej samej etykiety. Załączniki pozostaną bez etykiety lub zachowają oddzielnie przydzieloną etykietę. Jednak jeśli etykieta wiadomości e-mail zawiera ochronę, ochrona ta jest stosowana także do załączników.
 
