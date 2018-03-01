@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b5184921dceba060f600590533e7d429d59c7be4
-ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
+ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -229,6 +229,8 @@ Nowi użytkownicy, które można dodać będzie w stanie otwarte dokumenty i wia
 Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik.
 
 Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+> [!NOTE]
+> Exchange Online wprowadza nową opcję [tylko Szyfruj](configure-usage-rights.md#encrypt-only-option-for-emails). Ta opcja nie jest dostępna dla konfiguracji etykiety.
 
 Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego samego użytkowników określonych dla tej konfiguracji etykiety. Ponieważ użytkownicy mogą należeć do grupy i mieć więcej niż jeden adres e-mail, adresu e-mail, dlatego nie ma zgodny z adresem e-mail określ uprawnienia. Jednak określenie taki sam adres e-mail jest najprostszym sposobem, aby upewnić się, że odbiorcy będą pomyślnie uprawnienia. Aby uzyskać więcej informacji na temat jak użytkownicy są uprawnieni do uprawnień, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md). 
 

@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d3090a74e5fefc3fd383d8846879dd513a7dbc1
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
+ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -116,7 +116,7 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 Exchange Online korzysta z nowych funkcji dla szyfrowanie wiadomości usługi Office 365, Nowa opcja wiadomości e-mail staje się dostępna: **tylko Szyfruj**.
 
-Ta opcja jest wdrażany dzierżawców korzystających z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web i jako inną opcję ochrony praw do reguły transportu. Aby uzyskać więcej informacji, zobacz następujące powiadomienie post blog zespołu pakietu Office: [Szyfruj teraz dostępne tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
+Ta opcja jest wdrażany dzierżawców korzystających z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web i jako inną opcję ochrony praw do reguły transportu. Aby uzyskać więcej informacji, zobacz następujące powiadomienie post blog zespołu pakietu Office: [szyfrowania zetknie się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
 
 Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i musi zostać uwierzytelniony adresatów. Następnie odbiorcy mają wszystkie prawa użytkowania, z wyjątkiem Pełna kontrola. Ta kombinacja prawa użytkowania oznacza, że adresaci nie obowiązują żadne ograniczenia, z wyjątkiem tego, że nie będą oni mogli usunąć ochronę. Na przykład adresat można skopiować, drukować i przekazywać wiadomości e-mail. Podobnie wszystkie dokumenty pakietu Office, które są dołączone i automatycznie chronione może zostać zapisany, skopiowane i drukowana.
 

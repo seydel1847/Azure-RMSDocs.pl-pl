@@ -4,7 +4,7 @@ description: "Określanie wymagań wstępnych dotyczących wdrażania usługi Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/22/2018
+ms.date: 02/26/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9496696791c343b01f5c311cb140333bcbbe7b2c
-ms.sourcegitcommit: eeeb1123349ab5e7eb2d352509670af6217123de
+ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -26,14 +26,20 @@ Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij si�
 
 ## <a name="subscription-for-azure-information-protection"></a>Subskrypcja usługi Azure Information Protection
 
-Na potrzeby klasyfikacji, etykietowania i ochrony musisz dysponować [planem usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
+**Dla klasyfikacji, etykietowania i ochrony**: musisz mieć [planu usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
 
-Na potrzeby samej ochrony musisz dysponować [planem usługi Office 365 obejmującym usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Aby uzyskać tylko do ochrony**: musi mieć [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Aby upewnić się, że firmowa subskrypcja obejmuje funkcje usługi Azure Information Protection, których chcesz użyć, przejrzyj [informacje o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) oraz [listę funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
 
-> [!NOTE]
-> Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na tej stronie, tylko skontaktuj się z konsultantem ds. klientów firmy Microsoft lub [Pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support).
+> [!TIP]
+> Wyszukiwanie, aby zobaczyć, czy plan usługi Office 365 lub Exchange Online autonomiczne, planowanie obsługuje [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801), aby wysłać chronionych wiadomości e-mail do osobistych adresów e-mail? Na przykład Gmail, Yahoo i firmy Microsoft. Sprawdź następujące zasoby:
+>
+> [Opis usługi Online programu Exchange](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
+>
+> [Office 365 Education](https://technet.microsoft.com/library/mt844095.aspx)
+
+Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na tej stronie, tylko skontaktuj się z konsultantem ds. klientów firmy Microsoft lub [Pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support).
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -103,7 +109,7 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 
 - Nie przerywaj połączenia TLS między klientem i usługą (np. w celu przeprowadzenia inspekcji na poziomie pakietu). Spowoduje to przerwanie przypinania, że klienci usług RMS za pomocą CAs zarządzany przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
     
-    - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki:`https://admin.na.aadrm.com/admin/admin.svc` 
+    - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
     
         Nie martw się o Wyświetla okna przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiany przez CA firmy Microsoft, jest bardzo prawdopodobne, bezpieczne połączenie Usługa klienta jest przerywane i wymaga ponownej konfiguracji na zaporze. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli zobaczysz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
         
