@@ -4,7 +4,7 @@ description: "Zadania administracyjne w skrócie w portalu Azure, używany w kla
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które są używane z klasycznego portalu Azure
 
@@ -46,7 +46,7 @@ Jednak klienci, którzy mają subskrypcji dla Office 365 instytucji rządowych S
 |Usuwanie szablonu|Usuwanie szablonów może spowodować niedostępny danych, więc portalu Azure nie obsługuje tej akcji. Jednak można usunąć etykietę, a następnie użyj programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet, aby usunąć szablon. <br /><br />Aby uzyskać więcej informacji, zobacz [usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection](configure-policy-delete-reorder.md).
 |Obsługa wielu języków|Z **ZARZĄDZAJ** zaznaczenia menu, wybierz opcję **języków** można wyeksportować pól możliwych do dostosowania, które zawierają nazwę i opis szablonu. Tłumaczenie ciągi, a następnie importować te ciągi do portalu. <br /><br />Aby uzyskać więcej informacji, zobacz [sposób konfigurowania usługi Azure Information Protection etykiety i szablony dla różnych języków](configure-policy-languages.md).
 |Raporty sieci web zarządzania prawami dostępu w|Użyj programu PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) polecenia cmdlet, aby pobrać dzienniki użycia dla usługi Azure Rights Management. Te dane można następnie używać do tworzenia niestandardowych raportów. <br /><br />Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).<br /><br />Porada: Pojawiać zawiadomienia o [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) dla nowych, scentralizowane rozwiązanie raportowania usługi Azure Information Protection.
-|Aktywowanie i dezaktywowanie usługi Rights Management|Z **ZARZĄDZAJ** opcji menu, wybierz opcję **ustawienia RMS** lub **aktywacji ochrony**. Ta opcja jest w trakcie zmieniana.<br /><br />Aby uzyskać więcej informacji, zobacz [jak aktywować usługę Azure Rights Management w portalu Azure](activate-azure.md).
+|Aktywowanie i dezaktywowanie usługi Rights Management|Z **ZARZĄDZAJ** opcji menu, wybierz opcję **aktywacji ochrony**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak aktywować usługę Azure Rights Management w portalu Azure](activate-azure.md).
 
 Przed rozpoczęciem edycji szablonów lub przekonwertować je do etykiet w portalu Azure, zobacz [zagadnienia dotyczące szablonów w portalu Azure](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal).
 
@@ -59,7 +59,7 @@ Nowe funkcje w portalu Azure:
 
 - Szablony do etykiet, można przekonwertować tak, aby zarządzać pojedynczy obiekt zamiast zarządzać szablonu i etykiety niezależnie. Aby uzyskać instrukcje, zobacz [przekonwertować szablony do etykiet](configure-policy-templates.md#to-convert-templates-to-labels).
 
-- Obsługę innych ról administratora: konieczne było Zaloguj się do klasycznego portalu Azure jako Administrator globalny do konfigurowania usługi Azure Rights Management, można logowania się do portalu Azure można skonfigurować przy użyciu konta, które ma jakiekolwiek z usługi Azure Information Protection następujące role administracyjne: Administrator globalny, Administrator zabezpieczeń lub Administrator ochrony informacji. Aby uzyskać więcej informacji na temat każdego z tych ról, zobacz [dostępnych ról](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) sekcji dokumentacji usługi Azure Active Directory.
+- Obsługę innych ról administratora: konieczne było Zaloguj się do klasycznego portalu Azure jako Administrator globalny do konfigurowania usługi Azure Rights Management, można logowania się do portalu Azure można skonfigurować przy użyciu konta, które ma jakiekolwiek z usługi Azure Information Protection następujące role administracyjne: **administratora globalnego**, **Administrator zabezpieczeń**, lub **administratora ochrony informacji**. Aby uzyskać więcej informacji na temat każdego z tych ról, zobacz [dostępnych ról](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) sekcji dokumentacji usługi Azure Active Directory.
 
 Poleceń cmdlet programu PowerShell do tworzenia szablonów i zarządzania nimi i aktywować lub dezaktywować usługę, w dalszym ciągu obsługiwany bez zmian.
 
