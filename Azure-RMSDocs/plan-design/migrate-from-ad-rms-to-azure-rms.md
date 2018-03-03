@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 6ed025029e3d901a4ee2090bbc9334e396da646c
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -97,7 +97,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 - **Jeśli chcesz zarządzać własnym kluczem dzierżawy usługi Azure Information Protection przy użyciu klucza chronionego za pomocą modułu HSM**:
 
-    - Ta opcjonalna konfiguracja wymaga usługi Azure Key Vault oraz subskrypcji platformy Azure obsługującej usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/). 
+    - Ta opcjonalna konfiguracja wymaga usługi Azure Key Vault oraz subskrypcji platformy Azure obsługującej usługę Key Vault z kluczami chronionymi za pomocą modułu HSM. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/pricing/details/key-vault/). 
 
 
 ### <a name="cryptographic-mode-considerations"></a>Zagadnienia dotyczące trybu kryptograficznego
@@ -140,7 +140,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 [**FAZA 1: PRZYGOTOWANIE MIGRACJI**](migrate-from-ad-rms-phase1.md)
 
-- Krok 1: Instalowanie modułu programu AADRM PowerShell i zidentyfikować adres URL dzierżawy
+- **Krok 1: Instalowanie modułu programu AADRM PowerShell i zidentyfikować adres URL dzierżawy**
 
     Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell w AADRM module. Musisz znać adres URL usługi Azure Rights Management Twojej dzierżawy do wykonania wielu kroków migracji, a można tę wartość tożsamości za pomocą programu PowerShell.
 
