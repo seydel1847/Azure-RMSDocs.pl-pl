@@ -4,7 +4,7 @@ description: "Informacje i instrukcje dla administratorów dotyczące konfigurow
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 367c41d91d4e4250370016bdff80bd9e2e366924
-ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
+ms.openlocfilehash: 25ba730c38261c035c63e8137260cbee55c828ad
+ms.sourcegitcommit: 01249fc29fccf6931ebf2f5d0138706e6ae2db9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/01/2018
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online korzystać z usługi Azure Rights Management
 
@@ -29,11 +29,49 @@ Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information
 ## <a name="exchange-online-irm-configuration"></a>Usługa Exchange Online: konfiguracja usługi IRM
 Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [Exchange Online i Exchange Server](../understand-explore/office-apps-services-support.md#exchange-online-and-exchange-server) w sekcji **Poznawanie i eksplorowanie**.
 
-Aby skonfigurować usługi Exchange Online do korzystania z usługi Azure Rights Management, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).
+Usługi Exchange Online mogą już mieć możliwość korzystania z usługi Azure Rights Management. Aby sprawdzić, uruchom następujące polecenia:
 
-Jeśli wcześniej skonfigurowano usługi Exchange Online dla usługi IRM zaimportować zaufaną domenę publikacji (TPD) z usługą Azure Rights Management, użyj ten sam zestaw instrukcji, aby włączyć nowe funkcje w programie Exchange Online.
+1. Jeśli używasz programu Windows PowerShell dla usługi Exchange Online na komputerze po raz pierwszy, musisz skonfigurować program Windows PowerShell do uruchamiania podpisanych skryptów. Uruchom sesję programu Windows PowerShell przy użyciu opcji **Uruchom jako administrator**, a następnie wpisz:
+    
+        Set-ExecutionPolicy RemoteSigned
+    
+    Naciśnij klawisz **Y** o potwierdzenie.
 
-Po skonfigurowaniu usługi Exchange Online do korzystania z usługi Azure Rights Management, można teraz skonfigurować funkcje, które automatycznie stosować ochronę informacji takich jak [reguły transportu](https://technet.microsoft.com/library/dd302432.aspx), [(zapobiegania utracie danych Zasady DLP)](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx), i [chroniona poczta głosowa](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
+2. W sesji programu Windows PowerShell zaloguj się do usługi Exchange Online przy użyciu konta z włączoną opcją zdalnego dostępu do programu PowerShell. Domyślnie wszystkie konta tworzone w usłudze Exchange Online mają włączoną opcję zdalnego dostępu do programu PowerShell, ale można ją wyłączyć (i włączyć) przy użyciu polecenia [Set-User &lt;TożsamośćUżytkownika&gt; -RemotePowerShellEnabled](https://technet.microsoft.com/library/jj984292%28v=exchg.160%29.aspx).
+    
+    Aby zarejestrować się w pierwszym typie:
+    
+        $Cred = Get-Credential
+   
+    Następnie w **żądanie poświadczeń programu Windows PowerShell** okna dialogowego podaj swoją nazwę użytkownika usługi Office 365 i hasła.
+
+3. Połącz się z usługą Exchange Online przez pierwsze ustawienie zmiennej:
+    
+        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
+    
+    Następnie uruchom następujące polecenie:
+    
+        Import-PSSession $Session
+
+4. Uruchom [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) polecenie, aby wyświetlić konfigurację usługi Exchange Online dla usługi ochrony:
+    
+        Get-IRMConfiguration
+    
+    Z danych wyjściowych, zlokalizuj **AzureRMSLicensingEnabled** wartość:
+    
+    - Jeśli ustawiono AzureRMSLicensingEnabled **True**, Exchange Online jest już włączona dla usługi Azure Rights Management. 
+    
+    - Jeśli ustawiono AzureRMSLicensingEnabled **False**, Uruchom polecenia w [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
+
+5. Do przetestowania tej usługi Exchange Online pomyślnie skonfigurowano, uruchom następujące polecenie:
+    ```
+    Test-IRMConfiguration -Sender <user email address>
+    ```
+    Na przykład: **Test-IRMConfiguration -Sender  adams@contoso.com**
+    
+    To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell będą widoczne wyniki wszystkich testów, a na koniec — jeśli testy zakończą się pomyślnie — zostanie wyświetlona informacja **WYNIK OGÓLNY: POZYTYWNY**.
+
+Włączenie usługi Exchange Online do korzystania z usługi Azure Rights Management, można skonfigurować funkcje, które automatycznie stosować ochronę informacji takich jak [reguły transportu](https://technet.microsoft.com/library/dd302432.aspx), [zasad (DLP) zapobiegania utracie danych ](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx), i [chroniona poczta głosowa](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
 
 ## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM
 
@@ -68,7 +106,7 @@ Te instrukcje należy przekazać użytkownikom, aby mogli skonfigurować usług�
 
 1.  W usłudze OneDrive kliknij ikonę **Ustawienia**, aby otworzyć menu Ustawienia, a następnie kliknij pozycję **Zawartość witryny**.
 
-2.  Umieść kursor na kafelku **Dokumenty**, wybierz wielokropek (**...**), a następnie kliknij pozycję **USTAWIENIA**.
+2.  Umieść kursor na **dokumenty** kafelka, wybierz wielokropek (**...** ), a następnie kliknij przycisk **ustawienia.**
 
 3.  Na stronie **Ustawienia** w sekcji **Uprawnienia i zarządzanie** kliknij pozycję **Zarządzanie prawami do informacji**.
 
