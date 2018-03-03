@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 614adfa0aca5b65750704d45f52355780c19c137
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>Cennik i ograniczenia dotyczące funkcji BYOK
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/12/2018
 
 Organizacje, które mają subskrypcję obejmującą usługę Azure Information Protection, mogą konfigurować dzierżawę usługi Azure Information Protection do użycia klucza zarządzanego przez klienta (BYOK) i [rejestrować jego użycie](../deploy-use/log-analyze-usage.md) bez dodatkowych opłat. 
 
-Klucz musi być przechowywany w magazynie kluczy Azure, co wymaga subskrypcji platformy Azure. Aby użyć klucza chronionego przez moduł HSM, należy użyć warstwę Premium magazynu kluczy Azure. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/).
+Klucz musi być przechowywany w magazynie kluczy Azure, co wymaga subskrypcji platformy Azure. Aby użyć klucza chronionego przez moduł HSM, należy użyć warstwę Premium magazynu kluczy Azure. Użycie klucza w usłudze Azure Key Vault generuje opłatę miesięczną. Aby uzyskać więcej informacji, zobacz [stronę z cenami usługi Azure Key Vault](https://azure.microsoft.com/pricing/details/key-vault/).
 
 Gdy używasz usługi Azure Key Vault dla klucza dzierżawy usługi Azure Information Protection, zalecane jest użycie dedykowanych magazynu kluczy dla tego klucza do zapewnienia, że jest on używany przez usługę Azure Rights Management. Taka konfiguracja powoduje, że wywołania przez inne usługi, nie spowoduje przekroczenie [usługi limity](/azure/key-vault/key-vault-service-limits) dla magazynu kluczy, które ograniczyć czas odpowiedzi dla usługi Azure Rights Management.  
 

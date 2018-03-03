@@ -4,7 +4,7 @@ description: "Skorzystaj z tych procedur, aby przygotować się do wdrożenia us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d0ebe0456933fd3b5940d50479038200008d9a44
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 9285468a267578f01cd3a65b745cceaed346d21f
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Plan wdrażania usługi Azure Information Protection
 
@@ -80,7 +80,7 @@ Gdy użytkownicy nabiorą wprawy w etykietowaniu dokumentów i wiadomości e-mai
 
 1. Określ, czy Twoim kluczem dzierżawy powinna zarządzać firma Microsoft (opcja domyślna), czy też chcesz wygenerować klucz dzierżawy i zarządzać nim samodzielnie (opcja nazywana „przynieś własny klucz”, BYOK). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
-2. Zainstaluj moduł Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] na co najmniej jednym komputerze z dostępem do Internetu. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Instalowanie programu Windows PowerShell dla usługi Azure Rights Management](../deploy-use/install-powershell.md).
+2. Zainstaluj moduł programu PowerShell dla [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] na co najmniej jeden komputer, który ma dostęp do Internetu. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
 
 3. Jeśli obecnie używasz lokalnych usług Rights Management: przeprowadź migrację, aby przenieść klucze, szablony i adresy URL do chmury. Aby uzyskać więcej informacji, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -146,7 +146,7 @@ Przed rozpoczęciem korzystania z usługi [!INCLUDE[aad_rightsmanagement_2](../i
 
 2. Określ, czy Twoim kluczem dzierżawy powinna zarządzać firma Microsoft (opcja domyślna), czy też chcesz wygenerować klucz dzierżawy i zarządzać nim samodzielnie (opcja nazywana „przynieś własny klucz”, BYOK). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
-3. Zainstaluj moduł Windows PowerShell dla usługi [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] na co najmniej jednym komputerze z dostępem do Internetu. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
+3. Zainstaluj moduł programu PowerShell dla [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] na co najmniej jeden komputer, który ma dostęp do Internetu. Możesz wykonać ten krok teraz lub później. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
 
 4. Jeśli obecnie używasz lokalnych usług Rights Management: przeprowadź migrację, aby przenieść klucze, szablony i adresy URL do chmury. Aby uzyskać więcej informacji, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
