@@ -4,7 +4,7 @@ description: "Informacji na temat operacji cyklu życia, które są istotne, je�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: dea6fffc32876b548e5daa33a76e7891088f1e9b
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cyklu życia klucza dzierżawy
 
@@ -103,9 +103,9 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 
 |Opis zdarzenia|Prawdopodobna reakcja|
 |------------------------|-------------------|
-|Przeciek klucza dzierżawy.|Wymień klucz dzierżawy. Zobacz sekcję [Wymiana klucza dzierżawy](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) w tym artykule.|
+|Przeciek klucza dzierżawy.|Wymień klucz dzierżawy. Zobacz sekcję [Wymiana klucza dzierżawy](#rekey-your-tenant-key) w tym artykule.|
 |Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Wymiana klucza dzierżawy nie jest w tym przypadku pomocna, a problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
-|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure Information Protection o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
+|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure Information Protection do obsługi nowych algorytmów i długości kluczy dłużej, które są odporne i poinstruować wszystkich klientów do ponowne tworzenie klucza swój klucz dzierżawy.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

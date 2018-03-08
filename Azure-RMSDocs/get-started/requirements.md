@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 94d20bea3dcbb1f3e23969361223d6b7a89c0e95
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -26,9 +26,9 @@ Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij si�
 
 ## <a name="subscription-for-azure-information-protection"></a>Subskrypcja usługi Azure Information Protection
 
-**Dla klasyfikacji, etykietowania i ochrony**: musisz mieć [planu usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing). 
+**Dla klasyfikacji, etykietowania i ochrony**: musisz mieć [planu usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
 
-**Aby uzyskać tylko do ochrony**: musi mieć [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Aby uzyskać tylko do ochrony**: musisz mieć [planu usługi Office 365, która obejmuje usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Aby upewnić się, że firmowa subskrypcja obejmuje funkcje usługi Azure Information Protection, których chcesz użyć, przejrzyj [informacje o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) oraz [listę funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
 

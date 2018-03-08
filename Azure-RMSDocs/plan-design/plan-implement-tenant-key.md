@@ -4,7 +4,7 @@ description: "Informacje ułatwiające zaplanowanie użycia klucza dzierżawy us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -46,7 +46,7 @@ Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej 
 
 Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji:
 
-- **Zarządzany przez firmę Microsoft**: Azure Information Protection automatycznie generuje klucz dzierżawy dla Twojej organizacji. Domyślnie firma Microsoft używa tego klucza dzierżawy i zarządza większością aspektów cyklu życia klucza Twojej dzierżawy. 
+- **Zarządzany przez firmę Microsoft**: Microsoft automatycznie generuje klucz dzierżawy dla Twojej organizacji i ten klucz służy wyłącznie do usługi Azure Information Protection. Domyślnie firma Microsoft używa tego klucza dzierżawy i zarządza większością aspektów cyklu życia klucza Twojej dzierżawy. 
     
     Jest to najprostsza opcja, która wiąże się z najmniejszą liczbą obowiązków administracyjnych użytkownika. W większości przypadków użytkownik nie musi nawet wiedzieć, że ma klucz dzierżawy. Wystarczy, że zarejestruje się w usłudze Azure Information Protection — resztą procesu zarządzania kluczem zajmie się firma Microsoft.
 
