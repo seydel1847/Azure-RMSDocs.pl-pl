@@ -4,7 +4,7 @@ description: "Informacji na temat operacji cyklu życia, które są istotne, je�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47f2e19e7eed107a44ac1bed744015c878876e9f
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 70d34253300e2bef442cdd7d8cf2c06ac8a9fd88
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cyklu życia klucza dzierżawy
 
@@ -59,9 +59,9 @@ Aby uzyskać więcej informacji na temat każdego z następujących czynności:
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
 Ponieważ użytkownik zarządza kluczem dzierżawy, jest odpowiedzialny za tworzenie kopii zapasowej klucza, który używa usługi Azure Information Protection. 
 
-Jeśli klucz dzierżawy lokalnie, jest generowany w module HSM firmy Thales: Aby utworzyć kopię zapasową klucza, należy utworzyć kopię zapasową tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. Podczas przenoszenia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu ochrony przed awarią węzły usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego działania jako utworzenia pełnej kopii zapasowej. Na przykład, jeśli kiedykolwiek zajdzie zwykły tekst kopię klucza, aby używać poza HSM firmy Thales, usługi Azure Key Vault nie można pobrać go, ponieważ ma ona tylko nieodwracalny kopii.
+Jeśli klucz dzierżawy lokalnie, jest generowany w module HSM firmy Thales: Aby utworzyć kopię zapasową klucza, należy utworzyć kopię zapasową tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. Podczas przenoszenia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu ochrony przed awarią węzły usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego tokenami plik klucza do pełnej kopii zapasowej. Na przykład, jeśli kiedykolwiek zajdzie zwykły tekst kopię klucza, aby używać poza HSM firmy Thales, usługi Azure Key Vault nie można pobrać go, ponieważ ma ona tylko nieodwracalny kopii.
 
-Usługa Azure Key Vault ma [kopii zapasowej polecenia cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) można ją pobrać i przechowywanie ich w pliku kopii zapasowej klucza. Ponieważ pobieranej zawartości jest zaszyfrowany, nie można używać poza usługą Azure Key Vault. 
+Usługa Azure Key Vault ma [kopii zapasowej polecenia cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) której można utworzyć kopię zapasową klucza ją pobrać i przechowywanie ich w pliku. Ponieważ pobieranej zawartości jest zaszyfrowany, nie można używać poza usługą Azure Key Vault. 
 
 ## <a name="export-your-tenant-key"></a>Eksport klucza dzierżawy
 W przypadku korzystania z rozwiązania BYOK nie można wyeksportować klucza dzierżawy ani z usługi Azure Key Vault, ani z usługi Azure Information Protection. Przywrócenie kopii klucza znajdującej się w usłudze Azure Key Vault nie jest możliwe. 
@@ -75,10 +75,10 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 
 |Opis zdarzenia|Prawdopodobna reakcja|
 |------------------------|-------------------|
-|Przeciek klucza dzierżawy.|Wymień klucz dzierżawy. Zobacz sekcję [Wymiana klucza dzierżawy](#rkey-your-tenant-key).|
+|Przeciek klucza dzierżawy.|Wymień klucz dzierżawy. Zobacz sekcję [Wymiana klucza dzierżawy](#rekey-your-tenant-key).|
 |Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Wymiana klucza dzierżawy nie jest w tym przypadku pomocna, a problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
-|Odkryto lukę w zabezpieczeniach obecnej generacji technologii sprzętowych modułów zabezpieczeń.|Firma Microsoft musi zaktualizować sprzętowe moduły zabezpieczeń. W przypadku podejrzeń, że usterka spowodowała ujawnienie kluczy, Microsoft wyśle instrukcje do wszystkich klientów dotyczące odnowienia kluczy dzierżawy.|
-|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure Key Vault lub Azure Information Protection o obsługę nowych algorytmów i dłuższych kluczy o większej odporności, a także poinstruować wszystkich klientów o konieczności odnowienia kluczy dzierżawy.|
+|Odkryto lukę w zabezpieczeniach obecnej generacji technologii sprzętowych modułów zabezpieczeń.|Firma Microsoft musi zaktualizować sprzętowe moduły zabezpieczeń. W przypadku podejrzeń, że usterka spowodowała ujawnienie kluczy, Microsoft wyśle instrukcje do wszystkich klientów do ponowne tworzenie klucza kluczy dzierżawy.|
+|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować magazynu kluczy Azure lub usługi Azure Information Protection do obsługi nowych algorytmów i długości kluczy dłużej, które są odporne i poinstruować wszystkich klientów do ponowne tworzenie klucza swój klucz dzierżawy.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
