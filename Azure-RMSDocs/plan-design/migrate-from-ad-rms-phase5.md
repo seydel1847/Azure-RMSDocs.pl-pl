@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -104,8 +104,6 @@ Ten krok jest zalecane, gdy migracja zostanie zakończona, jeśli wdrożenie us�
 
 Nawet jeśli wdrożenia usług AD RMS używano trybu kryptograficznego 2, nadal zalecamy wykonać ten krok, ponieważ ułatwia klucza do ochrony dzierżawy przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS.
 
-Jednak nie ponowne tworzenie klucza w przypadku używania usługi Exchange Online z usługami AD RMS. Exchange Online nie obsługuje zmiany tryby kryptograficzne usług. 
-
 Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection (znanej także jako "Uaktualnianie klucza"), zostaną zarchiwizowane aktualnie aktywnego klucza, a usługi Azure Information Protection, który rozpoczyna się do użycia innego klucza, który określisz. To inny klucz może być nowego klucza, które są tworzone w usłudze Azure Key Vault lub domyślny klucz, który został utworzony automatycznie dla dzierżawy.
 
 Przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim nie poczekaj, aż podejrzewasz naruszenia do oryginalnego klucza, ale tego kroku zaraz po zakończeniu migracji.
@@ -116,7 +114,7 @@ Aby wymienić klucz dzierżawy usługi Azure Information Protection:
     
         (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK)**: W usłudze Azure Key Vault, powtórz proces tworzenia klucza dzierżawy usługi Azure Information Protection, a następnie uruchom [AadrmKeyVaultKey użyj](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) polecenia cmdlet ponownie, aby określić identyfikator URI dla tego nowego klucza. 
+- **Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK)**: W usłudze Azure Key Vault, powtórz proces tworzenia klucza dzierżawy usługi Azure Information Protection, a następnie uruchom [AadrmKeyVaultKey użyj](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) polecenia cmdlet ponownie, aby określić identyfikator URI Ten nowy klucz. 
 
 Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usługi Azure Information Protection, zobacz [Operacje związane z kluczem dzierżawy usługi Azure Rights Management](../deploy-use/operations-tenant-key.md).
 

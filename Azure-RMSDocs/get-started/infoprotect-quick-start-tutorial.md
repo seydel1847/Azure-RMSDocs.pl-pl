@@ -4,17 +4,17 @@ description: "Samouczek wprowadzający, dzięki któremu możesz szybko wypróbo
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: a93b226f80382d4c751ca88d037398939db9d61b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: e20b3e4d84b2230cf7bcbc64c31970fd53d5a7ae
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Samouczek Szybki start dla usługi Azure Information Protection 
 
@@ -29,7 +29,7 @@ W przypadku wystąpienia problemów podczas wykonywania instrukcji zamieszczonyc
 ## <a name="prerequisites"></a>Wymagania wstępne 
 Do ukończenia tego samouczka będą potrzebne:
 
-- Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony. Ten samouczek zawiera niektóre zaawansowane funkcje, takie jak automatyczna klasyfikacja danych z zaleceniami użytkowników oraz witryna śledzenia dokumentów. Upewnij się, że masz subskrypcję do obsługi tych funkcji w tym samouczku. Aby uzyskać więcej informacji, zapoznaj się z [informacjami o subskrypcji](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) i [listą funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
+- Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony. Ten samouczek zawiera niektóre zaawansowane funkcje, takie jak automatyczna klasyfikacja danych z zaleceniami użytkowników oraz witryna śledzenia dokumentów. Upewnij się, że masz subskrypcję do obsługi tych funkcji w tym samouczku. Aby uzyskać więcej informacji, zobacz Lista funkcji z [cennik usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) strony.
     
     Jeśli nie masz subskrypcji obejmującej te funkcje, możesz utworzyć konto w celu skorzystania z bezpłatnej wersji próbnej planu [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7).
     
