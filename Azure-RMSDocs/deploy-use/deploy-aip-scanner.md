@@ -4,7 +4,7 @@ description: "Instrukcje dotyczące instalowania, konfigurowania i uruchamiania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -58,7 +58,7 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Zainstaluj skaner usługi Azure Information Protection
 
-1. Za pomocą konta usługi, który został utworzony do uruchomić skanera, zaloguj się do komputera systemu Windows Server, które zostanie uruchomione skanera.
+1. Zaloguj się do komputera systemu Windows Server, które zostanie uruchomione skanera. Użyj konta mającego uprawnienia administratora lokalnego i ma uprawnienia do zapisu w bazie danych master programu SQL Server.
 
 2. Otwórz sesję środowiska Windows PowerShell z **Uruchom jako administrator** opcji.
 
@@ -92,15 +92,17 @@ Teraz, gdy zainstalowano skanera, należy uzyskać token dla konta usługi skane
     
     Aby utworzyć te aplikacje, postępuj zgodnie z instrukcjami [jak pliki etykiet nieinteraktywnie dla usługi Azure Information Protection](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) z podręcznika administratora.
 
-2. Z komputera z systemem Windows Server, nadal zalogowany za pomocą konta usługi skanera, uruchom [AIPAuthentication zestaw](/powershell/module/azureinformationprotection/set-aipauthentication), określając wartości, które zostały skopiowane z poprzedniego kroku:
+2. Z komputera systemu Windows Server, jeśli konto usługi skanera zostało udzielone **logować się lokalnie** bezpośrednio do instalacji: Zaloguj się przy użyciu tego konta i Uruchom sesję programu PowerShell. Uruchom [AIPAuthentication zestaw](/powershell/module/azureinformationprotection/set-aipauthentication), określając wartości, które zostały skopiowane z poprzedniego kroku:
     
     ```
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application>  -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application >
     ```
+    
+    Po wyświetleniu monitu podaj hasło dla poświadczeń konta usługi dla usługi Azure AD, a następnie kliknij przycisk **Akceptuj**.
+    
+    Jeśli nie można udzielić konta usługi skanera **logować się lokalnie** bezpośrednio do instalacji: postępuj zgodnie z instrukcjami w [określanie i użyj parametru tokenu dla zestawu AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) sekcji w podręczniku administratora. 
 
-3. Po wyświetleniu monitu podaj hasło dla poświadczeń konta usługi dla usługi Azure AD, a następnie kliknij przycisk **Akceptuj**.
-
-Skaner ma teraz token do uwierzytelniania usługi Azure AD, które jest ważny przez jeden rok, dwa lata, lub nigdy nie wygasa, zgodnie z konfiguracją programu **sieci Web aplikacji /API** w usłudze Azure AD. Jeśli token jest ważny, należy powtórzyć kroki od 1 do 3.
+Skaner ma teraz token do uwierzytelniania usługi Azure AD, które jest ważny przez jeden rok, dwa lata, lub nigdy nie wygasa, zgodnie z konfiguracją programu **sieci Web aplikacji /API** w usłudze Azure AD. Jeśli token jest ważny, należy powtórzyć kroki 1 i 2.
 
 Teraz możesz określić magazyny danych do skanowania. 
 
@@ -209,7 +211,7 @@ Ponadto wszystkie pliki są kontrolowane podczas skanera pobierania zasad usług
 > 
 > Zmiana ustawienia ochrony w zasadach również poczekaj 15 minut od po zapisaniu ustawień ochrony przed ponownym uruchomieniu usługi.
 
-Jeśli skaner pobrać zasady, które miało żadnych warunków automatyczne skonfigurowane, kopię pliku zasad w folderze skaner nie jest aktualizowany. W tym scenariuszu należy usunąć **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** pliku przed skanera można użyć pliku zasad nowo pobranej z etykiety poprawnie znalezienia automatyczne warunki.
+Jeśli skaner pobrać zasady, które miało żadnych warunków automatyczne skonfigurowane, kopię pliku zasad w folderze skaner nie jest aktualizowany. W tym scenariuszu należy usunąć plik zasad **Policy.msip** z obu **%LocalAppData%\Microsoft\MSIP\Policy.msip** i **%LocalAppData%\Microsoft\MSIP\Scanner**przed skanera można użyć pliku zasad nowo pobranej z etykiety poprawnie znalezienia automatyczne warunki.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optymalizacja wydajności skanera usługi Azure Information Protection
 

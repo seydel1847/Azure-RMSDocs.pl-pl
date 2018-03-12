@@ -4,17 +4,17 @@ description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -30,7 +30,11 @@ Możesz odwołać się do poniższych wartości, aby powrócić do ustawień dom
 
 Jest to wersja lub domyślne zasady z 31 lipca 2017 r.
 
-Ta zasada domyślna jest tworzony tylko wtedy, gdy usługa Azure Rights Management [aktywowany](activate-service.md) podczas tworzenia zasady. Jeśli ta usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących sublabels:
+Ta zasada domyślna jest tworzony po aktywowaniu usługi Azure Rights Management, co ma miejsce w przypadku nowych dzierżaw uruchamianie 2018 lutego. Aby uzyskać więcej informacji, zobacz anons post blog [stosu ulepszenia ochrony usługi Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection).
+
+Zasada domyślna również jest tworzony, jeśli masz ręcznie [aktywacji usługi](activate-service.md) przed utworzeniem zasad. 
+
+Jeśli usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących sublabels:
 
 - **Poufne\Wszyscy pracownicy**
 
@@ -44,7 +48,7 @@ Gdy sublabels te nie są automatycznie skonfigurowany do ochrony, domyślne zasa
 
 Jeśli ochrona jest stosowana do **wszyscy pracownicy** sublabels, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Począwszy od 30 sierpnia 2017 ta wersja domyślna zasada zawiera wersje obsługi wielu języków etykieta nazwy i opisy. 
+Uruchamianie 30 sierpnia 2017 ta wersja domyślna zasada zawiera wersje obsługi wielu języków etykieta nazwy i opisy. 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>Więcej informacji na temat sublabel tylko do adresatów
 
