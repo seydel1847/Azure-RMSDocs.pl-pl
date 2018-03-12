@@ -4,7 +4,7 @@ description: "Instrukcje i informacje dla administratorów dotyczące zarządzan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -534,6 +534,8 @@ Po uruchomieniu tego polecenia po raz pierwszy monit o zalogowanie się, które 
 > Ta opcja wymaga wersji ogólnodostępnej (GA) skanera usługi Azure Information Protection lub bieżąca wersja klienta usługi Azure Information Protection.
 
 Użyj następujące dodatkowe czynności oraz instrukcje, aby uniknąć początkowej interakcyjnego logowania dla konta, które etykiety i chroni pliki. Zazwyczaj te dodatkowe kroki są wymagane tylko wtedy, gdy to konto nie można udzielić **logować się lokalnie** prawej strony, ale otrzymuje **logowanie w trybie wsadowym** prawo. Na przykład może to w przypadku konta usługi z systemem skanera usługi Azure Information Protection.
+
+Ogólne kroki:
 
 1. Utwórz skrypt programu PowerShell na komputerze lokalnym.
 
