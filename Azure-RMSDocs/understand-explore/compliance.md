@@ -4,7 +4,7 @@ description: "Dodatkowe informacje na temat usługi Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 2980032c72905ec237dea799e8d6d13e11746df3
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
 
@@ -56,11 +56,11 @@ Szczegółowe informacje techniczne dotyczące sposobu działania technologii oc
 
 ## <a name="service-level-agreements"></a>Umowy dotyczące poziomu usług
 
-- Umowa dotycząca poziomu usług dla usługi Azure Information Protection według wybranego regionu: [pobierz ze strony wyszukiwania licencjonowania produktów](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
+- [Umowy SLA dla usługi Azure Information Protection](https://azure.microsoft.com/support/legal/sla/information-protection/v1_0/)
 
-    - Na przykład kliknij pozycję **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)**, aby pobrać umowę dotyczącą poziomu usług dla Ameryki Północnej z marca 2016 r.
+- [Umowy SLA dla usługi Azure Active Directory](https://azure.microsoft.com/en-us/support/legal/sla/active-directory/v1_0/)
 
--   Umowa dotycząca poziomu usług dla usługi Azure Active Directory: [Umowy dotyczące poziomu usług](http://azure.microsoft.com/support/legal/sla/)
+- [Umowy SLA dla usługi Azure Key Vault](https://azure.microsoft.com/en-us/support/legal/sla/key-vault/v1_0/)
 
 ## <a name="documentation"></a>Dokumentacja
 

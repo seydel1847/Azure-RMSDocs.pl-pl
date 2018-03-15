@@ -4,7 +4,7 @@ description: "Informacje pomagające zrozumieć i zidentyfikować określone pra
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
-ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
+ms.openlocfilehash: 8411fd46305da69e8fe06ae3851d5066695cdc24
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -95,7 +95,7 @@ Te szablony domyślne są tworzone, gdy zostało zakupione w ramach Twojej subsk
 
 ## <a name="do-not-forward-option-for-emails"></a>Opcja Nie przekazuj dotycząca wiadomości e-mail
 
-Klienci programu Exchange i usługi (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły transportu programu Exchange) mają opcję ochrony praw dodatkowe informacje na potrzeby wiadomości e-mail: **nie przesyłaj dalej**. 
+Klienci programu Exchange i usługi (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły przepływu poczty programu Exchange) mają opcję ochrony praw dodatkowe informacje na potrzeby wiadomości e-mail: **nie przesyłaj dalej**. 
 
 Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego nie widać go w portalu Azure podczas przeglądania i zarządzania szablonami usługi Azure Rights Management. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
 
@@ -116,7 +116,7 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 Exchange Online korzysta z nowych funkcji dla szyfrowanie wiadomości usługi Office 365, Nowa opcja wiadomości e-mail staje się dostępna: **tylko Szyfruj**.
 
-Ta opcja jest wdrażany dzierżawców korzystających z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web i jako inną opcję ochrony praw do reguły transportu. Aby uzyskać więcej informacji, zobacz następujące powiadomienie post blog zespołu pakietu Office: [szyfrowania zetknie się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
+Ta opcja jest wdrażany dzierżawców korzystających z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web i jako inną opcję ochrony praw dla reguły przepływu poczty. Aby uzyskać więcej informacji, zobacz następujące powiadomienie post blog zespołu pakietu Office: [szyfrowania zetknie się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
 
 Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i musi zostać uwierzytelniony adresatów. Następnie odbiorcy mają wszystkie prawa użytkowania, z wyjątkiem Pełna kontrola. Ta kombinacja prawa użytkowania oznacza, że adresaci nie obowiązują żadne ograniczenia, z wyjątkiem tego, że nie będą oni mogli usunąć ochronę. Na przykład adresat można skopiować, drukować i przekazywać wiadomości e-mail. Podobnie wszystkie dokumenty pakietu Office, które są dołączone i automatycznie chronione może zostać zapisany, skopiowane i drukowana.
 
@@ -165,7 +165,6 @@ Domyślnie używać okresu ważności licencji, dzierżawa to 30 dni i tę warto
 - Po skonfigurowaniu szablonu przy użyciu programu PowerShell, użyj okresu ważności licencji przyjmuje wartość z *LicenseValidityDuration* parametru w [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) i [ Dodaj-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) polecenia cmdlet.
     
     Aby uzyskać więcej informacji i wskazówek, aby skonfigurować to ustawienie za pomocą programu PowerShell zobacz Pomoc dla poszczególnych poleceń cmdlet.
-
 
 ## <a name="see-also"></a>Zobacz też
 [Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection](configure-policy-templates.md)
