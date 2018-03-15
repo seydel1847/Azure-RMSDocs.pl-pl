@@ -4,17 +4,17 @@ description: "Poniższe informacje pozwalają zidentyfikować ograniczenia, wyma
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 6167b99593bacdf9e717c3b57839440bac39ecec
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: a0329d66ee71ee815c0700a63172617d1fddf30a
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>Wymagania i ograniczenia dotyczące rozwiązania „hold your own key” (HYOK) dla ochrony za pomocą usług AD RMS
 
@@ -89,13 +89,19 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
         
         - Wiele lasów z niezależnych klastrów głównego usług AD RMS i użytkownicy nie mają dostępu do zawartości, która jest chroniona przez użytkowników w innych lasach.
         
-        - Wiele lasów z usługami AD RMS klastrów w każdej z nich. Każdy klaster usług AD RMS współużytkuje adres URL licencjonowania, który wskazuje do tego samego klastra usług AD RMS. W tym klastrze usług AD RMS należy zaimportować wszystkie certyfikaty zaufanego użytkownika domeny ze wszystkich innych klastrów usług AD RMS. Aby uzyskać więcej informacji na temat tej topologii Zobacz [zaufanej domeny użytkownika] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
+        - Wiele lasów z usługami AD RMS klastrów w każdej z nich. Każdy klaster usług AD RMS współużytkuje adres URL licencjonowania, który wskazuje do tego samego klastra usług AD RMS. W tym klastrze usług AD RMS należy zaimportować wszystkie certyfikaty zaufanego użytkownika domeny ze wszystkich innych klastrów usług AD RMS. Aby uzyskać więcej informacji na temat tej topologii, zobacz [zaufanej domeny użytkownika] (https://technet.microsoft.com/library/dd983944(v=ws.10\)aspx).
         
     Jeśli masz wiele klastrów usług AD RMS w oddzielnych lasach, usuń wszystkich etykiet w ramach globalnych zasad, które stosują ochronę HYOK (AD RMS) i skonfiguruj [zakres zasad](configure-policy-scope.md) dla każdego klastra. Następnie przypisać użytkowników dla każdego klastra, do jego zakresie zasad, upewniając się, nie używaj grup, które umożliwiałyby użytkownik jest przypisany do więcej niż jedna zasada zakresami. Wynik powinien być, że każdy użytkownik ma etykiety dla jednego klastra usług AD RMS. 
     
     - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): tryb można potwierdzić, sprawdzając właściwości klastra usług AD RMS, **ogólne** kartę.
     
-    - Punkt połączenia usługi nie jest zarejestrowany w usłudze Active Directory: punkt połączenia usługi nie jest używany, gdy korzystasz z ochrony za pomocą usług AD RMS razem z usługą Azure Information Protection. Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](../rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się.
+    - Każdy serwer usług AD RMS jest skonfigurowany dla adres URL certyfikacji. [Instrukcje](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+    
+    - Punkt połączenia usługi nie jest zarejestrowany w usłudze Active Directory: punkt połączenia usługi nie jest używany, gdy korzystasz z ochrony za pomocą usług AD RMS razem z usługą Azure Information Protection. 
+    
+        - Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](../rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się. 
+        
+        - Jeśli instalujesz nowy klaster AD RMS dla HYOK, należy pominąć krok, aby zarejestrować punkt połączenia usługi podczas konfigurowania pierwszego węzła. Dla każdego dodatkowego węzła upewnij się, że serwer jest skonfigurowany dla adres URL certyfikacji przed Dodaj rolę usług AD RMS i Dołącz do istniejącego klastra.
     
     - Serwery AD RMS są skonfigurowane do użycia protokołów SSL/TLS z ważnym certyfikatem x.509, który jest zaufany przez klientów nawiązujących połączenie: wymagane dla środowisk produkcyjnych, ale niewymagane w celach związanych z testowaniem lub oceną.
     
@@ -114,6 +120,24 @@ Sprawdź, czy wdrożenie usług AD RMS spełnia następujące wymagania, aby zap
 
 Aby uzyskać informacje na temat wdrażania oraz instrukcje dotyczące usług AD RMS, zobacz [Usługi Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) w bibliotece systemu Windows Server. 
 
+
+## <a name="configuring-ad-rms-servers-to-locate-the-certification-url"></a>Konfigurowanie serwerów usług AD RMS można znaleźć adres URL certyfikacji
+
+1. Na każdym serwerze usług AD RMS w klastrze Utwórz wpis rejestru:
+
+    `Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"`
+    
+    Aby uzyskać \<wartość ciągu >, określ jedną z następujących czynności:
+    
+    - W przypadku klastrów usług AD RMS za pomocą protokołu SSL/TLS:
+
+            https://<cluster_name>/_wmcs/certification/certification.asmx
+    
+    - Dla usług AD RMS klastrów nie używa protokołu SSL/TLS (testowanie tylko sieci):
+        
+            http://<cluster_name>/_wmcs/certification/certification.asmx
+
+2. Uruchom ponownie usługi IIS.
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Lokalizowanie informacji używanych do określania ochrony usług AD RMS za pomocą etykiety usługi Azure Information Protection
 
