@@ -4,7 +4,7 @@ description: "Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
+ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -154,30 +154,6 @@ Poprawki dla wygody użytkowników, które obejmują:
 - Wyślij wiadomość e-mail sprawdzania poprawności, gdy użytkownik określi uprawnień niestandardowych. Ponadto wielu adresów e-mail teraz można określić, naciskając klawisz Enter.
 
 - Etykieta nadrzędna nie jest wyświetlane, gdy wszystkie jego sublabels jest skonfigurowane dla ochrony i klienta nie ma pakietu Office, która obsługuje ochronę. 
-
-## <a name="version-172100"></a>Wersja 1.7.210.0
-
-**Wydana**: 2017-06-06
-
-Ta wersja zawiera wersję MSIPC 1.0.2217.1 klienta usługi RMS.
-
-**Nowe funkcje**:
-
-- Nowe polecenia cmdlet programu PowerShell [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). Po uruchomieniu tego polecenia cmdlet jest sprawdzana zawartość pliku i do plików bez etykiet są automatycznie stosowane etykiety, zgodnie z warunkami określonymi w zasadach usługi Azure Information Protection.
-
-**Poprawki**:
-
-- Wszystkie polecenia cmdlet dotyczące etykietowania i klasyfikacji są teraz obsługiwane na komputerach, które nie są połączone z Internetem, ale mają prawidłowe zasady usługi Azure Information Protection.
-
-- W celu zapewnieniu zgodności, parametr wyjściowy polecenia cmdlet [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) została zmieniona z angielskiego (brytyjskiego) (**IsLabelled**) na angielski (amerykański) (**IsLabeled**). Jeśli masz skrypty lub zautomatyzowane procesy, które poszukują tego parametru, zaktualizuj jego pisownię.
-
-- Ogólne poprawki dotyczące stabilności, które obejmują:
-
-    - Dla programu Outlook: poprawki dotyczące awarii, dużego użycia pamięci i problemów z wyświetlaniem menu.
-    
-    - Dla programu Word, Excel i PowerPoint: poprawki dotyczące wysokiego użycia procesora, problemów z wyświetlaniem przy zapisywaniu dużych plików programu Excel lub braku odpowiedzi aplikacji. 
-    
-    Również w przypadku tych aplikacji, w celu zwiększenia wydajności pakietu Office 2016 z usługami SharePoint Online i OneDrive dla firm, automatyczne i zalecane etykietowanie jest stosowane podczas zamykania plików, a nie podczas ich zapisywania (zapisywania automatycznego lub wywołanego przez użytkownika). Podobnie jeśli ustawienie **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę** jest włączona, użytkownicy nie są monitowani o wybierz etykietę, aż do zamknięcia pliku. Wyjątek stanowią programy Word 2016 i Excel 2016, gdy użytkownik wybiera opcję **Zapisz jako**. Ta akcja wyzwala etykietowanie, jeśli etykietowanie zostało skonfigurowane. 
 
 ## <a name="next-steps"></a>Następne kroki
 

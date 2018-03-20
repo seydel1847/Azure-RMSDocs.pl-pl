@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: fc2fd8d043c04c3820de30d2087ff498b4ea4e90
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Likwidowanie i dezaktywowanie ochrony usługi Azure Information Protection
 
@@ -26,7 +26,7 @@ Czy organizacja chroni zawartość za pomocą usługi Azure Rights Management z 
 
 Jeśli nie potrzebujesz nieprzerwanego dostępu do wcześniej chronionej zawartości, należy dezaktywować usługę i subskrypcja usługi Azure Information Protection wygaśnie. Takie rozwiązanie byłoby na przykład odpowiednie w sytuacji, gdy testowanie usługi Azure Information Protection zakończyło się przed wdrożeniem jej w środowisku produkcyjnym.
 
-Jednak jeśli wdrożeniu usługi Azure Information Protection w środowisku produkcyjnym i chronione dokumenty i wiadomości e-mail, upewnij się, czy masz kopię klucza dzierżawy usługi Azure Information Protection, aby zdezaktywować usługę Azure Rights Management. Upewnij się, że masz kopię klucza przed wygaśnięciem subskrypcji, aby upewnić się, że mogą zachować dostęp do zawartości, która była chroniona przez usługę Azure Rights Management Po dezaktywowaniu tej usługi. Jeśli używasz dostarczania własnego klucza rozwiązania (BYOK) gdzie Generowanie i zarządzanie własnym kluczem w module HSM, masz już klucz dzierżawy usługi Azure Information Protection. Jeśli jednak był to klucz zarządzany przez firmę Microsoft (opcja domyślna), zapoznaj się z instrukcjami dotyczącymi eksportowania klucza dzierżawy w artykule [Operacje dotyczące klucza dzierżawy usługi Azure Rights Management](operations-tenant-key.md).
+Jednak jeśli wdrożeniu usługi Azure Information Protection w środowisku produkcyjnym i chronione dokumenty i wiadomości e-mail, upewnij się, czy masz kopię klucza dzierżawy usługi Azure Information Protection, aby zdezaktywować usługę Azure Rights Management. Upewnij się, że masz kopię klucza przed wygaśnięciem subskrypcji, aby upewnić się, że mogą zachować dostęp do zawartości, która była chroniona przez usługę Azure Rights Management Po dezaktywowaniu tej usługi. Jeśli używasz dostarczania własnego klucza rozwiązania (BYOK) gdzie Generowanie i zarządzanie własnym kluczem w module HSM, masz już klucz dzierżawy usługi Azure Information Protection. Ale jeśli został on zarządzany przez firmę Microsoft (ustawienie domyślne), zobacz instrukcje eksportowania klucza dzierżawy w [operacje związane z kluczem dzierżawy usługi Azure Information Protection](operations-tenant-key.md) artykułu.
 
 > [!TIP]
 > Nawet po wygaśnięciu subskrypcji dzierżawa usługi Azure Information Protection pozostaje dostępna, co umożliwia korzystanie z zawartości przez dłuższy czas. Nie można już jednak eksportować klucza dzierżawy.

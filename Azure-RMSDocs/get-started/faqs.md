@@ -4,7 +4,7 @@ description: "Niektóre często zadawane pytania dotyczące usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a351c59b9c0cb3d26b5c7e623928ecb53900f41
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 604f675b34bfdc4dddb3c36c73c13dcccae40f11
+ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -51,7 +51,7 @@ Jeśli obecnie używasz aplikacji dla systemu Windows do udostępniania usługi 
 
 Administratorzy globalni dla usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure Information Protection. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, dostępne są następujące opcje:
 
-- **Administrator ochrony informacji** (obecnie w wersji zapoznawczej): rola administratora tej usługi Azure Active Directory pozwala administratorowi, skonfiguruj wszystkie aspekty usługi Azure Information Protection, ale nie do innych usług. Administrator z tą rolą można aktywować i dezaktywowanie usługi Azure Rights Management ochrony, skonfigurować ustawienia ochrony i etykiety i skonfigurować zasady usługi Azure Information Protection. Ponadto administrator z tą rolą mogą uruchomić wszystkie [poleceń cmdlet programu PowerShell w AADRM module](../deploy-use/administer-powershell.md). 
+- **Administrator ochrony informacji**: rola administratora tej usługi Azure Active Directory pozwala administratorowi, skonfiguruj wszystkie aspekty usługi Azure Information Protection, ale nie do innych usług. Administrator z tą rolą można aktywować i dezaktywowanie usługi Azure Rights Management ochrony, skonfigurować ustawienia ochrony i etykiety i skonfigurować zasady usługi Azure Information Protection. Ponadto administrator z tą rolą mogą uruchomić wszystkie [poleceń cmdlet programu PowerShell w AADRM module](../deploy-use/administer-powershell.md). 
     
     Aby przypisać użytkownika do roli administratora, zobacz [przypisać użytkownika do ról administratora w usłudze Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 

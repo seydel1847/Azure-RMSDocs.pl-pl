@@ -4,7 +4,7 @@ description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 03/19/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 62c9bba17c561fda86393ed4e76c00895613d0e3
+ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
@@ -89,7 +89,13 @@ Następnie skonfiguruj rozwiązanie MFA:
 
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
 
-Łącznik usługi Rights Management nie obsługuje uwierzytelniania wieloskładnikowego. W przypadku wdrożenia tego łącznika dla serwerów lokalnych, musisz użyć konta łącznika, które nie wymaga uwierzytelniania wieloskładnikowego.
+Łącznik usługi Rights Management i skanera usługi Azure Information Protection nie obsługują uwierzytelniania Wieloskładnikowego. Jeśli wdrożono łącznik lub skanera następujące konta nie może wymagać uwierzytelniania Wieloskładnikowego:
+
+- Konto, które instaluje i konfiguruje Łącznik.
+
+- Konto główne usługi w usłudze Azure AD, **Aadrm_S-1-7-0**, która tworzy łącznik.
+ 
+- Konto usługi, uruchomioną skanera.
 
 ## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6560381eb07d582d817d00cc76be880998f676f2
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Wdrażanie łącznika usługi Azure Rights Management
 
@@ -51,7 +51,7 @@ Można użyć łącznika usług RMS nawet w przypadku, gdy niektórzy użytkowni
 
 Jeśli zarządzasz własnym kluczem dzierżawy dla usług Azure RMS (scenariusz z użyciem własnego klucza — BYOK), łącznik usług RMS i serwery lokalne, które go używają, nie uzyskują dostępu do modułu HSM zawierającego Twój klucz dzierżawy. Jest to spowodowane tym, że wszystkie operacje kryptograficzne, które używają klucza dzierżawy, są wykonywane w ramach usługi Azure RMS, a nie lokalnie.
 
-Aby uzyskać więcej informacji na temat tego scenariusza , zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management](../plan-design\plan-implement-tenant-key.md).
+Jeśli chcesz dowiedzieć się więcej na temat tego scenariusza, w którym można zarządzać z kluczem dzierżawy, zobacz [planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design\plan-implement-tenant-key.md).
 
 ## <a name="prerequisites-for-the-rms-connector"></a>Wymagania wstępne dotyczące łącznika usługi RMS
 Przed zainstalowaniem łącznika usługi RMS upewnij się, że zostały spełnione następujące wymagania.

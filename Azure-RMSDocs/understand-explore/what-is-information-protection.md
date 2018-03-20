@@ -4,23 +4,23 @@ description: "Omówienie usługi Azure Information Protection."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c3bbf2a9e0fee14ddeb2f18fa5671209ad92cfd4
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 22cb2afc014ce7538d7163edc3b12e7d7a137c72
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
 >*Dotyczy: Azure Information Protection*
 
-Azure Information Protection to rozwiązanie chmurowe ułatwiające klasyfikowanie, etykietowanie i ochronę dokumentów oraz wiadomości e-mail w firmie. Czynności te mogą być wykonywane automatycznie przez administratorów definiujących reguły i warunki, ręcznie przez użytkowników bądź wspólnie — użytkownicy otrzymują wówczas zalecenia. 
+Usługa Azure Information Protection (nazywane czasami Efektywnych) jest oparta na chmurze rozwiązanie, które pozwala organizacjom klasyfikowanie, etykietowanie i ochronę jego dokumentów i wiadomości e-mail. Czynności te mogą być wykonywane automatycznie przez administratorów definiujących reguły i warunki, ręcznie przez użytkowników bądź wspólnie — użytkownicy otrzymują wówczas zalecenia. 
 
 Na poniższej ilustracji przedstawiono przykładowe zastosowanie usługi Azure Information Protection. Administrator skonfigurował reguły wykrywania poufnych danych (w tym przypadku informacji o karcie kredytowej). Podczas zapisywania przez użytkownika dokumentu programu Word zawierającego dane karty kredytowej zostaje wyświetlona niestandardowa etykietka narzędzia z zaleceniem, aby użytkownik zastosował konkretną, skonfigurowaną przez administratora etykietę. Etykieta ta klasyfikuje i — opcjonalnie, w zależności od konfiguracji — chroni dokument. 
 
