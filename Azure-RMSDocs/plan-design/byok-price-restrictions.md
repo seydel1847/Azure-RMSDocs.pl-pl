@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
-ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
+ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>Cennik i ograniczenia dotyczące funkcji BYOK
 
@@ -45,7 +45,7 @@ Inne zalety używania usługi Azure Key Vault do zarządzania kluczem dzierżawy
 
 - Usługa Azure Key Vault zapewnia separację ról, będącą uznanym najlepszym rozwiązaniem w dziedzinie zabezpieczeń. Administratorzy usługi Azure Information Protection mogą skoncentrować się na zarządzaniu klasyfikacją i ochroną danych, natomiast administratorzy usługi Azure Key Vault — na zarządzaniu kluczami i ewentualnymi szczególnymi zasadami wymaganymi na potrzeby zabezpieczeń lub zgodności.
 
-- W niektórych organizacjach obowiązują ograniczenia dotyczące lokalizacji przechowywania klucza głównego. Usługa Azure Key Vault zapewnia wysoki poziom kontroli nad lokalizacją przechowywania klucza głównego, ponieważ jest dostępna w wielu regionach platformy Azure. Obecnie można wybrać 28 regiony platformy Azure i można oczekiwać, że ten numer, aby zwiększyć. Aby uzyskać więcej informacji, zobacz stronę [Dostępne produkty według regionu] (https://azure.microsoft.com/regions/services/) w witrynie platformy Azure.
+- W niektórych organizacjach obowiązują ograniczenia dotyczące lokalizacji przechowywania klucza głównego. Usługa Azure Key Vault zapewnia wysoki poziom kontroli nad lokalizacją przechowywania klucza głównego, ponieważ jest dostępna w wielu regionach platformy Azure. Obecnie można wybrać 28 regiony platformy Azure i można oczekiwać, że ten numer, aby zwiększyć. Aby uzyskać więcej informacji, zobacz [produkty dostępne według regionu] (https://azure.microsoft.com/regions/services/) w witrynie platformy Azure.
 
 Oprócz funkcji zarządzania kluczami usługa Azure Key Vault zapewnia administratorom zabezpieczeń jednolite środowisko zarządzania przechowywaniem certyfikatów i informacji poufnych (na przykład haseł), a także zarządzaniem nimi i dostępem do nich, dla innych usług i aplikacji korzystających z szyfrowania. 
 
@@ -59,8 +59,8 @@ Jeśli uprzednio włączono usługi IRM programu Exchange Online zaimportować z
 
 ## <a name="next-steps"></a>Następne kroki
 
-Jeśli zdecydujesz się na zarządzanie własnym kluczem, przejdź do tematu [Wdrażanie klucza dzierżawy usługi Azure Rights Management](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
+Jeśli wprowadzono decyzja o zarządzanie własnym kluczem, przejdź do [wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 
-Jeśli zdecydujesz się nadal używać domyślnej konfiguracji, w której firma Microsoft zarządza kluczem dzierżawy, zobacz sekcję [Następne kroki](plan-implement-tenant-key.md#next-steps) w artykule Planowanie i wdrażanie klucza dzierżawy usługi Azure Rights Management.
+Jeśli decydujesz się pozostanie z domyślnej konfiguracji, w której firma Microsoft zarządza z kluczem dzierżawy, zobacz [następne kroki](plan-implement-tenant-key.md#next-steps) sekcji Planowanie i wdrażanie artykuł klucza dzierżawy usługi Azure Information Protection.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

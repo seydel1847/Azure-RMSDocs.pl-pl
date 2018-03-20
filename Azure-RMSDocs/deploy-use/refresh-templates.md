@@ -4,7 +4,7 @@ description: "W przypadku korzystania z usługi Azure Rights Management szablony
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73ba65e3c453b1e06e02925a0b3ecc09a0bca1f0
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 0f3c7f45789339aca0186ad2855c2e25f931182f
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Odświeżanie szablonów dla użytkowników i usług
 
@@ -70,22 +70,24 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 
 1.  Korzystając z edytora rejestru, usuń dane dla wartości **LastUpdatedTime**. Przykładowa wartość to **2015-04-20T15:52** — w tym przypadku należy usunąć ciąg 2015-04-20T15:52, aby nie były wyświetlane żadne dane. Skorzystaj z poniższych informacji, aby zlokalizować ścieżkę rejestru w celu usunięcia danych dla tej wartości rejestru.
 
-    **Ścieżka rejestru:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **Ścieżka rejestru:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*> \Template\\ < *user_alias*>
 
     **Typ:** REG_SZ
 
     **Wartość:** LastUpdatedTime
 
     > [!TIP]
-        > W ścieżce rejestru ciąg <*MicrosoftRMS_FQDN*> odnosi się do nazwy FQDN usługi RMS firmy Microsoft. Aby sprawdzić tę wartość:
+    > W ścieżce rejestru ciąg <*MicrosoftRMS_FQDN*> odnosi się do nazwy FQDN usługi RMS firmy Microsoft. Aby sprawdzić tę wartość:
 
-    > 1.  Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli nie został już zainstalowany moduł programu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
-    > 2.  Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
+    > Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli nie został już zainstalowany moduł programu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
     >
-    >     Na przykład: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
-    > 3.  Wykasuj z wartości ciąg **https://** oraz **/_wmcs/licensing**. Pozostała wartość stanowi nazwę FQDN usługi Microsoft RMS. W naszym przykładzie nazwa FQDN usługi Microsoft RMS ma następującą wartość:
+    > Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
     >
-    >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+    > Na przykład: **LicensingIntranetDistributionPointUrl: https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    > 
+    > Wykasuj z wartości ciąg **https://** oraz **/_wmcs/licensing**. Pozostała wartość stanowi nazwę FQDN usługi Microsoft RMS. W naszym przykładzie nazwa FQDN usługi Microsoft RMS ma następującą wartość:
+    >
+    >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  Usuń następujący folder i wszystkie zawarte w nim pliki: **%localappdata%\Microsoft\MSIPC\Templates**
 
