@@ -4,7 +4,7 @@ description: "Informacje na temat dostosowywania klienta usługi Azure Informati
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
+ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -52,7 +52,7 @@ Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **
 
 Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
 
-## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" Strony powitalnej
+## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" strony powitalnej
 
 Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i użytkownik otwiera Word, Excel, PowerPoint lub programie Outlook **Gratulacje!** zostanie wyświetlona strona krótkie instrukcje jak nowy pasek Information Protection umożliwia wybranie etykiety. Edytując rejestr, można pominąć tej strony.
 
@@ -202,9 +202,91 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: \< **identyfikator etykiety**> lub **None**
 
+## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Dokumenty pakietu Office i PDF dokumenty, które są oznaczone przez Secure Islands można relabel te dokumenty z etykietą usługi Azure Information Protection przy użyciu mapowania, które należy zdefiniować. Możesz również ta metoda umożliwia ponowne użycie etykiety z innych rozwiązań podczas ich etykiety znajdują się w dokumentach pakietu Office. 
+
+W wyniku tej opcji konfiguracji nowej etykiety usługi Azure Information Protection jest stosowana przez klienta usługi Azure Information Protection w następujący sposób:
+
+- W przypadku dokumentów pakietu Office: gdy dokument zostanie otwarty w aplikacji komputerowej, nowej etykiety usługi Azure Information Protection jest wyświetlana jako zestaw i jest stosowana, gdy dokument zostanie zapisany.
+
+- W Eksploratorze plików: W oknie dialogowym usługi Azure Information Protection nowej etykiety usługi Azure Information Protection jest wyświetlana jako zestaw i jest stosowana, gdy użytkownik wybierze **Zastosuj**. Jeśli użytkownik wybierze **anulować**, nowej etykiety nie została zastosowana.
+
+- Dla środowiska PowerShell: [AIPFileLabel zestaw](/powershell/module/azureinformationprotection/set-aipfilelabel) dotyczy nowej etykiety usługi Azure Information Protection. [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) nie wyświetla nowej etykiety usługi Azure Information Protection, dopóki nie jest ustawiona przy użyciu innej metody.
+
+- Skanera usługi Azure Information Protection: odnajdywania raportów, gdy ustawiał nowej etykiety usługi Azure Information Protection i tej etykiety mogą być stosowane z trybem Wymuś.
+
+Ta konfiguracja wymaga określenia Klient zaawansowany, ustawienie o nazwie **LabelbyCustomProperty** dla każdej etykiety usługi Azure Information Protection, który ma być mapowany do starego etykiety. Następnie dla każdego wpisu, ustaw wartość przy użyciu następującej składni:
+
+`[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
+
+Wartość Identyfikatora etykiety jest wyświetlany na **etykiety** bloku, gdy wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w portalu Azure. Aby określić sublabel, etykieta nadrzędny musi być w tym samym zakresie lub globalnych zasad.
+
+Podaj wybraną nazwę reguły migracji. Użyj nazwy opisowej ułatwiające identyfikowanie etykiety jak co najmniej jednego z poprzednich rozwiązania etykietowania powinny być mapowane do etykiety usługi Azure Information Protection. Nazwa wyświetlana w raportach skanera, a w Podglądzie zdarzeń. 
+
+### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>Przykład 1: Mapowanie jeden do jednego z taką samą nazwę etykiety
+
+Dokumentów, których etykiety Secure Islands "Poufne" powinien relabeled "Poufne" przez usługę Azure Information Protection.
+
+W tym przykładzie:
+
+- Etykieta usługi Azure Information Protection **poufne** identyfikatorze 1ace2cc3-14bc-4142-9125-bf946a70542c w etykiecie. 
+
+- Etykieta Secure Islands są przechowywane w właściwość niestandardowa o nazwie **klasyfikacji**.
+
+Zaawansowane ustawienia klienta:
+
+    
+|Nazwa|Wartość|
+|---------------------|---------|
+|LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c, "Secure Islands etykiety jest poufne," klasyfikacji, poufne|
+
+### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>Przykład 2: Mapowanie jeden do jednego dla nazwy innej etykiety
+
+Dokumenty oznaczone jako "Poufne" przez Secure Islands powinien relabeled jako "Poufny" przez usługę Azure Information Protection.
+
+W tym przykładzie:
+
+- Etykieta usługi Azure Information Protection **poufny** identyfikatorze 3e9df74d-3168-48af-8b11-037e3021813f w etykiecie.
+
+- Etykieta Secure Islands są przechowywane w właściwość niestandardowa o nazwie **klasyfikacji**.
+
+Zaawansowane ustawienia klienta:
+
+    
+|Nazwa|Wartość|
+|---------------------|---------|
+|LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f, "Secure Islands etykiety jest liter" klasyfikacji, liter|
+
+
+### <a name="example-3-many-to-one-mapping-of-label-names"></a>Przykład 3: Wiele do jednego mapowania nazw etykiety
+
+Masz dwie etykiety Secure Islands zawierające słowo "Internal" i ma dokumentów, których jednej z tych etykiet Secure Islands relabeled jako "Ogólne" w przez usługę Azure Information Protection.
+
+W tym przykładzie:
+
+- Etykieta usługi Azure Information Protection **ogólne** identyfikatorze 2beb8fe7-8293-444 c-9768-7fdc6f75014d w etykiecie.
+
+- Etykieta Secure Islands są przechowywane w właściwość niestandardowa o nazwie **klasyfikacji**.
+
+Zaawansowane ustawienia klienta:
+
+    
+|Nazwa|Wartość|
+|---------------------|---------|
+|LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d, "Secure Islands etykiety zawiera wewnętrzne" klasyfikacji. \*Wewnętrznego.\*|
+
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej
 
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. 
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie.
+
+> [!NOTE]
+> Jeśli używasz tej konfiguracji i z poprzedniej sekcji, aby przeprowadzić migrację z innego rozwiązania etykietowania, pierwszeństwo ma etykietowania ustawienie migracji. 
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 

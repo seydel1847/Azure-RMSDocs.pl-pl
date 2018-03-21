@@ -4,17 +4,17 @@ description: "Usługa Azure Information Protection zawiera domyślne etykiety z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 8628fa5b17659a49ff9f63ae6dad32f073e8ced6
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: cbfa670d3a80068754e604ebb77892f320095ae9
+ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
@@ -44,7 +44,9 @@ Użyj poniższych instrukcji, aby dodać nową etykietę do zasad usługi Azure 
 
 4. W bloku **Etykieta** lub **Etykieta podrzędna** wybierz opcje dla nowej etykiety, a następnie kliknij przycisk **Zapisz**.
     
-    Pamiętaj, że nowym etykietom jest automatycznie przypisywany kolor czarny. Wybierz z listy kolorów wyróżniający się kolor lub wprowadź szesnastkowy tryplet dla składników czerwonego, zielonego i niebieskiego (RGB) koloru. Przykład: **#DAA520**. Jeśli potrzebujesz odwołania te kodów [kolory według nazwy](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) w sieci MSDN dokumentacji stanowi punkt wyjścia przydatne i kody znajdziesz w edycji programów, takich jak Microsoft Paint, gdzie możesz wybrać niestandardowego koloru z wielu obrazów palety i automatycznie wyświetla wartości RGB.
+    Po określeniu nazwy wyświetlanej, będą mogli Określanie niektóre znaki (na przykład ukośnikiem odwrotnym i handlowego "i"), ponieważ nie wszystkie usługi i aplikacje, które używają usługi Azure Information Protection może obsługiwać te znaki. Oprócz znaki, które są zablokowane, nie należy określać  **#**  znaków.    
+    
+    Pamiętaj, że nowym etykietom jest automatycznie przypisywany kolor czarny. Wybierz z listy kolorów wyróżniający się kolor lub wprowadź szesnastkowy tryplet dla składników czerwonego, zielonego i niebieskiego (RGB) koloru. Przykład: **#DAA520**. Jeśli potrzebujesz informacji o tych kodach, plik [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx) z dokumentacji MSDN to dobry punkt wyjścia. Takie kody znajdziesz w wielu programach do edycji obrazów, takich jak Microsoft Paint, gdzie kolor niestandardowy wybiera się z palety, a program automatycznie wyświetla wartości RGB.
 
 5. Aby udostępnić użytkownikom zmiany, w początkowym bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
