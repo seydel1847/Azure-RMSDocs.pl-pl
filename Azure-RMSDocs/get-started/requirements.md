@@ -4,7 +4,7 @@ description: "Określanie wymagań wstępnych dotyczących wdrażania usługi Az
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4321513f5323eb7eb8d742b1c86fd05defa85970
-ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
+ms.openlocfilehash: 9542eb6f679d931de556f706afa3b51cfd9d2bb8
+ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -46,6 +46,8 @@ Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na t
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), musisz również skonfigurować integrację katalogów.
+
+Rejestracji jednokrotnej (SSO) jest obsługiwana dla usługi Azure Information Protection, dzięki czemu użytkownicy nie są wielokrotnie monitowani o podanie poświadczeń. Jeśli używasz innego dostawcy rozwiązania do federacyjnego skontaktuj się z danym dostawcą konfigurowania usługi Azure AD. WS-Trust jest typowe wymagania dotyczące tych rozwiązań w celu obsługi logowania jednokrotnego. 
 
 Uwierzytelnianie wieloskładnikowe jest obsługiwane przez usługę Azure Information Protection, jeśli masz wymagane oprogramowanie klienckie i prawidłowo skonfigurowaną infrastrukturę obsługującą to uwierzytelnianie.
 
