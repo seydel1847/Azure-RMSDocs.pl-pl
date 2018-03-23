@@ -1,22 +1,22 @@
 ---
-title: "Niestandardowe konfiguracje klienta usługi Azure Information Protection"
-description: "Informacje na temat dostosowywania klienta usługi Azure Information Protection dla systemu Windows."
+title: Niestandardowe konfiguracje klienta usługi Azure Information Protection
+description: Informacje na temat dostosowywania klienta usługi Azure Information Protection dla systemu Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
-ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
+ms.openlocfilehash: bb478a91a0af035bc07a77e4aae8c2f6c19eab4a
+ms.sourcegitcommit: c66da7a66f25a3c080e43c548e7945fec35ed751
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -204,7 +204,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta lub skanera usługi Azure Information Protection.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
@@ -316,13 +316,13 @@ Teraz, gdy użytkownik otwiera i zapisuje jeden z tych dokumentów pakietu Offic
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
 
-Pomimo tego, że program Outlook w sieci Web nie obsługuje natywnie klasyfikacji ani ochrony usługi Azure Information Protection, można użyć klasyfikacji wiadomości programu Exchange w celu poszerzenia zasięgu używania etykiet usługi Azure Information Protection o użytkowników urządzeń przenośnych.
+Mimo że program Outlook w sieci web nie obsługują natywnie usługi Azure Information Protection i ochrony, można użyć wymiany wiadomości klasyfikacji rozszerzenie etykiety usługi Azure Information Protection użytkowników mobilnych, gdy korzystają z programu Outlook w sieci Web. Outlook Mobile nie obsługuje klasyfikacji wiadomości programu Exchange.
 
 W tym celu: 
 
 1. Użyj polecenia cmdlet [New-MessageClassification](https://technet.microsoft.com/library/bb124400) środowiska PowerShell programu Exchange w celu utworzenia klasyfikacji wiadomości z właściwością Name, która mapuje do nazw etykiet użytkownika w zasadach usługi Azure Information Protection. 
 
-2. Utwórz dla każdej etykiety regułę transportu programu Exchange: zastosuj regułę, jeśli właściwości wiadomości obejmują skonfigurowaną przez Ciebie klasyfikację, a następnie zmodyfikuj właściwości wiadomości, aby ustawić nagłówek wiadomości. 
+2. Tworzenie reguły przepływu poczty programu Exchange dla każdej etykiety: zastosowania reguły klasyfikacji, który zostanie skonfigurowany zawierają właściwości wiadomości i modyfikowanie właściwości wiadomości, aby ustawić nagłówek komunikatu. 
 
     Informacje, jakie należy określić dla nagłówka wiadomości, można zidentyfikować, sprawdzając nagłówki internetowe wiadomości e-mail wysłanej i sklasyfikowanej za pomocą etykiety usługi Azure Information Protection. Wyszukaj nagłówek **msip_labels** i ciąg, który następuje zaraz po nim, łącznie ze średnikiem. Korzystając z poprzedniego przykładu:
     
@@ -330,9 +330,9 @@ W tym celu:
     
     Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Przykład:
     
-    ![Przykładowa reguła transportu usługi Exchange Online, która ustawia nagłówek wiadomości dla określonej etykiety usługi Azure Information Protection](../media/exchange-rule-for-message-header.png)
+    ![Przykład reguły przepływu poczty w usłudze Exchange Online, który ustawia nagłówek komunikatu dla określonej etykiety usługi Azure Information Protection](../media/exchange-rule-for-message-header.png)
 
-Testując tę konfigurację, trzeba pamiętać, że przy tworzeniu lub edytowaniu reguł transportu często występuje opóźnienie (na przykład godzinne). Gdy reguła jest aktywna, w przypadku użytkowników, którzy używają aplikacji Outlook w sieci Web lub klienta urządzenia przenośnego obsługującego ochronę za pomocą usługi Rights Management, ma miejsce następujący scenariusz: 
+Aby przetestować tę konfigurację, należy pamiętać, że występuje często opóźnienie podczas tworzenia lub edytowania reguły przepływu poczty (na przykład, zaczekaj godzinę). Gdy zasada jest włączona, następujące zdarzenia teraz się zdarzyć, gdy użytkownicy za pomocą programu Outlook w sieci web lub klienta urządzenia przenośnego, który obsługuje protokół Exchange ActiveSync IRM: 
 
 - Użytkownicy wybierają klasyfikację wiadomości programu Exchange i wysyłają wiadomość e-mail.
 
@@ -340,11 +340,11 @@ Testując tę konfigurację, trzeba pamiętać, że przy tworzeniu lub edytowani
 
 - Gdy adresaci korzystający z klienta usługi Azure Information Protection wyświetlają wiadomość e-mail w programie Outlook, widzą przypisane etykiety usługi Azure Information Protection i wszelkie powiązane nagłówki, stopki lub znaki wodne wiadomości e-mail. 
 
-Jeśli etykiety usługi Azure Information Protection zakładają zastosowanie ochrony zarządzania prawami, dodaj tę ochronę do konfiguracji reguły. Zaznacz opcję modyfikacji zabezpieczeń wiadomości, zastosuj ochronę praw, a następnie wybierz szablon usługi RMS lub opcję Nie przesyłaj dalej.
+Jeśli etykiety usługi Azure Information Protection zastosowania ochrony, należy dodać tę ochronę do konfiguracji reguły: opcja modyfikowania zabezpieczeń wiadomości, Zastosuj ochronę praw, a następnie wybierz szablon usług RMS lub opcja nie przekazuj.
 
-Możesz również skonfigurować reguły transportu na potrzeby mapowania odwrotnego. Po wykryciu etykiety usługi Azure Information Protection ustaw odpowiednią klasyfikację wiadomości programu Exchange:
+Można również skonfigurować reguły przepływu poczty w celu mapowania wstecznego. Po wykryciu etykiety usługi Azure Information Protection ustaw odpowiednią klasyfikację wiadomości programu Exchange:
 
-- Dla każdej etykiety usługi Azure Information Protection utwórz regułę transportu, która będzie stosowana, jeśli nagłówek **msip_labels** będzie zawierać nazwę Twojej etykiety (na przykład **Ogólne**), oraz zastosuj klasyfikację wiadomości mapowaną do tej etykiety.
+- Dla każdej etykiety usługi Azure Information Protection: Tworzenie reguły przepływu poczty, która jest stosowana po **msip_labels** nagłówek zawiera nazwę etykiety (na przykład **ogólne**) i stosować wiadomości Klasyfikacja, który jest mapowany na tę etykietę.
 
 
 ## <a name="next-steps"></a>Następne kroki
