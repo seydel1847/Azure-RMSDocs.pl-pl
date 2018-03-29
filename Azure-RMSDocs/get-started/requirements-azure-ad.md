@@ -1,26 +1,26 @@
 ---
-title: "Wymagania dotyczące usługi Azure Active Directory dla usługi AIP"
-description: "Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników."
+title: Wymagania dotyczące usługi Azure Active Directory dla usługi AIP
+description: Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62c9bba17c561fda86393ed4e76c00895613d0e3
-ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
+ms.openlocfilehash: 82e2fcb1cdbce0476e95b35b0faef7ada7637795
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Możesz użyć konta organizacji dla tego katalogu logować się do portalu Azure, w którym, na przykład można skonfigurować i zarządzać szablony usługi Rights Management.
 

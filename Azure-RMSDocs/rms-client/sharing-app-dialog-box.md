@@ -1,26 +1,26 @@
 ---
-title: "Opcje w oknach dialogowych aplikacji RMS sharing — AIP"
-description: "Te informacje ułatwiają określanie opcji w oknie dialogowym dodawania ochrony lub udostępniania chronionej zawartości w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku ochrony udostępnianego pliku lub włączania ochrony miejscowej pliku i wybrania uprawnień niestandardowych."
+title: Opcje w oknach dialogowych aplikacji RMS sharing — AIP
+description: Te informacje ułatwiają określanie opcji w oknie dialogowym dodawania ochrony lub udostępniania chronionej zawartości w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku ochrony udostępnianego pliku lub włączania ochrony miejscowej pliku i wybrania uprawnień niestandardowych.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Te informacje ułatwiają określanie opcji w oknie dialogowym **dodawania ochrony** lub **udostępniania chronionej zawartości** w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku [ochrony udostępnianego pliku](sharing-app-protect-by-email.md) lub [włączania ochrony miejscowej pliku](sharing-app-protect-in-place.md) i wybrania uprawnień niestandardowych.
 

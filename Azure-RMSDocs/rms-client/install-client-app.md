@@ -1,24 +1,26 @@
 ---
-title: "Pobieranie i instalowanie klienta usługi Azure Information Protection"
-description: "Instrukcje dla użytkowników umożliwiające zainstalowanie klienta usługi Azure Information Protection dla systemu Windows w celu umożliwienia klasyfikowania i ochrony dokumentów oraz wiadomości e-mail."
+title: Pobieranie i instalowanie klienta usługi Azure Information Protection
+description: Instrukcje dla użytkowników umożliwiające zainstalowanie klienta usługi Azure Information Protection dla systemu Windows w celu umożliwienia klasyfikowania i ochrony dokumentów oraz wiadomości e-mail.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 190a6a371e67417139e033c0b5472042a24b2502
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: c5e048c5418b956ddb881ed2eb63ad0cc257bde4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobierz i zainstaluj klienta usługi Azure Information Protection
+
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby zainstalować tego klienta w celu ochrony dokumentów i wiadomości e-mail oraz stosowania dla nich etykiet, trzeba mieć na komputerze uprawnienia administratora lokalnego.
 

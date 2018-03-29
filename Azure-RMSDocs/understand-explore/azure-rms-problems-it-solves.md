@@ -1,26 +1,26 @@
 ---
-title: "Problemy rozwiązywane przez usługę Azure Rights Management — AIP"
-description: "Identyfikowanie wymagań lub problemów, które może mieć organizacja, a także poznanie sposobów ich rozwiązywania przy użyciu technologii Azure RMS."
+title: Problemy rozwiązywane przez usługę Azure Rights Management — AIP
+description: Identyfikowanie wymagań lub problemów, które może mieć organizacja, a także poznanie sposobów ich rozwiązywania przy użyciu technologii Azure RMS.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 76ffef5259d9ecc16f78cbcde40862d7686b714c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 4ca7d733cfe1045f46cfe47ee99d0df51dcac347
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Jakie problemy rozwiązuje usługa Azure RMS?
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Użyj poniższej tabeli, aby zidentyfikować wymagania biznesowe lub problemy, które może mieć organizacja w zakresie ochrony dokumentów i wiadomości e-mail, a także poznać sposoby ich rozwiązywania przy użyciu technologii Azure Rights Management (Azure RMS).
 

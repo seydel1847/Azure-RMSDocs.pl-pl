@@ -1,26 +1,26 @@
 ---
-title: "Rejestrowanie i analizowanie użycia usługi Azure RMS — AIP"
-description: "Informacje i instrukcje dotyczące sposobu korzystania z rejestrowania użycia za pomocą usługi Azure Rights Management (Azure RMS)."
+title: Rejestrowanie i analizowanie użycia usługi Azure RMS — AIP
+description: Informacje i instrukcje dotyczące sposobu korzystania z rejestrowania użycia za pomocą usługi Azure Rights Management (Azure RMS).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Udostępnia ona ochrony danych organizacji dokumentów i wiadomości e-mail i może rejestrować wszystkie żądania do niego. Gdy użytkownicy ochrony dokumentów i wiadomości e-mail, a także korzystać z tej zawartości, akcje wykonywane przez administratorów z tej usługi i akcje wykonywane przez operatorów firmy Microsoft do obsługi wdrożenia usługi Azure Information Protection zawierać te żądania. 
 

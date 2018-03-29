@@ -1,26 +1,26 @@
 ---
-title: "Odświeżanie szablonów usługi Azure RMS — AIP"
-description: "W przypadku korzystania z usługi Azure Rights Management szablony są automatycznie pobierane na komputery klienckie, dzięki czemu użytkownicy mogą wybrać je z poziomu ich aplikacji. W przypadku wprowadzenia zmian do szablonów może być jednak konieczne wykonanie dodatkowych czynności."
+title: Odświeżanie szablonów usługi Azure RMS — AIP
+description: W przypadku korzystania z usługi Azure Rights Management szablony są automatycznie pobierane na komputery klienckie, dzięki czemu użytkownicy mogą wybrać je z poziomu ich aplikacji. W przypadku wprowadzenia zmian do szablonów może być jednak konieczne wykonanie dodatkowych czynności.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0f3c7f45789339aca0186ad2855c2e25f931182f
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: 5bbefccbcf5d529d64b613220013a0988fa4808a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Odświeżanie szablonów dla użytkowników i usług
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure Information Protection szablony są automatycznie pobierane na komputery klienckie, dzięki czemu użytkownicy mogą wybrać je z poziomu ich aplikacji. W przypadku wprowadzenia zmian do szablonów może być jednak konieczne wykonanie dodatkowych czynności:
 

@@ -1,24 +1,24 @@
 ---
-title: "Konfigurowanie ustawień zasad usługi Azure Information Protection"
-description: "Skonfiguruj ustawienia w zasadach usługi Azure Information Protection mające zastosowanie do wszystkich użytkowników i urządzeń."
+title: Konfigurowanie ustawień zasad usługi Azure Information Protection
+description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protection mające zastosowanie do wszystkich użytkowników i urządzeń.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0a31316b2f69ffb2640fdd1672af4b740c863f85
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 0ba75a1898d8618ebe38bcf2680e8a9623c79265
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Oprócz ochrony informacji pasek tytuł i etykietka narzędzia istnieją niektóre ustawienia zasad usługi Azure Information Protection, które można skonfigurować niezależnie od etykiety:
 
@@ -80,7 +80,7 @@ Aby skonfigurować te ustawienia:
     
     - **Podaj niestandardowy adres URL dla klienta usługi Azure Information Protection "Dowiedz się więcej" strona sieci web**: użytkownicy widzą to łącze w **Microsoft Azure Information Protection** okno dialogowe **Pomoc i opinie**sekcji, gdy użytkownik wybierze **Chroń** > **Pomoc i opinie** z **Home** kartę w swoich aplikacjach pakietu Office. Domyślnie ten link prowadzi do witryny sieci Web usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection). Jeśli chcesz przejść do alternatywnej strony sieci Web, możesz wprowadzić adres URL protokołu HTTP lub HTTPS (zalecane). Nie jest przeprowadzana żadna weryfikacja, czy wprowadzony niestandardowy adres URL jest dostępny lub jest wyświetlany poprawnie na wszystkich urządzeniach.
         
-        Na przykład dla pomocy technicznej możesz wprowadzić adres strony dokumentacji firmy Microsoft, która zawiera informacje na temat instalowania klienta i korzystania z niego (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) lub informacje o wersji (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**). Alternatywnie możesz opublikować własną stronę sieci Web zawierającą informacje dla użytkowników pozwalające skontaktować się z Twoją pomocą techniczną lub film, który krok po kroku objaśni użytkownikom, jak używać skonfigurowanych etykiet.
+        Na przykład dla pomocy technicznej, możesz wpisać stronę dokumentacji firmy Microsoft zawierający informacje o instalowaniu i używaniu klienta (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) lub zwolnij informacje o wersji (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**). Alternatywnie możesz opublikować własną stronę sieci Web zawierającą informacje dla użytkowników pozwalające skontaktować się z Twoją pomocą techniczną lub film, który krok po kroku objaśni użytkownikom, jak używać skonfigurowanych etykiet.
 
 3. Kliknij przycisk **Zapisz**, aby zapisać zmiany.
 

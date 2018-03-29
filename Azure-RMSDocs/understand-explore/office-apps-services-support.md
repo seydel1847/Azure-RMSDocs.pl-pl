@@ -1,26 +1,26 @@
 ---
-title: "Jak aplikacje pakietu Office i usługi obsługują usługę Azure RMS w Efektywnych"
-description: "Jak aplikacje pakietu Office przez użytkownika końcowego, takich jak Word i Outlook i Office usług, takich jak programy Exchange i SharePoint, można użyć usługi Azure Rights Management z Efektywnych w celu ochrony danych organizacji."
+title: Jak aplikacje pakietu Office i usługi obsługują usługę Azure RMS w Efektywnych
+description: Jak aplikacje pakietu Office przez użytkownika końcowego, takich jak Word i Outlook i Office usług, takich jak programy Exchange i SharePoint, można użyć usługi Azure Rights Management z Efektywnych w celu ochrony danych organizacji.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: be1c41c2f17720d522770f9e023c7468602ceb67
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Aplikacje pakietu Office przez użytkownika końcowego i usługi pakietu Office można użyć usługi Azure Rights Management z usługi Azure Information Protection w celu ochrony danych organizacji. Te aplikacje pakietu Office to Word, Excel, PowerPoint i Outlook. Usługi pakietu Office to Exchange i SharePoint. Konfiguracje pakietu Office, które obsługują usługę Azure Rights Management, często używany jest termin **prawami do informacji (IRM) zarządzania**.
 
@@ -48,7 +48,7 @@ Korzystając z usługi Exchange Online lub Exchange Server, można skonfigurowa�
 
 -   **Reguły transportu** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail wiadomości. Te zasady są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwala użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail wysyłanych przez urządzenia przenośne. Ponadto te zasady nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
 
--   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) w bibliotece programu Exchange.
+-   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\)aspx) w bibliotece programu Exchange.
 
 -   **Szyfrowanie wiadomości usługi Office 365** który obsługuje wysyłanie chronionej wiadomości e-mail i ochrony dokumentów pakietu Office jako załączników do dowolnego adresu na dowolnym urządzeniu. Dla kont użytkowników, które nie używają usługi Azure AD środowisko sieci web obsługuje dostawców tożsamości społecznościowych lub jednorazowy kod dostępu. Aby uzyskać więcej informacji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) z witryny sieci Web pakietu Office.
 

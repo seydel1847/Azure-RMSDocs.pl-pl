@@ -1,26 +1,26 @@
 ---
-title: "Śledzenie i odwoływanie dokumentów — Azure Information Protection"
-description: "Po włączeniu ochrony dokumentów można śledzić ich użycie. W razie potrzeby można również odwołać dostęp do tych dokumentów, jeśli pewne osoby stracą prawo do ich czytania."
+title: Śledzenie i odwoływanie dokumentów — Azure Information Protection
+description: Po włączeniu ochrony dokumentów można śledzić ich użycie. W razie potrzeby można również odwołać dostęp do tych dokumentów, jeśli pewne osoby stracą prawo do ich czytania.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas używania usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. Służy do tego **witryna śledzenia dokumentów**. Jest ona dostępna z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
 

@@ -1,26 +1,26 @@
 ---
-title: "Omówienie techniczne aplikacji RMS sharing — AIP"
-description: "Szczegółowe informacje techniczne dla administratorów w sieciach firmowych, którzy są odpowiedzialni za wdrażanie aplikacji RMS sharing dla systemu Windows."
+title: Omówienie techniczne aplikacji RMS sharing — AIP
+description: Szczegółowe informacje techniczne dla administratorów w sieciach firmowych, którzy są odpowiedzialni za wdrażanie aplikacji RMS sharing dla systemu Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1bb3308dc6e0561109602411fea3e63252fb9d4
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: c4f37d2c3e7a90171662d91a4f78d61b629dd650
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna aplikacja do pobrania dla systemu Microsoft Windows i innych platform, która zapewnia następujące korzyści:
@@ -101,7 +101,7 @@ Możesz też wymusić blokowanie ochrony plików przez aplikację RMS sharing. W
 
 W celu skonfigurowania aplikacji RMS sharing, aby stosowała ochronę ogólną do wszystkich plików, które domyślnie byłyby chronione natywnie, wprowadź w rejestrze następujące zmiany. Zwróć uwagę, że jeśli klucze RmsSharingApp lub FileProtection nie istnieją, należy je utworzyć ręcznie.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Utwórz nowy klucz o nazwie \*.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Utwórz nowy klucz o nazwie *.
 
     To ustawienie oznacza pliki z dowolnym rozszerzeniem nazwy pliku.
 

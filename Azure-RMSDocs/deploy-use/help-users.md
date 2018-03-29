@@ -1,26 +1,26 @@
 ---
-title: "Pomaganie użytkownikom w chronieniu plików za pomocą usługi Azure RMS —AIP"
-description: "Informacje ułatwiające zapewnienie wskazówek dla użytkowników, administratorów i działu pomocy technicznej po wdrożeniu i skonfigurowaniu usługi Azure Rights Management z poziomu usługi Azure Information Protection."
+title: Pomaganie użytkownikom w chronieniu plików za pomocą usługi Azure RMS —AIP
+description: Informacje ułatwiające zapewnienie wskazówek dla użytkowników, administratorów i działu pomocy technicznej po wdrożeniu i skonfigurowaniu usługi Azure Rights Management z poziomu usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej organizacji należy zapewnić pomoc i wskazówki dla użytkowników, administratorów i działu pomocy technicznej:
 
@@ -103,7 +103,7 @@ Prawa użytkowania są wyświetlane w górnej części dokumentu na transparenci
 
 1.  W programie Outlook utwórz wiadomość e-mail, która jest skierowana do odbiorcy w Twojej organizacji.
 
-2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub  **\<nazwa firmy > — poufne**, lub  **\<nazwa firmy > — poufne tylko do wyświetlania**.
+2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub **\<nazwa firmy > — poufne**, lub **\<nazwa firmy > — poufne tylko do wyświetlania**.
 
 3.  Wyślij wiadomość.
 

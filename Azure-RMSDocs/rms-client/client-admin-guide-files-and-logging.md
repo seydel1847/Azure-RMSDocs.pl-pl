@@ -1,26 +1,26 @@
 ---
-title: "Pliki i dzienniki użycia klienta usługi Azure Information Protection"
-description: "Informacje na temat plików i dzienników użycia klienta usługi Azure Information Protection dla systemu Windows."
+title: Pliki i dzienniki użycia klienta usługi Azure Information Protection
+description: Informacje na temat plików i dzienników użycia klienta usługi Azure Information Protection dla systemu Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 33047865430004f91eb85ec7e32bbfc3f2f6bbde
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: a60169a2c98a751c787a7ca4a8aee31f99a18590
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręcznik administratora: Pliki klienta Azure Information Protection i rejestrowanie użycia klienta
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Po zainstalowaniu klienta usługi Azure Information Protection przydatna może być informacja o lokalizacji plików. Może też zajść potrzeba monitorowania sposobu korzystania z klienta.
 

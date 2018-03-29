@@ -1,26 +1,26 @@
 ---
-title: "Typy plików obsługiwane przez usługę Azure Information Protection"
-description: "Informacje techniczne na temat obsługiwanych typów plików, rozszerzenia nazw plików i poziomy ochrony dla administratorów, którzy są odpowiedzialni za klienta usługi Azure Information Protection dla systemu Windows."
+title: Typy plików obsługiwane przez usługę Azure Information Protection
+description: Informacje techniczne na temat obsługiwanych typów plików, rozszerzenia nazw plików i poziomy ochrony dla administratorów, którzy są odpowiedzialni za klienta usługi Azure Information Protection dla systemu Windows.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e9b281fbce9ad423249137c5dfff5a6f88dd2178
-ms.sourcegitcommit: bf3967c5b74d2bc57b0f93239a297ccd56682178
+ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwanych przez klienta usługi Azure Information Protection
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Klient usługi Azure Information Protection może zastosować następujące środki względem dokumentów i wiadomości e-mail:
 
@@ -194,7 +194,7 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione przez domyślny
 
-Każdego pliku, który jest chroniony hasłem nie mogą być chronione natywnie przez klienta usługi Azure Information Protection. W większości przypadków Zobacz pliki PDF, które są chronione hasłem, ale ta funkcja oferuje także inne aplikacje, takie jak aplikacje pakietu Office.
+Każdego pliku, który jest chroniony hasłem nie może być chronione natywnie przez klienta usługi Azure Information Protection chyba, że plik jest aktualnie otwarty w aplikacji, która ma zastosowanie ochrony. W większości przypadków Zobacz pliki PDF, które są chronione hasłem, ale ta funkcja oferuje także inne aplikacje, takie jak aplikacje pakietu Office.
 
 Ponadto klienta usługi Azure Information Protection dla systemu Windows można wyświetlić następujące pliki, ale nie można natywnie chronić lub wyłączyć ochronę plików PDF w jednym z następujących sytuacji:
 

@@ -1,26 +1,26 @@
 ---
-title: "Uwagi dotyczące wdrażania klienta usługi RMS — Azure Information Protection"
-description: "Informacje dotyczące ponownej instalacji, obsługiwanych systemów operacyjnych, ustawień rejestru i odnajdowania usług dla usługi Rights Management Service (klienta usługi RMS) w wersji 2, która jest również znana jako klient MSIPC."
+title: Uwagi dotyczące wdrażania klienta usługi RMS — Azure Information Protection
+description: Informacje dotyczące ponownej instalacji, obsługiwanych systemów operacyjnych, ustawień rejestru i odnajdowania usług dla usługi Rights Management Service (klienta usługi RMS) w wersji 2, która jest również znana jako klient MSIPC.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6518b9d91e8f73b9ac6c0fb9e4bb5c2bbcebd612
-ms.sourcegitcommit: 704700acf7302d258e9c58c365c3244e833a86cd
+ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-client-deployment-notes"></a>Uwagi dotyczące wdrażania klienta usługi RMS
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 7 z SP1, systemu Windows 8, Windows 8.1, systemu Windows 10, systemu Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 7 z z dodatkiem SP1, Windows 8, Windows 8.1, Windows 10, systemu Windows Server 2008 R2, systemu Windows Server 2012, Windows Server 2012 R2, Windows Server 2016*
 
 Klient usługi Rights Management (klient usługi RMS) w wersji 2 jest także znany jako klient MSIPC. Jest to oprogramowanie przeznaczone dla komputerów z systemem Windows, które komunikuje się z usługą Microsoft Rights Management lokalnie lub w chmurze, aby ułatwić ochronę dostępu do informacji i ich użycia. Ochrona obejmuje przepływ informacji przez aplikacje i urządzenia w granicach organizacji lub poza zarządzanymi granicami. 
 
@@ -35,7 +35,7 @@ Klient usługi RMS może być za darmo dystrybuowany i umieszczany w pakietach z
 - Ustaw klienta usługi RMS jako wymaganie wstępne aplikacji. W przypadku tej opcji może być konieczne udostępnienie użytkownikom dodatkowych instrukcji dotyczących uzyskiwania i instalowania klienta oraz aktualizowania komputerów przy jego użyciu przed rozpoczęciem korzystania z aplikacji.
 
 ## <a name="installing-the-rms-client"></a>Instalowanie klienta usługi RMS
-Klient usługi RMS jest zawarty w pliku wykonywalnym Instalatora o nazwie **setup_msipc_*\<arch\>*.exe**, gdzie *\<arch >*jest **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalator 32-bitowej (x 86) nie działa w 64-bitowej instalacji systemu Windows.
+Klient usługi RMS jest zawarty w pliku wykonywalnym Instalatora o nazwie **setup_msipc_*\<arch\>*.exe**, gdzie  *\<arch >*jest **x86** (dla 32-bitowych komputerów klienckich) lub **x64** (dla 64-bitowych komputerów klienckich). Pakiet instalatora wersji 64-bitowej (x64) instaluje zarówno plik wykonywalny 32-bitowego środowiska uruchomieniowego na potrzeby zachowania zgodności z 32-bitowymi aplikacjami działającymi w 64-bitowym systemie operacyjnym, jak i plik wykonywalny 64-bitowego środowiska uruchomieniowego do obsługi natywnych aplikacji 64-bitowych. Instalator 32-bitowej (x 86) nie działa w 64-bitowej instalacji systemu Windows.
 
 > [!NOTE]
 > Do zainstalowania klienta usługi RMS wymagane są podniesione uprawnienia, np. członka grupy Administratorzy na komputerze lokalnym.
@@ -48,7 +48,7 @@ Klienta usługi RMS można zainstalować przy użyciu jednej z następujących m
     setup_msipc_x64.exe /quiet
     ```
 
-- **Tryb interaktywny.** Alternatywnie można zainstalować klienta usługi RMS przy użyciu graficznego interfejsu użytkownika Instalatora dostarczonego przez Kreatora instalacji klienta usługi RMS. Aby zainstalować interaktywnego, kliknij dwukrotnie pakiet Instalatora klienta RMS (**setup_msipc_*\<arch\>*.exe**) w folderze, do którego został skopiowany lub pobrany na użytkownika komputer lokalny.
+- **Tryb interaktywny.** Alternatywnie można zainstalować klienta usługi RMS przy użyciu graficznego interfejsu użytkownika Instalatora dostarczonego przez Kreatora instalacji klienta usługi RMS. Aby zainstalować interaktywnego, kliknij dwukrotnie pakiet Instalatora klienta RMS (**setup_msipc_*\<arch\>*.exe**) w folderze, do którego został skopiowany lub pobrany na lokalnym komputer.
 
 ## <a name="questions-and-answers-about-the-rms-client"></a>Pytania i odpowiedzi dotyczące klienta usługi RMS
 Poniższa sekcja zawiera często zadawane pytania na temat klienta usługi RMS oraz odpowiedzi na nie.
@@ -100,12 +100,12 @@ Klient usługi RMS przechowuje licencje na dysku lokalnym oraz buforuje niektór
 
 |Opis|Ścieżki trybu klienta|Ścieżki trybu serwera|
 |---------------|---------------------|---------------------|
-|Lokalizacja magazynu licencji|%localappdata%\Microsoft\MSIPC|%ALLUSERSPROFILE%\Microsoft\MSIPC\Server\\*\<identyfikatora SID\>*|
-|Lokalizacja magazynu szablonów|%localappdata%\Microsoft\MSIPC\Templates|%ALLUSERSPROFILE%\Microsoft\MSIPC\Server\\*\<identyfikatora SID\>*|
+|Lokalizacja magazynu licencji|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
+|Lokalizacja magazynu szablonów|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
 |Lokalizacja w rejestrze|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \\*\<IDENTYFIKATOR SID*\>|
 
 > [!NOTE]
-> *\<Identyfikator SID*> jest bezpieczny identyfikator (SID) dla konta, na którym działa aplikacja serwera. Na przykład, jeśli aplikacja działa na koncie wbudowanej usługi sieciowej, Zastąp  *\<SID\>*  z wartością znanego identyfikatora SID dla tego konta (S-1-5-20).
+> *\<Identyfikator SID*> jest bezpieczny identyfikator (SID) dla konta, na którym działa aplikacja serwera. Na przykład, jeśli aplikacja działa na koncie wbudowanej usługi sieciowej, Zastąp *\<SID\>* z wartością znanego identyfikatora SID dla tego konta (S-1-5-20).
 
 ### <a name="windows-registry-settings-for-the-rms-client"></a>Ustawienia rejestru systemu Windows klienta usługi RMS
 Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować niektóre konfiguracje klienta usługi RMS. Na przykład administrator aplikacji z obsługą usługi RMS, które komunikują się z serwerami AD RMS, może zaktualizować lokalizację usługi przedsiębiorstwa (zastąpić serwer usług AD RMS wybrany do użycia podczas publikowania) w zależności od aktualnej lokalizacji komputera klienckiego w topologii usługi Active Directory. Można też włączyć śledzenie usługi RMS na komputerze klienckim, aby ułatwić rozwiązywanie problemów dotyczących aplikacji obsługującej usługę RMS. Skorzystaj z poniższej tabeli, aby zidentyfikować ustawienia rejestru, które możesz zmieniać w przypadku klienta usługi RMS.
@@ -115,10 +115,10 @@ Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować nie
 |Jeśli klient jest w wersji 1.03102.0221 lub nowszej:<br /><br />**Aby kontrolować zbieranie danych aplikacji**|**Ważne**: Aby szanować prywatność użytkowników, przed włączeniem funkcji zbierania danych administrator musi poprosić użytkownika o zgodę.<br /><br />Jeśli włączysz funkcję zbierania danych, zgadzasz się na wysyłanie danych przez Internet do firmy Microsoft. Firma Microsoft używa tych danych do udostępniania i ulepszania jakości, bezpieczeństwa i integralności produktów firmy Microsoft i usług. Na przykład firma Microsoft analizuje wydajności i niezawodności, takich jak funkcje używasz, jak szybko odpowiadać funkcji, wydajności urządzeń interakcje interfejsu użytkownika i wszelkie problemy, które występują z produktem. Dane są także informacje o konfiguracji oprogramowania, takie jak oprogramowanie, które są aktualnie uruchomione i adres IP.<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**Wartość:** 0 dla aplikacji zdefiniowanej (domyślnie) za pomocą właściwości środowiska [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx), 1 dla opcji Wyłączone, 2 dla opcji Włączone<br /><br />**Uwaga**: Jeśli z 32-bitowej aplikacji MSIPC działa w 64-bitowej wersji systemu Windows, lokalizacja jest HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC.|
 |Tylko usługi AD RMS:<br /><br />**Aby zaktualizować lokalizację usługi przedsiębiorstwa dla komputera klienckiego**|Zaktualizuj następujące klucze rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: domyślna<br /><br />**Wartość:**\<http lub https>://*nazwa _klastra_usługi_RMS*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: domyślna<br /><br />**Wartość:** \<http lub https>://*nazwa _klastra_usługi_RMS*/_wmcs/Licensing|
 |**Aby włączyć lub wyłączyć śledzenie**|Zaktualizuj następujący klucz rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Wartość:** 1 — włączenie śledzenia, 0 — wyłączenie śledzenia (wartość domyślna)|
-|**Aby zmienić częstotliwość odświeżania szablonów w dniach**|Następujące wartości rejestru wskazują, jak często szablony odświeżenie na komputerze użytkownika, jeśli nie ustawiono wartości TemplateUpdateFrequencyInSeconds.  Jeśli żadna z tych wartości nie zostanie ustawiona, domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. Wcześniejsze wersje ma wartość domyślną, co 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\< identyfikator SID\><br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.|
+|**Aby zmienić częstotliwość odświeżania szablonów w dniach**|Następujące wartości rejestru wskazują, jak często szablony odświeżenie na komputerze użytkownika, jeśli nie ustawiono wartości TemplateUpdateFrequencyInSeconds.  Jeśli żadna z tych wartości nie zostanie ustawiona, domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. Wcześniejsze wersje ma wartość domyślną, co 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.|
 |**Aby zmienić częstotliwość odświeżania szablonów w sekundach**<br /><br />Ważne: Jeśli to ustawienie jest określone, tej wartości częstotliwość odświeżania szablonów w dniach jest ignorowana. Określ jedną z tych wartości, nie obydwie.|Następujące wartości rejestru wskazują, jak często szablony odświeżenie na komputerze użytkownika. Jeśli nie ustawiono tej wartości ani wartości zmiany częstotliwości w dniach (TemplateUpdateFrequency), domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. Wcześniejsze wersje ma wartość domyślną, co 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<*SID*><br />REG_DWORD: TemplateUpdateFrequencyInSeconds<br /><br />**Wartość:** wartość całkowita określająca liczbę sekund (minimum 1) między pobraniami.|
 |Tylko usługi AD RMS:<br /><br />**Aby pobierać szablony natychmiast po następnym żądaniu publikowania**|Na potrzeby operacji testowania i oceniania możesz wybrać opcję pobierania szablonów przy użyciu klienta usługi RMS tak szybko, jak to możliwe. W przypadku tej konfiguracji, a następnie pliki do pobrania szablony natychmiast po następnej publikacji żądania, zamiast czekać przez czas określony w ustawieniu rejestru TemplateUpdateFrequency należy usunąć następujący klucz rejestru, a klient usługi RMS:<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*Server Name*>\Template <br /><br />**Uwaga**: klucz \<*Server Name*> może wskazywać zewnętrzny (corprights.contoso.com) i wewnętrzny (corprights) adres URL, więc wpisy mogą być dwa.|
-|Tylko usługi AD RMS:<br /><br />**Aby włączyć obsługę uwierzytelniania federacyjnego**|Jeśli komputer kliencki usługi RMS łączy się z klastrem usług AD RMS za pomocą zaufania federacyjnego, należy skonfigurować obszar macierzysty federacji.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Wartość:** wartość tego wpisu rejestru to identyfikator URI usługi federacyjnej (na przykład: „http://TreyADFS.trey.net/adfs/services/trust”).<br /><br /> **Uwaga**: Ważne jest, aby dla tej wartości podać protokół http, a nie https. Ponadto jeśli z 32-bitowej aplikacji MSIPC działa w 64-bitowej wersji systemu Windows, lokalizacja jest następująca: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation. Konfigurację przykładową przedstawiono w temacie [Wdrażanie Usług Active Directory Rights Management z Usługami federacyjnymi Active Directory](https://technet.microsoft.com/library/dn758110.aspx).|
+|Tylko usługi AD RMS:<br /><br />**Aby włączyć obsługę uwierzytelniania federacyjnego**|Jeśli komputer kliencki usługi RMS łączy się z klastrem usług AD RMS za pomocą zaufania federacyjnego, należy skonfigurować obszar macierzysty federacji.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**Wartość:** wartość tego wpisu rejestru to identyfikator uniform resource identifier (URI) dla usługi federacyjnej (na przykład "http://TreyADFS.trey.net/adfs/services/trust").<br /><br /> **Uwaga**: Ważne jest, aby dla tej wartości podać protokół http, a nie https. Ponadto jeśli z 32-bitowej aplikacji MSIPC działa w 64-bitowej wersji systemu Windows, lokalizacja jest następująca: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation. Konfigurację przykładową przedstawiono w temacie [Wdrażanie Usług Active Directory Rights Management z Usługami federacyjnymi Active Directory](https://technet.microsoft.com/library/dn758110.aspx).|
 |Tylko usługi AD RMS:<br /><br />**Aby obsługiwać serwery federacyjne partnera wymagające uwierzytelniania opartego na formularzu do wprowadzenia danych przez użytkowników**|Domyślnie klient usługi RMS działa w trybie dyskretnym i użytkownik nie musi wprowadzać żadnych danych. Serwery federacyjne partnerów mogą być jednak skonfigurowane tak, aby wymagać wprowadzenia danych przez użytkownika, na przykład w ramach uwierzytelniania opartego na formularzu. W takim przypadku należy skonfigurować klienta usługi RMS, aby ignorował tryb dyskretny w celu umożliwienia wyświetlenia formularza uwierzytelniania federacyjnego w oknie przeglądarki na potrzeby uwierzytelniania użytkowników.<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**Uwaga**: jeśli serwer federacyjny został skonfigurowany do użycia uwierzytelniania opartego na formularzu, ten klucz jest wymagany. Jeśli serwer federacyjny jest skonfigurowany do korzystania ze zintegrowanego uwierzytelniania systemu Windows, ten klucz nie jest wymagane.|
 |Tylko usługi AD RMS:<br /><br />**Aby zablokować użycie usługi ILS**|Domyślnie klient usługi RMS obsługuje korzystanie z zawartości chronionej przez usługę ILS, można go jednak skonfigurować tak, aby blokował tę usługę, używając poniższego klucza rejestru. Jeśli ten klucz rejestru jest ustawiona na blokowanie usługi ILS, wszelkie próby otwarcia lub do zawartości chronionej przez usługę ILS zwraca następujący błąd:<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: **DisablePassportCertification**<br /><br />**Wartość:** 1 — blokowanie użycia usługi ILS, 0 — zezwolenie na użycie usługi ILS (wartość domyślna)|
 
@@ -146,7 +146,7 @@ Klienta usługi RMS można ograniczyć tak, aby używał tylko określonych zauf
 
 -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\TrustedServers\
     
-    REG_SZ:*\<adres_url_lub_nazwa_hosta >*
+    REG_SZ:*\<URL_or_HostName>*
     
     **Wartość:** wartości ciągu w tej lokalizacji klucza rejestru mogą być albo format nazwy domeny DNS (na przykład **adrms.contoso.com**) lub pełnych adresów URL zaufanych serwerów usług AD RMS (na przykład **https://adrms.contoso.com**). Jeśli określony adres URL rozpoczyna się od **https://**, klient usługi RMS używa protokołu SSL lub TLS do kontaktowania się z określonym serwerem usług AD RMS.
 
@@ -163,7 +163,7 @@ Podczas odnajdowania usługi klient usługi RMS sprawdza następujące elementy:
 
     Jeśli punkt połączenia usługi został zarejestrowany zgodnie z opisem w [tej sekcji](#ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory), do klienta usługi RMS zwracany jest adres URL serwera AD RMS do użycia.
 
-3. **Usługa odnajdowania Azure Rights Management**: klient usługi RMS łączy się ze stroną **https://discover.aadrm.com**, na której wyświetlany jest monit o uwierzytelnienie użytkownika.
+3. **Usługa Azure Rights Management odnajdywania**: na kliencie RMS łączy się z **https://discover.aadrm.com**, które monituje użytkownika do uwierzytelniania.
 
     Po pomyślnym uwierzytelnieniu nazwa użytkownika (i domena) z procesu uwierzytelniania będzie służyć do identyfikowania dzierżawy usługi Azure Information Protection do użycia. Adres URL usługi Azure Information Protection do użycia dla konta użytkownika jest zwracany do klienta RMS. Adres URL jest w następującym formacie: **https://**\<Adres_url_dzierżawy\>  **/_wmcs/licensing** 
 
@@ -174,7 +174,7 @@ Podczas odnajdowania usługi klient usługi RMS sprawdza następujące elementy:
 > [!NOTE]
 > Istnieją trzy ważne wyjątki związane z tym przepływem odnajdowania usługi:
 > 
-> - Urządzenia przenośne są najlepiej przystosowane do używania usługi w chmurze, więc domyślnie używają funkcji odnajdowania usługi Azure Rights Management (https://discover.aadrm.com). Aby zastąpić to ustawienie domyślne, tak aby urządzenia przenośne używają usług AD RMS, a nie usługi Azure Rights Management, określić rekordy SRV w systemie DNS i zainstalować rozszerzenie dla urządzeń przenośnych zgodnie z opisem w [Rights Management usług Mobile urządzeń usługi Active Directory Rozszerzenie](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx). 
+> - Urządzenia przenośne są najlepiej nadaje się do używania usługi w chmurze, więc domyślnie używają odnajdowania usługi dla usługi Azure Rights Management (https://discover.aadrm.com). Aby zastąpić to ustawienie domyślne, tak aby urządzenia przenośne używają usług AD RMS, a nie usługi Azure Rights Management, określić rekordy SRV w systemie DNS i zainstalować rozszerzenie dla urządzeń przenośnych zgodnie z opisem w [Rights Management usług Mobile urządzeń usługi Active Directory Rozszerzenie](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx). 
 >
 > - Jeśli usługa Rights Management jest wywoływana za pośrednictwem etykiety usługi Azure Information Protection, odnajdowanie usługi nie jest przeprowadzane. W zamian adres URL jest określany bezpośrednio w ustawieniu etykiety konfigurowanym w obrębie zasad usługi Azure Information Protection.  
 
@@ -248,9 +248,9 @@ W pewnych przypadkach może wystąpić potrzeba przekierowania ruchu w czasie od
 
     Na przykład aby przekierować licencjonowanie z serwera Contoso.com do serwera Fabrikam.com, możesz wprowadzić następujące wartości:
 
-    **Nazwa:**`https://contoso.com/_wmcs/licensing`
+    **Nazwa:** `https://contoso.com/_wmcs/licensing`
 
-    **Wartość:**`https://fabrikam.com/_wmcs/licensing`
+    **Wartość:** `https://fabrikam.com/_wmcs/licensing`
     
     > [!NOTE]
     > Jeśli stary serwer licencyjny ma intranetowy i ekstranetowy adres URL określony, Nowa nazwa i wartość mapowania musi być ustawiona dla obu tych adresów URL w **LicensingRedirection** klucza.

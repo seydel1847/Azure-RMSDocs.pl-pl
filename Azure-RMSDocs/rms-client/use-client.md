@@ -1,27 +1,27 @@
 ---
-title: "Klient usługi Azure Information Protection"
-description: "Usługa Microsoft Azure Information Protection dostarcza rozwiązanie klient-serwer ułatwiające ochronę danych organizacji. Klient (klient usługi Azure Information Protection lub klient usługi Rights Management) jest zintegrowany z aplikacjami uruchamianymi na komputerach i urządzeniach przenośnych."
+title: Klient usługi Azure Information Protection
+description: Usługa Microsoft Azure Information Protection dostarcza rozwiązanie klient-serwer ułatwiające ochronę danych organizacji. Klient (klient usługi Azure Information Protection lub klient usługi Rights Management) jest zintegrowany z aplikacjami uruchamianymi na komputerach i urządzeniach przenośnych.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb09862e5a265b8c5c8f2b81a08582181547df84
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: efbc164b27e1dfe1b839e2ace893c4e3c5e656aa
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Strona klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management, Azure Rights Management, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Usługa Azure Information Protection dostarcza rozwiązanie klient-serwer ułatwiające ochronę dokumentów i wiadomości e-mail organizacji:
 
@@ -46,7 +46,7 @@ Korzystając z poniższej dokumentacji, można uzyskać więcej informacji na te
 Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management oraz narzędzie RMS Protection Tool zostały obecnie zastąpione przez klienta usługi Azure Information Protection. 
 
 
-## <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz też
 [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

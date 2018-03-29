@@ -1,26 +1,26 @@
 ---
-title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 2"
-description: "Faza 2 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca kroki od 4 do 6 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
+title: Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 2
+description: Faza 2 migracji z usługi AD RMS do usługi Azure Information Protection obejmująca kroki od 4 do 6 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0dff1b664cbac830dda2750cc6120ab4476c8183
-ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
+ms.openlocfilehash: 9871c5890be8b5aa019d9788ecdfe929cfab0eb9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 2 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 4 do 6 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 

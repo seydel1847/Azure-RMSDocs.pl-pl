@@ -1,26 +1,26 @@
 ---
-title: "Podręcznik użytkownika aplikacji RMS sharing — AIP"
-description: "Aplikacja do udostępniania usługi Microsoft Rights Management (RMS) dla systemu Windows pomaga zabezpieczyć ważne dokumenty i obrazy przed niepowołanymi osobami nawet po przesłaniu tych plików pocztą e-mail lub zapisaniu na innym urządzeniu."
+title: Podręcznik użytkownika aplikacji RMS sharing — AIP
+description: Aplikacja do udostępniania usługi Microsoft Rights Management (RMS) dla systemu Windows pomaga zabezpieczyć ważne dokumenty i obrazy przed niepowołanymi osobami nawet po przesłaniu tych plików pocztą e-mail lub zapisaniu na innym urządzeniu.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02eab7970b98cbc0ed27a3928a9a3c68ebd2927a
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: c361c3fadb1bc4a65d94c79f7a41f8aebb6f247a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-user-guide"></a>Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
 > **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 

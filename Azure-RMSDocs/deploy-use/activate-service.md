@@ -1,26 +1,26 @@
 ---
-title: "Aktywacja usługi Azure Rights Management — AIP"
-description: "Konieczna jest aktywacja usługi Azure Rights Management, zanim Twoja organizacja będzie mogła rozpocząć chronienie dokumentów i wiadomości e-mail za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji."
+title: Aktywacja usługi Azure Rights Management — AIP
+description: Konieczna jest aktywacja usługi Azure Rights Management, zanim Twoja organizacja będzie mogła rozpocząć chronienie dokumentów i wiadomości e-mail za pomocą aplikacji i usług, które obsługują to rozwiązanie do ochrony informacji.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d521b105b3cc8077a5e30a825007e18f9b5a59f0
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 7c257b16737a916d597be858fcfeaf6c475bb423
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > Te informacje o konfiguracji są przeznaczone dla administratorów odpowiedzialnych za usługę mającą zastosowanie do wszystkich użytkowników w organizacji. Jeśli szukasz pomocy dla użytkowników i informacji na temat sposobu używania funkcji usługi Rights Management dla określonej aplikacji lub sposobu otwierania pliku lub wiadomości e-mail z ochroną praw, skorzystaj z pomocy i wskazówek dołączonych do aplikacji.

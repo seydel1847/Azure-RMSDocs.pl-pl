@@ -1,26 +1,26 @@
 ---
-title: "Klient usługi Azure Information Protection&colon; wersji wersji historii i obsługa zasad"
-description: "Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azure Information Protection dla systemu Windows i zrozumieć zasady cyklu pomocy technicznej."
+title: Klient usługi Azure Information Protection&colon; wersji wersji historii i obsługa zasad
+description: Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azure Information Protection dla systemu Windows i zrozumieć zasady cyklu pomocy technicznej.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
-ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
+ms.openlocfilehash: 1da6a647715389f912af5192b5b70a80f0bd35e9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. 
 

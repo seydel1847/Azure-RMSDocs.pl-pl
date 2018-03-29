@@ -1,26 +1,26 @@
 ---
-title: "Instalowanie i konfigurowanie łącznika usługi Rights Management — AIP"
-description: "Informacje ułatwiające instalowanie i konfigurowanie łącznika usługi Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
+title: Instalowanie i konfigurowanie łącznika usługi Rights Management — AIP
+description: Informacje ułatwiające instalowanie i konfigurowanie łącznika usługi Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji Wdrażanie łącznika usługi Azure Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73cbcc73b2ce96b2e41f6fef90d70cee71ee3dff
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: a1526c3efea1a03a82baed526d65b748d2aa7bae
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
@@ -216,7 +216,7 @@ Jeśli serwery łącznika są zainstalowane w sieci, która nie ma bezpośrednie
 
 3.  Dodaj wartość ciągu **ProxyAddress**, a następnie ustaw dla tej wartości dane **http://&lt;Mój_adres_IP_lub_domena_serwera_proxy&gt;:&lt;Mój_port_serwera_proxy&gt;**.
 
-    Na przykład: **http://serwerproxy.contoso.com:8080**
+    Na przykład: **http://proxyserver.contoso.com:8080**
 
 4.  Zamknij edytor rejestru, a następnie ponownie uruchom serwer lub wykonaj polecenie IISReset w celu ponownego uruchomienia usług IIS.
 

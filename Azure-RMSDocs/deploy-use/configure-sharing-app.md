@@ -1,26 +1,26 @@
 ---
 title: Aplikacja RMS sharing&colon; instalowanie i konfigurowanie
-description: "Informacje dla administratorów dotyczące wdrażania aplikacji Rights Management (RMS) sharing na komputerach z systemem Windows i urządzeniach przenośnych."
+description: Informacje dla administratorów dotyczące wdrażania aplikacji Rights Management (RMS) sharing na komputerach z systemem Windows i urządzeniach przenośnych.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65b4a60909f93090fa2e6d27660e1ed20f410955
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 

@@ -1,26 +1,26 @@
 ---
-title: "Ochrona miejscowa za pomocą aplikacji RMS sharing — AIP"
-description: "Instrukcje dotyczące sposobu bezpiecznego przechowywania pliku na komputerze, serwerze lub innym urządzeniu magazynującym."
+title: Ochrona miejscowa za pomocą aplikacji RMS sharing — AIP
+description: Instrukcje dotyczące sposobu bezpiecznego przechowywania pliku na komputerze, serwerze lub innym urządzeniu magazynującym.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0654dba53f493551b2cc4d1fbb8790f246e0c18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0d819fd242e57402a790e9acb40ffa48eeb701b4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Ochrona pliku na urządzeniu (ochrona miejscowa) za pomocą aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który nie jest chroniony. Następnie można pozostawić plik w jego obecnej lokalizacji, skopiować do innego folderu lub na inne urządzenie albo udostępnić folder zawierający plik — aplik cały czas będzie chroniony. Chroniony plik można także dołączyć do wiadomości e-mail, chociaż zalecaną metodą udostępniania pliku chronionego pocztą e-mail jest bezpośrednie dołączenie go z poziomu Eksploratora plików lub aplikacji pakietu Office (zobacz [Ochrona plików udostępnianych pocztą e-mail za pomocą aplikacji do udostępniania usługi Rights Management](sharing-app-protect-by-email.md)).
 
@@ -29,7 +29,7 @@ Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który ni
 
 ## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>Aby chronić plik na urządzeniu (ochrona miejscowa)
 
-1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Na przykład:
+1.  W Eksploratorze plików wybierz plik, który ma być chroniony. Kliknij prawym przyciskiem myszy, wybierz pozycję **Chroń za pomocą usługi RMS**, a następnie wybierz pozycję **Włącz ochronę miejscową**. Przykład:
 
     ![Opcja menu Ochrona miejscowa](../media/ADRMS_MSRMSApp_SP_CompanyDefined.png)
 
@@ -46,7 +46,7 @@ Miejscowa ochrona pliku polega na zastąpieniu nim oryginalnego pliku, który ni
 
     -   Wybierz opcję **Uprawnienia niestandardowe**: wybierz tę opcję, jeśli szablony nie umożliwiają ustawienia odpowiedniego poziomu ochrony lub jeśli chcesz jawnie ustawić opcje ochrony. Określ odpowiednie opcje dla tego pliku w oknie dialogowym [Dodawanie ochrony](sharing-app-dialog-box.md), a następnie kliknij przycisk **Zastosuj**.
 
-3.  Przez chwilę może zostać wyświetlone okno dialogowe informujące, że plik jest chroniony, po czym nastąpi powrót do Eksploratora plików. Wybrany plik lub pliki są teraz chronione. W niektórych przypadkach (kiedy dodanie ochrony powoduje zmianę rozszerzenia nazwy pliku) oryginalny plik znajdujący się w Eksploratorze plików zostaje zastąpiony nowym plikiem oznaczonym ikoną kłódki sygnalizującą ochronę za pomocą usługi Rights Management. Na przykład:
+3.  Przez chwilę może zostać wyświetlone okno dialogowe informujące, że plik jest chroniony, po czym nastąpi powrót do Eksploratora plików. Wybrany plik lub pliki są teraz chronione. W niektórych przypadkach (kiedy dodanie ochrony powoduje zmianę rozszerzenia nazwy pliku) oryginalny plik znajdujący się w Eksploratorze plików zostaje zastąpiony nowym plikiem oznaczonym ikoną kłódki sygnalizującą ochronę za pomocą usługi Rights Management. Przykład:
 
     ![Chroniony plik z ikoną kłódki dla aplikacji RMS sharing](../media/ADRMS_MSRMSApp_Pfile.png)
 

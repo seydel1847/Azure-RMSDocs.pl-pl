@@ -1,33 +1,33 @@
 ---
-title: "Samouczek Szybki start — krok 5 — AIP"
-description: "Krok 5 samouczka wprowadzającego do szybkiego wypróbowania usługi Azure Information Protection — udostępnianie plików chronionych i śledzenie dokumentu."
-keywords: 
+title: Samouczek Szybki start — krok 5 — AIP
+description: Krok 5 samouczka wprowadzającego do szybkiego wypróbowania usługi Azure Information Protection — udostępnianie plików chronionych i śledzenie dokumentu.
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 W tym ostatnim kroku samouczka odszukaj utworzony wcześniej dokument programu Word lub arkusz kalkulacyjny programu Excel, który prześlesz do współpracownika. W ramach tego samouczka nie jest istotne, jaki tekst zawiera dokument. Niemniej dobrze będzie wpisać jakiś tekst, aby łatwiej potwierdzić, że autoryzowany odbiorca mógł go odczytać.
 
-Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail. 
+Następnie możesz bezpiecznie udostępnić ten dokument za pomocą poczty e-mail. 
 
-## <a name="to-safely-share-your-document-by-email"></a>Bezpieczne udostępnianie dokumentu w wiadomościach e-mail
+## <a name="to-safely-share-your-document-by-email"></a>Aby bezpiecznie udostępnić dokument w wiadomości e-mail
 
 1. W oknie Eksploratora plików kliknij prawym przyciskiem myszy dokument, a następnie wybierz opcję **Klasyfikuj i chroń**. Zostanie wyświetlone okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**:
 
@@ -59,7 +59,7 @@ Następnie możesz bezpiecznie udostępnić ten dokument pocztą e-mail.
 
 7. Zmodyfikuj opis domyślnej wiadomości, aby był on odpowiedni dla Twoich odbiorców. Pamiętaj o dodaniu do pliku poniższego tekstu:
 
-    **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. Jeśli korzystasz z takiego pliku po raz pierwszy, zapoznaj się z instrukcjami: https://aka.ms/rms-signup.** 
+    **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. Pierwszym użyciem, zapoznaj się z tymi instrukcjami: https://aka.ms/rms-signup.** 
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 5 — udostępnianie chronionego dokumentu za pośrednictwem poczty e-mail](../media/share-protected-emailv2.png)
 

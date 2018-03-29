@@ -1,26 +1,26 @@
 ---
-title: "Wdrażanie łącznika usługi Rights Management — AIP"
-description: "Instrukcje dotyczące wdrażania łącznika usług RMS, który udostępnia usługę ochrony danych dla istniejących wdrożeń lokalnych korzystających z programu Exchange Server, programu SharePoint Server lub systemu Windows Server oraz funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure)."
+title: Wdrażanie łącznika usługi Rights Management — AIP
+description: Instrukcje dotyczące wdrażania łącznika usług RMS, który udostępnia usługę ochrony danych dla istniejących wdrożeń lokalnych korzystających z programu Exchange Server, programu SharePoint Server lub systemu Windows Server oraz funkcji infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: d389816fbe438cbf13ddbe1302872f81afcb6bf5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Wdrażanie łącznika usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Poniżej przedstawiono informacje dotyczące łącznika usługi Azure Rights Management i sposobu jego pomyślnego wdrażania w organizacji. Ten łącznik służy do zapewniania ochrony danych w istniejących wdrożeniach lokalnych korzystających z programu **Microsoft Exchange Server**, **SharePoint Server** lub serwerów plików, na których uruchomiony jest system Windows Server i które używają funkcji **infrastruktury klasyfikacji plików** (FCI, File Classification Infrastructure).
 

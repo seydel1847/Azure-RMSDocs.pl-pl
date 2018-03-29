@@ -1,26 +1,26 @@
 ---
-title: "Terminologia dotycząca usługi Azure Information Protection"
-description: "Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Information Protection firmy Microsoft? Tutaj znajdziesz definicje terminów i skrótów, które są typowe dla usługi Azure Information Protection lub które mają określone znaczenie w przypadku, gdy są używane w kontekście tej usługi."
+title: Terminologia dotycząca usługi Azure Information Protection
+description: Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Information Protection firmy Microsoft? Tutaj znajdziesz definicje terminów i skrótów, które są typowe dla usługi Azure Information Protection lub które mają określone znaczenie w przypadku, gdy są używane w kontekście tej usługi.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/15/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
-ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
+ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Information Protection firmy Microsoft? Tutaj znajdziesz definicje terminów i skrótów, które są typowe dla usługi Azure Information Protection lub które mają określone znaczenie w przypadku, gdy są używane w kontekście tej usługi.
 

@@ -1,26 +1,26 @@
 ---
-title: "Zainstaluj klienta usługi Azure Information Protection dla użytkowników"
-description: "Instrukcje i informacje dla administratorów do wdrażania klienta usługi Azure Information Protection dla systemu Windows w sieciach firmowych."
+title: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
+description: Instrukcje i informacje dla administratorów do wdrażania klienta usługi Azure Information Protection dla systemu Windows w sieciach firmowych.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a62c8c1c27855b25e5de69bd162d524bf1851890
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Przed zainstalowaniem klienta usługi Azure Information Protection w sieci przedsiębiorstwa, sprawdź, czy komputery mają wymagane wersje systemu operacyjnego i aplikacji usługi Azure Information Protection: [wymagania dotyczące informacji o Azure Ochrona](../get-started/requirements-azure-rms.md). 
 

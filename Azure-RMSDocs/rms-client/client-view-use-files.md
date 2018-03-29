@@ -1,26 +1,26 @@
 ---
-title: "Wyświetlanie i używanie dokumentów chronionych przy użyciu klienta usługi AIP"
-description: "Instrukcje dotyczące wyświetlania i używania dokumentu chronionego, wymagającego posiadania zainstalowanego klienta usługi Azure Information Protection."
+title: Wyświetlanie i używanie dokumentów chronionych przy użyciu klienta usługi AIP
+description: Instrukcje dotyczące wyświetlania i używania dokumentu chronionego, wymagającego posiadania zainstalowanego klienta usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87ae9b546a791c20b71625f938265c584980ae43
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: a81585ae1acb791dcf33f8d047268a9e4e9f2f2e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Podręcznik użytkownika: Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Chronione dokumenty można często wyświetlić, otwierając je w zwykły sposób. Na przykład można kliknąć dwukrotnie załącznik w wiadomości e-mail lub plik w Eksploratorze plików bądź kliknąć link do pliku.
 

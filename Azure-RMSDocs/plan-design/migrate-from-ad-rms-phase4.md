@@ -1,26 +1,26 @@
 ---
-title: "Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 4"
-description: "Faza 4 migracji z usługi AD RMS do usługi Azure Information Protection, obejmująca kroki od 8 do 9 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection."
+title: Migrowanie z usługi AD RMS do usługi Azure Information Protection — faza 4
+description: Faza 4 migracji z usługi AD RMS do usługi Azure Information Protection, obejmująca kroki od 8 do 9 z sekcji Migrowanie z usługi AD RMS do usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4279991a91dee1f4645209eda937ca288716761
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 7aaec205863bf855cc68887f3eafed27386ee49f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Skorzystaj z poniższych informacji dotyczących fazy 4 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 8 do 9 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
@@ -36,7 +36,7 @@ Niezależnie od dzierżawcy usługi Azure Information Protection topologii klucz
 
 1. Aby upewnić się, że użytkownicy będą mogli odczytać wiadomości e-mail, które zostały wysłane przy użyciu ochrony usług AD RMS, upewnij się, że jest rekord DNS SRV dla klastra usług AD RMS. Jeśli nie utworzono rekordu DNS SRV dla ponownej konfiguracji klienta w kroku 7, należy utworzyć teraz tego rekordu do obsługi usługi Exchange Online. [Instrukcje](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
 
-2. Uruchom usługi Exchange Online [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) polecenia. Jeśli potrzebujesz pomocy, wykonanie tego polecenia, zobacz instrukcje krok po kroku z [usługi Exchange Online: Konfiguracja usługi IRM](/..deploy-use/configure-office365.md#exchange-online-irm-configuration).
+2. Uruchom usługi Exchange Online [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\)aspx) polecenia. Jeśli potrzebujesz pomocy, wykonanie tego polecenia, zobacz instrukcje krok po kroku z [usługi Exchange Online: Konfiguracja usługi IRM](/..deploy-use/configure-office365.md#exchange-online-irm-configuration).
     
     Z danych wyjściowych, sprawdź, czy **AzureRMSLicensingEnabled** ustawiono **True**:
     

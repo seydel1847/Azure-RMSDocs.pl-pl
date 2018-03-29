@@ -1,26 +1,26 @@
 ---
-title: "Migrowanie klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM — AIP"
-description: "Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault."
+title: Migrowanie klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM — AIP
+description: Instrukcje będące częścią ścieżki migracji z usługi AD RMS do usługi Azure Information Protection, stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d942e51994c6db3ee0c3e1127991a7007ed91f92
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 659fbe634326e7571f489b1ae2e1bc4176eadb0a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 Są to instrukcje będące częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez oprogramowanie, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
@@ -122,7 +122,7 @@ Nie wykonuj kroków służących do generowania pary klucza, ponieważ masz już
 
 Przed przeniesieniem klucza do usługi Azure Key Vault upewnij się, że narzędzie KeyTransferRemote.exe zwraca wartość **Result: SUCCESS** (Wynik: POWODZENIE), gdy tworzysz kopię klucza ze zmniejszonymi uprawnieniami (krok 4.1) i gdy szyfrujesz klucz (krok 4.3).
 
-Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Identyfikator będzie wyglądać podobnie do następującego: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection będzie go potrzebować, aby skonfigurować usługę Azure Rights Management z usługi Azure Information Protection do użycia tego klucza jako klucza dzierżawy.
+Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Będzie wyglądała podobnie do **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection będzie go potrzebować, aby skonfigurować usługę Azure Rights Management z usługi Azure Information Protection do użycia tego klucza jako klucza dzierżawy.
 
 Następnie użyj polecenia cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy), aby autoryzować nazwę główną usługi Azure Rights Management w celu uzyskania dostępu do klucza magazynu. Wymagane uprawnienia to: decrypt, encrypt, unwrapkey, wrapkey, verify i sign.
 

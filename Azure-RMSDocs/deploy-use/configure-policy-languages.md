@@ -1,24 +1,24 @@
 ---
-title: "Konfigurowanie etykiety i szablony dla różnych języków usługi Azure Information Protection"
-description: "Możesz dodać obsługę innych języków dla etykiet, które użytkownicy widzą na pasku Information Protection, a także wszystkie szablony, które użytkownicy widzą, podając językach w ramach zasad usługi Azure Information Protection i importowanie tłumaczenia."
+title: Konfigurowanie etykiety i szablony dla różnych języków usługi Azure Information Protection
+description: Możesz dodać obsługę innych języków dla etykiet, które użytkownicy widzą na pasku Information Protection, a także wszystkie szablony, które użytkownicy widzą, podając językach w ramach zasad usługi Azure Information Protection i importowanie tłumaczenia.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: dee720e99a3671dec788e048fac6f28c3992daa0
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: b3341237d494766242ef790798ad1f97404919e9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować szablony dla różnych języków i etykiety usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Mimo że domyślne etykiety dla usługi Azure Information Protection obsługuje wiele języków, musisz skonfigurować obsługę etykieta nazwy i opisy, które określisz. Tej konfiguracji, należy wykonać następujące czynności:
 

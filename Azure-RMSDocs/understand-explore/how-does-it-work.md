@@ -1,26 +1,26 @@
 ---
-title: "Jak działa usługa Azure RMS — Azure Information Protection"
-description: "Szczegółowe informacje dotyczące działania usługi Azure RMS i kontrolek kryptograficznych używanych przez tę usługę oraz diagramy krok po kroku dotyczące sposobu działania tego procesu."
+title: Jak działa usługa Azure RMS — Azure Information Protection
+description: Szczegółowe informacje dotyczące działania usługi Azure RMS i kontrolek kryptograficznych używanych przez tę usługę oraz diagramy krok po kroku dotyczące sposobu działania tego procesu.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb65f99d1a0fbc2c9aaee25a585561bd2511b723
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: a261e356e167687190cc71eed4b2da715ab45697
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Ważne jest, aby informacje o sposobie działania usługi Azure RMS, jest to, że ta usługa ochrony danych z usługi Azure Information Protection nie Zobacz lub przechowywać dane w ramach procesu ochrony. Informacje chronione jest wysyłane do i przechowywane na platformie Azure, chyba że jawnie Zapisz go na platformie Azure lub użyj innej usługi w chmurze, która zapisze go na platformie Azure. Usługa Azure RMS sprawia po prostu, że dane w dokumencie są nieczytelne dla każdego z wyjątkiem autoryzowanych użytkowników i usług:
 

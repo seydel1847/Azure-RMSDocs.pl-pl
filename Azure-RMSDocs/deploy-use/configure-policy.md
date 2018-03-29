@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie zasad usługi Azure Information Protection"
-description: "Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection."
+title: Konfigurowanie zasad usługi Azure Information Protection
+description: Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9dda33998de8f37af5dd5acd1c234a8029cc6d02
-ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
+ms.openlocfilehash: a0194b1cf6b1b134c3fd37ae9f042f117570d9ce
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection. Te zasady są pobierane na komputery z zainstalowanym [klientem usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 

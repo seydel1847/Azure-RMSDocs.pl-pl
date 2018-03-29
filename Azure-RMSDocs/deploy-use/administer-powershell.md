@@ -1,26 +1,26 @@
 ---
-title: "Administrowanie usługą Azure Rights Management przy użyciu programu PowerShell — AIP"
-description: "Dowiedz się, jak użyć modułu programu PowerShell dla usługi Azure Rights Management (AADRM) w ramach usługi Azure Information Protection w celu administrowania usługą AADRM na potrzeby Twojej organizacji."
+title: Administrowanie usługą Azure Rights Management przy użyciu programu PowerShell — AIP
+description: Dowiedz się, jak użyć modułu programu PowerShell dla usługi Azure Rights Management (AADRM) w ramach usługi Azure Information Protection w celu administrowania usługą AADRM na potrzeby Twojej organizacji.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdd35669360b172d456254c1e8e9f1d980117cdb
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 55142c61b5ba7ee8b800bae94231401e74be9a38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Czy do administrowania usługą Azure Rights Management dla usługi Azure Information Protection jest wymagane korzystanie z programu PowerShell? Nie należy w przypadku wszystkich konfiguracji można wykonać w portalu Azure lub w portalu usługi Office 365. Jednak należy użyć programu PowerShell dla niektórych zaawansowanych konfiguracji i może również wolisz używać środowiska PowerShell efektywniejsze kontroli wiersza polecenia i skryptów.
 
