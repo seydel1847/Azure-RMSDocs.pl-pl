@@ -1,24 +1,24 @@
 ---
-title: "Przykłady kodu dla systemu iOS/OS X | Azure RMS"
-description: "W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu iOS/OS X."
-keywords: 
+title: Przykłady kodu dla systemu iOS/OS X | Azure RMS
+description: W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu iOS/OS X.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: a610bd7983ffcf5e56cad4038375ed6c9b3f5e0a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 121296ed8d2e160bd602ae9d88843eb1580f17f6
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="iosos-x-code-examples"></a>Przykłady kodu dla systemu iOS/OS X
 
@@ -217,7 +217,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
 
 -   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
 
-    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia: [MSUserRights](https://msdn.microsoft.com/en-us/library/dn790811.aspx) i [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
+    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia: [MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) i [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
 
         + (void)policyDescriptor
         {

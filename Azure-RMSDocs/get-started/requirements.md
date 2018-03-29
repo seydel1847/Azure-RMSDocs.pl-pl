@@ -4,7 +4,7 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 160d897d92f73d22530e81a61c0b2a41dc1722b4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 91c7ec9b7d9c0ed1d85ccbdd0b4c7750fd5b007c
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -86,6 +86,8 @@ Dane chronione przez klienta usługi Azure Information Protection za pomocą us�
 Klient usługi Azure Information Protection umożliwia etykietowanie i ochronę dokumentów oraz wiadomości e-mail za pośrednictwem aplikacji pakietu Office **Word**, **Excel**, **PowerPoint** i **Outlook** pochodzących z dowolnych z następujących pakietów Office:
 
 - Office 365 ProPlus z aplikacjami w wersji 2016 lub 2013 (instalacja z użyciem szybkiej instalacji lub Instalatora Windows)
+    
+    Te wersje pakietu Office są dołączone do większości, ale nie wszystkie subskrypcji usługi Office 365, które obejmują ochronę danych z usługi Azure Information Protection. Sprawdź swoje informacje subskrypcji, aby sprawdzać, czy usługi Office 365 ProPlus uwzględnione. Zawiera ona również te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 
@@ -93,7 +95,7 @@ Klient usługi Azure Information Protection umożliwia etykietowanie i ochronę 
 
 - Office Professional Plus 2010 z dodatkiem Service Pack 2
 
-Inne wersje pakietu Office nie mogą chronić dokumentów i wiadomości e-mail przy użyciu usługi Rights Management. W przypadku tych wersji usługa Azure Information Protection jest obsługiwana wyłącznie do klasyfikowania. Etykiety umożliwiające objęcie ochroną nie są wyświetlane na pasku usługi Azure Information Protection. 
+Inne wersje pakietu Office nie mogą chronić dokumentów i wiadomości e-mail przy użyciu usługi Rights Management. W przypadku tych wersji usługa Azure Information Protection jest obsługiwana wyłącznie do klasyfikowania. W rezultacie etykiety, które mają zastosowanie ochrony nie są wyświetlane dla użytkowników usługi Azure Information Protection paska lub z **Chroń** na Wstążce pakietu Office. 
 
 Klient usługi Azure Information Protection nie obsługuje wielu wersji pakietu Office na tym samym komputerze. Ten klient nie obsługuje również przełączania kont użytkowników w pakiecie Office.
 

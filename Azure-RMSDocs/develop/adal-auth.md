@@ -1,24 +1,24 @@
 ---
-title: "Konfigurowanie aplikacji do uwierzytelniania ADAL — AIP"
-description: "Czynności służące do konfigurowania aplikacji usług Azure Information Protection na potrzeby uwierzytelniania na podstawie biblioteki Azure ADAL"
+title: Konfigurowanie aplikacji do uwierzytelniania ADAL — AIP
+description: Czynności służące do konfigurowania aplikacji usług Azure Information Protection na potrzeby uwierzytelniania na podstawie biblioteki Azure ADAL
 keywords: uwierzytelnianie, RMS, ADAL, Information Protection,
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4ff8fd5b3c188f73e2210a64ec770b3e5f347142
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>Konfigurowanie aplikacji do uwierzytelniania ADAL
 
@@ -28,8 +28,8 @@ W tym temacie opisano procedurę konfigurowania aplikacji do uwierzytelniania na
 
 Potrzebne są następujące elementy:
 
-- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/en-us/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [Jak użytkownicy rejestrują się w usłudze RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
-- Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/en-us/library/dn592127.aspx)).
+- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [jak tworzyć konta użytkowników dla usług RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
+- Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/library/dn592127.aspx)).
 
 > [!NOTE]
 > Zapytaj administratora IT, czy jest dostępna subskrypcja usługi Microsoft Azure Rights Management, i poproś go o wykonanie poniższych czynności. Jeśli organizacja nie ma subskrypcji, administrator IT powinien ją utworzyć. Ponadto administrator IT powinien uzyskać subskrypcję dla *konta służbowego*, a nie *konta Microsoft* (na przykład usługi Hotmail).

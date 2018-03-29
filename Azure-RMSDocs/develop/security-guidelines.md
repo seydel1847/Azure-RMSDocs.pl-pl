@@ -1,30 +1,30 @@
 ---
-title: "Najlepsze rozwiązania w zakresie zabezpieczeń | Microsoft Information Protection"
-description: "W przypadku aplikacji z włączoną obsługą usługi RMS optymalnym rozwiązaniem jest zastosowanie najlepszych rozwiązań w zakresie usługi Azure Information Protection."
+title: Najlepsze rozwiązania w zakresie zabezpieczeń | Microsoft Information Protection
+description: W przypadku aplikacji z włączoną obsługą usługi RMS optymalnym rozwiązaniem jest zastosowanie najlepszych rozwiązań w zakresie usługi Azure Information Protection.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 04fc73bac667b461a37e87a1c726c5a645495197
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Najlepsze rozwiązania w zakresie zabezpieczeń dla usługi Azure Information Protection
 
 Zestaw SDK (Software Development Kit) usługi Azure Information Protection (AIP) zapewnia niezawodny system do publikowania i używania wszystkich typów informacji chronionych. Aby system AIP był maksymalnie efektywny, aplikacje z obsługą usługi AIP należy tworzyć przy użyciu najlepszych rozwiązań usługi AIP. Aplikacje z obsługą usługi AIP są pomocne w utrzymaniu bezpieczeństwa danego ekosystemu. Identyfikowanie zagrożeń związanych z bezpieczeństwem i ograniczenie zagrożeń wprowadzanych podczas tworzenia aplikacji pomaga zminimalizować prawdopodobieństwo mniej bezpiecznego wdrażania oprogramowania.
 
 Najlepsze rozwiązania w zakresie wdrażania aplikacji przy użyciu zestawu SDK (Software Development Kit) usługi Azure Information Protection obejmują następujące kategorie propozycji:
-- [Modele zagrożeń i ograniczenia](https://msdn.microsoft.com/en-us/library/aa362751.aspx)
-- [Zagrożenia bezpieczeństwa](https://msdn.microsoft.com/en-us/library/aa362736.aspx)
+- [Modele zagrożeń i ograniczenia](https://msdn.microsoft.com/library/aa362751.aspx)
+- [Zagrożenia bezpieczeństwa](https://msdn.microsoft.com/library/aa362736.aspx)
 
 Informacje te stanowią uzupełnienie umowy prawnej, którą należy podpisać w celu uzyskania certyfikatów cyfrowych potrzebnych do wdrażania aplikacji przy użyciu zestawu SDK usługi AIP.
 
@@ -86,7 +86,7 @@ System AIP organizuje prawa kilku grup. Więcej informacji można znaleźć w te
 Interfejs API umożliwia użytkownikowi odszyfrowywanie informacji lub nie. Same informacje nie mają żadnej odziedziczonej ochrony. Jeśli użytkownik ma prawo do odszyfrowania informacji, interfejs API to umożliwia i aplikacja odpowiada za zarządzanie tymi informacjami lub ich ochronę po ich zabezpieczeniu. Aplikacja odpowiada za zarządzanie środowiskiem i interfejsem w celu zapobiegania nieautoryzowanemu korzystaniu z informacji — np. wyłącza przyciski **Drukuj** i **Kopiuj**, jeśli licencja przyznaje tylko prawo do odtwarzania. Przy użyciu pakietu testowego należy sprawdzić, czy aplikacja działa poprawnie na wszystkich prawach licencji, które rozpoznaje.
 
 ### <a name="minimum-standard"></a>Standard minimalny
-- Wdrożenia klienta praw XrML v.1.2 powinny być zgodne z definicjami tych praw opisanymi w specyfikacjach XrML, które są dostępne w witrynie http://www.xrml.org. Wszelkie prawa właściwe dla aplikacji należy określić dla wszystkich obiektów, które są zainteresowane aplikacją.
+- Implementacja klienta XrML v.1.2 rights powinny być zgodne z definicjami tych praw, zgodnie z opisem w specyfikacji XrML, które są dostępne w witrynie sieci XrML Web (http://www.xrml.org). Wszelkie prawa właściwe dla aplikacji należy określić dla wszystkich obiektów, które są zainteresowane aplikacją.
 - Za pomocą pakietu testowego i procesu testowania należy sprawdzić, czy aplikacja jest prawidłowo wykonywana zgodnie z uprawnieniami, które obsługuje, i że nie działa w ramach nieobsługiwanych uprawnień.
 - Jeśli tworzysz aplikację publikowania, musisz udostępnić informacje wyjaśniające, które prawa wewnętrzne są, a które nie są obsługiwane przez aplikację publikującą, a także, jak te uprawnienia należy interpretować. Użytkownik końcowy powinien także uzyskać z interfejsu użytkownika wyraźne informacje na temat skutków każdego przypadku przydzielenia lub odmowy dostępu do danej informacji.
 
