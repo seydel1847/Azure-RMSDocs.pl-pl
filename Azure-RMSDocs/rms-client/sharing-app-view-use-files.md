@@ -1,26 +1,26 @@
 ---
-title: "Otwieranie plików chronionych za pomocą usługi RMS w aplikacji RMS sharing — AIP"
-description: "Instrukcje dotyczące wyświetlania i używania pliku chronionego, co wymaga posiadania zainstalowanej aplikacji Rights Management (RMS) sharing."
+title: Otwieranie plików chronionych za pomocą usługi RMS w aplikacji RMS sharing — AIP
+description: Instrukcje dotyczące wyświetlania i używania pliku chronionego, co wymaga posiadania zainstalowanej aplikacji Rights Management (RMS) sharing.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a510d559573e942b8a2bf392f36a1300dfbfb7a
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalowana na komputerze](install-sharing-app.md), wystarczy kliknąć dwukrotnie chroniony plik, aby go wyświetlić. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików.
 
