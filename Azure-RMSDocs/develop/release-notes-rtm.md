@@ -1,24 +1,24 @@
 ---
 title: Informacje o wersji
-description: "Zestaw SDK aktualizacje, poprawki i inne informacje dla deweloperów."
-keywords: 
+description: Zestaw SDK aktualizacje, poprawki i inne informacje dla deweloperów.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: f05191f2c2700e59bb83a79d025ba181b799ab5a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="release-notes"></a>Informacje o wersji
 
@@ -34,7 +34,7 @@ Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zesta
 >[!Note]
 > Aktualizacje dokumentacji funkcji w tej sekcji dotyczą zestawu SDK udostępnionego do pobrania w dniu 12.11.2015 r.
 
-- **Ulepszony przepływ uwierzytelniania** — przy użyciu uwierzytelniania opartego na tokenie protokołu OAuth2 za pośrednictwem [interfejsów Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](how-to-use-adal-authentication.md).
+- **Ulepszony przepływ uwierzytelniania** — przy użyciu uwierzytelniania opartego na tokenie protokołu OAuth2 za pośrednictwem [interfejsów Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/). Aby uzyskać więcej informacji na temat tego procesu i przeznaczonych dla niego rozszerzeń interfejsu API, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usługi RMS](how-to-use-adal-authentication.md).
 
 - **Aktualizacja do biblioteki ADAL** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft zapewnia następujące możliwości:
 
@@ -121,7 +121,7 @@ Składnika specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 
     Aby uzyskać więcej informacji o obsługiwanych typach plików, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
--   **Na komputerach z systemem Windows 7 z dodatkiem SP1 i Windows Server 2008 R2 z dodatkiem SP1** bez aktualizacji [KB2533623](https://support.microsoft.com/en-us/kb/2533623) może wystąpić następujący błąd ochrony dowolnego pliku pakietu Office „Parametr jest nieprawidłowy. Kod błędu 0x80070057”. Jeśli widzisz taki komunikat, zainstaluj aktualizację i spróbuj ponownie. Jeśli problemy występują nadal, skontaktuj się z zespołem ds. opinii o wersji beta zestawu RMS SDK pod adresem <rmcstbeta@microsoft.com>.
+-   **Na komputerach z systemem Windows 7 z dodatkiem SP1 i Windows Server 2008 R2 z dodatkiem SP1** bez aktualizacji [KB2533623](https://support.microsoft.com/kb/2533623) może wystąpić następujący błąd ochrony dowolnego pliku pakietu Office „Parametr jest nieprawidłowy. Kod błędu 0x80070057”. Jeśli widzisz taki komunikat, zainstaluj aktualizację i spróbuj ponownie. Jeśli problemy występują nadal, skontaktuj się z opinii o wersji Beta zestawu RMS SDK <rmcstbeta@microsoft.com>.
 
     **Uwaga**  Począwszy od wersji z kwietnia 2015 r. dodano test procesu instalacji tej bazy wiedzy.
 
@@ -139,7 +139,7 @@ Składnika specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
 
     Interfejs API plików jest implementowany za pośrednictwem następujących czterech nowych funkcji: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx)i [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
 
-    Interfejs API plików wymaga zainstalowania klienta Rights Management Service Client 2.1 na komputerze klienckim i połączenia komputera z serwerem usługi RMS. Aby uzyskać więcej informacji na temat serwera usługi RMS, klienta usługi RMS i ich funkcji, zobacz zawartość TechNet w [dokumentacji usługi RMS dla informatyków](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx).
+    Interfejs API plików wymaga zainstalowania klienta Rights Management Service Client 2.1 na komputerze klienckim i połączenia komputera z serwerem usługi RMS. Aby uzyskać więcej informacji na temat serwera usługi RMS, klienta usługi RMS i ich funkcji, zobacz zawartość TechNet w [dokumentacji usługi RMS dla informatyków](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx).
 
 -   **Problem**: Podczas tworzenia licencji od podstaw konieczne jest jawne przyznanie praw właściciela.
 
