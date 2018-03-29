@@ -1,26 +1,26 @@
 ---
-title: "Klasyfikować i chronić pliki i wiadomości e-mail przy użyciu usługi Azure Information Protection"
-description: "Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów i wiadomości e-mail użytkownika."
+title: Klasyfikować i chronić pliki i wiadomości e-mail przy użyciu usługi Azure Information Protection
+description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów i wiadomości e-mail użytkownika.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 49518c1324ad541c4880c7930b6e661a2aba46d8
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 > [!NOTE]
 > Użyj tych instrukcji, aby ułatwić klasyfikować i chronić dokumenty i wiadomości e-mail. Jeśli potrzebne tylko klasyfikowania i nie chronić dokumenty i wiadomości e-mail, zobacz [instrukcje tylko do klasyfikowania](client-classify.md). Jeśli nie masz pewności, zestaw instrukcji do użycia, skontaktuj się z administratorem lub pomocą techniczną.
@@ -128,13 +128,13 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
 ### <a name="to-classify-and-protect-a-file-by-using-file-explorer"></a>Aby sklasyfikować i chronić plik za pomocą Eksploratora plików
 
-1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Na przykład:
+1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Przykład:
     
     ![Kliknięcie prawym przyciskiem myszy w oknie Eksploratora plików — klasyfikowanie i ochrona za pomocą usługi Azure Information Protection](../media/right-click-classify-protect-folder.png)
 
 2. W oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację i ochronę w sposób zdefiniowany przez administratora. 
 
-    - Jeśli nie można wybrać żadnej etykiety (są wyszarzone): wybrany plik nie obsługuje klasyfikacji, ale można go chronić z użyciem uprawnień niestandardowych (krok 3). Na przykład:
+    - Jeśli nie można wybrać żadnej etykiety (są wyszarzone): wybrany plik nie obsługuje klasyfikacji, ale można go chronić z użyciem uprawnień niestandardowych (krok 3). Przykład:
 
     ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
     
@@ -162,7 +162,7 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na pojawienie się komunikatu **Ukończona praca**, aby zobaczyć wyniki. Następnie kliknij przycisk **Zamknij**.
 
-Wybrany plik lub pliki są teraz sklasyfikowane i chronione zgodnie z wybranymi przez Ciebie opcjami. W niektórych przypadkach (kiedy dodanie ochrony powoduje zmianę rozszerzenia nazwy pliku) oryginalny plik znajdujący się w Eksploratorze plików zostaje zastąpiony nowym plikiem oznaczonym ikoną kłódki, sygnalizującą ochronę za pomocą usługi Azure Information Protection. Na przykład:
+Wybrany plik lub pliki są teraz sklasyfikowane i chronione zgodnie z wybranymi przez Ciebie opcjami. W niektórych przypadkach (kiedy dodanie ochrony powoduje zmianę rozszerzenia nazwy pliku) oryginalny plik znajdujący się w Eksploratorze plików zostaje zastąpiony nowym plikiem oznaczonym ikoną kłódki, sygnalizującą ochronę za pomocą usługi Azure Information Protection. Przykład:
 
 ![Chroniony plik z ikoną kłódki usługi Azure Information Protection](../media/Pfile.png)
 

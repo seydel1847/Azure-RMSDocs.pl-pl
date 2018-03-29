@@ -1,26 +1,26 @@
 ---
-title: "Ochrona za pomocą usługi Azure RMS z użyciem infrastruktury FCI w systemie Windows Server — AIP"
-description: "Instrukcje dotyczące korzystania z klienta Rights Management (RMS) przy użyciu klienta usługi Azure Information Protection do skonfigurowania Menedżera zasobów serwera plików i infrastruktury klasyfikacji plików (FCI)."
+title: Ochrona za pomocą usługi Azure RMS z użyciem infrastruktury FCI w systemie Windows Server — AIP
+description: Instrukcje dotyczące korzystania z klienta Rights Management (RMS) przy użyciu klienta usługi Azure Information Protection do skonfigurowania Menedżera zasobów serwera plików i infrastruktury klasyfikacji plików (FCI).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 49133bec323b00541c92ac3739fafab266cc92cf
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: be2c1a7c0432d3054eb5eced844ba42f402481d6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
->*Dotyczy: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Ten artykuł zawiera instrukcje i skrypt umożliwiające użycie klienta usługi Azure Information Protection i programu PowerShell w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI).
 

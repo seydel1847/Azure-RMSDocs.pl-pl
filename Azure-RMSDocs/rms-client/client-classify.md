@@ -1,26 +1,26 @@
 ---
-title: "Klasyfikowania plików i wiadomości e-mail przy użyciu usługi Azure Information Protection"
-description: "Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomości e-mail."
+title: Klasyfikowania plików i wiadomości e-mail przy użyciu usługi Azure Information Protection
+description: Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomości e-mail.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aee3ec8673217cf130c4705e750532c7aeefe084
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 0d3abf33ada7c639c1e7b0bad67c36636a9a0951
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowania plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 > [!NOTE]
 > Użyj tych instrukcji, aby ułatwić klasyfikowania (ale nie chroni) dokumentów i wiadomości e-mail. Jeśli konieczne jest również ochrony dokumentów i wiadomości e-mail, zobacz [klasyfikować i chronić instrukcje](client-classify-protect.md). Jeśli nie masz pewności, zestaw instrukcji do użycia, skontaktuj się z administratorem lub pomocą techniczną.
@@ -75,13 +75,13 @@ Przewodnik administratora zawiera pełną listę typów plików, które obsługu
 
 ### <a name="to-classify-a-file-by-using-file-explorer"></a>Do klasyfikowania plików za pomocą Eksploratora plików
 
-1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Na przykład:
+1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**. Przykład:
     
     ![Kliknięcie prawym przyciskiem myszy w oknie Eksploratora plików — klasyfikowanie i ochrona za pomocą usługi Azure Information Protection](../media/right-click-classify-protect-folder.png)
 
 2. W **Klasyfikacja i ochrona — usługi Azure Information Protection** okno dialogowe, użyj etykiety jako możesz zrobić w aplikacji pakietu Office, który określa klasyfikacji zdefiniowanych przez administratora. 
     
-    Jeśli żadna z tych etykiet można wybrać (wygaszone): wybrany plik nie obsługuje klasyfikacji. Na przykład:
+    Jeśli żadna z tych etykiet można wybrać (wygaszone): wybrany plik nie obsługuje klasyfikacji. Przykład:
     
     ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
 

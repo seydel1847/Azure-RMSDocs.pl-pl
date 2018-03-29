@@ -1,24 +1,24 @@
 ---
-title: "Samouczek Szybki start — krok 2 — AIP"
-description: "Krok 2 samouczka wprowadzającego, dzięki któremu można szybko wypróbować usługę Azure Information Protection — konfigurowanie zasad."
+title: Samouczek Szybki start — krok 2 — AIP
+description: Krok 2 samouczka wprowadzającego, dzięki któremu można szybko wypróbować usługę Azure Information Protection — konfigurowanie zasad.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Usługa Azure Information Protection zawiera domyślną zasadę, której można użyć bez konfiguracji, ale chcemy się jej przyjrzeć i wprowadzić kilka zmian.
 
@@ -33,7 +33,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
        > 
        > Jeśli Twoje domyślne zasady wyglądają inaczej, nadal możesz używać tego samouczka, ale należy pamiętać o tych zmianach, korzystając z poniższych instrukcji i obrazów. Jeśli chcesz zmodyfikować zasady domyślne tak, aby pasowały do bieżących zasad domyślnych, zobacz [Domyślne zasady usługi Azure Information Protection](../deploy-use/configure-policy-default.md).
     
-    - Z konfiguracji domyślnej niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od Twojego domyślne zasady niektóre etykiety może także mieć ustawionej ochrony. Na przykład: 
+    - Z konfiguracji domyślnej niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od Twojego domyślne zasady niektóre etykiety może także mieć ustawionej ochrony. Przykład: 
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](../media/info-protect-policy-default-labelsv2.png)
     
@@ -85,7 +85,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     Można wybrać różne poziomy uprawnień lub Określ prawa użytkowania poszczególnych przy użyciu **niestandardowy** opcji. Zachowując w tym samouczku **Weryfikacja** opcji. Można później Poeksperymentuj z innymi uprawnieniami i jak ich ograniczać określeni użytkownicy czynności z chronionego dokumentu lub wiadomości e-mail do odczytu.
 
-7. Kliknij przycisk **OK** zamknąć to **dodać uprawnienia** bloku i zostanie wyświetlony jak **ochrony** bloku jest aktualizowana w celu uwzględnienia konfiguracji. Na przykład:
+7. Kliknij przycisk **OK** zamknąć to **dodać uprawnienia** bloku i zostanie wyświetlony jak **ochrony** bloku jest aktualizowana w celu uwzględnienia konfiguracji. Przykład:
     
      ![Blok ochrony konfiguracji uprawnień dla etykiety usługi Azure Information Protection](../media/info-protect-protection-configured.png)
     
@@ -127,7 +127,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
 
 13. Kliknij przycisk **zapisać** na tym **etykietę podrzędną** bloku. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
     
-    Teraz widoczne z nową etykietę podrzędną, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Na przykład:
+    Teraz widoczne z nową etykietę podrzędną, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Przykład:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configuredv2.png)
     

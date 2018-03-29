@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie usługi IRM programu Exchange Online dla usługi Azure Rights Management z usługi Azure Information Protection"
-description: "Informacje i instrukcje dla administratorów skonfigurować usługę Exchange Online dla usługi Azure Rights Management dla dzierżawcy usługi Office 365 nie obsługuje nowe funkcje w szyfrowanie wiadomości usługi Office 365."
+title: Konfigurowanie usługi IRM programu Exchange Online dla usługi Azure Rights Management z usługi Azure Information Protection
+description: Informacje i instrukcje dla administratorów skonfigurować usługę Exchange Online dla usługi Azure Rights Management dla dzierżawcy usługi Office 365 nie obsługuje nowe funkcje w szyfrowanie wiadomości usługi Office 365.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0c6fe7f7b6a34eea21b646ce5573ca03b13be3c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>Konfiguracja usługi IRM programu Exchange Online w przypadku zaimportowano zaufaną domenę publikacji
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Użyj tych instrukcji, tylko jeśli wcześniej skonfigurowano usługi Exchange Online dla usługi IRM importując zaufaną domenę publikacji (TPD) i muszą mieć możliwość odszyfrowywania wiadomości e-mail, które wcześniej były szyfrowane.
 
@@ -128,7 +128,7 @@ Jako administrator programu Exchange możesz teraz skonfigurować funkcje, któr
 
 
 ### <a name="office-365-message-encryption"></a>Szyfrowanie wiadomości usługi Office 365
-Uruchom te same kroki, zgodnie z opisem w poprzedniej sekcji, ale jeśli nie chcesz wyświetlać, przed wykonaniem kroku 6, uruchom następujące polecenie, aby uniemożliwić szablonów funkcji IRM dostępne w programie Outlook Web App i kliencie programu Outlook szablonów:`Set-IRMConfiguration -ClientAccessServerEnabled $false`
+Uruchom te same kroki, zgodnie z opisem w poprzedniej sekcji, ale jeśli nie chcesz wyświetlać, przed wykonaniem kroku 6, uruchom następujące polecenie, aby uniemożliwić szablonów funkcji IRM dostępne w programie Outlook Web App i kliencie programu Outlook szablonów: `Set-IRMConfiguration -ClientAccessServerEnabled $false`
 
 Teraz możesz skonfigurować [reguły transportu](https://technet.microsoft.com/library/dd302432.aspx), aby zabezpieczenia wiadomości były automatycznie modyfikowane, jeśli odbiorcy znajdują się poza organizacją. Następnie wybierz opcję **Zastosuj szyfrowanie wiadomości usługi Office 365**.
 

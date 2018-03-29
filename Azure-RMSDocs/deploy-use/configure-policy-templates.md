@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection"
-description: "Konfigurowanie szablonów i zarządzania nimi rights management z portalu Azure."
+title: Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
+description: Konfigurowanie szablonów i zarządzania nimi rights management z portalu Azure.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9c2ef1338f1d5e1c3d360ad261f89f652a804ec
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: 4f0cc5be090a425c7be28c81f20b85eef485772d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 >[!NOTE]
 >Ta funkcja zastępuje Konfigurowanie szablonów niestandardowych w klasycznym portalu Azure. Klasyczny portal teraz został wycofany, trzeba używać portalu Azure. Szybkie mapowania instrukcje, zobacz [zadań, które są używane z klasycznego portalu Azure](migrate-portal.md).

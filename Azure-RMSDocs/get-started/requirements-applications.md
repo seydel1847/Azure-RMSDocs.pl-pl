@@ -1,26 +1,26 @@
 ---
-title: "Aplikacje obsługujące ochronę danych za pomocą usługi RMS — AIP"
-description: "Identyfikowanie aplikacji, które korzystają z interfejsów API usługi RMS w celu natywnej obsługi usługi Azure Rights Management w ramach usługi Azure Information Protection."
+title: Aplikacje obsługujące ochronę danych za pomocą usługi RMS — AIP
+description: Identyfikowanie aplikacji, które korzystają z interfejsów API usługi RMS w celu natywnej obsługi usługi Azure Rights Management w ramach usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 03/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9e8e9bd9e8c8c15d11661202cfa11abeec76376f
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: 27187bce4247b2807b75ddc75839daf81a45ed7a
+ms.sourcegitcommit: aca094874febf59eddf84b0da325f4f1f61404d1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Użyj następujących tabel, aby zidentyfikować aplikacje i rozwiązania, które natywnie obsługują usługę Azure Rights Management (Azure RMS) zapewniającą ochronę danych dla usługi Azure Information Protection.
@@ -81,6 +81,8 @@ Usługa Azure RMS jest ściśle zintegrowana z aplikacjami Word, Excel, PowerPoi
 Następujące pakiety klienta pakietu Office obsługują ochronę plików i wiadomości e-mail na komputerach z systemem Windows przy użyciu usługi Azure RMS:
 
 - Usługa Office 365 ProPlus: pakiety Office 2016 i Office 2013
+    
+    Te wersje pakietu Office są dołączone do większości, ale nie wszystkie subskrypcji usługi Office 365, które obejmują ochronę danych z usługi Azure Information Protection. Sprawdź swoje informacje subskrypcji, aby sprawdzać, czy usługi Office 365 ProPlus uwzględnione. Zawiera ona również te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 

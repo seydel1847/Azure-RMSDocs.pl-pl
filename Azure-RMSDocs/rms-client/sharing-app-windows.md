@@ -1,26 +1,26 @@
 ---
-title: "Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows — AIP"
-description: "Zasoby informacyjne dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows. Jest to bezpłatna aplikacja do pobrania dla organizacji, które używają usług Active Directory Rights Management (AD RMS) lub usługi Azure Information Protection, jak również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Information Protection."
+title: Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows — AIP
+description: Zasoby informacyjne dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows. Jest to bezpłatna aplikacja do pobrania dla organizacji, które używają usług Active Directory Rights Management (AD RMS) lub usługi Azure Information Protection, jak również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a496ed482f6973f03c63b3792fd1f3ccc4b9403e
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 4a5541e076fa4324c4a79df4d18daacc6b3dafb5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>Aplikacja do udostępniania usługi Rights Management dla systemu Windows
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection*
+>*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!IMPORTANT]
 > **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 

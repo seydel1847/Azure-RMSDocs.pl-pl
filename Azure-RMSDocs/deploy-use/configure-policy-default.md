@@ -1,24 +1,24 @@
 ---
-title: "Zasady domyślne dla usługi Azure Information Protection"
-description: "Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady usługi Azure Information Protection. Jeśli zmodyfikujesz zasady domyślne, możesz odnieść się do tych wartości, aby przywrócić wartości domyślne zasad."
+title: Zasady domyślne dla usługi Azure Information Protection
+description: Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady usługi Azure Information Protection. Jeśli zmodyfikujesz zasady domyślne, możesz odnieść się do tych wartości, aby przywrócić wartości domyślne zasad.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: 57c7321f9bcff12ff0afe4030038495ad4668020
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyślne zasady usługi Azure Information Protection.
 
@@ -62,7 +62,7 @@ Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Osobiste|Dane niebiznesowe, tylko do użytku osobistego.|**Włączone**: Włączone <br /><br />**Kolor**: Jasnozielony<br /><br />**Oznaczenia wizualne**: Brak <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Publiczne|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Public|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Ogólne|Dane biznesowe, które nie są przeznaczone do użytku publicznego. Jednak mogą one być udostępniane partnerom zewnętrznym w razie potrzeby. Do przykładów należą wewnętrzna książka telefoniczna firmy, schematy organizacyjne, standardy wewnętrzne i większość komunikacji wewnętrznej.|**Włączone**: Włączone <br /><br />**Kolor**: Niebieski <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Poufne|Wrażliwe dane biznesowe, które mogą spowodować szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
@@ -115,7 +115,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Osobiste|Dane niebiznesowe, tylko do użytku osobistego.|**Włączone**: Włączone <br /><br />**Kolor**: Jasnozielony<br /><br />**Oznaczenia wizualne**: Brak <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Publiczne|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Public|Dane biznesowe, które są specjalnie przygotowane i zatwierdzone do użytku publicznego.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Ogólne|Dane biznesowe, które nie są przeznaczone do użytku publicznego. Jednak mogą one być udostępniane partnerom zewnętrznym w razie potrzeby. Do przykładów należą wewnętrzna książka telefoniczna firmy, schematy organizacyjne, standardy wewnętrzne i większość komunikacji wewnętrznej.|**Włączone**: Włączone <br /><br />**Kolor**: Niebieski <br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Poufne|Wrażliwe dane biznesowe, które mogą spowodować szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
@@ -155,7 +155,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Osobiste|Wyłącznie do użytku osobistego. Te dane nie będą monitorowane przez organizację. Informacje osobiste nie mogą zawierać żadnych danych związanych z firmą.|**Włączone**: Włączone <br /><br />**Kolor**: Jasnozielony<br /><br />**Oznaczenia wizualne**: Brak <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Publiczne|Te informacje są informacjami wewnętrznymi. Mogą ich używać osoby wewnątrz firmy i poza nią.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
+|Public|Te informacje są informacjami wewnętrznymi. Mogą ich używać osoby wewnątrz firmy i poza nią.|**Włączone**: Włączone <br /><br />**Kolor**: Zielony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Wewnętrzne|Te informacje zawierają szerokie spektrum wewnętrznych danych firmowych, których mogą używać wszyscy pracownicy. Dane można udostępniać autoryzowanym klientom i partnerom biznesowym. Przykładami informacji wewnętrznych są zasady firmowe i większość komunikacji wewnętrznej.|**Włączone**: Włączone <br /><br />**Kolor**: Niebieski <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail): <br /><br />Ważność: Wewnętrzne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Poufne|Te dane zawierają poufne informacje biznesowe. Udostępnianie tych danych nieautoryzowanym użytkownikom może zaszkodzić organizacji. Przykładami informacji poufnych są informacje dotyczące pracowników, poszczególnych projektów lub umów z klientami oraz dane dotyczące konta sprzedaży.|**Włączone**: Włączone <br /><br />**Kolor**: Pomarańczowy<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail):<br /><br /> Ważność: Poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 |Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail):<br /><br /> Ważność: Tajne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|

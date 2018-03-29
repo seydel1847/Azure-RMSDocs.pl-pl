@@ -1,26 +1,26 @@
 ---
-title: "Usługi RMS dla użytkowników indywidualnych i Azure Information Protection"
-description: "Informacje o usłudze RMS dla użytkowników indywidualnych, bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy otrzymali chronione pliki, ale nie można uwierzytelnić tych użytkowników, ponieważ dział IT nie będzie zarządzała kontem je na platformie Azure."
+title: Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
+description: Informacje o usłudze RMS dla użytkowników indywidualnych, bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy otrzymali chronione pliki, ale nie można uwierzytelnić tych użytkowników, ponieważ dział IT nie będzie zarządzała kontem je na platformie Azure.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bce7efc1f35f5e455f76a24f2f96e7d62f568425
-ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
+ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione przez usługę Azure Information Protection. Jeśli Ci użytkownicy nie może zostać uwierzytelnione przez usługę Azure Active Directory i ich organizacja nie ma zarządzania prawami dostępu w usłudze Active Directory (AD RMS), tej bezpłatnej tworzenia konta usługi można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W związku z tym te użytkownicy mogą teraz uwierzytelniania przy użyciu adresu e-mail firmy i następnie odczytywać pliki chronione na komputerach lub urządzeniach przenośnych.
 

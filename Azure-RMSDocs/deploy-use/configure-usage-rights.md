@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie praw użytkowania dla usługi Azure Rights Management — AIP"
-description: "Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection."
+title: Konfigurowanie praw użytkowania dla usługi Azure Rights Management — AIP
+description: Informacje pomagające zrozumieć i zidentyfikować określone prawa, które są używane w przypadku ochrony plików lub wiadomości e-mail przy użyciu usługi Azure Rights Management w ramach usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d597be35e509fae655ee18fe9fc0344603385382
-ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
+ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Jeśli ustawiasz ochronę plików lub wiadomości e-mail za pomocą usługi Azure Rights Management w ramach usługi Azure Information Protection bez użycia szablonu, musisz własnoręcznie skonfigurować prawa użytkowania. Ponadto podczas konfigurowania szablonów lub etykiety dla ochrony usługi Azure Rights Management, wybierz prawa użytkowania, które zostaną automatycznie zastosowane w przypadku wybrania szablonu lub etykieta przez użytkowników, administratorów lub skonfigurowane usługi. Na przykład w portalu Azure można wybrać role, które powodują ustawienie logicznego grupowania praw użytkowania, lub można skonfigurować poszczególne prawa.
 
@@ -97,11 +97,15 @@ Te szablony domyślne są tworzone, gdy zostało zakupione w ramach Twojej subsk
 
 Klienci programu Exchange i usługi (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły przepływu poczty programu Exchange) mają opcję ochrony praw dodatkowe informacje na potrzeby wiadomości e-mail: **nie przesyłaj dalej**. 
 
-Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego nie widać go w portalu Azure podczas przeglądania i zarządzania szablonami usługi Azure Rights Management. Zamiast tego opcje **Nie przekazuj** stanowią zestaw uprawnień dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
+Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego nie widać go w portalu Azure podczas przeglądania i zarządzania szablonami ochrony. Zamiast tego **nie przesyłaj dalej** opcja to zestaw praw użytkowania dynamicznie stosowany przez użytkowników względem ich adresatów wiadomości e-mail.
 
 Gdy **nie przesyłaj dalej** jest stosowana do wiadomości e-mail, wiadomości e-mail są szyfrowane i musi zostać uwierzytelniony adresatów. Następnie adresatów nie może przekazać lub wydrukować go, skopiować z niej, lub zapisywanie załączników lub zapisać pod inną nazwą. Na przykład w kliencie programu Outlook przycisk Prześlij dalej nie jest dostępne, **Zapisz jako**, **Zapisz załącznik**, i **drukowania** menu Opcje nie są dostępne i nie można dodać lub zmieniać adresatów w **do**, **DW**, lub **UDW** pola.
 
-Jest to ważna różnica między stosowaniem opcji **Nie przekazuj** i stosowaniem szablonu, za pomocą którego nie są przyznawane uprawnienia do przekazywania wiadomości e-mail: opcja **Nie przekazuj** używa dynamicznej listy autoryzowanych użytkowników opartej na wybranych przez użytkownika adresatach pierwotnej wiadomości e-mail. Prawa w szablonie zawierają natomiast statyczną listę autoryzowanych użytkowników określonych wcześniej przez administratora. Na czym polega różnica? Zostanie to wytłumaczone na przykładzie: 
+Niechronione [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) automatycznie, które są dołączone do wiadomości e-mail dziedziczą takie same ograniczenia. Prawa użytkowania stosowana do tych dokumentów są **Edytuj zawartość, Edytuj**; **Zapisać**; **Wyświetl, Otwórz, Odczytaj**; i **Zezwalaj na makra**. Jeśli ma prawa użytkowania inny załącznik lub załącznika nie jest obsługującym tę ochronę dziedziczone dokumentu pakietu Office, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, wymaganych dla pliku. 
+
+### <a name="difference-between-do-not-forward-and-not-granting-the-forward-usage-right"></a>Różnica między nie przesyłaj dalej i nieprzyznanie prawo użytkowania do przodu
+
+Jest to ważna różnica między stosowaniem **nie przesyłaj dalej** i stosowaniem szablonu, którego nie są przyznawane **do przodu** użycia prawo do wiadomości e-mail: **nie przesyłaj dalej** używa dynamicznej listy autoryzowanych użytkowników opartego na wybranych przez użytkownika adresatach pierwotnej wiadomości e-mail; prawa w szablonie zawierają natomiast statyczną listę autoryzowanych użytkowników określonych przez administratora wcześniej. Na czym polega różnica? Zostanie to wytłumaczone na przykładzie: 
 
 Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych osób w dziale marketingu, które nie powinny być udostępniane nikomu innemu. Czy w takiej sytuacji użytkownik powinien chronić wiadomość e-mail za pomocą szablonu ograniczającego prawa (do wyświetlania, odpowiedzi i zapisywania) tylko do działu marketingu?  Czy może powinna zostać użyta opcja **Nie przekazuj**? Obie te opcje spowodują, że adresaci nie będą mogli przekazywać wiadomości e-mail. 
 
@@ -118,7 +122,9 @@ Exchange Online korzysta z nowych funkcji dla szyfrowanie wiadomości usługi Of
 
 Ta opcja jest wdrażany dzierżawców korzystających z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web i jako inną opcję ochrony praw dla reguły przepływu poczty. Aby uzyskać więcej informacji, zobacz następujące powiadomienie post blog zespołu pakietu Office: [szyfrowania zetknie się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
 
-Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i musi zostać uwierzytelniony adresatów. Następnie odbiorcy mają wszystkie prawa użytkowania, z wyjątkiem Pełna kontrola. Ta kombinacja prawa użytkowania oznacza, że adresaci nie obowiązują żadne ograniczenia, z wyjątkiem tego, że nie będą oni mogli usunąć ochronę. Na przykład adresat można skopiować, drukować i przekazywać wiadomości e-mail. Podobnie wszystkie dokumenty pakietu Office, które są dołączone i automatycznie chronione może zostać zapisany, skopiowane i drukowana.
+Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i musi zostać uwierzytelniony adresatów. Następnie odbiorcy mają wszystkie prawa użytkowania, z wyjątkiem **Zapisz jako, Eksportuj** i **Pełna kontrola**. Ta kombinacja prawa użytkowania oznacza, że adresaci nie obowiązują żadne ograniczenia, z wyjątkiem tego, że nie będą oni mogli usunąć ochronę. Na przykład adresat można skopiować z wiadomości e-mail, wydrukować go i przesyła je. 
+
+Podobnie, niechronionej [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) dołączonych do wiadomości e-mail dziedziczą tych samych uprawnień. Te dokumenty są chronione automatycznie i może można je zapisać, edytować, skopiować i drukowanymi przez adresatów. Po zapisaniu dokumentu przez adresata, aby można było zapisać nową nazwę i inny format. Jednak tylko formatów plików, które obsługują ochrony dostępnych tak, aby nie można zapisać dokumentu bez ochrony oryginalnego. Jeśli ma prawa użytkowania inny załącznik lub załącznika nie jest obsługującym tę ochronę dziedziczone dokumentu pakietu Office, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, wymaganych dla pliku.
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Wystawca usługi Rights Management i właściciel usługi Rights Management
 

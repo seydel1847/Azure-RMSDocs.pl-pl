@@ -1,24 +1,24 @@
 ---
-title: "Konfigurowanie etykiety usługi Azure Information Protection w celu zastosowania ochrony"
-description: "Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić po skonfigurowaniu etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management."
+title: Konfigurowanie etykiety usługi Azure Information Protection w celu zastosowania ochrony
+description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić po skonfigurowaniu etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: d27dcff090aa33cb5c7a3bcb6641ac635ed8a104
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
->*Dotyczy: Azure Information Protection*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Najbardziej poufne dokumenty i wiadomości e-mail można chronić przy użyciu usługi Rights Management. Ta usługa używa zasad szyfrowania, tożsamości i autoryzacji w celu zapobieżenia utracie danych. Ochrona jest stosowana etykietą, która jest skonfigurowana do używania ochrony usługi Rights Management dla dokumentów i wiadomości e-mail i użytkowników można również wybrać **nie przesyłaj dalej** przycisku w programie Outlook. 
 
@@ -63,7 +63,9 @@ Program Exchange nie ma umożliwiać zarządzania prawami do informacji (IRM), z
         
         Ochronę wcześniej skonfigurowane ustawienia są przechowywane jako szablon zarchiwizowane ochrony i pojawi się ponownie po zmianie opcji z powrotem do **Chroń**. Nie ma tego szablonu w portalu Azure, ale w razie potrzeby można nadal zarządzać szablonu, za pomocą [PowerShell](configure-templates-with-powershell.md). Oznacza to zachowanie, że zawartość pozostaje dostępna, jeśli ma ona tej etykiety z ustawieniami wcześniej zastosowana ochrona.
     
-    - **Chroń**: wybierz tę opcję, aby zastosować ochronę, a następnie przejdź do kroku 5.
+    - **Ochrona**: Wybierz tę opcję, aby zastosować ochronę, a następnie przejdź do kroku 5, aby skonfigurować ustawienia ochrony.
+    
+    Uwaga: Na tym etapie bez dalszej konfiguracji można zapisać nowej etykiety. Jeśli to zrobisz, etykiety jest skonfigurowany do stosowania ochrony w taki sposób, że tylko osoby, która ma zastosowanie etykiety można otworzyć dokument lub wiadomość e-mail bez żadnych ograniczeń użycia. W niektórych przypadkach może to być wymagane wyniku, dzięki czemu użytkownik może zapisać plik w dowolnej lokalizacji i mieć pewność, że tylko mogą otwierać go. Jeśli ten wynik jest zgodna z wymaganiami i innych użytkowników nie muszą współpracować nad chronioną zawartością, przejdź proste do kroku 12 zamiast krok 5.
     
     - **Usuń ochronę**: Wybierz tę opcję, aby usunąć ochronę, jeśli jest chroniony dokument lub wiadomość e-mail. Następnie przejdź do kroku 11.
         
@@ -229,8 +231,9 @@ Nowi użytkownicy, które można dodać będzie w stanie otwarte dokumenty i wia
 Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik.
 
 Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+
 > [!NOTE]
-> Exchange Online wprowadza nową opcję [tylko Szyfruj](configure-usage-rights.md#encrypt-only-option-for-emails). Ta opcja nie jest dostępna dla konfiguracji etykiety.
+> Exchange Online wprowadza nową opcję [tylko Szyfruj](configure-usage-rights.md#encrypt-only-option-for-emails). Ta opcja nie jest dostępna dla konfiguracji etykiety. Jednak służy w tym przykładzie można skonfigurować etykietę przy użyciu tych samych praw użytkowania.
 
 Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego samego użytkowników określonych dla tej konfiguracji etykiety. Ponieważ użytkownicy mogą należeć do grupy i mieć więcej niż jeden adres e-mail, adresu e-mail, dlatego nie ma zgodny z adresem e-mail określ uprawnienia. Jednak określenie taki sam adres e-mail jest najprostszym sposobem, aby upewnić się, że odbiorcy będą pomyślnie uprawnienia. Aby uzyskać więcej informacji na temat jak użytkownicy są uprawnieni do uprawnień, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md). 
 
@@ -242,9 +245,11 @@ Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego
     
     Powtórz ten krok w celu określenia dodatkowych użytkowników, którzy powinni mieć te same uprawnienia.
 
-4. Dla **wybierz uprawnienia z ustawienie wstępne**, wybierz pozycję **współwłaściciel**, **Współautor**, **Weryfikacja**, lub **niestandardowy**wybierz uprawnienia, które chcesz udzielić. 
+4. Dla **wybierz uprawnienia z ustawienie wstępne**, wybierz pozycję **współwłaściciel**, **Współautor**, **Weryfikacja**, lub **niestandardowy**wybierz uprawnienia, które chcesz udzielić.
     
-    Uwaga: Nie należy wybierać **podglądu** dla wiadomości e-mail i wybranie **niestandardowy**, upewnij się, że obejmuje **Edytuj i zapisuj**. 
+    Uwaga: Nie należy wybierać **podglądu** dla wiadomości e-mail i wybranie **niestandardowy**, upewnij się, że obejmuje **Edytuj i zapisuj**.
+    
+    Aby wybrać te same uprawnienia, które pasują do nowych **tylko Szyfruj** usługi Exchange Online, wybierz opcję **niestandardowy**. Następnie wybierz wszystkie uprawnienia, z wyjątkiem **Zapisz jako, Eksportuj (EKSPORTUJ)** i **pełnej kontroli (właściciela)**.
 
 5. Aby określić dodatkowych użytkowników, którzy powinni mieć inne uprawnienia, powtórz kroki 3 i 4.
 

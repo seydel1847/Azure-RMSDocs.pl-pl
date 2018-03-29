@@ -1,27 +1,27 @@
 ---
-title: "Często zadawane pytania dotyczące usługi Azure RMS — AIP"
-description: "Niektóre często zadawane pytania dotyczące usługi ochrony danych Azure Rights Management (Azure RMS) z usługi Azure Information Protection."
+title: Często zadawane pytania dotyczące usługi Azure RMS — AIP
+description: Niektóre często zadawane pytania dotyczące usługi ochrony danych Azure Rights Management (Azure RMS) z usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bf640c7faf6bcd5ce7467547095b44f09e72fa8c
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: b1968f277ca7c9237487d4d767b8a85eb15a9331
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Masz pytanie dotyczące usługi ochrony danych Azure Rights Management z usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
 
@@ -144,7 +144,7 @@ Aby uzyskać listę rozszerzeń nazw plików, które są natywnie obsługiwane p
 
 ## <a name="how-do-i-configure-a-mac-computer-to-protect-and-track-documents"></a>Jak skonfigurować komputer Mac, aby chronić i śledzić dokumenty?
 
-Najpierw upewnij się, że zainstalowano pakiet Office dla komputerów Mac przy użyciu linku instalacji oprogramowania https://portal.office.com. Aby uzyskać pełne instrukcje, zobacz temat [Pobieranie i instalacja lub ponowna instalacja usługi Office 365 lub pakietu Office 2016 na komputerach PC lub Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658).
+Najpierw upewnij się, że zainstalowano pakietu Office dla komputerów Mac przy użyciu łącza instalacji oprogramowania z https://portal.office.com. Aby uzyskać pełne instrukcje, zobacz temat [Pobieranie i instalacja lub ponowna instalacja usługi Office 365 lub pakietu Office 2016 na komputerach PC lub Mac](https://support.office.com/en-us/article/Download-and-install-or-reinstall-Office-365-or-Office-2016-on-a-PC-or-Mac-4414EAAF-0478-48BE-9C42-23ADC4716658).
 
 Otwórz program Outlook i utwórz profil przy użyciu konta służbowego usługi Office 365. Następnie utwórz nową wiadomość i wykonaj następujące czynności w celu skonfigurowania pakietu Office, tak aby chronić dokumenty i wiadomości e-mail przy użyciu usługi Azure Rights Management:
 
@@ -156,7 +156,7 @@ Otwórz program Outlook i utwórz profil przy użyciu konta służbowego usługi
 
 Aby chronić wiadomość e-mail lub dokument: na karcie **Opcje** kliknij pozycję **Uprawnienia** i wybierz opcję lub szablon chroniący wiadomość e-mail lub dokument.
 
-Śledzenie dokumentu po zapewnieniu ochrony: na komputerze z systemem Windows, na którym zainstalowano klienta usługi Azure Information Protection, zarejestruj dokument w witrynie śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md). Na komputerze Mac można teraz użyć przeglądarki internetowej, aby przejść do witryny śledzenia dokumentu (https://track.azurerms.com) w celu śledzenia i odwoływania dokumentu.
+Śledzenie dokumentu po zapewnieniu ochrony: na komputerze z systemem Windows, na którym zainstalowano klienta usługi Azure Information Protection, zarejestruj dokument w witrynie śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](../rms-client/client-track-revoke.md). Z komputera Mac, można teraz używać przeglądarki sieci web można przejść do witryny śledzenia dokumentów (https://track.azurerms.com) śledzenia i odwoływania tego dokumentu.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Czy po otwarciu dokumentu pakietu Office chronionego przez usługę RMS skojarzony plik tymczasowy jest również chroniony przez usługę RMS?
 Nie. W tym scenariuszu skojarzony plik tymczasowy nie zawiera danych z oryginalnego dokumentu, tylko dane wprowadzone przez użytkownika w czasie, w którym ten oryginalny plik był otwarty. W przeciwieństwie do oryginalnego pliku plik tymczasowy oczywiście nie jest przeznaczony do udostępniania i pozostanie na urządzeniu, chroniony przez lokalne zabezpieczenia, takie jak funkcja BitLocker i system szyfrowania plików.

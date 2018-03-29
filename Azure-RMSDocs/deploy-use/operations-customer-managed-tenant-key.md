@@ -1,26 +1,26 @@
 ---
-title: "Zarządzane przez klienta w Efektywnych operacje cyklu życia klucza dzierżawy"
-description: "Informacji na temat operacji cyklu życia, które są istotne, jeśli zarządzasz kluczem dzierżawy usługi Azure Information Protection (Przynieś własny klucz lub BYOK, scenariusz)."
+title: Zarządzane przez klienta w Efektywnych operacje cyklu życia klucza dzierżawy
+description: Informacji na temat operacji cyklu życia, które są istotne, jeśli zarządzasz kluczem dzierżawy usługi Azure Information Protection (Przynieś własny klucz lub BYOK, scenariusz).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70d34253300e2bef442cdd7d8cf2c06ac8a9fd88
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: 16ded8f9bbe06069e1fefb925166af491d1b0caa
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cyklu życia klucza dzierżawy
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Jeśli zarządzasz kluczem dzierżawy usługi Azure Information Protection (Przynieś własny klucz lub BYOK, scenariusz), użyj poniższych sekcji, aby uzyskać więcej informacji na temat operacji cyklu życia związanych z tą topologią.
 

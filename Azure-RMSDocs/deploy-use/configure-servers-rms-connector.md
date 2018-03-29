@@ -1,26 +1,26 @@
 ---
-title: "Konfigurowanie serwerów na potrzeby łącznika usługi Rights Management — AIP"
-description: "Informacje ułatwiające skonfigurowanie serwerów lokalnych, które będą używać łącznika usługi Azure Rights Management (RMS). Te procedury obejmują krok 5 z sekcji Wdrażanie łącznika usługi Azure Rights Management."
+title: Konfigurowanie serwerów na potrzeby łącznika usługi Rights Management — AIP
+description: Informacje ułatwiające skonfigurowanie serwerów lokalnych, które będą używać łącznika usługi Azure Rights Management (RMS). Te procedury obejmują krok 5 z sekcji Wdrażanie łącznika usługi Azure Rights Management.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
-ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
+ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
->*Dotyczy: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012, Windows Server 2012 R2*
 
 
 Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -214,7 +214,7 @@ Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną we
 
 3.  Włącz IRM w programie SharePoint. Aby uzyskać więcej informacji, zobacz temat opisujący [konfigurowanie zarządzania prawami do informacji (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx) w bibliotece programu SharePoint.
 
-    Podczas wykonywania tych instrukcji należy skonfigurować program SharePoint do korzystania z łącznika, określając opcję **Użyj tego serwera usług RMS**, a następnie wprowadzić skonfigurowany wcześniej adres URL łącznika ze zrównoważonym obciążeniem. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład, jeśli nazwą łącznika jest https://connector.contoso.com, konfiguracja będzie wyglądać tak, jak na poniższej ilustracji:
+    Podczas wykonywania tych instrukcji należy skonfigurować program SharePoint do korzystania z łącznika, określając opcję **Użyj tego serwera usług RMS**, a następnie wprowadzić skonfigurowany wcześniej adres URL łącznika ze zrównoważonym obciążeniem. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład jeśli nazwą łącznika jest https://connector.contoso.com, konfiguracja będzie wyglądać podobnie jak na poniższej ilustracji:
 
     ![Konfigurowanie serwera programu SharePoint dla łącznika usługi RMS](../media/AzRMS_SharePointConnector.png)
 

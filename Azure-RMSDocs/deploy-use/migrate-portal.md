@@ -1,26 +1,26 @@
 ---
 title: Migracja z klasycznego portalu Azure - Efektywnych
-description: "Zadania administracyjne w skrócie w portalu Azure, używany w klasycznym portalu Azure"
+description: Zadania administracyjne w skrócie w portalu Azure, używany w klasycznym portalu Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: bdf319e29e469ccb420a2979f43f5beb9f194947
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które są używane z klasycznego portalu Azure
 
->*Dotyczy: Azure Information Protection, Office 365*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Używany do klasycznego portalu Azure do zarządzania usługą Azure Rights Management i potrzebują niektóre pomocy przechodzenia do portalu Azure?
 

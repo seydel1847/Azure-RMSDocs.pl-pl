@@ -1,26 +1,28 @@
 ---
-title: "Zadania, które były wykonywane w aplikacji RMS sharing — AIP"
-description: "Instrukcje dla użytkowników, którzy zrezygnowali z korzystania z aplikacji RMS sharing na rzecz klienta usługi Azure Information Protection."
+title: Zadania, które były wykonywane w aplikacji RMS sharing — AIP
+description: Instrukcje dla użytkowników, którzy zrezygnowali z korzystania z aplikacji RMS sharing na rzecz klienta usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dc0345ed289ecc95643c08ad86c1757848026826
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 58b0ab62b260e407aa9ae6a36b4a063fe147889b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Podręcznik użytkownika: Zadania, które pozwala wykonać za pomocą aplikacji RMS sharing
 
-Czy należysz do grona osób, które przeszły ostatnio z aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management (znanej także jako „RMS sharing”) na klienta usługi Azure Information Protection? 
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>
+>Czy należysz do grona osób, które przeszły ostatnio z aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management (znanej także jako „RMS sharing”) na klienta usługi Azure Information Protection? 
 
 Poniższe informacje ułatwią Ci szybkie rozpoczęcie korzystania z aplikacji.
 

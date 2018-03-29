@@ -1,26 +1,26 @@
 ---
-title: "Używanie środowiska PowerShell z klientem usługi Azure Information Protection"
-description: "Instrukcje i informacje dla administratorów dotyczące zarządzania klientem usługi Azure Information Protection przy użyciu środowiska PowerShell."
+title: Używanie środowiska PowerShell z klientem usługi Azure Information Protection
+description: Instrukcje i informacje dla administratorów dotyczące zarządzania klientem usługi Azure Information Protection przy użyciu środowiska PowerShell.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
->*Dotyczy: usługi Active Directory Rights Management, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Polecenia programu PowerShell są instalowane automatycznie podczas instalowania klienta Azure Information Protection. Dzięki temu można zarządzać klientem przy użyciu poleceń, które można umieścić w skryptów do automatyzacji.
 
@@ -238,9 +238,11 @@ Gdy używasz konta głównego usługi do ochrony plików i pobierania szablonów
 
 1. Ponownie uruchom polecenie cmdlet Get-AadrmConfiguration i zanotuj wartości parametrów **CertificationExtranetDistributionPointUrl** i **LicensingExtranetDistributionPointUrl**.
 
-2. Na każdym komputerze, na którym będą uruchamiane polecenia cmdlet modułu AzureInformationProtection, otwórz edytor rejestru i przejdź do: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC`
+2. Na każdym komputerze, na którym należy uruchomić następujące polecenia cmdlet AzureInformationProtection Otwórz Edytor rejestru.
 
-3. Jeśli nie widzisz klucza **ServiceLocation**, utwórz go, tak aby ścieżka rejestru miała postać **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation**
+3. Przejdź do następującej ścieżki: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation`. 
+    
+    Jeśli nie widzisz **MSIPC** klucza lub **ServiceLocation** kluczy, utwórz je.
 
 4. Dla klucza **ServiceLocation** utwórz dwa klucze (o ile nie istnieją) o nazwach **EnterpriseCertification** i **EnterprisePublishing**. 
     

@@ -1,26 +1,26 @@
 ---
-title: "Usuwanie ochrony za pomocą aplikacji RMS sharing — AIP"
-description: "Instrukcje dotyczące usuwania ochrony z pliku, który był wcześniej chroniony za pomocą aplikacji RMS sharing."
+title: Usuwanie ochrony za pomocą aplikacji RMS sharing — AIP
+description: Instrukcje dotyczące usuwania ochrony z pliku, który był wcześniej chroniony za pomocą aplikacji RMS sharing.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e467557f8e22c1bb41fdab07ae6335c85bdc2987
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Aby usunąć ochronę z pliku, który był wcześniej chroniony za pomocą aplikacji RMS sharing, skorzystaj z opcji **Usuń ochronę** w Eksploratorze plików.
 
