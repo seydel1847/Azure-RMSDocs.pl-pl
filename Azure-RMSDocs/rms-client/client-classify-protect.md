@@ -4,7 +4,7 @@ description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 49518c1324ad541c4880c7930b6e661a2aba46d8
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0d5f4e081ea68f3e8c9ddcb46409370b486f6210
+ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -79,7 +79,7 @@ Możliwe przyczyny:
 
 ### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
 
-Jeśli dozwolone przez administratora, można określić własne ustawienia ochrony dokumentów zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety.
+Jeśli dozwolone przez administratora, można określić własne ustawienia ochrony dokumentów zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety. Ta opcja jest przeznaczony do dokumentów i nie jest dostępna w programie Outlook.
 
 1. Na karcie **Narzędzia główne**, w grupie **Ochrona**, kliknij kolejno pozycje **Chroń** > **Uprawnienia niestandardowe**:
 
