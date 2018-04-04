@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 47b7a82ba7dc6ba7dc3fc21ed114452578b62593
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -201,6 +201,20 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 - Klucz: **OutlookDefaultLabel**
 
 - Wartość: \< **identyfikator etykiety**> lub **None**
+
+## <a name="turn-off-classification-running-continuously-in-the-background"></a>Wyłącz klasyfikacji stale uruchomione w tle
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Po skonfigurowaniu tego ustawienia, wersja klienta usługi Azure Information Protection okresowo nie sprawdza dokumenty reguł warunku, które określisz. Zamiast tego są stosowane automatycznej i zalecanej etykiety [tak samo jak wersji ogólnodostępnej klienta usługi Azure Information Protection](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied). To ustawienie może być wymagane ze względu na wydajność.
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz: **RunPolicyInBackground**
+
+- Wartość: **Fałsz**
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 

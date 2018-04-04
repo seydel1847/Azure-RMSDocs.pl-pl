@@ -4,7 +4,7 @@ description: Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/15/2017
+ms.date: 03/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 20ec9893bba090b1d17d67b06fb614a2baee3403
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
@@ -49,6 +49,7 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |ochrona informacji|Pojęcie skracane czasami do *IP*.<br /><br />Powszechnie stosowany w branży ogólny termin odnoszący się do ochrony danych i plików przed nieautoryzowanym dostępem, nawet po opuszczeniu przez dane i pliki granic organizacji w wyniku przesłania dokumentu za pośrednictwem poczty e-mail lub jego udostępnienia. Usługa Microsoft Azure Information Protection stanowi przykład rozwiązania zapewniającego ochronę informacji (IP).|
 |Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z nazwami usług Office, takimi jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi usług Microsoft Rights Management.|
 |IRM|Zobacz *Information Rights Management (zarządzanie prawami do informacji)*.|
+|Szyfrowanie wiadomości usługi Office|Nazwa często skracana do *OME*.<br /><br />Natywna Integracja z usługą Azure Rights Management do zapewnienia tej samej ochrony poczty e-mail dla użytkowników wewnętrznych i zewnętrznych, automatyczne odświeżanie szablonów i obsługę dostarczania własnego klucza (BYOK) mają nowe możliwości szyfrowanie wiadomości usługi Office 365 Scenariusz. W poprzedniej implementacji OME został zaprojektowany do adresatów zewnętrznych tylko wymagane reguły przepływu poczty i nie obsługuje funkcji BYOK.|
 |MSDRM|Czasami występuje jako odniesienie do klienta usług RMS w wersji 1.0, która została zastąpiona nowszą wersją klienta, MSIPC. Wspomniany starszy klient obsługuje aplikacje, które są tworzone z użyciem zestawu RMS SDK 1.0, pakiety Office 2010 i Office 2007 oraz aplikacje Exchange 2010 i Exchange 2013, SharePoint 2010 i SharePoint 2007.|
 |MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpiła starszą wersję klienta RMS, MSDRM. Nowszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, program SharePoint 2013, aplikację RMS sharing i klienta usługi Azure Information Protection.|
 |ochrona natywna|Poziom ochrony dostępny we wszystkich aplikacjach z obsługą usług, który uniemożliwia otwarcie pliku przez osoby nieupoważnione i który może również wymuszać bardziej rygorystyczne zasady, np. tylko do odczytu, ale nie do drukowania. Ponadto ochrona ta jest powiązana z plikiem, w związku z czym plik jest nią objęty nawet wtedy, gdy zostaje przekazany innym osobom lub zapisany w ogólnodostępnej lokalizacji.|

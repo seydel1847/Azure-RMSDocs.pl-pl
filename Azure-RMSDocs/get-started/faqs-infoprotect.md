@@ -4,7 +4,7 @@ description: Masz pytanie związane z usługą Azure Information Protection, kt�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 543abf11ce2d107c3d2a52a24c6c2a474b80cfbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -44,10 +44,6 @@ Z rolą administratora ochrony informacji nowo wprowadzonych to pytanie jest ter
 
 Jeśli w trakcie instalacji [klienta usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018) wybrano opcję zainstalowania zasad demonstracyjnych, zalogowanie się do portalu nie jest konieczne do wyświetlenia i wypróbowania funkcji etykietowania. Zasada demonstracyjna instaluje lokalnie zasadę domyślną usługi Azure Information Protection umożliwia próby etykietowania dokumentów i wiadomości e-mail, ale nie można zmienić ani dodanie nowej etykiety bez rejestrowania się w portalu Azure. 
 
-## <a name="which-options-in-the-azure-portal-are-p2"></a>Które opcje w witrynie Azure Portal to P2?
-
-Opcje w witrynie Azure Portal, które wymagają usługi **Azure Information Protection Premium 2** (P2), mają teraz komunikat podręczny z informacjami umożliwiający ich zidentyfikowanie. Aby uzyskać więcej informacji o tym, które funkcje są uwzględnione w subskrypcjach P1 i P2, zobacz [listę funkcji](https://www.microsoft.com/cloud-platform/azure-information-protection-features) w witrynie usługi Azure Information Protection.
-
 ## <a name="can-a-file-have-more-than-one-classification"></a>Czy plik może mieć więcej niż jedną klasyfikację?
 
 Użytkownicy mogą jednocześnie wybrać tylko jedną etykietę dla każdego dokumentu lub wiadomości e-mail, co skutkuje często utworzeniem tylko jednej klasyfikacji. Jednak jeśli użytkownicy wybierają sublabel, faktycznie dotyczy dwóch etykiet w tym samym czasie; Etykieta głównej i dodatkowej etykiety. Przy użyciu sublabels, plik może mieć dwie klasyfikacje, które oznaczają relacji parent\child dodatkowy poziom kontroli.
@@ -60,7 +56,7 @@ Gdy używasz sublabels nie skonfigurować oznaczenia wizualne, ochronę i warunk
 
 Mimo że [ustawienie zasad](../deploy-use/configure-policy-settings.md) który wymaga od użytkowników do stanu Dlaczego obniżenia etykiety klasyfikacji, usuwanie etykietę, lub usunięcie ochrony, to ustawienie nie zapobiega te akcje. Aby uniemożliwić użytkownikom usuwanie lub zmiana etykiety, musi już chronione zawartości i uprawnienia ochrony nie Przyznaj użytkownikowi, eksportu lub Pełna kontrola [prawa użytkowania](../deploy-use/configure-usage-rights.md). 
 
-# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
 Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, załączniki te nie odziedziczą tej samej etykiety. Załączniki pozostaną bez etykiety lub zachowają oddzielnie przydzieloną etykietę. Jednak jeśli etykieta wiadomości e-mail zawiera ochronę, ochrona ta jest stosowana także do załączników.
 

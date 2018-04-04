@@ -4,7 +4,7 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2018
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42d3437b204f97b5d9caa4a2fa67b60fc1a570e4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 37619ad71fea842617556219c1684a3e837c3cc7
+ms.sourcegitcommit: 3af39b88d321d75038caad266e906f6e622011d9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -37,7 +37,7 @@ Użytkownik musi mieć prawidłową nazwę użytkownika i hasło dostępu do zaw
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>Jaka subskrypcja jest potrzebna do korzystania z usługi Azure Information Protection i jakie funkcje obejmuje ta subskrypcja?
 Zapoznaj się z listą informacji i funkcji subskrypcji na [cennik usługi Azure Information Protection](https://azure.microsoft.com/en-us/pricing/details/information-protection) strony. 
 
-Jeśli masz subskrypcję usługi Office 365, która obejmuje Rights Management, Pobierz [arkusz danych licencjonowania usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf), który zawiera także niektóre często zadawane pytania dotyczące licencjonowania.
+Jeśli masz subskrypcję usługi Office 365 obejmującą usługę Azure Rights Management do ochrony danych, Pobierz [arkusz danych licencjonowania usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf), który zawiera także niektóre często zadawane pytania dotyczące licencjonowania.
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Czy klient usługi Azure Information Protection służy wyłącznie do obsługi subskrypcji, które obejmują klasyfikowanie i etykietowanie?
 
@@ -51,7 +51,7 @@ Jeśli obecnie używasz aplikacji dla systemu Windows do udostępniania usługi 
 
 Administratorzy globalni dla usługi Office 365 lub dzierżawy usługi Azure AD mogą oczywiście uruchamiać wszystkie zadania administracyjne dla usługi Azure Information Protection. Jednak jeśli chcesz przypisać uprawnienia administracyjne do innych użytkowników, dostępne są następujące opcje:
 
-- **Administrator ochrony informacji**: rola administratora tej usługi Azure Active Directory pozwala administratorowi, skonfiguruj wszystkie aspekty usługi Azure Information Protection, ale nie do innych usług. Administrator z tą rolą można aktywować i dezaktywowanie usługi Azure Rights Management ochrony, skonfigurować ustawienia ochrony i etykiety i skonfigurować zasady usługi Azure Information Protection. Ponadto administrator z tą rolą mogą uruchomić wszystkie [poleceń cmdlet programu PowerShell w AADRM module](../deploy-use/administer-powershell.md). 
+- **Administrator ochrony informacji**: rola administratora tej usługi Azure Active Directory pozwala administratorowi, skonfiguruj wszystkie aspekty usługi Azure Information Protection, ale nie do innych usług. Administrator z tą rolą można aktywować i dezaktywowanie usługi Azure Rights Management ochrony, skonfigurować ustawienia ochrony i etykiety i skonfigurować zasady usługi Azure Information Protection. Ponadto administrator z tą rolą można uruchomić wszystkie polecenia cmdlet programu PowerShell dla [klienta Azure Information Protection](../rms-client/client-admin-guide-powershell.md) i z [AADRM module](../deploy-use/administer-powershell.md). 
     
     Aby przypisać użytkownika do roli administratora, zobacz [przypisać użytkownika do ról administratora w usłudze Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
