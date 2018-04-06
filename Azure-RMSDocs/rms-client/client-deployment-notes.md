@@ -4,7 +4,7 @@ description: Informacje dotyczące ponownej instalacji, obsługiwanych systemów
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df86d75cd7337fa4642a9b758312923a3577325f
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="rms-client-deployment-notes"></a>Uwagi dotyczące wdrażania klienta usługi RMS
 
@@ -112,7 +112,7 @@ Za pomocą kluczy rejestru systemu Windows można ustawić lub zmodyfikować nie
 
 |Zadanie|Ustawienia|
 |--------|------------|
-|Jeśli klient jest w wersji 1.03102.0221 lub nowszej:<br /><br />**Aby kontrolować zbieranie danych aplikacji**|**Ważne**: Aby szanować prywatność użytkowników, przed włączeniem funkcji zbierania danych administrator musi poprosić użytkownika o zgodę.<br /><br />Jeśli włączysz funkcję zbierania danych, zgadzasz się na wysyłanie danych przez Internet do firmy Microsoft. Firma Microsoft używa tych danych do udostępniania i ulepszania jakości, bezpieczeństwa i integralności produktów firmy Microsoft i usług. Na przykład firma Microsoft analizuje wydajności i niezawodności, takich jak funkcje używasz, jak szybko odpowiadać funkcji, wydajności urządzeń interakcje interfejsu użytkownika i wszelkie problemy, które występują z produktem. Dane są także informacje o konfiguracji oprogramowania, takie jak oprogramowanie, które są aktualnie uruchomione i adres IP.<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**Wartość:** 0 dla aplikacji zdefiniowanej (domyślnie) za pomocą właściwości środowiska [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx), 1 dla opcji Wyłączone, 2 dla opcji Włączone<br /><br />**Uwaga**: Jeśli z 32-bitowej aplikacji MSIPC działa w 64-bitowej wersji systemu Windows, lokalizacja jest HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC.|
+|Jeśli klient jest w wersji 1.03102.0221 lub nowszej:<br /><br />**Aby kontrolować zbieranie danych aplikacji**|**Ważne**: Aby szanować prywatność użytkowników, przed włączeniem funkcji zbierania danych administrator musi poprosić użytkownika o zgodę.<br /><br />Jeśli włączysz funkcję zbierania danych, zgadzasz się na wysyłanie danych przez Internet do firmy Microsoft. Firma Microsoft używa tych danych do udostępniania i ulepszania jakości, bezpieczeństwa i integralności produktów firmy Microsoft i usług. Na przykład firma Microsoft analizuje wydajności i niezawodności, takich jak funkcje używasz, jak szybko odpowiadać funkcji, wydajności urządzeń interakcje interfejsu użytkownika i wszelkie problemy, które występują z produktem. Dane są także informacje o konfiguracji oprogramowania, takie jak oprogramowanie, które są aktualnie uruchomione i adres IP.<br /><br />Dla wersji 1.0.3356 lub nowszy: <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />Wersje przed 1.0.3356: <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**Wartość:** 0 dla aplikacji zdefiniowanej (domyślnie) za pomocą właściwości środowiska [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx), 1 dla opcji Wyłączone, 2 dla opcji Włączone<br /><br />**Uwaga**: Jeśli z 32-bitowej aplikacji MSIPC działa w 64-bitowej wersji systemu Windows, lokalizacja jest HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC.|
 |Tylko usługi AD RMS:<br /><br />**Aby zaktualizować lokalizację usługi przedsiębiorstwa dla komputera klienckiego**|Zaktualizuj następujące klucze rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: domyślna<br /><br />**Wartość:**\<http lub https>://*nazwa _klastra_usługi_RMS*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: domyślna<br /><br />**Wartość:** \<http lub https>://*nazwa _klastra_usługi_RMS*/_wmcs/Licensing|
 |**Aby włączyć lub wyłączyć śledzenie**|Zaktualizuj następujący klucz rejestru:<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Wartość:** 1 — włączenie śledzenia, 0 — wyłączenie śledzenia (wartość domyślna)|
 |**Aby zmienić częstotliwość odświeżania szablonów w dniach**|Następujące wartości rejestru wskazują, jak często szablony odświeżenie na komputerze użytkownika, jeśli nie ustawiono wartości TemplateUpdateFrequencyInSeconds.  Jeśli żadna z tych wartości nie zostanie ustawiona, domyślnym interwałem odświeżania aplikacji za pomocą klienta usługi RMS (wersja 1.0.1784.0) w celu pobrania szablonów będzie 1 dzień. Wcześniejsze wersje ma wartość domyślną, co 7 dni.<br /><br />**Tryb klienta:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.<br /><br />**Tryb serwera:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Wartość:** wartość całkowita określająca liczbę dni (minimum 1) między pobraniami.|

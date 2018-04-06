@@ -4,7 +4,7 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2018
+ms.date: 04/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8bf7e9400b76f32aa6b63741169e938032cd40a
-ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
+ms.openlocfilehash: 380b2f715ead6f3f8c8e497c911ff425c12424e8
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -115,7 +115,7 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
-- Nie przerywaj połączenia TLS między klientem i usługą (np. w celu przeprowadzenia inspekcji na poziomie pakietu). Spowoduje to przerwanie przypinania, że klienci usług RMS za pomocą CAs zarządzany przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
+- Nie kończ połączenia TLS Usługa klienta (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do usługi Azure Rights Management. Spowoduje to przerwanie przypinania, że klienci usług RMS za pomocą CAs zarządzany przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
     
     - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
     
