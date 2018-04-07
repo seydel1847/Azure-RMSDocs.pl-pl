@@ -1,5 +1,5 @@
 ---
-title: Klient usługi Azure Information Protection&colon; wersji wersji historii i obsługa zasad
+title: Klient usługi Azure Information Protection — wersja Historia wersji i zasady pomocy technicznej
 description: Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azure Information Protection dla systemu Windows i zrozumieć zasady cyklu pomocy technicznej.
 author: cabailey
 ms.author: cabailey
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1da6a647715389f912af5192b5b70a80f0bd35e9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
+ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
