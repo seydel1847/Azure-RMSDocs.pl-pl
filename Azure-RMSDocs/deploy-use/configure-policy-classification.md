@@ -10,11 +10,11 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 7f105b8e6d3a6f7761d195a00b15adb2d33cd592
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -30,7 +30,7 @@ Przykład monitu w przypadku konfigurowania warunki do zastosowania etykiety jak
 
 ![Wykrywanie i zalecenia usługi Azure Information Protection](../media/info-protect-recommend-calloutsv2.png)
 
-W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosować zalecaną etykietę, lub zignorować zalecenie przez wybranie **odrzucenia**.
+W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosować zalecaną etykietę, lub zignorować zalecenie przez wybranie **odrzucenia**. Jeśli użytkownik zdecydował się zamknąć zalecenie warunek nadal mają zastosowanie, gdy dokument zostanie otwarty następnym razem, ponownie wyświetlone zalecenie etykiety. 
 
 > [!IMPORTANT]
 >Nie należy konfigurować etykiety klasyfikacji automatycznej i uprawnienia użytkownika. Opcja uprawnienia zdefiniowane przez użytkownika jest [ustawienie ochrony](configure-policy-protection.md) który umożliwia użytkownikom określanie, kto powinien mieć uprawnienia.

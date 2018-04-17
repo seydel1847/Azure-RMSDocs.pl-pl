@@ -12,25 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione przez usługę Azure Information Protection. Jeśli Ci użytkownicy nie może zostać uwierzytelnione przez usługę Azure Active Directory i ich organizacja nie ma zarządzania prawami dostępu w usłudze Active Directory (AD RMS), tej bezpłatnej tworzenia konta usługi można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W związku z tym te użytkownicy mogą teraz uwierzytelniania przy użyciu adresu e-mail firmy i następnie odczytywać pliki chronione na komputerach lub urządzeniach przenośnych.
+Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione przez usługę Azure Information Protection. Jeśli Ci użytkownicy nie może zostać uwierzytelnione przez usługę Azure Active Directory, tej bezpłatnej tworzenia konta usługi można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W związku z tym te użytkownicy mogą teraz uwierzytelniania przy użyciu adresu e-mail firmy i następnie odczytywać pliki chronione na komputerach lub urządzeniach przenośnych.
 
-Usługa RMS dla użytkowników indywidualnych korzysta z subskrypcji samoobsługowej usługi Azure Active Directory. Jeśli użytkownicy zostały utworzone konta dla organizacji, administrator w organizacji, można potwierdzić prawa własności do i przejąć kontrolę nad ich kont. 
+Usługa RMS dla użytkowników indywidualnych korzysta z subskrypcji samoobsługowej usługi Azure Active Directory. Jeśli użytkownicy utworzył kont dla Twojej organizacji za pomocą tej subskrypcji, administrator w organizacji, można potwierdzić prawa własności i [przejąć kontrolę nad ich kont](/active-directory/domains-admin-takeover#external-admin-takeover). 
 
 
 > [!NOTE]
 > Bezpłatna subskrypcja jest jedną opcję, aby zapewnić, że upoważnione osoby spoza organizacji, zawsze może odczytywać pliki, chronione w organizacji. Inną możliwością jest wykonanie e-mail dokumentów przy użyciu [szyfrowanie wiadomości usługi Office 365 z nowych funkcji](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). To rozwiązanie poczty e-mail działa dla wszystkich adresów e-mail na wszystkich urządzeniach i jest zalecanym sposobem bezpieczne udostępnianie informacji i wyświetlić dokumenty pakietu Office pocztą e-mail do osób spoza organizacji. 
 
-Aby zarejestrować bezpłatne konto, przejdź do [strony Microsoft Azure Information Protection](https://aka.ms/rms-signup)i podaj służbowy adres e-mail. Otrzymasz wiadomość e-mail w odpowiedzi od firmy Microsoft, a następnie ukończyć proces tworzenia konta, wprowadzając szczegóły, aby utworzyć konto. 
+Aby zarejestrować bezpłatne konto, użytkownicy, przejdź do [strony Microsoft Azure Information Protection](https://aka.ms/rms-signup)i podaj swój służbowy adres e-mail. Otrzymają wiadomość e-mail w odpowiedzi od firmy Microsoft, a następnie można zakończyć proces tworzenia wprowadzając wymagane szczegóły konta. 
 
 Po utworzeniu konta ostatnia strona zawiera łącza do klienta usługi Azure Information Protection lub przeglądarki dla różnych urządzeń, link do podręcznika użytkownika i link do bieżącej listy aplikacje, które natywnie obsługują ochrony usługi Rights Management. 
 

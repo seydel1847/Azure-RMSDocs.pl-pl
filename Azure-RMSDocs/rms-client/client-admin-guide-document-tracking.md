@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów dotyczące konfigurowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 04b6f65495c6b7251d000ff438ecab20c3a44db7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e24d91f04dc3186a9451546c8a962c49129f326b
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 03/28/2018
 
 Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Śledzenia dokumentów dostarcza użytkownikom i administratorom informacji o dostępach do chronionego dokumentu i w razie potrzeby umożliwia odwołanie śledzonego dokumentu.
 
-## <a name="privacy-controls-for-your-document-tracking-site"></a>Kontrola prywatności w witrynie śledzenia dokumentów
+## <a name="using-powershell-to-manage-the-document-tracking-site"></a>Zarządzanie witryny śledzenia dokumentów za pomocą programu PowerShell
+
+Poniższe sekcje zawierają informacje dotyczące sposobu zarządzania witryny śledzenia dokumentów za przy użyciu programu PowerShell. Aby uzyskać instrukcje instalacji modułu programu PowerShell, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+
+Aby uzyskać więcej informacji na temat poszczególnych poleceń cmdlet należy użyć linków dostępnych.
+
+### <a name="privacy-controls-for-your-document-tracking-site"></a>Kontrola prywatności w witrynie śledzenia dokumentów
 
 Jeśli wyświetlanie informacji o śledzeniu dokumentów jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć śledzenie dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). 
 
-To polecenie cmdlet powoduje wyłączenie dostępu do witryny śledzenia, tak aby żaden użytkownik w organizacji nie mógł śledzić ani odwołać dostępu do chronionych dokumentów. W dowolnym momencie możesz ponownie włączyć śledzenie dokumentów za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) i sprawdzić, czy śledzenie dokumentów jest aktualnie włączone, czy wyłączone, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature). Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management (AADRM) dla programu PowerShell. 
+To polecenie cmdlet powoduje wyłączenie dostępu do witryny śledzenia, tak aby żaden użytkownik w organizacji nie mógł śledzić ani odwołać dostępu do chronionych dokumentów. W dowolnym momencie możesz ponownie włączyć śledzenie dokumentów za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) i sprawdzić, czy śledzenie dokumentów jest aktualnie włączone, czy wyłączone, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature). Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersji **2.3.0.0** AADRM modułu środowiska PowerShell. 
 
 Gdy witryna śledzenia dokumentów jest włączona, domyślnie są udostępniane informacje takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów, czas podjęcia takich prób oraz lokalizacja tych osób. Takie informacje mogą być przydatne do określenia sposobu korzystania z udostępnionych dokumentów oraz ustalenia, czy dokumenty powinny zostać odwołane w przypadku wystąpienia podejrzanych działań. Jednak z uwagi na konieczność zachowania prywatności może okazać się konieczne wyłączenie informacji dotyczących niektórych lub wszystkich użytkowników. 
 
@@ -40,11 +46,19 @@ Podczas używania tej konfiguracji wszyscy użytkownicy mogą nadal używać wit
 
 To ustawienie dotyczy tylko użytkowników końcowych. Administratorzy usługi Azure Information Protection zawsze można śledzić działania wszystkich użytkowników, nawet wtedy, gdy ci użytkownicy są określane przy użyciu zestawu AadrmDoNotTrackUserGroup. Aby uzyskać więcej informacji o sposobie Administratorzy mogą śledzić dokumenty dla użytkowników, zobacz [śledzenie i odwoływanie dokumentów dla użytkowników](#tracking-and-revoking-documents-for-users) sekcji.
 
-Jeśli ta opcja nie jest już potrzebna, można użyć polecenia [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup). Aby wybiórczo usunąć użytkowników, usuń ich z grupy, pamiętając o [buforowaniu grupy](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Można sprawdzić, czy ta opcja jest obecnie używana, używając polecenia [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup). Aby uruchomić te polecenia cmdlet dla danej konfiguracji grupy, musisz mieć co najmniej wersję **2.10.0.0** modułu Azure Rights Management (AADRM) dla programu PowerShell.
 
-Aby uzyskać więcej informacji na temat każdego z tych poleceń cmdlet, należy użyć podanych linków. Aby uzyskać instrukcje instalacji modułu programu PowerShell, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+### <a name="logging-information-from-the-document-tracking-site"></a>Rejestrowanie informacji z witryny śledzenia dokumentów
 
+Jeśli masz minimalnej wersji **2.13.0.0** modułu AADRM pobierania rejestrowanie informacji z witryny śledzenia dokumentów można użyć następujących poleceń cmdlet:
 
+- [Get-AadrmTrackingLog](/powershell/module/aadrm/Get-AadrmTrackingLog)
+    
+    To polecenie cmdlet zwraca informacje o chronionych dokumentów dla określonego użytkownika, który chronionych dokumentów (Wystawca Rights Management) lub kto uzyskiwał dostęp do chronionych dokumentów. Użyj następującego polecenia cmdlet, aby odpowiedzieć na pytanie "chronionych dokumentów, czy określony użytkownik śledzić lub dostęp?"
+
+- [Get-AadrmDocumentLog](/powershell/module/aadrm/Get-AadrmDocumentLog)
+    
+    To polecenie cmdlet zwraca ochrony informacji o śledzonych dokumentów dla określonego użytkownika, jeśli użytkownik chronionych dokumentów (Wystawca Rights Management) lub będący właścicielem usługi Rights Management dla dokumentów lub chronionych dokumentów zostały skonfigurowane w celu udzielenia dostępu bezpośrednio do użytkownika. Użyj następującego polecenia cmdlet aby odpowiedzieć na pytanie "Jak są dokumenty chronione dla określonego użytkownika?"
+ 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>Docelowe adresy URL używane przez witryny śledzenia dokumentów
 
 Następujące adresy URL są używane do śledzenia dokumentów i należy zezwalać na dostęp do nich na wszystkich urządzeniach i w usługach między klientami korzystającymi z klienta usługi Azure Information Protection a Internetem. Na przykład te adresy URL należy dodać do zapór lub do zaufanych witryn, jeśli używasz programu Internet Explorer ze zwiększonymi zabezpieczeniami.

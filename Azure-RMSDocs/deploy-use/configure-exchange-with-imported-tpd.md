@@ -4,7 +4,7 @@ description: Informacje i instrukcje dla administratorów skonfigurować usług�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,30 +12,34 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e452f5ac4e3297106a54a2034d64f57d8f6d5302
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>Konfiguracja usługi IRM programu Exchange Online w przypadku zaimportowano zaufaną domenę publikacji
+# <a name="exchange-online-irm-configuration-to-import-a-trusted-publishing-domain"></a>Konfiguracja usługi IRM programu Exchange Online można zaimportować zaufaną domenę publikacji
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Użyj tych instrukcji, tylko jeśli wcześniej skonfigurowano usługi Exchange Online dla usługi IRM importując zaufaną domenę publikacji (TPD) i muszą mieć możliwość odszyfrowywania wiadomości e-mail, które wcześniej były szyfrowane.
+Użyj tych instrukcji, tylko wtedy, gdy dzierżawy nie będzie mógł korzystać z nowych funkcji szyfrowanie wiadomości usługi Office 365. Aby upewnić się, uruchom Exchange Online [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\)aspx) polecenia i zobacz, sprawdź, czy masz **AzureRMSLicensingEnabled** parametru. Jeśli widzisz ten parametr dzierżawy można użyć nowych funkcji szyfrowanie wiadomości usługi Office 365:
 
-Jeśli żadna z tych warunków nie odnoszą się do Ciebie, nie używasz tych instrukcji i zamiast tego należy użyć instrukcji z [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).
+- Jeśli **AzureRMSLicensingEnabled** ustawiono **True**, dzierżawy już korzysta z nowych funkcji szyfrowanie wiadomości usługi Office 365 i nie należy używać zgodnie z instrukcjami w następnej sekcji.
 
-## <a name="exchange-online-irm-configuration-if-you-have-an-imported-tpd"></a>Konfiguracji usługi IRM programu Exchange Online, jeśli masz importowanych zaufanej domeny publikacji
+- Jeśli **AzureRMSLicensingEnabled** ustawiono **False**, dzierżawy obsługuje nowe funkcje szyfrowanie wiadomości usługi Office 365, ale nie został jeszcze skonfigurowany w tym celu. Aby skonfigurować dzierżawy dla nowych funkcji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
 
-Aby skonfigurować usługę Exchange Online do obsługi usługi Azure Rights Management, należy skonfigurować usługę zarządzania prawami do informacji (IRM) dla usługi Exchange Online. W tym celu należy użyć programu Windows PowerShell (nie trzeba instalować oddzielnego modułu) i uruchomić [polecenia programu PowerShell dla usługi Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
+Tylko wtedy, gdy dzierżawy nie obsługuje nowe funkcje szyfrowanie wiadomości usługi Office 365, użyj postępuj zgodnie z instrukcjami.
+
+## <a name="exchange-online-irm-configuration"></a>Konfiguracja usługi IRM programu Exchange Online
+
+Aby skonfigurować usługi IRM programu Exchange Online, należy użyć programu Windows PowerShell (nie trzeba instalować oddzielnego modułu) i uruchom [poleceń programu PowerShell dla usługi Exchange Online](https://technet.microsoft.com/library/jj200677.aspx).
 
 > [!NOTE]
-> Dopóki Microsoft migruje dzierżawy usługi Office 365, nie można skonfigurować usługi Exchange Online do obsługi usługi Azure Rights Management, jeśli używasz klucza dzierżawy zarządzanego przez klienta (BYOK) dla usługi Azure Information Protection, a nie w konfiguracji domyślnej Klucz dzierżawy zarządzany przez firmę Microsoft.
+> Dopóki Microsoft migruje dzierżawy usługi Office 365 w celu obsługi nowych funkcji, nie można skonfigurować usługi Exchange Online do obsługi usługi Azure Rights Management, jeśli używasz klucza dzierżawy zarządzanego przez klienta (BYOK) dla usługi Azure Information Protection, a nie niż domyślna konfiguracja klucz dzierżawy zarządzany przez firmę Microsoft.
 >
 > Jeśli próbujesz skonfigurować usługę Exchange Online, a usługa Azure Rights Management korzysta z rozwiązania BYOK, działanie polecenia importowania klucza (krok 5 poniższej procedury) zakończy się niepowodzeniem z powodu błędu **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**.
 
-W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruchomić, aby umożliwić usłudze Exchange Online do korzystania z usługi Azure Rights Management dla tego scenariusza:
+W poniższych krokach przedstawiono typowy zestaw poleceń, które należy uruchomić, aby włączyć usługi IRM programu Exchange Online:
 
 1.  Jeśli używasz programu Windows PowerShell dla usługi Exchange Online na komputerze po raz pierwszy, musisz skonfigurować program Windows PowerShell do uruchamiania podpisanych skryptów. Uruchom sesję programu Windows PowerShell przy użyciu opcji **Uruchom jako administrator**, a następnie wpisz:
 
