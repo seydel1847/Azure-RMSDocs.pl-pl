@@ -4,7 +4,7 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c4e71ec21d6ec06a3bab32bf6bb62e6f614a7e33
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: eed8f7e62f5cc8dd20ebfe1caa68746133a95d6f
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -28,7 +28,7 @@ Ten skaner działa jako usługa systemu Windows Server i umożliwia odnajdywania
 
 - Foldery lokalne na komputer z systemem Windows Server z uruchomioną skanera.
 
-- Ścieżki UNC udziały sieciowe, które używają protokołu pliku System CIFS (Common Internet).
+- Ścieżki UNC udziały sieciowe, które używają protokołu bloku komunikatów serwera (SMB).
 
 - Lokacje i bibliotek programu SharePoint Server 2016 i SharePoint Server 2013.
 
@@ -36,7 +36,7 @@ Ten skaner działa jako usługa systemu Windows Server i umożliwia odnajdywania
 
 Po skonfigurowaniu sieci [zasad usługi Azure Information Protection](configure-policy.md) dla etykiet, które mają zastosowanie automatycznej klasyfikacji, następnie może być oznaczony jako pliki, które umożliwia odnalezienie tego skanera. Etykiety klasyfikować i opcjonalnie stosowanie ochrony lub usuń ochronę:
 
-![Omówienie usługi Azure Information Protection skanera](../media/infoprotect-scanner.png)
+![Przegląd architektury skanera w usłudze Azure Information Protection](../media/infoprotect-scanner.png)
 
 Skaner sprawdzić wszystkie pliki, które może indeksować systemu Windows, przy użyciu dodatki IFilter, które są zainstalowane na komputerze. Następnie aby ustalić, czy pliki muszą etykietowanie, skaner korzysta z usługi Office 365 wbudowane utraty zapobiegania (DLP) czułości informacji typy danych i wykrywania wzorzec lub wzorce regex usługi Office 365. Ponieważ skaner używa klienta usługi Azure Information Protection, można klasyfikować i chronić je [typów plików](../rms-client/client-admin-guide-file-types.md).
 
@@ -171,7 +171,7 @@ Następnie skanera używa iFilter systemu Windows w celu skanowania następując
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
 |Projekt|.mpp; .mpt|
-|PDF|pdf|
+|PDF|.pdf|
 |Tekst|.txt; .xml; .csv|
 
 
@@ -185,7 +185,7 @@ Ponadto dla pozostałych typów plików, skaner stosuje etykiety domyślnej w ra
 |XPS|.xps; .oxps; .dwfx|
 |SolidWorks|.sldprt; .slddrw; .sldasm|
 |JPEG |.jpg; .jpeg; .jpe; .jif; .jfif; .jfi|
-|Png |.png|
+|PNG |.png|
 |plik GIF|.gif|
 |Mapy bitowej|.bmp; .giff|
 |TIFF|.tif; .tiff|

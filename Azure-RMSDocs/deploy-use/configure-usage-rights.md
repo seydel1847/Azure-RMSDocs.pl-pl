@@ -4,7 +4,7 @@ description: Informacje pomagające zrozumieć i zidentyfikować określone praw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 297e530406c33ca50d1e8287509e4c3a6f3c7a80
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -158,7 +158,9 @@ Pamiętaj, że właściciel usługi Rights Management jest niezależny od właś
 
 Po otwarciu dokumentu lub wiadomości e-mail, który jest chroniony przez usługę Azure Rights Management, licencji użytkowania usługi Rights Management dla tej zawartości jest przyznane użytkownikowi. Ta licencja Użyj jest certyfikatu, który zawiera prawa użytkowania użytkownika do dokumentu lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości. Licencji użytkowania zawiera także datę wygaśnięcia, jeśli tego ustawienia i jak długo licencji użytkowania jest nieprawidłowa.
 
-W czasie trwania licencji użytkowania użytkownik nie jest ponownie uwierzytelnić lub reauthorized. Dzięki temu użytkownik nadal otworzyć chroniony dokument lub wiadomość e-mail bez połączenia z Internetem. Po wygaśnięciu okresu ważności licencji użycia, następnym razem, użytkownik uzyskuje dostęp do chronionego dokumentu lub wiadomości e-mail, użytkownik musi ponownie uwierzytelnić i reauthorized. 
+Użytkownik musi mieć licencję użytkowania prawidłowy do otwierania zawartości oprócz ich certyfikatu konta praw (RAC), czyli certyfikatu, który ma przyznane podczas [zainicjowaniu środowiska użytkownika](../understand-explore/how-does-it-work.md#initializing-the-user-environment) , a następnie odnowiony 31 dni.
+
+W czasie trwania licencji użytkowania użytkownika nie jest ponownie uwierzytelnić lub reauthorized zawartości. Dzięki temu użytkownik nadal otworzyć chroniony dokument lub wiadomość e-mail bez połączenia z Internetem. Po wygaśnięciu okresu ważności licencji użycia, następnym razem, użytkownik uzyskuje dostęp do chronionego dokumentu lub wiadomości e-mail, użytkownik musi ponownie uwierzytelnić i reauthorized. 
 
 Gdy dokumenty i wiadomości e-mail są chronione za pomocą etykiety lub szablon, który definiuje ustawienia ochrony, można zmienić te ustawienia w etykiecie lub w szablonie bez konieczności włącz ponownie ochronę zawartości. Jeżeli użytkownik ma już dostępu do zawartości, zmiany zaczynają obowiązywać po wygaśnięciu ich licencji użytkowania. Jednak użytkownicy zastosować uprawnienia niestandardowe (znanej także jako zasad ad hoc praw) i te uprawnienia konieczna zmiana po dokumentu lub wiadomości e-mail są chronione, tej zawartości musi być chronione ponownie przy użyciu nowe uprawnienia. Uprawnienia niestandardowe dla wiadomości e-mail są implementowane przy użyciu opcji nie przesyłaj dalej.
 
