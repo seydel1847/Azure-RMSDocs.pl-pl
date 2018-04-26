@@ -4,7 +4,7 @@ description: Informacje i instrukcje dla administratorów dotyczące konfigurowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ecf30ece9370a732e0bf302be5733273b64eea1a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 22182613f3bc12e5ed5aec0079c7b3e54ba8f69d
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online korzystać z usługi Azure Rights Management
 
@@ -110,7 +110,7 @@ Nadawanie użytkownikom poniższe instrukcje, aby mogli skonfigurować usługi O
 
 3. Wybierz **ustawienia** ikony. W **ustawienia** okienka, jeśli **wstążki** ustawiono **poza**, wybierz to ustawienie, aby włączyć na Wstążce.
 
-4. Aby skonfigurować wszystkie usługi OneDrive dla firm pliki mają być chronione, wybierz **biblioteki** na Wstążce, a następnie wybierz **ustawienia biblioteki**. Aby wybrać wszystkie pliki w określonym folderze mają być chronione, należy najpierw wybrać tego folderu.
+4. Aby skonfigurować wszystkie usługi OneDrive dla firm pliki mają być chronione, wybierz **biblioteki** na Wstążce, a następnie wybierz **ustawienia biblioteki**.
 
 5. Na **dokumenty > Ustawienia** strony w **uprawnienia i zarządzanie** zaznacz **Zarządzanie prawami do informacji**.
 

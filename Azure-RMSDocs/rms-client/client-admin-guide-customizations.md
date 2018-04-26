@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -28,19 +28,22 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
 
+>[!NOTE]
+> Te instrukcje odzwierciedlają najnowsze aktualizacje do portalu Azure. Jeśli nie widzisz **klasyfikacje** opcji menu i nadal zobacz **publikowania** opcji instrukcji dotyczących nawigacji zostanie dokładnie zgodne, zostanie wyświetlony. Jeśli tak jest, należy wziąć pod uwagę wracając do tej procedury w kilka dni po zaktualizowaniu dzierżawy najnowsze zmiany.
+
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki, [Zaloguj się do portalu Azure](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal), a następnie przejdź do **usługi Azure Information Protection** bloku.
 
-2. W pierwszym bloku usługi Azure Information Protection wybierz pozycję **Zasady z określonym zakresem**.
+2. Z **klasyfikacje** > **etykiety** opcji menu: Wybierz **zasad**.
 
-3. W bloku **Azure Information Protection — zasady z określonym zakresem** wybierz menu kontekstowe (**...** ) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
+3. Na **usługi Azure Information Protection — zasady** bloku, wybierz menu kontekstowe (**...** ) obok zasady zawierają ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
     
     Możesz skonfigurować ustawienia zaawansowane dla zasad globalnych i zasad z określonym zakresem.
 
 4. W bloku **Ustawienia zaawansowane** wpisz nazwę i wartość ustawienia zaawansowanego, a następnie wybierz opcję **Zapisz i zamknij**.
 
-5. Kliknij przycisk **Opublikuj** i upewnij się, że użytkownicy tych zasad uruchomili ponownie wszystkie otwarte wcześniej aplikacje pakietu Office.
+5. Upewnij się, że użytkowników dla tych zasad, uruchom ponownie wszystkie aplikacje pakietu Office, które były one otwarte.
 
-6. Jeśli nie potrzebujesz już danego ustawienia i chcesz przywrócić zachowanie domyślne: w bloku **Ustawienia zaawansowane** wybierz menu kontekstowe (**...**) obok ustawienia, które przestało być potrzebne, a następnie wybierz opcję **Usuń**. Następnie kliknij przycisk **Zapisz i zamknij** i ponownie opublikuj zmodyfikowane zasady.
+6. Jeśli nie potrzebujesz już danego ustawienia i chcesz przywrócić zachowanie domyślne: w bloku **Ustawienia zaawansowane** wybierz menu kontekstowe (**...**) obok ustawienia, które przestało być potrzebne, a następnie wybierz opcję **Usuń**. Następnie kliknij przycisk **Zapisz i Zamknij**.
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Zapobieganie monitom o logowanie dla komputerów korzystających tylko z usługi AD RMS
 
@@ -52,7 +55,7 @@ Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **
 
 Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
 
-## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" strony powitalnej
+## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" Strony powitalnej
 
 Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i użytkownik otwiera Word, Excel, PowerPoint lub programie Outlook **Gratulacje!** zostanie wyświetlona strona krótkie instrukcje jak nowy pasek Information Protection umożliwia wybranie etykiety. Edytując rejestr, można pominąć tej strony.
 
@@ -151,8 +154,6 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: **True** udostępnienie opcji uprawnień niestandardowych, lub **False** Aby ta opcja niedostępna
 
-> [!IMPORTANT]
-> Jeśli bieżąca wersja klienta jest używana, nie należy ustawiać tej opcji **False** Jeśli masz etykiety, które są skonfigurowane na uprawnienia zdefiniowane przez użytkownika dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection
 
@@ -171,9 +172,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Włącz zalecana klasyfikacja w programie Outlook
 
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie.
-
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal.
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie jest w wersji zapoznawczej i mogą ulec zmianie.
 
 Po skonfigurowaniu etykiety dla zalecana klasyfikacja użytkowników monit, aby zaakceptować lub odrzucić zalecaną etykietę, Word, Excel i PowerPoint. To ustawienie zwiększa to zalecenie etykiety można również wyświetlić w programie Outlook.
 
@@ -185,8 +184,6 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Ustaw etykietę różne domyślne dla programu Outlook
-
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
@@ -202,19 +199,45 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: \< **identyfikator etykiety**> lub **None**
 
-## <a name="turn-off-classification-running-continuously-in-the-background"></a>Wyłącz klasyfikacji stale uruchomione w tle
-
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Ponadto ta opcja konfiguracji wymaga wersji zapoznawczej klienta.
+## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>Usunąć "Nie now" dla dokumentów, gdy nie używasz obowiązkowe etykietowania
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Po skonfigurowaniu tego ustawienia, wersja klienta usługi Azure Information Protection okresowo nie sprawdza dokumenty reguł warunku, które określisz. Zamiast tego są stosowane automatycznej i zalecanej etykiety [tak samo jak wersji ogólnodostępnej klienta usługi Azure Information Protection](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied). To ustawienie może być wymagane ze względu na wydajność.
+Jeśli używasz [ustawienie zasad](../deploy-use/configure-policy-settings.md) z **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**, użytkownicy są monitowani o wybranie etykiety podczas najpierw zapisywania dokumentu pakietu Office i podczas wysyłania wiadomości e-mail. W przypadku dokumentów, użytkownicy mogą wybrać **nie teraz** Aby tymczasowo odrzucić monit o wybranie etykiety i powrócić do dokumentu. Nie można jednak zamknie zapisany dokument bez etykietowania go. 
+
+Po skonfigurowaniu tego ustawienia spowoduje usunięcie **nie teraz** opcję Tak, aby użytkownicy muszą wybrać etykietę przy zapisywaniu dokumentu.
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz: **PostponeMandatoryBeforeSave**
+
+- Wartość: **Fałsz**
+
+## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>Włącz klasyfikację w celu stale uruchomione w tle
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Po skonfigurowaniu tego ustawienia zmienia [domyślne zachowanie](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) z jak klienta Azure Information Protection stosuje automatycznej i zalecanej etykiety w następujący sposób:
+
+- Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel, PowerPoint i Outlook. W przypadku dokumentów Automatyczna klasyfikacja stale działa w tle. Dla programu Outlook Automatyczna klasyfikacja jest uruchamiany podczas wysyłania wiadomości e-mail. 
+    
+    Nie można używać automatycznej klasyfikacji dokumentów, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczenie wyższy klasyfikacji. Wyjątkiem od to zachowanie jest użycie skanera usługi Azure Information Protection z parametrem OverrideLabel ustawioną na.
+
+- Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint. Tych dokumentów zalecane jest uruchamiany klasyfikacji stale w tle. Nie można użyć zalecana klasyfikacja dla programu Outlook.
+    
+    Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
+
+Gdy klient usługi Azure Information Protection okresowo sprawdza, czy dokumenty reguł warunku, które określisz, to zachowanie umożliwia klasyfikacji automatycznej i zalecanej i ochrony dokumentów, które są przechowywane w usłudze SharePoint Online. Dużych plików także zapisać więcej szybko ponieważ reguł warunku zostało już uruchomione. 
+
+Warunek reguły nie należy uruchamiać w czasie rzeczywistym jako typy użytkownika. Zamiast tego działają okresowo jako zadania w tle Jeśli dokument zostanie zmodyfikowany.
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
 - Klucz: **RunPolicyInBackground**
 
-- Wartość: **Fałsz**
+- Wartość: **Prawda**
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 
@@ -296,8 +319,6 @@ Zaawansowane ustawienia klienta:
 
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej
-
-Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie.
 
 > [!NOTE]
 > Jeśli używasz tej konfiguracji i z poprzedniej sekcji, aby przeprowadzić migrację z innego rozwiązania etykietowania, pierwszeństwo ma etykietowania ustawienie migracji. 
