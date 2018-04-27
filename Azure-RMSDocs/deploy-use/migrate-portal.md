@@ -4,7 +4,7 @@ description: Zadania administracyjne w skrócie w portalu Azure, używany w klas
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: bdf319e29e469ccb420a2979f43f5beb9f194947
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ff1cae1695ac37c3e884053e6633a631e236efbe
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które są używane z klasycznego portalu Azure
 
@@ -39,10 +39,10 @@ Jednak klienci, którzy mają subskrypcji dla Office 365 instytucji rządowych S
 |-----------|--------------------|
 |Dostęp do ustawień konfiguracji po raz pierwszy|1. [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. W menu centralnym kliknij **Utwórz zasób**, a następnie, z **MARKETPLACE** listy, wybierz **bezpieczeństwo i Obsługa tożsamości**.<br /><br />3. Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.<br /><br />Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **wszystkie usługi** listy.
 |Utwórz nowy szablon|Utworzyć etykietę, która ma zastosowanie ochrony, a następnie użyj **ustawić uprawnienia** do definiowania uprawnień, wygaśnięcia i dostęp w trybie offline. <br /><br />W obszarze obejmuje ta konfiguracja tworzy nowy szablon niestandardowy, które mają dostęp przez usługi i aplikacje, które integrują się z szablonami usługi Rights Management.<br /><br />Aby uzyskać więcej informacji, zobacz [do utworzenia nowego szablonu](configure-policy-templates.md#to-create-a-new-template).
-|Edytowanie właściwości szablonu: <br /><br />-Nazwa i opis szablonu<br /><br />— Prawa do użytkowania, wygaśnięcia zawartości i ustawień dostępu w trybie offline|Jeśli jeszcze tego nie zrobiono, [przekonwertować szablon na etykiecie](configure-policy-templates.md#to-convert-templates-to-labels), a następnie wykonaj następujące czynności<br /><br />1. Zmień nazwę etykiety i opis<br /><br />2. Zmień ustawienia ochrony na etykiecie aktualizacji uprawnień, wygaśnięcia i ustawień dostępu w trybie offline.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety dla ochrony usługi Rights Management](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
+|Edytowanie właściwości szablonu: <br /><br />-Nazwa i opis szablonu<br /><br />— Prawa do użytkowania, wygaśnięcia zawartości i ustawień dostępu w trybie offline|Jeśli jeszcze tego nie zrobiono, [przekonwertować szablon na etykiecie](configure-policy-templates.md#to-convert-templates-to-labels), a następnie wykonaj następujące czynności<br /><br />1. Zmień nazwę etykiety i opis<br /><br />2. Zmień ustawienia ochrony na etykiecie aktualizacji uprawnień, wygaśnięcia i ustawień dostępu w trybie offline.<br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety w przypadku ustawienia ochrony](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Archiwizowanie szablonu|Ustaw stan etykiety na **wyłączone**.
 |Tworzenie szablonu zakresami|Utwórz zasadę zakresami i utworzyć etykietę w tym zakresie, która ma zastosowanie ochrony. <br /><br />Aby uzyskać więcej informacji, zobacz [sposobu konfigurowania zasad usługi Azure Information Protection dla konkretnych użytkowników przy użyciu zakres zasad](configure-policy-scope.md).
-|Kopiowanie szablonu|Nie można skopiować szablon w portalu Azure. Jeśli chcesz, aby dwie etykiety mają takie same ustawienia ochrony, należy ustawić uprawnienia na każdej etykiety. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety dla ochrony usługi Rights Management](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection).
+|Kopiowanie szablonu|Nie można skopiować szablon w portalu Azure. Jeśli chcesz, aby dwie etykiety mają takie same ustawienia ochrony, należy ustawić uprawnienia na każdej etykiety. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety w przypadku ustawienia ochrony](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Usuwanie szablonu|Usuwanie szablonów może spowodować niedostępny danych, więc portalu Azure nie obsługuje tej akcji. Jednak można usunąć etykietę, a następnie użyj programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet, aby usunąć szablon. <br /><br />Aby uzyskać więcej informacji, zobacz [usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection](configure-policy-delete-reorder.md).
 |Obsługa wielu języków|Z **ZARZĄDZAJ** zaznaczenia menu, wybierz opcję **języków** można wyeksportować pól możliwych do dostosowania, które zawierają nazwę i opis szablonu. Tłumaczenie ciągi, a następnie importować te ciągi do portalu. <br /><br />Aby uzyskać więcej informacji, zobacz [sposób konfigurowania usługi Azure Information Protection etykiety i szablony dla różnych języków](configure-policy-languages.md).
 |Raporty sieci web zarządzania prawami dostępu w|Użyj programu PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) polecenia cmdlet, aby pobrać dzienniki użycia dla usługi Azure Rights Management. Te dane można następnie używać do tworzenia niestandardowych raportów. <br /><br />Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).<br /><br />Porada: Pojawiać zawiadomienia o [pakietu Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) dla nowych, scentralizowane rozwiązanie raportowania usługi Azure Information Protection.

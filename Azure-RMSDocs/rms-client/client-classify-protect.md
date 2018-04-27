@@ -4,7 +4,7 @@ description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0d5f4e081ea68f3e8c9ddcb46409370b486f6210
-ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
+ms.openlocfilehash: 9462795fb46c6eef857d3fd42bfe873ac869e51c
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -97,7 +97,7 @@ Jeśli dozwolone przez administratora, można określić własne ustawienia ochr
     
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
         
-        Jeśli bieżąca wersja klienta, umożliwia także ikonę książki adresowej wybierz z książki adresowej użytkowników lub grup.
+        Wybierz z książki adresowej użytkowników lub grup umożliwia także ikonę książki adresowej.
     
     - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
 

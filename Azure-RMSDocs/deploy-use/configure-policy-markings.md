@@ -4,21 +4,24 @@ description: Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: c5b0c4c82fc35ab560b55c4884cf67fe126ede2b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0b8bef6acd02abb664b274bc04fe77eea06de356
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
 
 Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny.
 
@@ -56,9 +59,7 @@ Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiet
     
     Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli etykietę, którą chcesz skonfigurować będą stosowane do wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
-    
-    Jeśli trwa etykietę, którą chcesz skonfigurować [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
+2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę, którą zawiera element wizualny oznaczenia, które chcesz dodać lub zmienić.
 
 3. W bloku **Etykieta** w sekcji **Ustaw oznaczenie wizualne (np. nagłówek lub stopkę)** skonfiguruj ustawienia dla żądanych oznaczeń wizualnych, a następnie kliknij przycisk **Zapisz**:
     
@@ -67,8 +68,9 @@ Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiet
     - Aby skonfigurować stopkę: dla opcji **Dokumenty oznaczone tą etykietą mają stopkę** wybierz wartość **Wł.**, jeśli chcesz użyć stopki, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ stopki tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie stopki.
     
     - Aby skonfigurować znak wodny: dla opcji **Dokumenty oznaczone tą etykietą mają znak wodny** wybierz wartość **Wł.**, jeśli chcesz użyć znaku wodnego, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ znak wodny tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie znaku wodnego.
+    
+Po kliknięciu **zapisać**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma oddzielne Publikuj.
 
-4. Aby udostępnić użytkownikom zmiany, w bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
 
 ## <a name="using-variables-in-the-text-string"></a>Używanie zmiennych w ciągu tekstowym
 
@@ -89,8 +91,6 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety **Ogólne** tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Classification: Ogólne**.
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawienie różnych oznaczenia wizualne dla programu Word, Excel, PowerPoint i Outlook
-
-To ustawienie jest obecnie w wersji zapoznawczej i wymaga wersja klienta usługi Azure Information Protection.
 
 Domyślnie oznaczeń wizualnych, które określisz są stosowane przez program Word, Excel, PowerPoint i Outlook. Jednak można określić oznaczenia wizualne dla typu aplikacji pakietu Office przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym, a Określ typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić te wartości i abbreiwhich jest niezbędne, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
 
@@ -122,11 +122,9 @@ Przykłady:
 
 ### <a name="setting-the-font-name"></a>Ustawienie nazwy czcionki
 
-To ustawienie jest obecnie w przeglądzie.
+Calibri jest domyślną czcionkę dla nagłówków, stopek i tekstu znaku wodnego. Jeśli określono nazwę alternatywną czcionki, upewnij się, że jest ona dostępna na urządzenia klienckie, które będą stosowane żądanych oznaczeń. 
 
-Calibri jest domyślną czcionkę dla nagłówków, stopek i tekstu znaku wodnego. Jeśli określono nazwę alternatywną czcionki, upewnij się, że jest ona dostępna na urządzenia klienckie, które będą stosowane żądanych oznaczeń. W przeciwnym razie czcionki, który będzie używany jest deterministyczna. 
-
-Jeśli masz wersja klienta usługi Azure Information Protection, a czcionka określony nie jest dostępna, klient powraca przy użyciu czcionki Calibri.
+Jeśli nie ma określonej czcionki, klient powraca przy użyciu czcionki Calibri.
 
 ### <a name="setting-the-font-color"></a>Ustawianie koloru czcionki
 

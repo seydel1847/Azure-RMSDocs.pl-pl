@@ -4,32 +4,35 @@ description: Krok 2 samouczka wprowadzającego, dzięki któremu można szybko w
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e2850a0f67f18febdbd98e59d01b2f28b00bff2a
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>Krok 2. Konfigurowanie i publikowanie zasad usługi Azure Information Protection
+# <a name="step-2-configure-the-azure-information-protection-policy"></a>Krok 2: Konfigurowanie zasad usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
+>[!NOTE]
+> Ten krok samouczka odzwierciedla najnowsze aktualizacje do portalu Azure. Jeśli nie widzisz **klasyfikacje** opcji menu i nadal zobacz **publikowania** opcji instrukcji dotyczących nawigacji zostanie dokładnie zgodne, zostanie wyświetlony. Jeśli tak jest, należy wziąć pod uwagę wracając do tego kroku samouczka na kilka dni po zaktualizowaniu dzierżawy najnowsze zmiany.
+
 Usługa Azure Information Protection zawiera domyślną zasadę, której można użyć bez konfiguracji, ale chcemy się jej przyjrzeć i wprowadzić kilka zmian.
 
-1. Kontynuowanie z [krok 1](infoprotect-tutorial-step1.md) i nadal w portalu Azure wybierz **globalne zasady** otworzyć **zasad: Global** bloku. Ten blok automatycznie otwiera dla kolejnych połączeń z usługą i wyświetla domyślne zasady ochrony informacji utworzony dla Twojej dzierżawy.
+1. Kontynuowanie z [krok 1](infoprotect-tutorial-step1.md) i nadal w portalu Azure wybierz **klasyfikacje** > **zasady** > **Global** otworzyć **zasad: globalne** bloku. Ten blok zawiera domyślne zasady usługi Azure Information Protection dla swojej dzierżawy jest tworzony.
 
 2. Spędzają na kilka minut zapoznawanie się z etykiet, które są wyświetlane:
     
-    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Rozwiń ostatnich dwóch etykiet można wyświetlić etykiety podrzędne, które zawierają przykłady klasyfikacji podkategoriami:
+    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Ostatnie dwa etykiety rozwiń pokazanie sublabels, które zawierają przykłady klasyfikacji podkategoriami:
     
        > [!NOTE]
-       > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Być może nie masz etykiety podrzędne o nazwie **odbiorców tylko**, lub nie masz na wszystkich etykiety. Te zmiany są, ponieważ istnieją różne wersje domyślne zasady, w zależności od tego, kiedy został utworzony dla Twojej dzierżawy. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.
+       > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Być może nie masz sublabels o nazwie **odbiorców tylko**, lub nie masz na wszystkich etykiety. Te zmiany są, ponieważ istnieją różne wersje domyślne zasady, w zależności od tego, kiedy został utworzony dla Twojej dzierżawy. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.
        > 
        > Jeśli Twoje domyślne zasady wyglądają inaczej, nadal możesz używać tego samouczka, ale należy pamiętać o tych zmianach, korzystając z poniższych instrukcji i obrazów. Jeśli chcesz zmodyfikować zasady domyślne tak, aby pasowały do bieżących zasad domyślnych, zobacz [Domyślne zasady usługi Azure Information Protection](../deploy-use/configure-policy-default.md).
     
@@ -57,7 +60,7 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Tworzenie nowej etykiety dla ochrony, znaczniki wizualne i warunku z monitem o klasyfikacji
 
-Teraz utworzymy nową etykietę podrzędną dla **poufne**.
+Teraz utworzymy nowe sublabel dla **poufne**.
 
 1. Kliknij prawym przyciskiem myszy **poufne** etykiety, a następnie wybierz **Dodaj etykietę podrzędną**.
     
@@ -127,7 +130,7 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
 
 13. Kliknij przycisk **zapisać** na tym **etykietę podrzędną** bloku. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
     
-    Teraz widoczne z nową etykietę podrzędną, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Przykład:
+    Pojawi się nowy sublabel, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Przykład:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configuredv2.png)
     
@@ -135,10 +138,6 @@ Teraz utworzymy nową etykietę podrzędną dla **poufne**.
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowane ustawienia](../media/info-protect-settings-configuredv2.png)
     
-14. Wprowadziliśmy naszych zmian i zapisaniu, chcemy udostępnić je użytkownikom, więc klikamy **publikowania**i kliknij przycisk **tak** o potwierdzenie.
-
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — publikowanie skonfigurowanych zasad](../media/info-protect-publish.png)
-
 Po zakończeniu tego samouczka możesz zamknąć portal Azure lub zostawić otwarty w celu wypróbowania innych opcji konfiguracji.
 
 Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilka zmian, następnym krokiem jest zainstalowanie klienta usługi Azure Information Protection.

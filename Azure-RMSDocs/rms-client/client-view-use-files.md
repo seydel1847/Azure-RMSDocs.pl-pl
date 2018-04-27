@@ -4,7 +4,7 @@ description: Instrukcje dotyczące wyświetlania i używania dokumentu chronione
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/30/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a81585ae1acb791dcf33f8d047268a9e4e9f2f2e
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: eb631b0153ce047177ef12887c025303acfac1db
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Podręcznik użytkownika: Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -33,7 +33,7 @@ Przeglądarka jest instalowana automatycznie podczas instalacji klienta usługi 
 > 
 >-Azure Information Protection
 > 
->-Azure Rights Management
+>-Usługi azure Rights Management
 > 
 >-Active Directory Rights Management Services 
 > 
@@ -70,9 +70,9 @@ Jeśli Twoja organizacja ma konto oparte na chmurze, można użyć (dla usługi 
     
     Aby uzyskać bardziej szczegółowe informacje o uprawnieniach i prawach użytkowania, które każde z nich zawiera, zobacz temat [Prawa uwzględnione w poziomach uprawnień](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels).
 
-4. Aby edytować plik, kliknij opcję **Zapisz jako**, która pozwala zapisać plik bez ochrony z jego oryginalnym rozszerzeniem nazwy pliku. Następnie plik można edytować za pomocą aplikacji skojarzonej z tym typem pliku.
+4. Aby edytować plik, kliknij przycisk **Zapisz jako**, które umożliwia zapiszesz plik bez etykiety i brak ochrony do jego oryginalne rozszerzenie nazwy pliku. Następnie plik można edytować za pomocą aplikacji skojarzonej z tym typem pliku. 
     
-    Nie można zrobić, jeśli później użyć Eksploratorze plików kliknij prawym przyciskiem myszy nowo zapisany plik i spróbuj ponownie go chronić. W bieżącej wersji preview klienta informacji Azure skierowana jest to znany problem. Dla klienta w wersji zapoznawczej, wybierając **Zapisz jako** usuwa etykietę oprócz ochrony. Gdy użytkownik kliknij prawym przyciskiem myszy plik, można ponownie zastosować etykiety, który z kolei spowoduje ponowne zastosowanie ochrony.
+    Po zakończeniu edytowania pliku, w Eksploratorze plików kliknij prawym przyciskiem myszy plik, aby ponownie zastosować etykiety, który z kolei spowoduje ponowne zastosowanie ochrony.
 
 5. Jeśli masz do otwarcia dodatkowe pliki chronione, możesz przejść do nich bezpośrednio z przeglądarki, korzystając z opcji **Otwórz**. Wybrane przez Ciebie pliki zastępują w przeglądarce oryginalny plik. 
 

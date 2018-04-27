@@ -4,21 +4,24 @@ description: Możesz dodać obsługę innych języków dla etykiet, które użyt
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: b3341237d494766242ef790798ad1f97404919e9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 09bf1d5bd1e9435fe0b665243deeea8873bb368e
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować szablony dla różnych języków i etykiety usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
 
 Mimo że domyślne etykiety dla usługi Azure Information Protection obsługuje wiele języków, musisz skonfigurować obsługę etykieta nazwy i opisy, które określisz. Tej konfiguracji, należy wykonać następujące czynności:
 
@@ -44,11 +47,9 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
     
     Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **ZARZĄDZAJ** zaznaczenia menu, wybierz opcję **języków**.
+2. Z **ZARZĄDZAJ** > **języków** opcji menu: na **usługi Azure Information Protection — języków** bloku, wybierz opcję **dodać nowy język dla Tłumaczenie**. Wybierz języki, które chcesz dodać, a następnie wybierz **OK**. Możesz wpisać nazwę języka w polu wyszukiwania, lub przewiń listę dostępnych języków
 
-3. Na **usługi Azure Information Protection — języków** bloku, wybierz opcję **dodać nowy język do tłumaczenia**. Wybierz języki, które chcesz dodać, a następnie wybierz **OK**. Możesz wpisać nazwę języka w polu wyszukiwania, lub przewiń listę dostępnych języków
-
-4. Języki wybrane jest teraz wyświetlany na **usługi Azure Information Protection — języków** bloku:
+3. Języki wybrane jest teraz wyświetlany na **usługi Azure Information Protection — języków** bloku:
     
     - Aby dodać innego języka, wybierz **dodać nowy język do tłumaczenia** i powtórz poprzedni krok. 
         
@@ -57,19 +58,19 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
         
     - Jeśli zmienisz zdanie na temat dowolnego dodanego języka, wybierz odpowiedni wpis z listy, a następnie kliknij pozycję **Usuń**.
 
-5. Jeśli na liście znajdują się wszystkie wybrane przez Ciebie języki, zaznacz pole wyboru obok pozycji **NAZWA JĘZYKA**, aby wybrać wszystkie wpisy (lub też wybierz poszczególne wpisy), a następnie kliknij przycisk **Eksportuj**, aby zapisać w pliku lokalną kopię istniejących nazw etykiet i opisów. 
+4. Jeśli na liście znajdują się wszystkie wybrane przez Ciebie języki, zaznacz pole wyboru obok pozycji **NAZWA JĘZYKA**, aby wybrać wszystkie wpisy (lub też wybierz poszczególne wpisy), a następnie kliknij przycisk **Eksportuj**, aby zapisać w pliku lokalną kopię istniejących nazw etykiet i opisów. 
     
     Pobrany plik ma nazwę **exported localization.zip** i jest zapisany w lokalnym folderze Pobrane. Jest również dostępny po wybraniu jego nazwy pliku na pasku stanu w portalu Azure.
 
-6. Wyodrębnij pliki z pliku **exported localization.zip**, tak aby otrzymać pliki xml dla każdego języka wybranego do pobrania. 
+5. Wyodrębnij pliki z pliku **exported localization.zip**, tak aby otrzymać pliki xml dla każdego języka wybranego do pobrania. 
 
-7. Dokonaj edycji każdego pliku xml: dla każdego ciągu w znacznikach `<LocalizedText>` i podaj tłumaczenia dla wszystkich wybranych języków. 
+6. Dokonaj edycji każdego pliku xml: dla każdego ciągu w znacznikach `<LocalizedText>` i podaj tłumaczenia dla wszystkich wybranych języków. 
 
-8. Po zakończeniu edycji wszystkich plików xml utwórz nowy skompresowany folder (zip) zawierającego te pliki. Skompresowany folder może mieć dowolną nazwę, ale musi mieć rozszerzenie zip.
+7. Po zakończeniu edycji wszystkich plików xml utwórz nowy skompresowany folder (zip) zawierającego te pliki. Skompresowany folder może mieć dowolną nazwę, ale musi mieć rozszerzenie zip.
 
-9. Wróć do **usługi Azure Information Protection — języków** bloku, a następnie wybierz **importu**. Należy pamiętać, że jeśli ta opcja jest niedostępna, należy najpierw wyczyścić pole wyboru w obszarze **NAZWA JĘZYKA** lub pola wyboru indywidualnie wybranych języków.
+8. Wróć do **usługi Azure Information Protection — języków** bloku, a następnie wybierz **importu**. Należy pamiętać, że jeśli ta opcja jest niedostępna, należy najpierw wyczyścić pole wyboru w obszarze **NAZWA JĘZYKA** lub pola wyboru indywidualnie wybranych języków.
     
-    Po zakończeniu importowania zlokalizowanej nazwy i opisy pobrać użytkownikom po Następna publikacja zasad usługi Azure Information Protection. Możesz kliknąć opcję **Publikuj** w bloku **Zasady globalne** lub **Zasady z określonym zakresem**.
+    Po zakończeniu importowania zlokalizowanej nazwy i opisy pobrać użytkowników.
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Jak klient usługi Azure Information Protection określa język używany do wyświetlania
 
@@ -100,7 +101,7 @@ W następujących scenariuszach zlokalizowanych nazw etykiety (i sublabel) nie s
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu opcji etykiet oraz innych ustawień zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
+Aby uzyskać więcej informacji o konfigurowaniu opcji, których można używać dla etykiet oraz innych ustawień dla zasad usługi Azure Information Protection, użyj linków w [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy) sekcji.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

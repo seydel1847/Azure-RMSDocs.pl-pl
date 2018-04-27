@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów dotyczące zarządzani
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c791baa300fff3c251c49ddb92b6bf3765933a99
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell przy użyciu klienta usługi Azure Information Protection
 
@@ -363,7 +363,7 @@ Oprócz wymagań wstępnych dotyczących instalowania modułu AzureInformationPr
 
 8. Dodaj nazwę swojego konta. Jeśli inni administratorzy usług AD RMS lub konta usług będzie również używać tych poleceń cmdlet do ustawiania i usuwania ochrony plików, należy dodać także te konta. 
     
-    Do ochrony lub wyłączyć ochronę plików nieinteraktywnie, Dodaj konto odpowiedniego komputera lub konta. Na przykład dodać konto komputera systemu Windows Server, który jest skonfigurowany dla infrastruktury klasyfikacji plików i użyje skrypt programu PowerShell dotyczące ochrony plików. Ten scenariusz wymaga bieżąca wersja klienta usługi Azure Information Protection.
+    Do ochrony lub wyłączyć ochronę plików nieinteraktywnie, Dodaj konto odpowiedniego komputera lub konta. Na przykład dodać konto komputera systemu Windows Server, który jest skonfigurowany dla infrastruktury klasyfikacji plików i użyje skrypt programu PowerShell dotyczące ochrony plików.
 
 9. Upewnij się, że w kolumnie **Zezwalaj** są zaznaczone pola wyboru **Odczyt i wykonywanie** oraz **Odczyt**.
 
@@ -531,9 +531,6 @@ Uruchom to polecenie w kontekście konta, na którym będzie etykiety i nieinter
 Po uruchomieniu tego polecenia po raz pierwszy monit o zalogowanie się, które tworzy i bezpiecznie zapisuje token dostępu dla konta w % localappdata%\Microsoft\MSIP. Po tym początkowego logowania można etykiety i ochronę plików nieinteraktywnie na komputerze. Jeśli jednak użyć konta usługi do etykiety i ochronę plików i to konto usługi nie można zarejestrować interaktywnego, użyć zgodnie z instrukcjami w poniższej sekcji, aby konto usługi można uwierzytelnić przy użyciu tokenu.
 
 ### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Określ i użyj parametru tokenu dla zestawu AIPAuthentication
-
-> [!NOTE]
-> Ta opcja wymaga wersji ogólnodostępnej (GA) skanera usługi Azure Information Protection lub bieżąca wersja klienta usługi Azure Information Protection.
 
 Użyj następujące dodatkowe czynności oraz instrukcje, aby uniknąć początkowej interakcyjnego logowania dla konta, które etykiety i chroni pliki. Zazwyczaj te dodatkowe kroki są wymagane tylko wtedy, gdy to konto nie można udzielić **logować się lokalnie** prawej strony, ale otrzymuje **logowanie w trybie wsadowym** prawo. Na przykład może to w przypadku konta usługi z systemem skanera usługi Azure Information Protection.
 

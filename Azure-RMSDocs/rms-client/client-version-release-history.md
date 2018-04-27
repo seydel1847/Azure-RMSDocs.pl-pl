@@ -4,7 +4,7 @@ description: Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
-ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
+ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -41,11 +41,9 @@ Skorzystaj z poniższych informacji, aby zobaczyć nowe lub zmienione w obsługi
 >  
 > Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
-## <a name="versions-later-than-110560"></a>Wersjach starszych niż 1.10.56.0
+## <a name="version-12660"></a>Wersja 1.26.6.0
 
-Jeśli masz wersję klienta, która jest nowsza niż 1.10.56.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
-
-Bieżąca wersja preview to **1.21.203.0** i ma następujące zmiany od bieżącej wersji GA klienta.
+**Wydane**: 2018-04/17
 
 Ta wersja zawiera MSIPC wersji 1.0.3403.1224 klienta usługi RMS.
 
@@ -53,11 +51,11 @@ Ta wersja zawiera MSIPC wersji 1.0.3403.1224 klienta usługi RMS.
 
 - Skaner usługi Azure Information Protection: moduł programu PowerShell, który znajduje się klient ma nowe polecenia cmdlet do instalowania i konfigurowania skanera, dzięki czemu odnajdywania, klasyfikowania i ochrona plików w sieci lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki](../deploy-use/deploy-aip-scanner.md). 
 
-- W przypadku aplikacji pakietu Office klasyfikacji automatycznej i zalecanej stale działa w tle, zamiast uruchamiania przy zapisywaniu dokumentów. Ta zmiana zachowania można teraz stosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
-
 - Można teraz ustawić różne oznaczenia wizualne dla programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym i określ typ aplikacji. [Więcej informacji](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - Obsługa [ustawienie zasad](../deploy-use/configure-policy-settings.md), **wyświetlane na pasku Information Protection w aplikacji pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** na Wstążce.
+
+- Nowe zaawansowane ustawienie klienta (dostępny w wersji zapoznawczej) można włączyć klasyfikację w celu stale uruchomione w tle. Jeśli to ustawienie jest włączone dla aplikacji pakietu Office, klasyfikacji automatycznej i zalecanej stale działa w tle, zamiast uruchamiania przy zapisywaniu dokumentów. Ta zmiana zachowania można teraz stosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
 - Nowy klient Zaawansowane ustawienia, aby program Outlook nie ma zastosowania etykiety domyślnej, który jest skonfigurowany w ramach zasad usługi Azure Information Protection. Zamiast tego programu Outlook można stosować różne domyślne etykiety lub bez etykiety. [Więcej informacji](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
 
@@ -76,14 +74,21 @@ Poprawki dla stabilności i dla konkretnych scenariuszy, które obejmują:
 
 - Po dwóch organizacji przy użyciu usługi Azure Information Protection udostępnić etykietą dokumentów i wiadomości e-mail, własne etykiety są zachowywane i nie zastępuje etykiety Twojej organizacji.
 
-- Obsługę komórek w programie Excel, które zawierają odsyłacze, które wcześniej spowodowany uszkodzeniem tekst w komórce.
+- Dla programu Excel:
+        
+    - Obsługa zmiany Motywy pakietu Office i kompozycji systemu Windows, które uprzednio spowodowały program Excel nie zawiera żadnych danych po motyw został zmieniony.
+        
+    - Obsługa komórek zawierających odsyłacze, które wcześniej spowodowany uszkodzeniem tekst w komórce.
+    
+    - Obsługa wpisywania znaków japoński, chiński lub koreański, które wcześniej zamknięty okna, dlatego nie można wybrać te znaki.
+    
+    - Obsługa uwagi, które wcześniej zamknięty komentarz, gdy trwa wpisano.
 
-- Obsługa zmiany Motywy pakietu Office i kompozycji systemu Windows, które uprzednio spowodowały program Excel nie zawiera żadnych danych po motyw został zmieniony.
+- Dla programu PowerPoint: Obsługa współtworzenia, która wcześniej może spowodować utratę danych.
 
 - Teraz plików mających rozszerzenie nazwy pliku .xml mogą być sprawdzane pod kątem zalecaną lub automatyczną klasyfikację.
 
 - Podgląd komunikatów o teraz otworzyć tekstowych plików chronionych (ptxt i pxml) większe niż 20 MB. 
-
 - Zapobiegaj wiszące Outlook stosowania przypomnienia programu Outlook.
 
 - Ładowania początkowego pomyślnie Office 64-bitowy, dzięki czemu możesz chronić dokumenty i wiadomości e-mail.

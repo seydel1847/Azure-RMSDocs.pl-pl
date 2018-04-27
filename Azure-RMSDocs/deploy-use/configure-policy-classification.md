@@ -4,21 +4,24 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 7f105b8e6d3a6f7761d195a00b15adb2d33cd592
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
 
 W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety. 
 
@@ -39,8 +42,6 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>W jaki sposób są stosowane automatycznej lub zalecanej etykiety
 
-**W wersji ogólnodostępnej klienta Azure Information Protection:**
-
 - Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint, gdy dokumenty są zapisywane i dotyczą programu Outlook przy wysyłaniu wiadomości e-mail. 
     
     Nie można używać automatycznej klasyfikacji dokumentów i wiadomości e-mail, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczenie wyższy klasyfikacji. 
@@ -49,28 +50,9 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
     
     Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
 
-
-**W bieżącej wersji podglądu klienta Azure Information Protection:**
-
-- Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel, PowerPoint i Outlook. W przypadku dokumentów działa Automatyczna klasyfikacja [stale w tle](#more-information-about-running-continuously). Dla programu Outlook Automatyczna klasyfikacja jest uruchamiany podczas wysyłania wiadomości e-mail. 
-    
-    Nie można używać automatycznej klasyfikacji dokumentów, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie oznaczenie wyższy klasyfikacji. Wyjątkiem od to zachowanie jest użycie skanera usługi Azure Information Protection z parametrem OverrideLabel ustawioną na.
-
-- Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint. Te dokumenty zalecane uruchamia klasyfikacji [stale w tle](#more-information-about-running-continuously). Nie można użyć zalecana klasyfikacja dla programu Outlook.
-    
-    Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
-
-#### <a name="more-information-about-running-continuously"></a>Więcej informacji o uruchamianiu w sposób ciągły
-
-Domyślnie bieżąca wersja klienta usługi Azure Information Protection okresowo sprawdza dostępność dokumentów dla reguł warunku, które określisz. To zachowanie umożliwia klasyfikacji automatycznej i zalecanej i ochronę dokumentów, które są przechowywane w usłudze SharePoint Online. Dużych plików także zapisać więcej szybko ponieważ reguł warunku zostało już uruchomione. 
-
-Warunek reguły nie należy uruchamiać w czasie rzeczywistym jako typy użytkownika. Zamiast tego działają okresowo jako zadania w tle Jeśli dokument zostanie zmodyfikowany.
-
-Aby zmienić to zachowanie, dzięki czemu klienta Azure Information Protection stosuje automatycznej i zalecanej etykiety w taki sam sposób jak wersji ogólnodostępnej klienta. Ta konfiguracja wymaga [Zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background).
+Aby zmienić to zachowanie, dzięki czemu klienta Azure Information Protection okresowo sprawdza, czy dokumenty reguł warunku, które można określić. Ta konfiguracja wymaga [Zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) który jest obecnie w przeglądzie.
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków są oceniane, jeśli są zastosowane wobec więcej niż jednej etykiety
-
-Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bieżącego klienta w wersji zapoznawczej:
 
 1. Etykiety są uporządkowane do oceny zgodnie z ich pozycją określoną w zasadach: etykieta na pierwszej pozycji ma najniższą pozycję (najmniejszą ważność), a ostatnia najwyższą (największa ważność).
 
@@ -85,15 +67,11 @@ Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bie�
     
     Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli etykietę, którą chcesz skonfigurować będą stosowane do wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
-    
-    Jeśli trwa etykietę, którą chcesz skonfigurować [zakres zasad](configure-policy-scope.md) tak, aby dotyczył tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
+2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę do skonfigurowania.
 
-3. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, wybierz etykietę, aby skonfigurować. 
+3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
-4. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
-
-5. Na **warunku** bloku, wybierz opcję **typów informacji** Jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **niestandardowy** Jeśli chcesz określić własny:
+4. Na **warunku** bloku, wybierz opcję **typów informacji** Jeśli chcesz użyć wstępnie zdefiniowanego warunku lub **niestandardowy** Jeśli chcesz określić własny:
     - Aby uzyskać **typów informacji**: Wybierz z listy dostępnych warunków, a następnie wybierz minimalną liczbę wystąpień i określa, czy wystąpienie powinno mieć unikatową wartość, aby było uwzględnione w liczbie wystąpień.
         
         Typy informacji za pomocą typów informacji czułości zapobiegania (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Można wybrać z wielu popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionach. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office.
@@ -106,17 +84,17 @@ Dla wersji ogólnodostępnej klienta usługi Azure Information Protection i bie�
         
         Wyrażenia regularne użyć wzorców regex usługi Office 365. Aby uzyskać więcej informacji, zobacz [definiujący wyrażenie regularne na podstawie dopasowań](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) w dokumentacji pakietu Office. Ponadto użytkownik może być bardzo przydatne do odwołania [składni wyrażeń regularnych języka Perl](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) z zwiększanie wyniku.
         
-6. Zdecyduj, czy trzeba będzie zmienić **minimalna liczba wystąpień** i **liczba wystąpień tylko unikatowe wartości**, a następnie wybierz **zapisać**. 
+5. Zdecyduj, czy trzeba będzie zmienić **minimalna liczba wystąpień** i **liczba wystąpień tylko unikatowe wartości**, a następnie wybierz **zapisać**. 
     
     Przykład opcji wystąpień: Wybierz typ informacji numer ubezpieczenia społecznego, Ustaw minimalną liczbę wystąpień na 2 i dokument ma sam numer ubezpieczenia społecznego wymieniony dwukrotnie: Jeśli ustawisz **liczba wystąpień z Unikatowa wartość tylko** do **na**, nie jest spełniony warunek. Jeśli ustawisz tę opcję, **poza**, warunek jest spełniony.
 
-7. Ponownie **etykiety** bloku, skonfiguruj następujące opcje, a następnie kliknij przycisk **zapisać**:
+6. Ponownie **etykiety** bloku, skonfiguruj następujące opcje, a następnie kliknij przycisk **zapisać**:
     
     - Wybierz automatyczną lub zalecaną klasyfikację: dla opcji **Wybierz sposób stosowania etykiety: automatycznie lub jako zalecenie dla użytkownika** wybierz wartość **Automatycznie** lub **Zalecenie**.
     
     - Określ tekst monitu dla użytkownika lub wskazówki dotyczącej zasad: zachowaj tekst domyślny lub podaj własny ciąg.
 
-8. Aby udostępnić użytkownikom zmiany, w początkowym bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+Po kliknięciu **zapisać**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma oddzielne Publikuj.
 
 ## <a name="next-steps"></a>Następne kroki
 

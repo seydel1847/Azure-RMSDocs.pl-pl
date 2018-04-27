@@ -4,21 +4,24 @@ description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0ba75a1898d8618ebe38bcf2680e8a9623c79265
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f4b79f66bc3f747285b2811327ea158bb83af03d
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
 
 Oprócz ochrony informacji pasek tytuł i etykietka narzędzia istnieją niektóre ustawienia zasad usługi Azure Information Protection, które można skonfigurować niezależnie od etykiety:
 
@@ -32,11 +35,11 @@ Aby skonfigurować te ustawienia:
     
     Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Jeśli ustawienia, które chcesz skonfigurować zostaną zastosowane dla wszystkich użytkowników, pozostają **usługi Azure Information Protection — globalne zasady** bloku.
+2. Z **klasyfikacje** > **zasady** opcji menu: na **usługi Azure Information Protection — zasady** bloku, wybierz opcję **Global** Jeśli ustawienia, które chcesz skonfigurować zostaną zastosowane dla wszystkich użytkowników.
     
-    Jeśli ustawienia, które chcesz skonfigurować znajdują się w [zakres zasad](configure-policy-scope.md) tak, aby dotyczą tylko wybrani użytkownicy z **zasady** zaznaczenia menu, wybierz opcję **zakres zasad**. Następnie wybierz zakresie zasad z **zasady usługi Azure Information Protection - zakres** bloku.
+    Jeśli ustawienia, które chcesz skonfigurować znajdują się w [zakres zasad](configure-policy-scope.md) tak, aby dotyczą tylko wybrani użytkownicy, wybierz zasady zakresami zamiast tego.
 
-3. Z **usługi Azure Information Protection — globalne zasady** bloku lub **zasad:\<name >** bloku, skonfigurować ustawienia:
+3. Na **zasad** bloku, skonfigurować ustawienia:
     
     - **Wybierz etykietę domyślną**: po ustawieniu tej opcji wybierz etykietę, która ma być przypisywana do dokumentów i wiadomości e-mail bez etykiety. Nie możesz ustawić etykiety jako etykiety domyślnej, jeśli zawiera ona etykiety podrzędne. 
     
@@ -50,14 +53,11 @@ Aby skonfigurować te ustawienia:
         
         ![Monit usługi Azure Information Protection w przypadku wybrania niższej klasyfikacji](../media/info-protect-lower-justification.png)
         
-        Ta opcja nie ma zastosowania wobec etykiet podrzędnych.
+        Ta opcja nie ma zastosowania do sublabels.
         
     - **W przypadku wiadomości e-mail z załącznikami zastosuj etykietę, która odpowiada najwyższej klasyfikacji tych załączników**: po ustawieniu wartości tej opcji na **Zalecane** użytkownicy są monitowani o zastosowanie etykiety do wiadomości e-mail. Etykieta jest wybierana dynamicznie na podstawie klasyfikacji etykiet, która jest stosowana do załączników, po czym jest wybierana etykieta o najwyższej klasyfikacji. Załącznik musi być plikiem fizycznym i nie może być łączem do pliku (na przykład łączem do pliku w usłudze SharePoint lub OneDrive dla Firm). Użytkownicy mogą zaakceptować zalecenie lub odrzucić je. Po ustawieniu wartości tej opcji na **Włączone** etykieta jest stosowana automatycznie, ale użytkownicy mogą usunąć etykietę lub wybrać inną etykietę przed wysłaniem wiadomości e-mail.  
     
     - **Wyświetl pasek Information Protection w aplikacji pakietu Office**: Jeśli to ustawienie jest wyłączone, użytkownicy nie można wybrać etykiety z paska Word, Excel, PowerPoint i Outlook. Zamiast tego użytkownicy muszą wybrać etykiety z **Chroń** na Wstążce. Gdy to ustawienie jest włączone, użytkownicy mogą wybrać etykiety z pasku lub przycisku.
-        
-        > [!IMPORTANT]
-        > To ustawienie jest w wersji zapoznawczej i wymaga bieżąca wersja klienta usługi Azure Information Protection.
         
         Gdy to ustawienie jest włączone, można w połączeniu z klientem Zaawansowane ustawienia, dzięki czemu użytkownicy mogą [trwale ukryć pasek usługi Azure Information Protection](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar) decydując pokazywany na pasku. Można to zrobić, usuwając zaznaczenie **Pokaż pasek** opcję **Chroń** przycisku.
     
@@ -66,9 +66,6 @@ Aby skonfigurować te ustawienia:
         To ustawienie zasad można również skonfigurować za pomocą klienta Zaawansowane ustawienia jako [dostosowywania klienta](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook).
     
     - **Udostępnić użytkownikom opcję uprawnień niestandardowych**: gdy to ustawienie jest włączone, użytkownicy mogą ustawić własne ustawienia ochrony i Zastąp wszystkie ustawienia ochrony, które zostały uwzględnione w konfiguracji etykiety. Gdy to ustawienie jest wyłączone, nie są dostępne dla użytkowników wybrać opcje uprawnienia niestandardowe.
-        
-        > [!IMPORTANT]
-        > Jeśli bieżąca wersja klienta jest używana, nie używaj **poza** ustawienia, jeśli masz etykiety, które są skonfigurowane dla użytkownika zdefiniowane uprawnienia dla programu Word, Excel, PowerPoint i Eksploratora plików. Jeśli to zrobisz, po zastosowaniu etykiety, użytkownicy nie monit, aby skonfigurować uprawnienia niestandardowe. Wynik jest etykietą dokumentu, ale nie jest chroniony, zgodnie z zamierzonym.
         
         Należy pamiętać, że to ustawienie zasad nie ma wpływu na uprawnienia niestandardowe, które użytkownicy mogą konfigurować opcje menu pakietu Office. Jednak go można również skonfigurować za pomocą klienta Zaawansowane ustawienia jako [dostosowywania klienta](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users).
         
@@ -82,9 +79,9 @@ Aby skonfigurować te ustawienia:
         
         Na przykład dla pomocy technicznej, możesz wpisać stronę dokumentacji firmy Microsoft zawierający informacje o instalowaniu i używaniu klienta (**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) lub zwolnij informacje o wersji (**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**). Alternatywnie możesz opublikować własną stronę sieci Web zawierającą informacje dla użytkowników pozwalające skontaktować się z Twoją pomocą techniczną lub film, który krok po kroku objaśni użytkownikom, jak używać skonfigurowanych etykiet.
 
-3. Kliknij przycisk **Zapisz**, aby zapisać zmiany.
+3. Kliknij, aby zapisać zmiany i udostępnić je użytkownikom **zapisać**.
 
-4. Aby udostępnić użytkownikom zmiany, w początkowym bloku **Azure Information Protection** kliknij przycisk **Opublikuj**.
+Po kliknięciu **zapisać**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma oddzielne Publikuj.
 
 ## <a name="next-steps"></a>Następne kroki
 

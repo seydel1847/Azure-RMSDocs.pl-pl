@@ -4,7 +4,7 @@ description: Instrukcje instalowania programu Windows PowerShell dla usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/13/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f0365876af77c748cb15dc2ee89d871925591344
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: e69714fdb983d7235c7fca940bebc37a14892397
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>Instalowanie modułu programu PowerShell AADRM
 
@@ -51,10 +51,11 @@ Jeśli jesteś nowym użytkownikiem galerii programu PowerShell, zobacz [Rozpocz
 
 Aby wyświetlić szczegółowe informacje o AADRM module w galerii programu PowerShell, odwiedź stronę [strony AADRM](https://www.powershellgallery.com/packages/AADRM).
 
-Aby zainstalować moduł AADRM, Uruchom sesję programu PowerShell i wpisz:
+Aby zainstalować moduł AADRM, Uruchom sesję programu PowerShell z **Uruchom jako Administrator** i wpisz:
 
     Install-Module -Name AADRM
 
+Jeśli zostanie wyświetlone ostrzeżenie dotyczące instalowania z niezaufanych repozytorium, naciśnij klawisz T, aby potwierdzić. Lub naciśnij klawisz N i skonfigurować galerii programu PowerShell jako zaufany repozytorium przy użyciu polecenia `Set-PSRepository -Name PSGallery -InstallationPolicy Trusted` , a następnie ponownie uruchom polecenie, aby zainstalować moduł AADRM.  
 
 Jeśli masz poprzedniej wersji modułu AADRM zainstalowane z galerii, aktualizacja do najnowszej, wpisując:
 
