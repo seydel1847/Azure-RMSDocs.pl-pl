@@ -4,7 +4,7 @@ description: Identyfikowanie aplikacji, które korzystają z interfejsów API us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b304f65d70361b3fdb4dbf93291f408be93d363f
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -78,6 +78,10 @@ Jeśli aplikacja poczty e-mail nie można renderować komunikatu, ponieważ nie 
 
 Usługa Azure RMS jest ściśle zintegrowana z aplikacjami Word, Excel, PowerPoint i Outlook, w których ta funkcja jest często określana jako Zarządzanie prawami do informacji (IRM, Information Rights Management). 
 
+Zobacz również: [Office Applications Service Description](https://technet.microsoft.com/library/office-applications-service-description.aspx) (Opis usługi aplikacji pakietu Office)
+
+#### <a name="windows-computers-for-information-rights-management-irm"></a>Komputery z systemem Windows zarządzania prawami do informacji (IRM)
+
 Następujące pakiety klienta pakietu Office obsługują ochronę plików i wiadomości e-mail na komputerach z systemem Windows przy użyciu usługi Azure RMS:
 
 - Usługa Office 365 ProPlus: pakiety Office 2016 i Office 2013
@@ -102,17 +106,19 @@ Usługa Azure RMS z pakietem Office Professional Plus 2010 z dodatkiem Service P
 
 - Nie obsługuje zastępowanie ochrony szablonu z uprawnień niestandardowych, które użytkownik wybiera z klientem usługi Azure Information Protection. W tym scenariuszu najpierw należy usunąć oryginalną ochronę aby można było zastosować uprawnienia niestandardowe.
 
+#### <a name="mac-computers-for-information-rights-management-irm"></a>Komputery Mac zarządzania prawami do informacji (IRM)
+
 Następujące pakiety klienta pakietu Office obsługują ochronę plików i wiadomości e-mail w systemie macOS przy użyciu usługi Azure RMS:
 
 - Office 365 ProPlus: Office 2016
 
 - Office Standard 2016 dla komputerów Mac
 
-Zobacz również: [Office Applications Service Description](https://technet.microsoft.com/library/office-applications-service-description.aspx) (Opis usługi aplikacji pakietu Office)
+Porada: Aby zacząć korzystać z ochrony dokumentów pakietu Office dla komputerów Mac, może być przydatne poniższe często zadawane pytania: [sposób konfigurowania komputera Mac do ochrony i śledzić dokumenty?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>Więcej informacji na temat aplikacji Azure Information Protection dla systemów iOS i Android
 
-Aplikacja RMS sharing dla systemu iOS i Android została zastąpiona przez aplikację Azure Information Protection. Zawiera ona te same funkcje i dodatkowo obsługuje chronione prawami wiadomości e-mail i pliki PDF w usłudze SharePoint Online.
+Azure Information Protection aplikacji viewer dla systemu iOS i Android zastępuje aplikacji RMS sharing dla tych urządzeń. Zawiera ona te same funkcje i dodatkowo obsługuje chronione prawami wiadomości e-mail i pliki PDF w usłudze SharePoint Online.
 
 Jeśli Twoje urządzenia z systemami iOS i Android są zarejestrowane w usłudze Microsoft Intune, możesz wdrożyć tę aplikację i zarządzać nią za pomocą aplikacji zarządzanej przez zasady. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i wdrażanie zasad zarządzania aplikacjami mobilnymi w konsoli usługi Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) w dokumentacji usługi Intune. W kroku 2 tej dokumentacji usługi Intune należy skorzystać z instrukcji dotyczących publikowania aplikacji zarządzanej przez zasady.
 
@@ -135,7 +141,9 @@ Pobierz odpowiednią aplikację, korzystając z linków na [stronie usługi Micr
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Więcej informacji na temat aplikacji do udostępniania usługi Rights Management
 
-Ta aplikacja zostaje zastąpiona przez klienta usługi Azure Information Protection. Nadal zaleca się korzystanie z niej na komputerach Mac i urządzeniach z systemem Windows Phone.
+Ta aplikacja zostaje zastąpiona przez klienta usługi Azure Information Protection. Jest nadal wymagana w przypadku urządzeń przenośnych Windows Phone do wyświetlania plików chronionych. 
+
+Dla komputerów Mac oferuje podglądu chronione pliki PDF (ppdf), chroniony tekst, obrazy i objęte ochroną plików. Aplikacji RMS sharing dla komputerów Mac można również chronić pliki obrazów, ale nie do innych plików. Aby chronić pliki pakietu Office, należy użyć pakietu Office dla komputerów Mac. 
 
 Więcej informacji można znaleźć w następujących zasobach:
 
@@ -145,7 +153,7 @@ Więcej informacji można znaleźć w następujących zasobach:
 
 -   [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla platform urządzeń przenośnych](https://technet.microsoft.com/dn451248)
 
-Pobierz aplikację dla komputerów Mac i urządzeń Windows Phone, korzystając z linków na [stronie usługi Microsoft Azure Information Protection ](http://go.microsoft.com/fwlink/?LinkId=303970).
+Pobierz przeglądarkę dla komputerów Mac i Windows Phone przy użyciu łącza na [strony Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Więcej informacji o innych aplikacjach, które obsługują usługę Azure Information Protection

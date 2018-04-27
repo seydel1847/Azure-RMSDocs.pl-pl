@@ -4,7 +4,7 @@ description: Informacje na temat plików i dzienników użycia klienta usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13f82bc12fd77d4f145b059c2962af01094760c3
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: cb6f68e2d2009a67baadf1146f3c52cf7cf36aa2
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręcznik administratora: Pliki klienta Azure Information Protection i rejestrowanie użycia klienta
 
@@ -83,9 +83,10 @@ Klient rejestruje aktywności użytkownika w lokalnym dzienniku zdarzeń systemu
 - Ochrona przed akcją i po niej
     
 - Uzasadnienie użytkownika (jeśli ma zastosowanie)
-    
 
-Aby uzyskać informacje na temat dzienników użycia usługi Azure Rights Management, zobacz artykuł [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md)
+- Uprawnienia niestandardowe (jeśli jest to wymagane), która zawiera [prawa użytkowania według nazwy kodowania](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) dla określonych użytkowników, grup lub organizacji
+    
+Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md)
 
 
 
