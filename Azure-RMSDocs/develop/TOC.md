@@ -5,6 +5,7 @@
 # [Wdrażanie i korzystanie z klienta](/information-protection/rms-client/use-client)
 # [Tworzenie i dostosowywanie aplikacji](developers-guide.md)
 ## [Przewodnik dewelopera](developers-guide.md)
+## Microsoft Information Protection
 ## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 ### [Przegląd](overview.md)
 ### [Wprowadzenie](get-started.md)

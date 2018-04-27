@@ -16,6 +16,7 @@
 ### [Zasady domyślne](configure-policy-default.md)
 ### [Konfigurowanie ustawień zasad](configure-policy-settings.md)
 ### [Tworzenie nowej etykiety](configure-policy-new-label.md)
+### [Dodawanie lub usuwanie etykiety](configure-policy-add-remove-label.md)
 ### [Usuwanie lub zmiana kolejności etykiet](configure-policy-delete-reorder.md)
 ### [Zmiana etykiety](configure-policy-change-label.md)
 ### [Konfigurowanie ochrony](configure-policy-protection.md)
