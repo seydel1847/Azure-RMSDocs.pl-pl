@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów do wdrażania klienta 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d52026fcffd3a3a0b51e361e6671f247eac5296d
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -71,20 +71,6 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
     Nawet jeśli nie skonfigurowano tego ustawienia zasad grupy **Lista zarządzanych dodatków**, konieczne może być skonfigurowanie go w przypadku otrzymywania raportów, że dodatek Microsoft Azure Information Protection zostanie wyłączony. Gdy ten dodatek jest wyłączony, użytkownicy nie widzą paska usługi Azure Information Protection w aplikacji pakietu Office.
     
     Aby uzyskać więcej informacji na temat tego ustawienia zasad grupy, zobacz [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (Brak załadowanych dodatków z powodu ustawień zasad grupy dla pakietów Office 2013 i Office 2016).
-
-- Dla wersji pakietu Office 16.0.8628.2010 i nowsze (kliknij instalacja): Włączanie obsługi starszych monitorów
-    
-    Uwaga: Ta wymagań wstępnych nie jest wymagane dla bieżącej wersji preview klienta Azure Information Protection. 
-    
-    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza aplikacje pakietu Office dla tych wersji pakietu Office, może być konieczne włączenie obsługi starszych monitorów. Gdy pasek nie są wyświetlane poprawnie w tym scenariuszu, można napotkać ona wyświetlana jako **AdxTaskPane**. 
-    
-    Aby skonfigurować aplikacje pakietu Office tego wymagania: **pliku** > **opcje** > **ogólne**  >   **Opcje interfejsu użytkownika**:
-    
-    - Jeśli widzisz opcję **korzystając z wielu ekranów** ustawiono **Optymalizuj pod kątem najlepszego wyglądu**, wybierz pozycję **Optymalizuj pod kątem zgodności (aplikacji wymagane jest ponowne uruchomienie)** Zamiast tego. 
-        
-    - Jeśli zobaczysz, że opcja **Użyj najlepsze ustawienia dla moich wyświetlania** jest zaznaczony, Usuń to pole wyboru.
-    
-    - Jeśli żadna z tych opcji, nie jest wymagana żadna konfiguracja dodatkowych.
 
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.
@@ -197,7 +183,7 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
     
     |Wersja pakietu Office|System operacyjny|Oprogramowanie|Akcja|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2016|Wszystkie obsługiwane wersje|64-bitowe: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32-bit: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> Wersja: 1.0|Instalowanie|
+    |Office 2016|Wszystkie obsługiwane wersje|64-bitowe: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=55007)<br /><br />32-bitowe: [KB3178666](https://www.microsoft.com/en-us/download/details.aspx?id=54999)<br /><br /> Wersja: 1.0|Instalowanie|
     |Office 2013|Wszystkie obsługiwane wersje|64-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32-bitowe: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />Wersja: 1.0|Instalowanie|
     |Pakiet Office 2010|Wszystkie obsługiwane wersje|[Asystent logowania w Usługach online firmy Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> Wersja: 2.1|Instalowanie|
     |Pakiet Office 2010|Windows 8.1 i Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> Numer wersji uwzględniony w nazwie pliku: v3|Zainstaluj Jeśli KB2843630 lub KB2919355 nie jest zainstalowana.|
@@ -211,16 +197,9 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Jak zainstalować skaner usługi Azure Information Protection
 
-Obecnie w wersji ogólnodostępnej (GA) skanera usługi Azure Information Protection jest osobny plik do pobrania o nazwie **AzInfoProtectionScanner.exe** na [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Kolejne wersje skanera zostaną uwzględnione w kliencie usługi Azure Information Protection.
+Moduł programu PowerShell, która jest zawarta w kliencie usługi Azure Information Protection zawiera polecenia cmdlet, aby zainstalować i skonfigurować skanera. Jednak aby używać skanera, należy zainstalować pełną wersję klienta i nie można zainstalować tylko moduł programu PowerShell.
 
-Bieżąca wersja klienta usługi Azure Information Protection zawiera również skanera usługi Azure Information Protection. 
-
-Moduł PowerShell dołączonego skanera i klienta w wersji zapoznawczej zawiera polecenia cmdlet, aby zainstalować i skonfigurować skanera.
-
-Aby zainstalować klienta skanera, wykonaj instrukcje sam w poprzednich sekcjach. Należy pamiętać, że jeśli nie potrzebujesz wszystkich składników klienta, takich jak dodatku pakietu Office oraz przeglądarkę, można zainstalować tylko moduł programu PowerShell. Na przykład można uruchomić plik wykonywalny z `PowerShellOnly=true /quiet`.
-
-Po zainstalowaniu klienta, możesz następnie zainstalować skanera. Aby uzyskać instrukcje, zobacz [wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki](../deploy-use/deploy-aip-scanner.md).
-
+Aby zainstalować klienta skanera, wykonaj instrukcje sam w poprzednich sekcjach. Następnie możesz zainstalować skanera. Aby uzyskać instrukcje, zobacz [wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki](../deploy-use/deploy-aip-scanner.md).
 
 ## <a name="next-steps"></a>Następne kroki
 Po zainstalowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:

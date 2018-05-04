@@ -4,25 +4,22 @@ description: Dowolne etykiety, które użytkownicy widzą na pasku usługi Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 9bd9c249cdd969a2742390831c2feef8d515b837
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: a8c745ac51c34139792367d55c5a83592c191571
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
->[!NOTE]
-> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
- 
 Możesz zmienić lub dostosować dowolne etykiety, które użytkownicy widzą na pasku lub z ochrony informacji **Chroń** na Wstążce pakietu Office, konfigurując etykiet w portalu Azure.
 
 Na przykład można zmienić etykiety lub sublabel nazwy, etykietki narzędzia, kolor i kolejność. Można zmienić, czy etykieta oznaczeń wizualnych, np. stopki lub znaku wodnego. Można również zmienić, czy etykieta ma zastosowanie ochrony i zalecaną lub automatyczną klasyfikację.

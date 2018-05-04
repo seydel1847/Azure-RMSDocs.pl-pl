@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -27,9 +27,6 @@ Poniższe informacje służą do tworzenia zaawansowanych konfiguracji, które m
 Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawień zaawansowanych, które należy skonfigurować w witrynie Azure Portal, a następnie opublikować do pobrania przez klientów.  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
-
->[!NOTE]
-> Te instrukcje odzwierciedlają najnowsze aktualizacje do portalu Azure. Jeśli nie widzisz **klasyfikacje** opcji menu i nadal zobacz **publikowania** opcji instrukcji dotyczących nawigacji zostanie dokładnie zgodne, zostanie wyświetlony. Jeśli tak jest, należy wziąć pod uwagę wracając do tej procedury w kilka dni po zaktualizowaniu dzierżawy najnowsze zmiany.
 
 1. Jeśli jeszcze tego nie zrobiono, w nowym oknie przeglądarki, [Zaloguj się do portalu Azure](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal), a następnie przejdź do **usługi Azure Information Protection** bloku.
 

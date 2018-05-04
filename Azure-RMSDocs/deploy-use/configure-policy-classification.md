@@ -4,24 +4,21 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
 >*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> W tym artykule odzwierciedla najnowsze aktualizacje do portalu Azure, które pozwalają tworzyć etykiety niezależnie od globalnych zasad lub zakresie zasad. Opcję, aby opublikować zasady zostaną również usunięte. Jeśli dzierżawy nie jest jeszcze zaktualizowane dla tych zmian — na przykład nadal zobacz **publikowania** opcja dla usługi Azure Information Protection i nie ma **klasyfikacje** opcji menu — należy odczekać kilka dni i następnie wróć do niniejszych instrukcji.
 
 W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety. 
 
@@ -48,7 +45,7 @@ W tym przykładzie użytkownik może kliknąć **teraz zmienić** Aby zastosowa�
 
 - Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint, gdy dokumenty są zapisywane. Nie można użyć zalecana klasyfikacja dla programu Outlook.
     
-    Zalecana klasyfikacja służącego do dokumentów, które zostały wcześniej etykietę, lub bez wyższej klasyfikacji. 
+    Nie można użyć zalecana klasyfikacja dokumentów, które zostały wcześniej oznaczenie wyższy klasyfikacji. 
 
 Aby zmienić to zachowanie, dzięki czemu klienta Azure Information Protection okresowo sprawdza, czy dokumenty reguł warunku, które można określić. Ta konfiguracja wymaga [Zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) który jest obecnie w przeglądzie.
 

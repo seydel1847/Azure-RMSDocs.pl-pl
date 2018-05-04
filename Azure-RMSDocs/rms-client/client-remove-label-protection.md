@@ -4,7 +4,7 @@ description: Instrukcje pozwalające usunąć etykiety klasyfikacji i ochrony z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6e68a3ab1aca0d32f8105bad7d2b5e8985dab1ae
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ce5a6de0c2f0ab1ad374b4a0fbc01e755f28abe3
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuń etykiety i ochronę plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub chronione przez usługę Rights Management
 
@@ -47,6 +47,8 @@ Jeśli ikona **Usuń etykietę** nie jest od razu dostępna, kliknij najpierw ik
 
 > [!NOTE]
 > Jeśli nie widzisz paska usługi Information Protection w aplikacjach pakietu Office:
+>
+> - Jeśli widzisz **Chroń** na Wstążce: Wybierz **Chroń**, a następnie wybierz **Pokaż pasek**.
 > 
 > - Być może nie został [zainstalowany](install-client-app.md) klient usługi Azure Information Protection lub klient jest uruchomiony w [trybie z samą ochroną](client-protection-only-mode.md).
 
