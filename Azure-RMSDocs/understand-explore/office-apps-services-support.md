@@ -4,7 +4,7 @@ description: Jak aplikacje pakietu Office przez użytkownika końcowego, takich 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f7ca9a9e85a1d76d2d7bdc505c884ee9f02ddb42
-ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
+ms.openlocfilehash: caf89d6df51adcd556db319a8140cbe936102ef3
+ms.sourcegitcommit: fa64f9c2a4d367d7586d64def0fd02764ad2e00b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/06/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -46,7 +46,7 @@ Korzystając z usługi Exchange Online lub Exchange Server, można skonfigurowa�
 
 -   **Zasady ochrony** dla klientów programu Outlook skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail przeznaczonych dla określonych odbiorców. Na przykład wewnętrzne wiadomości e-mail wysyłane do działu prawnego mogą być odczytywane tylko przez personel działu prawnego i nie mogą być przesyłane dalej. Przed wysłaniem wiadomości e-mail użytkownicy mogą zobaczyć, jakie zabezpieczenia zostały w niej zastosowane, oraz usunąć tę ochronę zgodnie ze swoimi preferencjami. Wiadomości e-mail są szyfrowane przed ich wysłaniem. Więcej informacji zawierają artykuły dotyczące [reguł ochrony programu Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) oraz [tworzenia reguły ochrony programu Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) dostępne w bibliotece programu Exchange.
 
--   **Reguły transportu** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail wiadomości. Te zasady są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwala użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail wysyłanych przez urządzenia przenośne. Ponadto te zasady nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
+-   **Reguły przepływu poczty** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail wiadomości. Te zasady są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwala użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail wysyłanych przez urządzenia przenośne. Ponadto te zasady nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
 
 -   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\)aspx) w bibliotece programu Exchange.
 
@@ -78,11 +78,11 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > [!NOTE]
 > Obecnie istnieją pewne ograniczenia dotyczące używania usługi IRM z programem SharePoint:
 > 
-> - Nie można używać domyślnych lub niestandardowych szablonów zarządzanych w witrynie Azure Portal. 
+> - Nie można użyć domyślnej lub niestandardowej ochrony szablonów, które można zarządzać w portalu Azure. 
 > 
-> - Pliki, które mają rozszerzenie nazwy pliku ppdf chronione pliki PDF nie są obsługiwane. Pliki, które mają rozszerzenie nazwy pliku PDF i które są natywnie chronione przez usługę Rights Management są obsługiwane, gdy używasz czytnika plików PDF z natywną obsługą usługi Rights Management.
+> - Pliki, które mają rozszerzenie nazwy pliku ppdf chronione pliki PDF nie są obsługiwane. Pliki, które mają rozszerzenie nazwy pliku PDF są obsługiwane i po pobraniu mogą być otwierane przez aplikację PDF z natywną obsługą usługi Rights Management. Na przykład klient usługi Azure Information Protection dla systemu Windows zawiera podgląd tych chronionych plików PDF. Alternatywne przeglądarki plików PDF są wymienione w [tabeli aplikacji obsługujących usługę RMS](../get-started/requirements-applications.md#rms-enlightened-applications).
 > 
-> - Współtworzenie nie jest obsługiwane. Ponieważ musi wyewidencjonować i pobierania dokumentu w bibliotece chronione usługa IRM, jedna osoba może go edytować w czasie.
+> - Współtworzenie, gdy więcej niż jedna osoba modyfikacje dokumentu w tym samym czasie, nie jest obsługiwana. Aby edytować dokument w bibliotece chronione usługa IRM, musi najpierw Wyewidencjonuj dokument i go pobrać, a następnie edytować go w aplikacji pakietu Office. W rezultacie tylko jedna osoba może edytować dokument naraz.
 
 Dla bibliotek, które nie są IRM chronionego, jeśli chroniony plik, który następnie przekazać do programu SharePoint lub usługi OneDrive, następujące nie współpracujesz z tego pliku: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur, zbieranie elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP).
 

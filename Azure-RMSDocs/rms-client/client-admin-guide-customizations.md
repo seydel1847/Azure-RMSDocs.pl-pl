@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
+ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -56,10 +56,21 @@ Niezależnie od tego ustawienia klient usługi Azure Information Protection post
 
 Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i użytkownik otwiera Word, Excel, PowerPoint lub programie Outlook **Gratulacje!** zostanie wyświetlona strona krótkie instrukcje jak nowy pasek Information Protection umożliwia wybranie etykiety. Edytując rejestr, można pominąć tej strony.
 
-Znajdź nazwę wartości następujących i Ustaw dane wartości **0**:
+1. Jeśli klucz rejestru nie istnieje, utwórz go:
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+2. Jeśli wartość (32-bitowy) DWORD (REG-DWORD) o nazwie **EnableWelcomeExperience** nie istnieje, utwórz go i ustaw wartość danych **0**:
 
+## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>Pomiń "co to jest nowa w programie Azure Information Protection?" Strona
+
+Jeśli najpierw zainstalowany lub uaktualnione na komputerze klienta usługi Azure Information Protection i Word, Excel, PowerPoint lub programie Outlook, zostanie wyświetlony pasek usługi Azure Information Protection **What's new in Azure Information Protection?** zostanie wyświetlona strona, aby informować użytkowników o uprawnienia niestandardowe i śledzenie ich użycia. Edytując rejestr, można pominąć tej strony.
+
+1. Jeśli klucz rejestru nie istnieje, utwórz go:
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
+
+2.  Jeśli wartość ciągu (REG SZ) o nazwie **WhatsNewVersion** nie istnieje, utwórz go i ustaw wartość danych **1.4**.
 
 ## <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
