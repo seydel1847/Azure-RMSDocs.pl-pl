@@ -4,7 +4,7 @@ description: Sprawdź, czy masz konta użytkowników i grup, których potrzebuje
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
+ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -41,24 +41,6 @@ W przypadku tworzenia użytkowników i grup za pomocą pierwszych trzech metod z
 ## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Jak usługa Azure Information Protection korzysta z użytkowników i grup
 
 Istnieją trzy scenariusze dotyczące korzystania z użytkowników i grup w usłudze Azure Information Protection:
-
-- **Do przypisywania etykiety użytkownikom** użycia etykietowania i klasyfikacji. Tylko administratorzy wybierz tych grup:
-    
-    - Domyślne zasady usługi Azure Information Protection są automatycznie przypisywane do wszystkich użytkowników w usłudze Azure AD dla dzierżawy. Można jednak również przypisać dodatkowe etykiety do określonych użytkowników lub grup, korzystając z zasad w zakresie.
-
-- **Do przypisywania praw użytkowania i kontroli dostępu** w przypadku chronienia dokumentów i wiadomości e-mail przy użyciu usługi Azure Rights Management. Tych użytkowników i grupy mogą wybierać administratorzy i użytkownicy:
-
-    - Prawa użytkowania określają, czy użytkownik może otworzyć dokument lub wiadomość e-mail, i jak może ich używać, na przykład czy może je tylko odczytywać, odczytywać i drukować, czy też odczytywać i edytować.
-
-    - Opcje kontroli dostępu obejmują sprawdzanie daty wygaśnięcia ważności oraz tego, czy do uzyskania dostępu jest wymagane połączenie z Internetem.
-
-- **Do konfigurowania usługi Azure Rights Management** w celu obsługi określonych scenariuszy. Z tego względu te grupy mogą wybierać tylko administratorzy. Przykłady obejmują konfigurowanie następujących elementów:
-
-    - Administratorzy — dzięki temu wyznaczone usługi lub osoby mogą otwierać zaszyfrowaną zawartość, jeśli jest to wymagane do zbierania elektronicznych materiałów dowodowych lub odzyskiwania danych.
-
-    - Delegowana administracja usługą Azure Rights Management.
-
-    - Kontrolki dołączania do obsługi wdrożenia etapowego.
 
 **Do przypisywania etykiet do użytkowników** podczas konfigurowania zasad usługi Azure Information Protection, dzięki czemu w dokumentach i wiadomościach e-mail można stosować etykiety. Tych użytkowników i grupy mogą wybierać tylko administratorzy:
 
