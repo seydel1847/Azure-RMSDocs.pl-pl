@@ -4,17 +4,17 @@ description: Krok 2 samouczka wprowadzającego, dzięki któremu można szybko w
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Krok 2: Konfigurowanie zasad usługi Azure Information Protection
 
@@ -55,11 +55,13 @@ W naszym samouczku zmienimy kilka z tych ustawień zasad, aby zobaczyć, jak dzi
     
     Nie może być konieczne ustawienie to można zmienić, ponieważ wartość domyślna zależy od daty uzyskać subskrypcję. Uprawnienia niestandardowe w dalszej części tego samouczka zostanie wykorzystany do udziału chronionego dokumentu z użytkownikiem, który określisz po kliknięciu prawym przyciskiem myszy plik w Eksploratorze plików.
 
+4. Wybierz **zapisać** na tym **zasad: globalne** bloku i jeśli zostanie wyświetlony monit o potwierdzenie tej akcji, zaznacz **OK**. Zamknij ten blok.
+
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>Tworzenie nowej etykiety dla ochrony, znaczniki wizualne i warunku z monitem o klasyfikacji
 
 Teraz utworzymy nowe sublabel dla **poufne**.
 
-1. Kliknij prawym przyciskiem myszy **poufne** etykiety, a następnie wybierz **Dodaj etykietę podrzędną**.
+1. Z **klasyfikacje** > **etykiety** opcji menu: kliknij prawym przyciskiem myszy **poufne** etykiety, a następnie wybierz **Dodaj etykietę podrzędną**.
     
     Jeśli nie masz etykietę o nazwie **poufne**, można wybrać inną etykietę, lub można zamiast tego utworzyć nowe etykiety i nadal czynności opisane w samouczku z niewielkie różnice.
 
@@ -125,9 +127,13 @@ Teraz utworzymy nowe sublabel dla **poufne**.
 
 12. W polu **Wprowadź informacje dla celów wewnętrznych** wpisz **Tylko do testów**.
 
-13. Kliknij przycisk **zapisać** na tym **etykietę podrzędną** bloku. Następnie ponownie kliknij przycisk **Zapisz** w bloku **Zasady: Globalne**.
-    
-    Pojawi się nowy sublabel, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Przykład:
+13. Kliknij przycisk **zapisać** na tym **etykietę podrzędną** bloku. Jeśli zostanie wyświetlony monit o potwierdzenie, kliknij przycisk **OK**. Nowej etykiety jest utworzony i zapisany, ale jeszcze nie zostały dodane do zasad.
+
+14. Z **klasyfikacje** > **zasady** opcji menu: Wybierz **Global** ponownie, a następnie wybierz **etykietyDodajlubusuń**łącza po etykiet.
+
+15. Z **zasad: Dodawanie lub usuwanie etykiety** bloku, wybierz etykietę, którą właśnie utworzony, sublabel o nazwie **Finance**i kliknij przycisk **OK**.
+
+16. Na **zasad: globalne** bloku, pojawi się Twoje nowe sublabel w globalnych zasad, która jest skonfigurowana pod kątem oznaczeń wizualnych i ochrony. Przykład:
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowana zasada domyślna](../media/info-protect-policy-configuredv2.png)
     
@@ -135,6 +141,9 @@ Teraz utworzymy nowe sublabel dla **poufne**.
     
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — skonfigurowane ustawienia](../media/info-protect-settings-configuredv2.png)
     
+
+17. Kliknij przycisk **zapisać** na tym **zasad: globalne** bloku. Jeśli zostanie wyświetlony monit o potwierdzenie tej akcji, kliknij przycisk **OK**.
+
 Po zakończeniu tego samouczka możesz zamknąć portal Azure lub zostawić otwarty w celu wypróbowania innych opcji konfiguracji.
 
 Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilka zmian, następnym krokiem jest zainstalowanie klienta usługi Azure Information Protection.

@@ -4,17 +4,17 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: f7be04dead7cf97f6fb03ba5fd6201c88ff61c00
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -87,7 +87,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     - **Ustaw uprawnienia**: Aby zdefiniować nowe ustawienia ochrony w tym portalu.
     
-    - **Uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**: pozwala określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook lub Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
+    - **Ustaw uprawnienia zdefiniowane przez użytkownika (wersja zapoznawcza)**: pozwala określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook lub Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
         
         Jeśli wybierzesz opcję dla programu Outlook: Etykieta jest wyświetlana w programie Outlook i efekty, gdy użytkownicy mają zastosowanie etykiety jest taka sama jak opcja nie przekazuj.
         
@@ -146,7 +146,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     Aby uzyskać instrukcje określić szablon identyfikator GUID i adres URL licencjonowania, zobacz [lokalizowanie informacji używanych do określania ochrony usług AD RMS z etykietą usługi Azure Information Protection](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label).
     
-    Opcja uprawnienia zdefiniowane przez użytkownika umożliwia użytkownikom określić kto powinien mieć uprawnienia i są te uprawnienia. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook (ustawienie domyślne) lub programu Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
+    Opcja uprawnienia użytkownika umożliwia użytkownikom, określ, kto powinien mieć uprawnienia i te uprawnienia są. Można następnie dostosować tę opcję i wybierz tylko w programie Outlook (ustawienie domyślne) lub programu Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykiety jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
     
     Jeśli wybierzesz opcję dla programu Outlook: Etykieta jest wyświetlana w programie Outlook i efekty, gdy użytkownicy mają zastosowanie etykiety jest taka sama jak opcja nie przekazuj.
     
@@ -181,7 +181,7 @@ Użytkownicy, wpisz adres e-mail usługi Gmail w **do** pola.  Następnie w ich 
 
 1. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
-2. Wybierz **uprawnienia (wersja zapoznawcza) zdefiniowane przez użytkownika zestaw**.
+2. Wybierz **uprawnienia są zdefiniowane przez użytkownika (wersja zapoznawcza)**.
 
 3. Upewnij się, że jest zaznaczona Poniższa opcja: **w programie Outlook nie przesyłaj dalej zastosować**.
 
@@ -244,7 +244,7 @@ Gdy użytkownicy określić adresy e-mail w **do** okno, adresy muszą być tego
     
 2. Upewnij się, że **ustawić uprawnienia** jest zaznaczone i wybierz **dodać uprawnienia**.
 
-3. Na **dodać uprawnienia** bloku: Aby udzielić uprawnień dla użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie, lub wybierz  **Przeglądanie katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych lub jeśli wolisz wpisz adres e-mail, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD lub nazwę domeny.
+3. Na **dodać uprawnienia** bloku: Aby udzielić uprawnień dla użytkowników w organizacji, wybierz **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie** wybierz wszystkich użytkowników w dzierżawie. To ustawienie wyłącza konta gościa. Lub wybierz **przeglądania katalogu** wybrać określoną grupę. Aby udzielić uprawnień dla użytkowników zewnętrznych lub jeśli wolisz wpisz adres e-mail, wybierz **wprowadź szczegóły** i wpisz adres e-mail użytkownika lub grupy usługi Azure AD lub nazwę domeny.
     
     Powtórz ten krok w celu określenia dodatkowych użytkowników, którzy powinni mieć te same uprawnienia.
 

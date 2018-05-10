@@ -5,7 +5,7 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 05/09/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 7c6acb5a4b5c8f33193cbf5d8833201e0d68287e
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
@@ -103,7 +103,7 @@ Teraz, po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu
 
 3.  Na stronie **Twoje dokumenty udostępnione** zobaczysz nazwę udostępnionego dokumentu. W tym momencie jest to jedyny wyświetlany plik, ale liczba pozycji na liście będzie rosnąć wraz z udostępnianiem kolejnych dokumentów chronionych.
 
-    Na tej stronie możesz zobaczyć czas udostępnienia dokumentu (kiedy wysłano wiadomość e-mail z chronionym dokumentem), datę ostatniej aktywności oraz nazwę odbiorcy, do którego wysłano wiadomość e-mail. Kliknij nazwę dokumentu, aby uzyskać dodatkowe informacje.
+    Na tej stronie widoczny będzie czas udostępnienia dokumentu (kiedy wysłano wiadomość e-mail z chronionym dokumentem), jego bieżący stan (aktywna, odwołane lub wygasłe) oraz nazwę odbiorcy, do którego wysłano wiadomość e-mail do. Kliknij nazwę dokumentu, aby uzyskać dodatkowe informacje.
 
 4.  Na nowej stronie, która zawiera nazwę klikniętego pliku, zobaczysz szczegółowe informacje dotyczące wyłącznie tego dokumentu oraz listę opcji dostępnych dla tego dokumentu (**Lista**, **Oś czasu**, **Mapa**, **Ustawienia**).
 
