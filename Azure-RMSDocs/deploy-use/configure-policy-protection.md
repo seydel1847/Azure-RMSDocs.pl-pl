@@ -4,14 +4,14 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: f7be04dead7cf97f6fb03ba5fd6201c88ff61c00
-ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
+ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
+ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/10/2018
@@ -103,7 +103,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     Wybierz **dodać uprawnienia**i na **dodać uprawnienia** bloku, wybierz pierwszy zbioru użytkowników i grupy, które będą mieć prawa do korzystania z zawartości, które będą chronione za pomocą wybranej etykiety:
     
-    - Wybierz **wybierz z listy** dodać wszystkich użytkowników w organizacji lub przeglądanie katalogu.
+    - Wybierz **wybierz z listy** można dodać wszystkich użytkowników z Twojej organizacji, wybierając **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**. To ustawienie wyłącza konta gościa. Lub, lub wyszukaj katalog.
         
         Użytkownicy lub grupy musi mieć adres e-mail. W środowisku produkcyjnym użytkowników i grup prawie zawsze mieć adres e-mail, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
         
