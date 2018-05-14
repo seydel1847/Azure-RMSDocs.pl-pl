@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
-ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
+ms.openlocfilehash: de7829532139556b6407506d61bc89de936b3739
+ms.sourcegitcommit: 9e2719ab070fa2d1e3ac8f6f11e57640939a1dff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -367,13 +367,15 @@ W tym celu:
 
 2. Tworzenie reguły przepływu poczty programu Exchange dla każdej etykiety: zastosowania reguły klasyfikacji, który zostanie skonfigurowany zawierają właściwości wiadomości i modyfikowanie właściwości wiadomości, aby ustawić nagłówek komunikatu. 
 
-    Informacje, jakie należy określić dla nagłówka wiadomości, można zidentyfikować, sprawdzając nagłówki internetowe wiadomości e-mail wysłanej i sklasyfikowanej za pomocą etykiety usługi Azure Information Protection. Wyszukaj nagłówek **msip_labels** i ciąg, który następuje zaraz po nim, łącznie ze średnikiem. Korzystając z poprzedniego przykładu:
+     Informacje, jakie należy określić dla nagłówka wiadomości, można zidentyfikować, sprawdzając nagłówki internetowe wiadomości e-mail wysłanej i sklasyfikowanej za pomocą etykiety usługi Azure Information Protection. Wyszukaj nagłówek **msip_labels** i ciąg, który następuje zaraz po nim, łącznie ze średnikiem. Przykład:
     
     **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
     
     Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Przykład:
     
     ![Przykład reguły przepływu poczty w usłudze Exchange Online, który ustawia nagłówek komunikatu dla określonej etykiety usługi Azure Information Protection](../media/exchange-rule-for-message-header.png)
+    
+    Uwaga: Etykieta jest sublabel, możesz należy również określić etykiecie nadrzędnej przed sublabel w wartości nagłówka w tym samym formacie. Na przykład jeśli sublabel Twojego identyfikatora GUID 27efdf94-80a0 - 4d-02-b88c-b615c12d69a9, wartość może wyglądać następujące czynności: `MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
 Aby przetestować tę konfigurację, należy pamiętać, że występuje często opóźnienie podczas tworzenia lub edytowania reguły przepływu poczty (na przykład, zaczekaj godzinę). Gdy zasada jest włączona, następujące zdarzenia teraz się zdarzyć, gdy użytkownicy za pomocą programu Outlook w sieci web lub klienta urządzenia przenośnego, który obsługuje protokół Exchange ActiveSync IRM: 
 
