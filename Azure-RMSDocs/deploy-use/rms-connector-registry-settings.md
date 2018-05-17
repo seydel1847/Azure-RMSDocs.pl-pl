@@ -4,7 +4,7 @@ description: Informacje dotyczące ustawień rejestru na serwerach używających
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc0cb2a7349bf19ee19a42bdb283cd86297748bc
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9334a781378ffdbe76dd9fe9d78f5db5913766d1
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Ustawienia rejestru dla łącznika usługi Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 W poniższych sekcjach można użyć tabel tylko wtedy, gdy chcesz ręczne dodanie lub sprawdzenie ustawień rejestru na serwerach z systemem Exchange, SharePoint lub Windows Server. Te ustawienia rejestru Konfigurowanie serwerów do używania [łącznika usługi RMS](deploy-rms-connector.md). Zalecana metoda konfiguracji serwerów polega na użyciu narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS.
@@ -56,7 +56,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** https://*\<Adres_url_dzierżawy > * /_wmcs/certification
+**Dane:** https://*\<Adres_url_dzierżawy >*  /_wmcs/certification
 
 ---
 
@@ -66,7 +66,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** https://*\<Adres_url_dzierżawy > * /_wmcs/Licensing
+**Dane:** https://*\<Adres_url_dzierżawy >*  /_wmcs/Licensing
 
 ---
 
@@ -107,7 +107,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** https://*< \YourTenantURL > * /_wmcs/certification
+**Dane:** https://*< \YourTenantURL >*  /_wmcs/certification
 
 ---
 
@@ -117,7 +117,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** https://*< \YourTenantURL > * /_wmcs/Licensing
+**Dane:** https://*< \YourTenantURL >*  /_wmcs/Licensing
 
 ---
 
@@ -154,7 +154,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Typ:** Reg_SZ
 
-**Wartość:** https://*< \YourTenantURL > * /_wmcs/licensing
+**Wartość:** https://*< \YourTenantURL >*  /_wmcs/licensing
 
 
 **Dane:** jedna z poniższych pozycji w zależności od tego, czy do komunikacji między serwerem programu SharePoint a łącznikiem usługi RMS jest używany protokół HTTP czy HTTPS:
@@ -203,7 +203,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** http://*< \ConnectorFQDN > * /_wmcs/licensing
+**Dane:** http://*< \ConnectorFQDN >*  /_wmcs/licensing
 
 ---
 
@@ -213,7 +213,7 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 **Wartość:** domyślna
 
-**Dane:** http://*< \ConnectorFQDN > * /_wmcs/certification
+**Dane:** http://*< \ConnectorFQDN >*  /_wmcs/certification
 
 
 Powrót do tematu [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md)

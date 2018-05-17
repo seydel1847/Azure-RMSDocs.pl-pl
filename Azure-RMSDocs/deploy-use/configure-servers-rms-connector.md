@@ -4,7 +4,7 @@ description: Informacje ułatwiające skonfigurowanie serwerów lokalnych, któr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/16/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: dd9063cfda08f0b580ca4f669bb5385b91c25acb
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -224,15 +224,17 @@ Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną we
 ## <a name="configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector"></a>Konfigurowanie serwera plików dla funkcji infrastruktury klasyfikacji plików do używania łącznika
 Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plików do ochrony dokumentów pakietu Office, serwer plików mieć jeden z następujących systemów operacyjnych:
 
--   Windows Server 2012 R2
+- Windows Server 2016
 
--   Windows Server 2012
+- Windows Server 2012 R2
+
+- Windows Server 2012
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>Konfigurowanie serwerów plików do używania łącznika
 
-1.  Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, dzięki czemu serwerach plików można użyć łącznika usług RMS.
+1. Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, dzięki czemu serwerach plików można użyć łącznika usług RMS.
 
-2.  Na serwerach plików skonfigurowanych dla infrastruktury klasyfikacji plików, które będą komunikować się z łącznikiem usługi RMS, wykonaj jedną z następujących czynności:
+2. Na serwerach plików skonfigurowanych dla infrastruktury klasyfikacji plików, które będą komunikować się z łącznikiem usługi RMS, wykonaj jedną z następujących czynności:
 
     -   Uruchom narzędzie do konfiguracji serwera dla łącznika usługi Microsoft RMS. Aby uzyskać więcej informacji, zobacz temat [Sposób użycia narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector) w tym artykule.
 
@@ -244,7 +246,7 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
     - Dokonaj edycji rejestru ręcznie przy użyciu informacji w temacie [Ustawienia rejestru dla łącznika usługi RMS](rms-connector-registry-settings.md), aby ręcznie dodać ustawienia rejestru na serwerach. 
 
-3.  Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
+3. Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
 ## <a name="next-steps"></a>Następne kroki
 Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane do korzystania z niego, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure Rights Management. Aby użytkownikom było łatwiej, można wdrożyć klienta usługi Azure Information Protection, który instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](../rms-client/client-admin-guide.md).

@@ -4,7 +4,7 @@ description: Informacje i instrukcje dotyczące sposobu korzystania z rejestrowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 989f75361d96680bf0bedff00251b6d60aa999c5
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -38,7 +38,7 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
 
 -   **Wykonywanie analizy śledczej**
 
-    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Korzystanie z funkcji rejestrowania pozwala odpowiedzieć na tego rodzaju pytania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
+    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Gdy używasz tego rejestrowania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy, które są chronione przez usługę Azure Rights Management, nawet jeśli te pliki są pozwala odpowiedzieć na tego rodzaju pytania przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
 Oprócz tego rejestrowania użycia, również są następujące opcje rejestrowania:
 
@@ -47,7 +47,7 @@ Oprócz tego rejestrowania użycia, również są następujące opcje rejestrowa
 |Administrator dziennika|Rejestruje zadania administracyjne dla usługi Azure Rights Management. Na przykład, jeśli usługa jest wyłączone, po włączeniu funkcji administratorów i użytkowników są uprawnienia administratora delegowanego do usługi. <br /><br />Aby uzyskać więcej informacji, zobacz polecenie cmdlet programu PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
 |śledzenie dokumentów|Umożliwia użytkownikom śledzenie i odwoływanie swoje dokumenty, które mają one śledzone klienta Azure Information Protection lub aplikacji do udostępniania usług RMS. Administratorzy globalni mogą również śledzić te dokumenty w imieniu użytkowników. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
 |Dzienników zdarzeń klienta|Działanie użycia dla klienta usługi Azure Information Protection zarejestrowane w lokalnym systemie Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia dla klienta usługi Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
-|Pliki dziennika klienta|Rozwiązywanie problemów z f dzienniki lub klienta Azure Information Protection znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla Microsoft Support.|
+|Pliki dziennika klienta|Rozwiązywanie problemów z dzienników dla klienta usługi Azure Information Protection, znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla Microsoft Support.|
 
 
 Użyj poniższych sekcji, aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management. 
@@ -176,7 +176,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 
 |Typ żądania|Opis|
 |----------------|---------------|
-|AcquireLicense|Klient z komputera z systemem Windows żąda licencji dla zawartości chronionej przez usługę RMS.|
+|AcquireLicense|Klient z komputera z systemem Windows żąda licencji dla zawartości chronionej przez usługi RMS.|
 |AcquirePreLicense|Klient w imieniu użytkownika żąda licencji dla zawartości chronionej przez usługę RMS.|
 |AcquireTemplates|Wykonano wywołanie pobrania szablonów na podstawie identyfikatorów szablonów.|
 |AcquireTemplateInformation|Wykonano wywołanie pobrania identyfikatorów szablonu z usługi.|

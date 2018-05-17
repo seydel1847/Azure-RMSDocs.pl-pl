@@ -4,7 +4,7 @@ description: Szczegółowe informacje dotyczące działania usługi Azure RMS i 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/09/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321b18946c934878a422bd28a115c06d443b8d18
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 9c1fff4d9bcce892b9f671e590d9a670f9a4422a
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
@@ -147,13 +147,15 @@ Klient odszyfrowuje również listę uprawnień i przekazuje ją do aplikacji, k
 ### <a name="variations"></a>Warianty
 Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różne ich warianty:
 
--   **Urządzenia przenośne**: gdy urządzenia przenośne chronią pliki lub korzystają z nich przy użyciu usługi Azure Rights Management, przepływy procesu są dużo prostsze. W przypadku urządzeń przenośnych nie jest wykonywany proces inicjowania użytkownika, ponieważ każda transakcja (wykonywana w celu ochrony lub wykorzystania zawartości) jest niezależna. Podobnie jak komputery z systemem Windows, urządzenia przenośne łączą się z usługą Azure Rights Management i dokonują uwierzytelnienia. W celu ochrony zawartości urządzenia przenośne przesyłają zasady, a usługa Azure Rights Management wysyła do nich licencję publikowania i klucz symetryczny do ochrony dokumentu. Aby umożliwić użycie zawartości, po nawiązaniu połączenia z usługą Azure Rights Management i wykonaniu uwierzytelnienia urządzenia przenośne przesyłają zasady dokumentu do usługi Azure Rights Management i żądają licencji użytkowania. W odpowiedzi usługa Azure Rights Management wysyła do urządzeń przenośnych niezbędne klucze i ograniczenia. Oba procesy używają zabezpieczeń TLS do ochrony wymiany kluczy i innej komunikacji.
+- **Wyślij wiadomość e-mail ochrony**: gdy Exchange Online i szyfrowanie wiadomości usługi Office 365 z nowych funkcji, które jest używane do ochrony wiadomości e-mail, uwierzytelniania do użycia przez umożliwia także federacyjnych dostawca tożsamości społecznościowych lub za pomocą jednorazowego kod dostępu. Następnie przepływy procesu są bardzo podobne, z wyjątkiem tego, że zużycie zawartości odbywa się po stronie serwera w sesji przeglądarki sieci web za pośrednictwem tymczasowo buforowaną kopię wychodzących wiadomości e-mail.
 
--   **Łącznik usługi RMS**: w przypadku korzystania z usługi Azure Rights Management z łącznikiem usługi RMS przepływy procesu pozostają takie same. Jedyna różnica polega na tym, że łącznik działa jako przekaźnik pomiędzy usługami lokalnymi (takimi jak Exchange Server i SharePoint Server) a usługą Azure Rights Management. Łącznik sam nie wykonuje żadnych operacji, takich jak inicjowanie środowiska użytkownika bądź szyfrowanie i odszyfrowywanie. Przekazuje on po prostu treść komunikacji zazwyczaj wysyłaną do serwera usług AD RMS, obsługując tłumaczenie między protokołami używanymi po każdej stronie. W tym scenariuszu można korzystać z usługi Azure Rights Management wraz z usługami lokalnymi.
+- **Urządzenia przenośne**: gdy urządzenia przenośne chronią pliki lub korzystają z nich przy użyciu usługi Azure Rights Management, przepływy procesu są dużo prostsze. W przypadku urządzeń przenośnych nie jest wykonywany proces inicjowania użytkownika, ponieważ każda transakcja (wykonywana w celu ochrony lub wykorzystania zawartości) jest niezależna. Podobnie jak komputery z systemem Windows, urządzenia przenośne łączą się z usługą Azure Rights Management i dokonują uwierzytelnienia. W celu ochrony zawartości urządzenia przenośne przesyłają zasady, a usługa Azure Rights Management wysyła do nich licencję publikowania i klucz symetryczny do ochrony dokumentu. Aby umożliwić użycie zawartości, po nawiązaniu połączenia z usługą Azure Rights Management i wykonaniu uwierzytelnienia urządzenia przenośne przesyłają zasady dokumentu do usługi Azure Rights Management i żądają licencji użytkowania. W odpowiedzi usługa Azure Rights Management wysyła do urządzeń przenośnych niezbędne klucze i ograniczenia. Oba procesy używają zabezpieczeń TLS do ochrony wymiany kluczy i innej komunikacji.
 
--   **Ochrona ogólna (pfile)**: gdy usługa Azure Rights Management chroni plik w sposób ogólny, przepływ procesu w odniesieniu do ochrony zawartości jest zasadniczo taki sam, z tą różnicą, że to klient RMS tworzy zasady, na podstawie których są przyznawane wszystkie uprawnienia. Gdy plik jest używany, zostaje odszyfrowywany przed przekazaniem do aplikacji docelowej. Ten scenariusz umożliwia ochronę wszystkich plików, także tych bez natywnej obsługi usługi RMS.
+- **Łącznik usługi RMS**: w przypadku korzystania z usługi Azure Rights Management z łącznikiem usługi RMS przepływy procesu pozostają takie same. Jedyna różnica polega na tym, że łącznik działa jako przekaźnik pomiędzy usługami lokalnymi (takimi jak Exchange Server i SharePoint Server) a usługą Azure Rights Management. Łącznik sam nie wykonuje żadnych operacji, takich jak inicjowanie środowiska użytkownika bądź szyfrowanie i odszyfrowywanie. Przekazuje on po prostu treść komunikacji zazwyczaj wysyłaną do serwera usług AD RMS, obsługując tłumaczenie między protokołami używanymi po każdej stronie. W tym scenariuszu można korzystać z usługi Azure Rights Management wraz z usługami lokalnymi.
 
--   **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który przeglądarka usługi Azure Information Protection i aplikacja RMS sharing mogą otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail, wiedząc, że odbiorca na urządzeniu przenośnym mogą zawsze odczytać je nawet jeśli urządzenie przenośne nie ma aplikacji z natywną obsługą chronionych plików pakietu Office.
+- **Ochrona ogólna (pfile)**: gdy usługa Azure Rights Management chroni plik w sposób ogólny, przepływ procesu w odniesieniu do ochrony zawartości jest zasadniczo taki sam, z tą różnicą, że to klient RMS tworzy zasady, na podstawie których są przyznawane wszystkie uprawnienia. Gdy plik jest używany, zostaje odszyfrowywany przed przekazaniem do aplikacji docelowej. Ten scenariusz umożliwia ochronę wszystkich plików, także tych bez natywnej obsługi usługi RMS.
+
+- **Chroniony plik PDF (ppdf)**: gdy usługa Azure Rights Management zapewnia natywną ochronę pliku pakietu Office, tworzona jest również kopia danego pliku chroniona przez usługę w taki sam sposób. Jedyna różnica polega na tym, że kopia pliku jest w formacie PPDF, który przeglądarka usługi Azure Information Protection i aplikacja RMS sharing mogą otworzyć tylko do wyświetlania. Ten scenariusz umożliwia wysyłanie chronionych załączników za pośrednictwem poczty e-mail, wiedząc, że odbiorca na urządzeniu przenośnym mogą zawsze odczytać je nawet jeśli urządzenie przenośne nie ma aplikacji z natywną obsługą chronionych plików pakietu Office.
 
 ## <a name="next-steps"></a>Następne kroki
 
