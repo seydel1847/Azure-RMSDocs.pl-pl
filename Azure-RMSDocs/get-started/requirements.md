@@ -4,7 +4,7 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c031bffeb5f4f3d6edbdab71e157b3f1580d46ed
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 9cdb205488c300f1df1e002be105765a90ce1a1a
+ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/18/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -139,11 +139,12 @@ Aby uzyskać informacje o dodatkowych wymaganiach dla tego scenariusza, zobacz [
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Współistnienie usług AD RMS z usługami Azure RMS
 
-Poniższy scenariusz wdrożenia nie jest obsługiwany, chyba że jest używana ochrona usług AD RMS w ramach usługi Azure Information Protection — konfiguracja HYOK („Hold Your Own Key”):
+Następujący scenariusz wdrażania nie jest obsługiwane, jeśli nie używasz usług AD RMS dla [ochrony HYOK](../deploy-use/configure-adrms-restrictions.md) z usługi Azure Information Protection (Konfiguracja "hold your own key"):
 
 - Uruchamianie usług AD RMS i Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem zawartym w temacie [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 
 Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](../deploy-use/decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

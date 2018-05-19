@@ -4,7 +4,7 @@ description: Jak aplikacje pakietu Office przez użytkownika końcowego, takich 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/04/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: caf89d6df51adcd556db319a8140cbe936102ef3
-ms.sourcegitcommit: fa64f9c2a4d367d7586d64def0fd02764ad2e00b
+ms.openlocfilehash: 4358299a1f02e87da29b88e69551a40c08131a1e
+ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2018
+ms.lasthandoff: 05/18/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -48,7 +48,7 @@ Korzystając z usługi Exchange Online lub Exchange Server, można skonfigurowa�
 
 -   **Reguły przepływu poczty** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony poczty e-mail wiadomości. Te zasady są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwala użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail wysyłanych przez urządzenia przenośne. Ponadto te zasady nie powodują szyfrowania wiadomości e-mail przed ich wysłaniem z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
 
--   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\)aspx) w bibliotece programu Exchange.
+-   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podejmowanie działań w celu uniknięcia utraty poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobowych karty kredytowej lub informacji. W przypadku wykrycia poufnych danych użytkownikom alertów, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) w bibliotece programu Exchange.
 
 -   **Szyfrowanie wiadomości usługi Office 365** który obsługuje wysyłanie chronionej wiadomości e-mail i ochrony dokumentów pakietu Office jako załączników do dowolnego adresu na dowolnym urządzeniu. Dla kont użytkowników, które nie używają usługi Azure AD środowisko sieci web obsługuje dostawców tożsamości społecznościowych lub jednorazowy kod dostępu. Aby uzyskać więcej informacji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365, rozszerzający usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) z witryny sieci Web pakietu Office.
 
@@ -88,7 +88,7 @@ Dla bibliotek, które nie są IRM chronionego, jeśli chroniony plik, który nas
 
 Podczas korzystania z ochrony za pomocą usługi IRM z programem SharePoint usługa Azure Rights Management stosuje ograniczenia dotyczące użycia i szyfrowanie danych względem dokumentów w trakcie ich pobierania z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
-Następujący wpis na blogu pakietu Office, chociaż nie jest już nowy, zawiera pewne dodatkowe informacje, które mogą się okazać przydatne: [What’s New with Information Rights Management in SharePoint and SharePoint Online](https://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/) (Co nowego w usłudze Information Rights Management w programie SharePoint i usłudze SharePoint Online)
+Chociaż nie jest już nowe, w następującym wpisie w blogu usługi Office 365 ma dodatkowe informacje, które mogą być przydatne: [What's New with Information Rights Management in SharePoint and SharePoint Online](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
 Jeśli chcesz już skonfigurować program SharePoint dla usługi IRM:
 
