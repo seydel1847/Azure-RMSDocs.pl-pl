@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 359e374f23b9a3b8931d67c765949befa5b7c105
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
-ms.translationtype: MT
+ms.openlocfilehash: 7d9fdcc96db5620c8ad0ee795c84c1fd56806239
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -162,6 +162,14 @@ Klient usługi Azure Information Protection obsługuje te same języki, które o
 Te języki, opcje menu, okna dialogowe i komunikaty z usługi Azure Information Protection klienta są wyświetlane w języku użytkownika. Brak jednego Instalator, który wykryje języka aby dodatkowa konfiguracja nie jest niezbędne do zainstalowania klienta usługi Azure Information Protection dla różnych języków. 
 
 Etykieta nazwy i opisy, które określisz nie są automatycznie translacji podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 bieżącego [domyślne zasady](../deploy-use/configure-policy-default.md) oferuje obsługę w przypadku niektórych języków. Dla użytkowników zobaczyć etykiet w ich preferowany język Podaj własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection, które mają być używane te tłumaczenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md). Oznaczenia wizualne nie są tłumaczone i nie obsługuje więcej niż jednym języku.
+
+### <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługa klienta Azure Information Protection
+
+Zespół usługi Azure Information Protection regularnie aktualizuje klienta Azure Information Protection, nowe funkcje i poprawki. Powiadomienia są wysyłane do zespołu [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
+
+Jeśli klient został zainstalowany przy użyciu plik wykonywalny lub plik Instalatora Windows, należy ręcznie pobrać nowych wersji z Microsoft Download Center, aby zainstalować aktualizacje dla klienta. Po zainstalowaniu klienta za pomocą usługi Windows Update nowości automatycznie stanie się dostępna do pobrania w katalogu kilka tygodni po wydaniu. 
+
+Użyj [wersji wersji historii i obsługi zasad](../rms-client/client-version-release-history.md) zasady udzielania pomocy technicznej dla klienta usługi Azure Information Protection, które wersje są obecnie obsługiwane i nowości i zmian dotyczących obsługiwanych wersji. 
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Odinstalowywanie klienta usługi Azure Information Protection
 

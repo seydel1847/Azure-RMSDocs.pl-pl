@@ -4,7 +4,7 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: e13dc2a6307dfa11cd812586762ec4c496d33fcf
-ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
+ms.openlocfilehash: 207f3b91e656bb65820a42137ce3bd66109f36e1
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie usługi Azure Information Protection skanera można automatycznie klasyfikować i chronić pliki
 
@@ -40,21 +40,31 @@ Po skonfigurowaniu sieci [zasad usługi Azure Information Protection](configure-
 
 Skaner sprawdzić wszystkie pliki, które może indeksować systemu Windows, przy użyciu dodatki IFilter, które są zainstalowane na komputerze. Następnie aby ustalić, czy pliki muszą etykietowanie, skaner korzysta z usługi Office 365 wbudowane utraty zapobiegania (DLP) czułości informacji typy danych i wykrywania wzorzec lub wzorce regex usługi Office 365. Ponieważ skaner używa klienta usługi Azure Information Protection, można klasyfikować i chronić je [typów plików](../rms-client/client-admin-guide-file-types.md).
 
-Można uruchomić skanera odnajdywania tylko w trybie, w którym korzystać z raportów do sprawdzenia, co się stanie, jeśli pliki zostały oznaczone jako. Alternatywnie można uruchomić skanera, aby automatycznie zastosować etykiety.
+Można uruchomić skanera odnajdywania tylko w trybie, w którym korzystać z raportów do sprawdzenia, co się stanie, jeśli pliki zostały oznaczone jako. Alternatywnie można uruchomić skanera, aby automatycznie zastosować etykiety. Podgląd wyłącznie dla wersji można również uruchomić skanera, aby odnaleźć plików, które zawierają typy informacji poufnych, bez konfigurowania etykiety warunki, które mają zastosowanie automatycznej klasyfikacji.
 
 Należy pamiętać, że skaner nie odnajdzie i etykiety w czasie rzeczywistym. Systematycznie przeszukiwania za pomocą plików na magazyny danych, które określisz i można skonfigurować tego cyklu do uruchamiania raz lub wielokrotnie.
+
+Specyficzne dla wersji preview skanera:
+
+- Domyślnie tylko dokumenty pakietu Office są chronione, a nie wszystkie typy plików. Pełną listę obsługiwanych typów plików pakietu Office to wymienione w [Przewodnik administratora](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)w **typów obsługiwanych przez pakiet Office plików** tabeli. 
+    
+    Aby zmienić to zachowanie domyślne, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie edytować rejestr i określić dodatkowe typy, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) z wskazówki dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”.
+
+- Można określić, jakie typy plików ze skanowaniem lub wykluczyć ze skanowania. Do ograniczenia, które pliki skanera przeprowadzający, zdefiniuj listę typów plików za pomocą [AIPScannerScannedFileType zestawu](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType).
+
+- Można skonfigurować skanera przeprowadzać inspekcję plików dla wszystkich typów informacji poufnych lub Zastosuj etykiety domyślnej, bez żadnych inspekcji plików. [Więcej informacji](#using-the-scanner-with-alternative-configurations)
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Wymagania wstępne dotyczące usługi Azure Information Protection skanera
 Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się, że zostały spełnione następujące wymagania.
 
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
-|Komputer serwera systemu Windows do uruchamiania usługi skanera:<br /><br />-4 procesory<br /><br />-4 GB pamięci RAM|Windows Server 2016 lub Windows Server 2012 R2. <br /><br />Uwaga: Do celów testowania lub ewaluacji w środowiskach nieprodukcyjnych, możesz użyć systemu operacyjnego klienta systemu Windows, który jest [obsługiwane przez klienta usługi Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Ten komputer może być komputer fizyczny lub wirtualny, która ma szybkie i niezawodne połączenie sieciowe do magazynów danych do przeskanowania. <br /><br />Upewnij się, że ten komputer ma [łączności z Internetem](../get-started/requirements.md#firewalls-and-network-infrastructure) wymaganych dla usługi Azure Information Protection. Lub, musisz skonfigurować go jako [odłączonymi komputerami](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers). |
+|Komputer serwera systemu Windows do uruchamiania usługi skanera:<br /><br />-4 procesory<br /><br />-4 GB pamięci RAM|Windows Server 2016 lub Windows Server 2012 R2. <br /><br />Uwaga: Do celów testowania lub ewaluacji w środowiskach nieprodukcyjnych, możesz użyć systemu operacyjnego klienta systemu Windows, który jest [obsługiwane przez klienta usługi Azure Information Protection](../get-started/requirements.md#client-devices).<br /><br />Ten komputer może być komputer fizyczny lub wirtualny, która ma szybkie i niezawodne połączenie sieciowe do magazynów danych do przeskanowania. <br /><br />Upewnij się, że ten komputer ma [łączności z Internetem](../get-started/requirements.md#firewalls-and-network-infrastructure) wymaganych dla usługi Azure Information Protection. Lub, musisz skonfigurować go jako [odłączonymi komputerami](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers).|
 |Program SQL Server do przechowywania konfiguracji skanera:<br /><br />-Lokalnego lub zdalnego wystąpienia<br /><br />— Roli Sysadmin Aby zainstalować skanera|SQL Server 2012 jest minimalną wersję dla następujących wersji:<br /><br />-SQL Server Enterprise<br /><br />-SQL Server Standard<br /><br />— Program SQL Server Express<br /><br />Konto, które instaluje skanera wymaga uprawnień do zapisu do wzorca bazy danych (musi być członkiem roli db_datawriter). Proces instalacji przyznaje roli właściciel bazy danych konta usługi z systemem skanera. Alternatywnie można ręcznie utworzyć bazę danych AzInfoProtectionScanner przed zainstalowaniem skanera i przypisać rolę właściciela bazy danych dla konta usługi skanera.|
 |Konto usługi, aby uruchomić usługę skanera|Oprócz uruchomiona usługa skanera, to konto jest uwierzytelniany w usłudze Azure AD i pliki do pobrania zasad usługi Azure Information Protection. To konto musi być w związku z tym konta usługi Active Directory, który jest synchronizowany z usługą Azure AD, z następujących wymagań dodatkowych:<br /><br />- **Logowanie lokalne** prawo. To prawo jest wymagane do instalacji i konfiguracji skanera, ale nie dla operacji. To prawo, do konta usługi, należy przypisać, ale można usunąć tego prawa, po potwierdzeniu, że skaner można odnajdywania, klasyfikowania i ochrony plików. <br /><br />Uwaga: Jeśli wewnętrznych zasad nie umożliwiają konta usług mają konta to prawo, ale usługa może zostać przydzielony **logowanie w trybie wsadowym** do prawej strony, można spełniają to wymaganie z dodatkowe czynności konfiguracyjne. Aby uzyskać instrukcje, zobacz [określanie i użyj parametru tokenu dla zestawu AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) z podręcznika administratora.<br /><br />- **Zaloguj się jako usługa** prawo. To prawo jest automatycznie przyznawane kontu usługi podczas instalacji skanera, a to prawo jest wymagane do instalacji, konfiguracji i operacji skanera. <br /><br />-Uprawnienia do przechowywania danych: należy przyznać **odczytu** i **zapisu** uprawnienia skanowanie plików, a następnie zastosowanie i ochronę plików, które spełniają warunki określone w Zasady usługi Azure Information Protection. Aby uruchomić skanera odnajdywania tylko w trybie, **odczytu** uprawnienia są wystarczające.<br /><br />— Dla etykiet, które Włącz ponownie ochronę lub usuń ochronę: Aby zapewnić, że skaner zawsze ma dostęp do chronionych plików, należy to konto [superużytkowników](configure-super-users.md) usługi Azure Rights Management usługi i upewnij się, że funkcja superużytkowników jest włączona . Aby uzyskać więcej informacji o wymaganiach dotyczących konta stosowania ochrony, zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md).|
-|Klient usługi Azure Information Protection jest zainstalowany na komputerze serwera systemu Windows|Należy zainstalować pełną klienta skanera. Nie należy instalować klienta z właśnie modułu programu PowerShell.<br /><br />Aby uzyskać instrukcje dotyczące instalacji klienta, zobacz [Przewodnik administratora](../rms-client/client-admin-guide.md).|
-|Skonfigurowany etykiet, które stosowane automatycznej klasyfikacji oraz opcjonalnie ochrony|Aby uzyskać więcej informacji na temat konfigurowania warunków w ramach zasad usługi Azure Information Protection, zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md).<br /><br />Aby uzyskać więcej informacji na temat konfigurowania etykiety w celu zastosowania ochrony plików, zobacz [jak konfigurowanie etykiety pod kątem ochrony usługi Rights Management](configure-policy-protection.md).<br /><br />Etykiety mogą być w globalnych zasad lub co najmniej jednej [zakres zasad](configure-policy-scope.md).|
-|Jeśli wszystkie pliki w co najmniej jeden repozytoriów danych muszą mieć etykietę:<br /><br />-Etykiety domyślnej skonfigurowany jako ustawienie zasad|Aby uzyskać więcej informacji o sposobie konfigurowania ustawieniem etykiety domyślnej, zobacz [sposób konfigurowania ustawień zasad usługi Azure Information Protection](configure-policy-settings.md).<br /><br />To ustawienie domyślne etykiety musi być w zakresie zasad skanera lub globalnych zasad. Jednak to ustawienie domyślne etykiety może być zastąpiona przez etykietę różne domyślne, którą można skonfigurować na poziomie repozytorium danych.| 
+|Klient usługi Azure Information Protection jest zainstalowany na komputerze serwera systemu Windows|Należy zainstalować pełną klienta skanera. Nie należy instalować klienta z właśnie modułu programu PowerShell.<br /><br />Aby uzyskać instrukcje dotyczące instalacji klienta, zobacz [Przewodnik administratora](../rms-client/client-admin-guide.md).<br /><br />Uwaga: Jest już istnieje wcześniejszej wersji zapoznawczej skanera można zainstalować do celów testowych. Do zainstalowania tej wersji zapoznawczej, Pobierz i zainstaluj wersję zapoznawczą klienta z Microsoft Download Center.|
+|Skonfigurowany etykiet, które stosowane automatycznej klasyfikacji oraz opcjonalnie ochrony|Aby uzyskać więcej informacji na temat konfigurowania warunków w ramach zasad usługi Azure Information Protection, zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md).<br /><br />Aby uzyskać więcej informacji na temat konfigurowania etykiety w celu zastosowania ochrony plików, zobacz [jak konfigurowanie etykiety pod kątem ochrony usługi Rights Management](configure-policy-protection.md).<br /><br />Etykiety mogą być w globalnych zasad lub co najmniej jednej [zakres zasad](configure-policy-scope.md).<br /><br />Uwaga: Dla wersji preview, teraz możesz uruchomić skanera nawet wtedy, gdy nie skonfigurowano etykiety, które mają zastosowanie automatycznej klasyfikacji, ale w tym scenariuszu nie pasuje do instrukcji. [Więcej informacji](#using-the-scanner-without-automatic-classification)|
+|Jeśli wszystkie pliki w co najmniej jeden repozytoriów danych muszą mieć etykietę:<br /><br />-Etykiety domyślnej skonfigurowany jako ustawienie zasad|Aby uzyskać więcej informacji o sposobie konfigurowania ustawieniem etykiety domyślnej, zobacz [sposób konfigurowania ustawień zasad usługi Azure Information Protection](configure-policy-settings.md).<br /><br />To ustawienie domyślne etykiety musi być w zakresie zasad skanera lub globalnych zasad. Jednak to ustawienie domyślne etykiety może być zastąpiona przez etykietę różne domyślne, którą można skonfigurować na poziomie repozytorium danych.<br /><br />Uwaga: Dla wersji preview nie jest już konieczne skonfigurowanie etykiety domyślnej w ramach zasad.| 
 
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Zainstaluj skaner usługi Azure Information Protection
@@ -149,7 +159,13 @@ W jego domyślne ustawienie skanera ma jeden czasu i w trybie tylko do raportowa
 
 1. Na komputerze z systemem Windows Server w sesji programu PowerShell, uruchom następujące polecenie:
     
+    W wersji availabilty ogólne:
+    
         Set-AIPScannerConfiguration -ScanMode Enforce -Schedule Continuous
+    
+    W wersji preview:
+    
+        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
     
     Brak innych ustawień konfiguracyjnych, które można zmienić. Na przykład czy atrybuty plików zostały zmienione, a co jest rejestrowane w raportach. Ponadto jeśli zasady usługi Azure Information Protection zawiera ustawienia, które wymaga wiadomość uzasadnienie, aby obniżyć poziom klasyfikacji lub usuń ochronę, należy określić wiadomości za pomocą tego polecenia cmdlet. Użyj [pomocy online](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) Aby uzyskać więcej informacji o każdym ustawieniu konfiguracji. 
 
@@ -164,6 +180,8 @@ Ponieważ został skonfigurowany harmonogram wykonywania, gdy skaner działał j
 
 Skaner automatycznie pomija pliki, które są [wykluczone z klasyfikacji i ochrony](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), takich jak pliki wykonywalne i system plików.
 
+Dla wersji preview można zmienić to zachowanie, definiując listę typów plików ze skanowaniem lub wykluczyć ze skanowania. Należy określić tej listy, a nie należy określać repozytorium danych, listy zastosowanie do wszystkich repozytoria danych, które nie mają własne listy określony. Aby określić tej listy, użyj [AIPScannerScannedFileType zestawu](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType). Po określeniu listy typów plików, należy dodać nowy typ pliku do listy przy użyciu [AIPScannerScannedFileType Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)i usuwanie typów plików z listy przy użyciu [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+
 Następnie skanera używa iFilter systemu Windows w celu skanowania następujących typów plików. W przypadku tych typów plików dokumentu będzie oznaczone za pomocą warunków określonych dla etykiet.
 
 |Typ aplikacji|Typ pliku|
@@ -176,7 +194,7 @@ Następnie skanera używa iFilter systemu Windows w celu skanowania następując
 |Tekst|.txt; .xml; .csv|
 
 
-Ponadto dla pozostałych typów plików, skaner stosuje etykiety domyślnej w ramach zasad usługi Azure Information Protection.
+Na koniec dla pozostałych typów plików, skanera dotyczy etykiety domyślnej w ramach zasad usługi Azure Information Protection lub skonfigurować skanera etykieta domyślna.
 
 |Typ aplikacji|Typ pliku|
 |--------------------------------|-------------------------------------|
@@ -196,7 +214,16 @@ Ponadto dla pozostałych typów plików, skaner stosuje etykiety domyślnej w ra
 
 Należy pamiętać, że po etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku zmienia się na pfile. Ponadto plik staje się tylko do odczytu, dopóki nie jest otwarty przez autoryzowanego użytkownika i zapisany w jego formatu macierzystego. Pliki tekstowe i obrazy można zmieniać ich rozszerzenia nazwy pliku i stają się tylko do odczytu. Jeśli nie chcesz, aby ten problem, można zapobiec pliki, których określonego pliku, typu z chroniony. Na przykład zapobiec plik PDF chroniony plik PDF (ppdf) i zapobiec pliku txt chroniony (ptxt) plik tekstowy.
 
-Aby uzyskać więcej informacji na temat różnych poziomów ochrony dla różnych typów plików i sposobu kontrolowania zachowania ochrony, zobacz [typy obsługiwane w przypadku ochrony plików](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) w przewodniku administratora.
+Aby uzyskać więcej informacji na temat różnych poziomów ochrony dla różnych typów plików i sposobu kontrolowania zachowania ochrony edytując rejestr, zobacz [typy obsługiwane w przypadku ochrony plików](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) w przewodniku administratora.
+
+W wersji ogólnodostępnej skanera:
+
+- Domyślnie wszystkie typy plików są chronione.
+
+
+W wersji preview skanera:
+
+- Domyślnie tylko typy plików pakietu Office będą chronione.
 
 
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Jeśli pliki są ponownie skanowana przez skaner usługi Azure Information Protection
@@ -213,6 +240,23 @@ Ponadto wszystkie pliki są kontrolowane podczas skanera pobierania zasad usług
 > Zmiana ustawienia ochrony w zasadach również poczekaj 15 minut od po zapisaniu ustawień ochrony przed ponownym uruchomieniu usługi.
 
 Jeśli skaner pobrać zasady, które miało żadnych warunków automatyczne skonfigurowane, kopię pliku zasad w folderze skaner nie jest aktualizowany. W tym scenariuszu należy usunąć plik zasad **Policy.msip** z obu **%LocalAppData%\Microsoft\MSIP\Policy.msip** i **%LocalAppData%\Microsoft\MSIP\Scanner**przed skanera można użyć pliku zasad nowo pobranej z etykiety poprawnie znalezienia automatyczne warunki.
+
+## <a name="using-the-scanner-with-alternative-configurations"></a>Używanie skanera z alternatywnej konfiguracji
+
+Korzystając z wersji zapoznawczej skanera, dostępne są dwa scenariusze alternatywnych, obsługiwanych przez skaner gdzie etykiety nie trzeba skonfigurować wszelkie warunki: 
+
+- Zastosuj etykiety domyślnej, do wszystkich plików w repozytorium danych.
+    
+    W przypadku tej konfiguracji należy używać [AIPScannerRepository zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) polecenia cmdlet i ustaw *MatchPolicy* parametr **poza**. 
+    
+    Zawartość plików nie są kontrolowane i wszystkie pliki w repozytorium danych są oznaczone jako zgodnie z etykiety domyślnej, określony dla repozytorium danych (z *SetDefaultLabel* parametru) lub jeśli nie jest określony, etykiety domyślnej, które jest określone jako ustawienie zasad dla konto skanera.
+    
+
+- Zidentyfikuj wszystkie niestandardowe warunki i typy znane poufne informacje.
+    
+    W przypadku tej konfiguracji należy używać [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet i ustaw *DiscoverInformationTypes* parametr **wszystkie**.
+    
+    Skaner używa żadnych niestandardowych warunków, które zostały określone dla etykiet w ramach zasad usługi Azure Information Protection oraz listę typów informacji, które można określić dla etykiet w zasadach usługi Azure Information Protection. 
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optymalizacja wydajności skanera usługi Azure Information Protection
 
@@ -256,6 +300,15 @@ Inne czynniki wpływające na wydajność skanera:
     
     - Duże pliki oczywiście skanowanie trwało dłużej niż małe pliki.
 
+- W wersji preview skanera:
+    
+    - Potwierdź, że uruchomioną skanera konto usługi ma uprawnienia w [wymagania wstępne skanera](#prerequisites-for-the-azure-information-protection-scanner) sekcji, a następnie skonfiguruj [zaawansowane właściwości klienta](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) wyłączyć niski poziom skaner integralności.
+    
+    - Skaner przebiega szybciej, korzystając z [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) do zastosowania etykiety domyślnej do wszystkich plików, ponieważ skaner nie sprawdzać zawartości pliku.
+    
+    - Skaner uruchamia więcej spowalniając, korzystając z [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) do identyfikowania wszystkie niestandardowe warunki i typy znane poufne informacje.
+    
+
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Listę poleceń cmdlet dla usługi Azure Information Protection skanera 
 
 Inne polecenia cmdlet skanera pozwalają zmienić konta usługi i bazy danych dla skanera, Pobierz bieżące ustawienia skanera i odinstaluj usługę skanera. Skaner używa następujących poleceń cmdlet:
@@ -277,6 +330,14 @@ Inne polecenia cmdlet skanera pozwalają zmienić konta usługi i bazy danych dl
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
+
+Dodatkowe polecenia cmdlet w wersji preview skanera:
+
+- [Dodaj AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)
+
+- [Usuń AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)
+
+- [Zestaw AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 
 ## <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń

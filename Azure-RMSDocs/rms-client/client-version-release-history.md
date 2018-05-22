@@ -4,7 +4,7 @@ description: Zobacz, co wprowadzono lub zmieniono w wersji klienta usługi Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: wersji wersji historii i obsługa zasad
 
@@ -40,6 +40,40 @@ Skorzystaj z poniższych informacji, aby zobaczyć nowe lub zmienione w obsługi
 > Drobne poprawki nie są wyświetlane, jeśli wystąpi problem z klientem usługi Azure Information Protection, zaleca się sprawdzenie, czy problem został rozwiązany z najnowszą wersją GA. Jeśli ten problem, sprawdź bieżącą wersję podglądu.
 >  
 > Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
+
+## <a name="versions-later-than-12660"></a>Wersjach starszych niż 1.26.6.0
+
+Jeśli masz wersję klienta, która jest nowsza niż 1.26.6.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny. 
+ 
+**Wydane**: 05/21/2018 
+
+Bieżąca wersja preview to **1.27.48.0** i ma następujące zmiany od bieżącej wersji GA klienta.  
+
+**Nowe funkcje**: 
+
+- Skanera usługi Azure Information Protection:
+    
+    - Można określić listy typów plików, aby dołączyć lub wykluczyć ze skanowania. Aby określić tej listy, użyj [AIPScannerScannedFileTypes zestawu](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Po określeniu listy typów plików, należy dodać nowy typ pliku do listy przy użyciu [AIPScannerScannedFileType Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)i usuwanie typów plików z listy przy użyciu [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+    
+    - Pliki można opisać bez sprawdzania zawartości przez zastosowanie etykiety domyślnej. Użyj [AIPScannerRepository zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) polecenia cmdlet i ustaw *MatchPolicy* parametr **poza**. 
+    
+    - Może odnajdywać pliki z typami poufne informacje, bez konfigurowania etykiety klasyfikacji automatycznej. Użyj [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet i ustaw *DiscoverInformationTypes* parametr **wszystkie**
+    
+    - Domyślnie tylko typów dokumentów pakietu Office będą chronione. Inne typy plików mogą być chronione, definiując je w rejestrze. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) z wskazówki dla deweloperów.
+    
+    - Domyślnie skanera uruchamiane z poziomu niskiej integralności wyższy poziom zabezpieczeń w przypadku uruchomienia skanera o konto ma uprzywilejowany praw. Po uruchomioną skanera konto usługi ma tylko uprawnienia udokumentowane w [wymagania wstępne skanera](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom niskiej integralności nie jest wymagana i nie jest zalecane, ponieważ wpływa to niekorzystnie wpłynąć na wydajność. Umożliwia zaawansowane ustawienia klienta dotyczącego wyłączyć poziom niskiej integralności. [Więcej informacji](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    
+- Aby uzyskać [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus), dane wyjściowe zawiera teraz właściciela zarządzania prawami i wystawcy Rights Management i datę, która była chroniona zawartość.
+ 
+**Dodatkowe zmiany**:
+
+- Skanera usługi Azure Information Protection: 
+    
+    - *ScanMode* parametru z [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) została zmieniona na **Wymuś**, wartości wyłączone i na.
+    
+    - Aby użyć etykiety domyślnej, nie jest już konieczne konfigurowanie etykiety domyślnej jako ustawienie zasad. Zamiast tego po prostu określić tej etykiety domyślnej konfiguracji repozytorium. 
+
+- Usunięte "Gratulacje!" Zapraszamy i "What's new in Azure Information Protection" strony wyświetlany dla pierwszego użycia w aplikacjach pakietu Office.
 
 ## <a name="version-12660"></a>Wersja 1.26.6.0
 

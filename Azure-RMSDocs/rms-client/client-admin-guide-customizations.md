@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: de7829532139556b6407506d61bc89de936b3739
-ms.sourcegitcommit: 9e2719ab070fa2d1e3ac8f6f11e57640939a1dff
+ms.openlocfilehash: c0e1011da16c9e3e91595cd06375cb744aa8fe00
+ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -54,6 +54,8 @@ Niezależnie od tego ustawienia klient usługi Azure Information Protection post
 
 ## <a name="suppress-the-initial-congratulations-welcome-page"></a>Pomiń początkową "Gratulacje!" Strony powitalnej
 
+Klient w wersji zapoznawczej nie jest już wyświetlany to "Gratulacje!" Strona powitalna.
+
 Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i użytkownik otwiera Word, Excel, PowerPoint lub programie Outlook **Gratulacje!** zostanie wyświetlona strona krótkie instrukcje jak nowy pasek Information Protection umożliwia wybranie etykiety. Edytując rejestr, można pominąć tej strony.
 
 1. Jeśli klucz rejestru nie istnieje, utwórz go:
@@ -64,13 +66,15 @@ Po zainstalowaniu na komputerze klienta usługi Azure Information Protection i u
 
 ## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>Pomiń "co to jest nowa w programie Azure Information Protection?" Strona
 
+Klient w wersji zapoznawczej nie jest już wyświetlany to "co to jest nowa w programie Azure Information Protection?" .
+
 Jeśli najpierw zainstalowany lub uaktualnione na komputerze klienta usługi Azure Information Protection i Word, Excel, PowerPoint lub programie Outlook, zostanie wyświetlony pasek usługi Azure Information Protection **What's new in Azure Information Protection?** zostanie wyświetlona strona, aby informować użytkowników o uprawnienia niestandardowe i śledzenie ich użycia. Edytując rejestr, można pominąć tej strony.
 
 1. Jeśli klucz rejestru nie istnieje, utwórz go:
     
     **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-2.  Jeśli wartość ciągu (REG SZ) o nazwie **WhatsNewVersion** nie istnieje, utwórz go i ustaw wartość danych **1.4**.
+2. Jeśli wartość ciągu (REG SZ) o nazwie **WhatsNewVersion** nie istnieje, utwórz go i ustaw wartość danych **1.4**.
 
 ## <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
@@ -356,6 +360,25 @@ Jako przykład masz kolumny programu SharePoint o nazwie **klasyfikacji** mając
 Aby dodać etykietę dokumentu pakietu Office, z jedną z następujących wartości klasyfikacji, ustaw **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do  **OneWay**. 
 
 Teraz, gdy użytkownik otwiera i zapisuje jeden z tych dokumentów pakietu Office, jego etykietą **publicznego**, **ogólne**, lub **poufne** Jeśli etykiet z tych nazw platformy Azure Zasady ochrony informacji. Jeśli nie ma etykiety o tych nazwach, dokument pozostanie bez etykiety.
+
+## <a name="disable-the-low-integrity-level-for-the-scanner"></a>Wyłącz poziom niskiej integralności skanera
+
+Ta opcja konfiguracji jest obecnie w wersji zapoznawczej i mogą ulec zmianie. Wymagany jest również bieżąca wersja klienta usługi Azure Information Protection.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Domyślnie wersja zapoznawcza usługi Azure Information Protection skanera jest uruchamiany z poziomu niskiej integralności. To ustawienie zapewnia wyższy izolacji zabezpieczeń, ale kosztem wydajności. Poziom niskiej integralności nadaje się po uruchomieniu skaner o konto ma uprzywilejowany praw (takich jak konto administratora lokalnego), ponieważ to ustawienie pomaga chronić komputer z uruchomionym skanera.
+
+Jednak, gdy uruchomioną skanera konto usługi ma tylko prawa udokumentowane w [wymagania wstępne skanera](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom niskiej integralności nie jest wymagana i nie jest zalecane, ponieważ wpływa to niekorzystnie wpłynąć na wydajność. 
+
+Aby uzyskać więcej informacji na temat poziomów integralności systemu Windows, temacie [co to jest mechanizm integralności systemu Windows?](https://msdn.microsoft.com/library/bb625957.aspx)
+
+Aby skonfigurować to zaawansowane ustawienia, tak aby był uruchamiany z poziomu integralności przypisywany automatycznie przez system Windows (konto użytkownika standardowego jest uruchomiona na poziomie integralności średnia) skanera, wprowadź następujące parametry:
+
+- Klucz: **ProcessUsingLowIntegrity**
+
+- Wartość: **Fałsz**
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
 

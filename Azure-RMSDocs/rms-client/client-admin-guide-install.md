@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów do wdrażania klienta 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d52026fcffd3a3a0b51e361e6671f247eac5296d
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: b8cd6aeb13398bdfd65ba3e743e3e12bf3cc5f53
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Zainstaluj klienta usługi Azure Information Protection dla użytkowników
 
@@ -30,11 +30,13 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
 
 - Microsoft .NET Framework 4.6.2
     
-    Do zainstalowania pełnej wersji klienta usługi Azure Information Protection jest domyślnie wymagany program Microsoft .NET Framework w wersji 4.6.2 lub wyższej. W przypadku jego braku Instalator spróbuje pobrać i zainstalować ten wymagany program. Jeśli ten wymagany program jest instalowany w ramach instalacji klienta, należy uruchomić ponownie komputer. Chociaż nie jest to zalecane, można pominąć to wymaganie wstępne, korzystając z [parametru instalacji niestandardowej](#more-information-about-the-downgradedotnetrequirement-installation-parameter).
+    Pełnej instalacji klienta usługi Azure Information Protection, domyślnie wymaga minimalnej wersji platformy Microsoft .NET Framework 4.6.2 i jeśli jest to Brak, Kreatora konfiguracji z pliku wykonywalnego Instalatora próbuje pobrać i zainstalować te wymagania wstępne. Jeśli ten wymagany program jest instalowany w ramach instalacji klienta, należy uruchomić ponownie komputer. Chociaż nie jest to zalecane, można pominąć te wymagania wstępne, korzystając z Kreatora instalacji przy użyciu [parametr instalacji niestandardowej](#more-information-about-the-downgradedotnetrequirement-installation-parameter).
+    
+    To wymaganie wstępne nie jest instalowany automatycznie podczas instalowania klienta z dyskretnej przy użyciu pliku wykonywalnego Instalatora, usługi Windows Update lub Instalator Windows. W tych sytuacjach należy zainstalować te wymagania wstępne oddzielnie jest wymagana, czy instalacja nie powiedzie się. Microsoft .NET Framework 4.6.2 (w trybie Offline Instalatora) można pobrać z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53344).
 
 - Microsoft .NET Framework 4.5.2
     
-    Jeśli przeglądarka usługi Azure Information Protection jest instalowana oddzielnie, wymagany jest program Microsoft .NET Framework w wersji 4.5.2 lub wyższej. W przypadku jego braku Instalator nie pobierze i nie zainstaluje tego programu.
+    Jeśli przeglądarka ochrony informacji Azure jest zainstalowany oddzielnie, wymaga minimalnej wersji platformy Microsoft .NET Framework 4.5.2 i to Brak pliku wykonywalnego Instalatora nie pobrać lub zainstalować.
 
 - Wersja 4.0 programu Windows PowerShell
     
@@ -71,6 +73,14 @@ Następnie należy sprawdzić dodatkowe wymagania wstępne, które mogą być wy
     Nawet jeśli nie skonfigurowano tego ustawienia zasad grupy **Lista zarządzanych dodatków**, konieczne może być skonfigurowanie go w przypadku otrzymywania raportów, że dodatek Microsoft Azure Information Protection zostanie wyłączony. Gdy ten dodatek jest wyłączony, użytkownicy nie widzą paska usługi Azure Information Protection w aplikacji pakietu Office.
     
     Aby uzyskać więcej informacji na temat tego ustawienia zasad grupy, zobacz [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (Brak załadowanych dodatków z powodu ustawień zasad grupy dla pakietów Office 2013 i Office 2016).
+
+- Kliknij przycisk Uruchom program Outlook w wersji 16.0.9324.1000 lub nowszy: Włącz obsługę starszych monitorów
+    
+    Aby uniknąć wyświetlania paska usługi Azure Information Protection poza programem Outlook dla określonych wersji kliknij polecenie do uruchomienia, może być konieczne włączenie obsługi starszych monitorów. Gdy pasek nie są wyświetlane poprawnie w tym scenariuszu, można napotkać ona wyświetlana jako **AdxTaskPane**. 
+    
+    Aby skonfigurować program Outlook dla tego wymogu: **pliku** > **opcje** > **ogólne**:
+    
+    - W **opcje interfejsu użytkownika** sekcji, jeśli zostanie wyświetlony opcję **Użyj najlepsze ustawienia dla moich wyświetlania** jest zaznaczone, wyczyść to pole wyboru.
 
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.
@@ -159,7 +169,7 @@ Przykład instalacji klienta w trybie dyskretnym dla pakietu Office 2010 i usłu
 
 #### <a name="more-information-about-the-downgradedotnetrequirement-installation-parameter"></a>Więcej informacji na temat parametru instalacji DowngradeDotNetRequirement
 
-Aby umożliwić obsługę automatycznych uaktualnień z użyciem usługi Windows Update oraz niezawodną integrację z aplikacjami pakietu Office, klient usługi Azure Information Protection korzysta z programu Microsoft .NET Framework w wersji 4.6.2. Podczas instalacji ma domyślnie miejsce sprawdzenie dostępności tej wersji, a w przypadku jej braku — próba jej instalacji. Następnie instalacja wymaga ponownego uruchomienia komputera.
+Aby umożliwić obsługę automatycznych uaktualnień z użyciem usługi Windows Update oraz niezawodną integrację z aplikacjami pakietu Office, klient usługi Azure Information Protection korzysta z programu Microsoft .NET Framework w wersji 4.6.2. Domyślnie instalacji interakcyjnej przy użyciu pliku wykonywalnego, który sprawdza, czy ta wersja i próbuje zainstalować go, jeśli jest on niedostępny. Następnie instalacja wymaga ponownego uruchomienia komputera.
 
 Jeśli zainstalowanie nowszej wersji programu Microsoft .NET Framework nie jest możliwe, można zainstalować klienta z uwzględnieniem parametru i wartości **DowngradeDotNetRequirement=True**, co spowoduje pominięcie tego wymagania w przypadku, gdy na komputerze jest zainstalowany program Microsoft .NET Framework w wersji 4.5.1.
 
