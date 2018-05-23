@@ -4,17 +4,17 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/10/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
-ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
+ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -231,9 +231,14 @@ Nowi użytkownicy, które można dodać będzie w stanie otwarte dokumenty i wia
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>Przykład 4: Etykieta chronioną wiadomość e-mail, obsługujący mniej restrykcyjnych uprawnień niż nie przesyłaj dalej
 
-Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub wydrukować i Zapisz załącznik.
+Etykieta nie może być ograniczony do programu Outlook, ale zawiera formanty mniej restrykcyjny niż przy użyciu nie przesyłaj dalej. Możesz na przykład adresatów, aby można było skopiować z wiadomości e-mail lub załącznika lub zapisywanie i Edycja załącznika.
 
-Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD, pamiętaj Poinstruuj użytkowników, nie należy używać tej etykiety dla dokumentów, tylko wiadomości e-mail. Ponadto, aby zapewnić obsługę tych użytkowników zewnętrznych, Exchange Online musi być skonfigurowana dla [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e).  
+Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłudze Azure AD:
+
+- Etykieta jest odpowiedni dla wiadomości e-mail, korzystając z usługi Exchange Online jest [nowych funkcji szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
+ 
+- Dla załączników pakietu Office, które są automatycznie chronione te dokumenty są dostępne do wyświetlenia w przeglądarce. Aby edytować te dokumenty, Pobierz i edytować je za pomocą pakietu Office 2016 kliknij do uruchomienia i konto Microsoft, która używa tego samego adresu e-mail. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
 
 > [!NOTE]
 > Exchange Online wprowadza nową opcję [tylko Szyfruj](configure-usage-rights.md#encrypt-only-option-for-emails). Ta opcja nie jest dostępna dla konfiguracji etykiety. Jednak służy w tym przykładzie można skonfigurować etykietę przy użyciu tych samych praw użytkowania.

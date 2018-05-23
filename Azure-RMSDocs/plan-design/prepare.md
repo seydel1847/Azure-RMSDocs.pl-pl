@@ -4,7 +4,7 @@ description: Sprawdź, czy masz konta użytkowników i grup, których potrzebuje
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
-ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
+ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -84,7 +84,11 @@ W przypadku przypisywania praw użytkowania i kontroli dostępu oraz konfigurowa
 
 Oprócz używania atrybutów proxyAddresses i userPrincipalName usługi Azure AD dla użytkowników w dzierżawie usługa Azure Information Protection korzysta z tych atrybutów w ten sam sposób w celu autoryzowania użytkowników z innej dzierżawy.
 
-Gdy zostanie wysłana wiadomość e-mail przy użyciu szyfrowanie wiadomości usługi Office 365 z nowych funkcji do użytkownika, który nie ma konta w usłudze Azure AD, użytkownik jest najpierw uwierzytelniany przy użyciu federacji z dostawcy tożsamości społecznościowych lub za pomocą jednorazowy kod dostępu. Adres e-mail podany w chronionych wiadomości e-mail, zostanie użyty do autoryzacji użytkownika.
+Inne metody autoryzacji:
+
+- W przypadku adresów e-mail, które nie znajdują się w usłudze Azure AD Azure Information Protection może autoryzować te po ich uwierzytelniania przy użyciu konta Microsoft. Jednak nie wszystkie aplikacje może otworzyć chronioną zawartość, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
+- Gdy zostanie wysłana wiadomość e-mail przy użyciu szyfrowanie wiadomości usługi Office 365 z nowych funkcji do użytkownika, który nie ma konta w usłudze Azure AD, użytkownik jest najpierw uwierzytelniany przy użyciu federacji z dostawcy tożsamości społecznościowych lub za pomocą jednorazowy kod dostępu. Adres e-mail podany w chronionych wiadomości e-mail, zostanie użyty do autoryzacji użytkownika.
 
 ## <a name="azure-information-protection-requirements-for-group-accounts"></a>Wymagania dotyczące usługi Azure Information Protection dla kont grup
 

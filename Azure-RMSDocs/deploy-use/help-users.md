@@ -4,7 +4,7 @@ description: Informacje ułatwiające zapewnienie wskazówek dla użytkowników,
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0243961b4dfdf3bb8c8b04059793098b26880615
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
@@ -49,7 +49,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
     
     - **Pomoc dotycząca logowania**
         
-        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Poświadczenia są wymagane dla służbowych kont użytkowników i haseł skojarzonych z dzierżawcą usługi Office 365 lub dzierżawcą usługi Azure Active Directory. Nie są wymagane w przypadku kont Microsoft (dawniej określanych jako identyfikatory Microsoft Live ID) ani osobistych kont e-mail użytkownika, ponieważ te konta nie są obecnie obsługiwane przez usługę Azure Rights Management. 
+        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Wymagane poświadczenia są zwykle pracy użytkownika lub konto służbowe i hasła, który jest skojarzony z dzierżawą usługi Office 365 lub dzierżawy usługi Azure Active Directory. Mimo że usługa Azure Rights Management może uwierzytelniać konta usługi Azure AD, niektóre aplikacje można również otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         Przekaż użytkownikom i pomocy technicznej z instrukcjami dotyczącymi konto, które będzie używane podczas użytkownicy są monitowani o podanie poświadczeń gdy aplikacje, które korzystają z usługi Azure Rights Management.
         
@@ -57,7 +57,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
         
         Upewnij się, że użytkownicy mają odpowiednie instrukcje dla aplikacji, które używają i używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure Rights Management. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
         
-        Procesy uwierzytelniania i autoryzacji są zależne od kont i grup w usłudze Azure Active Directory. Aby potwierdzić, że konkretny użytkownik lub grupa może mieć upoważnienie do korzystania z zawartości chronionej, należy zastosować testy weryfikacyjne opisane w sekcji [Przygotowanie użytkowników i grup do korzystania z usługi Azure Information Protection](../plan-design/prepare.md).
+        Aby upewnić się, że konkretny użytkownik lub grupa może zostać autoryzowana przez usługi Azure Active Directory w celu ochrony lub korzystania z zawartości chronionej, należy użyć weryfikację w [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md).
         
         Jeśli użytkownik zgłasza, że zostaną one otwarte zawartości chronionej, ale nie mają prawa, które są im niezbędne, problem może być, że użytkownik nie jest poprawne grupy, która jest skonfigurowana dla szablonu usługi Rights Management. Lub może to oznaczać, że [szablon wymaga ponownej konfiguracji](configure-policy-templates.md) dla użytkownika lub grupy. 
         

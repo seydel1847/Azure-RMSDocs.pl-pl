@@ -4,7 +4,7 @@ description: Niektóre często zadawane pytania dotyczące usługi ochrony danyc
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1968f277ca7c9237487d4d767b8a85eb15a9331
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: af2157b8163d9ad5adbb69e057330b3b03259fd0
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -106,11 +106,15 @@ Domyślnie usługa Azure Rights Management używa konta usługi Azure Active Dir
 
 Metody uwierzytelniania w przypadku tych kont mogą się różnić w zależności od tego, jak administrator drugiej organizacji skonfigurował konta w usłudze Azure Active Directory. Można na przykład korzystać z haseł utworzonych dla tych kont, uwierzytelniania wieloskładnikowego (MFA), federacji lub haseł utworzonych w usługach domenowych Active Directory i następnie zsynchronizowanych z usługą Azure Active Directory.
 
-Jeśli musisz chronić wiadomość e-mail z załącznikiem dokumentu pakietu Office użytkownikowi, który nie ma konta w usłudze Azure AD, zmiana metody uwierzytelniania. Usługa Azure Rights Management jest Sfederowane z niektórymi dostawcami popularnych tożsamości społecznościowych, takich jak usługi Gmail. Jeśli dostawca poczty e-mail użytkownika jest obsługiwany, użytkownicy mogą logować się do tej usługi i dostawcy poczty e-mail jest odpowiedzialna za ich uwierzytelnianie. Jeśli nie jest obsługiwana przez dostawcę poczty e-mail użytkownika lub jako preferencji użytkownika poprosić o jednorazowy kod dostępu, który ich uwierzytelnia i wyświetla wiadomość e-mail z chronionego dokumentu w przeglądarce sieci web.
+Inne metody uwierzytelniania:
+
+- Jeśli musisz chronić wiadomość e-mail z załącznikiem dokumentu pakietu Office użytkownikowi, który nie ma konta w usłudze Azure AD, zmiana metody uwierzytelniania. Usługa Azure Rights Management jest Sfederowane z niektórymi dostawcami popularnych tożsamości społecznościowych, takich jak usługi Gmail. Jeśli dostawca poczty e-mail użytkownika jest obsługiwany, użytkownicy mogą logować się do tej usługi i dostawcy poczty e-mail jest odpowiedzialna za ich uwierzytelnianie. Jeśli nie jest obsługiwana przez dostawcę poczty e-mail użytkownika lub jako preferencji użytkownika poprosić o jednorazowy kod dostępu, który ich uwierzytelnia i wyświetla wiadomość e-mail z chronionego dokumentu w przeglądarce sieci web.
+
+- Usługa Azure Information Protection obsługiwanych aplikacji można używać kont Microsoft. Obecnie nie wszystkie aplikacje może otworzyć chronioną zawartość, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>Czy mogę dodać użytkowników zewnętrznych (osoby spoza firmy) do szablonów niestandardowych?
 
-Tak. [Ustawienia ochrony](../deploy-use/configure-policy-protection.md) można skonfigurować w portalu Azure umożliwiają dodanie uprawnień dla użytkowników i grup z spoza organizacji, a nawet dla wszystkich użytkowników w innej organizacji. Jeśli nie zostanie użyty szablon, wyłącznie do wysyłania wiadomości e-mail przy użyciu [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e), nie należy dodawać konta z społecznościowych tożsamości (na przykład Gmail i firmy Microsoft) lub innych kont, które nie znajdują się w Azure AD.
+Tak. [Ustawienia ochrony](../deploy-use/configure-policy-protection.md) można skonfigurować w portalu Azure umożliwiają dodanie uprawnień dla użytkowników i grup z spoza organizacji, a nawet dla wszystkich użytkowników w innej organizacji. Użytkownik może być bardzo przydatne do odwołania w przykładzie krok po kroku, [zabezpieczanie współpracy nad dokumentami za pomocą usługi Azure Information Protection](secure-collaboration-documents.md). 
 
 Należy pamiętać, że jeśli etykiety usługi Azure Information Protection, należy najpierw przekonwertować szablonu niestandardowego etykietę zanim będzie można skonfigurować te ustawienia ochrony w portalu Azure. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 

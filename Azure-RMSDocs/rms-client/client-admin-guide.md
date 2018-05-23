@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7d9fdcc96db5620c8ad0ee795c84c1fd56806239
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
-ms.translationtype: HT
+ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -163,7 +163,7 @@ Te języki, opcje menu, okna dialogowe i komunikaty z usługi Azure Information 
 
 Etykieta nazwy i opisy, które określisz nie są automatycznie translacji podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 bieżącego [domyślne zasady](../deploy-use/configure-policy-default.md) oferuje obsługę w przypadku niektórych języków. Dla użytkowników zobaczyć etykiet w ich preferowany język Podaj własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection, które mają być używane te tłumaczenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md). Oznaczenia wizualne nie są tłumaczone i nie obsługuje więcej niż jednym języku.
 
-### <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługa klienta Azure Information Protection
+## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługa klienta Azure Information Protection
 
 Zespół usługi Azure Information Protection regularnie aktualizuje klienta Azure Information Protection, nowe funkcje i poprawki. Powiadomienia są wysyłane do zespołu [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
 

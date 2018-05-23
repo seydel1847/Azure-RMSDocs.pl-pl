@@ -4,7 +4,7 @@ description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9462795fb46c6eef857d3fd42bfe873ac869e51c
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -33,11 +33,14 @@ Etykiety dotyczy ochrony dokumentu, dokument chroniony nie jest odpowiedni do za
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Bezpieczne udostępnianie pliku osobom spoza organizacji
 
-Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład Dołącz plik do wiadomości e-mail.
+Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład Dołącz chroniony dokument do wiadomości e-mail.
 
-W przypadku regularnego udostępniania plików osobom spoza organizacji, administrator może skonfigurować etykietę ustawiającą ochronę w taki sposób, że te osoby mogą je odczytać. Możesz także użyć [aplikacji pakietu Office](#set-custom-permissions-for-a-document) lub [Eksploratora plików](#using-file-explorer-to-classify-and-protect-files), aby ustawić uprawnienia niestandardowe dla pliku przed jego udostępnieniem. Jeśli zostały ustawione uprawnienia niestandardowe, a plik jest już chroniony do użytku wewnętrznego, w celu zachowania pierwotnych uprawnień należy najpierw utworzyć jego kopię. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.  
+Przed udostępnieniem plików osobom spoza organizacji, skontaktuj się z pomocy technicznej lub administratorem sposób ochrony plików dla użytkowników zewnętrznych.
 
-Gdy plik jest chroniony za pomocą uprawnień niestandardowych, należy użyć standardowego mechanizmu udostępniania dla tego pliku. Jeśli osoby, którym udostępniasz pliki, otrzymają chroniony plik po raz pierwszy, mogą potrzebować instrukcji ich wyświetlenia. Można dla nich skopiować i wkleić następujący komunikat: **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. W przypadku użycia po raz pierwszy zobacz te [instrukcje](https://aka.ms/rms-signup).**
+Na przykład jeśli Twoja organizacja regularnie komunikuje się z osób w innej organizacji, administrator może skonfigurować etykiety, które ustawia ochrony w taki sposób, że te osoby mogą odczytywać i wykorzystywać chronionych dokumentów. Następnie wybierz etykiety do klasyfikowania i ochrony dokumentów do udostępniania.
+
+Alternatywnie Jeśli użytkowników zewnętrznych [kont między firmami (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) dla nich utworzona, można użyć z [aplikacji pakietu Office, aby ustawić uprawnienia niestandardowe](#set-custom-permissions-for-a-document) lub użyj [Eksploratora plików, aby ustawić uprawnienia niestandardowe](#using-file-explorer-to-classify-and-protect-files) przed udostępnieniem dokumentu. Jeśli dokument jest już chroniony do użytku wewnętrznego ustawienie własnych uprawnień niestandardowych, najpierw utwórz kopię Aby zachować oryginalne uprawnienia. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.
+
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
 
@@ -95,7 +98,7 @@ Jeśli dozwolone przez administratora, można określić własne ustawienia ochr
     
     - **Wybierz uprawnienia**: aby chronić plik, zapewniając możliwość dostępu do niego wyłącznie sobie, wybierz opcję **Tylko dla mnie**. W przeciwnym razie wybierz poziom dostępu dla poszczególnych osób.
     
-    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
         
         Wybierz z książki adresowej użytkowników lub grup umożliwia także ikonę książki adresowej.
     
@@ -152,7 +155,7 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
     - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma być przypisany użytkownikom przy ochronie wybranego pliku lub plików.
     
-    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. Uwaga: osobiste adresy e-mail nie są obecnie obsługiwane.
+    - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
     
     Alternatywnie można ikonę książki adresowej wybierz z książki adresowej użytkowników lub grupy.
         
