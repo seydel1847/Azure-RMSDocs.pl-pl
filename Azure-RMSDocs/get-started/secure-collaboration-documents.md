@@ -4,7 +4,7 @@ description: Przepływ pracy na trasie do współpracy nad dokumentami, które s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 05/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c24747bcb05f7004f7d42b0145ce6cc1bbade5
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: ac623ae678994e04d19bbe5758b4b4f1cba7b045
+ms.sourcegitcommit: f5ff4106742a4f12c04993fc0090c65ad8db713f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Bezpiecznej współpracy nad dokumentami za pomocą usługi Azure Information Protection
 
@@ -119,7 +119,7 @@ Przed otwarciem dokumentu, jeden z następujących przepływów uwierzytelniania
 
 Następujące tabeli podsumowania metody uwierzytelniania innej, które są obsługiwane w przypadku otwieranie i edytowanie chronionych dokumentów.
 
-Ponadto przeglądarka usługi Azure Information Protection dla systemu iOS i Android można otworzyć plików do wyświetlenia za pomocą konta Microsoft.
+Ponadto przeglądarka usługi Azure Information Protection dla systemu Windows i iOS i Android może otwierać pliki w celu wyświetlenia przy użyciu konta Microsoft.
 
 |Platformy do otwierania i edycji dokumentów: <br />Word, Excel, PowerPoint|Metoda uwierzytelniania:<br />Azure AD|Metoda uwierzytelniania:<br />Konto Microsoft|
 |---------------|----------|-----------|-----------|
