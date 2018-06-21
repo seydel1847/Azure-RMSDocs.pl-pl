@@ -1,13 +1,13 @@
 ---
-title: "Przykłady kodu dla systemu Android | Azure RMS"
-description: "W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu Android."
-keywords: 
+title: Przykłady kodu dla systemu Android | Azure RMS
+description: W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu Android.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
@@ -19,6 +19,7 @@ ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/19/2018
+ms.locfileid: "27927128"
 ---
 # <a name="android-code-examples"></a>Przykłady kodu dla systemu Android
 

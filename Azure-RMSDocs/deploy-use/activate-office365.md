@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205040"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Jak aktywować usługę Azure Rights Management w centrum administracyjnym usługi Office 365
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208332"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwanych przez klienta usługi Azure Information Protection
 

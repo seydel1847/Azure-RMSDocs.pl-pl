@@ -17,6 +17,7 @@ ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31009121"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Faza 3 migracji — konfiguracja po stronie klienta
 

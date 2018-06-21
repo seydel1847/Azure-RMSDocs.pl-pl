@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207441"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management
 

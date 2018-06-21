@@ -1,13 +1,13 @@
 ---
-title: "Wdrażanie aplikacji — AIP"
-description: "W tym artykule opisano proces wdrażania aplikacji usługi do dzierżawy innej niż ta, z którą była ona pierwotnie opracowana."
-keywords: 
+title: Wdrażanie aplikacji — AIP
+description: W tym artykule opisano proces wdrażania aplikacji usługi do dzierżawy innej niż ta, z którą była ona pierwotnie opracowana.
+keywords: ''
 author: kkanakas
 ms.author: kartikk
 manager: mbaldwin
 ms.date: 02/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 06/30/2017
+ms.locfileid: "20232840"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>Wdrażanie aplikacji usługi do innej dzierżawy
 

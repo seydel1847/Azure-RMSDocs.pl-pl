@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207917"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 

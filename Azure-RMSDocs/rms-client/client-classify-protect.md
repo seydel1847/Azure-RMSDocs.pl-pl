@@ -17,6 +17,7 @@ ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444145"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 

@@ -1,6 +1,6 @@
 ---
-title: "Nowości i informacje o wersji"
-description: "Spis ważnych zmian i funkcji w tym i poprzednich wersjach."
+title: Nowości i informacje o wersji
+description: Spis ważnych zmian i funkcji w tym i poprzednich wersjach.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/29/2018
+ms.locfileid: "28878939"
 ---
 # <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 

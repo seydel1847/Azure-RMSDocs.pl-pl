@@ -1,13 +1,13 @@
 ---
-title: "Zestaw Rights Management SDK 4.2 — AIP"
-description: "Zestaw RMS SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z zarządzaniem prawami."
-keywords: 
+title: Zestaw Rights Management SDK 4.2 — AIP
+description: Zestaw RMS SDK 4.2 jest uproszczonym zestawem interfejsu API nowej generacji zapewniającym lekkie środowisko programistyczne do uaktualniania aplikacji dla urządzeń z zarządzaniem prawami.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765644"
 ---
 # <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
 

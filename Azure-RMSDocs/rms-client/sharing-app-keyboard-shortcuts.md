@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206958"
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Używanie skrótów klawiaturowych w aplikacji do udostępniania usługi Rights Management
 

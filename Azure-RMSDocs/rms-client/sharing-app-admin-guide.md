@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208553"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 

@@ -1,13 +1,13 @@
 ---
-title: "Terminologia dla deweloperów dotycząca usługi AIP | Dokumentacja firmy Microsoft"
-description: "Zbiór definicji dotyczących usług Rights Management Services."
-keywords: 
+title: Terminologia dla deweloperów dotycząca usługi AIP | Dokumentacja firmy Microsoft
+description: Zbiór definicji dotyczących usług Rights Management Services.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764528"
 ---
 # <a name="terms"></a>Terminologia
 

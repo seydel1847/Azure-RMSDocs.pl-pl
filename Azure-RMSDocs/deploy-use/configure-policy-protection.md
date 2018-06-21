@@ -15,6 +15,7 @@ ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444218"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 

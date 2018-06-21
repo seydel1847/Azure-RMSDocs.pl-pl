@@ -15,6 +15,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208060"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 

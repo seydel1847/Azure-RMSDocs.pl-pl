@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33821100"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206210"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Podręcznik użytkownika: Tryb tylko do ochrony dla klienta usługi Azure Information Protection
 

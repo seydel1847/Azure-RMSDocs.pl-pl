@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208587"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -44,7 +45,7 @@ Jeśli są widoczne dwie wersje pliku różniące się rozszerzeniami nazw plik�
 
 Sposób otwierania pliku zależy od metody jego ochrony, którą można ustalić na podstawie rozszerzenia nazwy pliku. W każdym przypadku otwieranie pliku może podlegać inspekcji tak długo jak plik jest chroniony. Ponadto jeśli plik został wysłany jako załącznik wiadomości e-mail, jego nadawca może otrzymać powiadomienie e-mail o każdym otwarciu tego pliku.
 
-- **Plik ma*.pfile* rozszerzenie nazwy pliku**
+- **Plik ma *.pfile* rozszerzenie nazwy pliku**
 
     Plik podlega ochronie ogólnej.
 
@@ -73,7 +74,7 @@ Pełna lista rozszerzeń nazw plików obsługiwanych przez usługi Rights Manage
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>Aby korzystać z chronionych plików (na przykład edytować lub drukować je)
 Jeśli po otwarciu chronionego pliku chcesz zrobić coś więcej niż tylko odczytać ten plik (na przykład zmodyfikować go, skopiować lub wydrukować), postępuj zgodnie z instrukcjami odpowiednimi dla rozszerzenia nazwy pliku:
 
-- **Plik ma*.pfile* rozszerzenie nazwy pliku**
+- **Plik ma *.pfile* rozszerzenie nazwy pliku**
 
     Zapisz otwarty plik i nadaj mu nowe rozszerzenie nazwy pliku skojarzone z aplikacją, której chcesz użyć.
 

@@ -1,13 +1,13 @@
 ---
 title: Dokumentacja zestawu AIP SDK 4.2 | Dokumentacja firmy Microsoft
-description: "Zestaw Azure Information Protection SDK 4.2 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows."
-keywords: 
+description: Zestaw Azure Information Protection SDK 4.2 obsługuje systemy operacyjne Android, iOS, OS X, Linux i Windows Phone oraz Sklep Windows.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764317"
 ---
 # <a name="api-sdk-42-reference"></a>Dokumentacja zestawu AIP SDK 4.2
 

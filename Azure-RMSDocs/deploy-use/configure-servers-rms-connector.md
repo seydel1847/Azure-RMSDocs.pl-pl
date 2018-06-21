@@ -17,6 +17,7 @@ ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34216855"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 

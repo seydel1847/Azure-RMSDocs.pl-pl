@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206863"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Podręcznik użytkownika: Zadania, które pozwala wykonać za pomocą aplikacji RMS sharing
 

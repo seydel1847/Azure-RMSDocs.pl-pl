@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258969"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>Konfigurowanie aplikacji do uwierzytelniania ADAL
 

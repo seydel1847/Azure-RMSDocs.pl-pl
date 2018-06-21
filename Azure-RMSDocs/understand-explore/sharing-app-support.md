@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206921"
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Aplikacja RMS sharing dla systemu Windows i platform urządzeń przenośnych
 

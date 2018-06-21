@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327470"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj ochrony własnego klucza (HYOK) dla usługi Azure Information Protection
 

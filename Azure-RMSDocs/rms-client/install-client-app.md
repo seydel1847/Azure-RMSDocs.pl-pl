@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206038"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobierz i zainstaluj klienta usługi Azure Information Protection
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206370"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management
 

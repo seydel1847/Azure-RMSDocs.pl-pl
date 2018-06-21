@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208621"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>Aplikacja do udostępniania usługi Rights Management: historia wersji
 

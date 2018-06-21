@@ -17,6 +17,7 @@ ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444099"
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Jakie problemy rozwiązuje usługa Azure RMS?
 

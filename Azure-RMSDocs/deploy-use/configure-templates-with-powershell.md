@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205724"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>Dokumentacja programu PowerShell dla szablonów ochrony
 

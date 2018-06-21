@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207019"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików
 

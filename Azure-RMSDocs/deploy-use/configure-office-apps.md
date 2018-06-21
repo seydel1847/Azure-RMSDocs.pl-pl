@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204694"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Aplikacje pakietu Office: Konfiguracja dla klientów do korzystania z usługi Azure Rights Management
 

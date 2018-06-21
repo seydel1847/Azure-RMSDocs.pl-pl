@@ -1,13 +1,13 @@
 ---
-title: "Obsługiwane formaty plików | Azure RMS"
-description: "Bieżąca wersja interfejsu API plików obsługuje natywną ochronę plików pakietu MS Office i plików PDF oraz ochronę PFile dla wszystkich pozostałych formatów plików."
-keywords: 
+title: Obsługiwane formaty plików | Azure RMS
+description: Bieżąca wersja interfejsu API plików obsługuje natywną ochronę plików pakietu MS Office i plików PDF oraz ochronę PFile dla wszystkich pozostałych formatów plików.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765090"
 ---
 # <a name="supported-file-formats"></a>Obsługiwane formaty plików
 

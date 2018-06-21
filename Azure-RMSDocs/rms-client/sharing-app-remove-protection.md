@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205537"
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Usuwanie ochrony z pliku za pomocą aplikacji do udostępniania usługi Rights Management
 

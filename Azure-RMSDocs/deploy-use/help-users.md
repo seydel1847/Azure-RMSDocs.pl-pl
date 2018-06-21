@@ -17,6 +17,7 @@ ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444269"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 

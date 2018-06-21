@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205133"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Strona klienta usługi Azure Information Protection
 

@@ -1,6 +1,6 @@
 ---
-title: "Przewodnik dewelopera usługi Azure Information Protection"
-description: "Deweloperzy mogą korzystać z usługi Azure Information Protection do ochrony plików każdego typu oraz zarządzania nimi"
+title: Przewodnik dewelopera usługi Azure Information Protection
+description: Deweloperzy mogą korzystać z usługi Azure Information Protection do ochrony plików każdego typu oraz zarządzania nimi
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765531"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 

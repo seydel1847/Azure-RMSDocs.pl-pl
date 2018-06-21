@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207611"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Inne nazwy usługi Azure Information Protection
 

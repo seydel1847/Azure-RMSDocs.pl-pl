@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208196"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cyklu życia klucza dzierżawy
 

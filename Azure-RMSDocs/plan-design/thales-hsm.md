@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204677"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Więcej informacji na temat sprzętowych modułów zabezpieczeń firmy Thales oraz dodatków firmy Microsoft: ZAWARTOŚĆ WYCOFANA
 

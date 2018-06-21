@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208468"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 

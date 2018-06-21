@@ -15,6 +15,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205232"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection 
 

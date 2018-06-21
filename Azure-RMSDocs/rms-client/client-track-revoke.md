@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33823531"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas używania usługi Azure Information Protection
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444184"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
