@@ -1,0 +1,132 @@
+# <a name="class-mipprotectionenginesettings"></a>Klasa mip::ProtectionEngine::Settings 
+[Ustawienia](class_mip_protectionengine_settings.md) posługują się [ProtectionEngine](class_mip_protectionengine.md) podczas jej tworzenia, jak i w okresie swojego istnienia.
+  
+## <a name="summary"></a>Podsumowanie
+ Elementy członkowskie                        | Opisy                                
+--------------------------------|---------------------------------------------
+ Ustawienia publicznego (const tożsamości i tożsamości, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [ProtectionEngine::Settings](class_mip_protectionengine_settings.md) Konstruktor do tworzenia nowego aparatu.
+ Ustawienia publicznego (const std::string & engineId, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [ProtectionEngine::Settings](class_mip_protectionengine_settings.md) konstruktora do ładowania aparat istniejących.
+ publiczne std::string const & GetEngineId() const  |  Pobiera aparat, identyfikator.
+ publiczne SetEngineId void (const std::string & engineId)  |  Ustawia identyfikator aparatu.
+ Identyfikator publiczny const & GetIdentity() const  |  Pobiera użytkownika, którego tożsamość skojarzone z aparatem.
+ publiczne SetIdentity void (const tożsamości i tożsamości)  |  Ustawia użytkownika, którego tożsamość skojarzone z aparatem.
+ publiczne std::string const & GetClientData() const  |  Pobiera dane niestandardowe określony przez klienta.
+ publiczne std::string const & GetLocale() const  |  Pobiera ustawienia regionalne w aparacie, które będą zapisywane dane.
+publiczne SetCustomSettings void (const std::vector < std::pair < std::string, std::string >> & wartość)  |  Zestawy par nazwa/wartość służy do testowania i eksperymentowania.
+publiczne std::vector const < std::pair < std::string, std::string >> & GetCustomSettings() const  |  Pobiera par nazwa/wartość służy do testowania i eksperymentowania.
+ publiczne SetSessionId void (const std::string & sessionId)  |  Ustawia aparat identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych.
+ publiczne std::string const & GetSessionId() const  |  Pobiera identyfikator sesji aparatu.
+ publiczne SetCloudEndpointBaseUrl void (const std::string & cloudEndpointBaseUrl)  |  Ustawia chmury punktu końcowego podstawowego adresu url, używany do określenia granic chmury.
+ publiczne std::string const & GetCloudEndpointBaseUrl() const  |  Pobiera cloudEndpointBaseUrl.
+  
+## <a name="members"></a>Elementy członkowskie
+  
+### <a name="settings"></a>Ustawienia
+[ProtectionEngine::Settings](class_mip_protectionengine_settings.md) Konstruktor do tworzenia nowego aparatu.
+
+Parametry:  
+* **tożsamość**: tożsamość, która zostanie skojarzona z [ProtectionEngine](class_mip_protectionengine.md)
+
+
+* **Dane klienckie**: dane klienta można dostosować, które mogą być przechowywane z aparatem, gdy zwolniony i mogą być pobierane z załadowanych aparatu. 
+
+
+* **Ustawienia regionalne**: aparat danych wyjściowych, które będą dostępne w tych ustawień regionalnych, domyślny "en US".
+
+
+  
+### <a name="settings"></a>Ustawienia
+[ProtectionEngine::Settings](class_mip_protectionengine_settings.md) konstruktora do ładowania aparat istniejących.
+
+Parametry:  
+* **engineId**: Unikatowy identyfikator aparat, który zostanie załadowany 
+
+
+* **Dane klienckie**: dane klienta można dostosować, które mogą być przechowywane z aparatem, gdy zwolniony i mogą być pobierane z załadowanych aparatu. 
+
+
+* **Ustawienia regionalne**: aparat danych wyjściowych, które będą dostępne w tych ustawień regionalnych, domyślny "en US".
+
+
+  
+### <a name="getengineid"></a>GetEngineId
+Pobiera aparat, identyfikator.
+
+  
+**Zwraca**: identyfikator aparatu
+  
+### <a name="setengineid"></a>SetEngineId
+Ustawia identyfikator aparatu.
+
+Parametry:  
+* **engineId**: identyfikator aparatu.
+
+
+  
+### <a name="getidentity"></a>Żądanie GetIdentity
+Pobiera użytkownika, którego tożsamość skojarzone z aparatem.
+
+  
+**Zwraca**: tożsamość użytkownika skojarzonego z aparatem
+  
+### <a name="setidentity"></a>SetIdentity
+Ustawia użytkownika, którego tożsamość skojarzone z aparatem.
+
+Parametry:  
+* **tożsamość**: tożsamość użytkownika skojarzonego z aparatem
+
+
+  
+### <a name="getclientdata"></a>GetClientData
+Pobiera dane niestandardowe określony przez klienta.
+
+  
+**Zwraca**: dane niestandardowe określone przez klienta
+  
+### <a name="getlocale"></a>GetLocale
+Pobiera ustawienia regionalne w aparacie, które będą zapisywane dane.
+
+  
+**Zwraca**: ustawienia regionalne w aparacie, które będą zapisywane dane
+  
+### <a name="setcustomsettings"></a>SetCustomSettings
+Zestawy par nazwa/wartość służy do testowania i eksperymentowania.
+
+Parametry:  
+* **customSettings**: par nazw i wartości używane do testowania i eksperymentowania
+
+
+  
+### <a name="getcustomsettings"></a>GetCustomSettings
+Pobiera par nazwa/wartość służy do testowania i eksperymentowania.
+
+  
+**Zwraca**: par nazw i wartości używane do testowania i eksperymentowania
+  
+### <a name="setsessionid"></a>SetSessionId
+Ustawia aparat identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych.
+
+Parametry:  
+* **Identyfikator sesji**: aparat, identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych
+
+
+  
+### <a name="getsessionid"></a>GetSessionId
+Pobiera identyfikator sesji aparatu.
+
+  
+**Zwraca**: aparat, identyfikator sesji
+  
+### <a name="setcloudendpointbaseurl"></a>SetCloudEndpointBaseUrl
+Ustawia chmury punktu końcowego podstawowego adresu url, używany do określenia granic chmury.
+
+Parametry:  
+* **cloudEndpointBaseUrl**: podstawowy adres url skojarzony z ochrony punktów końcowych
+
+
+  
+### <a name="getcloudendpointbaseurl"></a>GetCloudEndpointBaseUrl
+Pobiera cloudEndpointBaseUrl.
+
+  
+**Zwraca**: podstawowy adres url skojarzony z ochrony punktów końcowych

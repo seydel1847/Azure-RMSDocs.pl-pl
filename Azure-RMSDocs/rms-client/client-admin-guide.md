@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
+ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263332"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Informacje zawarte w tym przewodniku są przydatne dla osób odpowiedzialnych za klienta usługi Azure Information Protection w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych, niż jest dostępnych w [podręczniku użytkownika klienta usługi Azure Information Protection](client-user-guide.md). 
 
@@ -46,7 +47,7 @@ Przykład:
 
 Klient usługi Azure Information Protection zawiera następujące elementy:
 
-- Dodatek pakietu Office, instalujący pasek usługi Azure Information Protection, użytkownicy mogą wybierać etykiety klasyfikacji i **Chroń** na Wstążce, aby wyświetlić dodatkowe opcje. Dla programu Outlook **nie przesyłaj dalej** przycisk jest również dostępny dla wstążki.
+- Dodatek pakietu Office, który jest instalowany jest pasek usługi Azure Information Protection dla użytkowników wybrać etykiety klasyfikacji, a **Chroń** przycisk na Wstążce udostępniający dodatkowe opcje. Dla programu Outlook **nie przesyłaj dalej** przycisk jest również dostępny dla wstążki.
 
 - Opcje dostępne po kliknięciu prawym przyciskiem myszy w oknie Eksploratora plików Windows, które pozwalają użytkownikom stosować etykiety klasyfikacji i ochronę plików.
 
@@ -54,7 +55,7 @@ Klient usługi Azure Information Protection zawiera następujące elementy:
 
 - Moduł środowiska PowerShell pozwalający dodawać i usuwać etykiety klasyfikacji oraz włączać i wyłączać ochronę plików. 
     
-    Ten moduł zawiera polecenia cmdlet, aby zainstalować i skonfigurować [skanera usługi Azure Information Protection](../deploy-use/deploy-aip-scanner.md) który działa jako usługa w systemie Windows Server. Ta usługa pozwala odnajdywania, klasyfikowania i chronić pliki na magazyny danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server.
+    Ten moduł zawiera polecenia cmdlet, aby zainstalować i skonfigurować [skanera usługi Azure Information Protection](../deploy-use/deploy-aip-scanner.md) , które jest uruchamiane jako usługa w systemie Windows Server. Ta usługa umożliwia odnajdywanie, klasyfikowanie i ochrona plików w magazynach danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server.
 
 - Klient usługi Rights Management komunikujący się z usługą Azure Rights Management (Azure RMS) lub usługami Active Directory Rights Management (AD RMS).
 
@@ -73,7 +74,7 @@ Dokonaj wdrożenia klienta usługi Azure Information Protection w następującyc
 
 - Chcesz uruchamiać skrypty, które klasyfikują (i ewentualnie chronią) dokumenty za pomocą poleceń środowiska PowerShell.
 
-- Chcesz uruchomić usługa, która umożliwia odnalezienie, klasyfikuje (i opcjonalnie chroni) plików, które są przechowywane w firmie.
+- Chcesz uruchomić to usługa, która umożliwia odnajdywanie, klasyfikują (i opcjonalnie — chroni) plików, które są przechowywane lokalnie.
 
 - Chcesz wyświetlać chronione dokumenty, gdy natywna aplikacja wyświetlająca je nie jest zainstalowana lub nie może otworzyć tych dokumentów.
 
@@ -85,17 +86,17 @@ Dokonaj wdrożenia klienta usługi Azure Information Protection w następującyc
 
 - Korzystasz z pakietu Office 2010 i chcesz chronić dokumenty i wiadomości e-mail za pomocą usługi Azure Rights Management.
 
-Przykład przedstawiający klienta Azure Information Protection dodatku dla aplikacji pakietu Office, Wyświetlanie etykiety klasyfikacji dla Twojej organizacji i nowych **Chroń** na Wstążce:
+Przykład przedstawiający klienta usługi Azure Information Protection dodatku dla aplikacji pakietu Office wyświetla etykiety klasyfikacji dla Twojej organizacji i nowy **Chroń** przycisk na Wstążce:
 
 ![Pasek usługi Azure Information Protection z zasadami domyślnymi](../media/word2016-calloutsv2.png)
 
-## <a name="installing-and-supporting-the-azure-information-protection-client"></a>Instalowanie i obsługa klienta Azure Information Protection
+## <a name="installing-and-supporting-the-azure-information-protection-client"></a>Instalacji i obsługi klienta usługi Azure Information Protection
 
-Klienta usługi Azure Information Protection można zainstalować za pomocą usługi Windows Update, plik wykonywalny lub plik Instalatora Windows. Aby uzyskać więcej informacji o poszczególnych opcjach wyboru i instrukcje, zobacz [instalowania klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).  
+Klient usługi Azure Information Protection można zainstalować za pomocą Windows Update, plik wykonywalny lub plik Instalatora Windows. Aby uzyskać więcej informacji o poszczególnych opcjach wyboru i instrukcje, zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).  
 
-Użyj poniższych sekcji, aby uzyskać dodatkowe informacje o instalowaniu klienta. 
+Następujące sekcje zawierają informacje do dodatkowych informacji dotyczących instalowania klienta. 
 
-### <a name="installation-checks-and-troubleshooting"></a>Kontroli instalacji i rozwiązywanie problemów
+### <a name="installation-checks-and-troubleshooting"></a>Kontroli instalacji i rozwiązywania problemów
 
 Gdy klient jest zainstalowany, użyj **Pomoc i opinie** opcję, aby otworzyć **Microsoft Azure Information Protection** okno dialogowe:
 
@@ -111,9 +112,9 @@ Użyj linku **Wyślij opinię**, aby wysłać propozycje lub prośby do zespołu
 
 Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączenie plików dziennika klienta usługi Azure Information Protection w przypadku wyświetlenia prośby o ich przesłanie zespołowi pomocy technicznej firmy Microsoft. Ta opcja umożliwia także wysyłanie plików dziennika zespołowi pomocy technicznej przez użytkowników końcowych.
 
-**Resetowanie ustawień** wylogowaniu się użytkownika, usuwa obecnie pobranych zasady usługi Azure Information Protection i resetuje ustawienia użytkownika dla usługi Azure Rights Management.
+**Resetowanie ustawień** wylogowaniu się użytkownika, usuwa aktualnie pobrane zasady usługi Azure Information Protection i resetuje ustawienia użytkownika dla usługi Azure Rights Management.
 
-##### <a name="more-information-about-the-reset-settings-option"></a>Więcej informacji na temat opcji Resetowanie ustawień
+##### <a name="more-information-about-the-reset-settings-option"></a>Więcej informacji na temat opcji resetowania ustawień
 
 - Nie trzeba być administratorem lokalnym, aby używać tej opcji, a ta akcja nie jest rejestrowana w Podglądzie zdarzeń. 
 
@@ -127,9 +128,9 @@ Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączeni
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
-- Następujące ustawienia i klucze rejestru zostaną usunięte. Jeśli ustawienia dla każdej z tych kluczy rejestru wartości niestandardowych, te należy ponownie skonfigurować po zresetowaniu klienta. 
+- Następujące ustawienia i klucze rejestru zostaną usunięte. Jeśli ustawienia dla każdego z tych kluczy rejestru wartości niestandardowych, te należy ponownie skonfigurować po zresetowaniu klienta. 
     
-    Zwykle sieciach firmowych, te ustawienia są skonfigurowane za pomocą zasad grupy, w którym to przypadku one są automatycznie ponownie po odświeżeniu zasad grupy na komputerze. Jednak może być niektórych ustawień, które są skonfigurowane jednorazowo przy użyciu skryptu, lub skonfigurować ręcznie. W takich sytuacjach należy wykonać dodatkowe kroki, aby ponownie skonfigurować te ustawienia. Na przykład komputerów może uruchomić skrypt jednorazowo można skonfigurować ustawienia dla przekierowanie do usługi Azure Information Protection, ponieważ jest przeprowadzana migracja z usług AD RMS i nadal ma punkt połączenia usługi w sieci. Po przywróceniu klienta, komputer musi ponownie uruchom ten skrypt.
+    Zazwyczaj sieciach firmowych, te ustawienia są skonfigurowane za pomocą zasad grupy, w którym to przypadku one są automatycznie przywracane po odświeżeniu zasad grupy na komputerze. Jednak może być pewnym ustawieniom, które są skonfigurowane jeden raz przy użyciu skryptu, lub ręcznie skonfigurowane. W takich sytuacjach należy wykonać dodatkowe kroki, aby ponownie skonfigurować te ustawienia. Na przykład komputerów może uruchomić skrypt, jeden raz można skonfigurować ustawienia przekierowania do usługi Azure Information Protection, ponieważ migrujesz z usług AD RMS i nadal masz punkt połączenia usługi w sieci. Po przywróceniu klienta, komputer musi ponownie uruchomić ten skrypt.
     
     - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     
@@ -157,23 +158,33 @@ Użyj informacji z obszaru **Wersja**, aby potwierdzić, która wersja klienta j
 
 ## <a name="support-for-multiple-languages"></a>Obsługa wielu języków
 
-Klient usługi Azure Information Protection obsługuje te same języki, które obsługuje usługi Office 365. Aby uzyskać listę tych języków, zobacz **usługi Office 365, Exchange Online Protection i usługi Power BI** sekcji z [dostępność międzynarodowa](https://products.office.com/business/international-availability) strony z pakietu Office.
+Klient usługi Azure Information Protection obsługuje te same języki, które obsługuje usługi Office 365. Aby uzyskać listę tych języków, zobacz **usługi Office 365, Exchange Online Protection i usługi Power BI** sekcja [dostępność międzynarodowa](https://products.office.com/business/international-availability) strony z pakietu Office.
 
-Te języki, opcje menu, okna dialogowe i komunikaty z usługi Azure Information Protection klienta są wyświetlane w języku użytkownika. Brak jednego Instalator, który wykryje języka aby dodatkowa konfiguracja nie jest niezbędne do zainstalowania klienta usługi Azure Information Protection dla różnych języków. 
+Dla tych języków, opcje menu, okna dialogowe i komunikaty z usługi Azure Information Protection klienta są wyświetlane w języku użytkownika. Istnieje jeden Instalator, który wykrywa język, dzięki czemu dodatkowa konfiguracja nie jest wymagane do zainstalowania klienta usługi Azure Information Protection dla różnych języków. 
 
-Etykieta nazwy i opisy, które określisz nie są automatycznie translacji podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 bieżącego [domyślne zasady](../deploy-use/configure-policy-default.md) oferuje obsługę w przypadku niektórych języków. Dla użytkowników zobaczyć etykiet w ich preferowany język Podaj własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection, które mają być używane te tłumaczenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md). Oznaczenia wizualne nie są tłumaczone i nie obsługuje więcej niż jednym języku.
+Jednak nazwy etykiet i opisy, które określisz nie są automatycznie przekształcane podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 r. bieżący [domyślne zasady](../deploy-use/configure-policy-default.md) obejmuje obsługę w przypadku niektórych języków. Aby użytkownikom były wyświetlane etykiety w języku preferowanym udostępnić własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection pod kątem ich używania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md). Oznaczenia wizualne nie są przekształcane i nie obsługują więcej niż jednym języku.
 
-## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługa klienta Azure Information Protection
+## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługi klienta usługi Azure Information Protection
 
-Zespół usługi Azure Information Protection regularnie aktualizuje klienta Azure Information Protection, nowe funkcje i poprawki. Powiadomienia są wysyłane do zespołu [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
+Zespół usługi Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection dla nowych funkcji i poprawek. Anonse są wysyłane do zespołu [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
 
-Jeśli klient został zainstalowany przy użyciu plik wykonywalny lub plik Instalatora Windows, należy ręcznie pobrać nowych wersji z Microsoft Download Center, aby zainstalować aktualizacje dla klienta. Po zainstalowaniu klienta za pomocą usługi Windows Update nowości automatycznie stanie się dostępna do pobrania w katalogu kilka tygodni po wydaniu. 
+Jeśli używasz aktualizacji Windows klienta usługi Azure Information Protection automatycznie uaktualnia ogólnie dostępnej wersji klienta, niezależnie od tego, jak klient został zainstalowany. Nowe wersje klienta są publikowane do wykazu kilka tygodni po wydaniu.
 
-Użyj [wersji wersji historii i obsługi zasad](../rms-client/client-version-release-history.md) zasady udzielania pomocy technicznej dla klienta usługi Azure Information Protection, które wersje są obecnie obsługiwane i nowości i zmian dotyczących obsługiwanych wersji. 
+Alternatywnie, można ręcznie uaktualnić klienta, pobierając nowej wersji z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Następnie należy zainstalować nową wersję, aby uaktualnić klienta. Ta metoda musi być uaktualniania wersji (wersja zapoznawcza).
+
+Podczas ręcznego uaktualniania należy odinstalować poprzednią wersję najpierw tylko wtedy, gdy zmieniasz metody instalacji. Na przykład możesz zmienić z pliku wykonywalnego (.exe) wersję klienta do wersji Windows installer (.msi) klienta. Lub, jeśli musisz zainstalować poprzednią wersję klienta. Na przykład masz bieżącej wersji zapoznawczej zainstalowane do testowania i teraz należy powrócić do bieżącej wersji ogólnie dostępnej.
+
+Użyj [zasady historii i pomoc techniczna wydania wersji](../rms-client/client-version-release-history.md) zasady pomocy technicznej dla klienta usługi Azure Information Protection, które wersje są obecnie obsługiwane i co to jest nowe i zmienione funkcje dla obsługiwanych wersji. 
+
+### <a name="upgrading-the-azure-information-protection-scanner"></a>Uaktualnianie skanera usługi Azure Information Protection
+
+Aby uaktualnić skanera usługi Azure Information Protection, należy zainstalować najnowszą wersję klienta usługi Azure Information Protection.
+
+Następnie, jeśli wcześniej zainstalowaną wersją klienta został 1.26.6.0 lub starszego, uruchom ponownie polecenie instalacji skanera [AIPScanner instalacji](/powershell/module/azureinformationprotection/Install-AIPScanner). Ustawienia konfiguracji dla repozytoriów i skaner zostaną zachowane. Ponowna instalacja skaner przyznaje uprawnienia do usuwania konta usługi dla skanera bazy danych, który będzie potrzebny w przypadku raportów skanera.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Odinstalowywanie klienta usługi Azure Information Protection
 
-Do odinstalowania klienta, można użyć dowolnej z następujących opcji:
+Aby odinstalować klienta programu, można użyć dowolnej z następujących opcji:
 
 - Odinstaluj program za pomocą Panelu sterowania: kliknij kolejno pozycje **Microsoft Azure Information Protection** > **Odinstaluj**
 
@@ -182,9 +193,9 @@ Do odinstalowania klienta, można użyć dowolnej z następujących opcji:
 - Uruchom plik wykonywalny z opcją **/uninstall**. Na przykład: `AzInfoProtection.exe /uninstall`
 
 ## <a name="next-steps"></a>Następne kroki
-Aby zainstalować klienta, zobacz [instalowania klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).
+Aby zainstalować klienta, zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).
 
-Jeśli klient został już zainstalowany, zobacz następujące dodatkowe informacje potrzebne do obsługi tego klienta:
+Jeśli klient został już zainstalowany, zobacz następujące czynności, aby uzyskać dodatkowe informacje, przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
 

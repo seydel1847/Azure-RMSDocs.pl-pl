@@ -1,10 +1,10 @@
 ---
 title: Bezpiecznej współpracy nad dokumentami przy użyciu usługi Azure Information Protection
-description: Przepływ pracy na trasie do współpracy nad dokumentami, które są chronione przez usługę Azure Information Protection.
+description: Przepływ pracy end-to-end do współpracy nad dokumentami, które są chronione przez usługę Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2018
+ms.date: 06/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,136 +12,148 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac623ae678994e04d19bbe5758b4b4f1cba7b045
-ms.sourcegitcommit: f5ff4106742a4f12c04993fc0090c65ad8db713f
+ms.openlocfilehash: 4a642960e81a7d1a5cb6f8433e4098bed06a663d
+ms.sourcegitcommit: dc98226f339339c10fd01535a1adf7e30a817a41
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36300027"
 ---
-# <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Bezpiecznej współpracy nad dokumentami za pomocą usługi Azure Information Protection
+# <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Bezpiecznej współpracy nad dokumentami przy użyciu usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Gdy używasz usługi Azure Information Protection, można chronić dokumenty bez ograniczania współpracy dla autoryzowanych użytkowników. Większość dokumentów, że jeden użytkownik tworzy i następnie udostępnia innym użytkownikom, aby wyświetlić i edytować będzie można dokumentami pakietu Office Word, Excel i PowerPoint. Te dokumenty obsługują ochronę natywną, co oznacza, że oprócz funkcji ochrony autoryzacji i szyfrowania, one również obsługiwać ograniczonych uprawnień dla bardziej szczegółową kontrolę. 
+Gdy używasz usługi Azure Information Protection, możesz chronić swoje dokumenty, bez obniżania oczekiwanego poziomu współpracy dla autoryzowanych użytkowników. Większość dokumentów, że jeden użytkownik tworzy i następnie udostępnia innym osobom do wyświetlania i edytowania będą mieć dokumentów pakietu Office z programu Word, Excel i PowerPoint. Te dokumenty obsługują ochronę natywną, co oznacza, że oprócz funkcji ochrony autoryzacji i szyfrowania, obsługują one również ograniczonych uprawnień dla dokładniejszej kontroli. 
 
-Te uprawnienia są nazywane prawa użytkowania i obejmować uprawnienia takie jak widok, edytować, drukować. Prawa użytkowania poszczególnych można zdefiniować, kiedy dokument jest chroniony, albo można zdefiniować grupowania praw użytkowania, nazywany poziomy uprawnień. Poziomy uprawnień należy wybrać prawa użytkowania, które zazwyczaj stosuje się wspólnie, na przykład: recenzent i współautor. Aby uzyskać więcej informacji na temat prawa użytkowania i poziomy uprawnień, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
+Te uprawnienia są nazywane praw użytkowania i uwzględniać uprawnień, takich jak wyświetlanie, edytowanie, drukowania. Można zdefiniować poszczególne prawa użytkowania, gdy dokument jest chroniony lub można zdefiniować grupowania praw użytkowania, o nazwie poziomów uprawnień. Poziomy uprawnień należy wybrać prawa użytkowania, które są zwykle używane ze sobą, na przykład recenzent i współautor. Aby uzyskać więcej informacji na temat praw użytkowania i poziomy uprawnień, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../deploy-use/configure-usage-rights.md).
 
-Podczas konfigurowania tych uprawnień, można również określić użytkowników, którzy są do:
+Podczas konfigurowania tych uprawnień można określić użytkowników, którzy są do:
 
-- **Dla użytkowników w organizacji lub inna organizacja, która używa usługi Azure Active Directory**: można określić konta użytkowników usługi Azure AD, grup usługi Azure AD lub wszyscy użytkownicy w organizacji. 
+- **Dla użytkowników w organizacji lub w innej organizacji korzystającej z usługi Azure Active Directory**: można określić konta użytkowników usługi Azure AD, grupy usługi Azure AD lub wszystkich użytkowników należących do organizacji. 
 
-- **Dla użytkowników, którzy nie mają konta usługi Azure Active Directory**: Określ adres e-mail, który będzie używany przy użyciu konta Microsoft. To konto może już istnieć lub użytkownicy mogą tworzyć go w tym czasie zostaną one otwarte chronionego dokumentu. 
+- **Dla użytkowników, którzy nie mają konta usługi Azure Active Directory**: Określ adres e-mail, która będzie służyć za pomocą konta Microsoft. To konto może już istnieć lub użytkownicy mogą tworzyć je w momencie ich otworzyć dokument chroniony. 
     
-    Aby otworzyć dokumenty przy użyciu konta Microsoft, użytkownicy mogą używać pakietu Office 2016 kliknij do uruchomienia. Inne wersje pakietu Office i wersje nie nie zostały jeszcze obsługiwane Otwieranie pakietu Office chronionych dokumentów przy użyciu konta Microsoft.
+    Aby otworzyć dokumenty za pomocą konta Microsoft, użytkownicy muszą używać pakietu Office 2016 kliknij do uruchomienia. Inne wersje pakietu Office i wersje zrobić jeszcze obsługi otwierania pakietu Office chronionych dokumentów za pomocą konta Microsoft.
 
-Jako administrator możesz skonfigurować etykiety usługi Azure Information Protection, aby zastosować uprawnienia i autoryzowanych użytkowników. Taka konfiguracja ułatwia bardzo dla użytkowników i innych administratorów, aby zastosować ustawienia poprawny ponieważ stosują po prostu Etykieta bez konieczności określania żadnych szczegółów. Poniższe sekcje zawierają wskazówki przykład, aby chronić dokument, który obsługuje bezpiecznej współpracy z wewnętrznych i zewnętrznych użytkowników.
+- **Każdy uwierzytelniony użytkownik**: Ta opcja jest odpowiednia dla Jeśli nie potrzebujesz do kontrolowania, kto uzyskuje dostęp do chronionych dokumentów, zapewniając użytkownikowi może zostać uwierzytelniony. Uwierzytelnianie może być przez usługę Azure AD przy użyciu konta Microsoft, lub nawet federacyjnego dostawcy społecznościowych lub jednorazowy kod dostępu, gdy zawartość jest chroniona przez nowe możliwości szyfrowanie wiadomości usługi Office 365. 
+
+Jako administrator możesz skonfigurować etykiety usługi Azure Information Protection do zastosowania, uprawnienia i autoryzowanych użytkowników. Taka konfiguracja ułatwia bardzo dla użytkowników i innych administratorów, aby zastosować ustawienia ochrony poprawne ponieważ one po prostu zastosować etykietę bez konieczności określania żadnych szczegółów. Przewodnik po przykładzie, aby chronić dokument, który obsługuje bezpiecznej współpracy z wewnętrznych i zewnętrznych użytkowników można znaleźć w poniższych sekcjach.
 
 
-## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>Przykładowa konfiguracja etykiety w celu zastosowania ochrony współpracę wewnętrznych i zewnętrznych
+## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>Przykładową konfigurację etykiety w celu zastosowania ochrony do obsługi współpracy wewnętrznych i zewnętrznych
 
-W tym przykładzie przedstawiono konfigurowanie istniejącej etykiety w celu zastosowania ochrony, tak aby użytkownicy z organizacji mogą współpracować nad dokumentami z wszystkich użytkowników z innej organizacji, która ma usługi Office 365 lub Azure AD, grupę z innej organizacji, która ma Office 365 lub Azure AD, a użytkownik nie ma konta w usłudze Azure AD i zamiast tego użyje swój adres e-mail w usłudze Gmail. 
+W tym przykładzie przedstawiono konfigurowanie istniejącej etykiety w celu zastosowania ochrony, tak aby użytkownicy z Twojej organizacji mogą współpracować nad dokumentami wszystkim użytkownikom z innej organizacji, który ma usługi Office 365 lub Azure AD, w grupie z innej organizacji, która ma Office 365 lub Azure AD, a użytkownik nie ma konta w usłudze Azure AD i zamiast tego użyje adresu e-mail usługi Gmail.
 
-1. Wybierz etykiety, który jest już w zakresie zasad lub globalnych zasad. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
+Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie zawiera ustawienia dla wszystkich uwierzytelnionych użytkowników. Aby uzyskać przykład sposobu konfigurowania etykietę z tym ustawieniem, zobacz [przykład 5: etykiety, która szyfruje zawartość, ale nie ogranicza kto ma dostęp do jego](../deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
+
+1. Wybierz etykiety, która jest już zasad globalnych lub zasad o określonym zakresie. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
-2. Upewnij się, że **ustawić uprawnienia** jest zaznaczone i wybierz **dodać uprawnienia**.
+2. Upewnij się, że **Ustaw uprawnienia** jest zaznaczone i wybierz **Dodaj uprawnienia**.
 
-3. Na **dodać uprawnienia** bloku: 
+3. Na **Dodaj uprawnienia** bloku: 
     
-    - Wewnętrzny grupy: Wybierz **przeglądania katalogu** wybierz grupy, która musi być włączona obsługa poczty e-mail.
+    - Wewnętrzny grupy: Wybierz **przeglądania katalogu** aby wybrać grupę, która musi być włączona obsługa poczty e-mail.
     
-    - Dla wszystkich użytkowników w organizacji zewnętrznych pierwszy: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie w organizacji. Na przykład fabrikam.com.
+    - Dla wszystkich użytkowników w pierwszym organizację zewnętrzną: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie tej organizacji. Na przykład fabrikam.com.
     
-    - Grupy w drugiej organizacji zewnętrznych: na **wprowadź szczegóły** , wpisz adres e-mail grupy w dzierżawie w organizacji. Na przykład sales@contoso.com.
+    - Grupy w drugiej organizacji zewnętrznych: na **wprowadź szczegóły** karty, wpisz adres e-mail grupy w dzierżawie tej organizacji. Na przykład sales@contoso.com.
     
-    - Dla użytkownika, który nie ma konta usługi Azure AD: na **wprowadź szczegóły** , wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
+    - Dla użytkownika, który nie ma konta usługi Azure AD: na **wprowadź szczegóły** karty, wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
 
-4. Udzielenia te same uprawnienia dla tych użytkowników: dla **wybierz uprawnienia z ustawienie wstępne**, wybierz pozycję **współwłaściciel**, **Współautor**, **Weryfikacja**, lub **niestandardowy** wybierz uprawnienia, które chcesz udzielić.
+4. Aby udzielić tych samych uprawnień do tych użytkowników: dla **wybierz uprawnienia z wstępnie ustawionych**, wybierz opcję **współwłaściciel**, **Współautor**, **recenzenta**, lub **niestandardowe** wybrać, które chcesz udzielić uprawnień.
     
-    Na przykład uprawnienia użytkownika skonfigurowanego może wyglądać podobnie do poniższej:
+    Na przykład skonfigurowane uprawnienia może wyglądać podobnie do poniższej:
         
-    ![Konfigurowanie uprawnień na potrzeby bezpiecznej współpracy](../media/collaboration-permissions.png)
+    ![Konfigurowanie uprawnień dla bezpiecznej współpracy](../media/collaboration-permissions.png)
 
+5. Kliknij przycisk **OK** na **Dodaj uprawnienia** bloku.
 
+6. Na **ochrony** bloku kliknij **OK**.
 
-5. Kliknij przycisk **OK** na **dodać uprawnienia** bloku.
+7. Na **etykiety** bloku wybierz **Zapisz**. 
 
-6. Na **ochrony** bloku, kliknij przycisk **OK**. 
+## <a name="applying-the-label-that-supports-secure-collaboration"></a>Stosowanie etykiety, która obsługuje bezpiecznej współpracy
 
-## <a name="applying-the-label-that-supports-secure-collaboration"></a>Stosowania etykiety, który obsługuje bezpiecznej współpracy
+Teraz, gdy ta etykieta jest skonfigurowany, można zastosować go do dokumentów w różne sposoby, które obejmują następujące czynności:
 
-Teraz, gdy ta etykieta jest skonfigurowany, można można zastosować do dokumentów na różne sposoby, które są następujące:
-
-|Różne sposoby zastosować etykiety|Więcej informacji|
+|Różne sposoby, aby zastosować etykietę|Więcej informacji|
 |---------------|----------|
-|Inny użytkownik wybierze etykiety ręcznie, podczas tworzenia dokumentu w aplikacjach pakietu Office.|Użytkownicy wybierz etykietę z **Chroń** przycisk wstążki pakietu Office, lub na pasku usługi Azure Information Protection.|
-|Użytkownicy są monitowani o wybierz etykietę, podczas zapisywania nowego dokumentu.|Skonfigurowano usługi Azure Information Protection [ustawienie zasad](../deploy-use/configure-policy-settings.md) o nazwie **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**.|
-|Użytkownik udostępnia dokument pocztą e-mail i ręcznie wybiera etykiety w programie Outlook.|Użytkownicy wybierz etykietę z **Chroń** przycisk na Wstążce Office lub pasek usługi Azure Information Protection i dołączony dokument jest chroniony automatycznie z tymi samymi ustawieniami.|
-|Administrator stosuje etykietę do dokumentu za pomocą programu PowerShell.|Użyj [AIPFileLabel zestaw](/powershell/module/azureinformationprotection/set-aipfilelabel) polecenia cmdlet, aby zastosować etykiety do określonego dokumentu lub wszystkie dokumenty w folderze.|
-|Ponadto skonfigurowaniu etykiety w celu zastosowania automatycznej klasyfikacji, które teraz mogą być stosowane przy użyciu usługi Azure Information Protection skanera lub programu PowerShell.|Zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](../deploy-use/configure-policy-classification.md).|
+|Użytkownik wybierze etykietę ręcznie, gdy dokument zostanie utworzony w aplikacji pakietu Office.|Użytkownicy wybrać etykietę z **Chroń** przycisk na Wstążce pakietu Office lub na pasku usługi Azure Information Protection.|
+|Użytkownicy są monitowani o wybranie etykiety, po zapisaniu nowego dokumentu.|Skonfigurowano usługi Azure Information Protection [ustawienie zasad](../deploy-use/configure-policy-settings.md) o nazwie **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**.|
+|Użytkownik udostępnia dokumentu za pośrednictwem poczty e-mail i ręcznie wybierze etykietę w programie Outlook.|Użytkownicy wybrać etykietę z **Chroń** przycisk na Wstążce pakietu Office lub z paska usługi Azure Information Protection i dołączony dokument jest chroniony automatycznie przy użyciu tych samych ustawień.|
+|Administrator ma zastosowanie etykiety do dokumentu przy użyciu programu PowerShell.|Użyj [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) polecenia cmdlet, aby zastosować etykietę do określonego dokumentu lub wszystkie dokumenty w folderze.|
+|Ponadto skonfigurowano etykietę do stosowania automatycznej klasyfikacji, które można teraz stosować za pomocą skanera usługi Azure Information Protection lub programu PowerShell.|Zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](../deploy-use/configure-policy-classification.md).|
 
-W tym przewodniku ręcznie zastosować etykiety, podczas tworzenia dokumentu w aplikacji pakietu Office: 
+Do przeprowadzenia tego instruktażu, ręcznie zastosować etykietę, tworząc dokument w aplikacji pakietu Office: 
 
-1. Na komputerze klienckim Jeśli masz już otworzyć aplikacji pakietu Office, najpierw zamknij i otwórz ponownie, aby pobrać najnowsze zmiany zasad obejmujących nowo skonfigurowanego etykiety. 
+1. Na komputerze klienckim Jeśli masz już aplikację pakietu Office, Otwórz, najpierw zamknij i otwórz ponownie, aby pobrać najnowsze zmiany zasad, które zawierają nowo skonfigurowanego etykiety. 
 
 2. Zastosuj etykietę do dokumentu i zapisz go.
 
-Udostępnij dokument chroniony przy dołączeniu go do poczty e-mail i wysyłania go do osoby autoryzowane do edycji dokumentu.
+Udostępnianie chronionego dokumentu, dołączając ją do poczty e-mail i wyślij go do osób, masz uprawnień do edytowania dokumentu.
 
 ## <a name="opening-and-editing-the-protected-document"></a>Otwieranie i edytowanie chronionych dokumentów
 
-W przypadku użytkowników, którzy autoryzacji można otworzyć dokument do edycji, dokument zostanie otwarty z Baner informacyjny z informacją o tym, że uprawnienia są ograniczone. Przykład:
+Gdy użytkownicy, którzy uwierzytelniona otworzyć dokument do edycji, dokument jest otwierany z Baner, informujące o tym, że uprawnienia są ograniczone. Przykład:
 
-![Baner informacyjny przykład uprawnienia usługi Azure Information Protection](../media/example-restricted-access-banner.png)
+![Transparencie informacyjnym przykład uprawnienia usługi Azure Information Protection](../media/example-restricted-access-banner.png)
 
-Po zaznaczeniu **Wyświetl uprawnienie** przycisku, zobacz uprawnienia, które mają. W poniższym przykładzie użytkownik może wyświetlać i edytować dokument:
+Jeśli wybiorą **uprawnienia widok** przycisku, zobaczy, do których mają uprawnienia. W poniższym przykładzie użytkownik może wyświetlić i edytować dokument:
 
 ![Okno dialogowe przykład uprawnienia usługi Azure Information Protection](../media/example-permisisons-popup.png)
 
+Uwaga: Jeśli dokument jest otwarty przez użytkowników zewnętrznych, którzy również korzystają z usługi Azure Information Protection, aplikacji pakietu Office nie są wyświetlane etykiety klasyfikacji dla dokumentu, chociaż nadal żadnych oznaczeń wizualnych, z etykiety. Zamiast tego użytkowników zewnętrznych można zastosować własne etykiety, zgodnie z taksonomii klasyfikacji używanych w organizacji. Jeśli tych użytkowników zewnętrznych następnie odesłania dokumentu edytowanego do Ciebie, pakietu Office wyświetla etykiety klasyfikacji usługi oryginalnego po ponownym otwarciu dokumentu.
 
-Przed otwarciem dokumentu, jeden z następujących przepływów uwierzytelniania stanie:
+Przed otwarciem dokumentu chronionego, jedną z następujących uwierzytelniania przepływy możliwe z następujących czynności:
 
-- W przypadku użytkowników, którzy mają konta usługi Azure AD używają swoich poświadczeń usługi Azure AD mają być uwierzytelniani przez usługę Azure AD i dokument zostanie otwarty. 
+- W przypadku użytkowników, którzy mają konta usługi Azure AD używają poświadczeń usługi Azure AD można uwierzytelnić za pomocą usługi Azure AD i dokument zostanie otwarty. 
 
-- Dla użytkownika, który nie ma konta usługi Azure AD, jeśli ich nie jest zalogowany do pakietu Office przy użyciu konta, które ma uprawnienia do otwierania tego dokumentu, zobaczy **kont** strony. 
+- Dla użytkownika, który nie ma konta usługi Azure AD, jeśli ich nie zalogowano do pakietu Office przy użyciu konta, które ma uprawnienia do otwierania dokumentu, zobaczą **kont** strony. 
     
-   Na **kont** wybierz pozycję **Dodaj konto**:
+   Na **kont** wybierz opcję **Dodaj konto**:
    
     ![Dodawanie konta Microsoft, aby otworzyć dokument chroniony](../media/add-account-msa.png)
 
-   Na **Zaloguj** wybierz pozycję **utwórz je!** i postępuj zgodnie z monitami, aby utworzyć nowe konto Microsoft z adresu e-mail, który został użyty Aby udzielić uprawnień:
+   Na **Zaloguj** wybierz opcję **Zrób to!** i postępuj zgodnie z monitami, aby utworzyć nowe konto Microsoft z adresem e-mail, który został użyty do udzielenia uprawnień:
     
     ![Tworzenie konta Microsoft, aby otworzyć dokument chroniony](../media/create-account-msa.png)
     
-    Po utworzeniu nowego konta Microsoft, konta lokalnego zmienia się na tego nowego konta Microsoft i użytkownik może następnie otwórz dokument.
+    Po utworzeniu nowego konta Microsoft, konta lokalnego przełącza się do tego nowego konta Microsoft, a użytkownik może następnie otwórz dokument.
 
 
-### <a name="supported-scenarios-for-opening-protected-documents"></a>Obsługiwane scenariusze do otwierania chronionych dokumentów
+### <a name="supported-scenarios-for-opening-protected-documents"></a>Obsługiwane scenariusze otwierania chronionych dokumentów
 
-Następujące tabeli podsumowania metody uwierzytelniania innej, które są obsługiwane w przypadku otwieranie i edytowanie chronionych dokumentów.
+Następujące podsumowania tabeli różnych metod uwierzytelniania, które są obsługiwane w przypadku wyświetlania i edytowania chronionych dokumentów.
 
-Ponadto przeglądarka usługi Azure Information Protection dla systemu Windows i iOS i Android może otwierać pliki w celu wyświetlenia przy użyciu konta Microsoft.
+Ponadto następujące scenariusze obsługuje wyświetlanie dokumentów:
 
-|Platformy do otwierania i edycji dokumentów: <br />Word, Excel, PowerPoint|Metoda uwierzytelniania:<br />Azure AD|Metoda uwierzytelniania:<br />Konto Microsoft|
+- Przeglądarka usługi Azure Information Protection, Windows oraz systemów iOS i Android można otwierać pliki przy użyciu konta Microsoft. 
+
+- Podczas dostawców sieci społecznościowych i jednorazowe kody dostępu są używane do uwierzytelniania za pomocą usługi Exchange Online i nowe funkcje z szyfrowanie wiadomości usługi Office 365, przeglądarki może otworzyć chronione załączniki. 
+
+|Platformy do wyświetlania i edycji dokumentów: <br />Word, Excel, PowerPoint|Metoda uwierzytelniania:<br />Azure AD|Metoda uwierzytelniania:<br />Konto Microsoft|
 |---------------|----------|-----------|-----------|
 |Windows|Tak [[1]](#footnote-1)|Tak [[2]](#footnote-2)|
 |iOS|Tak [[1]](#footnote-1)|Nie|
-|Android|Tak [[1]](#footnote-1)|Nie |
-|System macOS|Tak [[1]](#footnote-1)|Nie|
+|Android|Tak [[1]](#footnote-1)|Nie|
+|Z systemem MacOS|Tak [[1]](#footnote-1)|Nie|
 
 ###### <a name="footnote-1"></a>Przypis 1
-Obsługuje kont użytkowników, grup z włączoną obsługą poczty e-mail, wszystkie elementy członkowskie. Konta użytkowników i grup z włączoną obsługą poczty e-mail może zawierać konta gościa. Wszystkie elementy członkowskie Wyklucz konta gościa.
+Obsługuje konta użytkowników, grup z włączoną obsługą poczty e-mail, wszystkie elementy członkowskie. Konta użytkowników i grupy z włączoną obsługą poczty e-mail może zawierać konta gościa. Wszystkie elementy członkowskie wykluczyć konta gościa.
 
 ###### <a name="footnote-2"></a>Przypis 2
 Obecnie obsługiwane przez pakiet Office 2016 kliknij do uruchomienia tylko.
 
 
+
+
 ## <a name="next-steps"></a>Następne kroki
 
-Zobacz inne [przykładowe konfiguracje](../deploy-use/configure-policy-protection.md#example-configurations) dla etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawieniach ochrony.
+Zobacz inne [przykładowe konfiguracje](../deploy-use/configure-policy-protection.md#example-configurations) etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawienia ochrony.
 
-Aby uzyskać więcej informacji na temat inne opcje i ustawienia, które można skonfigurować dla etykiety, zobacz [zasad Konfigurowanie usługi Azure Information Protection](../deploy-use/configure-policy.md). 
+Aby uzyskać więcej informacji o inne opcje i ustawienia, które można skonfigurować dla etykiety, zobacz [zasad konfigurowania usługi Azure Information Protection](../deploy-use/configure-policy.md). 
 
-Etykiety, który został skonfigurowany w tym artykule powoduje również utworzenie szablonu ochrony o tej samej nazwie. Jeśli masz aplikacje i usługi, które integrują się z szablonami ochrony z usługi Azure Information Protection, mają one zastosowanie tego szablonu. Na przykład rozwiązania DLP i reguły przepływu poczty. Program Outlook w sieci web automatycznie wyświetla ochrony szablonów globalnych zasad usługi Azure Information Protection. 
+Etykiety, która została skonfigurowana w tym artykule również utworzenie szablonu ochrony tej samej nazwie. Masz aplikacje i usługi, które integrują się z szablonami ochrony z usługi Azure Information Protection, można zastosować ten szablon. Na przykład rozwiązania DLP i reguły przepływu poczty. Program Outlook w sieci web automatycznie Wyświetla szablony ochrony z globalnych zasad usługi Azure Information Protection. 
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

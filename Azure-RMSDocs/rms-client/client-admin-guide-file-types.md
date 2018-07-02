@@ -4,7 +4,7 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
+ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208332"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36310265"
 ---
-# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwanych przez klienta usługi Azure Information Protection
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Klient usługi Azure Information Protection może zastosować następujące środki względem dokumentów i wiadomości e-mail:
 
@@ -31,7 +31,7 @@ Klient usługi Azure Information Protection może zastosować następujące śro
 
 - Tylko ochrona
 
-Użyj poniższych informacji, aby sprawdzić, jakie typy plików klient usługi Azure Information Protection obsługuje, zrozumienie różnych poziomów ochrony oraz sposób zmiany domyślnego poziomu ochrony, a także określenie, które pliki są automatycznie wykluczonych ( Pominięto) z klasyfikacji i ochrony.
+Użyj poniższych informacji, sprawdź, jakie typy plików, klient usługi Azure Information Protection obsługuje, zrozumieć różne poziomy ochrony i jak zmienić domyślny poziom ochrony i zidentyfikować, które pliki są automatycznie wykluczone) pominięte) z klasyfikacji i ochrony.
 
 ## <a name="file-types-supported-for-classification-only"></a>Typy plików, dla których jest obsługiwana tylko klasyfikacja
 
@@ -45,7 +45,7 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
 
 - **Microsoft XPS**: .xps .oxps
 
-- **Images**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi. png, .tif, .tiff
+- **Obrazy**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi. png, .tif, .tiff
 
 - **Autodesk Design Review 2013**: .dwfx
 
@@ -57,13 +57,13 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
     
     |Typ pliku pakietu Office|Typ pliku pakietu Office|
     |----------------------------------|----------------------------------|
-    |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />pptx<br /><br />.vdw<br /><br />VSD<br /><br />.vsdm|vsdx<br /><br />VSS<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx|
+    |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />.pptx<br /><br />.vdw<br /><br />VSD|.vsdm<br /><br /> vsdx<br /><br />VSS<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />.xltx|
 
-Inne typy plików obsługuje klasyfikacji są również chronione. Dla tych typów plików, zobacz [obsługiwane typy plików do klasyfikowania i ochrony](#supported-file-types-for-classification-and-protection) sekcji.
+Dodatkowe typy plików obsługują klasyfikację, gdy są one również chronione. Dla tych typów plików, zobacz [obsługiwane typy plików do klasyfikacji i ochrony](#supported-file-types-for-classification-and-protection) sekcji.
 
-Na przykład w bieżącym [domyślne zasady](../deploy-use/configure-policy-default.md), **ogólne** etykiety stosuje klasyfikacji i nie ma zastosowania ochrony. Można zastosować **ogólne** etykiety w pliku o nazwie sales.pdf, ale nie można zastosować do pliku o nazwie sales.txt tej etykiety. 
+Na przykład w bieżącym [domyślne zasady](../deploy-use/configure-policy-default.md), **ogólne** etykieta dotyczy klasyfikacji i ochrony nie ma zastosowania. Można zastosować **ogólne** etykiety w pliku o nazwie sales.pdf, ale nie może zastosować tej etykiety w pliku o nazwie sales.txt. 
 
-Również w bieżące zasady domyślne **poufne \ wszyscy pracownicy** stosuje klasyfikowania i ochrony. Etykieta można zastosować do pliku o nazwie sales.pdf i plik o nazwie sales.txt. Po prostu ochrony można zastosować do tych plików bez klasyfikacji.
+Również w bieżące zasady domyślne **poufne \ wszyscy pracownicy** dotyczy klasyfikacji i ochrony. W pliku o nazwie sales.pdf i plik o nazwie sales.txt może zastosować tej etykiety. Po prostu ochronę można zastosować do tych plików bez klasyfikacji.
 
 ## <a name="file-types-supported-for-protection"></a>Typy plików, dla których jest obsługiwana ochrona
 
@@ -72,7 +72,7 @@ Klient usługi Azure Information Protection obsługuje ochronę na dwóch różn
 |Typ ochrony|Natywna|Ogólne|
 |----------------------|----------|-----------|
 |Opis|W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz innych typów plików aplikacji obsługujących usługę Rights Management ochrona natywna zapewnia silny poziom ochrony obejmujący szyfrowanie i wymuszanie praw (uprawnień).|W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia poziom ochrony obejmujący hermetyzację plików z wykorzystaniem typu pliku pfile oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest autoryzowany do otwierania pliku.|
-|Protection|Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników odbierających plik pocztą e-mail lub mających dostęp do niego za pośrednictwem uprawnień do pliku lub uprawnień udziału.<br /><br />— Ponadto prawa użytkowania i zasady, które zostały określone przez właściciela zawartości, gdy pliki były chronione są wymuszane podczas renderowania zawartości w podglądzie usługi Azure Information Protection (dla chronionych plików tekstowych i obrazów) lub w skojarzonej aplikacji ( dla wszystkich innych obsługiwanych typów plików).|Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie osoby, które jest uprawniony do otwierania pliku i mających dostęp do niego. W przypadku niepowodzenia autoryzacji plik nie jest otwierany.<br /><br />— Prawa do użytkowania i zasady ustawiane przez właściciela zawartości są wyświetlane, aby informować autoryzowanych użytkowników o zamierzonych zasadach użytkowania.<br /><br />— Rejestrowana jest inspekcja autoryzowanych użytkowników otwierających pliki i uzyskujących do nich dostęp. Jednak prawa użytkowania nie są wymuszane.|
+|Protection|Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników odbierających plik pocztą e-mail lub mających dostęp do niego za pośrednictwem uprawnień do pliku lub uprawnień udziału.<br /><br />— Ponadto prawa do użytkowania i zasady, które zostały określone przez właściciela zawartości, gdy pliki były chronione są wymuszane, gdy zawartość jest wyświetlana w podglądzie usługi Azure Information Protection (dla chronionych plików tekstowych i obrazów) lub (skojarzonej aplikacji wszystkie inne obsługiwane typy plików).|Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie osób uprawnionych do otwierania pliku i mających dostęp do niego. W przypadku niepowodzenia autoryzacji plik nie jest otwierany.<br /><br />— Prawa do użytkowania i zasady ustawiane przez właściciela zawartości są wyświetlane, aby informować autoryzowanych użytkowników o zamierzonych zasadach użytkowania.<br /><br />— Rejestrowana jest inspekcja autoryzowanych użytkowników otwierających pliki i uzyskujących do nich dostęp. Jednak prawa użytkowania nie są wymuszane.|
 |Domyślny dla typów plików|Jest to domyślny poziom ochrony dla następujących typów plików:<br /><br />— Pliki tekstowe i pliki obrazów<br /><br />— Pliki pakietu Microsoft Office (programów Word, Excel i PowerPoint)<br /><br />— Pliki w formacie Portable Document Format (pdf)<br /><br />Więcej informacji znajduje się w sekcji [Typy plików, dla których jest obsługiwana klasyfikacja i ochrona](#supported-file-types-for-classification-and-protection).|Jest to domyślna ochrona dla wszystkich pozostałych typów plików (takich jak vsdx, rtf itd.), które nie są obsługiwane w ramach ochrony natywnej.|
 
 Domyślny poziom ochrony stosowany przez klienta usługi Azure Information Protection można zmienić. Poziom domyślny można zmienić z natywnego na ogólny, z ogólnego na natywny, a nawet zupełnie uniemożliwić ochronę ze strony klienta usługi Azure Information Protection. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) w tym artykule.
@@ -93,9 +93,9 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
 
 - **Wszystkie inne pliki**: 
     
-    - Aby chronić pliki: rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
+    - Aby chronić te pliki: rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
     
-    - Aby otworzyć te pliki w podglądzie usługi Azure Information Protection: Jeśli nie masz bieżąca wersja klienta usługi Azure Information Protection, maksymalny rozmiar pliku obsługiwane w przypadku plików tekstowych (ptxt i pxml) jest 20 MB. Na podstawie obrazu plików i plików PDF maksymalny rozmiar pliku jest ograniczona tylko przez pamięci.
+    - Aby otworzyć te pliki w przeglądarce usługi Azure Information Protection: Jeśli nie masz bieżącej wersji zapoznawczej klienta usługi Azure Information Protection, maksymalny obsługiwany rozmiar pliku dla plików tekstowych (ptxt i pxml) jest o rozmiarze 20 MB. Dla plików na podstawie obrazów i plików PDF maksymalny rozmiar pliku jest ograniczony tylko ilością pamięci.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 
@@ -104,7 +104,7 @@ W poniższej tabeli wymieniono podzbiór typów plików, które obsługują ochr
 Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochroną natywną, oryginalne rozszerzenie nazwy pliku jest zmieniane, a pliki stają się plikami tylko do odczytu. W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pliku w każdej sytuacji zostaje zmienione na pfile.
 
 > [!WARNING]
-> Jeśli masz zapory, internetowego serwera proxy lub oprogramowania zabezpieczającego, które sprawdza pliki i podjąć działania w zależności od rozszerzenia nazwy pliku, konieczne może być ponownie skonfigurować te urządzenia sieciowe i oprogramowanie do obsługi tych nowych rozszerzeń nazw plików.
+> Jeśli masz zapory, internetowego serwera proxy lub oprogramowania zabezpieczającego, które sprawdza pliki i podjąć działania w zależności od rozszerzenia nazwy pliku, może być konieczne ponownie skonfigurować te urządzenia sieciowe i oprogramowanie do obsługi tych nowych rozszerzeń nazw plików.
 
 |Oryginalne rozszerzenie nazwy pliku|Chronione rozszerzenie nazwy pliku|
 |--------------------------------|-------------------------------------|
@@ -112,7 +112,7 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 |xml|pxml|
 |jpg|pjpg|
 |jpeg|pjpeg|
-|pdf|ppdf|
+|.pdf|ppdf|
 |PNG|ppng|
 |tif|ptif|
 |tiff|ptiff|
@@ -129,7 +129,7 @@ Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną 
 
 |Typy plików obsługiwanych przez pakiet Office|Typy plików obsługiwanych przez pakiet Office|
 |----------------------------------|----------------------------------|
-|doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />pptx<br /><br />.vsdm|vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
+|doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />.pptx<br /><br />.vsdm|vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
 
 
 ### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
@@ -141,9 +141,9 @@ W jakich sytuacjach warto to zrobić:
 
 - Jeśli chcesz rozwiązać problem dotyczący systemów zabezpieczeń, które podejmują działania względem plików na podstawie ich rozszerzeń nazw i które można tak skonfigurować, aby uwzględniały rozszerzenie nazwy pliku pfile, ale nie wiele rozszerzeń nazw plików w ramach ochrony natywnej.
 
-Analogicznie można wymusić stosowanie przez klienta usługi Azure Information Protection do ochrony natywnej plików, które domyślnie byłyby chronione w sposób ogólny. Ta akcja może być odpowiednie, jeśli masz aplikację obsługującą interfejsy API usługi RMS. Na przykład aplikacji biznesowych z napisane przez deweloperów w Twojej firmie lub aplikacja kupiona od niezależnego dostawcy oprogramowania (ISV).
+Analogicznie można wymusić stosowanie przez klienta usługi Azure Information Protection do ochrony natywnej plików, które domyślnie byłyby chronione w sposób ogólny. Ta akcja może być odpowiednie, jeśli masz aplikację obsługującą interfejsy API usługi RMS. Na przykład line-of-business napisane przez wewnętrzni programiści lub aplikacja zakupione od niezależnego dostawcę oprogramowania (ISV).
 
-Możesz też wymusić blokowanie ochrony plików przez klienta usługi Azure Information Protection. Wówczas nie jest stosowana ani ochrona natywna, ani ogólna. Na przykład ta akcja może być wymagane, jeśli masz działającą automatycznie aplikację lub usługę, która musi otworzyć określony plik, aby przetworzyć jego zawartość. Jeśli zablokujesz ochronę określonego typu plików, użytkownicy nie mogą ochronić plików tego typu za pomocą klienta usługi Azure Information Protection. Jeśli ktoś spróbuje to zrobić, zobaczy komunikat informujący o zablokowaniu przez administratora możliwości ochrony i będzie musiał zrezygnować z tego działania.
+Możesz też wymusić blokowanie ochrony plików przez klienta usługi Azure Information Protection. Wówczas nie jest stosowana ani ochrona natywna, ani ogólna. Na przykład ta akcja może być wymagane, jeśli masz działającą automatycznie aplikację lub usługę, która musi być w stanie otworzyć określony plik, aby przetworzyć jego zawartość. Jeśli zablokujesz ochronę określonego typu plików, użytkownicy nie mogą ochronić plików tego typu za pomocą klienta usługi Azure Information Protection. Jeśli ktoś spróbuje to zrobić, zobaczy komunikat informujący o zablokowaniu przez administratora możliwości ochrony i będzie musiał zrezygnować z tego działania.
 
 W celu skonfigurowania klienta usługi Azure Information Protection w taki sposób, aby była stosowana ogólna ochrona wszystkich plików, które domyślnie są chronione natywnie, wprowadź w rejestrze następujące zmiany. Jeśli klucz FileProtection nie istnieje, należy utworzyć go ręcznie.
 
@@ -167,7 +167,7 @@ Te dwa ustawienia powodują, że klient usługi Azure Information Protection sto
 
 3. W nowo dodanym kluczu typu pliku (np. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX**) utwórz nową wartość ciągu o nazwie **Encryption** z wartością **Native**.
 
-W wyniku skonfigurowania tych ustawień wszystkie pliki będą chronione ogólnie z wyjątkiem plików mających rozszerzenie nazwy pliku docx. Te pliki będą chronione natywnie przez klienta usługi Azure Information Protection.
+W wyniku skonfigurowania tych ustawień wszystkie pliki będą chronione ogólnie z wyjątkiem plików mających rozszerzenie nazwy pliku docx. Pliki te są natywnie chronione przez klienta usługi Azure Information Protection.
 
 Powtórz te trzy kroki dla innych typów plików, które chcesz zdefiniować jako wyjątki objęte ochronę natywną i nie chcesz, aby były objęte ochroną ogólną przez klienta usługi Azure Information Protection.
 
@@ -179,7 +179,7 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 - **Off**: blokowanie ochrony
 
-Aby uzyskać więcej informacji, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) z wskazówki dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. 
+Aby uzyskać więcej informacji, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. 
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Typy plików wykluczone z klasyfikacji i ochrony przez klienta usługi Azure Information Protection
 
@@ -193,32 +193,32 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
     - \ProgramData 
     - \AppData (dla wszystkich użytkowników)
 
-### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione przez domyślny
+### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione domyślnie
 
-Każdego pliku, który jest chroniony hasłem nie może być chronione natywnie przez klienta usługi Azure Information Protection chyba, że plik jest aktualnie otwarty w aplikacji, która ma zastosowanie ochrony. W większości przypadków Zobacz pliki PDF, które są chronione hasłem, ale ta funkcja oferuje także inne aplikacje, takie jak aplikacje pakietu Office.
+Każdy plik jest chroniony hasłem nie można natywnie chronić przez klienta usługi Azure Information Protection, chyba że plik jest obecnie otwarty w aplikacji, która odnosi się do ochrony. Zostanie wyświetlony w większości przypadków pliki PDF chronionych hasłem, ale ta funkcja oferują również innych aplikacji, takich jak aplikacje pakietu Office.
 
-Ponadto klienta usługi Azure Information Protection dla systemu Windows można wyświetlić następujące pliki, ale nie można natywnie chronić lub wyłączyć ochronę plików PDF w jednym z następujących sytuacji:
+Ponadto klienta usługi Azure Information Protection dla Windows można wyświetlić następujące pliki, ale nie można natywnie chronić lub wyłączania ochrony plików PDF w jednym z następujących okoliczności:
 
-- Plik PDF jest oparta na formularzu.
+- Pliku PDF, która jest oparta na formularzu.
 
 - Chroniony plik PDF, który ma rozszerzenie nazwy pliku PDF. 
     
-    Klienta usługi Azure Information Protection można chronić niechronionych plików PDF i może wyłączyć ochronę i włącz ponownie ochronę chroniony plik PDF ma rozszerzenie nazwy pliku ppdf.
+    Klient usługi Azure Information Protection można chronić niechronionych plików PDF i może wyłączyć ochronę i włącz ponownie ochronę chroniony plik PDF, gdy ma ona rozszerzenie nazwy pliku ppdf.
 
-Jako rozwiązanie do ochrony tych plików, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony dla wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólna ochrona tylko pliki, które spełnia podanych kryteriów.
+Jako obejście, aby chronić te pliki, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólnej ochrony dla plików, które spełniają kryteria uwzględnione na liście.
 
-Chroni pliki te są ważne, można tymczasowo skopiuj je do innego komputera w celu ich objęty ochroną, a następnie skopiuj je ponownie ponownie.
+Ochrona tych plików są istotne, można tymczasowo skopiuj je do innego komputera w celu objęty ochroną ogólną je i skopiować je ponownie ponownie.
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>Ograniczenia dotyczące plików kontenera, takich jak pliki zip
 
-Pliki kontenera znajdują się pliki, które zawierają inne pliki z typowym przykładem są pliki zip, które zawierają pliki skompresowane. Inne przykłady RAR, .7z, oraz. komunikaty.
+Kontener plików są pliki, które zawierają inne pliki z typowym przykładem są pliki z rozszerzeniem .zip, które zawierają pliki skompresowane. Inne przykłady RAR, .7z, i. komunikat.
 
-Można klasyfikować i chronić pliki kontenera, ale klasyfikowania i ochrony nie została zastosowana do każdego pliku wewnątrz kontenera.
+Można klasyfikować i chronić te pliki kontenerów, ale klasyfikacji i ochrony nie ma zastosowania do każdego pliku w kontenerze.
 
-Jeśli masz pliku kontenera, który zawiera pliki sklasyfikowanych i chronionych, należy wyodrębnić pliki, aby zmienić ich klasyfikacji lub ustawienia ochrony. Jednak można usunąć ochrony dla wszystkich plików w plikach obsługiwanych kontenera za pomocą [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet.
+Jeśli masz plik kontenera, który zawiera sklasyfikowanych i chronionych plików, należy wyodrębnić pliki, aby zmienić ustawienia klasyfikacji i ochrony. Jednak można usunąć ochrony dla wszystkich plików w plikach obsługiwane kontenerów przy użyciu [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet.
 
 ## <a name="next-steps"></a>Następne kroki
-Teraz, gdy zostały określone typy plików obsługiwane przez klienta usługi Azure Information Protection, zobacz następujące zasoby, aby uzyskać dodatkowe informacje potrzebne do obsługi tego klienta:
+Po zidentyfikowaniu typów plików obsługiwanych przez klienta usługi Azure Information Protection zapoznaj się następujące zasoby, aby uzyskać dodatkowe informacje, przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
 

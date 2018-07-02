@@ -4,7 +4,7 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/18/2018
+ms.date: 06/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,29 +12,29 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9cdb205488c300f1df1e002be105765a90ce1a1a
-ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
+ms.openlocfilehash: 18168f89c762011146f7f3f131079f5a502820ac
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2018
-ms.locfileid: "34308175"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37069380"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij się, że następujące wymagania wstępne zostały spełnione. 
 
 ## <a name="subscription-for-azure-information-protection"></a>Subskrypcja usługi Azure Information Protection
 
-**Dla klasyfikacji, etykietowania i ochrony**: musisz mieć [planu usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
+**Dla klasyfikacji, etykietowania i ochrony**: konieczne jest posiadanie [planu usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
 
-**Aby uzyskać tylko do ochrony**: musisz mieć [planu usługi Office 365, która obejmuje usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Aby uzyskać tylko do ochrony**: konieczne jest posiadanie [planu usługi Office 365, która obejmuje usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
-Aby upewnić się, że organizacji Subskrypcja obejmuje funkcje usługi Azure Information Protection, które chcesz użyć, należy zapoznać się z listą funkcji z [cennik usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) strony.
+Aby upewnić się, że subskrypcja organizacji obejmuje funkcje usługi Azure Information Protection, które chcesz użyć, zapoznaj się z listą funkcji z [cennika usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) strony.
 
 > [!TIP]
-> Wyszukiwanie, aby zobaczyć, czy plan usługi Office 365 lub Exchange Online autonomiczne, planowanie obsługuje [nowe funkcje z szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801), aby wysłać chronionych wiadomości e-mail do osobistych adresów e-mail? Na przykład Gmail, Yahoo i firmy Microsoft. Sprawdź następujące zasoby:
+> Chcesz zobaczyć, jeśli plan usługi Office 365 lub usługi Exchange Online autonomiczny plan obsługuje [nowe możliwości z szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801), do wysyłania chronionych wiadomości e-mail do osobistych adresów e-mail? Na przykład Gmail, Yahoo i firmy Microsoft. Sprawdź następujące zasoby:
 >
 > [Opis usługi Online programu Exchange](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
@@ -48,11 +48,11 @@ Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na t
 
 Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), musisz również skonfigurować integrację katalogów.
 
-Rejestracji jednokrotnej (SSO) jest obsługiwana dla usługi Azure Information Protection, dzięki czemu użytkownicy nie są wielokrotnie monitowani o podanie poświadczeń. Jeśli używasz innego dostawcy rozwiązania do federacyjnego skontaktuj się z danym dostawcą konfigurowania usługi Azure AD. WS-Trust jest typowe wymagania dotyczące tych rozwiązań w celu obsługi logowania jednokrotnego. 
+Logowanie jednokrotne (SSO) jest obsługiwana dla usługi Azure Information Protection, dzięki czemu użytkownicy nie będą regularnie monitowani o podanie poświadczeń. Jeśli używasz innego dostawcy rozwiązania do Federacji, skontaktuj się z danym dostawcą jak skonfigurować go do usługi Azure AD. WS-Trust jest typowym wymogiem dla tych rozwiązań do obsługi logowania jednokrotnego. 
 
 Uwierzytelnianie wieloskładnikowe jest obsługiwane przez usługę Azure Information Protection, jeśli masz wymagane oprogramowanie klienckie i prawidłowo skonfigurowaną infrastrukturę obsługującą to uwierzytelnianie.
 
-Dostęp warunkowy jest obsługiwana w wersji zapoznawczej dla dokumentów chronionych przez usługę Azure Information Protection. Aby uzyskać więcej informacji, zobacz poniższe często zadawane pytania: [widać usługi Azure Information Protection znajduje się w aplikacji w chmurze dostępnych dla dostępu warunkowego, jak to działa?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+Dostęp warunkowy jest obsługiwana w wersji zapoznawczej dla dokumentów chronionych przez usługę Azure Information Protection. Aby uzyskać więcej informacji, zobacz poniższe często zadawane pytania: [widzę, że usługi Azure Information Protection znajduje się w aplikacji w chmurze dostępnych dla dostępu warunkowego — jak to działa?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 Aby uzyskać więcej informacji na temat wymagań dotyczących uwierzytelniania, zobacz artykuł [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](requirements-azure-ad.md). 
 
@@ -66,7 +66,7 @@ Następujące urządzenia obsługują klienta usługi Azure Information Protecti
 
 - Windows 10 (x86, x64)
     
-    - Brak obsługi pisma ręcznego w kompilacji systemu Windows 10 RS4 dla niejawnych testerów. 
+    - Brak obsługi dla pisma ręcznego w kompilacji systemu Windows 10 RS4 dla niejawnych testerów. 
 
 - Windows 8.1 (x86, x64)
 
@@ -84,13 +84,15 @@ W przypadku wymienionych wersji serwerowych klient usługi Azure Information Pro
 
 Dane chronione przez klienta usługi Azure Information Protection za pomocą usługi Azure Rights Management mogą być używane przez [te same urządzenia](requirements-client-devices.md), które obsługują usługę Azure Rights Management.
 
+Klient usługi Azure Information Protection ma [dodatkowe wymagania wstępne](../rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client) wymienione w podręczniku administratora.
+
 ## <a name="applications"></a>Aplikacje
 
 Klient usługi Azure Information Protection umożliwia etykietowanie i ochronę dokumentów oraz wiadomości e-mail za pośrednictwem aplikacji pakietu Office **Word**, **Excel**, **PowerPoint** i **Outlook** pochodzących z dowolnych z następujących pakietów Office:
 
 - Office 365 ProPlus z aplikacjami w wersji 2016 lub 2013 (instalacja z użyciem szybkiej instalacji lub Instalatora Windows)
     
-    Te wersje pakietu Office są dołączone do większości, ale nie wszystkie subskrypcji usługi Office 365, które obejmują ochronę danych z usługi Azure Information Protection. Sprawdź swoje informacje subskrypcji, aby sprawdzać, czy usługi Office 365 ProPlus uwzględnione. Zawiera ona również te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+    Te wersje pakietu Office są dołączane do większości, ale nie wszystkie subskrypcje usługi Office 365, które obejmują funkcji ochrony danych z usługi Azure Information Protection. Sprawdzanie informacji o subskrypcji, aby sprawdzić, czy jest dołączone usługi Office 365 ProPlus warunki. Można również znaleźć te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 
@@ -98,9 +100,9 @@ Klient usługi Azure Information Protection umożliwia etykietowanie i ochronę 
 
 - Office Professional Plus 2010 z dodatkiem Service Pack 2
 
-Inne wersje pakietu Office nie mogą chronić dokumentów i wiadomości e-mail przy użyciu usługi Rights Management. W przypadku tych wersji usługa Azure Information Protection jest obsługiwana wyłącznie do klasyfikowania. W rezultacie etykiety, które mają zastosowanie ochrony nie są wyświetlane dla użytkowników usługi Azure Information Protection paska lub z **Chroń** na Wstążce pakietu Office. 
+Inne wersje pakietu Office nie mogą chronić dokumentów i wiadomości e-mail przy użyciu usługi Rights Management. W przypadku tych wersji usługa Azure Information Protection jest obsługiwana wyłącznie do klasyfikowania. W związku z tym, etykiety umożliwiające objęcie ochroną nie są wyświetlane użytkownikom w usłudze Azure Information Protection, pasek lub z **Chroń** przycisk na Wstążce pakietu Office. 
 
-Klient usługi Azure Information Protection nie obsługuje wielu wersji pakietu Office na tym samym komputerze. Ten klient nie obsługuje również przełączania kont użytkowników w pakiecie Office.
+Klient usługi Azure Information Protection nie obsługuje wielu wersji pakietu Office na tym samym komputerze. Ten klient również nie obsługuje przełączania kont użytkowników w pakiecie Office.
 
 Aby uzyskać więcej informacji na temat wersji pakietów Office obsługujących usługę ochrony danych, zobacz [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](requirements-applications.md).
 
@@ -118,13 +120,13 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
-- Nie kończ połączenia TLS Usługa klienta (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do usługi Azure Rights Management. Spowoduje to przerwanie przypinania, że klienci usług RMS za pomocą CAs zarządzany przez firmę Microsoft do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
+- Nie przerywaj połączenia TLS Usługa klienta (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do usługi Azure Rights Management. Spowoduje to przerwanie przypinania, czy klienci usługi RMS za pomocą zarządzanych przez firmę Microsoft urzędów certyfikacji do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
     
-    - Porada: Ze względu na sposób Chrome wyświetlania bezpiecznych połączeń na pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostało zakończone przed osiągnie usługi Azure Rights Management. Wprowadź następujący adres URL na pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
+    - Porada: Ze względu na sposób Chrome Wyświetla bezpiecznych połączeń w pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostanie zakończony przed osiągnięciem przez nią usługi Azure Rights Management. Wprowadź następujący adres URL w pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
     
-        Nie martw się o Wyświetla okna przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiany przez CA firmy Microsoft, jest bardzo prawdopodobne, bezpieczne połączenie Usługa klienta jest przerywane i wymaga ponownej konfiguracji na zaporze. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli zobaczysz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
+        Nie martw się o Wyświetla okno przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiony przez CA firmy Microsoft, jest bardzo prawdopodobne, bezpieczne połączenie usługi klienta zostanie przerwany i wymaga ponownej konfiguracji zapory. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli widzisz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
         
-        ![Sprawdzanie wystawionego certyfikatu dla usługi Azure Information Protection połączeń](../media/certificate-checking.png)
+        ![Sprawdzanie wystawionego certyfikatu dla połączenia usługi Azure Information Protection](../media/certificate-checking.png)
 
 ### <a name="on-premises-servers"></a>Serwery lokalne
 
@@ -140,7 +142,7 @@ Aby uzyskać informacje o dodatkowych wymaganiach dla tego scenariusza, zobacz [
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Współistnienie usług AD RMS z usługami Azure RMS
 
-Następujący scenariusz wdrażania nie jest obsługiwane, jeśli nie używasz usług AD RMS dla [ochrony HYOK](../deploy-use/configure-adrms-restrictions.md) z usługi Azure Information Protection (Konfiguracja "hold your own key"):
+Następujący scenariusz wdrażania nie jest obsługiwana tylko w przypadku korzystania z usług AD RMS dla [ochrony HYOK](../deploy-use/configure-adrms-restrictions.md) za pomocą usługi Azure Information Protection (Konfiguracja "hold your own key"):
 
 - Uruchamianie usług AD RMS i Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem zawartym w temacie [Migrowanie z usługi AD RMS do usługi Azure Information Protection](../plan-design/migrate-from-ad-rms-to-azure-rms.md).
 

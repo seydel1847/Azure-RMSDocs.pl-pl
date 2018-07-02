@@ -4,7 +4,7 @@ description: Uzyskaj informacje o funkcji superużytkowników usługi Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 05/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,19 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: aed109667fe5c58f50735b8cc223f02009ebde55
+ms.sourcegitcommit: 0782e460d29e11974ec1c4bb9286572d0ef000d0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37102834"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Dzięki funkcji superużytkowników usługi Azure Rights Management w ramach usługi Azure Information Protection upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane chronione w organizacji przez usługę Azure Rights Management. W razie potrzeby mogą też usunąć lub zmienić uprzednio zastosowaną ochronę. 
 
-Administrator ma zawsze w usłudze Rights Management [prawo użytkowania](configure-usage-rights.md) typu Pełna kontrola w odniesieniu do dokumentów i wiadomości e-mail chronionych przez dzierżawę usługi Azure Information Protection w organizacji. Tę możliwość czasami nazywa się "rozsądkiem ponad danymi" i jest to kluczowy element w zachowaniu kontroli nad danymi organizacji. Przykładowo z tej funkcji można skorzystać w każdym z następujących scenariuszy:
+Administrator ma zawsze w usłudze Rights Management [prawo użytkowania](configure-usage-rights.md) typu Pełna kontrola w odniesieniu do dokumentów i wiadomości e-mail chronionych przez dzierżawę usługi Azure Information Protection w organizacji. Tę możliwość czasami nazywa się "rozsądkiem ponad danymi" i jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji. Przykładowo z tej funkcji można skorzystać w każdym z następujących scenariuszy:
 
 - Pracownik opuszcza organizację i zachodzi potrzeba odczytania plików, które zabezpieczył.
 
@@ -45,19 +46,19 @@ Jeśli musisz ręcznie włączyć funkcję superużytkowników, użyj polecenia 
 Chociaż użycie grupy dla superużytkowników jest łatwiejsze w zarządzaniu, należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli więc trzeba przypisać nowego użytkownika jako superużytkownika w celu natychmiastowego odszyfrowania zawartości, dodaj tego użytkownika za pomocą polecenia Add-AadrmSuperUser, zamiast dodawać go do istniejącej grupy skonfigurowanej przy użyciu polecenia Set-AadrmSuperUserGroup.
 
 > [!NOTE]
-> Jeśli użytkownik nie został jeszcze zainstalowany moduł programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
+> Jeśli nie zainstalowano jeszcze modułu programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
 
-Nie ma znaczenia, po włączeniu funkcji administratorów lub po dodaniu użytkowników jako administratorów. Na przykład czy włączyć funkcję w czwartek, a następnie dodać użytkownika piątek, użytkownik natychmiast można otworzyć zawartość, która była chroniona na samym początku tygodnia.
+Po włączeniu funkcji superużytkowników lub kiedy dodawać użytkowników jako administratorów nie ma znaczenia. Na przykład jeśli włączyć tę funkcję w czwartek, a następnie dodanie użytkownika w piątek, ten użytkownik natychmiast otworzyć zawartość, która była chroniona na samym początku tygodnia.
 
 ## <a name="security-best-practices-for-the-super-user-feature"></a>Najlepsze rozwiązania dotyczące funkcji superużytkowników
 
 - Ogranicz i monitoruj administratorów, którzy zostali przypisani do funkcji administratora globalnego usługi Office 365 lub dzierżawy usługi Azure Information Protection albo zostali przypisani do roli GlobalAdministrator za pomocą polecenia cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator). Ci użytkownicy mogą włączyć funkcję superużytkowników i przypisywać użytkowników (w tym siebie) do funkcji superużytkowników. Mogą też potencjalnie odszyfrować wszystkie pliki chronione w organizacji.
 
-- Aby zobaczyć, którzy użytkownicy i które konta usług są indywidualnie przypisane do funkcji superużytkowników, użyj polecenia cmdlet [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser). Aby zobaczyć, czy skonfigurowano grupę superużytkowników, użyj polecenia cmdlet [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) i swoich standardowych narzędzi do zarządzania użytkownikami w celu sprawdzenia, którzy użytkownicy są członkami tej grupy. Tak jak wszystkie działania administratorów, włączanie lub wyłączanie funkcji superużytkowników oraz dodawanie i usuwanie superużytkowników jest rejestrowane i może być sprawdzone za pomocą polecenia [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog). W następnej sekcji przedstawiono przykład. Gdy superużytkownik odszyfrowuje pliki, akcja ta jest rejestrowana i może być sprawdzona za pomocą funkcji [rejestrowania użycia](log-analyze-usage.md).
+- Aby zobaczyć, którzy użytkownicy i konta usług są indywidualnie przypisane jako superużytkowników, użyj [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser) polecenia cmdlet. Aby zobaczyć, czy skonfigurowano grupę superużytkowników, użyj [Get-AadrmSuperUserGroup](/powershell/module/aadrm/get-aadrmsuperusergroup) polecenia cmdlet i narzędzia zarządzania użytkownika standardowego do sprawdzenia, którzy użytkownicy są członkami tej grupy. Tak jak wszystkie działania administratorów, włączanie lub wyłączanie funkcji superużytkowników oraz dodawanie i usuwanie superużytkowników jest rejestrowane i może być sprawdzone za pomocą polecenia [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog). Zobacz następną sekcję, aby uzyskać przykład. Gdy superużytkownik odszyfrowuje pliki, akcja ta jest rejestrowana i może być sprawdzona za pomocą funkcji [rejestrowania użycia](log-analyze-usage.md).
 
 - Jeśli nie potrzebujesz funkcji superużytkowników w codziennych działaniach, włącz tę funkcję tylko wtedy, gdy jest potrzeba, a następnie wyłącz ją za pomocą polecenia cmdlet [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature).
 
-### <a name="example-auditing-for-the-super-user-feature"></a>Przykład inspekcji dla funkcji superużytkowników
+### <a name="example-auditing-for-the-super-user-feature"></a>Przykład inspekcji dla superużytkowników
 
 Poniższy fragment dziennika pokazuje przykładowe wpisy uzyskane za pomocą [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) polecenia cmdlet. 
 
@@ -79,7 +80,7 @@ Jeśli korzystasz z klasyfikacji i ochrony, możesz również użyć polecenia [
 Aby uzyskać więcej informacji na temat wymienionych poleceń cmdlet, zobacz sekcję [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](../rms-client/client-admin-guide-powershell.md) w podręczniku administratora klienta usługi Azure Information Protection.
 
 > [!NOTE]
-> Moduł AzureInformationProtection zastępuje moduł ochrony usługi RMS programu PowerShell, który został zainstalowany razem z narzędziem RMS Protection Tool. Obie te moduły są inne niż i uzupełnia [modułu programu PowerShell dla usługi Azure Rights Management](administer-powershell.md). Moduł AzureInformationProtection obsługuje zarówno usługę Azure Information Protection, Azure Rights Management (Azure RMS) w ramach usługi Azure Information Protection, jak i usługi Active Directory Rights Management (AD RMS).
+> Moduł AzureInformationProtection zastępuje moduł ochrony usługi RMS programu PowerShell, który został zainstalowany razem z narzędziem RMS Protection Tool. Oba te moduły są inne niż i uzupełnia [modułu programu PowerShell dla usługi Azure Rights Management](administer-powershell.md). Moduł AzureInformationProtection obsługuje zarówno usługę Azure Information Protection, Azure Rights Management (Azure RMS) w ramach usługi Azure Information Protection, jak i usługi Active Directory Rights Management (AD RMS).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

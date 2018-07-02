@@ -4,7 +4,7 @@ description: Informacje na temat plików i dzienników użycia klienta usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: cb6f68e2d2009a67baadf1146f3c52cf7cf36aa2
-ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
+ms.openlocfilehash: 6bda82a913e4a9d8984a0354cde28bef3c119e81
+ms.sourcegitcommit: 2e85f87f7276b284b4f17de1d4e752c790eff651
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568875"
 ---
-# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręcznik administratora: Pliki klienta Azure Information Protection i rejestrowanie użycia klienta
+# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręczniku administratora: Pliki klienta usługi Azure Information Protection i dzienniki użycia klienta
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
 Po zainstalowaniu klienta usługi Azure Information Protection przydatna może być informacja o lokalizacji plików. Może też zajść potrzeba monitorowania sposobu korzystania z klienta.
 
@@ -38,9 +39,9 @@ Pliki dziennika klienta i plik obecnie zainstalowanych zasad:
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Dzienniki użycia klienta usługi Azure Information Protection
 
-Klient rejestruje aktywności użytkownika w lokalnym dzienniku zdarzeń systemu Windows **Dzienniki aplikacji i usług** > **usługi Azure Information Protection**. Zdarzenia obejmują następujące informacje:
+Klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń Windows **Dzienniki aplikacji i usług** > **usługi Azure Information Protection**. Zdarzenia obejmują następujące informacje:
 
-- Wersja klienta, identyfikator zasady
+- Wersja klienta, identyfikator zasad
 
 - Adresy IP zalogowanego użytkownika
 
@@ -50,9 +51,9 @@ Klient rejestruje aktywności użytkownika w lokalnym dzienniku zdarzeń systemu
 
     - Ustawienie etykiety: identyfikator informacji 101
     
-    - Ustawienie etykiety (niższej): identyfikator informacji 102
+    - Ustawienie etykiety (niższej): informacje o identyfikatorze 101
     
-    - Ustawienie etykiety (wyższej): identyfikator informacji 103
+    - Ustawienie etykiety (wyższej): informacje o identyfikatorze 101
     
     - Usunięcie etykiety: identyfikator informacji 104
    
@@ -84,9 +85,9 @@ Klient rejestruje aktywności użytkownika w lokalnym dzienniku zdarzeń systemu
     
 - Uzasadnienie użytkownika (jeśli ma zastosowanie)
 
-- Uprawnienia niestandardowe (jeśli jest to wymagane), która zawiera [prawa użytkowania według nazwy kodowania](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) dla określonych użytkowników, grup lub organizacji
+- Uprawnienia niestandardowe (jeśli ma zastosowanie), który zawiera [prawa użytkowania według nazwy kodowania](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) dla określonych użytkowników, grupy lub organizacje
     
-Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md)
+Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md)
 
 
 

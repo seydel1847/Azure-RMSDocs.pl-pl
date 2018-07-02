@@ -4,7 +4,7 @@ description: Po włączeniu ochrony dokumentów można śledzić ich użycie. W 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/04/2018
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e4e35659ab964a636c6ca0c7066b1c809cc5958b
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: 610a1e5f147ab8ce0cca3adb59191d145d01a1ae
+ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33823531"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37088280"
 ---
-# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas używania usługi Azure Information Protection
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. Służy do tego **witryna śledzenia dokumentów**. Jest ona dostępna z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
 
-Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Widoczna jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Jednak w rzadkich przypadkach lokalizacji zgłoszone mogą być niedokładne. Na przykład gdy użytkownik otwarcie chronionego dokumentu korzysta z połączenia sieci VPN lub komputera ma adres IPv6.
+Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Widoczna jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Jednak w rzadkich przypadkach lokalizacji zgłoszone mogą być niedokładne. Na przykład gdy użytkownik, otwarcie chronionego dokumentu korzysta z połączenia sieci VPN lub komputera ma adres IPv6.
 
 Akcje, które można wykonać w witrynie śledzenia dokumentów:
 
@@ -53,7 +53,7 @@ Akcje, które można wykonać w witrynie śledzenia dokumentów:
         
         ![Ikona administratora w witrynie śledzenia dokumentów](../media/tracking-site-admin-icon.png)
         
-        Jeśli nie widzisz tę ikonę, mimo iż Administrator globalny to, że nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL dostęp do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
+        Jeśli nie widzisz tę ikonę, mimo iż Administrator globalny, to, że nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL do uzyskania dostępu do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
 
 Jeśli nie masz uprawnień administracyjnych, możesz śledzić i odwoływać dokumenty, których ochrona została wprowadzona przez Ciebie. Nie można śledzić chronionych wiadomości e-mail za pomocą witryny śledzenia dokumentów.
 
@@ -64,7 +64,7 @@ Aby śledzić dokument, który jest chroniony przez Ciebie, użyj komputera z sy
 
 ## <a name="using-office-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu pakietu Office
 
-W przypadku aplikacji pakietu Office (Word, Excel, PowerPoint, Outlook): 
+Dla pakietu Office aplikacji, Word, Excel i PowerPoint: 
 
 1. Otwórz chroniony dokument, który chcesz śledzić lub odwołać.
 
@@ -116,6 +116,6 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](client-admin-guide-document-tracking.md) z [Przewodnik administratora](client-admin-guide.md).
+Zobacz [Konfigurowanie i używanie śledzenia dokumentów usługi Azure Information Protection](client-admin-guide-document-tracking.md) z [podręczniku administratora](client-admin-guide.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
