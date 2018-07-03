@@ -1,68 +1,69 @@
 ---
 title: Samouczek Szybki start — krok 1 — AIP
-description: Krok 1 samouczka wprowadzającego, można szybko wypróbować usługę Azure Information Protection — aktywowanie usługi ochrony.
+description: Krok 1 samouczka wprowadzającego, dzięki któremu można szybko wypróbować usługę Azure Information Protection — aktywować usługę ochrony.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 5dcc63f6ffbd7402c94258fe0d8677908c603e1f
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: f5daff0083e653a9a4a4b2bdeb96daa85075428b
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562062"
 ---
 # <a name="step-1-activate-protection"></a>Krok 1: Aktywowanie ochrony
  
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!NOTE]
->Nawet w przypadku ochrony został aktywowany dla swojej dzierżawy, należy wykonać ten krok, aby potwierdzić stan aktywacji. Instrukcje zawierają logowanie do portalu Azure i Tworzenie bloku Azure Information Protection, dzięki czemu możesz przejść do kroku 2.
+>Nawet wtedy, gdy ochrona została aktywowana dla Twojej dzierżawy, należy wykonać ten krok, aby potwierdzić stan aktywacji. Instrukcje zawierają logowanie do witryny Azure portal i Tworzenie bloku Azure Information Protection, dzięki czemu możesz przejść do kroku 2.
 
-Po aktywowaniu usługi Azure Information Protection ochrony można chronić w organizacji najbardziej poufne dokumenty i wiadomości e-mail. Można także śledzić, jak te dokumenty chronione są używane podczas udostępniać innym użytkownikom. 
+Po aktywowaniu usługi Azure Information Protection ochrony można chronić w organizacji najbardziej poufne dokumenty i wiadomości e-mail. Można także śledzić używania tych chronionych dokumentów po udostępnieniu ich innym osobom. 
 
-Istnieją różne sposoby aktywacji ochrony. Można użyć programu PowerShell i portale administratora. Jednak w tym samouczku używamy portalu Azure etykiety dla użytkowników należy również skonfigurować. 
+Istnieją różne sposoby, aktywować ochronę. Można użyć programu PowerShell i portale administracyjne. Ale w tym samouczku korzystamy z witryny Azure portal, czyli, gdzie możesz również skonfigurować etykiety dla użytkowników. 
 
-## <a name="to-activate-protection"></a>Aby aktywować ochrony
+## <a name="to-activate-protection"></a>Aby aktywować ochronę
 
-1. Zaloguj się do [portalu Azure](https://portal.azure.com) przy użyciu konta administratora globalnego dla dzierżawy. 
+1. Zaloguj się do [witryny Azure portal](https://portal.azure.com) przy użyciu konta administratora globalnego dla dzierżawy. 
     
-    Jeśli nie jesteś administratorem globalnym, możesz użyć jednego z następujących [ról administracyjnych](/azure/active-directory/active-directory-assign-admin-roles-azure-portal): **administratora ochrony informacji** lub **Administrator zabezpieczeń**.
+    Jeśli nie jesteś administratorem globalnym, możesz użyć jednego z następujących [ról administracyjnych](/azure/active-directory/active-directory-assign-admin-roles-azure-portal): **Administrator usługi Information Protection** lub **Administrator zabezpieczeń**.
 
-2. W menu centralnym kliknij **Utwórz zasób**, a następnie, z **MARKETPLACE** listy, wybierz **bezpieczeństwo i Obsługa tożsamości**. 
+2. W menu Centrum wybierz **Utwórz zasób**, a następnie w polu wyszukiwania w portalu Marketplace wpisz **usługi Azure Information Protection**. 
     
-3.  Na **zabezpieczeń + Identyfikuj** bloku z **POLECANE aplikacje** listy, wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku, kliknij przycisk **Utwórz**.
-    
-    Ta akcja tworzy **usługi Azure Information Protection** bloku, dzięki czemu przy następnym zalogowaniu do portalu można wybrać usługę z Centrum **wszystkie usługi** listy. 
+3. Wybierz z listy wyników **usługi Azure Information Protection**. Na **usługi Azure Information Protection** bloku kliknij **Utwórz**.
     
     > [!TIP] 
-    > Wybierz opcję **Przypnij do pulpitu nawigacyjnego**, aby utworzyć kafelek usługi **Azure Information Protection** na pulpicie nawigacyjnym, dzięki czemu można będzie pominąć krok przeglądania w poszukiwaniu usługi przy następnym zalogowaniu w witrynie portalu.
+    > Opcjonalnie można zaznaczyć **Przypnij do pulpitu nawigacyjnego** utworzyć **usługi Azure Information Protection** kafelka na pulpicie nawigacyjnym, dzięki czemu można pominąć, przechodząc do usługi przy następnym logowaniu do portalu.
+    
+    Kliknij przycisk **Utwórz** ponownie.
 
-4. Należy zwrócić uwagę na informację znajdującą się na stronie **Szybki start**, która zostanie automatycznie otwarta przy pierwszym połączeniu z usługą. Możesz do niej wrócić później. W tym samouczku, wybierz **ZARZĄDZAJ** > **aktywacji ochrony**. 
+4. Należy zwrócić uwagę na informację znajdującą się na stronie **Szybki start**, która zostanie automatycznie otwarta przy pierwszym połączeniu z usługą. Możesz do niej wrócić później. Na potrzeby tego samouczka wybierz **ZARZĄDZAJ** > **Aktywacja ochrony**. 
 
 5. Możesz teraz zobaczyć, czy ochrona jest aktywowana dla Twojej dzierżawy. 
     
-    - Jeśli włączono ochronę, zostanie wyświetlony po potwierdzeniu:
+    - Jeśli ochrona została aktywowana, zostanie wyświetlony po potwierdzeniu:
         
-        ![Azure Information Protection stanu usługi Azure RMS](../media/info-protect-azurerms-activated.png)
+        ![Stan usługi Azure Information Protection dla usługi Azure RMS](../media/info-protect-azurerms-activated.png)
         
-    - Jeśli nie włączono ochrony, zobacz się, że to odzwierciedlenie w informacje o stanie i opcję aktywacji:
+    - Jeśli nie włączono ochronę, zobaczysz to odzwierciedlenie w informacje o stanie oraz opcja jej aktywowania:
         
-        ![Azure Information Protection stanu usługi Azure RMS](../media/info-protect-azurerms-deactivated.png)
+        ![Stan usługi Azure Information Protection dla usługi Azure RMS](../media/info-protect-azurerms-deactivated.png)
 
-6. Jeśli ochrona nie jest aktywowany, wybierz **Aktywuj**. 
+6. Jeśli ochrona nie zostanie aktywowany, wybierz opcję **Aktywuj**. 
 
-    Po zakończeniu aktywacji Wyświetla pasek informacji **aktywacji zakończyło się pomyślnie**.
+    Po zakończeniu aktywacji Wyświetla pasek informacji **Aktywacja została zakończona pomyślnie**.
 
 To wszystko, co musisz zrobić w pierwszym kroku tego samouczka. Możesz przejść do kroku 2.
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
-|Temat aktywowania ochrony|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
+|O aktywowanie ochrony|[Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md)|
 
 
 >[!div class="step-by-step"]
