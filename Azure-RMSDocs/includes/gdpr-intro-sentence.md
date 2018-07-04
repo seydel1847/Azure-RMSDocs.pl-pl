@@ -1,8 +1,8 @@
 ---
- Tytuł: zawierają opis pliku: obejmują usług plików: Autor azure zasad: eross msft
+ Tytuł: Dołącz opis pliku: obejmują usług plików: Tworzenie usługi azure policy: eross msft
  
-MS.Service: ms.topic zasadami azure: obejmują ms.date: 04/24/2018 ms.author: lizross ms.custom: plik dołączany
+MS.Service: usługi azure policy ms.topic: obejmują ms.date: 04/24/2018 ms.author: lizross ms.custom: Dołącz plik
 ---
 
 >[!Note] 
-> W tym artykule instrukcje dotyczące sposobu usuwania danych osobistych z urządzenia lub usługi i mogą służyć do obsługi sieci zobowiązań GDPR. Jeśli szukasz informacji ogólnych o GDPR zobacz [GDPR części portalu zaufania usługi](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> Ten artykuł zawiera instrukcje dotyczące sposobu usuwania danych osobowych z urządzenia lub usługi i może służyć do obsługi zobowiązania w RODO. Jeśli szukasz ogólne informacje na temat rozporządzenia RODO, zobacz [RODO części portal zaufania usługi](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).

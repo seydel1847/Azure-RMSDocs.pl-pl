@@ -4,7 +4,7 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0b663f8f514aadf51b0ad549761d90d30e07811d
-ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
+ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
+ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042885"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433635"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -47,7 +47,7 @@ Można uruchomić skanera odnajdywania tylko w trybie, której użyć raportów,
 
 Należy zauważyć, że skaner nie wykrywa i etykiety w czasie rzeczywistym. Systematyczne przeszukiwania za pomocą plików w magazynach danych, które określisz i można skonfigurować ten cykl, aby uruchomić jeden raz lub wielokrotnie.
 
-Można określić, jakie typy plików ze skanowaniem lub Wyklucz ze skanowania. Aby ograniczyć plików skaner sprawdza, zdefiniować listę typów plików za pomocą [AIPScannerScannedFileType zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType).
+Można określić, jakie typy plików ze skanowaniem lub Wyklucz ze skanowania. Aby ograniczyć plików skaner sprawdza, zdefiniować listę typów plików za pomocą [AIPScannerScannedFileTypes zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes).
 
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Wymagania wstępne dotyczące skanera usługi Azure Information Protection
@@ -220,7 +220,7 @@ Ponieważ firma Microsoft skonfigurowany harmonogram uruchamiany w sposób ciąg
 
 Skaner automatycznie pomija pliki, które są [wykluczane z klasyfikacji i ochrony](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), takich jak pliki wykonywalne i system plików.
 
-Możesz zmienić to zachowanie, definiując listę typów plików ze skanowaniem lub Wyklucz ze skanowania. Po określeniu tej listy i nie należy określać repozytorium danych, listy ma zastosowanie do wszystkich repozytoriów danych, które nie mają własne określonej listy. Aby określić tej listy, użyj [AIPScannerScannedFileType zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType). Po określeniu listy typów plików, nowy typ pliku można dodać do listy przy użyciu [AIPScannerScannedFileType Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)i usuwanie typu pliku z listy przy użyciu [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType).
+Możesz zmienić to zachowanie, definiując listę typów plików ze skanowaniem lub Wyklucz ze skanowania. Po określeniu tej listy i nie należy określać repozytorium danych, listy ma zastosowanie do wszystkich repozytoriów danych, które nie mają własne określonej listy. Aby określić tej listy, użyj [AIPScannerScannedFileTypes zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Po określeniu listy typów plików, nowy typ pliku można dodać do listy przy użyciu [AIPScannerScannedFileTypes Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)i usuwanie typu pliku z listy przy użyciu [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
 Następnie skaner korzysta Windows iFilter w celu zeskanowania następujących typów plików. Dla tych typów plików dokumentu zostaną oznaczone etykietą, za pomocą warunków, które określono dla etykiety.
 
