@@ -4,7 +4,7 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
-ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
+ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433635"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935736"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -113,7 +113,7 @@ Może mieć jedno konto, aby uruchomić usługę skanera i użyj innego konta do
 - Dla konta usługi Azure Active Directory, postępuj zgodnie z instrukcjami dotyczącymi [określanie i użyj parametru tokenu dla polecenia Set-AIPAuthentication](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) w podręczniku administratora.
 
 
-## <a name="install-the-azure-information-protection-scanner"></a>Zainstaluj skanera usługi Azure Information Protection
+## <a name="install-the-scanner"></a>Zainstaluj skaner
 
 1. Zaloguj się do komputera systemu Windows Server, który będzie uruchamiany skanera. Użyj konta mającego uprawnienia administratora lokalnego i ma uprawnienia do zapisu w bazie danych master programu SQL Server.
 
@@ -143,7 +143,9 @@ Może mieć jedno konto, aby uruchomić usługę skanera i użyj innego konta do
 
 Teraz, gdy zainstalowano skaner, należy uzyskać token dla konta usługi skanera do uwierzytelniania, dzięki czemu można uruchomić nienadzorowaną usługi Azure AD. 
 
-## <a name="get-an-azure-ad-token-for-the-scanner-service-account-to-authenticate-to-the-azure-information-protection-service"></a>Uzyskaj usługę Azure AD token dla konta usługi skanera do uwierzytelniania usługi Azure Information Protection
+## <a name="get-an-azure-ad-token-for-the-scanner"></a>Pobierz usługę Azure AD token skanera
+
+Token usługi Azure AD umożliwia skanera konto usługi uwierzytelniania w usłudze Azure Information Protection.
 
 1. Na tym samym komputerze z systemem Windows Server lub z pulpitu Zaloguj się do witryny Azure portal utworzyć dwie aplikacje usługi Azure AD, które są potrzebne do określenia tokenu dostępu do uwierzytelniania. Po początkowej logowania interaktywnego token ten umożliwia skanera nieinteraktywnego uruchomienia.
     
@@ -163,7 +165,7 @@ Skaner zawiera teraz token do uwierzytelniania w usłudze Azure AD, który jest 
 
 Teraz możesz określić magazynów danych do skanowania. 
 
-## <a name="specify-data-stores-for-the-azure-information-protection-scanner"></a>Określ magazynów danych dla skanera usługi Azure Information Protection
+## <a name="specify-data-stores-for-the-scanner"></a>Określ magazyny danych skanera
 
 Użyj [AIPScannerRepository Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) polecenia cmdlet, aby określić dane są przechowywane do skanowania przez skaner usługi Azure Information Protection. W przypadku witryn programu SharePoint i bibliotek można określić foldery lokalne, ścieżki UNC i adresy URL serwerów programu SharePoint. 
 
@@ -185,7 +187,7 @@ Obsługiwane wersje programu SharePoint: program SharePoint Server 2016 i ShareP
 
 Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do pracy swoje pierwsze skanowanie w trybie odnajdowania.
 
-## <a name="run-a-discovery-cycle-and-view-reports-for-the-azure-information-protection-scanner"></a>Uruchomić cykl odnajdowania i wyświetlać raporty dla skanera usługi Azure Information Protection
+## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>Uruchomić cykl odnajdowania i wyświetlać raporty dla skanera
 
 1. Za pomocą **narzędzia administracyjne** > **usług**, start **skaner ochrony informacji Azure** usługi.
 
@@ -199,7 +201,7 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
 
 Gdy wszystko będzie gotowe automatycznie oznaczyć pliki, które wykrywa skaner, przejdź do następnej procedury. 
 
-## <a name="configure-the-azure-information-protection-scanner-to-apply-classification-and-protection-to-discovered-files"></a>Konfigurowanie skanera usługi Azure Information Protection do zastosowania do odnalezionych plików klasyfikacji i ochrony
+## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>Konfigurowanie skanera do zastosowania funkcji klasyfikacji i ochrony
 
 W jego domyślne ustawienie skaner działa jeden czas i działa w trybie tylko do raportowania. Aby zmienić te ustawienia, należy uruchomić [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet.
 
@@ -216,9 +218,9 @@ W jego domyślne ustawienie skaner działa jeden czas i działa w trybie tylko d
 Ponieważ firma Microsoft skonfigurowany harmonogram uruchamiany w sposób ciągły i, gdy skaner pracował przechodzi przez wszystkie pliki, uruchamia nowy cykl tak, aby nowe i zmienione pliki zostaną odnalezione.
 
 
-## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Jak pliki są skanowane przez skaner usługi Azure Information Protection
+## <a name="how-files-are-scanned"></a>Jak pliki są skanowane
 
-Skaner automatycznie pomija pliki, które są [wykluczane z klasyfikacji i ochrony](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client), takich jak pliki wykonywalne i system plików.
+Skaner automatycznie pomija pliki, które są [wykluczane z klasyfikacji i ochrony](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection), takich jak pliki wykonywalne i system plików.
 
 Możesz zmienić to zachowanie, definiując listę typów plików ze skanowaniem lub Wyklucz ze skanowania. Po określeniu tej listy i nie należy określać repozytorium danych, listy ma zastosowanie do wszystkich repozytoriów danych, które nie mają własne określonej listy. Aby określić tej listy, użyj [AIPScannerScannedFileTypes zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Po określeniu listy typów plików, nowy typ pliku można dodać do listy przy użyciu [AIPScannerScannedFileTypes Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)i usuwanie typu pliku z listy przy użyciu [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
@@ -256,7 +258,7 @@ Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakie
 
 Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określane jako "PFile"
 
-## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Gdy ponownie skanowana plików przez skaner usługi Azure Information Protection
+## <a name="when-files-are-rescanned"></a>Kiedy pliki są ponownie skanowana
 
 Dla pierwszego cyklu skanowania skaner sprawdza wszystkie pliki w magazynach danych skonfigurowane, a następnie w przypadku skanowania kolejnych tylko nowe lub zmodyfikowane pliki są kontrolowane. 
 
@@ -273,7 +275,7 @@ Skaner pobraniu zasad, który miał żadne warunki automatycznej skonfigurowane 
 
 ## <a name="using-the-scanner-with-alternative-configurations"></a>Za pomocą skanera usługi za pomocą alternatywnej konfiguracji
 
-Istnieją dwa scenariusze alternatywne, obsługiwanych przez skaner gdzie etykiety nie trzeba skonfigurować wszelkie warunki: 
+Istnieją dwa scenariusze alternatywne, które skanera usługi Azure Information Protection obsługuje, gdzie etykiety nie trzeba skonfigurować wszelkie warunki: 
 
 - Stosowanie etykiety domyślnej, do wszystkich plików w repozytorium danych.
     
@@ -288,7 +290,7 @@ Istnieją dwa scenariusze alternatywne, obsługiwanych przez skaner gdzie etykie
     
     Skaner używa warunki niestandardowe, które zostały określone przez etykiet w zasadach usługi Azure Information Protection i listę typów informacji, które są dostępne do określenia dla etykiet w zasadach usługi Azure Information Protection. 
 
-## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Optymalizacja wydajności skanera usługi Azure Information Protection
+## <a name="optimizing-the-performance-of-the-scanner"></a>Optymalizacja wydajności skanera
 
 Aby zmaksymalizować wydajność skanera:
 
@@ -339,7 +341,7 @@ Inne czynniki, które mają wpływ na wydajność skanera:
     - Skaner działa więcej spowalnianiu, gdy używasz [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) Aby zidentyfikować wszystkie warunki niestandardowe i typy znanych informacji poufnych.
     
 
-## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Listę poleceń cmdlet dla skanera usługi Azure Information Protection 
+## <a name="list-of-cmdlets-for-the-scanner"></a>Listę poleceń cmdlet skanera 
 
 Inne polecenia cmdlet skanera pozwalają zmienić konto usługi i bazy danych dla skaner, uzyskać bieżące ustawienia dla skaner i odinstaluj usługę skanera. Skaner używa następujących poleceń cmdlet:
 
@@ -368,7 +370,7 @@ Inne polecenia cmdlet skanera pozwalają zmienić konto usługi i bazy danych dl
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 
 
-## <a name="event-log-ids-and-descriptions"></a>Identyfikatory i opisy dziennika zdarzeń
+## <a name="event-log-ids-and-descriptions-for-the-scanner"></a>Identyfikatory i opisy skanera dziennika zdarzeń
 
 Następujące sekcje zawierają do identyfikowania możliwych identyfikatorów zdarzeń i opisy skanera. Te zdarzenia są rejestrowane na serwerze, który uruchamia usługę skanera w Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**.
 

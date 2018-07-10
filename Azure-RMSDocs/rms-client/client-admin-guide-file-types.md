@@ -4,7 +4,7 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
-ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
+ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310265"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935719"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -181,9 +181,9 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 
 Aby uzyskać więcej informacji, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Typy plików wykluczone z klasyfikacji i ochrony przez klienta usługi Azure Information Protection
+## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>Typy plików, które są wykluczone z klasyfikacji i ochrony
 
-Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla działania komputera, niektóre typy plików i folderów są automatycznie wykluczone z ochrony i klasyfikacji. Jeśli użytkownicy spróbują sklasyfikować lub chronić te pliki, zobaczą komunikat informujący o tym, że pliki są wykluczone.
+Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla działania komputera, niektóre typy plików i folderów są automatycznie wykluczone z ochrony i klasyfikacji. Jeśli użytkownicy spróbują sklasyfikować lub chronić te pliki przy użyciu klienta usługi Azure Information Protection, zobaczy komunikat, że są one wyłączone.
 
 - **Wykluczone typy plików**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msp, .msi, .pdb, .jar
 
@@ -192,6 +192,18 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
     - Program Files (\Program Files i \Program Files (x86))
     - \ProgramData 
     - \AppData (dla wszystkich użytkowników)
+
+### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Typy plików, które są wykluczone z klasyfikacji i ochrony przez skaner usługi Azure Information Protection
+
+Domyślnie skaner także wyklucza te same typy plików jako klienta usługi Azure Information Protection. Można jednak zmienić to zachowanie, skanera, za pomocą następujących poleceń cmdlet programu PowerShell:
+
+- [Zestaw AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
+
+- [Dodaj AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
+
+- [Usuń AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+Domyślnie skaner chroni tylko typów plików pakietu Office. Aby zmienić to zachowanie skanera, edytowania rejestru, a następnie określ dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione domyślnie
 

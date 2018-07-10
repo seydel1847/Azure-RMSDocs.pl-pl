@@ -4,7 +4,7 @@ description: Konieczna jest aktywacja usługi Azure Rights Management, zanim Two
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8e8a5062efe3b14f1867cf8440dc91c368a810f5
-ms.sourcegitcommit: 6bdc1e5c328ad3b63aeb6f60ba9905551261a7a1
+ms.openlocfilehash: 46c13b70e0b922b9b4d403d9801a192bb649497f
+ms.sourcegitcommit: 4bda470156d18ee8289752d37789feb1ae758a6b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2018
-ms.locfileid: "37137784"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37925028"
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -106,7 +106,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 Aby uzyskać więcej informacji na temat tego polecenia cmdlet i dodatkowe przykłady, zobacz pomoc do polecenia [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy).
 
-Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Przykładowo nie będą widzieć w swoich klientach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub skonfigurowanych szablonów niestandardowych. Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat.
+Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Na przykład, nie będą widzieć w swoich aplikacjach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub szablonów niestandardowych, które można konfigurować. Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat. Na przykład, aby uniemożliwić użytkownikom ochronę wiadomości e-mail w programie Outlook w sieci web, należy użyć [OwaMailboxPolicy zestaw](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps) można ustawić *IRMEnabled* parametr *$false*.
 
 
 ## <a name="next-steps"></a>Następne kroki
