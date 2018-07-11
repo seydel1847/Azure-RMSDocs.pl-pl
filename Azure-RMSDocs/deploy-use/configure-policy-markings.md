@@ -4,25 +4,26 @@ description: Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
+ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37947472"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny.
 
-Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
+Dodatkowe informacje na temat tych oznaczeń wizualnych:
 
 - Nagłówki i stopki dotyczą programów Word, Excel, PowerPoint i Outlook.
 
@@ -30,45 +31,47 @@ Dodatkowe informacje dotyczące tych oznaczeń wizualnych:
 
     - Excel: znaki wodne są widoczne tylko w trybach Podgląd wydruku i Układ strony oraz po wydrukowaniu.
     
-    - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła.
+    - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła. Na **widoku** karcie **wzorca slajdów**, upewnij się, że **Ukryj grafiki w tle** nie zaznaczono pole wyboru.
     
     - Wiele wierszy tekstu są obsługiwane.
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
 
-- Znaczniki wizualne obsługuje tylko jeden język.
+- Word, PowerPoint i Outlook obsługuje oznaczeń wizualnych w różnych kolorach. Oznaczenia wizualne, które są skonfigurowane do obsługi kolory zawsze wyświetlane jako czarny w programie Excel.
 
-## <a name="when-visual-markings-are-applied"></a>Gdy oznaczenia wizualne są stosowane.
+- Oznaczenia wizualne obsługuje tylko jeden język.
+
+## <a name="when-visual-markings-are-applied"></a>Po zastosowaniu oznaczenia wizualne
 
 W przypadku wiadomości e-mail oznaczenia wizualne są stosowane, gdy wiadomość e-mail jest wysyłana z programu Outlook.
 
 W przypadku dokumentów oznaczenia wizualne są stosowane w następujący sposób:
 
-- W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety. Oznaczenia wizualne, również są stosowane po otwarciu dokumentu etykietą i zapisywaniu dokumentu.  
+- W aplikacji pakietu Office oznaczenia wizualne z etykiety są stosowane po zastosowaniu etykiety. Oznaczenia wizualne są również stosowane, gdy etykietą dokument jest otwarty i pierwszym zapisaniu dokumentu.  
 
-- Gdy dokument jest oznaczona za pomocą Eksploratora plików lub środowiska PowerShell, oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane, gdy ten dokument jest otwarty w aplikacji pakietu Office i zapisywaniu dokumentu.
+- Jeśli dokument jest oznaczona etykietą za pomocą Eksploratora plików, programu PowerShell lub skanera usługi Azure Information Protection: oznaczenia wizualne nie są natychmiast stosowane, ale są stosowane przez klienta usługi Azure Information Protection, po otwarciu dokumentu w aplikacji pakietu Office i pierwszym zapisaniu dokumentu.
     
-    Jeśli używany jest wyjątek [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) z pakietu Office 2016 dla plików, które są zapisywane w usługi SharePoint Online usługi OneDrive i OneDrive dla firm: gdy AutoSave na, oznaczenia wizualne nie są stosowane dopiero po skonfigurowaniu [ Zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) włączyć klasyfikację w celu stale uruchomione w tle. 
+    Wyjątek jest w przypadku używania [zapisywania](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) w pakiecie Office 2016 dla plików, które są zapisywane w usłudze SharePoint Online, OneDrive lub OneDrive dla firm: podczas zapisywania jest włączona, oznaczenia wizualne nie są stosowane, jeśli nie skonfigurujesz [ Zaawansowane ustawienia klienta](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) włączyć klasyfikacji, aby uruchomić w sposób ciągły w tle. 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>Aby skonfigurować oznaczenia wizualne dla etykiety
 
 Użyj poniższych instrukcji, aby skonfigurować oznaczenia wizualne dla etykiety.
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę, którą zawiera element wizualny oznaczenia, które chcesz dodać lub zmienić.
+2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę, który zawiera element wizualny oznaczenia, które chcesz dodać lub zmienić.
 
-3. W bloku **Etykieta** w sekcji **Ustaw oznaczenie wizualne (np. nagłówek lub stopkę)** skonfiguruj ustawienia dla żądanych oznaczeń wizualnych, a następnie kliknij przycisk **Zapisz**:
+3. Na **etykiety** bloku, w **Ustaw oznaczenie wizualne (np. nagłówka lub stopki)** konfigurowania ustawień pod kątem oznaczeń wizualnych, które, a następnie kliknij pozycję **Zapisz**:
     
-    - Aby skonfigurować nagłówek: dla opcji **Dokumenty oznaczone tą etykietą mają nagłówek** wybierz wartość **Wł.**, jeśli chcesz użyć nagłówka, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ nagłówek tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie nagłówka.
+    - Aby skonfigurować nagłówek: dla opcji **Dokumenty oznaczone tą etykietą mają nagłówek** wybierz wartość **Wł.**, jeśli chcesz użyć nagłówka, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz **na**, następnie określ nagłówek tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie nagłówka.
     
-    - Aby skonfigurować stopkę: dla opcji **Dokumenty oznaczone tą etykietą mają stopkę** wybierz wartość **Wł.**, jeśli chcesz użyć stopki, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ stopki tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie stopki.
+    - Aby skonfigurować stopkę: dla opcji **Dokumenty oznaczone tą etykietą mają stopkę** wybierz wartość **Wł.**, jeśli chcesz użyć stopki, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz **na**, następnie określ stopki tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie stopki.
     
-    - Aby skonfigurować znak wodny: dla opcji **Dokumenty oznaczone tą etykietą mają znak wodny** wybierz wartość **Wł.**, jeśli chcesz użyć znaku wodnego, lub **Wył.**, jeśli nie chcesz. W przypadku wybrania **na**, następnie określ znak wodny tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie znaku wodnego.
+    - Aby skonfigurować znak wodny: dla opcji **Dokumenty oznaczone tą etykietą mają znak wodny** wybierz wartość **Wł.**, jeśli chcesz użyć znaku wodnego, lub **Wył.**, jeśli nie chcesz. Jeśli wybierzesz **na**, następnie określ znak wodny tekst, rozmiar, [czcionki](#setting-the-font-name), [kolor](#setting-the-font-color)i wyrównanie znaku wodnego.
     
-Po kliknięciu **zapisać**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma oddzielne Publikuj.
+Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
 
 ## <a name="using-variables-in-the-text-string"></a>Używanie zmiennych w ciągu tekstowym
@@ -89,15 +92,15 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
 
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety **Ogólne** tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Classification: Ogólne**.
 
-## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawienie różnych oznaczenia wizualne dla programu Word, Excel, PowerPoint i Outlook
+## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawienie różnych pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook
 
-Domyślnie oznaczeń wizualnych, które określisz są stosowane przez program Word, Excel, PowerPoint i Outlook. Jednak można określić oznaczenia wizualne dla typu aplikacji pakietu Office przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym, a Określ typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić te wartości i abbreiwhich jest niezbędne, jeśli chcesz określić więcej niż jedną w tej samej instrukcji If.App.
+Domyślnie oznaczenia wizualne, które określisz są stosowane dla programu Word, Excel, PowerPoint i Outlook. Jednak podczas możesz określić oznaczeń wizualnych dla typu aplikacji pakietu Office można użyć zmiennej instrukcji "If.App" w ciągu tekstowym i zidentyfikować typ aplikacji przy użyciu wartości **Word**, **Excel**, **PowerPoint**, lub **Outlook**. Można również skrócić te wartości, a abbreiwhich jest konieczne, jeśli chcesz określić więcej niż jeden w tej samej instrukcji If.App.
 
 Należy użyć następującej składni:
 
     ${If.App.<application type>}<your visual markings text> ${If.End}
 
-Ta składnia w tej instrukcji jest rozróżniana wielkość liter.
+Ta składnia w tej instrukcji jest uwzględniana wielkość liter.
 
 Przykłady:
 
@@ -105,31 +108,31 @@ Przykłady:
     
     `${If.App.Word}This Word document is sensitive ${If.End}`
     
-    W Word tylko nagłówki dokumentu etykiety stosuje tekst nagłówka "poufne jest ten dokument programu Word". Tekst nagłówka nie jest stosowany do innych aplikacjach pakietu Office.
+    Word tylko nagłówki dokumentu stosuje się etykietę tekst nagłówka "ten dokument programu Word to poufne". Brak tekstu nagłówka jest stosowany do innych aplikacjach pakietu Office.
 
-- **Ustawić tekst stopki dla programów Word, Excel i Outlook, a tekst stopki różnych dla programu PowerPoint.**
+- **Ustaw tekst stopki dla programu Word, Excel i Outlook i tekst stopki różnych dla programu PowerPoint:**
     
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
     
-    W programach Word, Excel i Outlook etykiety stosuje się tekst stopki "tej zawartości jest poufne". W programie PowerPoint etykiety stosuje się tekst stopki "poufne jest tej prezentacji."
+    W programach Word, Excel i Outlook stosuje się etykietę tekst stopki "tej zawartości jest poufne." W programie PowerPoint stosuje się etykietę tekst stopki "w tej prezentacji są poufne."
 
-- **Ustawianie tekstu znaku wodnego określonych dla programów Word i PowerPoint, a następnie znaku wodnego tekstu dla programu Word, Excel i PowerPoint:**
+- **Ustawianie tekstu znaku wodnego określonych dla programów Word i PowerPoint, a następnie limitu tekstu dla programu Word, Excel i PowerPoint:**
     
     `${If.App.WP}This content is ${If.End}Confidential`
     
-    W programach Word i PointPoint etykiety stosuje tekstu znaku wodnego "tej zawartości jest poufne". W programie Excel etykiety stosuje tekstu znaku wodnego "Poufne". W programie Outlook etykiety nie tekstu znaku wodnego, znaki wodne jako oznaczenia wizualne nie są obsługiwane dla programu Outlook.
+    W programach Word i PointPoint stosuje się etykietę tekstu znaku wodnego "tej zawartości jest poufne". W programie Excel etykieta dotyczy tekstu znaku wodnego "Poufne". W programie Outlook etykieta nie dowolnego tekstu znaku wodnego, znaki wodne, jak oznaczenia wizualne nie są obsługiwane dla programu Outlook.
 
-### <a name="setting-the-font-name"></a>Ustawienie nazwy czcionki
+### <a name="setting-the-font-name"></a>Ustawianie nazwy czcionki
 
-Calibri jest domyślną czcionkę dla nagłówków, stopek i tekstu znaku wodnego. Jeśli określono nazwę alternatywną czcionki, upewnij się, że jest ona dostępna na urządzenia klienckie, które będą stosowane żądanych oznaczeń. 
+Calibri jest domyślna czcionka nagłówki, stopki i tekstu znaku wodnego. Jeśli określisz nazwę czcionki alternatywnego, upewnij się, że jest ona dostępna na urządzeniach klienckich, które będą stosowane oznaczeń wizualnych. 
 
-Jeśli nie ma określonej czcionki, klient powraca przy użyciu czcionki Calibri.
+Jeśli czcionki określony jest niedostępny, klient powraca do używana czcionka Calibri.
 
 ### <a name="setting-the-font-color"></a>Ustawianie koloru czcionki
 
-Można wybrać z listy dostępnych kolorów lub określić niestandardowego koloru przez wprowadzenie kodu szesnastkowych Trzykolumnowa składników (RGB) czerwony, zielonemu i niebieskiemu koloru. Przykład: **#DAA520**. 
+Można wybrać z listy dostępnych kolorów lub określić kolor niestandardowy, wprowadzając szesnastkowy tryplet dla składników czerwonego, zielonego i niebieskiego (RGB) koloru. Przykład: **#DAA520**. 
 
-Jeśli potrzebujesz odwołania te kodów [kolory według nazwy](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) w sieci MSDN dokumentacji stanowi punkt wyjścia przydatne. Możesz również znaleźć kody w wielu aplikacjach, które umożliwiają edytowanie obrazów. Na przykład Microsoft Paint pozwala wybrać paletę kolorów niestandardowych i wartości RGB są automatycznie wyświetlane, które można następnie skopiować.
+Jeśli potrzebujesz odwołanie o tych kodach [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) z MSDN dokumentacja jest dobry punkt wyjścia. Możesz również znaleźć te kody w wielu aplikacjach, które pozwalają edytować obrazów. Na przykład Microsoft Paint pozwala wybrać niestandardowy kolor z palety i wartości RGB są automatycznie wyświetlane, które można skopiować.
 
 ## <a name="next-steps"></a>Następne kroki
 
