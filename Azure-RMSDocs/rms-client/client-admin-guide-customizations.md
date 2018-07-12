@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c078536a3f8501b52c8980b4d71f9138971a8e05
-ms.sourcegitcommit: b1e739bd911579ab9af09654b5517c4d0a23f482
+ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36271457"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973498"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -218,19 +218,19 @@ Po skonfigurowaniu tego ustawienia, zmienia [domyślne zachowanie](../deploy-use
     
     Można użyć zalecana klasyfikacja dokumentów, które zostały wcześniej oznaczone, z lub bez wyższej klasyfikacji. 
 
-Na przykład jeśli Twoja etykietę podrzędną ma identyfikator GUID 27efdf94-80a0 - 4d-02-b88c-b615c12d69a9, wartość może wyglądać następująco: Przed testowaniem tej konfiguracji należy pamiętać, że często występuje opóźnienie podczas tworzenia lub edytowania reguły przepływu poczty (na przykład godzinne). 
+Gdy klient usługi Azure Information Protection okresowo sprawdza, czy dokumenty dla reguł warunku, które można określić, to zachowanie umożliwia automatycznej i zalecanej klasyfikacji i ochrony dokumentów, które są przechowywane w usłudze SharePoint Online. Duże pliki również zapisać więcej szybkie ponieważ reguły warunek został już uruchomiony. 
 
-Gdy reguła jest aktywna, następujące zdarzenia teraz się zdarzyć, gdy użytkownicy używają aplikacji Outlook Web Access lub klienta urządzenia przenośnego, który obsługuje protokół Exchange ActiveSync IRM: Jeśli mają zainstalowanego klienta usługi Azure Information Protection adresatów wewnętrznych wyświetlają wiadomość e-mail w programie Outlook, widzą przypisane etykiety usługi Azure Information Protection.
+Warunek reguły nie należy uruchamiać jako typy użytkownika w czasie rzeczywistym. Zamiast tego zadania uruchamiane okresowo jako zadanie w tle w przypadku modyfikowania dokumentu.
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
-- Jeśli etykiety usługi Azure Information Protection zastosowania ochrony, Dodaj tę ochronę do konfiguracji reguły: wybierając opcję modyfikacji zabezpieczeń wiadomości, Zastosuj ochronę praw, a następnie wybierz szablon usług RMS lub opcję nie przesyłaj dalej.**
+- Klucz: **RunPolicyInBackground**
 
 - Wartość: **Prawda**
 
-## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Można również skonfigurować reguły przepływu poczty na potrzeby mapowania odwrotnego.
+## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 
-Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli msip_labels nagłówek zawiera nazwę Twojej etykiety (na przykład ogólne) i stosować wiadomości Klasyfikacja, który jest mapowany do tej etykiety.
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 

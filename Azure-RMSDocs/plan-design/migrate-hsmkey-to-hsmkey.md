@@ -4,7 +4,7 @@ description: Instrukcje będące częścią ścieżki migracji z usługi AD RMS 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c8ed0fd3e8daa2c03f179cf71c0c258b8ef79901
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 757b3af36fb15c3069c5bef7ca4509ff92cee1f9
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207917"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973328"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
->*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 Te instrukcje są częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
@@ -48,9 +48,9 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
 1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault), z następującym wyjątkiem:
 
-    - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zazwyczaj są nazywane zaszyfrowane pliki klucza firmy Thales **klucza <*keyAppName*><*keyIdentifier* >**  lokalnie na serwerze.
+    - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zazwyczaj noszą zaszyfrowane pliki klucza firmy Thales **klucz <*Nazwa_aplikacji_klucza*><*keyIdentifier* >**  lokalnie na serwerze.
 
-    Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Będzie wyglądała podobnie do https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection potrzebuje go, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
+    Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Będzie wyglądać podobnie do https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection potrzebuje go, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
 
 2. Na stacji roboczej podłączonej do Internetu, w sesji programu PowerShell, użyj polecenia cmdlet [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy), aby autoryzować nazwę główną usługi Azure Rights Management do dostępu do magazynu kluczy, w którym przechowywany będzie klucz dzierżawy usługi Azure Information Protection. Wymagane uprawnienia to: decrypt, encrypt, unwrapkey, wrapkey, verify i sign.
     

@@ -4,7 +4,7 @@ description: Faza 1 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ea4c121d8945aabb4bb5a13a043a100e32e5924a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 683609cd2da2d13e11f92599813753a2a4747bd2
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206727"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973375"
 ---
 # <a name="migration-phase-1---preparation"></a>Faza 1 migracji — przygotowanie
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 1 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 1 do 3 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i przygotowują środowisko do migracji, nie wpływając na użytkowników.
 
 
-## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>Krok 1: Instalowanie modułu programu AADRM PowerShell i zidentyfikować adres URL dzierżawy
+## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>Krok 1: Instalowanie modułu AADRM programu PowerShell i identyfikowanie adresu URL dzierżawy
 
-Zainstaluj moduł AADRM, dzięki czemu można konfigurować i zarządzać usługą, która zapewnia ochronę danych usługi Azure Information Protection.
+Zainstaluj w module AADRM, tak że można skonfigurować i zarządzać usługą, która zapewnia ochronę danych usługi Azure Information Protection.
 
-Aby uzyskać instrukcje, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
+Aby uzyskać instrukcje, zobacz [Instalowanie modułu AADRM programu PowerShell](../deploy-use/install-powershell.md).
 
 > [!NOTE]
 > Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version`
@@ -51,9 +51,9 @@ Na przykład: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
     
 3. Skopiuj wartość wyświetlaną dla elementu **LicensingIntranetDistributionPointUrl** i usuń z tego ciągu fragment `/_wmcs\licensing`. 
     
-    Pozostaje co to jest adres URL usługi Azure Rights Management dla swojej dzierżawy usługi Azure Information Protection. Ta wartość jest skrócie *adres URL dzierżawy* w poniższych instrukcjach migracji.
+    Co jeszcze pozostało jest adres URL usługi Azure Rights Management dla dzierżawy usługi Azure Information Protection. Ta wartość jest często obcinana do *adresu URL dzierżawy* w poniższych instrukcjach migracji.
     
-    Aby sprawdzić, mieć prawidłową wartość, uruchamiając następujące polecenie programu PowerShell:
+    Możesz sprawdzić, czy masz prawidłową wartość, uruchamiając następujące polecenie programu PowerShell:
     
             (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
@@ -77,7 +77,7 @@ W przypadku większości migracji niepraktyczne jest migrowanie wszystkich klien
     
     **Migration-Scripts.zip**
     
-4. Wyodrębnij pliki i postępuj zgodnie z instrukcjami **Prepare Client.cmd** tak, aby zawierał nazwę serwera dla programu AD RMS klastra ekstranetu adres URL licencjonowania. 
+4. Wyodrębnij pliki i postępuj zgodnie z instrukcjami w **Client.cmd przygotowanie** tak, aby zawierał nazwę serwera dla usługi AD RMS klastra ekstranetowego adresu URL licencjonowania. 
     
     Aby zlokalizować tę nazwę, w konsoli usług Active Directory Rights Management kliknij nazwę klastra. Z informacji **Szczegóły klastra** skopiuj nazwę serwera z wartości **Licencjonowanie** w sekcji ekstranetowych adresów URL klastra. Na przykład: **rmscluster.contoso.com**.
 

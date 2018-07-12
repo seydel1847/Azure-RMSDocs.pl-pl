@@ -4,7 +4,7 @@ description: Faza 2 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/02/2017
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9871c5890be8b5aa019d9788ecdfe929cfab0eb9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 033504a26ae04bae3e4f1179503855bcfce63d73
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208468"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973406"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 2 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 4 do 6 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -76,7 +76,7 @@ W bieżącym wdrożeniu usług AD RMS jest używana jedna z następujących konf
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz temat [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń).
 
-Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Jeśli zarządzasz własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako "Użyj własnego klucza" (BYOK). Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
+Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Jeśli zarządzasz własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako "bring your own key" (BYOK). Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
 Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. 
 
@@ -113,13 +113,13 @@ Otwórz sesję programu PowerShell i uruchom następujące polecenia:
     
         Enable-Aadrm
 
-**Co zrobić, jeśli dzierżawa usługi Azure Information Protection została już aktywowana?** Jeśli usługa Azure Rights Management została już aktywowana dla Twojej organizacji i utworzono szablony niestandardowe, które mają zostać użyte po migracji, należy wyeksportować i zaimportować te szablony. Ta procedura została opisana w następnym kroku. 
+**Co zrobić, jeśli dzierżawa usługi Azure Information Protection została już aktywowana?** Jeśli usługa Azure Rights Management została już aktywowana dla Twojej organizacji, a następnie utworzono szablony niestandardowe, które mają zostać użyte po migracji, należy wyeksportować i zaimportować te szablony. Ta procedura została opisana w następnym kroku. 
 
 ## <a name="step-6-configure-imported-templates"></a>Krok 6. Konfigurowanie importowanych szablonów
 
 Ze względu na to, że zaimportowane szablony mają domyślny stan **Zarchiwizowano**, należy zmienić ten stan na **Opublikowano**, aby użytkownicy mogli używać tych szablonów w usłudze Azure Rights Management.
 
-Szablony, które można importować z usług AD RMS wyglądają i działają tak samo jak niestandardowe szablony tworzone w portalu Azure. Aby zmienić stan importowanych szablonów na opublikowano, aby użytkownicy mogli je widzieć i wybierać w aplikacjach, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Szablony, które można importować z usług AD RMS, wyglądają i działają tak samo jak niestandardowe szablony tworzone w witrynie Azure portal. Aby zmienić stan importowanych szablonów na opublikowano, aby użytkownicy mogli je widzieć i wybierać w aplikacjach, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 Oprócz publikowania nowo zaimportowanych szablonów wprowadzono tylko dwie ważne zmiany dotyczące szablonów, który wykonanie może być konieczne przed kontynuacją migracji. Aby udostępnić użytkownikom spójniejsze środowisko pracy podczas migracji, nie należy wprowadzać dodatkowych zmian w importowanych szablonach. Nie należy również publikować dwóch domyślnych szablonów dostarczanych z usługą Azure Information Protection ani tworzyć w tym czasie nowych szablonów. Zamiast tego należy zaczekać na zakończenie procesu migracji i anulowanie obsługi serwerów usług AD RMS.
 
@@ -127,9 +127,9 @@ Zmiany szablonu, których wprowadzenie może być konieczne w ramach tego kroku:
 
 - Jeśli przed migracją utworzono szablony niestandardowe usługi Azure Information Protection, należy je ręcznie wyeksportować i zaimportować.
 
-- W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, może być konieczne dodawanie użytkowników lub grup z spoza Twojej organizacji. 
+- W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, czasami trzeba dodać użytkowników lub grupy spoza organizacji. 
     
-    W usługach AD RMS grupy Każdy przyznano prawa wszystkim uwierzytelnionym użytkownikom. Ta grupa jest automatycznie konwertowany do wszystkich użytkowników w dzierżawie usługi Azure AD. Jeśli jest konieczne przyznanie praw do żadnych dodatkowych użytkowników, nie dalsze akcje nie jest wymagane. Ale jeśli były używane grupę każdy, aby dołączyć użytkowników zewnętrznych, musisz ręcznie dodać tych użytkowników i praw, które chcesz przyznać im.
+    W usługach AD RMS grupy Każdy przyznane prawa wszystkim użytkownikom uwierzytelnionym. Ta grupa jest automatycznie konwertowany do wszystkich użytkowników w dzierżawie usługi Azure AD. Jeśli jest konieczne przyznanie praw do żadnych dodatkowych użytkowników, jest konieczne żadne dalsze działania. Ale jeśli grupy Każdy była używana, aby uwzględnić użytkowników zewnętrznych, należy ręcznie dodać tych użytkowników i uprawnień, które chcesz przyznać im.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedura w przypadku utworzenia szablonów niestandardowych przed migracją
 
@@ -145,15 +145,15 @@ Następnie można opublikować lub zarchiwizować te szablony w taki sam sposób
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
 
-W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, ta grupa jest automatycznie konwertowany do używania grupy o nazwie **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy >. onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Ta grupa zawiera wszystkich użytkowników z dzierżawy usługi Azure AD.
+W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, ta grupa jest automatycznie konwertowany na potrzeby używania grupy o nazwie **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy >. onmicrosoft.com** . Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Ta grupa zawiera wszystkich użytkowników w dzierżawie usługi Azure AD.
 
-Podczas zarządzania szablonów i etykiet w portalu Azure, ta grupa przedstawia jako nazwy domeny Twojej dzierżawy w usłudze Azure AD. Na przykład tej grupy może wyglądać podobnie do następującej firmy Contoso: **contoso.onmicrosoft.com**. Aby dodać tę grupę, opcja wyświetla **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**.
+Jeśli zarządzasz, szablonów i etykiety w witrynie Azure portal, ta grupa wyświetla się jako nazwa domeny dzierżawy usługi w usłudze Azure AD. Na przykład ta grupa może wyglądać podobnie do poniższego firmy Contoso: **contoso.onmicrosoft.com**. Aby dodać tę grupę, wyświetla opcja **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**.
 
 Jeśli nie masz pewności, czy szablony usługi AD RMS obejmują grupę KAŻDY, możesz użyć następującego przykładowego skryptu programu Windows PowerShell, aby zidentyfikować te szablony. Aby uzyskać więcej informacji o używaniu programu Windows PowerShell z usługami AD RMS, zobacz [przy użyciu programu Windows PowerShell do administrowania usługami AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx).
 
-Można łatwo dodać użytkowników zewnętrznych do szablonów, konwertowania tych szablonów do etykiet w portalu Azure. Następnie na **dodać uprawnienia** bloku, wybierz **wprowadź szczegóły** ręcznie określić adresy e-mail dla tych użytkowników. 
+Można łatwo dodać użytkowników zewnętrznych do szablonów podczas konwertowania tych szablonów do etykiet w witrynie Azure portal. Następnie na **Dodaj uprawnienia** bloku wybierz **wprowadź szczegóły** ręcznie określić adresy e-mail dla tych użytkowników. 
 
-Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [jak konfigurowanie etykiety pod kątem ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md).
+Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [sposobu konfigurowania etykiety dla ochrony usługi Rights Management](../deploy-use/configure-policy-protection.md).
 
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
 Ta sekcja zawiera przykładowy skrypt, aby pomóc w zidentyfikowaniu żadnych szablonów usług AD RMS, które mają zdefiniowaną grupą każdy, zgodnie z opisem w poprzedniej sekcji.

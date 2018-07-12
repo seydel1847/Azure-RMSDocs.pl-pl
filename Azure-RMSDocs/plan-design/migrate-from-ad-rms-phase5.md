@@ -4,7 +4,7 @@ description: Faza 5 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 11/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,23 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 227a7f1f0ac08ed67648f97a78a5ff89e9b4a586
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0330b8a18c52d76ba3aa926e66085b1f33f4dd0f
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207516"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973481"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Skorzystaj z poniższych informacji dotyczących fazy 5 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 10 do 12 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-## <a name="step-10-deprovision-ad-rms"></a>Krok 10. Anulowanie zastrzeżenia usług AD RMS
+## <a name="step-10-deprovision-ad-rms"></a>Krok 10. Anulowanie aprowizacji usługi AD RMS
 
-Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu SCP uniemożliwia nowych klientów i usług potencjalnie powiązanych usług RMS i narzędzi znajdowania punktu połączenia usługi, po zakończeniu migracji. W tym momencie wszystkie połączenia komputera należy przejdź do usługi Azure Rights Management. 
+Należy usunąć punkt połączenia usługi (SCP) z usługi Active Directory, aby uniemożliwić komputerom odnajdywanie infrastruktury lokalnej usługi Rights Management. Ten krok jest opcjonalny w przypadku migrowanych istniejących klientów z powodu przekierowania skonfigurowanego w rejestrze (np. przez uruchomienie skryptu migracji). Jednak usunięcie punktu połączenia usługi uniemożliwia nowym klientom i potencjalnie RMS związane z usług i narzędzi wyszukiwanie punktu połączenia usługi, po zakończeniu migracji. W tym momencie wszystkie połączenia komputerze przejdź do usługi Azure Rights Management. 
 
 Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administrator domeny przedsiębiorstwa, a następnie użyć poniższej procedury:
 
@@ -40,22 +40,22 @@ Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administra
 
 4. Wybierz pozycję **Usuń bieżący punkt połączenia usługi**, a następnie kliknij przycisk **OK**.
 
-Teraz można monitorować serwery usług AD RMS dla działania. Na przykład sprawdzić [żądań w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę żądań obsługi](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
+Teraz można monitorować serwery AD RMS dla działania. Na przykład sprawdzić [żądania w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [Przeprowadź inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
 
-Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. Jeśli używasz dedykowanych serwerów można wybrać krok zapobiegawczy polegający na pierwszym zamykanie serwerów w danym okresie czasu. Dzięki temu czas, aby upewnić się, że nie ma żadnych problemów zgłoszonych, które mogą wymagać ponownego uruchomienia tych serwerów, aby utrzymać ciągłość usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
+Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. Jeśli używasz dedykowanych serwerów, możesz preferować krok zapobiegawczy polegający na pierwszym zamykanie serwerów w okresie czasu. Dzięki temu czas, aby upewnić się, że ma nie zostaną zgłoszone problemy, które mogą wymagać ponownego uruchomienia tych serwerów, aby utrzymać ciągłość usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
 
-Po ma anulowana serwerów usług AD RMS, możesz skorzystać z możliwości przejrzenia szablonów w portalu Azure. Na przykład przekonwertować je na etykiet, ich skonsolidowanie, tak aby użytkownicy będą mieć mniej wybranie lub skonfigurować je ponownie. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
+Po anulowaniu obsługi serwerów usługi AD RMS, możesz chcieć skorzystać z możliwości przejrzenia szablonów w witrynie Azure portal. Na przykład przekonwertować je na etykiety, ich skonsolidowanie, dzięki czemu użytkownicy będą mieć mniej dokonać wyboru między lub skonfigurować je ponownie. Będzie to również odpowiedni moment, aby opublikować szablony domyślne. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](../deploy-use/configure-policy-templates.md).
 
 >[!IMPORTANT]
 > Po zakończeniu tej migracji klaster usługi AD RMS nie może być używany z usługą Azure Information Protection ani z opcją „hold your own key” (HYOK). Jeśli zdecydujesz się używać rozwiązania HYOK dla etykiety usługi Azure Information Protection, to z powodu przekierowań, które są teraz stosowane, używany klaster usługi AD RMS musi mieć różne adresy URL licencjonowania do tych w klastrach, które zostały poddane migracji.
 
 ## <a name="step-11-complete-client-migration-tasks"></a>Krok 11. Zadania migracji klienta ukończone
 
-Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV usługi DNS, które zostały utworzone podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
+Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV systemu DNS, które zostały utworzone, podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
 
-Jeśli te zmiany DNS propogated, Ci klienci automatycznie odnajdzie i zacząć korzystać z usługi Azure Rights Management. Jednakże komputerach Mac z systemem Office Mac buforowanie tych informacji z usług AD RMS. Dla tych komputerów ten proces może potrwać do 30 dni. 
+Gdy propogated tych zmian systemu DNS, Ci klienci automatycznie odnajdywać i rozpocząć korzystanie z usługi Azure Rights Management. Jednak komputery Mac, systemem Office Mac buforowanie tych informacji z usług AD RMS. Dla tych komputerów ten proces może potrwać do 30 dni. 
 
-Aby wymusić komputerów Mac, aby natychmiast uruchomić proces wykrywania w narzędziu keychain, wyszukaj "adal" i Usuń wszystkie wpisy ADAL. Następnie uruchom następujące polecenia na tych komputerach:
+Aby wymusić komputerom Mac na natychmiast uruchom proces wykrywania w narzędziu keychain, wyszukaj "adal" i Usuń wszystkie wpisy biblioteki ADAL. Następnie uruchom następujące polecenia na tych komputerach:
 
 ````
 
@@ -75,9 +75,9 @@ killall cfprefsd
 
 ````
 
-Gdy wszystkie istniejące komputery Windows poddano migracji do usługi Azure Information Protection, to nie ma powodu w dalszym ciągu używać kontrolki dołączania i obsługa **AIPMigrated** grupę utworzoną podczas procesu migracji. 
+Gdy wszystkie istniejące komputery Windows zostały przeniesione do usługi Azure Information Protection, nie ma powodu w dalszym ciągu korzystać z kontrolek dołączania i obsługiwać **AIPMigrated** grupy utworzone w ramach procesu migracji. 
 
-Najpierw usuń kontrolki dołączania, a następnie usunąć **AIPMigrated** grupy i dowolnej metody wdrażania oprogramowania, utworzony skryptów migracji.
+Najpierw usunąć kontrolki dołączania, a następnie usunąć **AIPMigrated** grupę i wszystkie metody wdrażania oprogramowania utworzone w celu wdrożenia skryptów migracji.
 
 Aby usunąć kontrolki dołączania:
 
@@ -89,7 +89,7 @@ Aby usunąć kontrolki dołączania:
 
         Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
     
-    Należy pamiętać, że to polecenie usuwa wszystkie wymuszania licencji dla usługi Azure Rights Management ochrony tak, aby wszystkie komputery można chronić dokumenty i wiadomości e-mail.
+    Należy pamiętać, że to polecenie usuwa wszystkie wymuszanie licencji dla usługi ochrony usługi Azure Rights Management, aby wszystkie komputery można chronić dokumenty i wiadomości e-mail.
 
 3. Potwierdź, że kontrolki dołączania nie są już ustawione:
 
@@ -97,25 +97,25 @@ Aby usunąć kontrolki dołączania:
 
     W danych wyjściowych element **License** powinien wyświetlać **False** i nie powinien być wyświetlany żaden identyfikator GUID dla elementu **SecurityGroupOjbectId**.
 
-Ponadto jeśli używasz pakietu Office 2010 i włączono **Zarządzanie szablonu zasadami prawa AD RMS (Automatyczna)** zadanie w bibliotece harmonogramu zadań systemu Windows, wyłączyć tego zadania, ponieważ nie jest on używany przez informacji Azure Klient ochrony. To zadanie są zazwyczaj włączane za pomocą zasad grupy i obsługuje wdrożenia usług AD RMS. To zadanie można znaleźć w następującej lokalizacji: **Microsoft** > **Windows** > **Active Directory Rights Management Services Client**
+Ponadto jeśli używasz pakietu Office 2010 i mieć włączone **zarządzania szablonem zasad praw AD RMS (automatyczne)** zadań w bibliotece harmonogramu zadań Windows, wyłącz to zadanie, ponieważ nie jest używany przez usługi Azure Information Klient ochrony. To zadanie jest zazwyczaj włączane przy użyciu zasad grupy i obsługuje wdrożenia usług AD RMS. To zadanie można znaleźć w następującej lokalizacji: **Microsoft** > **Windows** > **Active Directory Rights Management Services Client**
 
-## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection
+## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>Krok 12. Wymień klucz dzierżawy usługi Azure Information Protection
 
-Ten krok jest zalecane, gdy migracja zostanie zakończona, jeśli wdrożenie usług AD RMS używano RMS trybu kryptograficznego 1. Generowanie wyników w przypadku ochrony, która używa usługi RMS trybu kryptograficznego 2. 
+Ten krok jest zalecany, gdy migracja zostanie zakończona, jeśli we wdrożeniu usług AD RMS używano usługi RMS trybu kryptograficznego 1. Wymiana klucza powoduje ochrony, który używa usługi RMS trybu kryptograficznego 2. 
 
-Nawet jeśli wdrożenia usług AD RMS używano trybu kryptograficznego 2, nadal zalecamy wykonać ten krok, ponieważ ułatwia klucza do ochrony dzierżawy przed potencjalnymi naruszeniami bezpieczeństwa klucza usług AD RMS.
+Nawet jeśli we wdrożeniu usług AD RMS używano trybu kryptograficznego 2, nadal zalecane wykonaj ten krok, ponieważ nowy klucz pomaga chronić dzierżawy przed potencjalnymi naruszeniami zabezpieczeń klucza usługi AD RMS.
 
-Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection (znanej także jako "Uaktualnianie klucza"), zostaną zarchiwizowane aktualnie aktywnego klucza, a usługi Azure Information Protection, który rozpoczyna się do użycia innego klucza, który określisz. To inny klucz może być nowego klucza, które są tworzone w usłudze Azure Key Vault lub domyślny klucz, który został utworzony automatycznie dla dzierżawy.
+Po wymianie klucza dzierżawy usługi Azure Information Protection (znany także jako "Uaktualnianie klucza") aktualnie aktywnego klucza zostaje zarchiwizowany i usługi Azure Information Protection zaczyna używać innego klucza, który określisz. Ten inny klucz może być nowy klucz, który zostanie utworzony w usłudze Azure Key Vault lub domyślnego klucza, który został utworzony automatycznie dla dzierżawy.
 
-Przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim nie poczekaj, aż podejrzewasz naruszenia do oryginalnego klucza, ale tego kroku zaraz po zakończeniu migracji.
+Przenoszenie z jednego klucza do innego nie jest realizowane natychmiast, ale trwa kilka tygodni. Ponieważ nie jest bezpośrednim nie poczekaj, aż podejrzewasz naruszenia bezpieczeństwa oryginalnego klucza, ale nie w tym kroku zaraz po zakończeniu migracji.
 
 Aby wymienić klucz dzierżawy usługi Azure Information Protection:
 
-- **Jeśli klucz dzierżawy jest zarządzany przez firmę Microsoft**: Uruchom polecenie cmdlet programu PowerShell [AadrmKeyProperties zestaw](/powershell/module/aadrm/set-aadrmkeyproperties) i podaj identyfikator klucza dla klucza, który został utworzony automatycznie dla dzierżawy. Można określić wartość, aby określić, uruchamiając [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) polecenia cmdlet. Klucza, który został utworzony automatycznie dla dzierżawy ma najstarsze Data utworzenia, dlatego można ją zidentyfikować za pomocą następującego polecenia:
+- **Jeśli klucz dzierżawy jest zarządzany przez firmę Microsoft**: Uruchom polecenie cmdlet programu PowerShell [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) i określić identyfikatora klucza dla klucza, który został utworzony automatycznie dla dzierżawy. Można zidentyfikować wartość do określenia, uruchamiając [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) polecenia cmdlet. Klucz, który został utworzony automatycznie dla dzierżawy usługi ma najstarsze Data utworzenia, dzięki czemu można ją zidentyfikować za pomocą następującego polecenia:
     
         (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- **Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK)**: W usłudze Azure Key Vault, powtórz proces tworzenia klucza dzierżawy usługi Azure Information Protection, a następnie uruchom [AadrmKeyVaultKey użyj](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) polecenia cmdlet ponownie, aby określić identyfikator URI Ten nowy klucz. 
+- **Jeśli klucz dzierżawy jest zarządzany przez użytkownika (BYOK)**: W usłudze Azure Key Vault, powtórz proces tworzenia klucza dzierżawy usługi Azure Information Protection, a następnie uruchom [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) polecenie cmdlet ponownie, aby określić identyfikator URI Ten nowy klucz. 
 
 Aby uzyskać więcej informacji na temat zarządzania kluczem dzierżawy usługi Azure Information Protection, zobacz [operacje związane z kluczem dzierżawy usługi Azure Information Protection](../deploy-use/operations-tenant-key.md).
 

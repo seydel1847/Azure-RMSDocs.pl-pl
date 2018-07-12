@@ -4,7 +4,7 @@ description: Instrukcje dotyczące migracji wdrożenia usług Active Directory R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c99a7a361ad1f22ab0fa819644e7f79fec6c9227
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 740a97298d27f5abb2cda8e0b6f3ce931c1a6d91
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208383"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973464"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Poniższy zestaw instrukcji dotyczy migracji wdrożenia usług Active Directory Rights Management (AD RMS) do usługi Azure Information Protection. 
 
@@ -103,13 +103,13 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 ### <a name="cryptographic-mode-considerations"></a>Zagadnienia dotyczące trybu kryptograficznego
 
-Jeśli klaster AD RMS jest obecnie trybu kryptograficznego 1, uaktualnienia klastra do trybu kryptograficznego 2 przed rozpoczęciem migracji. Zamiast tego przeprowadzić migrację za pomocą trybu kryptograficznego 1 i można ponowne tworzenie klucza z kluczem dzierżawy, po zakończeniu migracji, jako jednego z zadań po migracji.
+Jeśli klaster AD RMS jest obecnie w trybie kryptograficznym 1, nie uaktualniaj klastra do trybu kryptograficznego 2 przed rozpoczęciem migracji. Zamiast tego należy przeprowadzić migrację za pomocą trybu kryptograficznego 1, i możesz wymienić klucz dzierżawy, po zakończeniu migracji, jako jedno z zadań po migracji.
 
 Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
  
 - W przypadku systemów Windows Server 2012 R2 oraz Windows 2012: właściwości klastra AD RMS > karta **Ogólne**. 
 
-- Dla systemu Windows Server 2008 R2: Sprawdź, czy [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows Server 2008 R2 i Windows Server 2008](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) poprawka jest zainstalowana. Jeśli nie, klaster AD RMS działa w trybu kryptograficznego 1.
+- Dla systemu Windows Server 2008 R2: Sprawdź, czy [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows Server 2008 R2 i Windows Server 2008](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) zainstalowano poprawkę. Jeśli nie jest dostępne, klaster AD RMS działa w trybie kryptograficznym 1.
 
 ### <a name="migration-limitations"></a>Ograniczenia migracji
 
@@ -141,17 +141,17 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 [**FAZA 1: PRZYGOTOWANIE MIGRACJI**](migrate-from-ad-rms-phase1.md)
 
-- **Krok 1: Instalowanie modułu programu AADRM PowerShell i zidentyfikować adres URL dzierżawy**
+- **Krok 1: Instalowanie modułu AADRM programu PowerShell i identyfikowanie adresu URL dzierżawy**
 
-    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell w AADRM module. Musisz znać adres URL usługi Azure Rights Management Twojej dzierżawy do wykonania wielu kroków migracji, a można tę wartość tożsamości za pomocą programu PowerShell.
+    Proces migracji wymaga uruchomienia co najmniej jednego z poleceń cmdlet programu PowerShell w module AADRM. Musisz znać adres URL usługi Azure Rights Management swojej dzierżawy do wykonania wielu kroków migracji, a tożsamość wartość tę możesz przy użyciu programu PowerShell.
 
 - **Krok 2. Przygotowanie do migracji klientów**
 
-    Jeśli nie można przeprowadzić migracji wszystkich klientów równocześnie i będą oni migrowani w partiach, należy użyć kontrolek dołączania i wdrożyć skrypt przed migracją. Jednak jeśli będzie migracji wszystko, co w tym samym czasie zamiast czy migracji stopniowej, możesz pominąć ten krok.
+    Jeśli nie można przeprowadzić migracji wszystkich klientów równocześnie i będą oni migrowani w partiach, należy użyć kontrolek dołączania i wdrożyć skrypt przed migracją. Jednak jeśli użytkownik będzie migrują wszystko jednocześnie, a nie przeprowadzenie migracji stopniowej, możesz pominąć ten krok.
 
 - **Krok 3. Przygotowanie wdrożenia programu Exchange na potrzeby migracji**
 
-    Ten krok jest wymagany, jeśli używana jest funkcja IRM usługi Exchange Online lub lokalnego programu Exchange do ochrony wiadomości e-mail. Jednak jeśli będzie migracji wszystko, co w tym samym czasie zamiast czy migracji stopniowej, możesz pominąć ten krok.
+    Ten krok jest wymagany, jeśli używana jest funkcja IRM usługi Exchange Online lub lokalnego programu Exchange do ochrony wiadomości e-mail. Jednak jeśli użytkownik będzie migrują wszystko jednocześnie, a nie przeprowadzenie migracji stopniowej, możesz pominąć ten krok.
 
 [**FAZA 2 — KONFIGURACJA PO STRONIE SERWERA DLA USŁUG AD RMS**](migrate-from-ad-rms-phase2.md)
 
@@ -182,7 +182,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 [**FAZA 3 — KONFIGURACJA PO STRONIE KLIENTA**](migrate-from-ad-rms-phase3.md)
 
-- **Krok 7: Ponownie skonfiguruj komputery z systemem Windows do użycia usługi Azure Information Protection**
+- **Krok 7. ponowne konfigurowanie komputerów Windows do użycia usługi Azure Information Protection**
 
     Aby korzystać z usługi Azure Rights Management zamiast usług AD RMS, należy ponownie skonfigurować istniejące komputery z systemem Windows. Ten krok dotyczy komputerów w organizacji oraz komputerów w organizacjach partnerów, jeśli współpracowali z Tobą podczas korzystania z usług AD RMS.
 
@@ -201,19 +201,19 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 - **Krok 10. Anulowanie obsługi usług AD RMS**
 
-    Po potwierdzeniu, że wszystkie komputery z systemem Windows korzystają z usługi Azure Rights Management i nie uzyskują dostęp do serwerów usług AD RMS, możesz anulowanie zastrzeżenia wdrożenia usług AD RMS.
+    Po potwierdzeniu, że wszystkie komputery Windows używają usługi Azure Rights Management i nie korzystają już z serwerów usług AD RMS, można anulować obsługę wdrożenia usług AD RMS.
 
 - **Krok 11: Wykonanie zadania migracji klienta**
 
-    Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i Ipad, telefony i tablety, systemu Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
+    Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i urządzenia Ipad, telefony z systemem Android i tabletów, Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
     
-    Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne. Jednak jeśli nie używasz kontrolki dołączania, ponieważ wybrano opcję migracji wszystko, co w tym samym czasie, a nie wykonać migracji stopniowej, możesz pominąć instrukcjami, aby usunąć kontrolki dołączania.
+    Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne. Jednak nie było używane kontrolek dołączania, ponieważ wybrano opcję migrują wszystko jednocześnie, zamiast zajmować się migracją stopniowe, możesz pominąć instrukcjami, aby usunąć kontrolki dołączania.
     
-    Komputery z systemem Windows korzystający z pakietu Office 2010, sprawdź, czy należy wyłączyć **Zarządzanie szablonu zasadami prawa AD RMS (Automatyczna)** zadań.
+    Jeśli komputery Windows korzystają z pakietu Office 2010, sprawdź, czy należy wyłączyć **zarządzania szablonem zasad praw AD RMS (automatyczne)** zadania.
 
-- **Krok 12: Ponowne tworzenie klucza klucza dzierżawy usługi Azure Information Protection**
+- **Krok 12: Wymień klucz dzierżawy usługi Azure Information Protection**
 
-    Ten krok jest zalecane, jeśli użytkownik nie uruchamiano trybu kryptograficznego 2 przed migracją.
+    Ten krok jest zalecany, jeśli użytkownik nie uruchamiano trybu kryptograficznego 2 przed migracją.
 
 
 ## <a name="next-steps"></a>Następne kroki
