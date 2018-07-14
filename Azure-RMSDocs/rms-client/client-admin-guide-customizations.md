@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973498"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029937"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -135,13 +135,13 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 Aby skonfigurować tę opcję zaleca przy użyciu [ustawienie zasad](../deploy-use/configure-policy-settings.md) **Udostępnij opcję niestandardowych uprawnień użytkownikom**. Jednak również mogą skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowanego w witrynie Azure portal. 
 
-Po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników, opcje uprawnień niestandardowych stają się dostępne dla użytkowników wybrać własne ustawienia ochrony lub niedostępny tak, aby użytkownicy nie mogą wybrać własne ustawienia ochrony, chyba że zostanie wyświetlony monit.
+Po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników, opcje uprawnień niestandardowych stają się widoczne dla użytkowników wybrać własne ustawienia ochrony lub są ukryte, aby użytkownicy nie mogą wybrać własne ustawienia ochrony, chyba że zostanie wyświetlony monit.
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
 - Klucz: **EnableCustomPermissions**
 
-- Wartość: **True** udostępnienie opcji uprawnień niestandardowych, lub **False** Aby ta opcja była niedostępna
+- Wartość: **True** aby uwidocznić opcji uprawnień niestandardowych, lub **False** Aby ukryć tę opcję
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection

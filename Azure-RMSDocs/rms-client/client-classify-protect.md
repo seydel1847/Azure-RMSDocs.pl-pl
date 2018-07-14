@@ -1,10 +1,10 @@
 ---
-title: Klasyfikować i chronić pliki i wiadomości e-mail przy użyciu usługi Azure Information Protection
+title: Klasyfikowanie i ochrona plików i wiadomości e-mail przy użyciu usługi Azure Information Protection
 description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów i wiadomości e-mail użytkownika.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,42 +12,42 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 07abfb8da932dea6fe29507cca9f3066eaf546cf
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444145"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029903"
 ---
-# <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Sklasyfikowanych i chronionych plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
+# <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie i ochrona pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 > [!NOTE]
-> Użyj tych instrukcji, aby ułatwić klasyfikować i chronić dokumenty i wiadomości e-mail. Jeśli potrzebne tylko klasyfikowania i nie chronić dokumenty i wiadomości e-mail, zobacz [instrukcje tylko do klasyfikowania](client-classify.md). Jeśli nie masz pewności, zestaw instrukcji do użycia, skontaktuj się z administratorem lub pomocą techniczną.
+> Użyj tych instrukcji, aby ułatwić klasyfikować i chronić swoje dokumenty i wiadomości e-mail. Jeśli potrzebujesz tylko do klasyfikowania i nie chronić swoje dokumenty i wiadomości e-mail, zobacz [instrukcje tylko do klasyfikowania](client-classify.md). Jeśli nie masz pewności, który zestaw instrukcje dotyczące korzystania z, skontaktuj się z administratorem lub pomocy technicznej.
 
 Najprostszy sposób klasyfikowania i ochrony dokumentów i wiadomości e-mail jest dostępny podczas ich tworzenia lub edytowania za pośrednictwem aplikacji komputerowych pakietu Office: **Word**, **Excel**, **PowerPoint** i **Outlook**. 
 
-Można jednak również klasyfikować i chronić pliki za pomocą **Eksploratora plików**. Ta metoda obsługuje inne typy plików i jest wygodny sposób klasyfikować i chronić wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
+Można jednak również klasyfikować i chronić pliki za pomocą **Eksploratora plików**. Ta metoda obsługuje dodatkowe typy plików i jest wygodny sposób klasyfikowania i ochrony wielu plików jednocześnie. Ta metoda zapewnia ochronę dokumentów pakietu Office, plików PDF, plików tekstowych i obrazów, a także wielu innych plików. 
 
-Etykiety dotyczy ochrony dokumentu, dokument chroniony nie jest odpowiedni do zapisania w programie SharePoint lub usługi OneDrive. Te lokalizacje nie obsługują następujące chronionych plików: współtworzenia, Office Online wyszukiwania, dokumentu podglądu, miniatur i zbieranie elektronicznych materiałów dowodowych. 
+Jeśli etykiety usługi dotyczy ochrony dokumentu, chronionego dokumentu nie jest odpowiednia do zapisania w usłudze SharePoint lub OneDrive. Te lokalizacje są obsługiwane następujące chronionych plików: Współtworzenie, Office Online, wyszukiwania, podglądu dokumentu, miniatury i zbierania elektronicznych materiałów dowodowych. 
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>Bezpieczne udostępnianie pliku osobom spoza organizacji
 
 Pliki, które są chronione, są bezpiecznie udostępniane innym użytkownikom. Na przykład Dołącz chroniony dokument do wiadomości e-mail.
 
-Przed udostępnieniem plików osobom spoza organizacji, skontaktuj się z pomocy technicznej lub administratorem sposób ochrony plików dla użytkowników zewnętrznych.
+Przed udostępnieniem plików osobom spoza organizacji, skontaktuj się z działem pomocy technicznej lub administratorem sposób ochrony plików dla użytkowników zewnętrznych.
 
-Na przykład jeśli Twoja organizacja regularnie komunikuje się z osób w innej organizacji, administrator może skonfigurować etykiety, które ustawia ochrony w taki sposób, że te osoby mogą odczytywać i wykorzystywać chronionych dokumentów. Następnie wybierz etykiety do klasyfikowania i ochrony dokumentów do udostępniania.
+Na przykład jeśli Twoja organizacja regularnie komunikuje się z osób w innej organizacji, administrator może skonfigurować etykiety, które ustawiającą ochronę w taki sposób, że te osoby może odczytywać i wykorzystywać dokumenty chronione. Następnie należy wybrać tych etykiet do klasyfikowania i ochrony dokumentów do udostępniania.
 
-Alternatywnie Jeśli użytkowników zewnętrznych [kont między firmami (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) dla nich utworzona, można użyć z [aplikacji pakietu Office, aby ustawić uprawnienia niestandardowe](#set-custom-permissions-for-a-document) lub użyj [Eksploratora plików, aby ustawić uprawnienia niestandardowe](#using-file-explorer-to-classify-and-protect-files) przed udostępnieniem dokumentu. Jeśli dokument jest już chroniony do użytku wewnętrznego ustawienie własnych uprawnień niestandardowych, najpierw utwórz kopię Aby zachować oryginalne uprawnienia. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.
+Alternatywnie Jeśli masz użytkowników zewnętrznych [konta firmowe (B2B)](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) utworzone dla nich, możesz użyć usługi [aplikacji pakietu Office, aby ustawić uprawnienia niestandardowe](#set-custom-permissions-for-a-document) lub użyj [Eksploratora plików, aby ustawić uprawnienia niestandardowe](#using-file-explorer-to-classify-and-protect-files) dokumentu przed jego udostępnieniem. Jeśli zostały ustawione uprawnienia niestandardowe, a dokument jest już chroniony do użytku wewnętrznego, należy najpierw utworzyć jej kopię do zachowania pierwotnych uprawnień. Kopii tej należy użyć do ustawienia uprawnień niestandardowych.
 
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Korzystanie z aplikacji pakietu Office do klasyfikowania i ochrony dokumentów i wiadomości e-mail
 
-Użyj paska usługi Azure Information Protection lub **Chroń** na Wstążce, aby wybrać jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
+Za pomocą paska usługi Azure Information Protection lub **Chroń** przycisk na Wstążce, aby wybrać jedną z etykiet, skonfigurowane dla Ciebie. 
 
-Na przykład na poniższej ilustracji przedstawiono, że dokument jeszcze nie zostały oznaczone, ponieważ **czułości** pokazuje **Nieustawione** na pasku usługi Azure Information Protection. Aby ustawić etykiety, takie jak "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
+Na przykład na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą ponieważ **czułości** pokazuje **Nieustawione** na pasku usługi Azure Information Protection. Aby ustawić etykietę, np. "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
 
 ![Przykład paska usługi Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
@@ -65,31 +65,31 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 Możliwe przyczyny:
 
-- Nie masz klienta Azure Information Protection [zainstalowane](install-client-app.md).
+- W przypadku braku klienta usługi Azure Information Protection [zainstalowane](install-client-app.md).
 
-- Zainstalowanego klienta, ale ustawienie, które nie są wyświetlane pasku został skonfigurowany przez administratora. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty wstążki pakietu Office. 
+- Jest zainstalowany klient, ale administrator skonfigurował ustawienia, które nie jest wyświetlany pasek. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty na Wstążce pakietu Office. 
 
-- Na kliencie jest uruchomiony [trybu tylko do ochrony](client-protection-only-mode.md).
+- Klient jest uruchomiony w [tryb z samą ochroną](client-protection-only-mode.md).
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>To jest etykietę, którą można było się spodziewać niewidoczne? 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>Jest etykietę, która powinna się pojawić nie jest wyświetlane? 
 
 Możliwe przyczyny:
 
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
-- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby sprawdzić, kliknij przycisk **Chroń** > **Pomoc i opinie**. W oknie dialogowym, sprawdź, czy istnieje komunikat **stanu klienta** sekcji informacją **ten klient nie ma licencji na pakiet Office Professional Plus.** 
+- Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby sprawdzić, kliknij przycisk **Chroń** > **Pomoc i opinie**. W oknie dialogowym Sprawdź, czy komunikat **stanu klienta** sekcja, która wynika z **ten klient nie ma licencji pakietu Office Professional Plus.** 
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 
 ### <a name="set-custom-permissions-for-a-document"></a>Ustawienie uprawnień niestandardowych dla dokumentu
 
-Jeśli dozwolone przez administratora, można określić własne ustawienia ochrony dokumentów zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety. Ta opcja jest przeznaczony do dokumentów i nie jest dostępna w programie Outlook.
+Jeśli jest to dozwolone przez administratora, można określić własne ustawienia ochrony dokumentów zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety. Ta opcja jest właściwe dla dokumentów i nie jest dostępne w programie Outlook.
 
 1. Na karcie **Narzędzia główne**, w grupie **Ochrona**, kliknij kolejno pozycje **Chroń** > **Uprawnienia niestandardowe**:
 
     ![Opcja Uprawnienia niestandardowe](../media/custom-permissions-callout.png)
     
-    Jeśli nie możesz zaznaczyć **uprawnienia niestandardowe**, administrator nie będzie można korzystać z tej opcji.
+    Jeśli nie widzisz **uprawnienia niestandardowe**, administrator nie umożliwiają używanie tej opcji.
     
     Należy pamiętać, że wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 
@@ -101,21 +101,21 @@ Jeśli dozwolone przez administratora, można określić własne ustawienia ochr
     
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
         
-        Wybierz z książki adresowej użytkowników lub grup umożliwia także ikonę książki adresowej.
+        Umożliwia także ikonę książki adresowej do wybierz z książki adresowej użytkowników lub grupy.
     
-    - **Ważność dostępu**: Wybierz tę opcję tylko w przypadku harmonogramów pliki, aby wybrane osoby nie będzie można otworzyć wybranego pliku lub plików po dacie, które można ustawić. Nadal będzie można otworzyć oryginalny plik, ale po północy (bieżącej strefy czasowej), na dzień, w którym można ustawić określonej osoby nie będzie mógł otworzyć plik.
+    - **Unieważnij dostęp**: Wybierz tę opcję tylko w przypadku plików uwarunkowanych czasowo, tak aby określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej dacie, który został ustawiony. Nadal będziesz mieć możliwość otwarcia oryginalnego pliku, ale po północy (Twojej bieżącej strefy czasowej), na dzień, w którym można ustawić określone przez Ciebie osoby nie będzie można otworzyć pliku.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na komunikat **Zastosowano uprawnienia niestandardowe**. Następnie kliknij przycisk **Zamknij**.
 
-### <a name="safely-sharing-by-email"></a>Bezpieczne udostępnianie pocztą e-mail
+### <a name="safely-sharing-by-email"></a>Bezpieczne udostępnianie za pośrednictwem poczty e-mail
 
-Po udostępnieniu dokumentów pakietu Office za pośrednictwem poczty e-mail, możesz dołączyć dokument do wiadomości e-mail możesz chronić i dokumentu jest automatycznie chronione przez te same ograniczenia, które są stosowane do wiadomości e-mail. 
+Po udostępnieniu dokumentów pakietu Office za pośrednictwem poczty e-mail, można dołączyć dokument do wiadomości e-mail możesz chronić i dokument jest chroniony automatycznie z takim samym ograniczeniom, które są stosowane do wiadomości e-mail. 
 
-Jednak zaleca się najpierw ochrony dokumentu, a następnie dołącz do wiadomości e-mail. Chronić wiadomości e-mail oraz wiadomości e-mail zawiera poufne informacje. Dwie zalety ochrony dokumentu, przed dołączeniem do wiadomości e-mail:
+Jednak zaleca się najpierw ochrony dokumentu, a następnie dołączyć go do wiadomości e-mail. Ochrona wiadomości e-mail również, jeśli wiadomość e-mail zawiera poufne informacje. Dwie zalety ochrony dokumentu, przed dołączeniem do wiadomości e-mail:
 
-- Można śledzić i w razie potrzeby odwołać dokumentu po pocztą e-mail go.
+- Można śledzić i w razie potrzeby odwoływanie dokumentu po jego wysłanego pocztą.
 
-- Można stosować różne uprawnienia do dokumentu niż do wiadomości e-mail.
+- Można zastosować różne uprawnienia do dokumentu niż do wiadomości e-mail.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>Klasyfikowanie i ochrona plików za pomocą Eksploratora plików
 
@@ -146,9 +146,9 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
     
     ![Brak etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
     
-3. Jeśli dozwolone przez użytkownika adminsitrator, można określić ustawienia ochrony zamiast ustawień ochrony, które administrator może mieć uwzględnionych za pomocą wybranej etykiety. Aby to zrobić, wybierz **Chroń za pomocą uprawnień niestandardowych**.
+3. Jeśli jest to dozwolone przez administratora, można określić własne ustawienia ochrony zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety. Aby to zrobić, wybierz **Chroń za pomocą uprawnień niestandardowych**.
     
-    Jeśli nie możesz zaznaczyć **Chroń za pomocą uprawnień niestandardowych**, administrator nie będzie można korzystać z tej opcji.
+    Jeśli nie widzisz **Chroń za pomocą uprawnień niestandardowych**, administrator nie umożliwiają używanie tej opcji.
     
     Wszystkie niestandardowe uprawnienia określone przez użytkownika zastępują, a nie uzupełniają, ustawienia ochrony, które administrator mógł zdefiniować dla wybranej etykiety.  
 
@@ -158,7 +158,7 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
     
     - **Wybierz użytkowników, grupy lub organizacje**: Określ osoby, które powinny mieć wybrane przez Ciebie uprawnienia do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
     
-    Alternatywnie można ikonę książki adresowej wybierz z książki adresowej użytkowników lub grupy.
+    Alternatywnie można użyć ikonę książki adresowej do wybierz z książki adresowej użytkowników lub grupy.
         
     - **Ważność dostępu**: wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby wybrane osoby nie mogły otworzyć danego pliku lub plików po ustawionym dniu. Otwarcie oryginalnego pliku przez Ciebie będzie nadal możliwe, ale po północy (w Twojej strefie czasowej) określonego dnia podane osoby nie będą mogły otworzyć pliku.
     
@@ -181,6 +181,8 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Zobacz [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
+Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [konfigurowania ustawień zasad usługi Azure Information Protection](../deploy-use/configure-policy-settings.md).
+
+Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
