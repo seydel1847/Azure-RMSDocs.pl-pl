@@ -1,10 +1,10 @@
 ---
 title: Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
-description: Informacje o usłudze RMS dla użytkowników indywidualnych, bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy otrzymali chronione pliki, ale nie można uwierzytelnić tych użytkowników, ponieważ dział IT nie będzie zarządzała kontem je na platformie Azure.
+description: Informacje o usłudze RMS dla użytkowników indywidualnych, bezpłatnej subskrypcji samoobsługowej dla użytkowników, którzy otrzymali chronionych plików, ale ci użytkownicy nie mogą zostać uwierzytelnieni, ponieważ dział IT nie będzie zarządzała kontem ich na platformie Azure.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,56 +12,56 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 358ef172192b3bed65dd8f1853705c8f189cbf97
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 3885dfcdf9c5858fe6e3a43b3980e0862dc4cb51
+ms.sourcegitcommit: 85a56a778973be1c95df08bcd5b56e4f0bc12ad7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444320"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39104934"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione przez usługę Azure Information Protection. Jeśli Ci użytkownicy nie może zostać uwierzytelnione przez usługę Azure Active Directory, tej bezpłatnej tworzenia konta usługi można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W związku z tym te użytkownicy mogą teraz uwierzytelniania przy użyciu adresu e-mail firmy i następnie odczytywać pliki chronione na komputerach lub urządzeniach przenośnych.
+Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione za pomocą usługi Azure Information Protection. Jeśli Ci użytkownicy nie uwierzytelniony przez usługę Azure Active Directory, bezpłatnej usługi rejestracji można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W wyniku tych użytkownicy mogą teraz uwierzytelniane przy użyciu swojego adresu e-mail firmy i odczytania chronionych plików na komputerach lub urządzeniach przenośnych.
 
-Usługa RMS dla użytkowników indywidualnych korzysta z subskrypcji samoobsługowej usługi Azure Active Directory. Jeśli użytkownicy utworzył kont dla Twojej organizacji za pomocą tej subskrypcji, administrator w organizacji, można potwierdzić prawa własności i [przejąć kontrolę nad ich kont](/active-directory/domains-admin-takeover#external-admin-takeover). 
+Samoobsługowe tworzenie konta usługi Azure Active Directory korzysta z usługi RMS dla użytkowników indywidualnych. Jeśli użytkownicy utworzyli konta dla Twojej organizacji za pomocą tej subskrypcji z uprawnieniami administratora dla Twojej organizacji, może przejąć własności i [przejęcie kontroli nad ich kont](/active-directory/domains-admin-takeover#external-admin-takeover). 
 
 
 > [!NOTE]
-> Bezpłatna subskrypcja jest jedną opcję, aby zapewnić, że upoważnione osoby spoza organizacji, zawsze może odczytywać pliki, chronione w organizacji. Inną możliwością jest wykonanie e-mail dokumentów przy użyciu [szyfrowanie wiadomości usługi Office 365 z nowych funkcji](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). To rozwiązanie poczty e-mail działa dla wszystkich adresów e-mail na wszystkich urządzeniach i jest zalecanym sposobem bezpieczne udostępnianie informacji i wyświetlić dokumenty pakietu Office w przeglądarce osobom spoza organizacji.
+> Bezpłatna subskrypcja jest jedną opcję, aby mieć pewność, że upoważnione osoby spoza organizacji mogą zawsze odczytać plików, które organizacja chroni. Innym rozwiązaniem jest e-mail dokumentów przy użyciu [szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). To rozwiązanie poczty e-mail działa w przypadku wszystkich adresów e-mail na wszystkich urządzeniach i jest zalecany sposób bezpiecznie udostępniać informacje i wyświetlić dokumenty pakietu Office w przeglądarce osobom spoza organizacji.
 > 
-> Innym rozwiązaniem jest używają kont Microsoft. Jednak nie wszystkie aplikacje może otworzyć chronioną zawartość, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
+> Innym rozwiązaniem jest użycie kont Microsoft. Jednak nie wszystkie aplikacje można otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
 
-Aby zarejestrować bezpłatne konto, użytkownicy, przejdź do [strony Microsoft Azure Information Protection](https://aka.ms/rms-signup)i podaj swój służbowy adres e-mail. Otrzymają wiadomość e-mail w odpowiedzi od firmy Microsoft, a następnie można zakończyć proces tworzenia wprowadzając wymagane szczegóły konta. 
+Aby utworzyć bezpłatne konto, użytkownicy, przejdź do [strony programu Microsoft Azure Information Protection](https://aka.ms/rms-signup)i podaj swój służbowy adres e-mail. Otrzyma wiadomość e-mail w odpowiedzi od firmy Microsoft, a następnie można ukończyć proces rejestracji, wprowadzając wymagane szczegóły, aby utworzyć swoje konto. 
 
-Po utworzeniu konta ostatnia strona zawiera łącza do klienta usługi Azure Information Protection lub przeglądarki dla różnych urządzeń, link do podręcznika użytkownika i link do bieżącej listy aplikacje, które natywnie obsługują ochrony usługi Rights Management. 
+Po utworzeniu konta ostatnia strona wyświetla łącza, aby pobrać klienta usługi Azure Information Protection lub przeglądarki na różnych urządzeniach, link do podręcznika użytkownika i link do bieżącej listy aplikacji, które natywnie obsługują usługę Rights Management. 
 
 ## <a name="to-sign-up-for-rms-for-individuals"></a>Aby utworzyć konto usługi RMS dla użytkowników indywidualnych
 
 1. Jeśli używasz komputera z systemem Windows, komputera Mac lub urządzenia przenośnego, przejdź na [stronę usługi Microsoft Azure Information Protection](https://aka.ms/rms-signup).
 
-2. Wpisz adres e-mail, które zostało użyte do ochrony dokumentu, które należy otworzyć.
+2. Wpisz adres e-mail, który został użyty do ochrony dokumentu, które należy otworzyć.
 
 3. Kliknij przycisk **Zarejestruj się**.
 
-    Firma Microsoft używa Twój adres e-mail, aby sprawdzić, czy Twoja organizacja już ma [subskrypcji dla usługi Azure Premium ochrony informacji (https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [subskrypcji usługi Office 365, która obejmuje ochronę danych przy użyciu informacji o Azure Ochrona](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). W przypadku znalezienia albo te subskrypcje nie wymagają usług RMS dla użytkowników indywidualnych. Użytkownik jest zalogowany natychmiast i samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych zostanie anulowane. Jeśli jeden z te subskrypcje nie zostanie odnaleziony, kontynuować do następnego kroku.
+    Firma Microsoft używa Twój adres e-mail, aby sprawdzić, czy Twoja organizacja ma już [subskrypcja usługi Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [subskrypcji usługi Office 365, która obejmuje ochronę danych za pomocą platformy Azure Ochrona informacji](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli jedno z tych subskrypcji zostaną znalezione, nie potrzebujesz usługi RMS dla użytkowników indywidualnych. Użytkownik jest zalogowany natychmiast i samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych została anulowana. Jeśli jeden z tych subskrypcji nie zostanie znalezione, przejdź do następnego kroku.
 
 4. Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 (support@email.microsoftonline.com) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Information Protection**.
 
-5. Po otrzymaniu tej wiadomości e-mail, kliknij przycisk **tak, to ja** Zweryfikuj swój adres e-mail i ukończyć proces tworzenia konta.
+5. Po otrzymaniu wiadomości e-mail kliknij **tak, to ja** zweryfikować swój adres e-mail i ukończyć proces rejestracji.
 
 6. Zostanie teraz wyświetlona strona **Jeszcze coś**, na której trzeba będzie podać szczegóły konta. Wpisz swoje imię i nazwisko, podaj i potwierdź hasło, a następnie kliknij pozycję **Rozpocznij**.
 
-7. Po utworzeniu konta, zobacz nowej strony Microsoft Azure Information Protection, gdy można pobrać i zainstalować klienta usługi Azure Information Protection lub kliknij przycisk [Podręcznik użytkownika](../rms-client/client-user-guide.md) łącze do praktycznych instrukcji dla komputerów z systemem Windows.
+7. Po utworzeniu konta zobaczysz nową stronę Microsoft Azure Information Protection, gdzie można pobrać i zainstalować klienta usługi Azure Information Protection lub kliknij przycisk [Podręcznik użytkownika](../rms-client/client-user-guide.md) link do instrukcji odnoszących się do Windows komputery.
 
-Teraz Twoje konto zostało utworzone, jeśli zostanie wyświetlony monit, aby zalogować się do odczytywać pliki chronione, należy wprowadzić tego samego adresu e-mail i hasło, którego użyto do utworzenia konta usługi RMS dla użytkowników indywidualnych.
+Teraz Twoje konto jest tworzone, jeśli zostanie wyświetlony monit logować się do odczytywać pliki chronione, wprowadź ten sam adres e-mail i hasło, których użyto podczas tworzenia konta usługi RMS dla użytkowników indywidualnych.
 
 > [!IMPORTANT]
-> Mimo że teraz można również chronić pliki z tego konta, nie zostanie dopóki Twoja organizacja ma [subskrypcji próbnej lub płatnej](https://azure.microsoft.com/pricing/details/information-protection/) usługi Azure Information Protection. Jeśli chronić pliki i wiadomości e-mail przy użyciu tej bezpłatnej subskrypcji, a następnie organizacji przejmuje kontrolę konta użytkownika, wcześniej chronionej zawartości mogą stać się niedostępne.
+> Mimo że teraz można również chronić pliki za pomocą tego konta, nie zostanie aż Twoja organizacja ma [subskrypcji próbnej lub płatnej](https://azure.microsoft.com/pricing/details/information-protection/) usługi Azure Information Protection. Jeśli ochrony plików i wiadomości e-mail przy użyciu tej bezpłatnej subskrypcji, a następnie przejmuje kontrolę nad kontem w Twojej organizacji, wcześniej chronionej zawartości mogą stać się niedostępne.
 
 
-## <a name="next-steps"></a>Następne kroki
-Usługa RMS dla użytkowników indywidualnych to przykład subskrypcji samoobsługowej, która jest obsługiwana przez usługę Azure Active Directory do użycia. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [What is Self-Service Signup for Azure?](/active-directory/active-directory-self-service-signup) (Czym jest rejestracja samoobsługowa na platformie Azure?).
+## <a name="next-steps"></a>Kolejne kroki
+Usługi RMS dla użytkowników indywidualnych to przykład za pomocą samoobsługowej, jest obsługiwane przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [What is Self-Service Signup for Azure?](/active-directory/active-directory-self-service-signup) (Czym jest rejestracja samoobsługowa na platformie Azure?).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
