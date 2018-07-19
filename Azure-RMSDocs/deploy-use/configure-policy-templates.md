@@ -4,7 +4,7 @@ description: Konfigurowanie i zarządzanie nimi szablony usługi rights manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/28/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
+ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "34562147"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138308"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
@@ -77,7 +77,7 @@ Szablony, które zostały zarchiwizowane wyświetlane jako niedostępny w **usł
 
 Przed rozpoczęciem edycji tych szablonów, lub konwersji do etykiet, upewnij się, że masz świadomość następujących zmian i zagadnienia. Z powodu zmiany implementacji poniżej jest szczególnie ważne, jeśli wcześniej zarządzane szablonów w klasycznym portalu Azure.
 
-- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby można dodawać lub usuwać poszczególne prawa użytkowania za pomocą witryny Azure portal. Możesz też korzystać z programu PowerShell [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition) polecenia cmdlet.
+- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby można dodawać lub usuwać poszczególne prawa użytkowania za pomocą witryny Azure portal. Możesz też korzystać z programu PowerShell [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
     
     - Opcja **Zezwalaj na makra** (nazwa pospolita) jest automatycznie dodawana. To prawo użytkowania jest wymagane przez pasek usługi Azure Information Protection w aplikacji pakietu Office.
 
@@ -156,7 +156,7 @@ Po utworzeniu nowej etykiety z ustawieniem ochrony **Azure (klucz w chmurze)**, 
 
 5. Z **klasyfikacje** > **zasady** menu, wybierz zasady, które zawierają nowe ustawienia ochrony. Następnie wybierz pozycję **apletu Dodaj lub usuń etykiety**. Z **zasad: Dodaj lub usuń etykiety** bloku wybierz nowo utworzony etykiety, który zawiera ustawienia ochrony, wybierz pozycję **OK**, a następnie wybierz pozycję **Zapisz**.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Na komputerze klienta usługi Azure Information Protection w celu uzyskania tych ustawień zmiany może potrwać do 15 minut. Aby uzyskać informacje dotyczące sposobu pobierania i odświeżania szablonów przez komputery i usługi, zobacz temat [Odświeżanie szablonów dla użytkowników i usług](refresh-templates.md).
 
