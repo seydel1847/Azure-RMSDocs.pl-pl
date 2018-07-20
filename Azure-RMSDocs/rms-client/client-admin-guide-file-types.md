@@ -4,7 +4,7 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
+ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935719"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157786"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -53,7 +53,9 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
 
 - **Digital Negative**: .dng
 
-- **Microsoft Office**: typy plików w poniższej tabeli:
+- **Microsoft Office**: typy plików w poniższej tabeli.
+    
+    Obsługiwane formaty plików dla tych typów plików: co najmniej Office 97 – 2003 dokumentów i Open XML pakietu Office
     
     |Typ pliku pakietu Office|Typ pliku pakietu Office|
     |----------------------------------|----------------------------------|
@@ -123,14 +125,13 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 |jt|pjt|
 
 
-W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. 
+W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. Obsługiwane formaty plików są te, które są co najmniej dokumentów pakietu Office 97 – 2003 i Open XML pakietu Office. 
 
 Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
 
 |Typy plików obsługiwanych przez pakiet Office|Typy plików obsługiwanych przez pakiet Office|
 |----------------------------------|----------------------------------|
 |doc<br /><br />docm<br /><br />docx<br /><br />dot<br /><br />dotm<br /><br />dotx<br /><br />potm<br /><br />potx<br /><br />pps<br /><br />ppsm<br /><br />ppsx<br /><br />ppt<br /><br />pptm<br /><br />.pptx<br /><br />.vsdm|vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />xla<br /><br />xlam<br /><br />xls<br /><br />xlsb<br /><br />xlt<br /><br />xlsm<br /><br />xlsx<br /><br />xltm<br /><br />xltx<br /><br />xps|
-
 
 ### <a name="changing-the-default-protection-level-of-files"></a>Zmiana domyślnego poziomu ochrony plików
 Edytując rejestr, możesz zmienić sposób ochrony plików przez klienta usługi Azure Information Protection. Możesz na przykład wymusić, aby pliki obsługujące ochronę natywną były objęte ochroną ogólną przez klienta usługi Azure Information Protection.
@@ -229,7 +230,7 @@ Można klasyfikować i chronić te pliki kontenerów, ale klasyfikacji i ochrony
 
 Jeśli masz plik kontenera, który zawiera sklasyfikowanych i chronionych plików, należy wyodrębnić pliki, aby zmienić ustawienia klasyfikacji i ochrony. Jednak można usunąć ochrony dla wszystkich plików w plikach obsługiwane kontenerów przy użyciu [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po zidentyfikowaniu typów plików obsługiwanych przez klienta usługi Azure Information Protection zapoznaj się następujące zasoby, aby uzyskać dodatkowe informacje, przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
