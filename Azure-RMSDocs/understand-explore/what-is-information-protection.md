@@ -4,18 +4,18 @@ description: Omówienie usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/06/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c851c2f6af3d355b017c7fbc3de188d15ed16e90
-ms.sourcegitcommit: 7a58d6bec0b504b889980c83e8551301d49e44f4
+ms.openlocfilehash: a30607f0a4be292827a3d8ef20f45332e688ae28
+ms.sourcegitcommit: c7e943700189eeaad3f4c919cc0fa3410fd4df5b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37910095"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204496"
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -115,6 +115,8 @@ Dla Twojej magazynami danych w chmurze należy użyć Microsoft Cloud App Securi
 
 - Bezpłatna wersja próbna: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
+- Opcji i cen subskrypcji: [cennik usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)
+
 - Pobierz klienta: [Klient usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
 - Pobierz Podręcznik użytkownika można dostosowywać: [przewodnika wdrażania użytkownika końcowego platformy Azure Information Protection](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
@@ -139,7 +141,7 @@ Możesz [wyszukiwania i znajdowania](https://myignite.microsoft.com/videos?q=%25
 - [Chroń i kontroluj poufnych wiadomości e-mail dzięki nowym funkcjom szyfrowanie wiadomości usługi Office 365](https://myignite.microsoft.com/videos/53230)
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Przeczytaj wpis w blogu: [Azure Information Protection: Ready, set, protect!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: przygotowanie, ustawianie, ochrona)
 

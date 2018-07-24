@@ -4,7 +4,7 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
-ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
+ms.openlocfilehash: cc2c2e9e609cbb35e09d8417cbce23b0f0fb7b35
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157786"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217879"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -95,9 +95,9 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
 
 - **Wszystkie inne pliki**: 
     
-    - Aby chronić te pliki: rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
+    - Aby chronić inne typy plików i otwieranie tych typów plików w przeglądarce usługi Azure Information Protection: maksymalny rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
     
-    - Aby otworzyć te pliki w przeglądarce usługi Azure Information Protection: Jeśli nie masz bieżącej wersji zapoznawczej klienta usługi Azure Information Protection, maksymalny obsługiwany rozmiar pliku dla plików tekstowych (ptxt i pxml) jest o rozmiarze 20 MB. Dla plików na podstawie obrazów i plików PDF maksymalny rozmiar pliku jest ograniczony tylko ilością pamięci.
+    - Do wyłączania ochrony plików za pomocą [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet: Maksymalny obsługiwany rozmiar pliku dla plików pst wynosi 5 GB. Inne typy plików są ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 

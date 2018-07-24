@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
-ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
+ms.openlocfilehash: fe04cc36f99e641cb11ef832e967699106728749
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39029937"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217845"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -98,13 +98,13 @@ Utwórz następującą nazwę wartości DWORD (z dowolnymi danymi wartości):
 
 ## <a name="support-for-disconnected-computers"></a>Obsługa odłączonych komputerów
 
-Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection, aby pobrać najnowsze zasady usługi Azure Information Protection. W przypadku komputera pozbawionego w danym momencie możliwości nawiązania połączenia z Internetem można zapobiec próbie nawiązania połączenia z usługą, edytując rejestr. 
+Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection, aby pobrać najnowsze zasady usługi Azure Information Protection. W przypadku komputerów, które znasz, nie będzie można połączyć się z Internetem przez czas można zapobiec próby połączenia z usługą, edytując rejestr klienta. 
 
 Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Upewnij się, że klient ma prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. W razie potrzeby można wyeksportować zasady z portalu Azure Portal i skopiować wyeksportowany plik do komputera klienckiego. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami.
+Upewnij się, że klient ma prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli to konieczne, można wyeksportować zasad globalnych lub zasad o określonym zakresie w witrynie Azure portal i skopiuj wyeksportowany plik na komputerze klienckim. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami. Eksportowanie zasad nie obsługuje jednak scenariusz, w którym użytkownik należy do więcej niż jedna zasada o określonym zakresie.
 
 Podczas eksportowania zasady, ta akcja spowoduje pobranie plik z rozszerzeniem zip z wieloma wersjami zasady, które odnosi się do różnych wersji klienta usługi Azure Information Protection:
 
@@ -116,7 +116,7 @@ Podczas eksportowania zasady, ta akcja spowoduje pobranie plik z rozszerzeniem z
     |Policy1.2.msip |w wersji 1.3 1.7|
     |Policy1.3.msip |w wersji 1.8 i nowszych|
     
-2. Zmień nazwę wskazany plik do **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, na których jest zainstalowany klient usługi Azure information protection. 
+2. Zmień nazwę wskazany plik do **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, które mają zainstalowanego klienta usługi Azure Information Protection. 
 
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook
@@ -390,7 +390,7 @@ Można również skonfigurować reguły przepływu poczty na potrzeby mapowania 
 - Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli **msip_labels** nagłówek zawiera nazwę Twojej etykiety (na przykład **ogólne**) i stosować wiadomości Klasyfikacja, który jest mapowany do tej etykiety.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po dostosowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi, które mogą być przydatne podczas obsługi tego klienta:
 
 - [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)
