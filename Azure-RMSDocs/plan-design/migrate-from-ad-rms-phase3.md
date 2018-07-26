@@ -53,7 +53,7 @@ Ta metoda jest odpowiednie tylko dla klientów systemu Windows, które są uruch
     
     Alternatywnie Jeśli masz tylko jednego klastra usług AD RMS w danej domenie, można określić tylko nazwę domeny do klastra AD RMS. W naszym przykładzie, który będzie **contoso.com**. Po określeniu nazwy domeny w tym rekordzie przekierowanie ma zastosowanie do wszystkich klastrach usług AD RMS w danej domenie.
     
-     *\<Port >* numer zostanie zignorowany.
+    *\<Port >* numer zostanie zignorowany.
     
     Aby uzyskać  *\<adres URL dzierżawy\>*, określić własne [adres URL usługi Azure Rights Management dla swojej dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
     
@@ -133,7 +133,7 @@ Gdy wszyscy klienci Windows nie można migrować na raz, uruchom następujące p
     > [!IMPORTANT]
     > Tak jak poprzednio, uważaj, aby nie wprowadzić dodatkowych spacji przed adresami lub po nich.
     > 
-    > Ponadto jeśli serwery usług AD RMS używają certyfikatów serwera SSL/TLS, sprawdź, czy wartości adresu URL licencjonowania obejmują numer portu **443** wewnątrz ciągu. Na przykład: https://rms.treyresearch.net:443/_wmcs/licensing. Informacje te można znaleźć w konsoli usługi zarządzania prawami dostępu w usłudze Active Directory, po kliknięciu nazwy klastra i widoku **szczegółów klastra** informacji. Jeśli widzisz numer portu 443 zawarty w adresie URL, uwzględnij tę wartość podczas modyfikowania skryptu. Na przykład https://rms.treyresearch.net: **443**. 
+    > Ponadto jeśli serwery usług AD RMS używają certyfikatów serwera SSL/TLS, sprawdź, czy wartości adresu URL licencjonowania obejmują numer portu **443** wewnątrz ciągu. Na przykład: https://rms.treyresearch.net:443/_wmcs/licensing. Informacje te można znaleźć w konsoli usługi zarządzania prawami dostępu w usłudze Active Directory, po kliknięciu nazwy klastra i widoku **szczegółów klastra** informacji. Jeśli widzisz numer portu 443 zawarty w adresie URL, uwzględnij tę wartość podczas modyfikowania skryptu. Na przykład https://rms.treyresearch.net:**443**. 
     
     Jeśli musisz pobrać adres URL usługi Azure Rights Management do podstawienia w elemencie *&lt;YourTenantURL&gt;* (Twój adres URL dzierżawy), skorzystaj ponownie z instrukcji w sekcji [Aby ustalić swój adres URL usługi Azure Rights Management](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
 
