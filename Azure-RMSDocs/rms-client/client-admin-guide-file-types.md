@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc2c2e9e609cbb35e09d8417cbce23b0f0fb7b35
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: 90dac73ce15382b4be58e5eb191e44167bdee56f
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217879"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295444"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -55,7 +55,7 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
 
 - **Microsoft Office**: typy plików w poniższej tabeli.
     
-    Obsługiwane formaty plików dla tych typów plików: co najmniej Office 97 – 2003 dokumentów i Open XML pakietu Office
+    Obsługiwane formaty plików dla tych typów plików to 97 – 2003 formaty plików i formaty Office Open XML dla następujących programów pakietu Office: Word, Excel i PowerPoint. 
     
     |Typ pliku pakietu Office|Typ pliku pakietu Office|
     |----------------------------------|----------------------------------|
@@ -125,7 +125,7 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 |jt|pjt|
 
 
-W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. Obsługiwane formaty plików są te, które są co najmniej dokumentów pakietu Office 97 – 2003 i Open XML pakietu Office. 
+W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. Obsługiwane formaty plików dla tych typów plików to 97 – 2003 formaty plików i formaty Office Open XML dla następujących programów pakietu Office: Word, Excel i PowerPoint.
 
 Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
 

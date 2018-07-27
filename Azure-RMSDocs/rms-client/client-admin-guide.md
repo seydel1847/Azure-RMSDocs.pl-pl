@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
-ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
+ms.openlocfilehash: 45e1f405c751449148b0bfe3a7249640155778c6
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263332"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295529"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -164,6 +164,28 @@ Dla tych języków, opcje menu, okna dialogowe i komunikaty z usługi Azure Info
 
 Jednak nazwy etykiet i opisy, które określisz nie są automatycznie przekształcane podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 r. bieżący [domyślne zasady](../deploy-use/configure-policy-default.md) obejmuje obsługę w przypadku niektórych języków. Aby użytkownikom były wyświetlane etykiety w języku preferowanym udostępnić własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection pod kątem ich używania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../deploy-use/configure-policy-languages.md). Oznaczenia wizualne nie są przekształcane i nie obsługują więcej niż jednym języku.
 
+## <a name="post-installation-tasks"></a>Zadań poinstalacyjnych
+
+Po zainstalowaniu klienta usługi Azure Information Protection, upewnij się, możesz udzielić użytkownikom instrukcje dotyczące sposobu oznaczać swoje dokumenty i wiadomości e-mail i wskazówki dotyczące etykiet, które należy wybrać dla określonych scenariuszy. Przykład:
+
+- Instrukcje dla użytkowników w trybie online: [Podręcznik użytkownika usługi Azure Information Protection](client-user-guide.md)
+
+- Pobierz Podręcznik użytkownika można dostosowywać: [przewodnika wdrażania użytkownika końcowego platformy Azure Information Protection](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
+### <a name="update-macros-in-excel-spreadsheets"></a>Aktualizowanie makra w arkusze kalkulacyjne programu Excel
+
+Jeśli masz arkusze kalkulacyjne programu Excel, które zawierają makra, należy edytować makra w następujący sposób, aby upewnić się, że są one nadal działać zgodnie z oczekiwaniami po zainstalowaniu klienta usługi Azure Information Protection:
+
+1. Na początku makra, należy dodać:
+
+        Application.EnableEvents = False
+
+2. Na końcu makra należy dodać:
+
+        Application.EnableEvents = True
+
+Aby uzyskać więcej informacji, zobacz [Application.EnableEvents właściwości (Excel)](https://msdn.microsoft.com/vba/excel-vba/articles/application-enableevents-property-excel).
+
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Uaktualnianie i obsługi klienta usługi Azure Information Protection
 
 Zespół usługi Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection dla nowych funkcji i poprawek. Anonse są wysyłane do zespołu [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
@@ -192,7 +214,7 @@ Aby odinstalować klienta programu, można użyć dowolnej z następujących opc
 
 - Uruchom plik wykonywalny z opcją **/uninstall**. Na przykład: `AzInfoProtection.exe /uninstall`
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby zainstalować klienta, zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).
 
 Jeśli klient został już zainstalowany, zobacz następujące czynności, aby uzyskać dodatkowe informacje, przydatnymi przy obsłudze tego klienta:
