@@ -12,35 +12,35 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9334a781378ffdbe76dd9fe9d78f5db5913766d1
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 3a6c53bf7bb1a983c34936405b8e51afb8427ac7
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216838"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374287"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Ustawienia rejestru dla łącznika usługi Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
-W poniższych sekcjach można użyć tabel tylko wtedy, gdy chcesz ręczne dodanie lub sprawdzenie ustawień rejestru na serwerach z systemem Exchange, SharePoint lub Windows Server. Te ustawienia rejestru Konfigurowanie serwerów do używania [łącznika usługi RMS](deploy-rms-connector.md). Zalecana metoda konfiguracji serwerów polega na użyciu narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS.
+Użyj tabel w poniższych sekcjach, tylko wtedy, gdy chcesz umożliwiają ręczne dodanie lub sprawdzenie ustawień rejestru na serwerach z systemem Exchange, SharePoint lub Windows Server. Te ustawienia rejestru Konfigurowanie serwerów do korzystania z [łącznika usługi RMS](deploy-rms-connector.md). Zalecana metoda konfiguracji serwerów polega na użyciu narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS.
 
 Oto instrukcje dotyczące użycia tych ustawień:
 
--   *\<Adres_url_dzierżawy >* jest adres URL usługi Azure Rights Management dla swojej dzierżawy usługi Azure Information Protection. Aby znaleźć tę wartość:
+-   *\<Adres_url_dzierżawy >* jest adres URL usługi Azure Rights Management dla dzierżawy usługi Azure Information Protection. Aby znaleźć tę wartość:
 
-    1.  Uruchom [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) polecenia cmdlet dla usługi Azure Rights Management. Jeśli nie został już zainstalowany moduł programu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
+    1.  Uruchom [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) polecenia cmdlet dla usługi Azure Rights Management. Jeśli użytkownik jeszcze nie zainstalowano modułu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
 
     2.  Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
 
         Na przykład: **LicensingIntranetDistributionPointUrl: https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-    3.  Usuń element **/_wmcs/licensing** z tego ciągu. Wynikowy ciąg jest adres URL usługi Azure Rights Management. W naszym przykładzie adres URL usługi Azure Rights Management może mieć następującą wartość:
+    3.  Usuń element **/_wmcs/licensing** z tego ciągu. Wynikowy ciąg jest adres URL usługi Azure Rights Management. W naszym przykładzie adres URL usługi Azure Rights Management będzie następującą wartość:
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
         
-        Aby sprawdzić, mieć prawidłową wartość, uruchamiając następujące polecenie programu PowerShell:
+        Możesz sprawdzić, czy masz prawidłową wartość, uruchamiając następujące polecenie programu PowerShell:
         
             (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
@@ -218,5 +218,3 @@ Oto instrukcje dotyczące użycia tych ustawień:
 
 
 Powrót do tematu [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

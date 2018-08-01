@@ -14,12 +14,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: db47c4638dc9e1de68055a6d171710c1bc07e74c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258969"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372257"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>Konfigurowanie aplikacji do uwierzytelniania ADAL
 
@@ -29,7 +29,7 @@ W tym temacie opisano procedurę konfigurowania aplikacji do uwierzytelniania na
 
 Potrzebne są następujące elementy:
 
-- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [jak tworzyć konta użytkowników dla usług RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
+- [Subskrypcja usługi Microsoft Azure](https://azure.microsoft.com/) (wystarczy bezpłatna wersja próbna). Aby uzyskać więcej informacji, zobacz [jak się zarejestrować w usłudze RMS dla użytkowników indywidualnych](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Subskrypcja usługi Microsoft Azure Rights Management (wystarczy bezpłatne konto w [usłudze RMS dla użytkowników indywidualnych](https://technet.microsoft.com/library/dn592127.aspx)).
 
 > [!NOTE]
@@ -104,4 +104,3 @@ Po zarejestrowaniu się w usłudze Microsoft Azure:
 
 ![Wybierz opcję ZAPISZ](../media/SaveApplication.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

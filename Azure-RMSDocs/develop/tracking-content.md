@@ -14,12 +14,12 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e632e99f42947afa10223bb1b11fcc18cdec6f7a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: a3aeddd9a22f93bed1f942b666b8c246761a8a6b
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765429"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370074"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>Instrukcje: włączanie śledzenia i odwoływania dokumentów
 
@@ -143,7 +143,7 @@ Aby dodać element interfejsu użytkownika **Śledź użycie** do aplikacji, wys
 
 - Jeśli nie masz dostępu do tych metadanych (tj. sprawdzasz niechronioną wersję dokumentu), możesz użyć elementu **Content_Name** w następującym formacie: `https://track.azurerms.com/#/?q={ContentName}`
 
-  Przykład: https://track.azurerms.com/#/?q=Secret!.txt
+  Przykład — https://track.azurerms.com/#/?q=Secret!. txt
 
 Klient musi otworzyć odpowiedni adres URL w przeglądarce. Uwierzytelnianie i przekierowanie zostanie przeprowadzone przez portal śledzenia dokumentów usługi RMS.
 
@@ -159,5 +159,3 @@ Klient musi otworzyć odpowiedni adres URL w przeglądarce. Uwierzytelnianie i p
 * [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 * [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

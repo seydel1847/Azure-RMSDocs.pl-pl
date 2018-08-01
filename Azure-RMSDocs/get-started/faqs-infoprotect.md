@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 0b8c0ecbf85a49101372c741c534b3b1e35c8dde
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: 6aafa526e8061ef01f2cdd554c2843d814b623d1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069108"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370129"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -79,4 +79,3 @@ Czynności konfiguracyjne są opisane w sekcji [Integracja klasyfikacji wiadomo�
 
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
