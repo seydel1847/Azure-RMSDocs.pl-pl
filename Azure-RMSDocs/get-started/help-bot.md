@@ -1,6 +1,6 @@
 ---
-title: Bot Pomoc dla usługi Azure Information Protection
-description: Pomoc bot usługi Azure Information Protection pomóc w odpowiedzi na pytania, Wyszukaj dokumenty lub otwarciem biletu pomocy technicznej, jeśli potrzebujesz pomocy technicznej.
+title: Pomóż botowi usługi Azure Information Protection
+description: Pomóż botowi, usługi Azure Information Protection mogą ułatwić uzyskanie odpowiedzi na pytania, Wyszukaj dokumenty lub Otwórz bilet pomocy technicznej, jeśli potrzebujesz pomocy technicznej.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,24 +12,23 @@ ms.technology: techgroup-identity
 ms.assetid: 98105d30-ff81-4b9c-9f41-9e9ffd6e7aa6
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4f6f8c8d4b302f515ed2002d5f00ea928eb10178
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 6c69d3055860f5173d9daa6353b8c83cbccc1c5c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29476256"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369813"
 ---
-# <a name="help-bot-for-azure-information-protection"></a>Bot Pomoc dla usługi Azure Information Protection
+# <a name="help-bot-for-azure-information-protection"></a>Pomóż botowi usługi Azure Information Protection
 
 Spróbuj **bot pomocy usługi Azure Information Protection**, obecnie w wersji beta:
 
-- Zobacz, jeśli bot wie, odpowiedź na pytanie dotyczące usługi Azure Information Protection, ponieważ inny użytkownik ma zapytał tego samego.
-- Poproś bot wyszukiwania dokumentacja usługi Azure Information Protection dla Ciebie.
-- Poproś bot ułatwiające Otwórz bilet pomocy technicznej usługi Azure Information Protection dla Ciebie.
-- Typ **#feedback** aby poinformować nas, czy ten robot jest przydatne.
+- Zobacz, jeśli bot wie, odpowiedź na pytanie dotyczące usługi Azure Information Protection, ponieważ ktoś inny poprosił tego samego zapytania.
+- Zapytać bota, aby wyszukać dokumentacja usługi Azure Information Protection.
+- Zapytać bota ułatwiające Otwórz bilet pomocy technicznej usługi Azure Information Protection, dla Ciebie.
+- Typ **#feedback** aby dać nam znać, czy ten bot jest pomocne.
 
 
 <iframe width="560" height="475" src="https://webchat.botframework.com/embed/AIPformalBOT?s=SwZOTnCyj6w.cwA.zYE.Wdf87z08R7NHjtaev84v0nLC0urEfQJ2_5bUgvtIR9Q"></iframe>
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -14,12 +14,12 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6c1500b13a0c7ddabd3a01deb08c81fa3d4d72c7
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 656715f8632fb17f0dd12f6e521dd6f5993a92b9
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258999"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371377"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
 
@@ -179,5 +179,3 @@ Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Managem
 * [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)
 * [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
 * [IpcCreateLicenseFromTemplateID](https://msdn.microsoft.com/library/hh535257.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

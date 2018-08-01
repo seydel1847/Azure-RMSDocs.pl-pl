@@ -12,39 +12,39 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aed3c59465f822e27411eb84df793bf7ad63b061
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d55ef8caa7540cba2cd783613f5ea373ba1d545c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206210"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372397"
 ---
-# <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Podręcznik użytkownika: Tryb tylko do ochrony dla klienta usługi Azure Information Protection
+# <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Przewodnik po użytkownik: Tryb z samą ochroną dla klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 
-Gdy klient usługi Azure Information Protection nie ma etykiety do klasyfikowania dokumentów i wiadomości e-mail, jest uruchamiany w **tylko do ochrony** tryb. Na przykład, w tym trybie można napotkać następujące w Eksploratorze plików systemu Windows, kliknij prawym przyciskiem myszy, **Klasyfikuj i chronić**:
+Gdy klient usługi Azure Information Protection nie zawiera etykiet do klasyfikowania dokumentów i wiadomości e-mail, jest ono wykonywane **obejmujący tylko ochronę** trybu. Na przykład, w tym trybie można napotkać następujące podczas używania Eksploratora plików Windows, kliknij prawym przyciskiem myszy, **Klasyfikuj i Chroń**:
 
 ![Tryb z samą ochroną](../media/protection-only-mode.png)
 
-Tryb tylko do ochrony jest uruchamiana w następujących scenariuszach:
+Tryb z samą ochroną uruchamia się w następujących scenariuszach:
 
-- Twoja organizacja nie ma subskrypcji usługi Azure Information Protection, który zawiera klasyfikacji i etykietowania funkcje, ale ma subskrypcję usługi Office 365, która zawiera ochronę danych przy użyciu usługi Azure Rights Management. 
+- Twoja organizacja ma subskrypcję usługi Azure Information Protection, który zawiera klasyfikacji i etykietowania funkcji, ale ma subskrypcję usługi Office 365, która obejmuje ochronę danych przy użyciu usługi Azure Rights Management. 
     
-    - Klienta usługi Azure Information Protection umożliwia ochronę plików i wyświetlać chronione pliki. Nie można sklasyfikować lub etykieta dokumentów i wiadomości e-mail.
+    - Klient usługi Azure Information Protection umożliwia ochronę plików oraz wyświetlania chronionych plików. Nie można sklasyfikować lub etykietowania dokumentów i wiadomości e-mail.
 
-- Twoja organizacja ma subskrypcję usługi Azure Information Protection dla tylko podzestaw użytkowników:
+- Twoja organizacja ma subskrypcję usługi Azure Information Protection dla tylko podzbioru użytkowników:
     
-    - W przypadku tej mieszanki subskrypcji jest Administratorze spoczywa odpowiedzialność za zapewnienie, że tylko podzestaw użytkowników można używać klasyfikacji i etykietowania funkcji. W pozostałej części użytkownicy powinna być uruchomiona w trybie tylko do ochrony klienta Azure Information Protection. 
+    - Ta kombinacja subskrypcji jest Administratorze spoczywa odpowiedzialność za upewnij się, że tylko podzbioru użytkowników można użyć klasyfikacji i etykietowania funkcji. W pozostałej części użytkowników powinna być uruchomiona w trybie z samą ochroną klienta usługi Azure Information Protection. 
 
-- Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale nie ma żadnych etykiet skonfigurowana za użytkownika.
+- Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale nie masz żadnych etykiety skonfigurowane.
     
-    - Może się to zdarzyć, gdy wszystkich etykiet globalne zasady są wyłączone konta nie została dodana do zakresie zasad. Może być, ponieważ dział IT po prostu rozpoczął wdrożenie usługi Azure Information Protection, ale nie został jeszcze udostępniony etykiety do klasyfikowania dokumentów i wiadomości e-mail. Do tego czasu można użyć klienta Azure Information Protection do ochrony plików i wyświetlać chronione pliki.
+    - Może to nastąpić, gdy wszystkie etykiety globalne zasady są wyłączone, a Twoje konto nie jest dodawany do zasad o określonym zakresie. To może być spowodowane przez dział IT właśnie rozpoczęła się do wdrożenia usługi Azure Information Protection, ale jeszcze nie został udostępniony etykiet do klasyfikowania dokumentów i wiadomości e-mail. W międzyczasie można użyć klienta usługi Azure Information Protection do ochrony plików oraz wyświetlania chronionych plików.
 
 - Organizacja ma subskrypcję usługi Azure Information Protection, ale nie jest możliwe pobranie zasad usługi Azure Information Protection. 
     
-    - Może się to zdarzyć z powodu błędnej konfiguracji lub ponieważ logowanie nie powiodło się. Skontaktuj się z działem pomocy technicznej lub z administratorem. Jednocześnie możesz być w stanie korzystać z klienta usługi Azure Information Protection do ochrony plików oraz wyświetlania chronionych plików.
+    - Taka sytuacja może wystąpić z powodu błędnej konfiguracji lub ponieważ logowanie zakończy się niepowodzeniem. Skontaktuj się z działem pomocy technicznej lub z administratorem. Jednocześnie możesz być w stanie korzystać z klienta usługi Azure Information Protection do ochrony plików oraz wyświetlania chronionych plików.
 
 - Twoja organizacja korzysta z Active Directory Rights Management Services (AD RMS) tylko. 
 
@@ -64,5 +64,4 @@ Tryb tylko do ochrony jest uruchamiana w następujących scenariuszach:
 - Wyświetlanie chronionych plików w Przeglądarce usługi Azure Information Protection.
 
 - Dostęp do witryny śledzenia dokumentów z poziomu aplikacji pakietu Office. Uwaga: do śledzenia i odwoływania dokumentów z tej witryny jest wymagana ważna subskrypcja.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]  
+  

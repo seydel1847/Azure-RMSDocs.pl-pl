@@ -4,7 +4,7 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 732eb98b1cbd1af575f15ddc992349d77b436131
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: 2487d775c9a1e6fb7ecdef77d9969841a65ea8b7
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088263"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371455"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -44,6 +44,61 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 >  
 > Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
+## <a name="versions-later-than-12950"></a>Wersjach starszych niż 1.29.5.0
+
+Jeśli masz wersję klienta, która jest nowsza niż 1.29.5.0, jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
+
+Ta wersja zawiera wersję MSIPC 1.0.3557.524 klienta usługi RMS.
+
+**Nowe funkcje**: 
+
+- Obsługa nowych typów informacji poufnych klasyfikować dokumenty, które zawierają dane osobowe. [Więcej informacji](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+
+- Obsługa etykietowania **Strict otwartego dokumentu XML** format w plikach programu Word, Excel i PowerPoint. Aby uzyskać więcej informacji na temat formatów Open XML, zobacz w blogu pakietu Office, [nowe opcje format pliku w nowy pakiet Office](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/). 
+
+- Obsługa standardu ISO do szyfrowania plików PDF, konfigurując nową [Zaawansowana konfiguracja klienta](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption). W przypadku skonfigurowania tej opcji, dokumentów PDF, które można chronić zachować ich rozszerzenia nazwy pliku PDF (zamiast Zmień ppdf) i mogą być otwierane przez czytniki PDF, obsługujące tego standardu ISO. 
+
+- Obsługa plików, które są chronione przez Secure Islands, gdy te pliki są inne niż dokumentów PDF i pakietu Office. Na przykład chronionych plików tekstowych i obrazów. Lub rozszerzenie nazwy pliku plików, które mają plik pfile. Ta obsługa umożliwia nowe scenariusze, takie jak skanera usługi Azure Information Protection będzie mogła sprawdzić te pliki do poufnych informacji i automatycznie relabeling je do usługi Azure Information Protection. [Więcej informacji](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
+
+- Skanera usługi Azure Information Protection:
+
+    - Nowe polecenie cmdlet, [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner): wymagane do uruchamiania raz, po uaktualnieniu z wersji 1.26.6.0 lub starszym.
+    
+    - Nowe polecenie cmdlet, [Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): pobiera bieżący stan usługi skanera.  
+    
+    - Nowe polecenie cmdlet, [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): powoduje, że skanera można uruchomić na czas cykl skanowania w poszukiwaniu, kiedy harmonogram ustawiono na ręcznie.
+    
+    - Program SharePoint Server 2010 jest obsługiwana w przypadku klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
+    
+**Poprawki**
+
+- Skanera usługi Azure Information Protection:
+    
+    - W przypadku dokumentów, które są chronione w bibliotekach programu SharePoint, jeśli *DefaultOwner* parametr nie jest używany do repozytorium danych, wartość edytora programu SharePoint jest teraz używana jako wartość domyślną, zamiast autora.
+    
+    - Skaner raporty zawierają "Ostatnio modyfikowany przez", dokumentów pakietu Office. 
+
+- Podczas klasyfikowania i ochrony za pomocą programu PowerShell lub skaner metadane dokumentu pakietu Office jest ono usuwane lub szyfrowane.
+
+- Podczas wyświetlania wiadomości e-mail przy użyciu ikony strzałek następnej i poprzedniej pozycji na pasku narzędzi Szybki dostęp pokazywane jest prawidłowa etykieta dla każdej wiadomości e-mail.
+
+- Uprawnienia niestandardowe obsługuje adresy e-mail adresatów, zawierające apostrof.
+
+- Środowisko komputera zostaną zainicjowane pomyślnie (bootstrap) Ta akcja jest inicjowane przez otwarcie chronionego dokumentu, który jest przechowywany w usłudze SharePoint Online. 
+
+**Dodatkowe zmiany**:
+   
+- Aby uzyskać [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration):
+    
+    - Wartości *harmonogram* parametru nie są już **OneTime**, **ciągłe**, i **nigdy**, ale teraz **ręczne** i **zawsze**.
+        
+    - *Typu* parametr zostanie usunięty, więc również są usuwane z danych wyjściowych, po uruchomieniu [Get AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration).
+    
+- Skaner domyślnej listy wykluczeń zawiera teraz .rtf — pliki. [Więcej informacji](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
+
+- Wersja zasad jest zmieniany na 1.4. Identyfikowanie numer wersji jest wymagana dla [Konfigurowanie odłączonych komputerów](client-admin-guide-customizations.md#support-for-disconnected-computers). 
+
+
 ## <a name="version-12950"></a>Wersja 1.29.5.0 
 
 **Wydana**: 06/26/2018 r.
@@ -59,7 +114,6 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 - Gdy już nazywa plik programu Excel i stosuje się etykietę oznaczeń wizualnych, nowy arkusz ma teraz oznaczeń wizualnych etykiety zastosowane.
 
 - Kiedy używasz Zaawansowane ustawienia klienta dotyczącego [etykiety dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property), etykietowania automatycznego nie zastępuje ręcznego etykietowania.
-
 
 ## <a name="version-127480"></a>Wersja 1.27.48.0
 
@@ -217,7 +271,7 @@ Poprawki dla wygody użytkowników, które obejmują:
 
 - Etykieta nadrzędna nie jest wyświetlany, gdy jej etykiet podrzędnych jest skonfigurowany do ochrony, a klient nie ma wersji pakietu Office, który obsługuje ochronę. 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać więcej informacji o instalowaniu i używaniu klienta: 
 
@@ -226,4 +280,3 @@ Aby uzyskać więcej informacji o instalowaniu i używaniu klienta:
 - Administratorzy: [Podręcznik administratora klienta usługi Azure Information Protection](client-admin-guide.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

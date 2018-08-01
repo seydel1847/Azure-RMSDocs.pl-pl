@@ -14,12 +14,12 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 906746990fd08a749d2879fbc04b054e49e65f01
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 68ed6db23caf5cab0a98e4704a36366c721d4194
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764489"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373393"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>Porady: włączanie rejestrowania błędów i wydajności
 Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
@@ -98,5 +98,3 @@ Pobieranie bieżącego ustawienia flagi kontroli rejestrowania
 **Uwaga:** kod przedstawiony powyżej jest napisany w języku C++. Dla języka C\# uaktualnij składnię, używając „.” zamiast „::”.
 
 **Linux / C++:** ten zestaw SDK udostępnia podstawowe funkcje rejestrowania, ale nie są one tak zaawansowane jak w przypadku innych platform. Aby uzyskać więcej informacji, zobacz sekcję dotyczącą **rozwiązywania problemów** związanych z plikiem „README.md” na stronie [RMS SDK for portable C++](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) (Zestaw RMS SDK dla przenośnego kodu C++).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

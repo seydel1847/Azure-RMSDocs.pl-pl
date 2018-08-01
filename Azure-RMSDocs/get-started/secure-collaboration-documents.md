@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4a642960e81a7d1a5cb6f8433e4098bed06a663d
-ms.sourcegitcommit: dc98226f339339c10fd01535a1adf7e30a817a41
+ms.openlocfilehash: f6ae088dc551189b264eb3cb5ea1e65b9845e5b8
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36300027"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372771"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Bezpiecznej współpracy nad dokumentami przy użyciu usługi Azure Information Protection
 
@@ -147,7 +147,7 @@ Obecnie obsługiwane przez pakiet Office 2016 kliknij do uruchomienia tylko.
 
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Zobacz inne [przykładowe konfiguracje](../deploy-use/configure-policy-protection.md#example-configurations) etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawienia ochrony.
 
@@ -156,6 +156,5 @@ Aby uzyskać więcej informacji o inne opcje i ustawienia, które można skonfig
 Etykiety, która została skonfigurowana w tym artykule również utworzenie szablonu ochrony tej samej nazwie. Masz aplikacje i usługi, które integrują się z szablonami ochrony z usługi Azure Information Protection, można zastosować ten szablon. Na przykład rozwiązania DLP i reguły przepływu poczty. Program Outlook w sieci web automatycznie Wyświetla szablony ochrony z globalnych zasad usługi Azure Information Protection. 
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

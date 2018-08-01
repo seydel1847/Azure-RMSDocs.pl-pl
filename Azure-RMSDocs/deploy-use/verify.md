@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43689f942bae88c9b7099f45a980f0fd96b1bdaf
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 2542442e251cceb1de4ef9a09a945793ca9e4c68
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204959"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373995"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Weryfikowanie usługi Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Po aktywowaniu usługi Azure Rights Management w ramach usługi Azure Information Protection i wykonaniu dodatkowych czynności konfiguracyjnych, które są wymagane dla danej organizacji, możesz sprawdzić, czy usługa ochrony działa zgodnie z oczekiwaniami. 
 
@@ -34,10 +34,9 @@ Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Pl
 > [!TIP]
 > Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Możesz monitorować wykorzystanie usługi Azure Rights Management przez organizację, korzystając z rejestrowania użycia. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

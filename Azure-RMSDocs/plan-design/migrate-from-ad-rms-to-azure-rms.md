@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 740a97298d27f5abb2cda8e0b6f3ce931c1a6d91
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 3fba63cb27489b8e198d90a4b417688230332910
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973464"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371360"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -216,7 +216,6 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
     Ten krok jest zalecany, jeśli użytkownik nie uruchamiano trybu kryptograficznego 2 przed migracją.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby rozpocząć migrację, przejdź do [fazy 1 — przygotowania](migrate-from-ad-rms-phase1.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

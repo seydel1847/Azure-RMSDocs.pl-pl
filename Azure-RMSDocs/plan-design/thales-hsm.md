@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 07c6c1b925426ba599755042094df3e5a93fd237
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 78034d0c1d00da8cd3640ac6634884d84d96eda1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204677"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374974"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Więcej informacji na temat sprzętowych modułów zabezpieczeń firmy Thales oraz dodatków firmy Microsoft: ZAWARTOŚĆ WYCOFANA
 
@@ -25,4 +25,3 @@ ms.locfileid: "30204677"
 
 Informacje przedstawione w tym artykule zostały usunięte, ponieważ nie są już odpowiednie, jako że usługa Azure Rights Management używa usługi Azure Key Vault na potrzeby kluczy dzierżawy zarządzanych przez klientów (jest to tak zwane rozwiązanie Bring Your Own Key — BYOK). 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

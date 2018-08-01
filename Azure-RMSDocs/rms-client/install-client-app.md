@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c5e048c5418b956ddb881ed2eb63ad0cc257bde4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 95616111b2ed5449e4c65c2df02b7fb181458728
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206038"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370197"
 ---
-# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobierz i zainstaluj klienta usługi Azure Information Protection
+# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>Podręcznik użytkownika: Pobieranie i instalowanie klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Jeśli klient usługi Azure Information Protection nie został zainstalowany przez administratora, można zainstalować go samodzielnie. Aby zainstalować tego klienta w celu ochrony dokumentów i wiadomości e-mail oraz stosowania dla nich etykiet, trzeba mieć na komputerze uprawnienia administratora lokalnego.
 
@@ -71,7 +71,6 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Zobacz [instalowania klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md) z [Przewodnik administratora](client-admin-guide.md).
+Zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md) z [podręczniku administratora](client-admin-guide.md).
  
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]  
+  

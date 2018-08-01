@@ -13,27 +13,27 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3f012c58255e86c3a133348733e31327faa0417
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 076188a7ab99f5926861ff3d3c10919dd929da6c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327385"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371938"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>Wprowadzenie do aplikacji Microsoft Azure Information Protection dla systemów iOS i Android
 
-*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Przed użyciem instrukcji na tej stronie, upewnij się, że zostały przeczytane [często zadawane pytania dotyczące aplikacji usługi Azure Information Protection dla systemu iOS i Android](mobile-app-faq.md). Ta strona wyjaśniono aplikacja jest dla, urządzeń, które są obsługiwane i podstawowe informacje o sposobie korzystania z aplikacji.
+Przed skorzystaniem z instrukcjami wyświetlanymi na tej stronie, upewnij się, że użytkownik przeczytał [— często zadawane pytania dotyczące aplikacji usługi Azure Information Protection dla systemów iOS i Android](mobile-app-faq.md). Tej stronie wyjaśniamy, co to jest aplikacja, urządzeń, które są obsługiwane i podstawowe informacje o tym, jak korzystać z aplikacji.
 
-Większość użytkowników zwykle użyje aplikacji usługi Azure Information Protection, podczas muszą otworzyć chronioną wiadomość e-mail lub pliku. Ale jeśli jesteś administratorem, który chce przetestować aplikację dla użytkowników, lub po prostu chcesz wypróbować aplikację, zanim zajdzie potrzeba jej użycia, możesz skorzystać z poniższych instrukcji.
+Większość użytkowników zwykle mogących korzystać z aplikacji Azure Information Protection, kiedy ich potrzebują otworzyć chronioną wiadomość e-mail lub plik. Ale jeśli jesteś administratorem, który chce przetestować aplikację dla użytkowników, lub po prostu chcesz wypróbować aplikację, zanim zajdzie potrzeba jej użycia, możesz skorzystać z poniższych instrukcji.
 
 > [!NOTE]
-> Nie najpierw otwórz aplikację, a następnie wybierz dokumenty i wiadomości e-mail, aby wyświetlić. Zamiast tego otworzyć dokument lub wiadomość e-mail, a następnie wybierz tę aplikację, aby wyświetlić dokument lub wiadomość e-mail.
+> Nie, najpierw otwórz aplikację a następnie wybierz dokumentów i wiadomości e-mail, aby wyświetlić. Zamiast tego otworzyć dokument lub wiadomość e-mail, a następnie wybrać tę aplikację, aby wyświetlić dokument lub wiadomość e-mail.
 >
-> Podobnie nie należy próbować zalogować się do aplikacji, aż zostanie wyświetlony monit.
+> Podobnie nie należy próbować zalogować się do aplikacji, dopóki nie zostanie wyświetlony monit.
 
-Aby korzystać z poniższych instrukcji, należy dostępu z urządzenia przenośnego do jednego z plików, które obsługuje aplikację. Przykład:
+Aby skorzystaj z poniższych instrukcji, musisz uzyskać dostęp z urządzenia przenośnego do jednego z plików obsługiwanych przez aplikację. Przykład:
 
 - **Plik .rpmsg**: to jest chroniona prawami wiadomość e-mail wyświetlana jako załącznik w wiadomości e-mail, gdy aplikacja poczty e-mail na urządzeniu przenośnym nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. 
     
@@ -45,10 +45,8 @@ Aby korzystać z poniższych instrukcji, należy dostępu z urządzenia przenoś
 
 Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, naciśnij załącznik lub link wiadomości e-mail. Po wyświetleniu monitu o wybranie aplikacji do ich otwarcia wybierz aplikację **AIP Viewer**. Zostanie wyświetlona prośba o zalogowanie do konta służbowego lub o wybranie certyfikatu. Po uwierzytelnieniu poświadczeń aplikacja usługi Azure Information Protection wyświetli wiadomość e-mail lub plik do odczytu.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
-Aby przekazać pytania lub opinie na temat tej aplikacji, które nie zostały opisane w [— często zadawane pytania](mobile-app-faq.md), można znaleźć w naszych [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
+Do pytania lub opinie na temat tej aplikacji, które nie zostały opisane w [— często zadawane pytania](mobile-app-faq.md), odwiedź nasz [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
 
-Jeśli aplikacja nie pracuje zgodnie z opisem, zobacz zasoby wymienione w naszym [House reguły](../house-rules.md) strony.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
+Jeśli aplikacja nie działa zgodnie z opisem, zobacz zasoby wymienione w naszym [regułami](../house-rules.md) strony.

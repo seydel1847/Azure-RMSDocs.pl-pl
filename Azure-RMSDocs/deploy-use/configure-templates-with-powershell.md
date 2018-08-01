@@ -1,6 +1,6 @@
 ---
-title: Programu PowerShell na potrzeby ochrony szablony — usługi Azure Information Protection
-description: Wszystko, co można zrobić w portalu Azure do tworzenia szablonów i zarządzania nimi ochrony należy z poziomu wiersza polecenia przy użyciu programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy.
+title: Program PowerShell dla szablonów ochrona — Azure Information Protection
+description: Wszystko, co można zrobić w witrynie Azure portal, aby utworzyć i zarządzać szablonami ochrony, możesz zrobić z wiersza polecenia przy użyciu programu PowerShell. Ponadto istnieje możliwość eksportowania i importowania szablonów, dzięki czemu można kopiować szablony między dzierżawami i dokonywać edycji zbiorczej złożonych właściwości w szablonach, takich jak wielojęzyczne nazwy i opisy.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,26 +12,26 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 30dbfbe2cd9ef7d8acd89a9a76cd1108d7c03ab2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: aad2683fb5c30eda8b94f2208a1c72f46d4a0e13
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205724"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370605"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>Dokumentacja programu PowerShell dla szablonów ochrony
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Ustawienia ochrony dla usługi Azure Information Protection są zapisywane w szablonach ochrony. Wszystko, co można zrobić w portalu Azure do tworzenia i zarządzania ustawieniami ochrony można wykonać z poziomu wiersza polecenia przez przy użyciu programu PowerShell. 
+Ustawienia ochrony dla usługi Azure Information Protection są zapisywane w szablonach ochrony. Wszystko, co można zrobić w witrynie Azure portal do tworzenia i zarządzania ustawieniami ochrony zrobić z wiersza polecenia, za pomocą programu PowerShell. 
 
-Ponadto można eksportować i importować szablony ochrony przez użytkownika. Te dwie akcje umożliwiają ochronę przed kopiowaniem szablony między dzierżawami lub zbiorcze zmiany właściwości złożonych, takich jak wielojęzyczne nazwy i opisy.
+Ponadto można eksportować i importować szablony ochrony przez użytkownika. Te dwie akcje umożliwiają ochronę przed kopiowaniem szablony między dzierżawami lub zbiorczej edycji właściwości złożonych, takich jak wielojęzyczne nazwy i opisy.
 
-Użytkownik może również używać funkcji eksportowania i importowania kopii zapasowej i przywracanie szablonów ochrony. Najlepszym rozwiązaniem regularne tworzenie kopii zapasowych szablonów. Następnie Jeśli wprowadzisz zmiany w ustawieniach ochrony, których nie ma można łatwo przywrócić poprzednią wersję.
+Możesz również użyć eksportowania i importowania kopii zapasowej i przywracanie szablonów ochrony. Najlepszym rozwiązaniem jest regularnie wykonywać kopie zapasowe szablonów. Następnie Jeśli wprowadzisz zmiany do ustawień ochrony, które nie był przeznaczony można łatwo przywrócić poprzednią wersję.
 
-Aby uzyskać instrukcje instalacji, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
+Aby uzyskać instrukcje dotyczące instalacji, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
 
-Polecenia cmdlet, który obsługuje tworzenie szablonów i zarządzania nimi ochrony:
+Polecenia cmdlet, które obsługują tworzenie i Zarządzanie szablonami ochrony:
 
 - [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate)
 
@@ -52,6 +52,5 @@ Polecenia cmdlet, który obsługuje tworzenie szablonów i zarządzania nimi och
 
 
 ## <a name="see-also"></a>Zobacz też
-[Konfigurowanie i zarządzanie nimi szablonów usługi Azure Information Protection](configure-policy-templates.md)
+[Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

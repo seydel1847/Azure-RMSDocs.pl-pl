@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4da8df0696ce011e2bbe91ee8a1fd53fd5e854f5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204819"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371921"
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](../rms-client/aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
  
 Aplikacja RMS sharing obsługuje uwierzytelnianie w usłudze Office 2010 i integruje się z aplikacjami pakietu Office, instalując dodatek dla pakietu Office ułatwiający użytkownikom ochronę plików i wiadomości e-mail bezpośrednio ze wstążki. Aplikacja ta oferuje również ogólną ochronę typów plików, dla których usługa Azure Rights Management nie zapewnia natywnej ochrony, oraz witrynę do śledzenia dokumentów umożliwiającą użytkownikom śledzenie i odwoływanie chronionych plików.
 
@@ -40,6 +40,5 @@ Aplikację RMS sharing dla komputerów Mac i urządzeń z systemem Windows Phone
 Nie jest już możliwe pobranie z tej strony aplikacji RMS sharing dla systemu iOS i Android. Linki dla tych urządzeń przenośnych pozwalają teraz pobrać klienta usługi Azure Information Protection . 
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

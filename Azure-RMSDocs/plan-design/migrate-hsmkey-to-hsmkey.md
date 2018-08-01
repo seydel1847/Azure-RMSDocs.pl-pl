@@ -4,7 +4,7 @@ description: Instrukcje będące częścią ścieżki migracji z usługi AD RMS 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 757b3af36fb15c3069c5bef7ca4509ff92cee1f9
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: ccd62b7a539906c6e1f375e8bfc51e461f4cd547
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973328"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370520"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
@@ -80,7 +80,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Information
     Wprowadź określone wcześniej hasło, aby wyeksportować plik danych konfiguracji. Później uruchom następujące polecenie i potwierdź wykonanie tej akcji:
     
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
     
     W ramach tego importu klucz SLC zostanie zaimportowany i automatycznie ustawiony jako zarchiwizowany.
@@ -97,5 +97,4 @@ Jeśli chcesz później potwierdzić, którego klucza używa Twój klucz dzierż
 
 Teraz możesz wykonać [Krok 5. Aktywuj usługę Azure Rights Management](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

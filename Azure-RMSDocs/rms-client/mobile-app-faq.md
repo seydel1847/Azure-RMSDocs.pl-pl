@@ -14,16 +14,16 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190fce3f1725775ae699dbc523a810dc79b96f88
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: ba2a9b5a491d6527f15661d88e7f6db539d619c5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444252"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375457"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android
 
-*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Na tej stronie znajdują się niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android.
 
@@ -55,15 +55,15 @@ Jeśli jednak nie chcesz czekać, możesz skorzystać z następujących instrukc
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>Jakich poświadczeń należy używać do logowania się do tej aplikacji?
 
-Jeśli organizacja ma już usług AD RMS na lokalnym (rozszerzenie dla urządzeń przenośnych) lub przy użyciu usługi Azure Rights Management, użyj swoich poświadczeń pracy do logowania. 
+Jeśli Twoja organizacja ma już usług AD RMS w środowisku lokalnym (z rozszerzeniem urządzeniami przenośnymi) lub korzysta z usługi Azure Rights Management, zaloguj się przy użyciu swoje poświadczenia służbowe. 
 
-Jeśli swojego osobistego adresu e-mail użyto do ochrony pliku, Użyj poświadczeń z bezpłatny [konta Microsoft](https://signup.live.com) do logowania.
+Jeśli Twojego osobistego adresu e-mail został użyty do ochrony pliku, Użyj poświadczeń z BEZPŁATNEJ [konta Microsoft](https://signup.live.com) do logowania.
 
 ## <a name="can-i-sign-up-for-the-free-account-with-my-personal-email-address-such-as-a-hotmail-or-gmail-account"></a>Czy mogę utworzyć bezpłatne konto za pomocą mojego osobistego adresu e-mail, takiego jak konto usługi Hotmail lub Gmail?
 
-Tak, po zastosowaniu do konta Microsoft, można określić adres e-mail usługi Hotmail lub Gmail lub dowolnego innego adresu e-mail, którego jesteś właścicielem. 
+Tak, po zastosowaniu do konta Microsoft, można określić adres e-mail usługi Hotmail lub Gmail lub innego adresu e-mail, którego jesteś właścicielem. 
 
-Jednak mimo że ten program można otworzyć plików chronionych za pomocą tego konta, nie wszystkie aplikacje może otworzyć chronioną zawartość, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+Jednak mimo że ten program może otworzyć plików chronionych przy użyciu tego konta, nie wszystkie aplikacje mogą otwierania chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>Jakie rozszerzenia plików można otworzyć za pomocą tej aplikacji?
 
@@ -78,6 +78,4 @@ W aplikacji przejdź do pozycji **Ustawienia** > **Wyślij opinię**.
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>Na moje pytanie nie udzielono odpowiedzi. Co mam zrobić?
 
-Opublikuj pytanie na naszych [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
+Opublikuj swoje pytanie na naszym [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).

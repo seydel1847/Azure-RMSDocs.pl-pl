@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e1f3520a74b3ae57984e635ca68ba429dd6ad131
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4434cb25e06bd26f2080eaf01f5b0da29212fa71
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208553"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371336"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
 
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://go.microsoft.com/fwlink/?LinkId=303971).
 
@@ -45,7 +45,7 @@ Jedynym wymaganiem w przypadku tej instalacji jest zainstalowanie na komputerach
 
 3.  Wypakuj pliki ze skompresowanych pakietów instalacyjnych, na przykład klikając je dwukrotnie. Następnie skopiuj wypakowane pliki do lokalizacji sieciowej, która jest dostępna dla komputerów klienckich.
 
-Pakiety instalacyjne aplikacji RMS sharing obsługują różne scenariusze wdrażania i obejmuje następujące elementy:
+Pakiety instalacyjne aplikacji RMS sharing obsługują różnych scenariuszy wdrażania i obejmuje następujące czynności:
 
 |Opis|Scenariusz wdrożenia|
 |---------------|-----------------------|
@@ -188,7 +188,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
     Na przykład: `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
     
-    Jeśli to polecenie nie powiedzie się pomyślnie uruchomić, nie zobaczysz jakiekolwiek komunikaty o błędach z powodu **/quiet** parametru. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
+    Jeśli to polecenie nie powiedzie się działała poprawnie, nie pojawią się komunikaty o błędach z powodu **/quiet** parametru. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
 
 2.  Zainstaluj dodatek pakietu Office przy użyciu następujących poleceń, określając istniejący folder w celu utworzenia pliku dziennika:
 
@@ -206,7 +206,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
     Na przykład: `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
     
-    Jeśli to polecenie nie powiedzie się pomyślnie uruchomić, nie zobaczysz jakiekolwiek komunikaty o błędach z powodu **/quiet** parametru. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
+    Jeśli to polecenie nie powiedzie się działała poprawnie, nie pojawią się komunikaty o błędach z powodu **/quiet** parametru. W celu ułatwienia rozwiązywania problemów w razie niepowodzenia instalacji należy ponownie uruchomić to polecenie bez parametru /quiet, aby komunikaty o błędach były widoczne.
 
 Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzanie, czy instalacja przebiegła pomyślnie](#verifying-installation-success) w tym artykule.
 
@@ -345,7 +345,7 @@ Ponieważ aplikacja RMS sharing nie jest obsługiwana przez program WSUS, warto 
 ## <a name="azure-information-protection-only-configuring-document-tracking"></a>Tylko usługa Azure Information Protection: konfigurowanie śledzenia dokumentów
 Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Podczas śledzenia dokumentów pokazywane są informacje, takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów udostępnionych przez użytkowników, czas podjęcia takich prób oraz lokalizacja tych osób. Jeśli wyświetlanie tych informacji jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć dostęp do witryny śledzenia dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). W dowolnym momencie możesz ponownie włączyć dostęp do witryny za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) i sprawdzić, czy dostęp jest aktualnie włączony, czy wyłączony, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature).
 
-Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management dla programu Windows PowerShell. Aby uzyskać instrukcje instalacji, zobacz [Instalowanie modułu programu PowerShell AADRM](../deploy-use/install-powershell.md).
+Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management dla programu Windows PowerShell. Aby uzyskać instrukcje dotyczące instalacji, zobacz [Instalowanie modułu AADRM programu PowerShell](../deploy-use/install-powershell.md).
 
 > [!TIP]
 > Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
@@ -402,7 +402,6 @@ Jeśli korzystasz z usług AD RMS, a użytkownicy w Twojej organizacji mają ad
 Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć możliwości korzystania z zawartości chronionej przez innych użytkowników w tej organizacji. W przypadku korzystania z usługi Azure Information Protection ta zmiana w rejestrze nie jest konieczna.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice między poziomami ochrony (natywny i ogólny), obsługiwane typy plików i rozszerzenia nazw plików oraz sposób zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide-technical.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

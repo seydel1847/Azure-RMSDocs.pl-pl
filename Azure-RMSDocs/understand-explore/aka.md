@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ee5c0406f351c8d46b42c25793a0f94823bf4ef3
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0376f975bf5b9c35eba5695d596559b037994a8a
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207611"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370697"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Inne nazwy usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Usługa Azure Information Protection (czasami używana jest skrócona nazwa AIP) wywodzi się z długiej tradycji ugruntowanych technologii firmy Microsoft, które wprowadzają ochronę przy użyciu usługi Rights Management. Z tego powodu możesz znać to rozwiązanie pod jedną z wcześniejszych nazw. Możesz też natknąć się na odwołania do tych nazw w dokumentacji, interfejsie użytkownika i plikach dziennika. 
 
@@ -75,5 +75,3 @@ Podobnie „Active Directory Rights Management Services” (AD RMS) pozostaje bi
 ## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>Jak ocenić najnowszą wersję i ją zakupić
 
 Aby uzyskać więcej informacji o sposobie zakupu lub możliwości oceny usługi Azure Information Protection, a także o różnych funkcjach dostępnych w planach subskrypcji, zobacz witrynę usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

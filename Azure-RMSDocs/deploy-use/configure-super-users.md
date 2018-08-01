@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aed109667fe5c58f50735b8cc223f02009ebde55
-ms.sourcegitcommit: 0782e460d29e11974ec1c4bb9286572d0ef000d0
+ms.openlocfilehash: 57cf471c614734c6183853b900750c9fef333100
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37102834"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369762"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
@@ -46,7 +46,7 @@ Jeśli musisz ręcznie włączyć funkcję superużytkowników, użyj polecenia 
 Chociaż użycie grupy dla superużytkowników jest łatwiejsze w zarządzaniu, należy pamiętać, że ze względu na wydajność w usłudze Azure Rights Management [członkostwo w grupie jest buforowane](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli więc trzeba przypisać nowego użytkownika jako superużytkownika w celu natychmiastowego odszyfrowania zawartości, dodaj tego użytkownika za pomocą polecenia Add-AadrmSuperUser, zamiast dodawać go do istniejącej grupy skonfigurowanej przy użyciu polecenia Set-AadrmSuperUserGroup.
 
 > [!NOTE]
-> Jeśli nie zainstalowano jeszcze modułu programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)], zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
+> Jeśli nie zainstalowano jeszcze modułu programu Windows PowerShell dla [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)], zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
 
 Po włączeniu funkcji superużytkowników lub kiedy dodawać użytkowników jako administratorów nie ma znaczenia. Na przykład jeśli włączyć tę funkcję w czwartek, a następnie dodanie użytkownika w piątek, ten użytkownik natychmiast otworzyć zawartość, która była chroniona na samym początku tygodnia.
 
@@ -73,7 +73,7 @@ W tym przykładzie administrator firmy Contoso Ltd potwierdza, że funkcja super
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
 ## <a name="scripting-options-for-super-users"></a>Opcje obsługi skryptów dla superużytkowników
-Często osoba przypisana do roli superużytkownika usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] będzie musiała usunąć ochronę z wielu plików w wielu różnych lokalizacjach. Mimo że można to zrobić ręcznie, bardziej wydajne (a często też bardziej niezawodne) jest zastosowanie skryptów. W tym celu możesz użyć polecenia cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile), a w razie potrzeby także polecenia cmdlet [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile). 
+Często osoba przypisana do roli superużytkownika usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] będzie musiała usunąć ochronę z wielu plików w wielu różnych lokalizacjach. Mimo że można to zrobić ręcznie, bardziej wydajne (a często też bardziej niezawodne) jest zastosowanie skryptów. W tym celu możesz użyć polecenia cmdlet [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile), a w razie potrzeby także polecenia cmdlet [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile). 
 
 Jeśli korzystasz z klasyfikacji i ochrony, możesz również użyć polecenia [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) w celu zastosowania nowej etykiety, która nie spowoduje zastosowania ochrony, lub usunąć etykietę, która powodowała zastosowanie ochrony. 
 
@@ -82,5 +82,4 @@ Aby uzyskać więcej informacji na temat wymienionych poleceń cmdlet, zobacz se
 > [!NOTE]
 > Moduł AzureInformationProtection zastępuje moduł ochrony usługi RMS programu PowerShell, który został zainstalowany razem z narzędziem RMS Protection Tool. Oba te moduły są inne niż i uzupełnia [modułu programu PowerShell dla usługi Azure Rights Management](administer-powershell.md). Moduł AzureInformationProtection obsługuje zarówno usługę Azure Information Protection, Azure Rights Management (Azure RMS) w ramach usługi Azure Information Protection, jak i usługi Active Directory Rights Management (AD RMS).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

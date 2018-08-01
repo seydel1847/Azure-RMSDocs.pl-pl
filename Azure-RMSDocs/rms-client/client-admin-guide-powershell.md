@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0d2ca2ddfea8bfd58392e6849457c53a29566d5e
-ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
+ms.openlocfilehash: 5acf00dc1b3bac0673208d1a9bc6e09e98edf40a
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39295546"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375525"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell z klientem usługi Azure Information Protection
 
@@ -623,4 +623,3 @@ Zobacz następujące artykuły, aby uzyskać dodatkowe informacje potrzebne do o
 - [Obsługiwane typy plików](client-admin-guide-file-types.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -13,16 +13,16 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 766acd68d1c5c5f59530b0b61fadee315185ec4a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 68ce556a9771df4ed8f51d417e12f511a1acfa77
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207805"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374447"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawnienia do niego, ponownie włączając jego ochronę, a następnie określając wszystkich użytkowników, którzy muszą mieć dostęp do niego, oraz przysługujące im uprawnienia.
 
@@ -94,5 +94,3 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

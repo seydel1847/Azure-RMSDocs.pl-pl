@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f6b65ef43535152e03d456533b48e2c792cedd48
-ms.sourcegitcommit: 2e85f87f7276b284b4f17de1d4e752c790eff651
+ms.openlocfilehash: 11cc223ee9637dd2ed30594bc6387027f6bee15a
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34686680"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370952"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -88,4 +88,3 @@ Firma Microsoft zaleca korzystanie z [witryny usługi Yammer dla usługi Azure I
 
 Jeśli nie masz dostępu do tej lokacji, spróbuj [miejsca społeczności technicznej usługi Azure Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection), lub [forum witryny TechNet dotyczące usługi Microsoft RMS (Cloud)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

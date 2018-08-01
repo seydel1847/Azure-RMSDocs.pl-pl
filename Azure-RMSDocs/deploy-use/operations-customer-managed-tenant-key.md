@@ -1,6 +1,6 @@
 ---
-title: Zarządzane przez klienta w Efektywnych operacje cyklu życia klucza dzierżawy
-description: Informacji na temat operacji cyklu życia, które są istotne, jeśli zarządzasz kluczem dzierżawy usługi Azure Information Protection (Przynieś własny klucz lub BYOK, scenariusz).
+title: Zarządzane przez klienta operacje cykl życia klucza dzierżawy usługi AIP
+description: Informacje na temat operacji cyklu życia, które są istotne, jeśli zarządzasz swoim kluczem dzierżawy usługi Azure Information Protection (bring your own key, byok, scenariusz).
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16ded8f9bbe06069e1fefb925166af491d1b0caa
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d1c2f96dfd915134385fd4e790e9477c77fa17ad
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208230"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375178"
 ---
-# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cyklu życia klucza dzierżawy
+# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cykl życia klucza dzierżawy
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Jeśli zarządzasz kluczem dzierżawy usługi Azure Information Protection (Przynieś własny klucz lub BYOK, scenariusz), użyj poniższych sekcji, aby uzyskać więcej informacji na temat operacji cyklu życia związanych z tą topologią.
+Jeśli samodzielnie zarządzasz swoim kluczem dzierżawy dla usługi Azure Information Protection (bring your own key, byok, scenariusz), użyj poniższych sekcji, aby uzyskać więcej informacji na temat operacji cyklu życia, które mają zastosowanie w tej topologii.
 
 ## <a name="revoke-your-tenant-key"></a>Odwołanie klucza dzierżawy
 W usłudze Azure Key Vault można zmienić uprawnienia dotyczące magazynu kluczy, który zawiera klucz dzierżawy usługi Azure Information Protection, aby usługa Azure Rights Management nie mogła już uzyskać dostępu do tego klucza. Niemniej po wykonaniu tej czynności nikt nie będzie w stanie otworzyć dokumentów i wiadomości e-mail, które zostały wcześniej zabezpieczone przez usługę Azure Rights Management.
@@ -31,46 +31,46 @@ W usłudze Azure Key Vault można zmienić uprawnienia dotyczące magazynu klucz
 Po anulowaniu subskrypcji usługi Azure Information Protection usługa ta wstrzymuje korzystanie z klucza dzierżawy, co nie wymaga żadnej akcji ze strony użytkownika.
 
 ## <a name="rekey-your-tenant-key"></a>Wymiana klucza dzierżawy
-Wymiana klucza jest także określana jako uaktualnianie klucza. Po wykonaniu tej operacji usługi Azure Information Protection przestanie używać istniejącego klucza dzierżawy do ochrony dokumentów i wiadomości e-mail i rozpoczyna się użyć innego klucza. Zasady i szablony są natychmiast ponownie podpisane, ale tego przejścia jest stopniowego dla istniejących klientów i usług przy użyciu usługi Azure Information Protection. Dlatego przez pewien czas część nowej zawartości nadal ma być chroniona przez stary klucz dzierżawy.
+Wymiana klucza jest także określana jako uaktualnianie klucza. Po wykonaniu tej operacji usługi Azure Information Protection ta wstrzymuje korzystanie z istniejącego klucza dzierżawy do ochrony dokumentów i wiadomości e-mail, a następnie zaczyna używać innego klucza. Zasady i szablony są natychmiast ponownie podpisane, ale tej zmiany jest stopniowe dla istniejących klientów i usług przy użyciu usługi Azure Information Protection. Dlatego przez pewien czas część nowej zawartości w dalszym ciągu być chronione przy użyciu starego klucza dzierżawy.
 
-Do ponownego generowania kluczy należy skonfigurować obiekt klucza dzierżawy i określ alternatywny klucz do użycia. Następnie, wcześniej używany klucz automatycznie jest oznaczony jako zarchiwizowane usługi Azure Information Protection. Ta konfiguracja zapewnia tej zawartości, która była chroniona za pomocą tego klucza pozostaną dostępne.
+Do ponownego generowania kluczy należy skonfigurować obiekt klucza dzierżawy i określić alternatywne klucza do użycia. Następnie wcześniej używany klucz jest automatycznie oznaczony jako zarchiwizowane usługi Azure Information Protection. Ta konfiguracja zapewnia tę zawartość, która była chroniona za pomocą tego klucza będą nadal dostępne.
 
-Przykłady gdy może być konieczne ponowne generowanie kluczy dla usługi Azure Information Protection:
+Przykładem może być konieczność wymiany klucza usługi Azure Information Protection:
 
 - Firma została podzielona na dwie lub więcej firm. Po wymianie klucza dzierżawy nowa firma nie będzie miała dostępu do nowej zawartości publikowanej przez pracowników. Mogą oni uzyskać dostęp do starej zawartości, jeśli dysponują kopią starego klucza dzierżawy.
 
-- Chcesz przenieść od jednego topologii zarządzania kluczami do innego. 
+- Chcesz przenieść z jednej topologię zarządzania kluczami do innego. 
 
-- Uważasz, że zostanie naruszone bezpieczeństwo kopii głównej klucza dzierżawy (będącej w Twoim posiadaniu).
+- Uważasz, że zostanie naruszony kopii głównej klucza dzierżawy (kopia przesyłany).
 
-Aby ponowne tworzenie klucza do innego klucza, którą zarządzasz, musisz utworzyć nowy klucz w usłudze Azure Key Vault lub użyć innego klucza, który jest już w usłudze Azure Key Vault. Następnie wykonaj te same procedury, które zostało do zaimplementowania BYOK usługi Azure Information Protection.
+Aby wymienić na inny klucz, którymi zarządza użytkownik, możesz utworzyć nowy klucz w usłudze Azure Key Vault lub użyć innego klucza, który jest już w usłudze Azure Key Vault. Następnie wykonaj te same procedury, których nie było Implementowanie funkcji BYOK dla usługi Azure Information Protection.
 
-1. Tylko wtedy, gdy nowy klucz znajduje się w innym magazynie kluczy do tego, już używasz usługi Azure Information Protection: autoryzowanie usługi Azure Information Protection do używania magazynu kluczy, za pomocą [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) polecenia cmdlet.
+1. Tylko wtedy, gdy nowy klucz w innym magazynie kluczy do tego, którego już używasz usługi Azure Information Protection: autoryzowania usługi Azure Information Protection do użycia magazynu kluczy przy użyciu [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) polecenia cmdlet.
 
-2. Jeśli usługi Azure Information Protection już nie ma informacji dotyczących klucz chcesz używać, uruchom [AadrmKeyVaultKey użyj](/powershell/module/aadrm/use-aadrmkeyvaultkey) polecenia cmdlet.
+2. Jeśli usługi Azure Information Protection nie jest już znany o kluczu, którą chcesz użyć, uruchom [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) polecenia cmdlet.
 
-3. Konfigurowanie obiektu klucza dzierżawy, za pomocą opcji Uruchom [AadrmKeyProperties zestaw](/powershell/module/aadrm/set-aadrmkeyproperties) polecenia cmdlet.
+3. Skonfigurować obiekt klucza dzierżawy za pomocą opcji Uruchom [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) polecenia cmdlet.
 
 Aby uzyskać więcej informacji na temat każdego z następujących czynności:
 
-- Aby ponowne tworzenie klucza do innego klucza, którymi można zarządzać, zobacz [BYOK wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
+- Aby wymienić na inny klucz, który można zarządzać, zobacz [Implementowanie funkcji BYOK dla klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 
-- Ponowne tworzenie klucza, zmiana z kluczem programu Microsoft zarządza dla Ciebie, zobacz [ponowne tworzenie klucza z kluczem dzierżawy](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) sekcji operacjach zarządzany przez firmę Microsoft.
+- Wymiany, zmiana z kluczem przez firmę Microsoft zarządza dla Ciebie, zobacz [Wymień klucz dzierżawy](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) sekcji dla operacji zarządzanych przez firmę Microsoft.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
-Ponieważ użytkownik zarządza kluczem dzierżawy, jest odpowiedzialny za tworzenie kopii zapasowej klucza, który używa usługi Azure Information Protection. 
+Ponieważ zarządzasz swoim kluczem dzierżawy, ponosisz odpowiedzialność za tworzenie kopii zapasowej klucza, który korzysta z usługi Azure Information Protection. 
 
-Jeśli klucz dzierżawy lokalnie, jest generowany w module HSM firmy Thales: Aby utworzyć kopię zapasową klucza, należy utworzyć kopię zapasową tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. Podczas przenoszenia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu ochrony przed awarią węzły usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego tokenami plik klucza do pełnej kopii zapasowej. Na przykład, jeśli kiedykolwiek zajdzie zwykły tekst kopię klucza, aby używać poza HSM firmy Thales, usługi Azure Key Vault nie można pobrać go, ponieważ ma ona tylko nieodwracalny kopii.
+Jeśli klucz dzierżawy w środowisku lokalnym, jest generowany w module HSM firmy Thales: Aby utworzyć kopię zapasową klucza, należy utworzyć kopię zapasową tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. W przypadku przeniesienia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu zapewnienia ochrony przed awariami jakichkolwiek węzłów usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego tokenami klucza pliku pełnej kopii zapasowej. Na przykład, jeśli potrzebujesz wsparcia kopię klucza, aby używać poza modułem zabezpieczeń firmy Thales w zwykły tekst, usługi Azure Key Vault nie można pobrać go, ponieważ ma on przywrócenie kopii.
 
-Usługa Azure Key Vault ma [kopii zapasowej polecenia cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) której można utworzyć kopię zapasową klucza ją pobrać i przechowywanie ich w pliku. Ponieważ pobieranej zawartości jest zaszyfrowany, nie można używać poza usługą Azure Key Vault. 
+Usługa Azure Key Vault ma [kopii zapasowej polecenia cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) służące do tworzenia kopii zapasowych klucza, pobierając go i zapisanie go w pliku. Ponieważ pobranej zawartości jest zaszyfrowany, nie można używać poza usługi Azure Key Vault. 
 
 ## <a name="export-your-tenant-key"></a>Eksport klucza dzierżawy
 W przypadku korzystania z rozwiązania BYOK nie można wyeksportować klucza dzierżawy ani z usługi Azure Key Vault, ani z usługi Azure Information Protection. Przywrócenie kopii klucza znajdującej się w usłudze Azure Key Vault nie jest możliwe. 
 
 ## <a name="respond-to-a-breach"></a>Reakcja na naruszenie zabezpieczeń
-Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet wtedy, gdy jest on chroniony dobrze, mogą występować luki w obecnej generacji technologii klucza i algorytmy i długości kluczy.
+Żaden system zabezpieczeń, niezależnie od jego siły, nie jest kompletny bez procedur reakcji na naruszenie zabezpieczeń. Klucz dzierżawy może zostać naruszony lub skradziony. Nawet wtedy, gdy jest on chroniony dobrze, mogą występować luki w obecnej generacji technologii klucza lub w bieżącym długości kluczy i algorytmów.
 
-Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli to zdarzenie dotyczy Twoich zasobów, firma Microsoft poinformowała administratorami dzierżawy usługi Azure Information Protection pocztą e-mail za pomocą adresu podanego podczas subskrybowania.
+Firma Microsoft ma dedykowany zespół, który reaguje na przypadki naruszenia zabezpieczeń produktów i usług. Bezpośrednio po uzyskaniu wiarygodnego raportu o incydencie zespół ten bada jego zakres, przyczynę i środki naprawcze. Jeśli dane zdarzenie dotyczy Twoich zasobów, firma Microsoft poinformowała administratorów dzierżawy usługi Azure Information Protection za pośrednictwem poczty e-mail, korzystając z adresu podanego podczas rejestrowania subskrypcji.
 
 W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć użytkownik lub firma Microsoft, jest zależne od zakresu naruszenia. Firma Microsoft zapewnia wsparcie w tym procesie. Poniższa tabela przedstawia typowe sytuacje i prawdopodobne reakcje, choć dokładna reakcja jest zależna od informacji uzyskanych w trakcie badania.
 
@@ -78,8 +78,7 @@ W przypadku naruszenia zabezpieczeń najlepsze działanie, które może podjąć
 |------------------------|-------------------|
 |Przeciek klucza dzierżawy.|Wymień klucz dzierżawy. Zobacz sekcję [Wymiana klucza dzierżawy](#rekey-your-tenant-key).|
 |Nieautoryzowana osoba lub złośliwe oprogramowanie uzyskało prawa do korzystania z klucza dzierżawy, ale nie nastąpił przeciek samego klucza.|Wymiana klucza dzierżawy nie jest w tym przypadku pomocna, a problem wymaga analizy przyczyny. Jeśli za uzyskanie dostępu przez nieautoryzowaną osobę odpowiada proces lub błąd oprogramowania, sytuację należy rozwiązać.|
-|Odkryto lukę w zabezpieczeniach obecnej generacji technologii sprzętowych modułów zabezpieczeń.|Firma Microsoft musi zaktualizować sprzętowe moduły zabezpieczeń. W przypadku podejrzeń, że usterka spowodowała ujawnienie kluczy, Microsoft wyśle instrukcje do wszystkich klientów do ponowne tworzenie klucza kluczy dzierżawy.|
-|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować magazynu kluczy Azure lub usługi Azure Information Protection do obsługi nowych algorytmów i długości kluczy dłużej, które są odporne i poinstruować wszystkich klientów do ponowne tworzenie klucza swój klucz dzierżawy.|
+|Odkryto lukę w zabezpieczeniach obecnej generacji technologii sprzętowych modułów zabezpieczeń.|Firma Microsoft musi zaktualizować sprzętowe moduły zabezpieczeń. W przypadku podejrzeń, że spowodowała ujawnienie kluczy firmy Microsoft będą poinstruować wszystkich klientów wymiany kluczy dzierżawy.|
+|Odkryto lukę w zabezpieczeniach algorytmu RSA lub długości klucza albo ataki siłowe stały się wykonalne.|Firma Microsoft musi zaktualizować usługę Azure Key Vault lub Azure Information Protection, obsługę nowych algorytmów i dłuższych kluczy o większej odporności i poinstruować wszystkich klientów, aby wymienić klucz dzierżawy.|
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

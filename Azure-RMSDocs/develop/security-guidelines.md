@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258779"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371853"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Najlepsze rozwiązania w zakresie zabezpieczeń dla usługi Azure Information Protection
 
@@ -87,12 +87,10 @@ System AIP organizuje prawa kilku grup. Więcej informacji można znaleźć w te
 Interfejs API umożliwia użytkownikowi odszyfrowywanie informacji lub nie. Same informacje nie mają żadnej odziedziczonej ochrony. Jeśli użytkownik ma prawo do odszyfrowania informacji, interfejs API to umożliwia i aplikacja odpowiada za zarządzanie tymi informacjami lub ich ochronę po ich zabezpieczeniu. Aplikacja odpowiada za zarządzanie środowiskiem i interfejsem w celu zapobiegania nieautoryzowanemu korzystaniu z informacji — np. wyłącza przyciski **Drukuj** i **Kopiuj**, jeśli licencja przyznaje tylko prawo do odtwarzania. Przy użyciu pakietu testowego należy sprawdzić, czy aplikacja działa poprawnie na wszystkich prawach licencji, które rozpoznaje.
 
 ### <a name="minimum-standard"></a>Standard minimalny
-- Implementacja klienta XrML v.1.2 rights powinny być zgodne z definicjami tych praw, zgodnie z opisem w specyfikacji XrML, które są dostępne w witrynie sieci XrML Web (http://www.xrml.org). Wszelkie prawa właściwe dla aplikacji należy określić dla wszystkich obiektów, które są zainteresowane aplikacją.
+- Wdrożenia klienta praw XrML v.1.2 powinny być zgodne z definicjami tych praw, zgodnie z opisem w specyfikacjach XrML, które są dostępne w witrynie (http://www.xrml.org). Wszelkie prawa właściwe dla aplikacji należy określić dla wszystkich obiektów, które są zainteresowane aplikacją.
 - Za pomocą pakietu testowego i procesu testowania należy sprawdzić, czy aplikacja jest prawidłowo wykonywana zgodnie z uprawnieniami, które obsługuje, i że nie działa w ramach nieobsługiwanych uprawnień.
 - Jeśli tworzysz aplikację publikowania, musisz udostępnić informacje wyjaśniające, które prawa wewnętrzne są, a które nie są obsługiwane przez aplikację publikującą, a także, jak te uprawnienia należy interpretować. Użytkownik końcowy powinien także uzyskać z interfejsu użytkownika wyraźne informacje na temat skutków każdego przypadku przydzielenia lub odmowy dostępu do danej informacji.
 
 - Wszelkie uprawnienia wyodrębnione przez włączenie do nowych uprawnień wdrożonych przez aplikację muszą być mapowane do nowej terminologii. Na przykład nowe uprawnienie o nazwie MENEDŻER powinno obejmować wyodrębnione uprawnienia DRUKUJ, KOPIUJ i EDYTUJ.
 W tej chwili brak standardów zalecanych.
 W tej chwili brak standardów preferowanych.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,6 +1,6 @@
 ---
 title: Usuwanie lub zmiana kolejności etykiet usługi Azure Information Protection
-description: Można usunąć lub zmienić kolejność etykiet usługi Azure Information Protection, które są widoczne dla użytkowników.
+description: Można usunąć lub zmiana kolejności etykiet usługi Azure Information Protection, które są widoczne dla użytkowników.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,40 +10,40 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 887fbf7c349a7400e46393dc07c824238fba9e09
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 2a9c362a9a07b361cbb1567525e8242de4bff480
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326603"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373665"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Można usunąć lub zmienić kolejność etykiet usługi Azure Information Protection, które użytkownicy widzą w swoich aplikacjach pakietu Office, wybierając tych akcji dla etykiety.
+Można usunąć lub zmiana kolejności etykiet usługi Azure Information Protection, które użytkownicy zobaczą w swoich aplikacjach pakietu Office, wybierając te akcje dotyczące etykiet.
 
 ![Usuwanie lub zmiana kolejności etykiet w zasadach usługi Azure Information Protection](../media/info-protect-contextmenu.png)
 
-Po usunięciu etykietę, którą zastosowano do dokumentów i wiadomości e-mail użytkownicy widzą **Nieustawione** dla etykiety, stan, gdy te dokumenty i wiadomości e-mail dalej otwarty przez klienta usługi Azure Information Protection. Jednak pozostanie informacji etykiety w metadanych i nadal można odczytać przez usługi, które informacje etykiety do odnalezienia.
+Jeśli usuniesz etykietę, która została zastosowana do dokumentów i wiadomości e-mail, użytkownicy widzą **Nieustawione** etykiety stanu w przypadku tych dokumentów i wiadomości e-mail dalej otwarty przez klienta usługi Azure Information Protection. Jednak informacje o etykiecie jest nadal w metadanych i nadal można odczytywać przez usługi, które poszukują te informacje etykiety.
 
-Ponadto usunięto etykiety zastosowanie ochrony, czy ochrona nie zostanie usunięta. Ustawienia ochrony z etykiety pozostają i wyświetlane w **szablony ochrony** sekcji. Ten szablon teraz można przekonwertować na nową etykietę lub połączony z etykietą. Podczas pozostaje w tym szablonie, nie można utworzyć nową etykietę o takiej samej nazwie jako etykiety, który zostanie usunięty. Jeśli chcesz to zrobić, dostępne są następujące opcje:
+Ponadto jeśli usunięto etykietę zastosować ochronę, ochrona nie zostanie usunięty. Ustawienia ochrony z etykiety pozostają i wyświetlane w **szablonami ochrony** sekcji. Ten szablon można teraz konwertowane na nową etykietę lub połączone z etykiety. Ten szablon pozostaje, nie można utworzyć nową etykietę o takiej samej nazwie jak etykiety, który został usunięty. Jeśli chcesz to zrobić, masz następujące opcje:
 
-- Przekonwertować szablon na etykietę. 
+- Konwersji szablonu na etykietę. 
     
-    Ta akcja jest zalecane, ponieważ w razie potrzeby można zmienić nazwę szablonu i zmodyfikować ustawienia ochrony.
+    Ta akcja jest zalecana, ponieważ w razie potrzeby można zmienić nazwę szablonu i zmodyfikować ustawienia ochrony.
 
 - Zmień nazwę szablonu, lub usuń go za pomocą programu PowerShell.
     
-    Przed wykonaniem działania te należy wziąć pod uwagę czy innych administratorów lub usługi używany jest szablon oraz umożliwiać jej identyfikację za pomocą bieżącej nazwy. Szablon można usunąć tylko wtedy, gdy nie trzeba otwierać dokumentów lub wiadomości e-mail, które były chronione przez szablon.
+    Przed wykonaniem tych czynności należy wziąć pod uwagę czy innych administratorów lub usług są przy użyciu szablonu i identyfikację za pomocą nazwy bieżącego. Szablon można usunąć tylko wtedy, gdy nie trzeba otwierać dokumentów lub wiadomości e-mail, które były chronione przez szablon.
 
-Aby uzyskać więcej informacji o zarządzaniu szablony ochrony, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
+Aby uzyskać więcej informacji na temat zarządzania szablonami ochrony, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Aby usunąć etykietę, zamiast tego należy wziąć pod uwagę jego wyłączenie lub usunięcie go z zasad:
+Zanim usuniesz etykietę, zamiast tego należy wziąć pod uwagę jej wyłączenie lub usunięcie go z zasad:
     
-- Po wyłączeniu etykietę, którą zastosowano do dokumentów i wiadomości e-mail zastosowana etykieta nie jest usuwany z tych dokumentów i wiadomości e-mail. Etykieta pozostanie w zasadach, ale nie jest już wyświetlany jako etykietę, którą użytkownicy mogą wybrać na pasku Information Protection. Wyłączanie etykietę można zachować oryginalną konfigurację po może być użytkownikom w ramach jednych zasad wybierz etykietę w późniejszym czasie, gdy użytkownik po prostu ponownie włączyć etykiety.
+- Po wyłączeniu etykiety, która została zastosowana do dokumentów i wiadomości e-mail zastosowana etykieta nie zostanie usunięta z tych dokumentów i wiadomości e-mail. Etykieta pozostają w zasadach, ale przestanie być wyświetlana jako etykieta, który użytkownicy mogą wybrać na pasku usługi Information Protection. Wyłączenie etykiety umożliwia zachowanie oryginalnej konfiguracji, gdy być może chcesz użytkowników w ramach jednych zasad o wybranie etykiety w późniejszym czasie, gdy użytkownik po prostu ponownie włączyć etykiety.
 
-- Po usunięciu etykiety z zasad zastosowanych etykiety również nie jest usuwany z tych dokumentów i wiadomości e-mail. Jednak po usunięciu etykiety z zasad, będzie dostępny, można dodać tej etykiety na inne zasady. Aby uzyskać więcej informacji, zobacz [Dodaj lub Usuń etykietę do lub z zasad usługi Azure Information Protection](configure-policy-add-remove-label.md).
+- Gdy usuniesz etykietę z zasad zastosowana etykieta również nie zostanie usunięta z tych dokumentów i wiadomości e-mail. Ale etykieta zostanie usunięta z zasad, staje się dostępne, można dodać tej etykiety na inne zasady. Aby uzyskać więcej informacji, zobacz [apletu Dodaj lub Usuń etykietę z zasad usługi Azure Information Protection lub](configure-policy-add-remove-label.md).
 
 Kolejność etykiet określ w taki sposób, aby była ona logiczna na pasku usługi Information Protection. Przykładowo ułóż etykiety w kolejności z rosnącą ważnością, aby użytkownicy widzieli etykietę wskazującą najmniejszą ważność jako pierwszą, a etykietę wskazującą największą ważność jako ostatnią. [Zasady domyślne](configure-policy-default.md) wykorzystują tę konfigurację i odzwierciedlają rosnącą ważność nazw etykiet.
 
@@ -53,21 +53,20 @@ Kolejność etykiet określ w taki sposób, aby była ona logiczna na pasku usł
 
 Użyj poniższych instrukcji, aby wprowadzić te zmiany.
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**. 
     
-    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną z następujących czynności: 
+2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną lub więcej z następujących czynności: 
 
-    - Aby usunąć etykietę: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, którą chcesz usunąć, kliknij przycisk **Usuń tę etykietę**i kliknij przycisk **OK** o potwierdzenie. 
+    - Aby usunąć etykietę: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz usunąć, kliknij przycisk **usunąć tę etykietę**i kliknij przycisk **OK** o potwierdzenie. 
 
-    - Aby wyłączyć etykietę: wybierz etykietę, którą chcesz wyłączyć. Na **etykiety** bloku dla **włączone**, wybierz pozycję **poza**, a następnie kliknij przycisk **zapisać**.
+    - Aby wyłączyć etykietę: wybierz etykietę, którą chcesz wyłączyć. Na **etykiety** bloku dla **włączone**, wybierz opcję **poza**, a następnie kliknij przycisk **Zapisz**.
 
-    - Aby zmienić kolejność etykiet: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, którą chcesz zmienić, kliknij przycisk **Przenieś w górę** lub **Przenieś w dół** momentu etykiety w kolejności, która ma.  
+    - Aby zmienić kolejność etykiet: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz zmienić, kliknij przycisk **Przenieś w górę** lub **Przenieś w dół** momentu etykiety w kolejności, w którym chcesz.  
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

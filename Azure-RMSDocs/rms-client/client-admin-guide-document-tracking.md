@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fbf672fbdbc5fcc0538a5c5bac6b656fac3fddc7
-ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
+ms.openlocfilehash: 8153b189a6e4f77e2a4c1f7d630fbb2f32b667f1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949770"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373740"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów usługi Azure Information Protection
 
@@ -112,7 +112,7 @@ Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestro
 
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po skonfigurowaniu witryny śledzenia dokumentów klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)
@@ -123,4 +123,3 @@ Po skonfigurowaniu witryny śledzenia dokumentów klienta usługi Azure Informat
 
 - [Polecenia programu PowerShell](client-admin-guide-powershell.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

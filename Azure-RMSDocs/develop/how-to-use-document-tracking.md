@@ -14,12 +14,12 @@ ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1caac2301fd41930856e13b634ead28f7335728f
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: a16425b891329e1cb7b8e2179c05bd0e8d6c3a93
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764602"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372873"
 ---
 # <a name="how-to-use-document-tracking"></a>Instrukcje: korzystanie ze śledzenia dokumentów
 
@@ -53,5 +53,3 @@ Wybierz typ zasad: szablon lub ad hoc:
 -   Na koniec wywołaj metodę rejestracji platformy w celu śledzenia dokumentów.
   - Android — [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) lub [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
   - iOS — [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

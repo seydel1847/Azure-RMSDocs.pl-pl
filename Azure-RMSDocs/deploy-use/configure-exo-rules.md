@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: cbb34f8417f3f4d63369399ffe962e7c957f65a6
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: cebfc618e4d1660bbae371d1f54f764b67f642b0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069842"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372788"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Konfigurowanie reguły przepływu poczty usługi Exchange Online dla etykiety usługi Azure Information Protection
 
@@ -124,11 +124,10 @@ Ta etykieta służy do klasyfikowania i ochrony dokumentów, których używasz d
 Aby uzyskać więcej informacji na temat opcji szyfrowania, zobacz [opcja tylko do szyfrowania wiadomości e-mail](configure-usage-rights.md#encrypt-only-option-for-emails).
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać informacje na temat tworzenia i konfigurowania etykiet do korzystania z usługi Exchange Online reguły przepływu poczty, zobacz [zasad konfigurowania usługi Azure Information Protection](../deploy-use/configure-policy.md).
 
 Ponadto ułatwia klasyfikowanie wiadomości e-mail, które zawierają załączniki, należy wziąć pod uwagę przy użyciu następujących usługi Azure Information Protection [ustawienie zasad](configure-policy-settings.md): **w przypadku wiadomości e-mail z załącznikami Zastosuj etykietę, która odpowiada najwyższej klasyfikacji tych załączników**.
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 989f75361d96680bf0bedff00251b6d60aa999c5
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 98fe9b957d577cc59a719dbe5a7ba3b532ea8c87
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216872"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371411"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Udostępnia ona ochrony danych organizacji dokumentów i wiadomości e-mail i może rejestrować wszystkie żądania do niego. Gdy użytkownicy ochrony dokumentów i wiadomości e-mail, a także korzystać z tej zawartości, akcje wykonywane przez administratorów z tej usługi i akcje wykonywane przez operatorów firmy Microsoft do obsługi wdrożenia usługi Azure Information Protection zawierać te żądania. 
+Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Ta usługa zapewnia ochronę danych dla Twojej organizacji, dokumentów i wiadomości e-mail, może rejestrować wszystkie żądania do niego. Te żądania obejmują, gdy użytkownicy chronić dokumenty i wiadomości e-mail i również używanie tej zawartości, akcje wykonywane przez administratorów dla tej usługi i akcje wykonywane przez operatorów firmy Microsoft w celu obsługi wdrożenia usługi Azure Information Protection. 
 
 Dzienniki usługi Azure Rights Management można następnie wykorzystać na potrzeby następujących scenariuszy biznesowych:
 
@@ -39,19 +39,19 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
 
 -   **Wykonywanie analizy śledczej**
 
-    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Gdy używasz tego rejestrowania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy, które są chronione przez usługę Azure Rights Management, nawet jeśli te pliki są pozwala odpowiedzieć na tego rodzaju pytania przesyłane pocztą e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
+    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Tego rodzaju pytania pozwala odpowiedzieć na korzystanie z funkcji rejestrowania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy, które są chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane za pośrednictwem poczty e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
-Oprócz tego rejestrowania użycia, również są następujące opcje rejestrowania:
+Oprócz tego rejestrowania użycia, także mają następujące opcje rejestracji:
 
 |Opcja rejestrowania|Opis|
 |----------------|---------------|
-|Administrator dziennika|Rejestruje zadania administracyjne dla usługi Azure Rights Management. Na przykład, jeśli usługa jest wyłączone, po włączeniu funkcji administratorów i użytkowników są uprawnienia administratora delegowanego do usługi. <br /><br />Aby uzyskać więcej informacji, zobacz polecenie cmdlet programu PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
-|śledzenie dokumentów|Umożliwia użytkownikom śledzenie i odwoływanie swoje dokumenty, które mają one śledzone klienta Azure Information Protection lub aplikacji do udostępniania usług RMS. Administratorzy globalni mogą również śledzić te dokumenty w imieniu użytkowników. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie śledzenia dokumentów dla usługi Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
-|Dzienników zdarzeń klienta|Działanie użycia dla klienta usługi Azure Information Protection zarejestrowane w lokalnym systemie Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia dla klienta usługi Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
-|Pliki dziennika klienta|Rozwiązywanie problemów z dzienników dla klienta usługi Azure Information Protection, znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla Microsoft Support.|
+|Dziennik administratora|Rejestruje zadania administracyjne dla usługi Azure Rights Management. Na przykład, jeśli usługa jest dezaktywowany, gdy jest włączona funkcja administratora i, gdy użytkownicy są uprawnienia administratora delegowanego do usługi. <br /><br />Aby uzyskać więcej informacji, zobacz polecenia cmdlet programu PowerShell [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog).|
+|Śledzenie dokumentów|Umożliwia użytkownikom śledzenie i odwoływanie dokumentów, które mają one śledzone za pomocą klienta usługi Azure Information Protection lub aplikację RMS sharing. Administratorzy globalni mogą również śledzić te dokumenty w imieniu użytkowników. <br /><br />Aby uzyskać więcej informacji, zobacz [Konfigurowanie i używanie śledzenia dokumentów usługi Azure Information Protection](../rms-client/client-admin-guide-document-tracking.md).|
+|Dzienniki zdarzeń klienta|Działania dla klienta usługi Azure Information Protection, rejestrowane w lokalnym Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia klienta usługi Azure Information Protection](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
+|Pliki dziennika klienta|Rozwiązywanie problemów z dzienników dla klienta usługi Azure Information Protection znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla programu Microsoft Support.|
 
 
-Użyj poniższych sekcji, aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management. 
+Aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management, należy użyć poniższych sekcjach. 
 
 ## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Włączanie rejestrowania użycia usługi Azure Rights Management
 Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączone dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure Rights Management przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 
@@ -68,7 +68,7 @@ Usługa Azure Rights Management zapisuje dzienniki na koncie magazynu Azure w po
 
 Może upłynąć trochę czasu zanim dzienniki będą widoczne na koncie magazynu po akcji usługi Azure Rights Management. Większość dzienników pojawia się w ciągu 15 minut. Zalecamy pobranie dzienników do lokalnego magazynu, na przykład folderu lokalnego, bazy danych lub repozytorium MapReduce.
 
-Aby pobrać dzienniki użycia, należy skorzystać z modułu administracyjnego usługi Azure Rights Management dla programu Windows PowerShell. Aby uzyskać instrukcje instalacji, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md). Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż **2.4.0.0**: `(Get-Module aadrm -ListAvailable).Version` 
+Aby pobrać dzienniki użycia, należy skorzystać z modułu administracyjnego usługi Azure Rights Management dla programu Windows PowerShell. Aby uzyskać instrukcje dotyczące instalacji, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md). Jeśli ten moduł programu Windows PowerShell został już wcześniej pobrany, wykonaj następujące polecenie, aby sprawdzić, czy numer wersji nie jest niższy niż **2.4.0.0**: `(Get-Module aadrm -ListAvailable).Version` 
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>Pobieranie dzienników użycia za pomocą programu PowerShell
 
@@ -177,31 +177,31 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 
 |Typ żądania|Opis|
 |----------------|---------------|
-|AcquireLicense|Klient z komputera z systemem Windows żąda licencji dla zawartości chronionej przez usługi RMS.|
+|AcquireLicense|Klient z komputera z systemem Windows żąda licencji dla zawartości chronionej przez usługę RMS.|
 |AcquirePreLicense|Klient w imieniu użytkownika żąda licencji dla zawartości chronionej przez usługę RMS.|
 |AcquireTemplates|Wykonano wywołanie pobrania szablonów na podstawie identyfikatorów szablonów.|
 |AcquireTemplateInformation|Wykonano wywołanie pobrania identyfikatorów szablonu z usługi.|
-|AddTemplate|Połączenie jest nawiązywane z portalu Azure dotyczące dodania szablonu.|
+|AddTemplate|Aby dodać szablon Wykonano wywołanie z witryny Azure portal.|
 |AllDocsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV ze strony **Wszystkie dokumenty**.|
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
 |Certify|Klient certyfikuje zawartość objętą ochroną.|
-|DeleteTemplateById|Połączenie jest nawiązywane z portalu Azure można usunąć identyfikatora szablonu przez szablonu.|
+|DeleteTemplateById|Wykonano wywołanie z witryny Azure portal, można usunąć identyfikatora szablonu przez szablonu.|
 |DocumentEventsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV dla pojedynczego dokumentu.|
-|ExportTemplateById|Połączenie jest nawiązywane z portalu Azure dotyczące eksportowania szablonu na podstawie identyfikatora szablonu.|
+|ExportTemplateById|Wykonano wywołanie z witryny Azure portal do eksportowania szablonu na podstawie identyfikatora szablonu.|
 |FECreateEndUserLicenseV1|Działanie podobne do typu żądania AcquireLicense, ale dotyczy urządzeń przenośnych.|
 |FECreatePublishingLicenseV1|Działanie takie samo, jak połączonych typów żądań Certify i GetClientLicensorCert, ale dotyczy klientów mobilnych.|
 |FEGetAllTemplates|Wykonano wywołanie z urządzenia przenośnego (fronton) dotyczące pobrania szablonów.|
 |FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
 |GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: użytkownik wyświetla stronę **wszystkie dokumenty** dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: administrator wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action ma wartość true, pole acting-as-user nie jest puste: administrator wyświetla stronę **wszystkie dokumenty** dla użytkownika.|
-|GetAllTemplates|Połączenie jest nawiązywane z portalu Azure dotyczące pobrania wszystkich szablonów.|
+|GetAllTemplates|Wykonano wywołanie z witryny Azure portal w celu pobrania wszystkich szablonów.|
 |GetClientLicensorCert|Klient żąda certyfikatu publikowania (który jest później używany do ochrony zawartości) z komputera z systemem Windows.|
 |GetConfiguration|Wykonano wywołanie polecenia cmdlet programu Azure PowerShell w celu pobrania konfiguracji dzierżawy usługi Azure RMS.|
 |GetConnectorAuthorizations|Wykonano wywołanie z łączników usługi RMS dotyczące pobrania ich konfiguracji z chmury.|
 |GetRecipients|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku listy dla pojedynczego dokumentu.|
 |GetSingle|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do strony **pojedynczego dokumentu**.|
 |GetTenantFunctionalState|Azure portal sprawdza, czy usługa Azure Rights Management została aktywowana.|
-|GetTemplateById|Połączenie jest nawiązywane z portalu Azure w przypadku pobrania szablonu przez określenie identyfikatora szablonu.|
+|GetTemplateById|Wykonano wywołanie z witryny Azure portal do pobrania szablonu przez określenie identyfikatora szablonu.|
 |KeyVaultDecryptRequest|Klient próbuje odszyfrować zawartość chronioną przez usługę RMS. Dotyczy tylko klucza dzierżawy zarządzanego przez klienta (BYOK) w usłudze Azure Key Vault.|
 |KeyVaultGetKeyInfoRequest|Wykonywane jest wywołanie, aby sprawdzić, czy klucz podany do wykorzystania w usłudze Azure Key Vault dla klucza dzierżawy usługi Azure Information Protection jest dostępny i czy nie jest już używany.|
 |KeyVaultSignDigest|Wykonywane jest wywołanie, gdy klucz zarządzany przez klienta (BYOK) w usłudze Azure Key Vault jest używany w celu złożenia podpisu. Jest to zazwyczaj jedno wywołanie dla typów żądań AcquireLicence (lub FECreateEndUserLicenseV1), Certify i GetClientLicensorCert (lub FECreatePublishingLicenseV1).|
@@ -210,14 +210,14 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |LoadEventsForMap|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
 |LoadEventsForSummary|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku osi czasu dla pojedynczego dokumentu.|
 |LoadEventsForTimeline|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące przejścia do widoku mapy dla pojedynczego dokumentu.|
-|ImportTemplate|Połączenie jest nawiązywane z portalu Azure dotyczące importowania szablonu.|
+|ImportTemplate|Aby zaimportować szablon Wykonano wywołanie z witryny Azure portal.|
 |RevokeAccess|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące odwołania dokumentu.|
 |SearchUsers |Wykonano wywołanie z witryny śledzenia dokumentów dotyczące wyszukania wszystkich użytkowników w dzierżawie.|
 |ServerCertify|Wykonano wywołanie z klienta z obsługą usługi RMS (na przykład programu SharePoint) dotyczące certyfikacji serwera.|
 |SetUsageLogFeatureState|Wykonano wywołanie dotyczące włączenia rejestrowania użycia.|
 |SetUsageLogStorageAccount|Wykonano wywołanie dotyczące określenia lokalizacji dzienników usługi Azure Rights Management.|
 |UpdateNotificationSettings|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące zmiany ustawień powiadomień dla pojedynczego dokumentu.|
-|UpdateTemplate|Połączenie jest nawiązywane z portalu Azure do zaktualizowania istniejącego szablonu.|
+|UpdateTemplate|Wykonano wywołanie z witryny Azure portal można zaktualizować istniejącego szablonu.|
 
 
 ## <a name="windows-powershell-reference"></a>Uwagi dotyczące programu Windows PowerShell
@@ -243,6 +243,5 @@ Jeśli masz w magazynie Azure dzienniki sprzed zmiany funkcji rejestrowania usł
 
 Aby uzyskać więcej informacji na temat korzystania z programu Windows PowerShell z usługą Azure Rights Management, zobacz temat [Administrowanie usługą Azure Rights Management przy użyciu programu Windows PowerShell](administer-powershell.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

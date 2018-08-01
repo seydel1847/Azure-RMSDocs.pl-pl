@@ -4,7 +4,7 @@ description: Informacje pomagające zrozumieć i zidentyfikować określone praw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2018
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f632acdb4091967b0d8f5aebab97464d69b0b2e3
-ms.sourcegitcommit: 752368caff1bf5bff64a5d262e7bc4105d906827
+ms.openlocfilehash: b7f018a67808b1d3cf39099f8a22202cbf82bd5f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39270625"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371479"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -40,7 +40,7 @@ Poniższa tabela zawiera listę i opisy praw użytkowania obsługiwanych przez u
 
 |Prawa użytkowania|Opis|Implementacja|
 |-------------------------------|---------------------------|-----------------|
-|Nazwa pospolita: **Edytuj zawartość, Edytuj** <br /><br />Kodowanie w zasadach: **DOCEDIT**|Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie, lub sortowanie zawartości wewnątrz aplikacji. Nie nadaje prawa do zapisywania edytowanej kopii.<br /><br />W programie Word, chyba że usługi Office 365 ProPlus z minimalną wersją 1807 (kompilacja minimalne 10325.20000), to prawo nie jest wystarczające, aby włączyć lub wyłączyć **śledzenie zmian**, lub aby korzystać ze wszystkich śledzenie zmian funkcji jako recenzenta. Zamiast tego należy używać śledzenia zmian ma następujące wymagania opcje po prawej stronie: **Pełna kontrola**. |W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Edytuj zawartość**<br /><br />Nazwa w witrynie Azure portal: **Edytuj zawartość, Edytuj (DOCEDIT)**<br /><br />Nazwa w szablonach usługi AD RMS: **Edytuj** <br /><br />Stała lub wartość interfejsu API: nie dotyczy.|
+|Nazwa pospolita: **Edytuj zawartość, Edytuj** <br /><br />Kodowanie w zasadach: **DOCEDIT**|Zezwala użytkownikowi na modyfikowanie, rozmieszczanie, formatowanie, lub sortowanie zawartości wewnątrz aplikacji. Nie nadaje prawa do zapisywania edytowanej kopii.<br /><br />W programie Word chyba że usługi Office 365 ProPlus za pomocą minimalnej wersji [1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25), to prawo nie jest wystarczające włączyć lub wyłączyć **śledzenie zmian**, lub aby korzystać ze wszystkich śledzenie zmian funkcji jako recenzenta. Zamiast tego należy używać śledzenia zmian ma następujące wymagania opcje po prawej stronie: **Pełna kontrola**. |W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Edytuj zawartość**<br /><br />Nazwa w witrynie Azure portal: **Edytuj zawartość, Edytuj (DOCEDIT)**<br /><br />Nazwa w szablonach usługi AD RMS: **Edytuj** <br /><br />Stała lub wartość interfejsu API: nie dotyczy.|
 |Nazwa pospolita: **Zapisz** <br /><br />Kodowanie w zasadach: **EDIT**|Umożliwia użytkownikowi zapisanie dokumentu w bieżącej lokalizacji.<br /><br />W aplikacjach pakietu Office to prawo zezwala użytkownikowi na modyfikowanie dokumentu i zapisz go na nową lokalizację i nazwę, jeśli wybrany format pliku natywnie obsługuje ochronę usługi Rights Management. Ograniczenia formatu pliku gwarantuje, że oryginalna ochrony nie można usunąć z pliku.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Zapisz plik**<br /><br />Nazwa w witrynie Azure portal: **Zapisz (EDIT)**<br /><br />Nazwa w szablonach usługi AD RMS: **Zapisz** <br /><br />Stała API lub wartość API: `IPC_GENERIC_WRITE L"EDIT"`|
 |Nazwa pospolita: **Komentarz** <br /><br />Kodowanie w zasadach: **COMMENT**|Pozwala dodawać adnotacje i komentarze do zawartości.<br /><br />To uprawnienie jest dostępne w zestawie SDK oraz jest dostępne w formie zasad ad hoc w usłudze Azure Information Protection i w module RMS Protection w środowisku Windows PowerShell. Zostało też zaimplementowane w niektórych aplikacjach dostawców oprogramowania. Nie jest jednak powszechnie używane i obecnie nie jest obsługiwane przez aplikacje pakietu Office.|W prawach niestandardowych pakietu Office: nie zaimplementowane. <br /><br />Nazwa w klasycznym portalu Azure: nie zaimplementowane.<br /><br />Nazwa w witrynie Azure Portal: nie zaimplementowane.<br /><br />Nazwa w szablonach usługi AD RMS: nie zaimplementowane. <br /><br />Stała API lub wartość API: `IPC_GENERIC_COMMENT L"COMMENT`|
 |Nazwa pospolita: **Zapisz jako, Eksportuj** <br /><br />Kodowanie w zasadach: **EXPORT**|Włącza opcję zapisu zawartości w pliku o innej nazwie (Zapisz jako). <br /><br />Dla dokumentów pakietu Office i klienta usługi Azure Information Protection plik może być zapisany bez ochrony i również ponownie objęta ochroną przy użyciu nowych ustawień i uprawnień. Te dozwolone operacje oznacza, że użytkownik, który ma te uprawnienia można zmienić lub usunąć etykiety usługi Azure Information Protection z chronionego dokumentu lub wiadomości e-mail. <br /><br />To uprawnienie umożliwia też użytkownikowi korzystanie z innych opcji eksportu w aplikacjach, np. opcji **Wyślij do programu OneNote**.<br /><br /> Uwaga: jeśli nie udzielono tego uprawnienia, aplikacje pakietu Office umożliwiają użytkownikowi zapis dokumentu pod nową nazwą, jeśli wybrany format pliku natywnie obsługuje ochronę za pomocą usługi Microsoft Rights Management.|W prawach niestandardowych pakietu Office: jako część opcji **Zmiana** i **Pełna kontrola**. <br /><br />Nazwa w klasycznym portalu Azure: **Eksportuj zawartość (Zapisz jako)** <br /><br />Nazwa w witrynie Azure portal: **Zapisz jako, Eksportuj (EXPORT)**<br /><br />Nazwa w szablonach usługi AD RMS: **Eksportuj (Zapisz jako)** <br /><br />Stała API lub wartość API: `IPC_GENERIC_EXPORT L"EXPORT"`|
@@ -182,5 +182,4 @@ Domyślnie używać okres ważności licencji, dla dzierżawy wynosi 30 dni i t�
 
 [Konfigurowanie superużytkowników usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych](configure-super-users.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

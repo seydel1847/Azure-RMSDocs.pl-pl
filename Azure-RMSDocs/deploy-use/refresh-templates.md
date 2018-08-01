@@ -12,26 +12,26 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5bbefccbcf5d529d64b613220013a0988fa4808a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: ce9e189ffdad0ab2020aa38258c06ac27230a280
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206021"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369894"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Odświeżanie szablonów dla użytkowników i usług
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure Information Protection szablony są automatycznie pobierane na komputery klienckie, dzięki czemu użytkownicy mogą wybrać je z poziomu ich aplikacji. W przypadku wprowadzenia zmian do szablonów może być jednak konieczne wykonanie dodatkowych czynności:
 
 |Aplikacja lub usługa|Odświeżanie szablonów po wprowadzeniu zmian|
 |--------------------------|---------------------------------------------|
-|Exchange Online<br /><br />Ma zastosowanie do reguł transportu i aplikacji sieci Web programu Outlook |Odświeżane automatycznie w ciągu godziny — nie wymaga dodatkowych kroków.<br /><br />Dotyczy to sytuacji, gdy używasz [szyfrowanie wiadomości usługi Office 365 z nowych funkcji](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Jeśli wcześniej skonfigurowano usługi Exchange Online do korzystania z usługi Azure Rights Management przez zaimportowanie zaufaną domenę publikacji (TPD), użyj ten sam zestaw instrukcji, aby włączyć nowe funkcje w programie Exchange Online.|
-|Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> -Gdy skaner ochrony informacji Azure usługa zostanie uruchomiona i lokalnych zasad jest starsza niż godzinę. Ponadto usługa skanera sprawdza obecność zmian co godzinę i używa tych zmian na następny cykl skanowania.<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto, jako że klient usługi Azure Information Protection jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
+|Exchange Online<br /><br />Ma zastosowanie do reguł transportu i aplikacji Outlook Web App |Odświeżane automatycznie w ciągu godziny — nie wymaga dodatkowych kroków.<br /><br />Dotyczy to sytuacji, jeśli używasz [szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Jeśli wcześniej skonfigurowano usługi Exchange Online do korzystania z usługi Azure Rights Management, importując zaufaną domenę publikacji (TPD), użyj tego samego zestawu instrukcji włączyć nowych funkcji w programie Exchange Online.|
+|Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> — W przypadku usługa zostanie uruchomiona skaner ochrony informacji Azure i lokalne zasady jest starsza niż jedna godzina. Ponadto usługa skaner sprawdza obecność zmian co godzinę i używa tych zmian na następny cykl skanowania.<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto, jako że klient usługi Azure Information Protection jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
 |Pakiety Office 2016 i Office 2013<br /><br />Aplikacja RMS sharing dla systemu operacyjnego Windows|Automatycznie odświeżane — według harmonogramu:<br /><br />– W przypadku nowszych wersji pakietu Office: odświeżanie odbywa się domyślnie co 7 dni.<br /><br />– W przypadku aplikacji RMS sharing dla systemu Windows: od wersji 1.0.1784.0 domyślne ustawienie uwzględnia codzienne odświeżanie. W przypadku wcześniejszych wersji odświeżanie odbywa się domyślnie co 7 dni.<br /><br />Aby wymusić odświeżenie w terminie wcześniejszym niż ujęty w harmonogramie, zobacz następującą sekcję: [Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Pakiet Office 2010|Automatyczne odświeżanie, gdy użytkownik wyloguje się z systemu Windows, zaloguje się ponownie i odczeka maksymalnie 1 godzinę.|
-|Lokalna instalacja programu Exchange z łącznikiem usługi Rights Management<br /><br />Ma zastosowanie do reguł transportu i aplikacji sieci Web programu Outlook|Automatyczne odświeżanie — nie wymaga dodatkowych kroków. Jednak aplikacja sieci Web programu Outlook buforuje interfejs użytkownika na dzień.|
+|Lokalna instalacja programu Exchange z łącznikiem usługi Rights Management<br /><br />Ma zastosowanie do reguł transportu i aplikacji Outlook Web App|Automatyczne odświeżanie — nie wymaga dodatkowych kroków. Jednak aplikacja Outlook Web App buforuje interfejs użytkownika na dzień.|
 |Office 2016 dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 |Aplikacja RMS sharing dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 
@@ -80,7 +80,7 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
     > [!TIP]
     > W ścieżce rejestru ciąg <*MicrosoftRMS_FQDN*> odnosi się do nazwy FQDN usługi RMS firmy Microsoft. Aby sprawdzić tę wartość:
 
-    > Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli nie został już zainstalowany moduł programu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu programu PowerShell AADRM](install-powershell.md).
+    > Uruchom polecenie cmdlet [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) dla usługi Azure RMS. Jeśli użytkownik jeszcze nie zainstalowano modułu Windows PowerShell dla usługi Azure RMS, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
     >
     > Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
     >
@@ -96,6 +96,5 @@ Edytując rejestr na komputerach z pakietem Office 2016 lub Office 2013 albo z a
 
 
 ## <a name="see-also"></a>Zobacz też
-[Konfigurowanie szablonów i zarządzania nimi w ramach zasad usługi Azure Information Protection](../deploy-use/configure-policy-templates.md)
+[Konfigurowanie szablonów i zarządzanie nimi w zasadach usługi Azure Information Protection](../deploy-use/configure-policy-templates.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

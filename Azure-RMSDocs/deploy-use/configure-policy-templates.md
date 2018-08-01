@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
-ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
+ms.openlocfilehash: f9cc93de344f6aef603cdc4c52771133dea13bfe
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138308"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371319"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
@@ -164,4 +164,3 @@ Wszystko, co można skonfigurować w witrynie Azure portal do tworzenia i zarzą
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

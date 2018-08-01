@@ -14,12 +14,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 300fb1d14bc4eda93b0e40ffbd9e6c2329c88517
-ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
+ms.openlocfilehash: 1e69ab449b3be6d3a081b6b5ca16767a69ee54da
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2018
-ms.locfileid: "28908089"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373502"
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
@@ -38,7 +38,7 @@ W treści wiadomości e-mail umieść następujące dane:
 - Imię i nazwisko osoby żądającej
 - Adres e-mail osoby żądającej
 
-### <a name="next-steps"></a>Następne kroki
+### <a name="next-steps"></a>Kolejne kroki
 Po otrzymaniu żądania umowy IPIA wyślemy formularz (jako dokument programu Word).
 Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza **IPIA@microsoft.com** w celu podania następujących informacji:
 - Prawna nazwa firmy
@@ -126,4 +126,3 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
 * [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
 * [Umożliwianie współpracy aplikacji z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

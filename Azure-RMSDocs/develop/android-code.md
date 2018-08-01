@@ -14,29 +14,29 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f23f8d1d4deddb1a0ee70a755cf94637396337c0
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 96872a15d99e72c467ad968189fdd5e6e26ebf61
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
-ms.locfileid: "27927128"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370578"
 ---
 # <a name="android-code-examples"></a>Przykłady kodu dla systemu Android
 
-W tym artykule przedstawiono sposób code elementy dla systemu Android wersji zestawu RMS SDK.
+W tym artykule przedstawiono kod elementy dla zestawu RMS SDK w wersji dla systemu Android.
 
-**Uwaga** w tym artykule określenie _MSIPC_ (Microsoft Information Protection i sterowania) odwołuje się do procesu klienta.
+**Uwaga** w tym artykule określenie _MSIPC_ (Microsoft Information Protection i kontroli) odwołuje się do procesu klienta.
 
 
 ## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
-Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazywały sposób użycia:
+Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują sposób użycia:
 
 - Format Microsoft Protected File, nazywany również _pliku chronionego_.
 - Formaty plików chroniony niestandardowo
-- Formanty niestandardowego interfejsu użytkownika (UI)
+- Określa, niestandardowego interfejsu użytkownika (UI)
 
-*MSIPCSampleApp* Przykładowa aplikacja jest dostępna do użycia z tym zestawem SDK dla systemu operacyjnego Android. Aby dowiedzieć się więcej, zobacz [rms-zestawu sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android).
+*MSIPCSampleApp* Przykładowa aplikacja jest dostępna do użycia z tym zestawem SDK dla systemu operacyjnego Android. Aby dowiedzieć się więcej, zobacz [rms — zestaw sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android).
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: korzystanie z pliku chronionego przez usługę RMS
 
@@ -44,7 +44,7 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
 
     **Źródło**: *MsipcAuthenticationCallback.java*
 
-    **Opis elementu**: Utwórz wystąpienie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) obiektu i implementuje uwierzytelnianie usługi.  Użyj [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758250.aspx) do pobrania tokenu przez przekazanie wystąpienia **AuthenticationRequestCallback**, jako parametr *mRmsAuthCallback*, aby MSIPC INTERFEJS API. Zobacz wywołanie [ProtectedFileInputStream.create](https://msdn.microsoft.com/library/dn790851.aspx) pod koniec sekcji przykładu kodu poniżej.
+    **Opis**: Utwórz wystąpienie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) object i implementowanie uwierzytelniania usługi.  Użyj [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758250.aspx) do pobrania tokenu przez przekazanie wystąpienia **AuthenticationRequestCallback**, jako parametr *mRmsAuthCallback*, aby MSIPC INTERFEJS API. Zobacz wywołanie [ProtectedFileInputStream.create](https://msdn.microsoft.com/library/dn790851.aspx) pod koniec sekcji przykładu kodu poniżej.
 
     ``` java
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
@@ -106,11 +106,11 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
         }
     ```
 
-- **Krok 2**: Konfigurowanie uwierzytelniania przy użyciu biblioteki uwierzytelniania usługi Active Directory (ADAL).
+- **Krok 2**: Konfigurowanie uwierzytelniania za pomocą biblioteki uwierzytelniania usługi Active Directory (ADAL).
 
     **Źródło**: *MsipcAuthenticationCallback.java*.
 
-    **Opis elementu**: ten krok używa biblioteki ADAL do zaimplementowania [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) z przykładowymi parametrami uwierzytelniania. Aby dowiedzieć się więcej, zobacz [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
+    **Opis**: ten krok używa biblioteki ADAL w celu zaimplementowania [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) z przykładowymi parametrami uwierzytelniania. Aby dowiedzieć się więcej, zobacz [usługi Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
 
 
     ``` java
@@ -531,7 +531,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
     **Źródło**: *MsipcTaskFragment.java*
 
-    **Opis elementu**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia; [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) i [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx).
+    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) i [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx).
 
     ``` java
       // create userRights list
@@ -627,5 +627,3 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
           …
         }
     ```
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

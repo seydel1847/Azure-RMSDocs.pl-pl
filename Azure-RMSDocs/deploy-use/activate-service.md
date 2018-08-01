@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 46c13b70e0b922b9b4d403d9801a192bb649497f
-ms.sourcegitcommit: 4bda470156d18ee8289752d37789feb1ae758a6b
+ms.openlocfilehash: 1471ba6a16abf2b227c709925a76a23e888f0b5b
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37925028"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372482"
 ---
 # <a name="activating-azure-rights-management"></a>Aktywacja usługi Azure Rights Management
 
@@ -109,12 +109,11 @@ Aby uzyskać więcej informacji na temat tego polecenia cmdlet i dodatkowe przyk
 Jeśli skorzystasz z tych kontrolek dołączania, wszyscy użytkownicy w organizacji zawsze będą mogli skorzystać z chronionej zawartości, która została zabezpieczona przez wybrany podzbiór użytkowników, ale nie będą mogli stosować własnoręcznie funkcji ochrony informacji za pośrednictwem aplikacji klienckich. Na przykład, nie będą widzieć w swoich aplikacjach pakietu Office domyślnych szablonów automatycznie publikowanych po aktywacji usługi Azure Rights Management lub szablonów niestandardowych, które można konfigurować. Aplikacje serwerowe, np. program Exchange, mogą wdrażać własne kontrolki dołączania dla integracji z usługą Rights Management, aby osiągnąć ten sam rezultat. Na przykład, aby uniemożliwić użytkownikom ochronę wiadomości e-mail w programie Outlook w sieci web, należy użyć [OwaMailboxPolicy zestaw](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps) można ustawić *IRMEnabled* parametr *$false*.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po aktywowaniu usługi Azure Rights Management dla swojej organizacji, użyj [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md) do sprawdzenia, czy istnieją inne czynności konfiguracyjne, które należy wykonać przed wdrożeniem Usługa Azure Information Protection dla użytkowników i administratorów. 
 
-Na przykład możesz chcieć użyć [szablony](configure-policy-templates.md) aby ułatwić użytkownikom stosowanie ochrony informacji wobec plików, połączyć z serwerów lokalnych do użycia [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] , instalując [łącznika usługi Rights Management ](deploy-rms-connector.md)i wdrożyć [klienta Azure Information Protection](../rms-client/aip-client.md) , która obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
+Na przykład możesz chcieć użyć [szablony](configure-policy-templates.md) aby ułatwić użytkownikom stosowanie ochrony informacji wobec plików, połączyć z serwerów lokalnych do użycia [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] , instalując [łącznika usługi Rights Management ](deploy-rms-connector.md)i wdrożyć [klienta Azure Information Protection](../rms-client/aip-client.md) , która obsługuje ochronę wszystkich typów plików na wszystkich urządzeniach. 
 
 Usługi pakietu Office, np. Exchange Online i SharePoint Online, wymagają przeprowadzenia dodatkowej konfiguracji przed użyciem narzędzia Zarządzanie prawami do informacji (IRM). Aby uzyskać informacje o współdziałaniu aplikacji z usługą Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md).
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

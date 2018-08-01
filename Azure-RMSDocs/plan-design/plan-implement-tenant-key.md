@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6456bb5e124b1ec29090132e0bce750260c10f25
-ms.sourcegitcommit: b993c332e53d7aa48d93d4bbd42c80abcf79b351
+ms.openlocfilehash: e38f2c84e450b11ea8d86aa8b1680e4754a5aae4
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37107019"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372655"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -175,7 +175,7 @@ Jeśli potrzebujesz upewnić się, że klucz adresu URL jest ustawione prawidło
 Ponadto jeśli usługi Azure Rights Management została już aktywowana, uruchom [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) mówić usługi Azure Information Protection do użycia tego klucza jako aktywnego klucza dzierżawy usługi Azure Rights Management. Po wykonaniu tego kroku, nadal użycia klucza zarządzanego przez firmę Microsoft domyślny, który został utworzony automatycznie dla dzierżawy usługi Azure Information Protection.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Teraz, gdy zaplanowaniu dla i jeśli to konieczne, utworzyć i skonfigurować klucz dzierżawy, wykonaj następujące czynności:
 
@@ -198,5 +198,3 @@ Teraz, gdy zaplanowaniu dla i jeśli to konieczne, utworzyć i skonfigurować kl
 3.  Zarządzanie kluczem dzierżawy.
     
     Aby uzyskać więcej informacji na temat operacji cyklu życia klucza dzierżawy, zobacz [operacje związane z kluczem dzierżawy usługi Azure Information Protection](../deploy-use/operations-tenant-key.md).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

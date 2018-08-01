@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4f37d2c3e7a90171662d91a4f78d61b629dd650
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9aa69746786100df389997a7dca674a159edcb26
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207482"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373808"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna aplikacja do pobrania dla systemu Microsoft Windows i innych platform, która zapewnia następujące korzyści:
@@ -68,7 +68,7 @@ W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pl
 |xml|pxml|
 |jpg|pjpg|
 |jpeg|pjeg|
-|pdf|ppdf|
+|.pdf|ppdf|
 |PNG|ppng|
 |tif|ptif|
 |tiff|ptiff|
@@ -135,4 +135,3 @@ Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając 
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

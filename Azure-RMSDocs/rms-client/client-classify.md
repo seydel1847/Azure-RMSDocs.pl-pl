@@ -1,5 +1,5 @@
 ---
-title: Klasyfikowania plików i wiadomości e-mail przy użyciu usługi Azure Information Protection
+title: Sklasyfikować pliki i wiadomości e-mail przy użyciu usługi Azure Information Protection
 description: Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomości e-mail.
 author: cabailey
 ms.author: cabailey
@@ -12,36 +12,36 @@ ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0d3abf33ada7c639c1e7b0bad67c36636a9a0951
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 045df42bf847630b89458dabb6e8438a6f97d5b0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205918"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372985"
 ---
-# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowania plików lub wiadomości e-mail przy użyciu usługi Azure Information Protection
+# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 > [!NOTE]
-> Użyj tych instrukcji, aby ułatwić klasyfikowania (ale nie chroni) dokumentów i wiadomości e-mail. Jeśli konieczne jest również ochrony dokumentów i wiadomości e-mail, zobacz [klasyfikować i chronić instrukcje](client-classify-protect.md). Jeśli nie masz pewności, zestaw instrukcji do użycia, skontaktuj się z administratorem lub pomocą techniczną.
+> Użyj tych instrukcji, aby ułatwić klasyfikowania (ale nie chroni) swoje dokumenty i wiadomości e-mail. Jeśli musisz również chronić swoje dokumenty i wiadomości e-mail, zobacz [klasyfikować i chronić instrukcje](client-classify-protect.md). Jeśli nie masz pewności, który zestaw instrukcje dotyczące korzystania z, skontaktuj się z administratorem lub pomocy technicznej.
 
-Najprostszym sposobem klasyfikowania dokumentów i wiadomości e-mail jest podczas tworzenia lub je z edycji w aplikacji komputerowych pakietu Office: **Word**, **Excel**, **PowerPoint**,  **Outlook**. 
+To najprostszy sposób klasyfikowania dokumentów i wiadomości e-mail, podczas tworzenia lub edycji je w aplikacjach klasycznych pakietu Office: **Word**, **Excel**, **PowerPoint**,  **Program Outlook**. 
 
-Jednakże można także sklasyfikować pliki za pomocą **Eksploratora plików**. Ta metoda obsługuje inne typy plików i jest wygodny sposób klasyfikować wielu plików jednocześnie. 
+Jednakże można także sklasyfikować pliki przy użyciu **Eksploratora plików**. Ta metoda obsługuje dodatkowe typy plików i to wygodny sposób klasyfikowania wielu plików jednocześnie. 
 
-## <a name="using-office-apps-to-classify-your-documents-and-emails"></a>Do klasyfikowania dokumentów i wiadomości e-mail przy użyciu aplikacji pakietu Office
+## <a name="using-office-apps-to-classify-your-documents-and-emails"></a>Za pomocą aplikacji pakietu Office do klasyfikowania dokumentów i wiadomości e-mail
 
 Za pomocą paska usługi Azure Information Protection wybierz jedną z etykiet, które zostały skonfigurowane dla Ciebie. 
 
-Przykładowo na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą, ponieważ parametr **Poufność** ma wartość **Nieustawiona**. Aby ustawić etykiety, takie jak "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
+Przykładowo na poniższej ilustracji przedstawiono, że dokument nie został jeszcze oznaczony etykietą, ponieważ parametr **Poufność** ma wartość **Nieustawiona**. Aby ustawić etykietę, np. "Ogólne", kliknij pozycję **ogólne**. Jeśli nie masz pewności, którą etykietę zastosować do bieżącego dokumentu lub wiadomości e-mail, użyj etykietki narzędzi, aby dowiedzieć się więcej o każdej etykiecie i właściwym jej zastosowaniu. 
 
 ![Przykład paska usługi Azure Information Protection](../media/info-protect-bar-not-set-callout.png)
 
 Jeśli etykieta jest już zastosowana do dokumentu i chcesz ją zmienić, możesz wybrać inną etykietę. Jeśli na pasku nie są wyświetlane etykiety, kliknij najpierw ikonę **Edytuj etykietę** obok wartości bieżącej etykiety.
 
 > [!TIP]
-> Możesz też wybrać etykiety z **Chroń** przycisk na **pliku** kartę.
+> Możesz również wybrać etykiety z **Chroń** przycisk na **pliku** kartę.
 
 Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sposób:
 
@@ -53,9 +53,9 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Nie widzisz tego paska usługi Information Protection w aplikacjach pakietu Office?
 
-- Nie masz klienta Azure Information Protection [zainstalowane](install-client-app.md).
+- Nie masz klienta usługi Azure Information Protection [zainstalowane](install-client-app.md).
 
-- Zainstalowanego klienta, ale ustawienie, które nie są wyświetlane pasku został skonfigurowany przez administratora. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty wstążki pakietu Office. 
+- Jest zainstalowany klient, ale administrator skonfigurował ustawienia, które nie jest wyświetlany pasek. Zamiast tego należy wybrać etykiety z **Chroń** przycisk na **pliku** karty na Wstążce pakietu Office. 
 
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>Czy etykieta, który powinna się pojawić na pasku, nie jest wyświetlana? 
 
@@ -64,15 +64,15 @@ Oprócz ręcznego wybierania etykiet można je też ustawiać w następujący sp
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 
 
-## <a name="using-file-explorer-to-classify-files"></a>Do klasyfikowania plików za pomocą Eksploratora plików
+## <a name="using-file-explorer-to-classify-files"></a>Za pomocą Eksploratora plików do klasyfikowania plików
 
-Korzystając z Eksploratora plików, można szybko klasyfikować jednego pliku, wielu plików lub folder. 
+Korzystając z Eksploratora plików, można szybko klasyfikować pojedynczy plik, wiele plików lub folderu. 
 
-Po wybraniu folderu wszystkie pliki w tym folderze i wszelkich podfolderów, które ma zostaną zaznaczone automatycznie ustawionej klasyfikacji. Jednak nowych plików utworzonych w tym folderze lub jego podfolderach nie są automatycznie klasyfikowane.
+Po wybraniu folderu, wszystkie pliki w tym folderze i jego podfoldery zostaną zaznaczone automatycznie klasyfikacji, który został ustawiony. Jednak nowe pliki tworzone w tym folderze lub jego podfolderach nie są automatycznie klasyfikowane.
 
-Użyj Eksploratora plików do klasyfikowania plików, jeśli jeden lub więcej etykiet wyszarzone, wybranych plików nie obsługują bez chroni także klasyfikacji.
+Podczas używania Eksploratora plików do klasyfikowania plików, jeśli jeden lub więcej etykiet są wyszarzone, wybrane pliki nie obsługują klasyfikacji bez również ich ochronie.
 
-Przewodnik administratora zawiera pełną listę typów plików, które obsługują klasyfikacji bez ochrony: [typów obsługiwane wyłącznie do klasyfikowania plików](client-admin-guide-file-types.md#file-types-supported-for-classification-only).
+W podręczniku administratora podano pełną listę typów plików, które obsługują klasyfikacji bez ochrony: [typy plików obsługiwane wyłącznie do klasyfikowania](client-admin-guide-file-types.md#file-types-supported-for-classification-only).
 
 ### <a name="to-classify-a-file-by-using-file-explorer"></a>Do klasyfikowania plików za pomocą Eksploratora plików
 
@@ -80,19 +80,19 @@ Przewodnik administratora zawiera pełną listę typów plików, które obsługu
     
     ![Kliknięcie prawym przyciskiem myszy w oknie Eksploratora plików — klasyfikowanie i ochrona za pomocą usługi Azure Information Protection](../media/right-click-classify-protect-folder.png)
 
-2. W **Klasyfikacja i ochrona — usługi Azure Information Protection** okno dialogowe, użyj etykiety jako możesz zrobić w aplikacji pakietu Office, który określa klasyfikacji zdefiniowanych przez administratora. 
+2. W **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe, Użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację, zgodnie z definicją przez administratora. 
     
-    Jeśli żadna z tych etykiet można wybrać (wygaszone): wybrany plik nie obsługuje klasyfikacji. Przykład:
+    Jeśli nie można wybrać żadnego etykiety (są wyszarzone): wybrany plik nie obsługuje klasyfikacji. Przykład:
     
     ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
 
-3. Jeśli wybrano plik, który nie obsługuje klasyfikacji, kliknij przycisk **Zamknij**. Ten plik nie można sklasyfikować bez również ochronę.
+3. Jeśli wybrano plik, który nie obsługuje klasyfikacji, kliknij przycisk **Zamknij**. Nie można sklasyfikować tego pliku, bez jednocześnie zagwarantować ochronę.
     
-    W przypadku wybrania etykiety, kliknij przycisk **Zastosuj** i poczekaj, aż **Zakończono pracy** komunikat, aby zobaczyć wyniki. Następnie kliknij przycisk **Zamknij**.
+    Jeśli wybrano etykietę, kliknij przycisk **Zastosuj** i poczekaj na **ukończona praca** komunikat, aby zobaczyć wyniki. Następnie kliknij przycisk **Zamknij**.
 
-Jeśli zmienisz zdanie o etykietę, którą wybrano po prostu Powtórz ten proces i wybierz inną etykietę.
+Jeśli zmienisz zdanie na temat wybranej etykiety, po prostu Powtórz ten proces i wybrać inną etykietę.
 
-Należy określić klasyfikację pozostanie z plikiem, nawet wtedy, gdy plik w wiadomościach e-mail lub zapisać go do innej lokalizacji. 
+Klasyfikacji, który określiłeś pozostanie z plikiem, nawet jeśli pliki w wiadomościach e-mail lub zapisany w innej lokalizacji. 
 ## <a name="other-instructions"></a>Inne instrukcje
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
@@ -101,4 +101,3 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
 Zobacz [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,22 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4a5541e076fa4324c4a79df4d18daacc6b3dafb5
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d30af1e520c63cb407099d13a6bd8ba77351ca75
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206992"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374854"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>Aplikacja do udostępniania usługi Rights Management dla systemu Windows
 
->*Dotyczy: Active Directory Rights Management Services [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019. 
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
 
 
-Dla systemu Windows (znana również jako "aplikacja RMS sharing") to bezpłatna aplikacja do pobrania dla organizacji, które używają aplikacji do udostępniania usługi Rights Management [usługi zarządzania prawami dostępu w usłudze Active Directory](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub [usługi Azure Information Protection](../understand-explore/what-is-information-protection.md). Ta aplikacja jest również dla organizacji, które nie mają własnych infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje, które korzystają z usługi Azure Rights Management z usługi Azure Information Protection.
+Aplikacja do udostępniania dla Windows (znane również jako "aplikacja RMS sharing") to bezpłatna aplikacja do pobrania dla organizacji korzystających z usługi Rights Management [usługi zarządzania prawami dostępu w usłudze Active Directory](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub [Usługi azure Information Protection](../understand-explore/what-is-information-protection.md). Ta aplikacja jest również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Rights Management z usługi Azure Information Protection.
 
 -   [Aplikacja do udostępniania usługi Rights Management: historia wersji](sharing-app-version-release-history.md)
 
@@ -43,4 +43,3 @@ Dla systemu Windows (znana również jako "aplikacja RMS sharing") to bezpłatna
 ## <a name="see-also"></a>Zobacz też
 [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows](http://technet.microsoft.com/dn467883)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

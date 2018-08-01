@@ -11,22 +11,22 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 8ede04f6658bf770328cf6ae683d93725bcdc397
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765531"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369877"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 
 Ten przewodnik pozwala zapoznać się z narzędziami zwiększającymi możliwości usługi zarządzania prawami usługi Azure Information Protection i umożliwiającymi integrację z nią.
 
->Bieżący zestaw SDK ochrony informacji Azure ma składnik zarządzania prawami. Opracowywane są klasyfikacji i etykietowania składnika.
+>Bieżący zestaw SDK usługi Azure Information ochrony zawiera składnik do zarządzania prawami. Klasyfikacji i etykietowania składnik jest w fazie projektowania.
 
 ## <a name="service-applications"></a>Aplikacje usług
 
-Aplikacje usług zapewniają możliwości ochrony informacji podczas eksportowania z system zarządzania zawartością w przedsiębiorstwie, aplikacji biznesowych lub rozwiązanie oparte na chmurze biznesowe. Mogą to być na przykład aplikacje do ochrony przed utratą danych (DLP) i zapewniania bezpieczeństwa aplikacji chmurowych (CAS). Nasz zestaw SDK do tworzenia aplikacji usług jest dostępny w dwóch modelach programowania.
+Aplikacje usług zapewniają możliwość ochrony informacji podczas eksportowania z systemem zarządzania zawartością dla przedsiębiorstw, aplikacji biznesowych lub rozwiązań biznesowych opartych na chmurze. Mogą to być na przykład aplikacje do ochrony przed utratą danych (DLP) i zapewniania bezpieczeństwa aplikacji chmurowych (CAS). Nasz zestaw SDK do tworzenia aplikacji usług jest dostępny w dwóch modelach programowania.
 
 - [C++](https://www.microsoft.com/download/details.aspx?id=38397)
 - [Interfejs API zarządzany z użyciem języka C#](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI)
@@ -40,12 +40,12 @@ Aplikacje usług zapewniają możliwości ochrony informacji podczas eksportowan
 
 ## <a name="powershell-guides"></a>Przewodniki po programie PowerShell
 
-Używany przez usługę Azure Rights management Administratorzy, poleceń cmdlet programu PowerShell są także przydatne do tworzenia i testowania aplikacji usługi. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](/information-protection/rms-client/client-admin-guide-powershell).
+Używane przez usługę Azure Rights management Administratorzy, poleceń cmdlet programu PowerShell są także przydatne do tworzenia i testowania aplikacji usług. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](/information-protection/rms-client/client-admin-guide-powershell).
 
 ## <a name="user-applications"></a>Aplikacje użytkownika
 
 Aplikacje użytkownika można tworzyć za pomocą zestawów SDK RMS 2.1 lub RMS 4.2.
-Wersja 4.2 to klient REST z interfejsami API odpowiednimi dla popularnych systemów operacyjnych, takich jak iOS/OSX, Android, Linux czy Windows. W wersji 2.1 służy do tworzenia natywnych aplikacji systemu Windows.
+Wersja 4.2 to klient REST z interfejsami API odpowiednimi dla popularnych systemów operacyjnych, takich jak iOS/OSX, Android, Linux czy Windows. Wersja 2.1 jest wykorzystywana do tworzenia natywnych aplikacji z systemem Windows.
 
 ### <a name="user-application-development-guides"></a>Przewodniki po projektowaniu aplikacji użytkownika
 
@@ -99,7 +99,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Korzystanie z praw wbudowanych (użytkownik)](built-in-rights-usage-restriction-reference.md)
 - [Włączanie rejestrowania błędów i wydajności (użytkownik)](enabling-logging.md)
 
-## <a name="introduction-and-datasheets"></a>Wprowadzenie i arkusze danych
+## <a name="introduction-and-datasheets"></a>Arkusze danych i wprowadzenie
 
 [Wprowadzenie do usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
@@ -115,13 +115,13 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Obsługiwane platformy](supported-platforms.md)
 - [Opis ograniczeń użycia](understanding-usage-restrictions.md)
 
-### <a name="message-protocol-and-file-formats"></a>Formaty wiadomości protokołu i plików
+### <a name="message-protocol-and-file-formats"></a>Protokół i pliku formaty wiadomości
 
 - [Protokół klient serwer](https://msdn.microsoft.com/library/cc243191.aspx)
-- [Protokół obiektu zarządzania prawami poczty E-mail](https://msdn.microsoft.com/library/cc463909(v=EXCHG.80).aspx)
-- [Złożone plik binarny Format pliku](https://msdn.microsoft.com/library/dd942138.aspx)
+- [Protokół obiektu zarządzania prawami wiadomości E-mail](https://msdn.microsoft.com/library/cc463909(v=EXCHG.80).aspx)
+- [Plik binarny Format plików złożona (c)](https://msdn.microsoft.com/library/dd942138.aspx)
 
-#### <a name="rights-managed-email-message"></a>Wiadomość e-mail zarządzanego prawa
+#### <a name="rights-managed-email-message"></a>Wiadomości e-mail zarządzanego prawa
 
 - [. Format pliku MSG (część 1)](https://blogs.msdn.microsoft.com/openspecification/2009/11/06/msg-file-format-part-1/)
 - [. Format pliku MSG (część 2)](https://blogs.msdn.microsoft.com/openspecification/2010/06/20/msg-file-format-rights-managed-email-message-part-2/)
@@ -142,7 +142,6 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 
 ### <a name="see-also"></a>Zobacz też
 
-- [Terminologia Developer](terms.md)
+- [Terminologia dla deweloperów](terms.md)
 - [Terminologia dotycząca usługi Azure Information Protection — ITPro](../get-started/terminology.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

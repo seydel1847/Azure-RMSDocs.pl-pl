@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
-ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
+ms.openlocfilehash: 85f2952dd9abcb6e22e8932e8479ded540af8ea2
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37947472"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374202"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -134,8 +134,7 @@ Można wybrać z listy dostępnych kolorów lub określić kolor niestandardowy,
 
 Jeśli potrzebujesz odwołanie o tych kodach [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx) z MSDN dokumentacja jest dobry punkt wyjścia. Możesz również znaleźć te kody w wielu aplikacjach, które pozwalają edytować obrazów. Na przykład Microsoft Paint pozwala wybrać niestandardowy kolor z palety i wartości RGB są automatycznie wyświetlane, które można skopiować.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

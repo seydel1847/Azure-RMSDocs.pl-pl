@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8fc94edec250fd0cef1be5f3030e19ce8628cc92
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207441"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370163"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Te informacje ułatwiają określanie opcji w oknie dialogowym **dodawania ochrony** lub **udostępniania chronionej zawartości** w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku [ochrony udostępnianego pliku](sharing-app-protect-by-email.md) lub [włączania ochrony miejscowej pliku](sharing-app-protect-in-place.md) i wybrania uprawnień niestandardowych.
 
@@ -76,4 +76,3 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

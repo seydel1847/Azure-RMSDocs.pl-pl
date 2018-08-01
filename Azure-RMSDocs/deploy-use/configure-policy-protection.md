@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: c551c83a41a7fbf6340a9e5fbd867b825a971ad6
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: c788982587487f88b31a130933b6d95c6cf94c42
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217896"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373291"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -296,5 +296,3 @@ Ta konfiguracja ma tę zaletę, że nie trzeba określić użytkowników, grupy 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy). 
 
 Reguły przepływu poczty programu Exchange można także zastosować ochronę, na podstawie Twojej etykiet. Aby uzyskać więcej informacji i przykładów, zobacz [konfigurowania usługi Exchange Online reguły przepływu poczty dla etykiety usługi Azure Information Protection](configure-exo-rules.md).  
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

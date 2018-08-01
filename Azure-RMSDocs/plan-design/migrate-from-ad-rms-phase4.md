@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 254e3ecc1292d2b9db0e291f9c45af343f3ccb9c
-ms.sourcegitcommit: 93e83ed71250e408e11fb098551e486282494013
+ms.openlocfilehash: 50cfe76f46105225b2ac65468a21d890a0dce19f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36324324"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372346"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
@@ -211,7 +211,5 @@ Jeden z następujących elementów w zależności od tego, czy podczas komunikac
 ---
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby kontynuować migrację, przejdź do [fazy 5 — zadań po migracji](migrate-from-ad-rms-phase5.md).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

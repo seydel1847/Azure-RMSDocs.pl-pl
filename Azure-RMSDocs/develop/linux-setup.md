@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja w systemie Linux
-description: Kilka odmian systemu operacyjnego Linux może teraz używać zestawu Rights Management SDK 4.x.
+description: Kilka odmian systemów operacyjnych Linux można teraz używać zestawu Rights Management SDK 4.x.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -14,16 +14,16 @@ ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: e6ae24f35aa03996bd26ff891a9cb5a14d751d44
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: 0487620c83b5e99b9f54a28c0415afec6ee6ac3f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2018
-ms.locfileid: "29349784"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375440"
 ---
 # <a name="linux-setup"></a>Konfiguracja w systemie Linux
 
-Kilka odmian systemu operacyjnego Linux może teraz korzystają z zestawu Microsoft Rights Management SDK 4.x do włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).
+Kilka odmian systemów operacyjnych Linux można teraz skorzystać z zestawu Microsoft Rights Management SDK 4.x w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).
 
 - [Obsługiwane systemy operacyjne](#supported-operating-systems)
 - [Instrukcje dotyczące kompilacji i użycia](#how-to-build-and-use)
@@ -35,7 +35,7 @@ Kilka odmian systemu operacyjnego Linux może teraz korzystają z zestawu Micros
 - OpenSUSE 13.2
 - CentOS 7
 
-Biblioteki i przykłady zostały skompilowane również w systemach Windows i OS x oraz, ale nie są one całkowicie obsługiwane w tej chwili.
+Biblioteki i przykłady zostały skompilowane na Windows i OS x oraz, ale nie są one w pełni obsługiwane w tej chwili.
  
 ## <a name="how-to-build-and-use"></a>Instrukcje dotyczące kompilacji i użycia
 
@@ -47,5 +47,3 @@ Biblioteki i przykłady zostały skompilowane również w systemach Windows i OS
 - [Wprowadzenie](get-started.md)
 - [Co nowego](release-notes.md)
 - [Terminy i pojęcia dla deweloperów](core-concepts.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

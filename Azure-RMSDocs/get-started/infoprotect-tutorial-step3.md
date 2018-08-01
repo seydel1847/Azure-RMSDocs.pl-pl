@@ -10,25 +10,25 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: 363902fac8036b118ce28c3ea87c812e262c3d47
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 346e70de2e28d9c2b140c734c91bb4b909e4cd0d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206081"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372754"
 ---
 # <a name="step-3-install-the-client"></a>Krok 3. Zainstalowanie klienta
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 W tym kroku nastąpi instalacja klienta usługi Azure Information Protection, dzięki czemu właśnie skonfigurowana zasada zostanie pobrana do komputera z systemem Windows i w aplikacjach pakietu Office zostaną wyświetlone etykiety.
 
 
 ## <a name="install-the-azure-information-protection-client"></a>Instalowanie klienta usługi Azure Information Protection
 
-1. Na komputerze z zainstalowanym pakietem Office (program Word nie może obecnie otwarty), przejdź do [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) i Pobierz **AzInfoProtection.exe**.
+1. Na komputerze z zainstalowanym pakietem Office (ale nie jest obecnie otwarty program Word), przejdź do [Centrum pobierania Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) i Pobierz **AzInfoProtection.exe**.
     
-2. Uruchom plik wykonywalny, który został pobrany i postępuj zgodnie z monitami, aby zainstalować klienta.
+2. Uruchom plik wykonywalny, który został pobrany właśnie i postępuj zgodnie z monitami, aby zainstalować klienta.
     
     W przypadku tego samouczka nie ma znaczenia, czy wybierzesz opcję instalacji zasady demonstracyjnej, ponieważ nasza właśnie skonfigurowana zasada zostanie pobrana z systemu Azure i zastąpi zasadę demonstracyjną, jeśli ją zainstalowano. Można jednak użyć opcji zasady demonstracyjnej, jeśli chcesz po prostu zapoznać się z etykietami domyślnymi bez nawiązywania połączenia z usługą Azure Information Protection. 
 
@@ -46,7 +46,7 @@ Podczas ładowania dokumentu powinny zostać wyświetlone dwa nowe obiekty:
     
     Kliknij przycisk **Chroń**  >  **Pomoc i opinie** i w oknie dialogowym **Microsoft Azure Information Protection** potwierdź swój status klienta. Powinna zostać wyświetlona informacja **Połączono jako** i nazwa użytkownika. Powinna także zostać wyświetlona godzina i data ostatniego połączenia oraz data instalacji zasad usługi Information Protection. Sprawdź, czy jest wyświetlana Twoja nazwa użytkownika odpowiednia dla Twojej dzierżawy.
 
-- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Wyświetla tytuł **czułości**i etykiety, które widzieliśmy w portalu Azure. 
+- Pod wstążką jest wyświetlany nowy pasek o nazwie Information Protection. Wyświetla tytuł **czułości**i etykiety, które widzieliśmy w witrynie Azure portal. 
 
 Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 
@@ -59,5 +59,3 @@ Teraz możesz zobaczyć usługę Azure Information Protection w działaniu.
 >[!div class="step-by-step"]
 [&#171; Krok 2](infoprotect-tutorial-step2.md)
 [Krok 4 &#187;](infoprotect-tutorial-step4.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d436a7fd52ccf28d884eab9bfcba0dbdf3321cba
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: b17c632eac467c00591cb73fd5b2bbf255479751
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206370"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374012"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 W poniższych sekcjach podano informacje na temat urządzeń, które obsługują usługę Azure Rights Management. Ta usługa zapewnia ochronę danych na potrzeby usługi Azure Information Protection.
 
@@ -50,7 +50,6 @@ Następujące systemy operacyjne urządzeń przenośnych obsługują usługę Az
 -   **Tablety z systemem Windows**: Windows 10 Mobile i Windows 8.1 RT
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

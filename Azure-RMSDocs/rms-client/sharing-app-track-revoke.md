@@ -12,20 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 80c184892af6f82e744d32d96d562f2fadf9b859
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: d6d53635a7f86c9ecc27f654885f9d66569f2b1e
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33821100"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374243"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Po zapewnieniu ochrony dokumentów przy użyciu aplikacji RMS sharing, jeśli organizacja korzysta z usługi Azure Information Protection zamiast usług Active Directory Rights Management, można sprawdzić, w jaki sposób użytkownicy korzystają z chronionych dokumentów. W razie konieczności można także cofnąć dostęp do tych dokumentów, aby zatrzymać ich udostępnianie. W tym celu należy użyć **witryny śledzenia dokumentów** dostępnej z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
 
-Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Rejestrowana jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Jednak w rzadkich przypadkach lokalizacji zgłoszone mogą być niedokładne. Na przykład gdy użytkownik otwarcie chronionego dokumentu korzysta z połączenia sieci VPN lub komputera ma adres IPv6.
+Po uzyskaniu dostępu do tej witryny zaloguj się, aby śledzić swoje dokumenty. Jeśli Twoja organizacja ma [subskrypcję obsługującą śledzenie i odwoływanie dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features) oraz masz licencję na tę subskrypcję, możesz sprawdzić, kto próbował otworzyć zabezpieczone pliki i czy próba ta zakończyła się powodzeniem (nastąpiło pomyślne uwierzytelnienie). Rejestrowana jest także data i godzina próby otwarcia dokumentu oraz lokalizacja tego zdarzenia. Jednak w rzadkich przypadkach lokalizacji zgłoszone mogą być niedokładne. Na przykład gdy użytkownik, otwarcie chronionego dokumentu korzysta z połączenia sieci VPN lub komputera ma adres IPv6.
 
 Akcje, które można wykonać w witrynie śledzenia dokumentów:
 
@@ -37,7 +37,7 @@ Akcje, które można wykonać w witrynie śledzenia dokumentów:
 
 - Jeśli chcesz śledzić i odwoływać dokumenty udostępnione innym: administratorzy usługi Azure Information Protection mogą śledzić i odwoływać dokumenty dla innych użytkowników, klikając ikonę administratora. Ta ikona jest widoczna tylko dla administratorów.
     
-    Uwaga: Jeśli nie widzisz tę ikonę, mimo iż administratora globalnego, jest ponieważ nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL dostęp do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
+    Uwaga: Jeśli nie widzisz tę ikonę, mimo iż Administrator globalny, to ponieważ nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL do uzyskania dostępu do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
 
 - Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977).
 
@@ -104,5 +104,3 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

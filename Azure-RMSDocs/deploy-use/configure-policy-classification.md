@@ -4,18 +4,18 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: c7ef58cd42a793cacb3b64aec33d2cd0a0b105f4
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: 9be846a194e077748aca58e9822db2085d2992dc
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37068885"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374620"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -74,7 +74,10 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
         
         Typy informacji za pomocą typów informacji czułości prevention (DLP) utraty danych usługi Office 365 i wykrywania wzorca. Możesz wybrać wiele popularnych typów informacji poufnych, niektóre z nich są specyficzne dla różnych regionów. Aby uzyskać więcej informacji, zobacz [jakie dostępne typy informacji poufnych](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b) w dokumentacji pakietu Office.
         
-        Lista typów informacji, które można wybierać w witrynie Azure portal jest okresowo aktualizowany obejmujący wszystkie nowe informacje będą publikowane DLP usługi Office. Jednak lista nie obejmuje żadnych niestandardowych typów informacji poufnych, które zostały zdefiniowane i przekazane jako pakiet reguły do Centrum zgodności i zabezpieczeń usługi Office 365. 
+        Lista typów informacji, które można wybierać w witrynie Azure portal jest okresowo aktualizowany obejmujący wszystkie nowe informacje będą publikowane DLP usługi Office. Jednak lista nie obejmuje żadnych niestandardowych typów informacji poufnych, które zostały zdefiniowane i przekazane jako pakiet reguły do Centrum zgodności i zabezpieczeń usługi Office 365.
+        
+        > [!IMPORTANT]
+        > Niektóre typy informacji wymagają minimalną wersję klienta. [Więcej informacji](#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
         
         Gdy usługi Azure Information Protection ocenia typy informacji, które można wybrać, jest używane ustawienie poziomie zaufania DLP usługi Office, ale zgodna z najniższą zaufania.
     
@@ -94,11 +97,26 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
 
 Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
-## <a name="next-steps"></a>Następne kroki
+### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>Typy informacji poufnych, które wymagają minimalną wersję klienta
+
+Następujące typy informacji poufnych wymaga obecnie wersji zapoznawczej klienta usługi Azure Information Protection:
+
+- **Numer telefonu UE**
+- **Numer telefonu komórkowego UE**
+- **Liczba Unii Europejskiej paszport**
+- **Numer licencji UE sterownika**
+- **Współrzędne GPS UE**
+- **Numer identyfikacyjny National UE**
+- **Numer UE ubezpieczenia społecznego (SSN) lub równoważnej identyfikator**
+- **Numer identyfikacji podatkowej UE (NIP)**
+- **Kod identyfikacyjny populacji tajski**
+- **Lira krajowego numeru identyfikacyjnego**
+- **Numer karty japoński w miejscu zamieszkania użytkownika**
+
+## <a name="next-steps"></a>Kolejne kroki
 
 Zaleca się wdrożenie [skanera usługi Azure Information Protection](deploy-aip-scanner.md), którego można użyć reguł automatycznej klasyfikacji do odnajdywania, klasyfikowania i ochrony plików w sklepach sieci lokalnych i udziałów plików.  
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

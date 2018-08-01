@@ -14,12 +14,12 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d236eaf4f9027a84a36819b5234a43cfc5674c54
-ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
+ms.openlocfilehash: b80045ac541402799ab51bc51e5f361c31b87555
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38229957"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372907"
 ---
 # <a name="windows-phone-setup"></a>Konfiguracja systemu Windows Phone
 
@@ -84,5 +84,3 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu W
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
 [Zestaw SDK dla systemu Windows Phone](http://dev.windowsphone.com/en-us/downloadsdk)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

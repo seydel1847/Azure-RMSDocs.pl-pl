@@ -14,12 +14,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 84b0f1ec7e5ef647161c5e44059140ea59ffab77
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: d9dce9a1335bfa8b6f26f43cedebe0297a4d79c0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765803"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373104"
 ---
 # <a name="file-api-configuration"></a>Konfiguracja interfejsu API plików
 
@@ -51,9 +51,9 @@ W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfro
 
 - Znak symbolu wieloznacznego "*", jest dozwolony; Jednak ustawienie dla określonego rozszerzenia ma pierwszeństwo przed ustawieniem symboli wieloznacznych. Symbol wieloznaczny nie ma wpływu na ustawienia dla plików programu Microsoft Office — muszą być one jawnie wyłączone według typu pliku.
 - Aby określić pliki, które nie mają rozszerzenia, użyj znaku „.”
-- Nie określaj "." podczas określania klucza dla konkretnego rozszerzenia pliku; na przykład użyć `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` do określenia ustawień dla plików txt. (Nie używaj zapisu `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`).
+- Nie określaj "." w przypadku określania klucza dla konkretnego rozszerzenia pliku; na przykład użyć `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` do określania ustawień dla plików txt. (Nie używaj zapisu `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`).
 
-W celu określenia zachowania ochrony, należy ustawić **szyfrowania** wartość klucza. Jeśli wartość **Encryption** nie zostanie ustawiona, dla danego typu pliku zostanie zastosowane zachowanie domyślne.
+Aby określić zachowanie ochrony, ustaw **szyfrowania** wartości w kluczu. Jeśli wartość **Encryption** nie zostanie ustawiona, dla danego typu pliku zostanie zastosowane zachowanie domyślne.
 
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
@@ -67,7 +67,7 @@ W celu określenia zachowania ochrony, należy ustawić **szyfrowania** wartoś�
 > [!Note]
 > To ustawienie nie ma żadnego wpływu na odszyfrowywanie. Każdy zaszyfrowany plik (niezależnie od tego, czy został zaszyfrowany za pomocą ochrony natywnej czy pliku Pfile) można odszyfrować, jeśli użytkownik ma prawo **WYODRĘBNIANIA**.
 
-- **Native**: jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do pliku z rozszerzeniem ptxt. Lista rozszerzeń plików, które mogą zostać objęte ochroną natywną jest zgodna.
+- **Native**: jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do pliku z rozszerzeniem ptxt. Lista rozszerzeń plików, które mogą zostać objęte ochroną natywną poniżej.
 
 - **Pfile**: jest używane szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
 
@@ -147,9 +147,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-articles"></a>Pokrewne artykuły
+## <a name="related-articles"></a>Powiązane artykuły
 
 - [Uwagi dla deweloperów](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

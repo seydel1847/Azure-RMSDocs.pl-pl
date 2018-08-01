@@ -12,24 +12,24 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53d9d9b25ab71c91275bf770a6038eccbaa2659c
-ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
+ms.openlocfilehash: ac60b1dd3325df058340472ceae02d18b32c98dd
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32018488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374474"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Używasz konta z tego katalogu do logowania do portalu Azure, w którym, na przykład można skonfigurować i zarządzać etykiety usługi Azure Information Protection i szablony usługi Azure Rights Management.
+Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Używasz konta z tego katalogu do logowania w witrynie Azure Portal, gdzie, na przykład, można skonfigurować i zarządzać etykiety usługi Azure Information Protection i szablony usługi Azure Rights Management.
 
-Jeśli masz subskrypcję obejmującą usługę Azure Information Protection lub Azure Rights Management, Azure AD w katalogu jest utworzony automatycznie w razie potrzeby.  
+Jeśli masz subskrypcję obejmującą usługę Azure Information Protection bądź Azure Rights Management, katalogiem usługi Azure AD jest automatycznie utworzone automatycznie w razie potrzeby.  
 
 Aby uzyskać więcej informacji na temat usługi Azure AD, zobacz [co to jest katalog usługi Azure AD?](/active-directory/active-directory-whatis)
 
-Aby zintegrować katalog usługi Azure AD z lokalnymi lasami usługi AD, zobacz [integrowanie tożsamości lokalnych z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
+Do integracji katalogu usługi Azure AD z lokalnymi lasami usługi AD, zobacz [integrowanie tożsamości lokalnych z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
 
 ### <a name="scenarios-that-have-specific-requirements"></a>Scenariusze, które wiążą się z określonymi wymaganiami 
 
@@ -86,15 +86,14 @@ Następnie skonfiguruj rozwiązanie MFA:
 
         Aby uzyskać więcej informacji na temat tego scenariusza, zobacz wpis [The Works with Office 365 – Identity program now streamlined](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) (Praca z usługą Office 365 — usprawniony program tożsamości) na blogu pakietu Office.
 
-Łącznik usługi Rights Management i skanera usługi Azure Information Protection nie obsługują uwierzytelniania Wieloskładnikowego. Jeśli wdrożono łącznik lub skanera następujące konta nie może wymagać uwierzytelniania Wieloskładnikowego:
+Łącznik usługi Rights Management i skaner usługi Azure Information Protection nie obsługują uwierzytelniania Wieloskładnikowego. Jeśli wdrożono łącznik lub skaner następujących kont nie może wymagać uwierzytelniania Wieloskładnikowego:
 
 - Konto, które instaluje i konfiguruje Łącznik.
 
-- Konto główne usługi w usłudze Azure AD, **Aadrm_S-1-7-0**, która tworzy łącznik.
+- Konto główne usługi w usłudze Azure AD **Aadrm_S-1-7-0**, który tworzy łącznik.
  
-- Konto usługi, uruchomioną skanera.
+- Konta usługi, która działa skaner.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements-azure-rms.md) (Wymagania dotyczące usługi Azure Information Protection).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

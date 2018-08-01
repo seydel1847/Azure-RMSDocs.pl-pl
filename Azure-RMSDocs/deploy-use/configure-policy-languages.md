@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie etykiety i szablony dla różnych języków usługi Azure Information Protection
-description: Możesz dodać obsługę innych języków dla etykiet, które użytkownicy widzą na pasku Information Protection, a także wszystkie szablony, które użytkownicy widzą, podając językach w ramach zasad usługi Azure Information Protection i importowanie tłumaczenia.
+title: Konfigurowanie etykiety i szablony w różnych językach dla usługi Azure Information Protection
+description: Możesz dodać obsługę innych języków dla etykiet, które użytkownicy zobaczą na pasku usługi Information Protection i wszystkie szablony, które użytkownicy zobaczą, określając język w zasadach usługi Azure Information Protection i importując tłumaczenia.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,46 +10,46 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 4131e3afae338d906011a9fe02a941baa61cf892
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 191a89d62abcb4faefd7f23f2353ed785450d12e
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326807"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370503"
 ---
-# <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować szablony dla różnych języków i etykiety usługi Azure Information Protection
+# <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować etykiety i szablony w różnych językach dla usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Mimo że domyślne etykiety dla usługi Azure Information Protection obsługuje wiele języków, musisz skonfigurować obsługę etykieta nazwy i opisy, które określisz. Tej konfiguracji, należy wykonać następujące czynności:
+Mimo że domyślne etykiety usługi Azure Information Protection obsługuje wiele języków, należy skonfigurować obsługę nazwy etykiet i opisy, które określisz. Ta konfiguracja wymaga, należy wykonać następujące czynności:
 
 1. Wybierz języki, które korzystają użytkownicy. 
 
-2. Eksportuj do pliku z bieżącej etykiety nazwy i opisy.
+2. Wyeksportuj swoje nazwy bieżących etykiet i opisy w pliku.
 
-3. Przeprowadź edycję pliku do dostarczania tłumaczenia.
+3. Edytuj plik, aby dokonać tłumaczenia.
 
 4. Zaimportuj plik do zasad usługi Azure Information Protection.
 
-Można również skonfigurować szablony dla różnych języków, gdy mają zastosowanie jednej z następujących warunków. Ta konfiguracja jest odpowiednia, jeśli użytkownicy lub Administratorzy chcesz wyświetlać bieżący nazwę i opis szablonu w zlokalizowanych językach.
+Zastosowanie jednej z następujących warunków, można również skonfigurować szablony w różnych językach. Ta konfiguracja jest odpowiednia w przypadku użytkowników lub administratorów potrzeba wyświetlenia bieżącej nazwę i opis szablonu w zlokalizowanych językach.
 
-- Szablon został utworzony w klasycznym portalu Azure lub za pomocą programu PowerShell, a szablon nie jest połączony z etykietą za pomocą **wybierz szablon wstępnie zdefiniowany** ustawienia ochrony.
+- Szablon został utworzony w klasycznej witrynie Azure portal lub za pomocą programu PowerShell i szablonu nie jest połączony z etykiety za pomocą **wybierz wstępnie zdefiniowany szablon** ustawienia ochrony.
 
-- Nie masz subskrypcji, która obsługuje etykiety, dzięki czemu tylko tworzenie i Zarządzanie szablonami w portalu Azure.
+- Nie masz subskrypcji, która obsługuje etykiety, dzięki czemu tylko tworzenie i Zarządzanie szablonami w witrynie Azure portal.
 
 Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla pakietu Office i systemu Windows. Te nazwy etykiet i opisy są następnie wyświetlane na pasku usługi Azure Information Protection w aplikacji pakietu Office oraz w oknie dialogowym **Klasyfikacja i ochrona — usługa Azure Information Protection**. Aby uzyskać więcej informacji o wybranym języku, zobacz sekcję [Określanie wyświetlanego języka przez klienta Azure Information Protection](#how-the-azure-information-protection-client-determines-the-language-to- display). 
 
-## <a name="to-configure-labels-and-templates-for-different-languages"></a>Aby skonfigurować szablony dla różnych języków i etykiety
+## <a name="to-configure-labels-and-templates-for-different-languages"></a>Aby skonfigurować etykiety i szablony w różnych językach
 
-1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do portalu Azure](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
+1. Jeśli jeszcze tego nie zrobiono, Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal). Następnie przejdź do bloku **Azure Information Protection**.
     
-    Na przykład, w menu centralnym kliknij **wszystkie usługi** i zacznij wpisywać ciąg **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **ZARZĄDZAJ** > **języków** opcji menu: na **usługi Azure Information Protection — języków** bloku, wybierz opcję **dodać nowy język dla Tłumaczenie**. Wybierz języki, które chcesz dodać, a następnie wybierz **OK**. Możesz wpisać nazwę języka w polu wyszukiwania, lub przewiń listę dostępnych języków
+2. Z **ZARZĄDZAJ** > **języków** opcji menu: na **usługi Azure Information Protection — języki** bloku wybierz **Dodaj nowy język na potrzeby Tłumaczenie**. Wybierz języki, które chcesz dodać, a następnie wybierz pozycję **OK**. Możesz wpisać nazwę języka, w polu wyszukiwania, lub przewiń listę dostępnych języków
 
-3. Języki wybrane jest teraz wyświetlany na **usługi Azure Information Protection — języków** bloku:
+3. Wybrane języki są teraz wyświetlane na **usługi Azure Information Protection — języki** bloku:
     
-    - Aby dodać innego języka, wybierz **dodać nowy język do tłumaczenia** i powtórz poprzedni krok. 
+    - Aby dodać inny język, wybierz **Dodaj nowy język do tłumaczenia** i powtórz ten krok. 
         
         > [!NOTE]
         > Pamiętaj, aby wybierać języki używane przez użytkowników w pakiecie Office oraz w systemie Windows. W niektórych przypadkach może to wymagać dwóch różnych ustawienia komputera.
@@ -66,9 +66,9 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
 
 7. Po zakończeniu edycji wszystkich plików xml utwórz nowy skompresowany folder (zip) zawierającego te pliki. Skompresowany folder może mieć dowolną nazwę, ale musi mieć rozszerzenie zip.
 
-8. Wróć do **usługi Azure Information Protection — języków** bloku, a następnie wybierz **importu**. Należy pamiętać, że jeśli ta opcja jest niedostępna, należy najpierw wyczyścić pole wyboru w obszarze **NAZWA JĘZYKA** lub pola wyboru indywidualnie wybranych języków.
+8. Wróć do **usługi Azure Information Protection — języki** bloku, a następnie wybierz **importu**. Należy pamiętać, że jeśli ta opcja jest niedostępna, należy najpierw wyczyścić pole wyboru w obszarze **NAZWA JĘZYKA** lub pola wyboru indywidualnie wybranych języków.
     
-    Po zakończeniu importowania zlokalizowanej nazwy i opisy pobrać użytkowników.
+    Po zakończeniu importowania zlokalizowane nazwy i opisy zostaną przekazane do użytkowników.
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Jak klient usługi Azure Information Protection określa język używany do wyświetlania
 
@@ -88,7 +88,7 @@ Po pobraniu przez użytkowników zasad usługi Azure Information Protection umo�
 
 ## <a name="when-localized-label-names-are-not-used"></a>Gdy nie są używane zlokalizowane nazwy etykiet
 
-W następujących scenariuszach zlokalizowanych nazw etykiety (i sublabel) nie są używane. W celu zachowania spójności w dzierżawie domyślny język jest zawsze używany dla następujących elementów:
+W następujących scenariuszach zlokalizowane nazwy etykiet (i etykietę podrzędną) nie są używane. W celu zachowania spójności w dzierżawie domyślny język jest zawsze używany dla następujących elementów:
 
 - Dzienniki użycia klienta
 
@@ -97,10 +97,9 @@ W następujących scenariuszach zlokalizowanych nazw etykiety (i sublabel) nie s
 - Metadane dokumentów i nagłówki wiadomości e-mail
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu opcji, których można używać dla etykiet oraz innych ustawień dla zasad usługi Azure Information Protection, użyj linków w [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy) sekcji.
+Aby uzyskać więcej informacji na temat konfigurowania opcji, które można wprowadzić etykiety i inne ustawienia zasad usługi Azure Information Protection, użyj linków w [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy) sekcji.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

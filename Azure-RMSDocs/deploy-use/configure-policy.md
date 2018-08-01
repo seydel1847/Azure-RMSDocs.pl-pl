@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 43fade205d4d518f6fc8f5dd7c7280a80d2c7eae
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: 6dcc5aaa5ff2a5a765091a56847358f302082b16
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "34562181"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369745"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -161,8 +161,7 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md)
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](../get-started/infoprotect-quick-start-tutorial.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

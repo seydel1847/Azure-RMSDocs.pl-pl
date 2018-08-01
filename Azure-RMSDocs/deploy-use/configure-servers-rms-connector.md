@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dd9063cfda08f0b580ca4f669bb5385b91c25acb
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 9662f9346cc3d14f07f1dfd7522237e3214a6c6d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216855"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372424"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -199,7 +199,7 @@ Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną we
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>Konfigurowanie serwerów programu SharePoint do używania łącznika
 
-1. Upewnij się, że serwery SharePoint są autoryzowane do używania łącznika usługi RMS za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby serwery programu SharePoint można używać łącznika usługi RMS.
+1. Upewnij się, że serwery SharePoint są autoryzowane do używania łącznika usługi RMS za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby serwery programu SharePoint można użyć łącznika usługi RMS.
 
 2.  Na serwerach programu SharePoint, które komunikują się z łącznikiem usługi RMS wykonaj jedną z następujących czynności:
 
@@ -215,7 +215,7 @@ Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną we
 
 3.  Włącz IRM w programie SharePoint. Aby uzyskać więcej informacji, zobacz temat opisujący [konfigurowanie zarządzania prawami do informacji (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx) w bibliotece programu SharePoint.
 
-    Podczas wykonywania tych instrukcji należy skonfigurować program SharePoint do korzystania z łącznika, określając opcję **Użyj tego serwera usług RMS**, a następnie wprowadzić skonfigurowany wcześniej adres URL łącznika ze zrównoważonym obciążeniem. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład jeśli nazwą łącznika jest https://connector.contoso.com, konfiguracja będzie wyglądać podobnie jak na poniższej ilustracji:
+    Podczas wykonywania tych instrukcji należy skonfigurować program SharePoint do korzystania z łącznika, określając opcję **Użyj tego serwera usług RMS**, a następnie wprowadzić skonfigurowany wcześniej adres URL łącznika ze zrównoważonym obciążeniem. Wprowadź prefiks protokołu (HTTP:// lub HTTPS://) i nazwę łącznika, zdefiniowaną w systemie DNS dla adresu łącznika ze zrównoważonym obciążeniem. Na przykład jeśli nazwą łącznika jest https://connector.contoso.com, konfiguracja będzie wyglądać jak na poniższym obrazie:
 
     ![Konfigurowanie serwera programu SharePoint dla łącznika usługi RMS](../media/AzRMS_SharePointConnector.png)
 
@@ -233,7 +233,7 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>Konfigurowanie serwerów plików do używania łącznika
 
-1. Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, dzięki czemu serwerach plików można użyć łącznika usług RMS.
+1. Upewnij się, że serwery plików są autoryzowane do używania łącznika usługi RMS, za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby serwery plików można używać łącznika usługi RMS.
 
 2. Na serwerach plików skonfigurowanych dla infrastruktury klasyfikacji plików, które będą komunikować się z łącznikiem usługi RMS, wykonaj jedną z następujących czynności:
 
@@ -249,13 +249,11 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
 3. Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane do korzystania z niego, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure Rights Management. Aby użytkownikom było łatwiej, można wdrożyć klienta usługi Azure Information Protection, który instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](../rms-client/client-admin-guide.md).
 
 Należy zauważyć, że można skonfigurować szablony przypisane do działów, które mają być używane w zgodzie z regułami transportu programu Exchange lub infrastrukturą FCI systemu Windows Server. Konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 
-Możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] użytkownikom i administratorom.
+Możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] użytkownikom i administratorom.
 
 Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi Azure Rights Management](monitor-rms-connector.md). 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

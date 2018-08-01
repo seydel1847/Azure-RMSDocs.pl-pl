@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54e66d8ffde33e3e73b24e39fa609686fa2601b0
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 6953d72b3114c00a25c135754d9eea0db6563cb1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204802"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372254"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Klient usługi Azure Information Protection: instalacja i konfiguracja klienta
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Na komputerach z uruchomionym pakietem Office 2010 na potrzeby uwierzytelniania w usługach Azure Rights Management i Azure Information Protection jest wymagany klient usługi Azure Information Protection (lub aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management). Instalacja tego klienta jest zalecana także w przypadku wszystkich komputerów z systemem Windows oraz urządzeń z systemami iOS i Android obsługującymi usługi Azure Rights Management i Azure Information Protection. 
 
@@ -41,6 +41,5 @@ Aby zainstalować klienta usługi Azure Information Protection dla tych popularn
 
 **Jeśli masz konto w usłudze Microsoft Intune**: aplikacja Azure Information Protection obejmuje zestaw Software Development Kit aplikacji usługi Microsoft Intune, w związku z czym podczas rejestrowania urządzeń z systemami iOS i Android w usłudze Intune można wdrożyć przeglądarkę usługi Azure Information Protection i zarządzać nią dla tych urządzeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i wdrażanie zasad zarządzania aplikacjami mobilnymi w konsoli usługi Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) w dokumentacji usługi Intune. W kroku 2 postępuj zgodnie z instrukcjami, aby opublikować aplikację zarządzaną przez zasady.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

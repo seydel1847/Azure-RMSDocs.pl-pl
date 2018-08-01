@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c9fe3e28cb44812a6f3a5830546128975522b5f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 80ae87e28e02a208af9ea4ece2b74df1a7f841b0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206644"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374562"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>Pobieranie i instalowanie aplikacji Microsoft Rights Management sharing
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Pomoc techniczna dla starszych aplikacji spowoduje zatrzymanie 31 stycznia 2019.
+> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r.
 
 Aby zainstalować aplikację RMS sharing, nie trzeba być administratorem lokalnym. Jeśli nim nie jesteś i korzystasz z pakietu Office 2010, obowiązują jednak pewne ograniczenia. Aby uzyskać więcej informacji, zobacz sekcję [Jeśli nie jesteś administratorem lokalnym i używasz pakietu Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) w dalszej części tej strony.
 
@@ -70,4 +70,3 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

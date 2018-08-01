@@ -14,20 +14,20 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 7f634e554b342e35b359fe870a5b0f033794b9c1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30259034"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373706"
 ---
 # <a name="release-notes"></a>Informacje o wersji
 
 Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.
 
-## <a name="october-2017---update"></a>Zaktualizuj 2017 października-
+## <a name="october-2017---update"></a>Aktualizacja z października 2017-
 
-- Dodanie dwóch nowych interfejsów API środowiska inintialization i uninitialization. Aby uzyskać informacje, zobacz [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) i [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx).
+- Dodanie dwóch nowych interfejsów API dla środowiska inintialization i anulowania inicjowania. Aby uzyskać informacje, zobacz [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) i [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx).
 - Typy plików programu Visio są teraz obsługiwane. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
 
 ## <a name="february-2016---sdk-documentation-update"></a>Luty 2016 r. — aktualizacja dokumentacji zestawu SDK
@@ -54,11 +54,11 @@ Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zesta
 
 - Wiele aktualizacji poprawiających komunikowanie błędów i rozwiązywanie problemów.
 - Zaktualizowano również listę [obsługiwanych platform](supported-platforms.md).
-- Potrzebę środowisko produkcji wstępnej i stosowania manifest aplikacji został usunięty z zestawu RMS SDK 2.1. Usunięto sekcje tego zestawu dokumentacji dla deweloperów oraz uproszczono i ponownie zorganizowano ogólną dokumentację.
+- Potrzebę środowisko produkcji wstępnej i umożliwia korzystanie z manifestu aplikacji został usunięty z zestawu RMS SDK 2.1. Usunięto sekcje tego zestawu dokumentacji dla deweloperów oraz uproszczono i ponownie zorganizowano ogólną dokumentację.
 
 ## <a name="may-2015-update"></a>Aktualizacja z maja 2015 r.
 
--   **Aplikacje usługi i oparte na chmurze RMS** - [IPC\_POŚWIADCZEŃ\_SYMMETRIC\_klucza](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji; klucz symetryczny  **Identyfikator AppPrincipalId**, i **TenantBposId**. Dla tego artykułu została zaktualizowana do wytyczne dotyczące tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
+-   **Aplikacje usługi i oparte na chmurze RMS** - [IPC\_POŚWIADCZEŃ\_SYMMETRIC\_klucz](https://msdn.microsoft.com/library/dn133062.aspx) wymaga podania trzech informacji; klucz symetryczny  **Identyfikator AppPrincipalId**, i **TenantBposId**. Zaktualizowano artykuł, w tym wytyczne dotyczące przetwarzania tych informacji. Tę aktualizację można znaleźć w poprawionej wersji artykułu [Umożliwianie współpracy aplikacji usługi z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 ## <a name="april-2015-update"></a>Aktualizacja z kwietnia 2015 r.
 
@@ -74,7 +74,7 @@ Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zesta
 ## <a name="january-2015-update"></a>Aktualizacja ze stycznia 2015 r.
 
 -   **Zwiększenie rozmiaru obsługiwanego pliku chronionego (pfile)** — obsługiwane są pliki pfile o rozmiarze przekraczającym jeden gigabajt (1 GB). Aby uzyskać więcej informacji o plikach pfile, zobacz [Obsługiwane formaty plików](supported-file-formats.md).
--   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym, są nadal wyświetlane wyjątki, będą rejestrowane jako **informacji**.
+-   **Ulepszone rejestrowania zapewniające lepszą diagnostykę** — na poziomach rejestrowania będą wyświetlane oznaczenia **BŁĄD** lub **OSTRZEŻENIE** w przypadku komunikatów, które wymagają przejrzenia. Wszystkie inne komunikaty, w tym wyjątków, które są nadal wyświetlane, zostaną zarejestrowane jako **informacje**.
 
     Wybraliśmy to rozwiązanie, aby nie dopuścić do przeoczenia żadnych szczegółów. Tylko ważne komunikaty są wyświetlane na poziomie OSTRZEŻENIA.
 
@@ -84,18 +84,18 @@ Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zesta
 ## <a name="october-2014-update"></a>Aktualizacja z października 2014 r.
 
 -   Zaktualizowano domyślne zachowania składnika specyfikacji File API w zestawie SDK. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja interfejsu API plików](file-api-configuration.md).
--   Powiadomienia e-mail, nowa funkcja jest opisana w artykule o Developer, [Włączanie powiadomień e-mail](how-to-enable-email-notification.md).
+-   Powiadomienia e-mail, nowa funkcja jest opisana w artykule uwagi dla deweloperów, [Włączanie powiadomień e-mail](how-to-enable-email-notification.md).
 
 ## <a name="july-2014-update"></a>Aktualizacja z lipca 2014 r.
 
-Składnika specyfikacji File API w zestawie SDK zostały rozszerzone i oferują następujące funkcje:
+Składnik interfejsu API plików zestawu SDK zostały rozszerzone i oferuje następujące funkcje:
 
 -   Określenie funkcji ochrony, których należy użyć.
 -   Zapewnienie ochrony za pomocą usługi RMS na poziomie szczegółowości pliku.
 
     Funkcje dodane w tej wersji:
 
-    **Uwaga** Do rozszerzeń specyfikacji File API dodano dalsze pomocnicze typy i struktury danych, niewymienione w tym temacie. Wszystkie artykuły, które zostały zaktualizowane w tej wersji są oznaczone jako **charakter wstępny i mogą ulec zmianie**.
+    **Uwaga** Do rozszerzeń specyfikacji File API dodano dalsze pomocnicze typy i struktury danych, niewymienione w tym temacie. Wszystkie artykuły, które zostały zaktualizowane w tej wersji są oznaczone jako **wstępną i może ulec zmianie**.
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)
@@ -165,5 +165,3 @@ Składnika specyfikacji File API w zestawie SDK zostały rozszerzone i oferują 
     3 - The first available language specified in the Rights Management Server (RMS) template.
 
 Jeśli nie będzie można pobrać nazwy ani opisu, zostanie zwrócony błąd. Może istnieć tylko jedna nazwa i opis dla określonego identyfikatora LCID.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

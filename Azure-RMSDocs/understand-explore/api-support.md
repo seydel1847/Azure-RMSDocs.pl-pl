@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b3d0a0e26def8130253369abee6f3180b98aea70
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 11a54f80d9b6b71b19decd3871cd0d324de41caa
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207278"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371870"
 ---
 # <a name="other-applications-that-support-the-rights-management-apis"></a>Inne aplikacje, które obsługują interfejsy API usługi Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Poniższe informacje ułatwiają zrozumienie sposobu, w jaki usługa Azure Rights Management w ramach usługi Azure Information Protection może obsługiwać inne aplikacje w celu ochrony danych organizacji.
 
@@ -29,8 +29,6 @@ Korzystając z zestawów Azure Information Protection SDK, wewnętrzni programi�
 
 Podobnie wielu dostawców oprogramowania udostępnia aplikacje dostarczające rozwiązania do ochrony informacji, znane także jako produkty z kategorii zarządzania prawami dla przedsiębiorstw (ERM). Popularnym przykładem jest czytnik plików PDF, który obsługuje usługę Azure Rights Management dla określonych platform. W celu zidentyfikowania aplikacji, które obsługują usługę Rights Management, można skorzystać z tabeli w sekcji [Aplikacje obsługujące ochronę danych usługi Azure Rights Management](../get-started/requirements-applications.md), a następnie użyć wyszukiwania w sieci Web, aby zakupić lub pobrać aplikację.
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

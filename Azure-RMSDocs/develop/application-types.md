@@ -14,12 +14,12 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d25f377f8a3d592ef8af414ab275783c6c614ede
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 01569a0a3bcc5015c366af9076deb8354d703db3
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765289"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373080"
 ---
 # <a name="application-types"></a>Typy aplikacji
 
@@ -60,5 +60,3 @@ Aby uzyskać więcej informacji o ochronie aplikacji, zobacz [Zrozumienie ograni
 - [Tworzenie aplikacji](developing-your-application.md)
 - [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
 - [Opis ograniczeń użycia](understanding-usage-restrictions.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

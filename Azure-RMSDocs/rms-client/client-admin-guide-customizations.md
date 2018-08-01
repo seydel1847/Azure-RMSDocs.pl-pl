@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fe04cc36f99e641cb11ef832e967699106728749
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217845"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371496"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -114,7 +114,8 @@ Podczas eksportowania zasady, ta akcja spowoduje pobranie plik z rozszerzeniem z
     |--------------------------|---------------------------------------------|
     |Policy1.1.msip |w wersji 1.2|
     |Policy1.2.msip |w wersji 1.3 1.7|
-    |Policy1.3.msip |w wersji 1.8 i nowszych|
+    |Policy1.3.msip |w wersji 1.8 1,29|
+    |Policy1.4.msip |Wersja 1,32 i nowsze|
     
 2. Zmień nazwę wskazany plik do **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, które mają zainstalowanego klienta usługi Azure Information Protection. 
 
@@ -228,6 +229,51 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: **Prawda**
 
+## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>Ochrona plików PDF przy użyciu standardu ISO do szyfrowania plików PDF
+
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Również wymaga wersji zapoznawczej klienta usługi Azure Information Protection.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Domyślnie gdy klient usługi Azure Information Protection chroni plik PDF, wynikowy plik ma rozszerzenie nazwy pliku ppdf. Aby zmienić to zachowanie, tak aby rozszerzenie nazwy pliku pozostaje jako PDF i jest zgodna ze standardem ISO do szyfrowania plików PDF. Aby uzyskać więcej informacji na temat tego standardu, zobacz sekcję **7.6 szyfrowania** z [dokument, który jest tworzony na podstawie obrazu ISO 32000 1](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) i opublikowanych przez Incorporated systemów Adobe.  
+
+Aby skonfigurować to ustawienie Zaawansowane, wprowadź następujący ciąg:
+
+- Klucz: **EnablePDFv2Protection**
+
+- Wartość: **Prawda**
+
+W wyniku tej opcji konfiguracji, gdy klient usługi Azure Information Protection chroni plik PDF, ta akcja powoduje utworzenie chroniony dokument PDF, który można otworzyć za pomocą wersji zapoznawczej klienta usługi Azure Information Protection dla Windows i innych plików PDF czytniki zawartości, które obsługują ISO standard do szyfrowania plików PDF. Aplikacja usługi Azure Information Protection dla systemów iOS i Android nie obsługuje obecnie ISO standard do szyfrowania plików PDF.
+
+Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera.
+
+Znany problem w bieżącej wersji zapoznawczej: we właściwościach dokumentu chronione pliki PDF zawiera nieprawidłową wartość dla autora.
+
+## <a name="support-for-files-protected-by-secure-islands"></a>Obsługa plików chronionych przez Secure Islands
+
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Wymaga to również wersje zapoznawcze klienta usługi Azure Information Protection, skanera usługi Azure Information Protection lub przeglądarka usługi Azure Information Protection.
+
+Jeśli używasz Secure Islands do ochrony dokumentów, może być ochroną tekstu i pliki obrazów oraz pliki objęte ochroną ogólną, w wyniku tej ochrony. Na przykład pliki, które mają rozszerzenie nazwy pliku, ptxt, pjpeg lub pfile. Gdy w następujący sposób edytowania rejestru usługi Azure Information Protection może odszyfrować te pliki:
+
+
+Dodaj następującą wartość DWORD o **EnableIQPFormats** w następującej ścieżce rejestru i Ustaw dane wartości **1**:
+
+- Dla 64-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\oprogramowania\\WOW6432Node\\Microsoft\\MSIP
+
+- Dla 32-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\oprogramowania\\Microsoft\\MSIP
+
+W wyniku tego w rejestrze obsługiwane są następujące scenariusze:
+
+- Przeglądarka usługi Azure Information Protection można otworzyć te pliki chronione.
+
+- Eksplorator plików i programu PowerShell można wyłączyć ochronę tych plików lub ponownie włączyć ochronę je za pomocą usługi Azure Information Protection.
+
+- Eksplorator plików, programu PowerShell i skanera usługi Azure Information Protection można oznaczyć te pliki.
+
+- Skaner usługi Azure Information Protection można sprawdzić te pliki do poufnych informacji.
+
+- Możesz użyć [etykietowania migracji klienta dostosowywania](#migrate-labels-from-secure-islands-and-other-labeling-solutions) przekonwertować Secure Islands etykiety na ten temat chronione pliki do etykiety usługi Azure Information Protection.
+
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 
 Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie.
@@ -235,6 +281,9 @@ Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
 Dokumenty pakietu Office i dokumentów PDF, które są oznaczone przez Secure Islands można relabel te dokumenty za pomocą etykiety usługi Azure Information Protection przy użyciu mapowania, który zdefiniujesz. Ta metoda jest również użyć do ponownego użycia etykiet z innych rozwiązań, w przypadku ich etykiet w dokumentach pakietu Office. 
+
+> [!NOTE]
+> W przypadku plików innych niż dokumentów PDF i pakietu Office, które są chronione przez Secure Islands te można relabeled w po przeprowadzeniu edycji rejestru zgodnie z opisem w [poprzedniej sekcji](#support-for-files-protected-by-secure-islands). 
 
 Tej opcji konfiguracji nowej etykiety usługi Azure Information Protection jest stosowany przez klienta usługi Azure Information Protection w następujący sposób:
 
@@ -402,4 +451,3 @@ Po dostosowaniu klienta usługi Azure Information Protection zapoznaj się z pon
 - [Polecenia programu PowerShell](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

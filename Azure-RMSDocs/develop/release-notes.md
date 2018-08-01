@@ -1,6 +1,6 @@
 ---
 title: Nowości i informacje o wersji
-description: Spis ważnych zmian i funkcji w tym i poprzednich wersjach.
+description: Wymieniono ważne zmiany i funkcje, w tym i poprzednich wersji.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -12,47 +12,47 @@ ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 130da5ecf3fb95297f9bc335b1ea5023d53c589f
-ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
+ms.openlocfilehash: 2780d81684942fe616ae13a1d2645b5290dbc65d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/29/2018
-ms.locfileid: "28878939"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371904"
 ---
 # <a name="whats-new-and-release-notes"></a>Nowości i informacje o wersji
 
 ## <a name="whats-new"></a>Co nowego
 
-W tym temacie wymieniono ważne zmiany i funkcje w tej nowej wersji zestawu RMS SDK v4.x.
+W tym temacie wymieniono ważne zmiany i funkcjonalności w tej nowej wersji v4.x zestawu RMS SDK.
 
--   [Nowość w lipcu 2017](#new-for-july-2017)
+-   [Nowość w lipca 2017 r.](#new-for-july-2017)
 -   [Aktualizacja z października 2016](#October-2016-update)
--   [Aktualizacja czerwca 2016 r.](#new-for-June-2016)
--   [Aktualizacja z grudnia 2015 r.](#december-2015-update)
--   [Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++](#july-2015-update-adds-support-for-linux-c-developm)
--   [Może aktualizacji 2015 r. — dodaje Sterowanie rejestrowaniem](#may-2015-update-adds-logging-control)
--   [Aktualizacja z lutego 2015 r. — obsługę aplikacji ze Sklepu Windows dodaje](#february-2015-update-adds-windows-store-application-support)
--   [Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy winphone](#january-2015-update-adds-winphone-platform-support)
--   [Października 2014 r. aktualizacja — uaktualnienie do zestawu Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
+-   [Aktualizacja z czerwca 2016](#new-for-June-2016)
+-   [Aktualizacja z grudnia 2015](#december-2015-update)
+-   [Aktualizacja z lipca 2015 — dodaje obsługę systemu Linux / programowania w języku C++](#july-2015-update-adds-support-for-linux-c-developm)
+-   [Może być 2015 update — dodaje Sterowanie rejestrowaniem](#may-2015-update-adds-logging-control)
+-   [Aktualizacja z lutego 2015 — Obsługa aplikacji dodaje Windows Store](#february-2015-update-adds-windows-store-application-support)
+-   [Styczeń 2015 aktualizacja — dodaje obsługę platformy WinPhone](#january-2015-update-adds-winphone-platform-support)
+-   [Październik 2014 update - uaktualnienia do programu Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
 -   [Informacje o wersji](#release-notes)
 -   [Często zadawane pytania](#frequently-asked-questions)
 
-### <a name="new-for-july-2017"></a>Nowość w lipcu 2017
+### <a name="new-for-july-2017"></a>Nowość w lipca 2017 r.
 
-Aktualizacja dla naszych wersji Lipcowej uwzględnione zwiększanie poprawki zestawu SDK, teraz 4.2.5.
+Aktualizacja dla naszych wersji Lipcowej uwzględnione, wersja zestawu SDK, teraz 4.2.5 przyrostu o wartości.
 
-- Zestaw SDK systemu android: Aplikacji można teraz **ustawić rejestrowania poziomu na bieżąco** z zestawu SDK systemu Android. Aby uzyskać więcej informacji, zobacz temat [Porady: Włączanie rejestrowania błędów i wydajności](https://docs.microsoft.com/information-protection/develop/enabling-logging)
+- Zestaw SDK systemu android: Twojej aplikacji mogą teraz **Ustaw rejestrowania poziomu na bieżąco** przy użyciu zestawu SDK systemu Android. Aby uzyskać więcej informacji, zobacz temat [Porady: Włączanie rejestrowania błędów i wydajności](https://docs.microsoft.com/information-protection/develop/enabling-logging)
 - Zestaw SDK systemu iOS nie obsługuje poziomu rejestrowania. 
-- Zestaw SDK teraz zwraca błąd dla tokenu dostępu do wartości NULL.
+- Zestaw SDK jest teraz zwraca błąd dla tokenu dostępu o wartości NULL.
 
 ### <a name="october-2016-update"></a>Aktualizacja z października 2016
 
 - Implementuje kilka poprawek błędów zaplecza.
-- Włącz kodu bitowego dla Apple iOS/OS zestawu SDK.
+- Włącz kod bitcode dla firmy Apple dla systemu iOS/OSX zestawu SDK.
 
-### <a name="june-2016-update"></a>Aktualizacja czerwca 2016 r.
+### <a name="june-2016-update"></a>Aktualizacja z czerwca 2016
 
-- **Obsługa nowoczesnego uwierzytelniania** — przełącza na podstawie Active Directory Authentication Library ADAL logowania do usług RMS w aplikacjach z obsługą. Umożliwia ona funkcje logowania takich jak uwierzytelnianie wieloskładnikowe (MFA), na języku SAML dostawcy tożsamości innych firm z aplikacjami klienckimi usługi RMS, karty inteligentnej i uwierzytelnianie oparte na certyfikatach i eliminuje to potrzebę RMS z obsługą aplikacji, które mają korzystać z podstawowego Protokół uwierzytelniania.
+- **Obsługa nowoczesnego uwierzytelniania** — oferuje oparte na Active Directory uwierzytelniania biblioteki ADAL logowania do usług RMS w aplikacjach z obsługą. Umożliwia ona funkcje logowania takich jak uwierzytelnianie wieloskładnikowe (MFA), opartej na SAML dostawcy tożsamości innych firm z aplikacjami klienckimi usługi RMS, karty inteligentnej i uwierzytelniania opartego na certyfikatach oraz jego eliminuje konieczność stosowania usług RMS z obsługą aplikacji, aby użyć podstawowa Protokół uwierzytelniania.
 - **Obsługa śledzenia dokumentów** — deweloperzy mogą teraz włączać śledzenie dokumentów w przypadku objęcia ich ochroną w swoich aplikacjach.
 - Ulepszenia wydajności
 - Poprawki
@@ -63,7 +63,7 @@ W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następując
 
 -   Śledzenie dokumentów, usługa RMS tylko w trybie online dla systemów operacyjnych iOS/OS X i Android.
 
-    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemie iOS/OS X, zobacz [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx) klasy, która dostarcza informacje o śledzeniu i dokumentu dodatkową metodą rejestrowania śledzenia na [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Istnieją podobne dodatki dla systemu Android do klasy [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) i zasady [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
+    Aby uzyskać szczegółowe informacje i wskazówki dotyczące użycia w systemach iOS/OS X, zobacz [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx) klasy, która dostarcza informacje dotyczące śledzenia i dokumentu dodatkową metodą rejestrowania śledzenia na [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx). Istnieją podobne dodatki dla systemu Android do klasy [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) i zasady [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx).
 
     Aby uzyskać szczegółowy opis funkcjonalności śledzenia dokumentów, zobacz temat [Instrukcje: korzystanie ze śledzenia dokumentów](how-to-use-document-tracking.md).
 
@@ -91,7 +91,7 @@ W tym wydaniu zestaw RMS SDK dla urządzeń ma wersję 4.2 i dodaje następując
 
 ### <a name="july-2015-update---adds-support-for-linux--c-development"></a>Aktualizacja z lipca 2015 r. — dodaje obsługę systemu Linux / programowania w języku C++
 
-Tej wersji dodano następujące aktualizacje:
+W tej wersji dodano następujące aktualizacje:
 
 -   Zestaw RMS SDK 4.1 dla platform Linux
 
@@ -99,7 +99,7 @@ Tej wersji dodano następujące aktualizacje:
 
 ### <a name="may-2015-update---adds-logging-control"></a>Aktualizacja z maja 2015 r. — dodaje sterowanie rejestrowaniem
 
-Ta wersja dodaje obsługę następujące aktualizacje:
+W tej wersji dodano obsługę następujących aktualizacji:
 
 -   iOS
 
@@ -117,7 +117,7 @@ Ta wersja dodaje obsługę następujące aktualizacje:
 
 ### <a name="february-2015-update---adds-windows-store-application-support"></a>Aktualizacja z lutego 2015 r. — dodaje obsługę aplikacji ze Sklepu Windows
 
-Ta wersja dodaje obsługę aplikacji ze Sklepu Windows i Windows Phone, Android i iOS/OS X wersji zestawu RMS SDK 4.1 zapewnia parzystość funkcji.
+Ta wersja dodaje obsługę aplikacji Windows Store i zapewnia parzystość Windows Phone, Android i iOS/OS X wersji zestawu RMS SDK 4.1.
 
 ### <a name="january-2015-update---adds-winphone-platform-support"></a>Aktualizacja ze stycznia 2015 r. — dodaje obsługę platformy WinPhone
 
@@ -142,10 +142,10 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 **Usługi AD RMS SDK 4.1 — wydanie z dostępnością globalną dla systemów iOS/OS X i Android**
 
 -   **Obsługa usług AD RMS** —administratorzy IT mogą używać aplikacji z włączoną usługą RMS na urządzeniach przenośnych z rozszerzeniami dla urządzeń przenośnych nowego serwera usług AD RMS.
--   **Użycie trybu offline** — użytkownicy końcowi mają dostęp do danych chronionych przez usługę RMS w trybie offline.
+-   **Użycie trybu offline** — użytkownicy końcowi mogą uzyskiwać dostęp danych chronionych przez usługę RMS w trybie offline.
 -   **Rozdzielone uwierzytelnianie** — deweloperzy mogą używać własnych bibliotek uwierzytelniania dla usług Azure RMS i AD RMS (lub używać zalecanej [biblioteki uwierzytelniania usługi Azure AD (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)).
 -   **Rozdzielony interfejs użytkownika** —deweloperzy mogą tworzyć interfejsy użytkownika, aby używać dokumentów chronionych przez usługę RMS i ochraniać je.
--   **Przeprojektowany interfejsu API** — deweloperzy mogą korzystać prosty i przezroczystego szyfrowania i odszyfrowywania interfejsu API, który zapewnia spójne działanie usługi RMS i środowisko, przy minimalnym wysiłku.
+-   **Przeprojektowany interfejs API** — deweloperzy mogą cieszyć się bardzo prosty i przejrzysty szyfrowania i odszyfrowywania interfejsu API, który zapewnia spójne działanie usługi RMS oraz komfort użytkownika, przy minimalnym wysiłku.
 
 **Wspólne dla wszystkich platform**
 
@@ -155,19 +155,19 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   Korzystając z przykładowej aplikacji na urządzeniu z systemem Amazon® Kindle do wyświetlania załączników PTXT, należy najpierw pobrać plik zanim będzie się go wyświetlać.
 
-    **Rozwiązanie** -znany problem zostanie rozwiązany później.
+    **Rozwiązanie** -znany problem, który zostanie rozwiązany później.
 
 -   Aplikacja, która korzysta z zestawu SDK może ulec awarii w przypadku zezwolenia na działanie wielu wystąpień.
 
     **Rozwiązanie** — upewnij się, że aplikacja nie zezwala na wywołania interfejsu API systemu Android przez wiele wystąpień.
 
--   Kiedy używać [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write (byte\[ \] array, int offset, int length) metody z parametrem length różnym od *array.length* wartość, nie jestem stanie korzystać z zawartości później za pomocą zestawu SDK.
+-   Kiedy używać [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write (byte\[ \] array, int offset, int length) metody z length różnym od *array.length* wartość, nie mogę się Używanie zawartości później za pomocą zestawu SDK.
 
     **Rozwiązanie** — jest to znany problem. Aby go unikać, zawsze przekazuj parametr *byte \[\]* array o długości odpowiadającej parametrowi length lub używaj metody [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array).
 
 **Systemy iOS i OS X**
 
--   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety z powodu usterki, firma Microsoft nie obsługują aktualnie pierwszy lokalizacja całkowicie. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
+-   Istnieją dwa dialekty języka portugalskiego obsługiwane przez nasze zestawy SDK dla systemów operacyjnych iOS i OS X. Niestety ze względu na usterkę, firma Microsoft nie obsługujemy pierwszej lokalizacji całkowicie. Z powodu tej usterki język portugalski nie jest w pełni obsługiwany. Przetłumaczono większość tekstu, ale nie interfejs użytkownika.
 
     1. portugalski
 
@@ -187,7 +187,7 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 -   **Rozwiązanie** — aby utworzyć aplikację z interfejsem wielu dokumentów (MDI) za pomocą naszego zestawu OS X SDK, użyj poniższych wskazówek.
 
-    Następujących metod nie wolno uruchamiać jednocześnie. Aby monitorować przebieg działania, użyj wspomnianego podejścia bloku ukończenia.
+    Następujących metod nie wolno uruchamiać jednocześnie. Aby monitorować przebieg działania, użyj wspomnianego podejścia bloku ukończenia zgodnie z informacjami.
 
     - [MSProtectedData.protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx)
     - [MSCustomProtectedData.customProtectedDataWithPolicy](https://msdn.microsoft.com/library/dn758315.aspx)
@@ -206,13 +206,13 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Pytanie**: jak uzyskać nowego organizacyjnego dzierżawcę, aby wypróbować zestaw SDK i przykładowe aplikacje?
 
-**A**: Aby poprosić o poświadczenia dla organizacji testowych usługi Azure AD RMS, Wyślij wiadomość e-mail do <rmcstbeta@microsoft.com>.
+**A**: żądanie poświadczeń dla organizacji testowych usługi Azure AD RMS, Wyślij e-mail na adres <rmcstbeta@microsoft.com>.
 
 **Pytanie**: w niniejszej dokumentacji nie widzę żadnych informacji o hierarchii testowej. Dlaczego?
 
 **Odpowiedź**: w nowych zestawach AD RMS SDK nie obowiązuje koncepcja hierarchii testowej. Zawsze korzystasz z hierarchii produkcyjnej.
 
-**Q**: W wersji 2.1 zestawu RMS SDK wygenerowany manifest było wymagane dla każdej aplikacji implementującej ochronę informacji. Dotyczy to nadal wersji 4.0 i nowsze wersje zestawu SDK?
+**Q**: W wersji 2.1 zestawu RMS SDK wygenerowanego manifestu wymaganego dla każdej aplikacji implementującej ochronę informacji. To jest nadal dotyczy 4.0 i nowsze wersje zestawu SDK?
 
 **Odpowiedź**: nie, manifesty nie są już potrzebne w wersji 3.0 ani nowszych zestawu Rights Management SDK.
 
@@ -241,4 +241,3 @@ W tej części przedstawiono istotne dla deweloperów informacje o bieżącym i 
 
 **Odpowiedź**: OS X SDK współpracuje tylko z Xcode 4.6 i nowszymi wersjami, a także z systemem OS X 10.8 i nowszymi.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

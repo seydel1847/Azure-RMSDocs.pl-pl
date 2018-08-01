@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21499a1d1badf7901c81cc6ee58b91d058c8a164
-ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
+ms.openlocfilehash: b19b118a700f86c89ce1b727a4f75c1c7017d2c8
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38229784"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369796"
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
 
@@ -69,4 +69,3 @@ Szczegółowe informacje techniczne dotyczące sposobu działania technologii oc
 
 - Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

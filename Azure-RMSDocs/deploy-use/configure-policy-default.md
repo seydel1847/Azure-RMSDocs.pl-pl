@@ -10,16 +10,16 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 57c7321f9bcff12ff0afe4030038495ad4668020
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e8830047e57352d71810d43315ca033ec4ae91e5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208060"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371428"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyślne zasady usługi Azure Information Protection.
 
@@ -29,33 +29,33 @@ Możesz odwołać się do poniższych wartości, aby powrócić do ustawień dom
 
 ## <a name="current-default-policy"></a>Bieżące zasady domyślne
 
-Jest to wersja lub domyślne zasady z 31 lipca 2017 r.
+Ta wersja zasad domyślnych pochodzi od 31 lipca 2017 r.
 
-Ta zasada domyślna jest tworzony po aktywowaniu usługi Azure Rights Management, co ma miejsce w przypadku nowych dzierżaw uruchamianie 2018 lutego. Aby uzyskać więcej informacji, zobacz anons post blog [stosu ulepszenia ochrony usługi Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection).
+Ta zasada domyślna jest tworzony po aktywowaniu usługi Azure Rights Management, co ma miejsce dla nowych dzierżaw, począwszy od lutego 2018 r. Aby uzyskać więcej informacji, zobacz wpis na blogu [ulepszenia ochrony stosu usługi Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection).
 
-Zasada domyślna również jest tworzony, jeśli masz ręcznie [aktywacji usługi](activate-service.md) przed utworzeniem zasad. 
+Ta zasada domyślna tworzona jest również w przypadku ręcznie [aktywacji usługi](activate-service.md) przed utworzeniem zasad. 
 
-Jeśli usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących sublabels:
+Jeśli usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących etykiet podrzędnych:
 
 - **Poufne\Wszyscy pracownicy**
 
-- **Poufne \ odbiorców**
+- **Poufne \ tylko adresaci**
 
 - **Wysoce poufne\Wszyscy pracownicy** 
 
-- **Poufny \ odbiorców** 
+- **Wysoce poufne \ tylko adresaci** 
 
-Gdy sublabels te nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taki sam jak [poprzedniego domyślne zasady](#default-policy-before-july-31-2017).
+Podczas tych etykiet podrzędnych nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taka sama jak [poprzednie zasady domyślne](#default-policy-before-july-31-2017).
 
-Jeśli ochrona jest stosowana do **wszyscy pracownicy** sublabels, ochrona jest konfigurowana przy użyciu domyślnych szablonów, które zostaną automatycznie przekonwertowane na etykiet w portalu Azure. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
+Gdy ochrona jest stosowana do **wszyscy pracownicy** etykiet podrzędnych, ochrona jest konfigurowana przy użyciu szablonów domyślnych, które są automatycznie konwertowane do etykiet w witrynie Azure portal. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Uruchamianie 30 sierpnia 2017 ta wersja domyślna zasada zawiera wersje obsługi wielu języków etykieta nazwy i opisy. 
+Począwszy od 30 sierpnia 2017 r. Ta wersja zasad domyślnych zawiera wersje wielojęzycznych nazwy etykiet i opisy. 
 
-#### <a name="more-information-about-the-recipients-only-sublabel"></a>Więcej informacji na temat sublabel tylko do adresatów
+#### <a name="more-information-about-the-recipients-only-sublabel"></a>Więcej informacji na temat etykietę podrzędną tylko adresaci
 
-Użytkownicy widzą tę etykietę tylko w programie Outlook. Nie widzą tę etykietę w programie Word, Excel, PowerPoint lub w Eksploratorze plików. 
+Użytkownicy widzą tę etykietę tylko w programie Outlook. Ta etykieta w programie Word, Excel, PowerPoint lub Eksploratora plików nie jest widoczna. 
 
-Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj dalej jest automatycznie stosowana do wiadomości e-mail. Odbiorców, które określają użytkowników nie może przesłać wiadomości e-mail i nie można skopiować Drukuj zawartość lub zapisać załączniki.
+Gdy użytkownicy wybiorą etykietę, opcję programu Outlook nie przesyłaj dalej jest automatycznie stosowana do wiadomości e-mail. Adresatów, którzy użytkownicy określić nie może przesłać wiadomości e-mail i nie można skopiować Drukuj zawartość lub zapisuje żadnych załączników.
 
 
 ### <a name="labels"></a>Etykiety
@@ -69,22 +69,22 @@ Gdy użytkownicy wybierają tej etykiety, opcji programu Outlook nie przesyłaj 
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sublabels"></a>Sublabels
+### <a name="sublabels"></a>Etykiet podrzędnych
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
 |Poufne\Wszyscy pracownicy|Dane poufne, które wymagają ochrony, możliwe do wyświetlenia przez wszystkich pracowników z pełnymi uprawnieniami. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Azure (klucz w chmurze) [[1]](#footnote-1)|
 |Poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Poufne \ odbiorców|Dane poufne wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
+|Poufne \ tylko adresaci|Poufne dane, które wymagają ochrony i mogą być wyświetlane tylko przez adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (adres e-mail)<br /><br />Sklasyfikowane jako poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustaw uprawnienia zdefiniowane przez użytkownika (wersja zapoznawcza) w programie Outlook Zastosuj nie przesyłaj dalej|
 |Wysoce poufne\Wszyscy pracownicy|Wysoce poufne dane, dla których wszyscy pracownicy mają uprawnienia do wyświetlania, edycji i udzielania odpowiedzi dla tej zawartości. Właściciele danych mogą śledzić i odwoływać zawartość.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Azure (klucz w chmurze) [[2]](#footnote-2)|
 |Wysoce poufne\Każdy (niechronione)|Dane, które nie wymagają ochrony. Używaj tej opcji z rozwagą w sytuacjach uzasadnionych potrzebami biznesowymi.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail)<br /><br />Sklasyfikowane jako wysoce poufne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
-|Poufny \ odbiorców|Ściśle poufnych danych wymagającego ochrony i które można wyświetlić, tylko adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (poczta e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustawianie uprawnień zdefiniowanych przez użytkownika (wersja zapoznawcza) w programie Outlook zastosować nie przesyłaj dalej|
+|Wysoce poufne \ tylko adresaci|Wysoce poufne dane, które wymagają ochrony i mogą być wyświetlane tylko przez adresatów.|**Włączone**: Włączone <br /><br />**Oznaczenia wizualne**: Stopka (adres e-mail)<br /><br />Sklasyfikowane jako wysoce poufne <br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Ustaw uprawnienia zdefiniowane przez użytkownika (wersja zapoznawcza) w programie Outlook Zastosuj nie przesyłaj dalej|
 
 ###### <a name="footnote-1"></a>Przypis 1
-Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.md#default-templates), **poufne \ wszyscy pracownicy**.
+Uprawnienia ochrony odpowiadają [szablonu domyślnego](configure-policy-templates.md#default-templates), **poufne \ wszyscy pracownicy**.
 
 ###### <a name="footnote-2"></a>Przypis 2 
-Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.md#default-templates), **poufny \ wszyscy pracownicy**.
+Uprawnienia ochrony odpowiadają [szablonu domyślnego](configure-policy-templates.md#default-templates), **wysoce poufne \ wszyscy pracownicy**.
 
 
 ### <a name="information-protection-bar"></a>Pasek usługi Information Protection
@@ -106,9 +106,9 @@ Uprawnienia ochrony odpowiadają [domyślny szablon](configure-policy-templates.
 |Podaj niestandardowy adres URL strony sieci Web „Więcej informacji” klienta usługi Azure Information Protection|Pusty|
 
 
-## <a name="default-policy-before-july-31-2017"></a>Domyślne zasady przed 31 lipca 2017 r.
+## <a name="default-policy-before-july-31-2017"></a>Zasady domyślne sprzed 31 lipca 2017 r.
 
-Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfigurować etykietę do stosowania ochrony lub za pomocą rozwiązania (DLP) związanych z zapobieganiem utracie danych. Aby można było śledzenia i odwoływania dokumentu za pomocą witryny śledzenia dokumentów, dokument musi chronionej przez usługę Azure Rights Management i śledzone przez osobę, która chronionego dokumentu. 
+Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wymagają ochrony, jak również do śledzenia i odwoływania danych. Zasady nie konfigurują ochrony dla tych etykiet, więc musisz wykonać dodatkowe kroki w celu spełnienia wymagań tego opisu. Na przykład skonfigurować etykietę do stosowania ochrony lub przy użyciu rozwiązania zapobieganie utracie danych. Zanim można będzie śledzić i odwoływać dokument za pomocą witryny śledzenia dokumentów, dokument musi chronione przez usługę Azure Rights Management i śledzone przez osobę, która dokument został objęty ochroną. 
 
 
 ### <a name="labels"></a>Etykiety
@@ -122,7 +122,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Wysoce poufne|Bardzo wrażliwe dane biznesowe, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Brak<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sublabels"></a>Sublabels
+### <a name="sublabels"></a>Etykiet podrzędnych
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -162,7 +162,7 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Tajne|Te dane uwzględniają wysoce poufne informacje, które należy chronić w firmie. Udostępnianie danych tajnych nieautoryzowanym użytkownikom może poważnie zaszkodzić organizacji. Przykładami informacji tajnych są informacje umożliwiające identyfikację poszczególnych osób, rekordy klientów, kod źródłowy i wstępnie ogłoszone raporty finansowe.|**Włączone**: Włączone <br /><br />**Kolor**: Czerwony<br /><br />**Oznaczenia wizualne**: Stopka (dokument i wiadomość e-mail):<br /><br /> Ważność: Tajne<br /><br />**Warunki**: Brak<br /><br />**Ochrona**: Brak|
 
 
-### <a name="sublabels"></a>Sublabels
+### <a name="sublabels"></a>Etykiet podrzędnych
 
 |Etykieta|Etykietka narzędzia|Ustawienia|
 |-------------------------------|---------------------------|-----------------|
@@ -187,8 +187,6 @@ Należy zauważyć, że opisy w tych zasadach odnoszą się do danych, które wy
 |Podaj niestandardowy adres URL strony sieci Web „Więcej informacji” klienta usługi Azure Information Protection|Pusty|
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy). 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39787218e1c9e1d130748aa309ae49790b64275a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1c260cd3d27d38328c3e09c71b3db77bb30ecfaa
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206958"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375389"
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Używanie skrótów klawiaturowych w aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 Podczas korzystania z aplikacji RMS sharing naciśnij klawisz **Alt** w celu wyświetlenia dostępnych klawiszy dostępu, a następnie naciśnij klawisz **Alt** + klawisz dostępu, aby wybrać opcję.
 
@@ -38,5 +38,3 @@ Aby uzyskać instrukcje i przykłady dotyczące korzystania z aplikacji do udost
 
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

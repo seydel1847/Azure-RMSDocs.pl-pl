@@ -13,16 +13,16 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7c6acb5a4b5c8f33193cbf5d8833201e0d68287e
-ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
+ms.openlocfilehash: d573cffaa45141618bf6cf141eb53f069693d063
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33946440"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372716"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 W tym ostatnim kroku samouczka odszukaj utworzony wcześniej dokument programu Word lub arkusz kalkulacyjny programu Excel, który prześlesz do współpracownika. W ramach tego samouczka nie jest istotne, jaki tekst zawiera dokument. Niemniej dobrze będzie wpisać jakiś tekst, aby łatwiej potwierdzić, że autoryzowany odbiorca mógł go odczytać.
 
@@ -60,7 +60,7 @@ Następnie możesz bezpiecznie udostępnić ten dokument za pomocą poczty e-mai
 
 7. Zmodyfikuj opis domyślnej wiadomości, aby był on odpowiedni dla Twoich odbiorców. Pamiętaj o dodaniu do pliku poniższego tekstu:
 
-    **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. Pierwszym użyciem, zapoznaj się z tymi instrukcjami: https://aka.ms/rms-signup.** 
+    **Ten plik został przeze mnie objęty ochroną w ramach usługi Microsoft Azure Information Protection. Do pierwszego użycia, zobacz te instrukcje: https://aka.ms/rms-signup.** 
 
     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 5 — udostępnianie chronionego dokumentu za pośrednictwem poczty e-mail](../media/share-protected-emailv2.png)
 
@@ -104,7 +104,7 @@ Teraz, po otwarciu załącznika przez odbiorcę (opcjonalnie po jego przesłaniu
 
 3.  Na stronie **Twoje dokumenty udostępnione** zobaczysz nazwę udostępnionego dokumentu. W tym momencie jest to jedyny wyświetlany plik, ale liczba pozycji na liście będzie rosnąć wraz z udostępnianiem kolejnych dokumentów chronionych.
 
-    Na tej stronie widoczny będzie czas udostępnienia dokumentu (kiedy wysłano wiadomość e-mail z chronionym dokumentem), jego bieżący stan (aktywna, odwołane lub wygasłe) oraz nazwę odbiorcy, do którego wysłano wiadomość e-mail do. Kliknij nazwę dokumentu, aby uzyskać dodatkowe informacje.
+    Na tej stronie zostanie wyświetlony czas udostępnienia dokumentu (kiedy wysłano wiadomość e-mail z chronionym dokumentem), ich bieżący stan (aktywna, odwołane lub wygasłe) i Nazwa odbiorcy, do którego wysyłane wiadomości e-mail. Kliknij nazwę dokumentu, aby uzyskać dodatkowe informacje.
 
 4.  Na nowej stronie, która zawiera nazwę klikniętego pliku, zobaczysz szczegółowe informacje dotyczące wyłącznie tego dokumentu oraz listę opcji dostępnych dla tego dokumentu (**Lista**, **Oś czasu**, **Mapa**, **Ustawienia**).
 
@@ -128,5 +128,3 @@ Po zapoznaniu się z domyślnymi zasadami usługi Azure Information Protection i
 Spróbuj udostępnić więcej dokumentów i śledź ich użycie oraz potwierdź sposób działania funkcji odwoływania dokumentów.
 
 Następnie przydatne może być powrót na stronę **Szybki start** w portalu Azure, przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md). 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

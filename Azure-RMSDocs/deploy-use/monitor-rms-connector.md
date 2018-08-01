@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8fc380b5d015ec055961b815117a0b5450c3661b
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 2be1df328867fa1ccb13b1d6bc53b59e58f12903
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216770"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370792"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, w systemie Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można skorzystać z następujących metod i informacji, które ułatwiają monitorowanie łącznika oraz korzystanie przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
@@ -192,4 +192,3 @@ Jeśli potrzebujesz bardziej szczegółowego rejestrowania do celów diagnostycz
 
 5.  Po przechwyceniu odpowiednich śladów przywróć wiersz z kroku 3, a następnie zatrzymaj i uruchom ponownie usługi IIS.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f0ae817fb8b60b0086d2684b620fa17da970f8e8
-ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
+ms.openlocfilehash: 5bd0953f7d9afaaa76ce866393f188438d9b3405
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37043367"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371251"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -119,7 +119,7 @@ Główne różnice między te dwa rozwiązania:
 
 |System Windows Server infrastruktury klasyfikacji plików|Skaner usługi Azure Information Protection|
 |--------------------------------|-------------------------------------|
-|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013|
+|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) i korzystający z wersji zapoznawczej skanera.|
 |Tryb działania: <br /><br />-Czasu rzeczywistego|Tryb działania: <br /><br />-Systematycznie przeszukuje magazynów danych i tego cyklu można uruchomić pojedynczego lub wielokrotnego|
 |Obsługa typów plików: <br /><br />— Wszystkie typy plików są chronione domyślnie <br /><br />-Określonych typów plików, można wykluczyć z ochrony, edytując rejestr|Obsługa typów plików: <br /><br />— Typy plików pakietu office są chronione domyślnie <br /><br />-Określonych typów plików, można dołączyć do ochrony przez edycję rejestru|
 
@@ -173,5 +173,4 @@ Ponadto są przeznaczone dla użytkowników końcowych często zadawane pytania:
 - [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Rights Management dla systemu Windows](https://technet.microsoft.com/dn467883)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

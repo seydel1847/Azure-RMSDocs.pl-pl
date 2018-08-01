@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 2a377076536dfebcf642b81616d41fd439b56382
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444116"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374810"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
->*Dotyczy: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij się, że w usłudze Azure AD istnieją konta użytkowników i grup dla dzierżawy organizacji.
 
@@ -87,9 +87,9 @@ Oprócz używania atrybutów proxyAddresses i userPrincipalName usługi Azure AD
 
 Inne metody autoryzacji:
 
-- W przypadku adresów e-mail, które nie znajdują się w usłudze Azure AD Azure Information Protection może autoryzować te po ich uwierzytelniania przy użyciu konta Microsoft. Jednak nie wszystkie aplikacje może otworzyć chronioną zawartość, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- W przypadku adresów e-mail, które nie znajdują się w usłudze Azure AD usługi Azure Information Protection może autoryzować te podczas ich uwierzytelniania przy użyciu konta Microsoft. Jednak nie wszystkie aplikacje można otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
-- Gdy zostanie wysłana wiadomość e-mail przy użyciu szyfrowanie wiadomości usługi Office 365 z nowych funkcji do użytkownika, który nie ma konta w usłudze Azure AD, użytkownik jest najpierw uwierzytelniany przy użyciu federacji z dostawcy tożsamości społecznościowych lub za pomocą jednorazowy kod dostępu. Adres e-mail podany w chronionych wiadomości e-mail, zostanie użyty do autoryzacji użytkownika.
+- Gdy zostanie wysłana wiadomość e-mail za pomocą szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom do użytkownika, które nie mają konta w usłudze Azure AD, użytkownik jest najpierw uwierzytelniany przy użyciu federacji z dostawcy tożsamości społecznościowych lub korzystając z jednorazowym kodem dostępu. Adres e-mail określony w chronioną wiadomość e-mail zostanie użyty do autoryzacji użytkownika.
 
 ## <a name="azure-information-protection-requirements-for-group-accounts"></a>Wymagania dotyczące usługi Azure Information Protection dla kont grup
 
@@ -107,7 +107,7 @@ W przypadku konfigurowania usługi Azure Rights Management:
 
 - W usłudze Azure AD można używać dowolnego typu grupy z adresem e-mail z domeny zweryfikowanej w dzierżawie — z jednym wyjątkiem. Wyjątkiem jest sytuacja, gdy konfigurujesz kontrolki dołączania w celu użycia grupy, która musi być grupą zabezpieczeń w usłudze Azure AD dla dzierżawy.
 
-- Można dowolną grupę w usłudze Azure AD (z lub bez adresu e-mail) z zweryfikowanej domeny w dzierżawie administracji delegowanej usługi Azure Rights Management.
+- Umożliwia dowolną grupę w usłudze Azure AD (z lub bez adresu e-mail) z domeny zweryfikowanej w dzierżawie potrzeby delegowanej administracji usługi Azure Rights Management.
 
 ### <a name="assigning-usage-rights-and-access-controls-to-external-groups"></a>Przypisywanie praw użytkowania i kontroli dostępu do grup zewnętrznych
 
@@ -144,7 +144,7 @@ Aby potwierdzić konta użytkowników, uruchom następujące polecenie:
 
 Najpierw upewnij się, że użytkownicy, których chcesz używać w usłudze Azure Information Protection, są wyświetlani.
 
-Następnie sprawdź, czy kolumna **ProxyAddresses** została wypełniona. Jeśli tak jest, wartości poczty e-mail w tej kolumnie może służyć do autoryzacji użytkownika usługi Azure Information Protection.
+Następnie sprawdź, czy kolumna **ProxyAddresses** została wypełniona. Jeśli tak jest, wartości adresów e-mail w tej kolumnie mogą służyć do autoryzacji użytkownika usługi Azure Information Protection.
 
 Jeśli kolumna **ProxyAddresses** nie została wypełniona, do autoryzacji użytkownika w usłudze Azure Rights Management będzie używana wartość **UserPrincipalName**.
 
@@ -194,25 +194,24 @@ W przypadku dwóch scenariuszy konfiguracji Azure Rights Management korzystając
 
 Jeśli zmienisz adres e-mail użytkownika lub grupy, zalecamy dodanie starego adresu e-mail jako drugiego adresu e-mail (znanego także jako adres serwera proxy, alias lub alternatywny adres e-mail) do użytkownika lub grupy. Wykonanie tej czynności spowoduje dodanie starego adresu e-mail do atrybutu proxyAddresses usługi Azure AD. Administrowanie tym kontem zapewnia ciągłość działania w przypadku dowolnych praw użytkowania lub innych konfiguracji zapisanych, gdy stary adres e-mail był w użyciu. 
 
-Jeśli nie możesz tego zrobić, użytkownika lub grupy z nowej wiadomości e-mail adres ryzyka odmowę dostępu do dokumentów i wiadomości e-mail, które wcześniej były chronione przy użyciu starego adresu e-mail. W takim przypadku należy powtórzyć konfiguracji ochrony, aby zapisać nowy adres e-mail. Na przykład jeśli użytkownik lub grupa przyznano prawa użytkowania w szablonach lub etykiety, edytowanie tych szablonów lub etykiety i określ nowy adres e-mail z tego samego prawa użytkowania podczas przyznane stary adres e-mail.
+Jeśli nie możesz tego zrobić, użytkownika lub grupy z nowej wiadomości e-mail adres ryzyka nastąpiła odmowa dostępu do dokumentów i wiadomości e-mail, które były wcześniej chronione za pomocą starego adresu e-mail. W takim przypadku musisz powtórzyć konfigurację ochrony, aby zapisać nowy adres e-mail. Na przykład jeśli użytkownik lub grupa udzielono prawa użytkowania w szablonach lub etykiety, edytować tych szablonów lub etykiety i określ nowy adres e-mail przy użyciu tych samych praw użytkowania, jak udzielenie stary adres e-mail.
 
 Pamiętaj, że zmiana adresu e-mail grupy występuje rzadko, więc jeśli przypisujesz prawa użytkowania do grupy, a nie do poszczególnych użytkowników, zmiana adresu e-mail użytkownika nie ma znaczenia. W tym scenariuszu prawa użytkowania są przypisywane do adresu e-mail grupy, a nie do adresów e-mail poszczególnych użytkowników. Jest to najbardziej prawdopodobna (i zalecana) metoda, której administrator może użyć w celu skonfigurowania praw użytkowania chroniących dokumenty i wiadomości e-mail. Użytkownicy mogą jednak przeważnie przypisywać poszczególnym osobom uprawnienia niestandardowe. Ponieważ nie zawsze wiadomo, czy konto użytkownika lub grupy było używane do udzielania dostępu, najbezpieczniej jest zawsze dodać stary adres e-mail jako drugi adres e-mail.
 
-## <a name="group-membership-caching-by-azure-information-protection"></a>Grupy członkostwa w pamięci podręcznej przez usługę Azure Information Protection
+## <a name="group-membership-caching-by-azure-information-protection"></a>Buforowanie członkostwa w usłudze Azure Information Protection w grupach
 
-Ze względu na wydajność usługi Azure Information Protection buforuje członkostwa w grupie. Oznacza to, że wszelkie zmiany członkostwa w grupie w usłudze Azure AD może potrwać do trzech godzin zaczęły obowiązywać, gdy te grupy są używane przez usługi Azure Information Protection i tym okresie mogą ulec zmianie. 
+Ze względu na wydajność usługi Azure Information Protection buforuje członkostwa w grupie. Oznacza to, że wszelkie zmiany członkostwa w grupach w usłudze Azure AD może potrwać do trzech godzin zaczęły obowiązywać, gdy te grupy są używane przez usługę Azure Information Protection, a ten okres może ulec zmianie. 
 
-Pamiętaj, aby uwzględnić to opóźnienie podczas zmiany lub testowania wykonaj dzięki użyciu grup przyznania prawa użytkowania lub konfigurowanie usługi Azure Rights Management lub podczas konfigurowania zakresu zasad.
+Pamiętaj, aby uwzględnić to opóźnienie we wszystkich zmianach i wykonywanym testowaniu w przypadku korzystania z grup do udzielania praw użytkowania lub konfigurowania usługi Azure Rights Management lub po skonfigurowaniu zasad o określonym zakresie.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
-Po potwierdzeniu, że użytkowników i grup, które mogą być używane z usługi Azure Information Protection i wszystko jest gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, sprawdź, czy chcesz aktywować usługę Azure Rights Management. Ta usługa musi być aktywowana, aby chronić dokumenty i wiadomości e-mail w organizacji: 
+Po potwierdzeniu, że użytkownicy i grupy mogą służyć za pomocą usługi Azure Information Protection i wszystko będzie gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, sprawdź, czy chcesz aktywować usługę Azure Rights Management. Ta usługa musi być aktywowana, aby chronić dokumenty i wiadomości e-mail w organizacji: 
 
-- Począwszy od lutego 2018: Jeśli subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection został uzyskany podczas lub po tym miesiącu, usługa automatycznie została aktywowana dla Ciebie. 
+- Począwszy od lutego 2018 r.: Jeśli subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection został uzyskany w trakcie lub po miesiącem, usługa automatycznie została aktywowana dla Ciebie. 
 
-- Jeśli w Twojej subskrypcji został uzyskany wcześniej lutego 2018:, musisz aktywować usługę samodzielnie. 
+- Jeśli Twoja subskrypcja została uzyskany wcześniej lutego 2018 r.: możesz aktywować usługę samodzielnie. 
 
-Aby uzyskać więcej informacji, łącznie z sprawdzania stanu aktywacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
+Aby uzyskać więcej informacji, która obejmuje sprawdzanie stanu aktywacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

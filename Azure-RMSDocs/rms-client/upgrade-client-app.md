@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 79befd96ba20fa3dcb86dbb5a511e0fec6bc8447
-ms.sourcegitcommit: b993c332e53d7aa48d93d4bbd42c80abcf79b351
+ms.openlocfilehash: 27bc46bd6afb94b4a87836d2cad18d3cb6ea9b9f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37107002"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375576"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Podręcznik użytkownika: Zadania, które były wykonywane za pomocą aplikacji RMS sharing
 
@@ -47,7 +47,7 @@ Jeśli szukasz konkretnej opcji znanej z aplikacji RMS sharing, zapoznaj się z 
 |**Zezwalaj mi na natychmiastowe odwołanie dostępu do tych dokumentów**|Ta opcja nie jest już dostępna. Użyj ustawień ochrona zdefiniowana przez administratora, które nie zezwalają na dostęp w trybie offline. Ponadto administrator może zmniejszyć okres ważności licencji użytkowania dla dzierżawy, uruchamiając [Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime).
 |**Śledzenie użycia** w programie Outlook|Możliwość dostępu do witryny śledzenia dokumentów z programu Outlook nie jest już dostępna. Zamiast tego należy użyć **śledzenie i odwoływanie** opcję z programu Word, PowerPoint, Excel lub Eksploratora plików. Lub za pomocą przeglądarki, możesz też przejść bezpośrednio do [witryny śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=529562).
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protection:
 
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
@@ -55,5 +55,4 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
 Zobacz [Podręcznik administratora klienta usługi Azure Information Protection](client-admin-guide.md).
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]  
+  
