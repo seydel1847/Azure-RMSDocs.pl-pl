@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5320f016426fd26f2742ce0a3e49f25fc3bbc03
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fcf31485505b1daff3571c33e5262fd6f7586b77
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39370486"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411006"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
@@ -47,7 +47,7 @@ Ponadto — ponieważ usługa Azure Information Protection to usługa w chmurze 
 Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabeli zawierającej porównanie funkcji usług Azure Information Protection i AD RMS oraz korzyści wynikających z ich używania. Jeśli masz pytania dotyczące porównania w zakresie zabezpieczeń, zobacz sekcję [Formanty kryptograficzne podpisywania i szyfrowania](#cryptographic-controls-for-signing-and-encryption) tego artykułu.
 
 > [!NOTE]
-> Aby ułatwić to porównanie, niektóre informacje podane w tym miejscu są powtórzeniem informacji z artykułu [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements-azure-rms.md). Użyj tego źródła, aby uzyskać bardziej szczegółową pomoc techniczną oraz informacje o wersji usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)].
+> Aby ułatwić to porównanie, niektóre informacje podane w tym miejscu są powtórzeniem informacji z artykułu [Wymagania dotyczące usługi Azure Information Protection](../get-started/requirements-azure-rms.md). Aby uzyskać bardziej szczegółowe informacje pomocy technicznej i wersji usługi Azure Rights Management, należy użyć tego źródła.
 
 |Azure Information Protection|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|

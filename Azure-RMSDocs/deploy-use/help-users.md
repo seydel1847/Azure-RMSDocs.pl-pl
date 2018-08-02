@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9410ffa21b4f5d905f7bc68ba80afa46122155da
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fc42e122d8cf16cb9a05907e8244f6b6de4579c0
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373250"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411023"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
@@ -90,7 +90,7 @@ Jeśli używasz usługi Azure Rights Management i nie masz zainstalowanego klien
 3. Wybierz szablon, aby szybko zastosować odpowiednie prawa użytkowania, lub wybierz pozycję **Ogranicz dostęp** i samodzielnie wybierz prawa użytkowania.
 
     > [!NOTE]
-    > Jeśli usługa Rights Management nie była wcześniej używana na komputerze, wybór opcji **Ogranicz dostęp** spowoduje nawiązanie połączenia z usługą [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] i wyświetlenie monitu o podanie poświadczeń w celu skonfigurowania klienta IRM pakietu Office. Następnie można wybrać szablon i prawa użytkowania.
+    > Jeśli usługi Rights Management na komputerze, nie będą wcześniej używano **Ogranicz dostęp** opcja łączy się z usługą Azure Rights Management i zostanie wyświetlony monit o poświadczenia w celu skonfigurowania klienta IRM pakietu Office. Następnie można wybrać szablon i prawa użytkowania.
 
 3.  Zapisz dokument.
 

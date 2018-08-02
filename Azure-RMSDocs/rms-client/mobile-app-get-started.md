@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 076188a7ab99f5926861ff3d3c10919dd929da6c
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 22bf71b5fa50c08cb5085cc5741766e07a16581b
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371938"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411160"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>Wprowadzenie do aplikacji Microsoft Azure Information Protection dla systemów iOS i Android
 
@@ -48,5 +48,3 @@ Aby wyświetlić te pliki w przeglądarce usługi Azure Information Protection, 
 ## <a name="next-steps"></a>Kolejne kroki
 
 Do pytania lub opinie na temat tej aplikacji, które nie zostały opisane w [— często zadawane pytania](mobile-app-faq.md), odwiedź nasz [witryny usługi Yammer](https://www.yammer.com/AskIPTeam).
-
-Jeśli aplikacja nie działa zgodnie z opisem, zobacz zasoby wymienione w naszym [regułami](../house-rules.md) strony.

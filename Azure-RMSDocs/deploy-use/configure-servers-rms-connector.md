@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9662f9346cc3d14f07f1dfd7522237e3214a6c6d
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: c598f4a2bbf0e1926cb05eaa7ef2b51ad87dbc88
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372424"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411057"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
@@ -254,6 +254,6 @@ Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery s�
 
 Należy zauważyć, że można skonfigurować szablony przypisane do działów, które mają być używane w zgodzie z regułami transportu programu Exchange lub infrastrukturą FCI systemu Windows Server. Konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 
-Możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które warto wykonać przed udostępnieniem usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] użytkownikom i administratorom.
+Możesz użyć [planu wdrożenia usługi Azure Information Protection](../plan-design/deployment-roadmap.md) do sprawdzenia, czy istnieją inne czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Rights Management dla użytkowników i administratorów.
 
 Aby monitorować łącznik usługi RMS, zobacz [Monitorowanie łącznika usługi Azure Rights Management](monitor-rms-connector.md). 

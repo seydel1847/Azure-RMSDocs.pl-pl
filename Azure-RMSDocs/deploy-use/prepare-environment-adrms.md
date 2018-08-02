@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c8557ebead5bf145960c77f36d56a769aaed651a
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 2bfe729edadbaebe78bc22e52bec91be6d3dad5e
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373359"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39410982"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>Przygotowywanie środowiska na potrzeby usługi Azure Rights Management w przypadku używania również usług Active Directory Rights Management Services (AD RMS)
 
@@ -56,7 +56,7 @@ Czy użytkownik chce migrować do usługi Azure Information Protection zdecyduje
 Pod koniec lutego 2018 r. nowe subskrypcje, które obejmują usługi Azure Information Protection, teraz aktywować usługę Azure Rights Management domyślnie. Jeśli ta usługa jest aktywowana automatycznie dla Ciebie, a także używasz Active Directory Rights Management Services (AD RMS), ta kombinacja jest niezgodna, dlatego należy jak najszybciej dezaktywowanie usługi Azure Rights Management. 
 
 ### <a name="step-1-deactivate-azure-rights-management"></a>Krok 1: Dezaktywowanie usługi Azure Rights Management
-Wykonaj kroki jednej z poniższych procedur, aby zdezaktywować usługę [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)].
+Użyj jednej z poniższych procedur, aby zdezaktywować usługę Azure Rights Management.
 
 > [!TIP]
 > Możesz również użyć polecenia cmdlet programu Windows PowerShell, [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm), aby zdezaktywować usługę Azure Rights Management.

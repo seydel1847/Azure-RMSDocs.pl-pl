@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: e369a77fb9de150dd83fd48abad53898cd8614f1
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: b092878490538afa4a73b3845de6bcf2fca9c0c8
+ms.sourcegitcommit: 95d26d88a5898e0afc1dde863119afd05ea4427d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372839"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401085"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -155,7 +155,7 @@ Token usługi Azure AD umożliwia skanera konto usługi uwierzytelniania w usłu
 2. Z komputera systemu Windows Server, jeśli przyznano konta usługi skanera **logować się lokalnie** prawa do instalacji: Zaloguj się przy użyciu tego konta i uruchomić sesję programu PowerShell. Uruchom [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication), określając wartości, które zostały skopiowane z poprzedniego kroku:
     
     ```
-    Set-AIPAuthentication -webAppId <ID of the "Web app / API" application>  -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application >
+    Set-AIPAuthentication -webAppId <ID of the "Web app / API" application> -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application>
     ```
     
     Po wyświetleniu monitu podaj hasło dla poświadczeń konta usługi dla usługi Azure AD, a następnie kliknij przycisk **Akceptuj**.

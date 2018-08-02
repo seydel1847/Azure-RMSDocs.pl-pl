@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5acf00dc1b3bac0673208d1a9bc6e09e98edf40a
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375525"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411074"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell z klientem usługi Azure Information Protection
 
@@ -559,7 +559,7 @@ Ogólne kroki:
 
 2. Skopiuj i wklej poniższe polecenie do skryptu:
     
-         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
 
 3. Zgodnie z instrukcjami w poprzedniej sekcji, zmieniać tego polecenia, określając wartości dla **WebAppId**, **WebAppkey**, i **NativeAppId** parametrów. W tej chwili nie ma wartości dla **tokenu** parametr, który określisz później. 
     

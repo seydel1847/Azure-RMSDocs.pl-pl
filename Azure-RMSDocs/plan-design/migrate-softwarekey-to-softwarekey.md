@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc84864b8bbd196a2a90ea2ac2924be9f40efc23
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 5de0a80687da0af2329493b6f9ce97238a6ec90f
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375287"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411363"
 ---
 # <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie
 
@@ -37,7 +37,7 @@ Wykonaj poniższe kroki, które umożliwiają zaimportowanie konfiguracji usług
     ```
     Connect-AadrmService
     ```
-    Po wyświetleniu monitu wprowadź poświadczenia administratora dzierżawy usługi [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1.md)] (zazwyczaj jest używane konto administratora globalnego usługi Azure Active Directory lub Office 365).
+    Po wyświetleniu monitu wprowadź poświadczenia administratora dzierżawy usługi Azure Rights Management (zazwyczaj jest używane konto administratora globalnego usługi Azure Active Directory lub Office 365).
 
 2. Użyj polecenia cmdlet [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd), aby przekazać każdy wyeksportowany plik XML zaufanej domeny publikacji. Na przykład po uaktualnieniu klastra usług AD RMS dla trybu kryptograficznego 2 powinien być dostępny przynajmniej jeden dodatkowy plik do zaimportowania. 
     

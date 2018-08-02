@@ -4,18 +4,18 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 9be846a194e077748aca58e9822db2085d2992dc
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 49d8e060e337b16967407932b22f90c55e9fad3c
+ms.sourcegitcommit: 95d26d88a5898e0afc1dde863119afd05ea4427d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374620"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39401068"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -99,6 +99,9 @@ Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>Typy informacji poufnych, które wymagają minimalną wersję klienta
 
+> [!NOTE]
+> Następujące typy informacji czułości są teraz zetknie się dzierżaw, ale mogą jeszcze być niewidoczne do wyboru. Jednak w przypadku skonfigurowania skanera usługi Azure Information Protection, aby [zidentyfikować wszystkie warunki niestandardowe i typów informacji poufnych znanych](deploy-aip-scanner.md#using-the-scanner-with-alternative-configurations), wersję zapoznawczą skaner może wykryć te nowe typy informacji, nawet jeśli z jakiegoś powodu zaznacz je w witrynie Azure portal.
+
 Następujące typy informacji poufnych wymaga obecnie wersji zapoznawczej klienta usługi Azure Information Protection:
 
 - **Numer telefonu UE**
@@ -112,6 +115,7 @@ Następujące typy informacji poufnych wymaga obecnie wersji zapoznawczej klient
 - **Kod identyfikacyjny populacji tajski**
 - **Lira krajowego numeru identyfikacyjnego**
 - **Numer karty japoński w miejscu zamieszkania użytkownika**
+
 
 ## <a name="next-steps"></a>Kolejne kroki
 
