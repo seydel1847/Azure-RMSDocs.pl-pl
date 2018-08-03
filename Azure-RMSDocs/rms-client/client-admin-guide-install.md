@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8a888ffbcecb3f5fe714201a950a59162e295c4f
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371530"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474175"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Instalowanie klienta usługi Azure Information Protection dla użytkowników
 
 >*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
 
-Przed zainstalowaniem klienta usługi Azure Information Protection w sieci przedsiębiorstwa, sprawdź, czy komputery mają wymagane wersje systemu operacyjnego i aplikacji dla usługi Azure Information Protection: [wymagania dotyczące usługi Azure Information Ochrona](../get-started/requirements-azure-rms.md). 
+Przed zainstalowaniem klienta usługi Azure Information Protection w sieci przedsiębiorstwa, sprawdź, czy komputery mają wymagane wersje systemu operacyjnego i aplikacji dla usługi Azure Information Protection: [wymagania dotyczące usługi Azure Information Ochrona](../requirements.md). 
 
 Następnie sprawdź dodatkowe wymagania wstępne, które mogą być wymagane dla klienta usługi Azure Information Protection, zgodnie z opisem w następnej sekcji. Nie wszystkie wymagania wstępne są sprawdzane przez program instalacyjny.
 

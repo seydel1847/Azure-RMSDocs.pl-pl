@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0c5af3a9ac19542c547a97e705aee5a79a6a3dc4
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: d34c9069d7486c4a7cab78ccffe49b608e8a2825
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "39411220"
+ms.locfileid: "39473461"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
@@ -54,7 +54,7 @@ W przypadku używania funkcji zarządzania prawami do informacji (IRM) programu 
 Ten krok obejmuje instalowanie i konfigurowanie łącznika, wyłączanie usługi IRM dla programów Exchange i SharePoint oraz konfigurowanie tych serwerów do korzystania z łącznika. Na koniec — jeśli do usługi Azure Information Protection zaimportowano pliki danych konfiguracji usługi AD RMS (XML) użyte do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 
 > [!NOTE]
-> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Rights Management zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../get-started/requirements-servers.md).
+> Przed rozpoczęciem sprawdź wersje serwerów lokalnych obsługujących usługę Azure Rights Management zgodnie z opisem w sekcji [Serwery lokalne, które obsługują usługę Azure RMS](../requirements-servers.md).
 
 ### <a name="install-and-configure-the-rms-connector"></a>Instalowanie i konfigurowanie łącznika usługi RMS
 

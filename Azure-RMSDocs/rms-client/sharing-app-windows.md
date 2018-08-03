@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d30af1e520c63cb407099d13a6bd8ba77351ca75
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 43f0496854b17ee476c04b7b5ea3e3430b704c92
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374854"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473284"
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>Aplikacja do udostępniania usługi Rights Management dla systemu Windows
 
@@ -27,7 +27,7 @@ ms.locfileid: "39374854"
 > **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
 
 
-Aplikacja do udostępniania dla Windows (znane również jako "aplikacja RMS sharing") to bezpłatna aplikacja do pobrania dla organizacji korzystających z usługi Rights Management [usługi zarządzania prawami dostępu w usłudze Active Directory](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub [Usługi azure Information Protection](../understand-explore/what-is-information-protection.md). Ta aplikacja jest również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Rights Management z usługi Azure Information Protection.
+Aplikacja do udostępniania dla Windows (znane również jako "aplikacja RMS sharing") to bezpłatna aplikacja do pobrania dla organizacji korzystających z usługi Rights Management [usługi zarządzania prawami dostępu w usłudze Active Directory](https://technet.microsoft.com/library/cc772403.aspx) (AD RMS) lub [Usługi azure Information Protection](../what-is-information-protection.md). Ta aplikacja jest również dla organizacji, które nie dysponują własną infrastrukturą ochrony informacji, ale chcą korzystać z zawartości chronionej przez inne organizacje korzystające z usługi Azure Rights Management z usługi Azure Information Protection.
 
 -   [Aplikacja do udostępniania usługi Rights Management: historia wersji](sharing-app-version-release-history.md)
 

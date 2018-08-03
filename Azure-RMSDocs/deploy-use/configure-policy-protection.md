@@ -4,18 +4,18 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: c788982587487f88b31a130933b6d95c6cf94c42
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: a1e480f8a071e8c5582169193a8e17ea2ec38e6f
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373291"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474141"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -37,7 +37,7 @@ Gdy dokument lub wiadomość e-mail są chronione przez usługę Rights Manageme
 
 - Bieżącego cennika przesyłanego do partnerów biznesowych nie można otworzyć po określonej dacie.
 
-Aby uzyskać więcej informacji na temat ochrony usługi Azure Rights Management i jak to działa, zobacz [co to jest Azure Rights Management?](../understand-explore/what-is-azure-rms.md)
+Aby uzyskać więcej informacji na temat ochrony usługi Azure Rights Management i jak to działa, zobacz [co to jest Azure Rights Management?](../what-is-azure-rms.md)
 
 > [!IMPORTANT]
 > Aby skonfigurować etykietę w celu zastosowania tej ochrony, usługa Azure Rights Management musi być aktywowana w organizacji. Aby uzyskać więcej informacji, zobacz [Aktywacja usługi Azure Rights Management](../deploy-use/activate-service.md).
@@ -94,7 +94,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
         
         Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: gdy ta opcja jest ustawiona, etykieta jest wyświetlana w tych aplikacjach. Wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe użytkownikom na wybór uprawnienia niestandardowe. W tym oknie dialogowym Użytkownicy muszą określić uprawnienia, użytkowników lub grup i daty wygaśnięcia. Upewnij się, że użytkownicy mają wskazówki i instrukcje jak przekazać te wartości.
     
-    - **Wybierz wstępnie zdefiniowany szablon**: aby użyć jednego z szablonów domyślnych lub samodzielnie skonfigurowanego szablonu niestandardowego. Należy zauważyć, że nie są wyświetlane tę opcję, jeśli edytujesz etykiety, który korzystał wcześniej z **Ustaw uprawnienia** opcji.
+    - **Wybierz wstępnie zdefiniowany szablon**: aby użyć jednego z szablonów domyślnych lub samodzielnie skonfigurowanego szablonu niestandardowego. Należy zauważyć, że ta opcja nie jest wyświetlany dla nowej etykiety, lub Jeśli edytujesz etykiety, który korzystał wcześniej z **Ustaw uprawnienia** opcji.
     
     Aby wybrać wstępnie zdefiniowany szablon, szablon musi zostać opublikowany (nie zarchiwizowanych) i nie muszą już połączona z inną etykietę. Po wybraniu tej opcji, możesz użyć **Edytuj szablon** przycisk, aby [konwersji szablonu na etykietę](configure-policy-templates.md#to-convert-templates-to-labels).
     
@@ -245,7 +245,7 @@ Jeśli określisz użytkowników zewnętrznych, którzy nie mają konta w usłud
 
 - Etykieta jest odpowiednia do obsługi poczty e-mail, korzystając z usługi Exchange Online jest [nowe funkcje w szyfrowanie wiadomości usługi Office 365](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). 
  
-- Dla załączników pakietu Office, które są automatycznie chronione dokumenty te są dostępne do wyświetlania w przeglądarce. Aby edytować te dokumenty, Pobierz i edytować je za pomocą pakietu Office 2016 kliknij do uruchomienia i konta Microsoft, która używa tego samego adresu e-mail. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- Dla załączników pakietu Office, które są automatycznie chronione dokumenty te są dostępne do wyświetlania w przeglądarce. Aby edytować te dokumenty, Pobierz i edytować je za pomocą pakietu Office 2016 kliknij do uruchomienia i konta Microsoft, która używa tego samego adresu e-mail. [Więcej informacji](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 
 > [!NOTE]

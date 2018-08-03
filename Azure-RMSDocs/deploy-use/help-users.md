@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fc42e122d8cf16cb9a05907e8244f6b6de4579c0
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: e5f6c4eab955baf7585bf4071a23239cf8229e8d
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "39411023"
+ms.locfileid: "39473811"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
@@ -38,7 +38,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
     
     Niektóre aplikacje automatycznie stosują ochronę informacji przy użyciu zasad i ustawień skonfigurowanych przez administratorów. W przypadku tych aplikacji konieczne może być zapewnienie instrukcji dla innych administratorów, którzy zarządzają tymi aplikacjami i usługami. 
     
-    Aby uzyskać więcej informacji, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../understand-explore/applications-support.md) i [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](configure-applications.md).
+    Aby uzyskać więcej informacji, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](../applications-support.md) i [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](configure-applications.md).
     
 -   **Informacje dla działu pomocy**
     
@@ -50,13 +50,13 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
     
     - **Pomoc dotycząca logowania**
         
-        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Wymagane poświadczenia są zwykle dla pracy lub konta służbowego użytkownika i hasło skojarzone z dzierżawą usługi Office 365 lub dzierżawy usługi Azure Active Directory. Mimo że usługę Azure Rights Management może uwierzytelnić konta usługi Azure AD, niektóre aplikacje można również otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
+        Użytkownicy mogą otrzymać monit o wprowadzenie poświadczeń, gdy usługa Azure Rights Management wymaga uwierzytelnienia użytkownika i nie może użyć buforowanych poświadczeń. Wymagane poświadczenia są zwykle dla pracy lub konta służbowego użytkownika i hasło skojarzone z dzierżawą usługi Office 365 lub dzierżawy usługi Azure Active Directory. Mimo że usługę Azure Rights Management może uwierzytelnić konta usługi Azure AD, niektóre aplikacje można również otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         Przekaż użytkownikom i pomocy technicznej, z instrukcjami dotyczącymi konta, którego należy użyć, gdy użytkownicy są monitowani o poświadczenia, gdy mają one aplikacje, które korzystają z usługi Azure Rights Management.
         
     - **Problemy dotyczące ochrony lub używania zawartości**
         
-        Upewnij się, że użytkownicy mają odpowiednie instrukcje dotyczące aplikacji, które używają oraz używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure Rights Management. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz [Wymagania dotyczące usługi Azure Rights Management](../get-started/requirements-azure-rms.md).
+        Upewnij się, że użytkownicy mają odpowiednie instrukcje dotyczące aplikacji, które używają oraz używają aplikacji i urządzeń, które są obsługiwane przez usługę Azure Rights Management. Aby uzyskać więcej informacji o obsługiwanych aplikacjach i urządzeniach, zobacz [Wymagania dotyczące usługi Azure Rights Management](../requirements.md).
         
         Aby upewnić się, że konkretny użytkownik lub grupa może być autoryzowane przez usługę Azure Active Directory ich użyciu chronić ani korzystać z zawartości chronionej, należy użyć testy weryfikacyjne opisane w [przygotowywanie użytkowników i grup usługi Azure Information Protection](../plan-design/prepare.md).
         

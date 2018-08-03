@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7f018a67808b1d3cf39099f8a22202cbf82bd5f
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 960c8070a03622407c5a4c68c90abb0e14eb7f96
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371479"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474158"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -61,7 +61,7 @@ Niektóre aplikacje grupują prawa użytkowania w poziomach uprawnień. Dzięki 
 
 Lista poziomów uprawnień i Pełna lista prawa użytkowania, które zawierają, skorzystaj z poniższej tabeli. Prawa użytkowania są wyświetlane według ich [nazwa pospolita](#usage-rights-and-descriptions).
 
-|Poziom uprawnień|Aplikacje|Zawarte prawa do użytkowania|
+|poziom uprawnień|Aplikacje|Zawarte prawa do użytkowania|
 |---------------------|----------------|---------------------------------|
 |Przeglądanie|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br /> Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Wyświetl prawa; Odpowiedź [[1]](#footnote-1); Odpowiedz wszystkim [[1]](#footnote-1); Zezwalaj na makra [[2]](#footnote-2)<br /><br />Uwaga: Dla wiadomości e-mail użyj opcji Recenzent zamiast tego poziomu uprawnień, aby upewnić się, że odpowiedź na wiadomość e-mail została odebrana jako wiadomość e-mail, a nie jako załącznik. Opcja Recenzent jest również wymagana podczas wysyłania wiadomości e-mail do innej organizacji korzystającej z klienta programu Outlook lub aplikacji Outlook Web App. Lub, aby użytkownicy w Twojej organizacji, którzy są wykluczeni z przy użyciu usługi Azure Rights Management service, ponieważ udało Ci się wdrożyć [kontrolek dołączania](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy).|
 |Recenzent|Klasyczny portal Azure <br /><br />Witryna Azure Portal<br /><br />Aplikacja do udostępniania usługi Rights Management dla systemu Windows<br /><br />Klient usługi Azure Information Protection dla systemu Windows|Wyświetl, Otwórz, Odczytaj; Zapisz; Edytuj zawartość, Edytuj; Wyświetl prawa; Odpowiedź: Odpowiedz wszystkim [[3]](#footnote-3); Do przodu [[3]](#footnote-3); Zezwalaj na makra [[2]](#footnote-2)|
@@ -127,7 +127,7 @@ Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i adresaci musz�
 
 Podobnie, domyślnie niechronionej [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) dołączonych do wiadomości e-mail dziedziczyć te same uprawnienia. Te dokumenty są chronione automatycznie, a po ich pobraniu, można można je zapisać, edytować, skopiowane i wydruku w aplikacjach pakietu Office przez adresatów. Gdy dokument zostanie zapisany przez odbiorcę, aby można było zapisać nową nazwę i inny format. Jednak tylko te formaty plików, które obsługują ochronę są dostępne, aby nie można zapisać dokumentu bez ochrony, oryginalnym. Jeśli mają prawa do użytkowania różnych dla załącznika wiadomości lub załącznika nie jest dokumentu pakietu Office obsługującej tę ochronę dziedziczone, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, potrzebnych dla pliku.
 
-Alternatywnie możesz zmienić to dziedziczenie szyfrowania dokumentów dla odbiorców, którzy wyświetlają dokumentu w przeglądarce. Należy wziąć pod uwagę, za pomocą tej konfiguracji, jeśli nie potrzebujesz zachować oryginalne ochronę dokumentu po użytkownik jest uwierzytelniony. Aby wprowadzić tę zmianę, należy użyć polecenia programu Exchange Online PowerShell: `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Następnie te adresatów, Pobierz dokument, usunięcie ochrony. Aby uzyskać więcej informacji, zobacz w blogu pakietu Office, [kontrolę administracyjną dla załączników jest teraz dostępna w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007). Jeśli jednak potrzebujesz dokument, aby zachować oryginalną ochronę po jej pobraniu, zobacz [zabezpieczanie współpracy nad dokumentami przy użyciu usługi Azure Information Protection](../get-started/secure-collaboration-documents.md).      
+Alternatywnie możesz zmienić to dziedziczenie szyfrowania dokumentów dla odbiorców, którzy wyświetlają dokumentu w przeglądarce. Należy wziąć pod uwagę, za pomocą tej konfiguracji, jeśli nie potrzebujesz zachować oryginalne ochronę dokumentu po użytkownik jest uwierzytelniony. Aby wprowadzić tę zmianę, należy użyć polecenia programu Exchange Online PowerShell: `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Następnie te adresatów, Pobierz dokument, usunięcie ochrony. Aby uzyskać więcej informacji, zobacz w blogu pakietu Office, [kontrolę administracyjną dla załączników jest teraz dostępna w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007). Jeśli jednak potrzebujesz dokument, aby zachować oryginalną ochronę po jej pobraniu, zobacz [zabezpieczanie współpracy nad dokumentami przy użyciu usługi Azure Information Protection](../secure-collaboration-documents.md).      
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Wystawca usługi Rights Management i właściciel usługi Rights Management
 
@@ -161,7 +161,7 @@ Pamiętaj, że właściciel usługi Rights Management jest niezależny od właś
 
 Po otwarciu dokumentu lub wiadomości e-mail, który został objęty ochroną przez usługę Azure Rights Management, użytkownik zostanie ustanowione licencji użytkowania usługi Rights Management dla tej zawartości. Ta licencja użytkowania to certyfikat, który zawiera użytkownika praw użytkowania dla dokumentu lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości. Licencji użytkowania zawiera także datę wygaśnięcia, jeżeli tego ustawienia, a ile licencji użytkowania jest nieprawidłowa.
 
-Użytkownik musi mieć licencję użytkowania prawidłowy do otwierania zawartości, oprócz swojego certyfikatu konta praw (RAC), czyli certyfikatu, który przyznał, kiedy [zainicjowaniu środowiska użytkownika](../understand-explore/how-does-it-work.md#initializing-the-user-environment) , a następnie odnowione 31 dni.
+Użytkownik musi mieć licencję użytkowania prawidłowy do otwierania zawartości, oprócz swojego certyfikatu konta praw (RAC), czyli certyfikatu, który przyznał, kiedy [zainicjowaniu środowiska użytkownika](../how-does-it-work.md#initializing-the-user-environment) , a następnie odnowione 31 dni.
 
 Na czas trwania licencji użytkowania użytkownik nie jest ponownie uwierzytelniany lub reauthorized zawartości. Dzięki temu użytkownik nadal otworzyć chroniony dokument lub wiadomość e-mail, bez połączenia z Internetem. Po wygaśnięciu okresu ważności licencji użytkowania, następnym razem użytkownik uzyskuje dostęp do chronionego dokumentu lub wiadomości e-mail, użytkownik musi być ponownie uwierzytelniany i reauthorized. 
 

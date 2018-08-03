@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 68ce556a9771df4ed8f51d417e12f511a1acfa77
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: a503c4232847828bf32d889f4702fbfed39463ad
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374447"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473716"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
@@ -70,7 +70,7 @@ Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już
 > -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
-> -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../rms-for-individuals.md).
 
 ## <a name="to-re-protect-a-file-that-you-have-emailed"></a>Aby ponownie włączyć ochronę pliku wysłanego pocztą e-mail
 

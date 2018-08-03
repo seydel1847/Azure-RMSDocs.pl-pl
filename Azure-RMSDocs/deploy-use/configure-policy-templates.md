@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f9cc93de344f6aef603cdc4c52771133dea13bfe
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fed57de220a5448a16a866fae76969eb4f9332de
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371319"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473869"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
@@ -46,7 +46,7 @@ Ponadto szablony są skonfigurowane i umożliwiają dostęp w trybie offline prz
 >[!NOTE]
 > Możesz zmienić te ustawienia, a nazwy i opisy w domyślnych szablonach. Ta możliwość nie było możliwe przy użyciu klasycznego portalu Azure i nadal nie jest obsługiwane dla programu PowerShell.
 
-Te szablony domyślne ułatwiają Ty i inni od razu chronić poufne dane Twojej organizacji. Te szablony mogą być używane, za pomocą etykiety usługi Azure Information Protection lub samodzielnie za pomocą [aplikacji i usług](../understand-explore/applications-support.md) , za pomocą szablonów usługi Rights Management.
+Te szablony domyślne ułatwiają Ty i inni od razu chronić poufne dane Twojej organizacji. Te szablony mogą być używane, za pomocą etykiety usługi Azure Information Protection lub samodzielnie za pomocą [aplikacji i usług](../applications-support.md) , za pomocą szablonów usługi Rights Management.
 
 Można również utworzyć własne szablony niestandardowe. Prawdopodobnie potrzebne będzie tylko kilka szablonów, ale można mieć maksymalnie 500 szablonów niestandardowych zapisanych na platformie Azure.
 

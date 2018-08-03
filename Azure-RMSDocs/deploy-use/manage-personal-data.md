@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 302a7506a0bdfbf7acb4c50d77d20b7e010c47b8
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: f42e1318e8be0d805216cffd402a9b87a1259e1e
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372533"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473852"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Zarządzanie danymi osobowymi usługi Azure Information Protection
 
@@ -254,7 +254,7 @@ Aby usunąć danych osobowych w plikach dziennika klienta i dzienników skanera,
 Użyj następujących trzech kroków do żądania, że Microsoft powoduje usunięcie danych osobowych w dokumencie śledzenia dzienników, dzienniki administracji lub dzienników użycia usługi Azure Rights Management. 
 
 **Krok 1: Usuń Zainicjuj żądanie**
-[się z pomocą techniczną firmy Microsoft](../get-started/information-support.md#to-contact-microsoft-support) otworzyć zgłoszenie do pomocy technicznej usługi Azure Information Protection z żądaniem usunięcie danych z Twojej dzierżawy. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection i zrozumieć, że ten proces trwa kilka dni, aby potwierdzić. Podczas przesyłania żądania, konieczne będzie podanie dodatkowych informacji, w zależności od danych, który musi zostać usunięty.
+[się z pomocą techniczną firmy Microsoft](../information-support.md#to-contact-microsoft-support) otworzyć zgłoszenie do pomocy technicznej usługi Azure Information Protection z żądaniem usunięcie danych z Twojej dzierżawy. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection i zrozumieć, że ten proces trwa kilka dni, aby potwierdzić. Podczas przesyłania żądania, konieczne będzie podanie dodatkowych informacji, w zależności od danych, który musi zostać usunięty.
 
 - Aby usunąć z dziennikiem administracji, należy podać **Data zakończenia**. Wszystkie dzienniki administratora do momentu usunięcia tej daty zakończenia.
 - Aby usunąć dzienniki użycia, należy podać **Data zakończenia**. Dzienniki użycia wszystkich aż do daty zakończenia zostaną usunięte.

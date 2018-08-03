@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: fc4715900d77b12d812b01af369f7268296d5a4f
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 5c8e918bd467d1d7540a129bca266c0f0c077a56
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371217"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474260"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj własne ochrony klucza (HYOK) dla usługi Azure Information Protection
 
@@ -37,7 +37,7 @@ W przypadku ochrony najbardziej poufnych dokumentów i wiadomości e-mail przy u
 
 Klucz oparte na chmurze chroni dokumenty i wiadomości e-mail organizacji przy użyciu klucza prywatnego dla organizacji, który jest zarządzany przez firmę Microsoft (ustawienie domyślne), lub przez użytkownika ("bring your own key" lub BYOK). Aby uzyskać więcej informacji na temat opcji klucza dzierżawy, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](../plan-design/plan-implement-tenant-key.md).
 
-Dokumentów i wiadomości e-mail możesz chronić może znajdować się w chmurze lub lokalnie. Aby uzyskać więcej informacji na temat sposobu działania procesu ochrony dla tego klucza oparta na chmurze, zobacz [co to jest Azure Rights Management?](../understand-explore/what-is-azure-rms.md )
+Dokumentów i wiadomości e-mail możesz chronić może znajdować się w chmurze lub lokalnie. Aby uzyskać więcej informacji na temat sposobu działania procesu ochrony dla tego klucza oparta na chmurze, zobacz [co to jest Azure Rights Management?](../what-is-azure-rms.md )
 
 Usługi Office 365 i aplikacji działających w chmurze dla Twojej dzierżawy można zintegrować z usługi Azure Information Protection, aby firmy ważne funkcje, takie jak usługi wyszukiwania, indeksowania, archiwizacji i chroniące przed złośliwym kodem w dalszym ciągu działać bezproblemowo zawartości który jest chroniony przez usługę Azure Information Protection. Ta możliwość odczytu zaszyfrowaną zawartość dla tych scenariuszy często nazywa się "rozsądkiem ponad danymi". Na przykład jest tę możliwość, która umożliwia usłudze Exchange Online odszyfrowywania wiadomości e-mail w poszukiwaniu złośliwego oprogramowania, skanowanie i systemem reguły zapobieganie utracie danych zaszyfrowanych wiadomości e-mail.
 

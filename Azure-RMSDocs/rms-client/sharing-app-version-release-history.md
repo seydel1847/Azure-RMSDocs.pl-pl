@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 227941bba2b1c5c5768a757204efb0c5ef865b7f
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 1ebeef2847a8404d5970673acd3163b336cf0406
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375355"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473359"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>Aplikacja do udostępniania usługi Rights Management: historia wersji
 
@@ -81,7 +81,7 @@ W zestawieniu nie uwzględniono wersji sprzed 1 stycznia 2015 r.
 
 -   Obsługa uwierzytelniania wieloskładnikowego (MFA, multi-factor authentication) dla usług Azure RMS, zapewniająca również niezależność aplikacji, które używają nowoczesnego uwierzytelniania, od Asystenta logowania firmy Microsoft.
 
-    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) w temacie [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](../get-started/requirements-azure-ad.md).
+    Aby uzyskać więcej informacji, zobacz sekcję [Usługi Multi-Factor Authentication (MFA) i Azure RMS](../requirements-servers.md) w temacie [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](../requirements-servers.md).
 
 ## <a name="version-1017840"></a>Wersja 1.0.1784.0
 **Wydana**: 2015-07-30

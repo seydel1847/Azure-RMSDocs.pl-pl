@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2bfe729edadbaebe78bc22e52bec91be6d3dad5e
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: 094088ac8f33a4a6bfaf3f0eec2401785bd0ccdc
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "39410982"
+ms.locfileid: "39473556"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>Przygotowywanie środowiska na potrzeby usługi Azure Rights Management w przypadku używania również usług Active Directory Rights Management Services (AD RMS)
 
@@ -38,7 +38,7 @@ Jeśli usługa Azure Rights Management została aktywowana i są również przy 
     
     Aby uzyskać więcej informacji o tych konfiguracjach rejestru, zobacz [Włączanie odnajdowania usług po stronie klienta za pomocą rejestru Windows](../rms-client/client-deployment-notes.md#enabling-client-side-service-discovery-by-using-the-windows-registry) i [przekierowywanie ruchu serwera licencyjnego](../rms-client/client-deployment-notes.md#redirecting-licensing-server-traffic).   
 
-Jeśli usługi AD RMS jest wdrażana dla Twojej organizacji, należy rozważyć, czy można migrować do usługi Azure Information Protection. Usługa Azure Information Protection ma wiele zalet za pośrednictwem usług AD RMS. Na przykład lepszą obsługę urządzeń przenośnych i integracji z usługami Office 365, a także za pomocą programu Exchange Server i SharePoint Server. Aby uzyskać więcej informacji, zobacz [Porównanie usług Azure Information Protection i AD RMS](../understand-explore/compare-on-premise.md).
+Jeśli usługi AD RMS jest wdrażana dla Twojej organizacji, należy rozważyć, czy można migrować do usługi Azure Information Protection. Usługa Azure Information Protection ma wiele zalet za pośrednictwem usług AD RMS. Na przykład lepszą obsługę urządzeń przenośnych i integracji z usługami Office 365, a także za pomocą programu Exchange Server i SharePoint Server. Aby uzyskać więcej informacji, zobacz [Porównanie usług Azure Information Protection i AD RMS](../compare-on-premise.md).
 
 Podczas migracji do usługi Azure Information Protection, nie utracisz dostępu do wcześniej chronionej zawartości i nie musisz wyłączyć ochronę, lub ponownie włączyć ochronę zawartości. Dokumenty i wiadomości e-mail, które były chronione przez usługi AD RMS nadal będzie można otworzyć nawet w przypadku, po anulowaniu obsługi usług AD RMS.
 

@@ -14,12 +14,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba2a9b5a491d6527f15661d88e7f6db539d619c5
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 09e75b1d8fd841295924dccfbacf8dcb6d753182
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375457"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473478"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android
 
@@ -63,7 +63,7 @@ Jeśli Twojego osobistego adresu e-mail został użyty do ochrony pliku, Użyj p
 
 Tak, po zastosowaniu do konta Microsoft, można określić adres e-mail usługi Hotmail lub Gmail lub innego adresu e-mail, którego jesteś właścicielem. 
 
-Jednak mimo że ten program może otworzyć plików chronionych przy użyciu tego konta, nie wszystkie aplikacje mogą otwierania chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+Jednak mimo że ten program może otworzyć plików chronionych przy użyciu tego konta, nie wszystkie aplikacje mogą otwierania chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>Jakie rozszerzenia plików można otworzyć za pomocą tej aplikacji?
 

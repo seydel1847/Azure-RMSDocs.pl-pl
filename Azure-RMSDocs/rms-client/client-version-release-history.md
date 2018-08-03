@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2487d775c9a1e6fb7ecdef77d9969841a65ea8b7
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371455"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474219"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -42,7 +42,7 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 > [!NOTE]
 > Niewielkie poprawki nie są wyświetlane, dlatego jeśli wystąpi problem z klientem usługi Azure Information Protection, zalecamy sprawdzenie, czy problem został rozwiązany za pomocą najnowszej wersji ogólnie dostępnej. Jeśli problem będzie się powtarzać, sprawdź bieżącą wersję (wersja zapoznawcza).
 >  
-> Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
+> Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
 ## <a name="versions-later-than-12950"></a>Wersjach starszych niż 1.29.5.0
 

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd3a08806c5dfa9e03e3a1cce5731cf09d61aa47
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: cac2506f7c98431048c29291ca95f197a02c7fcd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373315"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473767"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cykl życia klucza dzierżawy
 
@@ -61,7 +61,7 @@ Konfiguracja usługi Azure Information Protection i klucz dzierżawy usługi mo�
 
 ### <a name="step-1-initiate-export"></a>Krok 1. Zainicjowanie eksportu
 
-- [Skontaktuj się z Microsoft Support](../get-started/information-support.md#to-contact-microsoft-support) otworzyć **zgłoszenia do pomocy technicznej usługi Azure Information Protection z żądaniem eksportu klucza usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
+- [Skontaktuj się z Microsoft Support](../information-support.md#to-contact-microsoft-support) otworzyć **zgłoszenia do pomocy technicznej usługi Azure Information Protection z żądaniem eksportu klucza usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
 ### <a name="step-2-wait-for-verification"></a>Krok 2. Oczekiwanie na weryfikację
 

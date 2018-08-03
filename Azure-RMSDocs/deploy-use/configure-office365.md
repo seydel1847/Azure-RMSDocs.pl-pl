@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b533ef628f65647922a39688b8bf7e26560e3798
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: c48ae6179dc34ecc58e0ddda798e8b9d30f35051
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "39410890"
+ms.locfileid: "39474095"
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online do korzystania z usługi Azure Rights Management
 
@@ -28,7 +28,7 @@ Ponieważ usługi Office 365 natywnie obsługuje usługę Azure Rights Managemen
 Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz temat [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 ## <a name="exchange-online-irm-configuration"></a>Usługa Exchange Online: konfiguracja usługi IRM
-Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [Exchange Online i Exchange Server](../understand-explore/office-apps-services-support.md#exchange-online-and-exchange-server) w sekcji **Poznawanie i eksplorowanie**.
+Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [Exchange Online i Exchange Server](../office-apps-services-support.md#exchange-online-and-exchange-server) w sekcji **Poznawanie i eksplorowanie**.
 
 Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Management. Aby sprawdzić, uruchom następujące polecenia:
 
@@ -76,7 +76,7 @@ Włączenie usługi Exchange Online do korzystania z usługi Azure Rights Manage
 
 ## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM
 
-Aby uzyskać informacje na temat współdziałania usługi SharePoint Online IRM z usługą Azure Rights Management, zobacz [SharePoint Online i SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w sekcji **Poznawanie i eksplorowanie**.
+Aby uzyskać informacje na temat współdziałania usługi SharePoint Online IRM z usługą Azure Rights Management, zobacz [SharePoint Online i SharePoint Server](../office-apps-services-support.md#sharepoint-online-and-sharepoint-server) w sekcji **Poznawanie i eksplorowanie**.
 
 Aby skonfigurować usługi SharePoint Online i OneDrive dla Firm do obsługi usługi Azure Rights Management, musisz najpierw włączyć usługę zarządzania prawami do informacji (IRM, Information Rights Management) dla usługi SharePoint Online, używając centrum administracyjnego programu SharePoint. Następnie właściciele witryn mogą używać usługi IRM do ochrony bibliotek dokumentów i list programu SharePoint, a użytkownicy — do ochrony biblioteki usługi OneDrive dla Firm, dzięki czemu dokumenty zapisywane w tej usłudze i udostępniane innym osobom są automatycznie chronione przez usługę Azure Rights Management.
 

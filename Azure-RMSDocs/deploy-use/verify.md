@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2542442e251cceb1de4ef9a09a945793ca9e4c68
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 4cdf429527bfc97b4e02438ae45aae80754e5fe1
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373995"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474355"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Weryfikowanie usługi Azure Rights Management
 
@@ -32,7 +32,7 @@ Informacje na temat przeprowadzenia tego testu można znaleźć w temacie [Ułat
 Jeśli wynik testu będzie negatywny, przejrzyj kroki konfiguracji w temacie [Plan wdrażania usługi Azure Information Protection](../plan-design/deployment-roadmap.md).
 
 > [!TIP]
-> Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../get-started/information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../get-started/information-support.md).
+> Jeśli potrzebujesz dodatkowej pomocy, zobacz sekcję [Opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources) w artykule [Informacje i pomoc techniczna dla usługi Azure Information Protection](../information-support.md).
 
 ## <a name="next-steps"></a>Kolejne kroki
 

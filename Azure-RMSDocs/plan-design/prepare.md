@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a377076536dfebcf642b81616d41fd439b56382
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: e14844a5bd1b0ace4085eaaa9c15be6b3c814146
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374810"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473750"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -87,7 +87,7 @@ Oprócz używania atrybutów proxyAddresses i userPrincipalName usługi Azure AD
 
 Inne metody autoryzacji:
 
-- W przypadku adresów e-mail, które nie znajdują się w usłudze Azure AD usługi Azure Information Protection może autoryzować te podczas ich uwierzytelniania przy użyciu konta Microsoft. Jednak nie wszystkie aplikacje można otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- W przypadku adresów e-mail, które nie znajdują się w usłudze Azure AD usługi Azure Information Protection może autoryzować te podczas ich uwierzytelniania przy użyciu konta Microsoft. Jednak nie wszystkie aplikacje można otworzyć chronionej zawartości, gdy konto Microsoft służy do uwierzytelniania. [Więcej informacji](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 - Gdy zostanie wysłana wiadomość e-mail za pomocą szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom do użytkownika, które nie mają konta w usłudze Azure AD, użytkownik jest najpierw uwierzytelniany przy użyciu federacji z dostawcy tożsamości społecznościowych lub korzystając z jednorazowym kodem dostępu. Adres e-mail określony w chronioną wiadomość e-mail zostanie użyty do autoryzacji użytkownika.
 
