@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: baf3edc435672c8339c15ea74f5b5e14d6951f96
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: dfe9edc5c2ee4546ad6ac2ef18e9f4393cae7a0f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371547"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489107"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie i ochrona pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -181,7 +181,7 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [konfigurowania ustawień zasad usługi Azure Information Protection](../deploy-use/configure-policy-settings.md).
+Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [Konfigurowanie ustawień zasad usługi Azure Information Protection] Konfiguruj — zasady — settings.md).
 
-Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
+Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection] Konfiguruj policy.md).
 

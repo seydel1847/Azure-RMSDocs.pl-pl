@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b7973c2f0a0edeeba262d647243bfce643f7f88
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: cc6be93a829a6374590bd1516ec3e880e997d434
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373009"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489202"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub chronionych przez usługę Rights Management
 
@@ -78,7 +78,7 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [konfigurowania ustawień zasad usługi Azure Information Protection](../deploy-use/configure-policy-settings.md).
+Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [Konfigurowanie ustawień zasad usługi Azure Information Protection] Konfiguruj — zasady — settings.md).
 
-Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection](../deploy-use/configure-policy.md).
+Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection] Konfiguruj policy.md).
 

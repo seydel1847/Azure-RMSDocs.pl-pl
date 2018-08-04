@@ -14,12 +14,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 365d1bf0e36fda964f185713f5514a91f4c6df53
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 17590360f7e5111678496e2bb386e8a47ae0dd99
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473637"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501306"
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
@@ -109,7 +109,7 @@ Aby użytkownik końcowy mógł korzystać z usług Information Protection, nale
 
 
 > [!IMPORTANT]
-> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](./requirements-subscriptions.md).
+> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../requirements.md).
 > Aby uzyskać więcej informacji o współpracy z usługami Azure RMS, zobacz [Umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
 -   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177) z Centrum pobierania Microsoft.

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8cc1ac191b33177e5a20e6cecbdb8e1c711b4c59
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 6bbd9422159627d8e8e94b6ff7c1993590b3069d
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475504"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488689"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Serwery lokalne obsługujące ochronę danych usługi Azure Rights Management
 
@@ -58,7 +58,7 @@ Aby użyć tego łącznika, należy skonfigurować synchronizację katalogów mi
 
 Łącznik usługi Rights Management jest obsługiwany w systemach Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 i Windows Server 2008 R2.
 
-Aby uzyskać więcej informacji o sposobie konfigurowania łącznika usługi Rights Management na wymienionych serwerach lokalnych, zobacz [Wdrażanie łącznika usługi Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+Aby uzyskać więcej informacji o sposobie konfigurowania łącznika usługi Rights Management na wymienionych serwerach lokalnych, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 ## <a name="next-steps"></a>Kolejne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements.md).

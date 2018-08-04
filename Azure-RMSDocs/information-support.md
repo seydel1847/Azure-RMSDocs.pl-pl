@@ -4,7 +4,7 @@ description: Zasoby dla administratorów, w tym informacje na temat nowych wersj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 08/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 427f758dd541c111f5a5554221983f10072b6ffd
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: d61908e26085619c61d31780514cdd09e46f0761
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475266"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489580"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -27,11 +27,12 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 
 |Aby to zrobić...|...korzystać to:|
 |----------------|---------------|
-|Najczęściej używane znajdują się w dokumentacji|Odczyt stron pięć:<br /><br /> - [Co to jest Azure Information Protection?](./what-is-information-protection.md)<br /> - [Instalowanie klienta usługi Azure Information Protection dla użytkowników](./rms-client/client-admin-guide-install.md)<br />- [Wymagania dotyczące usługi Azure Information Protection](requirements.md) <br />- [Wdrażanie skanera usługi Azure Information Protection](./deploy-use/deploy-aip-scanner.md)<br />- [Domyślne zasady usługi Azure Information Protection](./deploy-use/configure-policy-default.md)|
+|Często przywoływanych w dokumentacji|Odczyt stron pięć:<br /><br /> - [Co to jest Azure Information Protection?](./what-is-information-protection.md)<br /> - [Instalowanie klienta usługi Azure Information Protection dla użytkowników](./rms-client/client-admin-guide-install.md)<br />- [Wymagania dotyczące usługi Azure Information Protection](requirements.md) <br />- [Wdrażanie skanera usługi Azure Information Protection](deploy-aip-scanner.md)<br />- [Domyślne zasady usługi Azure Information Protection](configure-policy-default.md)|
 |Skontaktuj się z zespołem produktu i uczniami|Odwiedź stronę [witryny usługi Yammer](https://www.yammer.com/AskIPTeam) usługi Azure Information Protection.|
 |Żądanie nowej funkcji lub zmiana funkcjonalności|Odwiedź stronę [UserVoice](https://msip.uservoice.com) lokacji dla usługi Azure Information Protection, a następnie zaloguj się za pomocą swój adres e-mail firmy.|
 |Otrzymywać tweety z grupy produktu|Postępuj zgodnie z [Microsoft Mobility@MSFTMobility ](https://twitter.com/MSFTMobility) w serwisie Twitter.|
 |Sprawdzanie informacji o subskrypcji oraz obsługiwanych funkcjach|Użyj subskrypcji listy informacji i funkcji z [cennik usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) strony.|
+|Zrozumienie konkretny termin usługi Azure Information Protection|Wyszukaj termin lub skrót na [strony terminologii](terminology.md).|
 
 
 ## <a name="information-about-new-releases-and-updates"></a>Informacje o nowych wersjach i aktualizacjach
@@ -76,9 +77,9 @@ Rozwiązywanie problemów:
 
 - Jeśli masz pytanie związane z oświadczeniem dotyczącym obsługi dla usługi Azure Information Protection, zobacz informację [Wymagania](requirements.md), która jest regularnie aktualizowana.
 
-- Aby uzyskać informacje dotyczące obsługi użytkowników końcowych, pomocy technicznej i administratorów konfigurujących usługi i aplikacje, które używają usługi Azure Information Protection, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików](./deploy-use/help-users.md).
+- Aby uzyskać informacje dotyczące obsługi użytkowników końcowych, pomocy technicznej i administratorów konfigurujących usługi i aplikacje, które używają usługi Azure Information Protection, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików](help-users.md).
 
-- Jeśli wdrożono łącznik usługi Rights Management dla serwerów lokalnych, zobacz informację dotyczącą [monitorowania](./deploy-use/monitor-rms-connector.md), która zawiera szczegółowe informacje o wpisach w dzienniku zdarzeń, licznikach wydajności i rejestrowaniu.
+- Jeśli wdrożono łącznik usługi Rights Management dla serwerów lokalnych, zobacz informację dotyczącą [monitorowania](monitor-rms-connector.md), która zawiera szczegółowe informacje o wpisach w dzienniku zdarzeń, licznikach wydajności i rejestrowaniu.
 
 - Klienta usługi Azure Information Protection dla Windows: zobacz [kontroli instalacji i rozwiązywania problemów](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) sekcji w podręczniku administratora, a następnie sprawdź, czy używasz [obsługiwana wersja](./rms-client/client-version-release-history.md#servicing-information-and-timelines).
 

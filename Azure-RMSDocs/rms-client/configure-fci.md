@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9780e355839edaa4b6eccea9692b2a1058affaa
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: da68db95148acd128b26ca311fe8682c0d67cf26
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474192"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489716"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
@@ -28,7 +28,7 @@ Ten artykuł zawiera instrukcje i skrypt umożliwiające użycie klienta usługi
 To rozwiązanie pozwala automatycznie chronić pliki w folderze na serwerze plików z systemem Windows Server lub pliki, które spełniają określone kryteria. Na przykład pliki, które zostały sklasyfikowane jako zawierające informacje poufne lub szczególnie chronione. Wdrożenie tej usługi w organizacji jest niezbędne, jako że omawiane rozwiązanie łączy się z poziomu usługi Azure Information Protection bezpośrednio z usługą Azure Rights Management w celu zapewnienia ochrony plików.
 
 > [!NOTE]
-> Mimo że usługa Azure Information Protection obejmuje [łącznik](../deploy-use/deploy-rms-connector.md), który obsługuje infrastrukturę klasyfikacji plików, to rozwiązanie obsługuje wyłącznie ochronę natywną, np. ochronę plików pakietu Office.
+> Mimo że usługa Azure Information Protection obejmuje [łącznika] wdrożenia rms-connector.md), która obsługuje infrastrukturę klasyfikacji plików, to rozwiązanie obsługuje wyłącznie ochronę natywną — na przykład pliki pakietu Office.
 > 
 > Aby obsługiwać wiele typy plików za pomocą infrastruktury klasyfikacji plików systemu Windows Server, należy użyć modułu **AzureInformationProtection** programu PowerShell w sposób opisany w tym artykule. Polecenia cmdlet usługi Azure Information Protection, podobnie jak klient usługi Azure Information Protection, obsługują nie tylko ochronę natywną, ale też ochronę ogólną, co oznacza, że możliwa jest ochrona plików innych niż dokumenty pakietu Office. Aby uzyskać więcej informacji, zobacz sekcję [Typy plików obsługiwane przez klienta usługi Azure Information Protection](client-admin-guide-file-types.md) w podręczniku administratora klienta usługi Azure Information Protection.
 
@@ -53,7 +53,7 @@ Wymagania wstępne dotyczące tych instrukcji:
     
     - Masz połączenie z Internetem, i zostały skonfigurowane ustawienia komputera, jeśli są one wymagane przez serwer proxy. Na przykład: `netsh winhttp import proxy source=ie`
     
-- Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tego wymagania, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../plan-design/prepare.md).
+- Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tego wymagania, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../prepare.md).
     
 - Na serwer plików zostały pobrane szablony usługi Rights Management oraz został rozpoznany identyfikator szablonu, który będzie chronić pliki. W tym celu użyj polecenia cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). W tym scenariuszu nie są obsługiwane szablony przypisane do działów, więc należy użyć szablonu, który nie został skonfigurowany dla zakresu. Ewentualnie konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
 

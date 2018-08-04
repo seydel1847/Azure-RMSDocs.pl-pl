@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e5af9843ef215ec074024179c71d577722096b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: cebca1f9ce2bb7d73f29e3e1ea7d6fd2fc6a5742
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475315"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489886"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
@@ -71,13 +71,13 @@ Dla każdego dokumentu lub wiadomości e-mail, które są chronione przez usług
 
 Klucz zawartości jest chroniony za pomocą klucza RSA organizacji (klucz dzierżawy usługi Azure Information Protection) jako część zasad w dokumencie, a zasady są także podpisane przez autora dokumentu. Ten klucz dzierżawy jest wspólny dla wszystkich dokumentów i wiadomości e-mail, które są chronione przez usługę Azure Rights Management w organizacji. Może go zmienić tylko administrator usługi Azure Information Protection, jeśli organizacja korzysta z klucza dzierżawy zarządzanego przez klienta w ramach rozwiązania BYOK (Bring Your Own Key). 
 
-Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. Użycie klucza dzierżawy zarządzanego przez klienta (BYOK), to podnosi poziom bezpieczeństwa przy użyciu szeregu wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie platformy Azure, bez możliwości klucze do wyodrębniania, eksportowania lub udostępnione w żadnym. Aby uzyskać więcej informacji na temat klucza dzierżawy i rozwiązania BYOK, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](./plan-design/plan-implement-tenant-key.md).
+Ten klucz dzierżawy jest w usługach online firmy Microsoft chroniony w dokładnie kontrolowanym i ściśle monitorowanym środowisku. Użycie klucza dzierżawy zarządzanego przez klienta (BYOK), to podnosi poziom bezpieczeństwa przy użyciu szeregu wysokiej klasy sprzętowych modułów zabezpieczeń (HSM) w każdym regionie platformy Azure, bez możliwości klucze do wyodrębniania, eksportowania lub udostępnione w żadnym. Aby uzyskać więcej informacji na temat klucza dzierżawy i rozwiązania BYOK, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
 Licencje i certyfikaty wysyłane do urządzenia z systemem Windows są chronione przy użyciu klucza prywatnego na urządzeniu klienta, który jest tworzony w chwili, gdy użytkownik po raz pierwszy korzysta na urządzeniu z usługi Azure RMS. Ten klucz prywatny jest z kolei chroniony funkcją DPAPI po stronie klienta, która zabezpiecza informacje za pomocą klucza generowanego na podstawie hasła użytkownika. Na urządzeniach przenośnych klucze są używane tylko jeden raz. Ponieważ nie są przechowywane po stronie klienta, nie wymagają ochrony na urządzeniu. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Wskazówki dotyczące działania usługi Azure RMS: pierwsze użycie, ochrona zawartości, zużycie zawartości
-Aby bardziej szczegółowo poznać działanie usługi Azure RMS, przeanalizujemy typowy przepływ pracy realizowany po [aktywowaniu usługi Azure Rights Management](./deploy-use/activate-service.md) oraz gdy użytkownik najpierw używa usługi Rights Management na komputerze z systemem Windows (proces znany także jako **inicjowanie środowiska użytkownika** lub uruchomienie), **chroni zawartość** (dokument lub wiadomość e-mail), a następnie **korzysta** z zawartości chronionej przez kogoś innego (otwiera i używa).
+Aby bardziej szczegółowo poznać działanie usługi Azure RMS, przeanalizujemy typowy przepływ pracy realizowany po [aktywowaniu usługi Azure Rights Management](activate-service.md) oraz gdy użytkownik najpierw używa usługi Rights Management na komputerze z systemem Windows (proces znany także jako **inicjowanie środowiska użytkownika** lub uruchomienie), **chroni zawartość** (dokument lub wiadomość e-mail), a następnie **korzysta** z zawartości chronionej przez kogoś innego (otwiera i używa).
 
 Po zainicjowaniu środowiska użytkownika dany użytkownik może chronić dokumenty lub korzystać z chronionych dokumentów na tym komputerze.
 
@@ -110,7 +110,7 @@ Gdy użytkownik chroni dokument, klient RMS wykonuje następujące czynności w 
 
 ![Ochrona dokumentów za pomocą usługi RMS — krok 2, zasady są tworzone](./media/AzRMS_documentprotection2.png)
 
-**Działania wykonywane w kroku 2**: klient usługi RMS tworzy certyfikat, który obejmuje zasady dla dokumentu zawierające [prawa użytkowania](./deploy-use/configure-usage-rights.md) dla użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia. Te ustawienia można zdefiniować w szablonie, który administrator wcześniej skonfigurowany lub określony w momencie, których zawartość jest chroniona (czasami określane jako "zasad ad hoc").   
+**Działania wykonywane w kroku 2**: klient usługi RMS tworzy certyfikat, który obejmuje zasady dla dokumentu zawierające [prawa użytkowania](configure-usage-rights.md) dla użytkowników lub grup i inne ograniczenia, takie jak data wygaśnięcia. Te ustawienia można zdefiniować w szablonie, który administrator wcześniej skonfigurowany lub określony w momencie, których zawartość jest chroniona (czasami określane jako "zasad ad hoc").   
 
 Główny atrybut usługi Azure AD używany do identyfikowania wybranych użytkowników i grup to atrybut ProxyAddresses usługi Azure AD, w którym są przechowywane wszystkie adresy e-mail użytkownika lub grupy. Jeśli jednak konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi AD, w zamian jest używana wartość UserPrincipalName użytkownika.
 
@@ -127,7 +127,7 @@ Gdy użytkownik chce skorzystać z chronionego dokumentu, na kliencie RMS tworzo
 
 ![Użycie dokumentu RMS — krok 1, użytkownik jest uwierzytelniany i pobiera listę praw](./media/AzRMS_documentconsumption1.png)
 
-**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. W celu identyfikacji użytkownika atrybut ProxyAddresses usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](./plan-design/prepare.md#group-membership-caching-by-azure-information-protection). Jeśli konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi Azure AD, w zamian jest używana wartość UserPrincipalName usługi Azure AD.
+**Działania wykonywane w kroku 1**: uwierzytelniony użytkownik wysyła zasady zawarte w dokumencie i certyfikaty użytkownika do usługi Azure Rights Management. Usługa odszyfrowuje i ocenia zasady oraz tworzy listę praw (jeśli istnieją), jakie użytkownik ma w odniesieniu do dokumentu. W celu identyfikacji użytkownika atrybut ProxyAddresses usługi Azure AD jest używany dla konta użytkownika i grup, których użytkownik jest członkiem. Ze względu na wydajność członkostwo w grupie jest [buforowane](prepare.md#group-membership-caching-by-azure-information-protection). Jeśli konto użytkownika nie ma żadnych wartości atrybutu ProxyAddresses usługi Azure AD, w zamian jest używana wartość UserPrincipalName usługi Azure AD.
 
 ![Użycie dokumentu RMS — krok 2, licencja użytkowania jest zwracana do klienta](./media/AzRMS_documentconsumption2.png)
 
@@ -166,7 +166,7 @@ Aby dowiedzieć się więcej na temat usługi Azure Rights Management, zapoznaj 
 
 Zapoznaj się z sekcją [Usługa Azure Information Protection — terminologia](./terminology.md), aby zapoznać się z pojęciami, które możesz napotkać podczas konfigurowania i używania usługi Azure Rights Management. Przed rozpoczęciem wdrażania zobacz również [Wymagania dotyczące usługi Azure Information Protection](requirements.md). Jeśli chcesz od razu rozpocząć korzystanie z usługi i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka szybkiego startu dla usługi Azure Information Management](infoprotect-quick-start-tutorial.md).
 
-Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu wdrożenia usługi Azure Information Protection](./plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
+Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu wdrożenia usługi Azure Information Protection](deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
 > [!TIP]
 > Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Information Protection](information-support.md).

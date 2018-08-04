@@ -11,12 +11,12 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: cfd090df79e640ef6106f2c72001b2b05969cdf6
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 096f5d02e4bcb39390bcd6f6ed64476f4a74d5eb
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473903"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501272"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 
@@ -40,7 +40,7 @@ Aplikacje usług zapewniają możliwość ochrony informacji podczas eksportowan
 
 ## <a name="powershell-guides"></a>Przewodniki po programie PowerShell
 
-Używane przez usługę Azure Rights management Administratorzy, poleceń cmdlet programu PowerShell są także przydatne do tworzenia i testowania aplikacji usług. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](/information-protection/rms-client/client-admin-guide-powershell).
+Używane przez usługę Azure Rights management Administratorzy, poleceń cmdlet programu PowerShell są także przydatne do tworzenia i testowania aplikacji usług. Aby uzyskać więcej informacji, zobacz temat [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](/azure/information-protection/rms-client/client-admin-guide-powershell).
 
 ## <a name="user-applications"></a>Aplikacje użytkownika
 
@@ -143,5 +143,5 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 ### <a name="see-also"></a>Zobacz też
 
 - [Terminologia dla deweloperów](terms.md)
-- [Terminologia dotycząca usługi Azure Information Protection — ITPro](./terminology.md)
+- [Terminologia dotycząca usługi Azure Information Protection — ITPro](../terminology.md)
 

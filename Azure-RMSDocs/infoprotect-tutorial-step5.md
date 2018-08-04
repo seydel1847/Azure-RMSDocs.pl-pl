@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 01bf7e0e090482a74c8f5e162bb8771cf8ee941b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 288b945f785f3f12226d48ad7a91aab8a2747c77
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475196"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489352"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>Krok 5. Praktyczne udostępnianie plików chronionych i śledzenie dokumentu 
 
@@ -127,4 +127,4 @@ Po zapoznaniu się z domyślnymi zasadami usługi Azure Information Protection i
 
 Spróbuj udostępnić więcej dokumentów i śledź ich użycie oraz potwierdź sposób działania funkcji odwoływania dokumentów.
 
-Następnie przydatne może być powrót na stronę **Szybki start** w portalu Azure, przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](./plan-design/deployment-roadmap.md). 
+Następnie przydatne może być powrót na stronę **Szybki start** w portalu Azure, przeczytanie niektórych [często zadawanych pytań](faqs.md) dotyczących usługi Azure Information Protection oraz zapoznanie się z innymi artykułami dokumentacji. Jeśli jednak chcesz już rozpocząć wdrażanie usługi Azure Information Protection, następnym krokiem powinien być [plan wdrażania usługi Azure Information Protection](deployment-roadmap.md). 

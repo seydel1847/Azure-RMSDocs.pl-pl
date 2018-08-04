@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74cd50008213b9a78745a14e7753d252b1adcf53
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: faafadc3c5f45e5407ea108365b1c57678b21c48
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374641"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488747"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręczniku administratora: Pliki klienta usługi Azure Information Protection i dzienniki użycia klienta
 
@@ -85,9 +85,9 @@ Klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń Windows
     
 - Uzasadnienie użytkownika (jeśli ma zastosowanie)
 
-- Uprawnienia niestandardowe (jeśli ma zastosowanie), który zawiera [prawa użytkowania według nazwy kodowania](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions) dla określonych użytkowników, grupy lub organizacje
+- Uprawnienia niestandardowe (jeśli ma zastosowanie), który zawiera [prawa użytkowania przez ich kodowania name]configure-usage-rights.md#usage-rights-and-descriptions) dla określonych użytkowników, grupy lub organizacje
     
-Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [rejestrowanie i analizowanie użycia usługi Azure Rights Management](../deploy-use/log-analyze-usage.md)
+Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management] log analizowanie usage.md)
 
 
 

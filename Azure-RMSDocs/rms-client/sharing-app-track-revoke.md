@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6d53635a7f86c9ecc27f654885f9d66569f2b1e
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 4c515388df31d0541ee88a21fa88da761a5cde30
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39374243"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489056"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS
 
@@ -54,7 +54,7 @@ Akcje, które można wykonać w witrynie śledzenia dokumentów:
 Jeśli te opcje usług RMS nie są wyświetlone, możliwe, że aplikacja RMS sharing nie jest zainstalowana na danym komputerze, nie zainstalowano najnowszej wersji albo trzeba ponownie uruchomić komputer w celu ukończenia instalacji. Aby uzyskać więcej informacji na temat sposobu instalowania aplikacji do udostępniania, zobacz [Pobieranie i instalowanie aplikacji do udostępniania usługi Microsoft Rights Management](install-sharing-app.md).
 
 > [!NOTE] 
-> Jeśli zainstalowano [klienta usługi Azure Information Protection](../rms-client/info-protect-client.md), możesz także uzyskać dostęp do witryny śledzenia dokumentów przy użyciu przycisku **Chroń**: 
+> Jeśli zainstalowano [klienta usługi Azure Information Protection](info-protect-client.md), możesz także uzyskać dostęp do witryny śledzenia dokumentów przy użyciu przycisku **Chroń**: 
 > 
 > - W aplikacji pakietu Office na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno pozycje **Chroń** > **Śledź użycie**. 
 

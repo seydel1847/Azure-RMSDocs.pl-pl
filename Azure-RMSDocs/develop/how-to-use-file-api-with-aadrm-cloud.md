@@ -14,19 +14,19 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5f9bd177f3f438e591c9c0974f159c6e85c6f1e9
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 624ea74db4f81b3b8194e97339c69773f6743224
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473444"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501255"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
 
 W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
 **Ważne**  
-Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](./requirements-subscriptions.md)
+Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usługi Azure RMS: subskrypcje usług w chmurze, które obsługują usługę Azure RMS](../requirements.md)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

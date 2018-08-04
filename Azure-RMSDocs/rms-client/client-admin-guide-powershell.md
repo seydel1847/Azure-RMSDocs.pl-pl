@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: 263806540ae2d7ef38132529a2d04a68fb705e52
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39411074"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489733"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell z klientem usługi Azure Information Protection
 
@@ -39,7 +39,7 @@ Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **Azur
 > 
 > Dla systemu Windows Server 2016 można użyć tego samego ustawienia zasad grupy, po zainstalowaniu najnowszych szablonów administracyjnych (ADMX) dla systemu Windows 10.
 
-[Skanera usługi Azure Information Protection](../deploy-use/deploy-aip-scanner.md) używa poleceń cmdlet z modułu usługi Azure Information Protection, aby zainstalować i skonfigurować usługę w systemie Windows Server. Skaner to pozwala następnie odnajdywania, klasyfikowania i ochrony plików w magazynach danych.
+[Skanera usługi Azure Information Protection] wdrażanie — usługi aip — scanner.md) używa poleceń cmdlet z modułu AzureInformationProtection, aby zainstalować i skonfigurować usługę w systemie Windows Server. Skaner to pozwala następnie odnajdywania, klasyfikowania i ochrony plików w magazynach danych.
 
 Aby wyświetlić listę wszystkich poleceń cmdlet oraz odpowiednią dokumentację pomocy zobacz temat [AzureInformationProtection Module](/powershell/module/azureinformationprotection) (Moduł AzureInformationProtection). W ramach sesji programu PowerShell, wpisz `Get-Help <cmdlet name> -online` Aby wyświetlić najnowszą Pomoc.  
 
@@ -92,13 +92,13 @@ Oprócz wymagań wstępnych dotyczących instalacji modułu AzureInformationProt
 
 To wymaganie wstępne dotyczy zarówno sytuacji, gdy stosowana jest ochrona danych za pomocą etykiet, jak i bezpośredniego połączenia z usługą Azure Rights Management w celu zastosowania ochrony danych.
 
-Jeśli dzierżawca usługi Azure Information Protection nie został aktywowany, zobacz instrukcje dotyczące [aktywowania usługi Azure Rights Management](../deploy-use/activate-service.md).
+Jeśli dzierżawa usługi Azure Information Protection nie został aktywowany, zobacz instrukcje dotyczące aktywacji [Aktywacja usługi Azure Rights Management]-service.md).
 
 #### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>Wymaganie wstępne 2: usuwanie ochrony plików dla innych osób używających Twojego konta
 
 Typowe scenariusze dotyczące usuwania ochrony plików dla innych osób obejmują odnajdywanie lub odzyskiwanie danych. Jeśli jest stosowana ochrona przy użyciu etykiet, można ją usunąć, ustawiając nową etykietę, która nie stosuje ochrony, lub usuwając etykietę. Wygodniejszym rozwiązaniem jest jednak połączenie się bezpośrednio z usługą Azure Rights Management w celu usunięcia ochrony.
 
-Musisz mieć prawa użytkowania usługi Rights Management do usuwania ochrony plików lub być administratorem. W przypadku odnajdywania lub odzyskiwania danych zwykle jest używana funkcja administratora. Aby włączyć tę funkcję i skonfigurować swoje konto jako administrator, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
+Musisz mieć prawa użytkowania usługi Rights Management do usuwania ochrony plików lub być administratorem. W przypadku odnajdywania lub odzyskiwania danych zwykle jest używana funkcja administratora. Aby włączyć tę funkcję i skonfigurować swoje konto administratora, zobacz [Konfigurowanie superużytkowników usługi Azure Rights Management i usług odnajdywania lub odzyskiwania danych] Konfiguruj super — users.md).
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Wymaganie wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem
 
@@ -140,7 +140,7 @@ W kolejnych sekcjach wyjaśniono, jak ręcznie Pobierz i określ te wartości. w
 
 W module Windows PowerShell usługi Azure RMS uruchom polecenie cmdlet Get-AadrmConfiguration:
 
-1. Jeśli ten moduł nie jest już zainstalowany na komputerze, zobacz [Instalowanie modułu AADRM programu PowerShell](../deploy-use/install-powershell.md).
+1. Jeśli ten moduł nie jest już zainstalowany na komputerze, zobacz powershell.md instalacji [Instalowanie modułu AADRM programu PowerShell]).
 
 2. Uruchom sesję środowiska Windows PowerShell przy użyciu opcji **Uruchom jako administrator**.
 
@@ -234,7 +234,7 @@ Jak pokazano w poprzednim poleceniu, możesz podać wartości za pomocą jednego
 
 Rozważ przekształcenie to konto jednostki usługi Administrator: w celu zapewnienia, że konta głównego usługi mogą zawsze wyłączania ochrony plików dla innych użytkowników, można skonfigurować jako administrator. W taki sam sposób jak skonfigurować konta użytkownika standardowego do administratora, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale Określa **ServicePrincipalId** parametr o usługi Wartość identyfikatora AppPrincipalId.
 
-Aby uzyskać więcej informacji na temat administratorów, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../deploy-use/configure-super-users.md).
+Aby uzyskać więcej informacji na temat administratorów Zobacz [Konfigurowanie superużytkowników usługi Azure Rights Management i odnajdowania usług lub odzyskiwania danych] Konfiguruj super — users.md).
 
 > [!NOTE]
 > Aby użyć swojego konta użytkownika do uwierzytelnienia w usłudze Azure Rights Management, nie ma potrzeby uruchamiania polecenia Set-RMSServerAuthentication przed włączeniem lub wyłączeniem ochrony plików albo pobraniem szablonów.
@@ -466,7 +466,7 @@ Można uruchomić polecenia cmdlet etykietowania nieinterakcyjny za pomocą **Se
 Domyślnie polecenia cmdlet służące do etykietowania są uruchamiane we własnym kontekście użytkownika w interaktywnej sesji programu PowerShell. Aby uruchamiać polecenia w trybie nienadzorowanym, utwórz nowe konto użytkownika usługi Azure AD. Następnie w kontekście tego użytkownika uruchom polecenie cmdlet Set-AIPAuthentication, aby skonfigurować i przechowywać poświadczenia przy użyciu tokenu dostępu z usługi Azure AD. To konto użytkownika jest następnie uwierzytelniane i uruchamiane dla usługi Azure Rights Management. Konto pobiera zasady usługi Azure Information Protection i wszystkie szablony usług Rights Management używane w etykietach.
 
 > [!NOTE]
-> Jeśli używasz [zasad o określonym zakresie](../deploy-use/configure-policy-scope.md), należy pamiętać, że może być konieczne do dodania tego konta do zasad o określonym zakresie.
+> Jeśli używasz [zasady o określonym zakresie] skonfigurować — zasady — scope.md), należy pamiętać, że może być konieczne do dodania tego konta do zasad o określonym zakresie.
 
 Przy pierwszym uruchomieniu tego polecenia cmdlet zostanie wyświetlony monit o zalogowanie do usługi Azure Information Protection. Określ nazwę konta użytkownika i hasła, który został utworzony dla instalacji nienadzorowanej użytkownika. Następnie na tym koncie będzie można uruchamiać polecenia cmdlet nieinteraktywnego etykietowania do momentu wygaśnięcia ważności tokenu uwierzytelniania. 
 

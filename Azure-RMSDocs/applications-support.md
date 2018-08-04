@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f529b761ef757612b621e948a49805448f9414ba
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: a450aabe8b2e318e4cb7be65f9c4d7d48941dc95
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475259"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488764"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>Jak aplikacje obsługują usługę Azure Rights Management
 
@@ -30,11 +30,11 @@ Skorzystaj z poniższych informacji, aby lepiej zrozumieć, w jaki sposób najcz
 
 W niektórych przypadkach usługa Azure Rights Management stosuje ochronę automatycznie, zgodnie z zasadami skonfigurowanymi przez administratorów. Dotyczy to na przykład bibliotek programu SharePoint i reguł transportu programu Exchange. W innych przypadkach użytkownicy końcowi muszą sami zastosować ochronę z poziomu ich aplikacji. Na przykład użytkownikom wybrać klasyfikację, etykiety to znaczy skonfigurowana pod kątem zastosowania ochrony, lub wybierz szablon lub wybierz konkretne opcje. Ochrona stosowana przez użytkowników jest typowa, gdy użytkownicy ochrony udostępnianego pliku i one również ograniczyć dostęp lub możliwość użycia dla wybranych użytkowników lub dla użytkowników spoza organizacji.
 
-Szablony ułatwiają użytkownikom (i administratorom, którzy konfigurują zasady) stosowanie odpowiedniego poziomu ochrony i ograniczenie dostępu do osób wewnątrz organizacji. Mimo że usługę Azure Rights Management zawiera dwa szablony domyślne, prawdopodobnie zajdzie potrzeba utworzenia szablonów niestandardowych, aby ograniczyć sytuacje, użytkownicy i Administratorzy muszą określać poszczególne opcje. Aby uzyskać więcej informacji na temat szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](./deploy-use/configure-policy-templates.md).
+Szablony ułatwiają użytkownikom (i administratorom, którzy konfigurują zasady) stosowanie odpowiedniego poziomu ochrony i ograniczenie dostępu do osób wewnątrz organizacji. Mimo że usługę Azure Rights Management zawiera dwa szablony domyślne, prawdopodobnie zajdzie potrzeba utworzenia szablonów niestandardowych, aby ograniczyć sytuacje, użytkownicy i Administratorzy muszą określać poszczególne opcje. Aby uzyskać więcej informacji na temat szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Dla przypadków, w których użytkownicy muszą sami zastosować ochronę, należy koniecznie udostępnieniu im instrukcji oraz wskazówek jak i kiedy mają to robić. Wprowadź instrukcje specyficzne dla aplikacji i wersji, które używają i jak ich używać ich. Zawierają także wskazówki dotyczące kiedy i w jaki sposób użytkownicy stosuje ochrony, która jest odpowiednia dla Twojej firmy. Aby uzyskać więcej informacji, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](./deploy-use/help-users.md).
+Dla przypadków, w których użytkownicy muszą sami zastosować ochronę, należy koniecznie udostępnieniu im instrukcji oraz wskazówek jak i kiedy mają to robić. Wprowadź instrukcje specyficzne dla aplikacji i wersji, które używają i jak ich używać ich. Zawierają także wskazówki dotyczące kiedy i w jaki sposób użytkownicy stosuje ochrony, która jest odpowiednia dla Twojej firmy. Aby uzyskać więcej informacji, zobacz [Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management](help-users.md).
 
-Informacje o sposobach konfigurowania tych aplikacji dla usługi Azure Rights Management w ramach usługi Azure Information Protection podano w temacie [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](./deploy-use/configure-applications.md).
+Informacje o sposobach konfigurowania tych aplikacji dla usługi Azure Rights Management w ramach usługi Azure Information Protection podano w temacie [Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management](configure-applications.md).
 
 Z usługą Rights Management mogą być na różne sposoby zintegrowane usługi wyszukiwania. Przykład: 
 

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 444ba5d74337bb613cf7eba9dc47705d02d23d10
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474219"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489614"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -52,7 +52,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3557.524 klienta usługi RMS.
 
 **Nowe funkcje**: 
 
-- Obsługa nowych typów informacji poufnych klasyfikować dokumenty, które zawierają dane osobowe. [Więcej informacji](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+- Obsługa nowych typów informacji poufnych klasyfikować dokumenty, które zawierają dane osobowe. [Więcej information]configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
 - Obsługa etykietowania **Strict otwartego dokumentu XML** format w plikach programu Word, Excel i PowerPoint. Aby uzyskać więcej informacji na temat formatów Open XML, zobacz w blogu pakietu Office, [nowe opcje format pliku w nowy pakiet Office](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/). 
 
@@ -109,7 +109,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 - W wersjach programu Outlook 16.0.9324.1000 i nowsze (kliknij polecenie do uruchomienia), na pasku usługi Azure Information Protection obsługuje najnowsze opcje wyświetlania monitor, które mogłyby prowadzić wcześniej na pasku wyświetlane poza aplikację Outlook.
 
-- Oznaczenia wizualne, które można skonfigurować [według typu aplikacji pakietu Office](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook) teraz zastąpić nagłówka lub stopki uprzednio zastosowaną przez etykiety usługi Azure Information Protection.
+- Oznaczenia wizualne, które można skonfigurować [według aplikacji pakietu Office type]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook) zostały zastąpione nagłówka lub stopki, które wcześniej zostały zastosowane przez platformę Azure Etykieta ochrony informacji.
 
 - Gdy już nazywa plik programu Excel i stosuje się etykietę oznaczeń wizualnych, nowy arkusz ma teraz oznaczeń wizualnych etykiety zastosowane.
 
@@ -133,7 +133,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
     
     - Domyślnie tylko typy dokumentów pakietu Office będą chronione. Inne typy plików mogą być chronione, podczas definiowania w rejestrze. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów.
     
-    - Domyślnie skaner uruchamiane z poziomu o niskiej integralności na wyższy poziom zabezpieczeń w przypadku, gdy uruchamiasz skaner przy użyciu konta, które ma uprzywilejowane prawa. Jeśli konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały udokumentowane w artykule [wymagania wstępne skanera](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ negatywnie wpływa na wydajność. Możesz użyć zaawansowanych ustawień można wyłączyć poziom o niskiej integralności klienta. [Więcej informacji](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    - Domyślnie skaner uruchamiane z poziomu o niskiej integralności na wyższy poziom zabezpieczeń w przypadku, gdy uruchamiasz skaner przy użyciu konta, które ma uprzywilejowane prawa. Jeśli konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały udokumentowane w [scanner prerequisites]deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ jego negatywnie wpływa na wydajność. Możesz użyć zaawansowanych ustawień można wyłączyć poziom o niskiej integralności klienta. [Więcej informacji](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
     
 - Aby uzyskać [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus), dane wyjściowe obejmują teraz właściciela usługi Rights Management i Wystawca usługi Rights Management oraz datę, która była chroniona zawartość.
  
@@ -157,11 +157,11 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 **Nowe funkcje**:
 
-- Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-use/deploy-aip-scanner.md). 
+- Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje Zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików] wdrażanie — usługi aip — scanner.md). 
 
-- Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej informacji](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+- Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej information]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
-- Obsługa [ustawienie zasad](../deploy-use/configure-policy-settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
+- Obsługa [ustawienie zasad] Konfiguruj — zasady — settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
 
 - Nowe zaawansowane ustawienia klienta (w wersji zapoznawczej) można włączyć klasyfikacji, aby uruchomić w sposób ciągły w tle. Jeśli to ustawienie jest włączone dla aplikacji pakietu Office klasyfikacji automatycznej i zalecanej działa w sposób ciągły w tle, zamiast uruchamiać podczas zapisywania dokumentów. Ta zmiana w zachowaniu można teraz zastosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
@@ -169,7 +169,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 - Dla aplikacji pakietu Office podczas określania uprawnień niestandardowych, można teraz Przeglądaj i wybierz użytkowników z ikony książki adresowej. Wybranie tej opcji powoduje parzystości wrażenia użytkownika podczas określania uprawnień niestandardowych za pomocą Eksploratora plików.
 
-- Obsługa metodę całkowicie nieinterakcyjnych authentication dla kont usług, które korzystają z programu PowerShell i nie można udzielić **logować się lokalnie** prawo. Ta metoda uwierzytelniania, musisz korzystać z nowych *tokenu* parametrem [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication), i uruchom skrypt programu PowerShell jako zadania. [Więcej informacji](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+- Obsługa metodę całkowicie nieinterakcyjnych authentication dla kont usług, które korzystają z programu PowerShell i nie można udzielić **logować się lokalnie** prawo. Ta metoda uwierzytelniania, musisz korzystać z nowych *tokenu* parametrem [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication), i uruchom skrypt programu PowerShell jako zadania. [Więcej informacji](client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
 
 - Nowy parametr *IntegratedAuth* dla [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication). Ten parametr obsługuje tryb serwera dla usług AD RMS, który jest wymagany dla usług AD RMS do obsługi infrastruktury klasyfikacji plików systemu Windows Server.
 
@@ -225,11 +225,11 @@ Ta wersja zawiera wersję MSIPC 1.0.3219.0619 klienta usługi RMS.
 
 **Nowe funkcje**:
 
-- Obsługa nowych warunków DLP usługi Office 365, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji, zobacz [Konfigurowanie warunków dla etykiety usługi Azure Information Protection](../deploy-use/configure-policy-classification.md).
+- Obsługa nowych warunków DLP usługi Office 365, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji zobacz Konfigurowanie [Konfigurowanie warunków dla etykiety usługi Azure Information Protection]-zasady — classification.md).
 
-- Pomoc techniczna dla etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook ta etykieta automatycznie zastosuje opcję programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików tej etykiety monituje użytkownika o podanie uprawnień niestandardowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../deploy-use/configure-policy-protection.md).
+- Pomoc techniczna dla etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook ta etykieta automatycznie zastosuje opcję programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików tej etykiety monituje użytkownika o podanie uprawnień niestandardowych. Aby uzyskać więcej informacji zobacz Konfigurowanie [Konfigurowanie etykiety usługi Azure Information Protection do ochrony]-zasady — protection.md).
 
-- Etykiety obsługują wiele języków. Począwszy od 30 sierpnia 2017 r. [domyślne zasady](../deploy-use/configure-policy-default.md) obejmuje obsługę wielu języków wyświetlanych przez tę wersję klienta dla użytkowników. Aby użytkownikom były wyświetlane etykiety w ich własnym języku preferowanym z domyślnych zasad przed tą datą i etykiety, które można skonfigurować, zobacz [Konfigurowanie etykiet w różnych językach w usłudze Azure Information Protection](../deploy-use/configure-policy-languages.md).
+- Etykiety obsługują wiele języków. Zaczyna się od 30 sierpnia 2017 r. [zasady domyślne] Konfiguruj — zasady — default.md) obejmuje obsługę wielu języków wyświetlanych przez tę wersję klienta dla użytkowników. Aby użytkownikom były wyświetlane etykiety w ich własnym języku preferowanym z domyślnych zasad przed tą datą i etykiety, które można skonfigurować, zobacz [temat Konfigurowanie etykiet w różnych językach w usłudze Azure Information Protection] skonfigurować — zasady — languages.md).
 
 - Etykiety są wyświetlane z **Chroń** przycisk na Wstążce pakietu Office, oprócz wyświetlania na pasku usługi Information Protection. 
 
@@ -237,15 +237,15 @@ Ta wersja zawiera wersję MSIPC 1.0.3219.0619 klienta usługi RMS.
 
 - Obsługiwane konfiguracje Zaawansowanego klienta, które można skonfigurować w witrynie Azure portal. Te konfiguracje obejmują następujące czynności:
     
-    - [Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
+    - [Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
+    - [Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [Trwałe ukrycie paska usługi Azure Information Protection](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
+    - [Trwałe ukrycie paska usługi Azure Information Protection](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
-    - [Włącz zalecana klasyfikacja w programie Outlook](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
+    - [Włącz zalecana klasyfikacja w programie Outlook](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 
-- W przypadku programu PowerShell obsługują aby oznaczyć pliki nieinterakcyjny przy użyciu nowych poleceń cmdlet programu PowerShell [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) i [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication). Aby uzyskać więcej informacji jak używać tych poleceń cmdlet, zobacz [sekcji PowerShell](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) podręcznika administratora.
+- W przypadku programu PowerShell obsługują aby oznaczyć pliki nieinterakcyjny przy użyciu nowych poleceń cmdlet programu PowerShell [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) i [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication). Aby uzyskać więcej informacji jak używać tych poleceń cmdlet, zobacz [sekcji PowerShell](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) podręcznika administratora.
 
 - Dla poleceń cmdlet programu PowerShell [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) i [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails** . Parametry te pozwalają określić adres e-mail właściciela niestandardowej właściwości i pozostawienie niezmienionej dokumentów, które etykiety daty.
 
@@ -259,7 +259,7 @@ Poprawki dotyczące stabilności i dla konkretnych scenariuszy, które obejmują
 
 - Obsługa etykietowanie i ochronę plików przechowywanych na serwerze programu SharePoint.
 
-- Znaki wodne są teraz obsługiwane w wielu wierszach. Ponadto oznaczenia wizualne są teraz stosowane do dokumentu na [najpierw Zapisz tylko](../deploy-use/configure-policy-markings.md#when-visual-markings-are-applied) zamiast każdym razem, gdy dokument zostanie zapisany.
+- Znaki wodne są teraz obsługiwane w wielu wierszach. Ponadto oznaczenia wizualne są teraz stosowane do dokumentu na [first save only]configure-policy-markings.md#when-visual-markings-are-applied) zamiast każdym razem, gdy dokument zostanie zapisany.
 
 - **Uruchom diagnostykę** opcji **Pomoc i opinie** okno dialogowe jest zastępowany **Resetowanie ustawień**. Zachowanie dla tej akcji została zmieniona na obejmują wylogowywania użytkownika i usunięcie zasad usługi Azure Information Protection. Aby uzyskać więcej informacji, zobacz [więcej informacji na temat opcji resetowania ustawień](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option) w podręczniku administratora.
 

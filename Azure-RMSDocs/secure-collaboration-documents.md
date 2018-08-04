@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8f2facdeda749987bb1fffae84a3f1bf033e1ad
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f08c458ce779149d34d573ba145452f98d612c8c
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475294"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489505"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Bezpiecznej współpracy nad dokumentami przy użyciu usługi Azure Information Protection
 
@@ -25,7 +25,7 @@ ms.locfileid: "39475294"
 
 Gdy używasz usługi Azure Information Protection, możesz chronić swoje dokumenty, bez obniżania oczekiwanego poziomu współpracy dla autoryzowanych użytkowników. Większość dokumentów, że jeden użytkownik tworzy i następnie udostępnia innym osobom do wyświetlania i edytowania będą mieć dokumentów pakietu Office z programu Word, Excel i PowerPoint. Te dokumenty obsługują ochronę natywną, co oznacza, że oprócz funkcji ochrony autoryzacji i szyfrowania, obsługują one również ograniczonych uprawnień dla dokładniejszej kontroli. 
 
-Te uprawnienia są nazywane praw użytkowania i uwzględniać uprawnień, takich jak wyświetlanie, edytowanie, drukowania. Można zdefiniować poszczególne prawa użytkowania, gdy dokument jest chroniony lub można zdefiniować grupowania praw użytkowania, o nazwie poziomów uprawnień. Poziomy uprawnień należy wybrać prawa użytkowania, które są zwykle używane ze sobą, na przykład recenzent i współautor. Aby uzyskać więcej informacji na temat praw użytkowania i poziomy uprawnień, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](./deploy-use/configure-usage-rights.md).
+Te uprawnienia są nazywane praw użytkowania i uwzględniać uprawnień, takich jak wyświetlanie, edytowanie, drukowania. Można zdefiniować poszczególne prawa użytkowania, gdy dokument jest chroniony lub można zdefiniować grupowania praw użytkowania, o nazwie poziomów uprawnień. Poziomy uprawnień należy wybrać prawa użytkowania, które są zwykle używane ze sobą, na przykład recenzent i współautor. Aby uzyskać więcej informacji na temat praw użytkowania i poziomy uprawnień, zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md).
 
 Podczas konfigurowania tych uprawnień można określić użytkowników, którzy są do:
 
@@ -44,7 +44,7 @@ Jako administrator możesz skonfigurować etykiety usługi Azure Information Pro
 
 W tym przykładzie przedstawiono konfigurowanie istniejącej etykiety w celu zastosowania ochrony, tak aby użytkownicy z Twojej organizacji mogą współpracować nad dokumentami wszystkim użytkownikom z innej organizacji, który ma usługi Office 365 lub Azure AD, w grupie z innej organizacji, która ma Office 365 lub Azure AD, a użytkownik nie ma konta w usłudze Azure AD i zamiast tego użyje adresu e-mail usługi Gmail.
 
-Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie zawiera ustawienia dla wszystkich uwierzytelnionych użytkowników. Aby uzyskać przykład sposobu konfigurowania etykietę z tym ustawieniem, zobacz [przykład 5: etykiety, która szyfruje zawartość, ale nie ogranicza kto ma dostęp do jego](./deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
+Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie zawiera ustawienia dla wszystkich uwierzytelnionych użytkowników. Aby uzyskać przykład sposobu konfigurowania etykietę z tym ustawieniem, zobacz [przykład 5: etykiety, która szyfruje zawartość, ale nie ogranicza kto ma dostęp do jego](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
 
 1. Wybierz etykiety, która jest już zasad globalnych lub zasad o określonym zakresie. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
@@ -79,10 +79,10 @@ Teraz, gdy ta etykieta jest skonfigurowany, można zastosować go do dokumentów
 |Różne sposoby, aby zastosować etykietę|Więcej informacji|
 |---------------|----------|
 |Użytkownik wybierze etykietę ręcznie, gdy dokument zostanie utworzony w aplikacji pakietu Office.|Użytkownicy wybrać etykietę z **Chroń** przycisk na Wstążce pakietu Office lub na pasku usługi Azure Information Protection.|
-|Użytkownicy są monitowani o wybranie etykiety, po zapisaniu nowego dokumentu.|Skonfigurowano usługi Azure Information Protection [ustawienie zasad](./deploy-use/configure-policy-settings.md) o nazwie **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**.|
+|Użytkownicy są monitowani o wybranie etykiety, po zapisaniu nowego dokumentu.|Skonfigurowano usługi Azure Information Protection [ustawienie zasad](configure-policy-settings.md) o nazwie **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**.|
 |Użytkownik udostępnia dokumentu za pośrednictwem poczty e-mail i ręcznie wybierze etykietę w programie Outlook.|Użytkownicy wybrać etykietę z **Chroń** przycisk na Wstążce pakietu Office lub z paska usługi Azure Information Protection i dołączony dokument jest chroniony automatycznie przy użyciu tych samych ustawień.|
 |Administrator ma zastosowanie etykiety do dokumentu przy użyciu programu PowerShell.|Użyj [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) polecenia cmdlet, aby zastosować etykietę do określonego dokumentu lub wszystkie dokumenty w folderze.|
-|Ponadto skonfigurowano etykietę do stosowania automatycznej klasyfikacji, które można teraz stosować za pomocą skanera usługi Azure Information Protection lub programu PowerShell.|Zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](./deploy-use/configure-policy-classification.md).|
+|Ponadto skonfigurowano etykietę do stosowania automatycznej klasyfikacji, które można teraz stosować za pomocą skanera usługi Azure Information Protection lub programu PowerShell.|Zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md).|
 
 Do przeprowadzenia tego instruktażu, ręcznie zastosować etykietę, tworząc dokument w aplikacji pakietu Office: 
 
@@ -149,9 +149,9 @@ Obecnie obsługiwane przez pakiet Office 2016 kliknij do uruchomienia tylko.
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Zobacz inne [przykładowe konfiguracje](./deploy-use/configure-policy-protection.md#example-configurations) etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawienia ochrony.
+Zobacz inne [przykładowe konfiguracje](configure-policy-protection.md#example-configurations) etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawienia ochrony.
 
-Aby uzyskać więcej informacji o inne opcje i ustawienia, które można skonfigurować dla etykiety, zobacz [zasad konfigurowania usługi Azure Information Protection](./deploy-use/configure-policy.md). 
+Aby uzyskać więcej informacji o inne opcje i ustawienia, które można skonfigurować dla etykiety, zobacz [zasad konfigurowania usługi Azure Information Protection](configure-policy.md). 
 
 Etykiety, która została skonfigurowana w tym artykule również utworzenie szablonu ochrony tej samej nazwie. Masz aplikacje i usługi, które integrują się z szablonami ochrony z usługi Azure Information Protection, można zastosować ten szablon. Na przykład rozwiązania DLP i reguły przepływu poczty. Program Outlook w sieci web automatycznie Wyświetla szablony ochrony z globalnych zasad usługi Azure Information Protection. 
 

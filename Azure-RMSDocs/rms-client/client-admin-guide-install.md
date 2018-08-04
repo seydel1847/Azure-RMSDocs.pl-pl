@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 522e188e93aa055454f312ba90059d5f030b326e
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474175"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489767"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Instalowanie klienta usługi Azure Information Protection dla użytkowników
 
@@ -117,7 +117,7 @@ Użyj poniższych instrukcji, aby zainstalować klienta bez korzystania z katalo
 
     - Ponownie uruchom komputer, jeśli jest na nim zainstalowany pakiet Office 2010. 
         
-        Jeśli klienta zainstalowano bez parametru ServiceLocation, przy pierwszym uruchomieniu dowolnej aplikacji pakietu Office korzystającej z paska usługi Azure Information Protection (na przykład Word) należy potwierdzić wszystkie monity o zaktualizowanie rejestru w związku z pierwszym uruchomieniem. Klucze rejestru są wypełniane przy użyciu [odnajdywania usług](../rms-client/client-deployment-notes.md#rms-service-discovery). 
+        Jeśli klienta zainstalowano bez parametru ServiceLocation, przy pierwszym uruchomieniu dowolnej aplikacji pakietu Office korzystającej z paska usługi Azure Information Protection (na przykład Word) należy potwierdzić wszystkie monity o zaktualizowanie rejestru w związku z pierwszym uruchomieniem. Klucze rejestru są wypełniane przy użyciu [odnajdywania usług](client-deployment-notes.md#rms-service-discovery). 
     
     - W przypadku innych wersji pakietu Office należy uruchomić ponownie wszystkie aplikacje pakietu Office i wszystkie wystąpienia Eksploratora plików. 
         
@@ -147,7 +147,7 @@ Zidentyfikuj wartość do określenia dla parametru ServiceLocation, wykonując 
 
 1. Z poziomu sesji programu PowerShell najpierw uruchom polecenie [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice) i określ poświadczenia administratora, aby nawiązać połączenie z usługą Azure Rights Management. Następnie uruchom polecenie [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration). 
  
-    Jeśli użytkownik jeszcze nie zainstalowano modułu programu PowerShell dla usługi Azure Rights Management, zobacz [Instalowanie modułu AADRM programu PowerShell](../deploy-use/install-powershell.md).
+    Jeśli użytkownik jeszcze nie zainstalowano modułu programu PowerShell dla usługi Azure Rights Management, zobacz powershell.md instalacji [Instalowanie modułu AADRM programu PowerShell]).
 
 2. Opierając się na danych wyjściowych, zidentyfikuj wartość **LicensingIntranetDistributionPointUrl**.
 
@@ -202,7 +202,7 @@ Jeśli metoda wdrażania oprogramowania korzysta z oprogramowania Intune, użyj 
 
 Moduł programu PowerShell, który jest dołączony do klienta usługi Azure Information Protection zawiera polecenia cmdlet, aby zainstalować i skonfigurować skaner. Jednak aby użyć skanera, należy zainstalować pełną wersję klienta i nie można zainstalować tylko moduł programu PowerShell.
 
-Aby zainstalować klienta skanera, postępuj zgodnie z tych samych instrukcji w poprzednich sekcjach. Następnie możesz zainstalować skaner. Aby uzyskać instrukcje, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-use/deploy-aip-scanner.md).
+Aby zainstalować klienta skanera, postępuj zgodnie z tych samych instrukcji w poprzednich sekcjach. Następnie możesz zainstalować skaner. Aby uzyskać instrukcje Zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików] wdrażanie — usługi aip — scanner.md).
 
 ## <a name="next-steps"></a>Kolejne kroki
 Po zainstalowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 57aed12b627a435c3707cbd95fc51e1e0837bd07
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371496"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489750"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -29,7 +29,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>Jak skonfigurować zaawansowane ustawienia konfiguracji klienta w portalu
 
-1. Jeśli użytkownik jeszcze tego nie zrobiono, w nowym oknie przeglądarki [Zaloguj się do witryny Azure portal](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal), a następnie przejdź do **usługi Azure Information Protection** bloku.
+1. Jeśli użytkownik jeszcze tego nie zrobiono, w nowym oknie przeglądarki [Zaloguj się do platformy Azure portal]configure-policy.md#signing-in-to-the-azure-portal), a następnie przejdź do **usługi Azure Information Protection** bloku.
 
 2. Z **klasyfikacje** > **etykiety** opcji menu: Wybierz **zasady**.
 
@@ -51,7 +51,7 @@ Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](../rms-client/client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
+Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
 
 ## <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
@@ -78,7 +78,7 @@ Dodatkowo:
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Wymusić tryb z samą ochroną, gdy Twoja organizacja ma różne licencji
 
-Jeśli Twoja organizacja nie ma żadnych licencji usługi Azure Information Protection, ale mają licencje usługi Office 365, która obejmuje usługi Azure Rights Management do ochrony danych, klient usługi Azure Information Protection dla Windows automatycznie uruchamia w [tryb z samą ochroną](../rms-client/client-protection-only-mode.md).
+Jeśli Twoja organizacja nie ma żadnych licencji usługi Azure Information Protection, ale mają licencje usługi Office 365, która obejmuje usługi Azure Rights Management do ochrony danych, klient usługi Azure Information Protection dla Windows automatycznie uruchamia w [tryb z samą ochroną](client-protection-only-mode.md).
 
 Jednak jeśli Twoja organizacja ma subskrypcję usługi Azure Information Protection, domyślnie wszystkie komputery Windows można pobrać zasad usługi Azure Information Protection. Nie usługi Azure Information Protection, w których klient ma licencję, sprawdzenie i wymuszania. 
 
@@ -122,7 +122,7 @@ Podczas eksportowania zasady, ta akcja spowoduje pobranie plik z rozszerzeniem z
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook
 
-Aby skonfigurować tę opcję zaleca przy użyciu [ustawienie zasad](../deploy-use/configure-policy-settings.md) **Dodawanie przycisku nie przesyłaj dalej do Wstążki programu Outlook**. Jednak również mogą skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowanego w witrynie Azure portal.
+Aby skonfigurować tę opcję zaleca przy użyciu [ustawienia zasad] Konfiguruj — zasady — settings.md) **Dodawanie przycisku nie przesyłaj dalej do Wstążki programu Outlook**. Jednak również mogą skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowanego w witrynie Azure portal.
 
 Po skonfigurowaniu tego ustawienia, ukrywa lub pokazuje **nie przesyłaj dalej** przycisk na Wstążce w programie Outlook. To ustawienie nie ma wpływu na opcję nie przekazuj menu pakietu Office.
 
@@ -134,7 +134,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników
 
-Aby skonfigurować tę opcję zaleca przy użyciu [ustawienie zasad](../deploy-use/configure-policy-settings.md) **Udostępnij opcję niestandardowych uprawnień użytkownikom**. Jednak również mogą skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowanego w witrynie Azure portal. 
+Aby skonfigurować tę opcję zaleca przy użyciu [ustawienia zasad] Konfiguruj — zasady — settings.md) **Udostępnij opcję niestandardowych uprawnień użytkownikom**. Jednak również mogą skonfigurować tę opcję, za pomocą [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) skonfigurowanego w witrynie Azure portal. 
 
 Po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników, opcje uprawnień niestandardowych stają się widoczne dla użytkowników wybrać własne ustawienia ochrony lub są ukryte, aby użytkownicy nie mogą wybrać własne ustawienia ochrony, chyba że zostanie wyświetlony monit.
 
@@ -147,7 +147,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. Jej używać tylko wtedy, gdy [ustawienie zasad](../deploy-use/configure-policy-settings.md) **wyświetlany pasek Information Protection w aplikacjach pakietu Office** ustawiono **na**.
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. Jej używać tylko wtedy, gdy [ustawienie zasad] Konfiguruj — zasady — settings.md) **wyświetlany pasek Information Protection w aplikacjach pakietu Office** ustawiono **na**.
 
 Gdy po skonfigurowaniu tego ustawienia i opublikowaniu zasad dla użytkowników użytkownik zdecyduje, aby nie wyświetlać paska usługi Azure Information Protection w aplikacjach pakietu Office, pasek pozostanie ukryty. Takie zachowanie ma miejsce, gdy użytkownik usunie zaznaczenie opcji **Pokaż pasek** na karcie **Strona główna**, w grupie **Ochrona**, w obszarze przycisku **Chroń**. To ustawienie nie daje efektu, jeśli użytkownik zamknie pasek za pomocą ikony **Zamknij ten pasek**.
 
@@ -193,7 +193,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Kiedy używasz [ustawienie zasad](../deploy-use/configure-policy-settings.md) z **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**, użytkownicy są monitowani o wybranie etykiety są najpierw zapisywania dokumentu pakietu Office i po nich Wyślij wiadomość e-mail. W przypadku dokumentów, użytkownicy mogą wybrać **nie teraz** tymczasowo odrzucać monit o wybranie etykiety i wróć do dokumentu. Jednak nie można ich zamknąć zapisany dokument bez etykiet go. 
+Przy użyciu [ustawienia zasad] Konfiguruj — zasady — settings.md) z **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**, użytkownicy są monitowani o wybranie etykiety są najpierw zapisywania dokumentu pakietu Office i po nich Wyślij wiadomość e-mail. W przypadku dokumentów, użytkownicy mogą wybrać **nie teraz** tymczasowo odrzucać monit o wybranie etykiety i wróć do dokumentu. Jednak nie można ich zamknąć zapisany dokument bez etykiet go. 
 
 Po skonfigurowaniu tego ustawienia, usuwa **nie teraz** opcji użytkownicy muszą wybrać etykietę, przy pierwszym zapisaniu dokumentu.
 
@@ -209,7 +209,7 @@ Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec 
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Po skonfigurowaniu tego ustawienia, zmienia [domyślne zachowanie](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) z jak klient usługi Azure Information Protection stosuje automatycznej i zalecanej etykiety w następujący sposób:
+Po skonfigurowaniu tego ustawienia, zmienia się [default behavior]configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) o jak klient usługi Azure Information Protection stosuje automatycznej i zalecanej etykiety w następujący sposób :
 
 - Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel, PowerPoint i Outlook. W przypadku dokumentów Automatyczna klasyfikacja działa w sposób ciągły w tle. Dla programu Outlook Automatyczna klasyfikacja jest uruchamiany, gdy są wysyłane wiadomości e-mail. 
     
@@ -393,7 +393,7 @@ Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-
 
 Domyślnie skanera usługi Azure Information Protection jest uruchamiany z poziomu o niskiej integralności. To ustawienie zapewnia wyższy izolacji zabezpieczeń, ale kosztem wydajności. Poziom o niskiej integralności jest odpowiednia, jeśli uruchomisz skaner przy użyciu konta, które ma uprzywilejowane prawa (np. konta administratora lokalnego), ponieważ to ustawienie pomaga chronić komputer z uruchomionym skanera.
 
-Jednakże, gdy konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały opisane w [wymagania wstępne skanera](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ negatywnie wpływa na wydajność. 
+Jednak jeśli konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały udokumentowane w [scanner prerequisites]deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ jego negatywnie wpływa na wydajność. 
 
 Aby uzyskać więcej informacji na temat poziomów spójności Windows, zobacz [co to jest mechanizm integralności Windows?](https://msdn.microsoft.com/library/bb625957.aspx)
 

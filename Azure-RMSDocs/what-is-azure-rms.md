@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c7af3c166eafda4d0fa5ec5a85c47353b593776b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 96eb395f9fb8a73d903422d2f6afbba22b7df91b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475518"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489258"
 ---
 # <a name="what-is-azure-rights-management"></a>Co to jest usługa Azure Rights Management?
 
@@ -51,7 +51,7 @@ Aby dowiedzieć się więcej na temat tej usługi ochrony danych z poziomu usłu
 
 Jeśli chcesz zacząć korzystać i spróbować chronić dokumenty za pomocą etykiety usługi Azure Information Protection, spróbuj [— samouczek szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md). Ten samouczek obejmuje opcję monitowania o ochronę dokumentu po wykryciu poufnych danych. Uwzględnia on również ochronę dokumentu udostępnianego pocztą e-mail. Dokument ten można śledzić, aby zobaczyć, jak jest używany i w razie potrzeby odwołać dostęp do niego.
 
-Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, aby administratorzy i użytkownicy mogli rozpocząć chronienie dokumentów i wiadomości e-mail, użyj [planu wdrożenia usługi Azure Information Protection](./plan-design/deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
+Jeśli jednak chcesz rozpocząć wdrażanie usługi Azure Information Protection w organizacji, aby administratorzy i użytkownicy mogli rozpocząć chronienie dokumentów i wiadomości e-mail, użyj [planu wdrożenia usługi Azure Information Protection](deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 
 > [!TIP]
 > Aby uzyskać dodatkowe informacje i pomoc, skorzystaj z zasobów i linków w sekcji [Informacje i pomoc techniczna dla usługi Azure Information Protection](information-support.md).

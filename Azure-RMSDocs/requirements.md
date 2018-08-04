@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f126fe6b76a0d637e202d86bde9f257561c5a72e
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 98c4f32e0964b736c16d28ada37a1d59ee565d41
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475273"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489369"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -56,7 +56,7 @@ Dostęp warunkowy jest obsługiwana w wersji zapoznawczej dla dokumentów chroni
 
 Aby uzyskać więcej informacji na temat wymagań dotyczących uwierzytelniania, zobacz artykuł [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](requirements-azure-ad.md). 
 
-Aby uzyskać więcej informacji na temat wymagań dotyczących kont użytkowników i grup do autoryzacji, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](./plan-design/prepare.md).
+Aby uzyskać więcej informacji na temat wymagań dotyczących kont użytkowników i grup do autoryzacji, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
 ## <a name="client-devices"></a>Urządzenia klienckie
 
@@ -142,11 +142,11 @@ Aby uzyskać informacje o dodatkowych wymaganiach dla tego scenariusza, zobacz [
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Współistnienie usług AD RMS z usługami Azure RMS
 
-Następujący scenariusz wdrażania nie jest obsługiwana tylko w przypadku korzystania z usług AD RMS dla [ochrony HYOK](./deploy-use/configure-adrms-restrictions.md) za pomocą usługi Azure Information Protection (Konfiguracja "hold your own key"):
+Następujący scenariusz wdrażania nie jest obsługiwana tylko w przypadku korzystania z usług AD RMS dla [ochrony HYOK](configure-adrms-restrictions.md) za pomocą usługi Azure Information Protection (Konfiguracja "hold your own key"):
 
-- Uruchamianie usług AD RMS i Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem zawartym w temacie [Migrowanie z usługi AD RMS do usługi Azure Information Protection](./plan-design/migrate-from-ad-rms-to-azure-rms.md).
+- Uruchamianie usług AD RMS i Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem zawartym w temacie [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](./deploy-use/decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
+Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
 
 
 

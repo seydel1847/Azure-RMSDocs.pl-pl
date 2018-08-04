@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 403d5d2222438136e5d449dbe4b26b693ad566d0
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: eb99fb447702dd2f453c1caacbb8ccd341ed127b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475238"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489488"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>Krok 2: Konfigurowanie zasad usługi Azure Information Protection
 
@@ -32,7 +32,7 @@ Usługa Azure Information Protection zawiera domyślną zasadę, której można 
        > [!NOTE]
        > Twoje zasady domyślne mogą się nieco różnić od podanych w tym samouczku. Na przykład możesz mieć etykietę o nazwie **Wewnętrzne** zamiast **Ogólne** i **Tajne** zamiast **Wysoce poufne**. Być może nie masz etykiet podrzędnych, o nazwie **tylko adresaci**, lub użytkownik nie ma etykiety na wszystkich. Te zmiany są, ponieważ istnieją różne wersje zasad domyślnych, w zależności od tego, kiedy został utworzony dla Twojej dzierżawy. Lub dokonałeś ich samodzielnej edycji przed uruchomieniem samouczka.
        > 
-       > Jeśli Twoje domyślne zasady wyglądają inaczej, nadal możesz używać tego samouczka, ale należy pamiętać o tych zmianach, korzystając z poniższych instrukcji i obrazów. Jeśli chcesz zmodyfikować zasady domyślne tak, aby pasowały do bieżących zasad domyślnych, zobacz [Domyślne zasady usługi Azure Information Protection](./deploy-use/configure-policy-default.md).
+       > Jeśli Twoje domyślne zasady wyglądają inaczej, nadal możesz używać tego samouczka, ale należy pamiętać o tych zmianach, korzystając z poniższych instrukcji i obrazów. Jeśli chcesz zmodyfikować zasady domyślne tak, aby pasowały do bieżących zasad domyślnych, zobacz [Domyślne zasady usługi Azure Information Protection](configure-policy-default.md).
     
     - W przypadku domyślnej konfiguracji niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od zasady domyślne niektóre etykiety może być również ma ustawionej ochrony. Przykład: 
     
@@ -151,10 +151,10 @@ Skoro przyjrzeliśmy się już domyślnej zasadzie i wprowadziliśmy w niej kilk
 
 |Jeśli potrzebujesz dodatkowych informacji|Dodatkowe informacje|
 |--------------------------------|--------------------------|
-|Domyślne zasady i różne wersje — informacje|[Domyślne zasady usługi Azure Information Protection](./deploy-use/configure-policy-default.md)|
-|Konfigurowanie zasad — informacje|[Konfigurowanie zasad usługi Azure Information Protection](./deploy-use/configure-policy.md)|
-|Szczegółowe instrukcje dotyczące konfigurowania etykiety dla ochrony|[Konfigurowanie etykiety w celu ochrony usługi Rights Management](./deploy-use/configure-policy-protection.md)|
-|Szczegółowe informacje na temat uprawnień|[Konfigurowanie praw użytkowania dla usługi Azure Rights Management](./deploy-use/configure-usage-rights.md)|
+|Domyślne zasady i różne wersje — informacje|[Domyślne zasady usługi Azure Information Protection](configure-policy-default.md)|
+|Konfigurowanie zasad — informacje|[Konfigurowanie zasad usługi Azure Information Protection](configure-policy.md)|
+|Szczegółowe instrukcje dotyczące konfigurowania etykiety dla ochrony|[Konfigurowanie etykiety w celu ochrony usługi Rights Management](configure-policy-protection.md)|
+|Szczegółowe informacje na temat uprawnień|[Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md)|
 
 
 

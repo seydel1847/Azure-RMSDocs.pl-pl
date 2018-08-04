@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c500c099a382d4a4a070b05a55043bc66dc9543
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475245"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489131"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -34,9 +34,9 @@ Oprócz macierzystą obsługę pakietu Office, usługi Azure Rights Management, 
 
 Jeśli chcesz już skonfigurować aplikacje pakietu Office i klienta usługi Azure Information Protection:
 
-- Aby skonfigurować aplikacje pakietu Office, zobacz [Aplikacje pakietu Office: konfiguracja dla klientów](./deploy-use/configure-office-apps.md).
+- Aby skonfigurować aplikacje pakietu Office, zobacz [Aplikacje pakietu Office: konfiguracja dla klientów](configure-office-apps.md).
 
-- Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](./deploy-use/configure-client.md).
+- Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 ## <a name="exchange-online-and-exchange-server"></a>Usługa Exchange Online i program Exchange Server
 Gdy używasz usługi Exchange Online lub Exchange Server, można skonfigurować informacji usługi rights management (IRM) opcje, które obsługują usługę Azure Rights Management. Ta konfiguracja pozwala zapewnić następujących rozwiązań do ochrony programu Exchange:
@@ -57,9 +57,9 @@ Jeśli używasz lokalnego programu Exchange, służy funkcje IRM z usługą Azur
 
 Jeśli chcesz już skonfigurować program Exchange dla usługi IRM:
 
-- W przypadku usługi Exchange Online, zobacz artykuł [Usługa Exchange Online: konfiguracja usługi IRM](./deploy-use/configure-office365.md#exchange-online-irm-configuration).
+- W przypadku usługi Exchange Online, zobacz artykuł [Usługa Exchange Online: konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
 
-- W przypadku lokalnej instalacji programu Exchange, zobacz [Wdrażanie łącznika usługi Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+- W przypadku lokalnej instalacji programu Exchange, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 
 ## <a name="sharepoint-online-and-sharepoint-server"></a>Usługa SharePoint Online i program SharePoint Server
@@ -74,7 +74,7 @@ Dla dokładniejszej kontroli możesz skonfigurować w witrynie listę lub biblio
 
 Usługę IRM należy najpierw włączyć dla programu SharePoint. Następnie określ uprawnienia usługi IRM dla biblioteki. W przypadku usług SharePoint Online i OneDrive dla Firm użytkownicy mogą także określić uprawnienia usługi IRM do własnej biblioteki usługi OneDrive dla Firm. Program SharePoint nie korzysta z szablonów zasad praw, chociaż możesz wybrać określone ustawienia konfiguracji programu SharePoint, odpowiadające pewnym ustawieniom, które możesz określić za pomocą szablonów.
 
-Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą usługi IRM, wdrażając łącznik usługi Azure Rights Management. Ten łącznik działa jako przekaźnik między Twoimi serwerami lokalnymi a usługą Rights Management w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą usługi IRM, wdrażając łącznik usługi Azure Rights Management. Ten łącznik działa jako przekaźnik między Twoimi serwerami lokalnymi a usługą Rights Management w chmurze. Aby uzyskać więcej informacji, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 > [!NOTE]
 > Obecnie istnieją pewne ograniczenia dotyczące używania usługi IRM z programem SharePoint:
@@ -93,9 +93,9 @@ Chociaż nie jest już nowy w następującym wpisie w blogu usługi Office 365 z
 
 Jeśli chcesz już skonfigurować program SharePoint dla usługi IRM:
 
-- W przypadku usługi SharePoint Online, zobacz [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](./deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
+- W przypadku usługi SharePoint Online, zobacz [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
 
-- W przypadku programu SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](./deploy-use/deploy-rms-connector.md).
+- W przypadku programu SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 
 ## <a name="next-steps"></a>Kolejne kroki
@@ -104,4 +104,4 @@ Jeśli masz usługę Office 365, może zainteresować Cię artykuł dotyczący [
 
 Aby dowiedzieć się, jak inne aplikacje i usługi obsługują usługę Azure Rights Management w ramach usługi Azure Information Protection, zobacz [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md).
 
-Jeśli chcesz rozpocząć wdrażanie, co obejmuje skonfigurowanie tych aplikacji i usług, zobacz [Plan wdrażania usługi Azure Information Protection](./plan-design/deployment-roadmap.md).
+Jeśli chcesz rozpocząć wdrażanie, co obejmuje skonfigurowanie tych aplikacji i usług, zobacz [Plan wdrażania usługi Azure Information Protection](deployment-roadmap.md).

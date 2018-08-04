@@ -10,18 +10,18 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 601b60d7ece2cf1c67865b25b6e897b8f2905dc8
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: b060288efd080397f754d6aecd71abc4bbaabf81
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475595"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488814"
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Samouczek Szybki start dla usługi Azure Information Protection 
 
 >*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Dzięki temu samouczkowi możesz szybko wypróbować usługę Azure Information Protection w swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć około 20 minut. Ten samouczek został stworzony jako samodzielna demonstracja przedstawiająca skrótowo niektóre funkcje oferowane przez usługę Azure Information Protection. Nie obejmuje on wszystkich dostępnych funkcji i nie jest przeznaczony do stosowania jako instrukcja wdrożenia dla organizacji. Jeśli chcesz wdrożyć usługę Azure Information Protection w swojej organizacji, zobacz [dokumentację planu wdrażania](./plan-design/deployment-roadmap.md). 
+Dzięki temu samouczkowi możesz szybko wypróbować usługę Azure Information Protection w swojej organizacji. Wystarczy 5 prostych kroków, które powinny zająć około 20 minut. Ten samouczek został stworzony jako samodzielna demonstracja przedstawiająca skrótowo niektóre funkcje oferowane przez usługę Azure Information Protection. Nie obejmuje on wszystkich dostępnych funkcji i nie jest przeznaczony do stosowania jako instrukcja wdrożenia dla organizacji. Jeśli chcesz wdrożyć usługę Azure Information Protection w swojej organizacji, zobacz [dokumentację planu wdrażania](deployment-roadmap.md). 
 
 Ten samouczek jest przeznaczony dla administratorów oraz konsultantów IT i ma na celu ułatwienie oceny usługi Azure Information Protection jako rozwiązania do ochrony informacji w organizacji. W środowisku produkcyjnym administrator przeprowadzi konfigurację zasad usługi Information Protection, a następnie zainstaluje klienta u użytkowników. Kroki oznaczania dokumentów i bezpiecznego udostępniania ich pocztą e-mail oraz śledzenia wykonują użytkownicy. Niniejszy samouczek zawiera wszystkie te kroki w celu zaprezentowania kompletnego scenariusza klasyfikowania, etykietowania i chronienia danych organizacji. 
 

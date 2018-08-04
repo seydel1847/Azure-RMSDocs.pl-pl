@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d15e4a5e22089fa1ac98303fb00b95d082be872a
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f6aa26cb64a07e8ccc2415b874e7240897633cd0
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475490"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489264"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
@@ -47,7 +47,7 @@ Wartość nazwy UPN użytkowników nie odpowiada ich adresowi e-mail:
 
 - Ta konfiguracja nie jest zalecana. Jeśli nie możesz zmienić nazwy UPN, skonfiguruj alternatywny identyfikator logowania dla użytkowników i poinformuj ich, jak mają logować się do pakietu Office przy użyciu tej alternatywnej nazwy logowania. Aby uzyskać więcej informacji, zobacz artykuły [Konfigurowanie alternatywnego identyfikatora logowania](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) i [Aplikacje pakietu Office okresowo monitują o poświadczenia usług SharePoint Online, OneDrive i Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online).
     
-    Jeśli nazwa domeny w wartości nazwy UPN jest domeną zweryfikowaną dla dzierżawy, dodaj wartość nazwy UPN użytkownika jako inny adres e-mail do atrybutu proxyAddresses usługi Azure AD. Dzięki temu użytkownik może być autoryzowany w usłudze Azure Rights Management, jeśli jego wartość nazwy UPN została określona w momencie udzielania praw użytkowania. Aby uzyskać więcej informacji na ten temat oraz na temat sposobu autoryzowania kont użytkowników, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](./plan-design/prepare.md).
+    Jeśli nazwa domeny w wartości nazwy UPN jest domeną zweryfikowaną dla dzierżawy, dodaj wartość nazwy UPN użytkownika jako inny adres e-mail do atrybutu proxyAddresses usługi Azure AD. Dzięki temu użytkownik może być autoryzowany w usłudze Azure Rights Management, jeśli jego wartość nazwy UPN została określona w momencie udzielania praw użytkowania. Aby uzyskać więcej informacji na ten temat oraz na temat sposobu autoryzowania kont użytkowników, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
 Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub za pośrednictwem innego dostawcy uwierzytelniania, którego usługi stanowią ich odpowiednik:
 

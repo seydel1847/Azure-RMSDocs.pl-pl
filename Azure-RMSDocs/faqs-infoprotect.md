@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 691bf76154689e69966f173a19e047120748687b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 154c4beb398bdd772f91b85ea2d7d05fe3e3fd16
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475280"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489175"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -55,7 +55,7 @@ Użycie opcji etykiet podrzędnych, nie należy konfigurować oznaczenia wizualn
 
 ## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>Jak zapobiec ktoś usuwanie i zmienianie etykiety
 
-Mimo że istnieje [ustawienie zasad](./deploy-use/configure-policy-settings.md) , wymaga od użytkowników do stanu, dlaczego one obniżany etykietę klasyfikacji, usunięcie etykiety lub usunięcie ochrony, to ustawienie nie zapobiega te akcje. Aby uniemożliwić użytkownikom usuwanie i zmienianie etykiety, musi już chroniona zawartość i uprawnienia ochrony nie użytkownikowi należy przydzielić Eksport lub Pełna kontrola [prawa użytkowania](./deploy-use/configure-usage-rights.md). 
+Mimo że istnieje [ustawienie zasad](configure-policy-settings.md) , wymaga od użytkowników do stanu, dlaczego one obniżany etykietę klasyfikacji, usunięcie etykiety lub usunięcie ochrony, to ustawienie nie zapobiega te akcje. Aby uniemożliwić użytkownikom usuwanie i zmienianie etykiety, musi już chroniona zawartość i uprawnienia ochrony nie użytkownikowi należy przydzielić Eksport lub Pełna kontrola [prawa użytkowania](configure-usage-rights.md). 
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>Czy gdy wiadomość e-mail jest oznaczona, pewne załączniki automatycznie uzyskają tę samą etykietę?
 
@@ -65,7 +65,7 @@ Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, za�
 
 Ponieważ usługi Azure Information Protection używa trwałych metadanych do klasyfikacji, która zawiera etykiety zwykłego tekstu, te informacje mogą być odczytywane przez rozwiązania DLP i inne aplikacje. 
 
-Aby uzyskać więcej informacji i przykłady użycia tego metadanych przy użyciu usługi Exchange Online reguły przepływu poczty, zobacz [konfigurowania usługi Exchange Online reguły przepływu poczty dla etykiety usługi Azure Information Protection](./deploy-use/configure-exo-rules.md).
+Aby uzyskać więcej informacji i przykłady użycia tego metadanych przy użyciu usługi Exchange Online reguły przepływu poczty, zobacz [konfigurowania usługi Exchange Online reguły przepływu poczty dla etykiety usługi Azure Information Protection](configure-exo-rules.md).
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>Czym różni się klasyfikacja wiadomości e-mail usługi Azure Information Protection od klasyfikacji wiadomości e-mail stosowanej w programie Exchange?
 

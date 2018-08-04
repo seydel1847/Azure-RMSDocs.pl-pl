@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdf710737c4bcf5ffbfdd3ab6476f6b5cd118854
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 9c1c6848d86ff6e2f3e066eb9a89803ae5de6893
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371285"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489699"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -63,7 +63,7 @@ Następujące typy plików mogą być klasyfikowane, nawet wtedy, gdy nie są ch
 
 Dodatkowe typy plików obsługują klasyfikację, gdy są one również chronione. Dla tych typów plików, zobacz [obsługiwane typy plików do klasyfikacji i ochrony](#supported-file-types-for-classification-and-protection) sekcji.
 
-Na przykład w bieżącym [domyślne zasady](../deploy-use/configure-policy-default.md), **ogólne** etykieta dotyczy klasyfikacji i ochrony nie ma zastosowania. Można zastosować **ogólne** etykiety w pliku o nazwie sales.pdf, ale nie może zastosować tej etykiety w pliku o nazwie sales.txt. 
+Na przykład w bieżącej [zasady domyślne] Konfiguruj — zasad — default.md) **ogólne** etykieta dotyczy klasyfikacji i ochrony nie ma zastosowania. Można zastosować **ogólne** etykiety w pliku o nazwie sales.pdf, ale nie może zastosować tej etykiety w pliku o nazwie sales.txt. 
 
 Również w bieżące zasady domyślne **poufne \ wszyscy pracownicy** dotyczy klasyfikacji i ochrony. W pliku o nazwie sales.pdf i plik o nazwie sales.txt może zastosować tej etykiety. Po prostu ochronę można zastosować do tych plików bez klasyfikacji.
 
@@ -79,7 +79,7 @@ Klient usługi Azure Information Protection obsługuje ochronę na dwóch różn
 
 Domyślny poziom ochrony stosowany przez klienta usługi Azure Information Protection można zmienić. Poziom domyślny można zmienić z natywnego na ogólny, z ogólnego na natywny, a nawet zupełnie uniemożliwić ochronę ze strony klienta usługi Azure Information Protection. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) w tym artykule.
 
-Tę ochronę danych można zastosować automatycznie po wybraniu etykiety, która została skonfigurowana przez administratora, lub można określić własne ustawienia ochrony za pomocą [poziomów uprawnień](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels). 
+Ochrona danych można zastosować automatycznie po użytkownik wybierze etykietę, która została skonfigurowana przez administratora lub użytkownicy mogą określić, skonfigurować własne niestandardowe ustawienia ochrony za pomocą [poziomów uprawnień]-użycie-rights.md # prawa uwzględnione w--poziomach uprawnień). 
 
 ### <a name="file-sizes-supported-for-protection"></a>Rozmiary plików, dla których jest obsługiwana ochrona
 

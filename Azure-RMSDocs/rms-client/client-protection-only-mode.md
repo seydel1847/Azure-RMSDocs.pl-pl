@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d55ef8caa7540cba2cd783613f5ea373ba1d545c
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 4846a14f9ca74615646dfcb56124994af381031f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372397"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489110"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Przewodnik po użytkownik: Tryb z samą ochroną dla klienta usługi Azure Information Protection
 
@@ -57,7 +57,7 @@ Tryb z samą ochroną uruchamia się w następujących scenariuszach:
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>Zadania obsługiwane w trybie z samą ochroną
 
-- Włączenie lub wyłączenie ochrony dokumentów i wiadomości e-mail w aplikacjach pakietu Office za pomocą funkcji Zarządzanie prawami informacji (IRM) pakietu Office. Przykład: kliknij kolejno opcje **Plik** > **Informacje** > **Zabezpiecz dokument** > **Ogranicz dostęp**. Więcej informacji można znaleźć w [Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013](../deploy-use/help-users.md).
+- Włączenie lub wyłączenie ochrony dokumentów i wiadomości e-mail w aplikacjach pakietu Office za pomocą funkcji Zarządzanie prawami informacji (IRM) pakietu Office. Przykład: kliknij kolejno opcje **Plik** > **Informacje** > **Zabezpiecz dokument** > **Ogranicz dostęp**. Aby uzyskać więcej informacji zobacz users.md pomocy [korzystanie z ochrony informacji za pomocą usługi Office 365, pakietu Office 2016 lub Office 2013]).
 
 - Włącz (lub wyłącz) ochronę plików za pomocą Eksploratora plików systemu Windows: kliknij prawym przyciskiem myszy plik, pliki lub folder i wybierz polecenie **Klasyfikuj i chroń**. Aby zastosować zabezpieczenia skonfigurowane przez administratora, w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij pozycję **Wybierz szablon**, a następnie wskaż jeden z dostępnych szablonów.
 
