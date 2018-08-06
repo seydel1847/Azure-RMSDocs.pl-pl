@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 751f1a5bf2728a848bd450ce1081a15ea1e35456
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 571545905a0fac6bb1ea9b80c351b96f9f70899b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376590"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489447"
 ---
 # <a name="rms-client-deployment-notes"></a>Uwagi dotyczące wdrażania klienta usługi RMS
 
@@ -158,7 +158,7 @@ Podczas odnajdowania usługi klient usługi RMS sprawdza następujące elementy:
 
 1. **Rejestr systemu Windows na komputerze lokalnym**: jeśli w rejestrze skonfigurowano ustawienia odnajdowania usług, zostaną one wypróbowane jako pierwsze. 
 
-    Domyślnie te ustawienia nie są konfigurowane w rejestrze, ale administrator może skonfigurować je dla usługi AD RMS zgodnie z procedurą opisaną w [tej sekcji](#enabling-client-side-service-discovery-by-using-the-windows-registry). Zazwyczaj administrator konfiguruje te ustawienia usługi Azure Rights Management podczas [procesu migracji](../plan-design/migrate-from-ad-rms-phase2.md) z usług AD RMS do usługi Azure Information Protection.
+    Domyślnie te ustawienia nie są konfigurowane w rejestrze, ale administrator może skonfigurować je dla usługi AD RMS zgodnie z procedurą opisaną w [tej sekcji](#enabling-client-side-service-discovery-by-using-the-windows-registry). Zazwyczaj administrator konfiguruje te ustawienia usługi Azure Rights Management podczas [procesu migracji](../migrate-from-ad-rms-phase2.md) z usług AD RMS do usługi Azure Information Protection.
 
 2. **Active Directory Domain Services**: komputer dołączony do domeny wysyła do usługi Active Directory zapytanie o punkt połączenia usługi (SCP). 
 
@@ -181,7 +181,7 @@ Podczas odnajdowania usługi klient usługi RMS sprawdza następujące elementy:
 >  
 > - Po zainicjowaniu logowania użytkownika z aplikacji pakietu Office nazwa użytkownika (i domena) z procesu uwierzytelniania będzie służyć do identyfikowania dzierżawy usługi Azure Information Protection do użycia. W takim przypadku ustawienia rejestru są niepotrzebne i punkt połączenia usługi nie jest wybierany.
 > 
-> - Po skonfigurowaniu [przekierowania DNS](../plan-design/migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection) dla aplikacji klasycznych Szybka instalacja pakietu Office 2016, klient usługi RMS znajduje usługi Azure Rights Management przez nastąpiła odmowa dostępu do klastra usług AD RMS, który wcześniej znaleźć. Odmów to wyzwalacze akcji klienta do wyszukiwania dla rekordu SRV, który przekierowuje klienta do usługi Azure Rights Management dla dzierżawy. Ten rekord SRV umożliwia również usługi Exchange Online odszyfrowywania wiadomości e-mail, które są chronione przez Twój klaster usług AD RMS. 
+> - Po skonfigurowaniu [przekierowania DNS](../migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection) dla aplikacji klasycznych Szybka instalacja pakietu Office 2016, klient usługi RMS znajduje usługi Azure Rights Management przez nastąpiła odmowa dostępu do klastra usług AD RMS, który wcześniej znaleźć. Odmów to wyzwalacze akcji klienta do wyszukiwania dla rekordu SRV, który przekierowuje klienta do usługi Azure Rights Management dla dzierżawy. Ten rekord SRV umożliwia również usługi Exchange Online odszyfrowywania wiadomości e-mail, które są chronione przez Twój klaster usług AD RMS. 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>Tylko usługi AD RMS: włączanie odnajdowania po stronie serwera za pomocą usługi Active Directory
 Jeśli Twoje konto ma wystarczające uprawnienia (Administratorzy przedsiębiorstwa i administrator lokalny serwera usług AD RMS), można automatycznie zarejestrować punkt połączenia usługi (SCP) podczas instalowania serwera klastra głównego usług AD RMS. Jeśli punkt połączenia usługi już istnieje w lesie, należy najpierw usunąć istniejący punkt połączenia usługi przed zarejestrowaniem nowego.
