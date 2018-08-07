@@ -4,7 +4,7 @@ description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: dfe9edc5c2ee4546ad6ac2ef18e9f4393cae7a0f
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: dbe983b1c777308a01a2c1c9b7a97571cb9a7d08
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489107"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575461"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie i ochrona pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -181,7 +181,7 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 -   [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [Konfigurowanie ustawień zasad usługi Azure Information Protection] Konfiguruj — zasady — settings.md).
+Aby uzyskać instrukcje dotyczące konfiguracji włączyć ustawienie zasad **Udostępnij opcję niestandardowych uprawnień użytkownikom**, zobacz [konfigurowania ustawień zasad usługi Azure Information Protection](../configure-policy-settings.md).
 
-Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection] Konfiguruj policy.md).
+Inne instrukcje dotyczące konfiguracji: [Konfigurowanie zasad usługi Azure Information Protection](../configure-policy.md).
 

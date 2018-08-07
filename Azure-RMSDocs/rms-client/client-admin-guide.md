@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13e0d037cd616bb52d446f9da0101f1f2448c2d5
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: f9189de08c7089087ba37964a9d7acee3f537d02
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489522"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575679"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -55,7 +55,7 @@ Klient usługi Azure Information Protection zawiera następujące elementy:
 
 - Moduł środowiska PowerShell pozwalający dodawać i usuwać etykiety klasyfikacji oraz włączać i wyłączać ochronę plików. 
     
-    Ten moduł zawiera polecenia cmdlet, aby zainstalować i skonfigurować [skanera usługi Azure Information Protection] wdrażanie — aip-scanner.md), które jest uruchamiane jako usługa w systemie Windows Server. Ta usługa umożliwia odnajdywanie, klasyfikowanie i ochrona plików w magazynach danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server.
+    Ten moduł zawiera polecenia cmdlet, aby zainstalować i skonfigurować [skanera usługi Azure Information Protection](../deploy-aip-scanner.md) , które jest uruchamiane jako usługa w systemie Windows Server. Ta usługa umożliwia odnajdywanie, klasyfikowanie i ochrona plików w magazynach danych, takich jak udziały sieciowe i biblioteki programu SharePoint Server.
 
 - Klient usługi Rights Management komunikujący się z usługą Azure Rights Management (Azure RMS) lub usługami Active Directory Rights Management (AD RMS).
 
@@ -106,7 +106,7 @@ Gdy klient jest zainstalowany, użyj **Pomoc i opinie** opcję, aby otworzyć **
 
 #### <a name="help-and-feedback-section"></a>Sekcja **Pomoc i opinie**
 
-**Link Powiedz mi więcej** domyślnie prowadzi do [usługi Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) witryny sieci Web, ale można go skonfigurować dla niestandardowego adresu URL jako jedno [ustawienia zasad] Konfiguruj — zasady — settings.md) na platformie Azure Zasad usługi Information Protection.
+Link **Powiedz mi więcej** domyślnie prowadzi do witryny internetowej usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../configure-policy-settings.md) w zasadach usługi Azure Information Protection.
 
 Użyj linku **Wyślij opinię**, aby wysłać propozycje lub prośby do zespołu usługi Information Protection. Nie należy używać tej opcji w celu uzyskania pomocy technicznej. W takim przypadku należy zapoznać się z artykułem [Opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources). 
 
@@ -162,7 +162,7 @@ Klient usługi Azure Information Protection obsługuje te same języki, które o
 
 Dla tych języków, opcje menu, okna dialogowe i komunikaty z usługi Azure Information Protection klienta są wyświetlane w języku użytkownika. Istnieje jeden Instalator, który wykrywa język, dzięki czemu dodatkowa konfiguracja nie jest wymagane do zainstalowania klienta usługi Azure Information Protection dla różnych języków. 
 
-Jednak nazwy etykiet i opisy, które określisz nie są automatycznie przekształcane podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Zaczyna się od 30 sierpnia 2017 r. bieżący [zasady domyślne] Konfiguruj — zasad — default.md) obejmuje obsługę niektórych języków. Aby użytkownikom były wyświetlane etykiety w języku preferowanym udostępnić własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection pod kątem ich używania. Aby uzyskać więcej informacji, zobacz [jak skonfigurować etykiet w różnych językach dla usługi Azure Information Protection] skonfigurować — zasady — languages.md). Oznaczenia wizualne nie są przekształcane i nie obsługują więcej niż jednym języku.
+Jednak nazwy etykiet i opisy, które określisz nie są automatycznie przekształcane podczas konfigurowania etykiet w zasadach usługi Azure Information Protection. Począwszy od 30 sierpnia 2017 r. bieżący [domyślne zasady](../configure-policy-default.md) obejmuje obsługę w przypadku niektórych języków. Aby użytkownikom były wyświetlane etykiety w języku preferowanym udostępnić własne tłumaczenia i skonfigurować zasady usługi Azure Information Protection pod kątem ich używania. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiet w różnych językach dla usługi Azure Information Protection](../configure-policy-languages.md). Oznaczenia wizualne nie są przekształcane i nie obsługują więcej niż jednym języku.
 
 ## <a name="post-installation-tasks"></a>Zadań poinstalacyjnych
 

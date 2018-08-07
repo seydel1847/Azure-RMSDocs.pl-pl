@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 444ba5d74337bb613cf7eba9dc47705d02d23d10
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 077a3ac4743a607de4e48d5fd858db06e86c565d
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489614"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575611"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -52,7 +52,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3557.524 klienta usługi RMS.
 
 **Nowe funkcje**: 
 
-- Obsługa nowych typów informacji poufnych klasyfikować dokumenty, które zawierają dane osobowe. [Więcej information]configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+- Obsługa nowych typów informacji poufnych klasyfikować dokumenty, które zawierają dane osobowe. [Więcej informacji](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
 - Obsługa etykietowania **Strict otwartego dokumentu XML** format w plikach programu Word, Excel i PowerPoint. Aby uzyskać więcej informacji na temat formatów Open XML, zobacz w blogu pakietu Office, [nowe opcje format pliku w nowy pakiet Office](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/). 
 
@@ -109,7 +109,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 - W wersjach programu Outlook 16.0.9324.1000 i nowsze (kliknij polecenie do uruchomienia), na pasku usługi Azure Information Protection obsługuje najnowsze opcje wyświetlania monitor, które mogłyby prowadzić wcześniej na pasku wyświetlane poza aplikację Outlook.
 
-- Oznaczenia wizualne, które można skonfigurować [według aplikacji pakietu Office type]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook) zostały zastąpione nagłówka lub stopki, które wcześniej zostały zastosowane przez platformę Azure Etykieta ochrony informacji.
+- Oznaczenia wizualne, które można skonfigurować [według typu aplikacji pakietu Office](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook) teraz zastąpić nagłówka lub stopki uprzednio zastosowaną przez etykiety usługi Azure Information Protection.
 
 - Gdy już nazywa plik programu Excel i stosuje się etykietę oznaczeń wizualnych, nowy arkusz ma teraz oznaczeń wizualnych etykiety zastosowane.
 
@@ -133,7 +133,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
     
     - Domyślnie tylko typy dokumentów pakietu Office będą chronione. Inne typy plików mogą być chronione, podczas definiowania w rejestrze. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów.
     
-    - Domyślnie skaner uruchamiane z poziomu o niskiej integralności na wyższy poziom zabezpieczeń w przypadku, gdy uruchamiasz skaner przy użyciu konta, które ma uprzywilejowane prawa. Jeśli konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały udokumentowane w [scanner prerequisites]deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ jego negatywnie wpływa na wydajność. Możesz użyć zaawansowanych ustawień można wyłączyć poziom o niskiej integralności klienta. [Więcej informacji](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    - Domyślnie skaner uruchamiane z poziomu o niskiej integralności na wyższy poziom zabezpieczeń w przypadku, gdy uruchamiasz skaner przy użyciu konta, które ma uprzywilejowane prawa. Jeśli konto usługi, na którym uruchomiono skaner ma wyłącznie prawa, które zostały udokumentowane w artykule [wymagania wstępne skanera](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner), poziom o niskiej integralności nie jest konieczne i nie jest zalecane, ponieważ negatywnie wpływa na wydajność. Możesz użyć zaawansowanych ustawień można wyłączyć poziom o niskiej integralności klienta. [Więcej informacji](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
     
 - Aby uzyskać [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus), dane wyjściowe obejmują teraz właściciela usługi Rights Management i Wystawca usługi Rights Management oraz datę, która była chroniona zawartość.
  
@@ -157,11 +157,11 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 **Nowe funkcje**:
 
-- Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje Zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików] wdrażanie — usługi aip — scanner.md). 
+- Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md). 
 
 - Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej information]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
-- Obsługa [ustawienie zasad] Konfiguruj — zasady — settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
+- Obsługa [ustawienie zasad](../configure-policy-settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
 
 - Nowe zaawansowane ustawienia klienta (w wersji zapoznawczej) można włączyć klasyfikacji, aby uruchomić w sposób ciągły w tle. Jeśli to ustawienie jest włączone dla aplikacji pakietu Office klasyfikacji automatycznej i zalecanej działa w sposób ciągły w tle, zamiast uruchamiać podczas zapisywania dokumentów. Ta zmiana w zachowaniu można teraz zastosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
@@ -225,11 +225,11 @@ Ta wersja zawiera wersję MSIPC 1.0.3219.0619 klienta usługi RMS.
 
 **Nowe funkcje**:
 
-- Obsługa nowych warunków DLP usługi Office 365, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji zobacz Konfigurowanie [Konfigurowanie warunków dla etykiety usługi Azure Information Protection]-zasady — classification.md).
+- Obsługa nowych warunków DLP usługi Office 365, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji, zobacz [Konfigurowanie warunków dla etykiety usługi Azure Information Protection](../configure-policy-classification.md).
 
-- Pomoc techniczna dla etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook ta etykieta automatycznie zastosuje opcję programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików tej etykiety monituje użytkownika o podanie uprawnień niestandardowych. Aby uzyskać więcej informacji zobacz Konfigurowanie [Konfigurowanie etykiety usługi Azure Information Protection do ochrony]-zasady — protection.md).
+- Pomoc techniczna dla etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook ta etykieta automatycznie zastosuje opcję programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików tej etykiety monituje użytkownika o podanie uprawnień niestandardowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../configure-policy-protection.md).
 
-- Etykiety obsługują wiele języków. Zaczyna się od 30 sierpnia 2017 r. [zasady domyślne] Konfiguruj — zasady — default.md) obejmuje obsługę wielu języków wyświetlanych przez tę wersję klienta dla użytkowników. Aby użytkownikom były wyświetlane etykiety w ich własnym języku preferowanym z domyślnych zasad przed tą datą i etykiety, które można skonfigurować, zobacz [temat Konfigurowanie etykiet w różnych językach w usłudze Azure Information Protection] skonfigurować — zasady — languages.md).
+- Etykiety obsługują wiele języków. Począwszy od 30 sierpnia 2017 r. [domyślne zasady](../configure-policy-default.md) obejmuje obsługę wielu języków wyświetlanych przez tę wersję klienta dla użytkowników. Aby użytkownikom były wyświetlane etykiety w ich własnym języku preferowanym z domyślnych zasad przed tą datą i etykiety, które można skonfigurować, zobacz [temat Konfigurowanie etykiet w różnych językach w usłudze Azure Information Protection] skonfigurować — zasady — languages.md).
 
 - Etykiety są wyświetlane z **Chroń** przycisk na Wstążce pakietu Office, oprócz wyświetlania na pasku usługi Information Protection. 
 

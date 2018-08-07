@@ -4,7 +4,7 @@ description: Instrukcje i informacje dla administratorów dotyczące konfigurowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 30f9074b6dda4a2a8af7fc267cdbae1be41c784f
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 00e044274f27409b39c06b4e6cbd2beaa58eb8f2
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39488971"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575434"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów usługi Azure Information Protection
 
@@ -27,7 +27,7 @@ Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>Zarządzanie witryny śledzenia dokumentów za pomocą programu PowerShell
 
-Poniższe sekcje zawierają informacje dotyczące sposobu zarządzania witryny śledzenia dokumentów za pomocą programu PowerShell. Aby uzyskać instrukcje instalacji modułu PowerShell Zobacz powershell.md instalacji [Instalowanie modułu AADRM programu PowerShell]). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
+Poniższe sekcje zawierają informacje dotyczące sposobu zarządzania witryny śledzenia dokumentów za pomocą programu PowerShell. Aby uzyskać instrukcje instalacji modułu PowerShell, zobacz [Instalowanie modułu AADRM programu PowerShell](../install-powershell.md). Jeśli moduł został wcześniej pobrany i zainstalowany, sprawdź numer wersji, uruchamiając polecenie: `(Get-Module aadrm –ListAvailable).Version`
 
 Aby uzyskać więcej informacji na temat każdego polecenia cmdlet należy użyć linków dostępnych.
 
@@ -108,7 +108,7 @@ Dwa pola w plikach dziennika użycia mają zastosowanie do śledzenia dokumentó
 Istnieją również typy żądań, które rejestrują sposób, w jaki użytkownicy i administratorzy korzystają z witryny śledzenia dokumentu. Na przykład typ żądania **RevokeAccess** dotyczy sytuacji, gdy użytkownik lub administrator w imieniu użytkownika odwołał dokument w witrynie śledzenia dokumentów. Użyj tego typu żądania w połączeniu z polem AdminAction, aby określić, czy użytkownik odwołał własny dokument (pole AdminAction jest puste), czy też administrator odwołał dokument w imieniu użytkownika (pole AdminAction ma wartość true).
 
 
-Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management] log analizowanie usage.md)
+Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../log-analyze-usage.md)
 
 
 

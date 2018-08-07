@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 9f1d0409881628afa785c8d7ce7a78518371f084
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: cb4195b1b63c39d1d6e47d1c94d2f7e1c2c83e63
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489869"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575849"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Najlepsze rozwiązania w zakresie zabezpieczeń dla usługi Azure Information Protection
 
@@ -81,7 +81,7 @@ Usługa AIP nie obsługuje modyfikacji kodu w czasie wykonywania ani modyfikacji
 
 Jeśli aplikacja nie interpretuje ani nie wymusza prawidłowo praw wyrażonych w licencji wydania AIP, może dojść do niezamierzonego udostępnienia informacji przez ich posiadacza. Dzieje się tak na przykład wtedy, gdy aplikacja umożliwia użytkownikowi zapisanie niezaszyfrowanych informacji na nowych nośnikach, jeśli licencja publikowania uprawnia tylko do wyświetlania informacji.
 
-System AIP organizuje prawa kilku grup. Aby uzyskać więcej informacji zobacz [Konfigurowanie praw użytkowania dla usługi Azure Rights Management] Konfiguruj — użycie rights.md).
+System AIP organizuje prawa kilku grup. Więcej informacji można znaleźć w temacie [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](../configure-usage-rights.md).
 
 ### <a name="azure-information-protection"></a>Azure Information Protection  
 Interfejs API umożliwia użytkownikowi odszyfrowywanie informacji lub nie. Same informacje nie mają żadnej odziedziczonej ochrony. Jeśli użytkownik ma prawo do odszyfrowania informacji, interfejs API to umożliwia i aplikacja odpowiada za zarządzanie tymi informacjami lub ich ochronę po ich zabezpieczeniu. Aplikacja odpowiada za zarządzanie środowiskiem i interfejsem w celu zapobiegania nieautoryzowanemu korzystaniu z informacji — np. wyłącza przyciski **Drukuj** i **Kopiuj**, jeśli licencja przyznaje tylko prawo do odtwarzania. Przy użyciu pakietu testowego należy sprawdzić, czy aplikacja działa poprawnie na wszystkich prawach licencji, które rozpoznaje.

@@ -4,7 +4,7 @@ description: Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 08/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ac1d3cff2e6b01e4c66af66aaeb25e8a170c27cd
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: c33892fab0a8b954ea7cd299872bf2994c99162f
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39488781"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575798"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -99,5 +99,5 @@ Więcej instrukcji z podręcznika użytkownika usługi Azure Information Protect
 - [Co chcesz zrobić?](client-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>Dodatkowe informacje dla administratorów    
-Zobacz [Konfigurowanie zasad usługi Azure Information Protection] Konfiguruj policy.md).
+Zobacz [Konfigurowanie zasad usługi Azure Information Protection](../configure-policy.md).
 

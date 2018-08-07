@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7698821891b92733f887cddc329363bfbc4fa0ae
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 15df93cfe3a88e3aaafefcb0df05579a726e6d84
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489556"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575832"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
@@ -33,7 +33,7 @@ Gdy plik jest chroniony przez usługę Rights Management, można zmienić uprawn
 >
 > Podobnie jeśli chcesz nadać lub cofnąć uprawnienie, nie możesz po prostu określić, które uprawnienie ma zostać nadane lub cofnięte, lecz musisz podać wszystkie uprawnienia, które mają mieć określone osoby.
 
-Jeśli jesteś właścicielem pliku, dla którego chcesz na nowo włączyć ochronę (na przykład plik był pierwotnie chroniony za pomocą aplikacji do udostępniania), będziesz automatycznie mieć uprawnienia do ponownego włączenia ochrony pliku. Jeśli nie jesteś właścicielem, możesz mieć uprawnienia do ponownego włączania ochrony pliku lub nie mieć ich, w zależności od uprawnień, które obecnie ma chroniony plik. Potrzebujesz [pełną kontrolę użycia right]configure-usage-rights.md#usage-rights-and-descriptions) do ponownego włączenia ochrony pliku.
+Jeśli jesteś właścicielem pliku, dla którego chcesz na nowo włączyć ochronę (na przykład plik był pierwotnie chroniony za pomocą aplikacji do udostępniania), będziesz automatycznie mieć uprawnienia do ponownego włączenia ochrony pliku. Jeśli nie jesteś właścicielem, możesz mieć uprawnienia do ponownego włączania ochrony pliku lub nie mieć ich, w zależności od uprawnień, które obecnie ma chroniony plik. W celu ponownego włączenia ochrony pliku konieczne jest [prawo użytkowania Pełna kontrola](../configure-usage-rights.md#usage-rights-and-descriptions).
 
 Na przykład jeśli ktoś inny włączył ochronę pliku za pomocą aplikacji do udostępniania usługi Rights Management oraz podał grupę, do której należysz, oraz określił niestandardowe uprawnienie **Współwłaściciel**, masz uprawnienia do ponownego włączenia ochrony pliku. Jednakże jeśli ta osoba nie podała Ciebie ani grupy, do której należysz, lub wybrała opcję **Recenzent — wyświetlanie i edytowanie** albo szablon, który nie zezwala Ci na usuwanie uprawnień, nie masz uprawnienia do ponownego włączenia ochrony pliku. Najprostszym sposobem sprawdzenia tego jest próba ponownego włączenia ochrony pliku.
 

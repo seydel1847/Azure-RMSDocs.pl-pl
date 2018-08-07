@@ -4,7 +4,7 @@ description: Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2018
+ms.date: 08/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c83ba7be8abd14813896846977b8fa691e1d0aa8
-ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
+ms.openlocfilehash: 0921e853efac8e6a8a4924a8062c694ad013476a
+ms.sourcegitcommit: edc51fdbcff9a2bdb09a3ff05f2dd4edc2330aba
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501323"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39572043"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
@@ -27,17 +27,20 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 
 |Termin|Definicja|
 |--------|--------------|
-|AADRM|Nazwa modułu programu Windows PowerShell dla usługi Azure Rights Management, który został uzyskany nieoficjalny skrót od nazwy usługi Azure Rights Management, gdy jej poprzednia nazwa (Windows) Azure Active Directory Rights Management.|
+|AADRM|Nazwa modułu programu PowerShell dla usługi Azure Rights Management, który został uzyskany nieoficjalny skrót od nazwy usługi Azure Rights Management, gdy jej poprzednia nazwa (Windows) Azure Active Directory Rights Management.|
 |aktywować|Aby włączyć usługę Azure Rights Management, aby organizacja mogła chronić swoje dokumenty i wiadomości e-mail. Ta czynność powoduje także włączenie funkcji IRM w usłudze Exchange Online i SharePoint Online.|
 |Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawami dostępu poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
 |AD RMS|Patrz *Usługi Active Directory Rights Management*.|
+Azure Information Protection|Nazwa modułu programu PowerShell dla klienta usługi Azure Information Protection.
 |Azure Information Protection|Usługa oparta na chmurze, która używa etykiet do klasyfikowania i ochrony dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
+Klient usługi Azure Information Protection|Po stronie klienta usługi Azure Information Protection, która umożliwia użytkowników, administratorów i usług Użyj etykiety i ustawienia z zasad usługi Azure Information Protection.|
 |Etykiety usługi Azure Information Protection|Elementu, który ma zastosowanie klasyfikację wartość do dokumentów i wiadomości e-mail i opcjonalnie można je chronić.|
 |Zasady usługi Azure Information Protection|Zdefiniowane przez administratora konfiguracja dla klientów i usług korzystających z ustawienia zasad i etykiet usługi Azure Information Protection.|
 |Skaner usługi Azure Information Protection|Usługa jest uruchamiana w systemie Windows Server i pozwala odnajdywania, klasyfikowania i ochrony dokumentów na foldery lokalne, udziały sieciowe i witryny programu SharePoint Server i bibliotek.|
 |Przeglądarka usługi Azure Information Protection|Aplikacja, która działa na komputerach Windows i urządzeniach przenośnych, aby wyświetlać pliki chronione.|
 |Azure Rights Management|Nazwa często skracana do *Azure RMS*.<br /><br />Usługa Azure używana przez usługę Azure Information Protection, która stosuje szyfrowanie i zasady w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.  Znana także jako *usługa Azure Rights Management*. Poprzednie nazwy:<br /><br />- *Windows Azure Active Directory Rights Management*: nazwa często skracana do usługi Windows Azure AD Rights Management.<br /><br />- *RMS Online*: oryginalna proponowana nazwa, którą można czasami napotkać w komunikatach o błędach i we wpisach w plikach dziennika.|
 |Azure RMS|Zobacz *Azure Rights Management*.|
+|szablon domyślny|Szablon ochrony, który jest utworzony automatycznie podczas uzyskiwania subskrypcji usługi Azure Information Protection, tak, aby od razu do uruchomienia ochrony dokumentów i wiadomości e-mail zawierają poufne informacje.|
 |BYOK|Zobacz *bring your own key (własny klucz)*.|
 |bring your own key (własny klucz)|Nazwa często skracana do *BYOK*.<br /><br />Opcja konfiguracji i topologii wybierana przez organizacje, które chcą generować własne klucze dzierżawy dla usługi Azure Information Protection i zarządzać nimi.|
 |klucz zawartości|Unikatowy klucz, który jest tworzony przez aplikacje obsługujące usługę RMS dla każdego dokumentu lub wiadomości e-mail, który jest chroniony za pomocą usługi Rights Management, który pozwala ograniczyć ryzyko ujawnienia informacji.|
@@ -60,17 +63,15 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpiła starszą wersję klienta RMS, MSDRM. Nowszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, program SharePoint 2013, aplikację RMS sharing i klienta usługi Azure Information Protection.|
 |ochrona natywna|Poziom ochrony dostępny we wszystkich aplikacjach z obsługą usług, który uniemożliwia otwarcie pliku przez osoby nieupoważnione i który może również wymuszać bardziej rygorystyczne zasady, np. tylko do odczytu, ale nie do drukowania. Ponadto ochrona ta jest powiązana z plikiem, w związku z czym plik jest nią objęty nawet wtedy, gdy zostaje przekazany innym osobom lub zapisany w ogólnodostępnej lokalizacji.|
 |pfile|Rozszerzenie nazwy pliku dołączane do wszystkich plików objętych ogólną ochroną usługi zarządzania prawami.|
-|ppdf|Rozszerzenie nazwy pliku tworzone przez usługę zarządzania prawami podczas automatycznego tworzenia kopii PDF pliku (Word, Excel, PowerPoint lub PDF) udostępnionej za pośrednictwem poczty e-mail, dzięki czemu plik można odczytać (ale nie edytować) na wszystkich urządzeniach.|
 |poziom uprawnień|Logiczna grupa praw użytkowania, która ułatwia użytkownikom końcowym i administratorom wybór opcji konfiguracji opartych na rolach. Przykład: Recenzent i Współautor.|
 |chronić|Stosować dostępne w ramach usługi zarządzania prawami i mające zastosowanie do plików lub wiadomości e-mail środki kontroli wykorzystujące szyfrowanie, tożsamość i zasady kontroli dostępu w celu zabezpieczania danych.|
 |Szablon ochrony|Nazywane również *szablonu zasad praw*, *szablonu usługi Rights Management*, i *szablon usług RMS*.<br /><br />Grupa ustawień ochrony, które są zarządzane przez administratora i obejmują praw użytkowania zdefiniowanych dla autoryzowanych użytkowników i dostępu dla wygaśnięcia i dostęp w trybie offline. |
-|opublikować|Chronić plik w celu zabezpieczenia go przed nieautoryzowanym dostępem i użyciem.|
-|opublikować|Chronić plik w celu zabezpieczenia go przed nieautoryzowanym dostępem i użyciem.|
+|opublikować|Chronić plik w celu zabezpieczenia go przed nieautoryzowanym dostępem i użyciem. Również używane jako termin w połączeniu z szablonami ochrony i zasad usługi Azure Information Protection, aby udostępnić te elementy do użycia przez klientów i usług.|
 |łącznik usługi Rights Management|Przekaźnik wychodzącego serwera proxy, który można wdrożyć dla usług lokalnych, takich jak Exchange Server i SharePoint, aby chronić dane przy użyciu usługi Azure Rights Management.|
 |Wystawca usługi Rights Management|Konto, które chronionego dokumentu lub wiadomości e-mail.|
 |Właściciela zarządzania prawami|Konto, które zachowuje pełną kontrolę nad chronionego dokumentu lub wiadomości e-mail przez są automatycznie udzielono prawa użytkowania Pełna kontrola zarządzania prawami i jest wykluczony z datą wygaśnięcia lub ustawienia trybu offline.|
 |usługi Rights Management|Ogólny termin, który dotyczy zarówno to wersja chmurowa usług Rights Management (Azure Rights Management), jak i lokalną wersją usługi Rights Management (AD RMS).|
-|aplikacja do udostępniania usługi Rights Management|Zastąpiona przez klienta usługi Azure Information Protection, opcjonalną aplikację dla systemu Windows i popularnych urządzeń przenośnych, która obsługuje bezpieczne udostępnianie plików lokalnie i za pośrednictwem poczty e-mail.|
+|aplikacja do udostępniania usługi Rights Management|Obecnie zastąpiona przez klienta usługi Azure Information Protection, opcjonalna aplikacja dla Windows i urządzeń przenośnych, które obsługuje bezpieczne udostępnianie plików lokalnie i za pośrednictwem poczty e-mail.|
 |RMS|Zobacz *usługi Rights Management*.|
 |łącznik RMS|Zobacz *łącznik usługi Rights Management*.|
 |usług RMS dla użytkowników indywidualnych|Bezpłatna subskrypcja dla użytkownika do użycia usługi Rights Management, podczas ich organizacja nie ma subskrypcji usługi Office 365 lub Azure Active Directory.|
@@ -80,6 +81,6 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |Skaner|Zobacz *skanera usługi Azure Information Protection*.|
 |administratorzy|Grupa wysoce zaufanych administratorów mogących odszyfrować pliki, które organizacja objęła ochroną z użyciem usługi zarządzania prawami, i uzyskać do nich dostęp. Zazwyczaj ten poziom dostępu jest wymagany w przypadku prawnych zespołów zbierania elektronicznych materiałów dowodowych oraz w przypadku zespołów przeprowadzających inspekcje.|
 |klucz dzierżawy|Znany również jako klucz certyfikatu licencjodawcy serwera (SLC).<br /><br />Klucz, który jest unikatowy dla organizacji, a ostatecznie zabezpiecza wszystkie funkcje kryptograficzne usługi Rights Management łańcucha do tego klucza dzierżawy.|
-|wyłączyć ochronę|Wyłączyć dostępne w ramach usługi zarządzania prawami i mające zastosowanie do plików lub wiadomości e-mail środki kontroli wykorzystujące szyfrowanie, tożsamość i zasady kontroli dostępu w celu zabezpieczania danych.|
+|wyłączyć ochronę|Usuwanie kontrolek ochrony plików lub wiadomości e-mail, które jest używane szyfrowanie, tożsamość, prawa użytkowania, a dostęp do zasad kontroli, aby ułatwić zabezpieczanie tych danych.|
 |użyć licencji|Powiązany z dokumentem certyfikat przyznawany użytkownikowi, który otworzy plik lub wiadomość e-mail objęty ochroną z użyciem usługi zarządzania prawami. Certyfikat zawiera prawa użytkownika dla pliku lub wiadomości e-mail oraz klucz szyfrowania, który został użyty do zaszyfrowania zawartości, a także dodatkowe ograniczenia dostępu zdefiniowane w zasadach dokumentu.|
 
