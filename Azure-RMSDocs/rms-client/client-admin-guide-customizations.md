@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 82b2e3b9caa0015c094974c7e09c2b11248e86ec
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: 2c092d49a3b6174266937ee6e9ee43c65f208199
+ms.sourcegitcommit: 0798501d78865e2fc3b1a4cd7f705fbab73d5354
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575577"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623683"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -104,9 +104,9 @@ Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-Upewnij się, że klient ma prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli to konieczne, można wyeksportować zasad globalnych lub zasad o określonym zakresie w witrynie Azure portal i skopiuj wyeksportowany plik na komputerze klienckim. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami. Eksportowanie zasad nie obsługuje jednak scenariusz, w którym użytkownik należy do więcej niż jedna zasada o określonym zakresie.
+Upewnij się, że klient ma prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli to konieczne, można wyeksportować zasad globalnych lub zasad o określonym zakresie w witrynie Azure portal i skopiuj wyeksportowany plik na komputerze klienckim. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami. Eksportowanie zasad nie obsługuje jednak scenariusz, w którym użytkownik należy do więcej niż jedna zasada o określonym zakresie. Należy także zauważyć, jeśli użytkownicy wybiorą **Resetowanie ustawień** opcję [Pomoc i opinie](client-admin-guide.md#help-and-feedback-section), ta akcja usuwa plik zasad i renderuje klienta przestanie działać, dopóki ręcznie zastąpić plik zasad lub Klient łączy się z usługą, aby pobrać zasady.
 
-Podczas eksportowania zasady, ta akcja spowoduje pobranie plik z rozszerzeniem zip z wieloma wersjami zasady, które odnosi się do różnych wersji klienta usługi Azure Information Protection:
+Podczas eksportowania zasady w witrynie Azure portal, plik z rozszerzeniem zip jest pobierana, który zawiera wiele wersji zasad. Te wersje zasad odpowiadają różne wersje klienta usługi Azure Information Protection:
 
 1. Rozpakuj plik i skorzystaj z poniższej tabeli, aby zidentyfikować plik zasad, który należy. 
     
