@@ -4,7 +4,7 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2c092d49a3b6174266937ee6e9ee43c65f208199
-ms.sourcegitcommit: 0798501d78865e2fc3b1a4cd7f705fbab73d5354
+ms.openlocfilehash: 2008a40e03e502c4dad85826d957434b218b151e
+ms.sourcegitcommit: 1eddd81dc659ffa38872b81a1bf4b5f69f71c30e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623683"
+ms.locfileid: "39631575"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 2. Z **klasyfikacje** > **etykiety** opcji menu: Wybierz **zasady**.
 
-3. Na **usługi Azure Information Protection — zasady** bloku, wybierz menu kontekstowe (**...** ) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
+3. Na **usługi Azure Information Protection — zasady** bloku, wybierz menu kontekstowe (**...**) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
     
     Możesz skonfigurować ustawienia zaawansowane dla zasad globalnych i zasad z określonym zakresem.
 
@@ -209,15 +209,11 @@ Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec 
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Po skonfigurowaniu tego ustawienia, zmienia [domyślne zachowanie](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) z jak klient usługi Azure Information Protection stosuje automatycznej i zalecanej etykiety w następujący sposób:
+Po skonfigurowaniu tego ustawienia, zmienia [domyślne zachowanie](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) z jak klient usługi Azure Information Protection stosuje automatycznej i zalecanej etykiety do dokumentów: 
 
-- Automatyczna klasyfikacja ma zastosowanie do programu Word, Excel, PowerPoint i Outlook. W przypadku dokumentów Automatyczna klasyfikacja działa w sposób ciągły w tle. Dla programu Outlook Automatyczna klasyfikacja jest uruchamiany, gdy są wysyłane wiadomości e-mail. 
-    
-    Nie można używać automatycznej klasyfikacji dokumentów, które zostały wcześniej oznaczone ręcznie lub wcześniej automatycznie z etykietą wyższej klasyfikacji. Wyjątkiem od to zachowanie jest użycie skanera usługi Azure Information Protection z parametrem OverrideLabel, ustaw wartość włączone.
+- Dla programu Word, Excel i PowerPoint Automatyczna klasyfikacja działa w sposób ciągły w tle.  
 
-- Zalecana klasyfikacja ma zastosowanie do programu Word, Excel i PowerPoint. Te dokumenty zaleca się Klasyfikacja działa w stale w tle. Nie można użyć zalecana klasyfikacja dla programu Outlook.
-    
-    Można użyć zalecana klasyfikacja dokumentów, które zostały wcześniej oznaczone, z lub bez wyższej klasyfikacji. 
+To zachowanie nie zmienia się dla programu Outlook.
 
 Gdy klient usługi Azure Information Protection okresowo sprawdza, czy dokumenty dla reguł warunku, które można określić, to zachowanie umożliwia automatycznej i zalecanej klasyfikacji i ochrony dokumentów, które są przechowywane w usłudze SharePoint Online. Duże pliki również zapisać więcej szybkie ponieważ reguły warunek został już uruchomiony. 
 
@@ -383,7 +379,7 @@ Tylko jeden właściwości niestandardowej, należy użyć tych kluczy i odpowia
 
 Na przykład masz kolumnę programu SharePoint o nazwie **klasyfikacji** zawierającej możliwe wartości **publicznych**, **ogólne**, i **wysoce poufne wszystkie Pracownicy**. Dokumenty są przechowywane w programie SharePoint i mieć **publicznych**, **ogólne**, lub **wysoce poufne wszyscy pracownicy** jako wartości ustaw dla właściwości klasyfikacji.
 
-Aby dodać etykietę dokumentu pakietu Office przy użyciu jednego z następujących wartości klasyfikacji, należy ustawić **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do  **OneWay**. 
+Aby dodać etykietę dokumentu pakietu Office przy użyciu jednego z następujących wartości klasyfikacji, należy ustawić **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do **OneWay**. 
 
 Teraz, gdy użytkownik otwiera i zapisuje jednej z tych dokumentów pakietu Office, jego jest oznaczona etykietą **publicznych**, **ogólne**, lub **wysoce poufne \ wszyscy pracownicy** w przypadku etykiet z nimi nazwy w zasadach usługi Azure Information Protection. Jeśli nie masz etykiety o tych nazwach, dokument pozostaje bez etykiety.
 

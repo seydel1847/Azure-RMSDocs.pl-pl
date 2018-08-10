@@ -4,7 +4,7 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 077a3ac4743a607de4e48d5fd858db06e86c565d
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: 1c41e1e6622dc76a2a2afe68a48d0761573ccf06
+ms.sourcegitcommit: 6eab0086306a4e12cbcf7d8578cb5fd42abe1e66
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575611"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020604"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -92,7 +92,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3557.524 klienta usługi RMS.
     
     - Wartości *harmonogram* parametru nie są już **OneTime**, **ciągłe**, i **nigdy**, ale teraz **ręczne** i **zawsze**.
         
-    - *Typu* parametr zostanie usunięty, więc również są usuwane z danych wyjściowych, po uruchomieniu [Get AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration).
+    - *Typu* parametr zostanie usunięty, więc również są usuwane z danych wyjściowych, po uruchomieniu [Get AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration). Domyślnie tylko nowe lub zmodyfikowane pliki są kontrolowane po pierwsze skanowanie cyklu. Jeśli ustawione wcześniej *typu* parametr **pełną** ponownego skanowania wszystkich plików, uruchom teraz [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) z *resetowania* parametru. Skaner muszą również zostać skonfigurowane ręcznie harmonogramu, który wymaga *harmonogram* parametr należy ustawić **ręczne** z [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
     
 - Skaner domyślnej listy wykluczeń zawiera teraz .rtf — pliki. [Więcej informacji](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
 
@@ -247,7 +247,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3219.0619 klienta usługi RMS.
 
 - W przypadku programu PowerShell obsługują aby oznaczyć pliki nieinterakcyjny przy użyciu nowych poleceń cmdlet programu PowerShell [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) i [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication). Aby uzyskać więcej informacji jak używać tych poleceń cmdlet, zobacz [sekcji PowerShell](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) podręcznika administratora.
 
-- Dla poleceń cmdlet programu PowerShell [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) i [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails** . Parametry te pozwalają określić adres e-mail właściciela niestandardowej właściwości i pozostawienie niezmienionej dokumentów, które etykiety daty.
+- Dla poleceń cmdlet programu PowerShell [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) i [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails**. Parametry te pozwalają określić adres e-mail właściciela niestandardowej właściwości i pozostawienie niezmienionej dokumentów, które etykiety daty.
 
 **Poprawki**:
 
