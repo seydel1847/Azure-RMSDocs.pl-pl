@@ -4,7 +4,7 @@ description: Jeśli usługa Active Directory Rights Management Services (AD RMS)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5bf7bd4a4d82c40346694d243403ea2684174d9
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 395dbd474d241eb277a9d664f7e2143f36f79de3
+ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489301"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40255640"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
@@ -55,7 +55,7 @@ Dalsze szczegółowe informacje i inne różnice przedstawiono w poniższej tabe
 |Automatycznie włącza bezpiecznej współpracy nad dokumentami z dowolnej organizacji, która również używa usługi Azure AD do uwierzytelniania. Oznacza to, że organizacje będą mogli chronić dokumenty, które współużytkują one wewnętrznie lub z innymi organizacjami.|Bezpiecznej współpracy nad dokumentami spoza organizacji wymaga uwierzytelniania zaufania jawnie zdefiniowanych w bezpośredniej relacji point-to-point między dwiema organizacjami. Należy skonfigurować zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które tworzysz przy użyciu usługi Active Directory Federation Services (AD FS).|
 |Wysłać chronioną wiadomość e-mail (opcjonalnie, za pomocą załączników dokumentu pakietu Office, które są automatycznie chronione) do użytkowników, gdy istnieje relacja zaufania uwierzytelniania. W tym scenariuszu jest możliwe przy użyciu Federacji dostawców sieci społecznościowych lub jednorazowy kod dostępu i przeglądarki sieci web do wyświetlenia.|Nie obsługuje wysyłanie chronionych wiadomości e-mail, gdy istnieje relacja zaufania uwierzytelniania.|
 |Udostępnia dwa domyślne szablony zasad praw, które ograniczają dostęp do zawartości do organizacji użytkownika. Jeden szablon umożliwia przeglądanie chronionej zawartości w trybie tylko do odczytu, a drugi oferuje uprawnienia do zapisu lub modyfikowania chronionej zawartości.<br /><br />Można również utworzyć własne szablony niestandardowe, które obejmują szablony dla działów, które są widoczne tylko dla podzbioru użytkowników. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|Brak szablonów domyślną; należy utworzyć, a następnie dystrybucję własnych szablonów. Aby uzyskać więcej informacji, zobacz [Zagadnienia dotyczące szablonów zasad usług AD RMS](http://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|
-|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta usługi Azure Information Protection](./rms-client/aip-client.md) lub aplikacji RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: nieobsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2007.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany<br /><br />– Microsoft Office dla komputerów Mac 2011: obsługiwany|
+|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta usługi Azure Information Protection](./rms-client/aip-client.md) lub aplikacji RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany|
 |Obsługuje [klienta usługi Azure Information Protection](./rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i Windows Phone, nadal są obsługiwane przez aplikację RMS sharing.<br /><br />Ponadto klient usługi Azure Information Protection obsługuje następujące funkcje i elementy:<br /><br />– Udostępnianie informacji osobom w innej organizacji.<br /><br />– Witryna śledzenia dokumentów dla użytkowników z możliwością odwoływania dokumentu.|Obsługuje [klienta usługi Azure Information Protection](./rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing. Udostępnianie nie dotyczy jednak użytkowników w innej organizacji ani witryny śledzenia dokumentów z możliwością odwoływania dokumentu.|
 |Korzystając z klienta usługi Azure Information Protection, można klasyfikować i chronić większość [typów plików](./rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](./requirements-applications.md).|Korzystając z klienta usługi Azure Information Protection, można klasyfikować większość [typów plików](./rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](./requirements-applications.md).|
 |Minimalna obsługiwana wersja klienta systemu Windows to Windows 7 z dodatkiem SP1.|Minimalna obsługiwana wersja klienta systemu Windows to Windows 7 z dodatkiem SP1.|

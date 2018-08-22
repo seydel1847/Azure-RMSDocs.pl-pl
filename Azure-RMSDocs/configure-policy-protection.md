@@ -4,18 +4,18 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b41add3430fbf00a372a5ec54d1ecd8c27fa7fa6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: e5460c0ce689b90655c766c871fdd98e81114d0e
+ms.sourcegitcommit: 970b476d13c45f1070483ba8f7c910ccfe39c419
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491704"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40242019"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -90,9 +90,9 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     - **Ustaw uprawnienia zdefiniowane przez użytkownika (wersja zapoznawcza)**: Aby umożliwić użytkownikom określanie, kto powinien mieć przyznane uprawnienia i uprawnienia te są. Można dostosować tę opcję i wybierz opcję tylko w programie Outlook lub Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykieta jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
         
-        Jeśli wybierzesz opcję programu Outlook: Etykieta jest wyświetlana w programie Outlook i wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest taki sam jak opcję nie przesyłaj dalej.
+        Jeśli wybierzesz opcję programu Outlook: Etykieta jest wyświetlana w programie Outlook i wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest taki sam jak [nie przesyłaj dalej](configure-usage-rights.md#do-not-forward-option-for-emails) opcji.
         
-        Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: gdy ta opcja jest ustawiona, etykieta jest wyświetlana w tych aplikacjach. Wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe użytkownikom na wybór uprawnienia niestandardowe. W tym oknie dialogowym Użytkownicy muszą określić uprawnienia, użytkowników lub grup i daty wygaśnięcia. Upewnij się, że użytkownicy mają wskazówki i instrukcje jak przekazać te wartości.
+        Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: gdy ta opcja jest ustawiona, etykieta jest wyświetlana w tych aplikacjach. Wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe użytkownikom na wybór uprawnienia niestandardowe. W tym oknie użytkowników wybierz jedną z [wstępnie zdefiniowanych poziomów uprawnień](configure-usage-rights.md#rights-included-in-permissions-levels), przejdź do lub określić użytkowników lub grupy, a następnie opcjonalnie ustawić datę wygaśnięcia. Upewnij się, że użytkownicy mają wskazówki i instrukcje jak przekazać te wartości.
     
     - **Wybierz wstępnie zdefiniowany szablon**: aby użyć jednego z szablonów domyślnych lub samodzielnie skonfigurowanego szablonu niestandardowego. Należy zauważyć, że ta opcja nie jest wyświetlany dla nowej etykiety, lub Jeśli edytujesz etykiety, który korzystał wcześniej z **Ustaw uprawnienia** opcji.
     
@@ -110,10 +110,11 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>Więcej informacji na temat **Dodaj wszystkich uwierzytelnionych użytkowników** 
         To ustawienie nie ogranicza kto ma dostęp do zawartości, czy etykieta chroni szyfrowanie treści i opcji, można ograniczyć, jak zawartości mogą być używane (uprawnienia), zapewniając i dostępne (wygaśnięcia i dostęp w trybie offline). Jednak aplikacja otwierania chronionej zawartości musi umożliwiać do obsługi uwierzytelniania. Z tego powodu federacyjnego dostawców sieci społecznościowych, takich jak Google i jednorazowej kod dostępu uwierzytelniania należy używać tylko dla wiadomości e-mail i tylko wtedy, gdy używasz usługi Exchange Online i nowe funkcje z szyfrowanie wiadomości usługi Office 365. Konta Microsoft można przy użyciu podglądu usługi Azure Information Protection i pakietu Office 2016 kliknij do uruchomienia. 
-        
-        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie: — Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.
-            — Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.
-            — Masz wymaganie, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.     
+          
+        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie:  
+                — Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.  
+                — Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.  
+                — Masz wymaganie, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.  
         
     - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail, adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Możesz też użyć tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając dowolną nazwę domeny z tej organizacji. Dla dostawców sieci społecznościowych, można także użyć tej opcji, wprowadzając odpowiednią nazwę domeny, takich jak **gmail.com**, **hotmail.com**, lub **outlook.com**.
         
@@ -156,9 +157,9 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     Opcja uprawnienia zdefiniowane przez użytkownika pozwala użytkownikowi na określenie, którzy powinny mieć przyznane uprawnienia i uprawnienia te są. Można dostosować tę opcję i wybierz opcję tylko w programie Outlook (ustawienie domyślne) lub programu Word, Excel, PowerPoint i Eksploratora plików. Ta opcja nie jest obsługiwane i nie działa, jeśli etykieta jest skonfigurowany do [automatycznej klasyfikacji](configure-policy-classification.md).
     
-    Jeśli wybierzesz opcję programu Outlook: Etykieta jest wyświetlana w programie Outlook i wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest taki sam jak opcję nie przesyłaj dalej.
+    Jeśli wybierzesz opcję programu Outlook: Etykieta jest wyświetlana w programie Outlook i wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest taki sam jak [nie przesyłaj dalej](configure-usage-rights.md#do-not-forward-option-for-emails) opcji.
     
-    Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: Etykieta jest wyświetlana w tych aplikacjach. Wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe użytkownikom na wybór uprawnienia niestandardowe. W tym oknie dialogowym Użytkownicy muszą określić uprawnienia, użytkowników lub grup i daty wygaśnięcia. Upewnij się, że użytkownicy mają wskazówki i instrukcje jak przekazać te wartości.
+    Jeśli wybierzesz opcję dla programu Word, Excel, PowerPoint i Eksploratora plików: gdy ta opcja jest ustawiona, etykieta jest wyświetlana w tych aplikacjach. Wynikowe zachowania, gdy użytkownicy mają zastosowanie etykiety jest wyświetlane okno dialogowe użytkownikom na wybór uprawnienia niestandardowe. W tym oknie użytkowników wybierz jedną z [wstępnie zdefiniowanych poziomów uprawnień](configure-usage-rights.md#rights-included-in-permissions-levels), przejdź do lub określić użytkowników lub grupy, a następnie opcjonalnie ustawić datę wygaśnięcia. Upewnij się, że użytkownicy mają wskazówki i instrukcje jak przekazać te wartości.
 
 10. Kliknij przycisk **OK** zamknąć **ochrony** bloku i zobacz swój wybór w opcji **zdefiniowane przez użytkownika** lub obraz wyświetlonego wybranego szablonu dla **ochrony** opcji **etykiety** bloku.
 

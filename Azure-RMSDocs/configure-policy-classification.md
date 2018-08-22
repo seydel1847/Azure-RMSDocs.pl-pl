@@ -4,18 +4,18 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1df91b83935054e6437f0f7d6922c483ca02cf09
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 98a30b777704c5383ce7814e4afcec4bd2877e87
+ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491403"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40255727"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -83,7 +83,7 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
     
     - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i tego, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
         
-        Wyrażenia regularne używać wzorców wyrażeń regularnych usługi Office 365. Aby uzyskać więcej informacji, zobacz [Definiowanie wyrażenia regularnego na podstawie dopasowań](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2) w dokumentacji pakietu Office. Ponadto, użytkownik może być bardzo przydatne do odwołania [składni wyrażeń regularnych w Perl](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) z Boost.
+        Wyrażenia regularne używać wzorców wyrażeń regularnych usługi Office 365. Aby pomagają w określeniu wyrażeń regularnych warunki niestandardowe, zobacz następujące określonej wersji [składni wyrażeń regularnych w Perl](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) z Boost.
         
 5. Zdecyduj, czy musisz zmienić **minimalna liczba wystąpień** i **liczba zdarzeń o tylko unikatowe wartości**, a następnie wybierz pozycję **Zapisz**. 
     

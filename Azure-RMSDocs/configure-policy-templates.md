@@ -4,7 +4,7 @@ description: Konfigurowanie i zarządzanie nimi szablony usługi rights manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,30 +12,29 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9f3dc55f8443b4280cd5e108f1b5c5e3093748d4
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 80238cbacbe1fb6e171738e42e3b915d2267ff38
+ms.sourcegitcommit: 5802bd9df60cc664f896e78c0f402f63ba59ffe8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491277"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40256187"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
->[!NOTE]
->Ta funkcja zastępuje, konfigurowanie szablonów niestandardowych w klasycznej witrynie Azure portal. Klasyczny portal teraz został wycofany, więc należy użyć witryny Azure portal. Szybkie mapowania instrukcje, zobacz [zadania, które były wykonywane przy użyciu klasycznego portalu Azure](migrate-portal.md).
-
-
-Szablony zarządzania prawami są teraz zintegrowane z zasadami usługi Azure Information Protection. 
+Szablony ochrony, znany także jako szablony usługi Rights Management to zbiór ustawień ochrony zdefiniowane przez administratora dla usługi Azure Information Protection. Te ustawienia obejmują wybranego [prawa użytkowania](configure-usage-rights.md) dla autoryzowanych użytkowników i kontroli dostępu dla wygaśnięcia i dostęp w trybie offline. Te szablony są zintegrowane z zasadami usługi Azure Information Protection: 
 
 **Subskrypcja, która obejmuje usługę Azure Information Protection na potrzeby klasyfikacji, etykietowania i ochrony (Azure Information Protection P1 lub P2):**
 
-- Szablony zarządzania prawami, które nie są zintegrowane z etykiet dla Twojej dzierżawy są wyświetlane w **szablonami ochrony** sekcji znajdujący się za etykietami na **usługi Azure Information Protection — etykiety** blok. Aby przejść do tego bloku, wybierz pozycję **klasyfikacje** > **etykiety** opcji menu. Szablony te można konwertować na etykiety lub możesz połączyć się z nich, podczas konfigurowania ochrony dla etykiety. 
+- Szablony, które nie są zintegrowane z etykiet dla Twojej dzierżawy są wyświetlane w **szablonami ochrony** sekcji znajdujący się za etykietami na **usługi Azure Information Protection — etykiety** bloku. Aby przejść do tego bloku, wybierz pozycję **klasyfikacje** > **etykiety** opcji menu. Szablony te można konwertować na etykiety lub możesz połączyć się z nich, podczas konfigurowania ochrony dla etykiety. 
 
 **Jeśli masz subskrypcję obejmującą wyłącznie ochronę (subskrypcja usługi Office 365 obejmującą usługę Azure Rights Management):**
 
-- Szablony zarządzania prawami dla Twojej dzierżawy są wyświetlane w **szablonami ochrony** sekcji na **usługi Azure Information Protection — etykiety** bloku. Aby przejść do tego bloku, wybierz pozycję **klasyfikacje** > **etykiety** opcji menu. Nie będą wyświetlane etykiety. Zobaczysz również ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale nie mają wpływu na szablonach lub nie można skonfigurować te ustawienia. 
+- Szablony dla Twojej dzierżawy są wyświetlane w **szablonami ochrony** sekcji na **usługi Azure Information Protection — etykiety** bloku. Aby przejść do tego bloku, wybierz pozycję **klasyfikacje** > **etykiety** opcji menu. Nie będą wyświetlane etykiety. Zobaczysz również ustawienia konfiguracji, które są specyficzne dla klasyfikacji i etykietowania, ale nie mają wpływu na szablonach lub nie można skonfigurować te ustawienia. 
+
+>[!NOTE]
+>W niektórych aplikacjach i usługach, można napotkać [nie przesyłaj dalej](configure-usage-rights.md#do-not-forward-option-for-emails) i [tylko do szyfrowania](configure-usage-rights.md#encrypt-only-option-for-emails) (lub **Szyfruj**) wyświetlane jako szablon. Nie są to szablony, które można edytować lub usunięcia, ale opcje, które pochodzą domyślnie z usługą Exchange.
 
 ## <a name="default-templates"></a>Szablony domyślne
 
@@ -49,6 +48,7 @@ Ponadto szablony są skonfigurowane i umożliwiają dostęp w trybie offline prz
 Te szablony domyślne ułatwiają Ty i inni od razu chronić poufne dane Twojej organizacji. Te szablony mogą być używane, za pomocą etykiety usługi Azure Information Protection lub samodzielnie za pomocą [aplikacji i usług](applications-support.md) , za pomocą szablonów usługi Rights Management.
 
 Można również utworzyć własne szablony niestandardowe. Prawdopodobnie potrzebne będzie tylko kilka szablonów, ale można mieć maksymalnie 500 szablonów niestandardowych zapisanych na platformie Azure.
+
 
 ### <a name="default-template-names"></a>Domyślne nazwy szablonu
 

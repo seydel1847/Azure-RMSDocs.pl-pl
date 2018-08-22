@@ -4,7 +4,7 @@ description: Jak aplikacje pakietu Office dla użytkowników końcowych takich j
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/17/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 9e9d4b1d43ebc6c8f4f0ad124cd28b6ebf0e4e47
+ms.sourcegitcommit: 5802bd9df60cc664f896e78c0f402f63ba59ffe8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489131"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40256248"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -66,7 +66,7 @@ Jeśli chcesz już skonfigurować program Exchange dla usługi IRM:
 
 Korzystając z usługi SharePoint Online lub SharePoint Server, możesz chronić dokumenty przy użyciu funkcji zarządzania prawami praw informacje programu SharePoint. Ta funkcja umożliwia administratorom chronić listy lub biblioteki, tak aby po użytkownik wyewidencjonuje dokument, pobrany plik pozostaje chroniony i tylko autoryzowane osoby można wyświetlać i używać zgodnie z zasadami ochrony informacji, które określisz. Na przykład można przypisać plikowi właściwość tylko do odczytu albo uniemożliwić kopiowanie tekstu, zapisywanie lokalnej kopii pliku czy drukowanie jego zawartości.
 
-Dokumenty programu Word, PowerPoint, Excel i plików PDF obsługuje tę ochronę usługi IRM programu SharePoint. Domyślnie ochrona jest ograniczona do osoby, która pobiera dokument. Możesz zmienić to ustawienie domyślne za pomocą opcji konfiguracji, która rozszerza ochronę dla wszystkich użytkowników, którzy mają dostęp do dokumentu w programie SharePoint lub grupie, która została określona.
+Dokumenty programu Word, PowerPoint, Excel i plików PDF obsługuje tę ochronę usługi IRM programu SharePoint. Domyślnie ochrona jest ograniczona do osoby, która pobiera dokument. To ustawienie domyślne można zmienić za pomocą opcji konfiguracji, o nazwie **Zezwalaj na ochronę grupy**, która rozszerza ochronę na grupie, która została określona. Na przykład można określić grupy, która ma uprawnienia do edycji dokumentów w bibliotece, tak, aby w tej samej grupy użytkowników można edytować dokument poza programem SharePoint, niezależnie od tego, z którym użytkownik pobrał dokument. Lub można określić grupę, która nie ma udzielone uprawnienia w programie SharePoint, ale użytkownicy w grupie należy uzyskać dostęp do dokumentów, poza programem SharePoint. 
 
 W przypadku list programu SharePoint i bibliotek ochrona ta jest zawsze konfigurowana przez administratora, nigdy przez użytkownika końcowego. Ustaw uprawnienia na poziomie witryny, a te uprawnienia domyślnie są dziedziczone przez wszystkie listy lub biblioteki w tej witrynie. W przypadku korzystania z usługi SharePoint Online użytkownicy mogą również skonfigurować ochronę usługi IRM w bibliotece usługi OneDrive dla Firm.
 

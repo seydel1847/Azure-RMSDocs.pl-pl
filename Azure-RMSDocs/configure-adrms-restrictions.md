@@ -4,18 +4,18 @@ description: Omówienie ochrony HYOK (AD RMS) przy użyciu usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 07ce6d2bc9a606692ccaffb42cfe6717092c72b6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: c2032748c8def11467e951f216a503ef0008b323
+ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491459"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40255618"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj własne ochrony klucza (HYOK) dla usługi Azure Information Protection
 
@@ -92,7 +92,7 @@ W poniższej tabeli wymieniono obsługiwane scenariusze ochrony zawartości przy
 
 Ponadto za pomocą funkcji HYOK ochrony za pomocą etykiety usługi Azure Information Protection ma następujące ograniczenia:
 
-- Brak obsługi pakietu Office 2010 lub Office 2007.
+- Nie obsługuje pakietu Office w wersjach starszych niż pakiet Office 2013.
 
 - Usługi Office 365 i innych usług online nie będzie można odszyfrować chroniony HYOK dokumentów i wiadomości e-mail, aby sprawdzić zawartość i podejmować działania na nich. To ograniczenie rozszerza HYOK chronionych dokumentów i wiadomości e-mail chronione za pomocą łącznika usługi Rights Management. 
     

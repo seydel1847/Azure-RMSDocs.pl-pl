@@ -4,7 +4,7 @@ description: Instrukcje pozwalające usunąć etykiety klasyfikacji i ochrony z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: 60748ca0cd84a887781e4842d784dd3c496fa7d5
+ms.sourcegitcommit: 970b476d13c45f1070483ba8f7c910ccfe39c419
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575781"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40255695"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub chronionych przez usługę Rights Management
 
@@ -28,7 +28,7 @@ Po [zainstalowaniu klienta usługi Azure Information Protection na komputerze](i
 Jeśli etykieta, która ma zostać usunięta, jest skonfigurowana pod kątem zastosowania ochrony, wykonanie tej czynności spowoduje także wyłączenie ochrony pliku. Może zostać wyświetlony monit o podanie powodu usunięcia etykiety.
 
 > [!IMPORTANT]
-> Aby móc usunąć ochronę, użytkownik musi być właścicielem pliku lub mieć przyznane uprawnienia do usuwania ochrony (wyodrębnione uprawnienia lub pełna kontrola w ramach usługi Rights Management).
+> Musisz być właścicielem pliku, aby usunąć ochronę, lub mieć przyznane uprawnienia do usuwania ochrony (Rights Management na to zgody **wyeksportować** lub **Pełna kontrola**).
 
 Aby wybrać inną etykietę lub inny zbiór ustawień ochrony, nie musisz usuwać etykiety ani ochrony. Zamiast tego wybierz nową etykietę i w razie potrzeby można zdefiniować uprawnienia niestandardowe, jeśli administrator zezwala na tę konfigurację. 
 
