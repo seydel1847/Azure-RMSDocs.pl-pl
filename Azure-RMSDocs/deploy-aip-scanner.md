@@ -4,7 +4,7 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 1545c7bd931ab6aa4a76ddfd256a916d31d262bc
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: a56b8e32b6bdb4c0e00652d4c9390f83fa4fe6ac
+ms.sourcegitcommit: d0d7732cd68d75c4c0f9700422b82ff71ebfa274
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491627"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42464295"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -246,9 +246,14 @@ Następnie skaner korzysta Windows iFilter w celu zeskanowania następujących t
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF|.pdf|
+|PDF |.pdf|
 |Tekst|.txt; .xml; .csv|
 
+Domyślnie tylko typów plików pakietu Office są chronione przy użyciu skanera, dzięki czemu nie są chronione pliki PDF i tekst, chyba że użytkownik [edytować rejestr](develop/file-api-configuration.md) Aby określić typy plików:
+
+- Jeśli nie dodasz typ pliku PDF w rejestrze: pliki, które mają rozszerzenie nazwy pliku, to zostaną oznaczone etykietą, ale jeśli etykieta została skonfigurowana do ochrony, ochronie nie została zastosowana.
+
+- Jeśli nie dodasz typy plików txt, XML lub CSV w rejestrze: pliki, które mają następujące rozszerzenia nazw plików będzie nie być oznaczony etykietą, ponieważ nie obsługują następujące typy plików tylko do klasyfikacji.
 
 Na koniec dla pozostałych typów plików, skaner ma zastosowanie etykiety domyślnej w zasadach usługi Azure Information Protection lub etykiety domyślnej, konfigurowanego do skanera.
 
@@ -270,7 +275,11 @@ Na koniec dla pozostałych typów plików, skaner ma zastosowanie etykiety domy�
 
 Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakietu Office będą chronione. Aby zmienić to zachowanie, tak aby dodatkowe typy plików są chronione. Jednak jeśli etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku ulega zmianie na pfile. Ponadto że plik staje się tylko do odczytu, dopóki nie zostanie on otwarty przez autoryzowanego użytkownika i zapisane w formacie natywnym. Pliki tekstowe i obrazy można zmieniać ich rozszerzenia nazwy pliku i stają się tylko do odczytu. 
 
-Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Skanera, należy określić określonych rozszerzeń nazw plików i nie można użyć `*` symboli wieloznacznych.
+Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
+
+- Należy określić określonych rozszerzeń nazw plików i nie można użyć `*` symboli wieloznacznych.
+
+- Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. Innych formatów plików, nie został dodany do rejestru nie będzie chroniony przez skaner.
 
 ## <a name="when-files-are-rescanned"></a>Kiedy pliki są ponownie skanowana
 

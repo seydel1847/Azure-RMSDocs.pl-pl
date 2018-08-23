@@ -4,7 +4,7 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2018
+ms.date: 08/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 98c4f32e0964b736c16d28ada37a1d59ee565d41
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 7215737bc1ad89b6942e6e9dd06ab68b5eeb8648
+ms.sourcegitcommit: 8086d4fb893d3fa211be31b0ae8d16dbaf32d7e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489369"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42623547"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -108,19 +108,15 @@ Aby uzyskać więcej informacji na temat wersji pakietów Office obsługujących
 
 ## <a name="firewalls-and-network-infrastructure"></a>Zapory i infrastruktura sieciowa
 
-Jeśli jest używana zapora lub podobne pośredniczące urządzenie sieciowe skonfigurowane pod kątem zezwalania na określone połączenia, zapoznaj się z informacjami o usłudze **Azure Rights Management (RMS)** w sekcji [Portal usługi Office 365 i udostępnianie](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) następującego artykułu o pakiecie Office: [Adresy URL i zakresy adresów IP usługi Office 365](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
-
-Aby zawsze mieć dostęp do aktualnych wersji tych informacji, subskrybuj źródło danych RSS, postępując zgodnie z instrukcjami podanymi w tym artykule pakietu Office.
+Jeśli zapora lub podobne pośredniczące urządzenie, które są skonfigurowane do zezwalania na określone połączenia sieciowe, wymagań dotyczących łączności sieciowej znajdują się w artykule o pakiecie Office [URL usługi Office 365 i zakresy adresów IP](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2). Zobacz **Microsoft 365 typowe i Office Online** sekcji.
 
 Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z poniższych uwag dotyczących usługi Azure Information Protection:
 
 - Zezwalaj na ruch HTTPS na porcie TCP 443 do witryny **api.informationprotection.azure.com**.
 
-- Zezwalaj na ruch HTTPS na porcie TCP 443 do **mobile.pipe.aria.microsoft.com**.
-
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
-- Nie przerywaj połączenia TLS Usługa klienta (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do usługi Azure Rights Management. Spowoduje to przerwanie przypinania, czy klienci usługi RMS za pomocą zarządzanych przez firmę Microsoft urzędów certyfikacji do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
+- Nie przerywaj połączenia TLS między klientem a usługą (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do **aadrm.com** adresu URL. Spowoduje to przerwanie przypinania, czy klienci usługi RMS za pomocą zarządzanych przez firmę Microsoft urzędów certyfikacji do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
     
     - Porada: Ze względu na sposób Chrome Wyświetla bezpiecznych połączeń w pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostanie zakończony przed osiągnięciem przez nią usługi Azure Rights Management. Wprowadź następujący adres URL w pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
     

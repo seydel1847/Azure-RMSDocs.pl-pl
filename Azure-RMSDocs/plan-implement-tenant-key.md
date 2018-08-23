@@ -4,7 +4,7 @@ description: Informacje ułatwiające zaplanowanie użycia klucza dzierżawy us�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05aee77b60b5fd5a7239b51665e2afb122704afb
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 6dd40e4b0527d9db3de962073dbac118565e63d4
+ms.sourcegitcommit: 5802bd9df60cc664f896e78c0f402f63ba59ffe8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491319"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42464243"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -36,14 +36,13 @@ Co to jest klucz dzierżawy usługi Azure Information Protection?
 |Wymaganie biznesowe|Zalecana topologia klucza dzierżawy|
 |------------------------|-----------------------------------|
 |Wdrażanie usługi Azure Information Protection, szybko i bez specjalnego sprzętu, dodatkowe oprogramowanie lub subskrypcji platformy Azure.<br /><br />Na przykład: testowanie środowisk i gdy Twoja organizacja nie ma wymogów prawnych dotyczących zarządzania kluczami.|Klucz zarządzany przez firmę Microsoft|
-|Kryteria zgodności z przepisami, zapewnienia dodatkowych zabezpieczeń i kontroli nad wszystkie operacje cyklu życia. <br /><br />Na przykład: klucz muszą być chronione przez sprzętowego modułu zabezpieczeń (HSM).|BYOK [[1]](#footnote-1)|
+|Kryteria zgodności z przepisami, zapewnienia dodatkowych zabezpieczeń i kontroli nad wszystkie operacje cyklu życia. <br /><br />Na przykład: klucz muszą być chronione przez sprzętowego modułu zabezpieczeń (HSM).|BYOK|
 
 
 W razie potrzeby można zmienić topologię klucza dzierżawy po wdrożeniu, używając polecenia cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties).
 
 
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>Wybierz topologię klucza dzierżawy: klucz zarządzany przez firmę Microsoft (ustawienie domyślne) lub klucz zarządzany przez użytkownika (BYOK)
-Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji. Domyślnie usługa Azure Information Protection generuje klucz dzierżawy i zarządza większością aspektów cyklu jego życia. Jest to najprostsza opcja, która wiąże się z najmniejszą liczbą obowiązków administracyjnych użytkownika. W większości przypadków użytkownik nie musi nawet wiedzieć, że ma klucz dzierżawy. Wystarczy, że zarejestruje się w usłudze Azure Information Protection — resztą procesu zarządzania kluczem zajmie się firma Microsoft.
 
 Zdecyduj, która topologia klucza dzierżawy jest najodpowiedniejsza dla Twojej organizacji:
 
@@ -93,7 +92,7 @@ Jeśli użytkownik zdecyduje się powierzyć firmie Microsoft Zarządzanie klucz
 
 - O ile nie są migrowane z usług AD RMS, żadne dalsze czynności są wymagane do wygenerowania klucza dzierżawy, i możesz przejść bezpośrednio do [następne kroki](plan-implement-tenant-key.md#next-steps).
 
-- Jeśli obecnie korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, skorzystaj z instrukcji migracji: Migracja z usług AD RMS do usługi Azure Information Protection. 
+- Jeśli obecnie korzystasz z usług AD RMS i chcesz przeprowadzić migrację do usługi Azure Information Protection, skorzystaj z instrukcji migracji: [Migrowanie z usług AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md). 
 
 Jeśli użytkownik zdecyduje się samodzielnie zarządzać kluczem dzierżawy, powinien przeczytać poniższe sekcje, aby uzyskać więcej informacji.
 
@@ -172,7 +171,7 @@ Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](/powershell/module/aa
 
 Jeśli potrzebujesz upewnić się, że klucz adresu URL jest ustawione prawidłowo dla usługi Azure Information Protection: W usłudze Azure Key Vault, uruchom [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) Aby wyświetlić klucz adresu URL.
 
-Ponadto jeśli usługi Azure Rights Management została już aktywowana, uruchom [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) mówić usługi Azure Information Protection do użycia tego klucza jako aktywnego klucza dzierżawy usługi Azure Rights Management. Po wykonaniu tego kroku, nadal użycia klucza zarządzanego przez firmę Microsoft domyślny, który został utworzony automatycznie dla dzierżawy usługi Azure Information Protection.
+Ponadto jeśli usługi Azure Rights Management została już aktywowana, uruchom [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) mówić usługi Azure Information Protection do użycia tego klucza jako aktywnego klucza dzierżawy usługi Azure Rights Management. Po wykonaniu tego kroku, nadal używać klucza domyślne zarządzanych przez firmę Microsoft utworzonego automatycznie dla dzierżawy usługi Azure Information Protection.
 
 
 ## <a name="next-steps"></a>Kolejne kroki
@@ -181,11 +180,11 @@ Teraz, gdy zaplanowaniu dla i jeśli to konieczne, utworzyć i skonfigurować kl
 
 1.  Rozpocznij korzystanie z klucza dzierżawy:
     
-    - Jeśli jeszcze nie zostało to zrobione, należy teraz aktywować usługę Rights Management, aby organizacja mogła zacząć korzystać z usługi Azure Information Protection. Użytkownicy natychmiast otrzymują możliwość korzystania ze swojego klucza dzierżawy (zarządzany przez firmę Microsoft lub zarządzany przez użytkownika w usłudze Azure Key Vault).
+    - Jeśli usługi ochrony nie jest już aktywowana, należy teraz aktywować usługę Rights Management, tak, aby organizacja mogła zacząć korzystać z usługi Azure Information Protection. Użytkownicy natychmiast otrzymują możliwość korzystania ze swojego klucza dzierżawy (zarządzany przez firmę Microsoft lub zarządzany przez użytkownika w usłudze Azure Key Vault).
     
         Aby uzyskać więcej informacji o aktywacji, zobacz [Aktywacja usługi Azure Rights Management](./activate-service.md).
         
-    - Jeśli usługa Rights Management została już aktywowana, a następnie podjęto decyzję o samodzielnym zarządzaniu kluczem dzierżawy, użytkownicy stopniowo przechodzą ze starego klucza dzierżawy na nowy. Okres przejściowy może trwać do kilku tygodni. Dokumenty i pliki, które były chronione przy użyciu starego klucza dzierżawy, pozostają dostępne dla użytkowników upoważnionych do dostępu do nich.
+    - Jeśli usługa Rights Management została już aktywowana, a następnie zdecydujesz się na zarządzanie własnym kluczem dzierżawy, użytkownicy stopniowo przechodzą ze starego klucza dzierżawy do nowego klucza dzierżawy. Ta samodzielnym okres przejściowy może trwać kilka tygodni. Dokumenty i pliki, które były chronione przy użyciu starego klucza dzierżawy, pozostają dostępne dla użytkowników upoważnionych do dostępu do nich.
         
 2. Rozważ włączenie funkcji rejestrowania użycia, która tworzy dzienniki uwzględniające każdą czynność wykonywaną w ramach usługi Azure Rights Management.
     
