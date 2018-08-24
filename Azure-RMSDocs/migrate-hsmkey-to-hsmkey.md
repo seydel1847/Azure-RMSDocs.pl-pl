@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/13/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0c0a20d562259d3f933eb2cf041b8548135d6c40
-ms.sourcegitcommit: bfb5a9d63a9ab4f9c77293f19782313c59cd1168
+ms.openlocfilehash: 778d83926e67a3f15fb182de3d2658d9881c29a5
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40255598"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807086"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 

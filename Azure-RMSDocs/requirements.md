@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/22/2018
 ms.topic: get-started-article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7215737bc1ad89b6942e6e9dd06ab68b5eeb8648
-ms.sourcegitcommit: 8086d4fb893d3fa211be31b0ae8d16dbaf32d7e1
+ms.openlocfilehash: 03b97ca4324b9352db7abec37666e7de262e6f39
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42623547"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808038"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 

@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 98a30b777704c5383ce7814e4afcec4bd2877e87
-ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
+ms.openlocfilehash: 7d9e128dd771f6d4d4882bedcd7f49aeefb41809
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40255727"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804187"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 

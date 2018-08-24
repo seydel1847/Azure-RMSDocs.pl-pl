@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70b615cd7eb880e0b3d6d9533c808dab24499b4b
-ms.sourcegitcommit: 8086d4fb893d3fa211be31b0ae8d16dbaf32d7e1
+ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42623571"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808776"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 

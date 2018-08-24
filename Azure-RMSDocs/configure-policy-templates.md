@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/20/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 80238cbacbe1fb6e171738e42e3b915d2267ff38
-ms.sourcegitcommit: 5802bd9df60cc664f896e78c0f402f63ba59ffe8
+ms.openlocfilehash: 0ce3fd1da5ee17baf8a778447f9e3aa6188d6eee
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40256187"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806713"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 

@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/15/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 74f0b67d22aa35d05e03db15565f7fb3f8c4c20d
-ms.sourcegitcommit: d02155c7f18e9ca005ee2743ed9e11d1cd17c0f9
+ms.openlocfilehash: bb55fa6156eb27adf6ef2aaa2fde37142baf28af
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40255748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805307"
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online do korzystania z usługi Azure Rights Management
 

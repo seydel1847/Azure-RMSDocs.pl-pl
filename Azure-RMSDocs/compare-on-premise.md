@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 395dbd474d241eb277a9d664f7e2143f36f79de3
-ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
+ms.openlocfilehash: bc93e9674c2f37f1e78487e5c5d051d63a5ed630
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40255640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804767"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 

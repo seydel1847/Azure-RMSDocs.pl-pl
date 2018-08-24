@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: c2032748c8def11467e951f216a503ef0008b323
-ms.sourcegitcommit: b03bab553db64c2ed43a4a673689602a490be173
+ms.openlocfilehash: 050ffcf6e500316912ac4b0894594b99b441aab5
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40255618"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804310"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj własne ochrony klucza (HYOK) dla usługi Azure Information Protection
 

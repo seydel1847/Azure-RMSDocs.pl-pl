@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3bdcec63ca08c6d80f8f53c431080e8269ab21d4
-ms.sourcegitcommit: 970b476d13c45f1070483ba8f7c910ccfe39c419
+ms.openlocfilehash: 5a56836d8a77cc65c633cdb6777f1666d24b5777
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40255666"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805594"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Instalowanie klienta usługi Azure Information Protection dla użytkowników
 

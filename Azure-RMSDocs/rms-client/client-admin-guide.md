@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/13/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b894ef90d9e8609826b02a2d120c815f16b24983
-ms.sourcegitcommit: bfb5a9d63a9ab4f9c77293f19782313c59cd1168
+ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40255656"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805446"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 

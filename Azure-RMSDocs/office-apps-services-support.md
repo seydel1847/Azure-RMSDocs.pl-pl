@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9e9d4b1d43ebc6c8f4f0ad124cd28b6ebf0e4e47
-ms.sourcegitcommit: 5802bd9df60cc664f896e78c0f402f63ba59ffe8
+ms.openlocfilehash: c302972e8a048ec851af85cdba9d86bd7fbcc971
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40256248"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803823"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 

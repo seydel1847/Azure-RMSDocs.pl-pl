@@ -7,16 +7,14 @@ manager: mbaldwin
 ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 159e5b58883490e4417ecbdb9815340c9ccaa66d
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: b369a9644698f1ad9fbd1c1e037a5a9be7bc6dc6
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2018
-ms.locfileid: "27927111"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806974"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>Instrukcje: odnawianie klucza symetrycznego w usłudze Azure Information Protection
 
@@ -24,7 +22,7 @@ ms.locfileid: "27927111"
 
 W usłudze Azure Active Directory (Azure AD) podczas tworzenia obiektu jednostki usługi w celu reprezentowania aplikacji proces generuje również 256-bitowy klucz symetryczny służący do weryfikowania aplikacji. Ten klucz symetryczny domyślnie jest ważny przez rok. 
 
-Poniższe kroki pokazują, jak odnowić klucza symetrycznego. 
+Poniższe kroki pokazują sposób odnawiania klucza symetrycznego. 
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -61,7 +59,7 @@ EndDate : 3/22/2018 3:27:53 PM
 Usage : Verify
 ```
 
-Ten klucz symetryczny wygasa 2018-3/22 godzinie 3:27:53. Aby użyć nazwy głównej usługi po tym czasie, należy odnowić klucz symetryczny. Aby to zrobić, użyj [ `New-MsolServicePrincipalCredential` ](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) polecenia. 
+Ten klucz symetryczny wygasa w dniu 22/3/2018 o 3:27:53. Aby użyć jednostki usługi po tym terminie, musisz odnowić klucz symetryczny. Aby to zrobić, należy użyć [ `New-MsolServicePrincipalCredential` ](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) polecenia. 
 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963
@@ -72,7 +70,7 @@ Spowoduje to utworzenie nowego klucza symetrycznego dla określonego identyfikat
 ```
 The following symmetric key was created as one was not supplied ON8YYaMYNmwSfMX625Ei4eC6N1zaeCxbc219W090v28-
 ```
-Za pomocą polecenia [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) można sprawdzić, czy nowy klucz symetryczny jest skojarzony z poprawną jednostką usługi. Powiadomienie, że polecenie wyświetla listę wszystkich kluczy, który obecnie skojarzony z nazwy głównej usługi.
+Za pomocą polecenia [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) można sprawdzić, czy nowy klucz symetryczny jest skojarzony z poprawną jednostką usługi. Zwróć uwagę, że to polecenie wyświetla wszystkie klucze, aktualnie skojarzona z jednostką usługi.
 
 ```
 Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues $true
@@ -102,5 +100,5 @@ Remove-MsolServicePrincipalCredential -KeyId acb9ad1b-36ce-4a7d-956c-40e5ac29dcb
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-* [Instrukcje: Włączanie aplikacji usługi do pracy z opartej na chmurze usługi RMS](how-to-use-file-api-with-aadrm-cloud.md)
+* [Instrukcje: Włączanie aplikacji usługi do pracy z usługą RMS oparte na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
 * [Dokumentacja modułu usługi Azure Active Directory (MSOnline) dla programu PowerShell](https://docs.microsoft.com/powershell/msonline/)

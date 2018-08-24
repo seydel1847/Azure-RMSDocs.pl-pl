@@ -6,16 +6,14 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e5460c0ce689b90655c766c871fdd98e81114d0e
-ms.sourcegitcommit: 970b476d13c45f1070483ba8f7c910ccfe39c419
+ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40242019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807057"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 

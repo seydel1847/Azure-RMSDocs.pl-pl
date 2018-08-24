@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/08/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2008a40e03e502c4dad85826d957434b218b151e
-ms.sourcegitcommit: 1eddd81dc659ffa38872b81a1bf4b5f69f71c30e
+ms.openlocfilehash: bb724f8c35ae5ae34f81cfec01fcbabffcbcff44
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39631575"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805119"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -33,7 +31,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 2. Z **klasyfikacje** > **etykiety** opcji menu: Wybierz **zasady**.
 
-3. Na **usługi Azure Information Protection — zasady** bloku, wybierz menu kontekstowe (**...**) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
+3. Na **usługi Azure Information Protection — zasady** bloku, wybierz menu kontekstowe (**...** ) obok zasady zawierającej ustawienia zaawansowane. Następnie wybierz opcję **Ustawienia zaawansowane**.
     
     Możesz skonfigurować ustawienia zaawansowane dla zasad globalnych i zasad z określonym zakresem.
 
@@ -379,7 +377,7 @@ Tylko jeden właściwości niestandardowej, należy użyć tych kluczy i odpowia
 
 Na przykład masz kolumnę programu SharePoint o nazwie **klasyfikacji** zawierającej możliwe wartości **publicznych**, **ogólne**, i **wysoce poufne wszystkie Pracownicy**. Dokumenty są przechowywane w programie SharePoint i mieć **publicznych**, **ogólne**, lub **wysoce poufne wszyscy pracownicy** jako wartości ustaw dla właściwości klasyfikacji.
 
-Aby dodać etykietę dokumentu pakietu Office przy użyciu jednego z następujących wartości klasyfikacji, należy ustawić **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do **OneWay**. 
+Aby dodać etykietę dokumentu pakietu Office przy użyciu jednego z następujących wartości klasyfikacji, należy ustawić **SyncPropertyName** do **klasyfikacji**, i **SyncPropertyState** do  **OneWay**. 
 
 Teraz, gdy użytkownik otwiera i zapisuje jednej z tych dokumentów pakietu Office, jego jest oznaczona etykietą **publicznych**, **ogólne**, lub **wysoce poufne \ wszyscy pracownicy** w przypadku etykiet z nimi nazwy w zasadach usługi Azure Information Protection. Jeśli nie masz etykiety o tych nazwach, dokument pozostaje bez etykiety.
 
