@@ -4,16 +4,16 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/14/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: bc60f1791cd7c36f179851b1759a46ba3980dd96
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807057"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920303"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -62,9 +62,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
         
         Ochronę wcześniej skonfigurowane ustawienia są przechowywane jako szablon ochrony zarchiwizowane i pojawi się ponownie po zmianie opcji z powrotem do **Chroń**. Nie widzisz tego szablonu w witrynie Azure portal, ale jeśli to konieczne, szablon nadal można zarządzać za pomocą [PowerShell](configure-templates-with-powershell.md). Oznacza to zachowanie, że zawartość pozostaje dostępna, jeśli ma on tej etykiety za pomocą ustawień ochrony zastosowane wcześniej.
     
-    - **Ochrona**: Wybierz tę opcję, aby zastosować ochronę, a następnie przejdź do kroku 5, aby skonfigurować ustawienia ochrony.
-    
-    Uwaga: Można zapisać nową etykietę na tym etapie bez dalszej konfiguracji. Jeśli to zrobisz, etykieta jest skonfigurowany do stosowania ochrony w taki sposób, że tylko osoby, która stosuje etykietę można otworzyć dokumentu lub wiadomości e-mail bez żadnych ograniczeń użycia. W niektórych przypadkach może to być wymagany wynik, tak aby użytkownik może zapisać plik w dowolnej lokalizacji i mieć pewność, że tylko mogą go otworzyć. Jeśli ten wynik jest zgodna z wymaganiami, a inne nie są wymagane do współpracy nad chronioną zawartością, przejdź bezpośrednio do kroku 12, zamiast kroku 5.
+    - **Ochrona**: Wybierz tę opcję, aby zastosować ochronę, a następnie przejdź do kroku 4.
     
     - **Usuń ochronę**: Wybierz tę opcję, aby usunąć ochronę, jeśli dokument lub wiadomość e-mail jest chroniona. Następnie przejdź do kroku 11.
         

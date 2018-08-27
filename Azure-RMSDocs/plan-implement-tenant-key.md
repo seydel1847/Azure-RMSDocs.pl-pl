@@ -4,18 +4,18 @@ description: Informacje ułatwiające zaplanowanie użycia klucza dzierżawy us�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65f1b158e9745efa39d4088dcb615016ddecb206
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 01951cde812a18e6b3869844b9e02c48af144f15
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807273"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920704"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -147,6 +147,8 @@ Dokumentacja usługi Azure Key Vault umożliwia tworzenie magazynu kluczy oraz k
 Upewnij się, że długość klucza to 2048 bitów (zalecane) lub 1024 bity. Inne długości kluczy nie są obsługiwane przez usługę Azure Information Protection.
 
 Aby utworzyć chroniony przez moduł HSM klucz lokalnie i przeniesienie go do magazynu kluczy jako migracja klucza chronionego przez moduł HSM, wykonaj procedury opisane w [jak wygenerować i przenieść klucze chronione przez moduł HSM dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/).
+
+Usługi Azure Information Protection do użycia klucza wszystkie operacje usługi Key Vault musi dozwolone dla klucza. Jest domyślna konfiguracja i operacje są szyfrowanie, odszyfrowywanie, opakowywanie, Odkodowywanie, zaloguj się i upewnij się.
 
 Klucz, który jest przechowywany w usłudze Key Vault ma klucz identyfikatora. Ten klucz ID jest adresem URL zawierającym nazwę magazynu kluczy, kontener kluczy, nazwę klucza i wersję klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Należy skonfigurować usługę Azure Information Protection do użycia tego klucza, określając jego adres URL magazynu Key.
 

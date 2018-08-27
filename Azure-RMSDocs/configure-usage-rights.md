@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9f7c9ef4e6a6eccc1f42fa60a78550f53d4a64b6
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808776"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920673"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -98,7 +98,7 @@ Klienci programu Exchange i usługi, (na przykład klient programu Outlook, apli
 
 Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego nie jest widoczna w witrynie Azure portal podczas wyświetlania i zarządzać szablonami ochrony. Zamiast tego **nie przesyłaj dalej** opcja to zestaw praw użytkowania, dynamicznie stosowany przez użytkowników do ich adresatów wiadomości e-mail.
 
-Gdy **nie przesyłaj dalej** opcja jest stosowana do wiadomości e-mail, wiadomości e-mail są szyfrowane i adresaci muszą zostać uwierzytelnione. Następnie adresatów nie można przekazać lub drukować, kopiować, zapisywanie załączników lub zapisać pod inną nazwą. Na przykład w kliencie programu Outlook przycisk Prześlij dalej nie jest dostępna, **Zapisz jako**, **Zapisz załącznik**, i **drukowania** opcje menu nie są dostępne i nie można dodać lub zmieniać adresatów w **do**, **DW**, lub **UDW** pola.
+Gdy **nie przesyłaj dalej** opcja jest stosowana do wiadomości e-mail, wiadomości e-mail są szyfrowane i adresaci muszą zostać uwierzytelnione. Adresaci nie może następnie przesyła je, wydrukować lub kopiować. Na przykład w kliencie programu Outlook przycisk Prześlij dalej nie jest dostępna, **Zapisz jako** i **drukowania** opcje menu nie są dostępne i nie możesz dodawać ani zmieniać adresatów w **do**, **DW**, lub **UDW** pola.
 
 Niechronione [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) dołączonych do wiadomości e-mail automatycznie dziedziczy te same ograniczenia. Prawa użytkowania stosowana do tych dokumentów są **Edytuj zawartość, Edytuj**; **Zapisz**; **Wyświetl, Otwórz, Odczytaj**; i **Zezwalaj na makra**. Jeśli mają prawa do użytkowania różnych dla załącznika wiadomości lub załącznika nie jest dokumentu pakietu Office obsługującej tę ochronę dziedziczone, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, potrzebnych dla pliku. 
 
@@ -127,9 +127,9 @@ Podobnie, domyślnie niechronionej [dokumentów pakietu Office](https://support.
 
 Alternatywnie, można zmienić to dziedziczenie ochrony dokumentów przy użyciu jednej z następujących parametrów konfiguracji, które można ustawić za pomocą [programu Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) polecenia **Set-IRMConfiguration** . Jeśli nie potrzebujesz zachować oryginalne ochronę dokumentu po użytkownik jest uwierzytelniony, należy użyć tych opcji:
 
-- Aby usunąć ochronę dokumentu, tylko dla adresatów, którzy wyświetlają dokumentu w przeglądarce (zazwyczaj ponieważ została wysłana na adres mediów społecznościowych, np. Gmail): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Te adresatów, Pobierz dokument, usunięcie ochrony.
+- Aby usunąć ochronę dokumentu wszystkich adresatów: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. Kiedy te odbiorcy otwierają wiadomości e-mail, dokument nie jest chroniony.
 
-- Aby zawsze usunąć ochronę dokumentu wszystkich adresatów: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. Kiedy te odbiorcy otwierają wiadomości e-mail, dokument nie jest chroniony.
+- Aby usunąć ochronę dokumentu, tylko dla adresatów, którzy wyświetlają dokumentu w przeglądarce (zazwyczaj ponieważ została wysłana na adres mediów społecznościowych, np. Gmail): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. Te adresatów, Pobierz dokument, usunięcie ochrony.
 
 Aby uzyskać więcej informacji na temat usuwania ochrony tylko dla adresatów, którzy wyświetlają dokumentu w przeglądarce, zobacz w blogu pakietu Office, [kontrolę administracyjną dla załączników jest teraz dostępna w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007). Jeśli potrzebujesz dołączonego dokumentu, aby zachować oryginalną ochronę, zobacz [zabezpieczanie współpracy nad dokumentami przy użyciu usługi Azure Information Protection](secure-collaboration-documents.md).
 
