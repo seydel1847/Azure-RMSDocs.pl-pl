@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/13/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7510350957c867e144704af261053b73fa04651a
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805446"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43118010"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -106,7 +106,9 @@ Gdy klient jest zainstalowany, użyj **Pomoc i opinie** opcję, aby otworzyć **
 
 Link **Powiedz mi więcej** domyślnie prowadzi do witryny internetowej usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../configure-policy-settings.md) w zasadach usługi Azure Information Protection.
 
-Użyj linku **Wyślij opinię**, aby wysłać propozycje lub prośby do zespołu usługi Information Protection. Nie należy używać tej opcji w celu uzyskania pomocy technicznej. W takim przypadku należy zapoznać się z artykułem [Opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources). 
+Użyj **Prześlij nam opinię** link (ogólnodostępnej wersji), aby wysłać propozycje lub prośby do zespołu usługi Information Protection. Nie należy używać tej opcji w celu uzyskania pomocy technicznej. W takim przypadku należy zapoznać się z artykułem [Opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources). 
+
+**Zgłosić problem** link zastępuje **Prześlij nam opinię** łącze w wersji zapoznawczej klienta. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft, ale można skonfigurować ciągu HTTP dla użytkowników, określając [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link). Na przykład określić adres e-mail pomocy technicznej.
 
 Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączenie plików dziennika klienta usługi Azure Information Protection w przypadku wyświetlenia prośby o ich przesłanie zespołowi pomocy technicznej firmy Microsoft. Ta opcja umożliwia także wysyłanie plików dziennika zespołowi pomocy technicznej przez użytkowników końcowych.
 
@@ -206,7 +208,7 @@ W bieżącej wersji ogólnie dostępnej wersji:
 
 Dla wersji zapoznawczej: 
 
-- Uruchom [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner) po zainstalowaniu klienta. Ustawienia konfiguracji dla repozytoriów i skaner zostaną zachowane. Uruchomienie tego polecenia cmdlet są wymagane do aktualizacji schematu bazy danych dla skanera i jeśli to wymagane, konto usługi skanera ma również przyznane usuwanie uprawnień do bazy danych skanera. 
+- Uruchom [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner) po uaktualnieniu klienta usługi Azure Information Protection w wersji ogólnie dostępnej 1.29.5.0, lub wcześniej. Ustawienia konfiguracji dla repozytoriów i skaner zostaną zachowane. Uruchomienie tego polecenia cmdlet są wymagane do aktualizacji schematu bazy danych dla skanera i jeśli to wymagane, konto usługi skanera ma również przyznane usuwanie uprawnień do bazy danych skanera. 
     
     Uruchom to polecenie cmdlet update, nie można uruchomić skanera i zostanie wyświetlony identyfikator zdarzenia przeważnie **1000** w dzienniku zdarzeń Windows za pomocą następujący komunikat o błędzie: **Nieprawidłowa nazwa obiektu "ScannerStatus"**.
 

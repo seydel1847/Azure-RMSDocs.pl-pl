@@ -4,18 +4,18 @@ description: Instrukcje dotyczące wyświetlania i używania dokumentu chronione
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 518fd44053f6a6ee0c4b45024d5be0ac0122ec22
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 54042dfd49c1f12fc50eca127dfc0441686b1513
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808225"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117962"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>Podręcznik użytkownika: Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -23,25 +23,19 @@ ms.locfileid: "42808225"
 
 Chronione dokumenty można często wyświetlić, otwierając je w zwykły sposób. Na przykład można kliknąć dwukrotnie załącznik w wiadomości e-mail lub plik w Eksploratorze plików bądź kliknąć link do pliku.
 
-Jeśli pliki nie otwierają się natychmiast, prawdopodobnie będzie można je otworzyć za pomocą **przeglądarki usługi Azure Information Protection**. Ten program może otworzyć chronione pliki tekstowe, chronione pliki obrazów, chronione pliki PDF i wszystkie pliki z rozszerzeniem **pfile**.
+Jeśli pliki nie natychmiast otworzyć, **podglądu usługi Azure Information Protection** prawdopodobnie można go otworzyć. Ten program może otworzyć chronione pliki tekstowe, chronione pliki obrazów, chronione pliki PDF i wszystkie pliki z rozszerzeniem **pfile**.
 
 Przeglądarka jest instalowana automatycznie podczas instalacji klienta usługi Azure Information Protection, ale można ją także zainstalować oddzielnie. Zarówno klienta, jak i przeglądarkę można zainstalować ze strony usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft. Aby uzyskać więcej informacji dotyczących instalowania klienta, zobacz temat [Pobieranie i instalowanie klienta usługi Azure Information Protection](install-client-app.md).
 
 > [!NOTE]
-> Chociaż po zainstalowaniu klienta dostępnych jest więcej funkcji, wymaga to uprawnień administratora lokalnego, a dodatkowo — w celu zapewnienia pełnej funkcjonalności — wymaga także odpowiednich usług dla organizacji:
-> 
->-Azure Information Protection
-> 
->— Usługi azure Rights Management
-> 
->-Active Directory Rights Management Services 
+> Mimo że zainstalowaniu klienta dostępnych jest więcej funkcji, wymaga uprawnień administratora lokalnego i pełną funkcjonalność wymaga także odpowiednich usług dla Twojej organizacji. Na przykład usługi Azure Information Protection lub Active Directory Rights Management Services.
 > 
 > Zainstaluj przeglądarkę, jeśli otrzymany przez Ciebie chroniony dokument został wysłany przez osobę z innej organizacji lub jeśli nie masz na komputerze uprawnień administratora lokalnego.
 
-Aby można było otworzyć dokument chroniony, aplikacja musi być oznaczona jako „obsługująca usługę RMS”. Aplikacje pakietu Office i przeglądarka usługi Azure Information Protection stanowią przykład aplikacji obsługujących usługę RMS. Aby wyświetlić listę aplikacji według typu i obsługiwanych urządzeń, zobacz tabelę [aplikacji obsługujących usługę RMS](../requirements-applications.md#rms-enlightened-applications).  
+Aby można było otworzyć dokument chroniony, aplikacja musi być oznaczona jako „obsługująca usługę RMS”. Aplikacje pakietu Office i przeglądarka usługi Azure Information Protection należy stanowią przykład aplikacji obsługujących usługę RMS. Aby wyświetlić listę aplikacji według typu i obsługiwanych urządzeń, zobacz tabelę [aplikacji obsługujących usługę RMS](../requirements-applications.md#rms-enlightened-applications).  
 ## <a name="messagerpmsg-as-an-email-attachment"></a>Message.rpmsg jako załącznik wiadomości e-mail
 
-Jeśli załącznikiem do wiadomości e-mail jest plik **message.rpmsg**, ten plik nie jest dokumentem chronionym, lecz chronioną wiadomością e-mail, która jest wyświetlana jako załącznik. Do wyświetlenia takiej chronionej wiadomości e-mail na komputerze PC z systemem Windows nie można użyć przeglądarki usługi Azure Information Protection. Zamiast tego potrzebujesz aplikacji poczty e-mail dla Windows, która obsługuje ochronę usługi Rights Management, takich jak Outlook pakietu Office. Alternatywą jest skorzystanie z programu Outlook w sieci Web.
+Jeśli załącznikiem do wiadomości e-mail jest plik **message.rpmsg**, ten plik nie jest dokumentem chronionym, lecz chronioną wiadomością e-mail, która jest wyświetlana jako załącznik. Przeglądarka usługi Azure Information Protection dla Windows nie można użyć do wyświetlenia takiej chronionej wiadomości e-mail na komputerze z systemem Windows. Zamiast tego potrzebujesz aplikacji poczty e-mail dla Windows, która obsługuje ochronę usługi Rights Management, takich jak Outlook pakietu Office. Alternatywą jest skorzystanie z programu Outlook w sieci Web.
 
 Jednak jeśli masz urządzenie z systemem iOS lub Android, można użyć aplikacji usługi Azure Information Protection do otwierania chronionych wiadomości e-mail. Aplikację dla takich urządzeń przenośnych można pobrać ze strony usługi [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) w witrynie internetowej firmy Microsoft.
 

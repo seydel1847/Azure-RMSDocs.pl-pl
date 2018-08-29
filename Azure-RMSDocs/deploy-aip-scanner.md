@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ddf9ebcdce4cf51e35dfc76b099194873796919f
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806055"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117889"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -275,9 +275,9 @@ Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakie
 
 Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
 
-- Należy określić określonych rozszerzeń nazw plików i nie można użyć `*` symboli wieloznacznych.
+- Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. W przypadku braku modyfikacji rejestru innych typów plików nie będą chronione przez skaner.
 
-- Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. Innych formatów plików, nie został dodany do rejestru nie będzie chroniony przez skaner.
+- Jeśli bieżącą wersję zapoznawczą skaner jest używana, należy określić określonych rozszerzeń nazw plików, a nie można użyć `*` symboli wieloznacznych. Skaner w wersji zapoznawczej obsługuje ten symbol wieloznaczny.
 
 ## <a name="when-files-are-rescanned"></a>Kiedy pliki są ponownie skanowana
 

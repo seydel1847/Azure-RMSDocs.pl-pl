@@ -4,18 +4,18 @@ description: Instrukcje pozwalające usunąć etykiety klasyfikacji i ochrony z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4031a332d900e91f66026dd661d83fb07d47e6d7
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805786"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117859"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub chronionych przez usługę Rights Management
 
@@ -43,6 +43,8 @@ Na pasku usługi Information Protection kliknij ikonę **Usuń etykietę**:
 Jeśli ikona **Usuń etykietę** nie jest od razu dostępna, kliknij najpierw ikonę **Edytuj etykietę**:
 
 ![Pasek usługi Azure Information Protection — Edytuj etykietę](../media/edit-label.png)
+
+Jeśli nadal nie widzisz **Usuń etykietę** ikony, administrator nie zezwala na przy użyciu tej opcji.
 
 > [!NOTE]
 > Jeśli nie widzisz paska usługi Information Protection w aplikacjach pakietu Office:

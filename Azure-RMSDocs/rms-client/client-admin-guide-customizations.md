@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb724f8c35ae5ae34f81cfec01fcbabffcbcff44
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: f27f04fc46ee608fdd1698134da1566f1ade7fab
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805119"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43118027"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -87,6 +87,20 @@ Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
 Ponadto należy sprawdzić, czy te komputery nie mają plik o nazwie **Policy.msip** w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli ten plik już istnieje, należy go usunąć. Ten plik zawiera zasady usługi Azure Information Protection i mogło zostać pobrane przed edytowania rejestru, czy klient usługi Azure Information Protection został zainstalowany z opcją pokaz.
+
+## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>Modyfikowanie adresu e-mail dla raportu, łącze problem
+
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Również wymaga wersji zapoznawczej klienta usługi Azure Information Protection.
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+
+Po wybraniu **zgłosić problem** link z **Pomoc i opinie** dialogowym klient domyślnie Microsoft adres jest wypełniony w wiadomości e-mail. Użyj następującego Zaawansowane ustawienia do modyfikowania tego adresu klienta. Na przykład określić `mailto:helpdesk@contoso.com` na adres e-mail pomocy technicznej. 
+
+Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
+
+- Klucz: **ReportAnIssueLink**
+
+- Wartość:  **\<ciągu HTTP >**
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ukryj opcję menu Klasyfikuj i chroń w Eksploratorze plików systemu Windows
 
@@ -223,25 +237,21 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: **Prawda**
 
-## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>Ochrona plików PDF przy użyciu standardu ISO do szyfrowania plików PDF
+## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>Nie Chroń pliki PDF przy użyciu standardu ISO do szyfrowania plików PDF
 
 Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Również wymaga wersji zapoznawczej klienta usługi Azure Information Protection.
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Domyślnie gdy klient usługi Azure Information Protection chroni plik PDF, wynikowy plik ma rozszerzenie nazwy pliku ppdf. Aby zmienić to zachowanie, tak aby rozszerzenie nazwy pliku pozostaje jako PDF i jest zgodna ze standardem ISO do szyfrowania plików PDF. Aby uzyskać więcej informacji na temat tego standardu, zobacz sekcję **7.6 szyfrowania** z [dokument, który jest tworzony na podstawie obrazu ISO 32000 1](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) i opublikowanych przez Incorporated systemów Adobe.  
+Gdy klient usługi Azure Information Protection w wersji ogólnodostępnej (GA) chroni plik PDF, wynikowy plik ma rozszerzenie nazwy pliku ppdf. Jednak gdy bieżącej wersji zapoznawczej klienta usługi Azure Information Protection chroni plik PDF, wynikowy rozszerzenie nazwy pliku pozostaje jako PDF i jest zgodna ze standardem ISO do szyfrowania plików PDF. Aby uzyskać więcej informacji na temat tego standardu, zobacz sekcję **7.6 szyfrowania** z [dokument, który jest tworzony na podstawie obrazu ISO 32000 1](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) i opublikowanych przez Incorporated systemów Adobe.
 
-Aby skonfigurować to ustawienie Zaawansowane, wprowadź następujący ciąg:
+Aby uzyskać bieżącą wersję zapoznawczą klienta, aby przywrócić zachowanie GA, należy użyć następującego ustawienia zaawansowane, wprowadzając następujące parametry:
 
 - Klucz: **EnablePDFv2Protection**
 
-- Wartość: **Prawda**
-
-W wyniku tej opcji konfiguracji, gdy klient usługi Azure Information Protection chroni plik PDF, ta akcja powoduje utworzenie chroniony dokument PDF, który można otworzyć za pomocą wersji zapoznawczej klienta usługi Azure Information Protection dla Windows i innych plików PDF czytniki zawartości, które obsługują ISO standard do szyfrowania plików PDF. Aplikacja usługi Azure Information Protection dla systemów iOS i Android nie obsługuje obecnie ISO standard do szyfrowania plików PDF.
+- Wartość: **Fałsz**
 
 Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera.
-
-Znany problem w bieżącej wersji zapoznawczej: we właściwościach dokumentu chronione pliki PDF zawiera nieprawidłową wartość dla autora.
 
 ## <a name="support-for-files-protected-by-secure-islands"></a>Obsługa plików chronionych przez Secure Islands
 
