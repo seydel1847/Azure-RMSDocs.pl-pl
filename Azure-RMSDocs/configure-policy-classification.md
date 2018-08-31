@@ -4,16 +4,16 @@ description: W przypadku skonfigurowania warunków dla etykiety możesz automaty
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 7d9e128dd771f6d4d4882bedcd7f49aeefb41809
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 605173136442ed3af5b50e565cae79a94b16fb27
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804187"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297994"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
@@ -96,9 +96,6 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
 Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>Typy informacji poufnych, które wymagają minimalną wersję klienta
-
-> [!NOTE]
-> Następujące typy informacji czułości są teraz zetknie się dzierżaw, ale mogą jeszcze być niewidoczne do wyboru. Jednak w przypadku skonfigurowania skanera usługi Azure Information Protection, aby [zidentyfikować wszystkie warunki niestandardowe i typów informacji poufnych znanych](deploy-aip-scanner.md#using-the-scanner-with-alternative-configurations), wersję zapoznawczą skaner może wykryć te nowe typy informacji, nawet jeśli z jakiegoś powodu zaznacz je w witrynie Azure portal.
 
 Następujące typy informacji poufnych wymaga obecnie wersji zapoznawczej klienta usługi Azure Information Protection:
 

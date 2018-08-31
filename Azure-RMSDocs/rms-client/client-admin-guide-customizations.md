@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f27f04fc46ee608fdd1698134da1566f1ade7fab
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43118027"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298018"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -112,7 +112,9 @@ Utwórz następującą nazwę wartości DWORD (z dowolnymi danymi wartości):
 
 Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection, aby pobrać najnowsze zasady usługi Azure Information Protection. W przypadku komputerów, które znasz, nie będzie można połączyć się z Internetem przez czas można zapobiec próby połączenia z usługą, edytując rejestr klienta. 
 
-Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
+Należy pamiętać, że bez połączenia internetowego klient nie może zastosować ochronę (lub wyłączania ochrony) przy użyciu klucza oparta na chmurze w Twojej organizacji. Zamiast tego klient może mieć maksymalnie przy użyciu etykiet, które są stosowane tylko klasyfikacja lub ochrony, który używa [HYOK](../configure-adrms-restrictions.md).
+
+Aby skonfigurować to ustawienie, Znajdź następującą nazwę wartości rejestru, a następnie ustaw dane wartości **0**:
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
