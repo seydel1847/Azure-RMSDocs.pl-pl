@@ -4,19 +4,19 @@ description: Niektóre często zadawane pytania dotyczące usługi ochrony danyc
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0964d6de3f06d8620de89d9c4c9cca65a64b71c1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 67a3720f38faab750f04e91d7a4848cf88ae4eef
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805957"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242218"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
@@ -73,7 +73,7 @@ Aby uzyskać więcej informacji na temat szablonów w witrynie Azure portal, zob
 
 ## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>Czy dokument został objęty ochroną, a teraz chcą zmienić praw użytkowania lub dodać użytkowników, należy ponownie włączyć ochronę dokumentu?
 
-Jeśli dokument był chroniony za pomocą etykiety lub szablonu, nie ma potrzeby do ponownego włączenia ochrony dokumentu. Zmodyfikuj etykiety lub szablonu, wprowadzanie zmian do praw użytkowania lub dodać nowe grupy (lub użytkowników), a następnie zapisz i opublikuj te zmiany:
+Jeśli dokument był chroniony za pomocą etykiety lub szablonu, nie ma potrzeby do ponownego włączenia ochrony dokumentu. Modyfikuj etykietę lub szablonu przez wprowadzanie zmian do praw użytkowania lub dodać nowe grupy (lub użytkowników), a następnie zapisz te zmiany:
 
 - Gdy użytkownik nie dostęp do dokumentu, przed dokonaniem zmiany, zmiany zaczęły obowiązywać, zaraz po otwarciu dokumentu.
 

@@ -4,16 +4,16 @@ description: Krok 4 samouczka wprowadzającego, dzięki któremu można szybko w
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: caa7ea12daf9bd946e967dc71bcc5ed275e1a965
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 2429a56163c79468bab681a9544c828c6d218392
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803229"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242194"
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>Krok 4. Prezentacja działania funkcji klasyfikacji, etykietowania i ochrony 
 
@@ -21,17 +21,17 @@ ms.locfileid: "42803229"
 
 Po otwarciu dokumentu programu Word z zainstalowanym klientem usługi Azure Information Protection możesz sprawdzić, jak łatwo rozpocząć etykietowanie i chronienie dokumentu za pomocą skonfigurowanej zasady.
 
-Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu, ale zanim do tego przejdziemy, użyjemy naszego niezapisanego dokumentu, aby zobaczyć, jak w łatwy sposób stosować i zmieniać etykiety.
+Klasyfikacja i ochrona zachodzą podczas zapisywania dokumentu. Jednak zanim tego przejdziemy, użyjemy naszego niezapisanego dokumentu, aby zobaczyć, jak łatwo stosować i zmieniać etykiety.
 
 ## <a name="to-manually-change-our-default-label"></a>Aby ręcznie zmienić naszą domyślną etykietę
 
-Na pasku usługi Information Protection wybierz ostatnią etykietę, a wówczas zostaną wyświetlone etykiety podrzędne:
+Na pasku usługi Information Protection wybierz ostatnią etykietę i zobacz, jak wyświetlać etykiet podrzędnych:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybieranie etykiety podrzędnej](./media/info-protect-sub-labelsv2.png)
+![Samouczek usługi Azure Information Protection — szybki start krok 4 — Wybieranie etykiety podrzędnej](./media/info-protect-sub-labelsv2.png)
 
-Wybierz jedną z tych etykiet podrzędnych, a tym samym etykietę dla tego dokumentu, a wówczas inne etykiety nie będą już na pasku wyświetlane. Wartość opcji **Ważność** zostanie zmieniona, tak aby pokazać nazwę etykiety i etykiety podrzędnej, oraz nastąpi analogiczna zmiana koloru etykiety. Przykład:
+Wybierz jedną z tych etykiet podrzędnych, i zobacz, jak inne etykiety nie są już wyświetlane na pasku po tym samym etykietę dla tego dokumentu. **Czułości** zmiany wartości, aby wyświetlić etykiety i etykiety podrzędnej, nazwij analogiczna zmiana koloru etykiety. Przykład:
 
-![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — wybrano etykietę podrzędną](./media/info-protect-sub-label-selectedv2.png)
+![Samouczek usługi Azure Information Protection — szybki start krok 4 — wybrano etykietę podrzędną](./media/info-protect-sub-label-selectedv2.png)
 
 Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok aktualnie wybranej wartości etykiety:
 
@@ -39,7 +39,7 @@ Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok
 
 Spowoduje to ponowne wyświetlenie dostępnych etykiet.
 
-Teraz wybierz pierwszą etykietę **Osobiste**. Z powodu wybrania etykiety o klasyfikacji niższej niż etykieta wybrana wcześniej dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego obniżany jest poziom klasyfikacji:
+Teraz wybierz pierwszą etykietę **Osobiste**. Ponieważ wybrano etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego one obniżenia poziomu klasyfikacji:
 
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — monit o uzasadnienie potwierdzenia obniżenia](./media/info-protect-lower-justification.png)
 
@@ -51,7 +51,7 @@ Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykie
 
 ![Samouczek Szybki start dla usługi Azure Information Protection, krok 4 — ikona usuwania](./media/delete-icon-from-personalv2.png)
 
-Tym razem po wyświetleniu monitu wpisz komentarz o treści „Ten dokument nie wymaga klasyfikacji” i kliknij przycisk **Potwierdź**.  
+Tym razem, gdy zostanie wyświetlony monit, wpisz "ten dokument nie wymaga klasyfikacji" i kliknij przycisk **Potwierdź**.  
 
 Zostanie wyświetlony **czułości** wartością wyświetlaną **Nieustawione**, który jest widoczny dla użytkowników początkowo nie ustawisz etykiety domyślnej.
 
@@ -69,7 +69,7 @@ Zostanie wyświetlony **czułości** wartością wyświetlaną **Nieustawione**,
 
     Dokument jest również chroniony przy użyciu uprawnień, które określone dla tej etykiety. Możesz sprawdzić, czy dokument jest chroniony przez kliknięcie przycisku **pliku** kartę i wyświetlając informację **Chroń dokument**. Zobacz, czy dokument jest chroniony przez **poufne \ Finanse** i opis etykiety. 
     
-    Ze względu na konfigurację ochrony etykiety tylko pracownicy mogą otwierać dokument, a niektóre akcje są ograniczone do nich. Na przykład ponieważ nie ma Drukuj i kopii i wyodrębnić zawartości uprawnień, ich nie można drukować dokument lub kopiowania z niego. Takie ograniczenia pomóc uniknąć utraty danych. Jako właściciel dokumentu można wydrukować go i skopiuj z niego, ale jeśli możesz wysłać wiadomość e-mail dokument innemu użytkownikowi w organizacji, nie mogą one wykonać te akcje.
+    Ze względu na konfigurację ochrony etykiety tylko pracownicy mogą otwierać dokument, a niektóre akcje są ograniczone do nich. Na przykład ponieważ nie ma Drukuj i kopii i wyodrębnić zawartości uprawnień, ich nie można drukować dokument lub kopiowania z niego. Takie ograniczenia pomóc uniknąć utraty danych. Jako właściciel dokumentu możesz wydrukować i skopiuj z niego. Jednak jeśli możesz wysłać wiadomość e-mail dokument innemu użytkownikowi w organizacji, nie można wykonać te akcje.
 
 4. Możesz zamknąć ten dokument.
 

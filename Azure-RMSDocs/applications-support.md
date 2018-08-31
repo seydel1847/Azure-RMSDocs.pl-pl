@@ -4,18 +4,18 @@ description: Omówienie sposobu, w jaki najczęściej używane aplikacje (takie 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b2c21ba2c7030b0757aeb0fd901b900863a962d1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: f468e82f71914e15aacc4a1a9c1d38e0fe5b4372
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807545"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242126"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>Jak aplikacje obsługują usługę Azure Rights Management
 
@@ -40,11 +40,11 @@ Z usługą Rights Management mogą być na różne sposoby zintegrowane usługi 
 
 - SharePoint Online i SharePoint Server dotyczą plików tylko podczas pobierania ochrony usługi Rights Management. Ta implementacja oznacza, że wyniki indeksowanie i wyszukiwanie w programie SharePoint nie dotyczy to rozwiązanie ochrony dokumentów. Jednakże jeśli dokument, który ma być przechowywany w programie SharePoint i w tym dokumencie nie powinien być zwracany w wynikach wyszukiwania, ochrona dokumentu przed przekazaniem go do programu SharePoint.
 
-- Wyszukiwanie z pulpitu Windows używa indeksu udostępnionego między różnymi użytkownikami urządzenia, tak aby zabezpieczyć dane w chronionych dokumentów, indeksowania chronionych plików. Oznacza to, czy mimo że wyniki wyszukiwania nie zawierają pliki chronione, możesz mieć pewność, że pliki zawierające poufne dane są nie wyświetlane w wynikach wyszukiwania dla innych użytkowników, którzy mogą zalogować się do komputera lub podłącz do komputera. 
+- Wyszukiwanie z pulpitu Windows używa indeksu udostępnionego między różnymi użytkownikami urządzenia, tak aby zabezpieczyć dane w chronionych dokumentów, indeksowania chronionych plików. Oznacza to, że mimo że wyniki wyszukiwania nie uwzględniają plików, które mają być chronione, możesz mieć pewność, pliki, które zawierają dane poufne nie są wyświetlane w wynikach wyszukiwania dla innych użytkowników, którzy mogą zalogować się do komputera lub podłącz do komputera. 
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Dowiedz się więcej na temat jak każdy z następujące aplikacje i usługi obsługują usługę Azure Rights Management:
+Dowiedz się więcej o sposobie obsługi wszystkich następujące aplikacje i usługi usługi Azure Rights Management:
 
 -   [Aplikacja do udostępniania usługi RMS dla systemu Windows i platform urządzeń przenośnych](sharing-app-support.md)
 

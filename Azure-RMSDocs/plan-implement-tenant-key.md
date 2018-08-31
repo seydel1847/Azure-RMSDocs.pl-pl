@@ -4,18 +4,18 @@ description: Informacje ułatwiające zaplanowanie użycia klucza dzierżawy us�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 33fdab3f2ad45228760ecc91f59654c95ac9ab64
-ms.sourcegitcommit: d6c68ee8ec3771d8918869defa06d8584ba0036a
+ms.openlocfilehash: 9fa90627d3db00efcc577c838e78394d45fff81a
+ms.sourcegitcommit: 2b2cf599b8072cb8fe6a651743e27fbbe1a827c4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 08/29/2018
-ms.locfileid: "43151844"
+ms.locfileid: "43222323"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -148,7 +148,7 @@ Upewnij się, że długość klucza to 2048 bitów (zalecane) lub 1024 bity. Inn
 
 Aby utworzyć chroniony przez moduł HSM klucz lokalnie i przeniesienie go do magazynu kluczy jako migracja klucza chronionego przez moduł HSM, wykonaj procedury opisane w [jak wygenerować i przenieść klucze chronione przez moduł HSM dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/).
 
-Usługi Azure Information Protection do użycia klucza wszystkie operacje usługi Key Vault musi dozwolone dla klucza. Jest domyślna konfiguracja i operacje są szyfrowanie, odszyfrowywanie, opakowywanie, Odkodowywanie, zaloguj się i upewnij się. Dozwolone operacje klucza można sprawdzić za pomocą [Get AzureKeyVauktKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey)i Dodaj dozwolone operacje przy użyciu [Update-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/update-azurekeyvaultkey).
+Usługi Azure Information Protection do użycia klucza wszystkie operacje usługi Key Vault musi dozwolone dla klucza. Jest domyślna konfiguracja i operacje są szyfrowanie, odszyfrowywanie, opakowywanie, Odkodowywanie, zaloguj się i upewnij się. Dozwolone operacje klucza można sprawdzić za pomocą [Get AzureKeyVauktKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) i weryfikowanie *key_ops* wartości zwracanych w **klucz** szczegółowe informacje. W razie potrzeby dodaj dozwolone operacje przy użyciu [Update-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/update-azurekeyvaultkey) i *KeyOps* parametru.
 
 Klucz, który jest przechowywany w usłudze Key Vault ma klucz identyfikatora. Ten klucz ID jest adresem URL zawierającym nazwę magazynu kluczy, kontener kluczy, nazwę klucza i wersję klucza. Na przykład: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. Należy skonfigurować usługę Azure Information Protection do użycia tego klucza, określając jego adres URL magazynu Key.
 
