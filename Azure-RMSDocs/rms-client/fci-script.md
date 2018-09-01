@@ -4,18 +4,18 @@ description: Przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opise
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/19/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9bbb0e9a1206caaf7319da5d96b8ad08e308664
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0ec3346af01ac259df603a268b1a25d154addacb
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806498"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380645"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików
 

@@ -4,19 +4,19 @@ description: Usługa Microsoft Azure Information Protection dostarcza rozwiązan
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf8075c048dd95ceca3e1a5625cb00c81e6f348e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 36f4cf97035ff43060d1838ba7276bf5a5ca6d86
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804852"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380733"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Strona klienta usługi Azure Information Protection
 
@@ -45,5 +45,5 @@ Korzystając z poniższej dokumentacji, można uzyskać więcej informacji na te
 Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management oraz narzędzie RMS Protection Tool zostały obecnie zastąpione przez klienta usługi Azure Information Protection. 
 
 
-## <a name="see-also"></a>Zobacz też
+## <a name="see-also"></a>Zobacz także
 [Porównanie usług Azure Information Protection i AD RMS](../compare-on-premise.md)

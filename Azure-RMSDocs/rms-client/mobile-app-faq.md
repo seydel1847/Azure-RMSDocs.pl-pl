@@ -5,19 +5,19 @@ keywords: Niektóre często zadawane pytania dotyczące korzystania z aplikacji 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d7543ceec6a749b3f6fad6a5ac9bd368f345eac4
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 82030678091e8b8bd9fe847b46e102e985f7ed23
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803536"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380617"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android
 

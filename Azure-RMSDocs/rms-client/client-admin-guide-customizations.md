@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
-ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
+ms.openlocfilehash: 54e501b7f226f14c388912c874a17a0ff38dd78b
+ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43298018"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348719"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -76,7 +76,7 @@ Dodatkowo:
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>Wymusić tryb z samą ochroną, gdy Twoja organizacja ma różne licencji
 
-Jeśli Twoja organizacja nie ma żadnych licencji usługi Azure Information Protection, ale mają licencje usługi Office 365, która obejmuje usługi Azure Rights Management do ochrony danych, klient usługi Azure Information Protection dla Windows automatycznie uruchamia w [tryb z samą ochroną](client-protection-only-mode.md).
+Jeśli Twoja organizacja nie ma żadnych licencji usługi Azure Information Protection, ale mają licencje usługi Office 365, która obejmuje usługi Azure Rights Management w celu zapewnienia ochrony danych, klient usługi Azure Information Protection dla Windows automatycznie uruchamia w [tryb z samą ochroną](client-protection-only-mode.md).
 
 Jednak jeśli Twoja organizacja ma subskrypcję usługi Azure Information Protection, domyślnie wszystkie komputery Windows można pobrać zasad usługi Azure Information Protection. Nie usługi Azure Information Protection, w których klient ma licencję, sprawdzenie i wymuszania. 
 
@@ -309,6 +309,8 @@ Wartość Identyfikatora etykieta jest wyświetlana na **etykiety** bloku, wyśw
 
 Podaj wybraną nazwę reguły migracji. Użyj opisową nazwę, która ułatwia ustalenie sposobu jedną lub więcej etykiet z poprzedniego rozwiązania etykietowania powinno zostać zamapowane etykiety usługi Azure Information Protection. Nazwa jest wyświetlana w raportach skanera, a w Podglądzie zdarzeń. 
 
+Należy pamiętać, że to ustawienie nie powoduje usunięcia oznaczenia wizualne, które starą może być zastosowane. Aby usunąć nagłówków i stopek, zobacz następną sekcję, [usuwanie nagłówków i stopek z innych rozwiązań etykietowania](#remove-headers-and-footers-from-other-labeling-solutions).
+
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>Przykład 1: Mapowanie jeden do jednego z taką samą nazwę etykiety
 
 Dokumenty, które ma etykietę "Poufne" Secure Islands powinien relabeled jako "Poufne" w usłudze Azure Information Protection.
@@ -362,10 +364,107 @@ Zaawansowane ustawienia klienta:
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d, "Secure Islands etykieta zawiera wewnętrzne" klasyfikacji. \*Wewnętrznego.\*|
 
 
+## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>Usuwanie nagłówków i stopek z innych rozwiązań etykietowania
+
+Ta opcja konfiguracji jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Również wymaga wersji zapoznawczej klienta usługi Azure Information Protection.
+
+Ta konfiguracja korzysta z wielu [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) , należy skonfigurować w witrynie Azure portal.
+
+Te ustawienia umożliwiają. Usuń lub Zamień nagłówków i stopek z dokumentów, po zastosowaniu tych oznaczeń wizualnych, przez inne rozwiązanie etykietowania. Na przykład stopki stare zawiera nazwę starego etykiety, który teraz poddano migracji do usługi Azure Information Protection z nową nazwę etykiety i swój własny stopki.
+
+Gdy klient pobiera tę konfigurację w zasadach, stare nagłówki i stopki są usunięty lub zastąpiony, gdy dokument zostanie zapisany. 
+
+Ta konfiguracja nie jest obsługiwana dla programu Outlook i należy pamiętać, że podczas korzystania z programu Word, Excel i PowerPoint, jego może negatywnie wpłynąć na wydajność tych aplikacji dla użytkowników. Konfiguracja pozwala zdefiniować dla każdej aplikacji, na przykład wyszukiwanie tekstu w nagłówkach i stopkach dokumentów programu Word, ale nie arkusze kalkulacyjne programu Excel lub prezentacji programu PowerPoint.
+
+Ponieważ dopasowanie wzorca wpływa na wydajność dla użytkowników, zaleca się ograniczenie typów aplikacji pakietu Office (**W**orządkuj, **E**xcel, **P**owerPoint) wyłącznie do tych które mają być wyszukiwane:
+
+- Klucz: **RemoveExternalContentMarkingInApp**
+
+- Wartość: \< **aplikacji pakietu Office typy WXP**> 
+
+Przykłady:
+
+- Aby wyszukać tylko dokumenty programu Word, należy określić **W**.
+
+- Aby przeprowadzić wyszukiwanie dokumentów programu Word i prezentacje programu PowerPoint, określ **WP**.
+
+Następnie należy co najmniej jednego klienta bardziej zaawansowane ustawienia **ExternalContentMarkingToRemove**, aby określić zawartość nagłówka lub stopki i jak usunąć lub zastąpić je.
+
+### <a name="how-to-configure-externalcontentmarkingtoremove"></a>Jak skonfigurować ExternalContentMarkingToRemove
+
+Po określeniu wartość ciągu dla **ExternalContentMarkingToRemove** klucza, masz trzy opcje, które używają wyrażeń regularnych:
+
+- Częściowe dopasowanie, aby usunąć wszystkie elementy w nagłówku lub stopce.
+    
+    Przykład: W nagłówkach i stopkach strony zawierają ciąg **Usuń tekst**. Chcesz całkowicie usunąć tych nagłówkach i stopkach strony. Określ wartość: `*TEXT*`.
+
+- Pełne dopasowanie, aby usunąć tylko określone słowa w nagłówku lub stopce.
+    
+    Przykład: W nagłówkach i stopkach strony zawierają ciąg **Usuń tekst**. Chcesz usunąć wyraz **tekstu** , dlatego nagłówka lub stopki ciągu jako **Aby usunąć**. Określ wartość: `TEXT `.
+
+- Pełne dopasowanie, aby usunąć wszystkie elementy w nagłówku lub stopce.
+    
+    Przykład: W nagłówkach i stopkach strony zawiera ciągu **Usuń tekst**. Chcesz usunąć w nagłówkach i stopkach stron, które mają dokładnie tego ciągu. Określ wartość: `^TEXT TO REMOVE$`.
+    
+
+Dopasowywania do wzorca dla ciągu znaków nie uwzględnia wielkości liter. Maksymalna długość ciągu to 255 znaków.
+
+Ponieważ niektóre dokumenty mogą obejmować niewidoczne znaki lub różne rodzaje tabulacji lub spacji, ciąg, który określisz dla frazę lub zdanie mogą nie zostać wykryte. Jeśli to możliwe, określ pojedynczego wyrazu wyróżniający dla wartości, a należy przetestować wyniki, przed wdrożeniem w środowisku produkcyjnym.
+
+- Klucz: **ExternalContentMarkingToRemove**
+
+- Wartość: \< **ciąg do dopasowania, zdefiniowany jako wyrażenie regularne**> 
+
+#### <a name="multiline-headers-or-footers"></a>Wielowierszowy nagłówków i stopek
+
+Jeśli tekst nagłówka lub stopki jest więcej niż jeden wiersz, należy utworzyć klucz i wartość dla każdego wiersza. Na przykład masz następujące stopki z dwoma wierszami:
+
+**Plik jest klasyfikowany jako poufne**
+
+**Etykieta stosowane ręcznie**
+
+Aby usunąć stopką multline, należy utworzyć dwa następujące wpisy:
+
+- Klucz 1: **ExternalContentMarkingToRemove**
+
+- Wartość klucza 1:  **\*poufne***
+
+- Klucz 2: **ExternalContentMarkingToRemove**
+
+- Wartość klucza 2:  **\*etykietę*** 
+
+#### <a name="optimization-for-powerpoint"></a>Optymalizacja dla programu PowerPoint
+
+Stopki w programie PowerPoint są implementowane jako kształtów. Aby uniknąć, usuwanie kształtów, które zawierają tekst został określony, ale nie są w nagłówkach i stopkach strony, należy użyć dodatkowych zaawansowanych ustawień klienta o nazwie **PowerPointShapeNameToRemove**. Firma Microsoft zaleca, aby uniknąć sprawdzanie tekstu w wszystkie kształty, które jest procesem obciążającym przy użyciu tego ustawienia.
+
+Jeśli nie określisz tego dodatkowe zaawansowane ustawienia klienta i PowerPoint znajduje się w **RemoveExternalContentMarkingInApp** klucz wartość, będzie można sprawdzić wszystkie kształty tekst, który określisz w  **ExternalContentMarkingToRemove** wartość. 
+
+Aby znaleźć nazwę kształtu, którego używasz jako nagłówka lub stopki:
+
+1. W programie PowerPoint, Wyświetl **wybór** okienka: **Format** kartę > **Rozmieść** grupy > **okienko wyboru**.
+
+2. Wybierz kształt na slajdzie, która zawiera nagłówek lub stopkę. Nazwa wybranego kształtu jest wyróżniony w **wybór** okienka.
+
+Użyj nazwę kształtu, aby określić wartość ciągu dla **PowerPointShapeNameToRemove** klucza. 
+
+Przykład: Jest nazwa kształtu **fc**. Aby usunąć kształt o tej nazwie, należy określić wartość: `fc`.
+
+- Klucz: **PowerPointShapeNameToRemove**
+
+- Wartość: \< **nazwę kształtu programu PowerPoint**> 
+
+Jeśli masz więcej niż jeden kształtu programu PowerPoint, aby usunąć, utwórz tyle **PowerPointShapeNameToRemove** klucze mają kształty do usunięcia. Dla każdego wpisu określić nazwę kształtu do usunięcia.
+
+Domyślnie tylko wzorca slajdów są sprawdzane w nagłówkach i stopkach stron. Aby rozszerzyć to wyszukiwanie do wszystkich slajdów, która jest procesem bardziej dużej ilości zasobów, należy użyć dodatkowe zaawansowane ustawienia klienta o nazwie **RemoveExternalContentMarkingInAllSlides**:
+
+- Klucz: **RemoveExternalContentMarkingInAllSlides**
+
+- Wartość: **Prawda**
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej
 
 > [!NOTE]
-> Jeśli używasz tej konfiguracji i z poprzedniej sekcji, aby przeprowadzić migrację z innego rozwiązania etykietowania, etykietowania ustawienie migracji ma pierwszeństwo. 
+> Jeśli używasz tej konfiguracji i konfigurację, aby [migracji etykiety z Secure Islands i innych rozwiązań etykietowania](#migrate-labels-from-secure-islands-and-other-labeling-solutions), ustawienia pierwszeństwo migracji etykietowania. 
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 

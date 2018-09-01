@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 945b05a99122b7caf1d9a73ea8b75717a5522660
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 3e067f42b216efda48d46cd95be66c4939bf6240
+ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117931"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348695"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -59,6 +59,8 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 - Obsługa plików, które są chronione przez Secure Islands, gdy te pliki są inne niż dokumentów PDF i pakietu Office. Na przykład chronionych plików tekstowych i obrazów. Lub rozszerzenie nazwy pliku plików, które mają plik pfile. Ta obsługa umożliwia nowe scenariusze, takie jak skanera usługi Azure Information Protection będzie mogła sprawdzić te pliki do poufnych informacji i automatycznie relabeling je do usługi Azure Information Protection. [Więcej informacji](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
 
 - **Prześlij nam opinię** łącze w **Pomoc i opinie** okno dialogowe jest zastępowany **zgłosić problem**, które można dostosować. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft. Można zmienić ten adres e-mail, tak aby użytkownicy wybierz tę opcję, używał ciągu HTTP, który określisz. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. Aby zmodyfikować ten adres, użyj [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
+
+- Nowe zaawansowane ustawienia klienta do usunięcia, nagłówki i stopki, które zostały zastosowane do dokumentów przez innych rozwiązań etykietowania. [Więcej informacji](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
 - Skanera usługi Azure Information Protection:
 
@@ -161,7 +163,6 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 **Nowe funkcje**:
 
 - Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md). 
-
 - Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej information]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - Obsługa [ustawienie zasad](../configure-policy-settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
