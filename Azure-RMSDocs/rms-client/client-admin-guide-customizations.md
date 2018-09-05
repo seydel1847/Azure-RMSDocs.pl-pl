@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 54e501b7f226f14c388912c874a17a0ff38dd78b
-ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
+ms.openlocfilehash: 3e6d5f30e3db48eced850649976ac4da56271622
+ms.sourcegitcommit: a42bb93adbb5be2cd39606fed3de0785ac52dd65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43348719"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43703934"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -372,7 +372,7 @@ Ta konfiguracja korzysta z wielu [Zaawansowane ustawienia klienta](#how-to-confi
 
 Te ustawienia umożliwiają. Usuń lub Zamień nagłówków i stopek z dokumentów, po zastosowaniu tych oznaczeń wizualnych, przez inne rozwiązanie etykietowania. Na przykład stopki stare zawiera nazwę starego etykiety, który teraz poddano migracji do usługi Azure Information Protection z nową nazwę etykiety i swój własny stopki.
 
-Gdy klient pobiera tę konfigurację w zasadach, stare nagłówki i stopki są usunięty lub zastąpiony, gdy dokument zostanie zapisany. 
+Gdy klient pobiera tę konfigurację w zasadach, stare nagłówki i stopki są usunięty lub zastąpiony po otwarciu dokumentu w aplikacji pakietu Office i wszelkie etykiety usługi Azure Information Protection jest stosowany do dokumentu.
 
 Ta konfiguracja nie jest obsługiwana dla programu Outlook i należy pamiętać, że podczas korzystania z programu Word, Excel i PowerPoint, jego może negatywnie wpłynąć na wydajność tych aplikacji dla użytkowników. Konfiguracja pozwala zdefiniować dla każdej aplikacji, na przykład wyszukiwanie tekstu w nagłówkach i stopkach dokumentów programu Word, ale nie arkusze kalkulacyjne programu Excel lub prezentacji programu PowerPoint.
 
