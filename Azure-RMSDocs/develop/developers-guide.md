@@ -5,17 +5,17 @@ author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 59c9a2db3f0959a5c4bfb9e65248598b14276825
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 21564a219a05efb0d47a12755d4334cc9ac2a559
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808563"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150351"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 
@@ -139,7 +139,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) to pierwsza wersja zestawu SDK usług RMS.
 - [AD RMS Scripting Tool](https://msdn.microsoft.com/library/bb968797.aspx) to narzędzie administracyjne służące do instalacji usług AD RMS.
 
-### <a name="see-also"></a>Zobacz też
+### <a name="see-also"></a>Zobacz także
 
 - [Terminologia dla deweloperów](terms.md)
 - [Terminologia dotycząca usługi Azure Information Protection — ITPro](../terminology.md)

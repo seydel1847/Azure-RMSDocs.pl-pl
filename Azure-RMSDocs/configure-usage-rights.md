@@ -4,18 +4,18 @@ description: Informacje pomagające zrozumieć i zidentyfikować określone praw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/05/2018
-ms.topic: article
+ms.date: 09/06/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b0b9577062a7225b7568e54031476b037fa70469
-ms.sourcegitcommit: 2855d26a019dc7b0a4208eba8d53d89361a918d2
+ms.openlocfilehash: db1a0581932cc71494f1727190a66b684e4310e4
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821795"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150555"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 

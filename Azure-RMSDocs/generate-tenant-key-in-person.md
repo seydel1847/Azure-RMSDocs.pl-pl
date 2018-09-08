@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd5635438df59eb54efe95f4247f86a43aa31c09
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 415bee6f68a9686cec49bec8a8ccc443f83a5027
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806907"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44146067"
 ---
 # <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — osobiście: ZAWARTOŚĆ WYCOFANA
 

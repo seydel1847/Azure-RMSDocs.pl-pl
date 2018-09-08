@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a8f911b2053df28b67ceef7c74b23ebb57056fb3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0fcde686ca2a33c95366701f0fa1b066bff41cec
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803143"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150283"
 ---
 # <a name="generate-and-transfer-your-tenant-key--over-the-internet-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — przez Internet: ZAWARTOŚĆ WYCOFANA
 

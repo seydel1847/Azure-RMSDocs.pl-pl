@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 98105d30-ff81-4b9c-9f41-9e9ffd6e7aa6
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53d6842c623a3a65d2ed6e96937ee9500356e785
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: af20fcc800952b83e9c711cfc7cafc3b28651ba3
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803803"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151411"
 ---
 # <a name="help-bot-for-azure-information-protection"></a>Pomóż botowi usługi Azure Information Protection
 
