@@ -4,18 +4,18 @@ description: Informacje pomagające zrozumieć i zidentyfikować określone praw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/06/2018
+ms.date: 09/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db1a0581932cc71494f1727190a66b684e4310e4
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: cb18e5820b3646c5cb21fdab3590b1ab1c56984a
+ms.sourcegitcommit: cd3455390c36520389b7ce72cb481344e726bb8e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150555"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44383229"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -119,7 +119,7 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 Exchange Online korzysta z nowych funkcji dla szyfrowanie wiadomości usługi Office 365, Nowa opcja wiadomości e-mail staje się dostępna: **tylko do szyfrowania**.
 
-Ta opcja jest wdrażany w dzierżawach, korzystający z usługi Exchange Online początkowo tylko dla programu Outlook w sieci web oraz inną opcję ochrony praw dla reguły przepływu poczty. Aby uzyskać więcej informacji, zobacz następujący wpis na blogu zespołu programu pakietu Office: [szyfrowanie wprowadza się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
+Ta opcja jest dostępna dla dzierżaw korzystających z usługi Exchange Online i można wybrać w programie Outlook w sieci web, jako inną opcję ochrony praw dla reguły przepływu poczty i programu Outlook w przypadku usługi Office 365 ProPlus za pomocą minimalnej wersji [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Aby uzyskać więcej informacji, zobacz następujący wpis na blogu zespołu programu pakietu Office: [szyfrowanie wprowadza się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
 
 Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i adresaci muszą zostać uwierzytelnione. Następnie adresaci mają wszystkie prawa użytkowania, z wyjątkiem **Zapisz jako, Eksportuj** i **Pełna kontrola**. Ta kombinacja praw użytkowania oznacza, że adresaci nie ma żadnych ograniczeń, z tą różnicą, że ich nie można usunąć ochrony. Na przykład adresata można skopiować z wiadomości e-mail, drukować i przesyła je. 
 
