@@ -4,18 +4,18 @@ description: Instrukcje dotyczące korzystania z klienta usługi Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 09/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20760507ed6fcaa69aba07c70068a1c8807ed7ab
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8c97e4591343c0c6f04c39b5fa162acb1feacdd1
+ms.sourcegitcommit: 62da5075a6b3d13e4688d2d7d82beff53cade440
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149178"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45540092"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
@@ -209,11 +209,11 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
         -   **Argument**: Określ następujące ustawienia, podając własne wartości &lt;ścieżki&gt; i &lt;identyfikatora szablonu&gt;:
 
             ```
-            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail [Source File Owner Email]"
+            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
             ```
             Jeśli np. skrypt został skopiowany do katalogu C:\RMS-Protection, a identyfikator szablonu wskazanego na podstawie wymagań wstępnych to e6ee2481-26b9-45e5-b34a-f744eacd53b0, określ następujące ustawienia:
 
-            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail [Source File Owner Email]"`
+            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail '[Source File Owner Email]'"`
 
             W tym poleceniu **[ścieżka pliku źródłowego]** i **[E-mail właściciela pliku źródłowego]** są zarówno zmiennymi specyficznymi dla infrastruktury FCI je wpisać dokładnie tak, jak pojawiają się w poprzednim poleceniu. Pierwsza zmienna jest używana przez infrastrukturę FCI w celu automatycznego określenia wskazanego pliku w folderze, a druga zmienna jest dla infrastruktury FCI w celu automatycznego pobrania adresu e-mail nazwanego właściciela wskazanego pliku. To polecenie jest powtarzane dla każdego pliku w folderze, co w użytym przykładzie oznacza wszystkie pliki w folderze C:\FileShare, które dodatkowo jako właściwość klasyfikacji pliku mają usługę RMS.
 
