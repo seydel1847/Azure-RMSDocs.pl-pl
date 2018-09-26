@@ -4,18 +4,18 @@ description: Instrukcje dotyczące sposobu klasyfikowania i ochrony dokumentów 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 01637807680e4172af8938a3c63b092191ef41cd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 355d71f844d64fb26898c482d2414ca388ac38be
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148686"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696521"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie i ochrona pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
@@ -76,6 +76,8 @@ Możliwe przyczyny:
 - Jeśli administrator skonfigurował ostatnio nową etykietę, zamknij wszystkie wystąpienia aplikacji pakietu Office i otwórz ją ponownie. Ta akcja sprawdza zmiany etykiet.
 
 - Jeśli brakująca etykieta ustawia ochronę, być może posiadana wersja pakietu Office nie obsługuje ochrony w ramach usługi Rights Management. Aby sprawdzić, kliknij przycisk **Chroń** > **Pomoc i opinie**. W oknie dialogowym Sprawdź, czy komunikat **stanu klienta** sekcja, która wynika z **ten klient nie ma licencji pakietu Office Professional Plus.** 
+    
+    Nie trzeba pakiet Office Professional Plus Jeśli masz aplikacje pakietu Office 2016 z minimalną wersją 1805, kompilacja 9330.2078, a Twoje konto ma przypisanej licencji usługi Azure Rights Management (nazywanego także usługi Azure Information Protection dla usługi Office 365).
 
 - Etykieta może być objęta zasadami o określonym zakresie, które nie obejmują Twojego konta. Skontaktuj się z administratorem lub pomocą techniczną.
 

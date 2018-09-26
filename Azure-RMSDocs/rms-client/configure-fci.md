@@ -4,18 +4,18 @@ description: Instrukcje dotyczące korzystania z klienta usługi Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8c97e4591343c0c6f04c39b5fa162acb1feacdd1
-ms.sourcegitcommit: 62da5075a6b3d13e4688d2d7d82beff53cade440
+ms.openlocfilehash: 099b4985a0e595c22ec29fd2d682d092a5b445b5
+ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45540092"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750632"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
@@ -53,7 +53,7 @@ Wymagania wstępne dotyczące tych instrukcji:
     
 - Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tego wymagania, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../prepare.md).
     
-- Na serwer plików zostały pobrane szablony usługi Rights Management oraz został rozpoznany identyfikator szablonu, który będzie chronić pliki. W tym celu użyj polecenia cmdlet [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate). W tym scenariuszu nie są obsługiwane szablony przypisane do działów, więc należy użyć szablonu, który nie został skonfigurowany dla zakresu. Ewentualnie konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.
+- Ten scenariusz nie obsługuje szablony dla działów, więc należy użyć szablonu, który nie jest skonfigurowany dla zakresu, lub użyj [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet i *EnableInLegacyApps* parametr.
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Instrukcje dotyczące konfiguracji infrastruktury klasyfikacji plików (FCI) Menedżera zasobów serwera plików na potrzeby ochrony z użyciem usługi Azure Rights Management
 Wykonaj te instrukcje, aby automatycznie chronić wszystkie pliki w folderze przy użyciu skryptu programu PowerShell w ramach zadania niestandardowego. Wykonaj te procedury w następującej kolejności:
@@ -72,7 +72,7 @@ Wykonaj te instrukcje, aby automatycznie chronić wszystkie pliki w folderze prz
 
 Po wykonaniu tych instrukcji wszystkie pliki w wybranym folderze zostaną sklasyfikowane z niestandardowymi właściwościami usługi RMS i będą chronione za pomocą usługi Rights Management. Na potrzeby bardziej złożonej konfiguracji selektywnej ochrony plików można utworzyć inną właściwość i regułę klasyfikacji zadania zarządzania plikami chroniącego tylko wybrane pliki, a następnie użyć jej.
 
-Należy pamiętać, że po wprowadzeniu zmian w szablonie usługi Rights Management używanym do infrastruktury FCI należy uruchomić polecenie `Get-RMSTemplate -Force` na komputerze serwera plików w celu pobrania zaktualizowanego szablonu. Zaktualizowany szablon jest następnie używany do ochrony nowych plików. Jeśli zmiany wprowadzone w szablonie są na tyle istotne ponownie włączyć ochronę plików na serwerze plików, możesz to zrobić, uruchamiając polecenie cmdlet Protect-RMSFile interaktywnie przy użyciu konta które ma prawa użytkowania Eksport lub Pełna kontrola dla plików. Należy także uruchomić polecenie `Get-RMSTemplate -Force` na tym serwerze plików w przypadku publikowania nowego szablonu, którego chcesz używać dla infrastruktury FCI.
+Należy pamiętać, że w przypadku wprowadzenia zmian do szablonu usługi Rights Management, którego używasz dla infrastruktury klasyfikacji plików, konto komputera, które uruchamia skrypt, aby chronić pliki nie automatycznie pobrać zaktualizowany szablon. Aby to zrobić w skrypcie, zlokalizuj skomentowanej się `Get-RMSTemplate -Force` polecenia, a następnie usuń `#` znak komentarza. Po pobraniu zaktualizowany szablon (skrypt zostanie uruchomiony co najmniej jeden raz), możesz przekształcić w komentarz tego dodatkowe polecenia tak, aby szablony nie zostaną pobrane niepotrzebnie każdorazowo. Jeśli zmiany wprowadzone w szablonie są na tyle istotne ponownie włączyć ochronę plików na serwerze plików, możesz to zrobić w interaktywnie, uruchamiając polecenie cmdlet Protect-RMSFile za pomocą konta które ma prawa użytkowania Eksport lub Pełna kontrola dla plików. Należy także uruchomić `Get-RMSTemplate -Force` w przypadku publikowania nowego szablonu, który chcesz używać dla infrastruktury klasyfikacji plików.
 
 ### <a name="save-the-windows-powershell-script"></a>Zapisz skrypt programu Windows PowerShell.
 
@@ -266,7 +266,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
     > [!TIP]
     > Wskazówki dotyczące rozwiązywania problemów:
     > 
-    > -   Jeśli widzisz **0** w raporcie, zamiast liczby plików w folderze, te dane wyjściowe wskazuje, że skrypt nie zostało uruchomione. Po pierwsze sprawdź sam skrypt przez załadowanie go w środowisku Windows PowerShell ISE, aby zweryfikować jego zawartość, a następnie spróbuj go uruchomić, aby zobaczyć, czy zostaną wyświetlone błędy. Przy użyciu nie zostaną określone argumenty skrypt podejmie próbę połączenia i uwierzytelniania usługi Azure Rights Management.
+    > -   Jeśli widzisz **0** w raporcie, zamiast liczby plików w folderze, te dane wyjściowe wskazuje, że skrypt nie zostało uruchomione. Po pierwsze sprawdź sam skrypt przez załadowanie go w środowisku Windows PowerShell ISE, aby zweryfikować zawartość skryptu i spróbuj uruchomić go jeden raz w tej samej sesji programu PowerShell, aby zobaczyć, jeśli są wyświetlane błędy. Przy użyciu nie zostaną określone argumenty skrypt podejmie próbę połączenia i uwierzytelniania usługi Azure Rights Management.
     > 
     >     -   Jeśli skrypt zgłasza, że nie może nawiązać połączenia z usługą Azure Rights Management (Azure RMS), sprawdź wartości wyświetlane dla konta głównego usługi określonego w skrypcie. Aby uzyskać więcej informacji o tworzeniu konta głównego usługi, zobacz [Wymaganie wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction) opisane w podręczniku administratora klienta usługi Azure Information Protection.
     >     -   Jeśli skrypt zgłasza, że może nawiązać połączenie z usługami Azure RMS, sprawdź, czy może znaleźć wskazany szablon, uruchamiając polecenie [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) bezpośrednio w programie Windows PowerShell na serwerze. Określony szablon powinien pojawić się w zwracanych w wynikach.
@@ -281,6 +281,14 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
     > -   Jeśli raport zawiera poprawną liczbę plików, ale pliki nie są chronione, spróbuj uruchomić ochronę ręcznie, za pomocą polecenia cmdlet [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile), aby sprawdzić, czy są wyświetlane błędy.
 
 Po potwierdzeniu, że zadania zostały pomyślnie uruchomione, można zamknąć Menedżera zasobów plików. Nowe pliki będą automatycznie klasyfikowane i chronione podczas przeprowadzania zaplanowanych zadań. 
+
+## <a name="action-required-if-you-make-changes-to-the-rights-management-template"></a>Akcja wymagana po wprowadzeniu zmian do szablonu usługi Rights Management
+
+W przypadku wprowadzenia zmian do szablonu usługi Rights Management, odwołania do skryptu, konto komputera, które uruchamia skrypt, aby chronić pliki nie automatycznie pobrania zaktualizowanego szablonu. W skrypcie, zlokalizuj skomentowanej się `Get-RMSTemplate -Force` polecenia w funkcji Set RMSConnection i usunąć znaki komentarza na początku wiersza. Przy następnym uruchomieniu skryptu zaktualizowany szablon zostanie pobrana. Aby zoptymalizować wydajność, tak aby nie niepotrzebnie pobieranie szablonów, możesz następnie przekształcić w komentarz ten wiersz ponownie. 
+
+Jeśli zmiany wprowadzone w szablonie są na tyle istotne ponownie włączyć ochronę plików na serwerze plików, możesz to zrobić w interaktywnie, uruchamiając polecenie cmdlet Protect-RMSFile za pomocą konta które ma prawa użytkowania Eksport lub Pełna kontrola dla plików. 
+
+Również uruchomić skrypt ten wiersz, jeśli możesz opublikować nowy szablon, który chcesz używać dla infrastruktury FCI i zmienić identyfikator szablonu w wierszu argument dla niestandardowego zadania zarządzania plikami.
 
 ## <a name="modifying-the-instructions-to-selectively-protect-files"></a>Modyfikowanie instrukcji na potrzeby selektywnej ochrony plików
 Jeżeli poprzednie instrukcje działają, jest ona łatwo zmodyfikować na potrzeby bardziej zaawansowanej konfiguracji. Na przykład uruchom ochronę plików za pomocą tego samego skryptu, ale obejmij nią tylko pliki, które zawierają dane osobowe, wybierając szablon z bardziej restrykcyjnymi uprawnieniami.

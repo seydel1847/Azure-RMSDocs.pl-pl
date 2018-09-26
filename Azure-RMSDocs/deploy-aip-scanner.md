@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c1ad35bde57822460f0f3e7346d05d95647eedd6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1e6c2eae7b94a2644302d67346c5adca630f824f
+ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151864"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750700"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -29,7 +29,7 @@ Ten skaner działa jako usługa w systemie Windows Server i umożliwia odnajdywa
 
 - Ścieżki UNC udziały sieciowe, które używają protokołu bloku komunikatów serwera (SMB).
 
-- Witryny i biblioteki dla programu SharePoint Server 2016 i SharePoint Server 2013. SharePoint 2010, jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) i korzystający z wersji zapoznawczej skanera.
+- Witryny i biblioteki dla programu SharePoint Server 2016 i SharePoint Server 2013. SharePoint 2010, jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
 
 Aby skanować i oznaczyć pliki w chmurze repozytoriów, należy użyć [Cloud App Security](https://docs.microsoft.com/cloud-app-security/).
 
@@ -168,7 +168,7 @@ Teraz możesz określić magazynów danych do skanowania.
 
 Użyj [AIPScannerRepository Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) polecenia cmdlet, aby określić dane są przechowywane do skanowania przez skaner usługi Azure Information Protection. W przypadku witryn programu SharePoint i bibliotek można określić foldery lokalne, ścieżki UNC i adresy URL serwerów programu SharePoint. 
 
-Obsługiwane wersje programu SharePoint: program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) i korzystający z wersji zapoznawczej skanera.
+Obsługiwane wersje programu SharePoint: program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
 
 1. Na tym samym komputerze system Windows Server w sesji programu PowerShell dodające pierwsze dane przechowywane przez uruchomienie następującego polecenia:
     
@@ -188,43 +188,31 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
 
 ## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>Uruchomić cykl odnajdowania i wyświetlać raporty dla skanera
 
-1. Za pomocą **narzędzia administracyjne** > **usług**, start **skaner ochrony informacji Azure** usługi.
+1. W sesji programu PowerShell, uruchom ponownie **skaner ochrony informacji Azure** usługi, uruchamiając następujące polecenie:
     
-    Jeśli masz bieżącą wersję zapoznawczą skaner, można również uruchomić [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) w sesji programu PowerShell.
+        Start-AIPScan
 
 2. Poczekaj, aż skanera zakończyć jego cyklu. Podczas wszystkich plików w magazynach danych, które można określić ma skaner zatrzymaniu usługi. Można użyć lokalnego Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**, aby upewnić się, gdy usługa jest zatrzymana. Należy wyszukać identyfikator zdarzenia informacyjne **911**.
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports, które mają format pliku CSV. W przypadku domyślnej konfiguracji skaner tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
     Wyniki są nie zgodnie z oczekiwaniami, może być konieczne dostosowanie warunków określonych w zasadach usługi Azure Information Protection. Jeśli tak jest rzeczywiście, powtórz kroki od 1 do 3, dopóki nie będziesz gotowy zmienić konfigurację do zastosowania klasyfikacji i opcjonalnie ochrony. 
-    
-    W bieżącej wersji ogólnie dostępnej wersji skanera: każdorazowo, powtórz te kroki, uruchom następujące polecenie programu PowerShell na komputerze systemu Windows Server:
-  
-        Set-AIPScannerConfiguration -Schedule OneTime
-    
-    Jeśli masz bieżącą wersję zapoznawczą skanera, nie uruchamiaj polecenia Set-AIPScannerConfiguration.
-  
+
 Gdy wszystko będzie gotowe automatycznie oznaczyć pliki, które wykrywa skaner, przejdź do następnej procedury. 
 
 ## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>Konfigurowanie skanera do zastosowania funkcji klasyfikacji i ochrony
 
 W jego domyślne ustawienie skaner działa jeden czas i działa w trybie tylko do raportowania. Aby zmienić te ustawienia, należy uruchomić [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) polecenia cmdlet.
 
-1. Na komputerze serwera systemu Windows w sesji programu PowerShell, uruchom jedną z następujących poleceń:
+1. Na komputerze serwera systemu Windows w sesji programu PowerShell, uruchom następujące polecenie:
     
-    Dla bieżącej wersji ogólnie dostępnej wersji skanera:
-       
-        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
-    
-    Aby uzyskać wersję zapoznawczą skaner:
-       
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
     Istnieją inne ustawienia konfiguracji, które można zmienić. Na przykład czy atrybuty pliku zostały zmienione, a co jest rejestrowane w raportach. Ponadto jeśli zasad usługi Azure Information Protection zawiera ustawienie, które wymaga komunikatów uzasadnienie obniżenia poziomu klasyfikacji lub usunąć ochronę, należy określić tego komunikatu przy użyciu tego polecenia cmdlet. Użyj [pomocy online](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) Aby uzyskać więcej informacji na temat każdego ustawienia konfiguracji. 
 
-2. Za pomocą **narzędzia administracyjne** > **usług**, uruchom ponownie **skaner ochrony informacji Azure** usługi.
+2. Uruchom ponownie **skaner ochrony informacji Azure** usługi, uruchamiając następujące polecenie:
     
-    Jeśli masz bieżącą wersję zapoznawczą skaner, można również uruchomić [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) w sesji programu PowerShell.
+        Start-AIPScan
 
 3. Tak jak poprzednio monitorowanie dziennika zdarzeń i raportów, aby wyświetlić pliki, które zostały oznaczone, klasyfikacji, które zostały zastosowane i czy została zastosowana ochrona.
 
@@ -273,25 +261,16 @@ Na koniec dla pozostałych typów plików, skaner ma zastosowanie etykiety domy�
 
 Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakietu Office będą chronione. Aby zmienić to zachowanie, tak aby dodatkowe typy plików są chronione. Jednak jeśli etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku ulega zmianie na pfile. Ponadto że plik staje się tylko do odczytu, dopóki nie zostanie on otwarty przez autoryzowanego użytkownika i zapisane w formacie natywnym. Pliki tekstowe i obrazy można zmieniać ich rozszerzenia nazwy pliku i stają się tylko do odczytu. 
 
-Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
+Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Alternatywnie można chronić wszystkie typy plików, określając `*` symboli wieloznacznych. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
 
 - Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. W przypadku braku modyfikacji rejestru innych typów plików nie będą chronione przez skaner.
 
-- Jeśli bieżącą wersję zapoznawczą skaner jest używana, należy określić określonych rozszerzeń nazw plików, a nie można użyć `*` symboli wieloznacznych. Skaner w wersji zapoznawczej obsługuje ten symbol wieloznaczny.
 
 ## <a name="when-files-are-rescanned"></a>Kiedy pliki są ponownie skanowana
 
 Dla pierwszego cyklu skanowania skaner sprawdza wszystkie pliki w magazynach danych skonfigurowane, a następnie w przypadku skanowania kolejnych tylko nowe lub zmodyfikowane pliki są kontrolowane. 
 
-Można wymusić skanera, aby ponownie sprawdzić wszystkie pliki, uruchamiając następujące polecenie:
-
-- Dla bieżącej wersji ogólnie dostępnej wersji skanera:
-    
-    Uruchom [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) z `-Type` parametr **pełne**.
-
-- Aby uzyskać wersję zapoznawczą skaner:
-    
-    Uruchom [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) z `-Reset` parametru. Skaner musi być skonfigurowana dla harmonogramu ręcznego, co wymaga `-Schedule` parametr należy ustawić **ręczne** z [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
+Można wymusić skanera, aby sprawdzić wszystkie pliki, ponownie uruchamiając [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) z `-Reset` parametru. Skaner musi być skonfigurowana dla harmonogramu ręcznego, co wymaga `-Schedule` parametr należy ustawić **ręczne** z [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
 
 Ponownie sprawdzanie wszystkich plików jest przydatne w przypadku, gdy chcesz, aby raporty mają obejmować wszystkie pliki i wybór tej konfiguracji jest zwykle używany podczas pracy w trybie wykrywania skanera. Po zakończeniu pełnego skanowania typ skanowania automatycznie zmienia się przyrostowe, aby w przypadku kolejne skanowania są skanowane tylko nowe lub zmodyfikowane pliki.
 
@@ -384,6 +363,8 @@ Inne polecenia cmdlet skanera pozwalają zmienić konto usługi i bazy danych dl
 
 - [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/Get-AIPScannerRepository)
 
+- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
+
 - [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
 
 - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
@@ -398,14 +379,9 @@ Inne polecenia cmdlet skanera pozwalają zmienić konto usługi i bazy danych dl
 
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
+- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
+
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
-
-
-Dodatkowe polecenia cmdlet z wersji zapoznawczej:
-
-- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
-
-- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 
 
 - [Aktualizacja AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)
 

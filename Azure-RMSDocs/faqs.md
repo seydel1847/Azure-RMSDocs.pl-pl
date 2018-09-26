@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d991a96dd82bdc27aed036fd05119ba3f7ca1f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f948792073872895b2c3b9075bcd83b918a8a480
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151677"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696599"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -117,7 +117,7 @@ Główne różnice między te dwa rozwiązania:
 
 |System Windows Server infrastruktury klasyfikacji plików|Skaner usługi Azure Information Protection|
 |--------------------------------|-------------------------------------|
-|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010) i korzystający z wersji zapoznawczej skanera.|
+|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).|
 |Tryb działania: <br /><br />-Czasu rzeczywistego|Tryb działania: <br /><br />-Systematycznie przeszukuje magazynów danych i tego cyklu można uruchomić pojedynczego lub wielokrotnego|
 |Obsługa typów plików: <br /><br />— Wszystkie typy plików są chronione domyślnie <br /><br />-Określonych typów plików, można wykluczyć z ochrony, edytując rejestr|Obsługa typów plików: <br /><br />— Typy plików pakietu office są chronione domyślnie <br /><br />-Określonych typów plików, można dołączyć do ochrony przez edycję rejestru|
 
