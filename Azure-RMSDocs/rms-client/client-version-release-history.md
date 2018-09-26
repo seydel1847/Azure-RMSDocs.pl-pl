@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2018
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16abff7dc802838486b1fbc365e10a8e7d25e23d
-ms.sourcegitcommit: 09d28276f911e9854207c49b1659c6a273ab7b74
+ms.openlocfilehash: 2d4c08242a0f408887a4bb3c21bfd82a767dbb00
+ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46490825"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168747"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -110,7 +110,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
         
     - *Typu* parametr zostanie usunięty, więc również są usuwane z danych wyjściowych, po uruchomieniu [Get AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration). Domyślnie tylko nowe lub zmodyfikowane pliki są kontrolowane po pierwsze skanowanie cyklu. Jeśli ustawione wcześniej *typu* parametr **pełną** ponownego skanowania wszystkich plików, uruchom teraz [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) z *resetowania* parametru. Skaner muszą również zostać skonfigurowane ręcznie harmonogramu, który wymaga *harmonogram* parametr należy ustawić **ręczne** z [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration).
     
-- Skaner domyślnej listy wykluczeń zawiera teraz pliki msg, RAR, RTF i zip. [Więcej informacji](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
+- Domyślną listę wykluczeń dla klienta i skaner obejmuje teraz pliki msg, RAR i zip. Skaner także wyklucza .rtf — pliki. [Więcej informacji](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)
 
 - Wersja zasad jest zmieniany na 1.4. Identyfikowanie numer wersji jest wymagana dla [Konfigurowanie odłączonych komputerów](client-admin-guide-customizations.md#support-for-disconnected-computers).
 

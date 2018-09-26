@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 57c410432377d5a98c132239ac1805293d1a5133
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a70610157b37df31576b4dfd3d7a00bbbd3fdcfe
+ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151490"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168713"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -167,6 +167,8 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 - [Konfigurowanie szablonów i zarządzanie nimi](configure-policy-templates.md)
 
 - [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md)
+
+- [Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](configure-policy-migrate-labels.md)
 
 ## <a name="next-steps"></a>Kolejne kroki
 

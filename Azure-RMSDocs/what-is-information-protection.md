@@ -4,16 +4,16 @@ description: Omówienie usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/15/2018
+ms.date: 09/26/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 70713a433a68a53bf981d297bc092b2a62e8eb70
-ms.sourcegitcommit: e4e27728f0a0bf2575521058cf09e79591cb9ded
+ms.openlocfilehash: 2266f67ed2bbf33778e5e32ee40411dc28804ade
+ms.sourcegitcommit: c98a6e857ed805fe088517b1c74ef2e825e1f586
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626072"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187669"
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -127,21 +127,7 @@ Dodatkowe zasoby: [informacje i pomoc techniczna dla usługi Azure Information P
 
 ### <a name="microsoft-ignite"></a>Na konferencji Microsoft Ignite
 
-**Microsoft Ignite 2017** ma wiele sesji usługi Azure Information Protection, które są dostępne na żądanie. Aby uzyskać podsumowanie anonsów, które zostały wprowadzone podczas tej konferencji, zobacz [What's new in Azure Information Protection @ konferencji Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/). 
-
-Możesz [wyszukiwania i znajdowania](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522) sesje, które są oznaczone dla usługi Azure Information Protection w witrynie internetowej konferencji Ignite. Jednak zaleca się rozpoczęcie od następujących sesji:
-
-- [Ochrona cyklu życia kompletne dane przy użyciu funkcji ochrony informacji firmy Microsoft](https://myignite.microsoft.com/videos/55397)
-
-- [Przyspiesz usługi Azure information protection wdrożenia i przyjęcia rozwiązania](https://myignite.microsoft.com/videos/53454)
-
-- [Odkryj, co nowego w usłudze Azure Information Protection i Dowiedz się więcej o plan i strategię](https://myignite.microsoft.com/videos/53453)
-
-- [Strategie zarządzania kluczami szyfrowania pod kątem zgodności](https://myignite.microsoft.com/videos/53455)
-
-- [Chroń i kontroluj poufnych wiadomości e-mail dzięki nowym funkcjom szyfrowanie wiadomości usługi Office 365](https://myignite.microsoft.com/videos/53230)
-
-Sesje dla **Ignite 2018** teraz są publikowane, znajdziesz wiele sesji, które są oznaczone [usługi Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection). Jeśli użytkownik może Dołącz do nas w Orlando, nasze pierwszych pięć sesji, które są zalecane są następujące:
+2018 r. Microsoft Ignite w Orlando ma wiele sesji, które są oznaczone [usługi Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection). Wszystkie sesje są rejestrowane, więc jeśli nie dołączysz do nas istnieje, możesz nadal obejrzeć sesje później. Nasze pierwszych pięć sesji, które są zalecane:
 
 - [BRK2006 — Użyj Microsoft informacji ochrony (MIP) w celu ochrony danych poufnych w dowolnym miejscu, przez cały cykl życia](https://myignite.techcommunity.microsoft.com/sessions/64297)
  
