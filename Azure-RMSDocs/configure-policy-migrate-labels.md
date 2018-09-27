@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: df86f13543484fb628435f1750090badf1bfe183
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: ba2578d5a340f565bbb962053a0f4604128fde35
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169145"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233749"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -100,13 +100,9 @@ Dla etykiet, które pomyślnie przeprowadzić migrację, można teraz nimi przez
 
 Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 
-- W ramach programu osób znających zagadnienia Office:
+- Aplikacje z programu osób znających zagadnienia Office. Aby uzyskać więcej informacji, zobacz "Gdy funkcja jest dostępna już dzisiaj?" sekcja [zastosować etykiety ważności do dokumentów i wiadomości e-mail w pakiecie Office](https://aka.ms/officemipdocs).
     
-    - Komputery z systemem MacOS, korzystających z programu Word, PowerPoint i Excel z pakietu Office dla komputerów Mac 2016
-    
-    - iOS i urządzenia z systemem Android, korzystających z programu Word i PowerPoint z pakietu Office Mobile.
-
-- Klienci od dostawców oprogramowania i deweloperów, które używają [MIP zestawu SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference)
+- Klienci od dostawców oprogramowania i deweloperów, które używają [MIP SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
 
 
 ## <a name="next-steps"></a>Kolejne kroki

@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 43f8fcbf090998df91cf635158eafd225c251668
-ms.sourcegitcommit: aa1207c0af8de19f973c345161845c77d9b5f579
+ms.openlocfilehash: 8c7327a5b159b06786eea6709640714bcfcfc553
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46536425"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233800"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -247,9 +247,11 @@ Aby skonfigurować to ustawienie Zaawansowane, wprowadź następujący ciąg:
 
 - Wartość: **Prawda**
 
-W wyniku tej opcji konfiguracji, gdy klient usługi Azure Information Protection chroni plik PDF, ta akcja powoduje utworzenie chroniony dokument PDF, który można otworzyć za pomocą najnowszej wersji klienta usługi Azure Information Protection dla Windows i innych plików PDF czytniki zawartości, które obsługują ISO standard do szyfrowania plików PDF. Aplikacja usługi Azure Information Protection dla systemów iOS i Android nie obsługuje obecnie ISO standard do szyfrowania plików PDF.
+W wyniku tej opcji konfiguracji, gdy klient usługi Azure Information Protection chroni plik PDF, ta akcja powoduje utworzenie chroniony dokument PDF, który można otworzyć za pomocą najnowszej wersji klienta usługi Azure Information Protection dla Windows i innych plików PDF czytniki zawartości, które obsługują ISO standard do szyfrowania plików PDF. Aplikacja usługi Azure Information Protection dla systemów iOS i Android nie obsługuje obecnie ISO standard do szyfrowania plików PDF. Aby uzyskać najnowsze informacje o programie Adobe Acrobat Reader, zobacz [od października, użyj Adobe Acrobat czytnika plików PDF chronionych przez Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738).
 
 Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera.
+
+Aby uzyskać więcej informacji na temat szyfrowania plików PDF, zobacz wpis w blogu [nową obsługę szyfrowania plików PDF z Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570).
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>Aby przekonwertować istniejące pliki ppdf chronionych plików PDF
 

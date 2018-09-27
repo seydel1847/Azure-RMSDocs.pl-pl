@@ -4,16 +4,16 @@ description: Omówienie usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 2266f67ed2bbf33778e5e32ee40411dc28804ade
-ms.sourcegitcommit: c98a6e857ed805fe088517b1c74ef2e825e1f586
+ms.openlocfilehash: 2d2996d89e7f8574d1dba7544474c18ad28c0de9
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187669"
+ms.locfileid: "47233766"
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -138,6 +138,8 @@ Dodatkowe zasoby: [informacje i pomoc techniczna dla usługi Azure Information P
 - [BRK3397 — ochrona i kontrola poufnych wiadomości e-mail przy użyciu szyfrowanie wiadomości usługi Office 365](https://myignite.techcommunity.microsoft.com/sessions/64327)
 
 - [THR2003 — odnajdywanie danych raportowania użycia i analizy wszystkich danych z usługą Microsoft Information Protection](https://myignite.techcommunity.microsoft.com/sessions/64301)
+
+Do zestawienia anonsów, które zostały wprowadzone podczas tej konferencji Ignite, zobacz wpis w blogu [ogłaszamy dostępność funkcji ochrony informacji w celu ochrony danych poufnych](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967).
 
 
 ## <a name="next-steps"></a>Kolejne kroki

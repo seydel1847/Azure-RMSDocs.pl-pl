@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/24/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2d4c08242a0f408887a4bb3c21bfd82a767dbb00
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: f74faf0b6ae218ceb5f553252bc15df96b1e83b2
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168747"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211262"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -48,7 +48,9 @@ Jeśli masz wersję klienta, która jest nowsza niż 1.37.19.0, jest kompilacji 
 
 **Wydana**: 20/09/2018
 
-Umożliwia obsługę przyszłych funkcji.
+**Nowe funkcje:**
+
+- Obsługa [centralnej funkcji raportowania](../reports-aip.md) dla funkcji analizy usługi Azure Information Protection ogłoszeniem na konferencji Microsoft Ignite.
 
 ## <a name="version-137190"></a>Wersja 1.37.19.0
 

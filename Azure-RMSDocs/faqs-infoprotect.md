@@ -4,18 +4,18 @@ description: Masz pytanie związane z usługą Azure Information Protection, kt�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 6048867049046384a7a226d3caeed10fd09bb264
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a6df966c75a1d556aeb3341804fa18d912389e24
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147580"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233732"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -29,13 +29,17 @@ Kilka minut wystarczy do zapoznania się z naszym samouczkiem Szybki start: [Sam
 
 W blogu [dotyczącym pakietu Enterprise Mobility i zabezpieczeń](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) i witrynie [Yammer](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all) będą się pojawiać ogłoszenia o dostępności dodatkowych funkcji i możliwości klasyfikacji. W bieżącej wersji występuje kilka ograniczeń, m.in.:
 
-- Brak centralnego rejestrowania dla funkcji klasyfikacji i etykietowania.
-
-- Brak możliwości etykietowania w aplikacjach pakietu Office dla urządzeń przenośnych (iOS i Android) i komputerów Mac lub aplikacji sieci web pakietu Office (Office Online).
+- Brak możliwości etykietowania w aplikacjach sieci web pakietu Office (Office Online).
 
 - Brak integracji klasyfikacji i etykietowania z programem Exchange Online i usługą SharePoint Online.
 
-Poprosić o nowe funkcje i oddawać głosy na żądania, odwiedzając [witryny User Voice](https://msip.uservoice.com/) usługi Azure Information Protection.
+> [!NOTE]
+> **Teraz w wersji zapoznawczej**:
+> - Scentralizowane raportowanie dla klasyfikacji i etykietowania. Aby uzyskać więcej informacji, zobacz [centralnej funkcji raportowania usługi Azure Information Protection](reports-aip.md).
+> - Możliwości w aplikacji pakietu Office dla urządzeń przenośnych (iOS i Android) i komputerów Mac dla klientów, którzy są w wyrażeniu zgody na uczestnictwo w celu etykietowanie [Office niejawnego programu testów](https://support.office.com/article/what-is-office-insider-f4208185-b63a-4b68-9c7a-9a32d2411c16). Aby uzyskać więcej informacji, zobacz [zastosować etykiety ważności do dokumentów i wiadomości e-mail w pakiecie Office](https://aka.ms/officemipdocs).
+
+
+Poprosić o nowe funkcje i oddawać głosy na żądania, odwiedzając [witryny UserVoice](https://msip.uservoice.com/) usługi Azure Information Protection.
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>Czy muszę być administratorem globalnym, aby konfigurować klasyfikację i etykiety?
 

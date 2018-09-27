@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f147ad04ec61e7a5796cbb1f02c7fa33afdeae7d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149688"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211330"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -48,6 +48,7 @@ Oprócz tego rejestrowania użycia, także mają następujące opcje rejestracji
 |Dzienniki zdarzeń klienta|Działania dla klienta usługi Azure Information Protection, rejestrowane w lokalnym Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. <br /><br />Aby uzyskać więcej informacji, zobacz [rejestrowanie użycia klienta usługi Azure Information Protection](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client).|
 |Pliki dziennika klienta|Rozwiązywanie problemów z dzienników dla klienta usługi Azure Information Protection znajduje się w **%localappdata%\Microsoft\MSIP**. <br /><br />Pliki te zostały zaprojektowane dla programu Microsoft Support.|
 
+Ponadto informacje z dzienników użycia klienta usługi Azure Information Protection i skanera usługi Azure Information Protection jest zbierane i zagregowane, aby tworzyć raporty w witrynie Azure portal. Aby uzyskać więcej informacji, zobacz [raportowania usługi Azure Information Protection](reports-aip.md).
 
 Aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management, należy użyć poniższych sekcjach. 
 
@@ -58,8 +59,6 @@ Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest dom
 > Przechowywanie dziennika lub korzystanie z funkcji rejestrowania nie wiąże się z żadnymi dodatkowymi kosztami.
 > 
 > Do korzystania z funkcji rejestrowania użycia usługi Azure Rights Management przed lutym 2016 r. potrzebna była subskrypcja platformy Azure oraz wystarczająca ilość miejsca w magazynie Azure, co nie jest już wymagane.
-
-
 
 ## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>Uzyskiwanie dostępu i korzystanie z dzienników użycia usługi Azure Rights Management
 Usługa Azure Rights Management zapisuje dzienniki na koncie magazynu Azure w postaci serii obiektów blob. Każdy obiekt blob zawiera jeden lub większą liczbę rekordów w rozszerzonym formacie W3C dziennika. Nazwy obiektów blob są liczbami odpowiadającymi kolejności ich utworzenia. Sekcja [Interpretowanie dzienników użycia usługi Azure Rights Management](#how-to-interpret-your-azure-rights-management-usage-logs) w dalszej części tego dokumentu zawiera więcej informacji na temat zawartości dzienników i ich tworzenia.

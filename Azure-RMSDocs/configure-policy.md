@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a70610157b37df31576b4dfd3d7a00bbbd3fdcfe
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: e63b98118cda3a927577a90c7c0999d8781f8d93
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168713"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211296"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -173,4 +173,6 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 ## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
+
+Aby dowiedzieć się, jaka jest wydajność swoich zasad, zobacz [raportowania usługi Azure Information Protection](reports-aip.md).
 
