@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8c7327a5b159b06786eea6709640714bcfcfc553
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233800"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403101"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -90,9 +90,9 @@ Ponadto należy sprawdzić, czy te komputery nie mają plik o nazwie **Policy.ms
 
 ## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>Modyfikowanie adresu e-mail dla raportu, łącze problem
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie ma zastosowanie tylko do wersji zapoznawczej wersji klienta usługi Azure Information Protection, ponieważ ogólnodostępnej wersji klienta nie są wyświetlane **zgłosić problem** łącza.
 
-Po wybraniu **zgłosić problem** link z **Pomoc i opinie** dialogowym klient domyślnie Microsoft adres jest wypełniony w wiadomości e-mail. Użyj następującego Zaawansowane ustawienia do modyfikowania tego adresu klienta. Na przykład określić `mailto:helpdesk@contoso.com` na adres e-mail pomocy technicznej. 
+Po wybraniu **zgłosić problem** link z **Pomoc i opinie** klienta okno dialogowe z wersji zapoznawczych klienta, domyślnie Microsoft adres jest wypełniony w wiadomości e-mail. Użyj następującego Zaawansowane ustawienia do modyfikowania tego adresu klienta. Na przykład określić `mailto:helpdesk@contoso.com` na adres e-mail pomocy technicznej. 
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
@@ -574,7 +574,7 @@ Można również skonfigurować reguły przepływu poczty na potrzeby mapowania 
 - Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli **msip_labels** nagłówek zawiera nazwę Twojej etykiety (na przykład **ogólne**) i stosować wiadomości Klasyfikacja, który jest mapowany do tej etykiety.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po dostosowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi, które mogą być przydatne podczas obsługi tego klienta:
 
 - [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)

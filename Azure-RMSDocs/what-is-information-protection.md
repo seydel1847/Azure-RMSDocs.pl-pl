@@ -8,12 +8,12 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 2d2996d89e7f8574d1dba7544474c18ad28c0de9
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: e2d67b103f727d6e5c5004844b83d13fe0296989
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233766"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403067"
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -129,9 +129,9 @@ Dodatkowe zasoby: [informacje i pomoc techniczna dla usługi Azure Information P
 
 2018 r. Microsoft Ignite w Orlando ma wiele sesji, które są oznaczone [usługi Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection). Wszystkie sesje są rejestrowane, więc jeśli nie dołączysz do nas istnieje, możesz nadal obejrzeć sesje później. Nasze pierwszych pięć sesji, które są zalecane:
 
-- [BRK2006 — Użyj Microsoft informacji ochrony (MIP) w celu ochrony danych poufnych w dowolnym miejscu, przez cały cykl życia](https://myignite.techcommunity.microsoft.com/sessions/64297)
+- [BRK2006 — Użyj Microsoft informacji ochrony (MIP) w celu ochrony danych poufnych w dowolnym miejscu, przez cały cykl życia](https://myignite.techcommunity.microsoft.com/sessions/64297) — Obejrzyj [wideo w serwisie YouTube](https://youtu.be/gmHVF-1cLXA)
  
-- [BRK3002 - zrozumienie, jak możliwości Microsoft Information Protection współpracują ze sobą, aby chronić poufne informacje z różnych urządzeń, aplikacji i usług](https://myignite.techcommunity.microsoft.com/sessions/64299)
+- [BRK3002 - zrozumienie, jak możliwości Microsoft Information Protection współpracują ze sobą, aby chronić poufne informacje z różnych urządzeń, aplikacji i usług](https://myignite.techcommunity.microsoft.com/sessions/64299) — Obejrzyj [wideo w serwisie YouTube](https://youtu.be/kL9Y7NGTyQQ)
 
 - [BRK3009 - przyspieszenia wdrożenia i przyjęcia rozwiązania Microsoft Information Protection](https://myignite.techcommunity.microsoft.com/sessions/64283)
 
@@ -142,7 +142,7 @@ Dodatkowe zasoby: [informacje i pomoc techniczna dla usługi Azure Information P
 Do zestawienia anonsów, które zostały wprowadzone podczas tej konferencji Ignite, zobacz wpis w blogu [ogłaszamy dostępność funkcji ochrony informacji w celu ochrony danych poufnych](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Przeczytaj wpis w blogu: [Azure Information Protection: Ready, set, protect!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/) (Azure Information Protection: przygotowanie, ustawianie, ochrona)
 

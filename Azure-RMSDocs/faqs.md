@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/17/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f948792073872895b2c3b9075bcd83b918a8a480
-ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
+ms.openlocfilehash: 0acb14314fd15d45ee013ef920b51f6427768c81
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45696599"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403050"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -103,9 +103,11 @@ Informacje dodatkowe:
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Jaka jest różnica między etykiety usługi Azure Information Protection i etykiety w usłudze Office 365?
 
-Etykiety usługi Azure Information Protection pozwalają zastosować spójne zasady klasyfikacji i ochrony dokumentów i wiadomości e-mail, czy są one w środowisku lokalnym lub w chmurze. Ta klasyfikacja i ochrona jest niezależny od której jest przechowywana zawartość lub sposobu przenoszenia. [Etykiety w Office 365 Security & Compliance](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30) pozwalają klasyfikowania dokumentów i wiadomości e-mail na potrzeby inspekcji i przechowywania w usługach Office 365 po tej zawartości. 
+Etykiety usługi Azure Information Protection pozwalają zastosować spójne zasady klasyfikacji i ochrony dokumentów i wiadomości e-mail, czy są one w środowisku lokalnym lub w chmurze. Ta klasyfikacja i ochrona jest niezależny od której jest przechowywana zawartość lub sposobu przenoszenia. Niedawna usługi Office 365 było po prostu [etykiety przechowywania](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30) umożliwiające klasyfikowania dokumentów i wiadomości e-mail na potrzeby inspekcji i przechowywania w usługach Office 365 po tej zawartości. 
 
-Już dziś Zastosuj i niezależnie zarządzać tych etykiet, ale firma Microsoft pracuje w kierunku kompleksowe i ujednolicone strategii etykietowania dla wielu usług, które obejmują usługi Azure Information Protection, Office 365, Microsoft Cloud App Security i Windows Ochrona informacji. Prawdopodobnie słyszałeś tej strategii, określane jako "Microsoft Information Protection" (MIP). Ten sam schemat etykietowania i magazynu będzie również dostępna dla dostawców oprogramowania. Aby uzyskać więcej informacji, zobacz w blogu, [spójnych zasad etykietowania i ochrony, do usługi Office 365 i Azure Information Protection](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Consistent-labeling-and-protection-policies-coming-to-Office-365/ba-p/161553).
+Microsoft pracował nad kierunku kompleksowe i ujednolicone strategii etykietowania dla wielu usług, które obejmują usługi Azure Information Protection, Office 365, Microsoft Cloud App Security i Windows Information Protection.  Prawdopodobnie słyszałeś tej strategii, określane jako "Microsoft Information Protection". Ten sam schemat etykietowania i magazynu jest również udostępniane dostawcom oprogramowania przy użyciu zestawu SDK MIP.
+
+Ogłoszeniem na konferencji Microsoft Ignite w 2018 r., możesz teraz rozpocznie się opcja skonfigurowania **etykiety ważności** oprócz przechowywania etykiet w Centrum zgodności i zabezpieczeń usługi Office 365. Aby uzyskać więcej informacji na temat postępu na posiadanie etykiety, które są unified w różnych usługach, przeczytaj wpis w blogu [ogłaszamy dostępność funkcji ochrony informacji w celu ochrony danych poufnych](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967).
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Jaka jest różnica między infrastruktury klasyfikacji plików systemu Windows Server i skaner usługi Azure Information Protection?
 

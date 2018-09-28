@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: ba2578d5a340f565bbb962053a0f4604128fde35
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: 64063af186f01a5829b7aa668260928e3b13656d
+ms.sourcegitcommit: 304702a3f2f2ab2b32493c4aedeb5ee8424b925c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233749"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47415013"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -100,12 +100,11 @@ Dla etykiet, które pomyślnie przeprowadzić migrację, można teraz nimi przez
 
 Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 
-- Aplikacje z programu osób znających zagadnienia Office. Aby uzyskać więcej informacji, zobacz "Gdy funkcja jest dostępna już dzisiaj?" sekcja [zastosować etykiety ważności do dokumentów i wiadomości e-mail w pakiecie Office](https://aka.ms/officemipdocs).
+- Aplikacje z programu osób znających zagadnienia Office. Aby uzyskać więcej informacji, zobacz [których ta funkcja jest dostępna już dzisiaj?](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US#bkmk_whereavailable) sekcji w dokumentacji pakietu Office.
     
 - Klienci od dostawców oprogramowania i deweloperów, które używają [MIP SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Jeśli jesteś nowym użytkownikiem Centrum zabezpieczeń i zgodności, zobacz [zabezpieczeń usługi Office 365 i zgodność](https://docs.microsoft.com/office365/securitycompliance/?redirectSourcePath=%252fen-us%252farticle%252fOverview-of-security-and-compliance-in-Office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2 )
-
+Aby uzyskać więcej informacji o konfigurowaniu etykiet zmigrowane w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz w blogu, [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) .

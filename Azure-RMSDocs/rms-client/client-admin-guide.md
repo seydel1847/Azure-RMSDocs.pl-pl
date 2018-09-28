@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63e84e8a5d072f0bb57bb72754f97ca8963a2c76
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149110"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403016"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -106,9 +106,7 @@ Gdy klient jest zainstalowany, użyj **Pomoc i opinie** opcję, aby otworzyć **
 
 Link **Powiedz mi więcej** domyślnie prowadzi do witryny internetowej usługi [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection), ale można go skonfigurować dla niestandardowego adresu URL jako jedno z [ustawień zasad](../configure-policy-settings.md) w zasadach usługi Azure Information Protection.
 
-Użyj **Prześlij nam opinię** link (ogólnodostępnej wersji), aby wysłać propozycje lub prośby do zespołu usługi Information Protection. Nie należy używać tej opcji w celu uzyskania pomocy technicznej. W takim przypadku należy zapoznać się z artykułem [Opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources). 
-
-**Zgłosić problem** link zastępuje **Prześlij nam opinię** łącze w wersji zapoznawczej klienta. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft, ale można skonfigurować ciągu HTTP dla użytkowników, określając [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link). Na przykład określić adres e-mail pomocy technicznej.
+**Zgłosić problem** łącza są wyświetlane w wersji zapoznawczej wersji klienta i nie w wersji ogólnodostępnej. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft, ale można skonfigurować ciągu HTTP dla użytkowników, określając [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link). Na przykład określić adres e-mail pomocy technicznej.
 
 Funkcja **Wyeksportuj dzienniki** umożliwia automatyczne zebranie i dołączenie plików dziennika klienta usługi Azure Information Protection w przypadku wyświetlenia prośby o ich przesłanie zespołowi pomocy technicznej firmy Microsoft. Ta opcja umożliwia także wysyłanie plików dziennika zespołowi pomocy technicznej przez użytkowników końcowych.
 
@@ -222,7 +220,7 @@ Aby odinstalować klienta programu, można użyć dowolnej z następujących opc
 
 - Uruchom plik wykonywalny z opcją **/uninstall**. Na przykład: `AzInfoProtection.exe /uninstall`
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby zainstalować klienta, zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md).
 
 Jeśli klient został już zainstalowany, zobacz następujące czynności, aby uzyskać dodatkowe informacje, przydatnymi przy obsłudze tego klienta:

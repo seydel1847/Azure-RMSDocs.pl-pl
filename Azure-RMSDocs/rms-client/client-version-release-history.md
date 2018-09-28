@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f74faf0b6ae218ceb5f553252bc15df96b1e83b2
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211262"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403084"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -52,6 +52,7 @@ Jeśli masz wersję klienta, która jest nowsza niż 1.37.19.0, jest kompilacji 
 
 - Obsługa [centralnej funkcji raportowania](../reports-aip.md) dla funkcji analizy usługi Azure Information Protection ogłoszeniem na konferencji Microsoft Ignite.
 
+
 ## <a name="version-137190"></a>Wersja 1.37.19.0
 
 **Wydana**: 09/17/2018 r.
@@ -69,8 +70,6 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 - Obsługa etykietowania **Strict otwartego dokumentu XML** format w plikach programu Word, Excel i PowerPoint. Aby uzyskać więcej informacji na temat formatów Open XML, zobacz w blogu pakietu Office, [nowe opcje format pliku w nowy pakiet Office](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/). 
 
 - Obsługa plików, które są chronione przez Secure Islands, gdy te pliki są inne niż dokumentów PDF i pakietu Office. Na przykład chronionych plików tekstowych i obrazów. Lub rozszerzenie nazwy pliku plików, które mają plik pfile. Ta obsługa umożliwia nowe scenariusze, takie jak skanera usługi Azure Information Protection będzie mogła sprawdzić te pliki do poufnych informacji i automatycznie relabeling je do usługi Azure Information Protection. [Więcej informacji](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
-
-- **Prześlij nam opinię** łącze w **Pomoc i opinie** okno dialogowe jest zastępowany **zgłosić problem**, które można dostosować. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft. Można zmienić ten adres e-mail, tak aby użytkownicy wybierz tę opcję, używał ciągu HTTP, który określisz. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. Aby zmodyfikować ten adres, użyj [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
 
 - Nowe zaawansowane ustawienia klienta do usunięcia, nagłówki i stopki, które zostały zastosowane do dokumentów przez innych rozwiązań etykietowania. [Więcej informacji](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
@@ -91,6 +90,8 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
     - W przypadku dokumentów, które są chronione w bibliotekach programu SharePoint, jeśli *DefaultOwner* parametr nie jest używany do repozytorium danych, wartość edytora programu SharePoint jest teraz używana jako wartość domyślną, zamiast autora.
     
     - Skaner raporty zawierają "Ostatnio modyfikowany przez", dokumentów pakietu Office.
+    
+    - Można teraz chronić wszystkie typy plików za pomocą `*` symboli wieloznacznych podczas edycji rejestru zgodnie z opisem w [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) instrukcje.
 
 - Podczas klasyfikowania i ochrony za pomocą programu PowerShell lub skaner metadane dokumentu pakietu Office jest ono usuwane lub szyfrowane.
 
@@ -105,7 +106,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 - Nie wyświetla ikonę Usuń etykietę w aplikacjach klienckich (Word, Excel, PowerPoint i Outlook) po skonfigurowaniu [ustawienie zasad](../configure-policy-settings.md) z **wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**.
 
 **Dodatkowe zmiany**:
-   
+
 - Aby uzyskać [AIPScannerConfiguration zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration):
     
     - Wartości *harmonogram* parametru nie są już **OneTime**, **ciągłe**, i **nigdy**, ale teraz **ręczne** i **zawsze**.
@@ -115,6 +116,8 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 - Domyślną listę wykluczeń dla klienta i skaner obejmuje teraz pliki msg, RAR i zip. Skaner także wyklucza .rtf — pliki. [Więcej informacji](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)
 
 - Wersja zasad jest zmieniany na 1.4. Identyfikowanie numer wersji jest wymagana dla [Konfigurowanie odłączonych komputerów](client-admin-guide-customizations.md#support-for-disconnected-computers).
+
+- **Prześlij nam opinię** łącze w **Pomoc i opinie** okno dialogowe zostanie usunięty. Tymczasowo zastąpione **zgłosić problem**, ale link ten będzie wyświetlać teraz w wersji zapoznawczej tylko w wersji. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft, ale możesz zmienić ten adres e-mail, na ciągu HTTP, który określisz. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. Aby zmodyfikować ten adres, użyj [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
 
 ## <a name="version-12950"></a>Wersja 1.29.5.0 
 
@@ -287,7 +290,7 @@ Poprawki dla wygody użytkowników, które obejmują:
 
 - Etykieta nadrzędna nie jest wyświetlany, gdy jej etykiet podrzędnych jest skonfigurowany do ochrony, a klient nie ma wersji pakietu Office, który obsługuje ochronę. 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o instalowaniu i używaniu klienta: 
 
