@@ -1,18 +1,17 @@
 ---
 title: Pojęcia — przy użyciu programu PowerShell w celu uzyskania tokenu dostępu.
 description: Ten artykuł pomoże Ci zrozumieć, jak można uzyskać tokenu dostępu OAuth2 przy użyciu programu PowerShell. Jest to wymagane przez implementację delegata uwierzytelniania.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: b73453423f2705f7c5044f927b4a6b5a0a351f77
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 3206fb99cd72c5d609375ec673e7798d33c735c3
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214635"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453388"
 ---
 # <a name="acquire-an-access-token-powershell"></a>Uzyskiwanie tokenu dostępu (PowerShell)
 
@@ -86,7 +85,4 @@ $response.AccessToken | clip
 
 Skopiuj token ze Schowka w celu auth.cpp jako wartość pozycji `string mToken`, zastępując ciąg "token tutaj" powyżej. Uruchamiając ponownie skrypt może być wymagane, w zależności od tego, jak długo trwa następujące kroki.
 
-## <a name="creating-the-authdelegateimpl-object"></a>Tworzenie obiektu AuthDelegateImpl.
-
-Używanie delegata uwierzytelniania 
 

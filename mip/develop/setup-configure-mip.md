@@ -1,18 +1,17 @@
 ---
 title: Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji
 description: Zawiera wymagania wstępne dotyczące instalacji i konfiguracji, aby można było używać aplikacji utworzonych za pomocą zestawu SDK usługi Microsoft Information Protection.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 299d965ac3a9b081d99b015b46dbd69f3d67dca9
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 9257c72de223565e5259600d1680e78da0b7f544
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214519"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446417"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -21,8 +20,8 @@ Przewodnik Szybki Start i samouczków artykułów jest wyśrodkowywana dotycząc
 Pamiętaj przed rozpoczęciem pracy, zobacz następujące tematy:
 
 - [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
-- [Co to jest usługa Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/understand-explore/what-is-information-protection)
-- [Jak działa ochrona usługi Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
+- [Co to jest usługa Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
+- [Jak działa ochrona usługi Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 
 Zestaw SDK MIP jest obsługiwane na następujących platformach:
 
@@ -45,7 +44,7 @@ Wiele przykładowych zestawach SDK wymaga dostępu do subskrypcji usługi Office
 | Office 365 Enterprise E3 lub E5 | https://products.office.com/business/office-365-enterprise-e3-business-software |
 | Pakiet Enterprise Mobility i zabezpieczeń E3 lub E5 | https://www.microsoft.com/cloud-platform/enterprise-mobility-security |
 | Usługa Azure Information Protection Premium P1 lub P2 | https://azure.microsoft.com/pricing/details/information-protection/ |
-| Rozwiązania Microsoft 365 E3 i E5, F1 | https://www.microsoft.com/en-us/microsoft-365/compare-all-microsoft-365-plans | 
+| Rozwiązania Microsoft 365 E3 i E5, F1 | https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans | 
 
 ## <a name="configure-your-client-workstation"></a>Konfigurowanie stacji roboczej użytkownika
 
@@ -171,16 +170,6 @@ Po zakończeniu rejestracji aplikacji i uprawnienia do interfejsu API powinno wy
 
 
 Aby uzyskać więcej informacji na temat dodawania interfejsów API i uprawnienia do rejestracji, zobacz [aktualizowanie aplikacji, konfigurowanie aplikacji klienckiej dostęp do sekcji dotyczącej interfejsów API sieci web](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application). Tutaj znajdziesz informacje na temat dodawania interfejsów API i uprawnienia wymagane przez aplikację kliencką.  
-
-## <a name="tbd-define-label-taxonomy-and-protection-settings"></a>Do ustalenia: Zdefiniuj taksonomię etykiety i ustawienia ochrony?
-
-Zobacz [pojęcia etykiety klasyfikacji](concept-classification-labels.md).
-
-* Zawierają linki do SCC konfiguracji.
-* Podaj szczegóły na uprawnienia wymagane do konfiguracji etykiety.
-  - Administratorem globalnym, administratorem zgodności lub administratorem usługi AIP
-* Zawierają szczegółowe informacje dotyczące etykietowania taksonomii najlepszych rozwiązań.
-  - Podaj łącza do dokumentacji usługi AIP, prezentacji Ignite 2017 Tom firmy
 
 ## <a name="next-steps"></a>Następne kroki
 

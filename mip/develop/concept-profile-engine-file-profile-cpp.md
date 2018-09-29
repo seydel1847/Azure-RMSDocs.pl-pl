@@ -1,33 +1,32 @@
 ---
 title: Pojęcia — interfejs API plików obiektu profilu
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące obiektu profilu pliku, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 52839df8f98613e02d01ab70a75d6d879ee70594
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 33ec266068d15e827267b7d518344aebd0f8f072
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214273"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445907"
 ---
-# <a name="file-api-profile"></a>Profil specyfikacji File API
+# <a name="microsoft-information-protection-sdk---file-api-profile-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia profilu specyfikacji File API
 
 Profil, który jest klasą głównego dla wszystkich operacji w zestawie SDK MIP. Przed rozpoczęciem korzystania z funkcjonalności interfejsu API plików `FileProfile` musi zostać utworzona, a wszystkie przyszłe operacje zostaną wykonane w profilu lub przez inne obiekty *dodano* do profilu.
 
 Istnieje kilka wstępne kodu, które powinny zostać spełnione przed przystąpieniem do tworzenia wystąpienia profilu:
 
-- [AuthDelegateImpl]() zaimplementowany, aby rozszerzyć `mip::AuthDelegate`.
-- [ConsentDelegateImpl]() zaimplementowany, aby rozszerzyć `mip::ConsentDelegate`.
-- Aplikacja została [zarejestrowane w usłudze Azure Active Directory]() i klienta z Identyfikatorem ustalone w plikach aplikacji lub konfiguracji. 
+- `AuthDelegateImpl` zaimplementowany, aby rozszerzyć `mip::AuthDelegate`.
+- `ConsentDelegateImpl` zaimplementowany, aby rozszerzyć `mip::ConsentDelegate`.
+- Aplikacja została [zarejestrowane w usłudze Azure Active Directory](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad.md) i klienta z Identyfikatorem ustalone w plikach aplikacji lub konfiguracji. 
 - Klasa dziedziczy `mip::FileProfile::Observer` został prawidłowo zaimplementowany.
 
 ## <a name="load-a-profile"></a>Załaduj profil
 
-Za pomocą [ProfileObserver](), [ConsentDelegateImpl](), i [AuthDelegateImpl]() zdefiniowane, `mip::FileProfile` mogą być utworzone. Tworzenie `mip::FileProfile` wymaga obiektu [ `mip::FileProfile::Settings` ](reference/class_mip_fileprofile_settings.md) do przechowywania wszystkich informacji o ustawieniach dotyczące `FileProfile`.
+Za pomocą `ProfileObserver`, `ConsentDelegateImpl`, i `AuthDelegateImpl` zdefiniowane, `mip::FileProfile` mogą być utworzone. Tworzenie `mip::FileProfile` wymaga obiektu [ `mip::FileProfile::Settings` ](reference/class_mip_fileprofile_settings.md) do przechowywania wszystkich informacji o ustawieniach dotyczące `FileProfile`.
 
 ### <a name="fileprofilesettings-parameters"></a>Parametry FileProfile::Settings
 
@@ -35,9 +34,9 @@ Za pomocą [ProfileObserver](), [ConsentDelegateImpl](), i [AuthDelegateImpl]() 
 
 - `std::string path`: Ścieżka pliku w ramach której rejestrowanie, dane telemetryczne i inne trwały stan jest przechowywany.
 - `bool useInMemoryStorage`: Określa, czy wszystkie stany powinny być przechowywane w pamięci, w przeciwieństwie do na dysku.
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate` (zobacz [sekcji uwierzytelnianie]())
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate` 
 - `std::shared_ptr<mip::ConsentDelegate>`: 
-- `std::shared_ptr<mip::FileProfile::Observer> observer`: Wspólny wskaźnik do [ `FileProfile::Observer` ]() implementacji.
+- `std::shared_ptr<mip::FileProfile::Observer> observer`: Wspólny wskaźnik do `FileProfile::Observer` implementacji.
 - `mip::ApplicationInfo applicationInfo`: obiekt. Służy do definiowania informacje dotyczące aplikacji, która zużywa zestawu SDK.
 
 W poniższych przykładach pokazano sposób tworzenia `profileSettings` obiektu przy użyciu lokalnego magazynu do przechowywania stanów, a także w pamięci tylko. Zarówno przyjęto założenie, że `authDelegateImpl` obiekt został już utworzony.

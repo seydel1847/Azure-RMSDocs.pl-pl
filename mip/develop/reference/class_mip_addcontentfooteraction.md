@@ -1,5 +1,20 @@
+---
+title: Klasa mip AddContentFooterAction
+description: Odwołanie do klasy mip AddContentFooterAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 73f641d965c3cf0236919557128af2ed07705672
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445839"
+---
 # <a name="class-mipaddcontentfooteraction"></a>Klasa mip::AddContentFooterAction 
-Klasy akcji, która określa Dodawanie zawartości stopki do dokumentu.
+Klasa akcji, która określa Dodawanie zawartości stopki do dokumentu.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
@@ -43,7 +58,7 @@ Pobierz rozmiar czcionki używany do wyświetlania zawartości stopki.
 Pobierz kolor czcionki używany do wyświetlania zawartości stopki.
 
   
-**Zwraca**: kolor czcionki jako ciąg (e.g."#000000").
+**Zwraca**: kolor czcionki jako ciąg (na przykład, "#000000").
   
 ### <a name="getalignment"></a>GetAlignment
 Uzyskaj wyrównanie stopki.
@@ -57,7 +72,7 @@ Uzyskaj wyrównanie stopki.
 Pobierz margines stopki z dołu.
 
   
-**Zwraca**: liczba całkowita reprezentująca marginesy w dolnej części dokumentu (np. 10 mm).
+**Zwraca**: marginesy w dolnej części dokumentu (na przykład 10 mm).
   
 ### <a name="actiontype"></a>ActionType
 Pobierz typ [akcji](class_mip_action.md).

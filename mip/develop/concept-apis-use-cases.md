@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — interfejsy API w zestawie SDK MIP.
 description: Ten artykuł pomoże zrozumieć 3 typy interfejsów API w zestawie SDK MIP, jak są ze sobą powiązane i przypadki użycia dla każdej.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 02fc1ef3c53cd94c35943a4a093c42968c251cdf
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: a625df159a00a955d155850ff4e326d1e0d204e5
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214471"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453336"
 ---
-# <a name="mip-sdk-apis"></a>Interfejsy API zestawu SDK MIP
+# <a name="microsoft-information-protection-sdk---api-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia dotyczące interfejsu API
 
 Zestaw SDK MIP składa się z trzech interfejsów API:
 
@@ -55,3 +54,7 @@ Interfejs API plików jest klasą abstrakcyjną ochrony i interfejsów API zasad
 - Broker zabezpieczeń dostępu do chmury (CASB) są opracowywane w danej organizacji. Klienci, poproś o możliwość stosowania etykiet MIP dla Microsoft Office i PDF, dokumentów. Następnie umożliwić interfejsu API plików można wyświetlić listę etykiet skonfigurowanych zezwolić klientom do tworzenia zasad, które będzie zastosuj odpowiednią etykietę. Interfejs API, przyjęcie identyfikator etykiety plików będzie zajmiemy się resztą, pliki spełniające kryteria klienta.
 
 - Twoja organizacja udostępnia rozwiązania zapobiegania utracie danych opartych na usługach i/lub CASB, które monitoruje aplikacje SaaS dla działania pliku. Aby ograniczyć ryzyko utraty danych lub zagrożenia, gdzie dane są chronione przez MIP, usługa musi umożliwiać do skanowania zawartości plików chronionych. Za pomocą interfejsu API plików w obsługiwanych formatów, usługa jest użytkownika uprzywilejowanego, można usunąć ochronę, skanowania zawartości, aby ograniczyć lub poufnej zawartości odrzucić wynik w postaci zwykłego tekstu i zastosować reguły usługi do raportu lub eliminowania ryzyka, jeśli znaleziono.
+
+## <a name="next-steps"></a>Kolejne kroki
+
+Teraz, gdy masz ogólne informacje o dostępnych interfejsach API MIP i sposoby ich używania, kontynuuj [pojęć dotyczących obiektu profilu i aparat](concept-profile-engine-cpp.md). Te pojęcia mają zasadnicze znaczenie i zastosować do wszystkich zestawów MIP API.

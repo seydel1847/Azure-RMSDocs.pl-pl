@@ -1,12 +1,27 @@
+---
+title: Klasa ustawień PolicyEngine mipmapy
+description: Dokumentacja dotycząca klasy ustawienia PolicyEngine mipmapy
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 6ac94d1e34615a0248dac85f28c55154b127574f
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446349"
+---
 # <a name="class-mippolicyenginesettings"></a>Klasa mip::PolicyEngine::Settings 
-Wystąpienie tej klasy z odpowiednimi parametrami powinien zapewniać można zainicjować aparatu.
+Definiuje ustawienia skojarzone z [PolicyEngine](class_mip_policyengine.md).
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
 --------------------------------|---------------------------------------------
- Ustawienia publicznego (const std::string & engineId, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  Skonstruować wystąpienia z podanych parametrów. Umożliwia to tworzenie [ustawienia](class_mip_policyengine_settings.md) wywołać LoadEngineAsync można załadować aparatu istniejących.
- Ustawienia publicznego (const tożsamości i tożsamości, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  Umożliwia to tworzenie [ustawienia](class_mip_policyengine_settings.md) wywołać AddEngineAsync, aby dodać nowy aparat.
- publiczne std::string const & GetEngineId() const  |  Pobierz identyfikator aparatu.
+ Ustawienia publicznego (const std::string & engineId, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [PolicyEngine::Settings](class_mip_policyengine_settings.md) konstruktora do ładowania aparat istniejących.
+ Ustawienia publicznego (const tożsamości i tożsamości, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [PolicyEngine::Settings](class_mip_policyengine_settings.md) Konstruktor do tworzenia nowego aparatu.
+ publiczne std::string const & GetEngineId() const  |  Pobierz identyfikator aparatu
  publiczne SetEngineId void (const std::string & identyfikator)  |  Ustaw identyfikator aparatu.
  Identyfikator publiczny const & GetIdentity() const  |  Pobierz obiekt tożsamości.
  publiczne SetIdentity void (const tożsamości i tożsamości)  |  Obiekt tożsamości zestawu.
@@ -21,10 +36,10 @@ publiczne std::vector const < std::pair < std::string, std::string >> & GetCusto
 ## <a name="members"></a>Elementy członkowskie
   
 ### <a name="settings"></a>Ustawienia
-Skonstruować wystąpienia z podanych parametrów. Umożliwia to tworzenie [ustawienia](class_mip_policyengine_settings.md) wywołać LoadEngineAsync można załadować aparatu istniejących.
+[PolicyEngine::Settings](class_mip_policyengine_settings.md) konstruktora do ładowania aparat istniejących.
 
 Parametry:  
-* **engineId**: ustaw ją na identyfikator unikatowy aparatu wygenerowany przez AddEngineAsync lub jeden własnym wygenerowany. Podczas ponownego ładowania aparat istniejących Użyj identyfikatora, przeciwnym razie nowy aparat zostanie utworzony. 
+* **engineId**: ustaw ją na identyfikator unikatowy aparatu wygenerowany przez AddEngineAsync lub jeden własnym wygenerowany. Podczas ładowania aparat istniejących, należy ponownie użyć innego Identyfikatora zostanie utworzony nowy aparat. 
 
 
 * **Dane klienckie**: dane klienta można dostosować, które mogą być przechowywane z aparatem, gdy zwolniony, można pobrać z załadowanych aparatu. 
@@ -35,10 +50,10 @@ Parametry:
 
   
 ### <a name="settings"></a>Ustawienia
-Umożliwia to tworzenie [ustawienia](class_mip_policyengine_settings.md) wywołać AddEngineAsync, aby dodać nowy aparat.
+[PolicyEngine::Settings](class_mip_policyengine_settings.md) Konstruktor do tworzenia nowego aparatu.
 
 Parametry:  
-* **tożsamość**: Unikatowy identyfikator użytkownika, dla którego aparat musi zostać dodany. 
+* **tożsamość**: informacje o tożsamości użytkownika skojarzonego z nowego aparatu. 
 
 
 * **Dane klienckie**: dane klienta można dostosować, które mogą być przechowywane z aparatem, gdy zwolniony, można pobrać z załadowanych aparatu. 
@@ -49,7 +64,7 @@ Parametry:
 
   
 ### <a name="getengineid"></a>GetEngineId
-Pobierz identyfikator aparatu.
+Pobierz identyfikator aparatu
 
   
 **Zwraca**: unikatowy ciąg identyfikujący silnika.
@@ -58,7 +73,7 @@ Pobierz identyfikator aparatu.
 Ustaw identyfikator aparatu.
 
 Parametry:  
-* **Identyfikator**: identyfikator aparatu.
+* **Identyfikator**: aparat identyfikatora.
 
 
   

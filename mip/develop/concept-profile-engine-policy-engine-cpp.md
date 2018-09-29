@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — obiekt aparatu zasad interfejsu API
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące obiektu aparatu zasad, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 7d2fa73eed70cd1c1b87be47f622951d2d61dc4b
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 07e0fc59e0ed5ec1fc66fe3179fce07dfcb687d1
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214707"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445278"
 ---
-# <a name="policy-api-engine"></a>Aparat zasad interfejsu API
+# <a name="microsoft-information-protection-sdk---policy-api-engine-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia dotyczące aparatu zasad interfejsu API
 
 `mip::PolicyEngine` implementuje wszystkie operacje, które mogą wykonywać zasad interfejsu API, z wyjątkiem ładowaniu profilu. 
 
@@ -34,7 +33,7 @@ Najlepszym rozwiązaniem jest pierwszy parametr **identyfikator**, powinny być 
 
 ### <a name="implementation-add-the-policy-engine"></a>Implementacja: Dodaj aparatu zasad
 
-Aby dodać aparat, będzie wrócimy do wzorzec przyszłość/promise służący do [załadować profilu](). Zamiast tworzyć obietnicą dla `mip::Profile`, użyjemy `mip::PolicyEngine`.
+Aby dodać aparat, będzie wrócimy do wzorca przyszłość/promise używana do ładowania profilu. Zamiast tworzyć obietnicą dla `mip::Profile`, użyjemy `mip::PolicyEngine`.
 
 ```cpp
 

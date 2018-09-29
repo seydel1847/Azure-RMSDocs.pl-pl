@@ -1,5 +1,20 @@
+---
+title: Klasa mip Stream
+description: Dokumentacja dotycząca Stream mip klasy
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: e6296c5e15590741e008979dcf12373ff5fcdf00
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445227"
+---
 # <a name="class-mipstream"></a>Klasa mip::Stream 
-Klasa, która definiuje interfejs między mip zestawu sdk i strumieni na podstawie zawartości.
+Klasa, która definiuje interfejs między MIP zestaw SDK, na podstawie strumienia zawartości.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
@@ -8,8 +23,8 @@ Klasa, która definiuje interfejs między mip zestawu sdk i strumieni na podstaw
  publiczne int64_t zapisu (const uint8_t * bufor, int64_t bufferLength)  |  Zapis w strumieniu buforu.
  publiczne bool Flush()  |  Flush strumienia.
  publiczne Seek void (int64_t pozycji)  |  Wyszukiwanie określonej pozycji w strumieniu.
- publiczne bool CanRead() const  |  Sprawdź, czy strumień jest do odczytu.
- publiczne bool CanWrite() const  |  Sprawdź, czy strumień jest zapisywalna.
+ publiczne bool CanRead() const  |  Sprawdź, czy strumień może odczytywać.
+ publiczne bool CanWrite() const  |  Sprawdź, czy można zapisać w strumieniu.
  publiczne int64_t Position()  |  Pobierz bieżącą pozycję w strumieniu.
  publiczne int64_t Size()  |  Pobieranie rozmiaru zawartości w strumieniu.
  publiczne rozmiar void (int64_t wartość)  |  Ustaw rozmiar strumienia.
@@ -28,7 +43,7 @@ Parametry:
 
 
   
-**Zwraca**: liczba bajtów odczytanych w rzeczywistości.
+**Zwraca**: Liczba odczytanych bajtów.
   
 ### <a name="write"></a>Zapis
 Zapis w strumieniu buforu.
@@ -42,7 +57,7 @@ Parametry:
 
 
   
-**Zwraca**: liczba bajtów zapisanych w rzeczywistości.
+**Zwraca**: liczba zapisanych bajtów.
   
 ### <a name="flush"></a>Flush
 Flush strumienia.
@@ -59,13 +74,13 @@ Parametry:
 
   
 ### <a name="canread"></a>Parametr CanRead
-Sprawdź, czy strumień jest do odczytu.
+Sprawdź, czy strumień może odczytywać.
 
   
 **Zwraca**: wartość True, jeśli jest to czytelny else wartość false.
   
 ### <a name="canwrite"></a>CanWrite
-Sprawdź, czy strumień jest zapisywalna.
+Sprawdź, czy można zapisać w strumieniu.
 
   
 **Zwraca**: wartość True, jeśli jest zapisywalny else wartość false.

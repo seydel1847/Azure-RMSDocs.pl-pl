@@ -1,18 +1,17 @@
 ---
 title: Pojęcia — przy użyciu języka Python w celu uzyskania tokenu dostępu.
 description: Ten artykuł pomoże Ci zrozumieć, jak używać języka Python w celu uzyskania tokenu dostępu OAuth2. Jest to wymagane przez implementację delegata uwierzytelniania.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c574edb5f272b08f1fc13cc0e48fca6aa4d111a9
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: a7577bab58b701e945bea9829d7ed31b41909f88
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214647"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445788"
 ---
 # <a name="acquire-an-access-token-python"></a>Uzyskiwanie tokenu dostępu (Python)
 
@@ -24,13 +23,13 @@ Ten kod nie jest przeznaczony do użycia w środowisku produkcyjnym, ale mogą b
 
 Aby uruchomić poniższy przykład, następujące musi być kompletny:
 
-- Zainstaluj język Python 2.7
-- Implementowanie [utils.h/cpp]() w projekcie TODO: link do źródła w przykładowego repozytorium
-- [auth.PY]() powinien zostać dodany do projektu, a istnieje w tym samym katalogu co pliki binarne na konferencji build.
+- Zainstaluj język Python 2.7.
+- Implementowanie utils.h/cpp w projekcie. 
+- auth.PY powinien zostać dodany do projektu, a istnieje w tym samym katalogu co pliki binarne na konferencji build.
 
 ## <a name="sampleauthacquiretoken"></a>Przykładowe:: auth::AcquireToken()
 
-W [przykład proste uwierzytelnianie](), firma Microsoft przedstawiono prosty `AcquireToken()` funkcja, która trwała żadnych parametrów i zwracane twardy kodowanego wartość tokenu. W tym przykładzie firma Microsoft będzie przeciążenia AcquireToken() akceptują parametry uwierzytelniania i wywoływać zewnętrznego skryptu języka Python, aby powrócić do tokenu.
+W tym przykładzie proste uwierzytelnianie możemy pokazano prosty `AcquireToken()` funkcja, która trwała żadnych parametrów i zwracane twardy kodowanego wartość tokenu. W tym przykładzie firma Microsoft będzie przeciążenia AcquireToken() akceptują parametry uwierzytelniania i wywoływać zewnętrznego skryptu języka Python, aby powrócić do tokenu.
 
 ### <a name="authh"></a>auth.h
 
@@ -121,8 +120,6 @@ namespace sample {
 ## <a name="python-script"></a>Skrypt w języku Python
 
 Ten skrypt uzyskuje tokeny uwierzytelniania bezpośrednio za pośrednictwem żądania prostego protokołu http. To jest uwzględniana tylko jako oznacza, że można uzyskać tokenów uwierzytelniania do użycia przez przykładowych aplikacji i nie jest przeznaczona do użycia w kodzie produkcyjnym. Skrypt działa wyłącznie w odniesieniu do dzierżawy, które obsługują zwykłe stare uwierzytelnianie http nazwy użytkownika i hasła. Uwierzytelnianie wieloskładnikowe lub uwierzytelniania opartego na certyfikatach zakończy się niepowodzeniem.
-
-TODO: Powinien można po prostu przejść do repozytorium, a nie dokumentów? 
 
 ```python
 import getopt

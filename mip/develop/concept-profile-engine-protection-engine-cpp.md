@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — obiekt aparat interfejsu API ochrony
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące obiektu aparat ochrony, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 4f8e8f2d1cd0328eb12c37b7318bbc15b700d303
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: da0c50de6a818fcd8beda0483696ba433ce22149
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214598"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453320"
 ---
-# <a name="protection-api-engine"></a>Aparat ochrony interfejsu API
+# <a name="microsoft-information-protection-sdk---protection-api-engine-concepts"></a>Usługi Microsoft Information Protection SDK — ochrona interfejsu API aparatu pojęcia
 
 ## <a name="implementation-add-a-protection-engine"></a>Implementacja: Dodaj aparat ochrony
 
@@ -44,7 +43,7 @@ Mimo że zazwyczaj należy wprowadzić w zmiennej tożsamości, a nie kod twardy
 
 ### <a name="implementation-add-the-protection-engine"></a>Implementacja: Dodaj aparat ochrony
 
-Aby dodać aparat, będzie wrócimy do wzorzec przyszłość/promise służący do [załadować profilu](). Zamiast tworzyć obietnicą dla `mip::ProtectionProfile`, użyjemy `mip::ProtectionEngine`.
+Aby dodać aparat, będzie wrócimy do wzorca przyszłość/promise używana do ładowania profilu. Zamiast tworzyć obietnicą dla `mip::ProtectionProfile`, użyjemy `mip::ProtectionEngine`.
 
 ```cpp
 
@@ -99,6 +98,4 @@ Mapowanie szablonów na etykiety jest możliwe tylko za pośrednictwem zasad int
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy profil jest załadowany, aparat, który został dodany, i mamy szablonów, możemy dodać program obsługi, aby zacząć odczytu, zapisu lub usuwania Szablony plików.
-
-[Tworzenie programu obsługi ochrony]()
+Teraz, gdy profil jest załadowany, aparat, który został dodany, i mamy szablonów, możemy dodać program obsługi, aby zacząć odczytu, zapisu lub usuwania Szablony plików. Zobacz [koncepcje programu obsługi ochrony](concept-handler-protection-cpp.md).

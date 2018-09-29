@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — uwierzytelniania delegowanego implementacji (C++)
 description: Ten artykuł pomoże Ci zrozumieć, jak zaimplementować delegata uwierzytelniania w języku C++.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a282d6a996cd1fd6a14b06fc9294f7aed793420c
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 9a9256d4c67845f43eeb1598926ea5c02f07f822
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214546"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445737"
 ---
-# <a name="implementing-an-authentication-delegate-c"></a>Implementowanie delegata uwierzytelniania (C++)
+# <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Usługi Microsoft Information Protection SDK — Implementowanie delegata uwierzytelniania (C++)
 
 Zestaw SDK MIP zaimplementować delegata uwierzytelniania obsługi wezwań do uwierzytelnienia i odpowiada za pomocą tokenu. Nie sam implementuje uzyskanie tokenu. Proces pobierania tokenu zależy od dewelopera i odbywa się przez rozszerzenie `mip::AuthDelegate` klasy, w szczególności `AcquireOAuth2Token` funkcja elementu członkowskiego.
 
@@ -111,6 +110,5 @@ bool AuthDelegateImpl::AcquireOAuth2Token(
 
 Aby ukończyć implementację uwierzytelniania, jest niezbędne do utworzenia kod związany z `AcquireToken()` funkcji. Poniższe przykłady omówiono w nim na kilka sposobów w celu uzyskania tokenu.
 
-- [Przykład uzyskanie tokenu prosty/programu PowerShell]()
-- [Przykładem tokenu w języku Python]()
-- [Przykład uwierzytelniania platformy node.js]()
+- [Przykład uzyskanie tokenu prosty/programu PowerShell](concept-authentication-acquire-token-ps.md)
+- [Przykładem tokenu w języku Python](concept-authentication-acquire-token-py.md)

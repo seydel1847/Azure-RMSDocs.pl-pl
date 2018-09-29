@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — służy do uwierzytelniania w zestawie SDK MIP.
 description: Ten artykuł pomoże zrozumieć, jak zestaw SDK MIP implementuje uwierzytelnianie i wymagania dotyczące aplikacji klienckich zapewnić logikę uzyskanie tokenu dostępu OAuth2.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 5f7a8409d79802fe96d26bf85ad073c53d8f76b3
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 7e0fb9066af69793592e10b029d5af7d67f84993
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214459"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453354"
 ---
-# <a name="authentication"></a>Uwierzytelnianie 
+# <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Usługi Microsoft Information Protection SDK — pojęć dotyczących uwierzytelniania
 
 Uwierzytelnianie w zestawie SDK MIP jest wykonywane przez rozszerzenie klasy `mip::AuthDelegate` do zaimplementowania preferowaną metodę uwierzytelniania. `mip::AuthDelegate` zawiera:
 
@@ -34,7 +33,6 @@ Uwierzytelnianie w zestawie SDK MIP jest wykonywane przez rozszerzenie klasy `mi
 
 `mip::Consent` Klasa wyliczenia implementuje metody łatwy w użyciu, która pozwala deweloperom aplikacji zapewniając zgody niestandardowe środowisko oparte na punkt końcowy, który jest uzyskiwany przez zestaw SDK. Powiadomienia mogą informować użytkownika danych, które mają być zbierane, jak pobierać dane, usunięte lub inne informacje wymagane przez prawo lub zgodności zasad. Po użytkownik udziela zgodę, aplikacja może kontynuować. 
 
-(TBD) W tym miejscu GDPR informacje? (TBD) Szczegóły wyjątku?
 
 ### <a name="implementation"></a>Implementacja
 
@@ -43,11 +41,6 @@ Zgoda jest implementowany przez rozszerzanie `mip::Consent` bazowa, klasy i wdra
 Obiekt pochodzi od `mip::Consent` jest przekazywany do `mip::FileProfile::Settings` lub `mip::ProtectionProfile::Settings` konstruktora.
 
 Gdy użytkownik wykona operację, która wymagałaby zgodę, wywołania SDK `GetUserConsent` metody, przekazując docelowego adresu URL jako parametr. To w przypadku tej metody, gdzie będzie jeden implementować, wyświetlanie informacji niezbędnych do użytkownika, umożliwiając im podejmowanie decyzji na informację, czy zgody na korzystanie z niej. 
-
-Operacje, które będą wyzwalać przepływu wyrażania zgody są:
-
-- Jeden
-- Dwa
 
 ### <a name="consent-options"></a>Opcji wyrażania zgody
 

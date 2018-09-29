@@ -1,5 +1,20 @@
+---
+title: Klasa mip RemoveContentHeaderAction
+description: Odwołanie do klasy mip RemoveContentHeaderAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: dc79ebf5d5c7cd35a8fc5ed854315179ed9190f0
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446451"
+---
 # <a name="class-mipremovecontentheaderaction"></a>Klasa mip::RemoveContentHeaderAction 
-Klasy akcji, która określa usunięcie nagłówka zawartości z dokumentu.
+Klasa akcji, która określa usunięcie nagłówka zawartości z dokumentu.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                

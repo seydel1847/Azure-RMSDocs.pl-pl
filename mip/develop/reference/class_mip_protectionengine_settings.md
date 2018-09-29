@@ -1,3 +1,18 @@
+---
+title: Klasa ustawień ProtectionEngine mipmapy
+description: Dokumentacja dotycząca klasy ustawienia ProtectionEngine mipmapy
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: f61e86a87ecfea21bc9d02f4e55f3fbe663e9b80
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446706"
+---
 # <a name="class-mipprotectionenginesettings"></a>Klasa mip::ProtectionEngine::Settings 
 [Ustawienia](class_mip_protectionengine_settings.md) posługują się [ProtectionEngine](class_mip_protectionengine.md) podczas jej tworzenia, jak i w okresie swojego istnienia.
   
@@ -6,7 +21,7 @@
 --------------------------------|---------------------------------------------
  Ustawienia publicznego (const tożsamości i tożsamości, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [ProtectionEngine::Settings](class_mip_protectionengine_settings.md) Konstruktor do tworzenia nowego aparatu.
  Ustawienia publicznego (const std::string & engineId, const std::string & dane klienckie, const std::string i ustawienia regionalne)  |  [ProtectionEngine::Settings](class_mip_protectionengine_settings.md) konstruktora do ładowania aparat istniejących.
- publiczne std::string const & GetEngineId() const  |  Pobiera aparat, identyfikator.
+ publiczne std::string const & GetEngineId() const  |  Pobiera identyfikator aparatu.
  publiczne SetEngineId void (const std::string & engineId)  |  Ustawia identyfikator aparatu.
  Identyfikator publiczny const & GetIdentity() const  |  Pobiera użytkownika, którego tożsamość skojarzone z aparatem.
  publiczne SetIdentity void (const tożsamości i tożsamości)  |  Ustawia użytkownika, którego tożsamość skojarzone z aparatem.
@@ -16,9 +31,9 @@
 publiczne SetCustomSettings void (const std::vector < std::pair < std::string, std::string >> & wartość)  |  Zestawy par nazwa/wartość służy do testowania i eksperymentowania.
 publiczne std::vector const < std::pair < std::string, std::string >> & GetCustomSettings() const  |  Pobiera par nazwa/wartość służy do testowania i eksperymentowania.
  publiczne SetSessionId void (const std::string & sessionId)  |  Ustawia aparat identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych.
- publiczne std::string const & GetSessionId() const  |  Pobiera identyfikator sesji aparatu.
- publiczne SetCloudEndpointBaseUrl void (const std::string & cloudEndpointBaseUrl)  |  Ustawia chmury punktu końcowego podstawowego adresu url, można określić wystąpienie w chmurze. Jeśli nie jest ustawiona zostanie wartość domyślną.
- publiczne std::string const & GetCloudEndpointBaseUrl() const  |  Podstawowy adres url skojarzony z ochrony punktów końcowych.
+ publiczne std::string const & GetSessionId() const  |  Pobiera identyfikator aparatu sesji.
+ publiczne SetCloudEndpointBaseUrl void (const std::string & cloudEndpointBaseUrl)  |  Opcjonalnie ustawia adres URL podstawowego punktu końcowego chmury.
+ publiczne std::string const & GetCloudEndpointBaseUrl() const  |  Pobiera chmury podstawowy adres URL używany przez wszystkie żądania obsługi, jeśli określony.
   
 ## <a name="members"></a>Elementy członkowskie
   
@@ -51,16 +66,16 @@ Parametry:
 
   
 ### <a name="getengineid"></a>GetEngineId
-Pobiera aparat, identyfikator.
+Pobiera identyfikator aparatu.
 
   
-**Zwraca**: identyfikator aparatu
+**Zwraca**: aparat identyfikator
   
 ### <a name="setengineid"></a>SetEngineId
 Ustawia identyfikator aparatu.
 
 Parametry:  
-* **engineId**: identyfikator aparatu.
+* **engineId**: aparat identyfikatora.
 
 
   
@@ -116,26 +131,27 @@ Pobiera par nazwa/wartość służy do testowania i eksperymentowania.
 Ustawia aparat identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych.
 
 Parametry:  
-* **Identyfikator sesji**: aparat, identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych
+* **Identyfikator sesji**: aparat identyfikator sesji, używane na potrzeby korelacji rejestrowania/danych telemetrycznych
 
 
   
 ### <a name="getsessionid"></a>GetSessionId
-Pobiera identyfikator sesji aparatu.
+Pobiera identyfikator aparatu sesji.
 
   
-**Zwraca**: aparat, identyfikator sesji
+**Zwraca**: aparat identyfikator sesji
   
 ### <a name="setcloudendpointbaseurl"></a>SetCloudEndpointBaseUrl
-Ustawia chmury punktu końcowego podstawowego adresu url, można określić wystąpienie w chmurze. Jeśli nie jest ustawiona zostanie wartość domyślną.
+Opcjonalnie ustawia adres URL podstawowego punktu końcowego chmury.
 
 Parametry:  
-* **cloudEndpointBaseUrl**: **reprezentuje** wystąpienie na żądanie, jak mogą występować inne wystąpienia chmury, usługi w chmurze
+* **cloudEndpointBaseUrl**: podstawowy adres URL używany przez wszystkie żądania usługi (na przykład "https://api.aadrm.com")
 
 
+Jeśli podstawowy adres URL nie jest określony, będzie określana przez wyszukiwanie DNS domeny tożsamość aparatu.
   
 ### <a name="getcloudendpointbaseurl"></a>GetCloudEndpointBaseUrl
-Podstawowy adres url skojarzony z ochrony punktów końcowych.
+Pobiera chmury podstawowy adres URL używany przez wszystkie żądania obsługi, jeśli określony.
 
   
-**Zwraca**: CloudEndpointBaseUrl
+**Zwraca**: bazowy adres URL

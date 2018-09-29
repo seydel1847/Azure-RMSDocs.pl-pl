@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — programów obsługi plików w zestawie SDK MIP.
-description: Ten artykuł pomoże zrozumieć, jak obsługi interfejsu API plików są używane do wywoływania operacji.
-services: information-protection
+description: Ten artykuł pomoże zrozumieć sposób obsługi interfejsu API plików są tworzone i używane do wywoływania operacji.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a8c284b0c875379f28a23ef1d9cd17e1cc343568
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 6b2916a3937892353f4389a59b5e48356deda603
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214373"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453371"
 ---
-# <a name="file-handlers-in-the-mip-sdk"></a>Procedury obsługi pliku w zestawie SDK MIP
+# <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia dotyczące obsługi plików
 
 W interfejsie API plików zestawu SDK MIP `mip::FileHandler` uwidacznia wszystkie różne operacje, które może służyć do odczytu i zapisu etykiety lub ochrony w zestawie typów plików, dla których obsługa jest wbudowana. 
 
@@ -43,7 +42,7 @@ Tworzenie `FileHandler` wymaga, aby pracować z określonego pliku:
 
 - A `FileProfile`
 - A `FileEngine` dodane do `FileProfile`
-- Klasa, która dziedziczy `mip::FileHandler::Observer`, podobny do wzorca opisane [tutaj]().
+- Klasa, która dziedziczy `mip::FileHandler::Observer`
 
 ## <a name="create-a-file-handler"></a>Utwórz procedurę obsługi plików
 
@@ -53,7 +52,7 @@ Tworzenie `FileHandler` jest równie proste jak wywołanie `FileEngine`firmy `Cr
 
 `CreateFileHandlerAsync` trzy parametry: ścieżka do pliku, który należy odczytać lub zmodyfikować, `mip::FileHandler::Observer` dla powiadomień o zdarzeniach asynchronicznych i Obietnica dla `FileHandler`.
 
-**Uwaga:** `mip::FileHandler::Observer` klasy należy zaimplementować w klasie pochodnej jako `CreateFileHandler` wymaga `Observer` obiektu. Przegląd [tutaj]() dla `Observer` szczegółowe informacje.
+**Uwaga:** `mip::FileHandler::Observer` klasy należy zaimplementować w klasie pochodnej jako `CreateFileHandler` wymaga `Observer` obiektu. 
 
 ```cpp
 auto createFileHandlerPromise = std::make_shared<std::promise<std::shared_ptr<mip::FileHandler>>>();
@@ -110,7 +109,7 @@ Drugi parametr musi ustawić etykiety jest `mip::LabelingOptions` obiektu, może
 
 `LabelingOptions` Określa dodatkowe informacje na temat etykiety, takie jak `AssignmentMethod` i uzasadnienie dla akcji.
 
-- `mip::AssignmentMethod` jest po prostu moduł wyliczający, który ma trzy wartości: `STANDARD`, `PRIVILEGED`, lub `AUTO`. Przegląd [mip::AssignmentMethod]() sekcji, aby uzyskać więcej informacji.
+- `mip::AssignmentMethod` jest po prostu moduł wyliczający, który ma trzy wartości: `STANDARD`, `PRIVILEGED`, lub `AUTO`. Przegląd `mip::AssignmentMethod` odwołania, aby uzyskać więcej informacji.
 - Uzasadnienie jest wymagane tylko wtedy, gdy zasady usługi wymagają *i* obniżenia *istniejących* czułości pliku.
 
 ```cpp
@@ -131,7 +130,7 @@ Teraz masz ustawić etykiety na plik wskazywany przez program obsługi, się nad
 
 Ostatnim krokiem w zatwierdzanie każdą zmianę do pliku w zestawie SDK MIP jest **zatwierdzenia** zmiany. Jest to realizowane przy użyciu `FileHandler->CommitAsync()` funkcji. 
 
-Aby zaimplementować funkcję zobowiązania, zostanie zwrócona do promise/przyszłych tworzenia obietnicą dla `bool`. `CommitAsync()` Funkcja zwróci wartość true, jeśli operacja zakończyła się pomyślnie lub wartość false, jeśli go nie powiodła się dla jakiegokolwiek powodu. TODO: Zaktualizuj szczegółowe informacje na temat obsługi wyjątków.
+Aby zaimplementować funkcję zobowiązania, zostanie zwrócona do promise/przyszłych tworzenia obietnicą dla `bool`. `CommitAsync()` Funkcja zwróci wartość true, jeśli operacja zakończyła się pomyślnie lub wartość false, jeśli go nie powiodła się dla jakiegokolwiek powodu. 
 
 Po utworzeniu `promise` i `future`, `CommitAsync()` nosi nazwę i dwa parametry podane: ścieżka pliku wyjściowego (`std::string`) i prawdziwą. Ponadto wynik uzyskany przez wprowadzenie wartości `future` obiektu.
 

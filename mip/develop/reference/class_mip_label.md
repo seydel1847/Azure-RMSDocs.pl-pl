@@ -1,10 +1,25 @@
+---
+title: Klasa mip etykiety
+description: Odwołanie do klasy mip etykiety
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 2a80748430df83a16a4d5ee716344d17ce7deee4
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446281"
+---
 # <a name="class-miplabel"></a>Klasa mip::Label 
 Abstrakcyjną dla pojedynczej etykiecie Microsoft Information Protection.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
 --------------------------------|---------------------------------------------
- publiczne std::string const & GetId() const  |  Pobierz etykietę identyfikatora.
+ publiczne std::string const & GetId() const  |  Pobierz identyfikator etykiety
  publiczne std::string const & GetName() const  |  Pobierz nazwę etykiety.
  publiczne std::string const & GetDescription() const  |  Pobierz opis etykiety.
  publiczne std::string const & GetColor() const  |  Pobierz kolor ma być wyświetlana etykieta.
@@ -17,7 +32,7 @@ publiczne std::vector const < std::shared_ptr<Label>> & GetChildren() const  |  
 ## <a name="members"></a>Elementy członkowskie
   
 ### <a name="getid"></a>Getid —
-Pobierz etykietę identyfikatora.
+Pobierz identyfikator etykiety
 
   
 **Zwraca**: identyfikator etykiety.

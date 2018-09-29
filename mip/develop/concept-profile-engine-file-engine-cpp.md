@@ -1,32 +1,31 @@
 ---
 title: Pojęcia — obiekt aparat interfejsu API plików
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące obiektu aparatu pliku, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 5a2e8702b1ace1df2e45224b9b0d76f4c7cb8c77
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 9ccea755c83b570aa17ff4d30d98783f4bef79e5
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214606"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446604"
 ---
-# <a name="file-api-engine"></a>Aparat specyfikacji File API
+# <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia aparatu specyfikacji File API
 
 `mip::FileEngine` w interfejsie API plików zestawu SDK MIP udostępnia interfejs dla wszystkich operacji, które są wykonywane w imieniu określonej tożsamości. Jeden aparat zostanie dodana dla każdego użytkownika, który wykonuje loguje się do aplikacji, a wszystkie operacje, które aparatu będą wykonywane w kontekście tej tożsamości.
 
 `FileEngine` Ma dwa główne zadania: wyświetlanie etykiet dla uwierzytelnionego użytkownika i tworzenie plików programów obsługi do wykonywania operacji na plikach w imieniu użytkownika. 
 
 - [`mip::FileEngine`](reference/class_mip_fileengine.md)
-  - `ListSensitivityLabels()`: Pobiera listę etykiet dla aparatu załadowane.
-  - `CreateFileHandler()`: Tworzy `mip::FileHandler` dla określonego pliku lub strumienia.
+- `ListSensitivityLabels()`: Pobiera listę etykiet dla aparatu załadowane.
+- `CreateFileHandler()`: Tworzy `mip::FileHandler` dla określonego pliku lub strumienia.
 
 ## <a name="add-a-file-engine"></a>Dodaj aparatu plików
 
-Zgodnie z opisem w [pojęcia — aparat]() strony, aparat może mieć dwa stany - `CREATED` lub `LOADED`. Jeśli nie jest jedną z tych dwóch stanów, nie istnieje. Aby utworzyć i załadować stanu, tylko jest konieczne tylko jedno wywołanie `FileProfile::LoadAsync`. Jeśli aparat już istnieje w pamięci podręcznej stanu, będzie on `LOADED`. Jeśli nie istnieje, będzie on `CREATED` i `LOADED`. `CREATED` oznacza, że aplikacja ma wszystkie informacje potrzebne do załadowania aparatu usługi. `LOADED` Wskazuje, czy wszystkie struktury danych, trzeba korzystać z aparatem zostały utworzone w pamięci.
+Zgodnie z opisem w [obiektów profilu i aparat](concept-profile-engine-cpp.md), aparat może mieć dwa stany - `CREATED` lub `LOADED`. Jeśli nie jest jedną z tych dwóch stanów, nie istnieje. Aby utworzyć i załadować stanu, tylko jest konieczne tylko jedno wywołanie `FileProfile::LoadAsync`. Jeśli aparat już istnieje w pamięci podręcznej stanu, będzie on `LOADED`. Jeśli nie istnieje, będzie on `CREATED` i `LOADED`. `CREATED` oznacza, że aplikacja ma wszystkie informacje potrzebne do załadowania aparatu usługi. `LOADED` Wskazuje, czy wszystkie struktury danych, trzeba korzystać z aparatem zostały utworzone w pamięci.
 
 ### <a name="create-file-engine-settings"></a>Tworzenie pliku ustawień aparatu
 
@@ -42,7 +41,7 @@ Najlepszym rozwiązaniem jest pierwszy parametr `id`, powinny być coś, co umo�
 
 ### <a name="add-the-file-engine"></a>Dodaj z aparatem plików
 
-Aby dodać aparat, będzie wrócimy do wzorzec promise/przyszłość służący do [załadować profilu](). Zamiast tworzenia obietnicą dla `mip::FileProfile`, jest tworzony, za pomocą `mip::FileEngine`.
+Aby dodać aparat, będzie wrócimy do wzorca promise/przyszłości używana do ładowania profilu. Zamiast tworzenia obietnicą dla `mip::FileProfile`, jest tworzony, za pomocą `mip::FileEngine`.
 
 ```cpp
   //auto profile will be std::shared_ptr<mip::FileProfile>
@@ -107,7 +106,5 @@ Kolekcja `mip::Label` zwrócone przez `GetSensitivityLabels()` może służyć d
 
 ## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy profil jest załadowany, aparat, który został dodany, i mamy etykiety, możemy dodać program obsługi, aby zacząć odczytu, zapisu lub usuń etykiety z plików.
-
-- [Tworzenie obsługi plików]()
+Teraz, gdy profil jest załadowany, aparat, który został dodany, i mamy etykiety, możemy dodać program obsługi, aby zacząć odczytu, zapisu lub usuń etykiety z plików. Zobacz [plików obsługi w zestawie SDK MIP](concept-handler-file-cpp.md).
 

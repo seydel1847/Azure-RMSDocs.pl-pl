@@ -1,5 +1,20 @@
+---
+title: mip klasy HttpRequest
+description: Odwołanie do klasy mip HttpRequest
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: e838eb247bc00d43da72db1de03304e89a1b1da5
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445244"
+---
 # <a name="class-miphttprequest"></a>Klasa mip::HttpRequest 
-Interfejs, który opisuje żądania http jednym.
+Interfejs, który opisuje pojedynczego żądania HTTP.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                

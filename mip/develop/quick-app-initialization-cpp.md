@@ -1,18 +1,17 @@
 ---
 title: Przewodnik Szybki Start — inicjowanie dla klientów ochrony informacji firmy Microsoft (MIP) zestawu SDK C++
 description: Przewodnik Szybki Start omawiający pisania logiki inicjowania dla klienta ochrony informacji firmy Microsoft (MIP) zestawu SDK aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9405f98ea2b1be79a4de8b487b407fbebc8fe923
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: d687c1165ed61741fda8b89a9ed5bd55ad54a705
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214458"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453439"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>Szybki Start: Inicjowanie aplikacji klienta (C++)
 
@@ -47,22 +46,22 @@ Najpierw utworzymy i skonfigurować początkowe rozwiązania Visual Studio i pro
 2. Skonfiguruj ustawienia projektu:
    - W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu (bezpośrednio pod węzłem top/rozwiązania) i wybierz **właściwości**. 
    - Na górze/po prawej stronie **stron właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager...** . Na **programu Configuration Manager** okna dialogowego, ustaw konfigurację"aktywne rozwiązanie" **debugowania**i docelowej "platforma rozwiązania aktywnego" do **x64**. Kliknij przycisk **Zamknij** po zakończeniu.
-   - W obszarze **właściwości konfiguracji**, wybierz opcję **katalogi VC ++** węzła.
-   - Wybierz **Dołącz katalogi** wiersza, a następnie kliknij listę rozwijaną po prawej stronie, a następnie **< Edytuj >**, a następnie wprowadź ścieżki do zestawu SDK obejmują podkatalogów (.h) w polu najważniejsze. Określ pełnej ścieżki do `file\include`, `protection\include`, `upe\include` podkatalogów (ale nie lepszy), w ramach ścieżki, w którym zainstalowano zestaw SDK. Kliknij przycisk **OK**. 
+   - W obszarze **właściwości konfiguracji** w okienku po lewej stronie wybierz **katalogi VC ++** węzła.
+   - Wybierz **Dołącz katalogi** wiersza, a następnie kliknij listę rozwijaną po prawej stronie, a następnie **< Edytuj >**, a następnie wprowadź ścieżki do zestawu SDK obejmują podkatalogów (.h) w polu najważniejsze. Określ pełnej ścieżki do `file\include`, `protection\include`, `upe\include` podkatalogów (ale nie lepszy), w ramach ścieżki, w którym zainstalowano zestaw SDK. Utwórz nowy wiersz dla każdego lub oddziel je średnikami (`;`) w pojedynczym wierszu. Kliknij przycisk **OK**. 
 
-        [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/set-include-lib-path-properties.png)](media/quick-app-initialization-cpp/set-include-lib-path-properties.png#lightbox)
+        [![Program Visual Studio Ustaw właściwości ścieżki](media/quick-app-initialization-cpp/set-include-lib-path-properties.png)](media/quick-app-initialization-cpp/set-include-lib-path-properties.png#lightbox)
 
    - Powtórz poprzedni krok dla **katalogi bibliotek** wiersza, wprowadzając ścieżki do podkatalogów binarne biblioteki statycznej (lib) zestawu SDK. Należy użyć ścieżek, które pasuje do bieżącej konfiguracji kompilacji dla rozwiązania. W tym przewodniku Szybki Start, określ bezwzględny lub względny ścieżki do `file\bins\debug\amd64`, `protection\bins\debug\amd64`, `upe\bins\debug\amd64` podkatalogów.
 
-   - W obszarze **właściwości konfiguracji**, otwórz **konsolidatora** , a następnie wybierz węzeł **dane wejściowe** węzła. 
+   - W obszarze **właściwości konfiguracji** w okienku po lewej stronie, otwórz **konsolidatora** , a następnie wybierz węzeł **dane wejściowe** węzła. 
    - Wybierz **dodatkowe zależności** wiersza, a następnie kliknij listę rozwijaną po prawej stronie, a następnie **< Edytuj >**. W tym miejscu możesz dodać nazwy bibliotek statycznych zestawu SDK. Dodaj `mip_protection_sdk.lib;mip_file_sdk.lib;mip_upe_sdk.lib;` do listy bibliotek w górnym pola. Kliknij przycisk **OK**. 
    - Kliknij przycisk **OK** na **stron właściwości** okno dialogowe po zakończeniu.
 
-     [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/set-static-libs.png)](media/quick-app-initialization-cpp/set-static-libs.png#lightbox)
+     [![Program Visual Studio Ustaw biblioteki statycznej](media/quick-app-initialization-cpp/set-static-libs.png)](media/quick-app-initialization-cpp/set-static-libs.png#lightbox)
 
-## <a name="implement-an-observer-class"></a>Implementowanie klasy obserwatora
+## <a name="implement-an-observer-class-to-monitor-the-file-profile-and-engine-objects"></a>Implementowanie klasy obserwatora do monitorowania obiektów profilu i aparat plików
 
-Teraz Utwórz podstawową implementację klasy obserwatora, rozszerzając zestawu SDK `mip::FileProfile::Observer` klasy. Obserwator jest tworzone i używane później, plik profilu i obiektów aparatu plików.
+Teraz Utwórz podstawową implementację klasy obserwatora pliku profilu, rozszerzając zestawu SDK `mip::FileProfile::Observer` klasy. Obserwator jest tworzone i używane później do monitorowania podczas ładowania pliku obiektu profilu i Dodawanie obiektu aparat w profilu.
 
 1. Dodaj nową klasę do projektu, który generuje pliki zarówno nagłówek/h, jak i implementację/.cpp:
 
@@ -127,7 +126,7 @@ Teraz Utwórz podstawową implementację klasy obserwatora, rozszerzając zestaw
 
 ## <a name="implement-an-authentication-delegate"></a>Implementowanie delegata uwierzytelniania
 
-Zestaw SDK MIP implementuje uwierzytelniania za pomocą funkcji rozszerzalności klasy, która udostępnia mechanizm do udostępniania pracy uwierzytelniania za pomocą aplikacji klienckiej. Klient musi uzyskać odpowiedni dostęp OAuth2 tokenu pod warunkiem do zestawu SDK MIP w czasie wykonywania. 
+Zestaw SDK MIP implementuje uwierzytelniania za pomocą funkcji rozszerzalności klasy, która udostępnia mechanizm do udostępniania pracy uwierzytelniania za pomocą aplikacji klienckiej. Klient musi uzyskać odpowiedni token dostępu OAuth2 i zapewnienie SDK MIP w czasie wykonywania. 
 
 Teraz Utwórz implementację dla delegata uwierzytelniania, rozszerzając zestawu SDK `mip::AuthDelegate` klasy i zastępowanie/wdrażanie `mip::AuthDelegate::AcquireOAuth2Token()` czystą funkcję wirtualną. Delegowanie uwierzytelniania jest tworzone i używane później, plik profilu i obiektów aparatu plików.
 
@@ -174,7 +173,7 @@ Teraz Utwórz implementację dla delegata uwierzytelniania, rozszerzając zestaw
 
      bool AuthDelegateImpl::AcquireOAuth2Token(const mip::Identity& identity, const OAuth2Challenge& challenge, OAuth2Token& token) 
      {
-            // TODO: replace with token acquisition code
+            // TODO: replace with token acquisition code, using mAppId, identity, authority, and resourceURI
             const string authority = challenge.GetAuthority();
             const string resourceURI = challenge.GetResource();
             string accessToken = "<access-token>";
@@ -256,11 +255,11 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
    int main()
    {
      // Construct/initialize objects used by the application's profile object
-     ApplicationInfo appInfo{"0edbblll-8773-44de-b87c-b8c6276d41eb",    // ApplicationInfo object (App ID, friendly name)
-                 "AppInitialization Quickstart" };
+     ApplicationInfo appInfo{"<application-id>",    // ApplicationInfo object (App ID, friendly name)
+                 "<friendly-name>" };
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
-                 "0edbblll-8773-44de-b87c-b8c6276d41eb");
+                 "<application-id>");
      auto consentDelegateImpl = make_shared<ConsentDelegateImpl>(); // Consent delegate object
  
      // Construct/initialize profile object
@@ -278,21 +277,51 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
      auto profile = profileFuture.get();
 
      // Construct/initialize engine object
-     FileEngine::Settings engineSettings("1",       // User-defined engine ID
-       "Client data",                               // User-defined engine state        
+     FileEngine::Settings engineSettings("<engine-id>",     // User-defined engine ID
+       "<engine-state>",                                // User-defined engine state        
        "en-US");                                    // Locale (default = en-US)
 
-     // Set up promise/future connect for async engine operations; add engine to profile asynchronously
+     // Set up promise/future connection for async engine operations; add engine to profile asynchronously
      auto enginePromise = make_shared<promise<shared_ptr<FileEngine>>>();
      auto engineFuture = enginePromise->get_future();
      profile->AddEngineAsync(engineSettings, enginePromise);
+     std::shared_ptr<FileEngine> engine; 
+     try
+     {
+       engine = engineFuture.get();             // triggers AcquireOAuth2Token() call
+     }
+     catch (const std::exception& e)
+     {
+       cout << "An exception occurred... is the access token incorrect/expired?\n\n"
+        << e.what() << "'\n";
+       system("pause");
+       return 1;
+     }
 
-     return 0;
-   }
+      return 0;
+     }
 
    ``` 
 
-3. Teraz nie końcowego skompilować aplikację i usuń wszelkie błędy. Kod powinien pomyślnie, kompilacji, ale nie będzie jeszcze działała poprawnie, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start.
+3. Zastąp wartości symboli zastępczych w kodzie źródłowym, po prostu wklejony, używając następujących wartości:
+
+   | Symbol zastępczy | Wartość |
+   |:----------- |:----- |
+   | \<Identyfikator aplikacji\> | Identyfikator aplikacji usługi Azure AD przypisane do aplikacji zarejestrowanych w "Instalacja zestawu MIP SDK and configuration" (2 wystąpienia).  |
+   | \<Przyjazna nazwa\> | Zdefiniowane przez użytkownika przyjazną nazwę dla aplikacji. |
+   | \<Identyfikator aparatu\> | Identyfikator użytkownika, przypisany do aparatu. |
+   | \<Stan aparatu\> | Stan użytkownika ma zostać skojarzony z aparatem. |
+
+
+4. Teraz nie końcowego skompilować aplikację i usuń wszelkie błędy. Kod powinien pomyślnie, kompilacji, ale nie będzie jeszcze działała poprawnie, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start. Jeśli aplikacja zostanie uruchomiona, zostanie wyświetlony podobny do następującego wyjątku:
+
+   ```cmd
+   An exception occurred... is the access token incorrect/expired?
+
+   Failed acquiring policy, Request failed with http status code: 401, x-ms-diagnostics: [2000001;reason="OAuth token submitted with the request can not be parsed.";error_category="invalid_token"], correlationId:[5b731x67-6521-4cd8-b911-00009ab9cbez]'
+   
+   Press any key to continue . . .
+   ```
 
 ## <a name="next-steps"></a>Następne kroki
 

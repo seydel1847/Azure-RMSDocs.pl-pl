@@ -1,3 +1,18 @@
+---
+title: Klasa mip AddContentHeaderAction
+description: Odwołanie do klasy mip AddContentHeaderAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: bc60fe32005a0c6bc8088ab7687a3f711ae7a99a
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445652"
+---
 # <a name="class-mipaddcontentheaderaction"></a>Klasa mip::AddContentHeaderAction 
 Klasa akcji, która określa Dodawanie nagłówka zawartości.
   
@@ -43,7 +58,7 @@ Pobierz rozmiar czcionki używany do wyświetlania zawartości nagłówka.
 Pobierz kolor czcionki używany do wyświetlania zawartości nagłówka.
 
   
-**Zwraca**: kolor czcionki jako ciąg (e.g."#000000").
+**Zwraca**: kolor czcionki jako ciąg (na przykład, #000000 ").
   
 ### <a name="getalignment"></a>GetAlignment
 Uzyskaj wyrównanie nagłówka.
@@ -57,7 +72,7 @@ Uzyskaj wyrównanie nagłówka.
 Pobierz margines nagłówka z dołu.
 
   
-**Zwraca**: liczba całkowita reprezentująca marginesy w dolnej części dokumentu (np. 10 mm).
+**Zwraca**: marginesy w dolnej części dokumentu (na przykład 10 mm).
   
 ### <a name="actiontype"></a>ActionType
 Pobierz typ [akcji](class_mip_action.md).

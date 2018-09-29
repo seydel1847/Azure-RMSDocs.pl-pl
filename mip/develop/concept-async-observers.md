@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — obserwatorów w zestawie SDK MIP.
 description: Zestaw SDK MIP została zaprojektowana jako prawie całkowicie asynchronicznego. Ten artykuł pomoże zrozumieć, jak zaimplementować i umożliwiający asynchronicity obserwatorów.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: e8014e24917bfcae4d7974881007ec0c4e95fc19
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 99f68383a4e697f4f8f04c19523ccb0fb50fa3c0
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214324"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445567"
 ---
-# <a name="observers-in-the-mip-sdk"></a>Obserwatorzy w zestawie SDK MIP
+# <a name="microsoft-information-protection-sdk---observer-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia obserwatora
 
 Zestaw SDK MIP została zaprojektowana jako prawie całkowicie asynchronicznego. Na przykład każdej operacji skutkuje we/wy sieci lub plik jest wykonywana asynchronicznie. Aby obsługiwać powiadomienia o zdarzeniach dla tych zdarzeń asynchronicznych, zestaw SDK sprawia, że użycie [wzorzec obserwatora](https://wikipedia.org/wiki/Observer_pattern). 
 
@@ -55,7 +54,7 @@ Interfejs API ochrony dla zestawu SDK MIP ma trzy obserwatorów:
 * `mip::ProtectionEngine::Observer`
 * `mip::ProtectionHandler::Observer`
 
-## <a name="next-steps-tbd"></a>Następne kroki (TBD)
+## <a name="next-steps"></a>Następne kroki
 
 Dowiedz się więcej na temat sposobu zaimplementowane i używane przez różne interfejsy API obserwatorów:
 

@@ -1,18 +1,17 @@
 ---
 title: Przewodnik Szybki Start — Utwórz listę etykiet czułości w dzierżawie ochronę informacji firmy Microsoft (MIP) przy użyciu zestawu SDK MIP C++
 description: Przewodnik Szybki Start omawiający Użyj zestawu SDK usługi Microsoft Information Protection C++, aby wyświetlić listę etykiet czułości w dzierżawie.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 77d473897d7e56c99db5210525dbccee6199b4ab
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 939f5a00fa63af1d6b34ca30b3fd1820bfed2d5b
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214367"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453456"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>Szybki Start: Lista etykiet czułość (C++)
 
@@ -22,12 +21,12 @@ Ten przewodnik Szybki Start dowiesz się, jak używać interfejsu API plików MI
 
 Jeśli jeszcze nie, pamiętaj przed kontynuowaniem należy spełnić następujące wymagania wstępne:
 
-- Pełne [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio. Ten przewodnik Szybki Start zależy od poprzedniego odpowiednie tworzenia rozwiązania początkowego.
+- Pełne [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio. Przewodnik Szybki Start "List czułości etykiety" opiera się na poprzedniej wersji, do tworzenia odpowiedniego rozwiązania początkowego.
 - Opcjonalnie: Przejrzyj [etykiet klasyfikacji](concept-classification-labels.md) pojęcia.
 
 ## <a name="add-logic-to-list-the-sensitivity-labels"></a>Dodaj logikę, aby wyświetlić listę etykiet czułości
 
-Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za pomocą obiektu aparatu plików. Jak wspomniano w komentarzach do kodu, wywołanie usługi `AcquireOAuth2Token()` metoda jest również wyzwalany, przez wywołanie `engineFuture.get()`.
+Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za pomocą obiektu aparatu plików. 
 
 1. Otwórz rozwiązanie programu Visual Studio został utworzony w poprzedniej "Szybki Start: Inicjowanie aplikacji klienta (C++)" artykułu.
 
@@ -39,34 +38,26 @@ Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za
    using std::endl;
    ```
 
-4. W treści `main()`, między `profile->AddEngineAsync(engineSettings, enginePromise);` i `return 0;` instrukcji (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
+4. Pod koniec treści `main()`, poniżej zamykającego nawiasu klamrowego `}` z `catch` bloku i nowsze wersje `return 0;` instrukcji (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
 
    ```cpp
-   // Get engine object and list sensitivity labels
-     try
-     {
-      // Get File engine asynchronously; also triggers AcquireOAuth2Token() call 
-      auto engine = engineFuture.get();  
-        
-      // List sensitivity labels
-      auto labels = engine->ListSensitivityLabels(); 
-      for (const auto& label : labels)
-      {
-        cout << label->GetName() << " : " << label->GetId() << endl;
+   // List sensitivity labels
+   auto labels = engine->ListSensitivityLabels();
+   for (const auto& label : labels)
+   {
+      cout << label->GetName() << " : " << label->GetId() << endl;
 
-        for (const auto& child : label->GetChildren())
-        {
-          cout << "->  " << child->GetName() << " : " << child->GetId() << endl;
-        }
+      for (const auto& child : label->GetChildren())
+      {
+        cout << "->  " << child->GetName() << " : " << child->GetId() << endl;
       }
    }
-   catch (const std::exception& e)
-   {
-      cout << "An exception occurred... is the access token incorrect/expired?\n\n" << e.what() << "'\n";
-   }
+   system("pause");
    ``` 
 
 ## <a name="update-the-token-acquisition-logic-with-a-valid-access-token"></a>Aktualizowanie logiki uzyskanie tokenu przy użyciu tokenu dostępu nie jest ważna
+
+Jak wspomniano w komentarzach do kodu, wywołanie usługi `AcquireOAuth2Token()` metoda jest wywoływana przez wywołanie `engineFuture.get()` wywołania `main()`. Należy zakończyć wykonania `AcquireOAuth2Token()` metody, aby zapewnić tokenu dostępu do zestawu SDK MIP.
 
 1. Wygeneruj token testu za pomocą następującego skryptu programu PowerShell. Skrypt używa `Get-ADALToken` polecenia cmdlet z modułu ADAL.PS zainstalowany wcześniej, w MIP SDK instalacji i konfiguracji. 
 
@@ -81,14 +72,14 @@ Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za
      $response.AccessToken | clip                                      # Copies the access token text to the clipboard
      ```
 
-   - Aktualizacja `$appId` i `redirectUri` zmiennych, które pasują do wartości określonych w Twojej rejestracji aplikacji usługi Azure AD.
+   - Aktualizacja `$appId` i `redirectUri` zmiennych, dopasowując wartości określone w Twojej rejestracji aplikacji usługi Azure AD.
    - Zapisz plik skryptu, a następnie uruchomić go za pomocą programu PowerShell. `Get-ADALToken` Polecenia cmdlet Wyzwalacze usługi Azure AD monitu dotyczącego uwierzytelniania podobny do poniższego przykładu. Po pomyślnym zalogowaniu token dostępu zostaną umieszczone w Schowku.
 
-     [![Program Visual Studio Dodaj klasę](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
+     [![Program Visual Studio uzyskania tokenu logowania](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
 
-   - Może trzeba będzie również wyrazić zgodę, aby umożliwić aplikacji dostęp do interfejsów API MIP w ramach konta logowania. Dzieje się tak, gdy rejestracja aplikacji usługi Azure AD nie jest wstępnie wyraził zgodę (zgodnie z opisem w "zestaw SDK MIP instalacja i konfiguracja") lub logujesz się przy użyciu konta z innej dzierżawy (innej niż ta, których Twoja aplikacja będzie zarejestrowana). Po prostu kliknij **Akceptuj** do rejestrowania Twojej zgody.
+   - Może trzeba będzie również wyrazić zgodę, aby umożliwić aplikacji dostęp do interfejsów API MIP podczas pracy w ramach konta logowania. Dzieje się tak, gdy rejestracja aplikacji usługi Azure AD nie jest wstępnie wyraził zgodę (zgodnie z opisem w "zestaw SDK MIP instalacja i konfiguracja") lub logujesz się przy użyciu konta z innej dzierżawy (innej niż ta, których Twoja aplikacja będzie zarejestrowana). Po prostu kliknij **Akceptuj** do rejestrowania Twojej zgody.
 
-     [![Program Visual Studio Dodaj klasę](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png#lightbox)
+     [![Visual Studio wyrażania zgody.](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png#lightbox)
 
 2. Natychmiast po ukończeniu kroku #1 powyżej, wróć do programu Visual Studio i użyj **Eksploratora rozwiązań** można otworzyć "auth_delegate.cpp". Przewiń w dół do Twojej `AcquireOAuth2Token()` implementacji i znajdź następujący wiersz kodu. Zastąp `<access-token>` symbolu zastępczego z tokenem umieszczane w Schowku w poprzednim kroku. Token powinien być ciąg, w formacie podobnym do `eyJ0eXAiOi ...`.
 
@@ -98,7 +89,7 @@ Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za
 
 ## <a name="build-and-test-the-application"></a>Tworzenie i testowanie aplikacji
 
-Na koniec Skompiluj i testowanie aplikacji klienckiej. Jeśli projekt kompiluje i zostanie wykonane pomyślnie, powinny pojawić się dane wyjściowe podobne do poniższego przykładu w oknie konsoli: 
+Na koniec Skompiluj i testowanie aplikacji klienckiej. Jeśli projekt kompiluje i zostanie wykonane pomyślnie, powinny zostać wyświetlone dane wyjściowe w oknie konsoli, podobny do poniższego przykładu:
 
 ```cmd
 Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
@@ -109,6 +100,9 @@ Highly Confidential : f55c2dea-db0f-47cd-8520-a52e1590fb6z
 
 Press any key to continue . . .
 ```
+
+> [!NOTE]
+> Skopiuj i Zapisz identyfikator jednego lub więcej etykiet czułość (na przykład `f42a3342-8706-4288-bd31-ebb85995028z`), ponieważ użyjesz go w kolejnym przewodniku Szybki Start.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
@@ -124,7 +118,12 @@ Press any key to continue . . .
 
 | Podsumowanie | Komunikat o błędzie | Rozwiązanie |
 |---------|---------------|----------|
-| Nieprawidłowy token dostępu | *Wystąpił wyjątek... jest token dostępu, nieprawidłowy/wygasły? <br> <br>Wywołania API nie powiodło się: profile_add_engine_async nie powiodło się: [klasy mip::PolicySyncException] nie powiodło się uzyskiwania zasad, żądanie nie powiodło się z kodem stanu http: 401, x-ms-diagnostics: [2000001; Przyczyna = "token OAuth przesłane z Nie można przeanalizować żądania. "; error_category = "invalid_token"], identyfikator korelacji: [35bc0023-3727-4eff-8062-000006d5d672] "<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe (proces 29924) został zakończony z kodem 0.<br> <br>Naciśnij dowolny klawisz, aby zamknąć to okno...* | Jeśli projekt jest kompilowany pomyślnie, ale zostaną wyświetlone dane wyjściowe podobne do lewej, prawdopodobnie masz token z nieprawidłowymi lub wygasłymi w swojej `AcquireOAuth2Token()` metody. Wróć do [aktualizowanie logiki uzyskanie tokenu](#update-the-token-acquisition-logic) i ponownie je generować aktualizacji tokenem dostępu `AcquireOAuth2Token()` ponownie i ponownej kompilacji/wykonaj test ponownie. Możesz również sprawdzić i sprawdź token i jego oświadczenia, za pomocą polecenia [jwt.ms](https://jwt.ms/) aplikacji jednej strony sieci web. |
+| Nieprawidłowy token dostępu | *Wystąpił wyjątek... jest token dostępu, nieprawidłowy/wygasły? <br> <br>Wywołania API nie powiodło się: profile_add_engine_async nie powiodło się: [klasy mip::PolicySyncException] nie powiodło się uzyskiwania zasad, żądanie nie powiodło się z kodem stanu http: 401, x-ms-diagnostics: [2000001; Przyczyna = "token OAuth przesłane z Nie można przeanalizować żądania. "; error_category = "invalid_token"], identyfikator korelacji: [35bc0023-3727-4eff-8062-000006d5d672] "<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe (proces 29924) został zakończony z kodem 0.<br> <br>Naciśnij dowolny klawisz, aby zamknąć to okno...* | Jeśli projekt jest kompilowany pomyślnie, ale zostaną wyświetlone dane wyjściowe podobne do lewej, prawdopodobnie masz token z nieprawidłowymi lub wygasłymi w swojej `AcquireOAuth2Token()` metody. Wróć do [aktualizowanie logiki uzyskanie tokenu](#update-the-token-acquisition-logic-with-a-valid-access-token) i ponownie je generować aktualizacji tokenem dostępu `AcquireOAuth2Token()` ponownie i ponownej kompilacji/wykonaj test ponownie. Możesz również sprawdzić i sprawdź token i jego oświadczenia, za pomocą polecenia [jwt.ms](https://jwt.ms/) aplikacji jednej strony sieci web. |
 | Czułość etykiety nie są konfigurowane. | n/d | Jeśli projekt jest kompilowany pomyślnie, ale masz żadnych danych wyjściowych w oknie konsoli, upewnij się, że etykiety ważności Twojej organizacji są poprawnie skonfigurowane. Zobacz [MIP SDK instalacja i Konfiguracja](setup-configure-mip.md)w obszarze "Zdefiniować ustawienia taksonomii i ochrony etykiety", aby uzyskać szczegółowe informacje.  |
 
+## <a name="next-steps"></a>Następne kroki
 
+Teraz, kiedy znasz sposób wyświetlenia listy etykiety ważności dla Twojej organizacji, wypróbuj kolejnego przewodnika Szybki Start:
+
+> [!div class="nextstepaction"]
+> [Ustawianie i pobieranie etykieta poufności](quick-file-set-get-label-cpp.md)

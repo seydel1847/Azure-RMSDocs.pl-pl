@@ -1,24 +1,23 @@
 ---
 title: Pojęcia — obserwatorów zasad interfejsu API w zestawie SDK MIP.
 description: Zestaw SDK MIP została zaprojektowana jako prawie całkowicie asynchronicznego. Ten artykuł pomoże zrozumieć, jak zaimplementować i umożliwiający asynchronicity obserwatorów zasad interfejsu API.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: fbdb1e7d1bf6a99228e810dca4d9532c79849d48
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 50bc3bfd9bcba8e90a386a6e0444f65389bcfa76
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214264"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445805"
 ---
-# <a name="policy-api-observers"></a>Obserwatorzy zasad interfejsu API
+# <a name="microsoft-information-protection-sdk---policy-api-observers"></a>Usługi Microsoft Information Protection SDK — obserwatorów zasad interfejsu API
 
 Zestaw SDK interfejsu API zasad zawiera jedną klasę obserwatora. Członkowie obserwatora wirtualne i powinna zostać zastąpiona w celu obsługi wywołań zwrotnych dla operacji asynchronicznych.
 
-- [`mip::Profile::Observer`](reference/class_mip_Profile_observer.md)
+- [`mip::PolicyProfile::Observer`](reference/class_mip_policyprofile_observer.md)
 
 Po zakończeniu operacji asynchronicznej, `OnXxx()` jest wywoływana funkcja elementu członkowskiego odpowiadający wynik. Należą do nich `OnLoadSuccess()`, `OnLoadFailure()`, i `OnAddEngineSuccess()` dla `mip::Profile::Observer`.
 
@@ -77,6 +76,3 @@ void ProfileObserver::OnLoadFailure(const std::exception_ptr& error, const std::
 
 Podczas przeprowadzania żadnych operacji asynchronicznej, implementacja obserwatora jest przekazywany do konstruktora ustawienia lub samej funkcji asynchronicznej. 
 
-## <a name="next-steps"></a>Następne kroki
-
-[TBD - Link, aby utworzyć `mip::Profile`, załaduj `mip::ProfileEngine`i wykonywać operacje na plikach z `mip::FileHandler`]()

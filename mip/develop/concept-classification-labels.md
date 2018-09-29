@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — etykiety klasyfikacji
 description: Ten artykuł pomoże w zrozumieniu sposobu używania etykiet klasyfikacji danych.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 44a7ede22d115baa75eb6583c02cbd77c0ad131c
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: a32193194b9806dbab5066db27192265566ca44f
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214622"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446655"
 ---
-# <a name="classification-labels"></a>Etykiety klasyfikacji
+# <a name="microsoft-information-protection-sdk---classification-label-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia etykietę klasyfikacji
 
 W ramach strategii ochrony danych kompleksowe organizacje powinny zaimplementować systemem klasyfikacji danych, który przedstawia poziomy poufności danych w organizacji, a następnie atrybuty dokumentu są mapowane na te klasyfikacje.
 
@@ -63,8 +62,6 @@ Innymi słowy `ContentLabel` jest `Label` która została zastosowana do informa
 
 Zestaw SDK również obsługiwane dodawanie dodatkowe metadane do dokumentów w postaci par klucz/wartość. Jeśli Twoja organizacja ma podrzędną klasyfikacje lub tagi, które opisują informacje w sposób bardziej szczegółowe, zestaw SDK może służyć do zastosowania tych metadanych.
 
-[Tutaj dowiesz się]() Aby uzyskać więcej informacji na temat stosowania metadanych.
+## <a name="next-steps"></a>Kolejne kroki
 
-## <a name="links"></a>Linki
-
-Odwołanie do klasyfikacji: https://www.gpo.gov/fdsys/pkg/FR-2010-01-05/html/E9-31418.htm
+Aby uzyskać szczegółowe informacje na temat systemu klasyfikacji dla instytucji rządowych Stanów Zjednoczonych, zobacz https://www.gpo.gov/fdsys/pkg/FR-2010-01-05/html/E9-31418.htm.

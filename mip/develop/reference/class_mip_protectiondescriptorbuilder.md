@@ -1,5 +1,20 @@
+---
+title: Klasa mip ProtectionDescriptorBuilder
+description: Odwołanie do klasy mip ProtectionDescriptorBuilder
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 42e44cfaf269a43d0210c0c040ea70ccc1fb192e
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446638"
+---
 # <a name="class-mipprotectiondescriptorbuilder"></a>Klasa mip::ProtectionDescriptorBuilder 
-Reprezentuje zasad ad hoc, skojarzone z zawartości chronionej.
+Konstruuje [ProtectionDescriptor](class_mip_protectiondescriptor.md) opisujący ochrony skojarzony element zawartości.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
@@ -8,7 +23,7 @@ publiczne std::shared_ptr MIP_API<ProtectionDescriptor> Build()  |  Tworzy [Prot
  publiczne SetName void (const std::string & wartość)  |  Nazwa zasad ochrony zestawów.
  publiczne Opis_zestawu void (const std::string & wartość)  |  Ustawia opis zasad ochrony.
 publiczne SetContentValidUntil void (const std::chrono::time_point < std::chrono::system_clock > & wartość)  |  Ustawia czas wygaśnięcia zasady ochrony.
- publiczne SetAllowOfflineAccess void (wartość logiczna)  |  Ustawia, czy w trybie offline umożliwia zasady ochrony zawartości.
+ publiczne SetAllowOfflineAccess void (wartość logiczna)  |  Zestawy, jeśli zasady ochrony w trybie offline zezwala na dostęp do zawartości, czy nie.
  publiczne SetReferrer void (const std::string & identyfikatora uri)  |  Ustawia adres odwołania zasady ochrony.
 publiczne SetEncryptedAppData void (const std::map < std::string, std::string > i wartość)  |  Ustawia dane specyficzne dla aplikacji, które mają być szyfrowane.
 publiczne SetSignedAppData void (const std::map < std::string, std::string > i wartość)  |  Ustawia dane specyficzne dla aplikacji, który powinien być podpisany.
@@ -47,10 +62,10 @@ Parametry:
 
   
 ### <a name="setallowofflineaccess"></a>SetAllowOfflineAccess
-Ustawia, czy w trybie offline umożliwia zasady ochrony zawartości.
+Zestawy, jeśli zasady ochrony w trybie offline zezwala na dostęp do zawartości, czy nie.
 
 Parametry:  
-* **wartość**: Określa, czy zasady umożliwiają dostęp do zawartości w trybie offline
+* **wartość**: Jeśli zasady umożliwiają dostęp do zawartości w trybie offline lub nie
 
 
   

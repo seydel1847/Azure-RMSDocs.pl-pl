@@ -1,3 +1,18 @@
+---
+title: Klasa mip AddWatermarkAction
+description: Odwołanie do klasy mip AddWatermarkAction
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: f49bd7aa16ae12aef240d05fff6acf507ddc341d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446094"
+---
 # <a name="class-mipaddwatermarkaction"></a>Klasa mip::AddWatermarkAction 
 Klasa akcji, która określa Dodawanie znaku wodnego.
   
@@ -48,7 +63,7 @@ Pobierz rozmiar czcionki używany do wyświetlania znaku wodnego.
 Pobierz kolor czcionki używany do wyświetlania znaku wodnego.
 
   
-**Zwraca**: kolor czcionki jako ciąg (e.g."#000000").
+**Zwraca**: kolor czcionki jako ciąg (na przykład, "#000000").
   
 ### <a name="actiontype"></a>ActionType
 Pobierz typ [akcji](class_mip_action.md).

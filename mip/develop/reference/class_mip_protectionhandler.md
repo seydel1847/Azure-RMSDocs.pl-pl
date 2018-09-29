@@ -1,10 +1,25 @@
+---
+title: Klasa mip ProtectionHandler
+description: Odwołanie do klasy mip ProtectionHandler
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 6fbae05030f56d3c9e680e6de9c8177a11b2f1e2
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446757"
+---
 # <a name="class-mipprotectionhandler"></a>Klasa mip::ProtectionHandler 
-Wykonuje akcje dotyczące ochrony dla konfiguracji ochrony określonych (czyli użytkowników, prawa, role itp.)
+Zarządza związanych z ochroną akcje konfiguracji określonego ochrony.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
 --------------------------------|---------------------------------------------
-publiczne std::shared_ptr<Stream> CreateProtectedStream (const std::shared_ptr<Stream>& backingStream, contentSize int64_t int64_t contentStartPosition)  |  Utwórz chroniony strumienia, który będzie zezwalał dla operacji szyfrowania i odszyfrowywania zawartości.
+publiczne std::shared_ptr<Stream> CreateProtectedStream (const std::shared_ptr<Stream>& backingStream, contentSize int64_t int64_t contentStartPosition)  |  Utwórz chroniony strumień, który będzie zezwalał dla operacji szyfrowania i odszyfrowywania zawartości.
  publiczne EncryptBuffer int64_t (int64_t offsetFromStart inputBuffer uint8_t * const, int64_t inputBufferSize, uint8_t * outputBuffer, int64_t outputBufferSize, bool isFinal)  |  Szyfrowanie buforu.
  publiczne DecryptBuffer int64_t (int64_t offsetFromStart inputBuffer uint8_t * const, int64_t inputBufferSize, uint8_t * outputBuffer, int64_t outputBufferSize, bool isFinal)  |  Odszyfrować bufora.
  publiczne GetProtectedContentLength int64_t (int64_t unprotectedLength, bool includesFinalBlock)  |  Oblicza rozmiar zawartości (w bajtach), gdyby były szyfrowane, w tym [ProtectionHandler](class_mip_protectionhandler.md).
@@ -13,17 +28,17 @@ publiczne std::vector < std::string > GetRights() const  |  Pobiera prawa użytk
  publiczne bool AccessCheck (const std::string & po prawej stronie) const  |  Sprawdza, jeśli program obsługi ochrony udziela użytkownikowi dostępu do określonego prawa.
  publiczne std::string const GetIssuedTo()  |  Pobiera użytkownika skojarzonego z obsługi ochrony.
  publiczne std::string const GetOwner()  |  Pobiera wiadomość e-mail adres właściciela zawartości.
- publiczne bool IsIssuedToOwner()  |  Pobiera informację określającą, czy bieżący użytkownik jest właścicielem zawartości.
+ publiczne bool IsIssuedToOwner()  |  Pobiera bieżący użytkownik jest właścicielem zawartości, czy nie.
 publiczne std::shared_ptr<ProtectionDescriptor> GetProtectionDescriptor()  |  Pobiera szczegóły ochrony.
  publiczne std::string const GetContentId()  |  Pobiera unikatowy identyfikator dla dokumentu/zawartości.
- publiczne bool DoesUseDeprecatedAlgorithms()  |  Pobiera informację określającą, czy ochrona program obsługi używa przestarzałego algorytmów kryptograficznych (ECB) zgodności z poprzednimi wersjami.
- publiczne bool IsAuditedExtractAllowed()  |  Pobiera informację określającą, czy program obsługi ochrony udziela prawa "inspekcji wyodrębniania" użytkownika.
+ publiczne bool DoesUseDeprecatedAlgorithms()  |  Pobiera, jeśli program obsługi ochrony jest używany przestarzały algorytmów kryptograficznych (ECB) zgodności z poprzednimi wersjami, czy nie.
+ publiczne bool IsAuditedExtractAllowed()  |  Pobiera, jeśli program obsługi ochrony przyznaje użytkownikowi "extract inspekcji" w prawo lub nie.
 publiczne std::vector const < uint8_t > GetSerializedPublishingLicense()  |  Serializowanie [ProtectionHandler](class_mip_protectionhandler.md) w licencji publikowania (PL)
   
 ## <a name="members"></a>Elementy członkowskie
   
 ### <a name="stream"></a>Stream
-Utwórz chroniony strumienia, który będzie zezwalał dla operacji szyfrowania i odszyfrowywania zawartości.
+Utwórz chroniony strumień, który będzie zezwalał dla operacji szyfrowania i odszyfrowywania zawartości.
 
 Parametry:  
 * **backingStream**: zapasowego strumienia, z którego ma zostać odczytu/zapisu 
@@ -58,7 +73,7 @@ Parametry:
 * **outputBufferSize**: rozmiar (w bajtach) buforu danych wyjściowych 
 
 
-* **isFinal**: Określa, czy bufor wejściowy zawiera bajtów końcowego jako zwykły tekst
+* **isFinal**: Jeśli bufor wejściowy zawiera bajtów końcowego jako zwykły tekst, czy nie
 
 
 
@@ -84,7 +99,7 @@ Parametry:
 * **outputBufferSize**: rozmiar (w bajtach) buforu danych wyjściowych 
 
 
-* **isFinal**: Określa, czy bufor wejściowy zawiera końcowe bajty szyfrowane
+* **isFinal**: Jeśli bufor wejściowy zawiera końcowe bajty szyfrowane, lub nie
 
 
 
@@ -98,7 +113,7 @@ Parametry:
 * **unprotectedLength**: rozmiar (w bajtach) zawartości niechronione 
 
 
-* **includesFinalBlock**: Opisuje, czy niechronione zawartości w danym zawiera blok końcowy. Na przykład w trybie szyfrowania CBC4k bloki chronionych-ostateczna to taki sam rozmiar jak bloki niechronione, ale końcowego chronionych bloki są większe niż ich odpowiedniki niechronione.
+* **includesFinalBlock**: Opisuje, czy niechronione zawartość w danym obejmuje stanowiącej blok, czy nie. Na przykład w trybie szyfrowania CBC4k bloki chronionych-ostateczna to taki sam rozmiar jak bloki niechronione, ale końcowego chronionych bloki są większe niż ich odpowiedniki niechronione.
 
 
 
@@ -126,7 +141,7 @@ Parametry:
 
 
   
-**Zwraca**: Określa, czy program obsługi ochrony udziela użytkownikowi dostępu do określonego prawa
+**Zwraca**: w przypadku obsługi ochrony udziela użytkownikowi dostępu do określonego w prawo lub nie
   
 ### <a name="getissuedto"></a>GetIssuedTo
 Pobiera użytkownika skojarzonego z obsługi ochrony.
@@ -141,10 +156,10 @@ Pobiera wiadomość e-mail adres właściciela zawartości.
 **Zwraca**: wiadomości E-mail adres właściciela zawartości
   
 ### <a name="isissuedtoowner"></a>IsIssuedToOwner
-Pobiera informację określającą, czy bieżący użytkownik jest właścicielem zawartości.
+Pobiera bieżący użytkownik jest właścicielem zawartości, czy nie.
 
   
-**Zwraca**: Określa, czy bieżący użytkownik jest właścicielem zawartości
+**Zwraca**: Jeśli bieżący użytkownik jest właścicielem zawartości, czy nie
   
 ### <a name="protectiondescriptor"></a>ProtectionDescriptor
 Pobiera szczegóły ochrony.
@@ -159,16 +174,16 @@ Pobiera unikatowy identyfikator dla dokumentu/zawartości.
 **Zwraca**: Unikatowy identyfikator zawartości
   
 ### <a name="doesusedeprecatedalgorithms"></a>DoesUseDeprecatedAlgorithms
-Pobiera informację określającą, czy ochrona program obsługi używa przestarzałego algorytmów kryptograficznych (ECB) zgodności z poprzednimi wersjami.
+Pobiera, jeśli program obsługi ochrony jest używany przestarzały algorytmów kryptograficznych (ECB) zgodności z poprzednimi wersjami, czy nie.
 
   
-**Zwraca**: niezależnie od tego czy program obsługi ochrony używa przestarzałych algorytmów kryptograficznych
+**Zwraca**: Jeśli program obsługi ochrony jest używany przestarzały algorytmów kryptograficznych, czy nie
   
 ### <a name="isauditedextractallowed"></a>IsAuditedExtractAllowed
-Pobiera informację określającą, czy program obsługi ochrony udziela prawa "inspekcji wyodrębniania" użytkownika.
+Pobiera, jeśli program obsługi ochrony przyznaje użytkownikowi "extract inspekcji" w prawo lub nie.
 
   
-**Zwraca**: Określa, czy program obsługi ochrony przyznaje uprawnienie "inspekcji extract"
+**Zwraca**: Jeśli program obsługi ochrony przyznaje użytkownikowi "extract inspekcji" w prawo lub nie
   
 ### <a name="getserializedpublishinglicense"></a>GetSerializedPublishingLicense
 Serializowanie [ProtectionHandler](class_mip_protectionhandler.md) w licencji publikowania (PL)

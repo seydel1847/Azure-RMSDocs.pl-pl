@@ -1,15 +1,15 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 481a8f7b887e8565042ceb990c68e80020977ed2
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: f8fd3bcfdcf627106f00625fad9b7843b0bc619d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214252"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446621"
 documentType: LandingData
 title: Dokumentacja zestawu SDK ochrony informacji firmy Microsoft
 metadata:
   title: Dokumentacja interfejsu API dokumentacja — samouczki i zestawu SDK ochrony informacji firmy Microsoft
-  meta.description: Control and help secure email, documents, and sensitive data that you share outside your company walls. From easy classification to embedded labels and permissions, enhance data protection at all times with Microsoft Information Protection—no matter where it’s stored or who it’s shared with.
+  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia, ochrona danych działa przez cały czas z usługą Microsoft Information Protection — niezależnie od tego, gdzie są przechowywane ani komu są one udostępniane.
   services: information-protection
   author: BryanLa
   manager: mbaldwin
@@ -19,13 +19,13 @@ metadata:
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 07/31/2018
+  ms.date: 09/26/2018
   ms.author: bryanla
 abstract:
   description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia, ochrona danych działa przez cały czas z usługą Microsoft Information Protection — niezależnie od tego, gdzie są przechowywane ani komu są one udostępniane.
   aside:
     image:
-      alt: 
+      alt: Film wideo z omówieniem zestawu SDK MIP
       height: 112
       src: media/index/tom-mip-sdk.png
       width: 250
@@ -34,6 +34,7 @@ abstract:
     width: 250
 sections:
 - title: 5-minutowe Przewodniki Szybki Start
+  description: Po zakończeniu <a href="setup-configure-mip">instalacja i Konfiguracja</a>, zapoznaj się z przewodnikami Szybki Start dla zestawu SDK MIP.
   items:
   - type: table
     style: dataMatrix
@@ -47,12 +48,9 @@ sections:
     - title: Za pomocą interfejsu API plików do listy czułości etykiet
       values:
       - href: quick-file-list-labels-cpp
-    - title: Zastosuj etykietę za pomocą interfejsu API plików
+    - title: Ustawianie/pobieranie etykiety z pliku za pomocą interfejsu API plików
       values:
-      - href: quick-file-apply-label-cpp
-    - title: Przeczytaj etykiety za pomocą interfejsu API plików
-      values:
-      - href: quick-file-read-label-cpp
+      - href: quick-file-set-get-label-cpp
 - title: Tematy pomocy
   items:
   - type: list

@@ -1,18 +1,17 @@
 ---
 title: Przegląd — informacje o Microsoft projekcji zestawu SDK.
 description: Ochrona informacji firmy Microsoft (MIP) stanowi ujednolicenie klasyfikacji, etykietowania i ochrony usług firmy Microsoft, w przypadku administracja jednego środowiska i oprogramowania development kit (SDK).
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: overview
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 34c9f99153347df57f9ef4b76efc69b4b65a3b2b
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 7b16ce00ef9900bff51b35a3fa1d9ef2b91a3e99
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214478"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445958"
 ---
 # <a name="overview"></a>Przegląd
 
@@ -20,9 +19,9 @@ ms.locfileid: "47214478"
 
 Ochrona informacji firmy Microsoft (MIP) stanowi ujednolicenie klasyfikacji, etykietowania i ochrony usług firmy Microsoft, w przypadku administracja jednego środowiska i oprogramowania development kit (SDK). Jednolita Administracja znajduje się w usłudze Office 365, Azure Information Protection, Windows Information Protection i innych usług firmy Microsoft. Stron trzecich można integrować z aplikacjami, przy użyciu standardowych, spójne danych, etykietowania schemat ochrony usługi przy użyciu zestawu SDK.
 
-* [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://support.office.com/en-us/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?redirectSourcePath=%252farticle%252f7fe448f7-49bd-4d3e-919d-0a6d1cf675bb&ui=en-US&rs=en-US&ad=US)
-* [Co to jest usługa Azure Information Protection?](https://docs.microsoft.com/en-us/azure/information-protection/understand-explore/what-is-information-protection)
-* [Jak działa ochrona usługi Azure Information Protection?](https://docs.microsoft.com/en-us/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
+* [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://support.office.com/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?redirectSourcePath=%252farticle%252f7fe448f7-49bd-4d3e-919d-0a6d1cf675bb&ui=en-US&rs=en-US&ad=US)
+* [Co to jest usługa Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
+* [Jak działa ochrona usługi Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 
 ## <a name="microsoft-information-protection-sdk"></a>Zestaw SDK usługi Microsoft Information Protection
 
@@ -36,7 +35,7 @@ Przypadki użycia w usłudze wysokiego poziomu MIP zestawu SDK obejmują:
 * Aplikację do projektowania CAD/KAMERA zapewnia macierzystą obsługę etykietowania Microsoft Information Protection.
 * Chmura dostępu broker lub danych utraty zapobiegania rozwiązania ze względów bezpieczeństwa danych zaszyfrowanych za pomocą usługi Azure Information Protection.
 
-Bardziej wyczerpujący, można przejrzeć [łącze do pojęcia dotyczące interfejsu API]().
+Bardziej wyczerpujący, można przejrzeć [pojęcia dotyczące interfejsu API](concept-apis-use-cases.md).
 
 ## <a name="next-steps"></a>Następne kroki
 

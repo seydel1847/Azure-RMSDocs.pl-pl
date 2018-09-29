@@ -1,5 +1,20 @@
+---
+title: Klasa mip UserRights
+description: Odwołanie do klasy mip UserRights
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: c1ef7aaba00bf595d80f07f318aa5808f3a56409
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445125"
+---
 # <a name="class-mipuserrights"></a>Klasa mip::UserRights 
-Reprezentuje grupę użytkowników i praw skojarzonych z nimi.
+Grupy użytkowników i praw skojarzonych z nimi.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                

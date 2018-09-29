@@ -1,5 +1,20 @@
+---
+title: Klasa mip UserRoles
+description: Odwołanie do klasy mip UserRoles
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 1cc1da6f443fa22095f216bb2ec2f0e51e75bf78
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445261"
+---
 # <a name="class-mipuserroles"></a>Klasa mip::UserRoles 
-Reprezentuje grupę użytkowników i ról związanych z nimi.
+Grupa użytkowników i ról związanych z nimi.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                

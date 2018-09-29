@@ -1,5 +1,20 @@
+---
+title: Klasa mip ProtectionEngine
+description: Odwołanie do klasy mip ProtectionEngine
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: ddc8cfd58acb2a80d024978084b625f3d3728c87
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446740"
+---
 # <a name="class-mipprotectionengine"></a>Klasa mip::ProtectionEngine 
-Wykonuje działania związanych z ochroną, odnoszące się do określonej tożsamości.
+Zarządza związanych z ochroną akcje związane z określonej tożsamości.
   
 ## <a name="summary"></a>Podsumowanie
  Elementy członkowskie                        | Opisy                                
@@ -7,10 +22,10 @@ Wykonuje działania związanych z ochroną, odnoszące się do określonej tożs
  publiczne ustawienia const & GetSettings() const  |  Pobiera ustawienia aparatu.
 publiczne GetTemplatesAsync void (const std::shared_ptr < ProtectionEngine::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Pobierz zbiór szablonów dostępnych dla użytkownika.
 publiczne std::vector < std::string > GetTemplates (const std::shared_ptr<void>& kontekstu)  |  Pobierz zbiór szablonów dostępnych dla użytkownika.
-publiczne GetRightsForLabelIdAsync void (const std::string & element documentId, const std::string & etykiety, const std::string & ownerEmail, const std::shared_ptr < ProtectionEngine::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Pobieranie kolekcji są dostępne prawa użytkownika dla etykiety.
+publiczne GetRightsForLabelIdAsync void (const std::string & element documentId, const std::string & etykiety, const std::string & ownerEmail, const std::shared_ptr < ProtectionEngine::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Nawiązać połączenia z kolekcji są dostępne prawa użytkownika dla identyfikatora etykiety.
 publiczne std::vector < std::string > GetRightsForLabelId (const std::string & element documentId const std::string & etykiety, const std::string & ownerEmail, const std::shared_ptr<void>& kontekstu)  |  Pobieranie kolekcji są dostępne prawa użytkownika dla etykiety.
-publiczne GetGrantingLabelIdsAsync void (const std::shared_ptr < ProtectionEngine::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Pobierz kolekcję labelIds dostępne dla użytkownika.
-publiczne std::vector < std::string > GetGrantingLabelIds (const std::shared_ptr<void>& kontekstu)  |  Pobierz kolekcję labelIds dostępne dla użytkownika.
+publiczne GetGrantingLabelIdsAsync void (const std::shared_ptr < ProtectionEngine::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Pobierz kolekcję dostępnych identyfikatorów etykiet do użytkownika.
+publiczne std::vector < std::string > GetGrantingLabelIds (const std::shared_ptr<void>& kontekstu)  |  Pobierz kolekcję dostępnych identyfikatorów etykiet do użytkownika.
 publiczne CreateProtectionHandlerFromDescriptorAsync void (const std::shared_ptr<ProtectionDescriptor>& deskryptora const ProtectionHandlerCreationOptions opcje, const std::shared_ptr < ProtectionHandler::Observer > & obserwatora, Const std::shared_ptr<void>& kontekstu)  |  Tworzy program obsługi ochrony gdzie prawa/role są przypisywane do konkretnych użytkowników.
 publiczne std::shared_ptr<ProtectionHandler> CreateProtectionHandlerFromDescriptor (const std::shared_ptr<ProtectionDescriptor>& deskryptora const ProtectionHandlerCreationOptions & Opcje, const std::shared_ptr<void>& kontekstu)  |  Tworzy program obsługi ochrony gdzie prawa/role są przypisywane do konkretnych użytkowników.
 publiczne CreateProtectionHandlerFromPublishingLicenseAsync void (const std::vector < uint8_t > & serializedPublishingLicense, const ProtectionHandlerCreationOptions & Opcje, const std::shared_ptr < ProtectionHandler::Observer > & obserwatora, const std::shared_ptr<void>& kontekstu)  |  Tworzy program obsługi ochrony z serializowanej licencji publikowania.
@@ -46,16 +61,16 @@ Parametry:
 
 
   
-**Zwraca**: Lista identyfikatorów szablonu
+**Zwraca**: Lista identyfikatorów szablonów.
   
 ### <a name="getrightsforlabelidasync"></a>GetRightsForLabelIdAsync
-Pobieranie kolekcji są dostępne prawa użytkownika dla etykiety.
+Nawiązać połączenia z kolekcji są dostępne prawa użytkownika dla identyfikatora etykiety.
 
 Parametry:  
-* **Element documentId**: element DocumentID skojarzonych metadanych dokumentu 
+* **Element documentId**: skojarzony identyfikator dokumentu metadanych dokumentu 
 
 
-* **Identyfikator etykiety**: skojarzone z metadanych dokumentu za pomocą którego dokument utworzony identyfikator etykiety 
+* **Identyfikator etykiety**: [etykiety](class_mip_label.md) identyfikator skojarzony z metadanymi dokumentu za pomocą którego utworzyć dokumentu 
 
 
 * **ownerEmail**: właściciel dokumentu 
@@ -72,10 +87,10 @@ Parametry:
 Pobieranie kolekcji są dostępne prawa użytkownika dla etykiety.
 
 Parametry:  
-* **Element documentId**: element DocumentID skojarzonych metadanych dokumentu 
+* **Element documentId**: skojarzony identyfikator dokumentu metadanych dokumentu 
 
 
-* **Identyfikator etykiety**: skojarzone z metadanych dokumentu za pomocą którego dokument utworzony identyfikator etykiety 
+* **Identyfikator etykiety**: [etykiety](class_mip_label.md) identyfikator skojarzony z metadanymi dokumentu za pomocą którego utworzyć dokumentu 
 
 
 * **ownerEmail**: właściciel dokumentu 
@@ -89,7 +104,7 @@ Parametry:
 **Zwraca**: listę praw
   
 ### <a name="getgrantinglabelidsasync"></a>GetGrantingLabelIdsAsync
-Pobierz kolekcję labelIds dostępne dla użytkownika.
+Pobierz kolekcję dostępnych identyfikatorów etykiet do użytkownika.
 
 Parametry:  
 * **Obserwator**: Implementacja klasy [ProtectionEngine::Observer](class_mip_protectionengine_observer.md) interfejsu 
@@ -100,7 +115,7 @@ Parametry:
 
   
 ### <a name="getgrantinglabelids"></a>GetGrantingLabelIds
-Pobierz kolekcję labelIds dostępne dla użytkownika.
+Pobierz kolekcję dostępnych identyfikatorów etykiet do użytkownika.
 
 Parametry:  
 * **kontekst**: ten sam kontekst zostaną przekazane do opcjonalne [HttpDelegate](class_mip_httpdelegate.md)
@@ -108,7 +123,7 @@ Parametry:
 
 
   
-**Zwraca**: Lista labelIds
+**Zwraca**: Lista identyfikatorów etykiet
   
 ### <a name="createprotectionhandlerfromdescriptorasync"></a>CreateProtectionHandlerFromDescriptorAsync
 Tworzy program obsługi ochrony gdzie prawa/role są przypisywane do konkretnych użytkowników.

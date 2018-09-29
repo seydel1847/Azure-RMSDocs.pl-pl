@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — podstawowe pojęcia dotyczące zestawu SDK MIP — profil i aparatu
 description: Ten artykuł pomoże zrozumieć podstawowe pojęcia dotyczące zestawu SDK, o nazwie profilu i silnika, które są tworzone podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9477e38a837736c39a9b7d772db3ef0f3d72f1d2
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 6f11944e7cceed39423af2a8104ce044d1f6eec6
+ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214396"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453422"
 ---
-# <a name="profile-and-engine-objects"></a>Profil i aparat obiektów
+# <a name="microsoft-information-protection-sdk---profile-and-engine-object-concepts"></a>Zestaw SDK — profil i aparat Microsoft Information Protection obiektu pojęcia
 
 ## <a name="profiles"></a>Profile
 
@@ -22,9 +21,9 @@ Profil, który jest klasą głównego dla wszystkich operacji w zestawie SDK MIP
 
 Istnieją trzy typy profilu w zestawie SDK Mipmapy:
 
-- [`Profile`](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_profile)Klasa profilu dla interfejsu API zasad MIP.
-- [`ProtectionProfile`](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_protectionprofile)Klasa profilu dla interfejsu API ochrony MIP.
-- [`FileProfile`](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_fileprofile): Profil klasy dla interfejsu API plików MIP.
+- [`PolicyProfile`](reference/class_mip_policyprofile.md)Klasa profilu dla interfejsu API zasad MIP.
+- [`ProtectionProfile`](reference/class_mip_protectionprofile.md)Klasa profilu dla interfejsu API ochrony MIP.
+- [`FileProfile`](reference/class_mip_fileprofile.md): Profil klasy dla interfejsu API plików MIP.
 
 Interfejsu API użyta w aplikacja odbierająca komunikaty będzie określić, która klasa profil powinien być używany.
 
@@ -39,9 +38,9 @@ Sam oferuje następujące funkcje:
 
 - `Path`: Ścieżka pliku w ramach której rejestrowanie, dane telemetryczne i inne trwały stan jest przechowywany.
 - `useInMemoryStorage`Wartość logiczna, która definiuje, czy stan powinny być przechowywane w pamięci, lub na dysku.
-- `authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate`. ([TBD — pojęcia dotyczące uwierzytelniania]())
-- `consentDelegate`: Wspólny wskaźnik klasy `mip::ConsentDelegate`. ([TBD — pojęcia dotyczące uwierzytelniania]())
-- `observer`: Wspólny wskaźnik do [ `Profile::Observer` ]() implementacji.
+- `authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate`. 
+- `consentDelegate`: Wspólny wskaźnik klasy `mip::ConsentDelegate`. 
+- `observer`: Wspólny wskaźnik do tego profilu `Observer` implementacji (w `PolicyProfile`, `ProtectionProfile`, i `EngineProfile`).
 - `applicationInfo`: Element `mip::ApplicationInfo` obiektu. Informacje o aplikacji, która jest korzystanie z zestawu SDK.
 
 ## <a name="engines"></a>Aparaty
@@ -51,12 +50,11 @@ W pliku, profilu i interfejsów API ochrony aparaty zapewniają interfejs do ope
 Istnieją trzy klasy aparatu w zestawie SDK, jeden dla każdego interfejsu API. Na poniższej liście przedstawiono klasy aparatu i kilka funkcji związanych z każdym:
 
 - [`mip::ProtectionEngine`]
-  - (TBD) — szczegółowe informacje w tym miejscu.
-- [`mip::PolicyEngine`](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_policyengine)
+- [`mip::PolicyEngine`](reference/class_mip_policyengine.md)
   - `ListSensitivityLabels()`: Pobiera listę etykiet dla aparatu załadowane.
   - `GetSensitivityLabel()`: Pobiera etykietę z istniejącej zawartości.
   - `ComputeActions()`: Podany identyfikator etykiety i opcjonalne metadane, zwraca listę wszystkich akcji, które powinny być wykonywane dla określonego elementu.
-- [`mip::FileEngine`](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_fileengine)
+- [`mip::FileEngine`](reference/class_mip_fileengine.md)
   - `ListSensitivityLabels()`: Pobiera listę etykiet dla aparatu załadowane.
   - `CreateFileHandler()`: Tworzy `mip::FileHandler` dla określonego pliku lub strumienia.
 
@@ -105,4 +103,11 @@ Ta metoda umożliwia rozsądne dotyczące użycia pamięci przez zwalnianie siln
 
 ## <a name="next-steps"></a>Następne kroki
 
-Następnie przeczytaj [obserwatorów](concept-async-observers.md), i jak są używane do udostępniania powiadomień o zdarzeniach dla asynchronicznego zdarzeń.
+- Następnie Dowiedz się więcej o [pojęć dotyczących uwierzytelniania](concept-authentication-cpp.md) i [obserwatorów](concept-async-observers.md). MIP zapewnia model uwierzytelniania rozszerzonego, mimo że obserwatora są używane do udostępniania powiadomień o zdarzeniach dla asynchronicznego zdarzeń. Obie mają zasadnicze znaczenie i zastosować do wszystkich zestawów MIP API.
+- Następnie pracy z koncepcjami profilu i aparat plików, zasad i interfejsów API ochrony
+  - [Pojęcia dotyczące profilu interfejsu API plików](concept-profile-engine-file-profile-cpp.md)
+  - [Pojęcia dotyczące aparatu interfejsu API plików](concept-profile-engine-file-engine-cpp.md)
+  - [Pojęcia dotyczące profilu zasad interfejsu API](concept-profile-engine-file-profile-cpp.md)
+  - [Pojęcia dotyczące aparatu zasad interfejsu API](concept-profile-engine-file-engine-cpp.md)
+  - [Pojęcia dotyczące profilu interfejsu API ochrony](concept-profile-engine-file-profile-cpp.md)
+  - [Ochrona interfejsu API aparatu pojęcia](concept-profile-engine-file-engine-cpp.md)  

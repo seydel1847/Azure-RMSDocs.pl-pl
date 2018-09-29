@@ -1,20 +1,19 @@
 ---
 title: Pojęcia — obiektu profilu zasad interfejsu API
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące zasad obiektu profil, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 030b2edc81a20f15254aa30bd362f99a65de039c
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: b229148c3028f4478f83cbbc928e19666c2f44b5
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214666"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445431"
 ---
-# <a name="policy-api-profile"></a>Profil zasady interfejsu API
+# <a name="microsoft-information-protection-sdk---policy-api-profile-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia profilu zasad interfejsu API
 
 `mip::Profile` Muszą być załadowane, można było wykonać wszystkie operacje interfejsu API dla zasad.
 
@@ -22,14 +21,14 @@ Dwa poniższe przykłady pokazują, jak można utworzyć obiektu profileSettings
 
 ## <a name="load-a-profile"></a>Załaduj profil
 
-Teraz, gdy [ `ProfileObserver` ]() i [ `AuthDelegateImpl` ]() są zdefiniowane, użyjemy ich do utworzenia wystąpienia `mip::Profile`. Tworzenie `mip::Profile` wymaga obiektu [ `mip::Profile::Settings` ](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_Profile_settings).
+Teraz, gdy `ProfileObserver` i `AuthDelegateImpl` są zdefiniowane, użyjemy ich do utworzenia wystąpienia `mip::PolicyProfile`. Tworzenie `mip::PolicyProfile` wymaga obiektu [ `mip::PolicyProfile::Settings` ](reference/class_mip_PolicyProfile_settings.md).
 
 ### <a name="profilesettings-parameters"></a>Parametry profile::Settings
 
 - `std::string path`: Ścieżka pliku w ramach której rejestrowanie, dane telemetryczne i inne trwały stan jest przechowywany.
 - `bool useInMemoryStorage`: Określa, czy wszystkie stany powinny być przechowywane w pamięci, w przeciwieństwie do na dysku.
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate` (zobacz [sekcji uwierzytelnianie]())
-- `std::shared_ptr<mip::Profile::Observer> observer`: Wspólny wskaźnik do [ `Profile::Observer` ]() implementacji.
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate` 
+- `std::shared_ptr<mip::PolicyProfile::Observer> observer`: Wspólny wskaźnik do `PolicyProfile::Observer` implementacji.
 - `mip::ApplicationInfo applicationInfo`: obiekt. Służy do definiowania informacje dotyczące aplikacji, która zużywa zestawu SDK.
 
 Dwa poniższe przykłady pokazują, jak można utworzyć obiektu profileSettings przy użyciu lokalnego magazynu do przechowywania stanów, a także w pamięci tylko. Zarówno przyjęto założenie, że `authDelegateImpl` obiekt został już utworzony.

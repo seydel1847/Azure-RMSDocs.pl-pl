@@ -1,33 +1,32 @@
 ---
 title: Pojęcia — ochrona interfejsu API obiektu profilu
 description: Ten artykuł ułatwi zrozumienie pojęcia dotyczące ochrony obiektu profilu, który jest tworzony podczas inicjowania aplikacji.
-services: information-protection
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c5a728ca3345be7a25bf2137965fc2586e387153
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: ae6699212d45a6c8a2fa95f648e7f5a2be3de93e
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47214354"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445312"
 ---
-# <a name="protection-api-profile"></a>Profil interfejsu API ochrony
+# <a name="microsoft-information-protection-sdk---protection-api-profile-concepts"></a>Usługi Microsoft Information Protection SDK — pojęcia profilu interfejsu API ochrony
 
 Dwa poniższe przykłady pokazują, jak można utworzyć obiektu profileSettings przy użyciu lokalnego magazynu do przechowywania stanów, a także w pamięci tylko. Zarówno przyjęto założenie, że `authDelegateImpl` obiekt został już utworzony.
 
 ## <a name="load-a-profile"></a>Załaduj profil
 
-Teraz, gdy [ `ProtectionProfileObserverImpl` ]() i [ `AuthDelegateImpl` ]() są zdefiniowane, użyjemy ich do utworzenia wystąpienia `mip::ProtectionProfile`. Tworzenie `mip::ProtectionProfile` wymaga obiektu [ `mip::ProtectionProfile::Settings` ](https://docs.microsoft.com/en-us/azure/information-protection/develop/mip/class_mip_ProtectionProfile_settings).
+Teraz, gdy `ProtectionProfileObserverImpl` i `AuthDelegateImpl` są zdefiniowane, użyjemy ich do utworzenia wystąpienia `mip::ProtectionProfile`. Tworzenie `mip::ProtectionProfile` wymaga obiektu [ `mip::ProtectionProfile::Settings` ](reference/class_mip_ProtectionProfile_settings.md).
 
 ### <a name="protectionprofilesettings-parameters"></a>Parametry ProtectionProfile::Settings
 
 - `std::string path`: Ścieżka pliku w ramach której rejestrowanie, dane telemetryczne i inne trwały stan jest przechowywany.
 - `bool useInMemoryStorage`: Określa, czy wszystkie stany powinny być przechowywane w pamięci, w przeciwieństwie do na dysku.
-- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate` (zobacz [sekcji uwierzytelnianie]())
-- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`: Wspólny wskaźnik do [ `ProtectionProfile::Observer` ]() implementacji.
+- `std::shared_ptr<mip::AuthDelegate> authDelegate`: Wspólny wskaźnik klasy `mip::AuthDelegate`.
+- `std::shared_ptr<mip::ProtectionProfile::Observer> observer`: Wspólny wskaźnik do `ProtectionProfile::Observer` implementacji.
 - `mip::ApplicationInfo applicationInfo`: obiekt. Służy do definiowania informacje dotyczące aplikacji, która zużywa zestawu SDK.
 
 Dwa poniższe przykłady pokazują, jak można utworzyć obiektu profileSettings przy użyciu lokalnego magazynu do przechowywania stanów, a także w pamięci tylko. Zarówno przyjęto założenie, że `authDelegateImpl` obiekt został już utworzony.
