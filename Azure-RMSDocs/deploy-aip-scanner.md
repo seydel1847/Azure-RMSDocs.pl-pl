@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 1e6c2eae7b94a2644302d67346c5adca630f824f
-ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
+ms.openlocfilehash: 5a61018b9e93a7a622c288f56110e9d99b30404f
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750700"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211313"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -196,6 +196,9 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports, które mają format pliku CSV. W przypadku domyślnej konfiguracji skaner tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
+    > [!TIP]
+    > Obecnie w wersji zapoznawczej, informacji z tych raportów są teraz wysyłane do usługi Azure Information Protection, aby można było je wyświetlić w witrynie Azure portal. Aby uzyskać więcej informacji, zobacz [raportowania usługi Azure Information Protection](reports-aip.md). 
+        
     Wyniki są nie zgodnie z oczekiwaniami, może być konieczne dostosowanie warunków określonych w zasadach usługi Azure Information Protection. Jeśli tak jest rzeczywiście, powtórz kroki od 1 do 3, dopóki nie będziesz gotowy zmienić konfigurację do zastosowania klasyfikacji i opcjonalnie ochrony. 
 
 Gdy wszystko będzie gotowe automatycznie oznaczyć pliki, które wykrywa skaner, przejdź do następnej procedury. 
