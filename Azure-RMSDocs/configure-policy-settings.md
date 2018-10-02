@@ -4,16 +4,16 @@ description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 118b65d1dc76e2df7b1fd639b6ea224cb5e8220c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
+ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151745"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864122"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
@@ -37,11 +37,11 @@ Aby skonfigurować te ustawienia:
 
 3. Na **zasad** bloku, skonfigurować ustawienia:
     
-    - **Wybierz etykietę domyślną**: po ustawieniu tej opcji wybierz etykietę, która ma być przypisywana do dokumentów i wiadomości e-mail bez etykiety. Nie możesz ustawić etykiety jako etykiety domyślnej, jeśli zawiera ona etykiety podrzędne. 
+    - **Wybierz etykietę domyślną**: po ustawieniu tej opcji wybierz etykietę, która ma być przypisywana do dokumentów i wiadomości e-mail bez etykiety. Nie można ustawić etykiety jako domyślny, jeśli ma on etykiet podrzędnych. 
     
     - **Wszystkie dokumenty i wiadomości e-mail muszą mieć etykietę**: w przypadku ustawienia dla tej opcji wartości **Wł.** wszystkie zapisane dokumenty i wysłane wiadomości e-mail będą musiały mieć zastosowaną etykietę. Etykiety mogą być przypisywane ręcznie przez użytkownika, automatycznie na podstawie [warunku](configure-policy-classification.md) lub domyślnie (przy użyciu opcji **Wybierz etykietę domyślną**).
         
-        Jeśli etykieta nie jest przypisana w momencie użytkowników zapisywania dokumentu lub wysyłania wiadomości e-mail, są monitowani o wybranie etykiety. Przykład:
+        Jeśli etykieta nie jest przypisany, gdy użytkownicy zapisywania dokumentu lub Wyślij wiadomość e-mail, są monitowani o wybranie etykiety. Przykład:
         
         ![Monit usługi Azure Information Protection, jeśli etykietowanie jest wymuszane](./media/info-protect-enforce-labelv2.png)
         
@@ -49,7 +49,7 @@ Aby skonfigurować te ustawienia:
         
         ![Monit usługi Azure Information Protection w przypadku wybrania niższej klasyfikacji](./media/info-protect-lower-justification.png)
         
-        Ta opcja nie ma zastosowania dla etykiet podrzędnych.
+        Ta opcja nie ma zastosowania do obniżenia klasyfikacji etykiet podrzędnych, w ramach tej samej etykiety nadrzędnej.
         
     - **W przypadku wiadomości e-mail z załącznikami zastosuj etykietę, która odpowiada najwyższej klasyfikacji tych załączników**: po ustawieniu wartości tej opcji na **Zalecane** użytkownicy są monitowani o zastosowanie etykiety do wiadomości e-mail. Etykieta jest wybierana dynamicznie na podstawie klasyfikacji etykiet, która jest stosowana do załączników, po czym jest wybierana etykieta o najwyższej klasyfikacji. Załącznik musi być plikiem fizycznym i nie może być łączem do pliku (na przykład łączem do pliku w usłudze SharePoint lub OneDrive dla Firm). Użytkownicy mogą zaakceptować zalecenie lub odrzucić je. Po ustawieniu tej opcji na **automatyczne**, etykieta jest stosowana automatycznie, ale użytkownicy mogą usunąć etykietę lub wybrać inną etykietę przed wysłaniem wiadomości e-mail.  
     

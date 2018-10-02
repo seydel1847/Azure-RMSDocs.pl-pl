@@ -4,18 +4,18 @@ description: Zasoby dla administratorów, w tym informacje na temat nowych wersj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa5fffe039c8e5b8dc960d6197ecd8a03837e5e6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8803d2ab9b5d8f5a2ef224376a50c6c84d968872
+ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150045"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864121"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -35,7 +35,7 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 ## <a name="information-about-new-releases-and-updates"></a>Informacje o nowych wersjach i aktualizacjach
 Zespół produktu usługi Azure Information Protection publikuje powiadomienia o najważniejszych nowych wersji w [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection). Mniejsze wersje są ogłaszane w usłudze Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam), i może również okazać przydatne w celu sprawdzenia [witryny UserVoice](https://msip.uservoice.com) stanu żądane funkcje.
 
-Ponadto podsumowanie zmian dokumentacji jest publikowany co miesiąc [blog techniczny usługi Azure Information Protection](https://aka.ms/AIPblog). Aktualizacje dokumentacji obejmują informacje o nowych wersjach, aktualizacje obsługują instrukcji jak również poprawki i wyjaśnienia dla już istniejących wersji. Te wpisy są pod tytułem: "**Aktualizacja dokumentacji usługi Azure Information Protection dla \<miesiąc, rok >**".
+Można znaleźć dodatkowe i szczegółowe informacje na [blog techniczny usługi Azure Information Protection](https://aka.ms/AIPblog). Na przykład podsumowanie zmian dokumentacji jest publikowany co miesiąc Cię powiadomić o informacje o nowych wersjach, aktualizacje obsługują instrukcji jak również poprawki i wyjaśnienia dla już istniejących wersji. Te wpisy aktualizacje dokumentacji są pod tytułem: "**Aktualizacja dokumentacji usługi Azure Information Protection dla \<miesiąc, rok >**".
 
 ## <a name="support-options-and-community-resources"></a>Opcje pomocy technicznej i zasoby społecznościowe
 Poniższe sekcje zawierają informacje dotyczące pomocy technicznej i rozwiązywania problemów oraz zasobów społecznościowych.
@@ -64,7 +64,7 @@ Spróbuj [bot pomocy usługi Azure Information Protection](help-bot.md), obecnie
 
 Filmy wideo na żądanie:
 
-- Sesje Microsoft Ignite 2017 dla [usługi Azure Information Protection](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522).
+- Sesje Microsoft Ignite w 2018 r. dla [usługi Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection).
 
 - Microsoft Virtual Academy sesje, które zawierają [usługi Azure Information Protection](https://mva.microsoft.com/search/SearchResults.aspx#!q=Azure%20Information%20protection).
 
