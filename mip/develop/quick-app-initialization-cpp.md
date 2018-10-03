@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d687c1165ed61741fda8b89a9ed5bd55ad54a705
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
+ms.openlocfilehash: f3a6c81bb42152926bd2b6f275f6fa45b81acc18
+ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453439"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48230543"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>Szybki Start: Inicjowanie aplikacji klienta (C++)
 
@@ -24,7 +24,7 @@ Ten przewodnik Szybki Start opisano, jak zaimplementować wzorzec inicjowanie kl
 
 Jeśli jeszcze nie, należy koniecznie:
 
-- Wykonaj kroki [SDK ochronę informacji firmy Microsoft (MIP), instalacja i Konfiguracja](setup-configure-mip.md). Ten przewodnik Szybki Start, zależy od prawidłowego zestawu SDK instalacji i konfiguracji.
+- Wykonaj kroki [SDK ochronę informacji firmy Microsoft (MIP), instalacja i Konfiguracja](setup-configure-mip.md). Ta "klienta Inicjowanie aplikacji" Szybki Start opiera się na właściwe instalacji zestawu SDK i konfiguracji.
 - Opcjonalnie:
   - Przegląd [obiektów profilu i aparat](concept-profile-engine-cpp.md). Obiekty profilu i aparat są uniwersalne koncepcji, wymagane przez klientów, którzy używają interfejsów API MIP, plik/zasady/ochrony. 
   - Przegląd [pojęć dotyczących uwierzytelniania](concept-authentication-cpp.md) Aby dowiedzieć się, jak uwierzytelnianie i zgody są implementowane przez aplikację zestawu SDK i klienta.
@@ -40,7 +40,7 @@ Najpierw utworzymy i skonfigurować początkowe rozwiązania Visual Studio i pro
      - W dolnym okienku zaktualizować projekt **nazwa**, **lokalizacji**i zawierający **Nazwa rozwiązania** odpowiednio.
      - Po zakończeniu kliknij przycisk **OK** przycisk w prawym dolnym rogu.
 
-     [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/create-vs-solution.png)](media/quick-app-initialization-cpp/create-vs-solution.png#lightbox)
+       [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/create-vs-solution.png)](media/quick-app-initialization-cpp/create-vs-solution.png#lightbox)
 
 
 2. Skonfiguruj ustawienia projektu:
@@ -154,32 +154,48 @@ Teraz Utwórz implementację dla delegata uwierzytelniania, rozszerzając zestaw
             OAuth2Token& token) override;     // Token handed back to MIP SDK
      private:
           std::string mAppId;
+          std::string mToken;
+          std::string mAuthority;
+          std::string mResource;
      };
      ```
 
    - Zaktualizuj "auth_delegate.cpp", zastępując wszystkie wygenerowany `auth_delegate` Implementacja klasy przy użyciu następujących źródła. **Nie** Usuń dyrektywy preprocesora, generowane przez poprzedniego kroku (#pragma, #include). 
 
      > [!IMPORTANT]
-     > Poniższy kod tokenu jest celowo niekompletne. Firma Microsoft przetestuje później przy użyciu tokenu dostępu statyczne.  
-     > W środowisku produkcyjnym, musi to zostać zastąpione przez kod, który dynamicznie wyświetli monit o uwierzytelnienie i uzyskuje token, za pomocą:
+     > Poniższy kod tokenu nie nadaje się do użytku produkcyjnego. W środowisku produkcyjnym, to należy zastąpić kod, który dynamicznie uzyskuje token, za pomocą:
      > - appId i odpowiedzi/redirect URI określone w rejestracji aplikacji usługi Azure AD (odpowiedzi/identyfikator URI przekierowania **musi** odpowiadać Twojej rejestracji aplikacji)
-     > - Urząd i identyfikator URI zasobu przekazywane przez zestaw SDK w `challenge` argumentu (identyfikator URI zasobu **musi** dopasowania uprawnień interfejsu API rejestracji aplikacji)
-     > - poświadczenia aplikacji/użytkownika ("natywnego" klienci OAuth2 powinien monit o podanie poświadczeń użytkownika i korzystać z tego przepływu "Kod autoryzacji". OAuth2 "poufne klienci" można użyć własnych, bezpiecznych poświadczeń z usługą flow "poświadczeń klienta" (na przykład usługi) lub monit o podanie poświadczeń użytkownika przy użyciu usługi flow "Kod autoryzacji" (np. aplikacji sieci web)).
+     > - Adres URL urzędu i zasobów przekazywane przez zestaw SDK w `challenge` argumentu (adres URL zasobu **musi** dopasowania uprawnień interfejsu API rejestracji aplikacji)
+     > - Prawidłowe aplikacji/poświadczenia użytkownika, jeśli konto odpowiada `identity` argument przekazywany przez zestaw SDK. Klienci "natywnego" OAuth2 należy monit o podanie poświadczeń użytkownika i korzystać z tego przepływu "Kod autoryzacji". OAuth2 "poufne klienci" można użyć własnych, bezpiecznych poświadczeń z usługą flow "poświadczeń klienta" (na przykład usługi), lub monit o podanie poświadczeń użytkownika przy użyciu usługi flow "Kod autoryzacji" (np. aplikacji sieci web). 
      >
-     > Uzyskanie tokenu protokołu OAuth2 jest protokołem złożone i zazwyczaj są realizowane za pomocą biblioteki. Jest TokenAcquireOAuth2Token() **tylko** wywoływane przez zestaw SDK MIP, zgodnie z potrzebami.
+     > Uzyskanie tokenu protokołu OAuth2 jest protokołem złożone i zazwyczaj są realizowane za pomocą biblioteki. Nosi nazwę TokenAcquireOAuth2Token() **tylko** przez zestaw SDK MIP, zgodnie z potrzebami.
 
      ```cpp
+     #include <iostream>
+     using std::cout;
+     using std::cin;
      using std::string;
 
      bool AuthDelegateImpl::AcquireOAuth2Token(const mip::Identity& identity, const OAuth2Challenge& challenge, OAuth2Token& token) 
      {
-            // TODO: replace with token acquisition code, using mAppId, identity, authority, and resourceURI
-            const string authority = challenge.GetAuthority();
-            const string resourceURI = challenge.GetResource();
-            string accessToken = "<access-token>";
+          // Acquire a token manually, reuse previous token if same authority/resource. In production, replace with token acquisition code.
+          string authority = challenge.GetAuthority();
+          string resource = challenge.GetResource();
+          if (mToken == "" || (authority != mAuthority || resource != mResource))
+          {
+              cout << "\nRun the PowerShell script to generate an access token using the following values, then copy/paste it below:\n";
+              cout << "Set $authority to: " + authority + "\n";
+              cout << "Set $resourceUrl to: " + resource + "\n";
+              cout << "Sign in with user account: " + identity.GetEmail() + "\n";
+              cout << "Enter access token: ";
+              cin >> mToken;
+              mAuthority = authority;
+              mResource = resource;
+              system("pause");
+          }
 
-            // Pass access token back to MIP SDK
-            token.SetAccessToken(accessToken);
+          // Pass access token back to MIP SDK
+          token.SetAccessToken(mToken);
 
           // True = successful token acquisition; False = failure
           return true;
@@ -188,11 +204,6 @@ Teraz Utwórz implementację dla delegata uwierzytelniania, rozszerzając zestaw
 3. Opcjonalnie użyj F6 (**Kompiluj rozwiązanie**) próba uruchomienia testu kompilacji/łącze rozwiązania, aby upewnić się, że pomyślnie skompilowana przed kontynuowaniem.
 
 ## <a name="implement-a-consent-delegate"></a>Implementowanie delegata zgody
-
-Usługa Azure AD wymaga aplikacja otrzyma zgody, zanim uzyskają dostęp do zabezpieczonych zasobów przy użyciu tożsamości konta usługi. Zgody jest rejestrowana jako trwałe potwierdzenie uprawnień w dzierżawie konta, w ramach danego konta (zgoda użytkownika) lub wszystkich kont (zgoda administratora) dla aplikacji dostępu do żądanego zasobu interfejsu API/uprawnienia. Zgoda odbywa się w różnych scenariuszach, na podstawie interfejsu API i poziom uprawnień, które dąży aplikacji, a konto używane do logowania i tokenu nabycia: 
-
-- konta z *tej samej dzierżawie* gdy Twoja aplikacja będzie zarejestrowana, jeśli użytkownika lub administratora nie została jawnie wstępnie zgody dostęp za pośrednictwem funkcji "Udziel uprawnień".
-- konta z *innej dzierżawy* Jeśli Twoja aplikacja będzie zarejestrowana jako wielodostępne, a administrator dzierżawy nie zostało wstępnie wyraził zgodę dla wszystkich użytkowników z wyprzedzeniem.
 
 Teraz tworzenie implementację dla delegata zgody, rozszerzając zestawu SDK `mip::ConsentDelegate` klasy i zastępowanie/wdrażanie `mip::AuthDelegate::GetUserConsent()` czystą funkcję wirtualną. Zgody delegatowi jest tworzone i używane później, plik profilu i obiektów aparatu plików.
 
@@ -254,8 +265,8 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
 
    int main()
    {
-     // Construct/initialize objects used by the application's profile object
-     ApplicationInfo appInfo{"<application-id>",    // ApplicationInfo object (App ID, friendly name)
+     // Construct/initialize objects required by the application's profile object
+     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, friendly name)
                  "<friendly-name>" };
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
@@ -263,8 +274,8 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
      auto consentDelegateImpl = make_shared<ConsentDelegateImpl>(); // Consent delegate object
  
      // Construct/initialize profile object
-     FileProfile::Settings profileSettings("",      // Path for logging/telemetry/state; blank = C:
-       true,                                        // true = use in-memory state storage (vs disk)
+     FileProfile::Settings profileSettings("",    // Path for logging/telemetry/state
+       true,                                      // true = use in-memory state storage (vs disk)
        authDelegateImpl,                            
        consentDelegateImpl,                     
        profileObserver,                         
@@ -277,9 +288,10 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
      auto profile = profileFuture.get();
 
      // Construct/initialize engine object
-     FileEngine::Settings engineSettings("<engine-id>",     // User-defined engine ID
-       "<engine-state>",                                // User-defined engine state        
-       "en-US");                                    // Locale (default = en-US)
+     FileEngine::Settings engineSettings(
+       mip::Identity("<engine-account>"),         // Engine identity (account used for authentication)
+       "<engine-state>",                          // User-defined engine state      
+       "en-US");                                  // Locale (default = en-US)
 
      // Set up promise/future connection for async engine operations; add engine to profile asynchronously
      auto enginePromise = make_shared<promise<shared_ptr<FileEngine>>>();
@@ -288,7 +300,7 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
      std::shared_ptr<FileEngine> engine; 
      try
      {
-       engine = engineFuture.get();             // triggers AcquireOAuth2Token() call
+       engine = engineFuture.get();             
      }
      catch (const std::exception& e)
      {
@@ -305,22 +317,22 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
 
 3. Zastąp wartości symboli zastępczych w kodzie źródłowym, po prostu wklejony, używając następujących wartości:
 
-   | Symbol zastępczy | Wartość |
-   |:----------- |:----- |
-   | \<Identyfikator aplikacji\> | Identyfikator aplikacji usługi Azure AD przypisane do aplikacji zarejestrowanych w "Instalacja zestawu MIP SDK and configuration" (2 wystąpienia).  |
-   | \<Przyjazna nazwa\> | Zdefiniowane przez użytkownika przyjazną nazwę dla aplikacji. |
-   | \<Identyfikator aparatu\> | Identyfikator użytkownika, przypisany do aparatu. |
-   | \<Stan aparatu\> | Stan użytkownika ma zostać skojarzony z aparatem. |
+   | Symbol zastępczy | Wartość | Przykład |
+   |:----------- |:----- |:--------|
+   | \<Identyfikator aplikacji\> | Identyfikator aplikacji usługi Azure AD przypisane do aplikacji zarejestrowanych w "Instalacja zestawu MIP SDK and configuration" (2 wystąpienia).  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<Przyjazna nazwa\> | Zdefiniowane przez użytkownika przyjazną nazwę dla aplikacji. | AppInitialization |
+   | \<Aparat konta\> | Konto używane dla tożsamości aparatu. Podczas uwierzytelniania przy użyciu konta użytkownika podczas uzyskanie tokenu musi być zgodna wartość. | user1@tenant.onmicrosoft.com |
+   | \<Stan aparatu\> | Stan użytkownika ma zostać skojarzony z aparatem. | MyAppState |
 
 
-4. Teraz nie końcowego skompilować aplikację i usuń wszelkie błędy. Kod powinien pomyślnie, kompilacji, ale nie będzie jeszcze działała poprawnie, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start. Jeśli aplikacja zostanie uruchomiona, zostanie wyświetlony podobny do następującego wyjątku:
+4. Teraz nie końcowego skompilować aplikację i usuń wszelkie błędy. Kod powinien pomyślnie, kompilacji, ale nie będzie jeszcze działała poprawnie, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start. Jeśli aplikacja zostanie uruchomiona, zobaczysz dane wyjściowe podobne do następujących. Nie masz token dostępu, aby zapewnić, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start.
 
    ```cmd
-   An exception occurred... is the access token incorrect/expired?
-
-   Failed acquiring policy, Request failed with http status code: 401, x-ms-diagnostics: [2000001;reason="OAuth token submitted with the request can not be parsed.";error_category="invalid_token"], correlationId:[5b731x67-6521-4cd8-b911-00009ab9cbez]'
-   
-   Press any key to continue . . .
+   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
+   Set $authority to: https://login.windows.net/common/oauth2/authorize
+   Set $resourceUrl to: https://syncservice.o365syncservice.com/
+   Be sure to sign in with user account:
+   Enter access token:
    ```
 
 ## <a name="next-steps"></a>Następne kroki

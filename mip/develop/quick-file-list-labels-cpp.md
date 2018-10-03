@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 939f5a00fa63af1d6b34ca30b3fd1820bfed2d5b
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
+ms.openlocfilehash: 40248694a479632e2554c2d97f775bf99318de88
+ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453456"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48046958"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>Szybki Start: Lista etykiet czułość (C++)
 
@@ -21,7 +21,7 @@ Ten przewodnik Szybki Start dowiesz się, jak używać interfejsu API plików MI
 
 Jeśli jeszcze nie, pamiętaj przed kontynuowaniem należy spełnić następujące wymagania wstępne:
 
-- Pełne [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio. Przewodnik Szybki Start "List czułości etykiety" opiera się na poprzedniej wersji, do tworzenia odpowiedniego rozwiązania początkowego.
+- Pełne [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio. Przewodnik Szybki Start to "Lista etykiet czułości" opiera się na poprzedniej wersji, do tworzenia odpowiedniego rozwiązania początkowego.
 - Opcjonalnie: Przejrzyj [etykiet klasyfikacji](concept-classification-labels.md) pojęcia.
 
 ## <a name="add-logic-to-list-the-sensitivity-labels"></a>Dodaj logikę, aby wyświetlić listę etykiet czułości
@@ -38,10 +38,11 @@ Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za
    using std::endl;
    ```
 
-4. Pod koniec treści `main()`, poniżej zamykającego nawiasu klamrowego `}` z `catch` bloku i nowsze wersje `return 0;` instrukcji (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
+4. Kierunku końca `main()` treść poniżej zamykającego nawiasu klamrowego `}` z `catch` bloku i nowsze wersje `return 0;` (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
 
    ```cpp
    // List sensitivity labels
+   cout << "\nSensitivity labels for your organization:\n";
    auto labels = engine->ListSensitivityLabels();
    for (const auto& label : labels)
    {
@@ -55,25 +56,48 @@ Dodaj logikę, aby wyświetlić listę etykiet ważność Twojej organizacji, za
    system("pause");
    ``` 
 
-## <a name="update-the-token-acquisition-logic-with-a-valid-access-token"></a>Aktualizowanie logiki uzyskanie tokenu przy użyciu tokenu dostępu nie jest ważna
+## <a name="create-a-powershell-script-to-generate-access-tokens"></a>Tworzenie skryptu programu PowerShell, aby wygenerować tokeny dostępu
 
-Jak wspomniano w komentarzach do kodu, wywołanie usługi `AcquireOAuth2Token()` metoda jest wywoływana przez wywołanie `engineFuture.get()` wywołania `main()`. Należy zakończyć wykonania `AcquireOAuth2Token()` metody, aby zapewnić tokenu dostępu do zestawu SDK MIP.
+Używasz poniższy skrypt programu PowerShell do generowania tokenów dostępu, zgodnie z żądaniem z zestawu SDK. Skrypt używa `Get-ADALToken` polecenia cmdlet z modułu ADAL.PS wcześniej zainstalowany, a w "Zestaw SDK MIP instalacja i konfiguracja". 
 
-1. Wygeneruj token testu za pomocą następującego skryptu programu PowerShell. Skrypt używa `Get-ADALToken` polecenia cmdlet z modułu ADAL.PS zainstalowany wcześniej, w MIP SDK instalacji i konfiguracji. 
+1. Utwórz plik skryptu programu PowerShell (z rozszerzeniem .ps1) i skopiuj/Wklej poniższy skrypt do pliku:
 
-   - Utwórz plik skryptu programu PowerShell (z rozszerzeniem .ps1) i skopiuj/Wklej poniższy skrypt do pliku:
+   - Aktualizacja `$appId` i `$redirectUri` zmiennych, dopasowując wartości określone w Twojej rejestracji aplikacji usługi Azure AD. 
+   - `$authority` i `$resourceUrl` są aktualizowane później, w poniższej sekcji.
 
-     ```powershell
-     $authority = 'https://login.windows.net/common/oauth2/authorize'  # Enforced by MIP SDK
-     $resourceUrl = 'https://syncservice.o365syncservice.com/'         # Enforced by MIP SDK; matches the URL of the "Microsoft Information Protection Sync Service" resource/API requested by the Azure AD app registration
-     $appId = '0edbblll-8773-44de-b87c-b8c6276d41eb'                   # App ID of the Azure AD app registration
-     $redirectUri = 'bltest://authorize'                               # Must match the redirect URI of the Azure AD app registration
-     $response = Get-ADALToken -Resource $resourceUrl -ClientId $appId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:RefreshSession 
-     $response.AccessToken | clip                                      # Copies the access token text to the clipboard
-     ```
+   ```powershell
+   $authority = '<authority-url>'                   # Enforced by MIP SDK
+   $resourceUrl = '<resource-url>'                  # Enforced by MIP SDK; matches a resource/API URL requested in the app registration
+   $appId = '0edbblll-8773-44de-b87c-b8c6276d41eb'  # App ID of the Azure AD app registration
+   $redirectUri = 'bltest://authorize'              # Must match the redirect URI of the Azure AD app registration
+   $response = Get-ADALToken -Resource $resourceUrl -ClientId $appId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:RefreshSession 
+   $response.AccessToken | clip                     # Copy the access token text to the clipboard
+   ```
 
-   - Aktualizacja `$appId` i `redirectUri` zmiennych, dopasowując wartości określone w Twojej rejestracji aplikacji usługi Azure AD.
-   - Zapisz plik skryptu, a następnie uruchomić go za pomocą programu PowerShell. `Get-ADALToken` Polecenia cmdlet Wyzwalacze usługi Azure AD monitu dotyczącego uwierzytelniania podobny do poniższego przykładu. Po pomyślnym zalogowaniu token dostępu zostaną umieszczone w Schowku.
+2. Zapisz plik skryptu, aby można było uruchomić później, zgodnie z żądaniem przez aplikację kliencką.
+
+## <a name="build-and-test-the-application"></a>Tworzenie i testowanie aplikacji
+
+Na koniec Skompiluj i testowanie aplikacji klienckiej. 
+
+1. Użyj F6 (**Kompiluj rozwiązanie**) do tworzenia aplikacji klienckiej. Jeśli żadne błędy kompilacji, należy użyć F5 (**Rozpocznij debugowanie**) do uruchamiania aplikacji.
+
+2. Jeśli projektu kompilacji i zostanie wykonane pomyślnie, aplikacja wyświetli monit o podanie tokenu dostępu, zawsze wywołuje zestawu SDK usługi `AcquireOAuth2Token()` metody. Możesz ponownie używać wcześniej wygenerowany token, jeśli zostanie wyświetlony monit wielokrotnie i wymagane wartości są takie same:
+
+   ```cmd
+   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
+   Set $authority to: https://login.windows.net/common/oauth2/authorize
+   Set $resourceUrl to: https://syncservice.o365syncservice.com/
+   Be sure to sign in with user account: user1@tenant.onmicrosoft.com
+   Enter access token:
+   ```
+
+3. Aby podać odpowiedzi na monit powyżej, wróć do skryptu programu PowerShell oraz:
+
+   - Aktualizacja `$authority` i `$resourceUrl` zmiennych. Muszą one odpowiadać wartości, które są określone w danych wyjściowych konsoli w kroku #2. Te wartości są podane przez zestaw SDK MIP w `challenge` parametru `AcquireOAuth2Token()`:
+     - `$authority` powinien być `https://login.windows.net/common/oauth2/authorize`
+     - `$resourceUrl` powinien być `https://syncservice.o365syncservice.com/` lub `https://aadrm.com`
+   - Uruchom skrypt programu PowerShell. `Get-ADALToken` Polecenia cmdlet Wyzwalacze usługi Azure AD monitu dotyczącego uwierzytelniania podobny do poniższego przykładu. Należy określić to samo konto, podana w danych wyjściowych konsoli w kroku #2. Po pomyślnym zalogowaniu token dostępu zostaną umieszczone w Schowku.
 
      [![Program Visual Studio uzyskania tokenu logowania](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
 
@@ -81,28 +105,20 @@ Jak wspomniano w komentarzach do kodu, wywołanie usługi `AcquireOAuth2Token()`
 
      [![Visual Studio wyrażania zgody.](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in-consent.png#lightbox)
 
-2. Natychmiast po ukończeniu kroku #1 powyżej, wróć do programu Visual Studio i użyj **Eksploratora rozwiązań** można otworzyć "auth_delegate.cpp". Przewiń w dół do Twojej `AcquireOAuth2Token()` implementacji i znajdź następujący wiersz kodu. Zastąp `<access-token>` symbolu zastępczego z tokenem umieszczane w Schowku w poprzednim kroku. Token powinien być ciąg, w formacie podobnym do `eyJ0eXAiOi ...`.
+4. Po dostarczeniu tokeny dostępu, dane wyjściowe z konsoli powinien być wyświetlony etykiety ważności, podobny do poniższego przykładu:
 
-   ```cpp
-   string accessToken = "<access-token>";
-   ``` 
+   ```cmd
+   Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
+   Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
+   General : f42a3342-8706-4288-bd31-ebb85995028z
+   Confidential : 074e457c-5848-4542-9a6f-34a182080e7z
+   Highly Confidential : f55c2dea-db0f-47cd-8520-a52e1590fb6z
 
-## <a name="build-and-test-the-application"></a>Tworzenie i testowanie aplikacji
+   Press any key to continue . . .
+   ```
 
-Na koniec Skompiluj i testowanie aplikacji klienckiej. Jeśli projekt kompiluje i zostanie wykonane pomyślnie, powinny zostać wyświetlone dane wyjściowe w oknie konsoli, podobny do poniższego przykładu:
-
-```cmd
-Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
-Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
-General : f42a3342-8706-4288-bd31-ebb85995028z
-Confidential : 074e457c-5848-4542-9a6f-34a182080e7z
-Highly Confidential : f55c2dea-db0f-47cd-8520-a52e1590fb6z
-
-Press any key to continue . . .
-```
-
-> [!NOTE]
-> Skopiuj i Zapisz identyfikator jednego lub więcej etykiet czułość (na przykład `f42a3342-8706-4288-bd31-ebb85995028z`), ponieważ użyjesz go w kolejnym przewodniku Szybki Start.
+   > [!NOTE]
+   > Skopiuj i Zapisz identyfikator jednego lub więcej etykiet czułość (na przykład `f42a3342-8706-4288-bd31-ebb85995028z`), ponieważ użyjesz go w kolejnym przewodniku Szybki Start.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

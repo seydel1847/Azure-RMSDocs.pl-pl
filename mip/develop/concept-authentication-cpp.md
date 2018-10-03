@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 7e0fb9066af69793592e10b029d5af7d67f84993
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
+ms.openlocfilehash: 288342c467574cf84c60e1211238b65a9e716b6c
+ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453354"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48230526"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Usługi Microsoft Information Protection SDK — pojęć dotyczących uwierzytelniania
 
@@ -24,15 +24,19 @@ Uwierzytelnianie w zestawie SDK MIP jest wykonywane przez rozszerzenie klasy `mi
 `mip::AuthDelegate::AcquireOAuth2Token` akceptuje następujące parametry i zwraca wartość typu wartość logiczna wskazująca, czy uzyskanie tokenu zakończyło się pomyślnie:
 
 - `mip::Identity`: Tożsamość użytkownika lub usługę, aby uwierzytelniali się, jeśli jest znany.
-- `mip::AuthDelegate::OAuth2Challenge`: Przyjmuje dwa parametry **urząd** i **zasobów**. **Urząd** usługa token zostanie wygenerowany względem. **Zasób** usługa podejmujemy próbę uzyskania dostępu. Zestaw SDK będzie obsługiwać przekazywanie tych parametrów w do delegata, gdy zostanie wywołana.
-- `mip::AuthDelegate::OAuth2Token`: Napiszemy tokenu wynik tego obiektu. Będzie można używane przez zestaw SDK, gdy aparat zostanie załadowany. Poza naszej implementacji uwierzytelniania nie powinny być niezbędne do pobierania lub ustawiania tej wartości w dowolnym miejscu.
+- `mip::AuthDelegate::OAuth2Challenge`: Przyjmuje dwa parametry **urząd** i **zasobów**. **Urząd** usługa token zostanie wygenerowany względem. **Zasób** usługa podejmujemy próbę uzyskania dostępu. Zestaw SDK będzie obsługiwać przekazywanie tych parametrów do delegata, gdy zostanie wywołana.
+- `mip::AuthDelegate::OAuth2Token`: Wynik tokenu są zapisywane do tego obiektu. Będzie można używane przez zestaw SDK, gdy aparat zostanie załadowany. Poza naszej implementacji uwierzytelniania nie powinny być niezbędne do pobierania lub ustawiania tej wartości w dowolnym miejscu.
 
 **Ważne:** aplikacje nie wywołuj `AcquireOAuth2Token` bezpośrednio. Zestaw SDK wywoła tę funkcję, gdy jest to wymagane.
 
 ## <a name="consent"></a>Wyrażenie zgody
 
-`mip::Consent` Klasa wyliczenia implementuje metody łatwy w użyciu, która pozwala deweloperom aplikacji zapewniając zgody niestandardowe środowisko oparte na punkt końcowy, który jest uzyskiwany przez zestaw SDK. Powiadomienia mogą informować użytkownika danych, które mają być zbierane, jak pobierać dane, usunięte lub inne informacje wymagane przez prawo lub zgodności zasad. Po użytkownik udziela zgodę, aplikacja może kontynuować. 
+Usługa Azure AD wymaga od aplikacji upływie zgody, udzieleniu uprawnień dostępu do zabezpieczonych zasobów/interfejsów API przy użyciu tożsamości konta usługi. Zgoda jest rejestrowany jako trwałe potwierdzenie uprawnień w dzierżawie konta, dla wszystkich kont (zgoda administratora) lub określonego konta (zgoda użytkownika). Zgoda odbywa się w różnych scenariuszach, w oparciu o interfejs API, którego uzyskiwany jest dostęp i uprawnienia, które dąży aplikacji, a konto używane do logowania: 
 
+- konta z *tej samej dzierżawie* gdy Twoja aplikacja będzie zarejestrowana, jeśli użytkownika lub administratora nie została jawnie wstępnie zgody dostęp za pośrednictwem funkcji "Udziel uprawnień".
+- konta z *innej dzierżawy* Jeśli Twoja aplikacja będzie zarejestrowana jako wielodostępne, a administrator dzierżawy nie zostało wstępnie wyraził zgodę dla wszystkich użytkowników z wyprzedzeniem.
+
+`mip::Consent` Klasa wyliczenia implementuje metody łatwy w użyciu, która pozwala deweloperom aplikacji zapewniając zgody niestandardowe środowisko oparte na punkt końcowy, który jest uzyskiwany przez zestaw SDK. Powiadomienia mogą informować użytkownika danych, które mają być zbierane, jak pobierać dane, usunięte lub inne informacje wymagane przez prawo lub zgodności zasad. Po użytkownik udziela zgodę, aplikacja może kontynuować. 
 
 ### <a name="implementation"></a>Implementacja
 
@@ -99,7 +103,7 @@ Consent ConsentDelegateImpl::GetUserConsent(const string& url) {
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Dla uproszczenia przykłady ukazujące delegata wdroży uzyskanie tokenu przez wywołanie skryptu zewnętrznego. Ten skrypt mogą zostać zastąpione przez dowolny inny typ skryptu, biblioteki OAuth2 "open source" lub niestandardową biblioteką OAuth2.
+Dla uproszczenia przykłady ukazujące delegata wdroży uzyskanie tokenu przez wywołanie skryptu zewnętrznego. Ten skrypt mogą zostać zastąpione przez dowolny inny typ skryptu, biblioteki OAuth2 typu open source lub niestandardową biblioteką OAuth2.
 
 - [Uzyskiwanie tokenu dostępu przy użyciu programu PowerShell](concept-authentication-acquire-token-ps.md)
 - [Uzyskiwanie tokenu dostępu przy użyciu języka Python](concept-authentication-acquire-token-py.md)

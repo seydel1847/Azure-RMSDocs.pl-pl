@@ -7,12 +7,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d1e159e2276f5dc76a180711a81e3d0a182eb29e
-ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
+ms.openlocfilehash: a48ec2e1bbb18fb6398a6960ca8827b91726c7eb
+ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453405"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48046941"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>Szybki Start: Ustawianie i pobieranie etykiety ważności (C++)
 
@@ -22,11 +22,8 @@ Ten przewodnik Szybki Start przedstawiono sposób użycia interfejsów API plik�
 
 Jeśli jeszcze nie, pamiętaj przed kontynuowaniem należy spełnić następujące wymagania wstępne:
 
-- Pełne [Szybki Start: Lista etykiet czułość (C++)](quick-file-list-labels-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio, aby wyświetlić listę etykiet poufności w organizacji. Ten przewodnik Szybki Start opiera się na poprzedni.
+- Pełne [Szybki Start: Lista etykiet czułość (C++)](quick-file-list-labels-cpp.md) najpierw tworzy moduł uruchamiający rozwiązania Visual Studio, aby wyświetlić listę etykiet poufności w organizacji. To "Zestaw i get etykieta poufności" Szybki Start opiera się na poprzedni.
 - Opcjonalnie: Przejrzyj [plików obsługi w zestawie SDK MIP](concept-handler-file-cpp.md) pojęcia.
-
-> [!IMPORTANT]
-> Jeśli zbyt dużo czasu przechodzi między zakończenia poprzednim przewodniku szybkie Start "Labels czułości listy" i tego, wygaśnie token statyczny utworzony w poprzedniej wersji portalu. Jeśli tak, należy wygenerować nowy token i zaktualizuj swoje `AcquireOAuth2Token()` implementacji ponownie. Zobacz [zaktualizować logikę uzyskanie tokenu z prawidłowym tokenem dostępu](quick-file-list-labels-cpp.md#update-the-token-acquisition-logic-with-a-valid-access-token) Aby uzyskać więcej informacji.
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>Implementowanie klasy obserwatora do monitorowania obiekt programu obsługi plików
 
@@ -103,7 +100,7 @@ Dodaj logikę do ustawiania i pobierania etykieta poufności w pliku, za pomocą
 
    using mip::FileHandler;
    ```
-3. Pod koniec treści `main()`poniżej `system("pause");`i nowsze wersje `return 0;` instrukcji (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
+3. Kierunku końca `main()` treść poniżej `system("pause");` i nowsze wersje `return 0;` (tam, gdzie Przerwano w poprzednim przewodniku Szybki Start), Wstaw następujący kod:
 
    ```cpp
    // Set up async FileHandler for input file operations
@@ -147,7 +144,7 @@ Dodaj logikę do ustawiania i pobierania etykieta poufności w pliku, za pomocą
         auto commitFuture = commitPromise->get_future();
         handler->CommitAsync(filePathOut, commitPromise);
         if (commitFuture.get()) {
-            cout << "Label committed to file: " << filePathOut << endl;
+            cout << "\nLabel committed to file: " << filePathOut << endl;
         }
         else {
             cout << "Failed to label: " + filePathOut << endl;
@@ -180,7 +177,7 @@ Dodaj logikę do ustawiania i pobierania etykieta poufności w pliku, za pomocą
    // Get the label from output file
    try
    {
-        cout << "\nGetting label committed to file: " << filePathOut << endl;
+        cout << "\nGetting the label committed to file: " << filePathOut << endl;
         auto label = handler->GetLabel();
         cout << "Name: " + label->GetLabel()->GetName() << endl;
         cout << "Id: " + label->GetLabel()->GetId() << endl;
@@ -204,28 +201,55 @@ Dodaj logikę do ustawiania i pobierania etykieta poufności w pliku, za pomocą
 
 ## <a name="build-and-test-the-application"></a>Tworzenie i testowanie aplikacji
 
-Tworzenie i testowanie aplikacji klienckiej. Jeśli projekt kompiluje i zostanie wykonane pomyślnie, powinny zostać wyświetlone dane wyjściowe w oknie konsoli, podobny do poniższego przykładu: 
+Tworzenie i testowanie aplikacji klienckiej. 
 
-```cmd
-Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
-Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
-General : f42a3342-8706-4288-bd31-ebb85995028z
-Confidential : 074e457c-5848-4542-9a6f-34a182080e7z
-Highly Confidential : f55c2dea-db0f-47cd-8520-a52e1590fb6z
-Press any key to continue . . .
+1. Użyj F6 (**Kompiluj rozwiązanie**) do tworzenia aplikacji klienckiej. Jeśli żadne błędy kompilacji, należy użyć F5 (**Rozpocznij debugowanie**) do uruchamiania aplikacji.
 
-Applying Label ID f42a3342-8706-4288-bd31-ebb85995028z to c:\Test\Test.docx
-Committing changes
-Label committed to file: c:\Test\Test_labeled.docx
-Press any key to continue . . .
+2. Jeśli projektu kompilacji i zostanie wykonane pomyślnie, aplikacja wyświetli monit o podanie tokenu dostępu, zawsze wywołuje zestawu SDK usługi `AcquireOAuth2Token()` metody. Wcześniej w przewodniku "List czułości etykiety" Szybki Start uruchomisz skrypt programu PowerShell w celu uzyskania tokenu za każdym razem przy użyciu podanych wartości. `AcquireOAuth2Token()` podejmie próbę użycia tokenu wcześniej wygenerowany, jeśli kierowany i zasobów są takie same:
 
-Getting label committed to file: c:\Test\Test_labeled.docx
-Name: General
-Id: f42a3342-8706-4288-bd31-ebb85995028z
-Press any key to continue . . .
-```
+   ```cmd
+   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
+   Set $authority to: https://login.windows.net/common/oauth2/authorize
+   Set $resourceUrl to: https://syncservice.o365syncservice.com/
+   Sign in with user account: user1@tenant.onmicrosoft.com
+   Enter access token: <paste-access-token-here>
+   Press any key to continue . . .
 
-Stosowanie etykiety, można sprawdzić, otwierając dokument i wizualnie Sprawdzanie ustawień ochrony informacji dokumentu.
+   Sensitivity labels for your organization:
+   Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
+   Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
+   General : f42a3342-8706-4288-bd31-ebb85995028z
+   Confidential : 074e457c-5848-4542-9a6f-34a182080e7z
+   Highly Confidential : f55c2dea-db0f-47cd-8520-a52e1590fb6z
+   Press any key to continue . . .
+
+   Applying Label ID 074e457c-5848-4542-9a6f-34a182080e7z to c:\Test\Test.docx
+   Committing changes
+
+   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
+   Set $authority to: https://login.windows.net/common/oauth2/authorize
+   Set $resourceUrl to: https://aadrm.com
+   Sign in with user account: user1@tenant.onmicrosoft.com
+   Enter access token: <paste-access-token-here>
+   Press any key to continue . . .
+
+   Label committed to file: c:\Test\Test_labeled.docx
+   Press any key to continue . . .
+
+   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
+   Set $authority to: https://login.windows.net/94f69844-8d34-4794-bde4-3ac89ad2b664/oauth2/authorize
+   Set $resourceUrl to: https://aadrm.com
+   Sign in with user account: user1@tenant.onmicrosoft.com
+   Enter access token: <paste-access-token-here>
+   Press any key to continue . . .
+
+   Getting the label committed to file: c:\Test\Test_labeled.docx
+   Name: Confidential
+   Id: 074e457c-5848-4542-9a6f-34a182080e7z
+   Press any key to continue . . .
+   ```
+
+Stosowanie etykiety, można sprawdzić, otwierając plik wyjściowy i wizualnie Sprawdzanie ustawień ochrony informacji dokumentu.
 
 > [!NOTE]
 > Jeśli masz etykietowania dokumentów pakietu Office, ale nie jest podpisany przy użyciu konta z dzierżawy usługi Azure Active Directory (AD), gdzie token dostępu został uzyskany (i etykiet czułości są skonfigurowane), użytkownik może zostać wyświetlony monit logowania przed otwarciem dokumentu oznakowanych. 
