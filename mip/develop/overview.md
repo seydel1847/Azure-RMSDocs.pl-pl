@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: overview
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 7b16ce00ef9900bff51b35a3fa1d9ef2b91a3e99
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: 775ae3d524947c8300de0e011b92c2cad106905a
+ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445958"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251730"
 ---
 # <a name="overview"></a>Przegląd
 
@@ -19,7 +19,7 @@ ms.locfileid: "47445958"
 
 Ochrona informacji firmy Microsoft (MIP) stanowi ujednolicenie klasyfikacji, etykietowania i ochrony usług firmy Microsoft, w przypadku administracja jednego środowiska i oprogramowania development kit (SDK). Jednolita Administracja znajduje się w usłudze Office 365, Azure Information Protection, Windows Information Protection i innych usług firmy Microsoft. Stron trzecich można integrować z aplikacjami, przy użyciu standardowych, spójne danych, etykietowania schemat ochrony usługi przy użyciu zestawu SDK.
 
-* [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://support.office.com/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?redirectSourcePath=%252farticle%252f7fe448f7-49bd-4d3e-919d-0a6d1cf675bb&ui=en-US&rs=en-US&ad=US)
+* [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://docs.microsoft.com/office365/securitycompliance/)
 * [Co to jest usługa Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
 * [Jak działa ochrona usługi Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 

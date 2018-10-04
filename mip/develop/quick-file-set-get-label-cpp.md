@@ -7,12 +7,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: a48ec2e1bbb18fb6398a6960ca8827b91726c7eb
-ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
+ms.openlocfilehash: 651fc73c00f18d06ad1a824337a096331bc7e897
+ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046941"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251747"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>Szybki Start: Ustawianie i pobieranie etykiety ważności (C++)
 
@@ -207,7 +207,7 @@ Tworzenie i testowanie aplikacji klienckiej.
 
 2. Jeśli projektu kompilacji i zostanie wykonane pomyślnie, aplikacja wyświetli monit o podanie tokenu dostępu, zawsze wywołuje zestawu SDK usługi `AcquireOAuth2Token()` metody. Wcześniej w przewodniku "List czułości etykiety" Szybki Start uruchomisz skrypt programu PowerShell w celu uzyskania tokenu za każdym razem przy użyciu podanych wartości. `AcquireOAuth2Token()` podejmie próbę użycia tokenu wcześniej wygenerowany, jeśli kierowany i zasobów są takie same:
 
-   ```cmd
+   ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
    Set $authority to: https://login.windows.net/common/oauth2/authorize
    Set $resourceUrl to: https://syncservice.o365syncservice.com/

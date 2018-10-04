@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 8403f1bd7b123c196c4063b7f38e2b0f73b9f5aa
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: d7077678ba336b031f7a8f812a3c4e90d8c5b05a
+ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446536"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251713"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>Usługi Microsoft Information Protection SDK — ochrona interfejsu API obserwatorów
 
@@ -89,7 +89,7 @@ Gdy firma Microsoft wystąpienia każdej klasy zestawu SDK lub użycia funkcji, 
 
 ## <a name="protectionhandler-observer-implementation"></a>Implementacja ProtectionHandler obserwatora
 
-Podobnie jak obserwatora ochrony `mip::ProtectionHandler` implementuje `mip::ProtectionHandler::Observer` klasy do obsługi zdarzeń asynchronicznych powiadomień podczas operacji ochrony. Implementacja jest podobny do szczegóły przedstawiono powyżej. `ProtectionHandlerObserverImpl` częściowo jest zdefiniowana poniżej. Pełną implementację można znaleźć w naszej [przykładowego repozytorium GitHub](https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk).
+Podobnie jak obserwatora ochrony `mip::ProtectionHandler` implementuje `mip::ProtectionHandler::Observer` klasy do obsługi zdarzeń asynchronicznych powiadomień podczas operacji ochrony. Implementacja jest podobny do szczegóły przedstawiono powyżej. `ProtectionHandlerObserverImpl` częściowo jest zdefiniowana poniżej. Pełną implementację można znaleźć w naszej [przykładowego repozytorium GitHub](https://azure.microsoft.com/resources/samples/?sort=0&term=mip+sdk).
 
 ### <a name="protectionhandlerobserverimpl-class-declaration"></a>Deklaracja klasy ProtectionHandlerObserverImpl
 

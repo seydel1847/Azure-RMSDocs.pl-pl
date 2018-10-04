@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 40248694a479632e2554c2d97f775bf99318de88
-ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
+ms.openlocfilehash: fc8d4b43bae9a7b74edef10947ef5aa22e5d1267
+ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046958"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251781"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>Szybki Start: Lista etykiet czułość (C++)
 
@@ -84,7 +84,7 @@ Na koniec Skompiluj i testowanie aplikacji klienckiej.
 
 2. Jeśli projektu kompilacji i zostanie wykonane pomyślnie, aplikacja wyświetli monit o podanie tokenu dostępu, zawsze wywołuje zestawu SDK usługi `AcquireOAuth2Token()` metody. Możesz ponownie używać wcześniej wygenerowany token, jeśli zostanie wyświetlony monit wielokrotnie i wymagane wartości są takie same:
 
-   ```cmd
+   ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
    Set $authority to: https://login.windows.net/common/oauth2/authorize
    Set $resourceUrl to: https://syncservice.o365syncservice.com/
@@ -107,7 +107,7 @@ Na koniec Skompiluj i testowanie aplikacji klienckiej.
 
 4. Po dostarczeniu tokeny dostępu, dane wyjściowe z konsoli powinien być wyświetlony etykiety ważności, podobny do poniższego przykładu:
 
-   ```cmd
+   ```console
    Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
    Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
    General : f42a3342-8706-4288-bd31-ebb85995028z

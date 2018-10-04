@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: f3a6c81bb42152926bd2b6f275f6fa45b81acc18
-ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
+ms.openlocfilehash: f74d457ad50fa0998abc94fdef3d0084ad6c7b17
+ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48230543"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251764"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>Szybki Start: Inicjowanie aplikacji klienta (C++)
 
@@ -327,7 +327,7 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
 
 4. Teraz nie końcowego skompilować aplikację i usuń wszelkie błędy. Kod powinien pomyślnie, kompilacji, ale nie będzie jeszcze działała poprawnie, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start. Jeśli aplikacja zostanie uruchomiona, zobaczysz dane wyjściowe podobne do następujących. Nie masz token dostępu, aby zapewnić, dopóki nie zostaną wykonane kolejnego przewodnika Szybki Start.
 
-   ```cmd
+   ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
    Set $authority to: https://login.windows.net/common/oauth2/authorize
    Set $resourceUrl to: https://syncservice.o365syncservice.com/
