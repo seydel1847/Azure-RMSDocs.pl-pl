@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 9257c72de223565e5259600d1680e78da0b7f544
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: b8c9d92e33632ef5e05d30ab82a0a823e2e8408e
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446417"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794297"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -31,10 +31,9 @@ Zestaw SDK MIP jest obsługiwane na następujących platformach:
 | RedHat Enterprise Linux | 7 z devtoolset 7 |
 | Debian  | 9 |
 | macOS   | High Sierra lub nowszym |
-| Windows | Wszystkie obsługiwane wersje 32- i 64-bitowy |
+| Windows | Wszystkie obsługiwane wersje 32-bitowe i 64-bitowy |
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>Zamów subskrypcję usługi Office 365
-
 
 Wiele przykładowych zestawach SDK wymaga dostępu do subskrypcji usługi Office 365. Jeśli jeszcze nie, należy koniecznie Zarejestruj się w jednym z następujących typów subskrypcji:
 
@@ -45,6 +44,10 @@ Wiele przykładowych zestawach SDK wymaga dostępu do subskrypcji usługi Office
 | Pakiet Enterprise Mobility i zabezpieczeń E3 lub E5 | https://www.microsoft.com/cloud-platform/enterprise-mobility-security |
 | Usługa Azure Information Protection Premium P1 lub P2 | https://azure.microsoft.com/pricing/details/information-protection/ |
 | Rozwiązania Microsoft 365 E3 i E5, F1 | https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans | 
+
+## <a name="configure-sensitivity-labels"></a>Konfiguruj etykiety ważności
+
+Jeśli obecnie używasz usługi Azure Information Protection, należy przedsięwziąć, aby przeprowadzić migrację etykiet do Centrum zgodności i zabezpieczeń usługi Office 365. Aby uzyskać więcej informacji na temat procesu, zobacz [jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](/azure/information-protection/configure-policy-migrate-labels). 
 
 ## <a name="configure-your-client-workstation"></a>Konfigurowanie stacji roboczej użytkownika
 
@@ -114,7 +117,7 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
     Install-Package Microsoft.InformationProtection.Policy
     Install-Package Microsoft.InformationProtection.Protection
     ```  
-6. Ścieżki plików binarnych zestawu SDK (biblioteki dołączanej dynamicznie (dll)), należy dodać do zmiennej środowiskowej PATH. Dzięki temu zależnych od ustawień lokalnych. Biblioteki DLL ma zostać odnaleziona w czasie wykonywania przez aplikacje klienckie:
+6. Ścieżki plików binarnych zestawu SDK (biblioteki dołączanej dynamicznie (dll)), należy dodać do zmiennej środowiskowej PATH. Zmiennej PATH umożliwia zależne biblioteki DLL ma zostać odnaleziona w czasie wykonywania przez aplikacje klienckie:
    - Kliknij ikonę Windows, w lewym dolnym rogu.
    - Wpisz "Path", a następnie naciśnij klawisz "Enter", gdy pojawi się **Edytuj zmienne środowiskowe systemu** elementu show.
    - Na **właściwości systemu** okno dialogowe, kliknij przycisk **zmienne środowiskowe**.
@@ -148,7 +151,7 @@ Aby zarejestrować konto do aplikacji w usłudze Azure AD do użycia z przewodni
     - **Typ aplikacji** — wybierz "Native", jak przedstawiona przez zestaw SDK są aplikacje konsoli natywnie zainstalowanych aplikacji. Natywne aplikacje są traktowane jako "publicznej" klientów przez OAuth2, ponieważ są w stanie użycia magazynu poświadczeń aplikacji w bezpieczny sposób. W odróżnieniu od dla "poufne" aplikacji na serwerze, na przykład aplikacji sieci web, który jest zarejestrowany w jej własnych poświadczeń. 
     - **Identyfikator URI przekierowania** — ponieważ zestaw SDK używa konsoli proste aplikacje klienckie, użyj identyfikatora URI w formacie `<app-name>://authorize`.
 
-2. Po zakończeniu będziesz zostać zwrócona do **zarejestrowana aplikacja** strony dla Twojej nowej rejestracji aplikacji. Skopiuj identyfikator GUID w **identyfikator aplikacji** pola, ponieważ będzie on potrzebny później. 
+2. Po zakończeniu będziesz zostać zwrócona do **zarejestrowana aplikacja** strony dla Twojej nowej rejestracji aplikacji. Skopiuj i Zapisz identyfikator GUID w **identyfikator aplikacji** pola, ponieważ będzie on potrzebny do przewodników Szybki Start. 
 
 3. Następnie kliknij przycisk **ustawienia** można dodać interfejsów API i uprawnień, do których klient będzie potrzebował dostępu. Na **ustawienia** kliknij **wymagane uprawnienia**.
 
@@ -164,7 +167,7 @@ Aby zarejestrować konto do aplikacji w usłudze Azure AD do użycia z przewodni
 
 6. Wstecz w czasie **wymagane uprawnienia** kliknij **Udziel uprawnień**, następnie **tak**. Ten krok umożliwia wstępne zgody do aplikacji przy użyciu tej rejestracji dostęp do interfejsów API w ramach określonych uprawnień. Jeśli zalogowano się jako administrator globalny zgody jest rejestrowane dla wszystkich użytkowników w dzierżawie, działających aplikacji; w przeciwnym razie dotyczy tylko z Twoim kontem użytkownika. 
 
-Po zakończeniu rejestracji aplikacji i uprawnienia do interfejsu API powinno wyglądać podobnie do następującego:
+Po zakończeniu rejestracji aplikacji i uprawnienia do interfejsu API powinien wyglądać podobnie do poniższego przykładu:
 
    [![Rejestracja aplikacji w usłudze Azure AD](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
 
@@ -174,4 +177,4 @@ Aby uzyskać więcej informacji na temat dodawania interfejsów API i uprawnieni
 ## <a name="next-steps"></a>Następne kroki
 
 - Przed rozpoczęciem sekcji przewodników Szybki Start, upewnij się dowiedzieć się o [obserwatorów w zestawie SDK MIP](concept-async-observers.md), zgodnie z zestawu SDK MIP została zaprojektowana jako prawie całkowicie asynchronicznego.
-- Jeśli wszystko jest gotowe do pobiera niektóre praktyczne doświadczenia z zestawem SDK, zacznij od [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md).
+- Jeśli zechcesz Zdobądź praktyczne doświadczenie z zestawem SDK, skorzystaj z [Szybki Start: Inicjowanie aplikacji klienta (C++)](quick-app-initialization-cpp.md).

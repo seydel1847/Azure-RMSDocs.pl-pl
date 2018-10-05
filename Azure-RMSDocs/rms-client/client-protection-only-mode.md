@@ -4,18 +4,18 @@ description: Informacje dla użytkowników, którzy uruchamiają klienta usługi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5a2b01af0e246e732d087a344ecf037c13a47546
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
+ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151583"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812422"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Przewodnik po użytkownik: Tryb z samą ochroną dla klienta usługi Azure Information Protection
 
@@ -36,7 +36,7 @@ Tryb z samą ochroną uruchamia się w następujących scenariuszach:
     
     - Ta kombinacja subskrypcji jest Administratorze spoczywa odpowiedzialność za upewnij się, że tylko podzbioru użytkowników można użyć klasyfikacji i etykietowania funkcji. W pozostałej części użytkowników powinna być uruchomiona w trybie z samą ochroną klienta usługi Azure Information Protection. 
 
-- Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale nie masz żadnych etykiety skonfigurowane.
+- Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale nie ma etykiety skonfigurowane.
     
     - Może to nastąpić, gdy wszystkie etykiety globalne zasady są wyłączone, a Twoje konto nie jest dodawany do zasad o określonym zakresie. To może być spowodowane przez dział IT właśnie rozpoczęła się do wdrożenia usługi Azure Information Protection, ale jeszcze nie został udostępniony etykiet do klasyfikowania dokumentów i wiadomości e-mail. W międzyczasie można użyć klienta usługi Azure Information Protection do ochrony plików oraz wyświetlania chronionych plików.
 

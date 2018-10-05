@@ -4,16 +4,16 @@ description: Można usunąć lub zmiana kolejności etykiet usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 9589985fa0ab5f80ce78483dedac8c7bc4b9879e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b4631cd5664ba7951db04ce9ba221a19c0674ff
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151711"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794314"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection
 
@@ -25,7 +25,7 @@ Można usunąć lub zmiana kolejności etykiet usługi Azure Information Protect
 
 Jeśli usuniesz etykietę, która została zastosowana do dokumentów i wiadomości e-mail, użytkownicy widzą **Nieustawione** etykiety stanu w przypadku tych dokumentów i wiadomości e-mail dalej otwarty przez klienta usługi Azure Information Protection. Jednak informacje o etykiecie jest nadal w metadanych i nadal można odczytywać przez usługi, które poszukują te informacje etykiety.
 
-Ponadto jeśli usunięto etykietę zastosować ochronę, ochrona nie zostanie usunięty. Ustawienia ochrony z etykiety pozostają i wyświetlane w **szablonami ochrony** sekcji. Ten szablon można teraz konwertowane na nową etykietę lub połączone z etykiety. Ten szablon pozostaje, nie można utworzyć nową etykietę o takiej samej nazwie jak etykiety, który został usunięty. Jeśli chcesz to zrobić, masz następujące opcje:
+Ponadto jeśli usunięto etykietę zastosować ochronę, ochrona nie zostanie usunięty. Ustawienia ochrony z etykiety pozostają i wyświetlane w **szablonami ochrony** sekcji. Ten szablon teraz mogą być konwertowane na nową etykietę. Ten szablon pozostaje, nie można utworzyć nową etykietę o takiej samej nazwie jak etykiety, który został usunięty. Jeśli chcesz to zrobić, masz następujące opcje:
 
 - Konwersji szablonu na etykietę. 
     

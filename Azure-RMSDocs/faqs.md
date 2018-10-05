@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/03/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0acb14314fd15d45ee013ef920b51f6427768c81
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: e49912fd777a97c51f9ef7b4e7cff5a2aeb2c3ad
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403050"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794331"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -98,6 +98,8 @@ Informacje dodatkowe:
 - Można dostosować, jak często uzyskiwanie oceniane zasady dostępu warunkowego. Można to zrobić, konfigurując okres istnienia tokenu. Aby uzyskać więcej informacji, zobacz [okresów istnienia tokenu można skonfigurować w usłudze Azure Active Directory](/azure/active-directory/active-directory-configurable-token-lifetimes).
 
 - Zaleca się, że należy dodawać konta administratora do swoich zasad dostępu warunkowego, ponieważ te konta nie będzie dostęp do bloku usługi Azure Information Protection w witrynie Azure portal.
+
+- Jeśli używasz usługi MFA w zasady dostępu warunkowego do współpracy z innymi firmami (B2B), należy użyć [współpracy B2B usługi Azure AD](/active-directory/b2b/what-is-b2b) i utworzyć konta gościa dla użytkowników, aby udostępniać w innej organizacji.
 
 - Jeśli używasz wielu aplikacji w chmurze dla dostępu warunkowego, może nie być wyświetlana **Microsoft Azure Information Protection** wyświetlane na liście, aby wybrać. W tym przypadku użyj pola wyszukiwania w górnej części listy. Zacznij wpisywać tekst "Microsoft Azure Information Protection" do filtrowania dostępnych aplikacji. Jeśli masz subskrypcję obsługiwane, zostaną wyświetlone **Microsoft Azure Information Protection** do wybrania. 
 
