@@ -4,18 +4,18 @@ description: Informacje ułatwiające skonfigurowanie serwerów lokalnych, któr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 10/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 36ca84c29891efc3bdcaa42c633b4c87ad4ce1b6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 952aca2aebac0996a46d23912f126dd7dc6141da
+ms.sourcegitcommit: 82cbbeb833510b2de93980cd7dbebf41e34291e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151439"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817902"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
@@ -167,7 +167,7 @@ Jeśli na serwerach Exchange działa wcześniejsza wersja systemu operacyjnego, 
 
     -   Dokonaj edycji rejestru ręcznie przy użyciu informacji w temacie [Ustawienia rejestru dla łącznika usługi RMS](rms-connector-registry-settings.md), aby ręcznie dodać ustawienia rejestru na serwerach. 
 
-3.  Włącz funkcjonalność IRM w programie Exchange. Aby uzyskać więcej informacji, zobacz temat opisujący [procedury zarządzania prawami do informacji](https://technet.microsoft.com/library/dd351212%28v=exchg.150%29.aspx) w bibliotece programu Exchange.
+3. Włączanie funkcji IRM dla programu Exchange przez [Włączanie funkcji IRM dla wiadomości wewnętrznych] (https://technet.microsoft.com/library/bb124077(v=exchg.150\).aspx#Anchor_1).
 
     > [!NOTE]
     > Domyślnie po uruchomieniu polecenia **Set-IRMConfiguration-InternalLicensingEnabled $true** usługa IRM jest automatycznie włączona dla programu Outlook Web App i urządzeń przenośnych, a nie tylko dla skrzynek pocztowych. Jednak administratorzy mogą wyłączyć usługę IRM na różnych poziomach, na przykład dla roli Serwer dostępu klienta, katalogu wirtualnego programu Outlook Web App lub zasady skrzynek pocztowych programu Outlook Web App, a także zasady skrzynki pocztowej urządzenia przenośnego. Jeśli użytkownicy nie widzą żadnych szablonów usługi Azure RMS w programie Outlook Web App (po odczekaniu dnia) lub na urządzeniach przenośnych, a szablony są już widoczne w kliencie programu Outlook, sprawdź odpowiednie ustawienia, aby upewnić się, że usługa IRM nie została wyłączona. Aby uzyskać więcej informacji, zobacz temat opisujący [włączanie lub wyłączanie Zarządzania prawami do informacji na Serwerach dostępu klienta](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx) w dokumentacji programu Exchange. 

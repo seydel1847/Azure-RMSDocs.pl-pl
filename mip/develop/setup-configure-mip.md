@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: b8c9d92e33632ef5e05d30ab82a0a823e2e8408e
-ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
+ms.openlocfilehash: bbd58c7f60e75d4b777a61fb60cfb74df8739a9c
+ms.sourcegitcommit: 82cbbeb833510b2de93980cd7dbebf41e34291e1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48794297"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817885"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -53,21 +53,27 @@ Jeśli obecnie używasz usługi Azure Information Protection, należy przedsięw
 
 Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest przygotowana i skonfigurowana poprawnie.
 
-### <a name="windows-10"></a>Windows 10
+1. Jeśli używasz stacji roboczej systemu Windows 10:
 
-1. Za pomocą usługi Windows Update, zaktualizować swojej maszyny, do wersji Windows 10 Fall Creators Update (wersja 1709) lub nowszej. Aby sprawdzić bieżącą wersją:
-    - Kliknij ikonę Windows, w lewym dolnym rogu.
-    - Wpisz "O Twój komputer" i naciśnij klawisz "Enter".
-    - Przewiń w dół do **specyfikacje Windows** i poszukaj w obszarze **wersji**.
+   - Za pomocą usługi Windows Update, zaktualizować swojej maszyny, do wersji Windows 10 Fall Creators Update (wersja 1709) lub nowszej. Aby sprawdzić bieżącą wersją:
+     - Kliknij ikonę Windows, w lewym dolnym rogu.
+     - Wpisz "O Twój komputer" i naciśnij klawisz "Enter".
+     - Przewiń w dół do **specyfikacje Windows** i poszukaj w obszarze **wersji**.
+
+   - Upewnij się, że "Tryb dewelopera" jest włączona na stacji roboczej:
+     - Kliknij ikonę Windows, w lewym dolnym rogu.
+     - Wpisz "Przy użyciu funkcji dla deweloperów" i naciśnij klawisz "Enter", gdy pojawi się **używanie funkcji dla deweloperów** elementu show.
+     - Na **ustawienia** okno dialogowe, **dla deweloperów** wybierz kartę, w obszarze "Używanie funkcji dla deweloperów," **tryb dewelopera** opcji.
+     - Zamknij **ustawienia** okna dialogowego.
 
 2. Zainstaluj [programu Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)z następującymi pakietami roboczymi i składniki opcjonalne:
-    - **Programowanie na platformie Windows uniwersalnej** Windows obciążenie, oraz następującymi opcjonalnymi składnikami:
-        - **C++ Universal Windows Platform tools**
-        - **Zestaw SDK systemu Windows 10 SDK 10.0.16299.0** lub nowszy, jeśli nie jest domyślnie włączone
-    - **Programowanie aplikacji klasycznych w języku C++** Windows obciążenie, oraz następującymi opcjonalnymi składnikami:
-        - **Zestaw SDK systemu Windows 10 SDK 10.0.16299.0** lub nowszy, jeśli nie jest domyślnie włączone 
+   - **Programowanie na platformie Windows uniwersalnej** Windows obciążenie, oraz następującymi opcjonalnymi składnikami:
+     - **C++ Universal Windows Platform tools**
+     - **Zestaw SDK systemu Windows 10 SDK 10.0.16299.0** lub nowszy, jeśli nie jest domyślnie włączone
+   - **Programowanie aplikacji klasycznych w języku C++** Windows obciążenie, oraz następującymi opcjonalnymi składnikami:
+     - **Zestaw SDK systemu Windows 10 SDK 10.0.16299.0** lub nowszy, jeśli nie jest domyślnie włączone 
 
-        [![Instalator programu Visual Studio](media/setup-mip-client/visual-studio-install.png)](media/setup-mip-client/visual-studio-install.png#lightbox)
+     [![Instalator programu Visual Studio](media/setup-mip-client/visual-studio-install.png)](media/setup-mip-client/visual-studio-install.png#lightbox)
 
 3. Zainstaluj [modułu programu PowerShell ADAL.PS](https://www.powershellgallery.com/packages/ADAL.PS/3.19.4.2). 
 
@@ -110,13 +116,14 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
    - **Obejmują:** pliki nagłówków zestawu SDK usługi Microsoft Information Protection
    - **Przykłady:** źródła kodu dla przykładowych aplikacji
 
-   W Windows zestaw SDK można zainstalować za pomocą konsoli Menedżera pakietów NuGet:
+   W Windows zestaw SDK można zainstalować za pomocą konsoli Menedżera pakietów NuGet w programie Visual Studio:
 
-    ```Powershell
+    ```console
     Install-Package Microsoft.InformationProtection.File
     Install-Package Microsoft.InformationProtection.Policy
     Install-Package Microsoft.InformationProtection.Protection
     ```  
+    
 6. Ścieżki plików binarnych zestawu SDK (biblioteki dołączanej dynamicznie (dll)), należy dodać do zmiennej środowiskowej PATH. Zmiennej PATH umożliwia zależne biblioteki DLL ma zostać odnaleziona w czasie wykonywania przez aplikacje klienckie:
    - Kliknij ikonę Windows, w lewym dolnym rogu.
    - Wpisz "Path", a następnie naciśnij klawisz "Enter", gdy pojawi się **Edytuj zmienne środowiskowe systemu** elementu show.
@@ -128,12 +135,6 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
      - \<Platforma\>  =  `amd64` (alias: x64), `x86`itp.
    
    - Po zakończeniu aktualizowania **ścieżki** zmiennej, kliknij przycisk **OK**. Następnie kliknij przycisk **OK** po zwróceniu do **zmienne środowiskowe** okna dialogowego.
-
-7. Upewnij się, że "Tryb dewelopera" jest włączona na stacji roboczej:
-    - Kliknij ikonę Windows, w lewym dolnym rogu.
-    - Wpisz "Przy użyciu funkcji dla deweloperów" i naciśnij klawisz "Enter", gdy pojawi się **używanie funkcji dla deweloperów** elementu show.
-    - Na **ustawienia** okno dialogowe, **dla deweloperów** wybierz kartę, w obszarze "Używanie funkcji dla deweloperów," **tryb dewelopera** opcji.
-    - Zamknij **ustawienia** okna dialogowego.
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>Rejestrowanie aplikacji klienta za pomocą usługi Azure Active Directory
 
