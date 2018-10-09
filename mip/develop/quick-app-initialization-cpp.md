@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: f74d457ad50fa0998abc94fdef3d0084ad6c7b17
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
+ms.openlocfilehash: 578c5aa69faa986663ea6c164d94e5940580167d
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251764"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866140"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>Szybki Start: Inicjowanie aplikacji klienta (C++)
 
@@ -32,33 +32,26 @@ Jeśli jeszcze nie, należy koniecznie:
 
 ## <a name="create-a-visual-studio-solution-and-project"></a>Tworzenie projektu i rozwiązania Visual Studio
 
-Najpierw utworzymy i skonfigurować początkowe rozwiązania Visual Studio i projekt, na którym zostanie skompilowany Szybki Start. 
+Najpierw utworzymy i skonfigurować początkowe rozwiązania Visual Studio oraz projektu, na którym zostanie skompilowany inne Przewodniki Szybki Start. 
 
 1. Otwórz program Visual Studio 2017, wybierz opcję **pliku** menu **New**, **projektu**. W **nowy projekt** okno dialogowe:
-     - W okienku po lewej stronie w obszarze **zainstalowane**, **inne języki**, wybierz opcję **Visual C++**.
-     - W środkowym okienku wybierz **Windows aplikacji konsoli**
-     - W dolnym okienku zaktualizować projekt **nazwa**, **lokalizacji**i zawierający **Nazwa rozwiązania** odpowiednio.
-     - Po zakończeniu kliknij przycisk **OK** przycisk w prawym dolnym rogu.
+   - W okienku po lewej stronie w obszarze **zainstalowane**, **inne języki**, wybierz opcję **Visual C++**.
+   - W środkowym okienku wybierz **Windows aplikacji konsoli**
+   - W dolnym okienku zaktualizować projekt **nazwa**, **lokalizacji**i zawierający **Nazwa rozwiązania** odpowiednio.
+   - Po zakończeniu kliknij przycisk **OK** przycisk w prawym dolnym rogu.
 
-       [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/create-vs-solution.png)](media/quick-app-initialization-cpp/create-vs-solution.png#lightbox)
+     [![Tworzenie rozwiązania w usłudze Visual Studio](media/quick-app-initialization-cpp/create-vs-solution.png)](media/quick-app-initialization-cpp/create-vs-solution.png#lightbox)
 
-
-2. Skonfiguruj ustawienia projektu:
-   - W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu (bezpośrednio pod węzłem top/rozwiązania) i wybierz **właściwości**. 
-   - Na górze/po prawej stronie **stron właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager...** . Na **programu Configuration Manager** okna dialogowego, ustaw konfigurację"aktywne rozwiązanie" **debugowania**i docelowej "platforma rozwiązania aktywnego" do **x64**. Kliknij przycisk **Zamknij** po zakończeniu.
-   - W obszarze **właściwości konfiguracji** w okienku po lewej stronie wybierz **katalogi VC ++** węzła.
-   - Wybierz **Dołącz katalogi** wiersza, a następnie kliknij listę rozwijaną po prawej stronie, a następnie **< Edytuj >**, a następnie wprowadź ścieżki do zestawu SDK obejmują podkatalogów (.h) w polu najważniejsze. Określ pełnej ścieżki do `file\include`, `protection\include`, `upe\include` podkatalogów (ale nie lepszy), w ramach ścieżki, w którym zainstalowano zestaw SDK. Utwórz nowy wiersz dla każdego lub oddziel je średnikami (`;`) w pojedynczym wierszu. Kliknij przycisk **OK**. 
-
-        [![Program Visual Studio Ustaw właściwości ścieżki](media/quick-app-initialization-cpp/set-include-lib-path-properties.png)](media/quick-app-initialization-cpp/set-include-lib-path-properties.png#lightbox)
-
-   - Powtórz poprzedni krok dla **katalogi bibliotek** wiersza, wprowadzając ścieżki do podkatalogów binarne biblioteki statycznej (lib) zestawu SDK. Należy użyć ścieżek, które pasuje do bieżącej konfiguracji kompilacji dla rozwiązania. W tym przewodniku Szybki Start, określ bezwzględny lub względny ścieżki do `file\bins\debug\amd64`, `protection\bins\debug\amd64`, `upe\bins\debug\amd64` podkatalogów.
-
-   - W obszarze **właściwości konfiguracji** w okienku po lewej stronie, otwórz **konsolidatora** , a następnie wybierz węzeł **dane wejściowe** węzła. 
-   - Wybierz **dodatkowe zależności** wiersza, a następnie kliknij listę rozwijaną po prawej stronie, a następnie **< Edytuj >**. W tym miejscu możesz dodać nazwy bibliotek statycznych zestawu SDK. Dodaj `mip_protection_sdk.lib;mip_file_sdk.lib;mip_upe_sdk.lib;` do listy bibliotek w górnym pola. Kliknij przycisk **OK**. 
-   - Kliknij przycisk **OK** na **stron właściwości** okno dialogowe po zakończeniu.
-
-     [![Program Visual Studio Ustaw biblioteki statycznej](media/quick-app-initialization-cpp/set-static-libs.png)](media/quick-app-initialization-cpp/set-static-libs.png#lightbox)
-
+2. Dodaj pakiet Nuget interfejsu API plików zestawu SDK MCI do projektu:
+   - W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu (bezpośrednio pod węzłem top/rozwiązania) i wybierz **Zarządzaj pakietami NuGet...** :
+   - Gdy **Menedżera pakietów NuGet** Otwiera zakładkę w obszarze kart edytora grupy:
+     - Wybierz **Przeglądaj**.
+     - Wprowadź "Microsoft.InformationProtection" w polu wyszukiwania.
+     - Wybierz pakiet "Microsoft.InformationProtection.File".
+     - Kliknij przycisk "Zainstaluj", a następnie kliknij przycisk "OK", kiedy **podgląd zmian** Wyświetla okno dialogowe potwierdzenia.
+   
+     [![Program Visual Studio Dodaj pakiet NuGet](media/quick-app-initialization-cpp/add-nuget-package.png)](media/quick-app-initialization-cpp/add-nuget-package.png#lightbox)
+ 
 ## <a name="implement-an-observer-class-to-monitor-the-file-profile-and-engine-objects"></a>Implementowanie klasy obserwatora do monitorowania obiektów profilu i aparat plików
 
 Teraz Utwórz podstawową implementację klasy obserwatora pliku profilu, rozszerzając zestawu SDK `mip::FileProfile::Observer` klasy. Obserwator jest tworzone i używane później do monitorowania podczas ładowania pliku obiektu profilu i Dodawanie obiektu aparat w profilu.

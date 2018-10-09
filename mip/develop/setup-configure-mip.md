@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: bbd58c7f60e75d4b777a61fb60cfb74df8739a9c
-ms.sourcegitcommit: 82cbbeb833510b2de93980cd7dbebf41e34291e1
+ms.openlocfilehash: c889c736b6e67ef3c581ee1acaa3c04138773d20
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817885"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862145"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -96,7 +96,7 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
      PS C:\WINDOWS\system32>
      ```
 
-4. Pobierz przykłady zestawu SDK  
+4. Pobierz przykłady zestawu SDK z usługi GitHub 
 
    - Jeśli nie masz jeszcze, najpierw utwórz [profilu GitHub](https://github.com/join).
    - Zainstaluj najnowszą wersję [narzędziami klienckimi Git Software Freedom Conservancy (Git Bash)](https://git-scm.com/download/)
@@ -104,7 +104,7 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
      - Użyj następującego zapytania, aby wyświetlić repozytoria: https://github.com/Azure-Samples?utf8=%E2%9C%93&q=MipSdk. 
      - Używanie systemu Git Bash, należy użyć `git clone https://github.com/azure-samples/<repo-name>` do pobierania każdego przykładowego repozytorium.
 
-5. Pobieranie plików binarnych zestawu SDK
+5. Pobierz zestaw SDK danych binarnych a plikami nagłówka
 
    Plik zip zawierający nagłówki i plików binarnych zestawu SDK dla wszystkich platform można znaleźć w https://aka.ms/mipsdkbinaries. Plik zip zawiera kilka plików .zip dodatkowe, jeden dla każdej platformy i interfejsu API. Nazwy plików w następujący sposób, gdzie \<interfejsu API\> = `file`, `protection`, lub `upe`, i \<OS\> = platformy: `mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`.
 
@@ -116,7 +116,7 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
    - **Obejmują:** pliki nagłówków zestawu SDK usługi Microsoft Information Protection
    - **Przykłady:** źródła kodu dla przykładowych aplikacji
 
-   W Windows zestaw SDK można zainstalować za pomocą konsoli Menedżera pakietów NuGet w programie Visual Studio:
+   Jeśli wykonujesz rozwoju Visual Studio, zestaw SDK można również zainstalować przy użyciu konsoli Menedżera pakietów NuGet:
 
     ```console
     Install-Package Microsoft.InformationProtection.File

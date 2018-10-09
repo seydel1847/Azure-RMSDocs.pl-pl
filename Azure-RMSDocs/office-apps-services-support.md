@@ -4,18 +4,18 @@ description: Jak aplikacje pakietu Office dla użytkowników końcowych takich j
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6b2a696ac6006754ece851a97701939df9e7870
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148955"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866173"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -24,9 +24,9 @@ ms.locfileid: "44148955"
 Aplikacje pakietu Office dla użytkowników końcowych oraz usługi pakietu Office można użyć usługi Azure Rights Management z usługi Azure Information Protection, aby chronić dane Twojej organizacji. Te aplikacje pakietu Office to Word, Excel, PowerPoint i Outlook. Usługi pakietu Office to Exchange i SharePoint. Konfiguracje pakietu Office, które obsługują usługę Azure Rights Management, często używany jest termin **information rights management (IRM)**.
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Aplikacje pakietu Office: Word, Excel, PowerPoint i Outlook
-Te aplikacje natywnie obsługują usługę Azure Rights Management i Pozwól użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować szablony w celu zastosowania ochrony. Lub dla programu Word, Excel i PowerPoint, użytkownicy mogą wybrać dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń dotyczących użycia. 
+Te aplikacje natywnie obsługują usługę Azure Rights Management i Pozwól użytkownikom na stosowanie ochrony do zapisanego dokumentu lub wiadomości e-mail do wysłania. Użytkownicy mogą stosować [szablony](configure-policy-templates.md) celu zastosowania ochrony. Lub dla programu Word, Excel i PowerPoint, użytkownicy mogą wybrać dostosowywać ustawienia dotyczące dostępu, uprawnień i ograniczeń dotyczących użycia.
 
-Na przykład użytkowników można skonfigurować dokument programu Word, dzięki czemu jest możliwy tylko dla osób w Twojej organizacji. Można też kontrolować, czy arkusz kalkulacyjny programu Excel może być edytowany, lub ograniczone tylko do odczytu lub zapobiec drukowaniu. Pliki zależne od czasu czas wygaśnięcia można skonfigurować dla Jeśli plik nie jest możliwy. Tę konfigurację można robić bezpośrednio przez użytkowników lub przez zastosowanie szablonu. W przypadku programu Outlook użytkownicy mogą także wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
+Na przykład użytkowników można skonfigurować dokument programu Word, dzięki czemu jest możliwy tylko dla osób w Twojej organizacji. Można też kontrolować, czy arkusz kalkulacyjny programu Excel może być edytowany, lub ograniczone tylko do odczytu lub zapobiec drukowaniu. Pliki zależne od czasu czas wygaśnięcia można skonfigurować dla Jeśli plik nie jest możliwy. Tę konfigurację można robić bezpośrednio przez użytkowników lub przez zastosowanie szablonu ochrony. W przypadku programu Outlook użytkownicy mogą także wybrać opcję **Nie przekazuj**, która zapobiega wyciekowi danych.
 
 Oprócz macierzystą obsługę pakietu Office, usługi Azure Rights Management, aplikacje te obsługują także pasek usługi Azure Information Protection, który został zainstalowany przy użyciu [klienta Azure Information Protection](./rms-client/aip-client.md). Ten pasek wyświetla etykiety, które ułatwiają użytkownikom automatyczne stosowanie ochrony dokumentów i wiadomości e-mail zawierających poufne dane.
 
@@ -37,23 +37,27 @@ Jeśli chcesz już skonfigurować aplikacje pakietu Office i klienta usługi Azu
 - Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
 
 ## <a name="exchange-online-and-exchange-server"></a>Usługa Exchange Online i program Exchange Server
-Gdy używasz usługi Exchange Online lub Exchange Server, można skonfigurować informacji usługi rights management (IRM) opcje, które obsługują usługę Azure Rights Management. Ta konfiguracja pozwala zapewnić następujących rozwiązań do ochrony programu Exchange:
+Gdy używasz usługi Exchange Online lub Exchange Server, można skonfigurować opcje usługi Azure Information Protection. Ta konfiguracja pozwala zapewnić następujących rozwiązań do ochrony programu Exchange:
 
 -   **Protokół Exchange ActiveSync IRM** umożliwia urządzeniom przenośnym zabezpieczanie wiadomości e-mail i korzystanie z chronionych wiadomości.
 
--   Wyślij wiadomość e-mail obsługę ochrony **programu Outlook w sieci web**, która jest zaimplementowana podobnie jak w kliencie programu Outlook. Ta konfiguracja pozwala użytkownikom chronić wiadomości e-mail za pomocą szablonów lub przez określenie poszczególnych opcji. Użytkownicy mogą odczytywać i używać chronionych wiadomości e-mail wysyłanych do nich.
+-   Wyślij wiadomość e-mail obsługę ochrony **programu Outlook w sieci web**, która jest zaimplementowana podobnie jak w kliencie programu Outlook. Ta konfiguracja pozwala użytkownikom chronić wiadomości e-mail przy użyciu szablonów ochrony lub opcji. Użytkownicy mogą odczytywać i używać chronionych wiadomości e-mail wysyłanych do nich.
 
--   **Reguły ochrony** dla klientów programu Outlook skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony do wiadomości e-mail przeznaczonych dla określonych odbiorców. Na przykład wewnętrzne wiadomości e-mail wysyłane do działu prawnego mogą być odczytywane tylko przez personel działu prawnego i nie mogą być przesyłane dalej. Przed wysłaniem wiadomości e-mail użytkownicy mogą zobaczyć, jakie zabezpieczenia zostały w niej zastosowane, oraz usunąć tę ochronę zgodnie ze swoimi preferencjami. Wiadomości e-mail są szyfrowane przed ich wysłaniem. Więcej informacji zawierają artykuły dotyczące [reguł ochrony programu Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) oraz [tworzenia reguły ochrony programu Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) dostępne w bibliotece programu Exchange.
+-   **Reguły ochrony** dla klientów programu Outlook skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony i opcje poczty e-mail przeznaczonych dla określonych odbiorców. Na przykład wewnętrzne wiadomości e-mail wysyłane do działu prawnego mogą być odczytywane tylko przez personel działu prawnego i nie mogą być przesyłane dalej. Przed wysłaniem wiadomości e-mail użytkownicy mogą zobaczyć, jakie zabezpieczenia zostały w niej zastosowane, oraz usunąć tę ochronę zgodnie ze swoimi preferencjami. Wiadomości e-mail są szyfrowane przed ich wysłaniem. Więcej informacji zawierają artykuły dotyczące [reguł ochrony programu Outlook](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) oraz [tworzenia reguły ochrony programu Outlook](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx) dostępne w bibliotece programu Exchange.
 
--   **Reguły przepływu poczty** komunikaty skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony do poczty e-mail. Te reguły są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie należy zezwalać użytkownikom na usuwanie ochrony. Zasady można zastosować do programu Outlook w sieci web i wiadomości e-mail, które są wysyłane przez urządzenia przenośne. Ponadto te zasady nie należy szyfrować wiadomości e-mail przed wysłaniem ich z klienta. Więcej informacji zawiera artykuł dotyczący [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dostępny w bibliotece programu Exchange.
+-   **Reguły przepływu poczty** skonfigurowane przez administratora do automatyczne stosowanie szablonów ochrony lub opcji wiadomości e-mail. Te reguły są oparte na właściwości, takie jak nadawca, odbiorca, temat wiadomości i zawartość. Te reguły są podobne do reguł ochrony, ale nie zezwalaj użytkownikom na usuwanie ochrony, ponieważ ochrona jest ustawiony przez usługę Exchange, a nie przez klienta. Ponieważ ochrona jest ustawiony przez usługę, nie ma znaczenia, jakiego urządzenia lub systemu operacyjnego, jakie użytkownicy mają. Aby uzyskać więcej informacji, zobacz [przepływu reguł (reguł transportu) do obsługi poczty w usłudze Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) i [tworzenia reguły ochrony transportu](https://technet.microsoft.com/library/dd302432.aspx) dla lokalnego programu Exchange.
 
--   **Zasady (DLP) zapobiegania utracie danych** zawierają zestawy warunków filtrowania wiadomości e-mail i podjąć działania w celu zapobieżenia utracie danych dla poufnych lub wrażliwych informacji. Przykładami poufnych lub wrażliwych informacji osobistych informacji o karcie kredytowej. Po wykryciu poufnych danych użytkowników, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych] (https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx) w bibliotece programu Exchange.
+-   **Zasady (DLP) zapobiegania utracie danych** zawierających zestawy warunków filtrowania wiadomości e-mail i podjąć działania w celu zapobieżenia utracie danych dla poufnych lub wrażliwych informacji. Jedną z czynności, które można określić jest zastosować szyfrowanie jako ochrony, określając jedną z opcji lub szablonów ochrony. Po wykryciu poufnych danych użytkowników, które mogą wymagać zastosowania ochrony można porad dotyczących zasad. Aby uzyskać więcej informacji, zobacz [ochrony przed utratą danych](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) w dokumentacji programu Exchange Online.
 
--   **Szyfrowanie wiadomości usługi Office 365** , obsługuje wysyłanie chronionej wiadomości e-mail i dokumentów pakietu Office chronionych jako załączniki do dowolnego adresu, na dowolnym urządzeniu. Dla kont użytkowników, które nie używają usługi Azure AD w środowisku sieci web obsługuje dostawców tożsamości społecznościowych lub jednorazowy kod dostępu. Aby uzyskać więcej informacji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365 korzystających z usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) z witryny sieci Web pakietu Office.
+-   **Szyfrowanie wiadomości usługi Office 365** , obsługuje wysyłanie chronionej wiadomości e-mail i dokumentów pakietu Office chronionych jako załączniki do dowolnego adresu e-mail, na dowolnym urządzeniu. Dla kont użytkowników, które nie używają usługi Azure AD w środowisku sieci web obsługuje dostawców tożsamości społecznościowych lub jednorazowy kod dostępu. Aby uzyskać więcej informacji, zobacz [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365 korzystających z usługi Azure Information Protection](/office365/securitycompliance/set-up-new-message-encryption-capabilities) w dokumentacji usługi Office 365. Aby pomóc Ci znaleźć dodatkowe informacje dotyczące tej konfiguracji, zobacz [szyfrowanie wiadomości usługi Office 365](https://docs.microsoft.com/office365/securitycompliance/ome).
 
 Jeśli używasz lokalnego programu Exchange, służy funkcje IRM z usługą Azure Rights Management, wdrażając łącznik usługi Azure Rights Management. Ten łącznik działa jako przekaźnik między serwerami w środowisku lokalnym i usługą Azure Rights Management.
 
-Jeśli chcesz już skonfigurować program Exchange dla usługi IRM:
+Aby uzyskać więcej informacji na temat szablonów ochrony, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
+
+Dla opcji więcej informacji na temat wiadomości e-mail, który służy do ochrony wiadomości e-mail, zobacz [opcję nie przekazuj dotycząca wiadomości e-mail](configure-usage-rights.md#do-not-forward-option-for-emails) i [opcja tylko do szyfrowania wiadomości e-mail](configure-usage-rights.md#encrypt-only-option-for-emails).
+
+Jeśli masz wszystko gotowe do skonfigurowania programu Exchange do ochrony wiadomości e-mail:
 
 - W przypadku usługi Exchange Online, zobacz artykuł [Usługa Exchange Online: konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
 
@@ -81,7 +85,7 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > 
 > - Pliki, które mają rozszerzenie nazwy pliku ppdf chronionych plików PDF nie są obsługiwane. Pliki, które mają rozszerzenie nazwy pliku PDF są obsługiwane, a po pobraniu mogą otwierać aplikacji PDF, która natywnie obsługuje usługę Rights Management. Na przykład klient usługi Azure Information Protection dla Windows zawiera podgląd tych chronionych plików PDF. Alternatywne przeglądarki plików PDF są wymienione w [tabeli aplikacji obsługujących usługę RMS](./requirements-applications.md#rms-enlightened-applications).
 > 
-> - Współtworzenie, gdy więcej niż jedna osoba edytuje dokument, w tym samym czasie, nie jest obsługiwane. Aby edytować dokument w bibliotece chronioną przez IRM, musi najpierw zapoznaj się z dokumentu i pobierz go i poddać go edycji w aplikacji pakietu Office. W związku z tym tylko jedna osoba może edytować dokument w danym momencie.
+> - Współtworzenia, gdy więcej niż jedna osoba edytuje dokument, w tym samym czasie, nie jest obsługiwane. Aby edytować dokument w bibliotece chronioną przez IRM, musi najpierw zapoznaj się z dokumentu i pobierz go i poddać go edycji w aplikacji pakietu Office. W związku z tym tylko jedna osoba może edytować dokument w danym momencie.
 
 W przypadku bibliotek, które nie są chronioną przez IRM, jeśli chroniony plik, który zostanie przekazany do programu SharePoint lub OneDrive, następujące nie działają z tym plikiem: Współtworzenie, Office Online, wyszukiwania, podglądu dokumentu, miniatury, zbierania elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP).
 

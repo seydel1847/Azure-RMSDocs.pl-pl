@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403084"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862179"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -44,7 +44,7 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 
 ## <a name="versions-later-than-137190"></a>Wersjach starszych niż 1.37.19.0
 
-Jeśli masz wersję klienta, która jest nowsza niż 1.37.19.0, jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
+W przypadku wersji 1 klienta, która jest nowsza niż 1.37.19.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
 
 **Wydana**: 20/09/2018
 
@@ -52,6 +52,17 @@ Jeśli masz wersję klienta, która jest nowsza niż 1.37.19.0, jest kompilacji 
 
 - Obsługa [centralnej funkcji raportowania](../reports-aip.md) dla funkcji analizy usługi Azure Information Protection ogłoszeniem na konferencji Microsoft Ignite.
 
+**Dodatkowe:**
+
+Tylko dla tej wersji zapoznawczej Aby użyć skanera, musi wykonaj następujące kroki:
+
+1. Zainstaluj bieżącą wersję GA (1.37.19.0) klienta.
+2. Zainstaluj i skonfiguruj skanera.
+3. Uruchomić skanera.
+4. Uaktualnienie klienta usługi Azure Information Protection do tej wersji zapoznawczej.
+5. Uruchomić skanera.
+
+Aby uzyskać instrukcje dotyczące instalowania, konfigurowania i uruchomić skanera, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md).
 
 ## <a name="version-137190"></a>Wersja 1.37.19.0
 
@@ -290,7 +301,7 @@ Poprawki dla wygody użytkowników, które obejmują:
 
 - Etykieta nadrzędna nie jest wyświetlany, gdy jej etykiet podrzędnych jest skonfigurowany do ochrony, a klient nie ma wersji pakietu Office, który obsługuje ochronę. 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
 Aby uzyskać więcej informacji o instalowaniu i używaniu klienta: 
 
