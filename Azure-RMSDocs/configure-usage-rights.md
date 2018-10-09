@@ -4,18 +4,18 @@ description: Informacje pomagające zrozumieć i zidentyfikować określone praw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 698d92cc38081a8b56f27ede4005cf8b514ed212
-ms.sourcegitcommit: a327dc124974c8b489340993d4b2b364ecf5fec5
+ms.openlocfilehash: ab94d732144613d810c959f7fad0f34a842da9c7
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46289281"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866190"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -94,7 +94,7 @@ Te szablony domyślne są tworzone podczas zakupu subskrypcji i nazwy i praw uż
 
 ## <a name="do-not-forward-option-for-emails"></a>Opcja Nie przekazuj dotycząca wiadomości e-mail
 
-Klienci programu Exchange i usługi, (na przykład klient programu Outlook, aplikacja Outlook Web Access i reguły przepływu poczty programu Exchange) mają opcję ochrony praw dodatkowe informacje dla wiadomości e-mail: **nie przesyłaj dalej**. 
+Klienci programu Exchange i usługi (na przykład klient programu Outlook, aplikacji Outlook w sieci web, reguły przepływu poczty programu Exchange i akcje DLP dla programu Exchange) mają opcję ochrony praw dodatkowe informacje dla wiadomości e-mail: **nie przesyłaj dalej**. 
 
 Mimo że ta opcja jest dostępna dla użytkowników (i administratorów programu Exchange) w sposób sugerujący, że jest to domyślny szablon usługi Rights Management, który można wybrać, opcja **Nie przekazuj** nie jest szablonem. Tłumaczy to, dlaczego nie jest widoczna w witrynie Azure portal podczas wyświetlania i zarządzać szablonami ochrony. Zamiast tego **nie przesyłaj dalej** opcja to zestaw praw użytkowania, dynamicznie stosowany przez użytkowników do ich adresatów wiadomości e-mail.
 
@@ -119,11 +119,11 @@ Użytkownik chce wysłać pewne informacje w wiadomości e-mail do określonych 
 
 Exchange Online korzysta z nowych funkcji dla szyfrowanie wiadomości usługi Office 365, Nowa opcja wiadomości e-mail staje się dostępna: **tylko do szyfrowania**.
 
-Ta opcja jest dostępna dla dzierżaw korzystających z usługi Exchange Online i można wybrać w programie Outlook w sieci web, jako inną opcję ochrony praw dla reguły przepływu poczty i programu Outlook w przypadku usługi Office 365 ProPlus za pomocą minimalnej wersji [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Aby uzyskać więcej informacji, zobacz następujący wpis na blogu zespołu programu pakietu Office: [szyfrowanie wprowadza się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
+Ta opcja jest dostępna dla dzierżaw korzystających z usługi Exchange Online i można wybrać w programie Outlook w sieci web, jako inną opcję ochrony praw dla reguły przepływu poczty, jako akcję DLP usługi Office 365 i programu Outlook w przypadku usługi Office 365 ProPlus z minimalną wersją [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4). Aby uzyskać więcej informacji, zobacz następujący wpis na blogu zespołu programu pakietu Office: [szyfrowanie wprowadza się tylko w szyfrowanie wiadomości usługi Office 365](https://aka.ms/omefeb2018).
 
 Gdy ta opcja jest zaznaczona, wiadomości e-mail są szyfrowane i adresaci muszą zostać uwierzytelnione. Następnie adresaci mają wszystkie prawa użytkowania, z wyjątkiem **Zapisz jako, Eksportuj** i **Pełna kontrola**. Ta kombinacja praw użytkowania oznacza, że adresaci nie ma żadnych ograniczeń, z tą różnicą, że ich nie można usunąć ochrony. Na przykład adresata można skopiować z wiadomości e-mail, drukować i przesyła je. 
 
-Podobnie, domyślnie niechronionej [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) dołączonych do wiadomości e-mail dziedziczyć te same uprawnienia. Te dokumenty są chronione automatycznie, a po ich pobraniu, można można je zapisać, edytować, skopiowane i wydruku w aplikacjach pakietu Office przez adresatów. Gdy dokument zostanie zapisany przez odbiorcę, aby można było zapisać nową nazwę i inny format. Jednak tylko te formaty plików, które obsługują ochronę są dostępne, aby nie można zapisać dokumentu bez ochrony, oryginalnym. Jeśli mają prawa do użytkowania różnych dla załącznika wiadomości lub załącznika nie jest dokumentu pakietu Office obsługującej tę ochronę dziedziczone, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, potrzebnych dla pliku.
+Podobnie, domyślnie niechronionej [dokumentów pakietu Office](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) dołączonych do wiadomości e-mail dziedziczyć te same uprawnienia. Te dokumenty są chronione automatycznie, a po ich pobraniu, można je zapisać, edytować, skopiować i wydruku w aplikacjach pakietu Office przez adresatów. Gdy dokument zostanie zapisany przez odbiorcę, aby można było zapisać nową nazwę i inny format. Jednak tylko te formaty plików, które obsługują ochronę są dostępne, aby nie można zapisać dokumentu bez ochrony, oryginalnym. Jeśli mają prawa do użytkowania różnych dla załącznika wiadomości lub załącznika nie jest dokumentu pakietu Office obsługującej tę ochronę dziedziczone, włączenia ochrony pliku, przed dołączeniem do wiadomości e-mail. Następnie można przypisać prawa użytkowania określonych, potrzebnych dla pliku.
 
 Alternatywnie, można zmienić to dziedziczenie ochrony dokumentów przy użyciu jednej z następujących parametrów konfiguracji, które można ustawić za pomocą [programu Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) polecenia **Set-IRMConfiguration** . Jeśli nie potrzebujesz zachować oryginalne ochronę dokumentu po użytkownik jest uwierzytelniony, należy użyć tych opcji:
 
