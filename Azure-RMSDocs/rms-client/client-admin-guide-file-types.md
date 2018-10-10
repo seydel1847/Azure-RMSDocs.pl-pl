@@ -4,18 +4,18 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/24/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: 8cc42253d5d5de6b2b1ca4dd06e59dd66193dc7d
+ms.sourcegitcommit: 4767afef8fb7b81065a6bf207cd0a5518bf0e97a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168764"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48907182"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -214,6 +214,22 @@ Możesz zmienić typy plików dołączone lub wykluczone pliku inspekcji przez s
 > Jeśli dodasz .rtf — pliki do skanowania, należy uważnie monitorować skanera. Niektóre pliki .rtf nie można pomyślnie przeprowadzić inspekcji przez skaner tych plików nie wykona inspekcji i należy ponownie uruchomić usługę. 
 
 Domyślnie skaner chroni tylko typów plików pakietu Office. Aby zmienić to zachowanie skanera, edytowania rejestru, a następnie określ dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) we wskazówkach dla deweloperów.
+
+#### <a name="to-scan-zip-files"></a>Skanuje pliki zip
+
+Skaner można sprawdzić pliki zip, po wykonaniu tych instrukcji:
+
+1. Dla systemu Windows serwera z uruchomionym skaner, należy zainstalować [pakietu Office 2010 filtru pakietu z dodatkiem SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2).
+
+2. Skonfiguruj skanera, aby uwzględnić pliki zip, które będą kontrolowane, zgodnie z opisem w poprzedniej sekcji.
+
+3. Jeśli pliki zip powinny być sklasyfikowane i chronione zamiast właśnie sprawdzane pod kątem poufnych informacji, należy dodać wpis rejestru dla plików z rozszerzeniem nazwy pliku, to zapewnienie ochrony ogólnej (pfile), zgodnie z opisem w poprzedniej sekcji.
+
+Przykładowy scenariusz po wykonaniu tych kroków: 
+
+Plik o nazwie **accounts.zip** zawiera arkusze kalkulacyjne programu Excel z numerów kart kredytowych. Zasady usługi Azure Information Protection ma etykietę o nazwie **poufne \ Finanse**, który jest skonfigurowany do odnajdywania numery kart kredytowych i automatycznie stosować etykiety z ochroną, która ogranicza dostęp do grupy Finanse. 
+
+Po sprawdzeniu pliku, skaner klasyfikuje ten plik jako **poufne \ Finanse**, stosuje ochronę ogólną do pliku, tak aby tylko członkowie grupy Finanse możliwe jego rozpakowanie i zmienia nazwę pliku  **accounts.zip.pfile**.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>Pliki, które nie mogą być chronione domyślnie
 
