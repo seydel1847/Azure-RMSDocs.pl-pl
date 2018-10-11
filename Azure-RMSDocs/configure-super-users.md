@@ -4,24 +4,24 @@ description: Uzyskaj informacje o funkcji superużytkowników usługi Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 762b46ac33b57bd81b5c1ab36d07f4d33305b4c0
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 59760f70c43f6c784c83b95b18c51998862484ae
+ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151001"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072463"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
 >*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Dzięki funkcji superużytkowników usługi Azure Rights Management w ramach usługi Azure Information Protection upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane chronione w organizacji przez usługę Azure Rights Management. W razie potrzeby mogą też usunąć lub zmienić uprzednio zastosowaną ochronę. 
+Dzięki funkcji superużytkowników usługi Azure Rights Management w ramach usługi Azure Information Protection upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane chronione w organizacji przez usługę Azure Rights Management. Jeśli to konieczne, ochrony następnie można usunąć lub zmienić.
 
 Administrator ma zawsze w usłudze Rights Management [prawo użytkowania](configure-usage-rights.md) typu Pełna kontrola w odniesieniu do dokumentów i wiadomości e-mail chronionych przez dzierżawę usługi Azure Information Protection w organizacji. Tę możliwość czasami nazywa się "rozsądkiem ponad danymi" i jest to kluczowy element w zachowaniu kontroli nad danymi w organizacji. Przykładowo z tej funkcji można skorzystać w każdym z następujących scenariuszy:
 
@@ -78,6 +78,21 @@ Jeśli korzystasz z klasyfikacji i ochrony, możesz również użyć polecenia [
 Aby uzyskać więcej informacji na temat wymienionych poleceń cmdlet, zobacz sekcję [Używanie środowiska PowerShell z klientem usługi Azure Information Protection](./rms-client/client-admin-guide-powershell.md) w podręczniku administratora klienta usługi Azure Information Protection.
 
 > [!NOTE]
-> Moduł AzureInformationProtection zastępuje moduł ochrony usługi RMS programu PowerShell, który został zainstalowany razem z narzędziem RMS Protection Tool. Oba te moduły są inne niż i uzupełnia [modułu programu PowerShell dla usługi Azure Rights Management](administer-powershell.md). Moduł AzureInformationProtection obsługuje zarówno usługę Azure Information Protection, Azure Rights Management (Azure RMS) w ramach usługi Azure Information Protection, jak i usługi Active Directory Rights Management (AD RMS).
+> Moduł AzureInformationProtection różni się od oraz uzupełnia [modułu AADRM programu PowerShell](administer-powershell.md) który zarządza usługi Azure Rights Management dla usługi Azure Information Protection.
 
+### <a name="guidance-for-using-unprotect-rmsfile-for-ediscovery"></a>Wskazówki dotyczące używania Unprotect-RMSFile dla zbierania elektronicznych materiałów dowodowych
+
+Chociaż można użyć polecenia cmdlet Unprotect-RMSFile do odszyfrowywania zawartości chronionej w plikach PST, należy strategicznie Użyj następującego polecenia cmdlet w ramach procesu zbierania elektronicznych materiałów dowodowych. Uruchomienie Unprotect-RMSFile dużych plików na komputerze jest dużej ilości zasobów (pamięci i miejsca na dysku) i maksymalnego rozmiaru pliku dla tego polecenia cmdlet jest 5 GB.
+
+W idealnym przypadku użycia [usługi Office 365 zbierania elektronicznych materiałów dowodowych](/office365/securitycompliance/ediscovery) wyszukiwanie i wyodrębnianie chronionych wiadomości e-mail i chroniony załącznik w wiadomości e-mail. Możliwości administratora jest automatycznie zintegrowana z usługą Exchange Online tak, aby zbieranie elektronicznych materiałów dowodowych, w Centrum zgodności i zabezpieczeń usługi Office 365 można wyszukiwać zaszyfrowanych elementów przed Eksport lub e-mail odszyfrować zaszyfrowane podczas eksportowania.
+
+Jeśli nie możesz użyć usługi Office 365 zbierania elektronicznych materiałów dowodowych, Niewykluczone, że inne rozwiązanie zbierania elektronicznych materiałów dowodowych, która integruje się z usługą Azure Rights Management, aby przyczyny w podobny sposób nad danymi. Lub, jeśli rozwiązanie zbierania elektronicznych materiałów dowodowych nie może automatycznie odczytu i odszyfrowywania zawartości chronionej, nadal można używać tego rozwiązania w wieloetapowy proces, którego można efektywniej uruchomić Unprotect-RMSFile:
+
+1. Eksportuj do pliku PST w wiadomości e-mail, z usługi Exchange Online lub Exchange Server lub stacji roboczej przechowywania poczty e-mail przez użytkownika.
+
+2. Zaimportuj plik PST do narzędzia do zbierania elektronicznych materiałów dowodowych. Ponieważ to narzędzie nie można odczytać zawartości chronionej, oczekuje się, że te elementy będzie generować błędy.
+
+3. Ze wszystkich elementów, których nie można otworzyć narzędzia Wygeneruj nowy plik PST, który teraz, zawiera tylko chronione elementy. Ten drugi plik PST będzie prawdopodobnie znacznie mniejszy niż oryginalny plik PST.
+
+4. Uruchom Unprotect-RMSFile na ten drugi plik PST, aby odszyfrować zawartość tego pliku znacznie mniejszy. Z danych wyjściowych należy zaimportować plik PST odszyfrowany do narzędzia do odnajdywania.
 

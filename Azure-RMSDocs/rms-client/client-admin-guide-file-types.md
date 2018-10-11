@@ -4,18 +4,18 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8cc42253d5d5de6b2b1ca4dd06e59dd66193dc7d
-ms.sourcegitcommit: 4767afef8fb7b81065a6bf207cd0a5518bf0e97a
+ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
+ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907182"
+ms.locfileid: "49072480"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -97,7 +97,9 @@ Istnieją określone maksymalne rozmiary plików, dla których klient usługi Az
     
     - Aby chronić inne typy plików i otwieranie tych typów plików w przeglądarce usługi Azure Information Protection: maksymalny rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
     
-    - Do wyłączania ochrony plików za pomocą [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet: Maksymalny obsługiwany rozmiar pliku dla plików pst wynosi 5 GB. Inne typy plików są ograniczony tylko ilością dostępnego miejsca na dysku i pamięci.
+    - Do wyłączania ochrony plików za pomocą [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia cmdlet: Maksymalny obsługiwany rozmiar pliku dla plików pst wynosi 5 GB. Inne typy plików są ograniczony tylko ilością dostępnego miejsca na dysku i pamięci
+    
+    Porada: Jeśli zachodzi potrzeba wyszukiwania lub odzyskiwanie chronionych elementach pst dużych plików, zobacz [wskazówki dotyczące używania Unprotect-RMSFile dla zbierania elektronicznych materiałów dowodowych](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery).
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>Typy plików, dla których jest obsługiwana klasyfikacja i ochrona
 
