@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/28/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 64063af186f01a5829b7aa668260928e3b13656d
-ms.sourcegitcommit: 304702a3f2f2ab2b32493c4aedeb5ee8424b925c
+ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47415013"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100647"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -93,7 +93,7 @@ Po potwierdzeniu, że dzierżawa usługi obsługuje etykiety ważności w Centru
 
 2. Na **usługi Azure Information Protection — Unified etykietowania** bloku wybierz **Aktywuj** i postępuj zgodnie z wyświetlanymi instrukcjami.
 
-Dla etykiet, które pomyślnie przeprowadzić migrację, można teraz nimi przez [klientów, którzy obsługują ujednoliconego etykietowania](#clients-that-support-unified-labeling) gdy etykiety są publikowane w Centrum zabezpieczeń i zgodności.
+Dla etykiet, które pomyślnie przeprowadzono migrację, ich można teraz używać przez [klientów, którzy obsługują ujednoliconego etykietowania](#clients-that-support-unified-labeling). Jednakże należy najpierw go opublikować te etykiety w Centrum zabezpieczeń i zgodności.
 
 
 ### <a name="clients-that-support-unified-labeling"></a>Klienci, którzy obsługują ujednoliconego etykietowania
@@ -105,6 +105,6 @@ Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 - Klienci od dostawców oprogramowania i deweloperów, które używają [MIP SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu etykiet zmigrowane w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz w blogu, [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492) .
+Aby uzyskać więcej informacji na temat konfigurowania i publikowania migrowanych etykiet w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz w blogu [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności ](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).
