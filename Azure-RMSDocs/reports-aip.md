@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: cf951bba3cc74a82e31841986dde9e75ec34a630
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 5fb202d4b6e4aa5eafc4b4ed66bbacd1edd7c6d0
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170097"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -90,7 +90,7 @@ Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
     
-2. Znajdź **ZARZĄDZAJ** opcje menu, a następnie wybierz **analytics (wersja zapoznawcza) Konfiguruj**.
+2. Znajdź **Zarządzaj** opcje menu, a następnie wybierz **analytics (wersja zapoznawcza) Konfiguruj**.
 
 3. Na **usługi Azure Information Protection log analytics** bloku, możesz wyświetlić listę żadnych obszarów roboczych usługi Log Analytics, które są własnością Twojej dzierżawy. Wykonaj jedną z następujących czynności:
     
@@ -104,11 +104,11 @@ W przypadku skonfigurowania obszaru roboczego, możesz przystąpić do ich wyśw
 
 ## <a name="how-to-view-the-reports"></a>Jak wyświetlić raporty
 
-W bloku Azure Information Protection, Znajdź **pulpity NAWIGACYJNE (wersja ZAPOZNAWCZA)** opcje menu, a następnie wybierz jedną z następujących opcji:
+W bloku Azure Information Protection, Znajdź **pulpity nawigacyjne** opcje menu, a następnie wybierz jedną z następujących opcji:
 
-- **Raport użycia**: Ten raport, aby zobaczyć, jak są używane etykiet. 
+- **Raport użycia (wersja zapoznawcza)**: Ten raport, aby zobaczyć, jak są używane etykiet. 
 
-- **Odnajdywanie danych**: Ten raport służy do wyświetlania informacji na temat plików, które zostały odnalezione skanerów.
+- **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport służy do wyświetlania informacji na temat plików, które zostały odnalezione skanerów.
 
 ## <a name="how-to-modify-the-reports"></a>Jak modyfikować raporty
 

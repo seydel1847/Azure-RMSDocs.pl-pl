@@ -8,12 +8,12 @@ ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
-ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
+ms.openlocfilehash: 9e505b6aa2b1ae5e447055d0d12b333afe2f6363
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170114"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 

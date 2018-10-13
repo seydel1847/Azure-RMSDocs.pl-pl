@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 1f2f68424b7df0f3d353d3ce4bcf2aa550bf5197
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: bb6d9e6ea17f91652c04741ae7915a4fe431d695
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148549"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170353"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Zmiana lub dostosowanie istniejącej etykiety dla usługi Azure Information Protection
 

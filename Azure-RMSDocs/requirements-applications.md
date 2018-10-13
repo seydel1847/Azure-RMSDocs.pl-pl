@@ -4,18 +4,18 @@ description: Identyfikowanie aplikacji, które korzystają z interfejsów API us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/17/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7ec0dacdf545ad8f7b04c8fb852ef0dcb4197838
-ms.sourcegitcommit: 100a812737a507467d89bfbc2a64d1ce8ad2c201
+ms.openlocfilehash: b632319b595c3745be576fa2d508ebcb089ec8aa
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975559"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170165"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -30,11 +30,11 @@ O ile nie wskazano inaczej, obsługiwane możliwości dotyczą zarówno usługi 
 
 ## <a name="rms-enlightened-applications"></a>Aplikacje z obsługą usług RMS
 
-Poniższa tabela zawiera informacje na temat dostarczanych przez firmę Microsoft oraz dostawców oprogramowania aplikacji klienckich z obsługą usług RMS.
+Poniższa tabela zawiera informacje na temat dostarczanych przez firmę Microsoft oraz dostawców oprogramowania aplikacji klienckich z obsługą usług RMS. 
+
+Informacje o przeglądaniu chronionych dokumentów PDF, zobacz [czytelnicy chronione pliki PDF Microsoft Information Protection](./rms-client/protected-pdf-readers.md).
 
 Informacje dotyczące kolumn tabeli:
-
--   **Chroniony plik PDF**: te pliki mają rozszerzenie nazwy pliku PDF lub PPDF.
 
 -   **Poczta e-mail:** klienci poczty e-mail z listy mogą chronić wiadomości e-mail, co automatycznie umożliwia ochronę wszystkich dołączonych i do tej pory niechronionych plików pakietu Office. W tym scenariuszu funkcja podglądu klienta umożliwia wyświetlanie chronionej zawartości (wiadomości i załączników) autoryzowanym odbiorcom. Jednak jeśli sama wiadomość e-mail nie jest chroniona, ale załącznik jest, funkcja podglądu klienta nie ma możliwości wyświetlania chronionego załącznika autoryzowanym odbiorcom. 
     
@@ -43,17 +43,16 @@ Informacje dotyczące kolumn tabeli:
 -   **Inne typy plików:** pliki tekstowe i pliki obrazów mają następujące rozszerzenia nazw: TXT, XML, JPG i JPEG. Rozszerzenia nazw tych plików zmieniają się po objęciu plików natywną ochroną zapewnianą przez usługę Rights Management, a pliki stają się plikami tylko do odczytu. Pliki, które nie mogą być chronione w sposób natywny, mają rozszerzenie nazwy pliku pfile, co oznacza, że zostały objęte ogólną ochroną przez usługę Rights Management. Aby uzyskać więcej informacji, zobacz sekcję [Obsługiwane typy plików](./rms-client/client-admin-guide-file-types.md) w podręczniku administratora klienta usługi Azure Information Protection.
 
 
-|**System operacyjny urządzenia**|Word, Excel, PowerPoint|Chroniony plik PDF|Poczta e-mail|Inne typy plików|
-|-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (wyświetlanie chronionych dokumentów) [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Klient usługi Azure Information Protection dla systemu Windows <br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS dla programu AutoCAD: .dwg|
-|**iOS**|GigaTrust<br /><br /> Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikacja Azure Information Protection (wyświetlanie chronionych dokumentów)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Aplikacja Azure Information Protection (wyświetlanie chronionej wiadomości e-mail)<br /><br />Praca blackBerry<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (Ochrona tekst i obrazy wyświetlania)<br /><br />TITUS Docs: plik PFILE|
-|**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikacja Azure Information Protection (wyświetlanie chronionych dokumentów) <br /><br />Aplikacja GigaTrust dla systemu Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Aplikacja Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Praca blackBerry <br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (warstwa S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
-|**macOS**|Office 2016 dla komputerów Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Foxit Reader<br /><br />(Wyświetlanie chronionych dokumentów) aplikacja RMS sharing|Outlook 2016 dla komputerów Mac<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
-|**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie chronionych dokumentów za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Citrix WorxMail <br /><br />Poczta programu Outlook (wyświetlanie chronionych wiadomości e-mail) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
-|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: pliki JT|
-|**Windows Phone 8.1**|Office Mobile (tylko usługi AD RMS)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|(Wyświetlanie chronionych dokumentów) aplikacja RMS sharing|Outlook Mobile [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
-|**Blackberry 10**|Przeglądarki sieci Web [[2]](#footnote-2)|Nieobsługiwane|Poczta e-mail Blackberry [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
-
+|**System operacyjny urządzenia**|Word, Excel, PowerPoint|Poczta e-mail|Inne typy plików|
+|---------------------------|-----------------------|-----------------|---------|
+|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (wyświetlanie chronionych dokumentów) [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS dla programu AutoCAD: .dwg|
+|**iOS**|GigaTrust<br /><br /> Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikacja Azure Information Protection (wyświetlanie chronionej wiadomości e-mail)<br /><br />Praca blackBerry<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (Ochrona tekst i obrazy wyświetlania)<br /><br />TITUS Docs: plik PFILE|
+|**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Aplikacja Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Praca blackBerry <br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (warstwa S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
+|**macOS**|Office 2016 dla komputerów Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2016 dla komputerów Mac<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
+|**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie chronionych dokumentów za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Citrix WorxMail <br /><br />Poczta programu Outlook (wyświetlanie chronionych wiadomości e-mail) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
+|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: pliki JT|
+|**Windows Phone 8.1**|Office Mobile (tylko usługi AD RMS)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook Mobile [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
+|**Blackberry 10**|Przeglądarki sieci Web [[2]](#footnote-2)|Poczta e-mail Blackberry [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
 
 ###### <a name="footnote-1"></a>Przypis 1
 Obsługiwane tylko w przypadku usługi SharePoint Online i OneDrive dla firm i dokumenty są chronione przed są przekazywane do chronionej biblioteki usług.
@@ -89,7 +88,7 @@ Następujące pakiety klienta pakietu Office obsługują ochronę plików i wiad
 
 - Usługa Office 365 ProPlus: pakiety Office 2016 i Office 2013
     
-    Te wersje pakietu Office są dołączane do większości, ale nie dla wszystkich subskrypcji usługi Office 365, które obejmują ochronę danych z usługi Azure Information Protection. Sprawdzanie informacji o subskrypcji, aby sprawdzić, czy jest dołączone usługi Office 365 ProPlus warunki. Można również znaleźć te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+    Te wersje pakietu Office są dołączane do większości, ale nie wszystkie subskrypcje usługi Office 365, które obejmują funkcji ochrony danych z usługi Azure Information Protection. Sprawdzanie informacji o subskrypcji, aby sprawdzić, czy jest dołączone usługi Office 365 ProPlus warunki. Można również znaleźć te informacje w [arkusz danych usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 - Office Professional Plus 2016
 

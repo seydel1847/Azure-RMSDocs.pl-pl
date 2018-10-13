@@ -4,18 +4,18 @@ description: Jak aplikacje pakietu Office dla użytkowników końcowych takich j
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 22df24a7af17dd87dd6f3947e39ea72d7b7b1372
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169944"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
@@ -83,7 +83,7 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > 
 > - Nie można używać domyślnych lub niestandardowych ochrony szablonów, zarządzanych w witrynie Azure portal. 
 > 
-> - Pliki, które mają rozszerzenie nazwy pliku ppdf chronionych plików PDF nie są obsługiwane. Pliki, które mają rozszerzenie nazwy pliku PDF są obsługiwane, a po pobraniu mogą otwierać aplikacji PDF, która natywnie obsługuje usługę Rights Management. Na przykład klient usługi Azure Information Protection dla Windows zawiera podgląd tych chronionych plików PDF. Alternatywne przeglądarki plików PDF są wymienione w [tabeli aplikacji obsługujących usługę RMS](./requirements-applications.md#rms-enlightened-applications).
+> - Pliki, które mają rozszerzenie nazwy pliku ppdf chronionych plików PDF nie są obsługiwane. Aby uzyskać więcej informacji na temat wyświetlania chronionych plików PDF, zobacz [czytelnicy chronione pliki PDF Microsoft Information Protection](./rms-client/protected-pdf-readers.md).
 > 
 > - Współtworzenia, gdy więcej niż jedna osoba edytuje dokument, w tym samym czasie, nie jest obsługiwane. Aby edytować dokument w bibliotece chronioną przez IRM, musi najpierw zapoznaj się z dokumentu i pobierz go i poddać go edycji w aplikacji pakietu Office. W związku z tym tylko jedna osoba może edytować dokument w danym momencie.
 

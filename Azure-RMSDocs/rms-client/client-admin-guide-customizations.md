@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b5e0183be3eb95a86f9e143e9a718f6ade2b3b06
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403101"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170182"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -574,7 +574,7 @@ Można również skonfigurować reguły przepływu poczty na potrzeby mapowania 
 - Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli **msip_labels** nagłówek zawiera nazwę Twojej etykiety (na przykład **ogólne**) i stosować wiadomości Klasyfikacja, który jest mapowany do tej etykiety.
 
 
-## <a name="next-steps"></a>Następne kroki
+## <a name="next-steps"></a>Kolejne kroki
 Po dostosowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi, które mogą być przydatne podczas obsługi tego klienta:
 
 - [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)

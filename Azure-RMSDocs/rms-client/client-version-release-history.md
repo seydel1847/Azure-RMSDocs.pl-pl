@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: d140036e3326947df8504feb7b2946bf4390ed60
+ms.sourcegitcommit: a194b63f7513a7039fbc82d1b075063d9e26c7de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307495"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -54,13 +54,19 @@ W przypadku wersji 1 klienta, która jest nowsza niż 1.37.19.0 jest kompilacji 
 
 **Dodatkowe:**
 
-Tylko dla tej wersji zapoznawczej Aby użyć skanera, musi wykonaj następujące kroki:
+Tylko dla tej wersji zapoznawczej, specyficzne dla skaner:
 
-1. Zainstaluj bieżącą wersję GA (1.37.19.0) klienta.
-2. Zainstaluj i skonfiguruj skanera.
-3. Uruchomić skanera.
-4. Uaktualnienie klienta usługi Azure Information Protection do tej wersji zapoznawczej.
-5. Uruchomić skanera.
+- Zainstaluj skaner, wykonując następujące czynności:
+    
+    1. Zainstaluj bieżącą wersję GA (1.37.19.0) klienta.
+    2. Zainstaluj i skonfiguruj skanera.
+    3. Uruchomić skanera.
+    4. Uaktualnienie klienta usługi Azure Information Protection do tej wersji zapoznawczej.
+    5. Uruchomić skanera.
+
+- Znany problem z skanowaniem dużych zestawów danych:
+    
+    Z tą wersją zapoznawczą stopniowo zwiększać liczbę plików do skanowania i monitorowania postępu. Jeśli stan skanera zgłasza, że jest uruchomiona, ale nowe pliki nie uzyskać skanowany, Zmniejsz liczbę plików do skanowania i ponownie uruchomić skanera. 
 
 Aby uzyskać instrukcje dotyczące instalowania, konfigurowania i uruchomić skanera, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md).
 

@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/13/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
-ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
+ms.openlocfilehash: e689818ff4174e088faf1a6e3f396bf37abe0abc
+ms.sourcegitcommit: a194b63f7513a7039fbc82d1b075063d9e26c7de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307461"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -107,4 +107,6 @@ Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać więcej informacji na temat konfigurowania i publikowania migrowanych etykiet w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz w blogu [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności ](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).
+Aby uzyskać więcej informacji na temat konfigurowania i publikowania migrowanych etykiet w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz [Przegląd etykiety ważności](/Office365/SecurityCompliance/sensitivity-labels).
+
+Aby przeczytaj wpis w blogu ogłoszenie: [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).

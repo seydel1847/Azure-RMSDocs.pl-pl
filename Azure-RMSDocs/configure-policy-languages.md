@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 696d38c2dc7c0296a6afd87885ba90583c267050
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c118abdf0f0b659b9ae330f44617901f8d11c300
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170364"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Jak skonfigurować etykiety i szablony w różnych językach dla usługi Azure Information Protection
 
@@ -43,7 +43,7 @@ Wybierz języki, które odpowiadają ustawieniom językowym użytkowników dla p
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **ZARZĄDZAJ** > **języków** opcji menu: na **usługi Azure Information Protection — języki** bloku wybierz **Dodaj nowy język na potrzeby Tłumaczenie**. Wybierz języki, które chcesz dodać, a następnie wybierz pozycję **OK**. Możesz wpisać nazwę języka, w polu wyszukiwania, lub przewiń listę dostępnych języków
+2. Z **Zarządzaj** > **języków** opcji menu: na **usługi Azure Information Protection — języki** bloku wybierz **Dodaj nowy język na potrzeby Tłumaczenie**. Wybierz języki, które chcesz dodać, a następnie wybierz pozycję **OK**. Możesz wpisać nazwę języka, w polu wyszukiwania, lub przewiń listę dostępnych języków
 
 3. Wybrane języki są teraz wyświetlane na **usługi Azure Information Protection — języki** bloku:
     

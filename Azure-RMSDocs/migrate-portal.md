@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 7f82c2fd022db0ef35a58198eb2737e3803e1645
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: fa32a5d00c161d2f6a78acd7cbe45ce00b34660c
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170148"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które były wykonywane przy użyciu klasycznego portalu Azure
 
@@ -40,9 +40,9 @@ Skorzystaj z poniższych informacji, aby ułatwić szybkie przejście do bieżą
 |Tworzenie szablonu o określonym zakresie|Utwórz zasady o określonym zakresie i utworzyć etykietę w tym zakresie, która dotyczy ochrony. <br /><br />Aby uzyskać więcej informacji, zobacz [do konfigurowania zasad usługi Azure Information Protection dla konkretnych użytkowników przy użyciu zasad o określonym zakresie](configure-policy-scope.md).
 |Kopiowanie szablonu|Nie można skopiować szablon w witrynie Azure portal. Jeśli chcesz, aby dwóch etykiet, które mają takie same ustawienia ochrony, należy ustawić uprawnienia dla każdej etykiety. <br /><br />Aby uzyskać więcej informacji, zobacz [na konfigurowanie etykiety w celu ustawienia ochrony](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Usuń szablon|Usuwanie szablonów może spowodować niedostępnych danych, dzięki czemu witryny Azure portal nie obsługuje tej akcji. Można jednak usunąć etykietę i następnie za pomocą programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenie cmdlet do usuwania szablonu. <br /><br />Aby uzyskać więcej informacji, zobacz [jak usunąć lub zmiana kolejności etykiet dla usługi Azure Information Protection](configure-policy-delete-reorder.md).
-|Obsługa wielu języków|Z **ZARZĄDZAJ** wybór menu, wybierz opcję **języków** do wyeksportowania pól możliwych do dostosowania, które zawierają nazwę i opis szablonu. Tłumaczenia ciągów, a następnie zaimportować te ciągi do portalu. <br /><br />Aby uzyskać więcej informacji, zobacz [sposobu konfigurowania etykiet i szablony w różnych językach dla usługi Azure Information Protection](configure-policy-languages.md).
+|Obsługa wielu języków|Z **Zarządzaj** wybór menu, wybierz opcję **języków** do wyeksportowania pól możliwych do dostosowania, które zawierają nazwę i opis szablonu. Tłumaczenia ciągów, a następnie zaimportować te ciągi do portalu. <br /><br />Aby uzyskać więcej informacji, zobacz [sposobu konfigurowania etykiet i szablony w różnych językach dla usługi Azure Information Protection](configure-policy-languages.md).
 |Raporty sieci web zarządzania prawami dostępu w|Za pomocą programu PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) polecenia cmdlet, aby pobrać dzienniki użycia dla usługi Azure Rights Management. Te dane można następnie użyć do tworzenia niestandardowych raportów. <br /><br />Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).<br /><br />Porada: Zwróć uwagę na ogłoszenia [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) dla nowych, scentralizowane raportowania rozwiązania usługi Azure Information Protection.
-|Aktywowanie i dezaktywowanie usługi Rights Management|Z **ZARZĄDZAJ** opcje menu, wybierz opcję **Aktywacja ochrony**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak aktywować usługę Azure Rights Management w witrynie Azure portal](activate-azure.md).
+|Aktywowanie i dezaktywowanie usługi Rights Management|Z **Zarządzaj** opcje menu, wybierz opcję **Aktywacja ochrony**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak aktywować usługę Azure Rights Management w witrynie Azure portal](activate-azure.md).
 
 Przed rozpoczęciem edycji szablonów, lub konwersji do etykiet w witrynie Azure portal, zobacz [zagadnienia dotyczące szablonów w witrynie Azure portal](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal).
 

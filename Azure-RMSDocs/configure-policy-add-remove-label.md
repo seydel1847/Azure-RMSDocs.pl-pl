@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 995ff970285599c8277dedd126714f2a7f1d2dd2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a5e5e50f5271476c3690280cbe026be9ada7ceb2
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170345"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Dodaj lub usuń etykiety do lub z zasad usługi Azure Information Protection
 
