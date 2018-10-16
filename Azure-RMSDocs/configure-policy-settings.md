@@ -4,16 +4,16 @@ description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 9e505b6aa2b1ae5e447055d0d12b333afe2f6363
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 03736896f73fc83f699191677846e757eaf17be7
+ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170114"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336463"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
@@ -44,6 +44,8 @@ Aby skonfigurować te ustawienia:
         Jeśli etykieta nie jest przypisany, gdy użytkownicy zapisywania dokumentu lub Wyślij wiadomość e-mail, są monitowani o wybranie etykiety. Przykład:
         
         ![Monit usługi Azure Information Protection, jeśli etykietowanie jest wymuszane](./media/info-protect-enforce-labelv2.png)
+        
+        Ta opcja nie ma zastosowania, gdy usuniesz etykietę przy użyciu [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) polecenia cmdlet programu PowerShell przy użyciu *RemoveLabel* parametru.
         
     - **Użytkownicy muszą uzasadnić obniżenie etykiety klasyfikacji, usunięcie etykiety lub usunięcie ochrony**: po ustawieniu tej opcji na wartość **Włączone** i wykonaniu dowolnej z tych akcji przez użytkownika (na przykład zmianie etykiety **Publiczne** na **Osobiste**) użytkownik jest monitowany o podanie wyjaśnienia dla tej akcji. Przykładowo użytkownik może wyjaśnić, że dokument nie zawiera już poufnych informacji. Akcji i przyczynę jej uzasadnienie, które są rejestrowane w ich lokalnym dzienniku zdarzeń Windows: **Dzienniki aplikacji i usług** > **usługi Azure Information Protection**.  
         

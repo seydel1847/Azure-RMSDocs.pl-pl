@@ -4,16 +4,16 @@ description: Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2018
+ms.date: 10/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: b54707a367f58230c1d61192f6f0e8dbd00f0ec9
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 087a06151b037760d2efc3d794b4eb55135c513c
+ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170012"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324894"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -32,6 +32,12 @@ Dodatkowe informacje na temat tych oznaczeń wizualnych:
     - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła. Na **widoku** karcie **wzorca slajdów**, upewnij się, że **Ukryj grafiki w tle** nie zaznaczono pole wyboru.
     
     - Wiele wierszy tekstu są obsługiwane.
+
+- Ciąg maksymalnej długości:
+    
+    - Maksymalna długość ciągu wprowadzona w nagłówkach i stopkach to 1024 znaki. Jednak program Excel jest objęta limitem 253 znaków w nagłówkach i stopkach stron. Jeśli więcej niż 253 znaków ciągu zostanie wprowadzona w programie Excel, ciąg obcina po tym maksymalna długość ciągu.
+    
+    - Maksymalna długość ciągu dla znaki wodne, które można wprowadzić to 255 znaków.
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
 

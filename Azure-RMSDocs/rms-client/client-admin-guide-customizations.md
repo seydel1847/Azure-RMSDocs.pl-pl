@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b5e0183be3eb95a86f9e143e9a718f6ade2b3b06
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 0c18c1ade57e189d355d5256418b8e9215fa634f
+ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170182"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336497"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -278,8 +278,6 @@ Aby użyć poleceń programu PowerShell do konwersji istniejących plików ppdf 
 3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad](../configure-policy-settings.md) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić  *Uzasadnienie* parametru z powodu. Przykład: 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
-    
-    Jeśli nie można usunąć etykiety, ponieważ używasz obowiązkowego etykietowania jako jako [ustawienie zasad](../configure-policy-settings.md) (**wszystkie dokumenty i wiadomości e-mail muszą mieć mieć etykietę**), tymczasowo zamiast tego zastosować inną etykietę.
 
 4. Ponownie oryginalnej etykiety, określając wartość dla etykiety, który został zidentyfikowany w kroku 1. Przykład:
     
