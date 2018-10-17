@@ -4,18 +4,18 @@ description: Instrukcje i przykłady, aby skonfigurować usługi Exchange Online
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 1f80f939c857c3b36c7999eaaeb2af1ae1680444
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9d30e7c3e15e9aa6b67c2e1b653d56c1af36ffe0
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148262"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49366992"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Konfigurowanie reguły przepływu poczty usługi Exchange Online dla etykiety usługi Azure Information Protection
 
@@ -93,7 +93,7 @@ Aby uzyskać więcej informacji na temat opcji nieprzekazywania zobacz [opcję n
 
 ### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>Przykład 2: Reguła dotyczy opcji tylko do szyfrowania wiadomości e-mail ma załączniki, które są oznaczone **poufne \ partnerzy** i te wiadomości e-mail są wysyłane poza organizację
 
-W tym przykładzie **poufne \ partnerzy** etykietę podrzędną ma identyfikator GUID 5ab1c8a1-8241-72bc-3f22-304a0558362a. Zastąp swoje własne etykiety lub sublabel identyfikator GUID, który chcesz użyć z tą regułą. 
+W tym przykładzie **poufne \ partnerzy** etykietę podrzędną ma identyfikator GUID 0e421e6d-ea17-4fdb-8f01-93a3e71333b8. Zastąp swoje własne etykiety lub sublabel identyfikator GUID, który chcesz użyć z tą regułą. 
 
 Ta etykieta służy do klasyfikowania i ochrony dokumentów, których używasz do współpracy z partnerem.   
 

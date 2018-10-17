@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d140036e3326947df8504feb7b2946bf4390ed60
-ms.sourcegitcommit: a194b63f7513a7039fbc82d1b075063d9e26c7de
+ms.openlocfilehash: 3b67038450d904a1997ae46efc18110802269929
+ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307495"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358962"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -44,7 +44,10 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 
 ## <a name="versions-later-than-137190"></a>Wersjach starszych niż 1.37.19.0
 
-W przypadku wersji 1 klienta, która jest nowsza niż 1.37.19.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny.
+W przypadku wersji 1 klienta, która jest nowsza niż 1.37.19.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny. 
+
+> [!TIP]
+> Zainteresowani oceny klienta etykietowania ujednolicone usługi Azure Information Protection, ponieważ etykiety są publikowane w Centrum zgodności i zabezpieczeń usługi Office 365? Zobacz [usługi Azure Information Protection unified etykietowania klienta: informacje o wersji wersji](unifiedlabelingclient-version-release-history.md).
 
 **Wydana**: 20/09/2018
 

@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: e689818ff4174e088faf1a6e3f396bf37abe0abc
-ms.sourcegitcommit: a194b63f7513a7039fbc82d1b075063d9e26c7de
+ms.openlocfilehash: 49d8a76b8cd3129e4649fb669cf6c4cbc8b9e69e
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307461"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49366975"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -45,7 +45,7 @@ Przed przeprowadzeniem migracji etykiet, upewnij się, że masz świadomość na
     
     - Szablony, które używają klucza oparta na chmurze i które są częścią konfiguracji etykiety również zostały zmigrowane z etykietą. Inne szablony ochrony nie są migrowane. 
     
-    - Po przeprowadzeniu migracji etykiety za pomocą ustawień ochrony opartej na chmurze wynikowy zakres szablonu ochrony jest objętych zakresem, który jest zdefiniowany w witrynie Azure portal (lub przy użyciu modułu ADDRM PowerShell) i zakres, który jest zdefiniowany w zabezpieczeniach & Centrum zgodności. 
+    - Po przeprowadzeniu migracji etykiety za pomocą ustawień ochrony opartej na chmurze wynikowy zakres szablonu ochrony jest objętych zakresem, który jest zdefiniowany w witrynie Azure portal (lub za pomocą modułu AADRM programu PowerShell) i zakres, który jest zdefiniowany w zabezpieczeniach & Centrum zgodności. 
 
 - Podczas migracji etykiet, pojawi się migracji wyświetlanie wyników, czy etykieta była **utworzone**, **zaktualizowane**, lub **zmieniona** z powodu dublowania:
 
@@ -99,6 +99,8 @@ Dla etykiet, które pomyślnie przeprowadzono migrację, ich można teraz używa
 ### <a name="clients-that-support-unified-labeling"></a>Klienci, którzy obsługują ujednoliconego etykietowania
 
 Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
+
+- [Usługi Azure Information Protection unified etykietowania klienta Windows](./rms-client/unifiedlabelingclient-version-release-history.md) — w wersji zapoznawczej
 
 - Aplikacje z programu osób znających zagadnienia Office. Aby uzyskać więcej informacji, zobacz [których ta funkcja jest dostępna już dzisiaj?](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US#bkmk_whereavailable) sekcji w dokumentacji pakietu Office.
     

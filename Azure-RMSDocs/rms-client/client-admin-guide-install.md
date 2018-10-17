@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów dotyczące wdrażania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d8818ff71acbd338ebb4959f9eb3ef617655b25d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149280"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49367009"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Instalowanie klienta usługi Azure Information Protection dla użytkowników
 
@@ -57,9 +57,9 @@ Następnie sprawdź dodatkowe wymagania wstępne, które mogą być wymagane dla
     
     To wymaganie wstępne nie sprawdza obecności instalacji klienta, ale jest wymagana dla klienta usługi Azure Information Protection do klasyfikowania i ochrony plików PDF.
 
-- Nie należy wyłączać dodatku **Microsoft Azure Information Protection** dla aplikacji pakietu Office
+- Konfiguracja zasad grupy dla **lista zarządzanych dodatków**
     
-    Jeśli skonfigurowano ustawienie zasad grupy **Lista zarządzanych dodatków**, dodaj dodatek Microsoft Azure Information Protection dla aplikacji pakietu Office, określając następujące identyfikatory programowe (ProgID) dla usługi Azure Information Protection, a następnie ustaw opcję na wartość **1: Dodatek jest zawsze włączony**.
+    Dla pakietu Office 2013 i nowszymi wersjami, należy skonfigurować ustawienie zasad grupy **lista zarządzanych dodatków** i Dodaj **Microsoft Azure Information Protection** dodatku dla aplikacji pakietu Office. Określ następujące identyfikatory programowe (ProgID) dla usługi Azure Information Protection, a następnie ustaw opcję na wartość **1: dodatek jest zawsze włączona**.
     
     - Dla programu Outlook: `MSIP.OutlookAddin`
     
@@ -69,9 +69,9 @@ Następnie sprawdź dodatkowe wymagania wstępne, które mogą być wymagane dla
     
     - Dla programu PowerPoint: `MSIP.PowerPointAddin`
     
-    Nawet jeśli nie skonfigurowano tego ustawienia zasad grupy **Lista zarządzanych dodatków**, konieczne może być skonfigurowanie go w przypadku otrzymywania raportów, że dodatek Microsoft Azure Information Protection zostanie wyłączony. Gdy ten dodatek jest wyłączony, użytkownicy nie widzą paska usługi Azure Information Protection w aplikacji pakietu Office.
+    Jeśli to ustawienie nie jest skonfigurowane, dodatek Microsoft Azure Information Protection może uzyskać wyłączony, a użytkownicy nie będą mogli oznaczać swoje dokumenty i wiadomości e-mail w aplikacjach pakietu Office.
     
-    Aby uzyskać więcej informacji na temat tego ustawienia zasad grupy, zobacz [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off) (Brak załadowanych dodatków z powodu ustawień zasad grupy dla pakietów Office 2013 i Office 2016).
+    Aby uzyskać więcej informacji na temat konfigurowania tego ustawienia zasad grupy, zobacz [Administrator systemu kontroli nad dodatków](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) w dokumentacji pakietu Office.
 
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.

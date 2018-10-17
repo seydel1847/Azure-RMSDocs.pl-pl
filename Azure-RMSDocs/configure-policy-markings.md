@@ -4,16 +4,16 @@ description: Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 087a06151b037760d2efc3d794b4eb55135c513c
-ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
+ms.openlocfilehash: dbc63a0ddca9e7583693219103268048b524121c
+ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324894"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358979"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -35,7 +35,7 @@ Dodatkowe informacje na temat tych oznaczeń wizualnych:
 
 - Ciąg maksymalnej długości:
     
-    - Maksymalna długość ciągu wprowadzona w nagłówkach i stopkach to 1024 znaki. Jednak program Excel jest objęta limitem 253 znaków w nagłówkach i stopkach stron. Jeśli więcej niż 253 znaków ciągu zostanie wprowadzona w programie Excel, ciąg obcina po tym maksymalna długość ciągu.
+    - Maksymalna długość ciągu wprowadzona w nagłówkach i stopkach to 1024 znaki. Jednak program Excel ma całkowity limit 255 znaków w nagłówkach i stopkach stron. Po wprowadzeniu długi ciąg w nagłówkach i stopkach stron w programie Excel, ten tekst może być obcięty do 255 znaków lub mniej.
     
     - Maksymalna długość ciągu dla znaki wodne, które można wprowadzić to 255 znaków.
 
