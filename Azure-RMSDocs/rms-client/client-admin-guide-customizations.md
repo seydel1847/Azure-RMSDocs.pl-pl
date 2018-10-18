@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0c18c1ade57e189d355d5256418b8e9215fa634f
-ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
+ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336497"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382650"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -251,7 +251,7 @@ W wyniku tej opcji konfiguracji, gdy klient usługi Azure Information Protection
 
 Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera.
 
-Aby uzyskać więcej informacji na temat szyfrowania plików PDF, zobacz wpis w blogu [nową obsługę szyfrowania plików PDF z Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570).
+Aby uzyskać więcej informacji na temat szyfrowania plików PDF, zobacz wpis w blogu [nową obsługę szyfrowania plików PDF z Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757).
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>Aby przekonwertować istniejące pliki ppdf chronionych plików PDF
 

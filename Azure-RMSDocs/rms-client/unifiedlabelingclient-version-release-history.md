@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: 775c45bd34e9032239aefe8365b6c9987095442e
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: f05c1e96222eb70a7257123301d14ef7d885564d
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/17/2018
-ms.locfileid: "49366941"
+ms.locfileid: "49382599"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Usługa Azure Information Protection unified etykietowania klienta: informacje o wersji wydania
 
@@ -47,7 +47,7 @@ Ta wersja zapoznawcza usługi Azure Information Protection ujednoliconego klient
 
 - Etykiety, które są stosowane nie przesyłaj dalej
 
-- Uzasadnienie monituje użytkowników obniżenia poziomu ważności, usunięcie etykiety lub usunięcie ochrony
+- Monity o uzasadnienie, jeśli użytkownicy obniżyć poziom ważności
 
 - Pomoc i opinie okno dialogowe, w tym zresetować ustawienia, a także Eksportuj dzienniki
 

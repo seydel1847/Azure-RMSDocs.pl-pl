@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3b67038450d904a1997ae46efc18110802269929
-ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
+ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
+ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358962"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49399913"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -255,60 +255,6 @@ Poprawki dotyczące stabilności i dla konkretnych scenariuszy, które obejmują
 **Dodatkowe zmiany**:
 
 - Aby uzyskać [dzienniki użycia klienta](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client ): 102 identyfikator zdarzenia i identyfikator 103 są zastępowane zdarzenia o numerze 101 identyfikator.
-
-## <a name="version-110560"></a>Wersja 1.10.56.0
-
-**Wydana**: 2017-09-18
-
-Ta wersja zawiera wersję MSIPC 1.0.3219.0619 klienta usługi RMS.
-
-**Nowe funkcje**:
-
-- Obsługa nowych warunków DLP usługi Office 365, które można skonfigurować dla etykiety. Aby uzyskać więcej informacji, zobacz [Konfigurowanie warunków dla etykiety usługi Azure Information Protection](../configure-policy-classification.md).
-
-- Pomoc techniczna dla etykiety, które są skonfigurowane dla akcji zdefiniowane przez użytkownika. Dla programu Outlook ta etykieta automatycznie zastosuje opcję programu Outlook nie przesyłaj dalej. Dla programu Word, Excel, PowerPoint i Eksploratora plików tej etykiety monituje użytkownika o podanie uprawnień niestandardowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie etykiety usługi Azure Information Protection do ochrony](../configure-policy-protection.md).
-
-- Etykiety obsługują wiele języków. Począwszy od 30 sierpnia 2017 r. [domyślne zasady](../configure-policy-default.md) obejmuje obsługę wielu języków wyświetlanych przez tę wersję klienta dla użytkowników. Aby użytkownikom były wyświetlane etykiety w ich własnym języku preferowanym z domyślnych zasad przed tą datą i etykiety, które można skonfigurować, zobacz [temat Konfigurowanie etykiet w różnych językach w usłudze Azure Information Protection] skonfigurować — zasady — languages.md).
-
-- Etykiety są wyświetlane z **Chroń** przycisk na Wstążce pakietu Office, oprócz wyświetlania na pasku usługi Information Protection. 
-
-- Ochrona natywna dla następujących typów plików programu Visio: .vsdm vsdx, .vssm, .vssx, .vstm, .vstx
-
-- Obsługiwane konfiguracje Zaawansowanego klienta, które można skonfigurować w witrynie Azure portal. Te konfiguracje obejmują następujące czynności:
-    
-    - [Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
-    
-    - [Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
-    
-    - [Trwałe ukrycie paska usługi Azure Information Protection](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
-    
-    - [Włącz zalecana klasyfikacja w programie Outlook](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
-
-- W przypadku programu PowerShell obsługują aby oznaczyć pliki nieinterakcyjny przy użyciu nowych poleceń cmdlet programu PowerShell [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) i [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication). Aby uzyskać więcej informacji jak używać tych poleceń cmdlet, zobacz [sekcji PowerShell](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) podręcznika administratora.
-
-- Dla poleceń cmdlet programu PowerShell [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) i [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification), istnieją nowe parametry: **właściciela** i **PreserveFileDetails** . Parametry te pozwalają określić adres e-mail właściciela niestandardowej właściwości i pozostawienie niezmienionej dokumentów, które etykiety daty.
-
-**Poprawki**:
-
-Poprawki dotyczące stabilności i dla konkretnych scenariuszy, które obejmują:
-
-- Obsługa ochrony ogólnej dużych plików, które wcześniej może spowodować uszkodzenie, jeśli jest większa niż 1 GB. Teraz rozmiar pliku jest ograniczony tylko ilością dostępnego miejsca na dysku i dostępnej pamięci. Aby uzyskać więcej informacji na temat ograniczenia rozmiaru plików, zobacz [rozmiary obsługiwane w przypadku ochrony plików](client-admin-guide-file-types.md#file-sizes-supported-for-protection) w podręczniku administratora.
-
-- Przeglądarka klienta usługi Azure Information Protection otwiera chronionych plików PDF (ppdf) jako tylko do wyświetlania.
-
-- Obsługa etykietowanie i ochronę plików przechowywanych na serwerze programu SharePoint.
-
-- Znaki wodne są teraz obsługiwane w wielu wierszach. Ponadto oznaczenia wizualne są teraz stosowane do dokumentu na [first save only]configure-policy-markings.md#when-visual-markings-are-applied) zamiast każdym razem, gdy dokument zostanie zapisany.
-
-- **Uruchom diagnostykę** opcji **Pomoc i opinie** okno dialogowe jest zastępowany **Resetowanie ustawień**. Zachowanie dla tej akcji została zmieniona na obejmują wylogowywania użytkownika i usunięcie zasad usługi Azure Information Protection. Aby uzyskać więcej informacji, zobacz [więcej informacji na temat opcji resetowania ustawień](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option) w podręczniku administratora.
-
-- Obsługa uwierzytelniania serwera proxy.
-
-Poprawki dla wygody użytkowników, które obejmują:
-
-- Wiadomość e-mail sprawdzania poprawności, gdy użytkownicy określić uprawnienia niestandardowe. Ponadto wiele adresów e-mail, można teraz określić, naciskając klawisz Enter.
-
-- Etykieta nadrzędna nie jest wyświetlany, gdy jej etykiet podrzędnych jest skonfigurowany do ochrony, a klient nie ma wersji pakietu Office, który obsługuje ochronę. 
 
 ## <a name="next-steps"></a>Kolejne kroki
 

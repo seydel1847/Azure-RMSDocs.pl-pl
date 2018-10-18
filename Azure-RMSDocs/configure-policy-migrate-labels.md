@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 49d8a76b8cd3129e4649fb669cf6c4cbc8b9e69e
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/17/2018
-ms.locfileid: "49366975"
+ms.locfileid: "49382616"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -26,6 +26,15 @@ ms.locfileid: "49366975"
 Migrowanie etykiet, jeśli chcesz można było korzystać z nich w Office 365 Centrum zabezpieczeń i zgodności, gdzie mogą być publikowane i następnie pobrane przez [klientów, którzy obsługują ujednoliconego etykietowania](#clients-that-support-unified-labeling). Klient usługi Azure Information Protection w dalszym ciągu pobierania etykiety z ich zasadami usługi Azure Information Protection w witrynie Azure portal. 
 
 Po przeprowadzeniu migracji etykiet, następnie można wprowadzić zmiany do nich w portalu Azure lub Office 365 Centrum zabezpieczeń i zgodności, a odpowiednich klientów będą pobierać tę samą zmianę.
+
+### <a name="important-information-about-administrative-roles"></a>Ważne informacje o rolach administracyjnych
+
+[Ról usługi Azure AD](/active-directory/users-groups-roles/directory-assign-admin-roles) z **Administrator zabezpieczeń** i **Administrator usługi Information Protection** nie są obsługiwane przez ujednolicona platforma etykietowania. Jeśli tych ról administracyjnych są używane w Twojej organizacji, przed przeprowadzeniem migracji etykiety, należy dodać użytkowników, którzy mają te role do **Administrator do spraw zgodności** lub **Zarządzanie organizacją** roli grupy zabezpieczeń usługi Office 365 i Centrum zgodności. Alternatywnie, można utworzyć nową grupę ról dla tych użytkowników i dodać albo **zarządzania przechowywania** lub **Konfiguracja organizacji** ról do tej grupy. Aby uzyskać instrukcje, zobacz [daje użytkownikom dostęp do Centrum zgodności i zabezpieczeń usługi Office 365](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+
+Jeśli nie udzielisz tych użytkowników dostępu do Centrum zabezpieczeń i zgodności przy użyciu jednej z tych konfiguracji, sposób utracą dostęp do etykiet i zasady w witrynie Azure portal po migracji etykiet.
+
+Administratorzy globalni dla dzierżawy mogą w dalszym ciągu Zarządzaj etykiety i zasady w zarówno witryny Azure portal i Centrum zabezpieczeń i zgodności po etykiety są migrowane.
+
 
 ## <a name="considerations-for-unified-labels"></a>Zagadnienia dotyczące ujednoliconego etykiety
 
@@ -89,6 +98,8 @@ Klienci usługi Azure Information Protection można użyć tych ustawień etykie
 
 Po potwierdzeniu, że dzierżawa usługi obsługuje etykiety ważności w Centrum zabezpieczeń i zgodności, wykonaj następujące instrukcje do migracji dzierżawy i etykiet usługi Azure Information Protection.
 
+Musi być administratorem globalnym, aby migrować etykiet.
+
 1. Otwórz nowe okno przeglądarki i zaloguj się do witryny Azure portal, korzystając z następującego linku: https://portal.azure.com/?ActivateMigration=true#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/migrationActivationBlade 
 
 2. Na **usługi Azure Information Protection — Unified etykietowania** bloku wybierz **Aktywuj** i postępuj zgodnie z wyświetlanymi instrukcjami.
@@ -109,6 +120,6 @@ Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać więcej informacji na temat konfigurowania i publikowania migrowanych etykiet w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz [Przegląd etykiety ważności](/Office365/SecurityCompliance/sensitivity-labels).
+Aby uzyskać więcej informacji na temat migrowanych etykiet, które można teraz konfigurować i opublikowane w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz [Przegląd etykiety ważności](/Office365/SecurityCompliance/sensitivity-labels).
 
 Aby przeczytaj wpis w blogu ogłoszenie: [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).
