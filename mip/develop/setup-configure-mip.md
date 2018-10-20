@@ -6,32 +6,26 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: c889c736b6e67ef3c581ee1acaa3c04138773d20
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 430e130a5ba2026c0a3c69a59dddd6f9d6b4e8f0
+ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862145"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49476208"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
 Przewodnik Szybki Start i samouczków artykułów jest wyśrodkowywana dotyczących tworzenia aplikacji, które używają MIP zestawu SDK, bibliotek i interfejsów API. Ten artykuł pokazuje, jak instalowanie i konfigurowanie subskrypcji usługi Office 365 i stacji roboczej, w ramach przygotowania do przy użyciu zestawu SDK.
+
+Zestaw SDK MIP jest obsługiwane na następujących platformach:  
+
+[!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
 Pamiętaj przed rozpoczęciem pracy, zobacz następujące tematy:
 
 - [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [Co to jest usługa Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
 - [Jak działa ochrona usługi Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
-
-Zestaw SDK MIP jest obsługiwane na następujących platformach:
-
-| System operacyjny | Wersje |  
-|------------------|----------|
-| Ubuntu  |  16.04 |
-| RedHat Enterprise Linux | 7 z devtoolset 7 |
-| Debian  | 9 |
-| macOS   | High Sierra lub nowszym |
-| Windows | Wszystkie obsługiwane wersje 32-bitowe i 64-bitowy |
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>Zamów subskrypcję usługi Office 365
 

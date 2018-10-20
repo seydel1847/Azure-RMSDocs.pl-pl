@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2018
+ms.date: 10/19/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: b4306a45f8bfa1f6c865f634e270ba8eafa6e8d8
-ms.sourcegitcommit: aaa3eabffc9cdc2389955de770b43ffa9fa984fd
+ms.openlocfilehash: c67732bb473731cd8eb7f4135ff23bf365375cb3
+ms.sourcegitcommit: d745a2866a483c6f1bd15bb228e3b543315e7a94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889465"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459098"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -54,7 +54,7 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Komputera systemu Windows Server, aby uruchomić usługę skanera:<br /><br />-4 rdzenie procesora<br /><br />-4 GB pamięci RAM<br /><br />— 10 GB wolnego miejsca (średni) na pliki tymczasowe|Windows Server 2016 lub Windows Server 2012 R2. <br /><br />Uwaga: Do celów testowania lub ewaluacji w środowisku nieprodukcyjnym, możesz użyć w systemie operacyjnym klienta Windows, który jest [obsługiwane przez klienta usługi Azure Information Protection](requirements.md#client-devices).<br /><br />Ten komputer może być komputer fizyczny lub wirtualny, która ma szybkie i niezawodne połączenie sieciowe w magazynach danych, do przeskanowania.<br /><br /> Skaner wymaga wystarczająca ilość miejsca, aby utworzyć pliki tymczasowe dla każdego pliku, która skanuje, cztery pliki na każdy rdzeń. Zalecana ilość miejsca o rozmiarze 10 GB umożliwia 4 procesory skanowanie 16 plików, w których każdy może mieć rozmiar pliku 625 MB. <br /><br />Upewnij się, że ten komputer ma [łączności z Internetem](requirements.md#firewalls-and-network-infrastructure) wymaganych dla usługi Azure Information Protection. Jeśli połączenie z Internetem nie jest możliwe ze względu na zasady organizacji, zobacz [wdrażanie skanera za pomocą alternatywnej konfiguracji](#deploying-the-scanner-with-alternative-configurations) sekcji.|
-|Program SQL Server do przechowywania konfiguracji skanera:<br /><br />— Lokalnego lub zdalnego wystąpienia<br /><br />— Rolę administratora systemu do zainstalowania skanera|SQL Server 2012 jest minimalna wersja w następujących wersjach:<br /><br />— Program SQL Server Enterprise<br /><br />— Program SQL Server Standard<br /><br />— Program SQL Server Express<br /><br />Po zainstalowaniu więcej niż jedno wystąpienie skanera, każde wystąpienie skanera wymaga własną bazę danych programu SQL Server.<br /><br />Gdy zainstalujesz skanera, a Twoje konto ma rolę Sysadmin, proces instalacji automatycznie tworzy bazę danych AzInfoProtectionScanner i przyznaje roli db_owner wymagane konto usługi, na którym uruchomiono skaner.  Jeśli nie można udzielić roli Sysadmin lub zasady organizacji wymaga bazy danych można utworzyć i skonfigurować ręcznie, zobacz [wdrażanie skanera za pomocą alternatywnej konfiguracji](#deploying-the-scanner-with-alternative-configurations) sekcji.|
+|Program SQL Server do przechowywania konfiguracji skanera:<br /><br />— Lokalnego lub zdalnego wystąpienia<br /><br />— Rolę administratora systemu do zainstalowania skanera|SQL Server 2012 jest minimalna wersja w następujących wersjach:<br /><br />— Program SQL Server Enterprise<br /><br />— Program SQL Server Standard<br /><br />— Program SQL Server Express<br /><br />Po zainstalowaniu więcej niż jedno wystąpienie skanera, każde wystąpienie skanera wymaga własne wystąpienie programu SQL Server.<br /><br />Gdy zainstalujesz skanera, a Twoje konto ma rolę Sysadmin, proces instalacji automatycznie tworzy bazę danych AzInfoProtectionScanner i przyznaje roli db_owner wymagane konto usługi, na którym uruchomiono skaner.  Jeśli nie można udzielić roli Sysadmin lub zasady organizacji wymaga bazy danych można utworzyć i skonfigurować ręcznie, zobacz [wdrażanie skanera za pomocą alternatywnej konfiguracji](#deploying-the-scanner-with-alternative-configurations) sekcji.|
 |Konto usługi, aby uruchomić usługę skanera|Poza uruchamianiem usługi skanera, to konto jest uwierzytelniany w usłudze Azure AD i pobierze zasady usługi Azure Information Protection. To konto musi być kontem usługi Active Directory i synchronizowane z usługą Azure AD. Jeśli to konto nie może zsynchronizować ze względu na zasady organizacji, zobacz [wdrażanie skanera za pomocą alternatywnej konfiguracji](#deploying-the-scanner-with-alternative-configurations) sekcji.<br /><br />To konto usługi ma następujące wymagania:<br /><br />- **Zaloguj się na lokalnie** prawo. To uprawnienie jest wymagane do instalacji i konfiguracji skanera, ale nie dla operacji. Należy przyznać to uprawnienie, do konta usługi, ale możesz usunąć to uprawnienie, po potwierdzeniu, że skaner może odnajdywania, klasyfikowania i ochrony plików. Jeśli udzielenia tego prawa, nawet w przypadku krótkim czasie nie jest możliwe ze względu na zasady organizacji, zobacz [wdrażanie skanera za pomocą alternatywnej konfiguracji](#deploying-the-scanner-with-alternative-configurations) sekcji.<br /><br />- **Zaloguj się jako usługa** prawo. To prawo automatycznie przyznawane konto usługi podczas instalacji skanera i to uprawnienie jest wymagane do instalacji, konfiguracji i działania skanera. <br /><br />— Uprawnienia repozytoria danych: należy przyznać **odczytu** i **zapisu** uprawnienia dla skanowania plików, a następnie zastosowanie funkcji klasyfikacji i ochrony plików, które spełnia warunki w Zasady usługi Azure Information Protection. Aby uruchomić skanera odnajdywania tylko w trybie, **odczytu** uprawnienie jest wystarczająca.<br /><br />— Dla etykiet, które ponownie włączyć ochronę, lub usunąć ochronę: aby upewnić się, że skaner zawsze ma dostęp do chronionych plików, należy to konto [superużytkowników](configure-super-users.md) usługi Azure Rights Management service i upewnij się, że funkcja superużytkowników jest włączona . Aby uzyskać więcej informacji na temat wymagania dotyczące konta do stosowania ochrony zobacz [przygotowywanie użytkowników i grup usługi Azure Information Protection](prepare.md). Ponadto, jeśli udało Ci się wdrożyć [kontrolek dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) kontroli wdrażania etapowego, upewnij się, że to konto znajduje się w swojej kontrolki dołączania zostały skonfigurowane.|
 |Klient usługi Azure Information Protection jest zainstalowany na komputerze z systemem Windows Server|Należy zainstalować pełnego klienta do skanera. Nie należy instalować klienta przy użyciu tylko moduł programu PowerShell.<br /><br />Aby uzyskać instrukcje dotyczące instalacji klienta, zobacz [podręczniku administratora](./rms-client/client-admin-guide.md). Jeśli wcześniej zainstalowano skaner i teraz należy uaktualnić go do nowszej wersji, zobacz [uaktualnianie skanera usługi Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).|
 |Etykiety skonfigurowane, korzystające z klasyfikacji automatycznej i, opcjonalnie, ochrona|Aby uzyskać więcej informacji o tym, jak skonfigurować warunki w zasadach usługi Azure Information Protection, zobacz [Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection](configure-policy-classification.md).<br /><br />Aby uzyskać więcej informacji o sposobie konfigurowania etykiet w celu zastosowania ochrony do plików, zobacz [sposobu konfigurowania etykiety dla ochrony usługi Rights Management](configure-policy-protection.md).<br /><br />Etykiety te mogą znajdować się w zasad globalnych lub jeden lub więcej [zasad o określonym zakresie](configure-policy-scope.md).<br /><br />Uwaga: Mimo że można uruchomić skanera, nawet jeśli nie skonfigurowano etykiet powodujących stosowanie automatycznej klasyfikacji, w tym scenariuszu nie jest objęty z tymi instrukcjami. [Więcej informacji](#using-the-scanner-with-alternative-configurations)|
@@ -238,7 +238,7 @@ Następnie skaner korzysta Windows iFilter w celu zeskanowania następujących t
 |PDF |.pdf|
 |Tekst|.txt; .xml; .csv|
 
-Domyślnie tylko typów plików pakietu Office są chronione przy użyciu skanera, dzięki czemu nie są chronione pliki PDF i tekst, chyba że użytkownik [edytować rejestr](develop/file-api-configuration.md) Aby określić typy plików:
+Domyślnie tylko typów plików pakietu Office są chronione przy użyciu skanera, dzięki czemu nie są chronione pliki PDF i tekst, chyba że użytkownik [edytować rejestr](#editing-the-registry-for-the-scanner) Aby określić typy plików:
 
 - Jeśli nie dodasz typ pliku PDF w rejestrze: pliki, które mają rozszerzenie nazwy pliku, to zostaną oznaczone etykietą, ale jeśli etykieta została skonfigurowana do ochrony, ochronie nie została zastosowana.
 
@@ -262,12 +262,19 @@ Na koniec dla pozostałych typów plików, skaner ma zastosowanie etykiety domy�
 |DigitalNegative|.dng|
 |Pfile|pfile|
 
-Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakietu Office będą chronione. Aby zmienić to zachowanie, tak aby dodatkowe typy plików są chronione. Jednak jeśli etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku ulega zmianie na pfile. Ponadto że plik staje się tylko do odczytu, dopóki nie zostanie on otwarty przez autoryzowanego użytkownika i zapisane w formacie natywnym. Pliki tekstowe i obrazy można zmieniać ich rozszerzenia nazwy pliku i stają się tylko do odczytu. 
+Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakietu Office będą chronione. Aby zmienić to zachowanie, tak aby dodatkowe typy plików są chronione. Jednak jeśli etykietę stosuje ochronę ogólną do dokumentów, rozszerzenie nazwy pliku ulega zmianie na pfile. Inne typy plików można zmieniać ich rozszerzenia nazwy pliku także. Ponadto te pliki stają się tylko do odczytu, dopóki nie jest otwarty przez autoryzowanego użytkownika i zapisane w formacie natywnym.
 
-Aby zmienić domyślne zachowanie skanera, na przykład objęty ochroną ogólną innych typów plików, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Alternatywnie można chronić wszystkie typy plików, określając `*` symboli wieloznacznych. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
+### <a name="editing-the-registry-for-the-scanner"></a>Edytując rejestr skanera
+
+Aby zmienić domyślne zachowanie skanera ochronę typów plików innych niż pliki pakietu Office, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Alternatywnie można chronić wszystkie typy plików, określając `*` symboli wieloznacznych. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
 
 - Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. W przypadku braku modyfikacji rejestru innych typów plików nie będą chronione przez skaner.
 
+Podczas edycji rejestru ręcznie utworzyć **MSIPC** klucza i **FileProtection** klucz, jeśli nie istnieją, a także klucz dla każdego rozszerzenia nazwy pliku.
+
+Na przykład skanera do ochrony plików PDF, rejestru, po zakończeniu edycji jej będzie wyglądać jak na poniższym obrazie:
+
+![Edytując rejestr skanera w celu zastosowania ochrony](./media/editregistry-scanner.png)
 
 ## <a name="when-files-are-rescanned"></a>Kiedy pliki są ponownie skanowana
 
@@ -321,7 +328,7 @@ Aby zmaksymalizować wydajność skanera:
     
     W przypadku folderów do skanowania na serwerze Windows zainstaluj skaner na innym komputerze i skonfigurować te foldery, tak jak w sieciowych udziałach do skanowania. Oddzielanie dwie funkcje obsługi plików i skanowanie plików oznacza zasoby obliczeniowe dla tych usług nie są konkurującymi ze sobą.
 
-Jeśli to konieczne, należy zainstalować wiele wystąpień skanera. Każde wystąpienie skanera wymaga własnej bazy danych konfiguracji.
+Jeśli to konieczne, należy zainstalować wiele wystąpień skanera. Każde wystąpienie skanera wymaga własnej bazy danych konfiguracji w innego wystąpienia programu SQL Server.
 
 Inne czynniki, które mają wpływ na wydajność skanera:
 
