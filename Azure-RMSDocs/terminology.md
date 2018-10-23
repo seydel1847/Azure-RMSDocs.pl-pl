@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7db2b93b23efe2ad8f53cba35e1b93aab9ecb15e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 01c2e8d4dd476e0910a75fd5949362225743f322
+ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651978"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
@@ -27,7 +27,7 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |--------|--------------|
 |AADRM|Nazwa modułu programu PowerShell dla usługi Azure Rights Management, który został uzyskany nieoficjalny skrót od nazwy usługi Azure Rights Management, gdy jej poprzednia nazwa (Windows) Azure Active Directory Rights Management.|
 |aktywować|Aby włączyć usługę Azure Rights Management, aby organizacja mogła chronić swoje dokumenty i wiadomości e-mail. Ta czynność powoduje także włączenie funkcji IRM w usłudze Exchange Online i SharePoint Online.|
-|Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawami dostępu poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
+|Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawa poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
 |AD RMS|Patrz *Usługi Active Directory Rights Management*.|
 Azure Information Protection|Nazwa modułu programu PowerShell dla klienta usługi Azure Information Protection.
 |Azure Information Protection|Usługa oparta na chmurze, która używa etykiet do klasyfikowania i ochrony dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
