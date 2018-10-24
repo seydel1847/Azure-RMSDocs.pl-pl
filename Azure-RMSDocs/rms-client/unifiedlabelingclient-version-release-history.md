@@ -4,17 +4,17 @@ description: Zobacz informacje o wersji dla usługi Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f05c1e96222eb70a7257123301d14ef7d885564d
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
+ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951843"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Usługa Azure Information Protection unified etykietowania klienta: informacje o wersji wydania
 
@@ -50,6 +50,8 @@ Ta wersja zapoznawcza usługi Azure Information Protection ujednoliconego klient
 - Monity o uzasadnienie, jeśli użytkownicy obniżyć poziom ważności
 
 - Pomoc i opinie okno dialogowe, w tym zresetować ustawienia, a także Eksportuj dzienniki
+
+- Odświeżanie zasad z Centrum zabezpieczeń i zgodności co 4 godziny, według aplikacji pakietu Office.
 
 Następujące funkcje nie będą działać w tej wersji zapoznawczej:
 

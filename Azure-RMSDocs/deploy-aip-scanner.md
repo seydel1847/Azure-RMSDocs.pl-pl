@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/19/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c67732bb473731cd8eb7f4135ff23bf365375cb3
-ms.sourcegitcommit: d745a2866a483c6f1bd15bb228e3b543315e7a94
+ms.openlocfilehash: cec02b659736cfb67fa6cfd0d2382a0bde392ffc
+ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951877"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -192,7 +192,7 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
     
         Start-AIPScan
 
-2. Poczekaj, aż skanera zakończyć jego cyklu. Podczas wszystkich plików w magazynach danych, które można określić ma skaner zatrzymaniu usługi. Można użyć lokalnego Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**, aby upewnić się, gdy usługa jest zatrzymana. Należy wyszukać identyfikator zdarzenia informacyjne **911**.
+2. Poczekaj, aż skanera zakończyć jego cyklu. Kiedy skaner ma przeszukiwane przez wszystkie pliki w magazynach danych, które można określić, skaner zatrzymuje mimo, że usługa skaner jest uruchomiona. Można użyć lokalnego Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**, aby upewnić się, gdy skaner zatrzymuje. Należy wyszukać identyfikator zdarzenia informacyjne **911**.
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports, które mają format pliku CSV. W przypadku domyślnej konfiguracji skaner tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
