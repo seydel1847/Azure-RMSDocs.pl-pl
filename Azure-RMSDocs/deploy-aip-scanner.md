@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: cec02b659736cfb67fa6cfd0d2382a0bde392ffc
-ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
+ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
+ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951877"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991381"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -266,13 +266,15 @@ Gdy skaner nadawała etykiety z ochroną, domyślnie, tylko typów plików pakie
 
 ### <a name="editing-the-registry-for-the-scanner"></a>Edytując rejestr skanera
 
-Aby zmienić domyślne zachowanie skanera ochronę typów plików innych niż pliki pakietu Office, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Alternatywnie można chronić wszystkie typy plików, określając `*` symboli wieloznacznych. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
+Aby zmienić domyślne zachowanie skanera ochronę typów plików innych niż pliki pakietu Office, należy ręcznie zmodyfikować rejestr i określić dodatkowe typy plików, które mają być chronione. Aby uzyskać instrukcje, zobacz [Konfiguracja interfejsu API plików](develop/file-api-configuration.md) we wskazówkach dla deweloperów. W tej dokumentacji dla deweloperów ochrona ogólna jest określana jako „PFile”. Ponadto, określone skanera:
 
 - Skaner ma swój własny zachowanie domyślne: formatów plików pakietu Office tylko są chronione domyślnie. W przypadku braku modyfikacji rejestru innych typów plików nie będą chronione przez skaner.
 
+- Jeśli chcesz, aby takie samo zachowanie domyślne dla ochrony klienta usługi Azure Information Protection, w którym wszystkie pliki są automatycznie chronione przy użyciu ochrony natywnej lub ogólnej: Określ `*` symboli wieloznacznych jako klucza rejestru i `Default` jako dane wartości .
+
 Podczas edycji rejestru ręcznie utworzyć **MSIPC** klucza i **FileProtection** klucz, jeśli nie istnieją, a także klucz dla każdego rozszerzenia nazwy pliku.
 
-Na przykład skanera do ochrony plików PDF, rejestru, po zakończeniu edycji jej będzie wyglądać jak na poniższym obrazie:
+Na przykład skanera do ochrony plików PDF, oprócz plików pakietu Office, rejestru, po zakończeniu edycji jej będzie wyglądać jak na poniższym obrazie:
 
 ![Edytując rejestr skanera w celu zastosowania ochrony](./media/editregistry-scanner.png)
 
