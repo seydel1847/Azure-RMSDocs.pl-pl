@@ -4,18 +4,18 @@ description: W przypadku korzystania z usługi Azure Rights Management szablony 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b801266dfb757286599b5bd2fd3b36c9590717f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 90c046f0cf2f954e70a17d127bc99b0479115928
+ms.sourcegitcommit: a5fd0afd84b62f84c3b9f0d076fab1b674267bf3
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148515"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083884"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>Odświeżanie szablonów dla użytkowników i usług
 
@@ -26,12 +26,14 @@ W przypadku korzystania z usługi Azure Rights Management w ramach usługi Azure
 |Aplikacja lub usługa|Odświeżanie szablonów po wprowadzeniu zmian|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />Ma zastosowanie do reguł transportu i aplikacji Outlook Web App |Odświeżane automatycznie w ciągu godziny — nie wymaga dodatkowych kroków.<br /><br />Dotyczy to sytuacji, jeśli używasz [szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Jeśli wcześniej skonfigurowano usługi Exchange Online do korzystania z usługi Azure Rights Management, importując zaufaną domenę publikacji (TPD), użyj tego samego zestawu instrukcji włączyć nowych funkcji w programie Exchange Online.|
-|Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> — W przypadku usługa zostanie uruchomiona skaner ochrony informacji Azure i lokalne zasady jest starsza niż jedna godzina. Ponadto usługa skaner sprawdza obecność zmian co godzinę i używa tych zmian na następny cykl skanowania.<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto, jako że klient usługi Azure Information Protection jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
+|Klient usługi Azure Information Protection|Automatyczne odświeżanie przy każdym odświeżeniu zasad usługi Azure Information Protection na komputerze klienckim:<br /><br /> – Po otwarciu aplikacji pakietu Office obsługującej pasek usługi Azure Information Protection. <br /><br /> – Po kliknięciu prawym przyciskiem myszy w celu sklasyfikowania i ochrony pliku lub folderu. <br /><br /> – Po uruchomieniu poleceń cmdlet programu PowerShell mających na celu przypisanie etykiet oraz ochronę (Get-AIPFileStatus and Set-AIPFileLabel).<br /><br /> — W przypadku usługa zostanie uruchomiona skaner ochrony informacji Azure i lokalne zasady jest starsza niż jedna godzina. Ponadto usługa skaner sprawdza obecność zmian co godzinę i używa tych zmian na następny cykl skanowania.<br /><br /> – Każdorazowo po upływie 24 godzin.<br /><br /> Ponadto ponieważ ten klient jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone Szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta usługi Azure Information Protection.|
+|Usługa Azure Information Protection unified etykietowania klienta (wersja zapoznawcza)|Automatycznie odświeżane co 4 godziny, według aplikacji pakietu Office.<br /><br /> Ponadto ponieważ ten klient jest ściśle zintegrowany z pakietem Office, wszelkie odświeżone Szablony pakietu Office 2016 lub Office 2013 zostaną odświeżone również dla klienta etykietowania ujednolicone usługi Azure Information Protection.|
 |Pakiety Office 2016 i Office 2013<br /><br />Aplikacja RMS sharing dla systemu operacyjnego Windows|Automatycznie odświeżane — według harmonogramu:<br /><br />– W przypadku nowszych wersji pakietu Office: odświeżanie odbywa się domyślnie co 7 dni.<br /><br />– W przypadku aplikacji RMS sharing dla systemu Windows: od wersji 1.0.1784.0 domyślne ustawienie uwzględnia codzienne odświeżanie. W przypadku wcześniejszych wersji odświeżanie odbywa się domyślnie co 7 dni.<br /><br />Aby wymusić odświeżenie w terminie wcześniejszym niż ujęty w harmonogramie, zobacz następującą sekcję: [Pakiety Office 2016 i Office 2013 oraz aplikacja RMS sharing dla systemu Windows: Wymuszenie odświeżenia zmienionego szablonu niestandardowego](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template).|
 |Pakiet Office 2010|Automatyczne odświeżanie, gdy użytkownik wyloguje się z systemu Windows, zaloguje się ponownie i odczeka maksymalnie 1 godzinę.|
 |Lokalna instalacja programu Exchange z łącznikiem usługi Rights Management<br /><br />Ma zastosowanie do reguł transportu i aplikacji Outlook Web App|Automatyczne odświeżanie — nie wymaga dodatkowych kroków. Jednak aplikacja Outlook Web App buforuje interfejs użytkownika na dzień.|
 |Office 2016 dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
 |Aplikacja RMS sharing dla komputerów Mac|Automatyczne odświeżanie — nie wymaga dodatkowych kroków.|
+|Aplikacje pakietu Office, [obsługują funkcję czułości](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)|Tacy klienci nie pobierania szablonów, ale uzyskiwać do nich dostęp w trybie online — wymagane żadne dodatkowe kroki.|
 
 Gdy aplikacje klienckie wymagają pobrania szablonów (pierwszy raz lub odświeżonych po zmianach), należy przygotować się na odczekanie do 15 minut, zanim pobranie zostanie ukończone, a nowe lub zaktualizowane szablony staną się w pełni funkcjonalne. Rzeczywisty czas może być różny zależnie od takich czynników, jak rozmiar i złożoność konfiguracji szablonu oraz łączność sieciowa. 
 
