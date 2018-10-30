@@ -4,16 +4,16 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: dae8f654fbb6a5603d0324d474bd1f25e7c36118
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: c8cb4ebb2ccccb4c909e7385bb597310e751f9ae
+ms.sourcegitcommit: 0e4e1bca400824c8a01c89e485cf56f6f14cd99e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169774"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50227531"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -100,17 +100,16 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     
     Wybierz **Dodaj uprawnienia**, a następnie na **Dodaj uprawnienia** bloku, wybierz pierwszy zestaw użytkowników i grupy, którzy będą mieć prawa do korzystania z zawartości, które będą chronione za pomocą wybranej etykiety:
     
-    - Wybierz **wybierz z listy** której następnie można dodać wszystkich użytkowników z Twojej organizacji, wybierając **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**. To ustawienie wyłącza konta gościa. Lub możesz wybrać **Dodaj wszystkich uwierzytelnionych użytkowników (wersja zapoznawcza)**, lub Przeglądaj katalog.
+    - Wybierz **wybierz z listy** której następnie można dodać wszystkich użytkowników z Twojej organizacji, wybierając **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**. To ustawienie wyłącza konta gościa. Lub możesz wybrać **Dodaj wszystkich uwierzytelnionych użytkowników**, lub Przeglądaj katalog.
         
         Wybierz wszystkie elementy Członkowskie lub Przeglądaj katalog, użytkowników lub grupy, musi mieć adres e-mail. W środowisku produkcyjnym użytkowników i grup prawie zawsze mieć adres e-mail, ale w prostym środowisku testowym, może być konieczne dodanie adresów e-mail do kont użytkowników lub grup.
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>Więcej informacji na temat **Dodaj wszystkich uwierzytelnionych użytkowników** 
         To ustawienie nie ogranicza kto ma dostęp do zawartości, czy etykieta chroni szyfrowanie treści i opcji, można ograniczyć, jak zawartości mogą być używane (uprawnienia), zapewniając i dostępne (wygaśnięcia i dostęp w trybie offline). Jednak aplikacja otwierania chronionej zawartości musi umożliwiać do obsługi uwierzytelniania. Z tego powodu federacyjnego dostawców sieci społecznościowych, takich jak Google i jednorazowej kod dostępu uwierzytelniania należy używać tylko dla wiadomości e-mail i tylko wtedy, gdy używasz usługi Exchange Online i nowe funkcje z szyfrowanie wiadomości usługi Office 365. Konta Microsoft można przy użyciu podglądu usługi Azure Information Protection i pakietu Office 2016 kliknij do uruchomienia. 
           
-        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie:  
-                — Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.  
-                — Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.  
-                — Masz wymaganie, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.  
+        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie: — Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.  
+            — Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.  
+            — Masz wymaganie, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.
         
     - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail, adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Możesz też użyć tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając dowolną nazwę domeny z tej organizacji. Dla dostawców sieci społecznościowych, można także użyć tej opcji, wprowadzając odpowiednią nazwę domeny, takich jak **gmail.com**, **hotmail.com**, lub **outlook.com**.
         
@@ -279,7 +278,7 @@ Ta konfiguracja ma tę zaletę, że nie trzeba określić użytkowników, grupy 
     
 2. Upewnij się, że **Ustaw uprawnienia** jest wybrany, a następnie wybierz **Dodaj uprawnienia**.
 
-3. Na **Dodaj uprawnienia** bloku na **wybierz z listy** , a następnie wybierz **Dodaj wszystkich uwierzytelnionych użytkowników (wersja zapoznawcza)**.
+3. Na **Dodaj uprawnienia** bloku na **wybierz z listy** , a następnie wybierz **Dodaj wszystkich uwierzytelnionych użytkowników**.
 
 4. Wybierz uprawnienia i kliknij przycisk **OK**.
 

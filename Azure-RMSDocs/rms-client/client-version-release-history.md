@@ -4,18 +4,18 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: dd6a23c7bcb9f26c4b38a60e1733d84ddd954522
+ms.sourcegitcommit: 0e4e1bca400824c8a01c89e485cf56f6f14cd99e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399913"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50227599"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -103,6 +103,8 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
     
     - Program SharePoint Server 2010 jest obsługiwana w przypadku klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
     
+- Obsługa nowej **usługi Azure Information Protection — węzły (wersja zapoznawcza)** bloku w witrynie Azure portal, która umożliwia Zarządzanie skanerami z centralnej lokalizacji. Informacje z Twojej wdrożonej skanerów, które mają łączność do platformy Azure jest aktualizowana co pięć minut. Z tego bloku można uruchomić skanera jednorazowe skanowania, ponownego skanowania wszystkich plików, sprawdź stan skaner i wyświetlić szybkość skanowania.
+
 **Poprawki**
 
 - Skanera usługi Azure Information Protection:
