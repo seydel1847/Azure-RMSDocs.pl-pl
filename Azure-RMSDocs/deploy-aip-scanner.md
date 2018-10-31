@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 4ee04cca2f6653d8beba50a74cc1b6d70d1042b8
-ms.sourcegitcommit: 0e4e1bca400824c8a01c89e485cf56f6f14cd99e
+ms.openlocfilehash: 4e5c0c52c71527c5ffc2b6f2203086bf3efb9b82
+ms.sourcegitcommit: 7c120d7a3a973ec0f21b3db55020db73f53707c0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50227616"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50254086"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -433,6 +433,8 @@ Skaner został skonfigurowany do uruchamiania raz, a nie w sposób ciągły, aby
 ----
 
 ## <a name="next-steps"></a>Kolejne kroki
+
+Są Państwo zainteresowani implementacji tego skanera zespołu inżynierów usług podstawowych i operacje w programie Microsoft?  Przeczytaj techniczną analizę przypadku: [Automatyzowanie ochrony danych za pomocą skanera usługi Azure Information Protection](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner).
 
 Możesz się zastanawiać: [jaka jest różnica między infrastruktury klasyfikacji plików systemu Windows Server i skaner usługi Azure Information Protection?](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 

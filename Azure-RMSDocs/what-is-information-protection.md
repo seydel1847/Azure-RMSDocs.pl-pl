@@ -4,16 +4,16 @@ description: Omówienie usługi Azure Information Protection.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/30/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0984cfc7b71c30d4a333b8cc6e24d8c3fbef216b
-ms.sourcegitcommit: 5cda0c64b486280ff0581e7f190d198b013a87d6
+ms.openlocfilehash: b789697a398a0e201cbf041b36d7cd41a82a9e0d
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47593765"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236836"
 ---
 # <a name="what-is-azure-information-protection"></a>Co to jest Azure Information Protection?
 
@@ -104,7 +104,7 @@ W idealnym przypadku dokumentów i wiadomości e-mail są oznaczone po uprzednim
 
 Dla swoich lokalnych magazynów danych należy użyć skanera usługi Azure Information Protection do odnajdywania, klasyfikowania i ochrony dokumentów na foldery lokalne, udziały sieciowe i witryny programu SharePoint Server i bibliotek. Skaner działa jako usługa w systemie Windows Server. Te same reguły w ramach zasad służy do wykrywania poufnych informacji i dotyczą konkretnych etykiet dokumentów. Lub etykiety domyślnej można zastosować do wszystkich dokumentów w repozytorium danych, bez sprawdzania zawartości pliku. Skaner w trybie tylko raportowania umożliwia również pomóc odkryć, poufne informacje, które może nie wiesz, że masz. 
 
-Aby uzyskać więcej informacji na temat wdrażania i przy użyciu skanera zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-rms-connector.md).
+Aby uzyskać więcej informacji na temat wdrażania i przy użyciu skanera zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-aip-scanner.md).
 
 Dla Twojej magazynami danych w chmurze należy użyć Microsoft Cloud App Security do zastosowania etykiet do dokumentów, Box, SharePoint Online i OneDrive dla firm. Aby uzyskać więcej informacji, zobacz [automatyczne stosowanie etykiet klasyfikacji usługi Azure Information Protection](/cloud-app-security/use-case-information-protection) i [integracji usługi Azure Information Protection](/cloud-app-security/azip-integration).
 
