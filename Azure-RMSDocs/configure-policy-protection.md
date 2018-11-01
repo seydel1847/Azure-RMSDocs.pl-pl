@@ -4,16 +4,16 @@ description: Najbardziej poufne dokumenty i wiadomości e-mail możesz chronić 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: c8cb4ebb2ccccb4c909e7385bb597310e751f9ae
-ms.sourcegitcommit: 0e4e1bca400824c8a01c89e485cf56f6f14cd99e
+ms.openlocfilehash: c1c757d2a952f4770f4392f7b8badb14c68c4547
+ms.sourcegitcommit: 3159b0f04f042a43193934d11376b4fadaaf1369
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50227531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679019"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -132,7 +132,7 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
     |Ustawienie|Więcej informacji|Zalecane ustawienie
     |-----------|--------------------|--------------------|
     |**wygaśnięcie zawartości**|Zdefiniuj datę lub liczbę dni w przypadku, gdy dokumenty lub wiadomości e-mail, które są chronione przez te ustawienia nie należy otwierać dla wybranych użytkowników. Można określić datę lub wskazać liczbę dni, jakie muszą minąć, począwszy od momentu objęcia zawartości ochroną.<br /><br />W przypadku określenia daty ustawienie wchodzi w życie o północy czasu mającego zastosowanie w bieżącej strefie czasowej.|**Zawartość nigdy nie wygasa**, jeśli zawartość nie ma określonych wymagań związanych z czasem.|
-    |**Zezwalaj na dostęp offline**|To ustawienie umożliwia zrównoważenia wszelkich wymagań dotyczących zabezpieczeń, do których masz (. / tym dostęp po odwołaniu) za pomocą umożliwienia wybranym użytkownikom otwierania chronionej zawartości, gdy nie mają dostępu do Internetu.<br /><br />Jeśli określisz, że zawartość nie jest dostępna bez połączenia z Internetem lub że zawartość jest dostępna tylko dla określonej liczby dni, po osiągnięciu progu Ci użytkownicy muszą być ponownie uwierzytelniany, a ich dostęp jest zalogowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, przed otwarciem dokumentu lub wiadomości e-mail tym użytkownikom będzie wyświetlany monit o zalogowanie się.<br /><br />Oprócz ponowne uwierzytelnianie jest ponownie oceniane zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć inny poziom dostępu do tego samego dokumentu lub tej samej wiadomości e-mail po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do danej zawartości. Może to oznaczać brak dostępu, jeśli dokument został [odwołany](./rms-client/client-track-revoke.md).|W zależności od tego, na ile poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Nigdy** dla bardzo poufnych danych biznesowych, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. To zalecenie stawia zabezpieczenia ponad elastycznością i zapewnia, że w przypadku odwołania dokumentu wszyscy autoryzowani użytkownicy natychmiast utracą możliwość otwierania tego dokumentu. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
+    |**Zezwalaj na dostęp offline**|Użyj tego ustawienia, aby zrównoważyć wszelkie wymagania dotyczące zabezpieczeń (w tym dostęp po odwołaniu) za pomocą umożliwienia wybranym użytkownikom otwierania chronionej zawartości bez połączenia internetowego.<br /><br />Jeśli określisz, że zawartość nie jest dostępna bez połączenia z Internetem lub że zawartość jest dostępna tylko dla określonej liczby dni, po osiągnięciu progu Ci użytkownicy muszą być ponownie uwierzytelniany, a ich dostęp jest zalogowany. Kiedy tak się stanie, w przypadku, gdy poświadczenia nie są buforowane, przed otwarciem dokumentu lub wiadomości e-mail tym użytkownikom będzie wyświetlany monit o zalogowanie się.<br /><br />Oprócz ponowne uwierzytelnianie jest ponownie oceniane zasad i członkostwa w grupie użytkowników. Oznacza to, że użytkownicy mogą mieć inny poziom dostępu do tego samego dokumentu lub tej samej wiadomości e-mail po wprowadzeniu zmian w zasadach lub w członkostwie grupy mającym miejsce po ich ostatnim uzyskaniu dostępu do danej zawartości. Może to oznaczać brak dostępu, jeśli dokument został [odwołany](./rms-client/client-track-revoke.md).|W zależności od tego, na ile poufna jest zawartość:<br /><br />- **Liczba dni, w których zawartość jest dostępna bez połączenia z Internetem** = **7** dla poufnych danych biznesowych, których udostępnienie nieupoważnionym osobom mogłoby spowodować szkodę w firmie. To zalecenie oferuje zrównoważony kompromis między elastycznością i zabezpieczeniami. Do przykładów należą kontrakty, raporty dotyczące zabezpieczeń, podsumowania prognoz i dane konta sprzedaży.<br /><br />- **Nigdy** dla bardzo poufnych danych biznesowych, które spowodują szkody w działalności firmy, jeśli zostaną udostępnione nieuprawnionym osobom. To zalecenie stawia zabezpieczenia ponad elastycznością i zapewnia, że w przypadku odwołania dokumentu wszyscy autoryzowani użytkownicy natychmiast utracą możliwość otwierania tego dokumentu. Do przykładów należą dane pracowników i klientów, hasła, kod źródłowy i wstępnie zapowiadane raporty finansowe.|
     
     Po zakończeniu konfigurowania uprawnień i ustawień, kliknij przycisk **OK**. 
     
