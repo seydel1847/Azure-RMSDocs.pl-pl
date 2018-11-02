@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: beac842cdb8cfde5b3a209f3e37084828d3df7ba
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382650"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915584"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -302,13 +302,11 @@ W wyniku tego w rejestrze obsługiwane są następujące scenariusze:
 
 - Przeglądarka usługi Azure Information Protection można otworzyć te pliki chronione.
 
-- Eksplorator plików i programu PowerShell można wyłączyć ochronę tych plików lub ponownie włączyć ochronę je za pomocą usługi Azure Information Protection.
-
-- Eksplorator plików, programu PowerShell i skanera usługi Azure Information Protection można oznaczyć te pliki.
-
 - Skaner usługi Azure Information Protection można sprawdzić te pliki do poufnych informacji.
 
-- Możesz użyć [etykietowania migracji klienta dostosowywania](#migrate-labels-from-secure-islands-and-other-labeling-solutions) przekonwertować Secure Islands etykiety na ten temat chronione pliki do etykiety usługi Azure Information Protection.
+- Eksplorator plików, programu PowerShell i skanera usługi Azure Information Protection można oznaczyć te pliki. W rezultacie można stosować etykiety usługi Azure Information Protection dotyczący nowych ochronę z poziomu usługi Azure Information Protection lub który usuwa istniejące ochronę Secure Islands.
+
+- Możesz użyć [etykietowania migracji klienta dostosowywania](#migrate-labels-from-secure-islands-and-other-labeling-solutions) Aby dokonać automatycznej konwersji etykiety Secure Islands na ten temat chronione pliki do etykiety usługi Azure Information Protection.
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania
 

@@ -4,18 +4,18 @@ description: Informacje o usłudze RMS dla użytkowników indywidualnych, bezpł
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321464e50a517c17518e35a715e154d0c7c8b07d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146679"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915567"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
@@ -23,7 +23,7 @@ ms.locfileid: "44146679"
 
 Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione za pomocą usługi Azure Information Protection. Jeśli Ci użytkownicy nie uwierzytelniony przez usługę Azure Active Directory, bezpłatnej usługi rejestracji można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W wyniku tych użytkownicy mogą teraz uwierzytelniane przy użyciu swojego adresu e-mail firmy i odczytania chronionych plików na komputerach lub urządzeniach przenośnych.
 
-Samoobsługowe tworzenie konta usługi Azure Active Directory korzysta z usługi RMS dla użytkowników indywidualnych. Jeśli użytkownicy utworzyli konta dla Twojej organizacji za pomocą tej subskrypcji z uprawnieniami administratora dla Twojej organizacji, może przejąć własności i [przejęcie kontroli nad ich kont](/active-directory/domains-admin-takeover#external-admin-takeover). 
+Samoobsługowe tworzenie konta usługi Azure Active Directory korzysta z usługi RMS dla użytkowników indywidualnych. Jeśli użytkownicy utworzyli konta dla Twojej organizacji za pomocą tej subskrypcji z uprawnieniami administratora dla Twojej organizacji, może przejąć własności i [przejęcie kontroli nad ich kont](/azure/active-directory/users-groups-roles/domains-admin-takeover#external-admin-takeover). 
 
 
 > [!NOTE]
@@ -60,5 +60,5 @@ Teraz Twoje konto jest tworzone, jeśli zostanie wyświetlony monit logować si�
 
 
 ## <a name="next-steps"></a>Kolejne kroki
-Usługi RMS dla użytkowników indywidualnych to przykład za pomocą samoobsługowej, jest obsługiwane przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [What is Self-Service Signup for Azure?](/active-directory/active-directory-self-service-signup) (Czym jest rejestracja samoobsługowa na platformie Azure?).
+Usługi RMS dla użytkowników indywidualnych to przykład za pomocą samoobsługowej, jest obsługiwane przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [co to jest Samoobsługowa usługi Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup) w dokumentacji usługi Azure Active Directory.
 

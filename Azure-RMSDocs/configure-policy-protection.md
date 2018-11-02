@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: c1c757d2a952f4770f4392f7b8badb14c68c4547
-ms.sourcegitcommit: 3159b0f04f042a43193934d11376b4fadaaf1369
+ms.openlocfilehash: 0ee7333baebd0a34f518ff9500df95ed57ed2b01
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679019"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751172"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -215,7 +215,7 @@ Ta etykieta nie jest odpowiednia dla wiadomości e-mail.
 7. Kliknij przycisk **OK** na **ochrony** bloku, a następnie kliknij **Zapisz** na **etykiety** bloku.
 
 
-### <a name="example-3-add-external-users-to-an-existing-label"></a>Przykład 3: Dodawanie użytkowników zewnętrznych do istniejącej etykiety
+### <a name="example-3-add-external-users-to-an-existing-label-that-protects-content"></a>Przykład 3: Dodawanie użytkowników zewnętrznych do istniejącej etykiety, która chroni zawartość
 
 Nowych użytkowników, które dodajesz będzie w stanie otwarte dokumenty i wiadomości e-mail, które są już chronione przy użyciu tej etykiety. Uprawnienia przyznanie Ci użytkownicy mogą różnić się od uprawnienia, które mają istniejących użytkowników.
 

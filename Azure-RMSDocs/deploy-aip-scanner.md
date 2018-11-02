@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 4e5c0c52c71527c5ffc2b6f2203086bf3efb9b82
-ms.sourcegitcommit: 7c120d7a3a973ec0f21b3db55020db73f53707c0
+ms.openlocfilehash: 47a8633852139bf0a84e6c55321c69b1af2c2892
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50254086"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751291"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -194,9 +194,15 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
     
     Alternatywnie można uruchomić skanera z **usługi Azure Information Protection** bloku w witrynie Azure portal, gdy używasz **skanera** > **węzłów (wersja zapoznawcza)**  >  \* *<* skanera węzła * > ** > **Skanuj teraz** opcji.
 
-2. Poczekaj, aż skanera zakończyć jego cyklu. Kiedy skaner ma przeszukiwane przez wszystkie pliki w magazynach danych, które można określić, skaner zatrzymuje mimo, że usługa skaner jest uruchomiona. Można użyć lokalnego Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**, aby upewnić się, gdy skaner zatrzymuje. Należy wyszukać identyfikator zdarzenia informacyjne **911**.
+2. Poczekaj, aż skanera zakończyć cykl, uruchamiając następujące polecenie:
+    
+    Get-AIPScannerStatus
+    
+    Odszukaj stan pokazać **bezczynne** zamiast **skanowania**. Kiedy skaner ma przeszukiwane przez wszystkie pliki w magazynach danych, które można określić, skaner zatrzymuje mimo, że usługa skaner jest uruchomiona. 
     
     Alternatywnie, można wyświetlić stan z **usługi Azure Information Protection** bloku w witrynie Azure portal, sprawdzając **skanera** > **węzłów (wersja zapoznawcza)**  >  \* *<* skanera węzła * > ** > **stan** kolumny.
+    
+    Sprawdź lokalne Windows **aplikacji i usług** dziennika zdarzeń **usługi Azure Information Protection**. Ten dziennik raportów również w przypadku, gdy skanera zostało zakończone, skanowanie za pomocą podsumowanie wyników. Należy wyszukać identyfikator zdarzenia informacyjne **911**.
 
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports, które mają format pliku CSV. W przypadku domyślnej konfiguracji skaner tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
@@ -217,15 +223,17 @@ W jego domyślne ustawienie skaner działa jeden czas i działa w trybie tylko d
     
     Istnieją inne ustawienia konfiguracji, które można zmienić. Na przykład czy atrybuty pliku zostały zmienione, a co jest rejestrowane w raportach. Ponadto jeśli zasad usługi Azure Information Protection zawiera ustawienie, które wymaga komunikatów uzasadnienie obniżenia poziomu klasyfikacji lub usunąć ochronę, należy określić tego komunikatu przy użyciu tego polecenia cmdlet. Użyj [pomocy online](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) Aby uzyskać więcej informacji na temat każdego ustawienia konfiguracji. 
 
-2. Uruchom ponownie **skaner ochrony informacji Azure** usługi, uruchamiając następujące polecenie:
+2. Zanotuj wartość w bieżącym czasem i ponownie uruchomić skanera, uruchamiając następujące polecenie:
     
         Start-AIPScan
     
     Alternatywnie można uruchomić skanera z **usługi Azure Information Protection** bloku w witrynie Azure portal, gdy używasz **skanera** > **węzłów (wersja zapoznawcza)**  >  \* *<* skanera węzła * > ** > **Skanuj teraz** opcji.
 
-3. Jak wcześniej, monitorowanie dziennika zdarzeń i raportów lub witryny Azure Portal, aby wyświetlić pliki, które zostały oznaczone jako, klasyfikacji, które zostały zastosowane i czy została zastosowana ochrona.
+3. Monitorowanie dziennika zdarzeń dla typu informacyjny **911** ponownie z czasem sygnatury później niż podczas uruchamiania skanowania w poprzednim kroku. 
+    
+    Sprawdź, raporty, aby zobaczyć szczegółowe informacje, które pliki zostały oznaczone, jakie klasyfikacji została zastosowana do każdego pliku i tego, czy ochrona została zastosowana do nich. Możesz też użyć witryny Azure portal, aby wyraźniej widzieć te informacje.
 
-Ponieważ firma Microsoft skonfigurowany harmonogram uruchamiany w sposób ciągły i, gdy skaner pracował przechodzi przez wszystkie pliki, uruchamia nowy cykl tak, aby nowe i zmienione pliki zostaną odnalezione.
+Ponieważ firma Microsoft skonfigurowany harmonogram uruchamiany w sposób ciągły i, gdy skaner pracował przechodzi przez wszystkie pliki, uruchamia nowy cykl tak, aby wszystkie nowe i zmienione pliki zostaną odnalezione.
 
 
 ## <a name="how-files-are-scanned"></a>Jak pliki są skanowane

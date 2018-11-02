@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dd6a23c7bcb9f26c4b38a60e1733d84ddd954522
-ms.sourcegitcommit: 0e4e1bca400824c8a01c89e485cf56f6f14cd99e
+ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50227599"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751257"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -113,7 +113,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
     
     - Skaner raporty zawierają "Ostatnio modyfikowany przez", dokumentów pakietu Office.
     
-    - Można teraz chronić wszystkie typy plików za pomocą `*` symboli wieloznacznych podczas edycji rejestru zgodnie z opisem w [Konfiguracja interfejsu API plików](../develop/file-api-configuration.md) instrukcje.
+    - Można teraz chronić wszystkie typy plików za pomocą `*` symboli wieloznacznych podczas edycji rejestru zgodnie z opisem w [edycji rejestru skanera](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner) sekcji.
 
 - Podczas klasyfikowania i ochrony za pomocą programu PowerShell lub skaner metadane dokumentu pakietu Office jest ono usuwane lub szyfrowane.
 
