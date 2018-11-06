@@ -4,16 +4,16 @@ description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/16/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 03736896f73fc83f699191677846e757eaf17be7
-ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
+ms.openlocfilehash: f8967b16f864939bfcb06f786e8ee1eff0603ac2
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336463"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026608"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
@@ -83,5 +83,7 @@ Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
+Aby zobaczyć, jak niektóre z tych ustawień zasad mogą współdziałać ze sobą, spróbuj [ustawienia zasad konfigurowania usługi Azure Information Protection, które współpracują ze sobą](infoprotect-settings-tutorial.md) samouczka.
+
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).
 

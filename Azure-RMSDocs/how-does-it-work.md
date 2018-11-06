@@ -4,18 +4,18 @@ description: Szczegółowe informacje dotyczące działania usługi Azure RMS i 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 821038f555a73e89748541d5b512d5a631094fa8
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 19b45c3e24de5eba9f0bd243baf73797b66431f7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149365"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026778"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Jak działa usługa Azure RMS Kulisy
 
@@ -29,7 +29,7 @@ Istotnym aspektem temat współdziałania usługi Azure RMS, jest to, że ta us�
 
 Na poniższej ilustracji można prześledzić ogólne działanie tego procesu. Dokument zawierający tajną formułę jest chroniony i może zostać pomyślnie otwarty przez autoryzowanego użytkownika lub usługę. Dokument jest zabezpieczony przy użyciu klucza zawartości (zielony klucz na tym rysunku). Jest on unikatowy dla każdego dokumentu i znajduje się w nagłówku pliku, gdzie jest chroniony przez klucz główny dzierżawy usługi Azure Information Protection (czerwony klucz na tym rysunku). Klucz dzierżawy może być wygenerowany i zarządzany przez firmę Microsoft lub użytkownik może sam wygenerować własny klucz dzierżawy i nim zarządzać.
 
-Gdy w trakcie procesu ochrony usługa Azure RMS wykonuje szyfrowanie i odszyfrowywanie, autoryzowanie i wymuszanie ograniczeń, tajne formuły nigdy nie są wysyłane do usługi Azure.
+Przez cały proces ochrony, gdy usługi Azure RMS jest szyfrowanie i odszyfrowywanie, autoryzowanie i wymuszanie ograniczeń, tajne formuły nigdy nie są wysyłane do platformy Azure.
 
 ![Jak usługa Azure RMS chroni plik](./media/AzRMS_SecretColaFormula_final.png)
 
@@ -89,7 +89,7 @@ Zanim użytkownik będzie mógł chronić zawartość lub korzystać z zawartoś
 
 **Działania wykonywane w kroku 1**: klient RMS na komputerze najpierw łączy się z usługą Azure Rights Management i uwierzytelnia użytkownika przy użyciu jego konta usługi Azure Active Directory.
 
-Gdy konto użytkownika jest sfederowane przy użyciu usługi Azure Active Directory, uwierzytelnianie odbywa się automatyczne, a użytkownik nie otrzymuje monitu o podanie poświadczeń.
+Gdy konto użytkownika jest Sfederowane przy użyciu usługi Azure Active Directory, uwierzytelnianie odbywa się automatyczne, a użytkownik nie jest monitowany o poświadczenia.
 
 ![Aktywacja klienta usługi RMS — krok 2, certyfikaty są pobierane do klienta](./media/AzRMS_useractivation2.png)
 
@@ -150,7 +150,7 @@ Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różn
 
 - **Urządzenia przenośne**: gdy urządzenia przenośne chronią pliki lub korzystają z nich przy użyciu usługi Azure Rights Management, przepływy procesu są dużo prostsze. W przypadku urządzeń przenośnych nie jest wykonywany proces inicjowania użytkownika, ponieważ każda transakcja (wykonywana w celu ochrony lub wykorzystania zawartości) jest niezależna. Podobnie jak komputery z systemem Windows, urządzenia przenośne łączą się z usługą Azure Rights Management i dokonują uwierzytelnienia. W celu ochrony zawartości urządzenia przenośne przesyłają zasady, a usługa Azure Rights Management wysyła do nich licencję publikowania i klucz symetryczny do ochrony dokumentu. Aby umożliwić użycie zawartości, po nawiązaniu połączenia z usługą Azure Rights Management i wykonaniu uwierzytelnienia urządzenia przenośne przesyłają zasady dokumentu do usługi Azure Rights Management i żądają licencji użytkowania. W odpowiedzi usługa Azure Rights Management wysyła do urządzeń przenośnych niezbędne klucze i ograniczenia. Oba procesy używają zabezpieczeń TLS do ochrony wymiany kluczy i innej komunikacji.
 
-- **Łącznik usługi RMS**: w przypadku korzystania z usługi Azure Rights Management z łącznikiem usługi RMS przepływy procesu pozostają takie same. Jedyna różnica polega na tym, że łącznik działa jako przekaźnik pomiędzy usługami lokalnymi (takimi jak Exchange Server i SharePoint Server) a usługą Azure Rights Management. Łącznik sam nie wykonuje żadnych operacji, takich jak inicjowanie środowiska użytkownika bądź szyfrowanie i odszyfrowywanie. Przekazuje on po prostu treść komunikacji zazwyczaj wysyłaną do serwera usług AD RMS, obsługując tłumaczenie między protokołami używanymi po każdej stronie. W tym scenariuszu można korzystać z usługi Azure Rights Management wraz z usługami lokalnymi.
+- **Łącznik usługi RMS**: gdy usługa Azure Rights Management jest używana z łącznikiem usługi RMS, przepływy procesu pozostają takie same. Jedyna różnica polega na tym, że łącznik działa jako przekaźnik pomiędzy usługami lokalnymi (takimi jak Exchange Server i SharePoint Server) a usługą Azure Rights Management. Łącznik sam nie wykonuje żadnych operacji, takich jak inicjowanie środowiska użytkownika bądź szyfrowanie i odszyfrowywanie. Przekazuje on po prostu komunikacji, który zwykle musieli przejść do serwera usług AD RMS, obsługując tłumaczenie między protokołami, które są używane na każdej stronie. W tym scenariuszu można użyć usługi Azure Rights Management z lokalnymi usługami.
 
 - **Ochrona ogólna (pfile)**: gdy usługa Azure Rights Management chroni plik w sposób ogólny, przepływ procesu w odniesieniu do ochrony zawartości jest zasadniczo taki sam, z tą różnicą, że to klient RMS tworzy zasady, na podstawie których są przyznawane wszystkie uprawnienia. Gdy plik jest używany, zostaje odszyfrowywany przed przekazaniem do aplikacji docelowej. Ten scenariusz umożliwia ochronę wszystkich plików, także tych bez natywnej obsługi usługi RMS.
 
@@ -160,9 +160,9 @@ Przedstawione wskazówki obejmują scenariusze standardowe, ale istnieją różn
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Aby dowiedzieć się więcej na temat usługi Azure Rights Management, zapoznaj się z innymi artykułami w sekcji **Poznawanie i eksplorowanie**, na przykład [Jak aplikacje obsługują usługę Azure Rights Management](applications-support.md). Znajdziesz tu informacje na temat integracji istniejących aplikacji z usługą Azure Rights Management w celu uzyskania rozwiązania zapewniającego ochronę informacji. 
+Aby dowiedzieć się więcej na temat usługi Azure Rights Management, należy użyć w pozostałych artykułach z **poznawanie i eksplorowanie** sekcji, takich jak [jak aplikacje obsługują usługę Azure Rights Management](applications-support.md) Aby dowiedzieć się więcej jak istniejące aplikacje można zintegrować z usługą Azure Rights Management do uzyskania rozwiązania zapewniającego ochronę informacji. 
 
-Zapoznaj się z sekcją [Usługa Azure Information Protection — terminologia](./terminology.md), aby zapoznać się z pojęciami, które możesz napotkać podczas konfigurowania i używania usługi Azure Rights Management. Przed rozpoczęciem wdrażania zobacz również [Wymagania dotyczące usługi Azure Information Protection](requirements.md). Jeśli chcesz od razu rozpocząć korzystanie z usługi i osobiście wypróbować jej możliwości, skorzystaj z [Samouczka szybkiego startu dla usługi Azure Information Management](infoprotect-quick-start-tutorial.md).
+Zapoznaj się z sekcją [Usługa Azure Information Protection — terminologia](./terminology.md), aby zapoznać się z pojęciami, które możesz napotkać podczas konfigurowania i używania usługi Azure Rights Management. Przed rozpoczęciem wdrażania zobacz również [Wymagania dotyczące usługi Azure Information Protection](requirements.md). Jeśli chcesz poznać zaawansowane możliwości i wypróbować ją samodzielnie, użyj [edytować zasady i Utwórz nową etykietę](infoprotect-quick-start-tutorial.md) samouczka.
 
 Jeśli chcesz rozpocząć wdrażanie ochrony danych w organizacji, użyj [planu wdrożenia usługi Azure Information Protection](deployment-roadmap.md), który zawiera informacje o kolejnych krokach procesu wdrażania i linki do praktycznych instrukcji.
 

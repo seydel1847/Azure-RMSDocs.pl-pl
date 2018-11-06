@@ -4,24 +4,24 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dbc6cfc22e887ec9866586be50ffe807f3a4cbba
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: 04cafed6317bd17f08e6b09a7f0b42b2cb2e20c7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399896"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026676"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
 >*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Masz pytanie dotyczące usługi Azure Information Protection lub usługi Azure Rights Management (Azure RMS)? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
+Masz pytanie dotyczące usługi Azure Information Protection, lub ochrony usługi Rights Management (Azure RMS)? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
 
 Te strony — często zadawane pytania są regularnie aktualizowana, a nowe informacje będą publikowane w comiesięcznych ogłoszeniach o aktualizacji dokumentacji na [blog techniczny usługi Azure Information Protection](https://aka.ms/AIPblog).
 
@@ -47,6 +47,10 @@ Użytkownik musi mieć prawidłową nazwę użytkownika i hasło dostępu do zaw
 Zapoznaj się z listą funkcji i informacje o subskrypcji na [cennika usługi Azure Information Protection](https://azure.microsoft.com/en-us/pricing/details/information-protection) strony. 
 
 Jeśli masz subskrypcję usługi Office 365, która obejmuje ochronę danych usługi Azure Rights Management, Pobierz [arkusz danych dotyczący licencjonowania usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf), który zawiera również niektóre często zadawane pytania dotyczące licencjonowania.
+
+## <a name="ive-just-got-my-azure-information-protection-subscriptionhow-do-i-get-going"></a>Po prostu mam subskrypcję usługi Azure Information Protection, jak zacząć?
+
+Jeśli jesteś nowym użytkownikiem usługi Azure Information Protection i zależy od razu, przejdź do naszego [przewodników Szybki Start](quickstart-viewpolicy.md) pierwszy, a następnie przejrzyj [instrukcje prowadzi dla typowych scenariuszy](how-to-guides.md).
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Czy klient usługi Azure Information Protection służy wyłącznie do obsługi subskrypcji, które obejmują klasyfikowanie i etykietowanie?
 
@@ -84,9 +88,9 @@ Dodatkowe kwestie, na które należy zwrócić uwagę:
 
 Tak. Mimo, że usługa Azure Information Protection jest rozwiązaniem opartym na chmurze, może służyć do klasyfikacji, etykietowania oraz ochrony dokumentów i wiadomości e-mail, które są przechowywane lokalnie oraz w chmurze.
 
-Jeśli używasz programu Exchange Server, SharePoint Server oraz serwerów plików systemu Windows, możesz wdrożyć [łącznik usługi Rights Management](deploy-rms-connector.md), by serwery te lokalne mogły używać usługi Azure Rights Management do ochrony wiadomości e-mail i dokumentów. Można także przeprowadzić synchronizację i federację kontrolerów domeny usługi Active Directory z usługą Azure AD, aby usprawnić środowisko uwierzytelniania dla użytkowników, na przykład za pomocą programu [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
+W przypadku programu Exchange Server, SharePoint Server i Windows, serwerów plików, można wdrożyć [łącznika usługi Rights Management](deploy-rms-connector.md) tak, aby te serwery lokalne, można użyć usługi Azure Rights Management do ochrony wiadomości e-mail i dokumenty. Można także przeprowadzić synchronizację i Federację kontrolerów domeny usługi Active Directory z usługą Azure AD, aby usprawnić środowisko uwierzytelniania dla użytkowników, na przykład za pomocą [program Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
-Usługa Azure Rights Management automatycznie generuje certyfikaty XrML i zarządza nimi zgodnie z wymaganiami, dlatego nie korzysta z lokalnej infrastruktury kluczy publicznych. Aby uzyskać więcej informacji o używaniu certyfikatów przez usługę Azure Rights Management, zobacz sekcję [Wskazówki dotyczące działania usługi Azure RMS: pierwsze użycie, ochrona zawartości, zużycie zawartości](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) w artykule [Jak działa usługa Azure RMS?](./how-does-it-work.md).
+Usługa Azure Rights Management automatycznie generuje i zarządza certyfikaty XrML zgodnie z wymaganiami, dlatego nie korzysta z lokalnej infrastruktury kluczy publicznych. Aby uzyskać więcej informacji o używaniu certyfikatów przez usługę Azure Rights Management, zobacz [wskazówki dotyczące działania usługi Azure RMS: pierwsze użycie, ochrona zawartości, zużycie zawartości](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) sekcji [jak działa usługa Azure RMS?](./how-does-it-work.md) artykuł.
 
 ## <a name="what-types-of-data-can-azure-information-protection-classify-and-protect"></a>Jakie typy danych można usługi Azure Information Protection klasyfikować i chronić?
 
@@ -158,7 +162,7 @@ Różnych krajów mają różne wymagania i przepisów. Aby pomóc w odpowiedzi 
 
 Aby zobaczyć, jak usługi Azure Information Protection mogą ułatwić osiągnięcie ogólne rozporządzenie o ochronie danych (RODO), zobacz następujący wpis na blogu, z wideo: [365 firmy Microsoft zapewnia pomoc z rozporządzeniem GDPRstrategiiochronyinformacji](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr).
 
-## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>Gdzie można znaleźć dodatkowe informacje na temat usługi Azure Information Protection dotyczące na przykład kwestii prawnych oraz związanych ze zgodnością i umowami SLA?
+## <a name="where-can-i-find-supporting-information-for-azureinformation-protectionsuch-as-legal-compliance-and-slas"></a>Gdzie można znaleźć dodatkowe informacje na temat usługi Azure Information Protection — takich jak prawnych, zgodności i umów SLA?
 Zobacz [Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection](./compliance.md).
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Jak zgłosić problem lub wysłać opinię dotyczącą usługi Azure Information Protection?

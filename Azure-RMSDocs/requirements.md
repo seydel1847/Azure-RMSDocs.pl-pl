@@ -4,18 +4,18 @@ description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
+ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473821"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51020058"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -44,7 +44,7 @@ Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na t
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), musisz również skonfigurować integrację katalogów.
+Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), należy skonfigurować także Integracja katalogu.
 
 Logowanie jednokrotne (SSO) jest obsługiwana dla usługi Azure Information Protection, dzięki czemu użytkownicy nie będą regularnie monitowani o podanie poświadczeń. Jeśli używasz innego dostawcy rozwiązania do Federacji, skontaktuj się z danym dostawcą jak skonfigurować go do usługi Azure AD. WS-Trust jest typowym wymogiem dla tych rozwiązań do obsługi logowania jednokrotnego. 
 
@@ -112,8 +112,6 @@ Jeśli zapora lub podobne pośredniczące urządzenie, które są skonfigurowane
 
 Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z poniższych uwag dotyczących usługi Azure Information Protection:
 
-- Zezwalaj na ruch HTTPS na porcie TCP 443 do **informationprotection.hosting.portal.azure.net**.
-
 - Jeśli używasz internetowego serwera proxy, który wymaga uwierzytelniania, musisz skonfigurować go do korzystania ze zintegrowanego uwierzytelniania systemu Windows przy użyciu poświadczeń logowania usługi Active Directory użytkownika.
 
 - Nie przerywaj połączenia TLS między klientem a usługą (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do **aadrm.com** adresu URL. Spowoduje to przerwanie przypinania, czy klienci usługi RMS za pomocą zarządzanych przez firmę Microsoft urzędów certyfikacji do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
@@ -140,9 +138,9 @@ Aby uzyskać informacje o dodatkowych wymaganiach dla tego scenariusza, zobacz [
 
 Następujący scenariusz wdrażania nie jest obsługiwana tylko w przypadku korzystania z usług AD RMS dla [ochrony HYOK](configure-adrms-restrictions.md) za pomocą usługi Azure Information Protection (Konfiguracja "hold your own key"):
 
-- Uruchamianie usług AD RMS i Azure RMS równocześnie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem zawartym w temacie [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
+- Uruchamianie usług AD RMS i Azure RMS obok siebie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem w [Migrowanie z usług AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx) i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
+Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx)i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
 
 
 

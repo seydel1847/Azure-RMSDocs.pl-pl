@@ -4,18 +4,18 @@ description: Skorzystaj z tych procedur, aby przygotować się do wdrożenia us�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d1a63ac3ea5fae9782588b1779d7c7950738e23
-ms.sourcegitcommit: 3b41a6e730fa40660a2bdf5b1a73d155c87aacc2
+ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48834610"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026829"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Plan wdrażania usługi Azure Information Protection
 
@@ -23,7 +23,7 @@ ms.locfileid: "48834610"
 
 Wykonaj następujące kroki, zalecenia, aby pomóc w przygotowaniu, wdrożenia i zarządzania usługi Azure Information Protection dla swojej organizacji.
 
-Jeśli jednak chcesz szybko wypróbować usługę Azure Information Protection we własnym zakresie zamiast wdrażać ją w środowisku produkcyjnym, zobacz [Samouczek Szybki start dotyczący usługi Azure Information Protection](./infoprotect-quick-start-tutorial.md).
+Jednak jeśli szukasz instrukcji oparte na scenariuszach, zobacz [przewodniki z instrukcjami dla typowych scenariuszy korzystających z usługi Azure Information Protection](how-to-guides.md).
 
 > [!NOTE]
 > Jeśli szukasz plan wersji produktu, zobacz nasze [informacji o nowych wersjach i aktualizacjach](information-support.md#information-about-new-releases-and-updates) sekcji.
@@ -32,7 +32,7 @@ Jeśli jednak chcesz szybko wypróbować usługę Azure Information Protection w
 
 ### <a name="identify-your-deployment-roadmap"></a>Zidentyfikuj plan wdrożenia
 
-Przed wykonaniem poniższe kroki, aby wdrożyć usługę Azure Information Protection, upewnij się, że użytkownik przejrzał [wymagania dotyczące usługi Azure Information Protection](./requirements.md).
+Przed zaimplementowaniem dowolne z następujących czynności, aby wdrożyć usługę Azure Information Protection, upewnij się, że użytkownik przejrzał [wymagania dotyczące usługi Azure Information Protection](./requirements.md).
 
 Następnie wybierz plan wdrożenia, który jest odpowiedni dla Twojej organizacji i uwzględnia [funkcje i subskrypcji](https://azure.microsoft.com/pricing/details/information-protection/) potrzebne:
 
@@ -59,7 +59,7 @@ Aby uzyskać więcej informacji, zobacz artykuł [Przygotowywanie użytkowników
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>Krok 3: Skonfigurowanie i wdrożenie funkcji klasyfikacji i etykietowania
 
 > [!TIP]
-> **Opcjonalne, ale zalecane**: zaleca się wdrożenie [skanera usługi Azure Information Protection](deploy-aip-scanner.md) do wykrywania poufnych informacji masz na swoich magazynów danych lokalnych. Informacje, że znajduje skaner może pomóc w taksonomii klasyfikacji, zapewniają cenne informacje o jakie etykiety należy i pliki, które należy chronić.
+> **Opcjonalne, ale zalecane**: należy wziąć pod uwagę wdrażanie skanera usługi Azure Information Protection, aby dowiedzieć się, jakie informacje poufne na swoich magazynów danych lokalnych. Mamy [Szybki Start](quickstart-findsensitiveinfo.md) , opisano w tym scenariuszu. Informacje, że znajduje skaner może pomóc w taksonomii klasyfikacji, zapewniają cenne informacje o jakie etykiety należy i pliki, które należy chronić.
 > 
 > Skaner można skonfigurować do wyszukiwania typów dobrze znanych informacji poufnych w lokalnych plików w systemie Windows Server, pliki w udziałach sieciowych i plikami w lokalnej wersji programu SharePoint. Ponieważ ta konfiguracja nie wymaga konfigurowania etykiet lub nawet mieć taksonomii klasyfikacji zdefiniowane, uruchomieniem skanera w ten sposób nadaje się do tej bardzo wczesnym etapie wdrażania. Umożliwia także ta konfiguracja skaner równolegle z poniższej procedury wdrażania, do momentu skonfigurowania warunków dla etykiety.
 
@@ -151,7 +151,7 @@ Uwaga: Nie przypisuj ręcznie licencji użytkownika z bezpłatnej subskrypcji us
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>Krok 2: Przygotowanie dzierżawy do używania usługi Azure Information Protection
 Przed rozpoczęciem korzystania z usług ochrony usługi Azure Information Protection, należy wykonać następujące przygotowania:
 
-1. Upewnij się, że dzierżawa usługi Office 365 obejmuje konta użytkowników i grupy, które będą używane przez usługę Azure Information Protection do uwierzytelniania i autoryzowania użytkowników z organizacji. W razie potrzeby utwórz to konto i grupy lub zsynchronizuj je z katalogu lokalnego. Aby uzyskać więcej informacji, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
+1. Upewnij się, że dzierżawa usługi Office 365 obejmuje konta użytkowników i grupy, które będą używane przez usługę Azure Information Protection do uwierzytelniania i autoryzowania użytkowników z Twojej organizacji. W razie potrzeby utwórz to konto i grupy lub zsynchronizuj je z katalogu lokalnego. Aby uzyskać więcej informacji, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
 2. Określ, czy Twoim kluczem dzierżawy powinna zarządzać firma Microsoft (opcja domyślna), czy też chcesz wygenerować klucz dzierżawy i zarządzać nim samodzielnie (opcja nazywana „przynieś własny klucz”, BYOK). Aby uzyskać więcej informacji, zobacz [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 

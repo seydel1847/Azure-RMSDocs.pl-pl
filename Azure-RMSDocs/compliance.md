@@ -1,6 +1,6 @@
 ---
 title: Zgodność i informacje dotyczące usługi Azure Information Protection
-description: Dodatkowe informacje na temat usługi Azure Information Protection dotyczące na przykład kwestii prawnych, zgodności i umów SLA.
+description: Dodatkowe informacje na temat usługi Azure Information Protection, na przykład kwestii prawnych, zgodności i umów SLA.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e7c6c078d992bc4d3be9480227715be2157178f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0269888af84f4f1b17ce5523bb5bbc8648d0d1a7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150793"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026710"
 ---
-# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Zgodność i informacje dodatkowe dotyczące usługi Azure Information Protection
+# <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Zgodność i dodatkowe informacje na temat usługi Azure Information Protection
 
-Usługa Azure Information Protection obsługuje inne usługi i korzysta z nich. Jeśli szukasz informacji związanych z usługą Azure Information Protection, ale niedotyczących sposobu korzystania z usługi Azure Information Protection, sprawdź następujące zasoby:
+Usługa Azure Information Protection obsługuje inne usługi, a także opiera się na inne usługi. Jeśli szukasz informacji związanych z usługą Azure Information Protection, ale niedotyczących sposobu korzystania z usługi Azure Information Protection, sprawdź następujące zasoby:
 
 ## <a name="suitability-for-different-countries"></a>Przydatności do różnych krajów
 
@@ -39,15 +39,15 @@ Jednak niektóre istotne informacje, które mogą pomóc Twojej doradca prawny w
 
 ## <a name="legal-and-privacy"></a>Informacje prawne i ochrona prywatności
 
-- Informacje o umowie dotyczącej usług Microsoft Azure: [Umowa dotycząca usług Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- Aby uzyskać informacje o umowach Microsoft Azure: [umowę Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- Informacje o ochronie prywatności w usługach Microsoft Azure: [Zasady zachowania poufności informacji usług Microsoft Azure](http://azure.microsoft.com/support/legal/privacy-statement/)
+- Aby uzyskać informacje o ochronie prywatności Microsoft Azure: [Microsoft Azure — zasady zachowania poufności informacji](http://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>Zabezpieczenia, zgodność i inspekcja
 
-Zobacz sekcję dotyczącą [wymagań związanych z zabezpieczeniami, zgodnością i przepisami](./azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](./azure-rms-problems-it-solves.md), aby poznać informacje o poszczególnych certyfikatach usługi Azure Rights Management. Ponadto:
+Zobacz sekcję dotyczącą [wymagań związanych z zabezpieczeniami, zgodnością i przepisami](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](./azure-rms-problems-it-solves.md), aby poznać informacje o poszczególnych certyfikatach usługi Azure Rights Management. Ponadto:
 
-- Zewnętrzne certyfikaty usługi Azure Information Protection: [Centrum zaufania systemu Microsoft Azure](http://azure.microsoft.com/support/trust-center/)
+- Zewnętrzne certyfikaty usługi Azure Information Protection: [Microsoft Azure Trust Center](http://azure.microsoft.com/support/trust-center/)
 
 - Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
 
@@ -63,7 +63,7 @@ Szczegółowe informacje techniczne dotyczące sposobu działania technologii oc
 
 ## <a name="documentation"></a>Dokumentacja
 
-- Dokumentacja usługi Azure Active Directory: [Azure Active Directory](/active-directory/)
+- Dokumentacja usługi Azure Active Directory: [usługi Azure Active Directory](/active-directory/)
 
-- Biblioteka usługi Office 365: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+- Biblioteka usługi Office 365: [usługi Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 

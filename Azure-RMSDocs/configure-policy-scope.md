@@ -4,18 +4,18 @@ description: Aby skonfigurować inne ustawienia i etykiety dla poszczególnych u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b40431632d02445d12e1faac012c28c1b1e6f8e2
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169961"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026574"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Konfigurowanie zasad usługi Azure Information Protection odnoszących się do konkretnych użytkowników przy użyciu zasad o określonym zakresie
 
@@ -57,5 +57,5 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uru
 
 ## <a name="next-steps"></a>Kolejne kroki
 
-Aby uzyskać przykład konfigurowania zasad domyślnych i zobaczyć efekty w aplikacji pakietu Office, wypróbuj [Samouczek Szybki start dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Na przykład jak dostosować domyślne zasady i zobaczyć efekty w aplikacji pakietu Office, spróbuj [edytować zasady i Utwórz nową etykietę](infoprotect-quick-start-tutorial.md) samouczka.
 
