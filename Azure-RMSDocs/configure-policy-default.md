@@ -4,16 +4,15 @@ description: Dowiedz się, w jaki sposób są skonfigurowane domyślne zasady us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 11/06/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 0b985b3901924c3a22a167a26799a7cffb9c500a
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026846"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223980"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>Domyślne zasady usługi Azure Information Protection
 
@@ -21,19 +20,19 @@ ms.locfileid: "51026846"
 
 Skorzystaj z poniższych informacji, aby poznać, jak są skonfigurowane domyślne zasady usługi Azure Information Protection.
 
-Gdy administrator po raz pierwszy łączy się z usługą Azure Information Protection przy użyciu witryny Azure Portal, zostaną utworzone zasady domyślne dla tej dzierżawy. Od czasu do czasu firma Microsoft może wprowadzić zmiany w zasadach domyślnych, ale jeśli usługa była już używana przed zmianą zasad domyślnych, poprzednia wersja zasad domyślnych nie zostanie zaktualizowana, ponieważ mogły one zostać skonfigurowane i wdrożone do środowiska produkcyjnego przez użytkownika.
+Gdy administrator najpierw łączy się z usługą Azure Information Protection przy użyciu witryny Azure portal, domyślne zasady usługi Azure Information Protection dla tej dzierżawy jest tworzony. Od czasu do czasu Microsoft może wprowadzić zmiany w tym zasady domyślne, ale jeśli usługa była już używana, przed zmianą zasad domyślnych, poprzednia wersja zasad domyślnych usługi Azure Information Protection nie zostanie zaktualizowany, ponieważ może być skonfigurowane i wdrożone w środowisku produkcyjnym.
 
-Możesz odwołać się do poniższych wartości, aby powrócić do ustawień domyślnych zasad, lub zaktualizować zasady do najnowszych wartości.
+Możesz odwoływać się następujące wartości, aby przywrócić ustawienia domyślne zasady usługi Azure Information Protection lub aktualizacji zasad usługi Azure Information Protection do najnowszych wartości.
 
 ## <a name="current-default-policy"></a>Bieżące zasady domyślne
 
-Ta wersja zasad domyślnych pochodzi od 31 lipca 2017 r.
+Ta wersja domyślne zasady usługi Azure Information Protection jest od 31 lipca 2017 r.
 
-Ta zasada domyślna jest tworzony po aktywowaniu usługi Azure Rights Management, co ma miejsce dla nowych dzierżaw, począwszy od lutego 2018 r. Aby uzyskać więcej informacji, zobacz wpis na blogu [ulepszenia ochrony stosu usługi Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection).
+Utworzono zasadę domyślną usługi Azure Information Protection, po aktywowaniu usługi Azure Rights Management, co ma miejsce dla nowych dzierżaw, począwszy od lutego 2018 r. Aby uzyskać więcej informacji, zobacz wpis na blogu [ulepszenia ochrony stosu usługi Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection).
 
-Ta zasada domyślna tworzona jest również w przypadku ręcznie [aktywacji usługi](activate-service.md) przed utworzeniem zasad. 
+Zasadę domyślną usługi Azure Information Protection jest tworzona, jeśli trzeba ręcznie [aktywacji usługi](activate-service.md) przed usługi Azure Information Protection zasady zostały utworzone. 
 
-Jeśli usługa nie została aktywowana, domyślne zasady nie konfiguruje ochronę następujących etykiet podrzędnych:
+Jeśli usługa nie została aktywowana, domyślne zasady usługi Azure Information Protection nie konfiguruje ochronę następujących etykiet podrzędnych:
 
 - **Poufne\Wszyscy pracownicy**
 
@@ -43,11 +42,11 @@ Jeśli usługa nie została aktywowana, domyślne zasady nie konfiguruje ochron�
 
 - **Wysoce poufne \ tylko adresaci** 
 
-Podczas tych etykiet podrzędnych nie są automatycznie skonfigurowany do ochrony, domyślne zasady pozostaje taka sama jak [poprzednie zasady domyślne](#default-policy-before-july-31-2017).
+Podczas tych etykiet podrzędnych nie są automatycznie skonfigurowany do ochrony, domyślne zasady usługi Azure Information Protection pozostaje taka sama jak [poprzednie zasady domyślne](#default-policy-before-july-31-2017).
 
 Gdy ochrona jest stosowana do **wszyscy pracownicy** etykiet podrzędnych, ochrona jest konfigurowana przy użyciu szablonów domyślnych, które są automatycznie konwertowane do etykiet w witrynie Azure portal. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
-Począwszy od 30 sierpnia 2017 r. Ta wersja zasad domyślnych zawiera wersje wielojęzycznych nazwy etykiet i opisy. 
+Począwszy od 30 sierpnia 2017 r. Ta wersja domyślne zasady usługi Azure Information Protection zawiera wersje wielojęzycznych nazwy etykiet i opisy. 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>Więcej informacji na temat etykietę podrzędną tylko adresaci
 

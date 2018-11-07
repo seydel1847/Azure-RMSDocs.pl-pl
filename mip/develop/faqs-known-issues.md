@@ -1,21 +1,23 @@
 ---
 title: Często zadawane pytania i znane problemy — zestaw SDK usługi Microsoft Information projekcji.
-description: Często zadawane pytania ochronę informacji firmy Microsoft (MIP) zestawu SDK i wskazówki dotyczące rozwiązywania problemów, znanych problemów.
+description: Często zadawane pytania ochronę informacji firmy Microsoft (MIP) zestawu SDK i wskazówki dotyczące rozwiązywania problemów dotyczących problemów i błędów.
 author: BryanLa
 ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 10/19/2018
 ms.author: bryanla
-ms.openlocfilehash: cb3bdd6f2d9328a57156580f3d345d25983fccad
-ms.sourcegitcommit: cc65c3851d4b8169a1a62c83afaf0f75402f7631
+ms.openlocfilehash: f213b31d9b0e41ea9c1e076055a90e9f62b31b3a
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49476446"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223929"
 ---
-# <a name="microsoft-information-protection-mip-sdk-faqs-and-known-issues"></a>Często zadawane pytania ochronę informacji firmy Microsoft (MIP) zestawu SDK i znane problemy
+# <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Często zadawane pytania ochronę informacji firmy Microsoft (MIP) zestawu SDK i problemów
 
-## <a name="frequently-asked-questions-faqs"></a>Często zadawane pytania (FAQ)
+Ten artykuł zawiera odpowiedzi na często zadawane pytania (FAQ) i wskazówki dotyczące rozwiązywania problemów, znanych problemów i typowych błędów.
+
+## <a name="frequently-asked-questions"></a>Często zadawane pytania 
 
 ### <a name="question-which-platforms-are-supported-by-the-mip-sdk"></a>Pytanie: które platformy są obsługiwane przez zestaw SDK MIP?
 
@@ -33,7 +35,13 @@ Zestaw SDK ma być używany dla wielu platform i używa [UTF-8 (Unicode Transfor
 | .NET | Dla zestawu .NET SDK klientów wszystkie ciągi używane, kodowanie domyślne UTF-16 i jest potrzebne nie specjalne konwersji. Konwersja z UTF-16 odbywa się wewnętrznie przez zestaw SDK MIP. |
 | Inne platformy | Inne platformy obsługiwane przez zestaw SDK MIP zapewniają natywnej obsługi programu UTF-8. |
 
-## <a name="known-issues"></a>Znane problemy
+## <a name="issues-and-errors-reference"></a>Odwołanie do problemów i błędów
+
+### <a name="error-file-format-not-supported"></a>Błąd: "format pliku nie jest obsługiwany"  
+
+| Error | Rozwiązanie |
+|-|-|
+|*Nieobsługiwany format pliku*| Ten wyjątek jest wynikiem próby ochrony lub pliku PDF, który został podpisany cyfrowo etykiety lub chroniony hasłem. Zobacz [nową obsługę szyfrowania plików PDF z Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757) Aby uzyskać więcej informacji na temat ochrony i etykietowania plików PDF.|
 
 ### <a name="error-failed-to-parse-the-acquired-compliance-policy"></a>Błąd: "nie można przeanalizować zasad nabywane zgodności"  
 
@@ -41,4 +49,4 @@ Pobrać zestaw SDK MIP i uruchomiono przykładowych aplikacji. Spróbuj wyświet
 
 | Error | Rozwiązanie |
 |-|-|
-|*Wystąpił problem: nie można przeanalizować uzyskano zasad zgodności. Nie powiodło się: [klasy mip::CompliancePolicyParserException] tagów nie można odnaleźć: zasady, element NodeType: 15, nazwa: nie znaleziono nazwy, wartość:, elementów nadrzędnych: <SyncFile> <Content>, correlationId: [34668a40-blll-4ef8-b2af-00005aa674z9]*| Oznacza to, że etykiety nie migrację z usługi Azure Information Protection, do ujednoliconego środowiska etykietowania! Postępuj zgodnie z [jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](/azure/information-protection/configure-policy-migrate-labels) migracji etykiet, następnie utworzyć zasadę etykiety w Centrum zgodności i zabezpieczeń usługi Office 365. Po zakończeniu tej operacji plik zostanie pomyślnie uruchomiona.|
+|*Wystąpił problem: nie można przeanalizować uzyskano zasad zgodności. Nie powiodło się: [klasy mip::CompliancePolicyParserException] tagów nie można odnaleźć: zasady, element NodeType: 15, nazwa: nie znaleziono nazwy, wartość:, elementów nadrzędnych: <SyncFile> <Content>, correlationId: [34668a40-blll-4ef8-b2af-00005aa674z9]*| Oznacza to, że etykiety nie migrację z usługi Azure Information Protection, do ujednoliconego środowiska etykietowania. Postępuj zgodnie z [jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](/azure/information-protection/configure-policy-migrate-labels) migracji etykiet, następnie utworzyć zasadę etykiety w Centrum zgodności i zabezpieczeń usługi Office 365. Po zakończeniu tej operacji plik zostanie pomyślnie uruchomiona.|

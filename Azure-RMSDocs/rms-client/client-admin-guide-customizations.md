@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: beac842cdb8cfde5b3a209f3e37084828d3df7ba
-ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
+ms.openlocfilehash: 62d53acd482b9efdd0425d5a944d2241f8a33b30
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915584"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223997"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -40,6 +40,25 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 5. Upewnij się, że użytkownicy tych zasad, uruchom ponownie wszystkie otwarte wcześniej aplikacje pakietu Office.
 
 6. Jeśli nie potrzebujesz już danego ustawienia i chcesz przywrócić zachowanie domyślne: w bloku **Ustawienia zaawansowane** wybierz menu kontekstowe (**...**) obok ustawienia, które przestało być potrzebne, a następnie wybierz opcję **Usuń**. Następnie kliknij przycisk **Zapisz i Zamknij**.
+
+#### <a name="available-advanced-client-settings"></a>Dostępne zaawansowane ustawienia klienta
+
+|Ustawienie|Scenariusz i instrukcje|
+|----------------|---------------|
+|DisableDNF|[Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook](#hide-or-show-the-do-not-forward-button-in-outlook)|
+|EnableBarHiding|[Trwałe ukrycie paska usługi Azure Information Protection](#permanently-hide-the-azure-information-protection-bar)|
+|EnableCustomPermissions|[Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
+|EnablePDFv2Protection|[Ochrona plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
+|LabelbyCustomProperty|[Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|OutlookDefaultLabel|[Ustaw różne etykiety domyślne dla programu Outlook](#set-a-different-default-label-for-outlook)|
+|OutlookRecommendationEnabled|[Włącz zalecana klasyfikacja w programie Outlook](#enable-recommended-classification-in-outlook)|
+|PostponeMandatoryBeforeSave|[Usuń "Nie now" dla dokumentów, jeśli używasz obowiązkowego etykietowania](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
+|ProcessUsingLowIntegrity|[Wyłącz poziom o niskiej integralności skanera](#disable-the-low-integrity-level-for-the-scanner)|
+|RemoveExternalContentMarkingInApp|[Usuwanie nagłówków i stopek z innych rozwiązań etykietowania](#remove-headers-and-footers-from-other-labeling-solutions)|
+|ReportAnIssueLink|[Modyfikowanie adresu e-mail dla raportu, łącze problem](#modify-the-email-address-for-the-report-an-issue-link)|
+|RunPolicyInBackground|[Włącz klasyfikacji, aby uruchomić w sposób ciągły w tle](#turn-on-classification-to-run-continuously-in-the-background)|
+|SyncPropertyName|[Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej](#label-an-office-document-by-using-an-existing-custom-property)|
+|SyncPropertyState|[Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej](#label-an-office-document-by-using-an-existing-custom-property)|
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Zapobieganie monitom o logowanie dla komputerów korzystających tylko z usługi AD RMS
 
