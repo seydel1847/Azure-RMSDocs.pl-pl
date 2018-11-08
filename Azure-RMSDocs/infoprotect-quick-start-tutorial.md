@@ -4,15 +4,15 @@ description: Samouczek wprowadzający, który umożliwia edycję zasad usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/07/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: b3d799408d0e337bc17598d14c4c973102fed784
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 9e5fb752e75a6b6616fa0ef347c6a6102cd859fa
+ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026812"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273603"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>Samouczek: Edytowanie zasad usługi Azure Information Protection i tworzenie nowej etykiety
 
@@ -20,7 +20,7 @@ ms.locfileid: "51026812"
 
 W tym samouczku dowiesz się, jak:
 > [!div class="checklist"]
-> * Zmień dwa ustawienia zasad
+> * Konfigurowanie ustawień zasad
 > * Tworzenie nowej etykiety 
 > * Konfigurowanie etykiety pod kątem oznaczeń wizualnych, zaleca się klasyfikacji i ochrony
 > * Zobacz swoje ustawienia i etykiety w działaniu
@@ -73,17 +73,19 @@ Przy użyciu portalu Azure, firma Microsoft będzie najpierw zmienić kilka usta
 
 2. Wybierz **klasyfikacje** > **zasady** > **Global** otworzyć **zasady: globalne** bloku. 
 
-3. Znajdź ustawienia zasad po etykietach, w **Konfiguruj ustawienia wyświetlania i Zastosuj Information Protection, użytkownicy końcowi** sekcji. Zanotuj bieżące ustawienia. Jeśli te ustawienia nie zostały zmienione od ich wartości domyślne, zostanie wyświetlony, nie jest domyślne etykiety, dokumentów i wiadomości e-mail nie muszą mieć etykietę i użytkownicy nie muszą uzasadniać zmiany etykiet:
+3. Znajdź ustawienia zasad po etykietach, w **Konfiguruj ustawienia wyświetlania i Zastosuj Information Protection, użytkownicy końcowi** sekcji. 
     
-    ![Samouczek usługi Azure Information Protection — zasady domyślne](./media/info-protect-policy-default-settings.png)
+    Zanotuj jak aktualnie skonfigurowanych ustawień. W szczególności ustawienia **wybierz etykietę domyślną** i **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**. Przykład:
     
-    Zmienimy kilka ustawień zasad, aby zobaczyć, jak działają.
+    ![Samouczek usługi Azure Information Protection — ustawienia zasad, aby zmienić](./media/info-protect-policy-default-settings.png)
+    
+    Użyjemy tych ustawień zasad w dalszej części tego samouczka, gdy będą one widoczne w działaniu.
 
 4. Aby uzyskać **wybierz etykietę domyślną**, wybierz opcję **ogólne**. 
 
     Jeśli nie masz tej etykiety, ponieważ masz starszą wersję zasad, wybierz **Wewnętrzne** jako równoważną etykietę.
 
-5. Aby uzyskać **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, ustaw tę opcję na **na**.
+5. Dla **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, ustaw tę opcję na **na** , jeśli nie jest jeszcze.
 
 6. Ponadto upewnij się, że **wyświetlany pasek Information Protection w aplikacjach pakietu Office** ustawiono **na**.
 
@@ -103,7 +105,7 @@ Teraz utworzymy nowe etykiety podrzędnej, aby uzyskać **poufne**.
 
 3. W sekcji **Ustaw uprawnienia do dokumentów i wiadomości e-mail zawierających tę etykietę** wybierz pozycję **Chroń**, a następnie **Ochrona**:
     
-    ![Ochrony skonfigurowane dla etykiety usługi Azure Information Protection](./media/info-protect-protection-bar-configured.png) 
+    ![Konfigurowania etykiety usługi Azure Information Protection do ochrony](./media/info-protect-protection-bar-configured.png) 
     
 4. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone. Ta opcja używa usługi Azure Rights Management do ochrony dokumentów i wiadomości e-mail. Ponadto upewnij się, że **Set Permissions** opcja jest zaznaczona. Następnie wybierz pozycję **Dodaj uprawnienia**.
 
@@ -141,11 +143,13 @@ Teraz utworzymy nowe etykiety podrzędnej, aby uzyskać **poufne**.
     
     a. **Wybierz typ warunku**: Zachowaj wartość domyślną **typów informacji**.
     
-    b. W **wybierz typy informacji** pole wyszukiwania: typ **numer karty kredytowej**. W wynikach wyszukiwania wybierz **numer karty kredytowej**.
+    b. Aby uzyskać **Wybierz branżę**: Zachowaj wartość domyślną **wszystkich**.
     
-    c. **Minimalna liczba wystąpień**: zachowaj ustawienie domyślne **1**.
+    c. W **wybierz typy informacji** pole wyszukiwania: typ **numer karty kredytowej**. W wynikach wyszukiwania wybierz **numer karty kredytowej**.
     
-    d. **Zliczaj tylko wystąpienia o unikatowych wartościach**: zachowaj wartość domyślną **Wł**.
+    d. **Minimalna liczba wystąpień**: zachowaj ustawienie domyślne **1**.
+    
+    e. **Zliczaj tylko wystąpienia o unikatowych wartościach**: zachowaj wartość domyślną **Wł**.
     
     ![Samouczek usługi Azure Information Protection — Konfigurowanie warunku karty kredytowej](./media/step2-configure-condition.png)
     
@@ -157,7 +161,7 @@ Teraz utworzymy nowe etykiety podrzędnej, aby uzyskać **poufne**.
 
 11. Aby uzyskać **wybierz sposób stosowania tej etykiety**: Zachowaj wartość domyślną **zalecane**, a nie zmieniaj domyślnej wskazówki zasad. 
 
-12. W polu **Wprowadź informacje dla celów wewnętrznych** wpisz **Tylko do testów**.
+12. W **Dodaj notatki przeznaczone dla administratorów** wpisz **tylko do celów testowych**.
 
 13. Kliknij przycisk **Zapisz** na tym **etykietę podrzędną** bloku. Jeśli zostanie wyświetlony monit o potwierdzenie, kliknij przycisk **OK**. Nowa etykieta jest utworzona i zapisana, ale jeszcze nie zostały dodane do zasad.
 
@@ -169,7 +173,7 @@ Teraz utworzymy nowe etykiety podrzędnej, aby uzyskać **poufne**.
 
     ![Samouczek usługi Azure Information Protection — nowe etykiety podrzędnej](./media/info-protect-policy-configuredv2.png)
     
-    Zobaczysz również, czy ustawienia zostały skonfigurowane wraz ze zmianami etykiety domyślnej i uzasadnieniem:
+    Zobaczysz również, że ustawienia są skonfigurowane dla etykiety domyślnej i uzasadnieniem:
     
     ![Samouczek usługi Azure Information Protection — skonfigurowane ustawienia](./media/info-protect-settings-configuredv2.png)
     
@@ -196,35 +200,35 @@ Otwórz nowy dokument programu Word. Ponieważ klient usługi Azure Information 
 
 ### <a name="to-manually-change-our-default-label"></a>Aby ręcznie zmienić naszą domyślną etykietę
 
-Na pasku usługi Information Protection wybierz ostatnią etykietę i zobacz, jak wyświetlać etykiet podrzędnych:
+1. Na pasku usługi Information Protection wybierz ostatnią etykietę i zobacz, jak wyświetlać etykiet podrzędnych:
+    
+    ![Samouczek usługi Azure Information Protection — Zobacz etykiet podrzędnych](./media/info-protect-sub-labelsv2.png)
 
-![Samouczek usługi Azure Information Protection — Zobacz etykiet podrzędnych](./media/info-protect-sub-labelsv2.png)
+2. Wybierz jedną z tych etykiet podrzędnych, i zobacz, jak inne etykiety nie są już wyświetlane na pasku po tym samym etykietę dla tego dokumentu. **Czułości** zmiany wartości, aby wyświetlić etykiety i etykiety podrzędnej, nazwij analogiczna zmiana koloru etykiety. Przykład:
+    
+    ![Samouczek usługi Azure Information Protection — wybrano etykietę podrzędną](./media/info-protect-sub-label-selectedv2.png)
 
-Wybierz jedną z tych etykiet podrzędnych, i zobacz, jak inne etykiety nie są już wyświetlane na pasku po tym samym etykietę dla tego dokumentu. **Czułości** zmiany wartości, aby wyświetlić etykiety i etykiety podrzędnej, nazwij analogiczna zmiana koloru etykiety. Przykład:
+3. Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok aktualnie wybranej wartości etykiety:
+    
+    ![Samouczek usługi Azure Information Protection — ikona Edytuj etykietę](./media/info-protect-edit-label-selectedv2.png)
+    
+    Ta akcja ponownie wyświetli dostępne etykiety.
 
-![Samouczek usługi Azure Information Protection — wybrano etykietę podrzędną](./media/info-protect-sub-label-selectedv2.png)
-
-Na pasku usługi Information Protection kliknij ikonę **Edytuj etykietę** obok aktualnie wybranej wartości etykiety:
-
-![Samouczek usługi Azure Information Protection — ikona Edytuj etykietę](./media/info-protect-edit-label-selectedv2.png)
-
-Ta akcja ponownie wyświetli dostępne etykiety.
-
-Teraz wybierz pierwszą etykietę **Osobiste**. Ponieważ wybrano etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego one obniżenia poziomu klasyfikacji:
-
-![Samouczek usługi Azure Information Protection — Monituj o potwierdzenia obniżenia](./media/info-protect-lower-justification.png)
-
-Wybierz opcję **Poprzednia etykieta już nie obowiązuje** i kliknij przycisk **Potwierdź**. Wartość opcji **Ważność** zostanie zmieniona na **Osobiste** i pozostałe etykiety zostaną ponownie ukryte.
+4. Teraz wybierz pierwszą etykietę **Osobiste**. Ponieważ wybrano etykiety mającej niższą klasyfikację niż etykieta wcześniej wybrana dla tego dokumentu zostanie wyświetlony monit o uzasadnienie, dlaczego one obniżenia poziomu klasyfikacji:
+    
+    ![Samouczek usługi Azure Information Protection — Monituj o potwierdzenia obniżenia](./media/info-protect-lower-justification.png)
+    
+    Wybierz opcję **Poprzednia etykieta już nie obowiązuje** i kliknij przycisk **Potwierdź**. Wartość opcji **Ważność** zostanie zmieniona na **Osobiste** i pozostałe etykiety zostaną ponownie ukryte.
 
 ### <a name="to-remove-the-classification-completely"></a>Aby całkowicie usunąć klasyfikację
 
-Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykietę**. Zamiast wybierać jedną z etykiet kliknij ikonę **Usuń etykietę**:
-
-![Samouczek usługi Azure Information Protection — ikona usuwania](./media/delete-icon-from-personalv2.png)
-
-Tym razem, gdy zostanie wyświetlony monit, wpisz "ten dokument nie wymaga klasyfikacji" i kliknij przycisk **Potwierdź**.  
-
-Zostanie wyświetlony **czułości** wartością wyświetlaną **Nieustawione**, który jest widoczny dla użytkowników początkowo nowych dokumentów, jeśli nie ustawisz etykiety domyślnej jako ustawienie zasad.
+1. Na pasku o nazwie Information Protection kliknij ponownie ikonę **Edytuj etykietę**. Zamiast wybierać jedną z etykiet kliknij ikonę **Usuń etykietę**:
+    
+    ![Samouczek usługi Azure Information Protection — ikona usuwania](./media/delete-icon-from-personalv2.png)
+    
+2. Tym razem, gdy zostanie wyświetlony monit, wpisz "ten dokument nie wymaga klasyfikacji" i kliknij przycisk **Potwierdź**.  
+    
+    Zostanie wyświetlony **czułości** wartością wyświetlaną **Nieustawione**, który jest widoczny dla użytkowników początkowo nowych dokumentów, jeśli nie ustawisz etykiety domyślnej jako ustawienie zasad.
 
 ### <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>Aby wyświetlić monit zalecający etykietowanie i automatyczne włączanie ochrony
 
@@ -250,10 +254,7 @@ Jeśli nie chcesz zachować zmiany wprowadzone w ramach tego samouczka, wykonaj 
 
 1. Wybierz **klasyfikacje** > **zasady** > **Global** otworzyć **zasady: globalne** bloku.
 
-2. Powrócić do ich oryginalnych wartości, które miały Zanotuj ustawień zasad, a następnie wybierz **Zapisz**. Wartości domyślne:
-    
-    -  **Wybierz etykietę domyślną**: **None**
-    -  **Użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**: **wyłączone**
+2. Powrócić do ich oryginalnych wartości, które miały Zanotuj ustawień zasad, a następnie wybierz **Zapisz**. 
 
 3. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykieta** bloku, wybierz menu kontekstowe (**...**) dla **Finance** utworzonej etykiety.
 

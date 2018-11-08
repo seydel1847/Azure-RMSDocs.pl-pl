@@ -4,19 +4,19 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
-ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
+ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
+ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324895"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273586"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -62,17 +62,25 @@ Aby wygenerować raporty, punkty końcowe Wyślij następujące rodzaje informac
 
 - Etykieta akcji. Na przykład ustawić etykietę, Zmiana etykiety, dodać lub usunąć ochronę, automatycznej i zalecanej etykiety.
 
+- Nazwa etykiety, przed i po wykonaniu akcji etykietę.
+
 - Identyfikator organizacji dzierżawy.
 
 - Identyfikator użytkownika (adres e-mail lub nazwy UPN).
 
-- Ścieżka do pliku i nazwa pliku, dokumentów, które są oznaczone etykietami.
+- Nazwa urządzenia użytkownika.
+
+- W przypadku dokumentów: ścieżka do pliku i nazwę pliku, dokumentów, które są oznaczone etykietami.
+
+- Dla wiadomości e-mail: temat wiadomości e-mail nadawcy wiadomości e-mail i wiadomości e-mail adresaci wiadomości e-mail, które są oznaczone etykietami. 
+
+- Typy informacji poufnych ([wstępnie zdefiniowanych](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) i niestandardowych), zostały wykryte w zawartości.
 
 - Wersja klienta usługi Azure Information Protection.
 
 - Wersja systemu operacyjnego klienta.
 
-Te informacje są przechowywane w obszarze roboczym usługi Azure Log Analytics, którego jesteś właścicielem.
+Te informacje są przechowywane w obszarze roboczym usługi Azure Log Analytics, która należy do użytkownika i mogą być wyświetlane przez użytkowników, którzy mają prawa dostępu do tego obszaru roboczego. Aby uzyskać informacji na temat konfigurowania dostępu do swojego obszaru roboczego, zobacz [Zarządzanie kontami i użytkownikami](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) sekcji w dokumentacji platformy Azure.
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Wymagania wstępne dotyczące analizy usługi Azure Information Protection
 Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne, upewnij się, że zostały spełnione następujące wymagania.

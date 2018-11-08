@@ -4,18 +4,18 @@ description: Zadań administracyjnych w skrócie w witrynie Azure portal, które
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2018
+ms.date: 11/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: fa32a5d00c161d2f6a78acd7cbe45ce00b34660c
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 0f94a36f7653ef4aff590bb6815c75210768f7c5
+ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170148"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51272367"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które były wykonywane przy użyciu klasycznego portalu Azure
 
@@ -33,7 +33,7 @@ Skorzystaj z poniższych informacji, aby ułatwić szybkie przejście do bieżą
 
 |Klasyczny portal Azure|Jak wykonać to zadanie w witrynie Azure portal
 |-----------|--------------------|
-|Dostęp do ustawień konfiguracji po raz pierwszy|1. [Zaloguj się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. W menu Centrum kliknij pozycję **Utwórz zasób**, a następnie, z **MARKETPLACE** listy wybierz **bezpieczeństwo i Obsługa tożsamości**.<br /><br />3. Na **zabezpieczenia i tożsamość** bloku z **POLECANE aplikacje** listy wybierz **usługi Azure Information Protection**. Następnie na **usługi Azure Information Protection** bloku kliknij **Utwórz**.<br /><br />Ta akcja powoduje utworzenie **usługi Azure Information Protection** bloku, aby przy następnym logowaniu do portalu, można wybrać usługę z Centrum **wszystkich usług** listy.
+|Dostęp do ustawień konfiguracji po raz pierwszy|1. [Zaloguj się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. Postępuj zgodnie z instrukcjami dotyczącymi [dostęp do bloku usługi Azure Information Protection po raz pierwszy do](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time).
 |Utwórz nowy szablon|Utwórz etykietę powodującą zastosowanie ochrony, a następnie użyj **Ustaw uprawnienia** zdefiniować uprawnienia, wygaśnięcia i dostęp w trybie offline. <br /><br />Dzieje się w tle ta konfiguracja tworzy nowy szablon niestandardowy, który następnie jest możliwy przez usługi i aplikacje, które integrują się z szablonami usługi Rights Management.<br /><br />Aby uzyskać więcej informacji, zobacz [do utworzenia nowego szablonu](configure-policy-templates.md#to-create-a-new-template).
 |Edytowanie właściwości szablonu: <br /><br />-Nazwę i opis szablonu<br /><br />— Prawa do użytkowania, wygaśnięcia zawartości i ustawień dostępu w trybie offline|Jeśli użytkownik jeszcze tego nie zrobiono, [konwersji szablonu na etykietę](configure-policy-templates.md#to-convert-templates-to-labels), a następnie wykonaj następujące czynności<br /><br />1. Zmień nazwę etykiety i opis<br /><br />2. Zmień ustawienia ochrony na etykiecie, aby zaktualizować uprawnienia, wygaśnięcia i ustawienia dostępu w trybie offline.<br /><br />Aby uzyskać więcej informacji, zobacz [na konfigurowanie etykiety w celu ustawienia ochrony](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Przeprowadzona Archiwizacja szablonu|Ustaw stan etykiet **wyłączone**.
@@ -41,7 +41,7 @@ Skorzystaj z poniższych informacji, aby ułatwić szybkie przejście do bieżą
 |Kopiowanie szablonu|Nie można skopiować szablon w witrynie Azure portal. Jeśli chcesz, aby dwóch etykiet, które mają takie same ustawienia ochrony, należy ustawić uprawnienia dla każdej etykiety. <br /><br />Aby uzyskać więcej informacji, zobacz [na konfigurowanie etykiety w celu ustawienia ochrony](configure-policy-protection.md#to-configure-a-label-for-protection-settings).
 |Usuń szablon|Usuwanie szablonów może spowodować niedostępnych danych, dzięki czemu witryny Azure portal nie obsługuje tej akcji. Można jednak usunąć etykietę i następnie za pomocą programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenie cmdlet do usuwania szablonu. <br /><br />Aby uzyskać więcej informacji, zobacz [jak usunąć lub zmiana kolejności etykiet dla usługi Azure Information Protection](configure-policy-delete-reorder.md).
 |Obsługa wielu języków|Z **Zarządzaj** wybór menu, wybierz opcję **języków** do wyeksportowania pól możliwych do dostosowania, które zawierają nazwę i opis szablonu. Tłumaczenia ciągów, a następnie zaimportować te ciągi do portalu. <br /><br />Aby uzyskać więcej informacji, zobacz [sposobu konfigurowania etykiet i szablony w różnych językach dla usługi Azure Information Protection](configure-policy-languages.md).
-|Raporty sieci web zarządzania prawami dostępu w|Za pomocą programu PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) polecenia cmdlet, aby pobrać dzienniki użycia dla usługi Azure Rights Management. Te dane można następnie użyć do tworzenia niestandardowych raportów. <br /><br />Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).<br /><br />Porada: Zwróć uwagę na ogłoszenia [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) dla nowych, scentralizowane raportowania rozwiązania usługi Azure Information Protection.
+|Raporty sieci web zarządzania prawami dostępu w|[Scentralizowane raportowanie usługi Azure Information Protection](reports-aip.md) jest teraz dostępna w wersji zapoznawczej.<br /><br />Możesz również użyć programu PowerShell [Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) polecenia cmdlet, aby pobrać dzienniki użycia dla usługi Azure Rights Management. Te dane można następnie użyć do tworzenia niestandardowych raportów. Aby uzyskać więcej informacji, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](log-analyze-usage.md).
 |Aktywowanie i dezaktywowanie usługi Rights Management|Z **Zarządzaj** opcje menu, wybierz opcję **Aktywacja ochrony**.<br /><br />Aby uzyskać więcej informacji, zobacz [jak aktywować usługę Azure Rights Management w witrynie Azure portal](activate-azure.md).
 
 Przed rozpoczęciem edycji szablonów, lub konwersji do etykiet w witrynie Azure portal, zobacz [zagadnienia dotyczące szablonów w witrynie Azure portal](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal).
