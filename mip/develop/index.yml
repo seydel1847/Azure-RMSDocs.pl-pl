@@ -1,15 +1,15 @@
 ### YamlMime:YamlDocument
 ms.openlocfilehash: 128d947604239a8b326af3d5f86e6b2e56f1eca3
-ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
-ms.translationtype: MT
+ms.sourcegitcommit: 65fbe6fc07383c3fdc93ced55061885e7b0de936
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "49991364"
 documentType: LandingData
-title: Dokumentacja zestawu SDK ochrony informacji firmy Microsoft
+title: Dokumentacja zestawu Microsoft Information Protection SDK
 metadata:
-  title: Dokumentacja interfejsu API dokumentacja — samouczki i zestawu SDK ochrony informacji firmy Microsoft
-  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia, ochrona danych działa przez cały czas z usługą Microsoft Information Protection — niezależnie od tego, gdzie są przechowywane ani komu są one udostępniane.
+  title: Dokumentacja zestawu Microsoft Information Protection SDK — samouczki, dokumentacja interfejsu API
+  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia — dzięki usłudze Microsoft Information Protection Twoje dane będą zawsze lepiej chronione, bez względu na to, gdzie są przechowywane i komu udostępniane.
   services: information-protection
   author: BryanLa
   manager: mbaldwin
@@ -22,19 +22,19 @@ metadata:
   ms.date: 09/26/2018
   ms.author: bryanla
 abstract:
-  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia, ochrona danych działa przez cały czas z usługą Microsoft Information Protection — niezależnie od tego, gdzie są przechowywane ani komu są one udostępniane.
+  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia — dzięki usłudze Microsoft Information Protection Twoje dane będą zawsze lepiej chronione, bez względu na to, gdzie są przechowywane i komu udostępniane.
   aside:
     image:
-      alt: MIP SDK @ Ignite 2018 wideo
+      alt: Zestaw MIP SDK na konferencji Ignite 2018 — wideo
       height: 112
       src: media/index/kartik-tom-mip-sdk.png
       width: 250
-    title: MIP SDK @ Ignite 2018 r.
+    title: Zestaw MIP SDK na konferencji Ignite 2018
     href: https://www.youtube.com/embed/V02HTllv54s
     width: 250
 sections:
-- title: 5-minutowe Przewodniki Szybki Start
-  description: Po zakończeniu <a href="setup-configure-mip">instalacja i Konfiguracja</a>, zapoznaj się z przewodnikami Szybki Start dla zestawu SDK MIP.
+- title: 5-minutowe przewodniki Szybki start
+  description: Po zakończeniu <a href="setup-configure-mip">instalacji i konfiguracji</a> zapoznaj się z przewodnikami Szybki start dla zestawu MIP SDK.
   items:
   - type: table
     style: dataMatrix
@@ -45,10 +45,10 @@ sections:
     - title: Inicjowanie aplikacji
       values:
       - href: quick-app-initialization-cpp
-    - title: Za pomocą interfejsu API plików do listy czułości etykiet
+    - title: Wyświetlanie listy etykiet poufności za pomocą interfejsu API plików
       values:
       - href: quick-file-list-labels-cpp
-    - title: Ustawianie/pobieranie etykiety z pliku za pomocą interfejsu API plików
+    - title: Ustawianie/pobieranie etykiety pliku za pomocą interfejsu API plików
       values:
       - href: quick-file-set-get-label-cpp
 - title: Tematy pomocy
