@@ -1,23 +1,22 @@
 ---
-title: "Przewodnik dewelopera usług RMS | Azure RMS"
-description: "Obecnie dostępne są trzy generacje zestawu Rights Management SDK."
-keywords: 
-author: bruceperlerms
+title: Przewodnik dewelopera usług RMS | Azure RMS
+description: Obecnie dostępne są trzy generacje zestawu Rights Management SDK.
+keywords: ''
+author: bryanla
 manager: mbaldwin
-ms.date: 02/23/2017
-ms.topic: article
-ms.prod: azure
+ms.date: 09/07/2018
+ms.topic: conceptual
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 899c05d233ec31db27cee058982c98d8dd809c3a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6f964c6a6cf36cbd6f78cf58096f8c912fb0ff68
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "51527932"
 ---
 # <a name="rms-developers-guide"></a>Przewodnik dewelopera usług RMS
 
@@ -48,5 +47,3 @@ Ta kolekcja przykładów kodu usług RMS i narzędzi wspierających twórców do
 | [Biblioteka interfejsów użytkownika i przykładowa aplikacja](https://github.com/AzureAD/rms-sdk-ui-for-ios) |iOS|[Zestaw RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) i nowsze wersje zestawu SDK 4.x|**Biblioteki interfejsów użytkownika i przykładowa aplikacja dla systemu iOS** w witrynie GitHub, umożliwiające szybkie rozpoczęcie pracy i wielokrotne korzystanie z naszego standardowego interfejsu użytkownika w aplikacjach.|
 | [Biblioteka interfejsów użytkownika i przykładowa aplikacja](https://github.com/AzureAD/rms-sdk-ui-for-android) |Android|[Zestaw RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) i nowsze wersje zestawu SDK 4.x|**Biblioteki interfejsów użytkownika i przykładowa aplikacja dla systemu Android** w witrynie GitHub, umożliwiające szybkie rozpoczęcie pracy i wielokrotne korzystanie z naszego standardowego interfejsu użytkownika w aplikacjach.|
 | [Scenariusze użycia w systemie Android](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[Zestaw RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) i nowsze wersje zestawu SDK 4.x|**Przykłady kodu w języku Java** przedstawiające ważne scenariusze programowania, umożliwiające zapoznanie się z zestawem RMS SDK. Przykłady obejmują korzystanie z formatu Microsoft Protected File, niestandardowe formaty plików chronionych oraz niestandardowe kontrolki interfejsu użytkownika.|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
