@@ -4,18 +4,18 @@ description: Faza 2 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04ca9cdfe3f528d71ee45a88a81b59268a6357aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150470"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707763"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
@@ -125,9 +125,9 @@ Zmiany szablonu, których wprowadzenie może być konieczne w ramach tego kroku:
 
 - Jeśli przed migracją utworzono szablony niestandardowe usługi Azure Information Protection, należy je ręcznie wyeksportować i zaimportować.
 
-- W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, czasami trzeba dodać użytkowników lub grupy spoza organizacji. 
+- W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, może być konieczne ręczne dodawanie użytkowników lub grup. 
     
-    W usługach AD RMS grupy Każdy przyznane prawa wszystkim użytkownikom uwierzytelnionym. Ta grupa jest automatycznie konwertowany do wszystkich użytkowników w dzierżawie usługi Azure AD. Jeśli jest konieczne przyznanie praw do żadnych dodatkowych użytkowników, jest konieczne żadne dalsze działania. Ale jeśli grupy Każdy była używana, aby uwzględnić użytkowników zewnętrznych, należy ręcznie dodać tych użytkowników i uprawnień, które chcesz przyznać im.
+    W usługach AD RMS grupy Każdy udzielone prawa wszystkim użytkownikom uwierzytelniony przez usługę Active Directory w środowisku lokalnym, a ta grupa nie jest obsługiwana przez usługę Azure Information Protection. Odpowiednik dystrybucji, zapewniania to grupy, które są tworzone automatycznie dla wszystkich użytkowników w dzierżawie usługi Azure AD. Grupy Każdy była używana dla szablonów usług AD RMS, konieczne może dodać użytkowników i uprawnień, które chcesz przyznać im.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>Procedura w przypadku utworzenia szablonów niestandardowych przed migracją
 
@@ -143,7 +143,7 @@ Następnie można opublikować lub zarchiwizować te szablony w taki sam sposób
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>Procedura, jeśli szablony w usługach AD RMS używały grupy **KAŻDY**
 
-W przypadku szablonów w usługach AD RMS była używana **każdy** grupy, ta grupa jest automatycznie konwertowany na potrzeby używania grupy o nazwie **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy >. onmicrosoft.com** . Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Ta grupa zawiera wszystkich użytkowników w dzierżawie usługi Azure AD.
+W przypadku szablonów w usługach AD RMS była używana **każdy** grupy najbliższego odpowiednik grupy usługi Azure Information Protection nosi **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<nazwa_dzierżawy >. onmicrosoft.com**. Na przykład w przypadku firmy Contoso ta grupa może wyglądać podobnie do następującej: **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**. Ta grupa zawiera wszystkich użytkowników w dzierżawie usługi Azure AD.
 
 Jeśli zarządzasz, szablonów i etykiety w witrynie Azure portal, ta grupa wyświetla się jako nazwa domeny dzierżawy usługi w usłudze Azure AD. Na przykład ta grupa może wyglądać podobnie do poniższego firmy Contoso: **contoso.onmicrosoft.com**. Aby dodać tę grupę, wyświetla opcja **Dodaj \<nazwa organizacji > — wszystkie elementy członkowskie**.
 

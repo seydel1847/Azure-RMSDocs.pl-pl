@@ -4,15 +4,15 @@ description: Skonfiguruj etykietę chroniącą wiadomość e-mail dla użytkowni
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 6beb55b6dbcd82582cc24c7beb787bf4b232f518
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 793c3ff3b68de66dce5876c25cb4ba5455d19c33
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027197"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644696"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>Szybki Start: Konfigurowanie etykiety w celu użytkownikom łatwy sposób chronić wiadomości e-mail zawierające poufne informacje
 
@@ -64,9 +64,11 @@ Aby uzyskać pełną listę wymagań wstępnych do używania usługi Azure Infor
 
 ## <a name="configure-an-existing-label-to-apply-the-do-not-forward-protection"></a>Skonfiguruj istniejącą etykietę do stosowania ochrony nie przesyłaj dalej
 
-1. Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](https://portal.azure.com). Następnie przejdź do **usługi Azure Information Protection**. 
+1. Otwórz nowe okno przeglądarki i zaloguj się do [witryny Azure portal](https://portal.azure.com) jako administrator globalny. Następnie przejdź do **usługi Azure Information Protection**. 
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    
+    Jeśli nie jesteś administratorem globalnym, użyj następującego linku, dla alternatywnej ról: [logowania się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę, którą chcesz skonfigurować do zastosowania ochrony. 
 

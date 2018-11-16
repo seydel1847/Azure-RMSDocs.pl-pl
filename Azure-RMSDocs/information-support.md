@@ -4,18 +4,18 @@ description: Zasoby dla administratorów, w tym informacje na temat nowych wersj
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 145889772dd3d2a8e29967264c1f0f7de7a7c222
-ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
+ms.openlocfilehash: da86d4dbdc5b5ac98dad8aac21772c43354b4b90
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046992"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707729"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Informacje i pomoc techniczna dla usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Poniższe zasoby ułatwiają poznawanie, wdrażanie i pomoc techniczną dla usł
 |Zrozumienie konkretny termin usługi Azure Information Protection|Wyszukaj termin lub skrót na [terminologii](terminology.md) strony.|
 
 ## <a name="information-about-new-releases-and-updates"></a>Informacje o nowych wersjach i aktualizacjach
-Zespół produktu usługi Azure Information Protection publikuje powiadomienia o najważniejszych nowych wersji w [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection). Mniejsze wersje są ogłaszane w usłudze Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam), i może również okazać przydatne w celu sprawdzenia [witryny UserVoice](https://msip.uservoice.com) stanu żądane funkcje.
+Zespół produktu usługi Azure Information Protection publikuje powiadomienia o najważniejszych nowych wersji w [pakietu Enterprise Mobility + Security blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection). Mniejsze wersje są ogłaszane w usłudze Azure Information Protection [witryny usługi Yammer](https://www.yammer.com/AskIPTeam), i może również okazać przydatne w celu sprawdzenia [witryny UserVoice](https://msip.uservoice.com) stanu żądane funkcje.
 
 Można znaleźć dodatkowe i szczegółowe informacje na [blog techniczny usługi Azure Information Protection](https://aka.ms/AIPblog). Na przykład podsumowanie zmian dokumentacji jest publikowany co miesiąc Cię powiadomić o informacje o nowych wersjach, aktualizacje obsługują instrukcji jak również poprawki i wyjaśnienia dla już istniejących wersji. Te wpisy aktualizacje dokumentacji są pod tytułem: "**Aktualizacja dokumentacji usługi Azure Information Protection dla \<miesiąc, rok >**".
 

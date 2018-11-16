@@ -4,19 +4,19 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
+ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273586"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611424"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -28,7 +28,7 @@ ms.locfileid: "51273586"
 
 Przy użyciu usługi Azure Information Protection usługi analiza centralnej funkcji raportowania do śledzenia przyjęcia etykiet usługi Azure Information Protection, a także monitorowania dostępu użytkowników do etykietami dokumentów i wiadomości e-mail i zmiany ich klasyfikacji. Można również zidentyfikować dokumentów zawierających poufne informacje, które muszą być chronione.
 
-Dane, które zostanie wyświetlony jest agregowana od klientów usługi Azure Information Protection, skanery usługi Azure Information Protection i [klientów, którzy obsługują ujednoliconego etykietowania](configure-policy-migrate-labels.md#clients-that-support-unified-labeling).
+Obecnie dane widoczne są agregowane od klientów usługi Azure Information Protection i skanery usługi Azure Information Protection.
 
 Na przykład można znaleźć w następujących tematach:
 

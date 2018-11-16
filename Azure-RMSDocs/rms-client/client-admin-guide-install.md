@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów dotyczące wdrażania 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: f4067698a97ded8aa4c7fd6144fa7738822f1910
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49367009"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644679"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>Podręcznik administratora: Instalowanie klienta usługi Azure Information Protection dla użytkowników
 
@@ -41,6 +41,11 @@ Następnie sprawdź dodatkowe wymagania wstępne, które mogą być wymagane dla
     
     Moduł PowerShell dla klienta wymaga środowiska Windows PowerShell w wersji 4.0, co może powodować konieczność zainstalowania go w starszych systemach operacyjnych. Aby uzyskać więcej informacji, zobacz artykuł [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx) (Jak zainstalować program Windows PowerShell 4.0). Instalator nie sprawdza ani nie instaluje tego wymagania wstępnego. Aby sprawdzić, która wersja programu Windows PowerShell jest używana, wpisz polecenie `$PSVersionTable` w sesji programu PowerShell.
 
+- Rozdzielczość ekranu większą niż 800 x 600
+    
+    Rozwiązania 800 x 600 i niższy pełni nie można wyświetlić **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe po kliknięciu prawym przyciskiem myszy plik lub folder w Eksploratorze plików.
+
+
 - Asystent logowania w Usługach online firmy Microsoft 7.250.4303.0
     
     Komputery z pakietem Office 2010 wymagają Asystenta logowania w Usługach online firmy Microsoft w wersji 7.250.4303.0. Ta wersja jest dołączana do pakietu instalacji klienta. Jeśli masz Asystenta logowania w nowszej wersji, należy go odinstalować przed zainstalowaniem klienta usługi Azure Information Protection. Na przykład sprawdź wersję i odinstaluj Asystenta logowania, wybierając opcje **Panel sterowania** > **Programy i funkcje** > **Odinstaluj lub zmień program**.
@@ -57,21 +62,21 @@ Następnie sprawdź dodatkowe wymagania wstępne, które mogą być wymagane dla
     
     To wymaganie wstępne nie sprawdza obecności instalacji klienta, ale jest wymagana dla klienta usługi Azure Information Protection do klasyfikowania i ochrony plików PDF.
 
-- Konfiguracja zasad grupy dla **lista zarządzanych dodatków**
+- Konfigurowanie zasad grupy, aby uniemożliwić dodatek usługi Azure Information Protection jest wyłączony
     
-    Dla pakietu Office 2013 i nowszymi wersjami, należy skonfigurować ustawienie zasad grupy **lista zarządzanych dodatków** i Dodaj **Microsoft Azure Information Protection** dodatku dla aplikacji pakietu Office. Określ następujące identyfikatory programowe (ProgID) dla usługi Azure Information Protection, a następnie ustaw opcję na wartość **1: dodatek jest zawsze włączona**.
+    Dla pakietu Office 2013 i nowszymi wersjami, należy skonfigurować zasady grupy do upewnij się, że **Microsoft Azure Information Protection** dodatku dla aplikacji pakietu Office jest zawsze włączona. Bez tej konfiguracji dodatku Microsoft Azure Information Protection może uzyskać wyłączony, a użytkownicy nie będą mogli oznaczać swoje dokumenty i wiadomości e-mail w aplikacjach pakietu Office.
     
-    - Dla programu Outlook: `MSIP.OutlookAddin`
+    - Dla programu Outlook: Przy użyciu zasad grupy, ustawienia udokumentowane w [Administrator systemu kontroli nad dodatków](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) w dokumentacji pakietu Office.
     
-    - Dla programu Word: `MSIP.WordAddin`
-    
-    - Dla programu Excel: `MSIP.ExcelAddin`
-    
-    - Dla programu PowerPoint: `MSIP.PowerPointAddin`
-    
-    Jeśli to ustawienie nie jest skonfigurowane, dodatek Microsoft Azure Information Protection może uzyskać wyłączony, a użytkownicy nie będą mogli oznaczać swoje dokumenty i wiadomości e-mail w aplikacjach pakietu Office.
-    
-    Aby uzyskać więcej informacji na temat konfigurowania tego ustawienia zasad grupy, zobacz [Administrator systemu kontroli nad dodatków](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins) w dokumentacji pakietu Office.
+    - Dla programu Word, Excel i PowerPoint: Użyj ustawienia zasad grupy, **lista zarządzanych dodatków** udokumentowane w artykule pomocy technicznej [Add-ins załadowany z powodu ustawień zasad grupy dla pakietu Office 2013 i Office 2016 programów](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off). 
+        
+        Określ następujące identyfikatory programowe (ProgID) dla usługi Azure Information Protection, a następnie ustaw opcję na wartość **1: dodatek jest zawsze włączona**.
+        
+        Dla programu Word: `MSIP.WordAddin`
+        
+        Dla programu Excel: `MSIP.ExcelAddin`
+        
+        Dla programu PowerPoint: `MSIP.PowerPointAddin`
 
 > [!IMPORTANT]
 > Instalacja klienta usługi Azure Information Protection wymaga lokalnych uprawnień administracyjnych.

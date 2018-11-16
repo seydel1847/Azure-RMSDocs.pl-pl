@@ -4,15 +4,15 @@ description: Samouczek wprowadzający, który przeprowadzi Cię przez konfigurac
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: ead65d9fef1b6c4f0087757e044caccee14805df
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027220"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644657"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Samouczek: Konfigurowanie ustawień zasad usługi Azure Information Protection, które współpracują ze sobą
 
@@ -69,9 +69,11 @@ Zamiast polegać na użytkowników, aby ręcznie oznaczać swoje dokumenty i wia
 
 Przy użyciu portalu Azure, firma Microsoft będzie edytowanie zasad globalnych, aby zmienić ustawienia zasad dla wszystkich użytkowników.
 
-1. Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](https://portal.azure.com). Następnie przejdź do **usługi Azure Information Protection**. 
+1. Otwórz nowe okno przeglądarki i zaloguj się do [witryny Azure portal](https://portal.azure.com) jako administrator globalny. Następnie przejdź do **usługi Azure Information Protection**. 
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    
+    Jeśli nie jesteś administratorem globalnym, użyj następującego linku, dla alternatywnej ról: [logowania się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. Wybierz **klasyfikacje** > **zasady** > **Global** otworzyć **zasady: globalne** bloku. 
 

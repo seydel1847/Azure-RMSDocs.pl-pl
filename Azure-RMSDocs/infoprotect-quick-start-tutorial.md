@@ -4,15 +4,15 @@ description: Samouczek wprowadzający, który umożliwia edycję zasad usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 9e5fb752e75a6b6616fa0ef347c6a6102cd859fa
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 7f8fc76b0ad3d90d422cc18229d10b1f1a8d6e8d
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273603"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644747"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>Samouczek: Edytowanie zasad usługi Azure Information Protection i tworzenie nowej etykiety
 
@@ -67,9 +67,11 @@ Przy użyciu portalu Azure, firma Microsoft będzie najpierw zmienić kilka usta
 
 ### <a name="edit-the-policy-settings"></a>Edytowanie ustawień zasad
 
-1. Otwórz nowe okno przeglądarki i [Zaloguj się do witryny Azure portal](https://portal.azure.com). Następnie przejdź do **usługi Azure Information Protection**. 
+1. Otwórz nowe okno przeglądarki i zaloguj się do [witryny Azure portal](https://portal.azure.com) jako administrator globalny. Następnie przejdź do **usługi Azure Information Protection**. 
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
+    
+    Jeśli nie jesteś administratorem globalnym, użyj następującego linku, dla alternatywnej ról: [logowania się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. Wybierz **klasyfikacje** > **zasady** > **Global** otworzyć **zasady: globalne** bloku. 
 
