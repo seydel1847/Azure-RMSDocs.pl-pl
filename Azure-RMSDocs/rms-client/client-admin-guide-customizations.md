@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 62d53acd482b9efdd0425d5a944d2241f8a33b30
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223997"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292596"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -86,9 +86,11 @@ Aby zalogować się jako inny użytkownik:
 
 Dodatkowo:
 
-- To rozwiązanie jest obsługiwane w przypadku logowania się jako inny użytkownik z tej samej dzierżawy. Nie jest ono obsługiwane w przypadku logowania się jako inny użytkownik z innej dzierżawy. Do testowania usługi Azure Information Protection z wieloma dzierżawami użyj różnych komputerów.
+- Jeśli klient usługi Azure Information Protection jest nadal zalogowany za pomocą starego konta po wykonaniu tych kroków, Usuń wszystkie pliki cookie z programu Internet Explorer, a następnie powtórz kroki 1 i 2.
 
-- Jeśli korzystasz z logowania jednokrotnego, musisz wylogować się z systemu Windows i po wprowadzeniu zmian w rejestrze zalogować się przy użyciu innego konta użytkownika. Klient usługi Azure Information Protection przeprowadzi automatyczne uwierzytelnienie przy użyciu aktualnie zalogowanego konta użytkownika.
+- Jeśli używasz rejestracji jednokrotnej, należy wylogować się z Windows i zaloguj się przy użyciu innego konta użytkownika po usunięciu plik tokenu. Klient usługi Azure Information Protection przeprowadzi automatyczne uwierzytelnienie przy użyciu aktualnie zalogowanego konta użytkownika.
+
+- To rozwiązanie jest obsługiwane w przypadku logowania się jako inny użytkownik z tej samej dzierżawy. Nie jest ono obsługiwane w przypadku logowania się jako inny użytkownik z innej dzierżawy. Do testowania usługi Azure Information Protection z wieloma dzierżawami użyj różnych komputerów.
 
 - Możesz użyć **zresetować ustawienia** opcję **Pomoc i opinie** wylogowania się i usunąć aktualnie pobrane zasady usługi Azure Information Protection.
 

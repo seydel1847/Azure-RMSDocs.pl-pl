@@ -4,18 +4,18 @@ description: Instrukcje dotyczące wdrażania łącznika usług RMS, który udos
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ba7f0ec91b949f2d91d96bde5be06195c3facaf8
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7c6a0f74752ea6d477b503bdfb9e92dd656c84ca
+ms.sourcegitcommit: 8d854ee417d9af1a85e7d4ecb3807a69a43b0313
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149824"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177215"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Wdrażanie łącznika usługi Azure Rights Management
 
@@ -58,7 +58,7 @@ Przed zainstalowaniem łącznika usługi RMS upewnij się, że zostały spełnio
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Usługa Rights Management (RMS) została aktywowana|[Aktywacja usługi Azure Rights Management](activate-service.md)|
-|Synchronizacja katalogu lokalnych lasów usługi Active Directory i usługi Azure Active Directory|Po uaktywnieniu usługi RMS usługa Azure Active Directory musi być skonfigurowana do pracy z użytkownikami i grupami w bazie danych usługi Active Directory użytkownika.<br /><br />**Ważne**: Ten krok synchronizacji katalogu należy wykonać dla zapewnienia działania łącznika usługi RMS, nawet w przypadku sieci testowej. Chociaż z usługi Office 365 i usługi Azure Active Directory można korzystać przy użyciu kont, które zostały ręcznie utworzone w usłudze Azure Active Directory, ten łącznik wymaga synchronizacji kont w usłudze Azure Active Directory z Usługami domenowymi Active Directory. Ręczna synchronizacja haseł nie jest wystarczająca.<br /><br />Więcej informacji można znaleźć w następujących zasobach:<br /><br />[Integrowanie tożsamości użytkownika lokalnego z usługą Azure Active Directory](/active-directory/active-directory-aadconnect)<br /><br />[Porównanie narzędzi integracji katalogu tożsamości hybrydowej](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)|
+|Synchronizacja katalogu lokalnych lasów usługi Active Directory i usługi Azure Active Directory|Po uaktywnieniu usługi RMS usługa Azure Active Directory musi być skonfigurowana do pracy z użytkownikami i grupami w bazie danych usługi Active Directory użytkownika.<br /><br />**Ważne**: Ten krok synchronizacji katalogu należy wykonać dla zapewnienia działania łącznika usługi RMS, nawet w przypadku sieci testowej. Chociaż z usługi Office 365 i usługi Azure Active Directory można korzystać przy użyciu kont, które zostały ręcznie utworzone w usłudze Azure Active Directory, ten łącznik wymaga synchronizacji kont w usłudze Azure Active Directory z Usługami domenowymi Active Directory. Ręczna synchronizacja haseł nie jest wystarczająca.<br /><br />Więcej informacji można znaleźć w następujących zasobach:<br /><br />- [Integrowanie lokalnych domen Active Directory z usługą Azure Active Directory](/azure/architecture/reference-architectures/identity/azure-ad)<br /><br />- [Porównanie narzędzi integracji katalogu tożsamości hybrydowej](/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison)|
 |Co najmniej dwa komputery członkowskie, na których zostanie zainstalowany łącznik usług RMS:<br /><br />– 64-bitowy komputer fizyczny lub wirtualny działający pod kontrolą jednego z następujących systemów operacyjnych: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 lub Windows Server 2008 R2.<br /><br />– Co najmniej 1 GB pamięci RAM.<br /><br />– Co najmniej 64 GB miejsca na dysku.<br /><br />– Co najmniej jeden interfejs sieciowy.<br /><br />– Dostęp do Internetu za pośrednictwem zapory (lub serwera proxy sieci Web), która nie wymaga uwierzytelniania.<br /><br />– Musi należeć do lasu lub domeny, które ufają innym lasom w organizacji, zawierającym instalacje serwerów programu Exchange lub SharePoint przeznaczone do użycia z łącznikiem usługi RMS.|W celu zachowania odporności na uszkodzenia i wysokiej dostępności łącznik usług RMS należy zainstalować na co najmniej dwóch komputerach.<br /><br />**Porada**: Jeśli używasz programu Outlook Web Access lub urządzeń przenośnych, które korzystają z programu Exchange ActiveSync IRM, a szczególnie ważne jest, by utrzymywać dostęp do wiadomości e-mail i załączników chronionych za pomocą usługi Azure RMS, zalecamy wdrożenie grupy serwerów łącznika z funkcją równoważenia obciążenia dla zapewnienia wysokiej dostępności.<br /><br />Do uruchomienia łącznika nie są potrzebne dedykowane serwery, ale musi on zostać zainstalowany na innym komputerze niż serwery używające łącznika.<br /><br />**Ważne**: Nie instaluj łącznika na komputerze z systemem Exchange Server, SharePoint Server ani na serwerze plików skonfigurowanym dla funkcji infrastruktury klasyfikacji plików, jeśli chcesz skorzystać z funkcjonalności tych usług za pomocą usługi Azure RMS. Ponadto nie należy instalować tego łącznika na kontrolerze domeny.<br /><br />W przypadku obciążeń serwera, które chcesz użyć z łącznikiem usługi RMS, ale swoje serwery znajdują się w domenach, które nie są zaufane przez domenę, w którym chcesz uruchomić łącznik można zainstalować dodatkowe serwery łącznika usługi RMS w tych domenach niezaufanych lub innych domeny w swoim lesie. <br /><br />Nie ma żadnego limitu liczby serwerów łącznika, które można uruchomić w Twojej organizacji i wszystkie serwery łącznika zainstalowany udział organizacji taką samą konfigurację. Jednak do konfigurowania łącznika do autoryzowania serwerów należy przeglądać kont usługę lub serwer, który chcesz autoryzować, co oznacza, że należy uruchomić narzędzie administracyjne usługi RMS w lesie, w którym możesz przeglądać te konta.|
 
 

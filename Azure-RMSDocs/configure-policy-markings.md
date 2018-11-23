@@ -8,30 +8,30 @@ ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644730"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292613"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
 >*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny.
+Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać kilka opcji, dzięki którym wybrana klasyfikacja będzie łatwo widoczna. Oznaczenia wizualne to nagłówek, stopka i znak wodny. 
 
 Dodatkowe informacje na temat tych oznaczeń wizualnych:
 
-- Nagłówki i stopki obsługuje pojedynczych wierszy tekstu, które są stosowane do programu Word, Excel, PowerPoint i Outlook.
+- Wiele wierszy tekstu są obsługiwane w przypadku wszystkich oznaczeń wizualnych.
+
+- Nagłówki i stopki dotyczą programów Word, Excel, PowerPoint i Outlook.
 
 - Znaki wodne dotyczą programów Word, Excel i PowerPoint:
 
     - Excel: znaki wodne są widoczne tylko w trybach Podgląd wydruku i Układ strony oraz po wydrukowaniu.
     
     - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła. Na **widoku** karcie **wzorca slajdów**, upewnij się, że **Ukryj grafiki w tle** nie zaznaczono pole wyboru.
-    
-    - Wiele wierszy tekstu są obsługiwane.
 
 - Ciąg maksymalnej długości:
     

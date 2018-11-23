@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a55a073a0b567e9e92b11fdcb1a5c8032c4e94c7
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026574"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268057"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>Konfigurowanie zasad usługi Azure Information Protection odnoszących się do konkretnych użytkowników przy użyciu zasad o określonym zakresie
 
@@ -28,6 +28,8 @@ Dla aplikacji, które obsługują klienta usługi Azure Information Protection w
 Należy pamiętać, że oprócz aplikacjami klasycznymi pakietu Office, które obsługują klienta usługi Azure Information Protection, etykiety, również są obsługiwane przy użyciu programu PowerShell i skanera usługi Azure Information Protection. Oznacza to, że można tworzyć i konfigurować zasady o określonym zakresie dla kont, przeznaczonych do uruchamiania poleceń programu PowerShell lub skaner. 
 
 Zasady o określonym zakresie, podobnie jak etykiety, są uporządkowane w portalu Azure. Jeśli użytkownik jest skonfigurowany pod kątem kilku zakresów, zasada mająca zastosowanie w jego przypadku zostanie obliczona przed pobraniem. Zostanie zastosowane ostatnie ustawienie zasad według porządku. Etykiety, które widzi użytkownik, to etykiety z globalnych zasad oraz wszelkie dodatkowe etykiety należące do zasad o określonym zakresie, które mają zastosowanie do użytkownika.
+
+Wyjątek stanowi po użytkownik w dzierżawie otwiera etykietą dokument lub wiadomość e-mail i tego użytkownika nie znajduje się w zakresie etykiety. W tym scenariuszu użytkownik zobaczy nazwę zestawu etykiety, ale etykieta nie jest wyświetlane jako dostępne do wybrania.  
 
 Jako że zasada o określonym zakresie zawsze dziedziczy etykiety i ustawienia z zasad globalnych, podczas tworzenia lub edytowania zasady o określonym zakresie wyświetlane są etykiety z zasad globalnych. Podczas edycji zasady o określonym zakresie nie można edytować etykiet z zasad globalnych. Można jednak dodać etykiet podrzędnych do etykiet odziedziczonych z zasad.
 
@@ -58,4 +60,3 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas każdego uru
 ## <a name="next-steps"></a>Kolejne kroki
 
 Na przykład jak dostosować domyślne zasady i zobaczyć efekty w aplikacji pakietu Office, spróbuj [edytować zasady i Utwórz nową etykietę](infoprotect-quick-start-tutorial.md) samouczka.
-
