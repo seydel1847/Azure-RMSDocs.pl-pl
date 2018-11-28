@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6c0b9a878f98081312a0b81b965e75bcc0ade7e8
-ms.sourcegitcommit: 13b5b8e7457b09e1b828dad3cdfae086fd019819
+ms.openlocfilehash: 2790c64095a6fca4a33f70aeada68fa0c6668020
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508446"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386733"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -21,11 +21,18 @@ Zestaw SDK MIP jest obsługiwane na następujących platformach:
 
 [!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
+## <a name="prerequisites"></a>Wymagania wstępne
+
 Pamiętaj przed rozpoczęciem pracy, zobacz następujące tematy:
 
 - [Co to jest Centrum zgodności i zabezpieczeń usługi Office 365?](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [Co to jest usługa Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection)
 - [Jak działa ochrona usługi Azure Information Protection?](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
+
+> [!IMPORTANT]
+> **Aby chronić prywatność użytkowników, należy poprosić użytkownika o zgodę przed włączeniem automatycznego rejestrowania.** Poniższy przykład jest standardową wiadomość używaną przez firmę Microsoft do powiadamiania o rejestrowaniu:
+>
+> *Włączając rejestrowanie błędów i wydajności, zgadzasz na wysyłanie do firmy Microsoft informacji o błędach i wydajności. Firma Microsoft będzie automatycznie zbierać dane dotyczące błędów i wydajności w Internecie („Dane”). Firma Microsoft używa tych Danych w celu zapewniania i zwiększania jakości, bezpieczeństwa i integralności swoich produktów i usług. Na przykład analizujemy wydajność i niezawodność, sprawdzając, jakich funkcji używasz, jak szybko funkcje reagują, jaka jest wydajność urządzenia, jakie są interakcje z interfejsem użytkownika oraz jakie problemy wystąpiły podczas pracy z produktem. Dane będą również zawierać informacje o konfiguracji oprogramowania, takie jak aktualnie działające oprogramowanie i adres IP.*
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>Zamów subskrypcję usługi Office 365
 
@@ -41,7 +48,7 @@ Wiele przykładowych zestawach SDK wymaga dostępu do subskrypcji usługi Office
 
 ## <a name="configure-sensitivity-labels"></a>Konfiguruj etykiety ważności
 
-Jeśli obecnie używasz usługi Azure Information Protection, należy przedsięwziąć, aby przeprowadzić migrację etykiet do Centrum zgodności i zabezpieczeń usługi Office 365. Aby uzyskać więcej informacji na temat procesu, zobacz [jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](/azure/information-protection/configure-policy-migrate-labels). 
+Jeśli obecnie używasz usługi Azure Information Protection, należy przeprowadzić migrację etykiet do Centrum zgodności i zabezpieczeń usługi Office 365. Aby uzyskać więcej informacji na temat procesu, zobacz [jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](/azure/information-protection/configure-policy-migrate-labels). 
 
 ## <a name="configure-your-client-workstation"></a>Konfigurowanie stacji roboczej użytkownika
 
