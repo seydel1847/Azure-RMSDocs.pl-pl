@@ -4,18 +4,18 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
-ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
+ms.openlocfilehash: 9bc0bbcf6eb74d889e7cd31e6d7ff3f0b6320050
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072480"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386750"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -129,7 +129,7 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 ###### <a name="footnote-1"></a>Przypis 1
 Jeśli konfiguracja klienta usługi Azure Information Protection [ochrony plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), rozszerzenie nazwy pliku chronionego dokumentu PDF pozostaje jako PDF.
 
-W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Są to typy plików aplikacji pakietu Microsoft Office. Obsługiwane formaty plików dla tych typów plików to 97 – 2003 formaty plików i formaty Office Open XML dla następujących programów pakietu Office: Word, Excel i PowerPoint.
+W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Będzie rozpoznaje je jako typy plików dla aplikacji Microsoft Office. Obsługiwane formaty plików dla tych typów plików to 97 – 2003 formaty plików i formaty Office Open XML dla następujących programów pakietu Office: Word, Excel i PowerPoint.
 
 Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
 
@@ -192,7 +192,6 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 - **Wykluczone typy plików**: lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, msg, .msp, .msi, .pdb, JAR
     
-    Następujące typy plików są teraz również wyłączone: zip, msg i RAR. 
 
 - **Wykluczone foldery** : 
     - Windows
@@ -202,7 +201,9 @@ Aby uniemożliwić użytkownikom zmianę plików, które są krytyczne dla dzia�
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Typy plików, które są wykluczone z klasyfikacji i ochrony przez skaner usługi Azure Information Protection
 
-Domyślnie skaner także wyklucza te same typy plików jako klienta usługi Azure Information Protection, z tą różnicą, że .rtf również jest wyłączone. 
+Domyślnie skaner także wyklucza te same typy plików jako klienta usługi Azure Information Protection z następującymi wyjątkami:
+
+    - RTF, RAR i ZIP również są wyłączone.
 
 Możesz zmienić typy plików dołączone lub wykluczone pliku inspekcji przez skaner, korzystając z następujących poleceń cmdlet programu PowerShell:
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b12c3eaf66d70d87fd9eb8f239416f322c45cd89
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148445"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330336"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
@@ -37,14 +37,14 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 
 
 > [!TIP]
-> Jeśli przeprowadzasz konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, warto zapoznać się z artykułem [Rozpoczynanie pracy z usługą Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/). 
+> Jeśli przeprowadzasz konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, warto zapoznać się z artykułem [Rozpoczynanie pracy z usługą Azure Key Vault](/azure/key-vault/key-vault-get-started). 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Część 1. Przesłanie klucza HSM do usługi Azure Key Vault
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
-1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault), z następującym wyjątkiem:
+1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault), z następującym wyjątkiem:
 
     - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zazwyczaj noszą zaszyfrowane pliki klucza firmy Thales **klucz <*Nazwa_aplikacji_klucza*><*keyIdentifier* >**  lokalnie na serwerze.
 

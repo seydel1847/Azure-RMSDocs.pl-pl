@@ -4,18 +4,18 @@ description: Konfigurowanie i zarządzanie nimi szablony usługi rights manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/20/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 71444804ab21dfbe09e0cf13ab1b75425f7a84d0
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 6e6200849a5d62001317708e000fbb7da4a7ac6d
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169859"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52585979"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
@@ -75,7 +75,7 @@ Szablony, które zostały zarchiwizowane wyświetlane jako niedostępny w **usł
 
 Przed rozpoczęciem edycji tych szablonów, lub konwersji do etykiet, upewnij się, że masz świadomość następujących zmian i zagadnienia. Z powodu zmiany implementacji poniżej jest szczególnie ważne, jeśli wcześniej zarządzane szablonów w klasycznym portalu Azure.
 
-- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby można dodawać lub usuwać poszczególne prawa użytkowania za pomocą witryny Azure portal. Możesz też korzystać z programu PowerShell [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
+- Po edycji lub konwersji szablonu i zapisaniu zasad usługi Azure Information Protection w oryginalnych [prawach użytkowania](configure-usage-rights.md) są wprowadzane następujące zmiany. W razie potrzeby można dodawać lub usuwać poszczególne prawa użytkowania za pomocą witryny Azure portal. Możesz też korzystać z programu PowerShell [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) i [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
     
     - Opcja **Zezwalaj na makra** (nazwa pospolita) jest automatycznie dodawana. To prawo użytkowania jest wymagane przez pasek usługi Azure Information Protection w aplikacji pakietu Office.
 

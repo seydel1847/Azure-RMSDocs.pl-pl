@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a64397b7d7245367a8cc2194729344f75615693
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1d749c77ada71a7f086b5d7836f44b530cab2dc9
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151796"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330345"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
@@ -111,11 +111,11 @@ Teraz, skoro klucz SLC został wyodrębniony i zaimportowany do lokalnego moduł
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>Część 2. Tworzenie pakietu klucza HSM i przenoszenie go do usługi Azure Key Vault
 
-Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, wykonaj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault) w dokumentacji usługi Azure Key Vault:
+Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, wykonaj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) w dokumentacji usługi Azure Key Vault:
 
-- [Krok 4. Przygotowanie klucza do przesłania](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+- [Krok 4. Przygotowanie klucza do przesłania](/azure/key-vault/key-vault-hsm-protected-keys#step-4-prepare-your-key-for-transfer)
 
-- [Krok 5. Przesłanie klucza do usługi Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azurekey-vault)
+- [Krok 5. Przesłanie klucza do usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#step-5-transfer-your-key-to-azure-key-vault)
 
 Nie wykonuj kroków służących do generowania pary klucza, ponieważ masz już klucz. Zamiast tego uruchom polecenie, aby przesłać ten klucz (w tym przykładzie parametr KeyIdentifier używa nazwy „contosobyok”) z lokalnego modułu HSM.
 

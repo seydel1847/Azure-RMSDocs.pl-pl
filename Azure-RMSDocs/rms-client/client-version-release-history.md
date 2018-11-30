@@ -4,18 +4,17 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4b9419ee12dfef0db29604dc7a396eedd7225fc
-ms.sourcegitcommit: a547dee247e4961e8f7c1f08e39b03dff710a74c
+ms.openlocfilehash: b0dc98bb1c626737fb087c78691bb3a9e35a445e
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51628075"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52586013"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
 
@@ -42,36 +41,42 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 >  
 > Aby uzyskać pomoc techniczną, zobacz [opcje pomocy technicznej i zasoby społecznościowe](../information-support.md#support-options-and-community-resources) informacji. Zachęcamy także do kontaktowania się z naszym zespołem ds. usługi Azure Information Protection w [witrynie Yammer](https://www.yammer.com/askipteam/).
 
-## <a name="versions-later-than-137190"></a>Wersjach starszych niż 1.37.19.0
-
-W przypadku wersji 1 klienta, która jest nowsza niż 1.37.19.0 jest kompilacji w wersji zapoznawczej do celów testowania i oceny. 
+## <a name="version-141510"></a>Wersja 1.41.51.0
 
 > [!TIP]
 > Zainteresowani oceny klienta etykietowania ujednolicone usługi Azure Information Protection, ponieważ etykiety są publikowane w Centrum zgodności i zabezpieczeń usługi Office 365? Zobacz [usługi Azure Information Protection unified etykietowania klienta: informacje o wersji wersji](unifiedlabelingclient-version-release-history.md).
 
-**Wydana**: 20/09/2018
+**Wydana**: 11/27/2018 r.
+
+Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 
 **Nowe funkcje:**
 
 - Obsługa [centralnej funkcji raportowania](../reports-aip.md) dla funkcji analizy usługi Azure Information Protection ogłoszeniem na konferencji Microsoft Ignite.
 
-**Dodatkowe:**
+- W programie Excel teraz również obsługuje [oznaczenia wizualnego](../configure-policy-markings.md)s w różnych kolorach.
 
-Tylko dla tej wersji zapoznawczej, specyficzne dla skaner:
+- Dla istniejących wdrożeń S/MIME nowy Zaawansowane ustawienia (w wersji zapoznawczej) Aby skonfigurować etykietę klienta automatyczne stosowanie ochrony szyfrowania S/MIME w programie Outlook. [Więcej informacji](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
-- Zainstaluj skaner, wykonując następujące czynności:
+- Nowe zaawansowane ustawienia klienta, jako alternatywę do edytowania rejestru, aby zapobiec monity o logowanie dla usługi Azure Information Protection [odłączone komputery](client-admin-guide-customizations.md#support-for-disconnected-computers).
+
+**Poprawki**:
+
+- Klient usługi Azure Information Protection nie jest już wyklucza msg, RAR i zip rozszerzeń nazw plików dla Eksploratora plików (kliknij prawym przyciskiem myszy) i poleceń programu PowerShell. Jednak te rozszerzenia nazw plików pozostaną wykluczone domyślnie skanera. 
+
+- Klient usługi Azure Information Protection można wyłączyć ochronę wielu plików (Wybór wielokrotny i folderu zawierającego pliki chronione) podczas używania Eksploratora plików kliknij prawym przyciskiem myszy.
+
+- Dla programu Excel:
     
-    1. Zainstaluj bieżącą wersję GA (1.37.19.0) klienta.
-    2. Zainstaluj i skonfiguruj skanera.
-    3. Uruchomić skanera.
-    4. Uaktualnienie klienta usługi Azure Information Protection do tej wersji zapoznawczej.
-    5. Uruchomić skanera.
-
-- Znany problem z skanowaniem dużych zestawów danych:
+    - Oznaczenia wizualne są teraz stosowane, jeśli zapiszesz arkusz kalkulacyjny podczas edytowania komórki.
     
-    Z tą wersją zapoznawczą stopniowo zwiększać liczbę plików do skanowania i monitorowania postępu. Jeśli stan skanera zgłasza, że jest uruchomiona, ale nowe pliki nie uzyskać skanowany, Zmniejsz liczbę plików do skanowania i ponownie uruchomić skanera. 
+    - Excel 2010: Gdy arkusz kalkulacyjny jest chroniony za pomocą współautorem [poziom uprawnień](../configure-usage-rights.md#rights-included-in-permissions-levels), **Usuń etykietę** przycisk jest teraz dostępna, kliknij prawym przyciskiem myszy plik, a wybranie **Klasyfikuj i Ochrona**.
 
-Aby uzyskać instrukcje dotyczące instalowania, konfigurowania i uruchomić skanera, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md).
+- Zaawansowane ustawienia klienta, które mogą [usuwanie nagłówków i stopek z innych rozwiązań etykietowania](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions) obsługuje teraz układy niestandardowe.
+
+**Dodatkowe zmiany:**
+
+- Jeśli harmonogram skanera została ustawiona na **zawsze**, jest teraz opóźnienie równej 30 sekund między skanowania.
 
 ## <a name="version-137190"></a>Wersja 1.37.19.0
 
@@ -116,6 +121,8 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
     - Można teraz chronić wszystkie typy plików za pomocą `*` symboli wieloznacznych podczas edycji rejestru zgodnie z opisem w [edycji rejestru skanera](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner) sekcji.
 
 - Podczas wyświetlania wiadomości e-mail przy użyciu ikony strzałek następnej i poprzedniej pozycji na pasku narzędzi Szybki dostęp pokazywane jest prawidłowa etykieta dla każdej wiadomości e-mail.
+
+- Podczas klasyfikowania i ochrony za pomocą Eksploratora plików, programu PowerShell lub skaner metadane dokumentu pakietu Office jest ono usuwane lub szyfrowane.
 
 - Uprawnienia niestandardowe obsługuje adresy e-mail adresatów, zawierające apostrof.
 
@@ -198,9 +205,12 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 **Nowe funkcje**:
 
 - Skaner usługi Azure Information Protection: moduł programu PowerShell, który jest dołączony klient ma nowe polecenia cmdlet do zainstalowania i skonfigurowania skaner, tak aby odnajdywania, klasyfikowania i ochrony plików na swoich lokalnych magazynów danych. Aby uzyskać instrukcje, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](../deploy-aip-scanner.md). 
-- Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej information]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- Teraz możesz ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook przy użyciu zmiennej instrukcji "If.App" w ciągu tekstowym oraz identyfikowanie typu aplikacji. [Więcej informacji](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - Obsługa [ustawienie zasad](../configure-policy-settings.md), **wyświetlany pasek Information Protection w aplikacjach pakietu Office**. Gdy to ustawienie jest wyłączone, użytkownicy wybierają etykiety z **Chroń** przycisk na Wstążce.
+
+- Nagłówki i stopki w programach Word, Excel i PowerPoint teraz obsługuje wiele wierszy tekstu.
 
 - Nowe zaawansowane ustawienia klienta (w wersji zapoznawczej) można włączyć klasyfikacji, aby uruchomić w sposób ciągły w tle. Jeśli to ustawienie jest włączone dla aplikacji pakietu Office klasyfikacji automatycznej i zalecanej działa w sposób ciągły w tle, zamiast uruchamiać podczas zapisywania dokumentów. Ta zmiana w zachowaniu można teraz zastosować klasyfikacji automatycznej i zalecanej do dokumentów, które są przechowywane w usłudze SharePoint Online. [Więcej informacji](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 

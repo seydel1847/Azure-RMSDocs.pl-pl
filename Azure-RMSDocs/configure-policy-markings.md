@@ -4,16 +4,16 @@ description: Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, mo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292613"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52585996"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Konfigurowanie etykiety pod kątem oznaczeń wizualnych w usłudze Azure Information Protection
 
@@ -23,8 +23,6 @@ Gdy przypisujesz etykietę do dokumentu lub wiadomości e-mail, możesz wybrać 
 
 Dodatkowe informacje na temat tych oznaczeń wizualnych:
 
-- Wiele wierszy tekstu są obsługiwane w przypadku wszystkich oznaczeń wizualnych.
-
 - Nagłówki i stopki dotyczą programów Word, Excel, PowerPoint i Outlook.
 
 - Znaki wodne dotyczą programów Word, Excel i PowerPoint:
@@ -32,6 +30,8 @@ Dodatkowe informacje na temat tych oznaczeń wizualnych:
     - Excel: znaki wodne są widoczne tylko w trybach Podgląd wydruku i Układ strony oraz po wydrukowaniu.
     
     - PowerPoint: znaki wodne są stosowane do wzorca slajdów jako obraz tła. Na **widoku** karcie **wzorca slajdów**, upewnij się, że **Ukryj grafiki w tle** nie zaznaczono pole wyboru.
+
+- Wiele wierszy są obsługiwane znaki wodne i nagłówki i stopki w programach Word, Excel i PowerPoint. Jeśli określisz wiele wierszy dla nagłówka lub stopki, która jest stosowana etykieta w programie Outlook, wiersze są łączone. W tym scenariuszu należy wziąć pod uwagę przy użyciu konfiguracji [ustawić różne pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook](##setting-different-visual-markings-for-word-excel-powerpoint-and-outlook).
 
 - Ciąg maksymalnej długości:
     
@@ -41,7 +41,7 @@ Dodatkowe informacje na temat tych oznaczeń wizualnych:
 
 - Można określić tylko ciąg tekstowy lub użyć [zmiennych](#using-variables-in-the-text-string) w celu dynamicznego tworzenia ciągu tekstowego podczas stosowania nagłówka, stopki lub znaku wodnego.
 
-- Word, PowerPoint i Outlook obsługuje oznaczeń wizualnych w różnych kolorach. Oznaczenia wizualne, które są skonfigurowane do obsługi kolory zawsze wyświetlane jako czarny w programie Excel.
+- Word, PowerPoint, Outlook i Excel teraz obsługuje oznaczeń wizualnych w różnych kolorach.
 
 - Oznaczenia wizualne obsługuje tylko jeden język.
 
@@ -82,7 +82,7 @@ Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników
 
 W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać następujących zmiennych:
 
-- `${Item.Label}` — wybrana etykieta. Na przykład: Wewnętrzne
+- `${Item.Label}` — wybrana etykieta. Na przykład: Ogólne
 
 - `${Item.Name}` — nazwa pliku lub tematu wiadomości e-mail. Na przykład: JulySales.docx
 
@@ -95,6 +95,9 @@ W ciągu tekstowym dla nagłówka, stopki lub znaku wodnego można używać nast
 - `${Event.DateTime}` — data i godzina ustawienia wybranej etykiety. Na przykład: 16.08.2016 13:30
 
 Przykład: w przypadku określenia ciągu `Document: ${item.name}  Classification: ${item.label}` dla stopki etykiety **Ogólne** tekst stopki stosowany dla udokumentowanego nazwanego pliku project.docx będzie następujący: **Document: project.docx Classification: Ogólne**.
+
+>[!TIP]
+> Możesz także użyć [kod, aby wstawić nazwę etykiety pola](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification) do dokumentu lub szablonu.
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Ustawienie różnych pod kątem oznaczeń wizualnych programu Word, Excel, PowerPoint i Outlook
 

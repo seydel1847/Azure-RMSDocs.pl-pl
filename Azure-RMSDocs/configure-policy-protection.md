@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0ee7333baebd0a34f518ff9500df95ed57ed2b01
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: e16c50422268a05596ebc28e09d464959fd1e0b2
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751172"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303927"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Konfigurowanie etykiety w celu zastosowania ochrony przy użyciu usługi Rights Management
 
@@ -107,9 +107,10 @@ Program Exchange nie ma skonfigurowany dla usługi Azure Information Protection,
         ###### <a name="more-information-about-add-any-authenticated-users"></a>Więcej informacji na temat **Dodaj wszystkich uwierzytelnionych użytkowników** 
         To ustawienie nie ogranicza kto ma dostęp do zawartości, czy etykieta chroni szyfrowanie treści i opcji, można ograniczyć, jak zawartości mogą być używane (uprawnienia), zapewniając i dostępne (wygaśnięcia i dostęp w trybie offline). Jednak aplikacja otwierania chronionej zawartości musi umożliwiać do obsługi uwierzytelniania. Z tego powodu federacyjnego dostawców sieci społecznościowych, takich jak Google i jednorazowej kod dostępu uwierzytelniania należy używać tylko dla wiadomości e-mail i tylko wtedy, gdy używasz usługi Exchange Online i nowe funkcje z szyfrowanie wiadomości usługi Office 365. Konta Microsoft można przy użyciu podglądu usługi Azure Information Protection i pakietu Office 2016 kliknij do uruchomienia. 
           
-        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie: — Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.  
-            — Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.  
-            — Masz wymaganie, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.
+        Niektóre typowe scenariusze dotyczące wszystkie uwierzytelnieni użytkownicy ustawienie:
+        - Możesz nie mieć nic przeciwko, kto może wyświetlać zawartość, ale chcesz ograniczyć, sposobie ich użycia. Na przykład nie ma zawartość, aby edytować, skopiować lub drukowane.
+        - Nie trzeba ograniczyć, kto uzyskuje dostęp do zawartości, ale chcesz mieć możliwość śledzenia, który zostanie otwarty i ewentualnie odwołać.
+        - Masz wymagania, że zawartość, muszą być szyfrowane podczas przechowywania i podczas przesyłania, ale nie wymaga kontroli dostępu.
         
     - Wybierz **wprowadź szczegóły** ręcznie określić adres e-mail, adresy dla poszczególnych użytkowników lub grup (wewnętrznych lub zewnętrznych). Możesz też użyć tej opcji w celu objęcia wszystkich użytkowników w innej organizacji, wprowadzając dowolną nazwę domeny z tej organizacji. Dla dostawców sieci społecznościowych, można także użyć tej opcji, wprowadzając odpowiednią nazwę domeny, takich jak **gmail.com**, **hotmail.com**, lub **outlook.com**.
         

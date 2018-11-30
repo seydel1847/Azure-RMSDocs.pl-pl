@@ -4,18 +4,18 @@ description: Masz pytanie związane z usługą Azure Information Protection, kt�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 2c0d391e2d00ec7d0bc09d98de3fe6f502f999a4
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: a4aa5b1a6375655b9b6ab20f092a7def47187225
+ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707746"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52421049"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Często zadawane pytania dotyczące klasyfikacji i etykietowania w usłudze Azure Information Protection
 
@@ -68,6 +68,24 @@ Nie. Jeśli wiadomość e-mail zawierająca załączniki zostanie oznaczona, za�
 Ponieważ usługi Azure Information Protection używa trwałych metadanych do klasyfikacji, która zawiera etykiety zwykłego tekstu, te informacje mogą być odczytywane przez rozwiązania DLP i inne aplikacje. 
 
 Aby uzyskać więcej informacji i przykłady użycia tego metadanych przy użyciu usługi Exchange Online reguły przepływu poczty, zobacz [konfigurowania usługi Exchange Online reguły przepływu poczty dla etykiety usługi Azure Information Protection](configure-exo-rules.md).
+
+## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>Można utworzyć szablon dokumentu, który automatycznie dołącza klasyfikacji?
+
+Tak. Można skonfigurować etykietę w celu [zastosowanie nagłówka lub stopki, która zawiera nazwę etykiety](configure-policy-markings.md). Ale jeśli który nie spełnia wymagań, można utworzyć szablon dokumentu, który ma formatowanie i Dodaj klasyfikacji jako kod pola. 
+
+Na przykład może być tabelą w nagłówku w dokumencie, który wyświetla klasyfikacji. Możesz też korzystać konkretne sformułowania wprowadzenie, który odwołuje się Klasyfikacja dokumentów.
+
+Aby dodać ten kod pola w dokumencie:
+
+1. Oznaczania dokumentów i zapisz go. Ta akcja tworzy nowe pola metadanych, które można teraz używać kodu pola.
+
+2. W dokumencie, umieść kursor w miejscu, w którym chcesz dodać etykiety klasyfikacji i następnie **Wstaw** zaznacz **tekstu** > **Szybkie części**  >  **Pola**.
+
+3. W **pola** okno dialogowe z **kategorie** listy rozwijanej wybierz **informacji o dokumencie**. Następnie w **pola nazwy** listy rozwijanej wybierz **DocProperty**.
+
+4. Z **właściwość** listy rozwijanej wybierz **czułości**i wybierz **OK**.
+
+Bieżącą etykietę klasyfikacji jest wyświetlana w dokumencie, a ta wartość będzie odświeżana automatycznie przy każdym Otwórz dokument, lub użyj szablonu. Dlatego jeśli zmieni się etykieta klasyfikację, która jest wyświetlana dla tego pola kodu jest automatycznie aktualizowana w dokumencie.
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>Czym różni się klasyfikacja wiadomości e-mail usługi Azure Information Protection od klasyfikacji wiadomości e-mail stosowanej w programie Exchange?
 

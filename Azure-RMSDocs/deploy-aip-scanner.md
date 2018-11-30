@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 9c5c07d09096d5d0f75c53fd03f85f5e29af1640
-ms.sourcegitcommit: 74d13c7162a0a94cda4762556a975a1d12433a13
+ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281313"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386801"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -39,7 +39,7 @@ Po skonfigurowaniu usługi [zasad usługi Azure Information Protection](configur
 
 ![Omówienie architektury skanera usługi Azure Information Protection](./media/infoprotect-scanner.png)
 
-Skaner można sprawdzić wszystkie pliki, które umożliwia indeksowanie Windows, korzystając z interfejsu iFilters, które są zainstalowane na komputerze. Następnie aby określić, czy pliki muszą etykietowania, skaner używa usługi Office 365 wbudowane utraty prevention (DLP) poufności informacji typy danych i wykrywania wzorca lub wzorców wyrażeń regularnych usługi Office 365. Ponieważ skaner korzysta z klienta Azure Information Protection, można klasyfikować i ochrony tej samej [typy plików](./rms-client/client-admin-guide-file-types.md).
+Skaner można sprawdzić wszystkie pliki, które umożliwia indeksowanie Windows, korzystając z interfejsu IFilters, które są zainstalowane na komputerze. Następnie aby określić, czy pliki muszą etykietowania, skaner używa usługi Office 365 wbudowane utraty prevention (DLP) poufności informacji typy danych i wykrywania wzorca lub wzorców wyrażeń regularnych usługi Office 365. Ponieważ skaner korzysta z klienta Azure Information Protection, można klasyfikować i ochrony tej samej [typy plików](./rms-client/client-admin-guide-file-types.md).
 
 Można uruchomić skanera odnajdywania tylko w trybie, której użyć raportów, aby sprawdzić, co się stanie, jeśli pliki zostały oznaczone. Alternatywnie można uruchomić skanera, aby automatycznie zastosować etykiety. Można również uruchomić skanera, aby odnaleźć plików, które zawierają typy informacji poufnych, bez konieczności konfigurowania etykiety dla warunków automatycznej klasyfikacji.
 
@@ -192,7 +192,7 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
     
         Start-AIPScan
     
-    Alternatywnie można uruchomić skanera z **usługi Azure Information Protection** bloku w witrynie Azure portal, gdy używasz **skanera** > **węzłów (wersja zapoznawcza)**  >  \* *<* skanera węzła * > ** > **Skanuj teraz** opcji.
+    Alternatywnie można uruchomić skanera z **usługi Azure Information Protection** bloku w witrynie Azure portal, gdy używasz **skanera** > **węzłów (wersja zapoznawcza)**  >  \* *<* węzła skanera*>** > **Skanuj teraz** opcji.
 
 2. Poczekaj, aż skanera zakończyć cykl, uruchamiając następujące polecenie:
     
@@ -207,7 +207,7 @@ Za pomocą skanera usługi domyślnej konfiguracji możesz teraz przystąpić do
 3. Przejrzyj raporty, które są przechowywane w lokalizacji %*localappdata*%\Microsoft\MSIP\Scanner\Reports, które mają format pliku CSV. W przypadku domyślnej konfiguracji skaner tylko te pliki, które spełniają warunki automatycznej klasyfikacji znajdują się w tych raportach.
     
     > [!TIP]
-    > Obecnie w wersji zapoznawczej skanery wysyłać tych informacji do usługi Azure Information Protection co pięć minut, jeśli masz wersję zapoznawczą skaner, dzięki czemu można wyświetlić wyniki w czasie zbliżonym do rzeczywistego w witrynie Azure portal. Aby uzyskać więcej informacji, zobacz [raportowania usługi Azure Information Protection](reports-aip.md). 
+    > Skanery wysyłać tych informacji do usługi Azure Information Protection co pięć minut, dzięki czemu można wyświetlić wyniki w czasie zbliżonym do rzeczywistego w witrynie Azure portal. Aby uzyskać więcej informacji, zobacz [raportowania usługi Azure Information Protection](reports-aip.md). 
         
     Wyniki są nie zgodnie z oczekiwaniami, może być konieczne dostosowanie warunków określonych w zasadach usługi Azure Information Protection. Jeśli tak jest rzeczywiście, powtórz kroki od 1 do 3, dopóki nie będziesz gotowy zmienić konfigurację do zastosowania klasyfikacji i opcjonalnie ochrony. 
 
@@ -242,7 +242,7 @@ Skaner automatycznie pomija pliki, które są [wykluczane z klasyfikacji i ochro
 
 Możesz zmienić to zachowanie, definiując listę typów plików ze skanowaniem lub Wyklucz ze skanowania. Po określeniu tej listy i nie należy określać repozytorium danych, listy ma zastosowanie do wszystkich repozytoriów danych, które nie mają własne określonej listy. Aby określić tej listy, użyj [AIPScannerScannedFileTypes zestaw](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes). Po określeniu listy typów plików, nowy typ pliku można dodać do listy przy użyciu [AIPScannerScannedFileTypes Dodaj](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)i usuwanie typu pliku z listy przy użyciu [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes).
 
-Następnie skaner korzysta Windows iFilter w celu zeskanowania następujących typów plików. Dla tych typów plików dokumentu zostaną oznaczone etykietą, za pomocą warunków, które określono dla etykiety.
+Następnie skaner korzysta Windows IFilter w celu zeskanowania następujących typów plików. Dla tych typów plików dokumentu zostaną oznaczone etykietą, za pomocą warunków, które określono dla etykiety.
 
 |Typ aplikacji|Typ pliku|
 |--------------------------------|-------------------------------------|
@@ -252,13 +252,17 @@ Następnie skaner korzysta Windows iFilter w celu zeskanowania następujących t
 |PDF |.pdf|
 |Tekst|.txt; .xml; .csv|
 
-Domyślnie tylko typów plików pakietu Office są chronione przy użyciu skanera, dzięki czemu nie są chronione pliki PDF i tekst, chyba że użytkownik [edytować rejestr](#editing-the-registry-for-the-scanner) Aby określić typy plików:
+Ponadto skaner umożliwia również optyczne rozpoznawanie znaków (OCR) sprawdzanie obrazów TIFF z rozszerzeniem nazwy pliku TIFF, podczas konfigurowania [Windows TIFF IFilter ustawienia](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) na komputerze z systemem skanera.
+
+Domyślnie tylko typów plików pakietu Office są chronione przez skaner, więc dokumentów PDF i plików tekstowych i obrazów TIFF nie są chronione, chyba że użytkownik [edytować rejestr](#editing-the-registry-for-the-scanner) Aby określić typy plików:
 
 - Jeśli nie dodasz typ pliku PDF w rejestrze: pliki, które mają rozszerzenie nazwy pliku, to zostaną oznaczone etykietą, ale jeśli etykieta została skonfigurowana do ochrony, ochronie nie została zastosowana.
 
 - Jeśli nie dodasz typy plików txt, XML lub CSV w rejestrze: pliki, które mają następujące rozszerzenia nazw plików będzie nie być oznaczony etykietą, ponieważ nie obsługują następujące typy plików tylko do klasyfikacji.
 
-Na koniec dla pozostałych typów plików, skaner ma zastosowanie etykiety domyślnej w zasadach usługi Azure Information Protection lub etykiety domyślnej, konfigurowanego do skanera.
+- Jeśli nie dodasz typ pliku TIFF w rejestrze po skonfigurowaniu filtr Windows TIFF IFilter: pliki, które mają rozszerzenie nazwy pliku, to zostaną oznaczone etykietą, ale jeśli etykieta została skonfigurowana do ochrony, ochronie nie została zastosowana.
+
+Na koniec dla pozostałych typów plików, skaner Kontroluj ich ale stosuje się etykietę domyślną w zasadach usługi Azure Information Protection lub etykiety domyślnej, konfigurowanego do skanera.
 
 |Typ aplikacji|Typ pliku|
 |--------------------------------|-------------------------------------|
@@ -380,7 +384,7 @@ Inne czynniki, które mają wpływ na wydajność skanera:
     
     - Skaner przebiega szybciej, korzystając z [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) do zastosowania etykiety domyślnej do wszystkich plików, ponieważ skaner nie Sprawdź zawartość pliku.
     
-    - Skaner działa więcej spowalnianiu, gdy używasz [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) Aby zidentyfikować wszystkie warunki niestandardowe i typy znanych informacji poufnych.
+    - Skaner działa wolniej, gdy używasz [alternatywnej konfiguracji](#using-the-scanner-with-alternative-configurations) Aby zidentyfikować wszystkie warunki niestandardowe i typy znanych informacji poufnych.
     
 
 ## <a name="list-of-cmdlets-for-the-scanner"></a>Listę poleceń cmdlet skanera 

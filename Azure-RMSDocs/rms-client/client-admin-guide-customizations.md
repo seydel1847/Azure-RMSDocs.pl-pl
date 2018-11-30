@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/06/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 41e092b379cfb52db286a61ad715703514e500d0
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292596"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386784"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
 
@@ -50,10 +50,12 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 |EnableCustomPermissions|[Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnablePDFv2Protection|[Ochrona plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[Migrowanie etykiety z Secure Islands i innych rozwiązań etykietowania](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|LabelToSMIME|[Konfigurowanie etykiety w celu zastosowania ochrony szyfrowania S/MIME w programie Outlook](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |OutlookDefaultLabel|[Ustaw różne etykiety domyślne dla programu Outlook](#set-a-different-default-label-for-outlook)|
 |OutlookRecommendationEnabled|[Włącz zalecana klasyfikacja w programie Outlook](#enable-recommended-classification-in-outlook)|
 |PostponeMandatoryBeforeSave|[Usuń "Nie now" dla dokumentów, jeśli używasz obowiązkowego etykietowania](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |ProcessUsingLowIntegrity|[Wyłącz poziom o niskiej integralności skanera](#disable-the-low-integrity-level-for-the-scanner)|
+|PullPolicy|[Obsługa odłączonych komputerów](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[Usuwanie nagłówków i stopek z innych rozwiązań etykietowania](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[Modyfikowanie adresu e-mail dla raportu, łącze problem](#modify-the-email-address-for-the-report-an-issue-link)|
 |RunPolicyInBackground|[Włącz klasyfikacji, aby uruchomić w sposób ciągły w tle](#turn-on-classification-to-run-continuously-in-the-background)|
@@ -62,13 +64,13 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>Zapobieganie monitom o logowanie dla komputerów korzystających tylko z usługi AD RMS
 
-Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection. W przypadku komputerów, które komunikują się tylko z usługą AD RMS, ta konfiguracja może powodować wyświetlanie użytkownikom zbędnego monitu o logowanie. Temu monitowi o logowanie można zapobiec, edytując rejestr:
+Domyślnie klient usługi Azure Information Protection automatycznie próbuje połączyć się z usługą Azure Information Protection. W przypadku komputerów, które komunikują się tylko z usługą AD RMS, ta konfiguracja może powodować wyświetlanie użytkownikom zbędnego monitu o logowanie. Ten monit logowania można zapobiec, edytując rejestr.
 
-Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **0**:
+ - Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **0**:
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
-
-Niezależnie od tego ustawienia klient usługi Azure Information Protection postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](client-deployment-notes.md#rms-service-discovery), aby odnaleźć swój klaster usługi AD RMS.
+Niezależnie od tego ustawienia klienta usługi Azure Information Protection nadal postępuje zgodnie ze standardowym [procesem odnajdowania usługi RMS](client-deployment-notes.md#rms-service-discovery) można znaleźć jej klastra usług AD RMS.
 
 ## <a name="sign-in-as-a-different-user"></a>Zaloguj się jako inny użytkownik
 
@@ -133,11 +135,28 @@ Domyślnie klient usługi Azure Information Protection automatycznie próbuje po
 
 Należy pamiętać, że bez połączenia internetowego klient nie może zastosować ochronę (lub wyłączania ochrony) przy użyciu klucza oparta na chmurze w Twojej organizacji. Zamiast tego klient może mieć maksymalnie przy użyciu etykiet, które są stosowane tylko klasyfikacja lub ochrony, który używa [HYOK](../configure-adrms-restrictions.md).
 
-Aby skonfigurować to ustawienie, Znajdź następującą nazwę wartości rejestru, a następnie ustaw dane wartości **0**:
+Można zapobiec monit logowania do usługi Azure Information Protection przy użyciu [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) , należy skonfigurować w witrynie Azure portal, a następnie pobrania zasad dla komputerów. Ewentualnie można zapobiec ten monit logowania, edytując rejestr.
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+- Aby skonfigurować zaawansowane ustawienia klienta:
+    
+    1. Wprowadź następujące parametry:
+    
+        - Klucz: **PullPolicy**
+        
+        - Wartość: **Fałsz**
+    
+    2. Pobierz zasady korzystając z tego ustawienia i zainstalować na komputerach, korzystając z instrukcji.
 
-Upewnij się, że klient ma prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli to konieczne, można wyeksportować zasad globalnych lub zasad o określonym zakresie w witrynie Azure portal i skopiuj wyeksportowany plik na komputerze klienckim. Ta metoda umożliwia również zastąpienie nieaktualnego pliku zasad najnowszymi opublikowanymi zasadami. Eksportowanie zasad nie obsługuje jednak scenariusz, w którym użytkownik należy do więcej niż jedna zasada o określonym zakresie. Należy także zauważyć, jeśli użytkownicy wybiorą **Resetowanie ustawień** opcję [Pomoc i opinie](client-admin-guide.md#help-and-feedback-section), ta akcja usuwa plik zasad i renderuje klienta przestanie działać, dopóki ręcznie zastąpić plik zasad lub Klient łączy się z usługą, aby pobrać zasady.
+- Alternatywnie aby edytować rejestr:
+    
+    - Znajdź następującą nazwę wartości, a następnie ustaw dane wartości na **0**:
+    
+        **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+
+Klient musi mieć prawidłowy plik zasad o nazwie **Policy.msip**w **%LocalAppData%\Microsoft\MSIP** folderu.
+
+Można wyeksportować zasad globalnych lub zasad o określonym zakresie w witrynie Azure portal, a następnie skopiuj wyeksportowany plik na komputerze klienckim. Ta metoda umożliwia również zastąpienie pliku zasad wiadomość limit z date najnowsze zasady. Eksportowanie zasad nie obsługuje jednak scenariusz, w którym użytkownik należy do więcej niż jedna zasada o określonym zakresie. Należy także zauważyć, jeśli użytkownicy wybiorą **Resetowanie ustawień** opcję [Pomoc i opinie](client-admin-guide.md#help-and-feedback-section), ta akcja usuwa plik zasad i renderuje klienta przestanie działać, dopóki ręcznie zastąpić plik zasad lub Klient łączy się z usługą, aby pobrać zasady.
 
 Podczas eksportowania zasady w witrynie Azure portal, plik z rozszerzeniem zip jest pobierana, który zawiera wiele wersji zasad. Te wersje zasad odpowiadają różne wersje klienta usługi Azure Information Protection:
 
@@ -222,6 +241,46 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Wartość: \< **identyfikator etykiety**> lub **None**
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Konfigurowanie etykiety w celu zastosowania ochrony szyfrowania S/MIME w programie Outlook
+
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie jest w wersji zapoznawczej i mogą ulec zmianie.
+
+Użyj tego ustawienia, tylko jeśli masz już działający [wdrożenia szyfrowania S/MIME](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) i etykiety w celu automatycznego zastosowania tej metody ochrony wiadomości e-mail, a nie ochrony usługi Rights Management z usługi Azure Information Protection. Wynikowy ochrony jest taka sama jak gdy użytkownik ręcznie wybierze opcji szyfrowania S/MIME z programu Outlook.
+
+Ta konfiguracja wymaga określenia Klient zaawansowany, ustawienie o nazwie **LabelToSMIME** dla każdej etykiety usługi Azure Information Protection, który chcesz zastosować ochronę protokołu S/MIME. Następnie dla każdego wpisu, ustaw wartość używając następującej składni:
+
+`[Azure Information Protection label ID];[S/MIME action]`
+
+Wartość Identyfikatora etykieta jest wyświetlana na **etykiety** bloku, wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w witrynie Azure portal. Za pomocą protokołu S/MIME etykiety podrzędnej, należy zawsze określać identyfikator po prostu etykietę podrzędną i nie etykiecie nadrzędnej. Po określeniu etykiety podrzędnej, Etykieta nadrzędna musi być w tym samym zakresie lub w ramach globalnych zasad.
+
+Akcja protokołu S/MIME może być:
+
+- `Sign;Encrypt`: Aby zastosować podpisów cyfrowych i szyfrowania S/MIME
+
+- `Encrypt`: Aby zastosować tylko szyfrowania S/MIME
+
+- `Sign`: Aby zastosować tylko podpis cyfrowy
+
+Przykładowe wartości, aby uzyskać identyfikator etykiety **dcf781ba-727f-4860-b3c1-73479e31912b**:
+
+- Aby zastosować podpisów cyfrowych i szyfrowania S/MIME:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b; Logowania; Szyfrowanie**
+
+- Aby zastosować tylko szyfrowania S/MIME:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b; Szyfrowanie**
+    
+- Aby zastosować tylko podpis cyfrowy:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b; Logowanie**
+
+W wyniku tej konfiguracji po zastosowaniu etykiety do wiadomości e-mail, S/MIME ochrona jest stosowana do wiadomości e-mail, oprócz etykiety klasyfikacji.
+
+Jeśli etykieta, którą określasz, jest skonfigurowany do ochrony usługi Rights Management w witrynie Azure portal, ochrony szyfrowania S/MIME zastępuje ochrony usługi Rights Management tylko w programie Outlook. Dla wszystkich pozostałych scenariuszach, które obsługuje etykietowania zostaną zastosowane ochrony usługi Rights Management.
+
+Etykiety, które mają być wyświetlane w programie Outlook w tylko, skonfigurować etykietę do stosowania jednej akcji zdefiniowane przez użytkownika z **nie przesyłaj dalej**, zgodnie z opisem w [Szybki Start: Konfigurowanie etykiety dla użytkowników w łatwy sposób chronić wiadomości e-mail zawierają poufne informacje](../quickstart-label-dnf-protectedemail.md).
+
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>Usuń "Nie now" dla dokumentów, jeśli używasz obowiązkowego etykietowania
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
@@ -296,7 +355,8 @@ Aby użyć poleceń programu PowerShell do konwersji istniejących plików ppdf 
     
     - Wartość **RMSTemplateId**. Jeśli ta wartość jest **ograniczony dostęp**, użytkownik ma chroniony plik przy użyciu uprawnień niestandardowych, a nie z ustawień, które są skonfigurowane dla etykiety. Jeśli będziesz kontynuować, te uprawnienia niestandardowe zostaną zastąpione przez ustawienia ochrony etykiety. Zdecyduj, czy chcesz kontynuować, lub poprosić użytkownika (wartość wyświetlaną dla **RMSIssuer**) aby usunąć etykietę, a następnie ponownie zastosuj go, wraz z ich oryginalnego uprawnienia niestandardowe.
 
-3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad](../configure-policy-settings.md) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić  *Uzasadnienie* parametru z powodu. Przykład: 
+3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad] (.. / configure-
+4. Settings.MD) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić *uzasadnienie* parametru z powodu. Przykład: 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
 
@@ -417,7 +477,7 @@ Zaawansowane ustawienia klienta:
 
 Ta konfiguracja korzysta z wielu [Zaawansowane ustawienia klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal) , należy skonfigurować w witrynie Azure portal. Te ustawienia są w wersji zapoznawczej i mogą ulec zmianie.
 
-Ustawienia pozwalają. Usuń lub Zamień nagłówków i stopek z dokumentów, po zastosowaniu tych oznaczeń wizualnych, przez inne rozwiązanie etykietowania. Na przykład stopki stare zawiera nazwę starego etykiety, który teraz poddano migracji do usługi Azure Information Protection z nową nazwę etykiety i swój własny stopki.
+Ustawienia pozwalają. Usuń lub Zamień oparte na tekście nagłówków i stopek z dokumentów, po zastosowaniu tych oznaczeń wizualnych, przez inne rozwiązanie etykietowania. Na przykład stopki stare zawiera nazwę starego etykiety, który teraz poddano migracji do usługi Azure Information Protection z nową nazwę etykiety i swój własny stopki.
 
 Gdy klient pobiera tę konfigurację w zasadach, stare nagłówki i stopki są usunięty lub zastąpiony po otwarciu dokumentu w aplikacji pakietu Office i wszelkie etykiety usługi Azure Information Protection jest stosowany do dokumentu.
 

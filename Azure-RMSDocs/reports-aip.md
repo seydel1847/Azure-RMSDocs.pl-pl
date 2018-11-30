@@ -4,19 +4,19 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
-ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
+ms.openlocfilehash: 98403232311731b137719c613b2ce061a236b706
+ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611424"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52421015"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -44,6 +44,18 @@ Na przykład można znaleźć w następujących tematach:
     
     - Które aplikacje są używane do etykietowania
 
+- Z **dzienników aktywności**, w którym można wybrać okres:
+    
+    - Jakie etykietowania akcje zostały wykonane przez określonego użytkownika
+    
+    - Jakie etykietowania akcje zostały wykonane z określonym urządzeniem
+    
+    - Użytkowników, którzy mają uzyskują dostęp do określonych dokumentów etykietą
+    
+    - Jakie etykietowania akcje zostały wykonane dla ścieżki konkretnego pliku
+    
+    - Jakie etykietowania akcje zostały wykonane przez określoną aplikację, takie Eksploratora plików i kliknij prawym przyciskiem myszy lub moduł AzureInformationProtection PowerShell
+
 - Z **odnajdywanie danych** raportu:
 
     - Jakie pliki znajdują się na repozytoriów zeskanowane danych
@@ -52,7 +64,7 @@ Na przykład można znaleźć w następujących tematach:
     
     - Pliki, które zawierają poufne informacje dotyczące znanych kategorie, takie jak dane finansowe i dane osobowe i lokalizację plików według tych kategorii
     
-Raporty używają [usługi Azure Log Analytics](/azure/log-analytics/log-analytics-overview) do przechowywania danych w obszarze roboczym, którego jesteś właścicielem. Jeśli znasz język zapytań, można modyfikować zapytania bezpośrednio i utworzyć nowe raporty i pulpity nawigacyjne usługi Power BI. Może się okazać następującego samouczka poznać język zapytań: [rozpoczęcie korzystania z portalu usługi analiza](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
+Raporty używają [usługi Azure Log Analytics](/azure/log-analytics/log-analytics-overview) do przechowywania danych w obszarze roboczym, który Twoja organizacja jest właścicielem. Jeśli znasz język zapytań, można modyfikować zapytania bezpośrednio i utworzyć nowe raporty i pulpity nawigacyjne usługi Power BI. Może się okazać następującego samouczka poznać język zapytań: [rozpoczęcie korzystania z portalu usługi analiza](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
 
 Aby uzyskać więcej informacji, przeczytaj wpis w blogu: [odnajdywanie danych, raportowanie i analiza dla wszystkich swoich danych z usługą Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854).
 
@@ -80,7 +92,7 @@ Aby wygenerować raporty, punkty końcowe Wyślij następujące rodzaje informac
 
 - Wersja systemu operacyjnego klienta.
 
-Te informacje są przechowywane w obszarze roboczym usługi Azure Log Analytics, która należy do użytkownika i mogą być wyświetlane przez użytkowników, którzy mają prawa dostępu do tego obszaru roboczego. Aby uzyskać informacji na temat konfigurowania dostępu do swojego obszaru roboczego, zobacz [Zarządzanie kontami i użytkownikami](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) sekcji w dokumentacji platformy Azure.
+Te informacje są przechowywane w obszarze roboczym usługi Azure Log Analytics, które Twoja organizacja jest właścicielem i mogą być wyświetlane przez użytkowników, którzy mają prawa dostępu do tego obszaru roboczego. Aby uzyskać informacji na temat konfigurowania dostępu do swojego obszaru roboczego, zobacz [Zarządzanie kontami i użytkownikami](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) sekcji w dokumentacji platformy Azure.
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Wymagania wstępne dotyczące analizy usługi Azure Information Protection
 Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne, upewnij się, że zostały spełnione następujące wymagania.
@@ -88,7 +100,7 @@ Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne
 |Wymaganie|Więcej informacji|
 |---------------|--------------------|
 |Subskrypcję platformy Azure, która obejmuje usługi Log Analytics|Zobacz [cen usługi Azure Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics) strony.<br /><br />Jeśli nie masz subskrypcji platformy Azure lub obecnie nie używasz usługi Azure Log Analytics, stronie cennika zawiera również link do bezpłatnej wersji próbnej.|
-|Bieżącej wersji zapoznawczej klienta usługi Azure Information Protection.|Jeśli jeszcze nie zainstalowano już bieżącą wersję zapoznawczą klienta, możesz pobrać i zainstalować go z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
+|Bieżący ogólnie dostępnej wersji klienta usługi Azure Information Protection.|Jeśli użytkownik jeszcze nie zainstalowano tę wersję klienta, możesz pobrać i zainstalować go z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
 |Aby uzyskać **odnajdywania i ryzyko** raportu: <br /><br />-Wdrożono co najmniej jedno wystąpienie skanera usługi Azure Information Protection (bieżąca wersja zapoznawcza)|Aby uzyskać instrukcje dotyczące instalacji, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-aip-scanner.md). <br /><br />Jeśli wykonujesz uaktualnienie z poprzedniej wersji skanera, zobacz [uaktualnianie skanera usługi Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).|
 
 
@@ -115,6 +127,12 @@ W przypadku skonfigurowania obszaru roboczego, możesz przystąpić do ich wyśw
 W bloku Azure Information Protection, Znajdź **pulpity nawigacyjne** opcje menu, a następnie wybierz jedną z następujących opcji:
 
 - **Raport użycia (wersja zapoznawcza)**: Ten raport, aby zobaczyć, jak są używane etykiet. 
+
+- **Dzienniki aktywności (wersja zapoznawcza)**: Ten raport służy do wyświetlania, etykietowanie działania użytkowników i na urządzeniach i ścieżki plików.
+    
+    Ten raport jest obecnie wprowadzane do dzierżawców, więc jeśli nie widzisz go, spróbuj ponownie za kilka dni. 
+    
+    Ten raport zawiera **kolumn** opcja, która pozwala wyświetlić więcej informacji o aktywności niż domyślnym wyświetlaniem. Jedna z kolumn dotyczy **ryzyka dotyczącego urządzeń**, co spowoduje wyświetlenie danych z usługi Windows Defender, gdy ta aplikacja jest zintegrowana z usługą Azure Information Protection.
 
 - **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport służy do wyświetlania informacji na temat plików, które zostały odnalezione skanerów.
 
