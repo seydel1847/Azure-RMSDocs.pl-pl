@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16d3aa308395a65f7d3af6e74f817d88d6033747
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e535295c4393d2d7267174f587fcbbf34fa986b0
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150589"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023876"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>Faza 5 migracji — zadania po migracji
 
@@ -38,7 +38,7 @@ Aby usunąć punkt połączenia usługi, trzeba być zalogowanym jako administra
 
 4. Wybierz pozycję **Usuń bieżący punkt połączenia usługi**, a następnie kliknij przycisk **OK**.
 
-Teraz można monitorować serwery AD RMS dla działania. Na przykład sprawdzić [żądania w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [Przeprowadź inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
+Teraz można monitorować serwery AD RMS dla działania. Na przykład sprawdzić [żądania w raporcie kondycji systemu](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [tabelę](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) lub [Przeprowadź inspekcję dostępu użytkowników do chronionej zawartości](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx). 
 
 Po potwierdzeniu, że klienci usługi RMS nie komunikują się już z serwerami i pomyślnie używają usługi Azure Information Protection, można usunąć rolę serwera usługi AD RMS z tych serwerów. Jeśli używasz dedykowanych serwerów, możesz preferować krok zapobiegawczy polegający na pierwszym zamykanie serwerów w okresie czasu. Dzięki temu czas, aby upewnić się, że ma nie zostaną zgłoszone problemy, które mogą wymagać ponownego uruchomienia tych serwerów, aby utrzymać ciągłość usługi podczas badania, dlaczego klienci nie korzystają z usługi Azure Information Protection.
 
@@ -49,7 +49,7 @@ Po anulowaniu obsługi serwerów usługi AD RMS, możesz chcieć skorzystać z m
 
 ## <a name="step-11-complete-client-migration-tasks"></a>Krok 11. Zadania migracji klienta ukończone
 
-Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV systemu DNS, które zostały utworzone, podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx).
+Dla klientów urządzeń przenośnych i komputerów Mac: Usuń rekordy SRV systemu DNS, które zostały utworzone, podczas wdrażania [rozszerzenia usług AD RMS dla urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx).
 
 Gdy propogated tych zmian systemu DNS, Ci klienci automatycznie odnajdywać i rozpocząć korzystanie z usługi Azure Rights Management. Jednak komputery Mac, systemem Office Mac buforowanie tych informacji z usług AD RMS. Dla tych komputerów ten proces może potrwać do 30 dni. 
 

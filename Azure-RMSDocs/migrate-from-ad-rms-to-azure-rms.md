@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff3e9f93de5a46ec12ae001d798ec0292da8526a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 79dbf817086aa3f4b7919d87136008222a0bb1a6
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149008"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024267"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -51,13 +51,13 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
     
     - Następujące wersje usługi AD RMS obsługują migrację do usługi Azure Information Protection:
     
-        - Windows Server 2008 R2 (x64)
+        - Windows Server 2008 R2 (x 64)
         
-        - Windows Server 2012 (x64)
+        - Windows Server 2012 (x 64)
         
-        - Windows Server 2012 R2 (x64)
+        - Windows Server 2012 R2 (x 64)
         
-        - Windows Server 2016 (x64)
+        - System Windows Server 2016 (x 64)
         
     - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
     
@@ -75,7 +75,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
     Należy pamiętać, że w przypadku komputerów korzystających z pakietu Office 2010, musisz zainstalować klienta usługi Azure Information Protection, ponieważ ten klient zapewnia możliwość uwierzytelniania użytkowników w usługach w chmurze. W przypadku nowszych wersji pakietu Office klient usługi Azure Information Protection jest wymagany do obsługi klasyfikacji oraz etykietowania, i opcjonalny, ale zalecany, jeśli chcesz tylko chronić dane. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](./rms-client/client-admin-guide.md).
 
-    Mimo że do wykonania migracji z usługi AD RMS niezbędna jest subskrypcja usługi Azure Information Protection, zaleca się nie aktywować usługi Rights Management dla dzierżawy przed rozpoczęciem migracji. Proces migracji obejmuje ten krok aktywacji po wyeksportowaniu kluczy i szablonów z usługi AD RMS i zaimportowaniu ich do dzierżawy usługi Azure Information Protection. Jeśli jednak usługa Rights Management została już aktywowana, nadal można przeprowadzić migrację z usługi AD RMS, wykonując dodatkowe kroki.
+    Mimo że można było migrować z usług AD RMS, musisz mieć subskrypcję usługi Azure Information Protection, zaleca się, że usługi Rights Management dla dzierżawy nie została aktywowana przed rozpoczęciem migracji. Proces migracji obejmuje ten krok aktywacji po wyeksportowaniu kluczy i szablonów z usługi AD RMS i zaimportowaniu ich do dzierżawy usługi Azure Information Protection. Jednakże jeśli usługa Rights Management została już aktywowana, możesz nadal można przeprowadzić migrację z usługi AD RMS pewnych dodatkowych kroków.
 
 
 - **Przygotowanie do korzystania z usługi Azure Information Protection:**
@@ -86,7 +86,7 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
     Zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
-- **W przypadku użycia funkcji Zarządzanie prawami do informacji (IRM, Information Rights Management) programu Exchange Server** (np. reguł transportu i programu Outlook Web Access) lub programu SharePoint Server z usługami AD RMS:
+- **Jeśli używano funkcji zarządzania prawami do informacji (IRM) programu Exchange Server** (np. reguł transportu i programu Outlook Web Access) lub programu SharePoint Server z usługami AD RMS:
 
     - Planowanie na potrzeby krótkiego okresu, gdy funkcja IRM będzie niedostępna na tych serwerach
  
@@ -111,7 +111,7 @@ Aby potwierdzić tryb kryptograficzny w usłudze AD RMS:
 
 ### <a name="migration-limitations"></a>Ograniczenia migracji
 
-- Jeśli masz oprogramowanie i klientów nieobsługiwanych w usłudze Rights Management używanej przez usługę Azure Information Protection, nie będzie można przy ich użyciu chronić ani korzystać z zawartości chronionej przez usługę Azure Rights Management. Zapoznaj się z informacjami w sekcjach dotyczących obsługiwanych aplikacji i klientów w artykule [Wymagania dotyczące usługi Azure Rights Management](./requirements.md).
+- Jeśli masz oprogramowanie i klientów, które nie są obsługiwane przez usługę Rights Management, która jest używana przez usługę Azure Information Protection, nie będą mogli chronić ani korzystać z zawartości chronionej przez usługę Azure Rights Management. Zapoznaj się z informacjami w sekcjach dotyczących obsługiwanych aplikacji i klientów w artykule [Wymagania dotyczące usługi Azure Rights Management](./requirements.md).
 
 - Jeśli Twoje wdrożenie usługi AD RMS jest skonfigurowane do współpracy z partnerami zewnętrznymi (np. przy użyciu zaufanych domen użytkowników lub federacji), muszą oni migrować do usługi Azure Information Protection w tym samym czasie lub możliwie szybko po zakończeniu Twojej migracji. Aby nadal uzyskiwać dostęp do zawartości, którą organizacja wcześniej chroniła za pomocą usługi Azure Information Protection, muszą oni wprowadzić zmiany konfiguracji klienta podobne do wprowadzonych przez Ciebie i uwzględnionych w tym dokumencie.
     
@@ -159,7 +159,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
     - **Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez oprogramowanie**:
 
-        centralnie zarządzane klucze chronione hasłem w usłudze AD RMS do klucza dzierżawy usługi Azure Information Protection zarządzanego przez firmę Microsoft. Jest to najprostsza ścieżka migracji i żadne dodatkowe kroki nie są wymagane.
+        Centralnie zarządzane klucze haseł w usługach AD RMS do klucza dzierżawy zarządzanego przez firmę Microsoft Azure Information Protection. Jest to najprostsza ścieżka migracji i żadne dodatkowe kroki nie są wymagane.
 
     - **Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM**:
 
@@ -182,7 +182,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 - **Krok 7. ponowne konfigurowanie komputerów Windows do użycia usługi Azure Information Protection**
 
-    Aby korzystać z usługi Azure Rights Management zamiast usług AD RMS, należy ponownie skonfigurować istniejące komputery z systemem Windows. Ten krok dotyczy komputerów w organizacji oraz komputerów w organizacjach partnerów, jeśli współpracowali z Tobą podczas korzystania z usług AD RMS.
+    Aby korzystać z usługi Azure Rights Management zamiast usług AD RMS, należy ponownie skonfigurować istniejące komputery Windows. Ten krok dotyczy komputerów w organizacji oraz na komputerach w organizacji partnera mają we współpracy z ich podczas, gdy podczas uruchamiania usług AD RMS.
 
 [**FAZA 4 — KONFIGURACJA USŁUG POMOCNICZYCH**](migrate-from-ad-rms-phase4.md)
 
@@ -203,7 +203,7 @@ Kroki migracji można podzielić na pięć faz, które mogą realizować różni
 
 - **Krok 11: Wykonanie zadania migracji klienta**
 
-    Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](http://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i urządzenia Ipad, telefony z systemem Android i tabletów, Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
+    Jeśli wdrożono [rozszerzenie dla urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx) do obsługi urządzeń przenośnych, takich jak telefony z systemem iOS i urządzenia Ipad, telefony z systemem Android i tabletów, Windows phone oraz komputerów Mac, należy usunąć rekordy SRV w systemie DNS, które przekierowywały tych klientów do korzystania z usług AD RMS. 
     
     Kontrolki dołączania skonfigurowane w fazie przygotowania nie są już potrzebne. Jednak nie było używane kontrolek dołączania, ponieważ wybrano opcję migrują wszystko jednocześnie, zamiast zajmować się migracją stopniowe, możesz pominąć instrukcjami, aby usunąć kontrolki dołączania.
     

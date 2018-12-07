@@ -1,6 +1,6 @@
 ---
-title: Konfigurowanie warunków dla etykiety usługi Azure Information Protection
-description: W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety.
+title: Konfigurowanie warunków dla etykiety usługi Azure Information Protection — AIP
+description: Warunków dla etykiety pozwalają automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Ewentualnie możesz też monitować użytkowników o wybranie etykiety zalecane.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -8,12 +8,12 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 49d3879dd4dd5d9a5459638b1b539f4fa233ee2f
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adf877a3f5f08d0adefd1cbe8864a0c0c2bb17b1
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026557"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023859"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 

@@ -12,17 +12,17 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2a239c802ae818a3b51eb0fb05f98f509f469e3c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a3fabd4d76dc86b52d0d8891b7032d1e017cf28
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146323"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023306"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
 
 Ten temat zawiera opis procedur związanych z nawiązywaniem połączenia z serwerem usługi RMS lub usługą Azure RMS na potrzeby testowania aplikacji obsługującej prawa.
- 
+ 
 ## <a name="instructions"></a>Instrukcje
 
 ### <a name="step-1-setup-your-rms-server"></a>Krok 1. Konfiguracja serwera usługi RMS
@@ -38,9 +38,9 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     Począwszy od systemu Windows Server 2008 składniki klienta i serwera są zawarte w systemie operacyjnym. Składniki serwera dla starszych systemów operacyjnych można pobrać z następującej lokalizacji.
 
-    -   [Serwer usługi RMS 1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
+    -   [Serwer usługi RMS 1.0 SP2](https://go.microsoft.com/fwlink/p/?linkid=73722)
 
-    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usługi AD RMS. W przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS 1.0 SP2, ale przed aprowizacją usługi RMS.
+    Aby skonfigurować składnik serwera w systemie Windows Server 2008, należy zainstalować rolę usług AD RMS. W przypadku tworzenia aplikacji dla wcześniejszego serwerowego systemu operacyjnego należy skonfigurować rejestr po zainstalowaniu serwera usługi RMS 1.0 SP2, ale przed aprowizacją usługi RMS.
 
 2.  **Rejestracja serwera**
 
@@ -48,7 +48,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
 
     -   **Rejestracja samodzielna**
 
-        Począwszy od systemu Windows Server 2008, można zarejestrować serwer usługi RMS w odpowiedniej hierarchii bez wysyłania informacji do firmy Microsoft. Przy instalacji roli usługi RMS instalowany jest także certyfikat rejestracji samodzielnej i klucz prywatny. Są one używane do automatycznego tworzenia certyfikatu licencjodawcy serwera. Żadne informacje nie są wymieniane z firmą Microsoft.
+        Począwszy od systemu Windows Server 2008, można zarejestrować serwera usługi RMS w odpowiedniej hierarchii bez wysyłania informacji do firmy Microsoft. Przy instalacji roli usługi RMS instalowany jest także certyfikat rejestracji samodzielnej i klucz prywatny. Są one używane do automatycznego tworzenia certyfikatu licencjodawcy serwera. Żadne informacje nie są wymieniane z firmą Microsoft.
 
     -   **Rejestracja online**
 

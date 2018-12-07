@@ -4,18 +4,18 @@ description: Sprawdź, czy masz konta użytkowników i grup, których potrzebuje
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0277b638f9d069d2cfb1084136068d7ef58b1e2b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151626"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024106"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
@@ -73,9 +73,9 @@ W przypadku przypisywania praw użytkowania i kontroli dostępu oraz konfigurowa
     
     Usługa Azure Information Protection może używać dowolnej wartości w tym atrybucie proxyAddresses usługi Azure AD, jeśli domena została dodana do dzierżawy („zweryfikowana domena”). Więcej informacji na temat weryfikowania domen można znaleźć w następujących artykułach:
     
-    - W przypadku usługi Azure AD: [Dodawanie niestandardowej nazwy domeny do usługi Azure Active Directory](/active-directory/active-directory-add-domain)
+    - W przypadku usługi Azure AD: [Dodawanie niestandardowej nazwy domeny do usługi Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - W przypadku usługi Office 365: [Dodawanie domeny i użytkowników do usługi Office 365](https://go.microsoft.com/fwlinkid/?linkid=847121)
+    - Dla usługi office 365: [dodać domenę do usługi Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - Atrybut **userPrincipalName usługi Azure AD** jest używany tylko wtedy, gdy konto w dzierżawie nie ma wartości atrybutu proxyAddresses usługi Azure AD. Można na przykład utworzyć użytkownika w witrynie Azure Portal lub utworzyć użytkownika bez skrzynki pocztowej w usłudze Office 365.
 

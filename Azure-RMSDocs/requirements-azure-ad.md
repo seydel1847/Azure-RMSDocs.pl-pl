@@ -1,33 +1,33 @@
 ---
-title: Wymagania dotyczące usługi Azure Active Directory dla usługi AIP
+title: Wymagania platformy Azure AD dla usługi Azure Information Protection — AIP
 description: Identyfikowanie wymagań usługi Azure AD dotyczących używania usługi Azure Information Protection w celu pomyślnego uwierzytelniania użytkowników.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 442c1b6ec44421696aef928c38692ded70911966
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 58de817eec541c4bbb1b5d4541469cda0d93e417
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146874"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024199"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
 >*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Aby korzystać z usługi Azure Information Protection, musisz mieć katalog usługi Azure AD. Używasz konta z tego katalogu do logowania w witrynie Azure Portal, gdzie, na przykład, można skonfigurować i zarządzać etykiety usługi Azure Information Protection i szablony usługi Azure Rights Management.
+Musi mieć katalog usługi Azure AD, aby używać usługi Azure Information Protection. Używasz konta z tego katalogu do logowania w witrynie Azure Portal, gdzie, na przykład, można skonfigurować i zarządzać etykiety usługi Azure Information Protection i szablony usługi Azure Rights Management.
 
 Jeśli masz subskrypcję obejmującą usługę Azure Information Protection bądź Azure Rights Management, katalogiem usługi Azure AD jest automatycznie utworzone automatycznie w razie potrzeby.  
 
-Aby uzyskać więcej informacji na temat usługi Azure AD, zobacz [co to jest katalog usługi Azure AD?](/active-directory/active-directory-whatis)
+Aby uzyskać więcej informacji na temat usługi Azure AD, zobacz [co to jest katalog usługi Azure AD?](/azure/active-directory/fundamentals/active-directory-whatis)
 
-Do integracji katalogu usługi Azure AD z lokalnymi lasami usługi AD, zobacz [integrowanie tożsamości lokalnych z usługą Azure Active Directory](/active-directory/active-directory-aadconnect).
+Do integracji katalogu usługi Azure AD z lokalnymi lasami usługi AD, zobacz [integrowanie lokalnych domen Active Directory z usługą Azure Active Directory](/azure/architecture/reference-architectures/identity/azure-ad).
 
 ### <a name="scenarios-that-have-specific-requirements"></a>Scenariusze, które wiążą się z określonymi wymaganiami 
 
@@ -47,9 +47,9 @@ Wartość nazwy UPN użytkowników nie odpowiada ich adresowi e-mail:
     
     Jeśli nazwa domeny w wartości nazwy UPN jest domeną zweryfikowaną dla dzierżawy, dodaj wartość nazwy UPN użytkownika jako inny adres e-mail do atrybutu proxyAddresses usługi Azure AD. Dzięki temu użytkownik może być autoryzowany w usłudze Azure Rights Management, jeśli jego wartość nazwy UPN została określona w momencie udzielania praw użytkowania. Aby uzyskać więcej informacji na ten temat oraz na temat sposobu autoryzowania kont użytkowników, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
-Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub za pośrednictwem innego dostawcy uwierzytelniania, którego usługi stanowią ich odpowiednik:
+Urządzenia przenośne lub komputery Mac, które przeprowadzają uwierzytelnianie lokalne za pomocą usług AD FS lub odpowiednika dostawcy uwierzytelniania:
 
-- Musisz używać usług AD FS na serwerze z minimalną wersją **Windows Server 2012 R2** lub alternatywnego dostawcy uwierzytelniania, który obsługuje protokół OAuth 2.0.
+- Należy użyć usług AD FS na serwerze z minimalną wersją **systemu Windows Server 2012 R2**, lub alternatywnego dostawcy uwierzytelniania obsługujące protokół OAuth 2.0.
 
 ## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>Uwierzytelnianie wieloskładnikowe i usługa Azure Information Protection
 Aby używać uwierzytelniania wieloskładnikowego z usługą Azure Information Protection, należy spełnić co najmniej jedno z następujących wymagań:

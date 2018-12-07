@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 435432c1c759c040482096393c3a36cdee02691b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f6e84919653d68fb4f09671b233ccdc31bf1a82f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148498"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024284"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Opcje w oknach dialogowych aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management
 
@@ -24,7 +24,7 @@ ms.locfileid: "44148498"
 Te informacje ułatwiają określanie opcji w oknie dialogowym **dodawania ochrony** lub **udostępniania chronionej zawartości** w aplikacji RMS sharing. To okno dialogowe jest wyświetlane w przypadku [ochrony udostępnianego pliku](sharing-app-protect-by-email.md) lub [włączania ochrony miejscowej pliku](sharing-app-protect-in-place.md) i wybrania uprawnień niestandardowych.
 
 > [!IMPORTANT]
-> Jeśli opcje widoczne w Twojej aplikacji różnią się od opisanych tutaj, prawdopodobnie nie masz najnowszej wersji aplikacji do udostępniania. Najnowszą wersję można pobrać ze strony usługi [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970).
+> Jeśli opcje widoczne w Twojej aplikacji różnią się od opisanych tutaj, prawdopodobnie nie masz najnowszej wersji aplikacji do udostępniania. Najnowszą wersję można pobrać ze strony usługi [Microsoft Rights Management](https://go.microsoft.com/fwlink/?LinkId=303970).
 > 
 > Jak sprawdzić, czy jest zainstalowana najnowsza wersja? Na liście w aplecie Programy i funkcje wyszukaj pozycję **Aplikacja do tworzenia i przetwarzania dokumentów chronionych usługami Microsoft Rights Management**, a następnie sprawdź jej numer wersji. Opcje wymienione w tabeli są dostępne w wersji **1.0.1770.0** lub nowszych. Numer najnowszej wersji można znaleźć na stronie pobierania.
 

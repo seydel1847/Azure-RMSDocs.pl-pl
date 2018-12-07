@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 952aca2aebac0996a46d23912f126dd7dc6141da
-ms.sourcegitcommit: 82cbbeb833510b2de93980cd7dbebf41e34291e1
+ms.openlocfilehash: e66b4941cdfa86fbb1dcfe8593b39b59eb45ed9e
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817902"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024131"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
@@ -84,7 +84,7 @@ Po wprowadzeniu zmian konfiguracji na tych serwerach należy uruchomić je ponow
 
 ### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>Sposób użycia narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS:
 
-1.  Jeśli nie pobrano jeszcze skryptu narzędzia konfiguracji serwera dla łącznika usługi Microsoft RMS (GenConnectorConfig.ps1), pobierz go z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+1.  Jeśli nie pobrano jeszcze skryptu narzędzia konfiguracji serwera dla łącznika usługi Microsoft RMS (GenConnectorConfig.ps1), pobierz go z [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkId=314106).
 
 2.  Zapisz plik GenConnectorConfig.ps1 na komputerze, na którym zostanie uruchomione narzędzie. W przypadku lokalnego uruchamiania narzędzia musi to być serwer, który chcesz skonfigurować do komunikowania się z łącznikiem usługi RMS. W przeciwnym razie możesz zapisać plik na dowolnym komputerze.
 
@@ -193,7 +193,7 @@ Serwer z działającym programem SharePoint 2016 lub SharePoint 2013 musi mieć 
 >
 > Wersję klienta można sprawdzić, odczytując numer wersji pliku MSIPC.dll, który znajduje się w folderze **\Program Files\Active Directory Rights Management Services Client 2.1**. Okno dialogowe właściwości zawiera numer wersji klienta MSIPC 2.1.
 
-Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną wersję klienta MSDRM, która obsługuje tryb kryptograficzny 2 usługi RMS. Minimalna wersja obsługiwana w systemie Windows Server 2008 jest dołączona do poprawki, którą można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemach Windows Server 2008 R2 i Windows Server 2008](http://support.microsoft.com/kb/2627272). Natomiast minimalną wersję dla systemu Windows Server 2008 R2 można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows 7 lub Windows Server 2008 R2](http://support.microsoft.com/kb/2627273). Systemy Windows Server 2012 i Windows Server 2012 R2 natywnie obsługują tryb kryptograficzny 2.
+Serwery z działającym programem SharePoint 2010 muszą mieć zainstalowaną wersję klienta MSDRM, która obsługuje tryb kryptograficzny 2 usługi RMS. Minimalna wersja obsługiwana w systemie Windows Server 2008 jest dołączona do poprawki, którą można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemach Windows Server 2008 R2 i Windows Server 2008](https://support.microsoft.com/kb/2627272). Natomiast minimalną wersję dla systemu Windows Server 2008 R2 można pobrać z artykułu informującego, że [długość klucza RSA zostaje zwiększona do 2048 bitów dla usługi AD RMS w systemie Windows 7 lub Windows Server 2008 R2](https://support.microsoft.com/kb/2627273). Systemy Windows Server 2012 i Windows Server 2012 R2 natywnie obsługują tryb kryptograficzny 2.
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>Konfigurowanie serwerów programu SharePoint do używania łącznika
 
@@ -245,7 +245,7 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
     - Dokonaj edycji rejestru ręcznie przy użyciu informacji w temacie [Ustawienia rejestru dla łącznika usługi RMS](rms-connector-registry-settings.md), aby ręcznie dodać ustawienia rejestru na serwerach. 
 
-3. Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](http://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
+3. Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](https://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
 ## <a name="next-steps"></a>Kolejne kroki
 Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane do korzystania z niego, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure Rights Management. Aby użytkownikom było łatwiej, można wdrożyć klienta usługi Azure Information Protection, który instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](./rms-client/client-admin-guide.md).

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c20ead2b01b2a37d63bbf3b2b0295f37c9421fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d0efb37ee0d424593b9cdb4c2690088e11afc29d
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151694"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024063"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>Śledzenie i odwoływanie dokumentów podczas używania aplikacji do udostępniania usługi RMS
 
@@ -37,7 +37,7 @@ Akcje, które można wykonać w witrynie śledzenia dokumentów:
     
     Uwaga: Jeśli nie widzisz tę ikonę, mimo iż Administrator globalny, to ponieważ nie udostępniasz jeszcze żadnych dokumentów. W takim przypadku należy użyć następującego adresu URL do uzyskania dostępu do witryny śledzenia dokumentów: https://portal.azurerms.com/#/admin
 
-- Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=523977).
+- Jeśli masz pytania lub chcesz wyrazić swoją opinię na temat witryny śledzenia dokumentów: kliknij ikonę Pomoc, aby uzyskać dostęp do artykułu [Często zadawane pytania dotyczące śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=523977).
 
 ## <a name="using-office-to-access-the-document-tracking-site"></a>Dostęp do witryny śledzenia dokumentów za pomocą pakietu Office
 
@@ -67,19 +67,19 @@ Oprócz śledzenia dokumentów na komputerach z systemem Windows przy użyciu ap
 
 #### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą przeglądarki sieci Web
 
-- Przy użyciu obsługiwanej przeglądarki przejdź do [witryny śledzenia dokumentów](http://go.microsoft.com/fwlink/?LinkId=529562).
+- Przy użyciu obsługiwanej przeglądarki przejdź do [witryny śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=529562).
 
-    Obsługiwane przeglądarki: zaleca się korzystanie z przeglądarki Internet Explorer w wersji 10 lub nowszej, jednak dostęp do witryny śledzenia dokumentów można uzyskać przy użyciu dowolnej z poniższych przeglądarek:
+    Obsługiwane przeglądarki: zaleca się używanie programu Internet Explorer, który jest co najmniej w wersji 10, ale można użyć dowolnej z poniższych przeglądarek służące do witryny śledzenia dokumentów:
 
-    -   Internet Explorer: wersja 10 lub nowsza
+    -   Internet Explorer: co najmniej w wersji 10
 
     -   Internet Explorer 9 z poprawką MS12-037: zbiorcza aktualizacja zabezpieczeń programu Internet Explorer z 12 czerwca 2012 r.
 
-    -   Mozilla Firefox: wersja 12 lub nowsza
+    -   Mozilla Firefox: W wersji co najmniej 12
 
-    -   Apple Safari 5: wersja 5 lub nowsza
+    -   Apple Safari 5: co najmniej w wersji 5
 
-    -   Google Chrome: wersja 18 lub nowsza
+    -   Google Chrome: Wersja 18 lub nowsza
 
 #### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>Otwieranie witryny śledzenia dokumentów za pomocą Eksploratora plików
 

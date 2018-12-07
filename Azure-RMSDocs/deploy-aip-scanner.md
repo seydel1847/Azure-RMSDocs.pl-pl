@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
-ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
+ms.openlocfilehash: 153009e9c9760649bd42d85bece421e3b8ee5afd
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52731153"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024250"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -62,7 +62,7 @@ Przed zainstalowaniem skanera usługi Azure Information Protection, upewnij się
 
 Jeśli nie spełnia wszystkie wymagania w tabeli, ponieważ są one zabronione przez zasady organizacji, zobacz następną sekcję wariantów.
 
-Jeśli są spełnione wszystkie wymagania, przejść bezpośrednio do [sekcję instalacja artykułu](#install-the-azure-information-protection-scanner).
+Jeśli są spełnione wszystkie wymagania, przejść bezpośrednio do [sekcję instalacja artykułu](#install-the-scanner).
 
 ### <a name="deploying-the-scanner-with-alternative-configurations"></a>Wdrażanie skanera za pomocą alternatywnej konfiguracji
 
@@ -221,7 +221,7 @@ W jego domyślne ustawienie skaner działa jeden czas i działa w trybie tylko d
     
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
-    Istnieją inne ustawienia konfiguracji, które można zmienić. Na przykład czy atrybuty pliku zostały zmienione, a co jest rejestrowane w raportach. Ponadto jeśli zasad usługi Azure Information Protection zawiera ustawienie, które wymaga komunikatów uzasadnienie obniżenia poziomu klasyfikacji lub usunąć ochronę, należy określić tego komunikatu przy użyciu tego polecenia cmdlet. Użyj [pomocy online](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters) Aby uzyskać więcej informacji na temat każdego ustawienia konfiguracji. 
+    Istnieją inne ustawienia konfiguracji, które można zmienić. Na przykład czy atrybuty pliku zostały zmienione, a co jest rejestrowane w raportach. Ponadto jeśli zasad usługi Azure Information Protection zawiera ustawienie, które wymaga komunikatów uzasadnienie obniżenia poziomu klasyfikacji lub usunąć ochronę, należy określić tego komunikatu przy użyciu tego polecenia cmdlet. Użyj [pomocy online](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#optional-parameters) Aby uzyskać więcej informacji na temat każdego ustawienia konfiguracji. 
 
 2. Zanotuj wartość w bieżącym czasem i ponownie uruchomić skanera, uruchamiając następujące polecenie:
     
@@ -364,7 +364,7 @@ Inne czynniki, które mają wpływ na wydajność skanera:
 
 - Zmiana warunków w usługi Azure Information Protection
     
-    Twoje pierwsze cykl skanowania w poszukiwaniu po skaner musi sprawdzić każdy plik oczywiście trwa dłużej niż skanowania kolejnych cykli, które domyślnie inspekcji tylko nowych i zmienionych plików. Jednak w przypadku zmiany warunków w zasadach usługi Azure Information Protection, wszystkie pliki są skanowane ponownie, zgodnie z opisem w [poprzedniej sekcji](#when-files-are-rescanned-by-the-azure-information-protection-scanner).
+    Twoje pierwsze cykl skanowania w poszukiwaniu po skaner musi sprawdzić każdy plik oczywiście trwa dłużej niż skanowania kolejnych cykli, które domyślnie inspekcji tylko nowych i zmienionych plików. Jednak w przypadku zmiany warunków w zasadach usługi Azure Information Protection, wszystkie pliki są skanowane ponownie, zgodnie z opisem w [poprzedniej sekcji](#when-files-are-rescanned).
 
 - Wybranego poziom rejestrowania
     

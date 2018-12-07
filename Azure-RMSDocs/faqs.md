@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e78630e39c63f69037dd7288f764c435ff5c81e
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: fd3c4701abba55bc80117345444781a02cd8f6a2
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304063"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024403"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -110,7 +110,7 @@ Informacje dodatkowe:
 
 - Zaleca się, że należy dodawać konta administratora do swoich zasad dostępu warunkowego, ponieważ te konta nie będzie dostęp do bloku usługi Azure Information Protection w witrynie Azure portal.
 
-- Jeśli używasz usługi MFA w zasady dostępu warunkowego do współpracy z innymi firmami (B2B), należy użyć [współpracy B2B usługi Azure AD](/active-directory/b2b/what-is-b2b) i utworzyć konta gościa dla użytkowników, aby udostępniać w innej organizacji.
+- Jeśli używasz usługi MFA w zasady dostępu warunkowego do współpracy z innymi firmami (B2B), należy użyć [współpracy B2B usługi Azure AD](/azure/active-directory/b2b/what-is-b2b) i utworzyć konta gościa dla użytkowników, aby udostępniać w innej organizacji.
 
 - Jeśli używasz wielu aplikacji w chmurze dla dostępu warunkowego, może nie być wyświetlana **Microsoft Azure Information Protection** wyświetlane na liście, aby wybrać. W tym przypadku użyj pola wyszukiwania w górnej części listy. Zacznij wpisywać tekst "Microsoft Azure Information Protection" do filtrowania dostępnych aplikacji. Jeśli masz subskrypcję obsługiwane, zostaną wyświetlone **Microsoft Azure Information Protection** do wybrania. 
 

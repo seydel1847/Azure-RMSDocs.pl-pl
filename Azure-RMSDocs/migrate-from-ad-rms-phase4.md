@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84bd09aef5390c9ff8eee299febf41e91c2cb606
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6ea5a80ad9d08873f817f21a9f6ac4d059618af7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149484"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024046"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
@@ -37,7 +37,7 @@ Niezależnie od siebie z dzierżawy usługi Azure Information Protection topolog
     
     Podczas tego rekordu DNS znajduje się w miejscu, a użytkownicy przy użyciu programu Outlook w sieci web i klientów mobilnych poczty e-mail będą mogli wyświetlić usług AD RMS chronionych wiadomości e-mail w tych aplikacji i programu Exchange będzie można użyć klucza, zaimportowane z usługi AD RMS do odszyfrowania, indeksu , dziennika i ochrona zawartości, która jest chroniona przez usługi AD RMS.  
 
-2. Uruchamianie usługi Exchange Online [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) polecenia. Jeśli potrzebujesz pomocy, uruchomienie tego polecenia, zobacz instrukcje krok po kroku z [usługi Exchange Online: Konfiguracja usługi IRM](/..deploy-use/configure-office365.md#exchange-online-irm-configuration).
+2. Uruchamianie usługi Exchange Online [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) polecenia. Jeśli potrzebujesz pomocy, uruchomienie tego polecenia, zobacz instrukcje krok po kroku z [usługi Exchange Online: Konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
     
     Z danych wyjściowych, sprawdź, czy **AzureRMSLicensingEnabled** ustawiono **True**:
     
@@ -47,7 +47,7 @@ Niezależnie od siebie z dzierżawy usługi Azure Information Protection topolog
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>Krok 9. Konfigurowanie integracji funkcji IRM dla programów Exchange Server i SharePoint Server
 
-W przypadku używania funkcji zarządzania prawami do informacji (IRM) programu Exchange Server lub programu SharePoint Server z usługami AD RMS należy wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między serwerami lokalnymi i usługą ochrony dla usługi Azure Information Protection.
+Jeśli w przypadku użycia funkcji Zarządzanie prawami do informacji (IRM) programu Exchange Server lub SharePoint Server z usługami AD RMS, musisz wdrożyć łącznik usługi Rights Management (RMS), który działa jako interfejs komunikacji (przekaźnik) między lokalną serwery i usługą ochrony dla usługi Azure Information Protection.
 
 Ten krok obejmuje instalowanie i konfigurowanie łącznika, wyłączanie usługi IRM dla programów Exchange i SharePoint oraz konfigurowanie tych serwerów do korzystania z łącznika. Na koniec — jeśli do usługi Azure Information Protection zaimportowano pliki danych konfiguracji usługi AD RMS (XML) użyte do ochrony wiadomości e-mail — należy ręcznie zmodyfikować rejestr na komputerach z programem Exchange Server, aby przekierować wszystkie adresy URL zaufanych domen publikacji do łącznika usługi RMS.
 

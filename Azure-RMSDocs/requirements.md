@@ -1,5 +1,5 @@
 ---
-title: Wymagania dotyczące usługi Azure Information Protection
+title: Wymagania dotyczące usługi Azure Information Protection — AIP
 description: Określanie wymagań wstępnych dotyczących wdrażania usługi Azure Information Protection w organizacji.
 author: cabailey
 ms.author: cabailey
@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62a291667cf0ae60debbd62047d3a6b09962ac1d
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831242"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024150"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
@@ -140,7 +140,7 @@ Następujący scenariusz wdrażania nie jest obsługiwana tylko w przypadku korz
 
 - Uruchamianie usług AD RMS i Azure RMS obok siebie w tej samej organizacji, z wyjątkiem procesu migracji, zgodnie z opisem w [Migrowanie z usług AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
-Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](http://technet.microsoft.com/library/Dn858447.aspx)i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
+Istnieje obsługiwana ścieżka migracji [z usług AD RMS do usługi Azure Information Protection](https://technet.microsoft.com/library/Dn858447.aspx)i z [usługi Azure Information Protection do usług AD RMS](/powershell/module/aadrm/Set-AadrmMigrationUrl). Jeśli po wdrożeniu usługi Azure Information Protection zdecydujesz, że nie chcesz już używać tej usługi w chmurze, zobacz [Decommissioning and deactivating Azure Information Protection](decommission-deactivate.md) (Likwidowanie i dezaktywowanie usługi Azure Information Protection).
 
 
 

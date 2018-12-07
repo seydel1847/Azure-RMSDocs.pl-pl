@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 283e3dc21997f455301fcd7a6edb3caf84f82572
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9ca34cc149f86fa99174ea9792d05d7dfecc35dc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150827"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023585"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Zmiana uprawnień do plików chronionych przez usługę Rights Management
 
@@ -65,7 +65,7 @@ Jeśli chcesz całkowicie usunąć wszystkie uprawnienia, aby plik nie był już
 >
 > Jeśli Twoja organizacja nie korzysta z usługi Azure Information Protection ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci używanie plików chronionych za pomocą usług RMS:
 >
-> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
+> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](https://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
 > -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../rms-for-individuals.md).

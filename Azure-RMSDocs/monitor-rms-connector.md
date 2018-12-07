@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e799c6928b437c157a04eac66cbacb941fe3fa9b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f78135b7398ed509d1b77dfc724fc6380adbb4d5
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148464"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026954"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
@@ -174,7 +174,7 @@ Rejestrowanie użycia pomaga sprawdzić, kiedy wiadomości e-mail i dokumenty s�
 
 Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie danych użycia usługi Azure Rights Management](log-analyze-usage.md).
 
-Jeśli potrzebujesz bardziej szczegółowego rejestrowania do celów diagnostycznych, możesz użyć aplikacji [Debugview](http://go.microsoft.com/fwlink/?LinkID=309277) z witryny Windows Sysinternals. Włącz śledzenie dla łącznika usługi RMS, modyfikując plik web.config dla witryny domyślnej w usługach IIS:
+Jeśli potrzebujesz bardziej szczegółowego rejestrowania do celów diagnostycznych, możesz użyć aplikacji [Debugview](https://go.microsoft.com/fwlink/?LinkID=309277) z witryny Windows Sysinternals. Włącz śledzenie dla łącznika usługi RMS, modyfikując plik web.config dla witryny domyślnej w usługach IIS:
 
 1. Znajdź plik web.config w lokalizacji **%programfiles%\Microsoft Rights Management connector\Web Service**.
 

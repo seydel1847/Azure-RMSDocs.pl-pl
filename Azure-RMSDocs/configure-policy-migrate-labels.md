@@ -1,5 +1,5 @@
 ---
-title: Migrowanie etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
+title: Migrowanie etykiety usługi Azure Information Protection do pakietu Office 365 Centrum zabezpieczeń i zgodności — AIP
 description: Migrowanie etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365 dla klienta, który obsługuje jednolitego etykietowania.
 author: cabailey
 ms.author: cabailey
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953333"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024012"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -29,7 +29,7 @@ Po przeprowadzeniu migracji etykiet, następnie można wprowadzić zmiany do nic
 
 ### <a name="important-information-about-administrative-roles"></a>Ważne informacje o rolach administracyjnych
 
-[Ról usługi Azure AD](/active-directory/users-groups-roles/directory-assign-admin-roles) z **Administrator zabezpieczeń** i **Administrator usługi Information Protection** nie są obsługiwane przez ujednolicona platforma etykietowania. Jeśli tych ról administracyjnych są używane w Twojej organizacji, przed przeprowadzeniem migracji etykiety, należy dodać użytkowników, którzy mają te role do **Administrator do spraw zgodności** lub **Zarządzanie organizacją** roli grupy zabezpieczeń usługi Office 365 i Centrum zgodności. Alternatywnie, można utworzyć nową grupę ról dla tych użytkowników i dodać albo **zarządzania przechowywania** lub **Konfiguracja organizacji** ról do tej grupy. Aby uzyskać instrukcje, zobacz [daje użytkownikom dostęp do Centrum zgodności i zabezpieczeń usługi Office 365](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+[Ról usługi Azure AD](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) z **Administrator zabezpieczeń** i **Administrator usługi Information Protection** nie są obsługiwane przez ujednolicona platforma etykietowania. Jeśli tych ról administracyjnych są używane w Twojej organizacji, przed przeprowadzeniem migracji etykiety, należy dodać użytkowników, którzy mają te role do **Administrator do spraw zgodności** lub **Zarządzanie organizacją** roli grupy zabezpieczeń usługi Office 365 i Centrum zgodności. Alternatywnie, można utworzyć nową grupę ról dla tych użytkowników i dodać albo **zarządzania przechowywania** lub **Konfiguracja organizacji** ról do tej grupy. Aby uzyskać instrukcje, zobacz [daje użytkownikom dostęp do Centrum zgodności i zabezpieczeń usługi Office 365](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
 
 Jeśli nie udzielisz tych użytkowników dostępu do Centrum zabezpieczeń i zgodności przy użyciu jednej z tych konfiguracji, sposób utracą dostęp do etykiet i zasady w witrynie Azure portal po migracji etykiet.
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02e2cbe91e3e1e699249b18f514cbbe0a411790d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2e3babe4a402b8f77700e9b9890dc5f826a5850a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149789"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026968"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
@@ -28,12 +28,13 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
 
 ## <a name="installing-the-rms-connector"></a>Instalowanie łącznika usług RMS
 
-1.  Zidentyfikuj komputery (co najmniej dwa), na których będzie uruchamiany łącznik usług RMS. Muszą one odpowiadać minimalnej specyfikacji wymienionej w wymaganiach wstępnych.
+1.  Zidentyfikuj komputery (co najmniej dwa) tego #identyfikator
+2.  l uruchomienia łącznika usługi RMS. Muszą one odpowiadać minimalnej specyfikacji wymienionej w wymaganiach wstępnych.
 
     > [!NOTE]
     > Zostanie zainstalowany pojedynczy łącznik RMS (składający się z wielu serwerów w celu zapewnienia wysokiej dostępności) na dzierżawę (dzierżawę usługi Office 365 lub dzierżawę usługi Azure AD). W przeciwieństwie do usługi Active Directory RMS nie musisz instalować łącznika usług RMS w każdym lesie.
 
-2.  Pobierz pliki źródłowe dla łącznika usługi RMS z [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+2.  Pobierz pliki źródłowe dla łącznika usługi RMS z [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkId=314106).
 
     Aby zainstalować łącznik usług RMS, pobierz plik RMSConnectorSetup.exe.
 
@@ -173,7 +174,7 @@ Nazwa serwera w adresie URL łącznika może być dowolną nazwą w kontrolowany
 > [!IMPORTANT]
 > Zaleca się nie zmieniać tej nazwy po skonfigurowaniu serwerów programu Exchange i SharePoint do korzystania z łącznika, ponieważ należy następnie wyczyść wszystkie konfiguracje IRM tych serwerów i skonfigurować je ponownie.
 
-Po utworzeniu nazwy w systemie DNS i skonfigurowaniu jej dla adresu IP należy skonfigurować dla tego adresu funkcję równoważenia obciążenia kierującą ruch do serwerów łącznika. Do tego celu można wykorzystać dowolną usługę równoważenia obciążenia opartą na protokole IP, która obejmuje funkcję równoważenia obciążenia sieciowego (NLB) w systemie Windows Server. Aby uzyskać więcej informacji, zobacz [Load Balancing Deployment Guide](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Przewodnik wdrażania usługi równoważenia obciążenia).
+Po utworzeniu nazwy w systemie DNS i skonfigurowaniu jej dla adresu IP należy skonfigurować dla tego adresu funkcję równoważenia obciążenia kierującą ruch do serwerów łącznika. Do tego celu można wykorzystać dowolną usługę równoważenia obciążenia opartą na protokole IP, która obejmuje funkcję równoważenia obciążenia sieciowego (NLB) w systemie Windows Server. Aby uzyskać więcej informacji, zobacz [Load Balancing Deployment Guide](https://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx) (Przewodnik wdrażania usługi równoważenia obciążenia).
 
 Aby skonfigurować klaster równoważenia obciążenia sieciowego, użyj następujących ustawień:
 
@@ -200,9 +201,9 @@ Jeśli używasz opcji protokołu HTTPS, upewnij się, że wszystkie serwery z ur
 > [!TIP]
 > Można użyć następujących informacji i zasobów w celu żądania i instalowania certyfikatu uwierzytelniania serwera i powiązania tego certyfikatu z domyślną witryną sieci Web w usługach IIS:
 >
-> -   Jeśli używasz usług certyfikatów w usłudze Active Directory (AD CS) i urzędu certyfikacji przedsiębiorstwa (CA) do wdrożenia tych certyfikatów uwierzytelniania serwera, możesz zduplikować, a następnie wykorzystać szablon certyfikatu serwera sieci Web. Ten szablon certyfikatu używa **podanej w żądaniu** nazwy podmiotu certyfikatu, co oznacza, że w przypadku żądania certyfikatu można podać nazwę FQDN łącznika usług RMS dla nazwy podmiotu certyfikatu lub alternatywnej nazwy podmiotu.
-> -   Jeśli używasz autonomicznego urzędu certyfikacji lub nabywasz ten certyfikat od innej firmy, zobacz [Konfigurowanie certyfikatów serwera internetowego (usługi IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
-> -   Aby skonfigurować usługi IIS do używania certyfikatu, zobacz [Dodawanie powiązań do witryny (usługi IIS 7)](http://technet.microsoft.com/library/cc731692.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
+> - Jeśli używasz usług certyfikatów w usłudze Active Directory (AD CS) i urzędu certyfikacji przedsiębiorstwa (CA) do wdrożenia tych certyfikatów uwierzytelniania serwera, możesz zduplikować, a następnie wykorzystać szablon certyfikatu serwera sieci Web. Ten szablon certyfikatu używa **podanej w żądaniu** nazwy podmiotu certyfikatu, co oznacza, że w przypadku żądania certyfikatu można podać nazwę FQDN łącznika usług RMS dla nazwy podmiotu certyfikatu lub alternatywnej nazwy podmiotu.
+> -   Jeśli używasz autonomicznego urzędu certyfikacji lub nabywasz ten certyfikat od innej firmy, zobacz [Konfigurowanie certyfikatów serwera internetowego (usługi IIS 7)](https://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
+> - Aby skonfigurować usługi IIS do używania certyfikatu, zobacz [Dodawanie powiązań do witryny (usługi IIS 7)](https://technet.microsoft.com/library/cc731692.aspx) w bibliotece dokumentacji [serwera sieci Web (IIS)](https://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) w witrynie TechNet.
 
 ## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>Konfigurowanie łącznika usług RMS dla serwera proxy sieci Web
 Jeśli serwery łącznika są zainstalowane w sieci, która nie ma bezpośredniego połączenia z siecią Internet i wymaga ręcznej konfiguracji serwera proxy sieci Web dla zapewnienia ruchu wychodzącego do sieci Internet, należy na tych serwerach skonfigurować rejestr dla łącznika usług RMS.
@@ -238,7 +239,7 @@ Aby zainstalować narzędzie administracyjne łącznika usługi RMS, uruchom nas
 
 -   Na komputerze 64-bitowym: RMSConnectorSetup.exe
 
-Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania Microsoft](http://go.microsoft.com/fwlink/?LinkId=314106).
+Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkId=314106).
 
 
 ## <a name="next-steps"></a>Kolejne kroki

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b632319b595c3745be576fa2d508ebcb089ec8aa
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: e3c4e28fc9f67faeefcb1e6c98dda99711f1ef2b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170165"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024420"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -26,7 +26,7 @@ Użyj następujących tabel, aby zidentyfikować aplikacje i rozwiązania, któr
 
 W przypadku tych aplikacji i rozwiązań obsługa usługi Rights Management jest ściśle zintegrowana za pomocą interfejsów API usługi Rights Management w celu umożliwienia obsługi ograniczeń użycia. Te aplikacje i rozwiązania są również określane jako „aplikacje i rozwiązania z obsługą usług RMS”.
 
-O ile nie wskazano inaczej, obsługiwane możliwości dotyczą zarówno usługi Azure RMS, jak i AD RMS. Ponadto obsługa usług AD RMS w systemach iOS, Android, macOS i Windows Phone 8.1 wymaga [rozszerzenia usług Active Directory Rights Management Services dla urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx).
+O ile nie wskazano inaczej, obsługiwane możliwości dotyczą zarówno usługi Azure RMS, jak i AD RMS. Ponadto obsługa usług AD RMS w systemach iOS, Android, macOS i Windows Phone 8.1 wymaga [Active Directory Rights zarządzania rozszerzenia usług urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx).
 
 ## <a name="rms-enlightened-applications"></a>Aplikacje z obsługą usług RMS
 
@@ -45,12 +45,12 @@ Informacje dotyczące kolumn tabeli:
 
 |**System operacyjny urządzenia**|Word, Excel, PowerPoint|Poczta e-mail|Inne typy plików|
 |---------------------------|-----------------------|-----------------|---------|
-|**Windows**|Pakiet Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online (wyświetlanie chronionych dokumentów) [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS dla programu AutoCAD: .dwg|
-|**iOS**|GigaTrust<br /><br /> Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikacja Azure Information Protection (wyświetlanie chronionej wiadomości e-mail)<br /><br />Praca blackBerry<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (Ochrona tekst i obrazy wyświetlania)<br /><br />TITUS Docs: plik PFILE|
-|**Android**|Aplikacja GigaTrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Aplikacja Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Praca blackBerry <br /><br />Aplikacja GigaTrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (warstwa S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
+|**Windows**|Pakiet Office 2010<br /><br />Pakiet Office 2013<br /><br />Office 2016 <br /><br />Office Online (wyświetlanie chronionych dokumentów) [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Program Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4) |Klient usługi Azure Information Protection dla systemu Windows: tekst, obrazy, pliki PFILE<br /><br />Aplikacja RMS sharing dla systemu Windows: tekst, obrazy, plik PFILE<br /><br />Wtyczka SealPath RMS dla programu AutoCAD: .dwg|
+|**iOS**|GigaTrust<br /><br /> Office Mobile (wyświetlanie i edytowanie chronionych dokumentów)<br /><br />Office Online [[1]](#footnote-1)<br /><br />TITUS Docs<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Aplikacja Azure Information Protection (wyświetlanie chronionej wiadomości e-mail)<br /><br />Praca blackBerry<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Program Outlook dla urządzeń iPad i iPhone [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (Ochrona tekst i obrazy wyświetlania)<br /><br />TITUS Docs: plik Pfile|
+|**Android**|Aplikacja Gigatrust dla systemu Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|9Folders [[4]](#footnote-4)<br /><br />Aplikacja Azure Information Protection (wyświetlanie chronionych wiadomości e-mail)<br /><br />Praca blackBerry <br /><br />Aplikacja Gigatrust dla systemu Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Aplikacja Outlook dla systemu Android [[4]](#footnote-4)<br /><br />Poczta E-mail Samsung (warstwa S3 i nowsze) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja Azure Information Protection (wyświetlanie chroniony tekst i obrazy)|
 |**macOS**|Office 2016 dla komputerów Mac<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2016 dla komputerów Mac<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
 |**Windows 10 Mobile**|Aplikacje mobilne pakietu Office (wyświetlanie chronionych dokumentów za pomocą usługi Azure RMS) <br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Citrix WorxMail <br /><br />Poczta programu Outlook (wyświetlanie chronionych wiadomości e-mail) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
-|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: pliki JT|
+|**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook 2013 RT<br /><br />Aplikacja poczty dla systemu Windows<br /><br />Przeglądarki sieci Web [[3]](#footnote-3)<br /><br />Poczta systemu Windows [[4]](#footnote-4)|Siemens JT2Go: Pliki JT|
 |**Windows Phone 8.1**|Office Mobile (tylko usługi AD RMS)<br /><br />Przeglądarki sieci Web [[2]](#footnote-2)|Outlook Mobile [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Aplikacja (wyświetlanie chroniony tekst, obrazy, pliki objęte ochroną) RMS sharing|
 |**Blackberry 10**|Przeglądarki sieci Web [[2]](#footnote-2)|Poczta e-mail Blackberry [[4]](#footnote-4) <br /><br />Przeglądarki sieci Web [[3]](#footnote-3)|Nieobsługiwane|
 
@@ -139,7 +139,7 @@ Więcej informacji można znaleźć w następujących zasobach:
 
 - [Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android](./rms-client/mobile-app-faq.md)
 
-Pobierz odpowiednią aplikację, korzystając z linków na [stronie usługi Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
+Pobierz odpowiednią aplikację, korzystając z linków na [stronie usługi Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970).
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Więcej informacji na temat aplikacji do udostępniania usługi Rights Management
 
@@ -155,7 +155,7 @@ Więcej informacji można znaleźć w następujących zasobach:
 
 -   [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla platform urządzeń przenośnych](https://technet.microsoft.com/dn451248)
 
-Pobierz przeglądarkę dla komputerów Mac i Windows Phone, korzystając z linków na [strony programu Microsoft Azure Information Protection](http://go.microsoft.com/fwlink/?LinkId=303970).
+Pobierz przeglądarkę dla komputerów Mac i Windows Phone, korzystając z linków na [strony programu Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970).
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Więcej informacji o innych aplikacjach, które obsługują usługę Azure Information Protection
@@ -172,13 +172,13 @@ Aby uzyskać więcej informacji, zobacz [przewodnik dewelopera usługi Azure Inf
 
 Następujące aplikacje nie są obecnie obsługiwane przez usługę Azure RMS:
 
--   Microsoft OneDrive dla Firm dla programu SharePoint Server 2013
+-   Microsoft OneDrive dla firm dla programu SharePoint Server 2013
 
 -   Przeglądarka plików XPS
 
 Ponadto aplikacji RMS sharing i klienta usługi Azure Information Protection dotyczą następujące ograniczenia:
 
--   W przypadku komputerów z systemem Windows: wymaga co najmniej systemu Windows 7 z dodatkiem Service Pack 1
+-   Dla komputerów Windows: wymaga minimalnej wersji systemu Windows 7 z dodatkiem Service Pack 1
 
 ## <a name="rms-enlightened-solutions"></a>Rozwiązania z obsługą usług RMS
 

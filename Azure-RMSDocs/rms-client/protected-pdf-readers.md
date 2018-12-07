@@ -1,7 +1,6 @@
 ---
 title: Chronione czytelnicy PDF Microsoft Information Protection
-description: ''
-keywords: ''
+description: Więcej informacji na temat dokumentów PDF, które są oznaczone etykietami klasyfikacji i ochrony oraz sposób ich wyświetlania.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,12 +11,12 @@ ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: d4421caa4ec6846456c12aa831644e957c5b4fd9
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: 4a4d396db6eaac2709577023d873587697327bef
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861204"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023604"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Obsługiwane czytniki PDF Microsoft Information Protection
 

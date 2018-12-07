@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1d749c77ada71a7f086b5d7836f44b530cab2dc9
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 7a95da3590a666e1d90452e514e93ab6100b8ad7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330345"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024029"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez oprogramowanie do klucza chronionego przez moduł HSM
 
@@ -43,9 +43,9 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 
 1.  Administrator usługi Azure Key Vault — w przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, zastosuj kroki opisane w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) w dokumentacji usługi Azure Key Vault:
 
-    -   **Generowanie i przenoszenie klucza do modułu HSM usługi Azure Key Vault**: Krok 1. [Przygotowanie stacji roboczej połączonej z Internetem](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+    -   **Generowanie i przenoszenie klucza do modułu HSM usługi Azure Key Vault**: Krok 1. [Przygotowanie stacji roboczej połączonej z Internetem](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
 
-    -   **Generowanie i przenoszenie klucza dzierżawy — przez Internet**: Krok 2. [Przygotowanie rozłączonej stacji roboczej](/azure/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+    -   **Generowanie i przenoszenie klucza dzierżawy — przez Internet**: Krok 2. [Przygotowanie rozłączonej stacji roboczej](/azure/key-vault/key-vault-hsm-protected-keys#step-2-prepare-your-disconnected-workstation)
 
     Nie wykonuj kroków procedury generowania klucza dzierżawy, ponieważ jego odpowiednik już istnieje w wyeksportowanym pliku (XML) danych konfiguracji. Zamiast tego uruchom narzędzie, aby wyodrębnić ten klucz z pliku i zaimportować go do lokalnego modułu HSM. Po uruchomieniu narzędzie utworzy dwa pliki:
 

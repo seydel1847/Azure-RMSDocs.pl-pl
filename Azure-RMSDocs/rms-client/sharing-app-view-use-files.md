@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27de9df7062f6072e7e15b66759f540d5ce81dba
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148056"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023995"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
 
@@ -28,7 +28,7 @@ Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalow
 >
 > Jeśli Twoja organizacja nie korzysta z usługi Azure Information Protection ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci otwieranie plików chronionych za pomocą usług RMS:
 >
-> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](http://go.microsoft.com/fwlink/?LinkId=309469).
+> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](https://go.microsoft.com/fwlink/?LinkId=309469).
 >
 >     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
 > -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../rms-for-individuals.md).
