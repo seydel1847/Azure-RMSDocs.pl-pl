@@ -4,18 +4,18 @@ description: Instrukcje dotyczące instalowania, konfigurowania i uruchamiania s
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
+ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386801"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52731153"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików
 
@@ -252,7 +252,7 @@ Następnie skaner korzysta Windows IFilter w celu zeskanowania następujących t
 |PDF |.pdf|
 |Tekst|.txt; .xml; .csv|
 
-Ponadto skaner umożliwia również optyczne rozpoznawanie znaków (OCR) sprawdzanie obrazów TIFF z rozszerzeniem nazwy pliku TIFF, podczas konfigurowania [Windows TIFF IFilter ustawienia](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) na komputerze z systemem skanera.
+Ponadto skaner umożliwia również optyczne rozpoznawanie znaków (OCR) sprawdzanie obrazów TIFF z rozszerzeniem nazwy pliku TIFF, podczas instalowania funkcji Filtr TIFF IFilter Windows, a następnie skonfiguruj [Windows TIFF IFilter ustawienia](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29) na komputer z systemem skanera.
 
 Domyślnie tylko typów plików pakietu Office są chronione przez skaner, więc dokumentów PDF i plików tekstowych i obrazów TIFF nie są chronione, chyba że użytkownik [edytować rejestr](#editing-the-registry-for-the-scanner) Aby określić typy plików:
 

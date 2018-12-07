@@ -4,19 +4,19 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 98403232311731b137719c613b2ce061a236b706
-ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
+ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52421015"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953316"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -25,10 +25,13 @@ ms.locfileid: "52421015"
 > [!NOTE]
 > Ta funkcja jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Wszystkie dane zebrane w trakcie tego okresu zapoznawczego nie mogą być obsługiwane, gdy ta funkcja zostanie przeniesiony do ogólnej dostępności.
 
+Użyj analizy usługi Azure Information Protection dla centralnej funkcji raportowania do śledzenia przyjęcia etykiet usługi Azure Information Protection. Ponadto:
 
-Przy użyciu usługi Azure Information Protection usługi analiza centralnej funkcji raportowania do śledzenia przyjęcia etykiet usługi Azure Information Protection, a także monitorowania dostępu użytkowników do etykietami dokumentów i wiadomości e-mail i zmiany ich klasyfikacji. Można również zidentyfikować dokumentów zawierających poufne informacje, które muszą być chronione.
+- Monitorowanie dostępu użytkowników do etykietami dokumentów i wiadomości e-mail i zmiany ich klasyfikacji. 
 
-Obecnie dane widoczne są agregowane od klientów usługi Azure Information Protection i skanery usługi Azure Information Protection.
+- Identyfikowanie dokumentów zawierających poufne informacje, które muszą być chronione.
+
+Obecnie dane widoczne są agregowane z klientów usługi Azure Information Protection i skanery usługi Azure Information Protection, a także z systemem Windows [Windows Defender zaawansowanej ochrony przed zagrożeniami (Windows Defender ATP)](/windows/security/threat-protection/windows-defender-atp/overview).
 
 Na przykład można znaleźć w następujących tematach:
 
@@ -58,7 +61,7 @@ Na przykład można znaleźć w następujących tematach:
 
 - Z **odnajdywanie danych** raportu:
 
-    - Jakie pliki znajdują się na repozytoriów zeskanowane danych
+    - Jakie pliki znajdują się na swoje repozytoria danych zeskanowane lub komputerach z systemem Windows 10
     
     - Pliki, które są oznaczone i chronione i lokalizację plików według etykiet
     
@@ -101,8 +104,7 @@ Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne
 |---------------|--------------------|
 |Subskrypcję platformy Azure, która obejmuje usługi Log Analytics|Zobacz [cen usługi Azure Log Analytics](https://azure.microsoft.com/pricing/details/log-analytics) strony.<br /><br />Jeśli nie masz subskrypcji platformy Azure lub obecnie nie używasz usługi Azure Log Analytics, stronie cennika zawiera również link do bezpłatnej wersji próbnej.|
 |Bieżący ogólnie dostępnej wersji klienta usługi Azure Information Protection.|Jeśli użytkownik jeszcze nie zainstalowano tę wersję klienta, możesz pobrać i zainstalować go z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).|
-|Aby uzyskać **odnajdywania i ryzyko** raportu: <br /><br />-Wdrożono co najmniej jedno wystąpienie skanera usługi Azure Information Protection (bieżąca wersja zapoznawcza)|Aby uzyskać instrukcje dotyczące instalacji, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-aip-scanner.md). <br /><br />Jeśli wykonujesz uaktualnienie z poprzedniej wersji skanera, zobacz [uaktualnianie skanera usługi Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).|
-
+|Aby uzyskać **odnajdywania i ryzyko** raportu: <br /><br />-Aby wyświetlić dane z lokalnych magazynów danych, wdrożono co najmniej jedno wystąpienie skanera usługi Azure Information Protection (bieżąca wersja GA) <br /><br />— Aby wyświetlić dane z komputerów z systemem Windows 10, muszą one być minimalna kompilacji 1809, w przypadku korzystania z systemu Windows Defender zaawansowanej ochrony przed zagrożeniami (Windows Defender ATP) i została włączona funkcja integracji usługi Azure Information Protection z usługi Windows Defender Usługa Security Center|Aby uzyskać instrukcje instalacji skaner, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-aip-scanner.md). Jeśli wykonujesz uaktualnienie z poprzedniej wersji skanera, zobacz [uaktualnianie skanera usługi Azure Information Protection](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner).<br /><br />Aby uzyskać informacje na temat konfigurowania i korzystania z funkcji integracji usługi Azure Information Protection z usługi Windows Defender Security Center, zobacz [ochrony informacji w Windows — omówienie](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview).|
 
 ## <a name="configure-a-log-analytics-workspace-for-the-reports"></a>Konfigurowanie obszaru roboczego usługi Log Analytics dla raportów
 
@@ -130,11 +132,11 @@ W bloku Azure Information Protection, Znajdź **pulpity nawigacyjne** opcje menu
 
 - **Dzienniki aktywności (wersja zapoznawcza)**: Ten raport służy do wyświetlania, etykietowanie działania użytkowników i na urządzeniach i ścieżki plików.
     
-    Ten raport jest obecnie wprowadzane do dzierżawców, więc jeśli nie widzisz go, spróbuj ponownie za kilka dni. 
+    Ten raport jest obecnie wprowadzane do dzierżawców, więc jeśli nie widzisz go, spróbuj ponownie za kilka dni.
     
-    Ten raport zawiera **kolumn** opcja, która pozwala wyświetlić więcej informacji o aktywności niż domyślnym wyświetlaniem. Jedna z kolumn dotyczy **ryzyka dotyczącego urządzeń**, co spowoduje wyświetlenie danych z usługi Windows Defender, gdy ta aplikacja jest zintegrowana z usługą Azure Information Protection.
+    Ten raport zawiera **kolumn** opcja, która pozwala wyświetlić więcej informacji o aktywności niż domyślnym wyświetlaniem.
 
-- **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport służy do wyświetlania informacji na temat plików, które zostały odnalezione skanerów.
+- **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport służy do wyświetlania informacji na temat plików znalezionych przez skanery lub usługi Windows Defender ATP.
 
 ## <a name="how-to-modify-the-reports"></a>Jak modyfikować raporty
 

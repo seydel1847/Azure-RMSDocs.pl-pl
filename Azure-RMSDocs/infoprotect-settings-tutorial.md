@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 75a13413cbbbb1a7ab653522fcec9606c002f7d8
+ms.sourcegitcommit: dce7b4f95c216afc9ec6524a686a02287e6bdcf7
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644657"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007502"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>Samouczek: Konfigurowanie ustawień zasad usługi Azure Information Protection, które współpracują ze sobą
 
@@ -35,7 +35,7 @@ W tym samouczku można zakończyć w ciągu około 15 minut.
 
 Do ukończenia tego samouczka, potrzebne są:
 
-1. Subskrypcja, która obejmuje usługi Azure Information Protection Plan 2.
+1. Subskrypcja, która obejmuje usługi Azure Information Protection Plan 1 lub Plan 2.
     
     Jeśli nie masz subskrypcję obejmującą tego planu, możesz utworzyć [bezpłatne](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) konta dla Twojej organizacji.
 

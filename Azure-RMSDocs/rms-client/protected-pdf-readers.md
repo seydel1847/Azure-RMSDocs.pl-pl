@@ -5,19 +5,19 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: ab3d141394a9a042a8a3e15e35d1daffab20ad98
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: d4421caa4ec6846456c12aa831644e957c5b4fd9
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170352"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861204"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Obsługiwane czytniki PDF Microsoft Information Protection
 
@@ -33,7 +33,7 @@ Integracji z funkcjami macierzystymi ma następujące zalety:
 
 - Obsługa standardu ISO do szyfrowania plików PDF.
     
-    Ten format chronionych plików PDF musi być [włączone przez administratora](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption). Po wykonaniu tej konfiguracji rozszerzenia nazwy pliku pozostaje jako PDF i nie zmienia się na ppdf.
+    Jeśli ta funkcja nie zostało [wyłączone przez administratora](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), ten format chronionych plików PDF jest teraz domyślnie włączony w najnowszej wersji klienta usługi Azure Information Protection.
 
 Aby uzyskać więcej informacji, zobacz następujący wpis w blogu: [od października, użyj Adobe Acrobat czytnika plików PDF chronionych przez Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)
 
@@ -49,13 +49,13 @@ Następujące czytniki PDF można otwierać chronione pliki PDF, zgodne ze stand
 
 ### <a name="support-for-previous-formats"></a>Obsługa formatów poprzedniej
 
-Czytelnicy PDF w następnym Obsługa tabel chronionych dokumentów PDF, mających ppdf nazwa extensionand starszych formatów plików, które mają rozszerzenie nazwy pliku PDF.
+Czytelnicy PDF w następnym Obsługa tabel chronionych dokumentów PDF, które mają rozszerzenie nazwy pliku ppdf i starszych formatach, które mają rozszerzenie nazwy pliku PDF.
 
 Obecnie usługa SharePoint Online i lokalnego programu SharePoint na użytek starszego formatu dokumenty PDF w bibliotekach chronioną przez IRM.
 
 
 |System operacyjny|Obsługiwane czytniki|
 |----------------|-----------------------------------|
-|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Przeglądarka usługi Azure Information Protection<br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />Aplikacja do udostępniania usługi RMS|
+|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Przeglądarka usługi Azure Information Protection<br /><br />Gaaiho Doc<br /><br />Klient PDF pulpitu GigaTrust dla firmy Adobe<br /><br />Programów Foxit Reader<br /><br />Czytnik plików PDF nitro<br /><br />Aplikacja do udostępniania usługi RMS|
 |Android|Usługa Azure Information Protection app<br /><br />Foxit MobilePDF za pomocą usługi RMS<br /><br />Aplikacja GigaTrust dla systemu Android|
 |iOS|Usługa Azure Information Protection app<br /><br />Foxit MobilePDF za pomocą usługi RMS<br /><br />TITUS Docs|

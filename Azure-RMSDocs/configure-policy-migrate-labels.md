@@ -4,17 +4,17 @@ description: Migrowanie etykiety usługi Azure Information Protection do Centrum
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382616"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953333"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
@@ -48,7 +48,7 @@ Przed przeprowadzeniem migracji etykiet, upewnij się, że masz świadomość na
     
     Spójniejsze środowisko pracy użytkownika firma Microsoft zaleca publikowania tej samej etykiety w tych samych zakresów w Centrum zabezpieczeń i zgodności.
 
-- Nie wszystkie ustawienia z migrowanych etykiety są obsługiwane przez Centrum zabezpieczeń i zgodności. Skorzystaj z tabeli w [etykiety ustawienia, które nie są obsługiwane w Centrum zabezpieczeń i zgodności](#label-settings-that-are-not-supported-in-the-security--compliance-center) sekcji, aby pomóc w zidentyfikowaniu tych ustawień i tego, czy należy wyłączyć migrowanych etykiety z publikacji w zabezpieczeniach & Centrum zgodności.
+- Nie wszystkie ustawienia z migrowanych etykiety są obsługiwane przez Centrum zabezpieczeń i zgodności. Skorzystaj z tabeli w [etykiety ustawienia, które nie są obsługiwane w Centrum zabezpieczeń i zgodności](#label-settings-that-are-not-supported-in-the-security--compliance-center) sekcji, aby pomóc w zidentyfikowaniu ustawienia, które nie są obsługiwane przez Centrum zabezpieczeń i zgodności.
 
 - Szablony ochrony:
     
@@ -66,17 +66,15 @@ Przed przeprowadzeniem migracji etykiet, upewnij się, że masz świadomość na
 
 - Wszelkie zlokalizowanych ciągów dla etykiety nie są migrowane. Należy zdefiniować nowe zlokalizowanych ciągów dla migrowanych etykiet w Centrum zabezpieczeń i zgodności.
 
-- Po migracji gdy edytujesz migrowanych etykiety w witrynie Azure portal, tę samą zmianę jest automatycznie odzwierciedlane w Centrum zabezpieczeń i zgodności. Jednak podczas edycji migrowanych etykiety w Centrum zabezpieczeń i zgodności, następnie należy zaktualizować etykiety w witrynie Azure portal dla etykiety wczytać zmiany. Na przykład edytować **Dodaj notatki przeznaczone dla administratorów** polu na **etykiety** bloku. 
-
-- Ujednolicone etykietowania nadal wprowadza dzierżawcom. Jeśli jeszcze nie jest obsługiwana dla Twojej dzierżawy, migracji nie powiedzie się i bez problemu zmieniała cofnąć wszystkie zmiany. Dopóki nie jest obsługiwany dla wszystkich dzierżaw, należy użyć specjalnego linku dostępu możliwość migracji dzierżawy i etykiet do. Ten link znajduje się w instrukcji.
+- Po migracji gdy edytujesz migrowanych etykiety w witrynie Azure portal, tę samą zmianę jest automatycznie odzwierciedlane w Centrum zabezpieczeń i zgodności. Jednak podczas edycji migrowanych etykiety w Centrum zabezpieczeń i zgodności, wróć do witryny Azure portal **usługi Azure Information Protection — Unified etykietowania** bloku, a następnie wybierz **Publikuj**. To dodatkowe działania jest wymagane w przypadku klientów usługi Azure Information Protection zmian etykiety.
 
 ### <a name="label-settings-that-are-not-supported-in-the-security--compliance-center"></a>Ustawienia etykiet, które nie są obsługiwane w Centrum zabezpieczeń i zgodności
 
-Skorzystaj z poniższej tabeli, aby zidentyfikować ustawienia konfiguracji, które migrowanych etykiety nie są obsługiwane dla klientów korzystających z tych etykiet i tego, czy należy edytować i publikowanie migrowanych etykiety w Centrum zabezpieczeń i zgodności. W przypadku publikowania etykiety, które są identyfikowane, które mają być wykluczone z publikacji bez etykiet są wyświetlane dla klientów, którzy obsługują ujednoliconego etykietowania.
+Użyj poniższej tabeli, aby zidentyfikować ustawienia konfiguracji, które migrowanych etykiety nie są obsługiwane przez ujednolicony klientów etykietowania lub są obsługiwane z ograniczeniami. Aby uniknąć nieporozumień, zaleca się, nie Konfiguruj ustawienia, które nie mają wpływu na ujednoliconego etykietowania klientów.
 
 Klienci usługi Azure Information Protection można użyć tych ustawień etykiety bez problemów, ponieważ kontynuują próby pobierania etykiety w witrynie Azure portal.
 
-|Konfiguracja etykiet|Obsługiwane w Centrum zabezpieczeń i zgodności|Wyklucz z edycji i publikowania w Centrum zabezpieczeń i zgodności|
+|Konfiguracja etykiet|Obsługiwane przez ujednolicony etykietowania klientów|Wyklucz z edycji w Centrum zabezpieczeń i zgodności|
 |-------------------|---------------------------------------------|-------------------------|
 |Stan włączony lub wyłączony<br /><br />Uwagi: Nie jest synchronizowany Centrum zabezpieczeń i zgodności |Nie dotyczy|Nie dotyczy|
 |Kolor etykiety: Wybierz z listy lub określ przy użyciu kodu RGB<br /><br />Uwagi: Kolory nie są obsługiwane przez Centrum zabezpieczeń i zgodności |Nie dotyczy|Nie dotyczy|
@@ -91,12 +89,7 @@ Klienci usługi Azure Information Protection można użyć tych ustawień etykie
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>Aby przeprowadzić migrację etykiety usługi Azure Information Protection
 
-> [!IMPORTANT]
-> Etykiet nie są migrowane, dopóki nie została potwierdzona, edytować i opublikować etykiety czułości w Centrum zgodności i zabezpieczeń usługi Office 365. Czułość etykiety coraz częściej wprowadzane do dzierżawy usługi Office 365, ale nie są jeszcze dostępne dla wszystkich dzierżaw.
-> 
-> Aby sprawdzić: Z pakietu Office 365 Centrum zabezpieczeń i zgodności, przejdź do **klasyfikacje** > **etykiety**i sprawdzić, czy masz **czułości** kartę. Jeśli nie ma na tej karcie, dzierżawy nie jest jeszcze gotowy etykiet ważność i nie należy zmigrować etykiet usługi Azure Information Protection, w tym momencie.
-
-Po potwierdzeniu, że dzierżawa usługi obsługuje etykiety ważności w Centrum zabezpieczeń i zgodności, wykonaj następujące instrukcje do migracji dzierżawy i etykiet usługi Azure Information Protection.
+Użyj poniższych instrukcji migracji dzierżawy i etykiet usługi Azure Information Protection do użycia nowego etykietowania ujednoliconego przechowywania.
 
 Musi być administratorem globalnym, aby migrować etykiet.
 
@@ -106,6 +99,8 @@ Musi być administratorem globalnym, aby migrować etykiet.
 
 Dla etykiet, które pomyślnie przeprowadzono migrację, ich można teraz używać przez [klientów, którzy obsługują ujednoliconego etykietowania](#clients-that-support-unified-labeling). Jednakże należy najpierw go opublikować te etykiety w Centrum zabezpieczeń i zgodności.
 
+> [!IMPORTANT]
+> Jeśli edytujesz etykiet poza portalem Azure dla klientów usługi Azure Information Protection, wróć do tego **usługi Azure Information Protection — Unified etykietowania** bloku, a następnie wybierz **Publikuj**.
 
 ### <a name="clients-that-support-unified-labeling"></a>Klienci, którzy obsługują ujednoliconego etykietowania
 

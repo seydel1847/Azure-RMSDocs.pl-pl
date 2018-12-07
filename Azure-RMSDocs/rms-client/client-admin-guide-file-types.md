@@ -4,18 +4,18 @@ description: Informacje techniczne na temat obsługiwanych typów plików, rozsz
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9bc0bbcf6eb74d889e7cd31e6d7ff3f0b6320050
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: e228c1c49481a9772e2f86164926db6075fe2924
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386750"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861238"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>Podręcznik administratora: Typy plików obsługiwane przez klienta usługi Azure Information Protection
 
@@ -127,7 +127,7 @@ Te typy plików są identyfikowane oddzielnie, ponieważ jeśli są objęte ochr
 |jt|pjt|
 
 ###### <a name="footnote-1"></a>Przypis 1
-Jeśli konfiguracja klienta usługi Azure Information Protection [ochrony plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), rozszerzenie nazwy pliku chronionego dokumentu PDF pozostaje jako PDF.
+Za pomocą najnowszej wersji klienta usługi Azure Information Protection [domyślnie](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), rozszerzenie nazwy pliku chronionego dokumentu PDF pozostaje jako PDF.
 
 W poniższej tabeli wymieniono pozostałe typy plików, które obsługują ochronę natywną przez klienta usługi Azure Information Protection oraz które także mogą być klasyfikowane. Będzie rozpoznaje je jako typy plików dla aplikacji Microsoft Office. Obsługiwane formaty plików dla tych typów plików to 97 – 2003 formaty plików i formaty Office Open XML dla następujących programów pakietu Office: Word, Excel i PowerPoint.
 
@@ -238,19 +238,13 @@ Po sprawdzeniu pliku, skaner klasyfikuje ten plik jako **poufne \ Finanse**, sto
 
 Każdy plik jest chroniony hasłem nie można natywnie chronić przez klienta usługi Azure Information Protection, chyba że plik jest obecnie otwarty w aplikacji, która odnosi się do ochrony. Zostanie wyświetlony w większości przypadków pliki PDF chronionych hasłem, ale ta funkcja oferują również innych aplikacji, takich jak aplikacje pakietu Office.
 
-Ponadto chyba że klient usługi Azure Information Protection jest skonfigurowany do [ochrony plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption), ten klient można wyświetlić następujące pliki, ale nie może natywnie Włączanie lub wyłączanie ochrony plików PDF pliki w jednym z następujących okolicznościach:
+Jeśli zmienisz [domyślne zachowanie](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) klienta usługi Azure Information Protection, aby chroni pliki PDF z rozszerzeniem nazwy pliku ppdf klient nie może natywnie Włączanie lub wyłączanie ochrony plików PDF w jednej z następujących okoliczności:
 
 - Pliku PDF, która jest oparta na formularzu.
 
 - Chroniony plik PDF, który ma rozszerzenie nazwy pliku PDF.
-
-Jako obejście, aby chronić te pliki, można objęty ochroną ogólną je zgodnie z instrukcjami w [zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) sekcji. Jednak ta metoda zmienia poziom ochrony wszystkich plików mających rozszerzenie nazwy pliku PDF na poziomie komputera. Nie można zdefiniować ogólnej ochrony dla plików, które spełniają kryteria uwzględnione na liście.
-
-Ochrona tych plików są istotne, można tymczasowo skopiuj je do innego komputera w celu objęty ochroną ogólną je i skopiować je ponownie ponownie. Lub skonfigurować klienta do [ochrony plików PDF przy użyciu standardu ISO do szyfrowania plików PDF](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) dzięki temu można natywnie chronić i wyłączania ochrony plików PDF, zarówno w następujących przypadkach:
-
-- Pliku PDF, która jest oparta na formularzu.
-
-- Chroniony plik PDF, który ma rozszerzenie nazwy pliku PDF.
+    
+    Klient usługi Azure Information Protection można chronić niechronionych plików PDF i może wyłączyć ochronę i włącz ponownie ochronę chroniony plik PDF, gdy ma ona rozszerzenie nazwy pliku ppdf.
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>Ograniczenia dotyczące plików kontenera, takich jak pliki zip
 

@@ -4,16 +4,16 @@ description: Skonfiguruj ustawienia w zasadach usługi Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f8967b16f864939bfcb06f786e8ee1eff0603ac2
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 3533a8a83d5fa24eb98ae36092eaf08d4ff75ccc
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026608"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831225"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Konfigurowanie ustawień zasad usługi Azure Information Protection
 
@@ -53,7 +53,9 @@ Aby skonfigurować te ustawienia:
         
         Ta opcja nie ma zastosowania do obniżenia klasyfikacji etykiet podrzędnych, w ramach tej samej etykiety nadrzędnej.
         
-    - **W przypadku wiadomości e-mail z załącznikami zastosuj etykietę, która odpowiada najwyższej klasyfikacji tych załączników**: po ustawieniu wartości tej opcji na **Zalecane** użytkownicy są monitowani o zastosowanie etykiety do wiadomości e-mail. Etykieta jest wybierana dynamicznie na podstawie klasyfikacji etykiet, która jest stosowana do załączników, po czym jest wybierana etykieta o najwyższej klasyfikacji. Załącznik musi być plikiem fizycznym i nie może być łączem do pliku (na przykład łączem do pliku w usłudze SharePoint lub OneDrive dla Firm). Użytkownicy mogą zaakceptować zalecenie lub odrzucić je. Po ustawieniu tej opcji na **automatyczne**, etykieta jest stosowana automatycznie, ale użytkownicy mogą usunąć etykietę lub wybrać inną etykietę przed wysłaniem wiadomości e-mail.  
+    - **W przypadku wiadomości e-mail z załącznikami zastosuj etykietę, która odpowiada najwyższej klasyfikacji tych załączników**: po ustawieniu wartości tej opcji na **Zalecane** użytkownicy są monitowani o zastosowanie etykiety do wiadomości e-mail. Etykieta jest wybierana dynamicznie na podstawie klasyfikacji etykiet, która jest stosowana do załączników, po czym jest wybierana etykieta o najwyższej klasyfikacji. Załącznik musi być plikiem fizycznym i nie może być łączem do pliku (na przykład łączem do pliku w usłudze SharePoint lub OneDrive dla Firm). Użytkownicy mogą zaakceptować zalecenie lub odrzucić je. Po ustawieniu tej opcji na **automatyczne**, etykieta jest stosowana automatycznie, ale użytkownicy mogą usunąć etykietę lub wybrać inną etykietę przed wysłaniem wiadomości e-mail.
+    
+    Po skonfigurowaniu załącznika z najwyższą etykiety klasyfikacji dla ochrony za pomocą ustawień w wersji zapoznawczej uprawnienia zdefiniowane przez użytkownika wiadomości e-mail jest oznaczony za pomocą tej samej klasyfikacji, ale ochrona nie jest stosowana.
     
     - **Wyświetl pasek usługi Information Protection w aplikacjach pakietu Office**: Jeśli to ustawienie jest wyłączone, użytkownicy nie można wybrać etykiety na pasku Word, Excel, PowerPoint i Outlook. Zamiast tego użytkownicy muszą wybrać etykiety z **Chroń** przycisk na Wstążce. Gdy to ustawienie jest włączone, użytkownicy mogą wybrać etykiety z paska lub przycisku.
         
