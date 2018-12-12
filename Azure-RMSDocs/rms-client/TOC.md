@@ -28,6 +28,7 @@
 ##### [Zadania, które były wykonywane w aplikacji RMS sharing](upgrade-client-app.md)
 ### [Ujednolicony klient etykietowania usługi Azure Information Protection (wersja zapoznawcza)](unifiedlabelingclient-version-release-history.md)
 ### [Pobieranie i instalowanie ujednoliconego klienta etykietowania usługi Azure Information Protection (wersja zapoznawcza)](install-unifiedlabelingclient-app.md)
+### [Czytniki chronionych plików PDF](protected-pdf-readers.md)
 ### [Uwagi dotyczące wdrażania klienta usługi RMS](client-deployment-notes.md)
 ### [Ochrona za pomocą usługi RMS z użyciem infrastruktury FCI w systemie Windows Server](configure-fci.md)
 #### [Skrypt programu PowerShell](fci-script.md)
