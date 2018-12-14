@@ -4,22 +4,22 @@ description: Faza 1 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3a695268605a16564573d64c1f48447ea9b8cf45
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5eec7b06f3e0b649f436f61dc141e53173503774
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151116"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305183"
 ---
 # <a name="migration-phase-1---preparation"></a>Faza 1 migracji — przygotowanie
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 1 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 1 do 3 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i przygotowują środowisko do migracji, nie wpływając na użytkowników.
 
@@ -35,7 +35,7 @@ Aby uzyskać instrukcje, zobacz [Instalowanie modułu AADRM programu PowerShell]
 
 Aby wykonać niektóre z instrukcji migracji, musisz znać adres URL usługi Azure Rights Management dla swojej dzierżawy, aby móc go podstawić po pojawieniu się odwołań do elementu *\<Twój adres URL dzierżawy\>*. Adres URL usługi Azure Rights Management ma następujący format: **{identyfikator GUID}.rms.[Region].aadrm.com**.
 
-Na przykład: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+Przykład: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 ### <a name="to-identify-your-azure-rights-management-service-url"></a>Aby ustalić swój adres URL usługi Azure Rights Management
 
@@ -77,7 +77,7 @@ W przypadku większości migracji niepraktyczne jest migrowanie wszystkich klien
     
 4. Wyodrębnij pliki i postępuj zgodnie z instrukcjami w **Client.cmd przygotowanie** tak, aby zawierał nazwę serwera dla usługi AD RMS klastra ekstranetowego adresu URL licencjonowania. 
     
-    Aby zlokalizować tę nazwę, w konsoli usług Active Directory Rights Management kliknij nazwę klastra. Z informacji **Szczegóły klastra** skopiuj nazwę serwera z wartości **Licencjonowanie** w sekcji ekstranetowych adresów URL klastra. Na przykład: **rmscluster.contoso.com**.
+    Aby zlokalizować tę nazwę: Z poziomu konsoli usługi zarządzania prawami dostępu w usłudze Active Directory kliknij nazwę klastra. Z informacji **Szczegóły klastra** skopiuj nazwę serwera z wartości **Licencjonowanie** w sekcji ekstranetowych adresów URL klastra. Na przykład: **rmscluster.contoso.com**.
 
     > [!IMPORTANT]
     > Instrukcje zawierają opis zastępowania przykładowych adresów **adrms.contoso.com** adresami Twoich serwerów usługi AD RMS. Gdy to robisz, należy sprawdzić, czy nie występują żadne dodatkowe spacje przed adresami lub po nich, które spowodują przerwanie skryptu migracji i są bardzo trudne do zidentyfikowania jako główna przyczyna problemu. Niektóre narzędzia do edycji automatycznie dodają spację po wklejeniu tekstu.
@@ -93,7 +93,7 @@ Jeśli używasz lokalnej instalacji programu Exchange lub usługi Exchange Onlin
 
 Upewnij się, że masz [adres URL usługi Azure Rights Management dla swojej dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url), aby móc zastąpić tą wartością element *&lt;YourTenantURL&gt;* w poniższych poleceniach. 
 
-**Jeśli zintegrowano usługę Exchange Online z usługami AD RMS**: otwórz sesję programu Exchange Online PowerShell i uruchom następujące polecenia programu PowerShell pojedynczo lub w skrypcie:
+**Jeśli zintegrowano usługi Exchange Online z usługami AD RMS**: Otwórz sesję programu Exchange Online PowerShell i uruchom następujące polecenia programu PowerShell pojedynczo lub w skrypcie:
 
     $irmConfig = Get-IRMConfiguration
     $list = $irmConfig.LicensingLocation
@@ -102,7 +102,7 @@ Upewnij się, że masz [adres URL usługi Azure Rights Management dla swojej dzi
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**Jeśli z usługami AD RMS zintegrowano lokalny program Exchange**: dla każdej organizacji programu Exchange najpierw dodaj wartości rejestru na każdym serwerze programu Exchange, a następnie uruchom polecenia programu PowerShell: 
+**Jeśli dla lokalnego programu Exchange jest zintegrowany z usługami AD RMS**: Dla każdej organizacji programu Exchange najpierw Dodaj wartości rejestru na każdym serwerze Exchange server, a następnie uruchom polecenia programu PowerShell: 
 
 Wartości rejestru programów Exchange 2013 i Exchange 2016:
 
@@ -147,6 +147,6 @@ Polecenia programu PowerShell do uruchamiania pojedynczo lub w skrypcie
 Po uruchomieniu tych poleceń dla usługi Exchange Online lub lokalnego programu Exchange wdrożenie programu Exchange skonfigurowane do obsługi zawartości chronionej przez usługi AD RMS będzie również obsługiwać zawartość chronioną przez usługę Azure RMS po migracji. Dopóki nie zostanie wykonany późniejszy krok w procesie migracji, wdrożenie programu Exchange będzie nadal używać usług AD RMS do obsługi chronionej zawartości.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Przejdź do [fazy 2 — konfiguracji po stronie serwera](migrate-from-ad-rms-phase2.md).
 

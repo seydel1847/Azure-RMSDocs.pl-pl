@@ -4,20 +4,20 @@ description: Omówienie ochrony HYOK (AD RMS) przy użyciu usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d4d653f5244467b29fc2be7d4554d92d035d0f87
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: de278dbb9fd9f051c3a4e47ef719988df4706434
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151762"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305560"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj własne ochrony klucza (HYOK) dla usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Skorzystaj z poniższych informacji, aby zrozumieć, co utrzymywać własne ochrony klucza (HYOK) jest usługi Azure Information Protection i jak jest inna niż domyślna ochrona oparta na chmurze. Przed użyciem funkcji HYOK ochrony, upewnij się, że rozumiesz, gdy jest odpowiednie, obsługiwane scenariusze, ograniczenia i wymagania. 
 
@@ -65,25 +65,25 @@ W poniższej tabeli wymieniono obsługiwane scenariusze ochrony zawartości przy
 
 |Platforma|Aplikacja|Obsługiwane|
 |----------------------|----------|-----------|
-|Windows|Klient usługi Azure Information Protection z pakietem Office 2016 lub Office 2013 <br /><br />— Word, Excel, PowerPoint|Ochrona: tak<br /><br />Użycie: tak|
-|Windows|Klient usługi Azure Information Protection z pakietem Office 2016 lub Office 2013 <br /><br />-Programu outlook|Ochrona: tak<br /><br />Użycie: tak|
-|Windows|Klient usługi Azure Information Protection z Eksploratorem plików|Ochrona: tak <br /><br />Użycie: tak|
-|Windows|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: tak|
-|Windows|Klient usługi Azure Information Protection przy użyciu programu PowerShell, poleceń cmdlet etykietowania|Ochrona: tak<br /><br />Użycie: tak|
-|Windows|Skaner usługi Azure Information Protection|Ochrona: tak<br /><br />Użycie: tak|
-|Windows|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: tak|
-|Z systemem MacOS|Pakiet Office dla komputerów Mac <br /><br /> — Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: tak|
-|Z systemem MacOS|Pakiet Office dla komputerów Mac<br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: tak|
-|Z systemem MacOS|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: tak|
-|iOS|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: tak|
-|iOS|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Brak|
-|iOS|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: tak|
-|Android|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: tak|
-|Android|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Brak|
-|Android|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: tak|
-|W sieci Web|Program Outlook w sieci web|Ochrona: Nie<br /><br />Użycie: Brak|
-|W sieci Web|Office Online<br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Brak|
-|Uniwersalny|Uniwersalne aplikacje pakietu Office<br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Brak|
+|Windows|Klient usługi Azure Information Protection z pakietem Office 2016 lub Office 2013 <br /><br />— Word, Excel, PowerPoint|Ochrona: Tak<br /><br />Użycie: Tak|
+|Windows|Klient usługi Azure Information Protection z pakietem Office 2016 lub Office 2013 <br /><br />-Programu outlook|Ochrona: Tak<br /><br />Użycie: Tak|
+|Windows|Klient usługi Azure Information Protection z Eksploratorem plików|Ochrona: Tak <br /><br />Użycie: Tak|
+|Windows|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: Tak|
+|Windows|Klient usługi Azure Information Protection przy użyciu programu PowerShell, poleceń cmdlet etykietowania|Ochrona: Tak<br /><br />Użycie: Tak|
+|Windows|Skaner usługi Azure Information Protection|Ochrona: Tak<br /><br />Użycie: Tak|
+|Windows|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: Tak|
+|Z systemem MacOS|Pakiet Office dla komputerów Mac <br /><br /> — Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
+|Z systemem MacOS|Pakiet Office dla komputerów Mac<br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Tak|
+|Z systemem MacOS|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: Tak|
+|iOS|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
+|iOS|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Nie|
+|iOS|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: Tak|
+|Android|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
+|Android|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Nie|
+|Android|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: Tak|
+|sieć Web|Program Outlook w sieci web|Ochrona: Nie<br /><br />Użycie: Nie|
+|sieć Web|Office Online<br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Nie|
+|Uniwersalny|Uniwersalne aplikacje pakietu Office<br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Nie|
 
 
 ## <a name="additional-limitations-when-using-hyok"></a>Dodatkowe ograniczenia podczas używania funkcji HYOK
@@ -114,7 +114,7 @@ Wdrożenie usług AD RMS muszą spełniać poniższe wymagania, aby zapewnić oc
 
 - Konfiguracja usług AD RMS:
     
-    - Minimalna wersja systemu Windows Server 2012 R2: wymagana dla środowisk produkcyjnych; w celach związanych z testowaniem lub oceną można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
+    - Minimalną wersję systemu Windows Server 2012 R2: Wymagane w środowiskach produkcyjnych, lecz do celów testowania lub ewaluacji, można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
     
     - Jeden z następujących topologii:
         
@@ -126,17 +126,17 @@ Wdrożenie usług AD RMS muszą spełniać poniższe wymagania, aby zapewnić oc
         
     Jeśli masz wiele klastrów AD RMS w oddzielnym lesie, należy usunąć wszystkich etykiet, w ramach globalnych zasad, które zabezpieczać HYOK (AD RMS) i skonfiguruj [zasad o określonym zakresie](configure-policy-scope.md) dla każdego klastra. Następnie Przypisz użytkowników dla każdego klastra, do ich zasad o określonym zakresie, upewniając się, że nie należy używać grup, które mogłyby spowodować użytkownika są przypisane do więcej niż jedna zasada o określonym zakresie. Wynik powinien być, że każdy użytkownik ma etykiety dla jednego klastra usług AD RMS. 
     
-    - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): tryb można potwierdzić, sprawdzając właściwości klastra AD RMS, **ogólne** kartę.
+    - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): Tryb można potwierdzić, sprawdzając właściwości klastra AD RMS, **ogólne** kartę.
     
     - Każdy serwer usług AD RMS jest skonfigurowany jako adres URL certyfikacji. [Instrukcje](#configuring-ad-rms-servers-to-locate-the-certification-url) 
     
-    - Punkt połączenia usługi nie jest zarejestrowany w usłudze Active Directory: punkt połączenia usługi nie jest używany, gdy korzystasz z ochrony za pomocą usług AD RMS razem z usługą Azure Information Protection. 
+    - Punkt połączenia usługi (SCP) nie jest zarejestrowany w usłudze Active Directory: Punkt połączenia usługi nie jest używany, korzystając z ochrony usług AD RMS za pomocą usługi Azure Information Protection. 
     
         - Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](./rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się. 
         
         - Jeśli instalujesz nowy klaster AD RMS dla usługi HYOK, pomiń krok, aby zarejestrować punkt połączenia z usługą podczas konfiguracji pierwszego węzła. Dla każdego dodatkowego węzła upewnij się, że serwer jest skonfigurowany dla adresu URL certyfikacji przed Dodaj rolę usług AD RMS i Dołącz do istniejącego klastra.
     
-    - Serwery AD RMS są skonfigurowane do użycia protokołów SSL/TLS z ważnym certyfikatem x.509, który jest zaufany przez klientów nawiązujących połączenie: wymagane dla środowisk produkcyjnych, ale niewymagane w celach związanych z testowaniem lub oceną.
+    - Serwery usług AD RMS są skonfigurowane do używania protokołu SSL/TLS z ważnym certyfikatem x.509 jest zaufany przez klientów nawiązujących połączenie: Wymagane dla środowisk produkcyjnych, ale nie są wymagane do celów testowania lub ewaluacji.
     
     - Skonfigurowane szablony praw.
     
@@ -146,11 +146,11 @@ Wdrożenie usług AD RMS muszą spełniać poniższe wymagania, aby zapewnić oc
 
 - Skonfigurowano synchronizację katalogów między w lokalnej usłudze Active Directory i Azure Active Directory i użytkowników, którzy będą korzystać z ochrony HYOK skonfigurowanymi pod kątem logowania jednokrotnego.
 
-- Jeśli będziesz udostępniać dokumenty lub wiadomości e-mail chronione za pomocą funkcji HYOK innym osobom spoza organizacji: usługi AD RMS są skonfigurowane dla jawnie zdefiniowanych relacji zaufania w bezpośredniej relacji point-to-point z innymi organizacjami przy użyciu zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które są tworzone za pomocą usługi Active Directory Federation Services (AD FS).
+- Jeśli będziesz udostępniać dokumenty lub wiadomości e-mail chronione za pomocą funkcji HYOK innym osobom spoza organizacji: Usługi AD RMS jest skonfigurowane dla jawnie zdefiniowanych relacji zaufania w bezpośredniej relacji point-to-point z innymi organizacjami przy użyciu zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które są tworzone za pomocą usługi Active Directory Federation Services (AD FS).
 
 - Użytkownicy mają pakiet Office 2016 Professional Plus lub Office 2013 Professional Plus z dodatkiem Service Pack 1, systemem Windows 7 z dodatkiem SP1 lub nowszym. Należy zauważyć, że pakiety Office 2010 i Office 2007 nie są obsługiwane w tym scenariuszu.
     
-    - Dla pakietu Office 2016, Microsoft Installer (.msi)-na podstawie wersji: zainstalowano [aktualizacji 4018295 dla programu Microsoft Office 2016, wydanej w dniu 6 marca 2018](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295).
+    - Dla pakietu Office 2016, Microsoft Installer (.msi)-na podstawie wersji: Zainstalowano [aktualizacji 4018295 dla programu Microsoft Office 2016, wydanej w dniu 6 marca 2018](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295).
 
 > [!IMPORTANT]
 > Do zrealizowania wysokiego bezpieczeństwa, które oferuje ochronę HYOK, zaleca się, że serwery AD RMS nie znajdują się w sieci Obwodowej i czy są one używane przez tylko urządzenia zarządzane. 
@@ -184,13 +184,13 @@ Po skonfigurowaniu etykiety dla **HYOK (AD RMS)** ochrony, należy określić ad
 
 Można znaleźć identyfikator GUID szablonu i licencjonowania wartości adresu URL konsoli usługi zarządzania prawami dostępu w usłudze Active Directory:
 
-- Aby zlokalizować identyfikator GUID szablonu: rozwiń klaster, a następnie kliknij przycisk **szablonów zasad praw**. Z informacji o **dystrybuowanych szablonach zasad praw**, możesz następnie skopiować identyfikator GUID szablonu, którego chcesz użyć. Na przykład: 82bf3474-6efe-4fa1-8827-d1bd93339119
+- Aby zlokalizować identyfikator GUID szablonu: Rozwiń klaster, a następnie kliknij przycisk **szablonów zasad praw**. Z informacji o **dystrybuowanych szablonach zasad praw**, możesz następnie skopiować identyfikator GUID szablonu, którego chcesz użyć. Przykład: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- Aby znaleźć adres URL licencjonowania: kliknij nazwę klastra. Z informacji o **szczegółach klastra** skopiuj wartość **licencjonowania** minus ciąg **/_wmcs/licensing**. Na przykład: https://rmscluster.contoso.com 
+- Aby znaleźć adres URL licencjonowania: Kliknij nazwę klastra. Z informacji o **szczegółach klastra** skopiuj wartość **licencjonowania** minus ciąg **/_wmcs/licensing**. Na przykład: https://rmscluster.contoso.com 
     
-    Jeśli masz zarówno wartość licencjonowania ekstranetu, jak i wartość licencjonowania intranetu i są one różne: podaj wartość ekstranetu tylko jeśli będziesz udostępniać chronione dokumenty lub wiadomości e-mail partnerom zdefiniowanym za pomocą jawnej relacji zaufania point-to-point. W przeciwnym razie użyj wartości intranetowej i upewnij się, że wszystkie komputery klienckie korzystające z ochrony za pomocą usług AD RMS nawiązują połączenie przy użyciu połączenia intranetowego(na przykład komputery zdalne używają połączenia sieci VPN).
+    Jeśli masz zarówno wartość licencjonowania ekstranetu, jak również wartość licencjonowania intranetu i są one różne: Podaj wartość ekstranetu tylko wtedy, gdy będziesz udostępniać chronione dokumenty lub wiadomości e-mail partnerom zdefiniowanym za pomocą jawnej relacji zaufania point-to-point. W przeciwnym razie użyj wartości intranetowej i upewnij się, że wszystkie komputery klienckie korzystające z ochrony za pomocą usług AD RMS nawiązują połączenie przy użyciu połączenia intranetowego(na przykład komputery zdalne używają połączenia sieci VPN).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby skonfigurować etykiety dla ochrony HYOK, zobacz [sposobu konfigurowania etykiety dla ochrony usługi Rights Management](configure-policy-protection.md). 

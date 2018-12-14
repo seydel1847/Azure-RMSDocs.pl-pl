@@ -12,12 +12,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: a3385f260928dabc7254a49f3265b647c2920703
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b1525665fb488aed1ad98a77ac66f92f7ee4509b
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150062"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266685"
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
@@ -36,7 +36,7 @@ W treści wiadomości e-mail umieść następujące dane:
 - Imię i nazwisko osoby żądającej
 - Adres e-mail osoby żądającej
 
-### <a name="next-steps"></a>Kolejne kroki
+### <a name="next-steps"></a>Następne kroki
 Po otrzymaniu żądania umowy IPIA wyślemy formularz (jako dokument programu Word).
 Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza **IPIA@microsoft.com** w celu podania następujących informacji:
 - Prawna nazwa firmy
@@ -65,18 +65,18 @@ Po wysłaniu wiadomości e-mail odczekaj do 72 godzin na potwierdzenie przez nas
 
 ## <a name="deploying-to-the-client-environment"></a>Wdrażanie w środowisku klienta
 
-W celu wdrożenia aplikacji skompilowanej przy użyciu narzędzi Azure Information Protection (AIP)/Rights Management Services (RMS) musisz wdrożyć klienta RMS Client 2.1 na komputerze użytkownika końcowego.
+W celu wdrożenia aplikacji skompilowanej za pomocą usługi Azure Information Protection (AIP) / narzędzia usług zarządzania prawami (RMS), musisz wdrożyć klienta RMS Client 2.1 na komputerze użytkownika końcowego.
 
-### <a name="rms-client-21"></a>Klient RMS Client 2.1
+### <a name="rmsclient21"></a>Klient RMS Client 2.1
 Klient RMS Client 2.1 został zaprojektowany w celu ochrony dostępu do informacji przepływających przez aplikacje korzystające z usług AIP/RMS i ich wykorzystania — w przypadku instalacji lokalnej lub instalacji w centrum danych firmy Microsoft.
 
 Klient RMS Client 2.1 nie jest składnikiem systemu operacyjnego Windows. Klient jest dostarczany jako opcjonalny plik do pobrania, który po potwierdzeniu i zaakceptowaniu umowy licencyjnej może być bezpłatnie dystrybuowany z aplikacją.
 
 > [!IMPORTANT]
-> Klient AD RMS Client 2.1 jest powiązany z architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
+> Klient RMS Client 2.1 jest architekturą i musi odpowiadać architekturze docelowego systemu operacyjnego.
 
 
-## <a name="rms-client-21-installation-options"></a>Opcje instalacji klienta RMS Client 2.1
+## <a name="rmsclient21-installation-options"></a>Opcje instalacji klienta RMS Client 2.1
 
 ### <a name="creating-your-deployment-package"></a>Tworzenie pakietu wdrażania
 
@@ -85,11 +85,11 @@ Zalecamy dołączenie pakietu instalatora klienta RMS Client do aplikacji lub ro
 Istnieje możliwość interaktywnego instalowania klienta RMS Client 2.1 poprzez uruchomienie instalatora klienta RMS Client 2.1 lub jego zainstalowanie w trybie dyskretnym. Kroki integracji:
 
 -   Pobierz instalator klienta RMS Client 2.1
--   Zintegrowanie uruchomienia instalatora klienta RMS Client 2.1 z instalatorem aplikacji
+-   Zintegruj Instalatora klienta RMS Client 2.1, aby uruchomić program z Instalatorem aplikacji
 
 Przykładem integracji klienta RMS Client 2.1 z aplikacją użytkownika jest pakiet [Rights Protected Folder Explorer](https://technet.microsoft.com/library/rights-protected-folder-explorer(v=ws.10).aspx). Spróbuj go zainstalować, aby zrozumieć zastosowane podejście.
 
-### <a name="make-rms-client-21-a-pre-requisite-for-your-application-install"></a>Ustawianie klienta RMS Client 2.1 jako warunek wstępny dla instalacji aplikacji
+### <a name="make-rmsclient21-a-pre-requisite-for-your-application-install"></a>Wprowadź klienta RMS Client 2.1 jako warunek wstępny dla instalacji aplikacji
 
 W takim przypadku utworzysz warunek wstępny, który spowoduje, że instalacja aplikacji zakończy się niepowodzeniem, jeśli klient RMS Client 2.1 nie będzie znajdował się na komputerze użytkownika końcowego.
 
@@ -101,16 +101,16 @@ W przypadku obecności klienta przejdź do instalacji aplikacji.
 
 > [!NOTE]
 > W przypadku migracji do nowego modelu ADAL w celu uwierzytelniania nie trzeba instalować usługi **SIA**. Aby uzyskać więcej informacji, zobacz [Uwierzytelnianie ADAL dla aplikacji z obsługą usług RMS](adal-auth.md).
-> Możliwe jest również **certyfikowanie aplikacji dla systemu Windows 10** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft oferuje następujące możliwości: korzystanie z uwierzytelniania wieloskładnikowego i instalowanie klienta RMS Client 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
+> Można również **certyfikowanie aplikacji dla systemu Windows 10** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast Asystenta logowania w Online firmy Microsoft, Tobie i Twoim klientom będą mogli: Korzystanie z uwierzytelniania wieloskładnikowego instalacji klienta RMS Client 2.1 bez wymogu posiadania uprawnień administracyjnych do maszyny
 
 Aby użytkownik końcowy mógł korzystać z usług Information Protection, należy wdrożyć *Asystenta logowania w witrynie Online Services (SIA, Online Services Sign-in Assistant)*. Jako deweloper aplikacji nie wiesz, czy użytkownik końcowy będzie korzystał z ochrony informacji za pośrednictwem usług RMS (lokalnie) czy Azure Information Protection.
 
 
 > [!IMPORTANT]
-> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [Wymagania dotyczące usług Azure RMS: subskrypcje usług w chmurze, które obsługują usługi Azure RMS](../requirements.md).
+> Jeśli aplikacja kliencka będzie uruchamiana za pomocą usług RMS na platformie Azure, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure RMS: Subskrypcje, które obsługują usługę Azure RMS w chmurze](../requirements.md).
 > Aby uzyskać więcej informacji o współpracy z usługami Azure RMS, zobacz [Umożliwianie współpracy aplikacji usługi z usługami RMS opartymi na chmurze](how-to-use-file-api-with-aadrm-cloud.md).
 
--   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
+-   Pobierz [Asystenta logowania w witrynie Microsoft Online Services](https://www.microsoft.com/download/details.aspx?id=28177) z Centrum pobierania Microsoft.
 -   Upewnij się, że wdrożenie aplikacji z obsługą praw zawiera kontrolę warunków wstępnych dla tego wyboru usługi.
 -   Aby uzyskać informacje o własnym testowaniu i wykorzystaniu usługi online przez użytkownika końcowego, zobacz temat TechNet [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx).
 
@@ -120,7 +120,7 @@ Aby uzyskać więcej informacji na temat umożliwiania aplikacji korzystania z u
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-* [Asystent logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177)
+* [Asystent logowania w witrynie Microsoft Online Services](https://www.microsoft.com/download/details.aspx?id=28177)
 * [Konfiguracja usługi Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
 * [Umożliwianie współpracy aplikacji z usługą RMS opartą na chmurze](how-to-use-file-api-with-aadrm-cloud.md)
 

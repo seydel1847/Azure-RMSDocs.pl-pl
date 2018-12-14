@@ -4,22 +4,22 @@ description: Omówienie ograniczeń, gdy używasz kluczy zarządzanych przez kli
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330280"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305152"
 ---
 # <a name="byok-pricing-and-restrictions"></a>Cennik i ograniczenia dotyczące funkcji BYOK
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Organizacje, które mają subskrypcję obejmującą usługę Azure Information Protection można skonfigurować ich dzierżawy usługi Azure Information Protection do użycia klucza zarządzanego przez klienta (BYOK) i [rejestrować ich użycie](./log-analyze-usage.md). 
@@ -44,11 +44,11 @@ Inne zalety używania usługi Azure Key Vault do zarządzania kluczem dzierżawy
 
 - Usługa Azure Key Vault zapewnia separację ról, będącą uznanym najlepszym rozwiązaniem w dziedzinie zabezpieczeń. Administratorzy usługi Azure Information Protection mogą skoncentrować się na zarządzaniu klasyfikacją i ochroną danych, natomiast administratorzy usługi Azure Key Vault — na zarządzaniu kluczami i ewentualnymi szczególnymi zasadami wymaganymi na potrzeby zabezpieczeń lub zgodności.
 
-- W niektórych organizacjach obowiązują ograniczenia dotyczące lokalizacji przechowywania klucza głównego. Usługa Azure Key Vault zapewnia wysoki poziom kontroli nad lokalizacją przechowywania klucza głównego, ponieważ jest dostępna w wielu regionach platformy Azure. Obecnie możesz wybrać spośród 28 regiony platformy Azure i można oczekiwać, że zwiększenie tej liczby. Aby uzyskać więcej informacji, zobacz [dostępne produkty według regionu] (https://azure.microsoft.com/regions/services/) strony w witrynie platformy Azure.
+- W niektórych organizacjach obowiązują ograniczenia dotyczące lokalizacji przechowywania klucza głównego. Usługa Azure Key Vault zapewnia wysoki poziom kontroli nad lokalizacją przechowywania klucza głównego, ponieważ jest dostępna w wielu regionach platformy Azure. Obecnie możesz wybrać spośród 28 regiony platformy Azure i można oczekiwać, że zwiększenie tej liczby. Aby uzyskać więcej informacji, zobacz [dostępność produktów według regionów](https://azure.microsoft.com/regions/services/) strony w witrynie platformy Azure.
 
 Oprócz funkcji zarządzania kluczami usługa Azure Key Vault zapewnia administratorom zabezpieczeń jednolite środowisko zarządzania przechowywaniem certyfikatów i informacji poufnych (na przykład haseł), a także zarządzaniem nimi i dostępem do nich, dla innych usług i aplikacji korzystających z szyfrowania. 
 
-Aby uzyskać więcej informacji na temat usługi Azure Key Vault, zobacz [Co to jest usługa Azure Key Vault?](/azure/key-vault/key-vault-whatis) i odwiedź [blog zespołu usługi Azure Key Vault](https://cloudblogs.microsoft.com/kv/), zawierający najnowsze informacje oraz wyjaśnienie sposobu korzystania z tej technologii przez inne usługi.
+Aby uzyskać więcej informacji na temat usługi Azure Key Vault, zobacz [Co to jest usługa Azure Key Vault?](/azure/key-vault/key-vault-whatis) i odwiedź [blog zespołu usługi Azure Key Vault](https://blogs.technet.microsoft.com/kv/), zawierający najnowsze informacje oraz wyjaśnienie sposobu korzystania z tej technologii przez inne usługi.
 
 ## <a name="restrictions-when-using-byok"></a>Ograniczenia w przypadku korzystania z rozwiązania BYOK
 
@@ -56,7 +56,7 @@ Funkcja BYOK i rejestrowanie użycia współpracują bezproblemowo z każdą apl
 
 Jeśli zostało wcześniej włączone usługi Exchange Online IRM, importując zaufaną domenę publikacji (TPD) z usługi Azure RMS, postępuj zgodnie z instrukcjami [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365 korzystających z usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) włączyć nowych funkcji w usłudze Exchange Online, które obsługują korzystania z rozwiązania BYOK usługi Azure Information Protection.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Jeśli wprowadzono decyzję, aby zarządzać własnym kluczem, przejdź do strony [wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key).
 

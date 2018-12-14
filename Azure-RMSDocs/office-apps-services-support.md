@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 22df24a7af17dd87dd6f3947e39ea72d7b7b1372
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: e1a44fb7cf6e4ad340a89f236920e5ff6d96b7d0
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169944"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173999"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Jak aplikacje pakietu Office i usługi obsługują usługę Azure Rights Management 
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Aplikacje pakietu Office dla użytkowników końcowych oraz usługi pakietu Office można użyć usługi Azure Rights Management z usługi Azure Information Protection, aby chronić dane Twojej organizacji. Te aplikacje pakietu Office to Word, Excel, PowerPoint i Outlook. Usługi pakietu Office to Exchange i SharePoint. Konfiguracje pakietu Office, które obsługują usługę Azure Rights Management, często używany jest termin **information rights management (IRM)**.
 
@@ -32,9 +32,9 @@ Oprócz macierzystą obsługę pakietu Office, usługi Azure Rights Management, 
 
 Jeśli chcesz już skonfigurować aplikacje pakietu Office i klienta usługi Azure Information Protection:
 
-- Aby skonfigurować aplikacje pakietu Office, zobacz [Aplikacje pakietu Office: konfiguracja dla klientów](configure-office-apps.md).
+- Aby skonfigurować aplikacje pakietu Office, zobacz [aplikacje pakietu Office: Konfiguracja dla klientów](configure-office-apps.md).
 
-- Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
+- Aby zainstalować i skonfigurować klienta usługi Azure Information Protection, zobacz [klienta Azure Information Protection: Instalacja i konfiguracja dla klientów](configure-client.md).
 
 ## <a name="exchange-online-and-exchange-server"></a>Usługa Exchange Online i program Exchange Server
 Gdy używasz usługi Exchange Online lub Exchange Server, można skonfigurować opcje usługi Azure Information Protection. Ta konfiguracja pozwala zapewnić następujących rozwiązań do ochrony programu Exchange:
@@ -59,7 +59,7 @@ Dla opcji więcej informacji na temat wiadomości e-mail, który służy do ochr
 
 Jeśli masz wszystko gotowe do skonfigurowania programu Exchange do ochrony wiadomości e-mail:
 
-- W przypadku usługi Exchange Online, zobacz artykuł [Usługa Exchange Online: konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
+- Dla usługi Exchange Online, zobacz [usługi Exchange Online: Konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
 
 - W przypadku lokalnej instalacji programu Exchange, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
@@ -87,20 +87,20 @@ Jeśli używasz programu SharePoint Server, możesz użyć ochrony za pomocą us
 > 
 > - Współtworzenia, gdy więcej niż jedna osoba edytuje dokument, w tym samym czasie, nie jest obsługiwane. Aby edytować dokument w bibliotece chronioną przez IRM, musi najpierw zapoznaj się z dokumentu i pobierz go i poddać go edycji w aplikacji pakietu Office. W związku z tym tylko jedna osoba może edytować dokument w danym momencie.
 
-W przypadku bibliotek, które nie są chronioną przez IRM, jeśli chroniony plik, który zostanie przekazany do programu SharePoint lub OneDrive, następujące nie działają z tym plikiem: Współtworzenie, Office Online, wyszukiwania, podglądu dokumentu, miniatury, zbierania elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP).
+Dla bibliotek, które nie są chronioną przez IRM, jeśli chroniony plik, który zostanie przekazany do programu SharePoint lub OneDrive, poniżej nie będą działać z tego pliku: Współtworzenie, Office Online, wyszukiwania, podglądu dokumentu, miniatury, zbierania elektronicznych materiałów dowodowych i ochrony przed utratą danych (DLP).
 
 Podczas korzystania z ochrony za pomocą usługi IRM z programem SharePoint usługa Azure Rights Management stosuje ograniczenia dotyczące użycia i szyfrowanie danych względem dokumentów w trakcie ich pobierania z programu SharePoint, a nie w momencie ich utworzenia w programie SharePoint lub przekazania do biblioteki. Informacje dotyczące ochrony dokumentów przed ich pobraniem można znaleźć w artykule dotyczącym [szyfrowania danych w usługach OneDrive dla Firm i SharePoint Online](https://technet.microsoft.com/library/dn905447.aspx) dostępnym w dokumentacji programu SharePoint.
 
-Chociaż nie jest już nowy w następującym wpisie w blogu usługi Office 365 zawiera pewne dodatkowe informacje, które mogą okazać się przydatne: [What's New with Information Rights Management in SharePoint and SharePoint Online](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
+Mimo że nie jest już nowy w następującym wpisie w blogu usługi Office 365 ma pewne dodatkowe informacje, które mogą okazać się przydatne: [What's New with Information Rights Management w programie SharePoint i SharePoint Online](https://www.microsoft.com/en-us/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
 Jeśli chcesz już skonfigurować program SharePoint dla usługi IRM:
 
-- W przypadku usługi SharePoint Online, zobacz [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
+- Dla usługi SharePoint Online, zobacz [usługi SharePoint Online i OneDrive dla firm: Konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration).
 
 - W przypadku programu SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Jeśli masz usługę Office 365, może zainteresować Cię artykuł dotyczący [rozwiązań do ochrony plików w usłudze Office 365](/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect), w którym opisano zalecane możliwości ochrony plików w usłudze Office 365.
 

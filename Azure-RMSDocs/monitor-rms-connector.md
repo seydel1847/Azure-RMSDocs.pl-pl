@@ -4,22 +4,22 @@ description: Informacje dotyczące monitorowania łącznika i korzystania przez 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f78135b7398ed509d1b77dfc724fc6380adbb4d5
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 46f8c817911408d62f12a1fce0a7ae0ce14069e2
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026954"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305492"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Monitorowanie łącznika usługi Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można skorzystać z następujących metod i informacji, które ułatwiają monitorowanie łącznika oraz korzystanie przez organizację z usługi Azure Rights Management w ramach usługi Azure Information Protection.
 
@@ -164,7 +164,7 @@ Podczas instalacji łącznika usługi RMS są automatycznie tworzone liczniki wy
 
 Przykładem może być sytuacja, gdy po objęciu ochroną dokumentów lub wiadomości e-mail regularnie występują opóźnienia. Opóźnienia mogą także występować po otwarciu chronionych dokumentów lub wiadomości e-mail. W takich przypadkach liczniki wydajności mogą pomóc w ustaleniu, czy opóźnienia są spowodowane czasem przetwarzania w łączniku lub czasem przetwarzania przez usługę Azure Rights Management, czy też są to opóźnienia sieci. 
 
-Aby łatwiej wskazać przyczynę opóźnienia, zapoznaj się z licznikami zawierających średnią wartość **czasu przetwarzania łącznika**, **czasu odpowiedzi usługi** i **czasu odpowiedzi łącznika**. Przykład: **Średni czas odpowiedzi łącznika na żądania wsadowe dotyczące licencjonowania zakończone powodzeniem**.
+Aby łatwiej wskazać przyczynę opóźnienia, zapoznaj się z licznikami zawierających średnią wartość **czasu przetwarzania łącznika**, **czasu odpowiedzi usługi** i **czasu odpowiedzi łącznika**. Przykład: **Licencjonowanie pomyślne wsadowej czasu odpowiedzi łącznika średni żądania**.
 
 Jeśli niedawno dodano nowe konta serwera na potrzeby korzystania z łącznika, warto zapoznać się z licznikiem **Czas od ostatniej aktualizacji zasad autoryzacji** w celu sprawdzenia, czy łącznik pobrał listę od czasu jej aktualizacji, czy należy zaczekać nieco dłużej (do 15 minut).
 

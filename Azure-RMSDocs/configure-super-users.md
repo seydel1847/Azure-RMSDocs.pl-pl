@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4b4df01be10ce033dd7369e71420e949750e667
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 3a4cf3eaaf177a9424a438d0cdbee54b6a0a252e
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169911"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173829"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Dzięki funkcji superużytkowników usługi Azure Rights Management w ramach usługi Azure Information Protection upoważnione osoby i usługi mogą zawsze odczytywać i sprawdzać dane chronione w organizacji przez usługę Azure Rights Management. Jeśli to konieczne, ochrony następnie można usunąć lub zmienić.
 
@@ -96,5 +96,5 @@ Jeśli nie możesz użyć usługi Office 365 zbierania elektronicznych materiał
 
 4. Uruchom Unprotect-RMSFile na ten drugi plik PST, aby odszyfrować zawartość tego pliku znacznie mniejszy. Z danych wyjściowych należy zaimportować plik PST odszyfrowany do narzędzia do odnajdywania.
 
-Aby uzyskać szczegółowe informacje i wskazówki dotyczące przeprowadzania zbierania elektronicznych materiałów dowodowych skrzynek pocztowych i pliki PST, zobacz następujący wpis w blogu: [usługi Azure Information Protection i procesy zbierania elektronicznych materiałów dowodowych](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216).
+Aby uzyskać bardziej szczegółowe informacje i wskazówki dotyczące przeprowadzania zbierania elektronicznych materiałów dowodowych skrzynek pocztowych i pliki PST zobacz następujący wpis w blogu: [Usługa Azure Information Protection i procesy zbierania elektronicznych materiałów dowodowych](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216).
 

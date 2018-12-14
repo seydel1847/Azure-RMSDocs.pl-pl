@@ -4,20 +4,20 @@ description: Można usunąć lub zmiana kolejności etykiet usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: ccb5f4ff84e590640ed4e5204d2170384611775f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023400"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304880"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Można usunąć lub zmiana kolejności etykiet usługi Azure Information Protection, które użytkownicy zobaczą w swoich aplikacjach pakietu Office, wybierając te akcje dotyczące etykiet.
 
@@ -55,15 +55,15 @@ Użyj poniższych instrukcji, aby wprowadzić te zmiany.
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną lub więcej z następujących czynności: 
+2. Z **klasyfikacje** > **etykiety** opcji menu: Na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną lub więcej z następujących czynności: 
 
-    - Aby usunąć etykietę: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz usunąć, kliknij przycisk **usunąć tę etykietę**i kliknij przycisk **OK** o potwierdzenie. 
+    - Aby usunąć etykietę: Kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz usunąć, kliknij przycisk **usunąć tę etykietę**i kliknij przycisk **OK** o potwierdzenie. 
 
-    - Aby wyłączyć etykietę: wybierz etykietę, którą chcesz wyłączyć. Na **etykiety** bloku dla **włączone**, wybierz opcję **poza**, a następnie kliknij przycisk **Zapisz**.
+    - Aby wyłączyć etykietę: Wybierz etykietę, która ma zostać wyłączony. Na **etykiety** bloku dla **włączone**, wybierz opcję **poza**, a następnie kliknij przycisk **Zapisz**.
 
-    - Aby zmienić kolejność etykiet: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz zmienić, kliknij przycisk **Przenieś w górę** lub **Przenieś w dół** momentu etykiety w kolejności, w którym chcesz.  
+    - Aby zmienić kolejność etykiet: Kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz zmienić, kliknij przycisk **Przenieś w górę** lub **Przenieś w dół** momentu etykiety w kolejności, w którym chcesz.  
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

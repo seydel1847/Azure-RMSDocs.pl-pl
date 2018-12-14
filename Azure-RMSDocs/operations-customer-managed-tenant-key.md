@@ -4,22 +4,22 @@ description: Informacje na temat operacji cyklu życia, które są istotne, jeś
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 098f7834e4765dcb020817014f9357139e42207a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 92b5b2dad15c2ec33169e72e69f87bddec5e56df
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147104"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305322"
 ---
-# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cykl życia klucza dzierżawy
+# <a name="customer-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez klienta: Operacje cyklu życia klucza dzierżawy
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Jeśli samodzielnie zarządzasz swoim kluczem dzierżawy dla usługi Azure Information Protection (bring your own key, byok, scenariusz), użyj poniższych sekcji, aby uzyskać więcej informacji na temat operacji cyklu życia, które mają zastosowanie w tej topologii.
 
@@ -43,7 +43,7 @@ Przykładem może być konieczność wymiany klucza usługi Azure Information Pr
 
 Aby wymienić na inny klucz, którymi zarządza użytkownik, możesz utworzyć nowy klucz w usłudze Azure Key Vault lub użyć innego klucza, który jest już w usłudze Azure Key Vault. Następnie wykonaj te same procedury, których nie było Implementowanie funkcji BYOK dla usługi Azure Information Protection. 
 
-1. Tylko wtedy, gdy nowy klucz w innym magazynie kluczy do tego, którego już używasz usługi Azure Information Protection: autoryzowania usługi Azure Information Protection do użycia magazynu kluczy przy użyciu [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) polecenia cmdlet.
+1. Tylko wtedy, gdy nowy klucz w innym magazynie kluczy do tego, którego już używasz usługi Azure Information Protection: Autoryzacja usługi Azure Information Protection do użycia magazynu kluczy przy użyciu [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) polecenia cmdlet.
 
 2. Jeśli usługi Azure Information Protection nie jest już znany o kluczu, którą chcesz użyć, uruchom [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) polecenia cmdlet.
 
@@ -60,7 +60,7 @@ Aby uzyskać więcej informacji na temat każdego z następujących czynności:
 ## <a name="backup-and-recover-your-tenant-key"></a>Tworzenie kopii zapasowej i odzyskiwanie klucza dzierżawy
 Ponieważ zarządzasz swoim kluczem dzierżawy, ponosisz odpowiedzialność za tworzenie kopii zapasowej klucza, który korzysta z usługi Azure Information Protection. 
 
-Jeśli klucz dzierżawy w środowisku lokalnym, jest generowany w module HSM firmy Thales: Aby utworzyć kopię zapasową klucza, należy utworzyć kopię zapasową tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. W przypadku przeniesienia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu zapewnienia ochrony przed awariami jakichkolwiek węzłów usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego tokenami klucza pliku pełnej kopii zapasowej. Na przykład, jeśli potrzebujesz wsparcia kopię klucza, aby używać poza modułem zabezpieczeń firmy Thales w zwykły tekst, usługi Azure Key Vault nie można pobrać go, ponieważ ma on przywrócenie kopii.
+Jeśli klucz dzierżawy w środowisku lokalnym, jest generowany w module HSM firmy Thales: Sporządź kopię zapasową klucza, tworzenie kopii zapasowej tokenami plik klucza, pliku środowiska zabezpieczeń oraz kart administratora. W przypadku przeniesienia klucza do usługi Azure Key Vault, usługa zapisuje tokenami pliku klucza w celu zapewnienia ochrony przed awariami jakichkolwiek węzłów usługi. Ten plik jest powiązany ze środowiskiem zabezpieczeń dla konkretnego regionu lub wystąpienia platformy Azure. Jednak nie należy traktować tego tokenami klucza pliku pełnej kopii zapasowej. Na przykład, jeśli potrzebujesz wsparcia kopię klucza, aby używać poza modułem zabezpieczeń firmy Thales w zwykły tekst, usługi Azure Key Vault nie można pobrać go, ponieważ ma on przywrócenie kopii.
 
 Usługa Azure Key Vault ma [kopii zapasowej polecenia cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey) służące do tworzenia kopii zapasowych klucza, pobierając go i zapisanie go w pliku. Ponieważ pobranej zawartości jest zaszyfrowany, nie można używać poza usługi Azure Key Vault. 
 

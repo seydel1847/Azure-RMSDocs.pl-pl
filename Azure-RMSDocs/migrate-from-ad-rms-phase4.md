@@ -4,22 +4,22 @@ description: Faza 4 migracji z usługi AD RMS do usługi Azure Information Prote
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ea5a80ad9d08873f817f21a9f6ac4d059618af7
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d694876a91e0d39d0d429e5dd5503bb153fd5521
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024046"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305458"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>Faza 4 migracji — konfiguracja usług pomocniczych
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Skorzystaj z poniższych informacji dotyczących fazy 4 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 8 do 9 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
@@ -105,7 +105,7 @@ Postępuj zgodnie z instrukcjami w artykule [Wdrażanie łącznika usługi Azure
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>Konfigurowanie programów Exchange i SharePoint do używania łącznika
 
-1. Wróć do instrukcji dotyczących wdrażania łącznika usługi RMS: [krok 5. Konfigurowanie serwerów do korzystania z łącznika usługi RMS](./configure-servers-rms-connector.md)
+1. Wróć do instrukcji dotyczących wdrażania łącznika usług RMS: [Krok 5: Konfigurowanie serwerów do korzystania z łącznika usługi RMS](./configure-servers-rms-connector.md)
 
     Jeśli masz tylko serwer SharePoint Server, przejdź prosto do sekcji [Następne kroki](#next-steps), aby kontynuować migrację. 
 
@@ -209,5 +209,5 @@ Jeden z następujących elementów w zależności od tego, czy podczas komunikac
 ---
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby kontynuować migrację, przejdź do [fazy 5 — zadań po migracji](migrate-from-ad-rms-phase5.md).

@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024012"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174135"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > Ta funkcja jest dostępna w wersji zapoznawczej i migruje dzierżawy na nową platformę, która jest również dostępna w wersji zapoznawczej. Nie można cofnąć migrację. Nowa platforma obsługuje ujednoliconego etykietowania, tak aby etykiety, które umożliwiają tworzenie i zarządzanie nimi może służyć przez wielu klientów i usług.
@@ -76,13 +76,13 @@ Klienci usługi Azure Information Protection można użyć tych ustawień etykie
 
 |Konfiguracja etykiet|Obsługiwane przez ujednolicony etykietowania klientów|Wyklucz z edycji w Centrum zabezpieczeń i zgodności|
 |-------------------|---------------------------------------------|-------------------------|
-|Stan włączony lub wyłączony<br /><br />Uwagi: Nie jest synchronizowany Centrum zabezpieczeń i zgodności |Nie dotyczy|Nie dotyczy|
+|Stan włączony lub wyłączony<br /><br />Uwagi: Nie są synchronizowane z Centrum zabezpieczeń i zgodności |Nie dotyczy|Nie dotyczy|
 |Kolor etykiety: Wybierz z listy lub określ przy użyciu kodu RGB<br /><br />Uwagi: Kolory nie są obsługiwane przez Centrum zabezpieczeń i zgodności |Nie dotyczy|Nie dotyczy|
 |Ochrona oparta na chmurze lub na podstawie HYOK ochrony za pomocą wstępnie zdefiniowany szablon |Nie|Tak|
 |Ochrona oparta na chmurze, przy użyciu uprawnienia zdefiniowane przez użytkownika w programie Word, Excel i PowerPoint |Nie|Tak|
 |Ochrona oparta na funkcji HYOK, przy użyciu uprawnienia zdefiniowane przez użytkownika w programie Outlook dla nie przesyłaj dalej |Nie|Tak|
 |Usuwanie ochrony |Nie|Tak|
-|Oznaczenia wizualne (nagłówek, stopka, znak wodny): niestandardowe czcionki i niestandardowej czcionki kolorów RGB kodu|Nie|Zalecane, jeśli w przypadku używania zmiennych<br /><br />-Na klientach zmienne są wyświetlane jako tekst, zamiast wyświetlania wartości dynamiczne|
+|Oznaczenia wizualne (nagłówek, stopka, znak wodny): Niestandardowe czcionek i kolorów czcionki niestandardowe przez kod RGB|Nie|Zalecane, jeśli w przypadku używania zmiennych<br /><br />-Na klientach zmienne są wyświetlane jako tekst, zamiast wyświetlania wartości dynamiczne|
 |Oznaczenia wizualne dla aplikacji|Nie|Zalecane, jeśli w przypadku używania zmiennych<br /><br />-Na klientach zmienne są wyświetlane jako tekst, zamiast wyświetlania wartości dynamiczne|
 |Warunki i skojarzone ustawienia <br /><br />Uwagi: Obejmuje automatyczne i zalecane etykietowanie i ich etykietek narzędzi|Nie dotyczy|Nie|
 
@@ -113,8 +113,8 @@ Klienci, którzy obecnie obsługuje etykietowania ujednoliconego obejmują:
 - Klienci od dostawców oprogramowania i deweloperów, które używają [MIP SDK](https://docs.microsoft.com/azure/information-protection/develop/mip/mip-sdk-reference).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji na temat migrowanych etykiet, które można teraz konfigurować i opublikowane w Centrum zgodności i zabezpieczeń usługi Office 365, zobacz [Przegląd etykiety ważności](/Office365/SecurityCompliance/sensitivity-labels).
 
-Aby przeczytaj wpis w blogu ogłoszenie: [informuje o dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).
+Aby przeczytaj wpis w blogu anonsu: [Ogłoszenie dostępności unified etykietowania management w Centrum zabezpieczeń i zgodności](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492).

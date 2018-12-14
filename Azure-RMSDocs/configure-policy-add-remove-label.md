@@ -4,20 +4,20 @@ description: Dodaj lub usuń etykiety usługi Azure Information Protection do lu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: f097ec2f0e3db75d679e6c0a6251fb128f583d4b
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023310"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304862"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Dodaj lub usuń etykiety do lub z zasad usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Po utworzeniu etykiety usługi Azure Information Protection, można można następnie dodać do zasad wymagających używania czemu będzie ona dostępna dla użytkowników. Jeśli etykieta jest dla wszystkich użytkowników, Dodaj etykietę do zasad globalnych. Jeśli etykieta dla podzbioru użytkowników, Dodaj etykietę do zasad o określonym zakresie. Obecnie etykietę można dodać do tylko jedne zasady. Aby dodać etykiety podrzędnej, jego Etykieta nadrzędna musi być w tych samych zasadach lub w ramach globalnych zasad.
 
@@ -33,7 +33,7 @@ Jeśli musisz utworzyć zasady o określonym zakresie, stosuje się etykietę do
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **zasady** opcji menu: na **usługi Azure Information Protection** - **zasady** bloku wybierz **Global** etykiety, aby dodać lub usunąć dotyczy wszystkich użytkowników.
+2. Z **klasyfikacje** > **zasady** opcji menu: Na **usługi Azure Information Protection** - **zasady** bloku wybierz **Global** etykiety, aby dodać lub usunąć dotyczy wszystkich użytkowników.
 
     Jeśli etykieta, aby dodać lub usunąć ma zastosowanie do określonej podgrupy użytkowników, należy wybrać zasady o określonym zakresie.
 
@@ -54,7 +54,7 @@ Jeśli musisz utworzyć zasady o określonym zakresie, stosuje się etykietę do
     Zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

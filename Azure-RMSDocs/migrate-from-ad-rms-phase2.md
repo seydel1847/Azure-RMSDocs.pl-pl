@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 861d262a04f80a6e1326f15b06942afd27f41990
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 35b2211b9ca6eb3f8c0f160a80850c3cb899562c
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024301"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174186"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>Faza 2 migracji — konfiguracja po stronie serwera dla usług AD RMS
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 2 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują kroki od 4 do 6 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -74,7 +74,7 @@ W bieżącym wdrożeniu usług AD RMS jest używana jedna z następujących konf
 > [!NOTE]
 > Aby uzyskać więcej informacji na temat korzystania ze sprzętowych modułów zabezpieczeń z usługami AD RMS, zobacz temat [Using AD RMS with Hardware Security Modules](https://technet.microsoft.com/library/jj651024.aspx) (Używanie usług AD RMS ze sprzętowymi modułami zabezpieczeń).
 
-Istnieją dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: firma Microsoft zarządza kluczem dzierżawy (**zarządzany przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzany przez klienta**) w usłudze Azure Key Vault. Jeśli zarządzasz własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako "bring your own key" (BYOK). Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
+Dostępne są następujące dwie opcje topologii klucza dzierżawy usługi Azure Information Protection: Firma Microsoft zarządza kluczem dzierżawy (**zarządzanych przez firmę Microsoft**) lub użytkownik zarządza kluczem dzierżawy (**zarządzanych przez klienta**) w usłudze Azure Key Vault. Jeśli zarządzasz własnym kluczem dzierżawy usługi Azure Information Protection, jest czasami określany jako "bring your own key" (BYOK). Aby uzyskać więcej informacji, zobacz artykuł [Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection](plan-implement-tenant-key.md).
 
 Skorzystaj z poniższej tabeli, aby określić procedurę do użycia podczas migracji. 
 
@@ -156,7 +156,7 @@ Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [sposobu konfi
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>Przykładowy skrypt programu Windows PowerShell umożliwiający zidentyfikowanie szablonów usług AD RMS obejmujących grupę KAŻDY
 Ta sekcja zawiera przykładowy skrypt, aby pomóc w zidentyfikowaniu żadnych szablonów usług AD RMS, które mają zdefiniowaną grupą każdy, zgodnie z opisem w poprzedniej sekcji.
 
-**Zastrzeżenie:** ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
+**Zastrzeżenie:** Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
 ```
 import-module adrmsadmin 
@@ -191,5 +191,5 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Przejdź do [fazy 3 — konfiguracji po stronie klienta](migrate-from-ad-rms-phase3.md).

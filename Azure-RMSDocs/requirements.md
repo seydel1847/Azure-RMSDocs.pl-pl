@@ -10,24 +10,24 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024150"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173744"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Wymagania dotyczące usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij się, że następujące wymagania wstępne zostały spełnione. 
 
 ## <a name="subscription-for-azure-information-protection"></a>Subskrypcja usługi Azure Information Protection
 
-**Dla klasyfikacji, etykietowania i ochrony**: konieczne jest posiadanie [planu usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
+**Dla klasyfikacji, etykietowania i ochrony**: Konieczne jest posiadanie [planu usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection/). 
 
-**Aby uzyskać tylko do ochrony**: konieczne jest posiadanie [planu usługi Office 365, która obejmuje usługi Azure Information Protection](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+**Aby uzyskać tylko do ochrony**: Konieczne jest posiadanie [planu usługi Office 365, która obejmuje usługi Azure Information Protection](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Aby upewnić się, że subskrypcja organizacji obejmuje funkcje usługi Azure Information Protection, które chcesz użyć, zapoznaj się z listą funkcji z [cennika usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection) strony.
 
@@ -42,7 +42,7 @@ Aby upewnić się, że subskrypcja organizacji obejmuje funkcje usługi Azure In
 
 Jeśli masz pytania dotyczące subskrypcji lub licencji, nie umieszczaj ich na tej stronie, tylko skontaktuj się z konsultantem ds. klientów firmy Microsoft lub [Pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support).
 
-## <a name="azure-active-directory"></a>Azure Active Directory
+## <a name="azure-active-directory"></a>Usługa Azure Active Directory
 
 Aby obsługiwać uwierzytelnianie i autoryzację użytkowników na potrzeby usługi Azure Information Protection, organizacja musi korzystać z usługi Azure Active Directory (Azure AD). Ponadto jeśli chcesz użyć kont użytkowników z katalogu lokalnego (AD DS), należy skonfigurować także Integracja katalogu.
 
@@ -50,7 +50,7 @@ Logowanie jednokrotne (SSO) jest obsługiwana dla usługi Azure Information Prot
 
 Uwierzytelnianie wieloskładnikowe jest obsługiwane przez usługę Azure Information Protection, jeśli masz wymagane oprogramowanie klienckie i prawidłowo skonfigurowaną infrastrukturę obsługującą to uwierzytelnianie.
 
-Dostęp warunkowy jest obsługiwana w wersji zapoznawczej dla dokumentów chronionych przez usługę Azure Information Protection. Aby uzyskać więcej informacji, zobacz poniższe często zadawane pytania: [widzę, że usługi Azure Information Protection znajduje się w aplikacji w chmurze dostępnych dla dostępu warunkowego — jak to działa?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+Dostęp warunkowy jest obsługiwana w wersji zapoznawczej dla dokumentów chronionych przez usługę Azure Information Protection. Aby uzyskać więcej informacji zobacz poniższe często zadawane pytania: [Czy mogę zobaczyć, usługi Azure Information Protection znajduje się w aplikacji w chmurze dostępnych dla dostępu warunkowego — jak to działa?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 Aby uzyskać więcej informacji na temat wymagań dotyczących uwierzytelniania, zobacz artykuł [Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection](requirements-azure-ad.md). 
 
@@ -116,7 +116,7 @@ Oprócz informacji zawartych w artykule dotyczącym pakietu Office skorzystaj z 
 
 - Nie przerywaj połączenia TLS między klientem a usługą (na przykład w celu przeprowadzenia inspekcji na poziomie pakietu) do **aadrm.com** adresu URL. Spowoduje to przerwanie przypinania, czy klienci usługi RMS za pomocą zarządzanych przez firmę Microsoft urzędów certyfikacji do zabezpieczania komunikacji z usługą Azure Rights Management certyfikatu.
     
-    - Porada: Ze względu na sposób Chrome Wyświetla bezpiecznych połączeń w pasku adresu, można użyć tej przeglądarki można szybko sprawdzić, czy połączenie klienta zostanie zakończony przed osiągnięciem przez nią usługi Azure Rights Management. Wprowadź następujący adres URL w pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
+    - Porada: Ze względu na sposób Chrome Wyświetla bezpiecznych połączeń w pasku adresu można użyć tej przeglądarki, można szybko sprawdzić, czy połączenie klienta zostanie zakończony przed osiągnięciem przez nią usługi Azure Rights Management. Wprowadź następujący adres URL w pasku adresu przeglądarki: `https://admin.na.aadrm.com/admin/admin.svc` 
     
         Nie martw się o Wyświetla okno przeglądarki. Zamiast tego kliknij kłódki na pasku adresu, aby wyświetlić informacje o lokacji. Informacje o lokacji pozwala sprawdzić wystawiający urząd certyfikacji (CA). Jeśli certyfikat nie jest wystawiony przez CA firmy Microsoft, jest bardzo prawdopodobne, bezpieczne połączenie usługi klienta zostanie przerwany i wymaga ponownej konfiguracji zapory. Na poniższej ilustracji przedstawiono przykład Microsoft wystawiający urząd certyfikacji. Jeśli widzisz, że wewnętrzny urząd certyfikacji wystawił certyfikat, ta konfiguracja nie jest zgodny z usługi Azure Information Protection.
         

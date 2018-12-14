@@ -4,27 +4,27 @@ description: Instrukcje dotyczące sposobu klasyfikowania dokumentów i wiadomo�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e49cd5da0c34c8dd6fa537bca3d90ba56c32e690
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 823f252756e18d5a2ab2239afb85b58fc3aa048e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150232"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305305"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie pliku lub wiadomości e-mail przy użyciu usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 > [!NOTE]
 > Użyj tych instrukcji, aby ułatwić klasyfikowania (ale nie chroni) swoje dokumenty i wiadomości e-mail. Jeśli musisz również chronić swoje dokumenty i wiadomości e-mail, zobacz [klasyfikować i chronić instrukcje](client-classify-protect.md). Jeśli nie masz pewności, który zestaw instrukcje dotyczące korzystania z, skontaktuj się z administratorem lub pomocy technicznej.
 
-To najprostszy sposób klasyfikowania dokumentów i wiadomości e-mail, podczas tworzenia lub edycji je w aplikacjach klasycznych pakietu Office: **Word**, **Excel**, **PowerPoint**,  **Program Outlook**. 
+Najprostszy sposób klasyfikowania dokumentów i wiadomości e-mail jest podczas tworzenia lub edycji je w aplikacjach klasycznych pakietu Office: **Word**, **Excel**, **PowerPoint**, **Outlook**. 
 
 Jednakże można także sklasyfikować pliki przy użyciu **Eksploratora plików**. Ta metoda obsługuje dodatkowe typy plików i to wygodny sposób klasyfikowania wielu plików jednocześnie. 
 
@@ -70,7 +70,7 @@ Po wybraniu folderu, wszystkie pliki w tym folderze i jego podfoldery zostaną z
 
 Podczas używania Eksploratora plików do klasyfikowania plików, jeśli jeden lub więcej etykiet są wyszarzone, wybrane pliki nie obsługują klasyfikacji bez również ich ochronie.
 
-W podręczniku administratora podano pełną listę typów plików, które obsługują klasyfikacji bez ochrony: [typy plików obsługiwane wyłącznie do klasyfikowania](client-admin-guide-file-types.md#file-types-supported-for-classification-only).
+W podręczniku administratora podano pełną listę typów plików, które obsługują klasyfikacji bez ochrony: [Typy plików obsługiwane wyłącznie do klasyfikowania](client-admin-guide-file-types.md#file-types-supported-for-classification-only).
 
 ### <a name="to-classify-a-file-by-using-file-explorer"></a>Do klasyfikowania plików za pomocą Eksploratora plików
 
@@ -80,7 +80,7 @@ W podręczniku administratora podano pełną listę typów plików, które obsł
 
 2. W **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe, Użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację, zgodnie z definicją przez administratora. 
     
-    Jeśli nie można wybrać żadnego etykiety (są wyszarzone): wybrany plik nie obsługuje klasyfikacji. Przykład:
+    Jeśli nie można wybrać żadnego etykiety (są wyszarzone): Wybrany plik nie obsługuje klasyfikacji. Przykład:
     
     ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
 

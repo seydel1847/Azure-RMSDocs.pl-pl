@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09c7718586fb7c3d6cda28a43f854561248c8a8c
-ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
+ms.openlocfilehash: e01ec643bc9e4bdb863330a96ac8e961dd36dc3b
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268023"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53172877"
 ---
-# <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — osobiście: ZAWARTOŚĆ WYCOFANA
+# <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>Generowanie i przenoszenie klucza dzierżawy — osobiście: WYCOFANA ZAWARTOŚĆ
 
->*Dotyczy: Azure Rights Management, [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Azure Rights Management, [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Informacje przedstawione w tym artykule zostały usunięte, ponieważ nie są już odpowiednie, jako że usługa Azure Rights Management używa usługi Azure Key Vault na potrzeby kluczy dzierżawy zarządzanych przez klientów (jest to tak zwane rozwiązanie Bring Your Own Key — BYOK).
 

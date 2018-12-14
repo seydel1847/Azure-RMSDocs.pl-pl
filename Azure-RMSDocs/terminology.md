@@ -4,22 +4,22 @@ description: Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 01c2e8d4dd476e0910a75fd5949362225743f322
-ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
+ms.openlocfilehash: 81595e38ed9dbaaf267ac86326ec0e2d8fd3e6b3
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651978"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305543"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Terminologia dotycząca usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Information Protection firmy Microsoft? Tutaj znajdziesz definicje terminów i skrótów, które są typowe dla usługi Azure Information Protection lub które mają określone znaczenie w przypadku, gdy są używane w kontekście tej usługi.
 
@@ -27,17 +27,17 @@ Zastanawia Cię słowo, wyrażenie lub akronim związany z usługą Azure Inform
 |--------|--------------|
 |AADRM|Nazwa modułu programu PowerShell dla usługi Azure Rights Management, który został uzyskany nieoficjalny skrót od nazwy usługi Azure Rights Management, gdy jej poprzednia nazwa (Windows) Azure Active Directory Rights Management.|
 |aktywować|Aby włączyć usługę Azure Rights Management, aby organizacja mogła chronić swoje dokumenty i wiadomości e-mail. Ta czynność powoduje także włączenie funkcji IRM w usłudze Exchange Online i SharePoint Online.|
-|Usługi Active Directory Rights Management|Nazwa często skracana do *AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawa poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
+|Usługi Active Directory Rights Management|Nazwa często skracana do *usług AD RMS*.<br /><br />Rola systemu Windows Server, która zapewnia ochronę zarządzania prawa poprzez zastosowanie szyfrowania i zasad w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.|
 |AD RMS|Patrz *Usługi Active Directory Rights Management*.|
 Azure Information Protection|Nazwa modułu programu PowerShell dla klienta usługi Azure Information Protection.
-|Azure Information Protection|Usługa oparta na chmurze, która używa etykiet do klasyfikowania i ochrony dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
+|Usługa Azure Information Protection|Usługa oparta na chmurze, która używa etykiet do klasyfikowania i ochrony dokumentów i wiadomości e-mail. Usługa Azure Rights Management zapewnia ochronę, używając w tym celu zasad szyfrowania, tożsamości i autoryzacji.|
 Klient usługi Azure Information Protection|Po stronie klienta usługi Azure Information Protection, która umożliwia użytkowników, administratorów i usług Użyj etykiety i ustawienia z zasad usługi Azure Information Protection.|
 |Etykiety usługi Azure Information Protection|Elementu, który ma zastosowanie klasyfikację wartość do dokumentów i wiadomości e-mail i opcjonalnie można je chronić.|
 |Zasady usługi Azure Information Protection|Zdefiniowane przez administratora konfiguracja dla klientów i usług korzystających z ustawienia zasad i etykiet usługi Azure Information Protection.|
 |Skaner usługi Azure Information Protection|Usługa jest uruchamiana w systemie Windows Server i pozwala odnajdywania, klasyfikowania i ochrony dokumentów na foldery lokalne, udziały sieciowe i witryny programu SharePoint Server i bibliotek.|
 |Przeglądarka usługi Azure Information Protection|Aplikacja, która działa na komputerach Windows i urządzeniach przenośnych, aby wyświetlać pliki chronione.|
-|Azure Rights Management|Nazwa często skracana do *Azure RMS*.<br /><br />Usługa Azure używana przez usługę Azure Information Protection, która stosuje szyfrowanie i zasady w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.  Znana także jako *usługa Azure Rights Management*. Poprzednie nazwy:<br /><br />- *Windows Azure Active Directory Rights Management*: nazwa często skracana do usługi Windows Azure AD Rights Management.<br /><br />- *RMS Online*: oryginalna proponowana nazwa, którą można czasami napotkać w komunikatach o błędach i we wpisach w plikach dziennika.|
-|Azure RMS|Zobacz *Azure Rights Management*.|
+|Azure Rights Management|Nazwa często skracana do *usługi Azure RMS*.<br /><br />Usługa Azure używana przez usługę Azure Information Protection, która stosuje szyfrowanie i zasady w celu umożliwienia zabezpieczenia dokumentów, plików i wiadomości e-mail.  Znana także jako *usługa Azure Rights Management*. Poprzednie nazwy:<br /><br />- *Windows Azure Active Directory Rights Management*: Nazwa często skracana do usługi Windows Azure AD Rights Management.<br /><br />- *RMS Online*: Oryginalna proponowana nazwa, którą można czasami napotkać w komunikatach o błędach i we wpisach w plikach dziennika.|
+|Usługa Azure RMS|Zobacz *Azure Rights Management*.|
 |szablon domyślny|Szablon ochrony, który jest utworzony automatycznie podczas uzyskiwania subskrypcji usługi Azure Information Protection, tak, aby od razu do uruchomienia ochrony dokumentów i wiadomości e-mail zawierają poufne informacje.|
 |BYOK|Zobacz *bring your own key (własny klucz)*.|
 |bring your own key (własny klucz)|Nazwa często skracana do *BYOK*.<br /><br />Opcja konfiguracji i topologii wybierana przez organizacje, które chcą generować własne klucze dzierżawy dla usługi Azure Information Protection i zarządzać nimi.|
@@ -52,13 +52,13 @@ Klient usługi Azure Information Protection|Po stronie klienta usługi Azure Inf
 |HYOK|Zobacz *rozwiązanie „hold your own key”*.|
 |hold your own key|Nazwa często skracana do *HYOK*.<br /><br />Opcja konfiguracji i topologii dla organizacji, która chce generować i przechowywać własny klucz lokalnie, zwykle ze względu na przepisy lub zapewnianie zgodności.|
 |obiekt klucza|W kontekście klucza dzierżawy jednostka zawierająca metadane wymagane przez usługę Azure Rights Management do operacji kryptograficznych.|
-|Etykieta|Zobacz *etykiety usługi Azure Information Protection*.|
-|ochrona informacji|Pojęcie skracane czasami do *IP*.<br /><br />Powszechnie stosowany w branży ogólny termin odnoszący się do ochrony danych i plików przed nieautoryzowanym dostępem, nawet po opuszczeniu przez dane i pliki granic organizacji w wyniku przesłania dokumentu za pośrednictwem poczty e-mail lub jego udostępnienia. Usługa Microsoft Azure Information Protection stanowi przykład rozwiązania zapewniającego ochronę informacji (IP).|
-|Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z nazwami usług Office, takimi jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi usług Microsoft Rights Management.|
+|label|Zobacz *etykiety usługi Azure Information Protection*.|
+|ochrona informacji|Pojęcie skracane czasami do *IP*.<br /><br />Powszechnie stosowany w branży ogólny termin odnoszący się do ochrony danych i plików przed nieautoryzowanym dostępem, nawet po opuszczeniu przez dane i pliki granic organizacji w wyniku przesłania dokumentu za pośrednictwem poczty e-mail lub jego udostępnienia. Microsoft Azure Information Protection jest przykładem rozwiązania ochronę informacji (IP).|
+|Information Rights Management (zarządzanie prawami do informacji)|Nazwa często skracana do *IRM*.<br /><br />Termin używany w połączeniu z usług Office, takich jak Exchange Server, Word i SharePoint Online, do wskazywania możliwości obsługi usług Microsoft Rights Management.|
 |IRM|Zobacz *Information Rights Management (zarządzanie prawami do informacji)*.|
 |Szyfrowanie wiadomości usługi Office|Nazwa często skracana do *NIEKTÓ*.<br /><br />Nowe możliwości szyfrowanie wiadomości usługi Office 365 mają natywnej integracji z usługą Azure Rights Management, aby zapewnić samą ochronę poczty e-mail dla użytkowników wewnętrznych i zewnętrznych, automatyczne odświeżanie szablonów i obsługa dostarczania własnego klucza (BYOK) w przypadku scenariusza. W poprzedniej implementacji NIEKTÓ został zaprojektowany do adresatów zewnętrznych tylko wymagane reguły przepływu poczty i nie obsługują funkcji BYOK.|
-|MSDRM|Czasami występuje jako odniesienie do klienta usług RMS w wersji 1.0, która została zastąpiona nowszą wersją klienta, MSIPC. Wspomniany starszy klient obsługuje aplikacje, które są tworzone z użyciem zestawu RMS SDK 1.0, pakiety Office 2010 i Office 2007 oraz aplikacje Exchange 2010 i Exchange 2013, SharePoint 2010 i SharePoint 2007.|
-|MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpiła starszą wersję klienta RMS, MSDRM. Nowszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, program SharePoint 2013, aplikację RMS sharing i klienta usługi Azure Information Protection.|
+|MSDRM|Czasami występuje jako odniesienie do klienta usługi RMS 1.0, która została zastąpiona nowszą wersją klienta, MSIPC. Starszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 1.0 oraz pakietu Office 2010 i Office 2007, Exchange 2010 i Exchange 2013 i programu SharePoint 2010 i SharePoint 2007.|
+|MSIPC|Czasami występuje jako odniesienie do klienta usług RMS w wersji 2.0, która zastąpić starszą wersję klienta RMS, MSDRM. Nowszy klient obsługuje aplikacje opracowane przy użyciu zestawu RMS SDK 2.0 oraz pakiety Office 2016 i Office 2013, SharePoint 2013, aplikację RMS sharing i klienta usługi Azure Information Protection.|
 |ochrona natywna|Poziom ochrony dostępny we wszystkich aplikacjach z obsługą usług, który uniemożliwia otwarcie pliku przez osoby nieupoważnione i który może również wymuszać bardziej rygorystyczne zasady, np. tylko do odczytu, ale nie do drukowania. Ponadto ochrona ta jest powiązana z plikiem, w związku z czym plik jest nią objęty nawet wtedy, gdy zostaje przekazany innym osobom lub zapisany w ogólnodostępnej lokalizacji.|
 |pfile|Rozszerzenie nazwy pliku dołączane do wszystkich plików objętych ogólną ochroną usługi zarządzania prawami.|
 |poziom uprawnień|Logiczna grupa praw użytkowania, która ułatwia użytkownikom końcowym i administratorom wybór opcji konfiguracji opartych na rolach. Przykład: Recenzent i Współautor.|

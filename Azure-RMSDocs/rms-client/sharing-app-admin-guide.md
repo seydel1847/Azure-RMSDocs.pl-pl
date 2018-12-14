@@ -10,19 +10,19 @@ ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7be58d201ddd24497ff79935554c2a68efd04a3f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f013014f0256a01c30d9518089f2604ed9a668
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024437"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246194"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Przewodnik administratora aplikacji do udostępniania usługi Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **Powiadomienie o zakończeniu świadczenia pomocy technicznej**: aplikację RMS sharing dla systemu Windows zastąpi [klient usługi Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
+> **Koniec obsługi powiadomień**: Rights Management sharing application for Windows jest zastępowany przez [klienta Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r. 
 
 Poniższe informacje przydadzą się osobom odpowiedzialnym za aplikację do udostępniania usługi Microsoft Rights Management w sieci przedsiębiorstwa lub chcącym uzyskać więcej informacji technicznych niż jest dostępnych w artykułach [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md) lub [Często zadawane pytania dotyczące aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](https://go.microsoft.com/fwlink/?LinkId=303971).
 
@@ -33,11 +33,11 @@ Aby zapoznać się z przeglądem technicznym aplikacji usługi Rights Management
 ## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management
 Wersja aplikacji RMS sharing obsługuje instalację skryptową, dzięki czemu ta aplikacja nadaje się do wdrożeń w przedsiębiorstwie.
 
-Tylko wymagania wstępne dotyczące instalacji są, że komputery uruchamiane minimalną wersję systemu Windows 7 z dodatkiem SP1, oraz że zainstalowano Framework firmy Microsoft w wersji co najmniej 4.0. Jeśli musisz zainstalować program Microsoft .NET Framework 4.0, możesz to zrobić [ją pobrać z Microsoft Download Center w celu instalacji](http://www.microsoft.com/download/details.aspx?id=17718).
+Tylko wymagania wstępne dotyczące instalacji są, że komputery uruchamiane minimalną wersję systemu Windows 7 z dodatkiem SP1, oraz że zainstalowano Framework firmy Microsoft w wersji co najmniej 4.0. Jeśli musisz zainstalować program Microsoft .NET Framework 4.0, możesz to zrobić [ją pobrać z Microsoft Download Center w celu instalacji](https://www.microsoft.com/download/details.aspx?id=17718).
 
 ### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>Aby pobrać aplikację RMS sharing do automatycznego wdrożenia
 
-1.  Przejdź do strony [aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](http://www.microsoft.com/download/details.aspx?id=40857) w Centrum pobierania Microsoft, a następnie kliknij przycisk **Pobierz**.
+1.  Przejdź do strony [aplikacji do udostępniania usługi Microsoft Rights Management dla systemu Windows](https://www.microsoft.com/download/details.aspx?id=40857) w Centrum pobierania Microsoft, a następnie kliknij przycisk **Pobierz**.
 
 2.  Wybierz i pobierz potrzebne pliki. Istnieją dwa pakiety instalacyjne klienta: jeden dla 64-bitowej wersji systemu Windows (Microsoft Rights Management sharing application x64.zip) i drugi dla 32-bitowej wersji systemu Windows (Microsoft Rights Management sharing application x86.zip).
 
@@ -92,7 +92,7 @@ Aby sprawdzić, czy instalacja przebiegła pomyślnie, zobacz sekcję [Sprawdzan
 
     1.  Zaloguj się na komputerze przy użyciu konta administratora lokalnego.
 
-    2.  Na tym komputerze [pobierz i zainstaluj Asystenta logowania w witrynie Microsoft Online Services](http://www.microsoft.com/download/details.aspx?id=28177).
+    2.  Na tym komputerze [pobierz i zainstaluj Asystenta logowania w witrynie Microsoft Online Services](https://www.microsoft.com/download/details.aspx?id=28177).
 
     3.  Uruchom poniższe polecenie, aby wyświetlić adres URL usługi certyfikacji, który możesz skopiować i zachować do użycia w kolejnym kroku:
 
@@ -274,21 +274,21 @@ Korzystając z plików dzienników instalacji, możesz sprawdzić, czy instalacj
 
 ### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>Aby sprawdzić, czy udało się zainstalować tylko aplikację RMS sharing i dodatek dla pakietu Office
 
-1.  Aby sprawdzić, czy polecenie Setup_ipviewer.exe zostało pomyślnie uruchomione, poszukaj w pliku dziennika instalacji następującego tekstu: **Stan powodzenia lub błędu instalacji: 0**.
+1.  Aby sprawdzić polecenie Setup_ipviewer.exe zostało pomyślnie uruchomione, poszukaj w pliku dziennika instalacji następującego tekstu: **Stan powodzenia lub błędu instalacji: 0**
 
     Przykładowe wiersze z pomyślnej instalacji:
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Produkt: Active Directory Rights Management Services Client 2.1 -- Instalacja została ukończona pomyślnie.**
+    **MSI (s) (F0: B8) [14:19:57:854]: Produkt: Active Directory Rights Management Services Client 2.1--Instalacja została ukończona pomyślnie.**
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Instalator Windows zainstalował produkt. Nazwa produktu: Active Directory Rights Management Services Client 2.1. Wersja produktu: 1.0.1179.1. Język produktu: 1033. Producent: Microsoft Corporation. Stan powodzenia lub błędu instalacji: 0.**
+    **MSI (s) (F0: B8) [14:19:57:854]: Instalator Windows zainstalował produkt. Nazwa produktu: Usługi Active Directory Rights Management Services Client 2.1. Wersja produktu: 1.0.1179.1. Język produktu: 1033. Producent: Microsoft Corporation. Stan powodzenia lub błędu instalacji: 0.**
 
-2.  Aby sprawdzić, czy dodatek dla pakietu Office został pomyślnie zainstalowany na każdym komputerze, poszukaj w pliku dziennika instalacji następującego tekstu: **Stan powodzenia lub błędu instalacji: 0**
+2.  Aby sprawdzić, czy dodatek pakietu Office, na każdym komputerze, poszukaj w pliku dziennika instalacji następującego tekstu: **Stan powodzenia lub błędu instalacji: 0**
 
     Przykładowe wiersze z pomyślnej instalacji:
 
-    **MSI (s) (9C:88) [18:49:04:007]: Produkt: Microsoft RMS Office Addins -- Instalacja została ukończona pomyślnie.**
+    **MSI (s) (9C: 88) [18:49:04:007]: Produkt: Microsoft RMS Office Addins--Instalacja została ukończona pomyślnie.**
 
-    **MSI (s) (9C:88) [18:49:04:007]: Instalator Windows zainstalował produkt. Nazwa produktu: Microsoft RMS Office Addins. Wersja produktu: 1.0.7. Język produktu: 1033. Producent: Microsoft. Stan powodzenia lub błędu instalacji: 0.**
+    **MSI (s) (9C: 88) [18:49:04:007]: Instalator Windows zainstalował produkt. Nazwa produktu: Microsoft RMS Office Addins. Wersja produktu: 1.0.7. Język produktu: 1033. Producent: Firmy Microsoft. Stan powodzenia lub błędu instalacji: 0.**
 
 ## <a name="uninstall-commands"></a>Polecenia dezinstalacji
 Nie wszystkie polecenia instalacji wymagane przez te wdrożenia obsługują polecenie dezinstalacji. Można odinstalować klienta usług AD RMS, aplikację do udostępniania i dodatek dla pakietu Office. W tym celu należy użyć następujących poleceń.
@@ -340,7 +340,7 @@ Ponieważ aplikacja RMS sharing nie jest obsługiwana przez program WSUS, warto 
 
 3.  Po ukończeniu testowania i rozwiązaniu ewentualnych problemów najnowszą wersję można wdrożyć u wszystkich użytkowników, korzystając z instrukcji wdrażania automatycznego dostępnych w tym podręczniku.
 
-## <a name="azure-information-protection-only-configuring-document-tracking"></a>Tylko usługa Azure Information Protection: konfigurowanie śledzenia dokumentów
+## <a name="azure-information-protection-only-configuring-document-tracking"></a>Tylko usługi Azure Information Protection: Konfigurowanie śledzenia dokumentów
 Jeśli Twoja [subskrypcja obejmuje obsługę śledzenia dokumentów](https://www.microsoft.com/cloud-platform/azure-information-protection-features), witryna śledzenia dokumentów jest domyślnie włączona dla wszystkich użytkowników w organizacji. Podczas śledzenia dokumentów pokazywane są informacje, takie jak adresy e-mail osób, które próbowały uzyskać dostęp do chronionych dokumentów udostępnionych przez użytkowników, czas podjęcia takich prób oraz lokalizacja tych osób. Jeśli wyświetlanie tych informacji jest w organizacji zabronione ze względu na wymagania ochrony prywatności, możesz wyłączyć dostęp do witryny śledzenia dokumentów za pomocą polecenia cmdlet [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature). W dowolnym momencie możesz ponownie włączyć dostęp do witryny za pomocą polecenia [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature) i sprawdzić, czy dostęp jest aktualnie włączony, czy wyłączony, za pomocą polecenia [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature).
 
 Aby uruchomić te polecenia cmdlet, musisz mieć co najmniej wersję **2.3.0.0** modułu Azure Rights Management dla programu Windows PowerShell. Aby uzyskać instrukcje dotyczące instalacji, zobacz [Instalowanie modułu AADRM programu PowerShell](../install-powershell.md).
@@ -388,18 +388,18 @@ Istnieją również typy żądań, które rejestrują sposób, w jaki użytkowni
 
 Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../log-analyze-usage.md)
 
-## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>Tylko usługi AD RMS: obsługa wielu domen poczty e-mail w danej organizacji
+## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>Tylko usługi AD RMS: Obsługa wielu domen poczty e-mail w Twojej organizacji
 Jeśli używasz usług AD RMS i użytkownicy w organizacji mają kilka domen poczty e-mail, np skutek fuzji lub przejęcia, musisz wprowadzić następujące rejestrze:
 
 1.  Przejdź do klucza **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC** i utwórz nowy klucz o nazwie **RmsSharingApp**, jeśli jeszcze nie istnieje.
 
 2.  Wybierz klucz **RmsSharingApp**, utwórz nową wartość ciągu wielokrotnego o nazwie **FederatedDomains**, a następnie dodaj wszystkie domeny i domeny podrzędne używane w organizacji. Symbole wieloznaczne nie są obsługiwane.
 
-    Na przykład: firma Coho Vineyard &amp; Winery ma standardową domenę poczty e-mail **cohovineyardandwinery.com**, ale na skutek fuzji korzysta również z domen poczty e-mail **cohowinery.com**, **eastcoast.cohowinery.com** i **cohovineyard**. Dla danych wartości **FederatedDomains** administrator wprowadza: **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**
+    Przykład: Firma Coho Vineyard &amp; Winery ma standardową domenę poczty **cohovineyardandwinery.com**, ale na skutek fuzji są w niej używane także domeny poczty e-mail **cohowinery.com**, **eastcoast.cohowinery.com**, i **cohovineyard**. Dla danych wartości **FederatedDomains** administrator wprowadza: **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**
 
 Jeśli nie wprowadzisz tej zmiany w rejestrze, użytkownicy mogą nie mieć możliwości korzystania z zawartości chronionej przez innych użytkowników w tej organizacji. W przypadku korzystania z usługi Azure Information Protection ta zmiana w rejestrze nie jest konieczna.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby uzyskać dodatkowe informacje techniczne, w których wyjaśniono różnice między poziomami ochrony (natywny i ogólny), obsługiwane typy plików i rozszerzenia nazw plików oraz sposób zmiany domyślnego poziomu ochrony, zobacz [Przegląd techniczny aplikacji do udostępniania usługi Rights Management](sharing-app-admin-guide-technical.md).
 

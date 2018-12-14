@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1571939554e64459acd7ec0b7c32e9d40f7bd7eb
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024318"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173948"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Szablony ochrony, znany także jako szablony usługi Rights Management to zbiór ustawień ochrony zdefiniowane przez administratora dla usługi Azure Information Protection. Te ustawienia obejmują wybranego [prawa użytkowania](configure-usage-rights.md) dla autoryzowanych użytkowników i kontroli dostępu dla wygaśnięcia i dostęp w trybie offline. Te szablony są zintegrowane z zasadami usługi Azure Information Protection: 
 
@@ -79,7 +79,7 @@ Przed rozpoczęciem edycji tych szablonów, lub konwersji do etykiet, upewnij si
     
     - Opcja **Zezwalaj na makra** (nazwa pospolita) jest automatycznie dodawana. To prawo użytkowania jest wymagane przez pasek usługi Azure Information Protection w aplikacji pakietu Office.
 
-- Ustawienia **Opublikowane** i **Zarchiwizowane** są wyświetlane odpowiednio jako **Włączone**: **Włączone** i **Włączone**: **Wyłączone** w bloku **Etykiety**. Dla szablonów, które chcesz zachować, ale nie być widoczne dla użytkowników lub usług, ustawienie tych szablonów **włączone**: **poza**.
+- **Opublikowane** i **zarchiwizowane** ustawienia są wyświetlane jako **włączone**: **Na** i **włączone**: **Wyłącz** odpowiednio na **etykiety** bloku. Dla szablonów, które chcesz zachować, ale nie być widoczne dla użytkowników lub usług, ustawienie tych szablonów **włączone**: **Wyłącz**.
 
 - Nie można skopiować ani usunąć szablonu w witrynie Azure portal. Gdy szablon jest konwertowany na etykietę, można skonfigurować etykiety, można zatrzymać za pomocą tego szablonu, wybierając **nieskonfigurowane** dla **ustawić uprawnienia dla dokumentów i wiadomości e-mail zawierających tę etykietę** Opcja. Alternatywnie możesz usunąć etykiety. W obu scenariuszach jednak szablon nie zostanie usunięta i pozostaje w stanie zarchiwizowane.
     
@@ -99,7 +99,7 @@ Przed rozpoczęciem edycji tych szablonów, lub konwersji do etykiet, upewnij si
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku rozwiń **ochrony szablony**, a następnie zlokalizuj szablon, który chcesz skonfigurować.
+2. Z **klasyfikacje** > **etykiety** opcji menu: Na **usługi Azure Information Protection — etykiety** bloku rozwiń **szablonami ochrony**, a następnie zlokalizuj szablon, który chcesz skonfigurować.
     
 3. Wybierz szablon, a następnie na **etykiety** bloku można zmienić nazwę i opis szablonu w razie potrzeby, edytując **Nazwa wyświetlana etykiety** i **opis**. Następnie wybierz **ochrony** wartością **Azure (klucz w chmurze)**, aby otworzyć **ochrony** bloku.
 
@@ -126,7 +126,7 @@ Podczas konwertowania szablonu do etykiety:
 
 - Nazwa szablonu jest konwertowana na nazwę nowej etykiety i opis szablonu jest konwertowany na etykietkę narzędzia. 
 
-- Jeśli stan szablonu został opublikowany, to ustawienie jest mapowane na **Włączone**: **Włączone** dla etykiety, która będzie wyświetlana jako etykieta dla użytkowników po następnym opublikowaniu zasad usługi Azure Information Protection. Jeśli stan szablonu został zarchiwizowany, to ustawienie jest mapowane na **włączone**: **poza** dla etykiety i nie są wyświetlane jako etykieta dostępna dla użytkowników.
+- Jeśli stan szablonu został opublikowany, to ustawienie jest mapowane na **włączone**: **Na** dla etykiety, która będzie wyświetlana jako etykieta dla użytkowników po następnym opublikowaniu zasad usługi Azure Information Protection. Jeśli stan szablonu został zarchiwizowany, to ustawienie jest mapowane na **włączone**: **Wyłącz** dla etykiety i nie są wyświetlane jako etykieta dostępna dla użytkowników.
 
 - Ustawienia ochrony są zachowywane i można je edytować, jeśli jest to wymagane, a także dodać inne ustawienia etykiety, takie jak znaczniki wizualne i warunki.
 
@@ -136,9 +136,9 @@ Podczas konwertowania szablonu do etykiety:
 
 Po utworzeniu nowej etykiety z ustawieniem ochrony **Azure (klucz w chmurze)**, dzieje się w tle, ta akcja tworzy nowy szablon niestandardowy, który następnie jest możliwy przez usługi i aplikacje, które integrują się z usługą Rights Management Szablony.
 
-1. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku wybierz **Dodaj nową etykietę** .
+1. Z **klasyfikacje** > **etykiety** opcji menu: Na **usługi Azure Information Protection — etykiety** bloku wybierz **Dodaj nową etykietę**.
 
-2. Na **etykiety** bloku, Zachowaj wartość domyślną **włączone**: **na**, następnie wprowadź nazwę etykiety i opis nazwę i opis szablonu.
+2. Na **etykiety** bloku, Zachowaj wartość domyślną **włączone**: **Na**, następnie wprowadź nazwę etykiety i opis nazwę i opis szablonu.
 
 3. W sekcji **Ustaw uprawnienia do dokumentów i wiadomości e-mail zawierających tę etykietę** wybierz pozycję **Chroń**, a następnie **Ochrona**:
     
@@ -154,7 +154,7 @@ Po utworzeniu nowej etykiety z ustawieniem ochrony **Azure (klucz w chmurze)**, 
 
 5. Z **klasyfikacje** > **zasady** menu, wybierz zasady, które zawierają nowe ustawienia ochrony. Następnie wybierz pozycję **apletu Dodaj lub usuń etykiety**. Z **zasad: Dodaj lub usuń etykiety** bloku wybierz nowo utworzony etykiety, który zawiera ustawienia ochrony, wybierz pozycję **OK**, a następnie wybierz pozycję **Zapisz**.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Na komputerze klienta usługi Azure Information Protection w celu uzyskania tych ustawień zmiany może potrwać do 15 minut. Aby uzyskać informacje dotyczące sposobu pobierania i odświeżania szablonów przez komputery i usługi, zobacz temat [Odświeżanie szablonów dla użytkowników i usług](refresh-templates.md).
 

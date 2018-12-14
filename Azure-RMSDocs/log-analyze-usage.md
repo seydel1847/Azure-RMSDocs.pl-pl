@@ -4,26 +4,26 @@ description: Informacje i instrukcje dotyczące sposobu korzystania z rejestrowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 3d287df4fbea3f4b040444182aed89da7c470ea1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211330"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305645"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Te informacje ułatwiają zrozumienie, jak korzystać z funkcji rejestrowania użycia usługi Azure Rights Management z usługi Azure Information Protection. Ta usługa zapewnia ochronę danych dla Twojej organizacji, dokumentów i wiadomości e-mail, może rejestrować wszystkie żądania do niego. Te żądania obejmują, gdy użytkownicy chronić dokumenty i wiadomości e-mail i również używanie tej zawartości, akcje wykonywane przez administratorów dla tej usługi i akcje wykonywane przez operatorów firmy Microsoft w celu obsługi wdrożenia usługi Azure Information Protection. 
+Dzięki tym informacjom, które pomagają zrozumieć, jak można użyć dzienniki użycia dla usługi Azure Rights Management z usługi Azure Information Protection. Ta usługa zapewnia ochronę danych dla Twojej organizacji, dokumentów i wiadomości e-mail, może rejestrować wszystkie żądania do niego. Te żądania obejmują, gdy użytkownicy chronić dokumenty i wiadomości e-mail i również używanie tej zawartości, akcje wykonywane przez administratorów dla tej usługi i akcje wykonywane przez operatorów firmy Microsoft w celu obsługi wdrożenia usługi Azure Information Protection. 
 
-Dzienniki usługi Azure Rights Management można następnie wykorzystać na potrzeby następujących scenariuszy biznesowych:
+Te dzienniki usługi Azure Rights Management można następnie użyć na potrzeby następujących scenariuszy biznesowych:
 
 -   **Analiza danych biznesowych**
 
@@ -31,13 +31,13 @@ Dzienniki usługi Azure Rights Management można następnie wykorzystać na potr
 
 -   **Monitorowanie nadużyć**
 
-    Dane rejestrowania usługi Azure Rights Management są dostępne niemal w czasie rzeczywistym, co pozwala na stałe monitorowanie użycia usługi Rights Management w firmie. 99,9% dzienników jest dostępnych w ciągu 15 minut od akcji zainicjowanej przy użyciu usługi.
+    Dane rejestrowania usługi Rights Management usługi Azure jest dostępne w niemal w czasie rzeczywistym, tak aby pozwala na stałe monitorowanie użycia firmie usługi Rights Management. 99,9% dzienników jest dostępnych w ciągu 15 minut od akcji zainicjowanej przy użyciu usługi.
 
     Na przykład można otrzymywać alerty w przypadku nagłego wzrostu liczby osób odczytujących chronione dane poza standardowymi godzinami pracy, co mogłoby wskazywać, że złośliwy użytkownik gromadzi informacje, aby je sprzedać konkurencji. Można też wykryć sytuację, w której ten sam użytkownik w krótkim czasie uzyskuje dostęp do danych z dwóch różnych adresów IP, co mogłoby oznaczać naruszenie zabezpieczeń konta użytkownika.
 
 -   **Wykonywanie analizy śledczej**
 
-    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Tego rodzaju pytania pozwala odpowiedzieć na korzystanie z funkcji rejestrowania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy, które są chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane za pośrednictwem poczty e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że dzienniki te mogą służyć jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
+    W przypadku wycieku informacji prawdopodobnie pojawi się pytanie, kto ostatnio uzyskiwał dostęp do określonych dokumentów i z jakich informacji korzystała ostatnio podejrzana osoba. Tego rodzaju pytania pozwala odpowiedzieć na korzystanie z funkcji rejestrowania, ponieważ osoby korzystające z zawartości chronionej muszą zawsze uzyskać licencję usługi Rights Management, aby otworzyć dokumenty i obrazy, które są chronione przez usługę Azure Rights Management, nawet jeśli te pliki są przesyłane za pośrednictwem poczty e-mail lub kopiowane na dyski USB lub inne urządzenia pamięci masowej. Oznacza to, że służy te dzienniki jako ostateczne źródło informacji dla analizy śledczej w przypadku, gdy dane są chronione przy użyciu usługi Azure Rights Management.
 
 Oprócz tego rejestrowania użycia, także mają następujące opcje rejestracji:
 
@@ -52,8 +52,8 @@ Ponadto informacje z dzienników użycia klienta usługi Azure Information Prote
 
 Aby uzyskać więcej informacji na temat rejestrowania użycia usługi Azure Rights Management, należy użyć poniższych sekcjach. 
 
-## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Włączanie rejestrowania użycia usługi Azure Rights Management
-Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączone dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure Rights Management przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 
+## <a name="how-to-enable-azure-rightsmanagement-usage-logging"></a>Jak włączyć rejestrowanie użycia usługi Azure Rights Management
+Od lutego 2016 r. rejestrowanie użycia usługi Azure Rights Management jest domyślnie włączona, dla wszystkich klientów. Dotyczy to klientów, którzy aktywowali usługę Azure Rights Management przed lutym 2016 r., oraz klientów, którzy aktywowali usługę po lutym 2016 r. 
 
 > [!NOTE]
 > Przechowywanie dziennika lub korzystanie z funkcji rejestrowania nie wiąże się z żadnymi dodatkowymi kosztami.
@@ -125,7 +125,7 @@ Każdy wpis w dzienniku ma sygnaturę czasową UTC. Ponieważ usługa Azure Righ
 ### <a name="the-blob-format"></a>Format obiektów blob
 Każdy obiekt blob jest w rozszerzonym formacie W3C dziennika. Rozpoczyna się od następujących dwóch wierszy:
 
-**#Software: RMS**
+**#Software: USŁUGI RMS**
 
 **#Version: 1.1**
 
@@ -133,7 +133,7 @@ Pierwszy wiersz określa, że są to dzienniki usługi Azure Rights Management. 
 
 Trzeci wiersz wylicza listę nazw pól rozdzielonych znakami tabulatora:
 
-**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
+**#Fields: Data Godzina identyfikator wiersza typ żądania identyfikator użytkownika wynik identyfikator korelacji identyfikator zawartości adres e-mail właściciela wystawcy identyfikator szablonu — nazwa pliku Data publikacji      c-info c-ip admin-action acting-as-user**
 
 Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane w takiej samej kolejności, jak poprzedni wiersz, i są rozdzielone znakami tabulatora. Podczas interpretowania pól skorzystaj z poniższej tabeli.
 
@@ -142,7 +142,7 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |date|Data|Data obsługi żądania w formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|2013-06-25|
 |time|Godzina|Czas obsługi żądania w 24-godzinnym formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|21:59:28|
 |row-id|Tekst|Unikatowy identyfikator GUID dla tego rekordu dziennika. Jeśli ta wartość nie została podana, użyj wartości correlation-id do zidentyfikowania wpisu.<br /><br />Ta wartość jest przydatna przy agregowaniu dzienników lub kopiowaniu dzienników do innego formatu.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
-|request-type|Nazwa|Nazwa żądanego interfejsu API usługi RMS.|AcquireLicense|
+|request-type|Name (Nazwa)|Nazwa żądanego interfejsu API usługi RMS.|AcquireLicense|
 |user-id|String|Użytkownik, który wysłał żądanie.<br /><br />Wartość jest ujęta w cudzysłów pojedynczy. Wywołania z klucza dzierżawy, który jest zarządzany przez użytkownika (BYOK), mają wartość **"**, która ma zastosowanie również w przypadku anonimowych typów żądań.|‘joe@contoso.com’|
 |result|String|‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.|'Success'|
 |correlation-id|Tekst|Identyfikator GUID, który jest wspólny dla dziennika klienta usługi RMS i dziennika serwera dotyczącego danego żądania.<br /><br />Ta wartość może być przydatna do rozwiązywania problemów klienta.|cab52088-8925-4371-be34-4b71a3112356|
@@ -151,10 +151,10 @@ Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane 
 |issuer|String|Adres e-mail wystawcy dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |template-id|String|Identyfikator szablonu użytego do ochrony dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
 |file-name|String|Nazwa pliku chronionego dokumentu śledzonego za pomocą klienta usługi Azure Information Protection dla systemu Windows lub aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|TopSecretDocument.docx|
-|date-published|Data|Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|2015-10-15T21:37:00|
+|date-published|Date|Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|2015-10-15T21:37:00|
 |c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
-|admin-action|Wartość logiczna|Czy administrator ma dostęp do witryny śledzenia dokumentów w trybie administratora.|True|
+|admin-action|Wartość logiczna|Czy administrator ma dostęp do witryny śledzenia dokumentów w trybie administratora.|Prawda|
 |acting-as-user|String|Adres e-mail użytkownika, dla którego administrator uzyskuje dostęp do witryny śledzenia dokumentów. |'joe@contoso.com'|
 
 
@@ -163,7 +163,7 @@ Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, i
 
 -   Wartość **'microsoftrmsonline@&lt;ID_dzierżawy&gt;.rms.&lt;region&gt;.aadrm.com'**.
 
-    Ta wartość oznacza, że żądanie zostało wysłane przez usługę Office 365, taką jak Exchange Online lub SharePoint Online. W podanym ciągu znaków *&lt;ID_dzierżawy&gt;* oznacza identyfikator GUID dzierżawy, a *&lt;region&gt;* oznacza region rejestracji dzierżawy. Na przykład ciąg **na** reprezentuje Amerykę Północną, **eu** określa Europę, a **ap** — Azję.
+    Oznacza to, że wysłano żądanie usługi Office 365, takich jak Exchange Online lub SharePoint Online. W podanym ciągu znaków *&lt;ID_dzierżawy&gt;* oznacza identyfikator GUID dzierżawy, a *&lt;region&gt;* oznacza region rejestracji dzierżawy. Na przykład ciąg **na** reprezentuje Amerykę Północną, **eu** określa Europę, a **ap** — Azję.
 
 -   Jeśli używasz łącznika usługi RMS.
 
@@ -190,7 +190,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |FECreatePublishingLicenseV1|Działanie takie samo, jak połączonych typów żądań Certify i GetClientLicensorCert, ale dotyczy klientów mobilnych.|
 |FEGetAllTemplates|Wykonano wywołanie z urządzenia przenośnego (fronton) dotyczące pobrania szablonów.|
 |FindServiceLocationsForUser|Wykonano wywołanie kwerendy zwracającej adresy URL, które są używane do wywoływania żądań Certify lub AcquireLicense.|
-|GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: użytkownik wyświetla stronę **wszystkie dokumenty** dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: administrator wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action ma wartość true, pole acting-as-user nie jest puste: administrator wyświetla stronę **wszystkie dokumenty** dla użytkownika.|
+|GetAllDocs|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące załadowania strony **wszystkie dokumenty** dla użytkownika lub wyszukania wszystkich dokumentów dla dzierżawy. Użyj tej wartości z polami admin-action i acting-as-admin:<br /><br />— pole admin-action jest puste: Widoki użytkowników **wszystkie dokumenty** strony dla swoich własnych dokumentów.<br /><br />— pole admin-action ma wartość true, pole acting-as-user jest puste: Administrator Wyświetla wszystkie dokumenty dla swojej dzierżawy.<br /><br />— pole admin-action to wartość true, pole acting-as-user nie jest pusty: Administrator Wyświetla **wszystkie dokumenty** strony dla użytkownika.|
 |GetAllTemplates|Wykonano wywołanie z witryny Azure portal w celu pobrania wszystkich szablonów.|
 |GetClientLicensorCert|Klient żąda certyfikatu publikowania (który jest później używany do ochrony zawartości) z komputera z systemem Windows.|
 |GetConfiguration|Wykonano wywołanie polecenia cmdlet programu Azure PowerShell w celu pobrania konfiguracji dzierżawy usługi Azure RMS.|

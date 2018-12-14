@@ -1,6 +1,6 @@
 ---
 title: Rights Management Services SDK 2.1 | Azure RMS
-description: Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usługi RMS lub Azure RMS w celu zapewnienia ochrony informacji.
+description: Platforma zestawu RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usługi RMS lub Azure RMS w celu zapewnienia ochrony informacji.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,26 +12,24 @@ ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7412a760aab21eb93fc67080f53c0ec83bdfc757
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a3641f3de547e457445727beb6723d2c7ef8750c
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146238"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266515"
 ---
 # <a name="rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1
 
 ## <a name="purpose"></a>Cel
 
-Zestaw Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usług Rights Management (RMS) lub Azure Rights Management w celu zapewnienia ochrony informacji. Zestaw RMS SDK 2.1 obsługuje złożone rozwiązania w zakresie zabezpieczeń, takie jak zarządzanie kluczami oraz przetwarzanie szyfrowania i odszyfrowywania, a także oferuje uproszczony interfejs API ułatwiający tworzenie aplikacji.
+Platforma usługi Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z usług zarządzania prawami (RMS) lub Azure Rights Management w celu zapewnienia ochrony informacji. Zestaw RMS SDK 2.1 obsługuje rozwiązania w zakresie złożonych funkcji zabezpieczeń, takich jak zarządzanie kluczami, przetwarzanie szyfrowania i odszyfrowywania, a także oferuje uproszczony interfejs API ułatwiający tworzenie aplikacji.
 
 ### <a name="developer-audience"></a>Docelowa grupa deweloperów
 
-Zestaw RMS SDK 2.1 można pobrać z Centrum pobierania Microsoft na [stronie pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397). Zestaw RMS SDK 2.1 służy do tworzenia niestandardowych aplikacji, które umożliwiają zarządzanie prawami do zasobów cyfrowych i wymuszanie zgodności z warunkami użytkowania tych zasobów. Wymagana jest znajomość języka programowania C++.
+Zestaw RMS SDK 2.1, dostępnym [strona pobierania zestawu RMS SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397) w Centrum pobierania Microsoft, jest używany do tworzenia niestandardowych aplikacji, które umożliwiają zarządzanie prawami do zasobów cyfrowych i wymuszanie warunków użytkowania tych zasobów. Wymagana jest znajomość języka programowania C++.
 
-Więcej informacji na temat tej technologii zawiera witryna firmy Microsoft [RMS Developer's Corner](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx) — oficjalny blog zespołu ds. produktu Rights Management przeznaczony dla deweloperów korzystających z ochrony informacji za pomocą usługi AD RMS.
-
-Odpowiedzi na często zadawane pytania można znaleźć w sekcji dla deweloperów na stronie [często zadawanych pytań dotyczących usługi RMS](http://aka.ms/adrmsfaq ).
+Odpowiedzi na często zadawane pytania można znaleźć w sekcji dla deweloperów na stronie [często zadawanych pytań dotyczących usługi RMS](https://aka.ms/adrmsfaq).
 
 ### <a name="run-time-requirements"></a>Wymagania dotyczące środowiska uruchomieniowego
 
@@ -39,16 +37,15 @@ Informacje o wymaganiach dotyczących środowiska uruchomieniowego dla konkretne
 
 |Temat|Opis|
 |-----|--------|
-|[Przegląd](ad-rms-overview.md)|Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.|
-|[Wprowadzenie](getting-started-with-ad-rms-2-0.md)|Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.|
+|[Omówienie](ad-rms-overview.md)|Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.|
+|[Wprowadzenie](getting-started-with-ad-rms-2-0.md)|Platforma zestawu RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.|
 |[Informacje o wersji](release-notes-rtm.md)|Ten temat zawiera ważne informacje o bieżącej i poprzednich wersjach zestawu RMS SDK 2.1.|
 |[Uwagi dla deweloperów](developer-notes.md)|W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy opracowywania.|
 |[Dokumentacja interfejsu API](api-reference-2-1.md)|Tematy w tej sekcji zawierają materiały referencyjne dotyczące wszystkich elementów interfejsu API.|
 
- 
+ 
 
 ## <a name="related-topics"></a>Tematy pokrewne
 
-* [Strona pobierania zestawu RMS SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
-* [RMS Developer's Corner (Kącik dewelopera usługi RMS)](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
-* [Często zadawane pytania dotyczące usługi RMS](http://aka.ms/adrmsfaq )
+* [Strona pobierania zestawu RMS SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397)
+* [Często zadawane pytania dotyczące usługi RMS](https://aka.ms/adrmsfaq )

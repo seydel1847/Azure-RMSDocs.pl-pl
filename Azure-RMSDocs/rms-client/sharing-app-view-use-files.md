@@ -1,5 +1,5 @@
 ---
-title: Otwieranie plików chronionych za pomocą usługi RMS w aplikacji RMS sharing — AIP
+title: Otwieranie plików chronionych za pomocą aplikacji RMS sharing
 description: Instrukcje dotyczące wyświetlania i używania pliku chronionego, co wymaga posiadania zainstalowanej aplikacji Rights Management (RMS) sharing.
 author: cabailey
 ms.author: cabailey
@@ -10,28 +10,31 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: f3e3158e8cd5fb054daab65a3b86a0e99074bee3
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023995"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319469"
 ---
-# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Wyświetlanie i używanie plików chronionych przez usługę Rights Management
+# <a name="use-the-rights-management-sharing-application-to-view-and-use-protected-files"></a>Aplikacja do udostępniania usługi Rights Management umożliwia wyświetlanie i używanie chronionych plików
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
-Gdy [aplikacja do udostępniania usługi Rights Management (RMS) jest zainstalowana na komputerze](install-sharing-app.md), wystarczy kliknąć dwukrotnie chroniony plik, aby go wyświetlić. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików.
+> [!IMPORTANT]
+> **Koniec obsługi powiadomień**: Rights Management sharing application for Windows jest zastępowany przez [klienta Azure Information Protection](aip-client.md). Obsługa tej starszej aplikacji zakończy 31 stycznia 2019 r.
 
-> [!NOTE]
-> Zanim będzie można wyświetlić chroniony plik, usługa Rights Management musi potwierdzić, że masz uprawnienia do wyświetlenia pliku (sprawdzana jest nazwa użytkownika i hasło). W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
->
-> Jeśli Twoja organizacja nie korzysta z usługi Azure Information Protection ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci otwieranie plików chronionych za pomocą usług RMS:
->
-> -   Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](https://go.microsoft.com/fwlink/?LinkId=309469).
->
->     Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
-> -   Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../rms-for-individuals.md).
+Gdy [Rights Management (RMS) w aplikacji do udostępniania jest zainstalowany na komputerze](install-sharing-app.md), można wyświetlić chroniony plik, po prostu kliknij go dwukrotnie. Plik może być załącznikiem wiadomości e-mail lub może być widoczny w Eksploratorze plików.
+
+Zanim będzie można wyświetlić chroniony plik, usługa Rights Management musi potwierdzić, że masz uprawnienia do wyświetlenia pliku (sprawdzana jest nazwa użytkownika i hasło). W niektórych sytuacjach te dane są buforowane, w związku z czym monit o podanie poświadczeń nie zostanie wyświetlony. W pozostałych przypadkach jest wyświetlany monit o podanie poświadczeń.
+
+Jeśli Twoja organizacja nie korzysta z usługi Azure Information Protection ani usług AD RMS, możesz poprosić o utworzenie bezpłatnego konta z wykorzystaniem Twoich poświadczeń, co umożliwi Ci otwieranie plików chronionych za pomocą usług RMS:
+
+- Aby poprosić o utworzenie konta, kliknij link [usług RMS dla użytkowników indywidualnych](https://go.microsoft.com/fwlink/?LinkId=309469). 
+    
+    Podczas tworzenia konta użyj swojego służbowego adresu e-mail, a nie adresu prywatnego. Jeśli tworzysz konto w związku z otrzymaniem chronionego załącznika pocztą e-mail, użyj tego samego adresu e-mail, który został użyty przez nadawcę do wysłania tej wiadomości e-mail do Ciebie.
+
+- Aby uzyskać więcej informacji, zobacz [Usługa RMS dla użytkowników indywidualnych i usługa Azure Rights Management](../rms-for-individuals.md).
 
 ## <a name="to-view-a-protected-file"></a>Aby wyświetlić chroniony plik
 W Eksploratorze plików lub wiadomości e-mail zawierającej załącznik kliknij dwukrotnie chroniony plik, po czym wprowadź swoje poświadczenia, jeśli zostanie wyświetlony odpowiedni komunikat.

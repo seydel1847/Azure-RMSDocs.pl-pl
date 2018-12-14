@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023811"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218480"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 z dodatkiem SP1, Windows 8, Windows 8.1*
 
 
 Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna aplikacja do pobrania dla systemu Microsoft Windows i innych platform, która zapewnia następujące korzyści:
@@ -34,7 +34,7 @@ Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna ap
 
 -   Pełne współdziałanie z plikami PDF chronionymi przy użyciu infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) i obsługiwanymi narzędziami do tworzenia plików PDF.
 
-Aplikacja Microsoft Rights Management sharing używa [środowiska uruchomieniowego klienta AD RMS Client 2.1](http://www.microsoft.com/download/details.aspx?id=38396). Korzystając z funkcji usług AD RMS 2.1, aplikacja do udostępniania usługi Microsoft Rights Management oferuje użytkownikom końcowym proste środowisko ochrony i środowisko użytkowe.
+Aplikacja Microsoft Rights Management sharing używa [środowiska uruchomieniowego klienta AD RMS Client 2.1](https://www.microsoft.com/download/details.aspx?id=38396). Korzystając z funkcji usług AD RMS 2.1, aplikacja do udostępniania usługi Microsoft Rights Management oferuje użytkownikom końcowym proste środowisko ochrony i środowisko użytkowe.
 
 Za pomocą usług RMS w wersji października 2013 można natywnie chronić dokumenty przy użyciu pakietu Office 2010 i wysyłać je do osób w innej firmie, które będą mogły ich za pomocą usługi Azure Rights Management z usługi Azure Information Protection. Ponadto w tej wersji, jeśli używasz usług AD RMS w trybie kryptograficznym 2, można korzystać z usługi RMS dla użytkowników indywidualnych i używać zawartości od osób w innej firmie, która używa usługi Azure Rights Management. Aby uzyskać więcej informacji na temat trybu kryptograficznego 2, zobacz [tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
 
@@ -110,7 +110,7 @@ W celu skonfigurowania aplikacji RMS sharing, aby stosowała ochronę ogólną d
 
 Te dwa ustawienia powodują, że aplikacja RMS sharing stosuje ochronę ogólną do wszystkich plików mających rozszerzenie nazwy pliku. Jeśli taki był Twój cel, nie trzeba już nic konfigurować. Możesz jednak zdefiniować wyjątki dla określonych typów plików, aby nadal były objęte ochroną natywną. W tym celu dla każdego typu plików trzeba wprowadzić trzy dodatkowe zmiany do rejestru:
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Dodaj nowy klucz o nazwie takiej, jak dane rozszerzenie nazwy pliku (bez kropki przed rozszerzeniem).
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: Dodaj nowy klucz o nazwie rozszerzenie nazwy pliku (bez kropki).
 
     Na przykład w przypadku plików z rozszerzeniem nazwy pliku docx utwórz klucz o nazwie **DOCX**.
 
@@ -124,11 +124,11 @@ Powtórz te trzy kroki dla innych typów plików, które chcesz zdefiniować jak
 
 Podobne zmiany w rejestrze możesz wprowadzić w innych sytuacjach, zmieniając wartość ciągu **Encryption** obsługującego następujące wartości:
 
--   **Pfile**: ogólna ochrona
+-   **Pfile**: Ochrona ogólna
 
--   **Native**: ochrona natywna
+-   **Natywne**: Ochrona natywna
 
--   **Off**: blokowanie ochrony
+-   **Wyłącz**: Ochrona zablokowana
 
 ## <a name="see-also"></a>Zobacz też
 [Podręcznik użytkownika aplikacji do udostępniania usługi Rights Management](sharing-app-user-guide.md)

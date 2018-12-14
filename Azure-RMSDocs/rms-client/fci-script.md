@@ -4,28 +4,28 @@ description: Przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opise
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be5b7c658fcdd2c5d4d03de21a89bfda51039539
-ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
+ms.openlocfilehash: 9a59be70117f4ed2dd0a0c3bb14bc9fa6f0c530d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47233698"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305118"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>Skrypt programu Windows PowerShell na potrzeby ochrony za pomocą usług Azure RMS przy użyciu infrastruktury klasyfikacji plików Menedżera zasobów serwera plików
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Ta strona zawiera przykładowy skrypt do skopiowania i zmodyfikowania zgodnie z opisem podanym w artykule [Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików w systemie Windows Server](configure-fci.md).
 
 Ten skrypt wymaga co najmniej wersji **1.3.155.2** dla modułu usługi AzureInformationProtection. Uruchom następujące polecenie, aby sprawdzić wersję: `(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
-*&#42;&#42;Zastrzeżenie&#42;&#42;: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany, w jakim jest bez żadnego rodzaju gwarancji.*
+*&#42;&#42;Zastrzeżenie&#42;&#42;: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany, w jakim jest bez żadnego rodzaju gwarancji.*
 
 ```
 <#

@@ -4,22 +4,22 @@ description: Informacje ułatwiające instalowanie i konfigurowanie łącznika u
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2e3babe4a402b8f77700e9b9890dc5f826a5850a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026968"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305679"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Skorzystaj z poniższych informacji, aby zainstalować i skonfigurować łącznik Azure Rights Management (RMS). Te procedury obejmują kroki od 1 do 4 z sekcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
@@ -57,17 +57,17 @@ Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia 
 
 To konto nie może wymagać uwierzytelniania wieloskładnikowego (MFA), ponieważ narzędzie administracyjne usługi Microsoft Rights Management nie obsługuje metody MFA dla tego konta. 
 
-Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: handlowe „i” (**&**) lewy nawias (**[**), prawy nawias (**]**), prosty cudzysłów (**"**) i apostrof (**'**). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Jeśli ten scenariusz dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawierają dowolne spośród tych znaków specjalnych, lub zresetować hasło, aby nie zawierało ono żadnego z tych znaków specjalnych.
+Łącznik nakłada pewne ograniczenia dotyczące znaków w tym haśle. Nie można użyć hasła, które ma jakiekolwiek z następujących znaków: Handlowe "i" ( **&** ); left nawiasu ostrego ( **[** ), prawy nawias ( **]** ); jest to proste oferty ( **"** ); i apostrof ( **'** ). Jeśli hasło zawiera dowolny z tych znaków, uwierzytelnienie dla łącznika usług RMS zakończy się niepowodzeniem i pojawi się komunikat o błędzie informujący, że **kombinacja nazwy użytkownika i hasła nie jest poprawna**, mimo że można pomyślnie zalogować się przy użyciu tego konta i hasła w przypadku innych scenariuszy. Jeśli ten scenariusz dotyczy to Twojego hasła, użyj innego konta z hasłem, które nie zawierają dowolne spośród tych znaków specjalnych, lub zresetować hasło, aby nie zawierało ono żadnego z tych znaków specjalnych.
 
-Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Jeśli na przykład możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. Jeśli nie widzisz komunikat o błędzie: **próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
+Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment), upewnij się, że podane przez Ciebie konto użytkownika może chronić zawartość. Jeśli na przykład możliwość ochrony zawartości została ograniczona do grupy „Dział IT”, konto określone w tym miejscu musi być członkiem tej grupy. W przeciwnym razie zostanie wyświetlony komunikat o błędzie: **Próba odnalezienia lokalizacji usługi administracji i organizacji nie powiodła się. Upewnij się, że usługa Microsoft Rights Management jest włączona dla Twojej organizacji.**
 
 Można użyć konta, które ma jedno z następujących uprawnień:
 
--   **Administrator globalny dla dzierżawy**: konto administratora globalnego dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD.
+-   **Administrator globalny dzierżawy**: Konto administratora globalnego dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD.
 
--   **Administrator globalny usługi Azure Rights Management**: konto w usłudze Azure Active Directory, któremu przypisano rolę administratora globalnego usługi Azure RMS.
+-   **Administrator globalny usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu przypisano rolę administratora globalnego usługi Azure RMS.
 
--   **Administrator łącznika usługi Azure Rights Management**: konto w usłudze Azure Active Directory, któremu przyznano prawa do instalowania łącznika usługi RMS dla Twojej organizacji i administrowania tym łącznikiem.
+-   **Administrator łącznika usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu udzielono prawa do instalowania łącznika usług RMS dla Twojej organizacji i administrowania.
 
     > [!NOTE]
     > Rola administratora globalnego usługi Azure Rights Management i roli administratora łącznika usługi Azure Rights Management jest przypisana do kont za pomocą polecenia cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) usługi Azure RMS.
@@ -94,7 +94,7 @@ Można użyć konta, które ma jedno z następujących uprawnień:
     >     ```
     >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
     >     ```
-    >     Na przykład wpisz: **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
+    >     Na przykład wpisz: **Dodaj AadrmRoleBasedAdministrator - EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
     >
     >     Mimo że te polecenia przypisują rolę ConnectorAdministrator, można w tym miejscu użyć również roli GlobalAdministrator.
 
@@ -145,7 +145,7 @@ Ważne jest, aby autoryzować odpowiedni obiekt. Aby serwera mógł korzystać z
 
 Więcej informacji na temat różnych ról serwerów:
 
--   W przypadku serwerów z systemem Exchange: należy określić grupę zabezpieczeń i użyć domyślnej grupy (**Serwery Exchange**), którą program Exchange tworzy automatycznie i przechowuje na wszystkich serwerach programu Exchange w lesie.
+-   W przypadku serwerów z systemem Exchange: Należy określić grupę zabezpieczeń i użyć domyślnej grupy (**serwery Exchange**) programu Exchange automatycznie tworzy i przechowuje na wszystkich serwerach programu Exchange w lesie.
 
 -   W przypadku serwerów z programem SharePoint:
 
@@ -184,7 +184,7 @@ Aby skonfigurować klaster równoważenia obciążenia sieciowego, użyj następ
 
 -   Koligacja: Brak
 
--   Metoda dystrybucji: równy
+-   Metoda dystrybucji: równe
 
 Nazwa zdefiniowana dla systemu z równoważeniem obciążenia (dla serwerów z uruchomioną usługą łącznika usługi RMS) jest nazwą łącznika usługi RMS w danej organizacji. Można jej użyć później, podczas konfigurowania serwerów lokalnych do korzystania z usługi Azure RMS.
 
@@ -235,13 +235,13 @@ Narzędzie administracyjne łącznika usługi RMS można uruchomić z komputera,
 
 Aby zainstalować narzędzie administracyjne łącznika usługi RMS, uruchom następujące pliki:
 
--   Na komputerze 32-bitowym: RMSConnectorAdminToolSetup_x86.exe
+-   Na komputerze 32-bitowe: RMSConnectorAdminToolSetup_x86.exe
 
 -   Na komputerze 64-bitowym: RMSConnectorSetup.exe
 
 Jeśli te pliki nie zostały już pobrane, możesz to zrobić w [Centrum pobierania Microsoft](https://go.microsoft.com/fwlink/?LinkId=314106).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Teraz, gdy łącznik usługi RMS jest zainstalowany i skonfigurowany, można przystąpić do konfigurowania serwerów lokalnych, aby mogły z niego korzystać. Przejdź do sekcji [Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management](configure-servers-rms-connector.md).
 

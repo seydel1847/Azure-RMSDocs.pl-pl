@@ -4,23 +4,23 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953316"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068813"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!NOTE]
 > Ta funkcja jest obecnie dostępna w wersji zapoznawczej i może ulec zmianie. Wszystkie dane zebrane w trakcie tego okresu zapoznawczego nie mogą być obsługiwane, gdy ta funkcja zostanie przeniesiony do ogólnej dostępności.
@@ -67,9 +67,13 @@ Na przykład można znaleźć w następujących tematach:
     
     - Pliki, które zawierają poufne informacje dotyczące znanych kategorie, takie jak dane finansowe i dane osobowe i lokalizację plików według tych kategorii
     
-Raporty używają [usługi Azure Log Analytics](/azure/log-analytics/log-analytics-overview) do przechowywania danych w obszarze roboczym, który Twoja organizacja jest właścicielem. Jeśli znasz język zapytań, można modyfikować zapytania bezpośrednio i utworzyć nowe raporty i pulpity nawigacyjne usługi Power BI. Może się okazać następującego samouczka poznać język zapytań: [rozpoczęcie korzystania z portalu usługi analiza](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
+Raporty używają [usługi Azure Log Analytics](/azure/log-analytics/log-analytics-overview) do przechowywania danych w obszarze roboczym, który Twoja organizacja jest właścicielem. Jeśli znasz język zapytań, można modyfikować zapytania bezpośrednio i utworzyć nowe raporty i pulpity nawigacyjne usługi Power BI. Poznać język zapytań może znaleźć następującego samouczka: [Rozpoczęcie korzystania z portalu usługi analiza](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
 
-Aby uzyskać więcej informacji, przeczytaj wpis w blogu: [odnajdywanie danych, raportowanie i analiza dla wszystkich swoich danych z usługą Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854).
+Aby uzyskać więcej informacji przeczytaj następujące wpisy na blogu: 
+
+- [Odnajdywanie danych, raportowanie i analiza dla wszystkich swoich danych z usługą Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)
+
+- [Odnajdywanie i chronić poufne dane przy użyciu usługi Azure Information Protection i usługi Windows Defender ATP](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>Informacje zbierane i przesyłane do firmy Microsoft
 
@@ -85,9 +89,9 @@ Aby wygenerować raporty, punkty końcowe Wyślij następujące rodzaje informac
 
 - Nazwa urządzenia użytkownika.
 
-- W przypadku dokumentów: ścieżka do pliku i nazwę pliku, dokumentów, które są oznaczone etykietami.
+- W przypadku dokumentów: Ścieżka do pliku i nazwa pliku, dokumentów, które są oznaczone etykietami.
 
-- Dla wiadomości e-mail: temat wiadomości e-mail nadawcy wiadomości e-mail i wiadomości e-mail adresaci wiadomości e-mail, które są oznaczone etykietami. 
+- Dla wiadomości e-mail: Temat wiadomości e-mail, nadawcą wiadomości e-mail i wiadomości e-mail adresaci wiadomości e-mail, które są oznaczone etykietami. 
 
 - Typy informacji poufnych ([wstępnie zdefiniowanych](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) i niestandardowych), zostały wykryte w zawartości.
 
@@ -116,7 +120,7 @@ Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne
 
 3. Na **usługi Azure Information Protection log analytics** bloku, możesz wyświetlić listę żadnych obszarów roboczych usługi Log Analytics, które są własnością Twojej dzierżawy. Wykonaj jedną z następujących czynności:
     
-    - Aby utworzyć nowy obszar roboczy usługi Log Analytics: Wybierz **Utwórz nowy obszar roboczy**, a następnie na **obszar roboczy usługi Log analytics** bloku podaj żądane informacje.
+    - Aby utworzyć nowy obszar roboczy usługi Log Analytics: Wybierz **Utwórz nowy obszar roboczy**, a następnie na **obszar roboczy usługi Log analytics** bloku, podaj wymagane informacje.
     
     - Aby użyć istniejącego obszaru roboczego usługi Log Analytics: Wybierz obszar roboczy z listy.
 
@@ -128,15 +132,15 @@ W przypadku skonfigurowania obszaru roboczego, możesz przystąpić do ich wyśw
 
 W bloku Azure Information Protection, Znajdź **pulpity nawigacyjne** opcje menu, a następnie wybierz jedną z następujących opcji:
 
-- **Raport użycia (wersja zapoznawcza)**: Ten raport, aby zobaczyć, jak są używane etykiet. 
+- **Raport użycia (wersja zapoznawcza)**: Aby zobaczyć, jak etykiety są używane, należy użyć tego raportu. 
 
-- **Dzienniki aktywności (wersja zapoznawcza)**: Ten raport służy do wyświetlania, etykietowanie działania użytkowników i na urządzeniach i ścieżki plików.
+- **Dzienniki aktywności (wersja zapoznawcza)**: Ten raport służy do Zobacz etykietowanie działania użytkowników i na urządzeniach i ścieżki plików.
     
     Ten raport jest obecnie wprowadzane do dzierżawców, więc jeśli nie widzisz go, spróbuj ponownie za kilka dni.
     
     Ten raport zawiera **kolumn** opcja, która pozwala wyświetlić więcej informacji o aktywności niż domyślnym wyświetlaniem.
 
-- **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport służy do wyświetlania informacji na temat plików znalezionych przez skanery lub usługi Windows Defender ATP.
+- **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport zawiera informacje dotyczące plików znalezionych przez skanery lub usługi Windows Defender ATP.
 
 ## <a name="how-to-modify-the-reports"></a>Jak modyfikować raporty
 
@@ -147,5 +151,5 @@ Wybierz ikonę zapytania na pulpicie nawigacyjnym, aby otworzyć **wyszukiwanie 
 
 Zarejestrowanych danych usługi Azure Information Protection znajduje się w poniższej tabeli: **InformationProtectionLogs_CL**
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po przejrzeniu informacji w raportach, można zdecydować wprowadzić zmiany w zasadach usługi Azure Information Protection. Aby uzyskać instrukcje, zobacz [Konfigurowanie zasad usługi Azure Information Protection](configure-policy.md).

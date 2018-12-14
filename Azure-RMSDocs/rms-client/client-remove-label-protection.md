@@ -4,22 +4,22 @@ description: Instrukcje pozwalające usunąć etykiety klasyfikacji i ochrony z 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 31a325e31c8a7829f660080311f60181aa595ee7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ab98e211bf0f346359c6f6627a68db3071f7482e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148039"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305084"
 ---
-# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub chronionych przez usługę Rights Management
+# <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>Podręcznik użytkownika: Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail, które zostały oznaczone przez usługę Azure Information Protection lub objęte ochroną przez usługę Rights Management
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Po [zainstalowaniu klienta usługi Azure Information Protection na komputerze](install-client-app.md) można usunąć etykiety klasyfikacji i ochrony z plików i wiadomości e-mail.
 
@@ -30,7 +30,7 @@ Jeśli etykieta, która ma zostać usunięta, jest skonfigurowana pod kątem zas
 
 Aby wybrać inną etykietę lub inny zbiór ustawień ochrony, nie musisz usuwać etykiety ani ochrony. Zamiast tego wybierz nową etykietę i w razie potrzeby można zdefiniować uprawnienia niestandardowe, jeśli administrator zezwala na tę konfigurację. 
 
-Etykiety i ochronę dokumentów pakietu Office i wiadomości e-mail można usuwać podczas ich tworzenia lub edytowania, używając aplikacji klasycznych pakietu Office: **Word**, **Excel**, **PowerPoint** i **Outlook**. 
+Możesz usunąć etykiety i ochronę dokumentów pakietu Office i wiadomości e-mail podczas tworzenia lub edycji je w aplikacjach klasycznych pakietu Office: **Word**, **Excel**, **PowerPoint**, **Outlook**. 
 
 Można także usuwać etykiety i ochronę, korzystając z **Eksploratora plików**, który obsługuje dodatkowe typy plików i zapewnia wygodny sposób usuwania etykiet i ochrony z wielu plików jednocześnie.
 
@@ -59,13 +59,13 @@ Korzystając z Eksploratora plików, można szybko usunąć etykiety i ochronę 
 
 1. W Eksploratorze plików wybierz plik, wiele plików lub folder. Kliknij prawym przyciskiem myszy i wybierz opcję **Klasyfikuj i chroń**.
 
-2. Aby usunąć etykietę: w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij opcję **Usuń etykietę**. Jeśli etykieta została skonfigurowana pod kątem zastosowania ochrony, ochrona ta zostanie automatycznie usunięta.
+2. Aby usunąć etykietę: W **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe, kliknij przycisk **Usuń etykietę**. Jeśli etykieta została skonfigurowana pod kątem zastosowania ochrony, ochrona ta zostanie automatycznie usunięta.
 
-3. Aby usunąć ochronę niestandardową z pojedynczego pliku: w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** usuń zaznaczenie pola **Ochrona przy użyciu uprawnień niestandardowych**. 
+3. Aby usunąć ochronę niestandardową z pojedynczego pliku: W **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe wyczyść **Chroń za pomocą uprawnień niestandardowych** opcji. 
     
     Jeśli nie widzisz **Chroń za pomocą uprawnień niestandardowych** opcji administrator nie zezwala na przy użyciu tej opcji.
     
-4. Aby usunąć ochronę niestandardową z wielu plików: w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij opcję **Usuń uprawnienia niestandardowe**.
+4. Aby usunąć ochronę niestandardową z wielu plików: W **Klasyfikuj i Chroń — Azure Information Protection** okno dialogowe, kliknij przycisk **Usuń uprawnienia niestandardowe**.
     
     Jeśli nie widzisz **Usuń uprawnienia niestandardowe** opcji administrator nie zezwala na przy użyciu tej opcji.
 

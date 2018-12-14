@@ -11,16 +11,16 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15cf2c9c893adfb6e81e6a0c94001a3a0e120076
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: f6c4bd30c09ff54eab6da4bb63130a16373faebc
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644764"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174016"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Często zadawane pytania dotyczące ochrony danych w usłudze Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Masz pytanie dotyczące usługi ochrony danych Azure Rights Management z usługi Azure Information Protection? Zobacz, czy nie znajdziesz tutaj odpowiedzi.
 
@@ -51,7 +51,7 @@ Aby uzyskać więcej informacji o funkcji HYOK i upewnić się, że dobrze zrozu
 
 Tak, teraz umożliwia BYOK z usługą Exchange Online w przypadku postępuj zgodnie z instrukcjami wyświetlanymi w [skonfigurować nowe możliwości szyfrowanie wiadomości usługi Office 365 korzystających z usługi Azure Information Protection](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e). Instrukcje te umożliwiają nowe możliwości w usłudze Exchange Online, które obsługują przy użyciu funkcji BYOK dla usługi Azure Information Protection, a także nowe szyfrowanie wiadomości usługi Office 365.
 
-Aby uzyskać więcej informacji na temat tej zmiany, zobacz w blogu: [szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)
+Aby uzyskać więcej informacji na temat tej zmiany zobacz w blogu: [Szyfrowanie wiadomości usługi Office 365 dzięki nowym funkcjom](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>Gdzie można znaleźć informacje o rozwiązaniach innych firm, które integrują się z usługą Azure RMS?
 
@@ -63,7 +63,7 @@ Mimo że łącznik usługi Rights Management rejestruje informacje, ostrzeżenia
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>Czy trzeba być administratorem globalnym, aby skonfigurować usługę Azure RMS, czy można to oddelegować do innych administratorów?
 
-Z rolą Administrator usługi Information Protection nowo wprowadzonych tego zapytania (i odpowiedzi) teraz został przeniesiony na stronę główną — często zadawane pytania: [muszą być administratorem globalnym, aby skonfigurować usługę Azure Information Protection, czy można to oddelegować do innych administratorów?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
+Z rolą Administrator usługi Information Protection nowo wprowadzonych tego zapytania (i odpowiedzi) ma przeniesione do strony głównej — często zadawane pytania: [Musisz być administratorem globalnym, aby skonfigurować usługę Azure Information Protection, czy można to oddelegować do innych administratorów?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Jak utworzyć nowy szablon niestandardowy w portalu Azure?
 
@@ -83,7 +83,7 @@ Alternatywnie Jeśli już skonfigurowano grupę dla wymaganych uprawnień, możn
 
 Jeśli dokument był chroniony za pomocą uprawnień niestandardowych, nie można zmienić uprawnienia dla istniejącego dokumentu. Należy ponownie chronić dokument i określić wszystkich użytkowników i wszystkie prawa użytkowania, które są wymagane do tej nowej wersji dokumentu. Aby ponownie włączyć ochronę dokumentu chronionego, musi mieć prawo użycia Pełna kontrola.
 
-Porada: Aby sprawdzić, czy dokument był chroniony przez szablon lub przy użyciu uprawnień niestandardowych, należy użyć [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell. Zawsze wyświetlić opis szablonu **ograniczony dostęp** o uprawnienia niestandardowe, identyfikatorem unikatowy szablonu, które nie są wyświetlane po uruchomieniu [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
+Porada: Aby sprawdzić, czy dokument był chroniony przez szablon lub przy użyciu uprawnień niestandardowych, użyj [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell. Zawsze wyświetlić opis szablonu **ograniczony dostęp** o uprawnienia niestandardowe, identyfikatorem unikatowy szablonu, które nie są wyświetlane po uruchomieniu [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate).
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Mam hybrydowe wdrożenie programu Exchange — niektórzy użytkownicy korzystają z usługi Exchange Online, inni z programu Exchange Server. Czy usługa Azure RMS obsługuje taką sytuację?
 Oczywiście a dodatkową korzyścią jest, użytkownicy będą mogli bezproblemowo ochrony i korzystania z chronionych wiadomości e-mail i załączników w obu wdrożeniach programu Exchange. W przypadku tej konfiguracji [aktywować usługę Azure RMS](activate-service.md) i [włączyć usługę IRM dla usługi Exchange Online](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx), następnie [wdrażanie i Konfigurowanie łącznika usługi RMS](deploy-rms-connector.md) dla programu Exchange Server.
@@ -123,7 +123,7 @@ Alternatywnie można dodać użytkowników zewnętrznych do szablonów niestanda
 
 2. Dostarczyć tę zmienną do parametru RightsDefinition za pomocą [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) polecenia cmdlet.
 
-    Po dodaniu użytkowników do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących użytkowników w szablonach, oprócz nowych użytkowników. W tym scenariuszu może się okazać przydatne **przykład 3: dodawanie nowych użytkowników i praw do szablonu niestandardowego** z [przykłady](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) sekcję polecenia cmdlet.
+    Po dodaniu użytkowników do istniejącego szablonu, należy zdefiniować obiekty definicji praw dla istniejących użytkowników w szablonach, oprócz nowych użytkowników. W tym scenariuszu może się okazać przydatne **przykład 3: Dodaj nowych użytkowników i praw do szablonu niestandardowego** z [przykłady](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) sekcję polecenia cmdlet.
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Jakiego rodzaju grup można używać z usługą Azure RMS?
 W przypadku większości scenariuszy można używać dowolnego typu grupy w usłudze Azure AD, która ma adres e-mail. Ta zasada mówi ma zastosowanie zawsze, gdy przypisujesz prawa użytkowania, ale istnieją pewne wyjątki do administrowania usługą Azure Rights Management. Aby uzyskać więcej informacji, zobacz [wymagania usługi Azure Information Protection dla kont grup](prepare.md#azure-information-protection-requirements-for-group-accounts).
@@ -136,7 +136,7 @@ Odbiorca widzi opcję, aby zalogować się do swojego konta usługi Gmail, Yahoo
 
 Do obsługi tego scenariusza Usługa Exchange Online musi być włączona dla usługi Azure Rights Management i nowe możliwości w szyfrowanie wiadomości usługi Office 365. Aby uzyskać więcej informacji na temat tej konfiguracji, zobacz [usługi Exchange Online: Konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration).
 
-Aby uzyskać więcej informacji na temat nowych funkcji, które obejmują obsługi wszystkich kont e-mail na wszystkich urządzeniach, zobacz następujący wpis w blogu: [ogłoszenie nowych funkcji dostępnych w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
+Aby uzyskać więcej informacji na temat nowych funkcji, które obejmują obsługi wszystkich kont e-mail na wszystkich urządzeniach zobacz następujący wpis w blogu: [Ogłoszenie nowych funkcji dostępnych w szyfrowanie wiadomości usługi Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801).
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Jakie urządzenia i typy plików są obsługiwane przez usługę Azure RMS?
 Aby uzyskać listę urządzeń obsługujących usługę Azure Rights Management, zobacz [Urządzenia klienckie obsługujące ochronę danych usługi Azure Rights Management](./requirements-client-devices.md). Ponieważ nie wszystkie obsługiwane urządzenia obsługują obecnie wszystkie funkcje usługi Rights Management, należy również zapoznać się z tabelą zawierającą informacje na temat [aplikacji z obsługą usług RMS](./requirements-applications.md#rms-enlightened-applications).
@@ -157,9 +157,9 @@ Otwórz program Outlook i utwórz profil przy użyciu konta służbowego usługi
 
     Spowoduje to pobranie szablonów usługi Azure Rights Management, a opcja **Sprawdź poświadczenia** zostanie zastąpiona przez kilka opcji, m.in **Brak ograniczeń**, **Nie przesyłaj dalej** oraz wszystkie szablony usługi Azure Rights Management opublikowane dla Twojej dzierżawy. Możesz teraz anulować tę nową wiadomość.
 
-Aby chronić wiadomość e-mail lub dokument: na karcie **Opcje** kliknij pozycję **Uprawnienia** i wybierz opcję lub szablon chroniący wiadomość e-mail lub dokument.
+Aby chronić wiadomość e-mail lub dokument: Na **opcje** kliknij pozycję **uprawnienia** i wybierz opcję lub szablon chroniący adres e-mail lub dokumentu.
 
-Śledzenie dokumentu po zapewnieniu ochrony: na komputerze z systemem Windows, na którym zainstalowano klienta usługi Azure Information Protection, zarejestruj dokument w witrynie śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](./rms-client/client-track-revoke.md). Na komputerze Mac, można teraz użyć przeglądarki sieci web można przejść do witryny śledzenia dokumentów (https://track.azurerms.com) do śledzenia i odwoływania dokumentu.
+Śledzenie dokumentu po zapewnieniu ochrony: Z poziomu komputera Windows zainstalowanego klienta usługi Azure Information Protection Zarejestruj dokument za pomocą witryny śledzenia dokumentów za pomocą aplikacji pakietu Office lub Eksploratora plików. Aby uzyskać instrukcje, zobacz temat [Śledzenie i odwoływanie dokumentów](./rms-client/client-track-revoke.md). Na komputerze Mac, można teraz użyć przeglądarki sieci web można przejść do witryny śledzenia dokumentów (https://track.azurerms.com) do śledzenia i odwoływania dokumentu.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>Czy po otwarciu dokumentu pakietu Office chronionego przez usługę RMS skojarzony plik tymczasowy jest również chroniony przez usługę RMS?
 Nie. W tym scenariuszu skojarzony plik tymczasowy nie zawiera danych z oryginalnego dokumentu, tylko dane wprowadzone przez użytkownika w czasie, w którym ten oryginalny plik był otwarty. W przeciwieństwie do oryginalnego pliku plik tymczasowy oczywiście nie jest przeznaczony do udostępniania i pozostanie na urządzeniu, chroniony przez lokalne zabezpieczenia, takie jak funkcja BitLocker i system szyfrowania plików.
@@ -176,7 +176,7 @@ Podobnie jak administrator witryny programu SharePoint włącza i konfiguruje us
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>Czy istnieją jakieś wskazówki ułatwiające pomyślne wdrożenie?
 
-Po nadzorowaniu wielu wdrożeń i wysłuchaniu opinii naszych klientów, partnerów, konsultantów i inżynierów pomocy technicznej możemy udzielić jednej podstawowej wskazówki opartej na naszym doświadczeniu: **projektuj i wdrażaj proste zasady**.
+Po nadzorowaniu wielu wdrożeń i naszych klientów w ramach której partnerzy, konsultantów i inżynierów pomocy technicznej — jednego z największych porady, które możemy przekazać na od środowiska: **Projektowanie i wdrażaj proste zasady**.
 
 Ponieważ usługa Azure Information Protection umożliwia bezpieczne udostępnianie dowolnym osobom, można pozwolić sobie na ambitne podejście do zasięgu ochrony danych. Ale konserwatywne podczas konfigurowania praw ograniczenia użycia. W przypadku wielu organizacji największy wpływ na działalność pochodzi z zapobieganie wyciekowi danych przez ograniczenie dostępu do osób w danej organizacji. Oczywiście w razie potrzeby można wprowadzić bardziej szczegółowe ograniczenia — uniemożliwiać drukowanie, edycję itd. Ale zachowaj szczegółowe ograniczenia w przypadku dokumentów wymagających naprawdę specjalnej ochrony, a nie implementują te bardziej restrykcyjne prawa użytkowania na jeden dzień, ale zaplanować podejście etapowe.
 

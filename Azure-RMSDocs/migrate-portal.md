@@ -10,22 +10,22 @@ ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0f94a36f7653ef4aff590bb6815c75210768f7c5
-ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
+ms.openlocfilehash: 1988552916494ec6673f7439c0b132ccf87786c2
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51272367"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174084"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Zadania, które były wykonywane przy użyciu klasycznego portalu Azure
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Używany do klasycznego portalu Azure do zarządzania usługą Azure Rights Management i muszą się o pomoc przejście do witryny Azure portal?
 
 Wycofane w klasycznym portalu Azure **08 stycznia 2018 r**. Po tej dacie nie będziesz mógł zarządzać w klasycznym portalu usługi Azure Rights Management i szablonów niestandardowych. Jeśli spróbujesz uzyskać dostęp do portalu klasycznego, zostanie wyświetlony link umożliwiający przejście do nowej witryny Azure portal.
 
-Aby uzyskać więcej informacji na temat klasycznego portalu wycofywania, zobacz wpis w blogu: [Pochód w przyszłości środowiska pracy administratora usługi Azure AD: wycofywanie w klasycznym portalu Azure](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/). Tymczasowe rozszerzenia oryginalnej dacie wycofania, zobacz [aktualizacji na wycofanie środowisku klasycznym portalu usługi Azure AD i migrację zasad dostępu warunkowego](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/).
+Aby uzyskać więcej informacji na temat klasycznego portalu wycofywania Zobacz anons w blogu: [Pochód w przyszłości środowiska pracy administratora usługi Azure AD: wycofywanie w klasycznym portalu Azure](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/). Tymczasowe rozszerzenia oryginalnej dacie wycofania, zobacz [aktualizacji na wycofanie środowisku klasycznym portalu usługi Azure AD i migrację zasad dostępu warunkowego](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/).
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>Jak wykonywać zadania związane z dobrze znanych administratora
 
@@ -55,7 +55,7 @@ Nowe funkcje w witrynie Azure portal:
 
 - Szablony można konwertować do etykiet, tak, aby zarządzać pojedynczy obiekt, zamiast zarządzać szablonem i etykiety niezależnie. Aby uzyskać instrukcje, zobacz [Aby dokonać konwersji szablonów na etykiety](configure-policy-templates.md#to-convert-templates-to-labels).
 
-- Obsługa innych ról administratora: konieczne było Zaloguj się do klasycznego portalu Azure jako Administrator globalny do konfigurowania usługi Azure Rights Management, można logowaniu do witryny Azure portal do konfigurowania usługi Azure Information Protection przy użyciu konta, które ma jakiekolwiek z następujące role administracyjne: **administratora globalnego**, **Administrator zabezpieczeń**, lub **Administrator usługi Information Protection**. Aby uzyskać więcej informacji na temat każdego z tych ról, zobacz [dostępnych ról](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) sekcji w dokumentacji usługi Azure Active Directory.
+- Pomoc techniczna dla innych ról administratora: Konieczne było Zaloguj się do klasycznego portalu Azure jako Administrator globalny do konfigurowania usługi Azure Rights Management, można logowaniu do witryny Azure portal do konfigurowania usługi Azure Information Protection przy użyciu konta, które ma jakiekolwiek z następujących ról administracyjnych: **Administrator globalny**, **Administrator zabezpieczeń**, lub **Administrator usługi Information Protection**. Aby uzyskać więcej informacji na temat każdego z tych ról, zobacz [dostępnych ról](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) sekcji w dokumentacji usługi Azure Active Directory.
 
 Polecenia cmdlet programu PowerShell do tworzenia szablonów i zarządzania nimi i aby aktywować lub dezaktywować usługę, w dalszym ciągu obsługiwany bez zmian.
 

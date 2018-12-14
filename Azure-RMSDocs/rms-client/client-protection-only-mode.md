@@ -4,22 +4,22 @@ description: Informacje dla użytkowników, którzy uruchamiają klienta usługi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
-ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
+ms.openlocfilehash: 2f73f8bf107aaebe0e87588c410e1e7f66093ef7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812422"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305101"
 ---
-# <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Przewodnik po użytkownik: Tryb z samą ochroną dla klienta usługi Azure Information Protection
+# <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>Podręcznik użytkownika: Klient usługi Azure Information Protection działający w trybie z samą ochroną
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 
 Gdy klient usługi Azure Information Protection nie zawiera etykiet do klasyfikowania dokumentów i wiadomości e-mail, jest ono wykonywane **obejmujący tylko ochronę** trybu. Na przykład, w tym trybie można napotkać następujące podczas używania Eksploratora plików Windows, kliknij prawym przyciskiem myszy, **Klasyfikuj i Chroń**:
@@ -55,9 +55,9 @@ Tryb z samą ochroną uruchamia się w następujących scenariuszach:
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>Zadania obsługiwane w trybie z samą ochroną
 
-- Włączenie lub wyłączenie ochrony dokumentów i wiadomości e-mail w aplikacjach pakietu Office za pomocą funkcji Zarządzanie prawami informacji (IRM) pakietu Office. Przykład: kliknij kolejno opcje **Plik** > **Informacje** > **Zabezpiecz dokument** > **Ogranicz dostęp**. Więcej informacji można znaleźć w [Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013](../help-users.md).
+- (I usuwania ochrony) dokumenty i wiadomości e-mail w aplikacji pakietu Office przy użyciu funkcji Zarządzanie prawami informacji (IRM) pakietu Office: Przykład: Kliknij przycisk **pliku** > **informacje** > **Chroń dokument** > **ograniczanie dostępu**. Więcej informacji można znaleźć w [Korzystanie z ochrony informacji w usłudze Office 365 oraz w pakiecie Office 2016 lub Office 2013](../help-users.md).
 
-- Włącz (lub wyłącz) ochronę plików za pomocą Eksploratora plików systemu Windows: kliknij prawym przyciskiem myszy plik, pliki lub folder i wybierz polecenie **Klasyfikuj i chroń**. Aby zastosować zabezpieczenia skonfigurowane przez administratora, w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij pozycję **Wybierz szablon**, a następnie wskaż jeden z dostępnych szablonów.
+- (I usuwania ochrony) plików za pomocą Eksploratora plików Windows: Kliknij prawym przyciskiem myszy plik, pliki lub folder > **Klasyfikuj i Chroń**. Aby zastosować zabezpieczenia skonfigurowane przez administratora, w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij pozycję **Wybierz szablon**, a następnie wskaż jeden z dostępnych szablonów.
 
 - Wyświetlanie chronionych plików w Przeglądarce usługi Azure Information Protection.
 

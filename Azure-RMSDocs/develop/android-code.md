@@ -5,28 +5,28 @@ keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bf1958dca3c4c1c461fa7c66758a9a6f97377569
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8537a4a9e51b99e0dd37e7abc720473b364cd879
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147461"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173693"
 ---
 # <a name="android-code-examples"></a>Przykłady kodu dla systemu Android
 
 W tym artykule przedstawiono kod elementy dla zestawu RMS SDK w wersji dla systemu Android.
 
-**Uwaga** w tym artykule określenie _MSIPC_ (Microsoft Information Protection i kontroli) odwołuje się do procesu klienta.
+**Uwaga** w tym artykule określenie _MSIPC_ (Microsoft Information Protection i kontroli) odwołuje się do procesu klienta.
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Korzystanie z zestawu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
+## <a name="using-the-microsoft-rights-management-sdk42---key-scenarios"></a>Za pomocą programu Microsoft Rights Management SDK 4.2 — najważniejsze scenariusze
 
 Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują sposób użycia:
 
@@ -36,11 +36,11 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
 
 *MSIPCSampleApp* Przykładowa aplikacja jest dostępna do użycia z tym zestawem SDK dla systemu operacyjnego Android. Aby dowiedzieć się więcej, zobacz [rms — zestaw sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android).
 
-### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: korzystanie z pliku chronionego przez usługę RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: Używanie plików chronionych przez usługę RMS
 
-- **Krok 1**: tworzenie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx).
+- **Krok 1**: Tworzenie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx).
 
-    **Źródło**: *MsipcAuthenticationCallback.java*
+    **źródło**: *MsipcAuthenticationCallback.java*
 
     **Opis**: Utwórz wystąpienie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) object i implementowanie uwierzytelniania usługi.  Użyj [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758250.aspx) do pobrania tokenu przez przekazanie wystąpienia **AuthenticationRequestCallback**, jako parametr *mRmsAuthCallback*, aby MSIPC INTERFEJS API. Zobacz wywołanie [ProtectedFileInputStream.create](https://msdn.microsoft.com/library/dn790851.aspx) pod koniec sekcji przykładu kodu poniżej.
 
@@ -106,9 +106,9 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
 
 - **Krok 2**: Konfigurowanie uwierzytelniania za pomocą biblioteki uwierzytelniania usługi Active Directory (ADAL).
 
-    **Źródło**: *MsipcAuthenticationCallback.java*.
+    **źródło**: *MsipcAuthenticationCallback.java*.
 
-    **Opis**: ten krok używa biblioteki ADAL w celu zaimplementowania [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) z przykładowymi parametrami uwierzytelniania. Aby dowiedzieć się więcej, zobacz [usługi Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
+    **Opis**: Ten krok używa biblioteki ADAL w celu zaimplementowania [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) z przykładowymi parametrami uwierzytelniania. Aby dowiedzieć się więcej, zobacz [usługi Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx).
 
 
     ``` java
@@ -185,9 +185,9 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
                       }
     ```
 
-- **Krok 3**. Sprawdzenie, czy dla tego użytkownika z tą zawartością istnieje prawo **Edycja** za pomocą metody [UserPolicy.accessCheck](https://msdn.microsoft.comlibrary/dn790885.aspx).
+- **Krok 3**: Sprawdź, czy **Edytuj** po prawej stronie istnieje dla tego użytkownika z tą zawartością za pomocą [UserPolicy.accessCheck](https://msdn.microsoft.com/library/dn790885.aspx) metody.
 
-    **Źródło**: *TextEditorFragment.java*
+    **źródło**: *TextEditorFragment.java*
 
     ``` java
          //check if user has edit rights and apply enforcements
@@ -201,13 +201,13 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
     ```
 
 
-### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: Utwórz nowy plik chroniony za pomocą szablonu
 
 Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego w celu utworzenia zasady, a następnie tworzony i zapisywany jest nowy plik chroniony.
 
-- **Krok 1**. Pobranie listy szablonów za pomocą obiektu [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx).
+- **Krok 1**: Pobieranie listy szablonów za pomocą [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx) obiektu.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
     CreationCallback<List<TemplateDescriptor>> getTemplatesCreationCallback = new CreationCallback<List<TemplateDescriptor>>()
@@ -247,9 +247,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
       }
     ```
 
-- **Krok 2**. Utworzenie obiektu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) przy użyciu pierwszego szablonu na liście.
+- **Krok 2**: Tworzenie [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) przy użyciu pierwszego szablonu na liście.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
       CreationCallback<UserPolicy> userPolicyCreationCallback = new CreationCallback<UserPolicy>()
@@ -291,9 +291,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
       }
     ```
 
--  **Krok 3**. Utworzenie obiektu [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx) i zapisanie w nim zawartości.
+-  **Krok 3**: Tworzenie [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx) i zapisanie zawartości.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
     private void createPTxt(final byte[] contentToProtect)
@@ -355,11 +355,11 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
     ```
 
 
-### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: otwieranie niestandardowego pliku chronionego
+### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: Otwieranie niestandardowego pliku chronionego
 
-- **Krok 1**. Utworzenie obiektu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z elementu *serializedContentPolicy*.
+- **Krok 1**: Tworzenie [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z *serializedContentPolicy*.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
     CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
@@ -417,9 +417,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
     ```
 
 
-- **Krok 2**. Utworzenie obiektu [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) za pomocą obiektu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z **Kroku 1**.
+- **Krok 2**: Tworzenie [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) przy użyciu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z **kroku 1**.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
       CreationCallback<CustomProtectedInputStream> customProtectedInputStreamCreationCallback = new CreationCallback<CustomProtectedInputStream>()
@@ -488,9 +488,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
     }
     ```
 
-- **Krok 3**. Odczyt zawartości z obiektu [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) do parametru *mDecryptedContent*, a następnie zamknięcie.
+- **Krok 3**: Odczyt zawartości [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx) do *mDecryptedContent* Zamknij.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
     @Override
@@ -525,9 +525,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
 ### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>Scenariusz: Tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych
 
-- **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
+- **Krok 1**: Za pomocą adresu e-mail podanego przez użytkownika Utwórz deskryptor zasad.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) i [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx).
 
@@ -546,9 +546,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
     ```
 
 
-- **Krok 2**. Utworzenie niestandardowego obiektu [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z deskryptora zasad *selectedDescriptor*.
+- **Krok 2**: Utwórz niestandardową [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z deskryptora zasad *selectedDescriptor*.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
        mIAsyncControl = UserPolicy.create((PolicyDescriptor)selectedDescriptor,
@@ -556,9 +556,9 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
     ```
 
 
-- **Krok 3**. Utworzenie i zapisanie zawartości do obiektu [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx), a następnie zamknięcie.
+- **Krok 3**: Utworzenie i zapisanie zawartości do [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx) , a następnie zamknij.
 
-    **Źródło**: *MsipcTaskFragment.java*
+    **źródło**: *MsipcTaskFragment.java*
 
     ``` java
     File file = new File(filePath);

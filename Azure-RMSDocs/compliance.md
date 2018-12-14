@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96746e39d564c87471205fa442976a3904ddf992
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e6586c60934bf0db48295c3d9a7a40ece84f4ad2
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023825"
+ms.locfileid: "53068864"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Zgodność i dodatkowe informacje na temat usługi Azure Information Protection
 
@@ -39,17 +39,17 @@ Jednak niektóre istotne informacje, które mogą pomóc Twojej doradca prawny w
 
 ## <a name="legal-and-privacy"></a>Informacje prawne i ochrona prywatności
 
-- Aby uzyskać informacje o umowach Microsoft Azure: [umowę Microsoft Azure](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- Aby uzyskać informacje o umowie Microsoft Azure: [Umowa Microsoft Azure](https://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- Aby uzyskać informacje o ochronie prywatności Microsoft Azure: [Microsoft Azure — zasady zachowania poufności informacji](http://azure.microsoft.com/support/legal/privacy-statement/)
+- Aby uzyskać informacje o ochronie prywatności Microsoft Azure: [Zasady zachowania poufności informacji platformy Microsoft Azure](https://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>Zabezpieczenia, zgodność i inspekcja
 
 Zobacz sekcję dotyczącą [wymagań związanych z zabezpieczeniami, zgodnością i przepisami](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) w artykule [Jakie problemy rozwiązuje usługa Azure RMS?](./azure-rms-problems-it-solves.md), aby poznać informacje o poszczególnych certyfikatach usługi Azure Rights Management. Ponadto:
 
-- Zewnętrzne certyfikaty usługi Azure Information Protection: [Microsoft Azure Trust Center](http://azure.microsoft.com/support/trust-center/)
+- Zewnętrzne certyfikaty usługi Azure Information Protection: [Centrum zaufania Microsoft Azure](https://azure.microsoft.com/support/trust-center/)
 
-- Informacje dotyczące standardu FIPS 140: [FIPS 140 Validation](https://technet.microsoft.com/library/security/cc750357.aspx)
+- Aby uzyskać informacje ze standardem FIPS 140: [Standard FIPS 140 sprawdzania poprawności](https://technet.microsoft.com/library/security/cc750357.aspx)
 
 Szczegółowe informacje techniczne dotyczące sposobu działania technologii ochrony można znaleźć w temacie [Jak działa usługa Azure RMS](./how-does-it-work.md) 
 
@@ -63,7 +63,7 @@ Szczegółowe informacje techniczne dotyczące sposobu działania technologii oc
 
 ## <a name="documentation"></a>Dokumentacja
 
-- Dokumentacja usługi Azure Active Directory: [usługi Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
+- Dokumentacja usługi Azure Active Directory: [Usługa Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 
-- Dokumentacja pakietu usługi Office 365 Enterprise: [usługi Office 365](https://docs.microsoft.com/en-us/Office365/Enterprise/)
+- Dokumentacja pakietu usługi Office 365 Enterprise: [Office 365](https://docs.microsoft.com/en-us/Office365/Enterprise/)
 

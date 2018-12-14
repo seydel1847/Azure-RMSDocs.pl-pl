@@ -4,21 +4,21 @@ description: Dowiedz się, etykiety i ustawienia w zasadach usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fe091165db7df8a9e2321ad5f93e11e984086dc1
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: e66a2c117523eb01089881b8210f12ed2f657ed4
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027202"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304897"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Omówienie zasad usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Zasady usługi Azure Information Protection zawierają następujące elementy, które można skonfigurować:
     
@@ -49,7 +49,7 @@ Etykiety usługi Azure Information Protection może służyć dla pełnego zakre
 Możesz użyć domyślnych etykiet bez wprowadzania zmian, dostosować etykiety lub usunąć je, a także utworzyć nowe etykiety. Aby uzyskać pełne instrukcje, zobacz [Konfigurowanie zasad usługi Azure Information Protection](configure-policy.md).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykłady sposobów dostosowania zasad usługi Azure Information Protection i zobaczyć efekty dla użytkowników, wypróbuj następujące samouczki:
 

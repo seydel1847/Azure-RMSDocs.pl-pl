@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43bc10ce43a4ba7a26958e562c4acc6e245ad76a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 25471f9e047b4b3c1dac94cdf0856d7413de268a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024080"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173897"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>Ułatwienia dla użytkowników dotyczące ochrony plików za pomocą usługi Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej organizacji należy zapewnić pomoc i wskazówki dla użytkowników, administratorów i działu pomocy technicznej:
 
@@ -40,7 +40,7 @@ Po wdrożeniu i skonfigurowaniu usługi Azure Information Protection w Twojej or
     
 -   **Informacje dla działu pomocy**
     
-    Jeśli użytkownicy korzystają z klienta Azure Information Protection, Operatorzy pomocy technicznej mogą ich poprosić o użycie **Pomoc i opinie** opcję informacje, takie jak czy nie obsługuje ochrony i aktualnie zalogowanego jest wersja pakietu Office na koncie użytkownika. Ta opcja umożliwia również zbierać pliki dziennika i zresetować klienta. Aby uzyskać więcej informacji, zobacz w podręczniku administratora: [zainstalować sprawdzanie i rozwiązywanie problemów z](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting).
+    Jeśli użytkownicy korzystają z klienta Azure Information Protection, Operatorzy pomocy technicznej mogą ich poprosić o użycie **Pomoc i opinie** opcję informacje, takie jak czy nie obsługuje ochrony i aktualnie zalogowanego jest wersja pakietu Office na koncie użytkownika. Ta opcja umożliwia również zbierać pliki dziennika i zresetować klienta. Aby uzyskać więcej informacji zobacz w podręczniku administratora: [Zainstaluj sprawdzanie i rozwiązywanie problemów z](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting).
     
     W przypadku uprawnionych żądań pełnych praw dostępu do dokumentów chronionych upewnij się, że dział pomocy technicznej dysponuje procesami pozwalającymi na obsługę żądania za pomocą [funkcji administratora](configure-super-users.md) usługi Azure Rights Management. Na przykład tych żądań może pochodzić z działu prawnego lub Menedżera po odejściu pracownika z organizacji.
     
@@ -102,7 +102,7 @@ Prawa użytkowania są wyświetlane w górnej części dokumentu na transparenci
 
 1.  W programie Outlook utwórz wiadomość e-mail, która jest skierowana do odbiorcy w Twojej organizacji.
 
-2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej**, lub **\<nazwa firmy > — poufne**, lub **\<nazwa firmy > — poufne tylko do wyświetlania**.
+2.  Na karcie **OPCJE** kliknij pozycję **Uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej**, lub  **\<nazwa firmy > — poufne**, lub  **\<nazwa firmy > — poufne tylko wyświetlanie**.
 
 3.  Wyślij wiadomość.
 
@@ -114,7 +114,7 @@ Na przykład, jeśli wiadomość e-mail jest chroniona za pomocą opcji **Nie pr
 
 1.  W programie Outlook w sieci Web utwórz wiadomość e-mail zaadresowaną do odbiorcy w Twojej organizacji.
 
-2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Na przykład: **nie przesyłaj dalej** lub **nie odpowiadaj wszystkim**. Ewentualnie  **\<nazwa firmy > — poufne** lub  **\<nazwa firmy > — poufne tylko wyświetlanie**.
+2.  Kliknij pozycję **...**, kliknij pozycję **Ustaw uprawnienie**, a następnie wybierz opcję. Przykład: **Nie przesyłaj dalej** lub **nie Odpowiedz wszystkim**. Ewentualnie  **\<nazwa firmy > — poufne** lub  **\<nazwa firmy > — poufne tylko wyświetlanie**.
 
 3.  Wyślij wiadomość.
 

@@ -4,23 +4,23 @@ description: Instrukcje dotyczące aktywacji ochrony w witrynie Azure portal, ab
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82d1ee4267210b4fef989ab6a20385e24e2a8b35
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: cb90744828595b6cbf68962368fd001f3ca0eebd
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169893"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304829"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Jak aktywować usługę Azure Rights Management w witrynie Azure portal
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Użyj tych instrukcji, jeśli chcesz aktywować usługę Azure Rights Management (Azure RMS) w witrynie Azure portal.
 
@@ -30,7 +30,7 @@ Użyj tych instrukcji, jeśli chcesz aktywować usługę Azure Rights Management
     
     Jeśli jeszcze nie dostęp do bloku usługi Azure Information Protection przed, zobacz jednorazowe [dodatkowe kroki](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time) można dodać tego bloku do portalu.
     
-    Aby otworzyć blok usługi Azure Information Protection, konieczne jest posiadanie albo [planu usługi Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [planu usługi Office 365, obejmującego usługę Rights Management](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli masz jedną z tych subskrypcji, zobacz komunikat, którego nie można odnaleźć ważnej subskrypcji, [skontaktuj się z Microsoft Support](information-support.md#to-contact-microsoft-support) lub Użyj standardowych kanałów pomocy.
+    Aby otworzyć blok usługi Azure Information Protection, konieczne jest posiadanie albo [planu usługi Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [planu usługi Office 365, obejmującego usługę Rights Management](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli masz jedną z tych subskrypcji, zobacz komunikat, którego nie można odnaleźć ważnej subskrypcji, [skontaktuj się z Microsoft Support](information-support.md#to-contact-microsoft-support) lub Użyj standardowych kanałów pomocy.
 
 2. Znajdź **Zarządzaj** opcje menu, a następnie wybierz **Aktywacja ochrony**. 
     
@@ -39,6 +39,6 @@ Użyj tych instrukcji, jeśli chcesz aktywować usługę Azure Rights Management
 Po zakończeniu aktywacji Wyświetla pasek informacji **Aktywacja została zakończona pomyślnie**.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Wznów odczytu [Aktywacja usługi Azure Rights Management](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment).
 

@@ -4,22 +4,22 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d4e2af4a9123b7276f2afad6f0d41232f3555d62
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: 2ecb0376ac7d4d4ddd476e76a60053ff408e2bbd
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861187"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335544"
 ---
-# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Konfiguracje niestandardowe dla klienta usługi Azure Information Protection
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, systemu Windows Server 2012, Windows Server 2008 R2*
 
 Poniższe informacje służą do tworzenia zaawansowanych konfiguracji, które mogą być wymagane w przypadku określonych scenariuszy lub podzbiorów użytkowników podczas zarządzania klientem usługi Azure Information Protection.
 
@@ -39,7 +39,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 
 5. Upewnij się, że użytkownicy tych zasad, uruchom ponownie wszystkie otwarte wcześniej aplikacje pakietu Office.
 
-6. Jeśli nie potrzebujesz już danego ustawienia i chcesz przywrócić zachowanie domyślne: w bloku **Ustawienia zaawansowane** wybierz menu kontekstowe (**...**) obok ustawienia, które przestało być potrzebne, a następnie wybierz opcję **Usuń**. Następnie kliknij przycisk **Zapisz i Zamknij**.
+6. Jeśli już nie wymagają tego ustawienia i chcesz przywrócić zachowanie domyślne: Na **Zaawansowane ustawienia** bloku, wybierz menu kontekstowe (**...** ) obok ustawienia możesz nie są już potrzebne, a następnie wybierz **Usuń**. Następnie kliknij przycisk **Zapisz i Zamknij**.
 
 #### <a name="available-advanced-client-settings"></a>Dostępne zaawansowane ustawienia klienta
 
@@ -57,7 +57,7 @@ Niektóre z tych ustawień wymagają edycji rejestru. Inne korzystają z ustawie
 |ProcessUsingLowIntegrity|[Wyłącz poziom o niskiej integralności skanera](#disable-the-low-integrity-level-for-the-scanner)|
 |PullPolicy|[Obsługa odłączonych komputerów](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[Usuwanie nagłówków i stopek z innych rozwiązań etykietowania](#remove-headers-and-footers-from-other-labeling-solutions)|
-|ReportAnIssueLink|[Modyfikowanie adresu e-mail dla raportu, łącze problem](#modify-the-email-address-for-the-report-an-issue-link)|
+|ReportAnIssueLink|[Dodaj "Zgłoś problem" dla użytkowników](#add-report-an-issue-for-users)|
 |RunPolicyInBackground|[Włącz klasyfikacji, aby uruchomić w sposób ciągły w tle](#turn-on-classification-to-run-continuously-in-the-background)|
 |SyncPropertyName|[Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej](#label-an-office-document-by-using-an-existing-custom-property)|
 |SyncPropertyState|[Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej](#label-an-office-document-by-using-an-existing-custom-property)|
@@ -76,7 +76,7 @@ Niezależnie od tego ustawienia klienta usługi Azure Information Protection nad
 
 W środowisku produkcyjnym użytkownik nie ma zazwyczaj potrzeby logowania się jako inny użytkownik w przypadku korzystania z klienta usługi Azure Information Protection. Jednak jako administrator możesz potrzebować możliwości zalogowania się jako inny użytkownik podczas fazy testowania. 
 
-Aby sprawdzić, za pomocą którego konta nastąpiło logowanie, otwórz okno dialogowe **Microsoft Azure Information Protection**, uruchom aplikację pakietu Office i na karcie **Narzędzia główne** w grupie **Ochrona** kliknij opcję **Chroń**, a następnie kliknij przycisk **Pomoc i opinie**. Nazwa konta jest widoczna w sekcji **Stan klienta**.
+Możesz zweryfikować konto, które jest obecnie zalogowany za pomocą **Microsoft Azure Information Protection** okno dialogowe: Otwórz aplikację pakietu Office i na karcie Narzędzia główne w grupie **Ochrona** kliknij kolejno przyciski **Chroń** oraz **Pomoc i opinie**. Nazwa konta jest widoczna w sekcji **Stan klienta**.
 
 Pamiętaj także o sprawdzeniu wyświetlonej nazwy domeny konta użytego do zalogowania. Fakt, że logowanie następuje przy użyciu prawidłowej nazwy konta, ale niewłaściwej domeny, można łatwo przeoczyć. W przypadku użycia niewłaściwego konta może wystąpić problem z pobraniem zasad usługi Azure Information Protection albo nie będą widoczne oczekiwane etykiety lub zachowania.
 
@@ -111,17 +111,17 @@ Znajdź następującą nazwę wartości i ustaw dane wartości **0**:
 
 Ponadto należy sprawdzić, czy te komputery nie mają plik o nazwie **Policy.msip** w **%LocalAppData%\Microsoft\MSIP** folderu. Jeśli ten plik już istnieje, należy go usunąć. Ten plik zawiera zasady usługi Azure Information Protection i mogło zostać pobrane przed edytowania rejestru, czy klient usługi Azure Information Protection został zainstalowany z opcją pokaz.
 
-## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>Modyfikowanie adresu e-mail dla raportu, łącze problem
+## <a name="add-report-an-issue-for-users"></a>Dodaj "Zgłoś problem" dla użytkowników
 
-Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie ma zastosowanie tylko do wersji zapoznawczej wersji klienta usługi Azure Information Protection, ponieważ ogólnodostępnej wersji klienta nie są wyświetlane **zgłosić problem** łącza.
+Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. 
 
-Po wybraniu **zgłosić problem** link z **Pomoc i opinie** klienta okno dialogowe z wersji zapoznawczych klienta, domyślnie Microsoft adres jest wypełniony w wiadomości e-mail. Użyj następującego Zaawansowane ustawienia do modyfikowania tego adresu klienta. Na przykład określić `mailto:helpdesk@contoso.com` na adres e-mail pomocy technicznej. 
+Po określeniu następującego ustawienia klienta zaawansowanego, użytkownicy widzą **zgłosić problem** opcji, które można wybierać **Pomoc i opinie** klienta, okno dialogowe. Określ ciąg HTTP dla tego połączenia. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. 
 
 Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry:
 
 - Klucz: **ReportAnIssueLink**
 
-- Wartość:  **\<ciągu HTTP >**
+- Wartość: **\<Ciąg HTTP >**
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ukryj opcję menu Klasyfikuj i chroń w Eksploratorze plików systemu Windows
 
@@ -143,7 +143,7 @@ Można zapobiec monit logowania do usługi Azure Information Protection przy uż
     
         - Klucz: **PullPolicy**
         
-        - Wartość: **Fałsz**
+        - Wartość: **False**
     
     2. Pobierz zasady korzystając z tego ustawienia i zainstalować na komputerach, korzystając z instrukcji.
 
@@ -182,7 +182,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **DisableDNF**
 
-- Wartość: **True** Aby ukryć przycisk, lub **False** wyświetlać przycisk
+- Wartość: **Wartość true,** Aby ukryć przycisk, lub **False** wyświetlać przycisk
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>Być dostępne lub niedostępne opcje uprawnień niestandardowych dla użytkowników
 
@@ -194,7 +194,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **EnableCustomPermissions**
 
-- Wartość: **True** aby uwidocznić opcji uprawnień niestandardowych, lub **False** Aby ukryć tę opcję
+- Wartość: **Wartość true,** aby uwidocznić opcji uprawnień niestandardowych, lub **False** Aby ukryć tę opcję
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Trwałe ukrycie paska usługi Azure Information Protection
@@ -209,7 +209,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **EnableBarHiding**
 
-- Wartość: **Prawda**
+- Wartość: **True**
 
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Włącz zalecana klasyfikacja w programie Outlook
@@ -222,7 +222,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **OutlookRecommendationEnabled**
 
-- Wartość: **Prawda**
+- Wartość: **True**
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Ustaw różne etykiety domyślne dla programu Outlook
@@ -279,7 +279,7 @@ W wyniku tej konfiguracji po zastosowaniu etykiety do wiadomości e-mail, S/MIME
 
 Jeśli etykieta, którą określasz, jest skonfigurowany do ochrony usługi Rights Management w witrynie Azure portal, ochrony szyfrowania S/MIME zastępuje ochrony usługi Rights Management tylko w programie Outlook. Dla wszystkich pozostałych scenariuszach, które obsługuje etykietowania zostaną zastosowane ochrony usługi Rights Management.
 
-Etykiety, które mają być wyświetlane w programie Outlook w tylko, skonfigurować etykietę do stosowania jednej akcji zdefiniowane przez użytkownika z **nie przesyłaj dalej**, zgodnie z opisem w [Szybki Start: Konfigurowanie etykiety dla użytkowników w łatwy sposób chronić wiadomości e-mail zawierają poufne informacje](../quickstart-label-dnf-protectedemail.md).
+Etykiety, które mają być wyświetlane w programie Outlook w tylko, skonfigurować etykietę do stosowania jednej akcji zdefiniowane przez użytkownika z **nie przesyłaj dalej**, zgodnie z opisem w [Szybki Start: Konfigurowanie etykiety w celu użytkownikom łatwy sposób chronić wiadomości e-mail zawierające informacje poufne](../quickstart-label-dnf-protectedemail.md).
 
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>Usuń "Nie now" dla dokumentów, jeśli używasz obowiązkowego etykietowania
 
@@ -293,7 +293,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **PostponeMandatoryBeforeSave**
 
-- Wartość: **Fałsz**
+- Wartość: **False**
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>Włącz klasyfikacji, aby uruchomić w sposób ciągły w tle
 
@@ -313,7 +313,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **RunPolicyInBackground**
 
-- Wartość: **Prawda**
+- Wartość: **True**
 
 ## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>Nie Chroń pliki PDF przy użyciu standardu ISO do szyfrowania plików PDF
 
@@ -325,9 +325,9 @@ Jeśli potrzebujesz klienta, aby powrócić do zachowania w starszych wersjach k
 
 - Klucz: **EnablePDFv2Protection**
 
-- Wartość: **Fałsz**
+- Wartość: **False**
 
-Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera.
+Skanera usługi Azure Information Protection za pomocą nowego ustawienia należy ponownie uruchomić usługę skanera. Ponadto skaner będzie już chronić dokumenty PDF domyślnie. Jeśli chcesz, aby dokumenty PDF, które mają być chronione przez skaner, gdy EnablePDFv2Protection jest ustawiona na wartość False, należy najpierw [edytować rejestr](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner).
 
 Aby uzyskać więcej informacji na temat nowych szyfrowania plików PDF, zobacz wpis w blogu [nową obsługę szyfrowania plików PDF z Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757).
 
@@ -391,7 +391,7 @@ W wyniku tego w rejestrze obsługiwane są następujące scenariusze:
 
 Ta konfiguracja korzysta z [zaawansowanych ustawień klienta](#how-to-configure-advanced-client-configuration-settings-in-the-portal), które należy skonfigurować w witrynie Azure Portal. To ustawienie jest w wersji zapoznawczej i mogą ulec zmianie.
 
-Obecnie ta konfiguracja nie jest zgodny z ustawienie, aby [PDF ochrony plików przy użyciu standardu ISO do szyfrowania plików PDF](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption). Gdy używasz obu razem, ppdf ustawień, których nie można otworzyć plików przez plik Eksploratora, programu PowerShell lub skaner.
+Ta konfiguracja nie jest obecnie zgodna z nowe zachowanie domyślne, które chroni pliki PDF przy użyciu standardu ISO do szyfrowania plików PDF. W tym scenariuszu nie można otworzyć plików ppdf, przy użyciu Eksploratora plików, programu PowerShell lub skaner. Aby rozwiązać ten problem, należy użyć Zaawansowane ustawienia klienta dotyczącego [nie jest używany do szyfrowania plików PDF ISO standard](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption).
 
 Dokumenty pakietu Office i dokumentów PDF, które są oznaczone przez Secure Islands można relabel te dokumenty za pomocą etykiety usługi Azure Information Protection przy użyciu mapowania, który zdefiniujesz. Ta metoda jest również użyć do ponownego użycia etykiet z innych rozwiązań, w przypadku ich etykiet w dokumentach pakietu Office. 
 
@@ -400,7 +400,7 @@ Dokumenty pakietu Office i dokumentów PDF, które są oznaczone przez Secure Is
 
 Tej opcji konfiguracji nowej etykiety usługi Azure Information Protection jest stosowany przez klienta usługi Azure Information Protection w następujący sposób:
 
-- W przypadku dokumentów pakietu Office: po otwarciu dokumentu w aplikacji klasycznej, Nowa etykieta usługi Azure Information Protection jest wyświetlana jako zestawu i jest stosowana, gdy dokument zostanie zapisany.
+- W przypadku dokumentów pakietu Office: Po otwarciu dokumentu w aplikacji klasycznej, Nowa etykieta usługi Azure Information Protection jest wyświetlana jako zestawu i jest stosowana, gdy dokument zostanie zapisany.
 
 - W Eksploratorze plików: W oknie dialogowym usługi Azure Information Protection nowej etykiety usługi Azure Information Protection jest wyświetlana jako zestawu i jest stosowana, gdy użytkownik wybierze **Zastosuj**. Jeśli użytkownik wybierze **anulować**, Nowa etykieta nie została zastosowana.
 
@@ -431,7 +431,7 @@ W tym przykładzie:
 Zaawansowane ustawienia klienta:
 
     
-|Nazwa|Wartość|
+|Name (Nazwa)|Wartość|
 |---------------------|---------|
 |LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c, "Secure Islands etykiety są poufne", klasyfikacji, poufne|
 
@@ -448,12 +448,12 @@ W tym przykładzie:
 Zaawansowane ustawienia klienta:
 
     
-|Nazwa|Wartość|
+|Name (Nazwa)|Wartość|
 |---------------------|---------|
 |LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f, "Secure Islands etykiety jest wrażliwa na", klasyfikacji, liter|
 
 
-### <a name="example-3-many-to-one-mapping-of-label-names"></a>Przykład 3: Wiele do jednego mapowania nazw etykiet
+### <a name="example-3-many-to-one-mapping-of-label-names"></a>Przykład 3: Mapowanie wiele do jednego nazwy etykiet
 
 Dwie etykiety Secure Islands, które zawierają słowo "Wewnętrzna", i chcesz, aby dokumenty, które mają jedną z tych etykiet Secure Islands relabeled jako "Ogólne" w usłudze Azure Information Protection.
 
@@ -466,7 +466,7 @@ W tym przykładzie:
 Zaawansowane ustawienia klienta:
 
     
-|Nazwa|Wartość|
+|Name (Nazwa)|Wartość|
 |---------------------|---------|
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d, "Secure Islands etykieta zawiera wewnętrzne" klasyfikacji. \*Wewnętrznego.\*|
 
@@ -485,7 +485,7 @@ Ponieważ dopasowanie wzorca wpływa na wydajność dla użytkowników, zaleca s
 
 - Klucz: **RemoveExternalContentMarkingInApp**
 
-- Wartość: \< **aplikacji pakietu Office typy WXP**> 
+- Wartość: \<**Typy aplikacji pakietu Office WXP**> 
 
 Przykłady:
 
@@ -501,15 +501,15 @@ Po określeniu wartość ciągu dla **ExternalContentMarkingToRemove** klucza, m
 
 - Częściowe dopasowanie, aby usunąć wszystkie elementy w nagłówku lub stopce.
     
-    Przykład: W nagłówkach i stopkach strony zawierają ciąg **Usuń tekst**. Chcesz całkowicie usunąć tych nagłówkach i stopkach strony. Określ wartość: `*TEXT*`.
+    Przykład: Nagłówków i stopek zawierają ciąg **Usuń tekst**. Chcesz całkowicie usunąć tych nagłówkach i stopkach strony. Określ wartość: `*TEXT*`.
 
 - Pełne dopasowanie, aby usunąć tylko określone słowa w nagłówku lub stopce.
     
-    Przykład: W nagłówkach i stopkach strony zawierają ciąg **Usuń tekst**. Chcesz usunąć wyraz **tekstu** , dlatego nagłówka lub stopki ciągu jako **Aby usunąć**. Określ wartość: `TEXT `.
+    Przykład: Nagłówków i stopek zawierają ciąg **Usuń tekst**. Chcesz usunąć wyraz **tekstu** , dlatego nagłówka lub stopki ciągu jako **Aby usunąć**. Określ wartość: `TEXT `.
 
 - Pełne dopasowanie, aby usunąć wszystkie elementy w nagłówku lub stopce.
     
-    Przykład: W nagłówkach i stopkach strony zawiera ciągu **Usuń tekst**. Chcesz usunąć w nagłówkach i stopkach stron, które mają dokładnie tego ciągu. Określ wartość: `^TEXT TO REMOVE$`.
+    Przykład: Nagłówków i stopek zawiera ciągu **Usuń tekst**. Chcesz usunąć w nagłówkach i stopkach stron, które mają dokładnie tego ciągu. Określ wartość: `^TEXT TO REMOVE$`.
     
 
 Dopasowywania do wzorca dla ciągu znaków nie uwzględnia wielkości liter. Maksymalna długość ciągu to 255 znaków.
@@ -532,11 +532,11 @@ Aby usunąć stopką multline, należy utworzyć dwa następujące wpisy:
 
 - Klucz 1: **ExternalContentMarkingToRemove**
 
-- Wartość klucza 1:  **\*poufne***
+- Wartość klucza 1: **\*Poufne***
 
 - Klucz 2: **ExternalContentMarkingToRemove**
 
-- Wartość klucza 2:  **\*etykietę*** 
+- Wartość klucza 2: **\*Etykietę*** 
 
 #### <a name="optimization-for-powerpoint"></a>Optymalizacja dla programu PowerPoint
 
@@ -556,7 +556,7 @@ Przykład: Jest nazwa kształtu **fc**. Aby usunąć kształt o tej nazwie, nale
 
 - Klucz: **PowerPointShapeNameToRemove**
 
-- Wartość: \< **nazwę kształtu programu PowerPoint**> 
+- Wartość: \<**Nazwę kształtu programu PowerPoint**> 
 
 Jeśli masz więcej niż jeden kształtu programu PowerPoint, aby usunąć, utwórz tyle **PowerPointShapeNameToRemove** klucze mają kształty do usunięcia. Dla każdego wpisu określić nazwę kształtu do usunięcia.
 
@@ -564,7 +564,7 @@ Domyślnie tylko wzorca slajdów są sprawdzane w nagłówkach i stopkach stron.
 
 - Klucz: **RemoveExternalContentMarkingInAllSlides**
 
-- Wartość: **Prawda**
+- Wartość: **True**
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>Etykieta dokumentu pakietu Office przy użyciu istniejącej właściwości niestandardowej
 
@@ -611,7 +611,7 @@ Aby skonfigurować zaawansowane ustawienia tak, aby skaner uruchamiana z poziome
 
 - Klucz: **ProcessUsingLowIntegrity**
 
-- Wartość: **Fałsz**
+- Wartość: **False**
 
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>Integracja z klasyfikacją wiadomości programu Exchange dla rozwiązań etykietowania urządzeń przenośnych
@@ -622,11 +622,11 @@ W tym celu:
 
 1. Użyj polecenia cmdlet [New-MessageClassification](https://technet.microsoft.com/library/bb124400) środowiska PowerShell programu Exchange w celu utworzenia klasyfikacji wiadomości z właściwością Name, która mapuje do nazw etykiet użytkownika w zasadach usługi Azure Information Protection. 
 
-2. Tworzenie reguły przepływu poczty programu Exchange dla każdej etykiety: Zastosuj regułę, jeśli właściwości wiadomości obejmują skonfigurowaną przez Ciebie klasyfikację, a następnie zmodyfikuj właściwości wiadomości, aby ustawić nagłówek wiadomości. 
+2. Utwórz reguły przepływu poczty programu Exchange dla każdej etykiety: Zastosuj regułę, jeśli właściwości wiadomości obejmują skonfigurowaną przez Ciebie klasyfikację, a następnie zmodyfikuj właściwości wiadomości, aby ustawić nagłówek wiadomości. 
 
      Informacje, jakie należy określić dla nagłówka wiadomości, można zidentyfikować, sprawdzając nagłówki internetowe wiadomości e-mail wysłanej i sklasyfikowanej za pomocą etykiety usługi Azure Information Protection. Wyszukaj nagłówek **msip_labels** i ciąg, który następuje zaraz po nim, łącznie ze średnikiem. Przykład:
     
-    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
+    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled = True;**
     
     Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Przykład:
     
@@ -642,14 +642,14 @@ Przed testowaniem tej konfiguracji należy pamiętać, że często występuje op
 
 - Jeśli mają zainstalowanego klienta usługi Azure Information Protection adresatów wewnętrznych wyświetlają wiadomość e-mail w programie Outlook, widzą przypisane etykiety usługi Azure Information Protection. 
 
-Jeśli etykiety usługi Azure Information Protection zastosowania ochrony, Dodaj tę ochronę do konfiguracji reguły: wybierając opcję modyfikacji zabezpieczeń wiadomości, Zastosuj ochronę praw, a następnie wybierz szablon usług RMS lub opcję nie przesyłaj dalej.
+Jeśli etykiety usługi Azure Information Protection zastosowania ochrony, Dodaj tę ochronę do konfiguracji reguły: Wybierając opcję modyfikacji zabezpieczeń wiadomości, Zastosuj ochronę praw, a następnie wybierz szablon usług RMS lub opcję nie przesyłaj dalej.
 
 Można również skonfigurować reguły przepływu poczty na potrzeby mapowania odwrotnego. Po wykryciu etykiety usługi Azure Information Protection ustaw odpowiednią klasyfikację wiadomości programu Exchange:
 
-- Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli **msip_labels** nagłówek zawiera nazwę Twojej etykiety (na przykład **ogólne**) i stosować wiadomości Klasyfikacja, który jest mapowany do tej etykiety.
+- Dla każdej etykiety usługi Azure Information Protection: Utwórz reguły przepływu poczty, która będzie stosowana, jeśli **msip_labels** nagłówek zawiera nazwę Twojej etykiety (na przykład **ogólne**) i Zastosuj klasyfikację wiadomości mapowaną do tej etykiety.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po dostosowaniu klienta usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi, które mogą być przydatne podczas obsługi tego klienta:
 
 - [Rejestrowanie plików i użycia klienta](client-admin-guide-files-and-logging.md)

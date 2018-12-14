@@ -4,40 +4,40 @@ description: Jeśli usługa Active Directory Rights Management Services (AD RMS)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a848a2a9f7f1555670385e4d38ba19fe0ce2235
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4cc6c6920b7297ea7b4327233ef285f3c4835cc2
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024112"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305611"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Porównanie usług Azure Information Protection i AD RMS
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Jeśli jest Ci znana lub była wcześniej wdrażana Active Directory Rights Management Services (AD RMS), być może zastanawiasz się, porównanie usługi Azure Information Protection pod kątem funkcjonalności i wymagań jako rozwiązania do ochrony informacji.
 
 Niektóre główne różnice związane z usługą Azure Information Protection:
 
-- **Brak wymaganej infrastruktury serwerów**: Azure Information Protection nie wymaga dodatkowych serwerów ani certyfikatów PKI, których potrzebuje usług AD RMS, ponieważ Microsoft Azure dba o tych dla Ciebie. Dzięki temu to rozwiązanie w chmurze jest szybsze do wdrożenia i łatwiejsze w utrzymaniu.
+- **Brak wymaganej infrastruktury serwerów**: Usługa Azure Information Protection nie wymaga dodatkowych serwerów ani certyfikatów PKI, których potrzebuje usług AD RMS, ponieważ Microsoft Azure dba o tych dla Ciebie. Dzięki temu to rozwiązanie w chmurze jest szybsze do wdrożenia i łatwiejsze w utrzymaniu.
 
-- **Uwierzytelnianie oparte na chmurze**: usługa Azure Information Protection używa usługi Azure AD do uwierzytelniania, zarówno w przypadku użytkowników wewnętrznych, jak i użytkowników z innych organizacji. Oznacza to, że użytkowników mobilnych można uwierzytelnić nawet wtedy, gdy nie są oni połączeni z siecią wewnętrzną, i łatwiej można udostępnić chronioną zawartość użytkownikom z innych organizacji. Wiele organizacji ma już konta użytkowników w usłudze Azure AD, ponieważ działają na nich usługi platformy Azure lub usługa Office 365. Ale jeśli nie, usługa RMS dla użytkowników indywidualnych umożliwia użytkownikom tworzenie bezpłatnego konta lub konta Microsoft, może służyć do [aplikacje, które obsługują uwierzytelnianie usługi Azure Information Protection](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents). Do udostępniania chronionej zawartości usług AD RMS innej organizacji wymagane jest skonfigurowanie relacji jawnego zaufania z każdą organizacją.
+- **Uwierzytelnianie oparte na chmurze**: Usługa Azure Information Protection używa usługi Azure AD do uwierzytelniania, zarówno w przypadku użytkowników wewnętrznych, jak i użytkowników z innych organizacji. Oznacza to, że użytkowników mobilnych można uwierzytelnić nawet wtedy, gdy nie są oni połączeni z siecią wewnętrzną, i łatwiej można udostępnić chronioną zawartość użytkownikom z innych organizacji. Wiele organizacji ma już konta użytkowników w usłudze Azure AD, ponieważ działają na nich usługi platformy Azure lub usługa Office 365. Ale jeśli nie, usługa RMS dla użytkowników indywidualnych umożliwia użytkownikom tworzenie bezpłatnego konta lub konta Microsoft, może służyć do [aplikacje, które obsługują uwierzytelnianie usługi Azure Information Protection](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents). Do udostępniania chronionej zawartości usług AD RMS innej organizacji wymagane jest skonfigurowanie relacji jawnego zaufania z każdą organizacją.
 
-- **Wbudowana obsługa urządzeń przenośnych**: aby usługa Azure RMS obsługiwała urządzenia przenośne i komputery Mac, nie trzeba wprowadzać żadnych zmian wdrożenia. Aby obsługiwać te urządzenia za pomocą usług AD RMS, należy zainstalować rozszerzenie dla urządzeń przenośnych, skonfigurować usługi AD FS na potrzeby federacji i utworzyć dodatkowe rekordy publicznej usługi DNS.
+- **Wbudowana obsługa urządzeń przenośnych**: Aby usługa Azure RMS obsługiwała urządzenia przenośne i komputery Mac są wymagane żadne zmiany wdrożenia. Aby obsługiwać te urządzenia za pomocą usług AD RMS, należy zainstalować rozszerzenie dla urządzeń przenośnych, skonfigurować usługi AD FS na potrzeby federacji i utworzyć dodatkowe rekordy publicznej usługi DNS.
 
-- **Szablony domyślne**: Azure Information Protection tworzy dwa szablony domyślne, zaraz po aktywacji usługi ochrony, który można łatwo natychmiast objąć ochroną ważne dane. Usługa AD RMS nie ma szablonów domyślnych.
+- **Szablony domyślne**: Usługa Azure Information Protection tworzy dwa szablony domyślne, zaraz po aktywacji usługi ochrony, który można łatwo natychmiast objąć ochroną ważne dane. Usługa AD RMS nie ma szablonów domyślnych.
 
-- **Szablony działów**: usługa Azure Information Protection obsługuje szablony działów jako ustawienie konfiguracji dodatkowych tworzonych szablonów. Ta konfiguracja pozwala określić podzbiór użytkowników, aby wyświetlić określone szablony w aplikacjach klienckich. Ograniczenie liczby szablonów, które użytkownicy zobaczą sprawia, że jest ona łatwiej wybrać prawidłowe zasady zdefiniowane dla różnych grup użytkowników. Usługi AD RMS nie obsługują szablonów działów.
+- **Szablony dla działów**: Usługa Azure Information Protection obsługuje szablony działów jako ustawienie konfiguracji dodatkowych tworzonych szablonów. Ta konfiguracja pozwala określić podzbiór użytkowników, aby wyświetlić określone szablony w aplikacjach klienckich. Ograniczenie liczby szablonów, które użytkownicy zobaczą sprawia, że jest ona łatwiej wybrać prawidłowe zasady zdefiniowane dla różnych grup użytkowników. Usługi AD RMS nie obsługują szablonów działów.
 
-- **Śledzenie i odwoływanie dokumentów**: usługa Azure Information Protection obsługuje te funkcje przy użyciu klienta usługi Azure Information Protection. Usługa AD RMS nie zapewnia obsługi tych funkcji.
+- **Śledzenie i odwoływanie dokumentów**: Usługa Azure Information Protection obsługuje te funkcje przy użyciu klienta usługi Azure Information Protection, natomiast Usługa AD RMS nie zapewnia.
 
-- **Klasyfikacja i etykietowanie**: usługa Azure Information Protection obsługuje te funkcje przy użyciu klienta usługi Azure Information Protection zintegrowanego z aplikacjami pakietu Office i Eksploratorem plików, natomiast usługa AD RMS nie zapewnia obsługi tych funkcji.
+- **Klasyfikacja i etykietowanie**: Usługa Azure Information Protection obsługuje te funkcje przy użyciu klienta usługi Azure Information Protection, która integruje się z aplikacjami pakietu Office i Eksploratorem plików, natomiast Usługa AD RMS nie zapewnia.
 
 
 Ponadto — ponieważ usługa Azure Information Protection to usługa w chmurze — może ona dostarczać nowe funkcje i poprawki szybciej niż lokalne rozwiązanie oparte na serwerze. W systemie Windows Server 2016 nie są planowane żadne nowe funkcje usług AD RMS.
@@ -53,7 +53,7 @@ Aby uzyskać więcej szczegółowych informacji i inne różnice skorzystaj z po
 |Automatycznie włącza bezpiecznej współpracy nad dokumentami z dowolnej organizacji, która również używa usługi Azure AD do uwierzytelniania. Oznacza to, że organizacje będą mogli chronić dokumenty, które współużytkują one wewnętrznie lub z innymi organizacjami.|Bezpiecznej współpracy nad dokumentami spoza organizacji wymaga uwierzytelniania zaufania jawnie zdefiniowanych w bezpośredniej relacji point-to-point między dwiema organizacjami. Należy skonfigurować zaufanych domen użytkowników (TUD) lub federacyjnych relacji zaufania, które tworzysz przy użyciu usługi Active Directory Federation Services (AD FS).|
 |Wysłać chronioną wiadomość e-mail (opcjonalnie, za pomocą załączników dokumentu pakietu Office, które są automatycznie chronione) do użytkowników, gdy istnieje relacja zaufania uwierzytelniania. W tym scenariuszu jest możliwe przy użyciu Federacji dostawców sieci społecznościowych lub jednorazowy kod dostępu i przeglądarki sieci web do wyświetlenia.|Nie obsługuje wysyłanie chronionych wiadomości e-mail, gdy istnieje relacja zaufania uwierzytelniania.|
 |Udostępnia dwa domyślne szablony zasad praw, które ograniczają dostęp do zawartości do organizacji użytkownika. Jeden szablon umożliwia przeglądanie chronionej zawartości w trybie tylko do odczytu, a drugi oferuje uprawnienia do zapisu lub modyfikowania chronionej zawartości.<br /><br />Można również utworzyć własne szablony niestandardowe, które obejmują szablony dla działów, które są widoczne tylko dla podzbioru użytkowników. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|Brak szablonów domyślną; należy utworzyć, a następnie dystrybucję własnych szablonów. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące szablonów zasad AD RMS](https://go.microsoft.com/fwlink/?LinkId=154765).<br /><br />Ponadto użytkownicy mogą definiować własne zestawy uprawnień, jeśli szablony są niewystarczające.|
-|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta Azure Information Protection](./rms-client/aip-client.md) lub aplikację RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: obsługiwany|
+|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010, który wymaga [klienta Azure Information Protection](./rms-client/aip-client.md) lub aplikację RMS sharing.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: Obsługiwane|Minimalna obsługiwana wersja pakietu Microsoft Office to Office 2010.<br /><br />Microsoft Office dla komputerów Mac:<br /><br />– Microsoft Office dla komputerów Mac 2016: Obsługiwane|
 |Obsługuje [klienta usługi Azure Information Protection](./rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i Windows Phone, nadal są obsługiwane przez aplikację RMS sharing.<br /><br />Ponadto klient usługi Azure Information Protection obsługuje następujące funkcje i elementy:<br /><br />– Udostępnianie informacji osobom w innej organizacji.<br /><br />– Witryna śledzenia dokumentów dla użytkowników z możliwością odwoływania dokumentu.|Obsługuje [klienta usługi Azure Information Protection](./rms-client/aip-client.md) dla systemów Windows, iOS i Android. Komputery Mac i urządzenia Windows Phone w dalszym ciągu są obsługiwane przez aplikację RMS sharing. Udostępnianie nie dotyczy jednak użytkowników w innej organizacji ani witryny śledzenia dokumentów z możliwością odwoływania dokumentu.|
 |Korzystając z klienta usługi Azure Information Protection, można klasyfikować i chronić większość [typów plików](./rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](./requirements-applications.md).|Korzystając z klienta usługi Azure Information Protection, można klasyfikować większość [typów plików](./rms-client/client-admin-guide-file-types.md).<br /><br />W przypadku innych aplikacji zapoznaj się z tabelą w artykule [Aplikacje, które obsługują ochronę danych usługi Azure Rights Management](./requirements-applications.md).|
 |Minimalna obsługiwana wersja klienta Windows to Windows 7 z dodatkiem SP1.|Minimalna obsługiwana wersja klienta Windows to Windows 7 z dodatkiem SP1.|
@@ -70,10 +70,10 @@ Zarówno usługi Azure Information Protection i AD RMS używają szyfrowania AES
 
 Usługa Azure Information Protection jest zgodna z trybem FIPS 140-2, gdy dzierżawy rozmiar klucza to 2048 bitów, co jest ustawieniem domyślnym, po aktywowaniu usługi Azure Rights Management. 
 
-Aby uzyskać więcej informacji na temat formantów kryptograficznych, zobacz temat [Formanty kryptograficzne używane przez usługę Azure RMS: algorytmy i długości kluczy](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
+Aby uzyskać więcej informacji na temat formantów kryptograficznych, zobacz [formanty kryptograficzne używane przez usługę Azure RMS: Algorytmy i długości kluczy](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths).
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Jeśli chcesz przeprowadzić migrację z usługi AD RMS do usługi Azure Information Protection, zobacz [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)
 
 

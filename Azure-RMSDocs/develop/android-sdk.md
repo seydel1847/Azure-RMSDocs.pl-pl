@@ -1,6 +1,6 @@
 ---
 title: Konfiguracja systemu Android | Azure RMS
-description: Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usług Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach.
+description: Aplikacje systemu android mogą korzystać Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w swoich aplikacjach.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,16 +12,16 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d6a851cc5568b14b1f18ad71169b2c0e6efc136b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 242700c089e34bc69eef10a45ea761f9668f4a42
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147529"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266651"
 ---
 # <a name="android-setup"></a>Konfiguracja systemu Android
 
-Aplikacje systemu Android mogą korzystać z zestawu SDK 4.2 usługi Microsoft Rights Management do włączenia zintegrowanej ochrony informacji w aplikacjach przy użyciu usługi Azure Active Directory Rights Management (AAD RM).
+Aplikacje systemu android mogą korzystać Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w swoich aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).
 
 Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzenia nowych własnych aplikacji.
 
@@ -34,36 +34,36 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 
 Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 
--   System operacyjny Windows lub OS X, umożliwiający uruchamianie środowiska deweloperskiego [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
+-   System operacyjny Windows lub OS X, umożliwiający uruchamianie środowiska deweloperskiego [Eclipse](https://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html).
 -   W tym przewodniku założono, że korzystasz z zestawu Eclipse SDK w wersji Eclipse Juno 4.2 lub nowszej i instalacji domyślnej.
 -   Środowisko Java 1.6 lub nowsze.
--   [Dodatek Android Developer Tools (ADT) Plugin](http://developer.android.com/sdk/installing/index.html). UWAGA — Ukończenie instalacji może wymagać ponownego uruchomienia aplikacji Eclipse.
+-   [Dodatek Android Developer Tools (ADT) Plugin](https://developer.android.com/studio/install). UWAGA — Ukończenie instalacji może wymagać ponownego uruchomienia aplikacji Eclipse.
 
-     
+     
 
--   Pakiet SDK 4.2 usługi MS RMS dla systemu Android. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
+-   Pakiet MS RMS SDK 4.2 dla systemu Android. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
 
     Ten zestaw SDK umożliwia tworzenie aplikacji dla systemu Android 4.0.3 (API level 15) i nowszych.
 
--   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
+-   Biblioteka uwierzytelniania: Firma Microsoft zaleca użycie [usługi Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
 
     Aby uzyskać więcej informacji, zobacz [Biblioteka ADAL dla systemu Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
-    **Uwaga**  Jeśli Twoja aplikacja nie będzie korzystać z biblioteki ADAL jako biblioteki uwierzytelniania OAuth 2.0, należy zapoznać się z przewodnikiem [Some SecureRandom Thoughts (Kilka przemyśleń na temat klasy SecureRandom)](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html) dla systemu Android.
+    **Uwaga**  Jeśli aplikacja nie będzie korzystać z biblioteki ADAL jako biblioteki uwierzytelniania OAuth 2.0, należy przejrzeć te wskazówki dla systemu Android, [niektóre uwag SecureRandom](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html).
 
-     
+     
 
 Temat [Nowości](release-notes.md) zawiera informacje na temat aktualizacji interfejsu API, informacje o wersji i często zadawane pytania.
 
-## <a name="optional"></a>Opcjonalne
+## <a name="optional"></a>Optional
 
 Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego użytku do operacji konsumenckich i zabezpieczających dla deweloperów, którzy nie chcą tworzyć własnego interfejsu użytkownika — [Biblioteka interfejsów użytkownika i przykładowa aplikacja dla systemu Android](https://github.com/AzureAD/rms-sdk-ui-for-android).
 
 ## <a name="configuring-your-development-environment"></a>Konfigurowanie środowiska deweloperskiego
 
-**Uwaga**  Wersja zapoznawcza zestawu SDK 4.2 usługi MS RMS: w tej wersji zapoznawczej nie uaktualniono zrzutów ekranu (nie zmieniono nazw ścieżek z com/microsoft/protection na com/microsoft/rightsmanagment). Tekst został jednak zaktualizowany.
+**Uwaga**  zestaw MS RMS SDK 4.2 w wersji zapoznawczej: W tej wersji zapoznawczej Aby wyświetlić zmiany w zmieniono nazw ścieżek z com/microsoft/protection na com/microsoft/rightsmanagment nie zostały zaktualizowane zrzuty ekranu. Tekst został jednak zaktualizowany.
 
- 
+ 
 -   Otwórz środowisko deweloperskie Eclipse.
 -   Aby utworzyć nowy projekt aplikacji systemu Android, w menu **Plik** kliknij pozycję **New** (Nowy), kliknij pozycję **Project** (Projekt), a następnie wybierz pozycję **Android Application Project** (Projekt aplikacji dla systemu Android).
 
@@ -117,7 +117,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 -   Kliknij przycisk **OK**.
 
-    Zestaw SDK 4.2 usługi MS RMS łączy się z usługą AAD RM, w związku z czym aplikacja musi mieć uprawnienia **INTERNET** i **ACCESS\_NETWORK\_STATE**. W tym celu otwórz plik *AndroidManifest.xml* w folderze głównym projektu.
+    Ponieważ zestaw SDK 4.2 usługi MS RMS łączy się z usługi AAD RM, aplikacja musi mieć uprawnienia **INTERNET** i **dostępu\_sieci\_stanu**. W tym celu otwórz plik *AndroidManifest.xml* w folderze głównym projektu.
 
     Aby dodać uprawnienia, kliknij przycisk **Add** (Dodaj) i wybierz pozycję **Uses Permissions** (Używa uprawnień).
 
@@ -134,7 +134,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
     <uses-permission/>
    ```
 
-**Uwaga**  Zestaw SDK używa uprawnienia *android.support.v4*
+**Uwaga**  zestaw SDK używa *android.support.v4*
 
 -   Teraz można przystąpić do tworzenia własnych nowych aplikacji dla systemu Android.
 

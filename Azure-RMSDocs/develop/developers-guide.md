@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 54eaa9819ce1bffd85bb11b7e1936abacbd5457b
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 122a7b3c8614e8f5a18b1a2a87d4d673d5dae049
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473804"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266719"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Przewodnik dewelopera usługi Azure Information Protection
 
@@ -82,7 +82,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Korzystanie ze śledzenia dokumentów (użytkownik)](how-to-use-document-tracking.md)
 - [Odnawianie klucza symetrycznego w usłudze Azure Information Protection](how-to-renew-symmetric-key.md)
 
-### <a name="security-and-authentication"></a>Tożsamość i uwierzytelnianie
+### <a name="security-and-authentication"></a>Zabezpieczenia i uwierzytelnianie
 
 - [Konfigurowanie aplikacji usługi programu na potrzeby logowania do usługi Azure Active Directory](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
 - [Korzystanie z uwierzytelniania usługi Azure Active Directory (ADAL)](how-to-use-adal-authentication.md)
@@ -105,8 +105,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 ## <a name="other-resources"></a>Inne zasoby
 
 - [Przewodnik po najlepszych rozwiązaniach w zakresie zabezpieczeń](security-guidelines.md)
-- [RMS Developer's Corner (blog)](https://blogs.msdn.microsoft.com/rms/) (Blog kącika deweloperów usług RMS)
-- [Często zadawane pytania dotyczące usługi Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs)
+- [Często zadawane pytania dotyczące usługi Azure Information Protection](/azure/information-protection/faqs)
 
 ### <a name="support-articles"></a>Artykuły pomocy technicznej
 
@@ -132,7 +131,7 @@ Każdy z poniższych tematów przedstawia konkretne wskazówki dotyczące poszcz
 - [Dokumentacja interfejsu API systemu Windows Phone i Sklepu Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 - [Dokumentacja interfejsu API systemu iOS/OSX](https://msdn.microsoft.com/library/dn758306.aspx)
 - [Dokumentacja interfejsu API systemu Android](https://msdn.microsoft.com/library/dn758245.aspx)
-- [Dokumentacja interfejsu API systemu Linux](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)
+- [Dokumentacja interfejsu API systemu Linux](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
 ### <a name="previous-versions"></a>Poprzednie wersje
 

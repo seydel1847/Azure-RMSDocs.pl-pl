@@ -4,29 +4,29 @@ description: Informacje i instrukcje dla administratorów dotyczące konfigurowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c87dc5692afff775069ec468438edddbeb61ac3e
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 83f633ff1051a5d54c7254b35e89403de2e53277
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024216"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319435"
 ---
 # <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online do korzystania z usługi Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Ponieważ usługi Office 365 natywnie obsługuje usługę Azure Rights Management z usługi Azure Information Protection, żadna konfiguracja komputera klienckiego jest wymagany do obsługi funkcji information rights management (IRM) dla aplikacji, takich jak Word, Excel, PowerPoint, Outlook i Outlook w sieci web. Wszyscy użytkownicy muszą wykonać, zaloguj się w swoich aplikacjach pakietu Office przy użyciu swoich poświadczeń usługi Rights Management. Następnie mogą chronić pliki i wiadomości e-mail i używać plików i wiadomości e-mail, które są chronione przez innych użytkowników.
 
-Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz temat [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-client.md).
+Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz [klienta Azure Information Protection: Instalacja i konfiguracja dla klientów](configure-client.md).
 
 ## <a name="exchangeonline-irm-configuration"></a>Usługa Exchange Online: Konfiguracja usługi IRM
-Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [Exchange Online i Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) w sekcji **Poznawanie i eksplorowanie**.
+Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [usługi Exchange Online i Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) sekcja [Office jak aplikacje i usługi obsługują usługę Azure Rights Zarządzanie](office-apps-services-support.md).
 
 Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Management. Aby sprawdzić, uruchom następujące polecenia:
 
@@ -66,9 +66,9 @@ Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Manag
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    Na przykład: **Test-IRMConfiguration -Sender  adams@contoso.com**
+    Przykład: **Test-IRMConfiguration-Sender  adams@contoso.com**
     
-    To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell będą widoczne wyniki wszystkich testów, a na koniec — jeśli testy zakończą się pomyślnie — zostanie wyświetlona informacja **WYNIK OGÓLNY: POZYTYWNY**.
+    To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell zobaczysz wyniki każdego z nich, a na koniec, jeśli testy zakończą się pomyślnie kontrole: **OGÓLNY WYNIK: — DOSTĘP PRÓBNY**
 
 Włączenie usługi Exchange Online do korzystania z usługi Azure Rights Management, można skonfigurować funkcje, które automatycznie stosować ochronę informacji takich jak [reguły przepływu poczty](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8), [zasad (DLP) zapobiegania utracie danych ](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx), i [chroniona poczta głosowa](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
 
@@ -128,7 +128,7 @@ Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi 
 
 3.  Skopiuj zawartość poniższego skryptu i nadaj plikowi nazwę Set-IRMOnOneDriveForBusiness.ps1 na swoim komputerze.
 
-    *&#42;&#42;Zastrzeżenie&#42;&#42;*: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
+    *&#42;&#42;Zastrzeżenie&#42;&#42;*: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
     ```
     # Requires Windows PowerShell version 3
@@ -211,7 +211,7 @@ Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi 
             {
                 if($_.Exception.Message -match "Could not load file or assembly")
                 {
-                    Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                    Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
                 }
                 else
                 {
@@ -517,7 +517,7 @@ Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi 
 
     5.  Wyszukaj ciąg `ADMIN INSTRUCTIONS`. Jeśli w tej sekcji nie zostaną wprowadzone żadne zmiany, usługa OneDrive dla Firm użytkownika zostanie skonfigurowana na potrzeby usług IRM z tytułem „Chronione pliki” i opisem zasad „Te zasady ograniczają dostęp do użytkowników autoryzowanych”.  Żadna inna opcja nie zostanie ustawiona — jest to prawdopodobnie odpowiednie w większości środowisk. Można jednak zmienić sugerowany tytuł i opis zasad, a także dodać inne opcje usługi IRM, które są odpowiednie dla danego środowiska. Zapoznaj się z opatrzonym komentarzami przykładem w skrypcie, który ułatwi Ci utworzenie własnego zestawu parametrów polecenia Set-IrmConfiguration.
 
-5.  Zapisz skrypt i podpisz go. Jeśli zrezygnujesz z podpisania skryptu (bezpieczniejsza opcja), program Windows PowerShell musi zostać skonfigurowany na komputerze, aby uruchamiać niepodpisane skrypty. W tym celu uruchom sesję programu Windows PowerShell, korzystając z opcji **Uruchom jako Administrator**, i wpisz **Set-ExecutionPolicy Unrestricted**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów (mniej bezpieczna opcja).
+5.  Zapisz skrypt i podpisz go. Jeśli zrezygnujesz z podpisania skryptu (bezpieczniejsza opcja), program Windows PowerShell musi zostać skonfigurowany na komputerze, aby uruchamiać niepodpisane skrypty. Aby to zrobić, Uruchom sesję programu Windows PowerShell, korzystając z **Uruchom jako Administrator** opcję i wpisz: **Set-ExecutionPolicy Unrestricted**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów (mniej bezpieczna opcja).
 
     Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) w bibliotece dokumentacji programu PowerShell.
 
@@ -533,9 +533,9 @@ Jeśli chcesz wyłączyć usługę IRM w bibliotekach usługi OneDrive dla Firm 
 ##### <a name="additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file"></a>Dodatkowy skrypt służący do wypełniania wyjściowego pliku CSV przy użyciu wszystkich adresów URL usługi OneDrive dla Firm
 W powyższym kroku 4c możesz użyć poniższego skryptu programu Windows PowerShell, aby wyodrębnić adresy URL bibliotek usługi OneDrive dla Firm wszystkich użytkowników, które można potem sprawdzić, w razie potrzeby zmodyfikować, a następnie zaimportować do głównego skryptu.
 
-Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038) i [powłoki zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588). Postępuj zgodnie z tymi samymi instrukcjami, aby go skopiować i wkleić, zapisz plik lokalnie (np. „raport-OneDriveForBusinessSiteInfo.ps1”), tak jak poprzednio zmodyfikuj wartości `$sharepointAdminCenterUrl` i `$tenantAdmin`, a następnie uruchom skrypt.
+Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=42038) i [powłoki zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588). Postępuj zgodnie z tymi samymi instrukcjami, aby go skopiować i wkleić, zapisz plik lokalnie (np. „raport-OneDriveForBusinessSiteInfo.ps1”), tak jak poprzednio zmodyfikuj wartości `$sharepointAdminCenterUrl` i `$tenantAdmin`, a następnie uruchom skrypt.
 
-*&#42;&#42;Zastrzeżenie&#42;&#42;*: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
+*&#42;&#42;Zastrzeżenie&#42;&#42;*: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
 ```
 # Requires Windows PowerShell version 3
@@ -549,7 +549,7 @@ Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint
  Script Installation Requirements:
 
    SharePoint Online Client Components SDK
-   http://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
    https://www.microsoft.com/en-us/download/details.aspx?id=35588
@@ -613,7 +613,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
             }
             else
             {
@@ -758,9 +758,9 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ##### <a name="script-to-disable-irm-for-onedrive-for-business"></a>Skrypt służący do wyłączania usługi IRM dla usługi OneDrive dla Firm
 Poniższy przykładowy skrypt umożliwia wyłączenie usługi IRM dla usługi OneDrive dla Firm użytkowników.
 
-Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint Online](http://www.microsoft.com/en-us/download/details.aspx?id=42038) i [powłoki zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588). Skopiuj i wklej zawartość, zapisz plik lokalnie (np. „Disable-IRMOnOneDriveForBusiness.ps1”), a następnie zmodyfikuj wartości `$sharepointAdminCenterUrl` i `$tenantAdmin`. Ręcznie określ adresy URL usługi OneDrive dla Firm lub użyj skryptu z poprzedniej sekcji, aby je zaimportować, a następnie uruchom skrypt.
+Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=42038) i [powłoki zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588). Skopiuj i wklej zawartość, zapisz plik lokalnie (np. „Disable-IRMOnOneDriveForBusiness.ps1”), a następnie zmodyfikuj wartości `$sharepointAdminCenterUrl` i `$tenantAdmin`. Ręcznie określ adresy URL usługi OneDrive dla Firm lub użyj skryptu z poprzedniej sekcji, aby je zaimportować, a następnie uruchom skrypt.
 
-*&#42;&#42;Zastrzeżenie&#42;&#42;*: ten przykładowy skrypt nie jest obsługiwany w ramach żadnych standardowych usług ani programów pomocy technicznej firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
+*&#42;&#42;Zastrzeżenie&#42;&#42;*: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
 ```
 # Requires Windows PowerShell version 3
@@ -773,7 +773,7 @@ Ten skrypt wymaga również [zestawu SDK składników klienta usługi SharePoint
  Script Installation Requirements:
 
    SharePoint Online Client Components SDK
-   http://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
    https://www.microsoft.com/en-us/download/details.aspx?id=35588
@@ -842,7 +842,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
             }
             else
             {

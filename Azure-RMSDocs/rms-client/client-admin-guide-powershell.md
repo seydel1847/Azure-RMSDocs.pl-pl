@@ -4,22 +4,22 @@ description: Instrukcje i informacje dla administratorów dotyczące zarządzani
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 834c408e87e34415bb76041968f5bdee6db3e848
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d707f32062df54975237d9ae6f7218d33cfe337a
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151045"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305662"
 ---
-# <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Przy użyciu programu PowerShell z klientem usługi Azure Information Protection
+# <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, systemu Windows Server 2012, Windows Server 2008 R2*
 
 Polecenia programu PowerShell są instalowane automatycznie podczas instalowania klienta usługi Azure Information Protection. Umożliwia to Zarządzanie klientem poprzez uruchamianie poleceń, które można umieścić w skryptach automatyzacji.
 
@@ -53,10 +53,10 @@ Bieżąca wersja modułu AzureInformationProtection ma następujące ograniczeni
 
 Przed rozpoczęciem korzystania z tych poleceń cmdlet zapoznaj się z dodatkowymi wymaganiami wstępnymi i instrukcjami odnoszącymi się do wdrożenia:
 
-- [Usługa Azure Information Protection i usługi Azure Rights Management](#azure-information-protection-service-and-azure-rights-management-service)
+- [Usługa Azure Information Protection i usługi Azure Rights Management](#azure-information-protection-and-azure-rights-management-service)
 
-    - Dotyczy przypadku, gdy używany jest tryb obejmujący tylko klasyfikację lub klasyfikację z ochroną Rights Management: masz subskrypcję, która obejmuje usługę Azure Information Protection (na przykład Enterprise Mobility + Security).
-    - Dotyczy przypadku, gdy używany jest tryb obejmujący tylko ochronę za pomocą usługi Azure Rights Management: masz subskrypcję, która obejmuje usługę Azure Rights Management (na przykład usługi Office 365 E3 i Office 365 E5).
+    - Zastosowanie, jeśli używasz tylko klasyfikację lub klasyfikację z ochroną Rights Management: Masz subskrypcję obejmującą usługę Azure Information Protection (na przykład pakiet Enterprise Mobility + Security).
+    - Zastosowanie, jeśli używasz tylko do ochrony za pomocą usługi Azure Rights Management: Masz subskrypcję obejmującą usługę Azure Rights Management (na przykład usługi Office 365 E3 i Office 365 E5).
 
 - [Usługi Active Directory Rights Management](#active-directory-rights-management-services)
 
@@ -86,19 +86,19 @@ Oprócz wymagań wstępnych dotyczących instalacji modułu AzureInformationProt
     
     - Edytuj rejestr dla potrzeb odnajdowania usługi.
 
-#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Wymaganie wstępne 1: usługa Azure Rights Management musi być aktywowana
+#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>Wymaganie wstępne 1: Usługa Azure Rights Management musi być aktywowana
 
 To wymaganie wstępne dotyczy zarówno sytuacji, gdy stosowana jest ochrona danych za pomocą etykiet, jak i bezpośredniego połączenia z usługą Azure Rights Management w celu zastosowania ochrony danych.
 
 Jeśli dzierżawca usługi Azure Information Protection nie został aktywowany, zobacz instrukcje dotyczące [aktywowania usługi Azure Rights Management](../activate-service.md).
 
-#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>Wymaganie wstępne 2: usuwanie ochrony plików dla innych osób używających Twojego konta
+#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>Wymaganie wstępne 2: Usuwanie ochrony plików dla innych osób używających Twojego konta
 
 Typowe scenariusze dotyczące usuwania ochrony plików dla innych osób obejmują odnajdywanie lub odzyskiwanie danych. Jeśli jest stosowana ochrona przy użyciu etykiet, można ją usunąć, ustawiając nową etykietę, która nie stosuje ochrony, lub usuwając etykietę. Wygodniejszym rozwiązaniem jest jednak połączenie się bezpośrednio z usługą Azure Rights Management w celu usunięcia ochrony.
 
 Musisz mieć prawa użytkowania usługi Rights Management do usuwania ochrony plików lub być administratorem. W przypadku odnajdywania lub odzyskiwania danych zwykle jest używana funkcja administratora. Aby włączyć tę funkcję i skonfigurować swoje konto jako administrator, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../configure-super-users.md).
 
-#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Wymaganie wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem
+#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>Wymaganie wstępne 3: Aby lub wyłączanie ochrony plików bez interakcji z użytkownikiem
 
 Możesz połączyć się bezpośrednio do usługi Azure Rights Management — interakcyjnie, aby lub wyłączanie ochrony plików.
 
@@ -218,7 +218,7 @@ Utwórz nową jednostkę usługi, uruchamiając polecenie cmdlet `New-MsolServic
 
 Korzystając z tych instrukcji i opierając się na naszych przykładach, uzyskaliśmy trzy identyfikatory wymagane do uruchomienia polecenia Set-RMSServerAuthentication:
 
-- Identyfikator dzierżawcy: **23976bc6-dcd4-4173-9d96-dad1f48efd42**
+- Identyfikator dzierżawy: **23976bc6-dcd4-4173-9d96-dad1f48efd42**
 
 - Klucz symetryczny: **zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=**
 
@@ -230,14 +230,14 @@ Nasze przykładowe polecenie będzie więc wyglądać następująco:
 
 Jak pokazano w poprzednim poleceniu, możesz podać wartości za pomocą jednego polecenia, co może zrobić w skrypcie do uruchamiania w trybie nieinteraktywnym. Jednak do celów testowych możesz po prostu wpisz Set-RMSServerAuthentication i podaj wartości jeden po drugim po wyświetleniu monitu. Po zakończeniu wykonywania polecenia klienta działa się teraz w "trybie serwera", który jest odpowiedni do użytku-interactive, takich jak skrypty i infrastruktury klasyfikacji plików w systemie Windows Server.
 
-Rozważ przekształcenie to konto jednostki usługi Administrator: w celu zapewnienia, że konta głównego usługi mogą zawsze wyłączania ochrony plików dla innych użytkowników, można skonfigurować jako administrator. W taki sam sposób jak skonfigurować konta użytkownika standardowego do administratora, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md), ale Określa **ServicePrincipalId** parametr o usługi Wartość identyfikatora AppPrincipalId.
+Należy wziąć pod uwagę ten konto jednostki usługi Administrator: Aby upewnić się, że konta głównego usługi mogą zawsze wyłączania ochrony plików dla innych użytkowników, można skonfigurować jako administrator. W taki sam sposób jak skonfigurować konta użytkownika standardowego do administratora, używasz tego samego polecenia cmdlet usługi Azure RMS [Add-AadrmSuperUser](/powershell/module/aadrm/add-aadrmsuperuser), ale Określa **ServicePrincipalId** parametr o usługi Wartość identyfikatora AppPrincipalId.
 
 Aby uzyskać więcej informacji na temat administratorów, zobacz artykuł [Konfigurowanie superużytkowników usług Azure Rights Management i usług odnajdywania lub odzyskiwania danych](../configure-super-users.md).
 
 > [!NOTE]
 > Aby użyć swojego konta użytkownika do uwierzytelnienia w usłudze Azure Rights Management, nie ma potrzeby uruchamiania polecenia Set-RMSServerAuthentication przed włączeniem lub wyłączeniem ochrony plików albo pobraniem szablonów.
 
-#### <a name="prerequisite-4-for-regions-outside-north-america"></a>Wymaganie wstępne 4: dotyczy regionów poza Ameryką Północną
+#### <a name="prerequisite-4-for-regions-outside-north-america"></a>Wymaganie wstępne 4: Dla regionów poza Ameryką Północną
 
 Korzystając z konta głównego usługi do ochrony plików i pobierania szablonów poza regionem Ameryki Północnej platformy Azure, należy edytować rejestr: 
 
@@ -265,7 +265,7 @@ Korzystając z konta głównego usługi do ochrony plików i pobierania szablon�
 
 ### <a name="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service"></a>Przykładowe scenariusze użycia poleceń cmdlet usługi Azure Information Protection i Azure Rights Management
 
-Korzystanie z etykiet do klasyfikowania i ochrony plików jest bardziej efektywne, ponieważ potrzebne są tylko dwa polecenia cmdlet, które mogą być uruchamiane osobno lub razem: [Get-AIPFileStatus](/powershell/azureinformationprotection/get-aipfilestatus) i [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Skorzystaj z pomocy dotyczącej obu tych poleceń cmdlet, aby uzyskać dodatkowe informacje i przykłady.
+Jest bardziej wydajne korzystanie z etykiet do klasyfikowania i ochrony plików, ponieważ istnieją tylko dwa polecenia cmdlet konieczne, które mogą być uruchamiane osobno lub razem: [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) i [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel). Skorzystaj z pomocy dotyczącej obu tych poleceń cmdlet, aby uzyskać dodatkowe informacje i przykłady.
 
 Aby włączać i wyłączać ochronę plików przy wykorzystaniu bezpośredniego połączenia z usługą Azure Rights Management, należy zazwyczaj uruchamiać serię poleceń cmdlet, zgodnie z poniższym opisem.
 
@@ -273,7 +273,7 @@ Po pierwsze Jeśli zachodzi potrzeba uwierzytelniania usługi Azure Rights Manag
 
     Set-RMSServerAuthentication
 
-Po wyświetleniu monitu wprowadź trzy identyfikatory zgodnie z opisem w sekcji [Wymagania wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction).
+Po wyświetleniu monitu wprowadź trzy identyfikatory zgodnie z opisem w [wymaganie wstępne 3: Aby lub wyłączanie ochrony plików bez interakcji z użytkownikiem](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction).
 
 Zanim będzie można korzystać z ochrony plików, należy pobrać na komputer szablony usługi Rights Management i określić, który z nich będzie używany wraz z odpowiadającym im numerem identyfikacyjnym. Z raportu można też skopiować identyfikator szablonu:
 
@@ -474,7 +474,7 @@ Po wygaśnięciu ważności tokenu Uruchom polecenie cmdlet ponownie, aby uzyska
 
 Po uruchomieniu tego polecenia cmdlet bez parametrów konto uzyskuje token dostępu, który jest ważny przez 90 dni lub do momentu wygaśnięcia ważności hasła.  
 
-Aby kontrolować moment wygaśnięcia ważności tokenu dostępu, uruchom to polecenie cmdlet z parametrami. Umożliwi to skonfigurowanie tokenu dostępu na jeden rok, dwa lata lub bez określonej daty wygaśnięcia. Ta konfiguracja wymaga zarejestrowania dwóch aplikacji w usłudze Azure Active Directory: **aplikacji internetowej/interfejsu API** i **aplikacji natywnej**. Parametry tego polecenia cmdlet używają wartości z tych aplikacji.
+Aby kontrolować moment wygaśnięcia ważności tokenu dostępu, uruchom to polecenie cmdlet z parametrami. Umożliwi to skonfigurowanie tokenu dostępu na jeden rok, dwa lata lub bez określonej daty wygaśnięcia. Ta konfiguracja wymaga zarejestrowania dwóch aplikacji w usłudze Azure Active Directory: A **aplikacji sieci Web / interfejs API** aplikacji i **aplikacji natywnej**. Parametry tego polecenia cmdlet używają wartości z tych aplikacji.
 
 Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykietowania w kontekście utworzonego konta użytkownika.
 
@@ -490,7 +490,7 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     Jeśli chcesz, podaj inną nazwę. Nazwa musi być unikatowa dla dzierżawy.
     
-    - Typ aplikacji: **Aplikacja internetowa/interfejs API**
+    - Typ aplikacji: **Aplikacja sieci Web/interfejs API**
     
     - Adres URL logowania: **http://localhost**
 
@@ -510,7 +510,7 @@ Po uruchomieniu tego polecenia cmdlet możesz uruchomić polecenia cmdlet etykie
     
     Jeśli chcesz, podaj inną nazwę. Nazwa musi być unikatowa dla dzierżawy.
     
-    - Typ aplikacji: **Natywna**
+    - Typ aplikacji: **Natywne**
     
     - Adres URL logowania: **http://localhost**
 
@@ -563,7 +563,7 @@ Ogólne kroki:
     
     Na przykład: `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`
     
-#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>Krok 2: Uruchomienia polecenia Set-AIPAuthentication do uzyskania tokenu dostępu i skopiować go do Schowka
+#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>Krok 2: Uruchom polecenia Set-AIPAuthentication do uzyskania tokenu dostępu i skopiować go do Schowka
 
 1. Otwórz sesję środowiska Windows PowerShell.
 
@@ -573,7 +573,7 @@ Ogólne kroki:
     
     Na przykład: `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`
 
-#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>Krok 3. modyfikowanie skrypt programu PowerShell, aby dostarczyć token
+#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>Krok 3: Zmodyfikuj skrypt programu PowerShell, aby dostarczyć token
 
 1. W skrypcie programu PowerShell Określ wartość tokenu wklejając ciąg ze Schowka, a następnie zapisz plik.
 
@@ -583,7 +583,7 @@ Ogólne kroki:
 
 3. Skopiuj ten skrypt programu PowerShell na komputerze, na którym będą etykiety i chronić pliki i usuniesz oryginał na tym komputerze. Na przykład możesz skopiować skrypt programu PowerShell do C:\Scripts\Aipauthentication.ps1 na komputerze z systemem Windows Server.
 
-#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>Krok 4: Tworzenie zadania, które uruchamia skrypt programu PowerShell
+#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>Krok 4: Utwórz zadanie, które uruchamia skrypt programu PowerShell
 
 1. Upewnij się, że konto usługi, która będzie etykietowanie i ochronę plików ma **logowanie w trybie wsadowym** prawo.
 
@@ -605,7 +605,7 @@ Ogólne kroki:
     
     Opcjonalnie można usunąć zadania. Jeśli token wygaśnie, należy powtórzyć ten proces, w takiej sytuacji może być bardziej wygodne pozostawić zadań skonfigurowany tak, aby była gotowa do ponownego uruchomienia po skopiowaniu przez nowe środowisko programu PowerShell script nową wartość tokenu.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby uzyskać pomoc dotyczącą polecenia cmdlet w trakcie sesji programu PowerShell, wpisz ciąg `Get-Help <cmdlet name> cmdlet` i użyj parametru -online w celu zapoznania się z najbardziej aktualnymi informacjami. Przykład: 
 
     Get-Help Get-RMSTemplate -online

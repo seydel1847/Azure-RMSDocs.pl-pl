@@ -4,20 +4,20 @@ description: Usługa Azure Information Protection zawiera domyślne etykiety z m
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 963a86e37112fb2c4a2f9ca10162995a131c49ac
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 7302e0e0e76f6ca94eba678390e7d938172e40c4
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023434"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304999"
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Tworzenie nowej etykiety dla usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Mimo że usługę Azure Information Protection zawiera domyślne etykiety, które można dostosować, można również utworzyć własne etykiety.
 
@@ -31,11 +31,11 @@ Skorzystaj z poniższych instrukcji, aby dodać nową etykietę, który można d
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną z następujących czynności:
+2. Z **klasyfikacje** > **etykiety** opcji menu: Na **usługi Azure Information Protection — etykiety** blok, wykonaj jedną z następujących czynności:
     
-    - Aby utworzyć nową etykietę: kliknij przycisk **Dodaj nową etykietę**.
+    - Aby utworzyć nową etykietę: Kliknij przycisk **Dodaj nową etykietę**.
     
-    - Aby utworzyć nowy etykietę podrzędną: kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz utworzyć etykietę podrzędną do, a następnie kliknij przycisk **Dodaj etykietę podrzędną**.
+    - Aby utworzyć nowe etykiety podrzędnej: Kliknij prawym przyciskiem myszy lub wybierz menu kontekstowe (**...** ) dla etykiety, który chcesz utworzyć etykietę podrzędną do, a następnie kliknij przycisk **Dodaj etykietę podrzędną**.
 
 4. W bloku **Etykieta** lub **Etykieta podrzędna** wybierz opcje dla nowej etykiety, a następnie kliknij przycisk **Zapisz**.
     
@@ -43,7 +43,7 @@ Skorzystaj z poniższych instrukcji, aby dodać nową etykietę, który można d
     
     Pamiętaj, że nowym etykietom jest automatycznie przypisywany kolor czarny. Wybierz z listy kolorów wyróżniający się kolor lub wprowadź szesnastkowy tryplet dla składników czerwonego, zielonego i niebieskiego (RGB) koloru. Przykład: **#DAA520**. Jeśli potrzebujesz informacji o tych kodach, plik [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx) z dokumentacji MSDN to dobry punkt wyjścia. Takie kody znajdziesz w wielu programach do edycji obrazów, takich jak Microsoft Paint, gdzie kolor niestandardowy wybiera się z palety, a program automatycznie wyświetla wartości RGB.
 
-5. Aby udostępnić nowe etykiety dla użytkowników: od **klasyfikacje** > **zasady** menu, wybierz zasady, które zawierają nową etykietę. Wybierz **apletu Dodaj lub usuń etykiety**. Wybierz etykietę z **zasad: Dodaj lub usuń etykiety** bloku wybierz **OK**, a następnie wybierz pozycję **Zapisz**.
+5. Aby udostępnić nowe etykiety dla użytkowników: Z **klasyfikacje** > **zasady** menu, wybierz zasady, które zawierają nową etykietę. Wybierz **apletu Dodaj lub usuń etykiety**. Wybierz etykietę z **zasad: Dodaj lub usuń etykiety** bloku wybierz **OK**, a następnie wybierz pozycję **Zapisz**.
     
     >[!TIP]
     >Dla nowych etykiet należy rozważyć dodanie ich do zasady o określonym zakresie, którego używasz do testowania. Gdy jesteś zadowolony z wyników, usunąć etykietę z tego zakresu testowania, a następnie dodaj etykietę do zasad, które są używane w środowisku produkcyjnym.     
@@ -52,9 +52,9 @@ Skorzystaj z poniższych instrukcji, aby dodać nową etykietę, który można d
     
     Zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
-6. Jeśli chcesz, aby ta nazwę nowej etykiety i opis, aby wyświetlić w różnych językach dla użytkowników: postępuj zgodnie z procedurami w [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md). 
+6. Jeśli chcesz to nazwę nowej etykiety i opis, aby wyświetlić w różnych językach dla użytkowników: Postępuj zgodnie z procedurami w [Konfigurowanie etykiet w różnych językach](configure-policy-languages.md). 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
 

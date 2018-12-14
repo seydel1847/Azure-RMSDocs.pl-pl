@@ -4,22 +4,22 @@ description: Instrukcje będące częścią ścieżki migracji z usługi AD RMS 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/13/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 77037f5ab82e7b36899c4b1bdb2399d27b662a5d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330336"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305046"
 ---
-# <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2. Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
+# <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>Krok 2: Migracja klucza chronionego przez moduł HSM do klucza chronionego przez moduł HSM
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 Te instrukcje są częścią [ścieżki migracji z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) i są stosowane tylko wtedy, gdy klucz usługi AD RMS jest chroniony przez moduł HSM, a użytkownik chce migrować klucz do usługi Azure Information Protection z wykorzystaniem klucza dzierżawy chronionego przez moduł HSM w usłudze Azure Key Vault. 
@@ -40,7 +40,7 @@ Przed rozpoczęciem upewnij się, że Twoja organizacja ma magazyn kluczy utworz
 > Jeśli przeprowadzasz konfigurację usługi Azure Key Vault, a nie masz doświadczenia z tą usługą platformy Azure, warto zapoznać się z artykułem [Rozpoczynanie pracy z usługą Azure Key Vault](/azure/key-vault/key-vault-get-started). 
 
 
-## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Część 1. Przesłanie klucza HSM do usługi Azure Key Vault
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>Część 1: Przesłanie klucza HSM do usługi Azure Key Vault
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
@@ -59,7 +59,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
 Teraz klucz HSM w usłudze Azure Key Vault jest już gotowy do użycia w usłudze Azure Rights Management z usługi Azure Information Protection, a Ty możesz importować dane konfiguracji usługi AD RMS.
 
-## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>Część 2. Importowanie danych konfiguracji do usługi Azure Information Protection
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>Część 2: Importowanie danych konfiguracji do usługi Azure Information Protection
 
 Te procedury są wykonywane tylko przez administratora usługi Azure Information Protection.
 

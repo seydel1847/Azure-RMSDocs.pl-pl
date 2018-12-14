@@ -4,22 +4,22 @@ description: Przepływ pracy end-to-end do współpracy nad dokumentami, które 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b11f50bcf2090129211f3dd09cff867cfbdcb7b
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026659"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305509"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>Konfigurowanie bezpiecznej współpracy nad dokumentami za pomocą usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Gdy używasz usługi Azure Information Protection, możesz chronić swoje dokumenty, bez obniżania oczekiwanego poziomu współpracy dla autoryzowanych użytkowników. Większość dokumentów, że jeden użytkownik tworzy i następnie udostępnia innym osobom do wyświetlania i edytowania będą mieć dokumentów pakietu Office z programu Word, Excel i PowerPoint. Te dokumenty obsługują ochronę natywną, co oznacza, że oprócz funkcji ochrony autoryzacji i szyfrowania, obsługują one również ograniczonych uprawnień dla dokładniejszej kontroli. 
 
@@ -27,7 +27,7 @@ Te uprawnienia są nazywane praw użytkowania i uwzględniać uprawnień, takich
 
 Podczas konfigurowania tych uprawnień można określić użytkowników, którzy są do:
 
-- **Dla użytkowników w organizacji lub w innej organizacji korzystającej z usługi Azure Active Directory**: można określić konta użytkowników usługi Azure AD, grupy usługi Azure AD lub wszystkich użytkowników należących do organizacji. 
+- **Dla użytkowników w organizacji lub w innej organizacji korzystającej z usługi Azure Active Directory**: Można określić konta użytkowników usługi Azure AD, grupy usługi Azure AD lub wszystkich użytkowników należących do organizacji. 
 
 - **Dla użytkowników, którzy nie mają konta usługi Azure Active Directory**: Określ adres e-mail, która będzie służyć za pomocą konta Microsoft. To konto może już istnieć lub użytkownicy mogą tworzyć je w momencie ich otworzyć dokument chroniony. 
     
@@ -42,7 +42,7 @@ Jako administrator możesz skonfigurować etykiety usługi Azure Information Pro
 
 W tym przykładzie przedstawiono konfigurowanie istniejącej etykiety w celu zastosowania ochrony, tak aby użytkownicy z Twojej organizacji mogą współpracować nad dokumentami wszystkim użytkownikom z innej organizacji, który ma usługi Office 365 lub Azure AD, w grupie z innej organizacji, która ma Office 365 lub Azure AD, a użytkownik nie ma konta w usłudze Azure AD i zamiast tego użyje adresu e-mail usługi Gmail.
 
-Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie zawiera ustawienia dla wszystkich uwierzytelnionych użytkowników. Aby uzyskać przykład sposobu konfigurowania etykietę z tym ustawieniem, zobacz [przykład 5: etykiety, która szyfruje zawartość, ale nie ogranicza kto ma dostęp do jego](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
+Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie zawiera ustawienia dla wszystkich uwierzytelnionych użytkowników. Aby uzyskać przykład sposobu konfigurowania etykietę z tym ustawieniem, zobacz [przykład 5: Etykiety, która szyfruje zawartość, ale nie ogranicza kto ma dostęp do jego](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it).  
 
 1. Wybierz etykiety, która jest już zasad globalnych lub zasad o określonym zakresie. Na **ochrony** bloku, upewnij się, że **Azure (klucz w chmurze)** jest zaznaczone.
     
@@ -52,13 +52,13 @@ Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie z
     
     - Wewnętrzny grupy: Wybierz **przeglądania katalogu** aby wybrać grupę, która musi być włączona obsługa poczty e-mail.
     
-    - Dla wszystkich użytkowników w pierwszym organizację zewnętrzną: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie tej organizacji. Na przykład fabrikam.com.
+    - Dla wszystkich użytkowników w pierwszym organizacji zewnętrznych: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie tej organizacji. Na przykład fabrikam.com.
     
-    - Grupy w drugiej organizacji zewnętrznych: na **wprowadź szczegóły** karty, wpisz adres e-mail grupy w dzierżawie tej organizacji. Na przykład sales@contoso.com.
+    - Dla grupy w drugiej organizacji zewnętrznych: Na **wprowadź szczegóły** karty, wpisz adres e-mail grupy w dzierżawie tej organizacji. Na przykład sales@contoso.com.
     
-    - Dla użytkownika, który nie ma konta usługi Azure AD: na **wprowadź szczegóły** karty, wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
+    - Dla użytkownika, który nie ma konta usługi Azure AD: Na **wprowadź szczegóły** karty, wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
 
-4. Aby udzielić tych samych uprawnień do tych użytkowników: dla **wybierz uprawnienia z wstępnie ustawionych**, wybierz opcję **współwłaściciel**, **Współautor**, **recenzenta**, lub **niestandardowe** wybrać, które chcesz udzielić uprawnień.
+4. Aby udzielić tych samych uprawnień do tych użytkowników: Dla **wybierz uprawnienia z wstępnie ustawionych**, wybierz opcję **współwłaściciel**, **Współautor**, **recenzenta**, lub **niestandardowe**wybrać, które chcesz udzielić uprawnień.
     
     Na przykład skonfigurowane uprawnienia może wyglądać podobnie do poniższej:
         
@@ -145,7 +145,7 @@ Obecnie obsługiwane przez pakiet Office 2016 kliknij do uruchomienia tylko.
 
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Zobacz inne [przykładowe konfiguracje](configure-policy-protection.md#example-configurations) etykiet w celu zastosowania ochrony dla typowych scenariuszy. Ten artykuł zawiera także szczegółowe informacje o ustawienia ochrony.
 

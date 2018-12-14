@@ -4,22 +4,22 @@ description: Informacje na temat plików i dzienników użycia klienta usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d935d5eafd3d893b67bbdccb1893bf67d418ae79
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 2aa0e470d9a2801b695c6b2c9d922836c010690c
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866122"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304914"
 ---
-# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręczniku administratora: Pliki klienta usługi Azure Information Protection i dzienniki użycia klienta
+# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>Podręcznik administratora: Pliki i dzienniki użycia klienta usługi Azure Information Protection
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, systemu Windows Server 2012, Windows Server 2008 R2*
 
 Po zainstalowaniu klienta usługi Azure Information Protection przydatna może być informacja o lokalizacji plików. Może też zajść potrzeba monitorowania sposobu korzystania z klienta.
 
@@ -45,25 +45,25 @@ Klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń Windows
 
 - Nazwa i lokalizacja pliku
 
-- Działanie:
+- Akcja:
 
-    - Ustawienie etykiety: identyfikator informacji 101
+    - Ustawienie etykiety:  Identyfikator informacji 101
     
-    - Ustawienie etykiety (niższej): informacje o identyfikatorze 101
+    - Ustawienie etykiety (niższe):  Identyfikator informacji 101
     
-    - Ustawienie etykiety (wyższej): informacje o identyfikatorze 101
+    - Ustawienie etykiety (wyższej): Identyfikator informacji 101
     
-    - Usunięcie etykiety: identyfikator informacji 104
+    - Usuń etykietę: Identyfikator informacji 104
    
-    - Zalecane: identyfikator informacji 105
+    - Porada zalecane: Identyfikator informacji 105
     
-    - Zastosowanie niestandardowej ochrony: identyfikator informacji 201
+    - Zastosowanie niestandardowej ochrony: Identyfikator informacji 201
     
-    - Zastosowanie niestandardowej ochrony: identyfikator informacji 202
+    - Usunąć ochronę niestandardową: Identyfikator informacji 202
     
-    - Logowanie (operacyjne): identyfikator informacji 902
+    - Zaloguj się w (operacyjne): Identyfikator informacji 902
     
-    - Zasady pobierania (operacyjne): identyfikator informacji 901
+    - Zasady pobierania (operacyjne): Identyfikator informacji 901
     
 - Źródło akcji:
     
@@ -75,7 +75,7 @@ Klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń Windows
     
     - System (dla zasad logowania i pobierania)
     
-    - Wartość domyślna
+    - Domyślny
     
 - Etykieta przed akcją i po niej 
     
@@ -87,7 +87,7 @@ Klient rejestruje aktywność użytkownika w lokalnym dzienniku zdarzeń Windows
     
 Aby uzyskać informacje na temat rejestrowania użycia usługi ochrony, zobacz [rejestrowanie i analizowanie użycia usługi Azure Rights Management](../log-analyze-usage.md)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po zidentyfikowaniu wszystkich plików dziennika skojarzonych z klientem usługi Azure Information Protection zapoznaj się z poniższymi informacjami dodatkowymi przydatnymi przy obsłudze tego klienta:
 
 - [Dostosowania](client-admin-guide-customizations.md)

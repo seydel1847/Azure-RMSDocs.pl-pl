@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1adb21ac41a922ebb3636fcce9e13c9fd785930d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42a1944dcb643c1647ee7299456307815f1023b4
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151660"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266634"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
 
@@ -33,12 +33,12 @@ Najpierw wykonaj czynności przedstawione w tym przewodniku konfigurowania rejes
 Przed wdrożeniem aplikacji musisz uzupełnić umowę IPIA zawartą z zespołem Microsoft Information Protection. Aby uzyskać szczegółowe informacje, zapoznaj się z pierwszą sekcją w temacie, [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md).
 
 ## <a name="implement-user-authentication-for-your-app"></a>Implementowanie uwierzytelniania użytkowników w aplikacji
-Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw RMS SDK 4.2 korzysta z Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, jeśli konieczne jest odświeżenie tokenu dostępu lub w przypadku wygaśnięcia tego tokenu.
+Każdy z interfejsów API usługi RMS dysponuje wywołaniem zwrotnym, które należy zaimplementować w celu umożliwienia uwierzytelniania użytkownika. Zestaw SDK 4.2 usługi RMS użyje Twojego wdrożenia wywołania zwrotnego w przypadku niepodania tokenu dostępu, gdy konieczne jest odświeżenie tokenu dostępu lub wygaśnięcia tokenu dostępu.
 
 - Android — interfejsy [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) i [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx).
 - iOS/OS X — protokół [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx).
 -  Windows Phone/Window RT — interfejs [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx).
-- Linux — interfejs [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
+- Linux — interfejs [IAuthenticationCallback](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html).
 
 ### <a name="what-library-to-use-for-authentication"></a>Jakiej biblioteki użyć podczas uwierzytelniania
 W celu wdrożenia wywołania zwrotnego uwierzytelniania należy pobrać odpowiednią bibliotekę i skonfigurować środowisko deweloperskie do korzystania z niej. W witrynie GitHub są dostępne biblioteki ADAL dla tych platform.
@@ -51,8 +51,7 @@ Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środow
 -   [Biblioteka Windows Azure Active Directory Authentication Library (ADAL) dla platformy dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   W przypadku zestawu SDK dla systemu Linux biblioteka ADAL jest spakowana ze źródłem SDK, dostępnym w witrynie [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
->[!NOTE]  
-> Zalecamy korzystanie z jednej z bibliotek ADAL, choć można też korzystać z innych bibliotek uwierzytelniania.
+>[!NOTE]   Firma Microsoft zaleca korzystanie z jednej z bibliotek ADAL choć można też korzystać z innych bibliotek uwierzytelniania.
 
 ### <a name="authentication-parameters"></a>Parametry uwierzytelniania
 
@@ -72,8 +71,7 @@ i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 
-> Jeśli aplikacja nie jest zgodna z tymi wytycznymi, przepływy pracy usług Azure RMS i Azure AD zakończą się prawdopodobnie niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
+>[!NOTE]  W przypadku aplikacji nie jest zgodna z tymi wytycznymi, przepływy pracy usługi Azure RMS i Azure AD mogą zakończyć się niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
 **Przykłady kodu uwierzytelniania** — ten zestaw SDK zawiera przykładowy kod, przedstawiający zastosowanie wywołań zwrotnych uwierzytelniania. Dla wygody te przykłady kodu przedstawiono w tym miejscu, jak również we wszystkich powiązanych tematach.

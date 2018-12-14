@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
-ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
+ms.openlocfilehash: 72735ea07a00f37377bbbab781c03c4516f032de
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915567"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173795"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>Usługi RMS dla użytkowników indywidualnych i Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Usługa RMS dla użytkowników indywidualnych to bezpłatna subskrypcja samoobsługowa dla użytkowników, którzy muszą otwierać pliki chronione za pomocą usługi Azure Information Protection. Jeśli Ci użytkownicy nie uwierzytelniony przez usługę Azure Active Directory, bezpłatnej usługi rejestracji można utworzyć konto w usłudze Azure Active Directory dla użytkownika. W wyniku tych użytkownicy mogą teraz uwierzytelniane przy użyciu swojego adresu e-mail firmy i odczytania chronionych plików na komputerach lub urządzeniach przenośnych.
 
@@ -43,7 +43,7 @@ Po utworzeniu konta ostatnia strona wyświetla łącza, aby pobrać klienta usł
 
 3. Kliknij przycisk **Zarejestruj się**.
 
-    Firma Microsoft używa Twój adres e-mail, aby sprawdzić, czy Twoja organizacja ma już [subskrypcja usługi Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [subskrypcji usługi Office 365, która obejmuje ochronę danych za pomocą platformy Azure Ochrona informacji](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli jedno z tych subskrypcji zostaną znalezione, nie potrzebujesz usługi RMS dla użytkowników indywidualnych. Użytkownik jest zalogowany natychmiast i samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych została anulowana. Jeśli jeden z tych subskrypcji nie zostanie znalezione, przejdź do następnego kroku.
+    Firma Microsoft używa Twój adres e-mail, aby sprawdzić, czy Twoja organizacja ma już [subskrypcja usługi Azure Information Protection Premium](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) lub [subskrypcji usługi Office 365, która obejmuje ochronę danych za pomocą platformy Azure Ochrona informacji](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf). Jeśli jedno z tych subskrypcji zostaną znalezione, nie potrzebujesz usługi RMS dla użytkowników indywidualnych. Użytkownik jest zalogowany natychmiast i samoobsługowego tworzenia konta usługi RMS dla użytkowników indywidualnych została anulowana. Jeśli jeden z tych subskrypcji nie zostanie znalezione, przejdź do następnego kroku.
 
 4. Poczekaj na wiadomość e-mail z potwierdzeniem, która zostanie wysłana na podany adres e-mail. Zostanie ona nadana przez zespół usługi Office 365 (support@email.microsoftonline.com) i będzie miała temat **Ukończ rejestrację w usłudze Microsoft Azure Information Protection**.
 
@@ -59,6 +59,6 @@ Teraz Twoje konto jest tworzone, jeśli zostanie wyświetlony monit logować si�
 > Mimo że teraz można również chronić pliki za pomocą tego konta, nie zostanie aż Twoja organizacja ma [subskrypcji próbnej lub płatnej](https://azure.microsoft.com/pricing/details/information-protection/) usługi Azure Information Protection. Jeśli ochrony plików i wiadomości e-mail przy użyciu tej bezpłatnej subskrypcji, a następnie przejmuje kontrolę nad kontem w Twojej organizacji, wcześniej chronionej zawartości mogą stać się niedostępne.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Usługi RMS dla użytkowników indywidualnych to przykład za pomocą samoobsługowej, jest obsługiwane przez usługę Azure Active Directory. Aby uzyskać więcej informacji o tym, jak to działa, zobacz [co to jest Samoobsługowa usługi Azure Active Directory?](/azure/active-directory/users-groups-roles/directory-self-service-signup) w dokumentacji usługi Azure Active Directory.
 

@@ -4,22 +4,22 @@ description: Informacje ułatwiające skonfigurowanie serwerów lokalnych, któr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e66b4941cdfa86fbb1dcfe8593b39b59eb45ed9e
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 606ca10f04ad9fa21d90fdf4bfcbc368db6febb1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024131"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305628"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 Skorzystaj z poniższych informacji, aby łatwiej skonfigurować serwery lokalne, które będą używać łącznika Azure Rights Management (RMS). Te procedury obejmują krok 5 z instrukcji [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
@@ -30,15 +30,15 @@ Przed rozpoczęciem upewnij się, że łącznik usługi RMS jest zainstalowany i
 ## <a name="configuring-servers-to-use-the-rms-connector"></a>Konfigurowanie serwerów do korzystania z łącznika usługi RMS
 Po zainstalowaniu i skonfigurowaniu łącznika usługi RMS można przystąpić do konfigurowania serwerów lokalnych, które będą łączyć się z usługą Azure Rights Management i korzystać z tej technologii ochrony za pomocą łącznika. Oznacza to konfigurowanie następujących serwerów:
 
--   **Dla programów Exchange 2016 i Exchange 2013**: serwery dostępu klientów i serwery skrzynek pocztowych
+-   **Dla programów Exchange 2016 i Exchange 2013**: Serwery dostępu klientów i serwery skrzynek pocztowych
 
--   **Dla programu Exchange 2010**: serwery dostępu klientów i serwery transportu centralnego
+-   **Dla programu Exchange 2010**: Serwery dostępu klientów i serwery transportu centralnego
 
--   **Dla programu SharePoint**: serwery frontonu sieci Web programu SharePoint, łącznie z tymi hostującymi serwer administracji centralnej
+-   **Dla programu SharePoint**: Serwery frontonu sieci Web programu SharePoint, łącznie z tymi hostującymi serwer administracji centralnej
 
--   **Dla infrastruktury klasyfikacji plików**: komputery z systemem Windows Server, na których zainstalowano program File Resource Manager
+-   **Dla funkcji infrastruktury klasyfikacji plików**: Komputery serwera Windows, których zainstalowano Menedżer zasobów plików
 
-Ta konfiguracja wymaga zmiany ustawień rejestru. Dostępne są dwie opcje realizacji tego zadania: automatycznie przy użyciu narzędzia do konfiguracji serwera dla łącznika Microsoft RMS lub za pomocą ręcznej edycji rejestru.
+Ta konfiguracja wymaga zmiany ustawień rejestru. Aby to zrobić, masz dwie opcje: Automatycznie przy użyciu narzędzia do konfiguracji serwera dla łącznika Microsoft RMS lub ręcznie, edytując rejestr.
 
 ---
 
@@ -90,11 +90,11 @@ Po wprowadzeniu zmian konfiguracji na tych serwerach należy uruchomić je ponow
 
 3.  Zdecyduj, jak uruchomić narzędzie:
 
-    -   **Lokalnie**: możesz uruchomić narzędzie w trybie interakcyjnym na serwerze, który ma być skonfigurowany do komunikowania się z łącznikiem usługi RMS. Jest to przydatne w przypadku jednorazowego przeprowadzania konfiguracji, np. w środowisku testowym.
+    -   **Lokalnie**: Interaktywnie Uruchom narzędzie na serwerze, należy skonfigurować do komunikowania się z łącznikiem usługi RMS. Jest to przydatne w przypadku jednorazowego przeprowadzania konfiguracji, np. w środowisku testowym.
 
-    -   **Wdrożenie oprogramowania**: możesz uruchomić narzędzie w celu utworzenia plików rejestru do późniejszego wdrożenia na jednym serwerze lub większej liczbie odpowiednich serwerów za pomocą aplikacji do zarządzania systemami, która obsługuje wdrożenia oprogramowania, takiej jak System Center Configuration Manager.
+    -   **Wdrażanie oprogramowania**: Można uruchomić narzędzie w celu utworzenia plików rejestru do późniejszego wdrożenia na co najmniej jeden odpowiednich serwerów za pomocą aplikacji do zarządzania systemami, która obsługuje wdrożenia oprogramowania, takie jak System Center Configuration Manager.
 
-    -   **Zasady grupy**: możesz uruchomić narzędzie w celu utworzenia skryptu do przekazania administratorowi, który może utworzyć obiekty zasad grupy służące do konfigurowania serwerów. Ten skrypt tworzy jeden obiekt zasad grupy dla każdego typu serwera, który ma być skonfigurowany. Następnie administrator może przypisać obiekty do odpowiednich serwerów.
+    -   **Zasady grupy**: Można uruchomić narzędzie w celu utworzenia skryptu do przekazania administratorowi, który może utworzyć obiekty zasad grupy służące do konfigurowania serwerów. Ten skrypt tworzy jeden obiekt zasad grupy dla każdego typu serwera, który ma być skonfigurowany. Następnie administrator może przypisać obiekty do odpowiednich serwerów.
 
     > [!NOTE]
     > To narzędzie służy do konfigurowania wymienionych na początku tego tematu serwerów, które będą komunikować się z łącznikiem usługi RMS. Nie uruchamiaj tego narzędzia na serwerach, na których działa łącznik usługi RMS.
@@ -128,9 +128,9 @@ Aby uzyskać szczegółowe informacje dla każdego typu usług, skorzystaj z nas
 ## <a name="configuring-an-exchange-server-to-use-the-connector"></a>Konfigurowanie serwera programu Exchange do używania łącznika
 Następujące role Exchange komunikują się z łącznikiem usługi RMS:
 
--   Dla programów Exchange 2016 i Exchange 2013: serwery dostępu klientów i serwery skrzynek pocztowych
+-   Dla programów Exchange 2016 i Exchange 2013: Serwery dostępu klientów i serwery skrzynek pocztowych
 
--   Dla programu Exchange 2010: serwery dostępu klientów i serwery transportu centralnego
+-   W przypadku programu Exchange 2010: Serwery dostępu klientów i serwery transportu centralnego
 
 W celu korzystania z łącznika usługi RMS te serwery programu Exchange muszą mieć uruchomioną jedną z następujących wersji oprogramowania:
 
@@ -247,7 +247,7 @@ Aby można było użyć łącznika usług RMS i infrastruktury klasyfikacji plik
 
 3. Utwórz reguły klasyfikacji i zadania zarządzania plikami w celu ochrony dokumentów za pomocą szyfrowania RMS, a następnie określ szablon RMS, aby automatycznie zastosować zasady RMS. Aby uzyskać więcej informacji, zobacz temat [Menedżer zasobów serwera plików — omówienie](https://technet.microsoft.com/library/hh831701.aspx) w bibliotece dokumentacji systemu Windows Server.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Kiedy łącznik usługi RMS został zainstalowany i skonfigurowany, a serwery są skonfigurowane do korzystania z niego, administratorzy IT i użytkownicy mogą chronić i stosować wiadomości e-mail i dokumenty przy użyciu usługi Azure Rights Management. Aby użytkownikom było łatwiej, można wdrożyć klienta usługi Azure Information Protection, który instaluje dodatek do pakietu Office i dodaje nowe opcje prawego przycisku myszy do Eksploratora plików. Więcej informacji zawiera [podręcznik administratora klienta usługi Azure Information Protection](./rms-client/client-admin-guide.md).
 
 Należy zauważyć, że można skonfigurować szablony przypisane do działów, które mają być używane w zgodzie z regułami transportu programu Exchange lub infrastrukturą FCI systemu Windows Server. Konfiguracja zakresu musi zawierać taką opcję zgodności aplikacji, dla której pole wyboru **Pokaż ten szablon wszystkim użytkownikom, gdy aplikacje nie obsługują tożsamości użytkownika** jest zaznaczone.

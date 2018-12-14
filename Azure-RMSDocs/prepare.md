@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024106"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173880"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Przed wdrożeniem usługi Azure Information Protection w organizacji upewnij się, że w usłudze Azure AD istnieją konta użytkowników i grup dla dzierżawy organizacji.
 
@@ -73,9 +73,9 @@ W przypadku przypisywania praw użytkowania i kontroli dostępu oraz konfigurowa
     
     Usługa Azure Information Protection może używać dowolnej wartości w tym atrybucie proxyAddresses usługi Azure AD, jeśli domena została dodana do dzierżawy („zweryfikowana domena”). Więcej informacji na temat weryfikowania domen można znaleźć w następujących artykułach:
     
-    - W przypadku usługi Azure AD: [Dodawanie niestandardowej nazwy domeny do usługi Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
+    - Dla usługi Azure AD: [Dodawanie niestandardowej nazwy domeny do usługi Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - Dla usługi office 365: [dodać domenę do usługi Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - Dla usługi office 365: [Dodawanie domeny do usługi Office 365](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - Atrybut **userPrincipalName usługi Azure AD** jest używany tylko wtedy, gdy konto w dzierżawie nie ma wartości atrybutu proxyAddresses usługi Azure AD. Można na przykład utworzyć użytkownika w witrynie Azure Portal lub utworzyć użytkownika bez skrzynki pocztowej w usłudze Office 365.
 
@@ -113,7 +113,7 @@ Oprócz używania atrybutu proxyAddresses usługi Azure AD dla grup w dzierżawi
 
 ## <a name="using-accounts-from-active-directory-on-premises-for-azure-information-protection"></a>Używanie kont z lokalnej usługi Active Directory na potrzeby usługi Azure Information Protection
 
-Jeśli masz konta zarządzane lokalnie, które mają być używane w usłudze Azure Information Protection, musisz je zsynchronizować z usługą Azure AD. W celu ułatwienia wdrażania zalecamy użycie programu [Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect). Możesz jednak użyć dowolnej metody synchronizacji katalogu, która daje ten sam wynik.
+Jeśli masz konta zarządzane lokalnie, które mają być używane w usłudze Azure Information Protection, musisz je zsynchronizować z usługą Azure AD. W celu ułatwienia wdrażania zalecamy użycie programu [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect). Możesz jednak użyć dowolnej metody synchronizacji katalogu, która daje ten sam wynik.
 
 Podczas synchronizowania kont nie trzeba synchronizować wszystkich atrybutów. Aby uzyskać listę atrybutów, które należy zsynchronizować, zobacz [sekcję dotyczącą usługi Azure RMS](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms) w dokumentacji usługi Azure Active Directory.
 
@@ -128,7 +128,7 @@ Jeśli na przykład w sesji programu PowerShell używasz modułu PowerShell w we
     Connect-MsolService
 
 
-Uwaga: jeśli to polecenie nie działa, w celu zainstalowania modułu MSOnline możesz uruchomić polecenie `Install-Module MSOnline`.
+Uwaga: Jeśli polecenie to nie rozwiąże problemu, możesz uruchomić `Install-Module MSOnline` do zainstalowania modułu MSOnline.
 
 Następnie skonfiguruj sesję programu PowerShell tak, aby wartości nie były przycinane:
 
@@ -203,13 +203,13 @@ Ze względu na wydajność usługi Azure Information Protection buforuje członk
 Pamiętaj, aby uwzględnić to opóźnienie we wszystkich zmianach i wykonywanym testowaniu w przypadku korzystania z grup do udzielania praw użytkowania lub konfigurowania usługi Azure Rights Management lub po skonfigurowaniu zasad o określonym zakresie.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Po potwierdzeniu, że użytkownicy i grupy mogą służyć za pomocą usługi Azure Information Protection i wszystko będzie gotowe do uruchomienia ochrony dokumentów i wiadomości e-mail, sprawdź, czy chcesz aktywować usługę Azure Rights Management. Ta usługa musi być aktywowana, aby chronić dokumenty i wiadomości e-mail w organizacji: 
 
 - Począwszy od lutego 2018 r.: Jeśli subskrypcję obejmującą usługę Azure Rights Management lub usługi Azure Information Protection został uzyskany w trakcie lub po miesiącem, usługa automatycznie została aktywowana dla Ciebie. 
 
-- Jeśli Twoja subskrypcja została uzyskany wcześniej lutego 2018 r.: możesz aktywować usługę samodzielnie. 
+- Jeśli Twoja subskrypcja została uzyskany wcześniej lutego 2018 r.: Należy aktywować usługę samodzielnie. 
 
 Aby uzyskać więcej informacji, która obejmuje sprawdzanie stanu aktywacji, zobacz [Aktywacja usługi Azure Rights Management](./activate-service.md).
 

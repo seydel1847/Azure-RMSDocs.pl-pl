@@ -1,28 +1,28 @@
 ---
 title: Konfiguracja systemu Windows Phone | Azure RMS
-description: Aplikacje systemu Windows Phone mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji.
+description: Aplikacje Windows Phone można użyć programu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacjach.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 50480fef2983f715a54b68ae1b21dbcf28e9b554
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2c85449615fd0db5f88c452031cbc5b837cb0f82
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151507"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266396"
 ---
 # <a name="windows-phone-setup"></a>Konfiguracja systemu Windows Phone
 
 
-Aplikacje systemu Windows Phone mogą używać zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacji przy użyciu usługi Azure Active Directory Rights Management (AAD RM).
+Aplikacje Windows Phone można użyć programu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Active Directory Rights Management (AAD RM).
 
 Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzenia nowych własnych aplikacji.
 
@@ -35,11 +35,11 @@ Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzeni
 
 Musisz mieć następujące oprogramowanie w systemie deweloperskim:
 
--   System operacyjny [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet).
--   [Narzędzia programistyczne (SDK) dla systemu Windows Phone 8.1](http://dev.windowsphone.com/en-us/downloadsdk)
--   Program Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) lub nowszy albo program Visual Studio Express 2012 uwzględniony w zestawie SDK dla systemu Windows Phone 8.0/8.1
--   Zestaw MS RMS SDK 4.2 dla systemu Windows Phone. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
--   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library](https://msdn.microsoft.com/library/jj573266.aspx), ale można korzystać z innych bibliotek uwierzytelniania.
+-   System operacyjny [Windows 8.1](https://windows.microsoft.com/windows-8/meet).
+-   [Narzędzia programistyczne (SDK) dla systemu Windows Phone 8.1](https://developer.microsoft.com/windows/downloads/sdk-archive)
+-   Program Microsoft [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/) lub nowszy albo program Visual Studio Express 2012 uwzględniony w zestawie SDK dla systemu Windows Phone 8.0/8.1
+-   Pakiet MS RMS SDK 4.2 dla Windows Phone. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
+-   Biblioteka uwierzytelniania: Firma Microsoft zaleca użycie [Azure AD Authentication Library](https://msdn.microsoft.com/library/jj573266.aspx) i innych bibliotek uwierzytelniania mogą być używane.
 
 Temat [Nowości](release-notes.md) zawiera informacje dotyczące aktualizacji interfejsu API, urządzeń i środowiska oraz informacje o wersji i często zadawane pytania.
 
@@ -79,6 +79,6 @@ Teraz możesz przystąpić do tworzenia własnych nowych aplikacji dla systemu W
 
 [Dokumentacja interfejsu API systemu Windows](https://msdn.microsoft.com/library/dn891914.aspx)
 
-[Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
+[Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/)
 
-[Zestaw SDK dla systemu Windows Phone](http://dev.windowsphone.com/en-us/downloadsdk)
+[Zestaw SDK dla systemu Windows Phone](https://developer.microsoft.com/windows/downloads/sdk-archive)

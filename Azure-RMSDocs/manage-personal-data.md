@@ -4,18 +4,18 @@ description: Informacje o danych osobowych, które jest używane przez usługi A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: 6904c8c1e879a4d076486fae17a1dbdbd71cb4b4
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4e44796d3bd2fdf1fd2f0c39cc759f16d87267a1
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150436"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319418"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Zarządzanie danymi osobowymi usługi Azure Information Protection
 
@@ -251,7 +251,7 @@ Aby usunąć danych osobowych w plikach dziennika klienta i dzienników skanera,
 
 Użyj następujących trzech kroków do żądania, że Microsoft powoduje usunięcie danych osobowych w dokumencie śledzenia dzienników, dzienniki administracji lub dzienników użycia usługi Azure Rights Management. 
 
-**Krok 1: Usuń Zainicjuj żądanie**
+**Krok 1: Żądanie usunięcia inicjowania**
 [się z pomocą techniczną firmy Microsoft](information-support.md#to-contact-microsoft-support) otworzyć zgłoszenie do pomocy technicznej usługi Azure Information Protection z żądaniem usunięcie danych z Twojej dzierżawy. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection i zrozumieć, że ten proces trwa kilka dni, aby potwierdzić. Podczas przesyłania żądania, konieczne będzie podanie dodatkowych informacji, w zależności od danych, który musi zostać usunięty.
 
 - Aby usunąć z dziennikiem administracji, należy podać **Data zakończenia**. Wszystkie dzienniki administratora do momentu usunięcia tej daty zakończenia.
@@ -262,7 +262,7 @@ Usunięcie tych danych jest trwałe. Istnieje sposób odzyskiwania danych po prz
 
 **Krok 2: Oczekiwanie na weryfikację** firma Microsoft zweryfikuje, że żądanie można usunąć jednego lub więcej dzienników jest uzasadnione. Ten proces może potrwać do pięciu dni roboczych.
 
-**Krok 3. Pobieranie potwierdzenia usunięcia** usług pomocy technicznej firmy Microsoft (CSS) będzie wysyłać wiadomość e-mail z potwierdzeniem, że dane zostały usunięte. 
+**Krok 3: Uzyskaj potwierdzenie usunięcia** usług pomocy technicznej firmy Microsoft (CSS) będzie wysyłać wiadomość e-mail z potwierdzeniem, że dane zostały usunięte. 
 
 ## <a name="exporting-personal-data"></a>Eksportowanie danych osobowych
 Korzystając z polecenia cmdlet programu PowerShell usługi AADRM, dane osobowe staje się dostępny do wyszukiwania i eksportowanie jako obiekt programu PowerShell. Obiekt programu PowerShell może być przekonwertowany do formatu JSON i zapisywane przy użyciu `ConvertTo-Json` polecenia cmdlet.

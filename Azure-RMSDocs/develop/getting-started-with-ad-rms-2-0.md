@@ -1,6 +1,6 @@
 ---
 title: Wprowadzenie | Azure RMS
-description: Zestaw RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.
+description: Platforma zestawu RMS SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,18 +12,18 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2113d408356fc80efa90838bf667712d47ce7e0f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 43e63165fcf8c19760a9f82619a02923ba55e97e
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147342"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266345"
 ---
 # <a name="getting-started"></a>Wprowadzenie
 
 Zestaw Rights Management Services SDK 2.1 umożliwia deweloperom tworzenie aplikacji korzystających z ochrony informacji usługi RMS za pomocą serwera usługi RMS lub usługi Azure RMS. Platforma obsługuje złożone rozwiązania w zakresie zabezpieczeń, takie jak zarządzanie kluczami oraz przetwarzanie szyfrowania i odszyfrowywania, a także oferuje uproszczony interfejs API ułatwiający tworzenie aplikacji.
 
-## <a name="get-started-with-rms-sdk-21"></a>Rozpoczynanie pracy z zestawem RMS SDK 2.1
+## <a name="get-started-with-rmssdk21"></a>Wprowadzenie do zestawu RMS SDK 2.1
 
 W tym temacie szczegółowo przedstawiono proces konfigurowania i uruchamiania aplikacji z obsługą praw w środowisku testowym. Poniższe tematy zawierają opis konfigurowania środowiska deweloperskiego. Wymieniono je w porządku sugerującym kolejność wykonywania czynności.
 
@@ -39,7 +39,7 @@ W tym temacie szczegółowo przedstawiono proces konfigurowania i uruchamiania a
 | [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md) |W tym temacie szczegółowo przedstawiono opcje wdrażania aplikacji z obsługą praw.|
 
 
-Spróbuj zastosować zestaw RMS SDK 2.1, postępując zgodnie z instrukcjami zamieszczonymi w tych tematach:
+Spróbuj przy użyciu zestawu RMS SDK 2.1, postępując zgodnie ze wskazówkami w tych tematach:
 
 - [Instalacja zestawu SDK](install-the-rms-sdk.md)
 - [Konfigurowanie programu Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
@@ -47,9 +47,9 @@ Spróbuj zastosować zestaw RMS SDK 2.1, postępując zgodnie z instrukcjami zam
 - [Testowanie aplikacji](how-to-set-up-your-test-environment.md)
 - [Wdrażanie w środowisku produkcyjnym](deploying-your-application.md)
 
-### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>Dlaczego warto chronić zawartość przy użyciu zestawu RMS SDK 2.1
+### <a name="why-use-rmssdk21-for-protecting-your-content"></a>Dlaczego warto używać zestawu RMS SDK 2.1 do ochrony Twojej zawartości
 
-W przypadku deweloperów, którzy chcą dodać obsługę usługi RMS do nowych i istniejących aplikacji, zestaw RMS SDK 2.1 ułatwia następujące działania:
+Dla deweloperów, którzy chcą dodać obsługę usługi RMS do nowych i istniejących aplikacji zestaw RMS SDK 2.1 pomaga w ułatwienia:
 
 -   Tworzenie zarządzanych, zgodnych i niezawodnych aplikacji obsługujących usługę RMS.
 -   Trwałe szyfrowanie danych użytkowników. Dane pozostaną zaszyfrowane niezależnie od środowiska, urządzenia i systemu operacyjnego.
@@ -57,7 +57,7 @@ W przypadku deweloperów, którzy chcą dodać obsługę usługi RMS do nowych i
 -   Obsługa zasad ochrony zarządzanych przez przedsiębiorstwo.
 -   Obsługa nowych mechanizmów uwierzytelniania i algorytmów szyfrowania w miarę ich wprowadzania.
 
-Zestaw RMS SDK 2.1 obsługuje wiele ważnych platform klientów i serwerów. Aby uzyskać więcej informacji, zobacz [Obsługiwane platformy](supported-platforms.md).
+Zestaw RMS SDK 2.1 obsługuje szeroką gamę ważnych platform klientów i serwerów. Aby uzyskać więcej informacji, zobacz [Obsługiwane platformy](supported-platforms.md).
 
 ## <a name="core-principles"></a>Podstawowe zasady
 
@@ -68,4 +68,3 @@ Zestaw RMS SDK 2.1 obsługuje wiele ważnych platform klientów i serwerów. Aby
 ## <a name="related-topics"></a>Tematy pokrewne
 
 * [Przewodnik dla deweloperów usług RMS](developers-guide.md)
-* [AD RMS Developer's Corner (Kącik dewelopera usługi AD RMS)](http://blogs.msdn.com/b/rms/)

@@ -4,22 +4,22 @@ description: Po włączeniu ochrony dokumentów można śledzić ich użycie. W 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 485b999ce8b5adcbe284d0ea8286cdf1183ac8da
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 251de2d7e959dc46bcf95c003fd8924cc4c34d13
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151037"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305232"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1*
 
 Po włączeniu ochrony dokumentów za pomocą usługi Azure Information Protection można śledzić użycie tych dokumentów. W razie potrzeby można również odwołać dostęp do nich, jeśli pewne osoby stracą prawo do ich czytania. Służy do tego **witryna śledzenia dokumentów**. Jest ona dostępna z komputerów z systemem Windows, komputerów Mac, a nawet tabletów i telefonów.
 
@@ -95,17 +95,17 @@ Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub a
 
 - Korzystając z komputera z systemem Windows, komputera Mac lub urządzenia przenośnego, przejdź do [witryny śledzenia dokumentów](https://go.microsoft.com/fwlink/?LinkId=529562).
 
-    **Obsługiwane przeglądarki**: zaleca się korzystanie z przeglądarki Internet Explorer 10 lub nowszej, jednak dostęp do witryny śledzenia dokumentów można uzyskać przy użyciu dowolnej z poniższych przeglądarek:
+    **Obsługiwane przeglądarki**: Firma Microsoft zaleca używanie programu Internet Explorer, który jest co najmniej w wersji 10, ale można użyć dowolnej z poniższych przeglądarek służące do witryny śledzenia dokumentów:
 
-    - Internet Explorer: wersja 10 lub nowsza
+    - Program Internet Explorer: Co najmniej w wersji 10
 
-    - Internet Explorer 9 z poprawką MS12-037: zbiorcza aktualizacja zabezpieczeń programu Internet Explorer z 12 czerwca 2012 r.
+    - Internet Explorer 9 z co najmniej MS12-037: Zbiorcza aktualizacja zabezpieczeń programu Internet Explorer: 12 czerwca 2012
 
-    - Mozilla Firefox: wersja 12 lub nowsza
+    - Mozilla Firefox: Co najmniej wersja 12
 
-    - Apple Safari 5: wersja 5 lub nowsza
+    - Apple Safari 5: Co najmniej w wersji 5
 
-    - Google Chrome: wersja 18 lub nowsza
+    - Google Chrome: Co najmniej wersja 18 lub
 
 
 ## <a name="other-instructions"></a>Inne instrukcje

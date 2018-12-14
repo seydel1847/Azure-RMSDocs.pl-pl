@@ -4,22 +4,22 @@ description: Informacje na temat operacji cyklu życia, które są istotne, jeś
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6fd356e88cbd7581bfafaf9a946eaa8fd9eba15e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3cddb4660ddae7bb19ff2ef1994fb4fa3c0bf9a6
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149518"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305390"
 ---
-# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cykl życia klucza dzierżawy
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cyklu życia klucza dzierżawy
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Jeśli firma Microsoft zarządza kluczem dzierżawy usługi Azure Information Protection (ustawienie domyślne), następujące sekcje zawierają Aby uzyskać więcej informacji na temat operacji cyklu życia, związanych z tą topologią.
 
@@ -57,15 +57,15 @@ Za tworzenie kopii zapasowych klucza dzierżawy odpowiada firma Microsoft. Nie w
 ## <a name="export-your-tenant-key"></a>Eksport klucza dzierżawy
 Konfiguracja usługi Azure Information Protection i klucz dzierżawy usługi można wyeksportować, wykonując instrukcje podane w następujących trzech krokach:
 
-### <a name="step-1-initiate-export"></a>Krok 1. Zainicjowanie eksportu
+### <a name="step-1-initiate-export"></a>Krok 1: Zainicjowanie eksportu
 
 - [Skontaktuj się z Microsoft Support](information-support.md#to-contact-microsoft-support) otworzyć **zgłoszenia do pomocy technicznej usługi Azure Information Protection z żądaniem eksportu klucza usługi Azure Information Protection**. Musisz udowodnić, że jesteś administratorem dzierżawy usługi Azure Information Protection oraz wiedzieć, że potwierdzenie tego procesu trwa kilka dni. Naliczane są standardowe opłaty za pomoc techniczną. Eksportowanie klucza dzierżawy nie jest bezpłatną usługą pomocy technicznej.
 
-### <a name="step-2-wait-for-verification"></a>Krok 2. Oczekiwanie na weryfikację
+### <a name="step-2-wait-for-verification"></a>Krok 2: Oczekiwanie na weryfikację
 
 - Firma Microsoft sprawdza, czy żądanie wydania klucza dzierżawy usługi Azure Information Protection jest uzasadnione. Proces ten może potrwać do trzech tygodni.
 
-### <a name="step-3-receive-key-instructions-from-css"></a>Krok 3. Otrzymanie instrukcji dotyczących klucza od CSS
+### <a name="step-3-receive-key-instructions-from-css"></a>Krok 3: Otrzymanie instrukcji dotyczących klucza od CSS
 
 - Pomoc techniczna firmy Microsoft (CSS, Customer Support Services) przesyła konfigurację i klucz dzierżawy usługi Azure Information Protection w formie zaszyfrowanej w pliku chronionym hasłem. Ten plik ma rozszerzenie **tpd**. W tym celu CSS przesyła najpierw Tobie (osobie, która zainicjowała eksport) narzędzie pocztą e-mail. Narzędzie należy uruchomić z wiersza polecenia w następujący sposób:
 
@@ -79,7 +79,7 @@ Konfiguracja usługi Azure Information Protection i klucz dzierżawy usługi mo�
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    Polecenie to powinno zwracać dwa pliki: jeden z nich zawiera hasło do chronionego hasłem pliku TPD w formie zwykłego tekstu, a drugi to sam chroniony hasłem plik TPD. Pliki mają nowy identyfikator GUID, na przykład:
+    Dane wyjściowe tego polecenia powinno zwracać dwa pliki: Jedno zawiera hasła w postaci zwykłego tekstu do chronionego hasłem pliku TPD, a drugi to chroniony hasłem plik TPD sam. Pliki mają nowy identyfikator GUID, na przykład:
      
     - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 
@@ -87,7 +87,7 @@ Konfiguracja usługi Azure Information Protection i klucz dzierżawy usługi mo�
 
     Należy wykonać kopię zapasową tych plików i zapisać je w bezpiecznym miejscu, co pozwoli na kontynuowanie odszyfrowywania zawartości chronionej przy użyciu tego klucza dzierżawy. Dodatkowo w przypadku migracji do usługi AD RMS można zaimportować ten plik TPD (plik o nazwie rozpoczynającej się od **ExportedTDP**) do serwera usługi AD RMS.
 
-### <a name="step-4-ongoing-protect-your-tenant-key"></a>Krok 4. Ciągły: ochrona klucza dzierżawy
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>Krok 4: Trwającą: Ochrona klucza dzierżawy
 
 Po otrzymaniu klucza dzierżawy należy przechowywać go w bezpiecznym miejscu, ponieważ uzyskanie dostępu do niego umożliwia odszyfrowanie wszystkich dokumentów chronionych przy użyciu tego klucza.
 

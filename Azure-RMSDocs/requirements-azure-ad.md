@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 58de817eec541c4bbb1b5d4541469cda0d93e417
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d52b6fe3c290a6a012d66a39f60633cfb3e08504
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024199"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173353"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Wymagania usługi Azure Active Directory dotyczące usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Musi mieć katalog usługi Azure AD, aby używać usługi Azure Information Protection. Używasz konta z tego katalogu do logowania w witrynie Azure Portal, gdzie, na przykład, można skonfigurować i zarządzać etykiety usługi Azure Information Protection i szablony usługi Azure Rights Management.
 
@@ -92,6 +92,6 @@ Następnie skonfiguruj rozwiązanie MFA:
  
 - Konta usługi, która działa skaner.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby sprawdzić pozostałe wymagania, zobacz [Requirements for Azure Information Protection](requirements.md) (Wymagania dotyczące usługi Azure Information Protection).
 

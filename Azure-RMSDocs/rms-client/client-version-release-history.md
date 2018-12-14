@@ -4,25 +4,25 @@ description: Zobacz, co jest nowe lub zostały zmienione w wersji klienta usług
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/05/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: c6312d3f10a70ffcb3cc48447fcbc751b7072a0d
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861221"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335527"
 ---
-# <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: zasady wydania wersji historii i pomoc techniczna
+# <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Klient usługi Azure Information Protection: Wydania wersji zasad historii i pomoc techniczna
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, systemu Windows Server 2008 R2*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 z dodatkiem SP1, systemu Windows Server 2016, Windows Server 2012 R2, systemu Windows Server 2012, Windows Server 2008 R2*
 
 Zespół pracujący nad usługą Azure Information Protection regularnie aktualizuje klienta usługi Azure Information Protection w celu wprowadzenia poprawek i dodania nowych funkcji. 
 
-Można pobrać najnowszej ogólnodostępnej wersji i bieżącej wersji zapoznawczej (jeśli jest dostępny) z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Po krótkiej chwili zazwyczaj kilka tygodni, wersji ogólnie dostępnej znajduje się również w wykazie usługi Microsoft Update (kategoria: **usługi Azure Information Protection**). To uwzględnienie w wykazie oznacza, że uaktualnienie klienta za pomocą programu WSUS lub programu Configuration Manager lub innych mechanizmów wdrażania oprogramowania, korzystających z usługi Microsoft Update.
+Można pobrać najnowszej ogólnodostępnej wersji i bieżącej wersji zapoznawczej (jeśli jest dostępny) z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018). Po krótkiej chwili zazwyczaj kilka tygodni, wersji ogólnie dostępnej znajduje się również w wykazie usługi Microsoft Update (kategoria: **Usługa Azure Information Protection**). To uwzględnienie w wykazie oznacza, że uaktualnienie klienta za pomocą programu WSUS lub programu Configuration Manager lub innych mechanizmów wdrażania oprogramowania, korzystających z usługi Microsoft Update.
 
 Aby uzyskać więcej informacji, zobacz [uaktualnianie i obsługa klienta usługi Azure Information Protection](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client).
 
@@ -44,9 +44,9 @@ Skorzystaj z poniższych informacji, zobacz, co jest nowe lub zostały zmienione
 ## <a name="version-141510"></a>Wersja 1.41.51.0
 
 > [!TIP]
-> Zainteresowani oceny klienta etykietowania ujednolicone usługi Azure Information Protection, ponieważ etykiety są publikowane w Centrum zgodności i zabezpieczeń usługi Office 365? Zobacz [usługi Azure Information Protection unified etykietowania klienta: informacje o wersji wersji](unifiedlabelingclient-version-release-history.md).
+> Zainteresowani oceny klienta etykietowania ujednolicone usługi Azure Information Protection, ponieważ etykiety są publikowane w Centrum zgodności i zabezpieczeń usługi Office 365? Zobacz [usługi Azure Information Protection unified etykietowania klienta: Informacje o wersji wersji](unifiedlabelingclient-version-release-history.md).
 
-**Wydana**: 11/27/2018 r.
+**Wydana**: 11 27 2018
 
 Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 
@@ -74,7 +74,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
     
     - Oznaczenia wizualne są teraz stosowane, jeśli zapiszesz arkusz kalkulacyjny podczas edytowania komórki.
     
-    - Excel 2010: Gdy arkusz kalkulacyjny jest chroniony za pomocą współautorem [poziom uprawnień](../configure-usage-rights.md#rights-included-in-permissions-levels), **Usuń etykietę** przycisk jest teraz dostępna, kliknij prawym przyciskiem myszy plik, a wybranie **Klasyfikuj i Ochrona**.
+    - Excel 2010: Gdy arkusz kalkulacyjny jest chroniony za pomocą współautorem [poziom uprawnień](../configure-usage-rights.md#rights-included-in-permissions-levels), **Usuń etykietę** przycisk jest teraz dostępna, kliknij prawym przyciskiem myszy plik, a wybranie **Klasyfikuj i Chroń**.
 
 - Zaawansowane ustawienia klienta, które mogą [usuwanie nagłówków i stopek z innych rozwiązań etykietowania](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions) obsługuje teraz układy niestandardowe.
 
@@ -106,11 +106,13 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 
 - Skanera usługi Azure Information Protection:
 
-    - Nowe polecenie cmdlet, [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner): wymagane do uruchamiania raz po uaktualnianie z poprzedniej wersji Ogólnodostępnej (1.29.5.0) lub wcześniej.
+    - Nowe polecenie cmdlet, [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner): Wymagane do uruchamiania raz po uaktualnianie z poprzedniej wersji Ogólnodostępnej (1.29.5.0) lub wcześniej.
     
-    - Nowe polecenie cmdlet, [Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): pobiera bieżący stan usługi skanera.  
+    - Nowe polecenie cmdlet, [Get AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): Pobiera bieżący stan usługi skanera.  
     
-    - Nowe polecenie cmdlet, [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): powoduje, że skanera można uruchomić na czas cykl skanowania w poszukiwaniu, kiedy harmonogram ustawiono na ręcznie.
+    - Nowe polecenie cmdlet, [Start AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): Powoduje, że skanera można uruchomić na czas cykl skanowania w poszukiwaniu, kiedy harmonogram ustawiono na ręcznie.
+    
+    - Gdy ISO standard jest używany do szyfrowania plików PDF, dokumentów PDF są teraz chronione domyślnie.
     
     - Program SharePoint Server 2010 jest obsługiwana w przypadku klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).
     
@@ -150,7 +152,7 @@ Ta wersja zawiera wersję MSIPC 1.0.3592.627 klienta usługi RMS.
 
 - Wersja zasad jest zmieniany na 1.4. Identyfikowanie numer wersji jest wymagana dla [Konfigurowanie odłączonych komputerów](client-admin-guide-customizations.md#support-for-disconnected-computers).
 
-- **Prześlij nam opinię** łącze w **Pomoc i opinie** okno dialogowe zostanie usunięty. Tymczasowo zastąpione **zgłosić problem**, ale link ten będzie wyświetlać teraz w wersji zapoznawczej tylko w wersji. Domyślnie opcja ta wysyła wiadomość e-mail do firmy Microsoft, ale możesz zmienić ten adres e-mail, na ciągu HTTP, który określisz. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. Aby zmodyfikować ten adres, użyj [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link).
+- **Prześlij nam opinię** łącze w **Pomoc i opinie** okno dialogowe zostanie usunięty. Tymczasowo zastąpione **zgłosić problem** wiadomość e-mail, domyślnie wysyłane do firmy Microsoft. Od grudnia 2018, **zgłosić problem** opcja nie jest wyświetlany domyślnie, ale można dodać z [Zaawansowane ustawienia klienta](client-admin-guide-customizations.md#add-report-an-issue-for-users) gdzie Określ ciąg HTTP dla tego połączenia. Na przykład dostosowanej strony sieci web, przeznaczonego dla użytkowników, aby zgłosić problemy lub adres e-mail, który prowadzi do pomocy technicznej. 
 
 ## <a name="version-12950"></a>Wersja 1.29.5.0 
 
@@ -202,11 +204,11 @@ Ta wersja zawiera wersję MSIPC 1.0.3403.1224 klienta usługi RMS.
 
 - Usunięte "Gratulujemy!" Witaj i "What's new in Azure Information Protection" strony wyświetlany w aplikacjach pakietu Office do użytku po raz pierwszy.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać więcej informacji o instalowaniu i używaniu klienta: 
 
-- Użytkownicy: [pobieranie i instalowanie klienta](install-client-app.md)
+- Dla użytkowników: [Pobieranie i instalowanie klienta](install-client-app.md)
 
-- Administratorzy: [Podręcznik administratora klienta usługi Azure Information Protection](client-admin-guide.md)
+- Dla administratorów: [Podręcznik administratora klienta usługi Azure Information Protection](client-admin-guide.md)
 

@@ -4,22 +4,22 @@ description: Nazwa usługi Azure Information Protection była wielokrotnie zmien
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 496912a8dea0c73957d979d3f2cd42d785d532aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 036b80b1c2aa7026b1f7993d42ce726d518209c0
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149960"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305135"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Inne nazwy usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Usługa Azure Information Protection (czasami używana jest skrócona nazwa AIP) wywodzi się z długiej tradycji ugruntowanych technologii firmy Microsoft, które wprowadzają ochronę przy użyciu usługi Rights Management. Z tego powodu możesz znać to rozwiązanie pod jedną z wcześniejszych nazw. Możesz też natknąć się na odwołania do tych nazw w dokumentacji, interfejsie użytkownika i plikach dziennika. 
 

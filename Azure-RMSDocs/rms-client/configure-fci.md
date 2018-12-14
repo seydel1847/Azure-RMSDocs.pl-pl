@@ -4,22 +4,22 @@ description: Instrukcje dotyczące korzystania z klienta usługi Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/14/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 099b4985a0e595c22ec29fd2d682d092a5b445b5
-ms.sourcegitcommit: 395918e9e3513e1d791bbfc16c0fc90e4dd605eb
+ms.openlocfilehash: 19a295076ce86da0c93685250cd62b0ca1ca41e6
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750632"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305708"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), system Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Ten artykuł zawiera instrukcje i skrypt umożliwiające użycie klienta usługi Azure Information Protection i programu PowerShell w celu skonfigurowania Menedżera zasobów serwera plików oraz infrastruktury klasyfikacji plików (FCI).
 
@@ -113,7 +113,7 @@ Należy pamiętać, że w przypadku wprowadzenia zmian do szablonu usługi Right
 
         `[string]$BposTenantId = "23976bc6-dcd4-4173-9d96-dad1f48efd42",`
 
-3.  Podpisz skrypt. Jeśli nie podpiszesz skryptu (bezpieczniejsza opcja), należy skonfigurować program Windows PowerShell na serwerach, na których uruchomiono skrypt. Na przykład uruchom sesję programu Windows PowerShell, korzystając z opcji **Uruchom jako Administrator** i wpisz **Set-ExecutionPolicy RemoteSigned**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów przechowywanych na tym serwerze (mniej bezpieczna opcja).
+3.  Podpisz skrypt. Jeśli nie podpiszesz skryptu (bezpieczniejsza opcja), należy skonfigurować program Windows PowerShell na serwerach, na których uruchomiono skrypt. Na przykład Uruchom sesję programu Windows PowerShell, korzystając z **Uruchom jako Administrator** opcję i wpisz: **Set-ExecutionPolicy RemoteSigned**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów przechowywanych na tym serwerze (mniej bezpieczna opcja).
 
     Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) w bibliotece dokumentacji programu PowerShell.
 
@@ -125,13 +125,13 @@ Teraz możesz rozpocząć konfigurowanie Menedżera zasobów serwera plików.
 
 -   W węźle Menedżer zasobów serwera plików w pozycji Zarządzanie klasyfikacją utwórz nową lokalną właściwość:
 
-    -   **Nazwa**: Wpisz **RMS**.
+    -   **Nazwa**: Typ **usługi RMS**
 
-    -   **Opis**: Wpisz **Ochrona za pomocą usługi Rights Management**.
+    -   **Opis**:   Typ **ochrony usługi Rights Management**
 
-    -   **Typ właściwości**: Wybierz **Tak/Nie**.
+    -   **Typ właściwości**: Wybierz **tak/nie**
 
-    -   **Wartość**: Wybierz **Tak**.
+    -   **Wartość**: Wybierz **tak**
 
 Teraz można utworzyć regułę klasyfikacji korzystającą z tej właściwości.
 
@@ -141,11 +141,11 @@ Teraz można utworzyć regułę klasyfikacji korzystającą z tej właściwości
 
     -   Na karcie **Ogólne**:
 
-        -   **Nazwa**: Wpisz **Klasyfikuj do ochrony za pomocą usługi RMS**.
+        -   **Nazwa**: Typ **klasyfikacji dla usługi RMS**
 
-        -   **Włączone**: Zachowaj ustawienie domyślne, czyli zaznaczenie tego pola wyboru.
+        -   **Włączone**: Zachowaj wartość domyślną, czyli o tym, że to pole wyboru jest zaznaczone.
 
-        -   **Opis**: wpisz **Klasyfikuj wszystkie pliki w folderze &lt;nazwa folderu&gt; do ochrony za pomocą usługi Rights Management**.
+        -   **Opis**: Typ **Klasyfikuj wszystkie pliki w &lt;nazwa folderu&gt; folderu usługi Rights Management**.
 
             Zastąp *&lt;nazwę folderu&gt;* wybraną nazwą folderu. Na przykład **Klasyfikuj wszystkie pliki w folderze C:\FileShare do ochrony za pomocą usług Rights Management**.
 
@@ -155,11 +155,11 @@ Teraz można utworzyć regułę klasyfikacji korzystającą z tej właściwości
 
     -   Na karcie **Klasyfikacja**:
 
-    -   **Metoda klasyfikacji**: Wybierz **Klasyfikator folderów**.
+    -   **Metoda klasyfikacji**: Wybierz **klasyfikatora folderów**
 
-    -   Nazwa **Właściwości**: Wybierz **RMS**.
+    -   **Właściwość** nazwy: Wybierz **usługi RMS**
 
-    -   **Wartość** właściwości: Wybierz **Tak**.
+    -   Właściwość **wartość**: Wybierz **tak**
 
 Chociaż zasady klasyfikacji można uruchomić ręcznie, dla trwających operacji okazać się tę regułę do uruchomienia zgodnie z harmonogramem, dzięki czemu nowe pliki są sklasyfikowane z właściwością usługi RMS.
 
@@ -171,9 +171,9 @@ Chociaż zasady klasyfikacji można uruchomić ręcznie, dla trwających operacj
 
     -   Skonfiguruj harmonogram uruchamiania wszystkich reguł klasyfikacji, w tym naszej nowej reguły do klasyfikowania plików za pomocą właściwości usługi RMS.
 
-    -   **Zezwalaj na ciągłą klasyfikację nowych plików**: Zaznacz to pole wyboru, aby nowe pliki są klasyfikowane.
+    -   **Zezwalaj na ciągłą klasyfikację nowych plików**: Zaznacz to pole wyboru, dzięki czemu nowe pliki są klasyfikowane.
 
-    -   Opcjonalnie: Wprowadź wszelkie potrzebne zmiany, takie jak konfigurowanie opcji raportów i powiadomień.
+    -   Opcjonalnie: Wprowadź wszelkie zmiany, które mają, takie jak Konfigurowanie opcji raportów i powiadomień.
 
 Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania zadania zarządzania w celu zastosowania ochrony plików przy pomocy usługi RMS.
 
@@ -183,11 +183,11 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
 
     -   Na karcie **Ogólne**:
 
-        -   **Nazwa zadania**: Wpisz **Chroń pliki za pomocą usługi RMS**
+        -   **Nazwa zadania**: Typ **ochrony plików za pomocą usługi RMS**
 
         -   Zachowaj zaznaczenie pola wyboru **Włącz**.
 
-        -   **Opis**: Wpisz **Chroń pliki w folderze &lt;nazwa folderu&gt; za pomocą usługi Rights Management oraz szablon za pomocą skryptu Windows PowerShell.**
+        -   **Opis**: Typ **chronić pliki w &lt;nazwa folderu&gt; przy użyciu usługi Rights Management oraz szablon za pomocą skryptu programu Windows PowerShell.**
 
             Zastąp *&lt;nazwę folderu&gt;* wybraną nazwą folderu. Na przykład **Chroń pliki w folderze C:\FileShare za pomocą usługi Rights Management oraz szablon za pomocą skryptu Windows PowerShell.**
 
@@ -197,7 +197,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
 
     -   Na karcie **Akcja**:
 
-        -   **Typ**: Wybierz **Niestandardowe**
+        -   **Typ**: Wybierz **niestandardowe**
 
         -   **Plik wykonywalny**: Określ następujące ustawienia:
 
@@ -206,7 +206,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
             ```
             Jeśli system Windows nie znajduje się na dysku C:, należy zmodyfikować tę ścieżkę lub przejść do tego pliku.
 
-        -   **Argument**: Określ następujące ustawienia, podając własne wartości &lt;ścieżki&gt; i &lt;identyfikatora szablonu&gt;:
+        -   **Argument**: Określ następujące ustawienia, podając własne wartości dla &lt;ścieżki&gt; i &lt;identyfikator szablonu&gt;:
 
             ```
             -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
@@ -224,23 +224,23 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
             > 
             > W przypadku plików, których właścicielem nie jest użytkownik domeny, możesz skopiować i zapisać pliki jako użytkownik domeny, stając się właścicielem tylko tych plików. Lub, jeśli masz uprawnienia, możesz ręcznie zmienić właściciela.  Lub też można podać konkretny adres e-mail (np. własny lub adres grupy działu informatycznego) zamiast zmiennej [E-mail właściciela pliku źródłowego] oznacza, że wszystkie pliki są chronione przy użyciu tego skryptu używa tego adresu e-mail, aby zdefiniować nowe właściciel.
 
-    -   **Uruchom polecenie jako**: Wybierz **System lokalny**
+    -   **Uruchom polecenie jako**: Wybierz **systemu lokalnego**
 
     -   Na karcie **Warunek**:
 
-        -   **Właściwość**: Wybierz **RMS**
+        -   **Właściwość**: Wybierz **usługi RMS**
 
-        -   W obszarze **Operator** wybierz pozycję **Równe**.
+        -   **Operator**: Wybierz **równe**
 
-        -   **Wartość**: Wybierz **Tak**.
+        -   **Wartość**: Wybierz **tak**
 
     -   Na karcie **Harmonogram**:
 
-        -   **Uruchom o**: Skonfiguruj preferowany harmonogram.
+        -   **Uruchamiany o**: Skonfiguruj preferowany harmonogram.
 
             Wykonanie skryptu może zająć dużo czasu. Chociaż to rozwiązanie chroni wszystkie pliki w folderze, skrypt jest wykonywany jednokrotnie dla każdego pliku, przy każdym uruchomieniu. Mimo że trwa to dłużej niż obsługiwana przez klienta Azure Information Protection ochrona wszystkich plików jednocześnie, to konfiguracja ochrony każdego pliku z osobna jest bardziej skuteczna. Na przykład chronione pliki mogą mieć różnych właścicieli (przy zachowaniu pierwotnego właściciela) po używana zmienna [E-mail właściciela pliku źródłowego], a ta akcja przez plik jest wymagany w przypadku późniejszej zmiany konfiguracji na potrzeby selektywnej ochrony plików, a nie dla wszystkich pliki w folderze.
 
-        -   **Uruchamiaj stale w nowych plikach**: Zaznacz to pole wyboru.
+        -   **Uruchamiaj stale w nowych plików**: Zaznacz to pole wyboru.
 
 ### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>Przetestuj konfigurację, ręcznie uruchamiając regułę i zadanie.
 
@@ -268,7 +268,7 @@ Po zakończeniu konfigurowania klasyfikacji można przejść do konfigurowania z
     > 
     > -   Jeśli widzisz **0** w raporcie, zamiast liczby plików w folderze, te dane wyjściowe wskazuje, że skrypt nie zostało uruchomione. Po pierwsze sprawdź sam skrypt przez załadowanie go w środowisku Windows PowerShell ISE, aby zweryfikować zawartość skryptu i spróbuj uruchomić go jeden raz w tej samej sesji programu PowerShell, aby zobaczyć, jeśli są wyświetlane błędy. Przy użyciu nie zostaną określone argumenty skrypt podejmie próbę połączenia i uwierzytelniania usługi Azure Rights Management.
     > 
-    >     -   Jeśli skrypt zgłasza, że nie może nawiązać połączenia z usługą Azure Rights Management (Azure RMS), sprawdź wartości wyświetlane dla konta głównego usługi określonego w skrypcie. Aby uzyskać więcej informacji o tworzeniu konta głównego usługi, zobacz [Wymaganie wstępne 3: włączanie lub wyłączanie ochrony plików bez interakcji z użytkownikiem](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction) opisane w podręczniku administratora klienta usługi Azure Information Protection.
+    >     -   Jeśli skrypt zgłasza, że nie może nawiązać połączenia z usługą Azure Rights Management (Azure RMS), sprawdź wartości wyświetlane dla konta głównego usługi określonego w skrypcie. Aby uzyskać więcej informacji na temat tworzenia tego konta głównego usługi, zobacz [wymaganie wstępne 3: Do ochrony lub wyłączanie ochrony plików bez interakcji z](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction) w podręczniku administratora klienta usługi Azure Information Protection.
     >     -   Jeśli skrypt zgłasza, że może nawiązać połączenie z usługami Azure RMS, sprawdź, czy może znaleźć wskazany szablon, uruchamiając polecenie [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) bezpośrednio w programie Windows PowerShell na serwerze. Określony szablon powinien pojawić się w zwracanych w wynikach.
     > -   Jeśli skrypt samodzielnie uruchamia się w środowisku Windows PowerShell ISE bez błędów, spróbuj uruchomić go w następujący sposób z sesji programu PowerShell, określając nazwę pliku do ochrony i bez parametru -OwnerEmail:
     > 
@@ -297,7 +297,7 @@ Aby wprowadzić tę zmianę, użyj jednej z wbudowanych właściwości klasyfika
 
 Teraz wystarczy tylko utworzyć nowe zadanie zarządzania plikami, które korzysta z tego samego skryptu, ale np. z innego szablonu, i skonfigurować warunek dla właśnie skonfigurowanej właściwości klasyfikacji. Na przykład zamiast warunku, który został wcześniej skonfigurowany (właściwość **RMS**, **Równe**, **Tak**), wybierz właściwość **Dane osobowe** z ustawieniem **Operator** o wartości **Równe** i ustawieniem **Wartość** o wartości **Wysokie**.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Możesz się zastanawiać: [jaka jest różnica między infrastruktury klasyfikacji plików systemu Windows Server i skaner usługi Azure Information Protection?](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 
+Możesz się zastanawiać: [Jaka jest różnica między infrastruktury klasyfikacji plików systemu Windows Server i skaner usługi Azure Information Protection?](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 
 

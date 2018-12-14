@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04a93c57e2ea940384a171284da57b5d7c1572d9
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: b53bb0a914871ba2a53ad7ff4c3bd6fca0d32dde
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148566"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173268"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Konfigurowanie aplikacji do współdziałania z usługą Azure Rights Management
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > Te informacje są przeznaczone dla administratorów i doradców IT, którzy wdrożyli usługę Azure Information Protection. Jeśli szukasz pomocy dla użytkowników i informacji na temat sposobu używania funkcji usługi Rights Management dla określonej aplikacji lub sposobu otwierania pliku z ochroną praw, skorzystaj z pomocy i wskazówek dołączonych do aplikacji.
@@ -31,28 +31,28 @@ Po wdrożeniu usługi Azure Information Protection dla organizacji użyj następ
 > [!IMPORTANT]
 > Aby uzyskać informacje na temat obsługiwanych wersji i innych wymagań, zobacz [Wymagania dotyczące usługi Azure Rights Management](requirements.md).
 
--   [Office 365: konfiguracja dla klientów i usług online](configure-office365.md)
+-   [Office 365: Konfiguracja dla klientów i usług online](configure-office365.md)
 
-    -   [Usługa Exchange Online: konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration)
+    -   [Usługa Exchange Online: Konfiguracja usługi IRM](configure-office365.md#exchange-online-irm-configuration)
 
-    -   [SharePoint Online i OneDrive dla Firm: konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
+    -   [SharePoint Online i OneDrive dla firm: Konfiguracja usługi IRM](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)
 
-- [Aplikacje pakietu Office: konfiguracja dla klientów](configure-office-apps.md)
+- [Aplikacje pakietu Office: Konfiguracja dla klientów](configure-office-apps.md)
 
-    -   [Pakiety Office 2016 i Office 2013](configure-office-apps.md#office-2016-and-office-2013)
+    -   [Pakiety Office 2016 lub Office 2013](configure-office-apps.md#office-2016-and-office-2013)
 
     -   [Pakiet Office 2010](configure-office-apps.md#office-2010)
 
--   [Klient usługi Azure Information Protection: instalacja i konfiguracja klienta](configure-sharing-app.md)
+-   [Klient usługi Azure Information Protection: Instalacja i konfiguracja dla klientów](configure-sharing-app.md)
 
--   [Aplikacja do udostępniania usługi Rights Management: instalacja i konfiguracja dla klientów](configure-sharing-app.md)
+-   [Aplikacja do udostępniania usługi Rights Management: Instalacja i konfiguracja dla klientów](configure-sharing-app.md)
 
 
 Aby skonfigurować serwery lokalne, takie jak Exchange Server i SharePoint Server, zobacz [Wdrażanie łącznika usługi Azure Rights Management](deploy-rms-connector.md).
 
 Oprócz tych aplikacji i usług istnieją inne aplikacje obsługujące interfejsy API usługi Rights Management. Do tej kategorii należą aplikacje biznesowe, które są tworzone we własnym zakresie za pomocą zestawu Rights Management SDK, i aplikacje od dostawców oprogramowania tworzone przy użyciu zestawu Rights Management SDK. W przypadku tych aplikacji postępuj zgodnie z instrukcjami dostarczonymi z aplikacją.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Po skonfigurowaniu aplikacji do obsługi usługi Azure Rights Management użyj [planu wdrożenia usługi Azure Information Protection](deployment-roadmap.md), aby sprawdzić, czy istnieją inne czynności konfiguracyjne, które należy wykonać przed wdrożeniem usługi Azure Information Protection dla użytkowników i administratorów. Jeśli nie, przydatne mogą być następujące informacje operacyjne:
 
 - [Weryfikowanie usługi Azure Rights Management](verify.md)
