@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0289431239e2f7f3e6ae4725ce79a8f337ea6944
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 13729d124ce0e49eddeda6c4c19aeae2c62eb8c6
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151381"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174254"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>Faza 3 migracji — konfiguracja po stronie klienta
 
->*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [usługi Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Skorzystaj z poniższych informacji dotyczących fazy 3 migrowania z usługi AD RMS do usługi Azure Information Protection. Te procedury obejmują krok 7 z sekcji [Migrowanie z usługi AD RMS do usługi Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md).
 
@@ -51,7 +51,7 @@ Ta metoda jest przydatna tylko w przypadku klienci Windows aplikacji klasycznych
     
     Alternatywnie Jeśli masz tylko usługi AD RMS klastra w tej domenie, można określić tylko nazwę domeny klastra usług AD RMS. W naszym przykładzie wyniesie **contoso.com**. Po określeniu nazwy domeny w tym rekordzie przekierowania ma zastosowanie do wszystkich klastrów AD RMS w danej domenie.
     
-    *\<Port >* numer zostanie zignorowany.
+     *\<Port >* numer zostanie zignorowany.
     
     Aby uzyskać  *\<adresu URL dzierżawy\>*, określić własny [adres URL usługi Azure Rights Management dla dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
     
@@ -83,7 +83,7 @@ Ta metoda jest przydatna tylko w przypadku klienci Windows aplikacji klasycznych
 
     f. Upewnij się, że ta konfiguracja działa prawidłowo, spróbuj połączyć się z plikiem licensing.asmx bezpośrednio w przeglądarce. Powinny pojawić się następujący komunikat o błędzie, co powoduje wyzwolenie kliencie z uruchomioną pakiety Office 2016 do wyszukiwania dla rekordu SRV:
     
-    **Komunikat o błędzie 401.3: nie masz uprawnień do wyświetlenia tego katalogu lub strony przy użyciu poświadczeń dostarczonych (odmowa dostępu z powodu list usługi Access Control).**
+    **Komunikat o błędzie 401.3: Nie masz uprawnień do wyświetlenia tego katalogu lub strony przy użyciu poświadczeń dostarczonych (odmowa dostępu z powodu list usługi Access Control).**
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>Ponowna konfiguracja klienta za pomocą edycji rejestru
@@ -126,7 +126,7 @@ Gdy wszyscy klienci Windows nie można migrować tylko raz, uruchom następując
 
 1. Wróć do skryptów migracji **Client.cmd migracji** i **User.cmd migracji**, które wyodrębniono wcześniej kiedy pobierany tych skryptów w [etapu przygotowywania](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration).
 
-2.  Postępuj zgodnie z instrukcjami w **Client.cmd migracji** celu zmodyfikowania skryptu, tak aby zawiera adres URL usługi Azure Rights Management swojej dzierżawy, a także nazwy serwerów dla usług AD RMS klastra intranetu i ekstranetu adresu URL licencjonowania adres URL licencjonowania. Następnie należy zwiększyć wersji skryptu wyjaśniono wcześniej. Dobrym rozwiązaniem dla śledzenia wersji skryptu jest użycie bieżącą datę w następującym formacie: RRRRMMDD
+2.  Postępuj zgodnie z instrukcjami w **Client.cmd migracji** celu zmodyfikowania skryptu, tak aby zawiera adres URL usługi Azure Rights Management swojej dzierżawy, a także nazwy serwerów dla usług AD RMS klastra intranetu i ekstranetu adresu URL licencjonowania adres URL licencjonowania. Następnie należy zwiększyć wersji skryptu wyjaśniono wcześniej. Dobrym rozwiązaniem dla śledzenia wersji skryptu jest używać bieżącą datę w następującym formacie: RRRRMMDD
     
     > [!IMPORTANT]
     > Tak jak poprzednio, uważaj, aby nie wprowadzić dodatkowych spacji przed adresami lub po nich.
@@ -137,5 +137,5 @@ Gdy wszyscy klienci Windows nie można migrować tylko raz, uruchom następując
 
 3. Korzystając z instrukcji na początku tego kroku skonfigurować swoje metody wdrożenia skryptu do uruchomienia **Client.cmd migracji** i **User.cmd migracji** na komputerach klienckich Windows, które są używane przez Członkowie grupy AIPMigrated. 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 Aby kontynuować migrację, przejdź do [fazy 4 — konfiguracji usług pomocniczych](migrate-from-ad-rms-phase4.md).
