@@ -46,7 +46,7 @@ Te procedury są wykonywane tylko przez administratora usługi Azure Key Vault.
 
 1. W przypadku każdego wyeksportowanego klucza SLC, który chcesz przechowywać w usłudze Azure Key Vault, postępuj zgodnie z instrukcją zawartą w dokumentacji usługi Azure Key Vault w sekcji [Implementowanie funkcji BYOK dla usługi Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault), z następującym wyjątkiem:
 
-    - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zazwyczaj noszą zaszyfrowane pliki klucza firmy Thales **klucz <*Nazwa_aplikacji_klucza*><*keyIdentifier* >**  lokalnie na serwerze.
+    - Nie wykonuj kroków procedury **Generowanie klucza dzierżawy**, ponieważ istnieje już jego odpowiednik pochodzący z wdrożenia usługi AD RMS. Zamiast tego zidentyfikuj klucz używany na serwerze usługi AD RMS z instalacji firmy Thales i użyj go podczas migracji. Zazwyczaj noszą zaszyfrowane pliki klucza firmy Thales **klucz <*Nazwa_aplikacji_klucza*><*keyIdentifier*>** lokalnie na serwerze.
 
     Gdy klucz zostanie przekazany do usługi Azure Key Vault, zostaną wyświetlone właściwości klucza zawierające identyfikator klucza. Będzie wyglądać podobnie do https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333. Zanotuj ten adres URL, ponieważ administrator usługi Azure Information Protection potrzebuje go, aby skonfigurować usługę Azure Rights Management do użycia tego klucza jako klucza dzierżawy.
 

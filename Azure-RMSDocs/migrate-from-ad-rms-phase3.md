@@ -51,7 +51,7 @@ Ta metoda jest przydatna tylko w przypadku klienci Windows aplikacji klasycznych
     
     Alternatywnie Jeśli masz tylko usługi AD RMS klastra w tej domenie, można określić tylko nazwę domeny klastra usług AD RMS. W naszym przykładzie wyniesie **contoso.com**. Po określeniu nazwy domeny w tym rekordzie przekierowania ma zastosowanie do wszystkich klastrów AD RMS w danej domenie.
     
-     *\<Port >* numer zostanie zignorowany.
+    *\<Port>* numer zostanie zignorowany.
     
     Aby uzyskać  *\<adresu URL dzierżawy\>*, określić własny [adres URL usługi Azure Rights Management dla dzierżawy](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url).
     
