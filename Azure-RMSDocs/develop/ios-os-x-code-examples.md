@@ -2,8 +2,8 @@
 title: Przykłady kodu dla systemu iOS/OS X | Azure RMS
 description: W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu iOS/OS X.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fc918b10dc8924002efd5eb71725b8c157461d7e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c71fe41da2eb29645c3c25d0044f969ebdca1c9a
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150912"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070240"
 ---
 # <a name="iosos-x-code-examples"></a>Przykłady kodu dla systemu iOS/OS X
 
@@ -32,12 +32,12 @@ W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dl
 
 Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji przykładowej, reprezentujące scenariusze programowania ważne dla orientacji w zestawie SDK. Pokazują one korzystanie z formatu Microsoft Protected File (nazywanego plikiem chronionym), niestandardowych formatów plików chronionych oraz niestandardowych kontrolek interfejsu użytkownika.
 
-### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: korzystanie z pliku chronionego przez usługę RMS
+### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: Używanie plików chronionych przez usługę RMS
 
 
-- **Krok 1**. Utworzenie obiektu [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx)
+- **Krok 1**. Tworzenie [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) obiektu
 
- **Opis**: Utworzenie wystąpienia obiektu [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) za pomocą metody create, która implementuje uwierzytelnianie usługi przy użyciu interfejsu [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) w celu pobrania tokenu przez przekazanie wystąpienia interfejsu **MSAuthenticationCallback** jako parametru *authenticationCallback* do interfejsu API klienta MSIPC. Zobacz wywołanie metody [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) w poniższej sekcji z przykładowym kodem.
+ **Opis**: Utwórz wystąpienie [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) obiektu za pomocą jego metody create, która implementuje uwierzytelnianie usługi przy użyciu [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) do pobrania tokenu przez przekazanie wystąpienia **MSAuthenticationCallback**, jako parametr *authenticationCallback*, do interfejsu API klienta MSIPC. Zobacz wywołanie metody [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) w poniższej sekcji z przykładowym kodem.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -53,9 +53,9 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
             }];
         }
 
-- **Krok 2**. Skonfigurowanie uwierzytelniania przy użyciu biblioteki Active Directory Authentication Library (ADAL)
+- **Krok 2**: Konfigurowanie uwierzytelniania za pomocą biblioteki uwierzytelniania usługi Active Directory (ADAL).
 
-  **Opis**: W tym kroku zobaczysz bibliotekę ADAL używaną do zaimplementowania interfejsu [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) z przykładowymi parametrami uwierzytelniania. Aby uzyskać więcej informacji na temat używania biblioteki ADAL, zobacz Biblioteka Azure AD Authentication Library (ADAL).
+  **Opis**: W tym kroku zobaczysz bibliotekę ADAL używaną do zaimplementowania [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) z przykładowymi parametrami uwierzytelniania. Aby uzyskać więcej informacji na temat używania biblioteki ADAL, zobacz Biblioteka Azure AD Authentication Library (ADAL).
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -94,7 +94,7 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
                           }];
        }
 
--   **Krok 3**. Sprawdzenie, czy dla tego użytkownika z tą zawartością istnieje prawo Edycja za pomocą metody [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx).
+-   **Krok 3**: Sprawdź, czy prawo Edycja istnieje dla tego użytkownika z tą zawartością za pomocą [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) metody [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) obiektu.
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -108,11 +108,11 @@ Poniżej podano przykłady kodu w języku **Objective C** z większej aplikacji 
             }
         }
 
-### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: tworzenie nowego pliku chronionego z wykorzystaniem szablonu
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>Scenariusz: Utwórz nowy plik chroniony za pomocą szablonu
 
 Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx) — i wybrania pierwszego szablonu w celu utworzenia zasady. Następnie jest tworzony i zapisywany nowy plik chroniony.
 
--   **Krok 1**. Pobranie listy szablonów
+-   **Krok 1**. Pobierz listę szablonów
 
         + (void)templateListUsageWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -124,7 +124,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
                                    }];
         }
 
--   **Krok 2**. Utworzenie obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) przy użyciu pierwszego szablonu na liście.
+-   **Krok 2**: Tworzenie [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) przy użyciu pierwszego szablonu na liście.
 
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -139,7 +139,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
         }
 
--   **Krok 3**. Utworzenie obiektu [MSMutableProtectedData](https://msdn.microsoft.com/library/dn758325.aspx) i zapisanie w nim zawartości.
+-   **Krok 3**: Tworzenie [MSMutableProtectedData](https://msdn.microsoft.com/library/dn758325.aspx) i zapisanie zawartości.
 
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
         {
@@ -153,10 +153,10 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
         }
 
-### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: otwieranie niestandardowego pliku chronionego
+### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: Otwieranie niestandardowego pliku chronionego
 
 
--   **Krok 1**. Utworzenie obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z elementu *serializedContentPolicy*.
+-   **Krok 1**. Tworzenie [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z *serializedContentPolicy*.
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -184,7 +184,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
          }
 
--   **Krok 2**. Utworzenie interfejsu [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) za pomocą obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) utworzonego w **kroku 1** i odczytanie z niego danych.
+-   **Krok 2**: Tworzenie [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) przy użyciu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z **kroku 1** i odczytanie z niego.
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -211,12 +211,12 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
          }
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Scenariusz: tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>Scenariusz: Tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych (ad hoc)
 
 
--   **Krok 1**. Utworzenie deskryptora zasad przy użyciu adresu e-mail podanego przez użytkownika.
+-   **Krok 1**. Za pomocą adresu e-mail podanego przez użytkownika Utwórz deskryptor zasad.
 
-    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia: [MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) i [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
+    **Opis**: W praktyce następujące obiekty zostałyby utworzone przy użyciu danych wprowadzonych przez użytkownika z interfejsu urządzenia [MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) i [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx).
 
         + (void)policyDescriptor
         {
@@ -227,7 +227,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **Krok 2**. Utworzenie niestandardowego obiektu [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z deskryptora zasad *selectedDescriptor*.
+-   **Krok 2**: Utwórz niestandardową [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) z deskryptora zasad *selectedDescriptor*.
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -241,7 +241,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów — interfejsu [MSTe
             }];
         }
 
--   **Krok 3**. Utworzenie obiektu [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) i zapisanie zawartości do niego, a następnie zamknięcie.
+-   **Krok 3**: Utworzenie i zapisanie zawartości do [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) , a następnie zamknij.
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {

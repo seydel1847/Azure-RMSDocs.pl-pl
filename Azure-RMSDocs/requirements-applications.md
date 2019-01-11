@@ -4,18 +4,18 @@ description: Identyfikowanie aplikacji, które korzystają z interfejsów API us
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2018
+ms.date: 12/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc823bcb175c9f4181d365a8caf99da33171c338
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 51883da128580be5f6bfd4dd725b8dfdf10f844f
+ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173914"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429886"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Aplikacje obsługujące ochronę danych usługi Azure Rights Management
 
@@ -115,6 +115,8 @@ Następujące pakiety klienta pakietu Office obsługują ochronę plików i wiad
 - Usługi Office 365 ProPlus: Office 2016
 
 - Office Standard 2016 dla komputerów Mac
+
+Wszystkie wersje pakietu Office 2016 dla komputerów Mac pomocy technicznej co umożliwia korzystanie z zawartości chronionej.
 
 Porada: Aby rozpocząć pracę z ochrona dokumentów za pomocą pakietu Office dla komputerów Mac, może być przydatne następujące często zadawane pytania: [Jak skonfigurować komputer Mac, aby chronić i śledzić dokumenty?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 

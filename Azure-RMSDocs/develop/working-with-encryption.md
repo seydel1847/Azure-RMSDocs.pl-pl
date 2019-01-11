@@ -2,8 +2,8 @@
 title: Jak pracować z ustawieniami szyfrowania | Azure RMS
 description: Różne pakiety szyfrowania usługi Azure RMS i przykłady fragmentów kodu, w których zastosowano te pakiety.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d8d5c76c08c7518c8279267a6c1e15f559d6ea54
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6c46df1ac7aca8d4668ff71bb91195d059f8a3a6
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147155"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071728"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>Instrukcje: korzystanie z ustawień szyfrowania
 
@@ -30,7 +30,7 @@ Ten temat kieruje użytkowników do pakietów szyfrowania firmy Microsoft i zawi
 > [!IMPORTANT]
 > Obsługa plików chronionych przy użyciu algorytmu *AES 256* była dostępna już w [wersji z października 2014 roku](release-notes-rtm.md). Jeśli używasz aplikacji utworzonych za pomocą wersji zestawu SDK sprzed października 2014 r., ta aktualizacja spowoduje awarię aplikacji. Upewnij się, że klienci aplikacji, które tworzysz, używają zaktualizowanego zestawu SDK lub są gotowi do natychmiastowego przeprowadzenia aktualizacji do najnowszej wersji aplikacji.
 
- 
+ 
 ## <a name="api-encryption-support"></a>Obsługa szyfrowania w interfejsie API
 
 Począwszy od [aktualizacji z marca 2015 roku](release-notes-rtm.md), uwzględniliśmy następujące trzy flagi w naszym interfejsie API i skojarzonych pakietach szyfrowania:

@@ -2,8 +2,8 @@
 title: Przegląd — zestaw RMS SDK 2.1 | Azure RMS
 description: Usługi Rights Management (RMS) to technologia ochrony informacji, która pomaga w zabezpieczaniu informacji cyfrowych przed nieautoryzowanym użyciem.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 50dc99a83cbd45b977c2ddb22a2a3034f648c396
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: edd4cb0d28c68491348e61ac5a90d03087059144
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147427"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070285"
 ---
 # <a name="overview"></a>Przegląd
 
@@ -29,7 +29,7 @@ Składnik [klienta](ad-rms-client.md) może działać w systemie operacyjnym kli
 
 Aby uzyskać więcej informacji, zobacz temat [Typy aplikacji](application-types.md).
 
-Poniżej przedstawiono kilka scenariuszy, w których można stosować aplikacje utworzone przy użyciu zestawu Rights Management Services SDK 2.1.
+Poniżej przedstawiono kilka scenariuszy, które można stosować aplikacje korzystające z usługi Rights Management Services SDK 2.1.
 
 -   Kancelaria prawna chce zapobiec drukowaniu i przekazywaniu dalej poufnych wiadomości e-mail.
 -   Deweloperzy oprogramowania CAD i oprogramowania produkcyjnego chcą ograniczyć dostęp do rysunków do niewielkiej grupy użytkowników z działu badawczego bez konieczności korzystania z haseł.

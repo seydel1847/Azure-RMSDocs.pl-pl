@@ -2,8 +2,8 @@
 title: Jak zainstalować i skonfigurować serwer usługi RMS oraz używać go do testowania | Azure RMS
 description: Zainstaluj i skonfiguruj serwer usługi RMS na potrzeby testowania aplikacji obsługujących prawa.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5a3fabd4d76dc86b52d0d8891b7032d1e017cf28
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 74330e8ea1cd709b594a41ffec826d4bdade67c3
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023306"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071509"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>Instrukcje: instalowanie i konfigurowanie serwera usługi RMS oraz używanie go do testowania
 
@@ -25,7 +25,7 @@ Ten temat zawiera opis procedur związanych z nawiązywaniem połączenia z serw
  
 ## <a name="instructions"></a>Instrukcje
 
-### <a name="step-1-setup-your-rms-server"></a>Krok 1. Konfiguracja serwera usługi RMS
+### <a name="step-1-setup-your-rms-server"></a>Krok 1: Konfiguracja serwera usługi RMS
 
 Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują następujące elementy:
 
@@ -77,7 +77,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
                 ServiceLocation
                   EnterpriseCertification
 
-   **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Certification**
+   **Wartość**: (Opcja domyślna): [**http | https**]: //RMSClusterName/**_wmcs/Certification**
 
 2. **EnterprisePublishing**
 
@@ -88,7 +88,7 @@ Poniższe kroki ułatwiają konfigurację serwera usługi RMS i obejmują nastę
                 ServiceLocation
                   EnterprisePublishing
                   
-   **Wartość**: (domyślnie): [**http|https**]://Nazwa_klastra_usługi_RMS/**_wmcs/Licensing**
+   **Wartość**: (Opcja domyślna): [**http | https**]: //RMSClusterName/**_wmcs/Licensing**
 
 >[!NOTE] 
 > Domyślnie tych kluczy nie ma w rejestrze i należy je utworzyć.

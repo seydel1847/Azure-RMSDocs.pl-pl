@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6c6c2be34250cca486004a0ed1b1fcd8fddfce35
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
+ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023740"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54085079"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Aby skonfigurować klasyfikację, etykiety i ochronę, musisz skonfigurować zasady usługi Azure Information Protection. Te zasady są pobierane na komputery z zainstalowanym [klientem usługi Azure Information Protection](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
@@ -33,19 +33,19 @@ Zasady zawierają ustawienia i etykiety:
 
 Usługa Azure Information Protection obsługuje różne poziomy subskrypcji:
 
-- Subskrypcja P2 usługi Azure Information Protection: obsługa wszystkich funkcji klasyfikacji, etykietowania i ochrony.
+- Usługa Azure Information Protection P2: Obsługa wszystkich funkcji klasyfikacji, etykietowania i ochrony.
 
-- Subskrypcja P1 usługi Azure Information Protection: obsługa większości funkcji klasyfikacji, etykietowania i ochrony, ale nie automatycznej klasyfikacji ani funkcji HYOK.
+- Subskrypcja P1 usługi Azure Information Protection: Obsługa większości funkcji klasyfikacji, etykietowania i ochrony, ale nie automatycznej klasyfikacji lub funkcji HYOK.
 
-- Usługa Office 365 obejmująca usługę Azure Rights Management: obsługa ochrony, ale nie klasyfikacji i etykietowania.
+- Usługi Office 365 obejmującą usługę Azure Rights Management: Obsługa ochrony, ale nie na klasyfikacji i etykietowania.
 
 Opcje, które wymagają subskrypcji usługi Azure Information Protection P2 są identyfikowane w portalu.
 
 Jeśli Twoja organizacja ma różne subskrypcje, jest odpowiedzialny za upewnij się, że użytkowników należy używać funkcji, które ich konto nie jest licencjonowany do użycia. Nie usługi Azure Information Protection, w których klient ma licencję, sprawdzenie i wymuszania. Podczas konfigurowania opcji, których nie wszyscy użytkownicy mają licencję usługi, użyj o określonym zakresie, zasady lub ustawienia rejestru, aby upewnić się, że Twoja organizacja pozostaje zgodny z licencji:
 
-- **Jeśli Twoja organizacja ma różne licencje usługi Azure Information Protection P1 i Azure Information Protection P2**: dla użytkowników, którzy mają P2 licencji, tworzenia i używania jednej lub kilku [zasad o określonym zakresie](configure-policy-scope.md) podczas konfigurowania opcji które wymagają licencji usługi Azure Information Protection P2. Upewnij się, że zasady globalne nie zawiera opcje, które wymagają licencji usługi Azure Information Protection P2.
+- **Jeśli Twoja organizacja ma różne licencje usługi Azure Information Protection P1 i Azure Information Protection P2**: Dla użytkowników, którzy mają P2 licencji, tworzenia i używania jednej lub kilku [zasad o określonym zakresie](configure-policy-scope.md) podczas konfigurowania opcji, które wymagają licencji usługi Azure Information Protection P2. Upewnij się, że zasady globalne nie zawiera opcje, które wymagają licencji usługi Azure Information Protection P2.
 
-- **Jeśli Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale niektórzy użytkownicy mają tylko licencję usługi Office 365, która obejmuje usługę Azure Rights Management**: dla użytkowników, którzy nie mają licencji usługi Azure Information Protection, należy edytować rejestr na swoich komputerach, dzięki czemu nie będą oni mogli pobrać zasad usługi Azure Information Protection. Instrukcje można znaleźć w podręczniku administratora do następujących dostosowania: [wymusić tryb z samą ochroną, gdy Twoja organizacja ma mieszane licencje](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses).
+- **Jeśli Twoja organizacja ma subskrypcję usługi Azure Information Protection, ale niektórzy użytkownicy mają tylko licencję usługi Office 365, która obejmuje usługę Azure Rights Management**: Dla użytkowników, którzy nie mają licencji usługi Azure Information Protection należy edytować rejestr na swoich komputerach, dzięki czemu nie będą oni mogli pobrać zasad usługi Azure Information Protection. Instrukcje można znaleźć w podręczniku administratora do następujących dostosowania: [Wymusić tryb z samą ochroną, gdy Twoja organizacja ma różne licencje](./rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses).
 
 Aby uzyskać więcej informacji o subskrypcjach, zobacz temat [Jaka subskrypcja jest potrzebna do korzystania z usługi Azure Information Protection i jakie funkcje obejmuje ta subskrypcja?](faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)
 
@@ -68,7 +68,7 @@ Aby zalogować się do witryny Azure portal, aby skonfigurować i zarządzać us
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Aby uzyskać dostęp do bloku usługi Azure Information Protection po raz pierwszy
 
-1. Zaloguj się do witryny Azure Portal.
+1. Zaloguj się do Portalu Azure.
 
 2. W menu Centrum wybierz **Utwórz zasób**, a następnie w polu wyszukiwania w portalu Marketplace wpisz **usługi Azure Information Protection**. 
     
@@ -87,7 +87,7 @@ Następny czas dostęp **usługi Azure Information Protection** bloku powoduje a
 
 1. Upewnij się, że użytkownik jest zalogowany do witryny Azure portal przy użyciu jednej z tych ról administracyjnych: Administrator usługi Information Protection, administratora zabezpieczeń lub administratora globalnego. Zobacz [poprzedniej sekcji](#signing-in-to-the-azure-portal) Aby uzyskać więcej informacji na temat tych ról administracyjnych.
 
-2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **Information Protection** w Pole filtru. Spośród wyników wybierz **Azure Information Protection**. 
+2. Jeśli to konieczne, przejdź do **usługi Azure Information Protection** bloku: Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **Information Protection** w polu filtru. Spośród wyników wybierz **Azure Information Protection**. 
     
     **Usługi Azure Information Protection — etykiety** automatycznie zostanie otwarty blok umożliwia wyświetlanie i edytowanie dostępne etykiety. Etykiety można udostępniane wszystkim użytkownikom, wybranych użytkowników lub żaden użytkownik, dodając lub usuwając je z zasad.
 
@@ -108,7 +108,7 @@ Klient usługi Azure Information Protection sprawdza zmiany podczas uruchamiania
 
 - Upływ kolejnych 24 godzin.
 
-- Aby uzyskać [skaner ochrony informacji Azure](deploy-aip-scanner.md): podczas uruchamiania usługi (Jeśli zasady są starsze niż jedna godzina), a co godzinę, podczas operacji.
+- Aby uzyskać [usługi Azure Information Protection skanera](deploy-aip-scanner.md): Podczas uruchamiania usługi (Jeśli zasady są starsze niż jedna godzina), a co godzinę, podczas operacji.
 
 
 >[!NOTE]
@@ -144,11 +144,11 @@ Skorzystaj z poniższych informacji, aby skonfigurować zasady usługi Azure Inf
 
 - [Jak przeprowadzić migrację etykiety usługi Azure Information Protection do Centrum zgodności i zabezpieczeń usługi Office 365](configure-policy-migrate-labels.md)
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Aby uzyskać przykłady sposobów dostosowania zasad usługi Azure Information Protection i zobaczyć efekty dla użytkowników, wypróbuj następujące samouczki:
 
-- [Edytowanie zasad usługi Azure Information Protection i utworzyć nową etykietę i tworzenie nowej etykiety](infoprotect-quick-start-tutorial.md)
+- [Edytowanie zasad usługi Azure Information Protection i tworzenie nowej etykiety](infoprotect-quick-start-tutorial.md)
 
 - [Konfigurowanie ustawień zasad usługi Azure Information Protection, które współpracują ze sobą](infoprotect-settings-tutorial.md)
 

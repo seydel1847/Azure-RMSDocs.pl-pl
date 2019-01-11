@@ -4,17 +4,17 @@ description: Jeśli Twoja organizacja jest całkiem nowe dla usługi Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/15/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: f5cf70b0827e36ffae6644634ef198385ef6d11a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c890d6acf2557093441a175bc8ed8657e8d1d9da
+ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023519"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53411817"
 ---
-# <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>Szybki Start: Rozpoczynanie pracy z usługą Azure Information Protection w witrynie Azure portal
+# <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>Szybki start: Rozpoczynanie pracy z usługą Azure Information Protection w witrynie Azure portal
 
 W tym przewodniku Szybki Start możesz dodać usługi Azure Information Protection w witrynie Azure Portal, upewnij się, Usługa ochrony jest aktywowana i wyświetlanie Twojej organizacji domyślne zasady. 
 
@@ -36,7 +36,7 @@ Usługa Azure Information Protection nie jest automatycznie dostępny w witrynie
 
 1. Zaloguj się do [witryny Azure portal](https://portal.azure.com) przy użyciu konta administratora globalnego dla dzierżawy. 
     
-    Jeśli nie jesteś administratorem globalnym, użyj następującego linku, dla alternatywnej ról: [logowania się do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal)
+    Jeśli nie jesteś administratorem globalnym, użyj następującego linku, dla alternatywnej ról: [Logowanie do witryny Azure portal](configure-policy.md#signing-in-to-the-azure-portal)
 
 2. W menu Centrum wybierz **Utwórz zasób**, a następnie w polu wyszukiwania w portalu Marketplace wpisz **usługi Azure Information Protection**. 
     
@@ -75,7 +75,7 @@ Przy pierwszym nawiązaniu połączenia z usługą Azure Information Protection 
     
 2. Poświęć kilka minut, o których zapoznawanie się z etykiet, które są wyświetlane:
     
-    - Etykiety klasyfikacji: **Osobiste**, **Publiczne**, **Ogólne**, **Poufne** i **Wysoce poufne**. Dwie ostatnie etykiety rozszerzyć, aby wyświetlić etykiet podrzędnych, które zawierają przykłady klasyfikacji można podkategorie:
+    - Etykiety klasyfikacji: **Osobiste**, **publicznych**, **ogólne**, **poufne**, i **wysoce poufne**. Dwie ostatnie etykiety rozszerzyć, aby wyświetlić etykiet podrzędnych, które zawierają przykłady klasyfikacji można podkategorie:
     
     - W przypadku domyślnej konfiguracji niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od zasady domyślne niektóre etykiety może być również ma ustawionej ochrony. Przykład: 
     
@@ -83,12 +83,12 @@ Przy pierwszym nawiązaniu połączenia z usługą Azure Information Protection 
     
 3. Po etykietach w **Konfiguruj ustawienia wyświetlania i Zastosuj Information Protection, użytkownicy końcowi** sekcji Zobacz też niektóre ustawienia zasad. Na przykład nie jest domyślne etykiety, dokumentów i wiadomości e-mail nie muszą mieć etykietę i użytkownicy nie muszą uzasadniać zmiany etykiet:
     
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](./media/info-protect-policy-default-settings.png) 
+    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](./media/info-protect-policy-default-settings-quickstart.png) 
 
 4. Ponieważ są tylko wyświetlania etykiety i ustawienia, możesz zamknąć wszystkich blokach, które zostały otwarte.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
-Teraz, gdy wiesz, etykiety i ustawienia zasad w witrynie Azure portal, mogą być przydatne następującego samouczka w następnym kroku: [edytować zasady i Utwórz nową etykietę dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
+Teraz, gdy wiesz, etykiety i ustawienia zasad w witrynie Azure portal, mogą być przydatne następującego samouczka w następnym kroku: [Edytuj zasady i Utwórz nową etykietę dla usługi Azure Information Protection](infoprotect-quick-start-tutorial.md).
 
 Alternatywnie, aby uzyskać szczegółowe instrukcje dotyczące konfigurowania wszystkie aspekty zasad usługi Azure Information Protection, zobacz [Konfigurowanie zasad usługi Azure Information Protection](configure-policy.md).

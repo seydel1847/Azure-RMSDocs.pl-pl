@@ -2,8 +2,8 @@
 title: Konfigurowanie programu Visual Studio | Azure RMS
 description: Instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 0713bbc51b90e95d93917f7c43c3401a7cbe8ef2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f26400ba1230ef1b274fa04120c22995d2f6620c
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151133"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071492"
 ---
 # <a name="configure-visual-studio"></a>Konfigurowanie programu Visual Studio
 
-Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z zestawu Rights Management Services SDK 2.1.
+Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual Studio do korzystania z usługi Rights Management Services SDK 2.1.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -29,21 +29,21 @@ Ten temat zawiera instrukcje dotyczące konfigurowania projektu programu Visual 
 
 **Instrukcje**
 
-### <a name="step-1-configure-a-visual-studio-project-to-use-rms-sdk-21"></a>Krok 1. Skonfigurowanie projektu programu Visual Studio do korzystania z zestawu RMS SDK 2.1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>Krok 1: Konfigurowanie projektu programu Visual Studio, aby użyć zestawu RMS SDK 2.1
 
-Te instrukcje dotyczą programu Microsoft Visual Studio 2010. Jeśli używasz innej wersji programu Microsoft Visual Studio, okna dialogowe ustawień mogą wyglądać nieco inaczej.
+Te instrukcje są specyficzne dla Microsoft Visual Studio 2010. Jeśli używasz innej wersji programu Microsoft Visual Studio, okna dialogowe ustawień mogą wyglądać nieco inaczej.
 
 Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
-1.  Dodaj katalog dołączania zestawu RMS SDK 2.1 do projektu programu Visual Studio 2010.
+1.  Dodaj katalog, do projektu programu Visual Studio 2010 dołączania zestawu RMS SDK 2.1.
 
-    W obszarze **Właściwości konfiguracji** wybierz pozycję **Katalogi VC++** i dodaj katalog dołączania zestawu RMS SDK 2.1, **$(MSIPCSDKDIR)\\inc**, do pola **Dołącz katalogi**.
+    W obszarze **właściwości konfiguracji** wybierz **katalogi VC ++** i Dodaj katalog, dołączania zestawu RMS SDK 2.1 **$(MSIPCSDKDIR)\\inc**, aby **Dołącz katalogi** pola.
 
     ![Pole katalogów dołączania właściwości konfiguracji](../media/include_directories.png)
 
 2.  Dodaj katalog biblioteki zestawu RMS SDK 2.1 do projektu programu Visual Studio 2010.
 
-    W obszarze **Właściwości konfiguracji** wybierz opcję **Katalogi VC++** i dodaj katalog biblioteki zestawu RMS SDK 2.1 do pola **Katalogi bibliotek** dla danej platformy.
+    W obszarze **właściwości konfiguracji** wybierz **katalogi VC ++** i Dodaj katalog biblioteki zestawu RMS SDK 2.1 do **katalogi bibliotek** dla danej platformy.
 
     -   W przypadku systemu Win32 użyj wartości **$(MSIPCSDKDIR)\\lib**
     -   W przypadku systemu x64 użyj wartości **$(MSIPCSDKDIR)\\lib\\x64**
@@ -52,13 +52,13 @@ Te instrukcje dotyczą tworzenia natywnych aplikacji 32-bitowych.
 
 3.  Dodaj pliki bibliotek zestawu RMS SDK 2.1 jako zależności programu Visual Studio 2010.
 
-    W obszarze **Konsolidator** wybierz opcję **Dane wejściowe** i dodaj pliki bibliotek zestawu RMS SDK 2.1, **Msipc.lib** i **Msipc\_s.lib**, do pola **Dodatkowe zależności**.
+    W obszarze **konsolidatora**, wybierz opcję **dane wejściowe** i Dodaj pliki bibliotek zestawu RMS SDK 2.1; **Msipc.lib** i **Msipc\_s.lib**, **dodatkowe zależności** pola.
 
     ![Pole zależności bibliotek konsolidatora](../media/additional_dependencies.png)
 
-4.  Dodaj bibliotekę dołączaną dynamicznie (DLL, Dynamic Link Library) zestawu RMS SDK 2.1 jako bibliotekę DLL ładowaną z opóźnieniem.
+4.  Dodaj RMS SDK 2.1 dynamiczne łącze biblioteki (DLL) jako bibliotek DLL ładowanych z opóźnieniem.
 
-    W obszarze **Konsolidator** wybierz opcję **Dane wejściowe** i dodaj plik DLL zestawu RMS SDK 2.1, **Msipc.dll**, do pola **Biblioteki DLL ładowane z opóźnieniem**.
+    W obszarze **konsolidatora**, wybierz opcję **dane wejściowe**i Dodaj plik RMS SDK 2.1 DLL **Msipc.dll**, **bibliotek DLL załadowanych z opóźnieniem** pola.
 
     ![Pole bibliotek ładowanych z opóźnieniem konsolidatora](../media/delay_loaded.png)
 

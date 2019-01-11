@@ -2,8 +2,8 @@
 title: Jak włączyć śledzenie i odwoływanie dokumentów | Azure RMS
 description: Podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością oraz przykładowy kod służący do aktualizacji metadanych i kod przycisku Śledź użycie na potrzeby aplikacji.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 68c7f3c0ca050a13e0e943dc2372267c00f20c48
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8794d0f7413941573484c7f9509f5be5e2aa2414
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149093"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071696"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>Instrukcje: włączanie śledzenia i odwoływania dokumentów
 

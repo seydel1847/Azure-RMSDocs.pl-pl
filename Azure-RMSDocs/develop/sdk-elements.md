@@ -2,8 +2,8 @@
 title: Pliki środowiska programistycznego | Azure RMS
 description: W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,18 +12,18 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 3dffcdddae1ba7522671694cb909c21b4e096c89
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 80993b63a50e4d180429f841698638219f7725a0
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147767"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071441"
 ---
 # <a name="development-environment-files"></a>Pliki środowiska deweloperskiego
 
 W tym temacie przedstawiono pliki środowiska programistycznego i ich względne lokalizacje instalacji na komputerze.
 
-Zestaw Rights Management Services SDK 2.1 zawiera następujące pliki zainstalowane na komputerze w lokalizacji domyślnej lub określonej przez użytkownika: %MsipcSDKDir%.
+Rights Management Services SDK 2.1 zawiera następujące pliki zainstalowane na komputerze w lokalizacji domyślnej lub mają określony: % MsipcSDKDir %.
 
 |Plik|Ścieżka|Opis|
 |----|----|-----------|
@@ -32,8 +32,8 @@ Zestaw Rights Management Services SDK 2.1 zawiera następujące pliki zainstalow
 |Isvtier5appsigningpubkey.dat|\bin|Zawiera klucz publiczny służący do generowania manifestu używanego podczas tworzenia aplikacji obsługującej usługę RMS.|
 |Isvtier5appsignsdk_client.xml|\bin|Służy do generowania manifestu używanego podczas tworzenia aplikacji obsługującej usługę RMS.|
 |NazwaAplikacji.isv.mcf|\bin|Wzorzec pliku konfiguracji manifestu umożliwiającego wygenerowanie manifestu podczas tworzenia aplikacji obsługującej usługę RMS.|
-|Ipcsecproc_isv.dll|\bin\x86|Biblioteka DLL dla aplikacji x86 używana wewnętrznie przez program Active Directory Rights Management Services Client 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
-|Ipcsecproc_ssp_isv.dll|\bin\x86|Biblioteka DLL dla aplikacji x86 używana wewnętrznie przez usługę AD RMS 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
+|Ipcsecproc_isv.dll|\bin\x86|Biblioteki DLL używane wewnętrznie, aby uzyskać x86 aplikacji przez Active Directory Rights Management Services Client 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
+|Ipcsecproc_ssp_isv.dll|\bin\x86|Biblioteki DLL używane wewnętrznie, aby uzyskać x86 aplikacji przez usługi AD RMS 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
 |Ipcsecproc_isv.dll|\bin\x64|Biblioteka DLL dla aplikacji x64 używana wewnętrznie przez program AD RMS Client 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
 |Ipcsecproc_ssp_isv.dll|\bin\x64|Biblioteka DLL dla aplikacji x64 używana wewnętrznie przez program AD RMS Client 2.1 podczas działania w hierarchii niezależnego dostawcy oprogramowania.|
 |Msipc.h|\inc|Główny plik dołączany dla zestawu RMS SDK 2.1.|

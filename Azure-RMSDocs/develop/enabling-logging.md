@@ -1,9 +1,9 @@
 ---
 title: Porady&#58; włączanie rejestrowania błędów i wydajności | Azure RMS
-description: Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
+description: Microsoft Rights Management SDK 4.2 zarządza diagnostyki i wydajności dzienniki przekazać za pośrednictwem pojedynczej właściwości urządzenia.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,15 +12,15 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4dece185bdbfd83d8ee98d815ead5545ca007754
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5b454ea2917fc5807326493fdf303e508bda7f0f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147359"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071815"
 ---
-# <a name="how-to-enable-error-and-performance-logging"></a>Porady: włączanie rejestrowania błędów i wydajności
-Zestaw Microsoft Rights Management SDK 4.2 zarządza przekazywaniem dzienników diagnostyki i wydajności za pośrednictwem pojedynczej właściwości urządzenia.
+# <a name="how-to-enable-error-and-performance-logging"></a>Zadanie: Włączanie rejestrowania błędów i wydajności
+Microsoft Rights Management SDK 4.2 zarządza diagnostyki i wydajności dzienniki przekazać za pośrednictwem pojedynczej właściwości urządzenia.
 
 ## <a name="overview"></a>Przegląd ##
 Włączenie automatycznego przekazywania danych dzienników diagnostyki, wydajności i telemetrii do firmy Microsoft pozwala zwiększyć komfort pracy użytkowników i usprawnić rozwiązywanie problemów. 
@@ -79,7 +79,7 @@ Ustawianie kontroli poziomu dziennika
 Pobieranie ustawienia kontroli poziomu dziennika
 
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
- 
+ 
 
 ## <a name="windows"></a>Windows ##
 Włączanie automatycznego rejestrowania

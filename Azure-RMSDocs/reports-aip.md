@@ -4,19 +4,19 @@ description: Jak używać centralnej funkcji raportowania do śledzenia wdrożen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2018
+ms.date: 12/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
-ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
+ms.openlocfilehash: 0c2309fb635a05f6b0c836b7d4caf04d1c17a23a
+ms.sourcegitcommit: 6651546fa69538e2099b5c2b92ab0902d568a96a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068813"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "53815126"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Środkowe raportowania usługi Azure Information Protection
 
@@ -101,6 +101,11 @@ Aby wygenerować raporty, punkty końcowe Wyślij następujące rodzaje informac
 
 Te informacje są przechowywane w obszarze roboczym usługi Azure Log Analytics, które Twoja organizacja jest właścicielem i mogą być wyświetlane przez użytkowników, którzy mają prawa dostępu do tego obszaru roboczego. Aby uzyskać informacji na temat konfigurowania dostępu do swojego obszaru roboczego, zobacz [Zarządzanie kontami i użytkownikami](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) sekcji w dokumentacji platformy Azure.
 
+> [!NOTE]
+> Obszaru roboczego usługi Azure Log Analytics dla usługi Azure Information Protection zawiera pola wyboru dla dopasowania zawartości dokumentu. Po zaznaczeniu tego pola wyboru rzeczywistych danych, który jest identyfikowany przez typy informacji poufnych lub niestandardowe warunki są również zbierane. Na przykład może to obejmować numery kart kredytowych, które znajdują się na podstawie oraz numery ubezpieczenia społecznego, numery paszportów i numery kont bank. Jeśli nie chcesz zbierać dane, nie zaznaczaj tego pola wyboru.
+>
+> Obecnie te informacje nie są wyświetlane w raportach, ale można wyświetlać i pobierane za pomocą zapytań.
+
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Wymagania wstępne dotyczące analizy usługi Azure Information Protection
 Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne, upewnij się, że zostały spełnione następujące wymagania.
 
@@ -124,7 +129,7 @@ Aby wyświetlić raporty usługi Azure Information Protection i tworzyć własne
     
     - Aby użyć istniejącego obszaru roboczego usługi Log Analytics: Wybierz obszar roboczy z listy.
 
-Jeśli potrzebujesz, aby uzyskać pomoc przy tworzeniu obszaru roboczego usługi Log Analytics, zobacz [Utwórz obszar roboczy usługi Log Analytics w witrynie Azure portal](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace).
+Jeśli potrzebujesz pomocy dotyczącej tworzenia obszaru roboczego usługi Log Analytics, zobacz [Utwórz obszar roboczy usługi Log Analytics w witrynie Azure portal](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace).
 
 W przypadku skonfigurowania obszaru roboczego, możesz przystąpić do ich wyświetlania.
 
@@ -141,6 +146,9 @@ W bloku Azure Information Protection, Znajdź **pulpity nawigacyjne** opcje menu
     Ten raport zawiera **kolumn** opcja, która pozwala wyświetlić więcej informacji o aktywności niż domyślnym wyświetlaniem.
 
 - **Odnajdywanie danych (wersja zapoznawcza)**: Ten raport zawiera informacje dotyczące plików znalezionych przez skanery lub usługi Windows Defender ATP.
+
+> [!NOTE]
+> Obecnie występuje znany problem z wyświetleniem znaki zapytania (**?**) w ścieżki i nazwy plików, zamiast wysyłania ustawienia regionalne systemu operacyjnego jest ustawiony na angielski znaki spoza zestawu ASCII.
 
 ## <a name="how-to-modify-the-reports"></a>Jak modyfikować raporty
 

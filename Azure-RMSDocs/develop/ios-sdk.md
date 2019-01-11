@@ -1,9 +1,9 @@
 ---
 title: Konfiguracja w systemach iOS i OS X | Azure RMS
-description: Aplikacje systemów iOS i OS X mogą używać zestawu RMS SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi AAD RM.
+description: iOS i OS X aplikacji można użyć RMS SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacjach przy użyciu usługi AAD RM.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: conceptual
@@ -12,20 +12,20 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 39856dc34396e1aa32a73f436da9744583519c86
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 620412b55ca583d8a84cf8d167ba890cea742b7f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150368"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070238"
 ---
 # <a name="ios-and-os-x-setup"></a>Konfiguracja w systemach iOS i OS X
 
-Aplikacje systemów iOS i OS X mogą używać zestawu Microsoft Rights Management SDK 4.2 w celu włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Rights Management (Azure RMS).
+dla systemów iOS i OS X aplikacji można użyć zestawu Microsoft Rights Management SDK 4.2 do włączenia zintegrowanej ochrony informacji w aplikacjach za pomocą usługi Azure Rights Management (Azure RMS).
 
 Ten temat zawiera informacje pomocne przy konfigurowaniu środowiska do tworzenia własnych, nowych aplikacji.
 
-**Uwaga:**  ten zestaw SDK nie obsługuje urządzenia iPod Touch.
+**Uwaga**  ten zestaw SDK nie obsługuje urządzenia iPod Touch.
 
 
 -   [Wymagania wstępne](#prerequisites)
@@ -42,17 +42,17 @@ Zalecamy stosowanie następującego oprogramowania na platformie programistyczne
 
     Środowisko Xcode jest dostępne w sklepie [Mac App Store](https://developer.apple.com/technologies/mac/).
 
--   Pakiet MS RMS SDK 4.2 dla systemów iOS i OS X. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
+-   Pakiet MS RMS SDK 4.2 dla systemów iOS i OS X. Aby uzyskać więcej informacji, zobacz [wprowadzenie](get-started.md).
 
     Ten zestaw SDK umożliwia tworzenie aplikacji dla systemu iOS 7.0 oraz OS X 10.8 i nowszych.
 
--   Biblioteka uwierzytelniania: firma Microsoft zaleca stosowanie biblioteki [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
+-   Biblioteka uwierzytelniania: Firma Microsoft zaleca użycie [usługi Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx). Można jednak stosować także inne biblioteki uwierzytelniania obsługujące protokół OAuth 2.0.
 
     Aby uzyskać więcej informacji, zobacz [ADAL for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) (Biblioteka ADAL dla systemu iOS) lub [ADAL for OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal) (Biblioteka ADAL dla systemu OS X).
 
 Temat [Nowości](release-notes.md) zawiera informacje na temat aktualizacji interfejsu API, informacje o wersji i często zadawane pytania.
 
-## <a name="optional"></a>Opcjonalne
+## <a name="optional"></a>Optional
 
 Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego użytku do operacji konsumenckich i zabezpieczających dla deweloperów, którzy nie chcą tworzyć własnego interfejsu użytkownika — [Biblioteka interfejsów użytkownika i przykładowa aplikacja dla systemu iOS](https://github.com/AzureAD/rms-sdk-ui-for-ios).
 
@@ -78,12 +78,12 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
     ![Ustawianie odwołania do folderu instalacyjnego zestawu SDK](../media/iOS-create-groups.png)
 
--   Aby dodać zestaw MS RMS SDK 4.2 dla pakietu zasobów, przeciągnij plik MSRightsManagementResources.bundle z folderu MSRightsManagement.framework/Resources do sekcji **Frameworks** (Struktury) w obszarze nawigatora projektu.
+-   Aby dodać MS RMS SDK 4.2 dla pakietu zasobów, przeciągnij plik MSRightsManagementResources.bundle z folderu MSRightsManagement.framework/Resources do **struktur** sekcji Nawigatora projektu.
 
     ![Dodawanie pakietu zasobów](../media/iOS-add-resource-bundle-02a.png)
 
 -   Podobnie jak podczas kopiowania struktury, wybierz przycisk **Create groups for any added folders** (Utwórz grupy dla wszystkich dodanych folderów) i wyczyść pole wyboru **Copy items into destination group's folder (if needed)** (Skopiuj elementy do folderu grupy docelowej [w razie potrzeby]).
--   Ten zestaw SDK korzysta z innych platform, na przykład: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** i **Security**. Aby je dodać, przejdź do sekcji **Linked Frameworks and Libraries** (Połączone struktury i biblioteki) w okienku **Summary** (Podsumowanie) w obszarze docelowym i rozwiń ją.
+-   Zestaw SDK zależy od innych struktur, w tym: **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** i **zabezpieczeń**. Aby je dodać, przejdź do sekcji **Linked Frameworks and Libraries** (Połączone struktury i biblioteki) w okienku **Summary** (Podsumowanie) w obszarze docelowym i rozwiń ją.
 
     Platformy **UIKit** i **Foundation** są wymagane i zazwyczaj domyślnie dostępne.
 

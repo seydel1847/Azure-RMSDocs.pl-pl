@@ -2,8 +2,8 @@
 title: Terminologia dla deweloperów dotycząca usługi AIP | Dokumentacja firmy Microsoft
 description: Zbiór definicji dotyczących usług Rights Management Services.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8ddf0b8722111ff2cd4c433337c4e0c930b02009
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1cf0080c899bc3095ff036f651c1f31f63b70ffe
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151561"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54071385"
 ---
 # <a name="terms"></a>Terminologia
 
@@ -28,11 +28,11 @@ Modalne ustawienie implementujące starszy schemat ochrony zawartości, w szczeg
 
 To ustawienie może spowodować, że aplikacja będzie chronić zawartość w sposób, który nie jest zgodny ze standardami klientów dotyczącymi ochrony zawartości.
 
-To ustawienie uniemożliwi aplikacji korzystanie z rozszerzeń kryptograficznych dodanych do zestawu Microsoft Rights Management SDK 3.0 lub nowszego.
+To ustawienie uniemożliwi aplikacji korzystanie z rozszerzeń kryptograficznych dodanych do wersji Microsoft Rights Management SDK 3.0 lub nowszej.
 
 **Format Microsoft Protected File**
 
 Domyślny format pliku (zwany także formatem PFile) dla usług AD RMS, pełniący funkcję standardu dla aplikacji z obsługą usług RMS.
 
-Format PFile jest niewidoczny dla dewelopera aplikacji, ponieważ jest wbudowany w zestaw Microsoft Rights Management SDK 4.2.
+PFile format jest niewidoczny dla dewelopera aplikacji, ponieważ jest wbudowany w sposób, w jaki zaprojektowano Microsoft Rights Management SDK 4.2.
 

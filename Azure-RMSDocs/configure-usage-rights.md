@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab2ea0f153d33e192958bf84800fc713d1b5b336
-ms.sourcegitcommit: c9a0d81c18ea79a2520baa4b3777b06a72f87f60
-ms.translationtype: HT
+ms.openlocfilehash: a7bf1e202fdff99375054647e04d44d44eecdb85
+ms.sourcegitcommit: 5b48131ace3bbaf82f22fcb7eedf735c2f73d962
+ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53382507"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429903"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Konfigurowanie praw użytkowania dla usługi Azure Rights Management
 
@@ -129,7 +129,7 @@ Alternatywnie, można zmienić to dziedziczenie ochrony dokumentów, określają
 
 Jeśli potrzebujesz dołączonego dokumentu, aby zachować oryginalną ochronę, zobacz [zabezpieczanie współpracy nad dokumentami przy użyciu usługi Azure Information Protection](secure-collaboration-documents.md).
 
-Uwaga: Jeśli widzisz odwołania do **DecryptAttachmentFromPortal**, ten parametr jest teraz przestarzała w przypadku [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps) i nie jest już dostępna.
+Uwaga: Jeśli widzisz odwołania do **DecryptAttachmentFromPortal**, ten parametr jest teraz przestarzała w przypadku [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps). Jeśli nie zostały wcześniej ustawione tego parametru, nie jest dostępna. 
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Wystawca usługi Rights Management i właściciel usługi Rights Management
 

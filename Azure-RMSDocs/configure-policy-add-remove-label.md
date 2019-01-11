@@ -4,22 +4,24 @@ description: Dodaj lub usuń etykiety usługi Azure Information Protection do lu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 154b8d5b61169208cdc01a2445be918ea6e2f77b
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304862"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814207"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Dodaj lub usuń etykiety do lub z zasad usługi Azure Information Protection
 
 >*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Po utworzeniu etykiety usługi Azure Information Protection, można można następnie dodać do zasad wymagających używania czemu będzie ona dostępna dla użytkowników. Jeśli etykieta jest dla wszystkich użytkowników, Dodaj etykietę do zasad globalnych. Jeśli etykieta dla podzbioru użytkowników, Dodaj etykietę do zasad o określonym zakresie. Obecnie etykietę można dodać do tylko jedne zasady. Aby dodać etykiety podrzędnej, jego Etykieta nadrzędna musi być w tych samych zasadach lub w ramach globalnych zasad.
+Po utworzeniu etykiety usługi Azure Information Protection, można można następnie dodać do zasad wymagających używania czemu będzie ona dostępna dla użytkowników. Jeśli etykieta jest dla wszystkich użytkowników, Dodaj etykietę do zasad globalnych. Jeśli etykieta dla podzbioru użytkowników, Dodaj etykietę do zasad o określonym zakresie. Etykietę można dodać do tylko jedne zasady. 
+
+Aby dodać etykiety podrzędnej, jego Etykieta nadrzędna musi być w tych samych zasadach lub w ramach globalnych zasad. Po dodaniu etykiety podrzędnej, ustawienia z głównej etykiety nie są dziedziczone. Użytkownicy, którzy mają przypisaną etykietę podrzędną w swoich zasad głównej etykiety jest obsługiwane tylko jako kontener wyświetlaną nazwę i kolor. W tym scenariuszu inne ustawienia konfiguracji w głównej etykiety nie są obsługiwane dla oznaczenia wizualne, ochronę i warunki. Mimo że nadal można je skonfigurować, te ustawienia w głównej etykiety są obsługiwane tylko dla użytkowników, którzy mają głównej etykiety w swoich zasad, bez etykiety podrzędnej.
 
 Dla etykiet, które znajdują się już w zasadach możesz je usunąć z zasad. Ta akcja nie powoduje usunięcia etykiety. Pozostanie dostępna do użycia w inne zasady.
 
@@ -56,5 +58,4 @@ Jeśli musisz utworzyć zasady o określonym zakresie, stosuje się etykietę do
 
 ## <a name="next-steps"></a>Następne kroki
 
-Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).  
-
+Aby uzyskać więcej informacji o konfigurowaniu zasad usługi Azure Information Protection, użyj linków w sekcji [Konfigurowanie zasad organizacji](configure-policy.md#configuring-your-organizations-policy).

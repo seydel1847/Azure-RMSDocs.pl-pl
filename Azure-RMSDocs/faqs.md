@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/05/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a513f495b2dd6ef75a3c2f219a207a98f1f6e143
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
+ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53174101"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060318"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -96,7 +96,7 @@ Usługa Azure Information Protection nie klasyfikowania i ochrony danych struktu
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>Czy mogę zobaczyć, usługi Azure Information Protection znajduje się w aplikacji w chmurze dostępnych dla dostępu warunkowego — jak to działa?
 
-Tak, w publicznej wersji zapoznawczej oferty, teraz można skonfigurować dostęp warunkowy usługi Azure AD dla usługi Azure Information Protection.
+Tak, w wersji zapoznawczej oferty, teraz można skonfigurować dostęp warunkowy usługi Azure AD dla usługi Azure Information Protection.
 
 Po otwarciu dokumentu, który jest chroniony przez usługę Azure Information Protection Administratorzy mogą teraz blokować lub udzielić dostępu użytkownikom w ramach ich dzierżawy, oparte na formanty standardowe dostępu warunkowego. Wymaganie uwierzytelniania wieloskładnikowego (MFA) jest jednym z najczęściej żądanej warunków. Inny on, że urządzenia muszą być [zgodne z zasadami usługi Intune](/intune/conditional-access-intune-common-ways-use) , aby na przykład urządzenia przenośne spełniają wymagania dotyczące hasła i minimalną wersję systemu operacyjnego, a komputery muszą być przyłączone do domeny.
 
@@ -111,6 +111,8 @@ Informacje dodatkowe:
 - Zaleca się, że należy dodawać konta administratora do swoich zasad dostępu warunkowego, ponieważ te konta nie będzie dostęp do bloku usługi Azure Information Protection w witrynie Azure portal.
 
 - Jeśli używasz usługi MFA w zasady dostępu warunkowego do współpracy z innymi firmami (B2B), należy użyć [współpracy B2B usługi Azure AD](/azure/active-directory/b2b/what-is-b2b) i utworzyć konta gościa dla użytkowników, aby udostępniać w innej organizacji.
+
+- Z usługą Azure AD grudnia 2018 r w wersji zapoznawczej, możesz teraz monitować użytkowników o zaakceptowanie warunków użytkowania przed ich otworzyć dokument chroniony, po raz pierwszy. Aby uzyskać więcej informacji zobacz następujący wpis na blogu: [Aktualizacje usługi Azure AD warunki użytkowania funkcji w ramach dostępu warunkowego](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Updates-to-Azure-AD-Terms-of-Use-functionality-within/ba-p/294822)
 
 - Jeśli używasz wielu aplikacji w chmurze dla dostępu warunkowego, może nie być wyświetlana **Microsoft Azure Information Protection** wyświetlane na liście, aby wybrać. W tym przypadku użyj pola wyszukiwania w górnej części listy. Zacznij wpisywać tekst "Microsoft Azure Information Protection" do filtrowania dostępnych aplikacji. Jeśli masz subskrypcję obsługiwane, zostaną wyświetlone **Microsoft Azure Information Protection** do wybrania. 
 
@@ -146,15 +148,15 @@ Główne różnice między te dwa rozwiązania:
 |--------------------------------|-------------------------------------|
 |Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).|
 |Tryb działania: <br /><br />-Czasu rzeczywistego|Tryb działania: <br /><br />-Systematycznie przeszukuje magazynów danych i tego cyklu można uruchomić pojedynczego lub wielokrotnego|
-|Obsługa typów plików: <br /><br />— Wszystkie typy plików są chronione domyślnie <br /><br />-Określonych typów plików, można wykluczyć z ochrony, edytując rejestr|Obsługa typów plików: <br /><br />— Typy plików pakietu office są chronione domyślnie <br /><br />-Określonych typów plików, można dołączyć do ochrony przez edycję rejestru|
+|Obsługa typów plików: <br /><br />— Wszystkie typy plików są chronione domyślnie <br /><br />-Określonych typów plików, można wykluczyć z ochrony, edytując rejestr|Obsługa typów plików: <br /><br />— Typy plików pakietu office i dokumentów PDF są chronione domyślnie <br /><br />-Dodatkowe typy plików, można dołączyć do ochrony przez edycję rejestru|
 
 Obecnie ma różnicy w ustawieniu [właściciela usługi Rights Management](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) dla plików, które są chronione na lokalny folder lub udział sieciowy. Domyślnie w przypadku obu rozwiązań właściciela usługi Rights Management jest ustawiony na konto które chroni plik, ale można zastąpić to ustawienie:
 
 - Dla infrastruktury klasyfikacji plików systemu Windows Server: Ustaw właściciela usługi Rights Management do jednego konta dla wszystkich plików lub dynamicznie określać właściciela usługi Rights Management dla każdego pliku. Aby dynamicznie ustawić właściciela usługi Rights Management, należy użyć **- OwnerMail [E-mail właściciela pliku źródłowego]** parametru i wartości. Ta konfiguracja pobiera adres e-mail użytkownika z usługi Active Directory przy użyciu nazwy konta użytkownika w pliku właściwości właściciela.
 
-- Skanera usługi Azure Information Protection: Możesz ustawić właściciela usługi Rights Management do jednego konta dla wszystkich plików na określony magazyn danych, ale nie można dynamicznie ustawić właściciela usługi Rights Management dla każdego pliku. Aby ustawić konto, należy określić **- DefaultOwner** parametr [profilu repozytorium danych](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
+- Skanera usługi Azure Information Protection: W przypadku nowo chronionej plików można ustawić właściciela usługi Rights Management do jednego konta dla wszystkich plików na określony magazyn danych, ale nie można dynamicznie ustawić właściciela usługi Rights Management dla każdego pliku. Właściciel usługi Rights Management nie jest zmieniany chronionych wcześniej plików. Aby ustawić konto, należy określić **- DefaultOwner** parametr [profilu repozytorium danych](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
 
-Gdy skaner chroni pliki witryn programu SharePoint i bibliotek, właściciel usługi Rights Management jest dynamicznie ustawić dla każdego pliku przy użyciu wartość autora programu SharePoint.
+Gdy skaner chroni pliki witryn programu SharePoint i bibliotek, właściciel usługi Rights Management dynamicznie ustawiono dla każdego pliku przy użyciu wartości edytora programu SharePoint.
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>Podobno nowa wersja ma być wkrótce dostępna dla usługi Azure Information Protection — kiedy zostanie ona wydana?
 

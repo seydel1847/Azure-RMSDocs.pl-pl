@@ -4,17 +4,17 @@ description: Dowiedz się, etykiety i ustawienia w zasadach usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66a2c117523eb01089881b8210f12ed2f657ed4
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6483600d8ba74a29a54965010441fe10dc309d8e
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304897"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814190"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Omówienie zasad usługi Azure Information Protection
 
@@ -42,7 +42,9 @@ Zasady usługi Azure Information Protection zawierają następujące elementy, k
 
 - Opcja udostępniania linku do niestandardowej pomocy dla użytkowników.
 
-Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Dwa z tych etykiet zawierają etykiet podrzędnych, aby zapewnić podkategorii, w razie. Po skonfigurowaniu etykiety dla etykiet podrzędnych użytkownicy nie mogą wybrać etykietę głównego, ale należy wybrać jedną z etykiet podrzędnych.
+Usługa Azure Information Protection obejmuje [domyślne zasady](configure-policy-default.md), które zawierają pięć głównych etykiet. Dwa z tych etykiet zawierają etykiet podrzędnych, aby zapewnić podkategorii, w razie. 
+
+Po skonfigurowaniu etykiety dla etykiet podrzędnych użytkownicy nie mogą wybrać etykietę głównego, ale należy wybrać jedną z etykiet podrzędnych. W tym scenariuszu głównej etykiety jest obsługiwany jako kontener wyświetlania tylko nazwę i kolor.
 
 Etykiety usługi Azure Information Protection może służyć dla pełnego zakresu danych, które organizacja zazwyczaj tworzy i przechowuje, od najniższej klasyfikacji danych osobowych do najwyższej klasyfikacji wysoce poufne dane. 
 

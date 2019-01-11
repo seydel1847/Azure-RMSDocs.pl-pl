@@ -2,8 +2,8 @@
 title: Konfiguracja interfejsu API plików | Azure RMS
 description: Działanie interfejsu API plików można skonfigurować za pomocą ustawień rejestru.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1323984258b64e9d28142a0209a89d3791ab03dd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b05498730d064dfa2b7fb2183b1a8694c1fbf63
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148651"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070625"
 ---
 # <a name="file-api-configuration"></a>Konfiguracja interfejsu API plików
 
@@ -37,15 +37,15 @@ W poniższych sekcjach opisano klucze i wartości kluczy, które sterują szyfro
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
-**Typ**: klucz
+**Typ**: Klucz
 
-**Opis**: zawiera ogólną konfigurację interfejsu API plików.
+**Opis**: Zawiera ogólną konfigurację interfejsu API plików.
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
-**Typ**: klucz
+**Typ**: Klucz
 
-**Opis**: zawiera informacje o konfiguracji dla określonych rozszerzeń plików, na przykład TXT, JPG itp.
+**Opis**: Określa informacje o konfiguracji dla określonych rozszerzeń plików; na przykład TXT, JPG i tak dalej.
 
 - Znak symbolu wieloznacznego "*", jest dozwolony; Jednak ustawienie dla określonego rozszerzenia ma pierwszeństwo przed ustawieniem symboli wieloznacznych. Symbol wieloznaczny nie ma wpływu na ustawienia dla plików programu Microsoft Office — muszą być one jawnie wyłączone według typu pliku.
 - Aby określić pliki, które nie mają rozszerzenia, użyj znaku „.”
@@ -58,16 +58,16 @@ Aby określić zachowanie ochrony, ustaw **szyfrowania** wartości w kluczu. Je�
 
 **Typ**: REG_SZ
 
-**Opis**: zawiera jedną z trzech wartości:
+**Opis**: Zawiera jedną z trzech wartości:
 
-- **Off**: szyfrowanie jest wyłączone.
+- **Wyłącz**: Szyfrowanie jest wyłączone.
 
 > [!Note]
 > To ustawienie nie ma żadnego wpływu na odszyfrowywanie. Każdy zaszyfrowany plik (niezależnie od tego, czy został zaszyfrowany za pomocą ochrony natywnej czy pliku Pfile) można odszyfrować, jeśli użytkownik ma prawo **WYODRĘBNIANIA**.
 
-- **Native**: jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do pliku z rozszerzeniem ptxt. Lista rozszerzeń plików, które mogą zostać objęte ochroną natywną poniżej.
+- **Natywne**:  Jest używane szyfrowanie natywne. W przypadku plików pakietu Office zaszyfrowany plik ma takie samo rozszerzenie jak plik oryginalny. Na przykład plik z rozszerzeniem docx zostanie zaszyfrowany do pliku z rozszerzeniem docx. W przypadku innych plików, które mogą zostać objęte ochroną natywną, dany plik zostanie zaszyfrowany w pliku z rozszerzeniem w formacie p*zzz*, gdzie *zzz* oznacza pierwotne rozszerzenie pliku. Na przykład pliki txt będą szyfrowane do pliku z rozszerzeniem ptxt. Lista rozszerzeń plików, które mogą zostać objęte ochroną natywną poniżej.
 
-- **Pfile**: jest używane szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
+- **Pfile**: Jest używane szyfrowanie pliku PFile. Zaszyfrowany plik będzie miał rozszerzenie pfile dołączone do pierwotnego rozszerzenia. Na przykład po zaszyfrowaniu plik txt będzie mieć rozszerzenie txt.pfile.
 
 
 > [!Note]
@@ -91,19 +91,19 @@ Można dodać natywną obsługę dowolnego typu pliku (rozszerzenie). Na przykł
 
 -   Rozszerzenia plików: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx, vsdx, vsdm, vssx, vssm, vstx i vstm. 
 -   Typ ochrony = Native (domyślnie): plik sample.docx jest szyfrowany do sample.docx
--   Typ ochrony = Pfile: dla plików pakietu Office działa tak samo jak w trybie natywnym.
--   Off: Wyłącza funkcję szyfrowania.
+-   Typ ochrony = Pfile: Dla plików pakietu Office działa tak samo jak w trybie natywnym.
+-   Wyłączone: Wyłącza funkcję szyfrowania.
 
 **Pliki PDF**
 
 -   Typ ochrony = Native: plik sample.pdf zostaje zaszyfrowany i nosi nazwę sample.ppdf
 -   Typ ochrony = Pfile: plik sample.pdf zostaje zaszyfrowany i nosi nazwę sample.pdf.pfile.
--   Off: Wyłącza funkcję szyfrowania.
+-   Wyłączone: Wyłącza funkcję szyfrowania.
 
 **Wszystkie inne formaty plików**
 
 -   Typ ochrony = Pfile: plik sample.*zzz* jest szyfrowany i nosi nazwę sample.*zzz*.pfile, gdzie *zzz* to pierwotne rozszerzenie pliku.
--   Off: Wyłącza funkcję szyfrowania.
+-   Wyłączone: Wyłącza funkcję szyfrowania.
 
 ### <a name="examples"></a>Przykłady
 
@@ -111,41 +111,41 @@ Następujące ustawienia pozwalają włączyć szyfrowanie pliku PFile dla plik�
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               txt
-                  Encryption = Pfile
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               txt
+                  Encryption = Pfile
 ```
 
 Następujące ustawienia pozwalają włączyć szyfrowanie pliku PFile dla wszystkich plików nienależących do pakietu Office, z wyjątkiem plików txt. Pliki pakietu Office będą chronione natywnie (domyślnie), ochrona plików txt będzie zablokowana, a wszystkie inne pliki będą miały włączoną ochronę pliku PFile.
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               *
-                  Encryption = Pfile
-               txt
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               *
+                  Encryption = Pfile
+               txt
+                  Encryption = Off
 ```
 
 Następujące ustawienia pozwalają wyłączyć szyfrowanie natywne plików docx. Pliki pakietu Office, z wyjątkiem plików docx, będą chronione natywnie (domyślnie), a ochrona wszystkich innych plików będzie zablokowana (domyślnie).
 
 ```
 HKEY_LOCAL_MACHINE
-   Software
-      Microsoft
-         MSIPC
-            FileProtection
-               docx
-                  Encryption = Off
+   Software
+      Microsoft
+         MSIPC
+            FileProtection
+               docx
+                  Encryption = Off
 ```
 
-## <a name="related-articles"></a>Powiązane artykuły
+## <a name="related-articles"></a>Pokrewne artykuły:
 
 - [Uwagi dla deweloperów](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)

@@ -2,8 +2,8 @@
 title: Wskazówki dla deweloperów dotyczące zestawu Azure Information Protection SDK 2.1| Dokumentacja firmy Microsoft
 description: Zestaw tematów zawierających porady dotyczące programowania przy użyciu zestawu AIP SDK 2.1
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: conceptual
@@ -12,18 +12,18 @@ ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5e85005cd497be45a2b92631a682121482e5997f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4e6f4cbf9ec795ca73424bbd2ca35e5f1ae59fa7
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147485"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070592"
 ---
 # <a name="developer-guidance"></a>Wskazówki dla deweloperów
 
 W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy programowania, jak również ogólne informacje dotyczące programowania za pomocą tego zestawu SDK. Scenariusze zawarte w tej sekcji dotyczą tej wersji zestawu Rights Management Services SDK 2.1 i mogą zostać zmienione w kolejnych wersjach.
 - [Porada: korzystanie z uwierzytelniania ADAL](how-to-use-adal-authentication.md) — uwierzytelnianie w usługach Azure RMS dla aplikacji z użyciem biblioteki Azure Active Directory Authentication Library (ADAL).
-- [Porada: dodawanie jawnych praw właściciela](add-explicit-owner-rights.md) — w przypadku tworzenia licencji od podstaw (przy użyciu funkcji [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)) w aplikacji należy jawnie dodać prawa właściciela.
+- [Instrukcje: Dodawanie jawnych praw właściciela](add-explicit-owner-rights.md) -aplikacji należy jawnie dodać prawa "Właściciela", podczas tworzenia licencji od podstaw ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)).
 - [Porada: debugowanie aplikacji obsługującej prawa](debugging-applications-that-use-ad-rms.md) — w tym temacie opisano metody debugowania aplikacji i korzystania z dziennika zdarzeń systemu Windows.
 - [Porada: wdrażanie aplikacji do dzierżawy klienta](how-to-deploy-app.md) — artykuł zawiera opis wdrażania aplikacji z dzierżawy usługi Azure AD w środowisku projektowym do dzierżawy usługi Azure AD w środowisku produkcyjnym.
 - [Porada: włączanie śledzenia dokumentów i odwołania](tracking-content.md) — w tym temacie podano podstawowe wskazówki dotyczące implementowania śledzenia dokumentu z zawartością i zawarto przykładowy kod służący do aktualizacji metadanych i tworzenia przycisku **Śledź użycie** na potrzeby aplikacji.
@@ -39,6 +39,6 @@ W tej sekcji podano dokładne wskazówki dotyczące kilku ważnych scenariuszy p
 - [Obsługiwane platformy](supported-platforms.md) — ten temat zawiera informacje o platformach klientów i serwerów obsługiwanych przez zestaw RMS SDK 2.1.
 - [Opis ograniczeń użycia](understanding-usage-restrictions.md) — wszystkie aplikacje obsługujące usługi RMS muszą wymuszać ograniczanie użycia określone przez stałe wymienione w tym temacie.
 
- 
+ 
 ## <a name="related-topics"></a>Tematy pokrewne
 * [Przegląd](ad-rms-overview.md)

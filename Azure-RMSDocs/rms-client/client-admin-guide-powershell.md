@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów dotyczące zarządzani
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d707f32062df54975237d9ae6f7218d33cfe337a
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 8c46dfb6aafa9162be6725202516f8d1fa871cc8
+ms.sourcegitcommit: 60223377a914269c93d73b3522d87b8161ecf854
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305662"
+ms.lasthandoff: 12/26/2018
+ms.locfileid: "53786321"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>Podręcznik administratora: Używanie środowiska PowerShell z klientem usługi Azure Information Protection
 
@@ -33,9 +33,11 @@ Polecenia cmdlet są instalowane przy użyciu modułu programu PowerShell **Azur
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|Oznaczyć pliki nieinteraktywnego, na przykład za pomocą skryptu uruchamianego zgodnie z harmonogramem.|
 
 > [!TIP]
-> Aby używać poleceń cmdlet o długości większej niż 260 znaków, należy użyć następującego [ustawienie zasad grupy](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/) dostępna w Rocznicowej aktualizacji systemu Windows 10:<br /> **Lokalne zasady komputera** > **konfiguracji komputera** > **Szablony administracyjne** > **wszystkie ustawienia**  >  **NTFS** > **Win32 włączyć długie ścieżki** 
+> Aby używać poleceń cmdlet o długości większej niż 260 znaków, należy użyć następującego [ustawienie zasad grupy](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/) oznacza to dostępne począwszy od systemu Windows 10, wersja 1607:<br /> **Lokalne zasady komputera** > **konfiguracji komputera** > **Szablony administracyjne** > **wszystkie ustawienia**  >  **NTFS** > **Win32 włączyć długie ścieżki** 
 > 
 > Dla systemu Windows Server 2016 można użyć tego samego ustawienia zasad grupy, po zainstalowaniu najnowszych szablonów administracyjnych (ADMX) dla systemu Windows 10.
+>
+> Aby uzyskać więcej informacji, zobacz [maksymalnego ograniczenia długości ścieżki](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) sekcji dokumentacji dla deweloperów systemu Windows 10.
 
 [Skanera usługi Azure Information Protection](../deploy-aip-scanner.md) używa poleceń cmdlet z modułu usługi Azure Information Protection, aby zainstalować i skonfigurować usługę w systemie Windows Server. Skaner to pozwala następnie odnajdywania, klasyfikowania i ochrony plików w magazynach danych.
 

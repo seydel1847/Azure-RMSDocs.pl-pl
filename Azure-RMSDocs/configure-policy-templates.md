@@ -4,18 +4,18 @@ description: Konfigurowanie i zarządzanie nimi szablony usługi rights manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 412b84b705d12efd7259066c0fece68e2ab8c099
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 6147a065f6aff31dd40c339699f0dc35f1ebaa82
+ms.sourcegitcommit: b10df82d9f00b3f826bce38beb7b666ce3f56e84
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173948"
+ms.lasthandoff: 12/28/2018
+ms.locfileid: "53814241"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection
 
@@ -83,7 +83,7 @@ Przed rozpoczęciem edycji tych szablonów, lub konwersji do etykiet, upewnij si
 
 - Nie można skopiować ani usunąć szablonu w witrynie Azure portal. Gdy szablon jest konwertowany na etykietę, można skonfigurować etykiety, można zatrzymać za pomocą tego szablonu, wybierając **nieskonfigurowane** dla **ustawić uprawnienia dla dokumentów i wiadomości e-mail zawierających tę etykietę** Opcja. Alternatywnie możesz usunąć etykiety. W obu scenariuszach jednak szablon nie zostanie usunięta i pozostaje w stanie zarchiwizowane.
     
-    Można teraz usunąć szablon przy użyciu programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet. Umożliwiają to polecenie cmdlet programu PowerShell dla szablonów, które nie są konwertowane na etykiety. Jednak jeśli usuniesz szablon, który został użyty do ochrony zawartości, tę zawartość można będzie niemożliwe. Usuwanie szablonów, tylko wtedy, gdy masz pewność, że nie były używane do ochrony dokumentów lub wiadomości e-mail w środowisku produkcyjnym. Jako środek ostrożności warto rozważyć najpierw wyeksportowanie szablonu do przechowywania kopii zapasowych, przy użyciu [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) polecenia cmdlet. 
+    Można teraz usunąć szablon przy użyciu programu PowerShell [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) polecenia cmdlet. Umożliwiają to polecenie cmdlet programu PowerShell dla szablonów, które nie są konwertowane na etykiety. Jednakże aby upewnić się, że wcześniej chronionej zawartości, można go otworzyć i używać zgodnie z oczekiwaniami, zwykle odradzamy usuwanie szablonów. Najlepszym rozwiązaniem jest usunięcie szablonów, tylko wtedy, gdy masz pewność, że nie były używane do ochrony dokumentów lub wiadomości e-mail w środowisku produkcyjnym. Jako środek ostrożności warto rozważyć najpierw wyeksportowanie szablonu do przechowywania kopii zapasowych, przy użyciu [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate) polecenia cmdlet. 
 
 - Obecnie edytowanie i zapisanie szablonu dla działu powoduje usunięcie konfiguracji zakresu. Odpowiednikiem szablonu o określonym zakresie w zasadach usługi Azure Information Protection jest [zasada z określonym zakresem](configure-policy-scope.md). W przypadku konwersji szablonu na etykietę możesz wybrać istniejący zakres.
     

@@ -2,8 +2,8 @@
 title: Przykłady kodu dla systemu Android | Azure RMS
 description: W tym temacie przedstawiono ważne elementy kodu dla zestawu RMS SDK w wersji dla systemu Android.
 keywords: ''
-author: lleonard-msft
-ms.author: alleonar
+author: bryanla
+ms.author: bryanla
 manager: mbaldwin
 ms.date: 12/10/2018
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8537a4a9e51b99e0dd37e7abc720473b364cd879
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: a634cea9cf6665b5db08fdb359e6a69cd507a47f
+ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173693"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54070336"
 ---
 # <a name="android-code-examples"></a>Przykłady kodu dla systemu Android
 
@@ -38,7 +38,7 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>Scenariusz: Używanie plików chronionych przez usługę RMS
 
-- **Krok 1**: Tworzenie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx).
+- **Krok 1**. Tworzenie [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx).
 
     **źródło**: *MsipcAuthenticationCallback.java*
 
@@ -205,7 +205,7 @@ Te przykłady kodu są pobierane z większej aplikacji przykładowej, reprezentu
 
 Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego w celu utworzenia zasady, a następnie tworzony i zapisywany jest nowy plik chroniony.
 
-- **Krok 1**: Pobieranie listy szablonów za pomocą [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx) obiektu.
+- **Krok 1**. Pobieranie listy szablonów za pomocą [TemplateDescriptor](https://msdn.microsoft.com/library/dn790871.aspx) obiektu.
 
     **źródło**: *MsipcTaskFragment.java*
 
@@ -357,7 +357,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
 ### <a name="scenario-open-a-custom-protected-file"></a>Scenariusz: Otwieranie niestandardowego pliku chronionego
 
-- **Krok 1**: Tworzenie [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z *serializedContentPolicy*.
+- **Krok 1**. Tworzenie [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) z *serializedContentPolicy*.
 
     **źródło**: *MsipcTaskFragment.java*
 
@@ -525,7 +525,7 @@ Ten scenariusz rozpoczyna się od pobrania listy szablonów, wybrania pierwszego
 
 ### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>Scenariusz: Tworzenie niestandardowego pliku chronionego za pomocą zasad niestandardowych
 
-- **Krok 1**: Za pomocą adresu e-mail podanego przez użytkownika Utwórz deskryptor zasad.
+- **Krok 1**. Za pomocą adresu e-mail podanego przez użytkownika Utwórz deskryptor zasad.
 
     **źródło**: *MsipcTaskFragment.java*
 

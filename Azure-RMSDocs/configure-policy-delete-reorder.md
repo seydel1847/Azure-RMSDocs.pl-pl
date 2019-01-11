@@ -4,16 +4,16 @@ description: Można usunąć lub zmiana kolejności etykiet usługi Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 12/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 6e5348eb55451747ff9f10b3bd4f7a2f868b03c5
+ms.sourcegitcommit: 95f16f89a46d9dffa8a114f7683816024d65ff02
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53304880"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996069"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Usuwanie lub zmiana kolejności etykiet dla usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Ponadto jeśli usunięto etykietę zastosować ochronę, ochrona nie zostanie us
 
 - Zmień nazwę szablonu, lub usuń go za pomocą programu PowerShell.
     
-    Przed wykonaniem tych czynności należy wziąć pod uwagę czy innych administratorów lub usług są przy użyciu szablonu i identyfikację za pomocą nazwy bieżącego. Szablon można usunąć tylko wtedy, gdy nie trzeba otwierać dokumentów lub wiadomości e-mail, które były chronione przez szablon.
+    Przed wykonaniem tych czynności należy wziąć pod uwagę innych administratorów lub usług są przy użyciu szablonu, czy masz używane w przeszłości. Można zidentyfikować szablonu przez jego identyfikator szablonu, który nie powoduje zmiany lub jej nazwę (można zmienić). Najlepszym rozwiązaniem jest szablon należy usunąć tylko wtedy, gdy masz pewność, że użytkownicy nie będą musieli otwieranie dokumentów i wiadomości e-mail, które były chronione przez szablon.
 
 Aby uzyskać więcej informacji na temat zarządzania szablonami ochrony, zobacz [Konfigurowanie i Zarządzanie szablonami usługi Azure Information Protection](configure-policy-templates.md).
 
