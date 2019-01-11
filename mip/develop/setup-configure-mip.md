@@ -4,14 +4,14 @@ description: Zawiera wymagania wstępne dotyczące instalacji i konfiguracji, ab
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 2790c64095a6fca4a33f70aeada68fa0c6668020
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: 2f84cfd8a0ae15a66cd624fe591f2891ff549768
+ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386733"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136239"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Instalacja zestawu SDK ochrony informacji firmy Microsoft (MIP) i konfiguracji 
 
@@ -38,7 +38,7 @@ Pamiętaj przed rozpoczęciem pracy, zobacz następujące tematy:
 
 Wiele przykładowych zestawach SDK wymaga dostępu do subskrypcji usługi Office 365. Jeśli jeszcze nie, należy koniecznie Zarejestruj się w jednym z następujących typów subskrypcji:
 
-| Nazwa | Zarejestruj się |
+| Name (Nazwa) | Zarejestruj się |
 |------|---------|
 | Usługi Office 365 Enterprise E3 wersji próbnej (30-dniowej bezpłatnej wersji próbnej) | https://go.microsoft.com/fwlink/p/?LinkID=403802 |
 | Office 365 Enterprise E3 lub E5 | https://products.office.com/business/office-365-enterprise-e3-business-software |
@@ -113,9 +113,9 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
 
    Każdy plik zip lub pliku tar zawiera trzy katalogi:
 
-   - **Pojemniki:** skompilowane pliki binarne dla każdej architektury platformy, jeśli ma to zastosowanie.
-   - **Obejmują:** pliki nagłówków zestawu SDK usługi Microsoft Information Protection
-   - **Przykłady:** źródła kodu dla przykładowych aplikacji
+   - **Pojemniki:** Skompilowane pliki binarne dla każdej architektury platformy, jeśli ma to zastosowanie.
+   - **Obejmują:** Pliki nagłówków zestawu SDK usługi Microsoft Information Protection
+   - **Przykłady:** Kod źródłowy dla przykładowych aplikacji
 
    Jeśli wykonujesz rozwoju Visual Studio, zestaw SDK można również zainstalować przy użyciu konsoli Menedżera pakietów NuGet:
 
@@ -139,7 +139,7 @@ Następnie wykonaj poniższe kroki, aby upewnić się, komputer kliencki jest pr
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>Rejestrowanie aplikacji klienta za pomocą usługi Azure Active Directory
 
-Subskrypcja usługi Office 365, inicjowanie obsługi administracyjnej procesu, skojarzone platformy Azure w ramach dzierżawy usługi AD jest tworzony. Dzierżawy usługi Azure AD zapewnia zarządzanie tożsamościami i dostępem dla usługi Office 365 *kont użytkowników* i *kont aplikacji*. Aplikacje, które wymagają dostępu do zabezpieczonych interfejsy API (takie jak API MIP), wymagają konta aplikacji.
+W ramach subskrypcji usługi Office 365, w procesie inicjowania obsługi jest tworzony skojarzonych dzierżawę usługi Azure Active Directory (Azure AD). Dzierżawy usługi Azure AD zapewnia zarządzanie tożsamościami i dostępem dla usługi Office 365 *kont użytkowników* i *kont aplikacji*. Aplikacje, które wymagają dostępu do zabezpieczonych interfejsy API (takie jak API MIP), wymagają konta aplikacji.
 
 Dla uwierzytelniania i autoryzacji w czasie wykonywania, kont są reprezentowane przez *podmiotu zabezpieczeń*, który jest tworzony na podstawie informacji o tożsamości dla konta. Podmiotów zabezpieczeń, które reprezentują konta aplikacji są określane jako [ *nazwy głównej usługi*](/azure/active-directory/develop/developer-glossary#service-principal-object). 
 
@@ -149,7 +149,7 @@ Aby zarejestrować konto do aplikacji w usłudze Azure AD do użycia z przewodni
   > Aby otworzyć Zarządzanie dzierżawą usługi Azure AD dla tworzenia kont, musisz zalogować się do witryny Azure portal przy użyciu konta użytkownika, który jest elementem członkowskim [roli "Właściciel" w ramach subskrypcji](/azure/billing/billing-add-change-azure-subscription-administrator). W zależności od konfiguracji dzierżawy, konieczne może być członkiem roli katalogu "Globalnego administratora", aby [rejestrowania aplikacji](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps).
   > Zaleca się testowanie za pomocą konta z ograniczeniami. Upewnij się, że konto ma tylko uprawnienia do uzyskania dostępu do wymaganych punktów końcowych SCC. Hasła jako zwykły tekst przekazywane za pośrednictwem wiersza polecenia mogą być zbierane przez systemy rejestrowania.
 
-1. Postępuj zgodnie z instrukcjami w [Integrowanie aplikacji z usługą Azure Active Directory, Dodaj sekcję aplikacji](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#adding-an-application). Do celów testowych, użyj następujących wartości dla danej właściwości, zgodnie z rzeczywistym kroków przewodnika: 
+1. Postępuj zgodnie z instrukcjami w [rejestrowanie aplikacji w usłudze Azure AD, zarejestruj nową aplikację](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal) sekcji. Do celów testowych, użyj następujących wartości dla danej właściwości, zgodnie z rzeczywistym kroków przewodnika: 
     - **Typ aplikacji** — wybierz "Native", jak przedstawiona przez zestaw SDK są aplikacje konsoli natywnie zainstalowanych aplikacji. Natywne aplikacje są traktowane jako "publicznej" klientów przez OAuth2, ponieważ są w stanie użycia magazynu poświadczeń aplikacji w bezpieczny sposób. W odróżnieniu od dla "poufne" aplikacji na serwerze, na przykład aplikacji sieci web, który jest zarejestrowany w jej własnych poświadczeń. 
     - **Identyfikator URI przekierowania** — ponieważ zestaw SDK używa konsoli proste aplikacje klienckie, użyj identyfikatora URI w formacie `<app-name>://authorize`.
 
@@ -174,7 +174,7 @@ Po zakończeniu rejestracji aplikacji i uprawnienia do interfejsu API powinien w
    [![Rejestracja aplikacji w usłudze Azure AD](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
 
 
-Aby uzyskać więcej informacji na temat dodawania interfejsów API i uprawnienia do rejestracji, zobacz [aktualizowanie aplikacji, konfigurowanie aplikacji klienckiej dostęp do sekcji dotyczącej interfejsów API sieci web](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application). Tutaj znajdziesz informacje na temat dodawania interfejsów API i uprawnienia wymagane przez aplikację kliencką.  
+Aby uzyskać więcej informacji na temat dodawania interfejsów API i uprawnienia do rejestracji, zobacz [aktualizowanie aplikacji w usłudze Azure AD Konfigurowanie aplikacji klienckiej dostęp do interfejsów API sieci web](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis). Tutaj znajdziesz informacje na temat dodawania interfejsów API i uprawnienia wymagane przez aplikację kliencką.  
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>Żądanie Umowy integracyjnej usługi Information Protection (IPIA, Information Protection Integration Agreement)
 

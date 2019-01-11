@@ -1,0 +1,73 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: fe7445f2cde82849883e9789e7def22147982cbe
+ms.sourcegitcommit: 69ad76d613f6347f3e81229c99524819d7c103ba
+ms.translationtype: MT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53637975"
+documentType: LandingData
+title: Dokumentacja usługi Azure Information Protection
+metadata:
+  title: Dokumentacja usługi Azure Information Protection
+  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę.
+  services: information-protection
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.service: information-protection
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 12/14/2018
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Kontroluj i zabezpieczaj pocztę e-mail, dokumenty oraz dane poufne, które są udostępniane poza firmę. Od łatwej klasyfikacji po osadzone etykiety i uprawnienia ulepszenia ochrony danych przez cały czas za pomocą usługi Azure Information Protection, niezależnie od tego, gdzie są przechowywane ani komu są one udostępniane.
+sections:
+- title: 
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Dowiedz się więcej o usłudze Azure Information Protection
+      href: what-is-information-protection.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-information-protection.md
+    - title: Rozpoczynanie pracy z usługą Azure Information Protection
+      href: quickstart-viewpolicy.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_quick-start.svg
+        href: quickstart-viewpolicy.md
+- title: 5-minutowe przewodniki Szybki start
+  items:
+  - type: paragraph
+    text: Dowiedz się, jak zapewnić ochronę danych, korzystając z następujących przewodników Szybki Start.
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_portal.svg
+      text: Azure Portal
+      href: quickstart-viewpolicy.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_search.svg
+      text: Informacje poufne
+      href: quickstart-findsensitiveinfo.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_config-tools.svg
+      text: Konfigurowanie etykiety
+      href: quickstart-label-dnf-protectedemail.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_categorize.svg
+      text: Tworzenie nowej etykiety
+      href: quickstart-label-specificusers.md
+- title: Samouczki krok po kroku
+  items:
+  - type: paragraph
+    text: Dowiedz się, jak edytować zasady, tworzenie nowej etykiety i konfigurowanie ustawień.
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/azure/information-protection/infoprotect-quick-start-tutorial">Edytowanie zasad usługi Azure Information Protection i tworzenie nowej etykiety</a>
+    - html: <a href="/azure/information-protection/infoprotect-settings-tutorial">Konfigurowanie ustawień zasad usługi Azure Information Protection, które współpracują ze sobą</a>

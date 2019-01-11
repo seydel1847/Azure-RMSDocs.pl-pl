@@ -4,16 +4,16 @@ description: Przewodnik Szybki Start omawiający pisania logiki inicjowania dla 
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
-ms.date: 09/27/2018
+ms.date: 01/08/2019
 ms.author: bryanla
-ms.openlocfilehash: 578c5aa69faa986663ea6c164d94e5940580167d
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 686321c4f376679103b92419b5b86abaa74dc394
+ms.sourcegitcommit: adc4621ec4738c0abb6c1fa81a6598a6dfc5ace6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866140"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136240"
 ---
-# <a name="quickstart-client-application-initialization-c"></a>Szybki Start: Inicjowanie aplikacji klienta (C++)
+# <a name="quickstart-client-application-initialization-c"></a>Szybki start: Inicjowanie aplikacji klienta (C++)
 
 Ten przewodnik Szybki Start opisano, jak zaimplementować wzorzec inicjowanie klienta, używany przez zestaw SDK języka C++ MIP w czasie wykonywania. 
 
@@ -259,8 +259,8 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
    int main()
    {
      // Construct/initialize objects required by the application's profile object
-     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, friendly name)
-                 "<friendly-name>" };
+     ApplicationInfo appInfo{"<application-id>",                    // ApplicationInfo object (App ID, app name)
+                 "<application-name>" };
      auto profileObserver = make_shared<ProfileObserver>();         // Observer object                  
      auto authDelegateImpl = make_shared<AuthDelegateImpl>(         // Authentication delegate object (App ID)
                  "<application-id>");
@@ -312,8 +312,8 @@ Jak wspomniano wcześniej, obiekt profilu i aparat są wymagane dla klientów z 
 
    | Symbol zastępczy | Wartość | Przykład |
    |:----------- |:----- |:--------|
-   | \<Identyfikator aplikacji\> | Identyfikator aplikacji usługi Azure AD przypisane do aplikacji zarejestrowanych w "Instalacja zestawu MIP SDK and configuration" (2 wystąpienia).  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<Przyjazna nazwa\> | Zdefiniowane przez użytkownika przyjazną nazwę dla aplikacji. | AppInitialization |
+   | \<Identyfikator aplikacji\> | Usługa Azure AD aplikacji identyfikator (GUID) przypisany do aplikacji zarejestrowanych w [krok 2 # "Instalacja zestawu MIP SDK i konfiguracja"](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory) artykułu. Zastąp 2 wystąpienia.  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<Nazwa aplikacji\> | Zdefiniowane przez użytkownika przyjazną nazwę dla aplikacji. Musi zawierać prawidłowe znaki ASCII (z wyjątkiem ";"), a najlepiej jest zgodna z nazwą aplikacji używane w Twojej rejestracji usługi Azure AD. | AppInitialization |
    | \<Aparat konta\> | Konto używane dla tożsamości aparatu. Podczas uwierzytelniania przy użyciu konta użytkownika podczas uzyskanie tokenu musi być zgodna wartość. | user1@tenant.onmicrosoft.com |
    | \<Stan aparatu\> | Stan użytkownika ma zostać skojarzony z aparatem. | MyAppState |
 
