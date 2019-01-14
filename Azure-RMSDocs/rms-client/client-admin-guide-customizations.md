@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/13/2018
+ms.date: 01/04/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2ecb0376ac7d4d4ddd476e76a60053ff408e2bbd
-ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
+ms.openlocfilehash: b16dee0a922ce6f3195d192021edbf4966223e30
+ms.sourcegitcommit: 17d2528e801ebf37f3d6f54db920588ef212d34d
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53335544"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996948"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -76,7 +76,7 @@ Niezależnie od tego ustawienia klienta usługi Azure Information Protection nad
 
 W środowisku produkcyjnym użytkownik nie ma zazwyczaj potrzeby logowania się jako inny użytkownik w przypadku korzystania z klienta usługi Azure Information Protection. Jednak jako administrator możesz potrzebować możliwości zalogowania się jako inny użytkownik podczas fazy testowania. 
 
-Możesz zweryfikować konto, które jest obecnie zalogowany za pomocą **Microsoft Azure Information Protection** okno dialogowe: Otwórz aplikację pakietu Office i na karcie Narzędzia główne w grupie **Ochrona** kliknij kolejno przyciski **Chroń** oraz **Pomoc i opinie**. Nazwa konta jest widoczna w sekcji **Stan klienta**.
+Możesz zweryfikować konto, które jest obecnie zalogowany za pomocą **Microsoft Azure Information Protection** okno dialogowe: Otwórz aplikację pakietu Office i na karcie **Narzędzia główne** w grupie **Ochrona** kliknij kolejno przyciski **Chroń** oraz **Pomoc i opinie**. Nazwa konta jest widoczna w sekcji **Stan klienta**.
 
 Pamiętaj także o sprawdzeniu wyświetlonej nazwy domeny konta użytego do zalogowania. Fakt, że logowanie następuje przy użyciu prawidłowej nazwy konta, ale niewłaściwej domeny, można łatwo przeoczyć. W przypadku użycia niewłaściwego konta może wystąpić problem z pobraniem zasad usługi Azure Information Protection albo nie będą widoczne oczekiwane etykiety lub zachowania.
 
@@ -122,6 +122,10 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 - Klucz: **ReportAnIssueLink**
 
 - Wartość: **\<Ciąg HTTP >**
+
+Przykładowa wartość dla witryny sieci Web: `https://support.contoso.com`
+
+Przykładowa wartość dla adresu e-mail: `mailto:helpdesk@contoso.com`
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Ukryj opcję menu Klasyfikuj i chroń w Eksploratorze plików systemu Windows
 
@@ -351,10 +355,9 @@ Aby użyć poleceń programu PowerShell do konwersji istniejących plików ppdf 
     
     Uwaga: Jeśli nie ma wartości dla **MainLabelId** albo, plik nie jest etykietą. W takim przypadku można użyć [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia i [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) polecenia zamiast polecenia w kroku 3 i 4.
     
-    - Wartość **RMSTemplateId**. Jeśli ta wartość jest **ograniczony dostęp**, użytkownik ma chroniony plik przy użyciu uprawnień niestandardowych, a nie z ustawień, które są skonfigurowane dla etykiety. Jeśli będziesz kontynuować, te uprawnienia niestandardowe zostaną zastąpione przez ustawienia ochrony etykiety. Zdecyduj, czy chcesz kontynuować, lub poprosić użytkownika (wartość wyświetlaną dla **RMSIssuer**) aby usunąć etykietę, a następnie ponownie zastosuj go, wraz z ich oryginalnego uprawnienia niestandardowe.
+    - Wartość **RMSTemplateId**. Jeśli ta wartość jest **ograniczony dostęp**, użytkownik ma chroniony plik przy użyciu uprawnień niestandardowych, a nie z ustawień, które są skonfigurowane dla etykiety. Jeśli będziesz kontynuować, te uprawnienia niestandardowe zostaną zastąpione przez ustawienia ochrony etykiety. Zdecyduj, czy chcesz kontynuować, lub poprosić użytkownika (wartość wyświetlaną dla **RMSIssuer**) aby usunąć etykietę i zastosuj je ponownie, wraz z ich oryginalnego uprawnienia niestandardowe.
 
-3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad] (.. / configure-
-4. Settings.MD) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić *uzasadnienie* parametru z powodu. Przykład: 
+3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad](../configure-policy-settings.md) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić  *Uzasadnienie* parametru z powodu. Przykład: 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
 
@@ -528,7 +531,7 @@ Jeśli tekst nagłówka lub stopki jest więcej niż jeden wiersz, należy utwor
 
 **Etykieta stosowane ręcznie**
 
-Aby usunąć stopką multline, należy utworzyć dwa następujące wpisy:
+Aby usunąć ten wspólny stopki, utworzysz następujące dwa wpisy:
 
 - Klucz 1: **ExternalContentMarkingToRemove**
 
