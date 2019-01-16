@@ -88,6 +88,7 @@
 ## [Konfigurowanie bezpiecznej współpracy nad dokumentami](secure-collaboration-documents.md)
 ## [Konfigurowanie reguł przepływu poczty e-mail na potrzeby etykiet usługi Azure Information Protection](configure-exo-rules.md)
 ## [Wdrażanie skanera usługi Azure Information Protection](deploy-aip-scanner.md)
+## [Wdrażanie skanera usługi Azure Information Protection (WERSJA ZAPOZNAWCZA)](deploy-aip-scanner-preview.md)
 ## [Raportowanie dla usługi Azure Information Protection](reports-aip.md)
 ## [Wdrażanie łącznika usługi RMS](deploy-rms-connector.md)
 ### [Instalowanie i konfigurowanie łącznika](install-configure-rms-connector.md)
