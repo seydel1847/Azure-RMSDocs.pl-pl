@@ -4,18 +4,18 @@ description: Więcej informacji na temat dokumentów PDF, które są oznaczone e
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: fc1a6c136d0b44671cbae0e6eb15202364e356d4
-ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
+ms.openlocfilehash: c6d02b5b7f82acc8b540fca57c2a7e8ab56f76fb
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53246126"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314819"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Obsługiwane czytniki PDF Microsoft Information Protection
 
@@ -41,7 +41,7 @@ Następujące czytniki PDF można otwierać chronione pliki PDF, zgodne ze stand
 
 |System operacyjny|Obsługiwane czytniki i link pobierania|
 |----------------|-----------------------------------|
-|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Adobe Acrobat Reader (preferowany):<br />-1. Odczyt [Adobe ogólne warunki użytkowania](https://www.adobe.com/legal/terms.html) <br />-2. Instalowanie programu Adobe Reader z [witrynie programu Adobe](https://www.adobe.com/)<br />-3. Zainstaluj [wtyczkę Adobe](https://go.microsoft.com/fwlink/?linkid=2050049)<br />-4. Jeśli zostanie wyświetlony monit, skontaktuj się z administratorem, aby [autoryzować dodatku typu plug-in](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) <br /><br /> Usługa Azure Information Protection podglądu: [Pobieranie](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Programów Foxit Reader: [Pobieranie](https://www.foxitsoftware.com/pdf-reader/)|
+|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Adobe Acrobat Reader (preferowany):<br />-  1. Odczyt [Adobe ogólne warunki użytkowania](https://www.adobe.com/legal/terms.html) <br />- 2. Instalowanie programu Adobe Reader z [witrynie programu Adobe](https://www.adobe.com/)<br />- 3. Zainstaluj [wtyczkę Adobe](https://go.microsoft.com/fwlink/?linkid=2050049)<br />- 4. Jeśli zostanie wyświetlony monit, skontaktuj się z administratorem, aby [autoryzować dodatku typu plug-in](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) <br /><br /> Usługa Azure Information Protection podglądu: [Pobieranie](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit Reader: [Pobieranie](https://www.foxitsoftware.com/pdf-reader/)|
 |Android|Usługa Azure Information Protection aplikacji: [Pobieranie](https://go.microsoft.com/fwlink/?LinkId=325340)|
 |iOS|Usługa Azure Information Protection aplikacji: [Pobieranie](https://go.microsoft.com/fwlink/?LinkId=325338)|
 
@@ -54,6 +54,6 @@ Obecnie usługa SharePoint Online i lokalnego programu SharePoint na użytek sta
 
 |System operacyjny|Obsługiwane czytniki|
 |----------------|-----------------------------------|
-|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Przeglądarka usługi Azure Information Protection<br /><br />Gaaiho Doc<br /><br />Klient PDF pulpitu GigaTrust dla firmy Adobe<br /><br />Programów Foxit Reader<br /><br />Czytnik plików PDF nitro<br /><br />Aplikacja do udostępniania usługi RMS|
+|Windows 10 i wcześniejszymi wersjami<br />za pomocą Windows 7 z dodatkiem Service Pack 1|Przeglądarka usługi Azure Information Protection<br /><br />Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br /> Firma nuance Power PDF<br /><br />Aplikacja do udostępniania usługi RMS|
 |Android|Usługa Azure Information Protection app<br /><br />Foxit MobilePDF za pomocą usługi RMS<br /><br />Aplikacja GigaTrust dla systemu Android|
 |iOS|Usługa Azure Information Protection app<br /><br />Foxit MobilePDF za pomocą usługi RMS<br /><br />TITUS Docs|

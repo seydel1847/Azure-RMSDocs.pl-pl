@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d9b79faa2444560ec209faa199072f2a745152cd
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 3f7c06a6415160b5c2245dc60e94bf7d9633ef7f
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305577"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393750"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>Migrowanie z usługi AD RMS do usługi Azure Information Protection
 
@@ -49,23 +49,23 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 - **Obsługiwane wdrożenie usługi RMS:**
     
-    - Następujące wersje usługi AD RMS obsługują migrację do usługi Azure Information Protection:
+  - Następujące wersje usługi AD RMS obsługują migrację do usługi Azure Information Protection:
     
-        - Windows Server 2008 R2 (x 64)
+      - Windows Server 2008 R2 (x64)
         
-        - Windows Server 2012 (x 64)
+      - Windows Server 2012 (x64)
         
-        - Windows Server 2012 R2 (x 64)
+      - Windows Server 2012 R2 (x64)
         
-        - System Windows Server 2016 (x 64)
+      - Windows Server 2016 (x64)
         
-    - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
+  - Obsługiwane są wszystkie prawidłowe topologie usług AD RMS:
     
-        - Pojedynczy las, pojedynczy klaster RMS
+      - Pojedynczy las, pojedynczy klaster RMS
         
-        - Pojedynczy las, wiele klastrów RMS przeznaczonych tylko do licencjonowania
+      - Pojedynczy las, wiele klastrów RMS przeznaczonych tylko do licencjonowania
         
-        - Wiele lasów, wiele klastrów RMS
+      - Wiele lasów, wiele klastrów RMS
         
     Uwaga: Domyślnie wiele klastrów AD RMS jest migrowanych do pojedynczej dzierżawy usługi Azure Information Protection. Jeśli potrzebujesz oddzielnych dzierżaw dla usługi Azure Information Protection, musisz potraktować je jako różne migracje. Nie można zaimportować klucza z jednego klastra RMS do więcej niż jednej dzierżawy.
 
@@ -80,15 +80,15 @@ Przed rozpoczęciem migracji do usługi Azure Information Protection upewnij si�
 
 - **Przygotowanie do korzystania z usługi Azure Information Protection:**
 
-    - Synchronizacja katalogów między katalogiem lokalnym i usługą Azure Active Directory
+  - Synchronizacja katalogów między katalogiem lokalnym i usługą Azure Active Directory
 
-    - Grupy z włączoną obsługą poczty w usłudze Azure Active Directory
+  - Grupy z włączoną obsługą poczty w usłudze Azure Active Directory
 
     Zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](prepare.md).
 
 - **Jeśli używano funkcji zarządzania prawami do informacji (IRM) programu Exchange Server** (np. reguł transportu i programu Outlook Web Access) lub programu SharePoint Server z usługami AD RMS:
 
-    - Planowanie na potrzeby krótkiego okresu, gdy funkcja IRM będzie niedostępna na tych serwerach
+  - Planowanie na potrzeby krótkiego okresu, gdy funkcja IRM będzie niedostępna na tych serwerach
  
     Po zakończeniu migracji można nadal korzystać z funkcji IRM na tych serwerach. Proces migracji obejmuje jednak tymczasowe wyłączenie usługi IRM, zainstalowanie i skonfigurowanie łącznika, ponowne skonfigurowanie serwerów i ponowne włączenie funkcji IRM.
 

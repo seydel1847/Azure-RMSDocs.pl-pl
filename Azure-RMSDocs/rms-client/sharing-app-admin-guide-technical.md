@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
-ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
+ms.openlocfilehash: 8556bb8e2ba5df713b925cbb05628c73284b3df1
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53218480"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393871"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Przegląd techniczny i szczegółowe informacje o ochronie aplikacji do udostępniania usługi Microsoft Rights Management
 
@@ -36,18 +36,20 @@ Aplikacja do udostępniania usługi Microsoft Rights Management to opcjonalna ap
 
 Aplikacja Microsoft Rights Management sharing używa [środowiska uruchomieniowego klienta AD RMS Client 2.1](https://www.microsoft.com/download/details.aspx?id=38396). Korzystając z funkcji usług AD RMS 2.1, aplikacja do udostępniania usługi Microsoft Rights Management oferuje użytkownikom końcowym proste środowisko ochrony i środowisko użytkowe.
 
-Za pomocą usług RMS w wersji października 2013 można natywnie chronić dokumenty przy użyciu pakietu Office 2010 i wysyłać je do osób w innej firmie, które będą mogły ich za pomocą usługi Azure Rights Management z usługi Azure Information Protection. Ponadto w tej wersji, jeśli używasz usług AD RMS w trybie kryptograficznym 2, można korzystać z usługi RMS dla użytkowników indywidualnych i używać zawartości od osób w innej firmie, która używa usługi Azure Rights Management. Aby uzyskać więcej informacji na temat trybu kryptograficznego 2, zobacz [tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
+Począwszy od wersji usługi RMS z października 2013 r., możesz chronić dokumenty w sposób natywny za pomocą pakietu Office 2010 i wysyłać je do osób w innej firmie, które będą mogły ich używać za pomocą usługi Azure Rights Management z usługi Azure Information Protection. Ponadto jeśli używasz trybu kryptograficznego 2 usługi AD RMS, możesz w tej wersji korzystać z usługi RMS dla pojedynczych osób i używać zawartości od osób z innej firmy, w której jest używana usługa Azure Rights Management. Aby uzyskać więcej informacji na temat trybu kryptograficznego 2, zobacz [Tryby kryptograficzne usług AD RMS](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx).
 
 Aby uzyskać informacje na temat wdrożenia, zobacz [Automatyczne wdrażanie aplikacji do udostępniania usługi Microsoft Rights Management](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application).
 
 ## <a name="levels-of-protection--native-and-generic"></a>Poziomy ochrony — natywny i ogólny
 Aplikacja do udostępniania usługi Microsoft Rights Management obsługuje ochronę na dwóch różnych poziomach, co opisano w poniższej tabeli.
 
-|Typ ochrony|Natywna|Ogólne|
-|----------------------|----------|-----------|
-|Opis|W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz innych typów plików aplikacji obsługujących usługę Rights Management ochrona natywna zapewnia silny poziom ochrony obejmujący szyfrowanie i wymuszanie praw (uprawnień).|W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia poziom ochrony obejmujący hermetyzację plików z wykorzystaniem typu pliku pfile oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest autoryzowany do otwierania pliku.|
-|Protection|Pliki są w pełni szyfrowane, a ochrona jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników odbierających plik pocztą e-mail lub mających dostęp do niego za pośrednictwem uprawnień do pliku lub uprawnień udziału.<br /><br />— Ponadto, gdy pliki są chronione, wymuszane są prawa użytkowania i zasady ustawiane przez właściciela zawartości, gdy zawartość jest wyświetlana w aplikacji IP Viewer (dla chronionych plików tekstowych i plików obrazów) lub w skojarzonej aplikacji (dla wszystkich pozostałych obsługiwanych typów plików).|Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników autoryzowanych do otwierania pliku i mających do niego dostęp. W przypadku niepowodzenia autoryzacji plik nie jest otwierany.<br /><br />— Prawa do użytkowania i zasady ustawiane przez właściciela zawartości są wyświetlane, aby informować autoryzowanych użytkowników o zamierzonych zasadach użytkowania.<br /><br />— Rejestrowanie inspekcji autoryzowanych użytkowników otwierających pliki i uzyskujących do nich dostęp jest przeprowadzane, jednak żadne prawa użytkowania nie są wymuszane przez aplikacje, które tego nie obsługują.|
-|Domyślny dla typów plików|Jest to domyślny poziom ochrony dla następujących typów plików:<br /><br />— Pliki tekstowe i pliki obrazów<br /><br />— Pliki pakietu Microsoft Office (programów Word, Excel i PowerPoint)<br /><br />— Pliki w formacie Portable Document Format (pdf)<br /><br />Więcej informacji można znaleźć w poniższej sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](#supported-file-types-and-file-name-extensions).|Jest to domyślna ochrona dla wszystkich pozostałych typów plików (takich jak vsdx, rtf itd.), które nie są obsługiwane w ramach pełnej ochrony.|
+
+|   Typ ochrony   |                                                                                                                                                                                                                                                                             Natywna                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                            Ogólne                                                                                                                                                                                                                                                                             |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Opis       |                                                                                                                                    W przypadku plików tekstowych, obrazów, plików pakietu Microsoft Office (Word, Excel, PowerPoint), plików pdf oraz innych typów plików aplikacji obsługujących usługę Rights Management ochrona natywna zapewnia silny poziom ochrony obejmujący szyfrowanie i wymuszanie praw (uprawnień).                                                                                                                                     |                                                                                                                                                              W przypadku pozostałych aplikacji i typów plików ochrona ogólna zapewnia poziom ochrony obejmujący hermetyzację plików z wykorzystaniem typu pliku pfile oraz uwierzytelnianie umożliwiające weryfikację, czy użytkownik jest autoryzowany do otwierania pliku.                                                                                                                                                              |
+|       Protection       | Pliki są w pełni szyfrowane, a ochrona jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników odbierających plik pocztą e-mail lub mających dostęp do niego za pośrednictwem uprawnień do pliku lub uprawnień udziału.<br /><br />— Ponadto, gdy pliki są chronione, wymuszane są prawa użytkowania i zasady ustawiane przez właściciela zawartości, gdy zawartość jest wyświetlana w aplikacji IP Viewer (dla chronionych plików tekstowych i plików obrazów) lub w skojarzonej aplikacji (dla wszystkich pozostałych obsługiwanych typów plików). | Ochrona plików jest wymuszana w następujący sposób:<br /><br />— Przed wyświetleniem chronionej zawartości musi nastąpić pomyślne uwierzytelnienie użytkowników autoryzowanych do otwierania pliku i mających do niego dostęp. W przypadku niepowodzenia autoryzacji plik nie jest otwierany.<br /><br />— Prawa do użytkowania i zasady ustawiane przez właściciela zawartości są wyświetlane, aby informować autoryzowanych użytkowników o zamierzonych zasadach użytkowania.<br /><br />— Rejestrowanie inspekcji autoryzowanych użytkowników otwierających pliki i uzyskujących do nich dostęp jest przeprowadzane, jednak żadne prawa użytkowania nie są wymuszane przez aplikacje, które tego nie obsługują. |
+| Domyślny dla typów plików |                                                                                         Jest to domyślny poziom ochrony dla następujących typów plików:<br /><br />— Pliki tekstowe i pliki obrazów<br /><br />— Pliki pakietu Microsoft Office (programów Word, Excel i PowerPoint)<br /><br />— Pliki w formacie Portable Document Format (pdf)<br /><br />Więcej informacji można znaleźć w poniższej sekcji [Obsługiwane typy plików i rozszerzenia nazw plików](#supported-file-types-and-file-name-extensions).                                                                                         |                                                                                                                                                                                                              Jest to domyślna ochrona dla wszystkich pozostałych typów plików (takich jak vsdx, rtf itd.), które nie są obsługiwane w ramach pełnej ochrony.                                                                                                                                                                                                               |
+
 Domyślny poziom ochrony stosowany przez aplikację RMS sharing można zmienić. Można zmienić poziom domyślny z natywnego na ogólny, z ogólnego na natywny, a nawet zupełnie uniemożliwić ochronę ze strony aplikacji RMS sharing. Aby uzyskać więcej informacji, zobacz sekcję [Zmiana domyślnego poziomu ochrony plików](#changing-the-default-protection-level-of-files) w tym artykule.
 
 ## <a name="supported-file-types-and-file-name-extensions"></a>Obsługiwane typy plików i rozszerzenia nazw plików:
@@ -60,24 +62,25 @@ W przypadku plików objętych ochroną ogólną oryginalne rozszerzenie nazwy pl
 > [!WARNING]
 > Jeśli korzystasz z zapory, internetowego serwera proxy lub oprogramowania zabezpieczającego, które sprawdza pliki i podejmuje odpowiednie działania w zależności od rozszerzenia nazwy pliku, może zaistnieć konieczność zmiany konfiguracji tych zasobów w celu zapewnienia obsługi nowych rozszerzeń.
 
-|Oryginalne rozszerzenie nazwy pliku|Rozszerzenie nazwy pliku chronionego przez usługi RMS|
-|--------------------------------|-------------------------------------|
-|txt|ptxt|
-|xml|pxml|
-|jpg|pjpg|
-|jpeg|pjeg|
-|.pdf|ppdf|
-|PNG|ppng|
-|tif|ptif|
-|tiff|ptiff|
-|bmp|pbmp|
-|gif|pgif|
-|jpe|pjpe|
-|jfif|pjfif|
-|jt|pjt|
-¹ Renderowanie plików PDF obsługiwane przez technologię Foxit. Copyright © 2003–2014 Foxit Corporation.
+| Oryginalne rozszerzenie nazwy pliku | Rozszerzenie nazwy pliku chronionego przez usługi RMS |
+|------------------------------|-----------------------------------|
+|             txt             |               ptxt               |
+|             xml             |               pxml               |
+|             jpg             |               pjpg               |
+|            jpeg             |               pjeg               |
+|             .pdf             |               ppdf               |
+|             PNG             |               ppng               |
+|             tif             |               ptif               |
+|            tiff             |              ptiff               |
+|             bmp             |               pbmp               |
+|             gif             |               pgif               |
+|             jpe             |               pjpe               |
+|            jfif             |              pjfif               |
+|             jt              |               pjt                |
 
-Poniższa tabela zawiera listę typów plików obsługiwanych aplikacji do udostępniania usługi Microsoft Rights Management natywnie w pakiecie Microsoft Office 2016, Office 2013 i Office 2010. Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
+¹ Renderowanie plików PDF obsługiwane przez technologię Foxit. Copyright © 2003–2014 Foxit Corporation.
+
+Poniższa tabela zawiera typy plików obsługiwanych natywnie przez aplikację Microsoft Rights Management sharing w pakiecie Microsoft Office 2016, Office 2013 i Office 2010. Rozszerzenia nazw tych plików nie zmieniają się po objęciu plików ochroną przez usługę Rights Management.
 
 |Typy plików obsługiwanych przez pakiet Office|Typy plików obsługiwanych przez pakiet Office|
 |----------------------------------|----------------------------------|

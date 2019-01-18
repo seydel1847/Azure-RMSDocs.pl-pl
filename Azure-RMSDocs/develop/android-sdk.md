@@ -12,12 +12,12 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7e95243793251be2180b129893220c25142bcc98
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: c0edbda67c7c6faadd0c5d6bddb2695d88dc8420
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071232"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393416"
 ---
 # <a name="android-setup"></a>Konfiguracja systemu Android
 
@@ -39,7 +39,7 @@ Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 -   Środowisko Java 1.6 lub nowsze.
 -   [Dodatek Android Developer Tools (ADT) Plugin](https://developer.android.com/studio/install). UWAGA — Ukończenie instalacji może wymagać ponownego uruchomienia aplikacji Eclipse.
 
-     
+     
 
 -   Pakiet MS RMS SDK 4.2 dla systemu Android. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy](get-started.md).
 
@@ -51,7 +51,7 @@ Zalecamy stosowanie następującego oprogramowania w systemie deweloperskim:
 
     **Uwaga**  Jeśli aplikacja nie będzie korzystać z biblioteki ADAL jako biblioteki uwierzytelniania OAuth 2.0, należy przejrzeć te wskazówki dla systemu Android, [niektóre uwag SecureRandom](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html).
 
-     
+     
 
 Temat [Nowości](release-notes.md) zawiera informacje na temat aktualizacji interfejsu API, informacje o wersji i często zadawane pytania.
 
@@ -63,7 +63,7 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 **Uwaga**  zestaw MS RMS SDK 4.2 w wersji zapoznawczej: W tej wersji zapoznawczej Aby wyświetlić zmiany w zmieniono nazw ścieżek z com/microsoft/protection na com/microsoft/rightsmanagment nie zostały zaktualizowane zrzuty ekranu. Tekst został jednak zaktualizowany.
 
- 
+ 
 -   Otwórz środowisko deweloperskie Eclipse.
 -   Aby utworzyć nowy projekt aplikacji systemu Android, w menu **Plik** kliknij pozycję **New** (Nowy), kliknij pozycję **Project** (Projekt), a następnie wybierz pozycję **Android Application Project** (Projekt aplikacji dla systemu Android).
 
@@ -94,45 +94,45 @@ Nasza biblioteka interfejsów użytkownika udostępnia interfejs wielokrotnego u
 
 **Odwołania do zestawu SDK**
 
--   Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. W folderze „SDK > com > microsoft > rightsmanagement” upewnij się, że pliki *.classpath*, *.project* i *project.properties* nie są oznaczone jako tylko do odczytu.
--   Aby odwoływać się do zestawu SDK, należy zaimportować go do obszaru roboczego.
+- Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. W folderze „SDK > com > microsoft > rightsmanagement” upewnij się, że pliki *.classpath*, *.project* i *project.properties* nie są oznaczone jako tylko do odczytu.
+- Aby odwoływać się do zestawu SDK, należy zaimportować go do obszaru roboczego.
 
-    W środowisku Eclipse kliknij pozycję **File** (Plik). W menu **File** (Plik) kliknij pozycję **Import** (Importuj). W oknie dialogowym **Import** wybierz opcję **Android / Existing Android Code into Workspace** (Android / istniejący kod Android do obszaru roboczego).
+  W środowisku Eclipse kliknij pozycję **File** (Plik). W menu **File** (Plik) kliknij pozycję **Import** (Importuj). W oknie dialogowym **Import** wybierz opcję **Android / Existing Android Code into Workspace** (Android / istniejący kod Android do obszaru roboczego).
 
-    ![Zaimportuj kod do obszaru roboczego](../media/Android-setup-07.png)
+  ![Zaimportuj kod do obszaru roboczego](../media/Android-setup-07.png)
 
--   Kliknij przycisk **Dalej**. Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. Zestaw SDK powinien być wyświetlany na liście jako **com.microsoft.rightsmanagement**.
+- Kliknij przycisk **Dalej**. Przejdź do folderu, w którym wyodrębniono plik *adrms\_android\_sdk.zip*. Zestaw SDK powinien być wyświetlany na liście jako **com.microsoft.rightsmanagement**.
 
-    ![Przejdź do folderu](../media/Android-setup-08c.jpg)
+  ![Przejdź do folderu](../media/Android-setup-08c.jpg)
 
--   Po kliknięciu przycisku **Finish** (Zakończ) projekt zestawu SDK jest wyświetlany jako element równorzędny utworzonej wcześniej aplikacji.
+- Po kliknięciu przycisku **Finish** (Zakończ) projekt zestawu SDK jest wyświetlany jako element równorzędny utworzonej wcześniej aplikacji.
 
-    ![Projekt zestawu SDK jest wyświetlany jako element równorzędny aplikacji](../media/Android-setup-09.jpg)
+  ![Projekt zestawu SDK jest wyświetlany jako element równorzędny aplikacji](../media/Android-setup-09.jpg)
 
--   Kliknij prawym przyciskiem myszy ikonę **Project** (Projekt) i wyświetl właściwości projektu.
--   Przejdź na kartę **Android**.
--   Kliknij przycisk **Add** (Dodaj), a następnie wybierz bibliotekę *com.microsoft.rightsmanagement* z obszaru roboczego.
+- Kliknij prawym przyciskiem myszy ikonę **Project** (Projekt) i wyświetl właściwości projektu.
+- Przejdź na kartę **Android**.
+- Kliknij przycisk **Add** (Dodaj), a następnie wybierz bibliotekę *com.microsoft.rightsmanagement* z obszaru roboczego.
 
-    ![Dodaj bibliotekę](../media/Android-setup-10b.jpg)
+  ![Dodaj bibliotekę](../media/Android-setup-10b.jpg)
 
--   Kliknij przycisk **OK**.
+- Kliknij przycisk **OK**.
 
-    Ponieważ zestaw SDK 4.2 usługi MS RMS łączy się z usługi AAD RM, aplikacja musi mieć uprawnienia **INTERNET** i **dostępu\_sieci\_stanu**. W tym celu otwórz plik *AndroidManifest.xml* w folderze głównym projektu.
+  Zestaw SDK 4.2 usługi MS RMS łączy się z usługą AAD RM, w związku z czym aplikacja musi mieć uprawnienia **INTERNET** i **ACCESS\_NETWORK\_STATE**. W tym celu otwórz plik *AndroidManifest.xml* w folderze głównym projektu.
 
-    Aby dodać uprawnienia, kliknij przycisk **Add** (Dodaj) i wybierz pozycję **Uses Permissions** (Używa uprawnień).
+  Aby dodać uprawnienia, kliknij przycisk **Add** (Dodaj) i wybierz pozycję **Uses Permissions** (Używa uprawnień).
 
-    ![Dodaj uprawnienia](../media/Android-setup-11d.jpg)
+  ![Dodaj uprawnienia](../media/Android-setup-11d.jpg)
 
--   Krok manifestu można sprawdzić, wyświetlając manifest w widoku edytora tekstu. Upewnij się, że są wyświetlane następujące wiersze:
+- Krok manifestu można sprawdzić, wyświetlając manifest w widoku edytora tekstu. Upewnij się, że są wyświetlane następujące wiersze:
 
-   ```
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
-   ```
+  ```
+  <uses-sdk
+       android:minSdkVersion="15"
+       android:targetSdkVersion="19"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission/>
+  ```
 
 **Uwaga**  zestaw SDK używa *android.support.v4*
 

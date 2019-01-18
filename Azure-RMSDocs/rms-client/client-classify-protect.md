@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 29c79d3da5e82b0d5702a1d85a22608f9177d271
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: b1d46cb3c98c520ab6900f910f691af920337334
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305707"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393467"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Podręcznik użytkownika: Klasyfikowanie i ochrona pliku lub wiadomości e-mail za pomocą usługi Azure Information Protection
 
@@ -138,13 +138,13 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
 2. W oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** użyj etykiet w sposób analogiczny jak w aplikacji pakietu Office, który ustawia klasyfikację i ochronę w sposób zdefiniowany przez administratora. 
 
-    - Jeśli nie można wybrać żadnego etykiety (są wyszarzone): Wybrany plik nie obsługuje klasyfikacji, ale można go chronić przy użyciu uprawnień niestandardowych (krok 3). Przykład:
+   - Jeśli nie można wybrać żadnego etykiety (są wyszarzone): Wybrany plik nie obsługuje klasyfikacji, ale można go chronić przy użyciu uprawnień niestandardowych (krok 3). Przykład:
 
-    ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
+     ![Brak dostępnych etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-dimmed.png)
     
-    - Jeśli nie ma etykiety, ale opcja **wstępnie zdefiniowana przez firmę ochrony** w tym oknie dialogowym: Klient jest uruchomiony w [tryb z samą ochroną](client-protection-only-mode.md). Należy wybrać szablon, aby zastosować ochronę skonfigurowaną przez administratora, lub wybrać opcję **Uprawnienia niestandardowe**, aby określić własne ustawienia ochrony, i przejść do kroku 4.
+   - Jeśli nie ma etykiety, ale opcja **wstępnie zdefiniowana przez firmę ochrony** w tym oknie dialogowym: Klient jest uruchomiony w [tryb z samą ochroną](client-protection-only-mode.md). Należy wybrać szablon, aby zastosować ochronę skonfigurowaną przez administratora, lub wybrać opcję **Uprawnienia niestandardowe**, aby określić własne ustawienia ochrony, i przejść do kroku 4.
     
-    ![Brak etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
+     ![Brak etykiet w oknie dialogowym Klasyfikacja i ochrona — Azure Information Protection**](../media/info-protect-dialog-labels-protection-only.png)
     
 3. Jeśli jest to dozwolone przez administratora, można określić własne ustawienia ochrony zamiast korzystać z ustawień, które administrator uwzględnił dla wybranej etykiety. Aby to zrobić, wybierz **Chroń za pomocą uprawnień niestandardowych**.
     
@@ -154,15 +154,15 @@ W podręczniku administratora podano pełną listę typów plików obsługiwanyc
 
 4. Po wybraniu opcji ustawień niestandardowych należy określić następujące ustawienia:
 
-    - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma użytkownikom przy ochronie wybranego pliku lub plików.
+   - **Wybierz uprawnienia**: Wybierz poziom dostępu, który ma użytkownikom przy ochronie wybranego pliku lub plików.
     
-    - **Wybierz użytkowników, grupy lub organizacje**: Określanie osób, które mają uprawnienia, które zostały wybrane do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
+   - **Wybierz użytkowników, grupy lub organizacje**: Określanie osób, które mają uprawnienia, które zostały wybrane do pliku lub plików. Wpisz dla każdej z osób pełny adres e-mail, adres e-mail grupy lub — dla wszystkich użytkowników należących do organizacji — nazwę domeny. 
     
-    Alternatywnie można użyć ikonę książki adresowej do wybierz z książki adresowej użytkowników lub grupy.
+     Alternatywnie można użyć ikonę książki adresowej do wybierz z książki adresowej użytkowników lub grupy.
         
-    - **Unieważnij dostęp**: Wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej dacie, który został ustawiony nadal będą mogli otworzyć oryginalny plik, ale po północy (Twojej bieżącej strefy czasowej) , na dzień, w którym można ustawić, określone przez Ciebie osoby nie będzie można otworzyć pliku.
+   - **Unieważnij dostęp**: Wybierz tę opcję tylko dla plików uwarunkowanych czasowo, tak aby określone przez Ciebie osoby nie będą mogły otworzyć wybranego pliku lub plików po określonej dacie, który został ustawiony nadal będą mogli otworzyć oryginalny plik, ale po północy (Twojej bieżącej strefy czasowej) , na dzień, w którym można ustawić, określone przez Ciebie osoby nie będzie można otworzyć pliku.
     
-    Pamiętaj, że jeśli to ustawienie zostało wcześniej skonfigurowane przy użyciu uprawnień niestandardowych z aplikacji pakietu Office 2010, w tym oknie dialogowym nie jest wyświetlana podana data wygaśnięcia, chociaż nadal jest ustawiona. Ten problem z wyświetlaniem występuje tylko w przypadku, gdy datę wygaśnięcia skonfigurowano w pakiecie Office 2010.
+     Pamiętaj, że jeśli to ustawienie zostało wcześniej skonfigurowane przy użyciu uprawnień niestandardowych z aplikacji pakietu Office 2010, w tym oknie dialogowym nie jest wyświetlana podana data wygaśnięcia, chociaż nadal jest ustawiona. Ten problem z wyświetlaniem występuje tylko w przypadku, gdy datę wygaśnięcia skonfigurowano w pakiecie Office 2010.
 
 5. Kliknij przycisk **Zastosuj** i poczekaj na pojawienie się komunikatu **Ukończona praca**, aby zobaczyć wyniki. Następnie kliknij przycisk **Zamknij**.
 

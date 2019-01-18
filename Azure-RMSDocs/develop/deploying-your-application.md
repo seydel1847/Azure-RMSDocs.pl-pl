@@ -12,12 +12,12 @@ ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: daad2483fb850d06bbd62ff6b9a721160341d8b7
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: bc1e1e3dc66b3dee00dbfac7db11a1aaaeeab4e3
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070319"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394302"
 ---
 # <a name="deploy-into-production"></a>Wdrażanie w środowisku produkcyjnym
 
@@ -27,7 +27,7 @@ W tym temacie użytkownik jest prowadzony przez proces wdrażania aplikacji obs�
 Przed wydaniem aplikacji utworzonych za pomocą usługi AIP/RMS należy wystąpić o formalną umowę z firmą Microsoft i ją zawrzeć.
 
 ### <a name="begin-the-process"></a>Rozpoczęcie procesu
-Uzyskaj umowę IPIA, wysyłając na adres **IPIA@microsoft.com** wiadomość e-mail z następującymi informacjami:
+Uzyskaj umowę IPIA, wysyłając na adres <strong>IPIA@microsoft.com</strong> wiadomość e-mail z następującymi informacjami:
 
 **Temat:** Żądanie umowy IPIA dla *nazwa firmy*
 
@@ -38,7 +38,7 @@ W treści wiadomości e-mail umieść następujące dane:
 
 ### <a name="next-steps"></a>Następne kroki
 Po otrzymaniu żądania umowy IPIA wyślemy formularz (jako dokument programu Word).
-Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza **IPIA@microsoft.com** w celu podania następujących informacji:
+Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza <strong>IPIA@microsoft.com</strong> w celu podania następujących informacji:
 - Prawna nazwa firmy
 - Stan/prowincja (USA/Kanada) lub kraj siedziby
 - Adres URL firmy
@@ -54,7 +54,7 @@ Zapoznaj się z warunkami i postanowieniami umowy IPIA i wróć do formularza **
 Po otrzymaniu formularza wyślemy Ci link do ostatecznej postaci umowy IPIA, którą należy cyfrowo podpisać. Następnie zostanie ona podpisana przez przedstawiciela firmy Microsoft, co spowoduje zawarcie umowy.
 
 ### <a name="already-have-a-signed-ipia"></a>Masz już podpisaną umowę IPIA?
-Jeśli masz już podpisaną umowę IPIA i chcesz dodać nowy *Identyfikator aplikacji* dla aplikacji, którą chcesz wydać, wyślij wiadomość e-mail na adres **IPIA@microsoft.com** i przekaż nam następujące informacje:
+Jeśli masz już podpisaną umowę IPIA i chcesz dodać nowy *Identyfikator aplikacji* dla aplikacji, którą chcesz wydać, wyślij wiadomość e-mail na adres <strong>IPIA@microsoft.com</strong> i przekaż nam następujące informacje:
 - Nazwa aplikacji firmy
 - Krótki opis aplikacji
 - Identyfikator dzierżawy Azure (nawet jeśli jest taki sam, jak poprzednio)
@@ -67,7 +67,7 @@ Po wysłaniu wiadomości e-mail odczekaj do 72 godzin na potwierdzenie przez nas
 
 W celu wdrożenia aplikacji skompilowanej za pomocą usługi Azure Information Protection (AIP) / narzędzia usług zarządzania prawami (RMS), musisz wdrożyć klienta RMS Client 2.1 na komputerze użytkownika końcowego.
 
-### <a name="rmsclient21"></a>Klient RMS Client 2.1
+### <a name="rmsclient21"></a>RMS Client 2.1
 Klient RMS Client 2.1 został zaprojektowany w celu ochrony dostępu do informacji przepływających przez aplikacje korzystające z usług AIP/RMS i ich wykorzystania — w przypadku instalacji lokalnej lub instalacji w centrum danych firmy Microsoft.
 
 Klient RMS Client 2.1 nie jest składnikiem systemu operacyjnego Windows. Klient jest dostarczany jako opcjonalny plik do pobrania, który po potwierdzeniu i zaakceptowaniu umowy licencyjnej może być bezpłatnie dystrybuowany z aplikacją.

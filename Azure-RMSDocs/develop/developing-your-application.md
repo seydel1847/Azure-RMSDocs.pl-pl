@@ -12,12 +12,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 6f0fdcaf6d21047f28c470dc896a1cd64fee752d
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 580dc90bae499a5cc64238a6157612bea5eb3282
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071305"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394187"
 ---
 # <a name="developing-your-application"></a>Tworzenie aplikacji
 
@@ -62,7 +62,7 @@ Wykonaj następujące kroki, aby utworzyć nazwę główną usługi:
 - Połącz się z usługą online za pomocą przypisanych poświadczeń użytkownika: `Connect-MsolService`
 - Utwórz nową nazwę główną usługi za pomocą polecenia:`New-MsolServicePrincipal`
 - Podaj nazwę główną usługi
-> Zapisz klucz symetryczny i identyfikator podmiotu zabezpieczeń aplikacji, aby móc ich użyć w przyszłości.
+  > Zapisz klucz symetryczny i identyfikator podmiotu zabezpieczeń aplikacji, aby móc ich użyć w przyszłości.
 
 *Przykładowe dane wyjściowe*
 ![dane wyjściowe polecenia cmdlet](../media/develop/output-of-NewMsolServicePrincipal.png)
@@ -80,8 +80,8 @@ Poniższy diagram przedstawia architekturę i przepływ procesu tworzonej aplika
 ![podsumowanie projektu](../media/develop/design-summary.png)
 
 1. Dane wejściowe użytkownika:
-  - Ścieżka pliku, który ma zostać objęty ochroną
-  - Wybór szablonu lub utworzenie zasady ad hoc
+   - Ścieżka pliku, który ma zostać objęty ochroną
+   - Wybór szablonu lub utworzenie zasady ad hoc
 2. Aplikacja żąda uwierzytelnienia w usłudze AIP.
 3. Usługa AIP potwierdza uwierzytelnienie.
 4. Aplikacja żąda szablonów z usługi AIP.
@@ -216,16 +216,16 @@ Po otrzymaniu i uruchomieniu aplikacji jej dane wyjściowe powinny wyglądać na
 ![dane wyjściowe aplikacji — krok 1](../media/develop/app-output-1.png)
 
 2. Zostanie wyświetlony monit o podanie ścieżki do pliku, który ma być chroniony.
-![dane wyjściowe aplikacji — krok 2](../media/develop/app-output-2.png)
+   ![dane wyjściowe aplikacji — krok 2](../media/develop/app-output-2.png)
 
 3. Zostanie wyświetlony monit o wprowadzenie adresu e-mail właściciela licencji (wskazany właściciel musi mieć uprawnienia administratora globalnego w odniesieniu do dzierżawy usługi Azure AD).
-![dane wyjściowe aplikacji — krok 3](../media/develop/app-output-3.png)
+   ![dane wyjściowe aplikacji — krok 3](../media/develop/app-output-3.png)
 
 4. Następuje wprowadzenie adresów e-mail użytkowników, którzy będą mieć uprawnienia dostępu do pliku (adresy e-mail należy rozdzielić spacjami).
-![dane wyjściowe aplikacji — krok 4](../media/develop/app-output-4.png)
+   ![dane wyjściowe aplikacji — krok 4](../media/develop/app-output-4.png)
 
 5. Należy wybrać z listy uprawnienia do nadania autoryzowanym użytkownikom.
-![dane wyjściowe aplikacji — krok 5](../media/develop/app-output-5.png)
+   ![dane wyjściowe aplikacji — krok 5](../media/develop/app-output-5.png)
 
 6. Po wykonaniu poprzednich kroków następuje wprowadzenie niektórych metadanych zasad: nazwy zasady, jej opisu, nazwy wyświetlanej wystawcy (dzierżawy usługi Azure AD) ![dane wyjściowe aplikacji — krok 6](../media/develop/app-output-6.png)
 

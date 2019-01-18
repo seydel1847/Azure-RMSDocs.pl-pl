@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: c6f220e995aa785c44d4227884da2c7379918a8d
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 39abf4586f00cb40cb096841261993225b8c8387
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305475"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393355"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Konfigurowanie reguły przepływu poczty usługi Exchange Online dla etykiety usługi Azure Information Protection
 
@@ -29,7 +29,7 @@ Skorzystaj z poniższych informacji, pomoże Ci w skonfigurowaniu reguły przep�
 
 Reguły przepływu poczty, informujące o objęciu ochroną jako akcję są ignorowane, jeśli wiadomość e-mail jest już chroniona. Na przykład wiadomości e-mail, który jest chroniony przez nie przesyłaj dalej nie można zmienić przez reguły przepływu poczty programu Exchange do korzystania z opcji tylko do szyfrowania.  
 
-Można rozszerzyć te przykłady oraz jak je zmodyfikować. Na przykład dodać więcej warunków. Aby uzyskać więcej informacji na temat konfigurowania reguły przepływu poczty, zobacz [reguły przepływu poczty (reguł transportu) w usłudze Exchange Online] (https://technet.microsoft.com/library/jj919238(v=exchg.150\).aspx) w dokumentacji usługi Exchange Online.
+Można rozszerzyć te przykłady oraz jak je zmodyfikować. Na przykład dodać więcej warunków. Aby uzyskać więcej informacji na temat konfigurowania reguły przepływu poczty, zobacz [przepływu reguł (reguł transportu) do obsługi poczty w usłudze Exchange Online](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx) w dokumentacji usługi Exchange Online.
 
 Aby uzyskać więcej informacji na temat konfigurowania reguły przepływu poczty do szyfrowania wiadomości e-mail, zobacz [zdefiniować reguły przepływu poczty do szyfrowania wiadomości e-mail w usłudze Office 365](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8) w dokumentacji pakietu Office. 
 
@@ -37,9 +37,9 @@ Aby uzyskać więcej informacji na temat konfigurowania reguły przepływu poczt
 
 Ponieważ etykiety usługi Azure Information Protection jest przechowywany w metadanych przepływu poczty reguł w programie Exchange Online można przeczytać te informacje dotyczące wiadomości i załączników dokumentu:
 
-- W wiadomościach e-mail te informacje są przechowywane w nagłówku x: **msip_labels: MSIP_Label_\<GUID > _Enabled = True;** 
+- W wiadomościach e-mail te informacje są przechowywane w nagłówku x: **msip_labels: MSIP_Label_\<GUID>_Enabled=True;** 
 
-- Dla dokumentów programu Word (doc i .docx), arkusze kalkulacyjne programu Excel (xls i xlsx), prezentacje programu PowerPoint (ppt i pptx) i dokumenty PDF (PDF) te metadane są przechowywane w następującymi niestandardowymi właściwościami: **MSIP_Label_\<GUID > _Enabled = True**  
+- Dla dokumentów programu Word (doc i .docx), arkusze kalkulacyjne programu Excel (xls i xlsx), prezentacje programu PowerPoint (ppt i pptx) i dokumenty PDF (PDF) te metadane są przechowywane w następującymi niestandardowymi właściwościami: **MSIP_Label_\<GUID>_Enabled=True**  
 
 Aby określić identyfikator GUID dla etykiety, Znajdź wartość Identyfikatora etykiety na **etykiety** bloku, wyświetlanie lub konfigurowanie zasad usługi Azure Information Protection w witrynie Azure portal. Dla plików, które mają stosowane etykiety, można również uruchomić [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) polecenia cmdlet programu PowerShell w celu zidentyfikowania identyfikatora GUID (MainLabelId lub SubLabelId). Jeśli etykieta ma etykiet podrzędnych, zawsze określać identyfikator GUID po prostu etykiety podrzędnej, a nie etykieta nadrzędnej.
 
@@ -60,7 +60,7 @@ W poniższych przykładach należy utworzyć nowe reguły przepływu poczty wyko
 > [!TIP]
 > Jeśli masz problemy z interfejsem użytkownika, podczas konfigurowania reguł, spróbuj innej przeglądarki, takich jak program Internet Explorer.
 
-Przykłady mają pojedynczego warunku, która dotyczy ochrony, gdy wiadomość e-mail są wysyłane poza organizację. Aby uzyskać więcej informacji na temat innych warunków, które można wybrać, zobacz [warunki reguły przepływu poczty i wyjątków (predykatów) w usłudze Exchange Online] (https://technet.microsoft.com/library/jj919235(v=exchg.150\).aspx).
+Przykłady mają pojedynczego warunku, która dotyczy ochrony, gdy wiadomość e-mail są wysyłane poza organizację. Aby uzyskać więcej informacji na temat innych warunków, które można wybrać, zobacz [poczty warunków reguły przepływu i wyjątków (predykatów) w usłudze Exchange Online](https://technet.microsoft.com/library/jj919235(v=exchg.150).aspx).
 
 
 ### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>Przykład 1: Reguła, która dotyczy opcję nie przesyłaj dalej wiadomości e-mail, które są oznaczone etykietami **ogólne** kiedy są wysyłane poza organizację

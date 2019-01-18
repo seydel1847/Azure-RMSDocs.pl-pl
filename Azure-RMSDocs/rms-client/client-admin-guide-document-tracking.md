@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów dotyczące konfigurowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5add56fb5c033243acccb5308b7b9569b0c72624
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 108a77f6c78b49bfcd852ff94ef529d3a667a193
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305203"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314739"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>Podręcznik administratora: Konfigurowanie i używanie śledzenia dokumentów w usłudze Azure Information Protection
 
@@ -95,6 +95,16 @@ Aby wyjść z trybu administratora, kliknij przycisk **X** obok pozycji **Wyjdź
 
 Aby uzyskać instrukcje dotyczące sposobu korzystania z witryny śledzenia dokumentów, zobacz sekcję [Śledzenie i odwoływanie dokumentów](client-track-revoke.md) w podręczniku użytkownika.
 
+### <a name="using-powershell-to-register-labeled-documents-with-the-document-tracking-site"></a>Aby zarejestrować dokumenty oznaczone za pomocą witryny śledzenia dokumentów za pomocą programu PowerShell
+
+Ta opcja jest dostępna tylko dla bieżącej wersji zapoznawczej klienta usługi Azure Information Protection.
+
+Aby móc śledzić i odwoływać dokument, należy najpierw zarejestrować za pomocą witryny śledzenia dokumentów. Ta akcja jest wykonywana, gdy użytkownicy wybiorą **śledzenie i odwoływanie** opcję z Eksploratora plików lub w swoich aplikacjach pakietu Office, podczas korzystania z klienta Azure Information Protection. Usługi Rights Management aplikacja do udostępniania, ta akcja jest wykonywana automatycznie po wybraniu **Udostępnij chronioną zawartość** opcji.
+
+Jeśli etykietowanie i ochronę plików dla użytkowników za pomocą [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) polecenia cmdlet, można użyć *EnableTracking* parametru, aby zarejestrować plik za pomocą witryny śledzenia dokumentów. Przykład:
+
+    Set-AIPFileLabel -Path C:\Projects\ -LabelId ade72bf1-4714-4714-4714-a325f824c55a -EnableTracking
+
 ## <a name="usage-logging-for-the-document-tracking-site"></a>Rejestrowanie użycia dla witryny śledzenia dokumentów
 
 Dwa pola w plikach dziennika użycia mają zastosowanie do śledzenia dokumentów: **AdminAction** i **ActingAsUser**.
@@ -105,9 +115,7 @@ Dwa pola w plikach dziennika użycia mają zastosowanie do śledzenia dokumentó
 
 Istnieją również typy żądań, które rejestrują sposób, w jaki użytkownicy i administratorzy korzystają z witryny śledzenia dokumentu. Na przykład typ żądania **RevokeAccess** dotyczy sytuacji, gdy użytkownik lub administrator w imieniu użytkownika odwołał dokument w witrynie śledzenia dokumentów. Użyj tego typu żądania w połączeniu z polem AdminAction, aby określić, czy użytkownik odwołał własny dokument (pole AdminAction jest puste), czy też administrator odwołał dokument w imieniu użytkownika (pole AdminAction ma wartość true).
 
-
 Aby uzyskać więcej informacji na temat rejestrowania użycia, zobacz [Rejestrowanie i analizowanie użycia usługi Azure Rights Management](../log-analyze-usage.md)
-
 
 
 ## <a name="next-steps"></a>Następne kroki

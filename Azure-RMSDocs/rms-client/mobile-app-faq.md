@@ -11,22 +11,24 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cd07ed5d1c4bf2f4192f400c699e6e6dc3447713
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 29c7d333131c0b85b9cdb83e9a2212420f60077f
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023757"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393649"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>Często zadawane pytania dotyczące aplikacji Azure Information Protection dla systemów iOS i Android
 
-*Dotyczy: Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+*Dotyczy: Usługi Active Directory Rights Management Services, [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Na tej stronie znajdują się niektóre często zadawane pytania dotyczące korzystania z aplikacji Azure Information Protection dla systemów iOS i Android.
 
 ## <a name="what-can-i-do-with-the-azure-information-protection-app"></a>Co można zrobić przy użyciu aplikacji Azure Information Protection?
 
-Ta aplikacja umożliwia wyświetlanie wiadomości e-mail chronionych prawami (plików .rpmsg), jeśli aplikacja poczty e-mail nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. Ta aplikacja umożliwia także wyświetlanie chronionych prawami plików PDF, obrazów i plików tekstowych. Obecnie przy użyciu tej aplikacji nie można tworzyć nowych chronionych wiadomości e-mail, odpowiadać na nie ani tworzyć i edytować plików chronionych.
+Ta aplikacja umożliwia wyświetlanie wiadomości e-mail chronionych prawami (plików .rpmsg), jeśli aplikacja poczty e-mail nie obsługuje natywnie ochrony danych za pomocą usługi Rights Management. Ta aplikacja umożliwia także wyświetlanie chronionych prawami dokumentów PDF, obrazów i pliki tekstowe, które są chronione prawami. 
+
+Ponieważ ta aplikacja jest przeglądarka, nie możesz użyć go do tworzenia nowych chronionych wiadomości e-mail, odpowiadać na lub tworzenia lub edytowania plików chronionych. Ponadto aplikacja nie może otworzyć załączniki plików, które można wyświetlić. Na przykład załączniki w chronionych plików PDF, dokumentów lub wiadomości e-mail chronionych prawami.
 
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>Czy mogę otwierać pliki PDF z chronionych bibliotek programów SharePoint i OneDrive dla Firm?
 
@@ -48,7 +50,7 @@ Jeśli masz jedną z tych wersji lub wyższą od nich, możesz zainstalować i u
 
 Po zainstalowaniu aplikacji nie musisz wykonywać żadnych innych czynności. Zaczekaj, aż otrzymasz chronioną wiadomość e-mail lub plik, który chcesz wyświetlić, a następnie wybierz pozycję **Przeglądarka usługi AIP**, aby go otworzyć. Następnie zostanie wyświetlona prośba o zalogowanie do konta służbowego lub o wybranie certyfikatu. Po uwierzytelnieniu poświadczeń możesz odczytywać zawartość.
 
-Jeśli jednak nie chcesz czekać, możesz skorzystać z następujących instrukcji, aby wysłać do siebie chronioną wiadomości e-mail lub plik do wyświetlenia: [Wprowadzenie do aplikacji Microsoft Azure Information Protection dla systemów iOS i Android](mobile-app-get-started.md) 
+Jednak jeśli nie chcesz czekać, można użyć zgodnie z poniższymi instrukcjami, aby wysłać do siebie chronioną wiadomość e-mail lub plik, aby wyświetlić: [Rozpoczynanie pracy z aplikacją Microsoft Azure Information Protection dla systemów iOS i Android](mobile-app-get-started.md) 
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>Jakich poświadczeń należy używać do logowania się do tej aplikacji?
 

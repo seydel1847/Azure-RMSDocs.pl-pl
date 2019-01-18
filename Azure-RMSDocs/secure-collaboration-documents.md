@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb2e2538246ea5c8ca42f6270e535c73dda71774
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: a5a1c0069a35073d9362e28ef18ad4c09d95df3d
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305509"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393960"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>Konfigurowanie bezpiecznej współpracy nad dokumentami za pomocą usługi Azure Information Protection
 
@@ -50,13 +50,13 @@ Ponieważ w tym scenariuszu dostęp jest ograniczony do konkretnych osób, nie z
 
 3. Na **Dodaj uprawnienia** bloku: 
     
-    - Wewnętrzny grupy: Wybierz **przeglądania katalogu** aby wybrać grupę, która musi być włączona obsługa poczty e-mail.
+   - Wewnętrzny grupy: Wybierz **przeglądania katalogu** aby wybrać grupę, która musi być włączona obsługa poczty e-mail.
     
-    - Dla wszystkich użytkowników w pierwszym organizacji zewnętrznych: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie tej organizacji. Na przykład fabrikam.com.
+   - Dla wszystkich użytkowników w pierwszym organizacji zewnętrznych: Wybierz **wprowadź szczegóły** i wpisz nazwę domeny w dzierżawie tej organizacji. Na przykład fabrikam.com.
     
-    - Dla grupy w drugiej organizacji zewnętrznych: Na **wprowadź szczegóły** karty, wpisz adres e-mail grupy w dzierżawie tej organizacji. Na przykład sales@contoso.com.
+   - Dla grupy w drugiej organizacji zewnętrznych: Na **wprowadź szczegóły** karty, wpisz adres e-mail grupy w dzierżawie tej organizacji. Na przykład sales@contoso.com.
     
-    - Dla użytkownika, który nie ma konta usługi Azure AD: Na **wprowadź szczegóły** karty, wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
+   - Dla użytkownika, który nie ma konta usługi Azure AD: Na **wprowadź szczegóły** karty, wpisz adres e-mail użytkownika. Na przykład bengi.turan@gmail.com. 
 
 4. Aby udzielić tych samych uprawnień do tych użytkowników: Dla **wybierz uprawnienia z wstępnie ustawionych**, wybierz opcję **współwłaściciel**, **Współautor**, **recenzenta**, lub **niestandardowe**wybrać, które chcesz udzielić uprawnień.
     
@@ -134,7 +134,7 @@ Ponadto następujące scenariusze obsługuje wyświetlanie dokumentów:
 |Windows|Tak [[1]](#footnote-1)|Tak [[2]](#footnote-2)|
 |iOS|Tak [[1]](#footnote-1)|Nie|
 |Android|Tak [[1]](#footnote-1)|Nie|
-|Z systemem MacOS|Tak [[1]](#footnote-1)|Nie|
+|MacOS|Tak [[1]](#footnote-1)|Nie|
 
 ###### <a name="footnote-1"></a>Przypis 1
 Obsługuje konta użytkowników, grup z włączoną obsługą poczty e-mail, wszystkie elementy członkowskie. Konta użytkowników i grupy z włączoną obsługą poczty e-mail może zawierać konta gościa. Wszystkie elementy członkowskie wykluczyć konta gościa.

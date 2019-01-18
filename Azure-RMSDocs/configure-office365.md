@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 83f633ff1051a5d54c7254b35e89403de2e53277
-ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
+ms.openlocfilehash: be8378705611f10064026dd0043e6404ad693092
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53319435"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393499"
 ---
 # <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: Konfiguracja dla klientów i usług online do korzystania z usługi Azure Rights Management
 
@@ -25,7 +25,7 @@ Ponieważ usługi Office 365 natywnie obsługuje usługę Azure Rights Managemen
 
 Zalecamy jednak uzupełnienie tych aplikacji o klienta usługi Azure Information Protection, dzięki czemu użytkownicy będą mogli skorzystać z zalet dodatku pakietu Office i możliwości obsługi dodatkowych typów plików. Aby uzyskać więcej informacji, zobacz [klienta Azure Information Protection: Instalacja i konfiguracja dla klientów](configure-client.md).
 
-## <a name="exchangeonline-irm-configuration"></a>Usługa Exchange Online: Konfiguracja usługi IRM
+## <a name="exchangeonline-irm-configuration"></a>Exchange Online: Konfiguracja usługi IRM
 Aby uzyskać informacje na temat współdziałania usługi Exchange Online IRM z usługą Azure Rights Management, zobacz [usługi Exchange Online i Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) sekcja [Office jak aplikacje i usługi obsługują usługę Azure Rights Zarządzanie](office-apps-services-support.md).
 
 Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Management. Aby sprawdzić, uruchom następujące polecenia:
@@ -52,7 +52,7 @@ Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Manag
     
         Import-PSSession $Session
 
-4. Uruchom [Get-IRMConfiguration] (https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) polecenie, aby wyświetlić konfigurację usługi Exchange Online dla usługi ochrony:
+4. Uruchom [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx) polecenie, aby wyświetlić konfigurację usługi Exchange Online dla usługi ochrony:
     
         Get-IRMConfiguration
     
@@ -66,9 +66,9 @@ Exchange Online mogą już mieć możliwość użycia usługi Azure Rights Manag
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    Przykład: **Test-IRMConfiguration-Sender  adams@contoso.com**
+    Przykład: <strong>Test-IRMConfiguration -Sender  adams@contoso.com</strong>
     
-    To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell zobaczysz wyniki każdego z nich, a na koniec, jeśli testy zakończą się pomyślnie kontrole: **OGÓLNY WYNIK: — DOSTĘP PRÓBNY**
+    To polecenie umożliwia uruchomienie serii testów obejmujących sprawdzanie połączenia z usługą, pobieranie konfiguracji oraz pobieranie identyfikatorów URI, licencji i dowolnych szablonów. W sesji programu Windows PowerShell zobaczysz wyniki każdego z nich, a na koniec, jeśli testy zakończą się pomyślnie kontrole: **OGÓLNY WYNIK: PASS**
 
 Włączenie usługi Exchange Online do korzystania z usługi Azure Rights Management, można skonfigurować funkcje, które automatycznie stosować ochronę informacji takich jak [reguły przepływu poczty](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8), [zasad (DLP) zapobiegania utracie danych ](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx), i [chroniona poczta głosowa](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx) (Unified Messaging).
 
@@ -122,406 +122,406 @@ Ponieważ ta konfiguracja korzysta z użytkowników, a nie administratora do us�
 #### <a name="configuration-for-administrators"></a>Konfiguracja dla administratorów
 Mimo że nie można konfigurować usługi Rights Management na potrzeby usługi OneDrive dla Firm użytkowników przy użyciu centrum administracyjnego programu SharePoint, można to zrobić w programie Windows PowerShell. Aby włączyć usługę IRM dla bibliotek, wykonaj następujące kroki:
 
-1.  Pobierz i zainstaluj [zestaw SDK składników klienta usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
+1. Pobierz i zainstaluj [zestaw SDK składników klienta usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=42038).
 
-2.  Pobierz i zainstaluj [powłokę zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
+2. Pobierz i zainstaluj [powłokę zarządzania usługi SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
-3.  Skopiuj zawartość poniższego skryptu i nadaj plikowi nazwę Set-IRMOnOneDriveForBusiness.ps1 na swoim komputerze.
+3. Skopiuj zawartość poniższego skryptu i nadaj plikowi nazwę Set-IRMOnOneDriveForBusiness.ps1 na swoim komputerze.
 
-    *&#42;&#42;Zastrzeżenie&#42;&#42;*: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
+   *&#42;&#42;Zastrzeżenie&#42;&#42;*: Ten przykładowy skrypt nie jest obsługiwana w ramach usług ani programów pomocy technicznej standard firmy Microsoft. Ten przykładowy skrypt jest dostarczany W STANIE TAKIM, W JAKIM SIĘ ZNAJDUJE, bez jakichkolwiek gwarancji.
 
-    ```
-    # Requires Windows PowerShell version 3
+   ```
+   # Requires Windows PowerShell version 3
 
-    <#
-      Description:
+   <#
+     Description:
 
-        Configures IRM policy settings for OneDrive for Business and can also be used for SharePoint Online libraries and lists
+       Configures IRM policy settings for OneDrive for Business and can also be used for SharePoint Online libraries and lists
 
-     Script Installation Requirements:
+    Script Installation Requirements:
 
-       SharePoint Online Client Components SDK
-       https://www.microsoft.com/en-us/download/details.aspx?id=42038
+      SharePoint Online Client Components SDK
+      https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
-       SharePoint Online Management Shell
-       https://www.microsoft.com/en-us/download/details.aspx?id=35588
+      SharePoint Online Management Shell
+      https://www.microsoft.com/en-us/download/details.aspx?id=35588
 
-    ======
-    #>
-
-    # URL will be in the format https://<tenant-name>-admin.sharepoint.com
-    $sharepointAdminCenterUrl = "https://contoso-admin.sharepoint.com"
-
-    $tenantAdmin = "admin@contoso.com"
-
-    $webUrls = @("https://contoso-my.sharepoint.com/personal/user1_contoso_com",
-                 "https://contoso-my.sharepoint.com/personal/user2_contoso_com",
-                 "https://contoso-my.sharepoint.com/personal/user3_contoso_com")
-
-    <# As an alternative to specifying the URLs as an array, you can import them from a CSV file (no header, single value per row).
-       Then, use: $webUrls = Get-Content -Path "File_path_and_name.csv"
-
-    #>
-
-    $listTitle = "Documents"
-
-    function Load-SharePointOnlineClientComponentAssemblies
-    {
-        [cmdletbinding()]
-        param()
-
-        process
-        {
-            # assembly location: C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI
-            try
-            {
-                Write-Verbose "Loading Assembly: Microsoft.Office.Client.Policy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.Office.Client.Policy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.Office.Client.TranslationServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.Office.Client.TranslationServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Search.Applications, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Search.Applications, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
-                [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
-
-                return $true
-            }
-            catch
-            {
-                if($_.Exception.Message -match "Could not load file or assembly")
-                {
-                    Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
-                }
-                else
-                {
-                    Write-Error -Exception $_.Exception
-                }
-                return $false
-            }
-        }
-    }
-
-    function Load-SharePointOnlineModule
-    {
-        [cmdletbinding()]
-        param()
-
-        process
-        {
-            do
-            {
-                # Installation location: C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell
-                $spoModule = Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ErrorAction SilentlyContinue
-
-                if(-not $spoModule)
-                {
-                    try
-                    {
-                        Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-                        return $true
-                    }
-                    catch
-                    {
-                        if($_.Exception.Message -match "Could not load file or assembly")
-                        {
-                            Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
-                        }
-                        else
-                        {
-                            Write-Error -Exception $_.Exception
-                        }
-                        return $false
-                    }
-                }
-                else
-                {
-                    return $true
-                }
-            }
-            while(-not $spoModule)
-        }
-    }
-
-    function Set-IrmConfiguration
-    {
-        [cmdletbinding()]
-        param(
-            [parameter(Mandatory=$true)][Microsoft.SharePoint.Client.List]$List,
-            [parameter(Mandatory=$true)][string]$PolicyTitle,
-            [parameter(Mandatory=$true)][string]$PolicyDescription,
-            [parameter(Mandatory=$false)][switch]$IrmReject,
-            [parameter(Mandatory=$false)][DateTime]$ProtectionExpirationDate,
-            [parameter(Mandatory=$false)][switch]$DisableDocumentBrowserView,
-            [parameter(Mandatory=$false)][switch]$AllowPrint,
-            [parameter(Mandatory=$false)][switch]$AllowScript,
-            [parameter(Mandatory=$false)][switch]$AllowWriteCopy,
-            [parameter(Mandatory=$false)][int]$DocumentAccessExpireDays,
-            [parameter(Mandatory=$false)][int]$LicenseCacheExpireDays,
-            [parameter(Mandatory=$false)][string]$GroupName
-        )
-
-        process
-        {
-            Write-Verbose "Applying IRM Configuration on '$($List.Title)'"
-
-            # reset the value to the default settings
-            $list.InformationRightsManagementSettings.Reset()
-
-            $list.IrmEnabled = $true
-
-            # IRM Policy title and description
-
-                $list.InformationRightsManagementSettings.PolicyTitle       = $PolicyTitle
-                $list.InformationRightsManagementSettings.PolicyDescription = $PolicyDescription
-
-            # Set additional IRM library settings
-
-                # Do not allow users to upload documents that do not support IRM
-                $list.IrmReject = $IrmReject.IsPresent
-
-                $parsedDate = Get-Date
-                if([DateTime]::TryParse($ProtectionExpirationDate, [ref]$parsedDate))
-                {
-                    # Stop restricting access to the library at <date>
-                    $list.IrmExpire = $true
-                    $list.InformationRightsManagementSettings.DocumentLibraryProtectionExpireDate = $ProtectionExpirationDate
-                }
-
-                # Prevent opening documents in the browser for this Document Library
-                $list.InformationRightsManagementSettings.DisableDocumentBrowserView = $DisableDocumentBrowserView.IsPresent
-
-            # Configure document access rights
-
-                # Allow viewers to print
-                $list.InformationRightsManagementSettings.AllowPrint = $AllowPrint.IsPresent
-
-                # Allow viewers to run script and screen reader to function on downloaded documents
-                $list.InformationRightsManagementSettings.AllowScript = $AllowScript.IsPresent
-
-                # Allow viewers to write on a copy of the downloaded document
-                $list.InformationRightsManagementSettings.AllowWriteCopy = $AllowWriteCopy.IsPresent
-
-                if($DocumentAccessExpireDays)
-                {
-                    # After download, document access rights will expire after these number of days (1-365)
-                    $list.InformationRightsManagementSettings.EnableDocumentAccessExpire = $true
-                    $list.InformationRightsManagementSettings.DocumentAccessExpireDays   = $DocumentAccessExpireDays
-                }
-
-            # Set group protection and credentials interval
-
-                if($LicenseCacheExpireDays)
-                {
-                    # Users must verify their credentials using this interval (days)
-                    $list.InformationRightsManagementSettings.EnableLicenseCacheExpire = $true
-                    $list.InformationRightsManagementSettings.LicenseCacheExpireDays   = $LicenseCacheExpireDays
-                }
-
-                if($GroupName)
-                {
-                    # Allow group protection. Default group:
-                    $list.InformationRightsManagementSettings.EnableGroupProtection = $true
-                    $list.InformationRightsManagementSettings.GroupName             = $GroupName
-                }
-        }
-        end
-        {
-            if($list)
-            {
-                Write-Verbose "Committing IRM configuration settings on '$($list.Title)'"
-                $list.InformationRightsManagementSettings.Update()
-                $list.Update()
-                $script:clientContext.Load($list)
-                $script:clientContext.ExecuteQuery()
-            }
-        }
-    }
-
-    function Get-CredentialFromCredentialCache
-    {
-        [cmdletbinding()]
-        param([string]$CredentialName)
-
-        #if( Test-Path variable:\global:CredentialCache )
-        if( Get-Variable O365TenantAdminCredentialCache -Scope Global -ErrorAction SilentlyContinue )
-        {
-            if($global:O365TenantAdminCredentialCache.ContainsKey($CredentialName))
-            {
-                Write-Verbose "Credential Cache Hit: $CredentialName"
-                return $global:O365TenantAdminCredentialCache[$CredentialName]
-            }
-        }
-        Write-Verbose "Credential Cache Miss: $CredentialName"
-        return $null
-    }
-
-    function Add-CredentialToCredentialCache
-    {
-        [cmdletbinding()]
-        param([System.Management.Automation.PSCredential]$Credential)
-
-        if(-not (Get-Variable CredentialCache -Scope Global -ErrorAction SilentlyContinue))
-        {
-            Write-Verbose "Initializing the Credential Cache"
-            $global:O365TenantAdminCredentialCache = @{}
-        }
-
-        Write-Verbose "Adding Credential to the Credential Cache"
-        $global:O365TenantAdminCredentialCache[$Credential.UserName] = $Credential
-    }
-
-    # load the required assemblies and Windows PowerShell modules
-
-        if(-not ((Load-SharePointOnlineClientComponentAssemblies) -and (Load-SharePointOnlineModule)) ) { return }
-
-    # Add the credentials to the client context and SharePoint Online service connection
-
-        # check for cached credentials to use
-        $o365TenantAdminCredential = Get-CredentialFromCredentialCache -CredentialName $tenantAdmin
-
-        if(-not $o365TenantAdminCredential)
-        {
-            # when credentials are not cached, prompt for the tenant admin credentials
-            $o365TenantAdminCredential = Get-Credential -UserName $tenantAdmin -Message "Enter the password for the Office 365 admin"
-
-            if(-not $o365TenantAdminCredential -or -not $o365TenantAdminCredential.UserName -or $o365TenantAdminCredential.Password.Length -eq 0 )
-            {
-                Write-Error -Message "Could not validate the supplied tenant admin credentials"
-                return
-            }
-
-            # add the credentials to the cache
-            Add-CredentialToCredentialCache -Credential $o365TenantAdminCredential
-        }
-
-    # connect to Office365 first, required for SharePoint Online cmdlets to run
-
-        Connect-SPOService -Url $sharepointAdminCenterUrl -Credential $o365TenantAdminCredential
-
-    # enumerate each of the specified site URLs
-
-        foreach($webUrl in $webUrls)
-        {
-            $grantedSiteCollectionAdmin = $false
-
-            try
-            {
-                # establish the client context and set the credentials to connect to the site
-                $script:clientContext = New-Object Microsoft.SharePoint.Client.ClientContext($webUrl)
-                $script:clientContext.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($o365TenantAdminCredential.UserName, $o365TenantAdminCredential.Password)
-
-                # initialize the site and web context
-                $script:clientContext.Load($script:clientContext.Site)
-                $script:clientContext.Load($script:clientContext.Web)
-                $script:clientContext.ExecuteQuery()
-
-                # load and ensure the tenant admin user account if present on the target SharePoint site
-                $tenantAdminUser = $script:clientContext.Web.EnsureUser($o365TenantAdminCredential.UserName)
-                $script:clientContext.Load($tenantAdminUser)
-                $script:clientContext.ExecuteQuery()
-
-                # check if the tenant admin is a site admin
-                if( -not $tenantAdminUser.IsSiteAdmin )
-                {
-                    try
-                    {
-                        # grant the tenant admin temporary admin rights to the site collection
-                        Set-SPOUser -Site $script:clientContext.Site.Url -LoginName $o365TenantAdminCredential.UserName -IsSiteCollectionAdmin $true | Out-Null
-                        $grantedSiteCollectionAdmin = $true
-                    }
-                    catch
-                    {
-                        Write-Error $_.Exception
-                        return
-                    }
-                }
-
-                try
-                {
-                    # load the list orlibrary using CSOM
-
-                    $list = $null
-                    $list = $script:clientContext.Web.Lists.GetByTitle($listTitle)
-                    $script:clientContext.Load($list)
-                    $script:clientContext.ExecuteQuery()
-
-                    # **************  ADMIN INSTRUCTIONS  **************
-                    # If necessary, modify the following Set-IrmConfiguration parameters to match your required values
-                    # The supplied options and values are for example only
-                    # Example that shows the Set-IrmConfiguration command with all parameters: Set-IrmConfiguration -List $list -PolicyTitle "Protected Files" -PolicyDescription "This policy restricts access to authorized users" -IrmReject -ProtectionExpirationDate $(Get-Date).AddDays(180) -DisableDocumentBrowserView -AllowPrint -AllowScript -AllowWriteCopy -LicenseCacheExpireDays 25 -DocumentAccessExpireDays 90
-
-                    Set-IrmConfiguration -List $list -PolicyTitle "Protected Files" -PolicyDescription "This policy restricts access to authorized users"  
-                }
-                catch
-                {
-                    Write-Error -Message "Error setting IRM configuration on site: $webUrl.`nError Details: $($_.Exception.ToString())"
-                }
-           }
-           finally
+   ======
+   #>
+
+   # URL will be in the format https://<tenant-name>-admin.sharepoint.com
+   $sharepointAdminCenterUrl = "https://contoso-admin.sharepoint.com"
+
+   $tenantAdmin = "admin@contoso.com"
+
+   $webUrls = @("https://contoso-my.sharepoint.com/personal/user1_contoso_com",
+                "https://contoso-my.sharepoint.com/personal/user2_contoso_com",
+                "https://contoso-my.sharepoint.com/personal/user3_contoso_com")
+
+   <# As an alternative to specifying the URLs as an array, you can import them from a CSV file (no header, single value per row).
+      Then, use: $webUrls = Get-Content -Path "File_path_and_name.csv"
+
+   #>
+
+   $listTitle = "Documents"
+
+   function Load-SharePointOnlineClientComponentAssemblies
+   {
+       [cmdletbinding()]
+       param()
+
+       process
+       {
+           # assembly location: C:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI
+           try
            {
-                if($grantedSiteCollectionAdmin)
-                {
-                    # remove the temporary admin rights to the site collection
-                    Set-SPOUser -Site $script:clientContext.Site.Url -LoginName $o365TenantAdminCredential.UserName -IsSiteCollectionAdmin $false | Out-Null
-                }
+               Write-Verbose "Loading Assembly: Microsoft.Office.Client.Policy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.Office.Client.Policy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.Office.Client.TranslationServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.Office.Client.TranslationServices, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Search.Applications, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Search.Applications, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               Write-Verbose "Loading Assembly: Microsoft.SharePoint.Client.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"
+               [System.Reflection.Assembly]::Load("Microsoft.SharePoint.Client.UserProfiles, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c") | Out-Null
+
+               return $true
            }
-        }
+           catch
+           {
+               if($_.Exception.Message -match "Could not load file or assembly")
+               {
+                   Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
+               }
+               else
+               {
+                   Write-Error -Exception $_.Exception
+               }
+               return $false
+           }
+       }
+   }
 
-    Disconnect-SPOService -ErrorAction SilentlyContinue
-    ```
+   function Load-SharePointOnlineModule
+   {
+       [cmdletbinding()]
+       param()
 
-4.  Przejrzyj skrypt i wprowadź następujące zmiany:
+       process
+       {
+           do
+           {
+               # Installation location: C:\Program Files\SharePoint Online Management Shell\Microsoft.Online.SharePoint.PowerShell
+               $spoModule = Get-Module -Name Microsoft.Online.SharePoint.PowerShell -ErrorAction SilentlyContinue
 
-    1.  Wyszukaj ciąg `$sharepointAdminCenterUrl` i zastąp przykładową wartość adresem URL swojego centrum administracyjnego programu SharePoint.
+               if(-not $spoModule)
+               {
+                   try
+                   {
+                       Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
+                       return $true
+                   }
+                   catch
+                   {
+                       if($_.Exception.Message -match "Could not load file or assembly")
+                       {
+                           Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                       }
+                       else
+                       {
+                           Write-Error -Exception $_.Exception
+                       }
+                       return $false
+                   }
+               }
+               else
+               {
+                   return $true
+               }
+           }
+           while(-not $spoModule)
+       }
+   }
 
-        Ta wartość jest dostępna jako podstawowy adres URL w centrum administracyjnym programu SharePoint. Jej format jest następujący: https://*&lt;nazwa_dzierżawy&gt;*-admin.sharepoint.com
+   function Set-IrmConfiguration
+   {
+       [cmdletbinding()]
+       param(
+           [parameter(Mandatory=$true)][Microsoft.SharePoint.Client.List]$List,
+           [parameter(Mandatory=$true)][string]$PolicyTitle,
+           [parameter(Mandatory=$true)][string]$PolicyDescription,
+           [parameter(Mandatory=$false)][switch]$IrmReject,
+           [parameter(Mandatory=$false)][DateTime]$ProtectionExpirationDate,
+           [parameter(Mandatory=$false)][switch]$DisableDocumentBrowserView,
+           [parameter(Mandatory=$false)][switch]$AllowPrint,
+           [parameter(Mandatory=$false)][switch]$AllowScript,
+           [parameter(Mandatory=$false)][switch]$AllowWriteCopy,
+           [parameter(Mandatory=$false)][int]$DocumentAccessExpireDays,
+           [parameter(Mandatory=$false)][int]$LicenseCacheExpireDays,
+           [parameter(Mandatory=$false)][string]$GroupName
+       )
 
-        Na przykład jeśli nazwa dzierżawy jest "contoso", następnie należy określić: **https://contoso-admin.sharepoint.com**
+       process
+       {
+           Write-Verbose "Applying IRM Configuration on '$($List.Title)'"
 
-    2.  Wyszukaj ciąg `$tenantAdmin` i zastąp przykładową wartość nazwą własnego w pełni kwalifikowanego konta administratora globalnego dla usługi Office 365.
+           # reset the value to the default settings
+           $list.InformationRightsManagementSettings.Reset()
 
-        Ta wartość jest taka sama jak wartość używana do logowania do portalu administracyjnego usługi Office 365 jako administrator globalny i ma następujący format: nazwa_użytkownika@*&lt;nazwa_domeny_dzierżawy&gt;*.com.
+           $list.IrmEnabled = $true
 
-        Jeśli na przykład nazwa użytkownika administratora globalnego usługi Office 365 „admin” odpowiada domenie dzierżawy „contoso.com”, należy podać wartość **admin@contoso.com**
+           # IRM Policy title and description
 
-    3.  Wyszukaj ciąg `$webUrls` i zastąp przykładowe wartości adresami URL w sieci Web powiązanymi z usługą OneDrive dla Firm dla użytkowników, dodając lub usuwając potrzebną liczbę wpisów.
+               $list.InformationRightsManagementSettings.PolicyTitle       = $PolicyTitle
+               $list.InformationRightsManagementSettings.PolicyDescription = $PolicyDescription
 
-        Możesz również zapoznać się z komentarzami w skrypcie dotyczącymi sposobu zastępowania tej tablicy przez zaimportowanie pliku CSV zawierającego wszystkie adresy URL do zaimportowania.  Przygotowaliśmy inny przykładowy skrypt umożliwiający automatyczne wyszukiwanie i wyodrębnianie adresów URL na potrzeby wypełniania tego pliku CSV. Jeśli wszystko jest gotowe do wykonania tej czynności, skorzystaj z sekcji [Dodatkowy skrypt służący do wypełniania wyjściowego pliku CSV przy użyciu wszystkich adresów URL usługi OneDrive dla Firm](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file) od razu po wykonaniu tych kroków.
+           # Set additional IRM library settings
 
-        Adres URL sieci Web dla usługi użytkownika OneDrive dla Firm użytkownika ma następujący format: https://*&lt;nazwa_dzierżawcy&gt;*-my.sharepoint.com/personal/*&lt;nazwa_użytkownika&gt;*_*&lt;nazwa dzierżawcy&gt;*_com
+               # Do not allow users to upload documents that do not support IRM
+               $list.IrmReject = $IrmReject.IsPresent
 
-        Na przykład jeśli użytkownik w dzierżawie contoso ma nazwę użytkownika "rsimone", należy określić: **https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
+               $parsedDate = Get-Date
+               if([DateTime]::TryParse($ProtectionExpirationDate, [ref]$parsedDate))
+               {
+                   # Stop restricting access to the library at <date>
+                   $list.IrmExpire = $true
+                   $list.InformationRightsManagementSettings.DocumentLibraryProtectionExpireDate = $ProtectionExpirationDate
+               }
 
-    4.  Ponieważ skrypt jest używany do konfigurowania usługi OneDrive dla Firm, nie należy zmieniać wartości **Dokumenty** zmiennej `$listTitle`.
+               # Prevent opening documents in the browser for this Document Library
+               $list.InformationRightsManagementSettings.DisableDocumentBrowserView = $DisableDocumentBrowserView.IsPresent
 
-    5.  Wyszukaj ciąg `ADMIN INSTRUCTIONS`. Jeśli w tej sekcji nie zostaną wprowadzone żadne zmiany, usługa OneDrive dla Firm użytkownika zostanie skonfigurowana na potrzeby usług IRM z tytułem „Chronione pliki” i opisem zasad „Te zasady ograniczają dostęp do użytkowników autoryzowanych”.  Żadna inna opcja nie zostanie ustawiona — jest to prawdopodobnie odpowiednie w większości środowisk. Można jednak zmienić sugerowany tytuł i opis zasad, a także dodać inne opcje usługi IRM, które są odpowiednie dla danego środowiska. Zapoznaj się z opatrzonym komentarzami przykładem w skrypcie, który ułatwi Ci utworzenie własnego zestawu parametrów polecenia Set-IrmConfiguration.
+           # Configure document access rights
 
-5.  Zapisz skrypt i podpisz go. Jeśli zrezygnujesz z podpisania skryptu (bezpieczniejsza opcja), program Windows PowerShell musi zostać skonfigurowany na komputerze, aby uruchamiać niepodpisane skrypty. Aby to zrobić, Uruchom sesję programu Windows PowerShell, korzystając z **Uruchom jako Administrator** opcję i wpisz: **Set-ExecutionPolicy Unrestricted**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów (mniej bezpieczna opcja).
+               # Allow viewers to print
+               $list.InformationRightsManagementSettings.AllowPrint = $AllowPrint.IsPresent
 
-    Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) w bibliotece dokumentacji programu PowerShell.
+               # Allow viewers to run script and screen reader to function on downloaded documents
+               $list.InformationRightsManagementSettings.AllowScript = $AllowScript.IsPresent
 
-6.  Uruchom skrypt i po wyświetleniu monitu podaj hasło do konta administratora usługi Office 365. Jeśli zmodyfikujesz skrypt i uruchomisz go w tej samej sesji programu Windows PowerShell, nie pojawi się monit o podanie poświadczeń.
+               # Allow viewers to write on a copy of the downloaded document
+               $list.InformationRightsManagementSettings.AllowWriteCopy = $AllowWriteCopy.IsPresent
+
+               if($DocumentAccessExpireDays)
+               {
+                   # After download, document access rights will expire after these number of days (1-365)
+                   $list.InformationRightsManagementSettings.EnableDocumentAccessExpire = $true
+                   $list.InformationRightsManagementSettings.DocumentAccessExpireDays   = $DocumentAccessExpireDays
+               }
+
+           # Set group protection and credentials interval
+
+               if($LicenseCacheExpireDays)
+               {
+                   # Users must verify their credentials using this interval (days)
+                   $list.InformationRightsManagementSettings.EnableLicenseCacheExpire = $true
+                   $list.InformationRightsManagementSettings.LicenseCacheExpireDays   = $LicenseCacheExpireDays
+               }
+
+               if($GroupName)
+               {
+                   # Allow group protection. Default group:
+                   $list.InformationRightsManagementSettings.EnableGroupProtection = $true
+                   $list.InformationRightsManagementSettings.GroupName             = $GroupName
+               }
+       }
+       end
+       {
+           if($list)
+           {
+               Write-Verbose "Committing IRM configuration settings on '$($list.Title)'"
+               $list.InformationRightsManagementSettings.Update()
+               $list.Update()
+               $script:clientContext.Load($list)
+               $script:clientContext.ExecuteQuery()
+           }
+       }
+   }
+
+   function Get-CredentialFromCredentialCache
+   {
+       [cmdletbinding()]
+       param([string]$CredentialName)
+
+       #if( Test-Path variable:\global:CredentialCache )
+       if( Get-Variable O365TenantAdminCredentialCache -Scope Global -ErrorAction SilentlyContinue )
+       {
+           if($global:O365TenantAdminCredentialCache.ContainsKey($CredentialName))
+           {
+               Write-Verbose "Credential Cache Hit: $CredentialName"
+               return $global:O365TenantAdminCredentialCache[$CredentialName]
+           }
+       }
+       Write-Verbose "Credential Cache Miss: $CredentialName"
+       return $null
+   }
+
+   function Add-CredentialToCredentialCache
+   {
+       [cmdletbinding()]
+       param([System.Management.Automation.PSCredential]$Credential)
+
+       if(-not (Get-Variable CredentialCache -Scope Global -ErrorAction SilentlyContinue))
+       {
+           Write-Verbose "Initializing the Credential Cache"
+           $global:O365TenantAdminCredentialCache = @{}
+       }
+
+       Write-Verbose "Adding Credential to the Credential Cache"
+       $global:O365TenantAdminCredentialCache[$Credential.UserName] = $Credential
+   }
+
+   # load the required assemblies and Windows PowerShell modules
+
+       if(-not ((Load-SharePointOnlineClientComponentAssemblies) -and (Load-SharePointOnlineModule)) ) { return }
+
+   # Add the credentials to the client context and SharePoint Online service connection
+
+       # check for cached credentials to use
+       $o365TenantAdminCredential = Get-CredentialFromCredentialCache -CredentialName $tenantAdmin
+
+       if(-not $o365TenantAdminCredential)
+       {
+           # when credentials are not cached, prompt for the tenant admin credentials
+           $o365TenantAdminCredential = Get-Credential -UserName $tenantAdmin -Message "Enter the password for the Office 365 admin"
+
+           if(-not $o365TenantAdminCredential -or -not $o365TenantAdminCredential.UserName -or $o365TenantAdminCredential.Password.Length -eq 0 )
+           {
+               Write-Error -Message "Could not validate the supplied tenant admin credentials"
+               return
+           }
+
+           # add the credentials to the cache
+           Add-CredentialToCredentialCache -Credential $o365TenantAdminCredential
+       }
+
+   # connect to Office365 first, required for SharePoint Online cmdlets to run
+
+       Connect-SPOService -Url $sharepointAdminCenterUrl -Credential $o365TenantAdminCredential
+
+   # enumerate each of the specified site URLs
+
+       foreach($webUrl in $webUrls)
+       {
+           $grantedSiteCollectionAdmin = $false
+
+           try
+           {
+               # establish the client context and set the credentials to connect to the site
+               $script:clientContext = New-Object Microsoft.SharePoint.Client.ClientContext($webUrl)
+               $script:clientContext.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($o365TenantAdminCredential.UserName, $o365TenantAdminCredential.Password)
+
+               # initialize the site and web context
+               $script:clientContext.Load($script:clientContext.Site)
+               $script:clientContext.Load($script:clientContext.Web)
+               $script:clientContext.ExecuteQuery()
+
+               # load and ensure the tenant admin user account if present on the target SharePoint site
+               $tenantAdminUser = $script:clientContext.Web.EnsureUser($o365TenantAdminCredential.UserName)
+               $script:clientContext.Load($tenantAdminUser)
+               $script:clientContext.ExecuteQuery()
+
+               # check if the tenant admin is a site admin
+               if( -not $tenantAdminUser.IsSiteAdmin )
+               {
+                   try
+                   {
+                       # grant the tenant admin temporary admin rights to the site collection
+                       Set-SPOUser -Site $script:clientContext.Site.Url -LoginName $o365TenantAdminCredential.UserName -IsSiteCollectionAdmin $true | Out-Null
+                       $grantedSiteCollectionAdmin = $true
+                   }
+                   catch
+                   {
+                       Write-Error $_.Exception
+                       return
+                   }
+               }
+
+               try
+               {
+                   # load the list orlibrary using CSOM
+
+                   $list = $null
+                   $list = $script:clientContext.Web.Lists.GetByTitle($listTitle)
+                   $script:clientContext.Load($list)
+                   $script:clientContext.ExecuteQuery()
+
+                   # **************  ADMIN INSTRUCTIONS  **************
+                   # If necessary, modify the following Set-IrmConfiguration parameters to match your required values
+                   # The supplied options and values are for example only
+                   # Example that shows the Set-IrmConfiguration command with all parameters: Set-IrmConfiguration -List $list -PolicyTitle "Protected Files" -PolicyDescription "This policy restricts access to authorized users" -IrmReject -ProtectionExpirationDate $(Get-Date).AddDays(180) -DisableDocumentBrowserView -AllowPrint -AllowScript -AllowWriteCopy -LicenseCacheExpireDays 25 -DocumentAccessExpireDays 90
+
+                   Set-IrmConfiguration -List $list -PolicyTitle "Protected Files" -PolicyDescription "This policy restricts access to authorized users"  
+               }
+               catch
+               {
+                   Write-Error -Message "Error setting IRM configuration on site: $webUrl.`nError Details: $($_.Exception.ToString())"
+               }
+          }
+          finally
+          {
+               if($grantedSiteCollectionAdmin)
+               {
+                   # remove the temporary admin rights to the site collection
+                   Set-SPOUser -Site $script:clientContext.Site.Url -LoginName $o365TenantAdminCredential.UserName -IsSiteCollectionAdmin $false | Out-Null
+               }
+          }
+       }
+
+   Disconnect-SPOService -ErrorAction SilentlyContinue
+   ```
+
+4. Przejrzyj skrypt i wprowadź następujące zmiany:
+
+   1. Wyszukaj ciąg `$sharepointAdminCenterUrl` i zastąp przykładową wartość adresem URL swojego centrum administracyjnego programu SharePoint.
+
+      Ta wartość jest dostępna jako podstawowy adres URL w centrum administracyjnym programu SharePoint. Jej format jest następujący: https://<em>&lt;nazwa_dzierżawy&gt;</em>-admin.sharepoint.com
+
+      Na przykład jeśli nazwa dzierżawy jest "contoso", następnie należy określić: **https://contoso-admin.sharepoint.com**
+
+   2. Wyszukaj ciąg `$tenantAdmin` i zastąp przykładową wartość nazwą własnego w pełni kwalifikowanego konta administratora globalnego dla usługi Office 365.
+
+      Ta wartość jest taka sama jak wartość używana do logowania do portalu administracyjnego usługi Office 365 jako administrator globalny i ma następujący format: nazwa_użytkownika@*&lt;nazwa_domeny_dzierżawy&gt;*.com.
+
+      Jeśli na przykład nazwa użytkownika administratora globalnego usługi Office 365 „admin” odpowiada domenie dzierżawy „contoso.com”, należy podać wartość <strong>admin@contoso.com</strong>
+
+   3. Wyszukaj ciąg `$webUrls` i zastąp przykładowe wartości adresami URL w sieci Web powiązanymi z usługą OneDrive dla Firm dla użytkowników, dodając lub usuwając potrzebną liczbę wpisów.
+
+      Możesz również zapoznać się z komentarzami w skrypcie dotyczącymi sposobu zastępowania tej tablicy przez zaimportowanie pliku CSV zawierającego wszystkie adresy URL do zaimportowania.  Przygotowaliśmy inny przykładowy skrypt umożliwiający automatyczne wyszukiwanie i wyodrębnianie adresów URL na potrzeby wypełniania tego pliku CSV. Jeśli wszystko jest gotowe do wykonania tej czynności, skorzystaj z sekcji [Dodatkowy skrypt służący do wypełniania wyjściowego pliku CSV przy użyciu wszystkich adresów URL usługi OneDrive dla Firm](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file) od razu po wykonaniu tych kroków.
+
+      Adres URL sieci Web dla usługi użytkownika OneDrive dla Firm użytkownika ma następujący format: https://<em>&lt;nazwa_dzierżawcy&gt;</em>-my.sharepoint.com/personal/*&lt;nazwa_użytkownika&gt;*_*&lt;nazwa dzierżawcy&gt;*_com
+
+      Na przykład jeśli użytkownik w dzierżawie contoso ma nazwę użytkownika "rsimone", należy określić: **https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
+
+   4. Ponieważ skrypt jest używany do konfigurowania usługi OneDrive dla Firm, nie należy zmieniać wartości **Dokumenty** zmiennej `$listTitle`.
+
+   5. Wyszukaj ciąg `ADMIN INSTRUCTIONS`. Jeśli w tej sekcji nie zostaną wprowadzone żadne zmiany, usługa OneDrive dla Firm użytkownika zostanie skonfigurowana na potrzeby usług IRM z tytułem „Chronione pliki” i opisem zasad „Te zasady ograniczają dostęp do użytkowników autoryzowanych”.  Żadna inna opcja nie zostanie ustawiona — jest to prawdopodobnie odpowiednie w większości środowisk. Można jednak zmienić sugerowany tytuł i opis zasad, a także dodać inne opcje usługi IRM, które są odpowiednie dla danego środowiska. Zapoznaj się z opatrzonym komentarzami przykładem w skrypcie, który ułatwi Ci utworzenie własnego zestawu parametrów polecenia Set-IrmConfiguration.
+
+5. Zapisz skrypt i podpisz go. Jeśli zrezygnujesz z podpisania skryptu (bezpieczniejsza opcja), program Windows PowerShell musi zostać skonfigurowany na komputerze, aby uruchamiać niepodpisane skrypty. Aby to zrobić, Uruchom sesję programu Windows PowerShell, korzystając z **Uruchom jako Administrator** opcję i wpisz: **Set-ExecutionPolicy Unrestricted**. Jednak taka konfiguracja pozwala na uruchomienie wszystkich niepodpisanych skryptów (mniej bezpieczna opcja).
+
+   Aby uzyskać więcej informacji na temat podpisywania skryptów programu Windows PowerShell, zobacz artykuł [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) w bibliotece dokumentacji programu PowerShell.
+
+6. Uruchom skrypt i po wyświetleniu monitu podaj hasło do konta administratora usługi Office 365. Jeśli zmodyfikujesz skrypt i uruchomisz go w tej samej sesji programu Windows PowerShell, nie pojawi się monit o podanie poświadczeń.
 
 > [!TIP]
 > Możesz również użyć tego skryptu do skonfigurowania usługi IRM na potrzeby biblioteki usługi SharePoint Online. W tej konfiguracji zechcesz prawdopodobnie włączyć opcję dodatkową, **Nie zezwalaj użytkownikom na przekazywanie dokumentów nieobsługujących usługi IRM**, aby upewnić się, że biblioteka zawiera tylko dokumenty chronione.    W tym celu dodaj parametr `-IrmReject` do polecenia Set-IrmConfiguration w skrypcie.

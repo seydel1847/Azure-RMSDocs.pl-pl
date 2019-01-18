@@ -4,18 +4,18 @@ description: Po włączeniu ochrony dokumentów można śledzić ich użycie. W 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 251de2d7e959dc46bcf95c003fd8924cc4c34d13
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: ba53a7f4d3aa96e4e813c602d1d79f014550ea17
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305232"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314768"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Podręcznik użytkownika: Śledzenie i odwoływanie dokumentów podczas korzystania z usługi Azure Information Protection
 
@@ -60,6 +60,8 @@ Jeśli nie masz uprawnień administracyjnych, możesz śledzić i odwoływać do
 
 Aby śledzić dokument, który jest chroniony przez Ciebie, użyj komputera z systemem Windows w celu zarejestrowania go w witrynie śledzenia dokumentów. W tym celu użyj Eksploratora plików lub aplikacji pakietu Office.
 
+W przypadku bieżącej wersji zapoznawczej klienta usługi Azure Information Protection można również zarejestrować dokument chroniony za pomocą programu PowerShell, korzystając z *EnableTracking* parametrem [Set-AIPFileLabel ](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) polecenia cmdlet.
+
 ## <a name="using-office-to-track-or-revoke-the-document"></a>Śledzenie lub odwoływanie dokumentu przy użyciu pakietu Office
 
 Dla pakietu Office aplikacji, Word, Excel i PowerPoint: 
@@ -97,7 +99,7 @@ Po zarejestrowaniu chronionych dokumentów za pomocą Eksploratora plików lub a
 
     **Obsługiwane przeglądarki**: Firma Microsoft zaleca używanie programu Internet Explorer, który jest co najmniej w wersji 10, ale można użyć dowolnej z poniższych przeglądarek służące do witryny śledzenia dokumentów:
 
-    - Program Internet Explorer: Co najmniej w wersji 10
+    - Internet Explorer: Co najmniej w wersji 10
 
     - Internet Explorer 9 z co najmniej MS12-037: Zbiorcza aktualizacja zabezpieczeń programu Internet Explorer: 12 czerwca 2012
 

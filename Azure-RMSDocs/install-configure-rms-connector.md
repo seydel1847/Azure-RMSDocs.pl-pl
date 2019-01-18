@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 57dd5faad33681bbf87045b61335e11baaa973a2
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305679"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393969"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Instalowanie i konfigurowanie łącznika Azure Rights Management
 
@@ -53,7 +53,7 @@ Przed rozpoczęciem upewnij się, czy zostały sprawdzone [wymagania wstępne](d
 W celu kontynuacji wprowadź konto i hasło, aby skonfigurować łącznik usługi RMS.
 
 ## <a name="entering-credentials"></a>Wprowadzanie poświadczeń
-Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia dla konta, które ma wystarczające uprawnienia do konfigurowania łącznika usług RMS. Na przykład można wpisać **admin@contoso.com**, a następnie podać hasło dla tego konta.
+Przed skonfigurowaniem łącznika usług RMS, musisz wprowadzić poświadczenia dla konta, które ma wystarczające uprawnienia do konfigurowania łącznika usług RMS. Na przykład można wpisać <strong>admin@contoso.com</strong>, a następnie podać hasło dla tego konta.
 
 To konto nie może wymagać uwierzytelniania wieloskładnikowego (MFA), ponieważ narzędzie administracyjne usługi Microsoft Rights Management nie obsługuje metody MFA dla tego konta. 
 
@@ -63,40 +63,40 @@ Ponadto, jeśli zostały zaimplementowane [kontrolki dołączania](activate-serv
 
 Można użyć konta, które ma jedno z następujących uprawnień:
 
--   **Administrator globalny dzierżawy**: Konto administratora globalnego dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD.
+- **Administrator globalny dzierżawy**: Konto administratora globalnego dla dzierżawy usługi Office 365 lub dzierżawy usługi Azure AD.
 
--   **Administrator globalny usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu przypisano rolę administratora globalnego usługi Azure RMS.
+- **Administrator globalny usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu przypisano rolę administratora globalnego usługi Azure RMS.
 
--   **Administrator łącznika usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu udzielono prawa do instalowania łącznika usług RMS dla Twojej organizacji i administrowania.
+- **Administrator łącznika usługi Azure Rights Management**: Konto usługi Azure Active Directory, któremu udzielono prawa do instalowania łącznika usług RMS dla Twojej organizacji i administrowania.
 
-    > [!NOTE]
-    > Rola administratora globalnego usługi Azure Rights Management i roli administratora łącznika usługi Azure Rights Management jest przypisana do kont za pomocą polecenia cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) usługi Azure RMS.
-    > 
-    > Aby uruchomić łącznik usługi RMS z najmniejszymi uprawnieniami, utwórz w tym celu dedykowane konto, dla którego zostanie następnie przypisana rola administratora łącznika usługi Azure RMS w następujący sposób:
-    >
-    > 1.  Jeśli jeszcze nie zostało to zrobione, pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
-    >
-    >     Uruchom program Windows PowerShell za pomocą polecenia **Uruchom jako administrator** i połącz się z usługą Azure RMS za pomocą polecenia [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
-    >
-    >     ```
-    >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
-    >     ```
-    > 2.  Następnie uruchom polecenie [AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) przy użyciu tylko jednego z następujących parametrów:
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
-    >     ```
-    >
-    >     ```
-    >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
-    >     ```
-    >     Na przykład wpisz: **Dodaj AadrmRoleBasedAdministrator - EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
-    >
-    >     Mimo że te polecenia przypisują rolę ConnectorAdministrator, można w tym miejscu użyć również roli GlobalAdministrator.
+  > [!NOTE]
+  > Rola administratora globalnego usługi Azure Rights Management i roli administratora łącznika usługi Azure Rights Management jest przypisana do kont za pomocą polecenia cmdlet [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) usługi Azure RMS.
+  > 
+  > Aby uruchomić łącznik usługi RMS z najmniejszymi uprawnieniami, utwórz w tym celu dedykowane konto, dla którego zostanie następnie przypisana rola administratora łącznika usługi Azure RMS w następujący sposób:
+  > 
+  > 1. Jeśli jeszcze nie zostało to zrobione, pobierz i zainstaluj środowisko Windows PowerShell dla usług Rights Management. Aby uzyskać więcej informacji, zobacz [Instalowanie modułu AADRM programu PowerShell](install-powershell.md).
+  > 
+  >    Uruchom program Windows PowerShell za pomocą polecenia **Uruchom jako administrator** i połącz się z usługą Azure RMS za pomocą polecenia [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice):
+  > 
+  >    ```
+  >    Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
+  >    ```
+  > 2. Następnie uruchom polecenie [AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) przy użyciu tylko jednego z następujących parametrów:
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -ObjectId <object id> -Role "ConnectorAdministrator"
+  >    ```
+  > 
+  >    ```
+  >    Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
+  >    ```
+  >    Na przykład wpisz: **Dodaj AadrmRoleBasedAdministrator - EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
+  > 
+  >    Mimo że te polecenia przypisują rolę ConnectorAdministrator, można w tym miejscu użyć również roli GlobalAdministrator.
 
 W procesie instalacji łącznika usługi RMS weryfikowane i instalowane jest całe wstępnie wymagane oprogramowanie, instalowana jest usługa Internet Information Services (IIS), jeśli nie została zainstalowana wcześniej, oraz instalowane i konfigurowane jest oprogramowanie łącznika. Ponadto usługa Azure RMS zostaje przygotowana do konfiguracji poprzez utworzenie następujących obiektów:
 
@@ -178,7 +178,7 @@ Po utworzeniu nazwy w systemie DNS i skonfigurowaniu jej dla adresu IP należy s
 
 Aby skonfigurować klaster równoważenia obciążenia sieciowego, użyj następujących ustawień:
 
--   Porty: 80 (dla protokołu HTTP) lub 443 (dla protokołu HTTPS)
+-   Ports: 80 (dla protokołu HTTP) lub 443 (dla protokołu HTTPS)
 
     Aby uzyskać więcej informacji na temat użycia protokołu HTTP lub HTTPS, zobacz następną sekcję.
 

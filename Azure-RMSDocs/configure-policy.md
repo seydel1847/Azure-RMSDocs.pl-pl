@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6afbf2e95f6e9d21d1bfa9c4c05df288accf716d
-ms.sourcegitcommit: f13c6db055c1fc69cf92e47609465270a42bbdac
+ms.openlocfilehash: 3085799d9cb8da168c68a1a2eea04528daeb7737
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54085079"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394045"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Konfigurowanie zasad usługi Azure Information Protection
 
@@ -33,7 +33,7 @@ Zasady zawierają ustawienia i etykiety:
 
 Usługa Azure Information Protection obsługuje różne poziomy subskrypcji:
 
-- Usługa Azure Information Protection P2: Obsługa wszystkich funkcji klasyfikacji, etykietowania i ochrony.
+- Azure Information Protection P2: Obsługa wszystkich funkcji klasyfikacji, etykietowania i ochrony.
 
 - Subskrypcja P1 usługi Azure Information Protection: Obsługa większości funkcji klasyfikacji, etykietowania i ochrony, ale nie automatycznej klasyfikacji lub funkcji HYOK.
 
@@ -57,11 +57,11 @@ Aby zalogować się do witryny Azure portal, aby skonfigurować i zarządzać us
 
 - Użyj konta, które ma jedną z następujących [ról administratora](/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
     
-    - **Administrator usługi Information Protection**
+  - **Administrator usługi Information Protection**
 
-    - **Administrator zabezpieczeń**
+  - **Administrator zabezpieczeń**
 
-    - **Administrator globalny / Administrator firmy**
+  - **Administrator globalny / Administrator firmy**
     
     > [!NOTE] 
     > Jeśli Twoja Dzierżawa została zmigrowana do ujednoliconego sklepu etykietowania, zarządzanie etykiet w witrynie Azure portal, Twoje konto także uprawnienia do dostępu do Centrum zgodności i zabezpieczeń usługi Office 365. [Więcej informacji](configure-policy-migrate-labels.md#important-information-about-administrative-roles)

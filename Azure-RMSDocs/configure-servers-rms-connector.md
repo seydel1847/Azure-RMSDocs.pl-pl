@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 606ca10f04ad9fa21d90fdf4bfcbc368db6febb1
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 9feca10b2e3fb259dbee70d9a84dd709f8d8deff
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305628"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393554"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Konfigurowanie serwerów na potrzeby łącznika Azure Rights Management
 
@@ -155,19 +155,19 @@ Jeśli na serwerach Exchange działa wcześniejsza wersja systemu operacyjnego, 
 
 1. Upewnij się, że serwery Exchange są autoryzowane do używania łącznika usługi RMS za pomocą narzędzia administracyjnego łącznika usługi RMS i informacji z tematu [Autoryzowanie serwerów do korzystania z łącznika usługi RMS](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector). Ta konfiguracja jest wymagana, aby program Exchange mógł korzystać z łącznika usługi RMS.
 
-2.  Na rolach serwera programu Exchange, które komunikują się z łącznikiem usług RMS wykonaj jedną z następujących czynności:
+2. Na rolach serwera programu Exchange, które komunikują się z łącznikiem usług RMS wykonaj jedną z następujących czynności:
 
-    -   Uruchom narzędzie do konfiguracji serwera dla łącznika usługi Microsoft RMS. Aby uzyskać więcej informacji, zobacz temat [Sposób użycia narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector) w tym artykule.
+   -   Uruchom narzędzie do konfiguracji serwera dla łącznika usługi Microsoft RMS. Aby uzyskać więcej informacji, zobacz temat [Sposób użycia narzędzia do konfiguracji serwera dla łącznika usługi Microsoft RMS](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector) w tym artykule.
 
-        Na przykład, aby uruchomić narzędzie lokalnie w celu skonfigurowania serwera z programem Exchange 2016 lub Exchange 2013:
+       Na przykład, aby uruchomić narzędzie lokalnie w celu skonfigurowania serwera z programem Exchange 2016 lub Exchange 2013:
 
-        ```
-        .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetExchange2013
-        ```
+       ```
+       .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetExchange2013
+       ```
 
-    -   Dokonaj edycji rejestru ręcznie przy użyciu informacji w temacie [Ustawienia rejestru dla łącznika usługi RMS](rms-connector-registry-settings.md), aby ręcznie dodać ustawienia rejestru na serwerach. 
+   -   Dokonaj edycji rejestru ręcznie przy użyciu informacji w temacie [Ustawienia rejestru dla łącznika usługi RMS](rms-connector-registry-settings.md), aby ręcznie dodać ustawienia rejestru na serwerach. 
 
-3. Włączanie funkcji IRM dla programu Exchange przez [Włączanie funkcji IRM dla wiadomości wewnętrznych] (https://technet.microsoft.com/library/bb124077(v=exchg.150\).aspx#Anchor_1).
+3. Włączanie funkcji IRM dla programu Exchange przez [Włączanie funkcji IRM dla wiadomości wewnętrznych](https://technet.microsoft.com/library/bb124077(v=exchg.150).aspx#Anchor_1).
 
     > [!NOTE]
     > Domyślnie po uruchomieniu polecenia **Set-IRMConfiguration-InternalLicensingEnabled $true** usługa IRM jest automatycznie włączona dla programu Outlook Web App i urządzeń przenośnych, a nie tylko dla skrzynek pocztowych. Jednak administratorzy mogą wyłączyć usługę IRM na różnych poziomach, na przykład dla roli Serwer dostępu klienta, katalogu wirtualnego programu Outlook Web App lub zasady skrzynek pocztowych programu Outlook Web App, a także zasady skrzynki pocztowej urządzenia przenośnego. Jeśli użytkownicy nie widzą żadnych szablonów usługi Azure RMS w programie Outlook Web App (po odczekaniu dnia) lub na urządzeniach przenośnych, a szablony są już widoczne w kliencie programu Outlook, sprawdź odpowiednie ustawienia, aby upewnić się, że usługa IRM nie została wyłączona. Aby uzyskać więcej informacji, zobacz temat opisujący [włączanie lub wyłączanie Zarządzania prawami do informacji na Serwerach dostępu klienta](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx) w dokumentacji programu Exchange. 

@@ -12,22 +12,23 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d495abaec5bd32eb7082e8c1774011f9b765448b
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: a8c1917d8a73fd31020f06fec1d69bdd93d572ff
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54070242"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393805"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>Instrukcje: umożliwianie współdziałania aplikacji usługi z usługą RMS opartą na chmurze
 
 W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z usługi Azure Rights Management. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx).
 
-**Ważne**    aby można było używać aplikacji usługi Rights Management Services SDK 2.1 z usługą Azure RMS, konieczne będzie utworzenie własnych dzierżaw. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure RMS: Subskrypcje w chmurze, które obsługują usługę Azure RMS](../requirements.md)
+**Ważne**  
+Aby móc użyć aplikacji usługi zestawu Rights Management Services SDK 2.1 z usługą Azure RMS, musisz utworzyć własne dzierżawy. Aby uzyskać więcej informacji, zobacz [wymagania dotyczące usługi Azure RMS: Subskrypcje w chmurze, które obsługują usługę Azure RMS](../requirements.md)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
--   Zestaw RMS SDK 2.1 muszą być zainstalowane i skonfigurowane. Aby uzyskać więcej informacji, zobacz [rozpoczęcie korzystania z zestawu RMS SDK 2.1](getting-started-with-ad-rms-2-0.md).
+-   Należy zainstalować i skonfigurować zestaw SDK usług RMS 2.1. Aby uzyskać więcej informacji, zobacz [Rozpoczynanie pracy z zestawem SDK usług RMS 2.1](getting-started-with-ad-rms-2-0.md).
 -   Musisz [utworzyć tożsamość usługi przez ACS](https://msdn.microsoft.com/library/gg185924.aspx) przy użyciu opcji klucza symetrycznego lub innej metody oraz zarejestrować dane klucza z tego procesu.
 
 ## <a name="connecting-to-the-azure-rights-management-service"></a>Łączenie z usługą Azure Rights Management
@@ -40,9 +41,9 @@ W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z us
         IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
-  **Uwaga**  Aby uzyskać więcej informacji, zobacz [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
+  **Uwaga** Aby uzyskać więcej informacji, zobacz [Ustawianie trybu zabezpieczeń interfejsu API](setting-the-api-security-mode-api-mode.md)
 
-     
+
 -   Poniższe kroki to etapy konfiguracji tworzenia wystąpienia struktury [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) z elementem *pcCredential* ([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) wypełnionym informacjami na temat połączenia z usługą Azure Rights Management.
 -   Użyj informacji z procedury tworzenia tożsamości usługi klucza symetrycznego (zobacz wymagania wstępne wymienione we wcześniejszej części tego tematu), aby ustawić parametry *wszServicePrincipal*, *wszBposTenantId* i *cbKey* podczas tworzenia wystąpienia struktury [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx).
 
@@ -55,7 +56,7 @@ W tym temacie opisano kroki konfigurowania aplikacji usługi do korzystania z us
 -   Zainstaluj [Asystenta logowania w witrynie Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   Zainstaluj [moduł PowerShell usługi Azure AD](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi).
 
-**Uwaga** -musi być administratorem dzierżawy za pomocą poleceń cmdlet programu Powershell.
+**Uwaga**: Tylko administrator dzierżawy może korzystać z poleceń cmdlet modułu Powershell.
 
 - Uruchom program Powershell i uruchom następujące polecenia, aby wygenerować klucz
 
@@ -103,7 +104,7 @@ Aby uzyskać więcej informacji, zobacz [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https:
 
 -   Utwórz wystąpienie struktury [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) zawierające wystąpienie [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx).
 
-**Uwaga** — *connectionInfo* elementy członkowskie są konfigurowane przy użyciu adresów URL z poprzedniego wywołania `Get-AadrmConfiguration` i oznaczane w tym miejscu przy użyciu tych nazw pól.
+**Uwaga**: Elementy członkowskie *connectionInfo* są konfigurowane przy użyciu adresów URL z poprzedniego wywołania elementu `Get-AadrmConfiguration` i oznaczane w tym miejscu przy użyciu tych nazw pól.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -132,9 +133,17 @@ Aby uzyskać więcej informacji, zobacz [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https:
     Wywołaj element [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx), przekazując to samo wystąpienie elementu [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx).
 
 
-    PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
+~~~
+PCIPC_TIL pTemplates = NULL;
+IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
 
-    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
+hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),
+       IPC_GTL_FLAG_FORCE_DOWNLOAD,
+       0,
+       &promptCtx,
+       NULL,
+       &pTemplates);
+~~~
 
 
 -   Przy użyciu szablonu z wcześniejszej części tego tematu wywołaj element [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx), przekazując to samo wystąpienie elementu [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx).
@@ -163,7 +172,7 @@ Ukończono kroki niezbędne do włączenia obsługi usługi Azure Rights Managem
 ## <a name="related-topics"></a>Tematy pokrewne
 
 * [Rozpoczynanie pracy z usługą Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx)
-* [Wprowadzenie do zestawu RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
+* [Rozpoczynanie pracy z zestawem SDK 2.1 usługi RMS](getting-started-with-ad-rms-2-0.md)
 * [Tworzenie tożsamości usługi za pośrednictwem usługi ACS](https://msdn.microsoft.com/library/gg185924.aspx)
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
 * [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)

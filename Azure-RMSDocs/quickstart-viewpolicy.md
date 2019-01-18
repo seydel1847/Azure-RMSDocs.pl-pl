@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 12/15/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: c890d6acf2557093441a175bc8ed8657e8d1d9da
-ms.sourcegitcommit: bc082cffaa698b89b28aef7034290553c26f667b
+ms.openlocfilehash: 91a9a124c53d7c8f1aab31213595a8fc2f3627dd
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53411817"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393980"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>Szybki start: Rozpoczynanie pracy z usługą Azure Information Protection w witrynie Azure portal
 
@@ -75,11 +75,11 @@ Przy pierwszym nawiązaniu połączenia z usługą Azure Information Protection 
     
 2. Poświęć kilka minut, o których zapoznawanie się z etykiet, które są wyświetlane:
     
-    - Etykiety klasyfikacji: **Osobiste**, **publicznych**, **ogólne**, **poufne**, i **wysoce poufne**. Dwie ostatnie etykiety rozszerzyć, aby wyświetlić etykiet podrzędnych, które zawierają przykłady klasyfikacji można podkategorie:
+   - Etykiety klasyfikacji: **Osobiste**, **publicznych**, **ogólne**, **poufne**, i **wysoce poufne**. Dwie ostatnie etykiety rozszerzyć, aby wyświetlić etykiet podrzędnych, które zawierają przykłady klasyfikacji można podkategorie:
     
-    - W przypadku domyślnej konfiguracji niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od zasady domyślne niektóre etykiety może być również ma ustawionej ochrony. Przykład: 
+   - W przypadku domyślnej konfiguracji niektóre etykiety nie mają skonfigurowane oznaczenia wizualne. Znaczniki wizualne są stopka, nagłówek i znak wodny. W zależności od zasady domyślne niektóre etykiety może być również ma ustawionej ochrony. Przykład: 
     
-    ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](./media/info-protect-policy-default-labelsv2.png)
+     ![Samouczek Szybki start dla usługi Azure Information Protection, krok 3 — zasada domyślna](./media/info-protect-policy-default-labelsv2.png)
     
 3. Po etykietach w **Konfiguruj ustawienia wyświetlania i Zastosuj Information Protection, użytkownicy końcowi** sekcji Zobacz też niektóre ustawienia zasad. Na przykład nie jest domyślne etykiety, dokumentów i wiadomości e-mail nie muszą mieć etykietę i użytkownicy nie muszą uzasadniać zmiany etykiet:
     

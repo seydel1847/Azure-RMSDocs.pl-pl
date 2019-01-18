@@ -4,18 +4,18 @@ description: Instrukcje i informacje dla administratorów sieci przedsiębiorstw
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/18/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e66ad53b23a76a263d4ec74e184597db12fdaa9d
-ms.sourcegitcommit: 8deca8163a6adea73f28aaf300a958154f842e4a
+ms.openlocfilehash: 1ece9ab39045d1bb6f1388a33784a733618dd0d4
+ms.sourcegitcommit: 24c464bcb80db2d193cfd17ea8c264a327dcf54a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210502"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54366210"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Podręcznik administratora klienta usługi Azure Information Protection
 
@@ -198,11 +198,69 @@ Użyj [zasady historii i pomoc techniczna wydania wersji](client-version-release
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Uaktualnianie skanera usługi Azure Information Protection
 
+Jak uaktualnić skaner zależy od tego, czy w przypadku uaktualniania do bieżącej wersji ogólnie dostępnej wersji lub do bieżącej wersji zapoznawczej.
+
+#### <a name="to-upgrade-the-scanner-to-the-current-ga-version"></a>Aby uaktualnić skaner do bieżącej wersji Ogólnodostępnej
+
 Aby uaktualnić skanera usługi Azure Information Protection, należy zainstalować najnowszą wersję klienta usługi Azure Information Protection. Następnie wykonaj następujące Akcja jednorazowa. Po wykonaniu, nie ma potrzeby ponownego skanowania już skanowanych plików.
 
 - Uruchom [AIPScanner aktualizacji](/powershell/module/azureinformationprotection/Update-AIPScanner) po uaktualnieniu klienta usługi Azure Information Protection. Ustawienia konfiguracji dla repozytoriów i skaner zostaną zachowane. Uruchomienie tego polecenia cmdlet są wymagane do aktualizacji schematu bazy danych dla skanera i jeśli to wymagane, konto usługi skanera ma również przyznane usuwanie uprawnień do bazy danych skanera. 
     
     Uruchom to polecenie cmdlet update, nie można uruchomić skanera i zostanie wyświetlony identyfikator zdarzenia przeważnie **1000** w dzienniku zdarzeń Windows za pomocą następujący komunikat o błędzie: **Nieprawidłowa nazwa obiektu "ScannerStatus"**.
+
+#### <a name="to-upgrade-the-scanner-to-the-current-preview-version"></a>Aby uaktualnić skaner do bieżącej wersji zapoznawczej
+
+> [!IMPORTANT]
+> Bezproblemowe ścieżki uaktualnienia nie należy instalować wersji zapoznawczej klienta usługi Azure Information Protection na komputerze z uruchomionym skaner pierwszym krokiem do uaktualnienia skanera. Zamiast tego należy użyć poniższych instrukcji uaktualniania.
+
+Dla bieżącej wersji zapoznawczej skaner proces uaktualniania różni się od poprzednich wersji. Uaktualnianie skanera automatycznie zmienia skaner do jego ustawienia konfiguracji są pobierane z witryny Azure portal. Ponadto schemat został zaktualizowany w bazie danych konfiguracji skanera, a także zmienić nazwy tej bazy danych z AzInfoProtection:
+
+- Jeśli nie określisz nazwy profilu, zmianie nazwy bazy danych konfiguracji **AIPScanner_\<nazwa_komputera >**. 
+
+- Jeśli określisz nazwę profilu, zmianie nazwy bazy danych konfiguracji **AIPScanner_\<nazwa_profilu >**.
+
+Chociaż istnieje możliwość uaktualnienia skanera w innej kolejności, zaleca się następujące czynności:
+
+1. Użyj witryny Azure portal, aby utworzyć nowy profil skanera, który zawiera ustawienia skaner i repozytoriów danych za pomocą ustawienia, które są im niezbędne. Aby uzyskać pomoc dotyczącą tego kroku, zobacz [skonfigurować skaner w witrynie Azure portal](../deploy-aip-scanner-preview.md#configure-the-scanner-in-the-azure-portal) sekcji z instrukcjami wdrażania skaner (wersja zapoznawcza).
+    
+    Jeśli komputer z uruchomionym skaner jest odłączony od Internetu, należy nadal wykonać ten krok. Następnie w witrynie Azure portal, należy użyć **wyeksportować** opcję, aby wyeksportować profil skanera do pliku.
+
+2. Na komputerze skanera Zatrzymaj usługę skanera **skaner ochrony informacji Azure**.
+
+3. Uaktualnienie klienta usługi Azure Information Protection, instalując bieżącej wersji zapoznawczej z [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+
+4. W sesji programu PowerShell Uruchom polecenie Update-AIPScanner o takiej samej nazwie profilu, który określono w kroku 1. Na przykład: `Update-AIPScanner –Profile USWest`
+
+5. Tylko wtedy, gdy skaner jest uruchomiona na rozłączonym komputerze: Teraz uruchom [AIPScannerConfiguration importu](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration) i określ plik zawierający ustawienia wyeksportowane.
+
+6. Uruchom ponownie usługę skaner ochrony informacji Azure **skaner ochrony informacji Azure**.
+
+##### <a name="upgrading-in-a-different-order-to-the-recommended-steps"></a>Uaktualnienie w innej kolejności zalecane czynności
+
+Jeśli nie skonfigurujesz skanera w witrynie Azure portal, przed uruchomieniem polecenia AIPScanner aktualizacji, nie będziesz mieć nazwę profilu do określenia, które identyfikują ustawienia konfiguracji skanera procesu uaktualniania. 
+
+W tym scenariuszu po skonfigurowaniu skanera w witrynie Azure portal musi określić dokładnie takiej samej nazwie profilu, który został użyty po uruchomieniu polecenia AIPScanner aktualizacji. Jeśli nazwa nie jest zgodny, skaner nie zostanie skonfigurowany dla ustawień. 
+
+> [!TIP]
+> Aby zidentyfikować skanerów, które mają ten błąd konfiguracji, należy użyć **usługi Azure Information Protection — węzły** bloku w witrynie Azure portal.
+>  
+> Skanerów, które mają łączność z Internetem są wyświetlane nazwy komputera, z numerem wersji w wersji zapoznawczej klienta usługi Azure Information Protection, ale brak nazwy profilu. Tylko skanerów, które mają numer wersji 1.41.51.0 Nazwa profilu nie powinien być wyświetlany w tym bloku. 
+
+Jeśli nie określono nazwy profilu, po uruchomieniu polecenia Update-AIPScanner, nazwa komputera służy do automatycznego tworzenia nazwy profilu skanera.
+
+#### <a name="moving-the-scanner-configuration-database-to-a-different-sql-server-instance"></a>Przenoszenie bazy danych konfiguracji skanera do innego wystąpienia programu SQL Server
+
+W bieżącej wersji zapoznawczej jest to znany problem, spróbuj przenieść bazę danych konfiguracji skanera do nowego wystąpienia programu SQL Server, po uruchomieniu polecenia uaktualnienia.
+
+Jeśli wiesz, czy chcesz, aby przenieść bazę danych konfiguracji skanera w wersji zapoznawczej, wykonaj następujące czynności:
+
+1. Odinstaluj skaner za pomocą [AIPScanner Odinstaluj](/powershell/module/azureinformationprotection/Uninstall-AIPScanner).
+
+2. Jeśli jeszcze nie został jeszcze uaktualniony do wersji zapoznawczej klienta usługi Azure Information Protection, teraz uaktualnienia klienta.
+
+3. Zainstaluj skaner, używając [AIPScanner instalacji](/powershell/module/azureinformationprotection/Install-AIPScanner), określając nowe wystąpienie programu SQL Server i nazwę profilu.
+
+4. Opcjonalnie: Jeśli nie chcesz skanera ponownego skanowania wszystkich plików, eksportowanie tabeli ScannerFiles i zaimportować go do nowej bazy danych.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Odinstalowywanie klienta usługi Azure Information Protection
 

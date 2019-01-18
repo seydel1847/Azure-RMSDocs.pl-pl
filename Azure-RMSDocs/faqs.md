@@ -4,18 +4,18 @@ description: Niektóre często zadawane pytania dotyczące usługi Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/05/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 393cac6703016235359e0eb2812b31c585d4b524
-ms.sourcegitcommit: b2619c522298eaee3bd0067f2827e80fa9d4bfc2
+ms.openlocfilehash: ef9836a6e3b651986642d2c93128ea0f6b1e6112
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060318"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314853"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Często zadawane pytania dotyczące usługi Azure Information Protection
 
@@ -144,7 +144,7 @@ Teraz zalecane jest użycie [skanera usługi Azure Information Protection](deplo
 
 Główne różnice między te dwa rozwiązania:
 
-|System Windows Server infrastruktury klasyfikacji plików|Skaner usługi Azure Information Protection|
+|Windows Server FCI|Skaner usługi Azure Information Protection|
 |--------------------------------|-------------------------------------|
 |Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server|Obsługiwane magazyny danych: <br /><br />— Foldery lokalne w systemie Windows Server<br /><br />-Windows plików, udziały i Magazyn dołączony do sieci<br /><br />— Program SharePoint Server 2016 i SharePoint Server 2013. Program SharePoint Server 2010 jest również obsługiwana dla klientów, którzy mają [rozszerzoną obsługę w tej wersji programu SharePoint](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010).|
 |Tryb działania: <br /><br />-Czasu rzeczywistego|Tryb działania: <br /><br />-Systematycznie przeszukuje magazynów danych i tego cyklu można uruchomić pojedynczego lub wielokrotnego|
@@ -154,7 +154,7 @@ Obecnie ma różnicy w ustawieniu [właściciela usługi Rights Management](conf
 
 - Dla infrastruktury klasyfikacji plików systemu Windows Server: Ustaw właściciela usługi Rights Management do jednego konta dla wszystkich plików lub dynamicznie określać właściciela usługi Rights Management dla każdego pliku. Aby dynamicznie ustawić właściciela usługi Rights Management, należy użyć **- OwnerMail [E-mail właściciela pliku źródłowego]** parametru i wartości. Ta konfiguracja pobiera adres e-mail użytkownika z usługi Active Directory przy użyciu nazwy konta użytkownika w pliku właściwości właściciela.
 
-- Skanera usługi Azure Information Protection: W przypadku nowo chronionej plików można ustawić właściciela usługi Rights Management do jednego konta dla wszystkich plików na określony magazyn danych, ale nie można dynamicznie ustawić właściciela usługi Rights Management dla każdego pliku. Właściciel usługi Rights Management nie jest zmieniany chronionych wcześniej plików. Aby ustawić konto, należy określić **- DefaultOwner** parametr [profilu repozytorium danych](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters).
+- Skanera usługi Azure Information Protection: W przypadku nowo chronionej plików można ustawić właściciela usługi Rights Management do jednego konta dla wszystkich plików na określony magazyn danych, ale nie można dynamicznie ustawić właściciela usługi Rights Management dla każdego pliku. Właściciel usługi Rights Management nie jest zmieniany chronionych wcześniej plików. Aby ustawić konto nowo chronionych plików, należy określić **-domyślnym właścicielem** ustawienia w profilu skanera. 
 
 Gdy skaner chroni pliki witryn programu SharePoint i bibliotek, właściciel usługi Rights Management dynamicznie ustawiono dla każdego pliku przy użyciu wartości edytora programu SharePoint.
 

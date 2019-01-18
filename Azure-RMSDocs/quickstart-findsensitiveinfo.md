@@ -4,19 +4,21 @@ description: Użyj skanera usługi Azure Information Protection, aby znaleźć j
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 01/16/2019
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 050c56887b83f0badf692bf2ee3b4616ad5b8bf4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 12bde16a9b1659d00137720ad7c804db32cb1556
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024233"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314836"
 ---
-# <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>Szybki Start: Znajdź jakie poufne informacje, które masz w plików przechowywanych w środowisku lokalnym
+# <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>Szybki start: Znajdź jakie poufne informacje, które masz w plików przechowywanych w środowisku lokalnym
 
-W tym przewodniku Szybki Start będziesz zainstalowaniu i skonfigurowaniu skanera usługi Azure Information Protection można znaleźć w informacjach poufnych masz w plikach, które są przechowywane w magazynie danych w środowisku lokalnym. Na przykład folderu lokalnego, udziału sieciowego lub SharePoint Server. 
+W tym przewodniku Szybki Start będziesz zainstalowaniu i skonfigurowaniu skanera usługi Azure Information Protection można znaleźć w informacjach poufnych masz w plikach, które są przechowywane w magazynie danych w środowisku lokalnym. Na przykład folderu lokalnego, udziału sieciowego lub SharePoint Server.
+
+Uwaga: Ten przewodnik Szybki Start korzysta z bieżącej wersji ogólnodostępnej skanera i nie wersji (wersja zapoznawcza), która korzysta z witryny Azure portal dla konfiguracji.
 
 Aby zakończyć tę konfigurację w mniej niż 10 minut.
 
@@ -135,7 +137,7 @@ To polecenie nie powoduje usunięcia następujące elementy i należy ręcznie j
 - **Zaloguj się jako usługa** przypisania prawa użytkownika, przyznanej konta domeny dla komputera lokalnego.
 
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 Ten przewodnik Szybki Start zawiera minimalnej konfiguracji, dzięki czemu można szybko sprawdzić, jak znaleźć poufnych informacji w udziale sieciowym skanera. Jeśli jesteś gotowy do zainstalowania skanera w środowisku produkcyjnym, zobacz [wdrażanie skanera usługi Azure Information Protection do automatycznego klasyfikowania i ochrony plików](deploy-aip-scanner.md).
 

@@ -12,12 +12,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 8132fd2afba45402f8f9c835f2d6db69dd8e81f2
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 695251277b62d44166e7a4569881b804db34279e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071204"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394247"
 ---
 # <a name="release-notes"></a>Informacje o wersji
 
@@ -37,9 +37,9 @@ Ten artykuł zawiera ważne informacje o bieżącej i poprzednich wersjach zesta
 
 - **Aktualizacja do biblioteki ADAL** — aktualizacja aplikacji umożliwiająca użycie uwierzytelniania ADAL zamiast asystenta logowania usługi online firmy Microsoft zapewnia następujące możliwości:
 
- - Korzystanie z uwierzytelniania wieloskładnikowego
- - Instalowanie klienta usługi RMS 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
- - Certyfikowanie aplikacji dla systemu Windows 10
+  - Korzystanie z uwierzytelniania wieloskładnikowego
+  - Instalowanie klienta usługi RMS 2.1 bez wymogu posiadania uprawnień administracyjnych na komputerze
+  - Certyfikowanie aplikacji dla systemu Windows 10
 
 - **Zakończenie świadczenia wsparcia dotyczącego asystenta logowania usługi online firmy Microsoft (SIA) z zestawem RMS SDK.** Firma Microsoft będzie obsługiwać korzystania z usługi SIA przez sześć miesięcy, po upływie których wsparcie zostanie zakończone.
 
@@ -124,7 +124,7 @@ Składnik interfejsu API plików zestawu SDK zostały rozszerzone i oferuje nast
 
     **Uwaga**  od kwietnia 2015 r. dodano test procesu instalacji tej bazy wiedzy.
 
-     
+     
 
 -   **Integracja specyfikacji File API**
 
@@ -136,7 +136,7 @@ Składnik interfejsu API plików zestawu SDK zostały rozszerzone i oferuje nast
 
       - Wszystkie pliki, z wyjątkiem plików systemowych i plików pakietu Office, mogą być chronione przy użyciu formatu pliku chronionego usługi RMS (PFile).
 
-    Interfejs API plików jest implementowany za pośrednictwem następujących czterech nowych funkcji: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx), i [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
+    Interfejs API plików jest implementowany za pośrednictwem następujących czterech nowych funkcji: [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx), and [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx).
 
     Interfejs API plików wymaga zainstalowania klienta Rights Management Service Client 2.1 na komputerze klienckim i połączenia komputera z serwerem usługi RMS. Aby uzyskać więcej informacji na temat serwera usługi RMS, klienta usługi RMS i ich funkcji, zobacz zawartość TechNet w [dokumentacji usługi RMS dla informatyków](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx).
 

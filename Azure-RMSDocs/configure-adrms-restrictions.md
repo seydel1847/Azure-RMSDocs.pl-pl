@@ -8,12 +8,12 @@ ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: de278dbb9fd9f051c3a4e47ef719988df4706434
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: d1613d30dbb59395254ca5bd56222c15fcb75058
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305560"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54393569"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Przytrzymaj własne ochrony klucza (HYOK) dla usługi Azure Information Protection
 
@@ -72,11 +72,11 @@ W poniższej tabeli wymieniono obsługiwane scenariusze ochrony zawartości przy
 |Windows|Klient usługi Azure Information Protection przy użyciu programu PowerShell, poleceń cmdlet etykietowania|Ochrona: Tak<br /><br />Użycie: Tak|
 |Windows|Skaner usługi Azure Information Protection|Ochrona: Tak<br /><br />Użycie: Tak|
 |Windows|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: Tak|
-|Z systemem MacOS|Pakiet Office dla komputerów Mac <br /><br /> — Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
-|Z systemem MacOS|Pakiet Office dla komputerów Mac<br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Tak|
-|Z systemem MacOS|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: Tak|
+|MacOS|Pakiet Office dla komputerów Mac <br /><br /> — Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
+|MacOS|Pakiet Office dla komputerów Mac<br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Tak|
+|MacOS|Aplikacja do udostępniania usługi Rights Management|Ochrona: Nie<br /><br />Użycie: Tak|
 |iOS|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
-|iOS|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Nie|
+|iOS|Office Mobile <br /><br />-Outlook|Ochrona: Nie<br /><br />Użycie: Nie|
 |iOS|Przeglądarka usługi Azure Information Protection|Ochrona: Nie dotyczy<br /><br />Użycie: Tak|
 |Android|Office Mobile <br /><br />— Word, Excel, PowerPoint|Ochrona: Nie<br /><br />Użycie: Tak|
 |Android|Office Mobile <br /><br />-Programu outlook|Ochrona: Nie<br /><br />Użycie: Nie|
@@ -114,35 +114,35 @@ Wdrożenie usług AD RMS muszą spełniać poniższe wymagania, aby zapewnić oc
 
 - Konfiguracja usług AD RMS:
     
-    - Minimalną wersję systemu Windows Server 2012 R2: Wymagane w środowiskach produkcyjnych, lecz do celów testowania lub ewaluacji, można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
+  - Minimalną wersję systemu Windows Server 2012 R2: Wymagane w środowiskach produkcyjnych, lecz do celów testowania lub ewaluacji, można użyć minimalnej wersji systemu Windows Server 2008 R2 z dodatkiem Service Pack 1.
     
-    - Jeden z następujących topologii:
+  - Jeden z następujących topologii:
         
-        - Pojedynczy las z jeden klaster główny usług AD RMS. 
+    - Pojedynczy las z jeden klaster główny usług AD RMS. 
         
-        - Wiele lasów z niezależnych klastrów głównego usług AD RMS i użytkownicy nie mają dostępu do zawartości, która jest chroniona przez użytkowników w innych lasach.
+    - Wiele lasów z niezależnych klastrów głównego usług AD RMS i użytkownicy nie mają dostępu do zawartości, która jest chroniona przez użytkowników w innych lasach.
         
-        - Klastry wielu lasów z usługami AD RMS w każdym z nich. Każdy klaster usług AD RMS udostępnia adres URL licencjonowania, który wskazuje na tym samym klastrze usług AD RMS. W tym klastrze usług AD RMS, należy zaimportować wszystkie certyfikaty zaufanego użytkownika domeny (TUD) ze wszystkich innych klastrów usług AD RMS. Aby uzyskać więcej informacji na temat tej topologii, zobacz [zaufanej domeny użytkownika] (https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx).
+    - Klastry wielu lasów z usługami AD RMS w każdym z nich. Każdy klaster usług AD RMS udostępnia adres URL licencjonowania, który wskazuje na tym samym klastrze usług AD RMS. W tym klastrze usług AD RMS, należy zaimportować wszystkie certyfikaty zaufanego użytkownika domeny (TUD) ze wszystkich innych klastrów usług AD RMS. Aby uzyskać więcej informacji na temat tej topologii, zobacz [zaufanej domeny użytkownika](https://technet.microsoft.com/library/dd983944(v=ws.10).aspx).
         
     Jeśli masz wiele klastrów AD RMS w oddzielnym lesie, należy usunąć wszystkich etykiet, w ramach globalnych zasad, które zabezpieczać HYOK (AD RMS) i skonfiguruj [zasad o określonym zakresie](configure-policy-scope.md) dla każdego klastra. Następnie Przypisz użytkowników dla każdego klastra, do ich zasad o określonym zakresie, upewniając się, że nie należy używać grup, które mogłyby spowodować użytkownika są przypisane do więcej niż jedna zasada o określonym zakresie. Wynik powinien być, że każdy użytkownik ma etykiety dla jednego klastra usług AD RMS. 
     
-    - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): Tryb można potwierdzić, sprawdzając właściwości klastra AD RMS, **ogólne** kartę.
+  - [Tryb kryptograficzny 2](https://technet.microsoft.com/library/hh867439.aspx): Tryb można potwierdzić, sprawdzając właściwości klastra AD RMS, **ogólne** kartę.
     
-    - Każdy serwer usług AD RMS jest skonfigurowany jako adres URL certyfikacji. [Instrukcje](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+  - Każdy serwer usług AD RMS jest skonfigurowany jako adres URL certyfikacji. [Instrukcje](#configuring-ad-rms-servers-to-locate-the-certification-url) 
     
-    - Punkt połączenia usługi (SCP) nie jest zarejestrowany w usłudze Active Directory: Punkt połączenia usługi nie jest używany, korzystając z ochrony usług AD RMS za pomocą usługi Azure Information Protection. 
+  - Punkt połączenia usługi (SCP) nie jest zarejestrowany w usłudze Active Directory: Punkt połączenia usługi nie jest używany, korzystając z ochrony usług AD RMS za pomocą usługi Azure Information Protection. 
     
-        - Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](./rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się. 
+      - Jeśli masz zarejestrowany punkt połączenia usługi dla wdrożenia usług AD RMS, musisz go usunąć, aby [odnajdywanie usług](./rms-client/client-deployment-notes.md#rms-service-discovery) dla ochrony za pomocą usługi Azure Rights Management powiodło się. 
         
-        - Jeśli instalujesz nowy klaster AD RMS dla usługi HYOK, pomiń krok, aby zarejestrować punkt połączenia z usługą podczas konfiguracji pierwszego węzła. Dla każdego dodatkowego węzła upewnij się, że serwer jest skonfigurowany dla adresu URL certyfikacji przed Dodaj rolę usług AD RMS i Dołącz do istniejącego klastra.
+      - Jeśli instalujesz nowy klaster AD RMS dla usługi HYOK, pomiń krok, aby zarejestrować punkt połączenia z usługą podczas konfiguracji pierwszego węzła. Dla każdego dodatkowego węzła upewnij się, że serwer jest skonfigurowany dla adresu URL certyfikacji przed Dodaj rolę usług AD RMS i Dołącz do istniejącego klastra.
     
-    - Serwery usług AD RMS są skonfigurowane do używania protokołu SSL/TLS z ważnym certyfikatem x.509 jest zaufany przez klientów nawiązujących połączenie: Wymagane dla środowisk produkcyjnych, ale nie są wymagane do celów testowania lub ewaluacji.
+  - Serwery usług AD RMS są skonfigurowane do używania protokołu SSL/TLS z ważnym certyfikatem x.509 jest zaufany przez klientów nawiązujących połączenie: Wymagane dla środowisk produkcyjnych, ale nie są wymagane do celów testowania lub ewaluacji.
     
-    - Skonfigurowane szablony praw.
+  - Skonfigurowane szablony praw.
     
-    - Nie jest skonfigurowany dla usługi IRM programu Exchange.
+  - Nie jest skonfigurowany dla usługi IRM programu Exchange.
     
-    - Dla urządzeń przenośnych i komputerów Mac: [Active Directory Rights zarządzania rozszerzenia usług urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx) jest zainstalowany i skonfigurowany.
+  - Dla urządzeń przenośnych i komputerów Mac: [Active Directory Rights zarządzania rozszerzenia usług urządzeń przenośnych](https://technet.microsoft.com/library/dn673574.aspx) jest zainstalowany i skonfigurowany.
 
 - Skonfigurowano synchronizację katalogów między w lokalnej usłudze Active Directory i Azure Active Directory i użytkowników, którzy będą korzystać z ochrony HYOK skonfigurowanymi pod kątem logowania jednokrotnego.
 

@@ -4,18 +4,18 @@ description: Informacje i instrukcje dotyczące sposobu korzystania z rejestrowa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/15/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3d287df4fbea3f4b040444182aed89da7c470ea1
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: bf42c0309af481847e80b12cb161422b7cd18378
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305645"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394334"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Rejestrowanie i analizowanie użycia usługi Azure Rights Management
 
@@ -125,7 +125,7 @@ Każdy wpis w dzienniku ma sygnaturę czasową UTC. Ponieważ usługa Azure Righ
 ### <a name="the-blob-format"></a>Format obiektów blob
 Każdy obiekt blob jest w rozszerzonym formacie W3C dziennika. Rozpoczyna się od następujących dwóch wierszy:
 
-**#Software: USŁUGI RMS**
+**#Software: RMS**
 
 **#Version: 1.1**
 
@@ -137,26 +137,26 @@ Trzeci wiersz wylicza listę nazw pól rozdzielonych znakami tabulatora:
 
 Każdy z kolejnych wierszy jest rekordem dziennika. Wartości pól są zapisane w takiej samej kolejności, jak poprzedni wiersz, i są rozdzielone znakami tabulatora. Podczas interpretowania pól skorzystaj z poniższej tabeli.
 
-|Nazwa pola|Typ danych W3C|Opis|Przykładowa wartość|
-|--------------|-----------------|---------------|-----------------|
-|date|Data|Data obsługi żądania w formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|2013-06-25|
-|time|Godzina|Czas obsługi żądania w 24-godzinnym formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.|21:59:28|
-|row-id|Tekst|Unikatowy identyfikator GUID dla tego rekordu dziennika. Jeśli ta wartość nie została podana, użyj wartości correlation-id do zidentyfikowania wpisu.<br /><br />Ta wartość jest przydatna przy agregowaniu dzienników lub kopiowaniu dzienników do innego formatu.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
-|request-type|Name (Nazwa)|Nazwa żądanego interfejsu API usługi RMS.|AcquireLicense|
-|user-id|String|Użytkownik, który wysłał żądanie.<br /><br />Wartość jest ujęta w cudzysłów pojedynczy. Wywołania z klucza dzierżawy, który jest zarządzany przez użytkownika (BYOK), mają wartość **"**, która ma zastosowanie również w przypadku anonimowych typów żądań.|‘joe@contoso.com’|
-|result|String|‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.|'Success'|
-|correlation-id|Tekst|Identyfikator GUID, który jest wspólny dla dziennika klienta usługi RMS i dziennika serwera dotyczącego danego żądania.<br /><br />Ta wartość może być przydatna do rozwiązywania problemów klienta.|cab52088-8925-4371-be34-4b71a3112356|
-|content-id|Tekst|Identyfikator GUID ujęty w nawiasy klamrowe, który identyfikuje chronioną zawartość (na przykład dokument).<br /><br />To pole ma wartość tylko w przypadku typu żądania AcquireLicense w polu request-type. Dla wszystkich innych typów żądań to pole jest puste.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|String|Adres e-mail właściciela dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com|
-|issuer|String|Adres e-mail wystawcy dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|template-id|String|Identyfikator szablonu użytego do ochrony dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|String|Nazwa pliku chronionego dokumentu śledzonego za pomocą klienta usługi Azure Information Protection dla systemu Windows lub aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|TopSecretDocument.docx|
-|date-published|Date|Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.|2015-10-15T21:37:00|
-|c-info|String|Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
-|c-ip|Adres|Adres IP klienta, który wysłał żądanie.|64.51.202.144|
-|admin-action|Wartość logiczna|Czy administrator ma dostęp do witryny śledzenia dokumentów w trybie administratora.|Prawda|
-|acting-as-user|String|Adres e-mail użytkownika, dla którego administrator uzyskuje dostęp do witryny śledzenia dokumentów. |'joe@contoso.com'|
 
+|   Nazwa pola   | Typ danych W3C |                                                                                                                                                                          Opis                                                                                                                                                                          |                                                            Przykładowa wartość                                                            |
+|----------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+|      date      |     Data      |                                                                                                                     Data obsługi żądania w formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.                                                                                                                     |                                                             2013-06-25                                                              |
+|      time      |     Godzina      |                                                                                                            Czas obsługi żądania w 24-godzinnym formacie UTC.<br /><br />Źródłem jest zegar lokalny na serwerze, który obsłużył żądanie.                                                                                                            |                                                              21:59:28                                                               |
+|     row-id     |     Tekst      |                                                                           Unikatowy identyfikator GUID dla tego rekordu dziennika. Jeśli ta wartość nie została podana, użyj wartości correlation-id do zidentyfikowania wpisu.<br /><br />Ta wartość jest przydatna przy agregowaniu dzienników lub kopiowaniu dzienników do innego formatu.                                                                           |                                                1c3fe7a9-d9e0-4654-97b7-14fafa72ea63                                                 |
+|  request-type  |     Name (Nazwa)      |                                                                                                                                                            Nazwa żądanego interfejsu API usługi RMS.                                                                                                                                                            |                                                           AcquireLicense                                                            |
+|    user-id     |    String     |                                                               Użytkownik, który wysłał żądanie.<br /><br />Wartość jest ujęta w cudzysłów pojedynczy. Wywołania z klucza dzierżawy, który jest zarządzany przez użytkownika (BYOK), mają wartość **"**, która ma zastosowanie również w przypadku anonimowych typów żądań.                                                                |                                                          ‘joe@contoso.com’                                                          |
+|     result     |    String     |                                                                                                                  ‘Success’, jeśli żądanie zostało obsłużone pomyślnie.<br /><br />Typ błędu w cudzysłowie pojedynczym, jeśli żądanie zakończyło się niepowodzeniem.                                                                                                                   |                                                              'Success'                                                              |
+| correlation-id |     Tekst      |                                                                                                 Identyfikator GUID, który jest wspólny dla dziennika klienta usługi RMS i dziennika serwera dotyczącego danego żądania.<br /><br />Ta wartość może być przydatna do rozwiązywania problemów klienta.                                                                                                 |                                                cab52088-8925-4371-be34-4b71a3112356                                                 |
+|   content-id   |     Tekst      |                                                                      Identyfikator GUID ujęty w nawiasy klamrowe, który identyfikuje chronioną zawartość (na przykład dokument).<br /><br />To pole ma wartość tylko w przypadku typu żądania AcquireLicense w polu request-type. Dla wszystkich innych typów żądań to pole jest puste.                                                                       |                                               {bb4af47b-cfed-4719-831d-71b98191a4f2}                                                |
+|  owner-email   |    String     |                                                                                                                       Adres e-mail właściciela dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.                                                                                                                        |                                                          alice@contoso.com                                                          |
+|     issuer     |    String     |                                                                                                                          Adres e-mail wystawcy dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.                                                                                                                          |                       alice@contoso.com (lub) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'                       |
+|  template-id   |    String     |                                                                                                                    Identyfikator szablonu użytego do ochrony dokumentu. <br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.                                                                                                                     |                                               {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                |
+|   file-name    |    String     | Nazwa pliku chronionego dokumentu śledzonego za pomocą klienta usługi Azure Information Protection dla systemu Windows lub aplikacji do tworzenia i przetwarzania dokumentów chronionych usługami Rights Management dla systemu Windows. <br /><br />Obecnie dla niektórych plików (takich jak dokumenty pakietu Office) są wyświetlane identyfikatory GUID, a nie rzeczywiste nazwy plików.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess. |                                                       TopSecretDocument.docx                                                        |
+| date-published |     Date      |                                                                                                                          Data, w której włączono ochronę dokumentu.<br /><br /> To pole jest puste, jeśli typem żądania jest RevokeAccess.                                                                                                                           |                                                         2015-10-15T21:37:00                                                         |
+|     c-info     |    String     |                                                                                   Informacje o platformie klienta, z której wysłano żądanie.<br /><br />Określony ciąg znaków różni się w zależności od aplikacji (na przykład systemu operacyjnego lub przeglądarki).                                                                                   | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
+|      c-ip      |    Adres    |                                                                                                                                                       Adres IP klienta, który wysłał żądanie.                                                                                                                                                        |                                                            64.51.202.144                                                            |
+|  admin-action  |     Wartość logiczna      |                                                                                                                                    Czy administrator ma dostęp do witryny śledzenia dokumentów w trybie administratora.                                                                                                                                    |                                                                Prawda                                                                 |
+| acting-as-user |    String     |                                                                                                                               Adres e-mail użytkownika, dla którego administrator uzyskuje dostęp do witryny śledzenia dokumentów.                                                                                                                                |                                                          'joe@contoso.com'                                                          |
 
 #### <a name="exceptions-for-the-user-id-field"></a>Wyjątki w polu user-id
 Chociaż pole user-id zwykle wskazuje użytkownika, który wysłał żądanie, istnieją dwa wyjątki, kiedy wartość w polu nie odwzorowuje rzeczywistego użytkownika:
@@ -182,7 +182,7 @@ Istnieje wiele typów żądań usługi Azure Rights Management. W poniższej tab
 |AllDocsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV ze strony **Wszystkie dokumenty**.|
 |BECreateEndUserLicenseV1|Wykonano wywołanie z urządzenia przenośnego dotyczące utworzenia licencji użytkowania.|
 |BEGetAllTemplatesV1|Wykonano wywołanie z urządzenia przenośnego (zaplecze) dotyczące pobrania wszystkich szablonów.|
-|Certify|Klient certyfikuje zawartość objętą ochroną.|
+|Certify|Klient certyfikuje użytkownika na potrzeby użycia i tworzenie chronionej zawartości.|
 |DeleteTemplateById|Wykonano wywołanie z witryny Azure portal, można usunąć identyfikatora szablonu przez szablonu.|
 |DocumentEventsCsv|Wykonano wywołanie z witryny śledzenia dokumentów dotyczące pobrania pliku CSV dla pojedynczego dokumentu.|
 |ExportTemplateById|Wykonano wywołanie z witryny Azure portal do eksportowania szablonu na podstawie identyfikatora szablonu.|

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3cddb4660ddae7bb19ff2ef1994fb4fa3c0bf9a6
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 8f98750c24fe535a580952fa7ebe76a6833f7dd2
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305390"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394059"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Zarządzany przez firmę Microsoft: Operacje cyklu życia klucza dzierżawy
 
@@ -81,13 +81,13 @@ Konfiguracja usługi Azure Information Protection i klucz dzierżawy usługi mo�
     ```
     Dane wyjściowe tego polecenia powinno zwracać dwa pliki: Jedno zawiera hasła w postaci zwykłego tekstu do chronionego hasłem pliku TPD, a drugi to chroniony hasłem plik TPD sam. Pliki mają nowy identyfikator GUID, na przykład:
      
-    - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
+  - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 
-    - ExportedTPD-5E4C2018-8C8C-4548-8705-E3218AA1544E.xml
+  - ExportedTPD-5E4C2018-8C8C-4548-8705-E3218AA1544E.xml
 
     Należy wykonać kopię zapasową tych plików i zapisać je w bezpiecznym miejscu, co pozwoli na kontynuowanie odszyfrowywania zawartości chronionej przy użyciu tego klucza dzierżawy. Dodatkowo w przypadku migracji do usługi AD RMS można zaimportować ten plik TPD (plik o nazwie rozpoczynającej się od **ExportedTDP**) do serwera usługi AD RMS.
 
-### <a name="step-4-ongoing-protect-your-tenant-key"></a>Krok 4: Trwającą: Ochrona klucza dzierżawy
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>Krok 4: Ongoing: Ochrona klucza dzierżawy
 
 Po otrzymaniu klucza dzierżawy należy przechowywać go w bezpiecznym miejscu, ponieważ uzyskanie dostępu do niego umożliwia odszyfrowanie wszystkich dokumentów chronionych przy użyciu tego klucza.
 

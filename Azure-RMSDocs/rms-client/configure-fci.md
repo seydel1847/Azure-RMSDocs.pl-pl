@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19a295076ce86da0c93685250cd62b0ca1ca41e6
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 35f8ddcefb5cbc7ab07fd311edfa783fb5a83aa0
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305708"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394126"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Ochrona za pomocą usług RMS z użyciem infrastruktury klasyfikacji plików (FCI, File Classification Infrastructure) w systemie Windows Server
 
@@ -35,21 +35,21 @@ Poniższe instrukcje dotyczą systemu Windows Server 2012 R2 lub Windows Server 
 ## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>Wymagania wstępne dotyczące ochrony za pomocą usług Azure Rights Management z użyciem infrastruktury FCI w systemie Windows Server
 Wymagania wstępne dotyczące tych instrukcji:
 
--  Na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików:
+- Na każdym serwerze plików, na którym będzie uruchamiany Menedżer zasobów plików z infrastrukturą klasyfikacji plików:
     
-    - Zainstalowano Menedżer zasobów serwera plików jako jedną z usług ról dla roli Usługi plików.
+  - Zainstalowano Menedżer zasobów serwera plików jako jedną z usług ról dla roli Usługi plików.
     
-    - Zidentyfikowano lokalny folder zawierający pliki, które mają być chronione przez usługę Rights Management. Na przykład C:\FileShare.
+  - Zidentyfikowano lokalny folder zawierający pliki, które mają być chronione przez usługę Rights Management. Na przykład C:\FileShare.
     
-    - Zainstalowano moduł PowerShell AzureInformationProtection i skonfigurowano wymagania wstępne dotyczące łączenia się z usługą Azure Rights Management.
+  - Zainstalowano moduł PowerShell AzureInformationProtection i skonfigurowano wymagania wstępne dotyczące łączenia się z usługą Azure Rights Management.
     
     Moduł PowerShell AzureInformationProtection jest dołączony do klienta usługi Azure Information Protection. Aby uzyskać instrukcje dotyczące instalacji, zobacz [zainstalować klienta usługi Azure Information Protection dla użytkowników](client-admin-guide-install.md) w podręczniku administratora usługi Azure Information Protection. W razie potrzeby można zainstalować tylko moduł programu PowerShell, używając parametru `PowerShellOnly=true`.
     
     [Wymagania wstępne dotyczące używania tego modułu programu PowerShell](client-admin-guide-powershell.md#azure-information-protection-and-azure-rights-management-service) obejmują aktywację usługi Azure Rights Management, utworzenie nazwy głównej usługi i edytowanie rejestru w przypadku dzierżawy znajdującej się poza Ameryką Północną. Przed rozpoczęciem postępowania zgodnie z instrukcjami zawartymi w tym artykule upewnij się, że masz wartości identyfikatorów **BposTenantId** i **AppPrincipalId** i dysponujesz **kluczem symetrycznym**, zgodnie z opisem w wymaganiach wstępnych. 
     
-    - Aby zmienić domyślny poziom ochrony (natywnej lub ogólnej) dla określonych rozszerzeń nazw plików, należy dokonać edycji rejestru zgodnie z opisem w sekcji [Zmiana domyślnego poziomu ochrony plików](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) w podręczniku administratora.
+  - Aby zmienić domyślny poziom ochrony (natywnej lub ogólnej) dla określonych rozszerzeń nazw plików, należy dokonać edycji rejestru zgodnie z opisem w sekcji [Zmiana domyślnego poziomu ochrony plików](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) w podręczniku administratora.
     
-    - Masz połączenie z Internetem, i zostały skonfigurowane ustawienia komputera, jeśli są one wymagane przez serwer proxy. Na przykład: `netsh winhttp import proxy source=ie`
+  - Masz połączenie z Internetem, i zostały skonfigurowane ustawienia komputera, jeśli są one wymagane przez serwer proxy. Na przykład: `netsh winhttp import proxy source=ie`
     
 - Zsynchronizowano lokalne konta użytkowników usługi Active Directory, w tym ich adresy e-mail, z usługą Azure Active Directory lub Office 365. Jest to wymagane dla wszystkich użytkowników, którzy mogą wymagać dostępu do plików po objęciu ich ochroną przez infrastrukturę FCI i usługę Azure Rights Management. W przypadku pominięcia tego kroku (na przykład w środowisku testowym) dostęp użytkowników do tych plików może zostać zablokowany. Aby uzyskać więcej informacji na temat tego wymagania, zobacz artykuł [Przygotowywanie użytkowników i grup do korzystania z usługi Azure Information Protection](../prepare.md).
     

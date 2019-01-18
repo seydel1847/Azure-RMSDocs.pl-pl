@@ -4,18 +4,18 @@ description: Informacje dla administratorów dotyczące wdrażania klienta usłu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 01/17/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9dfe8c6921b50faddb6ee8f24c39fe6f33e1fd4d
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 3edcaf6b7751996a6d162eeec7cfc8ba3e352940
+ms.sourcegitcommit: 2daa75cda8475028a3dac83d70505fcfccef42a1
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173319"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54361787"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Klient usługi Azure Information Protection: Instalacja i konfiguracja dla klientów
 
@@ -37,7 +37,12 @@ Aby zainstalować klienta usługi Azure Information Protection dla tych popularn
 > [!NOTE]
 > W przypadku komputerów Mac i urządzeń z systemem Windows Phone linki z tej strony umożliwiają pobranie aplikacji RMS sharing dla urządzeń przenośnych. Te urządzenia nie obsługują obecnie klienta usługi Azure Information Protection.
 
-**Jeśli masz Microsoft Intune**: Aplikacja Azure Information Protection zawiera Microsoft Intune App Software Development Kit, gdy systemami iOS i Android są rejestrowane przez usługę Intune, można wdrożyć i zarządzać przeglądarka usługi Azure Information Protection dla tych urządzeń. Aby uzyskać więcej informacji, zobacz [Konfigurowanie i wdrażanie zasad zarządzania aplikacjami mobilnymi w konsoli usługi Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) w dokumentacji usługi Intune. W kroku 2 postępuj zgodnie z instrukcjami, aby opublikować aplikację zarządzaną przez zasady.
+**Jeśli masz Microsoft Intune**: Aplikacja Azure Information Protection została skompilowana przy użyciu Microsoft Intune App Software Development Kit, gdy systemami iOS i Android są rejestrowane przez usługę Intune, można wdrożyć i Zarządzanie aplikacją usługi Azure Information Protection dla tych urządzeń:
 
+- Aby wdrożyć aplikację, [Dodaj aplikację usługi Azure Information Protection do usługi Intune](/intune/apps-add) i [przypisać ją do użytkowników](/intune/apps-deploy).
 
+- Aby zarządzać aplikacją, należy użyć usługi Intune [zasad ochrony aplikacji](/intune/app-protection-policies).
 
+## <a name="next-steps"></a>Następne kroki
+
+Po zainstalowaniu i skonfigurowaniu klienta usługi Azure Information Protection może być konieczne dowiedzieć się więcej o interpretowanie praw użytkowania różnych, które mogą służyć do ochrony dokumentów i wiadomości e-mail przez klienta. Więcej informacji można znaleźć w temacie [Konfigurowanie praw użytkowania dla usługi Azure Rights Management](configure-usage-rights.md).

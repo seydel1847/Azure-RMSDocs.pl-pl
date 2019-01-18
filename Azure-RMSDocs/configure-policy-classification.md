@@ -4,20 +4,20 @@ description: Warunków dla etykiety pozwalają automatycznie przypisywać etykie
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: adf877a3f5f08d0adefd1cbe8864a0c0c2bb17b1
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: da76767b7538706f596653b77f3f29f8717e1442
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023859"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314802"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Konfigurowanie warunków klasyfikacji automatycznej i zalecanej dla usługi Azure Information Protection
 
->*Dotyczy: [usługi Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+>*Dotyczy: [Usługa Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 W przypadku skonfigurowania warunków dla etykiety możesz automatycznie przypisywać etykietę do dokumentu lub wiadomości e-mail. Możesz też monitować użytkowników o wybranie zalecanej etykiety. 
 
@@ -50,7 +50,7 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Jak wiele warunków są oceniane, jeśli są zastosowane wobec więcej niż jednej etykiety
 
-1. Etykiety są uporządkowane do oceny zgodnie z ich pozycją określoną w zasadach: etykieta na pierwszej pozycji ma najniższą pozycję (najmniejszą ważność), a ostatnia najwyższą (największa ważność).
+1. Etykiety są uporządkowane do oceny, zgodnie z ich pozycją określoną w zasadach: Etykieta najpierw ma najniższą pozycję (wskazującą najmniejszą ważność) i etykieta ma ostatnia pozycja najwyższą (największa ważność).
 
 2. Zostaje zastosowana etykieta wskazująca najwyższą ważność.
  
@@ -63,7 +63,7 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
     
     Na przykład w menu Centrum kliknij pozycję **wszystkich usług** i zacznij wpisywać **informacji** w polu filtru. Wybierz pozycję **Azure Information Protection**.
 
-2. Z **klasyfikacje** > **etykiety** opcji menu: na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę do skonfigurowania.
+2. Z **klasyfikacje** > **etykiety** opcji menu: Na **usługi Azure Information Protection — etykiety** bloku, wybierz etykietę do skonfigurowania.
 
 3. W bloku **Etykieta** w sekcji **Konfigurowanie warunków dla automatycznego stosowania tej etykiety** kliknij przycisk **Dodaj nowy warunek**.
 
@@ -79,19 +79,19 @@ Aby zmienić to zachowanie, tak aby klient usługi Azure Information Protection 
         
         Gdy usługi Azure Information Protection ocenia typy informacji, które można wybrać, jest używane ustawienie poziomie zaufania DLP usługi Office, ale zgodna z najniższą zaufania.
     
-    - W przypadku opcji **Niestandardowy**: określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i tego, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
+    - Aby uzyskać **niestandardowe**: Określ nazwę i frazę do dopasowania, bez znaków cudzysłowu i znaków specjalnych. Następnie określ, czy dopasowywać jako wyrażenie regularne, uwzględniać wielkość liter, a minimalna liczba wystąpień i tego, czy wystąpienie powinno mieć unikatową wartość do uwzględnienia w wystąpieniu liczba.
         
         Wyrażenia regularne używać wzorców wyrażeń regularnych usługi Office 365. Aby pomagają w określeniu wyrażeń regularnych warunki niestandardowe, zobacz następujące określonej wersji [składni wyrażeń regularnych w Perl](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) z Boost.
         
 5. Zdecyduj, czy musisz zmienić **minimalna liczba wystąpień** i **liczba zdarzeń o tylko unikatowe wartości**, a następnie wybierz pozycję **Zapisz**. 
     
-    Przykład opcji wystąpień: Wybierz typ informacji, aby uzyskać numer ubezpieczenia społecznego, Ustaw minimalną liczbę wystąpień jako 2 i dokument ma ten sam numer ubezpieczenia społecznego jest wymieniona dwukrotnie: Jeśli ustawisz **liczba wystąpień tylko unikatowe wartości** do **na**, nie jest spełniony warunek. Jeśli ta opcja jest ustawiona na **poza**, warunek jest spełniony.
+    Przykład opcji wystąpień: Wybierz typ informacji, aby uzyskać numer ubezpieczenia społecznego, Ustaw minimalną liczbę wystąpień jako 2 i dokument ma ten sam numer ubezpieczenia społecznego jest wymieniona dwukrotnie: Jeśli ustawisz **Zliczaj tylko unikatowe wartości** do **na**, nie jest spełniony warunek. Jeśli ta opcja jest ustawiona na **poza**, warunek jest spełniony.
 
 6. Po powrocie **etykiety** bloku, skonfiguruj następujące opcje, a następnie kliknij przycisk **Zapisz**:
     
-    - Wybierz automatyczną lub zalecaną klasyfikację: dla opcji **Wybierz sposób stosowania etykiety: automatycznie lub jako zalecenie dla użytkownika** wybierz wartość **Automatycznie** lub **Zalecenie**.
+    - Wybierz opcję automatycznej lub zalecanej klasyfikacji: Dla **wybierz sposób stosowania tej etykiety: automatycznie lub zalecając użytkownikowi**, wybierz opcję **automatyczne** lub **zalecane**.
     
-    - Określ tekst monitu dla użytkownika lub wskazówki dotyczącej zasad: zachowaj tekst domyślny lub podaj własny ciąg.
+    - Określ tekst dla użytkownika wiersza lub wskazówki dotyczącej zasad: Zachowaj tekst domyślny lub Podaj własny ciąg.
 
 Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników i usług. Nie ma już opcji publikowania oddzielne.
 
@@ -99,11 +99,9 @@ Po kliknięciu **Zapisz**, zmiany są automatycznie dostępne dla użytkowników
 
 Następujące typy informacji poufnych Wymagaj minimalnej wersji 1.37.19.0 dla klienta usługi Azure Information Protection:
 
-- **Numer telefonu UE**
 - **Numer telefonu komórkowego UE**
 - **Liczba Unii Europejskiej paszport**
 - **Numer licencji UE sterownika**
-- **Współrzędne GPS UE**
 - **Numer identyfikacyjny National UE**
 - **Numer UE ubezpieczenia społecznego (SSN) lub równoważnej identyfikator**
 - **Numer identyfikacji podatkowej UE (NIP)**
@@ -112,7 +110,25 @@ Następujące typy informacji poufnych Wymagaj minimalnej wersji 1.37.19.0 dla k
 - **Numer karty japoński w miejscu zamieszkania użytkownika**
 
 
-## <a name="next-steps"></a>Kolejne kroki
+Następujące typy informacji poufnych wymaga bieżącej wersji zapoznawczej klienta usługi Azure Information Protection:
+
+- **Parametry połączenia z usługi Azure Service Bus**
+- **Parametry połączenia usługi Azure IoT**
+- **Konto usługi Azure Storage**
+- **Parametry połączenia bazy danych IAAS platformy Azure i parametry połączenia usługi Azure SQL**
+- **Parametrów połączenia usługi Azure Redis Cache**
+- **Azure SAS**
+- **Parametry połączenia programu SQL Server**
+- **Klucz uwierzytelniania usługi Azure DocumentDB**
+- **Ustawianie hasła publikowania na platformie Azure**
+- **Klucz konta usługi Azure Storage (ogólny)**
+
+Ponadto następujące typy informacji poufnych nie są obsługiwane dla bieżącej wersji zapoznawczej klienta usługi Azure Information Protection i nie jest już wyświetlana w witrynie Azure portal:
+
+- **Numer telefonu UE**
+- **Współrzędne GPS UE**
+
+## <a name="next-steps"></a>Następne kroki
 
 Zaleca się wdrożenie [skanera usługi Azure Information Protection](deploy-aip-scanner.md), którego można użyć reguł automatycznej klasyfikacji do odnajdywania, klasyfikowania i ochrony plików w sklepach sieci lokalnych i udziałów plików.  
 

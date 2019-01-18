@@ -4,18 +4,18 @@ description: Informacje na temat dostosowywania klienta usługi Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2019
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b16dee0a922ce6f3195d192021edbf4966223e30
-ms.sourcegitcommit: 17d2528e801ebf37f3d6f54db920588ef212d34d
+ms.openlocfilehash: 9386889c41706e0603c5e758be09b0d2baafc7e8
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53996948"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394370"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>Podręcznik administratora: Niestandardowe konfiguracje klienta usługi Azure Information Protection
 
@@ -121,7 +121,7 @@ Aby skonfigurować to ustawienie zaawansowane, wprowadź następujące parametry
 
 - Klucz: **ReportAnIssueLink**
 
-- Wartość: **\<Ciąg HTTP >**
+- Wartość: **\<HTTP string>**
 
 Przykładowa wartość dla witryny sieci Web: `https://support.contoso.com`
 
@@ -175,6 +175,7 @@ Podczas eksportowania zasady w witrynie Azure portal, plik z rozszerzeniem zip j
     
 2. Zmień nazwę wskazany plik do **Policy.msip**, a następnie skopiować go do **%LocalAppData%\Microsoft\MSIP** folderu na komputerach, które mają zainstalowanego klienta usługi Azure Information Protection. 
 
+Jeśli komputer odłączonego działa skaner usługi Azure Information Protection w wersji zapoznawczej, istnieją dodatkowych czynności konfiguracyjnych należy wykonać. Aby uzyskać więcej informacji, zobacz [ograniczeń: Skaner serwera nie może mieć połączenie z Internetem](../deploy-aip-scanner-preview.md#restriction-the-scanner-server-cannot-have-internet-connectivity) z instrukcjami wdrażania skanera.
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Ukryj lub Pokaż przycisk nie przesyłaj dalej w programie Outlook
 
@@ -269,15 +270,15 @@ Przykładowe wartości, aby uzyskać identyfikator etykiety **dcf781ba-727f-4860
 
 - Aby zastosować podpisów cyfrowych i szyfrowania S/MIME:
     
-    **dcf781ba-727f-4860-b3c1-73479e31912b; Logowania; Szyfrowanie**
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign;Encrypt**
 
 - Aby zastosować tylko szyfrowania S/MIME:
     
-    **dcf781ba-727f-4860-b3c1-73479e31912b; Szyfrowanie**
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Encrypt**
     
 - Aby zastosować tylko podpis cyfrowy:
     
-    **dcf781ba-727f-4860-b3c1-73479e31912b; Logowanie**
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign**
 
 W wyniku tej konfiguracji po zastosowaniu etykiety do wiadomości e-mail, S/MIME ochrona jest stosowana do wiadomości e-mail, oprócz etykiety klasyfikacji.
 
@@ -351,11 +352,11 @@ Aby użyć poleceń programu PowerShell do konwersji istniejących plików ppdf 
 
 2. Z danych wyjściowych zanotuj następujące wartości parametrów:
     
-    - Wartość (identyfikatora GUID) dla **SubLabelId**, jeśli taka istnieje. Jeśli ta wartość jest pusta, etykiety podrzędnej nie była używana, więc Zwróć uwagę na wartość dla **MainLabelId** zamiast tego.
+   - Wartość (identyfikatora GUID) dla **SubLabelId**, jeśli taka istnieje. Jeśli ta wartość jest pusta, etykiety podrzędnej nie była używana, więc Zwróć uwagę na wartość dla **MainLabelId** zamiast tego.
     
-    Uwaga: Jeśli nie ma wartości dla **MainLabelId** albo, plik nie jest etykietą. W takim przypadku można użyć [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia i [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) polecenia zamiast polecenia w kroku 3 i 4.
+     Uwaga: Jeśli nie ma wartości dla **MainLabelId** albo, plik nie jest etykietą. W takim przypadku można użyć [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) polecenia i [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) polecenia zamiast polecenia w kroku 3 i 4.
     
-    - Wartość **RMSTemplateId**. Jeśli ta wartość jest **ograniczony dostęp**, użytkownik ma chroniony plik przy użyciu uprawnień niestandardowych, a nie z ustawień, które są skonfigurowane dla etykiety. Jeśli będziesz kontynuować, te uprawnienia niestandardowe zostaną zastąpione przez ustawienia ochrony etykiety. Zdecyduj, czy chcesz kontynuować, lub poprosić użytkownika (wartość wyświetlaną dla **RMSIssuer**) aby usunąć etykietę i zastosuj je ponownie, wraz z ich oryginalnego uprawnienia niestandardowe.
+   - Wartość **RMSTemplateId**. Jeśli ta wartość jest **ograniczony dostęp**, użytkownik ma chroniony plik przy użyciu uprawnień niestandardowych, a nie z ustawień, które są skonfigurowane dla etykiety. Jeśli będziesz kontynuować, te uprawnienia niestandardowe zostaną zastąpione przez ustawienia ochrony etykiety. Zdecyduj, czy chcesz kontynuować, lub poprosić użytkownika (wartość wyświetlaną dla **RMSIssuer**) aby usunąć etykietę i zastosuj je ponownie, wraz z ich oryginalnego uprawnienia niestandardowe.
 
 3. Usunąć etykietę, za pomocą [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) z *RemoveLabel* parametru. Jeśli używasz [ustawienie zasad](../configure-policy-settings.md) z **użytkownik musi podać uzasadnienie, aby ustawić niższą etykietę klasyfikacji, usunąć etykietę lub usunąć ochronę**, należy także określić  *Uzasadnienie* parametru z powodu. Przykład: 
     
@@ -376,9 +377,9 @@ Jeśli używasz Secure Islands do ochrony dokumentów, może być ochroną tekst
 
 Dodaj następującą wartość DWORD o **EnableIQPFormats** w następującej ścieżce rejestru i Ustaw dane wartości **1**:
 
-- Dla 64-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\oprogramowania\\WOW6432Node\\Microsoft\\MSIP
+- Dla 64-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\MSIP
 
-- Dla 32-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\oprogramowania\\Microsoft\\MSIP
+- Dla 32-bitowej wersji systemu Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSIP
 
 W wyniku tego w rejestrze obsługiwane są następujące scenariusze:
 
@@ -629,7 +630,7 @@ W tym celu:
 
      Informacje, jakie należy określić dla nagłówka wiadomości, można zidentyfikować, sprawdzając nagłówki internetowe wiadomości e-mail wysłanej i sklasyfikowanej za pomocą etykiety usługi Azure Information Protection. Wyszukaj nagłówek **msip_labels** i ciąg, który następuje zaraz po nim, łącznie ze średnikiem. Przykład:
     
-    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled = True;**
+    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
     
     Następnie dla nagłówka wiadomości w regule określ element **msip_labels** dla nagłówka oraz pozostałe elementy ciągu dla wartości nagłówka. Przykład:
     
