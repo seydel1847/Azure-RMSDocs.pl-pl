@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3922236e6118045b6f01f55926a9c6de8aa9df72
-ms.sourcegitcommit: bd2b31dd97c8ae08c28b0f5688517110a726e3a1
+ms.openlocfilehash: 2cdd5f88edd8cad446ebaecbdd4065fdc18de51e
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54071645"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394112"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Jak zarejestrować aplikację w usłudze Azure AD i włączyć dla niej obsługę usługi RMS
 
@@ -51,7 +51,8 @@ Każdy z poniższych zasobów zawiera wskazówki dotyczące konfiguracji środow
 -   [Biblioteka Windows Azure Active Directory Authentication Library (ADAL) dla platformy dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   W przypadku zestawu SDK dla systemu Linux biblioteka ADAL jest spakowana ze źródłem SDK, dostępnym w witrynie [Github](https://github.com/AzureAD/rms-sdk-for-cpp).
 
->[!NOTE]   Firma Microsoft zaleca korzystanie z jednej z bibliotek ADAL choć można też korzystać z innych bibliotek uwierzytelniania.
+> [!NOTE]
+> Zalecamy korzystanie z jednej z bibliotek ADAL, choć można też korzystać z innych bibliotek uwierzytelniania.
 
 ### <a name="authentication-parameters"></a>Parametry uwierzytelniania
 
@@ -64,14 +65,15 @@ Biblioteka ADAL wymaga kilku informacji w celu pomyślnego uwierzytelnienia uży
 i pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 - **Identyfikator Uri przekierowania** — podaje bibliotekę uwierzytelniania z celem URI dla kodu uwierzytelniania. Systemy iOS i Android wymagają określonych formatów. Omówiono je w plikach README odpowiednich repozytoriów GitHub biblioteki ADAL. Ta wartość pochodzi z poprzedniego kroku rejestracji w Portalu Azure.
 
->[!NOTE]
+> [!NOTE]
 > **Zakres** nie jest obecnie używany, ale może być używany, w związku z czym jest zarezerwowany do użycia w przyszłości.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE]  W przypadku aplikacji nie jest zgodna z tymi wytycznymi, przepływy pracy usługi Azure RMS i Azure AD mogą zakończyć się niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
+> [!NOTE]
+> Jeśli aplikacja nie jest zgodna z tymi wytycznymi, przepływy pracy usług Azure RMS i Azure AD zakończą się prawdopodobnie niepowodzeniem i nie będą obsługiwane przez witrynę Microsoft.com. Dodatkowo użycie nieprawidłowego identyfikatora klienta w aplikacji produkcyjnej może oznaczać naruszenie umowy licencyjnej usługi Rights Management (RMLA).
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>Jak powinno wyglądać wdrożenie wywołania zwrotnego uwierzytelniania
 **Przykłady kodu uwierzytelniania** — ten zestaw SDK zawiera przykładowy kod, przedstawiający zastosowanie wywołań zwrotnych uwierzytelniania. Dla wygody te przykłady kodu przedstawiono w tym miejscu, jak również we wszystkich powiązanych tematach.

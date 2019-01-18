@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3efae21dfabdb347826b177d5c58a3498d3276c5
-ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
+ms.openlocfilehash: 17de145dc063b7a79f07562b111a932aa5959065
+ms.sourcegitcommit: 9dc6da0fb7f96b37ed8eadd43bacd1c8a1a55af8
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53173965"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394390"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Planowanie i wdrażanie klucza dzierżawy usługi Azure Information Protection
 
@@ -79,7 +79,7 @@ Po wybraniu tej opcji:
 3. Kopia klucza jest chroniony przez usługę Azure Key Vault.
 
 > [!NOTE]
-
+> 
 > Jako środek dodatkowej ochrony usługi Azure Key Vault używa oddzielne domeny zabezpieczeń dla centrów danych w regionach, takich jak Ameryka Północna, EMEA (Europa, Bliski Wschód i Afryka) i Azji. Usługa Azure Key Vault używa także różnych wystąpień platformy Azure, takich jak Microsoft Azure (Niemcy) i Azure dla instytucji rządowych. 
 
 Choć generowane niemalże w czasie rzeczywistym dzienniki z usługi Azure Information Protection są opcjonalne, warto z nich skorzystać, aby przekonać się, kiedy i w jaki sposób jest używany klucz dzierżawy.
@@ -181,10 +181,10 @@ Następnie uruchom polecenie [cmdlet Use-AadrmKeyVaultKey](/powershell/module/aa
 
 > [!IMPORTANT]
 > W tym przykładzie wersja klucza do użycia to „aaaabbbbcccc111122223333”. Jeśli nie określisz wersji, bieżąca wersja klucza jest używana bez ostrzeżenia, a polecenie działa prawidłowo. Jeśli jednak klucz w usłudze Key Vault zostanie później zaktualizowany (odnowiony), usługa Azure Rights Management nie będzie działać w dzierżawie nawet po ponownym uruchomieniu polecenia Use-AadrmKeyVaultKey.
->
->Upewnij się, że w przypadku uruchamiania tego polecenia oprócz nazwy klucza zostanie określona również jego wersja. Aby uzyskać numer wersji bieżącego klucza, można użyć polecenia [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) usługi Azure Key Vault. Na przykład: `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+> 
+> Upewnij się, że w przypadku uruchamiania tego polecenia oprócz nazwy klucza zostanie określona również jego wersja. Aby uzyskać numer wersji bieżącego klucza, można użyć polecenia [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) usługi Azure Key Vault. Na przykład: `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
-Jeśli potrzebujesz upewnić się, że klucz adresu URL jest ustawione prawidłowo dla usługi Azure Information Protection: W usłudze Azure Key Vault, uruchom [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey) Aby wyświetlić klucz adresu URL.
+Jeśli potrzebujesz upewnić się, że klucz adresu URL jest ustawione prawidłowo dla usługi Azure Information Protection: W usłudze Azure Key Vault, uruchom [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault/get-azurekeyvaultkey) Aby wyświetlić klucz adresu URL.
 
 Ponadto jeśli usługi Azure Rights Management została już aktywowana, uruchom [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) mówić usługi Azure Information Protection do użycia tego klucza jako aktywnego klucza dzierżawy usługi Azure Rights Management. Po wykonaniu tego kroku, nadal używać klucza domyślne zarządzanych przez firmę Microsoft utworzonego automatycznie dla dzierżawy usługi Azure Information Protection.
 
