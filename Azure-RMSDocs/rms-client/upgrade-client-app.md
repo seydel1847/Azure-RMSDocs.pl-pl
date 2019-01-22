@@ -4,18 +4,18 @@ description: Instrukcje dla użytkowników, którzy zrezygnowali z korzystania z
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
+ms.date: 01/16/2019
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c882c917a3a612b3fa362661cdcd94e77ec145f1
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 7c39527945eb5f92c19e6cf8f89db6e8d7ae9a5a
+ms.sourcegitcommit: 2c90f5bf11ec34ab94824a39ccab75bde71fc3aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305526"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54314717"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>Podręcznik użytkownika: Zadania, które były wykonywane w aplikacji RMS sharing
 
@@ -29,8 +29,8 @@ Poniższe informacje ułatwią Ci szybkie rozpoczęcie korzystania z aplikacji.
 |-----------|--------------------|
 |Ochrona pliku na urządzeniu <br /><br />Znana także jako funkcja „Włącz ochronę miejscową”|W przypadku aplikacji pakietu Office: Wybierz etykietę, która ustawia wymaganą ochronę, lub ustaw uprawnienia niestandardowe.<br /><br />W przypadku innych plików: Użyj opcji menu Eksploratora plików **Klasyfikuj i chroń**, aby otworzyć okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**. Wybierz etykietę, która odnosi się do odpowiedniej ochrony, lub określ własne uprawnienia niestandardowe. <br /><br />Aby uzyskać więcej informacji, zobacz temat [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md).
 |Ochrona pliku udostępnionego pocztą e-mail <br /><br />Funkcja znana także pod nazwą „Udostępnij chronioną zawartość”|Za pomocą programu Outlook, zastosowania etykiety, za pomocą odpowiedniej ochrony wiadomości e-mail lub wybierz opcję programu Outlook **nie przesyłaj dalej** opcji. Bez ochrony załączników, które mają [obsługiwany typ pliku](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM) są automatycznie chronione.<br /><br />Uwaga: Aby śledzić chroniony dokument, który możesz wysłać wiadomość e-mail, najpierw go chronić, a następnie dołączyć go do wiadomości e-mail.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md).
-|Zmienianie uprawnień do chronionych plików <br /><br />Funkcja znana także pod nazwą „Włącz ponownie ochronę”|W przypadku aplikacji pakietu Office, które wyświetlają paska usługi Azure Information Protection: Wybierz etykietę, która ustawia wymaganą ochronę.<br /><br />W przypadku innych plików a jeśli klient usługi Azure Information Protection znajduje się w [tryb z samą ochroną](client-protection-only-mode.md): Użyj opcji menu Eksploratora plików Klasyfikuj i chroń, aby otworzyć okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**. Wybierz etykietę, która odnosi się do odpowiedniej ochrony, lub określ własne uprawnienia niestandardowe.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md).
-|Śledzenie i odwoływanie dokumentów|Z programu Word, Excel i PowerPoint: Otwórz dokument, a następnie na **Home** kartę > **ochrony** grupy > **Chroń** > **Śledź i odwołuj**<br /><br />W Eksploratorze plików: Kliknij prawym przyciskiem myszy plik lub folder > **Klasyfikuj i Chroń**. Następnie w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij opcję **Śledź i odwołuj**. <br /><br />Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów](client-track-revoke.md).
+|Zmienianie uprawnień do chronionych plików <br /><br />Funkcja znana także pod nazwą „Włącz ponownie ochronę”|W przypadku aplikacji pakietu Office, które wyświetlają paska usługi Azure Information Protection: Wybierz etykietę, która ustawia wymaganą ochronę.<br /><br />W przypadku innych plików a jeśli klient usługi Azure Information Protection znajduje się w [tryb z samą ochroną](client-protection-only-mode.md): Użyj opcji menu Eksploratora plików **Klasyfikuj i chroń**, aby otworzyć okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**. Wybierz etykietę, która odnosi się do odpowiedniej ochrony, lub określ własne uprawnienia niestandardowe.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Klasyfikowanie i ochrona pliku lub wiadomości e-mail](client-classify-protect.md).
+|Śledzenie i odwoływanie dokumentów|Z programu Word, Excel i PowerPoint: Otwórz dokument, a następnie na **Home** kartę > **ochrony** grupy > **Chroń** > **Śledź i odwołuj**<br /><br />W Eksploratorze plików: Kliknij prawym przyciskiem myszy plik lub folder > **Klasyfikuj i Chroń**. Następnie w oknie dialogowym **Klasyfikuj i chroń — Azure Information Protection** kliknij opcję **Śledź i odwołuj**. <br /><br />Jeśli używasz programu PowerShell z bieżącej wersji zapoznawczej klienta usługi Azure Information Protection: Użyj *EnableTracking* parametrem [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel) polecenia cmdlet, aby zarejestrować etykietą dokument na potrzeby śledzenia.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Śledzenie i odwoływanie dokumentów](client-track-revoke.md).
 |Wyświetlanie i używanie chronionych plików|Musisz mieć zainstalowane dla chronionych dokumentów pakietu Office pakietu Office. Przeglądarka usługi Azure Information Protection można otworzyć wiele plików chronionych, tak aby można je odczytać i drukowanie i zapisać te pliki, jeśli masz uprawnień do wykonywania tych akcji. Przeglądarka jest instalowana automatycznie razem z klientem, ale można ją zainstalować także oddzielnie.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Otwieranie plików chronionych](client-view-use-files.md).
 |Usuwanie ochrony z pliku|Użyj opcji menu Eksploratora plików **Klasyfikuj i chroń**, aby otworzyć okno dialogowe **Klasyfikuj i chroń — Azure Information Protection**. <br /><br />W przypadku jednego pliku usuń zaznaczenie opcji **Ochrona przy użyciu uprawnień niestandardowych**. W przypadku wielu plików lub folderu kliknij opcję **Usuń uprawnienia niestandardowe**.<br /><br />Aby uzyskać więcej informacji, zobacz temat [Usuwanie etykiet klasyfikacji i ochrony z plików i wiadomości e-mail](client-remove-label-protection.md).|
 
